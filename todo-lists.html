@@ -774,12 +774,12 @@
       }).join('');
     }
 
-    function clearCompleted() {
+    window.clearCompleted = function() {
       var today = todayISO();
       delete backlog[today];
       save();
       render();
-    }
+    };
 
     function renderBacklog() {
       var today = todayISO();
