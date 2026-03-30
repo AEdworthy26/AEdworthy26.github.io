@@ -14,6 +14,6 @@ var READS_DATA = {
     ratingSource: "Goodreads",
     ratingCount: "35,000+",
     coverUrl: "https://covers.openlibrary.org/b/id/2380298-L.jpg",
-    amazonUrl: "https://www.amazon.co.uk/dp/0349115036"
+    amazonUrl: "https://www.amazon.co.uk/dp/034911563X"
   }
 };
