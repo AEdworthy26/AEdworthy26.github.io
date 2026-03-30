@@ -156,25 +156,23 @@
 
     /* ────────────────── FEATURE SECTIONS ────────────────── */
     .rec-feature {
-      display: grid;
-      grid-template-columns: 1fr 220px;
-      min-height: auto;
-      border-bottom: 1px solid var(--dark-border);
+      display: flex;
+      align-items: center;
+      max-width: 900px;
+      margin: 2rem auto;
+      background: var(--dark-card);
+      border-radius: 16px;
+      border: 1px solid var(--dark-border);
+      overflow: hidden;
     }
 
-    /* Book: image left — info right */
-    /* Film: info left — image right (reversed via order) */
-    .rec-feature.rec-film .rec-image  { order: 2; }
-    .rec-feature.rec-film .rec-body   { order: 1; }
-
-    /* ── Image panel ── */
     .rec-image {
-      position: relative;
-      background: #0a0908;
+      flex-shrink: 0;
+      width: 200px;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 2.5rem 1.5rem;
+      padding: 2rem 1.5rem;
     }
     .rec-cover-wrap {
       display: flex; align-items: center; justify-content: center;
@@ -182,24 +180,14 @@
     }
     .rec-feature:hover .rec-cover-wrap { transform: scale(1.03); }
 
-    .rec-cover-svg { width: 100%; max-width: 150px; height: auto; display: block; }
-
-    /* Subtle vignette over image */
-    .rec-image::after {
-      content: ''; position: absolute; inset: 0; pointer-events: none;
-      background: radial-gradient(ellipse at center, transparent 40%, rgba(0,0,0,0.55) 100%);
-    }
+    .rec-cover-svg { max-width: 140px; height: auto; display: block; }
 
     /* ── Info panel ── */
     .rec-body {
-      background: var(--dark-card);
-      padding: 2.5rem 2rem 2rem;
+      flex: 1;
+      padding: 2.5rem 2rem 2.5rem 2.5rem;
       display: flex; flex-direction: column; justify-content: center;
       gap: 1rem;
-      border-right: 1px solid var(--dark-border);
-    }
-    .rec-feature.rec-film .rec-body {
-      border-right: 1px solid var(--dark-border);
     }
 
     .rec-type-tag {
@@ -306,18 +294,15 @@
 
     /* ────────────────── RESPONSIVE ────────────────── */
     @media (max-width: 900px) {
-      .rec-feature { grid-template-columns: 1fr; min-height: auto; }
-      .rec-feature.rec-film .rec-image { order: 1; }
-      .rec-feature.rec-film .rec-body  { order: 2; }
-      .rec-image { min-height: 55vw; }
-      .rec-body { padding: 2.2rem 1.6rem; border-left: none !important; border-right: none !important; border-top: 1px solid var(--dark-border); }
-      .rec-feature.rec-film .rec-body { border-top: 1px solid var(--dark-border); }
+      .rec-feature { flex-direction: column; margin: 1rem; border-radius: 12px; }
+      .rec-image { width: 100%; padding: 2rem; }
+      .rec-body { padding: 1.8rem; }
       .page-intro { flex-direction: column; align-items: flex-start; padding: 2.5rem 1.5rem 2rem; }
       .page-intro-right { text-align: left; }
     }
 
     @media (max-width: 600px) {
-      .rec-body { padding: 1.8rem 1.2rem; }
+      .rec-body { padding: 1.4rem; }
       .rec-title { font-size: 1.7rem; }
     }
 
@@ -706,9 +691,9 @@
 
   function coverImgHTML(url, fallbackSVG) {
     if (url) {
-      return '<img src="' + url + '" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;position:relative;z-index:1;"'
+      return '<img src="' + url + '" alt="" loading="lazy" style="max-width:140px;height:auto;object-fit:contain;display:block;"'
         + ' onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'block\'">'
-        + '<div style="display:none;width:100%;height:100%;position:relative;z-index:1;">' + fallbackSVG + '</div>';
+        + '<div style="display:none;">' + fallbackSVG + '</div>';
     }
     return fallbackSVG;
   }
