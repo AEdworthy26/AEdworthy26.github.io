@@ -410,15 +410,15 @@
               <div class="num-row">
                 <div class="num-label"><span class="slider-icon">&#x1F3C3;</span> Exercise Sessions</div>
                 <div class="num-input-wrap">
-                  <input type="number" id="f-exercise" class="num-input" min="0" max="5" value="0">
-                  <span class="num-hint">max 5 per week</span>
+                  <input type="number" id="f-exercise" class="num-input" min="0" value="0">
+                  <span class="num-hint">7 = 100% score</span>
                 </div>
               </div>
               <div class="num-row">
                 <div class="num-label"><span class="slider-icon">&#x1F4DA;</span> Study Hours</div>
                 <div class="num-input-wrap">
-                  <input type="number" id="f-study" class="num-input" min="0" max="20" value="0">
-                  <span class="num-hint">max 20 hrs</span>
+                  <input type="number" id="f-study" class="num-input" min="0" value="0">
+                  <span class="num-hint">20 hrs = 100% score</span>
                 </div>
               </div>
             </div>
@@ -503,7 +503,7 @@
   (function () {
 
     var STORAGE_KEY = 'personal_hub_checkins';
-    var MAX_EX = 5, MAX_STUDY = 20;
+    var MAX_EX = 7, MAX_STUDY = 20;
 
     // ── Utilities ─────────────────────────────────────────────────────────────
     function esc(s) { return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
