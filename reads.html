@@ -168,7 +168,7 @@
 
     .rec-image {
       flex-shrink: 0;
-      width: 360px;
+      width: 420px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -180,7 +180,7 @@
     }
     .rec-feature:hover .rec-cover-wrap { transform: scale(1.03); }
 
-    .rec-cover-svg { max-width: 280px; height: auto; display: block; }
+    .rec-cover-svg { max-width: 360px; height: auto; display: block; }
 
     /* ── Info panel ── */
     .rec-body {
@@ -332,44 +332,6 @@
     .rec-feature.rec-book { border-top: 2px solid rgba(200,163,72,0.22); }
     .rec-feature.rec-film { border-top: 2px solid rgba(212,64,0,0.18); }
 
-    /* ────────────────── ENHANCED IMAGE OVERLAYS ────────────────── */
-    /* Directional fade toward text panel */
-    .rec-image::before {
-      content: ''; position: absolute; inset: 0;
-      pointer-events: none; z-index: 2;
-    }
-    .rec-book .rec-image::before {
-      background: linear-gradient(to right, transparent 28%, rgba(10,9,8,0.82) 100%);
-    }
-    .rec-film .rec-image::before {
-      background: linear-gradient(to left, transparent 28%, rgba(10,9,8,0.82) 100%);
-    }
-    /* Strengthen existing radial vignette */
-    .rec-image::after {
-      background: radial-gradient(ellipse at center, transparent 28%, rgba(0,0,0,0.7) 100%);
-      z-index: 3;
-    }
-
-    /* ────────────────── AMBIENT GLOW ────────────────── */
-    .rec-cover-wrap::before {
-      content: '';
-      position: absolute; top: 50%; left: 50%;
-      transform: translate(-50%, -50%);
-      width: 55%; padding-bottom: 55%;
-      border-radius: 50%;
-      filter: blur(60px);
-      opacity: 0.22;
-      pointer-events: none; z-index: 0;
-    }
-    .rec-book .rec-cover-wrap::before { background: var(--gold); }
-    .rec-film .rec-cover-wrap::before { background: var(--tomato); }
-    .rec-cover-svg { position: relative; z-index: 1; }
-
-    /* ────────────────── ENHANCED HOVER ────────────────── */
-    .rec-feature:hover .rec-cover-wrap { transform: scale(1.05); }
-    .rec-body { transition: background 0.45s ease; }
-    .rec-book:hover .rec-body { background: #201e18; }
-    .rec-film:hover .rec-body { background: #1e1814; }
 
     /* ────────────────── STAR VISUAL ────────────────── */
     .star-visual {
@@ -691,7 +653,7 @@
 
   function coverImgHTML(url, fallbackSVG) {
     if (url) {
-      return '<img src="' + url + '" alt="" loading="lazy" style="max-width:280px;height:auto;object-fit:contain;display:block;"'
+      return '<img src="' + url + '" alt="" loading="lazy" style="max-width:360px;height:auto;object-fit:contain;display:block;"'
         + ' onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'block\'">'
         + '<div style="display:none;">' + fallbackSVG + '</div>';
     }
