@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Achievements — Personal Hub</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink:     #0d0d0d;
+      --paper:   #f4f0e6;
+      --rule:    #1a1a1a;
+      --muted:   #555;
+      --light:   #888;
+      --blue:    #003399;
+      --card-bg: #ffffff;
+      --border:  #d8d3c8;
+      --border-subtle: #ece8e0;
+      --green:   #1a6630;
+      --gold:    #96751e;
+      --shadow-sm:  0 1px 4px rgba(0,0,0,0.06);
+      --shadow-md:  0 4px 16px rgba(0,0,0,0.09);
+      --shadow-lg:  0 10px 32px rgba(0,0,0,0.13);
+      --radius:  7px;
+    }
+
+    body { background: var(--paper); color: var(--ink); font-family: 'Source Serif 4', Georgia, serif; min-height: 100vh; }
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ────────────────── HEADER / NAV ────────────────── */
+    .meta-bar { max-width: 1200px; margin: 0 auto; padding: 1rem 1.5rem 0; }
+    .meta-bar-inner {
+      display: flex; justify-content: space-between; align-items: center;
+      font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted);
+      border-bottom: 1px solid var(--rule); padding-bottom: 0.4rem; margin-bottom: 0.6rem;
+    }
+    .masthead-wrap { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; text-align: center; }
+    .masthead { font-family: 'Playfair Display', Georgia, serif; font-weight: 900; font-size: clamp(2.4rem, 5vw, 4.2rem); line-height: 1; letter-spacing: -0.01em; }
+    .masthead-sub { font-size: 0.75rem; font-style: italic; color: var(--muted); margin-top: 0.2rem; margin-bottom: 0.3rem; }
+    .rule-double { border: none; border-top: 3px double var(--rule); max-width: 1200px; margin: 0 auto; }
+
+    .nav-ribbon { background: linear-gradient(90deg, #4b5563 0%, #1f2937 100%); }
+    .nav-ribbon nav { max-width: 1600px; margin: 0 auto; padding: 0 2rem; display: flex; align-items: center; justify-content: center; gap: 0.3rem; }
+    .nav-ribbon nav a { color: rgba(255,255,255,0.88); font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; padding: 0.5rem 0.85rem; border-radius: 5px; transition: background 0.15s, color 0.15s; white-space: nowrap; }
+    .nav-ribbon nav a:hover { background: rgba(255,255,255,0.18); color: #fff; text-decoration: none; }
+    .nav-ribbon nav a.nav-home { color: #fff; font-weight: 700; margin-right: 0.4rem; padding-right: 1rem; border-right: 1px solid rgba(255,255,255,0.25); border-radius: 0; }
+    .nav-ribbon nav a.nav-active { background: rgba(255,255,255,0.18); color: #fff; }
+    .nav-ribbon nav .nav-spacer { flex: 1; height: 1px; background: rgba(255,255,255,0.25); margin: 0 0.5rem; }
+    /* Dropdown menus */
+    .nav-dropdown { position: relative; display: flex; align-items: center; }
+    .nav-drop-btn {
+      color: rgba(255,255,255,0.9);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 0.8rem; font-weight: 500; letter-spacing: 0.04em;
+      text-transform: uppercase; padding: 0.5rem 0.95rem; border-radius: 5px;
+      background: none; border: none; cursor: pointer; white-space: nowrap;
+      display: flex; align-items: center; gap: 0.25rem; transition: background 0.15s;
+    }
+    .nav-drop-btn:hover,
+    .nav-dropdown:hover .nav-drop-btn { background: rgba(255,255,255,0.18); color: #fff; }
+    .nav-drop-btn.nav-active { background: rgba(255,255,255,0.18); color: #fff; }
+    .nav-caret { font-size: 0.55rem; opacity: 0.65; transition: transform 0.15s; line-height: 1; }
+    .nav-dropdown:hover .nav-caret { transform: rotate(180deg); }
+    .nav-dropdown:hover .nav-drop-menu { display: flex; }
+    .nav-drop-menu {
+      position: absolute; top: 100%; left: 0;
+      background: #1f2937; border-radius: 6px;
+      min-width: 155px; display: none; flex-direction: column;
+      z-index: 200; box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+      overflow: hidden; margin-top: 0;
+    }
+    /* dropdown shown via JS */
+    .nav-drop-menu a {
+      color: rgba(255,255,255,0.85);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 0.76rem; font-weight: 500; letter-spacing: 0.04em;
+      text-transform: uppercase; padding: 0.6rem 1.1rem;
+      text-decoration: none; transition: background 0.12s; white-space: nowrap;
+      border-radius: 0; display: block;
+    }
+    .nav-drop-menu a:hover { background: rgba(255,255,255,0.15); color: #fff; }
+    .nav-divider { width: 1px; height: 1.1rem; background: rgba(255,255,255,0.35); margin: 0 0.6rem; flex-shrink: 0; align-self: center; }
+    .nav-drop-menu a + a { border-top: 1px solid rgba(255,255,255,0.07); }
+    .nav-drop-menu a.nav-active { background: rgba(255,255,255,0.15); color: #fff; }
+
+    @media (max-width: 800px) {
+      .nav-ribbon nav { flex-wrap: wrap; gap: 0; padding: 0.25rem 0.5rem; }
+      .nav-ribbon nav .nav-spacer { display: none; }
+      .nav-drop-menu { position: static; box-shadow: none; border-radius: 0; margin-top: 0; background: rgba(255,255,255,0.06); }
+      .nav-dropdown { flex-direction: column; align-items: flex-start; width: 100%; }
+      .nav-drop-menu { display: flex !important; }
+    }
+
+    /* ────────────────── PAGE WRAP ────────────────── */
+    .page-wrap { max-width: 860px; margin: 0 auto; padding: 0 1.5rem 5rem; }
+
+    /* ────────────────── PAGE HEADER ────────────────── */
+    .page-header { padding: 1.8rem 0 1.2rem; border-bottom: 3px double var(--rule); margin-bottom: 2.2rem; }
+    .page-header-meta { font-size: 0.65rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--blue); font-weight: 700; margin-bottom: 0.45rem; }
+    .page-header h1 { font-family: 'Playfair Display', serif; font-weight: 900; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.1; margin-bottom: 0.5rem; }
+    .page-header .standfirst { font-size: 0.92rem; line-height: 1.65; color: var(--muted); max-width: 600px; }
+
+    /* ────────────────── STATS BAR ────────────────── */
+    .stats-bar {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      border: 1px solid var(--border); border-radius: var(--radius);
+      overflow: hidden; background: var(--card-bg); margin-bottom: 2.2rem;
+      box-shadow: var(--shadow-sm);
+    }
+    .stat-item {
+      padding: 1.3rem 1.5rem; border-right: 1px solid var(--border);
+      display: flex; flex-direction: column; gap: 0.2rem;
+      transition: background 0.2s ease;
+    }
+    .stat-item:hover { background: #faf7f0; }
+    .stat-item:last-child { border-right: none; }
+    .stat-num { font-family: 'Playfair Display', serif; font-size: 2.2rem; font-weight: 900; line-height: 1; transition: color 0.3s; }
+    .stat-num.blue  { color: var(--blue); }
+    .stat-num.gold  { color: var(--gold); }
+    .stat-num.green { color: var(--green); }
+    .stat-label { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--light); }
+
+    /* ────────────────── TOOLBAR ────────────────── */
+    .toolbar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.6rem; gap: 0.8rem; flex-wrap: wrap; }
+    .toolbar-left { display: flex; align-items: center; gap: 0.4rem; flex-wrap: wrap; }
+    .filter-btn {
+      font-family: 'Source Serif 4', serif; font-size: 0.63rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer;
+      padding: 0.3rem 0.8rem; border-radius: 20px;
+      border: 1px solid var(--border); background: transparent; color: var(--muted);
+      transition: all 0.18s ease;
+    }
+    .filter-btn:hover { border-color: var(--blue); color: var(--blue); background: rgba(0,51,153,0.05); }
+    .filter-btn.active { border-color: var(--blue); color: #fff; background: var(--blue); }
+
+    /* ────────────────── ADD FORM ────────────────── */
+    .add-form-wrap {
+      background: var(--card-bg); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 1.6rem 1.8rem;
+      display: none;
+      box-shadow: var(--shadow-md);
+      margin-bottom: 0;
+    }
+    .add-form-wrap.open {
+      display: block;
+      animation: formReveal 0.38s cubic-bezier(0.22, 1, 0.36, 1) both;
+      margin-bottom: 2rem;
+    }
+    .add-form-wrap.closing {
+      animation: formHide 0.28s ease forwards !important;
+    }
+    .add-form-title { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.1rem; margin-bottom: 1.2rem; }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .form-group { display: flex; flex-direction: column; gap: 0.35rem; }
+    .form-group.full { grid-column: 1 / -1; }
+    .form-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
+    .form-input, .form-select, .form-textarea {
+      font-family: 'Source Serif 4', serif; font-size: 0.87rem;
+      padding: 0.55rem 0.75rem; border: 1px solid var(--border); border-radius: 5px;
+      background: var(--paper); color: var(--ink);
+      transition: border-color 0.18s, box-shadow 0.18s;
+    }
+    .form-input:focus, .form-select:focus, .form-textarea:focus {
+      outline: none; border-color: var(--blue);
+      box-shadow: 0 0 0 3px rgba(0,51,153,0.1);
+    }
+    .form-textarea { resize: vertical; min-height: 4rem; }
+    .form-actions { display: flex; gap: 0.55rem; margin-top: 1.2rem; }
+
+    /* ────────────────── BUTTONS ────────────────── */
+    .btn {
+      font-family: 'Source Serif 4', serif; font-size: 0.72rem; font-weight: 700;
+      letter-spacing: 0.06em; text-transform: uppercase; padding: 0.45rem 0.95rem;
+      border: 1px solid var(--border); border-radius: 5px;
+      background: var(--paper); color: var(--ink); cursor: pointer;
+      transition: background 0.15s, color 0.15s, border-color 0.15s, box-shadow 0.15s;
+      white-space: nowrap;
+    }
+    .btn:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+    .btn-sm { padding: 0.24rem 0.65rem; font-size: 0.62rem; }
+    .btn-primary { background: var(--blue); color: #fff; border-color: var(--blue); }
+    .btn-primary:hover { background: #002280; border-color: #002280; box-shadow: 0 2px 8px rgba(0,51,153,0.3); }
+    .btn-danger { background: #c0392b; color: #fff; border-color: #c0392b; }
+    .btn-danger:hover { background: #a93226; border-color: #a93226; }
+    .btn-ghost { background: transparent; border-color: transparent; color: var(--muted); }
+    .btn-ghost:hover { background: rgba(0,0,0,0.06); color: var(--ink); border-color: transparent; }
+
+    /* ────────────────── MONTH GROUP ────────────────── */
+    .month-group {
+      margin-bottom: 3rem;
+      animation: groupReveal 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+    .month-heading { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.1rem; }
+    .month-heading h2 { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.15rem; white-space: nowrap; }
+    .month-rule { flex: 1; height: 1px; background: var(--border-subtle); }
+    .month-count { font-size: 0.63rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--light); white-space: nowrap; }
+
+    /* ────────────────── ACHIEVEMENT LIST & CARD ────────────────── */
+    .achievement-list { display: flex; flex-direction: column; gap: 0.9rem; }
+
+    .achievement-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-subtle);
+      border-left: 3px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.3rem 1.5rem;
+      display: flex; flex-direction: column;
+      box-shadow: var(--shadow-sm);
+      transition: box-shadow 0.28s ease, transform 0.28s ease, border-color 0.28s ease;
+      will-change: transform;
+      animation: cardReveal 0.32s cubic-bezier(0.22, 1, 0.36, 1) both;
+      position: relative; overflow: hidden;
+    }
+    .achievement-card::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(135deg, rgba(255,255,255,0) 60%, rgba(255,255,255,0.6) 100%);
+      opacity: 0; transition: opacity 0.3s ease; pointer-events: none;
+    }
+    .achievement-card:hover {
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-3px);
+    }
+    .achievement-card:hover::after { opacity: 1; }
+    .achievement-card.removing { animation: cardRemove 0.28s ease forwards !important; }
+
+    /* Card sections */
+    .card-header {
+      display: flex; justify-content: space-between; align-items: flex-start;
+      margin-bottom: 0.7rem;
+    }
+    .achievement-title { font-size: 1rem; font-weight: 700; line-height: 1.4; color: var(--ink); margin-bottom: 0.3rem; }
+    .achievement-desc { font-size: 0.83rem; line-height: 1.75; color: var(--muted); }
+    .card-footer {
+      display: flex; justify-content: space-between; align-items: center;
+      margin-top: 0.85rem; padding-top: 0.75rem;
+      border-top: 1px solid var(--border-subtle);
+      flex-wrap: wrap; gap: 0.5rem;
+    }
+    .achievement-date { font-size: 0.63rem; letter-spacing: 0.09em; text-transform: uppercase; color: var(--light); }
+
+    /* Category badge — pill shape */
+    .category-badge {
+      font-size: 0.58rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+      padding: 0.22rem 0.75rem; border-radius: 20px; color: #fff; white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    /* Delete button — hidden until hover */
+    .btn-delete {
+      opacity: 0; transition: opacity 0.18s ease;
+      color: var(--light); font-size: 1.1rem; line-height: 1;
+      padding: 0 0.3rem; margin-top: -0.1rem;
+    }
+    .achievement-card:hover .btn-delete { opacity: 1; }
+
+    /* Confirm strip */
+    .confirm-strip { display: none; align-items: center; gap: 0.4rem; flex-shrink: 0; }
+    .achievement-card.is-confirming .confirm-strip { display: flex; }
+    .achievement-card.is-confirming .btn-delete { opacity: 0 !important; pointer-events: none; }
+
+    /* ────────────────── EMPTY STATE ────────────────── */
+    .empty-state {
+      text-align: center; padding: 5rem 2rem;
+      border: 1px dashed var(--border); border-radius: var(--radius);
+      background: rgba(255,255,255,0.5);
+      animation: groupReveal 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+    .empty-icon { font-size: 2.8rem; margin-bottom: 0.9rem; opacity: 0.3; display: block; }
+    .empty-title { font-family: 'Playfair Display', serif; font-size: 1.25rem; font-weight: 700; margin-bottom: 0.45rem; }
+    .empty-text { font-size: 0.85rem; color: var(--muted); line-height: 1.6; }
+
+    /* ────────────────── KEYFRAMES ────────────────── */
+    @keyframes formReveal  { from { opacity:0; transform:translateY(-12px) scale(0.99); } to { opacity:1; transform:translateY(0) scale(1); } }
+    @keyframes formHide    { to   { opacity:0; transform:translateY(-8px) scale(0.99); } }
+    @keyframes groupReveal { from { opacity:0; transform:translateY(18px); } to { opacity:1; transform:translateY(0); } }
+    @keyframes cardReveal  { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } }
+    @keyframes cardRemove  { to   { opacity:0; transform:translateX(18px) scale(0.97); max-height:0; padding:0; margin:0; overflow:hidden; border-width:0; } }
+
+    /* ────────────────── FOOTER ────────────────── */
+    .site-footer { text-align: center; font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--light); border-top: 1px solid var(--border); padding: 1.4rem 2rem; margin-top: 2rem; }
+
+    /* ────────────────── RESPONSIVE ────────────────── */
+    @media (max-width: 680px) {
+      .stats-bar { grid-template-columns: 1fr 1fr; }
+      .stat-item:nth-child(2) { border-right: none; }
+      .stat-item:nth-child(3) { border-top: 1px solid var(--border); }
+      .stat-item:nth-child(4) { border-top: 1px solid var(--border); border-right: none; }
+      .form-grid { grid-template-columns: 1fr; }
+      .btn-delete { opacity: 1; }
+      .page-wrap { padding: 0 1rem 4rem; }
+      .add-form-wrap { padding: 1.3rem 1.2rem; }
+    }
+    @media (max-width: 440px) {
+      .stats-bar { grid-template-columns: 1fr 1fr; }
+      .toolbar { gap: 0.5rem; }
+      .achievement-card { padding: 1.1rem 1.1rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .achievement-card, .month-group, .add-form-wrap, .empty-state { animation: none !important; opacity: 1 !important; transform: none !important; }
+    }
+    /* ── NEWS TICKER ── */
+    .ticker-wrap { background: #111; overflow: hidden; display: flex; align-items: stretch; height: 2.4rem; }
+    .ticker-label { background: #e8000d; color: #fff; font-family: 'Source Serif 4', serif; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; padding: 0 1.2rem; display: flex; align-items: center; white-space: nowrap; flex-shrink: 0; gap: 0.5rem; }
+    .ticker-label::before { content: ''; display: inline-block; width: 7px; height: 7px; background: #fff; border-radius: 50%; animation: pulse-dot 1.2s ease-in-out infinite; }
+    @keyframes pulse-dot { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.4; transform: scale(0.7); } }
+    .ticker-inner { overflow: hidden; flex: 1; display: flex; align-items: center; }
+    .ticker-track { display: flex; align-items: center; white-space: nowrap; will-change: transform; animation: ticker-scroll 40s linear infinite; }
+    .ticker-track:hover { animation-play-state: paused; cursor: default; }
+    .ticker-track a { color: #fff; font-family: 'Source Serif 4', serif; font-size: 0.78rem; font-weight: 600; padding: 0 2rem; text-decoration: none; transition: color 0.15s; }
+    .ticker-track a:hover { color: #e8000d; text-decoration: none; cursor: pointer; }
+    .ticker-track .ticker-sep { color: #e8000d; font-size: 1rem; font-weight: 700; flex-shrink: 0; line-height: 1; }
+    @keyframes ticker-scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+  </style>
+</head>
+<body>
+
+  <!-- ── NEWS TICKER ── -->
+  <div class="ticker-wrap">
+    <div class="ticker-label">Breaking News</div>
+    <div class="ticker-inner">
+      <div class="ticker-track" id="js-ticker">
+        <span style="color:rgba(255,255,255,0.5); font-size:0.78rem; padding:0 2rem; font-family:'Source Serif 4',serif;">Loading headlines&hellip;</span>
+      </div>
+    </div>
+  </div>
+  <!-- ── HEADER ── -->
+  <div class="meta-bar">
+    <div class="meta-bar-inner">
+      <span id="js-date"><!-- date injected by JS --></span>
+      <span>Personal Edition &nbsp;&bull;&nbsp; Est. 2026</span>
+    </div>
+  </div>
+  <div class="masthead-wrap">
+    <div class="masthead">Personal Hub</div>
+    <div class="masthead-sub">Alfie Edworthy</div>
+  </div>
+  <hr class="rule-double">
+
+  <!-- ── NAV RIBBON ── -->
+  <div class="nav-ribbon">
+    <nav>
+      <a href="personal_hub.html" class="nav-home">&#8962; Home</a>
+      <a href="rics-study.html">RICS Study</a>
+      <div class="nav-dropdown">
+        <button class="nav-drop-btn">News <span class="nav-caret">▾</span></button>
+        <div class="nav-drop-menu">
+          <a href="world-news.html">World Affairs</a>
+          <a href="uk-politics-news.html">UK Politics</a>
+          <a href="us-politics-news.html">US Politics</a>
+          <a href="financial-news.html">Financial</a>
+          <a href="tech-news.html">Technology</a>
+        </div>
+      </div>
+      <a href="curiosity.html">Curiosity Corner</a>
+      <a href="philosophy.html">Philosophy Corner</a>
+      <div class="nav-dropdown">
+        <button class="nav-drop-btn">Recommendations <span class="nav-caret">▾</span></button>
+        <div class="nav-drop-menu">
+          <a href="reads.html">Books</a>
+          <a href="films.html">Films</a>
+        </div>
+      </div>
+      <a href="recipes.html">Recipes</a>
+      <a href="exercise.html">Exercise</a>
+      <div class="nav-divider"></div>
+      <div class="nav-dropdown">
+        <button class="nav-drop-btn nav-active">Organisation <span class="nav-caret">▾</span></button>
+        <div class="nav-drop-menu">
+          <a href="todo-lists.html">To-Do Lists</a>
+          <a href="weekly-checkin.html">Weekly Check-In</a>
+          <a href="monthly-goals.html">Monthly Goals</a>
+          <a href="achievements.html" class="nav-active">Achievements</a>
+          <a href="wishlist.html">Wishlist</a>
+        </div>
+      </div>
+      <a href="calendar.html">Calendar</a>
+    </nav>
+  </div>
+
+  <div class="page-wrap">
+    <div class="page-header">
+      <div class="page-header-meta">Organisation</div>
+      <h1>Achievements</h1>
+      <p class="standfirst">A record of your wins, big and small. Every achievement counts.</p>
+    </div>
+
+    <!-- Stats bar -->
+    <div class="stats-bar">
+      <div class="stat-item">
+        <span class="stat-num blue" id="stat-total">0</span>
+        <span class="stat-label">Total achievements</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num gold" id="stat-this-month">0</span>
+        <span class="stat-label">This month</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num green" id="stat-categories">0</span>
+        <span class="stat-label">Categories</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num" id="stat-months">0</span>
+        <span class="stat-label">Months tracked</span>
+      </div>
+    </div>
+
+    <!-- Toolbar: filter bar + add button -->
+    <div class="toolbar">
+      <div class="toolbar-left" id="filter-bar">
+        <!-- populated by JS -->
+      </div>
+      <button type="button" id="btn-add-toggle" class="btn btn-primary">+ Add Achievement</button>
+    </div>
+
+    <!-- Add form (hidden by default, opened by btn-add-toggle) -->
+    <div id="add-form-wrap" class="add-form-wrap">
+      <div class="add-form-title">New Achievement</div>
+      <div class="form-grid">
+        <div class="form-group full">
+          <label class="form-label">Title</label>
+          <input type="text" id="f-title" class="form-input" placeholder="What did you achieve?">
+        </div>
+        <div class="form-group full">
+          <label class="form-label">Description (optional)</label>
+          <textarea id="f-desc" class="form-textarea" placeholder="A little more detail&hellip;"></textarea>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Date</label>
+          <input type="date" id="f-date" class="form-input">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Category</label>
+          <select id="f-category" class="form-select">
+            <option value="">Select category&hellip;</option>
+            <option>Career</option>
+            <option>Personal</option>
+            <option>Learning</option>
+            <option>Health</option>
+            <option>Creative</option>
+            <option>Finance</option>
+            <option>Travel</option>
+            <option>Social</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-actions">
+        <button type="button" id="btn-save" class="btn btn-primary">Save Achievement</button>
+        <button type="button" id="btn-cancel" class="btn btn-ghost">Cancel</button>
+      </div>
+    </div>
+
+    <!-- Achievements output -->
+    <div id="achievements-output"></div>
+  </div>
+
+  <footer class="site-footer">Personal Hub &mdash; Alfie Edworthy &mdash; Private &amp; Confidential</footer>
+
+  <script>
+  // ── Data ─────────────────────────────────────────────────────
+  var STORAGE_KEY = 'personal_hub_achievements';
+
+  var CATEGORY_COLORS = {
+    'Career':   '#003399',
+    'Personal': '#1a6630',
+    'Learning': '#8b4a00',
+    'Health':   '#007070',
+    'Creative': '#5b1a8b',
+    'Finance':  '#7a5c00',
+    'Travel':   '#8b2e00',
+    'Social':   '#8b1238',
+    'Other':    '#555555',
+  };
+
+  var DEFAULT_DATA = {
+    '2026-03': [
+      {
+        id: '1',
+        title: 'Launched personal website',
+        description: 'Built and deployed using Next.js',
+        date: '2026-03-20',
+        category: 'Career'
+      }
+    ]
+  };
+
+  function loadData() {
+    try {
+      var s = localStorage.getItem(STORAGE_KEY);
+      if (s) return JSON.parse(s);
+    } catch(_) {}
+    return JSON.parse(JSON.stringify(DEFAULT_DATA));
+  }
+
+  function saveData(data) {
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(data)); } catch(_) {}
+  }
+
+  var data = loadData();
+
+  // ── Helpers ───────────────────────────────────────────────────
+  function esc(s) {
+    return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  }
+
+  function uid() {
+    return Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
+  }
+
+  function monthKey(dateStr) {
+    return dateStr.slice(0, 7); // 'YYYY-MM'
+  }
+
+  function formatMonthHeading(key) {
+    var p = key.split('-');
+    return new Date(+p[0], +p[1] - 1, 1).toLocaleDateString('en-GB', { month: 'long', year: 'numeric' });
+  }
+
+  function formatDate(dateStr) {
+    var p = dateStr.split('-');
+    return new Date(+p[0], +p[1] - 1, +p[2]).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+  }
+
+  function allItems() {
+    var out = [];
+    Object.keys(data).forEach(function(k) {
+      (data[k] || []).forEach(function(item) { out.push(item); });
+    });
+    return out;
+  }
+
+  function uniqueCategories() {
+    var cats = {};
+    allItems().forEach(function(i) { if (i.category) cats[i.category] = true; });
+    return Object.keys(cats);
+  }
+
+  // ── Stats ─────────────────────────────────────────────────────
+  function updateStats() {
+    var items     = allItems();
+    var thisMonth = new Date().toISOString().slice(0, 7);
+    var thisCount = (data[thisMonth] || []).length;
+    document.getElementById('stat-total').textContent      = items.length;
+    document.getElementById('stat-this-month').textContent = thisCount;
+    document.getElementById('stat-categories').textContent = uniqueCategories().length;
+    document.getElementById('stat-months').textContent     = Object.keys(data).filter(function(k){ return data[k].length > 0; }).length;
+  }
+
+  // ── Filter bar ────────────────────────────────────────────────
+  var activeFilter = 'all';
+
+  function buildFilterBar() {
+    var cats = uniqueCategories().sort();
+    var bar  = document.getElementById('filter-bar');
+    bar.innerHTML = '<button class="filter-btn' + (activeFilter === 'all' ? ' active' : '') + '" data-filter="all">All</button>'
+      + cats.map(function(c) {
+          return '<button class="filter-btn' + (activeFilter === c ? ' active' : '') + '" data-filter="' + esc(c) + '">' + esc(c) + '</button>';
+        }).join('');
+  }
+
+  // ── Render ────────────────────────────────────────────────────
+  function cardHTML(item, delay) {
+    var color      = CATEGORY_COLORS[item.category] || CATEGORY_COLORS['Other'];
+    var delayStyle = delay ? 'animation-delay:' + delay + 'ms;' : '';
+    return '<div class="achievement-card" data-id="' + esc(item.id) + '" style="border-left-color:' + color + ';' + delayStyle + '">'
+      + '<div class="card-header">'
+      + '<span class="category-badge" style="background:' + color + '">' + esc(item.category) + '</span>'
+      + '<button class="btn btn-sm btn-ghost btn-delete" title="Delete">&#215;</button>'
+      + '</div>'
+      + '<div class="achievement-title">' + esc(item.title) + '</div>'
+      + (item.description ? '<p class="achievement-desc">' + esc(item.description) + '</p>' : '')
+      + '<div class="card-footer">'
+      + '<span class="achievement-date">' + formatDate(item.date) + '</span>'
+      + '<div class="confirm-strip">'
+      + '<span style="font-size:0.75rem;color:var(--muted)">Remove?</span>'
+      + '<button class="btn btn-sm btn-danger btn-confirm-delete">Delete</button>'
+      + '<button class="btn btn-sm btn-ghost btn-cancel-delete">Cancel</button>'
+      + '</div>'
+      + '</div>'
+      + '</div>';
+  }
+
+  function renderAll() {
+    var output = document.getElementById('achievements-output');
+    var keys   = Object.keys(data)
+      .filter(function(k) { return data[k] && data[k].length > 0; })
+      .sort(function(a, b) { return b.localeCompare(a); }); // newest first
+
+    if (keys.length === 0) {
+      output.innerHTML = '<div class="empty-state">'
+        + '<div class="empty-icon">\uD83C\uDFC6</div>'
+        + '<div class="empty-title">No achievements recorded yet</div>'
+        + '<p class="empty-text">Add your first one above &mdash; every win counts.</p>'
+        + '</div>';
+      updateStats();
+      buildFilterBar();
+      return;
+    }
+
+    var html = '';
+    keys.forEach(function(key) {
+      var items = data[key].filter(function(item) {
+        return activeFilter === 'all' || item.category === activeFilter;
+      });
+      if (items.length === 0) return;
+
+      // Sort by date descending within month
+      items = items.slice().sort(function(a, b) { return b.date.localeCompare(a.date); });
+
+      html += '<div class="month-group" data-month="' + key + '">'
+        + '<div class="month-heading">'
+        + '<h2>' + formatMonthHeading(key) + '</h2>'
+        + '<div class="month-rule"></div>'
+        + '<span class="month-count">' + items.length + (items.length === 1 ? ' achievement' : ' achievements') + '</span>'
+        + '</div>'
+        + '<div class="achievement-list">'
+        + items.map(function(item, i) { return cardHTML(item, i * 55); }).join('')
+        + '</div>'
+        + '</div>';
+    });
+
+    output.innerHTML = html || '<div class="empty-state"><div class="empty-icon">\uD83D\uDD0D</div><div class="empty-title">No results</div><p class="empty-text">No achievements in this category yet.</p></div>';
+
+    updateStats();
+    buildFilterBar();
+  }
+
+  // ── Add ───────────────────────────────────────────────────────
+  function addAchievement(title, desc, date, category) {
+    var key  = monthKey(date);
+    var item = { id: uid(), title: title.trim(), description: desc.trim(), date: date, category: category };
+    if (!data[key]) data[key] = [];
+    data[key].unshift(item);
+    saveData(data);
+    renderAll();
+  }
+
+  // ── Delete ────────────────────────────────────────────────────
+  function deleteById(id) {
+    Object.keys(data).forEach(function(k) {
+      data[k] = (data[k] || []).filter(function(i) { return i.id !== id; });
+      if (data[k].length === 0) delete data[k];
+    });
+    saveData(data);
+  }
+
+  // ── Events ────────────────────────────────────────────────────
+  var addFormWrap = document.getElementById('add-form-wrap');
+  var btnToggle   = document.getElementById('btn-add-toggle');
+  var btnCancel   = document.getElementById('btn-cancel');
+  var btnSave     = document.getElementById('btn-save');
+
+  function closeForm() {
+    addFormWrap.classList.add('closing');
+    btnToggle.textContent = '+ Add Achievement';
+    setTimeout(function() {
+      addFormWrap.classList.remove('open', 'closing');
+    }, 280);
+  }
+
+  btnToggle.addEventListener('click', function() {
+    if (addFormWrap.classList.contains('open')) {
+      closeForm();
+    } else {
+      addFormWrap.classList.add('open');
+      btnToggle.textContent = '✕ Close';
+      document.getElementById('f-title').focus();
+    }
+  });
+
+  btnCancel.addEventListener('click', closeForm);
+
+  btnSave.addEventListener('click', function() {
+    var title    = document.getElementById('f-title').value.trim();
+    var desc     = document.getElementById('f-desc').value.trim();
+    var date     = document.getElementById('f-date').value;
+    var category = document.getElementById('f-category').value;
+
+    if (!title)    { document.getElementById('f-title').focus(); return; }
+    if (!date)     { document.getElementById('f-date').focus(); return; }
+    if (!category) { document.getElementById('f-category').focus(); return; }
+
+    addAchievement(title, desc, date, category);
+
+    // Reset form
+    document.getElementById('f-title').value    = '';
+    document.getElementById('f-desc').value     = '';
+    document.getElementById('f-category').value = '';
+    document.getElementById('f-date').value     = new Date().toISOString().slice(0, 10);
+    closeForm();
+  });
+
+  // Card + filter interactions via delegation
+  document.getElementById('achievements-output').addEventListener('click', function(e) {
+    var card = e.target.closest('.achievement-card');
+    if (!card) return;
+    var id = card.dataset.id;
+
+    if (e.target.closest('.btn-delete')) {
+      card.classList.add('is-confirming');
+    } else if (e.target.closest('.btn-cancel-delete')) {
+      card.classList.remove('is-confirming');
+    } else if (e.target.closest('.btn-confirm-delete')) {
+      card.classList.add('removing');
+      setTimeout(function() { deleteById(id); renderAll(); }, 220);
+    }
+  });
+
+  document.getElementById('filter-bar').addEventListener('click', function(e) {
+    var btn = e.target.closest('.filter-btn');
+    if (!btn) return;
+    activeFilter = btn.dataset.filter;
+    renderAll();
+  });
+
+  // ── Init ─────────────────────────────────────────────────────
+  // Set default date to today
+  document.getElementById('f-date').value = new Date().toISOString().slice(0, 10);
+
+  // Date label
+  document.getElementById('js-date').textContent = new Date().toLocaleDateString('en-GB', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+
+  renderAll();
+    (function () {
+      var headlines = ['World leaders gather for emergency climate summit in Geneva','Global markets steady as central banks signal rate pause','UN Security Council meets over escalating tensions in Middle East','European Union agrees new trade framework with South-East Asia','Scientists announce breakthrough in carbon capture technology','NATO allies pledge increased defence spending at Brussels meeting','IMF revises global growth forecast upward for 2026','Historic ceasefire agreement reached after months of negotiations','G7 nations commit to new framework on artificial intelligence governance','Record temperatures recorded across southern Europe this week','World Health Organisation warns of emerging respiratory virus strain','African Union summit focuses on infrastructure investment drive'];
+      var t = document.getElementById('js-ticker');
+      var mk = function(a){return a.map(function(x){return '<span style="color:#fff;font-family:\'Source Serif 4\',serif;font-size:0.78rem;font-weight:600;padding:0 2rem;">'+x+'</span><span class="ticker-sep">&#124;</span>';}).join('');};
+      t.innerHTML = mk(headlines)+mk(headlines);
+      requestAnimationFrame(function(){t.style.animationDuration=(t.scrollWidth/2/60)+'s';});
+    })();
+
+    // ── Dropdown nav ──
+    (function () {
+      var btns = document.querySelectorAll('.nav-drop-btn');
+      btns.forEach(function(btn) {
+        btn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          var menu = btn.nextElementSibling;
+          var isOpen = menu.style.display === 'flex';
+          document.querySelectorAll('.nav-drop-menu').forEach(function(m){ m.style.display = ''; });
+          if (!isOpen) menu.style.display = 'flex';
+        });
+      });
+      document.addEventListener('click', function() {
+        document.querySelectorAll('.nav-drop-menu').forEach(function(m){ m.style.display = ''; });
+      });
+    })();
+  </script>
+
+</body>
+</html>

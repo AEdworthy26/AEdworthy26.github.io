@@ -1,0 +1,1810 @@
+<!DOCTYPE html>
+  <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Hub</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink:    #0d0d0d;
+      --paper:  #f4f0e6;
+      --rule:   #1a1a1a;
+      --muted:  #555;
+      --light:  #888;
+      --blue:   #003399;   /* Telegraph blue */
+    }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: 'Source Serif 4', Georgia, serif;
+      min-height: 100vh;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ────────────────── NEWS TICKER ────────────────── */
+    .ticker-wrap {
+      background: #111;
+      overflow: hidden;
+      display: flex;
+      align-items: stretch;
+      height: 2.4rem;
+    }
+
+    .ticker-label {
+      background: #e8000d;
+      color: #fff;
+      font-family: 'Source Serif 4', serif;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      padding: 0 1.2rem;
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+      flex-shrink: 0;
+      gap: 0.5rem;
+    }
+
+    .ticker-label::before {
+      content: '';
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      background: #fff;
+      border-radius: 50%;
+      animation: pulse-dot 1.2s ease-in-out infinite;
+    }
+
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50%       { opacity: 0.4; transform: scale(0.7); }
+    }
+
+    .ticker-inner {
+      overflow: hidden;
+      flex: 1;
+      display: flex;
+      align-items: center;
+    }
+
+    .ticker-track {
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+      will-change: transform;
+      animation: ticker-scroll 40s linear infinite;
+    }
+
+    .ticker-track:hover { animation-play-state: paused; cursor: default; }
+
+    .ticker-track a {
+      color: #fff;
+      font-family: 'Source Serif 4', serif;
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 0 2rem;
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .ticker-track a:hover { color: #e8000d; text-decoration: none; cursor: pointer; }
+
+    .ticker-track .ticker-sep {
+      color: #e8000d;
+      font-size: 1rem;
+      font-weight: 700;
+      flex-shrink: 0;
+      line-height: 1;
+    }
+
+    @keyframes ticker-scroll {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* ────────────────── HEADER ────────────────── */
+    header {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem 0;
+    }
+
+    /* Top meta bar */
+    .meta-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.68rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 0.4rem;
+      margin-bottom: 0.6rem;
+    }
+
+    /* Masthead */
+    .masthead-row {
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .masthead {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 900;
+      font-size: clamp(3rem, 7vw, 5.5rem);
+      line-height: 1;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+      text-align: center;
+    }
+
+    .owner-tag {
+      font-family: 'Source Serif 4', serif;
+      font-size: 0.78rem;
+      font-style: italic;
+      color: var(--muted);
+      white-space: nowrap;
+      padding-bottom: 0.25rem;
+    }
+
+    /* Thin rule under masthead */
+    .rule-single {
+      border: none;
+      border-top: 1px solid var(--rule);
+      margin: 0.3rem 0;
+    }
+
+    .rule-double {
+      border: none;
+      border-top: 3px double var(--rule);
+    }
+
+    /* ────────────────── NAV RIBBON ────────────────── */
+    .nav-ribbon {
+      background: linear-gradient(90deg, #4b5563 0%, #1f2937 100%);
+    }
+
+    .nav-ribbon nav {
+      max-width: 1600px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.3rem;
+    }
+
+    .nav-ribbon nav a {
+      color: rgba(255,255,255,0.9);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 0.5rem 0.95rem;
+      border-radius: 5px;
+      transition: background 0.15s, color 0.15s;
+      white-space: nowrap;
+    }
+
+    .nav-ribbon nav a:hover { background: rgba(255,255,255,0.18); color: #fff; text-decoration: none; }
+    .nav-ribbon nav a.nav-home { color: #fff; font-weight: 700; margin-right: 0.4rem; padding-right: 1rem; border-right: 1px solid rgba(255,255,255,0.25); border-radius: 0; }
+
+    .nav-ribbon nav .nav-spacer {
+      flex: 1;
+      height: 1px;
+      background: rgba(255,255,255,0.25);
+      margin: 0 0.5rem;
+    }
+
+    /* Dropdown menus */
+    .nav-dropdown { position: relative; display: flex; align-items: center; }
+    .nav-drop-btn {
+      color: rgba(255,255,255,0.9);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 0.8rem; font-weight: 500; letter-spacing: 0.04em;
+      text-transform: uppercase; padding: 0.5rem 0.95rem; border-radius: 5px;
+      background: none; border: none; cursor: pointer; white-space: nowrap;
+      display: flex; align-items: center; gap: 0.25rem; transition: background 0.15s;
+    }
+    .nav-drop-btn:hover,
+    .nav-dropdown:hover .nav-drop-btn { background: rgba(255,255,255,0.18); color: #fff; }
+    .nav-drop-btn.nav-active { background: rgba(255,255,255,0.18); color: #fff; }
+    .nav-caret { font-size: 0.55rem; opacity: 0.65; transition: transform 0.15s; line-height: 1; }
+    .nav-dropdown:hover .nav-caret { transform: rotate(180deg); }
+    .nav-dropdown:hover .nav-drop-menu { display: flex; }
+    .nav-drop-menu {
+      position: absolute; top: 100%; left: 0;
+      background: #1f2937; border-radius: 6px;
+      min-width: 155px; display: none; flex-direction: column;
+      z-index: 200; box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+      overflow: hidden; margin-top: 0;
+    }
+    /* dropdown shown via JS */
+    .nav-drop-menu a {
+      color: rgba(255,255,255,0.85);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 0.76rem; font-weight: 500; letter-spacing: 0.04em;
+      text-transform: uppercase; padding: 0.6rem 1.1rem;
+      text-decoration: none; transition: background 0.12s; white-space: nowrap;
+      border-radius: 0; display: block;
+    }
+    .nav-drop-menu a:hover { background: rgba(255,255,255,0.15); color: #fff; }
+    .nav-divider { width: 1px; height: 1.1rem; background: rgba(255,255,255,0.35); margin: 0 0.6rem; flex-shrink: 0; align-self: center; }
+    .nav-drop-menu a + a { border-top: 1px solid rgba(255,255,255,0.07); }
+    .nav-drop-menu a.nav-active { background: rgba(255,255,255,0.15); color: #fff; }
+
+    @media (max-width: 800px) {
+      .nav-ribbon nav { flex-wrap: wrap; gap: 0; padding: 0.25rem 0.5rem; }
+      .nav-ribbon nav .nav-spacer { display: none; }
+      .nav-drop-menu { position: static; box-shadow: none; border-radius: 0; margin-top: 0; background: rgba(255,255,255,0.06); }
+      .nav-dropdown { flex-direction: column; align-items: flex-start; width: 100%; }
+      .nav-drop-menu { display: flex !important; }
+    }
+
+    /* ────────────────── MAIN ────────────────── */
+    .page-wrap {
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 0 2rem 3rem;
+    }
+
+    /* ── Date ribbon ── */
+    .date-ribbon {
+      font-size: 0.7rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      border-bottom: 1px solid #bbb;
+      padding: 0.4rem 0;
+      margin-bottom: 0;
+    }
+
+    /* ── Front page grid: left | centre | right ── */
+    .front-grid {
+      display: grid;
+      grid-template-columns: 1fr 3fr 1fr;
+    }
+
+    .front-grid .col       { padding: 1.3rem 1.5rem; }
+    .front-grid .col-left  { border-right: 1px solid var(--rule); }
+    .front-grid .col-right { border-left:  1px solid var(--rule); }
+
+    /* Stacked articles within a column */
+    .col-stack { display: flex; flex-direction: column; }
+    .col-stack .stack-item { padding-bottom: 1.2rem; margin-bottom: 1.2rem; border-bottom: 1px solid #ccc; }
+    .col-stack .stack-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+
+    /* ────────────────── ARTICLE STYLES ────────────────── */
+    .section-tag {
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--blue);
+      display: block;
+      margin-bottom: 0.45rem;
+    }
+
+    .col h2 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 900;
+      line-height: 1.12;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Lead headline */
+    .col-centre .lead-story h2 {
+      font-size: clamp(1.8rem, 3.2vw, 2.6rem);
+      border-bottom: 2px solid var(--ink);
+      padding-bottom: 0.55rem;
+      margin-bottom: 0.75rem;
+    }
+
+    /* Secondary headline in centre */
+    .col-centre .secondary-story h2 {
+      font-size: clamp(1.2rem, 2vw, 1.6rem);
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 0.4rem;
+      margin-bottom: 0.6rem;
+    }
+
+    /* Side column headlines */
+    .col-left  h2,
+    .col-right h2 {
+      font-size: clamp(1rem, 1.6vw, 1.25rem);
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 0.4rem;
+      margin-bottom: 0.55rem;
+    }
+
+    .col p.standfirst {
+      font-size: 0.9rem;
+      font-weight: 600;
+      line-height: 1.6;
+      margin-bottom: 0.6rem;
+    }
+
+    .col p.body-text {
+      font-size: 0.82rem;
+      line-height: 1.75;
+      color: var(--muted);
+    }
+
+    /* Ruled placeholder lines */
+    .lines { margin-top: 0.6rem; }
+    .lines span {
+      display: block;
+      height: 1px;
+      background: #ccc;
+      margin: 0.65rem 0;
+    }
+
+    /* ────────────────── QUOTE ────────────────── */
+    .quote-strip {
+      border-top: 3px double var(--rule);
+      padding: 2rem 2rem 1.6rem;
+      text-align: center;
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    .quote-strip blockquote {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.05rem, 2vw, 1.35rem);
+      font-style: italic;
+      font-weight: 400;
+      line-height: 1.6;
+      color: var(--ink);
+      margin-bottom: 0.6rem;
+    }
+
+    .quote-strip cite {
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-style: normal;
+    }
+
+    /* ────────────────── GOALS PREVIEW ────────────────── */
+    .goal-preview-list { margin-top: 0.65rem; display: flex; flex-direction: column; gap: 0.55rem; }
+    .goal-preview-item { display: flex; flex-direction: column; gap: 0.22rem; }
+    .goal-preview-title { font-size: 0.8rem; font-weight: 600; line-height: 1.35; color: var(--ink); }
+    .goal-preview-meta { display: flex; align-items: center; gap: 0.5rem; }
+    .goal-status-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
+    .goal-status-dot.not-started { background: #aaa; }
+    .goal-status-dot.in-progress { background: #e6a817; }
+    .goal-status-dot.completed   { background: #1a6630; }
+    .goal-preview-pct { font-size: 0.65rem; color: var(--light); letter-spacing: 0.04em; }
+    .goal-preview-bar { flex: 1; height: 3px; background: #e0dbd0; border-radius: 2px; overflow: hidden; }
+    .goal-preview-bar-fill { height: 100%; border-radius: 2px; }
+    .goal-preview-bar-fill.not-started { background: #aaa; }
+    .goal-preview-bar-fill.in-progress { background: var(--blue); }
+    .goal-preview-bar-fill.completed   { background: #1a6630; }
+    .goals-view-link { display: inline-block; margin-top: 0.7rem; font-size: 0.72rem; font-weight: 700; color: var(--blue); letter-spacing: 0.04em; }
+    .goals-view-link:hover { text-decoration: underline; }
+    .goals-preview-empty { font-size: 0.78rem; color: var(--light); font-style: italic; margin-top: 0.5rem; }
+
+    /* ────────────────── READS PREVIEW ────────────────── */
+    .reads-preview { margin-top: 0.75rem; display: flex; flex-direction: column; gap: 0.55rem; }
+    .reads-preview-item {
+      display: flex; align-items: flex-start; gap: 0.65rem;
+      padding: 0.55rem 0.7rem;
+      background: rgba(0,0,0,0.025);
+      border-left: 2px solid #ddd;
+      border-radius: 0 2px 2px 0;
+      text-decoration: none; color: inherit;
+    }
+    .reads-preview-item:hover { background: rgba(0,0,0,0.05); }
+    .reads-preview-item.is-book { border-left-color: #c8a348; }
+    .reads-preview-item.is-film { border-left-color: var(--blue); }
+    .reads-preview-eyebrow {
+      font-size: 0.58rem; font-weight: 700; letter-spacing: 0.18em;
+      text-transform: uppercase; color: var(--light);
+      display: block; margin-bottom: 0.18rem;
+    }
+    .reads-preview-title  { font-size: 0.82rem; font-weight: 700; line-height: 1.3; color: var(--ink); }
+    .reads-preview-credit { font-size: 0.68rem; color: var(--muted); margin-top: 0.08rem; }
+    .reads-preview-score  { font-size: 0.65rem; font-weight: 700; margin-top: 0.2rem; letter-spacing: 0.04em; }
+    .reads-preview-score.gold { color: #96751e; }
+    .reads-preview-score.blue { color: var(--blue); }
+    .reads-view-link { display: inline-block; margin-top: 0.7rem; font-size: 0.72rem; font-weight: 700; color: var(--blue); letter-spacing: 0.04em; }
+    .reads-view-link:hover { text-decoration: underline; }
+
+    /* ────────────────── NEWS PREVIEW ────────────────── */
+    .news-preview { margin-top: 0.75rem; }
+    .news-cat-pill {
+      display: inline-block; font-size: 0.55rem; font-weight: 700;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      padding: 0.2rem 0.6rem; border-radius: 20px; color: #fff;
+      margin-bottom: 0.5rem;
+    }
+    .news-preview-headline {
+      font-family: 'Playfair Display', serif; font-weight: 700;
+      font-size: 0.92rem; line-height: 1.35; margin-bottom: 0.4rem; color: var(--ink);
+    }
+    .news-preview-excerpt { font-size: 0.75rem; line-height: 1.6; color: var(--muted); }
+    .news-preview-others {
+      margin-top: 0.6rem; padding-top: 0.6rem;
+      border-top: 1px solid rgba(0,0,0,0.07);
+      display: flex; flex-direction: column; gap: 0.3rem;
+    }
+    .news-preview-other {
+      font-size: 0.72rem; line-height: 1.3; color: var(--ink);
+      padding-left: 0.55rem; border-left: 2px solid #ddd;
+      display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+    }
+    .news-view-link {
+      display: inline-block; margin-top: 0.7rem; font-size: 0.72rem;
+      font-weight: 700; color: var(--blue); letter-spacing: 0.04em;
+    }
+    .news-view-link:hover { text-decoration: underline; }
+    .news-preview-thumb {
+      width: 100%; aspect-ratio: 16/7; overflow: hidden;
+      border-radius: 3px; margin-bottom: 0.75rem; background: #e0dbd0;
+      position: relative;
+    }
+    .news-preview-thumb img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
+      transition: opacity 0.4s;
+    }
+    .news-preview-thumb::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.22) 0%, transparent 55%);
+      pointer-events: none;
+    }
+    .news-preview-thumb-ph {
+      width: 100%; height: 100%; display: flex; align-items: center;
+      justify-content: center; font-size: 2rem; opacity: 0.25;
+    }
+
+    /* ────────────────── CALENDAR PREVIEW ────────────────── */
+    .cal-preview { margin-top: 0.65rem; display: flex; flex-direction: column; gap: 0.4rem; }
+    .cal-preview-item { display: flex; gap: 0.6rem; align-items: flex-start; padding: 0.45rem 0.65rem; background: rgba(0,0,0,0.025); border-left: 2.5px solid var(--blue); border-radius: 0 3px 3px 0; }
+    .cal-preview-date { flex-shrink: 0; text-align: center; min-width: 28px; }
+    .cal-preview-day { font-size: 0.55rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--light); display: block; line-height: 1.2; }
+    .cal-preview-num { font-family: 'Playfair Display', serif; font-weight: 900; font-size: 1rem; line-height: 1; color: var(--ink); display: block; }
+    .cal-preview-body { flex: 1; min-width: 0; }
+    .cal-preview-title { font-size: 0.8rem; font-weight: 600; line-height: 1.3; color: var(--ink); }
+    .cal-preview-meta { font-size: 0.67rem; color: var(--muted); margin-top: 0.12rem; display: flex; align-items: center; gap: 0.25rem; flex-wrap: wrap; }
+    .cal-preview-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
+    .cal-preview-empty { font-size: 0.78rem; color: var(--light); font-style: italic; margin-top: 0.5rem; }
+    .cal-view-link { display: inline-block; margin-top: 0.7rem; font-size: 0.72rem; font-weight: 700; color: var(--blue); letter-spacing: 0.04em; }
+    .cal-view-link:hover { text-decoration: underline; }
+
+    /* ────────────────── FOOTER ────────────────── */
+    footer {
+      text-align: center;
+      font-size: 0.65rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--light);
+      border-top: 1px solid #ccc;
+      padding: 0.8rem 2rem;
+    }
+
+    /* ────────────────── RICS CARD ────────────────── */
+    .rics-card-image {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0.75rem 0 0.6rem;
+      border: 1px solid #c8c4ba;
+    }
+    .rics-level-badge {
+      display: inline-block;
+      font-size: 0.6rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 0.12rem 0.45rem;
+      border-radius: 2px;
+      margin-left: 0.5rem;
+      vertical-align: middle;
+      position: relative;
+      top: -1px;
+    }
+    .rics-module-label {
+      font-size: 0.68rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.35rem;
+      display: block;
+    }
+    .rics-read-link {
+      display: inline-block;
+      margin-top: 0.55rem;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--blue);
+      letter-spacing: 0.04em;
+    }
+    .rics-read-link:hover { text-decoration: underline; }
+
+    /* ────────────────── TODO PREVIEW ────────────────── */
+    .todo-preview-list { margin-top: 0.6rem; display: flex; flex-direction: column; gap: 0.35rem; }
+    .todo-preview-item { display: flex; align-items: center; gap: 0.5rem; padding: 0.38rem 0.6rem; background: rgba(0,0,0,0.025); border-left: 2.5px solid var(--blue); border-radius: 0 3px 3px 0; }
+    .todo-preview-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; margin-top: 0.28rem; }
+    .todo-preview-body { flex: 1; min-width: 0; }
+    .todo-preview-title { font-size: 0.78rem; font-weight: 600; color: var(--ink); line-height: 1.3; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .todo-preview-due { font-size: 0.63rem; color: var(--muted); margin-top: 0.06rem; }
+    .todo-preview-due.overdue { color: #dc2626; font-weight: 600; }
+    .todo-preview-due.today   { color: var(--blue); font-weight: 600; }
+    .todo-preview-more { font-size: 0.68rem; color: var(--muted); font-style: italic; padding: 0.2rem 0.3rem; }
+    .todo-view-link { display: inline-block; margin-top: 0.6rem; font-size: 0.72rem; font-weight: 700; color: var(--blue); letter-spacing: 0.04em; }
+    .todo-view-link:hover { text-decoration: underline; }
+    .todo-preview-empty { font-size: 0.78rem; color: var(--light); font-style: italic; margin-top: 0.4rem; }
+
+    /* ────────────────── WISHLIST PREVIEW ────────────────── */
+    .wl-preview-list { margin-top: 0.6rem; display: flex; flex-direction: column; gap: 0.35rem; }
+    .wl-preview-item { display: flex; align-items: center; gap: 0.5rem; padding: 0.38rem 0.6rem; background: rgba(0,0,0,0.025); border-left: 2.5px solid var(--blue); border-radius: 0 3px 3px 0; }
+    .wl-preview-item.pri-high   { border-left-color: #dc2626; }
+    .wl-preview-item.pri-medium { border-left-color: #d97706; }
+    .wl-preview-item.pri-low    { border-left-color: #15803d; }
+    .wl-preview-body { flex: 1; min-width: 0; }
+    .wl-preview-title { font-size: 0.78rem; font-weight: 600; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .wl-preview-price { font-size: 0.63rem; color: var(--muted); margin-top: 0.05rem; }
+    .wl-preview-more { font-size: 0.68rem; color: #94a3b8; padding: 0.2rem 0.3rem; }
+    .wl-view-link { display: inline-block; margin-top: 0.6rem; font-size: 0.72rem; font-weight: 700; color: var(--blue); letter-spacing: 0.04em; }
+    .wl-view-link:hover { text-decoration: underline; }
+    .wl-preview-empty { font-size: 0.78rem; color: var(--light); font-style: italic; margin-top: 0.4rem; }
+
+    /* ────────────────── QUESTION OF THE DAY ────────────────── */
+    .quiz-cat { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--light); margin-bottom: 0.55rem; display: block; }
+    .quiz-question { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; line-height: 1.35; color: var(--ink); margin-bottom: 1rem; }
+    .quiz-reveal-btn {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      font-size: 0.7rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+      color: var(--muted); border: 1px solid #ccc; border-radius: 2px;
+      padding: 0.3rem 0.7rem; cursor: pointer; background: none;
+      transition: background 0.15s, color 0.15s, border-color 0.15s;
+      font-family: inherit;
+    }
+    .quiz-reveal-btn:hover { background: var(--ink); color: #fff; border-color: var(--ink); }
+    .quiz-reveal-btn .quiz-arrow { transition: transform 0.2s; display: inline-block; }
+    .quiz-reveal-btn.open .quiz-arrow { transform: rotate(90deg); }
+    .quiz-answer-wrap {
+      overflow: hidden; max-height: 0;
+      transition: max-height 0.35s ease, opacity 0.25s ease;
+      opacity: 0;
+    }
+    .quiz-answer-wrap.open { max-height: 200px; opacity: 1; }
+    .quiz-answer {
+      margin-top: 0.75rem; padding: 0.7rem 0.9rem;
+      background: var(--subtle, #ece8e0); border-left: 3px solid var(--ink);
+      font-family: 'Playfair Display', serif; font-size: 0.9rem; font-weight: 700;
+      color: var(--ink); line-height: 1.3;
+    }
+    .quiz-fun-fact {
+      margin-top: 0.5rem; font-size: 0.72rem; line-height: 1.6; color: var(--muted);
+      font-style: italic;
+    }
+
+    /* ────────────────── RECIPE OF THE DAY ────────────────── */
+    .rotd-thumb {
+      width: 100%; aspect-ratio: 4/3; overflow: hidden;
+      border-radius: 3px; margin: 0.6rem 0 0.55rem; background: #e8e2d4; position: relative;
+    }
+    .rotd-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .rotd-thumb-ph {
+      width: 100%; height: 100%; display: flex; align-items: center;
+      justify-content: center; font-size: 3rem; opacity: 0.35;
+    }
+    .rotd-title {
+      font-family: 'Playfair Display', serif; font-weight: 700;
+      font-size: 1.02rem; line-height: 1.3; color: var(--ink); margin-bottom: 0.25rem;
+    }
+    .rotd-meta {
+      font-size: 0.67rem; color: var(--muted); display: flex; align-items: center;
+      gap: 0.4rem; flex-wrap: wrap; margin-bottom: 0.3rem;
+    }
+    .rotd-cat {
+      display: inline-block; font-size: 0.55rem; font-weight: 700;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      padding: 0.12rem 0.4rem; border-radius: 2px; color: #fff;
+    }
+    .rotd-desc {
+      font-size: 0.75rem; line-height: 1.55; color: var(--muted);
+      display: -webkit-box; -webkit-line-clamp: 3; line-clamp: 3;
+      -webkit-box-orient: vertical; overflow: hidden; margin-bottom: 0.4rem;
+    }
+    .rotd-link {
+      display: inline-block; font-size: 0.72rem; font-weight: 700;
+      color: var(--blue); letter-spacing: 0.04em;
+    }
+    .rotd-link:hover { text-decoration: underline; }
+    .rotd-empty { font-size: 0.78rem; color: var(--light); font-style: italic; margin-top: 0.5rem; }
+
+    /* ────────────────── NEWS STRIP ────────────────── */
+    .news-strip { padding: 0; }
+    .news-strip-label {
+      font-size: 0.6rem; font-weight: 700; letter-spacing: 0.18em;
+      text-transform: uppercase; color: var(--muted);
+      padding-bottom: 0.6rem; border-bottom: 1px solid #ccc; margin-bottom: 1.1rem;
+    }
+    .news-strip-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+    .news-strip-card { padding: 0 1.2rem 1.2rem 0; border-right: 1px solid var(--rule); }
+    .news-strip-card:nth-child(even) { padding: 0 0 1.2rem 1.2rem; border-right: none; }
+    .news-strip-card:nth-child(-n+2) { border-bottom: 1px solid #ccc; margin-bottom: 1.2rem; }
+    .news-strip-card:nth-child(n+3) { padding-bottom: 0; }
+    .ns-thumb {
+      width: 100%; aspect-ratio: 16/9; overflow: hidden;
+      border-radius: 2px; margin-bottom: 0.6rem; background: #e0dbd0; position: relative;
+    }
+    .ns-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .ns-thumb::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.18) 0%, transparent 55%); pointer-events: none;
+    }
+    .ns-thumb-ph { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+    .ns-thumb-ph svg { width: 100%; height: 100%; }
+    .ns-cat { font-size: 0.55rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; display: block; margin-bottom: 0.28rem; }
+    .ns-headline { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 0.88rem; line-height: 1.3; margin-bottom: 0.32rem; color: var(--ink); }
+    .ns-excerpt { font-size: 0.72rem; line-height: 1.58; color: var(--muted); display: -webkit-box; -webkit-line-clamp: 3; line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+    .ns-link { display: inline-block; margin-top: 0.5rem; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.04em; }
+    .ns-link:hover { text-decoration: underline; }
+    .ns-thumb-link { display: block; text-decoration: none; }
+    .ns-thumb-link:hover { text-decoration: none; }
+    .ns-headline-link { display: block; text-decoration: none; color: inherit; }
+    .ns-headline-link:hover { text-decoration: none; }
+    .ns-headline-link .ns-headline { transition: opacity 0.15s; }
+    .ns-headline-link:hover .ns-headline { opacity: 0.7; }
+
+    /* ────────────────── RESPONSIVE ────────────────── */
+    @media (max-width: 800px) {
+      .front-grid { grid-template-columns: 1fr; }
+      .front-grid .col-left,
+      .front-grid .col-centre,
+      .front-grid .col-right {
+        border-right: none;
+        border-left: none;
+        border-bottom: 1px solid var(--rule);
+      }
+      .news-strip-grid { grid-template-columns: 1fr; }
+      .news-strip-card,
+      .news-strip-card:nth-child(even),
+      .news-strip-card:nth-child(-n+2),
+      .news-strip-card:nth-child(n+3) {
+        padding: 0 0 1.2rem; border-right: none; border-bottom: 1px solid var(--rule); margin-bottom: 0;
+      }
+      .news-strip-card:last-child { border-bottom: none; padding-bottom: 0; }
+    }
+    @media (max-width: 480px) {
+      .news-strip-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── NEWS TICKER ── -->
+  <div class="ticker-wrap">
+    <div class="ticker-label">Breaking News</div>
+    <div class="ticker-inner">
+      <div class="ticker-track" id="js-ticker">
+        <span style="color:rgba(255,255,255,0.5); font-size:0.78rem; padding:0 2rem; font-family:'Source Serif 4',serif;">Loading headlines&hellip;</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── HEADER ── -->
+  <header>
+    <div class="meta-bar">
+      <span id="js-date">Saturday, 28 March 2026</span>
+      <span>Personal Edition &nbsp;&bull;&nbsp; Est. 2026</span>
+    </div>
+    <div class="masthead-row">
+      <div class="masthead">Personal Hub</div>
+    </div>
+    <div style="text-align:center; margin-bottom:0.3rem;">
+      <span class="owner-tag">Alfie Edworthy</span>
+    </div>
+    <hr class="rule-double">
+  </header>
+
+  <!-- ── NAV RIBBON ── -->
+  <div class="nav-ribbon">
+    <nav>
+      <a href="#" class="nav-home">&#8962; Home</a>
+      <a href="rics-study.html">RICS Study</a>
+      <div class="nav-dropdown">
+        <button class="nav-drop-btn">News <span class="nav-caret">▾</span></button>
+        <div class="nav-drop-menu">
+          <a href="world-news.html">World Affairs</a>
+          <a href="uk-politics-news.html">UK Politics</a>
+          <a href="us-politics-news.html">US Politics</a>
+          <a href="financial-news.html">Financial</a>
+          <a href="tech-news.html">Technology</a>
+        </div>
+      </div>
+      <a href="curiosity.html">Curiosity Corner</a>
+      <a href="philosophy.html">Philosophy Corner</a>
+      <div class="nav-dropdown">
+        <button class="nav-drop-btn">Recommendations <span class="nav-caret">▾</span></button>
+        <div class="nav-drop-menu">
+          <a href="reads.html">Books</a>
+          <a href="films.html">Films</a>
+        </div>
+      </div>
+      <a href="recipes.html">Recipes</a>
+      <a href="exercise.html">Exercise</a>
+      <div class="nav-divider"></div>
+      <div class="nav-dropdown">
+        <button class="nav-drop-btn">Organisation <span class="nav-caret">▾</span></button>
+        <div class="nav-drop-menu">
+          <a href="todo-lists.html">To-Do Lists</a>
+          <a href="weekly-checkin.html">Weekly Check-In</a>
+          <a href="monthly-goals.html">Monthly Goals</a>
+          <a href="achievements.html">Achievements</a>
+          <a href="wishlist.html">Wishlist</a>
+        </div>
+      </div>
+      <a href="calendar.html">Calendar</a>
+    </nav>
+  </div>
+
+  <!-- ── MAIN ── -->
+  <div class="page-wrap">
+
+    <div class="date-ribbon" id="js-edition">Edition: Saturday, 28 March 2026</div>
+
+    <div class="front-grid" style="border-bottom: 1px solid var(--rule);">
+
+      <!-- LEFT: Monthly Goals + Calendar -->
+      <div class="col col-left col-stack">
+
+        <div class="stack-item" id="todo-preview">
+          <span class="section-tag">To-Do</span>
+          <h2>Upcoming Tasks</h2>
+          <div class="lines"><span></span><span></span><span></span></div>
+        </div>
+
+        <div class="stack-item" id="monthly-goals"></div>
+
+        <div class="stack-item" id="calendar">
+          <span class="section-tag">Calendar</span>
+          <h2>Coming Up</h2>
+          <p class="body-text">Upcoming events, deadlines, and commitments &mdash; a view of what lies ahead.</p>
+          <div class="lines"><span></span><span></span><span></span></div>
+        </div>
+
+        <div class="stack-item" id="recipe-of-day">
+          <span class="section-tag">Recipe of the Day</span>
+          <h2>Today&rsquo;s Recipe</h2>
+          <div class="lines"><span></span><span></span><span></span></div>
+        </div>
+
+        <div class="stack-item" id="wishlist-preview">
+          <span class="section-tag">Wishlist</span>
+          <h2><a href="wishlist.html">My Wishlist</a></h2>
+          <div class="lines"><span></span><span></span><span></span></div>
+        </div>
+
+      </div>
+
+      <!-- CENTRE: RICS Study (lead) + World News (secondary) -->
+      <div class="col col-centre col-stack">
+
+        <div class="stack-item lead-story" id="rics-study">
+          <span class="section-tag">RICS Study</span>
+          <h2>APC Preparation &amp; Professional Competence Notes</h2>
+          <p class="standfirst">Progress updates, competency logs, and case study material for the Assessment of Professional Competence.</p>
+          <p class="body-text">Track your development across mandatory and technical competencies. Record key learning points, flag areas requiring further attention, and build your evidence base ahead of the final assessment.</p>
+          <div class="lines"><span></span><span></span><span></span><span></span></div>
+        </div>
+
+        <div class="stack-item secondary-story" id="world-news">
+          <span class="section-tag">World News</span>
+          <h2>Around the World This Week</h2>
+          <p class="body-text">The stories shaping international affairs &mdash; politics, conflict, diplomacy, and global events.</p>
+          <div class="lines"><span></span><span></span><span></span></div>
+        </div>
+
+        <!-- ── NEWS STRIP: UK Politics · US Politics · Financial · Tech ── -->
+        <div class="stack-item news-strip">
+          <div class="news-strip-label">News in Brief</div>
+          <div class="news-strip-grid">
+            <div class="news-strip-card" id="strip-uk-politics"></div>
+            <div class="news-strip-card" id="strip-us-politics"></div>
+            <div class="news-strip-card" id="strip-financial"></div>
+            <div class="news-strip-card" id="strip-tech"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- RIGHT: Philosophy Corner + Curiosity Corner + Reads -->
+      <div class="col col-right col-stack">
+
+        <div class="stack-item" id="philosophy-corner-preview">
+          <span class="section-tag">Philosophy Corner</span>
+          <h2>Great Thinkers &amp; Big Ideas</h2>
+          <p class="body-text">The ideas that shaped civilisation &mdash; explored one philosopher at a time.</p>
+          <div class="lines"><span></span><span></span><span></span></div>
+        </div>
+
+        <div class="stack-item" id="curiosity-corner">
+          <span class="section-tag">Curiosity Corner</span>
+          <h2>History, Politics &amp; the Wider World</h2>
+          <p class="body-text">Ancient civilisations, politics, books, sport &mdash; whatever has caught the eye this week.</p>
+          <div class="lines"><span></span><span></span><span></span></div>
+        </div>
+
+        <div class="stack-item" id="reads">
+          <span class="section-tag">Reads</span>
+          <h2>Books &amp; Films Worth Your Time</h2>
+          <p class="body-text">Recommendations, reviews, and what&rsquo;s on the reading list &mdash; books, films, and long reads.</p>
+          <div class="lines"><span></span><span></span><span></span></div>
+        </div>
+
+        <div class="stack-item" id="quiz-of-day">
+          <span class="section-tag">Question of the Day</span>
+          <h2>Test Your Knowledge</h2>
+          <div class="lines"><span></span><span></span><span></span></div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- ── QUOTE OF THE DAY ── -->
+  <div class="quote-strip">
+    <blockquote id="js-quote">&ldquo;&rdquo;</blockquote>
+    <cite id="js-author"></cite>
+  </div>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    Personal Hub &mdash; Alfie Edworthy &mdash; Private &amp; Confidential
+  </footer>
+
+  <script src="suggested-recipes-data.js"></script>
+  <script src="world-news-data.js"></script>
+  <script src="tech-news-data.js"></script>
+  <script src="uk-politics-news-data.js"></script>
+  <script src="us-politics-news-data.js"></script>
+  <script src="financial-news-data.js"></script>
+  <script src="curiosity-data.js"></script>
+  <script src="philosophy-data.js"></script>
+  <script src="quiz-data.js"></script>
+  <script src="rics-topics-data.js"></script>
+  <script>
+    // ── News ticker (static placeholder — live feed to be added) ──
+    (function () {
+      const headlines = [
+        'World leaders gather for emergency climate summit in Geneva',
+        'Global markets steady as central banks signal rate pause',
+        'UN Security Council meets over escalating tensions in Middle East',
+        'European Union agrees new trade framework with South-East Asia',
+        'Scientists announce breakthrough in carbon capture technology',
+        'NATO allies pledge increased defence spending at Brussels meeting',
+        'IMF revises global growth forecast upward for 2026',
+        'Historic ceasefire agreement reached after months of negotiations',
+        'G7 nations commit to new framework on artificial intelligence governance',
+        'Record temperatures recorded across southern Europe this week',
+        'World Health Organisation warns of emerging respiratory virus strain',
+        'African Union summit focuses on infrastructure investment drive',
+      ];
+      const ticker = document.getElementById('js-ticker');
+      const makeHtml = arr => arr.map(h =>
+        `<span style="color:#fff;font-family:'Source Serif 4',serif;font-size:0.78rem;font-weight:600;padding:0 2rem;">${h}</span><span class="ticker-sep">&#124;</span>`
+      ).join('');
+      ticker.innerHTML = makeHtml(headlines) + makeHtml(headlines);
+      requestAnimationFrame(() => {
+        const halfWidth = ticker.scrollWidth / 2;
+        ticker.style.animationDuration = (halfWidth / 60) + 's';
+      });
+    })();
+
+    // ── Date labels ──
+    const d = new Date();
+    const opts = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const label = d.toLocaleDateString('en-GB', opts);
+    document.getElementById('js-date').textContent = label;
+    document.getElementById('js-edition').textContent = 'Edition: ' + label;
+
+    // Quote of the day — cycles by day of year so it changes daily
+    const quotes = [
+      { text: "The secret of getting ahead is getting started.", author: "Mark Twain" },
+      { text: "It is not that I'm so smart. But I stay with the questions much longer.", author: "Albert Einstein" },
+      { text: "In the middle of every difficulty lies opportunity.", author: "Albert Einstein" },
+      { text: "The man who moves a mountain begins by carrying away small stones.", author: "Confucius" },
+      { text: "He who has a why to live can bear almost any how.", author: "Friedrich Nietzsche" },
+      { text: "The impediment to action advances action. What stands in the way becomes the way.", author: "Marcus Aurelius" },
+      { text: "Waste no more time arguing about what a good man should be. Be one.", author: "Marcus Aurelius" },
+      { text: "You have power over your mind, not outside events. Realise this, and you will find strength.", author: "Marcus Aurelius" },
+      { text: "First say to yourself what you would be; and then do what you have to do.", author: "Epictetus" },
+      { text: "We suffer more in imagination than in reality.", author: "Seneca" },
+      { text: "Luck is what happens when preparation meets opportunity.", author: "Seneca" },
+      { text: "It is not the man who has too little, but the man who craves more, that is poor.", author: "Seneca" },
+      { text: "The whole future lies in uncertainty: live immediately.", author: "Seneca" },
+      { text: "Begin at once to live, and count each separate day as a separate life.", author: "Seneca" },
+      { text: "How soon 'not now' becomes 'never'.", author: "Martin Luther" },
+      { text: "A reader lives a thousand lives before he dies. The man who never reads lives only one.", author: "George R.R. Martin" },
+      { text: "Not all those who wander are lost.", author: "J.R.R. Tolkien" },
+      { text: "The only way out of the labyrinth of suffering is to forgive.", author: "John Green" },
+      { text: "It does not do to dwell on dreams and forget to live.", author: "J.K. Rowling" },
+      { text: "To improve is to change; to be perfect is to change often.", author: "Winston Churchill" },
+      { text: "Success is not final, failure is not fatal: it is the courage to continue that counts.", author: "Winston Churchill" },
+      { text: "History will be kind to me for I intend to write it.", author: "Winston Churchill" },
+      { text: "An investment in knowledge pays the best interest.", author: "Benjamin Franklin" },
+      { text: "Either write something worth reading or do something worth writing.", author: "Benjamin Franklin" },
+      { text: "Well done is better than well said.", author: "Benjamin Franklin" },
+      { text: "The journey of a thousand miles begins with one step.", author: "Lao Tzu" },
+      { text: "Knowing others is intelligence; knowing yourself is true wisdom.", author: "Lao Tzu" },
+      { text: "If you are going through hell, keep going.", author: "Winston Churchill" },
+      { text: "Hard choices, easy life. Easy choices, hard life.", author: "Jerzy Gregorek" },
+      { text: "Do not wait to strike till the iron is hot, but make it hot by striking.", author: "William Butler Yeats" },
+      { text: "The two most important days in your life are the day you are born and the day you find out why.", author: "Mark Twain" },
+      { text: "Twenty years from now you will be more disappointed by the things you didn't do than by the ones you did.", author: "Mark Twain" },
+      { text: "The only true wisdom is in knowing you know nothing.", author: "Socrates" },
+      { text: "An unexamined life is not worth living.", author: "Socrates" },
+      { text: "We are what we repeatedly do. Excellence, then, is not an act, but a habit.", author: "Aristotle" },
+      { text: "Educating the mind without educating the heart is no education at all.", author: "Aristotle" },
+      { text: "The roots of education are bitter, but the fruit is sweet.", author: "Aristotle" },
+      { text: "Real knowledge is to know the extent of one's ignorance.", author: "Confucius" },
+      { text: "It does not matter how slowly you go as long as you do not stop.", author: "Confucius" },
+      { text: "I cannot teach anybody anything. I can only make them think.", author: "Socrates" },
+      { text: "If your actions inspire others to dream more, learn more, do more and become more, you are a leader.", author: "John Quincy Adams" },
+      { text: "The price of anything is the amount of life you exchange for it.", author: "Henry David Thoreau" },
+      { text: "Go confidently in the direction of your dreams. Live the life you have imagined.", author: "Henry David Thoreau" },
+      { text: "What you do speaks so loudly that I cannot hear what you say.", author: "Ralph Waldo Emerson" },
+      { text: "Nothing great was ever achieved without enthusiasm.", author: "Ralph Waldo Emerson" },
+      { text: "That which does not kill us makes us stronger.", author: "Friedrich Nietzsche" },
+      { text: "Without music, life would be a mistake.", author: "Friedrich Nietzsche" },
+      { text: "One must still have chaos in oneself to be able to give birth to a dancing star.", author: "Friedrich Nietzsche" },
+      { text: "To live is the rarest thing in the world. Most people exist, that is all.", author: "Oscar Wilde" },
+      { text: "Be yourself; everyone else is already taken.", author: "Oscar Wilde" },
+      { text: "Experience is simply the name we give our mistakes.", author: "Oscar Wilde" },
+      { text: "I am not afraid of storms, for I am learning how to sail my ship.", author: "Louisa May Alcott" },
+      { text: "It always seems impossible until it's done.", author: "Nelson Mandela" },
+      { text: "Education is the most powerful weapon which you can use to change the world.", author: "Nelson Mandela" },
+      { text: "The secret of change is to focus all of your energy not on fighting the old, but on building the new.", author: "Socrates" },
+      { text: "Concentrate all your thoughts upon the work at hand. The sun's rays do not burn until brought to a focus.", author: "Alexander Graham Bell" },
+      { text: "You miss 100% of the shots you don't take.", author: "Wayne Gretzky" },
+      { text: "Whether you think you can or think you can't, you're right.", author: "Henry Ford" },
+      { text: "I have not failed. I've just found 10,000 ways that won't work.", author: "Thomas Edison" },
+      { text: "Genius is one percent inspiration and ninety-nine percent perspiration.", author: "Thomas Edison" },
+      { text: "The measure of intelligence is the ability to change.", author: "Albert Einstein" },
+      { text: "Strive not to be a success, but rather to be of value.", author: "Albert Einstein" },
+    ];
+
+    const dayOfYear = Math.floor((d - new Date(d.getFullYear(), 0, 0)) / 86400000);
+    const q = quotes[dayOfYear % quotes.length];
+    document.getElementById('js-quote').innerHTML = '\u201c' + q.text + '\u201d';
+    document.getElementById('js-author').textContent = '\u2014 ' + q.author;
+
+    // ── RICS Today's Topic ──
+    (function () {
+      if (typeof RICS_TOPICS === 'undefined') return;
+
+      var EPOCH = new Date('2026-03-28T00:00:00');
+      var today2 = new Date(); today2.setHours(0,0,0,0);
+      var idx = (((Math.floor((today2 - EPOCH) / 864e5)) % 33) + 33) % 33;
+      var entry = RICS_TOPICS.schedule[idx];
+      if (!entry) return;
+
+      var levelColor  = entry.level === 3 ? '#003399' : entry.level === 2 ? '#2e7d32' : '#666';
+      var levelLabel  = 'Level ' + entry.level;
+
+      // ── SVG illustrations by module category ──
+      function topicSVG(module) {
+        var p = '#f4f0e6', ink = '#0d0d0d', blue = '#003399', muted = '#888', mid = '#555';
+
+        // Financial: bar chart (GDV / costs / profit)
+        var financial = '<rect width="360" height="158" fill="' + p + '"/>'
+          + '<line x1="48" y1="18" x2="48" y2="120" stroke="#bbb" stroke-width="0.8"/>'
+          + '<line x1="48" y1="120" x2="320" y2="120" stroke="' + ink + '" stroke-width="1.5"/>'
+          + '<line x1="48" y1="90" x2="320" y2="90" stroke="#ddd" stroke-width="0.6"/>'
+          + '<line x1="48" y1="60" x2="320" y2="60" stroke="#ddd" stroke-width="0.6"/>'
+          + '<line x1="48" y1="30" x2="320" y2="30" stroke="#ddd" stroke-width="0.6"/>'
+          + '<rect x="68"  y="30" width="44" height="90" fill="' + blue + '" opacity="0.85"/>'
+          + '<rect x="130" y="55" width="44" height="65" fill="' + mid + '"/>'
+          + '<rect x="192" y="82" width="44" height="38" fill="' + muted + '"/>'
+          + '<rect x="254" y="48" width="44" height="72" fill="' + blue + '" opacity="0.4"/>'
+          + '<text x="90"  y="136" text-anchor="middle" font-family="Georgia,serif" font-size="9" fill="' + mid + '">GDV</text>'
+          + '<text x="152" y="136" text-anchor="middle" font-family="Georgia,serif" font-size="9" fill="' + mid + '">Build</text>'
+          + '<text x="214" y="136" text-anchor="middle" font-family="Georgia,serif" font-size="9" fill="' + mid + '">Finance</text>'
+          + '<text x="276" y="136" text-anchor="middle" font-family="Georgia,serif" font-size="9" fill="' + mid + '">Profit</text>'
+          + '<polyline points="90,30 152,55 214,82 276,48" fill="none" stroke="#c0392b" stroke-width="1.8" stroke-dasharray="5,3"/>';
+
+        // Planning: city skyline with grid overlay
+        var planning = '<rect width="360" height="158" fill="' + p + '"/>'
+          + '<line x1="0"   y1="110" x2="360" y2="110" stroke="#ddd" stroke-width="0.6"/>'
+          + '<line x1="120" y1="70"  x2="120" y2="158" stroke="#ddd" stroke-width="0.6"/>'
+          + '<line x1="240" y1="70"  x2="240" y2="158" stroke="#ddd" stroke-width="0.6"/>'
+          + '<rect x="25"  y="68"  width="45" height="90" fill="#ddd8cc" stroke="' + ink + '" stroke-width="1"/>'
+          + '<rect x="42"  y="48"  width="18" height="110" fill="' + blue + '" opacity="0.75"/>'
+          + '<rect x="135" y="76"  width="55" height="82" fill="#ddd8cc" stroke="' + ink + '" stroke-width="1"/>'
+          + '<rect x="150" y="60"  width="28" height="98" fill="' + mid + '"/>'
+          + '<rect x="255" y="65"  width="75" height="93" fill="#ddd8cc" stroke="' + ink + '" stroke-width="1"/>'
+          + '<rect x="270" y="44"  width="32" height="114" fill="' + blue + '" opacity="0.5"/>'
+          + '<rect x="310" y="82"  width="20" height="76" fill="' + mid + '" opacity="0.6"/>'
+          + '<line x1="0" y1="158" x2="360" y2="158" stroke="' + ink + '" stroke-width="2"/>'
+          + '<rect x="0" y="108" width="360" height="4" fill="' + blue + '" opacity="0.12"/>';
+
+        // Ethics: balance scales
+        var ethics = '<rect width="360" height="158" fill="' + p + '"/>'
+          + '<line x1="180" y1="35" x2="180" y2="128" stroke="' + ink + '" stroke-width="2.5"/>'
+          + '<line x1="155" y1="128" x2="205" y2="128" stroke="' + ink + '" stroke-width="2.5"/>'
+          + '<line x1="155" y1="128" x2="145" y2="138" stroke="' + ink + '" stroke-width="2"/>'
+          + '<line x1="205" y1="128" x2="215" y2="138" stroke="' + ink + '" stroke-width="2"/>'
+          + '<line x1="85"  y1="62"  x2="275" y2="62"  stroke="' + ink + '" stroke-width="2.5"/>'
+          + '<circle cx="180" cy="38" r="6" fill="' + blue + '"/>'
+          + '<line x1="95"  y1="62" x2="95"  y2="92" stroke="' + ink + '" stroke-width="1.5"/>'
+          + '<line x1="265" y1="62" x2="265" y2="88" stroke="' + ink + '" stroke-width="1.5"/>'
+          + '<path d="M 72,92 Q 95,105 118,92" stroke="' + blue + '" stroke-width="2.2" fill="none"/>'
+          + '<path d="M 243,88 Q 265,102 287,88" stroke="' + blue + '" stroke-width="2.2" fill="none"/>'
+          + '<circle cx="95"  cy="62" r="4" fill="' + ink + '"/>'
+          + '<circle cx="265" cy="62" r="4" fill="' + ink + '"/>'
+          + '<text x="180" y="152" text-anchor="middle" font-family="Georgia,serif" font-size="9" fill="' + muted + '" letter-spacing="2">ETHICS &amp; CONDUCT</text>';
+
+        // Professional: two figures at a table
+        var professional = '<rect width="360" height="158" fill="' + p + '"/>'
+          + '<ellipse cx="180" cy="112" rx="110" ry="14" stroke="' + ink + '" stroke-width="1.5" fill="#ddd8cc"/>'
+          + '<circle cx="95"  cy="68" r="20" stroke="' + blue + '" stroke-width="2" fill="none"/>'
+          + '<line x1="95"  y1="88" x2="95"  y2="112" stroke="' + blue + '" stroke-width="2"/>'
+          + '<line x1="75"  y1="100" x2="115" y2="100" stroke="' + blue + '" stroke-width="1.8"/>'
+          + '<circle cx="265" cy="68" r="20" stroke="' + mid + '" stroke-width="2" fill="none"/>'
+          + '<line x1="265" y1="88" x2="265" y2="112" stroke="' + mid + '" stroke-width="2"/>'
+          + '<line x1="245" y1="100" x2="285" y2="100" stroke="' + mid + '" stroke-width="1.8"/>'
+          + '<rect x="152" y="98" width="56" height="24" rx="2" fill="' + p + '" stroke="' + muted + '" stroke-width="1"/>'
+          + '<line x1="160" y1="106" x2="200" y2="106" stroke="' + muted + '" stroke-width="1"/>'
+          + '<line x1="160" y1="113" x2="196" y2="113" stroke="' + muted + '" stroke-width="1"/>';
+
+        // Design / blueprint (masterplanning, briefs, measurement, surveying)
+        var design = '<rect width="360" height="158" fill="#e8e4f0"/>'
+          + [0,1,2,3,4].map(function(i){return '<line x1="0" y1="'+(26+i*28)+'" x2="360" y2="'+(26+i*28)+'" stroke="' + blue + '" stroke-width="0.5" opacity="0.35"/>';}).join('')
+          + [0,1,2,3,4,5].map(function(i){return '<line x1="'+(20+i*60)+'" y1="0" x2="'+(20+i*60)+'" y2="158" stroke="' + blue + '" stroke-width="0.5" opacity="0.35"/>';}).join('')
+          + '<rect x="70"  y="34"  width="220" height="90" fill="none" stroke="' + ink + '" stroke-width="2"/>'
+          + '<line x1="70"  y1="80"  x2="290" y2="80"  stroke="' + ink + '" stroke-width="1.5"/>'
+          + '<line x1="180" y1="34"  x2="180" y2="124" stroke="' + ink + '" stroke-width="1.5"/>'
+          + '<path d="M 70,70 A 10,10 0 0 1 80,80"  fill="none" stroke="' + mid + '" stroke-width="1.5"/>'
+          + '<path d="M 170,124 A 10,10 0 0 1 180,114" fill="none" stroke="' + mid + '" stroke-width="1.5"/>'
+          + '<line x1="70" y1="138" x2="290" y2="138" stroke="' + muted + '" stroke-width="1"/>'
+          + '<line x1="70"  y1="133" x2="70"  y2="143" stroke="' + muted + '" stroke-width="1"/>'
+          + '<line x1="290" y1="133" x2="290" y2="143" stroke="' + muted + '" stroke-width="1"/>'
+          + '<text x="180" y="152" text-anchor="middle" font-family="Georgia,serif" font-size="8" fill="' + blue + '" letter-spacing="1">220 m²</text>';
+
+        // Health & Safety / Inclusive Environments
+        var safety = '<rect width="360" height="158" fill="' + p + '"/>'
+          + '<path d="M 100,105 Q 100,55 155,48 Q 210,55 210,105 Z" fill="#333" opacity="0.85"/>'
+          + '<rect x="86"  y="105" width="138" height="16" rx="3" fill="' + ink + '"/>'
+          + '<rect x="100" y="60"  width="110" height="45" fill="' + blue + '" opacity="0.65"/>'
+          + '<polygon points="268,48 316,132 220,132" fill="none" stroke="#c0392b" stroke-width="2.5"/>'
+          + '<text x="268" y="116" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="bold" fill="#c0392b">!</text>'
+          + '<circle cx="155" cy="48" r="6" fill="' + p + '"/>'
+          + '<text x="180" y="152" text-anchor="middle" font-family="Georgia,serif" font-size="9" fill="' + muted + '" letter-spacing="2">HEALTH &amp; SAFETY</text>';
+
+        // Sustainability: building with leaf / EPC bar
+        var sustainability = '<rect width="360" height="158" fill="' + p + '"/>'
+          + '<rect x="130" y="55" width="100" height="85" fill="#ddd8cc" stroke="' + ink + '" stroke-width="1.5"/>'
+          + '<polygon points="180,20 110,70 250,70" fill="' + ink + '" opacity="0.8"/>'
+          + '<rect x="160" y="95" width="20" height="45" fill="' + blue + '" opacity="0.6"/>'
+          + '<rect x="190" y="95" width="20" height="45" fill="' + blue + '" opacity="0.6"/>'
+          + '<rect x="50" y="58"  width="55" height="10" rx="2" fill="#27ae60"/>'
+          + '<rect x="50" y="74"  width="47" height="10" rx="2" fill="#2ecc71" opacity="0.8"/>'
+          + '<rect x="50" y="90"  width="40" height="10" rx="2" fill="#f1c40f" opacity="0.8"/>'
+          + '<rect x="50" y="106" width="33" height="10" rx="2" fill="#e67e22" opacity="0.8"/>'
+          + '<text x="110" y="66"  font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="#fff">A</text>'
+          + '<text x="102" y="82"  font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="#fff">B</text>'
+          + '<text x="95"  y="98"  font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="#fff">C</text>'
+          + '<text x="88"  y="114" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="#fff">D</text>'
+          + '<text x="180" y="152" text-anchor="middle" font-family="Georgia,serif" font-size="9" fill="#27ae60" letter-spacing="2">SUSTAINABILITY</text>';
+
+        var map = {
+          'Development Appraisals': financial,
+          'Project Finance': financial,
+          'Accounting Principles and Procedure': financial,
+          'Business Planning': financial,
+          'Valuation': financial,
+          'Planning and Development Management': planning,
+          'Spatial Planning Policy and Infrastructure': planning,
+          'Legal/Regulatory Compliance': planning,
+          'Ethics, Rules of Conduct and Professionalism': ethics,
+          'Client Care': professional,
+          'Communication and Negotiation': professional,
+          'Conflict Avoidance, Management and Dispute Resolution Procedures': professional,
+          'Diversity, Inclusion and Teamworking': professional,
+          'Development/Project Briefs': design,
+          'Masterplanning and Urban Design': design,
+          'Measurement': design,
+          'Surveying and Mapping': design,
+          'Data Management': design,
+          'Health and Safety': safety,
+          'Inclusive Environments': safety,
+          'Sustainability': sustainability
+        };
+
+        return '<svg class="rics-card-image" viewBox="0 0 360 158" xmlns="http://www.w3.org/2000/svg">'
+          + (map[module] || financial)
+          + '</svg>';
+      }
+
+      // ── Monthly Goals preview ──
+      (function () {
+        var el = document.getElementById('monthly-goals');
+        if (!el) return;
+
+        var now = new Date();
+        var monthLabel = now.toLocaleDateString('en-GB', { month: 'long', year: 'numeric' });
+
+        var goals = [];
+        try {
+          var saved = localStorage.getItem('personal_hub_goals');
+          if (saved) goals = JSON.parse(saved);
+        } catch (e) {}
+
+        function esc(s) {
+          return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+        }
+
+        var statusLabel = { 'not-started': 'Not started', 'in-progress': 'In progress', 'completed': 'Completed' };
+        var total     = goals.length;
+        var completed = goals.filter(function(g){ return g.status === 'completed'; }).length;
+
+        var summaryLine = total
+          ? total + ' ' + (total === 1 ? 'goal' : 'goals') + ' &nbsp;&middot;&nbsp; ' + completed + ' completed'
+          : monthLabel;
+
+        var previewHTML = '';
+        if (goals.length === 0) {
+          previewHTML = '<p class="goals-preview-empty">No goals yet &mdash; <a href="monthly-goals.html">add your first</a>.</p>';
+        } else {
+          var items = goals.slice(0, 3).map(function(g) {
+            var pct = Math.min(100, Math.max(0, g.progress || 0));
+            var cls = g.status || 'not-started';
+            return '<div class="goal-preview-item">'
+              + '<span class="goal-preview-title">' + esc(g.title) + '</span>'
+              + '<div class="goal-preview-meta">'
+              + '<span class="goal-status-dot ' + cls + '"></span>'
+              + '<div class="goal-preview-bar"><div class="goal-preview-bar-fill ' + cls + '" style="width:' + pct + '%"></div></div>'
+              + '<span class="goal-preview-pct">' + pct + '%</span>'
+              + '</div>'
+              + '</div>';
+          }).join('');
+          previewHTML = '<div class="goal-preview-list">' + items + '</div>';
+          if (goals.length > 3) {
+            previewHTML += '<span style="font-size:0.72rem;color:var(--light);margin-top:0.3rem;display:block;">+'
+              + (goals.length - 3) + ' more</span>';
+          }
+        }
+
+        el.innerHTML = '<span class="section-tag">Monthly Goals &nbsp;&middot;&nbsp; ' + monthLabel + '</span>'
+          + '<h2><a href="monthly-goals.html">Intentions &amp; Commitments</a></h2>'
+          + '<p class="body-text" style="margin-bottom:0">' + summaryLine + '</p>'
+          + previewHTML
+          + '<a href="monthly-goals.html" class="goals-view-link">View all goals \u2192</a>';
+      })();
+
+      // ── Reads / Films preview ──
+      (function() {
+        var el = document.getElementById('reads');
+        if (!el) return;
+
+        function esc(s) {
+          return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+        }
+
+        var todayStr = new Date().toISOString().slice(0, 10);
+        var rPreview = null, fPreview = null;
+        try { rPreview = JSON.parse(localStorage.getItem('reads_preview') || 'null'); } catch(_) {}
+        try { fPreview = JSON.parse(localStorage.getItem('films_preview') || 'null'); } catch(_) {}
+        // reads.html saves film inside reads_preview — use as fallback if films_preview absent
+        if (!fPreview && rPreview && rPreview.film) fPreview = { film: rPreview.film };
+
+        var bookHTML = '', filmHTML = '';
+
+        if (rPreview && rPreview.book) {
+          var b = rPreview.book;
+          bookHTML = '<a href="reads.html" class="reads-preview-item is-book">'
+            + '<div><span class="reads-preview-eyebrow">Book</span>'
+            + '<div class="reads-preview-title">' + esc(b.title) + '</div>'
+            + '<div class="reads-preview-credit">' + esc(b.author) + '</div>'
+            + (b.rating ? '<div class="reads-preview-score gold">\u2605 ' + (+b.rating).toFixed(1) + ' &nbsp;&middot;&nbsp; ' + esc(b.ratingSource || '') + '</div>' : '')
+            + '</div></a>';
+        } else {
+          bookHTML = '<a href="reads.html" class="reads-preview-item is-book">'
+            + '<div><span class="reads-preview-eyebrow">Book</span>'
+            + '<div class="reads-preview-title" style="opacity:.5;font-style:italic">Visit Reads to load</div>'
+            + '</div></a>';
+        }
+
+        if (fPreview && fPreview.film) {
+          var f = fPreview.film;
+          filmHTML = '<a href="films.html" class="reads-preview-item is-film">'
+            + '<div><span class="reads-preview-eyebrow">Film</span>'
+            + '<div class="reads-preview-title">' + esc(f.title) + '</div>'
+            + '<div class="reads-preview-credit">' + esc(f.director || '') + (f.year ? ' &nbsp;&middot;&nbsp; ' + f.year : '') + '</div>'
+            + (f.rating ? '<div class="reads-preview-score blue">' + f.rating + '% &nbsp;&middot;&nbsp; Rotten Tomatoes</div>' : '')
+            + '</div></a>';
+        } else {
+          filmHTML = '<a href="films.html" class="reads-preview-item is-film">'
+            + '<div><span class="reads-preview-eyebrow">Film</span>'
+            + '<div class="reads-preview-title" style="opacity:.5;font-style:italic">Visit Films to load</div>'
+            + '</div></a>';
+        }
+
+        el.innerHTML = '<span class="section-tag">Recommendations &nbsp;&middot;&nbsp; Daily Picks</span>'
+          + '<h2><a href="reads.html">Today\u2019s Book &amp; Film</a></h2>'
+          + '<div class="reads-preview">' + bookHTML + filmHTML + '</div>'
+          + '<div style="display:flex;gap:1rem;margin-top:.5rem">'
+          + '<a href="reads.html" class="reads-view-link">Today\u2019s book \u2192</a>'
+          + '<a href="films.html" class="reads-view-link">Today\u2019s film \u2192</a>'
+          + '</div>';
+      })();
+
+      // ── Question of the Day ──
+      (function() {
+        var el = document.getElementById('quiz-of-day');
+        if (!el || typeof QUIZ_DATA === 'undefined' || !QUIZ_DATA) return;
+
+        function esc(s) { return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+        var d = QUIZ_DATA;
+        var fmtDate = new Date(d.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'long' });
+
+        el.innerHTML =
+          '<span class="section-tag">Question of the Day &nbsp;&middot;&nbsp; ' + fmtDate + '</span>'
+          + '<h2>Test Your Knowledge</h2>'
+          + (d.category ? '<span class="quiz-cat">' + esc(d.category) + '</span>' : '')
+          + '<p class="quiz-question">' + esc(d.question) + '</p>'
+          + '<button class="quiz-reveal-btn" id="quiz-btn" onclick="window.quizReveal()">'
+          +   '<span class="quiz-arrow">&#9658;</span> Reveal Answer'
+          + '</button>'
+          + '<div class="quiz-answer-wrap" id="quiz-answer-wrap">'
+          +   '<div class="quiz-answer">' + esc(d.answer) + '</div>'
+          +   (d.funFact ? '<p class="quiz-fun-fact">' + esc(d.funFact) + '</p>' : '')
+          + '</div>';
+
+        window.quizReveal = function() {
+          var btn  = document.getElementById('quiz-btn');
+          var wrap = document.getElementById('quiz-answer-wrap');
+          var open = wrap.classList.contains('open');
+          wrap.classList.toggle('open', !open);
+          btn.classList.toggle('open', !open);
+          btn.innerHTML = (!open ? '<span class="quiz-arrow open">&#9658;</span> Hide Answer'
+                                 : '<span class="quiz-arrow">&#9658;</span> Reveal Answer');
+        };
+      })();
+
+      // ── World News preview ──
+      (function() {
+        var el = document.getElementById('world-news');
+        if (!el || typeof WORLD_NEWS === 'undefined' || !WORLD_NEWS) return;
+
+        function esc(s) { return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+        var data  = WORLD_NEWS;
+        var m     = data.main;
+        var first = Array.isArray(m.content) ? m.content[0] : (m.content||'').split('\n')[0];
+        var excerpt = first.split('.')[0] + '.';
+        var fmtDate = new Date(data.date).toLocaleDateString('en-GB', { day:'numeric', month:'long' });
+
+        var others = (data.secondary||[]).slice(0,2).map(function(s) {
+          return '<div class="news-preview-other">' + esc(s.title) + '</div>';
+        }).join('');
+
+        var thumbW = m.image
+          ? '<img src="' + esc(m.image) + '" alt="" loading="lazy" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'">'
+            + '<div class="news-preview-thumb-ph" style="display:none">\uD83C\uDF0D</div>'
+          : '<div class="news-preview-thumb-ph">\uD83C\uDF0D</div>';
+
+        el.innerHTML =
+          '<span class="section-tag">World News &nbsp;&middot;&nbsp; ' + fmtDate + '</span>'
+          + '<h2><a href="world-news.html">Around the World This Week</a></h2>'
+          + '<div class="news-preview">'
+          +   '<a href="world-news.html" class="ns-thumb-link"><div class="news-preview-thumb">' + thumbW + '</div></a>'
+          +   '<a href="world-news.html" class="ns-headline-link"><div class="news-preview-headline">' + esc(m.title) + '</div></a>'
+          +   '<p class="news-preview-excerpt">' + esc(excerpt) + '</p>'
+          +   (others ? '<div class="news-preview-others">' + others + '</div>' : '')
+          + '</div>'
+          + '<a href="world-news.html" class="news-view-link">View full briefing \u2192</a>';
+      })();
+
+      // ── Philosophy Corner preview ──
+      (function() {
+        var el = document.getElementById('philosophy-corner-preview');
+        if (!el || typeof PHILOSOPHY_DATA === 'undefined' || !PHILOSOPHY_DATA) return;
+
+        function esc(s) { return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+        var data    = PHILOSOPHY_DATA;
+        var t       = data.mainTheory;
+        var fmtDate = new Date(data.date).toLocaleDateString('en-GB', { day:'numeric', month:'long' });
+
+        // First paragraph excerpt
+        var firstBlock = Array.isArray(t.content)
+          ? (t.content.find(function(b) { return b.type === 'paragraph'; }) || {}).text || ''
+          : (t.content || '').split('\n')[0];
+        var excerpt = firstBlock.split('.')[0] + '.';
+
+        // Thumbnail
+        var thumb = t.image
+          ? '<img src="' + esc(t.image) + '" alt="" loading="lazy" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'">'
+            + '<div class="news-preview-thumb-ph" style="display:none">&#x1F4D6;</div>'
+          : '<div class="news-preview-thumb-ph">&#x1F4D6;</div>';
+
+        // Philosopher of the Day teaser
+        var potd = data.philosopherOfTheDay;
+        var potdLine = potd && potd.name
+          ? '<div style="margin-top:0.55rem;padding-top:0.55rem;border-top:1px solid #ece8e0;font-size:0.72rem;color:var(--light);font-style:italic">'
+            + 'Philosopher of the Day: <strong style="color:#2d1b4e;font-style:normal">' + esc(potd.name) + '</strong>'
+            + (potd.lifespan ? ' <span style="opacity:0.7">(' + esc(potd.lifespan) + ')</span>' : '')
+            + '</div>'
+          : '';
+
+        el.innerHTML =
+          '<span class="section-tag" style="color:#2d1b4e">Philosophy Corner &nbsp;&middot;&nbsp; ' + fmtDate + '</span>'
+          + '<h2><a href="philosophy.html">' + esc(t.title) + '</a></h2>'
+          + '<div class="news-preview">'
+          +   '<a href="philosophy.html" class="ns-thumb-link"><div class="news-preview-thumb" style="background:#e8e0f0">' + thumb + '</div></a>'
+          +   '<a href="philosophy.html" class="ns-headline-link"><div class="news-preview-headline">' + esc(t.subtitle || t.philosopher || '') + '</div></a>'
+          +   '<p class="news-preview-excerpt">' + esc(excerpt) + '</p>'
+          +   potdLine
+          + '</div>'
+          + '<a href="philosophy.html" class="news-view-link" style="color:#2d1b4e">Read today\u2019s article \u2192</a>';
+      })();
+
+      // ── Curiosity Corner preview ──
+      (function() {
+        var el = document.getElementById('curiosity-corner');
+        if (!el || typeof CURIOSITY_DATA === 'undefined' || !CURIOSITY_DATA) return;
+
+        function esc(s) { return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+        var data    = CURIOSITY_DATA;
+        var a       = data.mainArticle;
+        var fmtDate = new Date(data.date).toLocaleDateString('en-GB', { day:'numeric', month:'long' });
+
+        // First sentence of first paragraph
+        var firstBlock = Array.isArray(a.content)
+          ? (a.content.find(function(b) { return b.type === 'paragraph'; }) || {}).text || ''
+          : (a.content || '').split('\n')[0];
+        var excerpt = firstBlock.split('.')[0] + '.';
+
+        // Thumbnail
+        var thumb = a.image
+          ? '<img src="' + esc(a.image) + '" alt="" loading="lazy" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'">'
+            + '<div class="news-preview-thumb-ph" style="display:none">&#x1F9ED;</div>'
+          : '<div class="news-preview-thumb-ph">&#x1F9ED;</div>';
+
+        // Person of the Day teaser
+        var potd = data.personOfTheDay;
+        var potdLine = potd && potd.name
+          ? '<div style="margin-top:0.55rem;padding-top:0.55rem;border-top:1px solid #ece8e0;font-size:0.72rem;color:var(--light);font-style:italic">'
+            + 'Person of the Day: <strong style="color:var(--muted);font-style:normal">' + esc(potd.name) + '</strong>'
+            + (potd.lifespan ? ' <span style="opacity:0.7">(' + esc(potd.lifespan) + ')</span>' : '')
+            + '</div>'
+          : '';
+
+        el.innerHTML =
+          '<span class="section-tag">Curiosity Corner &nbsp;&middot;&nbsp; ' + fmtDate + '</span>'
+          + '<h2><a href="curiosity.html">History, Ideas &amp; the Wider World</a></h2>'
+          + '<div class="news-preview">'
+          +   '<a href="curiosity.html" class="ns-thumb-link"><div class="news-preview-thumb" style="background:#e0d8cc">' + thumb + '</div></a>'
+          +   '<a href="curiosity.html" class="ns-headline-link"><div class="news-preview-headline">' + esc(a.title) + '</div></a>'
+          +   '<p class="news-preview-excerpt">' + esc(excerpt) + '</p>'
+          +   potdLine
+          + '</div>'
+          + '<a href="curiosity.html" class="news-view-link" style="color:#6b3a00">Read today\'s article \u2192</a>';
+      })();
+
+      var el = document.getElementById('rics-study');
+      el.innerHTML =
+        '<span class="section-tag">RICS Study'
+          + ' &nbsp;&middot;&nbsp; <span class="rics-level-badge" style="background:' + levelColor + ';color:#fff;">'
+          + levelLabel + '</span></span>'
+        + '<span class="rics-module-label">' + entry.module + '</span>'
+        + '<h2><a href="rics-study.html">' + entry.topic + '</a></h2>'
+        + '<a href="rics-study.html" class="ns-thumb-link">' + topicSVG(entry.module) + '</a>'
+        + '<p class="standfirst">' + entry.focus + '</p>'
+        + '<a href="rics-study.html" class="rics-read-link">Read today\u2019s article \u2192</a>';
+    })();
+  </script>
+
+  <script>
+  // ── Calendar preview ──
+  (function () {
+    var el = document.getElementById('calendar');
+    if (!el) return;
+
+    var CATS = {
+      work:     { label: 'Work',     bg: '#1d4ed8' },
+      social:   { label: 'Social',   bg: '#15803d' },
+      sport:    { label: 'Sport',    bg: '#dc2626' },
+      personal: { label: 'Personal', bg: '#7c3aed' },
+      other:    { label: 'Other',    bg: '#374151' }
+    };
+
+    function esc(s) { return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+    function pad(n) { return String(n).padStart(2, '0'); }
+    function toISO(d) { return d.getFullYear() + '-' + pad(d.getMonth()+1) + '-' + pad(d.getDate()); }
+    function fromISO(s) { return new Date(s + 'T12:00:00'); }
+    function formatTime(t) { if (!t) return ''; var p=t.split(':'),h=+p[0],m=p[1]; return (h%12||12)+':'+m+(h<12?'am':'pm'); }
+
+    var events = [];
+    try {
+      var raw = localStorage.getItem('ph_calendar_v3') || localStorage.getItem('ph_calendar_v2');
+      if (raw) events = JSON.parse(raw);
+    } catch(_) {}
+
+    var today = new Date(); today.setHours(0,0,0,0);
+    var todayISO = toISO(today);
+    var tomorrowISO = toISO(new Date(today.getTime() + 86400000));
+    var endDate = new Date(today); endDate.setDate(today.getDate() + 4);
+    var endISO = toISO(endDate);
+
+    // Expand recurring events for the next 5 days
+    var expanded = [];
+    events.forEach(function(ev) {
+      var evD = fromISO(ev.date); evD.setHours(0,0,0,0);
+      if (!ev.recurrence) {
+        if (ev.date >= todayISO && ev.date <= endISO) expanded.push(ev);
+        return;
+      }
+      var recurEnd = ev.recurrenceEnd ? fromISO(ev.recurrenceEnd) : endDate;
+      recurEnd.setHours(0,0,0,0);
+      var cur = new Date(evD), i = 0;
+      while (cur <= recurEnd && cur <= endDate && i < 200) {
+        i++;
+        var iso2 = toISO(cur);
+        if (iso2 >= todayISO) expanded.push(Object.assign({}, ev, { date: iso2 }));
+        if (ev.recurrence === 'daily')        cur.setDate(cur.getDate()+1);
+        else if (ev.recurrence === 'weekly')  cur.setDate(cur.getDate()+7);
+        else if (ev.recurrence === 'monthly') cur.setMonth(cur.getMonth()+1);
+        else break;
+      }
+    });
+
+    var upcoming = expanded
+      .filter(function(ev) { return ev.date >= todayISO; })
+      .sort(function(a, b) {
+        if (a.date !== b.date) return a.date.localeCompare(b.date);
+        return (a.startTime||'').localeCompare(b.startTime||'');
+      });
+
+    var previewHTML = '';
+    if (upcoming.length === 0) {
+      previewHTML = '<p class="cal-preview-empty">Nothing on in the next 5 days &mdash; <a href="calendar.html">open calendar</a>.</p>';
+    } else {
+      var items = upcoming.map(function(ev) {
+        var d = fromISO(ev.date);
+        var dayAbbr = ev.date === todayISO ? 'Today'
+          : ev.date === tomorrowISO ? 'Tmw'
+          : d.toLocaleDateString('en-GB', {weekday:'short'}).toUpperCase();
+        var dayNum = d.getDate();
+        var cat = CATS[ev.category] || CATS.other;
+        var timeStr = ev.startTime ? formatTime(ev.startTime) : '';
+        return '<div class="cal-preview-item" style="border-left-color:' + cat.bg + '">'
+          + '<div class="cal-preview-date">'
+          + '<span class="cal-preview-day">' + dayAbbr + '</span>'
+          + '<span class="cal-preview-num">' + dayNum + '</span>'
+          + '</div>'
+          + '<div class="cal-preview-body">'
+          + '<div class="cal-preview-title">' + esc(ev.title) + '</div>'
+          + '<div class="cal-preview-meta">'
+          + '<span class="cal-preview-dot" style="background:' + cat.bg + '"></span>'
+          + esc(cat.label)
+          + (timeStr ? ' &middot; ' + timeStr : '')
+          + (ev.venue ? ' &middot; ' + esc(ev.venue) : '')
+          + '</div>'
+          + '</div>'
+          + '</div>';
+      }).join('');
+      previewHTML = '<div class="cal-preview">' + items + '</div>';
+    }
+
+    el.innerHTML = '<span class="section-tag">Calendar &nbsp;&middot;&nbsp; Coming Up</span>'
+      + '<h2><a href="calendar.html">Events &amp; Commitments</a></h2>'
+      + previewHTML
+      + '<a href="calendar.html" class="cal-view-link">Open calendar \u2192</a>';
+  })();
+
+    // ── Todo Preview Widget ──
+    (function () {
+      var el = document.getElementById('todo-preview');
+      if (!el) return;
+
+      function esc(s) { return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+      function pad(n) { return String(n).padStart(2,'0'); }
+      function toISO(d) { return d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate()); }
+
+      var CAT_COLORS = { work:'#1d4ed8', personal:'#7c3aed', fitness:'#dc2626', other:'#374151' };
+      var PRI_ORDER  = { high:0, medium:1, low:2 };
+
+      var tasks = [];
+      try {
+        var raw = JSON.parse(localStorage.getItem('ph_todos_v1') || '{}');
+        tasks = Array.isArray(raw.tasks) ? raw.tasks : [];
+      } catch(_) {}
+
+      var today = toISO(new Date());
+      var tomorrow = toISO(new Date(new Date().getTime() + 86400000));
+
+      // Sort: high priority first, then by dueDate, undated last
+      var sorted = tasks.slice().sort(function(a,b) {
+        var aP = PRI_ORDER[a.priority] !== undefined ? PRI_ORDER[a.priority] : 3;
+        var bP = PRI_ORDER[b.priority] !== undefined ? PRI_ORDER[b.priority] : 3;
+        if (aP !== bP) return aP - bP;
+        var aD = a.dueDate || 'zzzz', bD = b.dueDate || 'zzzz';
+        return aD.localeCompare(bD);
+      });
+
+      function renderPreview() {
+        if (sorted.length === 0) {
+          el.innerHTML = '<span class="section-tag">To-Do</span>'
+            + '<h2><a href="todo-lists.html">Upcoming Tasks</a></h2>'
+            + '<p class="todo-preview-empty">No active tasks &mdash; <a href="todo-lists.html">add one</a>.</p>';
+          return;
+        }
+
+        var show = sorted.slice(0, 3);
+        var more = sorted.length - show.length;
+
+        var items = show.map(function(t) {
+          var dueClass = '', dueText = '';
+          if (!t.dueDate) {
+            dueText = 'No due date';
+          } else if (t.dueDate < today) {
+            dueText = 'Overdue'; dueClass = 'overdue';
+          } else if (t.dueDate === today) {
+            dueText = 'Due today'; dueClass = 'today';
+          } else if (t.dueDate === tomorrow) {
+            dueText = 'Due tomorrow';
+          } else {
+            var d = new Date(t.dueDate + 'T12:00:00');
+            dueText = 'Due ' + d.toLocaleDateString('en-GB', { day:'numeric', month:'short' });
+          }
+          var priColor = t.priority === 'high' ? '#dc2626' : t.priority === 'medium' ? '#d97706' : '#15803d';
+          var borderColor = t.priority ? priColor : (CAT_COLORS[t.category] || '#94a3b8');
+          return '<div class="todo-preview-item" id="tprev-' + t.id + '" style="border-left-color:' + borderColor + '">'
+            + '<button onclick="completeTodoPreview(\'' + t.id + '\')" title="Mark complete" style="flex-shrink:0;width:18px;height:18px;border-radius:50%;border:2px solid #d1d5db;background:none;cursor:pointer;transition:all .15s;padding:0" onmouseover="this.style.borderColor=\'#15803d\'" onmouseout="this.style.borderColor=\'#d1d5db\'"></button>'
+            + '<div class="todo-preview-body">'
+            +   '<div class="todo-preview-title">' + esc(t.title) + '</div>'
+            +   '<div class="todo-preview-due' + (dueClass ? ' ' + dueClass : '') + '">' + dueText + '</div>'
+            + '</div>'
+            + '</div>';
+        }).join('');
+
+        var moreHtml = more > 0
+          ? '<div style="font-size:.68rem;color:#94a3b8;padding:.2rem .3rem">+' + more + ' more task' + (more > 1 ? 's' : '') + '</div>'
+          : '';
+
+        el.innerHTML = '<span class="section-tag">To-Do</span>'
+          + '<h2><a href="todo-lists.html">Upcoming Tasks</a></h2>'
+          + '<div class="todo-preview-list">' + items + '</div>'
+          + moreHtml
+          + '<a href="todo-lists.html" class="todo-view-link">Open to-do list \u2192</a>';
+      }
+
+      window.completeTodoPreview = function(id) {
+        try {
+          var store = JSON.parse(localStorage.getItem('ph_todos_v1') || '{}');
+          var activeTasks = Array.isArray(store.tasks) ? store.tasks : [];
+          var backlog = (store.backlog && typeof store.backlog === 'object') ? store.backlog : {};
+          var idx = activeTasks.findIndex(function(t) { return t.id === id; });
+          if (idx === -1) return;
+          var task = activeTasks.splice(idx, 1)[0];
+          var nowPad = function(n){ return String(n).padStart(2,'0'); };
+          var now = new Date();
+          var todayKey = toISO(now);
+          var timeStr = nowPad(now.getHours()) + ':' + nowPad(now.getMinutes());
+          if (!backlog[todayKey]) backlog[todayKey] = [];
+          backlog[todayKey].unshift({ id:task.id, title:task.title, category:task.category, priority:task.priority, dueDate:task.dueDate, completedAt:timeStr });
+          // Remove from calendar
+          var calStore = JSON.parse(localStorage.getItem('ph_calendar_v3') || '[]');
+          calStore = calStore.filter(function(e) { return e.id !== 'todo_' + id; });
+          localStorage.setItem('ph_calendar_v3', JSON.stringify(calStore));
+          localStorage.setItem('ph_todos_v1', JSON.stringify({ tasks: activeTasks, backlog: backlog }));
+          // Animate and re-render
+          var item = document.getElementById('tprev-' + id);
+          if (item) { item.style.opacity = '0'; item.style.transform = 'translateX(20px)'; item.style.transition = 'all .25s'; }
+          sorted = activeTasks.slice().sort(function(a,b) {
+            var aP = PRI_ORDER[a.priority] !== undefined ? PRI_ORDER[a.priority] : 3;
+            var bP = PRI_ORDER[b.priority] !== undefined ? PRI_ORDER[b.priority] : 3;
+            if (aP !== bP) return aP - bP;
+            var aD = a.dueDate || 'zzzz', bD = b.dueDate || 'zzzz';
+            return aD.localeCompare(bD);
+          });
+          setTimeout(renderPreview, 280);
+        } catch(_) {}
+      };
+
+      renderPreview();
+    })();
+
+    // ── Recipe of the Day ──
+    (function () {
+      var el = document.getElementById('recipe-of-day');
+      if (!el) return;
+
+      function esc(s) { return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+      var CAT_COLORS = {
+        'Breakfast': '#b05a00', 'Lunch': '#1a6630', 'Dinner': '#003399',
+        'Snack': '#7a3c00', 'Dessert': '#7a0000', 'Drink': '#5b1a8b', 'Other': '#374151'
+      };
+      function catColor(c) { return CAT_COLORS[c] || '#374151'; }
+
+      // Always use the curated chef recipes (which have proper photography)
+      var pool = (typeof window.SUGGESTED_RECIPES !== 'undefined' && window.SUGGESTED_RECIPES.length)
+        ? window.SUGGESTED_RECIPES : [];
+
+      if (pool.length === 0) {
+        el.innerHTML = '<span class="section-tag">Recipe of the Day</span>'
+          + '<h2>Today\u2019s Recipe</h2>'
+          + '<p class="rotd-empty">Visit <a href="recipes.html">Recipes</a> to explore today\u2019s suggestion.</p>';
+        return;
+      }
+
+      // Rotate daily — stable for the whole day
+      var today = new Date();
+      var seed = today.getFullYear() * 10000 + (today.getMonth()+1) * 100 + today.getDate();
+      var r = pool[seed % pool.length];
+
+      var thumb = r.image
+        ? '<img src="' + esc(r.image) + '" alt="' + esc(r.title) + '" loading="lazy" onerror="this.style.display=\'none\';this.nextSibling.style.display=\'flex\'">'
+          + '<div class="rotd-thumb-ph" style="display:none">' + (r.emoji || '🍽️') + '</div>'
+        : '<div class="rotd-thumb-ph">' + (r.emoji || '🍽️') + '</div>';
+
+      var metaParts = [];
+      if (r.time) metaParts.push('⏱ ' + esc(r.time));
+      if (r.serves) metaParts.push('Serves ' + esc(r.serves));
+
+      el.innerHTML = '<span class="section-tag">Recipe of the Day</span>'
+        + '<h2><a href="recipes.html">Today\u2019s Recipe</a></h2>'
+        + '<a href="recipes.html" class="ns-thumb-link"><div class="rotd-thumb">' + thumb + '</div></a>'
+        + '<a href="recipes.html" class="ns-headline-link"><div class="rotd-title">' + esc(r.title) + '</div></a>'
+        + '<div class="rotd-meta">'
+        +   (r.category ? '<span class="rotd-cat" style="background:' + catColor(r.category) + '">' + esc(r.category) + '</span>' : '')
+        +   (metaParts.length ? '<span>' + metaParts.join(' &middot; ') + '</span>' : '')
+        + '</div>'
+        + (r.desc ? '<p class="rotd-desc">' + esc(r.desc) + '</p>' : '')
+        + '<a href="recipes.html" class="rotd-link">View recipe &rarr;</a>';
+    })();
+
+    // ── Wishlist Preview ──
+    (function () {
+      var el = document.getElementById('wishlist-preview');
+      if (!el) return;
+
+      function esc(s) { return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+      function fmtPrice(p) { return p != null && p !== '' ? '\u00a3' + Number(p).toLocaleString('en-GB', {minimumFractionDigits:0,maximumFractionDigits:2}) : ''; }
+
+      var data = {};
+      try { data = JSON.parse(localStorage.getItem('ph_wishlist_v1') || '{}'); } catch(_) {}
+      var items = (data.wishlist || []).filter(function(i) { return !i.purchased; });
+
+      var PRI_ORDER = { high:0, medium:1, low:2 };
+      items.sort(function(a,b) {
+        var aP = PRI_ORDER[a.priority] !== undefined ? PRI_ORDER[a.priority] : 3;
+        var bP = PRI_ORDER[b.priority] !== undefined ? PRI_ORDER[b.priority] : 3;
+        return aP - bP;
+      });
+
+      if (items.length === 0) {
+        el.innerHTML = '<span class="section-tag">Wishlist</span>'
+          + '<h2><a href="wishlist.html">My Wishlist</a></h2>'
+          + '<p class="wl-preview-empty">No wishlist items yet &mdash; <a href="wishlist.html">add one</a>.</p>';
+        return;
+      }
+
+      var show = items.slice(0, 3);
+      var more = items.length - show.length;
+
+      var rows = show.map(function(item) {
+        var priClass = item.priority ? ' pri-' + item.priority : '';
+        var price = fmtPrice(item.price);
+        return '<div class="wl-preview-item' + priClass + '">'
+          + '<div class="wl-preview-body">'
+          +   '<div class="wl-preview-title">' + esc(item.title) + '</div>'
+          +   (price ? '<div class="wl-preview-price">' + price + '</div>' : '')
+          + '</div>'
+          + '</div>';
+      }).join('');
+
+      var moreHtml = more > 0
+        ? '<div class="wl-preview-more">+' + more + ' more item' + (more > 1 ? 's' : '') + '</div>'
+        : '';
+
+      el.innerHTML = '<span class="section-tag">Wishlist</span>'
+        + '<h2><a href="wishlist.html">My Wishlist</a></h2>'
+        + '<div class="wl-preview-list">' + rows + '</div>'
+        + moreHtml
+        + '<a href="wishlist.html" class="wl-view-link">Open wishlist \u2192</a>';
+    })();
+
+    // ── News strip (UK Politics / US Politics / Financial / Tech) ──
+    (function () {
+      function esc(s) { return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+      // SVG placeholder templates — swap for a real image URL in the data file
+      var PLACEHOLDERS = {
+        ukpolitics: '<svg viewBox="0 0 160 90" xmlns="http://www.w3.org/2000/svg"><rect width="160" height="90" fill="#f4e8e8"/><rect x="0" y="0" width="160" height="90" fill="#8b000022"/><text x="80" y="38" text-anchor="middle" font-family="Georgia,serif" font-size="22" fill="#8b0000" opacity="0.35">🏛</text><text x="80" y="62" text-anchor="middle" font-family="Georgia,serif" font-size="9" letter-spacing="2" fill="#8b0000" opacity="0.5">UK POLITICS</text></svg>',
+        uspolitics: '<svg viewBox="0 0 160 90" xmlns="http://www.w3.org/2000/svg"><rect width="160" height="90" fill="#e8ecf8"/><rect x="0" y="0" width="160" height="90" fill="#00339922"/><text x="80" y="38" text-anchor="middle" font-family="Georgia,serif" font-size="22" fill="#003399" opacity="0.35">🏛</text><text x="80" y="62" text-anchor="middle" font-family="Georgia,serif" font-size="9" letter-spacing="2" fill="#003399" opacity="0.5">US POLITICS</text></svg>',
+        financial:  '<svg viewBox="0 0 160 90" xmlns="http://www.w3.org/2000/svg"><rect width="160" height="90" fill="#e8f4ee"/><line x1="20" y1="70" x2="140" y2="70" stroke="#1a4731" stroke-width="1" opacity="0.4"/><polyline points="20,60 45,45 70,52 95,32 120,38 140,20" fill="none" stroke="#1a4731" stroke-width="2" opacity="0.5"/><text x="80" y="84" text-anchor="middle" font-family="Georgia,serif" font-size="9" letter-spacing="2" fill="#1a4731" opacity="0.6">FINANCIAL</text></svg>',
+        tech:       '<svg viewBox="0 0 160 90" xmlns="http://www.w3.org/2000/svg"><rect width="160" height="90" fill="#e8eef8"/><rect x="42" y="20" width="76" height="48" rx="3" fill="none" stroke="#0a1628" stroke-width="1.5" opacity="0.4"/><rect x="62" y="68" width="36" height="6" rx="2" fill="#0a1628" opacity="0.3"/><rect x="52" y="74" width="56" height="3" rx="1" fill="#0a1628" opacity="0.2"/><text x="80" y="84" text-anchor="middle" font-family="Georgia,serif" font-size="9" letter-spacing="2" fill="#0a1628" opacity="0.55">TECHNOLOGY</text></svg>'
+      };
+
+      function buildCard(elId, data, opts) {
+        var el = document.getElementById(elId);
+        if (!el) return;
+        if (!data) {
+          el.innerHTML = '<div class="ns-thumb"><div class="ns-thumb-ph">' + opts.ph + '</div></div>'
+            + '<span class="ns-cat" style="color:' + opts.accent + '">' + opts.section + '</span>'
+            + '<div class="ns-headline" style="opacity:.45;font-style:italic">No data — update ' + opts.file + '</div>';
+          return;
+        }
+
+        var m = data.main;
+        var fmtDate = new Date(data.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'long' });
+        var first = Array.isArray(m.content) ? m.content[0] : (m.content || '').split('\n')[0];
+        var excerpt = first.replace(/\.\s.*/, '.'); // first sentence only
+
+        var thumb = m.image
+          ? '<img src="' + esc(m.image) + '" alt="" loading="lazy" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'">'
+            + '<div class="ns-thumb-ph" style="display:none">' + opts.ph + '</div>'
+          : '<div class="ns-thumb-ph">' + opts.ph + '</div>';
+
+        el.innerHTML =
+          '<a href="' + opts.href + '" class="ns-thumb-link"><div class="ns-thumb">' + thumb + '</div></a>'
+          + '<span class="ns-cat" style="color:' + opts.accent + '">' + opts.section + ' &nbsp;&middot;&nbsp; ' + fmtDate + '</span>'
+          + '<a href="' + opts.href + '" class="ns-headline-link"><div class="ns-headline">' + esc(m.title) + '</div></a>'
+          + '<p class="ns-excerpt">' + esc(excerpt) + '</p>'
+          + '<a href="' + opts.href + '" class="ns-link" style="color:' + opts.accent + '">Full briefing &rarr;</a>';
+      }
+
+      buildCard('strip-uk-politics',
+        (typeof UK_POLITICS_NEWS !== 'undefined' ? UK_POLITICS_NEWS : null),
+        { section: 'UK Politics', accent: '#8b0000', href: 'uk-politics-news.html', file: 'uk-politics-news-data.js', ph: PLACEHOLDERS.ukpolitics });
+
+      buildCard('strip-us-politics',
+        (typeof US_POLITICS_NEWS !== 'undefined' ? US_POLITICS_NEWS : null),
+        { section: 'US Politics', accent: '#003399', href: 'us-politics-news.html', file: 'us-politics-news-data.js', ph: PLACEHOLDERS.uspolitics });
+
+      buildCard('strip-financial',
+        (typeof FINANCIAL_NEWS !== 'undefined' ? FINANCIAL_NEWS : null),
+        { section: 'Financial', accent: '#1a4731', href: 'financial-news.html', file: 'financial-news-data.js', ph: PLACEHOLDERS.financial });
+
+      buildCard('strip-tech',
+        (typeof TECH_NEWS !== 'undefined' ? TECH_NEWS : null),
+        { section: 'Technology', accent: '#0a1628', href: 'tech-news.html', file: 'tech-news-data.js', ph: PLACEHOLDERS.tech });
+
+    })();
+
+    // ── Dropdown nav ──
+    (function () {
+      var btns = document.querySelectorAll('.nav-drop-btn');
+      btns.forEach(function(btn) {
+        btn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          var menu = btn.nextElementSibling;
+          var isOpen = menu.style.display === 'flex';
+          document.querySelectorAll('.nav-drop-menu').forEach(function(m){ m.style.display = ''; });
+          if (!isOpen) menu.style.display = 'flex';
+        });
+      });
+      document.addEventListener('click', function() {
+        document.querySelectorAll('.nav-drop-menu').forEach(function(m){ m.style.display = ''; });
+      });
+    })();
+  </script>
+
+</body>
+</html>

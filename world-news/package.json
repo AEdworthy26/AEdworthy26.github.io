@@ -1,0 +1,24 @@
+{
+  "name": "world-news",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "generate-news": "node scripts/generate-news.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "next": "14.2.5",
+    "react": "^18",
+    "react-dom": "^18",
+    "rss-parser": "^3.13.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.0.1",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.0"
+  }
+}

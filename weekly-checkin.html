@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weekly Check-In — Personal Hub</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink:    #0d0d0d;
+      --paper:  #f4f0e6;
+      --rule:   #1a1a1a;
+      --muted:  #555;
+      --light:  #888;
+      --blue:   #003399;
+      --border: #d8d3c8;
+      --subtle: #ece8e0;
+      --card:   #ffffff;
+      --green:  #1a6630;
+      --amber:  #96751e;
+      --red:    #b52a1c;
+      --shadow-sm: 0 1px 4px rgba(0,0,0,0.06);
+      --shadow-md: 0 4px 16px rgba(0,0,0,0.09);
+      --shadow-lg: 0 10px 32px rgba(0,0,0,0.13);
+      --radius: 7px;
+    }
+
+    body { background: var(--paper); color: var(--ink); font-family: 'Source Serif 4', Georgia, serif; min-height: 100vh; }
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── HEADER ── */
+    .meta-bar { max-width: 1200px; margin: 0 auto; padding: 1rem 1.5rem 0; }
+    .meta-bar-inner { display: flex; justify-content: space-between; align-items: center; font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); border-bottom: 1px solid var(--rule); padding-bottom: 0.4rem; margin-bottom: 0.6rem; }
+    .masthead-wrap { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; text-align: center; }
+    .masthead { font-family: 'Playfair Display', Georgia, serif; font-weight: 900; font-size: clamp(2.4rem,5vw,4.2rem); line-height: 1; letter-spacing: -0.01em; }
+    .masthead-sub { font-size: 0.75rem; font-style: italic; color: var(--muted); margin-top: 0.2rem; margin-bottom: 0.3rem; }
+    .rule-double { border: none; border-top: 3px double var(--rule); max-width: 1200px; margin: 0 auto; }
+    .nav-ribbon { background: linear-gradient(90deg, #4b5563 0%, #1f2937 100%); }
+    .nav-ribbon nav { max-width: 1600px; margin: 0 auto; padding: 0 2rem; display: flex; align-items: center; justify-content: center; gap: 0.3rem; }
+    .nav-ribbon nav a { color: rgba(255,255,255,0.88); font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; padding: 0.5rem 0.85rem; border-radius: 5px; transition: background 0.15s, color 0.15s; white-space: nowrap; }
+    .nav-ribbon nav a:hover { background: rgba(255,255,255,0.18); color: #fff; text-decoration: none; }
+    .nav-ribbon nav a.nav-home { color: #fff; font-weight: 700; margin-right: 0.4rem; padding-right: 1rem; border-right: 1px solid rgba(255,255,255,0.25); border-radius: 0; }
+    .nav-ribbon nav a.nav-active { background: rgba(255,255,255,0.18); color: #fff; }
+    .nav-ribbon nav .nav-spacer { flex: 1; height: 1px; background: rgba(255,255,255,0.25); margin: 0 0.5rem; }
+    /* Dropdown menus */
+    .nav-dropdown { position: relative; display: flex; align-items: center; }
+    .nav-drop-btn {
+      color: rgba(255,255,255,0.9);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 0.8rem; font-weight: 500; letter-spacing: 0.04em;
+      text-transform: uppercase; padding: 0.5rem 0.95rem; border-radius: 5px;
+      background: none; border: none; cursor: pointer; white-space: nowrap;
+      display: flex; align-items: center; gap: 0.25rem; transition: background 0.15s;
+    }
+    .nav-drop-btn:hover,
+    .nav-dropdown:hover .nav-drop-btn { background: rgba(255,255,255,0.18); color: #fff; }
+    .nav-drop-btn.nav-active { background: rgba(255,255,255,0.18); color: #fff; }
+    .nav-caret { font-size: 0.55rem; opacity: 0.65; transition: transform 0.15s; line-height: 1; }
+    .nav-dropdown:hover .nav-caret { transform: rotate(180deg); }
+    .nav-dropdown:hover .nav-drop-menu { display: flex; }
+    .nav-drop-menu {
+      position: absolute; top: 100%; left: 0;
+      background: #1f2937; border-radius: 6px;
+      min-width: 155px; display: none; flex-direction: column;
+      z-index: 200; box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+      overflow: hidden; margin-top: 0;
+    }
+    /* dropdown shown via JS */
+    .nav-drop-menu a {
+      color: rgba(255,255,255,0.85);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 0.76rem; font-weight: 500; letter-spacing: 0.04em;
+      text-transform: uppercase; padding: 0.6rem 1.1rem;
+      text-decoration: none; transition: background 0.12s; white-space: nowrap;
+      border-radius: 0; display: block;
+    }
+    .nav-drop-menu a:hover { background: rgba(255,255,255,0.15); color: #fff; }
+    .nav-divider { width: 1px; height: 1.1rem; background: rgba(255,255,255,0.35); margin: 0 0.6rem; flex-shrink: 0; align-self: center; }
+    .nav-drop-menu a + a { border-top: 1px solid rgba(255,255,255,0.07); }
+    .nav-drop-menu a.nav-active { background: rgba(255,255,255,0.15); color: #fff; }
+
+    @media (max-width: 800px) {
+      .nav-ribbon nav { flex-wrap: wrap; gap: 0; padding: 0.25rem 0.5rem; }
+      .nav-ribbon nav .nav-spacer { display: none; }
+      .nav-drop-menu { position: static; box-shadow: none; border-radius: 0; margin-top: 0; background: rgba(255,255,255,0.06); }
+      .nav-dropdown { flex-direction: column; align-items: flex-start; width: 100%; }
+      .nav-drop-menu { display: flex !important; }
+    }
+
+    /* ── PAGE ── */
+    .page-wrap { max-width: 1080px; margin: 0 auto; padding: 0 1.5rem 5rem; }
+    .page-header { padding: 1.8rem 0 1.2rem; border-bottom: 3px double var(--rule); margin-bottom: 2.2rem; }
+    .page-header-meta { font-size: 0.65rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--blue); font-weight: 700; margin-bottom: 0.45rem; }
+    .page-header h1 { font-family: 'Playfair Display', serif; font-weight: 900; font-size: clamp(2rem,4vw,3rem); line-height: 1.1; }
+    .page-header .standfirst { font-size: 0.92rem; line-height: 1.65; color: var(--muted); max-width: 560px; margin-top: 0.45rem; }
+
+    /* ── MAIN GRID ── */
+    .main-grid { display: grid; grid-template-columns: 1fr 340px; gap: 2rem; align-items: start; margin-bottom: 2.5rem; }
+    @media (max-width: 860px) { .main-grid { grid-template-columns: 1fr; } }
+
+    /* ── CARDS ── */
+    .card { background: var(--card); border: 1px solid var(--subtle); border-radius: var(--radius); box-shadow: var(--shadow-sm); }
+    .card-header { padding: 1.1rem 1.5rem 0.8rem; border-bottom: 1px solid var(--subtle); display: flex; align-items: center; justify-content: space-between; gap: 0.8rem; }
+    .card-title { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1rem; }
+    .card-body { padding: 1.3rem 1.5rem; }
+    @media (max-width: 500px) { .card-body { padding: 1rem; } }
+
+    /* ── FORM ── */
+    .form-section-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--blue); margin: 1.2rem 0 0.7rem; display: block; }
+    .form-section-label:first-child { margin-top: 0; }
+
+    .slider-rows { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem 1.5rem; }
+    @media (max-width: 500px) { .slider-rows { grid-template-columns: 1fr; } }
+
+    .slider-row { display: flex; flex-direction: column; gap: 0.4rem; }
+    .slider-meta { display: flex; justify-content: space-between; align-items: center; }
+    .slider-label { font-size: 0.78rem; font-weight: 600; color: var(--ink); display: flex; align-items: center; gap: 0.35rem; }
+    .slider-icon { font-size: 1rem; line-height: 1; }
+    .slider-value { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1rem; color: var(--blue); min-width: 1.8rem; text-align: right; }
+
+    input[type="range"] {
+      -webkit-appearance: none; appearance: none; width: 100%; height: 4px;
+      border-radius: 2px; outline: none; cursor: pointer;
+      background: linear-gradient(to right, var(--blue) 60%, var(--subtle) 60%);
+    }
+    input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; width: 17px; height: 17px; border-radius: 50%; background: var(--blue); cursor: pointer; box-shadow: 0 1px 4px rgba(0,51,153,0.35); transition: transform 0.1s; }
+    input[type="range"]::-webkit-slider-thumb:active { transform: scale(1.2); }
+    input[type="range"]::-moz-range-thumb { width: 17px; height: 17px; border-radius: 50%; background: var(--blue); border: none; cursor: pointer; }
+
+    .number-rows { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem 1.5rem; }
+    @media (max-width: 500px) { .number-rows { grid-template-columns: 1fr; } }
+
+    .num-row { display: flex; flex-direction: column; gap: 0.4rem; }
+    .num-label { font-size: 0.78rem; font-weight: 600; color: var(--ink); display: flex; align-items: center; gap: 0.35rem; }
+    .num-input-wrap { display: flex; align-items: center; gap: 0.5rem; }
+    .num-input { font-family: 'Source Serif 4', serif; font-size: 1rem; font-weight: 600; width: 70px; padding: 0.4rem 0.6rem; border: 1px solid var(--border); border-radius: 5px; background: var(--paper); color: var(--ink); text-align: center; transition: border-color 0.15s, box-shadow 0.15s; }
+    .num-input:focus { outline: none; border-color: var(--blue); box-shadow: 0 0 0 3px rgba(0,51,153,0.1); }
+    .num-hint { font-size: 0.65rem; color: var(--light); }
+
+    /* Achievements input */
+    .achieve-input-row { display: flex; gap: 0.5rem; margin-bottom: 0.6rem; }
+    .achieve-input { flex: 1; font-family: 'Source Serif 4', serif; font-size: 0.85rem; padding: 0.5rem 0.75rem; border: 1px solid var(--border); border-radius: 5px; background: var(--paper); color: var(--ink); transition: border-color 0.15s, box-shadow 0.15s; }
+    .achieve-input:focus { outline: none; border-color: var(--blue); box-shadow: 0 0 0 3px rgba(0,51,153,0.1); }
+    .achieve-list { display: flex; flex-wrap: wrap; gap: 0.4rem; min-height: 1rem; }
+    .achieve-chip { display: inline-flex; align-items: center; gap: 0.3rem; font-size: 0.75rem; background: rgba(0,51,153,0.08); border: 1px solid rgba(0,51,153,0.18); color: var(--ink); padding: 0.22rem 0.55rem 0.22rem 0.7rem; border-radius: 20px; }
+    .achieve-chip button { background: none; border: none; color: var(--muted); cursor: pointer; font-size: 0.9rem; line-height: 1; padding: 0; }
+    .achieve-chip button:hover { color: var(--red); }
+
+    /* Notes textarea */
+    .notes-textarea { width: 100%; font-family: 'Source Serif 4', serif; font-size: 0.87rem; line-height: 1.65; padding: 0.65rem 0.85rem; border: 1px solid var(--border); border-radius: 5px; background: var(--paper); color: var(--ink); resize: vertical; min-height: 80px; transition: border-color 0.15s, box-shadow 0.15s; }
+    .notes-textarea:focus { outline: none; border-color: var(--blue); box-shadow: 0 0 0 3px rgba(0,51,153,0.1); }
+
+    /* Submit */
+    .form-actions { margin-top: 1.4rem; display: flex; gap: 0.6rem; align-items: center; }
+    .btn-submit { font-family: 'Source Serif 4', serif; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; padding: 0.6rem 1.4rem; background: var(--blue); color: #fff; border: none; border-radius: 5px; cursor: pointer; transition: background 0.15s, box-shadow 0.15s; }
+    .btn-submit:hover { background: #002280; box-shadow: 0 2px 10px rgba(0,51,153,0.3); }
+    .btn-cancel { font-family: 'Source Serif 4', serif; font-size: 0.75rem; font-weight: 600; color: var(--muted); background: none; border: 1px solid var(--border); border-radius: 5px; padding: 0.55rem 0.9rem; cursor: pointer; transition: background 0.15s; }
+    .btn-cancel:hover { background: var(--subtle); }
+
+    /* Week label in card header */
+    .week-label { font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--light); }
+
+    /* ── SCORE CARD ── */
+    .score-empty { text-align: center; padding: 2rem 1rem; color: var(--light); font-style: italic; font-size: 0.85rem; }
+    .score-circle-wrap { display: flex; flex-direction: column; align-items: center; padding: 1.2rem 0 0.8rem; }
+    .score-label-text { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; margin-top: 0.4rem; }
+
+    .breakdown-list { display: flex; flex-direction: column; gap: 0.55rem; padding: 0 0 0.3rem; }
+    .breakdown-row { display: grid; grid-template-columns: 1.4rem 90px 1fr 2.2rem; align-items: center; gap: 0.4rem; }
+    .breakdown-icon { font-size: 0.95rem; text-align: center; }
+    .breakdown-name { font-size: 0.7rem; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .breakdown-track { height: 5px; background: var(--subtle); border-radius: 3px; overflow: hidden; }
+    .breakdown-fill { height: 100%; border-radius: 3px; transition: width 0.6s cubic-bezier(0.22,1,0.36,1); }
+    .breakdown-pct { font-size: 0.68rem; font-weight: 700; color: var(--muted); text-align: right; }
+
+    /* ── STATS ROW ── */
+    .stats-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; margin-bottom: 2.2rem; box-shadow: var(--shadow-sm); }
+    .stat-cell { background: var(--card); padding: 1.1rem 1.2rem; display: flex; flex-direction: column; gap: 0.2rem; }
+    .stat-num { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 900; line-height: 1; }
+    .stat-label { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--light); }
+    @media (max-width: 600px) { .stats-row { grid-template-columns: 1fr 1fr; } }
+
+    /* ── CHART ── */
+    .chart-wrap { margin-bottom: 2.5rem; }
+    .chart-inner { background: var(--card); border: 1px solid var(--subtle); border-radius: var(--radius); padding: 1.3rem 1.5rem 1rem; box-shadow: var(--shadow-sm); }
+    .chart-svg-wrap { width: 100%; overflow: hidden; }
+    .chart-empty { text-align: center; padding: 2.5rem; font-size: 0.85rem; color: var(--light); font-style: italic; }
+    .chart-section-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--blue); margin-bottom: 0.8rem; display: block; }
+
+    /* ── HISTORY ── */
+    .history-list { display: flex; flex-direction: column; gap: 0.7rem; }
+    .history-card { background: var(--card); border: 1px solid var(--subtle); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-sm); transition: box-shadow 0.2s; }
+    .history-card:hover { box-shadow: var(--shadow-md); }
+    .history-card-header { display: grid; grid-template-columns: auto 1fr auto auto; align-items: center; gap: 0.8rem 1rem; padding: 0.85rem 1.2rem; cursor: pointer; user-select: none; }
+    .history-score-badge { font-family: 'Playfair Display', serif; font-weight: 900; font-size: 1.3rem; line-height: 1; min-width: 2.2rem; text-align: center; }
+    .history-week-date { font-size: 0.8rem; font-weight: 600; color: var(--ink); }
+    .history-week-label { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; }
+    .history-mini-stats { display: flex; gap: 0.7rem; flex-wrap: wrap; }
+    .history-mini-stat { font-size: 0.65rem; color: var(--muted); }
+    .history-expand-btn { font-size: 0.75rem; color: var(--light); transition: transform 0.2s; background: none; border: none; cursor: pointer; padding: 0.2rem; }
+    .history-card.is-open .history-expand-btn { transform: rotate(180deg); }
+    .history-detail { display: none; padding: 0 1.2rem 1rem; border-top: 1px solid var(--subtle); animation: fadeDown 0.2s ease; }
+    .history-card.is-open .history-detail { display: block; }
+    .history-detail-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 0.6rem; margin-top: 0.9rem; }
+    .history-detail-item { background: var(--paper); border-radius: 5px; padding: 0.5rem 0.7rem; display: flex; flex-direction: column; gap: 0.1rem; }
+    .history-detail-icon { font-size: 1rem; }
+    .history-detail-val { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.05rem; line-height: 1.1; }
+    .history-detail-name { font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--light); }
+    .history-achievements { margin-top: 0.8rem; }
+    .history-achievements-label { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.35rem; display: block; }
+    .history-achieve-chip { display: inline-block; font-size: 0.72rem; background: rgba(26,102,48,0.1); border: 1px solid rgba(26,102,48,0.2); color: var(--green); padding: 0.18rem 0.55rem; border-radius: 20px; margin: 0.15rem 0.15rem 0 0; }
+    .history-notes { margin-top: 0.8rem; font-size: 0.82rem; line-height: 1.65; color: var(--muted); font-style: italic; border-left: 2px solid var(--subtle); padding-left: 0.8rem; }
+    .history-delete-btn { font-size: 0.65rem; color: var(--light); background: none; border: none; cursor: pointer; padding: 0.3rem 0; margin-top: 0.8rem; display: inline-block; }
+    .history-delete-btn:hover { color: var(--red); }
+
+    /* Buttons */
+    .btn-edit { font-family: 'Source Serif 4', serif; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.3rem 0.75rem; border: 1px solid var(--border); border-radius: 5px; background: transparent; color: var(--muted); cursor: pointer; transition: all 0.15s; }
+    .btn-edit:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+    .btn-sm-blue { font-family: 'Source Serif 4', serif; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.35rem 0.75rem; border: none; border-radius: 5px; background: var(--blue); color: #fff; cursor: pointer; transition: background 0.15s; }
+    .btn-sm-blue:hover { background: #002280; }
+
+    /* No data / empty states */
+    .empty-history { text-align: center; padding: 3rem 2rem; border: 1px dashed var(--border); border-radius: var(--radius); background: rgba(255,255,255,0.4); }
+    .empty-icon { font-size: 2.4rem; opacity: 0.25; display: block; margin-bottom: 0.8rem; }
+    .empty-title { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; margin-bottom: 0.4rem; }
+    .empty-text { font-size: 0.82rem; color: var(--muted); }
+
+    /* ── COMPARISON ── */
+    .compare-row { display: flex; gap: 0.5rem; align-items: center; font-size: 0.7rem; color: var(--muted); margin-top: 0.5rem; padding-top: 0.5rem; border-top: 1px solid var(--subtle); }
+    .compare-delta { font-weight: 700; }
+    .compare-up { color: var(--green); }
+    .compare-down { color: var(--red); }
+    .compare-same { color: var(--muted); }
+
+    /* ── SECTION HEADING ── */
+    .section-heading { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.3rem; }
+    .section-heading h2 { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.1rem; white-space: nowrap; }
+    .section-rule { flex: 1; height: 1px; background: var(--subtle); }
+
+    /* ── FOOTER ── */
+    .site-footer { text-align: center; font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--light); border-top: 1px solid var(--border); padding: 1.4rem 2rem; margin-top: 2rem; }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp  { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes fadeDown{ from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
+    .fade-up { animation: fadeUp 0.4s cubic-bezier(0.22,1,0.36,1) both; }
+    @media (prefers-reduced-motion: reduce) { .fade-up, .breakdown-fill { animation: none !important; transition: none !important; } }
+
+    /* ── GAMIFICATION ── */
+    @keyframes pbSlideIn { from { opacity: 0; transform: translateY(-10px) scale(0.97); } to { opacity: 1; transform: none; } }
+    .pb-banner { background: linear-gradient(135deg, #0d6e4f, #1a6630); color: #fff; border-radius: 8px; padding: 0.7rem 1.1rem; margin: 0.6rem 1.3rem 0.2rem; display: flex; align-items: center; gap: 0.6rem; font-size: 0.8rem; font-weight: 600; animation: pbSlideIn 0.45s cubic-bezier(0.22,1,0.36,1) both; }
+    .pb-banner-icon { font-size: 1.25rem; }
+
+    @keyframes feedbackIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: none; } }
+    .score-feedback { text-align: center; font-size: 0.8rem; font-style: italic; color: var(--muted); padding: 0.2rem 1.3rem 1rem; animation: feedbackIn 0.5s 0.7s both; }
+
+    @keyframes flamePulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.22); } }
+    .flame { display: inline-block; animation: flamePulse 1.5s ease-in-out infinite; }
+
+    @keyframes badgePop { from { opacity: 0; transform: scale(0.72); } to { opacity: 1; transform: scale(1); } }
+    .milestones-row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 2rem; }
+    .milestone-badge { display: inline-flex; align-items: center; gap: 0.3rem; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.04em; padding: 0.28rem 0.65rem; border-radius: 20px; border: 1px solid; animation: badgePop 0.4s cubic-bezier(0.34,1.56,0.64,1) both; }
+    .milestone-badge.gold  { background: rgba(150,117,30,0.12); border-color: rgba(150,117,30,0.35); color: #7a5c00; }
+    .milestone-badge.green { background: rgba(26,102,48,0.1);   border-color: rgba(26,102,48,0.3);   color: #1a6630; }
+    .milestone-badge.blue  { background: rgba(0,51,153,0.08);   border-color: rgba(0,51,153,0.22);   color: var(--blue); }
+    /* ── NEWS TICKER ── */
+    .ticker-wrap { background: #111; overflow: hidden; display: flex; align-items: stretch; height: 2.4rem; }
+    .ticker-label { background: #e8000d; color: #fff; font-family: 'Source Serif 4', serif; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; padding: 0 1.2rem; display: flex; align-items: center; white-space: nowrap; flex-shrink: 0; gap: 0.5rem; }
+    .ticker-label::before { content: ''; display: inline-block; width: 7px; height: 7px; background: #fff; border-radius: 50%; animation: pulse-dot 1.2s ease-in-out infinite; }
+    @keyframes pulse-dot { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.4; transform: scale(0.7); } }
+    .ticker-inner { overflow: hidden; flex: 1; display: flex; align-items: center; }
+    .ticker-track { display: flex; align-items: center; white-space: nowrap; will-change: transform; animation: ticker-scroll 40s linear infinite; }
+    .ticker-track:hover { animation-play-state: paused; cursor: default; }
+    .ticker-track a { color: #fff; font-family: 'Source Serif 4', serif; font-size: 0.78rem; font-weight: 600; padding: 0 2rem; text-decoration: none; transition: color 0.15s; }
+    .ticker-track a:hover { color: #e8000d; text-decoration: none; cursor: pointer; }
+    .ticker-track .ticker-sep { color: #e8000d; font-size: 1rem; font-weight: 700; flex-shrink: 0; line-height: 1; }
+    @keyframes ticker-scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+  </style>
+</head>
+<body>
+
+  <!-- ── NEWS TICKER ── -->
+  <div class="ticker-wrap">
+    <div class="ticker-label">Breaking News</div>
+    <div class="ticker-inner">
+      <div class="ticker-track" id="js-ticker">
+        <span style="color:rgba(255,255,255,0.5); font-size:0.78rem; padding:0 2rem; font-family:'Source Serif 4',serif;">Loading headlines&hellip;</span>
+      </div>
+    </div>
+  </div>
+  <!-- ── HEADER ── -->
+  <div class="meta-bar">
+    <div class="meta-bar-inner">
+      <span id="js-date"><!-- date injected by JS --></span>
+      <span>Personal Edition &nbsp;&bull;&nbsp; Est. 2026</span>
+    </div>
+  </div>
+  <div class="masthead-wrap">
+    <div class="masthead">Personal Hub</div>
+    <div class="masthead-sub">Alfie Edworthy</div>
+  </div>
+  <hr class="rule-double">
+
+  <!-- ── NAV RIBBON ── -->
+  <div class="nav-ribbon">
+    <nav>
+      <a href="personal_hub.html" class="nav-home">&#8962; Home</a>
+      <a href="rics-study.html">RICS Study</a>
+      <div class="nav-dropdown">
+        <button class="nav-drop-btn">News <span class="nav-caret">▾</span></button>
+        <div class="nav-drop-menu">
+          <a href="world-news.html">World Affairs</a>
+          <a href="uk-politics-news.html">UK Politics</a>
+          <a href="us-politics-news.html">US Politics</a>
+          <a href="financial-news.html">Financial</a>
+          <a href="tech-news.html">Technology</a>
+        </div>
+      </div>
+      <a href="curiosity.html">Curiosity Corner</a>
+      <a href="philosophy.html">Philosophy Corner</a>
+      <div class="nav-dropdown">
+        <button class="nav-drop-btn">Recommendations <span class="nav-caret">▾</span></button>
+        <div class="nav-drop-menu">
+          <a href="reads.html">Books</a>
+          <a href="films.html">Films</a>
+        </div>
+      </div>
+      <a href="recipes.html">Recipes</a>
+      <a href="exercise.html">Exercise</a>
+      <div class="nav-divider"></div>
+      <div class="nav-dropdown">
+        <button class="nav-drop-btn nav-active">Organisation <span class="nav-caret">▾</span></button>
+        <div class="nav-drop-menu">
+          <a href="todo-lists.html">To-Do Lists</a>
+          <a href="weekly-checkin.html" class="nav-active">Weekly Check-In</a>
+          <a href="monthly-goals.html">Monthly Goals</a>
+          <a href="achievements.html">Achievements</a>
+          <a href="wishlist.html">Wishlist</a>
+        </div>
+      </div>
+      <a href="calendar.html">Calendar</a>
+    </nav>
+  </div>
+
+  <div class="page-wrap">
+    <div class="page-header">
+      <div class="page-header-meta">Organisation</div>
+      <h1>Weekly Check-In</h1>
+      <p class="standfirst">Track your wellbeing, habits, and progress each week.</p>
+    </div>
+
+    <div class="main-grid">
+      <!-- Form column -->
+      <div>
+        <div class="card" id="form-card">
+          <div class="card-header" style="flex-wrap:wrap;gap:.4rem">
+            <span class="card-title" id="form-card-title">This Week</span>
+            <div style="display:flex;align-items:center;gap:.5rem;margin-left:auto">
+              <button id="btn-week-prev" onclick="window.navWeek(-1)" style="background:none;border:1px solid var(--border);border-radius:4px;padding:.2rem .55rem;cursor:pointer;font-size:.8rem;color:var(--muted);line-height:1" title="Previous week">‹</button>
+              <span class="week-label" id="form-week-label"></span>
+              <button id="btn-week-next" onclick="window.navWeek(1)" style="background:none;border:1px solid var(--border);border-radius:4px;padding:.2rem .55rem;cursor:pointer;font-size:.8rem;color:var(--muted);line-height:1" title="Next week">›</button>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="form-section-label">Mood &amp; Wellbeing</span>
+            <div class="slider-rows">
+              <div class="slider-row">
+                <div class="slider-meta">
+                  <label class="slider-label"><span class="slider-icon">&#x1F60A;</span> Mood</label>
+                  <span class="slider-value" id="v-mood">6</span>
+                </div>
+                <input type="range" id="f-mood" min="1" max="10" value="6">
+              </div>
+              <div class="slider-row">
+                <div class="slider-meta">
+                  <label class="slider-label"><span class="slider-icon">&#x1F634;</span> Sleep Quality</label>
+                  <span class="slider-value" id="v-sleep">6</span>
+                </div>
+                <input type="range" id="f-sleep" min="1" max="10" value="6">
+              </div>
+              <div class="slider-row">
+                <div class="slider-meta">
+                  <label class="slider-label"><span class="slider-icon">&#x1F957;</span> Healthy Eating</label>
+                  <span class="slider-value" id="v-eating">6</span>
+                </div>
+                <input type="range" id="f-eating" min="1" max="10" value="6">
+              </div>
+              <div class="slider-row">
+                <div class="slider-meta">
+                  <label class="slider-label"><span class="slider-icon">&#x26A1;</span> Productivity</label>
+                  <span class="slider-value" id="v-prod">6</span>
+                </div>
+                <input type="range" id="f-prod" min="1" max="10" value="6">
+              </div>
+              <div class="slider-row">
+                <div class="slider-meta">
+                  <label class="slider-label"><span class="slider-icon">&#x1F465;</span> Social</label>
+                  <span class="slider-value" id="v-social">6</span>
+                </div>
+                <input type="range" id="f-social" min="1" max="10" value="6">
+              </div>
+            </div>
+
+            <span class="form-section-label">Exercise &amp; Study</span>
+            <div class="number-rows">
+              <div class="num-row">
+                <div class="num-label"><span class="slider-icon">&#x1F3C3;</span> Exercise Sessions</div>
+                <div class="num-input-wrap">
+                  <input type="number" id="f-exercise" class="num-input" min="0" max="5" value="0">
+                  <span class="num-hint">max 5 per week</span>
+                </div>
+              </div>
+              <div class="num-row">
+                <div class="num-label"><span class="slider-icon">&#x1F4DA;</span> Study Hours</div>
+                <div class="num-input-wrap">
+                  <input type="number" id="f-study" class="num-input" min="0" max="20" value="0">
+                  <span class="num-hint">max 20 hrs</span>
+                </div>
+              </div>
+            </div>
+
+            <span class="form-section-label">Achievements this week</span>
+            <div class="achieve-input-row">
+              <input type="text" id="f-achieve-input" class="achieve-input" placeholder="Add an achievement&hellip;">
+              <button type="button" id="btn-add-achieve" class="btn-sm-blue">Add</button>
+            </div>
+            <div class="achieve-list" id="achieve-list"></div>
+
+            <span class="form-section-label" style="margin-top:1.2rem">Notes</span>
+            <textarea id="f-notes" class="notes-textarea" placeholder="Reflections, highlights, anything on your mind&hellip;"></textarea>
+
+            <div class="form-actions">
+              <button type="button" id="btn-submit" class="btn-submit">Save Check-In</button>
+              <button type="button" id="btn-cancel-edit" class="btn-cancel" style="display:none">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Score column -->
+      <div id="score-col">
+        <div class="card">
+          <div class="card-header">
+            <span class="card-title">Your Score</span>
+            <button type="button" id="btn-edit" class="btn-edit" style="display:none">Edit</button>
+          </div>
+          <div id="score-body"></div>
+        </div>
+        <div class="card" id="comparison-card" style="display:none; margin-top:1rem;">
+          <div class="card-body" id="comparison-body"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats row -->
+    <div class="stats-row">
+      <div class="stat-cell">
+        <span class="stat-num" id="stat-weeks">0</span>
+        <span class="stat-label">Weeks tracked</span>
+      </div>
+      <div class="stat-cell">
+        <span class="stat-num" id="stat-streak">0</span>
+        <span class="stat-label">Week streak</span>
+      </div>
+      <div class="stat-cell">
+        <span class="stat-num" id="stat-best">&mdash;</span>
+        <span class="stat-label">Best score</span>
+      </div>
+      <div class="stat-cell">
+        <span class="stat-num" id="stat-avg">&mdash;</span>
+        <span class="stat-label">Average score</span>
+      </div>
+    </div>
+
+    <!-- Milestones -->
+    <div class="milestones-row" id="milestones-row" style="display:none"></div>
+
+    <!-- Chart -->
+    <div class="chart-wrap">
+      <div class="chart-inner">
+        <span class="chart-section-label">Score over time</span>
+        <div class="chart-svg-wrap" id="score-chart"></div>
+      </div>
+    </div>
+
+    <!-- History -->
+    <div>
+      <div class="section-heading">
+        <h2>Check-In History</h2>
+        <div class="section-rule"></div>
+      </div>
+      <div class="history-list" id="history-list"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">Personal Hub &mdash; Alfie Edworthy &mdash; Private &amp; Confidential</footer>
+
+  <script>
+  (function () {
+
+    var STORAGE_KEY = 'personal_hub_checkins';
+    var MAX_EX = 5, MAX_STUDY = 20;
+
+    // ── Utilities ─────────────────────────────────────────────────────────────
+    function esc(s) { return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+    function fmtDate(iso) {
+      return new Date(iso + 'T12:00:00').toLocaleDateString('en-GB', { day:'numeric', month:'long', year:'numeric' });
+    }
+
+    function fmtDateShort(iso) {
+      return new Date(iso + 'T12:00:00').toLocaleDateString('en-GB', { day:'numeric', month:'short' });
+    }
+
+    function getThisSunday() {
+      var d = new Date();
+      d.setDate(d.getDate() - d.getDay());
+      return d.toISOString().slice(0, 10);
+    }
+
+    function scoreInfo(score) {
+      if (score >= 90) return { label:'Exceptional', color:'#0d6e4f' };
+      if (score >= 80) return { label:'Great Week',  color:'#1a6630' };
+      if (score >= 70) return { label:'Solid Week',  color:'#2d7d32' };
+      if (score >= 60) return { label:'Decent Week', color:'#96751e' };
+      if (score >= 50) return { label:'Mixed Week',  color:'#cc5500' };
+      return               { label:'Needs Work',    color:'#b52a1c' };
+    }
+
+    function calculateScore(d) {
+      var mood  = (d.mood / 10) * 20;
+      var ex    = Math.min(d.exercise / MAX_EX, 1) * 20;
+      var eat   = (d.healthyEating / 10) * 15;
+      var study = Math.min(d.studyHours / MAX_STUDY, 1) * 20;
+      var prod  = (d.productivity / 10) * 15;
+      var sleep = (d.sleep / 10) * 10;
+      return Math.round(mood + ex + eat + study + prod + sleep);
+    }
+
+    // ── Gamification helpers ──────────────────────────────────────────────────
+    function countUp(el, target, duration) {
+      var startTime = null;
+      function step(ts) {
+        if (!startTime) startTime = ts;
+        var progress = Math.min((ts - startTime) / duration, 1);
+        var eased = 1 - Math.pow(1 - progress, 3);
+        el.textContent = Math.round(eased * target);
+        if (progress < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    }
+
+    function launchConfetti() {
+      var canvas = document.createElement('canvas');
+      canvas.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:9999';
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      document.body.appendChild(canvas);
+      var ctx = canvas.getContext('2d');
+      var colors = ['#003399','#1a6630','#96751e','#b52a1c','#6b2fa0','#cc5500','#0d6e4f'];
+      var pieces = [];
+      for (var i = 0; i < 90; i++) {
+        pieces.push({
+          x: Math.random() * canvas.width,
+          y: -20 - Math.random() * 120,
+          vx: (Math.random() - 0.5) * 5,
+          vy: 2 + Math.random() * 5,
+          rot: Math.random() * Math.PI * 2,
+          vrot: (Math.random() - 0.5) * 0.15,
+          w: 7 + Math.random() * 9,
+          h: 3.5 + Math.random() * 5,
+          color: colors[Math.floor(Math.random() * colors.length)],
+          alpha: 1
+        });
+      }
+      var start = null;
+      function frame(ts) {
+        if (!start) start = ts;
+        var elapsed = ts - start;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        var alive = false;
+        pieces.forEach(function(p) {
+          p.x += p.vx; p.y += p.vy; p.vy += 0.09; p.rot += p.vrot;
+          if (elapsed > 1200) p.alpha = Math.max(0, p.alpha - 0.018);
+          if (p.alpha > 0) alive = true;
+          ctx.save();
+          ctx.globalAlpha = p.alpha;
+          ctx.translate(p.x, p.y);
+          ctx.rotate(p.rot);
+          ctx.fillStyle = p.color;
+          ctx.fillRect(-p.w/2, -p.h/2, p.w, p.h);
+          ctx.restore();
+        });
+        if (alive && elapsed < 3000) requestAnimationFrame(frame);
+        else canvas.remove();
+      }
+      requestAnimationFrame(frame);
+    }
+
+    function getFeedbackMsg(score) {
+      if (score >= 90) return 'An outstanding week \u2014 you\'re firing on all cylinders.';
+      if (score >= 80) return 'Really strong. Keep building on this momentum.';
+      if (score >= 70) return 'A solid week. Small consistent steps add up.';
+      if (score >= 60) return 'Decent foundations. A few tweaks could make next week shine.';
+      if (score >= 50) return 'A mixed bag \u2014 but showing up counts for everything.';
+      return 'Tough week. Rest, reset, and come back stronger.';
+    }
+
+    function getMilestones() {
+      var badges = [];
+      var count  = entries.length;
+      var streak = getStreak();
+      var scores = entries.map(function(e){ return e.score; });
+      var best   = scores.length ? Math.max.apply(null, scores) : 0;
+      if (count >= 1)  badges.push({ icon:'\uD83D\uDCCB', text:'First Check-In',  color:'blue'  });
+      if (count >= 5)  badges.push({ icon:'\uD83D\uDCC5', text:'5 Weeks',         color:'blue'  });
+      if (count >= 10) badges.push({ icon:'\uD83D\uDCC5', text:'10 Weeks',        color:'green' });
+      if (count >= 26) badges.push({ icon:'\uD83D\uDDD3\uFE0F', text:'Half Year', color:'gold'  });
+      if (count >= 52) badges.push({ icon:'\uD83C\uDFC6', text:'Full Year',       color:'gold'  });
+      if (streak >= 3) badges.push({ icon:'\uD83D\uDD25', text: streak + '-Week Streak', color:'gold' });
+      if (best >= 80)  badges.push({ icon:'\u2B50',       text:'80+ Score',       color:'green' });
+      if (best >= 90)  badges.push({ icon:'\u2728',       text:'90+ Score',       color:'gold'  });
+      return badges;
+    }
+
+    // ── Data ──────────────────────────────────────────────────────────────────
+    var entries = [];
+    try { entries = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'); } catch(_) {}
+
+    function saveEntries() {
+      try { localStorage.setItem(STORAGE_KEY, JSON.stringify(entries)); } catch(_) {}
+    }
+
+    function getThisWeekEntry() {
+      return entries.find(function(e) { return e.date === selectedSunday; }) || null;
+    }
+
+    function getStreak() {
+      if (!entries.length) return 0;
+      var sorted = entries.slice().sort(function(a,b){ return b.date.localeCompare(a.date); });
+      var streak = 1;
+      for (var i = 1; i < sorted.length; i++) {
+        var a = new Date(sorted[i-1].date + 'T12:00:00');
+        var b = new Date(sorted[i].date   + 'T12:00:00');
+        if (Math.round((a - b) / 604800000) === 1) streak++;
+        else break;
+      }
+      return streak;
+    }
+
+    // ── Week navigation ───────────────────────────────────────────────────────
+    var selectedSunday = getThisSunday(); // ISO date of the Sunday ending the selected week
+
+    function updateWeekNav() {
+      var thisSun = getThisSunday();
+      var isCurrentWeek = selectedSunday === thisSun;
+      var d = new Date(selectedSunday + 'T12:00:00');
+      var label = 'w/e ' + d.toLocaleDateString('en-GB', { day:'numeric', month:'short', year:'numeric' });
+      document.getElementById('form-week-label').textContent = label;
+      document.getElementById('form-card-title').textContent = isCurrentWeek ? 'This Week' : 'Week Check-In';
+      document.getElementById('btn-week-next').disabled = isCurrentWeek;
+      document.getElementById('btn-week-next').style.opacity = isCurrentWeek ? '0.35' : '1';
+    }
+
+    window.navWeek = function(dir) {
+      var d = new Date(selectedSunday + 'T12:00:00');
+      d.setDate(d.getDate() + dir * 7);
+      // Don't allow navigating into the future
+      if (d > new Date()) return;
+      selectedSunday = d.toISOString().slice(0, 10);
+      updateWeekNav();
+      // Load existing entry for this week if any
+      var existing = entries.find(function(e){ return e.date === selectedSunday; }) || null;
+      editingExisting = false;
+      document.getElementById('btn-cancel-edit').style.display = 'none';
+      if (existing) {
+        populateForm(existing);
+        editingExisting = true;
+        document.getElementById('btn-cancel-edit').style.display = '';
+        renderScoreCard(existing, false, false);
+        document.getElementById('btn-edit').style.display = '';
+        document.getElementById('form-card').style.display = 'none';
+      } else {
+        // Reset form to defaults for blank week
+        ['f-mood','f-sleep','f-eating','f-prod','f-social'].forEach(function(id){
+          var el = document.getElementById(id); if(el){ el.value=6; updateSliderFill(el); updateSliderVal(el); }
+        });
+        document.getElementById('f-exercise').value = 0;
+        document.getElementById('f-study').value = 0;
+        document.getElementById('f-notes').value = '';
+        formAchievements = [];
+        renderAchieveList();
+        renderScoreCard(null, false, false);
+        document.getElementById('btn-edit').style.display = 'none';
+        document.getElementById('form-card').style.display = '';
+      }
+    };
+
+    // ── Form state ────────────────────────────────────────────────────────────
+    var formAchievements = [];
+    var editingExisting  = false;
+
+    function getCurrentFormValues() {
+      return {
+        mood:         +document.getElementById('f-mood').value,
+        sleep:        +document.getElementById('f-sleep').value,
+        exercise:     +document.getElementById('f-exercise').value,
+        healthyEating:+document.getElementById('f-eating').value,
+        studyHours:   +document.getElementById('f-study').value,
+        productivity: +document.getElementById('f-prod').value,
+        social:       +document.getElementById('f-social').value,
+        achievements: formAchievements.slice(),
+        notes:        document.getElementById('f-notes').value.trim(),
+      };
+    }
+
+    function populateForm(entry) {
+      var fields = { 'f-mood': entry.mood, 'f-sleep': entry.sleep,
+        'f-eating': entry.healthyEating, 'f-prod': entry.productivity, 'f-social': entry.social };
+      Object.keys(fields).forEach(function(id) {
+        var el = document.getElementById(id);
+        if (el) { el.value = fields[id]; updateSliderFill(el); updateSliderVal(el); }
+      });
+      document.getElementById('f-exercise').value = entry.exercise;
+      document.getElementById('f-study').value    = entry.studyHours;
+      document.getElementById('f-notes').value    = entry.notes || '';
+      formAchievements = (entry.achievements || []).slice();
+      renderAchieveList();
+    }
+
+    // ── Slider helpers ────────────────────────────────────────────────────────
+    function updateSliderFill(el) {
+      var pct = ((el.value - el.min) / (el.max - el.min)) * 100;
+      el.style.background = 'linear-gradient(to right, var(--blue) ' + pct + '%, var(--subtle) ' + pct + '%)';
+    }
+
+    function updateSliderVal(el) {
+      var valId = 'v-' + { 'f-mood':'mood', 'f-sleep':'sleep', 'f-eating':'eating', 'f-prod':'prod', 'f-social':'social' }[el.id];
+      if (valId && document.getElementById(valId)) {
+        document.getElementById(valId).textContent = el.value;
+      }
+    }
+
+    ['f-mood','f-sleep','f-eating','f-prod','f-social'].forEach(function(id) {
+      var el = document.getElementById(id);
+      if (!el) return;
+      updateSliderFill(el);
+      el.addEventListener('input', function() { updateSliderFill(this); updateSliderVal(this); });
+    });
+
+    // ── Achievement chips ─────────────────────────────────────────────────────
+    function renderAchieveList() {
+      var list = document.getElementById('achieve-list');
+      list.innerHTML = formAchievements.map(function(a, i) {
+        return '<span class="achieve-chip">' + esc(a)
+          + '<button type="button" data-i="' + i + '" aria-label="Remove">&#215;</button></span>';
+      }).join('');
+    }
+
+    document.getElementById('btn-add-achieve').addEventListener('click', function() {
+      var inp = document.getElementById('f-achieve-input');
+      var val = inp.value.trim();
+      if (val) { formAchievements.push(val); inp.value = ''; renderAchieveList(); }
+    });
+
+    document.getElementById('f-achieve-input').addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') { e.preventDefault(); document.getElementById('btn-add-achieve').click(); }
+    });
+
+    document.getElementById('achieve-list').addEventListener('click', function(e) {
+      var btn = e.target.closest('button');
+      if (!btn) return;
+      var i = +btn.dataset.i;
+      formAchievements.splice(i, 1);
+      renderAchieveList();
+    });
+
+    // ── Score display ─────────────────────────────────────────────────────────
+    function renderScoreCard(entry, isNew, isPB) {
+      if (!entry) {
+        document.getElementById('score-body').innerHTML = '<p class="score-empty">Complete your check-in to see your score.</p>';
+        document.getElementById('btn-edit').style.display = 'none';
+        document.getElementById('comparison-card').style.display = 'none';
+        return;
+      }
+
+      var info = scoreInfo(entry.score);
+      var circ = 2 * Math.PI * 50;
+      var offset = circ * (1 - entry.score / 100);
+
+      var breakdowns = [
+        { icon:'&#x1F60A;', name:'Mood',          pct: (entry.mood / 10) },
+        { icon:'&#x1F634;', name:'Sleep',          pct: (entry.sleep / 10) },
+        { icon:'&#x1F3C3;', name:'Exercise',       pct: Math.min(entry.exercise / MAX_EX, 1) },
+        { icon:'&#x1F957;', name:'Healthy Eating', pct: (entry.healthyEating / 10) },
+        { icon:'&#x1F4DA;', name:'Study',          pct: Math.min(entry.studyHours / MAX_STUDY, 1) },
+        { icon:'&#x26A1;',  name:'Productivity',   pct: (entry.productivity / 10) },
+      ];
+
+      var barsHTML = breakdowns.map(function(b, i) {
+        var pct = Math.round(b.pct * 100);
+        var color = pct >= 80 ? 'var(--green)' : pct >= 55 ? 'var(--amber)' : 'var(--red)';
+        var delay = isNew ? (i * 80 + 400) + 'ms' : '0ms';
+        var widthStyle = isNew ? 'width:0%' : 'width:' + pct + '%';
+        return '<div class="breakdown-row">'
+          + '<span class="breakdown-icon">' + b.icon + '</span>'
+          + '<span class="breakdown-name">' + b.name + '</span>'
+          + '<div class="breakdown-track"><div class="breakdown-fill" data-pct="' + pct + '" style="' + widthStyle + ';background:' + color + ';transition-delay:' + delay + '"></div></div>'
+          + '<span class="breakdown-pct">' + pct + '%</span>'
+          + '</div>';
+      }).join('');
+
+      var pbHTML = (isPB && isNew)
+        ? '<div class="pb-banner"><span class="pb-banner-icon">\uD83C\uDFC6</span><span>New personal best! Previous record beaten.</span></div>'
+        : '';
+
+      var feedbackHTML = isNew
+        ? '<p class="score-feedback">' + esc(getFeedbackMsg(entry.score)) + '</p>'
+        : '';
+
+      // Arc starts empty when animating, filled when restoring
+      var initOffset = isNew ? circ.toFixed(2) : offset.toFixed(2);
+      var initScore  = isNew ? '0' : entry.score;
+
+      document.getElementById('score-body').innerHTML =
+        pbHTML
+        + '<div class="score-circle-wrap">'
+        + '<svg viewBox="0 0 120 120" width="150" height="150">'
+        + '<circle cx="60" cy="60" r="50" fill="none" stroke="var(--subtle)" stroke-width="9"/>'
+        + '<circle cx="60" cy="60" r="50" fill="none" stroke="' + info.color + '" stroke-width="9"'
+        + ' stroke-dasharray="' + circ.toFixed(2) + '" stroke-dashoffset="' + initOffset + '"'
+        + ' stroke-linecap="round" transform="rotate(-90 60 60)"'
+        + ' id="score-arc-el" style="transition:stroke-dashoffset 0.9s cubic-bezier(0.22,1,0.36,1)"/>'
+        + '<text x="60" y="57" text-anchor="middle" font-family="Playfair Display,Georgia,serif" font-weight="900" font-size="26" fill="' + info.color + '" id="score-num-el">' + initScore + '</text>'
+        + '<text x="60" y="71" text-anchor="middle" font-family="Source Serif 4,Georgia,serif" font-size="9.5" fill="var(--light)">out of 100</text>'
+        + '</svg>'
+        + '<span class="score-label-text" style="color:' + info.color + '">' + info.label + '</span>'
+        + '</div>'
+        + '<div class="breakdown-list" style="padding:0 1.3rem 1.2rem">' + barsHTML + '</div>'
+        + feedbackHTML;
+
+      if (isNew) {
+        // Double rAF ensures paint has happened before triggering transitions
+        requestAnimationFrame(function() {
+          requestAnimationFrame(function() {
+            var arc = document.getElementById('score-arc-el');
+            if (arc) arc.style.strokeDashoffset = offset.toFixed(2);
+            var numEl = document.getElementById('score-num-el');
+            if (numEl) countUp(numEl, entry.score, 900);
+            document.querySelectorAll('#score-body .breakdown-fill').forEach(function(f) {
+              f.style.width = f.dataset.pct + '%';
+            });
+          });
+        });
+      }
+
+      document.getElementById('btn-edit').style.display = '';
+
+      // Comparison with last week
+      var sorted = entries.slice().sort(function(a,b){ return b.date.localeCompare(a.date); });
+      var last = sorted.find(function(e){ return e.date !== entry.date; });
+      if (last) {
+        var diff = entry.score - last.score;
+        var cls  = diff > 0 ? 'compare-up' : diff < 0 ? 'compare-down' : 'compare-same';
+        var sign = diff > 0 ? '+' : '';
+        var arrow = diff > 0 ? ' \u2191' : diff < 0 ? ' \u2193' : ' \u2192';
+        document.getElementById('comparison-card').style.display = '';
+        document.getElementById('comparison-body').innerHTML =
+          '<div class="compare-row">'
+          + '<span>Last week: <strong>' + last.score + '</strong></span>'
+          + '<span class="compare-delta ' + cls + '">' + sign + diff + ' pts' + arrow + '</span>'
+          + '<span style="color:var(--light);margin-left:auto">' + fmtDateShort(last.date) + '</span>'
+          + '</div>';
+      } else {
+        document.getElementById('comparison-card').style.display = 'none';
+      }
+    }
+
+    // ── Stats bar ─────────────────────────────────────────────────────────────
+    function renderStats() {
+      document.getElementById('stat-weeks').textContent = entries.length;
+
+      var streak = getStreak();
+      var streakEl = document.getElementById('stat-streak');
+      if (streak > 1) {
+        streakEl.innerHTML = streak + ' <span class="flame">\uD83D\uDD25</span>';
+      } else {
+        streakEl.textContent = streak;
+      }
+
+      if (entries.length > 0) {
+        var best = entries.reduce(function(b,e){ return e.score > b.score ? e : b; });
+        document.getElementById('stat-best').textContent = best.score;
+        var avg = Math.round(entries.reduce(function(s,e){ return s + e.score; }, 0) / entries.length);
+        document.getElementById('stat-avg').textContent = avg;
+      } else {
+        document.getElementById('stat-best').textContent = '\u2014';
+        document.getElementById('stat-avg').textContent  = '\u2014';
+      }
+    }
+
+    // ── Milestones ────────────────────────────────────────────────────────────
+    function renderMilestones() {
+      var row = document.getElementById('milestones-row');
+      if (!row) return;
+      var badges = getMilestones();
+      if (!badges.length) { row.style.display = 'none'; return; }
+      row.style.display = '';
+      row.innerHTML = badges.map(function(b, i) {
+        return '<span class="milestone-badge ' + b.color + '" style="animation-delay:' + (i * 55) + 'ms">'
+          + b.icon + ' ' + esc(b.text) + '</span>';
+      }).join('');
+    }
+
+    // ── Chart ─────────────────────────────────────────────────────────────────
+    function renderChart() {
+      var chartEl = document.getElementById('score-chart');
+      var data = entries.slice().sort(function(a,b){ return a.date.localeCompare(b.date); }).slice(-12);
+
+      if (data.length < 2) {
+        chartEl.innerHTML = '<p class="chart-empty">Add two or more check-ins to see your progress chart.</p>';
+        return;
+      }
+
+      var W=640, H=180, pL=44, pR=18, pT=18, pB=38;
+      var pw = W-pL-pR, ph = H-pT-pB;
+      var n = data.length;
+
+      function xS(i) { return pL + (i/(n-1)) * pw; }
+      function yS(v) { return pT + ph - (v/100) * ph; }
+
+      var grid = [0,25,50,75,100].map(function(v) {
+        var y = yS(v);
+        return '<line x1="'+pL+'" y1="'+y+'" x2="'+(W-pR)+'" y2="'+y+'" stroke="#ece8e0" stroke-width="1"/>'
+          + '<text x="'+(pL-6)+'" y="'+(y+3.5)+'" text-anchor="end" font-size="9" fill="#999" font-family="Source Serif 4,Georgia,serif">'+v+'</text>';
+      }).join('');
+
+      var areaD = 'M'+xS(0)+','+yS(data[0].score)
+        + data.slice(1).map(function(d,i){ return ' L'+xS(i+1)+','+yS(d.score); }).join('')
+        + ' L'+xS(n-1)+','+(pT+ph)+' L'+pL+','+(pT+ph)+' Z';
+
+      var lineD = 'M'+data.map(function(d,i){ return xS(i)+' '+yS(d.score); }).join(' L');
+
+      var dots = data.map(function(d,i) {
+        var info = scoreInfo(d.score);
+        return '<circle cx="'+xS(i)+'" cy="'+yS(d.score)+'" r="4.5" fill="'+info.color+'" stroke="white" stroke-width="2">'
+          + '<title>'+fmtDateShort(d.date)+': '+d.score+'</title></circle>';
+      }).join('');
+
+      var xLabels = data.map(function(d,i) {
+        if (n > 8 && i % 2 !== 0) return '';
+        return '<text x="'+xS(i)+'" y="'+(H-6)+'" text-anchor="middle" font-size="8.5" fill="#999" font-family="Source Serif 4,Georgia,serif">'+fmtDateShort(d.date)+'</text>';
+      }).join('');
+
+      chartEl.innerHTML = '<svg viewBox="0 0 '+W+' '+H+'" width="100%" xmlns="http://www.w3.org/2000/svg" style="overflow:visible">'
+        + '<defs><linearGradient id="cg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="rgba(0,51,153,0.15)"/><stop offset="100%" stop-color="rgba(0,51,153,0)"/></linearGradient></defs>'
+        + grid
+        + '<path d="'+areaD+'" fill="url(#cg)"/>'
+        + '<path d="'+lineD+'" fill="none" stroke="var(--blue)" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>'
+        + dots + xLabels
+        + '</svg>';
+    }
+
+    // ── History ───────────────────────────────────────────────────────────────
+    function renderHistory() {
+      var list = document.getElementById('history-list');
+      var sorted = entries.slice().sort(function(a,b){ return b.date.localeCompare(a.date); });
+
+      if (!sorted.length) {
+        list.innerHTML = '<div class="empty-history"><span class="empty-icon">&#x1F4C5;</span>'
+          + '<div class="empty-title">No check-ins yet</div>'
+          + '<p class="empty-text">Submit your first weekly check-in above.</p></div>';
+        return;
+      }
+
+      list.innerHTML = sorted.map(function(entry, idx) {
+        var info = scoreInfo(entry.score);
+        var achieveChips = (entry.achievements||[]).map(function(a){
+          return '<span class="history-achieve-chip">'+esc(a)+'</span>';
+        }).join('');
+
+        var detailItems = [
+          { icon:'&#x1F60A;', val: entry.mood+'/10',             name:'Mood' },
+          { icon:'&#x1F634;', val: entry.sleep+'/10',            name:'Sleep' },
+          { icon:'&#x1F3C3;', val: entry.exercise+' sessions',   name:'Exercise' },
+          { icon:'&#x1F957;', val: entry.healthyEating+'/10',    name:'Eating' },
+          { icon:'&#x1F4DA;', val: entry.studyHours+'h',         name:'Study' },
+          { icon:'&#x26A1;',  val: entry.productivity+'/10',     name:'Productivity' },
+          { icon:'&#x1F465;', val: entry.social+'/10',           name:'Social' },
+        ].map(function(d){
+          return '<div class="history-detail-item">'
+            + '<span class="history-detail-icon">'+d.icon+'</span>'
+            + '<span class="history-detail-val">'+d.val+'</span>'
+            + '<span class="history-detail-name">'+d.name+'</span>'
+            + '</div>';
+        }).join('');
+
+        return '<div class="history-card" id="hc-'+idx+'">'
+          + '<div class="history-card-header" onclick="toggleHistory('+idx+')">'
+          + '<span class="history-score-badge" style="color:'+info.color+'">'+entry.score+'</span>'
+          + '<div><div class="history-week-date">Week ending '+fmtDate(entry.date)+'</div>'
+          + '<div class="history-week-label" style="color:'+info.color+'">'+info.label+'</div></div>'
+          + '<div class="history-mini-stats">'
+          + '<span class="history-mini-stat">&#x1F60A; '+entry.mood+'</span>'
+          + '<span class="history-mini-stat">&#x1F3C3; '+entry.exercise+'</span>'
+          + '<span class="history-mini-stat">&#x1F4DA; '+entry.studyHours+'h</span>'
+          + '</div>'
+          + '<button class="history-expand-btn" aria-label="Expand">&#9660;</button>'
+          + '</div>'
+          + '<div class="history-detail">'
+          + '<div class="history-detail-grid">'+detailItems+'</div>'
+          + (achieveChips ? '<div class="history-achievements"><span class="history-achievements-label">Achievements</span>'+achieveChips+'</div>' : '')
+          + (entry.notes ? '<div class="history-notes">'+esc(entry.notes)+'</div>' : '')
+          + '<button class="history-delete-btn" onclick="deleteEntry(\''+entry.date+'\')">&#x2715; Delete this entry</button>'
+          + '</div>'
+          + '</div>';
+      }).join('');
+    }
+
+    window.toggleHistory = function(idx) {
+      var card = document.getElementById('hc-'+idx);
+      if (card) card.classList.toggle('is-open');
+    };
+
+    window.deleteEntry = function(date) {
+      if (!confirm('Delete the check-in for the week ending ' + fmtDate(date) + '?')) return;
+      entries = entries.filter(function(e){ return e.date !== date; });
+      saveEntries();
+      renderAll();
+    };
+
+    // ── Submit ────────────────────────────────────────────────────────────────
+    function showFormForEdit() {
+      var existing = getThisWeekEntry();
+      if (existing) {
+        populateForm(existing);
+        editingExisting = true;
+        document.getElementById('btn-cancel-edit').style.display = '';
+      }
+      document.getElementById('form-card').style.display = '';
+      document.getElementById('btn-edit').style.display = 'none';
+    }
+
+    document.getElementById('btn-edit').addEventListener('click', showFormForEdit);
+
+    document.getElementById('btn-cancel-edit').addEventListener('click', function() {
+      editingExisting = false;
+      document.getElementById('btn-cancel-edit').style.display = 'none';
+      document.getElementById('form-card').style.display = 'none';
+      var existing = getThisWeekEntry();
+      if (existing) {
+        renderScoreCard(existing, false, false);
+        document.getElementById('btn-edit').style.display = '';
+      }
+    });
+
+    document.getElementById('btn-submit').addEventListener('click', function() {
+      var d = getCurrentFormValues();
+      d.date  = selectedSunday;
+      d.score = calculateScore(d);
+
+      // Check personal best before adding this week's entry
+      var prevScores = entries.filter(function(e){ return e.date !== d.date; }).map(function(e){ return e.score; });
+      var prevBest = prevScores.length ? Math.max.apply(null, prevScores) : -1;
+      var isPB = d.score > prevBest;
+
+      entries = entries.filter(function(e){ return e.date !== d.date; });
+      entries.unshift(d);
+      saveEntries();
+
+      editingExisting = false;
+      document.getElementById('btn-cancel-edit').style.display = 'none';
+      formAchievements = [];
+      renderAchieveList();
+      document.getElementById('f-notes').value = '';
+
+      // Only confetti for current week
+      if (selectedSunday === getThisSunday()) launchConfetti();
+
+      renderScoreCard(d, true, isPB);
+      renderStats();
+      renderChart();
+      renderHistory();
+      renderMilestones();
+
+      updateWeekNav();
+      document.getElementById('btn-edit').style.display = '';
+
+      // Scroll score into view on mobile
+      var scoreCol = document.getElementById('score-col');
+      if (scoreCol && window.innerWidth < 860) {
+        setTimeout(function() { scoreCol.scrollIntoView({ behavior:'smooth', block:'nearest' }); }, 120);
+      }
+    });
+
+    // ── Init & render ─────────────────────────────────────────────────────────
+    function renderAll() {
+      var existing = getThisWeekEntry();
+      renderScoreCard(existing, false, false);
+      renderStats();
+      renderChart();
+      renderHistory();
+      renderMilestones();
+      updateWeekNav();
+      if (existing) {
+        document.getElementById('btn-edit').style.display = '';
+      }
+    }
+
+    document.getElementById('js-date').textContent = new Date().toLocaleDateString('en-GB', {
+      weekday:'long', year:'numeric', month:'long', day:'numeric'
+    });
+
+    renderAll();
+
+  })();
+    (function () {
+      var headlines = ['World leaders gather for emergency climate summit in Geneva','Global markets steady as central banks signal rate pause','UN Security Council meets over escalating tensions in Middle East','European Union agrees new trade framework with South-East Asia','Scientists announce breakthrough in carbon capture technology','NATO allies pledge increased defence spending at Brussels meeting','IMF revises global growth forecast upward for 2026','Historic ceasefire agreement reached after months of negotiations','G7 nations commit to new framework on artificial intelligence governance','Record temperatures recorded across southern Europe this week','World Health Organisation warns of emerging respiratory virus strain','African Union summit focuses on infrastructure investment drive'];
+      var t = document.getElementById('js-ticker');
+      var mk = function(a){return a.map(function(x){return '<span style="color:#fff;font-family:\'Source Serif 4\',serif;font-size:0.78rem;font-weight:600;padding:0 2rem;">'+x+'</span><span class="ticker-sep">&#124;</span>';}).join('');};
+      t.innerHTML = mk(headlines)+mk(headlines);
+      requestAnimationFrame(function(){t.style.animationDuration=(t.scrollWidth/2/60)+'s';});
+    })();
+
+    // ── Dropdown nav ──
+    (function () {
+      var btns = document.querySelectorAll('.nav-drop-btn');
+      btns.forEach(function(btn) {
+        btn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          var menu = btn.nextElementSibling;
+          var isOpen = menu.style.display === 'flex';
+          document.querySelectorAll('.nav-drop-menu').forEach(function(m){ m.style.display = ''; });
+          if (!isOpen) menu.style.display = 'flex';
+        });
+      });
+      document.addEventListener('click', function() {
+        document.querySelectorAll('.nav-drop-menu').forEach(function(m){ m.style.display = ''; });
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+name: Daily News Update
+
+on:
+  schedule:
+    # 07:00 UTC every day (08:00 BST / 09:00 CEST)
+    - cron: '0 7 * * *'
+
+  # Allow manual trigger from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  update-news:
+    name: Fetch & rebuild news
+    runs-on: ubuntu-latest
+
+    steps:
+      # ── 1. Check out repo ─────────────────────────────────────────────
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # ── 2. Set up Node ────────────────────────────────────────────────
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      # ── 3. Install script dependencies ───────────────────────────────
+      #    Only installs rss-parser + axios (no full Next.js build needed here)
+      - name: Install dependencies
+        run: npm ci
+
+      # ── 4. Generate news.json ─────────────────────────────────────────
+      - name: Generate news content
+        run: node scripts/generate-news.js
+
+      # ── 5. Commit updated JSON if anything changed ────────────────────
+      - name: Commit news.json
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/news.json
+          # Only commit if the file actually changed
+          git diff --staged --quiet || git commit -m "chore: daily news update $(date -u +%Y-%m-%d)"
+
+      # ── 6. Push to main ───────────────────────────────────────────────
+      - name: Push changes
+        run: git push
+
+      # ── 7. Trigger Vercel redeploy ────────────────────────────────────
+      #    Add your Vercel deploy hook URL as a repository secret named
+      #    VERCEL_DEPLOY_HOOK in Settings → Secrets → Actions.
+      - name: Trigger Vercel deploy
+        if: ${{ secrets.VERCEL_DEPLOY_HOOK != '' }}
+        run: curl -s -X POST "${{ secrets.VERCEL_DEPLOY_HOOK }}"

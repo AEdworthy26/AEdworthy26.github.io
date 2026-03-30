@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Financial News — Personal Hub</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink:    #0d0d0d;
+      --paper:  #f4f0e6;
+      --rule:   #1a1a1a;
+      --muted:  #555;
+      --light:  #888;
+      --blue:   #003399;
+      --border: #d8d3c8;
+      --subtle: #ece8e0;
+      --gold:   #96751e;
+      --card-bg: #ffffff;
+      --shadow-sm: 0 1px 4px rgba(0,0,0,0.06);
+      --shadow-md: 0 4px 16px rgba(0,0,0,0.09);
+      --shadow-lg: 0 10px 32px rgba(0,0,0,0.13);
+      --radius: 6px;
+      /* Financial accent */
+      --accent: #1a4731;
+      --accent-mid: #2d6a4f;
+    }
+
+    body { background: var(--paper); color: var(--ink); font-family: 'Source Serif 4', Georgia, serif; min-height: 100vh; }
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── HEADER / NAV ── */
+    .meta-bar { max-width: 1200px; margin: 0 auto; padding: 1rem 1.5rem 0; }
+    .meta-bar-inner { display: flex; justify-content: space-between; align-items: center; font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); border-bottom: 1px solid var(--rule); padding-bottom: 0.4rem; margin-bottom: 0.6rem; }
+    .masthead-wrap { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; text-align: center; }
+    .masthead { font-family: 'Playfair Display', Georgia, serif; font-weight: 900; font-size: clamp(2.4rem, 5vw, 4.2rem); line-height: 1; letter-spacing: -0.01em; }
+    .masthead-sub { font-size: 0.75rem; font-style: italic; color: var(--muted); margin-top: 0.2rem; margin-bottom: 0.3rem; }
+    .rule-double { border: none; border-top: 3px double var(--rule); max-width: 1200px; margin: 0 auto; }
+    .nav-ribbon { background: linear-gradient(90deg, #4b5563 0%, #1f2937 100%); }
+    .nav-ribbon nav { max-width: 1600px; margin: 0 auto; padding: 0 2rem; display: flex; align-items: center; justify-content: center; gap: 0.3rem; }
+    .nav-ribbon nav a { color: rgba(255,255,255,0.88); font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; padding: 0.5rem 0.85rem; border-radius: 5px; transition: background 0.15s, color 0.15s; white-space: nowrap; }
+    .nav-ribbon nav a:hover { background: rgba(255,255,255,0.18); color: #fff; text-decoration: none; }
+    .nav-ribbon nav a.nav-home { color: #fff; font-weight: 700; margin-right: 0.4rem; padding-right: 1rem; border-right: 1px solid rgba(255,255,255,0.25); border-radius: 0; }
+    .nav-ribbon nav a.nav-active { background: rgba(255,255,255,0.18); color: #fff; }
+    .nav-ribbon nav .nav-spacer { flex: 1; height: 1px; background: rgba(255,255,255,0.25); margin: 0 0.5rem; }
+    .nav-dropdown { position: relative; display: flex; align-items: center; }
+    .nav-drop-btn { color: rgba(255,255,255,0.9); font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; padding: 0.5rem 0.95rem; border-radius: 5px; background: none; border: none; cursor: pointer; white-space: nowrap; display: flex; align-items: center; gap: 0.25rem; transition: background 0.15s; }
+    .nav-drop-btn:hover, .nav-dropdown:hover .nav-drop-btn { background: rgba(255,255,255,0.18); color: #fff; }
+    .nav-drop-btn.nav-active { background: rgba(255,255,255,0.18); color: #fff; }
+    .nav-caret { font-size: 0.55rem; opacity: 0.65; transition: transform 0.15s; line-height: 1; }
+    .nav-dropdown:hover .nav-caret { transform: rotate(180deg); }
+    .nav-dropdown:hover .nav-drop-menu { display: flex; }
+    .nav-drop-menu { position: absolute; top: 100%; left: 0; background: #1f2937; border-radius: 6px; min-width: 155px; display: none; flex-direction: column; z-index: 200; box-shadow: 0 6px 18px rgba(0,0,0,0.4); overflow: hidden; margin-top: 0; }
+    .nav-drop-menu a { color: rgba(255,255,255,0.85); font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 0.76rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; padding: 0.6rem 1.1rem; text-decoration: none; transition: background 0.12s; white-space: nowrap; border-radius: 0; display: block; }
+    .nav-drop-menu a:hover { background: rgba(255,255,255,0.15); color: #fff; }
+    .nav-divider { width: 1px; height: 1.1rem; background: rgba(255,255,255,0.35); margin: 0 0.6rem; flex-shrink: 0; align-self: center; }
+    .nav-drop-menu a + a { border-top: 1px solid rgba(255,255,255,0.07); }
+    .nav-drop-menu a.nav-active { background: rgba(255,255,255,0.15); color: #fff; }
+
+    @media (max-width: 800px) {
+      .nav-ribbon nav { flex-wrap: wrap; gap: 0; padding: 0.25rem 0.5rem; }
+      .nav-ribbon nav .nav-spacer { display: none; }
+      .nav-drop-menu { position: static; box-shadow: none; border-radius: 0; margin-top: 0; background: rgba(255,255,255,0.06); }
+      .nav-dropdown { flex-direction: column; align-items: flex-start; width: 100%; }
+      .nav-drop-menu { display: flex !important; }
+    }
+
+    /* ── PAGE ── */
+    .page-wrap { max-width: 960px; margin: 0 auto; padding: 0 1.5rem 5rem; }
+
+    .page-header { padding: 1.8rem 0 1.2rem; border-bottom: 3px double var(--rule); margin-bottom: 2.5rem; }
+    .page-header-meta { font-size: 0.65rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); font-weight: 700; margin-bottom: 0.45rem; }
+    .page-header h1 { font-family: 'Playfair Display', serif; font-weight: 900; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.1; margin-bottom: 0.5rem; }
+    .page-header .standfirst { font-size: 0.92rem; line-height: 1.65; color: var(--muted); max-width: 560px; }
+
+    .main-story { margin-bottom: 4rem; animation: fadeUp 0.5s cubic-bezier(0.22,1,0.36,1) both; }
+
+    .story-eyebrow { display: flex; align-items: center; gap: 0.9rem; margin-bottom: 1rem; }
+    .story-tag { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: #fff; background: var(--accent); padding: 0.25rem 0.65rem; }
+    .story-date { font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--light); }
+
+    .story-headline { font-family: 'Playfair Display', serif; font-weight: 900; font-size: clamp(1.8rem, 3.5vw, 2.8rem); line-height: 1.15; margin-bottom: 1.5rem; max-width: 820px; }
+
+    .hero-img-wrap { width: 100%; aspect-ratio: 16/7; overflow: hidden; border-radius: var(--radius); background: var(--accent); margin-bottom: 2rem; position: relative; }
+    .hero-img-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; transition: opacity 0.5s; }
+    .hero-img-wrap::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(26,71,49,0.35) 0%, transparent 55%); pointer-events: none; border-radius: var(--radius); }
+    .hero-placeholder { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 3.5rem; opacity: 0.18; }
+
+    .story-body { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
+    @media (min-width: 720px) { .story-body { grid-template-columns: 2fr 1fr; gap: 2.5rem; } }
+
+    .story-text p { font-size: 0.97rem; line-height: 1.85; margin-bottom: 1.1rem; }
+    .story-text p:first-child::first-letter { font-family: 'Playfair Display', serif; font-weight: 900; font-size: 3.4rem; line-height: 0.8; float: left; margin-right: 0.15em; margin-top: 0.18em; color: var(--accent); }
+
+    .story-aside { display: flex; flex-direction: column; gap: 1.5rem; }
+    .pull-quote { border-left: 4px solid var(--accent); padding: 0.25rem 0 0.25rem 1.2rem; }
+    .pull-quote p { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.05rem; line-height: 1.45; color: rgba(13,13,13,0.8); }
+    .story-source { font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--light); border-top: 1px solid var(--subtle); padding-top: 1rem; }
+    .story-source a { color: var(--accent-mid); }
+    .story-source a:hover { text-decoration: underline; }
+
+    .secondary-section { margin-top: 0.5rem; }
+    .section-heading { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.6rem; }
+    .section-heading h2 { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.1rem; white-space: nowrap; }
+    .section-rule { flex: 1; height: 1px; background: var(--subtle); }
+    .section-count { font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--light); white-space: nowrap; }
+
+    .news-grid { display: grid; grid-template-columns: 1fr; gap: 1.4rem; }
+    @media (min-width: 560px) { .news-grid { grid-template-columns: 1fr 1fr; } }
+    @media (min-width: 800px) { .news-grid { grid-template-columns: 1fr 1fr 1fr; } }
+
+    .news-card { background: var(--card-bg); border: 1px solid var(--subtle); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; transition: box-shadow 0.28s ease, transform 0.28s ease; will-change: transform; animation: fadeUp 0.45s cubic-bezier(0.22,1,0.36,1) both; }
+    .news-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-4px); }
+    .card-thumb { width: 100%; aspect-ratio: 16/9; overflow: hidden; background: var(--subtle); flex-shrink: 0; }
+    .card-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s ease; }
+    .news-card:hover .card-thumb img { transform: scale(1.04); }
+    .card-thumb-placeholder { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 2.2rem; opacity: 0.2; }
+    .card-body { padding: 1.1rem 1.2rem 1rem; display: flex; flex-direction: column; flex: 1; }
+    .card-category { font-size: 0.58rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.45rem; display: block; }
+    .card-title { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 0.97rem; line-height: 1.38; margin-bottom: 0.6rem; transition: color 0.2s; }
+    .news-card:hover .card-title { color: var(--accent-mid); }
+    .card-summary { font-size: 0.8rem; line-height: 1.7; color: var(--muted); flex: 1; }
+    .card-footer { display: flex; align-items: center; justify-content: space-between; margin-top: 0.85rem; padding-top: 0.65rem; border-top: 1px solid var(--subtle); }
+    .card-source { font-size: 0.6rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--light); }
+    .card-read-more { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent-mid); white-space: nowrap; }
+    .card-read-more:hover { text-decoration: underline; }
+
+    .last-updated { text-align: right; font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--light); border-top: 1px solid var(--border); padding-top: 1rem; margin-top: 3rem; }
+
+    .empty-state { text-align: center; padding: 5rem 2rem; border: 1px dashed var(--border); border-radius: var(--radius); background: rgba(255,255,255,0.5); }
+    .empty-icon { font-size: 2.8rem; opacity: 0.25; margin-bottom: 1rem; display: block; }
+    .empty-title { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .empty-text { font-size: 0.85rem; color: var(--muted); line-height: 1.65; }
+
+    .site-footer { text-align: center; font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--light); border-top: 1px solid var(--border); padding: 1.4rem 2rem; margin-top: 2rem; }
+
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+    @media (prefers-reduced-motion: reduce) { .main-story, .news-card { animation: none !important; opacity: 1 !important; } }
+
+    .ticker-wrap { background: #111; overflow: hidden; display: flex; align-items: stretch; height: 2.4rem; }
+    .ticker-label { background: #e8000d; color: #fff; font-family: 'Source Serif 4', serif; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; padding: 0 1.2rem; display: flex; align-items: center; white-space: nowrap; flex-shrink: 0; gap: 0.5rem; }
+    .ticker-label::before { content: ''; display: inline-block; width: 7px; height: 7px; background: #fff; border-radius: 50%; animation: pulse-dot 1.2s ease-in-out infinite; }
+    @keyframes pulse-dot { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.4; transform: scale(0.7); } }
+    .ticker-inner { overflow: hidden; flex: 1; display: flex; align-items: center; }
+    .ticker-track { display: flex; align-items: center; white-space: nowrap; will-change: transform; animation: ticker-scroll 40s linear infinite; }
+    .ticker-track:hover { animation-play-state: paused; cursor: default; }
+    .ticker-track a { color: #fff; font-family: 'Source Serif 4', serif; font-size: 0.78rem; font-weight: 600; padding: 0 2rem; text-decoration: none; transition: color 0.15s; }
+    .ticker-track a:hover { color: #e8000d; text-decoration: none; cursor: pointer; }
+    .ticker-track .ticker-sep { color: #e8000d; font-size: 1rem; font-weight: 700; flex-shrink: 0; line-height: 1; }
+    @keyframes ticker-scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+  </style>
+</head>
+<body>
+
+  <!-- ── NEWS TICKER ── -->
+  <div class="ticker-wrap">
+    <div class="ticker-label">Breaking News</div>
+    <div class="ticker-inner">
+      <div class="ticker-track" id="js-ticker">
+        <span style="color:rgba(255,255,255,0.5); font-size:0.78rem; padding:0 2rem; font-family:'Source Serif 4',serif;">Loading headlines&hellip;</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── HEADER ── -->
+  <div class="meta-bar">
+    <div class="meta-bar-inner">
+      <span id="js-date"><!-- date injected by JS --></span>
+      <span>Personal Edition &nbsp;&bull;&nbsp; Est. 2026</span>
+    </div>
+  </div>
+  <div class="masthead-wrap">
+    <div class="masthead">Personal Hub</div>
+    <div class="masthead-sub">Alfie Edworthy</div>
+  </div>
+  <hr class="rule-double">
+
+  <!-- ── NAV RIBBON ── -->
+  <div class="nav-ribbon">
+    <nav>
+      <a href="personal_hub.html" class="nav-home">&#8962; Home</a>
+      <a href="rics-study.html">RICS Study</a>
+      <div class="nav-dropdown">
+        <button class="nav-drop-btn nav-active">News <span class="nav-caret">▾</span></button>
+        <div class="nav-drop-menu">
+          <a href="world-news.html">World Affairs</a>
+          <a href="uk-politics-news.html">UK Politics</a>
+          <a href="us-politics-news.html">US Politics</a>
+          <a href="financial-news.html" class="nav-active">Financial</a>
+          <a href="tech-news.html">Technology</a>
+        </div>
+      </div>
+      <a href="curiosity.html">Curiosity Corner</a>
+      <a href="philosophy.html">Philosophy Corner</a>
+      <div class="nav-dropdown">
+        <button class="nav-drop-btn">Recommendations <span class="nav-caret">▾</span></button>
+        <div class="nav-drop-menu">
+          <a href="reads.html">Books</a>
+          <a href="films.html">Films</a>
+        </div>
+      </div>
+      <a href="recipes.html">Recipes</a>
+      <a href="exercise.html">Exercise</a>
+      <div class="nav-divider"></div>
+      <div class="nav-dropdown">
+        <button class="nav-drop-btn">Organisation <span class="nav-caret">▾</span></button>
+        <div class="nav-drop-menu">
+          <a href="todo-lists.html">To-Do Lists</a>
+          <a href="weekly-checkin.html">Weekly Check-In</a>
+          <a href="monthly-goals.html">Monthly Goals</a>
+          <a href="achievements.html">Achievements</a>
+          <a href="wishlist.html">Wishlist</a>
+        </div>
+      </div>
+      <a href="calendar.html">Calendar</a>
+    </nav>
+  </div>
+
+  <div class="page-wrap">
+    <div class="page-header">
+      <div class="page-header-meta">Financial</div>
+      <h1>Financial News</h1>
+      <p class="standfirst">Markets, economy, interest rates, and global finance — curated daily.</p>
+    </div>
+    <div id="news-output"></div>
+  </div>
+
+  <footer class="site-footer">Personal Hub &mdash; Alfie Edworthy &mdash; Private &amp; Confidential</footer>
+
+  <script src="financial-news-data.js"></script>
+  <script src="news-template.js"></script>
+  <script>
+    renderNewsPage({
+      data:     typeof FINANCIAL_NEWS !== 'undefined' ? FINANCIAL_NEWS : null,
+      dataFile: 'financial-news-data.js',
+      icon:     '📈'
+    });
+  </script>
+
+</body>
+</html>

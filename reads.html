@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Recommendations — Personal Hub</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      /* Light — shared with hub for header/nav */
+      --ink:    #0d0d0d;
+      --paper:  #f4f0e6;
+      --rule:   #1a1a1a;
+      --muted:  #555;
+      --light:  #888;
+      --blue:   #003399;
+
+      /* Dark — cinematic content area */
+      --dark-bg:      #0c0b09;
+      --dark-surface: #151310;
+      --dark-card:    #1c1915;
+      --dark-border:  rgba(210,200,180,0.09);
+      --dark-text:    #ede9df;
+      --dark-muted:   #7a766d;
+      --dark-dim:     #4a4640;
+      --gold:         #c8a348;
+      --gold-dim:     #7a6128;
+      --tomato:       #d44000;
+    }
+
+    body {
+      background: var(--dark-bg);
+      color: var(--dark-text);
+      font-family: 'Source Serif 4', Georgia, serif;
+      min-height: 100vh;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ────────────────── LIGHT HEADER / NAV ────────────────── */
+    .site-header {
+      background: var(--paper);
+      color: var(--ink);
+    }
+    .meta-bar-inner {
+      max-width: 1200px; margin: 0 auto;
+      padding: 0.9rem 1.5rem 0;
+      display: flex; justify-content: space-between; align-items: center;
+      font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--muted);
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 0.4rem;
+    }
+    .masthead-wrap { max-width: 1200px; margin: 0 auto; padding: 0.4rem 1.5rem 0; text-align: center; }
+    .masthead {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 900; font-size: clamp(2.4rem, 5vw, 4.2rem);
+      line-height: 1; letter-spacing: -0.01em; color: var(--ink);
+    }
+    .masthead-sub { font-size: 0.75rem; font-style: italic; color: var(--muted); margin: 0.2rem 0 0.3rem; }
+    .rule-double {
+      border: none; border-top: 3px double var(--rule);
+      max-width: 1200px; margin: 0 auto;
+    }
+
+    .nav-ribbon { background: linear-gradient(90deg, #4b5563 0%, #1f2937 100%); }
+    .nav-ribbon nav {
+      max-width: 1600px; margin: 0 auto; padding: 0 2rem;
+      display: flex; align-items: center; justify-content: center; gap: 0.3rem;
+    }
+    .nav-ribbon nav a {
+      color: rgba(255,255,255,0.9);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 0.72rem; font-weight: 500;
+      letter-spacing: 0.04em; text-transform: uppercase;
+      padding: 0.5rem 0.85rem; border-radius: 5px;
+      transition: background 0.15s, color 0.15s; white-space: nowrap;
+    }
+    .nav-ribbon nav a:hover { background: rgba(255,255,255,0.18); color: #fff; text-decoration: none; }
+    .nav-ribbon nav a.nav-home { color: #fff; font-weight: 700; margin-right: 0.4rem; padding-right: 1rem; border-right: 1px solid rgba(255,255,255,0.25); border-radius: 0; }
+    .nav-ribbon nav a.nav-active { background: rgba(255,255,255,0.18); color: #fff; }
+    .nav-ribbon nav .nav-spacer { flex: 1; height: 1px; background: rgba(255,255,255,0.25); margin: 0 0.5rem; }
+    /* Dropdown menus */
+    .nav-dropdown { position: relative; display: flex; align-items: center; }
+    .nav-drop-btn {
+      color: rgba(255,255,255,0.9);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 0.8rem; font-weight: 500; letter-spacing: 0.04em;
+      text-transform: uppercase; padding: 0.5rem 0.95rem; border-radius: 5px;
+      background: none; border: none; cursor: pointer; white-space: nowrap;
+      display: flex; align-items: center; gap: 0.25rem; transition: background 0.15s;
+    }
+    .nav-drop-btn:hover,
+    .nav-dropdown:hover .nav-drop-btn { background: rgba(255,255,255,0.18); color: #fff; }
+    .nav-drop-btn.nav-active { background: rgba(255,255,255,0.18); color: #fff; }
+    .nav-caret { font-size: 0.55rem; opacity: 0.65; transition: transform 0.15s; line-height: 1; }
+    .nav-dropdown:hover .nav-caret { transform: rotate(180deg); }
+    .nav-dropdown:hover .nav-drop-menu { display: flex; }
+    .nav-drop-menu {
+      position: absolute; top: 100%; left: 0;
+      background: #1f2937; border-radius: 6px;
+      min-width: 155px; display: none; flex-direction: column;
+      z-index: 200; box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+      overflow: hidden; margin-top: 0;
+    }
+    /* dropdown shown via JS */
+    .nav-drop-menu a {
+      color: rgba(255,255,255,0.85);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 0.76rem; font-weight: 500; letter-spacing: 0.04em;
+      text-transform: uppercase; padding: 0.6rem 1.1rem;
+      text-decoration: none; transition: background 0.12s; white-space: nowrap;
+      border-radius: 0; display: block;
+    }
+    .nav-drop-menu a:hover { background: rgba(255,255,255,0.15); color: #fff; }
+    .nav-divider { width: 1px; height: 1.1rem; background: rgba(255,255,255,0.35); margin: 0 0.6rem; flex-shrink: 0; align-self: center; }
+    .nav-drop-menu a + a { border-top: 1px solid rgba(255,255,255,0.07); }
+    .nav-drop-menu a.nav-active { background: rgba(255,255,255,0.15); color: #fff; }
+
+    @media (max-width: 800px) {
+      .nav-ribbon nav { flex-wrap: wrap; gap: 0; padding: 0.25rem 0.5rem; }
+      .nav-ribbon nav .nav-spacer { display: none; }
+      .nav-drop-menu { position: static; box-shadow: none; border-radius: 0; margin-top: 0; background: rgba(255,255,255,0.06); }
+      .nav-dropdown { flex-direction: column; align-items: flex-start; width: 100%; }
+      .nav-drop-menu { display: flex !important; }
+    }
+
+    /* ────────────────── PAGE HEADER ────────────────── */
+    .page-intro {
+      max-width: 1200px; margin: 0 auto;
+      padding: 3.5rem 2rem 2.8rem;
+      border-bottom: 1px solid var(--dark-border);
+      display: flex; justify-content: space-between; align-items: flex-end; gap: 2rem;
+    }
+    .page-intro-left {}
+    .page-eyebrow {
+      font-size: 0.62rem; font-weight: 700; letter-spacing: 0.2em;
+      text-transform: uppercase; color: var(--gold);
+      display: block; margin-bottom: 0.7rem;
+    }
+    .page-title {
+      font-family: 'Playfair Display', serif;
+      font-weight: 900; font-size: clamp(2.6rem, 5vw, 4rem);
+      line-height: 1.05; letter-spacing: -0.02em;
+      color: var(--dark-text);
+    }
+    .page-title em { font-style: italic; color: var(--gold); }
+    .page-standfirst {
+      margin-top: 0.9rem;
+      font-size: 0.92rem; line-height: 1.7;
+      color: var(--dark-muted); max-width: 480px;
+    }
+    .page-intro-right {
+      text-align: right; flex-shrink: 0;
+    }
+    .page-date {
+      font-size: 0.68rem; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--dark-dim);
+    }
+    .rec-count {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem; font-weight: 900; line-height: 1;
+      color: var(--dark-border);
+      display: block; margin-top: 0.3rem;
+    }
+
+    /* ────────────────── FEATURE SECTIONS ────────────────── */
+    .rec-feature {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 72vh;
+      border-bottom: 1px solid var(--dark-border);
+    }
+
+    /* Book: image left — info right */
+    /* Film: info left — image right (reversed via order) */
+    .rec-feature.rec-film .rec-image  { order: 2; }
+    .rec-feature.rec-film .rec-body   { order: 1; }
+
+    /* ── Image panel ── */
+    .rec-image {
+      position: relative;
+      overflow: hidden;
+      background: #0a0908;
+    }
+    .rec-cover-wrap {
+      position: absolute; inset: 0;
+      display: flex; align-items: center; justify-content: center;
+      transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .rec-feature:hover .rec-cover-wrap { transform: scale(1.03); }
+
+    .rec-cover-svg { width: 55%; max-width: 280px; display: block; }
+
+    /* Subtle vignette over image */
+    .rec-image::after {
+      content: ''; position: absolute; inset: 0; pointer-events: none;
+      background: radial-gradient(ellipse at center, transparent 40%, rgba(0,0,0,0.55) 100%);
+    }
+
+    /* ── Info panel ── */
+    .rec-body {
+      background: var(--dark-card);
+      padding: 3.5rem 3rem 3rem;
+      display: flex; flex-direction: column; justify-content: center;
+      gap: 1.1rem;
+      border-right: 1px solid var(--dark-border);
+    }
+    .rec-feature.rec-film .rec-body {
+      border-right: 1px solid var(--dark-border);
+    }
+
+    .rec-type-tag {
+      display: inline-flex; align-items: center; gap: 0.45rem;
+      font-size: 0.6rem; font-weight: 700; letter-spacing: 0.2em;
+      text-transform: uppercase;
+      padding: 0.28rem 0.7rem;
+      border: 1px solid var(--gold-dim);
+      border-radius: 2px;
+      color: var(--gold);
+      width: fit-content;
+    }
+    .rec-type-tag::before {
+      content: '';
+      width: 5px; height: 5px; border-radius: 50%;
+      background: var(--gold);
+    }
+    .rec-type-tag.film-tag {
+      border-color: rgba(255,255,255,0.15);
+      color: rgba(255,255,255,0.55);
+    }
+    .rec-type-tag.film-tag::before { background: rgba(255,255,255,0.4); }
+
+    .rec-title {
+      font-family: 'Playfair Display', serif;
+      font-weight: 900;
+      font-size: clamp(1.7rem, 2.8vw, 2.5rem);
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+      color: var(--dark-text);
+    }
+
+    .rec-author {
+      font-size: 0.78rem; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--dark-muted);
+      font-weight: 600;
+    }
+
+    .rec-genre-row { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .rec-genre {
+      font-size: 0.65rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 0.2rem 0.6rem;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid var(--dark-border);
+      border-radius: 2px;
+      color: var(--dark-muted);
+    }
+
+    .rec-desc {
+      font-size: 0.88rem; line-height: 1.8;
+      color: rgba(237,233,223,0.72);
+      max-width: 46ch;
+    }
+
+    .rec-meta-block { display: flex; flex-direction: column; gap: 0.55rem; }
+
+    .rec-cast-label {
+      font-size: 0.6rem; font-weight: 700; letter-spacing: 0.16em;
+      text-transform: uppercase; color: var(--dark-dim);
+    }
+    .rec-cast-list {
+      font-size: 0.82rem; color: var(--dark-muted); line-height: 1.6;
+    }
+
+    /* ── Rating ── */
+    .rec-rating {
+      display: flex; align-items: baseline; gap: 0.5rem;
+      padding-top: 0.8rem;
+      border-top: 1px solid var(--dark-border);
+      margin-top: auto;
+    }
+    .rating-score {
+      font-family: 'Playfair Display', serif;
+      font-weight: 900; font-size: 2rem; line-height: 1;
+    }
+    .rating-score.gold { color: var(--gold); }
+    .rating-score.tomato { color: var(--tomato); }
+
+    .rating-detail { display: flex; flex-direction: column; gap: 0.1rem; }
+    .rating-label {
+      font-size: 0.6rem; font-weight: 700; letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+    .rating-label.gold-label { color: var(--gold-dim); }
+    .rating-label.tomato-label { color: var(--tomato); opacity: 0.7; }
+
+    .rating-source {
+      font-size: 0.65rem; color: var(--dark-dim); letter-spacing: 0.06em;
+    }
+
+    .star-row { display: flex; gap: 0.15rem; align-items: center; }
+    .star { font-size: 0.85rem; color: var(--gold); }
+    .star.empty { color: var(--dark-dim); }
+
+    /* ────────────────── FOOTER ────────────────── */
+    .site-footer {
+      text-align: center;
+      font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--dark-dim);
+      border-top: 1px solid var(--dark-border);
+      padding: 1.5rem 2rem;
+    }
+
+    /* ────────────────── RESPONSIVE ────────────────── */
+    @media (max-width: 900px) {
+      .rec-feature { grid-template-columns: 1fr; min-height: auto; }
+      .rec-feature.rec-film .rec-image { order: 1; }
+      .rec-feature.rec-film .rec-body  { order: 2; }
+      .rec-image { min-height: 55vw; }
+      .rec-body { padding: 2.2rem 1.6rem; border-left: none !important; border-right: none !important; border-top: 1px solid var(--dark-border); }
+      .rec-feature.rec-film .rec-body { border-top: 1px solid var(--dark-border); }
+      .page-intro { flex-direction: column; align-items: flex-start; padding: 2.5rem 1.5rem 2rem; }
+      .page-intro-right { text-align: left; }
+    }
+
+    @media (max-width: 600px) {
+      .rec-body { padding: 1.8rem 1.2rem; }
+      .rec-title { font-size: 1.7rem; }
+    }
+
+    /* ────────────────── ANIMATIONS ────────────────── */
+    @keyframes fadeSlideUp {
+      from { opacity: 0; transform: translateY(32px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes introReveal {
+      from { opacity: 0; transform: translateY(14px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Page intro staggered reveal */
+    .page-eyebrow     { animation: introReveal 0.65s cubic-bezier(0.22,1,0.36,1) 0.08s both; }
+    .page-title       { animation: introReveal 0.75s cubic-bezier(0.22,1,0.36,1) 0.22s both; }
+    .page-standfirst  { animation: introReveal 0.75s cubic-bezier(0.22,1,0.36,1) 0.36s both; }
+    .page-intro-right { animation: introReveal 0.65s cubic-bezier(0.22,1,0.36,1) 0.26s both; }
+
+    /* Section fade-slide-up on load */
+    .rec-feature { opacity: 0; }
+    .rec-feature.is-visible {
+      animation: fadeSlideUp 0.85s cubic-bezier(0.22,1,0.36,1) forwards;
+    }
+
+    /* ────────────────── SECTION ACCENTS ────────────────── */
+    .rec-feature.rec-book { border-top: 2px solid rgba(200,163,72,0.22); }
+    .rec-feature.rec-film { border-top: 2px solid rgba(212,64,0,0.18); }
+
+    /* ────────────────── ENHANCED IMAGE OVERLAYS ────────────────── */
+    /* Directional fade toward text panel */
+    .rec-image::before {
+      content: ''; position: absolute; inset: 0;
+      pointer-events: none; z-index: 2;
+    }
+    .rec-book .rec-image::before {
+      background: linear-gradient(to right, transparent 28%, rgba(10,9,8,0.82) 100%);
+    }
+    .rec-film .rec-image::before {
+      background: linear-gradient(to left, transparent 28%, rgba(10,9,8,0.82) 100%);
+    }
+    /* Strengthen existing radial vignette */
+    .rec-image::after {
+      background: radial-gradient(ellipse at center, transparent 28%, rgba(0,0,0,0.7) 100%);
+      z-index: 3;
+    }
+
+    /* ────────────────── AMBIENT GLOW ────────────────── */
+    .rec-cover-wrap::before {
+      content: '';
+      position: absolute; top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 55%; padding-bottom: 55%;
+      border-radius: 50%;
+      filter: blur(60px);
+      opacity: 0.22;
+      pointer-events: none; z-index: 0;
+    }
+    .rec-book .rec-cover-wrap::before { background: var(--gold); }
+    .rec-film .rec-cover-wrap::before { background: var(--tomato); }
+    .rec-cover-svg { position: relative; z-index: 1; }
+
+    /* ────────────────── ENHANCED HOVER ────────────────── */
+    .rec-feature:hover .rec-cover-wrap { transform: scale(1.05); }
+    .rec-body { transition: background 0.45s ease; }
+    .rec-book:hover .rec-body { background: #201e18; }
+    .rec-film:hover .rec-body { background: #1e1814; }
+
+    /* ────────────────── STAR VISUAL ────────────────── */
+    .star-visual {
+      position: relative; display: inline-block;
+      font-size: 1rem; letter-spacing: 4px; line-height: 1;
+      user-select: none;
+    }
+    .stars-bg   { color: var(--dark-dim); }
+    .stars-fill {
+      position: absolute; top: 0; left: 0;
+      overflow: hidden; white-space: nowrap;
+      color: var(--gold);
+      width: 0%;
+      transition: width 0.95s cubic-bezier(0.22,1,0.36,1) 0.5s;
+    }
+
+    /* ────────────────── RT PROGRESS BAR ────────────────── */
+    .rt-bar-track {
+      height: 2px; background: rgba(255,255,255,0.1);
+      border-radius: 2px; overflow: hidden;
+      width: 100%; max-width: 150px;
+    }
+    .rt-bar-fill {
+      height: 100%; border-radius: 2px;
+      background: linear-gradient(to right, #8b2000, var(--tomato));
+      width: 0%;
+      transition: width 1.05s cubic-bezier(0.22,1,0.36,1) 0.55s;
+    }
+
+    /* ────────────────── REDUCED MOTION ────────────────── */
+    @media (prefers-reduced-motion: reduce) {
+      .rec-feature,
+      .page-eyebrow, .page-title, .page-standfirst, .page-intro-right {
+        animation: none !important; opacity: 1 !important;
+        transform: none !important;
+      }
+      .stars-fill, .rt-bar-fill { transition: none !important; }
+    }
+    /* ── NEWS TICKER ── */
+    .ticker-wrap { background: #111; overflow: hidden; display: flex; align-items: stretch; height: 2.4rem; }
+    .ticker-label { background: #e8000d; color: #fff; font-family: 'Source Serif 4', serif; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; padding: 0 1.2rem; display: flex; align-items: center; white-space: nowrap; flex-shrink: 0; gap: 0.5rem; }
+    .ticker-label::before { content: ''; display: inline-block; width: 7px; height: 7px; background: #fff; border-radius: 50%; animation: pulse-dot 1.2s ease-in-out infinite; }
+    @keyframes pulse-dot { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.4; transform: scale(0.7); } }
+    .ticker-inner { overflow: hidden; flex: 1; display: flex; align-items: center; }
+    .ticker-track { display: flex; align-items: center; white-space: nowrap; will-change: transform; animation: ticker-scroll 40s linear infinite; }
+    .ticker-track:hover { animation-play-state: paused; cursor: default; }
+    .ticker-track a { color: #fff; font-family: 'Source Serif 4', serif; font-size: 0.78rem; font-weight: 600; padding: 0 2rem; text-decoration: none; transition: color 0.15s; }
+    .ticker-track a:hover { color: #e8000d; text-decoration: none; cursor: pointer; }
+    .ticker-track .ticker-sep { color: #e8000d; font-size: 1rem; font-weight: 700; flex-shrink: 0; line-height: 1; }
+    @keyframes ticker-scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+  </style>
+</head>
+<body>
+
+  <!-- ── NEWS TICKER ── -->
+  <div class="ticker-wrap">
+    <div class="ticker-label">Breaking News</div>
+    <div class="ticker-inner">
+      <div class="ticker-track" id="js-ticker">
+        <span style="color:rgba(255,255,255,0.5); font-size:0.78rem; padding:0 2rem; font-family:'Source Serif 4',serif;">Loading headlines&hellip;</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── HEADER ── -->
+  <div class="site-header">
+    <div class="meta-bar-inner">
+      <span id="js-date"><!-- date injected by JS --></span>
+      <span>Personal Edition &nbsp;&bull;&nbsp; Est. 2026</span>
+    </div>
+    <div class="masthead-wrap">
+      <div class="masthead">Personal Hub</div>
+      <div class="masthead-sub">Alfie Edworthy</div>
+    </div>
+    <hr class="rule-double">
+  </div>
+
+  <!-- ── NAV RIBBON ── -->
+  <div class="nav-ribbon">
+    <nav>
+      <a href="personal_hub.html" class="nav-home">&#8962; Home</a>
+      <a href="rics-study.html">RICS Study</a>
+      <div class="nav-dropdown">
+        <button class="nav-drop-btn">News <span class="nav-caret">▾</span></button>
+        <div class="nav-drop-menu">
+          <a href="world-news.html">World Affairs</a>
+          <a href="uk-politics-news.html">UK Politics</a>
+          <a href="us-politics-news.html">US Politics</a>
+          <a href="financial-news.html">Financial</a>
+          <a href="tech-news.html">Technology</a>
+        </div>
+      </div>
+      <a href="curiosity.html">Curiosity Corner</a>
+      <a href="philosophy.html">Philosophy Corner</a>
+      <div class="nav-dropdown">
+        <button class="nav-drop-btn nav-active">Recommendations <span class="nav-caret">▾</span></button>
+        <div class="nav-drop-menu">
+          <a href="reads.html" class="nav-active">Books</a>
+          <a href="films.html">Films</a>
+        </div>
+      </div>
+      <a href="recipes.html">Recipes</a>
+      <a href="exercise.html">Exercise</a>
+      <div class="nav-divider"></div>
+      <div class="nav-dropdown">
+        <button class="nav-drop-btn">Organisation <span class="nav-caret">▾</span></button>
+        <div class="nav-drop-menu">
+          <a href="todo-lists.html">To-Do Lists</a>
+          <a href="weekly-checkin.html">Weekly Check-In</a>
+          <a href="monthly-goals.html">Monthly Goals</a>
+          <a href="achievements.html">Achievements</a>
+          <a href="wishlist.html">Wishlist</a>
+        </div>
+      </div>
+      <a href="calendar.html">Calendar</a>
+    </nav>
+  </div>
+
+  <!-- Page intro -->
+  <div class="page-intro">
+    <div class="page-intro-left">
+      <span class="page-eyebrow">Daily Recommendation</span>
+      <h1 class="page-title">Today's <em>Book</em></h1>
+      <p class="page-standfirst">A curated book recommendation, refreshed every day.</p>
+    </div>
+    <div class="page-intro-right">
+      <div class="page-date" id="js-date-2"></div>
+      <span class="rec-count">01</span>
+    </div>
+  </div>
+
+  <!-- populated by JS -->
+  <div id="js-book"></div>
+
+
+  <!-- ── FOOTER ── -->
+  <footer class="site-footer">
+    Personal Hub &mdash; Alfie Edworthy &mdash; Private &amp; Confidential
+  </footer>
+
+  <script>
+  // ── Datasets ──────────────────────────────────────────────────
+
+  const BOOKS = [
+    { title: 'A Gentleman in Moscow', author: 'Amor Towles', desc: 'In 1922 a Bolshevik tribunal sentences Count Alexander Rostov to indefinite house arrest inside Moscow\'s Hotel Metropol. Confined but never diminished, he builds a life of remarkable richness. A novel about dignity, friendship, and the quietly heroic act of choosing how to live.', genres: ['Historical Fiction', 'Literary', 'Russia'], rating: 4.7, ratingSource: 'Amazon', ratingCount: '68,000+' },
+    { title: 'Sapiens', author: 'Yuval Noah Harari', desc: 'A sweeping history of humankind from the Stone Age to the Silicon Age. Harari argues that Homo sapiens conquered the world not through strength but through the unique ability to believe in shared fictions — money, nations, gods. Provocative, readable, and endlessly debated.', genres: ['History', 'Anthropology', 'Science'], rating: 4.5, ratingSource: 'Goodreads', ratingCount: '700,000+' },
+    { title: 'The Master and Margarita', author: 'Mikhail Bulgakov', desc: 'The Devil visits Soviet Moscow with his retinue of bizarre attendants, causing chaos among the literary establishment. Interwoven is a version of Pontius Pilate\'s encounter with Jesus. Bulgakov\'s satirical masterpiece was suppressed for decades — and is all the more extraordinary for it.', genres: ['Satire', 'Magic Realism', 'Soviet'], rating: 4.3, ratingSource: 'Goodreads', ratingCount: '200,000+' },
+    { title: 'East of Eden', author: 'John Steinbeck', desc: 'Steinbeck\'s most ambitious novel traces two families across the Salinas Valley over several generations, weaving the story of Cain and Abel into the fabric of American life. A meditation on good, evil, and whether we are free to choose between them. The word at its heart is "timshel" — thou mayest.', genres: ['American Literature', 'Family Saga', 'Epic'], rating: 4.6, ratingSource: 'Goodreads', ratingCount: '430,000+' },
+    { title: 'The Name of the Rose', author: 'Umberto Eco', desc: 'A Franciscan friar and his novice arrive at a medieval Italian abbey to find it gripped by a series of mysterious deaths. What follows is part murder mystery, part philosophical treatise, part love letter to books. Eco\'s debut novel is labyrinthine, erudite, and utterly gripping.', genres: ['Historical Mystery', 'Medieval', 'Intellectual'], rating: 4.2, ratingSource: 'Goodreads', ratingCount: '160,000+' },
+    { title: 'Wolf Hall', author: 'Hilary Mantel', desc: 'Thomas Cromwell rises from the son of a blacksmith to become the most powerful man in Henry VIII\'s court. Mantel\'s prose — intimate, present-tense, extraordinarily alive — makes one of history\'s most brutal periods feel immediate. The first of a Booker-winning trilogy.', genres: ['Historical Fiction', 'Tudor', 'Politics'], rating: 4.2, ratingSource: 'Goodreads', ratingCount: '150,000+' },
+    { title: 'The Leopard', author: 'Giuseppe di Lampedusa', desc: 'As Garibaldi\'s forces sweep through Sicily in 1860, ageing aristocrat Prince Fabrizio watches the world he knew dissolve. A novel of extraordinary melancholy and beauty — and the source of one of literature\'s great lines: "For things to remain the same, everything must change."', genres: ['Italian Literature', 'Historical', 'Aristocracy'], rating: 4.1, ratingSource: 'Goodreads', ratingCount: '45,000+' },
+    { title: 'The Power Broker', author: 'Robert A. Caro', desc: 'The definitive biography of Robert Moses, the unelected official who shaped New York City for 44 years. Through Moses, Caro examines how power is accumulated and wielded in America. At 1,300 pages it demands commitment — and repays it with one of the great studies of ambition ever written.', genres: ['Biography', 'Politics', 'New York'], rating: 4.5, ratingSource: 'Goodreads', ratingCount: '95,000+' },
+    { title: 'Blood Meridian', author: 'Cormac McCarthy', desc: 'A teenager joins a band of scalp hunters roaming the Texas-Mexico border in the 1850s. McCarthy\'s most uncompromising work is a vision of history as an endless cycle of violence. The Judge — one of literature\'s most terrifying villains — haunts every page.', genres: ['Western', 'Literary Fiction', 'Dark'], rating: 4.1, ratingSource: 'Goodreads', ratingCount: '190,000+' },
+    { title: 'Guns, Germs, and Steel', author: 'Jared Diamond', desc: 'Why did some civilisations conquer others? Diamond\'s Pulitzer-winning answer lies not in racial superiority but in geography: the crops, animals, and diseases available to different peoples. A bold, controversial, and hugely influential theory of why the world looks as it does today.', genres: ['History', 'Geography', 'Science'], rating: 4.1, ratingSource: 'Goodreads', ratingCount: '250,000+' },
+    { title: 'The Remains of the Day', author: 'Kazuo Ishiguro', desc: 'Stevens, an ageing butler, takes a motoring trip across England and reflects on a lifetime of devoted service to Darlington Hall. Ishiguro\'s novel is about repression, missed opportunities, and the stories we tell ourselves about duty and dignity. Devastating in its quietness.', genres: ['Literary Fiction', 'British', 'Memory'], rating: 4.2, ratingSource: 'Goodreads', ratingCount: '210,000+' },
+    { title: 'The Great Game', author: 'Peter Hopkirk', desc: 'The thrilling story of the nineteenth-century struggle between Britain and Russia for supremacy in Central Asia — a contest of spies, explorers, and soldiers across some of the world\'s most forbidding terrain. Hopkirk brings history to life like a thriller writer.', genres: ['History', 'Espionage', 'Central Asia'], rating: 4.3, ratingSource: 'Goodreads', ratingCount: '25,000+' },
+    { title: 'The Pillars of the Earth', author: 'Ken Follett', desc: 'Twelfth-century England: a prior dreams of building the greatest cathedral in the world. Around that ambition swirls a story of war, politics, love, and betrayal. Follett creates a compulsively readable epic that makes the Middle Ages feel viscerally real.', genres: ['Historical Fiction', 'Medieval', 'Epic'], rating: 4.3, ratingSource: 'Goodreads', ratingCount: '340,000+' },
+    { title: 'The Count of Monte Cristo', author: 'Alexandre Dumas', desc: 'Wrongly imprisoned, Edmond Dant\u00e8s escapes after years in the Ch\u00e2teau d\'If and returns as the mysterious Count of Monte Cristo to exact meticulous revenge on those who betrayed him. Dumas\'s great novel is an inexhaustible engine of plot, passion, and justice.', genres: ['Adventure', 'Revenge', 'French Classic'], rating: 4.5, ratingSource: 'Goodreads', ratingCount: '380,000+' },
+    { title: 'Homage to Catalonia', author: 'George Orwell', desc: 'Orwell went to Spain in 1936 to fight fascism and came back with a clear-eyed account of revolutionary chaos, factional betrayal, and the gap between political idealism and political reality. Essential reading for anyone trying to understand how ideologies corrode in practice.', genres: ['Memoir', 'Politics', 'Spanish Civil War'], rating: 4.2, ratingSource: 'Goodreads', ratingCount: '60,000+' },
+    { title: 'The Silk Roads', author: 'Peter Frankopan', desc: 'A radical retelling of world history that places Central Asia and the ancient trade routes at the centre of the story rather than the margins. Frankopan argues that the exchange of goods, ideas, and peoples along the Silk Roads shaped civilisation more profoundly than any Western narrative admits.', genres: ['History', 'Global', 'Trade'], rating: 4.1, ratingSource: 'Goodreads', ratingCount: '75,000+' },
+    { title: 'The Iliad', author: 'Homer', desc: 'The oldest great poem in the Western tradition: the tenth year of the siege of Troy, the wrath of Achilles, and the death of Hector. Homer\'s epic is a meditation on glory, mortality, and the terrible cost of war — as fresh and devastating as it was three thousand years ago.', genres: ['Ancient Epic', 'Greek', 'War'], rating: 4.1, ratingSource: 'Goodreads', ratingCount: '250,000+' },
+    { title: 'Meditations', author: 'Marcus Aurelius', desc: 'The private journal of a Roman emperor — notes to himself on how to live well, govern justly, and face death without flinching. Written in the second century, it remains the most accessible and honest work of Stoic philosophy ever produced.', genres: ['Philosophy', 'Stoicism', 'Ancient Rome'], rating: 4.4, ratingSource: 'Goodreads', ratingCount: '420,000+' },
+    { title: 'Shogun', author: 'James Clavell', desc: 'An English navigator is shipwrecked in feudal Japan at the dawn of the seventeenth century and finds himself caught in a war between rival lords. Clavell\'s epic is a masterclass in world-building — few novels have brought another culture so richly and convincingly to life.', genres: ['Historical Fiction', 'Japan', 'Epic'], rating: 4.4, ratingSource: 'Goodreads', ratingCount: '130,000+' },
+    { title: 'A Short History of Nearly Everything', author: 'Bill Bryson', desc: 'Bryson set out to understand the big scientific questions — the age of the universe, the size of an atom, the history of life — and wrote the definitive guide for intelligent non-scientists. Funny, humble, and radiating wonder on every page.', genres: ['Science', 'Popular Non-Fiction', 'History'], rating: 4.4, ratingSource: 'Goodreads', ratingCount: '380,000+' },
+    { title: 'The Rise and Fall of the Third Reich', author: 'William L. Shirer', desc: 'Shirer witnessed the rise of Hitler as a journalist in Germany and drew on that experience and the captured Nazi archives to write the definitive one-volume history of the Third Reich. Monumental in scope and still unsurpassed as a comprehensive account of how the catastrophe unfolded.', genres: ['History', 'World War II', 'Politics'], rating: 4.5, ratingSource: 'Goodreads', ratingCount: '80,000+' },
+    { title: 'Team of Rivals', author: 'Doris Kearns Goodwin', desc: 'How Abraham Lincoln assembled his Cabinet from the men who had competed against him for the Republican nomination — and how he transformed political rivals into a team that saved the Union. A masterclass in leadership, empathy, and the pragmatic exercise of power.', genres: ['Biography', 'American History', 'Politics'], rating: 4.3, ratingSource: 'Goodreads', ratingCount: '120,000+' },
+    { title: 'The Stranger', author: 'Albert Camus', desc: 'Meursault kills an Arab on a beach in colonial Algeria — seemingly without motive or remorse. Camus\'s short, perfect novel is an examination of what happens when a man refuses to perform the emotional rituals society demands. The founding text of literary Absurdism.', genres: ['Existentialism', 'French Literature', 'Philosophy'], rating: 3.9, ratingSource: 'Goodreads', ratingCount: '490,000+' },
+    { title: 'Lawrence in Arabia', author: 'Scott Anderson', desc: 'The extraordinary story of T.E. Lawrence and three other agents who operated in the Middle East during the First World War. Anderson reconstructs the moment when modern borders were drawn and the region\'s fate was sealed, with consequences still unfolding today.', genres: ['History', 'Biography', 'Middle East'], rating: 4.3, ratingSource: 'Goodreads', ratingCount: '20,000+' },
+    { title: 'The Making of the English Working Class', author: 'E.P. Thompson', desc: 'Thompson\'s landmark work rescued the weavers, cobblers, and artisans of late eighteenth-century England from historical obscurity. By insisting that class is something people make as they live and work, he transformed how historians think about society.', genres: ['History', 'Social History', 'Britain'], rating: 4.2, ratingSource: 'Goodreads', ratingCount: '8,000+' },
+    { title: 'The Diary of a Young Girl', author: 'Anne Frank', desc: 'Anne Frank kept this diary while her family hid from the Nazis in a concealed apartment in Amsterdam. Her voice — witty, angry, hopeful, observant — is one of the most remarkable in all of literature, and the most humane document to emerge from the Holocaust.', genres: ['Memoir', 'World War II', 'History'], rating: 4.2, ratingSource: 'Goodreads', ratingCount: '570,000+' },
+    { title: 'The Histories', author: 'Herodotus', desc: 'The first work of history in the Western tradition: Herodotus investigates the origins of the Persian Wars, ranging across Egypt, Persia, Scythia, and Greece. His instinct to ask why rather than simply record what makes him not just the father of history but the inventor of curiosity itself.', genres: ['Ancient History', 'Greek', 'Classic'], rating: 3.9, ratingSource: 'Goodreads', ratingCount: '40,000+' },
+    { title: 'Midnight in the Garden of Good and Evil', author: 'John Berendt', desc: 'A New York journalist spends time in Savannah, Georgia, and becomes caught up in the trial of a wealthy antiques dealer accused of murder. Part true crime, part portrait of a city unlike anywhere else in America — eccentric, beautiful, and profoundly Southern.', genres: ['True Crime', 'Narrative Non-Fiction', 'American South'], rating: 4.0, ratingSource: 'Goodreads', ratingCount: '130,000+' },
+    { title: 'The Warden', author: 'Anthony Trollope', desc: 'Septimus Harding runs a charitable institution in Barchester — a comfortable sinecure until a reformer decides it is corrupt. Trollope\'s first Barchester novel is small, sympathetic, and unusually honest: the reformers are right, and yet Mr Harding\'s suffering is real. A study in institutional conscience.', genres: ['Victorian Fiction', 'Satire', 'British'], rating: 3.8, ratingSource: 'Goodreads', ratingCount: '12,000+' },
+    { title: 'Master and Commander', author: 'Patrick O\'Brian', desc: 'The first volume of O\'Brian\'s twenty-novel Aubrey-Maturin series introduces Jack Aubrey, a brash naval captain, and Stephen Maturin, his surgeon and intelligence agent. Their friendship is one of the great partnerships in fiction — historical fiction at its most richly detailed and deeply human.', genres: ['Historical Fiction', 'Naval', 'Adventure'], rating: 4.2, ratingSource: 'Goodreads', ratingCount: '90,000+' },
+  ];
+
+  const FILMS = [
+    { title: 'No Country for Old Men', director: 'Joel & Ethan Coen', year: 2007, desc: 'When a Texas hunter stumbles upon the aftermath of a drug deal gone wrong and takes the money, he sets in motion a chain of events no one can outrun. The Coen Brothers adapt Cormac McCarthy\'s novel with merciless precision: no score, no sentimentality, just vast landscape and the terrifying calm of Anton Chigurh.', genres: ['Neo-Western', 'Crime', 'Thriller'], cast: ['Tommy Lee Jones', 'Javier Bardem', 'Josh Brolin', 'Kelly Macdonald'], rating: 94, ratingSource: 'Rotten Tomatoes', ratingExtra: '4 Academy Awards' },
+    { title: 'There Will Be Blood', director: 'Paul Thomas Anderson', year: 2007, desc: 'Daniel Plainview, a silver miner turned oilman, tears through early twentieth-century California with ruthless ambition. Daniel Day-Lewis\'s performance is a force of nature. Anderson\'s film is an origin myth of American capitalism — the story of what this country chose to worship and what it cost.', genres: ['Drama', 'Period', 'American Epic'], cast: ['Daniel Day-Lewis', 'Paul Dano', 'Ciaran Hinds'], rating: 91, ratingSource: 'Rotten Tomatoes', ratingExtra: '2 Academy Awards' },
+    { title: 'Chinatown', director: 'Roman Polanski', year: 1974, desc: 'Private detective J.J. Gittes is hired to follow a man accused of infidelity and uncovers a conspiracy reaching to the roots of Los Angeles\'s power structure. Robert Towne\'s screenplay is the finest in American cinema. A film about what happens when evil wins — and how rarely it doesn\'t.', genres: ['Neo-Noir', 'Mystery', 'Crime'], cast: ['Jack Nicholson', 'Faye Dunaway', 'John Huston'], rating: 98, ratingSource: 'Rotten Tomatoes', ratingExtra: '1 Academy Award' },
+    { title: 'The Godfather', director: 'Francis Ford Coppola', year: 1972, desc: 'The ageing patriarch of a powerful Mafia dynasty transfers control to his reluctant youngest son. Coppola\'s film transcends genre to become a meditation on power, family, and the corruption of the American dream. Three hours that feel like a whole world.', genres: ['Crime', 'Drama', 'American Classic'], cast: ['Marlon Brando', 'Al Pacino', 'James Caan', 'Diane Keaton'], rating: 97, ratingSource: 'Rotten Tomatoes', ratingExtra: '3 Academy Awards' },
+    { title: 'Once Upon a Time in the West', director: 'Sergio Leone', year: 1968, desc: 'A mysterious harmonica-playing stranger, a ruthless assassin, and a widow caught between them. Leone\'s operatic Western is the supreme achievement of the genre: every shot held a beat too long, every silence loaded with meaning. Ennio Morricone\'s score is inseparable from the images.', genres: ['Spaghetti Western', 'Epic', 'Revenge'], cast: ['Charles Bronson', 'Henry Fonda', 'Claudia Cardinale', 'Jason Robards'], rating: 98, ratingSource: 'Rotten Tomatoes', ratingExtra: 'AFI Top 100' },
+    { title: 'Lawrence of Arabia', director: 'David Lean', year: 1962, desc: 'T.E. Lawrence leads an Arab revolt against the Ottoman Empire during World War One. David Lean\'s epic is the greatest adventure film ever made — shot on an impossible scale, driven by a performance of mercurial complexity from Peter O\'Toole. Seven Academy Awards. Still unmatched.', genres: ['Epic', 'War', 'Biography'], cast: ['Peter O\'Toole', 'Alec Guinness', 'Anthony Quinn', 'Omar Sharif'], rating: 98, ratingSource: 'Rotten Tomatoes', ratingExtra: '7 Academy Awards' },
+    { title: 'Apocalypse Now', director: 'Francis Ford Coppola', year: 1979, desc: 'A US Army captain travels up the Nung River into Cambodia to assassinate a rogue colonel who has set himself up as a god. Loosely based on Conrad\'s Heart of Darkness, Coppola\'s war film is hallucinatory, morally unresolvable, and one of the most ambitious films ever made.', genres: ['War', 'Drama', 'Psychological'], cast: ['Martin Sheen', 'Marlon Brando', 'Robert Duvall', 'Dennis Hopper'], rating: 98, ratingSource: 'Rotten Tomatoes', ratingExtra: 'Palme d\'Or 1979' },
+    { title: 'Barry Lyndon', director: 'Stanley Kubrick', year: 1975, desc: 'An Irish rogue schemes his way through eighteenth-century European society — gambling, fighting, and marrying his way upward before an inevitable fall. Kubrick shot by candlelight using lenses developed for NASA and produced the most beautiful film ever made. Coldly ironic, secretly heartbreaking.', genres: ['Period Drama', 'Picaresque', 'Epic'], cast: ['Ryan O\'Neal', 'Marisa Berenson', 'Patrick Magee'], rating: 95, ratingSource: 'Rotten Tomatoes', ratingExtra: '4 Academy Awards' },
+    { title: 'Blade Runner 2049', director: 'Denis Villeneuve', year: 2017, desc: 'A new blade runner uncovers a buried secret that could plunge what\'s left of society into chaos. Villeneuve and Roger Deakins create a film of staggering visual scale — desolate, melancholy, and genuinely asking what makes a life worth living. A rare sequel that deepens its original.', genres: ['Sci-Fi', 'Neo-Noir', 'Philosophical'], cast: ['Ryan Gosling', 'Harrison Ford', 'Ana de Armas', 'Jared Leto'], rating: 87, ratingSource: 'Rotten Tomatoes', ratingExtra: 'Academy Award — Cinematography' },
+    { title: 'The Thin Red Line', director: 'Terrence Malick', year: 1998, desc: 'American soldiers fight for the Pacific island of Guadalcanal in 1942. Malick tells the story in interior monologues and images of extraordinary natural beauty, refusing to resolve the contradiction between the violence of war and the indifference of nature. One of cinema\'s most singular visions.', genres: ['War', 'Philosophical', 'Epic'], cast: ['Jim Caviezel', 'Sean Penn', 'Nick Nolte', 'Elias Koteas'], rating: 78, ratingSource: 'Rotten Tomatoes', ratingExtra: 'Berlin Golden Bear' },
+    { title: 'Schindler\'s List', director: 'Steven Spielberg', year: 1993, desc: 'German industrialist Oskar Schindler begins the war profiting from Jewish labour and ends it having spent his entire fortune to save over a thousand lives. Spielberg\'s film is the defining cinematic account of the Holocaust — formally rigorous and, in its final minutes, almost unbearable.', genres: ['Historical Drama', 'Holocaust', 'Biography'], cast: ['Liam Neeson', 'Ben Kingsley', 'Ralph Fiennes'], rating: 98, ratingSource: 'Rotten Tomatoes', ratingExtra: '7 Academy Awards' },
+    { title: 'Amadeus', director: 'Milos Forman', year: 1984, desc: 'The story of Mozart\'s rise and his rival Salieri\'s consuming jealousy, told by Salieri in old age from a lunatic asylum. Tom Hulce and F. Murray Abraham are extraordinary. Forman\'s film is about the agony of recognising genius and not possessing it — one of the great films on art and envy.', genres: ['Historical Drama', 'Biography', 'Music'], cast: ['F. Murray Abraham', 'Tom Hulce', 'Elizabeth Berridge'], rating: 96, ratingSource: 'Rotten Tomatoes', ratingExtra: '8 Academy Awards' },
+    { title: 'Das Boot', director: 'Wolfgang Petersen', year: 1981, desc: 'The crew of a German U-boat in 1941: the boredom, the fear, the claustrophobia, and the absolute terror of a depth charge attack. Petersen\'s film is the definitive submarine film — a war movie entirely about endurance rather than heroism, from a perspective rarely shown.', genres: ['War', 'Drama', 'German Cinema'], cast: ['Jurgen Prochnow', 'Herbert Gronemeyer', 'Klaus Wennemann'], rating: 98, ratingSource: 'Rotten Tomatoes', ratingExtra: '6 Academy Nominations' },
+    { title: 'The Grand Budapest Hotel', director: 'Wes Anderson', year: 2014, desc: 'The legendary concierge of a grand European hotel in the 1930s is accused of murder and goes on the run with his lobby boy. Anderson\'s most perfectly constructed film — a confection of symmetry, colour, and melancholy that turns out to be a eulogy for a civilisation about to be destroyed.', genres: ['Comedy', 'Period', 'Adventure'], cast: ['Ralph Fiennes', 'Tony Revolori', 'Saoirse Ronan', 'Tilda Swinton'], rating: 92, ratingSource: 'Rotten Tomatoes', ratingExtra: '4 Academy Awards' },
+    { title: 'In the Mood for Love', director: 'Wong Kar-wai', year: 2000, desc: 'Two neighbours in 1962 Hong Kong discover their spouses are having an affair. Rather than an explicit drama, Wong creates an achingly beautiful study of restraint and longing — every held glance, every slow-motion walk through a corridor charged with feeling never expressed. Ravishing.', genres: ['Romance', 'Drama', 'Hong Kong'], cast: ['Maggie Cheung', 'Tony Leung'], rating: 95, ratingSource: 'Rotten Tomatoes', ratingExtra: 'Cannes Best Actor' },
+    { title: 'Seven Samurai', director: 'Akira Kurosawa', year: 1954, desc: 'A poor village hires seven ronin to defend them against bandits who will return at harvest time. Kurosawa\'s masterpiece is the template for every ensemble action film that followed — but what distinguishes it is the depth of feeling for all its characters, high and low.', genres: ['Action', 'Drama', 'Japanese Classic'], cast: ['Toshiro Mifune', 'Takashi Shimura', 'Yoshio Inaba'], rating: 100, ratingSource: 'Rotten Tomatoes', ratingExtra: 'Venice Silver Lion' },
+    { title: 'Aguirre, the Wrath of God', director: 'Werner Herzog', year: 1972, desc: 'A conquistador leads an expedition down the Amazon in search of El Dorado and descends into madness and delusion. Herzog shot in the actual jungle with a cast and crew pushed to their limits; Klaus Kinski\'s performance as Aguirre is one of cinema\'s great studies in grandiose self-destruction.', genres: ['Historical', 'Adventure', 'German Cinema'], cast: ['Klaus Kinski', 'Helena Rojo', 'Del Negro'], rating: 96, ratingSource: 'Rotten Tomatoes', ratingExtra: 'German Film Award' },
+    { title: 'A Man for All Seasons', director: 'Fred Zinnemann', year: 1966, desc: 'Sir Thomas More refuses to endorse Henry VIII\'s break with Rome and faces the consequences of his conscience. Robert Bolt\'s screenplay is a sustained examination of integrity under political pressure. Paul Scofield\'s More is one of cinema\'s most quietly heroic figures.', genres: ['Historical Drama', 'Biography', 'British'], cast: ['Paul Scofield', 'Wendy Hiller', 'Robert Shaw', 'Orson Welles'], rating: 93, ratingSource: 'Rotten Tomatoes', ratingExtra: '6 Academy Awards' },
+    { title: 'The Lives of Others', director: 'Florian Henckel von Donnersmarck', year: 2006, desc: 'A Stasi officer is assigned to surveil a playwright in 1984 East Berlin and finds himself unable to remain detached. A devastating portrait of life under surveillance and the unexpected transformation it produces in the watcher. Germany\'s finest film of the decade.', genres: ['Drama', 'Political', 'German Cinema'], cast: ['Ulrich Muhe', 'Martina Gedeck', 'Sebastian Koch'], rating: 97, ratingSource: 'Rotten Tomatoes', ratingExtra: 'Academy Award — Best Foreign Film' },
+    { title: 'City of God', director: 'Fernando Meirelles', year: 2002, desc: 'The story of gang warfare in Rio de Janeiro\'s most violent favela, told over two decades through the eyes of a boy who wants to be a photographer rather than a gangster. Shot with galvanic energy, it manages to be simultaneously a thriller, a social document, and a meditation on fate.', genres: ['Crime', 'Drama', 'Brazilian Cinema'], cast: ['Alexandre Rodrigues', 'Leandro Firmino', 'Matheus Nachtergaele'], rating: 90, ratingSource: 'Rotten Tomatoes', ratingExtra: '4 Academy Nominations' },
+    { title: 'Pan\'s Labyrinth', director: 'Guillermo del Toro', year: 2006, desc: 'A girl in post-Civil-War Spain retreats into a dark fairy tale world to escape the brutality around her. Del Toro creates two equally vivid realities — the real one horrifying, the fantasy one dangerous — and refuses to tell us which is true. Operatically beautiful and genuinely disturbing.', genres: ['Fantasy', 'Drama', 'Spanish Cinema'], cast: ['Ivana Baquero', 'Sergi Lopez', 'Doug Jones', 'Ariadna Gil'], rating: 95, ratingSource: 'Rotten Tomatoes', ratingExtra: '3 Academy Awards' },
+    { title: 'Downfall', director: 'Oliver Hirschbiegel', year: 2004, desc: 'The final days of Adolf Hitler in the Berlin Fuhrerbunker, April 1945. Seen through the eyes of his secretary, the film refuses to caricature Hitler and shows instead the banal horror of a man who could not conceive that he was wrong. Unflinching, necessary, brilliantly performed.', genres: ['Historical Drama', 'War', 'German Cinema'], cast: ['Bruno Ganz', 'Alexandra Maria Lara', 'Corinna Harfouch'], rating: 90, ratingSource: 'Rotten Tomatoes', ratingExtra: 'Academy Nomination — Best Foreign Film' },
+    { title: 'The Battle of Algiers', director: 'Gillo Pontecorvo', year: 1966, desc: 'A reconstruction of the Algerian independence struggle against French colonial rule, shot in a newsreel style so convincing it was banned in France for years. Rigorously balanced between coloniser and colonised, it remains the definitive film about urban insurgency and counter-insurgency.', genres: ['Political', 'War', 'Historical'], cast: ['Brahim Haggiag', 'Jean Martin', 'Yacef Saadi'], rating: 98, ratingSource: 'Rotten Tomatoes', ratingExtra: 'Venice Golden Lion' },
+    { title: 'Rashomon', director: 'Akira Kurosawa', year: 1950, desc: 'A samurai is found dead in a forest. Four witnesses — including the dead man speaking through a medium — give contradictory accounts of what happened. Kurosawa\'s most radical film permanently altered how stories are told. Truth is multiple, and everyone lies.', genres: ['Drama', 'Mystery', 'Japanese Classic'], cast: ['Toshiro Mifune', 'Machiko Kyo', 'Masayuki Mori'], rating: 97, ratingSource: 'Rotten Tomatoes', ratingExtra: 'Academy Honorary Award' },
+    { title: 'Roma', director: 'Alfonso Cuaron', year: 2018, desc: 'A year in the life of a domestic worker in early 1970s Mexico City, seen with immense patience and love. Cuaron\'s black-and-white epic is deeply personal and yet universal — a meditation on class, womanhood, memory, and the way history moves through private lives.', genres: ['Drama', 'Autobiographical', 'Mexican Cinema'], cast: ['Yalitza Aparicio', 'Marina de Tavira'], rating: 96, ratingSource: 'Rotten Tomatoes', ratingExtra: '3 Academy Awards incl. Best Director' },
+    { title: 'Moonlight', director: 'Barry Jenkins', year: 2016, desc: 'A young Black man in Miami grows from boyhood to adulthood — in three chapters, three actors — searching for identity and love while navigating poverty, violence, and desire. Jenkins\'s film is achingly tender, visually extraordinary, and among the most humane American films of this century.', genres: ['Drama', 'Coming-of-Age', 'LGBTQ+'], cast: ['Mahershala Ali', 'Naomie Harris', 'Trevante Rhodes'], rating: 98, ratingSource: 'Rotten Tomatoes', ratingExtra: 'Academy Award — Best Picture' },
+    { title: 'Fitzcarraldo', director: 'Werner Herzog', year: 1982, desc: 'A man obsessed with building an opera house in the Amazon jungle hatches an insane plan: drag a full-sized steamship over a mountain. Herzog actually did it. The film is inseparable from its making — a monument to delusional ambition, and one of cinema\'s great statements on what drives human beings forward.', genres: ['Adventure', 'Drama', 'German Cinema'], cast: ['Klaus Kinski', 'Claudia Cardinale', 'Jose Lewgoy'], rating: 95, ratingSource: 'Rotten Tomatoes', ratingExtra: 'Cannes Best Director' },
+    { title: 'The Pianist', director: 'Roman Polanski', year: 2002, desc: 'Polish pianist Wladyslaw Szpilman survives the Warsaw Ghetto and the Nazi occupation by hiding among the ruins of a destroyed city. Polanski — himself a child survivor of the Krakow Ghetto — brings unsentimental clarity and a musician\'s ear to one of the war\'s great survival stories.', genres: ['Historical Drama', 'Holocaust', 'Biography'], cast: ['Adrien Brody', 'Thomas Kretschmann', 'Emilia Fox'], rating: 96, ratingSource: 'Rotten Tomatoes', ratingExtra: '3 Academy Awards incl. Best Director' },
+    { title: 'Three Colors: Blue', director: 'Krzysztof Kieslowski', year: 1993, desc: 'Julie survives a car crash that kills her husband and daughter and attempts to build a life entirely free from emotional attachment. The first part of Kieslowski\'s trilogy on liberty, equality, and fraternity is a study in grief so precise it is almost unbearable. Juliette Binoche has never been better.', genres: ['Drama', 'French Cinema', 'Art House'], cast: ['Juliette Binoche', 'Benoit Regent', 'Florence Pernel'], rating: 97, ratingSource: 'Rotten Tomatoes', ratingExtra: 'Venice Golden Lion' },
+    { title: 'Mulholland Drive', director: 'David Lynch', year: 2001, desc: 'A wide-eyed aspiring actress arrives in Hollywood and befriends an amnesiac woman hiding in her apartment. Lynch\'s film dissolves from dream into nightmare with a logic that is felt rather than understood. Voted the greatest film of the twenty-first century by BBC critics — and the most unresolvable.', genres: ['Mystery', 'Surrealism', 'Neo-Noir'], cast: ['Naomi Watts', 'Laura Harring', 'Justin Theroux'], rating: 83, ratingSource: 'Rotten Tomatoes', ratingExtra: 'Cannes Best Director' },
+  ];
+
+  // ── SVG helpers ───────────────────────────────────────────────
+
+  const BOOK_PALS = [
+    { bg1:'#0e1c42', bg2:'#060d20', ac:'#c8a348', au:'#8a6820' },
+    { bg1:'#1a0a0a', bg2:'#0d0505', ac:'#d4665a', au:'#8a3328' },
+    { bg1:'#080f08', bg2:'#050a05', ac:'#7ab87a', au:'#3a7a3a' },
+    { bg1:'#121218', bg2:'#08080e', ac:'#9090e0', au:'#5050a0' },
+    { bg1:'#1a120a', bg2:'#0d0905', ac:'#d4a870', au:'#8a6030' },
+    { bg1:'#0a1218', bg2:'#060c12', ac:'#70c0d8', au:'#306880' },
+  ];
+
+  const FILM_PALS = [
+    { bg1:'#060504', bg2:'#1a0e04', glow:'#a04800', title:'#ede9df', sub:'rgba(237,233,223,0.55)' },
+    { bg1:'#04040c', bg2:'#0c0820', glow:'#2040a0', title:'#c0d4ff', sub:'rgba(180,200,255,0.55)' },
+    { bg1:'#040808', bg2:'#081410', glow:'#006040', title:'#c0f0d8', sub:'rgba(160,220,190,0.55)' },
+    { bg1:'#080404', bg2:'#160808', glow:'#800020', title:'#ffd8d8', sub:'rgba(255,190,190,0.55)' },
+    { bg1:'#060606', bg2:'#141414', glow:'#484848', title:'#f0f0f0', sub:'rgba(220,220,220,0.55)' },
+    { bg1:'#040608', bg2:'#0a0c18', glow:'#304060', title:'#c8daf0', sub:'rgba(180,200,230,0.55)' },
+  ];
+
+  function svgLines(text, maxChars) {
+    var words = text.split(' '), lines = [], cur = '';
+    words.forEach(function(w) {
+      var next = cur ? cur + ' ' + w : w;
+      if (next.length > maxChars && cur) { lines.push(cur); cur = w; }
+      else { cur = next; }
+    });
+    if (cur) lines.push(cur);
+    return lines;
+  }
+
+  function bookMotif(n, ac) {
+    var s = n % 6;
+    if (s === 0) return '<rect x="80" y="185" width="120" height="130" fill="none" stroke="' + ac + '" stroke-width="0.8" opacity="0.5"/><path d="M118,315 L118,288 Q140,270 162,288 L162,315 Z" fill="none" stroke="' + ac + '" stroke-width="0.8" opacity="0.5"/><rect x="90" y="200" width="14" height="18" fill="none" stroke="' + ac + '" stroke-width="0.5" opacity="0.35"/><rect x="130" y="200" width="14" height="18" fill="none" stroke="' + ac + '" stroke-width="0.5" opacity="0.35"/><rect x="174" y="200" width="14" height="18" fill="none" stroke="' + ac + '" stroke-width="0.5" opacity="0.35"/><rect x="90" y="238" width="14" height="18" fill="none" stroke="' + ac + '" stroke-width="0.5" opacity="0.35"/><rect x="130" y="238" width="14" height="18" fill="none" stroke="' + ac + '" stroke-width="0.5" opacity="0.35"/><rect x="174" y="238" width="14" height="18" fill="none" stroke="' + ac + '" stroke-width="0.5" opacity="0.35"/>';
+    if (s === 1) return '<circle cx="140" cy="258" r="70" fill="none" stroke="' + ac + '" stroke-width="0.8" opacity="0.35"/><circle cx="140" cy="258" r="50" fill="none" stroke="' + ac + '" stroke-width="0.5" opacity="0.25"/><circle cx="140" cy="258" r="28" fill="none" stroke="' + ac + '" stroke-width="0.4" opacity="0.2"/><line x1="70" y1="258" x2="210" y2="258" stroke="' + ac + '" stroke-width="0.4" opacity="0.25"/><line x1="140" y1="188" x2="140" y2="328" stroke="' + ac + '" stroke-width="0.4" opacity="0.25"/>';
+    if (s === 2) return '<path d="M140,185 L195,230 L175,295 L105,295 L85,230 Z" fill="none" stroke="' + ac + '" stroke-width="0.8" opacity="0.4"/><path d="M140,205 L183,242 L166,290 L114,290 L97,242 Z" fill="none" stroke="' + ac + '" stroke-width="0.5" opacity="0.25"/><line x1="140" y1="185" x2="140" y2="295" stroke="' + ac + '" stroke-width="0.4" opacity="0.22"/>';
+    if (s === 3) return '<line x1="82" y1="192" x2="82" y2="318" stroke="' + ac + '" stroke-width="0.8" opacity="0.45"/><line x1="122" y1="178" x2="122" y2="318" stroke="' + ac + '" stroke-width="0.8" opacity="0.4"/><line x1="158" y1="178" x2="158" y2="318" stroke="' + ac + '" stroke-width="0.8" opacity="0.4"/><line x1="198" y1="192" x2="198" y2="318" stroke="' + ac + '" stroke-width="0.8" opacity="0.45"/><path d="M82,192 Q102,174 122,178 Q140,174 158,178 Q178,174 198,192" fill="none" stroke="' + ac + '" stroke-width="0.8" opacity="0.45"/><line x1="82" y1="318" x2="198" y2="318" stroke="' + ac + '" stroke-width="1" opacity="0.45"/>';
+    if (s === 4) return '<path d="M140,182 L148,206 L174,206 L153,221 L161,245 L140,230 L119,245 L127,221 L106,206 L132,206 Z" fill="none" stroke="' + ac + '" stroke-width="0.8" opacity="0.5"/><path d="M140,258 L145,272 L160,272 L149,281 L153,296 L140,287 L127,296 L131,281 L120,272 L135,272 Z" fill="none" stroke="' + ac + '" stroke-width="0.6" opacity="0.35"/>';
+    return '<rect x="90" y="186" width="100" height="132" rx="2" fill="none" stroke="' + ac + '" stroke-width="0.7" opacity="0.4"/><line x1="90" y1="208" x2="190" y2="208" stroke="' + ac + '" stroke-width="0.35" opacity="0.22"/><line x1="90" y1="230" x2="190" y2="230" stroke="' + ac + '" stroke-width="0.35" opacity="0.22"/><line x1="90" y1="252" x2="190" y2="252" stroke="' + ac + '" stroke-width="0.35" opacity="0.22"/><line x1="90" y1="274" x2="190" y2="274" stroke="' + ac + '" stroke-width="0.35" opacity="0.22"/><line x1="90" y1="296" x2="190" y2="296" stroke="' + ac + '" stroke-width="0.35" opacity="0.22"/>';
+  }
+
+  function filmScene(n, p) {
+    var s = n % 6;
+    if (s === 0) return '<ellipse cx="140" cy="310" rx="180" ry="55" fill="' + p.glow + '" opacity="0.12"/><path d="M0,285 L35,262 L60,270 L88,248 L115,264 L140,244 L165,260 L195,248 L224,266 L255,255 L280,270 L280,340 L0,340 Z" fill="#0f0a06"/><path d="M0,318 L22,308 L52,313 L82,302 L112,310 L140,298 L168,306 L204,296 L238,304 L280,294 L280,360 L0,360 Z" fill="#0c0804"/><rect y="358" width="280" height="62" fill="#080604"/>';
+    if (s === 1) return '<rect x="18" y="248" width="18" height="92" fill="#080c14"/><rect x="42" y="228" width="13" height="112" fill="#090d16"/><rect x="60" y="262" width="20" height="78" fill="#07090f"/><rect x="86" y="218" width="14" height="122" fill="#0a0e18"/><rect x="106" y="242" width="16" height="98" fill="#080b14"/><rect x="128" y="208" width="24" height="132" fill="#0c1020"/><rect x="156" y="238" width="14" height="102" fill="#08091a"/><rect x="176" y="222" width="18" height="118" fill="#090d18"/><rect x="200" y="252" width="16" height="88" fill="#07090f"/><rect x="222" y="232" width="20" height="108" fill="#0a0e16"/><rect x="248" y="258" width="14" height="82" fill="#070810"/><rect y="340" width="280" height="80" fill="#050608"/>';
+    if (s === 2) return '<path d="M0,340 L72,198 L112,248 L140,178 L170,244 L214,200 L280,340 Z" fill="#08090a"/><path d="M104,248 L140,178 L176,248" fill="rgba(255,255,255,0.05)"/><rect y="340" width="280" height="80" fill="#040506"/><ellipse cx="140" cy="182" rx="160" ry="38" fill="' + p.glow + '" opacity="0.1"/>';
+    if (s === 3) return '<ellipse cx="140" cy="292" rx="200" ry="28" fill="' + p.glow + '" opacity="0.09"/><path d="M0,295 Q35,285 70,295 Q105,305 140,295 Q175,285 212,295 Q246,305 280,295 L280,420 L0,420 Z" fill="#050608"/><line x1="0" y1="290" x2="280" y2="286" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>';
+    if (s === 4) return '<path d="M10,340 L10,280 L30,320 L30,258 L56,298 L56,248 L82,293 L82,253 L108,288 L108,260 L132,283 L132,248 L156,283 L156,260 L182,290 L182,253 L208,298 L208,248 L234,320 L234,280 L256,340 Z" fill="#070b07"/><rect y="340" width="280" height="80" fill="#050804"/><ellipse cx="140" cy="322" rx="200" ry="48" fill="' + p.glow + '" opacity="0.1"/>';
+    return '<circle cx="140" cy="295" r="100" fill="none" stroke="' + p.glow + '" stroke-width="0.6" opacity="0.2"/><circle cx="140" cy="295" r="68" fill="none" stroke="' + p.glow + '" stroke-width="0.4" opacity="0.15"/><line x1="40" y1="295" x2="240" y2="295" stroke="' + p.glow + '" stroke-width="0.4" opacity="0.18"/><line x1="140" y1="195" x2="140" y2="395" stroke="' + p.glow + '" stroke-width="0.4" opacity="0.18"/><rect y="365" width="280" height="55" fill="#040405"/>';
+  }
+
+  function bookSVG(book, idx) {
+    var p     = BOOK_PALS[idx % BOOK_PALS.length];
+    var lines = svgLines(book.title.toUpperCase(), 14);
+    var gid   = 'bbg' + idx;
+    var ty    = lines.length === 1 ? 57 : lines.length === 2 ? 50 : 44;
+    var tl    = lines.map(function(l, i) {
+      return '<text x="140" y="' + (ty + i * 16) + '" text-anchor="middle" font-family="Georgia,serif" font-size="11" font-weight="bold" fill="' + p.ac + '" letter-spacing="2.5">' + l + '</text>';
+    }).join('');
+    return '<svg class="rec-cover-svg" viewBox="0 0 280 420" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="' + gid + '" x1="0" y1="0" x2="0.3" y2="1"><stop offset="0%" stop-color="' + p.bg1 + '"/><stop offset="100%" stop-color="' + p.bg2 + '"/></linearGradient></defs>'
+      + '<rect width="280" height="420" fill="url(#' + gid + ')"/>'
+      + '<rect x="10" y="10" width="260" height="400" fill="none" stroke="' + p.ac + '" stroke-width="1.2"/>'
+      + '<rect x="17" y="17" width="246" height="386" fill="none" stroke="' + p.ac + '" stroke-width="0.4" stroke-dasharray="3,4"/>'
+      + '<path d="M10,30 L10,10 L30,10" fill="none" stroke="' + p.ac + '" stroke-width="2"/>'
+      + '<path d="M250,10 L270,10 L270,30" fill="none" stroke="' + p.ac + '" stroke-width="2"/>'
+      + '<path d="M10,390 L10,410 L30,410" fill="none" stroke="' + p.ac + '" stroke-width="2"/>'
+      + '<path d="M250,410 L270,410 L270,390" fill="none" stroke="' + p.ac + '" stroke-width="2"/>'
+      + '<line x1="30" y1="78" x2="250" y2="78" stroke="' + p.ac + '" stroke-width="0.6" opacity="0.5"/>'
+      + tl
+      + bookMotif(idx, p.ac)
+      + '<line x1="30" y1="353" x2="250" y2="353" stroke="' + p.ac + '" stroke-width="0.6" opacity="0.5"/>'
+      + '<text x="140" y="374" text-anchor="middle" font-family="Georgia,serif" font-size="9" fill="' + p.au + '" letter-spacing="3">' + book.author.toUpperCase() + '</text>'
+      + '<path d="M130,356 L140,363 L150,356 L140,349 Z" fill="none" stroke="' + p.ac + '" stroke-width="0.6" opacity="0.4"/>'
+      + '</svg>';
+  }
+
+  function filmSVG(film, idx) {
+    var p     = FILM_PALS[idx % FILM_PALS.length];
+    var lines = svgLines(film.title.toUpperCase(), 12);
+    var gid   = 'fbg' + idx;
+    var fs    = lines.length > 2 ? 20 : 24;
+    var ty    = lines.length === 1 ? 115 : lines.length === 2 ? 105 : 95;
+    var tl    = lines.map(function(l, i) {
+      return '<text x="140" y="' + (ty + i * (fs + 4)) + '" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="' + fs + '" font-weight="900" fill="' + p.title + '" letter-spacing="3">' + l + '</text>';
+    }).join('');
+    var lineY  = ty + lines.length * (fs + 4) - 2;
+    var creditY = lineY + 14;
+    var cast3   = film.cast.slice(0, 3).map(function(c) { return c.split(' ').pop(); }).join(' \u00b7 ');
+    return '<svg class="rec-cover-svg" viewBox="0 0 280 420" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="' + gid + '" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="' + p.bg1 + '"/><stop offset="60%" stop-color="' + p.bg1 + '"/><stop offset="100%" stop-color="' + p.bg2 + '"/></linearGradient></defs>'
+      + '<rect width="280" height="420" fill="url(#' + gid + ')"/>'
+      + filmScene(idx, p)
+      + tl
+      + '<line x1="30" y1="' + lineY + '" x2="250" y2="' + lineY + '" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>'
+      + '<text x="140" y="' + creditY + '" text-anchor="middle" font-family="Georgia,serif" font-size="8" fill="' + p.sub + '" letter-spacing="1.5">' + film.director.toUpperCase() + '</text>'
+      + '<rect y="395" width="280" height="25" fill="rgba(0,0,0,0.5)"/>'
+      + '<text x="140" y="411" text-anchor="middle" font-family="Georgia,serif" font-size="7.5" fill="rgba(237,233,223,0.4)" letter-spacing="1">' + cast3 + '</text>'
+      + '</svg>';
+  }
+
+  function starsHTML(rating) {
+    var pct = Math.round((rating / 5) * 100);
+    return '<div class="star-visual">'
+      + '<div class="stars-bg">\u2605\u2605\u2605\u2605\u2605</div>'
+      + '<div class="stars-fill" data-w="' + pct + '%">\u2605\u2605\u2605\u2605\u2605</div>'
+      + '</div>';
+  }
+
+  function buildBook(book, idx) {
+    var el = document.getElementById('js-book');
+    el.innerHTML = '<section class="rec-feature rec-book">'
+      + '<div class="rec-body">'
+      + '<span class="rec-type-tag">Book</span>'
+      + '<div><h2 class="rec-title">' + book.title + '</h2><p class="rec-author" style="margin-top:0.5rem;">' + book.author + '</p></div>'
+      + '<div class="rec-genre-row">' + book.genres.map(function(g) { return '<span class="rec-genre">' + g + '</span>'; }).join('') + '</div>'
+      + '<p class="rec-desc">' + book.desc + '</p>'
+      + '<div class="rec-rating"><span class="rating-score gold">' + book.rating + '</span>'
+      + '<div class="rating-detail">'
+      + starsHTML(book.rating)
+      + '<span class="rating-source" style="margin-top:0.2rem;">' + book.ratingSource + ' &nbsp;&middot;&nbsp; ' + book.ratingCount + ' ratings</span>'
+      + '</div></div>'
+      + '</div>'
+      + '<div class="rec-image"><div class="rec-cover-wrap">' + bookSVG(book, idx) + '</div></div>'
+      + '</section>';
+  }
+
+  function buildFilm(film, idx) {
+    var el = document.getElementById('js-film');
+    el.innerHTML = '<section class="rec-feature rec-film">'
+      + '<div class="rec-body">'
+      + '<span class="rec-type-tag film-tag">Film</span>'
+      + '<h2 class="rec-title">' + film.title + '</h2>'
+      + '<div class="rec-genre-row">' + film.genres.map(function(g) { return '<span class="rec-genre">' + g + '</span>'; }).join('') + '<span class="rec-genre">' + film.year + '</span></div>'
+      + '<p class="rec-desc">' + film.desc + '</p>'
+      + '<div class="rec-meta-block"><span class="rec-cast-label">Cast</span>'
+      + '<span class="rec-cast-list">' + film.cast.join(' &nbsp;&middot;&nbsp; ') + '</span></div>'
+      + '<div class="rec-rating"><span class="rating-score tomato">' + film.rating + '%</span>'
+      + '<div class="rating-detail">'
+      + '<span class="rating-label tomato-label">&#127813; Rotten Tomatoes</span>'
+      + '<div class="rt-bar-track"><div class="rt-bar-fill" data-w="' + film.rating + '%"></div></div>'
+      + '<span class="rating-source">' + film.ratingExtra + '</span>'
+      + '</div></div>'
+      + '</div>'
+      + '<div class="rec-image"><div class="rec-cover-wrap">' + filmSVG(film, idx) + '</div></div>'
+      + '</section>';
+  }
+
+  // ── Live ratings API ──────────────────────────────────────────
+  // TMDB: get a free key at themoviedb.org/settings/api and paste it here
+  var TMDB_KEY = '';
+
+  function fetchBookRating(book, cb) {
+    // Google Books API — no key required
+    var q = 'intitle:' + encodeURIComponent(book.title)
+          + '+inauthor:' + encodeURIComponent(book.author.split(' ').pop());
+    fetch('https://www.googleapis.com/books/v1/volumes?q=' + q + '&maxResults=5')
+      .then(function(r) { return r.json(); })
+      .then(function(d) {
+        var hit = (d.items || []).filter(function(i) {
+          return i.volumeInfo && i.volumeInfo.averageRating;
+        })[0];
+        cb(hit ? {
+          rating:  hit.volumeInfo.averageRating,
+          source:  'Google Books',
+          count:   (hit.volumeInfo.ratingsCount || 0).toLocaleString()
+        } : null);
+      })
+      .catch(function() { cb(null); });
+  }
+
+  function fetchFilmRating(film, cb) {
+    if (!TMDB_KEY) { cb(null); return; }
+    fetch('https://api.themoviedb.org/3/search/movie'
+        + '?api_key=' + encodeURIComponent(TMDB_KEY)
+        + '&query='   + encodeURIComponent(film.title)
+        + '&year='    + film.year)
+      .then(function(r) { return r.json(); })
+      .then(function(d) {
+        var hit = (d.results || [])[0];
+        cb(hit && hit.vote_count > 10 ? {
+          rating: Math.round(hit.vote_average * 10),
+          source: 'TMDB',
+          count:  hit.vote_count.toLocaleString() + ' votes'
+        } : null);
+      })
+      .catch(function() { cb(null); });
+  }
+
+  function applyLiveRating(type, data) {
+    if (!data) return;
+    var sel = '.rec-' + type + ' ';
+    var scoreEl  = document.querySelector(sel + '.rating-score');
+    var sourceEl = document.querySelector(sel + '.rating-source');
+    if (!scoreEl) return;
+
+    if (type === 'book') {
+      var pct    = Math.round((data.rating / 5) * 100) + '%';
+      var fillEl = document.querySelector(sel + '.stars-fill');
+      scoreEl.textContent = (+data.rating).toFixed(1);
+      if (fillEl) { fillEl.setAttribute('data-w', pct); fillEl.style.width = pct; }
+      if (sourceEl) sourceEl.textContent = data.source + ' \u00b7 ' + data.count + ' ratings';
+    } else {
+      var barEl   = document.querySelector(sel + '.rt-bar-fill');
+      var labelEl = document.querySelector(sel + '.rating-label');
+      scoreEl.textContent = data.rating + '%';
+      if (barEl)   { barEl.setAttribute('data-w', data.rating + '%'); barEl.style.width = data.rating + '%'; }
+      if (labelEl) labelEl.textContent = '\u2B50 ' + data.source;
+      if (sourceEl) sourceEl.textContent = data.count;
+    }
+  }
+
+  function loadLiveRatings(book, film, cache) {
+    // Apply any ratings already cached for today immediately
+    if (cache && cache.bookRating) applyLiveRating('book', cache.bookRating);
+    if (cache && cache.filmRating) applyLiveRating('film', cache.filmRating);
+
+    // Fetch anything not yet cached
+    if (!cache || !cache.bookRating) {
+      fetchBookRating(book, function(data) {
+        applyLiveRating('book', data);
+        if (data) try {
+          var s = JSON.parse(localStorage.getItem('reads_daily') || '{}');
+          s.bookRating = data;
+          localStorage.setItem('reads_daily', JSON.stringify(s));
+        } catch(_) {}
+      });
+    }
+    if (!cache || !cache.filmRating) {
+      fetchFilmRating(film, function(data) {
+        applyLiveRating('film', data);
+        if (data) try {
+          var s = JSON.parse(localStorage.getItem('reads_daily') || '{}');
+          s.filmRating = data;
+          localStorage.setItem('reads_daily', JSON.stringify(s));
+        } catch(_) {}
+      });
+    }
+  }
+
+  // ── Rotation ──────────────────────────────────────────────────
+  var todayD = new Date();
+  todayD.setHours(0, 0, 0, 0);
+  var todayStr = todayD.toISOString().slice(0, 10);
+
+  var bookIdx, filmIdx, cachedData = null;
+  try { cachedData = JSON.parse(localStorage.getItem('reads_daily') || 'null'); } catch(_) {}
+
+  if (cachedData && cachedData.date === todayStr) {
+    bookIdx = cachedData.bookIdx;
+    filmIdx = cachedData.filmIdx;
+  } else {
+    var EPOCH = new Date('2026-03-28');
+    var days  = Math.floor((todayD - EPOCH) / 86400000);
+    bookIdx   = ((days % BOOKS.length) + BOOKS.length) % BOOKS.length;
+    filmIdx   = (((days + 7) % FILMS.length) + FILMS.length) % FILMS.length;
+    cachedData = null;
+    try { localStorage.setItem('reads_daily', JSON.stringify({ date: todayStr, bookIdx: bookIdx, filmIdx: filmIdx })); } catch(_) {}
+  }
+
+  buildBook(BOOKS[bookIdx], bookIdx);
+  loadLiveRatings(BOOKS[bookIdx], FILMS[filmIdx], cachedData);
+
+  // Save slim preview data for the homepage
+  try {
+    var b = BOOKS[bookIdx], f = FILMS[filmIdx];
+    localStorage.setItem('reads_preview', JSON.stringify({
+      date:   todayStr,
+      book: { title: b.title, author: b.author, rating: b.rating, ratingSource: b.ratingSource },
+      film: { title: f.title, director: f.director, year: f.year, rating: f.rating }
+    }));
+  } catch(_) {}
+
+  // ── Reveal animations ─────────────────────────────────────────
+  var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  requestAnimationFrame(function() {
+    requestAnimationFrame(function() {
+      var sections = document.querySelectorAll('.rec-feature');
+      sections.forEach(function(sec, i) {
+        var delay = reducedMotion ? 0 : i * 200;
+        setTimeout(function() {
+          sec.classList.add('is-visible');
+          // Animate bar fills once section starts appearing
+          var barDelay = reducedMotion ? 0 : 280;
+          setTimeout(function() {
+            sec.querySelectorAll('[data-w]').forEach(function(el) {
+              el.style.width = el.getAttribute('data-w');
+            });
+          }, barDelay);
+        }, delay);
+      });
+    });
+  });
+
+  // Date labels
+  var opts = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+  var lbl  = todayD.toLocaleDateString('en-GB', opts);
+  document.getElementById('js-date').textContent   = lbl;
+  document.getElementById('js-date-2').textContent = lbl;
+    (function () {
+      var headlines = ['World leaders gather for emergency climate summit in Geneva','Global markets steady as central banks signal rate pause','UN Security Council meets over escalating tensions in Middle East','European Union agrees new trade framework with South-East Asia','Scientists announce breakthrough in carbon capture technology','NATO allies pledge increased defence spending at Brussels meeting','IMF revises global growth forecast upward for 2026','Historic ceasefire agreement reached after months of negotiations','G7 nations commit to new framework on artificial intelligence governance','Record temperatures recorded across southern Europe this week','World Health Organisation warns of emerging respiratory virus strain','African Union summit focuses on infrastructure investment drive'];
+      var t = document.getElementById('js-ticker');
+      var mk = function(a){return a.map(function(x){return '<span style="color:#fff;font-family:\'Source Serif 4\',serif;font-size:0.78rem;font-weight:600;padding:0 2rem;">'+x+'</span><span class="ticker-sep">&#124;</span>';}).join('');};
+      t.innerHTML = mk(headlines)+mk(headlines);
+      requestAnimationFrame(function(){t.style.animationDuration=(t.scrollWidth/2/60)+'s';});
+    })();
+
+    // ── Dropdown nav ──
+    (function () {
+      var btns = document.querySelectorAll('.nav-drop-btn');
+      btns.forEach(function(btn) {
+        btn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          var menu = btn.nextElementSibling;
+          var isOpen = menu.style.display === 'flex';
+          document.querySelectorAll('.nav-drop-menu').forEach(function(m){ m.style.display = ''; });
+          if (!isOpen) menu.style.display = 'flex';
+        });
+      });
+      document.addEventListener('click', function() {
+        document.querySelectorAll('.nav-drop-menu').forEach(function(m){ m.style.display = ''; });
+      });
+    })();
+  </script>
+
+</body>
+</html>

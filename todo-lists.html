@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do — Personal Hub</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&family=Inter:wght@400;500;600;700&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink:    #0d0d0d;
+      --paper:  #f4f0e6;
+      --rule:   #1a1a1a;
+      --muted:  #555;
+      --light:  #888;
+      --blue:   #003399;
+      --border: #d8d3c8;
+      --subtle: #ece8e0;
+      --card:   #ffffff;
+      --shadow-sm: 0 1px 4px rgba(0,0,0,0.06);
+      --shadow-md: 0 4px 16px rgba(0,0,0,0.09);
+      --radius: 10px;
+    }
+
+    body { background: var(--paper); color: var(--ink); font-family: 'Source Serif 4', Georgia, serif; min-height: 100vh; }
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    button, input, select, textarea { font-family: 'Inter', system-ui, sans-serif; }
+    button { cursor: pointer; }
+
+    /* ── TICKER ── */
+    .ticker-wrap { background: #111; overflow: hidden; display: flex; align-items: stretch; height: 2.4rem; }
+    .ticker-label { background: #e8000d; color: #fff; font-family: 'Source Serif 4', serif; font-size: .68rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; padding: 0 1.2rem; display: flex; align-items: center; white-space: nowrap; flex-shrink: 0; gap: .5rem; }
+    .ticker-label::before { content: ''; display: inline-block; width: 7px; height: 7px; background: #fff; border-radius: 50%; animation: pulse-dot 1.2s ease-in-out infinite; }
+    @keyframes pulse-dot { 0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.7)} }
+    .ticker-inner { overflow: hidden; flex: 1; display: flex; align-items: center; }
+    .ticker-track { display: flex; align-items: center; white-space: nowrap; will-change: transform; animation: ticker-scroll 40s linear infinite; }
+    .ticker-track:hover { animation-play-state: paused; cursor: default; }
+    .ticker-track span { color: #fff; font-family: 'Source Serif 4', serif; font-size: .78rem; font-weight: 600; padding: 0 2rem; }
+    .ticker-track .ticker-sep { color: #e8000d; font-size: 1rem; font-weight: 700; flex-shrink: 0; line-height: 1; padding: 0; }
+    @keyframes ticker-scroll { 0%{transform:translateX(0)}100%{transform:translateX(-50%)} }
+
+    /* ── HEADER ── */
+    .meta-bar { max-width: 1200px; margin: 0 auto; padding: 1rem 1.5rem 0; }
+    .meta-bar-inner { display: flex; justify-content: space-between; font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); border-bottom: 1px solid var(--rule); padding-bottom: .4rem; margin-bottom: .6rem; }
+    .masthead-wrap { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; text-align: center; }
+    .masthead { font-family: 'Playfair Display', serif; font-weight: 900; font-size: clamp(2.4rem,5vw,4.2rem); line-height: 1; letter-spacing: -.01em; }
+    .masthead-sub { font-size: .75rem; font-style: italic; color: var(--muted); margin: .2rem 0 .3rem; }
+    .rule-double { border: none; border-top: 3px double var(--rule); max-width: 1200px; margin: 0 auto; }
+
+    /* ── NAV ── */
+    .nav-ribbon { background: linear-gradient(90deg, #4b5563 0%, #1f2937 100%); position: sticky; top: 0; z-index: 100; }
+    .nav-ribbon nav { max-width: 1600px; margin: 0 auto; padding: 0 2rem; display: flex; align-items: center; justify-content: center; gap: .3rem; }
+    .nav-ribbon nav a { color: rgba(255,255,255,.9); font-size: .8rem; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; padding: .5rem .95rem; border-radius: 5px; transition: background .15s; white-space: nowrap; }
+    .nav-ribbon nav a:hover { background: rgba(255,255,255,.15); color: #fff; text-decoration: none; }
+    .nav-ribbon nav a.nav-home { color: #fff; font-weight: 700; margin-right: .4rem; padding-right: 1rem; border-right: 1px solid rgba(255,255,255,.2); border-radius: 0; }
+    .nav-ribbon nav a.nav-active { background: rgba(255,255,255,.18); color: #fff; }
+    .nav-divider { width: 1px; height: 1.1rem; background: rgba(255,255,255,.35); margin: 0 .6rem; flex-shrink: 0; align-self: center; }
+    .nav-caret { font-size: .55rem; opacity: .65; transition: transform .15s; line-height: 1; }
+    .nav-dropdown { position: relative; display: flex; align-items: center; }
+    .nav-dropdown:hover .nav-caret { transform: rotate(180deg); }
+    .nav-dropdown:hover .nav-drop-menu { display: flex; }
+    .nav-drop-btn { color: rgba(255,255,255,.9); font-size: .8rem; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; padding: .5rem .95rem; border-radius: 5px; background: none; border: none; cursor: pointer; white-space: nowrap; display: flex; align-items: center; gap: .25rem; transition: background .15s; }
+    .nav-drop-btn:hover { background: rgba(255,255,255,.18); color: #fff; }
+    .nav-drop-menu { position: absolute; top: 100%; left: 0; background: #1f2937; border-radius: 6px; min-width: 155px; display: none; flex-direction: column; z-index: 200; box-shadow: 0 6px 18px rgba(0,0,0,.4); overflow: hidden; }
+    .nav-drop-menu a { color: rgba(255,255,255,.85); font-size: .76rem; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; padding: .6rem 1.1rem; display: block; border-radius: 0; transition: background .12s; }
+    .nav-drop-menu a + a { border-top: 1px solid rgba(255,255,255,.07); }
+    .nav-drop-menu a:hover { background: rgba(255,255,255,.15); color: #fff; text-decoration: none; }
+    .nav-drop-menu a.nav-active { background: rgba(255,255,255,.15); color: #fff; }
+    @media (max-width: 800px) {
+      .nav-ribbon nav { flex-wrap: wrap; gap: 0; padding: .25rem .5rem; }
+      .nav-drop-menu { position: static; box-shadow: none; border-radius: 0; background: rgba(255,255,255,.06); }
+      .nav-dropdown { flex-direction: column; align-items: flex-start; width: 100%; }
+      .nav-drop-menu { display: flex !important; }
+    }
+
+    /* ── PAGE ── */
+    .page-wrap { max-width: 860px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+
+    .page-title-row { border-bottom: 1px solid var(--rule); padding-bottom: 1rem; margin-bottom: 1.8rem; display: flex; align-items: baseline; gap: 1rem; flex-wrap: wrap; }
+    .page-section-tag { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); }
+    .page-title { font-family: 'Playfair Display', serif; font-weight: 900; font-size: 2.4rem; line-height: 1; }
+
+    /* ── STATS STRIP ── */
+    .stats-strip { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-bottom: 1.8rem; }
+    .stat-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem 1.2rem; box-shadow: var(--shadow-sm); }
+    .stat-label { font-size: 0.58rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--light); margin-bottom: 0.35rem; }
+    .stat-value { font-family: 'Playfair Display', serif; font-weight: 900; font-size: 1.8rem; line-height: 1; color: var(--ink); }
+    .stat-sub { font-size: 0.65rem; color: var(--muted); margin-top: 0.2rem; }
+    .progress-bar-wrap { margin-top: 0.5rem; height: 6px; background: var(--subtle); border-radius: 3px; overflow: hidden; }
+    .progress-bar-fill { height: 100%; background: var(--blue); border-radius: 3px; transition: width 0.4s ease; }
+
+    /* ── ADD FORM ── */
+    .add-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow-sm); padding: 1.1rem 1.3rem; margin-bottom: 2rem; }
+    .add-title-row { display: flex; align-items: center; gap: 0.7rem; border-bottom: 1px solid var(--subtle); padding-bottom: 0.9rem; margin-bottom: 0.85rem; }
+    .add-title-input { flex: 1; border: none; outline: none; font-size: 0.95rem; background: transparent; color: var(--ink); min-width: 0; }
+    .add-title-input::placeholder { color: var(--light); }
+    .add-meta-row { display: flex; align-items: center; gap: 0.55rem; flex-wrap: wrap; }
+    /* Date preset */
+    .date-preset { display: flex; align-items: center; gap: 0.3rem; position: relative; }
+    .dp-quick { border: 1px solid var(--border); border-radius: 9999px; padding: 0.22rem 0.6rem; font-size: 0.65rem; font-weight: 600; background: var(--subtle); color: var(--muted); transition: all 0.15s; }
+    .dp-quick:hover { border-color: #aaa; color: var(--ink); }
+    .dp-quick.active { background: #eff6ff; color: var(--blue); border-color: var(--blue); }
+    .dp-drop-wrap { position: relative; }
+    .dp-drop-btn { border: 1px solid var(--border); border-radius: 9999px; padding: 0.22rem 0.6rem; font-size: 0.65rem; font-weight: 600; background: var(--subtle); color: var(--muted); display: flex; align-items: center; gap: 0.25rem; transition: all 0.15s; }
+    .dp-drop-btn:hover { border-color: #aaa; color: var(--ink); }
+    .dp-drop-btn.active { background: #eff6ff; color: var(--blue); border-color: var(--blue); }
+    .dp-menu { display: none; position: absolute; top: calc(100% + 4px); left: 0; background: var(--card); border: 1px solid var(--border); border-radius: 8px; box-shadow: var(--shadow-md); z-index: 50; min-width: 130px; overflow: hidden; }
+    .dp-menu.open { display: block; }
+    .dp-menu button { width: 100%; text-align: left; background: none; border: none; padding: 0.45rem 0.85rem; font-size: 0.72rem; color: var(--ink); transition: background 0.1s; }
+    .dp-menu button:hover { background: var(--subtle); }
+    .dp-menu button + button { border-top: 1px solid var(--subtle); }
+    .dp-date-input { display: none; border: 1px solid var(--border); border-radius: 6px; padding: 0.28rem 0.55rem; font-size: 0.72rem; background: var(--subtle); color: var(--ink); outline: none; }
+    .dp-date-input:focus { border-color: var(--blue); }
+    .pill-group { display: flex; gap: 0.3rem; }
+    .pill-btn { border: 1px solid var(--border); border-radius: 9999px; padding: 0.22rem 0.6rem; font-size: 0.65rem; font-weight: 600; letter-spacing: 0.04em; background: var(--subtle); color: var(--muted); transition: all 0.15s; }
+    .pill-btn:hover { border-color: #aaa; color: var(--ink); }
+    .pill-btn.active-work    { background: #eff6ff; color: #1d4ed8; border-color: #1d4ed8; }
+    .pill-btn.active-personal { background: #faf5ff; color: #7c3aed; border-color: #7c3aed; }
+    .pill-btn.active-fitness  { background: #fef2f2; color: #dc2626; border-color: #dc2626; }
+    .pill-btn.active-other    { background: #f9fafb; color: #374151; border-color: #374151; }
+    .pill-btn.active-high     { background: #fef2f2; color: #dc2626; border-color: #dc2626; }
+    .pill-btn.active-medium   { background: #fffbeb; color: #d97706; border-color: #d97706; }
+    .pill-btn.active-low      { background: #f0fdf4; color: #15803d; border-color: #15803d; }
+    .add-separator { width: 1px; height: 18px; background: var(--border); margin: 0 0.1rem; }
+    .btn-add-task { margin-left: auto; background: var(--ink); color: var(--paper); border: none; border-radius: 9999px; padding: 0.35rem 1rem; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.04em; transition: background 0.15s; }
+    .btn-add-task:hover { background: #333; }
+
+    /* ── SECTION HEADERS ── */
+    .section-hd { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.8rem; padding-bottom: 0.45rem; border-bottom: 1px solid var(--border); }
+    .section-hd h2 { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.05rem; line-height: 1; }
+    .count-pill { background: var(--ink); color: var(--paper); font-size: 0.6rem; font-weight: 700; padding: 0.15rem 0.45rem; border-radius: 9999px; font-family: 'Inter', sans-serif; }
+    .count-pill.green { background: #15803d; }
+    .section-block { margin-bottom: 2.2rem; }
+
+    /* ── TASK ITEMS ── */
+    .task-list { display: flex; flex-direction: column; gap: 0.5rem; }
+
+    .task-item {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 0.75rem 1rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      box-shadow: var(--shadow-sm);
+      animation: fadeSlideIn 0.22s ease both;
+      transition: box-shadow 0.2s, border-color 0.2s;
+    }
+    .task-item:hover { box-shadow: var(--shadow-md); }
+    /* Priority-based left border — the primary colour signal */
+    .task-item.pri-high   { border-left: 3px solid #dc2626; }
+    .task-item.pri-medium { border-left: 3px solid #d97706; }
+    .task-item.pri-low    { border-left: 3px solid #15803d; }
+    /* Due-date tints — subtle background only so they don't clash with priority border */
+    .task-item.overdue  { background: rgba(220,38,38,0.03); }
+    .task-item.due-today { background: rgba(0,51,153,0.03); }
+    .task-item.completing { animation: slideOut 0.28s ease forwards; }
+
+    @keyframes fadeSlideIn { from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)} }
+    @keyframes slideOut { from{opacity:1;transform:translateX(0)}to{opacity:0;transform:translateX(24px)} }
+    @keyframes fadeIn { from{opacity:0}to{opacity:1} }
+
+    /* Custom checkbox */
+    .task-check { flex-shrink: 0; cursor: pointer; padding-top: 0.05rem; }
+    .task-check input[type="checkbox"] { display: none; }
+    .check-circle {
+      width: 20px; height: 20px;
+      border: 2px solid var(--border);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      transition: all 0.15s;
+      background: transparent;
+    }
+    .task-check:hover .check-circle { border-color: var(--blue); }
+    .check-circle.checked { background: #15803d; border-color: #15803d; }
+    .check-circle.checked::after { content: '✓'; color: #fff; font-size: 0.6rem; font-weight: 900; font-family: 'Inter', sans-serif; }
+
+    .task-body { flex: 1; min-width: 0; }
+    .task-title-line { display: flex; align-items: center; gap: 0.45rem; flex-wrap: wrap; margin-bottom: 0.22rem; }
+    .task-title { font-size: 0.88rem; font-weight: 600; color: var(--ink); font-family: 'Inter', sans-serif; line-height: 1.3; }
+    .task-meta { display: flex; align-items: center; gap: 0.45rem; flex-wrap: wrap; }
+
+    /* Priority badge */
+    .pri-badge { font-size: 0.58rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.1rem 0.38rem; border-radius: 3px; border: 1px solid; }
+    .pri-high   { background: #fef2f2; color: #dc2626; border-color: #fecaca; }
+    .pri-medium { background: #fffbeb; color: #d97706; border-color: #fde68a; }
+    .pri-low    { background: #f0fdf4; color: #15803d; border-color: #bbf7d0; }
+
+    /* Category dot */
+    .cat-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+    .cat-work     { background: #1d4ed8; }
+    .cat-personal { background: #7c3aed; }
+    .cat-fitness  { background: #dc2626; }
+    .cat-other    { background: #374151; }
+
+    .cat-label { font-size: 0.65rem; color: var(--muted); font-family: 'Inter', sans-serif; }
+
+    /* Due date */
+    .due-tag { font-size: 0.65rem; font-family: 'Inter', sans-serif; font-weight: 500; display: flex; align-items: center; gap: 0.2rem; }
+    .due-tag::before { content: '📅'; font-size: 0.6rem; }
+    .due-normal { color: var(--muted); }
+    .due-today-tag { color: var(--blue); font-weight: 700; }
+    .due-overdue { color: #dc2626; font-weight: 700; }
+    .due-today-tag::before, .due-overdue::before { content: '⚑'; font-size: 0.6rem; }
+
+    /* Actions */
+    .task-actions { display: flex; gap: 0.3rem; flex-shrink: 0; }
+    .btn-icon-sm { background: none; border: none; color: var(--light); font-size: 0.75rem; padding: 0.2rem 0.3rem; border-radius: 4px; transition: color 0.15s, background 0.15s; }
+    .btn-icon-sm:hover { color: var(--ink); background: var(--subtle); }
+    .btn-icon-sm.del:hover { color: #dc2626; background: #fef2f2; }
+
+    /* Inline edit form */
+    .edit-form { display: flex; flex-direction: column; gap: 0.6rem; padding: 0.8rem 1rem; background: var(--subtle); border-radius: 8px; animation: fadeIn 0.18s ease; }
+    .edit-title-input, .edit-date-input { border: 1px solid var(--border); border-radius: 6px; padding: 0.4rem 0.65rem; font-size: 0.83rem; background: #fff; color: var(--ink); outline: none; }
+    .edit-title-input { width: 100%; }
+    .edit-title-input:focus, .edit-date-input:focus { border-color: var(--blue); }
+    .edit-meta-row { display: flex; gap: 0.5rem; align-items: center; flex-wrap: wrap; }
+    .edit-actions { display: flex; gap: 0.5rem; }
+    .btn-save-edit { background: var(--ink); color: var(--paper); border: none; border-radius: 6px; padding: 0.3rem 0.8rem; font-size: 0.72rem; font-weight: 700; }
+    .btn-save-edit:hover { background: #333; }
+    .btn-cancel-edit { background: none; border: 1px solid var(--border); border-radius: 6px; padding: 0.3rem 0.8rem; font-size: 0.72rem; font-weight: 600; color: var(--muted); }
+    .btn-cancel-edit:hover { border-color: #aaa; color: var(--ink); }
+
+    /* Empty state */
+    .empty-state { text-align: center; padding: 2.5rem 1rem; color: var(--light); }
+    .empty-icon { font-size: 2rem; display: block; margin-bottom: 0.5rem; opacity: 0.5; }
+    .empty-text { font-size: 0.8rem; font-style: italic; }
+
+    /* ── COMPLETED TODAY ── */
+    .completed-item {
+      display: flex; align-items: center; gap: 0.7rem;
+      padding: 0.55rem 0.9rem;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      animation: fadeIn 0.25s ease;
+      border-left: 3px solid #15803d;
+    }
+    .completed-check { color: #15803d; font-size: 0.8rem; flex-shrink: 0; }
+    .completed-title { font-size: 0.83rem; color: var(--muted); text-decoration: line-through; font-family: 'Inter', sans-serif; flex: 1; }
+    .completed-time { font-size: 0.63rem; color: var(--light); font-family: 'Inter', sans-serif; white-space: nowrap; }
+
+    /* ── BACKLOG HISTORY ── */
+    .backlog-group { margin-bottom: 0.6rem; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; background: var(--card); }
+    .backlog-day-btn { width: 100%; display: flex; align-items: center; padding: 0.7rem 1rem; background: none; border: none; text-align: left; cursor: pointer; gap: 0.6rem; transition: background 0.15s; }
+    .backlog-day-btn:hover { background: var(--subtle); }
+    .backlog-day-label { font-size: 0.75rem; font-weight: 700; font-family: 'Inter', sans-serif; color: var(--ink); flex: 1; }
+    .backlog-day-count { font-size: 0.65rem; color: var(--muted); font-family: 'Inter', sans-serif; }
+    .backlog-caret { font-size: 0.6rem; color: var(--light); transition: transform 0.2s; }
+    .backlog-caret.open { transform: rotate(180deg); }
+    .backlog-tasks { display: none; border-top: 1px solid var(--subtle); }
+    .backlog-tasks.open { display: block; }
+    .backlog-task-item { display: flex; align-items: center; gap: 0.6rem; padding: 0.45rem 1rem; border-bottom: 1px solid var(--subtle); }
+    .backlog-task-item:last-child { border-bottom: none; }
+    .backlog-task-check { color: #15803d; font-size: 0.75rem; flex-shrink: 0; }
+    .backlog-task-title { font-size: 0.78rem; color: var(--muted); font-family: 'Inter', sans-serif; flex: 1; text-decoration: line-through; }
+    .backlog-task-time { font-size: 0.62rem; color: var(--light); font-family: 'Inter', sans-serif; white-space: nowrap; }
+    .backlog-empty { text-align: center; padding: 1.5rem; font-size: 0.78rem; color: var(--light); font-style: italic; }
+
+    /* ── FOOTER ── */
+    .site-footer { text-align: center; font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--light); border-top: 1px solid #ccc; padding: 0.8rem 2rem; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      .stats-strip { grid-template-columns: 1fr; }
+      .add-meta-row { gap: 0.4rem; }
+      .btn-add-task { width: 100%; text-align: center; margin-left: 0; margin-top: 0.4rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TICKER -->
+  <div class="ticker-wrap">
+    <div class="ticker-label">To-Do</div>
+    <div class="ticker-inner">
+      <div class="ticker-track" id="js-ticker">
+        <span style="color:rgba(255,255,255,0.5);font-size:.78rem;padding:0 2rem">Loading&hellip;</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- META BAR -->
+  <div class="meta-bar">
+    <div class="meta-bar-inner">
+      <span id="js-date"></span>
+      <span>Personal Edition &nbsp;&bull;&nbsp; Est. 2026</span>
+    </div>
+  </div>
+  <div class="masthead-wrap">
+    <div class="masthead">Personal Hub</div>
+    <div class="masthead-sub">Alfie Edworthy</div>
+  </div>
+  <hr class="rule-double">
+
+  <!-- NAV RIBBON -->
+  <div class="nav-ribbon">
+    <nav>
+      <a href="personal_hub.html" class="nav-home">&#8962; Home</a>
+      <a href="rics-study.html">RICS Study</a>
+      <div class="nav-dropdown">
+        <button class="nav-drop-btn">News <span class="nav-caret">▾</span></button>
+        <div class="nav-drop-menu">
+          <a href="world-news.html">World Affairs</a>
+          <a href="uk-politics-news.html">UK Politics</a>
+          <a href="us-politics-news.html">US Politics</a>
+          <a href="financial-news.html">Financial</a>
+          <a href="tech-news.html">Technology</a>
+        </div>
+      </div>
+      <a href="curiosity.html">Curiosity Corner</a>
+      <a href="philosophy.html">Philosophy Corner</a>
+      <div class="nav-dropdown">
+        <button class="nav-drop-btn">Recommendations <span class="nav-caret">▾</span></button>
+        <div class="nav-drop-menu">
+          <a href="reads.html">Books</a>
+          <a href="films.html">Films</a>
+        </div>
+      </div>
+      <a href="recipes.html">Recipes</a>
+      <a href="exercise.html">Exercise</a>
+      <div class="nav-divider"></div>
+      <div class="nav-dropdown">
+        <button class="nav-drop-btn">Organisation <span class="nav-caret">▾</span></button>
+        <div class="nav-drop-menu">
+          <a href="todo-lists.html" class="nav-active">To-Do Lists</a>
+          <a href="weekly-checkin.html">Weekly Check-In</a>
+          <a href="monthly-goals.html">Monthly Goals</a>
+          <a href="achievements.html">Achievements</a>
+          <a href="wishlist.html">Wishlist</a>
+        </div>
+      </div>
+      <a href="calendar.html">Calendar</a>
+    </nav>
+  </div>
+
+  <!-- PAGE -->
+  <div class="page-wrap">
+
+    <div class="page-title-row">
+      <span class="page-section-tag">Organisation</span>
+      <h1 class="page-title">To-Do</h1>
+    </div>
+
+    <!-- Stats Strip -->
+    <div class="stats-strip">
+      <div class="stat-card" id="stat-entered">
+        <div class="stat-label">Entered Today</div>
+        <div class="stat-value" id="entered-val">0</div>
+        <div class="stat-sub">tasks added today</div>
+      </div>
+      <div class="stat-card" id="stat-progress">
+        <div class="stat-label">Today&rsquo;s Progress</div>
+        <div class="stat-value" id="prog-val">—</div>
+        <div class="progress-bar-wrap"><div class="progress-bar-fill" id="prog-bar" style="width:0%"></div></div>
+        <div class="stat-sub" id="prog-sub">no tasks due today</div>
+      </div>
+    </div>
+
+    <!-- Quick-Add Form -->
+    <div class="add-card">
+      <form id="add-form" autocomplete="off">
+        <div class="add-title-row">
+          <input type="text" class="add-title-input" id="f-title" placeholder="What needs doing?" maxlength="200">
+          <div class="date-preset">
+            <button type="button" class="dp-quick" id="dp-today" onclick="setQuickDate('today')">Today</button>
+            <div class="dp-drop-wrap">
+              <button type="button" class="dp-drop-btn" id="dp-drop-btn" onclick="toggleDpMenu()">More ▾</button>
+              <div class="dp-menu" id="dp-menu">
+                <button type="button" onclick="setQuickDate('tomorrow')">Tomorrow</button>
+                <button type="button" onclick="setQuickDate('nextweek')">Next week</button>
+                <button type="button" onclick="setQuickDate('other')">Pick a date&hellip;</button>
+              </div>
+            </div>
+            <input type="date" class="dp-date-input" id="f-date" style="display:none">
+          </div>
+        </div>
+        <div class="add-meta-row">
+          <div class="pill-group" id="cat-group" title="Category">
+            <button type="button" class="pill-btn" data-cat="work">Work</button>
+            <button type="button" class="pill-btn" data-cat="personal">Personal</button>
+            <button type="button" class="pill-btn" data-cat="other">Other</button>
+          </div>
+          <div class="add-separator"></div>
+          <div class="pill-group" id="pri-group" title="Priority">
+            <button type="button" class="pill-btn" data-pri="low">Low</button>
+            <button type="button" class="pill-btn" data-pri="medium">Medium</button>
+            <button type="button" class="pill-btn" data-pri="high">High</button>
+          </div>
+          <button type="submit" class="btn-add-task">+ Add task</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Active Tasks -->
+    <div class="section-block">
+      <div class="section-hd">
+        <h2>Active</h2>
+        <span class="count-pill" id="active-count">0</span>
+      </div>
+      <div class="task-list" id="task-list"></div>
+    </div>
+
+    <!-- Completed Today -->
+    <div class="section-block" id="completed-section" style="display:none">
+      <div class="section-hd">
+        <h2>Completed Today</h2>
+        <span class="count-pill green" id="completed-count">0</span>
+      </div>
+      <div class="task-list" id="completed-list"></div>
+    </div>
+
+    <!-- Backlog History -->
+    <div class="section-block" id="backlog-section" style="display:none">
+      <div class="section-hd">
+        <h2>History</h2>
+      </div>
+      <div id="backlog-list"></div>
+    </div>
+
+  </div>
+
+  <footer class="site-footer">Personal Hub &mdash; Alfie Edworthy &mdash; Private &amp; Confidential</footer>
+
+  <script>
+  (function () {
+    'use strict';
+
+    // ── STORAGE KEYS ──────────────────────────────────────────────────────────
+    var STORE = 'ph_todos_v1';
+    var CAL_STORE = 'ph_calendar_v3';
+
+    // ── STATE ─────────────────────────────────────────────────────────────────
+    var tasks = [];    // active tasks
+    var backlog = {};  // { "YYYY-MM-DD": [completedTask, ...] }
+    var _editingId = null;
+    var _addCat = null;
+    var _addPri = null;
+    var _editCat = null;
+    var _editPri = null;
+    var _editDate = null;
+
+    // ── HELPERS ───────────────────────────────────────────────────────────────
+    function esc(s) { return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+    function uid() { return Date.now().toString(36) + Math.random().toString(36).slice(2,6); }
+    function pad(n) { return String(n).padStart(2,'0'); }
+    function toISO(d) { return d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate()); }
+    function todayISO() { return toISO(new Date()); }
+    function nowTimeStr() { var d = new Date(); return pad(d.getHours())+':'+pad(d.getMinutes()); }
+
+    function fmtDate(str) {
+      var d = new Date(str + 'T12:00:00');
+      return d.toLocaleDateString('en-GB', { weekday:'short', day:'numeric', month:'short' });
+    }
+    function fmtDateLong(str) {
+      var d = new Date(str + 'T12:00:00');
+      return d.toLocaleDateString('en-GB', { weekday:'long', day:'numeric', month:'long', year:'numeric' });
+    }
+    function fmtTime(str) {
+      if (!str) return '';
+      var p = str.split(':'), h = +p[0], m = p[1];
+      return (h%12||12)+':'+m+(h<12?'am':'pm');
+    }
+
+    function dueLabelHTML(dateStr) {
+      if (!dateStr) return '';
+      var t = todayISO();
+      var tom = toISO(new Date(new Date().getTime()+86400000));
+      if (dateStr < t) return '<span class="due-tag due-overdue">Overdue · ' + fmtDate(dateStr) + '</span>';
+      if (dateStr === t) return '<span class="due-tag due-today-tag">Today</span>';
+      if (dateStr === tom) return '<span class="due-tag due-normal">Tomorrow</span>';
+      return '<span class="due-tag due-normal">' + fmtDate(dateStr) + '</span>';
+    }
+
+    var CAT_COLORS = { work:'#1d4ed8', personal:'#7c3aed', fitness:'#dc2626', other:'#374151' };
+    var CAT_LABELS = { work:'Work', personal:'Personal', fitness:'Fitness', other:'Other', health:'Health' };
+    var PRI_LABELS = { high:'High', medium:'Medium', low:'Low' };
+    function calCat(c) { return c === 'fitness' ? 'sport' : (c || 'personal'); }
+
+    // ── PERSISTENCE ───────────────────────────────────────────────────────────
+    function load() {
+      try {
+        var raw = JSON.parse(localStorage.getItem(STORE) || '{}');
+        tasks   = Array.isArray(raw.tasks)  ? raw.tasks  : [];
+        backlog = (raw.backlog && typeof raw.backlog === 'object') ? raw.backlog : {};
+      } catch(_) { tasks = []; backlog = {}; }
+    }
+
+    function save() {
+      localStorage.setItem(STORE, JSON.stringify({ tasks: tasks, backlog: backlog }));
+    }
+
+    // ── CALENDAR INTEGRATION ──────────────────────────────────────────────────
+    function calLoad() {
+      try { return JSON.parse(localStorage.getItem(CAL_STORE) || '[]'); } catch(_) { return []; }
+    }
+    function calSave(evs) { localStorage.setItem(CAL_STORE, JSON.stringify(evs)); }
+
+    function addToCalendar(task) {
+      if (!task.dueDate) return null;
+      var calId = 'todo_' + task.id;
+      var evs = calLoad();
+      evs = evs.filter(function(e) { return e.id !== calId; });
+      evs.push({
+        id: calId, title: task.title,
+        category: 'todo',
+        date: task.dueDate,
+        startTime: null, endTime: null,
+        venue: '', notes: 'Added from To-Do list',
+        reminder: null, recurrence: null, recurrenceEnd: null,
+        completed: false
+      });
+      calSave(evs);
+      return calId;
+    }
+
+    function removeFromCalendar(calId) {
+      if (!calId) return;
+      var evs = calLoad().filter(function(e) { return e.id !== calId; });
+      calSave(evs);
+    }
+
+    // ── TASK OPERATIONS ───────────────────────────────────────────────────────
+    function addTask(title, dueDate, category, priority) {
+      var task = {
+        id: uid(), title: title.trim(),
+        dueDate: dueDate || null,
+        category: category || null,
+        priority: priority || null,
+        createdAt: Date.now(),
+        calEventId: null
+      };
+      task.calEventId = addToCalendar(task);
+      tasks.unshift(task);
+      save();
+      render();
+    }
+
+    function doComplete(id) {
+      var idx = tasks.findIndex(function(t) { return t.id === id; });
+      if (idx === -1) return;
+      var task = tasks.splice(idx, 1)[0];
+      var today = todayISO();
+      if (!backlog[today]) backlog[today] = [];
+      backlog[today].unshift({
+        id: task.id, title: task.title,
+        category: task.category, priority: task.priority,
+        dueDate: task.dueDate, completedAt: nowTimeStr()
+      });
+      removeFromCalendar(task.calEventId);
+      if (_editingId === id) _editingId = null;
+      save();
+      render();
+    }
+
+    function deleteTask(id) {
+      var t = tasks.find(function(t) { return t.id === id; });
+      if (t) removeFromCalendar(t.calEventId);
+      tasks = tasks.filter(function(t) { return t.id !== id; });
+      if (_editingId === id) _editingId = null;
+      save();
+      render();
+    }
+
+    function saveEdit(id) {
+      var t = tasks.find(function(t) { return t.id === id; });
+      if (!t) return;
+      var titleEl = document.getElementById('ef-title-' + id);
+      if (!titleEl) return;
+      var newTitle = titleEl.value.trim();
+      if (!newTitle) { titleEl.focus(); return; }
+      var newDate  = _editDate !== undefined ? _editDate : t.dueDate;
+
+      // Update calendar if date/title changed
+      if (t.calEventId && (newTitle !== t.title || newDate !== t.dueDate)) {
+        removeFromCalendar(t.calEventId);
+        t.calEventId = null;
+      }
+
+      t.title    = newTitle;
+      t.dueDate  = newDate || null;
+      t.category = _editCat || t.category;
+      t.priority = _editPri || t.priority;
+
+      if (t.dueDate && !t.calEventId) {
+        t.calEventId = addToCalendar(t);
+      }
+
+      _editingId = null;
+      save();
+      render();
+    }
+
+    // ── STATS ─────────────────────────────────────────────────────────────────
+    function getEnteredToday() {
+      var today = todayISO();
+      return tasks.filter(function(t) {
+        return toISO(new Date(t.createdAt)) === today;
+      }).length;
+    }
+
+    function getTodayStats() {
+      var today = todayISO();
+      var doneToday = (backlog[today] || []).length;
+      var dueToday  = tasks.filter(function(t) { return t.dueDate === today; }).length;
+      return { done: doneToday, active: dueToday, total: dueToday + doneToday };
+    }
+
+    // ── RENDER ────────────────────────────────────────────────────────────────
+    function render() {
+      renderStats();
+      renderTasks();
+      renderCompleted();
+      renderBacklog();
+    }
+
+    function renderStats() {
+      var entered = getEnteredToday();
+      var stats   = getTodayStats();
+
+      document.getElementById('entered-val').textContent = entered;
+
+      var pct = stats.total > 0 ? Math.round((stats.done / stats.total) * 100) : 0;
+      document.getElementById('prog-val').textContent = stats.total > 0 ? (stats.done + '/' + stats.total) : '—';
+      document.getElementById('prog-bar').style.width = (stats.total > 0 ? pct : 0) + '%';
+      document.getElementById('prog-sub').textContent = stats.total > 0
+        ? pct + '% of today\'s tasks done'
+        : 'no tasks due today';
+    }
+
+    function taskItemClass(task) {
+      var today = todayISO();
+      if (task.dueDate && task.dueDate < today) return ' overdue';
+      if (task.dueDate === today) return ' due-today';
+      return '';
+    }
+
+    function renderTasks() {
+      var list = document.getElementById('task-list');
+      document.getElementById('active-count').textContent = tasks.length;
+
+      if (tasks.length === 0) {
+        list.innerHTML = '<div class="empty-state"><span class="empty-icon">✓</span><p class="empty-text">All clear — add a task above to get started.</p></div>';
+        return;
+      }
+
+      // Sort: high priority first, then by dueDate
+      var PRI_ORDER = { high: 0, medium: 1, low: 2 };
+      var sorted = tasks.slice().sort(function(a,b) {
+        var aP = PRI_ORDER[a.priority] !== undefined ? PRI_ORDER[a.priority] : 3;
+        var bP = PRI_ORDER[b.priority] !== undefined ? PRI_ORDER[b.priority] : 3;
+        if (aP !== bP) return aP - bP;
+        var aD = a.dueDate || 'zzzz', bD = b.dueDate || 'zzzz';
+        return aD.localeCompare(bD);
+      });
+
+      list.innerHTML = sorted.map(function(task) {
+        if (task.id === _editingId) return renderEditForm(task);
+        return renderTaskItem(task);
+      }).join('');
+    }
+
+    function renderTaskItem(task) {
+      var priHtml = task.priority
+        ? '<span class="pri-badge pri-' + task.priority + '">' + (PRI_LABELS[task.priority]||'') + '</span>' : '';
+      var catHtml = task.category
+        ? '<span class="cat-dot cat-' + task.category + '"></span><span class="cat-label">' + (CAT_LABELS[task.category]||'') + '</span>' : '';
+      var dueHtml = dueLabelHTML(task.dueDate);
+
+      var priClass = task.priority ? ' pri-' + task.priority : '';
+      return '<div class="task-item' + taskItemClass(task) + priClass + '" data-task-id="' + task.id + '">'
+        + '<label class="task-check" title="Mark complete">'
+        + '<input type="checkbox" onchange="handleComplete(\'' + task.id + '\')">'
+        + '<div class="check-circle"></div>'
+        + '</label>'
+        + '<div class="task-body">'
+        +   '<div class="task-title-line"><span class="task-title">' + esc(task.title) + '</span>' + priHtml + '</div>'
+        +   '<div class="task-meta">' + catHtml + dueHtml + '</div>'
+        + '</div>'
+        + '<div class="task-actions">'
+        +   '<button class="btn-icon-sm" onclick="startEdit(\'' + task.id + '\')" title="Edit">✎</button>'
+        +   '<button class="btn-icon-sm del" onclick="deleteTask(\'' + task.id + '\')" title="Delete">✕</button>'
+        + '</div>'
+        + '</div>';
+    }
+
+    function renderEditForm(task) {
+      if (_editCat === null) _editCat = task.category;
+      if (_editPri === null) _editPri = task.priority;
+
+      var cats = ['work','personal','other'];
+      var pris = ['low','medium','high'];
+
+      var catPills = cats.map(function(c) {
+        var active = ((_editCat||task.category) === c) ? ' active-' + c : '';
+        return '<button type="button" class="pill-btn' + active + '" onclick="setEditCat(\'' + task.id + '\',\'' + c + '\')">' + CAT_LABELS[c] + '</button>';
+      }).join('');
+      var priPills = pris.map(function(p) {
+        var active = ((_editPri||task.priority) === p) ? ' active-' + p : '';
+        return '<button type="button" class="pill-btn' + active + '" onclick="setEditPri(\'' + task.id + '\',\'' + p + '\')">' + PRI_LABELS[p] + '</button>';
+      }).join('');
+
+      // Build edit date preset label
+      var ed = _editDate;
+      var edToday = todayISO();
+      var edD1 = new Date(); edD1.setDate(edD1.getDate()+1); var edTomorrow = toISO(edD1);
+      var edD2 = new Date(); edD2.setDate(edD2.getDate()+7); var edNextweek = toISO(edD2);
+      var edIsToday = ed === edToday;
+      var edDropLabel = !ed ? 'Date' : (ed === edTomorrow ? 'Tomorrow' : (ed === edNextweek ? 'Next week' : (!edIsToday ? fmtDate(ed) : 'Date')));
+      var edDropActive = ed && !edIsToday;
+
+      return '<div class="task-item" data-task-id="' + task.id + '">'
+        + '<div class="edit-form" style="width:100%">'
+        +   '<input type="text" class="edit-title-input" id="ef-title-' + task.id + '" value="' + esc(task.title) + '" placeholder="Task title" maxlength="200">'
+        +   '<div class="edit-meta-row">'
+        +     '<div class="date-preset">'
+        +       '<button type="button" class="dp-quick' + (edIsToday?' active':'') + '" id="ep-today-' + task.id + '" onclick="setEditQuickDate(\'' + task.id + '\',\'today\')">Today</button>'
+        +       '<div class="dp-drop-wrap">'
+        +         '<button type="button" class="dp-drop-btn' + (edDropActive?' active':'') + '" id="ep-drop-' + task.id + '" onclick="toggleEditDp(\'' + task.id + '\')">' + edDropLabel + ' \u25be</button>'
+        +         '<div class="dp-menu" id="ep-menu-' + task.id + '">'
+        +           '<button type="button" onclick="setEditQuickDate(\'' + task.id + '\',\'tomorrow\')">Tomorrow</button>'
+        +           '<button type="button" onclick="setEditQuickDate(\'' + task.id + '\',\'nextweek\')">Next week</button>'
+        +           '<button type="button" onclick="setEditQuickDate(\'' + task.id + '\',\'other\')">Pick a date\u2026</button>'
+        +           '<button type="button" onclick="setEditQuickDate(\'' + task.id + '\',\'none\')">No date</button>'
+        +         '</div>'
+        +       '</div>'
+        +       '<input type="date" class="dp-date-input" id="ep-date-' + task.id + '" style="display:none" onchange="editDpPickerChange(\'' + task.id + '\',this.value)">'
+        +     '</div>'
+        +     '<div class="pill-group">' + catPills + '</div>'
+        +     '<div class="pill-group">' + priPills + '</div>'
+        +   '</div>'
+        +   '<div class="edit-actions">'
+        +     '<button type="button" class="btn-save-edit" onclick="saveEdit(\'' + task.id + '\')">Save</button>'
+        +     '<button type="button" class="btn-cancel-edit" onclick="cancelEdit()">Cancel</button>'
+        +   '</div>'
+        + '</div>'
+        + '</div>';
+    }
+
+    function renderCompleted() {
+      var today = todayISO();
+      var done  = backlog[today] || [];
+      var sec   = document.getElementById('completed-section');
+      var list  = document.getElementById('completed-list');
+
+      if (done.length === 0) { sec.style.display = 'none'; return; }
+      sec.style.display = 'block';
+      document.getElementById('completed-count').textContent = done.length;
+
+      list.innerHTML = done.map(function(t) {
+        return '<div class="completed-item">'
+          + '<span class="completed-check">✓</span>'
+          + '<span class="completed-title">' + esc(t.title) + '</span>'
+          + '<span class="completed-time">' + fmtTime(t.completedAt) + '</span>'
+          + '</div>';
+      }).join('');
+    }
+
+    function renderBacklog() {
+      var today = todayISO();
+      var dates = Object.keys(backlog)
+        .filter(function(d) { return d !== today && backlog[d].length > 0; })
+        .sort().reverse();
+
+      var sec  = document.getElementById('backlog-section');
+      var list = document.getElementById('backlog-list');
+
+      if (dates.length === 0) { sec.style.display = 'none'; return; }
+      sec.style.display = 'block';
+
+      list.innerHTML = dates.map(function(date) {
+        var items = backlog[date];
+        var rows  = items.map(function(t) {
+          return '<div class="backlog-task-item">'
+            + '<span class="backlog-task-check">✓</span>'
+            + '<span class="backlog-task-title">' + esc(t.title) + '</span>'
+            + '<span class="backlog-task-time">' + fmtTime(t.completedAt) + '</span>'
+            + '</div>';
+        }).join('');
+
+        return '<div class="backlog-group">'
+          + '<button class="backlog-day-btn" onclick="toggleBacklogDay(\'' + date + '\')">'
+          +   '<span class="backlog-day-label">' + fmtDateLong(date) + '</span>'
+          +   '<span class="backlog-day-count">' + items.length + ' task' + (items.length > 1 ? 's' : '') + '</span>'
+          +   '<span class="backlog-caret" id="bc-' + date + '">▾</span>'
+          + '</button>'
+          + '<div class="backlog-tasks" id="bt-' + date + '">' + rows + '</div>'
+          + '</div>';
+      }).join('');
+    }
+
+    // ── WINDOW-EXPOSED HANDLERS ────────────────────────────────────────────────
+    window.handleComplete = function(id) {
+      var item = document.querySelector('[data-task-id="' + id + '"]');
+      if (item && !item.querySelector('.edit-form')) {
+        item.classList.add('completing');
+        setTimeout(function() { doComplete(id); }, 270);
+      } else {
+        doComplete(id);
+      }
+    };
+
+    window.deleteTask = function(id) {
+      var item = document.querySelector('[data-task-id="' + id + '"]');
+      if (item) {
+        item.classList.add('completing');
+        setTimeout(function() { deleteTask_do(id); }, 270);
+      } else { deleteTask_do(id); }
+    };
+    function deleteTask_do(id) {
+      var t = tasks.find(function(t) { return t.id === id; });
+      if (t) removeFromCalendar(t.calEventId);
+      tasks = tasks.filter(function(t) { return t.id !== id; });
+      if (_editingId === id) _editingId = null;
+      save(); render();
+    }
+
+    window.startEdit = function(id) {
+      _editingId = id;
+      var task = tasks.find(function(t) { return t.id === id; });
+      _editCat  = task ? task.category : null;
+      _editPri  = task ? task.priority : null;
+      _editDate = task ? (task.dueDate || null) : null;
+      render();
+      var input = document.getElementById('ef-title-' + id);
+      if (input) { input.focus(); input.select(); }
+    };
+
+    window.cancelEdit = function() { _editingId = null; _editCat = null; _editPri = null; _editDate = null; render(); };
+    window.saveEdit   = saveEdit;
+
+    window.setEditCat = function(id, c) {
+      _editCat = (_editCat === c) ? null : c;
+      var task = tasks.find(function(t) { return t.id === id; });
+      // Re-render only the edit form row
+      var item = document.querySelector('[data-task-id="' + id + '"]');
+      if (item && task) item.outerHTML = renderEditForm(task);
+    };
+    window.setEditPri = function(id, p) {
+      _editPri = (_editPri === p) ? null : p;
+      var task = tasks.find(function(t) { return t.id === id; });
+      var item = document.querySelector('[data-task-id="' + id + '"]');
+      if (item && task) item.outerHTML = renderEditForm(task);
+    };
+
+    window.setEditQuickDate = function(id, preset) {
+      var d = new Date();
+      if (preset === 'today')    { _editDate = todayISO(); }
+      else if (preset === 'tomorrow') { d.setDate(d.getDate()+1); _editDate = toISO(d); }
+      else if (preset === 'nextweek') { d.setDate(d.getDate()+7); _editDate = toISO(d); }
+      else if (preset === 'none') { _editDate = null; }
+      else if (preset === 'other') {
+        var inp = document.getElementById('ep-date-'+id);
+        if (inp) { inp.style.display = 'inline-block'; inp.focus(); }
+        var menu = document.getElementById('ep-menu-'+id);
+        if (menu) menu.classList.remove('open');
+        return;
+      }
+      var menu2 = document.getElementById('ep-menu-'+id);
+      if (menu2) menu2.classList.remove('open');
+      updateEditDpDisplay(id);
+    };
+
+    window.toggleEditDp = function(id) {
+      var menu = document.getElementById('ep-menu-'+id);
+      if (menu) menu.classList.toggle('open');
+    };
+
+    window.editDpPickerChange = function(id, value) {
+      if (value) {
+        _editDate = value;
+        var inp = document.getElementById('ep-date-'+id);
+        if (inp) inp.style.display = 'none';
+        updateEditDpDisplay(id);
+      }
+    };
+
+    function updateEditDpDisplay(id) {
+      var todayBtn = document.getElementById('ep-today-'+id);
+      var dropBtn  = document.getElementById('ep-drop-'+id);
+      var ed = _editDate;
+      var today = todayISO();
+      var d1 = new Date(); d1.setDate(d1.getDate()+1); var tomorrow = toISO(d1);
+      var d2 = new Date(); d2.setDate(d2.getDate()+7); var nextweek = toISO(d2);
+      var isToday = ed === today;
+      if (todayBtn) todayBtn.classList.toggle('active', isToday);
+      if (dropBtn) {
+        var isOther = ed && !isToday;
+        dropBtn.classList.toggle('active', !!isOther);
+        if (!ed)                  dropBtn.textContent = 'Date \u25be';
+        else if (ed === tomorrow) dropBtn.textContent = 'Tomorrow \u25be';
+        else if (ed === nextweek) dropBtn.textContent = 'Next week \u25be';
+        else if (isOther)         dropBtn.textContent = fmtDate(ed) + ' \u25be';
+        else                      dropBtn.textContent = 'Date \u25be';
+      }
+    }
+
+    window.toggleBacklogDay = function(date) {
+      var panel  = document.getElementById('bt-' + date);
+      var caret  = document.getElementById('bc-' + date);
+      if (!panel) return;
+      var isOpen = panel.classList.contains('open');
+      panel.classList.toggle('open', !isOpen);
+      if (caret) caret.classList.toggle('open', !isOpen);
+    };
+
+    // ── DATE PRESET LOGIC ────────────────────────────────────────────────────
+    var _addDate = null;
+    var _dpOpen  = false;
+
+    function closeDpMenu() {
+      _dpOpen = false;
+      var menu = document.getElementById('dp-menu');
+      if (menu) menu.classList.remove('open');
+    }
+
+    function updateDpDisplay() {
+      var todayBtn = document.getElementById('dp-today');
+      var dropBtn  = document.getElementById('dp-drop-btn');
+      if (!_addDate) {
+        if (todayBtn) { todayBtn.classList.remove('active'); }
+        if (dropBtn)  { dropBtn.classList.remove('active'); dropBtn.textContent = 'More \u25be'; }
+        return;
+      }
+      var today = todayISO();
+      var d1 = new Date(); d1.setDate(d1.getDate()+1); var tomorrow = toISO(d1);
+      var d2 = new Date(); d2.setDate(d2.getDate()+7); var nextweek = toISO(d2);
+      if (todayBtn) todayBtn.classList.toggle('active', _addDate === today);
+      if (dropBtn) {
+        var isOther = _addDate !== today;
+        dropBtn.classList.toggle('active', isOther);
+        if (_addDate === tomorrow)      dropBtn.textContent = 'Tomorrow \u25be';
+        else if (_addDate === nextweek) dropBtn.textContent = 'Next week \u25be';
+        else if (isOther)               dropBtn.textContent = fmtDate(_addDate) + ' \u25be';
+        else                            dropBtn.textContent = 'More \u25be';
+      }
+    }
+
+    window.setQuickDate = function(preset) {
+      var d = new Date();
+      if (preset === 'today') {
+        _addDate = todayISO();
+        closeDpMenu();
+      } else if (preset === 'tomorrow') {
+        d.setDate(d.getDate()+1); _addDate = toISO(d);
+        closeDpMenu();
+      } else if (preset === 'nextweek') {
+        d.setDate(d.getDate()+7); _addDate = toISO(d);
+        closeDpMenu();
+      } else if (preset === 'other') {
+        var inp = document.getElementById('f-date');
+        inp.style.display = 'inline-block';
+        inp.focus();
+        closeDpMenu();
+        return;
+      }
+      updateDpDisplay();
+    };
+
+    window.toggleDpMenu = function() {
+      _dpOpen = !_dpOpen;
+      document.getElementById('dp-menu').classList.toggle('open', _dpOpen);
+    };
+
+    document.getElementById('f-date').addEventListener('change', function() {
+      if (this.value) {
+        _addDate = this.value;
+        this.style.display = 'none';
+        updateDpDisplay();
+      }
+    });
+
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest || !e.target.closest('.dp-drop-wrap')) closeDpMenu();
+    });
+
+    // ── ADD FORM LOGIC ────────────────────────────────────────────────────────
+    document.querySelectorAll('#cat-group .pill-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var c = this.getAttribute('data-cat');
+        _addCat = (_addCat === c) ? null : c;
+        document.querySelectorAll('#cat-group .pill-btn').forEach(function(b) {
+          var bc = b.getAttribute('data-cat');
+          b.className = 'pill-btn' + (bc === _addCat ? ' active-' + bc : '');
+        });
+      });
+    });
+
+    document.querySelectorAll('#pri-group .pill-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var p = this.getAttribute('data-pri');
+        _addPri = (_addPri === p) ? null : p;
+        document.querySelectorAll('#pri-group .pill-btn').forEach(function(b) {
+          var bp = b.getAttribute('data-pri');
+          b.className = 'pill-btn' + (bp === _addPri ? ' active-' + bp : '');
+        });
+      });
+    });
+
+    document.getElementById('add-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var title = document.getElementById('f-title').value.trim();
+      if (!title) { document.getElementById('f-title').focus(); return; }
+      addTask(title, _addDate, _addCat, _addPri);
+      // Reset form
+      document.getElementById('f-title').value = '';
+      document.getElementById('f-date').value  = '';
+      document.getElementById('f-date').style.display = 'none';
+      _addDate = null; _addCat = null; _addPri = null;
+      document.querySelectorAll('#cat-group .pill-btn, #pri-group .pill-btn').forEach(function(b) {
+        b.className = 'pill-btn';
+      });
+      updateDpDisplay();
+      document.getElementById('f-title').focus();
+    });
+
+    // ── NAV DROPDOWN ──────────────────────────────────────────────────────────
+    (function() {
+      document.querySelectorAll('.nav-drop-btn').forEach(function(btn) {
+        btn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          var menu = btn.nextElementSibling;
+          var isOpen = menu.style.display === 'flex';
+          document.querySelectorAll('.nav-drop-menu').forEach(function(m) { m.style.display = ''; });
+          if (!isOpen) menu.style.display = 'flex';
+        });
+      });
+      document.addEventListener('click', function() {
+        document.querySelectorAll('.nav-drop-menu').forEach(function(m) { m.style.display = ''; });
+      });
+    })();
+
+    // ── META DATE ────────────────────────────────────────────────────────────
+    document.getElementById('js-date').textContent =
+      new Date().toLocaleDateString('en-GB', { weekday:'long', day:'numeric', month:'long', year:'numeric' });
+
+    // ── TICKER ───────────────────────────────────────────────────────────────
+    function renderTicker() {
+      var headlines = ['World leaders gather for emergency climate summit in Geneva','Global markets steady as central banks signal rate pause','UN Security Council meets over escalating tensions in Middle East','European Union agrees new trade framework with South-East Asia','Scientists announce breakthrough in carbon capture technology','NATO allies pledge increased defence spending at Brussels meeting','IMF revises global growth forecast upward for 2026','Historic ceasefire agreement reached after months of negotiations','G7 nations commit to new framework on artificial intelligence governance','Record temperatures recorded across southern Europe this week','World Health Organisation warns of emerging respiratory virus strain','African Union summit focuses on infrastructure investment drive'];
+      var t = document.getElementById('js-ticker');
+      if (!t) return;
+      var mk = function(a){ return a.map(function(x){ return '<span style="color:#fff;font-family:\'Source Serif 4\',serif;font-size:0.78rem;font-weight:600;padding:0 2rem;">'+x+'</span><span class="ticker-sep">&#124;</span>'; }).join(''); };
+      t.innerHTML = mk(headlines) + mk(headlines);
+      requestAnimationFrame(function(){ t.style.animationDuration = (t.scrollWidth/2/60) + 's'; });
+    }
+
+    // ── INIT ─────────────────────────────────────────────────────────────────
+    load();
+    render();
+    renderTicker();
+
+  })();
+  </script>
+</body>
+</html>

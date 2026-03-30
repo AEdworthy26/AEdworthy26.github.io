@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RICS Study — Personal Hub</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink:    #0d0d0d;
+      --paper:  #f4f0e6;
+      --rule:   #1a1a1a;
+      --muted:  #555;
+      --light:  #888;
+      --blue:   #003399;
+      --blue-lt: #e8edf8;
+      --green:  #1a5c2a;
+      --green-lt: #e8f2eb;
+      --amber:  #7a4a00;
+      --amber-lt: #fdf3e0;
+    }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: 'Source Serif 4', Georgia, serif;
+      min-height: 100vh;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ────────────────── NEWS TICKER ────────────────── */
+    .ticker-wrap {
+      background: #111;
+      overflow: hidden;
+      display: flex;
+      align-items: stretch;
+      height: 2.4rem;
+    }
+    .ticker-label {
+      background: #e8000d;
+      color: #fff;
+      font-family: 'Source Serif 4', serif;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      padding: 0 1.2rem;
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+      flex-shrink: 0;
+      gap: 0.5rem;
+    }
+    .ticker-label::before {
+      content: '';
+      display: inline-block;
+      width: 7px; height: 7px;
+      background: #fff;
+      border-radius: 50%;
+      animation: pulse-dot 1.2s ease-in-out infinite;
+    }
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50%       { opacity: 0.4; transform: scale(0.7); }
+    }
+    .ticker-inner { overflow: hidden; flex: 1; display: flex; align-items: center; }
+    .ticker-track {
+      display: flex; align-items: center;
+      white-space: nowrap; will-change: transform;
+      animation: ticker-scroll 40s linear infinite;
+    }
+    .ticker-track:hover { animation-play-state: paused; cursor: default; }
+    .ticker-track a {
+      color: #fff; font-family: 'Source Serif 4', serif;
+      font-size: 0.78rem; font-weight: 600;
+      padding: 0 2rem; text-decoration: none; transition: color 0.15s;
+    }
+    .ticker-track a:hover { color: #e8000d; text-decoration: none; cursor: pointer; }
+    .ticker-track .ticker-sep { color: #e8000d; font-size: 1rem; font-weight: 700; flex-shrink: 0; line-height: 1; }
+    @keyframes ticker-scroll {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* ────────────────── HEADER ────────────────── */
+    .meta-bar { max-width: 1200px; margin: 0 auto; padding: 1rem 1.5rem 0; }
+    .meta-bar-inner { display: flex; justify-content: space-between; align-items: center; font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); border-bottom: 1px solid var(--rule); padding-bottom: 0.4rem; margin-bottom: 0.6rem; }
+    .masthead-wrap { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; text-align: center; }
+    .masthead { font-family: 'Playfair Display', Georgia, serif; font-weight: 900; font-size: clamp(2.4rem, 5vw, 4.2rem); line-height: 1; letter-spacing: -0.01em; }
+    .masthead-sub { font-size: 0.75rem; font-style: italic; color: var(--muted); margin-top: 0.2rem; margin-bottom: 0.3rem; }
+    .rule-single { border: none; border-top: 1px solid var(--rule); margin: 0.3rem 0; }
+    .rule-double { border: none; border-top: 3px double var(--rule); max-width: 1200px; margin: 0 auto; }
+
+    /* ────────────────── NAV RIBBON ────────────────── */
+    .nav-ribbon { background: linear-gradient(90deg, #4b5563 0%, #1f2937 100%); }
+    .nav-ribbon nav {
+      max-width: 1600px; margin: 0 auto; padding: 0 2rem;
+      display: flex; align-items: center; justify-content: center; gap: 0.3rem;
+    }
+    .nav-ribbon nav a {
+      color: rgba(255,255,255,0.9);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 0.72rem; font-weight: 500;
+      letter-spacing: 0.04em; text-transform: uppercase;
+      padding: 0.5rem 0.85rem; border-radius: 5px;
+      transition: background 0.15s, color 0.15s; white-space: nowrap;
+    }
+    .nav-ribbon nav a:hover { background: rgba(255,255,255,0.18); color: #fff; text-decoration: none; }
+    .nav-ribbon nav a.nav-home { color: #fff; font-weight: 700; margin-right: 0.4rem; padding-right: 1rem; border-right: 1px solid rgba(255,255,255,0.25); border-radius: 0; }
+    .nav-ribbon nav a.nav-active { background: rgba(255,255,255,0.22); color: #fff; }
+    .nav-ribbon nav .nav-spacer { flex: 1; height: 1px; background: rgba(255,255,255,0.25); margin: 0 0.5rem; }
+
+    /* ────────────────── PAGE WRAPPER ────────────────── */
+    .page-wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem 3rem;
+    }
+
+    /* ── Section label bar ── */
+    .section-ribbon {
+      display: flex; align-items: center; justify-content: space-between;
+      font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--muted); border-bottom: 1px solid #bbb;
+      padding: 0.5rem 0; margin-bottom: 1.5rem;
+    }
+    .section-ribbon .section-ribbon-title {
+      font-weight: 700; color: var(--blue); letter-spacing: 0.18em;
+    }
+
+    /* ────────────────── ARTICLE HERO ────────────────── */
+    .article-hero {
+      border-bottom: 3px double var(--rule);
+      padding-bottom: 1.4rem;
+      margin-bottom: 1.8rem;
+    }
+    .article-meta {
+      display: flex; align-items: center; gap: 1rem;
+      font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--muted); margin-bottom: 0.8rem;
+    }
+    .article-meta .topic-tag {
+      background: var(--blue); color: #fff;
+      padding: 0.2rem 0.6rem; border-radius: 2px;
+      font-weight: 700; font-size: 0.62rem; letter-spacing: 0.18em;
+    }
+    .article-meta .reading-time {
+      display: flex; align-items: center; gap: 0.35rem;
+    }
+    .article-meta .reading-time::before {
+      content: '◷'; font-size: 0.85rem; color: var(--muted);
+    }
+    .article-meta .level-badge {
+      padding: 0.2rem 0.55rem; border-radius: 2px;
+      font-weight: 700; font-size: 0.62rem; letter-spacing: 0.15em;
+      border: 1px solid currentColor;
+    }
+    .level-badge-3 { color: var(--blue); }
+    .level-badge-2 { color: var(--green); }
+    .level-badge-1 { color: var(--muted); }
+    .article-meta .cycle-day {
+      font-size: 0.65rem; color: var(--light); letter-spacing: 0.1em;
+    }
+    .article-title {
+      font-family: 'Playfair Display', serif;
+      font-weight: 900;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      line-height: 1.1; letter-spacing: -0.01em;
+      color: var(--ink); margin-bottom: 1rem;
+    }
+    .article-intro-standfirst {
+      font-size: 1.05rem; font-weight: 600;
+      line-height: 1.65; color: var(--ink);
+      border-left: 3px solid var(--blue);
+      padding-left: 1rem;
+      max-width: 780px;
+    }
+
+    /* ────────────────── ARTICLE HERO IMAGE ────────────────── */
+    .hero-image-wrap {
+      margin-bottom: 1.8rem;
+      position: relative;
+    }
+    .hero-image-wrap img {
+      width: 100%; max-height: 420px;
+      object-fit: cover; display: block;
+      border: 1px solid #ccc;
+    }
+    .hero-image-wrap .image-placeholder {
+      width: 100%; height: 320px;
+      background: #e0dbd0;
+      display: flex; align-items: center; justify-content: center;
+      border: 1px solid #ccc; color: var(--light);
+      font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;
+      flex-direction: column; gap: 0.5rem;
+    }
+    .hero-image-wrap .image-placeholder::before {
+      content: '⬜';
+      font-size: 2.5rem; opacity: 0.4;
+    }
+    .hero-image-caption {
+      font-size: 0.7rem; color: var(--muted); font-style: italic;
+      padding: 0.4rem 0 0; border-top: 1px solid #ccc; margin-top: 0.3rem;
+    }
+
+    /* ────────────────── TWO-COLUMN LAYOUT ────────────────── */
+    .article-layout {
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 0;
+      align-items: start;
+    }
+    .article-main {
+      padding-right: 2.5rem;
+      border-right: 1px solid var(--rule);
+    }
+    .article-sidebar {
+      padding-left: 2rem;
+    }
+
+    /* ────────────────── ARTICLE SECTIONS ────────────────── */
+    .article-section {
+      margin-bottom: 2.2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid #ccc;
+    }
+    .article-section:last-child {
+      border-bottom: none;
+    }
+    .article-section-label {
+      font-size: 0.62rem; font-weight: 700;
+      letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--blue); display: block; margin-bottom: 0.6rem;
+    }
+    .article-section h2 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700; font-size: 1.35rem;
+      line-height: 1.25; margin-bottom: 0.9rem;
+      border-bottom: 1px solid #ccc; padding-bottom: 0.5rem;
+    }
+    .article-section h3 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700; font-size: 1.05rem;
+      line-height: 1.3; margin: 1.2rem 0 0.5rem;
+      color: var(--ink);
+    }
+    .article-section p {
+      font-size: 0.9rem; line-height: 1.85;
+      color: var(--muted); margin-bottom: 0.75rem;
+    }
+    .article-section ul, .article-section ol {
+      padding-left: 1.4rem; margin-bottom: 0.8rem;
+    }
+    .article-section li {
+      font-size: 0.9rem; line-height: 1.75;
+      color: var(--muted); margin-bottom: 0.3rem;
+    }
+    .article-section li strong { color: var(--ink); }
+
+    /* Key term callout */
+    .key-term {
+      background: var(--blue-lt);
+      border-left: 3px solid var(--blue);
+      padding: 0.75rem 1rem;
+      margin: 1rem 0; border-radius: 0 2px 2px 0;
+    }
+    .key-term strong {
+      display: block; font-size: 0.65rem; letter-spacing: 0.15em;
+      text-transform: uppercase; color: var(--blue); margin-bottom: 0.3rem;
+    }
+    .key-term p {
+      font-size: 0.85rem; line-height: 1.6; margin: 0; color: var(--ink);
+    }
+
+    /* Tip/note callout */
+    .callout-tip {
+      background: var(--green-lt);
+      border-left: 3px solid var(--green);
+      padding: 0.75rem 1rem; margin: 1rem 0; border-radius: 0 2px 2px 0;
+    }
+    .callout-tip strong {
+      display: block; font-size: 0.65rem; letter-spacing: 0.15em;
+      text-transform: uppercase; color: var(--green); margin-bottom: 0.3rem;
+    }
+    .callout-tip p { font-size: 0.85rem; line-height: 1.6; margin: 0; color: var(--ink); }
+
+    /* Warning callout */
+    .callout-warn {
+      background: var(--amber-lt);
+      border-left: 3px solid var(--amber);
+      padding: 0.75rem 1rem; margin: 1rem 0; border-radius: 0 2px 2px 0;
+    }
+    .callout-warn strong {
+      display: block; font-size: 0.65rem; letter-spacing: 0.15em;
+      text-transform: uppercase; color: var(--amber); margin-bottom: 0.3rem;
+    }
+    .callout-warn p { font-size: 0.85rem; line-height: 1.6; margin: 0; color: var(--ink); }
+
+    /* ────────────────── DIAGRAMS / TABLES ────────────────── */
+    .diagram-wrap {
+      margin: 1.2rem 0;
+      border: 1px solid #ccc;
+      border-radius: 2px;
+      overflow: hidden;
+    }
+    .diagram-label {
+      background: #e8e3d8; border-bottom: 1px solid #ccc;
+      font-size: 0.62rem; letter-spacing: 0.15em; text-transform: uppercase;
+      font-weight: 700; color: var(--muted); padding: 0.4rem 0.75rem;
+    }
+    .diagram-placeholder {
+      min-height: 200px; background: #f0ece3;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--light); font-size: 0.78rem;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      flex-direction: column; gap: 0.5rem;
+    }
+    .diagram-placeholder::before { content: '⬜'; font-size: 2rem; opacity: 0.4; }
+
+    /* Data table */
+    .data-table {
+      width: 100%; border-collapse: collapse;
+      font-size: 0.82rem;
+    }
+    .data-table thead tr {
+      background: var(--ink); color: #fff;
+    }
+    .data-table thead th {
+      font-family: 'Source Serif 4', serif;
+      font-weight: 700; font-size: 0.7rem;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      padding: 0.5rem 0.75rem; text-align: left;
+    }
+    .data-table tbody tr { border-bottom: 1px solid #ddd; }
+    .data-table tbody tr:nth-child(even) { background: #ede9df; }
+    .data-table tbody td {
+      padding: 0.5rem 0.75rem; color: var(--muted); line-height: 1.5;
+    }
+    .data-table tbody td strong { color: var(--ink); }
+
+    /* ────────────────── SUMMARY BOX ────────────────── */
+    .summary-box {
+      border-top: 3px double var(--rule);
+      border-bottom: 1px solid var(--rule);
+      padding: 1.4rem 0 1.6rem;
+      margin: 0.5rem 0 1.5rem;
+    }
+    .summary-box .summary-header {
+      font-size: 0.62rem; letter-spacing: 0.22em;
+      text-transform: uppercase; color: var(--blue);
+      font-weight: 700; margin-bottom: 1rem;
+    }
+    .summary-box ul { padding-left: 1.1rem; }
+    .summary-box li {
+      font-size: 0.9rem; line-height: 1.8;
+      color: var(--ink); margin-bottom: 0.5rem;
+    }
+    .summary-box li::marker { color: var(--blue); }
+
+    /* ────────────────── SIDEBAR ────────────────── */
+    /* ── Q&A ── */
+    .sidebar-section {
+      margin-bottom: 2rem;
+      padding-bottom: 1.8rem;
+      border-bottom: 1px solid #ccc;
+    }
+    .sidebar-section:last-child { border-bottom: none; }
+
+    .sidebar-label {
+      font-size: 0.62rem; font-weight: 700;
+      letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--blue); display: block; margin-bottom: 0.5rem;
+    }
+    .sidebar-section h3 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700; font-size: 1rem;
+      border-bottom: 1px solid #ccc; padding-bottom: 0.4rem;
+      margin-bottom: 1rem; line-height: 1.3;
+    }
+
+    /* Q&A items */
+    .qa-item {
+      margin-bottom: 1.2rem;
+      padding-bottom: 1.1rem;
+      border-bottom: 1px dashed #ccc;
+    }
+    .qa-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+    .qa-question {
+      font-size: 0.82rem; font-weight: 700;
+      color: var(--ink); line-height: 1.5; margin-bottom: 0.4rem;
+      display: flex; gap: 0.5rem;
+    }
+    .qa-question::before {
+      content: 'Q.'; font-weight: 900; color: var(--blue); flex-shrink: 0;
+    }
+    .qa-answer {
+      font-size: 0.8rem; line-height: 1.7; color: var(--muted);
+      padding-left: 1.3rem;
+      /* Initially collapsed — toggled by JS */
+      max-height: 0; overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+    .qa-answer.open { max-height: 400px; }
+    .qa-toggle {
+      display: inline-block; font-size: 0.62rem;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--blue); cursor: pointer; margin-left: 1.3rem;
+      font-weight: 700; border: none; background: none;
+      padding: 0; font-family: inherit;
+    }
+    .qa-toggle:hover { text-decoration: underline; }
+
+    /* ── Real Estate News ── */
+    .news-item {
+      margin-bottom: 1rem; padding-bottom: 1rem;
+      border-bottom: 1px solid #e0dbd0;
+    }
+    .news-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+    .news-item .news-tag {
+      font-size: 0.6rem; letter-spacing: 0.15em;
+      text-transform: uppercase; font-weight: 700;
+      color: var(--blue); display: block; margin-bottom: 0.2rem;
+    }
+    .news-item h4 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700; font-size: 0.88rem;
+      line-height: 1.35; margin-bottom: 0.3rem;
+    }
+    .news-item p {
+      font-size: 0.76rem; line-height: 1.6; color: var(--muted);
+    }
+
+    /* Progress meter */
+    .progress-strip {
+      border: 1px solid #ccc;
+      padding: 0.75rem 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.72rem;
+    }
+    .progress-strip .progress-label {
+      display: flex; justify-content: space-between;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--muted); margin-bottom: 0.4rem;
+    }
+    .progress-bar-bg {
+      height: 4px; background: #ddd; border-radius: 2px; overflow: hidden;
+    }
+    .progress-bar-fill {
+      height: 100%; background: var(--blue); border-radius: 2px;
+      /* width set inline per article, e.g. style="width: 35%" */
+    }
+
+    /* ────────────────── FOOTER ────────────────── */
+    footer {
+      text-align: center; font-size: 0.65rem;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--light); border-top: 1px solid #ccc; padding: 0.8rem 2rem;
+    }
+
+    /* ────────────────── RESPONSIVE ────────────────── */
+    @media (max-width: 900px) {
+      .article-layout { grid-template-columns: 1fr; }
+      .article-main { padding-right: 0; border-right: none; border-bottom: 1px solid var(--rule); padding-bottom: 2rem; margin-bottom: 2rem; }
+      .article-sidebar { padding-left: 0; }
+    }
+    @media (max-width: 600px) {
+      .article-title { font-size: 1.8rem; }
+      .nav-ribbon nav { flex-wrap: wrap; gap: 0; padding: 0.25rem 0.5rem; }
+      .nav-ribbon nav .nav-spacer { display: none; }
+    }
+    /* Dropdown menus */
+    .nav-dropdown { position: relative; display: flex; align-items: center; }
+    .nav-drop-btn {
+      color: rgba(255,255,255,0.9);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 0.8rem; font-weight: 500; letter-spacing: 0.04em;
+      text-transform: uppercase; padding: 0.5rem 0.95rem; border-radius: 5px;
+      background: none; border: none; cursor: pointer; white-space: nowrap;
+      display: flex; align-items: center; gap: 0.25rem; transition: background 0.15s;
+    }
+    .nav-drop-btn:hover,
+    .nav-dropdown:hover .nav-drop-btn { background: rgba(255,255,255,0.18); color: #fff; }
+    .nav-drop-btn.nav-active { background: rgba(255,255,255,0.18); color: #fff; }
+    .nav-caret { font-size: 0.55rem; opacity: 0.65; transition: transform 0.15s; line-height: 1; }
+    .nav-dropdown:hover .nav-caret { transform: rotate(180deg); }
+    .nav-dropdown:hover .nav-drop-menu { display: flex; }
+    .nav-drop-menu {
+      position: absolute; top: 100%; left: 0;
+      background: #1f2937; border-radius: 6px;
+      min-width: 155px; display: none; flex-direction: column;
+      z-index: 200; box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+      overflow: hidden; margin-top: 0;
+    }
+    /* dropdown shown via JS */
+    .nav-drop-menu a {
+      color: rgba(255,255,255,0.85);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 0.76rem; font-weight: 500; letter-spacing: 0.04em;
+      text-transform: uppercase; padding: 0.6rem 1.1rem;
+      text-decoration: none; transition: background 0.12s; white-space: nowrap;
+      border-radius: 0; display: block;
+    }
+    .nav-drop-menu a:hover { background: rgba(255,255,255,0.15); color: #fff; }
+    .nav-divider { width: 1px; height: 1.1rem; background: rgba(255,255,255,0.35); margin: 0 0.6rem; flex-shrink: 0; align-self: center; }
+    .nav-drop-menu a + a { border-top: 1px solid rgba(255,255,255,0.07); }
+    .nav-drop-menu a.nav-active { background: rgba(255,255,255,0.15); color: #fff; }
+
+    @media (max-width: 800px) {
+      .nav-ribbon nav { flex-wrap: wrap; gap: 0; padding: 0.25rem 0.5rem; }
+      .nav-ribbon nav .nav-spacer { display: none; }
+      .nav-drop-menu { position: static; box-shadow: none; border-radius: 0; margin-top: 0; background: rgba(255,255,255,0.06); }
+      .nav-dropdown { flex-direction: column; align-items: flex-start; width: 100%; }
+      .nav-drop-menu { display: flex !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── NEWS TICKER ── -->
+  <div class="ticker-wrap">
+    <div class="ticker-label">Breaking News</div>
+    <div class="ticker-inner">
+      <div class="ticker-track" id="js-ticker">
+        <span style="color:rgba(255,255,255,0.5); font-family:'Source Serif 4',serif; font-size:.78rem; padding:0 2rem;">Loading headlines&hellip;</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── HEADER ── -->
+  <div class="meta-bar">
+    <div class="meta-bar-inner">
+      <span id="js-date"><!-- date injected by JS --></span>
+      <span>Personal Edition &nbsp;&bull;&nbsp; Est. 2026</span>
+    </div>
+  </div>
+  <div class="masthead-wrap">
+    <div class="masthead">Personal Hub</div>
+    <div class="masthead-sub">Alfie Edworthy</div>
+  </div>
+  <hr class="rule-double">
+
+  <!-- ── NAV RIBBON ── -->
+  <div class="nav-ribbon">
+    <nav>
+      <a href="personal_hub.html" class="nav-home">&#8962; Home</a>
+      <a href="rics-study.html" class="nav-active">RICS Study</a>
+      <div class="nav-dropdown">
+        <button class="nav-drop-btn">News <span class="nav-caret">▾</span></button>
+        <div class="nav-drop-menu">
+          <a href="world-news.html">World Affairs</a>
+          <a href="uk-politics-news.html">UK Politics</a>
+          <a href="us-politics-news.html">US Politics</a>
+          <a href="financial-news.html">Financial</a>
+          <a href="tech-news.html">Technology</a>
+        </div>
+      </div>
+      <a href="curiosity.html">Curiosity Corner</a>
+      <a href="philosophy.html">Philosophy Corner</a>
+      <div class="nav-dropdown">
+        <button class="nav-drop-btn">Recommendations <span class="nav-caret">▾</span></button>
+        <div class="nav-drop-menu">
+          <a href="reads.html">Books</a>
+          <a href="films.html">Films</a>
+        </div>
+      </div>
+      <a href="recipes.html">Recipes</a>
+      <a href="exercise.html">Exercise</a>
+      <div class="nav-divider"></div>
+      <div class="nav-dropdown">
+        <button class="nav-drop-btn">Organisation <span class="nav-caret">▾</span></button>
+        <div class="nav-drop-menu">
+          <a href="todo-lists.html">To-Do Lists</a>
+          <a href="weekly-checkin.html">Weekly Check-In</a>
+          <a href="monthly-goals.html">Monthly Goals</a>
+          <a href="achievements.html">Achievements</a>
+          <a href="wishlist.html">Wishlist</a>
+        </div>
+      </div>
+      <a href="calendar.html">Calendar</a>
+    </nav>
+  </div>
+
+  <!-- ── MAIN ── -->
+  <div class="page-wrap">
+
+    <!-- Section label bar -->
+    <div class="section-ribbon">
+      <span class="section-ribbon-title">RICS Study &mdash; Daily Learning</span>
+      <span id="js-edition"><!-- edition date injected by JS --></span>
+    </div>
+
+    <!-- ════════════════ ARTICLE HERO ════════════════ -->
+    <div class="article-hero">
+
+      <!-- Meta: topic tag + level badge + cycle day + date -->
+      <div class="article-meta">
+        <span class="topic-tag" id="js-topic-module">Loading&hellip;</span>
+        <span class="level-badge" id="js-topic-level"></span>
+        <span class="cycle-day" id="js-cycle-day" style="display:none"></span>
+        <span class="reading-time">25&ndash;30 min read</span>
+        <span id="js-article-date"></span>
+      </div>
+
+      <!-- ── 1. TITLE ── -->
+      <h1 class="article-title" id="js-topic-title">Loading today&rsquo;s topic&hellip;</h1>
+
+      <!-- ── 2. INTRODUCTION ── -->
+      <p class="article-intro-standfirst" id="js-topic-focus">Today&rsquo;s study focus will appear here.</p>
+
+    </div>
+
+    <!-- ── RELEVANT IMAGE — filled by renderer if article file exists; otherwise static fallback shows ── -->
+    <div class="hero-image-wrap" id="js-hero-image">
+      <svg viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;background:#f4f0e6;border:1px solid #ccc;" aria-label="The Development Finance Capital Stack">
+        <rect width="800" height="300" fill="#f4f0e6"/>
+        <text x="400" y="28" text-anchor="middle" font-family="Georgia,serif" font-size="13" font-weight="700" letter-spacing="1" fill="#0d0d0d">THE DEVELOPMENT FINANCE CAPITAL STACK</text>
+        <text x="400" y="44" text-anchor="middle" font-family="Georgia,serif" font-size="10" fill="#888">Example: £10m total development cost / £15m GDV</text>
+        <rect x="280" y="58" width="240" height="48" fill="#1a5c2a"/>
+        <text x="400" y="78" text-anchor="middle" font-family="Georgia,serif" font-size="11" font-weight="700" fill="#fff">EQUITY</text>
+        <text x="400" y="93" text-anchor="middle" font-family="Georgia,serif" font-size="10" fill="rgba(255,255,255,0.85)">£2m | 20% of cost</text>
+        <rect x="280" y="106" width="240" height="36" fill="#c17f24"/>
+        <text x="400" y="121" text-anchor="middle" font-family="Georgia,serif" font-size="11" font-weight="700" fill="#fff">MEZZANINE</text>
+        <text x="400" y="135" text-anchor="middle" font-family="Georgia,serif" font-size="10" fill="rgba(255,255,255,0.85)">£1.5m | 15% of cost</text>
+        <rect x="280" y="142" width="240" height="104" fill="#003399"/>
+        <text x="400" y="182" text-anchor="middle" font-family="Georgia,serif" font-size="11" font-weight="700" fill="#fff">SENIOR DEBT</text>
+        <text x="400" y="198" text-anchor="middle" font-family="Georgia,serif" font-size="10" fill="rgba(255,255,255,0.85)">£6.5m | 65% of cost</text>
+        <text x="400" y="213" text-anchor="middle" font-family="Georgia,serif" font-size="10" fill="rgba(255,255,255,0.7)">SONIA + 2–4% p.a.</text>
+        <text x="400" y="228" text-anchor="middle" font-family="Georgia,serif" font-size="10" fill="rgba(255,255,255,0.7)">Repaid first · First charge</text>
+        <line x1="265" y1="246" x2="265" y2="62" stroke="#0d0d0d" stroke-width="1.5" marker-end="url(#arr)"/>
+        <text x="258" y="256" text-anchor="middle" font-family="Georgia,serif" font-size="9" fill="#555">LOW</text>
+        <text x="258" y="57" text-anchor="middle" font-family="Georgia,serif" font-size="9" fill="#555">HIGH</text>
+        <text x="245" y="162" text-anchor="middle" font-family="Georgia,serif" font-size="10" font-weight="700" fill="#0d0d0d" transform="rotate(-90 245 162)">RISK</text>
+        <line x1="535" y1="246" x2="535" y2="62" stroke="#0d0d0d" stroke-width="1.5" marker-end="url(#arr)"/>
+        <text x="543" y="256" text-anchor="middle" font-family="Georgia,serif" font-size="9" fill="#555">LOW</text>
+        <text x="543" y="57" text-anchor="middle" font-family="Georgia,serif" font-size="9" fill="#555">HIGH</text>
+        <text x="555" y="162" text-anchor="middle" font-family="Georgia,serif" font-size="10" font-weight="700" fill="#0d0d0d" transform="rotate(90 555 162)">RETURN</text>
+        <text x="545" y="87" font-family="Georgia,serif" font-size="9" fill="#1a5c2a" font-weight="700">Developer profit</text>
+        <text x="545" y="128" font-family="Georgia,serif" font-size="9" fill="#c17f24" font-weight="700">12–20% p.a.</text>
+        <text x="120" y="87" text-anchor="middle" font-family="Georgia,serif" font-size="9" fill="#1a5c2a">Repaid last</text>
+        <text x="120" y="128" text-anchor="middle" font-family="Georgia,serif" font-size="9" fill="#c17f24">Repaid second</text>
+        <text x="120" y="196" text-anchor="middle" font-family="Georgia,serif" font-size="9" fill="#003399">Repaid first</text>
+        <text x="400" y="270" text-anchor="middle" font-family="Georgia,serif" font-size="10" fill="#555">Developer's equity is the first to be lost if the scheme underperforms</text>
+        <text x="400" y="285" text-anchor="middle" font-family="Georgia,serif" font-size="10" fill="#555">Senior debt holders are protected — they sit at the base and are repaid before anyone else</text>
+        <defs><marker id="arr" markerWidth="6" markerHeight="6" refX="3" refY="6" orient="auto"><path d="M0,6 L3,0 L6,6" fill="none" stroke="#0d0d0d" stroke-width="1.2"/></marker></defs>
+      </svg>
+      <p class="hero-image-caption">Figure 1 &mdash; The capital stack for a typical &pound;10m residential development scheme. Layers are ordered by risk and repayment priority; senior debt sits at the base (lowest risk, repaid first) and equity at the top (highest risk, last to be repaid).</p>
+    </div>
+
+    <!-- ── READING PROGRESS ── -->
+    <!-- SLOT: update width % to reflect today's article length relative to 30 min -->
+    <div class="progress-strip">
+      <div class="progress-label">
+        <span>Reading Progress</span>
+        <span id="js-progress-pct">0%</span>
+      </div>
+      <div class="progress-bar-bg">
+        <div class="progress-bar-fill" id="js-progress-bar" style="width: 0%"></div>
+      </div>
+    </div>
+
+    <!-- ════════════════ TWO-COLUMN LAYOUT ════════════════ -->
+    <div class="article-layout">
+
+      <!-- ══════════ MAIN COLUMN ══════════ -->
+      <div class="article-main">
+
+        <!-- ── 3. MAIN LEARNING CONTENT ── -->
+        <div class="article-section" id="section-main">
+          <span class="article-section-label">Main Learning Content</span>
+          <h2>The Capital Stack: How Development Projects Are Funded</h2>
+
+          <p>Development projects are rarely funded from a single source. Instead, finance is structured in layers &mdash; each with a different position in the risk hierarchy, a different cost, and different rights if the scheme fails. This layered structure is called the <strong>capital stack</strong>.</p>
+
+          <p>Understanding the capital stack is not just a theoretical exercise. As a Planning and Development surveyor, you will encounter it constantly: when advising clients on scheme viability, when reviewing a development appraisal for a lender, or when explaining to a client why their return looks different depending on how the deal is financed.</p>
+
+          <div class="key-term">
+            <strong>Key Term &mdash; Capital Stack</strong>
+            <p>The capital stack is the full set of funding sources used to finance a development, arranged in order of seniority. Each layer has a different risk profile, cost, and repayment priority. In a default, the most senior layer is repaid first; equity &mdash; at the top &mdash; is last.</p>
+          </div>
+
+          <h3>Layer 1: Senior Debt</h3>
+
+          <p>Senior debt is the primary and largest source of development funding, typically accounting for 55&ndash;70% of total project costs. It is provided by clearing banks (Barclays, Lloyds, NatWest), challenger banks, or specialist development lenders such as OakNorth or Octopus Real Estate.</p>
+
+          <p>Lenders use two key metrics to determine how much they will lend:</p>
+
+          <ul>
+            <li><strong>Loan to Cost (LTC):</strong> The loan as a percentage of total development costs (land + build + fees). Typically capped at 65&ndash;70%. This ensures the developer has meaningful &ldquo;skin in the game&rdquo; and that cost overruns don&rsquo;t immediately threaten the lender&rsquo;s position.</li>
+            <li><strong>Loan to GDV:</strong> The loan as a percentage of the completed scheme&rsquo;s Gross Development Value. Typically capped at 60&ndash;65%. This is a backstop: it prevents the lender advancing too much relative to what the asset will be worth on completion. On a thin-margin scheme, this cap can become the binding constraint.</li>
+          </ul>
+
+          <div class="callout-tip">
+            <strong>APC Tip &mdash; Worked Example</strong>
+            <p>A developer builds 20 townhouses at a total cost of £8m. GDV is estimated at £12m.<br><br>
+            Max LTC (65%): £8m &times; 65% = <strong>£5.2m</strong><br>
+            Max against GDV (60%): £12m &times; 60% = <strong>£7.2m</strong><br>
+            The LTC cap is the binding constraint. Maximum senior debt = £5.2m. The remaining £2.8m must come from mezzanine or equity. Be ready to walk an examiner through a calculation like this.</p>
+          </div>
+
+          <p><strong>How drawdowns work:</strong> Funds are not released in a lump sum. Drawdowns are tied to construction milestones (e.g. completion of foundations, watertight shell, practical completion). Before each release, the lender&rsquo;s appointed <strong>monitoring surveyor</strong> &mdash; typically a quantity surveyor &mdash; certifies that the stated work has been completed to the required standard. Their fees are charged to the borrower.</p>
+
+          <p><strong>Interest:</strong> Charged on drawn (not undrawn) funds. Most development finance is now priced against <strong>SONIA</strong> (Sterling Overnight Index Average) plus a margin of typically 2&ndash;4%, depending on the lender, scheme complexity and borrower track record. Interest is almost always <strong>rolled up</strong> &mdash; added to the loan balance rather than paid monthly &mdash; to protect the developer&rsquo;s cashflow during the build. This rolled-up interest compounds over time and must be accurately modelled in the appraisal.</p>
+
+          <p><strong>Security:</strong> The lender takes a <strong>first legal charge</strong> over the site. If the developer defaults, the lender can appoint a receiver and sell the site or completed units to recover their debt.</p>
+
+          <h3>Layer 2: Mezzanine Finance</h3>
+
+          <p>Mezzanine finance fills the gap between what the senior lender will advance and what the developer has available in equity. It sits <em>above</em> senior debt in the capital stack &mdash; meaning it is repaid after senior debt in a default scenario &mdash; and <em>below</em> equity.</p>
+
+          <ul>
+            <li><strong>Who provides it:</strong> Specialist mezzanine lenders and property finance funds. Rarely offered by high-street banks.</li>
+            <li><strong>Cost:</strong> Significantly higher than senior debt &mdash; typically 12&ndash;20% per annum, reflecting the higher risk of loss. Sometimes structured as a combination of interest and a profit share arrangement.</li>
+            <li><strong>Leverage effect:</strong> Adding mezzanine can push total debt to 80&ndash;90% of total costs, reducing the developer&rsquo;s equity requirement substantially.</li>
+          </ul>
+
+          <p><strong>Why a developer would use it:</strong> Consider the same £8m scheme above. Without mezzanine, the developer needs £2.8m of their own equity. If they bring in a mezzanine lender to cover £1.6m of that gap (bringing total debt to £6.8m, or 85% LTC), the developer&rsquo;s equity requirement drops to just £1.2m. The same absolute profit now represents a much higher return on the smaller equity outlay &mdash; but the risk is equally amplified, since all debt must be repaid before the developer sees any return.</p>
+
+          <div class="callout-warn">
+            <strong>Watch Out &mdash; Mezzanine Is Not Free Money</strong>
+            <p>At 15% per annum on £1.6m, mezzanine costs £240,000 per year. On an 18-month build programme that&rsquo;s £360,000 in finance costs. If the scheme runs three months over programme, add another £60,000. On a marginal scheme, this erodes developer profit quickly and can tip a viable appraisal into loss. Always model mezzanine costs carefully and stress-test for programme overrun.</p>
+          </div>
+
+          <h3>Layer 3: Equity</h3>
+
+          <p>Equity is the developer&rsquo;s own capital, or capital contributed by a joint venture (JV) partner. It occupies the top of the capital stack: highest risk, last to be repaid, but with the greatest potential upside.</p>
+
+          <p><strong>Why equity is expensive:</strong> Equity investors (including the developer themselves) are the first to lose money if a scheme underperforms. There is no security against their contribution, no fixed rate of return, and no obligation to repay before other creditors. In exchange for carrying this risk, they are entitled to the developer&rsquo;s profit &mdash; which is why developers typically require a minimum return of <strong>15&ndash;20% profit on cost</strong> (or 12&ndash;15% profit on GDV) to justify committing equity to a scheme.</p>
+
+          <p><strong>Joint venture equity and the waterfall:</strong> On larger or more complex schemes, developers often bring in a funding partner &mdash; an institution, private equity fund, or high-net-worth investor &mdash; who contributes equity in exchange for a share of the profit. The terms are governed by a <strong>waterfall mechanism</strong>, which sets out in what order and in what proportions profits are distributed once debt has been repaid.</p>
+
+          <div class="key-term">
+            <strong>Key Term &mdash; Equity Waterfall</strong>
+            <p>A waterfall defines how returns flow between equity parties. A typical two-tier structure: (1) return of all contributed capital to both parties; (2) a preferred return to the funding partner (e.g. 8% IRR); (3) surplus profits split at an agreed ratio, often 70/30 (funder/developer). The developer benefits disproportionately from outperformance above the hurdle rate &mdash; this share of upside profit is called the <strong>promote</strong>.</p>
+          </div>
+
+          <h3>Why This Matters for Your APC</h3>
+
+          <p>As a P&amp;D surveyor, you will regularly encounter development finance in practice. You do not need to be a lender or a finance specialist, but you need to speak the language fluently and understand the implications:</p>
+
+          <ul>
+            <li><strong>Viability assessments:</strong> Finance costs are a key input in any development appraisal. Getting the interest calculation wrong &mdash; or forgetting to model rolled-up interest compounding &mdash; can materially distort the result. A surveyor who understands how debt is structured produces more credible appraisals.</li>
+            <li><strong>Advising clients on deal structure:</strong> A client asking &ldquo;should we use mezzanine?&rdquo; is asking you to weigh the cost of finance against the reduction in equity and the amplified return. That is a judgement call that requires understanding all three layers.</li>
+            <li><strong>Working with lenders:</strong> Whether advising a borrower or acting as monitoring surveyor, understanding what a lender is looking for &mdash; LTC, LTV, drawdown conditions &mdash; makes you a more effective intermediary and a more credible professional.</li>
+            <li><strong>APC interviews:</strong> Examiners frequently ask candidates to explain how a specific scheme is financed, or to identify a finance cost error in an appraisal. Being able to articulate the capital stack clearly is a mark of Level 3 competence in Project Finance.</li>
+          </ul>
+
+        </div>
+
+        <!-- ── 4. DIAGRAMS / TABLES ── -->
+        <div class="article-section" id="section-diagrams">
+          <span class="article-section-label">Diagrams &amp; Tables</span>
+          <h2>Visual Summary</h2>
+
+          <div class="diagram-wrap" style="margin-top:0.5rem;">
+            <div class="diagram-label">Table 1 &mdash; Capital Stack Comparison: Senior Debt vs Mezzanine vs Equity</div>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Feature</th>
+                  <th>Senior Debt</th>
+                  <th>Mezzanine</th>
+                  <th>Equity</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Typical share of costs</strong></td>
+                  <td>55&ndash;70%</td>
+                  <td>10&ndash;20%</td>
+                  <td>15&ndash;30%</td>
+                </tr>
+                <tr>
+                  <td><strong>Indicative cost</strong></td>
+                  <td>SONIA + 2&ndash;4% p.a.</td>
+                  <td>12&ndash;20% p.a.</td>
+                  <td>Developer&rsquo;s profit (15&ndash;20% on cost)</td>
+                </tr>
+                <tr>
+                  <td><strong>Security</strong></td>
+                  <td>First legal charge</td>
+                  <td>Second charge / profit share</td>
+                  <td>None (residual interest)</td>
+                </tr>
+                <tr>
+                  <td><strong>Repayment order</strong></td>
+                  <td>First</td>
+                  <td>Second</td>
+                  <td>Last</td>
+                </tr>
+                <tr>
+                  <td><strong>Risk level</strong></td>
+                  <td>Lowest</td>
+                  <td>Medium</td>
+                  <td>Highest</td>
+                </tr>
+                <tr>
+                  <td><strong>Typical provider</strong></td>
+                  <td>Banks, specialist lenders</td>
+                  <td>Mezzanine funds, specialist lenders</td>
+                  <td>Developer / JV partner / private equity</td>
+                </tr>
+                <tr>
+                  <td><strong>Interest type</strong></td>
+                  <td>Rolled up or serviced</td>
+                  <td>Rolled up or profit share</td>
+                  <td>N/A &mdash; return via profit</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="diagram-wrap" style="margin-top:1.4rem;">
+            <div class="diagram-label">Table 2 &mdash; Illustrative Finance Structure: £10m Residential Scheme (GDV £15m)</div>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Layer</th>
+                  <th>Amount</th>
+                  <th>% of Cost</th>
+                  <th>Indicative Cost</th>
+                  <th>18-Month Interest</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Senior Debt</strong></td>
+                  <td>£6.5m</td>
+                  <td>65%</td>
+                  <td>SONIA (5%) + 3% = 8%</td>
+                  <td>~£780,000</td>
+                </tr>
+                <tr>
+                  <td><strong>Mezzanine</strong></td>
+                  <td>£1.5m</td>
+                  <td>15%</td>
+                  <td>15% p.a.</td>
+                  <td>~£338,000</td>
+                </tr>
+                <tr>
+                  <td><strong>Equity</strong></td>
+                  <td>£2.0m</td>
+                  <td>20%</td>
+                  <td>&mdash;</td>
+                  <td>&mdash;</td>
+                </tr>
+                <tr>
+                  <td><strong>Total finance cost</strong></td>
+                  <td>&mdash;</td>
+                  <td>&mdash;</td>
+                  <td>&mdash;</td>
+                  <td><strong>~£1.12m</strong></td>
+                </tr>
+                <tr>
+                  <td><strong>GDV</strong></td>
+                  <td>£15m</td>
+                  <td>&mdash;</td>
+                  <td>&mdash;</td>
+                  <td>&mdash;</td>
+                </tr>
+                <tr>
+                  <td><strong>Gross profit (pre-finance)</strong></td>
+                  <td>£5m</td>
+                  <td>50% on cost</td>
+                  <td>&mdash;</td>
+                  <td>&mdash;</td>
+                </tr>
+                <tr>
+                  <td><strong>Net profit (post-finance)</strong></td>
+                  <td>~£3.88m</td>
+                  <td>~38.8% on cost</td>
+                  <td>&mdash;</td>
+                  <td>&mdash;</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p style="font-size:0.75rem;color:var(--light);margin-top:0.5rem;font-style:italic;">Interest figures are illustrative, calculated on average drawn balance over an 18-month programme. Real appraisals require month-by-month cashflow modelling.</p>
+
+        </div>
+
+        <!-- ── 5. SUMMARY ── -->
+        <div class="article-section" id="section-summary">
+          <span class="article-section-label">Summary</span>
+          <h2>What to Take Away</h2>
+
+          <div class="summary-box">
+            <div class="summary-header">Key Points</div>
+            <ul>
+              <li>The <strong>capital stack</strong> layers finance by risk: senior debt (lowest risk, repaid first) &rarr; mezzanine &rarr; equity (highest risk, last to receive any return).</li>
+              <li><strong>Senior debt</strong> is typically capped at 65% LTC or 60% of GDV &mdash; whichever is lower. Interest is usually rolled up and must be modelled carefully in any appraisal.</li>
+              <li><strong>Mezzanine</strong> fills the funding gap between senior debt and equity. It is expensive (12&ndash;20% p.a.) and only appropriate where deal economics are strong enough to absorb the cost.</li>
+              <li><strong>Equity</strong> bears residual risk. Developer profit (typically 15&ndash;20% on cost) is the return on equity &mdash; which is why this benchmark is used as a viability test.</li>
+              <li>Lenders appoint a <strong>monitoring surveyor</strong> to certify drawdowns independently. This is a common professional role in P&amp;D practice and worth understanding in detail for your APC.</li>
+              <li>Finance costs &mdash; including rolled-up interest and fees &mdash; can materially erode developer profit. Always model programme risk and stress-test finance costs in sensitivity analysis.</li>
+            </ul>
+          </div>
+
+          <p>Project Finance sits at Level 3 of the P&amp;D pathway, meaning the APC expects you to go beyond knowing what these structures are &mdash; you should be able to advise a client on the implications of different financing approaches, identify errors in a finance model, and explain how the capital stack affects scheme viability.</p>
+        </div>
+
+      </div><!-- /.article-main -->
+
+      <!-- ══════════ SIDEBAR ══════════ -->
+      <div class="article-sidebar">
+
+        <!-- ── 6. Q&A SECTION ── -->
+        <div class="sidebar-section" id="section-qa">
+          <span class="sidebar-label">Q&amp;A</span>
+          <h3>Test Your Knowledge</h3>
+
+          <div class="qa-item">
+            <div class="qa-question">What is the difference between Loan to Cost (LTC) and Loan to GDV, and which typically acts as the binding constraint?</div>
+            <button class="qa-toggle" onclick="toggleAnswer(this)">Show answer</button>
+            <div class="qa-answer">LTC measures the loan as a % of total development costs. Loan to GDV measures the loan against the completed scheme&rsquo;s estimated value. LTC is typically the binding constraint on straightforward residential schemes (where cost certainty is higher). Loan to GDV acts as a backstop: on a thin-margin scheme where GDV is relatively low vs costs, the GDV cap can become the tighter of the two.</div>
+          </div>
+
+          <div class="qa-item">
+            <div class="qa-question">A developer has total costs of £5m and a GDV of £8m. What is the maximum senior debt at 65% LTC and 60% of GDV? Which is the binding constraint?</div>
+            <button class="qa-toggle" onclick="toggleAnswer(this)">Show answer</button>
+            <div class="qa-answer">LTC: £5m &times; 65% = <strong>£3.25m</strong>. Loan to GDV: £8m &times; 60% = £4.8m. The LTC cap of £3.25m is the binding constraint. The developer must fund the remaining £1.75m from mezzanine and/or their own equity.</div>
+          </div>
+
+          <div class="qa-item">
+            <div class="qa-question">Why is development finance interest usually &ldquo;rolled up&rdquo; and what is the key risk of this approach?</div>
+            <button class="qa-toggle" onclick="toggleAnswer(this)">Show answer</button>
+            <div class="qa-answer">During construction there is typically no income &mdash; units haven&rsquo;t been sold or let. Rolling up interest avoids requiring the developer to service debt from their own funds during the build, protecting cashflow. The risk is that interest compounds: the total bill is higher than a simple flat rate suggests. If the scheme runs over programme, rolled-up interest grows significantly &mdash; which is why programme risk is one of the most important sensitivity variables to stress-test.</div>
+          </div>
+
+          <div class="qa-item">
+            <div class="qa-question">Who appoints the monitoring surveyor and what is their role?</div>
+            <button class="qa-toggle" onclick="toggleAnswer(this)">Show answer</button>
+            <div class="qa-answer">The monitoring surveyor is appointed by the <strong>lender</strong> (not the developer) to provide independent oversight of the project on the lender&rsquo;s behalf. They review the budget, programme and consultant appointments before first drawdown, then certify each subsequent drawdown by confirming construction work has been completed to the requisite standard. They report cost overruns and programme slippage to the lender. Their fees are charged to the borrower as a project cost.</div>
+          </div>
+
+          <div class="qa-item">
+            <div class="qa-question">A developer tells you mezzanine finance will &ldquo;boost their returns.&rdquo; Explain the mechanism and identify the key risk.</div>
+            <button class="qa-toggle" onclick="toggleAnswer(this)">Show answer</button>
+            <div class="qa-answer">Mezzanine reduces the developer&rsquo;s equity contribution while keeping absolute profit the same &mdash; the same £1m profit on £1m equity (vs £2m equity) doubles the return on equity. The key risk: mezzanine costs 12&ndash;20% p.a. and ranks above equity. If costs overrun or GDV falls, mezzanine interest erodes profit quickly and the developer&rsquo;s equity is wiped out first. Leverage amplifies both gains <em>and</em> losses.</div>
+          </div>
+
+          <div class="qa-item">
+            <div class="qa-question">What is an equity waterfall and why does the &ldquo;promote&rdquo; matter to a developer?</div>
+            <button class="qa-toggle" onclick="toggleAnswer(this)">Show answer</button>
+            <div class="qa-answer">A waterfall sets out how profits are distributed between equity parties once the project completes. A typical structure: (1) return of all capital; (2) preferred return to the funding partner; (3) surplus profits split at an agreed ratio (e.g. 70/30). The <strong>promote</strong> is the developer&rsquo;s disproportionate share of profits above the hurdle rate &mdash; it incentivises outperformance, since the developer keeps a larger share of any upside beyond the funder&rsquo;s minimum return.</div>
+          </div>
+
+        </div>
+
+        <!-- ── 7. LATEST REAL ESTATE NEWS ── -->
+        <div class="sidebar-section" id="section-news">
+          <span class="sidebar-label">Latest Real Estate News</span>
+          <h3>Market &amp; Industry Briefing</h3>
+
+          <div class="news-item">
+            <span class="news-tag">Finance</span>
+            <h4>Bank of England Holds Base Rate &mdash; Development Finance Costs Remain Elevated</h4>
+            <p>The Bank of England held the base rate at 4.5% at its March 2026 meeting, citing persistent services inflation. Development finance is priced against SONIA, so sustained higher rates continue to inflate rolled-up interest in appraisals and squeeze viability on marginal schemes &mdash; putting further pressure on land values.</p>
+          </div>
+
+          <div class="news-item">
+            <span class="news-tag">Lending</span>
+            <h4>Specialist Lenders Now Account for Over 40% of UK Development Finance</h4>
+            <p>As high-street banks have tightened risk appetite, challenger and specialist lenders have grown their market share significantly. This has introduced more competition on lower-risk residential schemes, with margins tightening &mdash; but specialist lenders remain more selective on complex commercial schemes.</p>
+          </div>
+
+          <div class="news-item">
+            <span class="news-tag">Build-to-Rent</span>
+            <h4>Institutional Debt Transforms BTR Finance Structures</h4>
+            <p>Insurance companies and pension funds are increasingly providing long-term &ldquo;exit finance&rdquo; for Build-to-Rent schemes at margins of sub-3%, refinancing the short-term construction loan on practical completion. Understanding this refinancing step is now a core part of advising on BTR viability.</p>
+          </div>
+
+        </div>
+
+      </div><!-- /.article-sidebar -->
+
+    </div><!-- /.article-layout -->
+
+  </div><!-- /.page-wrap -->
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    Personal Hub &mdash; RICS Study &mdash; Alfie Edworthy &mdash; Private &amp; Confidential
+  </footer>
+
+  <script src="rics-topics-data.js"></script>
+
+  <!-- Step 1: compute today's day number and synchronously write the article script tag.
+       document.write during parsing guarantees the article file loads before the
+       renderer script below runs — works on file:// with no server needed. -->
+  <script>
+    (function () {
+      var EPOCH = new Date('2026-03-28T00:00:00');
+      var CYCLE = 33;
+      var today = new Date(); today.setHours(0, 0, 0, 0);
+      var idx = (((Math.floor((today - EPOCH) / 864e5)) % CYCLE) + CYCLE) % CYCLE;
+      window._RICS_DAY = idx + 1;
+      var pad = String(window._RICS_DAY).padStart(2, '0');
+      document.write('<scr' + 'ipt src="articles/day-' + pad + '.js"><\/scr' + 'ipt>');
+    })();
+  </script>
+
+  <!-- Step 2: renderer — runs after article file has been loaded and executed -->
+  <script>
+    (function () {
+      var art = window.RICS_ARTICLE;
+      // If no article file exists yet, static fallback content in the HTML stays visible.
+      if (!art || !art.sections) return;
+      var s = art.sections;
+
+      // Hero image
+      var heroEl = document.getElementById('js-hero-image');
+      if (heroEl) {
+        heroEl.innerHTML = (s.image && s.image.svg_markup)
+          ? s.image.svg_markup + (s.image.caption ? '<p class="hero-image-caption">' + s.image.caption + '</p>' : '')
+          : '<div class="image-placeholder">No diagram for this topic</div>';
+      }
+
+      // Main content
+      var mainEl = document.getElementById('section-main');
+      if (mainEl && s.main) {
+        mainEl.innerHTML = '<span class="article-section-label">Main Learning Content</span>' + s.main;
+      }
+
+      // Diagrams / tables
+      var tablesEl = document.getElementById('section-diagrams');
+      if (tablesEl && s.tables) {
+        tablesEl.innerHTML = '<span class="article-section-label">Diagrams &amp; Tables</span>' + s.tables;
+      }
+
+      // Summary
+      var summaryEl = document.getElementById('section-summary');
+      if (summaryEl && s.summary_points) {
+        var pts = s.summary_points.map(function (p) { return '<li>' + p + '</li>'; }).join('');
+        summaryEl.innerHTML =
+          '<span class="article-section-label">Summary</span>' +
+          '<h2>What to Take Away</h2>' +
+          '<div class="summary-box"><div class="summary-header">Key Points</div><ul>' + pts + '</ul></div>' +
+          (s.summary_closing || '');
+      }
+
+      // Q&A
+      var qaEl = document.getElementById('section-qa');
+      if (qaEl && s.qa) {
+        var qaItems = s.qa.map(function (item) {
+          return '<div class="qa-item">' +
+            '<div class="qa-question">' + item.q + '</div>' +
+            '<button class="qa-toggle" onclick="toggleAnswer(this)">Show answer</button>' +
+            '<div class="qa-answer">' + item.a + '</div></div>';
+        }).join('');
+        qaEl.innerHTML = '<span class="sidebar-label">Q&amp;A</span><h3>Test Your Knowledge</h3>' + qaItems;
+      }
+
+      // News
+      var newsEl = document.getElementById('section-news');
+      if (newsEl && s.news) {
+        var newsItems = s.news.map(function (item) {
+          return '<div class="news-item"><span class="news-tag">' + item.tag + '</span>' +
+            '<h4>' + item.headline + '</h4><p>' + item.body + '</p></div>';
+        }).join('');
+        newsEl.innerHTML = '<span class="sidebar-label">Latest Real Estate News</span>' +
+          '<h3>Market &amp; Industry Briefing</h3>' + newsItems;
+      }
+    })();
+
+    // ── Date labels ──
+    const d = new Date();
+    const opts = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const label = d.toLocaleDateString('en-GB', opts);
+    document.getElementById('js-date').textContent = label;
+    document.getElementById('js-edition').textContent = 'Edition: ' + label;
+    document.getElementById('js-article-date').textContent = label;
+
+    // ── Topic rotation — hero meta (title, module, level badge) ──
+    (function () {
+      const EPOCH = new Date('2026-03-28T00:00:00');
+      const CYCLE = RICS_TOPICS.meta.cycle_length;
+      const today = new Date(); today.setHours(0, 0, 0, 0);
+      const daysSinceEpoch = Math.floor((today - EPOCH) / (1000 * 60 * 60 * 24));
+      const dayNum = ((daysSinceEpoch % CYCLE) + CYCLE) % CYCLE + 1;
+      const levelLabels = { 3: 'Level 3', 2: 'Level 2', 1: 'Level 1' };
+      const levelClasses = { 3: 'level-badge-3', 2: 'level-badge-2', 1: 'level-badge-1' };
+      const entry = RICS_TOPICS.schedule.find(t => t.day === dayNum);
+      if (!entry) return;
+      document.getElementById('js-topic-module').textContent = entry.module;
+      document.getElementById('js-topic-title').textContent = entry.topic;
+      document.getElementById('js-topic-focus').textContent = entry.focus;
+      const levelBadge = document.getElementById('js-topic-level');
+      levelBadge.textContent = levelLabels[entry.level] || '';
+      levelBadge.className = 'level-badge ' + (levelClasses[entry.level] || '');
+      document.getElementById('js-cycle-day').textContent = 'Day ' + dayNum + ' of ' + CYCLE;
+      document.title = entry.topic + ' \u2014 RICS Study';
+    })();
+
+    // ── Q&A toggle ──
+    function toggleAnswer(btn) {
+      const answer = btn.nextElementSibling;
+      const isOpen = answer.classList.contains('open');
+      answer.classList.toggle('open', !isOpen);
+      btn.textContent = isOpen ? 'Show answer' : 'Hide answer';
+    }
+
+    // ── Scroll-driven reading progress bar ──
+    (function () {
+      const bar = document.getElementById('js-progress-bar');
+      const pct = document.getElementById('js-progress-pct');
+      if (!bar) return;
+      function onScroll() {
+        const docH = document.documentElement.scrollHeight - window.innerHeight;
+        const prog = docH > 0 ? Math.round((window.scrollY / docH) * 100) : 0;
+        bar.style.width = prog + '%';
+        pct.textContent = prog + '%';
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+    })();
+
+    // ── News ticker ──
+    (function () {
+      const headlines = [
+        'UK house prices rise 0.5% month-on-month according to Nationwide',
+        'Government announces planning reform consultation for major infrastructure projects',
+        'Commercial property investment volumes up 12% year-on-year',
+        'Bank of England holds base rate; mortgage market remains cautious',
+        'RICS: Surveyor demand at five-year high amid construction pipeline growth',
+        'London office vacancy rates stabilise as return-to-office mandates increase',
+        'Build-to-rent sector attracts record institutional investment in Q1 2026',
+        'Net zero retrofit targets drive demand for energy assessment professionals',
+      ];
+      const ticker = document.getElementById('js-ticker');
+      const makeHtml = arr => arr.map(h =>
+        `<span style="color:#fff;font-family:'Source Serif 4',serif;font-size:0.78rem;font-weight:600;padding:0 2rem;">${h}</span><span class="ticker-sep">&#124;</span>`
+      ).join('');
+      ticker.innerHTML = makeHtml(headlines) + makeHtml(headlines);
+      requestAnimationFrame(() => {
+        const halfWidth = ticker.scrollWidth / 2;
+        ticker.style.animationDuration = (halfWidth / 60) + 's';
+      });
+    })();
+
+    // ── Dropdown nav ──
+    (function () {
+      var btns = document.querySelectorAll('.nav-drop-btn');
+      btns.forEach(function(btn) {
+        btn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          var menu = btn.nextElementSibling;
+          var isOpen = menu.style.display === 'flex';
+          document.querySelectorAll('.nav-drop-menu').forEach(function(m){ m.style.display = ''; });
+          if (!isOpen) menu.style.display = 'flex';
+        });
+      });
+      document.addEventListener('click', function() {
+        document.querySelectorAll('.nav-drop-menu').forEach(function(m){ m.style.display = ''; });
+      });
+    })();
+  </script>
+
+</body>
+</html>

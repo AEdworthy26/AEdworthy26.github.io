@@ -1,0 +1,212 @@
+// RICS APC P&D Topic Rotation Data
+// Loaded as a script tag so the page works when opened directly as a local file.
+// To add or edit topics, update this file. The JSON file (rics-topics.json) is kept
+// as a reference copy but this file is what the page actually uses.
+
+const RICS_TOPICS = {
+  "meta": {
+    "pathway": "Planning and Development",
+    "cycle_length": 33,
+    "level_counts": { "3": 16, "2": 8, "1": 9 }
+  },
+  "schedule": [
+    {
+      "day": 1, "level": 3, "module": "Development Appraisals",
+      "topic": "Residual Valuation: Calculating Site Value, GDV and Developer's Profit",
+      "focus": "How to structure a residual appraisal from scratch — GDV build-up, construction costs, fees and the derivation of land value or developer's profit as the balancing figure.",
+      "apc_competency": "Development Appraisals (Level 3)"
+    },
+    {
+      "day": 2, "level": 3, "module": "Planning and Development Management",
+      "topic": "Types of Planning Application: Full, Outline, Reserved Matters and Prior Approval",
+      "focus": "When to use each application type, what information is required, the role of indicative details in outline applications, and the reserved matters submission process.",
+      "apc_competency": "Planning and Development Management (Level 3)"
+    },
+    {
+      "day": 3, "level": 2, "module": "Client Care",
+      "topic": "Terms of Engagement, Scope of Service and Complaints Procedures",
+      "focus": "RICS requirements for written terms of engagement, defining scope to manage expectations, handling formal complaints and the role of the RICS Dispute Resolution Service.",
+      "apc_competency": "Client Care (Level 2)"
+    },
+    {
+      "day": 4, "level": 3, "module": "Ethics, Rules of Conduct and Professionalism",
+      "topic": "RICS Rules of Conduct 2021: The Five Standards in Practice",
+      "focus": "The five standards (Integrity, Competence, Service, Business, Promotion), how they apply to day-to-day P&D work, and examples of conduct that would breach them.",
+      "apc_competency": "Ethics, Rules of Conduct and Professionalism (Level 3)"
+    },
+    {
+      "day": 5, "level": 3, "module": "Project Finance",
+      "topic": "Development Finance Structures: Senior Debt, Mezzanine and Equity",
+      "focus": "How development projects are funded determines whether they proceed at all. Understanding the capital stack — how senior debt, mezzanine finance and equity are layered — is essential for advising clients on viability, working with lenders, and passing your APC at Level 3.",
+      "apc_competency": "Project Finance (Level 3)"
+    },
+    {
+      "day": 6, "level": 1, "module": "Accounting Principles and Procedure",
+      "topic": "Reading Development Accounts: P&L, Balance Sheets and Basic Financial Ratios",
+      "focus": "How to interpret a profit and loss account and balance sheet in a development context, and the key ratios (gearing, liquidity, return on capital) a surveyor should understand.",
+      "apc_competency": "Accounting Principles and Procedure (Level 1)"
+    },
+    {
+      "day": 7, "level": 3, "module": "Development Appraisals",
+      "topic": "Sensitivity Analysis: Testing Assumptions and Identifying Key Risk Drivers",
+      "focus": "How to run single-variable and scenario sensitivity analyses on a development appraisal, which inputs to stress-test first (GDV, build cost, finance rate), and how results inform decision-making.",
+      "apc_competency": "Development Appraisals (Level 3)"
+    },
+    {
+      "day": 8, "level": 3, "module": "Planning and Development Management",
+      "topic": "Material Considerations in Planning Decisions: The Weighing Exercise",
+      "focus": "What constitutes a material consideration, how decision-makers balance policy compliance against other factors, and why understanding this is essential to advising on development prospects.",
+      "apc_competency": "Planning and Development Management (Level 3)"
+    },
+    {
+      "day": 9, "level": 2, "module": "Communication and Negotiation",
+      "topic": "Negotiation in Planning: S106 Terms, Viability Discussions and Officer Dialogue",
+      "focus": "Practical negotiation techniques used in P&D — structuring arguments with officers, building relationships pre-application, and negotiating planning obligation packages from an evidence base.",
+      "apc_competency": "Communication and Negotiation (Level 2)"
+    },
+    {
+      "day": 10, "level": 3, "module": "Ethics, Rules of Conduct and Professionalism",
+      "topic": "Conflicts of Interest: Identification, Disclosure and Management",
+      "focus": "How to identify actual, potential and perceived conflicts of interest, RICS guidance on disclosure, independence letters, information barriers, and when to decline an instruction.",
+      "apc_competency": "Ethics, Rules of Conduct and Professionalism (Level 3)"
+    },
+    {
+      "day": 11, "level": 3, "module": "Development/Project Briefs",
+      "topic": "Anatomy of a Development Brief: Objectives, Constraints, Deliverables and Programme",
+      "focus": "The essential components of a well-drafted development brief — how to capture client objectives, site and planning constraints, KPIs, team responsibilities and a realistic programme.",
+      "apc_competency": "Development/Project Briefs (Level 3)"
+    },
+    {
+      "day": 12, "level": 1, "module": "Business Planning",
+      "topic": "Business Case Structure: Objectives, Options Appraisal and Financial Justification",
+      "focus": "How to structure a business case for a development project — defining the strategic case, appraising options on a consistent basis, and presenting the financial case for the preferred option.",
+      "apc_competency": "Business Planning (Level 1)"
+    },
+    {
+      "day": 13, "level": 3, "module": "Project Finance",
+      "topic": "Cashflow Modelling: Drawdown Schedules, S-Curves and Monitoring",
+      "focus": "How to build and read a development cashflow — phasing construction spend using an S-curve, modelling revenue receipts, peak debt exposure, and using cashflow as a monitoring tool.",
+      "apc_competency": "Project Finance (Level 3)"
+    },
+    {
+      "day": 14, "level": 3, "module": "Planning and Development Management",
+      "topic": "Planning Obligations: S106 Agreements, CIL and Viability Negotiation",
+      "focus": "The legal basis for S106 obligations (the three statutory tests), how CIL operates alongside S106, what viability evidence is required, and how to negotiate obligations down on a marginal scheme.",
+      "apc_competency": "Planning and Development Management (Level 3)"
+    },
+    {
+      "day": 15, "level": 2, "module": "Health and Safety",
+      "topic": "CDM Regulations 2015: Duty-Holder Roles and Responsibilities",
+      "focus": "Who the duty-holders are (client, principal designer, principal contractor, designer, contractor), what the pre-construction phase requires, and the surveyor's responsibilities when acting in any of these roles.",
+      "apc_competency": "Health and Safety (Level 2)"
+    },
+    {
+      "day": 16, "level": 3, "module": "Development Appraisals",
+      "topic": "Profit Metrics: Profit on Cost vs Profit on GDV, Target Returns and IRR",
+      "focus": "How to calculate and interpret profit on cost, profit on GDV and internal rate of return, what benchmarks lenders and developers use, and why the choice of metric matters in appraisal sign-off.",
+      "apc_competency": "Development Appraisals (Level 3)"
+    },
+    {
+      "day": 17, "level": 3, "module": "Ethics, Rules of Conduct and Professionalism",
+      "topic": "Professional Duty to Report: Whistleblowing, Public Interest and RICS Guidance",
+      "focus": "When a professional has a duty to report concerns beyond client confidentiality — RICS guidance on whistleblowing, the public interest test, protected disclosures and practical examples in P&D.",
+      "apc_competency": "Ethics, Rules of Conduct and Professionalism (Level 3)"
+    },
+    {
+      "day": 18, "level": 1, "module": "Conflict Avoidance, Management and Dispute Resolution Procedures",
+      "topic": "ADR in Construction and Development: Mediation, Adjudication, Arbitration and Expert Determination",
+      "focus": "The four main ADR methods used in construction and development disputes — how each works, when each is appropriate, relative speed and cost, and the surveyor's potential role in each.",
+      "apc_competency": "Conflict Avoidance, Management and Dispute Resolution Procedures (Level 1)"
+    },
+    {
+      "day": 19, "level": 3, "module": "Development/Project Briefs",
+      "topic": "Stakeholder Consultation and Brief Refinement: Capturing Client and Community Needs",
+      "focus": "Techniques for eliciting stakeholder requirements at the brief stage — workshops, surveys, one-to-ones — and how to reconcile conflicting priorities to produce a single agreed brief.",
+      "apc_competency": "Development/Project Briefs (Level 3)"
+    },
+    {
+      "day": 20, "level": 3, "module": "Planning and Development Management",
+      "topic": "Pre-Application Engagement: DPOs, Planning Performance Agreements and Their Strategic Value",
+      "focus": "What pre-application services LPAs offer, the role of Design and Planning Officers (DPOs), when to use a Planning Performance Agreement, and how early engagement reduces application risk.",
+      "apc_competency": "Planning and Development Management (Level 3)"
+    },
+    {
+      "day": 21, "level": 2, "module": "Legal/Regulatory Compliance",
+      "topic": "Use Classes Order 2020 and Permitted Development Rights: Changes of Use and Implications",
+      "focus": "The reformed Use Class E (commercial) and its implications for development flexibility, key permitted development rights for change of use, and how to advise clients on PD opportunity and risk.",
+      "apc_competency": "Legal/Regulatory Compliance (Level 2)"
+    },
+    {
+      "day": 22, "level": 3, "module": "Project Finance",
+      "topic": "Finance Costs in Appraisals: Interest Calculations, Arrangement Fees and Profit Erosion",
+      "focus": "How to model finance costs accurately — rolled-up vs serviced interest, arrangement and exit fees, the impact of programme overrun on finance costs, and common appraisal errors.",
+      "apc_competency": "Project Finance (Level 3)"
+    },
+    {
+      "day": 23, "level": 3, "module": "Development/Project Briefs",
+      "topic": "Brief Evolution: Managing Scope Change Through RIBA Stages",
+      "focus": "How and why a brief changes across RIBA stages 0–7, governance processes for authorising scope change, the cost implications of late brief changes, and the surveyor's role in brief control.",
+      "apc_competency": "Development/Project Briefs (Level 3)"
+    },
+    {
+      "day": 24, "level": 1, "module": "Data Management",
+      "topic": "Planning Research Data Sources: Portals, Census, NPPG and Local Plan Evidence Bases",
+      "focus": "Key data sources used in planning and development research — Planning Portal, NPPG, ONS/census data, SHLAA/HELAA, economic and housing needs assessments — and how to handle, store and reference them.",
+      "apc_competency": "Data Management (Level 1)"
+    },
+    {
+      "day": 25, "level": 2, "module": "Masterplanning and Urban Design",
+      "topic": "Masterplan Structure: Density, Movement Hierarchy, Land Use Mix and Public Realm",
+      "focus": "The key design principles underpinning a masterplan — how density and form respond to context, structuring movement networks, achieving a balanced land use mix, and public realm as a structuring element.",
+      "apc_competency": "Masterplanning and Urban Design (Level 2)"
+    },
+    {
+      "day": 26, "level": 2, "module": "Spatial Planning Policy and Infrastructure",
+      "topic": "NPPF Presumption in Favour of Sustainable Development: Applying the Tilted Balance",
+      "focus": "When the tilted balance at NPPF para 11(d) is engaged, the three 'disapply' conditions, how the tilted balance changes the weight given to the development plan, and case law on its application.",
+      "apc_competency": "Spatial Planning Policy and Infrastructure (Level 2)"
+    },
+    {
+      "day": 27, "level": 1, "module": "Diversity, Inclusion and Teamworking",
+      "topic": "Effective Project Teams in Development: Roles, Responsibilities and Inclusive Practice",
+      "focus": "How high-performing development project teams are structured, the importance of clear role definition, RACI matrices, and how inclusive team practices improve decision-making and project outcomes.",
+      "apc_competency": "Diversity, Inclusion and Teamworking (Level 1)"
+    },
+    {
+      "day": 28, "level": 2, "module": "Valuation",
+      "topic": "Comparable Evidence: Selecting, Adjusting and Applying Sales and Lettings Data",
+      "focus": "How to identify appropriate comparable transactions, the adjustments required for differences in time, location, size and condition, and how to apply the comparison method to residential and commercial property.",
+      "apc_competency": "Valuation (Level 2)"
+    },
+    {
+      "day": 29, "level": 1, "module": "Inclusive Environments",
+      "topic": "Inclusive Design Principles: The Social Model of Disability and Universal Design Hierarchy",
+      "focus": "The distinction between the medical and social model of disability, the seven principles of universal design, and how these underpin inclusive environment policy and good practice at the brief and planning stages.",
+      "apc_competency": "Inclusive Environments (Level 1)"
+    },
+    {
+      "day": 30, "level": 2, "module": "Inclusive Environments",
+      "topic": "Building Regulations Part M and BS 8300: Access Standards and the Access Audit",
+      "focus": "Part M categories (M4(1), M4(2), M4(3)), when each applies, key BS 8300 requirements for the built environment, and how to structure an access audit report.",
+      "apc_competency": "Inclusive Environments (Level 2)"
+    },
+    {
+      "day": 31, "level": 1, "module": "Measurement",
+      "topic": "RICS Property Measurement 2nd Edition: GIA, NIA, GEA and IPMS Definitions",
+      "focus": "The key floor area definitions in the RICS Property Measurement professional statement, when each is used in a P&D context (appraisals, planning, agency), and common measurement errors to avoid.",
+      "apc_competency": "Measurement (Level 1)"
+    },
+    {
+      "day": 32, "level": 1, "module": "Surveying and Mapping",
+      "topic": "GIS, OS Mapping and Digital Survey Data in Development and Planning",
+      "focus": "How GIS tools and Ordnance Survey data are used in site identification, constraint mapping and planning applications — including the use of Digital Terrain Models, red-line boundaries and topographic surveys.",
+      "apc_competency": "Surveying and Mapping (Level 1)"
+    },
+    {
+      "day": 33, "level": 1, "module": "Sustainability",
+      "topic": "BREEAM, EPC Ratings, Net Zero Commitments and Their Role in Development Appraisals",
+      "focus": "How sustainability credentials (BREEAM ratings, EPC bands, embodied carbon targets) are required by planning policy and lenders, their cost implications, and how to factor them into a development appraisal.",
+      "apc_competency": "Sustainability (Level 1)"
+    }
+  ]
+};
