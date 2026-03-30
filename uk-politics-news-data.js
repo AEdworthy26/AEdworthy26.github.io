@@ -1,50 +1,25 @@
 // uk-politics-news-data.js
-// Updated daily by automation scripts
-// Loaded via <script src="uk-politics-news-data.js"></script> in uk-politics-news.html
+// Auto-updated 2026-03-30 — do not edit manually
 
 var UK_POLITICS_NEWS = {
-  date: "2026-03-29",
+  date: "2026-03-30",
   main: {
-    title: "Starmer Unveils Planning Reform Bill as Government Pushes to Hit Housing Targets",
-    category: "Policy",
+    title: "Russia Expels British Diplomat Over Spying Allegations",
+    category: "International",
     content: [
-      "Prime Minister Keir Starmer introduced the Planning and Infrastructure Reform Bill to the House of Commons on Wednesday, setting out the government's most significant overhaul of the English planning system in more than two decades and a central pillar of Labour's programme to build 1.5 million homes by 2029.",
-      "The bill proposes to strip back local authority veto powers over certain categories of development, introduce mandatory housing delivery targets binding on all councils, and streamline the nationally significant infrastructure project regime to cut average decision times from four years to eighteen months.",
-      "Housing Secretary Angela Rayner told MPs that the reforms would 'break the stranglehold of delay that has held back a generation of home-buyers', drawing loud approval from the Labour benches and a sustained attack from Conservative shadow housing spokesman Kevin Hollinrake, who accused the government of riding roughshod over local democracy.",
-      "The legislation has already provoked unease among some Labour backbenchers with rural and semi-rural seats, who fear that mandatory targets will force development onto green-belt land in their constituencies. A cross-party amendment tabled by thirty-one MPs would require ministers to publish green-belt impact assessments before any local authority target comes into force.",
-      "Liberal Democrat housing spokesman Gideon Amos broadly welcomed the direction of the reforms but called for stronger protections for affordable housing, arguing that without binding affordable-homes quotas the bill risked producing a building boom that left key workers priced out. The bill is expected to return for its committee stage in late April."
+      "Russia has expelled a British diplomat from Moscow following allegations of espionage, in a move that has sharply escalated diplomatic tensions between the two countries. The expulsion marks one of the most serious bilateral incidents in recent months, drawing swift condemnation from London. The UK Foreign Office described the action as part of an 'aggressive and co-ordinated campaign of harassment against British diplomats.'",
+      "The Foreign Office spokesperson did not confirm the identity of the expelled diplomat but made clear that the British government rejects the spying allegations in their entirety. Officials in London are understood to be considering a reciprocal response, a course of action that has been taken in previous rounds of diplomatic tit-for-tat between the two nations. The episode has added further strain to an already fractured relationship between the UK and Russia.",
+      "The expulsion comes at a particularly sensitive moment in European security, with the war in Ukraine continuing and the UK among the most vocal supporters of Kyiv on the international stage. British officials have consistently accused Russia of conducting influence operations and hostile intelligence activities on European soil. The latest incident is likely to reinforce calls within the government to harden its posture toward Moscow.",
+      "Relations between the UK and Russia have been in a prolonged state of deterioration since the Salisbury poisonings in 2018, with successive rounds of diplomatic expulsions and counter-expulsions becoming a familiar feature of the bilateral relationship. Intelligence analysts have noted that Russia has significantly stepped up its use of diplomats as cover for intelligence gathering since the invasion of Ukraine. The British security services have been tracking an uptick in such activities in recent years.",
+      "The incident is expected to feature prominently in parliamentary debate this week, with opposition figures likely to press the government on the adequacy of its diplomatic security measures. The timing also complicates Keir Starmer's efforts to keep domestic political attention focused on cost of living ahead of May's local elections. Foreign affairs crises of this nature have a tendency to reshape the political agenda in ways that are difficult for any government to control."
     ],
-    image: "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=1200&auto=format&fit=crop",
-    source: "The Guardian",
-    sourceUrl: "https://www.theguardian.com/politics"
+    image: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1200&auto=format&fit=crop",
+    source: "BBC News",
+    sourceUrl: "https://www.bbc.co.uk/news"
   },
   secondary: [
-    {
-      id: "uk1",
-      title: "Reform UK Tops Poll in Three Red Wall Seats Ahead of Local Elections",
-      summary: "New constituency polling shows Reform UK drawing level with or ahead of Labour in three former heartland seats in the north of England, raising alarm in government ranks ahead of May's local elections.",
-      image: "https://images.unsplash.com/photo-1568454537842-d933259bb258?w=800&auto=format&fit=crop",
-      source: "The Times",
-      url: "https://www.thetimes.co.uk",
-      category: "Elections"
-    },
-    {
-      id: "uk2",
-      title: "Chancellor Reeves Signals Spring Statement Will Prioritise Growth Over Tax Cuts",
-      summary: "Rachel Reeves told the Treasury Select Committee that next week's Spring Statement would focus on supply-side investment measures rather than income tax relief, amid pressure from the OBR to preserve headroom against its fiscal rules.",
-      image: "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800&auto=format&fit=crop",
-      source: "BBC Politics",
-      url: "https://www.bbc.com/news/politics",
-      category: "Economy"
-    },
-    {
-      id: "uk3",
-      title: "Lords Inflict Defeat on Government Over Welfare Cuts",
-      summary: "The House of Lords voted by 231 to 189 to insert a sunset clause into the welfare reform bill, requiring parliamentary renewal of cuts to disability benefits after two years — a setback ministers will need to overturn in the Commons.",
-      image: "https://images.unsplash.com/photo-1580137189272-c9379f8864fd?w=800&auto=format&fit=crop",
-      source: "The Independent",
-      url: "https://www.independent.co.uk",
-      category: "Parliament"
-    }
+    { id: "uk1", title: "Starmer Launches Labour Local Election Campaign on Cost of Living", summary: "Keir Starmer has kicked off Labour's local election campaign ahead of the 7 May vote, framing the contest against a backdrop of economic uncertainty and ongoing wars in Ukraine and Iran.", image: "https://images.unsplash.com/photo-1568454537842-d933259bb258?w=800&auto=format&fit=crop", source: "BBC News", url: "https://www.bbc.co.uk/news", category: "Politics" },
+    { id: "uk2", title: "Tories Urge Government to Remove VAT on Energy Bills for Three Years", summary: "The Conservative Party has called on the government to scrap VAT on energy bills for three years, with renewed urgency following the outbreak of the Iran war and its impact on fuel costs.", image: "https://images.unsplash.com/photo-1526470498-9ae73c665de8?w=800&auto=format&fit=crop", source: "BBC News", url: "https://www.bbc.co.uk/news", category: "Economics" },
+    { id: "uk3", title: "UK Advocacy Group Demands More Support for Britons Detained in UAE", summary: "An advocacy group has urged the British government to do more to assist a number of UK nationals detained in the United Arab Emirates after they allegedly photographed Iranian attacks.", image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&auto=format&fit=crop", source: "BBC News", url: "https://www.bbc.co.uk/news", category: "International" }
   ]
 };

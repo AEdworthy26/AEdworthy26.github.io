@@ -1,50 +1,25 @@
 // financial-news-data.js
-// Updated daily by automation scripts
-// Loaded via <script src="financial-news-data.js"></script> in financial-news.html
+// Auto-updated 2026-03-30 — do not edit manually
 
 var FINANCIAL_NEWS = {
-  date: "2026-03-29",
+  date: "2026-03-30",
   main: {
-    title: "Bank of England Holds Rates at 4.25% as Inflation Edges Toward Target",
-    category: "Monetary Policy",
+    title: "Millions of Drivers to Receive Average £829 in Car Finance Compensation",
+    category: "Consumer Finance",
     content: [
-      "The Bank of England's Monetary Policy Committee voted seven to two to hold the base rate at 4.25 per cent at its March meeting, signalling cautious optimism that inflation is on a sustained path back to the two per cent target without the need for further tightening.",
-      "Consumer price inflation fell to 2.8 per cent in February, down from 3.1 per cent in January, driven largely by a sharp drop in energy costs following mild winter temperatures across Western Europe. Services inflation, which the MPC monitors closely as a gauge of domestic price pressures, eased to 4.6 per cent — still elevated, but its lowest reading in two years.",
-      "The two dissenters on the committee voted for an immediate quarter-point cut, arguing that slack in the labour market was widening faster than official data reflected. The unemployment rate rose to 4.6 per cent in the three months to January, its highest since 2021, as hiring in construction and professional services cooled sharply.",
-      "Governor Andrew Bailey struck a measured tone at the post-meeting press conference, acknowledging that the next move in rates was likely to be downward but cautioning against reading too much into a single month of favourable data. 'Persistence is what we need to see,' he told reporters, 'not just progress.'",
-      "Markets are currently pricing in two quarter-point cuts by year end, with the first expected at either the May or June meeting. Sterling fell 0.4 per cent against the dollar on the decision, which some investors had hoped would be accompanied by clearer forward guidance on the timing of easing."
+      "The Financial Conduct Authority has released the final details of a landmark mass compensation scheme for motor finance mis-selling, confirming that 12.1 million car finance deals will be eligible for redress. The average payout is expected to be around £829 per affected customer, marking one of the largest consumer compensation programmes in UK financial history. The scheme follows years of regulatory scrutiny into the widespread use of discretionary commission arrangements between lenders and car dealerships.",
+      "The FCA's final framework represents a slight reduction from earlier estimates, which had placed the number of eligible agreements closer to 14 million. The regulator tightened the eligibility criteria after consulting with industry stakeholders, narrowing the pool of qualifying loans but maintaining a significant scope that will affect major lenders across the sector. Banks and finance houses have been bracing for the financial hit, with some setting aside billions in provisions ahead of the formal scheme launch.",
+      "At the heart of the scandal is the practice of discretionary commission arrangements, whereby car dealers were permitted to set their own interest rates on finance deals, earning higher commissions the more they charged customers. This created a powerful conflict of interest that regulators determined led to consumers being systematically overcharged. The Supreme Court's ruling last year that such arrangements were unlawful paved the way for today's FCA-mandated redress programme.",
+      "Consumer groups have broadly welcomed the scheme, though some advocates argue the tightened eligibility criteria will leave a meaningful number of victims without recourse. The FCA has insisted that the revised framework strikes the right balance between protecting consumers and ensuring the financial stability of lenders, several of whom had warned that overly broad eligibility could threaten their solvency. Affected customers do not need to take active steps immediately, as the FCA has outlined a structured process for lenders to contact eligible borrowers directly.",
+      "The car finance compensation scheme arrives at a challenging moment for the UK consumer credit sector, already navigating rising defaults and a softening used-car market. Lenders including major high-street banks and specialist auto finance providers face a combined liability running into the tens of billions of pounds. The FCA has signalled it will monitor the implementation of the scheme closely and stands ready to intervene if lenders fail to process claims in a timely and fair manner."
     ],
     image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&auto=format&fit=crop",
-    source: "Financial Times",
-    sourceUrl: "https://www.ft.com"
+    source: "BBC News",
+    sourceUrl: "https://www.bbc.co.uk/news/business"
   },
   secondary: [
-    {
-      id: "f1",
-      title: "FTSE 100 Climbs to Six-Week High on Commodity Surge",
-      summary: "London's blue-chip index rose 1.2 per cent on Thursday, lifted by gains in mining and energy stocks after oil prices touched $87 a barrel on supply concerns from the Middle East.",
-      image: "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=800&auto=format&fit=crop",
-      source: "Reuters",
-      url: "https://www.reuters.com",
-      category: "Markets"
-    },
-    {
-      id: "f2",
-      title: "IMF Warns of Widening Inequality in Global Debt Restructuring Talks",
-      summary: "The International Monetary Fund cautioned that low-income nations face disproportionate burdens in ongoing sovereign debt negotiations, calling on creditor nations to accelerate relief frameworks ahead of the G20 finance ministers meeting in April.",
-      image: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=800&auto=format&fit=crop",
-      source: "IMF",
-      url: "https://www.imf.org",
-      category: "Global Economy"
-    },
-    {
-      id: "f3",
-      title: "HSBC Reports Record Pre-Tax Profit, Announces $3bn Buyback",
-      summary: "HSBC posted annual pre-tax profits of $32.3 billion, beating analyst forecasts, and unveiled a fresh share buyback programme as it benefits from elevated interest rates across its Asian and UK lending books.",
-      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&auto=format&fit=crop",
-      source: "BBC Business",
-      url: "https://www.bbc.com/news/business",
-      category: "Corporate"
-    }
+    { id: "fn1", title: "British Steel on Track for Full Nationalisation Within Weeks", summary: "The UK government is expected to complete the full nationalisation of British Steel within weeks, a year after taking over daily operations from its Chinese owner Jingye.", image: "https://images.unsplash.com/photo-1585776245991-cf89dd7fc73a?w=800&auto=format&fit=crop", source: "The Guardian", url: "https://www.theguardian.com/business", category: "Industry" },
+    { id: "fn2", title: "Tech CEOs Point to AI as Cause of Mass Job Cuts", summary: "A growing number of technology company leaders are citing artificial intelligence adoption as the primary justification for large-scale redundancies, while simultaneously calling for greater AI investment.", image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&auto=format&fit=crop", source: "BBC News", url: "https://www.bbc.co.uk/news/technology", category: "Technology" },
+    { id: "fn3", title: "Badenoch Calls for Energy Bill Tax Cuts Before Household Bailouts", summary: "Conservative leader Kemi Badenoch has urged the government to cut taxes on energy bills as a first response to rising costs, rather than resorting to direct household payments.", image: "https://images.unsplash.com/photo-1526470498-9ae73c665de8?w=800&auto=format&fit=crop", source: "BBC News", url: "https://www.bbc.co.uk/news/politics", category: "Politics" }
   ]
 };

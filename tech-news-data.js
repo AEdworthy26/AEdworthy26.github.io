@@ -1,50 +1,25 @@
 // tech-news-data.js
-// Updated daily by the automation script
-// Loaded via <script src="tech-news-data.js"></script> in tech-news.html
+// Auto-updated 2026-03-30 — do not edit manually
 
 var TECH_NEWS = {
-  date: "2026-03-29",
+  date: "2026-03-30",
   main: {
-    title: "OpenAI Unveils GPT-5 with Real-Time Reasoning and Extended Context Window",
-    category: "AI",
+    title: "Tech CEOs Suddenly Love Blaming AI for Mass Job Cuts. Why?",
+    category: "Artificial Intelligence",
     content: [
-      "OpenAI on Thursday released GPT-5, its most capable language model to date, introducing what the company describes as 'deliberative reasoning' — a mode in which the model pauses to plan multi-step responses before generating output, resulting in significantly fewer factual errors on complex tasks.",
-      "The model ships with a 500,000-token context window, roughly ten times the capacity of its predecessor, enabling developers to pass entire codebases, lengthy legal documents, or hours of meeting transcripts into a single prompt. Early benchmarks from independent evaluators place GPT-5 ahead of Google's Gemini Ultra 2 and Anthropic's Claude 4 Opus on mathematical reasoning and software engineering tasks.",
-      "Chief executive Sam Altman described GPT-5 as 'the last model we'll release that feels like a clear step up — from here, progress becomes harder to measure in discrete jumps'. The statement was widely interpreted as a signal that the industry is approaching a plateau in the conventional scaling paradigm, even as compute budgets continue to grow.",
-      "Enterprise pricing for GPT-5 starts at $0.015 per thousand input tokens, a 40 per cent reduction compared to GPT-4o at launch. The company simultaneously announced a new tier called ChatGPT Enterprise Pro, aimed at organisations requiring on-premises or private-cloud deployment with audit logging and role-based access controls.",
-      "The release has reignited debate among AI safety researchers. Several prominent academics noted that the improved reasoning capability introduces new risks around autonomous task completion — particularly in agentic settings where the model can browse the web, execute code, and send emails on a user's behalf. OpenAI published a 68-page system card alongside the release, disclosing red-team findings and the mitigations applied."
+      "A striking new pattern has emerged across the technology industry: chief executives are increasingly citing artificial intelligence as the driving force behind large-scale layoffs, a rhetorical shift that has drawn significant scrutiny from analysts and labour advocates alike. Rather than attributing workforce reductions to slowing growth, macroeconomic pressure, or post-pandemic overcorrection — explanations that dominated headlines just two years ago — executives are now framing cuts as an inevitable and even forward-looking response to AI-driven efficiency. The change in language is anything but subtle, and critics argue it is deeply calculated.",
+      "The strategic appeal of blaming AI is considerable. By positioning job cuts as the product of technological progress rather than managerial miscalculation, CEOs can simultaneously justify cost reductions and burnish their companies' reputations as cutting-edge innovators. It reframes a story about corporate failure into a story about corporate transformation. For investors, the message is doubly attractive: not only is the company leaner, but it is also actively deploying the technology that financial markets have spent years rewarding with soaring valuations.",
+      "There is, of course, a more practical dimension to the trend. AI tools genuinely are automating tasks that once required human labour — from software testing and data entry to customer service and content moderation. Several major technology firms have publicly confirmed that AI-assisted workflows have allowed them to reduce headcount in specific departments without a corresponding drop in output. But labour economists caution that the scale of cuts being attributed to AI frequently outpaces any honest accounting of what automation has actually replaced.",
+      "The framing also serves a secondary purpose: justifying continued and substantial investment in AI infrastructure. By telling a story in which AI eliminates jobs on one hand while demanding enormous capital expenditure on the other, tech leaders are making a case to shareholders for why profit margins may remain compressed even as the workforce shrinks. It is a narrative that asks investors to accept short-term pain in exchange for long-term dominance — a pitch Silicon Valley has made before, though rarely with this much conviction or this much at stake.",
+      "For workers, the shift in rhetoric carries real consequences. When job losses are attributed to an abstract technological force rather than specific business decisions, the accountability that employees, unions, and regulators might otherwise demand becomes harder to pin down. Labour advocates warn that the 'AI made us do it' framing risks normalising mass redundancies as a natural feature of technological progress, when in reality these are choices made by executives and boards with significant discretion over how and when to deploy automation. As AI capabilities continue to advance, how society responds to this framing — legally, politically, and culturally — may shape the trajectory of employment for a generation."
     ],
-    image: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&auto=format&fit=crop",
-    source: "The Verge",
-    sourceUrl: "https://www.theverge.com"
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&auto=format&fit=crop",
+    source: "BBC News",
+    sourceUrl: "https://www.bbc.com/news/technology"
   },
   secondary: [
-    {
-      id: "t1",
-      title: "Apple Confirms 'Liquid Glass' UI Overhaul Coming to iOS 20 This Autumn",
-      summary: "Apple's biggest visual redesign since iOS 7 will introduce translucent, depth-layered interfaces across the operating system, with the Home Screen, Control Centre, and Messages app all receiving major updates.",
-      image: "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=800&auto=format&fit=crop",
-      source: "9to5Mac",
-      url: "https://9to5mac.com",
-      category: "Gadgets"
-    },
-    {
-      id: "t2",
-      title: "EU Regulators Open Formal Probe into Microsoft's GitHub Copilot Training Data",
-      summary: "The European Commission has launched an investigation into whether GitHub Copilot's training on public repositories constitutes an unlawful use of copyrighted code, in what could be the bloc's most significant AI enforcement action to date.",
-      image: "https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=800&auto=format&fit=crop",
-      source: "Reuters",
-      url: "https://www.reuters.com/technology",
-      category: "Big Tech"
-    },
-    {
-      id: "t3",
-      title: "Y Combinator's Winter 2026 Batch Sets Record with 412 Startups",
-      summary: "The latest YC cohort includes a record number of AI infrastructure companies, with roughly 60 per cent of startups focused on agentic workflows, developer tooling, or enterprise AI deployment.",
-      image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&auto=format&fit=crop",
-      source: "TechCrunch",
-      url: "https://techcrunch.com",
-      category: "Startups"
-    }
+    { id: "tc1", title: "Judge Rejects Pentagon's Attempt to 'Cripple' Anthropic", summary: "A federal judge blocked the government from immediately enforcing a ban on Anthropic's AI tools, dealing a significant setback to the Pentagon's legal effort.", image: "https://images.unsplash.com/photo-1585776245991-cf89dd7fc73a?w=800&auto=format&fit=crop", source: "BBC News", url: "https://www.bbc.com/news/technology", category: "Artificial Intelligence" },
+    { id: "tc2", title: "Apple Subsidiary Fined £390,000 for Breaching Russia Sanctions", summary: "The UK government fined Apple Distribution International after it instructed a British bank to make payments worth £635,000 to a Russian streaming service in breach of Moscow sanctions.", image: "https://images.unsplash.com/photo-1580130775562-0ef92da028de?w=800&auto=format&fit=crop", source: "The Guardian", url: "https://www.theguardian.com/technology", category: "Regulation" },
+    { id: "tc3", title: "Keir Starmer Backs Ban on Addictive Social Media Features", summary: "The UK Prime Minister made his strongest intervention yet on social media regulation, saying addictive platform features 'shouldn't be permitted' and that the government will act.", image: "https://images.unsplash.com/photo-1526470498-9ae73c665de8?w=800&auto=format&fit=crop", source: "The Guardian", url: "https://www.theguardian.com/technology", category: "Policy" }
   ]
 };

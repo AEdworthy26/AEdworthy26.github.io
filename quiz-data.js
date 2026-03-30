@@ -1,11 +1,10 @@
-// ── General Knowledge Question of the Day ─────────────────────────────────
-// Updated daily via GitHub Actions workflow.
-// Fields: date, category, question, answer, funFact (optional)
+// quiz-data.js
+// Auto-updated 2026-03-30 — do not edit manually
 
 window.QUIZ_DATA = {
   date: '2026-03-30',
   category: 'Ancient History',
-  question: 'Which ancient wonder of the world stood in the harbour of Alexandria and guided sailors for over a thousand years?',
-  answer: 'The Lighthouse of Alexandria (Pharos of Alexandria)',
-  funFact: 'Built around 280 BC under Ptolemy II, it stood approximately 100–140 metres tall — one of the tallest structures in the ancient world — and is thought to have used polished bronze mirrors to project its light.'
+  question: 'What was the name of the ancient Egyptian concept of cosmic order, truth, and justice, personified as a goddess with an ostrich feather?',
+  answer: 'Ma\'at — the principle of truth, justice, harmony, and cosmic balance central to Egyptian religion and governance.',
+  funFact: 'After death, a person\'s heart was weighed against the feather of Ma\'at in the Hall of Two Truths. If the heart was heavier than the feather — burdened by sin — the monster Ammit would devour it, ending the soul\'s existence entirely. Pharaohs were considered the living embodiment of Ma\'at on earth, obligated to uphold its principles in law and ritual.'
 };

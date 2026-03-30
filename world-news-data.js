@@ -1,49 +1,25 @@
 // world-news-data.js
-// Updated daily by scripts/generate-news.js
-// Loaded via <script src="world-news-data.js"></script> in world-news.html
+// Auto-updated 2026-03-30 — do not edit manually
 
 var WORLD_NEWS = {
-  date: "2026-03-29",
+  date: "2026-03-30",
   main: {
-    title: "UN Climate Summit Reaches Landmark Agreement on Emissions Targets",
+    title: "Trump Signals Military Move on Iran's Kharg Island as Iran War Reshapes Global Order",
+    category: "International",
     content: [
-      "World leaders gathered in Geneva this week reached a historic accord on accelerating emissions reduction targets, with 147 nations pledging to cut carbon output by 45 per cent relative to 2010 levels before the end of the decade.",
-      "The agreement, brokered after three days of intensive negotiations, marks the most ambitious multilateral climate commitment since the Paris Accords. Crucially, it includes a binding arbitration mechanism — a first for a UN climate instrument — allowing member states to challenge one another's compliance records before an independent panel.",
-      "The United States and China, which together account for roughly 43 per cent of global greenhouse gas emissions, both signed the accord. Beijing's endorsement was described by European negotiators as the single most important development of the summit. China also committed to halting construction of new coal-fired power stations by the end of next year.",
-      "Critics from small island nations and environmental groups argued the targets remain insufficient given the current pace of warming. Representatives from Pacific nations staged a silent walkout during the final plenary session to signal their dissatisfaction, insisting that stabilising global temperatures at 1.5°C above pre-industrial levels requires steeper and faster cuts.",
-      "Despite these objections, the summit chair, Norwegian Foreign Minister Espen Eide, called the outcome 'a genuine turning point' and acknowledged that further ambition would be required at the next review conference, scheduled for 2028."
+      "President Donald Trump has signalled that the United States could deploy troops to seize control of Kharg Island, Iran's primary oil export terminal located in the Persian Gulf. The island handles the vast majority of Iran's crude oil exports, making it a linchpin of Tehran's economic survival and a strategically decisive target. Trump's remarks, characteristically blunt and unambiguous, have sent shockwaves through diplomatic and energy markets alike, raising the spectre of a dramatic escalation in what has already become a destabilising regional conflict.",
+      "The broader Iran war has already begun to reshape international alliances in unexpected ways. Spain announced it is closing its airspace to US military aircraft involved in the Iran conflict, following a government decision to deny Washington the use of two jointly operated bases in Andalusia. The Spanish move marks one of the most significant public breaks between a NATO ally and the United States since the conflict began, and signals growing unease in Western Europe about the trajectory and proportionality of American military engagement in the region.",
+      "The conflict is also complicating the situation in Ukraine, where President Volodymyr Zelensky revealed that allied partners have asked him to scale back Ukrainian drone and missile strikes on Russian energy infrastructure. The request stems from concerns that soaring global energy prices, already inflamed by disruption to Iranian oil exports, could worsen further if Russian production is simultaneously curtailed. Zelensky confirmed partners asked whether the attacks could be 'reduced', placing Kyiv in the delicate position of weighing its own military strategy against the economic anxieties of its backers.",
+      "Meanwhile, a Russian oil tanker reached Cuban waters just hours after Trump publicly stated he had 'no problem' with its passage, suggesting a pragmatic — if ambiguous — loosening of what had been interpreted as a blockade posture. The episode underscores the contradictions at the heart of American policy, where hawkish rhetoric on Iran coexists with apparent flexibility toward Russian energy movements in the Western Hemisphere. Analysts suggest the administration may be managing multiple pressure points simultaneously, calibrating escalation and de-escalation in ways that remain difficult for allies and adversaries alike to predict.",
+      "The potential seizure of Kharg Island would represent an extraordinary act of economic warfare and a profound rupture in international norms around sovereign territory. Were the US to move on the island, it would effectively control a critical chokepoint in global oil supply, with immediate consequences for prices, shipping lanes, and the geopolitical calculations of every major power. Whether Trump's comments reflect genuine operational planning or are intended as coercive leverage remains unclear, but the statement alone has been sufficient to rattle markets and prompt urgent consultations among allied governments scrambling to formulate a coherent response."
     ],
-    image: "https://images.unsplash.com/photo-1569163139394-de4e4f43e4e3?w=1200&auto=format&fit=crop",
-    source: "Reuters",
-    sourceUrl: "https://www.reuters.com"
+    image: "https://images.unsplash.com/photo-1585776245991-cf89dd7fc73a?w=1200&auto=format&fit=crop",
+    source: "BBC News",
+    sourceUrl: "https://www.bbc.com/news"
   },
   secondary: [
-    {
-      id: "s1",
-      title: "India's Election Commission Announces Dates for Five-State Polls",
-      summary: "Voting is to take place across five Indian states in April and May, with the results expected to shape the political landscape ahead of next year's general election.",
-      image: "https://images.unsplash.com/photo-1532375810709-75b1da00537c?w=800&auto=format&fit=crop",
-      source: "BBC World",
-      url: "https://www.bbc.com/news/world/asia",
-      category: "Politics"
-    },
-    {
-      id: "s2",
-      title: "ECB Holds Interest Rates Steady Amid Mixed Eurozone Inflation Data",
-      summary: "The European Central Bank kept its benchmark rate unchanged at 3.5 per cent, citing persistent services inflation and uncertainty over global trade conditions following recent US tariff announcements.",
-      image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&auto=format&fit=crop",
-      source: "Financial Times",
-      url: "https://www.ft.com",
-      category: "Economy"
-    },
-    {
-      id: "s3",
-      title: "Ceasefire Holds in West Africa as Talks Enter Second Week",
-      summary: "A fragile ceasefire between rival factions in the Sahel region has entered its second week, with AU-brokered negotiations continuing in Dakar. Humanitarian agencies warn that aid access remains severely restricted.",
-      image: "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800&auto=format&fit=crop",
-      source: "Al Jazeera",
-      url: "https://www.aljazeera.com",
-      category: "Conflict"
-    }
+    { id: "s1", title: "Spain Bars US Military Aircraft Over Iran War Involvement", summary: "Spain has closed its airspace to US military aircraft involved in the Iran conflict and denied Washington access to two jointly run bases in Andalusia, marking a significant rupture between the allies.", image: "https://images.unsplash.com/photo-1526470498-9ae73c665de8?w=800&auto=format&fit=crop", source: "BBC News", url: "https://www.bbc.com/news", category: "International" },
+    { id: "s2", title: "Zelensky Says Allies Pushed to Reduce Attacks on Russian Energy", summary: "Ukraine's president disclosed that allied partners asked him to scale back strikes on Russian energy infrastructure as global fuel prices surge amid the Iran war.", image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&auto=format&fit=crop", source: "BBC News", url: "https://www.bbc.com/news", category: "Politics" },
+    { id: "s3", title: "Air Canada CEO Retires Following English-Only Condolence Video Backlash", summary: "Michael Rousseau announced his retirement after facing widespread criticism for delivering a condolence message solely in English following the fatal Air Canada collision at LaGuardia airport.", image: "https://images.unsplash.com/photo-1580130775562-0ef92da028de?w=800&auto=format&fit=crop", source: "BBC News", url: "https://www.bbc.com/news", category: "Business" }
   ]
 };

@@ -1,50 +1,25 @@
 // us-politics-news-data.js
-// Updated daily by automation scripts
-// Loaded via <script src="us-politics-news-data.js"></script> in us-politics-news.html
+// Auto-updated 2026-03-30 — do not edit manually
 
 var US_POLITICS_NEWS = {
-  date: "2026-03-29",
+  date: "2026-03-30",
   main: {
-    title: "Senate Passes Revised Budget Resolution as Debt Ceiling Deadline Approaches",
-    category: "Congress",
+    title: "Supreme Court to Decide Who Is an American: Birthright Citizenship on Trial",
+    category: "Politics",
     content: [
-      "The United States Senate approved a revised budget resolution in a 52-to-47 party-line vote early on Thursday, setting the stage for a reconciliation package that Republicans hope to pass before the statutory debt ceiling deadline, now estimated by the Treasury Department to fall sometime between late May and mid-July.",
-      "The resolution assumes $1.7 trillion in deficit reduction over ten years, achieved primarily through cuts to Medicaid, food stamps, and federal student loan programmes. It also unlocks the procedural pathway for extending the 2017 Tax Cuts and Jobs Act provisions, most of which are due to expire at the end of this year.",
-      "Senate Majority Leader John Thune hailed the vote as 'the beginning of the most consequential fiscal rebalancing in a generation', while Minority Leader Chuck Schumer warned that the Medicaid cuts would strip healthcare coverage from millions of low-income Americans and predicted the provisions would face legal challenge.",
-      "The White House signalled strong support for the resolution, with press secretary Karoline Leavitt telling reporters that the President was 'committed to working with Congress to deliver on the mandate the American people gave us in November'. The administration is pushing for the full reconciliation bill to be on the President's desk before the August recess.",
-      "Several moderate Republican senators, including Susan Collins of Maine and Lisa Murkowski of Alaska, have raised objections to the scale of the proposed Medicaid reductions, warning they will seek amendments during floor debate. Their votes are likely to be crucial as Republicans hold only a three-seat majority in the chamber."
+      "The United States Supreme Court is set to hear oral arguments Wednesday on one of the most consequential constitutional questions of the Trump era: whether children born on American soil are automatically entitled to citizenship under the Fourteenth Amendment. The case arrives after President Trump issued an executive order challenging the long-standing interpretation of birthright citizenship, a legal principle that has been foundational to American identity for over 150 years. The outcome could reshape the lives of millions and redefine what it means to be born in the United States.",
+      "At the heart of the dispute is the Fourteenth Amendment's Citizenship Clause, which states that all persons 'born or naturalized in the United States, and subject to the jurisdiction thereof, are citizens.' The Trump administration argues that children born to undocumented immigrants or temporary visa holders are not 'subject to the jurisdiction' of the United States in the constitutional sense, and therefore do not qualify for automatic citizenship. Legal scholars across the spectrum have pushed back sharply on this reading, calling it a distortion of both the amendment's text and its original intent following the Civil War.",
+      "Public opinion on the issue is divided, though recent polling suggests a majority of Americans continue to support birthright citizenship as a constitutional right. NPR reporting highlights that support cuts across some partisan lines, with many conservatives also expressing hesitation about dismantling a protection that has been operative since 1868. The case has nonetheless become a flashpoint in the broader national debate over immigration, national identity, and executive power.",
+      "Lower courts had blocked Trump's executive order, ruling it plainly unconstitutional, and the Supreme Court's decision to take up the matter signals that the justices intend to deliver a definitive ruling. The justices are also being asked to weigh in on the procedural question of whether nationwide injunctions — the legal tool used by lower courts to block the policy — are themselves appropriate. That secondary question could have far-reaching implications for how federal courts constrain executive action going forward.",
+      "The stakes extend well beyond immigration policy. A ruling in the administration's favor would be the most dramatic reinterpretation of the Fourteenth Amendment since its ratification and could strip citizenship from hundreds of thousands of children born in the US each year. Civil rights organizations have warned that such a decision would create a permanent underclass of stateless individuals born on American soil. Whatever the Court decides, the ruling is expected before the end of the term in June and will almost certainly define a generation of constitutional law."
     ],
-    image: "https://images.unsplash.com/photo-1555209183-1bd0a19a9a9c?w=1200&auto=format&fit=crop",
-    source: "The New York Times",
-    sourceUrl: "https://www.nytimes.com/section/politics"
+    image: "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=1200&auto=format&fit=crop",
+    source: "NPR",
+    sourceUrl: "https://www.npr.org/sections/politics"
   },
   secondary: [
-    {
-      id: "us1",
-      title: "White House Imposes New Tariffs on Steel Imports from Three Allies",
-      summary: "The Trump administration announced 25 per cent tariffs on steel imports from Canada, Mexico, and South Korea, citing national security grounds, triggering immediate protests from all three governments and warnings of retaliatory measures.",
-      image: "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=800&auto=format&fit=crop",
-      source: "Wall Street Journal",
-      url: "https://www.wsj.com",
-      category: "Trade"
-    },
-    {
-      id: "us2",
-      title: "Supreme Court Hears Arguments Over Birthright Citizenship Executive Order",
-      summary: "Justices pressed government lawyers on the constitutional basis for an executive order narrowing birthright citizenship, with several conservative justices appearing sceptical that the President possesses unilateral authority to reinterpret the Fourteenth Amendment.",
-      image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&auto=format&fit=crop",
-      source: "NPR",
-      url: "https://www.npr.org/politics",
-      category: "Supreme Court"
-    },
-    {
-      id: "us3",
-      title: "Democrats Launch 2026 Midterm Recruitment Drive in Suburban Swing Districts",
-      summary: "The Democratic Congressional Campaign Committee has identified 42 competitive House districts as top-tier targets for 2026, focusing recruitment on former military officers and healthcare professionals in suburban areas that shifted toward Republicans in 2024.",
-      image: "https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?w=800&auto=format&fit=crop",
-      source: "Politico",
-      url: "https://www.politico.com",
-      category: "Elections"
-    }
+    { id: "us1", title: "'No Kings' Protests Draw Massive Crowds Nationwide, Bruce Springsteen Performs", summary: "Large anti-Trump 'No Kings' rallies swept cities across the United States, with Bruce Springsteen joining demonstrators in Minnesota for a live performance.", image: "https://images.unsplash.com/photo-1585776245991-cf89dd7fc73a?w=800&auto=format&fit=crop", source: "BBC News", url: "https://www.bbc.com/news", category: "Politics" },
+    { id: "us2", title: "Partial Government Shutdown Becomes Longest in US History at 44 Days", summary: "A funding lapse affecting the Department of Homeland Security has stretched to 44 days, surpassing all previous shutdowns and causing significant disruption at airports.", image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&auto=format&fit=crop", source: "BBC News", url: "https://www.bbc.com/news", category: "Politics" },
+    { id: "us3", title: "Iran War Divides Conservatives as Pressure Grows for Trump to Find Exit Ramp", summary: "At CPAC, the conflict with Iran emerged as a dominant and divisive topic, exposing a generational split among conservatives over the administration's military posture.", image: "https://images.unsplash.com/photo-1568454537842-d933259bb258?w=800&auto=format&fit=crop", source: "BBC News", url: "https://www.bbc.com/news", category: "International" }
   ]
 };
