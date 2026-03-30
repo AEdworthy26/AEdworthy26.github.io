@@ -180,7 +180,7 @@
     }
     .rec-feature:hover .rec-cover-wrap { transform: scale(1.03); }
 
-    .rec-cover-svg { max-width: 360px; height: auto; display: block; }
+    .rec-cover-svg { width: 100%; max-width: 360px; height: auto; display: block; }
 
     /* ── Info panel ── */
     .rec-body {
@@ -679,7 +679,9 @@
   function buildBook(book, idx) {
     var el = document.getElementById('js-book');
     var imgHTML = coverImgHTML(book.coverUrl, bookSVG(book, idx));
-    var amazonUrl = 'https://www.amazon.co.uk/s?k=' + encodeURIComponent(book.title + ' ' + book.author);
+    var amazonUrl = (book.amazonUrl && book.amazonUrl.indexOf('ASIN_HERE') === -1)
+      ? book.amazonUrl
+      : 'https://www.amazon.co.uk/s?i=stripbooks&k=' + encodeURIComponent(book.title + ' ' + book.author);
     el.innerHTML = '<section class="rec-feature rec-book">'
       + '<div class="rec-body">'
       + '<span class="rec-type-tag">Book</span>'
