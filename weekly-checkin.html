@@ -1100,7 +1100,14 @@
       renderMilestones();
       updateWeekNav();
       if (existing) {
+        populateForm(existing);
+        editingExisting = true;
         document.getElementById('btn-edit').style.display = '';
+        document.getElementById('form-card').style.display = 'none';
+      } else {
+        document.getElementById('form-card').style.display = '';
+        document.getElementById('btn-edit').style.display = 'none';
+        editingExisting = false;
       }
     }
 
