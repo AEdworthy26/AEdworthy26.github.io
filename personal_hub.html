@@ -874,16 +874,18 @@
   </footer>
 
   <script src="quote-data.js?v=20260331"></script>
-  <script src="suggested-recipes-data.js"></script>
-  <script src="world-news-data.js"></script>
-  <script src="tech-news-data.js"></script>
-  <script src="uk-politics-news-data.js"></script>
-  <script src="us-politics-news-data.js"></script>
-  <script src="financial-news-data.js"></script>
-  <script src="curiosity-data.js"></script>
-  <script src="philosophy-data.js"></script>
+  <script src="suggested-recipes-data.js?v=20260331"></script>
+  <script src="world-news-data.js?v=20260331"></script>
+  <script src="tech-news-data.js?v=20260331"></script>
+  <script src="uk-politics-news-data.js?v=20260331"></script>
+  <script src="us-politics-news-data.js?v=20260331"></script>
+  <script src="financial-news-data.js?v=20260331"></script>
+  <script src="curiosity-data.js?v=20260331"></script>
+  <script src="philosophy-data.js?v=20260331"></script>
   <script src="quiz-data.js?v=20260331"></script>
   <script src="rics-data.js?v=20260331"></script>
+  <script src="reads-data.js?v=20260331"></script>
+  <script src="films-data.js?v=20260331"></script>
   <script src="ticker.js"></script>
   <script>
     // ── Date labels ──
@@ -1103,44 +1105,33 @@
           return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
         }
 
-        var todayStr = new Date().toISOString().slice(0, 10);
-        var rPreview = null, fPreview = null;
-        try { rPreview = JSON.parse(localStorage.getItem('reads_preview') || 'null'); } catch(_) {}
-        try { fPreview = JSON.parse(localStorage.getItem('films_preview') || 'null'); } catch(_) {}
-        // reads.html saves film inside reads_preview — use as fallback if films_preview absent
-        if (!fPreview && rPreview && rPreview.film) fPreview = { film: rPreview.film };
+        // Read directly from loaded data files — no localStorage dependency
+        var b = (typeof READS_DATA !== 'undefined' && READS_DATA.book) ? READS_DATA.book : null;
+        var f = (typeof FILMS_DATA !== 'undefined' && FILMS_DATA.film) ? FILMS_DATA.film : null;
 
-        var bookHTML = '', filmHTML = '';
-
-        if (rPreview && rPreview.book) {
-          var b = rPreview.book;
-          bookHTML = '<a href="reads.html" class="reads-preview-item is-book">'
+        var bookHTML = b
+          ? '<a href="reads.html" class="reads-preview-item is-book">'
             + '<div><span class="reads-preview-eyebrow">Book</span>'
             + '<div class="reads-preview-title">' + esc(b.title) + '</div>'
             + '<div class="reads-preview-credit">' + esc(b.author) + '</div>'
             + (b.rating ? '<div class="reads-preview-score gold">\u2605 ' + (+b.rating).toFixed(1) + ' &nbsp;&middot;&nbsp; ' + esc(b.ratingSource || '') + '</div>' : '')
-            + '</div></a>';
-        } else {
-          bookHTML = '<a href="reads.html" class="reads-preview-item is-book">'
+            + '</div></a>'
+          : '<a href="reads.html" class="reads-preview-item is-book">'
             + '<div><span class="reads-preview-eyebrow">Book</span>'
-            + '<div class="reads-preview-title" style="opacity:.5;font-style:italic">Visit Reads to load</div>'
+            + '<div class="reads-preview-title" style="opacity:.5;font-style:italic">Loading&hellip;</div>'
             + '</div></a>';
-        }
 
-        if (fPreview && fPreview.film) {
-          var f = fPreview.film;
-          filmHTML = '<a href="films.html" class="reads-preview-item is-film">'
+        var filmHTML = f
+          ? '<a href="films.html" class="reads-preview-item is-film">'
             + '<div><span class="reads-preview-eyebrow">Film</span>'
             + '<div class="reads-preview-title">' + esc(f.title) + '</div>'
             + '<div class="reads-preview-credit">' + esc(f.director || '') + (f.year ? ' &nbsp;&middot;&nbsp; ' + f.year : '') + '</div>'
             + (f.rating ? '<div class="reads-preview-score blue">' + f.rating + '% &nbsp;&middot;&nbsp; Rotten Tomatoes</div>' : '')
-            + '</div></a>';
-        } else {
-          filmHTML = '<a href="films.html" class="reads-preview-item is-film">'
+            + '</div></a>'
+          : '<a href="films.html" class="reads-preview-item is-film">'
             + '<div><span class="reads-preview-eyebrow">Film</span>'
-            + '<div class="reads-preview-title" style="opacity:.5;font-style:italic">Visit Films to load</div>'
+            + '<div class="reads-preview-title" style="opacity:.5;font-style:italic">Loading&hellip;</div>'
             + '</div></a>';
-        }
 
         el.innerHTML = '<span class="section-tag">Recommendations &nbsp;&middot;&nbsp; Daily Picks</span>'
           + '<h2><a href="reads.html">Today\u2019s Book &amp; Film</a></h2>'
