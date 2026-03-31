@@ -3,6 +3,6 @@
 
 var QUOTE_DATA = {
   date: "2026-03-31",
-  text: "All of humanity's problems stem from man's inability to sit quietly in a room alone.",
-  author: "Blaise Pascal"
+  text: "The world is full of magic things, patiently waiting for our senses to grow sharper.",
+  author: "W.B. Yeats"
 };

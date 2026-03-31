@@ -4,16 +4,16 @@
 var READS_DATA = {
   date: "2026-03-31",
   book: {
-    title: "The Peloponnesian War",
-    author: "Thucydides",
-    year: -431,
-    genres: ["Ancient History", "Political History", "Military History"],
-    desc: "Thucydides' account of the catastrophic war between Athens and Sparta is not merely history — it is the founding document of political realism. Written by a general who lived through it, exiled for a military failure, and who spent twenty years observing both sides with cold, clear eyes, it reads with the urgency of a reporter embedded in events that would define Western civilisation. The Melian Dialogue alone — in which Athens tells a weaker city that the strong do what they can and the weak suffer what they must — has haunted statesmen and scholars for two and a half millennia. Its portrait of how democracies corrode under the pressures of war, faction, and imperial overreach feels less like antiquity and more like an uncomfortable mirror.",
-    whyRead: "At a moment when democratic institutions face stress and great powers jostle for dominance, Thucydides reads not as a history lesson but as a live diagnosis — the most honest book ever written about how civilisations fall apart.",
-    rating: 4.1,
+    title: "The Histories",
+    author: "Herodotus",
+    year: -430,
+    genres: ["Ancient History", "Exploration", "Political History"],
+    desc: "Often called the first true work of history, Herodotus's sprawling masterpiece chronicles the wars between Greece and Persia while veering gloriously into ethnography, geography, folklore, and sheer wonder at the strangeness of the world. He travels—literally and narratively—from the pyramids of Egypt to the frozen steppes of Scythia, recording customs, marvels, and political intrigues with an insatiable curiosity that feels remarkably modern. What elevates The Histories beyond a war narrative is its profound meditation on the fragility of power, the role of fate, and the ways cultures see themselves reflected in the mirror of others. Herodotus is both a rigorous investigator and a born storyteller, weaving together eyewitness testimony, local legend, and his own skeptical commentary into something that reads as part epic journalism, part philosophical inquiry. Two and a half millennia on, his voice remains astonishingly vivid—warm, wry, digressive, and deeply human.",
+    whyRead: "As spring turns and the world feels newly unpredictable, there's no better companion than the father of history himself—reminding us that civilizations rise, collide, and transform, and that the best response is boundless curiosity.",
+    rating: 4.0,
     ratingSource: "Goodreads",
-    ratingCount: "28,000+",
-    coverUrl: "https://covers.openlibrary.org/b/id/9585469-L.jpg",
-    amazonUrl: null
+    ratingCount: "55,000+",
+    coverUrl: "https://covers.openlibrary.org/b/id/9829028-L.jpg",
+    amazonUrl: "https://www.amazon.co.uk/dp/078618969X"
   }
 };

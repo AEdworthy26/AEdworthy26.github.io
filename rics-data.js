@@ -3,136 +3,49 @@
 
 var RICS_DATA = {
   date: "2026-03-31",
-  topic: "Hardcore and Layer Methods for Reversionary Investment Valuations",
-  module: "Valuation",
+  topic: "Sensitivity Analysis and Scenario Modelling in Residual Appraisals: Quantifying Risk on Speculative Schemes",
+  module: "Development Appraisals",
   level: 3,
-  apc_competency: "Valuation (Level 3)",
-  focus: "This lesson examines the hardcore (block) and layer (term and reversion) methods used to value reversionary and over-rented investment properties — a core Level 3 valuation skill. Understanding when each approach is appropriate, and being able to justify the choice with reference to yield evidence and lease structure, is essential for the APC where assessors frequently probe candidates on income treatment and the impact of lease events on capital value.",
-  image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&auto=format&fit=crop",
+  apc_competency: "Development Appraisals (Level 3)",
+  focus: "This lesson examines how sensitivity analysis and scenario modelling are applied within residual development appraisals to quantify and communicate risk on speculative schemes. It covers single-variable sensitivity, multi-variable scenario testing, and probability-weighted returns — essential techniques for Level 3 competency where you must advise clients on the robustness of appraisal outputs.",
+  image: "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200&auto=format&fit=crop",
   content: [
-    {
-      type: "paragraph",
-      text: "The investment method of valuation capitalises an income stream into a capital value using an appropriate yield. Where a property is rack-rented — passing rent equals ERV — a simple capitalisation at an all risks yield (ARY) suffices. However, most investment properties are either reversionary or over-rented: the passing rent and ERV diverge, and the timing of the next lease event introduces valuation complexity that demands a more nuanced approach. Selecting the correct method, and defending it, is a hallmark of Level 3 valuation competence."
-    },
-    {
-      type: "heading",
-      text: "Reversionary vs. Over-Rented: Defining the Problem"
-    },
-    {
-      type: "paragraph",
-      text: "A reversionary property is one where the passing rent sits below the current ERV — typically because the lease was granted at a lower rent before market growth. The investor holds a below-market income in the near term, with the prospect of an uplift at the next review or expiry. Conversely, an over-rented property carries a passing rent above the ERV, meaning the income will fall at the next review. Each scenario requires different analytical treatment, and conflating the two — or applying a single ARY across all income — is a common APC error."
-    },
-    {
-      type: "key_term",
-      term: "Passing Rent",
-      text: "The contractual rent currently payable under the lease, as distinct from the market rent or ERV. The passing rent may be fixed for the lease term or subject to upward-only rent review clauses. It is the actual income received by the landlord and the starting point for any investment valuation."
-    },
-    {
-      type: "key_term",
-      term: "Estimated Rental Value (ERV)",
-      text: "The open market rental value of the property as at the date of valuation — what the property could command if let today on standard terms. The relationship between ERV and passing rent determines whether a property is reversionary, rack-rented, or over-rented, and drives the choice of valuation methodology and yield differential."
-    },
-    {
-      type: "heading",
-      text: "The Layer (Term and Reversion) Method"
-    },
-    {
-      type: "paragraph",
-      text: "The layer method separates the income into two tranches: the term income (passing rent secured until the next review or lease expiry) and the reversionary income (ERV in perpetuity from that point). Each tranche is capitalised at a separate yield reflecting its relative security. The term income is often capitalised at a marginally tighter yield than the ARY because it is contractually fixed — reducing short-term income volatility. The reversionary income is capitalised at the ARY applied to the ERV, then deferred using a Present Value factor to account for the wait. The layer method is the preferred approach for reversionary investments because it correctly mirrors investor pricing behaviour: the contracted income is treated differently from the market-dependent upside."
-    },
-    {
-      type: "callout",
-      label: "Worked Example — Layer Method (Reversionary)",
-      text: "A 5,000 sq ft office let at £40 psf (passing rent = £200,000 pa). ERV: £50 psf (£250,000 pa). Next rent review in 3 years. ARY: 6.0%. Term yield: 5.75% (tighter, reflecting contracted income security).\n\nTerm income: £200,000 × YP 3 yrs @ 5.75% (2.676) = £535,200\nReversion: £250,000 × YP perp @ 6.0% (16.667) × PV £1 in 3 yrs @ 6.0% (0.8396) = £349,833\nCapital Value = £885,033 (say £885,000)\n\nKey assessor question: why the tighter term yield? Answer: the passing rent is secured by covenant for a defined period, providing income certainty that a market-exposed position does not. The differential should be modest — typically 25–50 bps — and evidenced from comparable reversionary transactions."
-    },
-    {
-      type: "heading",
-      text: "The Hardcore (Block) Method"
-    },
-    {
-      type: "paragraph",
-      text: "The hardcore method treats a defined income level as a permanent 'block' capitalised in perpetuity at the ARY, with a separate 'top slice' for the marginal income above (or at risk of falling below) that level. For a reversionary property, the hardcore is the passing rent and the top slice is the additional income expected at reversion — capitalised at a higher yield to reflect its deferred and uncertain nature. The critical weakness of this approach for reversionary investments is that it capitalises the passing rent in perpetuity, implying it will be received forever rather than just for the term: this systematically overstates capital value and is why the layer method is preferred for reversionary assets."
-    },
-    {
-      type: "callout",
-      label: "Worked Example — Hardcore Method (Reversionary)",
-      text: "Same property: passing rent £200,000, ERV £250,000, review in 3 years, ARY 6.0%, top slice yield 8.0%.\n\nHardcore: £200,000 × YP perp @ 6.0% (16.667) = £3,333,400\nTop slice: £50,000 × YP perp @ 8.0% (12.5) × PV £1 in 3 yrs @ 8.0% (0.7938) = £496,125\nCapital Value = £3,829,525 (say £3,830,000)\n\nCompare to the layer result of £885,000 — the stark difference illustrates why the hardcore method is inappropriate here. The hardcore treats the passing rent as a perpetual income, inflating the core capital block well beyond what the lease actually secures."
-    },
-    {
-      type: "heading",
-      text: "Over-Rented Properties: Where Hardcore is the Convention"
-    },
-    {
-      type: "paragraph",
-      text: "For over-rented investments, the hardcore method is the accepted market convention. The ERV is treated as the sustainable, permanent income stream and capitalised at the ARY; the excess — passing rent above ERV — is the exposed top slice capitalised at a materially higher yield to reflect the near-certainty of its loss at the next review. This correctly penalises the vulnerable tranche without distorting the core investment value. The layer method is ill-suited here because there is no upward reversion: the income will fall, and the layer structure does not naturally accommodate a declining income scenario."
-    },
-    {
-      type: "key_term",
-      term: "Top Slice Yield",
-      text: "The capitalisation rate applied to the marginal income above the hardcore. For a reversionary property, it is typically 150–300 bps above the ARY, reflecting deferred receipt and uncertainty. For an over-rented property, where income loss is probable, top slice yields of 12–18% are not uncommon — the market effectively applies a heavy discount to income that will disappear at the next lease event."
-    },
-    {
-      type: "paragraph",
-      text: "Yield selection for the top slice is the point of greatest APC scrutiny. The differential between ARY and top slice yield must be justified by reference to: the deferral period (longer = higher yield); tenant covenant strength; probability of rental growth filling the gap before review; and direct market evidence from comparable reversionary or over-rented transactions. Applying an arbitrary 200 bps uplift without explanation is insufficient at Level 3."
-    },
-    {
-      type: "callout",
-      label: "APC Tip — Sensitivity and Methodology Critique",
-      text: "At Level 3, assessors expect you to critique your own valuation, not just present a number. Be prepared to: (1) explain why you chose layer over hardcore, or vice versa; (2) derive your top slice or reversion yield from named comparable transactions; (3) state what assumptions underpin your deferral period — is there a break clause that could accelerate the review event?; and (4) run a sensitivity: a 50 bps shift in the reversion yield on the example above moves capital value by approximately £40,000–£50,000 — in a secured lending context that could affect loan quantum. Presenting a sensitivity table in your APC logbook case study demonstrates the commercial awareness assessors look for."
-    },
-    {
-      type: "heading",
-      text: "RICS Red Book Compliance and Documentation"
-    },
-    {
-      type: "paragraph",
-      text: "RICS Valuation — Global Standards (Red Book) does not prescribe a specific methodology for the investment method, but requires the valuer to select the most appropriate approach for the property type and market conditions, and to document that reasoning in the report or working file. Under PS 2, key assumptions — including ERV, passing rent, review dates, and each yield applied — must be stated explicitly. For secured lending instructions, the RICS UK Supplement imposes additional disclosure obligations, and any material uncertainty (e.g., where ERV evidence is thin) must be flagged. Where the valuation is for financial reporting under IFRS 13, fair value hierarchy requirements apply and the methodology must be consistent with the observable inputs available."
-    }
+    { type: "paragraph", text: "The residual appraisal is inherently volatile: small changes in inputs produce disproportionately large swings in the residual land value or developer's profit. For a P&D surveyor advising at Level 3, it is not enough to produce a single-point residual — you must demonstrate that you can stress-test the appraisal, identify the variables to which the outcome is most sensitive, and present risk-adjusted advice that a client or lender can act upon. This lesson drills into the practical mechanics of sensitivity analysis and scenario modelling and explains how to present findings credibly at your final assessment interview." },
+    { type: "heading", text: "Why the Residual Method Amplifies Risk" },
+    { type: "paragraph", text: "In a residual appraisal, land value is derived by deducting total development costs (including profit) from gross development value (GDV). Because land value is the 'residual' — the small difference between two large numbers — even a modest percentage change in GDV or build cost cascades into a much larger percentage movement in the residual. For example, on a scheme with a GDV of £10 million and total costs of £8.5 million, a 5% fall in GDV (−£500,000) reduces the residual from £1.5 million to £1 million — a 33% drop. This 'gearing effect' is the fundamental reason that sensitivity analysis is not optional; it is a core part of competent appraisal practice." },
+    { type: "key_term", term: "Gearing Effect (Residual Sensitivity)", text: "The phenomenon whereby the residual land value changes by a significantly greater percentage than the percentage change in the input variable (e.g., GDV or build cost). In development appraisal, gearing ratios of 5:1 to 8:1 are common on tightly margined schemes, meaning a 1% input movement can shift the residual by 5–8%." },
+    { type: "heading", text: "Single-Variable Sensitivity Analysis" },
+    { type: "paragraph", text: "The simplest and most widely used technique is to vary one input at a time while holding all others constant. Typically you would test: (1) GDV — adjust sales values ±5%, ±10%, ±15%; (2) Build cost — similarly ±5%, ±10%, ±15%; (3) Development period — extend by 3, 6, and 12 months; (4) Finance rate — increase by 50 bps, 100 bps, 200 bps; (5) Yield (for investment schemes) — shift outward by 25 bps, 50 bps, 75 bps. Present the results in a sensitivity table showing the impact on the key output — whether that is residual land value, profit on cost, or profit on GDV. This allows you and the client to immediately see which variable the scheme is most exposed to." },
+    { type: "callout", label: "APC Tip — Worked Example", text: "Suppose your base appraisal shows: GDV £12m, total costs (excl. land) £9.6m, residual land value £2.4m. A 10% fall in GDV reduces it to £10.8m. Residual drops from £2.4m to £1.2m — a 50% fall triggered by just a 10% GDV movement. This demonstrates gearing of 5:1. In your interview, be ready to talk through this arithmetic quickly and explain that you used it to advise the client that the scheme's viability was highly sensitive to the sales assumptions, leading to a recommendation to de-risk via pre-sales or a phased approach." },
+    { type: "heading", text: "Multi-Variable Scenario Modelling" },
+    { type: "paragraph", text: "In practice, variables rarely move in isolation. Multi-variable scenario modelling groups correlated assumptions into coherent 'scenarios'. A standard approach uses three scenarios: (a) Base Case — your best estimate inputs; (b) Downside — reduced GDV (e.g., −7%), increased build cost (+5%), extended programme (+3 months), higher finance rate (+75 bps); (c) Upside — improved GDV (+5%), on-budget build cost, programme on time, stable finance. Each scenario should be internally consistent. For instance, a recessionary downside might pair falling house prices with rising construction cost inflation and longer void periods. Argus Developer, and most bespoke Excel models, allow you to save and toggle between scenarios." },
+    { type: "key_term", term: "Monte Carlo Simulation", text: "A probabilistic technique that assigns probability distributions (not single values) to each uncertain input variable and runs thousands of iterations to generate a distribution of possible outcomes. The output is typically presented as a probability density curve, showing the likelihood of achieving a given profit level or land value. While less common in day-to-day practice, it is increasingly used by institutional developers and funds and demonstrates advanced Level 3 understanding." },
+    { type: "heading", text: "Probability-Weighted Returns" },
+    { type: "paragraph", text: "An extension of scenario modelling is to assign subjective probabilities to each scenario and compute a probability-weighted expected land value or profit. For example: Base (60% probability, residual £2.4m), Downside (30%, residual £1.0m), Upside (10%, residual £3.1m). The probability-weighted residual = (0.6 × £2.4m) + (0.3 × £1.0m) + (0.1 × £3.1m) = £1.44m + £0.30m + £0.31m = £2.05m. This provides a single risk-adjusted figure which is more defensible than a single-point estimate, though the assignment of probabilities is inherently subjective and must be justified by market evidence." },
+    { type: "heading", text: "Presenting Sensitivity Findings to Clients and Lenders" },
+    { type: "paragraph", text: "Assessors will want to see that you can communicate technical analysis clearly. Best practice is to use a 'traffic light' sensitivity matrix — green where the scheme remains viable, amber where profit falls below target but remains positive, red where the scheme is loss-making. Accompanying narrative should identify the 'breakeven point' for each key variable — for example, 'GDV can fall by 8.3% before the developer's profit margin drops below 15% on cost'. Lenders often require sensitivity tables as part of development finance applications, so demonstrating that you understand their perspective (typically focused on interest cover and loan-to-GDV covenants) is a strong differentiator." },
+    { type: "callout", label: "APC Tip — Assessor Angle", text: "A common Level 3 question is: 'How did you assess risk in your appraisal, and what did you advise?' A weak answer simply says 'I ran some sensitivities.' A strong answer specifies the variables tested, the range of movement, the output metric monitored, and the resulting advice — e.g., 'I advised the client to cap construction cost exposure through a fixed-price design-and-build contract and to secure 30% pre-sales before committing to the land purchase, because the sensitivity analysis showed the residual was viable only if GDV did not fall more than 7%.' Always link analysis to actionable advice." },
+    { type: "heading", text: "Common Pitfalls in Sensitivity Analysis" },
+    { type: "paragraph", text: "First, testing unrealistic ranges (e.g., ±30% GDV) undermines credibility — ranges should reflect plausible market movements evidenced by historic volatility or comparable cycles. Second, ignoring correlated variables: build costs and programme length tend to move together, so testing them in isolation can understate combined downside risk. Third, failing to update sensitivity assumptions when market conditions change between report date and decision date. Fourth, treating the base case as a prediction rather than a central estimate within a range — always caveat that the appraisal is a snapshot in time." },
+    { type: "paragraph", text: "Finally, remember the RICS Valuation – Global Standards (Red Book) requirement under VPS 4 to report material uncertainty where it exists. Sensitivity analysis is not a substitute for the valuer's judgement but a tool that supports and evidences that judgement. In a development context, the UK Supplement to the Red Book and VPGA 2 (Valuation of interests for secured lending) specifically highlight the need for the valuer to assess and report on scheme viability and sensitivity." }
   ],
   summary: [
-    "The layer (term and reversion) method is preferred for reversionary investments — it correctly separates the contracted term income from the deferred, upward reversion and applies a distinct yield to each, avoiding the systematic overvaluation produced by the hardcore approach.",
-    "The hardcore method is the convention for over-rented properties — the ERV is capitalised at the ARY as sustainable income, and the exposed top slice (excess passing rent above ERV) is capitalised at a high yield reflecting its probable loss at the next review.",
-    "Top slice yield selection must be evidenced: typically 150–300 bps over the ARY for reversionary assets; materially higher (12–18%+) for over-rented properties depending on the severity of over-renting and covenant quality.",
-    "The two methods produce materially different capital values for the same property — understand the structural reason (perpetual vs. term capitalisation of the passing rent) and be able to explain the discrepancy to an assessor or client.",
-    "Red Book PS 2 requires full documentation of methodology choice, yield derivation, and all key assumptions; for secured lending or financial reporting instructions, additional UK Supplement and IFRS 13 disclosure requirements apply."
+    "The residual method amplifies risk through the 'gearing effect' — always quantify this by running sensitivity analysis on key inputs (GDV, build cost, programme, finance rate, yield).",
+    "Single-variable sensitivity tables show exposure to individual inputs; multi-variable scenario modelling captures correlated movements in a coherent downside/upside framework.",
+    "Probability-weighted returns provide a risk-adjusted single output but require transparent justification of the probability assumptions assigned to each scenario.",
+    "Present findings using traffic-light matrices and breakeven thresholds — tailor communication to the audience (client, lender, planning authority for viability assessments).",
+    "At Level 3, always link your sensitivity analysis to specific, actionable advice — e.g., de-risking via pre-sales, fixed-price contracts, phased delivery, or renegotiating the land price."
   ],
   qa: [
-    {
-      q: "Why is the layer method generally preferred over the hardcore method for a reversionary investment?",
-      a: "The layer method correctly reflects the temporary nature of the term income by capitalising the passing rent only for the lease period remaining, then separately capitalising the reversionary ERV from the point of review. The hardcore method, by capitalising the passing rent in perpetuity, implies the below-market rent will be received indefinitely rather than just for the term — this systematically overstates capital value. The layer method more accurately mirrors how investors price a reversionary asset: the contracted income is secure but finite; the upside depends on market conditions and lease events."
-    },
-    {
-      q: "A retail investment is over-rented: passing rent £400,000 pa, ERV £280,000 pa, rent review in 2 years, ARY 7.0%. Outline how you would structure the hardcore valuation.",
-      a: "Hardcore (sustainable income): ERV £280,000 × YP perp @ 7.0% (14.286) = £4,000,080. Top slice (at-risk income): excess £120,000 — capitalise at a materially higher yield reflecting near-certain loss at review, say 14–16%, deferred 2 years. At 15%: £120,000 × YP perp @ 15% (6.667) × PV £1 in 2 yrs @ 15% (0.7561) = £604,880. Total CV ≈ £4,605,000. The top slice yield of 15% reflects that this income will almost certainly fall at review — no investor would price this at anywhere near the ARY. The precise yield would be calibrated against comparable over-rented transaction evidence."
-    },
-    {
-      q: "How would you determine the appropriate top slice yield for a reversionary office investment with a 5-year deferral period and a strong institutional covenant?",
-      a: "I would start from the all risks yield derived from comparable rack-rented transactions, then apply a premium reflecting: (1) the 5-year deferral — investors require additional return for waiting; (2) the size of the reversionary gap — a large uplift carries more uncertainty than a modest one; (3) covenant quality — a strong institutional covenant narrows the spread because there is less risk of the lease not running to review; and (4) market rental growth expectations. For a strong covenant and modest reversion, a premium of 150–200 bps over the ARY is typical. I would cross-check by extracting implied top slice yields from comparable reversionary sales where both the passing rent and the purchase price are known."
-    },
-    {
-      q: "What is the practical effect on capital value of a 50 basis point increase in the reversion yield in a term and reversion valuation?",
-      a: "The reversion is capitalised in perpetuity at the ARY, so the YP perp shifts — for example, from 16.667 at 6.0% to 15.385 at 6.5%, a reduction of approximately 7.7% in the capitalised reversionary value. For a property with a substantial reversionary uplift, this can move total capital value by 3–6%. In a secured lending context, this matters because loan quantum is typically a percentage of open market value — a 5% value shift on a £5m asset is £250,000, which may breach LTV covenants. At Level 3, presenting a sensitivity table demonstrates that you understand a valuation is a point within a defensible range, not a single objective fact."
-    },
-    {
-      q: "What does the RICS Red Book require a valuer to document when selecting between the hardcore and layer methods for a secured lending instruction?",
-      a: "Under PS 2 of RICS Valuation — Global Standards, the valuer must document: the rationale for the methodology selected and why it is appropriate for the property and instruction; the basis for ERV and passing rent (including market evidence relied upon); the source and derivation of each yield applied, including any differential between the term/hardcore yield and the top slice or reversion yield; key assumptions about review dates, deferral periods, and lease terms; and any material uncertainties that could affect the output. The RICS UK Supplement for secured lending imposes additional requirements, including disclosure of assumptions about vacant possession value and the impact of the lease structure on the security. Failure to document yield derivation has been the subject of RICS disciplinary findings."
-    }
+    { q: "Can you explain the gearing effect in a residual appraisal and give a numerical example from your experience?", a: "The gearing effect means the residual land value changes by a far greater proportion than the input variable. For example, on a scheme I appraised with GDV of £15m and total costs of £12.5m, the residual was £2.5m. A 5% GDV fall (−£750k) reduced the residual to £1.75m — a 30% drop, demonstrating a gearing ratio of 6:1. I used this to advise my client that a modest softening in the residential market would materially erode the land bid and recommended negotiating a subject-to-planning conditional contract to delay commitment." },
+    { q: "What variables do you typically include in a sensitivity analysis for a speculative residential development, and what ranges do you test?", a: "I typically test GDV (±5%, ±10%), build cost (±5%, ±10%), programme extension (+3 and +6 months), finance rate (+50 bps, +100 bps), and professional fees (+10%). Ranges are calibrated to historic market volatility — for residential GDV, I look at Nationwide or Land Registry indices over the previous two cycles to justify the range. I also consider any site-specific risks, such as abnormal ground conditions, which might warrant wider build-cost ranges." },
+    { q: "How does scenario modelling differ from single-variable sensitivity analysis, and when would you use each?", a: "Single-variable analysis isolates one input at a time, which is useful for identifying which variable the residual is most sensitive to. Scenario modelling groups multiple correlated variable changes into coherent scenarios (e.g., recession: falling values + rising costs + extended programme). I use single-variable analysis as a quick screening tool and then build multi-variable scenarios for detailed client reporting and lender submissions, because in reality several inputs move together." },
+    { q: "An assessor asks: 'Your appraisal showed a profit on cost of 18%. How confident are you in that figure?' How would you respond?", a: "I would explain that 18% is the base-case outcome and that I tested the scheme under downside and upside scenarios. Under my downside (−7% GDV, +5% build cost, +3-month programme), profit on cost fell to 9.4%, below the typical lender threshold of 15–20%. This told me the margin of safety was thin. I advised the client to secure 25% pre-sales and a fixed-price D&B contract before land exchange, which mitigated two of the three downside variables and preserved an estimated 14.6% profit on cost even under the downside scenario." },
+    { q: "What role does sensitivity analysis play in a viability assessment submitted to a local planning authority under the NPPF, and how do you maintain credibility?", a: "In a viability assessment, sensitivity analysis demonstrates the scheme's tolerance to affordable housing contributions, CIL/S106, and cost/value fluctuations. I present a base case and show how increasing the affordable housing percentage from, say, 20% to the policy target of 35% renders the scheme unviable by pushing profit below the accepted benchmark (typically 15–20% on GDV for residential). I maintain credibility by using BCIS-benchmarked build costs, evidenced comparable sales, and RICS-compliant methodology under the PPG viability guidance, and I disclose all assumptions transparently so the LPA's independent reviewer can replicate the analysis." }
   ],
   news: [
-    {
-      tag: "Investment Valuation",
-      headline: "Central London office yields compress as institutional demand returns to reversionary assets in Q1 2026",
-      body: "Investment volumes in the City and West End picked up in early 2026, with several reversionary office assets trading at sub-6% ARYs where strong covenants and near-term rent reviews are anticipated. Valuers report increased lender scrutiny of top slice yield derivation in Red Book reports prepared for refinancing, with some lenders commissioning independent desk reviews of reversionary assumptions on larger lot sizes."
-    },
-    {
-      tag: "Over-Rented Retail",
-      headline: "RICS issues guidance reminder on treatment of over-rented income in retail loan security valuations",
-      body: "RICS has reiterated to members that over-rented passing rents in retail assets must not be capitalised at the ARY without explicit adjustment for income at risk. Several lender disputes in 2025 centred on valuations where excess passing rent had been treated as sustainable income, resulting in overstated security values when rents fell to ERV at review."
-    },
-    {
-      tag: "Red Book Compliance",
-      headline: "Professional Conduct Panel upholds complaint against surveyor over undocumented yield derivation in reversionary industrial valuation",
-      body: "A RICS Professional Conduct Panel has upheld a complaint against a chartered surveyor who prepared a term and reversion valuation for secured lending without evidencing the basis for the top slice yield applied. The panel found the report non-compliant with PS 2 transparency requirements and noted that the undocumented 200 bps premium could not be verified against any market comparables presented in the working file."
-    }
+    { tag: "Development Viability", headline: "DLUHC Updates PPG on Viability: Greater Emphasis on Sensitivity Testing", body: "The Department for Levelling Up, Housing and Communities has revised its Planning Practice Guidance on viability, now explicitly requiring applicants to submit sensitivity analyses alongside residual appraisals when seeking to reduce affordable housing obligations. The update follows criticism that single-point appraisals were being used to justify below-policy contributions without adequate risk disclosure." },
+    { tag: "Development Finance", headline: "UK Development Lenders Tighten Sensitivity Requirements Amid Rate Uncertainty", body: "Several major UK development lenders, including OakNorth and Maslow Capital, have reportedly increased their sensitivity testing requirements for new loan applications in Q1 2026. Borrowers are now required to demonstrate scheme viability under a minimum 10% GDV fall and 7.5% build cost increase, up from previous thresholds of 7.5% and 5% respectively." },
+    { tag: "Market Data", headline: "BCIS Reports 4.2% Annual Rise in Tender Prices, Reinforcing Build Cost Risk", body: "The latest BCIS Tender Price Index shows a 4.2% annual increase in Q4 2025, driven by labour shortages and materials inflation. Surveyors conducting development appraisals are advised to reflect current cost pressures in their sensitivity ranges and consider indexing build cost inputs to BCIS forecasts rather than relying on static estimates." }
   ]
 };

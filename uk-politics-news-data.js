@@ -4,46 +4,22 @@
 var UK_POLITICS_NEWS = {
   date: "2026-03-31",
   main: {
-    title: "UK Pays France £16m in Stopgap Channel Deal as Permanent Agreement Fails",
+    title: "King's State Visit to US to Go Ahead in April Despite Political Tensions and Iran War Concerns",
     category: "Politics",
     content: [
-      "The United Kingdom has agreed to pay France an additional £16.2 million in a two-month stopgap arrangement to maintain police patrols on Channel beaches, after negotiators failed to secure a new long-term deal before a midnight deadline. The emergency measure comes as the existing three-year agreement — which funded French efforts to intercept smuggling gangs and prevent small-boat crossings — formally expired. Without the bridging arrangement, officials on both sides feared a surge in attempted crossings that could have overwhelmed border agencies and emboldened criminal networks operating across northern France.",
-      "Talks between UK and French officials had been extended into the final hours before the deadline, with both sides reportedly close to agreement on a permanent successor deal. However, French negotiators ultimately refused to sign off on the long-term arrangement, citing unresolved points of contention that have not been publicly disclosed. The breakdown means the UK government must now re-enter complex diplomatic negotiations while simultaneously managing the short-term funding arrangement, putting additional pressure on Home Office officials already grappling with broader immigration policy challenges.",
-      "The £16.2 million payment represents a significant sum for what amounts to a temporary patch, and opposition politicians were quick to question whether the government had secured value for money. Critics argued that the failure to conclude a permanent deal demonstrates a wider lack of strategic planning in the government's approach to small boat crossings, one of the most politically charged issues in British public life. Ministers, however, insisted the stopgap deal was the responsible course of action to ensure continuity of patrols and prevent any gap in operational coverage along the French coastline.",
-      "The Channel crossing crisis has been a persistent source of political tension in both the UK and France, with public pressure mounting on successive British governments to reduce the number of migrants making the dangerous journey in small vessels. French cooperation is considered essential to any effective strategy, as the majority of departure points lie along the northern French coast from Calais to Dunkirk. The two-month window provided by the new arrangement is expected to be used to negotiate a replacement framework, though officials acknowledge that reaching agreement on a durable deal will require significant political will on both sides.",
-      "The development also arrives against a broader backdrop of strained Anglo-French relations and a UK political landscape in which immigration remains a defining electoral issue. Reform UK, which has been capitalising on public frustration over border policy, is likely to use the stopgap deal as further evidence that the government lacks a credible long-term plan. With the two-month arrangement set to expire in late May, Downing Street faces a tight timetable to demonstrate progress — and any further failure to reach a permanent agreement could prove deeply damaging ahead of upcoming local elections."
+      "King Charles III will proceed with a landmark state visit to the United States in April, Buckingham Palace has confirmed, despite growing calls from some quarters to delay the trip amid the ongoing Iran conflict and strained transatlantic relations. The visit will see the King address a joint session of Congress in Washington, marking a historic moment intended to commemorate the 250th anniversary of American independence. However, the Palace has confirmed that no meeting between the King and Prince Harry is planned during the trip.",
+      "The decision to press ahead with the visit comes at a delicate time in UK-US relations, with political tensions simmering between London and Washington over a range of issues including trade policy and the conduct of the Iran war. Questions have been raised about whether the timing is appropriate given the volatile geopolitical situation in the Middle East, where the UK itself is deepening its military commitment by sending additional troops and air defence systems to the region. Downing Street is understood to view the visit as an essential demonstration of the enduring special relationship between the two nations.",
+      "Reform UK leader Nigel Farage weighed in on the broader geopolitical backdrop, cautioning against taking President Donald Trump's statements about ending the Iran war at face value. Farage's remarks underscored the uncertainty surrounding US foreign policy in the region, particularly regarding the strategic question of securing the Strait of Hormuz. The comments highlighted the extent to which the conflict has become intertwined with domestic political debate on both sides of the Atlantic.",
+      "The King's address to Congress is expected to focus on shared democratic values, historical ties, and the importance of the transatlantic alliance in an era of global instability. Palace officials have been working closely with the State Department to ensure the visit strikes the right tone, balancing celebration of the anniversary with acknowledgment of the serious challenges facing both nations. Security arrangements are reported to be extensive, reflecting both the prestige of the occasion and the heightened threat environment.",
+      "The confirmation that Prince Harry will not be part of the visit adds a personal dimension to an already complex diplomatic picture. While the Palace declined to elaborate on the reasons, the continued distance between Harry and the Royal Family remains a subject of intense public interest. For the government, the overriding priority is that the visit reinforces Britain's most important bilateral relationship at a time when global alliances are being tested as never before."
     ],
-    image: "https://images.pexels.com/photos/36730221/pexels-photo-36730221.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    source: "The Guardian",
-    sourceUrl: "https://www.theguardian.com"
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/3fec/live/7a119a80-2c17-11f1-aa35-ab540ef24ae5.jpg",
+    source: "BBC News",
+    sourceUrl: "https://www.bbc.co.uk/news"
   },
   secondary: [
-    {
-      id: "uk1",
-      title: "Starmer Gives Doctors 48 Hours to Cancel Strike or Lose NHS Jobs Package",
-      summary: "Prime Minister Keir Starmer has issued a stark ultimatum to resident doctors, warning that the NHS stands to lose 1,000 extra training places if they proceed with a six-day strike planned for next week.",
-      image: "https://images.pexels.com/photos/8931663/pexels-photo-8931663.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      source: "BBC News",
-      url: "https://www.bbc.co.uk",
-      category: "Politics"
-    },
-    {
-      id: "uk2",
-      title: "King Charles State Visit to US to Proceed in April Despite Political Tensions",
-      summary: "King Charles will travel to Washington in April to address Congress and mark the 250th anniversary of American independence, with Buckingham Palace confirming no meeting with Prince Harry is planned.",
-      image: "https://images.pexels.com/photos/36793451/pexels-photo-36793451.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      source: "BBC News",
-      url: "https://www.bbc.co.uk",
-      category: "International"
-    },
-    {
-      id: "uk3",
-      title: "UK to Send More Troops and Air Defence Systems to Middle East",
-      summary: "Defence Secretary John Healey has announced that additional British troops and air defence systems will be deployed to countries in the Middle East to bolster regional security.",
-      image: "https://images.pexels.com/photos/17774985/pexels-photo-17774985.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      source: "BBC News",
-      url: "https://www.bbc.co.uk",
-      category: "Defence"
-    }
+    { id: "uk1", title: "Starmer Gives Doctors 48 Hours to Cancel Strike or Lose New Jobs Package", summary: "The Prime Minister has warned that the NHS could lose 1,000 extra training places if resident doctors proceed with a planned six-day strike next week, issuing a 48-hour ultimatum to cancel the action.", image: "https://images.pexels.com/photos/9227785/pexels-photo-9227785.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", source: "BBC News", url: "https://www.bbc.co.uk/news", category: "Politics" },
+    { id: "uk2", title: "UK to Pay France Extra £16m in Stopgap Deal to Patrol Channel Beaches", summary: "The UK will pay France an additional £16.2 million under a two-month temporary arrangement to maintain Channel beach patrols after negotiators failed to agree a permanent deal before the midnight deadline.", image: "https://images.pexels.com/photos/4968384/pexels-photo-4968384.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", source: "The Guardian", url: "https://www.theguardian.com/politics", category: "Politics" },
+    { id: "uk3", title: "More UK Troops to Be Sent to Middle East as Defence Secretary Announces Deployment", summary: "The UK government has announced that further air defence systems and military personnel will be deployed to countries in the Middle East, deepening Britain's commitment to regional security.", image: "https://images.pexels.com/photos/943534/pexels-photo-943534.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", source: "BBC News", url: "https://www.bbc.co.uk/news", category: "International" }
   ]
 };
