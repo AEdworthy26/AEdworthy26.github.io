@@ -300,6 +300,8 @@ def articles_to_text(articles, max=10):
     lines = []
     for i, a in enumerate(articles[:max], 1):
         lines.append(f"{i}. [{a['source']}] {a['title']}")
+        if a.get('link'):
+            lines.append(f"   URL: {a['link']}")
         if a['summary']:
             lines.append(f"   {a['summary']}")
     return '\n'.join(lines)
@@ -399,6 +401,8 @@ Output ONLY valid JavaScript — absolutely no explanation, no markdown, no prea
 
 Use only real stories from the headlines above. Write 5 substantial, well-crafted paragraphs for the main story (each at least 3 sentences). Pick the most significant story as the main piece. Write 3 secondary stories with a one-sentence summary each.
 
+IMPORTANT: Each story above includes a URL field — use the exact URL provided for that story in the sourceUrl/url fields below.
+
 var {var_name} = {{
   date: "{TODAY}",
   main: {{
@@ -407,12 +411,12 @@ var {var_name} = {{
     content: ["paragraph 1 (3+ sentences)", "paragraph 2 (3+ sentences)", "paragraph 3 (3+ sentences)", "paragraph 4 (3+ sentences)", "paragraph 5 (3+ sentences)"],
     image: "__IMG_MAIN__",
     source: "SOURCE NAME",
-    sourceUrl: "https://source-url.com"
+    sourceUrl: "EXACT URL FROM THE ARTICLE ABOVE"
   }},
   secondary: [
-    {{ id: "{secondary_ids[0]}", title: "SECOND STORY TITLE", summary: "One sentence summary.", image: "__IMG_S1__", source: "SOURCE", url: "https://source-url.com", category: "CATEGORY" }},
-    {{ id: "{secondary_ids[1]}", title: "THIRD STORY TITLE", summary: "One sentence summary.", image: "__IMG_S2__", source: "SOURCE", url: "https://source-url.com", category: "CATEGORY" }},
-    {{ id: "{secondary_ids[2]}", title: "FOURTH STORY TITLE", summary: "One sentence summary.", image: "__IMG_S3__", source: "SOURCE", url: "https://source-url.com", category: "CATEGORY" }}
+    {{ id: "{secondary_ids[0]}", title: "SECOND STORY TITLE", summary: "One sentence summary.", image: "__IMG_S1__", source: "SOURCE", url: "EXACT URL FROM THE ARTICLE ABOVE", category: "CATEGORY" }},
+    {{ id: "{secondary_ids[1]}", title: "THIRD STORY TITLE", summary: "One sentence summary.", image: "__IMG_S2__", source: "SOURCE", url: "EXACT URL FROM THE ARTICLE ABOVE", category: "CATEGORY" }},
+    {{ id: "{secondary_ids[2]}", title: "FOURTH STORY TITLE", summary: "One sentence summary.", image: "__IMG_S3__", source: "SOURCE", url: "EXACT URL FROM THE ARTICLE ABOVE", category: "CATEGORY" }}
   ]
 }};"""
 
