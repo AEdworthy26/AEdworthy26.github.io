@@ -535,7 +535,10 @@
     function loadGoals() {
       try {
         const saved = localStorage.getItem(STORAGE_KEY);
-        return saved ? JSON.parse(saved) : DEFAULT_GOALS;
+        if (saved) return JSON.parse(saved);
+        // First visit — persist defaults so homepage preview can read them
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(DEFAULT_GOALS));
+        return DEFAULT_GOALS;
       } catch (e) {
         return DEFAULT_GOALS;
       }
