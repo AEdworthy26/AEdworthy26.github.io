@@ -1,0 +1,31 @@
+name: Daily Hub Update
+
+on:
+  schedule:
+    - cron: '0 5 * * *'  # 5am UTC = 6am BST (summer) / 5am GMT (winter)
+  workflow_dispatch:       # allows manual trigger from GitHub UI
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write  # needed to push updated data files
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run daily update
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+        run: python tools/daily_update.py
