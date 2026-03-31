@@ -812,11 +812,16 @@ var CURIOSITY_DATA = {{
             js = js.replace('"__IMG_CURIOSITY_OTD__"', f'"{url}"', 1)
             log(f'  ✓ On this day image: {query[:40]}')
         if 'image: null' in js and person_m:
-            query = person_m.group(1) + ' portrait'
-            url = fetch_pexels_image(query)
+            name = person_m.group(1)
+            url = fetch_wikipedia_image(name)
+            if url:
+                log(f'  ✓ Person of day image (Wikipedia): {name[:40]}')
+            else:
+                url = fetch_pexels_image(name + ' portrait')
+                if url:
+                    log(f'  ✓ Person of day image (Pexels): {name[:40]}')
             if url:
                 js = js.replace('image: null', f'image: "{url}"', 1)
-                log(f'  ✓ Person of day image: {person_m.group(1)[:40]}')
     except Exception as e:
         log(f'  [warning] Curiosity image injection failed: {e}')
         js = js.replace('"__IMG_CURIOSITY_MAIN__"', '"https://images.unsplash.com/photo-1461360370896-922624d12aa1?w=1200&auto=format&fit=crop"', 1)
