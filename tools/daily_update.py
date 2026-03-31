@@ -990,7 +990,7 @@ def bump_cache_busters():
         ('reads-data.js',                'personal_hub.html'),
         ('films-data.js',                'personal_hub.html'),
     ]
-    version = TODAY.replace('-', '')
+    version = datetime.datetime.now().strftime('%Y%m%d%H%M')
     changed = []
     seen = set()
     for data_file, html_file in mappings:
