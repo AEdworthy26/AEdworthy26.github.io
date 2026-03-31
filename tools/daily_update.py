@@ -92,17 +92,27 @@ def call_claude(prompt, timeout=180):
     """Call Claude — uses Anthropic Python SDK (works locally and in GitHub Actions)."""
     api_key = os.environ.get('ANTHROPIC_API_KEY', '')
     if api_key:
-        try:
-            import anthropic
-            client = anthropic.Anthropic(api_key=api_key, timeout=timeout)
-            message = client.messages.create(
-                model='claude-opus-4-6',
-                max_tokens=4096,
-                messages=[{'role': 'user', 'content': prompt}]
-            )
-            return message.content[0].text.strip()
-        except Exception as e:
-            log(f"  [warning] Anthropic SDK failed: {e} — trying CLI fallback")
+        import anthropic
+        client = anthropic.Anthropic(api_key=api_key, timeout=timeout)
+        for attempt in range(4):
+            try:
+                message = client.messages.create(
+                    model='claude-opus-4-6',
+                    max_tokens=4096,
+                    messages=[{'role': 'user', 'content': prompt}]
+                )
+                return message.content[0].text.strip()
+            except anthropic.APIStatusError as e:
+                if e.status_code in (529, 429) and attempt < 3:
+                    wait = 30 * (attempt + 1)
+                    log(f"  [retry] API overloaded, waiting {wait}s (attempt {attempt+1}/4)...")
+                    time.sleep(wait)
+                else:
+                    log(f"  [warning] Anthropic SDK failed after retries: {e} — trying CLI fallback")
+                    break
+            except Exception as e:
+                log(f"  [warning] Anthropic SDK failed: {e} — trying CLI fallback")
+                break
 
     # Fallback: Claude CLI (local Mac only)
     if not CLAUDE_BIN:
