@@ -103,18 +103,19 @@ def call_claude(prompt, timeout=180):
                 )
                 return message.content[0].text.strip()
             except anthropic.APIStatusError as e:
-                if e.status_code in (529, 429) and attempt < 3:
+                if e.status_code in (500, 529, 429) and attempt < 3:
                     wait = 30 * (attempt + 1)
-                    log(f"  [retry] API overloaded, waiting {wait}s (attempt {attempt+1}/4)...")
+                    log(f"  [retry] API error {e.status_code}, waiting {wait}s (attempt {attempt+1}/4)...")
                     time.sleep(wait)
                 else:
-                    log(f"  [warning] Anthropic SDK failed after retries: {e} — trying CLI fallback")
+                    log(f"  [warning] Anthropic SDK failed after retries: {e}")
                     break
             except Exception as e:
-                log(f"  [warning] Anthropic SDK failed: {e} — trying CLI fallback")
+                log(f"  [warning] Anthropic SDK failed: {e}")
                 break
+        return None  # API key set but all attempts failed — skip this file gracefully
 
-    # Fallback: Claude CLI (local Mac only)
+    # Fallback: Claude CLI (local Mac only, no API key set)
     if not CLAUDE_BIN:
         log("  [fatal] No ANTHROPIC_API_KEY set and Claude CLI not found.")
         sys.exit(1)
