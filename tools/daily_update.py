@@ -596,17 +596,22 @@ def gen_rics():
 
     prompt = f"""Generate a daily RICS APC study lesson for {TODAY} for the Planning and Development (P&D) pathway.
 
-IMPORTANT RULES:
-- 75% of topics must be TECHNICAL competencies. Today pick from this list based on what hasn't been covered recently:
-  Technical: Development Appraisals (L3), Planning and Development Management (L3), Project Finance (L3), Valuation (L3), Purchase and Sale (L2), Local Taxation/Assessment (L2), Procurement and Tendering (L1-L2), Contract Administration (L1), Building Pathology (L1), Sustainability (L1-L2), Leasing and Letting (L2), Measurement (L1)
-  Mandatory (25%): Ethics/Rules of Conduct (L3), Client Care (L2), Communication and Negotiation (L2), Health and Safety (L1), Business Planning (L1), Accounting Principles (L1)
-- Pick a NICHE SUB-TOPIC, not a broad overview. Bad example: "Introduction to Development Appraisals". Good examples: "S106 Obligations as a Cost in Residual Valuations", "CIL Charging Schedules and Exemptions", "Yield Shift Risk in the Investment Method of Valuation", "Practical Completion and the Defects Liability Period under JCT"
-- Write at a high level — this is APC preparation for a surveyor in practice, not a student textbook
+CANDIDATE PROFILE: Assistant Development Manager at Latimer by Clarion Housing Group — the development arm of one of the UK's largest housing associations. Day-to-day responsibilities include: managing development appraisals and viability, coordinating with planners and LPAs on S106/CIL, overseeing project delivery timelines, liaising with contractors and consultants, managing grant funding (Homes England AHP), and supporting land acquisition. All examples, worked scenarios, and APC tips must be grounded in this residential-led, affordable housing, housing association context.
+
+TOPIC ROTATION — cycle fairly through these competencies, picking whichever has been least recently covered:
+  Level 3 (deep mastery): Development Appraisals, Development/Project Briefs, Project Finance, Planning and Development Management
+  Level 2 (working knowledge): Masterplanning and Urban Design, Spatial Policy and Infrastructure, Legal/Regulatory Compliance, Valuation
+  Level 1 (awareness): Measurement, Surveying and Mapping
+
+RULES:
+- Pick a NICHE SUB-TOPIC, not a broad overview. Bad: "Introduction to Development Appraisals". Good: "Benchmark Land Value vs Market Value in Affordable Housing Viability", "Grant Funding Stacks and Homes England AHP Conditions", "Design Codes and the NPPF 2024 Requirements for Masterplans", "Revenue Recognition under IFRS 15 for RP Development Programmes"
+- Every worked example must reference housing association/affordable housing scenarios — no generic commercial examples
+- Write at a high level — APC preparation for a practitioner, not a student
 - Content blocks: mix of paragraphs, headings, callout (APC tips with worked examples), and key_term blocks
-- Include at least 10 content blocks
-- Write 5 specific, technical Q&A pairs an APC assessor might ask
-- Write 2-3 news items relevant to the topic from UK real estate/planning (can be recent plausible news)
-- Pick the MOST RELEVANT image from the list below based on the topic
+- At least 10 content blocks
+- 5 specific technical Q&A pairs an APC assessor would ask this candidate
+- 2-3 news items relevant to the topic from UK housing/planning (plausible recent news)
+- Pick the MOST RELEVANT image from the list below
 
 Available images:
 {images_list}
@@ -655,6 +660,64 @@ var RICS_DATA = {{
 }};"""
 
     return extract_js(call_claude(prompt, timeout=300))
+
+
+def append_rics_log(rics_js):
+    """Extract summary fields from today's RICS lesson and append to the rolling logbook."""
+    try:
+        def get_str(field):
+            m = re.search(rf'{field}:\s*"([^"]*)"', rics_js)
+            return m.group(1) if m else ''
+        def get_int(field):
+            m = re.search(rf'{field}:\s*(\d+)', rics_js)
+            return int(m.group(1)) if m else 0
+
+        summary_m = re.search(r'summary:\s*\[([\s\S]*?)\]', rics_js)
+        summary = re.findall(r'"([^"]{10,})"', summary_m.group(1)) if summary_m else []
+
+        qa_m = re.search(r'qa:\s*\[([\s\S]*?)\](?:\s*,\s*\n\s*news|\s*\n\s*\})', rics_js)
+        qa = []
+        if qa_m:
+            qs = re.findall(r'q:\s*"([^"]+)"', qa_m.group(1))
+            as_ = re.findall(r'a:\s*"([^"]+)"', qa_m.group(1))
+            qa = [{'q': q, 'a': a} for q, a in zip(qs, as_)]
+
+        entry = {
+            'date': TODAY,
+            'topic': get_str('topic'),
+            'module': get_str('module'),
+            'level': get_int('level'),
+            'apc_competency': get_str('apc_competency'),
+            'focus': get_str('focus'),
+            'image': get_str('image'),
+            'summary': summary,
+            'qa': qa,
+        }
+
+        log_path = os.path.join(REPO_DIR, 'rics-log.js')
+        entries = []
+        if os.path.exists(log_path):
+            raw = open(log_path).read()
+            arr_m = re.search(r'var RICS_LOG\s*=\s*(\[[\s\S]*?\]);', raw)
+            if arr_m:
+                try:
+                    entries = json.loads(arr_m.group(1))
+                except Exception:
+                    entries = []
+
+        # Remove any existing entry for today before prepending fresh one
+        entries = [e for e in entries if e.get('date') != TODAY]
+        entries.insert(0, entry)
+        entries = entries[:90]  # keep ~3 months
+
+        with open(log_path, 'w', encoding='utf-8') as f:
+            f.write('// rics-log.js\n// Auto-generated — do not edit manually\n\n')
+            f.write('var RICS_LOG = ' + json.dumps(entries, indent=2) + ';\n')
+        log('  ✓ RICS log updated')
+        return log_path
+    except Exception as e:
+        log(f'  [warning] RICS log append failed: {e}')
+        return None
 
 
 def gen_curiosity():
@@ -989,6 +1052,7 @@ def bump_cache_busters():
         ('tech-news-data.js',            'personal_hub.html'),
         ('reads-data.js',                'personal_hub.html'),
         ('films-data.js',                'personal_hub.html'),
+        ('rics-log.js',                  'rics-log.html'),
     ]
     version = datetime.datetime.now().strftime('%Y%m%d%H%M')
     changed = []
@@ -1088,6 +1152,11 @@ def main():
         if js:
             header = f"// {filename}\n// Auto-updated {TODAY} — do not edit manually\n\n"
             updated.append(write_file(filename, header + js + '\n'))
+            # Append RICS lesson to rolling logbook
+            if filename == 'rics-data.js':
+                log_file = append_rics_log(js)
+                if log_file:
+                    updated.append('rics-log.js')
         time.sleep(PAUSE)
 
     # ── Bump cache busters in HTML pages ─────────────────────────────────────
