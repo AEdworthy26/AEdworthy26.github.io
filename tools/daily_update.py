@@ -219,20 +219,54 @@ def fetch_film_poster(title, year):
     return None
 
 def fetch_wikipedia_image(name):
-    """Fetch an image of a person or subject from Wikipedia (free, no API key needed)."""
-    variants = [name, name + ' (philosopher)', name + ' (politician)', name + ' (author)']
-    for variant in variants[:2]:  # only try first two to keep it fast
+    """Fetch an image for a person, place, org, or topic from Wikipedia (free, no API key needed).
+    For news titles, tries the full title first, then extracts likely proper nouns to search individually."""
+    import string
+
+    def _try_slug(term):
         try:
-            slug = urllib.parse.quote(variant.replace(' ', '_'))
+            slug = urllib.parse.quote(term.strip().replace(' ', '_'))
             url = f'https://en.wikipedia.org/api/rest_v1/page/summary/{slug}'
             req = urllib.request.Request(url, headers={'User-Agent': 'PersonalHub/1.0'})
             with urllib.request.urlopen(req, timeout=8) as r:
                 data = json.loads(r.read())
-            thumb = data.get('originalimage', data.get('thumbnail', {})).get('source')
-            if thumb:
-                return thumb
+            return data.get('originalimage', data.get('thumbnail', {})).get('source')
         except Exception:
+            return None
+
+    # 1. Try the name/title directly
+    result = _try_slug(name)
+    if result:
+        return result
+
+    # 2. Extract capitalised multi-word phrases (likely proper nouns: people, orgs, places)
+    #    Split on common stop words and punctuation, keep runs of Title Case words
+    stop = {'the','a','an','and','or','but','in','on','at','to','for','of','with','by',
+            'as','is','are','was','were','has','have','had','be','been','that','this',
+            'from','after','over','amid','says','say','amid','amid','its','their'}
+    words = re.sub(r'[^\w\s\-]', ' ', name).split()
+    # Build runs of capitalised words (excluding sentence-start heuristic)
+    candidates = []
+    current = []
+    for w in words:
+        if w[0].isupper() and w.lower() not in stop:
+            current.append(w)
+        else:
+            if len(current) >= 1:
+                candidates.append(' '.join(current))
+            current = []
+    if current:
+        candidates.append(' '.join(current))
+
+    # Try longest candidates first (more specific = better Wikipedia match)
+    candidates.sort(key=len, reverse=True)
+    for candidate in candidates[:4]:
+        if len(candidate) < 3:
             continue
+        result = _try_slug(candidate)
+        if result:
+            return result
+
     return None
 
 def fetch_pexels_image(query, orientation='landscape'):
@@ -442,7 +476,7 @@ var {var_name} = {{
     js = extract_js(call_claude(prompt))
     if not js:
         return None
-    # Inject images: RSS image first, then Pexels, then Unsplash fallback
+    # Inject images: RSS → Wikipedia (key person/topic in title) → Pexels → Unsplash fallback
     try:
         titles = re.findall(r'title:\s*["\'](.+?)["\']', js)
         # Build a title→rss_image lookup from fetched articles
@@ -450,22 +484,40 @@ var {var_name} = {{
         fallbacks = [img(img_key)] + sec_imgs()
         sentinels = ['__IMG_MAIN__', '__IMG_S1__', '__IMG_S2__', '__IMG_S3__']
         for i, sentinel in enumerate(sentinels):
-            if sentinel in js:
-                title = titles[i] if i < len(titles) else ''
-                # 1. Try exact RSS match, then partial match
-                rss_url = rss_lookup.get(title)
-                if not rss_url:
-                    for rss_title, rss_img in rss_lookup.items():
-                        if title[:30] in rss_title or rss_title[:30] in title:
-                            rss_url = rss_img
-                            break
-                if rss_url:
-                    url = rss_url
-                    log(f'  ✓ RSS image [{i}]: {title[:40]}')
-                else:
-                    url = fetch_pexels_image(title or category) or (fallbacks[i] if i < len(fallbacks) else img(img_key))
+            if sentinel not in js:
+                continue
+            title = titles[i] if i < len(titles) else ''
+            url = None
+
+            # 1. Try RSS image (actual article photo)
+            rss_url = rss_lookup.get(title)
+            if not rss_url:
+                for rss_title, rss_img in rss_lookup.items():
+                    if title[:30] in rss_title or rss_title[:30] in title:
+                        rss_url = rss_img
+                        break
+            if rss_url:
+                url = rss_url
+                log(f'  ✓ RSS image [{i}]: {title[:40]}')
+
+            # 2. Try Wikipedia using the article title (finds real photos of people, places, orgs)
+            if not url and title:
+                url = fetch_wikipedia_image(title)
+                if url:
+                    log(f'  ✓ Wikipedia image [{i}]: {title[:40]}')
+
+            # 3. Try Pexels
+            if not url:
+                url = fetch_pexels_image(title or category)
+                if url:
                     log(f'  ✓ Pexels image [{i}]: {title[:40]}')
-                js = js.replace(f'"{sentinel}"', f'"{url}"', 1)
+
+            # 4. Unsplash fallback
+            if not url:
+                url = fallbacks[i] if i < len(fallbacks) else img(img_key)
+                log(f'  ✓ Unsplash fallback [{i}]: {title[:40]}')
+
+            js = js.replace(f'"{sentinel}"', f'"{url}"', 1)
     except Exception as e:
         log(f'  [warning] News image injection failed: {e}')
         for sentinel in ['__IMG_MAIN__', '__IMG_S1__', '__IMG_S2__', '__IMG_S3__']:
