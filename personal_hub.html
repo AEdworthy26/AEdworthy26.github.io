@@ -549,6 +549,15 @@
     .todo-view-link:hover { text-decoration: underline; }
     .todo-preview-empty { font-size: 0.78rem; color: var(--light); font-style: italic; margin-top: 0.4rem; }
 
+    /* ────────────────── MEAL PLAN TODAY PREVIEW ────────────────── */
+    .mp-preview-list { margin-top: 0.6rem; display: flex; flex-direction: column; gap: 0.35rem; }
+    .mp-preview-row { display: flex; align-items: baseline; gap: 0.5rem; padding: 0.38rem 0.6rem; background: rgba(0,0,0,0.025); border-left: 2.5px solid #e5e7eb; border-radius: 0 3px 3px 0; }
+    .mp-preview-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; flex-shrink: 0; width: 65px; }
+    .mp-preview-meal { font-size: 0.78rem; font-weight: 600; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .mp-preview-meal.mp-empty { color: var(--light); font-style: italic; font-weight: 400; }
+    .mp-view-link { display: inline-block; margin-top: 0.6rem; font-size: 0.72rem; font-weight: 700; color: var(--blue); letter-spacing: 0.04em; }
+    .mp-view-link:hover { text-decoration: underline; }
+
     /* ────────────────── WISHLIST PREVIEW ────────────────── */
     .wl-preview-list { margin-top: 0.6rem; display: flex; flex-direction: column; gap: 0.35rem; }
     .wl-preview-item { display: flex; align-items: center; gap: 0.5rem; padding: 0.38rem 0.6rem; background: rgba(0,0,0,0.025); border-left: 2.5px solid var(--blue); border-radius: 0 3px 3px 0; }
@@ -786,6 +795,12 @@
         <div class="stack-item" id="recipe-of-day">
           <span class="section-tag">Recipe of the Day</span>
           <h2>Today&rsquo;s Recipe</h2>
+          <div class="lines"><span></span><span></span><span></span></div>
+        </div>
+
+        <div class="stack-item" id="meal-plan-today">
+          <span class="section-tag">Meal Plan</span>
+          <h2><a href="meal-planner.html">Today&rsquo;s Meals</a></h2>
           <div class="lines"><span></span><span></span><span></span></div>
         </div>
 
@@ -1581,6 +1596,46 @@
         + '</div>'
         + (r.desc ? '<p class="rotd-desc">' + esc(r.desc) + '</p>' : '')
         + '<a href="recipes.html" class="rotd-link">View recipe &rarr;</a>';
+    })();
+
+    // ── Meal Plan Today ──
+    (function () {
+      var el = document.getElementById('meal-plan-today');
+      if (!el) return;
+
+      function esc(s) { return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+      var todayName = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'][new Date().getDay()];
+      var now = new Date();
+      var dow = now.getDay();
+      var mon = new Date(now);
+      mon.setDate(now.getDate() + (dow === 0 ? -6 : 1 - dow));
+      mon.setHours(0, 0, 0, 0);
+      var weekKey = mon.getFullYear() + '-' + String(mon.getMonth() + 1).padStart(2, '0') + '-' + String(mon.getDate()).padStart(2, '0');
+
+      var data = {};
+      try { data = JSON.parse(localStorage.getItem('personal_hub_meal_planner_v2') || '{}'); } catch(_) {}
+      var week = (data.weeks || {})[weekKey] || {};
+      var today = week[todayName] || {};
+
+      var MEALS = [
+        { key: 'breakfast', label: 'Breakfast', color: '#f97316' },
+        { key: 'lunch',     label: 'Lunch',     color: '#10b981' },
+        { key: 'dinner',    label: 'Dinner',     color: '#6366f1' }
+      ];
+
+      var rows = MEALS.map(function (m) {
+        var meal = ((today[m.key] || {}).meal || '').trim();
+        return '<div class="mp-preview-row" style="border-left-color:' + m.color + '">'
+          + '<span class="mp-preview-label" style="color:' + m.color + '">' + m.label + '</span>'
+          + '<span class="mp-preview-meal' + (meal ? '' : ' mp-empty') + '">' + (meal ? esc(meal) : 'Not set') + '</span>'
+          + '</div>';
+      }).join('');
+
+      el.innerHTML = '<span class="section-tag">Meal Plan</span>'
+        + '<h2><a href="meal-planner.html">Today\u2019s Meals</a></h2>'
+        + '<div class="mp-preview-list">' + rows + '</div>'
+        + '<a href="meal-planner.html" class="mp-view-link">Open meal planner \u2192</a>';
     })();
 
     // ── Wishlist Preview ──
