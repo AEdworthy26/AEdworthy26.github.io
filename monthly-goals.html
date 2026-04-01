@@ -414,6 +414,53 @@
     .logbook-entry-delete { background: none; border: none; color: #ccc; font-size: 1rem; line-height: 1; cursor: pointer; padding: 0.1rem 0.2rem; border-radius: 4px; flex-shrink: 0; transition: color 0.12s, background 0.12s; align-self: flex-start; }
     .logbook-entry-delete:hover { color: #c0392b; background: #ffe5e5; }
 
+    /* ── Logbook inline confirm ── */
+    .logbook-entry-confirm {
+      display: flex; align-items: center; gap: 0.7rem;
+      padding: 0.55rem 1rem; background: #fff7f7;
+      border: 1px solid rgba(192,57,43,0.18); border-left: 3px solid #c0392b;
+      border-radius: 10px; box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+      animation: slideDown 0.15s ease;
+    }
+    @keyframes slideDown { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+    .logbook-entry-confirm-text {
+      flex: 1; font-family: 'Inter', sans-serif; font-size: 0.82rem; color: #5a2020;
+    }
+    .logbook-entry-confirm-text strong { font-weight: 700; }
+    .logbook-confirm-yes, .logbook-confirm-no {
+      font-family: 'Inter', sans-serif; font-size: 0.78rem; font-weight: 600;
+      border: none; border-radius: 6px; padding: 0.3rem 0.75rem; cursor: pointer; transition: opacity 0.12s;
+    }
+    .logbook-confirm-yes { background: #c0392b; color: #fff; }
+    .logbook-confirm-yes:hover { opacity: 0.85; }
+    .logbook-confirm-no { background: rgba(0,0,0,0.07); color: #444; }
+    .logbook-confirm-no:hover { background: rgba(0,0,0,0.13); }
+
+    /* ── Undo toast ── */
+    #logbook-undo-toast {
+      position: fixed; bottom: 1.8rem; left: 50%; transform: translateX(-50%) translateY(8px);
+      background: #1e293b; color: #fff; border-radius: 12px;
+      padding: 0.75rem 1.2rem; display: flex; align-items: center; gap: 1rem;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.22); font-family: 'Inter', sans-serif;
+      font-size: 0.85rem; min-width: 260px; z-index: 9999;
+      opacity: 0; pointer-events: none; transition: opacity 0.2s, transform 0.2s;
+    }
+    #logbook-undo-toast.visible { opacity: 1; pointer-events: all; transform: translateX(-50%) translateY(0); }
+    #logbook-undo-toast .toast-label { flex: 1; }
+    #logbook-undo-toast .toast-undo {
+      background: var(--blue); color: #fff; border: none; border-radius: 6px;
+      padding: 0.3rem 0.8rem; font-size: 0.78rem; font-weight: 700; cursor: pointer;
+      font-family: 'Inter', sans-serif; flex-shrink: 0; transition: opacity 0.12s;
+    }
+    #logbook-undo-toast .toast-undo:hover { opacity: 0.85; }
+    #logbook-undo-toast .toast-timer {
+      position: absolute; bottom: 0; left: 0; height: 3px;
+      background: var(--blue); border-radius: 0 0 12px 12px;
+      width: 100%; transform-origin: left;
+      animation: none;
+    }
+    @keyframes toastCountdown { from { transform: scaleX(1); } to { transform: scaleX(0); } }
+
     /* ── NEWS TICKER ── */
     .ticker-wrap { background: #111; overflow: hidden; display: flex; align-items: stretch; height: 2.4rem; }
     .ticker-label { background: #e8000d; color: #fff; font-family: 'Source Serif 4', serif; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; padding: 0 1.2rem; display: flex; align-items: center; white-space: nowrap; flex-shrink: 0; gap: 0.5rem; }
@@ -1131,20 +1178,89 @@
     renderGoals(true); // true = animate progress bars on initial load
     renderLogbook();
 
-    // ── Logbook delete ──
+    // ── Logbook delete (inline confirm + undo toast) ──
+    var undoTimer = null;
+    var undoGoal = null;
+    var undoTimeout = null;
+
+    var toast = document.getElementById('logbook-undo-toast');
+    var toastLabel = toast.querySelector('.toast-label');
+    var toastUndo = toast.querySelector('.toast-undo');
+    var toastTimerBar = toast.querySelector('.toast-timer');
+
+    function showUndoToast(goalTitle) {
+      toastLabel.textContent = '\u201c' + goalTitle + '\u201d removed';
+      toast.classList.add('visible');
+      toastTimerBar.style.animation = 'none';
+      toastTimerBar.offsetHeight; // reflow
+      toastTimerBar.style.animation = 'toastCountdown 30s linear forwards';
+      clearTimeout(undoTimeout);
+      undoTimeout = setTimeout(function() {
+        dismissToast();
+        undoGoal = null;
+      }, 30000);
+    }
+
+    function dismissToast() {
+      toast.classList.remove('visible');
+      toastTimerBar.style.animation = 'none';
+      clearTimeout(undoTimeout);
+    }
+
+    toastUndo.addEventListener('click', function() {
+      if (!undoGoal) return;
+      goals.push(undoGoal);
+      saveGoals();
+      undoGoal = null;
+      dismissToast();
+      renderGoals();
+      renderLogbook();
+    });
+
     document.getElementById('logbook-entries').addEventListener('click', function(e) {
-      const btn = e.target.closest('.logbook-entry-delete');
-      if (!btn) return;
-      const entry = btn.closest('.logbook-entry');
-      if (!entry) return;
-      const id = entry.dataset.id;
-      const goal = goals.find(g => g.id === id);
-      if (!goal) return;
-      if (confirm('Remove "' + goal.title + '" from the logbook? This will delete the goal.')) {
+      // Cancel button on inline confirm
+      if (e.target.closest('.logbook-confirm-no')) {
+        var strip = e.target.closest('.logbook-entry-confirm');
+        if (strip) strip.remove();
+        return;
+      }
+
+      // Confirm button on inline confirm
+      if (e.target.closest('.logbook-confirm-yes')) {
+        var strip = e.target.closest('.logbook-entry-confirm');
+        if (!strip) return;
+        var id = strip.dataset.id;
+        var goal = goals.find(function(g) { return g.id === id; });
+        strip.remove();
+        if (!goal) return;
+        undoGoal = JSON.parse(JSON.stringify(goal));
         deleteGoal(id);
         renderLogbook();
         renderGoals();
+        showUndoToast(goal.title);
+        return;
       }
+
+      // × delete button — show inline confirm
+      var btn = e.target.closest('.logbook-entry-delete');
+      if (!btn) return;
+      var entry = btn.closest('.logbook-entry');
+      if (!entry) return;
+      var id = entry.dataset.id;
+      var goal = goals.find(function(g) { return g.id === id; });
+      if (!goal) return;
+
+      // Remove any existing confirm strips
+      document.querySelectorAll('.logbook-entry-confirm').forEach(function(s) { s.remove(); });
+
+      var strip = document.createElement('div');
+      strip.className = 'logbook-entry-confirm';
+      strip.dataset.id = id;
+      strip.innerHTML =
+        '<span class="logbook-entry-confirm-text">Remove <strong>' + escHtml(goal.title) + '</strong>?</span>' +
+        '<button class="logbook-confirm-no">Cancel</button>' +
+        '<button class="logbook-confirm-yes">Delete</button>';
+      entry.insertAdjacentElement('afterend', strip);
     });
 
     // ── Dropdown nav ──
@@ -1164,6 +1280,12 @@
       });
     })();
   </script>
+  <div id="logbook-undo-toast">
+    <span class="toast-label"></span>
+    <button class="toast-undo">Undo</button>
+    <div class="toast-timer"></div>
+  </div>
+
   <script src="world-news-data.js"></script>
   <script src="ticker.js"></script>
 
