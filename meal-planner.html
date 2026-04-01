@@ -368,14 +368,17 @@
       d.setHours(0, 0, 0, 0);
       return d;
     }
-    function weekKey(date) { return getMondayDate(date).toISOString().slice(0, 10); }
+    function localDateStr(d) {
+      return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+    }
+    function weekKey(date) { return localDateStr(getMondayDate(date)); }
     function shiftWeek(key, n) {
-      var d = new Date(key + 'T00:00:00');
+      var d = new Date(key + 'T12:00:00');
       d.setDate(d.getDate() + n * 7);
-      return d.toISOString().slice(0, 10);
+      return localDateStr(d);
     }
     function formatWeekRange(key) {
-      var mon = new Date(key + 'T00:00:00');
+      var mon = new Date(key + 'T12:00:00');
       var sun = new Date(mon); sun.setDate(sun.getDate() + 6);
       var fmt = function (d, yr) {
         return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' }) + (yr ? ' ' + d.getFullYear() : '');
