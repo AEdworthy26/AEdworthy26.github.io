@@ -476,7 +476,7 @@ var {var_name} = {{
     js = extract_js(call_claude(prompt))
     if not js:
         return None
-    # Inject images: RSS → Wikipedia (key person/topic in title) → Pexels → Unsplash fallback
+    # Inject images: RSS article image → Pexels → Unsplash fallback
     try:
         titles = re.findall(r'title:\s*["\'](.+?)["\']', js)
         # Build a title→rss_image lookup from fetched articles
@@ -489,30 +489,31 @@ var {var_name} = {{
             title = titles[i] if i < len(titles) else ''
             url = None
 
-            # 1. Try RSS image (actual article photo)
+            # 1. Try RSS image — exact match first, then fuzzy word-overlap match
             rss_url = rss_lookup.get(title)
             if not rss_url:
+                # Fuzzy: score by how many words the titles share
+                title_words = set(title.lower().split())
+                best_score, best_img = 0, None
                 for rss_title, rss_img in rss_lookup.items():
-                    if title[:30] in rss_title or rss_title[:30] in title:
-                        rss_url = rss_img
-                        break
+                    if not rss_img:
+                        continue
+                    shared = len(title_words & set(rss_title.lower().split()))
+                    if shared > best_score:
+                        best_score, best_img = shared, rss_img
+                if best_score >= 3:  # at least 3 words in common
+                    rss_url = best_img
             if rss_url:
                 url = rss_url
                 log(f'  ✓ RSS image [{i}]: {title[:40]}')
 
-            # 2. Try Wikipedia using the article title (finds real photos of people, places, orgs)
-            if not url and title:
-                url = fetch_wikipedia_image(title)
-                if url:
-                    log(f'  ✓ Wikipedia image [{i}]: {title[:40]}')
-
-            # 3. Try Pexels
+            # 2. Pexels using the article title as the search query
             if not url:
                 url = fetch_pexels_image(title or category)
                 if url:
                     log(f'  ✓ Pexels image [{i}]: {title[:40]}')
 
-            # 4. Unsplash fallback
+            # 3. Unsplash fallback
             if not url:
                 url = fallbacks[i] if i < len(fallbacks) else img(img_key)
                 log(f'  ✓ Unsplash fallback [{i}]: {title[:40]}')
