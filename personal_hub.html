@@ -549,6 +549,18 @@
     .todo-view-link:hover { text-decoration: underline; }
     .todo-preview-empty { font-size: 0.78rem; color: var(--light); font-style: italic; margin-top: 0.4rem; }
 
+    /* ────────────────── CURRENTLY READING PREVIEW ────────────────── */
+    .cr-preview-list { margin-top: 0.6rem; display: flex; flex-direction: column; gap: 0.45rem; }
+    .cr-preview-item { display: flex; align-items: center; gap: 0.6rem; padding: 0.38rem 0.6rem; background: rgba(0,0,0,0.025); border-left: 2.5px solid #c8a348; border-radius: 0 3px 3px 0; }
+    .cr-preview-cover { width: 28px; height: 38px; object-fit: cover; border-radius: 2px; flex-shrink: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.15); }
+    .cr-preview-cover-placeholder { width: 28px; height: 38px; background: #e8e4da; border-radius: 2px; flex-shrink: 0; }
+    .cr-preview-body { flex: 1; min-width: 0; }
+    .cr-preview-title { font-size: 0.78rem; font-weight: 600; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .cr-preview-author { font-size: 0.63rem; color: var(--muted); margin-top: 0.05rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .cr-view-link { display: inline-block; margin-top: 0.6rem; font-size: 0.72rem; font-weight: 700; color: var(--blue); letter-spacing: 0.04em; }
+    .cr-view-link:hover { text-decoration: underline; }
+    .cr-preview-empty { font-size: 0.78rem; color: var(--light); font-style: italic; margin-top: 0.4rem; }
+
     /* ────────────────── MEAL PLAN TODAY PREVIEW ────────────────── */
     .mp-preview-list { margin-top: 0.6rem; display: flex; flex-direction: column; gap: 0.35rem; }
     .mp-preview-row { display: flex; align-items: baseline; gap: 0.5rem; padding: 0.38rem 0.6rem; background: rgba(0,0,0,0.025); border-left: 2.5px solid #e5e7eb; border-radius: 0 3px 3px 0; }
@@ -795,6 +807,12 @@
         <div class="stack-item" id="meal-plan-today">
           <span class="section-tag">Meal Plan</span>
           <h2><a href="meal-planner.html">Today&rsquo;s Meals</a></h2>
+          <div class="lines"><span></span><span></span><span></span></div>
+        </div>
+
+        <div class="stack-item" id="currently-reading">
+          <span class="section-tag">Reading List</span>
+          <h2><a href="books.html">Currently Reading</a></h2>
           <div class="lines"><span></span><span></span><span></span></div>
         </div>
 
@@ -1596,6 +1614,43 @@
         + '</div>'
         + (r.desc ? '<p class="rotd-desc">' + esc(r.desc) + '</p>' : '')
         + '<a href="recipes.html" class="rotd-link">View recipe &rarr;</a>';
+    })();
+
+    // ── Currently Reading ──
+    (function () {
+      var el = document.getElementById('currently-reading');
+      if (!el) return;
+
+      function esc(s) { return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+      var books = [];
+      try { books = JSON.parse(localStorage.getItem('personal_hub_books_v2') || '[]'); } catch(_) {}
+      var reading = books.filter(function(b) { return b.status === 'Reading'; });
+
+      if (!reading.length) {
+        el.innerHTML = '<span class="section-tag">Reading List</span>'
+          + '<h2><a href="books.html">Currently Reading</a></h2>'
+          + '<p class="cr-preview-empty">Nothing on the go &mdash; <a href="books.html">add a book</a>.</p>';
+        return;
+      }
+
+      var rows = reading.map(function(b) {
+        var img = b.cover
+          ? '<img class="cr-preview-cover" src="' + esc(b.cover) + '" alt="" loading="lazy">'
+          : '<div class="cr-preview-cover-placeholder"></div>';
+        return '<div class="cr-preview-item">'
+          + img
+          + '<div class="cr-preview-body">'
+          +   '<div class="cr-preview-title">' + esc(b.title) + '</div>'
+          +   (b.author ? '<div class="cr-preview-author">' + esc(b.author) + '</div>' : '')
+          + '</div>'
+          + '</div>';
+      }).join('');
+
+      el.innerHTML = '<span class="section-tag">Reading List</span>'
+        + '<h2><a href="books.html">Currently Reading</a></h2>'
+        + '<div class="cr-preview-list">' + rows + '</div>'
+        + '<a href="books.html" class="cr-view-link">Open reading list \u2192</a>';
     })();
 
     // ── Meal Plan Today ──
