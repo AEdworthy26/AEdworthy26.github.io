@@ -1638,13 +1638,13 @@
         var img = b.cover
           ? '<img class="cr-preview-cover" src="' + esc(b.cover) + '" alt="" loading="lazy">'
           : '<div class="cr-preview-cover-placeholder"></div>';
-        return '<div class="cr-preview-item">'
+        return '<a class="cr-preview-item" href="books.html#' + esc(b.id) + '" style="text-decoration:none">'
           + img
           + '<div class="cr-preview-body">'
           +   '<div class="cr-preview-title">' + esc(b.title) + '</div>'
           +   (b.author ? '<div class="cr-preview-author">' + esc(b.author) + '</div>' : '')
           + '</div>'
-          + '</div>';
+          + '</a>';
       }).join('');
 
       el.innerHTML = '<span class="section-tag">Reading List</span>'

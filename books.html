@@ -847,6 +847,15 @@ document.getElementById('js-add-btn').addEventListener('click', function() { ope
 })();
 
 render();
+
+// ── Deep-link: open modal if URL has #bookId ──────────────────
+(function() {
+  var hash = window.location.hash.slice(1);
+  if (hash) {
+    var book = BOOKS.find(function(b) { return b.id === hash; });
+    if (book) openModal(book.id);
+  }
+})();
 </script>
 
 <script src="world-news-data.js"></script>
