@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meal Planner — Personal Hub</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&family=Inter:wght@400;500;600;700&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink:       #0d0d0d;
+      --paper:     #f4f0e6;
+      --rule:      #1a1a1a;
+      --muted:     #555;
+      --light:     #888;
+      --blue:      #003399;
+      --border:    #d8d3c8;
+      --subtle:    #ece8e0;
+      --card:      #ffffff;
+      --shadow-sm: 0 1px 4px rgba(0,0,0,0.06);
+      --shadow-md: 0 4px 16px rgba(0,0,0,0.09);
+      --radius:    10px;
+    }
+
+    body { background: var(--paper); color: var(--ink); font-family: 'Source Serif 4', Georgia, serif; min-height: 100vh; }
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    button, input, select, textarea { font-family: 'Inter', system-ui, sans-serif; }
+    button { cursor: pointer; }
+
+    /* ── TICKER ── */
+    .ticker-wrap { background: #111; overflow: hidden; display: flex; align-items: stretch; height: 2.4rem; }
+    .ticker-label { background: #e8000d; color: #fff; font-family: 'Source Serif 4', serif; font-size: .68rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; padding: 0 1.2rem; display: flex; align-items: center; white-space: nowrap; flex-shrink: 0; gap: .5rem; }
+    .ticker-label::before { content: ''; display: inline-block; width: 7px; height: 7px; background: #fff; border-radius: 50%; animation: pulse-dot 1.2s ease-in-out infinite; }
+    @keyframes pulse-dot { 0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.7)} }
+    .ticker-inner { overflow: hidden; flex: 1; display: flex; align-items: center; }
+    .ticker-track { display: flex; align-items: center; white-space: nowrap; will-change: transform; animation: ticker-scroll 40s linear infinite; }
+    .ticker-track:hover { animation-play-state: paused; cursor: default; }
+    .ticker-track span { color: #fff; font-family: 'Source Serif 4', serif; font-size: .78rem; font-weight: 600; padding: 0 2rem; }
+    .ticker-track .ticker-sep { color: #e8000d; font-size: 1rem; font-weight: 700; flex-shrink: 0; line-height: 1; padding: 0; }
+    @keyframes ticker-scroll { 0%{transform:translateX(0)}100%{transform:translateX(-50%)} }
+
+    /* ── HEADER ── */
+    .meta-bar { max-width: 1200px; margin: 0 auto; padding: 1rem 1.5rem 0; }
+    .meta-bar-inner { display: flex; justify-content: space-between; font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); border-bottom: 1px solid var(--rule); padding-bottom: .4rem; margin-bottom: .6rem; }
+    .masthead-wrap { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; text-align: center; }
+    .masthead { font-family: 'Playfair Display', serif; font-weight: 900; font-size: clamp(2.4rem,5vw,4.2rem); line-height: 1; letter-spacing: -.01em; }
+    .masthead-sub { font-size: .75rem; font-style: italic; color: var(--muted); margin: .2rem 0 .3rem; }
+    .rule-double { border: none; border-top: 3px double var(--rule); max-width: 1200px; margin: 0 auto; }
+
+    /* ── NAV ── */
+    .nav-ribbon { background: linear-gradient(90deg, #4b5563 0%, #1f2937 100%); position: sticky; top: 0; z-index: 100; }
+    .nav-ribbon nav { max-width: 1600px; margin: 0 auto; padding: 0 2rem; display: flex; align-items: center; justify-content: center; gap: .3rem; }
+    .nav-ribbon nav a { color: rgba(255,255,255,0.9); font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; padding: 0.5rem 0.95rem; border-radius: 5px; transition: background 0.15s; white-space: nowrap; }
+    .nav-ribbon nav a:hover { background: rgba(255,255,255,.15); color: #fff; text-decoration: none; }
+    .nav-ribbon nav a.nav-home { color: #fff; font-weight: 700; margin-right: .4rem; padding-right: 1rem; border-right: 1px solid rgba(255,255,255,.2); border-radius: 0; }
+    .nav-ribbon nav a.nav-active { background: rgba(255,255,255,.18); color: #fff; }
+    .nav-divider { width: 1px; height: 1.1rem; background: rgba(255,255,255,.35); margin: 0 .6rem; flex-shrink: 0; align-self: center; }
+    .nav-caret { font-size: .55rem; opacity: .65; transition: transform .15s; line-height: 1; }
+    .nav-dropdown { position: relative; display: flex; align-items: center; }
+    .nav-dropdown:hover .nav-caret { transform: rotate(180deg); }
+    .nav-dropdown:hover .nav-drop-menu { display: flex; }
+    .nav-drop-btn { color: rgba(255,255,255,0.9); font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; padding: 0.5rem 0.95rem; border-radius: 5px; background: none; border: none; cursor: pointer; white-space: nowrap; display: flex; align-items: center; gap: 0.25rem; transition: background 0.15s; }
+    .nav-drop-btn:hover { background: rgba(255,255,255,.18); color: #fff; }
+    .nav-drop-menu { position: absolute; top: 100%; left: 0; background: #1f2937; border-radius: 6px; min-width: 155px; display: none; flex-direction: column; z-index: 200; box-shadow: 0 6px 18px rgba(0,0,0,.4); overflow: hidden; }
+    .nav-drop-menu a { color: rgba(255,255,255,.85); font-size: .76rem; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; padding: .6rem 1.1rem; display: block; border-radius: 0; transition: background .12s; }
+    .nav-drop-menu a + a { border-top: 1px solid rgba(255,255,255,.07); }
+    .nav-drop-menu a:hover { background: rgba(255,255,255,.15); color: #fff; text-decoration: none; }
+    .nav-drop-menu a.nav-active { background: rgba(255,255,255,.15); color: #fff; }
+    @media (max-width: 800px) {
+      .nav-ribbon nav { flex-wrap: wrap; gap: 0; padding: .25rem .5rem; }
+      .nav-drop-menu { position: static; box-shadow: none; border-radius: 0; background: rgba(255,255,255,.06); }
+      .nav-dropdown { flex-direction: column; align-items: flex-start; width: 100%; }
+      .nav-drop-menu { display: flex !important; }
+    }
+
+    /* ── PAGE ── */
+    .page-wrap { max-width: 1040px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+
+    .page-title-row { border-bottom: 1px solid var(--rule); padding-bottom: 1rem; margin-bottom: 1.8rem; display: flex; align-items: baseline; gap: 1rem; flex-wrap: wrap; justify-content: space-between; }
+    .page-title-left { display: flex; align-items: baseline; gap: 1rem; flex-wrap: wrap; }
+    .page-section-tag { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); }
+    .page-title { font-family: 'Playfair Display', serif; font-weight: 900; font-size: 2.4rem; line-height: 1; }
+
+    /* ── DAY TABS ── */
+    .day-tabs { display: flex; gap: 0.4rem; margin-bottom: 1.5rem; overflow-x: auto; padding-bottom: 0.4rem; scrollbar-width: none; -ms-overflow-style: none; }
+    .day-tabs::-webkit-scrollbar { display: none; }
+    .day-tab { border: 1.5px solid var(--border); border-radius: 9999px; padding: 0.42rem 1.1rem; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; background: var(--card); color: var(--muted); transition: all 0.18s; white-space: nowrap; flex-shrink: 0; position: relative; }
+    .day-tab:hover { border-color: var(--blue); color: var(--blue); }
+    .day-tab.active { background: var(--blue); border-color: var(--blue); color: #fff; box-shadow: 0 2px 8px rgba(0,51,153,0.25); }
+    .day-tab.today-tab:not(.active)::after { content: ''; position: absolute; bottom: -7px; left: 50%; transform: translateX(-50%); width: 4px; height: 4px; border-radius: 50%; background: var(--blue); opacity: 0.7; }
+
+    /* ── MAIN GRID ── */
+    .planner-grid { display: grid; grid-template-columns: 1fr 300px; gap: 1.5rem; align-items: start; }
+    @media (max-width: 820px) { .planner-grid { grid-template-columns: 1fr; } }
+
+    /* ── MEALS COLUMN ── */
+    .meals-col { display: flex; flex-direction: column; gap: 0.9rem; transition: opacity 0.12s ease; }
+    .meals-col.switching { opacity: 0; pointer-events: none; }
+
+    /* ── MEAL CARD ── */
+    .meal-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow-sm); overflow: hidden; transition: box-shadow 0.2s, border-color 0.2s; }
+    .meal-card:focus-within { box-shadow: var(--shadow-md); border-color: #c0bab0; }
+    .meal-header { display: flex; align-items: center; gap: 0.65rem; padding: 0.7rem 1rem; border-bottom: 1px solid var(--subtle); background: var(--subtle); }
+    .meal-emoji { font-size: 1.05rem; line-height: 1; }
+    .meal-name { font-family: 'Inter', sans-serif; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); flex: 1; }
+    .meal-filled-dot { width: 6px; height: 6px; border-radius: 50%; background: #4ade80; flex-shrink: 0; opacity: 0; transition: opacity 0.3s; }
+    .meal-filled-dot.visible { opacity: 1; }
+    .meal-body { padding: 0.85rem 1rem 0.9rem; display: flex; flex-direction: column; gap: 0.5rem; }
+    .meal-textarea { width: 100%; border: none; outline: none; background: transparent; color: var(--ink); font-family: 'Source Serif 4', Georgia, serif; font-size: 0.88rem; line-height: 1.65; resize: none; min-height: 62px; overflow: hidden; }
+    .meal-textarea::placeholder { color: #bbb; font-style: italic; }
+    .meal-divider { height: 1px; background: var(--subtle); margin: 0 -1rem; width: calc(100% + 2rem); }
+    .meal-notes { width: 100%; border: none; outline: none; background: transparent; color: var(--muted); font-family: 'Inter', sans-serif; font-size: 0.7rem; line-height: 1.5; resize: none; min-height: 28px; overflow: hidden; padding-top: 0.4rem; }
+    .meal-notes::placeholder { color: #ccc; }
+
+    /* ── RIGHT COLUMN ── */
+    .right-col { display: flex; flex-direction: column; gap: 1rem; position: sticky; top: 56px; max-height: calc(100vh - 70px); overflow-y: auto; scrollbar-width: thin; scrollbar-color: var(--border) transparent; }
+    .right-col::-webkit-scrollbar { width: 4px; }
+    .right-col::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+    /* ── DAY SUMMARY CARD ── */
+    .day-summary-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow-sm); overflow: hidden; flex-shrink: 0; }
+    .day-summary-header { padding: 0.65rem 1rem; background: var(--subtle); border-bottom: 1px solid var(--border); font-family: 'Inter', sans-serif; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); display: flex; align-items: center; justify-content: space-between; }
+    .today-badge { background: var(--blue); color: #fff; border-radius: 9999px; padding: 0.1rem 0.5rem; font-size: 0.58rem; font-weight: 700; letter-spacing: 0.08em; }
+    .day-summary-body { padding: 0.3rem 0; }
+    .day-summary-row { display: flex; align-items: flex-start; gap: 0.55rem; padding: 0.45rem 1rem; }
+    .day-summary-row + .day-summary-row { border-top: 1px solid var(--subtle); }
+    .dsrow-emoji { font-size: 0.82rem; flex-shrink: 0; margin-top: 0.05rem; }
+    .dsrow-meal { font-size: 0.76rem; color: var(--ink); line-height: 1.4; }
+    .dsrow-empty { font-size: 0.72rem; color: #ccc; font-style: italic; }
+
+    /* ── SHOPPING LIST ── */
+    .shop-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow-sm); overflow: hidden; flex-shrink: 0; }
+    .shop-header { display: flex; align-items: center; justify-content: space-between; padding: 0.7rem 1rem; border-bottom: 1px solid var(--subtle); background: var(--subtle); }
+    .shop-title { font-family: 'Inter', sans-serif; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); display: flex; align-items: center; gap: 0.45rem; }
+    .shop-count { background: var(--blue); color: #fff; border-radius: 9999px; padding: 0.1rem 0.45rem; font-size: 0.58rem; font-weight: 700; transition: background 0.2s; }
+    .shop-count.done-all { background: #16a34a; }
+    .shop-clear-done { font-size: 0.62rem; font-weight: 600; color: var(--light); background: none; border: 1px solid var(--border); border-radius: 9999px; padding: 0.2rem 0.55rem; transition: all 0.15s; }
+    .shop-clear-done:hover { color: #c0392b; border-color: #e8a09a; background: #fdf0ee; }
+    .shop-add-form { padding: 0.75rem 1rem; border-bottom: 1px solid var(--subtle); display: flex; gap: 0.45rem; }
+    .shop-name-input { flex: 1; border: 1px solid var(--border); border-radius: 6px; padding: 0.36rem 0.65rem; font-size: 0.78rem; background: var(--subtle); color: var(--ink); outline: none; min-width: 0; transition: border-color 0.15s, background 0.15s; }
+    .shop-name-input:focus { border-color: var(--blue); background: var(--card); }
+    .shop-qty-input { width: 58px; border: 1px solid var(--border); border-radius: 6px; padding: 0.36rem 0.5rem; font-size: 0.78rem; background: var(--subtle); color: var(--ink); outline: none; transition: border-color 0.15s, background 0.15s; }
+    .shop-qty-input:focus { border-color: var(--blue); background: var(--card); }
+    .shop-add-btn { background: var(--blue); color: #fff; border: none; border-radius: 6px; padding: 0.36rem 0.8rem; font-size: 1rem; font-weight: 400; line-height: 1; transition: opacity 0.15s; flex-shrink: 0; }
+    .shop-add-btn:hover { opacity: 0.82; }
+    .shop-list { max-height: 340px; overflow-y: auto; scrollbar-width: thin; scrollbar-color: var(--border) transparent; }
+    .shop-list::-webkit-scrollbar { width: 3px; }
+    .shop-list::-webkit-scrollbar-thumb { background: var(--border); }
+    .shop-item { display: flex; align-items: center; gap: 0.55rem; padding: 0.55rem 1rem; border-bottom: 1px solid var(--subtle); transition: background 0.1s; animation: item-in 0.2s ease; }
+    .shop-item:last-child { border-bottom: none; }
+    .shop-item:hover { background: #faf9f6; }
+    @keyframes item-in { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
+    .shop-cb { width: 14px; height: 14px; accent-color: var(--blue); cursor: pointer; flex-shrink: 0; margin-top: 1px; }
+    .shop-item-text { flex: 1; min-width: 0; }
+    .shop-item-name { font-size: 0.8rem; color: var(--ink); line-height: 1.3; transition: all 0.2s; display: block; }
+    .shop-item-qty { font-size: 0.62rem; color: var(--light); margin-top: 0.1rem; display: block; }
+    .shop-item.done .shop-item-name { text-decoration: line-through; color: var(--light); }
+    .shop-item.done .shop-item-qty { color: #ccc; }
+    .shop-remove-btn { background: none; border: none; color: #ccc; font-size: 1rem; line-height: 1; padding: 0.15rem 0.2rem; border-radius: 3px; transition: color 0.12s; flex-shrink: 0; }
+    .shop-remove-btn:hover { color: #c0392b; }
+    .shop-empty { padding: 1.4rem 1rem; text-align: center; color: var(--light); font-size: 0.76rem; font-style: italic; }
+
+    /* ── WEEKLY OVERVIEW ── */
+    .week-overview-wrap { margin-top: 1.8rem; }
+    .week-toggle-btn { display: inline-flex; align-items: center; gap: 0.5rem; background: none; border: 1px solid var(--border); border-radius: 9999px; padding: 0.38rem 1.1rem; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); transition: all 0.15s; }
+    .week-toggle-btn:hover { border-color: var(--blue); color: var(--blue); }
+    .week-toggle-caret { font-size: 0.52rem; transition: transform 0.2s ease; display: inline-block; }
+    .week-toggle-btn.open .week-toggle-caret { transform: rotate(180deg); }
+    .week-overview-grid { margin-top: 1rem; display: grid; grid-template-columns: repeat(7, 1fr); gap: 0.5rem; max-height: 0; overflow: hidden; opacity: 0; transition: max-height 0.35s ease, opacity 0.25s ease; }
+    .week-overview-grid.open { max-height: 500px; opacity: 1; }
+    .week-day-col { background: var(--card); border: 1.5px solid var(--border); border-radius: 8px; overflow: hidden; cursor: pointer; transition: border-color 0.15s, transform 0.15s, box-shadow 0.15s; }
+    .week-day-col:hover { border-color: var(--blue); transform: translateY(-2px); box-shadow: var(--shadow-md); }
+    .week-day-col.wov-active { border-color: var(--blue); box-shadow: 0 0 0 2px rgba(0,51,153,0.12); }
+    .week-day-col.wov-today .week-col-head { background: var(--blue); color: #fff; }
+    .week-col-head { padding: 0.35rem 0.4rem; text-align: center; font-family: 'Inter', sans-serif; font-size: 0.58rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; background: var(--subtle); color: var(--muted); border-bottom: 1px solid var(--border); }
+    .week-col-body { padding: 0.4rem 0.5rem; display: flex; flex-direction: column; gap: 0.22rem; }
+    .wov-meal-row { font-size: 0.58rem; line-height: 1.35; color: #ccc; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .wov-meal-row.wov-filled { color: var(--ink); }
+    @media (max-width: 680px) { .week-overview-grid { grid-template-columns: repeat(4, 1fr); } }
+
+    /* ── CLEAR WEEK BUTTON ── */
+    .btn-ghost { background: none; border: 1px solid var(--border); border-radius: 9999px; padding: 0.32rem 0.9rem; font-size: 0.63rem; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: var(--muted); transition: all 0.15s; }
+    .btn-ghost:hover { border-color: #aaa; color: var(--ink); }
+    .btn-danger:hover { background: #fdf0ee; border-color: #e8a09a; color: #c0392b; }
+  </style>
+</head>
+<body>
+
+  <!-- TICKER -->
+  <div class="ticker-wrap">
+    <div class="ticker-label">Breaking News</div>
+    <div class="ticker-inner">
+      <div class="ticker-track" id="js-ticker">
+        <span style="color:rgba(255,255,255,0.5);font-size:.78rem;padding:0 2rem">Loading&hellip;</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- META BAR -->
+  <div class="meta-bar">
+    <div class="meta-bar-inner">
+      <span id="js-date"></span>
+      <span>Personal Edition &nbsp;&bull;&nbsp; Est. 2026</span>
+    </div>
+  </div>
+  <div class="masthead-wrap">
+    <div class="masthead">Personal Hub</div>
+    <div class="masthead-sub">Alfie Edworthy</div>
+  </div>
+  <hr class="rule-double">
+
+  <!-- NAV RIBBON -->
+  <div class="nav-ribbon">
+    <nav>
+      <a href="personal_hub.html" class="nav-home">&#8962; Home</a>
+      <a href="rics-study.html">RICS Study</a>
+      <div class="nav-dropdown">
+        <button class="nav-drop-btn">News <span class="nav-caret">▾</span></button>
+        <div class="nav-drop-menu">
+          <a href="world-news.html">World Affairs</a>
+          <a href="uk-politics-news.html">UK Politics</a>
+          <a href="us-politics-news.html">US Politics</a>
+          <a href="financial-news.html">Financial</a>
+          <a href="tech-news.html">Technology</a>
+        </div>
+      </div>
+      <a href="curiosity.html">Curiosity Corner</a>
+      <a href="philosophy.html">Philosophy Corner</a>
+      <div class="nav-dropdown">
+        <button class="nav-drop-btn">Recommendations <span class="nav-caret">▾</span></button>
+        <div class="nav-drop-menu">
+          <a href="reads.html">Books</a>
+          <a href="books.html">Reading List</a>
+          <a href="films.html">Films</a>
+        </div>
+      </div>
+      <a href="recipes.html">Recipes</a>
+      <a href="exercise.html">Exercise</a>
+      <div class="nav-divider"></div>
+      <div class="nav-dropdown">
+        <button class="nav-drop-btn">Organisation <span class="nav-caret">▾</span></button>
+        <div class="nav-drop-menu">
+          <a href="todo-lists.html">To-Do Lists</a>
+          <a href="meal-planner.html" class="nav-active">Meal Planner</a>
+          <a href="weekly-checkin.html">Weekly Check-In</a>
+          <a href="monthly-goals.html">Monthly Goals</a>
+          <a href="achievements.html">Achievements</a>
+          <a href="wishlist.html">Wishlist</a>
+        </div>
+      </div>
+      <a href="calendar.html">Calendar</a>
+    </nav>
+  </div>
+
+  <!-- PAGE CONTENT -->
+  <div class="page-wrap">
+
+    <div class="page-title-row">
+      <div class="page-title-left">
+        <span class="page-section-tag">Organisation</span>
+        <h1 class="page-title">Meal Planner</h1>
+      </div>
+      <button class="btn-ghost btn-danger" id="btn-clear-week">Clear Week</button>
+    </div>
+
+    <!-- DAY SELECTOR TABS -->
+    <div class="day-tabs" id="day-tabs"></div>
+
+    <!-- MAIN GRID: MEALS + SIDEBAR -->
+    <div class="planner-grid">
+
+      <!-- LEFT: MEAL CARDS -->
+      <div class="meals-col" id="meals-col"></div>
+
+      <!-- RIGHT: SUMMARY + SHOPPING -->
+      <div class="right-col">
+
+        <!-- Day at a glance -->
+        <div class="day-summary-card" id="day-summary-card"></div>
+
+        <!-- Shopping list -->
+        <div class="shop-card">
+          <div class="shop-header">
+            <span class="shop-title">🛒 Shopping List <span class="shop-count" id="shop-count">0</span></span>
+            <button class="shop-clear-done" id="btn-clear-done">Clear done</button>
+          </div>
+          <form class="shop-add-form" id="shop-add-form" autocomplete="off">
+            <input class="shop-name-input" id="shop-name" placeholder="Add item…" autocomplete="off">
+            <input class="shop-qty-input" id="shop-qty" placeholder="Qty">
+            <button type="submit" class="shop-add-btn">+</button>
+          </form>
+          <div class="shop-list" id="shop-list"></div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- WEEKLY OVERVIEW -->
+    <div class="week-overview-wrap">
+      <button class="week-toggle-btn" id="week-toggle-btn">
+        Weekly Overview <span class="week-toggle-caret">▾</span>
+      </button>
+      <div class="week-overview-grid" id="week-overview-grid"></div>
+    </div>
+
+  </div><!-- /.page-wrap -->
+
+  <script>
+  (function () {
+
+    var DAYS      = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
+    var DAY_SHORT = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
+    var MEALS     = ['breakfast','lunch','dinner'];
+    var MEAL_META = {
+      breakfast: { emoji: '☕', label: 'Breakfast', ph: 'What\'s for breakfast?' },
+      lunch:     { emoji: '🍽️', label: 'Lunch',     ph: 'What\'s for lunch?' },
+      dinner:    { emoji: '🌙', label: 'Dinner',    ph: 'What\'s for dinner?' }
+    };
+    var LS_KEY = 'personal_hub_meal_planner';
+
+    // ── State ────────────────────────────────────────────────────────────────
+    var today = (function () {
+      return ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'][new Date().getDay()];
+    })();
+
+    var state = { week: {}, shoppingList: [], currentDay: today };
+
+    DAYS.forEach(function (d) {
+      state.week[d] = {
+        breakfast: { meal: '', notes: '' },
+        lunch:     { meal: '', notes: '' },
+        dinner:    { meal: '', notes: '' }
+      };
+    });
+
+    function uid() { return Date.now().toString(36) + Math.random().toString(36).slice(2, 6); }
+
+    // ── Persistence ──────────────────────────────────────────────────────────
+    function load() {
+      try {
+        var raw = localStorage.getItem(LS_KEY);
+        if (!raw) return;
+        var saved = JSON.parse(raw);
+        if (saved.week) {
+          DAYS.forEach(function (d) {
+            if (!saved.week[d]) return;
+            MEALS.forEach(function (m) {
+              if (!saved.week[d][m]) return;
+              state.week[d][m].meal  = saved.week[d][m].meal  || '';
+              state.week[d][m].notes = saved.week[d][m].notes || '';
+            });
+          });
+        }
+        if (Array.isArray(saved.shoppingList)) state.shoppingList = saved.shoppingList;
+      } catch (e) {}
+    }
+
+    var _st;
+    function debounceSave() { clearTimeout(_st); _st = setTimeout(save, 350); }
+    function save() { localStorage.setItem(LS_KEY, JSON.stringify({ week: state.week, shoppingList: state.shoppingList })); }
+
+    // ── Escape ───────────────────────────────────────────────────────────────
+    function esc(s) {
+      return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    }
+    function trunc(s, n) { return s.length > n ? s.slice(0, n) + '…' : s; }
+
+    // ── Auto-resize textarea ─────────────────────────────────────────────────
+    function autoResize(el) {
+      el.style.height = 'auto';
+      el.style.height = el.scrollHeight + 'px';
+    }
+
+    // ── Render: day tabs ─────────────────────────────────────────────────────
+    function renderTabs() {
+      var html = DAYS.map(function (d, i) {
+        var cls = 'day-tab';
+        if (d === state.currentDay) cls += ' active';
+        if (d === today) cls += ' today-tab';
+        return '<button class="' + cls + '" data-day="' + d + '">' + DAY_SHORT[i] + '</button>';
+      }).join('');
+      document.getElementById('day-tabs').innerHTML = html;
+
+      document.querySelectorAll('.day-tab').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          if (this.dataset.day === state.currentDay) return;
+          var col = document.getElementById('meals-col');
+          col.classList.add('switching');
+          var newDay = this.dataset.day;
+          setTimeout(function () {
+            state.currentDay = newDay;
+            renderTabs();
+            renderMeals();
+            renderDaySummary();
+            col.classList.remove('switching');
+          }, 110);
+        });
+      });
+    }
+
+    // ── Render: meal cards ───────────────────────────────────────────────────
+    function renderMeals() {
+      var day = state.currentDay;
+      var html = MEALS.map(function (mk) {
+        var meta = MEAL_META[mk];
+        var data = state.week[day][mk];
+        var filled = data.meal.trim().length > 0;
+        return '<div class="meal-card">'
+          + '<div class="meal-header">'
+          +   '<span class="meal-emoji">' + meta.emoji + '</span>'
+          +   '<span class="meal-name">' + meta.label + '</span>'
+          +   '<span class="meal-filled-dot' + (filled ? ' visible' : '') + '" data-dot="' + mk + '"></span>'
+          + '</div>'
+          + '<div class="meal-body">'
+          +   '<textarea class="meal-textarea" data-meal="' + mk + '" placeholder="' + meta.ph + '" rows="3">' + esc(data.meal) + '</textarea>'
+          +   '<div class="meal-divider"></div>'
+          +   '<textarea class="meal-notes" data-notes="' + mk + '" placeholder="Notes, calories, prep time…" rows="1">' + esc(data.notes) + '</textarea>'
+          + '</div>'
+          + '</div>';
+      }).join('');
+
+      document.getElementById('meals-col').innerHTML = html;
+
+      document.querySelectorAll('.meal-textarea').forEach(function (ta) {
+        autoResize(ta);
+        ta.addEventListener('input', function () {
+          autoResize(this);
+          var mk = this.dataset.meal;
+          state.week[state.currentDay][mk].meal = this.value;
+          // Green dot
+          var dot = document.querySelector('[data-dot="' + mk + '"]');
+          if (dot) dot.classList.toggle('visible', this.value.trim().length > 0);
+          debounceSave();
+          renderDaySummary();
+          if (document.getElementById('week-overview-grid').classList.contains('open')) renderWeekOverview();
+        });
+      });
+
+      document.querySelectorAll('.meal-notes').forEach(function (ta) {
+        autoResize(ta);
+        ta.addEventListener('input', function () {
+          autoResize(this);
+          state.week[state.currentDay][this.dataset.notes].notes = this.value;
+          debounceSave();
+        });
+      });
+    }
+
+    // ── Render: day summary sidebar ──────────────────────────────────────────
+    function renderDaySummary() {
+      var day   = state.currentDay;
+      var isToday = day === today;
+      var rows = MEALS.map(function (mk) {
+        var meal = state.week[day][mk].meal.trim();
+        return '<div class="day-summary-row">'
+          + '<span class="dsrow-emoji">' + MEAL_META[mk].emoji + '</span>'
+          + (meal
+              ? '<span class="dsrow-meal">' + esc(trunc(meal, 42)) + '</span>'
+              : '<span class="dsrow-empty">—</span>')
+          + '</div>';
+      }).join('');
+
+      document.getElementById('day-summary-card').innerHTML =
+        '<div class="day-summary-header">'
+        + esc(day)
+        + (isToday ? '<span class="today-badge">Today</span>' : '')
+        + '</div>'
+        + '<div class="day-summary-body">' + rows + '</div>';
+    }
+
+    // ── Render: shopping list ────────────────────────────────────────────────
+    function renderShopList() {
+      var items   = state.shoppingList;
+      var pending = items.filter(function (i) { return !i.completed; }).length;
+      var countEl = document.getElementById('shop-count');
+      if (countEl) {
+        countEl.textContent = pending;
+        countEl.classList.toggle('done-all', items.length > 0 && pending === 0);
+      }
+
+      var list = document.getElementById('shop-list');
+      if (!list) return;
+
+      if (!items.length) {
+        list.innerHTML = '<div class="shop-empty">Your list is empty</div>';
+        return;
+      }
+
+      list.innerHTML = items.map(function (item) {
+        return '<div class="shop-item' + (item.completed ? ' done' : '') + '">'
+          + '<input type="checkbox" class="shop-cb" data-id="' + item.id + '"' + (item.completed ? ' checked' : '') + '>'
+          + '<div class="shop-item-text">'
+          +   '<span class="shop-item-name">' + esc(item.item) + '</span>'
+          +   (item.qty ? '<span class="shop-item-qty">' + esc(item.qty) + '</span>' : '')
+          + '</div>'
+          + '<button class="shop-remove-btn" data-id="' + item.id + '" title="Remove">×</button>'
+          + '</div>';
+      }).join('');
+
+      list.querySelectorAll('.shop-cb').forEach(function (cb) {
+        cb.addEventListener('change', function () {
+          var item = state.shoppingList.find(function (i) { return i.id === cb.dataset.id; });
+          if (item) { item.completed = cb.checked; save(); renderShopList(); }
+        });
+      });
+      list.querySelectorAll('.shop-remove-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          state.shoppingList = state.shoppingList.filter(function (i) { return i.id !== btn.dataset.id; });
+          save(); renderShopList();
+        });
+      });
+    }
+
+    // ── Render: weekly overview ──────────────────────────────────────────────
+    function renderWeekOverview() {
+      var grid = document.getElementById('week-overview-grid');
+      if (!grid) return;
+      grid.innerHTML = DAYS.map(function (d, i) {
+        var cls = 'week-day-col';
+        if (d === state.currentDay) cls += ' wov-active';
+        if (d === today) cls += ' wov-today';
+        var rows = MEALS.map(function (mk) {
+          var meal = state.week[d][mk].meal.trim();
+          return '<div class="wov-meal-row' + (meal ? ' wov-filled' : '') + '">'
+            + MEAL_META[mk].emoji + ' '
+            + (meal ? esc(trunc(meal, 14)) : '—')
+            + '</div>';
+        }).join('');
+        return '<div class="' + cls + '" data-day="' + d + '">'
+          + '<div class="week-col-head">' + DAY_SHORT[i] + '</div>'
+          + '<div class="week-col-body">' + rows + '</div>'
+          + '</div>';
+      }).join('');
+
+      grid.querySelectorAll('.week-day-col').forEach(function (col) {
+        col.addEventListener('click', function () {
+          var newDay = this.dataset.day;
+          if (newDay === state.currentDay) return;
+          var mealCol = document.getElementById('meals-col');
+          mealCol.classList.add('switching');
+          setTimeout(function () {
+            state.currentDay = newDay;
+            renderTabs();
+            renderMeals();
+            renderDaySummary();
+            renderWeekOverview();
+            mealCol.classList.remove('switching');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }, 110);
+        });
+      });
+    }
+
+    // ── Events ───────────────────────────────────────────────────────────────
+    document.getElementById('btn-clear-week').addEventListener('click', function () {
+      if (!confirm('Clear all meals for this week? This cannot be undone.')) return;
+      DAYS.forEach(function (d) {
+        MEALS.forEach(function (m) { state.week[d][m].meal = ''; state.week[d][m].notes = ''; });
+      });
+      save();
+      renderMeals();
+      renderDaySummary();
+      if (document.getElementById('week-overview-grid').classList.contains('open')) renderWeekOverview();
+    });
+
+    document.getElementById('shop-add-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var name = document.getElementById('shop-name').value.trim();
+      if (!name) { document.getElementById('shop-name').focus(); return; }
+      state.shoppingList.push({
+        id: uid(), item: name,
+        qty: document.getElementById('shop-qty').value.trim(),
+        completed: false
+      });
+      save();
+      renderShopList();
+      document.getElementById('shop-name').value = '';
+      document.getElementById('shop-qty').value  = '';
+      document.getElementById('shop-name').focus();
+    });
+
+    document.getElementById('btn-clear-done').addEventListener('click', function () {
+      state.shoppingList = state.shoppingList.filter(function (i) { return !i.completed; });
+      save(); renderShopList();
+    });
+
+    var weekOpen = false;
+    document.getElementById('week-toggle-btn').addEventListener('click', function () {
+      weekOpen = !weekOpen;
+      document.getElementById('week-overview-grid').classList.toggle('open', weekOpen);
+      this.classList.toggle('open', weekOpen);
+      if (weekOpen) renderWeekOverview();
+    });
+
+    // ── Nav dropdowns ────────────────────────────────────────────────────────
+    (function () {
+      document.querySelectorAll('.nav-drop-btn').forEach(function (btn) {
+        btn.addEventListener('click', function (e) {
+          e.stopPropagation();
+          var menu = btn.nextElementSibling;
+          var open = menu.style.display === 'flex';
+          document.querySelectorAll('.nav-drop-menu').forEach(function (m) { m.style.display = ''; });
+          if (!open) menu.style.display = 'flex';
+        });
+      });
+      document.addEventListener('click', function () {
+        document.querySelectorAll('.nav-drop-menu').forEach(function (m) { m.style.display = ''; });
+      });
+    })();
+
+    // ── Meta date ────────────────────────────────────────────────────────────
+    document.getElementById('js-date').textContent =
+      new Date().toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+
+    // ── Init ─────────────────────────────────────────────────────────────────
+    load();
+    renderTabs();
+    renderMeals();
+    renderDaySummary();
+    renderShopList();
+
+  })();
+  </script>
+
+  <script src="world-news-data.js"></script>
+  <script src="ticker.js"></script>
+</body>
+</html>
