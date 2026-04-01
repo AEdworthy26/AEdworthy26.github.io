@@ -1,9 +1,7 @@
 name: Daily Hub Update
 
 on:
-  schedule:
-    - cron: '0 5 * * *'  # 5am UTC = 6am BST (summer) / 5am GMT (winter)
-  workflow_dispatch:       # allows manual trigger from GitHub UI
+  workflow_dispatch:       # triggered by cron-job.org daily at 5am UTC (6am BST)
 
 jobs:
   update:
