@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reading List — Personal Hub</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink:    #0d0d0d;
+      --paper:  #f4f0e6;
+      --rule:   #1a1a1a;
+      --muted:  #555;
+      --light:  #888;
+      --blue:   #003399;
+
+      --dark-bg:      #0c0b09;
+      --dark-surface: #151310;
+      --dark-card:    #1c1915;
+      --dark-border:  rgba(210,200,180,0.09);
+      --dark-text:    #ede9df;
+      --dark-muted:   #7a766d;
+      --dark-dim:     #4a4640;
+      --gold:         #c8a348;
+      --gold-dim:     #7a6128;
+      --tomato:       #d44000;
+      --reading-green: #3a9e6e;
+    }
+
+    body {
+      background: var(--dark-bg);
+      color: var(--dark-text);
+      font-family: 'Source Serif 4', Georgia, serif;
+      min-height: 100vh;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── NEWS TICKER ── */
+    .ticker-wrap { background: #111; overflow: hidden; display: flex; align-items: stretch; height: 2.4rem; }
+    .ticker-label { background: #e8000d; color: #fff; font-family: 'Source Serif 4', serif; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; padding: 0 1.2rem; display: flex; align-items: center; white-space: nowrap; flex-shrink: 0; gap: 0.5rem; }
+    .ticker-label::before { content: ''; display: inline-block; width: 7px; height: 7px; background: #fff; border-radius: 50%; animation: pulse-dot 1.2s ease-in-out infinite; }
+    @keyframes pulse-dot { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.4; transform: scale(0.7); } }
+    .ticker-inner { overflow: hidden; flex: 1; display: flex; align-items: center; }
+    .ticker-track { display: flex; align-items: center; white-space: nowrap; will-change: transform; animation: ticker-scroll 40s linear infinite; }
+    .ticker-track:hover { animation-play-state: paused; cursor: default; }
+    .ticker-track a { color: #fff; font-family: 'Source Serif 4', serif; font-size: 0.78rem; font-weight: 600; padding: 0 2rem; text-decoration: none; transition: color 0.15s; }
+    .ticker-track a:hover { color: #e8000d; text-decoration: none; cursor: pointer; }
+    .ticker-track .ticker-sep { color: #e8000d; font-size: 1rem; font-weight: 700; flex-shrink: 0; line-height: 1; }
+    @keyframes ticker-scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+    /* ── HEADER / NAV ── */
+    .site-header { background: var(--paper); color: var(--ink); }
+    .meta-bar-inner {
+      max-width: 1200px; margin: 0 auto;
+      padding: 0.9rem 1.5rem 0;
+      display: flex; justify-content: space-between; align-items: center;
+      font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--muted);
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 0.4rem;
+    }
+    .masthead-wrap { max-width: 1200px; margin: 0 auto; padding: 0.4rem 1.5rem 0; text-align: center; }
+    .masthead { font-family: 'Playfair Display', Georgia, serif; font-weight: 900; font-size: clamp(2.4rem, 5vw, 4.2rem); line-height: 1; letter-spacing: -0.01em; color: var(--ink); }
+    .masthead-sub { font-size: 0.75rem; font-style: italic; color: var(--muted); margin: 0.2rem 0 0.3rem; }
+    .rule-double { border: none; border-top: 3px double var(--rule); max-width: 1200px; margin: 0 auto; }
+
+    .nav-ribbon { background: linear-gradient(90deg, #4b5563 0%, #1f2937 100%); }
+    .nav-ribbon nav { max-width: 1600px; margin: 0 auto; padding: 0 2rem; display: flex; align-items: center; justify-content: center; gap: 0.3rem; }
+    .nav-ribbon nav a { color: rgba(255,255,255,0.9); font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; padding: 0.5rem 0.95rem; border-radius: 5px; transition: background 0.15s; white-space: nowrap; }
+    .nav-ribbon nav a:hover { background: rgba(255,255,255,0.18); color: #fff; text-decoration: none; }
+    .nav-ribbon nav a.nav-home { color: #fff; font-weight: 700; margin-right: 0.4rem; padding-right: 1rem; border-right: 1px solid rgba(255,255,255,0.25); border-radius: 0; }
+    .nav-ribbon nav a.nav-active { background: rgba(255,255,255,0.18); color: #fff; }
+    .nav-ribbon nav .nav-spacer { flex: 1; height: 1px; background: rgba(255,255,255,0.25); margin: 0 0.5rem; }
+    .nav-dropdown { position: relative; display: flex; align-items: center; }
+    .nav-drop-btn { color: rgba(255,255,255,0.9); font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; padding: 0.5rem 0.95rem; border-radius: 5px; background: none; border: none; cursor: pointer; white-space: nowrap; display: flex; align-items: center; gap: 0.25rem; transition: background 0.15s; }
+    .nav-drop-btn.nav-active { background: rgba(255,255,255,0.18); color: #fff; }
+    .nav-caret { font-size: 0.55rem; opacity: 0.65; transition: transform 0.15s; line-height: 1; }
+    .nav-dropdown:hover .nav-caret { transform: rotate(180deg); }
+    .nav-dropdown:hover .nav-drop-menu { display: flex; }
+    .nav-drop-menu { position: absolute; top: 100%; left: 0; background: #1f2937; border-radius: 6px; min-width: 155px; display: none; flex-direction: column; z-index: 200; box-shadow: 0 6px 18px rgba(0,0,0,0.4); overflow: hidden; margin-top: 0; }
+    .nav-drop-menu a { color: rgba(255,255,255,0.85); font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 0.76rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; padding: 0.6rem 1.1rem; text-decoration: none; transition: background 0.12s; white-space: nowrap; border-radius: 0; display: block; }
+    .nav-drop-menu a:hover { background: rgba(255,255,255,0.15); color: #fff; }
+    .nav-divider { width: 1px; height: 1.1rem; background: rgba(255,255,255,0.35); margin: 0 0.6rem; flex-shrink: 0; align-self: center; }
+    .nav-drop-menu a + a { border-top: 1px solid rgba(255,255,255,0.07); }
+    .nav-drop-menu a.nav-active { background: rgba(255,255,255,0.15); color: #fff; }
+
+    @media (max-width: 800px) {
+      .nav-ribbon nav { flex-wrap: wrap; gap: 0; padding: 0.25rem 0.5rem; }
+      .nav-ribbon nav .nav-spacer { display: none; }
+      .nav-drop-menu { position: static; box-shadow: none; border-radius: 0; margin-top: 0; background: rgba(255,255,255,0.06); }
+      .nav-dropdown { flex-direction: column; align-items: flex-start; width: 100%; }
+      .nav-drop-menu { display: flex !important; }
+    }
+
+    /* ── PAGE HEADER ── */
+    .page-intro {
+      max-width: 1200px; margin: 0 auto;
+      padding: 3.5rem 2rem 2.8rem;
+      border-bottom: 1px solid var(--dark-border);
+      display: flex; justify-content: space-between; align-items: flex-end; gap: 2rem;
+    }
+    .page-eyebrow { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); display: block; margin-bottom: 0.7rem; }
+    .page-title { font-family: 'Playfair Display', serif; font-weight: 900; font-size: clamp(2.6rem, 5vw, 4rem); line-height: 1.05; letter-spacing: -0.02em; color: var(--dark-text); }
+    .page-title em { font-style: italic; color: var(--gold); }
+    .page-standfirst { margin-top: 0.9rem; font-size: 0.92rem; line-height: 1.7; color: var(--dark-muted); max-width: 480px; }
+    .page-intro-right { text-align: right; flex-shrink: 0; }
+    .page-date { font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--dark-dim); }
+    .stat-big { font-family: 'Playfair Display', serif; font-size: 3.5rem; font-weight: 900; line-height: 1; color: var(--dark-border); display: block; margin-top: 0.3rem; }
+
+    /* ── CONTROLS ── */
+    .controls-bar {
+      max-width: 1200px; margin: 0 auto;
+      padding: 1.6rem 2rem 0;
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.8rem;
+    }
+    .filter-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--dark-dim); flex-shrink: 0; }
+    .genre-filters { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .genre-btn {
+      font-family: system-ui, sans-serif;
+      font-size: 0.68rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+      padding: 0.28rem 0.7rem;
+      background: transparent;
+      border: 1px solid var(--dark-dim);
+      border-radius: 3px; color: var(--dark-muted);
+      cursor: pointer; transition: all 0.15s; white-space: nowrap;
+    }
+    .genre-btn:hover { border-color: var(--gold); color: var(--gold); }
+    .genre-btn.active { background: var(--gold); border-color: var(--gold); color: #0c0b09; }
+
+    .sort-btn {
+      margin-left: auto;
+      font-family: system-ui, sans-serif;
+      font-size: 0.68rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+      padding: 0.28rem 0.85rem;
+      background: transparent;
+      border: 1px solid var(--dark-dim);
+      border-radius: 3px; color: var(--dark-muted);
+      cursor: pointer; transition: all 0.15s;
+    }
+    .sort-btn:hover, .sort-btn.active { border-color: rgba(255,255,255,0.3); color: var(--dark-text); }
+
+    /* ── SECTION HEADINGS ── */
+    .section-wrap { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+    .section-hd {
+      display: flex; align-items: baseline; gap: 1rem;
+      padding: 2.4rem 0 1.2rem;
+      border-bottom: 1px solid var(--dark-border);
+      margin-bottom: 1.4rem;
+    }
+    .section-hd h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem; font-weight: 900; letter-spacing: -0.01em;
+      color: var(--dark-text);
+    }
+    .section-hd .section-count {
+      font-size: 0.62rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--dark-dim);
+    }
+    .section-hd .section-accent { margin-left: auto; width: 3rem; height: 2px; border-radius: 2px; }
+    .accent-reading { background: var(--reading-green); }
+    .accent-completed { background: var(--gold); }
+    .accent-toread { background: var(--dark-dim); }
+
+    /* ── CURRENTLY READING ── */
+    .reading-grid {
+      display: flex; flex-wrap: wrap; gap: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    .reading-card {
+      display: flex; gap: 1.2rem;
+      background: var(--dark-card);
+      border: 1px solid var(--dark-border);
+      border-top: 2px solid rgba(58,158,110,0.3);
+      border-radius: 12px;
+      padding: 1.4rem;
+      flex: 1 1 320px; max-width: 500px;
+      transition: transform 0.2s, box-shadow 0.2s;
+      opacity: 0;
+    }
+    .reading-card.is-visible {
+      animation: fadeSlideUp 0.7s cubic-bezier(0.22,1,0.36,1) forwards;
+    }
+    .reading-card:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(0,0,0,0.35); }
+    .reading-cover { flex-shrink: 0; }
+    .reading-cover img, .reading-cover .cover-placeholder {
+      width: 72px; height: 104px; border-radius: 4px; object-fit: cover; display: block;
+    }
+    .cover-placeholder {
+      background: linear-gradient(145deg, #1f1c17, #2a2520);
+      display: flex; align-items: center; justify-content: center;
+      border: 1px solid var(--dark-border);
+    }
+    .cover-placeholder-text {
+      font-family: 'Playfair Display', serif;
+      font-size: 0.55rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--dark-dim); text-align: center; padding: 0.3rem;
+    }
+    .reading-info { flex: 1; display: flex; flex-direction: column; gap: 0.4rem; }
+    .reading-status-tag {
+      font-size: 0.58rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--reading-green); display: flex; align-items: center; gap: 0.4rem;
+    }
+    .reading-status-tag::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--reading-green); flex-shrink: 0; animation: pulse-dot 1.8s ease-in-out infinite; }
+    .reading-title { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700; line-height: 1.25; color: var(--dark-text); }
+    .reading-author { font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--dark-muted); }
+    .reading-genre { margin-top: auto; }
+    .genre-tag { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.18rem 0.5rem; background: rgba(255,255,255,0.05); border: 1px solid var(--dark-border); border-radius: 2px; color: var(--dark-dim); }
+
+    /* ── COMPLETED GRID ── */
+    .books-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    .book-card {
+      background: var(--dark-card);
+      border: 1px solid var(--dark-border);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.2s, box-shadow 0.2s;
+      cursor: default;
+      opacity: 0;
+    }
+    .book-card.is-visible {
+      animation: fadeSlideUp 0.7s cubic-bezier(0.22,1,0.36,1) forwards;
+    }
+    .book-card:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(0,0,0,0.4); }
+    .book-cover-wrap { position: relative; }
+    .book-cover-wrap img, .book-cover-bg {
+      width: 100%; aspect-ratio: 2/3; object-fit: cover; display: block;
+    }
+    .book-cover-bg {
+      background: linear-gradient(160deg, #1c1915, #262018);
+      display: flex; align-items: center; justify-content: center; padding: 0.8rem;
+    }
+    .book-cover-bg-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 0.72rem; font-weight: 700; text-align: center; line-height: 1.35;
+      color: rgba(237,233,223,0.5);
+    }
+    .book-rating-badge {
+      position: absolute; bottom: 0.4rem; right: 0.4rem;
+      background: rgba(12,11,9,0.88);
+      border: 1px solid rgba(200,163,72,0.35);
+      border-radius: 4px;
+      padding: 0.15rem 0.4rem;
+      font-family: 'Playfair Display', serif;
+      font-size: 0.8rem; font-weight: 900;
+      color: var(--gold); line-height: 1.3;
+    }
+    .book-rating-badge.top-rated { border-color: rgba(200,163,72,0.7); box-shadow: 0 0 8px rgba(200,163,72,0.2); }
+    .book-body { padding: 0.7rem 0.7rem 0.8rem; }
+    .book-title { font-family: 'Playfair Display', serif; font-size: 0.82rem; font-weight: 700; line-height: 1.3; color: var(--dark-text); margin-bottom: 0.25rem; }
+    .book-author { font-size: 0.65rem; letter-spacing: 0.07em; text-transform: uppercase; color: var(--dark-muted); }
+    .book-genre-tag { display: inline-block; margin-top: 0.4rem; font-size: 0.56rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.14rem 0.4rem; background: rgba(255,255,255,0.04); border: 1px solid var(--dark-border); border-radius: 2px; color: var(--dark-dim); }
+
+    /* Star row */
+    .stars-wrap { display: flex; align-items: center; gap: 0.3rem; margin-top: 0.35rem; }
+    .stars-visual { position: relative; display: inline-block; font-size: 0.72rem; letter-spacing: 2px; line-height: 1; user-select: none; }
+    .stars-bg { color: var(--dark-dim); }
+    .stars-fill { position: absolute; top: 0; left: 0; overflow: hidden; white-space: nowrap; color: var(--gold); width: 0%; transition: width 0.9s cubic-bezier(0.22,1,0.36,1) 0.4s; }
+    .stars-score { font-size: 0.62rem; color: var(--dark-muted); font-style: italic; }
+
+    /* ── TO READ LIST ── */
+    .toread-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 0.6rem;
+      margin-bottom: 0.5rem;
+    }
+    .toread-card {
+      display: flex; align-items: center; gap: 0.9rem;
+      background: var(--dark-card);
+      border: 1px solid var(--dark-border);
+      border-radius: 8px;
+      padding: 0.85rem 1rem;
+      transition: background 0.15s;
+      opacity: 0;
+    }
+    .toread-card.is-visible {
+      animation: fadeSlideUp 0.6s cubic-bezier(0.22,1,0.36,1) forwards;
+    }
+    .toread-card:hover { background: rgba(255,255,255,0.04); }
+    .toread-thumb {
+      flex-shrink: 0;
+      width: 38px; height: 54px;
+      border-radius: 3px; object-fit: cover; display: block;
+    }
+    .toread-thumb-bg {
+      width: 38px; height: 54px; flex-shrink: 0;
+      background: linear-gradient(145deg, #1f1c17, #2a2520);
+      border: 1px solid var(--dark-border);
+      border-radius: 3px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .toread-thumb-icon { font-size: 1rem; opacity: 0.3; }
+    .toread-info { flex: 1; min-width: 0; }
+    .toread-title { font-family: 'Playfair Display', serif; font-size: 0.85rem; font-weight: 700; line-height: 1.25; color: var(--dark-text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .toread-author { font-size: 0.65rem; letter-spacing: 0.07em; text-transform: uppercase; color: var(--dark-muted); margin-top: 0.15rem; }
+    .toread-genre-tag { display: inline-block; margin-top: 0.3rem; font-size: 0.56rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.12rem 0.38rem; background: rgba(255,255,255,0.04); border: 1px solid var(--dark-border); border-radius: 2px; color: var(--dark-dim); }
+
+    /* ── FOOTER ── */
+    .site-footer { text-align: center; font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--dark-dim); border-top: 1px solid var(--dark-border); padding: 1.5rem 2rem; margin-top: 3rem; }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeSlideUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes introReveal {
+      from { opacity: 0; transform: translateY(14px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .page-eyebrow    { animation: introReveal 0.65s cubic-bezier(0.22,1,0.36,1) 0.08s both; }
+    .page-title      { animation: introReveal 0.75s cubic-bezier(0.22,1,0.36,1) 0.22s both; }
+    .page-standfirst { animation: introReveal 0.75s cubic-bezier(0.22,1,0.36,1) 0.36s both; }
+    .page-intro-right { animation: introReveal 0.65s cubic-bezier(0.22,1,0.36,1) 0.26s both; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .reading-card, .book-card, .toread-card,
+      .page-eyebrow, .page-title, .page-standfirst, .page-intro-right {
+        animation: none !important; opacity: 1 !important; transform: none !important;
+      }
+      .stars-fill { transition: none !important; }
+    }
+
+    @media (max-width: 900px) {
+      .page-intro { flex-direction: column; align-items: flex-start; padding: 2.5rem 1.5rem 2rem; }
+      .page-intro-right { text-align: left; }
+      .books-grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); }
+    }
+    @media (max-width: 600px) {
+      .section-wrap { padding: 0 1rem; }
+      .controls-bar { padding: 1.2rem 1rem 0; }
+      .books-grid { grid-template-columns: repeat(3, 1fr); gap: 0.6rem; }
+      .toread-grid { grid-template-columns: 1fr; }
+      .reading-grid { flex-direction: column; }
+      .reading-card { max-width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── NEWS TICKER ── -->
+  <div class="ticker-wrap">
+    <div class="ticker-label">Breaking News</div>
+    <div class="ticker-inner">
+      <div class="ticker-track" id="js-ticker">
+        <span style="color:rgba(255,255,255,0.5); font-size:0.78rem; padding:0 2rem; font-family:'Source Serif 4',serif;">Loading headlines&hellip;</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── HEADER ── -->
+  <div class="site-header">
+    <div class="meta-bar-inner">
+      <span id="js-date"></span>
+      <span>Personal Edition &nbsp;&bull;&nbsp; Est. 2026</span>
+    </div>
+    <div class="masthead-wrap">
+      <div class="masthead">Personal Hub</div>
+      <div class="masthead-sub">Alfie Edworthy</div>
+    </div>
+    <hr class="rule-double">
+  </div>
+
+  <!-- ── NAV RIBBON ── -->
+  <div class="nav-ribbon">
+    <nav>
+      <a href="personal_hub.html" class="nav-home">&#8962; Home</a>
+      <a href="rics-study.html">RICS Study</a>
+      <div class="nav-dropdown">
+        <button class="nav-drop-btn">News <span class="nav-caret">&#9662;</span></button>
+        <div class="nav-drop-menu">
+          <a href="world-news.html">World Affairs</a>
+          <a href="uk-politics-news.html">UK Politics</a>
+          <a href="us-politics-news.html">US Politics</a>
+          <a href="financial-news.html">Financial</a>
+          <a href="tech-news.html">Technology</a>
+        </div>
+      </div>
+      <a href="curiosity.html">Curiosity Corner</a>
+      <a href="philosophy.html">Philosophy Corner</a>
+      <div class="nav-dropdown">
+        <button class="nav-drop-btn nav-active">Recommendations <span class="nav-caret">&#9662;</span></button>
+        <div class="nav-drop-menu">
+          <a href="reads.html">Books</a>
+          <a href="films.html">Films</a>
+          <a href="books.html" class="nav-active">Reading List</a>
+        </div>
+      </div>
+      <a href="recipes.html">Recipes</a>
+      <a href="exercise.html">Exercise</a>
+      <div class="nav-divider"></div>
+      <div class="nav-dropdown">
+        <button class="nav-drop-btn">Organisation <span class="nav-caret">&#9662;</span></button>
+        <div class="nav-drop-menu">
+          <a href="todo-lists.html">To-Do Lists</a>
+          <a href="weekly-checkin.html">Weekly Check-In</a>
+          <a href="monthly-goals.html">Monthly Goals</a>
+          <a href="achievements.html">Achievements</a>
+          <a href="wishlist.html">Wishlist</a>
+        </div>
+      </div>
+      <a href="calendar.html">Calendar</a>
+    </nav>
+  </div>
+
+  <!-- ── PAGE INTRO ── -->
+  <div class="page-intro">
+    <div>
+      <span class="page-eyebrow">Personal Library</span>
+      <h1 class="page-title">My <em>Books</em></h1>
+      <p class="page-standfirst">A personal reading tracker — books completed, in progress, and on the list.</p>
+    </div>
+    <div class="page-intro-right">
+      <div class="page-date" id="js-date-2"></div>
+      <span class="stat-big" id="js-read-count"></span>
+    </div>
+  </div>
+
+  <!-- ── GENRE FILTER + SORT ── -->
+  <div class="controls-bar">
+    <span class="filter-label">Filter</span>
+    <div class="genre-filters" id="js-genre-filters"></div>
+    <button class="sort-btn" id="js-sort-btn" title="Sort completed books by rating">Sort by Rating</button>
+  </div>
+
+  <!-- ── CURRENTLY READING ── -->
+  <div class="section-wrap" id="section-reading">
+    <div class="section-hd">
+      <h2>Currently Reading</h2>
+      <span class="section-count" id="reading-count"></span>
+      <span class="section-accent accent-reading"></span>
+    </div>
+    <div class="reading-grid" id="reading-grid"></div>
+  </div>
+
+  <!-- ── COMPLETED ── -->
+  <div class="section-wrap" id="section-completed">
+    <div class="section-hd">
+      <h2>Completed</h2>
+      <span class="section-count" id="completed-count"></span>
+      <span class="section-accent accent-completed"></span>
+    </div>
+    <div class="books-grid" id="completed-grid"></div>
+  </div>
+
+  <!-- ── TO READ ── -->
+  <div class="section-wrap" id="section-toread">
+    <div class="section-hd">
+      <h2>To Read</h2>
+      <span class="section-count" id="toread-count"></span>
+      <span class="section-accent accent-toread"></span>
+    </div>
+    <div class="toread-grid" id="toread-grid"></div>
+  </div>
+
+  <footer class="site-footer">
+    Personal Hub &mdash; Alfie Edworthy &mdash; Private &amp; Confidential
+  </footer>
+
+  <script>
+  // ── Book data ──────────────────────────────────────────────────
+  // Cover: relative paths like ../filename.jpg → Amazon CDN
+  function fixCover(url) {
+    if (!url) return null;
+    if (url.startsWith('http')) return url;
+    var file = url.replace(/^\.\.\//, '').replace(/^Book%20Reading%20List\//, '');
+    return 'https://m.media-amazon.com/images/I/' + file;
+  }
+
+  var BOOKS = [
+    // ── Currently Reading ──
+    { title: 'The Art of Seduction', author: 'Robert Greene', status: 'Reading', genre: 'Psychology', cover: '../31dNVIuxgzL._SY445_SX342_ControlCacheEqualizer_.jpg' },
+    { title: 'Hotel Avocado', author: 'Bob Mortimer', status: 'Reading', genre: 'Fiction', cover: '../71Nlp-Cfw0L._SL1500_.jpg' },
+    { title: 'The Art of Explanation', author: 'Ros Atkins', status: 'Reading', genre: 'Skills', cover: '../71EOHgk33eL._AC_UY436_QL65_.jpg' },
+
+    // ── Completed ──
+    { title: 'A River in Darkness', author: 'Masaji Ishikawa', status: 'Read', genre: 'History', rating: 10, cover: '../61QoBRT9i8L._SY522_.jpg' },
+    { title: 'Laws of Human Nature', author: 'Robert Greene', status: 'Read', genre: 'Psychology', rating: 10, cover: '../71fxDSvryOL._SY522_.jpg' },
+    { title: 'A Waiter in Paris', author: 'Edward Chisholm', status: 'Read', genre: 'Culture', rating: 9.5, cover: '../71oUdyEEQOL._AC_UY436_QL65_.jpg' },
+    { title: 'Four Thousand Weeks', author: 'Oliver Burkeman', status: 'Read', genre: 'Productivity', rating: 9, cover: '../81QYEb6YnVL._SL1500_.jpg' },
+    { title: 'River of Doubt', author: 'Candice Millard', status: 'Read', genre: 'Adventure', rating: 9, cover: '../A1JLYYr5nXL._SL1500_.jpg' },
+    { title: 'Hillbilly Elegy', author: 'JD Vance', status: 'Read', genre: 'Social and Political', rating: 9, cover: '../81gF17TRrPL._SL1500_.jpg' },
+    { title: 'Politics on the Edge', author: 'Rory Stewart', status: 'Read', genre: 'Social and Political', rating: 9, cover: '../81QKdujzWhL._SY522_.jpg' },
+    { title: 'Flow', author: 'Mihaly Csikszentmihalyi', status: 'Read', genre: 'Psychology', rating: 8.5, cover: '../41wBBqe7NnL.jpg' },
+    { title: 'Barbarians at the Gate', author: 'Bryan Burrough & John Helyar', status: 'Read', genre: 'Business', rating: 8.5, cover: '../41eByN-LIiL.jpg' },
+    { title: 'Happy', author: 'Derren Brown', status: 'Read', genre: 'Philosophy', rating: 8.5, cover: '../71T9cSOX9lL._SY522_.jpg' },
+    { title: 'Humankind: A Hopeful History', author: 'Rutger Bregman', status: 'Read', genre: 'History', rating: 8, cover: '../714cjX5RL._SL1500_.jpg' },
+    { title: 'Out of the Ordinary', author: 'Jon Ronson', status: 'Read', genre: 'Non-Fiction', rating: 8, cover: '../61q7S7w1ajL._SL1500_.jpg' },
+    { title: 'Endurance', author: 'Alfred Lansing', status: 'Read', genre: 'Adventure', rating: 8, cover: '../81QZZrxqMML._SL1500_.jpg' },
+    { title: 'China in Ten Words', author: 'Yu Hua', status: 'Read', genre: 'Social and Political', rating: 8, cover: '../71Bqi2SG0RL._SL1500_.jpg' },
+    { title: 'Spoon Fed', author: 'Tim Spector', status: 'Read', genre: 'Nutrition', rating: 8, cover: '../71lq5uzQdNL._SY522_.jpg' },
+    { title: 'HHhH', author: 'Laurent Binet', status: 'Read', genre: 'War', rating: 8, cover: '../91SFxEN2AqL._SY522_.jpg' },
+    { title: 'The Girl with the Dragon Tattoo', author: 'Stieg Larsson', status: 'Read', genre: 'Fiction', rating: 8, cover: '../81YW99XIpJL._SY522_.jpg' },
+    { title: 'Sapiens', author: 'Yuval Noah Harari', status: 'Read', genre: 'History', rating: 7.5, cover: 'https://m.media-amazon.com/images/I/713jIoMO3UL._AC_UF894,1000_QL80_.jpg' },
+    { title: 'Down and Out in Paris and London', author: 'George Orwell', status: 'Read', genre: 'Culture', rating: 7.5, cover: '../A1DQ3m7IMsL._AC_UY436_QL65_.jpg' },
+    { title: 'The Psychology of Money', author: 'Morgan Housel', status: 'Read', genre: 'Economics and Finance', rating: 7.5, cover: '../81wZXiu4OiL._AC_UY436_QL65_.jpg' },
+    { title: 'The Silent Patient', author: 'Alex Michaelidas', status: 'Read', genre: 'Fiction', rating: 7.5, cover: '../81y9uCHoxrL._SL1500_.jpg' },
+    { title: 'The Righteous Mind', author: 'Jonathan Haidt', status: 'Read', genre: 'Psychology', rating: 7.5, cover: '../71K1WY2mCwL._SY522_.jpg' },
+    { title: 'Salmon Fishing in the Yemen', author: 'Paul Torday', status: 'Read', genre: 'Fiction', rating: 7.5, cover: '../61F58RQA8QL._SY522_.jpg' },
+    { title: 'The Four Agreements', author: 'Don Miguel Ruiz', status: 'Read', genre: 'Philosophy', rating: 7.5, cover: '../913A1rl-gL._AC_UY436_QL65_.jpg' },
+    { title: 'Catcher in the Rye', author: 'J. D. Salinger', status: 'Read', genre: 'Fiction', rating: 7.5, cover: '../31TtUV3TGYL._SY445_SX342_.jpg' },
+    { title: 'Outliers', author: 'Malcolm Gladwell', status: 'Read', genre: 'Non-Fiction', rating: 7.5, cover: '../71hqFB1jJL._AC_UY218_.jpg' },
+    { title: 'Range', author: 'David Epstein', status: 'Read', genre: 'Skills', rating: 7.5, cover: null },
+    { title: 'The Black Swan', author: 'Nassim Nicholas Taleb', status: 'Read', genre: 'Psychology', rating: 7, cover: '../81IebQqqWtL._SL1500_.jpg' },
+    { title: 'The Men Who Stare at Goats', author: 'Jon Ronson', status: 'Read', genre: 'Non-Fiction', rating: 7, cover: '../61IJXaKcF-L._AC_UY436_QL65_.jpg' },
+    { title: 'Command and Control', author: 'Eric Schlosser', status: 'Read', genre: 'War', rating: 7, cover: '../A1bXh1tSTDL._SY522_.jpg' },
+    { title: 'The Prince', author: 'Niccolo Machiavelli', status: 'Read', genre: 'War', rating: 7, cover: '../51KV9QHeUBL._SL1500_.jpg' },
+    { title: 'The Price of Football', author: 'Kieran Maguire', status: 'Read', genre: 'Sport', rating: 7, cover: '../41ZepL-h4HL._SY445_SX342_ControlCacheEqualizer_.jpg' },
+    { title: 'Conquerors', author: 'Roger Crowley', status: 'Read', genre: 'History', rating: 7, cover: '../810lwo0wdiL._SY522_.jpg' },
+    { title: 'The Long Shoe', author: 'Bob Mortimer', status: 'Read', genre: 'Fiction', rating: 7, cover: '../61Y8egjgeyL._SY522_.jpg' },
+    { title: 'The Satsuma Complex', author: 'Bob Mortimer', status: 'Read', genre: 'Fiction', rating: 7, cover: '../61TO1FmPJL._SL1500_.jpg' },
+    { title: 'The Shortest History of the Soviet Union', author: 'Sheila Fitzpatrick', status: 'Read', genre: 'History', rating: 6.5, cover: '../41PkX0NE8ML._SY445_SX342_PQ38_.jpg' },
+    { title: 'David and Goliath', author: 'Malcolm Gladwell', status: 'Read', genre: 'Non-Fiction', rating: 6.5, cover: '../81lJEIg-bL._SL1500_.jpg' },
+    { title: 'Courage is Calling', author: 'Ryan Holiday', status: 'Read', genre: 'Philosophy', rating: 6.5, cover: '../51ZkdZd-XXL._SY180_.jpg' },
+    { title: 'The Naked Trader', author: 'Robbie Burns', status: 'Read', genre: 'Economics and Finance', rating: 6.5, cover: '../71nrezr5DRL._SY522_.jpg' },
+    { title: 'His Bloody Project', author: 'Graeme Macrae Burnet', status: 'Read', genre: 'Fiction', rating: 6, cover: '../81o3WkpM9L._AC_UY436_QL65_.jpg' },
+    { title: 'Who Owns England?', author: 'Guy Shrubsole', status: 'Read', genre: 'Social and Political', rating: 6, cover: '../71ZJDh8tu3L._AC_UY436_QL65_.jpg' },
+    { title: 'A Line in the Sand', author: 'James Barr', status: 'Read', genre: 'Social and Political', rating: 6, cover: '../713I93t248L._AC_UY436_QL65_.jpg' },
+    { title: 'Before & Laughter', author: 'Jimmy Carr', status: 'Read', genre: 'Non-Fiction', rating: 6, cover: '../81RmrEYMztL._SY522_.jpg' },
+    { title: 'Zero to One', author: 'Peter Thiel', status: 'Read', genre: 'Business', rating: 5, cover: '../71uAI28kJuL._SL1500_.jpg' },
+    { title: 'Atomic Habits', author: 'James Clear', status: 'Read', genre: 'Productivity', rating: 5, cover: '../81F90H7hnML._SL1500_.jpg' },
+    { title: 'How They Broke Britain', author: "James O'Brien", status: 'Read', genre: 'Social and Political', rating: 5, cover: '../81VElVVdgoL._AC_UY436_QL65_.jpg' },
+    { title: 'What They Don\'t Teach You at Harvard Business School', author: 'Mark H. McCormack', status: 'Read', genre: 'Business', rating: 5, cover: '../715l8Q1cV5L._SY522_.jpg' },
+    { title: 'Unruly', author: 'David Mitchell', status: 'Read', genre: 'History', rating: 5, cover: '../71p9ZQMtKqL._SL1500_.jpg' },
+    { title: 'Bounce', author: 'Matthew Syed', status: 'Read', genre: 'Sport', rating: 5.5, cover: '../71oikIylh-L._AC_UY436_QL65_.jpg' },
+    { title: 'Social Chemistry', author: 'Marissa King', status: 'Read', genre: 'Psychology', rating: 4.5, cover: '../71R4Jt1JCL._AC_UY436_QL65_.jpg' },
+    { title: 'The Subtle Art of Not Giving a Fuck', author: 'Mark Manson', status: 'Read', genre: 'Non-Fiction', rating: 4.5, cover: '../719VxgGXYnL._SY522_.jpg' },
+    { title: '12 Rules for Life', author: 'Jordan B. Peterson', status: 'Read', genre: 'Psychology', rating: 4, cover: 'https://m.media-amazon.com/images/P/0345816021.01._SCLZZZZZZZ_SX500_.jpg' },
+    { title: 'Lowborn', author: 'Kerry Hudson', status: 'Read', genre: 'Social and Political', rating: 4, cover: '../510SzH31keL._SY445_SX342_PQ38_.jpg' },
+    { title: 'Mindset', author: 'Carol S. Dweck', status: 'Read', genre: 'Psychology', rating: 3, cover: '../61y1U-lPl5L._AC_UY436_QL65_.jpg' },
+    { title: 'Discipline is Destiny', author: 'Ryan Holiday', status: 'Read', genre: 'Philosophy', rating: 3.5, cover: '../81i4JY0GL._SY522_.jpg' },
+    { title: 'The Fear Bubble', author: 'Ant Middleton', status: 'Read', genre: 'Non-Fiction', rating: 1.5, cover: '../813zV9f4WL._SY522_.jpg' },
+
+    // ── To Read ──
+    { title: 'Mother of God', author: 'Paul Rosolie', status: 'Want to read', genre: 'Adventure', cover: '../71TfsPU-SZL._SL1500_.jpg' },
+    { title: 'Ordinary Men', author: 'Christopher Browning', status: 'Want to read', genre: 'War', cover: '../51vA9SRHOlL._AC_UY436_QL65_.jpg' },
+    { title: 'Empireland', author: 'Sathnam Sanghera', status: 'Want to read', genre: 'History', cover: '../71EdTOTBHgL._AC_UY436_QL65_.jpg' },
+    { title: 'Hidden Hand', author: 'Clive Hamilton', status: 'Want to read', genre: 'Social and Political', cover: '../81eeyTdHJS._AC_UY436_QL65_.jpg' },
+    { title: 'Why Nations Fail', author: 'Daron Acemoglu', status: 'Want to read', genre: 'Social and Political', cover: '../81aAoRfipL._AC_UY436_QL65_.jpg' },
+    { title: 'The Road to Serfdom', author: 'Friedrich A. Hayek', status: 'Want to read', genre: 'Social and Political', cover: '../61sHNptCiGL._SL1500_.jpg' },
+    { title: 'Doughnut Economics', author: 'Kate Raworth', status: 'Want to read', genre: 'Economics and Finance', cover: '../91IFJEoqmlL._SL1500_.jpg' },
+    { title: '1984', author: 'George Orwell', status: 'Want to read', genre: 'Fiction', cover: '../61xGLpWLIKL._SY522_.jpg' },
+    { title: 'Surrounded by Idiots', author: 'Thomas Erikson', status: 'Want to read', genre: 'Psychology', cover: '../61tJjRIfbUL._SL1500_.jpg' },
+    { title: 'Radical Candor', author: 'Kim Scott', status: 'Want to read', genre: 'Psychology', cover: '../71FrvopuWgL._SY522_.jpg' },
+    { title: 'Power', author: 'Robert Greene', status: 'Want to read', genre: 'Psychology', cover: '../61J3Uu4jOLL._AC_UY436_QL65_.jpg' },
+    { title: 'At the Existentialist Café', author: 'Sarah Bakewell', status: 'Want to read', genre: 'Philosophy', cover: '../81ZNWSAiZUL._SL1500_.jpg' },
+    { title: 'Nexus', author: 'Yuval Noah Harari', status: 'Want to read', genre: 'Non-Fiction', cover: '../71ogmSoMfML._SL1500_.jpg' },
+    { title: 'The Great Gatsby', author: 'F. Scott Fitzgerald', status: 'Want to read', genre: 'Fiction', cover: '../91yg5rniqwL._AC_UY436_QL65_.jpg' },
+    { title: 'Empire of Pain', author: 'Patrick Radden Keefe', status: 'Want to read', genre: 'Non-Fiction', cover: '../71TunepkRWL._SY522_.jpg' },
+    { title: 'The Splendid and the Vile', author: 'Erik Larson', status: 'Want to read', genre: 'War', cover: '../91Sxioq78qL._SY522_.jpg' },
+    { title: 'Killing Thatcher', author: 'Rory Carroll', status: 'Want to read', genre: 'Social and Political', cover: '../515bpKeKQL._SY445_SX342_ControlCacheEqualizer_.jpg' },
+  ];
+
+  // Fix cover URLs
+  BOOKS.forEach(function(b) { b.cover = fixCover(b.cover); });
+
+  // ── State ──────────────────────────────────────────────────────
+  var activeGenre  = 'All';
+  var sortByRating = false;
+
+  // ── Helpers ───────────────────────────────────────────────────
+  function escHtml(s) {
+    return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  function starsHTML(rating) {
+    var pct = (rating / 10) * 100;
+    return '<div class="stars-wrap">'
+      + '<span class="stars-visual">'
+      + '<span class="stars-bg">★★★★★</span>'
+      + '<span class="stars-fill" data-pct="' + pct + '">★★★★★</span>'
+      + '</span>'
+      + '<span class="stars-score">' + rating + '/10</span>'
+      + '</div>';
+  }
+
+  function coverHTML(book, width, height, className) {
+    var w = width || 160; var h = height || 240;
+    if (book.cover) {
+      return '<img src="' + escHtml(book.cover) + '" alt="" loading="lazy"'
+        + (className ? ' class="' + className + '"' : '')
+        + ' style="width:' + w + 'px;height:' + h + 'px;object-fit:cover;border-radius:4px;display:block;"'
+        + ' onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'">'
+        + '<div style="display:none;width:' + w + 'px;height:' + h + 'px;background:linear-gradient(145deg,#1f1c17,#2a2520);border:1px solid rgba(210,200,180,0.09);border-radius:4px;align-items:center;justify-content:center;padding:0.5rem;text-align:center;">'
+        + '<span style="font-family:\'Playfair Display\',serif;font-size:0.6rem;color:rgba(237,233,223,0.35);font-weight:700;line-height:1.3;">' + escHtml(book.title) + '</span>'
+        + '</div>';
+    }
+    return '<div style="width:' + w + 'px;height:' + h + 'px;background:linear-gradient(145deg,#1f1c17,#2a2520);border:1px solid rgba(210,200,180,0.09);border-radius:4px;display:flex;align-items:center;justify-content:center;padding:0.5rem;text-align:center;">'
+      + '<span style="font-family:\'Playfair Display\',serif;font-size:0.6rem;color:rgba(237,233,223,0.35);font-weight:700;line-height:1.3;">' + escHtml(book.title) + '</span>'
+      + '</div>';
+  }
+
+  // ── Render ────────────────────────────────────────────────────
+  function filtered(list) {
+    if (activeGenre === 'All') return list;
+    return list.filter(function(b) { return b.genre === activeGenre; });
+  }
+
+  function renderAll() {
+    var reading   = filtered(BOOKS.filter(function(b) { return b.status === 'Reading'; }));
+    var completed = filtered(BOOKS.filter(function(b) { return b.status === 'Read'; }));
+    var toread    = filtered(BOOKS.filter(function(b) { return b.status === 'Want to read'; }));
+
+    if (sortByRating) {
+      completed = completed.slice().sort(function(a, b) { return (b.rating || 0) - (a.rating || 0); });
+    }
+
+    // Stats
+    var totalRead = BOOKS.filter(function(b) { return b.status === 'Read'; }).length;
+    document.getElementById('js-read-count').textContent = totalRead + ' read';
+
+    // Counts
+    document.getElementById('reading-count').textContent = reading.length + ' book' + (reading.length !== 1 ? 's' : '');
+    document.getElementById('completed-count').textContent = completed.length + ' book' + (completed.length !== 1 ? 's' : '');
+    document.getElementById('toread-count').textContent = toread.length + ' book' + (toread.length !== 1 ? 's' : '');
+
+    // Show/hide sections
+    document.getElementById('section-reading').style.display = reading.length ? '' : 'none';
+    document.getElementById('section-completed').style.display = completed.length ? '' : 'none';
+    document.getElementById('section-toread').style.display = toread.length ? '' : 'none';
+
+    // ── Currently Reading ──
+    var rg = document.getElementById('reading-grid');
+    rg.innerHTML = reading.map(function(b) {
+      return '<div class="reading-card">'
+        + '<div class="reading-cover">' + coverHTML(b, 72, 104, '') + '</div>'
+        + '<div class="reading-info">'
+        + '<span class="reading-status-tag">Reading Now</span>'
+        + '<div class="reading-title">' + escHtml(b.title) + '</div>'
+        + '<div class="reading-author">' + escHtml(b.author) + '</div>'
+        + '<div class="reading-genre"><span class="genre-tag">' + escHtml(b.genre) + '</span></div>'
+        + '</div></div>';
+    }).join('');
+
+    // ── Completed ──
+    var cg = document.getElementById('completed-grid');
+    cg.innerHTML = completed.map(function(b) {
+      var isTop = b.rating && b.rating >= 9;
+      return '<div class="book-card">'
+        + '<div class="book-cover-wrap">'
+        + coverHTML(b, null, null, '')
+        + (b.rating != null ? '<span class="book-rating-badge' + (isTop ? ' top-rated' : '') + '">' + b.rating + '</span>' : '')
+        + '</div>'
+        + '<div class="book-body">'
+        + '<div class="book-title">' + escHtml(b.title) + '</div>'
+        + '<div class="book-author">' + escHtml(b.author) + '</div>'
+        + (b.rating != null ? starsHTML(b.rating) : '')
+        + '<span class="book-genre-tag">' + escHtml(b.genre) + '</span>'
+        + '</div></div>';
+    }).join('');
+
+    // ── To Read ──
+    var tg = document.getElementById('toread-grid');
+    tg.innerHTML = toread.map(function(b) {
+      var thumb = b.cover
+        ? '<img src="' + escHtml(b.cover) + '" class="toread-thumb" alt="" loading="lazy" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'">'
+          + '<div class="toread-thumb-bg" style="display:none"><span class="toread-thumb-icon">&#128218;</span></div>'
+        : '<div class="toread-thumb-bg"><span class="toread-thumb-icon">&#128218;</span></div>';
+      return '<div class="toread-card">'
+        + thumb
+        + '<div class="toread-info">'
+        + '<div class="toread-title">' + escHtml(b.title) + '</div>'
+        + '<div class="toread-author">' + escHtml(b.author) + '</div>'
+        + '<span class="toread-genre-tag">' + escHtml(b.genre) + '</span>'
+        + '</div></div>';
+    }).join('');
+
+    // Animate in
+    requestAnimationFrame(function() {
+      document.querySelectorAll('.reading-card, .book-card, .toread-card').forEach(function(el, i) {
+        el.style.animationDelay = (i * 0.04) + 's';
+        el.classList.add('is-visible');
+      });
+      // Animate stars
+      document.querySelectorAll('.stars-fill').forEach(function(el) {
+        el.style.width = el.dataset.pct + '%';
+      });
+    });
+  }
+
+  // ── Genre filters ─────────────────────────────────────────────
+  function buildFilters() {
+    var genres = ['All'];
+    BOOKS.forEach(function(b) { if (b.genre && genres.indexOf(b.genre) === -1) genres.push(b.genre); });
+    genres.sort(function(a, b) { if (a === 'All') return -1; if (b === 'All') return 1; return a.localeCompare(b); });
+    var wrap = document.getElementById('js-genre-filters');
+    wrap.innerHTML = genres.map(function(g) {
+      return '<button class="genre-btn' + (g === activeGenre ? ' active' : '') + '" data-genre="' + escHtml(g) + '">' + escHtml(g) + '</button>';
+    }).join('');
+    wrap.addEventListener('click', function(e) {
+      var btn = e.target.closest('.genre-btn');
+      if (!btn) return;
+      activeGenre = btn.dataset.genre;
+      wrap.querySelectorAll('.genre-btn').forEach(function(b) { b.classList.toggle('active', b.dataset.genre === activeGenre); });
+      renderAll();
+    });
+  }
+
+  // ── Sort ──────────────────────────────────────────────────────
+  document.getElementById('js-sort-btn').addEventListener('click', function() {
+    sortByRating = !sortByRating;
+    this.classList.toggle('active', sortByRating);
+    this.textContent = sortByRating ? 'Sort: Rating ↓' : 'Sort by Rating';
+    renderAll();
+  });
+
+  // ── Date ─────────────────────────────────────────────────────
+  (function() {
+    var d = new Date();
+    var lbl = d.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+    var el1 = document.getElementById('js-date');
+    var el2 = document.getElementById('js-date-2');
+    if (el1) el1.textContent = lbl;
+    if (el2) el2.textContent = lbl;
+  })();
+
+  // ── Init ─────────────────────────────────────────────────────
+  buildFilters();
+  renderAll();
+  </script>
+
+  <script src="ticker.js"></script>
+</body>
+</html>
