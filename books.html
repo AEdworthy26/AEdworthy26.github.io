@@ -104,8 +104,8 @@
 
     /* ── LIST VIEW (Read tab) ── */
     .book-list{display:flex;flex-direction:column;gap:.55rem}
-    .book-row{display:flex;align-items:center;gap:1rem;background:var(--dark-card);border:1px solid var(--dark-border);border-radius:10px;padding:.85rem 1rem;transition:background .15s,box-shadow .15s;cursor:default;user-select:none}
-    .book-row:hover{background:rgba(255,255,255,.03)}
+    .book-row{display:flex;align-items:center;gap:1rem;background:var(--dark-card);border:1px solid var(--dark-border);border-radius:10px;padding:.85rem 1rem;transition:background .15s,box-shadow .15s;cursor:pointer;user-select:none}
+    .book-row:hover{background:rgba(255,255,255,.05);border-color:rgba(200,163,72,.2)}
     .book-row.dragging{opacity:.5;box-shadow:0 8px 28px rgba(0,0,0,.5)}
     .book-row.drag-over{border-color:var(--gold);background:rgba(200,163,72,.06)}
     .drag-handle{color:var(--dark-dim);font-size:1rem;cursor:grab;flex-shrink:0;padding:0 .2rem;touch-action:none}
@@ -127,10 +127,6 @@
     .row-score.low{color:var(--dark-muted)}
     .row-score-denom{font-size:.65rem;color:var(--dark-dim)}
     .row-no-rating{font-size:.7rem;color:var(--dark-dim);font-style:italic}
-    .row-actions{display:flex;gap:.4rem;flex-shrink:0}
-    .row-btn{background:none;border:1px solid var(--dark-border);border-radius:5px;color:var(--dark-muted);cursor:pointer;padding:.3rem .55rem;font-size:.72rem;transition:all .15s;font-family:'Inter',system-ui,sans-serif}
-    .row-btn:hover{border-color:rgba(200,163,72,.5);color:var(--gold)}
-    .row-btn.del:hover{border-color:rgba(212,64,0,.5);color:var(--tomato)}
 
     /* ── CARD VIEW (Reading / To Read tabs) ── */
     .card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:1rem}
@@ -505,14 +501,13 @@ function getByStatus(status) {
 function thumbHTML(book, w, h) {
   var ws = w||44; var hs = h||62;
   var style = 'width:'+ws+'px;height:'+hs+'px;border-radius:4px;object-fit:cover;display:block;flex-shrink:0;';
+  var fallback = '<div style="'+style+'background:linear-gradient(145deg,#1f1c17,#2a2520);border:1px solid rgba(210,200,180,.09);"></div>';
   if (book.cover) {
     return '<img src="'+esc(book.cover)+'" style="'+style+'" loading="lazy"'
-      +' onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'">'
-      +'<div style="display:none;'+style+'background:linear-gradient(145deg,#1f1c17,#2a2520);border:1px solid rgba(210,200,180,.09);align-items:center;justify-content:center;text-align:center;padding:3px;">'
-      +'<span style="font-family:\'Playfair Display\',serif;font-size:.5rem;color:rgba(237,233,223,.3);font-weight:700;line-height:1.2;">'+esc(book.title)+'</span></div>';
+      +' onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'block\'">'
+      + fallback.replace('display:block', 'display:none');
   }
-  return '<div style="'+style+'background:linear-gradient(145deg,#1f1c17,#2a2520);border:1px solid rgba(210,200,180,.09);display:flex;align-items:center;justify-content:center;text-align:center;padding:3px;">'
-    +'<span style="font-family:\'Playfair Display\',serif;font-size:.5rem;color:rgba(237,233,223,.3);font-weight:700;line-height:1.2;">'+esc(book.title)+'</span></div>';
+  return fallback;
 }
 function coverFullHTML(book) {
   var style = 'width:100%;height:100%;object-fit:cover;display:block;';
@@ -596,7 +591,7 @@ function renderList(listId, emptyId, books) {
     var ratingHTML = b.rating != null
       ? '<div class="row-rating"><span class="row-score '+ratingClass(b.rating)+'">'+b.rating+'</span><span class="row-score-denom">/10</span></div>'
       : '<div class="row-rating"><span class="row-no-rating">unrated</span></div>';
-    return '<div class="book-row" data-id="'+b.id+'" draggable="true">'
+    return '<div class="book-row" data-id="'+b.id+'" data-edit="'+b.id+'" draggable="true">'
       +'<span class="drag-handle" title="Drag to reorder">&#9776;</span>'
       +'<span class="row-rank '+rankClass+'">'+rank+'</span>'
       +'<div class="row-thumb">'+thumbHTML(b, 44, 62)+'</div>'
@@ -609,10 +604,7 @@ function renderList(listId, emptyId, books) {
       +(b.pages?'<span class="row-pages">'+b.pages+' pp</span>':'')
       +'</div>'
       +ratingHTML
-      +'<div class="row-actions">'
-      +'<button class="row-btn" data-edit="'+b.id+'">Edit</button>'
-      +'<button class="row-btn del" data-del="'+b.id+'">Delete</button>'
-      +'</div></div>';
+      +'</div>';
   }).join('');
   initDragDrop();
 }
@@ -668,6 +660,7 @@ document.getElementById('panel-read').addEventListener('click', handlePanelClick
 document.getElementById('panel-toread').addEventListener('click', handlePanelClick);
 
 function handlePanelClick(e) {
+  if (e.target.closest('.drag-handle')) return;
   var editBtn = e.target.closest('[data-edit]');
   var delBtn  = e.target.closest('[data-del]');
   if (editBtn) openModal(editBtn.dataset.edit);
