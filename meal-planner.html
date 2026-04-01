@@ -172,7 +172,8 @@
     @keyframes item-in { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
     .shop-cb { width: 15px; height: 15px; accent-color: var(--blue); cursor: pointer; flex-shrink: 0; }
     .shop-item-text { flex: 1; min-width: 0; }
-    .shop-item-name { font-size: 0.8rem; color: var(--ink); line-height: 1.3; transition: all 0.2s; display: block; font-weight: 500; }
+    .shop-item-name { font-size: 0.8rem; color: var(--ink); line-height: 1.3; transition: all 0.2s; display: block; font-weight: 500; cursor: text; outline: none; border-radius: 3px; }
+    .shop-item-name:focus { background: #f0ede8; padding: 0 3px; margin: 0 -3px; }
     .shop-item-qty { font-size: 0.62rem; color: var(--light); margin-top: 0.1rem; display: block; }
     .shop-item.done .shop-item-name { text-decoration: line-through; color: #bbb; }
     .shop-item.done .shop-item-qty { color: #ccc; }
@@ -553,7 +554,8 @@
       list.innerHTML = items.map(function (item) {
         return '<div class="shop-item' + (item.completed ? ' done' : '') + '">'
           + '<input type="checkbox" class="shop-cb" data-id="' + item.id + '"' + (item.completed ? ' checked' : '') + '>'
-          + '<div class="shop-item-text"><span class="shop-item-name">' + esc(item.item) + '</span>'
+          + '<div class="shop-item-text">'
+          + '<span class="shop-item-name" contenteditable="true" spellcheck="false" data-id="' + item.id + '">' + esc(item.item) + '</span>'
           + (item.qty ? '<span class="shop-item-qty">' + esc(item.qty) + '</span>' : '') + '</div>'
           + '<button class="shop-remove-btn" data-id="' + item.id + '" title="Remove">×</button></div>';
       }).join('');
@@ -561,6 +563,23 @@
         cb.addEventListener('change', function () {
           var item = state.shoppingList.find(function (i) { return i.id === cb.dataset.id; });
           if (item) { item.completed = cb.checked; save(); renderShopList(); }
+        });
+      });
+      list.querySelectorAll('.shop-item-name').forEach(function (span) {
+        span.addEventListener('keydown', function (e) {
+          if (e.key === 'Enter') { e.preventDefault(); span.blur(); }
+        });
+        span.addEventListener('blur', function () {
+          var newVal = span.textContent.trim();
+          var item = state.shoppingList.find(function (i) { return i.id === span.dataset.id; });
+          if (!item) return;
+          if (!newVal) {
+            state.shoppingList = state.shoppingList.filter(function (i) { return i.id !== span.dataset.id; });
+            save(); renderShopList();
+          } else if (newVal !== item.item) {
+            item.item = newVal;
+            save();
+          }
         });
       });
       list.querySelectorAll('.shop-remove-btn').forEach(function (btn) {
