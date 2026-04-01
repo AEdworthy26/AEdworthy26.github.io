@@ -902,11 +902,9 @@
 
     // ── RICS Today's Topic ──
     (function () {
-      if (typeof RICS_DATA === 'undefined') return;
-
-      var entry = RICS_DATA;
-      var levelColor = entry.level === 3 ? '#dc2626' : entry.level === 2 ? '#1d4ed8' : '#15803d';
-      var levelLabel = 'Level ' + entry.level;
+      var entry = (typeof RICS_DATA !== 'undefined') ? RICS_DATA : null;
+      var levelColor = entry ? (entry.level === 3 ? '#dc2626' : entry.level === 2 ? '#1d4ed8' : '#15803d') : '#003399';
+      var levelLabel = entry ? ('Level ' + entry.level) : '';
 
       // PLACEHOLDER — topicSVG removed, images now come from RICS_DATA
       function topicSVG_removed(module) {
@@ -1302,7 +1300,7 @@
       })();
 
       var el = document.getElementById('rics-study');
-      if (el) {
+      if (el && entry) {
         var fmtDate = new Date(entry.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'long' });
         var thumb = entry.image
           ? '<img src="' + entry.image + '" alt="" loading="lazy" style="width:100%;height:auto;display:block;border-radius:4px;border:1px solid #c8c4ba;" onerror="this.style.display=\'none\'">'
