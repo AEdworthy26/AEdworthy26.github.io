@@ -93,7 +93,7 @@
     .day-tab.today-tab:not(.active) { color: var(--blue); }
 
     /* ── MAIN GRID ── */
-    .planner-grid { display: grid; grid-template-columns: 1fr 300px; gap: 1.5rem; align-items: start; }
+    .planner-grid { display: grid; grid-template-columns: 280px 1fr; gap: 1.5rem; align-items: start; }
     @media (max-width: 820px) { .planner-grid { grid-template-columns: 1fr; } }
 
     /* ── MEALS COLUMN ── */
@@ -103,16 +103,16 @@
     /* ── MEAL CARD ── */
     .meal-card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; box-shadow: var(--shadow-sm); overflow: hidden; transition: box-shadow 0.18s, border-color 0.18s; }
     .meal-card:focus-within { box-shadow: 0 2px 12px rgba(0,0,0,0.08); border-color: #b8b2a8; }
-    .meal-header { display: flex; align-items: center; gap: 0.5rem; padding: 0.55rem 0.9rem 0; }
-    .meal-emoji { font-size: 0.85rem; line-height: 1; }
-    .meal-name { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.13em; text-transform: uppercase; color: var(--light); flex: 1; }
+    .meal-header { display: flex; align-items: center; gap: 0.45rem; padding: 0.45rem 0.85rem 0; }
+    .meal-emoji { font-size: 0.8rem; line-height: 1; }
+    .meal-name { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.13em; text-transform: uppercase; color: var(--light); flex: 1; }
     .meal-filled-dot { width: 5px; height: 5px; border-radius: 50%; background: #22c55e; flex-shrink: 0; opacity: 0; transition: opacity 0.25s; }
     .meal-filled-dot.visible { opacity: 1; }
-    .meal-body { padding: 0.3rem 0.9rem 0.7rem; display: flex; flex-direction: column; gap: 0; }
-    .meal-textarea { width: 100%; border: none; outline: none; background: transparent; color: var(--ink); font-family: 'Inter', system-ui, sans-serif; font-size: 0.82rem; font-weight: 400; line-height: 1.55; resize: none; min-height: 32px; overflow: hidden; padding: 0.3rem 0; }
+    .meal-body { padding: 0.2rem 0.85rem 0.55rem; display: flex; flex-direction: column; gap: 0; }
+    .meal-textarea { width: 100%; border: none; outline: none; background: transparent; color: var(--ink); font-family: 'Inter', system-ui, sans-serif; font-size: 0.8rem; font-weight: 400; line-height: 1.5; resize: none; min-height: 26px; overflow: hidden; padding: 0.25rem 0; }
     .meal-textarea::placeholder { color: #c8c4bc; }
     .meal-divider { height: 1px; background: var(--subtle); }
-    .meal-notes { width: 100%; border: none; outline: none; background: transparent; color: var(--light); font-family: 'Inter', sans-serif; font-size: 0.68rem; line-height: 1.5; resize: none; min-height: 24px; overflow: hidden; padding: 0.3rem 0 0; }
+    .meal-notes { width: 100%; border: none; outline: none; background: transparent; color: var(--light); font-family: 'Inter', sans-serif; font-size: 0.66rem; line-height: 1.4; resize: none; min-height: 20px; overflow: hidden; padding: 0.25rem 0 0; }
     .meal-notes::placeholder { color: #d8d4cc; }
 
     /* ── RIGHT COLUMN ── */
@@ -271,13 +271,10 @@
     <!-- DAY SELECTOR TABS -->
     <div class="day-tabs" id="day-tabs"></div>
 
-    <!-- MAIN GRID: MEALS + SIDEBAR -->
+    <!-- MAIN GRID: SIDEBAR + MEALS -->
     <div class="planner-grid">
 
-      <!-- LEFT: MEAL CARDS -->
-      <div class="meals-col" id="meals-col"></div>
-
-      <!-- RIGHT: SUMMARY + SHOPPING -->
+      <!-- LEFT: SUMMARY + SHOPPING -->
       <div class="right-col">
 
         <!-- Day at a glance -->
@@ -298,6 +295,10 @@
         </div>
 
       </div>
+
+      <!-- RIGHT: MEAL CARDS -->
+      <div class="meals-col" id="meals-col"></div>
+
     </div>
 
   </div><!-- /.page-wrap -->
