@@ -1,10 +1,10 @@
 // quiz-data.js
-// Auto-updated 2026-04-01 — do not edit manually
+// Auto-updated 2026-04-02 — do not edit manually
 
 window.QUIZ_DATA = {
-  date: '2026-04-01',
-  category: 'Ancient History',
-  question: 'Which ancient city, destroyed by volcanic eruption in the 17th century BCE, is often called the "Minoan Pompeii" and preserved stunning frescoes including the famous "Boxing Boys" and "Spring Fresco"?',
-  answer: 'Akrotiri, on the island of Thera (modern Santorini).',
-  funFact: 'The eruption that buried Akrotiri was one of the largest volcanic events in recorded history, ejecting roughly four times the material of Krakatoa. Unlike Pompeii, no human remains have been found at Akrotiri, suggesting the inhabitants had enough warning to evacuate. Some scholars have proposed that the destruction of this thriving Minoan settlement may have inspired Plato\'s legend of Atlantis.'
+  date: '2026-04-02',
+  category: 'Sport',
+  question: 'Which country has won the most Rugby World Cup titles?',
+  answer: 'South Africa — with four titles (1995, 2007, 2019, 2023).',
+  funFact: 'South Africa\'s 2023 victory in Paris made them the first nation to win the Rugby World Cup four times, overtaking New Zealand who have three. Their 1995 win — famously celebrated by Nelson Mandela wearing the Springbok jersey — is widely regarded as one of sport\'s most iconic moments.'
 };
