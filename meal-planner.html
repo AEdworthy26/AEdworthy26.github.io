@@ -178,6 +178,15 @@
     .wov-meal-text { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     @media (max-width: 680px) { .week-overview-grid { grid-template-columns: repeat(4, 1fr); } }
 
+    /* ── WEEK NAVIGATION ── */
+    .week-nav { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.2rem; }
+    .week-nav-btn { background: var(--card); border: 1px solid var(--border); border-radius: 9999px; padding: 0.32rem 0.85rem; font-size: 0.7rem; font-weight: 600; color: var(--muted); transition: all 0.15s; }
+    .week-nav-btn:hover { border-color: var(--blue); color: var(--blue); }
+    .week-nav-label { font-size: 0.78rem; font-weight: 700; color: var(--ink); flex: 1; text-align: center; letter-spacing: -0.01em; }
+    .week-nav-today { background: none; border: 1px solid var(--border); border-radius: 9999px; padding: 0.28rem 0.7rem; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); transition: all 0.15s; }
+    .week-nav-today:hover { border-color: var(--blue); color: var(--blue); }
+    .week-nav-today.is-current { border-color: var(--blue); color: var(--blue); background: rgba(0,51,153,0.05); }
+
     /* ── CLEAR WEEK BUTTON ── */
     .btn-ghost { background: none; border: 1px solid var(--border); border-radius: 9999px; padding: 0.32rem 0.9rem; font-size: 0.63rem; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: var(--muted); transition: all 0.15s; }
     .btn-ghost:hover { border-color: #aaa; color: var(--ink); }
@@ -268,6 +277,14 @@
       <div class="week-overview-grid" id="week-overview-grid"></div>
     </div>
 
+    <!-- WEEK NAVIGATION -->
+    <div class="week-nav">
+      <button class="week-nav-btn" id="btn-prev-week">‹ Prev</button>
+      <span class="week-nav-label" id="week-nav-label"></span>
+      <button class="week-nav-btn" id="btn-next-week">Next ›</button>
+      <button class="week-nav-today" id="btn-this-week">This week</button>
+    </div>
+
     <!-- DAY SELECTOR TABS -->
     <div class="day-tabs" id="day-tabs"></div>
 
@@ -314,22 +331,49 @@
       lunch:     { emoji: '🍽️', label: 'Lunch',     ph: 'What\'s for lunch?' },
       dinner:    { emoji: '🌙', label: 'Dinner',    ph: 'What\'s for dinner?' }
     };
-    var LS_KEY = 'personal_hub_meal_planner';
+    var LS_KEY = 'personal_hub_meal_planner_v2';
+
+    // ── Week helpers ─────────────────────────────────────────────────────────
+    function getMondayDate(date) {
+      var d = new Date(date);
+      var day = d.getDay();
+      d.setDate(d.getDate() + (day === 0 ? -6 : 1 - day));
+      d.setHours(0, 0, 0, 0);
+      return d;
+    }
+    function weekKey(date) { return getMondayDate(date).toISOString().slice(0, 10); }
+    function shiftWeek(key, n) {
+      var d = new Date(key + 'T00:00:00');
+      d.setDate(d.getDate() + n * 7);
+      return d.toISOString().slice(0, 10);
+    }
+    function formatWeekRange(key) {
+      var mon = new Date(key + 'T00:00:00');
+      var sun = new Date(mon); sun.setDate(sun.getDate() + 6);
+      var fmt = function (d, yr) {
+        return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' }) + (yr ? ' ' + d.getFullYear() : '');
+      };
+      return fmt(mon, false) + ' – ' + fmt(sun, true);
+    }
 
     // ── State ────────────────────────────────────────────────────────────────
-    var today = (function () {
-      return ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'][new Date().getDay()];
-    })();
+    var todayName = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'][new Date().getDay()];
+    var thisWeekKey = weekKey(new Date());
 
-    var state = { week: {}, shoppingList: [], currentDay: today };
+    var state = { weeks: {}, shoppingList: [], currentWeekKey: thisWeekKey, currentDay: todayName };
 
-    DAYS.forEach(function (d) {
-      state.week[d] = {
-        breakfast: { meal: '', notes: '' },
-        lunch:     { meal: '', notes: '' },
-        dinner:    { meal: '', notes: '' }
-      };
-    });
+    function blankWeek() {
+      var w = {};
+      DAYS.forEach(function (d) {
+        w[d] = { breakfast: { meal: '', notes: '' }, lunch: { meal: '', notes: '' }, dinner: { meal: '', notes: '' } };
+      });
+      return w;
+    }
+    function currentWeek() {
+      if (!state.weeks[state.currentWeekKey]) state.weeks[state.currentWeekKey] = blankWeek();
+      return state.weeks[state.currentWeekKey];
+    }
+    function isThisWeek() { return state.currentWeekKey === thisWeekKey; }
 
     function uid() { return Date.now().toString(36) + Math.random().toString(36).slice(2, 6); }
 
@@ -337,48 +381,61 @@
     function load() {
       try {
         var raw = localStorage.getItem(LS_KEY);
-        if (!raw) return;
-        var saved = JSON.parse(raw);
-        if (saved.week) {
-          DAYS.forEach(function (d) {
-            if (!saved.week[d]) return;
-            MEALS.forEach(function (m) {
-              if (!saved.week[d][m]) return;
-              state.week[d][m].meal  = saved.week[d][m].meal  || '';
-              state.week[d][m].notes = saved.week[d][m].notes || '';
-            });
-          });
+        if (raw) {
+          var saved = JSON.parse(raw);
+          if (saved.weeks) state.weeks = saved.weeks;
+          if (Array.isArray(saved.shoppingList)) state.shoppingList = saved.shoppingList;
+          return;
         }
-        if (Array.isArray(saved.shoppingList)) state.shoppingList = saved.shoppingList;
+        // Migrate old v1 data into the current week
+        var old = localStorage.getItem('personal_hub_meal_planner');
+        if (old) {
+          var oldData = JSON.parse(old);
+          if (oldData.week) {
+            state.weeks[thisWeekKey] = blankWeek();
+            DAYS.forEach(function (d) {
+              if (!oldData.week[d]) return;
+              MEALS.forEach(function (m) {
+                if (!oldData.week[d][m]) return;
+                state.weeks[thisWeekKey][d][m].meal  = oldData.week[d][m].meal  || '';
+                state.weeks[thisWeekKey][d][m].notes = oldData.week[d][m].notes || '';
+              });
+            });
+          }
+          if (Array.isArray(oldData.shoppingList)) state.shoppingList = oldData.shoppingList;
+        }
       } catch (e) {}
     }
 
     var _st;
     function debounceSave() { clearTimeout(_st); _st = setTimeout(save, 350); }
-    function save() { localStorage.setItem(LS_KEY, JSON.stringify({ week: state.week, shoppingList: state.shoppingList })); }
+    function save() { localStorage.setItem(LS_KEY, JSON.stringify({ weeks: state.weeks, shoppingList: state.shoppingList })); }
 
-    // ── Escape ───────────────────────────────────────────────────────────────
+    // ── Helpers ──────────────────────────────────────────────────────────────
     function esc(s) {
       return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
     }
     function trunc(s, n) { return s.length > n ? s.slice(0, n) + '…' : s; }
+    function autoResize(el) { el.style.height = 'auto'; el.style.height = el.scrollHeight + 'px'; }
 
-    // ── Auto-resize textarea ─────────────────────────────────────────────────
-    function autoResize(el) {
-      el.style.height = 'auto';
-      el.style.height = el.scrollHeight + 'px';
+    // ── Render: week nav ─────────────────────────────────────────────────────
+    function renderWeekNav() {
+      var label = document.getElementById('week-nav-label');
+      var btn   = document.getElementById('btn-this-week');
+      if (label) label.textContent = isThisWeek() ? 'This Week — ' + formatWeekRange(state.currentWeekKey) : formatWeekRange(state.currentWeekKey);
+      if (btn)   btn.classList.toggle('is-current', isThisWeek());
     }
 
     // ── Render: day tabs ─────────────────────────────────────────────────────
     function renderTabs() {
+      var onThisWeek = isThisWeek();
       var html = DAYS.map(function (d, i) {
         var cls = 'day-tab';
         if (d === state.currentDay) cls += ' active';
-        if (d === today) cls += ' today-tab';
+        if (onThisWeek && d === todayName) cls += ' today-tab';
         return '<button class="' + cls + '" data-day="' + d + '">' + DAY_SHORT[i] + '</button>';
       }).join('');
       document.getElementById('day-tabs').innerHTML = html;
-
       document.querySelectorAll('.day-tab').forEach(function (btn) {
         btn.addEventListener('click', function () {
           if (this.dataset.day === state.currentDay) return;
@@ -387,9 +444,7 @@
           var newDay = this.dataset.day;
           setTimeout(function () {
             state.currentDay = newDay;
-            renderTabs();
-            renderMeals();
-            renderDaySummary();
+            renderTabs(); renderMeals(); renderDaySummary();
             col.classList.remove('switching');
           }, 110);
         });
@@ -398,10 +453,11 @@
 
     // ── Render: meal cards ───────────────────────────────────────────────────
     function renderMeals() {
-      var day = state.currentDay;
+      var week = currentWeek();
+      var day  = state.currentDay;
       var html = MEALS.map(function (mk) {
         var meta = MEAL_META[mk];
-        var data = state.week[day][mk];
+        var data = week[day][mk];
         var filled = data.meal.trim().length > 0;
         return '<div class="meal-card">'
           + '<div class="meal-header">'
@@ -413,56 +469,46 @@
           +   '<textarea class="meal-textarea" data-meal="' + mk + '" placeholder="' + meta.ph + '" rows="3">' + esc(data.meal) + '</textarea>'
           +   '<div class="meal-divider"></div>'
           +   '<textarea class="meal-notes" data-notes="' + mk + '" placeholder="Notes, calories, prep time…" rows="1">' + esc(data.notes) + '</textarea>'
-          + '</div>'
-          + '</div>';
+          + '</div></div>';
       }).join('');
-
       document.getElementById('meals-col').innerHTML = html;
-
       document.querySelectorAll('.meal-textarea').forEach(function (ta) {
         autoResize(ta);
         ta.addEventListener('input', function () {
           autoResize(this);
           var mk = this.dataset.meal;
-          state.week[state.currentDay][mk].meal = this.value;
-          // Green dot
+          currentWeek()[state.currentDay][mk].meal = this.value;
           var dot = document.querySelector('[data-dot="' + mk + '"]');
           if (dot) dot.classList.toggle('visible', this.value.trim().length > 0);
-          debounceSave();
-          renderDaySummary();
-          renderWeekOverview();
+          debounceSave(); renderDaySummary(); renderWeekOverview();
         });
       });
-
       document.querySelectorAll('.meal-notes').forEach(function (ta) {
         autoResize(ta);
         ta.addEventListener('input', function () {
           autoResize(this);
-          state.week[state.currentDay][this.dataset.notes].notes = this.value;
+          currentWeek()[state.currentDay][this.dataset.notes].notes = this.value;
           debounceSave();
         });
       });
     }
 
-    // ── Render: day summary sidebar ──────────────────────────────────────────
+    // ── Render: day summary ──────────────────────────────────────────────────
     function renderDaySummary() {
       var day   = state.currentDay;
-      var isToday = day === today;
+      var week  = currentWeek();
+      var isToday = isThisWeek() && day === todayName;
       var rows = MEALS.map(function (mk) {
-        var meal = state.week[day][mk].meal.trim();
+        var meal = week[day][mk].meal.trim();
         return '<div class="day-summary-row">'
           + '<span class="dsrow-emoji">' + MEAL_META[mk].emoji + '</span>'
-          + (meal
-              ? '<span class="dsrow-meal">' + esc(trunc(meal, 42)) + '</span>'
-              : '<span class="dsrow-empty">—</span>')
+          + (meal ? '<span class="dsrow-meal">' + esc(trunc(meal, 42)) + '</span>'
+                  : '<span class="dsrow-empty">—</span>')
           + '</div>';
       }).join('');
-
       document.getElementById('day-summary-card').innerHTML =
-        '<div class="day-summary-header">'
-        + esc(day)
-        + (isToday ? '<span class="today-badge">Today</span>' : '')
-        + '</div>'
+        '<div class="day-summary-header">' + esc(day)
+        + (isToday ? '<span class="today-badge">Today</span>' : '') + '</div>'
         + '<div class="day-summary-body">' + rows + '</div>';
     }
 
@@ -471,30 +517,17 @@
       var items   = state.shoppingList;
       var pending = items.filter(function (i) { return !i.completed; }).length;
       var countEl = document.getElementById('shop-count');
-      if (countEl) {
-        countEl.textContent = pending;
-        countEl.classList.toggle('done-all', items.length > 0 && pending === 0);
-      }
-
+      if (countEl) { countEl.textContent = pending; countEl.classList.toggle('done-all', items.length > 0 && pending === 0); }
       var list = document.getElementById('shop-list');
       if (!list) return;
-
-      if (!items.length) {
-        list.innerHTML = '<div class="shop-empty">Your list is empty</div>';
-        return;
-      }
-
+      if (!items.length) { list.innerHTML = '<div class="shop-empty">Your list is empty</div>'; return; }
       list.innerHTML = items.map(function (item) {
         return '<div class="shop-item' + (item.completed ? ' done' : '') + '">'
           + '<input type="checkbox" class="shop-cb" data-id="' + item.id + '"' + (item.completed ? ' checked' : '') + '>'
-          + '<div class="shop-item-text">'
-          +   '<span class="shop-item-name">' + esc(item.item) + '</span>'
-          +   (item.qty ? '<span class="shop-item-qty">' + esc(item.qty) + '</span>' : '')
-          + '</div>'
-          + '<button class="shop-remove-btn" data-id="' + item.id + '" title="Remove">×</button>'
-          + '</div>';
+          + '<div class="shop-item-text"><span class="shop-item-name">' + esc(item.item) + '</span>'
+          + (item.qty ? '<span class="shop-item-qty">' + esc(item.qty) + '</span>' : '') + '</div>'
+          + '<button class="shop-remove-btn" data-id="' + item.id + '" title="Remove">×</button></div>';
       }).join('');
-
       list.querySelectorAll('.shop-cb').forEach(function (cb) {
         cb.addEventListener('change', function () {
           var item = state.shoppingList.find(function (i) { return i.id === cb.dataset.id; });
@@ -513,12 +546,14 @@
     function renderWeekOverview() {
       var grid = document.getElementById('week-overview-grid');
       if (!grid) return;
+      var week = currentWeek();
+      var onThisWeek = isThisWeek();
       grid.innerHTML = DAYS.map(function (d, i) {
         var cls = 'week-day-col';
         if (d === state.currentDay) cls += ' wov-active';
-        if (d === today) cls += ' wov-today';
+        if (onThisWeek && d === todayName) cls += ' wov-today';
         var rows = MEALS.map(function (mk) {
-          var meal = state.week[d][mk].meal.trim();
+          var meal = week[d][mk].meal.trim();
           return '<div class="wov-meal-row' + (meal ? ' wov-filled' : '') + '">'
             + '<span class="wov-meal-label">' + MEAL_META[mk].emoji + ' ' + MEAL_META[mk].label + '</span>'
             + '<span class="wov-meal-text">' + (meal ? esc(trunc(meal, 20)) : '—') + '</span>'
@@ -526,10 +561,8 @@
         }).join('');
         return '<div class="' + cls + '" data-day="' + d + '">'
           + '<div class="week-col-head">' + DAY_SHORT[i] + '</div>'
-          + '<div class="week-col-body">' + rows + '</div>'
-          + '</div>';
+          + '<div class="week-col-body">' + rows + '</div></div>';
       }).join('');
-
       grid.querySelectorAll('.week-day-col').forEach(function (col) {
         col.addEventListener('click', function () {
           var newDay = this.dataset.day;
@@ -538,50 +571,57 @@
           mealCol.classList.add('switching');
           setTimeout(function () {
             state.currentDay = newDay;
-            renderTabs();
-            renderMeals();
-            renderDaySummary();
-            renderWeekOverview();
+            renderTabs(); renderMeals(); renderDaySummary(); renderWeekOverview();
             mealCol.classList.remove('switching');
-            window.scrollTo({ top: 0, behavior: 'smooth' });
           }, 110);
         });
       });
     }
 
-    // ── Events ───────────────────────────────────────────────────────────────
-    document.getElementById('btn-clear-week').addEventListener('click', function () {
-      if (!confirm('Clear all meals for this week? This cannot be undone.')) return;
-      DAYS.forEach(function (d) {
-        MEALS.forEach(function (m) { state.week[d][m].meal = ''; state.week[d][m].notes = ''; });
-      });
-      save();
+    // ── Week navigation ──────────────────────────────────────────────────────
+    function switchWeek(newKey) {
+      state.currentWeekKey = newKey;
+      state.currentDay = (isThisWeek() ? todayName : 'Monday');
+      renderWeekNav();
+      renderWeekOverview();
+      renderTabs();
       renderMeals();
       renderDaySummary();
-      renderWeekOverview();
+    }
+
+    document.getElementById('btn-prev-week').addEventListener('click', function () {
+      switchWeek(shiftWeek(state.currentWeekKey, -1));
+    });
+    document.getElementById('btn-next-week').addEventListener('click', function () {
+      switchWeek(shiftWeek(state.currentWeekKey, 1));
+    });
+    document.getElementById('btn-this-week').addEventListener('click', function () {
+      if (isThisWeek()) return;
+      switchWeek(thisWeekKey);
     });
 
+    // ── Clear week ───────────────────────────────────────────────────────────
+    document.getElementById('btn-clear-week').addEventListener('click', function () {
+      if (!confirm('Clear all meals for this week? This cannot be undone.')) return;
+      state.weeks[state.currentWeekKey] = blankWeek();
+      save(); renderMeals(); renderDaySummary(); renderWeekOverview();
+    });
+
+    // ── Shopping list events ─────────────────────────────────────────────────
     document.getElementById('shop-add-form').addEventListener('submit', function (e) {
       e.preventDefault();
       var name = document.getElementById('shop-name').value.trim();
       if (!name) { document.getElementById('shop-name').focus(); return; }
-      state.shoppingList.push({
-        id: uid(), item: name,
-        qty: document.getElementById('shop-qty').value.trim(),
-        completed: false
-      });
-      save();
-      renderShopList();
+      state.shoppingList.push({ id: uid(), item: name, qty: document.getElementById('shop-qty').value.trim(), completed: false });
+      save(); renderShopList();
       document.getElementById('shop-name').value = '';
       document.getElementById('shop-qty').value  = '';
       document.getElementById('shop-name').focus();
     });
-
     document.getElementById('btn-clear-done').addEventListener('click', function () {
       state.shoppingList = state.shoppingList.filter(function (i) { return !i.completed; });
       save(); renderShopList();
     });
-
 
     // ── Nav dropdowns ────────────────────────────────────────────────────────
     (function () {
@@ -605,6 +645,7 @@
 
     // ── Init ─────────────────────────────────────────────────────────────────
     load();
+    renderWeekNav();
     renderWeekOverview();
     renderTabs();
     renderMeals();
