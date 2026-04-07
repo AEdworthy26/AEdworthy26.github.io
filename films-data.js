@@ -4,15 +4,15 @@
 var FILMS_DATA = {
   date: "2026-04-07",
   film: {
-    title: "The Apartment",
-    director: "Billy Wilder",
-    year: 1960,
-    genres: ["Comedy", "Romance", "Drama"],
-    desc: "Billy Wilder's masterpiece follows C.C. Baxter, a lonely insurance clerk who climbs the corporate ladder by lending his apartment to executives for their extramarital affairs — until he falls for the elevator operator caught up in the same sordid arrangement. Jack Lemmon and Shirley MacLaine deliver career-defining performances, balancing razor-sharp comedic timing with devastating emotional vulnerability. The film walks an extraordinary tightrope between biting social satire and genuine heartbreak, capturing the quiet desperation of people who let themselves be used because they're terrified of being alone. Wilder's screenplay, co-written with I.A.L. Diamond, is endlessly quotable and structurally flawless, building to one of cinema's most perfect final lines. It remains a deeply modern film about loneliness, ambition, and the radical act of choosing decency in a world that rewards selfishness.",
-    cast: ["Jack Lemmon", "Shirley MacLaine", "Fred MacMurray"],
-    rating: 93,
+    title: "Spirited Away",
+    director: "Hayao Miyazaki",
+    year: 2001,
+    genres: ["Animation", "Fantasy", "Adventure"],
+    desc: "When ten-year-old Chihiro stumbles into a hidden spirit world after her parents are transformed into pigs, she must take a job at a fantastical bathhouse run by the formidable witch Yubaba in order to survive and find a way home. Miyazaki constructs one of cinema's most inventive and densely imagined environments — a realm of gods, spirits, and monsters that feels genuinely alien yet emotionally grounded. The film works as a coming-of-age story about resilience and identity, as Chihiro gradually transforms from a frightened, complaining child into someone resourceful and brave. Its visual imagination is staggering: every frame is packed with strange, beautiful creatures and hand-drawn detail that no two viewings will fully exhaust. The longest-running number-one film in Japanese box office history, it remains the gold standard of animated filmmaking worldwide.",
+    cast: ["Daveigh Chase", "Suzanne Pleshette", "Miyu Irino"],
+    rating: 97,
     ratingSource: "Rotten Tomatoes",
-    ratingExtra: "5 Academy Awards including Best Picture",
-    posterUrl: "https://upload.wikimedia.org/wikipedia/commons/8/8b/The_Apartment_%281960_poster%29.jpg"
+    ratingExtra: "1 Academy Award (Best Animated Feature)",
+    posterUrl: "https://upload.wikimedia.org/wikipedia/en/d/db/Spirited_Away_Japanese_poster.png"
   }
 };

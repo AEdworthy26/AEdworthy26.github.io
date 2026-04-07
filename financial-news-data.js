@@ -4,22 +4,46 @@
 var FINANCIAL_NEWS = {
   date: "2026-04-07",
   main: {
-    title: "Trump Threatens to Wipe Out 'Whole Civilization' as Iran Deadline Looms and Markets Brace for Fallout",
+    title: "Trump Issues Civilisation-Level Ultimatum to Iran as Strait of Hormuz Deadline Looms",
     category: "International",
     content: [
-      "President Donald Trump issued his most extreme threat yet against Iran on Tuesday, warning that 'a whole civilization will die tonight' if Tehran fails to meet his 8:00 p.m. Eastern deadline to negotiate the reopening of the Strait of Hormuz. The United States and Israel have simultaneously stepped up military strikes across Iran, targeting not only military installations but also civilian infrastructure including universities and research centers. Iran has reportedly withdrawn from negotiations, raising the specter of a dramatic escalation that could reshape the entire Middle East and send shockwaves through the global economy.",
-      "The economic consequences of the conflict are already being felt far beyond oil and gas markets. NPR reports that an unexpected array of goods and services — from beer cans and helium balloons to mortgage rates — are being affected by shortages and price spikes stemming from the war. Aluminum supplies, critical to beverage packaging and aerospace manufacturing, have been disrupted as shipping through the Strait of Hormuz remains blocked, while helium supplies from the Persian Gulf region have dwindled, impacting everything from medical imaging equipment to party supplies.",
-      "The US administration moved to deny speculation that nuclear weapons could be deployed, after Trump's apocalyptic rhetoric and comments from Vice President JD Vance raised fears of an unprecedented escalation. Al Jazeera reported that Iran's top universities have condemned what they describe as systematic targeting of civilian sites, including academic and AI research hubs, accusing Washington and Tel Aviv of deliberately attempting to set back the nation's scientific progress for decades. The strikes have drawn sharp international condemnation, with several European and Asian governments calling for an immediate ceasefire.",
-      "Israeli Prime Minister Benjamin Netanyahu declared that Israel is actively shifting the 'balance of power' in the region through its intensifying strikes on Iranian targets. The coordination between US and Israeli military operations appears tighter than at any point in the conflict, with both nations conducting round-the-clock sorties. Meanwhile, Ukraine has seized on the chaos by ramping up attacks on Russian oil infrastructure, aiming to curb Moscow's windfall profits from surging global crude prices that have been financing its own war effort in Eastern Europe.",
-      "Global financial markets are in turmoil as traders attempt to price in the possibility of a full-scale war engulfing the Persian Gulf. Brent crude surged past $140 per barrel in early trading, while safe-haven assets including gold and US Treasuries saw massive inflows. Analysts warn that a prolonged closure of the Strait of Hormuz — through which roughly 20 percent of the world's oil passes daily — could tip the global economy into recession, with mortgage rates climbing, consumer prices spiking, and corporate earnings forecasts across multiple sectors facing severe downward revisions."
+      "President Donald Trump issued an extraordinary ultimatum to Iran on Monday, warning that 'a whole civilization will die tonight' if Tehran fails to agree to reopen the Strait of Hormuz by 8:00 p.m. Eastern Time. The threat, delivered at a press conference, represents a radical escalation in rhetoric from an administration that has spent weeks conducting joint military operations with Israel against Iranian infrastructure. Iran has responded defiantly, with officials rejecting the demands outright and the country said to have withdrawn from ongoing negotiations.",
+      "The backdrop to Trump's ultimatum is a sustained US-Israeli military campaign that has targeted a wide range of Iranian assets, including bridges, steel plants, pharmaceutical facilities, and academic institutions. Al Jazeera reports that a leading Iranian university condemned the strikes as a deliberate effort to set back the country's technological and AI capabilities. The BBC has verified videos documenting the scale of the destruction, painting a picture of a systematic campaign against Iran's industrial and civil infrastructure.",
+      "Diplomatic channels have not been entirely closed. Pakistan has been playing an active mediating role, with backchannel talks accelerating in the hours before the deadline. Vice President JD Vance reportedly joined Pakistan's last-ditch mediation efforts, engaging in indirect communications with Tehran through Islamabad. Analysts suggest Iran has been seeking a face-saving formula that allows indirect engagement with Washington without appearing to capitulate to military pressure.",
+      "The economic consequences of the conflict are already reverberating far beyond the Middle East. The closure or threatened closure of the Strait of Hormuz — through which roughly a fifth of global oil passes — has sent energy prices surging and triggered a cascade of secondary effects. NPR reports that shortages and price spikes are emerging across unexpected sectors, including helium supplies used in medical equipment and manufacturing, aluminium inputs affecting consumer goods such as beer cans, and mortgage market volatility driven by energy-cost inflation feeding through to broader interest rate expectations.",
+      "Ukraine has sought to exploit the crisis by ramping up strikes on Russian oil export infrastructure, aiming to deny Moscow a windfall from elevated energy prices driven by the Gulf conflict. Kyiv's forces have targeted refineries and shipping facilities in an effort to offset the revenue boost that higher crude prices provide to the Kremlin's war machine. The interplay between the Iran conflict and the war in Ukraine is creating one of the most complex and interconnected geopolitical and economic environments in decades, with markets, governments, and international institutions all scrambling to respond."
     ],
-    image: "https://static01.nyt.com/images/2026/04/07/multimedia/07israel-iran-promo-jptm/07israel-iran-promo-jptm-mediumSquareAt3X.jpg",
+    image: "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iqp7y9bamkTk/v3/1200x-1.jpg",
     source: "NPR",
     sourceUrl: "https://www.npr.org/2026/04/07/nx-s1-5776377/iran-war-updates"
   },
   secondary: [
-    { id: "fn1", title: "Beer Cans, Helium and Mortgages: The Unexpected Economic Casualties of the Iran War", summary: "Beyond oil and gas, the Iran conflict is triggering shortages and price spikes in aluminum, helium, and mortgage markets that are starting to hit consumers' daily lives.", image: "https://static.independent.co.uk/2026/04/07/00/9c2d1ff36728a5119a79ac1de38d4702Y29udGVudHNlYXJjaGFwaSwxNzc1NTk3MzE4-2.84100341.jpg?width=1200&auto=webp&crop=3%3A2", source: "NPR", url: "https://www.npr.org/2026/04/07/nx-s1-5773196/helium-aluminum-mortgages-cost-iran-war", category: "Economics" },
-    { id: "fn2", title: "Ukraine Ramps Up Attacks on Russian Oil to Curb Iran War Windfall", summary: "Kyiv's forces are intensifying strikes on Russia's oil refining and shipping infrastructure as surging global crude prices from the Persian Gulf conflict boost the revenue financing Moscow's war against Ukraine.", image: "https://static01.nyt.com/images/2026/04/07/multimedia/07int-ukraine-russia-oil-01-qgfv/07int-ukraine-russia-oil-01-qgfv-mediumSquareAt3X.jpg", source: "New York Times", url: "https://www.nytimes.com/2026/04/07/world/europe/ukraine-attacks-russian-oil-exports.html", category: "International" },
-    { id: "fn3", title: "JD Vance Backs Orbán's Re-election Bid in Budapest, Drawing Criticism from EU", summary: "US Vice President JD Vance made an unprecedented campaign intervention in Hungary, offering a ringing endorsement of Viktor Orbán ahead of elections while sharply criticizing the European Union.", image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/5723/live/da544df0-3295-11f1-934f-036468834728.jpg", source: "BBC News", url: "https://www.bbc.com/news/articles/cyv16lq2rp1o?at_medium=RSS&at_campaign=rss", category: "Politics" }
+    {
+      id: "fn1",
+      title: "Beer Cans, Helium and Mortgages: The Unexpected Economic Fallout from the Iran War",
+      summary: "The Iran conflict is driving price spikes and shortages across a surprising range of everyday goods and financial products, from aluminium cans to helium supplies and mortgage rates.",
+      image: "https://static01.nyt.com/images/2026/04/07/multimedia/00dc-trump-war-takeaways-lkft/00dc-trump-war-takeaways-lkft-mediumSquareAt3X.jpg",
+      source: "NPR",
+      url: "https://www.npr.org/2026/04/07/nx-s1-5773196/helium-aluminum-mortgages-cost-iran-war",
+      category: "Economics"
+    },
+    {
+      id: "fn2",
+      title: "Ukraine Strikes Russian Oil Infrastructure to Cut Tehran War Windfall to Moscow",
+      summary: "Kyiv is intensifying attacks on Russian refineries and export routes to prevent the Kremlin from capitalising on the oil price surge generated by the Gulf conflict.",
+      image: "https://static01.nyt.com/images/2026/04/07/multimedia/07int-ukraine-russia-oil-01-qgfv/07int-ukraine-russia-oil-01-qgfv-mediumSquareAt3X.jpg",
+      source: "The New York Times",
+      url: "https://www.nytimes.com/2026/04/07/world/europe/ukraine-attacks-russian-oil-exports.html",
+      category: "International"
+    },
+    {
+      id: "fn3",
+      title: "Wireless Festival Cancelled After Kanye West Barred from Entering the UK",
+      summary: "The London music festival has been cancelled after the Home Office blocked headliner Kanye West from travelling to the UK over his history of antisemitic remarks.",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/45da/live/271e4090-32a6-11f1-b4da-a3b95db80b81.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.com/news/articles/c4gxk3kxjr0o?at_medium=RSS&at_campaign=rss",
+      category: "Culture"
+    }
   ]
 };

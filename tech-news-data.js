@@ -4,22 +4,46 @@
 var TECH_NEWS = {
   date: "2026-04-07",
   main: {
-    title: "Trump Warns 'A Whole Civilization Will Die Tonight' as Iran Deadline Looms and Negotiations Collapse",
+    title: "Trump Issues Civilisation-Level Threat to Iran as US-Israel Strikes Intensify Ahead of 8 p.m. Deadline",
     category: "International",
     content: [
-      "President Donald Trump has issued an unprecedented and chilling ultimatum to Iran, warning that 'a whole civilization will die tonight' if Tehran fails to agree to reopen the Strait of Hormuz by his self-imposed 8:00 p.m. Eastern deadline on Tuesday. The remarks, delivered during a combative press conference, represent a dramatic and radical escalation of rhetoric that has alarmed world leaders, military analysts, and humanitarian organizations alike. Iran has reportedly withdrawn from negotiations in response to the threats, raising the specter of a catastrophic intensification of the ongoing conflict.",
-      "The United States and Israel have simultaneously stepped up their military strikes against Iranian targets ahead of the deadline, with Israeli Prime Minister Benjamin Netanyahu declaring that Israel is shifting the 'balance of power' through its intensified bombardment campaign. Reports from Iranian academic institutions allege that US-Israeli attacks have deliberately targeted civilian infrastructure, including universities and AI research hubs, in what Tehran describes as a systematic effort to destroy Iranian scientific progress. The US has denied plans to use nuclear weapons despite Trump's apocalyptic language and alarming comments from Vice President JD Vance that have further stoked fears of a nuclear escalation.",
-      "The economic reverberations of the Iran war are being felt far beyond the Persian Gulf. Oil and gas markets remain in turmoil due to the closure of the Strait of Hormuz, one of the world's most critical shipping chokepoints, but unexpected shortages are now emerging across a range of goods including aluminum for beer cans, helium for industrial and medical use, and rising mortgage rates tied to global financial instability. Analysts warn that prolonged conflict could trigger a broader global recession, with consumer prices spiking in ways that touch virtually every aspect of daily life.",
-      "The geopolitical ripple effects of the war continue to expand. Ukraine has seized the moment to ramp up attacks on Russian oil refining and shipping infrastructure, aiming to cut into the windfall profits Moscow has reaped from surging global crude prices driven by the Persian Gulf conflict. Russia's oil revenues have been financing its ongoing war in Ukraine, and Kyiv's strategists see the disruption of those exports as a critical lever to weaken Russia's military capacity. Meanwhile, Pakistan's recent airstrike on what investigations suggest was a drug rehabilitation center in Kabul — not a military target — underscores the volatile security environment spreading across the broader region.",
-      "As the world watches the clock tick toward Trump's deadline, diplomats and international institutions are scrambling to find any remaining avenue for de-escalation. Iran's withdrawal from talks has left the diplomatic channel all but closed, and the prospect of a wider war involving multiple nations and theaters grows more real by the hour. The humanitarian toll inside Iran is already severe, with critical civilian infrastructure damaged or destroyed, and aid organizations warning that the situation could become exponentially worse if the conflict escalates further. The coming hours may prove to be among the most consequential in modern geopolitical history."
+      "President Donald Trump escalated his rhetoric against Iran to extraordinary levels on Monday, warning that 'a whole civilization will die tonight' if Iranian leaders failed to agree a deal to reopen the Strait of Hormuz by an 8 p.m. Eastern deadline. The threat, delivered at a late-night press conference, marked a dramatic expansion of what had previously been framed as targeted military pressure on Iran's nuclear and military capabilities. Iran's leadership swiftly rejected the ultimatum, with officials declaring the country would not negotiate under such conditions, and reports emerged that Tehran had withdrawn from ongoing backchannel talks.",
+      "The United States and Israel have been conducting a sustained campaign of airstrikes against Iranian infrastructure in the lead-up to the deadline. Verified video footage tracked by BBC News shows attacks on bridges, steel plants, and pharmaceutical facilities across the country, painting a picture of strikes designed to degrade Iran's economic as well as military capacity. In a further indication of the breadth of the campaign, a top Iranian university stated that US-Israeli attacks had specifically targeted the country's academic institutions, including centres involved in AI research and development, which Iran condemned as a systematic assault on civilian sites.",
+      "Diplomatic efforts to avert a broader conflict have been running in parallel with the military campaign. Pakistan has emerged as a key mediator, facilitating backchannel talks between Tehran and Washington, with Vice President JD Vance joining those mediation efforts in a significant and unexpected move. Al Jazeera reported that Iran has sought indirect engagement through Vance, reflecting the complexity of a situation in which direct US-Iran communication remains politically fraught even as both sides appear to be searching for an off-ramp.",
+      "The economic consequences of the conflict are already rippling far beyond the Persian Gulf. NPR reported that the war's disruption to global supply chains is affecting an unlikely range of goods, from beer cans and helium balloons to mortgage rates, as shortages and price spikes multiply across sectors dependent on materials and shipping routes passing through the region. Ukraine, meanwhile, is attempting to exploit the situation strategically: Kyiv has ramped up attacks on Russian oil infrastructure, aiming to limit the windfall that elevated global oil prices — driven by the Persian Gulf conflict — are delivering to Moscow's war economy.",
+      "The United States has moved to deny reports suggesting nuclear options are on the table, but Trump's sweeping language about wiping out a civilisation has sent shockwaves through the international community and raised acute fears about the conflict's trajectory. With the deadline now passed, attention turns to whether Iran's rejection of the ultimatum triggers a further escalation of military action or whether diplomatic channels — particularly Pakistan's mediation role — can still produce a framework for de-escalation. The coming hours are widely regarded as among the most dangerous in the Middle East in decades."
     ],
-    image: "https://images.pexels.com/photos/30868332/pexels-photo-30868332.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    image: "https://static01.nyt.com/images/2026/04/07/multimedia/07dc-military-iran-hltp/07dc-military-iran-hltp-mediumSquareAt3X.jpg",
     source: "NPR",
     sourceUrl: "https://www.npr.org/2026/04/07/nx-s1-5776377/iran-war-updates"
   },
   secondary: [
-    { id: "tc1", title: "JD Vance Backs Orbán's Re-Election Bid in Budapest, Hits Out at EU", summary: "US Vice President JD Vance traveled to Budapest to deliver a ringing endorsement of Hungarian Prime Minister Viktor Orbán ahead of elections, signaling deepening American alignment with Europe's most Russia-friendly leader.", image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/5723/live/da544df0-3295-11f1-934f-036468834728.jpg", source: "BBC News", url: "https://www.bbc.com/news/articles/cyv16lq2rp1o?at_medium=RSS&at_campaign=rss", category: "Politics" },
-    { id: "tc2", title: "WHO Suspends Gaza Medical Evacuations After Contractor Killed by Israeli Troops", summary: "The World Health Organization has halted medical evacuation operations in Gaza after Israeli forces fatally shot a Palestinian contractor driving a vehicle they deemed an 'immediate threat.'", image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/d500/live/3cc9d920-3280-11f1-9fac-89e41bab67f2.jpg", source: "BBC News", url: "https://www.bbc.com/news/articles/c4g8pzpw2g2o?at_medium=RSS&at_campaign=rss", category: "International" },
-    { id: "tc3", title: "NASA Releases First Stunning Images from Artemis II Moon Fly-By", summary: "NASA has published the first images captured during the Artemis II lunar mission, including a breathtaking 'Earthrise' and a solar eclipse as seen from the Moon, while the crew begins its journey home.", image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/4e85/live/d1399600-3284-11f1-b297-95b0a0a8331e.jpg", source: "BBC News", url: "https://www.bbc.com/news/articles/cyv183v02j3o?at_medium=RSS&at_campaign=rss", category: "Science" }
+    {
+      id: "tc1",
+      title: "Artemis II Crew Heads Home After Near-Flawless Lunar Test Flight",
+      summary: "The Artemis II mission has completed what NASA described as a near-flawless crewed test flight around the Moon, with the crew now returning to Earth and raising hopes that a crewed lunar landing is within reach.",
+      image: "https://images.unsplash.com/photo-1526470498-9ae73c665de8?w=800&auto=format&fit=crop",
+      source: "BBC News",
+      url: "https://www.bbc.com/news/articles/cj60nkd8nrko?at_medium=RSS&at_campaign=rss",
+      category: "Science"
+    },
+    {
+      id: "tc2",
+      title: "Wireless Festival Cancelled After Kanye West Blocked from Entering UK",
+      summary: "London's Wireless Festival has been cancelled after the UK government barred Kanye West from entering the country, where he had been due to headline the event in July following widespread criticism over his antisemitic remarks.",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/45da/live/271e4090-32a6-11f1-b4da-a3b95db80b81.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.com/news/articles/c4gxk3kxjr0o?at_medium=RSS&at_campaign=rss",
+      category: "Culture"
+    },
+    {
+      id: "tc3",
+      title: "Pakistan Airstrike on Afghan Rehab Centre Killed Dozens, Investigations Find",
+      summary: "An investigation into one of the deadliest attacks in Afghanistan since the Taliban takeover has found that a Pakistani airstrike struck a drug rehabilitation centre, contradicting Pakistan's claim that it had hit a legitimate military target.",
+      image: "https://static01.nyt.com/images/2026/04/01/multimedia/00int-kabul-strike-families-promo-mzbc/00int-kabul-strike-families-promo-mzbc-mediumSquareAt3X.jpg",
+      source: "The New York Times",
+      url: "https://www.nytimes.com/2026/04/07/world/asia/kabul-drug-rehab-pakistan-airstrike.html",
+      category: "International"
+    }
   ]
 };

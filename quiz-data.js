@@ -3,8 +3,8 @@
 
 window.QUIZ_DATA = {
   date: '2026-04-07',
-  category: 'Ancient History',
-  question: 'Which ancient city, destroyed by a volcanic eruption in the 17th century BCE, is often called the "Minoan Pompeii" and preserved remarkable multi-story buildings with vivid frescoes?',
-  answer: 'Akrotiri on the island of Thera (modern Santorini)',
-  funFact: 'The eruption that buried Akrotiri was one of the largest volcanic events in recorded history, ejecting roughly four times the material of Krakatoa. Unlike Pompeii, no human remains have been found at Akrotiri, suggesting the inhabitants had enough warning to evacuate. Some scholars have proposed that the destruction of Thera inspired Plato\'s legend of Atlantis.'
+  category: 'Philosophy',
+  question: 'Which pre-Socratic philosopher proposed that all matter is composed of four "roots" — earth, water, fire, and air — held together and driven apart by cosmic forces he called Love and Strife?',
+  answer: 'Empedocles of Akragas (c. 490–430 BC), a Sicilian Greek philosopher whose four-element theory heavily influenced Aristotle and dominated Western natural philosophy for nearly two millennia.',
+  funFact: 'Empedocles was one of the most flamboyant figures in ancient thought: he reportedly wore bronze sandals and a golden crown, declaring himself a god. According to legend, he leapt into the crater of Mount Etna to prove his immortality — or to vanish so cleanly that disciples would believe he had ascended. His four-element framework, though ultimately wrong, was the ancient world\'s first serious attempt at a unified theory of matter, anticipating the idea that a small number of fundamental constituents underlie all physical reality.'
 };

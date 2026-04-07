@@ -4,46 +4,46 @@
 var WORLD_NEWS = {
   date: "2026-04-07",
   main: {
-    title: "Trump Warns 'A Whole Civilization Will Die Tonight' as Iran Deadline Looms and Negotiations Collapse",
+    title: "Trump Issues Civilisation-Ending Ultimatum to Iran as Deadline Looms",
     category: "International",
     content: [
-      "President Donald Trump issued his most extreme threat yet against Iran on Tuesday, warning that 'a whole civilization will die tonight' if Iranian leaders fail to agree to a deal reopening the Strait of Hormuz by his self-imposed 8:00 p.m. Eastern deadline. The incendiary rhetoric, which radically expanded the scope of his threats from military targets to the entire Iranian nation, has sent shockwaves through the international community and raised fears of catastrophic escalation. Iran reportedly withdrew from negotiations in response, with officials condemning what they called genocidal language from the American president.",
-      "The United States and Israel have simultaneously stepped up their military strikes across Iran, targeting not only military installations but also civilian infrastructure including academic institutions. Sharif University of Technology, one of Iran's top universities, reported that US-Israeli attacks had specifically targeted facilities tied to the country's scientific progress and artificial intelligence research. Iran has condemned what it describes as a systematic campaign to destroy the foundations of its civilian society, drawing sharp criticism from humanitarian organizations worldwide.",
-      "The crisis, rooted in the closure of the strategically vital Strait of Hormuz, is already sending economic ripple effects far beyond the Persian Gulf region. Shortages and price spikes are emerging across an unexpected range of goods and commodities — from aluminum used in beer cans to helium for medical and industrial applications, and even mortgage rates tied to global financial instability. Oil and gas markets remain in turmoil, with energy prices soaring as one of the world's most critical shipping lanes remains shut down.",
-      "The White House moved to deny reports that nuclear options were under consideration, though comments from Vice President JD Vance and Trump's own apocalyptic language have done little to calm those fears. The denial came amid growing alarm from allies and adversaries alike, with European leaders calling for immediate de-escalation and diplomatic engagement. Meanwhile, Ukraine has seized on the moment to ramp up attacks on Russian oil infrastructure, aiming to curb the windfall that surging energy prices have delivered to Moscow's war effort.",
-      "As the clock ticks toward Trump's deadline, the world watches with a mixture of dread and disbelief at the prospect of a wider conflagration in the Middle East. Humanitarian groups have warned that any large-scale military action against Iran's population centers would constitute a war crime of historic proportions. With Iran reportedly pulling out of talks and the US and Israel intensifying their bombing campaigns, the window for a diplomatic resolution appears to be closing rapidly, leaving millions of lives hanging in the balance."
+      "President Donald Trump dramatically escalated his rhetoric against Iran on Monday, warning that 'a whole civilization will die tonight' if Iranian leaders fail to meet his 8:00 p.m. Eastern deadline to agree to reopen the Strait of Hormuz. The threat, delivered at a press conference, marked a radical expansion of American demands — moving well beyond the waterway dispute to what many observers interpreted as a threat of existential military force against the Iranian nation. Iran's government swiftly rejected the ultimatum, with officials said to be withdrawing from ongoing negotiations entirely.",
+      "The standoff comes amid an intensifying campaign of US-Israeli strikes on Iranian infrastructure that has already targeted bridges, steel plants, and pharmaceutical facilities, with verified video footage documenting the destruction. Al Jazeera reported that a leading Iranian university condemned the attacks as deliberately targeting the country's academic and technological development, including facilities linked to artificial intelligence research. Iran's government characterised the strikes as systematic assaults on civilian sites, raising international alarm about the humanitarian toll of the conflict.",
+      "Behind the scenes, diplomatic channels remain active even as the public rhetoric hardens. Pakistan has been playing a notable mediation role, facilitating backchannel talks between Tehran and Washington, and Vice President JD Vance has become directly involved in those last-ditch efforts. The unusual involvement of the US vice president in Pakistan-brokered indirect diplomacy reflects the urgency felt by multiple parties to find an off-ramp before the deadline passes.",
+      "The economic consequences of the conflict are already spreading far beyond the Persian Gulf region. NPR reported that disruptions linked to the Iran war are driving shortages and price spikes across an unexpected range of goods — from beer cans and helium balloons to mortgage rates — as global supply chains absorb the shock of sustained conflict in a critical shipping corridor. Oil markets have surged, and Ukraine has reportedly begun ramping up strikes on Russian oil infrastructure specifically to deny Moscow the windfall revenues it is earning from elevated crude prices driven by the Gulf conflict.",
+      "The United States separately denied reports of any nuclear component to its military planning against Iran, seeking to tamp down fears that the conflict could escalate to a nuclear dimension. Nevertheless, the combination of Trump's incendiary language, the ongoing bombing campaign, Iran's withdrawal from talks, and a hard deadline expiring Tuesday evening has produced one of the most acute international crises in years. World capitals are watching closely, with the next few hours likely to determine whether a diplomatic resolution remains possible or whether the conflict enters a dangerous new phase.",
     ],
-    image: "https://images.pexels.com/photos/30868332/pexels-photo-30868332.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    image: "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iqp7y9bamkTk/v3/1200x-1.jpg",
     source: "NPR",
     sourceUrl: "https://www.npr.org/2026/04/07/nx-s1-5776377/iran-war-updates"
   },
   secondary: [
     {
       id: "s1",
-      title: "JD Vance Backs Orbán's Re-Election Bid in Budapest, Hits Out at EU",
-      summary: "US Vice President JD Vance traveled to Budapest to deliver a ringing endorsement of Hungarian Prime Minister Viktor Orbán ahead of elections, making clear that Russia is not the only foreign power invested in the strongman leader's political survival.",
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/5723/live/da544df0-3295-11f1-934f-036468834728.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/cyv16lq2rp1o?at_medium=RSS&at_campaign=rss",
-      category: "Politics"
+      title: "Australia Charges Ex-Soldier with Five War-Crime Murders in Afghanistan",
+      summary: "A former Australian soldier has been charged with five counts of murder for alleged war crimes committed in Afghanistan, making him only the second veteran of that campaign to face such charges.",
+      image: "https://images.unsplash.com/photo-1568454537842-d933259bb258?w=800&auto=format&fit=crop",
+      source: "NPR",
+      url: "https://www.npr.org/2026/04/07/g-s1-116644/australia-charges-ex-soldier-with-5-war-crime-murders-in-afghanistan",
+      category: "International"
     },
     {
       id: "s2",
-      title: "WHO Suspends Gaza Medical Evacuations After Contractor Killed by Israeli Troops",
-      summary: "The World Health Organization has halted medical evacuations from Gaza after Israeli forces shot and killed a Palestinian contractor driving a vehicle they claimed posed 'an immediate threat,' further imperiling the territory's devastated healthcare system.",
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/d500/live/3cc9d920-3280-11f1-9fac-89e41bab67f2.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/c4g8pzpw2g2o?at_medium=RSS&at_campaign=rss",
+      title: "WHO Halts Gaza Medical Evacuations After Worker Killed",
+      summary: "The World Health Organization suspended all medical evacuations from Gaza indefinitely after one of its workers was killed, with the incident under investigation.",
+      image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&auto=format&fit=crop",
+      source: "Al Jazeera",
+      url: "https://www.aljazeera.com/news/2026/4/7/who-halts-gaza-medical-evacuations-after-worker-killed?traffic_source=rss",
       category: "International"
     },
     {
       id: "s3",
-      title: "NASA Releases Stunning First Images from Artemis II Moon Fly-By",
-      summary: "NASA released the first breathtaking images captured by the Artemis II crew during their lunar fly-by, including a dramatic Earthrise and views of a solar eclipse seen from the Moon's vicinity, as the crew begins their journey back to Earth.",
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/4e85/live/d1399600-3284-11f1-b297-95b0a0a8331e.jpg",
+      title: "Wireless Festival Cancelled After Kanye West Blocked from Entering UK",
+      summary: "London's Wireless Festival has been cancelled after Kanye West, who was due to headline in July, was barred from entering the United Kingdom over his repeated antisemitic comments.",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/45da/live/271e4090-32a6-11f1-b4da-a3b95db80b81.jpg",
       source: "BBC News",
-      url: "https://www.bbc.com/news/articles/cyv183v02j3o?at_medium=RSS&at_campaign=rss",
-      category: "Science"
+      url: "https://www.bbc.com/news/articles/c4gxk3kxjr0o?at_medium=RSS&at_campaign=rss",
+      category: "Culture"
     }
   ]
 };

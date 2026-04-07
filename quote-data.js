@@ -3,6 +3,6 @@
 
 var QUOTE_DATA = {
   date: "2026-04-07",
-  text: "One must be a sea, to receive a polluted stream without becoming impure.",
-  author: "Friedrich Nietzsche"
+  text: "The map is not the territory.",
+  author: "Alfred Korzybski"
 };
