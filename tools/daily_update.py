@@ -493,13 +493,13 @@ def gen_news(category, var_name, img_key, secondary_ids, focus_hint='', all_arti
     s_imgs   = sec_imgs()
 
     prompt = f"""You are writing a daily news briefing for a personal reading website. Today is {TODAY}.
-
+{(chr(10) + focus_hint + chr(10)) if focus_hint else ''}
 Here are today's real headlines from reputable news sources:
 {art_text}
 
 Output ONLY valid JavaScript — absolutely no explanation, no markdown, no preamble. Start directly with "var {var_name}".
 
-Use only real stories from the headlines above. Write 5 substantial, well-crafted paragraphs for the main story (each at least 3 sentences). Pick the most significant story as the main piece. Write 3 secondary stories with a one-sentence summary each.{(' ' + focus_hint) if focus_hint else ''}
+Use only real stories from the headlines above. Write 5 substantial, well-crafted paragraphs for the main story (each at least 3 sentences). Pick the most category-appropriate story as the main piece — follow the section instructions above strictly. Write 3 secondary stories with a one-sentence summary each.
 
 IMPORTANT: Each story above includes a URL field — use the exact URL provided for that story in the sourceUrl/url fields below.
 
@@ -1283,11 +1283,16 @@ def main():
     log(f"  ✓ {len(all_articles)} articles fetched from {len(all_feed_urls)} feeds")
 
     news_tasks = [
-        ('world',      'WORLD_NEWS',       'world',     ['s1','s2','s3'],   'world-news-data.js',     ''),
-        ('uk_politics','UK_POLITICS_NEWS', 'uk',        ['uk1','uk2','uk3'],'uk-politics-news-data.js',''),
-        ('us_politics','US_POLITICS_NEWS', 'us',        ['us1','us2','us3'],'us-politics-news-data.js',''),
-        ('financial',  'FINANCIAL_NEWS',   'financial', ['fn1','fn2','fn3'],'financial-news-data.js',  'Prioritise stories about businesses, mergers and acquisitions, stocks and shares, and corporate earnings over general economic policy.'),
-        ('tech',       'TECH_NEWS',        'tech',      ['tc1','tc2','tc3'],'tech-news-data.js',       ''),
+        ('world',      'WORLD_NEWS',       'world',     ['s1','s2','s3'],   'world-news-data.js',
+         'This is the WORLD NEWS section. Focus on international affairs, geopolitics, conflicts, diplomacy, and major events outside the UK. The main story must be a genuinely global or international story — not domestic UK or US politics.'),
+        ('uk_politics','UK_POLITICS_NEWS', 'uk',        ['uk1','uk2','uk3'],'uk-politics-news-data.js',
+         'This is the UK POLITICS section. The main story must be specifically about British domestic politics — Westminster, Parliament, UK government policy, political parties, devolved governments, or UK elections. Do NOT use a story about Trump, US politics, or international affairs as the main story even if it is in the feed.'),
+        ('us_politics','US_POLITICS_NEWS', 'us',        ['us1','us2','us3'],'us-politics-news-data.js',
+         'This is the US POLITICS section. The main story must be specifically about American domestic politics — the White House, Congress, US federal policy, US elections, or US political figures. Focus on the political decision-making, not just the international consequences.'),
+        ('financial',  'FINANCIAL_NEWS',   'financial', ['fn1','fn2','fn3'],'financial-news-data.js',
+         'This is the FINANCIAL NEWS section. The main story must be about markets, business, economics, corporate earnings, mergers and acquisitions, or monetary policy. If a political story (e.g. tariffs) has a significant market or economic angle, you may cover its financial impact — but frame it through the economic/market lens, not the political one.'),
+        ('tech',       'TECH_NEWS',        'tech',      ['tc1','tc2','tc3'],'tech-news-data.js',
+         'This is the TECHNOLOGY NEWS section. The main story must be specifically about technology — AI, software, hardware, the tech industry, cybersecurity, space, or science. Do NOT use a political story as the main piece even if it involves tech companies. Pick the most significant genuinely tech-focused story.'),
     ]
 
     for category, var_name, img_key, ids, filename, focus_hint in news_tasks:
