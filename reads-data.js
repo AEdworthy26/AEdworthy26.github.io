@@ -1,19 +1,19 @@
 // reads-data.js
-// Auto-updated 2026-04-01 — do not edit manually
+// Auto-updated 2026-04-07 — do not edit manually
 
 var READS_DATA = {
-  date: "2026-04-01",
+  date: "2026-04-07",
   book: {
-    title: "The Emperor of All Maladies: A Biography of Cancer",
-    author: "Siddhartha Mukherjee",
+    title: "The Warmth of Other Suns: The Epic Story of America's Great Migration",
+    author: "Isabel Wilkerson",
     year: 2010,
-    genres: ["Science", "Medicine", "Biography"],
-    desc: "Siddhartha Mukherjee accomplishes something extraordinary here: he writes the biography of a disease as though it were a character — ancient, cunning, and maddeningly adaptive. Spanning four thousand years from the first recorded case in an Egyptian papyrus to the cutting edge of targeted molecular therapies, the book weaves together science, politics, personal stories of patients and physicians, and the fraught sociology of how we talk about illness. Mukherjee, himself an oncologist, writes with the narrative momentum of a thriller and the empathy of someone who has sat at bedsides delivering terrible news. The result is not depressing but galvanizing — a testament to human persistence against a shape-shifting adversary that has defined modern medicine. It won the Pulitzer Prize for General Nonfiction and remains one of the finest works of science writing published this century.",
-    whyRead: "With AI-driven diagnostics and immunotherapy reshaping oncology right now, understanding how we got here — the blind alleys, the breakthroughs, the hubris — has never felt more urgent or more illuminating.",
-    rating: 4.3,
+    genres: ["History", "Sociology", "Narrative Non-Fiction"],
+    desc: "Isabel Wilkerson spent fifteen years interviewing over a thousand people to tell the story of the Great Migration, the decades-long movement of six million Black Americans from the rural South to cities in the North, Midwest, and West. She follows three individuals in extraordinary, novelistic detail — a sharecropper's wife fleeing Mississippi, a doctor leaving Louisiana, and a young man escaping Florida — weaving their personal journeys into the vast demographic transformation that reshaped American culture, politics, and identity. The writing is luminous and unhurried, granting each life the dignity of deep attention while building an argument about how migration itself is an act of profound courage. It is simultaneously an intimate family saga and a sweeping reinterpretation of twentieth-century America, revealing how much of the nation's music, literature, sport, and civic life was forged by people who simply decided they deserved better. Few books manage to be this rigorously researched and this emotionally overwhelming at the same time.",
+    whyRead: "In a moment when questions of belonging, displacement, and who gets to call a place home feel more urgent than ever, Wilkerson's masterwork reminds us that the most consequential movements in history are often made one brave decision at a time.",
+    rating: 4.4,
     ratingSource: "Goodreads",
     ratingCount: "200,000+",
-    coverUrl: null,
-    amazonUrl: null
+    coverUrl: "https://covers.openlibrary.org/b/id/10129368-L.jpg",
+    amazonUrl: "https://www.amazon.co.uk/dp/1469233010"
   }
 };

@@ -3,6 +3,44 @@
 
 var RICS_LOG = [
   {
+    "date": "2026-04-07",
+    "topic": "S106 Viability Review Mechanisms and Clawback Provisions in Affordable Housing Delivery",
+    "module": "Planning and Development Management",
+    "level": 3,
+    "apc_competency": "Planning and Development Management (Level 3)",
+    "focus": "This lesson examines the mechanics of S106 viability review mechanisms \u2014 early, mid, and late-stage reviews \u2014 and clawback provisions that LPAs deploy to secure deferred affordable housing contributions. Understanding these mechanisms is critical for housing association development managers who must model their financial exposure and negotiate outcomes that protect scheme viability while satisfying planning obligations.",
+    "image": "https://images.unsplash.com/photo-1460317442991-0ec209397118?w=1200&auto=format&fit=crop",
+    "summary": [
+      "S106 viability review mechanisms come in three forms \u2014 early-stage, mid-term, and late-stage \u2014 each triggered by different milestones such as implementation deadlines or sales thresholds.",
+      "Clawback is calculated by comparing outturn profit to the agreed benchmark developer return, with the surplus shared between developer and LPA (typically 60:40 or 50:50), capped at the cost of delivering policy-compliant affordable housing.",
+      "Housing associations like Latimer can leverage their RP integration to negotiate on-site delivery of additional affordable units instead of commuted sums, keeping value within the group.",
+      "Additional affordable units triggered by VRMs may not attract Homes England AHP grant \u2014 appraisals must model these on a nil-grant or RCGF basis to avoid funding gaps.",
+      "Robust cost record-keeping, diarised trigger dates, and ringfenced cashflow provisions are essential risk management measures to protect against adverse clawback outcomes."
+    ],
+    "qa": [
+      {
+        "q": "Can you explain the difference between a late-stage viability review and an early-stage review, and when each would apply to one of your schemes?",
+        "a": "An early-stage review is triggered if a scheme is not implemented within a defined period (typically 18\u201324 months from consent). It tests whether market conditions have improved sufficiently to warrant increased affordable housing provision before construction begins. A late-stage review occurs near completion \u2014 usually at 75\u201380% of market unit sales \u2014 and compares outturn GDV and costs to the original FVA to establish whether a surplus exists. On a Latimer scheme consented below policy on viability grounds, both would typically be required. The early-stage review protects the LPA against land-banking, while the late-stage review captures actual market uplift."
+      },
+      {
+        "q": "How would you calculate the clawback sum on a scheme where outturn profit exceeded the benchmark return?",
+        "a": "I would take the outturn GDV, deduct verified outturn costs (construction, fees, land, finance, marketing), and arrive at the actual profit. I then calculate the benchmark profit by applying the agreed return percentage (e.g., 17.5%) to the outturn GDV. The surplus is the difference between actual and benchmark profit. This surplus is shared per the agreed ratio \u2014 say 60:40 developer:LPA. The LPA's share is capped at the cost of delivering the 'missing' affordable housing to reach policy compliance. On a recent Latimer scheme, this meant the LPA's clawback was limited to approximately \u00a32.4m, being the cost of 15 additional affordable rent units at nil grant."
+      },
+      {
+        "q": "What challenges arise when Homes England grant interacts with VRM-triggered additional affordable units?",
+        "a": "The primary challenge is that AHP grant allocations are agreed at programme entry and are scheme-specific. Additional units triggered by a mid- or late-stage VRM were not in the original Homes England bid, so they typically cannot attract mainstream AHP grant. This means the additional units must be funded from the clawback sum itself, from Recycled Capital Grant Fund, or from cross-subsidy within the Clarion group. In our appraisals, we model the VRM scenario assuming nil grant on clawback units to ensure we understand the true financial exposure."
+      },
+      {
+        "q": "How does Latimer's position as a housing association developer differ from a volume housebuilder in VRM negotiations?",
+        "a": "Our key advantage is vertical integration \u2014 Clarion is both the developer (through Latimer) and the RP taking the affordable units. This means we can offer LPAs on-site delivery of additional affordable housing rather than a commuted sum, which is almost always the LPA's preferred outcome. We can also influence the affordable housing transfer values used in the clawback calculation, because the 'purchaser' is within our group. Volume housebuilders typically negotiate to minimise clawback exposure through inflated cost assumptions; we focus on ensuring any clawback translates into deliverable homes within our programme."
+      },
+      {
+        "q": "What professional guidance governs the conduct of viability reviews, and how do you ensure compliance?",
+        "a": "The primary guidance is the RICS Professional Standard 'Financial Viability in Planning: Conduct and Reporting' (effective 2021), which requires transparency, objectivity, and use of appropriate evidence. The PPG on Viability (updated 2019) sets the government's policy framework, including the use of Existing Use Value plus a premium as Benchmark Land Value. I ensure compliance by instructing RICS-registered valuers for any FVA, maintaining an auditable evidence base for all inputs, and cross-referencing VRM methodology in the S106 agreement with these standards. Where an LPA's viability consultant uses a non-standard approach, I challenge it formally through the planning process."
+      }
+    ]
+  },
+  {
     "date": "2026-04-01",
     "topic": "S106 Viability Review Mechanisms: Overage Clauses and Deferred Affordable Housing Contributions in RP-Led Schemes",
     "module": "Planning and Development Management",
