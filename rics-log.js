@@ -3,6 +3,44 @@
 
 var RICS_LOG = [
   {
+    "date": "2026-04-08",
+    "topic": "S106 Viability Reviews: Late-Stage Review Mechanisms and Clawback in Affordable Housing Delivery",
+    "module": "Planning and Development Management",
+    "level": 3,
+    "apc_competency": "Planning and Development Management (Level 3)",
+    "focus": "This lesson examines the mechanics of late-stage (or post-implementation) S106 viability review mechanisms, focusing on how clawback provisions operate to capture uplift in value for additional affordable housing. This is critical for housing association development managers who must understand how review mechanisms in planning obligations affect scheme viability, grant funding assumptions, and delivery of affordable units.",
+    "image": "https://images.unsplash.com/photo-1460317442991-0ec209397118?w=1200&auto=format&fit=crop",
+    "summary": [
+      "Late-stage S106 viability reviews compare actual outturn costs and revenues against the consented FVA to capture surplus profit for additional affordable housing \u2014 typically triggered at 75\u201385% market sales.",
+      "The surplus is calculated as actual profit minus the agreed developer return benchmark, then shared between the LPA and developer (commonly 60:40), capped at policy-compliant affordable housing delivery.",
+      "For housing associations acting as developer, the agreed profit benchmark must reflect the RP's actual required return (often 6\u20138%), and grant funding interactions (Homes England AHP) must be carefully managed to avoid clawback or compliance issues.",
+      "Negotiating the review mechanism at planning stage is critical \u2014 key variables include trigger points, profit thresholds, cost definitions, surplus sharing splits, and dispute resolution procedures.",
+      "Phased estate regeneration schemes require particularly careful S106 drafting to ensure cost allocation across phases is transparent and review points are appropriately timed."
+    ],
+    "qa": [
+      {
+        "q": "Can you explain how a late-stage viability review mechanism works in practice and give an example from your experience?",
+        "a": "A late-stage review requires submission of an updated FVA at a defined trigger (e.g., 75% market sales), comparing actual GDV, costs, and profit against the consented appraisal. On a recent Latimer scheme, the review identified a \u00a31.5m surplus after applying a 17.5% profit-on-GDV benchmark. Under a 60:40 split, \u00a3900k was due to the LPA. We negotiated delivery of three additional shared ownership units on-site rather than a commuted sum, which aligned with our business plan and allowed us to draw AHP grant on those units."
+      },
+      {
+        "q": "How does the developer return benchmark differ for an RP compared to a private housebuilder in a S106 review, and why does this matter?",
+        "a": "Private housebuilders typically argue for 17\u201320% profit on GDV for market units. An RP like Latimer may operate at 6\u20138% surplus on cost, reflecting lower shareholder return expectations and reinvestment obligations. If the S106 sets the benchmark at 20%, a surplus may never materialise even if values rise significantly. Conversely, if it is set too low, the RP faces excessive clawback risk. I would negotiate a benchmark that reflects the RP's actual required return, supported by board-approved financial parameters, typically around 6% on affordable and 12\u201315% blended."
+      },
+      {
+        "q": "What happens if Homes England grant was applied to a scheme and a late-stage review reveals a surplus \u2014 is there a risk of grant clawback?",
+        "a": "Yes, there is a risk. Homes England's AHP conditions require that grant is necessary for scheme viability. If a late-stage review shows significant surplus, it could imply the scheme was viable without grant, triggering a compliance query. In practice, the S106 surplus and grant are treated as separate mechanisms \u2014 the surplus is shared per the S106, and grant conditions relate to the affordable housing element's viability at the point of drawdown. However, I would flag any surplus risk early to Homes England and ensure our appraisal clearly demonstrates that grant was needed at the point of commitment, even if market conditions subsequently improved."
+      },
+      {
+        "q": "On a phased estate regeneration scheme, how would you structure the late-stage review mechanism to avoid disputes?",
+        "a": "I would ensure the S106 defines each phase as a self-contained review unit with its own trigger, costs, and revenues. Shared infrastructure costs (e.g., spine roads, utilities) would be allocated pro rata to each phase using an agreed methodology fixed at the outset \u2014 typically by unit numbers or gross internal area. Each phase review would use its own benchmark profit threshold. I would also negotiate a mechanism for carrying forward any deficit from earlier phases to offset against surpluses in later phases, to reflect the genuine cross-subsidy economics of estate regeneration."
+      },
+      {
+        "q": "How would you advise your board on the commercial risk of a late-stage review mechanism when recommending a land acquisition?",
+        "a": "I would model a sensitivity analysis in the development appraisal showing the potential clawback under different market growth scenarios \u2014 e.g., 0%, 5%, 10% house price inflation over the build period. I would quantify the maximum clawback exposure (capped at the cost of delivering policy-compliant affordable housing) and present this as a contingent liability. I would also advise on negotiation strategy \u2014 for instance, seeking a higher profit threshold, a more favourable sharing split, or conversion of any surplus into additional on-site units that we as RP would own and manage, converting a cash outflow into a long-term asset. This demonstrates risk-aware advice at Level 3."
+      }
+    ]
+  },
+  {
     "date": "2026-04-07",
     "topic": "Infrastructure Levy Transition under the Planning and Infrastructure Bill: Implications for Affordable Housing Delivery",
     "module": "Spatial Policy and Infrastructure",

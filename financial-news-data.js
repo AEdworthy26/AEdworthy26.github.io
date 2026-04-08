@@ -1,49 +1,25 @@
 // financial-news-data.js
-// Auto-updated 2026-04-07 — do not edit manually
+// Auto-updated 2026-04-08 — do not edit manually
 
 var FINANCIAL_NEWS = {
-  date: "2026-04-07",
+  date: "2026-04-08",
   main: {
-    title: "Trump Issues Civilisation-Level Ultimatum to Iran as Strait of Hormuz Deadline Looms",
-    category: "International",
+    title: "Oil Plunges After US-Iran Ceasefire Deal to Reopen Strait of Hormuz",
+    category: "Commodities & Energy Markets",
     content: [
-      "President Donald Trump issued an extraordinary ultimatum to Iran on Monday, warning that 'a whole civilization will die tonight' if Tehran fails to agree to reopen the Strait of Hormuz by 8:00 p.m. Eastern Time. The threat, delivered at a press conference, represents a radical escalation in rhetoric from an administration that has spent weeks conducting joint military operations with Israel against Iranian infrastructure. Iran has responded defiantly, with officials rejecting the demands outright and the country said to have withdrawn from ongoing negotiations.",
-      "The backdrop to Trump's ultimatum is a sustained US-Israeli military campaign that has targeted a wide range of Iranian assets, including bridges, steel plants, pharmaceutical facilities, and academic institutions. Al Jazeera reports that a leading Iranian university condemned the strikes as a deliberate effort to set back the country's technological and AI capabilities. The BBC has verified videos documenting the scale of the destruction, painting a picture of a systematic campaign against Iran's industrial and civil infrastructure.",
-      "Diplomatic channels have not been entirely closed. Pakistan has been playing an active mediating role, with backchannel talks accelerating in the hours before the deadline. Vice President JD Vance reportedly joined Pakistan's last-ditch mediation efforts, engaging in indirect communications with Tehran through Islamabad. Analysts suggest Iran has been seeking a face-saving formula that allows indirect engagement with Washington without appearing to capitulate to military pressure.",
-      "The economic consequences of the conflict are already reverberating far beyond the Middle East. The closure or threatened closure of the Strait of Hormuz — through which roughly a fifth of global oil passes — has sent energy prices surging and triggered a cascade of secondary effects. NPR reports that shortages and price spikes are emerging across unexpected sectors, including helium supplies used in medical equipment and manufacturing, aluminium inputs affecting consumer goods such as beer cans, and mortgage market volatility driven by energy-cost inflation feeding through to broader interest rate expectations.",
-      "Ukraine has sought to exploit the crisis by ramping up strikes on Russian oil export infrastructure, aiming to deny Moscow a windfall from elevated energy prices driven by the Gulf conflict. Kyiv's forces have targeted refineries and shipping facilities in an effort to offset the revenue boost that higher crude prices provide to the Kremlin's war machine. The interplay between the Iran conflict and the war in Ukraine is creating one of the most complex and interconnected geopolitical and economic environments in decades, with markets, governments, and international institutions all scrambling to respond."
+      "Crude oil prices plummeted in overnight trading after the United States and Iran reached a two-week ceasefire agreement that includes the reopening of the Strait of Hormuz, the critical chokepoint through which roughly one-fifth of the world's daily oil consumption passes. Brent crude futures dropped sharply, with traders rapidly unwinding the risk premium that had built up during weeks of military escalation in the Persian Gulf. The sell-off marks one of the most dramatic single-session declines in energy markets since the onset of hostilities between the US, Israel, and Iran over a month ago.",
+      "The ceasefire deal, announced just before President Trump's Tuesday evening deadline for Iran to reopen the strait or face further devastating strikes, sent shockwaves through global commodity markets. The Strait of Hormuz had been effectively disrupted during the conflict, sending oil prices to multi-year highs and raising fears of a full-blown energy crisis across Asia and Europe. With the provisional truce now in place, tanker operators and energy traders are cautiously assessing whether commercial shipping can safely resume through the waterway in the coming days.",
+      "The broader financial implications of the ceasefire are already rippling across asset classes. Equity futures in Asia and Europe rallied on the news, with energy-intensive sectors such as airlines and manufacturing seeing the sharpest gains. Bond markets also responded, as the easing of geopolitical risk reduced expectations of further inflationary pressure from elevated energy costs, leading to a modest retreat in government bond yields across major economies.",
+      "However, market analysts warn that the two-week nature of the truce introduces significant uncertainty. A provisional ceasefire is far from a lasting peace, and the possibility of a resumption of hostilities after the two-week window could quickly reverse today's price movements. Options markets reflect this caution, with implied volatility on crude oil contracts remaining elevated despite the spot price decline, suggesting traders are hedging against the risk that negotiations could collapse.",
+      "The energy market turmoil has also highlighted the vulnerability of global supply chains to geopolitical disruption in the Gulf region. Ukraine's simultaneous escalation of attacks on Russian oil infrastructure, aimed at curbing Moscow's windfall from elevated crude prices, adds another layer of complexity to the global energy outlook. For central banks worldwide, the ceasefire offers a temporary reprieve from the inflationary pressures of soaring energy costs, but policymakers will be watching closely to see whether the truce holds and whether it can translate into a durable resolution that stabilizes markets for the longer term."
     ],
-    image: "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iqp7y9bamkTk/v3/1200x-1.jpg",
-    source: "NPR",
-    sourceUrl: "https://www.npr.org/2026/04/07/nx-s1-5776377/iran-war-updates"
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/7c92/live/4b2bc340-32d8-11f1-b63d-15080c5ce187.jpg",
+    source: "BBC News",
+    sourceUrl: "https://www.bbc.com/news/articles/c8r40y3rv75o?at_medium=RSS&at_campaign=rss"
   },
   secondary: [
-    {
-      id: "fn1",
-      title: "Beer Cans, Helium and Mortgages: The Unexpected Economic Fallout from the Iran War",
-      summary: "The Iran conflict is driving price spikes and shortages across a surprising range of everyday goods and financial products, from aluminium cans to helium supplies and mortgage rates.",
-      image: "https://static01.nyt.com/images/2026/04/07/multimedia/00dc-trump-war-takeaways-lkft/00dc-trump-war-takeaways-lkft-mediumSquareAt3X.jpg",
-      source: "NPR",
-      url: "https://www.npr.org/2026/04/07/nx-s1-5773196/helium-aluminum-mortgages-cost-iran-war",
-      category: "Economics"
-    },
-    {
-      id: "fn2",
-      title: "Ukraine Strikes Russian Oil Infrastructure to Cut Tehran War Windfall to Moscow",
-      summary: "Kyiv is intensifying attacks on Russian refineries and export routes to prevent the Kremlin from capitalising on the oil price surge generated by the Gulf conflict.",
-      image: "https://static01.nyt.com/images/2026/04/07/multimedia/07int-ukraine-russia-oil-01-qgfv/07int-ukraine-russia-oil-01-qgfv-mediumSquareAt3X.jpg",
-      source: "The New York Times",
-      url: "https://www.nytimes.com/2026/04/07/world/europe/ukraine-attacks-russian-oil-exports.html",
-      category: "International"
-    },
-    {
-      id: "fn3",
-      title: "Wireless Festival Cancelled After Kanye West Barred from Entering the UK",
-      summary: "The London music festival has been cancelled after the Home Office blocked headliner Kanye West from travelling to the UK over his history of antisemitic remarks.",
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/45da/live/271e4090-32a6-11f1-b4da-a3b95db80b81.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/c4gxk3kxjr0o?at_medium=RSS&at_campaign=rss",
-      category: "Culture"
-    }
+    { id: "fn1", title: "Ukraine Ramps Up Attacks on Russian Oil to Curb Iran War Windfall", summary: "Kyiv has intensified strikes on Russian oil refining and shipping infrastructure as the Persian Gulf conflict drives up energy revenues that help finance Moscow's ongoing war against Ukraine.", image: "https://static01.nyt.com/images/2026/04/07/multimedia/07int-ukraine-russia-oil-01-qgfv/07int-ukraine-russia-oil-01-qgfv-mediumSquareAt3X.jpg", source: "New York Times", url: "https://www.nytimes.com/2026/04/07/world/europe/ukraine-attacks-russian-oil-exports.html", category: "Energy & Geopolitics" },
+    { id: "fn2", title: "US-Iran Ceasefire Reached Just Before Trump's Tuesday Deadline", summary: "The provisional two-week truce between the US, Iran, and Israel came moments before a presidential deadline expired, easing immediate fears of further military escalation and sending risk assets higher globally.", image: "https://images.pexels.com/photos/2235130/pexels-photo-2235130.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", source: "New York Times", url: "https://www.nytimes.com/live/2026/04/07/world/iran-war-trump-news", category: "Geopolitics & Markets" },
+    { id: "fn3", title: "World Welcomes US-Iran Ceasefire, Urges Lasting Peace in the Middle East", summary: "Global leaders and governments praised the ceasefire and called for a durable peace agreement, with markets watching closely for signs the truce could be extended beyond its initial two-week window.", image: "https://images.pexels.com/photos/36850210/pexels-photo-36850210.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", source: "Al Jazeera", url: "https://www.aljazeera.com/news/2026/4/8/world-welcomes-us-iran-ceasefire-urges-lasting-peace-in-the-middle-east?traffic_source=rss", category: "International Economics" }
   ]
 };

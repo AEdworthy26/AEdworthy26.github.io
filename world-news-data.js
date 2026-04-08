@@ -1,49 +1,25 @@
 // world-news-data.js
-// Auto-updated 2026-04-07 — do not edit manually
+// Auto-updated 2026-04-08 — do not edit manually
 
 var WORLD_NEWS = {
-  date: "2026-04-07",
+  date: "2026-04-08",
   main: {
-    title: "Trump Issues Civilisation-Ending Ultimatum to Iran as Deadline Looms",
+    title: "US, Iran and Israel Agree to Two-Week Ceasefire as Strait of Hormuz Set to Reopen",
     category: "International",
     content: [
-      "President Donald Trump dramatically escalated his rhetoric against Iran on Monday, warning that 'a whole civilization will die tonight' if Iranian leaders fail to meet his 8:00 p.m. Eastern deadline to agree to reopen the Strait of Hormuz. The threat, delivered at a press conference, marked a radical expansion of American demands — moving well beyond the waterway dispute to what many observers interpreted as a threat of existential military force against the Iranian nation. Iran's government swiftly rejected the ultimatum, with officials said to be withdrawing from ongoing negotiations entirely.",
-      "The standoff comes amid an intensifying campaign of US-Israeli strikes on Iranian infrastructure that has already targeted bridges, steel plants, and pharmaceutical facilities, with verified video footage documenting the destruction. Al Jazeera reported that a leading Iranian university condemned the attacks as deliberately targeting the country's academic and technological development, including facilities linked to artificial intelligence research. Iran's government characterised the strikes as systematic assaults on civilian sites, raising international alarm about the humanitarian toll of the conflict.",
-      "Behind the scenes, diplomatic channels remain active even as the public rhetoric hardens. Pakistan has been playing a notable mediation role, facilitating backchannel talks between Tehran and Washington, and Vice President JD Vance has become directly involved in those last-ditch efforts. The unusual involvement of the US vice president in Pakistan-brokered indirect diplomacy reflects the urgency felt by multiple parties to find an off-ramp before the deadline passes.",
-      "The economic consequences of the conflict are already spreading far beyond the Persian Gulf region. NPR reported that disruptions linked to the Iran war are driving shortages and price spikes across an unexpected range of goods — from beer cans and helium balloons to mortgage rates — as global supply chains absorb the shock of sustained conflict in a critical shipping corridor. Oil markets have surged, and Ukraine has reportedly begun ramping up strikes on Russian oil infrastructure specifically to deny Moscow the windfall revenues it is earning from elevated crude prices driven by the Gulf conflict.",
-      "The United States separately denied reports of any nuclear component to its military planning against Iran, seeking to tamp down fears that the conflict could escalate to a nuclear dimension. Nevertheless, the combination of Trump's incendiary language, the ongoing bombing campaign, Iran's withdrawal from talks, and a hard deadline expiring Tuesday evening has produced one of the most acute international crises in years. World capitals are watching closely, with the next few hours likely to determine whether a diplomatic resolution remains possible or whether the conflict enters a dangerous new phase.",
+      "The United States and Iran have agreed to a provisional two-week ceasefire, pulling back from the brink of a wider conflagration just hours before President Trump's Tuesday evening deadline for Iran to reopen the strategically vital Strait of Hormuz. The deal, which Israel has also signed onto, suspends more than a month of coordinated US and Israeli strikes on Iranian territory and opens the door for the resumption of oil shipments through one of the world's most critical maritime chokepoints. Oil prices plunged immediately on the announcement, as markets priced in the prospect of restored Gulf energy flows after weeks of severe disruption.",
+      "The ceasefire comes at an enormous human and diplomatic cost. Among the most devastating episodes of the conflict was the US strike on a girls' school in the southern Iranian city of Minab, which killed 168 people and has become a rallying point for Iranian grief and anger. Iranians gathered in large numbers on Tuesday to commemorate the victims, with scenes of mourning broadcast widely across the Middle East and beyond, deepening international scrutiny of the conduct of the US-led campaign.",
+      "Global reaction to the truce has been a mixture of relief and caution. Countries across Europe, Asia and the Middle East welcomed the cessation of hostilities and urged both sides to commit fully to the terms, with Pakistan receiving particular praise for its role in facilitating behind-the-scenes negotiations. However, Israeli Prime Minister Benjamin Netanyahu moved swiftly to clarify that the ceasefire does not extend to Lebanon, signalling that Israeli military operations against Hezbollah and other Iranian-linked groups in the region will continue unabated.",
+      "In Washington, the political response was sharply divided. Democrats welcomed the truce but demanded accountability for the scale of destruction and civilian casualties inflicted during weeks of bombing, while also questioning whether President Trump's earlier threats to 'wipe out Iran's civilisation' had undermined America's moral authority. Most Republican lawmakers remained silent, though hawkish voices within the party expressed scepticism about entering negotiations with Tehran, warning that a temporary pause could allow Iran to regroup.",
+      "Analysts say the path to this ceasefire may have fundamentally altered global perceptions of the United States, with the BBC noting that the episode has reshaped how the rest of the world views American power and its willingness to use overwhelming force. The two-week window now raises urgent questions about whether a more lasting peace deal can be reached, or whether hostilities will resume once the truce expires. Meanwhile, the conflict's knock-on effects continue to ripple outward — Ukraine has ramped up attacks on Russian oil infrastructure, seeking to curb the windfall Moscow has reaped from surging energy prices during the Persian Gulf crisis."
     ],
-    image: "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iqp7y9bamkTk/v3/1200x-1.jpg",
-    source: "NPR",
-    sourceUrl: "https://www.npr.org/2026/04/07/nx-s1-5776377/iran-war-updates"
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/7c92/live/4b2bc340-32d8-11f1-b63d-15080c5ce187.jpg",
+    source: "BBC News",
+    sourceUrl: "https://www.bbc.com/news/articles/ce84z6y3ke4o?at_medium=RSS&at_campaign=rss"
   },
   secondary: [
-    {
-      id: "s1",
-      title: "Australia Charges Ex-Soldier with Five War-Crime Murders in Afghanistan",
-      summary: "A former Australian soldier has been charged with five counts of murder for alleged war crimes committed in Afghanistan, making him only the second veteran of that campaign to face such charges.",
-      image: "https://images.unsplash.com/photo-1568454537842-d933259bb258?w=800&auto=format&fit=crop",
-      source: "NPR",
-      url: "https://www.npr.org/2026/04/07/g-s1-116644/australia-charges-ex-soldier-with-5-war-crime-murders-in-afghanistan",
-      category: "International"
-    },
-    {
-      id: "s2",
-      title: "WHO Halts Gaza Medical Evacuations After Worker Killed",
-      summary: "The World Health Organization suspended all medical evacuations from Gaza indefinitely after one of its workers was killed, with the incident under investigation.",
-      image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&auto=format&fit=crop",
-      source: "Al Jazeera",
-      url: "https://www.aljazeera.com/news/2026/4/7/who-halts-gaza-medical-evacuations-after-worker-killed?traffic_source=rss",
-      category: "International"
-    },
-    {
-      id: "s3",
-      title: "Wireless Festival Cancelled After Kanye West Blocked from Entering UK",
-      summary: "London's Wireless Festival has been cancelled after Kanye West, who was due to headline in July, was barred from entering the United Kingdom over his repeated antisemitic comments.",
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/45da/live/271e4090-32a6-11f1-b4da-a3b95db80b81.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/c4gxk3kxjr0o?at_medium=RSS&at_campaign=rss",
-      category: "Culture"
-    }
+    { id: "s1", title: "Pakistan Airstrike Hit Drug Rehab Centre in Kabul, Not Military Target, Investigations Suggest", summary: "Investigations indicate that a Pakistani airstrike described by Islamabad as hitting a military target in Afghanistan actually struck a drug rehabilitation centre, making it the deadliest attack in the country since the Taliban takeover as families search among remains for their relatives.", image: "https://static01.nyt.com/images/2026/04/01/multimedia/00int-kabul-strike-families-promo-mzbc/00int-kabul-strike-families-promo-mzbc-mediumSquareAt3X.jpg", source: "New York Times", url: "https://www.nytimes.com/2026/04/07/world/asia/kabul-drug-rehab-pakistan-airstrike.html", category: "Conflict" },
+    { id: "s2", title: "Ukraine Ramps Up Attacks on Russian Oil to Curb Iran War Windfall", summary: "Ukrainian forces are intensifying strikes against Russian oil refineries and shipping infrastructure, aiming to reduce the surge in revenue Moscow has gained from soaring energy prices caused by the Persian Gulf conflict.", image: "https://static01.nyt.com/images/2026/04/07/multimedia/07int-ukraine-russia-oil-01-qgfv/07int-ukraine-russia-oil-01-qgfv-mediumSquareAt3X.jpg", source: "New York Times", url: "https://www.nytimes.com/2026/04/07/world/europe/ukraine-attacks-russian-oil-exports.html", category: "Conflict" },
+    { id: "s3", title: "Burkina Faso's Military Ruler Tells Citizens to 'Forget About Democracy'", summary: "Captain Ibrahim Traoré, who seized power in a 2022 coup, declared in a state television interview that democracy is 'not for us,' deepening concerns about the erosion of democratic governance across West Africa's Sahel region.", image: "https://images.pexels.com/photos/35590706/pexels-photo-35590706.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", source: "The Guardian", url: "https://www.theguardian.com/world/2026/apr/03/people-burkina-faso-should-forget-about-democracy-military-ruler-ibrahim-traore", category: "Politics" }
   ]
 };
