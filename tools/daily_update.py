@@ -1275,12 +1275,9 @@ def main():
     PAUSE = 5  # seconds between Claude calls to avoid rate limits
 
     # ── News files (RSS + AI summarise) ──────────────────────────────────────
-    # Fetch all feeds once — every category gets the full pool so cross-category
-    # stories (e.g. a Sky News tech story in the UK Politics feed) are considered.
-    log("\n── Fetching all RSS feeds")
-    all_feed_urls = list(dict.fromkeys(url for feeds in RSS.values() for url in feeds))
-    all_articles = fetch_rss(*all_feed_urls)
-    log(f"  ✓ {len(all_articles)} articles fetched from {len(all_feed_urls)} feeds")
+    # Each category fetches ONLY its own RSS feeds so Claude gets category-specific
+    # articles and is not dominated by the same global story across all sections.
+    log("\n── Fetching RSS feeds per category")
 
     news_tasks = [
         ('world',      'WORLD_NEWS',       'world',     ['s1','s2','s3'],   'world-news-data.js',
@@ -1296,7 +1293,9 @@ def main():
     ]
 
     for category, var_name, img_key, ids, filename, focus_hint in news_tasks:
-        js = gen_news(category, var_name, img_key, ids, focus_hint, all_articles=all_articles)
+        category_articles = fetch_rss(*RSS[category])
+        log(f"  ✓ {len(category_articles)} articles for {category}")
+        js = gen_news(category, var_name, img_key, ids, focus_hint, all_articles=category_articles)
         if js:
             header = f"// {filename}\n// Auto-updated {TODAY} — do not edit manually\n\n"
             updated.append(write_file(filename, header + js + '\n'))
