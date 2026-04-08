@@ -1253,7 +1253,7 @@ def git_push(files):
         git_env['HOME'] = os.path.expanduser('~')
 
     cmds = [
-        (['git', '-C', REPO_DIR, 'add'] + files, 'add'),
+        (['git', '-C', REPO_DIR, 'add', '-A'], 'add'),  # stage ALL changes so nothing is missed
         (['git', '-C', REPO_DIR, 'commit', '-m', f'Daily content update {TODAY}'], 'commit'),
         (['git', '-C', REPO_DIR, 'push'], 'push'),
     ]
