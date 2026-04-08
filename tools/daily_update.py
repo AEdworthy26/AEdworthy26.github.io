@@ -1181,59 +1181,25 @@ window.SUGGESTED_RECIPES = [
 # ── Cache buster ──────────────────────────────────────────────────────────────
 
 def bump_cache_busters():
-    """Update ?v= query strings in HTML files so GitHub Pages CDN serves fresh data."""
-    # Map each data file to the HTML page(s) that load it
-    mappings = [
-        # Each dedicated page
-        ('philosophy-data.js',       'philosophy.html'),
-        ('curiosity-data.js',        'curiosity.html'),
-        ('rics-data.js',             'rics-study.html'),
-        ('world-news-data.js',       'world-news.html'),
-        ('uk-politics-news-data.js', 'uk-politics-news.html'),
-        ('us-politics-news-data.js', 'us-politics-news.html'),
-        ('financial-news-data.js',   'financial-news.html'),
-        ('tech-news-data.js',        'tech-news.html'),
-        ('reads-data.js',            'reads.html'),
-        ('films-data.js',            'films.html'),
-        ('suggested-recipes-data.js','recipes.html'),
-        # Everything that feeds personal_hub.html previews
-        ('quote-data.js',                'personal_hub.html'),
-        ('quiz-data.js',                 'personal_hub.html'),
-        ('rics-data.js',                 'personal_hub.html'),
-        ('world-news-data.js',           'personal_hub.html'),
-        ('curiosity-data.js',            'personal_hub.html'),
-        ('philosophy-data.js',           'personal_hub.html'),
-        ('suggested-recipes-data.js',    'personal_hub.html'),
-        ('uk-politics-news-data.js',     'personal_hub.html'),
-        ('us-politics-news-data.js',     'personal_hub.html'),
-        ('financial-news-data.js',       'personal_hub.html'),
-        ('tech-news-data.js',            'personal_hub.html'),
-        ('reads-data.js',                'personal_hub.html'),
-        ('films-data.js',                'personal_hub.html'),
-        ('rics-log.js',                  'rics-log.html'),
-    ]
+    """Update ?v= query strings in every HTML file in the repo so the CDN always serves fresh data."""
     version = datetime.datetime.now().strftime('%Y%m%d%H%M')
     changed = []
-    seen = set()
-    for data_file, html_file in mappings:
+    html_files = [f for f in os.listdir(REPO_DIR) if f.endswith('.html')]
+    for html_file in sorted(html_files):
         html_path = os.path.join(REPO_DIR, html_file)
-        if not os.path.exists(html_path):
-            continue
         with open(html_path, 'r', encoding='utf-8') as f:
             content = f.read()
-        # Replace both versioned and unversioned script src references
+        # Replace ?v=... on any .js script src (versioned or unversioned)
         new_content = re.sub(
-            r'(<script src="' + re.escape(data_file) + r')(\?v=[^"]*)?(")',
+            r'(<script src="[^"]+\.js)(\?v=[^"]*)?(">)',
             lambda m: m.group(1) + f'?v={version}' + m.group(3),
             content
         )
         if new_content != content:
             with open(html_path, 'w', encoding='utf-8') as f:
                 f.write(new_content)
-            if html_file not in seen:
-                log(f"  ✓ Cache-busted: {html_file}")
-                changed.append(html_file)
-                seen.add(html_file)
+            log(f"  ✓ Cache-busted: {html_file}")
+            changed.append(html_file)
     return changed
 
 # ── Git ────────────────────────────────────────────────────────────────────────
