@@ -4,38 +4,86 @@
 var CURIOSITY_DATA = {
   date: "2026-04-13",
   mainArticle: {
-    title: "The Siege of Constantinople, 1453: The Fall That Changed the World",
-    subject: "Fall of Constantinople 1453",
-    subtitle: "How the final collapse of the Roman Empire's last bastion reshaped civilizations, redirected exploration, and launched the modern age.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/b/bb/Byzantine_Constantinople-en.png",
-    readTime: "10 min",
+    title: "The Voyage of the Endurance: Shackleton's Impossible Survival",
+    subject: "Ernest Shackleton Antarctic Expedition",
+    subtitle: "When his ship was crushed by Antarctic ice, Ernest Shackleton made a simple, staggering promise: every man would come home alive.",
+    image: "https://images.pexels.com/photos/31308001/pexels-photo-31308001.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    readTime: "9 min",
     content: [
-      { type: "paragraph", text: "On the morning of May 29, 1453, Ottoman cannons shattered the ancient Theodosian Walls that had protected Constantinople for over a thousand years. Sultan Mehmed II, just twenty-one years old and burning with ambition, led an army of roughly eighty thousand soldiers against a garrison of fewer than eight thousand defenders. By nightfall, the city that had served as the capital of the Eastern Roman Empire for 1,123 years had fallen, and the last Roman emperor, Constantine XI Palaiologos, lay dead among his soldiers. The reverberations of that single day would reshape the political, cultural, and intellectual landscape of the entire world." },
-      { type: "heading", text: "The City Between Two Worlds" },
-      { type: "paragraph", text: "Constantinople had been founded by Emperor Constantine the Great in 330 CE as the \"New Rome,\" strategically straddling the Bosporus strait between Europe and Asia. Its location made it the supreme commercial crossroads of the medieval world, commanding the trade routes linking the Mediterranean to the Black Sea and the overland Silk Road beyond. For centuries, its legendary triple ring of walls, its Greek fire, and its skilled diplomacy had repelled Arabs, Bulgars, Rus Vikings, and Crusaders alike. Even after the catastrophic Fourth Crusade of 1204, which saw Western knights sack the city and establish a Latin empire for six decades, Constantinople was reclaimed by the Byzantines in 1261 and remained a symbol of imperial continuity." },
-      { type: "heading", text: "Mehmed the Conqueror's Grand Obsession" },
-      { type: "paragraph", text: "Mehmed II ascended the Ottoman throne for the second time in 1451, and from the outset, he was fixated on one objective: taking Constantinople. He commissioned the construction of the massive fortress Rumeli Hisarı on the European shore of the Bosporus, choking off naval aid to the city from the Black Sea. He also recruited the Hungarian cannon-maker Urban, who cast the enormous \"Basilica\" bombard — a bronze monster over twenty-seven feet long, capable of hurling stone balls weighing more than half a ton. These preparations signaled to all of Europe that the young sultan was not interested in tribute or treaties; he wanted the city itself." },
-      { type: "heading", text: "The Desperate Defense" },
-      { type: "paragraph", text: "Emperor Constantine XI made frantic appeals to Western Christendom for military aid, but the response was tragically meager. Pope Nicholas V called for a crusade, yet the fractured kingdoms of Europe offered little beyond prayers and a small contingent of Genoese soldiers under the skilled commander Giovanni Giustiniani. The defenders stretched their thin ranks across four miles of land walls, strung a massive iron chain across the Golden Horn to block the Ottoman fleet, and fought with a ferocity born of desperation. For fifty-three days, from April 6 to May 29, they held off an army that outnumbered them nearly ten to one." },
-      { type: "heading", text: "The Walls Breached, the Empire Extinguished" },
-      { type: "paragraph", text: "Mehmed's masterstroke came when he ordered his ships hauled overland on greased wooden rollers, bypassing the great chain and launching them into the Golden Horn behind the defenders' lines. Simultaneous bombardment from land and sea stretched the garrison beyond its breaking point. In the final assault before dawn on May 29, Ottoman Janissaries poured through a breach near the Gate of St. Romanus, and Giustiniani was gravely wounded and carried from the walls. Constantine XI reportedly cast aside his imperial regalia and charged into the onrushing enemy, choosing death over surrender — his body was never conclusively identified." },
-      { type: "heading", text: "The Intellectual Exodus and the Renaissance" },
-      { type: "paragraph", text: "The fall of Constantinople sent a wave of Greek scholars, manuscripts, and classical knowledge westward into Italy and beyond. Figures like Basilios Bessarion, George of Trebizond, and Demetrius Chalcondyles carried with them the philosophical and scientific texts of ancient Greece, many of which had been preserved only in Byzantine libraries. This influx supercharged the Italian Renaissance, deepening Western Europe's engagement with Plato, Aristotle, and the mathematical works of antiquity. The printing revolution, already underway with Gutenberg's press, ensured that these recovered texts would spread with unprecedented speed across the continent." },
-      { type: "paragraph", text: "Ottoman control of the eastern Mediterranean also disrupted traditional overland trade routes to Asia, creating urgent economic incentives for European kingdoms to seek alternative paths. Within decades, Portuguese navigators were rounding the Cape of Good Hope, and Christopher Columbus was sailing westward in search of a new route to the Indies. The Age of Exploration, with all its transformative and devastating consequences, was in no small part a downstream effect of the Ottoman conquest. The fall of one ancient city thus became one of the great hinges on which modern history turned." },
-      { type: "paragraph", text: "Today, the Hagia Sophia — once the greatest cathedral in Christendom, then an Ottoman mosque, later a museum, and now a mosque again — stands as a living palimpsest of Constantinople's layered history. The Theodosian Walls, though battered and crumbling, still trace their ancient path through the neighborhoods of modern Istanbul. The siege of 1453 remains one of history's most dramatic turning points: the death of an empire that traced its lineage to Augustus, the birth of a new imperial order under the Ottomans, and the catalyst for an age of exploration and intellectual renewal that would reshape every corner of the globe." }
+      {
+        type: "paragraph",
+        text: "In August 1914, as Europe lurched into the bloodiest war it had ever known, a small wooden ship slipped quietly out of London's docks and pointed its bow toward the bottom of the world. The ship was called Endurance, and its commander was Ernest Shackleton, an Irish-born Anglo explorer who had already twice reached the fringes of the South Pole and returned hungry for more. His plan was breathtakingly audacious: to cross the entire Antarctic continent on foot, nearly 1,800 miles of ice, cold, and absolute desolation. He would achieve none of it — and in failing, create one of the most astonishing survival stories in human history."
+      },
+      {
+        type: "heading",
+        text: "A Ship Swallowed by the Ice"
+      },
+      {
+        type: "paragraph",
+        text: "The Weddell Sea, which Shackleton needed to cross to reach the Antarctic landmass, is among the most treacherous bodies of water on Earth. Its pack ice shifts without warning, driven by currents and winds that seem almost sentient in their malice. By January 1915, Endurance was locked fast, gripped by ice floes that closed around her hull like a slow fist. For nearly ten months, Shackleton and his 27-man crew lived aboard a ship that was going nowhere, drifting with the pack as it circled deeper into the Weddell Sea."
+      },
+      {
+        type: "heading",
+        text: "The Crushing of the Endurance"
+      },
+      {
+        type: "paragraph",
+        text: "By October 1915, the ice had begun its final, pitiless work. The pressure of millions of tons of shifting floe buckled Endurance's timbers, opened her seams, and drove water into her hold faster than any pump could handle. On November 21, 1915, she slipped beneath the ice, taking the expedition's original mission with her. The men were left standing on an enormous sheet of drifting sea ice, 27 souls with three lifeboats, tents, and whatever provisions they could haul from the stricken ship. Shackleton is said to have looked at the spot where Endurance disappeared and simply said, 'Ship and stores have gone — so now we'll go home.'"
+      },
+      {
+        type: "heading",
+        text: "The Open-Boat Journey"
+      },
+      {
+        type: "paragraph",
+        text: "For five months the men camped on the ice, surviving on seal meat and penguin, waiting for the floes to drift toward land. When the ice began to break up, they launched the lifeboats into the most hostile sea in the world. After seven days of extraordinary suffering — frostbite, salt-soaked clothes, near-capsizing in hurricane-force winds — they reached the desolate, uninhabited shore of Elephant Island. It was the first time any of them had stood on solid ground in nearly 500 days, and several men wept openly at the sensation of rock beneath their boots."
+      },
+      {
+        type: "heading",
+        text: "800 Miles to South Georgia"
+      },
+      {
+        type: "paragraph",
+        text: "Elephant Island was a dead end: no ships passed it, no rescue would come. Shackleton made the only decision available to a man who had promised to bring everyone home. He selected five companions — including the brilliant carpenter Harry McNish and the skilled sailor John Vincent — and set out in the largest of the lifeboats, the James Caird, for South Georgia Island, 800 miles away across the Drake Passage. The Drake Passage is, by nearly universal agreement among sailors, the most dangerous stretch of ocean on the planet, where Southern Ocean swells can reach 100 feet and winds howl continuously at storm force. The crossing took 16 days."
+      },
+      {
+        type: "paragraph",
+        text: "Navigator Frank Worsley, using only a sextant and dead reckoning in conditions that rarely allowed him a clear view of the sun, guided the James Caird to within sight of South Georgia with accuracy that later navigators called almost miraculous. They landed on the wrong side of the island, however — the uninhabited southern coast — which meant that Shackleton, Worsley, and the expedition's second officer Tom Crean had to cross the island's unmapped, glacier-covered mountain interior on foot, without proper equipment, in a single 36-hour push. When they staggered into the whaling station at Stromness, the Norwegian whalers who met them did not at first recognise them as human beings at all."
+      },
+      {
+        type: "heading",
+        text: "The Rescue and the Reckoning"
+      },
+      {
+        type: "paragraph",
+        text: "It took Shackleton four attempts and four months to reach Elephant Island, where the 22 men he had left behind had survived by sheltering under two overturned lifeboats and eating whatever the sea provided. On August 30, 1916, his rescue ship finally broke through the ice and he counted every head from the rail: all 22 were alive. Not a single life had been lost from the moment Endurance was beset in the ice to the moment the last man stepped aboard the rescue vessel. In the context of what they had endured, it was a result that bordered on the supernatural."
+      },
+      {
+        type: "heading",
+        text: "Why Shackleton Still Matters"
+      },
+      {
+        type: "paragraph",
+        text: "Leadership scholars have studied Shackleton's methods for a century, and the lessons remain surprisingly modern. He kept morale alive through fierce attention to equality — everyone ate the same food, no man was exempt from work, and Shackleton himself always gave the warmest sleeping bag to whoever seemed coldest. He made a practice of placing his most troublesome and anxious men in his own tent, where he could manage them personally rather than let discontent fester through the camp. In conditions that had broken far better-equipped expeditions, 28 men emerged with their lives and — by most accounts — a peculiar, ferocious loyalty to the boss who had kept his word."
+      },
+      {
+        type: "paragraph",
+        text: "The Endurance story is also a reminder that failure and heroism are not opposites. Shackleton never crossed Antarctica, never planted a flag at the South Pole, never achieved what he had actually set out to do. What he achieved instead was something rarer and harder to quantify: the complete preservation of human life against odds that by any rational calculation should have killed every one of them. The wreck of Endurance was finally located by expedition in March 2022, lying on the Weddell Sea floor exactly where Worsley's meticulous navigation said it would be — upright, largely intact, and still bearing the name on her stern that turned out to be the most perfectly chosen word in the history of exploration."
+      }
     ]
   },
   personOfTheDay: {
-    name: "Ibn Battuta",
-    lifespan: "1304–1368",
-    category: "Exploration & Travel",
-    image: "https://upload.wikimedia.org/wikipedia/commons/9/9c/Handmade_oil_painting_reproduction_of_Ibn_Battuta_in_Egypt%2C_a_painting_by_Hippolyte_Leon_Benett..jpg",
-    bio: "Abu Abdullah Muhammad Ibn Battuta was born in Tangier, Morocco, in 1304, into a family of Islamic legal scholars. At the age of twenty-one, he set out on a pilgrimage to Mecca — a journey that would stretch into nearly three decades of continuous travel across the known world. By the time he returned home for the final time, he had traversed an estimated seventy-five thousand miles, visiting territories spanning from West Africa to China and from the Volga River to the Maldives.\n\nIbn Battuta's voyages took him through the crumbling remnants of the Mongol Empire, the flourishing Sultanate of Delhi, the maritime kingdoms of Southeast Asia, and the trading cities of the Swahili Coast. He served as a judge in the Maldives, narrowly survived pirate attacks in the Indian Ocean, and witnessed the Black Death as it ravaged the Middle East. Unlike many travelers of his era, he was driven not only by religious devotion but by an insatiable curiosity about the diversity of human societies, governance, and customs.\n\nUpon his return to Morocco around 1354, the Marinid sultan commissioned the scholar Ibn Juzayy to record Ibn Battuta's accounts, producing the celebrated work known as the \"Rihla\" (The Journey). Though some modern historians have questioned certain details and suspect embellishments, the Rihla remains one of the most extraordinary travel narratives ever written, offering an unparalleled panorama of the fourteenth-century Islamic world and beyond. Ibn Battuta died in Morocco around 1368, largely forgotten for centuries until European scholars rediscovered his work in the nineteenth century, securing his place as one of history's greatest explorers."
+    name: "Harriet Tubman",
+    lifespan: "c. 1822–1913",
+    category: "Activism & Remarkable Lives",
+    image: "https://upload.wikimedia.org/wikipedia/commons/b/b4/Carte-de-visite_portrait_of_Harriet_Tubman_%28cropped%29.jpg",
+    bio: "Harriet Tubman was born into slavery on a Maryland plantation around 1822, one of nine children belonging to Rit and Ben Ross. Her given name was Araminta Ross — she later took her mother's name, Harriet — and from childhood she was hired out to neighboring farms, where she suffered brutal treatment including a near-fatal blow to the head from a two-pound iron weight thrown by an overseer. That injury caused neurological damage that gave her sudden, unpredictable episodes of unconsciousness for the rest of her life, which she interpreted as visions from God.\n\nIn 1849, facing the prospect of being sold further south, Tubman escaped to Philadelphia alone, traveling roughly 90 miles through hostile territory guided by the stars and a network of antislavery helpers who would come to be known as the Underground Railroad. What distinguished Tubman from the many thousands who escaped slavery and quietly disappeared into free society was what she did next: she went back. Over the following decade she made approximately 13 missions into slave territory and led roughly 70 people — family members, strangers, and everyone in between — to freedom. She was never caught, and she never lost a passenger, a record she attributed simply to the fact that she never gave runaways the option of turning back.\n\nDuring the Civil War, Tubman served the Union Army as a spy, scout, and nurse, becoming the first woman in American history to lead an armed raid when she guided Colonel James Montgomery and 150 Black Union soldiers up the Combahee River in June 1863, liberating more than 700 enslaved people in a single night. After the war she settled in Auburn, New York, where she spent her remaining decades advocating for women's suffrage alongside Susan B. Anthony and Elizabeth Cady Stanton, and founded a home for elderly African Americans. She died in 1913, reportedly telling the friends gathered around her, 'I go to prepare a place for you' — the same words she had once used to encourage exhausted freedom-seekers on the cold trails north."
   },
   onThisDay: {
-    headline: "Edict of Nantes Grants Religious Freedom to French Protestants",
-    date: "April 13, 1598",
-    summary: "On April 13, 1598, King Henry IV of France signed the Edict of Nantes, granting substantial civil and religious rights to the country's Huguenot Protestant minority. The edict was a landmark attempt to end the devastating French Wars of Religion, which had torn the kingdom apart for over three decades with massacres, sieges, and political assassinations — most infamously the St. Bartholomew's Day Massacre of 1572.\n\nThe edict allowed Protestants to worship freely in designated areas, hold public office, and maintain certain fortified towns as guarantees of their safety. Though it fell short of full equality and was deeply resented by Catholic hardliners, it represented one of the earliest major state-level experiments in religious toleration in European history. Its eventual revocation by Louis XIV in 1685 would drive hundreds of thousands of Huguenots into exile, but its original passage remained a powerful precedent for the idea that a nation could accommodate more than one faith.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/6/6f/P1040908_Paris_XVI_rue_Cortambert_n%C2%B019_temple_de_Passy-Annonciation_rwk.JPG"
+    headline: "THE EDICT OF MILAN: ROME GRANTS RELIGIOUS FREEDOM",
+    date: "April 13, 313",
+    summary: "On April 13, 313, the Roman Emperor Licinius formally published in Nicomedia the landmark agreement that would transform the religious landscape of the Western world. The Edict of Milan, concluded earlier that year between Licinius and his co-emperor Constantine I, proclaimed full religious toleration throughout the Roman Empire, ending two and a half centuries of intermittent, and sometimes savage, persecution of Christians. For the first time, Roman law explicitly recognized that all people — not merely followers of approved cults — had the right to worship according to their own conscience.",
+    summary: "The edict went considerably further than mere toleration: it ordered the restoration of property confiscated from Christian communities and individuals during the persecutions of Diocletian and his successors, and it required compensation to be paid from the imperial treasury when direct return was impossible. This was an act of breathtaking administrative generosity, or political calculation, or both — historians have never entirely settled the question of how deeply Constantine's famous conversion had actually reshaped his beliefs versus his ambitions. What is beyond dispute is the practical consequence: Christianity, which had been a persecuted minority faith meeting in private homes and caves, was now a legally protected institution with property rights, and it would never look back.\n\nThe long-term reverberations of that April publication in Nicomedia are almost impossible to overstate. Within a century, Christianity would become the official religion of the Roman Empire under Theodosius I, and the institutional church that grew directly from the post-Milan era would shape European law, art, politics, philosophy, and daily life for the next seventeen centuries. The Edict of Milan is one of those rare historical documents where it is not an exaggeration to say that a single piece of imperial administration changed the course of civilization.",
+    image: "https://images.pexels.com/photos/36427813/pexels-photo-36427813.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
   }
 };

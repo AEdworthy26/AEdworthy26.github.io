@@ -3,6 +3,6 @@
 
 var QUOTE_DATA = {
   date: "2026-04-13",
-  text: "One must be a sea, to receive a polluted stream without becoming impure.",
-  author: "Friedrich Nietzsche"
+  text: "The universe is not required to be in perfect harmony with human ambition.",
+  author: "Carl Sagan"
 };
