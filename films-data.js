@@ -1,18 +1,18 @@
 // films-data.js
-// Auto-updated 2026-04-11 — do not edit manually
+// Auto-updated 2026-04-13 — do not edit manually
 
 var FILMS_DATA = {
-  date: "2026-04-11",
+  date: "2026-04-13",
   film: {
-    title: "Spirited Away",
-    director: "Hayao Miyazaki",
-    year: 2001,
-    genres: ["Animation", "Fantasy", "Adventure"],
-    desc: "When ten-year-old Chihiro stumbles into a spirit world of gods, witches, and shape-shifters, she must find the courage and resourcefulness to free her parents and survive a realm that runs on ancient, mercurial rules. Miyazaki constructs one of cinema's most breathtaking imaginative landscapes — a sprawling bathhouse for spirits, a train that glides over an endless shallow sea, creatures that shift between menace and tenderness without warning. The film works as both a coming-of-age fable about labor, identity, and greed, and a pure sensory experience where every frame hums with hand-drawn life. Joe Hisaishi's luminous score carries the emotional weight of each transformation, from No-Face's lonely hunger to Haku's soaring liberation. It remains the highest-grossing film in Japanese history and the only hand-drawn animated feature to win the Academy Award for Best Animated Feature.",
-    cast: ["Rumi Hiiragi", "Miyu Irino", "Mari Natsuki"],
-    rating: 97,
+    title: "The Umbrellas of Cherbourg",
+    director: "Jacques Demy",
+    year: 1964,
+    genres: ["Musical", "Romance"],
+    desc: "Jacques Demy's ravishing sung-through musical follows Geneviève, a young umbrella-shop girl in a rain-soaked French port town, whose passionate love affair with a mechanic named Guy is torn apart by the Algerian War and the quiet cruelties of circumstance. Every single line of dialogue is sung — not in grand operatic fashion, but in tender, conversational melodies by Michel Legrand that blur the line between speech and song until the whole world feels like it's humming. Demy drenches each frame in saturated candy-colored production design, making the ordinary streets and wallpapered rooms of Cherbourg look like the inside of a broken heart trying to stay beautiful. Catherine Deneuve, luminous at twenty, carries the film with a face that registers every shade of hope and resignation. It is one of cinema's most achingly bittersweet love stories — a film that argues life goes on, and that going on is both the consolation and the tragedy.",
+    cast: ["Catherine Deneuve", "Nino Castelnuovo", "Anne Vernon"],
+    rating: 95,
     ratingSource: "Rotten Tomatoes",
-    ratingExtra: "1 Academy Award (Best Animated Feature)",
-    posterUrl: "https://upload.wikimedia.org/wikipedia/en/d/db/Spirited_Away_Japanese_poster.png"
+    ratingExtra: "Palme d'Or, 1964 Cannes Film Festival",
+    posterUrl: "https://upload.wikimedia.org/wikipedia/en/c/cc/The_Umbrellas_of_Cherbourg_%281964_film%29_poster.jpg"
   }
 };

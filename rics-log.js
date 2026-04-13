@@ -3,6 +3,45 @@
 
 var RICS_LOG = [
   {
+    "date": "2026-04-13",
+    "topic": "S106 Viability Review Mechanisms: Overage Clauses and Deferred Affordable Housing Contributions in RP-Led Schemes",
+    "module": "Planning and Development Management",
+    "level": 3,
+    "apc_competency": "Planning and Development Management (Level 3)",
+    "focus": "This lesson examines how S106 viability review mechanisms \u2014 particularly overage/clawback clauses and deferred contributions \u2014 operate in housing association-led developments. It explores the interplay between LPA expectations, Homes England funding conditions, and RP financial planning, which is critical knowledge for APC candidates managing planning obligations at Latimer/Clarion.",
+    "image": "https://images.unsplash.com/photo-1460317442991-0ec209397118?w=1200&auto=format&fit=crop",
+    "content": [],
+    "summary": [
+      "VRMs in S106 agreements (early, mid, late-stage reviews) allow LPAs to capture surplus scheme value as additional affordable housing or commuted sums \u2014 housing associations must manage these proactively, not reactively.",
+      "For RP-led schemes, the S106 negotiation stage is critical: secure a fixed BLV, define blended developer return (6% affordable / 15-20% market), and ensure grant funding is reflected in the surplus calculation.",
+      "Overage exposure on cross-subsidy models can compress already-thin RP margins \u2014 sensitivity test VRM scenarios in the development appraisal before committing to land.",
+      "Deferred contribution mechanisms can be strategically useful for phased RP schemes but must align with Homes England AHP grant milestones and drawdown schedules.",
+      "RICS Professional Statement on Financial Viability in Planning governs FVA preparation and review \u2014 APC candidates must demonstrate awareness of this standard and the ethical obligations it imposes, particularly for mission-driven organisations."
+    ],
+    "qa": [
+      {
+        "q": "Can you explain how a late-stage viability review mechanism works in practice, and what steps you would take at Latimer to prepare for one?",
+        "a": "A late-stage VRM is triggered when typically 75-90% of market sale units are sold. The developer submits an updated FVA using outturn data \u2014 actual sales revenues, verified construction costs, and finance costs incurred \u2014 compared against the original appraisal assumptions. If a surplus exists above the agreed benchmark land value and target developer return, it is shared (commonly 60:40 LPA:developer). At Latimer, I would: (1) maintain a live cost and revenue tracker from project inception to ensure no data gaps at review; (2) ensure the original S106 clearly defines the methodology, inputs, and dispute resolution; (3) model VRM scenarios in the original appraisal so the board understands exposure; (4) engage an independent cost consultant to verify outturn costs; and (5) consider whether converting any overage into additional in-kind affordable units (rather than commuted sum) is more aligned with Latimer's mission and Clarion's strategic objectives."
+      },
+      {
+        "q": "How does the treatment of Homes England AHP grant funding affect the surplus calculation in a viability review?",
+        "a": "This is a critical negotiation point. If grant is excluded from the FVA inputs, the surplus calculation could overstate the developer's profit \u2014 because grant reduces the RP's cost base but isn't shown as reducing the 'gap'. Conversely, if grant is included as revenue, it directly reduces any apparent surplus. At Latimer, I would argue for grant to be treated as a scheme-specific revenue input that reduces residual land value and therefore surplus. The S106 should explicitly state this treatment. Additionally, if a VRM triggers additional affordable units, I would consult Homes England on whether further grant is available or whether the additional units should be delivered grant-free \u2014 being mindful that Homes England's CFG requires the RP to demonstrate additionality and value for money, not to cross-subsidise grant-funded schemes with overage receipts."
+      },
+      {
+        "q": "What is the difference between a formulaic and open-book viability review approach, and which is more appropriate for a housing association?",
+        "a": "A formulaic approach uses pre-agreed indices (e.g., BCIS for cost inflation, Land Registry HPI for value changes) applied mechanistically to the original FVA inputs \u2014 it is quicker, cheaper, and more certain but less accurate. An open-book approach requires full disclosure of actual costs and revenues, reviewed by an independent assessor \u2014 it is more accurate but time-consuming and potentially contentious. For a housing association like Latimer, I would generally favour a formulaic approach for early/mid-stage reviews (where outturn data is incomplete) and an open-book approach for late-stage reviews (where actual data exists). The key advantage of formulaic for RPs is that it avoids detailed scrutiny of internal cost allocations and overheads, which can be complex in group structures like Clarion. However, on large schemes where the RP has achieved genuine cost savings through efficient procurement, an open-book review might demonstrate lower surplus than a formulaic approach."
+      },
+      {
+        "q": "How would you negotiate the target developer return in a S106 VRM clause to protect Latimer's position on a mixed-tenure scheme?",
+        "a": "I would argue for a blended target return reflecting the different risk profiles of each tenure: 6% on cost for affordable rented units (reflecting near-certain income and low void risk), 8-10% on shared ownership (moderate sales risk), and 15-20% on GDV for market sale (full market risk). This is consistent with the RICS Financial Viability guidance and the approach accepted by the GLA's viability team. A flat 15-20% on total GDV would significantly understate the appropriate return because it doesn't reflect that 60%+ of the scheme is low-risk affordable tenure. I would also ensure the return is measured on a risk-adjusted basis \u2014 if Latimer takes on abnormal site remediation risk, for example, this should be reflected in a higher return threshold. The S106 should define return clearly: profit on cost, profit on GDV, or IRR, to avoid ambiguity at review stage."
+      },
+      {
+        "q": "What ethical considerations arise for an RICS member working for a housing association when engaging with viability review mechanisms?",
+        "a": "Under RICS Rule 1 (Act with integrity), an RICS member must not present misleading information in an FVA \u2014 this applies equally to inflating costs to suppress surplus as to understating affordable housing need. For an RP like Latimer, there is an additional dimension: the organisation's charitable/social purpose means that minimising affordable housing output through viability arguments is fundamentally inconsistent with its mission. In practice, this means I must ensure FVAs are prepared in accordance with the RICS Professional Statement on Financial Viability in Planning (2021), using transparent and evidence-based inputs. If an external consultant proposes aggressive assumptions to minimise overage exposure, I have a duty to challenge this. Equally, I must act in my employer's legitimate commercial interests \u2014 Latimer needs viable schemes to continue delivering affordable housing at scale. The balance is ensuring honesty and transparency while robustly negotiating terms that protect the organisation's ability to deliver its programme."
+      }
+    ]
+  },
+  {
     "date": "2026-04-11",
     "topic": "S106 Renegotiation and Viability Review Mechanisms in Affordable Housing Delivery",
     "module": "Planning and Development Management",

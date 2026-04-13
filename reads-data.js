@@ -1,19 +1,19 @@
 // reads-data.js
-// Auto-updated 2026-04-11 — do not edit manually
+// Auto-updated 2026-04-13 — do not edit manually
 
 var READS_DATA = {
-  date: "2026-04-11",
+  date: "2026-04-13",
   book: {
-    title: "The Warmth of Other Suns",
-    author: "Isabel Wilkerson",
+    title: "The Emperor of All Maladies: A Biography of Cancer",
+    author: "Siddhartha Mukherjee",
     year: 2010,
-    genres: ["Narrative Non-Fiction", "History", "Sociology"],
-    desc: "Isabel Wilkerson spent fifteen years interviewing over a thousand people to reconstruct the Great Migration, the decades-long movement of six million Black Americans from the rural South to cities across the North and West. She braids together the stories of three individuals — a sharecropper's wife, a surgeon, and a young man fleeing Jim Crow — into a sweeping narrative that reads with the tension and emotional depth of a novel. The result is a work that reshapes how we understand modern American cities, culture, and identity, revealing the Migration as one of the most consequential and underappreciated demographic events in the nation's history. Wilkerson's prose is luminous, her reporting meticulous, and her empathy for her subjects boundless, making this both rigorous social science and deeply moving literature.",
-    whyRead: "In an era of ongoing debates about belonging, displacement, and who gets to call a place home, Wilkerson's masterpiece feels more essential than ever — it's the rare book that permanently changes the lens through which you see an entire country.",
-    rating: 4.5,
+    genres: ["Science", "Medicine", "Biography"],
+    desc: "Siddhartha Mukherjee crafts what he calls a 'biography' of cancer — tracing the disease from its first documented appearance in an ancient Egyptian papyrus through the brutal optimism of radical surgery, the dawn of chemotherapy, and the molecular revolution that is reshaping treatment today. It reads like a thriller, weaving the stories of patients, obsessive researchers, and political advocates into a narrative that is both heartbreaking and exhilarating. Mukherjee, himself a practicing oncologist, writes with the precision of a scientist and the empathy of a novelist, making fiendishly complex biology feel vivid and urgent. The book won the Pulitzer Prize for General Nonfiction and has become one of the definitive works of popular science writing of the 21st century. What lingers is not despair but a hard-won sense of wonder at how much ingenuity humans have thrown at their most relentless adversary.",
+    whyRead: "With cancer research accelerating through AI-driven drug discovery and immunotherapy breakthroughs, Mukherjee's masterwork gives you the deep backstory to understand why every new headline matters — and why the fight is far from simple.",
+    rating: 4.4,
     ratingSource: "Goodreads",
-    ratingCount: "250,000+",
-    coverUrl: "https://covers.openlibrary.org/b/id/10129368-L.jpg",
-    amazonUrl: "https://www.amazon.co.uk/dp/1469233010"
+    ratingCount: "290,000+",
+    coverUrl: "https://covers.openlibrary.org/b/id/11320203-L.jpg",
+    amazonUrl: "https://www.amazon.co.uk/dp/6073196512"
   }
 };

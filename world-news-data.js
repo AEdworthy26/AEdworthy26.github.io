@@ -1,49 +1,49 @@
 // world-news-data.js
-// Auto-updated 2026-04-11 — do not edit manually
+// Auto-updated 2026-04-13 — do not edit manually
 
 var WORLD_NEWS = {
-  date: "2026-04-11",
+  date: "2026-04-13",
   main: {
-    title: "US-Iran Peace Talks Begin in Islamabad as Vance Leads American Delegation",
-    category: "International Diplomacy",
+    title: "Orbán Era Swept Away as Péter Magyar Wins Hungary Election in Landslide",
+    category: "International Politics",
     content: [
-      "The highest-level diplomatic engagement between the United States and Iran since the 1979 Islamic Revolution is set to get underway in Islamabad, as Vice President JD Vance travels to Pakistan to lead the American negotiating team. An Iranian delegation has already arrived in the Pakistani capital ahead of what are being described as historic face-to-face peace talks aimed at ending the war in Iran. The talks come amid a fragile ceasefire, though significant uncertainty remains over whether a durable long-term agreement can be reached between the two deeply distrustful adversaries.",
-      "Pakistan's Prime Minister Shehbaz Sharif has described the upcoming negotiations as 'make or break,' underscoring the enormous stakes riding on the diplomatic effort. Pakistan's ambassador to the United States told Al Jazeera that weeks of intense behind-the-scenes diplomacy have produced a shared commitment from all sides to engage meaningfully. Islamabad's role as host nation reflects Pakistan's strategic positioning between the competing interests and its desire to see stability restored in the region.",
-      "President Trump added further weight to the moment by declaring that the Strait of Hormuz — a critical global oil chokepoint — would reopen 'soon,' while insisting that Washington would not accept Iran's imposition of what he termed a de facto toll booth system in the vital waterway. The closure or restriction of the strait has sent shockwaves through global energy markets for months, and any resolution on this front would have immediate economic ramifications worldwide. Analysts note that the Hormuz issue could serve as both leverage and a potential early confidence-building measure in the negotiations.",
-      "The talks must bridge decades of deep mutual distrust, as the BBC's Lyse Doucet has noted, with fundamental disagreements persisting over Iran's nuclear programme, its regional proxy networks, and the terms under which sanctions might be eased. The war itself has displaced millions and drawn in multiple regional actors, making the path to a comprehensive settlement extraordinarily complex. Both sides face significant domestic pressures — the Trump administration to deliver a deal it can frame as a victory, and Tehran to secure terms that do not appear as capitulation to its public.",
-      "The international community is watching Islamabad with a mixture of hope and caution. A successful outcome could reshape the geopolitical landscape of the Middle East and restore critical global energy flows, while failure risks a return to full-scale hostilities and further destabilisation of an already volatile region. With Lebanon and Israel also set to meet in US-brokered talks next week, the coming days may prove pivotal in determining whether a broader architecture for Middle Eastern peace can begin to take shape."
+      "Hungary has undergone a seismic political shift as opposition leader Péter Magyar defeated Viktor Orbán in a landslide election victory, ending the nationalist strongman's 16-year grip on power. Magyar, a 45-year-old former insider from Orbán's own Fidesz party, convinced a majority of Hungarians that it was time for change, delivering a result that few would have predicted just two years ago. Orbán conceded defeat on Sunday night, marking the end of one of Europe's most divisive political eras.",
+      "The result has sent shockwaves across the European continent, with EU leaders expressing barely concealed jubilation at the ousting of a leader who had spent years obstructing Brussels on issues ranging from Ukraine support to rule-of-law standards. Orbán had been Vladimir Putin's closest ally within the European Union, frequently vetoing or delaying collective action against Russia and cultivating a warm personal relationship with the Kremlin. The BBC's Europe editor noted that while Budapest celebrates, Moscow will be watching with deep concern as it loses its most reliable voice inside EU institutions.",
+      "Péter Magyar's remarkable rise from Orbán loyalist to opposition champion began in 2024, when he publicly broke with the ruling Fidesz party and began exposing what he described as systemic corruption and democratic backsliding. His insider knowledge gave him unique credibility with voters who had grown weary of Orbán's increasingly authoritarian style but were sceptical of a fragmented opposition that had failed repeatedly at the ballot box. Magyar built a broad coalition that united liberal, centrist, and moderate conservative voters behind a single message of democratic renewal.",
+      "For the European Union, Magyar's victory could mark a turning point in years of fraught relations with Budapest. Hungary under Orbán had billions in EU funds frozen over rule-of-law concerns, and the country's blocking tactics on key foreign policy decisions had become a source of deep frustration for fellow member states. Analysts expect Magyar to move swiftly to repair ties with Brussels, unfreeze suspended funding, and realign Hungary's foreign policy more closely with the Western mainstream, though the precise pace and extent of these changes remain to be seen.",
+      "However, commentators caution that the broader phenomenon of 'Orbanism' — the blend of illiberal governance, media capture, and nationalist populism that Orbán pioneered — will not vanish overnight. Al Jazeera's analysis notes that the structural conditions that allowed Orbán to thrive, including the EU's own internal tensions around migration, militarism, and democratic standards, remain firmly in place. Magyar will inherit a state apparatus deeply reshaped by Fidesz over more than a decade, and rebuilding independent institutions, media plurality, and judicial independence will be a generational challenge that extends far beyond one election night."
     ],
-    image: "https://static01.nyt.com/images/2026/04/10/multimedia/10israel-iran-promo-7pm-tkcv/10israel-iran-promo-7pm-tkcv-mediumSquareAt3X.jpg",
-    source: "New York Times",
-    sourceUrl: "https://www.nytimes.com/live/2026/04/10/world/iran-war-trump-israel-lebanon"
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/1110/live/9d712b70-3735-11f1-ba17-d34f2bc9d6da.jpg",
+    source: "BBC News",
+    sourceUrl: "https://www.bbc.com/news/articles/cd9vg782kx7o?at_medium=RSS&at_campaign=rss"
   },
   secondary: [
     {
       id: "s1",
-      title: "Xi Jinping Meets Taiwan Opposition Leader in Rare High-Level Encounter",
-      summary: "Chinese President Xi Jinping held rare talks with KMT leader Cheng Li-wun, who floated the idea of one day inviting Xi to visit Taiwan, raising alarm from the island's ruling party about Beijing's efforts to undermine its democracy ahead of a key summit with Trump.",
-      image: "https://static01.nyt.com/images/2026/04/10/multimedia/10int-china-taiwan-pqml/10int-china-taiwan-pqml-mediumSquareAt3X.jpg",
+      title: "U.S. Begins Blockade of Strait of Hormuz as Iran Tensions Escalate",
+      summary: "President Trump ordered a naval blockade of Iranian ports and threatened to sink Iranian vessels approaching the Strait of Hormuz after peace talks with Tehran collapsed.",
+      image: "https://static01.nyt.com/images/2026/04/13/multimedia/13iran-150-vltz/13iran-150-vltz-mediumSquareAt3X.jpg",
       source: "New York Times",
-      url: "https://www.nytimes.com/2026/04/10/world/asia/taiwan-china-xi-cheng.html",
-      category: "Geopolitics"
+      url: "https://www.nytimes.com/live/2026/04/13/world/iran-war-trump-news",
+      category: "Conflict"
     },
     {
       id: "s2",
-      title: "Hungary Heads to Pivotal Election as Opposition Challenger Scents Victory Over Orbán",
-      summary: "Tens of thousands of anti-Orbán supporters filled Budapest's Heroes' Square as opposition leader Péter Magyar's movement leads in polls ahead of Sunday's vote, in what could be the most serious electoral challenge yet to Hungary's long-serving prime minister.",
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/0566/live/a4940140-34a4-11f1-b260-d5e483232ace.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/c0q9527y41lo?at_medium=RSS&at_campaign=rss",
-      category: "Politics"
+      title: "Pope Leo XIV Arrives in Algeria to Begin Historic 11-Day Africa Tour",
+      summary: "Pope Leo XIV landed in Algeria for the first-ever papal visit to the country, beginning a four-nation African tour that underscores the continent's surging importance to the future of the Catholic Church.",
+      image: "https://i.guim.co.uk/img/media/ee50f6a2b1267d06369bd1e0c7235bf8b4bffa9d/367_0_2560_2048/master/2560.jpg?width=1200&quality=85&auto=format&fit=max&s=c0a54b263b681643309eb663b3595e12",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/world/2026/apr/13/pope-leo-visits-algeria-africa-tour-catholic-church",
+      category: "Religion"
     },
     {
       id: "s3",
-      title: "Artemis II Astronauts Return to Earth After First Crewed Lunar Mission in 53 Years",
-      summary: "NASA's Artemis II crew has successfully journeyed back to Earth after completing humanity's first crewed mission to the Moon since the Apollo era, marking a landmark moment in the renewed push for deep-space exploration.",
-      image: "https://images.pexels.com/photos/5255172/pexels-photo-5255172.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      title: "French Court Convicts Cement Giant Lafarge of Funding Syrian Terrorism",
+      summary: "A French court found construction multinational Lafarge guilty of financing terrorist groups during the Syrian civil war, ordering the company to pay a fine and sentencing executives to prison.",
+      image: "https://images.pexels.com/photos/36520968/pexels-photo-36520968.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       source: "Al Jazeera",
-      url: "https://www.aljazeera.com/video/newsfeed/2026/4/11/artemis-ii-astronauts-journey-back-to-earth-after-moon-mission?traffic_source=rss",
-      category: "Science & Space"
+      url: "https://www.aljazeera.com/news/2026/4/13/french-court-rules-cement-giant-lafarge-guilty-of-funding-syrian-terrorism?traffic_source=rss",
+      category: "Law"
     }
   ]
 };
