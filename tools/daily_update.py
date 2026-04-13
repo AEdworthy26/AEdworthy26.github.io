@@ -88,7 +88,7 @@ def log(msg):
     with open(LOG_FILE, 'a') as f:
         f.write(line + '\n')
 
-def call_claude(prompt, timeout=180, max_tokens=4096):
+def call_claude(prompt, timeout=180, max_tokens=4096, model='claude-sonnet-4-6'):
     """Call Claude — uses Anthropic Python SDK (works locally and in GitHub Actions)."""
     import threading
     api_key = os.environ.get('ANTHROPIC_API_KEY', '')
@@ -105,7 +105,7 @@ def call_claude(prompt, timeout=180, max_tokens=4096):
             def _call():
                 try:
                     message = client.messages.create(
-                        model='claude-opus-4-6',
+                        model=model,
                         max_tokens=max_tokens,
                         messages=[{'role': 'user', 'content': prompt}]
                     )
