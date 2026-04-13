@@ -90,29 +90,47 @@ def log(msg):
 
 def call_claude(prompt, timeout=180, max_tokens=4096):
     """Call Claude — uses Anthropic Python SDK (works locally and in GitHub Actions)."""
+    import threading
     api_key = os.environ.get('ANTHROPIC_API_KEY', '')
     if api_key:
         import anthropic
-        client = anthropic.Anthropic(api_key=api_key, timeout=timeout)
+        # Use httpx Timeout to enforce both connect and total-read deadline
+        import httpx
+        http_timeout = httpx.Timeout(timeout=float(timeout), connect=10.0)
+        client = anthropic.Anthropic(api_key=api_key, timeout=http_timeout)
         for attempt in range(4):
-            try:
-                message = client.messages.create(
-                    model='claude-opus-4-6',
-                    max_tokens=max_tokens,
-                    messages=[{'role': 'user', 'content': prompt}]
-                )
-                return message.content[0].text.strip()
-            except anthropic.APIStatusError as e:
-                if e.status_code in (500, 529, 429) and attempt < 3:
+            result_box = [None]
+            error_box  = [None]
+
+            def _call():
+                try:
+                    message = client.messages.create(
+                        model='claude-opus-4-6',
+                        max_tokens=max_tokens,
+                        messages=[{'role': 'user', 'content': prompt}]
+                    )
+                    result_box[0] = message.content[0].text.strip()
+                except Exception as exc:
+                    error_box[0] = exc
+
+            t = threading.Thread(target=_call, daemon=True)
+            t.start()
+            t.join(timeout)
+            if t.is_alive():
+                log(f"  [timeout] Claude took too long — skipping this file")
+                return None
+
+            if error_box[0] is not None:
+                e = error_box[0]
+                if isinstance(e, anthropic.APIStatusError) and e.status_code in (500, 529, 429) and attempt < 3:
                     wait = 30 * (attempt + 1)
                     log(f"  [retry] API error {e.status_code}, waiting {wait}s (attempt {attempt+1}/4)...")
                     time.sleep(wait)
-                else:
-                    log(f"  [warning] Anthropic SDK failed after retries: {e}")
-                    break
-            except Exception as e:
+                    continue
                 log(f"  [warning] Anthropic SDK failed: {e}")
-                break
+                return None
+
+            return result_box[0]
         return None  # API key set but all attempts failed — skip this file gracefully
 
     # Fallback: Claude CLI (local Mac only, no API key set)
