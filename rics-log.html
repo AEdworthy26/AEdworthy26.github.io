@@ -94,6 +94,13 @@
     .log-today-link { display: inline-block; margin-top: 1rem; font-size: 0.78rem; font-weight: 700; color: var(--blue); letter-spacing: 0.04em; }
     .log-today-link:hover { text-decoration: underline; }
 
+    .log-full-toggle { display: inline-block; margin-top: 1rem; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); cursor: pointer; border: 1px solid #ccc; border-radius: 3px; padding: 0.25rem 0.7rem; background: transparent; }
+    .log-full-toggle:hover { background: #f0ece0; }
+    .log-full-content { display: none; margin-top: 0.8rem; border-top: 1px solid #ece8e0; padding-top: 0.8rem; }
+    .log-full-content.open { display: block; }
+    .log-content-p { font-size: 0.85rem; line-height: 1.75; color: var(--ink); margin-bottom: 0.9rem; }
+    .log-content-h { font-family: 'Playfair Display', serif; font-size: 0.95rem; font-weight: 700; margin: 1.2rem 0 0.4rem; }
+
     .log-empty { text-align: center; padding: 3rem 1rem; color: var(--light); font-style: italic; }
   </style>
 </head>
@@ -192,6 +199,16 @@
         var isToday = e.date === new Date().toISOString().slice(0,10);
         var todayLink = isToday ? '<a href="rics-study.html" class="log-today-link">Read full lesson \u2192</a>' : '';
 
+        var fullContentHTML = '';
+        if (e.content && e.content.length) {
+          var bodyBlocks = e.content.map(function(block) {
+            if (block.type === 'heading') return '<p class="log-content-h">' + esc(block.text) + '</p>';
+            return '<p class="log-content-p">' + esc(block.text) + '</p>';
+          }).join('');
+          fullContentHTML = '<button class="log-full-toggle" onclick="toggleFull(' + i + ',event)">Full Lesson &#9660;</button>'
+            + '<div class="log-full-content" id="full-' + i + '">' + bodyBlocks + '</div>';
+        }
+
         return '<div class="log-entry" id="entry-' + i + '">'
           + '<div class="log-entry-header" onclick="toggle(' + i + ')">'
           +   '<span class="log-date">' + esc(dateStr) + '</span>'
@@ -205,6 +222,7 @@
           +   (e.focus ? '<p class="log-focus">' + esc(e.focus) + '</p>' : '')
           +   summaryHTML
           +   qaHTML
+          +   fullContentHTML
           +   todayLink
           + '</div>'
           + '</div>';
@@ -214,6 +232,14 @@
     function toggle(i) {
       var el = document.getElementById('entry-' + i);
       el.classList.toggle('open');
+    }
+
+    function toggleFull(i, e) {
+      e.stopPropagation();
+      var el = document.getElementById('full-' + i);
+      el.classList.toggle('open');
+      var btn = el.previousElementSibling;
+      btn.textContent = el.classList.contains('open') ? 'Full Lesson \u25b2' : 'Full Lesson \u25bc';
     }
 
     render();

@@ -853,6 +853,16 @@ def append_rics_log(rics_js):
             as_ = re.findall(r'a:\s*"([^"]+)"', qa_m.group(1))
             qa = [{'q': q, 'a': a} for q, a in zip(qs, as_)]
 
+        # Extract full lesson content array for retrospective reading
+        content = []
+        try:
+            obj_m = re.search(r'var RICS_DATA\s*=\s*(\{[\s\S]*\});', rics_js)
+            if obj_m:
+                data_obj = json.loads(obj_m.group(1))
+                content = data_obj.get('content', [])
+        except Exception:
+            pass
+
         entry = {
             'date': TODAY,
             'topic': get_str('topic'),
@@ -861,6 +871,7 @@ def append_rics_log(rics_js):
             'apc_competency': get_str('apc_competency'),
             'focus': get_str('focus'),
             'image': get_str('image'),
+            'content': content,
             'summary': summary,
             'qa': qa,
         }
