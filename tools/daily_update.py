@@ -641,12 +641,17 @@ window.QUIZ_DATA = {{
 def gen_philosophy():
     log("\n── Philosophy Corner")
     recent_titles = recent_values('philosophy-data.js', 'title', days=30)
+    recent_philosophers = recent_values('philosophy-data.js', 'name', days=60)
     avoid = '\n'.join(f'- {t}' for t in recent_titles) if recent_titles else 'None'
+    avoid_people = '\n'.join(f'- {p}' for p in recent_philosophers) if recent_philosophers else 'None'
     prompt = f"""Generate a daily philosophy article for a personal learning website. Today is {TODAY}.
 Choose a significant philosophical theory, thinker, or concept.
 
 IMPORTANT — do NOT repeat any of these recently covered topics:
 {avoid}
+
+IMPORTANT — the Philosopher of the Day must NOT be any of these recently featured people:
+{avoid_people}
 
 Write in the style of a high-quality long-read magazine — engaging, intelligent, structured with subheadings.
 Main article: EXACTLY 8 content blocks (mix of paragraphs and headings). Each paragraph: 4-5 sentences.
@@ -923,12 +928,18 @@ def append_rics_log(rics_js):
 def gen_curiosity():
     log("\n── Curiosity Corner")
     recent_titles = recent_values('curiosity-data.js', 'title', days=30)
+    recent_people = recent_values('curiosity-data.js', 'name', days=60)
     avoid = '\n'.join(f'- {t}' for t in recent_titles) if recent_titles else 'None'
+    avoid_people = '\n'.join(f'- {p}' for p in recent_people) if recent_people else 'None'
     prompt = f"""Generate curiosity corner content for a personal learning website. Today is {TODAY}.
 The user loves: ancient history, political history, exploration, remarkable lives, science, art, great events.
 
 IMPORTANT — do NOT repeat any of these recently covered main article topics:
 {avoid}
+
+IMPORTANT — the Person of the Day must NOT be any of these recently featured people:
+{avoid_people}
+
 Write in the style of a high-quality long-read. The main article should have EXACTLY 8 content blocks — no more.
 Each paragraph should be 3-4 sentences (not longer). Keep the bio to 3 paragraphs.
 The onThisDay section must be a REAL event that actually happened on {datetime.date.today().strftime('%B %-d')} in history.
