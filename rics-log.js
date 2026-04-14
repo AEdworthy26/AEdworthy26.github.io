@@ -3,6 +3,45 @@
 
 var RICS_LOG = [
   {
+    "date": "2026-04-14",
+    "topic": "Benchmark Land Value (BLV) vs Existing Use Value (EUV+) in Affordable Housing Viability Assessments",
+    "module": "Development Appraisals",
+    "level": 3,
+    "apc_competency": "Development Appraisals (Level 3)",
+    "focus": "This lesson examines the technical and policy distinction between Benchmark Land Value and Existing Use Value Plus in the context of housing association-led viability assessments. It covers how BLV is calculated, challenged, and defended in S106 negotiations, and how Latimer/Clarion's affordable housing pipeline interacts with the NPPF 2024 and PPG viability framework. Mastery of this topic is essential for Level 3 candidates who regularly manage appraisals and negotiate with LPAs on tenure mix and grant funding stacks.",
+    "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&auto=format&fit=crop",
+    "content": [],
+    "summary": [
+      "BLV must be grounded in EUV+ methodology per PPG \u2014 it should NOT incorporate planning hope value, and any premium above EUV must be modest, policy-consistent, and evidenced by comparables from the LPA's adopted viability study.",
+      "The residual land value test is the core mechanism: if RLV < BLV, a viability gap exists; Homes England AHP grant is the primary tool for bridging this gap in HA-led schemes, but grant must not be used to subsidise inflated land prices.",
+      "Developer's profit assumptions must be calibrated to actual risk profile \u2014 for HA-led schemes with grant certainty and no speculative market exposure on affordable units, a reduced profit benchmark may be defensible, but must be consistent across both the LPA submission and the Homes England AHP appraisal.",
+      "Late-stage review mechanisms are now standard in S106 agreements following PPG guidance \u2014 Latimer must model the review scenario at appraisal stage and negotiate a capped or collared mechanism to limit exposure to additional contributions if private values outperform projections.",
+      "NPPF 2024 strengthens the plan-led viability position: where BLV methodology is embedded in an adopted local plan, application-stage viability departures require exceptional justification \u2014 this is both a risk and an opportunity for Latimer depending on the LPA's adopted policies."
+    ],
+    "qa": [
+      {
+        "q": "An LPA's viability consultant argues that your EUV for a former employment site should be \u00a32.5m per acre, based on recent industrial transactions in the area. Your appraisal uses \u00a31.8m per acre. How would you defend your position?",
+        "a": "I would defend the \u00a31.8m/acre figure by reference to the specific characteristics of the subject site \u2014 its condition, site constraints, flood risk or contamination status, lease structure, and achievable rental tone relative to the comparables cited. If the LPA's comparables are for prime, well-configured industrial units in active employment areas, they may not be appropriate for a constrained, redundant site. I would commission an independent RICS Red Book EUV assessment to provide evidential weight, and cross-reference against the LPA's own adopted viability study to establish whether the \u00a32.5m figure is consistent with their own BLV framework. PPG requires EUV to reflect the site's actual lawful use value, not aspirational employment land values."
+      },
+      {
+        "q": "How does Homes England's AHP grant interact with the viability appraisal you submit to an LPA, and what are the risks of inconsistency between the two?",
+        "a": "The AHP grant increases the scheme's RLV by providing additional income against the affordable housing element, effectively reducing the viability gap. However, the grant must be shown in the LPA viability appraisal as confirmed or highly probable \u2014 Homes England grant allocation letters or indicative AHP confirmations are the standard evidence. The key risk is inconsistency: if the LPA appraisal assumes grant at \u00a380k/unit but the Homes England submission assumes a different level or tenure mix, the two models will give different viability outcomes. I manage this by running a single master appraisal model that feeds both submissions, with a clear audit trail. Homes England's own appraisal review also checks that the land cost is consistent with EUV+, so an inflated land price that 'passes' the LPA test may fail the Homes England value for money assessment."
+      },
+      {
+        "q": "A landowner argues that because Latimer, as an RP, has access to AHP grant that a private developer doesn't, the land price should reflect the higher value Latimer can unlock. How do you respond in heads of terms negotiation?",
+        "a": "This is a well-known tension in the affordable housing land market. My response would be that the AHP grant is provided by Homes England specifically to fund affordable housing delivery, not to increase land values \u2014 and Homes England's own funding conditions and value for money criteria require that RPs do not pay above EUV+ for land. Latimer's internal investment committee policy mirrors this: land acquisition is appraised on a grant-excluded basis, and the agreed price must be supportable without grant. I would also make clear that if the land price assumes grant income, it creates a circular dependency \u2014 the scheme only works if Latimer secures grant, which is not guaranteed and exposes both parties to risk. The PPG-consistent position is that grant creates affordable housing, not land value uplift."
+      },
+      {
+        "q": "Explain how a late-stage viability review mechanism works in practice, and how you would negotiate its terms in a Section 106 agreement for a Latimer scheme.",
+        "a": "A late-stage review is triggered at a defined event \u2014 typically when 75% of private units are sold or a set profit threshold is reached. At that point, the appraisal is rerun with actual outturn costs and revenues. If the revised profit exceeds the agreed benchmark (e.g. 20% on GDV), the surplus above the benchmark is shared \u2014 usually 50/50 between the developer and the LPA as additional affordable housing or an in-lieu payment. In negotiation, I would seek: (1) a clearly defined trigger event and timeline to avoid ambiguity; (2) an agreed methodology for the review appraisal, ideally referencing the RICS GN on Financial Viability in Planning; (3) a profit collar \u2014 contributions only triggered above, say, 22% on GDV \u2014 to provide a buffer against minor outperformance; (4) a cap on total additional contribution to protect Latimer's investment committee projections; and (5) exclusion of affordable housing receipts from the review income calculation to avoid penalising grant-funded delivery."
+      },
+      {
+        "q": "NPPF 2024 has strengthened the role of plan-making viability assessments. How does this affect Latimer's ability to challenge affordable housing requirements on individual applications?",
+        "a": "Under NPPF 2024 para. 63 and the associated PPG, where a Local Plan has been prepared with a robust viability assessment underpinning its affordable housing policy, application-stage viability assessments should be used only in genuinely exceptional circumstances \u2014 for example, where a specific site has unusual constraints not anticipated at plan stage. This limits Latimer's ability to use scheme-specific viability to negotiate down affordable housing percentages in LPAs with recently adopted plans. In practice, this means Latimer's land acquisition strategy must be more sensitive to LPA viability baselines at the point of land pricing \u2014 if a site can only work at 25% affordable but the plan requires 40%, the land price must reflect that constraint at acquisition, not be resolved through a post-planning viability argument. It also means Latimer should actively engage in plan-making processes (Regulation 18/19 consultations) to ensure that BLV methodologies adopted in Local Plan viability studies are policy-consistent and don't lock in unrealistic land cost assumptions."
+      }
+    ]
+  },
+  {
     "date": "2026-04-13",
     "topic": "Vacant Building Credit, Existing Use Value, and Benchmark Land Value Methodology in Affordable Housing Viability Assessments",
     "module": "Development Appraisals",

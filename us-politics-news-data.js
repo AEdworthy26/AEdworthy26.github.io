@@ -1,49 +1,25 @@
 // us-politics-news-data.js
-// Auto-updated 2026-04-13 — do not edit manually
+// Auto-updated 2026-04-14 — do not edit manually
 
 var US_POLITICS_NEWS = {
-  date: "2026-04-13",
+  date: "2026-04-14",
   main: {
-    title: "Trump's Mental Fitness Under Scrutiny as Allies Question His Stability Amid Pope Feud and Jesus Image Controversy",
+    title: "Swalwell Resigns From Congress Amid Sexual Misconduct Allegations, Throwing California Democrats Into Chaos",
     category: "Politics",
     content: [
-      "Questions about President Donald Trump's mental fitness and erratic behavior have intensified in Washington after a weekend that saw him attack the newly elected Pope Leo XIV, post an AI-generated image depicting himself in Christ-like religious robes bathed in divine light, and escalate bellicose threats against Iran. Even some former allies and advisers have begun speaking out, with individuals close to the president privately describing him as 'lunatic' and 'clearly insane,' according to reporting by The New York Times. The convergence of these incidents has renewed discussion about the 25th Amendment, which provides a constitutional mechanism for removing a president deemed unfit to discharge the duties of the office.",
-      "The controversy over the Jesus-like image proved particularly damaging within Trump's own political coalition. Before the post was deleted, prominent evangelical and Catholic allies publicly broke with the president, calling the image blasphemous — a rare and striking public rebuke from a base that has largely stood by Trump through numerous prior controversies. Trump's own explanation for the image did little to defuse the situation; he told reporters he believed the AI-generated depiction showed him as a doctor rather than as a religious figure, a claim that was met with widespread skepticism and ridicule across the political spectrum.",
-      "The feud with Pope Leo XIV — the first American to lead the Roman Catholic Church — has compounded the political damage. Pope Leo had condemned Trump's threats against Iran, prompting the president to attack him publicly and refuse to apologize, calling the pontiff 'very weak.' The pope responded defiantly, saying he would continue to 'speak out' on matters of moral consequence, setting up an extraordinary and unprecedented public war of words between a sitting U.S. president and the head of the Catholic Church. Veteran church observers noted that nothing quite like this confrontation has occurred in modern American political history.",
-      "The political fallout has extended beyond the Catholic community. Italian Prime Minister Giorgia Meloni, one of Trump's closest ideological allies in Europe, publicly condemned his comments about the pope as 'unacceptable' — a significant diplomatic rupture with a leader who has otherwise been a reliable supporter of Trump's agenda on the world stage. Within the United States, conservative Catholic political figures found themselves in the uncomfortable position of having to choose between their loyalty to Trump and their faith, with several prominent bishops and Catholic leaders publicly siding with Pope Leo. The episode has threatened to erode Trump's standing among Catholic voters, a key demographic that helped deliver him electoral victories.",
-      "The mental fitness debate has taken on new urgency given the breadth and severity of the decisions currently facing the White House, including the Iran blockade, ongoing trade tensions, and midterm election positioning. Congressional Democrats have quietly begun discussing whether formal proceedings under the 25th Amendment could gain any traction, though Republicans remain firmly in control of both chambers. Analysts note that even if no formal action is taken, the sustained public questioning of a sitting president's stability by members of his own inner circle represents a significant political development that could shape the landscape heading into the November midterms, particularly as the Cook Political Report has already begun shifting Senate races in Democrats' favor."
+      "Representative Eric Swalwell, the California Democrat who had been mounting a campaign for governor, announced his resignation from Congress following allegations of sexual misconduct made by four women. The accusations range from sexual harassment to rape, all of which Swalwell has publicly denied. His departure marks a sudden and dramatic end to a political career that had included a brief 2020 presidential run and a high-profile seat on the House Intelligence Committee.",
+      "The resignation comes as the House was weighing a possible expulsion vote against Swalwell, a procedure that would have forced his colleagues to go on the record about the allegations in an election year. Republican Representative Tony Gonzales of Texas also announced he would leave Congress ahead of a potential expulsion vote stemming from his own separate misconduct claims. The near-simultaneous departures of one Democrat and one Republican are not expected to immediately shift the already razor-thin House majority held by the GOP, but the political fallout is significant for both parties.",
+      "For California Democrats, the timing could not be worse. Swalwell had only recently entered the governor's race, and internal party polling had already been raising alarm bells about name recognition and enthusiasm in the field. His resignation from Congress, effective ahead of schedule, now triggers a special election for his Bay Area seat — adding yet another competitive race to a Democratic Party calendar already stretched thin heading into the 2026 midterms.",
+      "The episode has also ignited a broader conversation about conduct within Congress itself. Former Representative Marjorie Taylor Greene publicly suggested that the misconduct described in the allegations against Swalwell and Gonzales is 'a lot more prevalent' on Capitol Hill than the public realizes, claiming that more members are guilty of similar behavior. Her remarks, while unsubstantiated, intensified calls from advocacy groups and some lawmakers for a more rigorous ethics enforcement process within the House.",
+      "The political decision-making surrounding the expulsion process revealed the delicate calculations both parties are making ahead of the midterms. House leadership on both sides appeared to be factoring in the chamber's fragile balance of power when deciding how aggressively to pursue formal expulsion proceedings. Ultimately, the voluntary departures of both members may have relieved some pressure on leadership, but the underlying questions about institutional accountability — and how Congress handles allegations of serious misconduct against sitting members — are unlikely to fade quickly from the national conversation."
     ],
-    image: "https://images.pexels.com/photos/5854416/pexels-photo-5854416.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    source: "The New York Times",
-    sourceUrl: "https://www.nytimes.com/2026/04/13/us/politics/trump-mental-fitness-25th-amendment.html"
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/e254/live/6a60a1f0-3782-11f1-baf3-a7621754a772.jpg",
+    source: "NPR",
+    sourceUrl: "https://www.npr.org/2026/04/13/nx-s1-5784030/eric-swalwell-resigns-from-congress"
   },
   secondary: [
-    {
-      id: "us1",
-      title: "Judge Dismisses Trump's $10 Billion Lawsuit Against Wall Street Journal Over Epstein Reporting",
-      summary: "A federal judge threw out President Trump's defamation lawsuit against the Wall Street Journal, ruling that Trump failed to demonstrate the newspaper acted with malicious intent when it published reporting linking him to a letter associated with Jeffrey Epstein.",
-      image: "https://images.pexels.com/photos/34816943/pexels-photo-34816943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      source: "NPR",
-      url: "https://www.npr.org/2026/04/13/g-s1-117248/judge-dismisses-trump-lawsuit-epstein-letter-wsj-story-murdoch",
-      category: "Politics"
-    },
-    {
-      id: "us2",
-      title: "House Ethics Committee Opens Inquiry Into Swalwell as Luna Pushes for Rapid Expulsion Vote",
-      summary: "The House Ethics Committee launched a formal investigation into Representative Eric Swalwell following sexual misconduct allegations, as Republican Representative Anna Paulina Luna said she believes the votes exist to expel both Swalwell and Representative Tony Gonzales as early as Wednesday.",
-      image: "https://thehill.com/wp-content/uploads/sites/2/2026/02/swalwelleric_021026gn02_w.jpg?w=900",
-      source: "The Hill",
-      url: "https://thehill.com/homenews/house/5829199-ethics-committee-swalwell/",
-      category: "Politics"
-    },
-    {
-      id: "us3",
-      title: "Cook Political Report Shifts Four Senate Races Toward Democrats Ahead of Midterms",
-      summary: "The Cook Political Report moved four Senate contests in Democrats' favor on Monday, citing a souring national environment for Republicans, though analysts noted the GOP remains favored to hold its Senate majority in November.",
-      image: "https://thehill.com/wp-content/uploads/sites/2/2025/01/Leading-Ossoff_110224_AP_Brynn-Anderson.jpg?w=900",
-      source: "The Hill",
-      url: "https://thehill.com/homenews/5829228-senate-races-shift-democrats/",
-      category: "Elections"
-    }
+    { id: "us1", title: "Judge Dismisses Trump's $10 Billion Lawsuit Against the Wall Street Journal Over Epstein Reporting", summary: "A federal judge threw out President Trump's defamation lawsuit against the Wall Street Journal, ruling that Trump failed to demonstrate the newspaper published its story about a letter allegedly connecting him to Jeffrey Epstein with malicious intent.", image: "https://images.pexels.com/photos/34816943/pexels-photo-34816943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", source: "NPR", url: "https://www.npr.org/2026/04/13/g-s1-117248/judge-dismisses-trump-lawsuit-epstein-letter-wsj-story-murdoch", category: "Politics" },
+    { id: "us2", title: "Vance Tells Pope Leo to Stay Out of U.S. Affairs as Trump-Vatican Feud Escalates", summary: "Vice President JD Vance publicly defended President Trump's attacks on Pope Leo, telling the pontiff to refrain from weighing in on American politics even as church observers warned the unprecedented public feud risks alienating conservative Catholic voters.", image: "https://static01.nyt.com/images/2026/04/13/multimedia/13trump-news-pope-vance-jlbz/13trump-news-pope-vance-jlbz-mediumSquareAt3X.jpg", source: "The New York Times", url: "https://www.nytimes.com/2026/04/13/us/politics/jd-vance-pope-leo-trump.html", category: "Politics" },
+    { id: "us3", title: "Trump World Rattled as Orbán Falls, Raising Midterm Fears for American Right", summary: "The stunning electoral defeat of Hungarian Prime Minister Viktor Orbán, a figure celebrated by Trump and much of the MAGA movement as a model of right-wing governance, has alarmed some American conservatives who worry that the political forces that toppled him could foreshadow Republican losses in the 2026 midterms.", image: "https://images.pexels.com/photos/1464206/pexels-photo-1464206.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", source: "The New York Times", url: "https://www.nytimes.com/2026/04/13/us/politics/orban-trump-maga.html", category: "Politics" }
   ]
 };

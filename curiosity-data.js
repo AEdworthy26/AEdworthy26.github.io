@@ -1,89 +1,42 @@
 // curiosity-data.js
-// Auto-updated 2026-04-13 — do not edit manually
+// Auto-updated 2026-04-14 — do not edit manually
 
 var CURIOSITY_DATA = {
-  date: "2026-04-13",
+  date: "2026-04-14",
   mainArticle: {
-    title: "The Voyage of the Endurance: Shackleton's Impossible Survival",
-    subject: "Ernest Shackleton Antarctic Expedition",
-    subtitle: "When his ship was crushed by Antarctic ice, Ernest Shackleton made a simple, staggering promise: every man would come home alive.",
-    image: "https://images.pexels.com/photos/31308001/pexels-photo-31308001.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    title: "The Burning of Rome's Greatest Rival: Carthage and the War That Reshaped the Ancient World",
+    subject: "Carthage",
+    subtitle: "How a century-long rivalry between two superpowers ended in ash, salt, and one senator's obsession.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/3/34/Montage_ville_de_Carthage.png",
     readTime: "9 min",
     content: [
-      {
-        type: "paragraph",
-        text: "In August 1914, as Europe lurched into the bloodiest war it had ever known, a small wooden ship slipped quietly out of London's docks and pointed its bow toward the bottom of the world. The ship was called Endurance, and its commander was Ernest Shackleton, an Irish-born Anglo explorer who had already twice reached the fringes of the South Pole and returned hungry for more. His plan was breathtakingly audacious: to cross the entire Antarctic continent on foot, nearly 1,800 miles of ice, cold, and absolute desolation. He would achieve none of it — and in failing, create one of the most astonishing survival stories in human history."
-      },
-      {
-        type: "heading",
-        text: "A Ship Swallowed by the Ice"
-      },
-      {
-        type: "paragraph",
-        text: "The Weddell Sea, which Shackleton needed to cross to reach the Antarctic landmass, is among the most treacherous bodies of water on Earth. Its pack ice shifts without warning, driven by currents and winds that seem almost sentient in their malice. By January 1915, Endurance was locked fast, gripped by ice floes that closed around her hull like a slow fist. For nearly ten months, Shackleton and his 27-man crew lived aboard a ship that was going nowhere, drifting with the pack as it circled deeper into the Weddell Sea."
-      },
-      {
-        type: "heading",
-        text: "The Crushing of the Endurance"
-      },
-      {
-        type: "paragraph",
-        text: "By October 1915, the ice had begun its final, pitiless work. The pressure of millions of tons of shifting floe buckled Endurance's timbers, opened her seams, and drove water into her hold faster than any pump could handle. On November 21, 1915, she slipped beneath the ice, taking the expedition's original mission with her. The men were left standing on an enormous sheet of drifting sea ice, 27 souls with three lifeboats, tents, and whatever provisions they could haul from the stricken ship. Shackleton is said to have looked at the spot where Endurance disappeared and simply said, 'Ship and stores have gone — so now we'll go home.'"
-      },
-      {
-        type: "heading",
-        text: "The Open-Boat Journey"
-      },
-      {
-        type: "paragraph",
-        text: "For five months the men camped on the ice, surviving on seal meat and penguin, waiting for the floes to drift toward land. When the ice began to break up, they launched the lifeboats into the most hostile sea in the world. After seven days of extraordinary suffering — frostbite, salt-soaked clothes, near-capsizing in hurricane-force winds — they reached the desolate, uninhabited shore of Elephant Island. It was the first time any of them had stood on solid ground in nearly 500 days, and several men wept openly at the sensation of rock beneath their boots."
-      },
-      {
-        type: "heading",
-        text: "800 Miles to South Georgia"
-      },
-      {
-        type: "paragraph",
-        text: "Elephant Island was a dead end: no ships passed it, no rescue would come. Shackleton made the only decision available to a man who had promised to bring everyone home. He selected five companions — including the brilliant carpenter Harry McNish and the skilled sailor John Vincent — and set out in the largest of the lifeboats, the James Caird, for South Georgia Island, 800 miles away across the Drake Passage. The Drake Passage is, by nearly universal agreement among sailors, the most dangerous stretch of ocean on the planet, where Southern Ocean swells can reach 100 feet and winds howl continuously at storm force. The crossing took 16 days."
-      },
-      {
-        type: "paragraph",
-        text: "Navigator Frank Worsley, using only a sextant and dead reckoning in conditions that rarely allowed him a clear view of the sun, guided the James Caird to within sight of South Georgia with accuracy that later navigators called almost miraculous. They landed on the wrong side of the island, however — the uninhabited southern coast — which meant that Shackleton, Worsley, and the expedition's second officer Tom Crean had to cross the island's unmapped, glacier-covered mountain interior on foot, without proper equipment, in a single 36-hour push. When they staggered into the whaling station at Stromness, the Norwegian whalers who met them did not at first recognise them as human beings at all."
-      },
-      {
-        type: "heading",
-        text: "The Rescue and the Reckoning"
-      },
-      {
-        type: "paragraph",
-        text: "It took Shackleton four attempts and four months to reach Elephant Island, where the 22 men he had left behind had survived by sheltering under two overturned lifeboats and eating whatever the sea provided. On August 30, 1916, his rescue ship finally broke through the ice and he counted every head from the rail: all 22 were alive. Not a single life had been lost from the moment Endurance was beset in the ice to the moment the last man stepped aboard the rescue vessel. In the context of what they had endured, it was a result that bordered on the supernatural."
-      },
-      {
-        type: "heading",
-        text: "Why Shackleton Still Matters"
-      },
-      {
-        type: "paragraph",
-        text: "Leadership scholars have studied Shackleton's methods for a century, and the lessons remain surprisingly modern. He kept morale alive through fierce attention to equality — everyone ate the same food, no man was exempt from work, and Shackleton himself always gave the warmest sleeping bag to whoever seemed coldest. He made a practice of placing his most troublesome and anxious men in his own tent, where he could manage them personally rather than let discontent fester through the camp. In conditions that had broken far better-equipped expeditions, 28 men emerged with their lives and — by most accounts — a peculiar, ferocious loyalty to the boss who had kept his word."
-      },
-      {
-        type: "paragraph",
-        text: "The Endurance story is also a reminder that failure and heroism are not opposites. Shackleton never crossed Antarctica, never planted a flag at the South Pole, never achieved what he had actually set out to do. What he achieved instead was something rarer and harder to quantify: the complete preservation of human life against odds that by any rational calculation should have killed every one of them. The wreck of Endurance was finally located by expedition in March 2022, lying on the Weddell Sea floor exactly where Worsley's meticulous navigation said it would be — upright, largely intact, and still bearing the name on her stern that turned out to be the most perfectly chosen word in the history of exploration."
-      }
+      { type: "paragraph", text: "In 146 BC, the city of Carthage — once the most powerful trading empire in the Mediterranean — was razed to the ground after seventeen days of savage street-by-street fighting. The Romans sold the survivors into slavery, dismantled the walls stone by stone, and declared the land accursed. It was one of the most deliberate acts of civilizational erasure in the ancient world, and it did not happen by accident." },
+      { type: "heading", text: "A Rival Born from the Sea" },
+      { type: "paragraph", text: "Carthage was founded, according to legend, by the Phoenician queen Dido around 814 BC on a peninsula jutting into the Gulf of Tunis. Within centuries it had become the dominant naval and commercial power of the western Mediterranean, controlling trade routes from Spain to Sicily and commanding a vast network of colonies and client states. Its merchants dealt in gold, silver, purple dye, and slaves, and its legendary fleet made it nearly untouchable at sea." },
+      { type: "heading", text: "Three Wars, One Obsession" },
+      { type: "paragraph", text: "The Punic Wars — three conflicts spread across more than a century — were Rome's existential test. The First Punic War (264–241 BC) was fought largely at sea and stripped Carthage of Sicily, its jewel. The Second, triggered by Hannibal Barca's audacious march across the Alps with war elephants in 218 BC, brought Roman legions to their knees at battles like Trebia, Lake Trasimene, and the catastrophic slaughter at Cannae, where perhaps 70,000 Romans died in a single afternoon. Yet Rome endured, and Hannibal — genius though he was — never received the reinforcements needed to finish the job." },
+      { type: "heading", text: "Cato and His Relentless Refrain" },
+      { type: "paragraph", text: "After Carthage's defeat in 202 BC, a peace was imposed that stripped it of its fleet and war elephants and saddled it with ruinous reparations. For fifty years Carthage recovered — too well, in the eyes of the Roman senator Marcus Porcius Cato the Elder. After a diplomatic visit in the 150s BC, Cato became convinced that Carthage's renewed prosperity was an existential threat, and from that point he ended every speech in the Senate, regardless of the topic, with the same declaration: Carthago delenda est — Carthage must be destroyed." },
+      { type: "heading", text: "The Third War and the Final Siege" },
+      { type: "paragraph", text: "Rome manufactured a pretext in 149 BC, demanding first that Carthage surrender its weapons, then that the city itself be demolished and its population relocated inland — terms any proud civilization would refuse. The Carthaginians, now disarmed, chose to fight anyway, spending a desperate winter melting down bronze statues to cast new swords and weaving ropes for catapults from women's hair. The siege dragged on for three brutal years before the young general Scipio Aemilianus — grandson by adoption of the man who had defeated Hannibal — broke through the harbor walls in 146 BC." },
+      { type: "heading", text: "Seventeen Days of Fire" },
+      { type: "paragraph", text: "What followed was not a clean military victory but a prolonged urban nightmare. Scipio's forces fought house by house, burning each block behind them as they advanced toward the great citadel, the Byrsa. Ancient sources describe soldiers cutting down civilians on the rooftops and the streets running with blood. The historian Appian records that Scipio himself wept as the city burned, reportedly quoting Homer: 'A day will come when sacred Troy shall perish.' He understood that empires, too, have their endings." },
+      { type: "heading", text: "What Was Lost — and What Survived" },
+      { type: "paragraph", text: "The Romans burned the famous library of Carthage and distributed its books — some 500,000 volumes by ancient estimate — to African client kings, save for a single agricultural treatise by Mago, which they translated into Latin. The Carthaginian language, religion, and culture did not vanish overnight; Punic inscriptions appear as late as the 3rd century AD, and St. Augustine of Hippo, writing four centuries later, noted that rural Africans still spoke a tongue rooted in ancient Phoenician. A civilization can be destroyed without being entirely erased." },
+      { type: "paragraph", text: "Carthage itself was eventually refounded as a Roman city by Julius Caesar and later Augustus, and it became one of the most prosperous cities in the empire, a center of early Christianity and scholarship. The ground that Rome had cursed became a cradle of some of Rome's greatest thinkers. History rarely follows the script of its conquerors, and the ash of Carthage proved unexpectedly fertile." }
     ]
   },
   personOfTheDay: {
-    name: "Harriet Tubman",
-    lifespan: "c. 1822–1913",
-    category: "Activism & Remarkable Lives",
-    image: "https://upload.wikimedia.org/wikipedia/commons/b/b4/Carte-de-visite_portrait_of_Harriet_Tubman_%28cropped%29.jpg",
-    bio: "Harriet Tubman was born into slavery on a Maryland plantation around 1822, one of nine children belonging to Rit and Ben Ross. Her given name was Araminta Ross — she later took her mother's name, Harriet — and from childhood she was hired out to neighboring farms, where she suffered brutal treatment including a near-fatal blow to the head from a two-pound iron weight thrown by an overseer. That injury caused neurological damage that gave her sudden, unpredictable episodes of unconsciousness for the rest of her life, which she interpreted as visions from God.\n\nIn 1849, facing the prospect of being sold further south, Tubman escaped to Philadelphia alone, traveling roughly 90 miles through hostile territory guided by the stars and a network of antislavery helpers who would come to be known as the Underground Railroad. What distinguished Tubman from the many thousands who escaped slavery and quietly disappeared into free society was what she did next: she went back. Over the following decade she made approximately 13 missions into slave territory and led roughly 70 people — family members, strangers, and everyone in between — to freedom. She was never caught, and she never lost a passenger, a record she attributed simply to the fact that she never gave runaways the option of turning back.\n\nDuring the Civil War, Tubman served the Union Army as a spy, scout, and nurse, becoming the first woman in American history to lead an armed raid when she guided Colonel James Montgomery and 150 Black Union soldiers up the Combahee River in June 1863, liberating more than 700 enslaved people in a single night. After the war she settled in Auburn, New York, where she spent her remaining decades advocating for women's suffrage alongside Susan B. Anthony and Elizabeth Cady Stanton, and founded a home for elderly African Americans. She died in 1913, reportedly telling the friends gathered around her, 'I go to prepare a place for you' — the same words she had once used to encourage exhausted freedom-seekers on the cold trails north."
+    name: "Scipio Africanus",
+    lifespan: "236–183 BC",
+    category: "Military & Political History",
+    image: "https://upload.wikimedia.org/wikipedia/commons/a/a6/Bust_of_Sulla_%28loan_from_Ny_Carlsberg_Glyptotek%29_-_Glyptothek_-_Munich_-_Germany_2017.jpg",
+    bio: "Publius Cornelius Scipio Africanus was the Roman general who achieved what many believed impossible: defeating Hannibal Barca, the greatest military tactician of the ancient world, and ending the ruinous Second Punic War. Born into one of Rome's most distinguished patrician families, he first saw battle as a teenager at the disastrous engagement at Ticinus, where he reportedly saved his wounded father's life. By his mid-twenties he had been entrusted with command in Spain — a theater Rome was losing badly — and he reversed the war's momentum through a combination of strategic brilliance and a willingness to break with conventional Roman tactics.\n\nHis most audacious move came not on the battlefield but in strategic conception. Rather than chasing Hannibal around Italy indefinitely, Scipio persuaded a reluctant Roman Senate to let him carry the war directly to Africa, threatening Carthage on its home soil. The gamble worked: Hannibal was recalled from Italy after more than a decade of campaign, and the two greatest generals of their age met at the Battle of Zama in 202 BC. Scipio neutralized Hannibal's elephant charge by opening lanes in his formations, then used superior cavalry to encircle the Carthaginian army. The victory was total, and it earned Scipio the cognomen 'Africanus.'\n\nDespite his triumph, Scipio's later life was marked by political persecution. Conservative senators, led by Cato the Elder, accused him and his brother of financial impropriety and accepting bribes from the Seleucid king Antiochus III. Proud and perhaps naive about the machinery of Roman political enmity, Scipio eventually withdrew to his estate at Liternum in Campania, where he died in 183 BC — the same year, ancient sources note, as his great adversary Hannibal. He reportedly asked that his epitaph read: 'Ungrateful fatherland, you shall not even have my bones.' Rome had consumed its greatest son."
   },
   onThisDay: {
-    headline: "THE EDICT OF MILAN: ROME GRANTS RELIGIOUS FREEDOM",
-    date: "April 13, 313",
-    summary: "On April 13, 313, the Roman Emperor Licinius formally published in Nicomedia the landmark agreement that would transform the religious landscape of the Western world. The Edict of Milan, concluded earlier that year between Licinius and his co-emperor Constantine I, proclaimed full religious toleration throughout the Roman Empire, ending two and a half centuries of intermittent, and sometimes savage, persecution of Christians. For the first time, Roman law explicitly recognized that all people — not merely followers of approved cults — had the right to worship according to their own conscience.",
-    summary: "The edict went considerably further than mere toleration: it ordered the restoration of property confiscated from Christian communities and individuals during the persecutions of Diocletian and his successors, and it required compensation to be paid from the imperial treasury when direct return was impossible. This was an act of breathtaking administrative generosity, or political calculation, or both — historians have never entirely settled the question of how deeply Constantine's famous conversion had actually reshaped his beliefs versus his ambitions. What is beyond dispute is the practical consequence: Christianity, which had been a persecuted minority faith meeting in private homes and caves, was now a legally protected institution with property rights, and it would never look back.\n\nThe long-term reverberations of that April publication in Nicomedia are almost impossible to overstate. Within a century, Christianity would become the official religion of the Roman Empire under Theodosius I, and the institutional church that grew directly from the post-Milan era would shape European law, art, politics, philosophy, and daily life for the next seventeen centuries. The Edict of Milan is one of those rare historical documents where it is not an exaggeration to say that a single piece of imperial administration changed the course of civilization.",
-    image: "https://images.pexels.com/photos/36427813/pexels-photo-36427813.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    headline: "LINCOLN SHOT AT FORD'S THEATRE",
+    date: "April 14, 1865",
+    summary: "On the evening of April 14, 1865, President Abraham Lincoln attended a performance of the comedy 'Our American Cousin' at Ford's Theatre in Washington, D.C., just five days after General Robert E. Lee's surrender at Appomattox Court House had effectively ended the Civil War. At approximately 10:15 pm, the actor and Confederate sympathizer John Wilkes Booth slipped into the presidential box and fired a single .44-caliber ball from a derringer pistol into the back of Lincoln's head. Lincoln slumped forward, unconscious, and was carried across the street to the Petersen House, where he lingered through the night.\n\nBooth's attack was part of a coordinated conspiracy that same night: his accomplice Lewis Powell simultaneously stabbed Secretary of State William Seward in his bed, leaving him gravely wounded, while George Atzerodt lost his nerve and failed to carry out the planned murder of Vice President Andrew Johnson. Booth escaped the theatre by leaping from the presidential box to the stage below, breaking his leg on landing, and fled south into Maryland and Virginia before being cornered and shot dead at a farm near Bowling Green, Virginia, on April 26.\n\nAbraham Lincoln died at 7:22 on the morning of April 15, 1865, becoming the first American president to be assassinated. Secretary of War Edwin Stanton, standing at Lincoln's bedside, reportedly said: 'Now he belongs to the ages.' The nation Lincoln had held together through four years of devastating civil war would now have to navigate reconstruction without him — a loss whose political consequences would echo across the following century.",
+    image: "https://images.pexels.com/photos/36659549/pexels-photo-36659549.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
   }
 };
