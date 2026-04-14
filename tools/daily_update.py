@@ -794,34 +794,56 @@ def gen_rics():
 
     prompt = f"""Generate a daily RICS APC study lesson for {TODAY} for the Planning and Development (P&D) pathway.
 
-CANDIDATE PROFILE: Alfie is an Assistant Development Manager at Latimer by Clarion Housing Group, the development arm of one of the UK's largest housing associations. His role is primarily land-led and JV-focused — identifying and appraising sites, negotiating land acquisitions, and structuring joint ventures with landowners, local authorities, and other developers. He is typically post-acquisition, taking schemes through the planning process (from pre-app through to consent), managing planning conditions and obligations, and handling DOVs, non-material amendments and planning appeals on more progressed schemes. He works on residential-led mixed-tenure schemes (market sale, shared ownership, affordable/social rent) and has involvement with Homes England grant funding. Affordable housing delivery within an RP context is a recurring theme but NOT the only one — he works across the full development lifecycle.
+CANDIDATE PROFILE:
+Alfie is an Assistant Development Manager at Latimer by Clarion Housing Group, the development arm of one of the UK's largest housing associations. His role spans the full development lifecycle on residential-led, mixed-tenure schemes (market sale, shared ownership, affordable/social rent). Key areas of his role include:
+
+  PRE-ACQUISITION & APPRAISAL: Initial site appraisals, feasibility assessments, development briefs, supporting investment committee papers and business cases, due diligence (title, surveys, constraints).
+
+  ACQUISITION & LAND: Land-led and JV-focused — negotiating option agreements, conditional contracts, overage, deferred payments, golden brick structures. Structuring joint ventures with landowners, LAs and private developers.
+
+  PLANNING: Taking schemes from pre-app through to consent — coordinating pre-application engagement with LPAs, managing design and planning teams, EIA/ES coordination, design and access statements, heritage assessments, NPPF sequential tests. Post-consent: discharging planning conditions and obligations, DOVs, non-material amendments, planning appeals (written reps, hearings, inquiries).
+
+  DESIGN TEAM MANAGEMENT: Appointing and managing architects, planning consultants, structural/civil engineers, M&E, landscape, ecologists and other specialists. Running design team meetings, managing briefs, reviewing drawings, ensuring NDSS/HQI compliance and building standards.
+
+  STAKEHOLDER ENGAGEMENT: Community consultation, public exhibitions, liaison with ward councillors and local representatives. Building relationships with LPAs, Homes England, GLA, statutory consultees (highways, ecology, drainage, heritage). Managing objections and political risk to secure planning permission.
+
+  FINANCIAL & COMMERCIAL: Development appraisals, residual land value, GDV, cashflow modelling, sensitivity analysis. Budget monitoring, cost reporting, grant funding (Homes England AHP) applications and drawdowns. Investment committee submissions and scheme updates.
+
+  LEGAL & COMPLIANCE: S106 negotiations and obligations management, CIL, building safety compliance, collateral warranties, title and planning risk.
+
+  REPORTING & ADMINISTRATION: Project risk registers, programme management, critical path analysis, monthly project reports, investment committee updates, scheme close-out.
+
+Affordable housing and RP context is a recurring theme but NOT the only one. Contractor/procurement is NOT part of his role.
 
 RECENTLY COVERED TOPICS (do NOT repeat these):
 {avoid_topics}
 
-RECENTLY COVERED COMPETENCIES in last 14 days (avoid repeating these — pick something different):
+RECENTLY COVERED COMPETENCIES in last 14 days (try to avoid repeating — rotate to something different):
 {avoid_competencies}
 
-TOPIC ROTATION — rotate fairly and ensure good coverage across ALL levels. Roughly: Level 3 (40%), Level 2 (35%), Level 1 (25%). Pick whichever competency and level has been least recently covered:
-  Level 3 (deep mastery — niche sub-topics only): Development Appraisals, Development/Project Briefs, Project Finance, Planning and Development Management
-  Level 2 (applied working knowledge): Masterplanning and Urban Design, Spatial Policy and Infrastructure, Legal/Regulatory Compliance, Valuation
-  Level 1 (awareness and understanding): Measurement and Survey, Building Pathology, Construction Technology, Contaminated Land, Sustainability
+TOPIC ROTATION — rotate fairly across ALL levels and competencies. Target: Level 3 (40%), Level 2 (35%), Level 1 (25%):
+  Level 3 (deep mastery): Development Appraisals, Development/Project Briefs, Project Finance, Planning and Development Management
+  Level 2 (applied knowledge): Masterplanning and Urban Design, Spatial Policy and Infrastructure, Legal/Regulatory Compliance, Valuation
+  Level 1 (awareness): Measurement and Survey, Building Pathology, Construction Technology, Contaminated Land, Sustainability
 
-TOPIC GUIDANCE — vary widely. Do NOT default to S106 viability or affordable housing grant every session. Strong topic examples:
-  - Land acquisition: option agreements, conditional contracts, overage, CPO risk, due diligence
-  - JV structures: development agreements, profit-sharing, clawback, golden brick, deferred land payments
-  - Planning: pre-application process, EIA/ES, design and access statements, heritage and NPPF sequential tests, planning appeals (written reps, hearings, inquiries), DOVs, non-material amendments, planning conditions (pre-commencement, Grampian)
-  - Project finance: development loan facility, DSCR, drawdown mechanics, mezzanine finance, equity waterfalls
-  - Appraisals: residual land value, sensitivity analysis, GDV calculation, profit on cost vs profit on GDV, cashflow timing
-  - Masterplanning: parameter plans, design codes, place-making principles, public realm, density metrics
-  - Valuation: comparable evidence, RICS Red Book, hope value, marriage value, ransom strips
-  - Measurement: IPMS, GIA vs NIA vs GEA, unit mix schedules
-  - Sustainability: EPC ratings, biodiversity net gain, BREEAM, Future Homes Standard, embodied carbon
-  - Legal/compliance: CIL liability, infrastructure levy, building safety act, warranty and collateral warranties
+TOPIC GUIDANCE — pick a niche sub-topic, vary widely, and do NOT default to S106 viability every session. Examples:
+  - Land & JV: option agreement structures, overage mechanisms, golden brick JVs, CPO risk and compensation, development agreement clawback, deferred land payments, marriage value and ransom strips
+  - Planning: pre-app strategy, EIA screening and scoping, design and access statements, heritage impact assessments, NPPF sequential and exception tests, planning appeals processes, Grampian and pre-commencement conditions, DOVs, NMAs, section 73 applications
+  - Stakeholder engagement: community consultation best practice, managing political risk, statutory consultee roles (highways, ecology, heritage, drainage), public exhibition strategy, councillor briefings
+  - Design team: appointing consultants (RIBA stages, fee structures, PI insurance), managing design briefs, NDSS and space standards, HQI, design review panels, design codes
+  - Appraisals: residual land value methodology, GDV calculation, profit on cost vs GDV, cashflow timing, sensitivity and scenario analysis, development finance assumptions
+  - Project finance: development loan facilities, DSCR, drawdown mechanics, mezzanine finance, equity waterfalls, Homes England grant conditions and additionality
+  - Masterplanning: parameter plans, design codes, density metrics, place-making, public realm standards, housing mix policy
+  - Valuation: comparable evidence, RICS Red Book, hope value, EUV+, special purchaser value
+  - Legal/compliance: CIL liability and exemptions, infrastructure levy, building safety act gateway process, collateral warranties, title due diligence
+  - Sustainability: biodiversity net gain (mandatory BNG), Future Homes Standard, BREEAM, embodied carbon, EPC ratings, climate adaptation in planning
+  - Measurement: IPMS, GIA/NIA/GEA, unit mix schedules, NSA, site coverage and density calculations
+  - Building pathology / construction technology: substructure options, ground conditions, façade systems, fire safety, party wall act
+  - Contaminated land: Phase 1/2 surveys, remediation strategies, liability under EPA 1990
 
 RULES:
 - Pick a NICHE SUB-TOPIC, not a broad overview
-- Examples and APC tips should reflect Alfie's role — land-led, post-acquisition, planning-focused, JV and RP context
+- Worked examples and APC tips must feel authentic to Alfie's role — land-led, planning-focused, JV and RP context
 - Write at a high level — APC preparation for a practitioner, not a student
 - Content blocks: mix of paragraphs, headings, callout (APC tips with worked examples), and key_term blocks
 - At least 10 content blocks
