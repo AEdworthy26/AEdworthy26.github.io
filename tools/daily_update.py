@@ -765,6 +765,10 @@ window.PHILOSOPHY_DATA = {{
 
 def gen_rics():
     log("\n── RICS Study")
+    recent_topics = recent_values('rics-data.js', 'topic', days=30)
+    recent_competencies = recent_values('rics-data.js', 'apc_competency', days=14)
+    avoid_topics = '\n'.join(f'- {t}' for t in recent_topics) if recent_topics else 'None'
+    avoid_competencies = '\n'.join(f'- {c}' for c in recent_competencies) if recent_competencies else 'None'
     # Curated Unsplash images relevant to property, planning & development
     rics_images = [
         'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&auto=format&fit=crop',  # glass office towers
@@ -790,16 +794,34 @@ def gen_rics():
 
     prompt = f"""Generate a daily RICS APC study lesson for {TODAY} for the Planning and Development (P&D) pathway.
 
-CANDIDATE PROFILE: Assistant Development Manager at Latimer by Clarion Housing Group — the development arm of one of the UK's largest housing associations. Day-to-day responsibilities include: managing development appraisals and viability, coordinating with planners and LPAs on S106/CIL, overseeing project delivery timelines, liaising with contractors and consultants, managing grant funding (Homes England AHP), and supporting land acquisition. All examples, worked scenarios, and APC tips must be grounded in this residential-led, affordable housing, housing association context.
+CANDIDATE PROFILE: Alfie is an Assistant Development Manager at Latimer by Clarion Housing Group, the development arm of one of the UK's largest housing associations. His role is primarily land-led and JV-focused — identifying and appraising sites, negotiating land acquisitions, and structuring joint ventures with landowners, local authorities, and other developers. He is typically post-acquisition, taking schemes through the planning process (from pre-app through to consent), managing planning conditions and obligations, and handling DOVs, non-material amendments and planning appeals on more progressed schemes. He works on residential-led mixed-tenure schemes (market sale, shared ownership, affordable/social rent) and has involvement with Homes England grant funding. Affordable housing delivery within an RP context is a recurring theme but NOT the only one — he works across the full development lifecycle.
 
-TOPIC ROTATION — cycle fairly through these competencies, picking whichever has been least recently covered:
-  Level 3 (deep mastery): Development Appraisals, Development/Project Briefs, Project Finance, Planning and Development Management
-  Level 2 (working knowledge): Masterplanning and Urban Design, Spatial Policy and Infrastructure, Legal/Regulatory Compliance, Valuation
-  Level 1 (awareness): Measurement, Surveying and Mapping
+RECENTLY COVERED TOPICS (do NOT repeat these):
+{avoid_topics}
+
+RECENTLY COVERED COMPETENCIES in last 14 days (avoid repeating these — pick something different):
+{avoid_competencies}
+
+TOPIC ROTATION — rotate fairly and ensure good coverage across ALL levels. Roughly: Level 3 (40%), Level 2 (35%), Level 1 (25%). Pick whichever competency and level has been least recently covered:
+  Level 3 (deep mastery — niche sub-topics only): Development Appraisals, Development/Project Briefs, Project Finance, Planning and Development Management
+  Level 2 (applied working knowledge): Masterplanning and Urban Design, Spatial Policy and Infrastructure, Legal/Regulatory Compliance, Valuation
+  Level 1 (awareness and understanding): Measurement and Survey, Building Pathology, Construction Technology, Contaminated Land, Sustainability
+
+TOPIC GUIDANCE — vary widely. Do NOT default to S106 viability or affordable housing grant every session. Strong topic examples:
+  - Land acquisition: option agreements, conditional contracts, overage, CPO risk, due diligence
+  - JV structures: development agreements, profit-sharing, clawback, golden brick, deferred land payments
+  - Planning: pre-application process, EIA/ES, design and access statements, heritage and NPPF sequential tests, planning appeals (written reps, hearings, inquiries), DOVs, non-material amendments, planning conditions (pre-commencement, Grampian)
+  - Project finance: development loan facility, DSCR, drawdown mechanics, mezzanine finance, equity waterfalls
+  - Appraisals: residual land value, sensitivity analysis, GDV calculation, profit on cost vs profit on GDV, cashflow timing
+  - Masterplanning: parameter plans, design codes, place-making principles, public realm, density metrics
+  - Valuation: comparable evidence, RICS Red Book, hope value, marriage value, ransom strips
+  - Measurement: IPMS, GIA vs NIA vs GEA, unit mix schedules
+  - Sustainability: EPC ratings, biodiversity net gain, BREEAM, Future Homes Standard, embodied carbon
+  - Legal/compliance: CIL liability, infrastructure levy, building safety act, warranty and collateral warranties
 
 RULES:
-- Pick a NICHE SUB-TOPIC, not a broad overview. Bad: "Introduction to Development Appraisals". Good: "Benchmark Land Value vs Market Value in Affordable Housing Viability", "Grant Funding Stacks and Homes England AHP Conditions", "Design Codes and the NPPF 2024 Requirements for Masterplans", "Revenue Recognition under IFRS 15 for RP Development Programmes"
-- Every worked example must reference housing association/affordable housing scenarios — no generic commercial examples
+- Pick a NICHE SUB-TOPIC, not a broad overview
+- Examples and APC tips should reflect Alfie's role — land-led, post-acquisition, planning-focused, JV and RP context
 - Write at a high level — APC preparation for a practitioner, not a student
 - Content blocks: mix of paragraphs, headings, callout (APC tips with worked examples), and key_term blocks
 - At least 10 content blocks
