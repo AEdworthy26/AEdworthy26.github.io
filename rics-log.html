@@ -294,6 +294,23 @@
     }
 
     render();
+
+    // ── Dropdown nav ──
+    (function () {
+      var btns = document.querySelectorAll('.nav-drop-btn');
+      btns.forEach(function(btn) {
+        btn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          var menu = btn.nextElementSibling;
+          var isOpen = menu.style.display === 'flex';
+          document.querySelectorAll('.nav-drop-menu').forEach(function(m){ m.style.display = ''; });
+          if (!isOpen) menu.style.display = 'flex';
+        });
+      });
+      document.addEventListener('click', function() {
+        document.querySelectorAll('.nav-drop-menu').forEach(function(m){ m.style.display = ''; });
+      });
+    })();
   </script>
 </body>
 </html>
