@@ -210,9 +210,10 @@ def recent_values(filename, field, days=7):
                 ['git', '-C', REPO_DIR, 'show', f'{commit}:{filename}'],
                 capture_output=True, text=True
             ).stdout
-            match = re.search(field + r'[:\s]+["\']([^"\']{4,80})["\']', content)
-            if match and match.group(1) not in values:
-                values.append(match.group(1))
+            matches = re.findall(field + r'[:\s]+["\']([^"\']{4,80})["\']', content)
+            for m in matches:
+                if m not in values:
+                    values.append(m)
     except Exception:
         pass
     return values
@@ -640,17 +641,18 @@ window.QUIZ_DATA = {{
 
 def gen_philosophy():
     log("\n── Philosophy Corner")
-    recent_titles = recent_values('philosophy-data.js', 'title', days=30)
-    recent_philosophers = recent_values('philosophy-data.js', 'name', days=60)
+    recent_titles = recent_values('philosophy-data.js', 'title', days=60)
+    recent_philosophers = recent_values('philosophy-data.js', 'name', days=90)
     avoid = '\n'.join(f'- {t}' for t in recent_titles) if recent_titles else 'None'
     avoid_people = '\n'.join(f'- {p}' for p in recent_philosophers) if recent_philosophers else 'None'
     prompt = f"""Generate a daily philosophy article for a personal learning website. Today is {TODAY}.
-Choose a significant philosophical theory, thinker, or concept.
 
-IMPORTANT — do NOT repeat any of these recently covered topics:
+CRITICAL — you must choose a genuinely different topic each day. Do NOT default to the most famous or well-known philosophers. Deliberately explore the full breadth of philosophy: non-Western traditions (Confucian, Daoist, Buddhist, Islamic, African, Indian, Aztec), lesser-known Western thinkers, niche schools of thought, philosophy of mind, language, science, ethics, aesthetics, political philosophy, existentialism, absurdism, analytic philosophy, continental philosophy, and more. Think of the entire history of human philosophical thought and pick something fresh and surprising.
+
+IMPORTANT — do NOT repeat any of these recently covered topics (hard rule, no exceptions):
 {avoid}
 
-IMPORTANT — the Philosopher of the Day must NOT be any of these recently featured people:
+IMPORTANT — the Philosopher of the Day must NOT be any of these recently featured people (hard rule, no exceptions):
 {avoid_people}
 
 Write in the style of a high-quality long-read magazine — engaging, intelligent, structured with subheadings.
@@ -971,17 +973,19 @@ def append_rics_log(rics_js):
 
 def gen_curiosity():
     log("\n── Curiosity Corner")
-    recent_titles = recent_values('curiosity-data.js', 'title', days=30)
-    recent_people = recent_values('curiosity-data.js', 'name', days=60)
+    recent_titles = recent_values('curiosity-data.js', 'title', days=60)
+    recent_people = recent_values('curiosity-data.js', 'name', days=90)
     avoid = '\n'.join(f'- {t}' for t in recent_titles) if recent_titles else 'None'
     avoid_people = '\n'.join(f'- {p}' for p in recent_people) if recent_people else 'None'
     prompt = f"""Generate curiosity corner content for a personal learning website. Today is {TODAY}.
 The user loves: ancient history, political history, exploration, remarkable lives, science, art, great events.
 
-IMPORTANT — do NOT repeat any of these recently covered main article topics:
+CRITICAL — you must choose a genuinely different, surprising topic each day. Actively avoid repeating subject areas even if the specific title differs. Rotate widely across: ancient civilisations (Rome, Greece, Egypt, Persia, Mesopotamia, China, Maya, etc.), medieval history, early modern, modern, exploration and discovery, natural world, scientific breakthroughs, war and diplomacy, art and architecture, religion and mythology, economics and trade, maritime history, biography, and more. Pick something that would make the reader say "I didn't know that."
+
+IMPORTANT — do NOT repeat any of these recently covered main article topics (hard rule, no exceptions):
 {avoid}
 
-IMPORTANT — the Person of the Day must NOT be any of these recently featured people:
+IMPORTANT — the Person of the Day must NOT be any of these recently featured people (hard rule, no exceptions):
 {avoid_people}
 
 Write in the style of a high-quality long-read. The main article should have EXACTLY 8 content blocks — no more.
