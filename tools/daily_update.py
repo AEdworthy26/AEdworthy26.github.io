@@ -641,8 +641,8 @@ window.QUIZ_DATA = {{
 
 def gen_philosophy():
     log("\n── Philosophy Corner")
-    recent_titles = recent_values('philosophy-data.js', 'title', days=60)
-    recent_philosophers = recent_values('philosophy-data.js', 'name', days=90)
+    recent_titles = recent_values('philosophy-data.js', 'title', days=730)
+    recent_philosophers = recent_values('philosophy-data.js', 'name', days=730)
     avoid = '\n'.join(f'- {t}' for t in recent_titles) if recent_titles else 'None'
     avoid_people = '\n'.join(f'- {p}' for p in recent_philosophers) if recent_philosophers else 'None'
     prompt = f"""Generate a daily philosophy article for a personal learning website. Today is {TODAY}.
@@ -973,8 +973,8 @@ def append_rics_log(rics_js):
 
 def gen_curiosity():
     log("\n── Curiosity Corner")
-    recent_titles = recent_values('curiosity-data.js', 'title', days=60)
-    recent_people = recent_values('curiosity-data.js', 'name', days=90)
+    recent_titles = recent_values('curiosity-data.js', 'title', days=730)
+    recent_people = recent_values('curiosity-data.js', 'name', days=730)
     avoid = '\n'.join(f'- {t}' for t in recent_titles) if recent_titles else 'None'
     avoid_people = '\n'.join(f'- {p}' for p in recent_people) if recent_people else 'None'
     prompt = f"""Generate curiosity corner content for a personal learning website. Today is {TODAY}.
