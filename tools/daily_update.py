@@ -1193,10 +1193,24 @@ var QUOTE_DATA = {{
 
 def gen_recipes():
     log("\n── Suggested Recipes")
+    recent_recipe_titles = recent_values('suggested-recipes-data.js', 'title', days=30)
+    avoid_recipes = '\n'.join(f'- {t}' for t in recent_recipe_titles) if recent_recipe_titles else 'None'
     prompt = f"""Generate exactly 3 recipe suggestions for today ({TODAY}) for a personal recipe website.
 The user loves: bold flavours, European and world cuisines, seasonal ingredients, and genuinely delicious food.
-Pick a varied spread — e.g. one meat, one fish/seafood, one vegetarian or lighter dish.
-The recipes should be high quality and taste impressive, but accessible to a confident home cook — avoid overly complex techniques, specialist equipment, or hard-to-find ingredients. Think the kind of recipe a good home cook would be proud to serve.
+The recipes should be high quality and taste impressive, but accessible to a confident home cook.
+
+VARIETY IS ESSENTIAL — the 3 recipes must span completely different cuisines, protein sources, and meal styles. Do NOT repeat ingredients, proteins, or cuisines across the 3 recipes today.
+
+RECENTLY SUGGESTED RECIPES — do NOT repeat any of these titles or their primary ingredients/proteins:
+{avoid_recipes}
+
+AVOID defaulting to the same ingredients repeatedly (lamb, sea bass, asparagus have been overused). Rotate broadly across:
+  Proteins: chicken, beef, pork, duck, lamb, venison, salmon, cod, prawns, mussels, crab, tofu, eggs, legumes, halloumi — vary every day
+  Cuisines: Italian, French, Spanish, Greek, Moroccan, Middle Eastern, Indian, Thai, Japanese, Korean, Mexican, Vietnamese, American, British — rotate widely
+  Meal types: pasta, risotto, curry, stew, stir-fry, salad, soup, tart, pie, roast, burger, noodles, grain bowl, tagine, braise — vary every session
+  Categories: include a mix of Dinner, Lunch, and Breakfast/Brunch across the week
+
+Each recipe should feel distinctly different from the others in today's set.
 
 Output ONLY valid JavaScript. No explanation, no markdown. Start directly with "window.SUGGESTED_RECIPES".
 
