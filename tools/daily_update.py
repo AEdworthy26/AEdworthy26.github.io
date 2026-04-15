@@ -347,6 +347,30 @@ def fetch_pexels_image(query, orientation='landscape'):
         log(f'  [warning] Pexels fetch failed for "{query}": {e}')
     return None
 
+def fetch_unsplash_image(query, orientation='landscape'):
+    """Fetch a high-quality photo from Unsplash API (requires UNSPLASH_ACCESS_KEY in .env)."""
+    try:
+        key = os.environ.get('UNSPLASH_ACCESS_KEY', '')
+        if not key:
+            return None
+        url = ('https://api.unsplash.com/search/photos?query='
+               + urllib.parse.quote(query)
+               + '&per_page=5&orientation=' + orientation
+               + '&order_by=relevant')
+        req = urllib.request.Request(url, headers={
+            'Authorization': 'Client-ID ' + key,
+            'User-Agent': 'PersonalHub/1.0'
+        })
+        with urllib.request.urlopen(req, timeout=10) as r:
+            data = json.loads(r.read())
+        results = data.get('results', [])
+        if results:
+            urls = results[0].get('urls', {})
+            return urls.get('regular') or urls.get('full')
+    except Exception as e:
+        log(f'  [warning] Unsplash fetch failed for "{query}": {e}')
+    return None
+
 
 def upgrade_image_url(url):
     """Bump known CDN URLs to a larger size."""
@@ -596,11 +620,11 @@ var {var_name} = {{
                 url = rss_url
                 log(f'  ✓ RSS image [{i}]: {title[:40]}')
 
-            # 2. Pexels using the article title as the search query
+            # 2. Unsplash using the article title as the search query
             if not url:
-                url = fetch_pexels_image(title or category)
+                url = fetch_unsplash_image(title or category) or fetch_pexels_image(title or category)
                 if url:
-                    log(f'  ✓ Pexels image [{i}]: {title[:40]}')
+                    log(f'  ✓ Unsplash image [{i}]: {title[:40]}')
 
             # 3. Unsplash fallback
             if not url:
@@ -743,8 +767,10 @@ window.PHILOSOPHY_DATA = {{
             if url:
                 log(f'  ✓ Philosophy main image (Wikipedia): {search_term[:40]}')
             else:
-                url = fetch_pexels_image(search_term + ' philosophy') or 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200&fit=crop&q=80'
-                log(f'  ✓ Philosophy main image (Pexels): {search_term[:40]}')
+                url = (fetch_unsplash_image(search_term + ' philosophy')
+                       or fetch_pexels_image(search_term + ' philosophy')
+                       or 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200&fit=crop&q=80')
+                log(f'  ✓ Philosophy main image (Unsplash): {search_term[:40]}')
             js = js.replace("'__IMG_PHILOSOPHY__'", f"'{url}'", 1)
             js = js.replace('"__IMG_PHILOSOPHY__"', f'"{url}"', 1)
         if 'image: null' in js and phil_m:
@@ -753,9 +779,9 @@ window.PHILOSOPHY_DATA = {{
             if url:
                 log(f'  ✓ Philosopher of day image (Wikipedia): {name[:40]}')
             else:
-                url = fetch_pexels_image(name + ' philosopher portrait')
+                url = fetch_unsplash_image(name + ' portrait') or fetch_pexels_image(name + ' philosopher portrait')
                 if url:
-                    log(f'  ✓ Philosopher of day image (Pexels): {name[:40]}')
+                    log(f'  ✓ Philosopher of day image (Unsplash): {name[:40]}')
             if url:
                 js = js.replace('image: null', f'image: "{url}"', 1)
     except Exception as e:
@@ -1047,8 +1073,10 @@ var CURIOSITY_DATA = {{
             if url:
                 log(f'  ✓ Curiosity main image (Wikipedia): {search_term[:40]}')
             else:
-                url = fetch_pexels_image(search_term) or 'https://images.unsplash.com/photo-1461360370896-922624d12aa1?w=1200&auto=format&fit=crop'
-                log(f'  ✓ Curiosity main image (Pexels): {search_term[:40]}')
+                url = (fetch_unsplash_image(search_term)
+                       or fetch_pexels_image(search_term)
+                       or 'https://images.unsplash.com/photo-1461360370896-922624d12aa1?w=1200&auto=format&fit=crop')
+                log(f'  ✓ Curiosity main image (Unsplash): {search_term[:40]}')
             js = js.replace('"__IMG_CURIOSITY_MAIN__"', f'"{url}"', 1)
         if '__IMG_CURIOSITY_OTD__' in js:
             otd_query = otd_m.group(1) if otd_m else 'historical event'
@@ -1056,8 +1084,10 @@ var CURIOSITY_DATA = {{
             if url:
                 log(f'  ✓ On this day image (Wikipedia): {otd_query[:40]}')
             else:
-                url = fetch_pexels_image(otd_query) or 'https://images.unsplash.com/photo-1489447068241-b3490214e879?w=800&auto=format&fit=crop'
-                log(f'  ✓ On this day image (Pexels): {otd_query[:40]}')
+                url = (fetch_unsplash_image(otd_query)
+                       or fetch_pexels_image(otd_query)
+                       or 'https://images.unsplash.com/photo-1489447068241-b3490214e879?w=800&auto=format&fit=crop')
+                log(f'  ✓ On this day image (Unsplash): {otd_query[:40]}')
             js = js.replace('"__IMG_CURIOSITY_OTD__"', f'"{url}"', 1)
         if 'image: null' in js and person_m:
             name = person_m.group(1)
@@ -1065,9 +1095,9 @@ var CURIOSITY_DATA = {{
             if url:
                 log(f'  ✓ Person of day image (Wikipedia): {name[:40]}')
             else:
-                url = fetch_pexels_image(name + ' portrait')
+                url = fetch_unsplash_image(name + ' portrait') or fetch_pexels_image(name + ' portrait')
                 if url:
-                    log(f'  ✓ Person of day image (Pexels): {name[:40]}')
+                    log(f'  ✓ Person of day image (Unsplash): {name[:40]}')
             if url:
                 js = js.replace('image: null', f'image: "{url}"', 1)
     except Exception as e:
@@ -1280,7 +1310,7 @@ window.SUGGESTED_RECIPES = [
         for i, sentinel in enumerate(sentinels):
             if f'"{sentinel}"' in js or f"'{sentinel}'" in js:
                 query = (titles[i] + ' food dish') if i < len(titles) else 'gourmet food'
-                url = fetch_pexels_image(query, orientation='landscape')
+                url = fetch_unsplash_image(query, orientation='landscape') or fetch_pexels_image(query, orientation='landscape')
                 if url:
                     js = js.replace(f'"{sentinel}"', f'"{url}"', 1)
                     js = js.replace(f"'{sentinel}'", f"'{url}'", 1)
