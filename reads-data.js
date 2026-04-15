@@ -1,19 +1,19 @@
 // reads-data.js
-// Auto-updated 2026-04-14 — do not edit manually
+// Auto-updated 2026-04-15 — do not edit manually
 
 var READS_DATA = {
-  date: "2026-04-14",
+  date: "2026-04-15",
   book: {
-    title: "The Overstory",
-    author: "Richard Powers",
-    year: 2018,
-    genres: ["Literary Fiction", "Nature", "Environmental"],
-    desc: "Richard Powers weaves together nine separate human stories — a chestnut farmer, a Vietnam veteran, a computer scientist, an activist — all of them drawn into the orbit of trees and the slow, vast intelligence of forests. The novel moves with the patience of its subject matter, building from intimate family sagas into something mythic and urgent about what humanity is destroying without ever pausing to listen. Powers draws on genuine science — the research of Suzanne Simard and others — to make the case that trees communicate, cooperate, and remember, which transforms every chapter from metaphor into something that feels disturbingly literal. It is a Pulitzer Prize-winning novel that manages to be simultaneously a grief-stricken elegy and a furious argument, and it will change the way you walk through any patch of woodland for the rest of your life.",
-    whyRead: "With climate anxiety running at a fever pitch in 2026, this book offers something rare: not despair dressed up as fiction, but a genuine rethinking of scale, time, and what it means to pay attention.",
-    rating: 4.2,
+    title: "The Nix",
+    author: "Nathan Hill",
+    year: 2016,
+    genres: ["Literary Fiction", "Family Drama", "Satire"],
+    desc: "Nathan Hill's sprawling debut follows Samuel Anderson, a blocked novelist who discovers that his mother — who abandoned him as a child and has just gone viral for assaulting a presidential candidate — is not quite the person he thought she was. The novel leaps across decades, from 1968 Chicago to the social-media-saturated present, weaving together the Vietnam era, addiction, online gaming obsession, and the strange persistence of the past with tremendous wit and emotional intelligence. Hill writes with the big-hearted ambition of Dickens crossed with the satirical bite of Don DeLillo, producing set-pieces — including a bravura rendering of the Democratic National Convention riots — that feel both historically grounded and urgently alive. At over 600 pages it is genuinely unputdownable, stuffed with fully realised characters and ideas about how the stories we tell about our parents shape everything we become.",
+    whyRead: "With political polarisation and generational misunderstanding still dominating public life, The Nix reads like it was written for this exact moment — funny, furious, and deeply compassionate all at once.",
+    rating: 4.1,
     ratingSource: "Goodreads",
-    ratingCount: "300,000+",
-    coverUrl: "https://covers.openlibrary.org/b/id/8758252-L.jpg",
-    amazonUrl: "https://www.amazon.co.uk/dp/1784877913"
+    ratingCount: "90,000+",
+    coverUrl: null,
+    amazonUrl: null
   }
 };

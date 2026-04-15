@@ -1,25 +1,49 @@
 // tech-news-data.js
-// Auto-updated 2026-04-14 — do not edit manually
+// Auto-updated 2026-04-15 — do not edit manually
 
 var TECH_NEWS = {
-  date: "2026-04-14",
+  date: "2026-04-15",
   main: {
-    title: "Google Integrates Rust Into Pixel 10 Modem to Fortify Legacy Code Against Vulnerabilities",
-    category: "Hardware & Security",
+    title: "Amazon Acquires Globalstar for $10.8 Billion in Bold Bid to Challenge Starlink",
+    category: "Technology",
     content: [
-      "Google has taken a significant step forward in mobile security by integrating the Rust programming language directly into the modem firmware of its Pixel 10 smartphone. Cellular modems have long been considered among the most opaque and vulnerability-prone components in modern devices, running vast amounts of legacy C and C++ code that has accumulated over decades. By introducing Rust — a language renowned for its memory safety guarantees — into this critical subsystem, Google is attempting to address a class of bugs that has historically been difficult to eliminate through traditional code review alone.",
-      "Memory safety vulnerabilities, such as buffer overflows and use-after-free errors, account for a disproportionately large share of exploitable security flaws in complex software systems. Legacy code in cellular modems is particularly susceptible because it was often written under different safety standards and has been patched and extended over many years without a full rewrite. Rust's ownership model enforces strict compile-time checks that prevent entire categories of these errors from ever making it into the final binary, making it an attractive tool for hardening such entrenched codebases.",
-      "The engineering challenge Google faced was substantial: modem firmware is not a greenfield project, and inserting a new language into an existing, tightly coupled system requires careful interoperability work. Rust's foreign function interface (FFI) capabilities allowed Google's engineers to write new components and gradually replace high-risk sections of legacy code without discarding the entire existing stack. This incremental approach is increasingly being recognized as the most pragmatic path to improving security in large, mature codebases that cannot simply be rewritten from scratch.",
-      "The move reflects a broader industry trend toward memory-safe languages that has gained significant momentum in recent years. The U.S. National Security Agency, the White House Office of the National Cyber Director, and major technology companies have all issued guidance or made commitments to transition toward memory-safe languages. Google itself has been one of the most prominent advocates, having previously introduced Rust into the Linux kernel and Android's core platform code, and this latest application to modem firmware represents one of the most security-sensitive deployments yet.",
-      "For consumers, the practical benefit is a Pixel 10 whose cellular modem — a component that handles all radio communications and is reachable by any nearby base station — carries a meaningfully reduced attack surface. Security researchers have demonstrated in the past that modem vulnerabilities can be exploited remotely without any user interaction, making them a priority target for sophisticated attackers. If Google's approach proves successful, it could set a precedent that pressures other chipmakers and smartphone manufacturers to adopt similar memory-safe practices in their own modem and baseband software stacks."
+      "Amazon has announced a landmark $10.8 billion acquisition of Globalstar, the satellite communications company, marking one of the most significant moves yet in the intensifying battle for dominance in the satellite internet market. The deal signals Amazon's determination to transform its Project Kuiper satellite broadband initiative from an ambitious startup venture into a full-scale competitor capable of going head-to-head with Elon Musk's Starlink, which has already amassed millions of subscribers worldwide. By absorbing Globalstar's existing infrastructure, spectrum rights, and established customer base, Amazon gains an immediate foothold in a market that has proven both strategically vital and enormously expensive to enter.",
+      "Globalstar, which has operated satellite communications services for decades, brings with it a portfolio of licensed radio spectrum that analysts consider among the most valuable assets in the deal. Spectrum is a finite and heavily regulated resource, and securing additional allocations through acquisition rather than through slow-moving regulatory channels could meaningfully accelerate Amazon's deployment timeline for Kuiper. The company has faced mounting pressure to prove that its multi-billion-dollar investment in satellite manufacturing and launch infrastructure can translate into a commercially viable service before Starlink further consolidates its lead.",
+      "The acquisition also reflects a broader strategic logic that extends well beyond broadband internet access. Amazon's cloud computing division, AWS, stands to benefit enormously from a proprietary global satellite network that can deliver low-latency connectivity to remote data centers, logistics hubs, and enterprise customers operating in regions where terrestrial fiber is unavailable or unreliable. For a company whose revenue increasingly depends on cloud services, having sovereign control over the 'last mile' of global connectivity represents a profound competitive advantage that no rival can easily replicate.",
+      "Starlink, operated by SpaceX, currently leads the low-earth-orbit satellite internet sector with a constellation of thousands of active satellites and service available in dozens of countries. Musk's venture has benefited from SpaceX's unmatched launch cadence, allowing it to rapidly replenish and expand its constellation at a cost advantage that traditional aerospace firms struggle to match. Amazon, by contrast, has relied on a mix of launch providers and is still in the relatively early stages of deploying its Kuiper constellation, making the Globalstar deal an important shortcut to scale.",
+      "Industry observers note that the satellite internet sector is fast becoming a critical piece of 21st-century infrastructure, with governments, militaries, and enterprises all racing to secure reliable connectivity independent of vulnerable ground-based networks. The Amazon-Globalstar deal is expected to draw close regulatory scrutiny, given the strategic importance of satellite spectrum and the sheer scale of Amazon's existing market power across e-commerce, cloud computing, and logistics. If approved, it could reshape the competitive landscape of the space-based internet industry and set the stage for a prolonged and well-funded rivalry between two of the world's most powerful technology ecosystems."
     ],
-    image: "https://cdn.arstechnica.net/wp-content/uploads/2025/08/Google-Pixel-10-13-1152x648.jpg",
-    source: "Ars Technica",
-    sourceUrl: "https://arstechnica.com/gadgets/2026/04/google-shoehorned-rust-into-pixel-10-modem-to-make-legacy-code-safer/"
+    image: "https://static01.nyt.com/images/2026/04/14/multimedia/14biz-amazon-globalstar-kuiper-zjkt/14biz-amazon-globalstar-kuiper-zjkt-mediumSquareAt3X.jpg",
+    source: "The New York Times",
+    sourceUrl: "https://www.nytimes.com/2026/04/14/technology/amazon-buys-globalstar-space-internet.html"
   },
   secondary: [
-    { id: "tc1", title: "Rockstar Games Hacked Again by English-Speaking Cybercriminals", summary: "GTA-maker Rockstar Games has suffered a second breach at the hands of young, English-speaking hackers, though the company is downplaying the extent of the impact.", image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/3c29/live/fbde8390-3719-11f1-a6bd-75d9eff58887.jpg", source: "BBC News", url: "https://www.bbc.com/news/articles/cx2dg5g1le7o?at_medium=RSS&at_campaign=rss", category: "Cybersecurity" },
-    { id: "tc2", title: "Booking.com Warns Customers After Hack Exposes Personal Data", summary: "Booking.com has notified customers of a data breach in which unauthorised third parties accessed names, contact details, and reservation information.", image: "https://i.guim.co.uk/img/media/055256d94598e9b8b7d3a74d59c657173cf652b1/0_0_3560_2847/master/3560.jpg?width=1200&quality=85&auto=format&fit=max&s=5fcada9f53802a67ead610352c4fb718", source: "The Guardian", url: "https://www.theguardian.com/technology/2026/apr/13/booking-com-customers-hack-exposed-data", category: "Cybersecurity" },
-    { id: "tc3", title: "Meta Building AI Clone of Mark Zuckerberg for Internal Staff Queries", summary: "Meta is reportedly developing an AI-powered digital version of CEO Mark Zuckerberg, trained on his thoughts and mannerisms, so that employees can interact with a simulated version of the boss.", image: "https://i.guim.co.uk/img/media/f08bc69f7c287bc38d47c342528b604b2f0d869b/53_0_1874_1500/master/1874.jpg?width=1200&quality=85&auto=format&fit=max&s=8e924ff9a1f191619a3da91e8be59d1a", source: "The Guardian", url: "https://www.theguardian.com/technology/2026/apr/13/meta-ai-mark-zuckerberg-staff-talk-to-the-boss", category: "Artificial Intelligence" }
+    {
+      id: "tc1",
+      title: "OpenAI Launches Dedicated Cybersecurity Model as Anthropic's Mythos Raises Industry Alarm",
+      summary: "In response to the cybersecurity concerns triggered by Anthropic's powerful Mythos AI model, OpenAI has unveiled GPT-5.4-Cyber, a new cybersecurity-focused model, alongside a broader strategy it says will 'sufficiently reduce cyber risk.'",
+      image: "https://images.pexels.com/photos/16461434/pexels-photo-16461434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      source: "WIRED",
+      url: "https://www.wired.com/story/in-the-wake-of-anthropics-mythos-openai-has-a-new-cybersecurity-model-and-strategy/",
+      category: "Cybersecurity"
+    },
+    {
+      id: "tc2",
+      title: "Hacker Group ShinyHunters Threatens to Release Grand Theft Auto VI Data After Rockstar Breach",
+      summary: "The hacker group ShinyHunters claims to have stolen data from a third-party Rockstar Games server and set a ransom deadline of April 14, threatening to publish the material in the second major cyberattack targeting the GTA developer in three years.",
+      image: "https://i.guim.co.uk/img/media/e1fd6292b378f4616de2c4e0327d5cf8e39c7dca/464_0_4640_3712/master/4640.jpg?width=1200&quality=85&auto=format&fit=max&s=ebd899515cd2dc089fab37382df97680",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/games/2026/apr/13/grand-theft-auto-vi-rockstar-games-data-hack-ransom",
+      category: "Cybersecurity"
+    },
+    {
+      id: "tc3",
+      title: "'Workslop' Is Swamping Offices as AI-Generated Content Piles Up Errors for Workers to Fix",
+      summary: "Employees across industries are reporting a growing burden of correcting superficially polished but deeply flawed AI-generated work — a phenomenon being dubbed 'workslop' — even as executives tout AI's productivity gains.",
+      image: "https://images.pexels.com/photos/1092050/pexels-photo-1092050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/technology/2026/apr/14/ai-productivity-workplace-errors",
+      category: "Artificial Intelligence"
+    }
   ]
 };

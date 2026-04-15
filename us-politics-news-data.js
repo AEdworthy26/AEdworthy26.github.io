@@ -1,25 +1,49 @@
 // us-politics-news-data.js
-// Auto-updated 2026-04-14 — do not edit manually
+// Auto-updated 2026-04-15 — do not edit manually
 
 var US_POLITICS_NEWS = {
-  date: "2026-04-14",
+  date: "2026-04-15",
   main: {
-    title: "Swalwell Resigns From Congress Amid Sexual Misconduct Allegations, Throwing California Democrats Into Chaos",
+    title: "Trump DOJ Moves to Overturn Seditious Conspiracy Convictions of January 6 Ringleaders",
     category: "Politics",
     content: [
-      "Representative Eric Swalwell, the California Democrat who had been mounting a campaign for governor, announced his resignation from Congress following allegations of sexual misconduct made by four women. The accusations range from sexual harassment to rape, all of which Swalwell has publicly denied. His departure marks a sudden and dramatic end to a political career that had included a brief 2020 presidential run and a high-profile seat on the House Intelligence Committee.",
-      "The resignation comes as the House was weighing a possible expulsion vote against Swalwell, a procedure that would have forced his colleagues to go on the record about the allegations in an election year. Republican Representative Tony Gonzales of Texas also announced he would leave Congress ahead of a potential expulsion vote stemming from his own separate misconduct claims. The near-simultaneous departures of one Democrat and one Republican are not expected to immediately shift the already razor-thin House majority held by the GOP, but the political fallout is significant for both parties.",
-      "For California Democrats, the timing could not be worse. Swalwell had only recently entered the governor's race, and internal party polling had already been raising alarm bells about name recognition and enthusiasm in the field. His resignation from Congress, effective ahead of schedule, now triggers a special election for his Bay Area seat — adding yet another competitive race to a Democratic Party calendar already stretched thin heading into the 2026 midterms.",
-      "The episode has also ignited a broader conversation about conduct within Congress itself. Former Representative Marjorie Taylor Greene publicly suggested that the misconduct described in the allegations against Swalwell and Gonzales is 'a lot more prevalent' on Capitol Hill than the public realizes, claiming that more members are guilty of similar behavior. Her remarks, while unsubstantiated, intensified calls from advocacy groups and some lawmakers for a more rigorous ethics enforcement process within the House.",
-      "The political decision-making surrounding the expulsion process revealed the delicate calculations both parties are making ahead of the midterms. House leadership on both sides appeared to be factoring in the chamber's fragile balance of power when deciding how aggressively to pursue formal expulsion proceedings. Ultimately, the voluntary departures of both members may have relieved some pressure on leadership, but the underlying questions about institutional accountability — and how Congress handles allegations of serious misconduct against sitting members — are unlikely to fade quickly from the national conversation."
+      "The Trump Justice Department has taken the extraordinary step of asking a federal court to throw out the seditious conspiracy convictions of Stewart Rhodes, the founder of the Oath Keepers, along with other senior members of the Oath Keepers and Proud Boys stemming from the January 6, 2021 Capitol riot. The move represents one of the most aggressive acts yet in the administration's broader effort to rehabilitate those involved in the attack on Congress. Legal experts say the filing is highly unusual, as it asks the court to undo convictions that were won by the very same department — now under new leadership — following lengthy trials.",
+      "President Trump had already commuted the prison sentences of twelve members of the Proud Boys and Oath Keepers last year, fulfilling a campaign promise he made to supporters who viewed the January 6 defendants as political prisoners. The new DOJ filing goes a significant step further by seeking to erase the convictions entirely from the record, which would clear the legal names of some of the most prominent figures prosecuted for their roles in planning and participating in the assault on the Capitol. Rhodes was originally sentenced to 18 years in prison after being found guilty of leading a conspiracy to prevent the peaceful transfer of presidential power.",
+      "The Justice Department's move has drawn immediate condemnation from Democrats and former prosecutors, who argue that the convictions were secured through rigorous legal proceedings, upheld on appeal, and represent a foundational accountability moment for American democracy. Critics see the action as a politically motivated intervention designed to reward loyalists and rewrite the historical record of one of the gravest domestic political crises in modern American history. Several former federal prosecutors publicly stated that they had never seen a Justice Department move to vacate convictions it had itself prosecuted on these grounds.",
+      "The decision fits into a broader pattern under the Trump administration of using the Justice Department as an instrument to settle political scores and reverse actions taken under the Biden administration. Earlier this week, the DOJ also released a report claiming that the Biden-era department had 'weaponized' enforcement of the FACE Act — a law protecting access to abortion clinics — against conservative anti-abortion activists. Together, these moves signal a sweeping reorientation of the department's priorities and a willingness to relitigate the prosecutorial decisions of the previous administration at the highest levels.",
+      "Congress has so far offered only muted institutional resistance to the DOJ's January 6 reversal, reflecting both the thin Republican majority in the House and a reluctance among many GOP members to openly challenge the administration. Democrats have called for hearings and accused the administration of undermining the rule of law, but without control of either chamber they have limited procedural tools to intervene. The long-term implications for public trust in the federal justice system — and for the historical memory of January 6 itself — remain a subject of intense debate among legal scholars, historians, and elected officials across the political spectrum."
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/e254/live/6a60a1f0-3782-11f1-baf3-a7621754a772.jpg",
-    source: "NPR",
-    sourceUrl: "https://www.npr.org/2026/04/13/nx-s1-5784030/eric-swalwell-resigns-from-congress"
+    image: "https://images.pexels.com/photos/5854416/pexels-photo-5854416.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    source: "Washington Post",
+    sourceUrl: "https://www.washingtonpost.com/national-security/2026/04/14/january-6-convictions-seditious-conspiracy/"
   },
   secondary: [
-    { id: "us1", title: "Judge Dismisses Trump's $10 Billion Lawsuit Against the Wall Street Journal Over Epstein Reporting", summary: "A federal judge threw out President Trump's defamation lawsuit against the Wall Street Journal, ruling that Trump failed to demonstrate the newspaper published its story about a letter allegedly connecting him to Jeffrey Epstein with malicious intent.", image: "https://images.pexels.com/photos/34816943/pexels-photo-34816943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", source: "NPR", url: "https://www.npr.org/2026/04/13/g-s1-117248/judge-dismisses-trump-lawsuit-epstein-letter-wsj-story-murdoch", category: "Politics" },
-    { id: "us2", title: "Vance Tells Pope Leo to Stay Out of U.S. Affairs as Trump-Vatican Feud Escalates", summary: "Vice President JD Vance publicly defended President Trump's attacks on Pope Leo, telling the pontiff to refrain from weighing in on American politics even as church observers warned the unprecedented public feud risks alienating conservative Catholic voters.", image: "https://static01.nyt.com/images/2026/04/13/multimedia/13trump-news-pope-vance-jlbz/13trump-news-pope-vance-jlbz-mediumSquareAt3X.jpg", source: "The New York Times", url: "https://www.nytimes.com/2026/04/13/us/politics/jd-vance-pope-leo-trump.html", category: "Politics" },
-    { id: "us3", title: "Trump World Rattled as Orbán Falls, Raising Midterm Fears for American Right", summary: "The stunning electoral defeat of Hungarian Prime Minister Viktor Orbán, a figure celebrated by Trump and much of the MAGA movement as a model of right-wing governance, has alarmed some American conservatives who worry that the political forces that toppled him could foreshadow Republican losses in the 2026 midterms.", image: "https://images.pexels.com/photos/1464206/pexels-photo-1464206.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", source: "The New York Times", url: "https://www.nytimes.com/2026/04/13/us/politics/orban-trump-maga.html", category: "Politics" }
+    {
+      id: "us1",
+      title: "Filibuster's Future in Doubt as Trump Pushes Senate to Scrap It for Save America Act",
+      summary: "President Trump is pressing Senate Republicans to eliminate the filibuster to pass his Save America Act, but many GOP senators remain wary of abolishing a rule that could protect them when they lose the majority.",
+      image: "https://images.pexels.com/photos/5227053/pexels-photo-5227053.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      source: "NPR",
+      url: "https://www.npr.org/2026/04/14/nx-s1-5771526/the-filibuster-has-long-forced-senators-to-compromise-can-it-survive-2026",
+      category: "Politics"
+    },
+    {
+      id: "us2",
+      title: "Virginia Joins National Popular Vote Compact, Pushing It to 222 Electoral Votes",
+      summary: "Virginia's entry into the National Popular Vote Interstate Compact brings the coalition to states representing 222 electoral votes, edging it closer to the 270 needed to effectively bypass the Electoral College.",
+      image: "https://images.pexels.com/photos/1550340/pexels-photo-1550340.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      source: "NPR",
+      url: "https://www.npr.org/2026/04/14/nx-s1-5742595/virginia-popular-vote-compact",
+      category: "Elections"
+    },
+    {
+      id: "us3",
+      title: "JD Vance Heckled at Turning Point USA Event, Acknowledges Youth Discontent Over Iran War",
+      summary: "Vice President JD Vance faced antiwar protests at a conservative student gathering and openly acknowledged that young voters are unhappy with the administration's military policy in the Middle East.",
+      image: "https://static01.nyt.com/images/2026/04/14/multimedia/14israel-iran-JD-lgzf/14israel-iran-JD-lgzf-mediumSquareAt3X.jpg",
+      source: "The New York Times",
+      url: "https://www.nytimes.com/2026/04/14/us/politics/jd-vance-turning-point-usa-protest.html",
+      category: "Politics"
+    }
   ]
 };

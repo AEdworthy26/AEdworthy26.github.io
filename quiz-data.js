@@ -1,10 +1,10 @@
 // quiz-data.js
-// Auto-updated 2026-04-14 — do not edit manually
+// Auto-updated 2026-04-15 — do not edit manually
 
 window.QUIZ_DATA = {
-  date: '2026-04-14',
+  date: '2026-04-15',
   category: 'Ancient History',
-  question: 'Which Roman emperor ordered the construction of a wall across northern Britain, and in which year did construction begin?',
-  answer: 'Emperor Hadrian ordered its construction, beginning in AD 122.',
-  funFact: 'Hadrian\'s Wall stretched approximately 73 miles (117 km) from Wallsend on the River Tyne in the east to Bowness-on-Solway in the west. Rather than purely a military barrier, it served as a sophisticated frontier system with milecastles, turrets, and forts, likely functioning as a means of controlling movement and trade as much as repelling invasion. Construction was carried out by legionaries of the Roman army and took roughly six years to complete.'
+  question: 'Which ancient Greek philosopher proposed the concept of "apeiron" — an indefinite, boundless substance — as the fundamental principle underlying all existence?',
+  answer: 'Anaximander of Miletus.',
+  funFact: 'Anaximander (c. 610–546 BC) was a student of Thales and one of the earliest pre-Socratic thinkers to move beyond identifying a familiar substance like water or fire as the origin of all things. His concept of the apeiron ("the boundless") was revolutionary because it was abstract and unobservable — a bold leap toward metaphysical thinking. He also reportedly produced one of the earliest known maps of the world and suggested that humans may have evolved from fish-like creatures.'
 };

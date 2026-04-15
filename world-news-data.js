@@ -1,49 +1,49 @@
 // world-news-data.js
-// Auto-updated 2026-04-14 — do not edit manually
+// Auto-updated 2026-04-15 — do not edit manually
 
 var WORLD_NEWS = {
-  date: "2026-04-14",
+  date: "2026-04-15",
   main: {
-    title: "U.S. Military Blockade of Iranian Ports Takes Effect as Nuclear Talks Collapse",
-    category: "Geopolitics",
+    title: "Israel and Lebanon Hold First Direct Talks Since 1993 Amid Ongoing Iran War",
+    category: "Diplomacy",
     content: [
-      "A United States military blockade of Iranian ports has formally taken effect, marking a dramatic escalation in tensions between Washington and Tehran after weekend peace negotiations ended without an agreement. The blockade, which targets the Strait of Hormuz and key Iranian port infrastructure, represents one of the most significant acts of economic and military pressure applied to Iran in decades. President Trump announced the measure following the breakdown of talks, asserting that Iran would eventually be forced to seek a deal on more favourable terms.",
-      "The negotiations had appeared to offer a narrow path toward a diplomatic resolution over Iran's nuclear programme, but the gap between the two sides proved insurmountable. Iran proposed suspending its nuclear activities for up to five years in an effort to stave off further American pressure, a concession that would have represented a significant, if temporary, rollback of its enrichment capabilities. However, Vice President JD Vance had entered the talks demanding a 20-year suspension, and President Trump ultimately rejected the Iranian offer outright, clearing the way for the blockade to proceed.",
-      "The military blockade of the Strait of Hormuz carries enormous consequences for global energy markets, as the waterway handles roughly a fifth of the world's oil supply. Analysts warn that even a partial disruption to shipping through the strait could trigger sharp spikes in crude oil prices and ripple through economies worldwide, particularly those in Europe and Asia that rely heavily on Gulf energy exports. The move has already drawn concern from international partners, with several European capitals urging restraint and calling for the resumption of diplomatic channels.",
-      "Iran has so far responded defiantly, with officials rejecting what they characterised as American coercion and vowing to protect their sovereign rights over their own territorial waters and trade routes. Tehran has not yet formally announced retaliatory measures, but defence officials have signalled that all options remain on the table, raising fears of a broader confrontation in the Gulf region. Regional neighbours, including Saudi Arabia and the UAE, are closely monitoring the situation, aware that any military miscalculation could draw them into a conflict with devastating consequences.",
-      "The blockade comes at a moment of acute global uncertainty, with multiple ongoing conflicts already straining international diplomatic systems. Observers note that Trump's willingness to deploy military assets in such a direct fashion signals a fundamental shift in American strategy toward Iran, moving away from sanctions-led pressure toward active naval enforcement. Whether Tehran chooses to negotiate from a position of constraint or escalates further will likely define the trajectory of one of the world's most consequential geopolitical standoffs in the months ahead."
+      "Israel and Lebanon have held their first direct diplomatic talks in more than three decades, marking a significant and unexpected development amid the wider regional conflict sparked by the US-Israeli war on Iran. The two sides met in Washington, with a joint US statement confirming that Israeli and Lebanese diplomats had agreed to launch formal direct negotiations, with a time and place for subsequent talks still to be determined. The meeting represents the first face-to-face engagement between the two countries since 1993, when Lebanon last participated in the Madrid peace process framework.",
+      "The talks come even as fighting continues in southern Lebanon between Israeli forces and Iranian-backed Hezbollah militants, a conflict that has threatened to undermine a fragile US-Iran ceasefire brokered in recent weeks. The dual track of military confrontation and diplomatic engagement reflects the complex and volatile nature of the current Middle East landscape, where multiple fronts are active simultaneously. US officials have been pushing hard to consolidate diplomatic gains before hostilities can escalate further and derail any progress toward a broader regional settlement.",
+      "The Iran war, which entered a dramatic new phase when President Trump ordered a US naval blockade of the Strait of Hormuz, has reshaped the geopolitical calculus for countries across the region. Lebanon, already economically devastated and politically fragile, faces enormous pressure both from Hezbollah's continued military operations and from the economic fallout of the broader conflict. The direct talks signal that at least some factions within the Lebanese state are willing to explore a separate diplomatic track, even as the situation on the ground remains deeply unstable.",
+      "US Treasury Secretary Scott Bessent told the BBC that a 'small bit of economic pain' was worth enduring to eliminate what he described as the long-term threat of Iranian strikes on Western capitals, framing the US strategy as a necessary if costly investment in global security. The blockade of the Strait of Hormuz has had sweeping economic consequences far beyond the immediate belligerents, driving up oil prices globally and triggering fuel protests in countries as far afield as Ireland, where the government now faces a possible no-confidence vote. Dubai's migrant worker population, a backbone of the UAE's hospitality sector, has also borne a heavy toll, with widespread furloughs, pay cuts, and forced repatriations reported.",
+      "Veteran diplomats and analysts, including Aaron David Miller of the Carnegie Endowment for International Peace, caution that the path to a durable settlement remains treacherous, with numerous spoilers both inside and outside the region. The Israel-Lebanon talks, while historically notable, are seen as preliminary steps rather than a breakthrough, and any formal negotiations will need to navigate deep-seated disputes over borders, Hezbollah's role, and the terms of any Iranian disengagement. Nevertheless, the mere fact of direct engagement between Beirut and Jerusalem — for the first time in a generation — has been received cautiously as a rare glimmer of diplomatic possibility in an otherwise combustible moment for the Middle East."
     ],
-    image: "https://images.pexels.com/photos/15904544/pexels-photo-15904544.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    source: "NPR",
-    sourceUrl: "https://www.npr.org/2026/04/13/nx-s1-5783804/a-u-s-military-blockade-of-irans-ports-takes-effect-what-does-that-mean"
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/73fd/live/12865e50-3824-11f1-87a9-4117efae0ff4.jpg",
+    source: "BBC News",
+    sourceUrl: "https://www.bbc.com/news/articles/cp8ddydl18vo?at_medium=RSS&at_campaign=rss"
   },
   secondary: [
     {
       id: "s1",
-      title: "Orbán Ousted After 16 Years as Péter Magyar Wins Hungarian Election in Landslide",
-      summary: "Viktor Orbán has conceded defeat in Hungary's general election, ending his 16-year grip on power after opposition leader Péter Magyar secured a sweeping victory that is expected to ease tensions between Budapest and the European Union.",
-      image: "https://images.pexels.com/photos/13916840/pexels-photo-13916840.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      source: "NYT",
-      url: "https://www.nytimes.com/2026/04/13/world/europe/hungary-eu-orban-magyar.html",
-      category: "Politics"
+      title: "Sudan's War Enters Fourth Year as UN Condemns 'Unacceptable' Global Response",
+      summary: "As international talks convene in Berlin on the third anniversary of Sudan's catastrophic civil war, the UN's top official for Sudan has condemned the lack of global urgency surrounding what is now the world's largest humanitarian crisis, with 19 million people facing acute hunger.",
+      image: "https://images.pexels.com/photos/10970368/pexels-photo-10970368.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/global-development/2026/apr/14/no-end-sudan-war-conflict-third-anniversary",
+      category: "Humanitarian"
     },
     {
       id: "s2",
-      title: "Pope Leo XIV Arrives in Algeria on Historic First Papal Visit to the Country",
-      summary: "Pope Leo XIV has landed in Algeria to begin an 11-day African tour — the first papal visit to the country — with stops also planned in Cameroon, Angola and Equatorial Guinea, reflecting the Catholic Church's growing focus on the continent where the faith is expanding faster than anywhere else in the world.",
-      image: "https://i.guim.co.uk/img/media/ee50f6a2b1267d06369bd1e0c7235bf8b4bffa9d/367_0_2560_2048/master/2560.jpg?width=1200&quality=85&auto=format&fit=max&s=c0a54b263b681643309eb663b3595e12",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/world/2026/apr/13/pope-leo-visits-algeria-africa-tour-catholic-church",
-      category: "Religion"
+      title: "Peter Magyar Defeats Viktor Orbán in Landmark Hungarian Election",
+      summary: "Peter Magyar, a former ally turned fierce critic of Viktor Orbán, has defeated the long-dominant far-right Hungarian leader in a landslide election victory, raising hopes of a significant political transformation in Hungary.",
+      image: "https://static01.nyt.com/images/2026/04/14/multimedia/14int-hungary-magyar-01-gzvb/14int-hungary-magyar-01-gzvb-mediumSquareAt3X.jpg",
+      source: "The New York Times",
+      url: "https://www.nytimes.com/2026/04/14/world/europe/viktor-orban-peter-magyar-election.html",
+      category: "Politics"
     },
     {
       id: "s3",
-      title: "Lebanon Enters Peace Talks with Israel Holding Little Leverage",
-      summary: "The Lebanese government has entered negotiations with Israel in a severely weakened position, with analysts noting Beirut holds few cards to play as it seeks to navigate a fragile post-conflict landscape still shaped by the shadow of Hezbollah.",
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/f2e8/live/b19d8720-3748-11f1-879d-1b2f5c3919b8.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/cr51l794mlyo?at_medium=RSS&at_campaign=rss",
-      category: "Diplomacy"
+      title: "Nigeria Under Scrutiny After Airstrike on Busy Market Kills Up to 200 Civilians",
+      summary: "Survivors and international observers have questioned the Nigerian military's justification for a devastating airstrike on the crowded Jilli market in the north-east of the country, which killed as many as 200 people in what the military described as a precision anti-terror operation.",
+      image: "https://images.pexels.com/photos/17586367/pexels-photo-17586367.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/world/2026/apr/14/survivors-ask-why-nigeria-bombed-busy-market-in-effort-to-target-jihadist-group",
+      category: "Conflict"
     }
   ]
 };

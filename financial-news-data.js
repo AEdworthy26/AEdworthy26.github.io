@@ -1,48 +1,48 @@
 // financial-news-data.js
-// Auto-updated 2026-04-14 — do not edit manually
+// Auto-updated 2026-04-15 — do not edit manually
 
 var FINANCIAL_NEWS = {
-  date: "2026-04-14",
+  date: "2026-04-15",
   main: {
-    title: "Oil Swings Above $100 as Strait of Hormuz Blockade Rattles Global Energy Markets",
-    category: "Commodities & Markets",
+    title: "IMF Warns Iran War Could Tip World Into Recession as Markets Stage Dramatic Recovery",
+    category: "Economics",
     content: [
-      "Global oil markets experienced dramatic volatility this week as the United States imposed a naval blockade on the Strait of Hormuz, sending Brent crude briefly surging above $100 a barrel for the first time in years. The benchmark price had jumped as much as 6.9% in a single trading session after weekend negotiations between Washington and Tehran broke down without resolution. The move marked a significant escalation in the ongoing US-Iran conflict, with the strait — through which roughly a fifth of the world's oil supply passes — now effectively closed to vessels doing business with Iran.",
-      "Prices pulled back somewhat on Tuesday after President Trump claimed Iran had made contact and expressed a desire to reach a deal, telling reporters that Tehran wanted an agreement 'very badly.' The comments sparked cautious optimism among traders, though analysts warned that the fundamental supply disruption remains unresolved and that any relief rally could prove short-lived. Shipping companies, for their part, continued to signal reluctance to transit the strait, with many vessels diverting to longer alternative routes rather than risk confrontation with US naval forces.",
-      "The economic ripple effects are already being felt well beyond the oil patch. China's trade data for March, the first full month impacted by the Iran conflict, showed export growth slowing sharply while imports surged — a pattern economists attribute in part to soaring energy import costs distorting the country's trade balance. Meanwhile, haven flows into Asian financial centres have intensified: Singapore's interbank lending rates are approaching four-year lows as investors pile into the city-state's AAA-rated assets, and Hong Kong dollar bond issuance has boomed as global borrowers capitalise on demand for the currency's perceived safety.",
-      "The disruption is also reverberating through the US housing market, where sales hit a nine-month low in March as consumers and businesses grew increasingly anxious about the economic consequences of a prolonged conflict. Economists warn that sustained oil prices above $100 per barrel could reignite inflationary pressures at a time when the Federal Reserve had been cautiously signalling the possibility of rate cuts later this year. Higher energy costs feed directly into transportation, manufacturing, and heating expenses, threatening to squeeze household budgets that had only recently begun to recover from the inflation surge of the early 2020s.",
-      "For energy investors, the crisis has created a bifurcated landscape of opportunity and risk. Defense-adjacent sectors — including counter-drone technology firms — have seen renewed interest as governments from Washington to Riyadh accelerate procurement of protective systems. In Europe, the UK's National Grid operator confirmed that Britain holds sufficient gas reserves for the summer, though commentators have used the moment to renew calls for expanded North Sea production rather than reliance on higher-cost US liquefied natural gas imports. Whether diplomacy can de-escalate the Hormuz standoff quickly enough to prevent lasting economic damage remains the central question facing markets in the days ahead."
+      "The International Monetary Fund has issued one of its starkest warnings in years, cautioning that a further escalation of the Iran war could trigger a global recession, with the United Kingdom standing to suffer more than any other G7 nation from the economic fallout. The Washington-based institution has slashed its growth forecasts for both the US and the global economy, citing rising oil prices, disrupted shipping lanes, and a sharp deterioration in business and consumer confidence as the primary transmission channels through which the conflict is depressing output. The IMF's intervention came as UK Chancellor Rachel Reeves arrived in Washington for meetings, facing the uncomfortable task of defending the UK's economic resilience against an institution that has effectively singled out Britain as the developed world's most vulnerable major economy.",
+      "At the heart of the IMF's concern is the Strait of Hormuz, through which roughly a fifth of the world's oil supply passes. A US naval blockade has already stopped Iran-linked vessels from transiting the waterway, with US Central Command confirming that six ships complied with orders to return to Iranian ports. The disruption has sent energy prices sharply higher, compounding inflationary pressures that central banks in Europe and North America had only recently begun to bring under control. Economists warn that a sustained closure or further militarisation of the strait could produce an oil price shock comparable to those seen in the 1970s, with cascading consequences for manufacturing, transport, and household energy bills worldwide.",
+      "Despite the dire warnings from the IMF, financial markets staged a striking recovery this week, with stocks across Asia and Europe erasing much of the losses accumulated since the outbreak of the conflict. China's equity markets became the latest to recoup their war-driven declines, fuelled by optimism around economic resilience and a refocus by investors on corporate earnings fundamentals. In the United States, Nvidia's stock extended a ten-day winning streak, reflecting renewed investor appetite for AI-related names as the technology sector reasserted itself as a growth engine capable of outrunning geopolitical headwinds. The rally suggests that, for now, markets are pricing in a de-escalation scenario rather than the worst-case outcomes outlined by the IMF.",
+      "A key catalyst for the market rebound has been the emergence of renewed diplomatic contacts between the United States and Iran. US Treasury Secretary Scott Bessent told the BBC that a 'small bit of economic pain' was a worthwhile price to pay to neutralise the threat of Iranian strikes on Western capitals, signalling that the administration views the economic costs as manageable in the context of the broader strategic objective. Investors appear to have interpreted the opening of talks as evidence that both sides retain an interest in avoiding a prolonged conflict, reducing the tail risk of a full-scale escalation that would validate the IMF's recession scenario. Nonetheless, analysts caution that the situation remains highly fluid and that any breakdown in negotiations could rapidly reverse the market gains of recent days.",
+      "The episode has laid bare significant structural vulnerabilities in several major economies. India's clean energy push, for instance, has been exposed by the war, with the country's creaking electricity grid struggling to keep pace with demand just as oil supplies from the Gulf face disruption. In the UK, the IMF's downgrade arrives at a particularly sensitive moment, with the government already navigating a challenging fiscal environment and limited headroom to absorb further shocks. For investors and policymakers alike, the central challenge is now one of managing uncertainty: markets may be betting on resolution, but the economic institutions charged with monitoring systemic risk are making very different calculations about what happens if the diplomacy fails."
     ],
-    image: "https://static01.nyt.com/images/2026/04/13/multimedia/13israel-iran-ship-update-hcvf/13israel-iran-ship-update-hcvf-mediumSquareAt3X.jpg",
+    image: "https://i.guim.co.uk/img/media/dcea8c69df6cca238503b1e7baa2445aa777852d/0_0_4173_3339/master/4173.jpg?width=1200&quality=85&auto=format&fit=max&s=221d559e500881718ddf9b279d53e496",
     source: "The Guardian",
-    sourceUrl: "https://www.theguardian.com/business/2026/apr/13/oil-price-tops-100-dollars-barrel-us-blockade-strait-of-hormuz"
+    sourceUrl: "https://www.theguardian.com/business/2026/apr/14/iran-war-global-recession-imf-uk-growth-forecasts-oil-prices"
   },
   secondary: [
     {
       id: "fn1",
-      title: "China's Exports Stumble as Iran War Disrupts Global Trade in March",
-      summary: "China's export growth slowed sharply in March while imports surged, as the fallout from the Iran conflict and rising energy costs distorted the country's trade balance in the conflict's first full month.",
-      image: "https://images.pexels.com/photos/35143785/pexels-photo-35143785.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      source: "Bloomberg",
-      url: "https://www.bloomberg.com/news/articles/2026-04-14/china-s-export-growth-slowed-sharply-in-first-month-of-iran-war",
-      category: "International Trade"
+      title: "Nvidia Extends 10-Day Winning Streak as Investors Pile Back Into AI",
+      summary: "Nvidia's stock continued its remarkable run as renewed confidence in artificial intelligence investments drew investors back into the technology sector despite broader geopolitical uncertainty.",
+      image: "https://images.mktw.net/im-62932554",
+      source: "MarketWatch",
+      url: "https://www.marketwatch.com/story/nvidias-stock-is-on-a-10-day-winning-streak-heres-why-investors-are-getting-back-on-board-with-ai-bf0bb59e?mod=mw_rss_topstories",
+      category: "Markets"
     },
     {
       id: "fn2",
-      title: "Hollywood Stars Oppose Paramount and Warner Bros Discovery Merger",
-      summary: "High-profile actors including Emma Thompson and Ben Stiller signed an open letter opposing the proposed Paramount-Warner Bros Discovery merger, even as Paramount argues the deal will expand opportunities for creators.",
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/db73/live/120c3240-3795-11f1-a761-8bbb4440b6ff.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/cz0egvr94zro?at_medium=RSS&at_campaign=rss",
-      category: "Mergers & Acquisitions"
+      title: "UK Steel Exports to EU Threatened as Bloc Doubles Tariffs and Halves Quotas",
+      summary: "The European Union has confirmed plans to double steel tariffs and reduce duty-free import quotas by 47% from July, a move aimed at curbing Chinese steel but one that threatens significant collateral damage to British exporters.",
+      image: "https://i.guim.co.uk/img/media/a429cc11a44ba9a514ce404cfbf716c2b4183a69/0_0_4016_3214/master/4016.jpg?width=1200&quality=85&auto=format&fit=max&s=2c70c0b40d41cea51a632d7f7071d8c0",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/business/2026/apr/14/uk-steel-exports-eu-risk-tariffs-quotas",
+      category: "Trade"
     },
     {
       id: "fn3",
-      title: "US Home Sales Hit Nine-Month Low Amid Iran War Economic Fears",
-      summary: "The number of US homes sold fell to its lowest level in nine months as consumers were 'frozen' by uncertainty over the economic consequences of the ongoing Iran conflict and rising energy prices.",
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/5d0d/live/14096f30-3750-11f1-8a34-6b2c37f4bef9.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/cn08ep6d5ndo?at_medium=RSS&at_campaign=rss",
+      title: "Help to Buy Mostly Benefited High Earners, IFS Analysis Finds",
+      summary: "A landmark study by the Institute for Fiscal Studies has concluded that George Osborne's flagship Help to Buy mortgage scheme delivered its greatest financial benefits to higher-income households while doing little to improve social mobility in the UK housing market.",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/432b/live/5ec3d2c0-3810-11f1-8fdd-51dab7090d67.jpg",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/money/2026/apr/15/higher-income-households-benefited-most-from-help-to-buy-mortgages-thinktank",
       category: "Economics"
     }
   ]

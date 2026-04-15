@@ -1,128 +1,136 @@
 // philosophy-data.js
-// Auto-updated 2026-04-14 — do not edit manually
+// Auto-updated 2026-04-15 — do not edit manually
 
 window.PHILOSOPHY_DATA = {
-  date: '2026-04-14',
+  date: '2026-04-15',
   mainTheory: {
-    title: 'The Social Contract: Rousseau and the Birth of Political Legitimacy',
-    subject: 'Jean-Jacques Rousseau',
-    subtitle: 'What if the foundation of all political authority is not God, nor force, but a silent agreement we never actually signed?',
-    readTime: '10 min',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/b/b7/Jean-Jacques_Rousseau_%28painted_portrait%29.jpg',
+    title: 'The Categorical Imperative: Kant\'s Moral Law Within',
+    subject: 'Immanuel Kant',
+    subtitle: 'What if morality was not a matter of feeling or consequence, but of pure rational duty binding every human being equally?',
+    readTime: '11 min',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/7/79/Immanuel_Kant_-_Gemaelde_1.jpg',
     content: [
       {
         type: 'paragraph',
-        text: 'In 1762, Jean-Jacques Rousseau opened his most famous work with a thunderclap of a sentence: "Man is born free, and everywhere he is in chains." This was not merely a complaint about tyranny — it was the premise of an entire philosophical project aimed at discovering whether political authority could ever be legitimate, and if so, on what terms. Rousseau was not the first thinker to invoke the idea of a social contract, but he gave it its most radical and enduring form. He insisted that the only justifiable source of political power was the free consent of the governed, expressed through what he called the "general will." The reverberations of that claim are still felt in every democratic constitution, every human rights declaration, and every protest sign held up against an unjust government.'
+        text: 'In the winter of 1785, a retired Prussian professor named Immanuel Kant published a slim volume that would permanently alter the landscape of moral philosophy. The Groundwork of the Metaphysics of Morals argued, with characteristic rigor, that the foundation of all genuine morality could not rest on tradition, emotion, or the calculation of outcomes. Instead, Kant insisted that ethics must be grounded in reason alone — universal, unconditional, and utterly indifferent to personal advantage. This was not merely an academic provocation; it was a revolution in how human beings were invited to think about right and wrong. Kant believed he had discovered something as objective as a mathematical truth: a supreme principle of morality he called the Categorical Imperative.'
       },
       {
         type: 'heading',
-        text: 'The State of Nature: Rousseau\'s Radical Revision'
+        text: 'The Problem Kant Was Solving'
       },
       {
         type: 'paragraph',
-        text: 'To understand why the social contract matters, one must first understand what it was supposed to replace. Earlier thinkers such as Thomas Hobbes had painted human beings in their natural, pre-social state as fundamentally aggressive — life without government, Hobbes infamously declared, was "solitary, poor, nasty, brutish, and short." Rousseau disagreed with startling force. For Rousseau, the natural human being — the "noble savage," as the caricature goes — was not inherently competitive or violent, but a peaceful, self-sufficient creature guided by simple desires and a natural compassion for the suffering of others. It was civilization itself, with its inequalities and artificial needs, that had corrupted humanity. This reversal of Hobbes was not just a theoretical disagreement; it was a moral indictment of contemporary European society.'
+        text: 'To appreciate what Kant was doing, one must understand the philosophical world he was reacting against. The dominant moral theories of his era were either theological — grounding ethics in divine command — or empirical, as exemplified by Hume\'s claim that moral judgments spring from sentiment rather than reason. Kant found both approaches deeply unsatisfying because they made morality contingent: dependent on the whims of God, the accidents of upbringing, or the fluctuating tides of human feeling. He asked a strikingly simple question — if morality is supposed to obligate everyone, everywhere, at all times, then what could possibly provide that unconditional force? His answer was that reason, and only reason, possesses the universality that genuine moral obligation demands.'
       },
       {
         type: 'heading',
-        text: 'The General Will and the Problem of Freedom'
+        text: 'Duty, the Good Will, and Acting from Principle'
       },
       {
         type: 'paragraph',
-        text: 'The philosophical heart of Rousseau\'s social contract theory is the concept of the "general will" — la volonté générale. Rousseau distinguished sharply between what individuals happen to want at any given moment (the "will of all") and what is genuinely in the interest of the community as a whole (the general will). A society governed by the general will is one in which citizens have transcended mere private interest and are acting as co-legislators of a shared public good. Crucially, Rousseau argued that obeying the general will is not subjugation but the highest form of freedom, because it means living under laws that one has, in principle, given to oneself. This paradox — that true freedom might sometimes require being "forced to be free" — has both inspired democratic idealists and alarmed liberal critics for over two centuries.'
+        text: 'Kant begins his moral philosophy not with a theory but with an observation: the only thing good without qualification is a good will. Talent, courage, intelligence, and even happiness can be used for terrible ends; a person can be clever in the service of cruelty. A good will, however, is good purely because of its intention — because it acts out of duty rather than desire, inclination, or self-interest. Kant was careful to distinguish acting in accordance with duty from acting from duty: a shopkeeper who gives correct change only to maintain a reputation is not acting morally, even if the outcome is identical to that of a person who does so from principle. Genuine moral worth, for Kant, inheres in the inner quality of the will, not in the results it produces or the rewards it seeks.'
       },
       {
         type: 'heading',
-        text: 'Sovereignty, Representation, and the Limits of the Contract'
+        text: 'The Three Formulations of the Categorical Imperative'
       },
       {
         type: 'paragraph',
-        text: 'Rousseau was suspicious of representative democracy in a way that surprises many modern readers who regard him as a founding father of democratic thought. He believed that sovereignty — the ultimate political authority — could not be delegated. The moment a people handed their power over to elected representatives, he argued, they ceased to be truly free and became subjects once more. Genuine self-governance required direct participation in legislation, a model Rousseau admired in the small city-states of ancient Greece and his native Geneva. This made his vision of legitimate government radical but also, in practice, quite narrow — it seemed to require a small, culturally homogeneous community where citizens knew one another and shared common values. How to apply this to vast modern nation-states became a puzzle that Rousseau himself never fully resolved.'
+        text: 'Kant articulated his supreme moral principle in several interrelated formulations, the most famous being the Formula of Universal Law: "Act only according to that maxim by which you can at the same time will that it should become a universal law." In practice, this means testing any proposed action by asking whether the rule governing it could, without contradiction, apply to every rational being in a similar situation. If lying to obtain a loan were universalized, the very practice of making promises would collapse — a contradiction that reveals the maxim\'s moral illegitimacy. The second major formulation, the Formula of Humanity, commands that we always treat rational beings — ourselves included — as ends in themselves, never merely as means. A third formulation invites us to think of ourselves as legislators in a Kingdom of Ends, a community where every member simultaneously makes and is subject to universal moral laws.'
       },
       {
         type: 'heading',
-        text: 'Inequality, Property, and the Second Discourse'
+        text: 'Why Consequences Don\'t Decide Morality'
       },
       {
         type: 'paragraph',
-        text: 'Rousseau\'s 1755 Discourse on the Origin of Inequality is in many ways the darker prequel to The Social Contract. In it, he traces the genealogy of human misery to a single fateful moment: the invention of private property. "The first man who, having enclosed a piece of ground, bethought himself of saying \'This is mine,\' and found people simple enough to believe him, was the real founder of civil society," Rousseau wrote with barely concealed contempt. Once property existed, so did inequality; once inequality existed, so did the need for laws to protect it; and those laws, Rousseau argued, were essentially a con — a trick by which the rich convinced the poor to accept permanent subordination in exchange for the illusion of security. This analysis anticipates Karl Marx by nearly a century and remains one of the most penetrating critiques of liberal society ever written.'
+        text: 'One of Kant\'s most radical and contested claims is that the moral worth of an action is entirely independent of its consequences. This places him in stark opposition to consequentialist frameworks, which judge actions solely by the outcomes they produce. For Kant, lying is wrong not because it tends to produce bad results — though it often does — but because the maxim of lying cannot be universalized without self-defeating contradiction. He famously insisted that one must not lie even to a murderer who asks where your friend is hiding, a position that strikes many readers as coldly fanatical. Yet Kant\'s point is precisely about the integrity of rational principle: once we allow consequences to override moral law, we open the door to endless rationalization and lose the unconditional character that gives morality its authority.'
       },
       {
         type: 'heading',
-        text: 'Rousseau\'s Legacy in Modern Political Life'
+        text: 'Freedom, Autonomy, and Human Dignity'
       },
       {
         type: 'paragraph',
-        text: 'The French Revolution\'s leaders were steeped in Rousseau, and his influence can be felt in the Declaration of the Rights of Man and of the Citizen, which grounded political authority in popular sovereignty rather than divine right. But the revolution also exposed the dangers lurking in Rousseau\'s concept of the general will. When Robespierre invoked the general will to justify the Terror, he demonstrated how the idea of a singular collective good could become a tool of totalitarian coercion — those who dissented could be dismissed as failing to understand their own real interests. This tension between Rousseau\'s emancipatory intentions and his theory\'s authoritarian potential has never been entirely resolved. It is a tension that political philosophers continue to wrestle with today, in debates about majority rule, minority rights, and the nature of democratic legitimacy.'
+        text: 'Underlying the entire Kantian moral project is a profound account of human freedom and dignity. Kant argued that rational beings are unique in nature because they are capable of self-legislation — of giving themselves moral laws through reason rather than being simply driven by instinct or desire. This capacity for autonomy is what makes human beings possessors of an incomparable and inviolable dignity. To treat a person merely as a tool for one\'s own ends is to deny their status as a self-governing rational agent, which is, for Kant, the deepest moral wrong imaginable. It is this connection between rationality, autonomy, and dignity that has made Kantian ethics enormously influential in political philosophy, human rights discourse, and medical ethics across the centuries.'
+      },
+      {
+        type: 'heading',
+        text: 'The Legacy of Kantian Ethics'
       },
       {
         type: 'paragraph',
-        text: 'Beyond politics, Rousseau\'s ideas percolated into education, Romanticism, environmentalism, and psychology. His autobiographical Confessions pioneered a new kind of intimate, exploratory self-examination that influenced everything from the Romantic poets to Freudian introspection. His educational treatise Émile argued that children should learn through experience and natural curiosity rather than rote drilling — a view that underpins progressive pedagogy to this day. In an age of algorithmic governance, surveillance capitalism, and eroding civic participation, Rousseau\'s central question feels more urgent than ever: under what conditions, if any, can political authority truly be said to rest on the free and equal consent of those it governs? His answer may be imperfect, but the question itself remains indispensable.'
+        text: 'Kant\'s moral philosophy became the bedrock of deontological ethics — the view that certain actions are intrinsically right or wrong regardless of their outcomes — and its influence is woven throughout modern institutions and culture. The Universal Declaration of Human Rights, with its language of inherent dignity and inalienable rights, owes a profound conceptual debt to Kantian ideas. Contemporary philosophers like Christine Korsgaard have built ambitious neo-Kantian frameworks that attempt to answer the objections Kant\'s original theory attracted, while bioethicists routinely invoke the Formula of Humanity when debating the ethics of medical experimentation or the commodification of human tissues. Few philosophical systems have proven as generative, or as stubbornly relevant, in navigating the moral challenges of modern life.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Yet Kant\'s ethics remains genuinely difficult and demanding — and that is perhaps the point. He was not offering comfort or permission; he was issuing a challenge. The Categorical Imperative asks each of us to step back from our immediate wants, our social pressures, and our fear of bad consequences, and to ask a single, piercing question: can the principle governing my action be willed as a law for all rational beings? If we find ourselves consistently unable or unwilling to perform that test, the discomfort may be philosophically significant. Kant believed that morality is hard precisely because it demands that we rise above the merely empirical self — the hungry, frightened, calculating creature of nature — and act as the rational, dignified, autonomous beings he was convinced we fundamentally are.'
       }
     ]
   },
   keyTakeaways: [
-    'Rousseau argued that political legitimacy derives solely from the free consent of the governed, not from divine right or conquest.',
-    'The "general will" refers to what is genuinely in the collective interest of a community, distinct from the mere sum of private desires.',
-    'Rousseau blamed private property and inequality — not human nature — for social conflict and political oppression.',
-    'His theory simultaneously inspired democratic revolutions and provided conceptual tools that could be misused to justify authoritarian rule in the name of the collective good.'
+    'The Categorical Imperative grounds morality in universal reason, not emotion, tradition, or consequences.',
+    'A good will — acting from duty rather than inclination — is the only thing unconditionally morally worthy.',
+    'The Formula of Humanity demands we always treat rational beings as ends in themselves, never merely as means.',
+    'Human dignity derives from our capacity for rational autonomy, making us self-legislators of the moral law.'
   ],
   counterTheories: [
     {
-      philosopher: 'Thomas Hobbes',
-      period: 'c. 1588–1679',
-      school: 'Social Contract Theory / Political Absolutism',
-      argument: [
-        {
-          type: 'paragraph',
-          text: 'Thomas Hobbes, writing more than a century before Rousseau, reached a profoundly different conclusion about human nature and the purpose of the social contract. Where Rousseau saw natural humans as peaceful and cooperative, Hobbes described them as fundamentally self-interested and prone to violence. In the state of nature, every person is the enemy of every other, and without a sovereign power to impose order, life degenerates into perpetual war. This bleak anthropology led Hobbes to argue that the social contract is not a recipe for self-governance but a rational surrender of freedom to an all-powerful sovereign — the Leviathan — in exchange for security.'
-        },
-        {
-          type: 'paragraph',
-          text: 'For Hobbes, the contract is essentially a one-time event: the people agree to obey the sovereign, and in return the sovereign protects them from each other. Crucially, this contract does not create ongoing obligations for the sovereign to consult or represent the people. Once established, the sovereign\'s authority is absolute and cannot be revoked. Hobbes would have regarded Rousseau\'s general will as a dangerous fantasy — the idea that ordinary people could reliably identify and act upon a common good, without descending back into faction and conflict, struck him as naive.'
-        },
-        {
-          type: 'paragraph',
-          text: 'The Hobbesian critique cuts to the core of Rousseau\'s optimism. If humans are as self-interested as Hobbes believed, then the general will is an abstraction that powerful elites will inevitably manipulate to serve their own ends. History, Hobbes might argue, bears this out: every invocation of "the people\'s will" has sooner or later been captured by a faction. Rousseau\'s theory may describe an admirable ideal, but it provides insufficient safeguards against the human capacity for self-deception and the hunger for power.'
-        }
-      ],
-      contrast: 'While Rousseau saw the social contract as a path to genuine collective freedom, Hobbes viewed it as a necessary submission to absolute authority — the only realistic alternative to chaos.'
-    },
-    {
       philosopher: 'John Stuart Mill',
       period: 'c. 1806–1873',
-      school: 'Utilitarianism / Classical Liberalism',
+      school: 'Utilitarianism',
       argument: [
         {
           type: 'paragraph',
-          text: 'John Stuart Mill admired much of Rousseau\'s democratic spirit but was deeply alarmed by the concept of the general will and its potential to crush individual liberty. Mill\'s greatest fear was what he called the "tyranny of the majority" — the danger that democratic majorities could be just as oppressive as any tyrant when they imposed their preferences on dissenting minorities. Rousseau\'s suggestion that individuals might need to be "forced to be free" by conforming to the general will struck Mill as precisely the kind of paternalistic coercion that liberalism existed to prevent. For Mill, the only legitimate limit on individual freedom was the prevention of harm to others — the famous "harm principle" — and no appeal to collective will could override it.'
+          text: 'John Stuart Mill mounted what is perhaps the most enduring challenge to Kantian ethics by insisting that morality must ultimately be grounded in human happiness. In Utilitarianism (1863), Mill argued that the right action in any situation is the one that produces the greatest happiness for the greatest number of people — a principle he called the Greatest Happiness Principle. For Mill, divorcing morality from consequences is not principled rigor but a kind of moral blindness; an ethical framework that could, in Kant\'s own terms, require us to tell a murderer where our friend is hiding in order to uphold a duty of truthfulness has clearly gone badly wrong.'
         },
         {
           type: 'paragraph',
-          text: 'Mill also challenged Rousseau\'s suspicion of representative government. Far from seeing representation as a betrayal of popular sovereignty, Mill regarded it as an essential safeguard of quality deliberation. He argued that direct democracy, of the kind Rousseau admired, could easily become mob rule — passions inflamed, reason abandoned, minorities silenced. A well-designed representative system, with educated legislators accountable to informed citizens, was more likely to produce wise and just outcomes than the raw expression of majority sentiment. Mill\'s vision of democracy was therefore more procedural and less romantic than Rousseau\'s, more attentive to institutional design and less trusting of spontaneous popular virtue.'
+          text: 'Mill also challenged Kant\'s account of moral psychology. Kant treats feeling and inclination as morally irrelevant at best and corrupting at worst, but Mill saw sympathy, compassion, and the capacity for fellow-feeling as the very emotional engines that make moral behavior possible and sustainable. A morality stripped of the warmth of human sentiment, Mill suggested, risks becoming a cold and inhuman formalism that most people cannot live by. For the Utilitarian, the fact that an action causes suffering is not merely evidence that it might fail some universalizability test — it is the primary reason the action is wrong.'
+        },
+        {
+          type: 'paragraph',
+          text: 'Furthermore, Mill was skeptical of Kant\'s universalizability test as a practical decision procedure. He pointed out that ingenious reasoners can often construct self-consistent maxims to justify virtually any action they were already inclined to perform. The test of universal law, Mill suggested, provides no determinate answer on its own — it requires a prior commitment to caring about the welfare of others, which is precisely what Utilitarianism makes explicit and central. Without smuggling in consequentialist intuitions, the Categorical Imperative risks becoming an elaborate tautology rather than a genuine moral guide.'
         }
       ],
-      contrast: 'Where Rousseau located freedom in participation in the general will, Mill located it in the protection of individual conscience from any collective authority — including democratic majorities.'
+      contrast: 'While Kant insists that consequences are morally irrelevant and that duty alone determines right action, Mill argues that the promotion of human happiness is the sole legitimate foundation of all moral judgment.'
+    },
+    {
+      philosopher: 'Friedrich Nietzsche',
+      period: 'c. 1844–1900',
+      school: 'Existentialism / Genealogical Critique',
+      argument: [
+        {
+          type: 'paragraph',
+          text: 'Friedrich Nietzsche attacked Kantian ethics not merely as incorrect but as a symptom of a deeper cultural pathology. In works such as Beyond Good and Evil and On the Genealogy of Morality, Nietzsche argued that the supposedly universal moral law is in fact a historically contingent product of particular social and psychological conditions — specifically, what he called slave morality, a reactive system of values invented by the weak to constrain the powerful. The categorical universality that Kant celebrates is, for Nietzsche, precisely the tell: only a morality designed to suppress excellence and individuality would need to demand absolute conformity from everyone.'
+        },
+        {
+          type: 'paragraph',
+          text: 'Nietzsche was particularly scathing about Kant\'s notion of the good will and its elevation of duty above all other human values. To act purely from duty — suppressing desire, creativity, passion, and self-affirmation — struck Nietzsche as a recipe for producing what he called the last man: a timid, herd-following creature incapable of greatness. The Kantian moral framework, in Nietzsche\'s reading, does not elevate humanity; it diminishes it by demanding that rational beings subordinate every vital impulse to an abstract principle that serves no living purpose. Against the Kingdom of Ends, Nietzsche posed the will to power and the revaluation of all values as the authentic response to the human condition.'
+        }
+      ],
+      contrast: 'Where Kant sees universal rational duty as the highest expression of human dignity, Nietzsche sees it as a life-denying constraint that suppresses the creative individuality of exceptional human beings.'
     }
   ],
   whyItMatters: {
     content: [
       {
         type: 'paragraph',
-        text: 'Rousseau\'s social contract theory matters today because the questions it raises have not been answered — they have only become more complex. In an era when trust in democratic institutions is declining across the world, when populist leaders claim to embody the "real will of the people" against corrupt elites, and when digital platforms are reshaping how political opinion forms and spreads, the tension between popular sovereignty and individual rights is more live than ever. Rousseau forces us to ask who gets to define the general will, who is excluded from it, and what mechanisms can prevent it from being weaponised by demagogues. These are not abstract academic questions; they are the fault lines along which contemporary democracies are fracturing.'
+        text: 'The Categorical Imperative remains one of the most powerful intellectual tools available for navigating an age saturated with moral compromise and motivated reasoning. In an era of algorithmic manipulation, political tribalism, and the relentless optimization of outcomes at the expense of persons, Kant\'s insistence that human beings possess inherent dignity — that they must never be reduced to data points, voters, consumers, or means to someone else\'s ends — carries an urgency that feels anything but historical. The Formula of Humanity, in particular, provides a clear-eyed criterion for identifying moral violations that consequentialist calculus can easily obscure: when we ask whether a practice treats people as ends in themselves, we are asking whether it respects the rational agency that constitutes their humanity.'
       },
       {
         type: 'paragraph',
-        text: 'On a personal level, Rousseau\'s philosophy invites us to examine the social agreements we participate in, often invisibly and without explicit consent — the economic systems, cultural norms, and political arrangements that shape our lives before we are old enough to question them. His indictment of inequality as a constructed, historically contingent phenomenon rather than a natural fact remains one of philosophy\'s most powerful tools for cultivating moral imagination. To read Rousseau seriously is to become uncomfortable with arrangements that habit has made invisible, and to ask, with genuine urgency, whether the society we live in is one that free and equal people could actually have chosen — and whether, if they could not, we have an obligation to change it.'
+        text: 'Equally important is the intellectual discipline that the Categorical Imperative demands of its practitioners. Asking whether the maxim of your action could be universalized without contradiction is a practice of self-examination — a check against the endless rationalizations we construct to justify what we already want to do. It will not always deliver clean answers, and Kant\'s rigidity on specific cases has attracted well-deserved criticism. But the underlying demand — that moral reasoning be principled, consistent, and indifferent to special pleading — is one that no serious ethical life can afford to abandon. Whether one ultimately accepts Kant\'s framework or not, engaging seriously with the Categorical Imperative sharpens the moral imagination in ways that few other philosophical exercises can match.'
       }
     ]
   },
   philosopherOfTheDay: {
-    name: 'John Locke',
-    lifespan: '1632–1704',
-    category: 'Political Philosophy & Epistemology',
-    image: "https://upload.wikimedia.org/wikipedia/commons/d/db/Godfrey_Kneller_-_Portrait_of_John_Locke_%28Hermitage%29.jpg",
-    bio: 'John Locke was born on August 29, 1632, in Wrington, Somerset, England, the son of a country lawyer who served as a cavalry captain in the Parliamentary forces during the English Civil War. Educated at Westminster School and Christ Church, Oxford, Locke trained initially in medicine and developed a lifelong interest in the new experimental science championed by figures such as Robert Boyle and Isaac Newton. His early career was entangled with the volatile politics of Restoration England — he served as secretary and confidant to Anthony Ashley Cooper, the first Earl of Shaftesbury, a leading Whig politician, and this connection drew him into the centre of some of the most dangerous political intrigues of the age. When Shaftesbury fell from power, Locke fled to the Dutch Republic in 1683 to avoid arrest, and it was in exile that he completed several of his most important works.\n\nLocke returned to England triumphantly in 1689 in the wake of the Glorious Revolution, which deposed the Catholic King James II and placed William of Orange on the throne — a constitutional settlement that seemed to vindicate everything Locke had argued for. He published his Two Treatises of Government and his Essay Concerning Human Understanding in 1689 and 1690 respectively, works that would reshape Western philosophy in two distinct fields simultaneously. In the Two Treatises he argued that legitimate government rests on the consent of the governed and exists primarily to protect natural rights — life, liberty, and property — with the right of revolution reserved for the people whenever a government violates these rights. In the Essay, he developed a thoroughgoing empiricist epistemology, arguing that the mind begins as a blank slate and that all knowledge derives ultimately from sensory experience.\n\nLocke spent his final years at Oates, the Essex estate of his friend Lady Masham, writing on theology, economics, and education. He died on October 28, 1704, having established himself as perhaps the most influential political philosopher in the English-speaking world. His ideas travelled across the Atlantic with remarkable speed: Thomas Jefferson drew directly on Locke when drafting the Declaration of Independence, transmuting Locke\'s "life, liberty, and property" into the more expansive "life, liberty, and the pursuit of happiness." Locke\'s vision of limited government, natural rights, and toleration became the ideological bedrock of Anglo-American liberalism, and his epistemological empiricism set the agenda for British philosophy for generations.',
-    contributions: 'Locke developed the theory of natural rights and government by consent in political philosophy, and articulated a foundational empiricist epistemology arguing that all knowledge originates in sensory experience. His Letter Concerning Toleration was one of the earliest and most influential arguments for religious freedom in Western thought.',
-    rivals: 'Locke\'s political philosophy was challenged by Robert Filmer, whose Patriarcha defended the divine right of kings — Locke\'s First Treatise is an extended refutation of Filmer. His empiricism was later critiqued by rationalists such as Gottfried Wilhelm Leibniz, who argued in his New Essays on Human Understanding that the mind brings innate structures to experience that cannot be derived from sensation alone.'
+    name: 'Baruch Spinoza',
+    lifespan: '1632–1677',
+    category: 'Metaphysics & Ethics',
+    image: "https://upload.wikimedia.org/wikipedia/commons/e/ea/Spinoza.jpg",
+    bio: 'Baruch Spinoza was born on November 24, 1632, in Amsterdam, into a community of Sephardic Jewish merchants who had fled the Iberian Inquisition. Educated in the rich tradition of Jewish scholarship and exposed to the new scientific ideas circulating in the Dutch Republic, Spinoza displayed an early and relentless appetite for questions that his community\'s authorities found dangerous. In 1656, at the age of twenty-three, he was issued the harshest cherem — excommunication — ever recorded by the Amsterdam Jewish community, expelled for "abominable heresies" that were never officially specified but almost certainly included his emerging views on God, Scripture, and the immortality of the soul. Cut off from his family and community, he earned a modest living as a lens grinder, declining academic appointments that might have compromised his independence, and spent the remainder of his short life in quiet study and correspondence with the leading intellectuals of Europe.\n\nSpinoza\'s masterwork, the Ethics Demonstrated in Geometrical Order — published posthumously in 1677, the year of his death from lung disease almost certainly aggravated by glass dust — is one of the most audacious books in the history of philosophy. Written in the axiomatic style of Euclidean geometry, complete with definitions, axioms, propositions, and demonstrations, it attempts to derive a complete account of God, nature, the human mind, the emotions, and the path to human freedom from first principles. His central and most provocative claim was that God and Nature are one and the same substance — a position known as pantheism or, pejoratively in his own time, as atheism. Spinoza\'s God is not a personal creator who intervenes in history but the infinite, self-caused totality of all that exists, of which every individual thing — including each human mind — is a finite modification.\n\nDespite living in deliberate obscurity and publishing most of his major works either anonymously or posthumously, Spinoza exerted an enormous influence on the subsequent history of European thought. The German Romantics, including Goethe and Novalis, celebrated him as a God-intoxicated thinker; Hegel regarded him as the indispensable starting point for any serious metaphysics; and his Theological-Political Treatise (1670) laid foundational arguments for biblical criticism, freedom of thought, and the separation of religion from political authority. His life was a remarkable demonstration of intellectual courage: in an age when heterodox ideas could cost a thinker his livelihood, his community, and even his life, Spinoza followed his reasoning wherever it led with serene and unshakeable determination.',
+    contributions: 'Spinoza developed a thoroughgoing metaphysical monism identifying God with Nature, a rigorous geometrical method for ethical reasoning, and a pioneering account of human freedom as achieved through rational understanding of necessity rather than escape from it. His Theological-Political Treatise was among the earliest systematic arguments for democratic governance, freedom of expression, and the critical analysis of religious scripture.',
+    rivals: 'Spinoza\'s pantheism drew fierce opposition from theologians of every confession as well as from Leibniz, who admired his metaphysical rigor but rejected his identification of God with the world and his denial of individual providence. Descartes, whose dualist framework Spinoza explicitly targeted and dismantled, served as his primary philosophical foil throughout the Ethics.'
   }
 };

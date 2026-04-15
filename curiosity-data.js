@@ -1,42 +1,80 @@
 // curiosity-data.js
-// Auto-updated 2026-04-14 — do not edit manually
+// Auto-updated 2026-04-15 — do not edit manually
 
 var CURIOSITY_DATA = {
-  date: "2026-04-14",
+  date: "2026-04-15",
   mainArticle: {
-    title: "The Burning of Rome's Greatest Rival: Carthage and the War That Reshaped the Ancient World",
-    subject: "Carthage",
-    subtitle: "How a century-long rivalry between two superpowers ended in ash, salt, and one senator's obsession.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/3/34/Montage_ville_de_Carthage.png",
+    title: "The Voyage of the Endurance",
+    subject: "Ernest Shackleton Antarctic Expedition",
+    subtitle: "How Ernest Shackleton led twenty-seven men to the edge of oblivion — and brought every one of them back alive.",
+    image: "https://images.pexels.com/photos/31308001/pexels-photo-31308001.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     readTime: "9 min",
     content: [
-      { type: "paragraph", text: "In 146 BC, the city of Carthage — once the most powerful trading empire in the Mediterranean — was razed to the ground after seventeen days of savage street-by-street fighting. The Romans sold the survivors into slavery, dismantled the walls stone by stone, and declared the land accursed. It was one of the most deliberate acts of civilizational erasure in the ancient world, and it did not happen by accident." },
-      { type: "heading", text: "A Rival Born from the Sea" },
-      { type: "paragraph", text: "Carthage was founded, according to legend, by the Phoenician queen Dido around 814 BC on a peninsula jutting into the Gulf of Tunis. Within centuries it had become the dominant naval and commercial power of the western Mediterranean, controlling trade routes from Spain to Sicily and commanding a vast network of colonies and client states. Its merchants dealt in gold, silver, purple dye, and slaves, and its legendary fleet made it nearly untouchable at sea." },
-      { type: "heading", text: "Three Wars, One Obsession" },
-      { type: "paragraph", text: "The Punic Wars — three conflicts spread across more than a century — were Rome's existential test. The First Punic War (264–241 BC) was fought largely at sea and stripped Carthage of Sicily, its jewel. The Second, triggered by Hannibal Barca's audacious march across the Alps with war elephants in 218 BC, brought Roman legions to their knees at battles like Trebia, Lake Trasimene, and the catastrophic slaughter at Cannae, where perhaps 70,000 Romans died in a single afternoon. Yet Rome endured, and Hannibal — genius though he was — never received the reinforcements needed to finish the job." },
-      { type: "heading", text: "Cato and His Relentless Refrain" },
-      { type: "paragraph", text: "After Carthage's defeat in 202 BC, a peace was imposed that stripped it of its fleet and war elephants and saddled it with ruinous reparations. For fifty years Carthage recovered — too well, in the eyes of the Roman senator Marcus Porcius Cato the Elder. After a diplomatic visit in the 150s BC, Cato became convinced that Carthage's renewed prosperity was an existential threat, and from that point he ended every speech in the Senate, regardless of the topic, with the same declaration: Carthago delenda est — Carthage must be destroyed." },
-      { type: "heading", text: "The Third War and the Final Siege" },
-      { type: "paragraph", text: "Rome manufactured a pretext in 149 BC, demanding first that Carthage surrender its weapons, then that the city itself be demolished and its population relocated inland — terms any proud civilization would refuse. The Carthaginians, now disarmed, chose to fight anyway, spending a desperate winter melting down bronze statues to cast new swords and weaving ropes for catapults from women's hair. The siege dragged on for three brutal years before the young general Scipio Aemilianus — grandson by adoption of the man who had defeated Hannibal — broke through the harbor walls in 146 BC." },
-      { type: "heading", text: "Seventeen Days of Fire" },
-      { type: "paragraph", text: "What followed was not a clean military victory but a prolonged urban nightmare. Scipio's forces fought house by house, burning each block behind them as they advanced toward the great citadel, the Byrsa. Ancient sources describe soldiers cutting down civilians on the rooftops and the streets running with blood. The historian Appian records that Scipio himself wept as the city burned, reportedly quoting Homer: 'A day will come when sacred Troy shall perish.' He understood that empires, too, have their endings." },
-      { type: "heading", text: "What Was Lost — and What Survived" },
-      { type: "paragraph", text: "The Romans burned the famous library of Carthage and distributed its books — some 500,000 volumes by ancient estimate — to African client kings, save for a single agricultural treatise by Mago, which they translated into Latin. The Carthaginian language, religion, and culture did not vanish overnight; Punic inscriptions appear as late as the 3rd century AD, and St. Augustine of Hippo, writing four centuries later, noted that rural Africans still spoke a tongue rooted in ancient Phoenician. A civilization can be destroyed without being entirely erased." },
-      { type: "paragraph", text: "Carthage itself was eventually refounded as a Roman city by Julius Caesar and later Augustus, and it became one of the most prosperous cities in the empire, a center of early Christianity and scholarship. The ground that Rome had cursed became a cradle of some of Rome's greatest thinkers. History rarely follows the script of its conquerors, and the ash of Carthage proved unexpectedly fertile." }
+      {
+        type: "paragraph",
+        text: "In August 1914, as Europe stumbled into the most catastrophic war it had ever known, a small wooden ship slipped quietly out of London's docks and pointed its bow toward the bottom of the world. The Imperial Trans-Antarctic Expedition, led by the Anglo-Irish explorer Ernest Shackleton, aimed to complete the last great overland journey on Earth: a crossing of the Antarctic continent from sea to sea. What unfolded instead was not a triumph of exploration but something far more extraordinary — one of the most breathtaking survival stories in human history."
+      },
+      {
+        type: "heading",
+        text: "A Ship Called Endurance"
+      },
+      {
+        type: "paragraph",
+        text: "The vessel was a three-masted barquentine built in Norway in 1912, constructed from greenheart and Norwegian fir, woods chosen specifically for their resistance to crushing ice. Shackleton named her Endurance after his family motto: \"By Endurance We Conquer.\" She carried twenty-eight men in total — scientists, sailors, a photographer named Frank Hurley whose images would one day astonish the world, and a stowaway discovered only after the ship had cleared the harbour."
+      },
+      {
+        type: "heading",
+        text: "The Ice Closes In"
+      },
+      {
+        type: "paragraph",
+        text: "By January 1915, Endurance had penetrated deep into the Weddell Sea when the pack ice, unusually heavy that year, closed around her hull and refused to let go. For ten months the ship drifted, locked in frozen darkness, as the crew fought to keep her free and their own spirits intact. Shackleton proved a masterful leader of morale, insisting on regular meals, organised games, and a shipboard routine that gave structure to days that might otherwise have collapsed into despair."
+      },
+      {
+        type: "paragraph",
+        text: "By October 1915, the ice had begun to crush the ship in earnest. Timber groaned and splintered as thousands of tons of pressure worked against the hull from every side. On the 27th of October, Shackleton gave the order to abandon ship; the men salvaged three small lifeboats, their supplies, and their dogs, and made camp on the drifting ice floe. Five weeks later, on November 21st, they watched Endurance slide beneath the black water, and the true survival ordeal began."
+      },
+      {
+        type: "heading",
+        text: "Across the Drake Passage"
+      },
+      {
+        type: "paragraph",
+        text: "After months camped on floes that slowly carried them northward, Shackleton launched the three small boats into the open sea in April 1916. Seventeen days of brutal sailing through Antarctic waters brought them to Elephant Island — bleak, inhospitable, but blessedly solid ground, the first land the men had stood on in almost five hundred days. Yet Elephant Island lay far beyond any shipping route, and Shackleton understood immediately that no rescue would ever find them there."
+      },
+      {
+        type: "heading",
+        text: "The Most Audacious Small-Boat Voyage in History"
+      },
+      {
+        type: "paragraph",
+        text: "Shackleton selected five companions and set out in the largest of the lifeboats, the twenty-two-foot James Caird, to cross eight hundred miles of the world's most savage ocean to South Georgia Island. The voyage lasted sixteen days and challenged every boundary of human endurance — hurricane-force winds, sixty-foot waves, constant soaking, near-zero temperatures, and the ever-present threat of capsizing. Navigating by sextant through almost perpetual cloud cover, the expedition's captain Frank Worsley managed a feat of dead reckoning that professional sailors still cite with open admiration."
+      },
+      {
+        type: "paragraph",
+        text: "They landed on the wrong side of South Georgia, meaning they still had to cross an unmapped interior of glaciers and mountain ridges to reach the whaling station at Stromness. Shackleton, Worsley, and Tom Crean completed that crossing in thirty-six hours without sleep, without proper equipment, and without a map of any use. When they stumbled into the whaling station, haggard and unrecognisable, the station manager Thoralf Sørlle later recalled that he had not felt emotion like it since his mother died."
+      },
+      {
+        type: "heading",
+        text: "Every Man Accounted For"
+      },
+      {
+        type: "paragraph",
+        text: "It took four attempts and more than three months before Shackleton was able to break through the ice to Elephant Island and rescue the twenty-two men who had waited there in desperate conditions, sheltering under the two upturned boats. On August 30th, 1916, he stood at the bow of the Chilean rescue vessel Yelcho and counted the men coming out to meet him. Every single one of the twenty-seven he had left behind was alive. He had set out to cross Antarctica and failed utterly — and in doing so achieved something no textbook of exploration could have scripted."
+      }
     ]
   },
   personOfTheDay: {
-    name: "Scipio Africanus",
-    lifespan: "236–183 BC",
-    category: "Military & Political History",
-    image: "https://upload.wikimedia.org/wikipedia/commons/a/a6/Bust_of_Sulla_%28loan_from_Ny_Carlsberg_Glyptotek%29_-_Glyptothek_-_Munich_-_Germany_2017.jpg",
-    bio: "Publius Cornelius Scipio Africanus was the Roman general who achieved what many believed impossible: defeating Hannibal Barca, the greatest military tactician of the ancient world, and ending the ruinous Second Punic War. Born into one of Rome's most distinguished patrician families, he first saw battle as a teenager at the disastrous engagement at Ticinus, where he reportedly saved his wounded father's life. By his mid-twenties he had been entrusted with command in Spain — a theater Rome was losing badly — and he reversed the war's momentum through a combination of strategic brilliance and a willingness to break with conventional Roman tactics.\n\nHis most audacious move came not on the battlefield but in strategic conception. Rather than chasing Hannibal around Italy indefinitely, Scipio persuaded a reluctant Roman Senate to let him carry the war directly to Africa, threatening Carthage on its home soil. The gamble worked: Hannibal was recalled from Italy after more than a decade of campaign, and the two greatest generals of their age met at the Battle of Zama in 202 BC. Scipio neutralized Hannibal's elephant charge by opening lanes in his formations, then used superior cavalry to encircle the Carthaginian army. The victory was total, and it earned Scipio the cognomen 'Africanus.'\n\nDespite his triumph, Scipio's later life was marked by political persecution. Conservative senators, led by Cato the Elder, accused him and his brother of financial impropriety and accepting bribes from the Seleucid king Antiochus III. Proud and perhaps naive about the machinery of Roman political enmity, Scipio eventually withdrew to his estate at Liternum in Campania, where he died in 183 BC — the same year, ancient sources note, as his great adversary Hannibal. He reportedly asked that his epitaph read: 'Ungrateful fatherland, you shall not even have my bones.' Rome had consumed its greatest son."
+    name: "Frank Hurley",
+    lifespan: "1885–1962",
+    category: "Exploration & Photography",
+    image: "https://upload.wikimedia.org/wikipedia/commons/0/09/James_Francis_Hurley.png",
+    bio: "James Francis Hurley was born in Glebe, New South Wales, Australia, in 1885, and from an early age displayed a fearless curiosity about the mechanical world. He taught himself photography largely through self-directed experiment, and by his mid-twenties had already earned a reputation as one of Australia's boldest and most technically inventive cameramen.\n\nHurley first ventured to Antarctica as the official photographer on Douglas Mawson's Australasian Antarctic Expedition of 1911–1914, returning with images of extraordinary power and technical ambition. When Shackleton assembled his Imperial Trans-Antarctic Expedition in 1914, Hurley was the obvious and enthusiastic choice as expedition photographer. He hauled his heavy glass-plate camera and developing equipment into conditions that would have defeated most professionals, producing images that remain among the most iconic ever made in the field of exploration.\n\nWhen Endurance sank, Hurley made a deliberate dive into the flooded, half-submerged ship to retrieve his photographic plates from their storage cases — an act that bordered on madness but preserved an irreplaceable visual record. He and Shackleton then sat together on the ice and selected the best images, smashing the remaining plates on the spot so that Hurley would not be tempted to carry extra weight that could cost lives. The photographs and motion-picture footage he saved survived the entire subsequent ordeal and astonished audiences around the world when they were eventually exhibited.\n\nAfter the Endurance expedition, Hurley served as an official war photographer in both the First and Second World Wars, pioneering composite photography techniques that proved controversial but undeniably dramatic. He continued working well into his later years, eventually dying in Sydney in 1962. His Endurance photographs, long considered among the greatest adventure images ever taken, were rediscovered by new generations when the wreck of the ship was finally located on the Weddell Sea floor in 2022."
   },
   onThisDay: {
-    headline: "LINCOLN SHOT AT FORD'S THEATRE",
-    date: "April 14, 1865",
-    summary: "On the evening of April 14, 1865, President Abraham Lincoln attended a performance of the comedy 'Our American Cousin' at Ford's Theatre in Washington, D.C., just five days after General Robert E. Lee's surrender at Appomattox Court House had effectively ended the Civil War. At approximately 10:15 pm, the actor and Confederate sympathizer John Wilkes Booth slipped into the presidential box and fired a single .44-caliber ball from a derringer pistol into the back of Lincoln's head. Lincoln slumped forward, unconscious, and was carried across the street to the Petersen House, where he lingered through the night.\n\nBooth's attack was part of a coordinated conspiracy that same night: his accomplice Lewis Powell simultaneously stabbed Secretary of State William Seward in his bed, leaving him gravely wounded, while George Atzerodt lost his nerve and failed to carry out the planned murder of Vice President Andrew Johnson. Booth escaped the theatre by leaping from the presidential box to the stage below, breaking his leg on landing, and fled south into Maryland and Virginia before being cornered and shot dead at a farm near Bowling Green, Virginia, on April 26.\n\nAbraham Lincoln died at 7:22 on the morning of April 15, 1865, becoming the first American president to be assassinated. Secretary of War Edwin Stanton, standing at Lincoln's bedside, reportedly said: 'Now he belongs to the ages.' The nation Lincoln had held together through four years of devastating civil war would now have to navigate reconstruction without him — a loss whose political consequences would echo across the following century.",
-    image: "https://images.pexels.com/photos/36659549/pexels-photo-36659549.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    headline: "THE TITANIC SINKS IN THE NORTH ATLANTIC",
+    date: "April 15, 1912",
+    summary: "In the early hours of April 15, 1912, the RMS Titanic — the largest and most celebrated ocean liner ever built — slipped beneath the surface of the North Atlantic, taking with her more than 1,500 passengers and crew. She had struck an iceberg at 11:40 p.m. the previous evening, and despite initial confidence that the ship was unsinkable, the damage proved catastrophic: the iceberg had buckled and breached the hull across six watertight compartments, two more than the ship's design could survive. Within two hours and forty minutes of the collision, she was gone.\n\nThe Titanic had been on her maiden voyage from Southampton to New York, carrying some of the wealthiest people in the world alongside hundreds of emigrants seeking new lives in America. The shortage of lifeboats — the ship carried enough for only about half those on board — meant that class, chance, and chaos determined who lived and who died. The Carpathia arrived to rescue 710 survivors in the pre-dawn darkness, and the world woke to a disaster that would permanently reshape maritime safety law, public attitudes toward technology, and the late Edwardian sense of civilisational confidence.\n\nThe tragedy produced an almost instant mythology. Bandsmen reportedly continued playing as the ship went down; officers debated and sometimes struggled over the loading of lifeboats; the ship's designer Thomas Andrews was seen standing silently in the first-class smoking room as the end approached. Subsequent inquiries in both Britain and America exposed systemic failures of regulation, communications, and design assumptions. More than a century later the Titanic retains a unique grip on the imagination, a monument to human ambition, hubris, and the indifference of the natural world.",
+    image: "https://images.pexels.com/photos/9494912/pexels-photo-9494912.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
   }
 };

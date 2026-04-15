@@ -1,49 +1,25 @@
 // uk-politics-news-data.js
-// Auto-updated 2026-04-14 — do not edit manually
+// Auto-updated 2026-04-15 — do not edit manually
 
 var UK_POLITICS_NEWS = {
-  date: "2026-04-14",
+  date: "2026-04-15",
   main: {
-    title: "Starmer Embraces Brexit Divisions as UK Prepares for Closer EU Alignment",
+    title: "UK Military Chiefs Ordered to Find £3.5bn in Savings Even as Starmer Vows to Ready Armed Forces for War",
     category: "Politics",
     content: [
-      "Prime Minister Keir Starmer has moved to place the UK on a path of significantly closer alignment with European Union rules, telling Parliament that the economic and security benefits of a renewed relationship with the bloc are 'simply too big to ignore.' The announcement marks a major strategic shift in Britain's post-Brexit posture, with the government signalling an intention to align with EU regulations by default rather than on a case-by-case basis. Starmer framed the move as a pragmatic response to the compounding economic shocks of recent years, arguing that Britain cannot afford to remain at arm's length from its largest and closest trading partner.",
-      "The move has provoked immediate and fierce backlash from both the Conservatives and Reform UK, who argue that the policy amounts to a surrender of Brexit freedoms won at considerable political cost. Senior Tory figures accused the Prime Minister of betraying the democratic mandate of the 2016 referendum, while Reform UK leader Nigel Farage characterised the shift as evidence that the Labour government was determined to drag Britain back into the EU's regulatory orbit. Starmer, however, has shown little sign of retreating, instead leaning into the divisions and making the case directly to MPs that the changing security environment demands a reset with European partners.",
-      "The push for closer EU ties comes against the backdrop of the ongoing conflict involving Iran, which Starmer referenced in his parliamentary statement as a stark illustration of why European solidarity and shared economic resilience are essential. The Prime Minister argued that the shocks to the cost of living experienced by British households in recent years — stemming from energy price volatility, supply chain disruptions, and geopolitical instability — make a compelling case for reducing friction in trade and regulatory cooperation with the EU. He told MPs that lessons must be learned, and that clinging to post-Brexit divergence for its own sake was a luxury Britain could no longer afford.",
-      "The government's plans are expected to include alignment across a range of sectors, potentially covering food standards, environmental regulations, and goods manufacturing rules. Critics warn that such alignment without formal EU membership or a seat at the table where those rules are made would leave Britain as a 'rule-taker,' subject to decisions in Brussels over which it has no democratic influence. Supporters counter that the practical benefits — smoother trade, reduced business costs, and deeper security cooperation — far outweigh the theoretical concerns about sovereignty that have dominated British political debate since 2016.",
-      "The announcement also coincides with a broader reassessment of Britain's strategic alliances, at a moment when the reliability of the United States as a partner is being questioned across Westminster. With the Chagos Islands treaty effectively collapsed following US withdrawal of support, and with Washington's approach to international affairs creating unease among British policymakers, the pivot towards Europe carries additional strategic weight beyond mere trade considerations. Starmer appears to be making a calculated political bet that the public, weary of instability, will ultimately back a government willing to make difficult and divisive choices in pursuit of greater economic security."
+      "Britain's military chiefs have been asked to identify £3.5 billion in 'efficiencies' and savings this year, even as Prime Minister Sir Keir Starmer publicly insists he is preparing the country's armed forces for the possibility of war. The revelation, which has emerged from sources close to the Ministry of Defence, has intensified a growing storm of criticism directed at the government's approach to defence spending and strategic readiness. Critics argue that simultaneously demanding deep cuts and proclaiming a war footing is a fundamental contradiction that risks leaving the UK dangerously exposed.",
+      "The controversy has drawn sharp interventions from senior figures across the political and defence establishment. Lord George Robertson, a former NATO Secretary-General and Labour defence secretary, has accused 'non-military experts in the Treasury' of committing 'vandalism' against Britain's national security, warning that the country's defences are 'in peril'. His remarks, delivered in a major speech, reflect a broader unease among defence experts and former officials about the pace and seriousness of the government's commitment to rearmament at a time of acute global instability.",
+      "Adding further pressure on Downing Street, Fiona Hill, a co-author of Britain's strategic defence review and a former chief White House adviser on Russia, has described the lack of urgency in putting the UK on a war footing as 'bizarre'. Hill's intervention is particularly significant given her direct role in shaping the government's own defence blueprint, lending her criticism an authority that is difficult for ministers to dismiss. Her comments echo a chorus of concern from across the security community that warm words from the Prime Minister are not being matched by concrete action or adequate resource allocation.",
+      "The political fallout comes at an already difficult moment for the Starmer government, which is grappling with a broader economic squeeze. The International Monetary Fund has downgraded Britain's growth forecast more sharply than any other major economy, citing the impact of the Iran war and wider global uncertainty. Chancellor Rachel Reeves has publicly expressed frustration and anger at the economic disruption caused by US actions in the Middle East, but the domestic picture — stagnant growth, constrained public finances, and pressure on every departmental budget — makes finding new defence money deeply politically fraught.",
+      "The tension at the heart of government policy is now fully in the open: ministers want to be seen as serious about defence and national security, yet the Treasury's grip on spending means the armed forces are being asked to do more with less. Opposition parties and backbench Labour MPs alike are beginning to question whether the government has a coherent strategy, or whether it is simply managing competing pressures without a clear sense of direction. With the strategic defence review having raised expectations of a fundamental reset in Britain's military posture, the gap between rhetoric and reality is fast becoming one of the defining political vulnerabilities of the Starmer administration."
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/883b/live/d8d5a860-3723-11f1-872e-dbe4122cf753.jpg",
-    source: "BBC News",
-    sourceUrl: "https://www.bbc.com/news/articles/c0rxj4yygdwo?at_medium=RSS&at_campaign=rss"
+    image: "https://e3.365dm.com/26/04/1920x1080/skynews-john-healey-defence_7220126.jpg?20260414180418",
+    source: "Sky News",
+    sourceUrl: "https://news.sky.com/story/uk-military-chiefs-asked-to-find-16335bn-in-savings-and-get-ready-for-war-13531796"
   },
   secondary: [
-    {
-      id: "uk1",
-      title: "Lib Dems Call for Inquiry into Farage Bitcoin Deal",
-      summary: "The Liberal Democrats have demanded an investigation into Reform UK leader Nigel Farage's involvement with British bitcoin company Stack, in which he holds a shareholding and for which he appeared in a promotional video.",
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/8ca9/live/2823e930-3766-11f1-a7e9-a1f2253df567.png",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/cd9vgw2g3w2o?at_medium=RSS&at_campaign=rss",
-      category: "Politics"
-    },
-    {
-      id: "uk2",
-      title: "Ex-NATO Chief Accuses Starmer of 'Corrosive Complacency' on Defence",
-      summary: "Former NATO secretary general George Robertson, who authored the government's own strategic defence review, has warned that Keir Starmer's approach to military funding has put the UK 'in peril' and urged the Iran conflict to serve as a wake-up call.",
-      image: "https://images.pexels.com/photos/29150072/pexels-photo-29150072.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/uk-news/2026/apr/14/starmer-accused-of-corrosive-complacency-about-defence-by-ex-head-of-nato",
-      category: "Politics"
-    },
-    {
-      id: "uk3",
-      title: "PM to Strip Spy Chiefs of Power to Block Evidence at Public Inquiries",
-      summary: "Keir Starmer has announced plans to scrap the veto that allowed security chiefs to prevent intelligence officers from giving evidence to public inquiries, a move billed as a major step forward for government transparency.",
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/e7d2/live/a512dac0-3700-11f1-bb40-2780b274e28f.png",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/c77mezv330lo?at_medium=RSS&at_campaign=rss",
-      category: "Politics"
-    }
+    { id: "uk1", title: "Asylum Hotels Fall Below 190 as Government Moves Seekers to Army Barracks", summary: "The Home Office has closed eleven asylum hotels and relocated hundreds of asylum seekers to military barracks, saving an estimated £65 million a year, though refugee charities have criticised the move as unsuitable and potentially more costly.", image: "https://i.guim.co.uk/img/media/630e27b28e54ba0d50d0963741250ff808568a50/840_0_4560_3648/master/4560.jpg?width=1200&quality=85&auto=format&fit=max&s=38bd06aeb66e022b570bd37479b0c1ef", source: "The Independent", url: "https://www.independent.co.uk/news/uk/politics/asylum-hotels-close-migrants-alex-norris-b2957681.html", category: "Politics" },
+    { id: "uk2", title: "MPs Demand Greater Scrutiny of Palantir's NHS Data Use", summary: "Palantir has been forced to defend its record before MPs after NHS guidance requiring all hospitals to adopt its software by this month sparked significant concern over data privacy and the lack of parliamentary oversight.", image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/925f/live/dffbd390-3745-11f1-b669-c509fb2e8e1e.png", source: "BBC News", url: "https://www.bbc.com/news/articles/c393w38lv3mo?at_medium=RSS&at_campaign=rss", category: "Politics" },
+    { id: "uk3", title: "Wes Streeting Accuses NHS of 'Appalling Culture of Medical Misogyny'", summary: "Health Secretary Wes Streeting has launched a renewed Women's Health Strategy, declaring that the NHS has a systemic problem with 'basic, everyday sexism' and vowing to overhaul how the health service treats women and girls.", image: "https://images.pexels.com/photos/5038984/pexels-photo-5038984.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", source: "Sky News", url: "https://news.sky.com/story/nhs-failing-women-and-girls-and-has-appalling-culture-of-medical-misogyny-health-secretary-says-13531932", category: "Politics" }
   ]
 };

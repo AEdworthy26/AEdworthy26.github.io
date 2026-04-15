@@ -3,6 +3,45 @@
 
 var RICS_LOG = [
   {
+    "date": "2026-04-15",
+    "topic": "Section 73 Applications, DOVs & Non-Material Amendments: Post-Consent Planning Flexibility",
+    "module": "Planning and Development Management",
+    "level": 3,
+    "apc_competency": "Planning and Development Management (Level 3)",
+    "focus": "This lesson examines the three principal mechanisms for modifying planning permissions after consent \u2014 Section 73 applications, Deed of Variation (DOV) to S106 agreements, and Non-Material Amendments (NMAs) \u2014 covering when each applies, their legal basis, procedural risks, and strategic use in active development programmes. For Alfie, understanding these tools is critical to managing live consents across Latimer's portfolio where design evolution, programme changes, or grant/tenure restructuring frequently require post-consent adjustment.",
+    "image": "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=1200&auto=format&fit=crop",
+    "content": [],
+    "summary": [
+      "A Section 73 application creates a new, standalone planning permission \u2014 the original remains valid; the development manager must formally decide and document which permission governs delivery, with implications for CIL, S106, and funding agreements.",
+      "Non-Material Amendments under s.96A annotate the existing permission without creating a new one \u2014 they cannot vary conditions and must pass the LPA's materiality judgement; use s.73 where there is any doubt about materiality.",
+      "A Deed of Variation to the S106 is almost always required alongside a s.73 where the original obligations are condition-referenced or contain approved drawing schedules \u2014 failure to execute a DOV in parallel creates a compliance mismatch that surfaces at practical completion.",
+      "On EIA schemes, a s.73 application must itself be screened under the 2017 EIA Regulations \u2014 seek a screening opinion before submission to determine whether an ES addendum is required and to avoid programme delay.",
+      "Robust post-consent management requires a live conditions schedule, a change management log with NMA/s73/DOV categorisation, a S106 obligations tracker, and a CIL liability register \u2014 these are the practical systems that distinguish Level 3 competence from theoretical knowledge."
+    ],
+    "qa": [
+      {
+        "q": "What is the legal effect of a successful Section 73 application, and what does this mean for the original planning permission?",
+        "a": "A successful s.73 application under the Town and Country Planning Act 1990 grants a new, freestanding planning permission with its own reference number and conditions. It does not vary, amend, or extinguish the original permission \u2014 both permissions exist in parallel and either may in principle be implemented, subject to each permission's time limit. The development manager must formally elect which permission governs the project, as this has direct implications for CIL liability (which attaches to the new permission, potentially at a revised charging schedule rate), S106 obligations (which must be re-linked via a Deed of Variation to avoid the new permission being unencumbered by the original planning obligations), and funding and legal agreements that reference specific permission numbers."
+      },
+      {
+        "q": "On a Latimer scheme, your design team proposes moving a staircore 1.2 metres, which alters the external footprint slightly and changes one window position on the side elevation. Would you pursue an NMA or a s.73, and why?",
+        "a": "This would require a s.73 application, not an NMA. A change to the external footprint \u2014 even minor \u2014 is inherently a material change to the approved development because it alters the physical envelope, which will be fixed by approved drawings and likely referenced in planning conditions. A change to a window position on the side elevation may also affect daylight/sunlight compliance and potentially neighbourly impact assessments, further indicating materiality. An NMA under s.96A is appropriate only where the LPA can be confident there are no material effects \u2014 a footprint shift fails that test. Submitting an NMA in these circumstances risks refusal and lost programme time; a s.73 is the correct and proportionate route. I would confirm this with the planning consultant before any application is lodged."
+      },
+      {
+        "q": "You are executing a s.73 to vary an affordable housing condition on an EIA-consented scheme. What additional procedural step must you take before submission that would not apply on a non-EIA scheme?",
+        "a": "On an EIA scheme, the s.73 application must be screened under the Town and Country Planning (Environmental Impact Assessment) Regulations 2017. Before submitting the s.73, I would request an EIA screening opinion from the LPA to establish whether the proposed variation would result in significant environmental effects not previously assessed in the original Environmental Statement. If the LPA determines that EIA is required for the s.73 application \u2014 which may occur if the varied tenure mix or phasing changes construction-phase impacts \u2014 an Environmental Statement addendum will be required before the application can be validated. Failing to obtain a screening opinion risks the application being returned as invalid or, worse, the consent being challenged post-determination on the basis of non-compliance with EIA Regulations. This step adds potentially 3\u20134 weeks to the pre-submission programme and must be factored into the project critical path."
+      },
+      {
+        "q": "What are the risks of executing a Deed of Variation to an S106 agreement late \u2014 i.e. after the new s.73 permission has been granted but before the DOV is completed \u2014 and how would you manage this on a Latimer JV scheme?",
+        "a": "The principal risk is that the new s.73 permission operates without the planning obligations attached. If the DOV is not yet executed, the new permission's conditions do not incorporate the S106 by reference in the way the original permission did, and the obligations schedule \u2014 including affordable housing phasing triggers, public realm delivery, education contributions, and monitoring fees \u2014 may not bind the new permission. On a Latimer JV scheme, this risk is compounded by the presence of multiple parties to the original S106: the LPA, Latimer as applicant, the private landowner (if they are a party to the development agreement), and potentially Homes England if grant conditions are embedded in or cross-referenced by the S106. To manage this, I would instruct legal counsel to commence DOV negotiations at the point the s.73 is submitted \u2014 not after determination \u2014 so that the DOV can be executed as close to permission issue as possible, ideally within days. I would also ensure the s.73 planning conditions contain a standard clause requiring the DOV to be executed prior to implementation of the new permission, providing a legal backstop."
+      },
+      {
+        "q": "A Section 73 application has been granted to vary a pre-commencement condition on your scheme. Your CIL liability notice has not yet been updated. What is your next step and why does it matter commercially?",
+        "a": "I would immediately instruct the planning consultant to request a CIL liability notice from the LPA's CIL team, referencing the new s.73 permission. This matters commercially for several reasons: first, if the LPA's CIL charging schedule has been updated since the original permission, the new permission may attract a higher per-square-metre CIL rate, increasing the scheme's infrastructure levy liability and affecting the viability appraisal and residual land value. Second, CIL exemptions for affordable housing units must be claimed against the correct permission \u2014 using the original permission reference after building out under the new s.73 permission would create a compliance discrepancy that could result in the exemption being challenged. Third, Homes England grant funding agreements and development finance facilities reference specific permission numbers; if drawdowns are made against the wrong permission, this creates contractual non-compliance. The CIL liability notice must be obtained, reviewed against the appraisal assumptions, and the updated position reported to the investment committee if the delta is material."
+      }
+    ]
+  },
+  {
     "date": "2026-04-14",
     "topic": "Benchmark Land Value (BLV) vs Existing Use Value (EUV+) in Affordable Housing Viability Assessments",
     "module": "Development Appraisals",
