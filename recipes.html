@@ -320,96 +320,123 @@
     .photo-upload-hint { font-size: 0.74rem; color: var(--muted); }
     .photo-preview { width: 100%; max-height: 200px; object-fit: cover; display: block; }
 
-    /* ── COOKING MODE ── */
+    /* ── COOKING MODE — Mob-style clean white ── */
     .cooking-mode {
-      position: fixed; inset: 0; background: #0f0f0f; color: #f4f0e6;
+      position: fixed; inset: 0; background: #fff; color: #111;
       z-index: 600; display: flex; flex-direction: column;
-      opacity: 0; pointer-events: none; transition: opacity 0.3s;
+      opacity: 0; pointer-events: none; transition: opacity 0.25s;
       font-family: 'Inter', system-ui, sans-serif;
     }
     .cooking-mode.open { opacity: 1; pointer-events: all; }
 
-    /* Progress bar */
-    .ck-progress-bar { height: 4px; background: rgba(255,255,255,0.1); flex-shrink: 0; }
-    .ck-progress-fill { height: 100%; background: linear-gradient(90deg, #b05a00, #e07820); transition: width 0.4s ease; }
+    /* Thin green progress line at top */
+    .ck-progress-bar { height: 3px; background: #e8e8e8; flex-shrink: 0; }
+    .ck-progress-fill { height: 100%; background: #2d6a4f; transition: width 0.35s ease; }
 
     /* Top bar */
-    .ck-topbar { display: flex; align-items: center; justify-content: space-between; padding: 0.9rem 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.08); flex-shrink: 0; }
-    .ck-title { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1rem; color: rgba(244,240,230,0.85); max-width: 60%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-    .ck-step-counter { font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(244,240,230,0.4); }
-    .ck-close { background: none; border: none; color: rgba(244,240,230,0.45); font-size: 1.6rem; line-height: 1; cursor: pointer; padding: 0.2rem 0.4rem; border-radius: 4px; transition: color 0.15s, background 0.15s; }
-    .ck-close:hover { color: #f4f0e6; background: rgba(255,255,255,0.1); }
+    .ck-topbar {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1rem 1.5rem; border-bottom: 1px solid #f0f0f0; flex-shrink: 0;
+    }
+    .ck-topbar-left { display: flex; align-items: center; gap: 1rem; min-width: 0; }
+    .ck-title { font-size: 0.85rem; font-weight: 600; color: #111; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 320px; }
+    .ck-step-counter { font-size: 0.72rem; font-weight: 500; color: #999; white-space: nowrap; flex-shrink: 0; }
+    .ck-close {
+      background: #f5f5f5; border: none; color: #666; width: 36px; height: 36px;
+      border-radius: 50%; font-size: 1.1rem; line-height: 1; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: background 0.15s, color 0.15s; flex-shrink: 0;
+    }
+    .ck-close:hover { background: #ececec; color: #111; }
 
-    /* Main content — split layout */
+    /* Body */
     .ck-body { display: flex; flex: 1; overflow: hidden; }
 
     /* Left: step */
     .ck-step-panel {
-      flex: 1; display: flex; flex-direction: column; justify-content: center;
-      padding: 2.5rem 3rem; overflow-y: auto; border-right: 1px solid rgba(255,255,255,0.08);
+      flex: 1; display: flex; flex-direction: column;
+      padding: 0; overflow-y: auto;
+      border-right: 1px solid #f0f0f0;
     }
-    .ck-step-label { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: #b05a00; margin-bottom: 0.8rem; }
-    .ck-step-text { font-family: 'Playfair Display', serif; font-size: clamp(1.15rem, 2.2vw, 1.65rem); line-height: 1.65; color: #f4f0e6; }
-    .ck-step-text .ck-highlight { color: #e07820; font-weight: 700; font-style: italic; }
+    .ck-step-inner { padding: 2.5rem 3rem; flex: 1; display: flex; flex-direction: column; justify-content: center; }
+    .ck-step-label { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #2d6a4f; margin-bottom: 1rem; }
+    .ck-step-text { font-size: clamp(1.1rem, 2vw, 1.45rem); font-weight: 400; line-height: 1.75; color: #111; }
+    .ck-step-text .ck-highlight { font-weight: 700; color: #111; border-bottom: 2px solid #2d6a4f; }
 
-    /* Right: ingredients for this step */
+    /* Ingredient chips below step text */
+    .ck-step-chips { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.6rem; }
+    .ck-chip {
+      display: flex; align-items: center; gap: 0.4rem;
+      background: #f7f7f7; border: 1px solid #e8e8e8; border-radius: 999px;
+      padding: 0.38rem 0.85rem; font-size: 0.78rem; color: #333; line-height: 1.3;
+    }
+    .ck-chip-qty { font-weight: 700; color: #2d6a4f; }
+    .ck-chip-name { color: #555; }
+    .ck-chips-empty { font-size: 0.78rem; color: #bbb; margin-top: 1.4rem; }
+
+    /* Right: full ingredient list */
     .ck-ingredients-panel {
-      width: 320px; flex-shrink: 0; display: flex; flex-direction: column;
-      background: rgba(255,255,255,0.03); overflow-y: auto;
+      width: 280px; flex-shrink: 0; display: flex; flex-direction: column;
+      background: #fafafa; overflow-y: auto;
     }
-    .ck-ing-header { padding: 1.2rem 1.5rem 0.6rem; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(244,240,230,0.35); border-bottom: 1px solid rgba(255,255,255,0.06); flex-shrink: 0; }
-    .ck-ing-list { padding: 0.8rem 1.5rem; flex: 1; }
-    .ck-ing-item { display: flex; align-items: flex-start; gap: 0.75rem; padding: 0.65rem 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+    .ck-ing-header {
+      padding: 1.4rem 1.4rem 0.8rem; font-size: 0.62rem; font-weight: 700;
+      letter-spacing: 0.16em; text-transform: uppercase; color: #aaa;
+      border-bottom: 1px solid #efefef; flex-shrink: 0;
+    }
+    .ck-ing-list { padding: 0.6rem 1.4rem 1.4rem; flex: 1; }
+    .ck-ing-item {
+      display: flex; align-items: flex-start; gap: 0.8rem;
+      padding: 0.7rem 0; border-bottom: 1px solid #f2f2f2;
+    }
     .ck-ing-item:last-child { border-bottom: none; }
-    .ck-ing-qty { font-size: 0.82rem; font-weight: 700; color: #e07820; white-space: nowrap; min-width: 60px; flex-shrink: 0; line-height: 1.4; }
-    .ck-ing-name { font-size: 0.82rem; color: rgba(244,240,230,0.85); line-height: 1.4; }
-    .ck-ing-empty { font-size: 0.8rem; color: rgba(244,240,230,0.25); font-style: italic; padding: 1rem 0; }
-    .ck-ing-all-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(244,240,230,0.25); padding: 1rem 0 0.4rem; }
-
-    /* All ingredients accordion */
-    .ck-all-ings { padding: 0 1.5rem 1rem; }
-    .ck-all-toggle { width: 100%; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 6px; color: rgba(244,240,230,0.6); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.5rem 0.9rem; cursor: pointer; transition: background 0.15s; display: flex; align-items: center; justify-content: space-between; }
-    .ck-all-toggle:hover { background: rgba(255,255,255,0.11); }
-    .ck-all-list { display: none; padding-top: 0.6rem; }
-    .ck-all-list.open { display: block; }
-    .ck-all-ing-row { display: flex; gap: 0.6rem; padding: 0.4rem 0; border-bottom: 1px solid rgba(255,255,255,0.04); font-size: 0.76rem; }
-    .ck-all-ing-row:last-child { border-bottom: none; }
-    .ck-all-qty { color: rgba(244,240,230,0.45); min-width: 55px; flex-shrink: 0; }
-    .ck-all-name { color: rgba(244,240,230,0.65); }
+    .ck-ing-item.ck-ing-active .ck-ing-name { color: #111; font-weight: 600; }
+    .ck-ing-item.ck-ing-active .ck-ing-qty { color: #2d6a4f; }
+    .ck-ing-item.ck-ing-used { opacity: 0.35; }
+    .ck-ing-dot { width: 7px; height: 7px; border-radius: 50%; background: #e0e0e0; flex-shrink: 0; margin-top: 0.35rem; transition: background 0.2s; }
+    .ck-ing-item.ck-ing-active .ck-ing-dot { background: #2d6a4f; }
+    .ck-ing-qty { font-size: 0.78rem; font-weight: 600; color: #999; white-space: nowrap; min-width: 52px; flex-shrink: 0; line-height: 1.45; }
+    .ck-ing-name { font-size: 0.8rem; color: #666; line-height: 1.45; }
 
     /* Navigation */
-    .ck-nav { display: flex; align-items: center; justify-content: space-between; padding: 1rem 1.5rem; border-top: 1px solid rgba(255,255,255,0.08); flex-shrink: 0; background: rgba(0,0,0,0.3); }
-    .ck-nav-btn { background: rgba(255,255,255,0.08); border: 1.5px solid rgba(255,255,255,0.15); border-radius: 8px; color: #f4f0e6; padding: 0.65rem 1.6rem; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; cursor: pointer; transition: background 0.15s, border-color 0.15s, opacity 0.15s; display: flex; align-items: center; gap: 0.5rem; }
-    .ck-nav-btn:hover:not(:disabled) { background: rgba(255,255,255,0.16); border-color: rgba(255,255,255,0.3); }
-    .ck-nav-btn:disabled { opacity: 0.3; cursor: default; }
-    .ck-nav-btn.finish { background: #7a3c00; border-color: #b05a00; }
-    .ck-nav-btn.finish:hover { background: #b05a00; }
-    .ck-step-dots { display: flex; gap: 0.4rem; flex-wrap: wrap; justify-content: center; max-width: 50%; }
-    .ck-dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.15); cursor: pointer; transition: background 0.2s, transform 0.2s; flex-shrink: 0; }
-    .ck-dot.done { background: rgba(176,90,0,0.6); }
-    .ck-dot.current { background: #e07820; transform: scale(1.35); }
+    .ck-nav {
+      display: grid; grid-template-columns: 1fr auto 1fr;
+      align-items: center; gap: 1rem;
+      padding: 1rem 1.5rem; border-top: 1px solid #f0f0f0;
+      flex-shrink: 0; background: #fff;
+    }
+    .ck-nav-btn {
+      background: #111; border: none; border-radius: 12px; color: #fff;
+      padding: 0.75rem 1.6rem; font-size: 0.82rem; font-weight: 600;
+      cursor: pointer; transition: background 0.15s, opacity 0.15s;
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      white-space: nowrap;
+    }
+    .ck-nav-btn:hover:not(:disabled) { background: #333; }
+    .ck-nav-btn:disabled { opacity: 0.22; cursor: default; }
+    #ck-prev { background: #f5f5f5; color: #333; justify-self: start; }
+    #ck-prev:hover:not(:disabled) { background: #ececec; }
+    #ck-next { justify-self: end; }
+    .ck-nav-btn.finish { background: #2d6a4f; }
+    .ck-nav-btn.finish:hover { background: #235c43; }
 
-    /* Timer */
-    .ck-timer-row { display: flex; align-items: center; gap: 0.7rem; margin-top: 1.4rem; flex-wrap: wrap; }
-    .ck-timer-display { font-size: 1.5rem; font-weight: 700; font-variant-numeric: tabular-nums; color: #e07820; letter-spacing: 0.04em; min-width: 80px; }
-    .ck-timer-btn { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: 6px; color: rgba(244,240,230,0.7); font-size: 0.7rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.35rem 0.8rem; cursor: pointer; transition: background 0.15s; }
-    .ck-timer-btn:hover { background: rgba(255,255,255,0.15); }
-    .ck-timer-presets { display: flex; gap: 0.4rem; flex-wrap: wrap; }
-    .ck-timer-preset { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 5px; color: rgba(244,240,230,0.5); font-size: 0.66rem; font-weight: 600; padding: 0.28rem 0.6rem; cursor: pointer; transition: background 0.15s, color 0.15s; }
-    .ck-timer-preset:hover { background: rgba(176,90,0,0.3); color: #e07820; }
-
-    /* Notes */
-    .ck-note-row { margin-top: 1.2rem; }
-    .ck-note-input { width: 100%; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 6px; color: rgba(244,240,230,0.8); font-family: 'Inter', system-ui, sans-serif; font-size: 0.76rem; padding: 0.5rem 0.75rem; resize: none; height: 52px; transition: border-color 0.15s; }
-    .ck-note-input::placeholder { color: rgba(244,240,230,0.2); }
-    .ck-note-input:focus { outline: none; border-color: rgba(176,90,0,0.6); }
+    /* Step dots */
+    .ck-step-dots { display: flex; gap: 6px; flex-wrap: wrap; justify-content: center; }
+    .ck-dot { width: 7px; height: 7px; border-radius: 50%; background: #ddd; cursor: pointer; transition: background 0.2s, transform 0.2s; flex-shrink: 0; }
+    .ck-dot.done { background: #b2d8c8; }
+    .ck-dot.current { background: #2d6a4f; transform: scale(1.4); }
 
     /* Responsive */
-    @media (max-width: 700px) {
-      .ck-body { flex-direction: column; }
-      .ck-ingredients-panel { width: 100%; flex-shrink: 0; max-height: 200px; border-right: none; border-top: 1px solid rgba(255,255,255,0.08); }
-      .ck-step-panel { padding: 1.5rem; flex: none; }
+    @media (max-width: 680px) {
+      .ck-body { flex-direction: column-reverse; }
+      .ck-ingredients-panel { width: 100%; flex-shrink: 0; max-height: 160px; border-right: none; border-bottom: 1px solid #f0f0f0; }
+      .ck-ing-list { display: flex; flex-wrap: nowrap; overflow-x: auto; gap: 0; padding: 0.4rem 1rem; }
+      .ck-ing-item { flex-direction: column; gap: 0; min-width: 90px; padding: 0.4rem 0.5rem; border-bottom: none; border-right: 1px solid #f2f2f2; }
+      .ck-ing-dot { display: none; }
+      .ck-step-inner { padding: 1.4rem; justify-content: flex-start; }
       .ck-step-text { font-size: 1rem; }
+      .ck-nav { grid-template-columns: 1fr 1fr; gap: 0.6rem; }
+      .ck-step-dots { display: none; }
     }
 
     .site-footer { text-align: center; font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--light); border-top: 1px solid var(--border); padding: 1.4rem 2rem; margin-top: 2rem; }
@@ -658,64 +685,37 @@
   <!-- ── COOKING MODE ── -->
   <div class="cooking-mode" id="cooking-mode">
 
-    <!-- Progress bar -->
     <div class="ck-progress-bar"><div class="ck-progress-fill" id="ck-progress"></div></div>
 
-    <!-- Top bar -->
     <div class="ck-topbar">
-      <div class="ck-title" id="ck-recipe-title"></div>
-      <div class="ck-step-counter" id="ck-num"></div>
-      <button class="ck-close" id="cooking-close">&times;</button>
+      <div class="ck-topbar-left">
+        <div class="ck-title" id="ck-recipe-title"></div>
+        <div class="ck-step-counter" id="ck-num"></div>
+      </div>
+      <button class="ck-close" id="cooking-close" title="Exit cooking mode">&#10005;</button>
     </div>
 
-    <!-- Body: step + ingredients -->
     <div class="ck-body">
 
-      <!-- Left: step content -->
+      <!-- Left: step -->
       <div class="ck-step-panel">
-        <div class="ck-step-label" id="ck-step-label">Step 1</div>
-        <div class="ck-step-text" id="ck-step"></div>
-
-        <!-- Timer -->
-        <div class="ck-timer-row">
-          <div class="ck-timer-display" id="ck-timer-display" style="display:none">00:00</div>
-          <div class="ck-timer-presets">
-            <button class="ck-timer-preset" onclick="ckTimerSet(60)">1 min</button>
-            <button class="ck-timer-preset" onclick="ckTimerSet(120)">2 min</button>
-            <button class="ck-timer-preset" onclick="ckTimerSet(300)">5 min</button>
-            <button class="ck-timer-preset" onclick="ckTimerSet(600)">10 min</button>
-            <button class="ck-timer-preset" onclick="ckTimerSet(900)">15 min</button>
-            <button class="ck-timer-preset" onclick="ckTimerSet(1800)">30 min</button>
-          </div>
-          <button class="ck-timer-btn" id="ck-timer-toggle" onclick="ckTimerToggle()" style="display:none">Pause</button>
-          <button class="ck-timer-btn" id="ck-timer-reset" onclick="ckTimerReset()" style="display:none">Reset</button>
-        </div>
-
-        <!-- Step note -->
-        <div class="ck-note-row">
-          <textarea class="ck-note-input" id="ck-note-input" placeholder="Add a note for this step…" oninput="ckSaveNote()"></textarea>
+        <div class="ck-step-inner">
+          <div class="ck-step-label" id="ck-step-label">Step 1</div>
+          <div class="ck-step-text" id="ck-step"></div>
+          <div class="ck-step-chips" id="ck-step-chips"></div>
         </div>
       </div>
 
-      <!-- Right: ingredients -->
+      <!-- Right: all ingredients, highlighted by current step -->
       <div class="ck-ingredients-panel">
-        <div class="ck-ing-header">Ingredients for this step</div>
+        <div class="ck-ing-header">All ingredients</div>
         <div class="ck-ing-list" id="ck-ing-list"></div>
-
-        <!-- All ingredients accordion -->
-        <div class="ck-all-ings">
-          <button class="ck-all-toggle" onclick="ckToggleAllIngs(this)">
-            <span>All ingredients</span><span id="ck-all-caret">▾</span>
-          </button>
-          <div class="ck-all-list" id="ck-all-ing-list"></div>
-        </div>
       </div>
 
     </div>
 
-    <!-- Nav -->
     <div class="ck-nav">
-      <button class="ck-nav-btn" id="ck-prev">&#8592; Prev</button>
+      <button class="ck-nav-btn" id="ck-prev">&#8592; Back</button>
       <div class="ck-step-dots" id="ck-dots"></div>
       <button class="ck-nav-btn" id="ck-next">Next &#8594;</button>
     </div>
@@ -1167,39 +1167,39 @@
 
     // ── COOKING MODE ──────────────────────────────────────────────────────
     var _ckSteps = [], _ckIngredients = [], _ckIdx = 0, _ckTitle = '';
-    var _ckNotes = {};
-    var _ckTimerSecs = 0, _ckTimerRunning = false, _ckTimerInterval = null;
+    var _ckIngKeywords = [];
 
-    // Build keyword → ingredient index for fast matching
+    function fmtQty(ing) {
+      if (typeof ing === 'string') return '';
+      var q = ing.quantity, u = ing.unit || '';
+      if (!q && q !== 0) return u || '';
+      var qStr = Number.isInteger(q) ? String(q) : (q % 1 === 0 ? String(q) : q.toString());
+      return (qStr + (u ? '\u00a0' + u : '')).trim();
+    }
+
     function buildIngKeywords(ings) {
+      var skip = new Set(['with','and','the','for','from','into','over','until','then','some','each','both','finely','sliced','chopped','diced','grated','peeled','fresh','dried','ground','large','small','medium']);
       return ings.map(function(ing) {
         var raw = (typeof ing === 'string') ? ing : (ing.name || '');
-        // Extract the core ingredient word(s) — strip prep notes after comma
         var core = raw.split(',')[0].toLowerCase();
-        // Split into individual words, filter short/common words
-        var words = core.split(/\s+/).filter(function(w) {
-          return w.length >= 4 && !['with','and','the','for','from','into','over','until','then','some','each','both'].includes(w);
-        });
+        var words = core.split(/\s+/).filter(function(w) { return w.length >= 3 && !skip.has(w); });
         return { ing: ing, raw: raw, words: words };
       });
     }
 
-    // Find which ingredients are mentioned in a step text
-    function findStepIngredients(stepText, ingKeywords) {
+    function findStepIngs(stepText) {
       var lower = stepText.toLowerCase();
-      return ingKeywords.filter(function(k) {
+      return _ckIngKeywords.filter(function(k) {
         return k.words.some(function(w) { return lower.includes(w); });
       }).map(function(k) { return k.ing; });
     }
 
-    // Highlight ingredient names in step text
-    function highlightStepText(text, stepIngs) {
+    function highlightText(text, stepIngs) {
       var result = esc(text);
       stepIngs.forEach(function(ing) {
         var name = (typeof ing === 'string') ? ing : (ing.name || '');
         var core = name.split(',')[0];
-        // Extract last meaningful word for highlighting
-        var words = core.split(/\s+/).filter(function(w){ return w.length >= 4; });
+        var words = core.split(/\s+/).filter(function(w) { return w.length >= 3; });
         words.forEach(function(word) {
           var re = new RegExp('\\b(' + word.replace(/[.*+?^${}()|[\]\\]/g,'\\$&') + '\\w*)\\b', 'gi');
           result = result.replace(re, '<span class="ck-highlight">$1</span>');
@@ -1208,88 +1208,92 @@
       return result;
     }
 
-    function fmtQty(ing) {
-      if (typeof ing === 'string') return '';
-      var q = ing.quantity;
-      var u = ing.unit || '';
-      if (!q && q !== 0) return u || '';
-      var qStr = Number.isInteger(q) ? String(q) : (q % 1 === 0 ? String(q) : q.toString());
-      return (qStr + (u ? ' ' + u : '')).trim();
-    }
-
     function startCooking(steps, ingredients, title) {
       if (!steps || steps.length === 0) return;
       _ckSteps = steps;
       _ckIngredients = ingredients || [];
+      _ckIngKeywords = buildIngKeywords(_ckIngredients);
       _ckTitle = title || '';
       _ckIdx = 0;
-      _ckNotes = {};
-      ckTimerReset();
-      buildDots();
-      renderAllIngredients();
+      // Build dots
+      document.getElementById('ck-dots').innerHTML = _ckSteps.map(function(_, i) {
+        return '<div class="ck-dot" onclick="ckJump(' + i + ')"></div>';
+      }).join('');
+      // Build full ingredient list (rendered once, highlighted per step)
+      var ingListEl = document.getElementById('ck-ing-list');
+      ingListEl.innerHTML = _ckIngredients.map(function(ing, i) {
+        var qty = fmtQty(ing);
+        var name = (typeof ing === 'string') ? ing : (ing.name || '');
+        return '<div class="ck-ing-item" id="ck-ing-' + i + '">'
+          + '<div class="ck-ing-dot"></div>'
+          + '<span class="ck-ing-qty">' + esc(qty) + '</span>'
+          + '<span class="ck-ing-name">' + esc(name) + '</span>'
+          + '</div>';
+      }).join('');
       updateCookingStep();
       document.getElementById('cooking-mode').classList.add('open');
-    }
-
-    function buildDots() {
-      var dots = document.getElementById('ck-dots');
-      dots.innerHTML = _ckSteps.map(function(_, i) {
-        return '<div class="ck-dot" data-i="' + i + '" onclick="ckJump(' + i + ')"></div>';
-      }).join('');
-    }
-
-    function renderAllIngredients() {
-      var list = document.getElementById('ck-all-ing-list');
-      list.innerHTML = _ckIngredients.map(function(ing) {
-        var qty = fmtQty(ing);
-        var name = (typeof ing === 'string') ? ing : (ing.name || ing);
-        return '<div class="ck-all-ing-row"><span class="ck-all-qty">' + esc(qty) + '</span><span class="ck-all-name">' + esc(name) + '</span></div>';
-      }).join('') || '<div class="ck-ing-empty">No ingredients listed</div>';
     }
 
     function updateCookingStep() {
       var total = _ckSteps.length;
       var stepText = _ckSteps[_ckIdx] || '';
+      var stepIngs = findStepIngs(stepText);
 
       // Header
       document.getElementById('ck-recipe-title').textContent = _ckTitle;
-      document.getElementById('ck-num').textContent = (_ckIdx + 1) + ' / ' + total;
+      document.getElementById('ck-num').textContent = 'Step ' + (_ckIdx + 1) + ' of ' + total;
       document.getElementById('ck-step-label').textContent = 'Step ' + (_ckIdx + 1);
 
       // Progress
-      var pct = ((_ckIdx + 1) / total * 100).toFixed(1);
-      document.getElementById('ck-progress').style.width = pct + '%';
+      document.getElementById('ck-progress').style.width = ((_ckIdx + 1) / total * 100).toFixed(1) + '%';
 
-      // Step text with highlights
-      var ingKeywords = buildIngKeywords(_ckIngredients);
-      var stepIngs = findStepIngredients(stepText, ingKeywords);
-      document.getElementById('ck-step').innerHTML = highlightStepText(stepText, stepIngs);
+      // Step text with ingredient highlights
+      document.getElementById('ck-step').innerHTML = highlightText(stepText, stepIngs);
 
-      // Ingredients panel for this step
-      var ingList = document.getElementById('ck-ing-list');
+      // Ingredient chips below the step
+      var chips = document.getElementById('ck-step-chips');
       if (stepIngs.length > 0) {
-        ingList.innerHTML = stepIngs.map(function(ing) {
+        chips.innerHTML = stepIngs.map(function(ing) {
           var qty = fmtQty(ing);
-          var name = (typeof ing === 'string') ? ing : (ing.name || ing);
-          return '<div class="ck-ing-item"><span class="ck-ing-qty">' + esc(qty) + '</span><span class="ck-ing-name">' + esc(name) + '</span></div>';
+          var name = (typeof ing === 'string') ? ing : (ing.name || '');
+          var nameShort = name.split(',')[0];
+          return '<div class="ck-chip">'
+            + (qty ? '<span class="ck-chip-qty">' + esc(qty) + '</span>' : '')
+            + '<span class="ck-chip-name">' + esc(nameShort) + '</span>'
+            + '</div>';
         }).join('');
+        chips.style.display = '';
       } else {
-        ingList.innerHTML = '<div class="ck-ing-empty">No specific ingredients detected for this step</div>';
+        chips.innerHTML = ''; chips.style.display = 'none';
       }
 
-      // Notes
-      document.getElementById('ck-note-input').value = _ckNotes[_ckIdx] || '';
+      // Highlight active ingredients in the right panel
+      _ckIngredients.forEach(function(ing, i) {
+        var el = document.getElementById('ck-ing-' + i);
+        if (!el) return;
+        var isActive = stepIngs.indexOf(ing) !== -1;
+        var isPast = false;
+        // check if this ingredient appeared in a previous step
+        for (var s = 0; s < _ckIdx; s++) {
+          if (findStepIngs(_ckSteps[s]).indexOf(ing) !== -1) { isPast = true; break; }
+        }
+        el.className = 'ck-ing-item' + (isActive ? ' ck-ing-active' : isPast ? ' ck-ing-used' : '');
+        // Scroll first active ingredient into view
+        if (isActive && stepIngs.indexOf(ing) === 0) {
+          setTimeout(function() { el.scrollIntoView({ block: 'nearest', behavior: 'smooth' }); }, 50);
+        }
+      });
 
       // Dots
       document.querySelectorAll('.ck-dot').forEach(function(dot, i) {
         dot.className = 'ck-dot' + (i < _ckIdx ? ' done' : i === _ckIdx ? ' current' : '');
       });
 
-      // Nav buttons
+      // Nav
       document.getElementById('ck-prev').disabled = _ckIdx === 0;
       var nextBtn = document.getElementById('ck-next');
       if (_ckIdx === total - 1) {
-        nextBtn.textContent = 'Finish ✓';
+        nextBtn.textContent = 'Done \u2713';
         nextBtn.className = 'ck-nav-btn finish';
       } else {
         nextBtn.innerHTML = 'Next &#8594;';
@@ -1299,90 +1303,21 @@
 
     window.ckJump = function(i) { _ckIdx = i; updateCookingStep(); };
 
-    function ckSaveNote() {
-      _ckNotes[_ckIdx] = document.getElementById('ck-note-input').value;
-    }
-    window.ckSaveNote = ckSaveNote;
-
-    window.ckToggleAllIngs = function(btn) {
-      var list = document.getElementById('ck-all-ing-list');
-      var caret = document.getElementById('ck-all-caret');
-      list.classList.toggle('open');
-      caret.textContent = list.classList.contains('open') ? '▴' : '▾';
-    };
-
-    // Timer
-    function ckTimerTick() {
-      if (_ckTimerSecs <= 0) {
-        clearInterval(_ckTimerInterval);
-        _ckTimerRunning = false;
-        document.getElementById('ck-timer-toggle').textContent = 'Start';
-        document.getElementById('ck-timer-display').textContent = '00:00';
-        // Simple beep via Web Audio
-        try {
-          var ctx = new (window.AudioContext || window.webkitAudioContext)();
-          var osc = ctx.createOscillator(); osc.connect(ctx.destination);
-          osc.frequency.value = 880; osc.start(); osc.stop(ctx.currentTime + 0.3);
-        } catch(e) {}
-        return;
-      }
-      _ckTimerSecs--;
-      var m = Math.floor(_ckTimerSecs / 60), s = _ckTimerSecs % 60;
-      document.getElementById('ck-timer-display').textContent =
-        String(m).padStart(2,'0') + ':' + String(s).padStart(2,'0');
-    }
-
-    window.ckTimerSet = function(secs) {
-      clearInterval(_ckTimerInterval);
-      _ckTimerSecs = secs;
-      _ckTimerRunning = false;
-      var m = Math.floor(secs / 60), s = secs % 60;
-      var disp = document.getElementById('ck-timer-display');
-      disp.style.display = '';
-      disp.textContent = String(m).padStart(2,'0') + ':' + String(s).padStart(2,'0');
-      document.getElementById('ck-timer-toggle').style.display = '';
-      document.getElementById('ck-timer-toggle').textContent = 'Start';
-      document.getElementById('ck-timer-reset').style.display = '';
-    };
-
-    window.ckTimerToggle = function() {
-      if (_ckTimerRunning) {
-        clearInterval(_ckTimerInterval);
-        _ckTimerRunning = false;
-        document.getElementById('ck-timer-toggle').textContent = 'Resume';
-      } else {
-        _ckTimerRunning = true;
-        _ckTimerInterval = setInterval(ckTimerTick, 1000);
-        document.getElementById('ck-timer-toggle').textContent = 'Pause';
-      }
-    };
-
-    window.ckTimerReset = function() {
-      clearInterval(_ckTimerInterval);
-      _ckTimerRunning = false; _ckTimerSecs = 0;
-      document.getElementById('ck-timer-display').style.display = 'none';
-      document.getElementById('ck-timer-toggle').style.display = 'none';
-      document.getElementById('ck-timer-reset').style.display = 'none';
-    };
-
     document.getElementById('ck-prev').onclick = function() {
       if (_ckIdx > 0) { _ckIdx--; updateCookingStep(); }
     };
     document.getElementById('ck-next').onclick = function() {
       if (_ckIdx < _ckSteps.length - 1) { _ckIdx++; updateCookingStep(); }
-      else { document.getElementById('cooking-mode').classList.remove('open'); ckTimerReset(); }
+      else { document.getElementById('cooking-mode').classList.remove('open'); }
     };
     document.getElementById('cooking-close').onclick = function() {
       document.getElementById('cooking-mode').classList.remove('open');
-      ckTimerReset();
     };
-    // Keyboard navigation
     document.addEventListener('keydown', function(e) {
       if (!document.getElementById('cooking-mode').classList.contains('open')) return;
-      if (e.target.tagName === 'TEXTAREA') return;
       if (e.key === 'ArrowRight' || e.key === ' ') { e.preventDefault(); document.getElementById('ck-next').click(); }
       if (e.key === 'ArrowLeft') { e.preventDefault(); document.getElementById('ck-prev').click(); }
-      if (e.key === 'Escape') { document.getElementById('cooking-mode').classList.remove('open'); ckTimerReset(); }
+      if (e.key === 'Escape') { document.getElementById('cooking-mode').classList.remove('open'); }
     });
 
     // ── MODAL HELPERS ──────────────────────────────────────────────────────
