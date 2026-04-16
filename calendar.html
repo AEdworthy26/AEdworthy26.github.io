@@ -280,11 +280,9 @@
     .allday-thumb { position: absolute; width: 14px; height: 14px; border-radius: 50%; background: #fff; top: 3px; left: 3px; transition: left .2s; box-shadow: 0 1px 3px rgba(0,0,0,.2); }
     .allday-label input:checked ~ .allday-track { background: var(--blue); }
     .allday-label input:checked ~ .allday-track .allday-thumb { left: 19px; }
-    /* ── Time select ── */
-    .time-select-wrap { display: flex; align-items: center; gap: 4px; background: var(--subtle); border: 1.5px solid var(--border); border-radius: 8px; padding: .3rem .6rem; transition: border-color .15s, box-shadow .15s; }
-    .time-select-wrap:focus-within { border-color: var(--blue); background: #fff; box-shadow: 0 0 0 3px rgba(0,82,204,.1); }
-    .time-select-wrap select { background: none; border: none; outline: none; font-family: inherit; font-size: .83rem; color: var(--ink); cursor: pointer; padding: 0; -webkit-appearance: none; appearance: none; text-align: center; }
-    .time-sep { font-weight: 700; color: var(--muted); font-size: .9rem; line-height: 1; }
+    /* ── Time input ── */
+    .f-time { cursor: pointer; }
+    .f-time::-webkit-calendar-picker-indicator { opacity: 0.45; cursor: pointer; }
     /* ── Multi-day event banner ── */
     .ev-chip.multi-day { border-left: 3px solid currentColor; }
     .modal-footer { display: flex; align-items: center; justify-content: space-between; padding: 1rem 1.5rem 1.2rem; border-top: 1px solid var(--border); }
@@ -488,20 +486,12 @@
         </div>
         <div id="f-time-row" class="f-row2">
           <div>
-            <label class="f-label">Start Time</label>
-            <div class="time-select-wrap" id="f-start-wrap">
-              <select id="f-start-h" aria-label="Start hour"></select>
-              <span class="time-sep">:</span>
-              <select id="f-start-m" aria-label="Start minute"></select>
-            </div>
+            <label class="f-label" for="f-start-t">Start Time</label>
+            <input class="f-input f-time" type="time" id="f-start-t" aria-label="Start time">
           </div>
           <div>
-            <label class="f-label">End Time</label>
-            <div class="time-select-wrap" id="f-end-wrap">
-              <select id="f-end-h" aria-label="End hour"></select>
-              <span class="time-sep">:</span>
-              <select id="f-end-m" aria-label="End minute"></select>
-            </div>
+            <label class="f-label" for="f-end-t">End Time</label>
+            <input class="f-input f-time" type="time" id="f-end-t" aria-label="End time">
           </div>
         </div>
         <div><label class="f-label" for="f-venue">Venue / Location</label><input class="f-input" type="text" id="f-venue" placeholder="Where is it?"></div>
@@ -607,37 +597,13 @@
     function formatFull(iso) { return fromISO(iso).toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long',year:'numeric'}); }
 
     // ── Time select helpers ───────────────────────────────────────────────────
-    function buildTimeSelects() {
-      ['f-start-h','f-end-h'].forEach(function(id) {
-        var sel = document.getElementById(id);
-        sel.innerHTML = '<option value="">--</option>';
-        for (var h = 0; h < 24; h++) {
-          var v = (h < 10 ? '0' : '') + h;
-          sel.innerHTML += '<option value="' + v + '">' + v + '</option>';
-        }
-      });
-      ['f-start-m','f-end-m'].forEach(function(id) {
-        var sel = document.getElementById(id);
-        sel.innerHTML = '<option value="">--</option>';
-        ['00','05','10','15','20','25','30','35','40','45','50','55'].forEach(function(m) {
-          sel.innerHTML += '<option value="' + m + '">' + m + '</option>';
-        });
-      });
-    }
-
     function setTimeSelects(prefix, val) {
-      // val is "HH:MM" or empty
-      var h = '', m = '';
-      if (val && val.indexOf(':') > -1) { var p = val.split(':'); h = p[0]; m = p[1].slice(0,2); }
-      document.getElementById(prefix + '-h').value = h;
-      document.getElementById(prefix + '-m').value = m;
+      document.getElementById(prefix + '-t').value = val || '';
     }
 
     function getTimeFromSelects(prefix) {
-      var h = document.getElementById(prefix + '-h').value;
-      var m = document.getElementById(prefix + '-m').value;
-      if (!h) return null;
-      return h + ':' + (m || '00');
+      var v = document.getElementById(prefix + '-t').value;
+      return v || null;
     }
 
     window.toggleAllDay = function() {
@@ -1425,7 +1391,6 @@
       events.forEach(function(e){ if(e.date==='2026-04-02' && e.category==='social' && e.completed){ e.completed=false; fixed=true; } });
       if(fixed) save();
     })();
-    buildTimeSelects();
     document.getElementById('js-date').textContent=new Date().toLocaleDateString('en-GB',{weekday:'long',year:'numeric',month:'long',day:'numeric'});
     renderAll();
     checkReminders();
