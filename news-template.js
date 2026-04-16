@@ -21,6 +21,90 @@
     });
   }
 
+  // ── Story modal ────────────────────────────────────────────────────────────
+  var modalEl = null;
+
+  function buildModal() {
+    if (modalEl) return;
+    var style = document.createElement('style');
+    style.textContent = [
+      '.story-modal-overlay{position:fixed;inset:0;background:rgba(10,15,30,0.55);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);display:none;align-items:center;justify-content:center;z-index:999;padding:1rem;}',
+      '.story-modal-overlay.open{display:flex;}',
+      '.story-modal{background:#fff;border-radius:18px;box-shadow:0 28px 80px rgba(0,0,0,0.22);width:100%;max-width:580px;max-height:90vh;overflow-y:auto;animation:smIn .2s cubic-bezier(.22,1,.36,1);}',
+      '@keyframes smIn{from{opacity:0;transform:scale(.96) translateY(12px)}to{opacity:1;transform:none}}',
+      '.sm-thumb{width:100%;aspect-ratio:16/9;overflow:hidden;background:#f1f5f9;border-radius:18px 18px 0 0;flex-shrink:0;}',
+      '.sm-thumb img{width:100%;height:100%;object-fit:cover;display:block;}',
+      '.sm-body{padding:1.4rem 1.6rem 1.6rem;}',
+      '.sm-eyebrow{display:flex;align-items:center;justify-content:space-between;margin-bottom:0.7rem;}',
+      '.sm-cat{font-size:0.58rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--blue,#003399);}',
+      '.sm-close{background:none;border:none;font-size:1.25rem;line-height:1;cursor:pointer;color:#94a3b8;padding:0.1rem 0.3rem;border-radius:6px;transition:color .15s,background .15s;}',
+      '.sm-close:hover{color:#0d0d0d;background:#f1f5f9;}',
+      '.sm-title{font-family:"Playfair Display",serif;font-weight:700;font-size:1.15rem;line-height:1.35;color:#0d0d0d;margin-bottom:1rem;}',
+      '.sm-paras p{font-size:0.875rem;line-height:1.75;color:#374151;margin-bottom:0.75rem;}',
+      '.sm-paras p:last-child{margin-bottom:0;}',
+      '.sm-footer{display:flex;align-items:center;justify-content:space-between;margin-top:1.2rem;padding-top:1rem;border-top:1px solid #e5e7eb;}',
+      '.sm-source{font-size:0.6rem;letter-spacing:0.1em;text-transform:uppercase;color:#94a3b8;}',
+      '.sm-read-btn{display:inline-flex;align-items:center;gap:0.35rem;font-size:0.7rem;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;color:#fff;background:var(--blue,#003399);padding:0.45rem 1rem;border-radius:8px;text-decoration:none;transition:opacity .15s;}',
+      '.sm-read-btn:hover{opacity:0.85;text-decoration:none;}',
+      '.card-summary-btn{display:inline-flex;align-items:center;gap:0.3rem;font-size:0.65rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--blue,#003399);background:none;border:none;padding:0;cursor:pointer;font-family:inherit;transition:color .15s;}',
+      '.card-summary-btn:hover{text-decoration:underline;}'
+    ].join('');
+    document.head.appendChild(style);
+
+    modalEl = document.createElement('div');
+    modalEl.className = 'story-modal-overlay';
+    modalEl.innerHTML =
+      '<div class="story-modal" id="story-modal-panel">'
+      + '<div class="sm-thumb" id="sm-thumb"></div>'
+      + '<div class="sm-body">'
+      +   '<div class="sm-eyebrow"><span class="sm-cat" id="sm-cat"></span><button class="sm-close" onclick="window._closeStoryModal()" aria-label="Close">&times;</button></div>'
+      +   '<div class="sm-title" id="sm-title"></div>'
+      +   '<div class="sm-paras" id="sm-paras"></div>'
+      +   '<div class="sm-footer"><span class="sm-source" id="sm-source"></span><a class="sm-read-btn" id="sm-read-btn" target="_blank" rel="noopener">Read original &rarr;</a></div>'
+      + '</div>'
+      + '</div>';
+    document.body.appendChild(modalEl);
+
+    modalEl.addEventListener('click', function (e) {
+      if (e.target === modalEl) window._closeStoryModal();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') window._closeStoryModal();
+    });
+  }
+
+  window._openStoryModal = function (item) {
+    buildModal();
+    document.getElementById('sm-cat').textContent = item.category || '';
+    document.getElementById('sm-title').textContent = item.title || '';
+
+    var thumbEl = document.getElementById('sm-thumb');
+    if (item.image) {
+      thumbEl.style.display = '';
+      thumbEl.innerHTML = '<img src="' + item.image.replace(/"/g,'') + '" alt="' + (item.title||'').replace(/"/g,'') + '" loading="lazy">';
+    } else {
+      thumbEl.style.display = 'none';
+    }
+
+    var paras = Array.isArray(item.body) ? item.body : [];
+    document.getElementById('sm-paras').innerHTML = paras.map(function (p) {
+      return '<p>' + p.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') + '</p>';
+    }).join('') || '<p>' + (item.summary||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') + '</p>';
+
+    document.getElementById('sm-source').textContent = item.source || '';
+    var btn = document.getElementById('sm-read-btn');
+    if (item.url) { btn.href = item.url; btn.style.display = ''; }
+    else btn.style.display = 'none';
+
+    modalEl.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  };
+
+  window._closeStoryModal = function () {
+    if (modalEl) modalEl.classList.remove('open');
+    document.body.style.overflow = '';
+  };
+
   // ── Ticker — populated from this page's live data ─────────────────────────
   function _initTicker(data) {
     var t = document.getElementById('js-ticker');
@@ -143,13 +227,20 @@
 
     if (secondary.length > 0) {
       var cards = secondary.map(function (item, i) {
+        var hasBody = Array.isArray(item.body) && item.body.length > 0;
+        var safeItem = JSON.stringify(item).replace(/</g,'\\u003c').replace(/>/g,'\\u003e').replace(/'/g,"\\'");
         var thumbContent = imgOrPlaceholder(item.image, item.title, 'card-thumb', cfg.icon);
         var thumbHTML = item.url
           ? '<a href="' + esc(item.url) + '" target="_blank" rel="noopener" tabindex="-1" style="display:block;overflow:hidden;">' + thumbContent + '</a>'
           : '<div>' + thumbContent + '</div>';
-        var titleHTML = item.url
-          ? '<a href="' + esc(item.url) + '" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;" class="card-title-link"><h3 class="card-title">' + esc(item.title) + '</h3></a>'
-          : '<h3 class="card-title">' + esc(item.title) + '</h3>';
+        var titleHTML = hasBody
+          ? '<h3 class="card-title" style="cursor:pointer;" onclick="window._openStoryModal(' + safeItem + ')">' + esc(item.title) + '</h3>'
+          : (item.url
+            ? '<a href="' + esc(item.url) + '" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;" class="card-title-link"><h3 class="card-title">' + esc(item.title) + '</h3></a>'
+            : '<h3 class="card-title">' + esc(item.title) + '</h3>');
+        var footerAction = hasBody
+          ? '<button class="card-summary-btn" onclick="window._openStoryModal(' + safeItem + ')">Read summary &#9658;</button>'
+          : (item.url ? '<a class="card-read-more" href="' + esc(item.url) + '" target="_blank" rel="noopener">Read more &rarr;</a>' : '');
         return '<article class="news-card" style="animation-delay:' + (i * 120) + 'ms">'
           + '<div class="card-thumb">' + thumbHTML + '</div>'
           + '<div class="card-body">'
@@ -158,9 +249,7 @@
           +   '<p class="card-summary">' + esc(item.summary) + '</p>'
           +   '<div class="card-footer">'
           +     (item.source ? '<span class="card-source">' + esc(item.source) + '</span>' : '<span></span>')
-          +     (item.url
-            ? '<a class="card-read-more" href="' + esc(item.url) + '" target="_blank" rel="noopener">Read more &rarr;</a>'
-            : '')
+          +     footerAction
           +   '</div>'
           + '</div>'
           + '</article>';

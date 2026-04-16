@@ -586,9 +586,9 @@ var {var_name} = {{
     sourceUrl: "EXACT URL FROM THE ARTICLE ABOVE"
   }},
   secondary: [
-    {{ id: "{secondary_ids[0]}", title: "SECOND STORY TITLE", summary: "One sentence summary.", image: "__IMG_S1__", source: "SOURCE", url: "EXACT URL FROM THE ARTICLE ABOVE", category: "CATEGORY" }},
-    {{ id: "{secondary_ids[1]}", title: "THIRD STORY TITLE", summary: "One sentence summary.", image: "__IMG_S2__", source: "SOURCE", url: "EXACT URL FROM THE ARTICLE ABOVE", category: "CATEGORY" }},
-    {{ id: "{secondary_ids[2]}", title: "FOURTH STORY TITLE", summary: "One sentence summary.", image: "__IMG_S3__", source: "SOURCE", url: "EXACT URL FROM THE ARTICLE ABOVE", category: "CATEGORY" }}
+    {{ id: "{secondary_ids[0]}", title: "SECOND STORY TITLE", summary: "One sentence summary.", body: ["First paragraph — 2-3 sentences expanding on the story.", "Second paragraph — 2-3 sentences of context or significance."], image: "__IMG_S1__", source: "SOURCE", url: "EXACT URL FROM THE ARTICLE ABOVE", category: "CATEGORY" }},
+    {{ id: "{secondary_ids[1]}", title: "THIRD STORY TITLE", summary: "One sentence summary.", body: ["First paragraph — 2-3 sentences expanding on the story.", "Second paragraph — 2-3 sentences of context or significance."], image: "__IMG_S2__", source: "SOURCE", url: "EXACT URL FROM THE ARTICLE ABOVE", category: "CATEGORY" }},
+    {{ id: "{secondary_ids[2]}", title: "FOURTH STORY TITLE", summary: "One sentence summary.", body: ["First paragraph — 2-3 sentences expanding on the story.", "Second paragraph — 2-3 sentences of context or significance."], image: "__IMG_S3__", source: "SOURCE", url: "EXACT URL FROM THE ARTICLE ABOVE", category: "CATEGORY" }}
   ]
 }};"""
 
