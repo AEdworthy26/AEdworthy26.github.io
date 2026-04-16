@@ -347,8 +347,9 @@ def fetch_pexels_image(query, orientation='landscape'):
         log(f'  [warning] Pexels fetch failed for "{query}": {e}')
     return None
 
-def fetch_unsplash_image(query, orientation='landscape'):
-    """Fetch a high-quality photo from Unsplash API (requires UNSPLASH_ACCESS_KEY in .env)."""
+def fetch_unsplash_image(query, orientation='landscape', face_crop=False):
+    """Fetch a high-quality photo from Unsplash API (requires UNSPLASH_ACCESS_KEY in .env).
+    Set face_crop=True for portrait/person images to ensure faces aren't cropped out."""
     try:
         key = os.environ.get('UNSPLASH_ACCESS_KEY', '')
         if not key:
@@ -366,7 +367,12 @@ def fetch_unsplash_image(query, orientation='landscape'):
         results = data.get('results', [])
         if results:
             urls = results[0].get('urls', {})
-            return urls.get('regular') or urls.get('full')
+            img_url = urls.get('regular') or urls.get('full')
+            if img_url and face_crop:
+                # Append face-aware crop parameters
+                sep = '&' if '?' in img_url else '?'
+                img_url = img_url + sep + 'crop=faces,entropy&fit=crop'
+            return img_url
     except Exception as e:
         log(f'  [warning] Unsplash fetch failed for "{query}": {e}')
     return None
@@ -779,7 +785,7 @@ window.PHILOSOPHY_DATA = {{
             if url:
                 log(f'  ✓ Philosopher of day image (Wikipedia): {name[:40]}')
             else:
-                url = fetch_unsplash_image(name + ' portrait') or fetch_pexels_image(name + ' philosopher portrait')
+                url = fetch_unsplash_image(name + ' portrait', orientation='squarish', face_crop=True) or fetch_pexels_image(name + ' philosopher portrait')
                 if url:
                     log(f'  ✓ Philosopher of day image (Unsplash): {name[:40]}')
             if url:
@@ -797,28 +803,12 @@ def gen_rics():
     recent_competencies = recent_values('rics-data.js', 'apc_competency', days=14)
     avoid_topics = '\n'.join(f'- {t}' for t in recent_topics) if recent_topics else 'None'
     avoid_competencies = '\n'.join(f'- {c}' for c in recent_competencies) if recent_competencies else 'None'
-    # Curated Unsplash images relevant to property, planning & development
-    rics_images = [
-        'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&auto=format&fit=crop',  # glass office towers
-        'https://images.unsplash.com/photo-1460317442991-0ec209397118?w=1200&auto=format&fit=crop',  # city skyline at dusk
-        'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1200&auto=format&fit=crop',     # construction site
-        'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&auto=format&fit=crop',     # architectural model
-        'https://images.unsplash.com/photo-1574920162043-b872873f19bc?w=1200&auto=format&fit=crop',  # blueprints / plans
-        'https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&auto=format&fit=crop',  # modern office interior
-        'https://images.unsplash.com/photo-1554469384-e58fac16e23a?w=1200&auto=format&fit=crop',     # modern building facade
-        'https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=1200&auto=format&fit=crop',  # premium office building
-        'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200&auto=format&fit=crop',  # glass curtain wall
-        'https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?w=1200&auto=format&fit=crop',  # construction crane
-        'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&auto=format&fit=crop',     # house keys (property)
-        'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1200&auto=format&fit=crop',  # city street view
-        'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&auto=format&fit=crop',     # residential block
-        'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&auto=format&fit=crop',  # financial data screen
-        'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&auto=format&fit=crop',  # professional meeting
-        'https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=1200&auto=format&fit=crop',  # Houses of Parliament
-        'https://images.unsplash.com/photo-1470723710355-95304d8aece4?w=1200&auto=format&fit=crop',  # urban skyline
-        'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1200&auto=format&fit=crop',     # property exterior
+    # Fallback images if Unsplash fetch fails
+    rics_fallback_images = [
+        'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1200&auto=format&fit=crop',
+        'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&auto=format&fit=crop',
+        'https://images.unsplash.com/photo-1574920162043-b872873f19bc?w=1200&auto=format&fit=crop',
     ]
-    images_list = '\n'.join(f'  {i+1}. {url}' for i, url in enumerate(rics_images))
 
     prompt = f"""Generate a daily RICS APC study lesson for {TODAY} for the Planning and Development (P&D) pathway.
 
@@ -877,10 +867,6 @@ RULES:
 - At least 10 content blocks
 - 5 specific technical Q&A pairs an APC assessor would ask this candidate
 - 2-3 news items relevant to the topic from UK housing/planning (plausible recent news)
-- Pick the MOST RELEVANT image from the list below
-
-Available images:
-{images_list}
 
 Output ONLY valid JavaScript. No explanation, no markdown. Start directly with "var RICS_DATA".
 
@@ -891,7 +877,7 @@ var RICS_DATA = {{
   level: 3,
   apc_competency: "Competency Name (Level X)",
   focus: "2-3 sentence description of what this lesson covers and why it matters for the APC.",
-  image: "PICK THE MOST RELEVANT URL FROM THE LIST ABOVE",
+  image: "__IMG_RICS__",
   content: [
     {{ type: "paragraph", text: "Opening paragraph..." }},
     {{ type: "heading", text: "Section heading" }},
@@ -925,7 +911,25 @@ var RICS_DATA = {{
   ]
 }};"""
 
-    return extract_js(call_claude(prompt, timeout=420, max_tokens=8192))
+    js = extract_js(call_claude(prompt, timeout=420, max_tokens=8192))
+    if not js:
+        return None
+    # Inject a topic-relevant image from Unsplash
+    try:
+        topic_m = re.search(r'topic:\s*"([^"]+)"', js)
+        module_m = re.search(r'module:\s*"([^"]+)"', js)
+        topic_str = topic_m.group(1) if topic_m else ''
+        module_str = module_m.group(1) if module_m else ''
+        search_term = (topic_str or module_str or 'property development UK') + ' architecture'
+        url = (fetch_unsplash_image(search_term)
+               or fetch_pexels_image(search_term)
+               or random.choice(rics_fallback_images))
+        js = js.replace('"__IMG_RICS__"', f'"{url}"', 1)
+        log(f'  ✓ RICS image: {search_term[:50]}')
+    except Exception as e:
+        log(f'  [warning] RICS image injection failed: {e}')
+        js = js.replace('"__IMG_RICS__"', f'"{random.choice(rics_fallback_images)}"', 1)
+    return js
 
 
 def append_rics_log(rics_js):
@@ -1095,7 +1099,7 @@ var CURIOSITY_DATA = {{
             if url:
                 log(f'  ✓ Person of day image (Wikipedia): {name[:40]}')
             else:
-                url = fetch_unsplash_image(name + ' portrait') or fetch_pexels_image(name + ' portrait')
+                url = fetch_unsplash_image(name + ' portrait', orientation='squarish', face_crop=True) or fetch_pexels_image(name + ' portrait')
                 if url:
                     log(f'  ✓ Person of day image (Unsplash): {name[:40]}')
             if url:
