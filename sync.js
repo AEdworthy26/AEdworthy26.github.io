@@ -37,6 +37,17 @@
     };
   }
 
+  var TIMESTAMPS_KEY = 'ph_sync_timestamps'; // local record of when each key was last written here
+
+  function getLocalTimestamps() {
+    try { return JSON.parse(_origGet(TIMESTAMPS_KEY) || '{}'); } catch(e) { return {}; }
+  }
+  function setLocalTimestamp(key) {
+    var ts = getLocalTimestamps();
+    ts[key] = Date.now();
+    _origSet(TIMESTAMPS_KEY, JSON.stringify(ts));
+  }
+
   /* ── push: localStorage → Gist ── */
   var pushTimer = null;
   function schedulePush() {
@@ -47,7 +58,7 @@
   function doPush() {
     var token = getToken();
     if (!token) return;
-    var data = {};
+    var data = { _timestamps: getLocalTimestamps() };
     SYNC_KEYS.forEach(function (k) {
       var v = _origGet(k);
       if (v !== null) data[k] = v;
@@ -81,17 +92,35 @@
           return;
         }
         var remote = JSON.parse(gist.files[GIST_FILE].content);
+        var remoteTs = remote._timestamps || {};
+        var localTs  = getLocalTimestamps();
         var changed = false;
+
         SYNC_KEYS.forEach(function (k) {
-          if (remote[k] !== undefined && remote[k] !== _origGet(k)) {
-            _origSet(k, remote[k]);
-            changed = true;
+          if (remote[k] === undefined) return; // remote has nothing — never overwrite
+          var localVal   = _origGet(k);
+          var remoteTime = remoteTs[k] || 0;
+          var localTime  = localTs[k]  || 0;
+
+          // Only overwrite local if:
+          // 1. We have no local data at all, OR
+          // 2. Remote timestamp is strictly newer than local timestamp
+          if (localVal === null || remoteTime > localTime) {
+            if (remote[k] !== localVal) {
+              _origSet(k, remote[k]);
+              // adopt remote timestamp so we don't immediately push back
+              var ts = getLocalTimestamps();
+              ts[k] = remoteTime || Date.now();
+              _origSet(TIMESTAMPS_KEY, JSON.stringify(ts));
+              changed = true;
+            }
           }
         });
+
         _origSet(LAST_SYNC_KEY, new Date().toISOString());
         if (callback) callback(true, changed ? 'updated' : 'same');
       })
-      .catch(function (err) {
+      .catch(function () {
         if (callback) callback(false, 'fetch-error');
       });
   }
@@ -100,6 +129,7 @@
   localStorage.setItem = function (key, value) {
     _origSet(key, value);
     if (key !== TOKEN_KEY && key !== LAST_SYNC_KEY && SYNC_KEYS.indexOf(key) !== -1) {
+      setLocalTimestamp(key);
       schedulePush();
     }
   };
