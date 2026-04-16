@@ -1465,21 +1465,21 @@
     var today = new Date(); today.setHours(0,0,0,0);
     var todayISO = toISO(today);
     var tomorrowISO = toISO(new Date(today.getTime() + 86400000));
-    var endDate = new Date(today); endDate.setDate(today.getDate() + 4);
-    var endISO = toISO(endDate);
+    // Expand up to 2 years ahead to capture recurring events
+    var expandEnd = new Date(today); expandEnd.setFullYear(expandEnd.getFullYear() + 2);
 
-    // Expand recurring events for the next 5 days
+    // Expand recurring events
     var expanded = [];
     events.forEach(function(ev) {
       var evD = fromISO(ev.date); evD.setHours(0,0,0,0);
       if (!ev.recurrence) {
-        if (ev.date >= todayISO && ev.date <= endISO) expanded.push(ev);
+        if (ev.date >= todayISO) expanded.push(ev);
         return;
       }
-      var recurEnd = ev.recurrenceEnd ? fromISO(ev.recurrenceEnd) : endDate;
+      var recurEnd = ev.recurrenceEnd ? fromISO(ev.recurrenceEnd) : expandEnd;
       recurEnd.setHours(0,0,0,0);
       var cur = new Date(evD), i = 0;
-      while (cur <= recurEnd && cur <= endDate && i < 200) {
+      while (cur <= recurEnd && cur <= expandEnd && i < 200) {
         i++;
         var iso2 = toISO(cur);
         if (iso2 >= todayISO) expanded.push(Object.assign({}, ev, { date: iso2 }));
@@ -1495,11 +1495,12 @@
       .sort(function(a, b) {
         if (a.date !== b.date) return a.date.localeCompare(b.date);
         return (a.startTime||'').localeCompare(b.startTime||'');
-      });
+      })
+      .slice(0, 5);
 
     var previewHTML = '';
     if (upcoming.length === 0) {
-      previewHTML = '<p class="cal-preview-empty">Nothing on in the next 5 days &mdash; <a href="calendar.html">open calendar</a>.</p>';
+      previewHTML = '<p class="cal-preview-empty">No upcoming events &mdash; <a href="calendar.html">open calendar</a>.</p>';
     } else {
       var items = upcoming.map(function(ev) {
         var d = fromISO(ev.date);
