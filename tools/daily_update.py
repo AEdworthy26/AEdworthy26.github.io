@@ -651,8 +651,14 @@ def gen_quiz():
     recent_q = recent_values('quiz-data.js', 'question')
     avoid_q = '\n'.join(f'- {q}' for q in recent_q) if recent_q else 'None'
     prompt = f"""Generate a general knowledge question of the day for {TODAY}.
-Choose from topics the user enjoys: Ancient History, History, British Politics, Geography, Sport, Literature, Science, Art, Music, Philosophy.
-Make sure the question is genuinely interesting and non-trivial — not too easy.
+
+Pick ONE category at random from this wide list — spread evenly across all of them over time, and do NOT default to history or ancient history:
+History, Ancient History, British Politics, World Politics, Geography, Sport, Science, Nature, Technology, Literature, Art, Music, Film & TV, Food & Drink, Architecture, Economics, Language & Words, Mythology, Religion & Culture, Exploration & Discovery, Medicine, Space & Astronomy, Philosophy, Law & Justice, Fashion & Design.
+
+Rules:
+- The question must be genuinely interesting and non-trivial — something a curious person would find satisfying.
+- Do NOT lean toward history or ancient history — treat every category as equally likely.
+- Vary the difficulty: some questions should be hard, some moderately challenging.
 
 IMPORTANT — do NOT repeat or closely resemble any of these recent questions:
 {avoid_q}
