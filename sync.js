@@ -21,7 +21,12 @@
     'personal_hub_meal_planner_v2',
     'ph_wordle_v1',
     'ph_wordle_stats_v1',
-    'personal_hub_goals'
+    'personal_hub_goals',
+    'reads_daily',
+    'ph_recipes_v1',
+    'ph_ex_routines_v1',
+    'ph_ex_logs_v1',
+    'ph_ex_acts_v1'
   ];
 
   /* ── helpers ── */
