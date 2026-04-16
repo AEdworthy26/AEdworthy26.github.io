@@ -1,19 +1,19 @@
 // reads-data.js
-// Auto-updated 2026-04-15 — do not edit manually
+// Auto-updated 2026-04-16 — do not edit manually
 
 var READS_DATA = {
-  date: "2026-04-15",
+  date: "2026-04-16",
   book: {
-    title: "The Nix",
-    author: "Nathan Hill",
+    title: "The Lonely City: Adventures in the Art of Being Alone",
+    author: "Olivia Laing",
     year: 2016,
-    genres: ["Literary Fiction", "Family Drama", "Satire"],
-    desc: "Nathan Hill's sprawling debut follows Samuel Anderson, a blocked novelist who discovers that his mother — who abandoned him as a child and has just gone viral for assaulting a presidential candidate — is not quite the person he thought she was. The novel leaps across decades, from 1968 Chicago to the social-media-saturated present, weaving together the Vietnam era, addiction, online gaming obsession, and the strange persistence of the past with tremendous wit and emotional intelligence. Hill writes with the big-hearted ambition of Dickens crossed with the satirical bite of Don DeLillo, producing set-pieces — including a bravura rendering of the Democratic National Convention riots — that feel both historically grounded and urgently alive. At over 600 pages it is genuinely unputdownable, stuffed with fully realised characters and ideas about how the stories we tell about our parents shape everything we become.",
-    whyRead: "With political polarisation and generational misunderstanding still dominating public life, The Nix reads like it was written for this exact moment — funny, furious, and deeply compassionate all at once.",
-    rating: 4.1,
+    genres: ["Art", "Memoir", "Cultural Criticism"],
+    desc: "When Olivia Laing found herself profoundly alone in New York City in her late thirties, she turned her isolation into a brilliant investigation of loneliness itself, weaving her own experience through the lives of artists — Edward Hopper, Andy Warhol, Henry Darger, David Wojnarowicz — who made solitude the very subject of their work. The book is part memoir, part art criticism, part urban portrait, and entirely its own strange and luminous thing. Laing writes with a precision and emotional intelligence that transforms loneliness from a private shame into a shared condition, something that pulses through city streets and canvases alike. It is one of those rare books that makes you feel less alone by confronting aloneness so honestly and with such formal beauty.",
+    whyRead: "In a moment when connection feels both easier and more elusive than ever, Laing's meditation hits with unusual force — this is the book to reach for when you want writing that is intellectually alive and emotionally true at the same time.",
+    rating: 3.9,
     ratingSource: "Goodreads",
-    ratingCount: "90,000+",
-    coverUrl: null,
-    amazonUrl: null
+    ratingCount: "50,000+",
+    coverUrl: "https://covers.openlibrary.org/b/id/12672997-L.jpg",
+    amazonUrl: "https://www.amazon.co.uk/dp/1504738896"
   }
 };

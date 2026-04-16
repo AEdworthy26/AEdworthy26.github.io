@@ -3,6 +3,45 @@
 
 var RICS_LOG = [
   {
+    "date": "2026-04-16",
+    "topic": "Mandatory Biodiversity Net Gain: Developer Obligations, Metric Calculation & Strategic BNG in Residential Schemes",
+    "module": "Sustainability",
+    "level": 1,
+    "apc_competency": "Sustainability (Level 1)",
+    "focus": "This lesson covers mandatory Biodiversity Net Gain (BNG) as introduced under the Environment Act 2021, focusing on the 10% net gain obligation, the Biodiversity Metric, off-site and strategic BNG options, and how this framework intersects with Alfie's pre-acquisition, appraisal and planning work on residential-led schemes. Understanding BNG is increasingly critical at APC level as it affects residual land value, planning risk and S106 negotiation.",
+    "image": "https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?w=1200&auto=format&fit=crop",
+    "content": [],
+    "summary": [
+      "Mandatory BNG (10% net gain) applies to most major and small-site residential permissions in England from February/April 2024 under the Environment Act 2021 \u2014 it is a legal requirement, not a discretionary policy target.",
+      "The Biodiversity Metric (v4.0) calculates biodiversity units by habitat area, condition, distinctiveness and strategic significance \u2014 brownfield sites typically have low baselines, making on-site compliance easier; greenfield sites with good existing habitats often face off-site shortfalls requiring procurement of units from a registered habitat bank.",
+      "BNG delivery follows a strict hierarchy: on-site first, then registered off-site habitat banks (secured via conservation covenant), then statutory biodiversity credits as a last resort \u2014 with statutory credits priced at a deliberate premium (e.g. c.\u00a342,000/unit for woodland) to incentivise genuine habitat creation.",
+      "A Biodiversity Gain Plan (BGP) must be approved by the LPA via a pre-commencement condition before works start \u2014 this sits on the critical path and off-site legal agreements (conservation covenants, habitat bank registration) must be in place before BGP approval, requiring early programme integration.",
+      "At APC Level 1, the key requirement is demonstrating awareness of BNG's cost, programme and design implications across the development lifecycle \u2014 integrating ecological assessment into pre-acquisition due diligence, appraisal cost modelling, S106 negotiation and design team briefs, and avoiding confusion between BNG and other ecological/sustainability regimes."
+    ],
+    "qa": [
+      {
+        "q": "You're appraising a 200-unit greenfield scheme. The ecologist's preliminary survey shows a baseline of 22 biodiversity units. After modelling the proposed layout, only 20 units can be achieved on-site. What is your BNG shortfall and how would you address it in your appraisal?",
+        "a": "The 10% BNG target requires a post-development total of at least 24.2 units (22 \u00d7 1.10). With only 20 units deliverable on-site, the shortfall is 4.2 units. In the appraisal, I would model the cost of procuring 4.2 biodiversity units from a registered off-site habitat bank. At indicative market rates of \u00a315,000\u2013\u00a330,000 per unit for common habitats in that region, the cost exposure is approximately \u00a363,000\u2013\u00a3126,000. This would be entered as a planning/ecological cost line in the appraisal. I would also review the design with the landscape architect to explore whether habitat enhancements (e.g. species-rich grassland in public open space, biodiverse roofs) could reduce or eliminate the shortfall, reducing or eliminating the off-site procurement cost before the appraisal is finalised."
+      },
+      {
+        "q": "What is a Biodiversity Gain Plan and when must it be submitted? What happens if it's not in place before works start?",
+        "a": "A Biodiversity Gain Plan (BGP) is a document required as a pre-commencement planning condition on all applicable permissions under Schedule 14 of the Environment Act 2021. It must set out the pre-development biodiversity value (using the statutory metric), the strategy for achieving 10% net gain (on-site, off-site, statutory credits or combination), and evidence of the 30-year securing mechanism. It must be submitted to and approved by the LPA before any development works commence. If works start without an approved BGP, the developer is in breach of planning condition \u2014 potentially rendering works unlawful and exposing the project to enforcement action, stop notices, and programme risk. In practice, I would ensure the BGP and any off-site legal agreements are flagged on the critical path well ahead of the anticipated start-on-site date."
+      },
+      {
+        "q": "How does BNG interact with great crested newt (GCN) licensing \u2014 does a GCN mitigation strategy discharge the BNG requirement?",
+        "a": "No \u2014 BNG and protected species mitigation under the Habitats Regulations operate as entirely separate, parallel regimes. A GCN licence (issued by Natural England under a district-level licensing scheme or bespoke EPS licence) addresses the legal obligation to avoid killing or injuring protected species and to provide reasonable avoidance measures and compensatory habitat. It does not generate or discharge biodiversity units under the Biodiversity Metric. The 10% BNG obligation remains regardless of whether a GCN licence is in place. The two strategies should be developed in parallel by the ecologist, and the BGP must account for both \u2014 though habitat created for GCN compensation may also contribute to the biodiversity unit calculation if it meets the relevant habitat type criteria in the metric."
+      },
+      {
+        "q": "What is the difference between a conservation covenant and a Section 106 agreement in the context of securing off-site BNG?",
+        "a": "A conservation covenant (under Part 7 of the Environment Act 2021) is a private, voluntary agreement between a landowner and a 'responsible body' (e.g. a conservation charity or public body) that runs with the land and binds future owners to manage it for conservation purposes for a defined period \u2014 in the BNG context, a minimum of 30 years. It does not require LPA involvement and is the primary mechanism for securing commitments on off-site habitat bank land. A Section 106 agreement, by contrast, is a planning obligation entered into between a developer/landowner and the LPA (and sometimes other parties) linked to a specific planning permission. S106 can be used to secure on-site BNG management obligations or to reference off-site arrangements, but it is not the mechanism used to legally bind the off-site habitat bank landowner \u2014 that is done through the conservation covenant. In practice, an off-site BNG arrangement will typically involve both: a conservation covenant on the habitat bank land and a reference in the BGP (and potentially the S106) confirming the units have been secured."
+      },
+      {
+        "q": "How might Local Nature Recovery Strategies (LNRS) affect your selection of an off-site habitat bank for a Latimer scheme?",
+        "a": "LNRS identify local priorities for habitat creation and nature recovery across England, prepared by responsible authorities under the Environment Act 2021. In the Biodiversity Metric, habitats located in areas identified as strategic priorities in the LNRS may attract a higher 'strategic significance' multiplier, which increases the biodiversity unit value of those habitats. This means that if I am procuring off-site units for a Latimer scheme, I would advise the ecologist to review the relevant LNRS (where published) and prioritise habitat banks located in strategically significant areas. This could increase the unit value of the off-site habitat, meaning fewer units need to be purchased to meet the 10% threshold \u2014 directly reducing the off-site procurement cost. LNRS priorities may also be a material consideration for LPAs in assessing whether proposed BNG habitat types are appropriate, so early engagement with the LNRS framework supports both cost management and planning risk reduction."
+      }
+    ]
+  },
+  {
     "date": "2026-04-15",
     "topic": "Section 73 Applications, DOVs & Non-Material Amendments: Post-Consent Planning Flexibility",
     "module": "Planning and Development Management",

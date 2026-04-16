@@ -1,48 +1,48 @@
 // us-politics-news-data.js
-// Auto-updated 2026-04-15 — do not edit manually
+// Auto-updated 2026-04-16 — do not edit manually
 
 var US_POLITICS_NEWS = {
-  date: "2026-04-15",
+  date: "2026-04-16",
   main: {
-    title: "Trump DOJ Moves to Overturn Seditious Conspiracy Convictions of January 6 Ringleaders",
+    title: "House Blocks War Powers Resolution as Trump's Iran Conflict Nears Two-Month Mark",
     category: "Politics",
     content: [
-      "The Trump Justice Department has taken the extraordinary step of asking a federal court to throw out the seditious conspiracy convictions of Stewart Rhodes, the founder of the Oath Keepers, along with other senior members of the Oath Keepers and Proud Boys stemming from the January 6, 2021 Capitol riot. The move represents one of the most aggressive acts yet in the administration's broader effort to rehabilitate those involved in the attack on Congress. Legal experts say the filing is highly unusual, as it asks the court to undo convictions that were won by the very same department — now under new leadership — following lengthy trials.",
-      "President Trump had already commuted the prison sentences of twelve members of the Proud Boys and Oath Keepers last year, fulfilling a campaign promise he made to supporters who viewed the January 6 defendants as political prisoners. The new DOJ filing goes a significant step further by seeking to erase the convictions entirely from the record, which would clear the legal names of some of the most prominent figures prosecuted for their roles in planning and participating in the assault on the Capitol. Rhodes was originally sentenced to 18 years in prison after being found guilty of leading a conspiracy to prevent the peaceful transfer of presidential power.",
-      "The Justice Department's move has drawn immediate condemnation from Democrats and former prosecutors, who argue that the convictions were secured through rigorous legal proceedings, upheld on appeal, and represent a foundational accountability moment for American democracy. Critics see the action as a politically motivated intervention designed to reward loyalists and rewrite the historical record of one of the gravest domestic political crises in modern American history. Several former federal prosecutors publicly stated that they had never seen a Justice Department move to vacate convictions it had itself prosecuted on these grounds.",
-      "The decision fits into a broader pattern under the Trump administration of using the Justice Department as an instrument to settle political scores and reverse actions taken under the Biden administration. Earlier this week, the DOJ also released a report claiming that the Biden-era department had 'weaponized' enforcement of the FACE Act — a law protecting access to abortion clinics — against conservative anti-abortion activists. Together, these moves signal a sweeping reorientation of the department's priorities and a willingness to relitigate the prosecutorial decisions of the previous administration at the highest levels.",
-      "Congress has so far offered only muted institutional resistance to the DOJ's January 6 reversal, reflecting both the thin Republican majority in the House and a reluctance among many GOP members to openly challenge the administration. Democrats have called for hearings and accused the administration of undermining the rule of law, but without control of either chamber they have limited procedural tools to intervene. The long-term implications for public trust in the federal justice system — and for the historical memory of January 6 itself — remain a subject of intense debate among legal scholars, historians, and elected officials across the political spectrum."
+      "House Republicans narrowly defeated a Democratic war powers resolution on Thursday that would have compelled President Trump to cease military hostilities against Iran without explicit authorization from Congress. The vote marks the second time in as many days that Congress has declined to formally rein in the president's warmaking authority, following a similar Senate rebuke of a comparable measure earlier in the week. The outcome underscores the precarious but durable political coalition backing Trump's military campaign, even as the war approaches its two-month anniversary with no clear end in sight.",
+      "Democrats framed the resolution as a constitutional imperative, arguing that the Iran conflict was launched without proper congressional authorization and that the War Powers Act demands legislative oversight of any sustained military engagement. The White House has maintained that the president possesses sufficient executive authority to conduct the operations, and Republican leadership rallied members to hold the line against what they characterized as Democratic interference in national security policy. The narrow margin of the vote, however, signals that Republican unity on the war is far from guaranteed as the conflict drags on and its domestic costs become more visible.",
+      "The economic strain of the Iran war has begun to register acutely with American households, with gas prices surging dramatically since hostilities began. Former Vice President Kamala Harris appeared outside a gas station in Charlotte, North Carolina, on Wednesday to cast blame directly on Trump, telling reporters that consumers are paying roughly fifteen dollars more every time they fill a tank. The White House has largely shrugged off the economic concerns, with officials pointing to a recent rebound in stock markets as evidence that the broader economy remains fundamentally sound despite the pressures of war.",
+      "Meanwhile, the Justice Department announced it is appealing a ruling by the Foreign Intelligence Surveillance Court that barred national security agencies from using certain data-processing tools tied to Section 702 of the Foreign Intelligence Surveillance Act, a law set to expire this coming Monday. The appeal adds another layer of institutional tension to an already fraught national security landscape, with Congress deadlocked over reauthorization and the executive branch pressing forward through the courts. The overlap of an active armed conflict with a looming surveillance legal crisis has placed significant strain on the government's intelligence infrastructure at a critical moment.",
+      "The congressional war powers debate is unfolding against a backdrop of cautious diplomatic movement, with Trump announcing Thursday that Israel and Lebanon have agreed to a ten-day ceasefire in the parallel conflict involving Hezbollah, potentially easing at least one front of the broader regional crisis. Pakistani mediators are also reportedly working to extend the U.S.-Iran ceasefire and establish a framework for new negotiations, though no comprehensive peace talks have been confirmed. For now, the political battle in Washington over who controls the decision to wage war remains unresolved, with Democrats vowing to continue pressing for congressional authority and Republicans holding firm behind a president who shows no sign of seeking Capitol Hill's blessing."
     ],
-    image: "https://images.pexels.com/photos/5854416/pexels-photo-5854416.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    source: "Washington Post",
-    sourceUrl: "https://www.washingtonpost.com/national-security/2026/04/14/january-6-convictions-seditious-conspiracy/"
+    image: "https://static01.nyt.com/images/2026/04/16/multimedia/16dc-trump-econ-01-hfpb/16dc-trump-econ-01-hfpb-mediumSquareAt3X.jpg",
+    source: "The Washington Post",
+    sourceUrl: "https://www.washingtonpost.com/politics/2026/04/16/house-iran-war-powers-vote/"
   },
   secondary: [
     {
       id: "us1",
-      title: "Filibuster's Future in Doubt as Trump Pushes Senate to Scrap It for Save America Act",
-      summary: "President Trump is pressing Senate Republicans to eliminate the filibuster to pass his Save America Act, but many GOP senators remain wary of abolishing a rule that could protect them when they lose the majority.",
-      image: "https://images.pexels.com/photos/5227053/pexels-photo-5227053.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      title: "RFK Jr. Defends Budget Cuts and Vaccine Stance in Congressional Hearing",
+      summary: "Health and Human Services Secretary Robert F. Kennedy Jr. faced tough questioning from lawmakers Thursday in his first congressional appearance of the year, defending Trump's proposed budget cuts and his controversial positions on vaccines.",
+      image: "https://images.unsplash.com/photo-1599594407685-1b16111e4e89?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxSRkslMjBKci4lMjBEZWZlbmRzJTIwQnVkZ2V0JTIwQ3V0cyUyMGFuZCUyMFZhY2NpbmUlMjBTdGFuY2UlMjBpbiUyMENvbmdyZXNzaW9uYWwlMjBIZWFyaW5nfGVufDB8MHx8fDE3NzYzNTgxNzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
       source: "NPR",
-      url: "https://www.npr.org/2026/04/14/nx-s1-5771526/the-filibuster-has-long-forced-senators-to-compromise-can-it-survive-2026",
+      url: "https://www.npr.org/2026/04/16/nx-s1-5787749/rfk-jr-hearing-hhs-health-budget-cuts",
       category: "Politics"
     },
     {
       id: "us2",
-      title: "Virginia Joins National Popular Vote Compact, Pushing It to 222 Electoral Votes",
-      summary: "Virginia's entry into the National Popular Vote Interstate Compact brings the coalition to states representing 222 electoral votes, edging it closer to the 270 needed to effectively bypass the Electoral College.",
-      image: "https://images.pexels.com/photos/1550340/pexels-photo-1550340.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      title: "Commission of Fine Arts Approves Trump's Proposed Victory Arch for Washington",
+      summary: "A panel composed entirely of Trump appointees voted to move forward with the president's proposed victory arch in Washington, D.C., a monument that would stand nearly 100 feet taller than Paris' Arc de Triomphe.",
+      image: "https://images.unsplash.com/photo-1761001316205-3f36441846b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxDb21taXNzaW9uJTIwb2YlMjBGaW5lJTIwQXJ0cyUyMEFwcHJvdmVzJTIwVHJ1bXB8ZW58MHwwfHx8MTc3NjM1ODE3OXww&ixlib=rb-4.1.0&q=80&w=1080",
       source: "NPR",
-      url: "https://www.npr.org/2026/04/14/nx-s1-5742595/virginia-popular-vote-compact",
-      category: "Elections"
+      url: "https://www.npr.org/2026/04/16/nx-s1-5787535/trump-victory-arch-dc",
+      category: "Politics"
     },
     {
       id: "us3",
-      title: "JD Vance Heckled at Turning Point USA Event, Acknowledges Youth Discontent Over Iran War",
-      summary: "Vice President JD Vance faced antiwar protests at a conservative student gathering and openly acknowledged that young voters are unhappy with the administration's military policy in the Middle East.",
-      image: "https://static01.nyt.com/images/2026/04/14/multimedia/14israel-iran-JD-lgzf/14israel-iran-JD-lgzf-mediumSquareAt3X.jpg",
+      title: "Justice Dept. Appeals Surveillance Court Ruling as FISA Section 702 Nears Expiration",
+      summary: "The Justice Department is challenging a Foreign Intelligence Surveillance Court decision that restricted national security agencies' data-processing capabilities under Section 702, which is set to expire Monday amid a congressional impasse over reauthorization.",
+      image: "https://static01.nyt.com/images/2026/04/16/multimedia/16trump-news-surveillance-appeal-topart-vwbz/16trump-news-surveillance-appeal-topart-vwbz-mediumSquareAt3X.jpg",
       source: "The New York Times",
-      url: "https://www.nytimes.com/2026/04/14/us/politics/jd-vance-turning-point-usa-protest.html",
+      url: "https://www.nytimes.com/2026/04/16/us/politics/fisa-ruling-appeal.html",
       category: "Politics"
     }
   ]

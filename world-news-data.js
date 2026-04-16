@@ -1,49 +1,49 @@
 // world-news-data.js
-// Auto-updated 2026-04-15 — do not edit manually
+// Auto-updated 2026-04-16 — do not edit manually
 
 var WORLD_NEWS = {
-  date: "2026-04-15",
+  date: "2026-04-16",
   main: {
-    title: "Israel and Lebanon Hold First Direct Talks Since 1993 Amid Ongoing Iran War",
-    category: "Diplomacy",
+    title: "Trump Announces Israel-Lebanon Ceasefire as Middle East War Negotiations Reach Critical Juncture",
+    category: "Geopolitics",
     content: [
-      "Israel and Lebanon have held their first direct diplomatic talks in more than three decades, marking a significant and unexpected development amid the wider regional conflict sparked by the US-Israeli war on Iran. The two sides met in Washington, with a joint US statement confirming that Israeli and Lebanese diplomats had agreed to launch formal direct negotiations, with a time and place for subsequent talks still to be determined. The meeting represents the first face-to-face engagement between the two countries since 1993, when Lebanon last participated in the Madrid peace process framework.",
-      "The talks come even as fighting continues in southern Lebanon between Israeli forces and Iranian-backed Hezbollah militants, a conflict that has threatened to undermine a fragile US-Iran ceasefire brokered in recent weeks. The dual track of military confrontation and diplomatic engagement reflects the complex and volatile nature of the current Middle East landscape, where multiple fronts are active simultaneously. US officials have been pushing hard to consolidate diplomatic gains before hostilities can escalate further and derail any progress toward a broader regional settlement.",
-      "The Iran war, which entered a dramatic new phase when President Trump ordered a US naval blockade of the Strait of Hormuz, has reshaped the geopolitical calculus for countries across the region. Lebanon, already economically devastated and politically fragile, faces enormous pressure both from Hezbollah's continued military operations and from the economic fallout of the broader conflict. The direct talks signal that at least some factions within the Lebanese state are willing to explore a separate diplomatic track, even as the situation on the ground remains deeply unstable.",
-      "US Treasury Secretary Scott Bessent told the BBC that a 'small bit of economic pain' was worth enduring to eliminate what he described as the long-term threat of Iranian strikes on Western capitals, framing the US strategy as a necessary if costly investment in global security. The blockade of the Strait of Hormuz has had sweeping economic consequences far beyond the immediate belligerents, driving up oil prices globally and triggering fuel protests in countries as far afield as Ireland, where the government now faces a possible no-confidence vote. Dubai's migrant worker population, a backbone of the UAE's hospitality sector, has also borne a heavy toll, with widespread furloughs, pay cuts, and forced repatriations reported.",
-      "Veteran diplomats and analysts, including Aaron David Miller of the Carnegie Endowment for International Peace, caution that the path to a durable settlement remains treacherous, with numerous spoilers both inside and outside the region. The Israel-Lebanon talks, while historically notable, are seen as preliminary steps rather than a breakthrough, and any formal negotiations will need to navigate deep-seated disputes over borders, Hezbollah's role, and the terms of any Iranian disengagement. Nevertheless, the mere fact of direct engagement between Beirut and Jerusalem — for the first time in a generation — has been received cautiously as a rare glimmer of diplomatic possibility in an otherwise combustible moment for the Middle East."
+      "President Donald Trump announced on Thursday that Israel and Lebanon have agreed to a temporary ten-day ceasefire in Israel's ongoing conflict with Iran-backed Hezbollah, with the pause expected to take effect at 5 p.m. Eastern time. Lebanon's prime minister welcomed the announcement, describing it as a vital breathing space for a country that has endured months of sustained Israeli military operations. However, neither Israel nor Hezbollah immediately issued formal confirmations of the agreement, leaving some uncertainty over its durability and the precise terms under which it was brokered.",
+      "The ceasefire announcement comes amid a broader and increasingly complex web of overlapping negotiations across the Middle East, stretching from the ongoing Iran war to stalled talks over Gaza. According to analysts, the Lebanon pause is best understood not as an isolated diplomatic achievement but as one thread in a much larger tapestry of efforts to wind down the region's multiple simultaneous conflicts. American officials have been working to sequence these negotiations carefully, with the Lebanon ceasefire potentially serving as a confidence-building measure ahead of more substantive talks with Tehran.",
+      "The humanitarian toll of Israel's campaign in Lebanon has drawn mounting international condemnation. Satellite imagery analysed by BBC Verify revealed that more than 1,400 buildings have been destroyed since 2 March alone, laying bare the scale of demolitions across Lebanese villages. The findings have deepened criticism of Israel from European governments and international bodies, even as Israeli officials continue to frame the campaign as a necessary defensive operation against Hezbollah's rocket infrastructure and command networks.",
+      "China's posture in the broader Iran war remains a significant complicating factor for American diplomacy. Despite the economic risks posed by the conflict — particularly the threat to shipping through the Strait of Hormuz — Beijing has so far resisted pressure to leverage its relationship with Tehran to push for an Iranian acceptance of US demands. Chinese officials have signalled that they are wary of being drawn into a conflict they opposed from the outset and believe they have limited practical sway over Iran's strategic calculations, a position that has frustrated Washington's hopes for a coordinated international approach.",
+      "Pope Leo XIV, speaking during his ongoing Africa trip, added his voice to the chorus of international concern, condemning what he called a 'handful of tyrants' spending billions of dollars fuelling wars around the world. His remarks, which came days after a public spat with President Trump — who had called the Pope weak on crime — were interpreted by observers as a pointed rebuke of the broader militarisation of global politics. Whether the Lebanon ceasefire holds beyond its initial ten-day window will be closely watched as a bellwether for the wider regional de-escalation efforts that diplomats from Washington to Brussels are cautiously hoping to advance.",
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/73fd/live/12865e50-3824-11f1-87a9-4117efae0ff4.jpg",
-    source: "BBC News",
-    sourceUrl: "https://www.bbc.com/news/articles/cp8ddydl18vo?at_medium=RSS&at_campaign=rss"
+    image: "https://static01.nyt.com/images/2026/04/16/multimedia/16iran-update-jcfv/16iran-update-jcfv-mediumSquareAt3X.jpg",
+    source: "The New York Times",
+    sourceUrl: "https://www.nytimes.com/live/2026/04/16/world/iran-war-trump-lebanon-news"
   },
   secondary: [
     {
       id: "s1",
-      title: "Sudan's War Enters Fourth Year as UN Condemns 'Unacceptable' Global Response",
-      summary: "As international talks convene in Berlin on the third anniversary of Sudan's catastrophic civil war, the UN's top official for Sudan has condemned the lack of global urgency surrounding what is now the world's largest humanitarian crisis, with 19 million people facing acute hunger.",
-      image: "https://images.pexels.com/photos/10970368/pexels-photo-10970368.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      title: "Over £1 Billion Pledged for Sudan at Berlin Conference as Humanitarian Crisis Deepens",
+      summary: "International donors exceeded their funding target at a Berlin conference to address Sudan's catastrophic humanitarian crisis, the world's largest, though hopes for a ceasefire remain distant.",
+      image: "https://i.guim.co.uk/img/media/7092b4b076ecde7a62439a3048e194c0b1eee2a8/690_0_5600_4480/master/5600.jpg?width=1200&quality=85&auto=format&fit=max&s=73d002208a11ad9e1cc41abdfb590440",
       source: "The Guardian",
-      url: "https://www.theguardian.com/global-development/2026/apr/14/no-end-sudan-war-conflict-third-anniversary",
+      url: "https://www.theguardian.com/global-development/2026/apr/15/more-than-1bn-pledged-for-sudan-as-humanitarian-crisis-deepens",
       category: "Humanitarian"
     },
     {
       id: "s2",
-      title: "Peter Magyar Defeats Viktor Orbán in Landmark Hungarian Election",
-      summary: "Peter Magyar, a former ally turned fierce critic of Viktor Orbán, has defeated the long-dominant far-right Hungarian leader in a landslide election victory, raising hopes of a significant political transformation in Hungary.",
-      image: "https://static01.nyt.com/images/2026/04/14/multimedia/14int-hungary-magyar-01-gzvb/14int-hungary-magyar-01-gzvb-mediumSquareAt3X.jpg",
-      source: "The New York Times",
-      url: "https://www.nytimes.com/2026/04/14/world/europe/viktor-orban-peter-magyar-election.html",
+      title: "Julius Malema Sentenced to Five Years in Prison for Gun Offence",
+      summary: "South African opposition leader and Economic Freedom Fighters chief Julius Malema has been handed a five-year jail term for firing a rifle into the air at a political rally in 2018, with his lawyers immediately lodging an appeal.",
+      image: "https://i.guim.co.uk/img/media/f961adc40a6129c57563b1e6f45cd3e14d3ab0d6/376_0_3238_2592/master/3238.jpg?width=1200&quality=85&auto=format&fit=max&s=98a272677f05c14f887149f8fdc22705",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/world/2026/apr/16/south-africa-julius-malema-jail-term-rifle",
       category: "Politics"
     },
     {
       id: "s3",
-      title: "Nigeria Under Scrutiny After Airstrike on Busy Market Kills Up to 200 Civilians",
-      summary: "Survivors and international observers have questioned the Nigerian military's justification for a devastating airstrike on the crowded Jilli market in the north-east of the country, which killed as many as 200 people in what the military described as a precision anti-terror operation.",
-      image: "https://images.pexels.com/photos/17586367/pexels-photo-17586367.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/world/2026/apr/14/survivors-ask-why-nigeria-bombed-busy-market-in-effort-to-target-jihadist-group",
-      category: "Conflict"
+      title: "Syria Takes Full Control of Bases Vacated by US Forces",
+      summary: "The final convoy of US soldiers and military equipment has departed Syria's Qasrak air base in Hasakah, with Syrian authorities now taking control of all former American military installations in the country.",
+      image: "https://images.pexels.com/photos/3743542/pexels-photo-3743542.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      source: "Al Jazeera",
+      url: "https://www.aljazeera.com/news/2026/4/16/syria-takes-control-of-all-bases-where-us-forces-were-deployed?traffic_source=rss",
+      category: "Military"
     }
   ]
 };

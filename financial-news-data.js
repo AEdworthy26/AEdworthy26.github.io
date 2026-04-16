@@ -1,49 +1,49 @@
 // financial-news-data.js
-// Auto-updated 2026-04-15 — do not edit manually
+// Auto-updated 2026-04-16 — do not edit manually
 
 var FINANCIAL_NEWS = {
-  date: "2026-04-15",
+  date: "2026-04-16",
   main: {
-    title: "IMF Warns Iran War Could Tip World Into Recession as Markets Stage Dramatic Recovery",
-    category: "Economics",
+    title: "Markets Rally on Ceasefire Hopes, But Iran War's Energy Shock Threatens Global Economy",
+    category: "Markets & Economics",
     content: [
-      "The International Monetary Fund has issued one of its starkest warnings in years, cautioning that a further escalation of the Iran war could trigger a global recession, with the United Kingdom standing to suffer more than any other G7 nation from the economic fallout. The Washington-based institution has slashed its growth forecasts for both the US and the global economy, citing rising oil prices, disrupted shipping lanes, and a sharp deterioration in business and consumer confidence as the primary transmission channels through which the conflict is depressing output. The IMF's intervention came as UK Chancellor Rachel Reeves arrived in Washington for meetings, facing the uncomfortable task of defending the UK's economic resilience against an institution that has effectively singled out Britain as the developed world's most vulnerable major economy.",
-      "At the heart of the IMF's concern is the Strait of Hormuz, through which roughly a fifth of the world's oil supply passes. A US naval blockade has already stopped Iran-linked vessels from transiting the waterway, with US Central Command confirming that six ships complied with orders to return to Iranian ports. The disruption has sent energy prices sharply higher, compounding inflationary pressures that central banks in Europe and North America had only recently begun to bring under control. Economists warn that a sustained closure or further militarisation of the strait could produce an oil price shock comparable to those seen in the 1970s, with cascading consequences for manufacturing, transport, and household energy bills worldwide.",
-      "Despite the dire warnings from the IMF, financial markets staged a striking recovery this week, with stocks across Asia and Europe erasing much of the losses accumulated since the outbreak of the conflict. China's equity markets became the latest to recoup their war-driven declines, fuelled by optimism around economic resilience and a refocus by investors on corporate earnings fundamentals. In the United States, Nvidia's stock extended a ten-day winning streak, reflecting renewed investor appetite for AI-related names as the technology sector reasserted itself as a growth engine capable of outrunning geopolitical headwinds. The rally suggests that, for now, markets are pricing in a de-escalation scenario rather than the worst-case outcomes outlined by the IMF.",
-      "A key catalyst for the market rebound has been the emergence of renewed diplomatic contacts between the United States and Iran. US Treasury Secretary Scott Bessent told the BBC that a 'small bit of economic pain' was a worthwhile price to pay to neutralise the threat of Iranian strikes on Western capitals, signalling that the administration views the economic costs as manageable in the context of the broader strategic objective. Investors appear to have interpreted the opening of talks as evidence that both sides retain an interest in avoiding a prolonged conflict, reducing the tail risk of a full-scale escalation that would validate the IMF's recession scenario. Nonetheless, analysts caution that the situation remains highly fluid and that any breakdown in negotiations could rapidly reverse the market gains of recent days.",
-      "The episode has laid bare significant structural vulnerabilities in several major economies. India's clean energy push, for instance, has been exposed by the war, with the country's creaking electricity grid struggling to keep pace with demand just as oil supplies from the Gulf face disruption. In the UK, the IMF's downgrade arrives at a particularly sensitive moment, with the government already navigating a challenging fiscal environment and limited headroom to absorb further shocks. For investors and policymakers alike, the central challenge is now one of managing uncertainty: markets may be betting on resolution, but the economic institutions charged with monitoring systemic risk are making very different calculations about what happens if the diplomacy fails."
+      "Global equities extended their gains on Thursday as investor sentiment was lifted by optimism surrounding a potential extension of the fragile ceasefire between the United States, Israel, and Iran. U.S. stocks pushed toward record highs after President Trump announced a 10-day ceasefire between Israel and Lebanon, giving markets a much-needed reprieve from weeks of war-driven volatility. Signs of improvement in the U.S. labor market added further fuel to the rally, with traders hopeful that a broader peace deal could begin to unwind the severe energy disruptions that have rattled global supply chains since the conflict began.",
+      "Beneath the surface of the market optimism, however, energy markets remain under acute stress. The head of the International Energy Agency warned Thursday that Europe has roughly six weeks of jet fuel supply remaining if oil shipments from the Gulf are not restored, a stark signal that the war's economic consequences are far from resolved. Flight cancellations could begin 'soon,' the IEA chief cautioned, a scenario that would deliver a serious blow to airlines, travel-dependent businesses, and the broader services sector across Europe and beyond.",
+      "IMF Managing Director Kristalina Georgieva echoed those concerns, warning that 'everyone will feel the impact' of the Iran war's energy price shock. The IMF's alarm underscores how deeply the conflict has disrupted the global economic outlook, threatening to unravel growth momentum that had been building in several major economies at the start of the year. Analysts at Moody's Analytics noted that while the UK's economy posted a surprise 0.5% monthly expansion in February — its strongest growth in over two years — that momentum is now widely expected to be 'short-lived' given the headwinds now bearing down on trade, energy, and consumer confidence.",
+      "The UK's February GDP figure, released Thursday by the Office for National Statistics, offered a bittersweet snapshot of an economy that was gathering pace just before the conflict erupted. The 0.5% month-on-month jump pointed to broad-based strength across services and production, suggesting that Chancellor Reeves' economic strategy was beginning to bear fruit. Yet economists were quick to temper enthusiasm, noting that the February data represents a pre-war baseline and that the months ahead are likely to tell a far more difficult story as energy costs bite, supply chains tighten, and business investment decisions are deferred.",
+      "Adding to the complexity of the economic picture, PepsiCo reported quarterly earnings Thursday that offered a rare note of resilience, with the snack and beverage giant posting a rise in sales after cutting prices on products like Doritos and Lays by up to 15%. Executives acknowledged that 'inflation will come' as the Iran war's energy and supply chain disruptions work their way through the global economy, but said consumer spending on affordable snacks had held up better than feared. The results illustrate the uneven nature of the current economic environment — one where equity markets can cheer a ceasefire while ordinary households and energy-intensive industries brace for a reckoning that may still be weeks away."
     ],
-    image: "https://i.guim.co.uk/img/media/dcea8c69df6cca238503b1e7baa2445aa777852d/0_0_4173_3339/master/4173.jpg?width=1200&quality=85&auto=format&fit=max&s=221d559e500881718ddf9b279d53e496",
-    source: "The Guardian",
-    sourceUrl: "https://www.theguardian.com/business/2026/apr/14/iran-war-global-recession-imf-uk-growth-forecasts-oil-prices"
+    image: "https://i.guim.co.uk/img/media/2fd4233a2058248f9d7cf458777c40a3440c4b59/423_0_4176_3340/master/4176.jpg?width=1200&quality=85&auto=format&fit=max&s=a157551a9583bff491c2f281516661b7",
+    source: "Bloomberg Markets",
+    sourceUrl: "https://www.bloomberg.com/news/articles/2026-04-16/stock-rally-advances-on-iran-ceasefire-hopes-labor-optimism"
   },
   secondary: [
     {
       id: "fn1",
-      title: "Nvidia Extends 10-Day Winning Streak as Investors Pile Back Into AI",
-      summary: "Nvidia's stock continued its remarkable run as renewed confidence in artificial intelligence investments drew investors back into the technology sector despite broader geopolitical uncertainty.",
-      image: "https://images.mktw.net/im-62932554",
-      source: "MarketWatch",
-      url: "https://www.marketwatch.com/story/nvidias-stock-is-on-a-10-day-winning-streak-heres-why-investors-are-getting-back-on-board-with-ai-bf0bb59e?mod=mw_rss_topstories",
-      category: "Markets"
+      title: "UK Faces Possible Food Shortages by Summer as Iran War Disrupts CO2 Supplies",
+      summary: "Government ministers are drawing up contingency plans for a 'reasonable worst-case scenario' in which disruptions to carbon dioxide supplies — a byproduct of fertiliser production affected by the conflict — could cause gaps on supermarket shelves for chicken, pork, and fizzy drinks by summer.",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/4812/live/d1241b30-3974-11f1-b60c-af6bba5f6d25.jpg",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/business/2026/apr/16/uk-possible-food-shortages-iran-war-co2",
+      category: "Economics"
     },
     {
       id: "fn2",
-      title: "UK Steel Exports to EU Threatened as Bloc Doubles Tariffs and Halves Quotas",
-      summary: "The European Union has confirmed plans to double steel tariffs and reduce duty-free import quotas by 47% from July, a move aimed at curbing Chinese steel but one that threatens significant collateral damage to British exporters.",
-      image: "https://i.guim.co.uk/img/media/a429cc11a44ba9a514ce404cfbf716c2b4183a69/0_0_4016_3214/master/4016.jpg?width=1200&quality=85&auto=format&fit=max&s=2c70c0b40d41cea51a632d7f7071d8c0",
+      title: "Metro Bank CEO Awarded Record £2.6m Pay Package After 1,000 Job Cuts",
+      summary: "Metro Bank chief executive Dan Frumkin received the largest pay packet in the lender's history — more than double his 2024 compensation — following a near-collapse of the bank that required a rescue by a Colombian billionaire and the elimination of a thousand jobs.",
+      image: "https://i.guim.co.uk/img/media/6dc9429328b0654bec77f9dbf0cf8edc35d974d1/595_216_1010_807/master/1010.jpg?width=1200&quality=85&auto=format&fit=max&s=8a8297f74e502604365ac02d4e042582",
       source: "The Guardian",
-      url: "https://www.theguardian.com/business/2026/apr/14/uk-steel-exports-eu-risk-tariffs-quotas",
-      category: "Trade"
+      url: "https://www.theguardian.com/business/2026/apr/16/metro-bank-boss-handed-record-26m-after-slashing-1000-jobs",
+      category: "Corporate"
     },
     {
       id: "fn3",
-      title: "Help to Buy Mostly Benefited High Earners, IFS Analysis Finds",
-      summary: "A landmark study by the Institute for Fiscal Studies has concluded that George Osborne's flagship Help to Buy mortgage scheme delivered its greatest financial benefits to higher-income households while doing little to improve social mobility in the UK housing market.",
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/432b/live/5ec3d2c0-3810-11f1-8fdd-51dab7090d67.jpg",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/money/2026/apr/15/higher-income-households-benefited-most-from-help-to-buy-mortgages-thinktank",
-      category: "Economics"
+      title: "Kevin Warsh Fed Confirmation Hearing Proceeds Despite Criminal Probe Into Current Chair",
+      summary: "Trump's nominee to lead the Federal Reserve, Kevin Warsh, is set to testify before the Senate on Tuesday even as Democrats push for a delay, citing an ongoing criminal investigation into incumbent Fed Chair Jerome Powell that has clouded the path to a smooth leadership transition.",
+      image: "https://static01.nyt.com/images/2026/04/16/multimedia/16dc-fed-warsh-wphf/16dc-fed-warsh-wphf-mediumSquareAt3X.jpg",
+      source: "The New York Times",
+      url: "https://www.nytimes.com/2026/04/16/business/warsh-fed-democrats-confirmation.html",
+      category: "Monetary Policy"
     }
   ]
 };

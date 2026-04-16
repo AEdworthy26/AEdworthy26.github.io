@@ -1,10 +1,10 @@
 // quiz-data.js
-// Auto-updated 2026-04-15 — do not edit manually
+// Auto-updated 2026-04-16 — do not edit manually
 
 window.QUIZ_DATA = {
-  date: '2026-04-15',
+  date: '2026-04-16',
   category: 'Ancient History',
-  question: 'Which ancient Greek philosopher proposed the concept of "apeiron" — an indefinite, boundless substance — as the fundamental principle underlying all existence?',
-  answer: 'Anaximander of Miletus.',
-  funFact: 'Anaximander (c. 610–546 BC) was a student of Thales and one of the earliest pre-Socratic thinkers to move beyond identifying a familiar substance like water or fire as the origin of all things. His concept of the apeiron ("the boundless") was revolutionary because it was abstract and unobservable — a bold leap toward metaphysical thinking. He also reportedly produced one of the earliest known maps of the world and suggested that humans may have evolved from fish-like creatures.'
+  question: 'Which ancient Egyptian pharaoh commissioned the construction of the first known step pyramid, and who was the architect credited with designing it?',
+  answer: 'Pharaoh Djoser, with the architect Imhotep.',
+  funFact: 'Built around 2650 BCE at Saqqara, the Step Pyramid of Djoser was a revolutionary departure from the flat-topped mastaba tombs that preceded it, rising in six stepped tiers to about 62 metres. Imhotep was so revered for his genius that he was later deified by the Egyptians and associated with medicine and healing — an extraordinarily rare honour for a non-royal figure. The Greeks later identified him with their own god of medicine, Asclepius.'
 };

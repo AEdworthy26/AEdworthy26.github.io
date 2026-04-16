@@ -1,25 +1,49 @@
 // uk-politics-news-data.js
-// Auto-updated 2026-04-15 — do not edit manually
+// Auto-updated 2026-04-16 — do not edit manually
 
 var UK_POLITICS_NEWS = {
-  date: "2026-04-15",
+  date: "2026-04-16",
   main: {
-    title: "UK Military Chiefs Ordered to Find £3.5bn in Savings Even as Starmer Vows to Ready Armed Forces for War",
+    title: "Starmer Faces Calls to Resign Over Mandelson Security Vetting Scandal",
     category: "Politics",
     content: [
-      "Britain's military chiefs have been asked to identify £3.5 billion in 'efficiencies' and savings this year, even as Prime Minister Sir Keir Starmer publicly insists he is preparing the country's armed forces for the possibility of war. The revelation, which has emerged from sources close to the Ministry of Defence, has intensified a growing storm of criticism directed at the government's approach to defence spending and strategic readiness. Critics argue that simultaneously demanding deep cuts and proclaiming a war footing is a fundamental contradiction that risks leaving the UK dangerously exposed.",
-      "The controversy has drawn sharp interventions from senior figures across the political and defence establishment. Lord George Robertson, a former NATO Secretary-General and Labour defence secretary, has accused 'non-military experts in the Treasury' of committing 'vandalism' against Britain's national security, warning that the country's defences are 'in peril'. His remarks, delivered in a major speech, reflect a broader unease among defence experts and former officials about the pace and seriousness of the government's commitment to rearmament at a time of acute global instability.",
-      "Adding further pressure on Downing Street, Fiona Hill, a co-author of Britain's strategic defence review and a former chief White House adviser on Russia, has described the lack of urgency in putting the UK on a war footing as 'bizarre'. Hill's intervention is particularly significant given her direct role in shaping the government's own defence blueprint, lending her criticism an authority that is difficult for ministers to dismiss. Her comments echo a chorus of concern from across the security community that warm words from the Prime Minister are not being matched by concrete action or adequate resource allocation.",
-      "The political fallout comes at an already difficult moment for the Starmer government, which is grappling with a broader economic squeeze. The International Monetary Fund has downgraded Britain's growth forecast more sharply than any other major economy, citing the impact of the Iran war and wider global uncertainty. Chancellor Rachel Reeves has publicly expressed frustration and anger at the economic disruption caused by US actions in the Middle East, but the domestic picture — stagnant growth, constrained public finances, and pressure on every departmental budget — makes finding new defence money deeply politically fraught.",
-      "The tension at the heart of government policy is now fully in the open: ministers want to be seen as serious about defence and national security, yet the Treasury's grip on spending means the armed forces are being asked to do more with less. Opposition parties and backbench Labour MPs alike are beginning to question whether the government has a coherent strategy, or whether it is simply managing competing pressures without a clear sense of direction. With the strategic defence review having raised expectations of a fundamental reset in Britain's military posture, the gap between rhetoric and reality is fast becoming one of the defining political vulnerabilities of the Starmer administration."
+      "Prime Minister Keir Starmer is facing mounting pressure to resign after it emerged that Peter Mandelson failed his security vetting for the role of UK Ambassador to the United States, only for the decision to be overruled by the Foreign Office. Opposition party leaders have accused Starmer of misleading parliament over the affair, with Conservative leader Kemi Badenoch leading the charge in the Commons, claiming the Prime Minister had not been straight with MPs about what he knew and when. The revelation has sent shockwaves through Westminster at a particularly sensitive moment for the government, coming just weeks after Mandelson was ultimately sacked from the Washington post over his connections to the late Jeffrey Epstein.",
+      "The security vetting process is designed to provide an independent assessment of whether individuals pose a risk before they are appointed to sensitive diplomatic roles. In Mandelson's case, vetters are understood to have recommended against his appointment, yet that recommendation was set aside by senior figures within the Foreign Office, who cleared the way for the high-profile Labour peer to take up the ambassadorship. It remains unclear precisely who within the Foreign Office authorised the overrule, and that question is now at the heart of a rapidly expanding parliamentary inquiry, with opposition parties demanding full transparency over the decision-making chain.",
+      "Adding further complexity to the crisis, senior government officials are reported to be actively debating whether to withhold from parliament some of the sensitive documents relating to the vetting process. Whitehall sources describe the internal discussions as deeply unusual, with opinions split on the 'unprecedented' nature of releasing the files despite parliament's demand for 'all papers' connected to Mandelson's appointment. Critics argue that any attempt to hold back documents would represent a serious affront to parliamentary sovereignty and could deepen suspicions of a deliberate cover-up at the heart of government.",
+      "Badenoch used Prime Minister's Questions to press Starmer directly on the matter, accusing him of misleading MPs — a charge that, if substantiated, would carry significant constitutional weight given that deliberately misleading the Commons is considered a resignation matter under the Ministerial Code. The SNP and Liberal Democrats have also joined in condemning the government's handling of the affair, with several opposition figures calling for an independent inquiry. Starmer, for his part, has insisted he acted in good faith and has sought to frame the debate around the processes of government rather than personal culpability, but his response has failed to satisfy critics across the political spectrum.",
+      "The scandal poses one of the most serious political tests Starmer has faced since entering Downing Street, raising fundamental questions about transparency, the integrity of the vetting system, and the government's willingness to be accountable to parliament. With local elections looming on 7 May, the timing could hardly be worse for Labour, which is already navigating a difficult period in the polls. Senior Labour figures are privately anxious that the story has legs, particularly given the Epstein dimension of Mandelson's eventual dismissal, and that opposition parties will use every available platform — including the election campaign trail — to keep the pressure firmly on the Prime Minister."
     ],
-    image: "https://e3.365dm.com/26/04/1920x1080/skynews-john-healey-defence_7220126.jpg?20260414180418",
-    source: "Sky News",
-    sourceUrl: "https://news.sky.com/story/uk-military-chiefs-asked-to-find-16335bn-in-savings-and-get-ready-for-war-13531796"
+    image: "https://i.guim.co.uk/img/media/cc9eaa934e9f10620c4208b3688db8abe7d52d57/606_229_4654_3723/master/4654.jpg?width=1200&quality=85&auto=format&fit=max&s=0e45425847eba07c71ac7dd7ff759917",
+    source: "The Guardian",
+    sourceUrl: "https://www.theguardian.com/politics/live/2026/apr/16/iran-economy-food-fuel-local-elections-covid-latest-news-updates"
   },
   secondary: [
-    { id: "uk1", title: "Asylum Hotels Fall Below 190 as Government Moves Seekers to Army Barracks", summary: "The Home Office has closed eleven asylum hotels and relocated hundreds of asylum seekers to military barracks, saving an estimated £65 million a year, though refugee charities have criticised the move as unsuitable and potentially more costly.", image: "https://i.guim.co.uk/img/media/630e27b28e54ba0d50d0963741250ff808568a50/840_0_4560_3648/master/4560.jpg?width=1200&quality=85&auto=format&fit=max&s=38bd06aeb66e022b570bd37479b0c1ef", source: "The Independent", url: "https://www.independent.co.uk/news/uk/politics/asylum-hotels-close-migrants-alex-norris-b2957681.html", category: "Politics" },
-    { id: "uk2", title: "MPs Demand Greater Scrutiny of Palantir's NHS Data Use", summary: "Palantir has been forced to defend its record before MPs after NHS guidance requiring all hospitals to adopt its software by this month sparked significant concern over data privacy and the lack of parliamentary oversight.", image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/925f/live/dffbd390-3745-11f1-b669-c509fb2e8e1e.png", source: "BBC News", url: "https://www.bbc.com/news/articles/c393w38lv3mo?at_medium=RSS&at_campaign=rss", category: "Politics" },
-    { id: "uk3", title: "Wes Streeting Accuses NHS of 'Appalling Culture of Medical Misogyny'", summary: "Health Secretary Wes Streeting has launched a renewed Women's Health Strategy, declaring that the NHS has a systemic problem with 'basic, everyday sexism' and vowing to overhaul how the health service treats women and girls.", image: "https://images.pexels.com/photos/5038984/pexels-photo-5038984.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", source: "Sky News", url: "https://news.sky.com/story/nhs-failing-women-and-girls-and-has-appalling-culture-of-medical-misogyny-health-secretary-says-13531932", category: "Politics" }
+    {
+      id: "uk1",
+      title: "SNP Pledges to Cap Bread and Milk Prices Ahead of Holyrood Election",
+      summary: "John Swinney unveiled the SNP's Holyrood election manifesto, making price caps on essential supermarket goods such as bread and milk the centrepiece pledge, describing the cost of living as 'the defining issue' for Scottish voters ahead of the 7 May vote.",
+      image: "https://i.guim.co.uk/img/media/aebccb014a42d536f5a1c4a7f4cc8a89a5110677/673_139_2327_1861/master/2327.jpg?width=1200&quality=85&auto=format&fit=max&s=f0e890487481b4dc5c4e929186703fcd",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/politics/2026/apr/16/snp-pledges-cap-prices-bread-milk-scotland-parliamentary-election",
+      category: "Politics"
+    },
+    {
+      id: "uk2",
+      title: "Home Office Investigates After BBC Uncovers Migrants Making False Domestic Abuse Claims",
+      summary: "The Home Office has launched an investigation after a BBC undercover inquiry revealed that migrants have been exploiting rules designed to protect domestic abuse victims by making false claims in order to secure the right to remain in the UK.",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/9f14/live/8fc86310-3999-11f1-879d-1b2f5c3919b8.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.com/news/articles/c0q92lg9ln5o?at_medium=RSS&at_campaign=rss",
+      category: "Politics"
+    },
+    {
+      id: "uk3",
+      title: "Minister Considers Banning Over-the-Counter Flea Treatments for Pets",
+      summary: "Government ministers are considering restricting the sale of spot-on flea treatments and collars for pets to prescription only, citing environmental and public health concerns over the widespread use of the products.",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/51f2/live/ac3777c0-3971-11f1-b60c-af6bba5f6d25.png",
+      source: "BBC News",
+      url: "https://www.bbc.com/news/articles/clyxpnz45yzo?at_medium=RSS&at_campaign=rss",
+      category: "Politics"
+    }
   ]
 };
