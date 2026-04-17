@@ -223,23 +223,24 @@
 
     // Secondary grid
     var secondary = data.secondary || [];
+    // Store items in a lookup so onclick can reference by index without inline JSON
+    window._newsItems = secondary;
     var gridHTML = '';
 
     if (secondary.length > 0) {
       var cards = secondary.map(function (item, i) {
         var hasBody = Array.isArray(item.body) && item.body.length > 0;
-        var safeItem = JSON.stringify(item).replace(/</g,'\\u003c').replace(/>/g,'\\u003e').replace(/'/g,"\\'");
         var thumbContent = imgOrPlaceholder(item.image, item.title, 'card-thumb', cfg.icon);
         var thumbHTML = item.url
           ? '<a href="' + esc(item.url) + '" target="_blank" rel="noopener" tabindex="-1" style="display:block;overflow:hidden;">' + thumbContent + '</a>'
           : '<div>' + thumbContent + '</div>';
         var titleHTML = hasBody
-          ? '<h3 class="card-title" style="cursor:pointer;" onclick="window._openStoryModal(' + safeItem + ')">' + esc(item.title) + '</h3>'
+          ? '<h3 class="card-title" style="cursor:pointer;" onclick="window._openStoryModal(window._newsItems[' + i + '])">' + esc(item.title) + '</h3>'
           : (item.url
             ? '<a href="' + esc(item.url) + '" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;" class="card-title-link"><h3 class="card-title">' + esc(item.title) + '</h3></a>'
             : '<h3 class="card-title">' + esc(item.title) + '</h3>');
         var footerAction = hasBody
-          ? '<button class="card-summary-btn" onclick="window._openStoryModal(' + safeItem + ')">Read summary &#9658;</button>'
+          ? '<button class="card-summary-btn" onclick="window._openStoryModal(window._newsItems[' + i + '])">Read summary &#9658;</button>'
           : (item.url ? '<a class="card-read-more" href="' + esc(item.url) + '" target="_blank" rel="noopener">Read more &rarr;</a>' : '');
         return '<article class="news-card" style="animation-delay:' + (i * 120) + 'ms">'
           + '<div class="card-thumb">' + thumbHTML + '</div>'
