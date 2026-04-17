@@ -1,10 +1,10 @@
 // quiz-data.js
-// Auto-updated 2026-04-16 — do not edit manually
+// Auto-updated 2026-04-17 — do not edit manually
 
 window.QUIZ_DATA = {
-  date: '2026-04-16',
-  category: 'Ancient History',
-  question: 'Which ancient Egyptian pharaoh commissioned the construction of the first known step pyramid, and who was the architect credited with designing it?',
-  answer: 'Pharaoh Djoser, with the architect Imhotep.',
-  funFact: 'Built around 2650 BCE at Saqqara, the Step Pyramid of Djoser was a revolutionary departure from the flat-topped mastaba tombs that preceded it, rising in six stepped tiers to about 62 metres. Imhotep was so revered for his genius that he was later deified by the Egyptians and associated with medicine and healing — an extraordinarily rare honour for a non-royal figure. The Greeks later identified him with their own god of medicine, Asclepius.'
+  date: '2026-04-17',
+  category: 'Food & Drink',
+  question: 'Which chemical compound gives chilli peppers their heat, and on what scale is that heat measured?',
+  answer: 'Capsaicin; measured on the Scoville scale.',
+  funFact: 'Capsaicin triggers pain receptors in the mouth that normally respond to heat, which is why spicy food literally feels hot. The Scoville scale, invented by pharmacist Wilbur Scoville in 1912, originally relied on human taste testers diluting pepper extract until no heat was detectable — a method now replaced by precise chemical analysis called high-performance liquid chromatography.'
 };

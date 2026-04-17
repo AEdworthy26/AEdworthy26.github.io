@@ -1,18 +1,18 @@
 // films-data.js
-// Auto-updated 2026-04-16 — do not edit manually
+// Auto-updated 2026-04-17 — do not edit manually
 
 var FILMS_DATA = {
-  date: "2026-04-16",
+  date: "2026-04-17",
   film: {
-    title: "Singin' in the Rain",
-    director: "Stanley Donen & Gene Kelly",
-    year: 1952,
-    genres: ["Musical", "Comedy", "Romance"],
-    desc: "Set against the chaotic transition from silent films to talkies in late-1920s Hollywood, this irresistible musical comedy follows a swaggering movie star forced to reinvent himself when his squeaky-voiced leading lady threatens to sink their careers. Gene Kelly's iconic title number — dancing and splashing through a downpour in pure, infectious joy — remains one of cinema's most euphoric images. Donald O'Connor's rubber-limbed 'Make 'Em Laugh' sequence is a masterclass in physical comedy that still leaves audiences breathless. Witty, warm, and endlessly inventive, it manages to be both a loving satire of Hollywood and a genuine showcase of everything Hollywood does best.",
-    cast: ["Gene Kelly", "Debbie Reynolds", "Donald O'Connor"],
-    rating: 100,
+    title: "Spirited Away",
+    director: "Hayao Miyazaki",
+    year: 2001,
+    genres: ["Animation", "Fantasy", "Adventure"],
+    desc: "When ten-year-old Chihiro stumbles into a spirit world run by the imperious witch Yubaba, she must work in a magical bathhouse to rescue her parents and find her way home — a premise that unfolds with the logic of a dream and the emotional weight of a coming-of-age novel. Miyazaki fills every frame with creatures and details so inventive that no single viewing can absorb them all, from the gentle soot sprites hauling coal to the haunting, masked No-Face drifting through the corridors. Beneath the dazzling surface is a story about work, identity, and the courage required to hold onto who you are when the world keeps trying to make you forget your own name. The film won the Academy Award for Best Animated Feature and remains the highest-grossing film in Japanese history, beloved by children and adults in equal measure. It is one of those rare works that genuinely expands your sense of what a film — or any story — is capable of doing.",
+    cast: ["Daveigh Chase", "Suzanne Pleshette", "Miyu Irino"],
+    rating: 97,
     ratingSource: "Rotten Tomatoes",
-    ratingExtra: "2 Academy Award Nominations",
-    posterUrl: null
+    ratingExtra: "1 Academy Award (Best Animated Feature)",
+    posterUrl: "https://upload.wikimedia.org/wikipedia/en/d/db/Spirited_Away_Japanese_poster.png"
   }
 };

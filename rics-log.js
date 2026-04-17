@@ -3,6 +3,45 @@
 
 var RICS_LOG = [
   {
+    "date": "2026-04-17",
+    "topic": "Section 73 Applications, DOVs and Non-Material Amendments: Post-Consent Plan Management",
+    "module": "Planning and Development Management",
+    "level": 3,
+    "apc_competency": "Planning and Development Management (Level 3)",
+    "focus": "This lesson covers the three principal mechanisms for varying or amending a planning permission after consent is granted \u2014 Section 73 applications, Deed of Variation (DOV) to S106 agreements, and Non-Material Amendments (NMAs) under S96A \u2014 examining when each is appropriate, their legal effects, risks and strategic use in a development programme. For a candidate managing complex residential-led consents at Latimer, understanding how to flex a scheme post-consent without triggering a full re-application is a core Level 3 competency and a common area of examiner scrutiny.",
+    "image": "https://images.unsplash.com/photo-1680051314819-f4ca2668428d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTZWN0aW9uJTIwNzMlMjBBcHBsaWNhdGlvbnMlMkMlMjBET1ZzJTIwYW5kJTIwTm9uLU1hdGVyaWFsJTIwQW1lbmRtZW50cyUzQSUyMFBvc3QtQ29uc2VudCUyMFBsYW4lMjBNYW5hZ2VtZW50JTIwYXJjaGl0ZWN0dXJlfGVufDB8MHx8fDE3NzY0MDI1NDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "content": [],
+    "summary": [
+      "A Section 73 application creates a new freestanding planning permission \u2014 it does NOT amend the original \u2014 and can only vary planning conditions, not the operative description of development. Both permissions remain extant post-grant.",
+      "An NMA under S96A amends the original permission directly and is appropriate only for genuinely non-material changes. There is no right of appeal against NMA refusal, making S73 the safer route where there is any doubt about materiality.",
+      "A Deed of Variation is required to amend any S106 planning obligation and must be executed by all original parties to the agreement \u2014 including landowners and mortgagees \u2014 which can be a significant practical constraint on programme.",
+      "The three mechanisms are frequently used in combination on large residential schemes and must be carefully sequenced, with parallel processes (S73 + DOV) coordinated between the planning consultant and solicitor to minimise critical path delay.",
+      "Commencement acts must be tied to the correct permission \u2014 where a S73 is the operative consent for delivery, material operations must be carried out pursuant to that new permission, with contemporaneous evidence retained to protect against challenge."
+    ],
+    "qa": [
+      {
+        "q": "You have planning consent for 200 dwellings. The design team wants to add a further 8 units by infilling a courtyard. Can you use a Section 73 application to achieve this, and what is the critical legal issue?",
+        "a": "The answer turns on whether the description of development is expressed as 'up to 200 dwellings' or '200 dwellings'. If the latter, 208 dwellings would change the operative part of the permission \u2014 the description of development \u2014 which a S73 cannot do (confirmed in Finney v Welsh Ministers [2019] and R (Wet Finishing Works) v Taunton Deane). If the former ('up to 200'), 208 exceeds the 'up to' figure and again changes the description. In either case a S73 is not available; a new full planning application is required. If the description were 'up to 250 dwellings', adding 8 units to reach 208 would not breach the description, and a S73 varying the approved plans condition could be appropriate \u2014 subject to the LPA considering the changes on their planning merits."
+      },
+      {
+        "q": "What is the legal effect of a successful Section 73 application, and why does this matter for a developer managing an option agreement with a contractual longstop date?",
+        "a": "A successful S73 creates an entirely new, freestanding planning permission \u2014 it does not amend the original. Both permissions remain extant. For an option agreement with a longstop date, the key risk is that if the S73 is the consent the developer intends to build out, the longstop date may be defined by reference to the original permission number, not the S73. If the contractual trigger requires a 'satisfactory planning permission' and the S73 is a new permission with revised conditions, legal advice is needed on whether it qualifies under the contract. Additionally, the S73 carries its own 3-year implementation period \u2014 commencement acts tied to the original permission do not automatically implement the S73, so a separate material operation pursuant to the new permission may be needed before expiry."
+      },
+      {
+        "q": "Latimer's S106 requires 35% affordable housing with a specific tenure split. Following a Homes England grant review, you need to convert shared ownership units to affordable rent. The landowner who originally executed the S106 has now been paid out and is uncontactable. How do you proceed?",
+        "a": "A Deed of Variation requires execution by all original parties to the S106, including the original landowner. If the landowner is uncontactable or refuses to execute, the DOV route is blocked. Options are: (1) trace the landowner through Land Registry and solicitor correspondence \u2014 if they sold the freehold their successor in title may have taken on the S106 obligations depending on how the agreement was drafted (check whether obligations run with the land or are personal); (2) if the obligation runs with the land and the current owner (Latimer post-acquisition) is the relevant party, the landowner's consent may not strictly be needed \u2014 legal advice required; (3) after 5 years from the date of the S106, an application can be made under s106A TCPA 1990 to modify or discharge the obligation, but this is a lengthy and uncertain process; (4) in parallel, a S73 application varying any conditions touching on affordable housing provision may assist in reconfiguring the planning position even if the S106 cannot be varied."
+      },
+      {
+        "q": "An NMA application is refused by the LPA. What options does Alfie have, and what is the critical procedural difference from a refused S73?",
+        "a": "There is no statutory right of appeal against refusal of an NMA under s96A \u2014 this is a critical difference from a S73 refusal, which is treated as a full planning application for appeal purposes and carries a right of appeal to the Planning Inspectorate under s78 TCPA 1990. If an NMA is refused, the applicant's options are: (1) resubmit the NMA addressing the LPA's reasons for refusal if the change can be further reduced in scope; (2) escalate to a S73 application, which preserves appeal rights if again refused; (3) submit a fresh full planning application if the change is sufficiently material. In practice, where there is any doubt about materiality of a proposed change, it is prudent to pursue S73 from the outset precisely because it preserves the appeal safety net."
+      },
+      {
+        "q": "On a large phased residential consent, what programme risks arise when pursuing a S73 to vary the approved plans condition, and how would you mitigate them?",
+        "a": "Key programme risks on a phased S73 include: (1) Statutory consultation period (21 days minimum) re-engaging consultees \u2014 highways, ecology, heritage \u2014 who may raise new objections not raised on the original application, potentially triggering additional information requests or a committee report rather than delegated determination; (2) The S73 may generate new or revised conditions that are more onerous than anticipated, requiring further negotiation or a further S73 to discharge; (3) On a phased consent with reserved matters approvals already granted, the S73 may need to be cross-referenced against existing reserved matters, potentially requiring parallel amendments to those consents; (4) Where the S106 is tied to conditions by reference to specific drawing numbers, the DOV may need to be updated in tandem, creating a parallel legal process. Mitigation: (a) pre-application meeting with the LPA planning officer and legal team to agree scope and anticipated conditions before submission; (b) programme the S73 determination period (8 weeks for minor/13 weeks for major) onto the critical path; (c) brief the design team and solicitor simultaneously to run DOV preparation in parallel; (d) flag on the project risk register with programme float identified."
+      }
+    ]
+  },
+  {
     "date": "2026-04-16",
     "topic": "Mandatory Biodiversity Net Gain: Developer Obligations, Metric Calculation & Strategic BNG in Residential Schemes",
     "module": "Sustainability",

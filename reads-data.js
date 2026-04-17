@@ -1,19 +1,19 @@
 // reads-data.js
-// Auto-updated 2026-04-16 — do not edit manually
+// Auto-updated 2026-04-17 — do not edit manually
 
 var READS_DATA = {
-  date: "2026-04-16",
+  date: "2026-04-17",
   book: {
-    title: "The Lonely City: Adventures in the Art of Being Alone",
-    author: "Olivia Laing",
-    year: 2016,
-    genres: ["Art", "Memoir", "Cultural Criticism"],
-    desc: "When Olivia Laing found herself profoundly alone in New York City in her late thirties, she turned her isolation into a brilliant investigation of loneliness itself, weaving her own experience through the lives of artists — Edward Hopper, Andy Warhol, Henry Darger, David Wojnarowicz — who made solitude the very subject of their work. The book is part memoir, part art criticism, part urban portrait, and entirely its own strange and luminous thing. Laing writes with a precision and emotional intelligence that transforms loneliness from a private shame into a shared condition, something that pulses through city streets and canvases alike. It is one of those rare books that makes you feel less alone by confronting aloneness so honestly and with such formal beauty.",
-    whyRead: "In a moment when connection feels both easier and more elusive than ever, Laing's meditation hits with unusual force — this is the book to reach for when you want writing that is intellectually alive and emotionally true at the same time.",
-    rating: 3.9,
+    title: "The Overstory",
+    author: "Richard Powers",
+    year: 2018,
+    genres: ["Literary Fiction", "Nature", "Environmental"],
+    desc: "Richard Powers weaves together nine interconnected lives — a chestnut farmer, an Air Force pilot, a Vietnamese-American student, a game theorist — each drawn into the fate of trees and the ancient, unhurried world they inhabit. The novel unfolds like the rings of a trunk, patient and accumulative, until it becomes something overwhelming: a meditation on time, interdependence, and what it means to act when the stakes are civilisational. Powers writes with the range of a scientist and the soul of a poet, and the result is fiction that genuinely changes how you see a forest, a street lined with elms, even a houseplant on a windowsill. It won the Pulitzer Prize for Fiction in 2019, and the praise was not hype — this is one of the defining American novels of the century so far.",
+    whyRead: "With ecological anxiety running deeper than ever in 2026, this is the rare novel that meets the moment without preaching — it persuades through beauty and grief rather than argument, and it lingers for months after the final page.",
+    rating: 4.2,
     ratingSource: "Goodreads",
-    ratingCount: "50,000+",
-    coverUrl: "https://covers.openlibrary.org/b/id/12672997-L.jpg",
-    amazonUrl: "https://www.amazon.co.uk/dp/1504738896"
+    ratingCount: "350,000+",
+    coverUrl: "https://covers.openlibrary.org/b/id/8758252-L.jpg",
+    amazonUrl: "https://www.amazon.co.uk/dp/1473554489"
   }
 };
