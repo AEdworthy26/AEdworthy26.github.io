@@ -1173,13 +1173,14 @@ var READS_DATA = {{
 
 def gen_films():
     log("\n── Film of the Day")
-    recent_films = recent_values('films-data.js', 'title', days=30)
-    avoid_list = ['No Country for Old Men', 'Lawrence of Arabia', 'The Battle of Algiers'] + recent_films
+    recent_films = recent_values('films-data.js', 'title', days=730)
+    avoid_list = ['No Country for Old Men', 'Lawrence of Arabia', 'The Battle of Algiers', 'Spirited Away'] + recent_films
     avoid = ', '.join(avoid_list)
 
     prompt = f"""Pick a single film to recommend today ({TODAY}) on a personal reading website.
-The user watches very broadly — do not default to historical epics or political dramas.
-Range freely across: comedy, romance, sci-fi, horror, animation, documentary, crime, fantasy, westerns, musicals, sports films, family films, world cinema, and more.
+IMPORTANT: Be genuinely unpredictable — do not default to safe, famous, or frequently cited titles. Surprise the reader.
+Range freely and equally across: comedy, romance, sci-fi, horror, animation, documentary, crime, fantasy, westerns, musicals, sports films, family films, world cinema, thriller, drama, and more.
+Do NOT default to animated Japanese films, Pixar, or widely-known studio classics unless you have not recommended them in a very long time.
 The film must be genuinely well-regarded — critically acclaimed or a widely loved classic. Avoid: {avoid}.
 Write a rich 4-5 sentence description.
 
