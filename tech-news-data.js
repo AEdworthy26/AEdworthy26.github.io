@@ -1,60 +1,60 @@
 // tech-news-data.js
-// Auto-updated 2026-04-17 — do not edit manually
+// Auto-updated 2026-04-18 — do not edit manually
 
 var TECH_NEWS = {
-  date: "2026-04-17",
+  date: "2026-04-18",
   main: {
-    title: "Europe's Mars Rover Finally Has a Ride — Aboard SpaceX's Falcon Heavy",
-    category: "Space",
+    title: "Claude Mythos: Anthropic's Powerful AI Raises Alarms as UK Banks Prepare for Access",
+    category: "Artificial Intelligence",
     content: [
-      "After years of delays, broken promises, and diplomatic turbulence, Europe's first Mars rover mission has finally secured a launch vehicle: SpaceX's Falcon Heavy. The European Space Agency's Rosalind Franklin rover — named after the pioneering British chemist whose X-ray work was crucial to understanding DNA — has had one of the most tortured paths to the launchpad in the history of planetary exploration. Its long-awaited booking on a Falcon Heavy rocket marks a genuine turning point for a mission that once seemed destined never to leave Earth.",
-      "The rover was originally developed as part of a joint ESA-Roscosmos program called ExoMars, with Russia providing the rocket and the landing platform. That arrangement collapsed in 2022 following Russia's invasion of Ukraine, when ESA severed ties with Roscosmos and left the mission without a ride to Mars on extremely short notice. The fallout was a painful reminder of how deeply intertwined the international space community had become — and how quickly geopolitical events could unravel decades of collaborative engineering work.",
-      "Since losing its Russian launch partner, the Rosalind Franklin rover has cycled through a succession of potential alternatives, each bringing fresh hope followed by fresh complications. ESA explored options with multiple commercial and governmental launch providers, and the mission's future remained genuinely uncertain for an extended period. That it has now landed on Falcon Heavy — the same rocket that has become a workhorse for ambitious deep-space payloads — is a testament both to SpaceX's dominance in the heavy-lift market and to ESA's determination to see the mission through.",
-      "Rosalind Franklin is designed to drill up to two meters below the Martian surface, deeper than any previous Mars mission, in search of signs of past or present life. Scientists believe that subsurface layers, shielded from the harsh radiation that bombards Mars's surface, represent the most promising environment in which biological signatures might have been preserved. The rover's Pasteur science payload includes a suite of instruments capable of analyzing soil samples with extraordinary sensitivity, making it one of the most scientifically ambitious Mars missions ever attempted.",
-      "With a confirmed launch vehicle now in place, ESA and its industrial partners must finalize integration plans and work toward a launch window that aligns with the roughly 26-month cycle when Earth and Mars are favorably positioned. The mission's revival will be closely watched across the global space community as a sign that European planetary science can navigate the turbulent new landscape of space geopolitics. For the scientists who have devoted careers to this rover, the news that Rosalind Franklin will finally fly — on whatever rocket it takes — will feel like a long-overdue vindication."
+      "Anthropic's latest AI model, Claude Mythos, is set to expand beyond its initial limited rollout to US firms, with British banks expected to gain access within days. The model has been withheld from general public release due to concerns about its capabilities, particularly its reported ability to outperform humans at certain hacking and cybersecurity tasks. Finance leaders on both sides of the Atlantic have begun sounding the alarm over what they describe as an unprecedented and potentially destabilising technology entering sensitive financial infrastructure.",
+      "Senior figures in the financial sector have warned that deploying a tool of Mythos's calibre within banking systems carries risks that have not yet been fully understood or stress-tested. Unlike previous generations of AI models, Mythos reportedly demonstrates autonomous problem-solving capabilities in cybersecurity contexts that go well beyond what regulators had previously anticipated. The speed of its rollout to institutions handling trillions in assets has left some compliance and risk officers scrambling to assess its implications.",
+      "The White House held what officials described as a 'productive' meeting with Anthropic amid growing concern over the model's strategic significance. The discussions are widely seen as an acknowledgment that Mythos has crossed a threshold where even government bodies feel they cannot afford to ignore or delay engagement with the technology. Analysts suggest the meeting signals that the US government views Anthropic's cutting-edge AI as critical national infrastructure, even as it grapples with how to regulate it.",
+      "At its core, Mythos represents a new frontier in AI capability benchmarking. The model's ability to independently identify and exploit software vulnerabilities has drawn particular scrutiny, with cybersecurity experts warning that the same features that make it useful for defensive operations could be weaponised if access were to fall into the wrong hands. Anthropic has insisted that access controls and monitoring are embedded within the deployment architecture, but critics argue that no safeguard system has yet been tested at the scale now being proposed.",
+      "The broader debate around Mythos is shaping up to be one of the defining AI policy moments of 2026, forcing regulators, financial institutions, and governments to confront questions about how powerful AI tools should be governed when they straddle the line between transformative utility and existential risk. The UK's decision to allow its banks to proceed with access, even ahead of a formal regulatory framework being in place, reflects the intense competitive pressure institutions feel to adopt frontier AI before rivals do. Whether that urgency proves wise or reckless may only become clear once Mythos is operating deep within the systems that underpin the global economy."
     ],
-    image: "https://images.unsplash.com/photo-1608817576203-3c27ed168bd2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxFdXJvcGV8ZW58MHwwfHx8MTc3NjQwMjI1Mnww&ixlib=rb-4.1.0&q=80&w=1080",
-    source: "Ars Technica",
-    sourceUrl: "https://arstechnica.com/space/2026/04/after-a-saga-of-broken-promises-a-european-rover-finally-has-a-ride-to-mars/"
+    image: "https://images.pexels.com/photos/4847054/pexels-photo-4847054.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    source: "The Guardian",
+    sourceUrl: "https://www.theguardian.com/technology/2026/apr/17/finance-leaders-warn-over-claude-mythos-as-uk-banks-prepare-to-use-powerful-anthropic-ai-tool"
   },
   secondary: [
     {
       id: "tc1",
-      title: "OpenAI Launches GPT-Rosalind: A Biology-Tuned Language Model",
-      summary: "OpenAI has released GPT-Rosalind, a large language model fine-tuned specifically for biology research workflows, currently available in closed access.",
+      title: "Tinder and Zoom Turn to Eye-Scans to Prove Users Are Human",
+      summary: "Tinder and Zoom are integrating iris-scanning technology to verify users' humanity and combat the growing wave of AI-generated fake accounts and scams.",
       body: [
-        "OpenAI has unveiled GPT-Rosalind, an LLM trained on biology-specific workflows and scientific literature, marking the company's latest push into specialized scientific AI. The model is currently being offered in closed access, meaning researchers must apply or be invited to use it, as OpenAI evaluates its performance and safety in real-world research settings.",
-        "The release signals a broader industry trend of moving beyond general-purpose AI toward domain-specific models tailored for high-stakes fields like medicine, genomics, and drug discovery. A biology-tuned model capable of reasoning about experimental design, literature synthesis, and molecular biology workflows could meaningfully accelerate research timelines if it proves reliable."
+        "Both Tinder and Zoom have announced partnerships with iris-scanning identity verification services, requiring users to confirm their humanity through biometric eye scans. The move comes as AI-generated personas and deepfake profiles have become increasingly difficult to detect using conventional methods, eroding trust on platforms where authentic human interaction is central to the product.",
+        "The technology, which identifies unique patterns in a user's iris, is positioned as a scalable solution to a problem that text-based and image-based verification tools have failed to solve. Privacy advocates have already raised concerns about the collection and storage of biometric data, warning that the cure may introduce new risks even as it addresses existing ones."
       ],
-      image: "https://cdn.arstechnica.net/wp-content/uploads/2026/04/GettyImages-1421511892-1152x648.jpg",
-      source: "Ars Technica",
-      url: "https://arstechnica.com/science/2026/04/openai-starts-offering-a-biology-tuned-llm/",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/5b5d/live/46ad8ac0-3a02-11f1-a8a6-9b40bfbb07ca.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.com/news/articles/cp9vppem4evo?at_medium=RSS&at_campaign=rss",
       category: "Artificial Intelligence"
     },
     {
       id: "tc2",
-      title: "Snap Cuts 16% of Staff as Company Leans Harder Into AI",
-      summary: "Snapchat's parent company Snap is laying off approximately 1,000 full-time employees — about 16% of its workforce — as it restructures around artificial intelligence.",
+      title: "Cerebras Files to Go Public as AI Chip IPO Wave Builds Momentum",
+      summary: "Silicon Valley AI chip maker Cerebras has filed a prospectus to go public, joining a growing wave of major tech listings that includes SpaceX, Anthropic, and OpenAI.",
       body: [
-        "Snap announced sweeping layoffs affecting roughly one in six of its full-time employees, framing the cuts as part of a strategic shift toward greater reliance on AI to handle functions previously performed by human teams. The move follows a period of sluggish revenue growth and intensifying competition from TikTok and Instagram for younger audiences.",
-        "The layoffs underscore a pattern emerging across the tech industry, where AI adoption is being used to justify significant workforce reductions rather than simply augmenting existing teams. For Snap, which built its identity around creative, human-driven features, the pivot raises questions about what the platform will look and feel like as automation takes on a larger role."
+        "Cerebras, known for developing some of the world's largest and fastest AI-optimised chips, has formally filed to go public in what is shaping up to be one of the most consequential IPO seasons in years. The filing arrives as investor appetite for AI infrastructure companies remains extraordinarily high, with the market eager to back the hardware layer powering the AI boom.",
+        "The timing aligns with anticipated listings from OpenAI, Anthropic, and SpaceX, creating what analysts are calling a once-in-a-generation cluster of transformative tech offerings. For Cerebras, a successful IPO would validate years of contrarian chip design philosophy and provide the capital needed to compete with Nvidia at scale."
       ],
-      image: "https://static01.nyt.com/images/2026/04/15/multimedia/15biz-snap-cqhm/15biz-snap-cqhm-mediumSquareAt3X.jpg",
+      image: "https://static01.nyt.com/images/2026/04/17/multimedia/17BIZ-CEREBRAS-S-zbmf/17BIZ-CEREBRAS-S-zbmf-mediumSquareAt3X.jpg",
       source: "The New York Times",
-      url: "https://www.nytimes.com/2026/04/15/business/snap-layoffs-snapchat.html",
-      category: "Tech Industry"
+      url: "https://www.nytimes.com/2026/04/17/technology/cerebras-public-offering-ai.html",
+      category: "Technology"
     },
     {
       id: "tc3",
-      title: "Google to Penalize Websites That Abuse the Browser Back Button",
-      summary: "Google has announced it will begin downranking websites that manipulate back button navigation to trap users, with the policy taking effect in June.",
+      title: "OpenAI Product Chief Kevin Weil Departs as Company Restructures AI Science Division",
+      summary: "Kevin Weil, a senior OpenAI executive and former Instagram VP, is leaving the company as OpenAI folds his AI science applications division into its Codex unit.",
       body: [
-        "Google announced that from June it will penalize websites that interfere with normal browser back-button behavior, a practice sometimes used to keep users on a page by redirecting them in loops or inserting fake history entries. The change targets a frustrating dark pattern that has long undermined user trust and made the web feel manipulative.",
-        "The update is part of Google's broader effort to factor user experience signals into its search rankings, following previous crackdowns on intrusive interstitials and misleading navigation patterns. Webmasters and SEO professionals have been put on notice to audit their sites before the June rollout to avoid search ranking penalties."
+        "Kevin Weil, one of OpenAI's most prominent product leaders, has announced his departure from the company in a significant personnel shift at the ChatGPT-maker. Weil joined OpenAI after a senior tenure at Instagram and had been leading the company's efforts to build scientific and research-facing AI applications.",
+        "His exit coincides with an internal restructuring that sees the AI science application team absorbed into OpenAI's Codex division, signalling a strategic pivot toward consolidating its developer-focused product lines. The departure adds to a string of high-profile leadership changes at OpenAI as the company navigates rapid growth, a looming IPO, and intense competitive pressure from rivals including Anthropic and Google DeepMind."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/36f9/live/c3f2a8f0-38a7-11f1-bd3c-df67f5a99d2a.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/c05dd2yj3z3o?at_medium=RSS&at_campaign=rss",
+      image: "https://media.wired.com/photos/69e28bd5c90ceaca5deef659/master/pass/Kevin-Weil-Leaving-OpenAI-Business-2212179127.jpg",
+      source: "WIRED",
+      url: "https://www.wired.com/story/openai-executive-kevin-weil-is-leaving-the-company/",
       category: "Technology"
     }
   ]

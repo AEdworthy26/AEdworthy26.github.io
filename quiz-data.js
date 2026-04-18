@@ -1,10 +1,10 @@
 // quiz-data.js
-// Auto-updated 2026-04-17 — do not edit manually
+// Auto-updated 2026-04-18 — do not edit manually
 
 window.QUIZ_DATA = {
-  date: '2026-04-17',
+  date: '2026-04-18',
   category: 'Food & Drink',
-  question: 'Which chemical compound gives chilli peppers their heat, and on what scale is that heat measured?',
-  answer: 'Capsaicin; measured on the Scoville scale.',
-  funFact: 'Capsaicin triggers pain receptors in the mouth that normally respond to heat, which is why spicy food literally feels hot. The Scoville scale, invented by pharmacist Wilbur Scoville in 1912, originally relied on human taste testers diluting pepper extract until no heat was detectable — a method now replaced by precise chemical analysis called high-performance liquid chromatography.'
+  question: 'Which fermentation process, used in making sourdough bread, relies on a symbiotic culture of wild yeast and lactic acid bacteria rather than commercial yeast?',
+  answer: 'Wild fermentation (using a sourdough starter/levain).',
+  funFact: 'A sourdough starter is essentially a living ecosystem — the wild yeasts produce carbon dioxide to leaven the bread, while the lactic acid bacteria produce lactic and acetic acids that give sourdough its characteristic tangy flavour. Some starters have been kept alive and passed down for over a century. The balance of acids produced depends heavily on hydration levels and fermentation temperature, which is why the same starter can produce very different flavours in different kitchens.'
 };

@@ -3,6 +3,45 @@
 
 var RICS_LOG = [
   {
+    "date": "2026-04-18",
+    "topic": "Mandatory Biodiversity Net Gain: Metric, Exemptions and S106 Integration",
+    "module": "Sustainability",
+    "level": 1,
+    "apc_competency": "Sustainability (Level 1)",
+    "focus": "This lesson covers the mandatory BNG regime introduced under the Environment Act 2021, focusing on how the 10% net gain requirement is measured using the statutory biodiversity metric, how exemptions and the off-site/national credit hierarchy work in practice, and how BNG obligations are secured through planning conditions and S106 agreements. For Alfie, understanding BNG is increasingly critical at the appraisal and pre-acquisition stage, as BNG delivery costs and land requirements directly affect residual land value and scheme viability on residential-led sites.",
+    "image": "https://images.pexels.com/photos/8380658/pexels-photo-8380658.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "content": [],
+    "summary": [
+      "Mandatory BNG at 10% applies to all qualifying planning applications in England from February 2024, measured using the DEFRA Statutory Biodiversity Metric v4.0 \u2014 it is a legal requirement, not a negotiable S106 obligation, and cannot be reduced through viability assessment.",
+      "The delivery hierarchy is: avoid loss on-site, then restore/enhance on-site, then off-site registered habitat bank, then national credits as last resort \u2014 national credits are deliberately expensive (up to \u00a3650,000/unit) to drive on-site and private off-site solutions.",
+      "BNG costs (off-site unit purchase, landscaping uplift, monitoring bonds) must be captured in development appraisals at pre-acquisition stage \u2014 for greenfield sites with higher baseline habitat values, these costs can be material and affect residual land value.",
+      "BNG obligations are secured via a pre-commencement Biodiversity Gain Plan condition plus a 30-year Habitat Management and Monitoring Plan, secured by S106 or conservation covenant \u2014 long-term management obligations must be reflected in estate management and legal transfer documentation.",
+      "For Latimer, housing association-owned green space and rural land holdings represent a potential off-site habitat bank opportunity \u2014 registering suitable land on the Biodiversity Gain Sites Register could generate unit sale revenue and reduce BNG delivery costs on Latimer's own schemes, subject to additionality requirements."
+    ],
+    "qa": [
+      {
+        "q": "What is the legal basis for mandatory BNG in England, and from what date did it apply to large and small sites respectively?",
+        "a": "Mandatory BNG is established under Schedule 7A to the Town and Country Planning Act 1990, as inserted by Schedule 14 of the Environment Act 2021. It came into force for major planning applications (large sites) on 12 February 2024, and was extended to small sites from 2 April 2024. NSIPs are subject to a separate, parallel BNG framework. The requirement applies as a statutory pre-commencement condition on all qualifying permissions."
+      },
+      {
+        "q": "On a residential scheme you are appraising, the ecologist advises that the baseline biodiversity metric calculation yields 40 units. What does this mean for the post-development requirement, and where does the hierarchy of BNG delivery sit?",
+        "a": "A baseline of 40 units means the post-development habitat provision must deliver a minimum of 44 units \u2014 a 10% uplift. The delivery hierarchy requires that on-site habitat creation and enhancement is maximised first (avoiding loss through design, then restoring/enhancing existing habitat, then creating new habitat on-site). Only the residual shortfall that cannot be achieved on-site should be met through off-site registered biodiversity gain sites. Purchase of national credits from DEFRA is a last resort only, as credits are priced at a significant premium to the private market. This hierarchy must be evidenced in the Biodiversity Gain Plan submitted to the LPA for approval prior to commencement."
+      },
+      {
+        "q": "Can an LPA agree to reduce a scheme's BNG requirement from 10% to 6% on viability grounds in the same way it can negotiate a reduced affordable housing provision?",
+        "a": "No. Unlike affordable housing and other S106 financial contributions, which can be reduced through a formal viability assessment under NPPF paragraph 57 and RICS Viability in Planning guidance, the 10% BNG requirement is a statutory minimum set out in primary legislation under Schedule 7A TCPA 1990. It cannot be reduced or waived through viability negotiation. BNG delivery costs should therefore be treated as a fixed development cost in appraisals, equivalent to CIL liability, rather than a negotiable planning obligation."
+      },
+      {
+        "q": "What is a conservation covenant and how does it differ from a S106 agreement in the context of securing off-site BNG delivery?",
+        "a": "A conservation covenant is a private law agreement under Part 7 of the Environment Act 2021 between a landowner and a 'responsible body' (such as Natural England, a Local Nature Partnership body or an approved conservation charity). It binds the landowner and all future successors in title to carry out or refrain from specified land management activities for conservation purposes, for a fixed term of at least 30 years or in perpetuity. Unlike a S106 agreement, the LPA does not need to be a party, and the covenant runs with the land automatically on any subsequent transfer. In the BNG context, conservation covenants are the preferred mechanism for securing off-site habitat bank obligations on the Biodiversity Gain Sites Register, as they provide Natural England and the LPA with confidence in long-term delivery without requiring ongoing LPA involvement in private land transactions."
+      },
+      {
+        "q": "How would you factor BNG into a pre-acquisition development appraisal for a 2.5ha greenfield site in a southern England authority, and what specific cost heads would you include?",
+        "a": "BNG should be modelled as a development cost at pre-acquisition stage across several potential heads: (1) Ecologist fees \u2014 Phase 1 Habitat Survey, biodiversity metric calculation and Biodiversity Gain Plan preparation (typically \u00a38,000\u2013\u00a320,000 depending on site complexity); (2) Landscaping uplift above standard specification to deliver higher-distinctiveness habitat (species-rich grassland, native planting, SuDS wetland features) \u2014 potentially \u00a340,000\u2013\u00a3100,000+ on a 2.5ha greenfield site; (3) Off-site unit purchase if on-site delivery falls short \u2014 private market rates currently range from approximately \u00a38,000 to \u00a325,000 per unit, with national credit last-resort pricing substantially higher; (4) Monitoring bonds if required by the LPA (sometimes 5\u201310% of estimated habitat management costs over 30 years); (5) Long-term management costs within the HMMP, which may need to be capitalised or transferred to a management company at scheme completion. A sensitivity analysis should model a 'best case' (full on-site BNG achievability) and 'worst case' (significant off-site unit purchase required) to understand the range of cost outcomes and their impact on residual land value."
+      }
+    ]
+  },
+  {
     "date": "2026-04-17",
     "topic": "Section 73 Applications, DOVs and Non-Material Amendments: Post-Consent Plan Management",
     "module": "Planning and Development Management",

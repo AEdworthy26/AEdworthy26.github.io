@@ -1,60 +1,60 @@
 // uk-politics-news-data.js
-// Auto-updated 2026-04-17 — do not edit manually
+// Auto-updated 2026-04-18 — do not edit manually
 
 var UK_POLITICS_NEWS = {
-  date: "2026-04-17",
+  date: "2026-04-18",
   main: {
-    title: "Top Foreign Office Official Forced Out Over Mandelson Security Vetting Scandal",
+    title: "Starmer 'Staggered' He Was Not Told Mandelson Failed Security Vetting — PM Faces Calls to Resign",
     category: "Politics",
     content: [
-      "Sir Olly Robbins, the most senior civil servant at the Foreign Office, has been forced out of his post following a damaging row over the security vetting of Lord Peter Mandelson. It emerged that Mandelson had failed his security vetting process but that the Foreign Office, under Robbins' oversight, overruled that decision and allowed him to take up his ambassadorial post regardless. Prime Minister Keir Starmer is understood to have lost confidence in Robbins entirely, with both Starmer and Home Secretary Yvette Cooper expressing that view to colleagues.",
-      "The political fallout from the affair has deepened considerably as more details emerged about how the vetting failure was handled internally. Security vetting exists to protect sensitive government information and diplomatic operations, and the decision to override a formal vetting failure is highly unusual and deeply controversial. The fact that such a decision was made for a figure as politically prominent and historically contentious as Lord Mandelson has amplified scrutiny of the process and those responsible for approving it.",
-      "BBC political editor Chris Mason described the episode as a nightmare haunting the Starmer administration once again, noting that the Prime Minister is believed to be absolutely furious at the way the matter was managed. Mandelson, a veteran political operator who served as a European Commissioner and has long courted controversy throughout his career, has been a difficult figure for the Labour government to manage since his appointment. The vetting row has reignited questions about whether his appointment was sufficiently scrutinised from the outset.",
-      "The departure of Sir Olly Robbins marks a significant moment for the Foreign Office, removing one of Whitehall's most experienced and high-profile officials from a key position. Robbins is well known in political circles for his central role in Brexit negotiations under Theresa May, during which he served as the Prime Minister's Europe adviser and was a frequent target of criticism from Brexiteers. His exit under these circumstances is likely to raise fresh concerns about morale and institutional confidence within the Foreign Office at a time of considerable international turbulence.",
-      "The episode poses a broader challenge for Starmer's government, which has sought to present itself as competent, transparent and focused on restoring public trust in institutions. Opposition parties are expected to press the government hard on who knew about the vetting failure, when they knew, and why the decision to override it was taken. With Parliament returning from recess and pressure already building on multiple fronts, Downing Street will be eager to draw a line under the affair quickly, though the questions it has raised about oversight and accountability are unlikely to disappear soon."
+      "Prime Minister Keir Starmer is facing the most severe crisis of his premiership after revelations that Lord Peter Mandelson, the UK's ambassador to the United States, failed initial MI6 security vetting checks before taking up the role — and that Starmer claims he was never informed. Speaking with unusual emotion, Starmer described the situation as 'staggering', 'unforgivable', and 'completely unacceptable', insisting he only learned of the vetting failure this week. The comments have provoked widespread incredulity across Westminster, with critics from multiple parties questioning how such sensitive information about a high-profile diplomatic appointment could have been withheld from the Prime Minister.",
+      "The scandal has deepened following a Guardian investigation which revealed that Mandelson was initially denied security clearance after a background check by intelligence officials, but that the decision was subsequently overruled by the Foreign Office. Further reporting has established that Starmer was kept in the dark not just by one official but by at least two senior civil servants, including the head of the civil service itself. Officials are said to have spent weeks debating internally whether or not to release the highly sensitive information, a deliberation that has itself become a major point of controversy.",
+      "The Independent has added further fuel to the fire, reporting that Downing Street was informed of the vetting failure as long ago as September, after the outlet put the revelations to No 10 directly — directly contradicting the Prime Minister's insistence that he had no knowledge until this week. Mandelson, a veteran Labour grandee and close confidant of Starmer, is also a known associate of convicted sex offender Jeffrey Epstein, a connection that has intensified public and parliamentary scrutiny of the decision to appoint him to one of Britain's most prestigious diplomatic posts. The confluence of these factors has led senior political commentators to describe the situation as potentially existential for Starmer's leadership.",
+      "At the centre of the procedural fallout is Sir Olly Robbins, a top Downing Street civil servant who has reportedly been dismissed — or whose departure is strongly linked to the affair — after what Sky News characterises as having 'done the PM two favours' in managing the flow of information around the Mandelson vetting. Robbins is due to give testimony early next week before MPs, a session that Westminster insiders expect will be explosive and potentially damaging to the government's account of events. Opposition leader Kemi Badenoch has accused the government of a 'cover up', and calls for Starmer's resignation have been growing louder on both the Conservative benches and within sections of the Labour Party itself.",
+      "With Parliament poised for what Sky News has described as an 'almighty clash', the coming days are widely regarded as defining for Starmer's future. Senior government figures privately acknowledge that the Prime Minister faces a 'judgment day' moment, and that his ability to survive will depend heavily on how convincingly Robbins' testimony can be managed and whether the public accepts the narrative that the PM was genuinely bypassed by his own civil service. The episode has raised profound questions not only about Starmer's political judgment in appointing Mandelson, but about the integrity of the government's machinery and whether Number 10 has been straightforward with Parliament and the British people."
     ],
-    image: "https://i.guim.co.uk/img/media/b9ddb609c763962db59dce93022e368f67552ab2/871_0_3750_3000/master/3750.jpg?width=1200&quality=85&auto=format&fit=max&s=2c013bc63fd5ca0d6071e545e87c0e27",
-    source: "The Guardian",
-    sourceUrl: "https://www.theguardian.com/uk-news/2026/apr/16/foreign-offices-top-civil-servant-olly-robbins-leaves-post-in-mandelson-vetting-row"
+    image: "https://images.pexels.com/photos/6950105/pexels-photo-6950105.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    source: "BBC News",
+    sourceUrl: "https://www.bbc.com/news/articles/c17v2452vglo?at_medium=RSS&at_campaign=rss"
   },
   secondary: [
     {
       id: "uk1",
-      title: "Reeves Warns of Spending Cuts to Fund Defence as She Resists Tax Rises",
-      summary: "Chancellor Rachel Reeves has signalled that other government budgets, potentially including welfare, could face cuts to fund an increase in defence spending.",
+      title: "Top Civil Servant Olly Robbins 'Fixed It' for PM Over Mandelson Vetting — and Paid the Price",
+      summary: "Senior civil servant Sir Olly Robbins is said to have played a central role in managing sensitive information about Mandelson's failed vetting, and has now departed in circumstances linked to the scandal.",
       body: [
-        "Rachel Reeves told reporters she is working through a range of options to boost the armed forces budget but made clear she would prefer not to raise taxes again to fund the increase, describing the choices ahead as 'difficult'. With pressure mounting for a faster uplift in military spending amid the ongoing conflict involving Iran and Russia's continuing war in Ukraine, the Chancellor acknowledged that trade-offs across government spending would be necessary.",
-        "The comments represent a significant signal about the direction of the next spending review and will alarm those within the Labour Party who had hoped welfare and public services would be protected from further cuts. Reeves also confirmed that she and Energy Secretary Ed Miliband are exploring ways to break the link between gas prices and electricity costs, a structural reform that could reduce household energy bills over the longer term."
+        "According to Sky News analysis, Sir Olly Robbins effectively shielded the Prime Minister from full disclosure of Peter Mandelson's vetting failure, performing what the outlet describes as 'two favours' for the PM — but ultimately paying a professional price for his role in the affair. Robbins' departure from his position has been directly connected to the controversy, raising serious questions about how information flows within the highest levels of government.",
+        "Robbins is now scheduled to give testimony to MPs early next week, a prospect that has set nerves on edge across Whitehall and in Downing Street. His account of events is expected to be a crucial test of the government's version of the story and could significantly shape the political fallout in the days ahead."
       ],
-      image: "https://i.guim.co.uk/img/media/3453a90b926909f506471151bf20773f3dd49ff2/934_152_3394_2716/master/3394.jpg?width=1200&quality=85&auto=format&fit=max&s=0e583a3d77fa37739b58fc2c4ce9dbb3",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/politics/2026/apr/16/rachel-reeves-warns-other-budgets-may-be-cut-to-lift-defence-spending",
+      image: "https://e3.365dm.com/26/04/1920x1080/skynews-peter-mandelson-london_7222482.jpg?20260417110805",
+      source: "Sky News",
+      url: "https://news.sky.com/story/what-really-happened-with-peter-mandelson-and-how-olly-robbins-did-pm-two-favours-13533153",
       category: "Politics"
     },
     {
       id: "uk2",
-      title: "Badenoch Brands Farage an 'Opportunist' After He Courts Scottish Nationalists",
-      summary: "Conservative leader Kemi Badenoch has accused Nigel Farage of abandoning unionism after he suggested holding another Scottish independence vote was 'probably quite reasonable'.",
+      title: "AI Minister Kendall Admits She Does Not Use AI at Work",
+      summary: "Science and Technology Secretary Bridget Kendall has admitted she does not personally use artificial intelligence in her day-to-day work, despite overseeing a new £500 million government fund to boost British AI firms.",
       body: [
-        "Kemi Badenoch hit out at Reform UK leader Nigel Farage after he urged Scottish nationalists to back his party, saying that 'genuine nationalists' would not support the SNP and that another independence referendum was a reasonable prospect. Badenoch accused Farage of being an opportunist who was willing to undermine the integrity of the United Kingdom for political gain.",
-        "The row highlights a deepening tension between the two main parties of the right as they compete for votes in Scotland and across the UK ahead of the next general election. Former Scottish Conservative leader Ruth Davidson added to Badenoch's troubles separately, urging her to embark on an 'apology tour' for mistakes made by the Conservatives during their years in government."
+        "In a moment of candid irony, the minister responsible for the UK's artificial intelligence strategy, Bridget Kendall, has revealed that she does not use AI tools in her own working life — just days after unveiling a landmark £500 million fund designed to accelerate the growth of British AI companies. The admission has attracted considerable attention and some gentle mockery from commentators who noted the apparent contradiction.",
+        "The government maintains that the investment is a serious commitment to positioning the UK as a global leader in AI technology, regardless of the minister's personal habits. Kendall's department has argued that championing AI adoption across the broader economy does not necessarily require ministers themselves to be active users of the technology."
       ],
-      image: "https://i.guim.co.uk/img/media/94a0708d5541cc2442271fd6c0fa87cd13204750/595_0_4560_3648/master/4560.jpg?width=1200&quality=85&auto=format&fit=max&s=76d7de259f4a61fb8a3d16729ed2b546",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/politics/2026/apr/16/badenoch-calls-farage-an-opportunist-after-he-urges-scottish-nationalists-to-back-reform",
-      category: "Politics"
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/5a64/live/930119a0-3a7a-11f1-850e-07c4418cf86c.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.com/news/articles/cd0rmzjd720o?at_medium=RSS&at_campaign=rss",
+      category: "Technology & Politics"
     },
     {
       id: "uk3",
-      title: "Home Office Investigates After BBC Uncovers Migrants Making False Abuse Claims",
-      summary: "The Home Office has launched an investigation after a BBC undercover inquiry found that some migrants are exploiting rules designed to protect domestic abuse victims in order to remain in the UK.",
+      title: "Wes Streeting Refuses to Rule Out Leadership Ambitions Amid Starmer Crisis",
+      summary: "Health Secretary Wes Streeting has declined to rule out future leadership ambitions as pressure on Prime Minister Keir Starmer intensifies over the Mandelson vetting scandal.",
       body: [
-        "In the third instalment of an undercover BBC investigation, reporters revealed how protections put in place for genuine victims of domestic abuse are being falsely invoked by some migrants seeking to avoid removal from the country. Downing Street said the government is committed to ensuring that anyone potentially abusing the immigration system is held accountable.",
-        "The findings are likely to intensify political debate around immigration enforcement and the integrity of humanitarian protections, at a time when the government is already under pressure on the issue. The Home Office confirmed it is now actively investigating the cases highlighted by the BBC's reporting."
+        "With speculation about Starmer's future intensifying, Health Secretary Wes Streeting has pointedly refused to rule out harbouring leadership ambitions of his own, a response that will do little to quiet the increasingly febrile atmosphere within the Labour Party. Streeting is widely regarded as one of the most prominent potential successors to Starmer should the Prime Minister's position become untenable.",
+        "The refusal to offer a clear denial is a well-understood signal in Westminster politics, and will be scrutinised closely by Labour MPs who are already privately debating whether the Mandelson affair represents a turning point for the government. Streeting has so far remained publicly loyal, but his non-denial has added another layer of complexity to an already turbulent week for Downing Street."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/9f14/live/8fc86310-3999-11f1-879d-1b2f5c3919b8.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/c0q92lg9ln5o?at_medium=RSS&at_campaign=rss",
+      image: "https://www.telegraph.co.uk/content/dam/politics/2025/11/14/TELEMMGLPICT000449103188_17631218501160_trans_NvBQzQNjv4BqpVlberWd9EgFPZtcLiMQf0Rf_Wk3V23H2268P_XkPxc.jpeg",
+      source: "The Telegraph",
+      url: "https://www.telegraph.co.uk/politics/2025/11/14/politics-latest-news-wes-streeting-starmer-briefing-labour/",
       category: "Politics"
     }
   ]

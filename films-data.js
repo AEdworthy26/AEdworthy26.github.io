@@ -1,18 +1,18 @@
 // films-data.js
-// Auto-updated 2026-04-17 — do not edit manually
+// Auto-updated 2026-04-18 — do not edit manually
 
 var FILMS_DATA = {
-  date: "2026-04-17",
+  date: "2026-04-18",
   film: {
-    title: "Spirited Away",
-    director: "Hayao Miyazaki",
-    year: 2001,
-    genres: ["Animation", "Fantasy", "Adventure"],
-    desc: "When ten-year-old Chihiro stumbles into a spirit world run by the imperious witch Yubaba, she must work in a magical bathhouse to rescue her parents and find her way home — a premise that unfolds with the logic of a dream and the emotional weight of a coming-of-age novel. Miyazaki fills every frame with creatures and details so inventive that no single viewing can absorb them all, from the gentle soot sprites hauling coal to the haunting, masked No-Face drifting through the corridors. Beneath the dazzling surface is a story about work, identity, and the courage required to hold onto who you are when the world keeps trying to make you forget your own name. The film won the Academy Award for Best Animated Feature and remains the highest-grossing film in Japanese history, beloved by children and adults in equal measure. It is one of those rare works that genuinely expands your sense of what a film — or any story — is capable of doing.",
-    cast: ["Daveigh Chase", "Suzanne Pleshette", "Miyu Irino"],
-    rating: 97,
+    title: "The Wailing",
+    director: "Na Hong-jin",
+    year: 2016,
+    genres: ["Horror", "Mystery", "Thriller"],
+    desc: "A small Korean village is gripped by a terrifying plague of illness and murderous violence after a mysterious Japanese stranger takes up residence in the surrounding mountains, and a bumbling local policeman finds himself at the center of an increasingly nightmarish investigation. Na Hong-jin weaves together folk superstition, religious ritual, and visceral dread into a nearly three-hour epic that never loses its grip, building to one of the most devastating and ambiguous finales in modern horror. The film operates on multiple levels simultaneously — as a grounded family drama about a father trying to protect his daughter, as a slow-burn supernatural mystery, and as a profound meditation on faith and the nature of evil itself. Hwang Jung-min delivers a magnificent performance of escalating panic and helplessness, while the film's extraordinary set pieces — including a shamanistic exorcism sequence that ranks among cinema's great scenes — linger long after the credits roll.",
+    cast: ["Kwak Do-won", "Hwang Jung-min", "Chun Woo-hee"],
+    rating: 99,
     ratingSource: "Rotten Tomatoes",
-    ratingExtra: "1 Academy Award (Best Animated Feature)",
-    posterUrl: "https://upload.wikimedia.org/wikipedia/en/d/db/Spirited_Away_Japanese_poster.png"
+    ratingExtra: "Grand Prix nominee, Cannes 2016",
+    posterUrl: "https://upload.wikimedia.org/wikipedia/en/e/eb/The_Wailing_%28film%29.png"
   }
 };
