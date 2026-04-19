@@ -1,43 +1,92 @@
 // curiosity-data.js
-// Auto-updated 2026-04-18 — do not edit manually
+// Auto-updated 2026-04-19 — do not edit manually
 
 var CURIOSITY_DATA = {
-  date: "2026-04-18",
+  date: "2026-04-19",
   mainArticle: {
-    title: "The Great Inca Road: Engineering Marvel of the Andes",
-    subject: "Inca Road System Qhapaq Ñan",
-    subtitle: "How a Bronze Age empire built 40,000 kilometres of road through some of the most brutal terrain on Earth — without the wheel.",
-    image: "https://images.pexels.com/photos/13962475/pexels-photo-13962475.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    title: "The Antikythera Mechanism: Ancient Greece's Impossible Computer",
+    subject: "Antikythera Mechanism",
+    subtitle: "Pulled from a Roman-era shipwreck, a corroded lump of bronze turned out to be the most sophisticated machine the ancient world ever built.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/c/c8/Antikythera_Fragment_A_%28Front%29.webp",
     readTime: "8 min",
     content: [
-      { type: "paragraph", text: "When Spanish conquistadors first encountered the roads of the Inca Empire in the 1530s, they were astonished. Stretching from modern-day Colombia in the north to central Chile in the south, the Qhapaq Ñan — the 'Royal Road' — was a network so vast and so precisely engineered that soldiers initially mistook it for evidence of a far older, more sophisticated civilisation. In reality, the Inca had built most of it within a single century, an achievement that ranks among the greatest feats of pre-industrial construction in human history. What made it all the more extraordinary was the complete absence of wheeled transport, iron tools, or draft animals capable of carrying heavy loads." },
-      { type: "heading", text: "A Network Built for an Empire" },
-      { type: "paragraph", text: "The Inca Empire, known as Tawantinsuyu — 'The Four Regions' — was the largest in pre-Columbian America, stretching across six modern nations and encompassing perhaps 12 million people at its height. Holding it together required not just military force but information, and the road network was the nervous system through which the empire communicated and supplied itself. Two primary arteries ran parallel — one along the Pacific coast through desert, the other along the high spine of the Andes — connected by hundreds of lateral routes that crossed every imaginable terrain. The system was maintained by a form of labour tax called mit'a, which required every adult male to contribute time working on state projects." },
-      { type: "heading", text: "Engineering Without Iron or Wheels" },
-      { type: "paragraph", text: "Inca engineers faced obstacles that would daunt modern road builders: sheer cliff faces, deep river gorges, boggy highland plateaus, and volcanic passes above 5,000 metres. Their solutions were ingenious and varied according to terrain. In the mountains, roads were often paved with flat stones and flanked by drainage channels to prevent erosion, while retaining walls cut directly into cliff faces created level surfaces where none existed. Across rivers, they constructed suspension bridges woven from braided ichu grass — some spanning over 45 metres — which required constant renewal and were managed by dedicated bridge-keeper communities." },
-      { type: "heading", text: "The Runners Who Made It All Work" },
-      { type: "paragraph", text: "The road's true genius lay not just in its physical construction but in the system of human messengers — called chasquis — that ran along it. These highly trained relay runners were stationed in pairs at small stone huts, called tampus, positioned roughly every two to three kilometres along the route. A message or small cargo could travel from Cusco to Quito — a distance of nearly 2,000 kilometres — in as little as five days, a pace that would not be matched in that region until the telegraph arrived in the nineteenth century. Fresh fish from the Pacific coast famously reached the Inca emperor's table in Cusco within 24 hours, still edible." },
-      { type: "heading", text: "Storehouses, Sacred Sites, and Political Theatre" },
-      { type: "paragraph", text: "The road was far more than a logistical artery — it was also a political instrument. At regular intervals stood qollqas, state storehouses packed with freeze-dried food, weapons, textiles, and tools, giving the Inca military the ability to march almost indefinitely without foraging from local populations. Important shrines and huacas — sacred places — were deliberately incorporated into the route, turning ordinary travel into a form of pilgrimage that reinforced the divine status of the Sapa Inca. Every road led, symbolically and literally, back to Cusco, which the Inca called the 'Navel of the World.'" },
-      { type: "heading", text: "Conquest Turned the Road Against Its Builders" },
-      { type: "paragraph", text: "With devastating irony, the Qhapaq Ñan accelerated the Spanish conquest rather than impeding it. Francisco Pizarro's small force of fewer than 200 men was able to penetrate deep into the Andes with astonishing speed precisely because roads, bridges, and provisioning depots were already in place. The conquistadors benefited from infrastructure built for imperial control, using it to project a military reach that the Inca themselves had once monopolised. The very qualities that had made the road a tool of Inca dominance — its efficiency, its reach, its stores of food — were now weapons pointed back at the empire's heart." },
-      { type: "heading", text: "Rediscovery and UNESCO Recognition" },
-      { type: "paragraph", text: "For centuries after the conquest, much of the road fell into disuse, overgrown or deliberately dismantled for building materials by colonial-era Spanish settlers. But large sections survived in the remote highlands, preserved by altitude and low population density, and explorers like Hiram Bingham — better known for publicising Machu Picchu — noted their presence in the early twentieth century. In 2014, UNESCO inscribed the Qhapaq Ñan as a World Heritage Site, recognising it as a transnational monument shared by Argentina, Bolivia, Chile, Colombia, Ecuador, and Peru. Archaeologists are still mapping sections that have never been formally recorded." },
-      { type: "heading", text: "A Living Legacy" },
-      { type: "paragraph", text: "Today, indigenous communities in the Andes still use stretches of the ancient road for trade, ceremony, and daily movement, a living continuity that few ancient infrastructure projects can claim. The grass suspension bridges — once dismissed by scholars as primitive — have been studied by engineers who found their braided fibre cables operate on tensile principles remarkably similar to those used in modern suspension bridges. The Qhapaq Ñan reminds us that engineering ingenuity is not the exclusive property of civilisations that used iron and wheels, and that the impulse to connect, communicate, and project power across vast distances is one of humanity's oldest and most persistent drives. It stands as proof that empire-building is, at its core, a logistical problem — and that the Inca solved it brilliantly." }
+      {
+        type: "paragraph",
+        text: "In the spring of 1900, a party of Greek sponge divers sheltering from a storm near the tiny island of Antikythera decided to investigate a reef they had never worked before. What they found was a Roman-era shipwreck of extraordinary richness — bronze and marble statues, fine glassware, amphorae by the hundred. Among the encrusted debris hauled to the surface was an unremarkable lump of corroded bronze, roughly the size of a shoebox, that nobody paid much attention to for months. When it split open on a museum shelf in Athens and archaeologists glimpsed gears inside, they assumed it was some kind of navigational instrument and moved on. It would take the better part of a century before humanity began to grasp what it actually was."
+      },
+      {
+        type: "heading",
+        text: "A Machine Out of Time"
+      },
+      {
+        type: "paragraph",
+        text: "The Antikythera Mechanism, as it came to be called, dates to somewhere between 150 and 60 BCE — the era of Julius Caesar and Cicero, a world of wax tablets and ox-drawn ploughs. Yet inside its wooden case sat at least 30 interlocking bronze gears of breathtaking precision, with teeth cut to tolerances that would not be matched in European clockmaking for another 1,400 years. Modern X-ray tomography has revealed a machine capable of tracking the positions of the Sun and Moon, predicting solar and lunar eclipses on an 18-year Saros cycle, displaying the phases of the Moon, and even modelling the irregular motion of the Moon across the sky using an ingenious pin-and-slot epicyclic gear — a mechanism that modern engineers regard as a genuine stroke of genius. Nothing remotely comparable survives from antiquity, and no ancient text describes a device like it."
+      },
+      {
+        type: "heading",
+        text: "The Ship and Its Cargo"
+      },
+      {
+        type: "paragraph",
+        text: "The wreck itself tells a fascinating story. The ship was large — perhaps 40 metres long — and was carrying an eclectic cargo that probably originated in the eastern Aegean, possibly from Rhodes or a nearby port, sometime around 70–60 BCE. Rhodes was home to the greatest astronomical school of the Hellenistic world, including the polymath Posidonius, and is widely suspected as the mechanism's place of manufacture. The ship may have been carrying luxury goods to Rome, perhaps as part of the spoils or cultural exports that flooded westward as Rome absorbed the Greek world. The statues recovered alongside the mechanism — a bronze philosopher, a rearing horse, an athlete — suggest the cargo was destined for a wealthy Roman patron with a taste for Greek culture and learning."
+      },
+      {
+        type: "heading",
+        text: "Reading the Inscriptions"
+      },
+      {
+        type: "paragraph",
+        text: "Covering nearly every available surface of the mechanism's fragments are tiny Greek inscriptions — an instruction manual, essentially, engraved directly onto the machine. Scholars have painstakingly reconstructed much of this text, and it reveals a device of almost playful ambition. The back of the mechanism bore two large spiral dials: one tracking the 235-month Metonic cycle used to reconcile solar and lunar calendars, and one displaying the Saros eclipse-prediction cycle, with individual cells marked to indicate the type and geometry of each predicted eclipse. A smaller subsidiary dial tracked the four-year cycle of the Panhellenic games — including the Olympics — suggesting the machine was designed not just for astronomers but for educated citizens who wanted to plan their lives around the rhythms of the cosmos and the calendar."
+      },
+      {
+        type: "heading",
+        text: "The Genius of the Epicyclic Gear"
+      },
+      {
+        type: "paragraph",
+        text: "The Moon does not orbit the Earth at a constant speed — it moves faster when closer to Earth and slower when farther away, a phenomenon ancient Greek astronomers had observed and tried to model mathematically. The Antikythera Mechanism's maker solved this mechanically using an epicyclic gear: a small pin mounted off-centre on one gear engages a slot in a follower gear, causing the follower to speed up and slow down as it turns, mimicking the Moon's variable motion across the sky. This is not a crude approximation but a genuinely elegant engineering solution to an abstract mathematical problem. When researchers at University College London built a working model of the full front display in 2021, they found that the lunar-position pointer tracked the actual Moon with remarkable fidelity across multi-year periods."
+      },
+      {
+        type: "heading",
+        text: "Who Could Have Built It?"
+      },
+      {
+        type: "paragraph",
+        text: "The ancient writer Cicero, who lived at roughly the same time the mechanism was made, described a device built by Archimedes that could model the motions of the Sun, Moon, and planets — a passage that historians long dismissed as literary exaggeration. The Antikythera Mechanism suggests Cicero was describing something real. The surviving fragments represent only about a third of the original device, and some researchers believe the front display originally showed all five planets known to antiquity moving through the zodiac, each driven by its own gear train. If so, the full machine would have been a mechanical model of the entire Ptolemaic cosmos — a working orrery more than a thousand years before the medieval world thought to build one."
+      },
+      {
+        type: "heading",
+        text: "A Lost Tradition"
+      },
+      {
+        type: "paragraph",
+        text: "Perhaps the most haunting question the mechanism raises is not how it was built, but why the tradition died. Greek metalworking was highly sophisticated, and the mathematical knowledge needed to design such a device clearly existed. Yet no comparable instrument appears in the historical record for over a millennium, until mechanical clocks began appearing in European monasteries around 1300 CE. Some historians point to the disruptions of the Roman conquest, the burning of libraries, and the gradual shift of intellectual culture away from applied mechanics. Others suggest such devices may have been more common than we think, but made of perishable wood and leather that left no trace — the Antikythera Mechanism surviving only because it sank in cold, dark water before it could decay."
+      },
+      {
+        type: "heading",
+        text: "Why It Still Matters"
+      },
+      {
+        type: "paragraph",
+        text: "The Antikythera Mechanism permanently altered our understanding of what the ancient world was capable of. It demolished the comfortable assumption that complex machinery was a product of the Industrial Revolution and reminded us that human ingenuity has no fixed timeline. It also opened a window onto the intellectual world of the Hellenistic Greeks: people who did not merely observe the heavens and write about them, but who believed so deeply in the mathematical order of the cosmos that they tried to hold it in their hands, to turn a crank and watch the Moon spin through its phases and the eclipse years tick by. The fragment rests today in the National Archaeological Museum in Athens — battered, incomplete, and still the most remarkable object ever pulled from the sea."
+      },
+      {
+        type: "paragraph",
+        text: "Excavations of the Antikythera wreck resumed in 2014 using modern underwater robotics, and have continued to yield finds: human skeletal remains, a bronze spear arm, fragments of a bronze throne. Researchers believe a significant portion of the wreck remains unexcavated beneath sediment. Whether a second mechanism, or fragments that would complete our picture of the first, still lies on that reef floor is a question that keeps marine archaeologists awake at night — and gives the rest of us reason to believe that the ancient world still has secrets it has not finished telling."
+      }
     ]
   },
   personOfTheDay: {
-    name: "Túpac Yupanqui",
-    lifespan: "c. 1441–1493",
-    category: "Exploration & Empire",
-    image: "https://upload.wikimedia.org/wikipedia/commons/b/b8/Tupac-inca-yupanqui-small.png",
-    bio: "Túpac Yupanqui, the tenth Sapa Inca, was arguably the greatest conqueror and administrator the Inca Empire ever produced — and one of the most consequential rulers in the history of the Americas. Born around 1441, he was the son of the warrior-emperor Pachacuti, whose own campaigns had transformed the Inca from a regional chieftainship into a major power. But it was Túpac who extended Tawantinsuyu to its maximum extent, adding more territory than any other ruler before or after him.\n\nHis campaigns were staggering in scope. As crown prince he led armies north through Ecuador, defeating the formidable Chimú Kingdom on the Peruvian coast, whose gold-working traditions and administrative systems the Inca then absorbed into their own. Later as emperor he drove southward into modern Chile and Argentina, reaching as far as the Maule River where fierce Mapuche resistance finally halted his advance — one of very few forces in South America capable of holding the Inca at bay. He also reportedly organised a great oceanic voyage westward into the Pacific, returning — according to Inca oral tradition recorded by the Spanish chronicler Pedro Sarmiento de Gamboa — with gold, dark-skinned captives, and a bronze chair, details that have tantalised historians and navigators ever since.\n\nBeyond conquest, Túpac Yupanqui was a builder and organiser on a grand scale. He extended and formalised the Qhapaq Ñan road network, constructed new administrative centres throughout the empire, and oversaw the expansion of the mit'a labour system that would keep Inca infrastructure functioning for generations. His reign saw the empire at its administrative and territorial peak — a dominion of extraordinary diversity, encompassing desert coast, high Andean plateau, and tropical rainforest margin, all governed from Cusco through a sophisticated bureaucracy. He died around 1493, just before the arrival of Europeans would begin to unravel everything he had built."
+    name: "Hypatia of Alexandria",
+    lifespan: "c. 360–415 CE",
+    category: "Mathematics, Astronomy & Philosophy",
+    image: "https://upload.wikimedia.org/wikipedia/commons/7/79/San_Stefano_Grand_Plaza.JPG",
+    bio: "Hypatia was born in Alexandria, Egypt, at a time when that city remained the intellectual capital of the Mediterranean world. Her father Theon was a mathematician and the last known member of the great Museum of Alexandria, and he raised his daughter with the explicit intention of making her a perfect human being — training her in mathematics, astronomy, philosophy, and rhetoric with an rigour unusual for any student of the era, let alone a girl. She surpassed her teacher.\n\nHypatia became the head of the Neoplatonist school in Alexandria, attracting students from across the Roman world who came specifically to learn from her. She wrote commentaries on the great mathematical works of antiquity — including Ptolemy's Almagest and Diophantus's Arithmetica — that were so clear and useful they became the standard texts for centuries, in some cases being the versions that survived while the originals were lost. She also designed practical scientific instruments, including an improved astrolabe and a device for measuring the specific gravity of liquids, demonstrating that her intellect moved as comfortably between abstract theory and practical application as that of any engineer.\n\nHypatia's death in March 415 CE was an act of savage political violence. Alexandria was convulsed by rivalry between the Roman prefect Orestes, whom Hypatia advised, and the newly powerful Bishop Cyril. A mob of Christian paramilitaries seized her in the street, dragged her to a church, and murdered her with brutal deliberateness. The event sent a chill through Alexandria's intellectual community from which the city arguably never recovered. Hypatia has since become a symbol of remarkable range — of rational inquiry, of the violence done to learning by fanaticism, of the place of women in intellectual life — and her story has been retold by every age that needed a mirror for its own anxieties about knowledge and power."
   },
   onThisDay: {
-    headline: "San Francisco Reduced to Rubble",
-    date: "April 18, 1906",
-    summary: "In the early hours of April 18, 1906, at 5:12 in the morning, an earthquake of estimated magnitude 7.9 struck along the San Andreas Fault and shook San Francisco to its foundations. The initial shock lasted nearly a minute — long enough to collapse hundreds of buildings, rupture gas mains, and buckle the water supply infrastructure that firefighters would desperately need in the hours that followed. The ground had ruptured along nearly 470 kilometres of fault line, making it one of the most powerful earthquakes ever recorded in North America.\n\nThe fires that broke out in the earthquake's aftermath proved even more destructive than the tremors themselves. With water mains shattered across the city, fire crews were helpless to contain the blazes that merged into firestorms consuming entire neighbourhoods. The inferno burned for three days and three nights, destroying more than 25,000 buildings across 500 city blocks and leaving roughly 225,000 of the city's 400,000 residents homeless. The official death toll was initially suppressed by city authorities — embarrassed by the scale of the disaster and eager to attract rebuilding investment — and the true figure, now estimated at between 3,000 and 6,000 deaths, was not acknowledged for decades.\n\nThe disaster became a pivotal moment in American urban history, forcing a fundamental rethinking of city planning, building codes, and emergency infrastructure. San Francisco was rebuilt with remarkable speed, and was largely complete in time to host the Panama-Pacific International Exposition in 1915 — a defiant display of resurrection that captured the world's imagination. The 1906 earthquake also produced some of the first serious scientific study of fault mechanics, laying groundwork for the modern discipline of seismology and the understanding that the Pacific coast of North America sits atop one of the most active geological boundaries on the planet.",
-    image: "https://images.unsplash.com/photo-1735068391142-3ed668ebf20b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTYW4lMjBGcmFuY2lzY28lMjBSZWR1Y2VkJTIwdG8lMjBSdWJibGV8ZW58MHwwfHx8MTc3NjQ4ODg0MHww&ixlib=rb-4.1.0&q=80&w=1080"
+    headline: "The Shot Heard Round the World: Lexington and Concord",
+    date: "April 19, 1775",
+    summary: "In the pre-dawn darkness of April 19, 1775, some 700 British Regulars under Lieutenant Colonel Francis Smith marched out of Boston with orders to seize a colonial weapons cache at Concord, Massachusetts. Paul Revere and William Dawes had already ridden through the night to raise the alarm, and by the time the Redcoats reached Lexington Green at dawn, 77 armed militiamen stood in a ragged line to meet them. Shots were exchanged — historians still dispute who fired first — and eight Americans lay dead. The British marched on to Concord, found most of the arms already moved, destroyed what remained, and turned back toward Boston.\n\nThe return march became a running catastrophe. Thousands of Massachusetts militiamen, roused by the morning's news, lined the road behind stone walls and trees, firing volley after volley into the British column for eighteen miles. By the time the exhausted Regulars stumbled into Charlestown under cover of a relief force, they had suffered nearly 300 casualties. The militiamen had demonstrated something that would define the entire war to come: that disciplined European armies could be bled by an armed population that refused to stand in the open and be shot at. The battles of Lexington and Concord did not merely begin the American Revolutionary War — they established the strategic logic by which it would eventually be won.",
+    image: "https://images.unsplash.com/photo-1561084763-d07aa9d44712?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUaGUlMjBTaG90JTIwSGVhcmQlMjBSb3VuZCUyMHRoZSUyMFdvcmxkJTNBJTIwTGV4aW5ndG9uJTIwYW5kJTIwQ29uY29yZHxlbnwwfDB8fHwxNzc2NTc1MjU1fDA&ixlib=rb-4.1.0&q=80&w=1080"
   }
 };

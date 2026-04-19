@@ -1,18 +1,18 @@
 // films-data.js
-// Auto-updated 2026-04-18 — do not edit manually
+// Auto-updated 2026-04-19 — do not edit manually
 
 var FILMS_DATA = {
-  date: "2026-04-18",
+  date: "2026-04-19",
   film: {
-    title: "The Wailing",
-    director: "Na Hong-jin",
-    year: 2016,
-    genres: ["Horror", "Mystery", "Thriller"],
-    desc: "A small Korean village is gripped by a terrifying plague of illness and murderous violence after a mysterious Japanese stranger takes up residence in the surrounding mountains, and a bumbling local policeman finds himself at the center of an increasingly nightmarish investigation. Na Hong-jin weaves together folk superstition, religious ritual, and visceral dread into a nearly three-hour epic that never loses its grip, building to one of the most devastating and ambiguous finales in modern horror. The film operates on multiple levels simultaneously — as a grounded family drama about a father trying to protect his daughter, as a slow-burn supernatural mystery, and as a profound meditation on faith and the nature of evil itself. Hwang Jung-min delivers a magnificent performance of escalating panic and helplessness, while the film's extraordinary set pieces — including a shamanistic exorcism sequence that ranks among cinema's great scenes — linger long after the credits roll.",
-    cast: ["Kwak Do-won", "Hwang Jung-min", "Chun Woo-hee"],
+    title: "The Fits",
+    director: "Anna Rose Holmer",
+    year: 2015,
+    genres: ["Drama", "Coming-of-Age"],
+    desc: "An eleven-year-old tomboy training at a Cincinnati boxing gym becomes transfixed by a drill team of older girls, and begins desperately longing to belong to their world. When a mysterious fainting illness starts sweeping through the dance squad, the film transforms into something genuinely strange and hypnotic — part body-horror, part rite-of-passage fable. Anna Rose Holmer shoots the entire story at child's-eye level, making the gymnasium feel like an ancient ritual space where adolescence is something that happens *to* you rather than something you choose. Royalty Hightower delivers one of the most unselfconscious and magnetic debut performances in recent American independent cinema, carrying nearly every frame without a single line of conventional movie-acting. Spare, percussive, and utterly singular, it lingers in the mind long after the final image dissolves.",
+    cast: ["Royalty Hightower", "Alexis Neblett", "Da'Sean Minor"],
     rating: 99,
     ratingSource: "Rotten Tomatoes",
-    ratingExtra: "Grand Prix nominee, Cannes 2016",
-    posterUrl: "https://upload.wikimedia.org/wikipedia/en/e/eb/The_Wailing_%28film%29.png"
+    ratingExtra: "Tribeca Film Festival Award Winner",
+    posterUrl: "https://upload.wikimedia.org/wikipedia/en/f/ff/The_Fits_poster.jpg"
   }
 };

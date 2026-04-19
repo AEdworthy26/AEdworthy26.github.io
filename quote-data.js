@@ -1,8 +1,8 @@
 // quote-data.js
-// Auto-updated 2026-04-18 — do not edit manually
+// Auto-updated 2026-04-19 — do not edit manually
 
 var QUOTE_DATA = {
-  date: "2026-04-18",
-  text: "The universe is under no obligation to make sense to you.",
-  author: "Neil deGrasse Tyson"
+  date: "2026-04-19",
+  text: "The universe is not required to be in perfect harmony with human ambition.",
+  author: "Carl Sagan"
 };

@@ -1,60 +1,60 @@
 // uk-politics-news-data.js
-// Auto-updated 2026-04-18 — do not edit manually
+// Auto-updated 2026-04-19 — do not edit manually
 
 var UK_POLITICS_NEWS = {
-  date: "2026-04-18",
+  date: "2026-04-19",
   main: {
-    title: "Starmer 'Staggered' He Was Not Told Mandelson Failed Security Vetting — PM Faces Calls to Resign",
+    title: "Starmer in Crisis: Mandelson Security Vetting Scandal Refuses to Die",
     category: "Politics",
     content: [
-      "Prime Minister Keir Starmer is facing the most severe crisis of his premiership after revelations that Lord Peter Mandelson, the UK's ambassador to the United States, failed initial MI6 security vetting checks before taking up the role — and that Starmer claims he was never informed. Speaking with unusual emotion, Starmer described the situation as 'staggering', 'unforgivable', and 'completely unacceptable', insisting he only learned of the vetting failure this week. The comments have provoked widespread incredulity across Westminster, with critics from multiple parties questioning how such sensitive information about a high-profile diplomatic appointment could have been withheld from the Prime Minister.",
-      "The scandal has deepened following a Guardian investigation which revealed that Mandelson was initially denied security clearance after a background check by intelligence officials, but that the decision was subsequently overruled by the Foreign Office. Further reporting has established that Starmer was kept in the dark not just by one official but by at least two senior civil servants, including the head of the civil service itself. Officials are said to have spent weeks debating internally whether or not to release the highly sensitive information, a deliberation that has itself become a major point of controversy.",
-      "The Independent has added further fuel to the fire, reporting that Downing Street was informed of the vetting failure as long ago as September, after the outlet put the revelations to No 10 directly — directly contradicting the Prime Minister's insistence that he had no knowledge until this week. Mandelson, a veteran Labour grandee and close confidant of Starmer, is also a known associate of convicted sex offender Jeffrey Epstein, a connection that has intensified public and parliamentary scrutiny of the decision to appoint him to one of Britain's most prestigious diplomatic posts. The confluence of these factors has led senior political commentators to describe the situation as potentially existential for Starmer's leadership.",
-      "At the centre of the procedural fallout is Sir Olly Robbins, a top Downing Street civil servant who has reportedly been dismissed — or whose departure is strongly linked to the affair — after what Sky News characterises as having 'done the PM two favours' in managing the flow of information around the Mandelson vetting. Robbins is due to give testimony early next week before MPs, a session that Westminster insiders expect will be explosive and potentially damaging to the government's account of events. Opposition leader Kemi Badenoch has accused the government of a 'cover up', and calls for Starmer's resignation have been growing louder on both the Conservative benches and within sections of the Labour Party itself.",
-      "With Parliament poised for what Sky News has described as an 'almighty clash', the coming days are widely regarded as defining for Starmer's future. Senior government figures privately acknowledge that the Prime Minister faces a 'judgment day' moment, and that his ability to survive will depend heavily on how convincingly Robbins' testimony can be managed and whether the public accepts the narrative that the PM was genuinely bypassed by his own civil service. The episode has raised profound questions not only about Starmer's political judgment in appointing Mandelson, but about the integrity of the government's machinery and whether Number 10 has been straightforward with Parliament and the British people."
+      "Prime Minister Keir Starmer is facing one of the most serious crises of his premiership after it emerged that Lord Peter Mandelson failed security vetting before being appointed as the UK's ambassador to Washington. Starmer described it as 'staggering' that he was not informed of the vetting failure, insisting he would have blocked the appointment had he known. The revelation has sent shockwaves through Westminster, with opposition politicians and senior former officials queuing up to demand answers and, in some cases, the Prime Minister's resignation.",
+      "Foreign Secretary David Lammy has sought to shore up Starmer's position, stating publicly that it is 'inexplicable' that top civil servant Sir Olly Robbins kept Downing Street in the dark about Mandelson's failed vetting. Lammy's intervention represents the most high-profile attempt yet by a senior cabinet minister to draw a line between the Prime Minister and the unfolding scandal. However, critics have questioned the credibility of this line of defence, with former Conservative foreign secretary James Cleverly saying there is 'no way' Lammy himself was not told about the vetting failure.",
+      "At the centre of the storm is Sir Olly Robbins, the former Foreign Office chief who has been widely described as having been 'thrown under the bus' by Downing Street. Former Foreign Office permanent under-secretary Simon McDonald has spoken out strongly in Robbins' defence, calling the scandal the biggest crisis for the diplomatic service in decades and saying the decision to lay blame at Robbins' door 'feels wrong'. Robbins is now expected to be grilled by the Foreign Affairs Select Committee on Tuesday, in what promises to be a dramatic session of parliamentary scrutiny.",
+      "Sky News has further complicated the government's position by reporting that at least two senior civil servants were aware weeks ago that Mandelson had failed his security vetting, raising serious questions about the chain of knowledge and who chose not to pass that information to ministers. The Cabinet Office has released a template page from the vetting summary document, which lists three possible rankings of overall concern — low, medium and high — but has declined to reveal which category Mandelson fell into. The drip-feed of damaging details has made it increasingly difficult for the government to contain the fallout.",
+      "Labour's broader political standing is now being tested as the scandal enters its second week with no clear resolution in sight. Starmer also faces criticism from within Scotland, where he has been accused of 'skulking' and avoiding Scottish Labour leader Anas Sarwar during a visit north of the border — the first since Sarwar called on him to step down in February. With local elections approaching and Reform UK gaining ground in the polls, the government faces mounting pressure on multiple fronts, and senior figures within the party are increasingly anxious about the cumulative damage being done to Labour's credibility in government."
     ],
-    image: "https://images.pexels.com/photos/6950105/pexels-photo-6950105.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/ca87/live/49127490-3af9-11f1-be03-8bbe7ad91075.jpg",
     source: "BBC News",
     sourceUrl: "https://www.bbc.com/news/articles/c17v2452vglo?at_medium=RSS&at_campaign=rss"
   },
   secondary: [
     {
       id: "uk1",
-      title: "Top Civil Servant Olly Robbins 'Fixed It' for PM Over Mandelson Vetting — and Paid the Price",
-      summary: "Senior civil servant Sir Olly Robbins is said to have played a central role in managing sensitive information about Mandelson's failed vetting, and has now departed in circumstances linked to the scandal.",
+      title: "Reform UK Candidate Vetting Under Fire Ahead of Local Elections",
+      summary: "Labour has accused Reform UK of having candidate vetting processes that are 'clearly not fit for purpose' after two more local election candidates were found to have made offensive social media posts.",
       body: [
-        "According to Sky News analysis, Sir Olly Robbins effectively shielded the Prime Minister from full disclosure of Peter Mandelson's vetting failure, performing what the outlet describes as 'two favours' for the PM — but ultimately paying a professional price for his role in the affair. Robbins' departure from his position has been directly connected to the controversy, raising serious questions about how information flows within the highest levels of government.",
-        "Robbins is now scheduled to give testimony to MPs early next week, a prospect that has set nerves on edge across Whitehall and in Downing Street. His account of events is expected to be a crucial test of the government's version of the story and could significantly shape the political fallout in the days ahead."
+        "Two more Reform UK candidates standing in May's local elections have been accused of making offensive or potentially racist posts on social media, prompting a fresh wave of criticism directed at Nigel Farage's party. Labour has called on Farage to sack the candidates and said the party's screening procedures are wholly inadequate for a party that presents itself as a credible political force.",
+        "The controversy comes at a sensitive time for Reform, which is riding high in national opinion polls and looking to make significant gains in local government. The repeated failures to identify problematic candidates before they appear on ballot papers risk undermining Reform's pitch to voters as a clean break from the political establishment."
       ],
-      image: "https://e3.365dm.com/26/04/1920x1080/skynews-peter-mandelson-london_7222482.jpg?20260417110805",
-      source: "Sky News",
-      url: "https://news.sky.com/story/what-really-happened-with-peter-mandelson-and-how-olly-robbins-did-pm-two-favours-13533153",
+      image: "https://i.guim.co.uk/img/media/d61dad212f6c7007ad3a6eb42d71542e8a73b8ea/635_0_6365_5092/master/6365.jpg?width=1200&quality=85&auto=format&fit=max&s=0e15315911c9445371faf513bc4d1842",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/politics/2026/apr/18/two-more-reform-local-election-candidates-accused-offensive-posts",
       category: "Politics"
     },
     {
       id: "uk2",
-      title: "AI Minister Kendall Admits She Does Not Use AI at Work",
-      summary: "Science and Technology Secretary Bridget Kendall has admitted she does not personally use artificial intelligence in her day-to-day work, despite overseeing a new £500 million government fund to boost British AI firms.",
+      title: "More Than Half of UK Voters Now Support Rejoining the EU, Study Finds",
+      summary: "A new study has found that a majority of British voters support rejoining the European Union, with broad backing also for the government's current effort to reset relations with Brussels.",
       body: [
-        "In a moment of candid irony, the minister responsible for the UK's artificial intelligence strategy, Bridget Kendall, has revealed that she does not use AI tools in her own working life — just days after unveiling a landmark £500 million fund designed to accelerate the growth of British AI companies. The admission has attracted considerable attention and some gentle mockery from commentators who noted the apparent contradiction.",
-        "The government maintains that the investment is a serious commitment to positioning the UK as a global leader in AI technology, regardless of the minister's personal habits. Kendall's department has argued that championing AI adoption across the broader economy does not necessarily require ministers themselves to be active users of the technology."
+        "More than half of UK voters now say they would support rejoining the European Union, according to new research, marking a significant shift in public opinion since the 2016 Brexit referendum. The study also found majority support for the Starmer government's ongoing efforts to forge a closer relationship with the EU, short of full membership.",
+        "The findings will add pressure on Labour to move more boldly on EU relations, though the government has so far ruled out rejoining the single market or customs union. With Brexit-era divisions still politically sensitive, the data nonetheless signals that the electoral landscape on Europe has fundamentally changed since the Leave campaign's victory a decade ago."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/5a64/live/930119a0-3a7a-11f1-850e-07c4418cf86c.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/cd0rmzjd720o?at_medium=RSS&at_campaign=rss",
-      category: "Technology & Politics"
+      image: "https://static.independent.co.uk/2026/04/18/10/25/PA-73843598.jpeg?width=1200&auto=webp&trim=0%2C0%2C0%2C0",
+      source: "The Independent",
+      url: "https://www.independent.co.uk/news/uk/politics/brexit-rejoin-eu-britain-starmer-b2960281.html",
+      category: "Politics"
     },
     {
       id: "uk3",
-      title: "Wes Streeting Refuses to Rule Out Leadership Ambitions Amid Starmer Crisis",
-      summary: "Health Secretary Wes Streeting has declined to rule out future leadership ambitions as pressure on Prime Minister Keir Starmer intensifies over the Mandelson vetting scandal.",
+      title: "Ex-Reform Voters Turning to Green Party, Says Newest Green MP",
+      summary: "The Green Party's newest MP Hannah Spencer says voters who previously backed Reform UK are now considering switching to the Greens out of disillusionment with politics as usual.",
       body: [
-        "With speculation about Starmer's future intensifying, Health Secretary Wes Streeting has pointedly refused to rule out harbouring leadership ambitions of his own, a response that will do little to quiet the increasingly febrile atmosphere within the Labour Party. Streeting is widely regarded as one of the most prominent potential successors to Starmer should the Prime Minister's position become untenable.",
-        "The refusal to offer a clear denial is a well-understood signal in Westminster politics, and will be scrutinised closely by Labour MPs who are already privately debating whether the Mandelson affair represents a turning point for the government. Streeting has so far remained publicly loyal, but his non-denial has added another layer of complexity to an already turbulent week for Downing Street."
+        "Hannah Spencer, the Green Party's newest MP, has said that former Reform UK voters are among those now open to backing the Greens, as widespread disenchantment with mainstream politics continues to reshape the electoral landscape. Spencer argues that both parties are drawing from the same pool of voters who feel let down by the political establishment, despite their very different ideological positions.",
+        "The claim reflects the unusual and volatile nature of current British political allegiances, in which anti-establishment sentiment is cutting across traditional left-right divides. With local elections fast approaching, the Greens are hoping to capitalise on voter frustration and extend the gains they made at the 2024 general election."
       ],
-      image: "https://www.telegraph.co.uk/content/dam/politics/2025/11/14/TELEMMGLPICT000449103188_17631218501160_trans_NvBQzQNjv4BqpVlberWd9EgFPZtcLiMQf0Rf_Wk3V23H2268P_XkPxc.jpeg",
-      source: "The Telegraph",
-      url: "https://www.telegraph.co.uk/politics/2025/11/14/politics-latest-news-wes-streeting-starmer-briefing-labour/",
+      image: "https://static.independent.co.uk/2026/04/14/16/2264381523.jpg?width=1200&auto=webp&crop=3%3A2",
+      source: "The Independent",
+      url: "https://www.independent.co.uk/news/uk/politics/green-party-hannah-spencer-local-elections-reform-uk-b2958248.html",
       category: "Politics"
     }
   ]
