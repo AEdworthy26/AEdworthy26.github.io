@@ -1,10 +1,10 @@
 // quiz-data.js
-// Auto-updated 2026-04-19 — do not edit manually
+// Auto-updated 2026-04-20 — do not edit manually
 
 window.QUIZ_DATA = {
-  date: '2026-04-19',
+  date: '2026-04-20',
   category: 'Food & Drink',
-  question: 'Which Japanese fermentation process, used to make miso, sake, and soy sauce, relies on a mould called Aspergillus oryzae — and what is the common name for this mould in Japanese cuisine?',
-  answer: 'The process is called koji fermentation, and the mould is known as "koji" (麹).',
-  funFact: 'Aspergillus oryzae has been cultivated in East Asia for over a thousand years and is so culturally significant that it was designated Japan\'s "national fungus" by the Brewing Society of Japan in 2006. The mould works by secreting powerful enzymes that break down starches into sugars and proteins into amino acids, creating the deep umami flavours central to Japanese cooking. Modern chefs around the world now deliberately grow koji on meats, grains, and vegetables to achieve rapid flavour development that once took months.'
+  question: 'Which fermentation process gives sourdough bread its characteristic tangy flavour, and what two types of microorganisms are responsible for it?',
+  answer: 'Wild fermentation driven by lactic acid bacteria (which produce lactic and acetic acids) and wild yeasts (which produce carbon dioxide for leavening).',
+  funFact: 'The balance between lactic acid (milder, yoghurt-like tang) and acetic acid (sharper, vinegar-like tang) depends on hydration, temperature, and fermentation time — bakers can tune these variables to craft entirely different flavour profiles from the same starter. A well-maintained sourdough starter can remain active for decades or even centuries; some bakeries claim their starters are over 150 years old. The wild yeasts in sourdough are typically strains of Saccharomyces cerevisiae and Kazachstania humilis, co-existing in a stable ecosystem with the bacteria.'
 };

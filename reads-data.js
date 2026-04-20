@@ -1,19 +1,19 @@
 // reads-data.js
-// Auto-updated 2026-04-19 — do not edit manually
+// Auto-updated 2026-04-20 — do not edit manually
 
 var READS_DATA = {
-  date: "2026-04-19",
+  date: "2026-04-20",
   book: {
-    title: "The Overstory",
-    author: "Richard Powers",
-    year: 2018,
-    genres: ["Literary Fiction", "Nature", "Ecology"],
-    desc: "Richard Powers weaves together nine interlocking stories about people whose lives are transformed by their encounters with trees — a chestnut tree that survives a blight and becomes a family's living archive, a scientist who discovers that forests communicate through underground fungal networks, activists who risk everything to stop old-growth logging. The novel operates at two timescales simultaneously: the urgent pulse of human drama and the vast, slow patience of arboreal life, and Powers makes you feel the collision between them in your bones. It won the Pulitzer Prize for Fiction in 2019 and is widely considered one of the great American novels of the century so far. Few books have so radically altered how readers see the natural world — many report they can never walk past a tree again without stopping.",
-    whyRead: "With ecological anxiety running higher than ever, this is the rare novel that channels that dread into something luminous and galvanising rather than paralyzing — it is as close to essential reading as fiction gets right now.",
-    rating: 4.2,
+    title: "The Passenger",
+    author: "Cormac McCarthy",
+    year: 2022,
+    genres: ["Literary Fiction", "Philosophy", "Thriller"],
+    desc: "Bobby Western is a salvage diver haunted by guilt, grief, and the ghost of his brilliant, doomed sister — a woman who may have been the greater mind of the two. McCarthy weaves together quantum physics, Cold War paranoia, jazz, and metaphysics into a novel that reads like no other: dense, allusive, and strangely beautiful in its desolation. The prose hits with the force of late McCarthy — sentences that feel carved rather than written — while the ideas cut even deeper, asking what it means to exist in a universe indifferent to consciousness. It is a novel about mathematics and madness, love and complicity, and the unbearable weight of simply being alive.",
+    whyRead: "With the dust now fully settled on its divisive reception, this is the moment to read The Passenger on its own terms — as one of the strangest and most serious American novels of the century so far.",
+    rating: 3.9,
     ratingSource: "Goodreads",
-    ratingCount: "250,000+",
-    coverUrl: "https://covers.openlibrary.org/b/id/8758252-L.jpg",
-    amazonUrl: "https://www.amazon.co.uk/dp/1784877913"
+    ratingCount: "60,000+",
+    coverUrl: "https://covers.openlibrary.org/b/id/13072232-L.jpg",
+    amazonUrl: "https://www.amazon.co.uk/dp/0330457438"
   }
 };

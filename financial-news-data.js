@@ -1,61 +1,61 @@
 // financial-news-data.js
-// Auto-updated 2026-04-19 — do not edit manually
+// Auto-updated 2026-04-20 — do not edit manually
 
 var FINANCIAL_NEWS = {
-  date: "2026-04-19",
+  date: "2026-04-20",
   main: {
-    title: "Oil Prices Plunge as Iran Opens Strait of Hormuz, Easing Global Stagflation Fears",
-    category: "Markets & Economics",
+    title: "Oil Surges and Stock Futures Tumble as Iran Tensions Reignite Market Volatility",
+    category: "Markets",
     content: [
-      "Brent crude tumbled by roughly ten percent on Sunday after Iran announced that the Strait of Hormuz — the world's most critical oil chokepoint — would remain open to commercial shipping for the duration of the current ceasefire. The declaration offered immediate relief to energy markets that had been on edge since the outbreak of the Iran war seven weeks ago, with traders rapidly unwinding the risk premiums that had been baked into oil contracts throughout the conflict. The scale of the single-day move underscored just how much fear had been priced into commodity markets, and how sensitive prices remain to any diplomatic signal from the region.",
-      "The Strait of Hormuz carries roughly a fifth of the world's seaborne oil and an even larger share of liquefied natural gas, making it an irreplaceable artery for global energy supply. Disruptions to that corridor — whether threatened or actual — had kept Brent crude elevated for weeks, contributing to inflationary pressures across importing economies and deepening concerns about a return to the stagflation dynamics last seen in the 1970s. Analysts at several major investment banks had warned that a prolonged closure would have pushed crude above $130 a barrel, triggering a demand-destruction cycle in the United States, Europe, and Asia simultaneously.",
-      "The fall in oil prices was swiftly transmitted into broader financial markets, offering a reprieve to equity indices that had struggled under the weight of elevated energy costs and tightening monetary conditions. Airline stocks and shipping companies led early gains in weekend futures trading, while energy-sector equities gave back some of their war-driven gains. The move also eased pressure on central banks in Europe and the United Kingdom, which had faced the uncomfortable prospect of hiking rates into slowing economies in order to contain energy-driven inflation.",
-      "However, the ceasefire remains fragile, and markets were cautious about pricing in a full normalisation of the geopolitical risk premium. Bloomberg reported that Iran had briefly reimposed Hormuz restrictions on Saturday before reversing course, illustrating how quickly the situation can shift. Separately, Israeli strikes on targets in Lebanon late in the week undermined hopes for a broader regional peace deal, and economists warned in a Bloomberg analysis that the cumulative seven-week impact of the war on global supply chains and business confidence will only become fully visible in the coming round of purchasing managers' surveys.",
-      "For consumers, the potential easing in oil prices arrives at a critical juncture. Fuel costs had been a primary driver of the real-wage squeeze affecting households across developed economies, with workers in the United States and United Kingdom reporting that their paychecks feel progressively smaller as inflation outpaces nominal wage growth. A sustained decline in crude prices would offer a meaningful boost to household purchasing power, but economists stress that one ceasefire announcement does not resolve the underlying structural tensions in the Middle East — and that energy markets will remain highly volatile until a durable peace agreement is secured."
+      "Global financial markets lurched back into uncertainty on Monday as a weekend flare-up in US-Iran tensions sent oil prices sharply higher and US stock index futures tumbling. The trigger was a combination of developments: reports that an Iranian ship had been seized and Iran's renewed closure of the Strait of Hormuz, a critical chokepoint through which a significant portion of the world's oil supply flows. Traders who had spent the previous three weeks riding a remarkable rally — one that had pushed the S&P 500 past the 7,000 mark to record highs — were suddenly forced to reassess their optimism about a near-term resolution to the conflict.",
+      "Oil markets bore the brunt of the repricing, with crude prices jumping sharply as the Strait of Hormuz closure once again choked off energy flows from the Persian Gulf. European natural gas futures also surged on the news, reflecting the continent's particular vulnerability to Middle Eastern energy disruptions. The moves underscored just how tightly energy markets remain tethered to the trajectory of the war, which began in earnest when the US and Israel launched attacks on Iran on February 28th.",
+      "The backdrop to Monday's selloff had been one of cautious optimism. Heading into the weekend, there had been signals that a peace deal might be within reach, prompting a surge in equities and a pullback in energy prices. Mortgage rates had even begun to fall, with major UK lenders cutting rates as markets took heart from the possibility of a truce. That optimism has now been sharply tested, with analysts warning that the market's tendency to swing between hope and fear over the Iran conflict could persist for weeks or months to come.",
+      "The financial fallout is being felt well beyond energy markets. In the United Kingdom, Chancellor Rachel Reeves summoned the bosses of Britain's five largest retail banks — HSBC, Barclays, Lloyds, NatWest and Santander — to discuss how to limit the economic damage from the Middle East crisis. The emergency meeting reflects growing concern among policymakers that prolonged conflict and elevated energy prices could tip already fragile consumer and business confidence into a sharper downturn. Meanwhile, luxury goods conglomerates including Louis Vuitton and Hermès are already reporting plummeting sales in Persian Gulf nations, and are scrambling to redirect growth strategies toward other regions.",
+      "Despite Monday's turbulence, some market strategists argue that the underlying bull case for equities remains intact. The S&P 500's epic comeback rally — which saw it recover from earlier war-related lows to blow through 7,000 — suggests that many investors have begun to price the Iran conflict as a manageable rather than existential risk. Whether that confidence proves well-founded will depend heavily on how quickly diplomatic efforts can gain traction, and whether the latest Hormuz closure proves to be a brief escalation or the beginning of a more sustained disruption to global energy supplies."
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/0790/live/5a41eb90-3a6a-11f1-b0ed-870299e8b290.jpg",
-    source: "BBC News",
-    sourceUrl: "https://www.bbc.com/news/articles/ckg045z73z1o"
+    image: "https://images.mktw.net/im-32839821",
+    source: "MarketWatch",
+    sourceUrl: "https://www.marketwatch.com/story/investors-brace-for-renewed-volatility-after-this-weekends-iran-developments-4b707c11?mod=mw_rss_topstories"
   },
   secondary: [
     {
       id: "fn1",
-      title: "Mortgage Rates Edge Lower as Markets Take Heart from Iran Ceasefire",
-      summary: "Major UK lenders have begun cutting mortgage rates as easing energy prices and ceasefire signals reduce the inflation outlook that had kept borrowing costs elevated.",
+      title: "Mortgage Rates Begin to Ease as Markets Digest Possible Iran Truce",
+      summary: "UK mortgage rates are showing signs of falling after reaching a peak driven by Iran war anxiety, with major lenders cutting rates as peace talk hopes briefly lifted market sentiment.",
       body: [
-        "Several of Britain's largest mortgage lenders moved to reduce their fixed-rate offerings this week, responding to a shift in swap rates that followed tentative signs of a ceasefire in the Iran war. The rate reductions, while modest, mark the first broad downward move from major lenders in months and have been welcomed by prospective buyers who had largely been priced out of the market during the conflict-driven rate spike.",
-        "Analysts cautioned that the improvements remain contingent on the durability of the ceasefire and the trajectory of oil prices, both of which remain highly uncertain. If the Strait of Hormuz situation deteriorates again, the brief window of lower mortgage costs could close quickly, leaving borrowers who did not lock in rates in a worse position than before."
+        "Several of Britain's major mortgage lenders have begun trimming their rates following a period of elevated borrowing costs tied to uncertainty surrounding the Iran conflict, offering some relief to homebuyers and those remortgaging. The reductions came as financial markets briefly priced in a higher probability of a ceasefire, pushing down gilt yields and giving lenders room to pass on savings.",
+        "The moves highlight how closely UK household finances have become linked to geopolitical developments thousands of miles away. However, with the Strait of Hormuz now closed again and fresh volatility gripping markets, analysts cautioned that any sustained decline in mortgage rates may be short-lived unless a genuine diplomatic breakthrough materialises."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/27de/live/fa2d1d40-3a3e-11f1-826b-272fcb9e69bd.jpg",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/cfbf/live/3826df60-3bbf-11f1-8a14-19337d79de52.jpg",
       source: "BBC News",
       url: "https://www.bbc.com/news/articles/cwyx2q86lgpo?at_medium=RSS&at_campaign=rss",
       category: "Economics"
     },
     {
       id: "fn2",
-      title: "Over $1 Billion in Suspiciously Timed Bets on Iran War Raises Market Integrity Alarms",
-      summary: "Prediction market wagers that precisely anticipated US airstrikes and the assassination of Iran's Supreme Leader have drawn scrutiny from lawmakers and raised serious questions about insider trading.",
+      title: "ABF Poised to Reveal Outcome of Primark and Food Business Demerger Plan",
+      summary: "Associated British Foods is expected this week to announce whether it will proceed with a long-mooted demerger that would separate the Primark fashion chain from its food brands including Kingsmill, Twinings and its sugar operations.",
       body: [
-        "Investigators and lawmakers are examining a pattern of extraordinarily well-timed wagers on prediction markets, including sixteen separate bets of $100,000 each that correctly predicted the timing of US airstrikes on Iran, and a single bet of over $550,000 placed moments before the assassination of Ayatollah Khamenei. The total value of suspicious positions has surpassed $1 billion, a figure that has alarmed regulators who are debating whether existing securities and market-manipulation laws apply to the largely unregulated prediction market sector.",
-        "The scandal has reignited a broader debate about the governance of financial prediction platforms, which have grown dramatically in size and influence since their legalisation in several jurisdictions. Critics argue that if insiders with access to classified government information are able to profit from geopolitical events, it represents not only a market integrity failure but a serious national security concern that demands urgent legislative action."
+        "The potential breakup of Associated British Foods would be one of the most significant corporate restructurings in the UK retail sector in years, freeing Primark to operate independently from the group's sprawling food portfolio. Retail analysts have broadly argued that a split would unlock shareholder value by allowing both businesses to pursue distinct strategies suited to their very different market dynamics.",
+        "The timing is delicate: both arms of the business are navigating a challenging environment, with Primark facing cost-of-living pressures on consumer spending and the food division grappling with commodity price volatility exacerbated by the Middle East conflict. The Weston family, which controls ABF, will be weighing whether the structural benefits of a demerger outweigh the execution risks of splitting the conglomerate during a period of broader economic uncertainty."
       ],
-      image: "https://i.guim.co.uk/img/media/a015cbe3cc86bb76b2ae057965890207757e3202/1_0_2999_2400/master/2999.jpg?width=1200&quality=85&auto=format&fit=max&s=106f8745460afaa0a5922cd31293529d",
+      image: "https://i.guim.co.uk/img/media/4bd94f3a503b44059c5ead27e26de5154927a7d5/484_0_4840_3872/master/4840.jpg?width=1200&quality=85&auto=format&fit=max&s=e595d4a90d15c66617a0adcbef3175d0",
       source: "The Guardian",
-      url: "https://www.theguardian.com/world/2026/apr/18/iran-war-bets-ethics-concerns",
-      category: "Markets"
+      url: "https://www.theguardian.com/business/2026/apr/20/abf-outcome-primark-spin-off-plan",
+      category: "Corporate"
     },
     {
       id: "fn3",
-      title: "War Revives Stagflation Dangers as Seven Weeks of Conflict Begin to Show in Economic Data",
-      summary: "Economists warn that the cumulative toll of the Iran war on global supply chains, energy costs, and business confidence is about to become visible in a fresh round of international business surveys.",
+      title: "Luxury Brands Pivot Away from Middle East as War Hammers Gulf Sales",
+      summary: "High-end fashion houses including Louis Vuitton and Hermès are redirecting their growth strategies after sales in Persian Gulf nations collapsed in the wake of the US-Israel conflict with Iran.",
       body: [
-        "The coming week will deliver a clearer picture of the global economic damage wrought by seven weeks of war in the Middle East, as purchasing managers' surveys from multiple major economies are released simultaneously. Analysts expect the data to confirm what many businesses have already reported anecdotally: that supply chain disruptions, elevated energy costs, and uncertainty-driven investment freezes have combined to create conditions resembling the stagflation of the 1970s, with slowing growth and persistent inflation occurring at the same time.",
-        "Central banks face an especially difficult policy environment under these conditions, since the traditional tools for fighting inflation — higher interest rates — tend to deepen the economic slowdown component of stagflation. The brief improvement in oil prices following Iran's Hormuz announcement may soften the incoming data at the margins, but economists stress that the structural damage to trade flows and business confidence accumulated over the past seven weeks will not be reversed by a single day's price move."
+        "The luxury goods sector, which had made the Middle East a centrepiece of its expansion plans over the past decade, is now urgently recalibrating after the Iran war devastated foot traffic and consumer confidence across Gulf markets. Both tourist arrivals and local high-net-worth spending have dropped sharply in the region, directly hitting revenues for brands that had invested heavily in flagship stores and regional partnerships.",
+        "The episode serves as a stark reminder of the concentration risk that comes with over-reliance on any single region, and is prompting boardroom conversations across the luxury sector about diversifying exposure toward markets in Asia, the Americas and parts of Africa. Investors in luxury conglomerates are watching closely to see how quickly sales can be rerouted, and whether the Middle East rebound — when it eventually comes — will be swift enough to limit lasting damage to earnings."
       ],
-      image: "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iiEClytih.cw/v3/1200x-1.png",
-      source: "Bloomberg Markets",
-      url: "https://www.bloomberg.com/news/articles/2026-04-18/war-revives-stagflation-dangers-for-global-economy",
-      category: "Economics"
+      image: "https://static01.nyt.com/images/2026/04/19/multimedia/19biz-luxury-middle-east-01-fvqj/19biz-luxury-middle-east-01-fvqj-mediumSquareAt3X.jpg",
+      source: "The New York Times",
+      url: "https://www.nytimes.com/2026/04/19/business/luxury-brands-bet-on-the-middle-east-war-has-damaged-their-plans.html",
+      category: "Business"
     }
   ]
 };

@@ -1,61 +1,61 @@
 // us-politics-news-data.js
-// Auto-updated 2026-04-19 — do not edit manually
+// Auto-updated 2026-04-20 — do not edit manually
 
 var US_POLITICS_NEWS = {
-  date: "2026-04-19",
+  date: "2026-04-20",
   main: {
-    title: "Trump Loyalist Installed to Lead 'Grand Conspiracy' Case Targeting Political Foes",
+    title: "Insider Trading Suspicions Cast Shadow Over Trump Presidency as Pattern of Pre-Announcement Trades Emerges",
     category: "Politics",
     content: [
-      "The Trump administration has installed Joseph diGenova, a longtime loyalist and former lawyer for Donald Trump's presidential campaign, to lead what has been described internally as the 'grand conspiracy' case targeting individuals the president considers his political enemies. DiGenova is said to be planning to split his time between Miami and Fort Pierce, Florida, the latter being the location of a grand jury overseen by a judge widely regarded as favorable to the Trump administration. The move represents one of the most overt uses of federal prosecutorial machinery to pursue perceived adversaries since Trump returned to the White House.",
-      "DiGenova's appointment raises immediate questions about the independence of the Justice Department and the degree to which federal law enforcement has been subordinated to the political priorities of the current administration. Legal experts have warned that placing a figure with such explicit personal and professional ties to President Trump in charge of a sprawling investigation into Trump's opponents creates an inherent conflict of interest that would have been disqualifying in prior administrations. The selection of Fort Pierce as the venue for the grand jury proceedings — rather than Washington, D.C., where most federal conspiracy cases of national significance are heard — has itself drawn scrutiny as a deliberate strategy to secure favorable judicial oversight.",
-      "The case, whose full scope has not been publicly disclosed, is understood to target a broad coalition of individuals whom Trump and his allies have accused of coordinating efforts to undermine his first and second terms in office. Critics, including civil liberties organizations and Democratic lawmakers, have characterized the investigation as a politically motivated witch hunt designed to intimidate opponents, suppress dissent, and weaponize the justice system against those who challenged Trump legally or politically. Several prominent figures are believed to be subjects of the investigation, though the Justice Department has declined to confirm names.",
-      "The appointment follows a pattern of personnel decisions by the Trump White House aimed at consolidating control over federal agencies, including the Department of Justice, in ways that have alarmed both Democrats and a number of Republicans who have spoken privately about their concerns. DiGenova has a long history as a vocal Trump defender in media appearances and was previously considered for senior Justice Department roles. His installation in this role signals that the administration intends to press the investigation aggressively, regardless of the political controversy it generates.",
-      "Congressional Democrats have vowed to seek oversight hearings into the appointment and the broader use of Justice Department resources to prosecute political adversaries. The situation is likely to become a central flashpoint in the lead-up to the 2026 midterm elections, with opposition leaders framing it as emblematic of what they describe as the administration's authoritarian drift. Constitutional scholars have noted that while a president has broad authority over executive branch appointments, the use of that authority to target political opponents through criminal prosecution represents a significant and troubling departure from norms that have historically protected the integrity of federal law enforcement."
+      "A BBC News investigation has identified a recurring pattern of suspicious trading activity that appears to precede major public announcements by President Donald Trump, raising serious questions about potential insider trading in and around his administration. The analysis found notable spikes in trades on specific stocks and assets in the hours and days before Trump made consequential policy declarations, tariff decisions, and geopolitical statements. The findings have reignited longstanding concerns from ethics watchdogs and Democratic lawmakers about the blurring of financial self-interest and executive power in Trump's second term.",
+      "The pattern documented by the BBC is particularly striking given the market-moving nature of many of Trump's announcements, which have ranged from sweeping tariff policies — many of which were later struck down by the Supreme Court — to dramatic foreign policy actions such as the ongoing conflict with Iran. Traders positioned ahead of such announcements would stand to make substantial profits, and critics argue that the consistency of the pattern is too pronounced to be dismissed as coincidence. The White House has not formally responded to the specific findings, but Trump allies have previously characterized such scrutiny as politically motivated.",
+      "The investigation adds to a broader cloud of financial controversy that has followed Trump throughout his second term. Allegations of foreign actors — including Syrian billionaires reportedly invoking the Trump name to influence Washington policy while Trump family business deals are being negotiated — have painted a picture of an administration where the lines between public governance and private enrichment have become dangerously blurred. Ethics experts have warned that without robust enforcement mechanisms and transparent financial disclosures, the potential for corruption is not only structural but practically uncontrollable.",
+      "Congressional Democrats have seized on the BBC findings to call for renewed investigations, with several members of the House Financial Services Committee demanding that the Securities and Exchange Commission open a formal inquiry. Republicans have largely deflected these calls, accusing the opposition of manufacturing scandals ahead of November's midterm elections. However, with Trump's approval ratings already slipping over the war in Iran and rising gas prices, even some moderate Republicans privately acknowledge that additional financial controversy is poorly timed for the party.",
+      "The insider trading suspicions arrive at a moment when public trust in the Trump administration is under significant strain. A recent Quinnipiac poll found that 51 percent of registered voters blame Trump 'a lot' for rising gas prices, and the administration is facing mounting pressure on multiple fronts heading into the midterms. If federal investigators or congressional committees choose to pursue the trading pattern evidence more aggressively, it could become one of the defining political and legal stories of Trump's second term — testing not only his administration's accountability but the resilience of American democratic institutions in the face of sustained ethical challenges."
     ],
-    image: "https://static01.nyt.com/images/2026/04/18/multimedia/18dc-conspiracy-tzpj/18dc-conspiracy-tzpj-mediumSquareAt3X.jpg",
-    source: "The New York Times",
-    sourceUrl: "https://www.nytimes.com/2026/04/18/us/politics/digenova-trump-lawyer-conspiracy.html"
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/0993/live/bfcf1060-387a-11f1-9b73-21c33a4cdac9.jpg",
+    source: "BBC News",
+    sourceUrl: "https://www.bbc.com/news/articles/cge0grppe3po?at_medium=RSS&at_campaign=rss"
   },
   secondary: [
     {
       id: "us1",
-      title: "Trump Signs Executive Order Fast-Tracking Psychedelics Research for Mental Health",
-      summary: "President Trump has signed an executive order directing federal agencies to accelerate research into psychedelic treatments including psilocybin, ibogaine, and LSD for mental health disorders.",
+      title: "Democrats Eye Expanding Midterm Battlefield as Republican Incumbents Struggle",
+      summary: "Democrats are targeting a growing number of Republican-held House seats, including districts in Tennessee, as Trump's sagging approval ratings weaken GOP incumbents heading into November.",
       body: [
-        "The executive order, championed in part by Health Secretary Robert F. Kennedy Jr., instructs federal agencies to boost funding and support for clinical trials involving psychedelic compounds, marking a significant shift in the federal government's posture toward substances that remain classified as Schedule I drugs under the Controlled Substances Act. Trump made light of the order during its signing, quipping 'Can I have some, please?' — a moment that quickly circulated widely online.",
-        "The move has drawn cautious praise from mental health advocates and researchers who have long argued that federal restrictions have stifled promising therapeutic avenues, particularly for veterans suffering from PTSD. However, critics note that signing an executive order to accelerate research stops short of the legislative or regulatory changes that would be necessary to make these treatments widely accessible to patients."
+        "With President Trump's approval ratings dragged down by the war in Iran and surging gas prices, Democratic strategists are broadening their list of competitive House targets beyond traditional battlegrounds, eyeing seats in states like Tennessee that were once considered safely Republican. Several GOP incumbents are reportedly struggling to raise campaign funds, a warning sign that donor enthusiasm within the party may be waning ahead of a critical midterm cycle.",
+        "The expanding Democratic battlefield reflects a broader strategic shift, with party leaders sensing an opportunity to retake the House majority by contesting districts that would not normally be in play. Virginia's ongoing redistricting vote, which could redraw congressional maps in Democrats' favor, further complicates Republicans' path to holding their slim majority in November."
       ],
-      image: "https://images.unsplash.com/photo-1612278920639-cfbae3835fee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUcnVtcCUyMFNpZ25zJTIwRXhlY3V0aXZlJTIwT3JkZXIlMjBGYXN0LVRyYWNraW5nJTIwUHN5Y2hlZGVsaWNzJTIwUmVzZWFyY2glMjBmb3IlMjBNZW50YWwlMjBIZWFsdGh8ZW58MHwwfHx8MTc3NjU3NDk2OXww&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "NPR",
-      url: "https://www.npr.org/2026/04/18/nx-s1-5789859/psychedelic-treatments-mental-health",
-      category: "Politics"
+      image: "https://static01.nyt.com/images/2026/04/19/multimedia/19nat-house-battleground-hczj/19nat-house-battleground-hczj-mediumSquareAt3X.jpg",
+      source: "The New York Times",
+      url: "https://www.nytimes.com/2026/04/19/us/politics/house-battleground-midterms-tennessee.html",
+      category: "Elections"
     },
     {
       id: "us2",
-      title: "Potential 2028 Democratic Contenders Audition Before Party Insiders in Michigan",
-      summary: "Former Vice President Kamala Harris, Senator Cory Booker, and Governor Andy Beshear addressed a gathering of Democratic party insiders in Detroit, stoking speculation about the 2028 presidential race.",
+      title: "DOJ Demands Detroit-Area 2024 Election Ballots in Escalating Scrutiny Push",
+      summary: "The Justice Department, led by official Harmeet K. Dhillon, has demanded access to 2024 election ballots from the Detroit area to investigate alleged election law compliance issues, drawing fierce pushback from Democratic state officials.",
       body: [
-        "The Detroit event, which drew senior Democratic operatives and donors, functioned as an informal audition for a party still searching for a standard-bearer capable of unseating Trump or consolidating power following what has been a turbulent period in opposition politics. All three prospective candidates focused heavily on criticism of the Trump administration, reflecting a party consensus that opposition to the president remains the most reliable organizing principle heading into the next election cycle.",
-        "Harris's appearance was particularly closely watched, given lingering questions within the party about whether she would seek the presidency again after her 2024 defeat. Beshear, who has cultivated a reputation as a pragmatic moderate capable of winning in red-leaning Kentucky, and Booker, fresh off a high-profile Senate filibuster, each used the platform to introduce themselves to an influential slice of the Democratic donor and activist base."
+        "DOJ official Harmeet K. Dhillon formally requested Detroit-area ballots from Michigan's 2024 election, framing the demand as a probe into compliance with federal election law. Democratic state officials in Michigan have called the request baseless and politically motivated, vowing to scrutinize the legal grounds before cooperating with any handover of ballots.",
+        "The move represents a significant escalation in the Trump administration's ongoing efforts to relitigate and scrutinize the 2024 election results, a pattern critics say is designed to cast doubt on electoral integrity and intimidate election officials. Legal experts have questioned whether the DOJ has clear statutory authority to compel such access, setting the stage for a potential court battle."
       ],
-      image: "https://static01.nyt.com/images/2026/04/18/multimedia/18pol-dems-michigan-2-zmtc/18pol-dems-michigan-2-zmtc-mediumSquareAt3X.jpg",
-      source: "The New York Times",
-      url: "https://www.nytimes.com/2026/04/18/us/politics/harris-booker-beshear-2028-president-democrats.html",
+      image: "https://images.pexels.com/photos/7103199/pexels-photo-7103199.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      source: "The Washington Post",
+      url: "https://www.washingtonpost.com/politics/2026/04/19/michigan-2024-ballots-harmeet-dhillon/",
       category: "Politics"
     },
     {
       id: "us3",
-      title: "Sexual Misconduct Allegations Rock Congress, Prompting Calls for Reformed Ethics Rules",
-      summary: "The resignations of two members of Congress amid ethics investigations into sexual misconduct have renewed calls for stricter House rules and a cultural reckoning on Capitol Hill.",
+      title: "Tariff Refund Portal Opens as Companies Seek Relief After Supreme Court Ruling",
+      summary: "Two months after the Supreme Court struck down the majority of President Trump's tariffs, the federal government is launching an online portal Monday allowing companies to begin requesting billions in refunds.",
       body: [
-        "The departures, which drew immediate comparisons to the #MeToo wave that swept through Congress nearly a decade ago, have prompted a bipartisan but tentative push among some House members to revisit the chamber's internal ethics processes and workplace conduct standards. Lawmakers involved in the effort say existing rules have proven inadequate to deter misconduct or protect staff who come forward with complaints.",
-        "The episode highlights the persistent tension between the political incentives that often shield sitting members from accountability and the growing public expectation of institutional consequences for misconduct. Reform advocates argue that without structural changes — including stronger investigative powers for the Office of Congressional Ethics and clearer pathways for victim reporting — the pattern of delayed accountability will continue."
+        "The U.S. government has designated Monday as the opening day for a customs portal through which businesses can file claims for refunds on tariffs paid under policies that the Supreme Court ruled unconstitutional earlier this year. The portal is expected to see enormous demand, with analysts estimating that hundreds of millions — potentially billions — of dollars in refunds could be claimed by American importers.",
+        "The Supreme Court's ruling was a major legal defeat for the Trump administration's aggressive use of executive tariff authority, and the refund process is likely to generate fresh political debate over the economic damage caused by the tariffs during the period they were in effect. The episode has become a key talking point for Democrats arguing that Trump's economic stewardship has been reckless and costly for American businesses and consumers."
       ],
-      image: "https://images.unsplash.com/photo-1599594407685-1b16111e4e89?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTZXh1YWwlMjBNaXNjb25kdWN0JTIwQWxsZWdhdGlvbnMlMjBSb2NrJTIwQ29uZ3Jlc3MlMkMlMjBQcm9tcHRpbmclMjBDYWxscyUyMGZvciUyMFJlZm9ybWVkJTIwRXRoaWNzJTIwUnVsZXN8ZW58MHwwfHx8MTc3NjU3NDk2OXww&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "The Washington Post",
-      url: "https://www.washingtonpost.com/politics/2026/04/18/congress-metoo-swalwell-gonzales-resignations/",
-      category: "Politics"
+      image: "https://images.unsplash.com/photo-1598432439250-0330f9130e14?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUYXJpZmYlMjBSZWZ1bmQlMjBQb3J0YWwlMjBPcGVucyUyMGFzJTIwQ29tcGFuaWVzJTIwU2VlayUyMFJlbGllZiUyMEFmdGVyJTIwU3VwcmVtZSUyMENvdXJ0JTIwUnVsaW5nfGVufDB8MHx8fDE3NzY2NjEzODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "NPR",
+      url: "https://www.npr.org/2026/04/19/nx-s1-5786635/tariff-refunds-customs-ace-portal",
+      category: "Economics"
     }
   ]
 };

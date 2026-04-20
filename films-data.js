@@ -1,18 +1,18 @@
 // films-data.js
-// Auto-updated 2026-04-19 — do not edit manually
+// Auto-updated 2026-04-20 — do not edit manually
 
 var FILMS_DATA = {
-  date: "2026-04-19",
+  date: "2026-04-20",
   film: {
-    title: "The Fits",
-    director: "Anna Rose Holmer",
-    year: 2015,
-    genres: ["Drama", "Coming-of-Age"],
-    desc: "An eleven-year-old tomboy training at a Cincinnati boxing gym becomes transfixed by a drill team of older girls, and begins desperately longing to belong to their world. When a mysterious fainting illness starts sweeping through the dance squad, the film transforms into something genuinely strange and hypnotic — part body-horror, part rite-of-passage fable. Anna Rose Holmer shoots the entire story at child's-eye level, making the gymnasium feel like an ancient ritual space where adolescence is something that happens *to* you rather than something you choose. Royalty Hightower delivers one of the most unselfconscious and magnetic debut performances in recent American independent cinema, carrying nearly every frame without a single line of conventional movie-acting. Spare, percussive, and utterly singular, it lingers in the mind long after the final image dissolves.",
-    cast: ["Royalty Hightower", "Alexis Neblett", "Da'Sean Minor"],
+    title: "The Wailing",
+    director: "Na Hong-jin",
+    year: 2016,
+    genres: ["Horror", "Mystery", "Thriller"],
+    desc: "A bumbling small-town policeman in a remote Korean village begins investigating a series of gruesome murders after a mysterious Japanese stranger arrives and a strange illness starts possessing locals. Na Hong-jin weaves together folk religion, shamanism, Christian imagery, and raw visceral dread into something that defies easy genre categorization — it is a horror film that genuinely philosophizes about the nature of evil and doubt. At over two and a half hours, it never drags, building an atmosphere of creeping wrongness that crescendos into one of the most devastating and disorienting finales in modern genre cinema. The Wailing is the rare horror film that leaves you not just shaken but genuinely uncertain about what you witnessed, rewarding obsessive re-examination.",
+    cast: ["Kwak Do-won", "Hwang Jung-min", "Chun Woo-hee"],
     rating: 99,
     ratingSource: "Rotten Tomatoes",
-    ratingExtra: "Tribeca Film Festival Award Winner",
-    posterUrl: "https://upload.wikimedia.org/wikipedia/en/f/ff/The_Fits_poster.jpg"
+    ratingExtra: "Grand Bell Awards Best Film",
+    posterUrl: "https://upload.wikimedia.org/wikipedia/en/e/eb/The_Wailing_%28film%29.png"
   }
 };
