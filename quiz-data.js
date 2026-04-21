@@ -1,10 +1,10 @@
 // quiz-data.js
-// Auto-updated 2026-04-20 — do not edit manually
+// Auto-updated 2026-04-21 — do not edit manually
 
 window.QUIZ_DATA = {
-  date: '2026-04-20',
+  date: '2026-04-21',
   category: 'Food & Drink',
-  question: 'Which fermentation process gives sourdough bread its characteristic tangy flavour, and what two types of microorganisms are responsible for it?',
-  answer: 'Wild fermentation driven by lactic acid bacteria (which produce lactic and acetic acids) and wild yeasts (which produce carbon dioxide for leavening).',
-  funFact: 'The balance between lactic acid (milder, yoghurt-like tang) and acetic acid (sharper, vinegar-like tang) depends on hydration, temperature, and fermentation time — bakers can tune these variables to craft entirely different flavour profiles from the same starter. A well-maintained sourdough starter can remain active for decades or even centuries; some bakeries claim their starters are over 150 years old. The wild yeasts in sourdough are typically strains of Saccharomyces cerevisiae and Kazachstania humilis, co-existing in a stable ecosystem with the bacteria.'
+  question: 'Which chemical compound is responsible for the intense heat sensation in chilli peppers, and in what unit is its concentration typically measured?',
+  answer: 'Capsaicin, measured in Scoville Heat Units (SHU).',
+  funFact: 'Capsaicin binds to a receptor called TRPV1, which normally detects actual heat and physical abrasion — essentially tricking your brain into thinking your mouth is on fire when no real burning is occurring. The Scoville scale was invented by pharmacist Wilbur Scoville in 1912, originally using human taste testers to dilute chilli extract until no heat was detectable. The hottest chilli ever recorded, Pepper X, clocks in at over 2.6 million SHU — more than 300 times hotter than a jalapeño.'
 };

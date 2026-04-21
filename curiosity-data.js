@@ -1,92 +1,43 @@
 // curiosity-data.js
-// Auto-updated 2026-04-20 — do not edit manually
+// Auto-updated 2026-04-21 — do not edit manually
 
 var CURIOSITY_DATA = {
-  date: "2026-04-20",
+  date: "2026-04-21",
   mainArticle: {
-    title: "The Great Inca Road: Engineering an Empire Across the Andes",
-    subject: "Inca Road System Qhapaq Ñan",
-    subtitle: "Forty thousand kilometres of mountain highway, built without wheels, iron, or horses — and it outlasted the empire itself.",
-    image: "https://images.pexels.com/photos/13962475/pexels-photo-13962475.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    title: "The Poison Kingdoms: How Arsenic Shaped Medieval and Renaissance Courts",
+    subject: "Arsenic poisoning Renaissance courts",
+    subtitle: "Before the age of forensic science, a tasteless white powder rewrote the politics of Europe — and the fate of dynasties.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/6/61/El_nacimiento_de_Venus%2C_por_Sandro_Botticelli.jpg",
     readTime: "8 min",
     content: [
-      {
-        type: "paragraph",
-        text: "When Spanish conquistadors first pushed into the Andes in the 1530s, they encountered something that stopped even their jaded eyes: a road system of breathtaking ambition, threading through some of the most ferocious terrain on Earth. Tunnelled through cliff faces, suspended across gorges on braided-grass bridges, and paved across coastal deserts with adobe walls, the Qhapaq Ñan — the 'Royal Road' — stretched roughly 40,000 kilometres at its zenith. It connected the Inca capital of Cusco to Ecuador in the north, Chile and Argentina in the south, and the Amazonian lowlands to the east. One Spanish chronicler simply called it the greatest road ever built by man."
-      },
-      {
-        type: "heading",
-        text: "Building Without the 'Essentials'"
-      },
-      {
-        type: "paragraph",
-        text: "What makes the Inca achievement so staggering is what the engineers did not have. There were no wheeled vehicles on the road — the wheel existed conceptually in Andean culture, appearing on children's toys, but was never applied to transport, perhaps because llamas, the primary beast of burden, are not suited to pulling carts. There was no iron for tools; all cutting was done with bronze, stone, and bone. Yet the Inca carved level routes across the Cordillera Blanca, a range where peaks exceed 6,000 metres, and maintained a surface so consistent that a runner could cover 240 kilometres a day along the royal highways."
-      },
-      {
-        type: "heading",
-        text: "The Chasqui: A Living Internet"
-      },
-      {
-        type: "paragraph",
-        text: "The road's primary purpose was not commerce in the modern sense but state logistics — the rapid movement of information, armies, and tribute. The chasqui system was the mechanism: relay runners stationed in small stone huts, called tambos, every few kilometres along the road. A message or small package could travel from Quito to Cusco — nearly 2,000 kilometres — in under five days, a speed that European postal systems would not match for another two centuries. Fresh fish from the Pacific coast reportedly arrived on the Inca emperor's table in Cusco within 24 hours of being caught."
-      },
-      {
-        type: "heading",
-        text: "Suspension Bridges That Terrified the Spanish"
-      },
-      {
-        type: "paragraph",
-        text: "The most audacious engineering of the Qhapaq Ñan was its bridges. Where the road met deep Andean gorges, Inca engineers constructed suspension bridges woven from ichu grass and other plant fibres, some spanning over 60 metres. The cables, as thick as a human torso, were anchored in massive stone abutments on either side of the canyon. Spanish soldiers, armoured and mounted on horses, initially refused to cross them — the bridges swayed alarmingly — yet they regularly held the weight of entire Inca armies. One bridge across the Apurímac River was maintained continuously for five centuries, finally falling out of use only in the 1890s."
-      },
-      {
-        type: "heading",
-        text: "Mit'a: The Tax Paid in Labour"
-      },
-      {
-        type: "paragraph",
-        text: "The road was built and maintained through mit'a, the Inca system of labour taxation. Every able-bodied subject of Tawantinsuyu — the Inca 'Four Quarters' — owed the state a portion of their working life, and road construction was one of its most common demands. Communities along a given section were responsible for maintaining their stretch of road, replacing worn paving stones and repairing bridges after seasonal floods. This decentralised maintenance model meant the road could function even during political instability, because the obligation was local and deeply embedded in Andean social structure."
-      },
-      {
-        type: "heading",
-        text: "The Road as Ideology"
-      },
-      {
-        type: "paragraph",
-        text: "The Qhapaq Ñan was never merely practical; it was a statement of cosmic order. The road system radiated outward from the Coricancha, the great sun temple at the heart of Cusco, along lines that scholars believe may have corresponded to the ceque system — a web of sacred sightlines connecting huacas, or holy sites, across the Andean world. Walking the royal road was, for an Inca subject, an act of participation in the empire's divinely ordered geography. The road literally embodied the Inca claim that their emperor, the Sapa Inca, was the son of Inti, the sun god, and that his dominion organised the world itself."
-      },
-      {
-        type: "heading",
-        text: "Conquest and Continuity"
-      },
-      {
-        type: "paragraph",
-        text: "Ironically, the very road that held the Inca Empire together also facilitated its destruction. Francisco Pizarro's small force of fewer than 200 men was able to move with extraordinary speed through the Andes precisely because the Qhapaq Ñan provided reliable routes, tambo resupply stations, and bridges capable of bearing horses and cannon. The Spanish understood immediately what they had found; within years they were using the road to extract silver from the mines of Potosí with an efficiency the Inca themselves had never envisioned. The infrastructure of empire simply changed masters."
-      },
-      {
-        type: "heading",
-        text: "A Living Heritage"
-      },
-      {
-        type: "paragraph",
-        text: "In 2014, UNESCO inscribed the Qhapaq Ñan as a World Heritage Site across six countries — Argentina, Bolivia, Chile, Colombia, Ecuador, and Peru — recognising it as one of the most remarkable feats of pre-industrial engineering anywhere on Earth. Roughly 30,000 kilometres of the original network survive in some form, and in remote highland communities, sections of Inca paving still serve as the primary route between villages. Local communities continue to perform the annual chakra, the communal re-weaving of fibre bridges, preserving a tradition of engineering that predates the Spanish conquest by centuries. The road, in a very real sense, never stopped being used."
-      },
-      {
-        type: "paragraph",
-        text: "What the Qhapaq Ñan ultimately tells us is that infrastructure is civilisation made visible. The Inca had no writing system as we understand it, no iron, no wheeled cart — yet they administered an empire of twelve million people across a vertical landscape more challenging than almost anywhere else on the planet. The road was their text, their data network, their ideology, and their monument, all simultaneously. That much of it endures today, still traversable, still connecting the same communities it was built to bind together, may be the most remarkable fact of all."
-      }
+      { type: "paragraph", text: "In the grand halls of Renaissance Italy, no weapon was more feared than one you could not see, smell, or taste. Arsenic trioxide — a fine white powder known variously as 'inheritance powder' and 'the king of poisons' — dissolved almost invisibly into wine, soup, or water, killing its victim over days or weeks with symptoms that mimicked ordinary illness. Its accessibility made it uniquely democratic as a murder weapon: you needed no physical strength, no trained soldier, and no army. You needed only access to a kitchen." },
+      { type: "heading", text: "A Mineral With Ancient Roots" },
+      { type: "paragraph", text: "Arsenic compounds had been known to physicians and metallurgists since antiquity. Greek and Roman writers described orpiment and realgar — vivid yellow and red arsenic sulfides — as pigments and medicines, and Dioscorides noted their toxic potential in the first century AD. Chinese physicians incorporated arsenic compounds into remedies for skin conditions and fevers, a practice that persisted for centuries. But it was the isolation of purified arsenic trioxide during the medieval period, attributed in part to the Arab alchemist Jabir ibn Hayyan, that gave would-be poisoners their most effective tool." },
+      { type: "heading", text: "The Borgias and the Art of the Subtle Kill" },
+      { type: "paragraph", text: "No family became more synonymous with Renaissance poisoning than the Borgias, and while historians debate how much of their reputation was propaganda, the accusations against them were remarkably specific. Pope Alexander VI and his son Cesare were said to use a compound called 'la cantarella,' believed to contain arsenic, to dispose of wealthy cardinals whose estates they wished to seize. What made these allegations credible to contemporaries was the pattern: powerful men close to the Borgias died suddenly, and the family consistently benefited. Whether entirely true or embellished, the Borgia legend shaped how all of Europe thought about poison and political power for generations." },
+      { type: "heading", text: "Inheritance Powder and the French Courts" },
+      { type: "paragraph", text: "In seventeenth-century France, arsenic poisoning became so widespread it triggered one of history's first organised forensic investigations. The Affair of the Poisons, which erupted between 1677 and 1682, revealed a thriving underground trade in poisons, love potions, and black masses centred on figures like the fortune-teller Catherine Monvoisin — known as 'La Voisin.' Investigations led uncomfortably close to Louis XIV's own mistress, Madame de Montespan, forcing the king to shut down the inquiry before the full truth could emerge. Over 300 people were arrested and 36 executed, yet the scandal's upper reaches were deliberately buried." },
+      { type: "heading", text: "Why Arsenic Was So Difficult to Detect" },
+      { type: "paragraph", text: "For most of history, poisoners enjoyed near-complete impunity because physicians could not distinguish arsenic toxicity from cholera, gastroenteritis, or a dozen other common fatal illnesses. The symptoms — vomiting, diarrhoea, peripheral numbness, progressive organ failure — were tragically familiar in an era of endemic disease. Arsenic also had the grim advantage of mimicking natural decline when administered in small repeated doses over weeks, allowing a poisoner to appear a grieving caretaker. Coroners lacked both the conceptual framework and the chemical tools to suspect anything other than natural causes." },
+      { type: "heading", text: "James Marsh and the Birth of Forensic Toxicology" },
+      { type: "paragraph", text: "The age of the undetectable poison ended in 1836 when British chemist James Marsh developed what became known as the Marsh test — an elegant chemical procedure that could detect arsenic in biological tissue with extraordinary sensitivity. Marsh was prompted by frustration after a known poisoner escaped conviction because his earlier tests lacked the precision to satisfy a jury. The Marsh test converted arsenic compounds into arsine gas, which deposited a distinctive metallic 'arsenic mirror' on a glass surface, visible to the naked eye. For the first time, prosecutors could present physical, reproducible chemical evidence of poisoning in court." },
+      { type: "heading", text: "The Unexpected Victorian Love Affair With Arsenic" },
+      { type: "paragraph", text: "Paradoxically, the same century that invented arsenic detection also saw the substance woven into the fabric of everyday Victorian life. Scheele's Green, a vivid emerald pigment made from copper arsenite, coloured wallpapers, fabrics, candles, toys, and artificial flowers in middle-class homes across Britain and America. When wallpaper became damp, moulds could convert the arsenic into volatile trimethylarsine gas, a phenomenon that some researchers believe contributed to several unexplained deaths — including, controversially, the slow decline of Napoleon Bonaparte on the damp island of St. Helena. The Victorians simultaneously feared the poison and could not stop decorating with it." },
+      { type: "heading", text: "A Legacy Written in Chemistry and Law" },
+      { type: "paragraph", text: "The long history of arsenic poisoning fundamentally shaped the development of modern forensic science, toxicology, and criminal law. The demand for reliable chemical evidence in poison trials drove investment in laboratory technique, gave chemistry a new social urgency, and established the principle that expert scientific testimony could be decisive in court. Today arsenic remains a global public-health concern through contaminated groundwater in Bangladesh, West Bengal, and parts of Latin America, affecting tens of millions of people. The king of poisons never truly abdicated — it merely changed its arena." }
     ]
   },
   personOfTheDay: {
-    name: "Pachacuti Inca Yupanqui",
-    lifespan: "c. 1418–1471",
-    category: "Rulers & Empire Builders",
-    image: "https://upload.wikimedia.org/wikipedia/commons/6/64/Brooklyn_Museum_-_Pachacuti%2C_Tenth_Inca%2C_1_of_14_Portraits_of_Inca_Kings_%28cropped%29.jpg",
-    bio: "Pachacuti Inca Yupanqui — whose name translates roughly as 'Earth-Shaker' or 'He Who Transforms the World' — was the ninth Sapa Inca and the ruler who transformed a small Andean kingdom centred on Cusco into Tawantinsuyu, the largest empire in pre-Columbian American history. Before his reign, the Inca controlled a modest territory in the Peruvian highlands. Within a generation, Pachacuti had expanded that domain from southern Colombia to central Chile, a distance of over 4,000 kilometres, making it contemporaneous with the Ottoman Empire in scale and administrative complexity.\n\nHis ascent to power began dramatically around 1438, when a rival Andean power, the Chanka confederation, launched a massive assault on Cusco while his father Viracocha Inca fled the city. The young prince — then known as Cusi Yupanqui — organised the city's defence, reportedly rallying the army with a speech that became legendary in Inca oral tradition. After defeating the Chanka in a battle the chronicles describe as almost miraculous, he deposed his father and took the throne, adopting the name Pachacuti to signal a new cosmic era. This founding myth gave his reign a divine legitimacy he exploited with extraordinary political skill.\n\nAs emperor, Pachacuti was not merely a conqueror but a systematic administrator and builder. He redesigned Cusco from the ground up, laying it out in the shape of a puma, and is credited with commissioning the construction of Machu Picchu as a royal estate. He codified the mit'a labour system, standardised the quipu accounting system of knotted strings, and set the template for the road network that would become the Qhapaq Ñan. When he died around 1471, having handed military campaigns to his son Topa Inca, he left behind not just conquered territory but a functioning imperial state with institutions robust enough to survive him for another sixty years."
+    name: "Mathieu Orfila",
+    lifespan: "1787–1853",
+    category: "Science & Medicine",
+    image: "https://upload.wikimedia.org/wikipedia/commons/6/67/Mathieu_Joseph_Bonaventure_Orfila.jpg",
+    bio: "Mathieu Joseph Bonaventure Orfila was born on the island of Menorca in 1787 and went on to become one of the founding fathers of forensic toxicology — a discipline he effectively invented through sheer intellectual force. After studying medicine in Valencia and Barcelona, he moved to Paris, where he earned his doctorate and rapidly ascended through the French academic world, eventually becoming dean of the Paris Faculty of Medicine. His adopted country gave him the platform to transform a fragmented collection of alchemical observations into a rigorous scientific field.\n\nIn 1813, Orfila published his landmark work Traité des poisons, known in English as A General System of Toxicology. This exhaustive text systematically categorised poisons by their chemical and physiological effects, described methods of detection, and established protocols for post-mortem examination that could withstand legal scrutiny. The work was immediately translated into multiple languages and became the standard reference for physicians, chemists, and lawyers across Europe and the Americas for decades. It was the first serious attempt to give poisoning cases the same evidentiary rigour applied to other crimes.\n\nOrfila became a celebrated courtroom expert whose testimony could make or break a murder trial. His most famous appearance came in the 1840 trial of Marie Lafarge, accused of poisoning her husband with arsenic. Orfila demonstrated arsenic in the body using refined chemical techniques, helping secure her conviction and cementing the principle that chemistry belonged in the courtroom. He was not without controversy — his methods were sometimes challenged by rival chemists, and his forceful personality made him enemies — but his legacy as the man who gave forensic science its first systematic language is secure."
   },
   onThisDay: {
-    headline: "Adolf Hitler Born in Braunau am Inn, Austria",
-    date: "April 20, 1889",
-    summary: "On April 20, 1889, Adolf Hitler was born in the small Austrian border town of Braunau am Inn, the fourth child of customs official Alois Hitler and his wife Klara. Nothing in the unremarkable circumstances of his birth — in a modest inn near the river crossing between Austria and Bavaria — suggested the catastrophic role he would come to play in the twentieth century. His early life was marked by academic failure, a rejected application to the Vienna Academy of Fine Arts, and years of drifting poverty in Vienna and Munich before the First World War gave his life a shape and purpose it had previously lacked.\n\nHitler served as a corporal on the Western Front during the First World War, was twice decorated for bravery, and was temporarily blinded by a British gas attack near Ypres in October 1918. He experienced Germany's defeat as a personal trauma and a political betrayal, and it was in this psychic wound that his fanatical nationalism and virulent antisemitism took their most dangerous form. By 1933 he was Chancellor of Germany, and by 1939 his decisions had plunged the world into a conflict that would kill between 70 and 85 million people — making the date of his birth one of the most consequential, and most sobering, in the modern calendar.",
-    image: "https://images.pexels.com/photos/37109766/pexels-photo-37109766.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    headline: "Rome Founded — According to Roman Tradition",
+    date: "April 21, 753 BC",
+    summary: "According to the Roman calendar and the calculations of the scholar Marcus Terentius Varro, April 21, 753 BC was the date on which Romulus founded the city of Rome — marking the moment he ploughed a sacred boundary furrow around the Palatine Hill and laid the first stones of what would become the ancient world's greatest city. The Romans celebrated this date annually as the Parilia, a pastoral festival later rebranded as the Natalis Urbis Romae, the birthday of Rome. Elaborate public ceremonies, games, and sacrifices were held on the day, and the tradition was vigorously maintained by emperors who understood the symbolic power of anchoring Rome's destiny to a precise, mythologised moment of origin.\n\nModern archaeologists and historians are confident that the founding date is legendary rather than historical, but the archaeology of the Palatine Hill does confirm continuous habitation stretching back to at least the tenth century BC, and a genuine process of urban consolidation appears to have occurred in the eighth century. What the Romans created by fixing a birthday for their city was something equally important: a shared civic mythology that bound together a conquering empire's wildly diverse populations under a single founding narrative. The story of Romulus, the sacred furrow, the fratricide of Remus, and the wolf-suckled twins gave Rome an identity as durable as its aqueducts.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Celebrazione_del_2777_Natale_di_Roma_-_Pietas_Comunit%C3%A0_Gentile_2.jpg"
   }
 };

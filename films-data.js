@@ -1,18 +1,18 @@
 // films-data.js
-// Auto-updated 2026-04-20 — do not edit manually
+// Auto-updated 2026-04-21 — do not edit manually
 
 var FILMS_DATA = {
-  date: "2026-04-20",
+  date: "2026-04-21",
   film: {
-    title: "The Wailing",
-    director: "Na Hong-jin",
+    title: "The Happiest Day in the Life of Olli Mäki",
+    director: "Juho Kuosmanen",
     year: 2016,
-    genres: ["Horror", "Mystery", "Thriller"],
-    desc: "A bumbling small-town policeman in a remote Korean village begins investigating a series of gruesome murders after a mysterious Japanese stranger arrives and a strange illness starts possessing locals. Na Hong-jin weaves together folk religion, shamanism, Christian imagery, and raw visceral dread into something that defies easy genre categorization — it is a horror film that genuinely philosophizes about the nature of evil and doubt. At over two and a half hours, it never drags, building an atmosphere of creeping wrongness that crescendos into one of the most devastating and disorienting finales in modern genre cinema. The Wailing is the rare horror film that leaves you not just shaken but genuinely uncertain about what you witnessed, rewarding obsessive re-examination.",
-    cast: ["Kwak Do-won", "Hwang Jung-min", "Chun Woo-hee"],
+    genres: ["Drama", "Sports", "Romance"],
+    desc: "Shot in luminous black-and-white 16mm, this Finnish gem follows a real-life lightweight boxer preparing for the 1962 world championship fight — only to find himself hopelessly, distractingly in love. Director Juho Kuosmanen keeps everything intimate and unhurried, trusting small gestures and quiet faces over spectacle, and the result feels closer to a folk song than a sports film. Jarkko Lahti is utterly disarming as Olli, a man whose gentle heart keeps pulling him away from the brutal ambition everyone else has mapped out for him. The film won the Un Certain Regard prize at Cannes and remains one of the most tender and quietly radical sports films ever made — a reminder that choosing love over glory is its own kind of victory.",
+    cast: ["Jarkko Lahti", "Oona Airola", "Eero Milonoff"],
     rating: 99,
     ratingSource: "Rotten Tomatoes",
-    ratingExtra: "Grand Bell Awards Best Film",
-    posterUrl: "https://upload.wikimedia.org/wikipedia/en/e/eb/The_Wailing_%28film%29.png"
+    ratingExtra: "Un Certain Regard Prize, Cannes 2016",
+    posterUrl: "https://upload.wikimedia.org/wikipedia/en/7/7e/The_Happiest_Day_in_the_Life_of_Olli_M%C3%A4ki.jpg"
   }
 };

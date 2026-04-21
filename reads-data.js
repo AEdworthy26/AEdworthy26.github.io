@@ -1,19 +1,19 @@
 // reads-data.js
-// Auto-updated 2026-04-20 — do not edit manually
+// Auto-updated 2026-04-21 — do not edit manually
 
 var READS_DATA = {
-  date: "2026-04-20",
+  date: "2026-04-21",
   book: {
-    title: "The Passenger",
-    author: "Cormac McCarthy",
-    year: 2022,
-    genres: ["Literary Fiction", "Philosophy", "Thriller"],
-    desc: "Bobby Western is a salvage diver haunted by guilt, grief, and the ghost of his brilliant, doomed sister — a woman who may have been the greater mind of the two. McCarthy weaves together quantum physics, Cold War paranoia, jazz, and metaphysics into a novel that reads like no other: dense, allusive, and strangely beautiful in its desolation. The prose hits with the force of late McCarthy — sentences that feel carved rather than written — while the ideas cut even deeper, asking what it means to exist in a universe indifferent to consciousness. It is a novel about mathematics and madness, love and complicity, and the unbearable weight of simply being alive.",
-    whyRead: "With the dust now fully settled on its divisive reception, this is the moment to read The Passenger on its own terms — as one of the strangest and most serious American novels of the century so far.",
-    rating: 3.9,
+    title: "Say Nothing: A True Story of Murder and Memory in Northern Ireland",
+    author: "Patrick Radden Keefe",
+    year: 2018,
+    genres: ["True Crime", "Political History", "Narrative Non-Fiction"],
+    desc: "Patrick Radden Keefe uses the 1972 abduction and murder of Jean McConville — a widowed mother of ten dragged from her Belfast home by the IRA — as the entry point into a breathtaking reconstruction of the entire arc of the Troubles. The book follows real figures including Dolours Price, Gerry Adams, and Brendan Hughes with the propulsive tension of a thriller, never letting moral complexity collapse into easy judgement. Keefe is extraordinary at showing how ordinary people get pulled into extraordinary violence, and how movements sustain themselves through silence, myth, and the suppression of inconvenient truths. The writing is among the finest in contemporary non-fiction — precise, empathetic, and haunting long after the last page.",
+    whyRead: "With political violence, contested memory, and the long shadows of armed conflict still shaping headlines around the world, this book feels urgently relevant — and it is simply one of the most gripping things you will read this year.",
+    rating: 4.4,
     ratingSource: "Goodreads",
-    ratingCount: "60,000+",
-    coverUrl: "https://covers.openlibrary.org/b/id/13072232-L.jpg",
-    amazonUrl: "https://www.amazon.co.uk/dp/0330457438"
+    ratingCount: "150,000+",
+    coverUrl: "https://covers.openlibrary.org/b/id/9242450-L.jpg",
+    amazonUrl: "https://www.amazon.co.uk/dp/8466356096"
   }
 };

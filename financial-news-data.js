@@ -1,61 +1,61 @@
 // financial-news-data.js
-// Auto-updated 2026-04-20 — do not edit manually
+// Auto-updated 2026-04-21 — do not edit manually
 
 var FINANCIAL_NEWS = {
-  date: "2026-04-20",
+  date: "2026-04-21",
   main: {
-    title: "Oil Surges and Stock Futures Tumble as Iran Tensions Reignite Market Volatility",
+    title: "Oil Surges and Markets Rattle as US-Iran Tensions Threaten Energy Supply",
     category: "Markets",
     content: [
-      "Global financial markets lurched back into uncertainty on Monday as a weekend flare-up in US-Iran tensions sent oil prices sharply higher and US stock index futures tumbling. The trigger was a combination of developments: reports that an Iranian ship had been seized and Iran's renewed closure of the Strait of Hormuz, a critical chokepoint through which a significant portion of the world's oil supply flows. Traders who had spent the previous three weeks riding a remarkable rally — one that had pushed the S&P 500 past the 7,000 mark to record highs — were suddenly forced to reassess their optimism about a near-term resolution to the conflict.",
-      "Oil markets bore the brunt of the repricing, with crude prices jumping sharply as the Strait of Hormuz closure once again choked off energy flows from the Persian Gulf. European natural gas futures also surged on the news, reflecting the continent's particular vulnerability to Middle Eastern energy disruptions. The moves underscored just how tightly energy markets remain tethered to the trajectory of the war, which began in earnest when the US and Israel launched attacks on Iran on February 28th.",
-      "The backdrop to Monday's selloff had been one of cautious optimism. Heading into the weekend, there had been signals that a peace deal might be within reach, prompting a surge in equities and a pullback in energy prices. Mortgage rates had even begun to fall, with major UK lenders cutting rates as markets took heart from the possibility of a truce. That optimism has now been sharply tested, with analysts warning that the market's tendency to swing between hope and fear over the Iran conflict could persist for weeks or months to come.",
-      "The financial fallout is being felt well beyond energy markets. In the United Kingdom, Chancellor Rachel Reeves summoned the bosses of Britain's five largest retail banks — HSBC, Barclays, Lloyds, NatWest and Santander — to discuss how to limit the economic damage from the Middle East crisis. The emergency meeting reflects growing concern among policymakers that prolonged conflict and elevated energy prices could tip already fragile consumer and business confidence into a sharper downturn. Meanwhile, luxury goods conglomerates including Louis Vuitton and Hermès are already reporting plummeting sales in Persian Gulf nations, and are scrambling to redirect growth strategies toward other regions.",
-      "Despite Monday's turbulence, some market strategists argue that the underlying bull case for equities remains intact. The S&P 500's epic comeback rally — which saw it recover from earlier war-related lows to blow through 7,000 — suggests that many investors have begun to price the Iran conflict as a manageable rather than existential risk. Whether that confidence proves well-founded will depend heavily on how quickly diplomatic efforts can gain traction, and whether the latest Hormuz closure proves to be a brief escalation or the beginning of a more sustained disruption to global energy supplies."
+      "Global markets endured a volatile session as oil prices spiked sharply following a US seizure of an Iranian vessel that threw cold water on hopes for a peace deal in the region. Brent crude, the international benchmark, jumped 5% to around $95 a barrel, its sharpest single-day move in months. European stock markets bore the brunt of the sell-off, with London's FTSE 100 sliding and UK natural gas prices rising amid mounting fears that the Strait of Hormuz — through which a significant portion of the world's oil supply passes — could face prolonged disruption.",
+      "The Strait of Hormuz is one of the world's most critical energy chokepoints, and any sustained closure or disruption would send shockwaves through global commodity markets. Traders and analysts have grown increasingly anxious about the possibility of supply interruptions that could push crude prices well beyond current levels. Energy-intensive industries, airlines, and logistics companies are among those most exposed to the price volatility, with knock-on effects anticipated across consumer prices and corporate margins in the weeks ahead.",
+      "The spike in oil prices comes at a particularly uncomfortable moment for central banks and policymakers already grappling with sticky inflation. Higher energy costs feed directly into transportation, manufacturing, and home heating bills, threatening to reignite inflationary pressures just as some major economies had begun to see relief. Markets are now pricing in a more cautious path for interest rate cuts, with investors reassessing timelines that had previously anticipated easing monetary policy later in 2026.",
+      "However, there were signs of partial stabilisation as Tuesday's session opened, with Bloomberg reporting that a global stock rally had resumed after traders weighed the possibility that Iran could yet join a new round of peace talks with the US ahead of a looming ceasefire deadline. Oil dipped modestly from Monday's highs, and gold — which had rallied as a safe-haven asset — also pulled back slightly as risk appetite cautiously returned. The swings underscored just how sensitive financial markets have become to every headline emerging from the conflict, with sentiment shifting dramatically within hours based on diplomatic signals.",
+      "For the UK, the conflict has brought renewed urgency to the question of energy independence and the pace of the clean-energy transition. The British government moved swiftly to confirm plans to shift older wind and solar farms onto fixed-price contracts, covering almost a third of Great Britain's power market, in a bid to insulate households and businesses from wholesale gas price volatility. The episode has illustrated starkly the economic cost of fossil fuel dependency, and analysts expect the geopolitical instability to accelerate investment in domestic renewable capacity — even as, in the short term, consumers and businesses continue to absorb the financial pain of elevated energy prices.",
     ],
-    image: "https://images.mktw.net/im-32839821",
-    source: "MarketWatch",
-    sourceUrl: "https://www.marketwatch.com/story/investors-brace-for-renewed-volatility-after-this-weekends-iran-developments-4b707c11?mod=mw_rss_topstories"
+    image: "https://i.guim.co.uk/img/media/38ea08a8aadf4ad42de7840df22c917da498005a/628_0_5002_4000/master/5002.jpg?width=1200&quality=85&auto=format&fit=max&s=cac89f19f99b32d73ce1dcea520c0542",
+    source: "The Guardian",
+    sourceUrl: "https://www.theguardian.com/business/2026/apr/20/oil-prices-rise-markets-fall-us-iran-ftse-100-gas-strait-of-hormuz"
   },
   secondary: [
     {
       id: "fn1",
-      title: "Mortgage Rates Begin to Ease as Markets Digest Possible Iran Truce",
-      summary: "UK mortgage rates are showing signs of falling after reaching a peak driven by Iran war anxiety, with major lenders cutting rates as peace talk hopes briefly lifted market sentiment.",
+      title: "Tim Cook to Step Down as Apple CEO, John Ternus Named Successor",
+      summary: "Apple has announced that hardware engineering chief John Ternus will succeed Tim Cook as CEO on 1 September, ending Cook's nearly 15-year tenure at the helm.",
       body: [
-        "Several of Britain's major mortgage lenders have begun trimming their rates following a period of elevated borrowing costs tied to uncertainty surrounding the Iran conflict, offering some relief to homebuyers and those remortgaging. The reductions came as financial markets briefly priced in a higher probability of a ceasefire, pushing down gilt yields and giving lenders room to pass on savings.",
-        "The moves highlight how closely UK household finances have become linked to geopolitical developments thousands of miles away. However, with the Strait of Hormuz now closed again and fresh volatility gripping markets, analysts cautioned that any sustained decline in mortgage rates may be short-lived unless a genuine diplomatic breakthrough materialises."
+        "Tim Cook, who oversaw a staggering 1,900% surge in Apple's stock price during his tenure, will transition to the role of executive chairman while John Ternus — currently head of hardware engineering — takes the reins as chief executive from 1 September. The announcement marks one of the most significant leadership transitions in Silicon Valley in years, with investors and analysts closely scrutinising what the change signals for Apple's strategic direction.",
+        "Ternus is expected to bring a renewed focus on hardware innovation as Apple positions itself for the AI era, at a time when the company faces intense competition and pressure to deliver breakthrough products. Cook's continued presence as executive chairman is seen as providing continuity, though markets will be watching closely to see whether Ternus can maintain the disciplined operational culture and investor confidence that defined his predecessor's era."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/cfbf/live/3826df60-3bbf-11f1-8a14-19337d79de52.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/cwyx2q86lgpo?at_medium=RSS&at_campaign=rss",
-      category: "Economics"
-    },
-    {
-      id: "fn2",
-      title: "ABF Poised to Reveal Outcome of Primark and Food Business Demerger Plan",
-      summary: "Associated British Foods is expected this week to announce whether it will proceed with a long-mooted demerger that would separate the Primark fashion chain from its food brands including Kingsmill, Twinings and its sugar operations.",
-      body: [
-        "The potential breakup of Associated British Foods would be one of the most significant corporate restructurings in the UK retail sector in years, freeing Primark to operate independently from the group's sprawling food portfolio. Retail analysts have broadly argued that a split would unlock shareholder value by allowing both businesses to pursue distinct strategies suited to their very different market dynamics.",
-        "The timing is delicate: both arms of the business are navigating a challenging environment, with Primark facing cost-of-living pressures on consumer spending and the food division grappling with commodity price volatility exacerbated by the Middle East conflict. The Weston family, which controls ABF, will be weighing whether the structural benefits of a demerger outweigh the execution risks of splitting the conglomerate during a period of broader economic uncertainty."
-      ],
-      image: "https://i.guim.co.uk/img/media/4bd94f3a503b44059c5ead27e26de5154927a7d5/484_0_4840_3872/master/4840.jpg?width=1200&quality=85&auto=format&fit=max&s=e595d4a90d15c66617a0adcbef3175d0",
+      image: "https://i.guim.co.uk/img/media/fb3012d09f0ab2b0465797bf80bced5fb684c326/0_0_1500_1200/master/1500.jpg?width=1200&quality=85&auto=format&fit=max&s=439d7e2f41f3c5c06f0c4b2f1a38ae3b",
       source: "The Guardian",
-      url: "https://www.theguardian.com/business/2026/apr/20/abf-outcome-primark-spin-off-plan",
+      url: "https://www.theguardian.com/technology/2026/apr/20/tim-cook-apple-ceo-replacement",
       category: "Corporate"
     },
     {
-      id: "fn3",
-      title: "Luxury Brands Pivot Away from Middle East as War Hammers Gulf Sales",
-      summary: "High-end fashion houses including Louis Vuitton and Hermès are redirecting their growth strategies after sales in Persian Gulf nations collapsed in the wake of the US-Israel conflict with Iran.",
+      id: "fn2",
+      title: "UK Plans Fixed-Price Contracts for Wind and Solar Farms to Shield Against Energy Shocks",
+      summary: "The UK government has confirmed it will move older renewable energy installations onto fixed-price deals, covering nearly a third of the country's power market, to reduce household and business exposure to volatile gas prices.",
       body: [
-        "The luxury goods sector, which had made the Middle East a centrepiece of its expansion plans over the past decade, is now urgently recalibrating after the Iran war devastated foot traffic and consumer confidence across Gulf markets. Both tourist arrivals and local high-net-worth spending have dropped sharply in the region, directly hitting revenues for brands that had invested heavily in flagship stores and regional partnerships.",
-        "The episode serves as a stark reminder of the concentration risk that comes with over-reliance on any single region, and is prompting boardroom conversations across the luxury sector about diversifying exposure toward markets in Asia, the Americas and parts of Africa. Investors in luxury conglomerates are watching closely to see how quickly sales can be rerouted, and whether the Middle East rebound — when it eventually comes — will be swift enough to limit lasting damage to earnings."
+        "In what is being described as the government's most radical intervention in the electricity market to date, older wind and solar farms will be transitioned away from market-linked pricing and onto stable, fixed-price contracts. The move is designed to break the link between wholesale gas prices — which have surged amid the Iran conflict — and the cost of electricity generated from renewables, which currently rises and falls in tandem with gas.",
+        "The reform is significant both for its market implications and its signal about the UK's long-term energy strategy: by guaranteeing a floor and ceiling on prices for a substantial chunk of generating capacity, the government hopes to offer greater predictability for consumers and investors alike. Energy analysts say the policy, if successfully implemented, could meaningfully dampen the impact of future commodity price spikes on UK electricity bills."
       ],
-      image: "https://static01.nyt.com/images/2026/04/19/multimedia/19biz-luxury-middle-east-01-fvqj/19biz-luxury-middle-east-01-fvqj-mediumSquareAt3X.jpg",
-      source: "The New York Times",
-      url: "https://www.nytimes.com/2026/04/19/business/luxury-brands-bet-on-the-middle-east-war-has-damaged-their-plans.html",
-      category: "Business"
+      image: "https://i.guim.co.uk/img/media/1b421be8971c5f4e293889e1c1004b2259e48cf8/0_0_4638_3710/master/4638.jpg?width=1200&quality=85&auto=format&fit=max&s=d841d35b7e5810b0d75396e51d233a96",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/environment/2026/apr/21/uk-shifts-older-wind-and-solar-farms-to-fixed-price-deals-to-reduce-price-shocks",
+      category: "Economics"
+    },
+    {
+      id: "fn3",
+      title: "Chinese Finance Sector Overtakes Manufacturing Growth Amid IPO Boom",
+      summary: "China's financial sector has outpaced manufacturing growth for the first time in years, driven by a surge in IPO activity and a surprise economic rebound in the latest quarter.",
+      body: [
+        "Chinese manufacturing — long the engine of the country's economic growth — has been overtaken by the finance sector for the first time in recent memory, as a wave of share sales during a buoyant IPO market turbocharged capital market activity. The development reflects a broader structural shift in China's economy, with domestic consumption and financial services playing an increasingly prominent role alongside the traditional industrial base.",
+        "The surprise economic rebound adds a degree of optimism to the global growth outlook, even as trade tensions and energy-price pressures cloud the picture elsewhere. Investors are watching whether the IPO momentum is sustainable, or whether it represents a short-term surge that could fade if global risk sentiment deteriorates further amid ongoing geopolitical uncertainty."
+      ],
+      image: "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iPlthEOlEI.E/v3/1200x-1.png",
+      source: "Bloomberg",
+      url: "https://www.bloomberg.com/news/articles/2026-04-21/chinese-manufacturing-growth-overtaken-by-finance-amid-ipo-boom",
+      category: "International"
     }
   ]
 };

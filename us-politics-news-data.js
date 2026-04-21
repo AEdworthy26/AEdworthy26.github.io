@@ -1,61 +1,61 @@
 // us-politics-news-data.js
-// Auto-updated 2026-04-20 — do not edit manually
+// Auto-updated 2026-04-21 — do not edit manually
 
 var US_POLITICS_NEWS = {
-  date: "2026-04-20",
+  date: "2026-04-21",
   main: {
-    title: "Insider Trading Suspicions Cast Shadow Over Trump Presidency as Pattern of Pre-Announcement Trades Emerges",
+    title: "Labor Secretary Lori Chavez-DeRemer Resigns Amid Misconduct Investigation, Becoming Third Cabinet Departure of Trump's Second Term",
     category: "Politics",
     content: [
-      "A BBC News investigation has identified a recurring pattern of suspicious trading activity that appears to precede major public announcements by President Donald Trump, raising serious questions about potential insider trading in and around his administration. The analysis found notable spikes in trades on specific stocks and assets in the hours and days before Trump made consequential policy declarations, tariff decisions, and geopolitical statements. The findings have reignited longstanding concerns from ethics watchdogs and Democratic lawmakers about the blurring of financial self-interest and executive power in Trump's second term.",
-      "The pattern documented by the BBC is particularly striking given the market-moving nature of many of Trump's announcements, which have ranged from sweeping tariff policies — many of which were later struck down by the Supreme Court — to dramatic foreign policy actions such as the ongoing conflict with Iran. Traders positioned ahead of such announcements would stand to make substantial profits, and critics argue that the consistency of the pattern is too pronounced to be dismissed as coincidence. The White House has not formally responded to the specific findings, but Trump allies have previously characterized such scrutiny as politically motivated.",
-      "The investigation adds to a broader cloud of financial controversy that has followed Trump throughout his second term. Allegations of foreign actors — including Syrian billionaires reportedly invoking the Trump name to influence Washington policy while Trump family business deals are being negotiated — have painted a picture of an administration where the lines between public governance and private enrichment have become dangerously blurred. Ethics experts have warned that without robust enforcement mechanisms and transparent financial disclosures, the potential for corruption is not only structural but practically uncontrollable.",
-      "Congressional Democrats have seized on the BBC findings to call for renewed investigations, with several members of the House Financial Services Committee demanding that the Securities and Exchange Commission open a formal inquiry. Republicans have largely deflected these calls, accusing the opposition of manufacturing scandals ahead of November's midterm elections. However, with Trump's approval ratings already slipping over the war in Iran and rising gas prices, even some moderate Republicans privately acknowledge that additional financial controversy is poorly timed for the party.",
-      "The insider trading suspicions arrive at a moment when public trust in the Trump administration is under significant strain. A recent Quinnipiac poll found that 51 percent of registered voters blame Trump 'a lot' for rising gas prices, and the administration is facing mounting pressure on multiple fronts heading into the midterms. If federal investigators or congressional committees choose to pursue the trading pattern evidence more aggressively, it could become one of the defining political and legal stories of Trump's second term — testing not only his administration's accountability but the resilience of American democratic institutions in the face of sustained ethical challenges."
+      "Labor Secretary Lori Chavez-DeRemer has stepped down from her position in the Trump administration, becoming the third cabinet official to depart during President Trump's second term in office. Her resignation came as she faced an active internal investigation into allegations of misconduct, with multiple scandals having clouded her tenure at the Department of Labor. The White House confirmed her departure, and the news quickly drew attention to the growing pattern of cabinet instability in the administration.",
+      "Chavez-DeRemer, a former Republican congresswoman from Oregon, had been considered a somewhat unconventional pick for the Labor Secretary role given her past record of occasionally siding with labor unions — a position that made some conservatives uneasy about her nomination. Despite winning Senate confirmation, her time leading the department was almost immediately overshadowed by questions about her conduct. The internal inquiry into allegations of wrongdoing ultimately proved too significant for her to survive politically within the administration.",
+      "Her exit marks a significant moment in the Trump administration's second term, raising questions about vetting processes and internal accountability within the White House's cabinet selection and oversight mechanisms. Reports indicate that four cabinet and other senior officials have now stepped down from Trump's second-term cabinet in total, a number that signals unusual turbulence even by the standards of administrations that typically experience some early turnover. Political analysts note that the pace of departures is drawing scrutiny from both parties on Capitol Hill.",
+      "The Department of Labor now faces a period of uncertainty as the administration will need to identify, nominate, and secure Senate confirmation for a replacement secretary. The department oversees key policy areas including workplace safety, unemployment insurance, and federal labor regulations — all of which remain active areas of legislative and executive activity. Any extended leadership vacuum could slow ongoing regulatory proceedings and complicate the administration's broader economic agenda.",
+      "Democrats wasted little time in criticizing the circumstances surrounding Chavez-DeRemer's departure, calling for greater transparency around the nature of the misconduct allegations and the internal investigation that preceded her resignation. Republicans on the Hill remained largely quiet, though some expressed private concern about the optics of repeated cabinet departures in such a compressed timeframe. The episode adds to a broader narrative about management and personnel challenges within Trump's second-term White House, and it is likely to intensify Senate scrutiny of future cabinet nominees."
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/0993/live/bfcf1060-387a-11f1-9b73-21c33a4cdac9.jpg",
-    source: "BBC News",
-    sourceUrl: "https://www.bbc.com/news/articles/cge0grppe3po?at_medium=RSS&at_campaign=rss"
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/8cc0/live/8788d340-3211-11f1-be38-331992fd98eb.jpg",
+    source: "NPR",
+    sourceUrl: "https://www.npr.org/2026/04/20/nx-s1-5739251/labor-secretary-trump-chavez-deremer"
   },
   secondary: [
     {
       id: "us1",
-      title: "Democrats Eye Expanding Midterm Battlefield as Republican Incumbents Struggle",
-      summary: "Democrats are targeting a growing number of Republican-held House seats, including districts in Tennessee, as Trump's sagging approval ratings weaken GOP incumbents heading into November.",
+      title: "Trump Fights Virginia Redistricting Ballot Measure in Last-Minute Telerally Push",
+      summary: "President Trump personally intervened ahead of Virginia's redistricting vote, urging voters to reject a ballot measure he warned could hand Democrats multiple House seats.",
       body: [
-        "With President Trump's approval ratings dragged down by the war in Iran and surging gas prices, Democratic strategists are broadening their list of competitive House targets beyond traditional battlegrounds, eyeing seats in states like Tennessee that were once considered safely Republican. Several GOP incumbents are reportedly struggling to raise campaign funds, a warning sign that donor enthusiasm within the party may be waning ahead of a critical midterm cycle.",
-        "The expanding Democratic battlefield reflects a broader strategic shift, with party leaders sensing an opportunity to retake the House majority by contesting districts that would not normally be in play. Virginia's ongoing redistricting vote, which could redraw congressional maps in Democrats' favor, further complicates Republicans' path to holding their slim majority in November."
+        "President Trump joined Speaker Mike Johnson on a last-minute telerally call on Monday evening, imploring Virginia voters to vote down a redistricting ballot measure that Republicans warn could give Democrats as many as four additional pickup opportunities in the House ahead of the November elections. Trump called the referendum 'a blatant partisan power grab that nobody's really ever seen anything like it,' framing the vote as a national-stakes battle over congressional control.",
+        "Virginia voters went to the polls Tuesday on the special election ballot measure, with results reflecting the intense partisan interest both parties have invested in the outcome. The redistricting fight underscores how competitive the battle for the House majority has become, with both parties treating state-level redistricting contests as critical fronts in the broader war for congressional power."
       ],
-      image: "https://static01.nyt.com/images/2026/04/19/multimedia/19nat-house-battleground-hczj/19nat-house-battleground-hczj-mediumSquareAt3X.jpg",
-      source: "The New York Times",
-      url: "https://www.nytimes.com/2026/04/19/us/politics/house-battleground-midterms-tennessee.html",
-      category: "Elections"
+      image: "https://thehill.com/wp-content/uploads/sites/2/2026/04/AP26108478884613-e1776526559412.jpg?w=900",
+      source: "The Hill",
+      url: "https://thehill.com/homenews/campaign/5840335-trump-virginia-redistricting-referendum-rally/",
+      category: "Politics"
     },
     {
       id: "us2",
-      title: "DOJ Demands Detroit-Area 2024 Election Ballots in Escalating Scrutiny Push",
-      summary: "The Justice Department, led by official Harmeet K. Dhillon, has demanded access to 2024 election ballots from the Detroit area to investigate alleged election law compliance issues, drawing fierce pushback from Democratic state officials.",
+      title: "Trump Justice Department Claims Presidential Records Belong to the President, Not the Public",
+      summary: "The Trump administration has argued in court that a nearly 50-year-old law requiring preservation of presidential records is unconstitutional, alarming historians who fear important documents could be destroyed.",
       body: [
-        "DOJ official Harmeet K. Dhillon formally requested Detroit-area ballots from Michigan's 2024 election, framing the demand as a probe into compliance with federal election law. Democratic state officials in Michigan have called the request baseless and politically motivated, vowing to scrutinize the legal grounds before cooperating with any handover of ballots.",
-        "The move represents a significant escalation in the Trump administration's ongoing efforts to relitigate and scrutinize the 2024 election results, a pattern critics say is designed to cast doubt on electoral integrity and intimidate election officials. Legal experts have questioned whether the DOJ has clear statutory authority to compel such access, setting the stage for a potential court battle."
+        "In a striking legal position, the Trump Justice Department has asserted that the Presidential Records Act — the law enacted after Watergate to ensure that presidential documents are preserved as public property — is unconstitutional, arguing instead that such records belong to the president personally. The administration made the argument as part of an ongoing lawsuit, a move that legal experts say could have sweeping implications for government transparency and historical accountability.",
+        "Historians and archivists have reacted with alarm, warning that if the administration's position were upheld by the courts, it could open the door to the destruction or concealment of records documenting major decisions made during a presidency. The Presidential Records Act was passed in 1978 specifically to prevent a repeat of disputes over record ownership that arose during and after the Nixon administration, making the Justice Department's argument particularly striking in its historical context."
       ],
-      image: "https://images.pexels.com/photos/7103199/pexels-photo-7103199.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      source: "The Washington Post",
-      url: "https://www.washingtonpost.com/politics/2026/04/19/michigan-2024-ballots-harmeet-dhillon/",
+      image: "https://images.unsplash.com/photo-1612278920639-cfbae3835fee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUcnVtcCUyMEp1c3RpY2UlMjBEZXBhcnRtZW50JTIwQ2xhaW1zJTIwUHJlc2lkZW50aWFsJTIwUmVjb3JkcyUyMEJlbG9uZyUyMHRvJTIwdGhlJTIwUHJlc2lkZW50JTJDJTIwTm90JTIwdGhlJTIwUHVibGljfGVufDB8MHx8fDE3NzY3NDc3NzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "NPR",
+      url: "https://www.npr.org/2026/04/20/g-s1-117887/trump-justice-department-presidential-records-lawsuit",
       category: "Politics"
     },
     {
       id: "us3",
-      title: "Tariff Refund Portal Opens as Companies Seek Relief After Supreme Court Ruling",
-      summary: "Two months after the Supreme Court struck down the majority of President Trump's tariffs, the federal government is launching an online portal Monday allowing companies to begin requesting billions in refunds.",
+      title: "House Ethics Panel Makes Rare Request for Information on Sexual Misconduct Allegations",
+      summary: "The House Ethics Committee has taken the unusual step of formally requesting information related to sexual misconduct, following a series of recent scandals that raised questions about how Congress handles such investigations.",
       body: [
-        "The U.S. government has designated Monday as the opening day for a customs portal through which businesses can file claims for refunds on tariffs paid under policies that the Supreme Court ruled unconstitutional earlier this year. The portal is expected to see enormous demand, with analysts estimating that hundreds of millions — potentially billions — of dollars in refunds could be claimed by American importers.",
-        "The Supreme Court's ruling was a major legal defeat for the Trump administration's aggressive use of executive tariff authority, and the refund process is likely to generate fresh political debate over the economic damage caused by the tariffs during the period they were in effect. The episode has become a key talking point for Democrats arguing that Trump's economic stewardship has been reckless and costly for American businesses and consumers."
+        "The House Ethics Committee, in a rare move, issued a formal request for information pertaining to sexual misconduct allegations, signaling heightened institutional attention to how Congress investigates and responds to such cases involving its own members. The action came in the wake of recent scandals that prompted both lawmakers and outside observers to question whether existing congressional processes for handling misconduct are sufficiently rigorous or transparent.",
+        "Ethics investigations involving sitting members of Congress are notoriously slow and opaque, and critics have long argued that the committee lacks the independence and enforcement tools necessary to hold members accountable in a timely manner. The panel's rare public move may reflect growing internal and external pressure on Congress to demonstrate that it can police its own members more effectively, particularly as public trust in federal institutions remains under scrutiny."
       ],
-      image: "https://images.unsplash.com/photo-1598432439250-0330f9130e14?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUYXJpZmYlMjBSZWZ1bmQlMjBQb3J0YWwlMjBPcGVucyUyMGFzJTIwQ29tcGFuaWVzJTIwU2VlayUyMFJlbGllZiUyMEFmdGVyJTIwU3VwcmVtZSUyMENvdXJ0JTIwUnVsaW5nfGVufDB8MHx8fDE3NzY2NjEzODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "NPR",
-      url: "https://www.npr.org/2026/04/19/nx-s1-5786635/tariff-refunds-customs-ace-portal",
-      category: "Economics"
+      image: "https://images.unsplash.com/photo-1743907727503-ff22a077a38c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxIb3VzZSUyMEV0aGljcyUyMFBhbmVsJTIwTWFrZXMlMjBSYXJlJTIwUmVxdWVzdCUyMGZvciUyMEluZm9ybWF0aW9uJTIwb24lMjBTZXh1YWwlMjBNaXNjb25kdWN0JTIwQWxsZWdhdGlvbnN8ZW58MHwwfHx8MTc3Njc0Nzc3NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "Washington Post",
+      url: "https://www.washingtonpost.com/politics/2026/04/20/house-ethics-sexual-misconduct/",
+      category: "Politics"
     }
   ]
 };

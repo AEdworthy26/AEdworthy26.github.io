@@ -1,60 +1,60 @@
 // uk-politics-news-data.js
-// Auto-updated 2026-04-20 — do not edit manually
+// Auto-updated 2026-04-21 — do not edit manually
 
 var UK_POLITICS_NEWS = {
-  date: "2026-04-20",
+  date: "2026-04-21",
   main: {
-    title: "Starmer Faces Commons Reckoning Over Mandelson Vetting Scandal",
+    title: "Officials Deliberately Withheld Mandelson Vetting Failure From Me, Starmer Tells Commons",
     category: "Politics",
     content: [
-      "Prime Minister Keir Starmer faces one of the most serious parliamentary tests of his premiership on Monday as he prepares to give a statement to the House of Commons over the mounting scandal surrounding his appointment of Peter Mandelson as UK Ambassador to the United States. The controversy centres on revelations that Mandelson was allowed to take up the post despite significant security vetting concerns — information that Starmer says was withheld from him by civil servants in the Foreign Office. The Prime Minister has said he was 'staggered' to learn only last week that officials had concealed these concerns from him, a claim that has drawn fierce scepticism from opposition benches.",
-      "At the heart of the crisis is the fate of senior civil servant Olly Robbins, who was sacked by Starmer on Thursday after it emerged he had, according to Sky News, effectively 'fixed' the vetting process to smooth Mandelson's passage to Washington. Robbins is expected to give his own account of events to MPs on Tuesday, making the next 48 hours extraordinarily consequential for Downing Street. Ministers have insisted that had Starmer known of the vetting failure at the time of the appointment, he would have blocked Mandelson from taking the role — a defence that critics argue strains credulity given the prime minister's close personal relationship with the former Labour grandee.",
-      "The Mandelson affair has refused to die down despite repeated attempts by the government to draw a line under it, and political analysts say it has struck at the very qualities — integrity and competence — that Starmer used to define himself against his predecessors. Opposition parties, including the Conservatives and Reform UK, have seized upon the scandal to demand the Prime Minister's resignation, arguing that either he knew about the vetting concerns and misled Parliament, or that he is so out of touch with his own government that he cannot be trusted to lead it. Both possibilities, they contend, are disqualifying.",
-      "The Guardian has reported that the key questions Starmer must answer include precisely when he was first made aware of any doubts about Mandelson's security clearance, who in Downing Street knew what and when, and whether the decision to sack Robbins was an attempt to scapegoat a loyal official. Labour MPs, many of whom were already uneasy about the Mandelson appointment on political grounds, are watching events closely. Some backbenchers have privately expressed frustration that the government appears to have allowed the situation to fester rather than getting ahead of the story when it first broke.",
-      "The scandal comes at a moment of acute vulnerability for Starmer, who is already under pressure over the economy, local elections in May, and an increasingly restless parliamentary party. In Scotland, the Prime Minister has been accused of 'skulking' and deliberately avoiding Scottish Labour leader Anas Sarwar, who called for Starmer to step down in February. With Robbins set to deliver what could be a damning public account of events on Tuesday, Downing Street's handling of the next two days may well define whether Starmer can stabilise his premiership or faces an escalating crisis of confidence within his own party.",
+      "Prime Minister Keir Starmer has told the House of Commons that senior officials deliberately withheld the result of Peter Mandelson's security vetting from him, insisting that had he known the Labour peer had failed the process, he would never have appointed him as the UK's ambassador to the United States. The statement, delivered in a high-stakes appearance before MPs, represented one of the most difficult moments of Starmer's premiership, with opposition benches pressing hard for answers over what has become a deeply damaging political scandal. Starmer sought to draw a clear line between his own conduct and that of the officials he holds responsible, framing the affair as a failure of the vetting and appointments process rather than a failure of his own judgment.",
+      "At the centre of the controversy is Sir Olly Robbins, the former head of the Foreign Office, whom Starmer sacked last week and whom he has now directly accused of deliberately and repeatedly obstructing the truth about the vetting outcome. The Prime Minister told MPs that the Foreign, Commonwealth and Development Office overruled the UK Security Vetting agency's findings, and that this decision was never properly communicated to Downing Street. Robbins was due to give his own account to the Foreign Affairs Select Committee on Tuesday, with reports suggesting he would 'not hold back' in his defence, setting the stage for a dramatic and potentially damaging public confrontation.",
+      "Opposition leader Kemi Badenoch used Prime Minister's Questions to press Starmer on a particularly uncomfortable detail: why he claimed to have learned of Mandelson's vetting failure only last week, when The Independent newspaper had raised concerns directly with Downing Street as far back as September. The exchange underscored the depth of the questions surrounding the Prime Minister's account of events, and raised fresh doubts about the reliability of his timeline. Badenoch argued that the episode exposed serious questions about the competence and integrity of the government's appointments process.",
+      "Starmer acknowledged in his Commons statement that he had made a mistake in his choice of ambassador, a rare personal admission that reflected the severity of the political pressure he is facing. The full timeline of the Mandelson appointment, as laid out by the Prime Minister, showed a process in which vetting concerns were raised and then overridden, with the Prime Minister maintaining that the critical information never reached him in a form that would have prompted him to reconsider. Labour MPs were described as anxious but largely holding firm behind their leader, aware that a leadership crisis at this stage of the parliament would be deeply damaging to the party's prospects.",
+      "The Mandelson scandal has broader implications for the Starmer government beyond the immediate questions of vetting procedure and ministerial accountability. Analysts have noted that the affair is in part a consequence of the diplomatic pressures created by the Trump presidency, with Mandelson having been selected in part for his perceived ability to navigate Washington's volatile political climate. Former cabinet minister Louise Haigh was also reported to be preparing a significant intervention outlining an economic agenda to help unite the Labour Party, suggesting that internal pressures on the government are mounting on multiple fronts as the prime minister battles to stabilise his position."
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/4919/live/9f76ebe0-3c2a-11f1-b235-ed3cce5b7ed2.jpg",
-    source: "The Guardian",
-    sourceUrl: "https://www.theguardian.com/politics/2026/apr/20/the-key-questions-keir-starmer-must-answer-over-mandelson-appointment"
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/038a/live/5bccbf70-39a8-11f1-ba5b-c578881f2eba.jpg",
+    source: "BBC News",
+    sourceUrl: "https://www.bbc.com/news/articles/cx2wllel54no?at_medium=RSS&at_campaign=rss"
   },
   secondary: [
     {
       id: "uk1",
-      title: "Ed Miliband to Double Down on Net Zero Amid Iran Energy Shock",
-      summary: "Energy Secretary Ed Miliband will use a major speech to argue that soaring fossil fuel prices make the case for accelerating Britain's clean energy transition.",
+      title: "Phones to Be Banned in Schools by Law in England Under New Government Plans",
+      summary: "The government has announced legislation to make mobile phone bans in English schools a legal requirement, going beyond existing guidance.",
       body: [
-        "As fossil fuel prices surge in the wake of the Middle East conflict, Ed Miliband is set to announce a package of new net zero policies this week, declaring that 'the era of clean energy security must come of age.' The Energy Secretary will argue that the Iran-driven energy shock, far from undermining the case for renewables, in fact vindicates Labour's long-term commitment to decarbonising the UK's power supply.",
-        "The announcement represents a deliberate political choice to lean into net zero at a moment when some voices within Labour and beyond have urged a pause or rethink in light of economic pressures. Miliband's intervention will be closely watched as a signal of whether the government intends to hold firm on its climate commitments despite growing cost-of-living concerns."
+        "Education minister Jacqui Smith confirmed that the government intends to introduce a statutory ban on mobile phones in schools in England, creating what she described as 'a clear legal requirement' rather than relying on voluntary compliance with existing guidance. The move represents a significant escalation of policy in this area, as many schools have already implemented informal bans but enforcement has been inconsistent across the country.",
+        "The announcement is likely to be broadly welcomed by parents and teaching unions who have long argued that phone use in schools is damaging to pupil concentration, mental health, and classroom discipline. It also gives the Starmer government a domestic policy win at a moment when it is under considerable pressure over the Mandelson vetting scandal."
       ],
-      image: "https://i.guim.co.uk/img/media/ca008af00fa03faaec3c4b97df620c54c6d95240/776_0_3713_2970/master/3713.jpg?width=1200&quality=85&auto=format&fit=max&s=6435557bdaa80d95d273e7e9b70bc941",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/business/2026/apr/20/ed-miliband-to-double-down-on-net-zero-with-measures-to-combat-iran-energy-shock",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/30ac/live/fd65dd70-3cd8-11f1-8106-cb440797df0d.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.com/news/articles/c5y7vd6gpq1o?at_medium=RSS&at_campaign=rss",
       category: "Politics"
     },
     {
       id: "uk2",
-      title: "Reform's Richard Tice Under Fire Over Reported £100,000 Tax Shortfall",
-      summary: "Reform UK deputy leader Richard Tice has said he is 'happy to put things right' after reports emerged that he failed to pay around £100,000 in corporation tax.",
+      title: "Reform UK Pledges to Review All Asylum Claims From Past Five Years If It Wins Power",
+      summary: "Reform UK has set out a radical immigration policy commitment, promising to retrospectively review every asylum claim granted over the past five years.",
       body: [
-        "Richard Tice, the deputy leader of Reform UK, is facing uncomfortable questions about his own financial conduct after reports alleged he failed to pay approximately £100,000 in corporation tax to HMRC. Tice responded by saying he is 'always happy to put things right' if an error has been made, a response critics swiftly labelled inadequate given the party's populist positioning on accountability.",
-        "The revelation carries particular political sting given that Tice last year publicly demanded Angela Rayner's resignation over her admission that she had underpaid stamp duty, arguing that she lacked 'moral decency.' The apparent double standard threatens to hand Labour and other parties ammunition against Reform at a sensitive moment ahead of May's local elections."
+        "Nigel Farage's Reform UK party has announced that if it wins power it would conduct a wholesale review of all asylum claims approved over the previous five years, a policy pledge that goes significantly further than the Labour government's own announced crackdowns on immigration and people-smuggling gangs. The commitment is designed to reinforce Reform's positioning as the most hardline party on immigration ahead of local elections and future general election contests.",
+        "The announcement comes as Reform continues to poll strongly and seek to convert its support into concrete policy differentiation from both Labour and the Conservatives. Labour has already moved to tighten immigration policy considerably since taking office, but Reform is clearly betting that a large segment of the electorate believes those measures do not go nearly far enough."
       ],
-      image: "https://images.unsplash.com/photo-1666263922605-aa7905cb56cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxSZWZvcm18ZW58MHwwfHx8MTc3NjY2MTMzM3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "Sky News",
-      url: "https://news.sky.com/story/reform-deputy-richard-tice-happy-to-put-things-right-over-reported-163100000-tax-error-13533647",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/5d63/live/63b20370-3c10-11f1-9ee7-39ebe3a225a4.png",
+      source: "BBC News",
+      url: "https://www.bbc.com/news/articles/c0rxd5wpyqwo?at_medium=RSS&at_campaign=rss",
       category: "Politics"
     },
     {
       id: "uk3",
-      title: "'I'm Voting Reform — It Can't Get Any Worse': Labour's Bellwether Nightmare in Swindon",
-      summary: "Voters in Swindon, which has correctly predicted the governing party at every general election for four decades, are expressing deep disillusionment with Labour ahead of May's local elections.",
+      title: "Reform Deputy Richard Tice Faces Questions Over Reported £100,000 Tax Shortfall",
+      summary: "Reform UK deputy leader Richard Tice said he is 'happy to put things right' after reports emerged that he had failed to pay around £100,000 in tax.",
       body: [
-        "For forty years, the residents of Swindon have reliably voted for whichever party goes on to win power nationally, earning the town its status as one of England's most closely watched bellwether seats. But ahead of the May local elections, a visit to the town reveals a striking consensus among residents: resentment toward Keir Starmer and the Labour government, with many now saying they intend to back Reform UK.",
-        "The mood in Swindon will alarm Labour strategists who are already braced for significant losses in the local elections and watching nervously as Nigel Farage's party consolidates its appeal among working-class and suburban voters who once formed a core part of the Labour coalition. If Swindon's instincts prove correct once again, the implications for Starmer's long-term electoral position could be severe."
+        "Richard Tice, the deputy leader of Reform UK, has been forced to respond to reports that he failed to pay approximately £100,000 in tax, saying he is 'always happy to put things right' if it transpires that the correct amount was not paid. The disclosure is a potentially embarrassing development for a party that has sought to present itself as a plain-speaking, anti-establishment alternative to the political mainstream.",
+        "The episode puts Reform under scrutiny at a moment when the party is aggressively positioning itself as a government-in-waiting and attacking Labour over perceived sleaze and mismanagement. Questions about the tax affairs of its own senior figures risk undermining the credibility of that attack line ahead of upcoming electoral contests."
       ],
-      image: "https://images.unsplash.com/photo-1627641674091-12f5ef523f95?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHwlMjdJfGVufDB8MHx8fDE3NzY2NjEzMzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "The Independent",
-      url: "https://www.independent.co.uk/news/uk/politics/swindon-labour-reform-local-elections-b2930576.html",
+      image: "https://e3.365dm.com/26/04/1920x1080/skynews-richard-tice_7224094.jpg?20260419091932",
+      source: "Sky News",
+      url: "https://news.sky.com/story/reform-deputy-richard-tice-happy-to-put-things-right-over-reported-163100000-tax-error-13533647",
       category: "Politics"
     }
   ]

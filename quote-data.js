@@ -1,8 +1,8 @@
 // quote-data.js
-// Auto-updated 2026-04-20 — do not edit manually
+// Auto-updated 2026-04-21 — do not edit manually
 
 var QUOTE_DATA = {
-  date: "2026-04-20",
-  text: "The most erroneous stories are those we think we know best — and therefore never scrutinize or question.",
-  author: "Stephen Jay Gould"
+  date: "2026-04-21",
+  text: "The universe is not required to be in perfect harmony with human ambition.",
+  author: "Carl Sagan"
 };
