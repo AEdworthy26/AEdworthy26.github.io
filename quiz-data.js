@@ -1,10 +1,10 @@
 // quiz-data.js
-// Auto-updated 2026-04-21 — do not edit manually
+// Auto-updated 2026-04-22 — do not edit manually
 
 window.QUIZ_DATA = {
-  date: '2026-04-21',
+  date: '2026-04-22',
   category: 'Food & Drink',
-  question: 'Which chemical compound is responsible for the intense heat sensation in chilli peppers, and in what unit is its concentration typically measured?',
-  answer: 'Capsaicin, measured in Scoville Heat Units (SHU).',
-  funFact: 'Capsaicin binds to a receptor called TRPV1, which normally detects actual heat and physical abrasion — essentially tricking your brain into thinking your mouth is on fire when no real burning is occurring. The Scoville scale was invented by pharmacist Wilbur Scoville in 1912, originally using human taste testers to dilute chilli extract until no heat was detectable. The hottest chilli ever recorded, Pepper X, clocks in at over 2.6 million SHU — more than 300 times hotter than a jalapeño.'
+  question: 'Which Japanese fermentation process, used to make miso and soy sauce, involves culturing a mould called Aspergillus oryzae on grains or legumes?',
+  answer: 'Koji (the process is called koji fermentation, and the mould-cultivated substrate is called koji)',
+  funFact: 'Aspergillus oryzae has been used in Japanese food production for over a thousand years and is so culturally significant it is unofficially considered Japan\'s "national fungus." The enzymes it produces break down starches and proteins into sugars and amino acids, creating the deep umami flavours found in miso, sake, mirin, and soy sauce. In recent years, Western chefs have begun experimenting with koji to age steaks and cure fish in a fraction of the traditional time.'
 };

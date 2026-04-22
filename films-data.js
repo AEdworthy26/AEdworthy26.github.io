@@ -1,18 +1,18 @@
 // films-data.js
-// Auto-updated 2026-04-21 — do not edit manually
+// Auto-updated 2026-04-22 — do not edit manually
 
 var FILMS_DATA = {
-  date: "2026-04-21",
+  date: "2026-04-22",
   film: {
-    title: "The Happiest Day in the Life of Olli Mäki",
-    director: "Juho Kuosmanen",
+    title: "The Wailing",
+    director: "Na Hong-jin",
     year: 2016,
-    genres: ["Drama", "Sports", "Romance"],
-    desc: "Shot in luminous black-and-white 16mm, this Finnish gem follows a real-life lightweight boxer preparing for the 1962 world championship fight — only to find himself hopelessly, distractingly in love. Director Juho Kuosmanen keeps everything intimate and unhurried, trusting small gestures and quiet faces over spectacle, and the result feels closer to a folk song than a sports film. Jarkko Lahti is utterly disarming as Olli, a man whose gentle heart keeps pulling him away from the brutal ambition everyone else has mapped out for him. The film won the Un Certain Regard prize at Cannes and remains one of the most tender and quietly radical sports films ever made — a reminder that choosing love over glory is its own kind of victory.",
-    cast: ["Jarkko Lahti", "Oona Airola", "Eero Milonoff"],
+    genres: ["Horror", "Mystery", "Thriller"],
+    desc: "A bumbling small-town policeman in a remote Korean village begins investigating a string of brutal murders that seem connected to the recent arrival of a mysterious Japanese stranger, and the terror escalates when his own daughter falls under a disturbing supernatural affliction. Na Hong-jin weaves together folk religion, shamanism, Christianity, and raw human dread into a two-and-a-half-hour descent that keeps its audience perpetually off-balance, never allowing a single easy interpretation to settle. The film is astonishing in its tonal range — genuinely funny in its early scenes, then progressively suffocating with grief and cosmic horror — anchored by Kwak Do-won's heartbreaking performance as a father undone by forces utterly beyond his comprehension. Few horror films in recent memory have so deliberately and successfully dismantled the viewer's ability to trust what they are seeing, leaving an ending that has sparked fierce debate among critics and audiences worldwide.",
+    cast: ["Kwak Do-won", "Hwang Jung-min", "Kunimura Jun"],
     rating: 99,
     ratingSource: "Rotten Tomatoes",
-    ratingExtra: "Un Certain Regard Prize, Cannes 2016",
-    posterUrl: "https://upload.wikimedia.org/wikipedia/en/7/7e/The_Happiest_Day_in_the_Life_of_Olli_M%C3%A4ki.jpg"
+    ratingExtra: "Grand Bell Award – Best Film",
+    posterUrl: "https://upload.wikimedia.org/wikipedia/en/e/eb/The_Wailing_%28film%29.png"
   }
 };

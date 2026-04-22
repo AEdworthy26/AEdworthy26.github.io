@@ -3,6 +3,45 @@
 
 var RICS_LOG = [
   {
+    "date": "2026-04-22",
+    "topic": "Mandatory Biodiversity Net Gain: BNG Requirements, Metric Calculations and Off-Site Credits in Residential Development",
+    "module": "Sustainability",
+    "level": 1,
+    "apc_competency": "Sustainability (Level 1)",
+    "focus": "This lesson covers the mandatory Biodiversity Net Gain (BNG) regime introduced under the Environment Act 2021, focusing on how the 10% net gain requirement is calculated using the DEFRA biodiversity metric, on-site vs off-site vs statutory credit hierarchy, and the practical implications for land-led residential development at pre-acquisition and planning stages. Understanding BNG is increasingly essential for Alfie's role as it directly affects site viability, land value, planning conditions and S106 obligations on every new residential scheme.",
+    "image": "https://images.unsplash.com/photo-1768760906477-70190a413c6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxNYW5kYXRvcnklMjBCaW9kaXZlcnNpdHklMjBOZXQlMjBHYWluJTNBJTIwQk5HJTIwUmVxdWlyZW1lbnRzJTJDJTIwTWV0cmljJTIwQ2FsY3VsYXRpb25zJTIwYW5kJTIwT2ZmLVNpdGUlMjBDcmVkaXRzJTIwaW4lMjBSZXNpZGVudGlhbCUyMERldmVsb3BtZW50JTIwYXJjaGl0ZWN0dXJlfGVufDB8MHx8fDE3NzY4MzQ1NTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "content": [],
+    "summary": [
+      "Mandatory BNG (10% net gain) is a legal requirement under the Environment Act 2021 for most major residential applications in England from February 2024 \u2014 it is a legal barrier to consent, not a planning balance consideration.",
+      "The DEFRA Biodiversity Metric 4.0 quantifies habitat value in biodiversity units; greenfield sites with higher baseline values generate larger BNG shortfalls than brownfield sites, directly affecting density, GDV and residual land value.",
+      "The BNG delivery hierarchy is: on-site first, then off-site registered units, then statutory government credits as a last resort \u2014 off-site units cost approximately \u00a325,000-\u00a335,000 per unit and must be procured from the national BNG register.",
+      "The 30-year habitat management obligation must be legally secured via a Conservation Covenant or S106, creating a long-term asset management liability that must be allocated clearly in development agreements, especially on JV or forward-funding structures.",
+      "Pre-acquisition due diligence must include a Phase 1 habitat survey, provisional Metric 4.0 run and confirmation of LPA BNG policy (including any above-10% local requirements), with BNG costs built into the residual land value appraisal as a specific line item."
+    ],
+    "qa": [
+      {
+        "q": "You're appraising a greenfield site for a 80-unit mixed-tenure scheme. The ecologist's Metric 4.0 run shows a pre-development baseline of 22 biodiversity units and a post-development on-site value of 18 units. What are your options and how do you reflect this in the appraisal?",
+        "a": "The scheme has a post-development on-site shortfall: it needs to deliver at least 24.2 units (22 \u00d7 1.10) but only achieves 18 on-site \u2014 a shortfall of 6.2 units. Options: (1) Redesign to increase on-site habitat value \u2014 e.g., extend green corridors, introduce SuDS with ecological value, increase native planting areas \u2014 reducing the shortfall but potentially losing built footprint and GDV; (2) Procure 6.2 off-site biodiversity units from a registered habitat bank, costing approximately \u00a3155,000-\u00a3217,000 at current market rates, secured via S106 referencing the national BNG register; (3) As an absolute last resort, purchase statutory government credits \u2014 but these are priced at a premium to disincentivise their use and would be flagged as a red risk in the investment committee paper. In the appraisal, off-site BNG procurement costs should be included as a specific development cost line item, reducing the residual land value offer accordingly. The 30-year habitat management cost for any on-site habitat must also be estimated and reflected."
+      },
+      {
+        "q": "What is a Biodiversity Gain Condition and why does it matter for your programme management on a new consent?",
+        "a": "A Biodiversity Gain Condition (BGC) is a mandatory pre-commencement planning condition attached to every planning permission subject to mandatory BNG. It prevents any development from commencing until the LPA has approved a Biodiversity Gain Plan (BGP) for the site. The LPA has 8 weeks to determine a BGP submission. This is directly programme-critical: if the BGP is submitted late or requires revisions, it delays the start on site. On Alfie's critical path, the BGP preparation \u2014 including finalising the Metric 4.0 calculation, confirming off-site unit procurement if required, and agreeing the Habitat Management and Monitoring Plan \u2014 must be programmed as a pre-start activity, alongside other pre-commencement conditions. It cannot be deferred to post-commencement like many other conditions."
+      },
+      {
+        "q": "How do irreplaceable habitats differ from standard habitats under the BNG regime, and what is the planning policy consequence of a scheme impacting ancient woodland?",
+        "a": "Irreplaceable habitats \u2014 including ancient woodland, ancient and veteran trees, blanket bog, lowland raised bog and limestone pavement \u2014 sit outside the standard BNG metric and cannot be offset through biodiversity units, off-site habitat banks or statutory credits. Loss or deterioration of irreplaceable habitats must be justified under NPPF paragraph 186, which requires 'wholly exceptional reasons' \u2014 a very high planning policy bar. The LPA must be satisfied that the benefits of the development clearly outweigh the loss, and any compensation must be agreed with Natural England via a bespoke scheme. In practice, development proposals that materially impact ancient woodland are extremely difficult to progress through the planning system and would represent a fundamental pre-acquisition red flag requiring board-level risk discussion before proceeding."
+      },
+      {
+        "q": "A colleague suggests that because Latimer's scheme is brownfield with almost entirely hardstanding, BNG will be straightforward and cheap. Is that correct, and what would you check?",
+        "a": "The colleague's instinct is broadly right \u2014 brownfield sites with hardstanding, concrete and bare ground typically have very low Metric 4.0 baseline values (often 0-2 units per hectare), meaning even modest on-site greening can comfortably exceed the 10% net gain threshold. This is a BNG advantage of brownfield development. However, I would not assume it without checking: (1) even on brownfield, ruderal vegetation, ephemeral habitat or Japanese knotweed-dominated areas may register some baseline value; (2) there may be trees, hedgerows or ecological features on the site boundary that carry higher values; (3) the LPA may have a local BNG policy above 10% (particularly in London under GLA policy), requiring greater delivery; (4) any trees to be removed must be assessed separately under the Urban Greening Factor in London. I would instruct an ecologist to run a Phase 1 survey and provisional Metric 4.0 at feasibility stage regardless, to confirm the BNG position with evidence rather than assumption."
+      },
+      {
+        "q": "On a scheme where Latimer sells the affordable units to a registered provider under a golden brick structure, who is responsible for the 30-year BNG habitat management obligation and how should this be dealt with in the transaction documents?",
+        "a": "The 30-year habitat management obligation is a land-based obligation, typically secured by Conservation Covenant or S106 planning obligation, which runs with the land and binds all future landowners. In a golden brick structure where Latimer builds to golden brick (completion of foundations) and transfers the affordable units to a separate RP, the long-term BNG management responsibility must be clearly allocated in the development agreement and transfer documentation. If the BNG habitat areas (e.g., SuDS, wildflower meadows, green corridors) sit within the affordable plot, the transferee RP takes on the management obligation as landowner. If they sit within Latimer-retained land or common areas, Latimer retains responsibility. This allocation must be explicit in heads of terms, reflected in the lease/transfer covenants, and ideally confirmed with both parties' solicitors during S106 negotiation \u2014 because the LPA and Natural England will hold the landowner responsible regardless of contractual arrangements between developer and RP."
+      }
+    ]
+  },
+  {
     "date": "2026-04-21",
     "topic": "Section 73 Applications, DOVs and Non-Material Amendments: Post-Consent Variation Strategy",
     "module": "Planning and Development Management",

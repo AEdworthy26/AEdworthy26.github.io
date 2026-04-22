@@ -1,19 +1,19 @@
 // reads-data.js
-// Auto-updated 2026-04-21 — do not edit manually
+// Auto-updated 2026-04-22 — do not edit manually
 
 var READS_DATA = {
-  date: "2026-04-21",
+  date: "2026-04-22",
   book: {
-    title: "Say Nothing: A True Story of Murder and Memory in Northern Ireland",
-    author: "Patrick Radden Keefe",
+    title: "The Overstory",
+    author: "Richard Powers",
     year: 2018,
-    genres: ["True Crime", "Political History", "Narrative Non-Fiction"],
-    desc: "Patrick Radden Keefe uses the 1972 abduction and murder of Jean McConville — a widowed mother of ten dragged from her Belfast home by the IRA — as the entry point into a breathtaking reconstruction of the entire arc of the Troubles. The book follows real figures including Dolours Price, Gerry Adams, and Brendan Hughes with the propulsive tension of a thriller, never letting moral complexity collapse into easy judgement. Keefe is extraordinary at showing how ordinary people get pulled into extraordinary violence, and how movements sustain themselves through silence, myth, and the suppression of inconvenient truths. The writing is among the finest in contemporary non-fiction — precise, empathetic, and haunting long after the last page.",
-    whyRead: "With political violence, contested memory, and the long shadows of armed conflict still shaping headlines around the world, this book feels urgently relevant — and it is simply one of the most gripping things you will read this year.",
-    rating: 4.4,
+    genres: ["Literary Fiction", "Nature", "Environmental"],
+    desc: "Richard Powers weaves together nine interlocking narratives about people whose lives are transformed by their encounters with trees — a multigenerational family photographing a chestnut tree, a scientist who discovers that forests communicate, an activist who lives for years in a redwood canopy. The novel operates on an almost geological timescale, asking the reader to feel the world from the perspective of organisms that think and act across centuries rather than decades. Powers writes with extraordinary precision and lyricism, making the science of plant intelligence feel as thrilling as any thriller plot. It won the Pulitzer Prize for Fiction and is widely considered one of the defining American novels of the twenty-first century, the kind of book that genuinely changes how you see the world around you.",
+    whyRead: "With Earth Day falling today, there is no better moment to encounter a novel that will make you look at every tree you pass differently — and feel the urgency of what we stand to lose.",
+    rating: 4.2,
     ratingSource: "Goodreads",
-    ratingCount: "150,000+",
-    coverUrl: "https://covers.openlibrary.org/b/id/9242450-L.jpg",
-    amazonUrl: "https://www.amazon.co.uk/dp/8466356096"
+    ratingCount: "350,000+",
+    coverUrl: "https://covers.openlibrary.org/b/id/8758252-L.jpg",
+    amazonUrl: "https://www.amazon.co.uk/dp/8491814442"
   }
 };
