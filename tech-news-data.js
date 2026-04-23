@@ -1,61 +1,61 @@
 // tech-news-data.js
-// Auto-updated 2026-04-22 — do not edit manually
+// Auto-updated 2026-04-23 — do not edit manually
 
 var TECH_NEWS = {
-  date: "2026-04-22",
+  date: "2026-04-23",
   main: {
-    title: "Anthropic's Mythos AI Finds 271 Zero-Day Vulnerabilities in Firefox — Reshaping the Future of Cybersecurity",
-    category: "AI / Cybersecurity",
+    title: "Anthropic's Mythos AI Model Triggers Global Alarms After Unauthorised Access Reported",
+    category: "Artificial Intelligence / Cybersecurity",
     content: [
-      "Anthropic's closely guarded AI model, Mythos, has demonstrated a startling real-world capability: in a controlled collaboration with Mozilla, the system identified 271 previously unknown security vulnerabilities — so-called zero-day bugs — in Firefox 150. Mozilla's Chief Technology Officer described the model as 'every bit as capable as the world's best security researchers,' a striking endorsement that underscores how rapidly AI-assisted vulnerability discovery is maturing. The findings were disclosed publicly this week, sending ripples through the software security community and reigniting debate about the double-edged nature of frontier AI models trained on exploitation techniques.",
-      "Mythos Preview, the model at the center of this story, was flagged earlier this month by Anthropic itself as too dangerous to release publicly. The company stated that the model excels at identifying and exploiting software vulnerabilities at a scale and speed no human team could match, and that releasing it openly could pose severe risks to national security, public safety, and global economies. The controlled deployment with Mozilla represents one of the first sanctioned, transparent use-cases of the model — a deliberate attempt by Anthropic to demonstrate responsible stewardship while still extracting genuine value from the technology.",
-      "For Mozilla, the exercise was both a validation and a warning. The Firefox team was able to patch the 271 bugs identified by Mythos before they could be exploited in the wild, turning what could have been a catastrophic exposure into a significant security win. However, Mozilla engineers were candid that the experience highlighted how exposed modern software ecosystems are — and how quickly the calculus could change if similar tools fell into adversarial hands. The team noted that while AI won't permanently upend cybersecurity, developers should brace for a turbulent transitional period as these capabilities become more widespread.",
-      "The UK's National Cyber Security Centre has weighed in on Mythos and tools like it, with its head telling the BBC that frontier AI hacking tools can be a 'net positive' for the industry — provided they remain out of the wrong hands. That caveat is doing a great deal of work. Security researchers have long used automated tools to probe for weaknesses, but the leap in capability represented by Mythos is qualitatively different: the model can reason about complex codebases, chain together multi-step exploits, and adapt its approach in ways that previous tools could not. The NCSC's cautiously optimistic framing reflects the difficulty governments face in regulating capabilities that are genuinely useful and genuinely dangerous at the same time.",
-      "The broader story around Mythos is one of an industry grappling with the implications of its own success. Anthropic's decision to withhold the full model from public release while selectively deploying it in partnerships like the Mozilla one sets a precedent — but also raises hard questions about who gets to decide which uses are safe, and who audits those decisions. As AI models grow more capable at finding and exploiting software weaknesses, the security industry faces a fundamental shift: the best offense and the best defense may increasingly be powered by the same underlying technology, held apart only by access controls and institutional trust. Whether those controls will prove sufficient is a question the next few years are likely to answer in uncomfortable ways."
+      "Anthropic, the AI safety-focused startup behind the Claude family of models, confirmed this week that it is actively investigating reports of unauthorised access to its highly restricted Mythos model — a system the company itself has described as too dangerous to release publicly. The breach, first reported by Bloomberg, allegedly involved a small handful of individuals gaining access to the model without authorisation. Anthropic has not yet disclosed how the access occurred or how long it may have persisted before being detected.",
+      "What makes the situation particularly alarming is the nature of Mythos itself. Unlike consumer-facing AI tools, Mythos was developed with advanced capabilities for detecting and exploiting cybersecurity vulnerabilities, making it a significant dual-use technology. Anthropic has deliberately kept it off the public market precisely because of concerns that it could be weaponised by malicious actors to compromise critical digital infrastructure at scale. The model's capabilities in this domain reportedly far exceed those of any publicly available AI system.",
+      "The fallout from the disclosure has been swift and far-reaching. According to reporting by The New York Times, Mythos has triggered emergency responses from central banks and intelligence agencies around the world, as governments scramble to assess potential exposure. The scale of institutional alarm reflects a broader anxiety in the security community about what happens when frontier AI systems — even those kept under strict access controls — fall into unintended hands, even briefly.",
+      "Anthropic is now under intense scrutiny over its access governance procedures. The incident raises pointed questions about whether even well-resourced AI companies can adequately secure their most sensitive systems, particularly as the capabilities of frontier models continue to advance rapidly. Critics and regulators are likely to use this episode as a rallying point for stricter mandatory oversight frameworks, including third-party audits of access controls for high-risk AI models.",
+      "The Mythos incident arrives at a moment of heightened global debate about AI governance and the responsibilities of private companies developing potentially transformative — and dangerous — technologies. Anthropic has positioned itself as a safety-first organisation, making the breach especially fraught for its public reputation. As the investigation continues, the episode is expected to intensify calls for binding international agreements on the development and containment of high-capability AI systems, with Mythos now serving as a concrete cautionary example of what is at stake."
     ],
     image: "https://images.pexels.com/photos/30282227/pexels-photo-30282227.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    source: "Ars Technica",
-    sourceUrl: "https://arstechnica.com/ai/2026/04/mozilla-anthropics-mythos-found-271-zero-day-vulnerabilities-in-firefox-150/"
+    source: "The New York Times",
+    sourceUrl: "https://www.nytimes.com/2026/04/22/technology/anthropics-mythos-ai.html"
   },
   secondary: [
     {
       id: "tc1",
-      title: "Tim Cook to Step Down as Apple CEO, John Ternus Named Successor",
-      summary: "Apple has announced that hardware engineering chief John Ternus will replace Tim Cook as CEO on 1 September, with Cook remaining as executive chair.",
+      title: "SpaceX Eyes Major Strategic Shift Ahead of Anticipated IPO",
+      summary: "Elon Musk is proposing new directions for SpaceX that diverge from the company's founding mission of reaching Mars, raising questions as it prepares to go public.",
       body: [
-        "After nearly 15 years leading Apple to become a $4 trillion company, Tim Cook will hand the reins to John Ternus, a longtime Apple veteran who has overseen the company's hardware engineering division through the Apple Silicon transition and beyond. Cook praised Ternus effusively in the announcement, and will remain at Apple in an executive chair role, providing continuity during what is expected to be a closely watched leadership handover.",
-        "Ternus inherits a company that is extraordinarily profitable but widely seen as in need of a renewed vision for the AI era — a challenge Cook himself acknowledged was unfinished business. Analysts and observers have already begun publishing wish lists for the new CEO, with Apple Intelligence, mixed-reality hardware, and the services business all flagged as areas demanding fresh strategic thinking."
+        "As SpaceX edges closer to a long-anticipated initial public offering, Elon Musk has been floating ambitious new moonshots that mark a notable departure from the company's original core goal of establishing a human presence on Mars. The strategic pivot has caught the attention of investors and space industry observers alike, who are watching closely to see how the company defines its future priorities in its public filings.",
+        "The timing is significant: SpaceX is simultaneously reported to be in a deal with AI coding tool Cursor valued at around $60 billion, signalling an increasing emphasis on artificial intelligence as a pillar of the company's expanding portfolio. Together, these moves suggest SpaceX is repositioning itself as a broader technology powerhouse rather than purely a space transportation company ahead of its market debut."
       ],
-      image: "https://i.guim.co.uk/img/media/fb3012d09f0ab2b0465797bf80bced5fb684c326/0_0_1500_1200/master/1500.jpg?width=1200&quality=85&auto=format&fit=max&s=439d7e2f41f3c5c06f0c4b2f1a38ae3b",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/technology/2026/apr/20/tim-cook-apple-ceo-replacement",
-      category: "Tech Industry"
+      image: "https://static01.nyt.com/images/2026/04/23/business/00spacex-changes/00spacex-changes-mediumSquareAt3X.jpg",
+      source: "The New York Times",
+      url: "https://www.nytimes.com/2026/04/22/technology/elon-musk-spacex-ipo-goals.html",
+      category: "Space & Technology"
     },
     {
       id: "tc2",
-      title: "Meta to Harvest Workers' Clicks and Keystrokes to Train Its AI Models",
-      summary: "Meta has revealed plans to monitor and collect detailed behavioral data from its own employees — including keystrokes and mouse clicks — to feed into its artificial intelligence training pipelines.",
+      title: "Xbox Cuts Game Pass Prices but Removes Day-One Call of Duty Access",
+      summary: "Microsoft has announced lower Game Pass subscription tiers while confirming that new Call of Duty titles will no longer be available on the service on launch day.",
       body: [
-        "The move marks a significant escalation in how large technology companies are sourcing training data for their AI systems, turning the everyday workflows of their own workforces into a proprietary dataset. Meta has not disclosed the full scope of what will be captured, but the initiative has already drawn scrutiny from labor advocates and privacy experts who question whether employees can meaningfully consent when their employer is also the data collector.",
-        "The strategy reflects growing pressure across the AI industry to find high-quality, real-world behavioral data as publicly available internet text becomes increasingly saturated with AI-generated content. By harvesting how skilled professionals actually navigate software and solve problems, Meta appears to be betting that workplace interaction data could offer a richer signal for training capable, practically useful models than scraped web data alone."
+        "Microsoft has restructured its Xbox Game Pass subscription offering, reducing prices for certain tiers while making a significant concession to players who joined for blockbuster titles: new Call of Duty games will now only arrive on the service roughly a year after their initial release. The change represents a meaningful shift in the value proposition that originally drew many subscribers to Game Pass.",
+        "The decision is likely to disappoint fans who subscribed specifically for day-one access to the flagship franchise, which Microsoft acquired as part of its $69 billion purchase of Activision Blizzard. Industry analysts suggest the move may reflect an effort to protect premium game sales revenue even as Microsoft seeks to grow the overall subscriber base with lower entry-level pricing."
       ],
-      image: "https://images.unsplash.com/photo-1696041758578-db4b9b94a4cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxNZXRhJTIwdG8lMjBIYXJ2ZXN0JTIwV29ya2Vyc3xlbnwwfDB8fHwxNzc2ODM0MjU5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/80df/live/35601e70-3e55-11f1-ac78-2112837ce2aa.png",
       source: "BBC News",
-      url: "https://www.bbc.com/news/articles/cvglyklz49jo?at_medium=RSS&at_campaign=rss",
-      category: "AI / Privacy"
+      url: "https://www.bbc.com/news/articles/cgrlvvrn409o?at_medium=RSS&at_campaign=rss",
+      category: "Gaming"
     },
     {
       id: "tc3",
-      title: "SpaceX in Talks to Acquire AI Coding Tool Cursor in $60 Billion Deal",
-      summary: "Elon Musk's SpaceX is reportedly striking a deal to acquire Cursor, the popular AI-powered coding assistant, in a transaction valued at $60 billion.",
+      title: "Worldcoin's Orb Promoted a Bruno Mars Partnership That Never Existed",
+      summary: "Sam Altman's iris-scanning identity company falsely promoted a partnership with Bruno Mars, with a spokesperson for the artist confirming no such discussions ever took place.",
       body: [
-        "The potential acquisition would be one of the largest in the AI tools space to date, and signals SpaceX's intent to deepen its artificial intelligence capabilities ahead of a widely anticipated public offering. Cursor has become one of the most prominent AI coding assistants on the market, valued for its deep integration with developer workflows and its ability to reason across large codebases.",
-        "The deal underscores the accelerating consolidation taking place across the AI industry, as well-capitalized players move to lock in proprietary tooling and talent before the IPO window opens. For SpaceX, acquiring a leading AI development tool would reinforce its positioning not just as a launch and satellite company, but as a technology platform with AI at its core."
+        "Tools for Humanity, the company behind Sam Altman's Worldcoin orb project, promoted what it described as a partnership with global music superstar Bruno Mars — a claim that has since been flatly denied by a spokesperson for the artist. According to WIRED, the representative stated the artist was never approached and was never in any discussions regarding a partnership or tour access of any kind.",
+        "The incident is an embarrassing misstep for a company that is already navigating significant public scepticism about its biometric data collection model. Worldcoin's orbs scan users' irises in exchange for a digital identity token, and the project has faced regulatory scrutiny in multiple countries; a fabricated celebrity endorsement is unlikely to help its efforts to build public trust."
       ],
-      image: "https://static01.nyt.com/images/2026/04/21/multimedia/21biz-spacex-cursor-3-ctwj/21biz-spacex-cursor-3-ctwj-mediumSquareAt3X.jpg",
-      source: "The New York Times",
-      url: "https://www.nytimes.com/2026/04/21/business/spacex-cursor-deal.html",
-      category: "Tech Industry / AI"
+      image: "https://images.pexels.com/photos/7412089/pexels-photo-7412089.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      source: "WIRED",
+      url: "https://www.wired.com/story/sam-altman-orb-company-bruno-mars-partnership-fake/",
+      category: "Tech Industry"
     }
   ]
 };

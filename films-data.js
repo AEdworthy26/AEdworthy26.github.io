@@ -1,18 +1,18 @@
 // films-data.js
-// Auto-updated 2026-04-22 — do not edit manually
+// Auto-updated 2026-04-23 — do not edit manually
 
 var FILMS_DATA = {
-  date: "2026-04-22",
+  date: "2026-04-23",
   film: {
-    title: "The Wailing",
-    director: "Na Hong-jin",
-    year: 2016,
-    genres: ["Horror", "Mystery", "Thriller"],
-    desc: "A bumbling small-town policeman in a remote Korean village begins investigating a string of brutal murders that seem connected to the recent arrival of a mysterious Japanese stranger, and the terror escalates when his own daughter falls under a disturbing supernatural affliction. Na Hong-jin weaves together folk religion, shamanism, Christianity, and raw human dread into a two-and-a-half-hour descent that keeps its audience perpetually off-balance, never allowing a single easy interpretation to settle. The film is astonishing in its tonal range — genuinely funny in its early scenes, then progressively suffocating with grief and cosmic horror — anchored by Kwak Do-won's heartbreaking performance as a father undone by forces utterly beyond his comprehension. Few horror films in recent memory have so deliberately and successfully dismantled the viewer's ability to trust what they are seeing, leaving an ending that has sparked fierce debate among critics and audiences worldwide.",
-    cast: ["Kwak Do-won", "Hwang Jung-min", "Kunimura Jun"],
-    rating: 99,
+    title: "The Wages of Fear",
+    director: "Henri-Georges Clouzot",
+    year: 1953,
+    genres: ["Thriller", "Drama", "Adventure"],
+    desc: "Four desperate men stranded in a sweltering South American backwater accept a suicidal contract: drive two truckloads of volatile nitroglycerin across hundreds of miles of brutal mountain roads, where the slightest bump means obliteration. Henri-Georges Clouzot builds tension so methodically and so mercilessly that scenes involving a mere puddle of oil or a rickety wooden platform become among the most unbearable in cinema history. The film opens with a languid, almost ethnographic portrait of poverty and ennui before detonating into pure sustained dread — a structural move that makes the stakes feel utterly real and human. Yves Montand leads a cast of magnificently weathered faces, and the camaraderie and betrayal between the men adds a layer of moral complexity that lifts this far above a simple thriller. Winner of the Palme d'Or at Cannes and the BAFTA for Best Film, it remains one of the most viscerally punishing and rewarding cinematic experiences ever committed to celluloid.",
+    cast: ["Yves Montand", "Charles Vanel", "Folco Lulli"],
+    rating: 98,
     ratingSource: "Rotten Tomatoes",
-    ratingExtra: "Grand Bell Award – Best Film",
-    posterUrl: "https://upload.wikimedia.org/wikipedia/en/e/eb/The_Wailing_%28film%29.png"
+    ratingExtra: "Palme d'Or, Cannes 1953",
+    posterUrl: "https://upload.wikimedia.org/wikipedia/en/f/f4/SalairedelapeurR350.jpg"
   }
 };

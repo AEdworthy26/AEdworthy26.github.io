@@ -1,43 +1,43 @@
 // world-news-data.js
-// Auto-updated 2026-04-22 — do not edit manually
+// Auto-updated 2026-04-23 — do not edit manually
 
 var WORLD_NEWS = {
-  date: "2026-04-22",
+  date: "2026-04-23",
   main: {
-    title: "Trump Extends US–Iran Ceasefire as Pakistan Brokers Fragile Diplomacy",
+    title: "Ships Seized in Strait of Hormuz as US-Iran Standoff Deepens Despite Ceasefire Extension",
     category: "Geopolitics",
     content: [
-      "President Donald Trump announced an extension of the ceasefire between the United States and Iran just hours before it was set to expire on Tuesday, crediting Pakistan's mediation efforts for the last-minute reprieve. The announcement came after a frantic day of diplomatic activity, with Islamabad playing an increasingly central role in shuttling communications between Washington and Tehran. Trump said he was holding off any further military action at Pakistan's request, though he declined to specify how long the new extension would last.",
-      "The decision marks the second time in as many weeks that Trump has stepped back from the brink of escalation in the conflict with Iran, raising cautious hopes that a broader diplomatic resolution may be within reach. Negotiators are reportedly working toward what Trump described as a 'unified proposal,' though significant gaps remain between the parties over Iran's nuclear programme and the conditions under which any deal might be struck. The ceasefire extension buys precious time for diplomats, but analysts warn the situation remains extraordinarily volatile.",
-      "At the heart of the negotiations is the question of Iran's highly enriched uranium stockpile. Experts from the Nuclear Threat Initiative have outlined the complex logistical and political challenges involved in any potential transfer or disposal of that material, noting that verification mechanisms would need to be robust and internationally overseen. Without a credible framework for handling the nuclear file, any ceasefire risks becoming a temporary pause rather than the foundation for a lasting settlement.",
-      "Iran, meanwhile, held large military parades in Tehran on Tuesday as the ceasefire deadline approached — a display of defiance that underscored the internal pressures facing the Iranian government. The country is simultaneously grappling with severe economic consequences from the conflict, with manufacturers, retailers, and the digital sector all reporting mass redundancies. Economists inside Iran have warned that conditions could deteriorate sharply if hostilities resume, adding a powerful domestic incentive for Tehran to explore a negotiated outcome.",
-      "Pakistan's role as mediator is being watched closely both regionally and internationally, with many Pakistanis hoping the diplomatic boost will translate into tangible benefits at home — including potential relief from US economic pressure and an improved security environment along its borders. The situation remains fluid, and no formal talks between US and Iranian officials have been publicly confirmed. The coming days are likely to be decisive in determining whether the current diplomatic momentum can be converted into something more durable, or whether the ceasefire once again approaches collapse."
+      "Iran's Islamic Revolutionary Guard Corps has seized multiple vessels in the Strait of Hormuz, releasing dramatic footage of the operation and injecting fresh uncertainty into already fragile peace negotiations between Tehran and Washington. Three ships came under fire or were boarded in the critical waterway over a 24-hour period, even as President Trump extended a ceasefire with Iran while keeping the US naval blockade firmly in place. The incidents have sharply raised tensions in one of the world's most strategically vital shipping lanes, through which roughly a fifth of global oil supply passes.",
+      "The ceasefire extension, which Trump announced just hours before the ship seizures, was interpreted very differently by the two sides. Iranian leaders believe the extension represents a sign that Washington blinked first — an assessment the New York Times described as part of a broader Iranian strategy of outlasting American pressure in a prolonged standoff. A Trump spokeswoman insisted that the president did not view Iran's seizure of the ships as a violation of the ceasefire, a position critics have described as straining credibility and emboldening Tehran.",
+      "Pakistan had positioned itself as a potential diplomatic bridge, hosting a round of inconclusive Iran-US talks earlier this month and pushing for renewed negotiations even as the Islamabad process has stalled. The failure of the two sides to meet again in Pakistan, combined with the latest provocations at sea, has deepened doubts about whether diplomatic channels can hold. An Islamabad park near the talks venue has become a symbol of cautious hope for observers watching an increasingly combustible situation from the sidelines.",
+      "The broader economic consequences of the standoff are being felt most acutely by ordinary Iranians, who face the compounding pressures of the US blockade, international sanctions, and a government that has severed much of the country's access to the global internet. Some Iranians have resorted to travelling across the border into Turkey simply to make video calls and access basic online services before returning home — a striking illustration of how isolated daily life has become. Iran's leaders appear to be calculating that their population can absorb this pain longer than Trump's political coalition can sustain an open-ended military and economic confrontation.",
+      "The situation in the Strait of Hormuz now presents a delicate and dangerous puzzle for the international community. Any miscalculation — a ship sinking, a sailor killed, or an exchange of fire that escalates beyond what either side can control — risks transforming a managed confrontation into an outright war with global economic consequences. Diplomatic observers have urged both Washington and Tehran to return urgently to the negotiating table, warning that the window for a negotiated settlement may be narrowing as hardliners on both sides are emboldened by the current impasse."
     ],
-    image: "https://images.pexels.com/photos/11816424/pexels-photo-11816424.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/dcd5/live/3a8762d0-3e6b-11f1-91e9-e97dba847610.png",
     source: "BBC News",
-    sourceUrl: "https://www.bbc.com/news/articles/cvg4yr90jr2o?at_medium=RSS&at_campaign=rss"
+    sourceUrl: "https://www.bbc.com/news/articles/c0q9xq7knq2o?at_medium=RSS&at_campaign=rss"
   },
   secondary: [
     {
       id: "s1",
-      title: "Phone Tracking Exposes Colombian Mercenaries and UAE Role in Sudan's RSF",
-      summary: "A new investigative report using phone-tracking data has revealed that Colombian mercenaries backed Sudan's Rapid Support Forces, with significant UAE involvement also documented.",
+      title: "EU Approves €90bn Loan for Ukraine as Druzhba Pipeline Reopens",
+      summary: "The European Union has approved a landmark €90 billion loan package for Ukraine, as Kyiv reopened the Druzhba oil pipeline, ending a prolonged deadlock over oil supplies to Hungary.",
       body: [
-        "The Conflict Insights Group (CIG) has published research showing that Colombian mercenaries were active in supporting Sudan's paramilitary Rapid Support Forces (RSF), with mobile phone tracking data used to map their movements and deployment patterns inside the country. The findings add a startling international dimension to a civil war that has already killed tens of thousands of people and displaced millions across Sudan.",
-        "The report also details the extent of the United Arab Emirates' involvement in the conflict, corroborating earlier allegations that Abu Dhabi has been providing material and logistical support to the RSF. The revelations are likely to intensify diplomatic pressure on the UAE and raise urgent questions about accountability for foreign actors fuelling one of the world's most devastating humanitarian crises."
+        "The European Union has greenlit a €90 billion loan for Ukraine, one of the largest financial commitments to Kyiv since the war began, designed to sustain the country's economy and reconstruction efforts as the conflict continues. Alongside the announcement, Ukraine confirmed it had reopened the Druzhba pipeline, a critical artery that had been blocked for months amid a bitter standoff over stalled oil deliveries to neighbouring Hungary.",
+        "The twin developments represent a significant diplomatic and logistical breakthrough, easing tensions between Kyiv and Budapest that had threatened to fracture EU unity on Ukraine support. Hungary, which had been the most vocal EU critic of continued aid to Ukraine, had withheld cooperation over the pipeline dispute, making its resolution an important step toward restoring cohesion within the bloc."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/21cd/live/e0bcb6d0-3dcd-11f1-bd52-e755d604ece4.jpg",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/40de/live/992a3f20-3e29-11f1-b55d-0f258dce1735.jpg",
       source: "BBC News",
-      url: "https://www.bbc.com/news/articles/cn4vk13wgwwo?at_medium=RSS&at_campaign=rss",
-      category: "Conflict"
+      url: "https://www.bbc.com/news/articles/cnv8l99r3yyo?at_medium=RSS&at_campaign=rss",
+      category: "International"
     },
     {
       id: "s2",
-      title: "China Forces Taiwan President to Cancel Africa Trip by Revoking Overflight Permits",
-      summary: "Taiwan's President Lai Ching-te has abandoned a planned visit to Eswatini after several countries revoked overflight permissions under what Taipei says was intense pressure from Beijing.",
+      title: "Taiwan President Blames China After African Nations Revoke Overflight Permits",
+      summary: "Taiwan's president Lai Ching-te has cancelled a trip to the country's sole African diplomatic ally, Eswatini, after several nations revoked overflight permissions under what Taipei described as intense pressure from Beijing.",
       body: [
-        "Taiwan's president Lai Ching-te was forced to cancel a high-profile trip to Eswatini — Taiwan's only remaining diplomatic ally on the African continent — after the Seychelles, Mauritius, and Madagascar revoked permission for his aircraft to pass through their airspace. Taipei directly blamed China, accusing Beijing of applying 'intense pressure' on those countries to block the visit, which had been planned to mark the 40th anniversary of Taiwan-Eswatini ties.",
-        "The episode is the latest illustration of China's sustained and increasingly effective campaign to isolate Taiwan diplomatically across Africa and other regions. With Taiwan's formal allies now numbering just a handful globally, each blocked engagement carries significant symbolic and strategic weight, reinforcing fears in Taipei that Beijing is methodically closing off the island's remaining international space."
+        "President Lai Ching-te was forced to abandon his planned visit to Eswatini — which was to mark the 40th anniversary of diplomatic ties and remains Taiwan's only official ally on the African continent — after the Seychelles, Mauritius, and Madagascar all withdrew the overflight permissions needed for his plane to reach the kingdom. Taiwan's government was unambiguous in its response, blaming what it called intense and deliberate pressure from China for the sudden reversals by the three island nations.",
+        "The episode is the latest flashpoint in Beijing's sustained campaign to diplomatically isolate Taiwan across the developing world, using economic leverage and political pressure to peel away the island's dwindling number of formal allies. The incident highlights the increasingly constrained international space available to Taipei, even for visits to countries that already recognise it, as China tightens its grip on global diplomatic channels."
       ],
       image: "https://i.guim.co.uk/img/media/9c09ae46a9b0953567deaa27ad7de2fa570eb8c2/375_221_3473_2779/master/3473.jpg?width=1200&quality=85&auto=format&fit=max&s=f54203148f19a62946303a06ad329667",
       source: "The Guardian",
@@ -46,15 +46,15 @@ var WORLD_NEWS = {
     },
     {
       id: "s3",
-      title: "Afghan US Allies Face Choice Between Congo and Taliban as Resettlement Talks Stall",
-      summary: "The Trump administration is reportedly in discussions to relocate up to 1,100 Afghans who aided US forces during the war in Afghanistan to the Democratic Republic of Congo.",
+      title: "Pope Leo Condemns Equatorial Guinea's Prisons in Frank Africa Tour Address",
+      summary: "Pope Leo delivered a passionate and unusually direct speech criticising the prison conditions in Equatorial Guinea as he concluded his tour of the African continent.",
       body: [
-        "According to reporting confirmed by a US non-profit, the Trump administration is considering sending around 1,100 Afghans who assisted American forces during the two-decade war in Afghanistan to the Democratic Republic of Congo — a country itself grappling with ongoing armed conflict. The Afghans have been living in Qatar since evacuation and now face a stark choice between the proposed Congo resettlement and returning to Taliban-controlled Afghanistan.",
-        "The discussions follow Trump's earlier decision to end a programme that had allowed the group to apply for resettlement in the United States, leaving them in prolonged limbo. Critics have condemned the proposal as a betrayal of individuals who risked their lives to support US military operations, and humanitarian organisations have raised serious concerns about safety conditions in the DRC as a potential destination."
+        "In a characteristically outspoken address that has defined his Africa tour, Pope Leo publicly criticised the prison system of Equatorial Guinea, one of the continent's most authoritarian states, during his visit to the small oil-rich nation. The speech drew widespread attention for its frankness, with the pontiff calling on the country's leaders to uphold the dignity of those imprisoned — a pointed message in a country long criticised by human rights organisations.",
+        "The Pope's Africa tour has attracted both admiration and some disappointment, with Catholics in several of the continent's largest nations — which were not included on the itinerary — expressing that they felt overlooked. Nevertheless, his willingness to speak candidly on sensitive political matters in the countries he has visited has been widely praised as a continuation of his forthright papal style."
       ],
-      image: "https://images.pexels.com/photos/31093728/pexels-photo-31093728.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/us-news/2026/apr/21/afghan-refugees-us-congo",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/f9dc/live/4abcd840-3e72-11f1-b55d-0f258dce1735.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.com/news/articles/c80m4822m1no?at_medium=RSS&at_campaign=rss",
       category: "International"
     }
   ]
