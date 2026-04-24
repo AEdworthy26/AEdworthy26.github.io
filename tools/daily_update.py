@@ -805,10 +805,17 @@ window.PHILOSOPHY_DATA = {{
 
 def gen_rics():
     log("\n── RICS Study")
-    recent_topics = recent_values('rics-data.js', 'topic', days=30)
+    recent_topics = recent_values('rics-data.js', 'topic', days=60)
     recent_competencies = recent_values('rics-data.js', 'apc_competency', days=14)
     avoid_topics = '\n'.join(f'- {t}' for t in recent_topics) if recent_topics else 'None'
     avoid_competencies = '\n'.join(f'- {c}' for c in recent_competencies) if recent_competencies else 'None'
+    # Extract keyword blocklist from recent topics — prevents subtle rephrasing of the same subject
+    keyword_blocks = set()
+    for t in recent_topics:
+        for kw in ['Section 73', 'BNG', 'biodiversity net gain', 'S106', 'viability', 'CIL', 'golden brick', 'overage']:
+            if kw.lower() in t.lower():
+                keyword_blocks.add(kw)
+    keyword_block_str = ', '.join(sorted(keyword_blocks)) if keyword_blocks else 'None'
     # Fallback images if Unsplash fetch fails
     rics_fallback_images = [
         'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1200&auto=format&fit=crop',
@@ -839,8 +846,11 @@ Alfie is an Assistant Development Manager at Latimer by Clarion Housing Group, t
 
 Affordable housing and RP context is a recurring theme but NOT the only one. Contractor/procurement is NOT part of his role.
 
-RECENTLY COVERED TOPICS (do NOT repeat these):
+RECENTLY COVERED TOPICS (do NOT repeat these — hard rule):
 {avoid_topics}
+
+KEYWORD BLOCK — these subjects appeared recently, do NOT cover them today even with a different title:
+{keyword_block_str}
 
 RECENTLY COVERED COMPETENCIES in last 14 days (try to avoid repeating — rotate to something different):
 {avoid_competencies}
@@ -852,7 +862,7 @@ TOPIC ROTATION — rotate fairly across ALL levels and competencies. Target: Lev
 
 TOPIC GUIDANCE — pick a niche sub-topic, vary widely, and do NOT default to S106 viability every session. Examples:
   - Land & JV: option agreement structures, overage mechanisms, golden brick JVs, CPO risk and compensation, development agreement clawback, deferred land payments, marriage value and ransom strips
-  - Planning: pre-app strategy, EIA screening and scoping, design and access statements, heritage impact assessments, NPPF sequential and exception tests, planning appeals processes, Grampian and pre-commencement conditions, DOVs, NMAs, section 73 applications
+  - Planning: pre-app strategy, EIA screening and scoping, design and access statements, heritage impact assessments, NPPF sequential and exception tests, planning appeals processes, Grampian and pre-commencement conditions, DOVs, NMAs, listed building consent, environmental impact assessment
   - Stakeholder engagement: community consultation best practice, managing political risk, statutory consultee roles (highways, ecology, heritage, drainage), public exhibition strategy, councillor briefings
   - Design team: appointing consultants (RIBA stages, fee structures, PI insurance), managing design briefs, NDSS and space standards, HQI, design review panels, design codes
   - Appraisals: residual land value methodology, GDV calculation, profit on cost vs GDV, cashflow timing, sensitivity and scenario analysis, development finance assumptions

@@ -1,84 +1,40 @@
 // curiosity-data.js
-// Auto-updated 2026-04-24 — do not edit manually
+// Auto-updated 2026-04-23 — do not edit manually
 
 var CURIOSITY_DATA = {
-  date: "2026-04-24",
+  date: "2026-04-23",
   mainArticle: {
-    title: "The Bog Bodies: Europe's Iron Age Dead and the Secrets They Carry",
-    subject: "Tollund Man bog body Iron Age Denmark",
-    subtitle: "For two thousand years, the peat bogs of northern Europe have preserved their victims with uncanny perfection — and the stories written on their skin are stranger than anything we imagined.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/f/f7/Moorleiche_von_Tollund_J%C3%BCtland_um_100_n_Chr_hingerichtet.jpg",
+    title: "The Antikythera Mechanism: The Ancient Computer That Shouldn't Exist",
+    subject: "Antikythera Mechanism",
+    subtitle: "Two thousand years before the digital age, Greek engineers built a device of almost impossible sophistication — and then the world forgot it existed.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/c/c8/Antikythera_Fragment_A_%28Front%29.webp",
     readTime: "8 min",
     content: [
-      {
-        type: "paragraph",
-        text: "In May 1950, two Danish peat-cutters working a bog near the village of Tollund in Jutland uncovered a human face staring up at them from the dark earth. The face was so peaceful, so perfectly preserved — stubble still visible on the chin, eyes gently closed — that the men assumed they had found a recent murder victim and called the police. When investigators arrived alongside archaeologist Peter Glob, they quickly realised the man had been dead for more than two thousand years. The peat bog had done something that no tomb, no pyramid, no royal burial could replicate: it had kept a human being almost exactly as he had lived."
-      },
-      {
-        type: "heading",
-        text: "The Chemistry of Preservation"
-      },
-      {
-        type: "paragraph",
-        text: "The remarkable preservation of bog bodies is no accident — it is the product of a precise and unlikely combination of natural chemistry. Sphagnum moss, the dominant plant of northern European bogs, releases compounds called sphagnan as it decays, which bind to nitrogen and effectively starve the bacteria that would otherwise decompose organic matter. Combined with the cold, oxygen-poor, and highly acidic environment of the waterlogged peat, this creates conditions that tan skin like leather, preserve stomach contents, and even maintain the fingerprints and facial expressions of the dead. The same process, paradoxically, dissolves bone — so many bog bodies survive as skin, hair, and soft tissue wrapped around a skeleton that has all but vanished."
-      },
-      {
-        type: "heading",
-        text: "A Gallery of the Ancient Dead"
-      },
-      {
-        type: "paragraph",
-        text: "More than a thousand bog bodies have been recovered across Denmark, Germany, the Netherlands, Ireland, and Britain, ranging in date from the Bronze Age to the early medieval period. Tollund Man remains the most famous: he wore a pointed leather cap and a plaited leather noose around his neck, and his last meal — consumed twelve to twenty-four hours before his death — consisted of a porridge of barley, linseed, and various wild seeds. Grauballe Man, found in a Danish bog in 1952, had his throat cut so violently that the wound nearly severed his head, while Lindow Man, pulled from a Cheshire peat marsh in 1984, had been struck on the skull, garotted, and had his throat cut — a triple death that struck archaeologists as deliberate and ritualistic."
-      },
-      {
-        type: "heading",
-        text: "Violence, Ritual, and the Gods"
-      },
-      {
-        type: "paragraph",
-        text: "The nature of the deaths is what makes the bog bodies so haunting and so controversial. Many show signs of extreme violence: broken bones, severed limbs, stab wounds, and ligatures consistent with hanging or strangulation. The classical writer Tacitus, describing the Germanic peoples in his first-century AD work Germania, noted that cowards, deserters, and those guilty of 'bodily infamy' were drowned in bogs under a framework of wicker — punishment by submersion in the earth itself. Some archaeologists believe the bog bodies represent criminals or outcasts, executed as punishment and cast into liminal, boundary spaces that the Iron Age mind associated with the supernatural."
-      },
-      {
-        type: "paragraph",
-        text: "Others argue for a more sacred interpretation. The careful positioning of many bodies, the absence of defensive wounds, the elaborate last meals, and the evidence of high social status among some victims — Tollund Man's well-manicured hands suggest he never did heavy manual labour — points toward voluntary or ceremonial sacrifice. The bog, in Iron Age cosmology, was neither land nor water, a threshold between worlds, the domain of gods and spirits. To place a body in the bog may have been the highest possible offering, a gift sent through the membrane between the living world and whatever lay beyond it."
-      },
-      {
-        type: "heading",
-        text: "What Their Stomachs Tell Us"
-      },
-      {
-        type: "paragraph",
-        text: "One of the most extraordinary aspects of the bog bodies is the survival of their digestive systems, which have allowed forensic scientists to reconstruct final meals with extraordinary precision. Tollund Man's porridge contained the seeds of more than forty different plant species, some of them weeds that would not have been deliberately cultivated — raising the possibility that the meal was intentionally diverse, perhaps ritually prescribed. Grauballe Man ate a similarly complex grain porridge containing ergot, a toxic fungus that grows on rye and causes hallucinations and convulsions, which some researchers interpret as deliberate intoxication before death."
-      },
-      {
-        type: "heading",
-        text: "The Modern Science of Ancient Bodies"
-      },
-      {
-        type: "paragraph",
-        text: "Twenty-first century technology has transformed what we can learn from the bog dead. CT scanning allows researchers to examine internal injuries without disturbing fragile tissue, while isotope analysis of teeth and bone can reveal where individuals grew up, what they ate across their lifetimes, and whether they moved between regions. DNA analysis, though often degraded by the acidic bog environment, has in some cases revealed genetic ancestry and even potential family relationships. A 2021 study of the Tollund Man remains using improved radiocarbon dating placed his death between 405 and 380 BC with remarkable precision, anchoring him firmly in the late Pre-Roman Iron Age of Scandinavia."
-      },
-      {
-        type: "heading",
-        text: "The Bogs Speak for Themselves"
-      },
-      {
-        type: "paragraph",
-        text: "What the bog bodies ultimately offer is something almost impossible in ancient history: direct, unmediated physical contact with individuals from a world that left almost no written record. Iron Age northern Europe is a largely silent civilisation — no texts, no monumental inscriptions, no named rulers. Yet here are the people themselves, their faces, their last meals, the marks of violence or ceremony on their bodies, preserved across two millennia with more fidelity than a portrait. They are both evidence and enigma, witnesses who survived everything except the ability to explain what happened to them."
-      }
+      { type: "paragraph", text: "In the spring of 1900, a group of Greek sponge divers sheltering from a storm near the small island of Antikythera descended into the deep and stumbled upon one of the most astonishing shipwrecks ever found. Among the bronzes, marble statues, and amphorae lay a corroded, fist-sized lump of bronze that nobody paid much attention to at first. It was not until an archaeologist noticed inscribed text and interlocking gears inside the crumbling fragments that anyone grasped what had been pulled from the sea. The object dated to roughly 100–70 BCE, and nothing remotely like it would appear in the archaeological record again for well over a thousand years." },
+      { type: "heading", text: "A Shipwreck Full of Wonders" },
+      { type: "paragraph", text: "The Antikythera wreck was a large Roman-era cargo vessel, probably travelling from the eastern Mediterranean toward Rome, that sank around 60 BCE. Its hold was packed with luxury goods — bronze and marble statues of remarkable quality, fine glassware, silver coins, and elaborate furniture. The haul represented one of the richest archaeological recoveries ever made from the ancient sea floor. Yet every treasure on board was eventually overshadowed by that single barnacled lump of corroded metal." },
+      { type: "heading", text: "Gears Inside the Ancient World" },
+      { type: "paragraph", text: "When fragments of the object were carefully examined — particularly by the Welsh scientist Derek de Solla Price in the 1950s and 1970s — it became clear that the mechanism contained at least 30 interlocking bronze gears of extraordinary precision, housed within a wooden case roughly the size of a shoebox. The front featured a large dial showing the zodiac and the Egyptian calendar; the back bore two spiral dials tracking lunar and planetary cycles. Price famously wrote that it was 'like finding a jet plane in the tomb of Tutankhamun' — an artefact so advanced it seemed to belong to a different civilisation entirely." },
+      { type: "heading", text: "What It Actually Did" },
+      { type: "paragraph", text: "Modern research, especially the landmark Antikythera Mechanism Research Project launched in 2005, used advanced X-ray tomography and polynomial texture mapping to read thousands of previously invisible inscriptions inside the device. The mechanism could predict solar and lunar eclipses using the Saros cycle, track the positions of the five planets known to antiquity, display the phase of the Moon, and calculate the dates of the Panhellenic Games — including the Olympics. A recent 2021 study by University College London proposed a full working model showing all planetary motions on a single front plate, suggesting the device was even more complex than previously imagined." },
+      { type: "heading", text: "The Mind That Made It" },
+      { type: "paragraph", text: "No maker's name survives on the device, but scholars have pointed toward the intellectual tradition of Rhodes and, in particular, the influence of the great astronomer and mathematician Hipparchus, whose precise lunar theories are embedded in the mechanism's gear ratios. The island of Rhodes was in the first century BCE a renowned centre of astronomical learning and mechanical ingenuity, and the Roman statesman Cicero himself wrote of seeing a similar 'sphere' made by Posidonius of Rhodes that modelled planetary motion. It is entirely possible that the Antikythera Mechanism was not unique — merely the only survivor of a now-vanished tradition of Greek mechanical astronomy." },
+      { type: "heading", text: "Lost Knowledge and the Dark Centuries" },
+      { type: "paragraph", text: "What makes the mechanism so philosophically haunting is not merely its sophistication but its apparent disappearance. No comparable geared mechanism appears anywhere in the historical record until the medieval Islamic world and later medieval European astronomical clocks of the 14th century — a gap of more than a millennium. The reasons are debated: the fall of centres of learning, the loss of skilled craftsmen, the disruption of Roman conquest, or simply the fragility of such intricate bronze work. The mechanism suggests that the ancient world reached a technological summit we have only recently begun to appreciate fully." },
+      { type: "paragraph", text: "The Antikythera Mechanism now rests in the National Archaeological Museum in Athens, still yielding secrets to researchers armed with technology its makers could never have imagined. It stands as a profound reminder that human ingenuity does not march in a straight line — it surges forward, retreats, and sometimes vanishes entirely, leaving behind only a corroded lump of bronze on the sea floor, waiting for someone curious enough to look inside." }
     ]
   },
   personOfTheDay: {
-    name: "Eadweard Muybridge",
-    lifespan: "1830–1904",
-    category: "Science, Art & Photography",
-    image: "https://upload.wikimedia.org/wikipedia/commons/f/f8/Optic_Projection_fig_411.jpg",
-    bio: "Eadweard Muybridge was born Edward James Muggeridge in Kingston upon Thames, England, in 1830, and reinvented himself — name and all — after emigrating to California in the 1850s. He established himself as a landscape photographer of the American West, producing sweeping panoramas of Yosemite and the Pacific coast that won him international recognition. His technical mastery was evident early, but it was a single wager between two wealthy Californians that would redirect his career toward something that changed the history of both science and art.\n\nIn 1872, the railroad magnate and former California governor Leland Stanford hired Muybridge to settle a popular dispute: whether a galloping horse ever had all four hooves off the ground simultaneously. After years of experimental work, Muybridge succeeded in 1878 at Stanford's Sacramento racetrack, setting up a row of twelve cameras with trip-wires that the horse snapped as it galloped past, capturing a sequence of images that proved — definitively — that all four hooves did leave the ground at once. The photographs stunned the world, overturning centuries of artistic convention and demonstrating that the human eye was too slow to perceive what was actually happening.\n\nMuybridge went on to produce his monumental work Animal Locomotion (1887), an encyclopedic series of 781 photographic plates documenting the movement of humans and animals in extraordinary detail — over 100,000 individual images. He invented the zoopraxiscope, a device for projecting his sequential images in motion, which is recognised as one of the direct ancestors of cinema. His work bridged the worlds of science and art: physicians studied his images of pathological movement, painters revised their anatomy, and the nascent film industry found in his technique the conceptual foundation for the moving picture. He died in Kingston upon Thames in 1904, having spent his final years gardening and writing, the revolution he had helped ignite still accelerating without him."
+    name: "Hipparchus of Nicaea",
+    lifespan: "c. 190–c. 120 BCE",
+    category: "Astronomy & Mathematics",
+    image: "https://upload.wikimedia.org/wikipedia/commons/c/c6/Head_of_Hipparchus_%28cropped%29.jpg",
+    bio: "Hipparchus of Nicaea is widely regarded as the greatest observational astronomer of antiquity, and possibly of the entire ancient world. Born in Nicaea in Bithynia (modern-day İznik, Turkey), he spent much of his working life on the island of Rhodes, where he built an observatory and conducted systematic observations of the night sky with a rigour that would not be matched for centuries. His work laid the foundations upon which Ptolemy would later construct his influential astronomical system, yet almost none of Hipparchus's own writings survive — we know him largely through the admiring citations of those who came after.\n\nHis achievements were staggering in their range and precision. Hipparchus compiled the first known star catalogue in the Western tradition, recording the positions of approximately 850 stars. He discovered the precession of the equinoxes — the slow wobble of the Earth's axis over a roughly 26,000-year cycle — by comparing his own observations with those of earlier Babylonian astronomers, a feat of deductive reasoning that remains breathtaking. He also developed accurate mathematical models for the motions of the Sun and Moon, producing a lunar theory so precise that its gear ratios appear to be encoded in the Antikythera Mechanism made a generation after his death.\n\nHipparchus also made foundational contributions to trigonometry, constructing the first known trigonometric table — a table of chords — which allowed him to calculate angular distances with unprecedented accuracy. He was deeply indebted to Babylonian astronomical records and was one of the first Greek thinkers to actively integrate Near Eastern numerical data into Greek theoretical frameworks. His insistence on matching mathematical models to actual observation, rather than merely to philosophical elegance, marked him as a scientist in a remarkably modern sense, and his influence quietly underpins much of what we think of as the Western scientific tradition."
   },
   onThisDay: {
-    headline: "The Easter Rising Begins in Dublin",
-    date: "April 24, 1916",
-    summary: "On the morning of Easter Monday, April 24, 1916, approximately 1,200 Irish republicans seized key buildings across Dublin and proclaimed an independent Irish Republic from the steps of the General Post Office on O'Connell Street. Patrick Pearse read the Proclamation of the Irish Republic aloud to a largely bemused crowd of onlookers, as rebel forces under commanders including James Connolly and Countess Markievicz established garrisons at the Four Courts, Boland's Mill, and Jacob's biscuit factory. The Rising had been planned for the full Easter weekend with far greater numbers, but a series of catastrophic mishaps — including the interception of a German arms shipment and a countermanding order that confused rebel mobilisation across the country — meant it launched at a fraction of its intended strength.\n\nBritish forces initially outnumbered and outmanoeuvred, responded within days with artillery and vastly superior numbers, bombarding central Dublin and reducing much of O'Connell Street to rubble. After six days of fierce urban fighting that killed around 485 people — rebels, British soldiers, and Dublin civilians — Pearse issued an unconditional surrender on April 29. The leaders were quickly court-martialled and fifteen of them executed by firing squad in the weeks that followed, a decision that transformed public opinion in Ireland almost overnight. Men who had been jeered in the streets as they were marched to prison became martyrs, and the Rising that had seemed a desperate failure became the founding act of a new national mythology. Within six years, most of Ireland would be an independent state.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/9/92/Dublin_-_aerial_-_2025-07-07_01.jpg"
+    headline: "Shakespeare Is Born — and Dies — on the Very Same Date",
+    date: "April 23, 1616",
+    summary: "On April 23, 1616, William Shakespeare died at his home in Stratford-upon-Avon at the age of 52, bringing to a close the life of the most celebrated writer in the English language. He had retired from the London stage some years earlier and returned to the prosperous Stratford household he had long maintained at a careful distance from his theatrical career. By a remarkable coincidence of tradition and record, April 23 is also accepted as Shakespeare's date of birth in 1564, meaning the great playwright entered and exited the world on the same calendar date — a symmetry that later ages found irresistible and commemorated enthusiastically.\n\nShakespeare left behind 37 plays, 154 sonnets, and several longer poems that would reshape the English language and the entire subsequent tradition of Western drama. His will, signed just weeks before his death, famously bequeathed his wife Anne Hathaway his 'second-best bed' — a phrase that has generated centuries of biographical speculation. He was buried two days later in the chancel of Holy Trinity Church in Stratford, beneath a stone bearing a curse on anyone who moved his bones — a warning that has, to date, been heeded. April 23 is now celebrated internationally as World Book Day by UNESCO, partly in honour of Shakespeare's death on that date.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/2/21/William_Shakespeare_by_John_Taylor%2C_edited.jpg"
   }
 };

@@ -1,61 +1,61 @@
 // tech-news-data.js
-// Auto-updated 2026-04-24 — do not edit manually
+// Auto-updated 2026-04-23 — do not edit manually
 
 var TECH_NEWS = {
-  date: "2026-04-24",
+  date: "2026-04-23",
   main: {
-    title: "Meta to Lay Off 8,000 Workers as Company Pivots Aggressively to AI",
-    category: "Technology",
+    title: "Anthropic's Mythos AI Model Triggers Global Alarms After Unauthorised Access Reported",
+    category: "Artificial Intelligence / Cybersecurity",
     content: [
-      "Meta has announced it will cut approximately 8,000 jobs — roughly 10 percent of its global workforce — as the social media giant dramatically accelerates its investment in artificial intelligence. The layoffs, which employees had been anticipating for several weeks, represent the company's largest round of redundancies since 2023. Meta also confirmed plans to close around 6,000 open roles that had yet to be filled, effectively shrinking its overall headcount by a significant margin.",
-      "The cuts are being framed internally as a strategic realignment rather than a sign of financial distress. Meta has been on an aggressive AI spending trajectory, committing tens of billions of dollars to building out data centres, custom silicon, and large language model research. Chief Executive Mark Zuckerberg has repeatedly told investors and staff that the company's long-term dominance depends on winning the AI race, and that leaner operational structures will free up capital for that mission.",
-      "The announcement lands at a particularly turbulent moment for the broader tech industry, which has seen waves of layoffs from major players over the past two years even as AI investment has soared. Critics argue that the framing of workforce reductions as 'AI-driven efficiency' obscures the human cost of rapid automation and restructuring. Labour advocates have called on regulators to examine whether companies are adequately supporting displaced workers as they retool their organisations around machine intelligence.",
-      "For Meta specifically, the stakes are high. The company has poured resources into its Llama family of open-weight AI models and its mixed-reality hardware division, betting that these two pillars will define the next computing platform. While Llama has been widely adopted by developers and enterprises, Meta's reality labs division continues to post heavy losses, making the pressure to demonstrate AI-driven revenue growth all the more acute. The layoffs signal that Zuckerberg is willing to make painful near-term trade-offs to fund that vision.",
-      "Analysts are divided on whether the strategy will pay off. Some argue that Meta's open-source AI approach gives it a unique advantage in building an ecosystem of developers and partners that closed competitors cannot easily replicate. Others warn that the pace of AI investment across the industry is outstripping demonstrable returns, and that companies shedding thousands of experienced workers risk losing institutional knowledge that is difficult to replace. The coming months will be a critical test of whether Meta's AI-first restructuring translates into measurable competitive gains."
+      "Anthropic, the AI safety-focused startup behind the Claude family of models, confirmed this week that it is actively investigating reports of unauthorised access to its highly restricted Mythos model — a system the company itself has described as too dangerous to release publicly. The breach, first reported by Bloomberg, allegedly involved a small handful of individuals gaining access to the model without authorisation. Anthropic has not yet disclosed how the access occurred or how long it may have persisted before being detected.",
+      "What makes the situation particularly alarming is the nature of Mythos itself. Unlike consumer-facing AI tools, Mythos was developed with advanced capabilities for detecting and exploiting cybersecurity vulnerabilities, making it a significant dual-use technology. Anthropic has deliberately kept it off the public market precisely because of concerns that it could be weaponised by malicious actors to compromise critical digital infrastructure at scale. The model's capabilities in this domain reportedly far exceed those of any publicly available AI system.",
+      "The fallout from the disclosure has been swift and far-reaching. According to reporting by The New York Times, Mythos has triggered emergency responses from central banks and intelligence agencies around the world, as governments scramble to assess potential exposure. The scale of institutional alarm reflects a broader anxiety in the security community about what happens when frontier AI systems — even those kept under strict access controls — fall into unintended hands, even briefly.",
+      "Anthropic is now under intense scrutiny over its access governance procedures. The incident raises pointed questions about whether even well-resourced AI companies can adequately secure their most sensitive systems, particularly as the capabilities of frontier models continue to advance rapidly. Critics and regulators are likely to use this episode as a rallying point for stricter mandatory oversight frameworks, including third-party audits of access controls for high-risk AI models.",
+      "The Mythos incident arrives at a moment of heightened global debate about AI governance and the responsibilities of private companies developing potentially transformative — and dangerous — technologies. Anthropic has positioned itself as a safety-first organisation, making the breach especially fraught for its public reputation. As the investigation continues, the episode is expected to intensify calls for binding international agreements on the development and containment of high-capability AI systems, with Mythos now serving as a concrete cautionary example of what is at stake."
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/72b1/live/f79c1250-3f45-11f1-ac78-2112837ce2aa.jpg",
-    source: "BBC News",
-    sourceUrl: "https://www.bbc.com/news/articles/crm1y89vek8o"
+    image: "https://images.pexels.com/photos/30282227/pexels-photo-30282227.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    source: "The New York Times",
+    sourceUrl: "https://www.nytimes.com/2026/04/22/technology/anthropics-mythos-ai.html"
   },
   secondary: [
     {
       id: "tc1",
-      title: "Newly Deciphered Malware May Have Targeted Iran's Nuclear Program Before Stuxnet",
-      summary: "Researchers have cracked a mysterious piece of sabotage malware called Fast16, created in 2005, which may have been a precursor to the famous Stuxnet cyberweapon used against Iran.",
+      title: "SpaceX Eyes Major Strategic Shift Ahead of Anticipated IPO",
+      summary: "Elon Musk is proposing new directions for SpaceX that diverge from the company's founding mission of reaching Mars, raising questions as it prepares to go public.",
       body: [
-        "Cybersecurity researchers have finally decoded Fast16, a sophisticated piece of malware capable of silently corrupting calculation and simulation software, which appears to predate the notorious Stuxnet worm by several years. The code, created around 2005, is believed to have been developed and likely deployed by the United States or a close ally, and may have been part of early covert operations targeting Iran's nuclear programme. Its discovery adds a significant new chapter to the history of state-sponsored cyberwarfare.",
-        "Stuxnet, which was publicly uncovered in 2010, has long been considered the opening salvo of the era of destructive nation-state malware, but Fast16 suggests that sophisticated digital sabotage efforts were already underway years earlier. Understanding these precursor tools gives security researchers and historians a more complete picture of how offensive cyber capabilities evolved in the mid-2000s, and raises fresh questions about what other undiscovered code from that era may still be lurking in archives or legacy systems."
+        "As SpaceX edges closer to a long-anticipated initial public offering, Elon Musk has been floating ambitious new moonshots that mark a notable departure from the company's original core goal of establishing a human presence on Mars. The strategic pivot has caught the attention of investors and space industry observers alike, who are watching closely to see how the company defines its future priorities in its public filings.",
+        "The timing is significant: SpaceX is simultaneously reported to be in a deal with AI coding tool Cursor valued at around $60 billion, signalling an increasing emphasis on artificial intelligence as a pillar of the company's expanding portfolio. Together, these moves suggest SpaceX is repositioning itself as a broader technology powerhouse rather than purely a space transportation company ahead of its market debut."
       ],
-      image: "https://media.wired.com/photos/69ea6ad5ba58a984aa33cf3d/master/pass/Security_MalwareMayHaveTargetedIran'sNuclearProgram_03.jpg",
-      source: "WIRED",
-      url: "https://www.wired.com/story/fast16-malware-stuxnet-precursor-iran-nuclear-attack/",
-      category: "Cybersecurity"
+      image: "https://static01.nyt.com/images/2026/04/23/business/00spacex-changes/00spacex-changes-mediumSquareAt3X.jpg",
+      source: "The New York Times",
+      url: "https://www.nytimes.com/2026/04/22/technology/elon-musk-spacex-ipo-goals.html",
+      category: "Space & Technology"
     },
     {
       id: "tc2",
-      title: "UK Biobank Health Data on 500,000 Britons Found Listed for Sale on Chinese Website",
-      summary: "The UK government has confirmed that de-identified health records belonging to half a million British volunteers were found advertised for sale on Chinese e-commerce platform Alibaba.",
+      title: "Xbox Cuts Game Pass Prices but Removes Day-One Call of Duty Access",
+      summary: "Microsoft has announced lower Game Pass subscription tiers while confirming that new Call of Duty titles will no longer be available on the service on launch day.",
       body: [
-        "Britain's technology minister told Parliament that confidential health data from the UK Biobank project — one of the world's most valuable medical research repositories — was discovered listed across three separate postings on Alibaba last week. The government stressed that the data had been 'de-identified,' meaning it did not contain directly personally identifiable information, but experts warned that large-scale anonymised datasets can often be re-identified using modern analytical techniques. The incident has prompted urgent questions about how the data left secure research environments.",
-        "UK Biobank is a globally significant resource that has contributed to thousands of studies on genetics, disease, and ageing, and its integrity is considered vital to the future of medical research in Britain. The episode underscores growing concerns about the security of large health databases in an era when data has become an extraordinarily valuable commodity, and is likely to intensify calls for stricter controls on who can access and export sensitive research datasets."
+        "Microsoft has restructured its Xbox Game Pass subscription offering, reducing prices for certain tiers while making a significant concession to players who joined for blockbuster titles: new Call of Duty games will now only arrive on the service roughly a year after their initial release. The change represents a meaningful shift in the value proposition that originally drew many subscribers to Game Pass.",
+        "The decision is likely to disappoint fans who subscribed specifically for day-one access to the flagship franchise, which Microsoft acquired as part of its $69 billion purchase of Activision Blizzard. Industry analysts suggest the move may reflect an effort to protect premium game sales revenue even as Microsoft seeks to grow the overall subscriber base with lower entry-level pricing."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/d24d/live/f69c7d70-3f15-11f1-ac78-2112837ce2aa.jpg",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/technology/2026/apr/23/private-health-records-uk-biobank-chinese-website-alibaba",
-      category: "Cybersecurity"
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/80df/live/35601e70-3e55-11f1-ac78-2112837ce2aa.png",
+      source: "BBC News",
+      url: "https://www.bbc.com/news/articles/cgrlvvrn409o?at_medium=RSS&at_campaign=rss",
+      category: "Gaming"
     },
     {
       id: "tc3",
-      title: "Carbon Nanotube Wiring Edges Closer to Rivalling Copper in Electronics",
-      summary: "Researchers have made a significant advance in getting carbon nanotube wiring to conduct electricity at levels approaching copper, potentially pointing the way to next-generation interconnects.",
+      title: "Worldcoin's Orb Promoted a Bruno Mars Partnership That Never Existed",
+      summary: "Sam Altman's iris-scanning identity company falsely promoted a partnership with Bruno Mars, with a spokesperson for the artist confirming no such discussions ever took place.",
       body: [
-        "Scientists have achieved a meaningful step forward in making carbon nanotube-based wiring a practical alternative to copper for use in electronic devices, reporting conductivity levels substantially closer to those of the metal that has dominated the industry for decades. Although the experimental material currently degrades over time — a significant hurdle for real-world deployment — the researchers say the work demonstrates a viable path toward more capable nanoscale conductors. As chip features continue to shrink, copper interconnects are approaching fundamental physical limits that new materials may help overcome.",
-        "Carbon nanotubes have long been one of the most tantalising materials in nanotechnology, prized for their extraordinary theoretical electrical and mechanical properties, but translating those properties into manufacturable, reliable components has proven stubbornly difficult. This latest research suggests that targeted engineering of nanotube structures and contacts can close the performance gap more quickly than previously expected, which could have major implications for the semiconductor industry as it searches for post-copper solutions to keep pace with Moore's Law."
+        "Tools for Humanity, the company behind Sam Altman's Worldcoin orb project, promoted what it described as a partnership with global music superstar Bruno Mars — a claim that has since been flatly denied by a spokesperson for the artist. According to WIRED, the representative stated the artist was never approached and was never in any discussions regarding a partnership or tour access of any kind.",
+        "The incident is an embarrassing misstep for a company that is already navigating significant public scepticism about its biometric data collection model. Worldcoin's orbs scan users' irises in exchange for a digital identity token, and the project has faced regulatory scrutiny in multiple countries; a fabricated celebrity endorsement is unlikely to help its efforts to build public trust."
       ],
-      image: "https://cdn.arstechnica.net/wp-content/uploads/2026/04/GettyImages-157692460-1152x648.jpg",
-      source: "Ars Technica",
-      url: "https://arstechnica.com/science/2026/04/researchers-get-carbon-nanotube-wiring-to-conduct-more-like-copper/",
-      category: "Science & Hardware"
+      image: "https://images.pexels.com/photos/7412089/pexels-photo-7412089.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      source: "WIRED",
+      url: "https://www.wired.com/story/sam-altman-orb-company-bruno-mars-partnership-fake/",
+      category: "Tech Industry"
     }
   ]
 };
