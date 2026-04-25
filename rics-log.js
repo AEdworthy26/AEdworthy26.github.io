@@ -3,6 +3,45 @@
 
 var RICS_LOG = [
   {
+    "date": "2026-04-25",
+    "topic": "Development Agreement Clawback: Mechanisms, Triggers and Negotiation Strategy in JV Structures",
+    "module": "Land and Joint Ventures",
+    "level": 3,
+    "apc_competency": "Project Finance (Level 3)",
+    "focus": "This lesson examines clawback provisions within development agreements and joint venture structures \u2014 how they are structured, what triggers them, how they are calculated, and how a development manager negotiates and manages them in practice. For a candidate at Latimer, where JV and land-led acquisition is central to the business model, clawback mechanics are a live commercial and legal risk that assessors will probe at Level 3 depth.",
+    "image": "https://images.pexels.com/photos/36712857/pexels-photo-36712857.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "content": [],
+    "summary": [
+      "Clawback is deferred, variable land consideration \u2014 always model it as an explicit cost line in the appraisal at the trigger date, not buried in contingency, and present base/downside/upside scenarios to the investment committee.",
+      "Negotiate for profit-realisation or completion triggers rather than planning-grant triggers wherever possible; if a planning trigger is unavoidable, seek a cap, deferred payment structure, and agreed valuation methodology locked into the contract.",
+      "The definition of 'development costs' in a profit-share clawback is heavily contested \u2014 insist on full-cost definitions mirroring the investment committee appraisal, and limit landowner audit rights in scope and timing.",
+      "Overage registered as a restriction at HMLR requires a release mechanism aligned to phasing and sales programme; lenders require a deed of postponement confirming clawback ranks behind senior debt \u2014 this must be resolved before first drawdown.",
+      "Always include a sunset clause (10\u201325 years) and a defined RICS-basis dispute resolution mechanism in any clawback or overage provision to protect against indefinite title encumbrance and valuation disputes."
+    ],
+    "qa": [
+      {
+        "q": "You acquired a site under an option agreement with a clawback triggered at planning grant. At the investment committee paper stage, how did you reflect the clawback liability in the development appraisal?",
+        "a": "I modelled clawback as a deferred land payment in the cashflow, timed to the anticipated planning grant date. The quantum was calculated using the agreed mechanism in the option agreement \u2014 in this case 35% of uplift above the option price, with uplift determined by an independent RICS Market Value assessment of the consented residential site. I ran three scenarios: base case using the expected consented GDV as the driver of land value, a downside assuming a 10% reduction in residential land values, and an upside reflecting the possibility of additional units being consented. The IRR and profit-on-cost figures reported to the investment committee were post-clawback in all scenarios. I also flagged clawback quantum as a specific line item in the project risk register."
+      },
+      {
+        "q": "What is the difference between a clawback triggered at planning grant versus one triggered at profit realisation, and why does the timing distinction matter for a development manager?",
+        "a": "A planning-grant trigger creates a cash liability at the point of consent \u2014 before construction begins and before any sales revenue is received. This means the developer must fund the clawback payment from equity or development loan drawdown, increasing the peak debt requirement and potentially affecting DSCR covenants. A profit-realisation trigger only bites once actual profit is demonstrated (typically at practical completion or final account), so the payment is aligned with income receipts and is contingent on the scheme being profitable. For Latimer, a planning-grant trigger on a scheme using Homes England AHP grant is particularly problematic because the grant is drawn down in arrears and cannot be used to fund land-related payments \u2014 so the clawback must be funded entirely from equity at a point when cashflow is most constrained."
+      },
+      {
+        "q": "A landowner insists on registering their overage entitlement as a restriction at HMLR. What are the practical implications for Latimer's development programme, and how would you address them?",
+        "a": "A registered restriction prevents Latimer from disposing of any part of the site \u2014 including selling completed units \u2014 without the landowner's consent or without demonstrating the overage obligation has been discharged. On a phased scheme, this can block unit completions unless a phased release mechanism is agreed and documented in the overage deed. I would negotiate a phase-by-phase release schedule: as each phase's clawback is calculated and settled, the landowner provides a formal release letter to remove the restriction on that phase's title, enabling residential sales to proceed. I would also require the landowner to sign a lender's consent letter (deed of postponement) confirming the restriction does not take priority over the senior development loan \u2014 without this, no development finance lender will drawdown against a site with a registered overage restriction."
+      },
+      {
+        "q": "In a development agreement with a local authority where Latimer receives a land transfer at discounted consideration in exchange for affordable housing delivery and a profit-share arrangement, how would you define 'profit' for clawback purposes, and what exclusions would you insist upon?",
+        "a": "I would insist that 'profit' is defined as net development profit calculated after all reasonable and auditable development costs, including: construction contract sum and agreed variations; professional fees and consultant costs; planning fees and CIL/infrastructure contributions; finance costs at an agreed benchmark rate (e.g. SONIA + agreed margin) over the actual loan period; a developer overhead recovery of 5% on construction costs; and sales, marketing and legal costs. I would explicitly exclude Homes England AHP grant receipts from the profit calculation \u2014 grant is not profit, it is public subsidy to enable affordable delivery. I would also exclude any notional land value imputed to Latimer's contribution, and cap the LA's audit rights to a 12-month window post practical completion with agreed document categories."
+      },
+      {
+        "q": "You mentioned a sunset clause as best practice in clawback negotiations. What duration is typically appropriate, and what happens if planning is not achieved before the longstop?",
+        "a": "For residential development schemes, sunset clauses of 15\u201325 years are standard, reflecting the longer development timescales on complex strategic sites. For smaller urban infill sites with a shorter planning horizon, 10\u201315 years may be appropriate. If planning is not achieved before the longstop, the clawback obligation extinguishes \u2014 the developer has no further liability and the restriction (if registered) must be removed. The landowner takes the risk that their scheme-specific clawback was not triggered. In negotiation, landowners will resist short sunsets on sites where planning is uncertain; Latimer's position is typically to accept a longer sunset in exchange for a lower clawback percentage or a cap on total clawback quantum. The sunset clause must also address what happens if planning is implemented after the longstop \u2014 typically, implementation of a pre-longstop consent should still trigger the clawback even if construction begins after the sunset date."
+      }
+    ]
+  },
+  {
     "date": "2026-04-23",
     "topic": "Section 73 Applications, Non-Material Amendments and Deed of Variation: Post-Consent Planning Flexibility",
     "module": "Planning and Development Management",

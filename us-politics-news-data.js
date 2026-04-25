@@ -1,60 +1,60 @@
 // us-politics-news-data.js
-// Auto-updated 2026-04-23 — do not edit manually
+// Auto-updated 2026-04-25 — do not edit manually
 
 var US_POLITICS_NEWS = {
-  date: "2026-04-23",
+  date: "2026-04-25",
   main: {
-    title: "Senate Republicans Push $70 Billion ICE Funding Surge Through Overnight Vote Marathon",
+    title: "DOJ Drops Powell Probe, Clearing Path for Trump's Fed Takeover",
     category: "Politics",
     content: [
-      "The U.S. Senate plunged into an exhausting overnight voting session Wednesday, as Republicans advanced a sweeping budget plan that includes a $70 billion boost for Immigration and Customs Enforcement. The marathon session, a procedural gauntlet known on Capitol Hill as a 'vote-a-rama,' saw the GOP conference hold together to defeat a wave of Democratic amendments before pressing forward with the central immigration enforcement spending increase. The push marks one of the most significant single expansions of federal immigration enforcement funding in recent memory.",
-      "Democrats used the amendment process to force Republicans onto the record on a series of politically sensitive issues, including healthcare costs, food assistance, and insurance practices. Among the amendments defeated were proposals to reverse cuts to the Supplemental Nutrition Assistance Program — estimated at $187 billion under last year's One Big Beautiful Bill Act — and measures targeting insurance companies that delay or deny necessary medical care. Republicans largely held the line, though a small number of moderates and one conservative broke ranks on specific votes.",
-      "Notably, Senators Susan Collins of Maine and Dan Sullivan of Alaska — both considered vulnerable in future cycles — crossed the aisle to support both the SNAP-related amendment and an amendment addressing insurance denials. They were joined on the healthcare amendment by conservative firebrand Senator Josh Hawley of Missouri, a rare moment of bipartisan alignment that underscored the political sensitivity of healthcare and food security issues heading into the midterm election environment. Their defections, while not enough to pass either amendment, signal potential fault lines within the Republican Senate coalition.",
-      "The $70 billion ICE funding increase is a central pillar of the Republican budget reconciliation effort and reflects the Trump administration's sustained prioritization of aggressive immigration enforcement as a defining domestic policy. The funds are expected to support expanded detention capacity, deportation operations, and border security infrastructure. Passage of the overall budget framework through the Senate would send the measure back to the House, where conservatives have their own demands and negotiations remain ongoing.",
-      "The overnight session illustrated the high-stakes nature of the current legislative moment, with both parties treating the budget process as a proxy battle over the direction of federal spending and social policy ahead of the 2026 midterms. Democratic leaders framed their amendment strategy as an effort to expose Republican priorities to voters, particularly on issues like grocery costs and healthcare access. Republicans, for their part, argued that the immigration funding increase reflects a mandate from the 2024 election and is essential to restoring order at the southern border."
+      "The Justice Department has dropped its investigation into Federal Reserve Chairman Jerome Powell, ending a politically charged inquiry that critics had widely condemned as an attempt by the Trump administration to intimidate the nation's central bank. The probe had centered on allegations of improper cost overruns during the renovation of the Fed's Washington headquarters — charges that many economists and legal experts dismissed as a pretext for political pressure. The decision to close the investigation was announced Thursday, and it immediately reverberated across financial markets and Washington's political circles alike.",
+      "The timing of the DOJ's move is far from coincidental. By dropping the probe, the administration effectively removes a cloud of controversy that had complicated Senate confirmation proceedings for Kevin Warsh, President Trump's nominee to succeed Powell as Fed chair. Warsh, a former Fed governor and Wall Street veteran, had seen his confirmation prospects complicated by the spectacle of the sitting administration appearing to criminally target a sitting Fed chair. With that obstacle cleared, Republican senators who had expressed reservations now face significantly less political friction in moving forward with his confirmation.",
+      "The damage done to the Federal Reserve's institutional reputation, however, may prove harder to repair than the legal question itself. According to reporting by the New York Times, the Trump administration's sustained attacks on the Fed — which included public pressure campaigns by President Trump, the launching of the DOJ inquiry, and repeated calls to lower interest rates — have rattled confidence in the central bank's independence both domestically and among international investors. The perception that the Fed can be weaponized or coerced by the executive branch poses systemic risks to the credibility of U.S. monetary policy at a moment of significant economic uncertainty.",
+      "Former Fed officials and monetary policy experts have described the episode as a dangerous precedent. Central bank independence is considered a cornerstone of modern economic management, designed to insulate interest rate decisions from short-term political calculations. By demonstrating a willingness to open a criminal inquiry into a Fed chair — even one ultimately dropped — the Trump administration has signaled to future presidents that such tools are available, a prospect that alarms those who study institutional checks and balances. The affair is also likely to shadow Warsh's tenure at the Fed, should he be confirmed, as markets and observers scrutinize whether his decisions reflect independent judgment or political alignment with the White House.",
+      "Powell's term as Fed chair is set to expire in May 2026, and the administration has been eager to install Warsh before then. Trump has long clashed with Powell over interest rate policy, repeatedly and publicly demanding cuts that Powell and the Fed's board declined to implement. The resolution of the DOJ inquiry now sets up what is expected to be a swift Senate confirmation process for Warsh, though Democrats are certain to use the hearings as an opportunity to press him on his commitment to the Fed's independence. How Warsh navigates those questions — and how he subsequently governs the institution — will define not only his legacy but the broader question of whether American monetary policy can credibly remain free from political interference."
     ],
-    image: "https://static01.nyt.com/images/2026/03/27/multimedia/22dc-budget-wwk/27trump-news-promo-1015am-wkml-mediumSquareAt3X.jpg",
-    source: "The New York Times",
-    sourceUrl: "https://www.nytimes.com/2026/04/23/us/politics/senate-plunges-into-vote-marathon-as-gop-advances-ice-funding-boost.html"
+    image: "https://images.pexels.com/photos/5854416/pexels-photo-5854416.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    source: "NPR",
+    sourceUrl: "https://www.npr.org/2026/04/24/nx-s1-5798724/doj-drops-powell-probe-paving-the-way-to-confirm-kevin-warsh"
   },
   secondary: [
     {
       id: "us1",
-      title: "Navy Secretary John Phelan Ousted 'Effective Immediately' Amid Pentagon Clashes",
-      summary: "Navy Secretary John Phelan has been forced out of his post after reportedly clashing repeatedly with Defense Secretary Pete Hegseth, the latest in a string of senior Pentagon departures.",
+      title: "White House Rewrites Rules for Preserving Presidential Records",
+      summary: "The White House has loosened presidential records preservation requirements after the Justice Department declared a post-Watergate records law unconstitutional.",
       body: [
-        "Pentagon spokesman Sean Parnell announced Wednesday that Navy Secretary John Phelan was 'departing the administration, effective immediately,' with Navy Undersecretary Hung Cao stepping in as acting secretary. Phelan, a billionaire and significant donor to Donald Trump's 2024 campaign, had held the post for just 13 months before his abrupt removal.",
-        "Officials familiar with the situation said Phelan had clashed repeatedly with Defense Secretary Pete Hegseth, continuing a pattern of turbulence at the top of the Pentagon that has seen multiple senior defense leaders depart in recent months. The instability raises questions about civil-military relations and continuity of leadership within the U.S. military establishment."
+        "White House lawyers have established a sweeping new internal policy governing the preservation of presidential records, following a Justice Department opinion arguing that a foundational post-Watergate records law is unconstitutional. Experts in government transparency and archival law say the revised rules significantly weaken safeguards that have been in place for decades, raising concerns about accountability and historical documentation of the current administration's decision-making.",
+        "The Presidential Records Act, passed in 1978 in the wake of the Nixon administration's document destruction, was designed to ensure that White House communications and records belong to the public rather than to individual officeholders. Critics warn that gutting its enforcement mechanisms sets a precedent that could make it far more difficult to hold future administrations to account, and that the move fits a broader pattern of the Trump White House seeking to reduce institutional oversight of executive branch conduct."
       ],
-      image: "https://images.unsplash.com/photo-1541872705-1f73c6400ec9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxOYXZ5JTIwU2VjcmV0YXJ5JTIwSm9obiUyMFBoZWxhbiUyME91c3RlZCUyMHxlbnwwfDB8fHwxNzc2OTIwNTgwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "NPR",
-      url: "https://www.npr.org/2026/04/22/g-s1-118406/navy-secretary-john-phelan-leaving-undersecretary-hung-cao",
+      image: "https://images.unsplash.com/photo-1753799515829-ea90e1d27725?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxXaGl0ZSUyMEhvdXNlJTIwUmV3cml0ZXMlMjBSdWxlcyUyMGZvciUyMFByZXNlcnZpbmclMjBQcmVzaWRlbnRpYWwlMjBSZWNvcmRzfGVufDB8MHx8fDE3NzcwOTMzODd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "Washington Post",
+      url: "https://www.washingtonpost.com/national-security/2026/04/24/white-house-rewrites-rules-preserving-presidential-records/",
       category: "Politics"
     },
     {
       id: "us2",
-      title: "Virginia's Redistricting Shakeup Sparks National Debate Over Political Gerrymandering",
-      summary: "Virginia voters approved a mid-decade redistricting plan designed to give Democrats a decisive edge in the state's congressional delegation, igniting a broader national conversation about partisan map-drawing.",
+      title: "Trump Administration Moves to Add Firing Squad to Federal Execution Methods",
+      summary: "The Justice Department announced it is adding firing squads as an approved federal execution method while also reviving a lethal injection protocol from Trump's first term.",
       body: [
-        "Virginia voters approved a measure Tuesday to redraw the state's congressional maps in a way that analysts say could allow Democrats to win 10 of the state's 11 congressional seats. The plan, championed by Democratic Governor Abigail Spanberger, is already facing legal challenges from Republicans who argue the mid-decade redistricting sets a dangerous precedent.",
-        "The move has prompted the Trump team and national Republicans to defend their own redistricting efforts in states like Florida, framing the Virginia outcome as justification for aggressive map-drawing wherever they hold power. The escalating tit-for-tat over congressional boundaries is increasingly seen as a defining feature of American electoral politics heading into the 2026 midterm cycle."
+        "The Justice Department announced Friday that it is moving to authorize firing squads as an approved method of federal execution, a significant expansion of capital punishment procedures that reflects the Trump administration's aggressive posture on the death penalty. Officials also confirmed they are reinstating a lethal injection drug protocol that was used during Trump's first term, which saw an unprecedented burst of federal executions in his final months in office.",
+        "The announcement is expected to face immediate legal challenges from death penalty opponents and civil liberties organizations, who argue that firing squads constitute cruel and unusual punishment in violation of the Eighth Amendment. The move comes as the administration has signaled a broader intent to accelerate federal executions, and it is likely to reignite fierce debate in Congress and the courts over the constitutionality and ethics of capital punishment in the United States."
       ],
-      image: "https://images.unsplash.com/photo-1575474007145-7bc306677fa4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxWaXJnaW5pYXxlbnwwfDB8fHwxNzc2OTIwNTgwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "NPR",
-      url: "https://www.npr.org/2026/04/22/nx-s1-5794707/virginia-approved-a-plan-to-draw-four-more-seats-that-lean-heavily-for-democrats",
+      image: "https://images.unsplash.com/photo-1634919984837-0f4f98ff1ce0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUcnVtcCUyMEFkbWluaXN0cmF0aW9uJTIwTW92ZXMlMjB0byUyMEFkZCUyMEZpcmluZyUyMFNxdWFkJTIwdG8lMjBGZWRlcmFsJTIwRXhlY3V0aW9uJTIwTWV0aG9kc3xlbnwwfDB8fHwxNzc3MDkzMzg3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "Washington Post",
+      url: "https://www.washingtonpost.com/national-security/2026/04/24/federal-death-penalty-firing-squads-trump/",
       category: "Politics"
     },
     {
       id: "us3",
-      title: "White House Moves to Reclassify Marijuana, Dropping It from Schedule I",
-      summary: "The Trump administration is preparing to move marijuana to Schedule III under federal drug law, a significant policy shift that would loosen restrictions on the substance for the first time in decades.",
+      title: "Mississippi Governor Calls Special Session After Supreme Court Redistricting Case",
+      summary: "Mississippi Governor Tate Reeves announced he will convene a special legislative session to redraw voting maps within 21 days of a landmark Supreme Court ruling on the Voting Rights Act.",
       body: [
-        "The White House is planning an imminent rescheduling of marijuana from Schedule I — the most restrictive federal drug classification, shared with heroin — to Schedule III, a category that includes some prescription painkillers. The move would represent a landmark shift in federal drug policy and could have wide-ranging implications for the cannabis industry, medical research, and criminal justice.",
-        "The decision reflects a notable evolution in Republican drug policy positioning under Trump and comes as bipartisan pressure to reform federal marijuana laws has grown steadily over recent years. The reclassification would not fully legalize marijuana at the federal level but would ease restrictions significantly, potentially opening the door for greater banking access and research opportunities for cannabis businesses."
+        "Mississippi Governor Tate Reeves announced Friday that he will call a special session of the state legislature to redraw electoral maps following the U.S. Supreme Court's anticipated ruling in Louisiana v. Callais, a case with sweeping implications for how the Voting Rights Act applies to congressional redistricting. Reeves said lawmakers will reconvene in Jackson within 21 days of the Court's decision to consider new maps that comply with whatever standard the justices establish.",
+        "The case is being watched closely by voting rights advocates and Republican-led states alike, as its outcome could reshape the legal landscape governing majority-minority districts across the South and beyond. A ruling that curtails VRA protections could significantly affect Black voter representation in Mississippi and other states, making the special session a politically consequential moment that will draw intense scrutiny from civil rights organizations and federal courts."
       ],
-      image: "https://images.pexels.com/photos/8139619/pexels-photo-8139619.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      source: "The Washington Post",
-      url: "https://www.washingtonpost.com/politics/2026/04/22/trump-marijuana-rescheduling/",
+      image: "https://thehill.com/wp-content/uploads/sites/2/2025/12/6955a059878555.92069569-e1777080850282.jpeg?w=900",
+      source: "The Hill",
+      url: "https://thehill.com/homenews/state-watch/5848505-reeves-calls-special-session/",
       category: "Politics"
     }
   ]
