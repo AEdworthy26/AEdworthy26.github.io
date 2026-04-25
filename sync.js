@@ -60,9 +60,7 @@
     pushTimer = setTimeout(doPush, 800);
   }
 
-  function doPush() {
-    var token = getToken();
-    if (!token) return;
+  function buildPayload() {
     var data = { _timestamps: getLocalTimestamps() };
     SYNC_KEYS.forEach(function (k) {
       var v = _origGet(k);
@@ -70,10 +68,17 @@
     });
     var files = {};
     files[GIST_FILE] = { content: JSON.stringify(data) };
+    return JSON.stringify({ files: files });
+  }
+
+  function doPush(keepalive) {
+    var token = getToken();
+    if (!token) return;
     fetch(API_URL, {
-      method:  'PATCH',
-      headers: authHeaders(token),
-      body:    JSON.stringify({ files: files })
+      method:   'PATCH',
+      headers:  authHeaders(token),
+      body:     buildPayload(),
+      keepalive: !!keepalive
     }).then(function () {
       _origSet(LAST_SYNC_KEY, new Date().toISOString());
       updateSyncUI('synced');
@@ -154,8 +159,11 @@
     });
   });
 
-  /* ── push on tab close / navigation away ── */
-  window.addEventListener('beforeunload', function () { doPush(); });
+  /* ── push on tab close / navigation away (keepalive so browser doesn't kill it) ── */
+  window.addEventListener('beforeunload', function () { doPush(true); });
+
+  /* ── safety-net: push every 2 minutes while the page is open ── */
+  setInterval(function () { if (getToken()) doPush(); }, 2 * 60 * 1000);
 
   /* ── sync status indicator (subtle, top-right of page) ── */
   function updateSyncUI(state) {
@@ -186,7 +194,7 @@
         }
       });
     },
-    push:    doPush,
+    push:    function() { doPush(); },
     pull:    doPull,
     status:  updateSyncUI
   };
