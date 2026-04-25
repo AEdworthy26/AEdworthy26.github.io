@@ -648,19 +648,20 @@ var {var_name} = {{
 
 def gen_quiz():
     log("\n── Quiz of the day")
-    recent_q = recent_values('quiz-data.js', 'question')
+    recent_q = recent_values('quiz-data.js', 'question', days=730)
     avoid_q = '\n'.join(f'- {q}' for q in recent_q) if recent_q else 'None'
-    prompt = f"""Generate a general knowledge question of the day for {TODAY}.
+    prompt = f"""Generate a pub-quiz style general knowledge question of the day for {TODAY}.
 
-Pick ONE category at random from this wide list — spread evenly across all of them over time, and do NOT default to history or ancient history:
-History, Ancient History, British Politics, World Politics, Geography, Sport, Science, Nature, Technology, Literature, Art, Music, Film & TV, Food & Drink, Architecture, Economics, Language & Words, Mythology, Religion & Culture, Exploration & Discovery, Medicine, Space & Astronomy, Philosophy, Law & Justice, Fashion & Design.
+Think of this like a good pub quiz question — specific, surprising, and satisfying when you know the answer. It should feel like it belongs in a real quiz night, not a school exam.
+
+Pick ONE category completely at random — rotate unpredictably across all of these:
+Geography, Sport, Science, Nature, Food & Drink, Music, Film & TV, Literature, Art, Architecture, Technology, Medicine, Space & Astronomy, Language & Words, Mythology, Religion & Culture, Law & Justice, Fashion & Design, Economics, British History, World History, British Politics, World Politics, Exploration & Discovery, Philosophy, Animals, Transport, TV Catchphrases, Famous Firsts, Record Breakers, Inventions.
 
 Rules:
-- The question must be genuinely interesting and non-trivial — something a curious person would find satisfying.
-- Do NOT lean toward history or ancient history — treat every category as equally likely.
-- Vary the difficulty: some questions should be hard, some moderately challenging.
-
-IMPORTANT — do NOT repeat or closely resemble any of these recent questions:
+- Be genuinely unpredictable — do not default to famous events or well-known facts.
+- Ask about specific details: a year, a name, a place, a number, a first — not vague concepts.
+- Vary difficulty freely: some questions should be hard enough to stump people.
+- Do NOT repeat or closely resemble any of these recent questions:
 {avoid_q}
 
 Output ONLY this JavaScript. No explanation, no markdown. Start directly with "window.QUIZ_DATA".
