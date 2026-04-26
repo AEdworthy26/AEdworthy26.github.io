@@ -3,6 +3,45 @@
 
 var RICS_LOG = [
   {
+    "date": "2026-04-26",
+    "topic": "Heritage Impact Assessments: NPPF Framework, Setting and Harm in Residential-Led Schemes",
+    "module": "Planning and Development Management",
+    "level": 2,
+    "apc_competency": "Planning and Development Management (Level 2)",
+    "focus": "This lesson covers the practical application of heritage impact assessment (HIA) in the context of residential-led planning applications \u2014 specifically how 'setting', 'significance' and levels of harm are defined, tested and weighed under the NPPF. It is directly relevant to Alfie's role coordinating planning consultants and heritage specialists on schemes near listed buildings, conservation areas and scheduled monuments, and to navigating the statutory consultee relationship with Historic England.",
+    "image": "https://images.unsplash.com/photo-1762523454393-517bd0d99729?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxIZXJpdGFnZSUyMEltcGFjdCUyMEFzc2Vzc21lbnRzJTNBJTIwTlBQRiUyMEZyYW1ld29yayUyQyUyMFNldHRpbmclMjBhbmQlMjBIYXJtJTIwaW4lMjBSZXNpZGVudGlhbC1MZWQlMjBTY2hlbWVzJTIwYXJjaGl0ZWN0dXJlfGVufDB8MHx8fDE3NzcxODAxNzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "content": [],
+    "summary": [
+      "Heritage impact assessment must follow the five-step GPA3 methodology \u2014 significance first, then setting contribution, then harm \u2014 not as a post-rationalisation but as an iterative design tool integrated from RIBA Stage 1.",
+      "The NPPF distinguishes substantial from less than substantial harm \u2014 triggering different policy thresholds. In practice the vast majority of cases are less than substantial, but this is not a de minimis finding \u2014 harm must still be weighed against public benefits in a structured way under NPPF paragraph 208.",
+      "Historic England is a statutory consultee for Grade I and II* designated assets and scheduled monuments \u2014 engaging them at pre-application stage to share draft HIAs and design iterations is the most effective way to avoid a formal application-stage objection.",
+      "Due diligence at site appraisal stage must include an NHLE search, HER check, and consideration of Conservation Area Appraisals \u2014 heritage risk should be quantified in the investment committee risk register and reflected in residual land value assumptions.",
+      "Curtilage and setting are legally and technically distinct \u2014 curtilage has a defined legal meaning relevant to what is listed; setting is experiential and potentially much wider, encompassing any land from which the significance of the asset can be appreciated or affected."
+    ],
+    "qa": [
+      {
+        "q": "You're presenting an investment committee paper on a site adjacent to a Grade II* listed building. What heritage-related risks and mitigations would you specifically highlight?",
+        "a": "I would flag the following: (1) Planning risk \u2014 Grade II* triggers a higher NPPF threshold for harm than Grade II; any finding of substantial harm would require wholly exceptional justification. I would note whether Historic England is likely to engage as statutory consultee on this basis. (2) Design risk \u2014 the scheme will need an HIA following GPA3 methodology, and the design may need to be iterated in response to heritage officer and Historic England feedback, with potential cost and programme implications. (3) Legal risk \u2014 if any physical works affect the listed building or structures in its curtilage, LBC is required separately from planning permission, and unauthorised works are a criminal offence. (4) Mitigation \u2014 I would recommend a pre-application heritage consultation with both the LPA conservation officer and Historic England before committing design resource, and would commission an initial desk-based assessment to establish the significance baseline early. (5) I would model a sensitivity scenario in the appraisal reflecting a 12-month programme extension and a potential reduction in massing on the most heritage-sensitive elevation."
+      },
+      {
+        "q": "An LPA conservation officer has found that your proposed scheme causes 'less than substantial harm' to a nearby conservation area. Does this mean you can proceed without further justification?",
+        "a": "No \u2014 a finding of less than substantial harm does not mean the harm is trivial or that it can be ignored. Under NPPF paragraph 208, the LPA must weigh the less than substantial harm against the public benefits of the proposal. The weight given to that harm depends on its degree \u2014 it can range from negligible to significant harm within the 'less than substantial' category. The public benefits must be genuine and demonstrable: in Alfie's context, these would typically include the quantum of affordable homes delivered, the regeneration of a brownfield or vacant site, economic activity, and housing need. The case must be made explicitly in the planning application \u2014 the heritage consultant's HIA and the planning statement should both address the paragraph 208 balancing exercise, not leave it to the LPA to infer."
+      },
+      {
+        "q": "What is the legal consequence of carrying out works to a Grade II listed building without listed building consent?",
+        "a": "Under Section 7 of the Planning (Listed Buildings and Conservation Areas) Act 1990, it is a criminal offence to execute works that would affect the character of a listed building without LBC. Crucially, there is no statutory time limit on prosecution \u2014 unlike the four-year rule for building operations under TCPA 1990. This means unauthorised works carried out many years ago can still be prosecuted or subject to a Listed Building Enforcement Notice. For a development manager acquiring a site with a listed building component, title due diligence must include a review of whether any previous alterations were carried out with LBC \u2014 indemnity insurance is sometimes available but is not a substitute for obtaining retrospective consent where works are ongoing or newly discovered."
+      },
+      {
+        "q": "How would you distinguish between the curtilage of a listed building and its setting, and why does the distinction matter in practice?",
+        "a": "Curtilage is a legal concept referring to the parcel of land that forms part of and serves the listed building \u2014 it is relevant to the extent of listing protection. Under Section 1(5) of the 1990 Act, any object or structure fixed to a listed building, and any object or structure within its curtilage that was there before 1 July 1948, is treated as part of the listed building. This means physical works to curtilage structures \u2014 an old barn or boundary wall within the curtilage of a listed farmhouse, for instance \u2014 require LBC. Setting, by contrast, is defined in Historic England's GPA3 as 'the surroundings in which a heritage asset is experienced' \u2014 it is experiential, not legal, and has no fixed boundary. A development can sit entirely outside the curtilage and still harm the setting. The practical difference is that setting affects the NPPF harm assessment for planning permission purposes, while curtilage determines whether LBC is needed for physical works."
+      },
+      {
+        "q": "On a scheme you're managing, Historic England has submitted a formal objection to your planning application on heritage grounds. What are the options and process from here?",
+        "a": "A Historic England objection is a material consideration that carries significant weight, but it is not a veto \u2014 the LPA remains the decision-maker. Options are: (1) Engage directly with Historic England to understand the specific grounds of objection and whether a design amendment or additional information could resolve it \u2014 their pre-decision correspondence is part of the planning record and should be responded to substantively. (2) If the LPA is minded to approve despite the objection, for Grade I or II* listed buildings or scheduled monuments the application may need to be referred to the Secretary of State under the Directions on major applications, who may call it in. (3) If the application is refused, a planning appeal (written representations, hearing or inquiry) is possible, but heritage merit is highly fact-specific and inspectors give significant weight to Historic England's position \u2014 success rates on heritage-driven refusals are materially lower than on other grounds. (4) The most cost-effective path is almost always to resolve the objection pre-decision through design revision, additional assessment, or phased delivery, rather than proceeding to appeal."
+      }
+    ]
+  },
+  {
     "date": "2026-04-25",
     "topic": "Development Agreement Clawback: Mechanisms, Triggers and Negotiation Strategy in JV Structures",
     "module": "Land and Joint Ventures",

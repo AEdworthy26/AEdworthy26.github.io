@@ -1,10 +1,10 @@
 // quiz-data.js
-// Auto-updated 2026-04-25 — do not edit manually
+// Auto-updated 2026-04-26 — do not edit manually
 
 window.QUIZ_DATA = {
-  date: '2026-04-25',
-  category: 'Food & Drink',
-  question: 'Which fermentation process gives sourdough bread its characteristic tangy flavour, and what two types of microorganism are responsible for it?',
-  answer: 'Wild fermentation driven by wild yeasts (which produce CO₂ for leavening) and lactic acid bacteria (which produce lactic and acetic acids, creating the sour taste).',
-  funFact: 'The balance between lactic acid (milder, yoghurt-like sourness) and acetic acid (sharper, vinegar-like sourness) depends heavily on hydration levels and fermentation temperature — wetter, warmer doughs favour lactic acid, while stiffer, cooler doughs produce more acetic acid. Some sourdough starter cultures have been kept alive and continuously fed for over 100 years, effectively making them living heirlooms passed down through generations of bakers.'
+  date: '2026-04-26',
+  category: 'Transport',
+  question: 'What was the name of the world\'s first commercially operated hovercraft service, launched in 1959 across the Dee Estuary in Wales?',
+  answer: 'The Vickers-Supermarine SR.N1 service, operated as the Wirral Belle route — though it is commonly referred to simply as the first SR.N1 passenger crossing, operated by British United Airways\' predecessor.',
+  funFact: 'The SR.N1 hovercraft made its historic first public passenger crossing of the Solent in July 1959, just 50 years to the day after Louis Blériot flew across the English Channel. The inventor Christopher Cockerell had originally pitched the hovercraft concept to the British government, who classified it as secret — unsure whether it was a boat, a plane, or something else entirely. Commercial hovercraft services across the English Channel later became a beloved institution, running until 2000.'
 };

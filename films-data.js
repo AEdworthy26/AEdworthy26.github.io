@@ -1,18 +1,18 @@
 // films-data.js
-// Auto-updated 2026-04-25 — do not edit manually
+// Auto-updated 2026-04-26 — do not edit manually
 
 var FILMS_DATA = {
-  date: "2026-04-25",
+  date: "2026-04-26",
   film: {
-    title: "Smooth Talk",
-    director: "Joyce Chopra",
-    year: 1985,
-    genres: ["Drama", "Thriller"],
-    desc: "Based on Joyce Carol Oates's chilling short story 'Where Are You Going, Where Have You Been?', this quiet American masterpiece follows fifteen-year-old Connie, a restless California girl drifting through the lazy freedoms of summer, until a dangerously magnetic stranger named Arnold Friend arrives at her door and shatters every illusion of safety she holds. Laura Dern gives one of the great debut performances of the 1980s — luminous, confused, and heartbreaking — while Treat Williams as Arnold Friend is among the most genuinely unsettling presences in American independent cinema. Chopra builds dread through ordinariness: suburban malls, pop radio, the specific boredom of adolescence, all accumulating into something that feels both mythic and terrifyingly real. The film won the Grand Jury Prize at Sundance and deserves to be spoken of alongside the finest American coming-of-age films ever made.",
-    cast: ["Laura Dern", "Treat Williams", "Mary Kay Place"],
-    rating: 91,
+    title: "Lone Star",
+    director: "John Sayles",
+    year: 1996,
+    genres: ["Mystery", "Drama", "Western"],
+    desc: "In a small Texas border town, sheriff Sam Deeds unearths a decades-old skeleton that may implicate his legendary lawman father in a long-buried murder — and the investigation quietly unravels the town's entire mythology of itself. John Sayles weaves together race, memory, family, and history with a patience and intelligence rare in American cinema, using the landscape of the Rio Grande as both setting and metaphor. The film moves fluidly between past and present without a single dissolve, letting the land itself hold all the contradictions of who we are versus who we claim to be. Kris Kristofferson is menacingly magnetic as the dead man whose shadow dominates the story, while Chris Cooper gives one of the great unsung performances of the 1990s as a man trying to step out of a myth. It is a richly layered, deeply humane film that rewards every viewing with something newly discovered.",
+    cast: ["Chris Cooper", "Kris Kristofferson", "Elizabeth Peña", "Matthew McConaughey"],
+    rating: 96,
     ratingSource: "Rotten Tomatoes",
-    ratingExtra: "Sundance Grand Jury Prize",
-    posterUrl: "https://upload.wikimedia.org/wikipedia/en/b/b5/Smooth_talk_poster.jpg"
+    ratingExtra: "1 Academy Award Nomination (Original Screenplay)",
+    posterUrl: "https://upload.wikimedia.org/wikipedia/en/2/2b/Lone_Star_film.jpg"
   }
 };

@@ -1,92 +1,88 @@
 // curiosity-data.js
-// Auto-updated 2026-04-25 — do not edit manually
+// Auto-updated 2026-04-26 — do not edit manually
 
 var CURIOSITY_DATA = {
-  date: "2026-04-25",
+  date: "2026-04-26",
   mainArticle: {
-    title: "The Mapping of the Deep: How the Challenger Expedition Invented Oceanography",
-    subject: "HMS Challenger Expedition",
-    subtitle: "Between 1872 and 1876, a converted Royal Navy warship sailed 68,000 miles and discovered an entirely unknown world beneath the waves.",
-    image: "https://images.unsplash.com/photo-1583014066665-2c8c6f2367c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxITVMlMjBDaGFsbGVuZ2VyJTIwRXhwZWRpdGlvbnxlbnwwfDB8fHwxNzc3MDkzNjQ5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    title: "The Dead Cities of Syria: A Vanished World Frozen in Stone",
+    subject: "Dead Cities of Syria",
+    subtitle: "Eight hundred ghost towns dot the limestone hills of northern Syria — prosperous Byzantine communities that simply walked away, leaving their houses, churches, and olive presses standing for fifteen centuries.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Serjilla_01.jpg",
     readTime: "8 min",
     content: [
       {
         type: "paragraph",
-        text: "In December 1872, a three-masted sailing ship reinforced with a steam engine slipped out of Portsmouth harbour and began one of the most consequential scientific journeys in human history. HMS Challenger was not built for war but had been stripped of most of its guns and refitted with laboratories, dredging equipment, and miles of sounding rope. The men aboard — a small team of naturalists led by Edinburgh professor Charles Wyville Thomson — were about to discover that the ocean was not, as most people assumed, a featureless abyss largely empty of life. What they found would take decades to fully understand and would establish an entirely new scientific discipline: oceanography."
+        text: "In the limestone massif of northern Syria, between Aleppo and the Turkish border, there exists one of the strangest archaeological landscapes on earth. More than eight hundred abandoned settlements — known collectively as the Dead Cities — stand in a state of eerie preservation, their stone houses roofless but upright, their churches still arching skyward, their wine and olive presses intact as if their owners stepped out yesterday. No catastrophic eruption buried them, no flood swept them away; they were simply abandoned over the course of a few centuries, leaving behind a complete cross-section of late antique rural life that has no parallel anywhere in the Mediterranean world."
       },
       {
         type: "heading",
-        text: "A World Nobody Had Seen"
+        text: "The Boom Years: How Olive Oil Built an Empire of Villages"
       },
       {
         type: "paragraph",
-        text: "Before the Challenger set sail, the deep ocean was almost entirely a matter of speculation. Edward Forbes, one of Britain's leading marine biologists, had proposed in 1843 that life became impossible below 300 fathoms — roughly 550 metres — a zone he called the 'azoic' or lifeless region. It was a reasonable hypothesis based on the available evidence, but it was spectacularly wrong. Within the first weeks of its voyage, the Challenger's dredges were pulling up bizarre, luminous, and wholly unknown creatures from depths far greater than Forbes had declared uninhabitable. The ocean floor, it turned out, was teeming."
+        text: "The story of the Dead Cities begins not with death but with extraordinary prosperity. Between roughly the 1st and 6th centuries AD, the limestone hills of the region — known in antiquity as the Belus Massif — were intensively cultivated, primarily for olives. Roman and later Byzantine demand for olive oil was insatiable: it served as food, lamp fuel, soap, medicine, and a key ingredient in the early Christian sacrament of chrism. Farmers here responded with industrial-scale production, cutting terraces into the rocky hillsides and constructing stone oil presses of sophisticated design, dozens of which survive in working condition to this day."
       },
       {
         type: "heading",
-        text: "The Mechanics of Discovery"
+        text: "Stone Instead of Mud: Why These Villages Survived"
       },
       {
         type: "paragraph",
-        text: "The expedition's methods were painstaking and physically exhausting. At each sampling station — there were 362 in total — the crew would lower weighted lines to measure depth, drag dredging nets across the sea floor, collect water samples at various depths, and record temperature. The sounding process alone could take an entire day at great depths, requiring the crew to lower and retrieve miles of hemp rope by hand before the ship acquired a steam-powered winding machine. Every specimen collected was catalogued and preserved, and the ship's naturalists worked around the clock to sketch and describe organisms before they decomposed in the warm air."
+        text: "The reason the Dead Cities are visible at all comes down to geology. Unlike the mud-brick settlements of the Syrian plain, which dissolved back into the earth within generations of abandonment, the villages of the limestone massif were built entirely from the local rock — a hard, pale stone that can be quarried cleanly and requires no mortar. Walls, doorframes, staircases, and furniture were all carved from the same material, and when the inhabitants left, the stone simply stayed. Fourteen centuries of dry Syrian summers have done little to erode structures that were already engineered for permanence."
       },
       {
         type: "heading",
-        text: "The Deepest Place on Earth"
+        text: "Pilgrims and Profits: The Role of Early Christianity"
       },
       {
         type: "paragraph",
-        text: "On 23 March 1875, in the western Pacific near the Mariana Islands, the Challenger's crew recorded a sounding of 4,475 fathoms — approximately 8,184 metres. They had found what is now known as the Challenger Deep, the deepest point in the world's oceans and part of the Mariana Trench. The measurement was made with a hemp line and a cannonball for a weight, and it was remarkably close to the figure established by modern sonar more than a century later. The sheer scale of what lay beneath them was almost incomprehensible to men standing on a wooden deck in bright Pacific sunshine."
+        text: "Christianity transformed the Dead Cities from prosperous farming communities into pilgrimage destinations and, in doing so, supercharged their wealth. The most spectacular example is the sanctuary of Saint Simeon Stylites at Qal'at Sim'an, built after 490 AD around the pillar upon which Simeon had stood for 37 years as an act of extreme ascetic devotion. The complex — one of the largest churches constructed anywhere in the world before the great Byzantine building programmes of Justinian — drew pilgrims from as far as Britain and Ethiopia, turning the surrounding villages into a thriving service economy of inns, markets, and religious workshops. Amulets stamped with Simeon's image have been found across the entire Roman world, evidence of a devotional brand that generated real commercial returns."
       },
       {
         type: "heading",
-        text: "Strange Life From the Abyss"
+        text: "The Archaeology of Ordinary Life"
       },
       {
         type: "paragraph",
-        text: "The zoological discoveries of the expedition filled warehouses. The dredges returned with glass sponges of extraordinary architectural delicacy, sea cucumbers that moved in slow procession across the sediment, and single-celled organisms called Radiolaria that built mineral skeletons of breathtaking geometric complexity. The naturalist John Murray, who would go on to become one of the founding fathers of oceanography, was particularly fascinated by the sediment samples: he identified a fine, reddish clay on the deepest ocean floors and vast deposits of the chalky remains of microscopic organisms that he termed 'ooze.' These sediments, he realised, were a geological archive of unimaginable depth."
+        text: "What makes the Dead Cities uniquely valuable to historians is not their churches but their houses. Detailed stone inscriptions record the names of owners and construction dates; doorways survive with their lintels carved with crosses, vine scrolls, and Greek inscriptions; interior rooms retain their plastered walls and carved stone benches. We can read the social hierarchy of a village directly from its architecture — the larger, more ornate townhouses of the prosperous olive merchants sitting beside the simpler single-room dwellings of agricultural labourers. Nowhere else in the late antique world can you walk through a complete village streetscape and feel so viscerally close to its former inhabitants."
       },
       {
         type: "heading",
-        text: "The Manganese Surprise"
+        text: "Why They Were Abandoned: A Debate Still Unresolved"
       },
       {
         type: "paragraph",
-        text: "Among the stranger finds were small black nodules brought up repeatedly from great depths across every ocean basin. They turned out to be manganese nodules — lumps of mineral that had precipitated, atom by atom, directly from seawater over millions of years, accreting around a grain of sediment or a shark's tooth. The Challenger's scientists had no framework for understanding how slowly these objects formed; modern analysis suggests they grow at roughly a centimetre per million years. Today, manganese nodules carpet vast stretches of the deep sea floor and are the subject of intense debate over whether they should be commercially mined for the metals — nickel, cobalt, copper — that they contain."
+        text: "The abandonment of the Dead Cities was gradual rather than sudden, unfolding roughly between the 7th and 10th centuries, and historians continue to argue about its causes. The Arab conquests of Syria in the 630s certainly disrupted the Byzantine administrative and trade networks upon which olive-oil prosperity depended, but many villages appear to have continued functioning for centuries under Umayyad rule. Climate deterioration, a series of devastating earthquakes, the collapse of long-distance Mediterranean trade, and shifts in regional power all likely played compounding roles. The most honest answer is that we are looking at a slow economic suffocation rather than a dramatic terminal event — the hills simply became less profitable, less connected, and less worth maintaining."
       },
       {
         type: "heading",
-        text: "The Report That Defined a Science"
+        text: "A UNESCO World Heritage Site Under Threat"
       },
       {
         type: "paragraph",
-        text: "The Challenger returned to Portsmouth in May 1876 having crossed the Atlantic, Pacific, and Antarctic oceans and sailed within sight of icebergs near the edge of the Southern Ocean. Processing the results took longer than the voyage itself. John Murray oversaw the production of the expedition's official report, a monumental fifty-volume series published between 1880 and 1895 that described over 4,700 new species and established the foundational maps of ocean depth, temperature, and current that scientists still reference. Charles Wyville Thomson, exhausted by years of work, died before its completion, leaving Murray to carry the project — and the legacy — to fruition."
+        text: "The Dead Cities were inscribed as a UNESCO World Heritage Site in 2011, almost simultaneously with the outbreak of the Syrian civil war that would go on to endanger them. Several sites suffered damage from military activity, looting, and the quarrying of ancient stone for use in new construction by displaced communities. Qal'at Sim'an was hit by airstrikes in 2015, damaging parts of the surrounding monastery complex. Yet the sheer scale of the landscape — hundreds of sites spread across hundreds of square kilometres — means that the core of this extraordinary heritage has survived, a ghost world still waiting quietly in the limestone hills."
       },
       {
         type: "heading",
-        text: "A Legacy Written in Every Map of the Ocean Floor"
+        text: "What the Silence Tells Us"
       },
       {
         type: "paragraph",
-        text: "The Challenger expedition's influence runs beneath almost everything we know about the ocean. The naming convention for deep-sea features, the methods of sampling and cataloguing marine life, the basic understanding of ocean circulation and its role in regulating climate — all trace their lineage to those four years of slow, grinding, astonishing work. When the bathyscaphe Trieste descended to the Challenger Deep in 1960, and when the unmanned vehicle Nereus did the same in 2009, they were visiting a place that was first measured by a team of men with a cannonball and a rope. The sea gave up its secrets reluctantly, but the Challenger was patient enough to wait."
-      },
-      {
-        type: "paragraph",
-        text: "In an era when exploration still meant physical endurance and radical uncertainty, the Challenger expedition stands apart not for one dramatic moment but for the sheer sustained ambition of its project: to know what lay beneath the surface of something that covers 71 percent of the Earth. Its scientists did not find the bottom of the world so much as they discovered that the world had a bottom at all — and that it was stranger, richer, and more alive than anyone had dared to imagine."
+        text: "There is something philosophically striking about a civilisation preserved precisely because it was forgotten. The Dead Cities were not maintained, curated, or rebuilt — they were simply left alone, and the stone did the rest. Walking through Serjilla or Al-Bara today, among houses whose doorways still frame views of terraced hillsides, it is possible to feel the weight of fifteen centuries of silence as something almost tangible. These are not ruins in the conventional sense; they are pauses, places where late antiquity simply stopped mid-sentence and has never resumed. In their stillness they offer something that no museum reconstruction can replicate: the unmediated presence of a world that was once completely, unremarkably alive."
       }
     ]
   },
   personOfTheDay: {
-    name: "John Murray",
-    lifespan: "1841–1914",
-    category: "Science & Exploration",
-    image: "https://images.unsplash.com/photo-1576497587596-452538785d63?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxKb2huJTIwTXVycmF5JTIwcG9ydHJhaXR8ZW58MHwyfHx8MTc3NzA5MzY1MHww&ixlib=rb-4.1.0&q=80&w=1080&crop=faces,entropy&fit=crop",
-    bio: "John Murray was born in Cobourg, Ontario, to Scottish parents who returned with him to Scotland when he was a teenager. He studied medicine and natural sciences at the University of Edinburgh, where he came under the influence of Charles Wyville Thomson and developed a passionate interest in marine biology. His early career was shaped by a voyage to the Arctic aboard a whaling vessel, an experience that instilled in him both a tolerance for physical hardship at sea and a fascination with what lay in cold, deep water.\n\nWhen Thomson was appointed scientific director of the Challenger expedition in 1872, Murray was invited along as a junior naturalist. He proved to be one of the most energetic and intellectually restless members of the scientific team, turning his attention to the sediments on the ocean floor with an originality that would define his career. His identification and classification of the various oozes — globigerina ooze, diatom ooze, radiolarian ooze — and of the red clay of the abyssal plain gave science its first coherent picture of what the deep ocean floor was actually made of and how it had been formed over geological time.\n\nAfter Thomson's death, Murray inherited the enormous task of editing and completing the fifty-volume Challenger Reports, a project that consumed nearly two decades of his life. He funded much of the later oceanographic work from his own considerable fortune, which he had built partly through the discovery and commercial exploitation of phosphate deposits on Christmas Island — themselves a product of his deep knowledge of marine sediments. He continued to conduct oceanographic research into old age, and died in a car accident in 1914, a fittingly modern end to a life that had bridged the age of sail and the age of science. His gravestone in Edinburgh describes him simply as 'the Murray of oceanography.'"
+    name: "Simeon Stylites the Elder",
+    lifespan: "c. 390–459",
+    category: "Religion & Asceticism",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Plaque_de_Saint-Simeon_%28Louvre%2C_Bj_2180%29_%28cropped%29.jpg/1280px-Plaque_de_Saint-Simeon_%28Louvre%2C_Bj_2180%29_%28cropped%29.jpg",
+    bio: "Simeon Stylites was a Syrian Christian ascetic monk who achieved one of the most extraordinary and improbable feats in the history of religious practice: he spent approximately 37 years living on a progressively heightened pillar near Aleppo, preaching to the thousands of pilgrims who gathered below him. Born to a shepherd family in Sis, in what is now southern Turkey, he entered monastic life as a teenager and quickly developed a reputation for extreme self-mortification that alarmed even his fellow monks — he reportedly wore a rope of palm leaves wound so tightly around his body that it had to be surgically removed. Expelled from his first monastery for excessive zeal, he retreated to a hilltop near Telanissos and began the pillar-dwelling experiment that would define his life and legacy.\n\nThe pillar, initially only a few feet high, was raised repeatedly over the years until it reached a height of roughly 18 metres — about six storeys. Simeon stood on a small platform at the top, exposed to sun, wind, and rain, bowing in prayer hundreds of times each day and twice daily delivering sermons to the crowds below via a rope-and-basket system that also delivered his meagre food rations. He corresponded with emperors, arbitrated theological disputes, and was consulted by the powerful across the Christian world, all without ever descending. The Greek word for pillar, stylos, gave him his lasting epithet.\n\nSimeon died on his column in 459 AD, discovered by his attendant after he had not risen for three days. His body was transported to Antioch under military escort — such was his fame that there was genuine fear of riots if the relic were not handled with extreme care. The enormous church complex built over the stump of his final pillar, Qal'at Sim'an, became one of the great pilgrimage sites of the Christian world and remains among the most impressive surviving monuments of Byzantine architecture. Simeon's example inspired a tradition of stylite asceticism that continued in the Eastern Christian world for centuries after his death, a testament to the enduring power of an idea so strange it became sacred."
   },
   onThisDay: {
-    headline: "Italy's Liberation: The Nazi Occupation Ends",
-    date: "April 25, 1945",
-    summary: "On April 25, 1945, the National Liberation Committee of Upper Italy called a general insurrection against the German occupiers and their Italian Fascist allies, triggering a popular uprising across northern Italy that effectively ended Nazi control of the country. Partisan fighters poured out of the mountains and into cities such as Milan, Turin, and Genoa, overwhelming the remaining German garrisons before Allied forces arrived. Benito Mussolini, who had governed a puppet state under German protection in northern Italy, fled toward Switzerland and was captured by partisans two days later. The date — known in Italy as the Festa della Liberazione — became the country's national liberation day, a permanent public holiday.\n\nThe liberation was the culmination of nearly two years of brutal fighting on Italian soil following the Allied landings in Sicily in July 1943. Italy had formally surrendered to the Allies in September of that year, but Germany had immediately occupied the north and centre of the country, turning it into a theatre of grinding, attritional warfare. The Italian partisan movement, which numbered hundreds of thousands of men and women by 1945, had fought a parallel resistance campaign of sabotage, intelligence-gathering, and direct combat, suffering terrible reprisals from both the SS and the Italian Fascist Black Brigades. Their rising on April 25 was the final, decisive act of that resistance, and it gave Italians the rare and precious experience of having contributed actively to their own liberation.",
-    image: "https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/1920px-Flag_of_Italy.svg.png"
+    headline: "CHERNOBYL REACTOR NO. 4 EXPLODES",
+    date: "April 26, 1986",
+    summary: "In the early hours of April 26, 1986, Reactor No. 4 at the Chernobyl Nuclear Power Plant near Pripyat in the Ukrainian Soviet Socialist Republic suffered a catastrophic explosion during a safety test, releasing a plume of radioactive material that would eventually contaminate large parts of Europe. The accident occurred when a combination of design flaws in the RBMK reactor and a series of operator decisions led to an uncontrolled nuclear chain reaction; two explosions blew the reactor's 1,000-tonne steel lid off and ignited a graphite fire that burned for ten days. It remains, alongside Fukushima Daiichi in 2011, one of only two nuclear accidents ever rated at the maximum Level 7 on the International Nuclear Event Scale.\n\nThe immediate human cost was devastating. Two plant workers died in the explosion itself, and 28 of the emergency workers and firefighters who battled the blaze in the following days died within weeks from acute radiation syndrome. The nearby city of Pripyat — a model Soviet town of 49,000 people — was evacuated 36 hours after the explosion, its residents told to bring only essentials for a temporary absence that became permanent. The long-term health consequences, including elevated rates of thyroid cancer particularly in children exposed to radioactive iodine-131, continue to be studied and debated by epidemiologists. The exclusion zone established around the plant remains largely uninhabited to this day, an eerie landscape of reclaimed forest and abandoned apartments.\n\nThe Chernobyl disaster had consequences far beyond its immediate radiological impact. It severely damaged public confidence in Soviet technical competence and official truthfulness, and many historians argue it was a significant catalyst in the unravelling of the USSR — Mikhail Gorbachev himself later wrote that Chernobyl was perhaps the real cause of the Soviet Union's collapse, more than any other factor. The accident also reshaped global nuclear policy, prompting safety reviews worldwide and strengthening international cooperation on nuclear regulation. In 2019 the HBO television dramatisation brought renewed global attention to the events of that April night, introducing the story to a generation born after the wall had already fallen.",
+    image: "https://images.pexels.com/photos/13717554/pexels-photo-13717554.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
   }
 };

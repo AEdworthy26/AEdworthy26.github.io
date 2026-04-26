@@ -1,19 +1,19 @@
 // reads-data.js
-// Auto-updated 2026-04-25 — do not edit manually
+// Auto-updated 2026-04-26 — do not edit manually
 
 var READS_DATA = {
-  date: "2026-04-25",
+  date: "2026-04-26",
   book: {
-    title: "The Collected Regrets of Clover",
-    author: "Mikki Brammer",
-    year: 2023,
-    genres: ["Literary Fiction", "Contemporary", "Life & Death"],
-    desc: "Clover Greene has spent years working as a death doula — sitting with strangers in their final hours, helping them pass with dignity and peace — while her own life has quietly stalled in loneliness. When she inherits a notebook filled with the regrets of a dying man she barely knew, she sets off on a quietly urgent quest to understand what it means to truly live before it's too late. Brammer's debut is warm without being sentimental, suffused with the particular tenderness that comes from spending time at the threshold between life and death. It's a novel about grief and connection that manages to be, somehow, profoundly funny and life-affirming in equal measure.",
-    whyRead: "In a cultural moment saturated with productivity and distraction, this gentle, beautifully observed novel asks the most important question of all — what will you regret? — and makes you want to answer it honestly.",
-    rating: 4.0,
+    title: "The Sixth Extinction: An Unnatural History",
+    author: "Elizabeth Kolbert",
+    year: 2014,
+    genres: ["Science", "Nature", "Environmental Writing"],
+    desc: "Elizabeth Kolbert weaves vivid field reportage with deep scientific history to argue that we are living through the sixth mass extinction event in Earth's history — and that humans are its cause. Travelling from the rainforests of the Amazon to the reefs of the Pacific to the frozen highlands of Peru, she profiles the creatures already lost and those teetering on the edge, giving each a face and a story rather than a statistic. The writing is urgent but never shrill; Kolbert has the rare gift of making evolutionary biology, paleontology, and ecology feel as propulsive as a thriller. Winner of the Pulitzer Prize for General Nonfiction, the book has only grown more resonant in the years since its publication, as the data it described has moved from warning to confirmation.",
+    whyRead: "With biodiversity loss now dominating policy debates and everyday headlines in 2026, Kolbert's Pulitzer-winning masterwork is the essential grounding text — rigorous, beautiful, and impossible to set down.",
+    rating: 4.1,
     ratingSource: "Goodreads",
-    ratingCount: "18,000+",
-    coverUrl: "https://covers.openlibrary.org/b/id/13300150-L.jpg",
-    amazonUrl: "https://www.amazon.co.uk/dp/0241996678"
+    ratingCount: "150,000+",
+    coverUrl: "https://covers.openlibrary.org/b/id/7910870-L.jpg",
+    amazonUrl: "https://www.amazon.co.uk/dp/1408851237"
   }
 };

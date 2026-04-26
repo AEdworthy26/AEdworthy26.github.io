@@ -1,61 +1,61 @@
 // world-news-data.js
-// Auto-updated 2026-04-25 — do not edit manually
+// Auto-updated 2026-04-26 — do not edit manually
 
 var WORLD_NEWS = {
-  date: "2026-04-25",
+  date: "2026-04-26",
   main: {
-    title: "Iran War Day 57: US Envoys Head to Pakistan as Diplomacy Intensifies and Hormuz Blockade Bites",
-    category: "Geopolitics",
+    title: "Jihadists and Separatists Launch Largest Coordinated Attacks Across Mali in Years",
+    category: "Conflict",
     content: [
-      "Fifty-seven days into the US-Iran war, the conflict is entering a potentially pivotal diplomatic phase as Washington dispatches two of its most senior envoys — Steve Witkoff and Jared Kushner — to Pakistan for negotiations with Iranian counterparts. Iran's Foreign Minister Abbas Araghchi arrived in Islamabad on Friday, setting the stage for talks that the White House says are aimed at moving 'the ball forward towards a deal.' The choice of Pakistan as a neutral venue underscores the delicate diplomatic geometry of a conflict that has sent shockwaves far beyond the Persian Gulf.",
-      "The ongoing US naval blockade of the Strait of Hormuz continues to cause severe humanitarian and economic disruption, with thousands of seafarers stranded aboard vessels unable to dock or depart. The Strait, through which roughly a fifth of the world's oil typically flows, has become a chokepoint of enormous global consequence, with energy markets rattled and supply chains strained from Asia to Europe. Relief organisations and shipping industry groups have sounded alarms about conditions on stranded vessels, where crews report dwindling food and medical supplies.",
-      "Adding another dimension to the conflict's maritime theatre, the US military this week seized two Iranian-linked oil tankers described as part of a sprawling global 'shadow fleet' — a network of vessels operating outside conventional regulatory frameworks to circumvent sanctions. According to Elisabeth Braw of the Atlantic Council, such fleets have been instrumental in allowing sanctioned states to move commodities covertly, and their seizure marks a significant escalation in the economic pressure campaign against Tehran. The move signals Washington's intent to enforce its blockade aggressively, even at the cost of broader shipping disruption.",
-      "The war has already begun reshaping alliance politics in ways that alarm European governments. Leaked Pentagon documents have reportedly outlined options to punish NATO allies deemed insufficiently supportive of the Iran operation — including a proposal to suspend Spain from the alliance — prompting a swift and firm rejection from NATO itself, which stated there is 'no provision' to expel members. A separate internal Pentagon document raised the prospect of revisiting the US position on the Falkland Islands, apparently as a warning to the United Kingdom, triggering a sharp response from Downing Street that Falklands sovereignty 'rests with the UK.' European capitals are watching these developments with mounting anxiety, with analysts describing a Medusa-like fracturing of transatlantic unity.",
-      "The Israel-Lebanon ceasefire has been extended for a further three weeks at President Trump's announcement, offering a measure of de-escalation on one front even as Israeli strikes in Gaza killed at least twelve Palestinians on Saturday, including six police officers. The diplomatic flurry around Pakistan raises cautious hopes that a framework for ending the Iran conflict may be closer than it was even a week ago, though deep gaps remain over uranium enrichment, sanctions relief, and the future of Iran's proxy networks. For the millions of civilians caught in the crossfire — and the thousands of sailors adrift on the Strait of Hormuz — the coming days of talks in Islamabad may be among the most consequential of the entire conflict."
+      "Mali has been rocked by a wave of coordinated attacks across multiple cities, including its capital Bamako, in what witnesses and analysts are describing as the most significant jihadist offensive the country has seen in years. Gunfire and explosions erupted simultaneously in the centre and north of the country, targeting key infrastructure and urban centres. The al-Qaida-linked militant group JNIM — Jama'at Nusrat al-Islam wal-Muslimin — has claimed responsibility for the strikes, marking a dramatic escalation in the Sahel's long-running security crisis.",
+      "Among the targets was Bamako's international airport, a strike that underscores the boldness of the offensive and the militants' apparent confidence in their operational capacity. Four other cities were also hit in what security analysts believe was a carefully planned and synchronised campaign. The involvement of separatist rebel factions alongside jihadist insurgents suggests a convergence of armed groups that could signal a new and more dangerous phase of instability for the West African nation.",
+      "Mali has been struggling with deteriorating security for over a decade, ever since a 2012 coup and subsequent jihadist insurgency destabilised the north of the country. The situation has worsened considerably in recent years following the expulsion of French forces and the United Nations peacekeeping mission MINUSMA, which withdrew in 2023. In their place, Mali's military junta has turned to Russian Wagner Group mercenaries — now operating under the Africa Corps banner — but critics argue this has done little to stem the tide of violence.",
+      "The Sahel region more broadly is facing a crisis of governance and security, with neighbouring Burkina Faso and Niger also experiencing surging militant activity under similarly isolated military governments. The withdrawal of Western military and diplomatic engagement has left a vacuum that armed groups have been swift to exploit. Saturday's attacks in Mali are likely to intensify international concern about the region's trajectory and the effectiveness of the junta's security partnerships.",
+      "For ordinary Malians, the strikes represent a chilling reminder of how far the violence has spread from its origins in the remote north to the heart of the capital itself. The government has yet to issue a comprehensive public statement detailing casualties or the full extent of damage sustained. The international community, including the African Union and United Nations, is expected to respond to the attacks with calls for restraint and renewed dialogue, though the path to stability in Mali remains deeply uncertain."
     ],
-    image: "https://static01.nyt.com/images/2026/05/24/multimedia/24israel-iran-promo2245EST-zgct/24israel-iran-promo2245EST-zgct-mediumSquareAt3X.jpg",
-    source: "Al Jazeera",
-    sourceUrl: "https://www.aljazeera.com/news/liveblog/2026/4/25/iran-war-live-tehrans-fm-in-islamabad-us-says-envoys-to-travel-for-talks?traffic_source=rss"
+    image: "https://i.guim.co.uk/img/media/082ceb589732191afe763335e5f85e6ab8d5be20/272_0_4165_3333/master/4165.jpg?width=1200&quality=85&auto=format&fit=max&s=08ca1dd2a7b437d35e2143812df7d6a3",
+    source: "The Guardian",
+    sourceUrl: "https://www.theguardian.com/world/2026/apr/25/militants-and-separatists-launch-coordinated-attacks-across-mali"
   },
   secondary: [
     {
       id: "s1",
-      title: "NATO Rejects US Threat to Suspend Spain as European Allies Push Back",
-      summary: "NATO has stated there is 'no provision' to expel member states after a leaked Pentagon email outlined options to punish allies over insufficient support for the Iran war, sparking a sharp European backlash.",
+      title: "US-Iran Peace Talks Collapse as Trump Cancels Envoys' Trip to Pakistan",
+      summary: "President Trump called off a planned diplomatic mission to Islamabad after Iran's foreign minister departed Pakistan and Tehran denied any direct talks were scheduled.",
       body: [
-        "A reportedly internal Pentagon email circulated this week detailed a range of options to pressure NATO allies perceived as failing to back the US-led Iran operation, with Spain specifically named as a target for potential suspension. NATO moved quickly to pour cold water on the idea, with officials emphasising that the alliance's founding treaty contains no mechanism for expelling or suspending member states. European leaders, already unsettled by months of transatlantic friction, responded with rare collective indignation.",
-        "BBC Europe editor Katya Adler described the episode as the latest manifestation of 'souring relations between Europe and the United States,' likening the dynamic to a Medusa-like force capable of turning alliances to stone. The episode has accelerated debates across EU capitals about whether European nations must develop credible collective defence arrangements that do not depend on US commitment — a question that would have seemed almost unthinkable just two years ago."
+        "Iran's Foreign Minister Abbas Araghchi arrived in Islamabad on Friday but left before a planned meeting could take place with a US delegation led by Steve Witkoff and Jared Kushner, prompting Trump to announce the cancellation of his envoys' travel to Pakistan. Tehran had previously stated there were no plans for a direct meeting with the American side, casting doubt on the diplomatic framework from the outset. The abrupt collapse of the talks marks a significant setback in efforts to negotiate a resolution to the ongoing US-Iran conflict.",
+        "Hundreds of Israelis took to the streets of Tel Aviv in response to the stalled negotiations, amid widespread fears that the war between the US, Israel, and Iran could resume with renewed intensity. The failed diplomatic overture highlights the deep mistrust between Washington and Tehran, as well as the complex web of regional interests complicating any path to a ceasefire. Observers warn that without a credible back-channel, the risk of further military escalation remains dangerously high."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/fcbe/live/62677690-4038-11f1-b55d-0f258dce1735.jpg",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/8b84/live/6b377100-40e5-11f1-ac78-2112837ce2aa.jpg",
       source: "BBC News",
-      url: "https://www.bbc.com/news/articles/cz78x703lrvo?at_medium=RSS&at_campaign=rss",
+      url: "https://www.bbc.com/news/articles/c4g6nyvl29po?at_medium=RSS&at_campaign=rss",
       category: "Diplomacy"
     },
     {
       id: "s2",
-      title: "Gaza Set for First Local Election in Twenty Years as Hamas Steps Aside",
-      summary: "The city of Deir al-Balah in Gaza is set to hold its first municipal election in two decades this weekend, with Hamas announcing it will not participate in the vote.",
+      title: "Colombia Bus Bombing Kills at Least 14 on Pan-American Highway",
+      summary: "A bomb-laden bus exploded on Colombia's Pan-American Highway near the Venezuelan border, with the government blaming dissident FARC rebels for the deadly attack.",
       body: [
-        "Residents of Deir al-Balah, one of Gaza's central cities, are preparing to cast ballots in a municipal election this weekend — the first such vote the territory has seen in roughly twenty years. Hamas confirmed it would not field candidates, a significant step that some analysts interpret as a tacit acknowledgement of shifting political realities inside Gaza following months of devastating conflict. For many residents, the election represents a long-overdue opportunity to address basic governance failures and infrastructure collapse.",
-        "The vote is being watched closely by international observers as a potential signal of whether durable civilian governance structures can take root in Gaza amid the ongoing conflict with Israel. While the election's scope is limited to a single city, its symbolic weight is considerable — suggesting that some Gazans are determined to rebuild civic life even as Israeli strikes continue elsewhere in the territory."
+        "At least 14 people were killed when a bus packed with explosives detonated on Colombia's Pan-American Highway, one of the country's most strategically important road corridors. Colombian authorities have pointed the finger at dissident factions of the FARC rebel group, which have continued to operate despite a 2016 peace agreement that saw the main organisation disarm. The attack represents one of the deadliest single incidents of rebel violence in Colombia in recent months.",
+        "Dissident FARC groups have increasingly targeted transportation infrastructure as part of a broader campaign to assert control over drug trafficking routes in border regions. The bombing underscores the fragility of Colombia's peace process and the ongoing threat posed by armed factions that rejected the original agreement. President Gustavo Petro's government has been pursuing a policy of 'total peace' through negotiations with multiple armed groups, but Saturday's attack suggests significant obstacles remain."
       ],
-      image: "https://static01.nyt.com/images/2026/04/24/multimedia/24int-Gaza-Election-01-fqzm-promo/24int-Gaza-Election-01-fqzm-mediumSquareAt3X.jpg",
-      source: "The New York Times",
-      url: "https://www.nytimes.com/2026/04/24/world/middleeast/gaza-elections-deir-al-balah.html",
-      category: "Middle East"
+      image: "https://images.pexels.com/photos/13830851/pexels-photo-13830851.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      source: "Al Jazeera",
+      url: "https://www.aljazeera.com/video/newsfeed/2026/4/26/video-colombia-blames-dissident-farc-rebel-for-deadly-bus-bomb?traffic_source=rss",
+      category: "Conflict"
     },
     {
       id: "s3",
-      title: "Everest Flood Warning System Left to Rust for a Decade, Endangering Thousands",
-      summary: "A multi-million dollar early warning system installed at the Imja glacial lake near Mount Everest has not been maintained since 2016, leaving thousands of people in downstream communities at serious risk of catastrophic flooding.",
+      title: "New Bacteria Discovery Offers Hope in Fight Against Deadly Childhood Disease Noma",
+      summary: "Scientists have identified a previously unknown species of bacteria in patients suffering from noma, a fatal and disfiguring tropical disease that kills nine in ten children left untreated.",
       body: [
-        "The flood warning system at Imja Lake — one of the largest and most dangerous glacial lakes in the Himalayas — has fallen into disrepair after maintenance funding dried up a decade ago, the BBC has found. Local residents living in the shadow of the lake describe their fear that a glacial lake outburst flood, a phenomenon that can release millions of cubic metres of water with little warning, could obliterate their communities before any alarm is sounded. Scientists have long identified Imja as one of the highest-risk glacial lakes in Nepal, with climate change accelerating its expansion.",
-        "The failure to sustain the system highlights a broader pattern in which wealthy nations and international bodies fund high-profile climate adaptation infrastructure in vulnerable regions and then withdraw, leaving communities more exposed than before. With glaciers across the Himalayas retreating at accelerating rates, experts warn that the window for preventive action is narrowing rapidly, and that restoring functional warning systems across the region must be treated as an urgent international priority."
+        "Researchers have made what they are calling an 'astonishing' discovery — a new species of bacteria found consistently in patients with noma, a devastating disease that begins as a sore on the gums and can rapidly destroy the soft tissue and bones of the face. Noma predominantly affects malnourished children in sub-Saharan Africa and carries a fatality rate of up to 90% without treatment. The identification of this bacterium could be a crucial step toward developing targeted therapies, diagnostics, and preventative measures for the neglected tropical disease.",
+        "Noma has long been overlooked by the global health community despite its catastrophic impact on some of the world's most vulnerable children, only being added to the World Health Organisation's list of neglected tropical diseases in 2023. Survivors are frequently left with severe facial disfigurement that carries profound social stigma, limiting their ability to eat, speak, and participate in community life. Researchers hope that the bacterial discovery will galvanise renewed investment in noma research and treatment, offering a lifeline to the thousands of children affected each year."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/001b/live/825a5210-3fd4-11f1-bd52-e755d604ece4.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/czjwr93vrrzo?at_medium=RSS&at_campaign=rss",
-      category: "Climate & Environment"
+      image: "https://images.unsplash.com/photo-1706643569034-2cb3262d63d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxOZXclMjBCYWN0ZXJpYSUyMERpc2NvdmVyeSUyME9mZmVycyUyMEhvcGUlMjBpbiUyMEZpZ2h0JTIwQWdhaW5zdCUyMERlYWRseSUyMENoaWxkaG9vZCUyMERpc2Vhc2UlMjBOb21hfGVufDB8MHx8fDE3NzcxNzk2ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/global-development/2026/apr/25/discovery-children-fatal-disfiguring-disease-noma-unknown-bacteria",
+      category: "Health"
     }
   ]
 };

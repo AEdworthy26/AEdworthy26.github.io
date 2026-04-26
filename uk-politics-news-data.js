@@ -1,43 +1,43 @@
 // uk-politics-news-data.js
-// Auto-updated 2026-04-25 — do not edit manually
+// Auto-updated 2026-04-26 — do not edit manually
 
 var UK_POLITICS_NEWS = {
-  date: "2026-04-25",
+  date: "2026-04-26",
   main: {
-    title: "Mandelson Vetting Scandal Deepens as Starmer Faces Commons Vote and Leadership Questions Mount",
+    title: "Starmer Under Fire as Labour Leadership Speculation Intensifies Amid Mandelson Scandal",
     category: "Politics",
     content: [
-      "Sir Keir Starmer is facing one of the most turbulent periods of his premiership as the row over the vetting of Peter Mandelson threatens to spiral into a full parliamentary reckoning. MPs from across the House of Commons have reportedly written to Speaker Lindsay Hoyle requesting an investigation into whether the Prime Minister misled Parliament over the handling of Mandelson's security clearance. The development raises the prospect of a damaging Commons vote as early as next week, potentially referring the matter to the Privileges Committee at a moment of acute political vulnerability for the Labour leader.",
-      "The crisis was significantly compounded by Starmer's decision to sack Olly Robbins, a senior civil servant, in connection with the affair — a move that veteran Labour figures have described in the starkest of terms. Former Cabinet minister Harriet Harman said the dismissal had placed a 'nuclear bomb' under the Mandelson scandal, suggesting the decision transformed what might have been a containable political controversy into something far more serious. The sacking raised immediate questions about due process, the treatment of civil servants, and whether Downing Street's response to the affair had been proportionate or politically motivated.",
-      "Compounding Starmer's difficulties is a parallel police investigation into both Mandelson and the former Prince Andrew over allegations that sensitive information was passed to the late Jeffrey Epstein. British police are said to be preparing to begin interviewing witnesses in royal and government circles, but face a significant legal obstacle: American authorities have indicated they will not hand over unredacted Epstein documents without a lengthy formal legal request. Prosecutors are reportedly already thought to be 'reluctant' to pursue charges, meaning the investigation may drag on as a damaging backdrop to government business for months to come.",
-      "BBC political editor Chris Mason has characterised the past week as a 'grim' one for Starmer, with the assessment carrying additional weight given it arrives just two weeks before crucial local elections in England, Scotland, and Wales. Poor results in those contests could dramatically accelerate internal Labour pressure on the Prime Minister, with speculation about a potential leadership challenge already beginning to surface openly. The Independent has reported that Energy Secretary Ed Miliband is emerging as the leading internal contender should colleagues conclude a change of leadership is necessary, with the former Labour leader said to be quietly positioning himself.",
-      "For a government that came to power with a substantial parliamentary majority just months ago, the speed of Starmer's political difficulties has been striking. The accumulated weight of the Mandelson vetting row, the assisted dying bill's failure to pass, tensions over antisemitism with the Greens, and a testing international environment have combined to create a deeply uncomfortable political atmosphere around Number 10. Whether Starmer can stabilise his position before the local elections will be seen as a defining test of his authority and his government's ability to weather the inevitable storms of mid-term politics."
+      "Sir Keir Starmer is facing the most significant threat to his leadership since becoming Prime Minister, as mounting pressure from within his own party and a damaging vetting scandal combine to put his future in serious doubt. The Prime Minister convened a crisis meeting with his inner circle at Chequers on Friday to war-game the coming weeks, a sign of just how precarious his position has become. Despite insisting publicly that the 'majority' of Labour MPs back his leadership, sources within the parliamentary party describe a mood of deep unease, with whispered conversations about succession growing louder by the day.",
+      "At the heart of the immediate crisis is the affair surrounding the vetting of Peter Mandelson for his role as UK Ambassador to Washington, and the subsequent sacking of senior civil servant Sir Olly Robbins. Starmer has defended the dismissal, insisting that Robbins only faced the 'everyday pressure of government' and that he would not have appointed Mandelson had the outcome of the vetting process been made clear to him. But former Labour stalwart Harriet Harman dealt a particularly stinging blow, declaring that Starmer had placed a 'nuclear bomb' under the row by choosing to sack Robbins, dramatically escalating a story that might otherwise have faded.",
+      "Further complicating matters, a key figure in the vetting controversy — Ian Collard, the chief property and security officer at the centre of the affair — has declined to appear in person before the Foreign Affairs Committee, agreeing only to submit written answers. Committee chair Emily Thornberry had requested his attendance in person, and his refusal to give live evidence has drawn criticism from MPs who argue it undermines proper parliamentary scrutiny. The episode has reinforced perceptions that the government is struggling to manage the fallout transparently, adding yet another layer to an already damaging episode.",
+      "Labour mayors and local figures have meanwhile been sounding the alarm ahead of the May 7 local elections, warning privately that Starmer is proving to be a negative force on the doorstep. Repeated U-turns, a perceived failure to communicate the government's successes, and the Mandelson scandal are all being cited as factors driving voters away from the party at a critical moment. Senior figures including those close to Mayor of London Sadiq Khan fear a wipeout in local contests, with Starmer's personal poll ratings acting as a drag on candidates who would otherwise be well-placed to hold seats.",
+      "The crisis comes as Laura Kuenssberg's reporting from Scotland and Wales captures the mood of 'relish and dread' among candidates and voters in the devolved nations, where the Labour government's difficulties at Westminster are creating a complex political backdrop ahead of May's Holyrood and Senedd contests. In Scotland, opposition parties are openly exploiting what they describe as a 'shambles' in Downing Street, while in Wales, Labour's traditional dominance is under pressure from multiple directions. With the local elections now just days away and the leadership chatter refusing to die down, the coming fortnight is shaping up to be one of the most defining periods of Starmer's premiership."
     ],
-    image: "https://static.independent.co.uk/2026/04/23/21/2272096653.jpg?width=1200&auto=webp&crop=3%3A2",
-    source: "The Independent",
-    sourceUrl: "https://www.independent.co.uk/news/uk/politics/starmer-mandelson-vetting-privileges-committee-hoyle-b2964435.html"
+    image: "https://e3.365dm.com/26/04/1920x1080/skynews-keir-starmer-paris_7222799.jpg?20260417153420",
+    source: "Sky News",
+    sourceUrl: "https://news.sky.com/story/when-not-if-labours-uncertainty-over-starmers-future-13536252"
   },
   secondary: [
     {
       id: "uk1",
-      title: "Assisted Dying Bill Fails to Become Law as Parliamentary Time Runs Out",
-      summary: "The assisted dying bill, which had cleared the House of Commons, has failed to become law after running out of time to complete its passage through the House of Lords.",
+      title: "Devolved Elections Loom Large as Starmer's Troubles Cast Shadow Over Scotland and Wales",
+      summary: "Labour candidates in Scotland and Wales are heading into May 7 polls with a mix of anxiety and determination as Westminster's political turbulence complicates their campaigns.",
       body: [
-        "Despite winning a historic vote among MPs in June 2025, the assisted dying bill has fallen at the final hurdle, unable to complete all of its required stages in the House of Lords before the parliamentary session ended. Supporters of the legislation, which would have allowed terminally ill adults in England and Wales to seek an assisted death under strict safeguards, expressed disappointment but vowed to bring forward fresh legislation in a future parliamentary session.",
-        "The bill's failure highlights the enduring power of the Lords to delay and ultimately frustrate legislation passed by the elected chamber, reigniting debate about the relationship between the two houses. Campaigners on both sides acknowledged that the underlying public debate over assisted dying is far from settled, and that the issue is likely to return to Parliament in some form in the coming years."
+        "Laura Kuenssberg travelled to both Scotland and Wales to take the temperature of candidates and voters ahead of the devolved elections on May 7, finding a mood she described as a mixture of 'relish and dread'. In Scotland, opposition parties are seizing on the difficulties of the Starmer government to energise their own bases, while Labour candidates are working to distance themselves from the chaos in Westminster.",
+        "In Wales, where Labour has historically dominated the Senedd, the party faces a tougher-than-expected fight amid voter disillusionment with the national government. The results of these elections are likely to be read as a significant verdict on Starmer's leadership at a pivotal moment for British politics."
       ],
-      image: "https://e3.365dm.com/26/04/1920x1080/skynews-assisted-dying-campaigners_7229470.jpg?20260424163418",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/2a18/live/de8b4cc0-3fce-11f1-bd52-e755d604ece4.jpg",
       source: "BBC News",
-      url: "https://www.bbc.com/news/articles/cgk0vz5e2zxo?at_medium=RSS&at_campaign=rss",
+      url: "https://www.bbc.com/news/articles/cq59xvdzjv7o?at_medium=RSS&at_campaign=rss",
       category: "Politics"
     },
     {
       id: "uk2",
-      title: "Home Secretary Refuses to Rule Out Afghan Asylum Seeker Returns to Taliban-Controlled Afghanistan",
-      summary: "Shabana Mahmood has declined to rule out sending refused Afghan asylum seekers back to Afghanistan, indicating that the government is monitoring EU talks with the Taliban about a potential returns programme.",
+      title: "Home Secretary Refuses to Rule Out Returning Failed Afghan Asylum Seekers to Taliban-Controlled Afghanistan",
+      summary: "Shabana Mahmood has indicated the government is monitoring EU talks on an Afghan returns programme and has not ruled out following suit, alarming humanitarian groups.",
       body: [
-        "Home Secretary Shabana Mahmood caused consternation among humanitarian organisations by refusing to explicitly rule out a scheme to return rejected Afghan asylum seekers to the Taliban-controlled country. She said she was 'monitoring very closely' discussions between European Union member states and Kabul regarding a returns programme, signalling that the UK could follow suit if those talks progress.",
-        "The indication represents a significant hardening of tone on immigration from the government and is expected to draw sharp criticism from refugee charities and human rights groups, who argue that returning individuals to Taliban rule would expose them to serious danger. The comments are likely to deepen tensions within the Labour Party over asylum policy, particularly among MPs on the left of the party."
+        "Home Secretary Shabana Mahmood has refused to rule out sending rejected Afghan asylum seekers back to Taliban-controlled Afghanistan, saying she is 'monitoring very closely' discussions between Kabul and EU member states about a potential returns programme. The remarks represent a significant signal from the government and have shocked humanitarian organisations who argue that returning people to Taliban rule would put lives at serious risk.",
+        "The Home Secretary also hinted at 'additional' measures under consideration, though she did not elaborate in detail. The statement marks a notable hardening of tone on asylum policy from a Labour government that came to power promising a more humane approach to migration."
       ],
       image: "https://i.guim.co.uk/img/media/10856d4e81d21748d2761ff9b2d1139701a50ed6/0_0_2919_2336/master/2919.jpg?width=1200&quality=85&auto=format&fit=max&s=30f0cdf6eb1a82cb84b21919e465806b",
       source: "The Guardian",
@@ -46,15 +46,15 @@ var UK_POLITICS_NEWS = {
     },
     {
       id: "uk3",
-      title: "Green Leader Polanski Accuses Starmer of 'Silly Games' Over Antisemitism Row",
-      summary: "Green Party leader Zack Polanski has hit back at Prime Minister Keir Starmer, accusing him of playing political games with antisemitism after Starmer claimed Polanski had played down recent incidents.",
+      title: "Security Vetting Tightened After MP Assigned Bodyguard with Far-Right Links",
+      summary: "The private security firm Mitie has strengthened its vetting procedures after one of its close protection operatives assigned to guard a threatened MP was found to have far-right connections.",
       body: [
-        "Zack Polanski called on politicians to engage with antisemitism using 'consideration, care and nuance', directly challenging Keir Starmer's characterisation of his position on recent antisemitic incidents in the UK. The Green leader accused the Prime Minister of engaging in 'silly games' by using the issue for political point-scoring rather than meaningful action.",
-        "The public exchange between the two leaders reflects growing friction between the Greens and the government as Polanski's party gains visibility and media scrutiny following recent electoral successes. The row also illustrates the broader political sensitivity around antisemitism in British public life, an issue that has proven damaging to parties across the political spectrum in recent years."
+        "Mitie, the security company holding a £31 million government contract to provide bodyguards for MPs, has updated its vetting processes after it emerged that a close protection operative with far-right links had been assigned to protect a politician facing threats from extremists. The company is now implementing additional social media checks as part of a broader review of how it screens personnel, amid growing concern about the threat environment facing elected officials.",
+        "The incident has raised serious questions about the robustness of existing vetting procedures for those tasked with protecting lawmakers, and comes at a time when the security of politicians is under heightened scrutiny. Parliament and the Home Office are said to be monitoring the situation closely as pressure mounts for more rigorous standards across the industry."
       ],
-      image: "https://images.unsplash.com/photo-1607464524898-5624b3f8bc69?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxHcmVlbiUyMExlYWRlciUyMFBvbGFuc2tpJTIwQWNjdXNlcyUyMFN0YXJtZXIlMjBvZiUyMHxlbnwwfDB8fHwxNzc3MDkzMzMwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      image: "https://i.guim.co.uk/img/media/da5eeecf8ba69a0cc86cc216520d1b2cbe6b06c7/136_0_2513_2010/master/2513.jpg?width=1200&quality=85&auto=format&fit=max&s=c94cd5b689df4db8f2da8126c73ec51a",
       source: "The Guardian",
-      url: "https://www.theguardian.com/news/2026/apr/24/zak-polanski-calls-for-nuance-when-discussing-antisemitism-in-rebuke-of-pm",
+      url: "https://www.theguardian.com/politics/2026/apr/25/security-vetting-stepped-up-after-mp-is-given-bodyguard-with-far-right-links",
       category: "Politics"
     }
   ]
