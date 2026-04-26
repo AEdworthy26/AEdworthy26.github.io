@@ -438,8 +438,8 @@
     .inline-confirm-yes:hover { opacity: 0.85; }
     .inline-confirm-no { background: rgba(0,0,0,0.07); color: #444; }
     .inline-confirm-no:hover { background: rgba(0,0,0,0.13); }
-    /* Goal card confirm strip sits inside the card */
-    .goal-card-confirm { margin: 0.8rem 1.3rem 1rem; border-radius: 9px; }
+    /* Goal card confirm strip sits directly below the card header */
+    .goal-card-confirm { margin: 0 1.3rem 0.8rem; border-radius: 9px; }
 
     /* ── Undo toast ── */
     #logbook-undo-toast {
@@ -1121,7 +1121,8 @@
           '<span class="inline-confirm-text">Delete <strong>' + esc(goals.find(function(g){return g.id===goalId;}).title) + '</strong>?</span>' +
           '<button class="inline-confirm-no">Cancel</button>' +
           '<button class="inline-confirm-yes">Delete</button>';
-        card.querySelector('.goal-card-inner').appendChild(strip);
+        var header = card.querySelector('.goal-card-header');
+        header.insertAdjacentElement('afterend', strip);
         return;
       }
 
