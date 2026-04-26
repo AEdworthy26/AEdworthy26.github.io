@@ -160,6 +160,8 @@ def extract_js(text):
     text = re.sub(r'^```(?:javascript|js)?\s*\n?', '', text.strip())
     text = re.sub(r'\n?```\s*$', '', text)
     text = text.strip()
+    # Fix unescaped mid-word apostrophes (e.g. Zhuangzi's, don't) inside single-quoted strings
+    text = re.sub(r"(?<=[a-zA-Z])'(?=[a-zA-Z])", r"\\'", text)
     # Reject permission prompts
     if 'grant permission' in text.lower() or 'waiting for your permission' in text.lower():
         log("  [error] Claude returned a permission request — skipping")
