@@ -20,7 +20,7 @@ window.PHILOSOPHY_DATA = {
       },
       {
         type: 'paragraph',
-        text: 'Zhuangzi opens his text with a magnificent image: a fish called Kun transforms into a bird called Peng, whose wings are so vast they blot out the sky as it rises ninety thousand li to travel to the Southern Darkness. A small cicada laughs at the Peng, asking what is the point of such an absurd journey when one can flit easily between nearby trees. Zhuangzi's point is precise and devastating: the cicada is not wrong from within its own horizon, but its horizon is exactly the problem. Every creature, every human mind, perceives from a position — a vantage that feels universal but is merely local. Our concepts, our values, our sense of what is great or small, beautiful or ugly, are always perspectival, always limited by what Zhuangzi calls the "small knowing" that cannot comprehend the "great knowing."'
+        text: 'Zhuangzi opens his text with a magnificent image: a fish called Kun transforms into a bird called Peng, whose wings are so vast they blot out the sky as it rises ninety thousand li to travel to the Southern Darkness. A small cicada laughs at the Peng, asking what is the point of such an absurd journey when one can flit easily between nearby trees. Zhuangzi\'s point is precise and devastating: the cicada is not wrong from within its own horizon, but its horizon is exactly the problem. Every creature, every human mind, perceives from a position — a vantage that feels universal but is merely local. Our concepts, our values, our sense of what is great or small, beautiful or ugly, are always perspectival, always limited by what Zhuangzi calls the "small knowing" that cannot comprehend the "great knowing."'
       },
       {
         type: 'heading',
