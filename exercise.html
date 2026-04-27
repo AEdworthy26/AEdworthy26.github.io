@@ -175,21 +175,33 @@
     .activity-date { font-size: .67rem; color: var(--light); white-space: nowrap; }
 
     /* LOGBOOK */
-    .log-entry { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-sm); margin-bottom: .65rem; }
-    .log-entry-hdr { padding: .85rem 1.1rem; display: flex; align-items: center; gap: .8rem; cursor: pointer; transition: background .12s; user-select: none; background: linear-gradient(135deg, #1e293b 0%, #334155 100%); }
+    .log-entry { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-sm); margin-bottom: .75rem; }
+    .log-entry-hdr { padding: .9rem 1.1rem; display: flex; align-items: center; gap: .8rem; cursor: pointer; transition: background .12s; user-select: none; background: linear-gradient(135deg, #1e293b 0%, #334155 100%); }
     .log-entry-hdr:hover { background: linear-gradient(135deg, #253147 0%, #3d4f65 100%); }
-    .log-date-str { font-family: 'Inter', sans-serif; font-weight: 700; font-size: .92rem; white-space: nowrap; color: #fff; }
-    .log-summary { flex: 1; font-size: .76rem; color: rgba(255,255,255,0.65); }
-    .log-caret { color: rgba(255,255,255,0.55); font-size: .75rem; transition: transform .2s; flex-shrink: 0; }
+    .log-hdr-left { flex: 1; min-width: 0; }
+    .log-date-str { font-family: 'Inter', sans-serif; font-weight: 700; font-size: .95rem; color: #fff; white-space: nowrap; }
+    .log-summary { font-size: .73rem; color: rgba(255,255,255,0.55); margin-top: .15rem; }
+    .log-hdr-right { display: flex; align-items: center; gap: .5rem; flex-shrink: 0; }
+    .lb-edit-btn { background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.2); border-radius: 5px; padding: .22rem .65rem; font-size: .68rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: rgba(255,255,255,.85); transition: all .12s; }
+    .lb-edit-btn:hover { background: rgba(255,255,255,.22); color: #fff; }
+    .log-caret { color: rgba(255,255,255,0.45); font-size: .72rem; transition: transform .2s; }
     .log-entry.open .log-caret { transform: rotate(180deg); }
-    .log-entry-body { display: none; border-top: 1px solid var(--border); padding: .9rem 1.1rem; }
+    .log-entry-body { display: none; border-top: 1px solid var(--border); padding: 1.1rem 1.2rem; }
     .log-entry.open .log-entry-body { display: block; }
-    .log-section-lbl { font-size: .62rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: .4rem; margin-top: .6rem; }
+    .log-section-lbl { font-size: .6rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--light); margin-bottom: .5rem; margin-top: .9rem; }
     .log-section-lbl:first-child { margin-top: 0; }
-    .chip { display: inline-flex; align-items: center; background: var(--subtle); border: 1px solid var(--border); border-radius: 5px; padding: .2rem .55rem; font-size: .74rem; margin: .12rem; }
-    .chip-green { background: #f0fdf4; border-color: #bbf7d0; color: #166534; }
-    .log-del-btn { float: right; background: none; border: none; font-size: .7rem; color: var(--light); transition: color .12s; margin-top: .2rem; }
-    .log-del-btn:hover { color: #dc2626; }
+    .lb-ex-table { width: 100%; border-collapse: collapse; font-size: .81rem; }
+    .lb-ex-table th { font-size: .6rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--light); padding: .3rem .55rem; border-bottom: 2px solid var(--border); text-align: left; }
+    .lb-ex-table td { padding: .5rem .55rem; border-bottom: 1px solid var(--subtle); vertical-align: middle; }
+    .lb-ex-table tr:last-child td { border-bottom: none; }
+    .lb-ex-table td:first-child { font-weight: 600; color: var(--ink); }
+    .lb-ex-table td:not(:first-child) { color: var(--muted); }
+    .lb-act-row { display: flex; align-items: center; gap: .65rem; padding: .5rem 0; border-bottom: 1px solid var(--subtle); font-size: .82rem; }
+    .lb-act-row:last-child { border-bottom: none; }
+    .lb-notes-block { background: var(--subtle); border-left: 3px solid var(--border); border-radius: 0 6px 6px 0; padding: .6rem .9rem; font-size: .82rem; color: var(--muted); font-style: italic; line-height: 1.55; margin-top: .2rem; }
+    .lb-footer { display: flex; justify-content: flex-end; padding-top: .85rem; margin-top: .85rem; border-top: 1px solid var(--border); }
+    .lb-del-btn { background: none; border: 1px solid #fecaca; border-radius: 6px; padding: .3rem .85rem; font-size: .72rem; font-weight: 600; color: #dc2626; transition: all .12s; }
+    .lb-del-btn:hover { background: #fef2f2; }
 
     /* STATS */
     .stats-row { display: grid; grid-template-columns: repeat(4,1fr); gap: 1rem; margin-bottom: 1.5rem; }
@@ -770,31 +782,47 @@
         return;
       }
       el.innerHTML = sorted.map(function (log) {
-        var exChips = (log.exercises || []).map(function (e) {
-          var parts = [e.name];
-          if (e.sets) parts.push(e.sets + ' sets');
-          if (e.weight) parts.push(e.weight);
-          if (e.reps) parts.push(e.reps + ' reps');
-          return '<span class="chip">' + esc(parts.join(' · ')) + '</span>';
-        }).join('');
-        var actChips = (log.activities || []).map(function (a) {
-          return '<span class="chip chip-green">' + actIcon(a.name) + ' ' + esc(a.name) + ' — ' + esc(a.duration) + ' ' + esc(a.unit) + '</span>';
-        }).join('');
+        var exCount = (log.exercises || []).length;
+        var actCount = (log.activities || []).length;
         var sumParts = [];
-        if ((log.exercises || []).length) sumParts.push((log.exercises.length) + ' exercise' + (log.exercises.length !== 1 ? 's' : ''));
-        if ((log.activities || []).length) sumParts.push((log.activities.length) + ' activit' + (log.activities.length !== 1 ? 'ies' : 'y'));
+        if (exCount) sumParts.push(exCount + ' exercise' + (exCount !== 1 ? 's' : ''));
+        if (actCount) sumParts.push(actCount + ' activit' + (actCount !== 1 ? 'ies' : 'y'));
+
+        var exRows = (log.exercises || []).map(function (e) {
+          return '<tr><td>' + esc(e.name || '—') + '</td>'
+            + '<td>' + esc(e.sets || '—') + '</td>'
+            + '<td>' + esc(e.weight || '—') + '</td>'
+            + '<td>' + esc(e.reps || '—') + '</td></tr>';
+        }).join('');
+
+        var actRows = (log.activities || []).map(function (a) {
+          return '<div class="lb-act-row">'
+            + '<span style="font-size:1.15rem;flex-shrink:0">' + actIcon(a.name) + '</span>'
+            + '<span style="font-weight:600;flex:1">' + esc(a.name) + '</span>'
+            + '<span style="color:var(--muted)">' + esc(a.duration) + ' ' + esc(a.unit) + '</span>'
+            + (a.notes ? '<span style="color:var(--light);font-size:.74rem;white-space:nowrap">' + esc(a.notes) + '</span>' : '')
+            + '</div>';
+        }).join('');
+
         return '<div class="log-entry" id="le-' + log.id + '">'
           + '<div class="log-entry-hdr" onclick="toggleLog(\'' + log.id + '\')">'
+          + '<div class="log-hdr-left">'
           + '<div class="log-date-str">' + fmtDate(log.date) + '</div>'
-          + '<div class="log-summary">' + esc(sumParts.join(' · ')) + '</div>'
+          + (sumParts.length ? '<div class="log-summary">' + esc(sumParts.join(' · ')) + '</div>' : '')
+          + '</div>'
+          + '<div class="log-hdr-right">'
+          + '<button class="lb-edit-btn" onclick="event.stopPropagation();openEditLog(\'' + log.id + '\')">Edit</button>'
           + '<span class="log-caret">▾</span>'
           + '</div>'
+          + '</div>'
           + '<div class="log-entry-body">'
-          + (exChips ? '<div class="log-section-lbl">Exercises</div>' + exChips : '')
-          + (actChips ? '<div class="log-section-lbl">Activities</div>' + actChips : '')
-          + (log.notes ? '<div class="log-section-lbl">Notes</div><p style="font-size:.82rem;color:var(--muted);font-style:italic">' + esc(log.notes) + '</p>' : '')
-          + '<button class="log-del-btn" onclick="delLog(\'' + log.id + '\')">Delete entry</button>'
-          + '</div></div>';
+          + (exRows ? '<div class="log-section-lbl">Exercises</div>'
+            + '<table class="lb-ex-table"><thead><tr><th>Exercise</th><th>Sets</th><th>Weight</th><th>Reps</th></tr></thead><tbody>' + exRows + '</tbody></table>' : '')
+          + (actRows ? '<div class="log-section-lbl">Activities</div><div>' + actRows + '</div>' : '')
+          + (log.notes ? '<div class="log-section-lbl">Notes</div><div class="lb-notes-block">' + esc(log.notes) + '</div>' : '')
+          + '<div class="lb-footer">'
+          + '<button class="lb-del-btn" onclick="delLog(\'' + log.id + '\')">Delete entry</button>'
+          + '</div></div></div>';
       }).join('');
     }
 
@@ -1219,6 +1247,108 @@
       logs = logs.filter(function (l) { return l.id !== id; });
       save();
       renderLogbook();
+    };
+
+    /* ── Edit Logbook Entry ─────────────────────────── */
+    window.renderElgExRows = function () {
+      var el = document.getElementById('elg-ex-rows');
+      if (!el) return;
+      var rows = window._elgExRows || [];
+      if (!rows.length) {
+        el.innerHTML = '<div style="font-size:.76rem;color:var(--muted);font-style:italic;padding:.3rem 0 .5rem">No exercises — add one below</div>';
+        return;
+      }
+      el.innerHTML = rows.map(function (r, i) {
+        return '<div class="ex-log-row">'
+          + '<input class="form-input" type="text" value="' + esc(r.name) + '" placeholder="Exercise name" oninput="window._elgExRows[' + i + '].name=this.value">'
+          + '<input class="form-input" type="number" value="' + esc(r.sets) + '" placeholder="Sets" min="1" oninput="window._elgExRows[' + i + '].sets=this.value">'
+          + '<input class="form-input" type="text" value="' + esc(r.weight) + '" placeholder="Weight" oninput="window._elgExRows[' + i + '].weight=this.value">'
+          + '<input class="form-input reps-col" type="text" value="' + esc(r.reps) + '" placeholder="Reps" oninput="window._elgExRows[' + i + '].reps=this.value">'
+          + '<button class="btn-del-row" onclick="window._elgExRows.splice(' + i + ',1);window.renderElgExRows()">×</button>'
+          + '</div>';
+      }).join('');
+    };
+
+    window.renderElgActRows = function () {
+      var el = document.getElementById('elg-act-rows');
+      if (!el) return;
+      var rows = window._elgActRows || [];
+      if (!rows.length) {
+        el.innerHTML = '<div style="font-size:.76rem;color:var(--muted);font-style:italic;padding:.3rem 0 .5rem">No activities — add one below</div>';
+        return;
+      }
+      el.innerHTML = rows.map(function (r, i) {
+        return '<div class="act-log-row">'
+          + '<input class="form-input" type="text" value="' + esc(r.name) + '" placeholder="Activity" oninput="window._elgActRows[' + i + '].name=this.value">'
+          + '<input class="form-input" type="text" value="' + esc(r.duration) + '" placeholder="Duration" oninput="window._elgActRows[' + i + '].duration=this.value">'
+          + '<select class="form-input" onchange="window._elgActRows[' + i + '].unit=this.value">'
+          + '<option value="mins"' + (r.unit === 'mins' ? ' selected' : '') + '>mins</option>'
+          + '<option value="hours"' + (r.unit === 'hours' ? ' selected' : '') + '>hours</option>'
+          + '</select>'
+          + '<button class="btn-del-row" onclick="window._elgActRows.splice(' + i + ',1);window.renderElgActRows()">×</button>'
+          + '</div>';
+      }).join('');
+    };
+
+    window.elgAddExRow = function () {
+      if (!window._elgExRows) window._elgExRows = [];
+      window._elgExRows.push({ id: uid(), name: '', sets: '', weight: '', reps: '' });
+      window.renderElgExRows();
+    };
+
+    window.elgAddActRow = function () {
+      if (!window._elgActRows) window._elgActRows = [];
+      window._elgActRows.push({ id: uid(), name: '', duration: '', unit: 'mins' });
+      window.renderElgActRows();
+    };
+
+    window.openEditLog = function (id) {
+      var log = findItem(logs, function (l) { return l.id === id; });
+      if (!log) return;
+      window._elgLogId = id;
+      window._elgExRows = (log.exercises || []).map(function (e) { return Object.assign({}, e); });
+      window._elgActRows = (log.activities || []).map(function (a) { return Object.assign({}, a); });
+
+      var html = '<div class="modal-hdr"><h3 class="modal-title">Edit Workout</h3></div>'
+        + '<div class="modal-body-pad">'
+        + '<div class="form-field" style="margin-bottom:.9rem"><label class="form-label">Date</label>'
+        + '<input class="form-input" id="elg-date" type="date" value="' + esc(log.date) + '" style="max-width:180px"></div>'
+        + '<div class="form-field" style="margin-bottom:.35rem"><label class="form-label">Exercises</label></div>'
+        + '<div style="display:grid;grid-template-columns:2fr 70px 90px 80px 28px;gap:.45rem;margin-bottom:.3rem">'
+        + '<span class="col-label">Name</span><span class="col-label">Sets</span><span class="col-label">Weight</span><span class="col-label reps-col">Reps</span><span></span></div>'
+        + '<div id="elg-ex-rows"></div>'
+        + '<button class="btn-add-row" style="margin-bottom:.9rem" onclick="window.elgAddExRow()">+ Add exercise</button>'
+        + '<div class="form-field" style="margin-bottom:.35rem"><label class="form-label">Activities</label></div>'
+        + '<div style="display:grid;grid-template-columns:2fr 90px 90px 28px;gap:.45rem;margin-bottom:.3rem">'
+        + '<span class="col-label">Activity</span><span class="col-label">Duration</span><span class="col-label">Unit</span><span></span></div>'
+        + '<div id="elg-act-rows"></div>'
+        + '<button class="btn-add-row" style="margin-bottom:.9rem" onclick="window.elgAddActRow()">+ Add activity</button>'
+        + '<div class="form-field" style="margin-bottom:.9rem"><label class="form-label">Notes</label>'
+        + '<textarea class="form-input" id="elg-notes" rows="2" style="resize:vertical;width:100%">' + esc(log.notes || '') + '</textarea></div>'
+        + '<div class="form-actions">'
+        + '<button class="btn-secondary" onclick="closeModal()">Cancel</button>'
+        + '<button class="btn-primary" onclick="window.saveEditLog()">Save Changes</button>'
+        + '</div></div>';
+
+      document.getElementById('edit-modal-body').innerHTML = html;
+      document.getElementById('edit-modal').classList.add('open');
+      window.renderElgExRows();
+      window.renderElgActRows();
+    };
+
+    window.saveEditLog = function () {
+      var idx = findIdx(logs, function (l) { return l.id === window._elgLogId; });
+      if (idx === -1) return;
+      var dateEl = document.getElementById('elg-date');
+      var notesEl = document.getElementById('elg-notes');
+      logs[idx].date = (dateEl && dateEl.value) || logs[idx].date;
+      logs[idx].exercises = (window._elgExRows || []).filter(function (r) { return r.name && r.name.trim(); });
+      logs[idx].activities = (window._elgActRows || []).filter(function (r) { return r.name && r.name.trim(); });
+      logs[idx].notes = notesEl ? notesEl.value.trim() : logs[idx].notes;
+      save();
+      closeModal();
+      renderLogbook();
+      showToast('Workout updated!');
     };
 
     /* ── Date ───────────────────────────────────────── */
