@@ -1091,8 +1091,11 @@
       document.getElementById('btn-save').style.background=(CATS[ev?ev.category:'work']||CATS.work).bg;
       document.getElementById('btn-delete').style.display=ev?'':'none';
       document.getElementById('f-title').value=ev?ev.title:'';
-      document.getElementById('f-date').value=ev?ev.date:toISO(cur);
-      document.getElementById('f-enddate').value=ev?(ev.endDate||''):'';
+      var startVal = ev?ev.date:toISO(cur);
+      document.getElementById('f-date').value=startVal;
+      var endEl = document.getElementById('f-enddate');
+      endEl.value=ev?(ev.endDate||startVal):startVal;
+      endEl.dataset.userEdited = (ev&&ev.endDate&&ev.endDate!==ev.date)?'true':'false';
       var allDay=ev?!!ev.allDay:false;
       document.getElementById('f-allday').checked=allDay;
       document.getElementById('f-time-row').style.display=allDay?'none':'';
@@ -1113,6 +1116,9 @@
     window.openModalDate = function(date, time) {
       window.openModal(null);
       document.getElementById('f-date').value=date;
+      var endEl = document.getElementById('f-enddate');
+      endEl.value=date;
+      endEl.dataset.userEdited='false';
       if(time) setTimeSelects('f-start', time);
     };
 
@@ -1316,6 +1322,19 @@
         }, 80);
       }
     };
+
+    // Keep end date in sync with start date until user manually changes it
+    document.getElementById('f-date').addEventListener('change', function() {
+      var endEl = document.getElementById('f-enddate');
+      if (!endEl.dataset.userEdited || endEl.dataset.userEdited === 'false') {
+        endEl.value = this.value;
+      }
+    });
+    document.getElementById('f-enddate').addEventListener('change', function() {
+      var startVal = document.getElementById('f-date').value;
+      this.dataset.userEdited = (this.value !== startVal) ? 'true' : 'false';
+    });
+    // Reset the userEdited flag each time the modal opens (handled in openModal above)
 
     // Close suggestions when clicking outside
     document.addEventListener('click', function(e){
