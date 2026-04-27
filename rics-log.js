@@ -3,6 +3,45 @@
 
 var RICS_LOG = [
   {
+    "date": "2026-04-27",
+    "topic": "EIA Screening and Scoping: Strategy, Risk and Process Management on Residential-Led Schemes",
+    "module": "Planning and Development Management",
+    "level": 2,
+    "apc_competency": "Planning and Development Management (Level 2)",
+    "focus": "This lesson examines the Environmental Impact Assessment screening and scoping process in depth \u2014 how to determine whether EIA is required, how to structure and negotiate the scoping exercise with the LPA, and how to manage the EIA programme strategically on large residential-led schemes. For a candidate like Alfie who regularly coordinates planning teams on complex consents, understanding the mechanics and risk points of EIA is a practical APC essential.",
+    "image": "https://images.unsplash.com/photo-1512207736890-6ffed8a84e8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxFSUElMjBTY3JlZW5pbmclMjBhbmQlMjBTY29waW5nJTNBJTIwU3RyYXRlZ3klMkMlMjBSaXNrJTIwYW5kJTIwUHJvY2VzcyUyME1hbmFnZW1lbnQlMjBvbiUyMFJlc2lkZW50aWFsLUxlZCUyMFNjaGVtZXMlMjBhcmNoaXRlY3R1cmV8ZW58MHwwfHx8MTc3NzI2NjU2NHww&ixlib=rb-4.1.0&q=80&w=1080",
+    "content": [],
+    "summary": [
+      "Schedule 2 residential development requires EIA only where likely significant environmental effects exist \u2014 the screening opinion (Regulation 6) determines this, and the quality of evidence submitted with the request can materially influence the outcome.",
+      "A scoping opinion (Regulation 36) defines the ES methodology and topics \u2014 material departure from it risks the ES being deemed inadequate under Regulation 25, resetting the determination clock and causing significant programme delay.",
+      "Ecology survey seasonality is a critical path risk: missing spring survey windows (bats, GCN, breeding birds) can delay ES completion by a full year \u2014 this must be flagged in the risk register and modelled in the investment appraisal.",
+      "EIA costs (\u00a3150k\u2013\u00a3500k+) and programme implications must be explicitly captured in the development appraisal and investment committee papers \u2014 not buried in a general professional fees percentage.",
+      "Where a scheme is near a European-designated habitat (SAC/SPA/Ramsar), Habitats Regulation Assessment runs in parallel with EIA and is a separate, mandatory process \u2014 non-compliance is a high-probability ground for judicial review of any consent granted."
+    ],
+    "qa": [
+      {
+        "q": "What is the legal basis for requiring EIA on a residential scheme, and how does the LPA determine whether EIA is needed?",
+        "a": "EIA on residential development is governed by the Town and Country Planning (Environmental Impact Assessment) Regulations 2017. Residential schemes fall under Schedule 2 (not Schedule 1), meaning EIA is required only where the development is 'likely to have significant effects on the environment.' The LPA issues a formal screening opinion under Regulation 6 within 3 weeks of a valid request, taking into account the selection criteria in Schedule 3 \u2014 including the characteristics of the development (size, scale, resource use), the environmental sensitivity of the location (proximity to SSSIs, flood zones, heritage assets) and the characteristics of the potential impact (magnitude, reversibility, transboundary effects). If the applicant disagrees with the LPA\\'s opinion, they can seek a screening direction from the Secretary of State under Regulation 7."
+      },
+      {
+        "q": "What are the consequences if an Environmental Statement fails to adequately address a topic flagged in the scoping opinion?",
+        "a": "Under Regulation 25 of the 2017 EIA Regulations, the LPA can request further information or evidence at any point before determination where the ES is considered inadequate. Crucially, each Regulation 25 request formally suspends the statutory determination period \u2014 which is 16 weeks for EIA applications \u2014 so the clock does not restart until the supplementary environmental information (SEI) is submitted and a further public consultation period (minimum 30 days) has run. On complex schemes, a Regulation 25 request can add 3\u20136 months to the programme. A scoping opinion cannot compel specific findings, but material departure from its requirements significantly increases the risk of an inadequate ES determination and potential judicial review of any consent granted."
+      },
+      {
+        "q": "You are managing a 300-unit regeneration scheme on a brownfield site adjacent to a SSSI. What EIA topics would you expect to be required in the scoping opinion, and what survey season constraints would you flag?",
+        "a": "Given the SSSI adjacency, ecology and biodiversity would be the primary topic, requiring Phase 1 habitat survey, protected species surveys (bats \u2014 April to October active season; breeding birds \u2014 March to July; GCN if suitable ponds within 500m \u2014 March to June; dormice if suitable habitat \u2014 May to November) and a SSSI impact assessment potentially triggering Habitats Regulation Assessment if the SSSI is a notified feature of a SAC or SPA. Additional topics on a brownfield urban site would typically include: ground conditions and contamination (Phase 1 and 2 already likely from due diligence); transport and access; noise and vibration (construction and operational); air quality; flood risk and drainage; heritage and archaeology (if urban brownfield in historic area); landscape and visual impact; and socio-economic effects. The critical programme risk is bat and GCN survey windows \u2014 if scoping is not completed by February, the project may miss the spring survey season entirely, causing a 12-month delay to ES completion."
+      },
+      {
+        "q": "How does a Habitats Regulation Assessment differ from EIA, and when is it triggered on a residential development?",
+        "a": "EIA and HRA are entirely separate legal processes. EIA is triggered by likely significant environmental effects under the 2017 EIA Regulations and assesses a broad range of environmental impacts. HRA is triggered under the Conservation of Habitats and Species Regulations 2017 where a plan or project \u2014 alone or in combination with others \u2014 is likely to have a significant effect on a European-designated site (Special Area of Conservation, Special Protection Area or Ramsar site). HRA is a duty on the competent authority (the LPA), not the applicant, and comprises two stages: (1) a Habitats Regulations Assessment screening (sometimes called 'Likely Significant Effects' screening) and, if significant effects cannot be excluded, (2) a formal Appropriate Assessment applying the precautionary principle. Unlike EIA, HRA cannot be 'passed' on the basis of mitigation at the screening stage \u2014 if LSE cannot be excluded, Appropriate Assessment is mandatory. For residential schemes within urban SAC catchments (e.g. nutrient neutrality zones such as the Solent, Stour Valley) HRA has become a major programme and viability risk."
+      },
+      {
+        "q": "How would you reflect EIA programme and cost risk in an investment committee appraisal for a 250-unit urban extension with confirmed EIA requirement?",
+        "a": "I would address EIA in the investment committee appraisal across three dimensions. First, cost: EIA professional fees (ecologist, transport consultant, heritage, noise, air quality, ES compiler) should be itemised as a discrete pre-development cost line \u2014 on a scheme of this scale I would budget \u00a3200,000\u2013\u00a3350,000 for the ES, with a 15\u201320% contingency for supplementary environmental information if required post-submission. Second, programme: I would build the EIA programme into the critical path, identifying survey season windows as fixed constraints. The base case programme would assume surveys commence in the current season (typically spring) with ES submitted 9\u201312 months later; I would model a downside scenario assuming a 12-month survey delay and stress-test its impact on IRR and profit on cost. Third, risk: the risk register would flag Regulation 25 further information requests, HRA applicability (if near a designated site), and the risk of third-party judicial review of the consent on EIA procedural grounds. Each risk would be scored for probability and impact, with mitigation actions (e.g. proactive engagement with Natural England, early SEI preparation) assigned to named team members."
+      }
+    ]
+  },
+  {
     "date": "2026-04-26",
     "topic": "Heritage Impact Assessments: NPPF Framework, Setting and Harm in Residential-Led Schemes",
     "module": "Planning and Development Management",

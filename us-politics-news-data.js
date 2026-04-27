@@ -1,61 +1,61 @@
 // us-politics-news-data.js
-// Auto-updated 2026-04-26 — do not edit manually
+// Auto-updated 2026-04-27 — do not edit manually
 
 var US_POLITICS_NEWS = {
-  date: "2026-04-26",
+  date: "2026-04-27",
   main: {
-    title: "Gunman Apprehended After Shooting at White House Correspondents' Dinner Attended by Trump",
+    title: "Shooting at White House Correspondents' Dinner Raises Security Questions After Suspect Targeted Trump Officials",
     category: "Politics",
     content: [
-      "A gunman was taken into custody Saturday night after firing shots at the Washington Hilton, where President Donald Trump, Vice President JD Vance, cabinet members, and hundreds of journalists had gathered for the annual White House Correspondents' Association dinner. Secret Service agents swiftly evacuated the president, first lady Melania Trump, and other senior officials from the ballroom as chaos erupted among the crowd. Authorities confirmed the suspect — identified as a California man — was tackled by law enforcement near a security checkpoint before he could breach the ballroom itself.",
-      "The incident marks the third time in three years that President Trump has faced the threat of gunfire, raising urgent and renewed questions about the security protocols surrounding major political events and the safety of the nation's highest elected officials. U.S. Attorney Jeanine Pirro announced that the suspect would face three criminal counts and is scheduled to be arraigned on Monday. The dinner did not resume following the evacuation, and the Secret Service confirmed only one person was taken into custody.",
-      "Trump returned to the White House and addressed reporters in the briefing room shortly after the incident, adopting a notably conciliatory tone toward the assembled press corps. He praised the leadership of the White House Correspondents' Association and commended the journalists present for their composure during the chaotic scene. In a rare moment of bipartisan goodwill, Trump thanked both the media and law enforcement for their response to what he described as a dangerous and frightening situation.",
-      "The president also took to Truth Social to release photographs and video footage of the suspected shooter, who was depicted shirtless with his wrists bound behind his back. Trump allies, Republican lawmakers, and several world leaders quickly issued statements expressing relief at the president's safety and condemning the act of political violence. The rapid dissemination of suspect imagery by the president himself drew both praise from supporters and scrutiny from civil liberties observers concerned about due process.",
-      "In remarks that drew immediate attention, Trump suggested the shooting underscored the need for a dedicated ballroom facility at the White House, arguing that holding such high-profile events at external venues creates unnecessary security vulnerabilities. He also appeared to frame the repeated attempts on his life as a reflection of his political impact and the passions his presidency provokes. The episode is certain to intensify the national debate over political violence, presidential security, and the broader climate of polarization that has come to define American public life in recent years."
+      "A gunman attempted to breach the White House Correspondents' Association dinner at the Washington Hilton on Saturday night, sending hundreds of journalists, cabinet members, and President Donald Trump scrambling for cover as shots rang out near the venue. The suspect, identified as Cole Tomas Allen, a 31-year-old teacher and engineer from Southern California, was taken into custody after Secret Service and law enforcement intervened before he could enter the ballroom where Trump and his guests were gathered. Trump later said publicly that he 'wasn\'t worried' during the incident, projecting calm even as those inside the event described diving under tables and scrambling for exits in a scene of considerable panic.",
+      "Writings recovered from Allen reveal that he had composed a document denouncing Trump and expressing a desire to target administration officials, according to authorities and reporting by CBS News, the New York Times, and the Washington Post. The alleged manifesto described political grievances and listed potential targets, painting a picture of premeditated intent rather than a spontaneous act. Trump, responding directly to the suspect\'s writings during a CBS News interview, pushed back on specific claims made in the document, calling veteran anchor Norah O\'Donnell 'disgraceful' for reading portions of the text on air.",
+      "Security experts and former law enforcement officials have raised pointed questions in the aftermath about the protocols surrounding the annual dinner, which this year drew not only the president but a large number of cabinet secretaries and senior administration figures. The Washington Post reported that the event was not granted the highest federal security designation, which would have unlocked a significantly broader array of federal resources and personnel. A former Secret Service agent told The Hill that the administration should seriously reconsider concentrating so many high-ranking officials — potentially a dozen or more in the line of succession — at a single public venue without maximum security measures in place.",
+      "Despite the fact that Allen never breached the ballroom itself, the incident marks the third major security scare involving Trump in as many years, compounding scrutiny of the protective apparatus surrounding the president and his inner circle. Security analysts quoted by the New York Times noted that while the perimeter held and the system 'worked as intended' in keeping the gunman out, the very occurrence of such an incident at a high-profile, well-publicized event underscores persistent vulnerabilities. The Justice Department also moved quickly to leverage the shooting for a separate political objective, with Acting Attorney General Todd Blanche urging a preservation group suing the White House over a ballroom renovation project to drop its lawsuit in the wake of the attack.",
+      "In the days following the shooting, the future of the White House Correspondents' Association dinner itself is uncertain, with journalists and organizers debating whether to move to a new venue, relocate to the East Wing of the White House, or restructure the event entirely. Trump weighed in, urging the WHCA to reschedule the dinner within 30 days, framing a swift return as a show of resilience. The suspect, Cole Allen, is due in court on Monday, where investigators are expected to present further evidence as the full scope of his alleged plot comes into sharper focus."
     ],
-    image: "https://static01.nyt.com/images/2026/04/25/multimedia/25dc-scene-ltpz/25trump-WHCA-live-ltpz-mediumSquareAt3X.jpg",
-    source: "The New York Times",
-    sourceUrl: "https://www.nytimes.com/2026/04/26/us/politics/trump-gunman-security-violence.html"
+    image: "https://static01.nyt.com/images/2026/04/26/multimedia/26wwk-wchd-suspect-hpwb/26wwk-wchd-suspect-hpwb-mediumSquareAt3X.jpg",
+    source: "NPR",
+    sourceUrl: "https://www.npr.org/2026/04/26/nx-s1-5800124/whcd-shooting-investigation-underway-heres-what-we-know"
   },
   secondary: [
     {
       id: "us1",
-      title: "Justice Department Authorizes Firing Squads for Federal Executions",
-      summary: "The U.S. Justice Department announced it will permit the use of firing squads to carry out federal executions, drawing immediate condemnation from Pope Leo.",
+      title: "Security Protocols Under Fire: WHCA Dinner Lacked Top Federal Security Designation",
+      summary: "Despite the presence of the president and numerous cabinet members, the White House Correspondents' Dinner was not granted the highest security status that would have unlocked full federal resources.",
       body: [
-        "The Justice Department's decision to authorize firing squads as an approved method for federal executions marks a significant shift in U.S. capital punishment policy, expanding the options available to federal executioners beyond lethal injection. The announcement drew swift international attention when newly installed Pope Leo reiterated the Catholic Church's position that the death penalty is 'inadmissible,' releasing a video message on the same day as the Justice Department's declaration.",
-        "The timing of the two announcements — from Washington and the Vatican on the same day — highlighted the deepening tension between the Trump administration's criminal justice agenda and religious and human rights communities both domestically and abroad. The decision is expected to face legal challenges, while death penalty opponents argue it represents a step backward for the United States on the world stage."
+        "The Washington Post revealed that Saturday\'s White House Correspondents' Dinner, attended by President Trump and a large contingent of senior cabinet officials, was not classified at the highest federal security level, a designation that would have dramatically expanded the law enforcement footprint at the event. Former Secret Service officials told The Hill that the concentration of so many officials in the line of succession at a single public venue without maximum protections represents a significant strategic risk that the administration should now urgently reassess.",
+        "The revelation has intensified congressional and public debate about how security resources are allocated for high-profile political and media events, and whether the traditionally press-focused nature of the correspondents' dinner has historically led organizers and officials to underestimate its security requirements. Experts say the incident will likely prompt a fundamental review of how such gatherings are planned and protected going forward."
       ],
-      image: "https://images.unsplash.com/photo-1688956020469-50f4ecef7489?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxKdXN0aWNlJTIwRGVwYXJ0bWVudCUyMEF1dGhvcml6ZXMlMjBGaXJpbmclMjBTcXVhZHMlMjBmb3IlMjBGZWRlcmFsJTIwRXhlY3V0aW9uc3xlbnwwfDB8fHwxNzc3MTc5NzcxfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "NPR",
-      url: "https://www.npr.org/2026/04/25/g-s1-118767/pope-leo-trump-death-penalty",
+      image: "https://images.pexels.com/photos/19813740/pexels-photo-19813740.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      source: "Washington Post",
+      url: "https://www.washingtonpost.com/politics/2026/04/26/white-house-correspondents-dinner-security-status/",
       category: "Politics"
     },
     {
       id: "us2",
-      title: "Trump Cancels Iran Peace Talks After Diplomatic Breakdown in Islamabad",
-      summary: "President Trump abruptly cancelled a planned U.S. diplomatic trip to Pakistan for Iran nuclear talks after Iran's foreign minister departed and Tehran denied any direct meeting was scheduled.",
+      title: "Who Is Cole Allen? Profile of the Suspected WHCA Dinner Shooter Emerges",
+      summary: "The 31-year-old California teacher and engineer suspected of the White House Correspondents' Dinner shooting is described by those who knew him as an ordinary, intelligent person, even as his writings revealed deep political grievances.",
       body: [
-        "President Trump announced he was pulling U.S. envoys — including Steve Witkoff and Jared Kushner — from planned peace negotiations with Iran that were to be held in Islamabad, Pakistan, after Iran's Foreign Minister left the country and Tehran publicly stated no direct meeting with a U.S. delegation had been arranged. The breakdown represents a significant setback for the administration's efforts to reach a diplomatic resolution over Iran's nuclear program, a flagship foreign policy objective of Trump's second term.",
-        "The episode exposed the fragile and contested nature of back-channel diplomacy between Washington and Tehran, with each side offering conflicting accounts of what had been agreed upon. The collapse of the talks is likely to reignite debate within Congress and among foreign policy experts about the administration's strategy toward Iran and whether a credible diplomatic framework can be established."
+        "Cole Tomas Allen, the man identified by authorities as the suspect in Saturday\'s shooting, was known to students he mentored in Southern California as 'very smart' and presented publicly as a completely average individual, making the alleged attack all the more shocking to those in his community. Investigators say Allen sent a message to family members before the event stating his intention to target Trump administration officials, and that a written document recovered from him elaborated on his grievances and potential targets.",
+        "The case highlights the ongoing challenge for law enforcement in identifying so-called 'lone actor' threats — individuals who display few outward warning signs but harbor strong ideological motivations. Allen is scheduled to appear in court on Monday, where prosecutors are expected to lay out the evidence underpinning the charges against him as the investigation continues."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/8b84/live/6b377100-40e5-11f1-ac78-2112837ce2aa.jpg",
+      image: "https://images.unsplash.com/photo-1776079614815-22bc8a11bd5f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxXaG8lMjBJcyUyMENvbGUlMjBBbGxlbiUzRiUyMFByb2ZpbGUlMjBvZiUyMHRoZSUyMFN1c3BlY3RlZCUyMFdIQ0ElMjBEaW5uZXIlMjBTaG9vdGVyJTIwRW1lcmdlc3xlbnwwfDB8fHwxNzc3MjY2MTg0fDA&ixlib=rb-4.1.0&q=80&w=1080",
       source: "NPR",
-      url: "https://www.npr.org/2026/04/25/nx-s1-5799472/the-us-pulls-out-of-peace-talks-with-iran",
+      url: "https://www.npr.org/2026/04/26/g-s1-118826/cole-allen-suspected-white-house-correspondents-dinner-shooter-profile",
       category: "Politics"
     },
     {
       id: "us3",
-      title: "RFK Jr. Reined In on Health Policy Despite Early Promises of Free Rein",
-      summary: "Despite Trump's early suggestion that Robert F. Kennedy Jr. could pursue his health agenda without restriction, Kennedy has made significant concessions — frustrating his core MAHA supporters.",
+      title: "Georgia Senate GOP Primary Heats Up as Carter and Collins Clash in Debate",
+      summary: "Republican congressmen Buddy Carter and Mike Collins traded sharp attacks at a Georgia Senate GOP primary debate on Sunday, one day before early voting begins in the competitive race.",
       body: [
-        "When President Trump appointed Robert F. Kennedy Jr. to lead health policy efforts, he suggested Kennedy would be free to run 'wild' with his Make America Healthy Again agenda, a promise that energized Kennedy's devoted political base. But months into his role, Kennedy has pivoted away from some of his most prominent positions, particularly on vaccines, drawing criticism from supporters who feel he has been co-opted by the political establishment he once railed against.",
-        "The apparent constraints placed on Kennedy illustrate the tension between the grassroots populist health movement he championed and the institutional realities of governing within a traditional cabinet structure. Analysts note that Kennedy's compromises may reflect broader White House calculations about managing political risk, even as they erode the enthusiasm of a constituency that was once among Trump's most passionate advocates."
+        "Representatives Buddy Carter and Mike Collins dominated the exchanges at Sunday\'s Georgia Senate Republican primary debate, trading pointed barbs over their records and fitness for the Senate seat, while former college football coach Derek Dooley largely sought to position himself above the fray as a fresh-faced outsider candidate. The five-way field also includes former Senate candidate John Coyne and retired Brigadier General Jonathan McColumn, all vying for the GOP nomination to challenge Democratic incumbent Senator Jon Ossoff in what is expected to be one of the most competitive Senate races of the 2026 cycle.",
+        "The debate comes at a critical moment, with early voting opening Monday and the outcome of the primary carrying major implications for Republican efforts to expand their Senate majority. Georgia has remained a closely contested battleground since Ossoff\'s narrow 2021 victory, and national Republican strategists are watching the primary closely to assess which candidate offers the strongest path to flipping the seat."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/daf2/live/53a64f50-3f39-11f1-b23e-977dc8cd7ec8.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/ce8lrn65lvzo",
-      category: "Politics"
+      image: "https://thehill.com/wp-content/uploads/sites/2/2026/04/AP26116782967184-e1777247822161.jpg?w=900",
+      source: "The Hill",
+      url: "https://thehill.com/homenews/campaign/5850187-gop-primary-georgia-senate-race/",
+      category: "Elections"
     }
   ]
 };

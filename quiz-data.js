@@ -1,10 +1,10 @@
 // quiz-data.js
-// Auto-updated 2026-04-26 — do not edit manually
+// Auto-updated 2026-04-27 — do not edit manually
 
 window.QUIZ_DATA = {
-  date: '2026-04-26',
+  date: '2026-04-27',
   category: 'Transport',
-  question: 'What was the name of the world\'s first commercially operated hovercraft service, launched in 1959 across the Dee Estuary in Wales?',
-  answer: 'The Vickers-Supermarine SR.N1 service, operated as the Wirral Belle route — though it is commonly referred to simply as the first SR.N1 passenger crossing, operated by British United Airways\' predecessor.',
-  funFact: 'The SR.N1 hovercraft made its historic first public passenger crossing of the Solent in July 1959, just 50 years to the day after Louis Blériot flew across the English Channel. The inventor Christopher Cockerell had originally pitched the hovercraft concept to the British government, who classified it as secret — unsure whether it was a boat, a plane, or something else entirely. Commercial hovercraft services across the English Channel later became a beloved institution, running until 2000.'
+  question: 'Which railway station, opened in 1854, holds the record as the busiest single-level railway station in the world by number of passengers passing through daily?',
+  answer: 'Shinjuku Station, Tokyo, Japan.',
+  funFact: 'Shinjuku Station handles an astonishing average of over 3.5 million passengers per day, served by more than 50 platforms and connecting numerous rail and subway lines. It is so vast and labyrinthine that the station employs dedicated staff known as "pushers" during rush hours to help cram passengers into trains. The station has over 200 exits, and navigating it for the first time is considered a genuine challenge even for seasoned travellers.'
 };

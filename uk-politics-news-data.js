@@ -1,61 +1,61 @@
 // uk-politics-news-data.js
-// Auto-updated 2026-04-26 — do not edit manually
+// Auto-updated 2026-04-27 — do not edit manually
 
 var UK_POLITICS_NEWS = {
-  date: "2026-04-26",
+  date: "2026-04-27",
   main: {
-    title: "Starmer Under Fire as Labour Leadership Speculation Intensifies Amid Mandelson Scandal",
+    title: "Labour Factions Begin Plotting 'Orderly Transition' Away From Starmer as Leadership Crisis Deepens",
     category: "Politics",
     content: [
-      "Sir Keir Starmer is facing the most significant threat to his leadership since becoming Prime Minister, as mounting pressure from within his own party and a damaging vetting scandal combine to put his future in serious doubt. The Prime Minister convened a crisis meeting with his inner circle at Chequers on Friday to war-game the coming weeks, a sign of just how precarious his position has become. Despite insisting publicly that the 'majority' of Labour MPs back his leadership, sources within the parliamentary party describe a mood of deep unease, with whispered conversations about succession growing louder by the day.",
-      "At the heart of the immediate crisis is the affair surrounding the vetting of Peter Mandelson for his role as UK Ambassador to Washington, and the subsequent sacking of senior civil servant Sir Olly Robbins. Starmer has defended the dismissal, insisting that Robbins only faced the 'everyday pressure of government' and that he would not have appointed Mandelson had the outcome of the vetting process been made clear to him. But former Labour stalwart Harriet Harman dealt a particularly stinging blow, declaring that Starmer had placed a 'nuclear bomb' under the row by choosing to sack Robbins, dramatically escalating a story that might otherwise have faded.",
-      "Further complicating matters, a key figure in the vetting controversy — Ian Collard, the chief property and security officer at the centre of the affair — has declined to appear in person before the Foreign Affairs Committee, agreeing only to submit written answers. Committee chair Emily Thornberry had requested his attendance in person, and his refusal to give live evidence has drawn criticism from MPs who argue it undermines proper parliamentary scrutiny. The episode has reinforced perceptions that the government is struggling to manage the fallout transparently, adding yet another layer to an already damaging episode.",
-      "Labour mayors and local figures have meanwhile been sounding the alarm ahead of the May 7 local elections, warning privately that Starmer is proving to be a negative force on the doorstep. Repeated U-turns, a perceived failure to communicate the government's successes, and the Mandelson scandal are all being cited as factors driving voters away from the party at a critical moment. Senior figures including those close to Mayor of London Sadiq Khan fear a wipeout in local contests, with Starmer's personal poll ratings acting as a drag on candidates who would otherwise be well-placed to hold seats.",
-      "The crisis comes as Laura Kuenssberg's reporting from Scotland and Wales captures the mood of 'relish and dread' among candidates and voters in the devolved nations, where the Labour government's difficulties at Westminster are creating a complex political backdrop ahead of May's Holyrood and Senedd contests. In Scotland, opposition parties are openly exploiting what they describe as a 'shambles' in Downing Street, while in Wales, Labour's traditional dominance is under pressure from multiple directions. With the local elections now just days away and the leadership chatter refusing to die down, the coming fortnight is shaping up to be one of the most defining periods of Starmer's premiership."
+      "Labour figures from across the party\'s rival factions have begun circulating informal proposals for an 'orderly transition' of power away from Prime Minister Sir Keir Starmer, in what marks a significant escalation of the political crisis surrounding his leadership. The Guardian reports that conversations among MPs have shifted decisively — no longer focusing on whether Starmer could be removed, but on how such a removal might actually be achieved. Senior party insiders describe a mood of growing urgency, with frustration at Starmer\'s judgement reaching a level that was unthinkable only months ago.",
+      "The immediate trigger for this week\'s intensified pressure has been the controversy surrounding Peter Mandelson and the vetting process that led to the sacking of senior civil servant Olly Robbins. Starmer has stood by his decision to dismiss Robbins, insisting the official had only faced 'everyday pressure of government,' but critics within Labour argue the entire episode has been badly mishandled and has exposed serious weaknesses at the top of the administration. The prime minister\'s allies gathered at his Chequers country retreat on Friday to 'wargame' the coming weeks — an acknowledgement that his position is genuinely precarious.",
+      "Starmer himself has pushed back defiantly against suggestions that his authority is crumbling, insisting that the 'vast majority' of Labour MPs still support him and that he remains confident he can lead the party into and win the next general election. Speaking publicly, he sought to project calm and certainty, dismissing talk of a leadership change as the inevitable background noise of political life. However, political correspondents note that the very fact he felt compelled to make such a statement underlines how serious the internal pressures have become.",
+      "The timing of the crisis could hardly be worse for Labour, with Scottish Parliament and Welsh Senedd elections scheduled for 7 May. The BBC\'s Laura Kuenssberg has been reporting from both nations, finding a mixture of relish among opposition candidates and dread among Labour activists at how the Westminster 'shambles' — as one insider described it — may drag down the party\'s performance in the devolved contests. A poor set of results in Cardiff and Edinburgh would inevitably be seized upon by those within Labour who believe a change of leadership is necessary before the next Westminster election.",
+      "Health Secretary Wes Streeting has notably refused to rule out his own leadership ambitions when pressed, a response that has done little to quell speculation about potential successors lining up in the wings. Political analysts point out that the current situation bears the hallmarks of a classic late-stage governing party crisis: a leader who retains formal authority but has lost the commanding grip on his MPs that effective prime ministerial power requires. Whether Starmer can reverse the tide through a robust policy agenda — including his planned crackdown on shoplifting announced for Monday — or whether the internal pressure eventually becomes irresistible, will define the coming weeks of British political life."
     ],
-    image: "https://e3.365dm.com/26/04/1920x1080/skynews-keir-starmer-paris_7222799.jpg?20260417153420",
-    source: "Sky News",
-    sourceUrl: "https://news.sky.com/story/when-not-if-labours-uncertainty-over-starmers-future-13536252"
+    image: "https://images.unsplash.com/photo-1567513562930-c0438635b0c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxMYWJvdXIlMjBGYWN0aW9ucyUyMEJlZ2luJTIwUGxvdHRpbmclMjB8ZW58MHwwfHx8MTc3NzI2NjEyN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+    source: "The Guardian",
+    sourceUrl: "https://www.theguardian.com/politics/2026/apr/26/keir-starmer-vows-lead-labour-general-election-mandelson-vetting"
   },
   secondary: [
     {
       id: "uk1",
-      title: "Devolved Elections Loom Large as Starmer's Troubles Cast Shadow Over Scotland and Wales",
-      summary: "Labour candidates in Scotland and Wales are heading into May 7 polls with a mix of anxiety and determination as Westminster's political turbulence complicates their campaigns.",
+      title: "Government Move to Delay Children\'s Social Media Ban Faces Revolt in House of Lords",
+      summary: "Peers are set to vote on Monday against a government amendment that could delay restrictions on children\'s access to social media by up to three years.",
       body: [
-        "Laura Kuenssberg travelled to both Scotland and Wales to take the temperature of candidates and voters ahead of the devolved elections on May 7, finding a mood she described as a mixture of 'relish and dread'. In Scotland, opposition parties are seizing on the difficulties of the Starmer government to energise their own bases, while Labour candidates are working to distance themselves from the chaos in Westminster.",
-        "In Wales, where Labour has historically dominated the Senedd, the party faces a tougher-than-expected fight amid voter disillusionment with the national government. The results of these elections are likely to be read as a significant verdict on Starmer's leadership at a pivotal moment for British politics."
+        "Ministers have tabled an amendment to the Children\'s Wellbeing and Schools Bill that would create a three-year window before controls on children\'s access to social media platforms could be imposed, prompting an angry backlash from campaigners and senior figures in the House of Lords. Critics argue the delay breaks a clear government promise to act swiftly to protect children online, and a number of peers have signalled they intend to vote down the amendment when it comes before the Lords on Monday.",
+        "The row puts the government in an uncomfortable position, having previously made children\'s online safety a flagship concern. Campaigners say a three-year delay is unacceptable given the mounting evidence of harm caused by social media platforms to young people\'s mental health, and warn that the amendment risks undermining public trust in the government\'s commitment to the issue."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/2a18/live/de8b4cc0-3fce-11f1-bd52-e755d604ece4.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/cq59xvdzjv7o?at_medium=RSS&at_campaign=rss",
+      image: "https://i.guim.co.uk/img/media/d41a2eec1503e76eacd201d7665391d8b0b10e67/6_0_6880_5504/master/6880.jpg?width=1200&quality=85&auto=format&fit=max&s=d2671648f98317ee4a45c22c3252d68b",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/uk-news/2026/apr/26/uk-government-move-to-delay-social-media-ban-faces-pushback-in-lords",
       category: "Politics"
     },
     {
       id: "uk2",
-      title: "Home Secretary Refuses to Rule Out Returning Failed Afghan Asylum Seekers to Taliban-Controlled Afghanistan",
-      summary: "Shabana Mahmood has indicated the government is monitoring EU talks on an Afghan returns programme and has not ruled out following suit, alarming humanitarian groups.",
+      title: "Higher Food and Fuel Prices Could Last Eight Months After Iran War Ends, Minister Warns",
+      summary: "The government has stepped up contingency planning after a minister warned that the economic impact of the Iran war on British consumers could persist for more than eight months after the conflict concludes.",
       body: [
-        "Home Secretary Shabana Mahmood has refused to rule out sending rejected Afghan asylum seekers back to Taliban-controlled Afghanistan, saying she is 'monitoring very closely' discussions between Kabul and EU member states about a potential returns programme. The remarks represent a significant signal from the government and have shocked humanitarian organisations who argue that returning people to Taliban rule would put lives at serious risk.",
-        "The Home Secretary also hinted at 'additional' measures under consideration, though she did not elaborate in detail. The statement marks a notable hardening of tone on asylum policy from a Labour government that came to power promising a more humane approach to migration."
+        "Chief Secretary to the Treasury Darren Jones has warned that elevated food and fuel prices resulting from the Iran war may continue to affect British households for more than eight months even after hostilities end, as the government moves to bolster supply chain resilience and monitor stock levels. Officials are said to be actively planning for a range of scenarios involving potential disruptions to energy and food imports.",
+        "The warning underlines the growing domestic economic consequences of the conflict for UK consumers already facing cost-of-living pressures. The government\'s acknowledgement that price rises could be prolonged is likely to increase political pressure on ministers to demonstrate they have a credible plan to shield households from the worst of the impact."
       ],
-      image: "https://i.guim.co.uk/img/media/10856d4e81d21748d2761ff9b2d1139701a50ed6/0_0_2919_2336/master/2919.jpg?width=1200&quality=85&auto=format&fit=max&s=30f0cdf6eb1a82cb84b21919e465806b",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/uk-news/2026/apr/24/shabana-mahmood-refuses-to-rule-out-sending-back-failed-afghan-asylum-seekers",
-      category: "Politics"
+      image: "https://e3.365dm.com/26/02/1920x1080/skynews-fruit-supermarket_7168059.jpg?20260218110459",
+      source: "BBC News",
+      url: "https://www.bbc.com/news/articles/cm29m98md2do?at_medium=RSS&at_campaign=rss",
+      category: "Economics"
     },
     {
       id: "uk3",
-      title: "Security Vetting Tightened After MP Assigned Bodyguard with Far-Right Links",
-      summary: "The private security firm Mitie has strengthened its vetting procedures after one of its close protection operatives assigned to guard a threatened MP was found to have far-right connections.",
+      title: "UK\'s Healthy Life Expectancy Has Fallen Over the Past Decade, Major Study Finds",
+      summary: "A Health Foundation report has found that people in the UK are spending fewer years in good health than a decade ago, with Britain falling behind most other wealthy nations.",
       body: [
-        "Mitie, the security company holding a £31 million government contract to provide bodyguards for MPs, has updated its vetting processes after it emerged that a close protection operative with far-right links had been assigned to protect a politician facing threats from extremists. The company is now implementing additional social media checks as part of a broader review of how it screens personnel, amid growing concern about the threat environment facing elected officials.",
-        "The incident has raised serious questions about the robustness of existing vetting procedures for those tasked with protecting lawmakers, and comes at a time when the security of politicians is under heightened scrutiny. Parliament and the Home Office are said to be monitoring the situation closely as pressure mounts for more rigorous standards across the industry."
+        "A significant new study by the Health Foundation has concluded that healthy life expectancy in the United Kingdom has declined over the past ten years, with the organisation warning that Britain is 'going backwards' relative to comparable rich countries. The findings raise serious questions about the effectiveness of health policy over successive governments and the long-term pressures facing the NHS.",
+        "The deterioration in healthy life expectancy has wide-ranging implications for public finances, workforce productivity, and the government\'s stated ambition to deliver economic growth. Health campaigners say the figures make urgent reform of preventive health policy and public health investment a political as well as a moral imperative."
       ],
-      image: "https://i.guim.co.uk/img/media/da5eeecf8ba69a0cc86cc216520d1b2cbe6b06c7/136_0_2513_2010/master/2513.jpg?width=1200&quality=85&auto=format&fit=max&s=c94cd5b689df4db8f2da8126c73ec51a",
+      image: "https://images.unsplash.com/photo-1711670224588-288fa8467fbe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxVSyU1Q3xlbnwwfDB8fHwxNzc3MjY2MTI3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       source: "The Guardian",
-      url: "https://www.theguardian.com/politics/2026/apr/25/security-vetting-stepped-up-after-mp-is-given-bodyguard-with-far-right-links",
-      category: "Politics"
+      url: "https://www.theguardian.com/society/2026/apr/27/people-in-uk-spend-fewer-years-in-good-health-than-a-decade-ago-study-finds",
+      category: "Health"
     }
   ]
 };

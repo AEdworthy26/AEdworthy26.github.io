@@ -1,88 +1,93 @@
 // curiosity-data.js
-// Auto-updated 2026-04-26 — do not edit manually
+// Auto-updated 2026-04-27 — do not edit manually
 
 var CURIOSITY_DATA = {
-  date: "2026-04-26",
+  date: "2026-04-27",
   mainArticle: {
-    title: "The Dead Cities of Syria: A Vanished World Frozen in Stone",
-    subject: "Dead Cities of Syria",
-    subtitle: "Eight hundred ghost towns dot the limestone hills of northern Syria — prosperous Byzantine communities that simply walked away, leaving their houses, churches, and olive presses standing for fifteen centuries.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Serjilla_01.jpg",
+    title: "The Minoans: Europe\'s First Great Civilisation and the Mystery of Its Collapse",
+    subject: "Minoan civilisation Crete",
+    subtitle: "Before Greece, before Rome, a seafaring palace culture flourished on Crete — then vanished almost without trace.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Map_Minoan_Crete-en.svg/1280px-Map_Minoan_Crete-en.svg.png",
     readTime: "8 min",
     content: [
       {
         type: "paragraph",
-        text: "In the limestone massif of northern Syria, between Aleppo and the Turkish border, there exists one of the strangest archaeological landscapes on earth. More than eight hundred abandoned settlements — known collectively as the Dead Cities — stand in a state of eerie preservation, their stone houses roofless but upright, their churches still arching skyward, their wine and olive presses intact as if their owners stepped out yesterday. No catastrophic eruption buried them, no flood swept them away; they were simply abandoned over the course of a few centuries, leaving behind a complete cross-section of late antique rural life that has no parallel anywhere in the Mediterranean world."
+        text: "Around 2700 BCE, on the island of Crete in the eastern Mediterranean, something remarkable began to take shape. A sophisticated, literate, palace-building civilisation emerged that would dominate Aegean trade and culture for over a thousand years. The Minoans — named not by themselves, but by the Victorian archaeologist Arthur Evans after the mythical King Minos — built sprawling, multi-storey palace complexes, painted vivid frescoes, and traded with Egypt and the Levant long before classical Greece was even a glimmer. They are, in every meaningful sense, the forgotten foundation of European civilisation."
       },
       {
         type: "heading",
-        text: "The Boom Years: How Olive Oil Built an Empire of Villages"
+        text: "Palaces Without Walls"
       },
       {
         type: "paragraph",
-        text: "The story of the Dead Cities begins not with death but with extraordinary prosperity. Between roughly the 1st and 6th centuries AD, the limestone hills of the region — known in antiquity as the Belus Massif — were intensively cultivated, primarily for olives. Roman and later Byzantine demand for olive oil was insatiable: it served as food, lamp fuel, soap, medicine, and a key ingredient in the early Christian sacrament of chrism. Farmers here responded with industrial-scale production, cutting terraces into the rocky hillsides and constructing stone oil presses of sophisticated design, dozens of which survive in working condition to this day."
+        text: "The great palace at Knossos, rediscovered by Evans beginning in 1900, covers roughly 20,000 square metres and once rose at least three storeys high. It contained workshops, storerooms packed with enormous clay jars of olive oil and grain, elaborate plumbing systems, and walls covered in breathtaking frescoes of bull-leapers, dolphins, and processional figures. Crucially, it had no defensive walls — a detail that has fascinated and puzzled archaeologists ever since. It suggests either supreme confidence in Minoan naval power, or a society whose political organisation was far less militaristic than anything that followed it."
       },
       {
         type: "heading",
-        text: "Stone Instead of Mud: Why These Villages Survived"
+        text: "A World of Art and Commerce"
       },
       {
         type: "paragraph",
-        text: "The reason the Dead Cities are visible at all comes down to geology. Unlike the mud-brick settlements of the Syrian plain, which dissolved back into the earth within generations of abandonment, the villages of the limestone massif were built entirely from the local rock — a hard, pale stone that can be quarried cleanly and requires no mortar. Walls, doorframes, staircases, and furniture were all carved from the same material, and when the inhabitants left, the stone simply stayed. Fourteen centuries of dry Syrian summers have done little to erode structures that were already engineered for permanence."
+        text: "Minoan art is startlingly modern in its energy and naturalism. Frescoes show women with elaborate coiffures, men vaulting acrobatically over the backs of charging bulls, and seas teeming with stylised fish and octopuses. Their pottery — particularly the eggshell-thin Kamares Ware — was exported as luxury goods across the eastern Mediterranean, found in contexts as far apart as Egypt\'s Middle Kingdom sites and the Levantine coast. This was a culture that understood the power of beautiful objects as diplomatic and commercial currency."
       },
       {
         type: "heading",
-        text: "Pilgrims and Profits: The Role of Early Christianity"
+        text: "The Scripts No One Can Fully Read"
       },
       {
         type: "paragraph",
-        text: "Christianity transformed the Dead Cities from prosperous farming communities into pilgrimage destinations and, in doing so, supercharged their wealth. The most spectacular example is the sanctuary of Saint Simeon Stylites at Qal'at Sim'an, built after 490 AD around the pillar upon which Simeon had stood for 37 years as an act of extreme ascetic devotion. The complex — one of the largest churches constructed anywhere in the world before the great Byzantine building programmes of Justinian — drew pilgrims from as far as Britain and Ethiopia, turning the surrounding villages into a thriving service economy of inns, markets, and religious workshops. Amulets stamped with Simeon's image have been found across the entire Roman world, evidence of a devotional brand that generated real commercial returns."
+        text: "The Minoans left behind two writing systems: an earlier hieroglyphic script and the later, more developed Linear A. Linear B — a separate script found at Knossos and later at mainland Greek sites — was famously deciphered in 1952 by the architect Michael Ventris, revealing it to be an early form of Greek. But Linear A, the script the Minoans themselves used for their administrative and religious records, remains undeciphered to this day. Until it is cracked, we cannot read the Minoans in their own voice; we can only observe them from the outside, through art, architecture, and the objects they left behind."
       },
       {
         type: "heading",
-        text: "The Archaeology of Ordinary Life"
+        text: "The Shadow of Thera"
       },
       {
         type: "paragraph",
-        text: "What makes the Dead Cities uniquely valuable to historians is not their churches but their houses. Detailed stone inscriptions record the names of owners and construction dates; doorways survive with their lintels carved with crosses, vine scrolls, and Greek inscriptions; interior rooms retain their plastered walls and carved stone benches. We can read the social hierarchy of a village directly from its architecture — the larger, more ornate townhouses of the prosperous olive merchants sitting beside the simpler single-room dwellings of agricultural labourers. Nowhere else in the late antique world can you walk through a complete village streetscape and feel so viscerally close to its former inhabitants."
+        text: "Around 1628 BCE, the volcanic island of Thera — modern Santorini — erupted in one of the largest volcanic events of the Holocene, expelling an estimated 60 cubic kilometres of material. The eruption destroyed the Minoan settlement of Akrotiri on Thera, preserving it, Pompeii-like, beneath a deep blanket of ash. For decades, scholars believed this cataclysm directly triggered the collapse of Minoan civilisation through tsunamis, ash fallout, and agricultural failure. The reality, as more precise dating has revealed, is more complicated: Minoan palace culture survived Thera by at least a century, and the true killing blow came from a different direction entirely."
       },
       {
         type: "heading",
-        text: "Why They Were Abandoned: A Debate Still Unresolved"
+        text: "The Mycenaean Takeover"
       },
       {
         type: "paragraph",
-        text: "The abandonment of the Dead Cities was gradual rather than sudden, unfolding roughly between the 7th and 10th centuries, and historians continue to argue about its causes. The Arab conquests of Syria in the 630s certainly disrupted the Byzantine administrative and trade networks upon which olive-oil prosperity depended, but many villages appear to have continued functioning for centuries under Umayyad rule. Climate deterioration, a series of devastating earthquakes, the collapse of long-distance Mediterranean trade, and shifts in regional power all likely played compounding roles. The most honest answer is that we are looking at a slow economic suffocation rather than a dramatic terminal event — the hills simply became less profitable, less connected, and less worth maintaining."
+        text: "By around 1450 BCE, nearly every Minoan palace on Crete except Knossos had been violently destroyed. The evidence — burnt timbers, smashed storage jars, skeletal remains — points unmistakably to warfare rather than natural disaster. Shortly after these destructions, Knossos itself came under new management: Linear B tablets, written in early Greek, began appearing in the palace archives, indicating that Mycenaean Greeks from the mainland had seized control of the island\'s administrative apparatus. The Minoans had built something extraordinary, and the Mycenaeans, who would themselves become the world of Homer\'s epics, were content to inhabit and imitate it even as they conquered it."
       },
       {
         type: "heading",
-        text: "A UNESCO World Heritage Site Under Threat"
+        text: "The Atlantis Question"
       },
       {
         type: "paragraph",
-        text: "The Dead Cities were inscribed as a UNESCO World Heritage Site in 2011, almost simultaneously with the outbreak of the Syrian civil war that would go on to endanger them. Several sites suffered damage from military activity, looting, and the quarrying of ancient stone for use in new construction by displaced communities. Qal'at Sim'an was hit by airstrikes in 2015, damaging parts of the surrounding monastery complex. Yet the sheer scale of the landscape — hundreds of sites spread across hundreds of square kilometres — means that the core of this extraordinary heritage has survived, a ghost world still waiting quietly in the limestone hills."
+        text: "Plato\'s account of Atlantis — a mighty island civilisation swallowed by the sea — was written around 360 BCE, roughly a thousand years after Minoan collapse. The parallels are tantalising: an advanced island culture, naval supremacy, sudden destruction. Some scholars have long argued that garbled folk memory of the Theran eruption and Minoan decline underlies the Atlantis myth, filtered through Egyptian priestly tradition before reaching Plato. Most classicists treat Atlantis as a philosophical allegory, not a historical record. Yet the coincidence remains one of antiquity\'s most seductive puzzles, and the Minoans — real, remarkable, and still only partially understood — need no mythological enhancement to be extraordinary."
       },
       {
         type: "heading",
-        text: "What the Silence Tells Us"
+        text: "What the Minoans Left Behind"
       },
       {
         type: "paragraph",
-        text: "There is something philosophically striking about a civilisation preserved precisely because it was forgotten. The Dead Cities were not maintained, curated, or rebuilt — they were simply left alone, and the stone did the rest. Walking through Serjilla or Al-Bara today, among houses whose doorways still frame views of terraced hillsides, it is possible to feel the weight of fifteen centuries of silence as something almost tangible. These are not ruins in the conventional sense; they are pauses, places where late antiquity simply stopped mid-sentence and has never resumed. In their stillness they offer something that no museum reconstruction can replicate: the unmediated presence of a world that was once completely, unremarkably alive."
+        text: "The legacy of Minoan civilisation runs deeper than is often appreciated. Their artistic motifs — the double axe, the bull, the snake goddess — percolated into later Greek religion and mythology. Their trade networks established patterns of Aegean commerce that the Mycenaeans and then the classical Greeks would inherit and expand. The very idea of a sophisticated, cosmopolitan, palace-centred Aegean culture was a Minoan invention. When we speak of the cradle of Western civilisation, we usually mean Athens or Rome, but behind both lies Crete — older, stranger, and in many ways more intriguing than either."
+      },
+      {
+        type: "paragraph",
+        text: "Excavations on Crete continue to produce revelations. A site at Zominthos in the island\'s interior, only seriously investigated in recent decades, suggests the Minoan world extended far further into the mountains than previously believed. Isotopic analysis of human remains is beginning to reveal migration patterns and diet in ways that written records never could. The Minoans remain, in the best possible sense, an unfinished story — a civilisation that still has secrets to give up, still capable of surprising us more than four thousand years after the first stones of Knossos were laid."
       }
     ]
   },
   personOfTheDay: {
-    name: "Simeon Stylites the Elder",
-    lifespan: "c. 390–459",
-    category: "Religion & Asceticism",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Plaque_de_Saint-Simeon_%28Louvre%2C_Bj_2180%29_%28cropped%29.jpg/1280px-Plaque_de_Saint-Simeon_%28Louvre%2C_Bj_2180%29_%28cropped%29.jpg",
-    bio: "Simeon Stylites was a Syrian Christian ascetic monk who achieved one of the most extraordinary and improbable feats in the history of religious practice: he spent approximately 37 years living on a progressively heightened pillar near Aleppo, preaching to the thousands of pilgrims who gathered below him. Born to a shepherd family in Sis, in what is now southern Turkey, he entered monastic life as a teenager and quickly developed a reputation for extreme self-mortification that alarmed even his fellow monks — he reportedly wore a rope of palm leaves wound so tightly around his body that it had to be surgically removed. Expelled from his first monastery for excessive zeal, he retreated to a hilltop near Telanissos and began the pillar-dwelling experiment that would define his life and legacy.\n\nThe pillar, initially only a few feet high, was raised repeatedly over the years until it reached a height of roughly 18 metres — about six storeys. Simeon stood on a small platform at the top, exposed to sun, wind, and rain, bowing in prayer hundreds of times each day and twice daily delivering sermons to the crowds below via a rope-and-basket system that also delivered his meagre food rations. He corresponded with emperors, arbitrated theological disputes, and was consulted by the powerful across the Christian world, all without ever descending. The Greek word for pillar, stylos, gave him his lasting epithet.\n\nSimeon died on his column in 459 AD, discovered by his attendant after he had not risen for three days. His body was transported to Antioch under military escort — such was his fame that there was genuine fear of riots if the relic were not handled with extreme care. The enormous church complex built over the stump of his final pillar, Qal'at Sim'an, became one of the great pilgrimage sites of the Christian world and remains among the most impressive surviving monuments of Byzantine architecture. Simeon's example inspired a tradition of stylite asceticism that continued in the Eastern Christian world for centuries after his death, a testament to the enduring power of an idea so strange it became sacred."
+    name: "Giovanni Schiaparelli",
+    lifespan: "1835–1910",
+    category: "Astronomy & Science",
+    image: "https://upload.wikimedia.org/wikipedia/commons/0/04/Giovanni_Schiaparelli_1890s.jpg",
+    bio: "Giovanni Virginio Schiaparelli was an Italian astronomer whose careful observations of Mars in the 1870s and 1880s ignited one of the most consequential — and ultimately misleading — scientific controversies of the nineteenth century. Born in Savigliano in Piedmont in 1835, he studied mathematics and engineering in Turin before gravitating toward astronomy, eventually becoming director of the Brera Observatory in Milan, a post he held for over four decades. His early work on meteor showers established, with elegant precision, that they were caused by Earth passing through the debris trails of comets — a discovery of lasting importance that is now entirely overshadowed by what he saw, or believed he saw, on the red planet.\n\nDuring the favourable Martian opposition of 1877, Schiaparelli trained his telescope on Mars with exceptional care and mapped a network of long, thin surface features he called canali — the Italian word for channels or grooves. The term was translated into English as 'canals', with its strong implication of artificial construction, and the misreading took on a life of its own. Schiaparelli himself was cautious about their nature, never definitively claiming they were built by intelligent beings, but he did note their strange tendency to appear in pairs — a phenomenon he called 'gemination' — which seemed almost impossible to explain by natural geology. His maps, widely reproduced and debated, gave the American astronomer Percival Lowell the inspiration he needed to construct an entire theory of Martian civilisation.\n\nThe canals of Mars were eventually shown to be optical illusions, artefacts of the human brain\'s tendency to connect discontinuous dots into lines when peering at the edge of telescopic resolution. Spacecraft imagery from the 1960s onwards revealed a cratered, channel-scarred but uninhabited surface. Schiaparelli\'s reputation has been treated somewhat unfairly by this outcome: he reported honestly what he observed and was scientifically careful in his claims. He also made substantial contributions to the study of Mercury and Venus, and his early work on meteors remains a genuine landmark. He died in Milan in 1910, just old enough to see the Martian canal debate reach its most feverish pitch, but not long enough to see it definitively resolved."
   },
   onThisDay: {
-    headline: "CHERNOBYL REACTOR NO. 4 EXPLODES",
-    date: "April 26, 1986",
-    summary: "In the early hours of April 26, 1986, Reactor No. 4 at the Chernobyl Nuclear Power Plant near Pripyat in the Ukrainian Soviet Socialist Republic suffered a catastrophic explosion during a safety test, releasing a plume of radioactive material that would eventually contaminate large parts of Europe. The accident occurred when a combination of design flaws in the RBMK reactor and a series of operator decisions led to an uncontrolled nuclear chain reaction; two explosions blew the reactor's 1,000-tonne steel lid off and ignited a graphite fire that burned for ten days. It remains, alongside Fukushima Daiichi in 2011, one of only two nuclear accidents ever rated at the maximum Level 7 on the International Nuclear Event Scale.\n\nThe immediate human cost was devastating. Two plant workers died in the explosion itself, and 28 of the emergency workers and firefighters who battled the blaze in the following days died within weeks from acute radiation syndrome. The nearby city of Pripyat — a model Soviet town of 49,000 people — was evacuated 36 hours after the explosion, its residents told to bring only essentials for a temporary absence that became permanent. The long-term health consequences, including elevated rates of thyroid cancer particularly in children exposed to radioactive iodine-131, continue to be studied and debated by epidemiologists. The exclusion zone established around the plant remains largely uninhabited to this day, an eerie landscape of reclaimed forest and abandoned apartments.\n\nThe Chernobyl disaster had consequences far beyond its immediate radiological impact. It severely damaged public confidence in Soviet technical competence and official truthfulness, and many historians argue it was a significant catalyst in the unravelling of the USSR — Mikhail Gorbachev himself later wrote that Chernobyl was perhaps the real cause of the Soviet Union's collapse, more than any other factor. The accident also reshaped global nuclear policy, prompting safety reviews worldwide and strengthening international cooperation on nuclear regulation. In 2019 the HBO television dramatisation brought renewed global attention to the events of that April night, introducing the story to a generation born after the wall had already fallen.",
-    image: "https://images.pexels.com/photos/13717554/pexels-photo-13717554.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    headline: "Magellan\'s Expedition Completes the First Circumnavigation of the Earth",
+    date: "April 27, 1521",
+    summary: "On April 27, 1521, Ferdinand Magellan was killed in the Battle of Mactan in the Philippines, cut down on a beach by warriors loyal to the chieftain Lapu-Lapu after he had unwisely involved himself in a local political dispute. Magellan had led the Spanish expedition from Seville in September 1519, commanding five ships and around 270 men with the audacious intention of reaching the Spice Islands by sailing west. He had already achieved the most significant feat of the voyage — navigating the treacherous strait at the southern tip of South America that now bears his name, and crossing the vast, previously unknown Pacific — but he would not live to see the journey completed.\n\nThe survivors of the expedition, now reduced to a single ship, the Victoria, pressed on under the command of Juan Sebastián Elcano. They loaded the ship with cloves at the Spice Islands and made the gruelling return voyage westward around the Cape of Good Hope, arriving back in Seville on September 6, 1522, with just eighteen men aboard out of the original complement. It was the first circumnavigation of the globe in history, and its implications were staggering: it proved beyond all doubt that the Earth was spherical and navigable by sea in every direction, established the true scale of the Pacific Ocean, and demonstrated that the Americas were entirely separate from Asia. The voyage reshaped every map ever made afterward and confirmed, at enormous human cost, that the world was one continuous, connected body of water."
+    ,
+    image: "https://upload.wikimedia.org/wikipedia/commons/9/9c/Ferdinand_Magellan.jpg"
   }
 };
