@@ -1,10 +1,10 @@
 // quiz-data.js
-// Auto-updated 2026-04-27 — do not edit manually
+// Auto-updated 2026-04-28 — do not edit manually
 
 window.QUIZ_DATA = {
-  date: '2026-04-27',
+  date: '2026-04-28',
   category: 'Transport',
-  question: 'Which railway station, opened in 1854, holds the record as the busiest single-level railway station in the world by number of passengers passing through daily?',
-  answer: 'Shinjuku Station, Tokyo, Japan.',
-  funFact: 'Shinjuku Station handles an astonishing average of over 3.5 million passengers per day, served by more than 50 platforms and connecting numerous rail and subway lines. It is so vast and labyrinthine that the station employs dedicated staff known as "pushers" during rush hours to help cram passengers into trains. The station has over 200 exits, and navigating it for the first time is considered a genuine challenge even for seasoned travellers.'
+  question: 'Which country operated the world\'s first commercial hovercraft passenger service, launched in 1959?',
+  answer: 'The United Kingdom.',
+  funFact: 'The service ran across the Dee Estuary in Wales, operated by Vickers-Armstrongs using the VA-3 hovercraft. It carried passengers between Rhyl and Wallasey for a few summer months before being withdrawn due to technical issues. The concept was pioneered by British engineer Christopher Cockerell, who famously demonstrated the principle using a cat food tin and a coffee tin.'
 };

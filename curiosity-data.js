@@ -1,93 +1,43 @@
 // curiosity-data.js
-// Auto-updated 2026-04-27 — do not edit manually
+// Auto-updated 2026-04-28 — do not edit manually
 
 var CURIOSITY_DATA = {
-  date: "2026-04-27",
+  date: "2026-04-28",
   mainArticle: {
-    title: "The Minoans: Europe\'s First Great Civilisation and the Mystery of Its Collapse",
-    subject: "Minoan civilisation Crete",
-    subtitle: "Before Greece, before Rome, a seafaring palace culture flourished on Crete — then vanished almost without trace.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Map_Minoan_Crete-en.svg/1280px-Map_Minoan_Crete-en.svg.png",
+    title: "The Vinland Map and the Norse in North America",
+    subject: "Viking settlement at L\'Anse aux Meadows",
+    subtitle: "Five centuries before Columbus, Norse sailors built a settlement at the edge of the world — and almost nobody believed it.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/7/78/Viking_attack_on_Gu%C3%A9rande%2C_from_a_Saint-Aubin_MS.jpg",
     readTime: "8 min",
     content: [
-      {
-        type: "paragraph",
-        text: "Around 2700 BCE, on the island of Crete in the eastern Mediterranean, something remarkable began to take shape. A sophisticated, literate, palace-building civilisation emerged that would dominate Aegean trade and culture for over a thousand years. The Minoans — named not by themselves, but by the Victorian archaeologist Arthur Evans after the mythical King Minos — built sprawling, multi-storey palace complexes, painted vivid frescoes, and traded with Egypt and the Levant long before classical Greece was even a glimmer. They are, in every meaningful sense, the forgotten foundation of European civilisation."
-      },
-      {
-        type: "heading",
-        text: "Palaces Without Walls"
-      },
-      {
-        type: "paragraph",
-        text: "The great palace at Knossos, rediscovered by Evans beginning in 1900, covers roughly 20,000 square metres and once rose at least three storeys high. It contained workshops, storerooms packed with enormous clay jars of olive oil and grain, elaborate plumbing systems, and walls covered in breathtaking frescoes of bull-leapers, dolphins, and processional figures. Crucially, it had no defensive walls — a detail that has fascinated and puzzled archaeologists ever since. It suggests either supreme confidence in Minoan naval power, or a society whose political organisation was far less militaristic than anything that followed it."
-      },
-      {
-        type: "heading",
-        text: "A World of Art and Commerce"
-      },
-      {
-        type: "paragraph",
-        text: "Minoan art is startlingly modern in its energy and naturalism. Frescoes show women with elaborate coiffures, men vaulting acrobatically over the backs of charging bulls, and seas teeming with stylised fish and octopuses. Their pottery — particularly the eggshell-thin Kamares Ware — was exported as luxury goods across the eastern Mediterranean, found in contexts as far apart as Egypt\'s Middle Kingdom sites and the Levantine coast. This was a culture that understood the power of beautiful objects as diplomatic and commercial currency."
-      },
-      {
-        type: "heading",
-        text: "The Scripts No One Can Fully Read"
-      },
-      {
-        type: "paragraph",
-        text: "The Minoans left behind two writing systems: an earlier hieroglyphic script and the later, more developed Linear A. Linear B — a separate script found at Knossos and later at mainland Greek sites — was famously deciphered in 1952 by the architect Michael Ventris, revealing it to be an early form of Greek. But Linear A, the script the Minoans themselves used for their administrative and religious records, remains undeciphered to this day. Until it is cracked, we cannot read the Minoans in their own voice; we can only observe them from the outside, through art, architecture, and the objects they left behind."
-      },
-      {
-        type: "heading",
-        text: "The Shadow of Thera"
-      },
-      {
-        type: "paragraph",
-        text: "Around 1628 BCE, the volcanic island of Thera — modern Santorini — erupted in one of the largest volcanic events of the Holocene, expelling an estimated 60 cubic kilometres of material. The eruption destroyed the Minoan settlement of Akrotiri on Thera, preserving it, Pompeii-like, beneath a deep blanket of ash. For decades, scholars believed this cataclysm directly triggered the collapse of Minoan civilisation through tsunamis, ash fallout, and agricultural failure. The reality, as more precise dating has revealed, is more complicated: Minoan palace culture survived Thera by at least a century, and the true killing blow came from a different direction entirely."
-      },
-      {
-        type: "heading",
-        text: "The Mycenaean Takeover"
-      },
-      {
-        type: "paragraph",
-        text: "By around 1450 BCE, nearly every Minoan palace on Crete except Knossos had been violently destroyed. The evidence — burnt timbers, smashed storage jars, skeletal remains — points unmistakably to warfare rather than natural disaster. Shortly after these destructions, Knossos itself came under new management: Linear B tablets, written in early Greek, began appearing in the palace archives, indicating that Mycenaean Greeks from the mainland had seized control of the island\'s administrative apparatus. The Minoans had built something extraordinary, and the Mycenaeans, who would themselves become the world of Homer\'s epics, were content to inhabit and imitate it even as they conquered it."
-      },
-      {
-        type: "heading",
-        text: "The Atlantis Question"
-      },
-      {
-        type: "paragraph",
-        text: "Plato\'s account of Atlantis — a mighty island civilisation swallowed by the sea — was written around 360 BCE, roughly a thousand years after Minoan collapse. The parallels are tantalising: an advanced island culture, naval supremacy, sudden destruction. Some scholars have long argued that garbled folk memory of the Theran eruption and Minoan decline underlies the Atlantis myth, filtered through Egyptian priestly tradition before reaching Plato. Most classicists treat Atlantis as a philosophical allegory, not a historical record. Yet the coincidence remains one of antiquity\'s most seductive puzzles, and the Minoans — real, remarkable, and still only partially understood — need no mythological enhancement to be extraordinary."
-      },
-      {
-        type: "heading",
-        text: "What the Minoans Left Behind"
-      },
-      {
-        type: "paragraph",
-        text: "The legacy of Minoan civilisation runs deeper than is often appreciated. Their artistic motifs — the double axe, the bull, the snake goddess — percolated into later Greek religion and mythology. Their trade networks established patterns of Aegean commerce that the Mycenaeans and then the classical Greeks would inherit and expand. The very idea of a sophisticated, cosmopolitan, palace-centred Aegean culture was a Minoan invention. When we speak of the cradle of Western civilisation, we usually mean Athens or Rome, but behind both lies Crete — older, stranger, and in many ways more intriguing than either."
-      },
-      {
-        type: "paragraph",
-        text: "Excavations on Crete continue to produce revelations. A site at Zominthos in the island\'s interior, only seriously investigated in recent decades, suggests the Minoan world extended far further into the mountains than previously believed. Isotopic analysis of human remains is beginning to reveal migration patterns and diet in ways that written records never could. The Minoans remain, in the best possible sense, an unfinished story — a civilisation that still has secrets to give up, still capable of surprising us more than four thousand years after the first stones of Knossos were laid."
-      }
+      { type: "paragraph", text: "In 1960, a Norwegian explorer named Helge Ingstad walked along the northern tip of Newfoundland following a hunch, a handful of medieval sagas, and the vague directions of a local fisherman. What he and his archaeologist wife Anne Stine found beneath a grassy headland called L\'Anse aux Meadows would rewrite the history of the world: the unmistakable remains of a Norse settlement, carbon-dated to around 1000 AD, making it the earliest confirmed European presence in the Americas by nearly five hundred years. The discovery vindicated centuries of stubborn Scandinavian tradition and silenced those who had dismissed the Vinland sagas as romantic fantasy." },
+      { type: "heading", text: "What the Sagas Actually Said" },
+      { type: "paragraph", text: "The Norse account of North America survives in two major texts — the Greenlanders' Saga and the Saga of Erik the Red — written down in Iceland in the thirteenth century but preserving oral traditions far older. Together they describe a land called Vinland, rich in wild grapes and self-sown wheat, reached by Leif Eriksson after his ship was blown off course returning from Norway around 1000 AD. A later expedition led by Thorfinn Karlsefni attempted a genuine colony, bringing livestock, pregnant women, and plans to stay — but conflict with the indigenous people they called Skraelings eventually drove them out. For generations, historians quarrelled over whether these sagas were history or legend, geography or myth." },
+      { type: "heading", text: "Eight Buildings at the Edge of the World" },
+      { type: "paragraph", text: "The site Ingstad discovered contained the remains of eight turf buildings — longhouses, workshops, and a smithy — laid out in a pattern entirely consistent with Norse construction in Iceland and Greenland. Iron nails, a bronze cloak pin of Scandinavian type, and a spindle whorl used for spinning yarn were among the objects recovered; that last item was particularly significant, suggesting women had been present. No comparable indigenous culture in Newfoundland worked iron or spun yarn in this way, and radiocarbon dating placed the occupation firmly in the late tenth or early eleventh century." },
+      { type: "heading", text: "A Base Camp, Not a Colony" },
+      { type: "paragraph", text: "Modern analysis suggests L\'Anse aux Meadows was not itself the fabled Vinland but rather a base camp from which the Norse explored further south. Butternuts — a tree whose natural range does not extend to Newfoundland — were found at the site, meaning the occupants had travelled or traded with people at least as far south as the St Lawrence valley or New Brunswick. The settlement appears to have been occupied for only a few decades, perhaps serving as a repair station and winter quarters before expeditions further along the coast. It was a toehold, not a foothold." },
+      { type: "heading", text: "The People They Met" },
+      { type: "paragraph", text: "The sagas describe initial curiosity giving way to violent confrontation with the Skraelings, a term the Norse used for both Inuit and indigenous North American peoples. Trade in furs and red cloth turned quickly to misunderstanding and bloodshed; the Norse were vastly outnumbered and far from resupply. Recent archaeological and genetic research has added extraordinary texture to this encounter: a 2021 DNA study found traces of indigenous American ancestry in present-day Icelanders, suggesting at least one indigenous woman made the crossing to Europe, voluntarily or otherwise, around the year 1000. The meeting of worlds was more intimate and more complicated than the sagas admit." },
+      { type: "heading", text: "The Long Shadow of the Vinland Map" },
+      { type: "paragraph", text: "The Vinland Map, which surfaced in 1957 and purported to be a fifteenth-century chart showing the Norse discoveries, became one of the most contested documents in cartographic history. Yale University acquired and published it in 1965 to enormous fanfare, only for a series of chemical analyses to cast doubt on its authenticity — ink studies suggested twentieth-century compounds, though later counter-analyses complicated the picture. The map remains officially unresolved, a fog of forgery allegations and technical dispute that has paradoxically overshadowed the unambiguous physical proof sitting in Newfoundland. L\'Anse aux Meadows needed no map; the turf walls speak for themselves." },
+      { type: "heading", text: "Why the Norse Did Not Stay" },
+      { type: "paragraph", text: "The question of why the Norse abandoned their American beachhead has occupied historians for decades, and the answer is probably several things at once. The indigenous population was large, hostile after initial skirmishes, and perfectly capable of cutting off a tiny Norse outpost; the sagas record that even Freydís Eiríksdóttir\'s famous ferocity — she reportedly drove off an attack by slapping a sword against her bare breast — was not enough to make the colony viable. Greenland and Iceland were themselves barely sustainable, leaving little surplus population or capital to sustain a distant colony. The Atlantic crossing was brutal, the rewards uncertain, and the enemies numerous." },
+      { type: "heading", text: "A UNESCO World and a Living Question" },
+      { type: "paragraph", text: "L\'Anse aux Meadows was designated a UNESCO World Heritage Site in 1978, among the first sites ever to receive that status, recognition of its singular importance to human history. Parks Canada now maintains a reconstructed Norse longhouse on the site, staffed by interpreters in period dress, beside the original excavated ruins. Yet the discovery raises as many questions as it answers: how many other Norse expeditions reached North America and left no trace, how far south they ventured, and what might have happened had the encounter with the Americas unfolded differently. The Norse were there, at the edge of the known world, half a millennium before the history books begin — and they almost went unremembered entirely." }
     ]
   },
   personOfTheDay: {
-    name: "Giovanni Schiaparelli",
-    lifespan: "1835–1910",
-    category: "Astronomy & Science",
-    image: "https://upload.wikimedia.org/wikipedia/commons/0/04/Giovanni_Schiaparelli_1890s.jpg",
-    bio: "Giovanni Virginio Schiaparelli was an Italian astronomer whose careful observations of Mars in the 1870s and 1880s ignited one of the most consequential — and ultimately misleading — scientific controversies of the nineteenth century. Born in Savigliano in Piedmont in 1835, he studied mathematics and engineering in Turin before gravitating toward astronomy, eventually becoming director of the Brera Observatory in Milan, a post he held for over four decades. His early work on meteor showers established, with elegant precision, that they were caused by Earth passing through the debris trails of comets — a discovery of lasting importance that is now entirely overshadowed by what he saw, or believed he saw, on the red planet.\n\nDuring the favourable Martian opposition of 1877, Schiaparelli trained his telescope on Mars with exceptional care and mapped a network of long, thin surface features he called canali — the Italian word for channels or grooves. The term was translated into English as 'canals', with its strong implication of artificial construction, and the misreading took on a life of its own. Schiaparelli himself was cautious about their nature, never definitively claiming they were built by intelligent beings, but he did note their strange tendency to appear in pairs — a phenomenon he called 'gemination' — which seemed almost impossible to explain by natural geology. His maps, widely reproduced and debated, gave the American astronomer Percival Lowell the inspiration he needed to construct an entire theory of Martian civilisation.\n\nThe canals of Mars were eventually shown to be optical illusions, artefacts of the human brain\'s tendency to connect discontinuous dots into lines when peering at the edge of telescopic resolution. Spacecraft imagery from the 1960s onwards revealed a cratered, channel-scarred but uninhabited surface. Schiaparelli\'s reputation has been treated somewhat unfairly by this outcome: he reported honestly what he observed and was scientifically careful in his claims. He also made substantial contributions to the study of Mercury and Venus, and his early work on meteors remains a genuine landmark. He died in Milan in 1910, just old enough to see the Martian canal debate reach its most feverish pitch, but not long enough to see it definitively resolved."
+    name: "Roald Amundsen",
+    lifespan: "1872–1928",
+    category: "Exploration & Adventure",
+    image: "https://upload.wikimedia.org/wikipedia/commons/6/6f/Amundsen_in_fur_skins.jpg",
+    bio: "Roald Amundsen was born in Borge, Norway, in 1872, into a family of shipowners and mariners, and from boyhood he fixed his ambitions on the polar regions with a single-mindedness that bordered on obsession. He slept with his windows open in winter to harden himself, read every account of Arctic and Antarctic exploration he could find, and quietly abandoned a half-hearted medical degree the moment his mother died and freed him from family obligation. His apprenticeship was as demanding as any university: he served as mate aboard the Belgica during the first expedition to winter in Antarctic ice, where scurvy and near-madness tested every man aboard.\n\nHis first great triumph came between 1903 and 1906, when he navigated the Northwest Passage — the sea route through the Arctic archipelago above Canada that European explorers had sought for four centuries — in a small converted herring boat called the Gjøa. He spent two winters frozen in place near King William Island, using the enforced delay productively by learning dog-sledge techniques and survival skills from the local Netsilik Inuit, knowledge that would later prove decisive. When the Gjøa finally broke through into the Pacific in August 1906, Amundsen had achieved what John Franklin, Henry Hudson, and scores of others had died attempting.\n\nHis name is immortalised above all by the race to the South Pole. In October 1911 he led a Norwegian team south from the Bay of Whales using dog teams and meticulous logistical planning, reaching 90° South on December 14, 1911 — five weeks ahead of Robert Falcon Scott\'s doomed British expedition. Where Scott\'s party perished on the return journey, all five of Amundsen\'s men came home safely, a testament to preparation over heroics. He disappeared in June 1928 while flying a search mission over the Barents Sea to find survivors of a crashed airship, and his body was never recovered; the ocean kept him, as it keeps so many of the people who spend their lives defying it."
   },
   onThisDay: {
-    headline: "Magellan\'s Expedition Completes the First Circumnavigation of the Earth",
-    date: "April 27, 1521",
-    summary: "On April 27, 1521, Ferdinand Magellan was killed in the Battle of Mactan in the Philippines, cut down on a beach by warriors loyal to the chieftain Lapu-Lapu after he had unwisely involved himself in a local political dispute. Magellan had led the Spanish expedition from Seville in September 1519, commanding five ships and around 270 men with the audacious intention of reaching the Spice Islands by sailing west. He had already achieved the most significant feat of the voyage — navigating the treacherous strait at the southern tip of South America that now bears his name, and crossing the vast, previously unknown Pacific — but he would not live to see the journey completed.\n\nThe survivors of the expedition, now reduced to a single ship, the Victoria, pressed on under the command of Juan Sebastián Elcano. They loaded the ship with cloves at the Spice Islands and made the gruelling return voyage westward around the Cape of Good Hope, arriving back in Seville on September 6, 1522, with just eighteen men aboard out of the original complement. It was the first circumnavigation of the globe in history, and its implications were staggering: it proved beyond all doubt that the Earth was spherical and navigable by sea in every direction, established the true scale of the Pacific Ocean, and demonstrated that the Americas were entirely separate from Asia. The voyage reshaped every map ever made afterward and confirmed, at enormous human cost, that the world was one continuous, connected body of water."
-    ,
-    image: "https://upload.wikimedia.org/wikipedia/commons/9/9c/Ferdinand_Magellan.jpg"
+    headline: "MUTINY ON THE BOUNTY: THE CREW SEIZES THE SHIP",
+    date: "April 28, 1789",
+    summary: "In the pre-dawn darkness of April 28, 1789, Fletcher Christian led a group of mutineers aboard HMS Bounty and seized control of the vessel from Captain William Bligh in one of the most famous acts of maritime rebellion in history. Bligh was awakened at bayonet-point, forced onto the deck in his nightclothes, and set adrift in the ship\'s open launch with eighteen loyal crew members, minimal provisions, and a sextant — somewhere near the Tongan island of Tofua in the South Pacific. The mutineers' grievances were complex, woven from months of brutal discipline, the seductive comfort of Tahiti where the ship had lingered for five months collecting breadfruit plants, and the particular tensions between Christian and Bligh that had curdled a once-close friendship.\n\nWhat followed was one of the most remarkable open-boat voyages ever accomplished. Bligh navigated the 23-foot launch nearly 3,600 miles to Timor in 47 days, losing only one man to a stone-throwing attack by islanders — a feat of seamanship that arguably outshines anything his mutinous crew achieved. Christian and the Bounty\'s company, meanwhile, attempted to settle on Tahiti before the more determined mutineers sailed on to the remote and uncharted Pitcairn Island, where they burned the Bounty and established a hidden community. The mutiny on the Bounty became legend almost immediately, inspiring novels, films, and endless debate about tyranny, paradise, and the fragility of order at sea.",
+    image: "https://images.unsplash.com/photo-1574781355506-36e0d797b351?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxNVVRJTlklMjBPTiUyMFRIRSUyMEJPVU5UWSUzQSUyMFRIRSUyMENSRVclMjBTRUlaRVMlMjBUSEUlMjBTSElQfGVufDB8MHx8fDE3NzczNTI4MzJ8MA&ixlib=rb-4.1.0&q=80&w=1080"
   }
 };

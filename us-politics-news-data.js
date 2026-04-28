@@ -1,61 +1,61 @@
 // us-politics-news-data.js
-// Auto-updated 2026-04-27 — do not edit manually
+// Auto-updated 2026-04-28 — do not edit manually
 
 var US_POLITICS_NEWS = {
-  date: "2026-04-27",
+  date: "2026-04-28",
   main: {
-    title: "Shooting at White House Correspondents' Dinner Raises Security Questions After Suspect Targeted Trump Officials",
+    title: "Suspect Charged with Attempted Assassination of Trump at White House Correspondents' Dinner",
     category: "Politics",
     content: [
-      "A gunman attempted to breach the White House Correspondents' Association dinner at the Washington Hilton on Saturday night, sending hundreds of journalists, cabinet members, and President Donald Trump scrambling for cover as shots rang out near the venue. The suspect, identified as Cole Tomas Allen, a 31-year-old teacher and engineer from Southern California, was taken into custody after Secret Service and law enforcement intervened before he could enter the ballroom where Trump and his guests were gathered. Trump later said publicly that he 'wasn\'t worried' during the incident, projecting calm even as those inside the event described diving under tables and scrambling for exits in a scene of considerable panic.",
-      "Writings recovered from Allen reveal that he had composed a document denouncing Trump and expressing a desire to target administration officials, according to authorities and reporting by CBS News, the New York Times, and the Washington Post. The alleged manifesto described political grievances and listed potential targets, painting a picture of premeditated intent rather than a spontaneous act. Trump, responding directly to the suspect\'s writings during a CBS News interview, pushed back on specific claims made in the document, calling veteran anchor Norah O\'Donnell 'disgraceful' for reading portions of the text on air.",
-      "Security experts and former law enforcement officials have raised pointed questions in the aftermath about the protocols surrounding the annual dinner, which this year drew not only the president but a large number of cabinet secretaries and senior administration figures. The Washington Post reported that the event was not granted the highest federal security designation, which would have unlocked a significantly broader array of federal resources and personnel. A former Secret Service agent told The Hill that the administration should seriously reconsider concentrating so many high-ranking officials — potentially a dozen or more in the line of succession — at a single public venue without maximum security measures in place.",
-      "Despite the fact that Allen never breached the ballroom itself, the incident marks the third major security scare involving Trump in as many years, compounding scrutiny of the protective apparatus surrounding the president and his inner circle. Security analysts quoted by the New York Times noted that while the perimeter held and the system 'worked as intended' in keeping the gunman out, the very occurrence of such an incident at a high-profile, well-publicized event underscores persistent vulnerabilities. The Justice Department also moved quickly to leverage the shooting for a separate political objective, with Acting Attorney General Todd Blanche urging a preservation group suing the White House over a ballroom renovation project to drop its lawsuit in the wake of the attack.",
-      "In the days following the shooting, the future of the White House Correspondents' Association dinner itself is uncertain, with journalists and organizers debating whether to move to a new venue, relocate to the East Wing of the White House, or restructure the event entirely. Trump weighed in, urging the WHCA to reschedule the dinner within 30 days, framing a swift return as a show of resilience. The suspect, Cole Allen, is due in court on Monday, where investigators are expected to present further evidence as the full scope of his alleged plot comes into sharper focus."
+      "Federal authorities have charged Cole Tomas Allen, a 31-year-old man from Torrance, California, with the attempted assassination of President Donald Trump following a shooting near the White House Correspondents' Association Dinner on Saturday evening in Washington, D.C. Prosecutors say Allen faces a potential life sentence on the charge, and officials indicated that additional charges may follow as the investigation continues to develop. The arrest has sent shockwaves through the capital and prompted an urgent review of the security protocols surrounding one of Washington\'s most prominent annual gatherings.",
+      "Investigators have described Allen\'s alleged intentions as particularly chilling, saying he wanted to kill as many high-level officials as possible — not only the president. Federal authorities are examining Allen\'s online presence, including a Bluesky account under the handle 'coldforce,' which promoted liberal political views that investigators say did not stand out on the left-leaning platform. The digital trail is expected to play a central role in establishing motive as prosecutors build their case.",
+      "The Secret Service and broader law enforcement community are now under intense scrutiny over how Allen allegedly got as close as he did to the president and other senior officials at such a high-profile event. White House press secretary Karoline Leavitt told reporters Monday that the administration is conducting a full security review, stating, 'If adjustments need to be made to protect the president, they will be made.' Rep. Jason Crow (D-Colo.), ranking member of a bipartisan House task force that had previously investigated two 2024 assassination attempts against Trump, formally requested answers from the Trump administration and the Secret Service regarding what security recommendations had been implemented — and which had not.",
+      "The shooting has reignited a heated national conversation about political violence and its escalating prevalence in American public life. NPR has reported that in its aftermath, more people on the political left are being drawn toward conspiracy theories about the event\'s circumstances, a trend observers say reflects the deepening mistrust of institutions across the ideological spectrum. White House Correspondents' Association dinner attendee Erika Kirk described Saturday\'s events as 'yet another traumatic example of the evil in our country and the continued rise in political violence,' calling on political leaders and the public to take stock of the increasingly dangerous climate.",
+      "The incident has also resurfaced broader questions about the security infrastructure surrounding not just the president but the wide array of government officials, journalists, and public figures who attend events like the WHCA dinner each year. The dinner, traditionally a lighthearted evening blending media and political worlds, has long been considered a relatively accessible Washington institution — a quality that now sits in sharp tension with the security demands of a politically volatile era. As the criminal case against Allen proceeds, Washington is left grappling with how to balance the openness that defines democratic civic life with the increasingly urgent imperative to protect those who participate in it.",
     ],
-    image: "https://static01.nyt.com/images/2026/04/26/multimedia/26wwk-wchd-suspect-hpwb/26wwk-wchd-suspect-hpwb-mediumSquareAt3X.jpg",
-    source: "NPR",
-    sourceUrl: "https://www.npr.org/2026/04/26/nx-s1-5800124/whcd-shooting-investigation-underway-heres-what-we-know"
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/c50b/live/f5be4960-42ad-11f1-ac78-2112837ce2aa.jpg",
+    source: "BBC News",
+    sourceUrl: "https://www.bbc.com/news/articles/cew7wez72vxo?at_medium=RSS&at_campaign=rss"
   },
   secondary: [
     {
       id: "us1",
-      title: "Security Protocols Under Fire: WHCA Dinner Lacked Top Federal Security Designation",
-      summary: "Despite the presence of the president and numerous cabinet members, the White House Correspondents' Dinner was not granted the highest security status that would have unlocked full federal resources.",
+      title: "DeSantis Proposes Florida Redistricting Map to Gain Four More GOP House Seats",
+      summary: "Florida Governor Ron DeSantis has unveiled a new redistricting map designed to deliver Republicans four additional seats in the U.S. House of Representatives.",
       body: [
-        "The Washington Post revealed that Saturday\'s White House Correspondents' Dinner, attended by President Trump and a large contingent of senior cabinet officials, was not classified at the highest federal security level, a designation that would have dramatically expanded the law enforcement footprint at the event. Former Secret Service officials told The Hill that the concentration of so many officials in the line of succession at a single public venue without maximum protections represents a significant strategic risk that the administration should now urgently reassess.",
-        "The revelation has intensified congressional and public debate about how security resources are allocated for high-profile political and media events, and whether the traditionally press-focused nature of the correspondents' dinner has historically led organizers and officials to underestimate its security requirements. Experts say the incident will likely prompt a fundamental review of how such gatherings are planned and protected going forward."
+        "Governor Ron DeSantis has proposed a sweeping new congressional map for Florida that, if enacted, would significantly expand Republican representation in the U.S. House by targeting four currently competitive or Democratic-leaning districts. The proposal is the latest salvo in an intensifying national redistricting battle, as both major parties maneuver aggressively ahead of the 2026 midterm elections to lock in structural advantages across key states.",
+        "Florida has been a recurring flashpoint in redistricting fights, with DeSantis having previously clashed with the state legislature and courts over map-drawing. The new proposal underscores how governors and state legislatures are increasingly treating redistricting as a direct tool of federal political strategy, with the balance of power in the House potentially hinging on the outcome of these state-level decisions."
       ],
-      image: "https://images.pexels.com/photos/19813740/pexels-photo-19813740.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      source: "Washington Post",
-      url: "https://www.washingtonpost.com/politics/2026/04/26/white-house-correspondents-dinner-security-status/",
+      image: "https://images.unsplash.com/photo-1704236600122-56a1401023d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxEZVNhbnRpcyUyMFByb3Bvc2VzJTIwRmxvcmlkYSUyMFJlZGlzdHJpY3RpbmclMjBNYXAlMjB0byUyMEdhaW4lMjBGb3VyJTIwTW9yZSUyMEdPUCUyMEhvdXNlJTIwU2VhdHN8ZW58MHwwfHx8MTc3NzM1MjU3N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "NPR",
+      url: "https://www.npr.org/2026/04/27/nx-s1-5797890/desantis-new-map-for-florida-seeks-to-give-the-gop-4-more-house-seats",
       category: "Politics"
     },
     {
       id: "us2",
-      title: "Who Is Cole Allen? Profile of the Suspected WHCA Dinner Shooter Emerges",
-      summary: "The 31-year-old California teacher and engineer suspected of the White House Correspondents' Dinner shooting is described by those who knew him as an ordinary, intelligent person, even as his writings revealed deep political grievances.",
+      title: "House May Scrap DHS Funding Bill, Threatening Extended Agency Shutdown",
+      summary: "House Speaker Mike Johnson signaled the chamber may abandon a Senate-passed DHS funding bill over provisions he says would undermine immigration enforcement operations.",
       body: [
-        "Cole Tomas Allen, the man identified by authorities as the suspect in Saturday\'s shooting, was known to students he mentored in Southern California as 'very smart' and presented publicly as a completely average individual, making the alleged attack all the more shocking to those in his community. Investigators say Allen sent a message to family members before the event stating his intention to target Trump administration officials, and that a written document recovered from him elaborated on his grievances and potential targets.",
-        "The case highlights the ongoing challenge for law enforcement in identifying so-called 'lone actor' threats — individuals who display few outward warning signs but harbor strong ideological motivations. Allen is scheduled to appear in court on Monday, where prosecutors are expected to lay out the evidence underpinning the charges against him as the investigation continues."
+        "Speaker Mike Johnson said Monday that the House is considering scrapping a Senate funding bill for the Department of Homeland Security, citing what he called 'problematic language' that he argued would effectively 'orphan' the agency\'s immigration operations at a critical moment. The standoff raises the prospect of an extended shutdown at DHS, which oversees border enforcement, immigration courts, and a wide range of national security functions.",
+        "The impasse reflects the continuing tensions between the Republican-controlled House and Senate over immigration policy, even within the same party, as hardliners in the House push for stricter conditions on any funding agreement. A prolonged DHS shutdown would carry significant political and operational consequences, potentially disrupting deportation proceedings and other enforcement activities that the Trump administration has made central to its domestic agenda."
       ],
-      image: "https://images.unsplash.com/photo-1776079614815-22bc8a11bd5f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxXaG8lMjBJcyUyMENvbGUlMjBBbGxlbiUzRiUyMFByb2ZpbGUlMjBvZiUyMHRoZSUyMFN1c3BlY3RlZCUyMFdIQ0ElMjBEaW5uZXIlMjBTaG9vdGVyJTIwRW1lcmdlc3xlbnwwfDB8fHwxNzc3MjY2MTg0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "NPR",
-      url: "https://www.npr.org/2026/04/26/g-s1-118826/cole-allen-suspected-white-house-correspondents-dinner-shooter-profile",
+      image: "https://images.unsplash.com/photo-1741281843991-05a190e31057?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxIb3VzZSUyME1heSUyMFNjcmFwJTIwREhTJTIwRnVuZGluZyUyMEJpbGwlMkMlMjBUaHJlYXRlbmluZyUyMEV4dGVuZGVkJTIwQWdlbmN5JTIwU2h1dGRvd258ZW58MHwwfHx8MTc3NzM1MjU3N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "The Washington Post",
+      url: "https://www.washingtonpost.com/politics/2026/04/27/house-immigration-funding-dhs-shutdown/",
       category: "Politics"
     },
     {
       id: "us3",
-      title: "Georgia Senate GOP Primary Heats Up as Carter and Collins Clash in Debate",
-      summary: "Republican congressmen Buddy Carter and Mike Collins traded sharp attacks at a Georgia Senate GOP primary debate on Sunday, one day before early voting begins in the competitive race.",
+      title: "Supreme Court Hears Arguments on Labeling Requirements for Roundup Weed Killer",
+      summary: "The Supreme Court heard oral arguments over how health risks of the widely used herbicide Roundup must be disclosed, a ruling that could affect tens of thousands of lawsuits against manufacturer Bayer.",
       body: [
-        "Representatives Buddy Carter and Mike Collins dominated the exchanges at Sunday\'s Georgia Senate Republican primary debate, trading pointed barbs over their records and fitness for the Senate seat, while former college football coach Derek Dooley largely sought to position himself above the fray as a fresh-faced outsider candidate. The five-way field also includes former Senate candidate John Coyne and retired Brigadier General Jonathan McColumn, all vying for the GOP nomination to challenge Democratic incumbent Senator Jon Ossoff in what is expected to be one of the most competitive Senate races of the 2026 cycle.",
-        "The debate comes at a critical moment, with early voting opening Monday and the outcome of the primary carrying major implications for Republican efforts to expand their Senate majority. Georgia has remained a closely contested battleground since Ossoff\'s narrow 2021 victory, and national Republican strategists are watching the primary closely to assess which candidate offers the strongest path to flipping the seat."
+        "The Supreme Court took up a closely watched case Monday examining whether federal law preempts state-level requirements that Roundup\'s maker warn consumers about the weed killer\'s alleged links to cancer. The outcome could determine the fate of tens of thousands of pending lawsuits against Bayer, which acquired Roundup\'s original manufacturer Monsanto, and has already paid billions in settlements over the product.",
+        "The case sits at the intersection of federal regulatory authority, corporate liability, and consumer protection law — all politically charged areas in the current judicial and legislative environment. A ruling in Bayer\'s favor could dramatically curtail future litigation, while a decision upholding state warning requirements would expose the company to continued and potentially mounting legal exposure across the country."
       ],
-      image: "https://thehill.com/wp-content/uploads/sites/2/2026/04/AP26116782967184-e1777247822161.jpg?w=900",
-      source: "The Hill",
-      url: "https://thehill.com/homenews/campaign/5850187-gop-primary-georgia-senate-race/",
-      category: "Elections"
+      image: "https://images.unsplash.com/photo-1683316924890-6a8c5ab10d29?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTdXByZW1lJTIwQ291cnQlMjBIZWFycyUyMEFyZ3VtZW50cyUyMG9uJTIwTGFiZWxpbmclMjBSZXF1aXJlbWVudHMlMjBmb3IlMjBSb3VuZHVwJTIwV2VlZCUyMEtpbGxlcnxlbnwwfDB8fHwxNzc3MzUyNTc4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "NPR",
+      url: "https://www.npr.org/2026/04/27/nx-s1-5793804/supreme-court-monsanto-roundup-arguments",
+      category: "Politics"
     }
   ]
 };

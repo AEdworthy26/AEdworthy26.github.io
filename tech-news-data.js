@@ -1,61 +1,61 @@
 // tech-news-data.js
-// Auto-updated 2026-04-27 — do not edit manually
+// Auto-updated 2026-04-28 — do not edit manually
 
 var TECH_NEWS = {
-  date: "2026-04-27",
+  date: "2026-04-28",
   main: {
-    title: "UK Cyber Chiefs Urge Nation to Abandon Passwords in Favour of Passkeys",
-    category: "Cybersecurity",
+    title: "Musk vs. Altman: The OpenAI Trial That Could Reshape the Future of Artificial Intelligence",
+    category: "Artificial Intelligence",
     content: [
-      "The United Kingdom\'s National Cyber Security Centre (NCSC) has issued a landmark recommendation urging individuals and organisations across the country to move away from traditional passwords and adopt passkeys as their primary method of securing online accounts. The guidance marks one of the most significant shifts in mainstream cybersecurity advice in decades, reflecting a growing consensus among experts that the password — long the default gatekeeper of our digital lives — is fundamentally ill-suited to the modern threat landscape. The NCSC\'s endorsement carries considerable weight, as the agency serves as the UK\'s foremost authority on digital security and advises both government bodies and private enterprises on best practices.",
-      "Passkeys represent a fundamentally different approach to authentication, replacing the familiar string of characters with a cryptographic key pair that is unique to each user and each service. When a user registers with a website or app using a passkey, a private key is stored securely on their device — whether a smartphone, laptop, or hardware token — while a corresponding public key is held by the service. Authentication is then completed through biometrics such as a fingerprint or facial recognition, or a device PIN, meaning there is no password to steal, guess, or leak in a data breach.",
-      "The move comes as password-related security failures continue to be the root cause of a staggering proportion of cyberattacks globally. Credential stuffing, phishing campaigns, and brute-force attacks all rely on the exploitability of passwords, and despite years of advice urging users to create long, unique passwords for every account and store them in a password manager, compliance rates remain worryingly low. Passkeys sidestep these human-factor vulnerabilities entirely, since they cannot be reused across sites, cannot be phished in the traditional sense, and are never transmitted over the internet in a form that could be intercepted.",
-      "Major technology platforms have been quietly laying the groundwork for passkey adoption for several years, with Apple, Google, and Microsoft all integrating passkey support into their operating systems and browsers as part of the FIDO2 standard. Consumers who use services from these companies may already have encountered passkey prompts without fully understanding what they were agreeing to. The NCSC\'s public-facing campaign is designed to demystify the technology and accelerate uptake among everyday users who might otherwise be reluctant to change long-established habits, with plain-language explainers accompanying the technical guidance.",
-      "The shift to passkeys is not without its challenges. Users who switch between devices from different ecosystems — for example, an Android phone and a Windows laptop — may encounter friction, and legacy systems at banks, government portals, and smaller businesses may take years to fully support the standard. There are also accessibility considerations for users who struggle with biometric authentication. Nevertheless, the NCSC\'s endorsement signals that the cybersecurity establishment believes the benefits decisively outweigh the transitional difficulties, and the agency has urged service providers to begin implementing passkey support as a matter of priority in order to protect their users from the ever-escalating tide of credential-based attacks."
+      "A courtroom in Oakland, California, has become the unlikely epicenter of Silicon Valley\'s most consequential legal battle, as Elon Musk and Sam Altman squared off Monday in a trial that cuts to the very heart of how artificial intelligence will be developed and governed. Musk, who co-founded OpenAI alongside Altman and others in 2015, alleges that Altman committed fraud by steering the organization away from its original nonprofit mission and toward a for-profit structure designed to enrich insiders. The lawsuit represents the culmination of a years-long public feud between two of the most powerful figures in the technology industry, and its outcome could have sweeping consequences for OpenAI\'s planned corporate conversion.",
+      "At the center of the dispute is a foundational question: what exactly did the original founders of OpenAI agree to, and does Altman\'s transformation of the company into a for-profit enterprise constitute a betrayal of those commitments? Musk contends that the founding agreement was clear — OpenAI was to remain a nonprofit dedicated to ensuring that artificial general intelligence benefits all of humanity, not a vehicle for private profit. OpenAI and Altman have pushed back forcefully, arguing that Musk is driven not by principle but by jealousy and competitive self-interest, particularly given that his own AI company, xAI, is a direct commercial rival.",
+      "The trial is expected to be complicated by Musk\'s own shifting public statements on AI safety and development over the years. Attorneys for OpenAI are likely to highlight moments where Musk\'s rhetoric on the dangers of AI has appeared to contradict his simultaneous push to accelerate AI development through xAI, potentially undermining the narrative that his lawsuit is a principled stand rather than a strategic maneuver. Legal observers note that Musk\'s credibility as a witness will be a central battleground, and that his well-documented history of provocative public statements could be weaponized against him in court.",
+      "The stakes extend well beyond the personal animosity between the two men. OpenAI has been working toward a restructuring that would convert it into a fully for-profit public benefit corporation, a move that would allow it to raise virtually unlimited capital and potentially go public. A ruling in Musk\'s favor could block or significantly complicate that transition, leaving the company\'s long-term funding strategy in jeopardy at a moment when the AI arms race demands enormous capital investment. Conversely, a decisive win for Altman and OpenAI would remove a major legal obstacle and accelerate the company\'s march toward commercial dominance in the AI sector.",
+      "The trial has already drawn enormous attention from the broader technology industry, with executives, investors, and AI researchers watching closely for signals about how courts will treat the governance structures of AI organizations. The case raises novel legal questions about the enforceability of founding agreements in the nonprofit technology space and about what obligations attach to organizations that begin with an explicitly altruistic mission before pivoting toward profit. Whatever the verdict, the Musk-Altman trial is set to leave a lasting mark on how the next generation of transformative technology companies are built, governed, and held accountable."
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/7683/live/03337050-3fd6-11f1-aec8-9b10f844369d.jpg",
-    source: "BBC News",
-    sourceUrl: "https://www.bbc.com/news/articles/cq8wnzly5j5o?at_medium=RSS&at_campaign=rss"
+    image: "https://cdn.arstechnica.net/wp-content/uploads/2026/04/elon-and-sam-are-bffs-1152x648.jpg",
+    source: "The Guardian",
+    sourceUrl: "https://www.theguardian.com/technology/2026/apr/27/elon-musk-sam-altman-open-ai-lawsuit"
   },
   secondary: [
     {
       id: "tc1",
-      title: "Musk vs. Altman: OpenAI Founding Battle Heads to Court in Oakland",
-      summary: "Elon Musk\'s lawsuit against Sam Altman and OpenAI goes to trial this week, with the case set to expose the bitter behind-the-scenes conflict over the company\'s founding mission and its pivot to a for-profit model.",
+      title: "Microsoft and OpenAI End Exclusive Partnership, Opening Door to Amazon and Others",
+      summary: "OpenAI has amended its landmark deal with Microsoft, ending an exclusivity arrangement that will now allow OpenAI\'s models to run on competing cloud platforms including Amazon Bedrock.",
       body: [
-        "The legal showdown between Elon Musk and Sam Altman is finally arriving in a courtroom in Oakland, California, with Musk alleging that Altman broke the founding agreement that established OpenAI as a non-profit dedicated to the benefit of humanity rather than commercial gain. The trial is expected to feature testimony from some of Silicon Valley\'s most prominent figures and could have sweeping implications for how AI companies are structured and governed going forward.",
-        "The case cuts to the heart of tensions that have long simmered in the AI industry over whether safety-focused, mission-driven organisations can survive the enormous capital demands of frontier AI development without compromising their original ideals. A ruling against OpenAI could force significant structural changes at one of the world\'s most influential technology companies at a critical moment in the AI race."
+        "In a significant shift in the architecture of the AI industry, OpenAI and Microsoft have renegotiated their partnership to remove the exclusive licensing arrangement that had long made Microsoft the sole major cloud provider for OpenAI\'s powerful models. The amended agreement means that OpenAI\'s technology can now be deployed through Amazon Web Services' Bedrock platform, potentially unlocking major new revenue streams and a broader customer base for the AI lab.",
+        "The move signals a maturing of the relationship between OpenAI and its biggest financial backer, as OpenAI seeks greater commercial independence ahead of its planned corporate restructuring. For Microsoft, the arrangement still ensures continued access to OpenAI\'s cutting-edge models, while the loosened terms reflect the evolving competitive dynamics of a cloud AI market that has grown far more crowded since the two companies first struck their landmark deal."
       ],
-      image: "https://i.guim.co.uk/img/media/e58e6018ecf5d31f073cbecec654aa2d8ffd0a7b/0_0_3000_2400/master/3000.jpg?width=1200&quality=85&auto=format&fit=max&s=a9504195b92112a7533193b714caab5f",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/technology/2026/apr/26/musk-altman-openai-court",
+      image: "https://cdn.arstechnica.net/wp-content/uploads/2024/12/GettyImages-2153474326-1024x648.jpg",
+      source: "Ars Technica",
+      url: "https://arstechnica.com/ai/2026/04/no-longer-exclusive-microsoft-agrees-to-let-openai-see-other-cloud-providers/",
       category: "Artificial Intelligence"
     },
     {
       id: "tc2",
-      title: "Met Police Investigates Hundreds of Officers After Palantir AI Surveillance Tool Uncovers Rule-Breaking",
-      summary: "London\'s Metropolitan Police has launched investigations into hundreds of its own officers after deploying an AI tool built by Palantir to monitor staff data and identify misconduct ranging from work-from-home violations to suspected corruption.",
+      title: "China Blocks Meta\'s $2 Billion Acquisition of AI Start-Up Manus",
+      summary: "Chinese regulators have ordered Meta to unwind its $2 billion acquisition of AI start-up Manus, delivering a significant blow to the social media giant\'s AI ambitions and sending a chilling signal to Chinese tech founders.",
       body: [
-        "The Metropolitan Police\'s use of Palantir\'s AI software over the course of a single week resulted in the identification of a wide spectrum of alleged rule-breaking among its own ranks, prompting a wave of internal investigations that has sent shockwaves through the force. The deployment highlights the growing willingness of law enforcement agencies to turn the surveillance tools typically aimed outward at the public inward upon their own personnel.",
-        "The use of Palantir — a company that has itself been the subject of considerable controversy over civil liberties concerns — to police the police raises profound questions about oversight, consent, and the appropriate scope of AI-powered workplace monitoring, even within institutions that operate under special public-trust obligations. Critics have warned that normalising such tools internally could accelerate their use in broader public surveillance contexts."
+        "After months of regulatory scrutiny, Chinese authorities have formally blocked Meta\'s $2 billion deal to acquire Manus, an AI start-up that had attracted widespread attention for its autonomous agent capabilities. The ruling requires Meta to unwind the acquisition entirely, representing one of the most high-profile instances of Chinese regulators intervening to block a foreign takeover of a domestically rooted AI company.",
+        "The decision carries implications well beyond the two companies involved, potentially discouraging future partnerships between Chinese AI talent and major Western technology firms at a moment of intense geopolitical competition over artificial intelligence. Analysts suggest the ruling reflects Beijing\'s broader strategy to retain strategic AI assets within China\'s domestic technology ecosystem, even as it complicates the exit paths available to Chinese start-up founders seeking international investment."
       ],
-      image: "https://i.guim.co.uk/img/media/1eeacbb3ed233aa92023d96822d37378c6bc54b4/348_0_3960_3168/master/3960.jpg?width=1200&quality=85&auto=format&fit=max&s=360840a1c2456b78a65194d80f3f9554",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/uk-news/2026/apr/25/met-police-investigates-hundreds-officers-palantir-ai-tool",
+      image: "https://images.pexels.com/photos/31770625/pexels-photo-31770625.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      source: "BBC News",
+      url: "https://www.bbc.com/news/articles/cj0v0gr2yz7o?at_medium=RSS&at_campaign=rss",
       category: "Artificial Intelligence"
     },
     {
       id: "tc3",
-      title: "New Robotic Control Software Lets Robots Learn From Each Other Across Different Hardware",
-      summary: "Researchers have developed a breakthrough robotic control system that prevents joint jamming and allows robots with entirely different physical configurations to share and transfer learned behaviours.",
+      title: "Widely-Used Open Source Package With One Million Monthly Downloads Found Stealing User Credentials",
+      summary: "A popular open source software package called element-data, downloaded over one million times per month, has been discovered to contain malicious code designed to steal user credentials.",
       body: [
-        "A newly published robotic control framework is drawing attention for solving one of the persistent practical headaches of real-world robotics: the tendency of robotic joints to jam or overextend during complex tasks, particularly when machines are operating in unstructured environments. The software, described as providing 'kinematic intelligence,' teaches robots to understand and respect the physical limits of their own bodies in a more adaptive way than previous approaches allowed.",
-        "Perhaps more significantly, the system enables knowledge transfer between robots that have different underlying hardware, meaning a lesson learned by one robotic platform can be shared with and applied by a machine of an entirely different design. This capability could dramatically accelerate the pace at which robotic systems become practically useful across industries, reducing the need to train each new robot model entirely from scratch."
+        "Security researchers have uncovered a serious supply chain attack embedded within element-data, an open source package with a massive user base of over one million monthly downloads, which was found to be secretly harvesting and exfiltrating user credentials. The discovery underscores the persistent and growing threat posed by malicious code hidden within the open source software ecosystem, where developers routinely incorporate third-party packages into their projects with limited ability to audit every dependency.",
+        "Users and organizations relying on element-data are being urged to immediately audit their systems for signs of compromise and to rotate any credentials that may have been exposed. The incident is the latest in a string of high-profile supply chain attacks targeting the open source community, renewing calls for stronger verification and security scanning standards across major package repositories."
       ],
-      image: "https://cdn.arstechnica.net/wp-content/uploads/2026/04/GettyImages-1455924520-1152x648.jpg",
+      image: "https://cdn.arstechnica.net/wp-content/uploads/2025/06/browser-security-threat-1152x627.jpg",
       source: "Ars Technica",
-      url: "https://arstechnica.com/science/2026/04/kinematic-intelligence-helps-robots-learn-their-limits/",
-      category: "Robotics"
+      url: "https://arstechnica.com/security/2026/04/open-source-package-with-1-million-monthly-downloads-stole-user-credentials/",
+      category: "Cybersecurity"
     }
   ]
 };

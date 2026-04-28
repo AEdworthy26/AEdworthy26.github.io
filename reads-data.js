@@ -1,19 +1,19 @@
 // reads-data.js
-// Auto-updated 2026-04-27 — do not edit manually
+// Auto-updated 2026-04-28 — do not edit manually
 
 var READS_DATA = {
-  date: "2026-04-27",
+  date: "2026-04-28",
   book: {
-    title: "The Diving Bell and the Butterfly",
-    author: "Jean-Dominique Bauby",
-    year: 1997,
-    genres: ["Memoir", "Literary Nonfiction", "Philosophy"],
-    desc: "In 1995, Jean-Dominique Bauby — editor-in-chief of French Elle — suffered a massive stroke that left him with locked-in syndrome, paralysed entirely except for his left eyelid. He dictated this astonishing memoir by blinking as an assistant recited the alphabet, letter by painstaking letter. The result is not a tragedy but something closer to a prose poem: funny, sensual, achingly precise about memory, imagination, and what it means to be alive inside a body that refuses to obey. At barely 130 pages it can be read in a single sitting, yet it expands in the mind long afterwards, asking the most fundamental questions about consciousness and desire with a lightness that never tips into sentimentality.",
-    whyRead: "In a noisy, distracted moment in time, Bauby\'s radical act of attention — making beauty out of the barest available means — feels like both a rebuke and an invitation to look more carefully at everything you still can.",
-    rating: 4.2,
+    title: "The Immortal Life of Henrietta Lacks",
+    author: "Rebecca Skloot",
+    year: 2010,
+    genres: ["Science", "Biography", "Social Justice"],
+    desc: "In 1951, a Black tobacco farmer named Henrietta Lacks had cancer cells taken from her body without her knowledge — cells that would become one of the most important tools in modern medicine, used to develop the polio vaccine, cancer research, and countless other breakthroughs. Rebecca Skloot weaves together two riveting narratives: the extraordinary scientific story of HeLa cells and their global impact, and the deeply human story of the Lacks family, who lived in poverty while corporations profited from Henrietta\'s biology for decades. The book raises urgent questions about medical ethics, race, class, and bodily autonomy that feel more alive than ever in an era of genetic data, biotech patents, and AI-driven medicine. Skloot spent ten years reporting this story, and the result is a page-turning work of narrative nonfiction that reads with the grip of a thriller while carrying genuine moral weight.",
+    whyRead: "With biotechnology and personal genomics reshaping what it means to own your own body, Henrietta Lacks\'s story is not a historical footnote — it\'s a live wire running straight into the present.",
+    rating: 4.3,
     ratingSource: "Goodreads",
-    ratingCount: "120,000+",
-    coverUrl: "https://covers.openlibrary.org/b/id/12191257-L.jpg",
-    amazonUrl: "https://www.amazon.co.uk/dp/0007384912"
+    ratingCount: "700,000+",
+    coverUrl: "https://covers.openlibrary.org/b/id/8364866-L.jpg",
+    amazonUrl: "https://www.amazon.co.uk/dp/0330533444"
   }
 };

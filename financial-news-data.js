@@ -1,61 +1,61 @@
 // financial-news-data.js
-// Auto-updated 2026-04-27 — do not edit manually
+// Auto-updated 2026-04-28 — do not edit manually
 
 var FINANCIAL_NEWS = {
-  date: "2026-04-27",
+  date: "2026-04-28",
   main: {
-    title: "Wall Street Braces for Historic Week as Oil Volatility, Mega-Cap Earnings, and Powell\'s Final Fed Meeting Converge",
-    category: "Markets",
+    title: "Shell Strikes $16.4bn Deal to Acquire Canadian Shale Producer ARC Resources",
+    category: "Mergers & Acquisitions",
     content: [
-      "Wall Street is heading into one of the most consequential weeks in recent memory, with U.S. stock-index futures mixed on Sunday as oil prices continued to climb against a backdrop of stalled Iran peace negotiations. The S&P 500 and the Nasdaq have recently hit record highs, but investors are now navigating a complex web of geopolitical risk and corporate earnings uncertainty. The combination of energy market turbulence and a packed calendar of financial events has traders on edge heading into Monday\'s open.",
-      "Wednesday alone is being dubbed 'Wall Street\'s Super Bowl' as Alphabet, Amazon, Microsoft, and Meta are all scheduled to report quarterly earnings on the same day — an extraordinary convergence of mega-cap results that will offer a sweeping read on the health of the technology sector and the broader economy. The results will be scrutinized for signs of how elevated energy costs and shifting consumer sentiment are feeding through to corporate bottom lines. Any guidance on capital expenditure, particularly around artificial intelligence infrastructure, will be closely watched by analysts who have tied much of the market\'s recent bull run to AI investment narratives.",
-      "Adding to Wednesday\'s significance is the Federal Reserve\'s policy meeting and what will be Jerome Powell\'s final press conference as Chair, as Kevin Warsh awaits a key Senate committee vote following assurances given to Senator Thom Tillis by federal prosecutors. The transition at the Fed\'s helm introduces an additional layer of uncertainty for bond and currency markets at a moment when inflation risks from rising oil prices are already complicating the rate outlook. Markets will be parsing Powell\'s final remarks for any signals about the Fed\'s trajectory under new leadership, and whether the central bank is prepared to tolerate higher energy-driven inflation or will feel pressure to act.",
-      "Oil prices rose sharply after the Trump administration cancelled plans to send negotiators to Pakistan for Iran peace talks, only to pare some of those gains after reports emerged that Iran had offered a proposal to reopen the Strait of Hormuz. The back-and-forth illustrates just how sensitive energy markets have become to even incremental diplomatic signals, with analysts at Amova Asset Management noting that markets appear to be pricing in a 'sooner rather than later' resolution to the Middle East hostilities. Nevertheless, the risk premium embedded in crude benchmarks remains elevated, and economists warn that sustained high oil prices could feed into core inflation readings over the coming months.",
-      "The broader economic backdrop heading into this week is one of cautious optimism tempered by structural uncertainty. China\'s industrial profits surged in the first quarter, with its metals sector posting its biggest earnings in at least a decade as copper and aluminum prices soared — a dynamic that reflects how the energy shock is creating clear winners and losers across global supply chains. For U.S. investors, the coming week\'s data deluge — earnings, Fed commentary, and ongoing geopolitical developments — will go a long way toward determining whether the recent record highs represent durable strength or a market running ahead of the fundamentals."
+      "Shell has agreed to acquire Canadian shale producer ARC Resources in a deal valued at $16.4 billion, marking the oil and gas giant\'s largest acquisition in nearly a decade. The transaction comprises $13.6 billion in cash and shares, with Shell also assuming ARC\'s existing debt of $2.8 billion. The deal represents a significant strategic pivot for Europe\'s biggest oil and gas producer, which notably exited the US shale business just five years ago.",
+      "The acquisition signals Shell\'s renewed confidence in North American fossil fuel assets at a time when energy security has surged to the top of global agendas. With the Strait of Hormuz closed amid ongoing conflict involving Iran, Western energy majors are under acute pressure to secure alternative supply chains and diversify their production portfolios. Canadian shale, with its relative geopolitical stability and substantial proven reserves, has become an increasingly attractive target for major producers seeking to insulate themselves from Middle Eastern supply disruptions.",
+      "ARC Resources is one of Canada\'s largest independent natural gas producers, with extensive operations in the Montney formation in British Columbia and Alberta — one of the most prolific shale plays in North America. The Montney\'s low-cost structure and proximity to proposed LNG export terminals on Canada\'s Pacific coast make it a strategically compelling asset for Shell, which is actively expanding its global LNG business. The deal would significantly bolster Shell\'s production capacity at a moment when natural gas demand is surging worldwide.",
+      "For Shell shareholders, the acquisition raises familiar questions about capital discipline and returns in a sector that has long struggled to convince investors it can allocate cash wisely. The company will need to demonstrate that the premium paid for ARC is justified by long-term cash flow generation, particularly if energy prices soften once geopolitical tensions ease. Analysts will be watching closely to see whether Shell finances the deal in a way that preserves its dividend trajectory and share buyback programme, both of which have been key pillars of its investor relations strategy in recent years.",
+      "The deal also arrives at a pivotal moment for the broader energy industry, as oil prices have surged following the closure of the Strait of Hormuz, which carries roughly a fifth of global oil and gas supply. While elevated prices may flatter the near-term economics of the acquisition, Shell will be acquiring an asset whose long-term value depends heavily on the trajectory of global energy transition policies and the pace of decarbonisation. The transaction is expected to face regulatory scrutiny in both Canada and key European markets, and its completion timeline remains subject to approvals that could extend well into the second half of 2026."
     ],
-    image: "https://images.mktw.net/im-59469210",
-    source: "MarketWatch",
-    sourceUrl: "https://www.marketwatch.com/story/wall-streets-super-bowl-wednesday-alphabet-amazon-microsoft-and-meta-report-along-with-powells-last-fed-meeting-88eb1710?mod=mw_rss_topstories"
+    image: "https://i.guim.co.uk/img/media/e700c4f98df9c2615a7343a053366ffb3e31ce4d/274_0_3974_3181/master/3974.jpg?width=1200&quality=85&auto=format&fit=max&s=476ea4569c0d4631c6042509535a0440",
+    source: "The Guardian",
+    sourceUrl: "https://www.theguardian.com/business/2026/apr/27/shell-to-buy-canadian-shale-producer-arc-resources-for-164bn"
   },
   secondary: [
     {
       id: "fn1",
-      title: "Iran Proposal to Reopen Hormuz Strait Lifts Stocks, Trims Oil Gains",
-      summary: "Equity markets advanced and oil prices pulled back from session highs after Iran reportedly offered the U.S. a proposal to reopen the strategically critical Strait of Hormuz.",
+      title: "Claire\'s Closes All 154 UK and Ireland Stores with 1,300 Jobs Lost",
+      summary: "The jewellery and accessories chain has shuttered its entire UK and Ireland retail estate, ending three decades on British high streets.",
       body: [
-        "Stocks climbed and oil pared earlier gains on Sunday after a report that Iran had submitted a formal proposal to the United States to reopen the Strait of Hormuz, the narrow waterway through which roughly a fifth of the world\'s seaborne oil passes. The development came just days after Washington cancelled plans to send a negotiating team to Pakistan, a move that had initially sent crude prices sharply higher.",
-        "The episode underscores just how fragile and fluid the situation in the Middle East remains for financial markets, with even unconfirmed diplomatic signals capable of moving oil by several dollars a barrel within hours. Analysts caution that until a durable ceasefire framework is in place, energy price volatility will remain a persistent headwind for equity valuations and inflation forecasts alike."
+        "Claire\'s has closed all 154 of its standalone stores across the UK and Ireland, resulting in the loss of approximately 1,300 jobs after the chain collapsed into administration in January 2026. Staff were instructed to pack up remaining stock and equipment as the final locations ceased trading, drawing a definitive close to the brand\'s 30-year presence on British high streets.",
+        "The collapse of Claire\'s is the latest chapter in the ongoing contraction of traditional retail, as fashion accessories chains continue to struggle against online competition and shifting consumer spending habits. The scale of the job losses underscores the human cost of high street decline, and will add pressure on local authorities and landlords already grappling with rising vacancy rates in town centres across the UK."
       ],
-      image: "https://images.unsplash.com/photo-1775563798442-a1b7e114bff7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxJcmFuJTIwUHJvcG9zYWwlMjB0byUyMFJlb3BlbiUyMEhvcm11eiUyMFN0cmFpdCUyMExpZnRzJTIwU3RvY2tzJTJDJTIwVHJpbXMlMjBPaWwlMjBHYWluc3xlbnwwfDB8fHwxNzc3MjY2MjI3fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "Bloomberg Markets",
-      url: "https://www.bloomberg.com/news/articles/2026-04-26/us-stock-futures-decline-as-iran-talks-stall-markets-wrap",
-      category: "Markets"
+      image: "https://images.unsplash.com/photo-1570203685875-9fd2d165678c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxDbGFpcmUlNUN8ZW58MHwwfHx8MTc3NzM1MjYyMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/business/2026/apr/27/claires-to-close-remaining-uk-stores-on-tuesday-more-than-1000-job-losses",
+      category: "Retail"
     },
     {
       id: "fn2",
-      title: "Chinese Automakers BYD and Geely Position for Global Gains as Oil Shock Accelerates EV Demand",
-      summary: "China\'s two leading electric vehicle manufacturers are capitalising on surging fuel prices and a global pivot away from fossil fuels to expand their international footprints.",
+      title: "Oil Extends Rally as Hormuz Remains Shut; Yen Gains After BOJ Holds Rates",
+      summary: "Global markets drifted as oil prices continued climbing on the back of the Strait of Hormuz closure, while the Bank of Japan kept its policy rate unchanged in a split decision.",
       body: [
-        "BYD, already the world\'s largest electric vehicle maker by volume, has stated publicly that it can thrive without the U.S. market, pointing to growing demand across Europe, Southeast Asia, and Latin America as rising fuel costs make EVs increasingly attractive to consumers worldwide. Rival Geely is also accelerating its export push, adapting its model lineup to rapidly shifting energy price signals in ways that have allowed it to take market share from both domestic competitors and established Western brands.",
-        "The Iran conflict has proved an unexpected accelerant for Chinese EV ambitions, with the spike in oil prices making the total cost of ownership calculus decisively favour electric vehicles in key emerging markets. Industry analysts note that the combination of competitive pricing, improving battery technology, and a global energy price shock could compress the timeline for Chinese brands to claim significant share in markets that were previously dominated by Japanese, European, and American manufacturers."
+        "Oil prices extended their daily rally to the longest streak in a month as no progress emerged on reopening the Strait of Hormuz, sustaining supply fears that have roiled energy markets since the outbreak of conflict involving Iran. Equity markets drifted without clear direction as investors weighed the prolonged disruption to a shipping lane responsible for roughly one-fifth of global oil and gas flows.",
+        "Meanwhile, the Japanese yen edged higher after the Bank of Japan held its policy rate steady in what was described as a split decision among board members, signalling ongoing internal debate about the pace of monetary normalisation. The BOJ\'s cautious stance comes as Japanese policymakers attempt to balance nascent inflationary pressures against the risk of derailing a fragile economic recovery, leaving currency and bond traders on alert for any shift in forward guidance."
       ],
-      image: "https://i.guim.co.uk/img/media/27d8a9ac11e4a75092f87b8da906b5b86577af0e/447_0_4466_3573/master/4466.jpg?width=1200&quality=85&auto=format&fit=max&s=b573bc5eb72017b590aa76477c6b2bd0",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/cy01ele412yo?at_medium=RSS&at_campaign=rss",
-      category: "Business"
+      image: "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/igzhS4H2FnO0/v0/1200x-1.png",
+      source: "Bloomberg",
+      url: "https://www.bloomberg.com/news/articles/2026-04-27/stock-market-today-dow-s-p-live-updates",
+      category: "Markets"
     },
     {
       id: "fn3",
-      title: "China\'s Metals Sector Posts Decade-High Profits as Commodity Prices Surge",
-      summary: "China\'s metals industry recorded its strongest first-quarter earnings in at least ten years, driven by soaring aluminum and copper prices linked to the global energy shock.",
+      title: "Bed Bath & Beyond Posts First Meaningful Sales Growth in Nearly Five Years",
+      summary: "The once-struggling retailer reported its first quarter of significant revenue growth in 19 quarters, sending its stock surging more than 25%.",
       body: [
-        "China\'s metals producers emerged from the first quarter of 2026 with exceptional profitability, as the ripple effects of the Middle East conflict pushed aluminum and copper prices to multi-year highs and handed the sector an unexpected windfall. The gains were broad-based across both ferrous and non-ferrous segments, with companies benefiting both from higher output prices and from strong domestic demand tied to infrastructure spending and the EV supply chain.",
-        "The strong metals results contributed to an acceleration in China\'s overall industrial profit growth for the quarter, though economists caution that the headline figure masks a deepening divide between commodity-exposed industries reaping windfall gains and manufacturers facing squeezed margins from higher energy input costs. The divergence is likely to shape China\'s monetary and fiscal policy calculus in the months ahead as policymakers attempt to support cost-pressured sectors without stoking broader inflationary pressures."
+        "Bed Bath & Beyond\'s shares jumped more than 25% after the company reported what management called its 'first quarter of significant revenue growth in 19 quarters,' offering a rare sign of commercial momentum for a brand that has endured years of decline, bankruptcy, and reinvention. The earnings result caught many investors off guard and sparked fresh interest in the stock, which remains a fraction of its peak meme-era valuation.",
+        "The turnaround narrative, while still fragile, suggests that the relaunched version of the brand may be finding a foothold with consumers, though analysts caution that sustained profitability rather than a single quarter\'s revenue uptick will be the true measure of its revival. The stock\'s outsized single-session move also reflects how thinly followed and lightly owned the company remains, meaning even modest positive surprises can produce dramatic price swings."
       ],
-      image: "https://images.unsplash.com/photo-1671088672646-f3518ba3957e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxDaGluYSU1Q3xlbnwwfDB8fHwxNzc3MjY2MjI3fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "Bloomberg Markets",
-      url: "https://www.bloomberg.com/news/articles/2026-04-27/china-s-metals-industry-racked-up-huge-profits-in-first-quarter",
-      category: "Economics"
+      image: "https://images.mktw.net/im-12711596",
+      source: "MarketWatch",
+      url: "https://www.marketwatch.com/story/bed-bath-beyond-is-seeing-new-life-as-rare-sales-growth-lifts-stock-more-than-30-3e1ee945?mod=mw_rss_topstories",
+      category: "Corporate Earnings"
     }
   ]
 };
