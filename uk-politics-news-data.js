@@ -1,60 +1,60 @@
 // uk-politics-news-data.js
-// Auto-updated 2026-04-28 — do not edit manually
+// Auto-updated 2026-04-29 — do not edit manually
 
 var UK_POLITICS_NEWS = {
-  date: "2026-04-28",
+  date: "2026-04-29",
   main: {
-    title: "Starmer Faces Parliamentary Vote on Inquiry Over Mandelson Vetting Claims",
+    title: "Starmer Survives Labour Rebellion Over Mandelson Inquiry — But Political Capital Takes a Hit",
     category: "Politics",
     content: [
-      "Sir Keir Starmer is facing a deeply uncomfortable day in Parliament as the Conservative Party has forced a vote on whether to launch a formal inquiry into the vetting process that cleared Peter Mandelson for his appointment as UK Ambassador to Washington. Downing Street has dismissed the move as 'a desperate political stunt by the Conservative Party', but the vote nonetheless puts the Prime Minister in an awkward position at a time when questions about the handling of Mandelson\'s security clearance continue to mount. The row threatens to overshadow the government\'s domestic agenda and intensify scrutiny of No 10's conduct in one of its most sensitive diplomatic appointments.",
-      "At the heart of the controversy is testimony relayed to Parliament by a top Foreign Office security official, Ian Collard, who said he 'felt pressure to deliver a rapid outcome' in processing Mandelson\'s vetting clearance due to contacts from Downing Street. Collard has also told MPs that he had not seen the UKSV assessment summary before briefing National Security Adviser Olly Robbins on the clearance — a revelation that has raised serious questions about whether proper procedures were followed. Critics argue that the apparent haste with which Mandelson\'s clearance was processed suggests political interference in a process that is supposed to be independent and rigorous.",
-      "Peter Mandelson, a long-standing figure in Labour politics and a close ally of the Prime Minister, was appointed to the Washington ambassadorship in a move that already attracted attention given his profile and political history. The vetting controversy adds another layer of scrutiny to that decision, with opponents arguing that the government bent its own rules to accommodate a high-profile political ally. The Foreign Office has so far maintained that the process was conducted appropriately, but the emerging testimony from officials has complicated that defence considerably.",
-      "Adding a personal dimension to what has become a politically bruising week, Sir Keir Starmer described his wife Victoria as 'an absolute rock' ahead of the Commons vote, saying she was encouraging him to continue as Prime Minister despite mounting criticism. Sky News has characterised the day as potentially delivering 'a double whammy' to Starmer\'s survival hopes, with the Mandelson vote coinciding with other pressures on the government. The Prime Minister\'s personal resilience is being tested at the same time as his political authority, making this one of the more challenging moments of his premiership to date.",
-      "The vote itself is largely symbolic — the Conservatives do not command a majority in the Commons — but its political significance should not be underestimated. A large rebellion or a closer-than-expected result could further weaken Starmer\'s authority within his own parliamentary party, at a time when questions about his leadership style and judgment are already circulating in Westminster. Whatever the outcome, the Mandelson affair has embedded itself as a recurring problem for the government, one that will continue to demand answers about the relationship between Downing Street, the security services, and the vetting of senior public appointments."
+      "Sir Keir Starmer has survived a significant parliamentary challenge after MPs voted 335 to 223 against a Conservative-led motion that would have sent him before the Privileges Committee over claims he misled Parliament regarding the vetting of Peter Mandelson as UK Ambassador to Washington. The government\'s majority of 112 was enough to see off the motion, but the episode has left deep marks on Downing Street\'s standing with its own backbenchers. Number 10 was forced to deploy its full political weight in the days leading up to the vote, making clear to Labour MPs that backing the motion — or abstaining — would be viewed as a direct act of disloyalty to the leadership.",
+      "The row centres on statements Starmer made in Parliament about the vetting process for Lord Mandelson\'s appointment, specifically whether any pressure had been placed on the Foreign Office to approve the posting. Critics, including senior Conservative MPs, argued that the prime minister\'s account was at odds with what subsequently emerged about the process, and sought a formal parliamentary inquiry to examine whether he had deliberately misled the Commons — an offence that under parliamentary conventions could carry serious constitutional consequences.",
+      "Adding fuel to the controversy, Starmer\'s former top adviser Morgan McSweeney publicly admitted that recommending the Mandelson appointment had been a 'serious mistake', saying the peer had not given the 'full truth' about the nature of his past relationship with convicted sex offender Jeffrey Epstein. McSweeney\'s intervention was a remarkable moment of candour from inside the prime minister\'s own inner circle, and it significantly undermined the government\'s attempts to draw a line under the affair. His comments were seized upon by opposition MPs as evidence that those closest to Starmer had harboured private doubts that were never disclosed to Parliament or the public.",
+      "Despite winning the vote, numerous Labour MPs made clear privately and in some cases publicly that they felt uncomfortable being whipped into defending a position they found difficult to justify. Several warned that the prime minister was 'running out of political capital' and that the episode had eroded trust within the parliamentary party at a time when the government already faces a challenging domestic agenda. The episode is likely to embolden backbenchers who have grown restless over the pace of reform and what some describe as a top-down, control-focused style of government management emanating from Downing Street.",
+      "The Mandelson affair now risks becoming a lingering backdrop to the government\'s programme, with opposition parties unlikely to let the matter drop entirely. The Conservatives and Liberal Democrats will continue to probe inconsistencies in the official account, while Reform UK is expected to use the story as evidence of what it calls establishment double standards. For Starmer, who came to power promising a new era of integrity in government, the prolonged controversy over his most high-profile diplomatic appointment represents an unwelcome and self-inflicted distraction — one that his allies concede has done measurable damage to the image of clean, competent governance he has sought to project."
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/1e58/live/6f4e7b30-422a-11f1-bd52-e755d604ece4.jpg",
+    image: "https://i.guim.co.uk/img/media/6b0b6883246aacfbb62949680c1c2501874ba1a6/459_0_4044_3235/master/4044.jpg?width=1200&quality=85&auto=format&fit=max&s=46976f22415ecd172f2354ab17b4fde7",
     source: "BBC News",
-    sourceUrl: "https://www.bbc.com/news/articles/c3r3r2vzjp1o?at_medium=RSS&at_campaign=rss"
+    sourceUrl: "https://www.bbc.com/news/articles/cze25j9p1k7o?at_medium=RSS&at_campaign=rss"
   },
   secondary: [
     {
       id: "uk1",
-      title: "Lords Warn Reeves\'s Fiscal Buffer Must Be 'Significantly Larger' as Debt Trajectory Alarms Peers",
-      summary: "A House of Lords committee has warned Chancellor Rachel Reeves that her fiscal headroom is dangerously thin and must be substantially increased as UK public debt follows an unsustainable path.",
+      title: "Reform 'Not Racist', Welsh Leader Insists in Heated Senedd Election Debate",
+      summary: "Wales' six main parties clashed in a televised debate less than two weeks before the Senedd election, with Reform Wales defending its record against accusations of racism.",
       body: [
-        "A report from a House of Lords economic committee has concluded that Rachel Reeves and her recent predecessors have left themselves far too little room against their own fiscal rules, calling for a 'significantly larger' buffer to guard against economic shocks. The peers warn that UK public debt is on an unsustainable trajectory, heaping further pressure on the Chancellor following her tax-raising budget last year which was partly aimed at restoring fiscal credibility.",
-        "The findings place Reeves in a difficult position: she has already made politically costly decisions to raise taxes and trim spending, yet independent scrutiny suggests those measures may still be insufficient to put the public finances on a stable long-term footing. The Lords' assessment is likely to fuel debate about whether a further budget intervention will be required before the end of the parliamentary term."
+        "The leaders of Wales' six major parties faced off in a combative television debate as the Senedd election campaign entered its final fortnight, with Reform UK\'s Welsh leader at the centre of controversy after firmly rejecting claims that the party holds racist views. The debate was marked by sharp exchanges on immigration, public services and the Welsh economy, reflecting the high stakes of an election that could dramatically reshape the Senedd\'s political landscape.",
+        "Reform\'s surge in UK-wide polling has made it a significant force in Welsh politics for the first time, and the debate underscored the extent to which the party has disrupted traditional Labour dominance in Wales. The outcome of the Senedd vote is being watched closely at Westminster as an indicator of whether Reform can translate its support into devolved electoral success."
       ],
-      image: "https://images.unsplash.com/photo-1746901252459-9288c6c2f48f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxMb3JkcyUyMFdhcm4lMjBSZWV2ZXMlNUN8ZW58MHwwfHx8MTc3NzM1MjUyNHww&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/business/2026/apr/28/rachel-reevess-fiscal-rules-buffer-should-be-significantly-larger-say-peers",
-      category: "Economics"
+      image: "https://images.unsplash.com/photo-1618236444666-105ec54b5b69?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxSZWZvcm0lMjB8ZW58MHwwfHx8MTc3NzQzODkyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "BBC News",
+      url: "https://www.bbc.com/news/articles/c0r2w79n9w1o?at_medium=RSS&at_campaign=rss",
+      category: "Politics"
     },
     {
       id: "uk2",
-      title: "Half of England\'s Schools Unfit for Purpose Due to Leaks, Mould and Crumbling Infrastructure",
-      summary: "A major survey by the National Association of Head Teachers has found that half of England\'s schools have areas that are out of use or unfit for purpose due to widespread disrepair.",
+      title: "Government Confirms Social Media Restrictions for Under-16s Will Be Introduced",
+      summary: "The education secretary has confirmed that some form of social media age restriction for under-16s will be brought in, after peers ended a parliamentary stand-off with the Commons.",
       body: [
-        "The NAHT poll paints a stark picture of decay in England\'s school estate, with headteachers reporting closures of classrooms and playgrounds caused by leaks, damp, mould, asbestos, ageing boilers and broken fire doors. Facilities for pupils with special educational needs and disabilities (SEND) are among those most severely affected, raising urgent questions about the government\'s commitment to educational equity.",
-        "The findings will increase pressure on ministers to accelerate capital investment in school buildings, an issue that has repeatedly surfaced in recent years following the RAAC concrete crisis that forced emergency closures across the country. With local elections approaching and education ranking high among voter concerns, the survey represents a politically uncomfortable set of findings for the Labour government."
+        "Ministers announced that restrictions on social media use for children under 16 will be introduced regardless of the outcome of a current government consultation, prompting peers in the House of Lords to stand down from their opposition and ending a prolonged legislative stand-off. The education secretary confirmed the commitment in an interview with Sky News, marking a significant step forward for campaigners who have long pushed for tougher online protections for young people.",
+        "The move represents a notable shift in the government\'s position and follows sustained pressure from child safety charities, health professionals and a cross-party group of MPs and Lords. The precise form the restrictions will take remains to be determined, but the commitment to act has been welcomed as an important signal that ministers are prepared to take on the major social media platforms."
       ],
-      image: "https://images.unsplash.com/photo-1618217959076-5c1e8a237db5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxIYWxmJTIwb2YlMjBFbmdsYW5kJTVDfGVufDB8MHx8fDE3NzczNTI1MjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/education/2026/apr/28/ngland-schools-unfit-leaks-mould-unusable-toilets",
+      image: "https://e3.365dm.com/26/03/1920x1080/skynews-social-media-meta-facebook_7202675.jpg?20260325124011",
+      source: "The Independent",
+      url: "https://www.independent.co.uk/news/uk/politics/uk-social-media-ban-under-16-government-peers-b2966689.html",
       category: "Politics"
     },
     {
       id: "uk3",
-      title: "UK to Restrict Social Media Access for Under-16s, Education Minister Confirms",
-      summary: "The UK government has confirmed it will introduce legal restrictions on social media use for children under 16, with an education minister saying some form of age limit will be brought in.",
+      title: "No 10 Dismisses Reeves Rent Freeze Plan as Chancellor Leaves Door Open",
+      summary: "Downing Street has pushed back against reports that Chancellor Rachel Reeves has been considering a freeze on private sector rents as a cost-of-living measure.",
       body: [
-        "The education minister\'s confirmation that social media restrictions for under-16s will become law marks a significant step in the government\'s online safety agenda, moving beyond the existing Online Safety Act framework towards more prescriptive age-based controls. The announcement will be welcomed by child safety campaigners who have long argued that existing measures are insufficient to protect young people from harmful content and addictive platform design.",
-        "The policy places the UK alongside a growing number of countries seeking to legislate limits on children\'s social media use, and is likely to provoke intense debate about implementation, enforcement and the role of technology companies in verifying users' ages. Ministers will face scrutiny over the practical mechanisms by which any age restrictions would actually be enforced at scale."
+        "A Number 10 spokesperson sought to distance the prime minister\'s office from a reported plan by Chancellor Rachel Reeves to freeze private sector rents, saying the government\'s focus would remain on cutting bills, backing renters and reducing energy prices. The dismissal came after the Guardian revealed that the chancellor had been privately examining the option as part of a broader effort to tackle the cost-of-living pressures facing millions of households.",
+        "The public divergence between Downing Street and the Treasury is an unusual moment and highlights tensions within the government over how aggressively to intervene in the housing market. Reeves notably left the door open to the idea in her own public comments, suggesting the matter has not been entirely settled within the Cabinet despite Number 10's firm tone."
       ],
-      image: "https://e3.365dm.com/26/03/1920x1080/skynews-social-media-meta-facebook_7202675.jpg?20260325124011",
-      source: "Sky News",
-      url: "https://news.sky.com/story/social-media-ban-minister-says-some-form-of-age-limit-or-restriction-will-be-brought-in-13537420",
+      image: "https://i.guim.co.uk/img/media/91ecc7350b536dde6d028cb55f9be6440a896fce/145_0_2496_1998/master/2496.jpg?width=1200&quality=85&auto=format&fit=max&s=40082c881028f235163be979374b3f1c",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/politics/2026/apr/28/no-10-dismisses-reeves-reported-plan-for-freeze-on-private-rents",
       category: "Politics"
     }
   ]

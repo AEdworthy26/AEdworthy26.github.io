@@ -1,10 +1,10 @@
 // quiz-data.js
-// Auto-updated 2026-04-28 — do not edit manually
+// Auto-updated 2026-04-29 — do not edit manually
 
 window.QUIZ_DATA = {
-  date: '2026-04-28',
+  date: '2026-04-29',
   category: 'Transport',
-  question: 'Which country operated the world\'s first commercial hovercraft passenger service, launched in 1959?',
-  answer: 'The United Kingdom.',
-  funFact: 'The service ran across the Dee Estuary in Wales, operated by Vickers-Armstrongs using the VA-3 hovercraft. It carried passengers between Rhyl and Wallasey for a few summer months before being withdrawn due to technical issues. The concept was pioneered by British engineer Christopher Cockerell, who famously demonstrated the principle using a cat food tin and a coffee tin.'
+  question: 'The Mallard, the steam locomotive that holds the world speed record for steam traction, achieved its record-breaking run in 1938 — but on which specific stretch of railway line in England did it set that record?',
+  answer: 'Between Grantham and Peterborough, on the East Coast Main Line.',
+  funFact: 'The Mallard hit 126 mph (203 km/h) on 3rd July 1938 while hurtling downhill on Stoke Bank, just south of Grantham. The achievement came at a cost — the locomotive\'s middle big-end bearing overheated badly during the run and had to be repaired afterwards. The record has stood for over 85 years and is considered unbeatable in the steam era.'
 };

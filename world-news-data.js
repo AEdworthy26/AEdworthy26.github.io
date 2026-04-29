@@ -1,61 +1,61 @@
 // world-news-data.js
-// Auto-updated 2026-04-28 — do not edit manually
+// Auto-updated 2026-04-29 — do not edit manually
 
 var WORLD_NEWS = {
-  date: "2026-04-28",
+  date: "2026-04-29",
   main: {
-    title: "Mali in Turmoil as Jihadist Insurgents Seize Towns, Kill Defence Minister and Expose Limits of Russian Influence",
-    category: "Geopolitics",
+    title: "UAE Quits OPEC After Nearly 60 Years, Dealing Potential Death Blow to Oil Cartel",
+    category: "Economics",
     content: [
-      "Mali has been plunged into its deepest crisis in years after a sweeping wave of coordinated attacks by jihadist and separatist rebel forces left the country reeling over the weekend. Fighters linked to the Al Qaeda-affiliated group JNIM — Jama\'at Nusrat al-Islam wal-Muslimin — seized several towns and military bases across the west African nation, in what analysts are describing as one of the most significant militant offensives in recent memory. Among the dead is General Sadio Camara, Mali\'s defence minister and a central pillar of the country\'s ruling military junta, along with the head of military intelligence — losses that strike at the very heart of the Bamako government.",
-      "The scale and audacity of the attacks have sent shockwaves through the region and beyond, raising urgent questions about the stability of a country that has become a focal point for both jihadist expansion and great-power rivalry in the Sahel. JNIM fighters reportedly overran multiple positions with little resistance, seizing equipment and territory before government forces could mount a coherent response. The loss of senior military leadership in a single offensive represents a potentially catastrophic blow to the junta\'s command structure at a moment when it can least afford it.",
-      "Perhaps most consequential on the international stage is what the attacks reveal about the limits of Russia\'s much-vaunted military partnership with Mali. Junta leader Assimi Goïta had made a high-profile visit to the Kremlin last summer, cementing what Moscow presented as a commanding strategic alliance at the expense of France and other western partners, who were expelled from the country in previous years. Russian Wagner Group-linked forces — now operating under the rebranded Africa Corps banner — have been deployed across Mali, yet their presence has plainly failed to deter or contain the kind of large-scale, coordinated assault that unfolded this weekend.",
-      "The crisis in Mali is part of a broader, deeply troubling pattern across the Sahel, where a constellation of jihadist groups has made sustained territorial and operational gains despite years of international military intervention. France\'s decade-long Operation Barkhane, which was wound down after Mali\'s junta demanded the withdrawal of French troops, has been replaced by Russian backing that critics now argue offers firepower and political cover but little genuine counterinsurgency capacity. The weekend\'s events will intensify debate about whether military juntas that have ousted elected governments across the region — in Mali, Burkina Faso, and Niger — are capable of delivering the security they promised their populations.",
-      "For ordinary Malians, the immediate consequences are fear and uncertainty, as armed groups consolidate control over large swathes of territory where state authority has long been tenuous. The international community faces difficult choices: Western governments have limited leverage after being expelled, while the African Union and regional bloc ECOWAS have struggled to find effective diplomatic tools to stabilise the Sahel. With Mali\'s defence and intelligence leadership now decimated in a single offensive, the pressure on Goïta\'s junta to reassess its strategic alliances — and on Russia to demonstrate that its African ambitions amount to more than a geopolitical photo opportunity — has never been greater."
+      "The United Arab Emirates has announced its withdrawal from OPEC, the Organisation of the Petroleum Exporting Countries, ending a membership stretching back almost six decades. The decision marks one of the most significant ruptures in the history of the oil cartel, which has long sought to coordinate production levels among major state-owned producers to stabilise and influence global energy prices. Analysts are already describing the departure as a potential death knell for an organisation whose grip on world oil markets has been visibly weakening for years.",
+      "The UAE has grown increasingly frustrated with OPEC\'s quota system, which Emirati officials have long argued unfairly caps exports relative to the country\'s actual production capacity. Abu Dhabi has invested heavily in expanding its oil infrastructure in recent years, and the quotas imposed by the cartel have prevented it from fully capitalising on those investments. The tension between the UAE\'s ambitions and OPEC\'s collective discipline has been a source of friction for well over a decade, and this departure represents the final breaking point.",
+      "The timing of the announcement is particularly significant, coming as Iran-related strains continue to reverberate through global energy markets. The ongoing US war with Iran has disrupted supply chains and shipping routes in the Persian Gulf, adding a layer of geopolitical volatility that has complicated OPEC\'s ability to manage oil prices with any consistency. In this environment, the UAE appears to have calculated that it stands to gain more from acting independently than from remaining bound by cartel agreements that no longer serve its interests.",
+      "The departure is expected to substantially weaken OPEC\'s influence at a moment when the organisation is already grappling with the long-term pressures of the global energy transition and competition from non-member producers. Saudi Arabia, OPEC\'s dominant member, now faces the prospect of attempting to hold the remaining bloc together without one of its most economically powerful Gulf neighbours. If other members interpret the UAE\'s move as a signal that the cartel\'s authority is terminally diminished, further defections cannot be ruled out.",
+      "For global energy markets, the implications are profound. A UAE free from quota constraints could significantly increase its output, placing downward pressure on oil prices at a time when many producing nations depend on elevated revenues to fund domestic spending. The move also raises fresh questions about the long-term future of multilateral energy governance, and whether any institution will be capable of filling the coordination vacuum left by a weakened OPEC. Energy traders and policymakers around the world will be watching closely to see how Saudi Arabia and the remaining members respond in the days and weeks ahead."
     ],
-    image: "https://i.guim.co.uk/img/media/1fc3e4a0ac65d5bc9bf3f9940db51fea5164e343/700_0_3500_2801/master/3500.jpg?width=1200&quality=85&auto=format&fit=max&s=53ddd903a094a81fec98d45a696d9514",
-    source: "The Guardian",
-    sourceUrl: "https://www.theguardian.com/world/2026/apr/27/mali-attacks-insurgents-seize-towns-kill-defence-minister"
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/d25d/live/b07940f0-4305-11f1-bd52-e755d604ece4.jpg",
+    source: "BBC News",
+    sourceUrl: "https://www.bbc.com/news/articles/cj4pxwlr52yo?at_medium=RSS&at_campaign=rss"
   },
   secondary: [
     {
       id: "s1",
-      title: "ISIS Claims Responsibility for Attack Killing 29 at Football Pitch in North-East Nigeria",
-      summary: "Gunmen killed at least 29 people gathered at a football pitch in Nigeria\'s Adamawa State, with ISIS claiming responsibility for the hours-long assault on Guyaku village.",
+      title: "Somali Piracy Fears Resurge After Three Vessels Hijacked in a Week",
+      summary: "Three ships have been seized off the coast of Somalia in a single week, raising alarm that Somali piracy is making a dangerous comeback as international naval resources are stretched thin by Middle East operations.",
       body: [
-        "The attack on Sunday targeted young people watching or playing football in Guyaku village in Adamawa State, with gunmen descending on the gathering and opening fire in an assault that lasted several hours, according to the state governor. ISIS has since claimed responsibility for the massacre, which also included a separate armed raid on an orphanage in Kogi State, underscoring the breadth of violent unrest sweeping Africa\'s most populous nation.",
-        "The killings are the latest in a continuing wave of deadly violence across Nigeria, where jihadist groups in the north-east, criminal gangs, and communal militias have collectively claimed thousands of lives in recent years. The attack highlights the persistent insecurity in the Lake Chad Basin region, where ISIS West Africa Province has sought to expand its foothold even as international attention has largely shifted elsewhere."
+        "Three vessels have been hijacked in the waters off Somalia within the past week, including the merchant vessel Sward seized on 26 April, reviving fears of a resurgence in piracy around the strategically critical Horn of Africa. Security analysts believe pirates are exploiting a reduction in the regional naval presence as international forces have been redirected to the Middle East in connection with the US-Iran conflict.",
+        "Somali piracy was largely suppressed after a major international naval effort in the early 2010s, but the latest incidents suggest that the conditions enabling it — weakened governance onshore and reduced deterrence at sea — are reasserting themselves. The renewed threat adds further pressure to a global shipping industry already contending with disruption in the Red Sea and Persian Gulf, compounding delays and insurance costs for cargo travelling through some of the world\'s busiest maritime corridors."
       ],
-      image: "https://i.guim.co.uk/img/media/01f2eb7ca053a25d5513df0b96cb8a337dced345/125_0_3750_3000/master/3750.jpg?width=1200&quality=85&auto=format&fit=max&s=534aa4b06c531ed139d10388e964e896",
-      source: "Al Jazeera",
-      url: "https://www.aljazeera.com/news/2026/4/28/gunmen-kill-at-least-29-in-nigerias-northeast-adamawa-state?traffic_source=rss",
+      image: "https://i.guim.co.uk/img/media/c29d72483201cad9e7040f02ba9a4d19431186cc/372_0_861_689/master/861.jpg?width=1200&quality=85&auto=format&fit=max&s=06c43652a093f18cf6058bf35e04a9c0",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/world/2026/apr/28/fears-resurgence-somalia-piracy-three-vessels-hijacked-past-week",
       category: "Security"
     },
     {
       id: "s2",
-      title: "Iran Proposes Strait of Hormuz Deal as Nuclear Talks with US Stall",
-      summary: "Iran has offered to open the strategically vital Strait of Hormuz to shipping and lift a US blockade in exchange for delaying the thornier question of nuclear negotiations.",
+      title: "Russia Claims Africa Corps Foiled Coup in Mali as Rebel Insurgents Seize Towns",
+      summary: "Russia\'s defence ministry says its Africa Corps paramilitary group prevented a coup attempt in Mali after al-Qaida-affiliated insurgents and Tuareg rebels launched coordinated attacks on military bases and seized towns.",
       body: [
-        "Tehran\'s latest diplomatic proposal, delivered on Sunday, seeks to separate the immediate economic pressure of the US blockade from the more complex and contentious nuclear file, offering a sequenced approach that would provide near-term relief while deferring the hardest questions. Iran\'s foreign minister subsequently travelled to Moscow on Monday in a bid to secure Russian political backing and gain additional leverage ahead of any resumed talks with Washington.",
-        "The flurry of Iranian diplomacy comes as the Trump administration reviews the proposal, with the outcome carrying enormous implications for oil markets, regional security, and the future of the global non-proliferation regime. The Strait of Hormuz, through which roughly a fifth of the world\'s oil supply passes, remains one of the most powerful cards in Tehran\'s hand, making any agreement centred on the waterway a matter of acute international concern."
+        "Russia\'s Africa Corps — the successor organisation to the Wagner mercenary group — claims to have repelled a major insurgent offensive in Mali over the weekend, with the Kremlin stating that its forces inflicted 'irreplaceable losses' on rebel fighters while avoiding civilian casualties. The attacks, carried out by JNIM militants and Tuareg fighters, targeted military installations and penetrated into significant urban centres, inflicting serious casualties on Malian government troops.",
+        "The violence underscores the deepening instability across the Sahel, where al-Qaida-affiliated groups have been emboldened by their counterparts' success in Syria and are testing the limits of Mali\'s weakened junta government. Russia\'s increasing military footprint in the region, trading security guarantees for political influence and access to natural resources, means that any further deterioration in Mali directly implicates Moscow\'s strategic ambitions across West Africa."
       ],
-      image: "https://static01.nyt.com/images/2026/04/27/multimedia/27int-iran-peace-proposal-zgkt/27int-iran-peace-proposal-zgkt-mediumSquareAt3X.jpg",
-      source: "The New York Times",
-      url: "https://www.nytimes.com/2026/04/27/world/middleeast/iran-trump-talks-strait-of-hormuz-nuclear.html",
-      category: "Diplomacy"
+      image: "https://i.guim.co.uk/img/media/d03fb17b17e0182f8c3e339197c958523a160ce2/1311_544_2889_2312/master/2889.jpg?width=1200&quality=85&auto=format&fit=max&s=0f5bd0b0f5085e882b9df6f5ce66a0ed",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/world/2026/apr/28/russia-claims-its-africa-corps-group-prevented-coup-in-mali-after-rebels-seize-towns",
+      category: "Conflict"
     },
     {
       id: "s3",
-      title: "Mexico Captures Jalisco Cartel Commander 'El Jardinero' Found Hiding in a Ditch",
-      summary: "Mexican Navy special forces apprehended Jalisco New Generation Cartel commander Audias Flores, known as 'El Jardinero', without firing a single shot after finding him concealed in a ditch.",
+      title: "Ukraine Strikes Russian Oil Refinery for Third Time, Prompting Evacuations Near Tuapse",
+      summary: "A third Ukrainian drone or missile strike on a Russian oil refinery in Tuapse has sparked fires and forced the evacuation of nearby residents, with the Kremlin accusing Kyiv of deliberately destabilising global energy markets.",
       body: [
-        "The Mexican military released footage of the operation, which resulted in the capture of one of the Jalisco New Generation Cartel\'s senior commanders, in what authorities described as a significant blow to one of Latin America\'s most powerful and violent criminal organisations. Special forces located Flores hiding in a ditch, and the Navy stated the entire apprehension was conducted without any shots being fired.",
-        "The CJNG, as the cartel is known, has in recent years expanded its reach across Mexico and into international drug trafficking networks, making the arrest of a senior commander a notable, if incremental, success for Mexican security forces. The capture comes amid sustained pressure from both Mexican authorities and the US government to dismantle the leadership structures of major cartels operating across the country."
+        "Residents living near the Tuapse oil refinery on Russia\'s Black Sea coast have been ordered to evacuate after Ukrainian forces struck the facility for the third time, igniting a large blaze that emergency services have been working to contain. The repeated targeting of the refinery signals a sustained Ukrainian strategy of striking deep into Russian energy infrastructure to impose economic costs and disrupt fuel supplies to the Russian military.",
+        "The Kremlin has condemned the attacks, framing them as an assault not merely on Russian territory but on global energy stability, a characterisation likely aimed at building international pressure against Kyiv\'s long-range strike campaign. The strikes come at a particularly sensitive moment for energy markets already rattled by the UAE\'s OPEC departure and ongoing disruption in the Persian Gulf, adding yet another layer of volatility to the outlook for oil supply."
       ],
-      image: "https://images.unsplash.com/photo-1746640546254-a1cfb485d523?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxNZXhpY28lMjBDYXB0dXJlcyUyMEphbGlzY28lMjBDYXJ0ZWwlMjBDb21tYW5kZXIlMjB8ZW58MHwwfHx8MTc3NzM1MjQ4Mnww&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "Al Jazeera",
-      url: "https://www.aljazeera.com/news/2026/4/28/mexicos-jalisco-drug-cartel-commander-el-jardinero-found-hiding-in-ditch?traffic_source=rss",
-      category: "Security"
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/757a/live/9b97dc60-430e-11f1-bd52-e755d604ece4.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.com/news/articles/cvgzd4qk7qgo?at_medium=RSS&at_campaign=rss",
+      category: "Conflict"
     }
   ]
 };

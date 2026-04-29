@@ -1,61 +1,61 @@
 // tech-news-data.js
-// Auto-updated 2026-04-28 — do not edit manually
+// Auto-updated 2026-04-29 — do not edit manually
 
 var TECH_NEWS = {
-  date: "2026-04-28",
+  date: "2026-04-29",
   main: {
-    title: "Musk vs. Altman: The OpenAI Trial That Could Reshape the Future of Artificial Intelligence",
+    title: "Google Signs Major AI Deal With the Pentagon as Tech Giants Race for Defense Contracts",
     category: "Artificial Intelligence",
     content: [
-      "A courtroom in Oakland, California, has become the unlikely epicenter of Silicon Valley\'s most consequential legal battle, as Elon Musk and Sam Altman squared off Monday in a trial that cuts to the very heart of how artificial intelligence will be developed and governed. Musk, who co-founded OpenAI alongside Altman and others in 2015, alleges that Altman committed fraud by steering the organization away from its original nonprofit mission and toward a for-profit structure designed to enrich insiders. The lawsuit represents the culmination of a years-long public feud between two of the most powerful figures in the technology industry, and its outcome could have sweeping consequences for OpenAI\'s planned corporate conversion.",
-      "At the center of the dispute is a foundational question: what exactly did the original founders of OpenAI agree to, and does Altman\'s transformation of the company into a for-profit enterprise constitute a betrayal of those commitments? Musk contends that the founding agreement was clear — OpenAI was to remain a nonprofit dedicated to ensuring that artificial general intelligence benefits all of humanity, not a vehicle for private profit. OpenAI and Altman have pushed back forcefully, arguing that Musk is driven not by principle but by jealousy and competitive self-interest, particularly given that his own AI company, xAI, is a direct commercial rival.",
-      "The trial is expected to be complicated by Musk\'s own shifting public statements on AI safety and development over the years. Attorneys for OpenAI are likely to highlight moments where Musk\'s rhetoric on the dangers of AI has appeared to contradict his simultaneous push to accelerate AI development through xAI, potentially undermining the narrative that his lawsuit is a principled stand rather than a strategic maneuver. Legal observers note that Musk\'s credibility as a witness will be a central battleground, and that his well-documented history of provocative public statements could be weaponized against him in court.",
-      "The stakes extend well beyond the personal animosity between the two men. OpenAI has been working toward a restructuring that would convert it into a fully for-profit public benefit corporation, a move that would allow it to raise virtually unlimited capital and potentially go public. A ruling in Musk\'s favor could block or significantly complicate that transition, leaving the company\'s long-term funding strategy in jeopardy at a moment when the AI arms race demands enormous capital investment. Conversely, a decisive win for Altman and OpenAI would remove a major legal obstacle and accelerate the company\'s march toward commercial dominance in the AI sector.",
-      "The trial has already drawn enormous attention from the broader technology industry, with executives, investors, and AI researchers watching closely for signals about how courts will treat the governance structures of AI organizations. The case raises novel legal questions about the enforceability of founding agreements in the nonprofit technology space and about what obligations attach to organizations that begin with an explicitly altruistic mission before pivoting toward profit. Whatever the verdict, the Musk-Altman trial is set to leave a lasting mark on how the next generation of transformative technology companies are built, governed, and held accountable."
+      "Google has signed a significant artificial intelligence deal with the United States Department of Defense, marking a major milestone in the growing relationship between Silicon Valley\'s biggest players and the American military. The agreement positions Google as one of several leading AI companies now formally embedded in Pentagon operations, signaling a broader shift in how the U.S. government is approaching the integration of cutting-edge AI into national security infrastructure. The deal underscores how rapidly the competitive landscape for government AI contracts has evolved, with tech giants now openly vying for influence within classified and operational defense networks.",
+      "Google is not alone in securing such an arrangement — the Pentagon has also inked separate deals with OpenAI and Elon Musk\'s xAI to deploy artificial intelligence on classified networks. This cluster of agreements reflects the Department of Defense\'s urgent desire to modernize its capabilities and leverage the most powerful AI systems commercially available. The moves come amid a notable dispute with Anthropic, the AI safety-focused startup, suggesting that not all negotiations between the government and AI firms have proceeded smoothly.",
+      "The Google deal is particularly notable given the company\'s turbulent history with military contracts. In 2018, a significant employee backlash over Project Maven — a Pentagon initiative to use AI for analyzing drone footage — led Google to decline renewing that contract, a decision that reverberated across the industry. The company\'s willingness to re-engage with defense work at this scale represents a substantial strategic reversal, one that reflects both the changed internal culture at Google and the immense financial and geopolitical stakes now attached to AI supremacy.",
+      "For the Pentagon, diversifying its AI partnerships across multiple vendors reduces reliance on any single provider and creates competitive pressure that may accelerate capability development. Having Google, OpenAI, and xAI all operating within defense frameworks simultaneously also raises complex questions about data security, interoperability, and the ethical guardrails that will govern how these systems are used in sensitive or classified contexts. Defense analysts note that the speed of these signings suggests the government is prioritizing capability acquisition over the slower, more deliberate procurement processes that have historically characterized major defense technology decisions.",
+      "The broader implications of these deals extend well beyond the immediate contracts themselves. As AI systems become increasingly central to intelligence analysis, logistics, cybersecurity, and potentially autonomous decision-making in conflict scenarios, the companies that build and maintain those systems will wield extraordinary influence over national security outcomes. Critics and AI ethics advocates are already raising alarms about transparency, accountability, and the long-term consequences of deeply integrating profit-driven AI firms into the machinery of the world\'s most powerful military — a debate that shows no signs of slowing as the contracts continue to multiply."
     ],
-    image: "https://cdn.arstechnica.net/wp-content/uploads/2026/04/elon-and-sam-are-bffs-1152x648.jpg",
-    source: "The Guardian",
-    sourceUrl: "https://www.theguardian.com/technology/2026/apr/27/elon-musk-sam-altman-open-ai-lawsuit"
+    image: "https://static01.nyt.com/images/2026/04/28/multimedia/28biz-google-pentagon-fhzk/28biz-google-pentagon-fhzk-mediumSquareAt3X.jpg",
+    source: "The New York Times",
+    sourceUrl: "https://www.nytimes.com/2026/04/28/technology/google-ai-deal-pentagon.html"
   },
   secondary: [
     {
       id: "tc1",
-      title: "Microsoft and OpenAI End Exclusive Partnership, Opening Door to Amazon and Others",
-      summary: "OpenAI has amended its landmark deal with Microsoft, ending an exclusivity arrangement that will now allow OpenAI\'s models to run on competing cloud platforms including Amazon Bedrock.",
+      title: "Microsoft and OpenAI Restructure Their Partnership, Ending Exclusivity",
+      summary: "Microsoft will continue licensing OpenAI\'s technology but has relinquished its position as the startup\'s exclusive licensee, marking a significant shift in one of tech\'s most consequential partnerships.",
       body: [
-        "In a significant shift in the architecture of the AI industry, OpenAI and Microsoft have renegotiated their partnership to remove the exclusive licensing arrangement that had long made Microsoft the sole major cloud provider for OpenAI\'s powerful models. The amended agreement means that OpenAI\'s technology can now be deployed through Amazon Web Services' Bedrock platform, potentially unlocking major new revenue streams and a broader customer base for the AI lab.",
-        "The move signals a maturing of the relationship between OpenAI and its biggest financial backer, as OpenAI seeks greater commercial independence ahead of its planned corporate restructuring. For Microsoft, the arrangement still ensures continued access to OpenAI\'s cutting-edge models, while the loosened terms reflect the evolving competitive dynamics of a cloud AI market that has grown far more crowded since the two companies first struck their landmark deal."
+        "Microsoft, which has invested billions of dollars into OpenAI and built much of its Copilot AI ecosystem on the startup\'s models, will no longer hold exclusive rights to license OpenAI\'s technology going forward. The loosening of their partnership agreement signals a new phase for both companies, as OpenAI pursues broader commercial relationships and Microsoft seeks to diversify its own AI strategy.",
+        "The change carries significant implications for the competitive AI landscape, potentially allowing OpenAI to strike deeper deals with other major cloud providers and enterprises without restriction. It also reflects the rapidly maturing state of the AI industry, where the tight early-stage alliances that defined the field\'s initial boom are giving way to more complex, multi-party commercial arrangements."
       ],
-      image: "https://cdn.arstechnica.net/wp-content/uploads/2024/12/GettyImages-2153474326-1024x648.jpg",
-      source: "Ars Technica",
-      url: "https://arstechnica.com/ai/2026/04/no-longer-exclusive-microsoft-agrees-to-let-openai-see-other-cloud-providers/",
+      image: "https://static01.nyt.com/images/2025/09/11/multimedia/27BIZ-MICROSOFT-OPENAI/11BIZ-OPENAI-1-qwbf-mediumSquareAt3X.jpg",
+      source: "The New York Times",
+      url: "https://www.nytimes.com/2026/04/27/technology/microsoft-openai-partnership.html",
       category: "Artificial Intelligence"
     },
     {
       id: "tc2",
-      title: "China Blocks Meta\'s $2 Billion Acquisition of AI Start-Up Manus",
-      summary: "Chinese regulators have ordered Meta to unwind its $2 billion acquisition of AI start-up Manus, delivering a significant blow to the social media giant\'s AI ambitions and sending a chilling signal to Chinese tech founders.",
+      title: "Humanoid Robots Set to Take on Baggage Handling Duties at Tokyo\'s Haneda Airport",
+      summary: "Japan Airlines will trial humanoid robots as baggage handlers at Haneda Airport, as Japan looks to robotics to address acute labor shortages driven by a surge in inbound tourism.",
       body: [
-        "After months of regulatory scrutiny, Chinese authorities have formally blocked Meta\'s $2 billion deal to acquire Manus, an AI start-up that had attracted widespread attention for its autonomous agent capabilities. The ruling requires Meta to unwind the acquisition entirely, representing one of the most high-profile instances of Chinese regulators intervening to block a foreign takeover of a domestically rooted AI company.",
-        "The decision carries implications well beyond the two companies involved, potentially discouraging future partnerships between Chinese AI talent and major Western technology firms at a moment of intense geopolitical competition over artificial intelligence. Analysts suggest the ruling reflects Beijing\'s broader strategy to retain strategic AI assets within China\'s domestic technology ecosystem, even as it complicates the exit paths available to Chinese start-up founders seeking international investment."
+        "Japan Airlines has announced plans to deploy humanoid robots on a trial basis at Tokyo\'s Haneda Airport, tasking them with baggage handling duties that have become increasingly strained as the country experiences record levels of inbound tourism. The robots will require periodic recharging breaks, but are expected to provide meaningful relief to human workers who are in short supply across many of Japan\'s service industries.",
+        "The experiment reflects Japan\'s broader strategic embrace of robotics and automation as a response to its aging population and shrinking workforce, challenges that are particularly acute in labor-intensive sectors like aviation ground services. If the trial proves successful, it could accelerate adoption of humanoid robots across airports and logistics operations both in Japan and internationally."
       ],
-      image: "https://images.pexels.com/photos/31770625/pexels-photo-31770625.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/cj0v0gr2yz7o?at_medium=RSS&at_campaign=rss",
-      category: "Artificial Intelligence"
+      image: "https://i.guim.co.uk/img/media/5472db1bfe40dac31b1f22a2b63217169aa018c8/201_0_3327_2661/master/3327.jpg?width=1200&quality=85&auto=format&fit=max&s=9d87ad003acbe30745467d0bcf7d50bd",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/world/2026/apr/28/humanoid-robots-baggage-handlers-japan-airports",
+      category: "Robotics"
     },
     {
       id: "tc3",
-      title: "Widely-Used Open Source Package With One Million Monthly Downloads Found Stealing User Credentials",
-      summary: "A popular open source software package called element-data, downloaded over one million times per month, has been discovered to contain malicious code designed to steal user credentials.",
+      title: "Apple\'s MacBook Pro M5 Sets a New Performance Benchmark for Professional Laptops",
+      summary: "Apple\'s latest MacBook Pro, powered by the new M5 chip family, delivers a significant leap in processing power while maintaining the long battery life that has defined the M-series lineup.",
       body: [
-        "Security researchers have uncovered a serious supply chain attack embedded within element-data, an open source package with a massive user base of over one million monthly downloads, which was found to be secretly harvesting and exfiltrating user credentials. The discovery underscores the persistent and growing threat posed by malicious code hidden within the open source software ecosystem, where developers routinely incorporate third-party packages into their projects with limited ability to audit every dependency.",
-        "Users and organizations relying on element-data are being urged to immediately audit their systems for signs of compromise and to rotate any credentials that may have been exposed. The incident is the latest in a string of high-profile supply chain attacks targeting the open source community, renewing calls for stronger verification and security scanning standards across major package repositories."
+        "Apple has refreshed its flagship MacBook Pro line with M5-series chips, introducing what reviewers are calling a meaningful generational performance jump that cements the Mac\'s standing as the benchmark for professional portable computing. The new models offer expanded storage options and come in a two-tier configuration depending on which variant of the M5 processor is selected.",
+        "The launch follows a strong year for Apple\'s Mac lineup, which has already seen the introduction of the budget MacBook Neo and an updated MacBook Air M5, suggesting Apple is systematically refreshing its entire computer portfolio. For creative professionals and developers, the combination of raw computational power and enduring battery life continues to make the MacBook Pro a compelling choice in an increasingly competitive laptop market."
       ],
-      image: "https://cdn.arstechnica.net/wp-content/uploads/2025/06/browser-security-threat-1152x627.jpg",
-      source: "Ars Technica",
-      url: "https://arstechnica.com/security/2026/04/open-source-package-with-1-million-monthly-downloads-stole-user-credentials/",
-      category: "Cybersecurity"
+      image: "https://images.unsplash.com/photo-1667185614611-9e2400848f4d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxBcHBsZSU1Q3xlbnwwfDB8fHwxNzc3NDM5MDU5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/technology/2026/apr/28/apple-macbook-pro-m5-review-serious-power-still-long-battery-life",
+      category: "Hardware"
     }
   ]
 };

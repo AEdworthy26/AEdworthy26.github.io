@@ -1,60 +1,60 @@
 // us-politics-news-data.js
-// Auto-updated 2026-04-28 — do not edit manually
+// Auto-updated 2026-04-29 — do not edit manually
 
 var US_POLITICS_NEWS = {
-  date: "2026-04-28",
+  date: "2026-04-29",
   main: {
-    title: "Suspect Charged with Attempted Assassination of Trump at White House Correspondents' Dinner",
+    title: "King Charles Urges Congress to Defend Democratic Norms in Historic Address, Raising Eyebrows at the White House",
     category: "Politics",
     content: [
-      "Federal authorities have charged Cole Tomas Allen, a 31-year-old man from Torrance, California, with the attempted assassination of President Donald Trump following a shooting near the White House Correspondents' Association Dinner on Saturday evening in Washington, D.C. Prosecutors say Allen faces a potential life sentence on the charge, and officials indicated that additional charges may follow as the investigation continues to develop. The arrest has sent shockwaves through the capital and prompted an urgent review of the security protocols surrounding one of Washington\'s most prominent annual gatherings.",
-      "Investigators have described Allen\'s alleged intentions as particularly chilling, saying he wanted to kill as many high-level officials as possible — not only the president. Federal authorities are examining Allen\'s online presence, including a Bluesky account under the handle 'coldforce,' which promoted liberal political views that investigators say did not stand out on the left-leaning platform. The digital trail is expected to play a central role in establishing motive as prosecutors build their case.",
-      "The Secret Service and broader law enforcement community are now under intense scrutiny over how Allen allegedly got as close as he did to the president and other senior officials at such a high-profile event. White House press secretary Karoline Leavitt told reporters Monday that the administration is conducting a full security review, stating, 'If adjustments need to be made to protect the president, they will be made.' Rep. Jason Crow (D-Colo.), ranking member of a bipartisan House task force that had previously investigated two 2024 assassination attempts against Trump, formally requested answers from the Trump administration and the Secret Service regarding what security recommendations had been implemented — and which had not.",
-      "The shooting has reignited a heated national conversation about political violence and its escalating prevalence in American public life. NPR has reported that in its aftermath, more people on the political left are being drawn toward conspiracy theories about the event\'s circumstances, a trend observers say reflects the deepening mistrust of institutions across the ideological spectrum. White House Correspondents' Association dinner attendee Erika Kirk described Saturday\'s events as 'yet another traumatic example of the evil in our country and the continued rise in political violence,' calling on political leaders and the public to take stock of the increasingly dangerous climate.",
-      "The incident has also resurfaced broader questions about the security infrastructure surrounding not just the president but the wide array of government officials, journalists, and public figures who attend events like the WHCA dinner each year. The dinner, traditionally a lighthearted evening blending media and political worlds, has long been considered a relatively accessible Washington institution — a quality that now sits in sharp tension with the security demands of a politically volatile era. As the criminal case against Allen proceeds, Washington is left grappling with how to balance the openness that defines democratic civic life with the increasingly urgent imperative to protect those who participate in it.",
+      "King Charles III delivered a historic address to a joint session of Congress on Tuesday, using the rare platform to warn American lawmakers about the dangers of unchecked executive power and the importance of upholding democratic institutions. Without ever naming President Trump directly, the monarch\'s remarks were widely interpreted as a pointed commentary on the current political climate in the United States. The speech drew a prolonged standing ovation from many lawmakers, particularly Democrats, who saw in Charles\'s words a validation of their own concerns about the direction of American governance.",
+      "In his address, Charles emphasized the enduring importance of the U.S.-U.K. special relationship, calling it 'more important than ever in times of great uncertainty.' He highlighted the necessity of Western unity, offered implicit support for Ukraine, and underscored the value of democratic norms that both nations have historically championed. The carefully worded speech appeared designed to thread a diplomatic needle — strengthening bilateral ties while subtly pushing back against what many allies perceive as a drift away from established democratic conventions under the Trump administration.",
+      "The political reverberations on Capitol Hill were immediate. Democratic lawmakers reportedly cheered several passages that touched on institutional checks and balances, while Republican allies of the White House were visibly more restrained in their applause at key moments. Anonymous White House aides were said to have raised eyebrows at the King\'s framing, which some interpreted as an implicit rebuke of Trump\'s governing style, even as the administration publicly embraced the visit as a triumph of diplomacy and transatlantic friendship.",
+      "The speech came against a backdrop of genuine tension in the U.S.-U.K. relationship, with trade disputes and disagreements over the war in the Middle East complicating what both governments publicly describe as an unbreakable alliance. Charles\'s decision to address Congress at all — a rare occurrence for any foreign monarch — signaled the seriousness with which London views the current moment in Western politics. British officials were careful to frame the visit as apolitical, but the substance of the King\'s remarks made clear that the Crown was willing to use its unique moral authority to speak to broader democratic values.",
+      "The visit concluded with a lavish state dinner at the White House, where Trump presented himself as a gracious host and Charles offered a charming gift of a golden bell, quipping that the president should 'just give us a ring' if he ever needed to reach the British. Six Supreme Court justices were among the guests, alongside top administration officials, Republican lawmakers, and prominent billionaires. Despite the evening\'s warm optics, the day\'s most lasting political image remained the King standing before Congress, delivering a message about democratic accountability that resonated far beyond the ceremonial confines of the chamber."
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/c50b/live/f5be4960-42ad-11f1-ac78-2112837ce2aa.jpg",
-    source: "BBC News",
-    sourceUrl: "https://www.bbc.com/news/articles/cew7wez72vxo?at_medium=RSS&at_campaign=rss"
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/1ce6/live/05fc6d20-4380-11f1-b927-49e1f65be0b5.jpg",
+    source: "Washington Post",
+    sourceUrl: "https://www.washingtonpost.com/politics/2026/04/28/trump-king-charles-white-house-visit/"
   },
   secondary: [
     {
       id: "us1",
-      title: "DeSantis Proposes Florida Redistricting Map to Gain Four More GOP House Seats",
-      summary: "Florida Governor Ron DeSantis has unveiled a new redistricting map designed to deliver Republicans four additional seats in the U.S. House of Representatives.",
+      title: "Grand Jury Indicts Former FBI Director James Comey a Second Time Over Cryptic Social Media Post",
+      summary: "A federal grand jury has indicted James Comey for a second time, charging him over a 2025 Instagram photo of seashells spelling out '8647,' which the Justice Department alleges constitutes a threat against President Trump\'s life.",
       body: [
-        "Governor Ron DeSantis has proposed a sweeping new congressional map for Florida that, if enacted, would significantly expand Republican representation in the U.S. House by targeting four currently competitive or Democratic-leaning districts. The proposal is the latest salvo in an intensifying national redistricting battle, as both major parties maneuver aggressively ahead of the 2026 midterm elections to lock in structural advantages across key states.",
-        "Florida has been a recurring flashpoint in redistricting fights, with DeSantis having previously clashed with the state legislature and courts over map-drawing. The new proposal underscores how governors and state legislatures are increasingly treating redistricting as a direct tool of federal political strategy, with the balance of power in the House potentially hinging on the outcome of these state-level decisions."
+        "The indictment centers on a photo Comey posted to Instagram last year showing seashells arranged on a beach to read '86 47' — a combination that some interpreted as a call to 'eighty-six,' or eliminate, the 47th president. Federal prosecutors argued before the grand jury that the post amounted to an unlawful threat against a sitting president, a charge Comey and his legal team are expected to vigorously contest. This marks the second time Comey has faced federal indictment under the Trump-era Justice Department.",
+        "The case has intensified debate over the boundary between political expression and criminal incitement, with civil liberties advocates warning that the prosecution sets a dangerous precedent for prosecuting ambiguous speech. Critics of the administration allege the charges represent a continuation of Trump\'s long-running political vendetta against Comey, who he fired as FBI director in 2017 in a move that triggered the appointment of a special counsel."
       ],
-      image: "https://images.unsplash.com/photo-1704236600122-56a1401023d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxEZVNhbnRpcyUyMFByb3Bvc2VzJTIwRmxvcmlkYSUyMFJlZGlzdHJpY3RpbmclMjBNYXAlMjB0byUyMEdhaW4lMjBGb3VyJTIwTW9yZSUyMEdPUCUyMEhvdXNlJTIwU2VhdHN8ZW58MHwwfHx8MTc3NzM1MjU3N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      image: "https://images.unsplash.com/photo-1551728069-3ae0d8b619a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxHcmFuZCUyMEp1cnklMjBJbmRpY3RzJTIwRm9ybWVyJTIwRkJJJTIwRGlyZWN0b3IlMjBKYW1lcyUyMENvbWV5JTIwYSUyMFNlY29uZCUyMFRpbWUlMjBPdmVyJTIwQ3J5cHRpYyUyMFNvY2lhbCUyME1lZGlhJTIwUG9zdHxlbnwwfDB8fHwxNzc3NDM4OTc1fDA&ixlib=rb-4.1.0&q=80&w=1080",
       source: "NPR",
-      url: "https://www.npr.org/2026/04/27/nx-s1-5797890/desantis-new-map-for-florida-seeks-to-give-the-gop-4-more-house-seats",
+      url: "https://www.npr.org/2026/04/28/nx-s1-5803167/james-comey-indictment",
       category: "Politics"
     },
     {
       id: "us2",
-      title: "House May Scrap DHS Funding Bill, Threatening Extended Agency Shutdown",
-      summary: "House Speaker Mike Johnson signaled the chamber may abandon a Senate-passed DHS funding bill over provisions he says would undermine immigration enforcement operations.",
+      title: "FCC Orders ABC to Seek Early Broadcast License Renewals Following Jimmy Kimmel\'s Melania Trump Joke",
+      summary: "The Federal Communications Commission has directed Disney-owned ABC stations to pursue early broadcast license renewals, a punitive action triggered by backlash over a joke late-night host Jimmy Kimmel made about First Lady Melania Trump.",
       body: [
-        "Speaker Mike Johnson said Monday that the House is considering scrapping a Senate funding bill for the Department of Homeland Security, citing what he called 'problematic language' that he argued would effectively 'orphan' the agency\'s immigration operations at a critical moment. The standoff raises the prospect of an extended shutdown at DHS, which oversees border enforcement, immigration courts, and a wide range of national security functions.",
-        "The impasse reflects the continuing tensions between the Republican-controlled House and Senate over immigration policy, even within the same party, as hardliners in the House push for stricter conditions on any funding agreement. A prolonged DHS shutdown would carry significant political and operational consequences, potentially disrupting deportation proceedings and other enforcement activities that the Trump administration has made central to its domestic agenda."
+        "The FCC\'s order requires the eight ABC-owned television stations to file for early license renewals, a rare and disruptive regulatory action that imposes significant administrative burden on the network and is widely seen as a form of political pressure. The move stems from a joke Kimmel made on his late-night program that drew the ire of the Trump administration, which has made no secret of its adversarial relationship with major media organizations. Disney is expected to challenge the order legally, arguing it constitutes government retaliation against protected speech.",
+        "The action has alarmed media law experts and First Amendment advocates, who warn that using the FCC\'s licensing power to punish broadcasters for editorial content crosses a fundamental constitutional line. The episode is the latest in a pattern of the Trump administration leveraging federal regulatory authority against media outlets perceived as hostile, raising broader concerns about press freedom and the independence of the nation\'s airwaves."
       ],
-      image: "https://images.unsplash.com/photo-1741281843991-05a190e31057?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxIb3VzZSUyME1heSUyMFNjcmFwJTIwREhTJTIwRnVuZGluZyUyMEJpbGwlMkMlMjBUaHJlYXRlbmluZyUyMEV4dGVuZGVkJTIwQWdlbmN5JTIwU2h1dGRvd258ZW58MHwwfHx8MTc3NzM1MjU3N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "The Washington Post",
-      url: "https://www.washingtonpost.com/politics/2026/04/27/house-immigration-funding-dhs-shutdown/",
+      image: "https://images.pexels.com/photos/5061702/pexels-photo-5061702.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      source: "NPR",
+      url: "https://www.npr.org/2026/04/28/nx-s1-5802997/fcc-abc-license-renewal-melania-trump-jimmy-kimmel",
       category: "Politics"
     },
     {
       id: "us3",
-      title: "Supreme Court Hears Arguments on Labeling Requirements for Roundup Weed Killer",
-      summary: "The Supreme Court heard oral arguments over how health risks of the widely used herbicide Roundup must be disclosed, a ruling that could affect tens of thousands of lawsuits against manufacturer Bayer.",
+      title: "White House Pressures Speaker Johnson to Quickly Pass DHS Funding Bill",
+      summary: "The White House has issued an unusually direct call on House Speaker Mike Johnson to move swiftly on a homeland security spending bill, publicly rebuking the Republican leader for delaying action on a measure critical to funding immigration enforcement.",
       body: [
-        "The Supreme Court took up a closely watched case Monday examining whether federal law preempts state-level requirements that Roundup\'s maker warn consumers about the weed killer\'s alleged links to cancer. The outcome could determine the fate of tens of thousands of pending lawsuits against Bayer, which acquired Roundup\'s original manufacturer Monsanto, and has already paid billions in settlements over the product.",
-        "The case sits at the intersection of federal regulatory authority, corporate liability, and consumer protection law — all politically charged areas in the current judicial and legislative environment. A ruling in Bayer\'s favor could dramatically curtail future litigation, while a decision upholding state warning requirements would expose the company to continued and potentially mounting legal exposure across the country."
+        "The White House\'s demand amounted to a rare public rebuke of the Speaker, who has stalled on bringing the Department of Homeland Security funding bill to the floor and suggested this week that the legislation required further changes before he could support it. The standoff highlights growing friction between the Trump administration and House Republican leadership over the pace and priorities of the congressional agenda, even as both sides publicly profess unity. DHS funding is considered a flagship issue for the administration, which has made border security and immigration enforcement central to its political identity.",
+        "The episode underscores the persistent challenges facing Republicans in translating the party\'s policy ambitions into legislative reality, with a narrow House majority leaving leadership with little room for defections. If Johnson fails to move quickly, the administration risks a lapse in homeland security appropriations that could embarrass the White House and undercut its messaging on immigration, one of the few issues where Trump retains strong approval among his political base."
       ],
-      image: "https://images.unsplash.com/photo-1683316924890-6a8c5ab10d29?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTdXByZW1lJTIwQ291cnQlMjBIZWFycyUyMEFyZ3VtZW50cyUyMG9uJTIwTGFiZWxpbmclMjBSZXF1aXJlbWVudHMlMjBmb3IlMjBSb3VuZHVwJTIwV2VlZCUyMEtpbGxlcnxlbnwwfDB8fHwxNzc3MzUyNTc4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "NPR",
-      url: "https://www.npr.org/2026/04/27/nx-s1-5793804/supreme-court-monsanto-roundup-arguments",
+      image: "https://static01.nyt.com/images/2026/04/28/multimedia/28dc-cong-dhs-qvmw/28dc-cong-dhs-qvmw-mediumSquareAt3X.jpg",
+      source: "New York Times",
+      url: "https://www.nytimes.com/2026/04/28/us/politics/congress-dhs-funding.html",
       category: "Politics"
     }
   ]

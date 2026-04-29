@@ -1,43 +1,88 @@
 // curiosity-data.js
-// Auto-updated 2026-04-28 — do not edit manually
+// Auto-updated 2026-04-29 — do not edit manually
 
 var CURIOSITY_DATA = {
-  date: "2026-04-28",
+  date: "2026-04-29",
   mainArticle: {
-    title: "The Vinland Map and the Norse in North America",
-    subject: "Viking settlement at L\'Anse aux Meadows",
-    subtitle: "Five centuries before Columbus, Norse sailors built a settlement at the edge of the world — and almost nobody believed it.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/7/78/Viking_attack_on_Gu%C3%A9rande%2C_from_a_Saint-Aubin_MS.jpg",
+    title: "The Amber Road: How Baltic Resin Built the Ancient World",
+    subject: "The Amber Road ancient trade route",
+    subtitle: "Long before silk or spice, a golden fossil resin flowed from the cold shores of the Baltic to the courts of Egypt, Rome, and Greece — and changed civilisation along the way.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/6/67/Baltis_amber_road.jpg",
     readTime: "8 min",
     content: [
-      { type: "paragraph", text: "In 1960, a Norwegian explorer named Helge Ingstad walked along the northern tip of Newfoundland following a hunch, a handful of medieval sagas, and the vague directions of a local fisherman. What he and his archaeologist wife Anne Stine found beneath a grassy headland called L\'Anse aux Meadows would rewrite the history of the world: the unmistakable remains of a Norse settlement, carbon-dated to around 1000 AD, making it the earliest confirmed European presence in the Americas by nearly five hundred years. The discovery vindicated centuries of stubborn Scandinavian tradition and silenced those who had dismissed the Vinland sagas as romantic fantasy." },
-      { type: "heading", text: "What the Sagas Actually Said" },
-      { type: "paragraph", text: "The Norse account of North America survives in two major texts — the Greenlanders' Saga and the Saga of Erik the Red — written down in Iceland in the thirteenth century but preserving oral traditions far older. Together they describe a land called Vinland, rich in wild grapes and self-sown wheat, reached by Leif Eriksson after his ship was blown off course returning from Norway around 1000 AD. A later expedition led by Thorfinn Karlsefni attempted a genuine colony, bringing livestock, pregnant women, and plans to stay — but conflict with the indigenous people they called Skraelings eventually drove them out. For generations, historians quarrelled over whether these sagas were history or legend, geography or myth." },
-      { type: "heading", text: "Eight Buildings at the Edge of the World" },
-      { type: "paragraph", text: "The site Ingstad discovered contained the remains of eight turf buildings — longhouses, workshops, and a smithy — laid out in a pattern entirely consistent with Norse construction in Iceland and Greenland. Iron nails, a bronze cloak pin of Scandinavian type, and a spindle whorl used for spinning yarn were among the objects recovered; that last item was particularly significant, suggesting women had been present. No comparable indigenous culture in Newfoundland worked iron or spun yarn in this way, and radiocarbon dating placed the occupation firmly in the late tenth or early eleventh century." },
-      { type: "heading", text: "A Base Camp, Not a Colony" },
-      { type: "paragraph", text: "Modern analysis suggests L\'Anse aux Meadows was not itself the fabled Vinland but rather a base camp from which the Norse explored further south. Butternuts — a tree whose natural range does not extend to Newfoundland — were found at the site, meaning the occupants had travelled or traded with people at least as far south as the St Lawrence valley or New Brunswick. The settlement appears to have been occupied for only a few decades, perhaps serving as a repair station and winter quarters before expeditions further along the coast. It was a toehold, not a foothold." },
-      { type: "heading", text: "The People They Met" },
-      { type: "paragraph", text: "The sagas describe initial curiosity giving way to violent confrontation with the Skraelings, a term the Norse used for both Inuit and indigenous North American peoples. Trade in furs and red cloth turned quickly to misunderstanding and bloodshed; the Norse were vastly outnumbered and far from resupply. Recent archaeological and genetic research has added extraordinary texture to this encounter: a 2021 DNA study found traces of indigenous American ancestry in present-day Icelanders, suggesting at least one indigenous woman made the crossing to Europe, voluntarily or otherwise, around the year 1000. The meeting of worlds was more intimate and more complicated than the sagas admit." },
-      { type: "heading", text: "The Long Shadow of the Vinland Map" },
-      { type: "paragraph", text: "The Vinland Map, which surfaced in 1957 and purported to be a fifteenth-century chart showing the Norse discoveries, became one of the most contested documents in cartographic history. Yale University acquired and published it in 1965 to enormous fanfare, only for a series of chemical analyses to cast doubt on its authenticity — ink studies suggested twentieth-century compounds, though later counter-analyses complicated the picture. The map remains officially unresolved, a fog of forgery allegations and technical dispute that has paradoxically overshadowed the unambiguous physical proof sitting in Newfoundland. L\'Anse aux Meadows needed no map; the turf walls speak for themselves." },
-      { type: "heading", text: "Why the Norse Did Not Stay" },
-      { type: "paragraph", text: "The question of why the Norse abandoned their American beachhead has occupied historians for decades, and the answer is probably several things at once. The indigenous population was large, hostile after initial skirmishes, and perfectly capable of cutting off a tiny Norse outpost; the sagas record that even Freydís Eiríksdóttir\'s famous ferocity — she reportedly drove off an attack by slapping a sword against her bare breast — was not enough to make the colony viable. Greenland and Iceland were themselves barely sustainable, leaving little surplus population or capital to sustain a distant colony. The Atlantic crossing was brutal, the rewards uncertain, and the enemies numerous." },
-      { type: "heading", text: "A UNESCO World and a Living Question" },
-      { type: "paragraph", text: "L\'Anse aux Meadows was designated a UNESCO World Heritage Site in 1978, among the first sites ever to receive that status, recognition of its singular importance to human history. Parks Canada now maintains a reconstructed Norse longhouse on the site, staffed by interpreters in period dress, beside the original excavated ruins. Yet the discovery raises as many questions as it answers: how many other Norse expeditions reached North America and left no trace, how far south they ventured, and what might have happened had the encounter with the Americas unfolded differently. The Norse were there, at the edge of the known world, half a millennium before the history books begin — and they almost went unremembered entirely." }
+      {
+        type: "paragraph",
+        text: "In the tomb of Tutankhamun, sealed for three thousand years beneath the Egyptian sand, archaeologists found something that had no business being there: a small scarab carved from Baltic amber. The nearest source of that amber lay more than three thousand kilometres to the north, on the storm-battered shores of what is now Poland and Lithuania. Its presence in a pharaoh\'s burial chamber is one of history\'s quiet miracles — evidence of a trade network so ancient and so vast that it connected the Bronze Age world in ways we are still mapping today."
+      },
+      {
+        type: "heading",
+        text: "What the Ancient World Called 'Frozen Sunlight'"
+      },
+      {
+        type: "paragraph",
+        text: "Amber is fossilised tree resin, typically 40 to 60 million years old, formed from the vast forests that once blanketed northern Europe. The Greeks called it elektron — the same word that would eventually give us 'electricity', after the philosopher Thales noticed it attracted small objects when rubbed. To the Romans it was glesum or sucinum, and it was prized not merely for its warm, honey-golden beauty but for its supposed magical properties: it was believed to ward off evil, cure ailments from fever to goitre, and protect children from harm. A piece of Baltic amber in the ancient Mediterranean world was worth its weight in gold, sometimes more."
+      },
+      {
+        type: "heading",
+        text: "The Route That Stitched a Continent Together"
+      },
+      {
+        type: "paragraph",
+        text: "The Amber Road was not a single road but a web of overland and river routes threading southward from the Baltic coast through the heart of Europe. Traders followed the Vistula and Oder rivers, crossed the Carpathian passes, descended through the Danube valley and on through the Alpine gaps into northern Italy, where the great commercial hub of Aquileia funnelled goods toward Rome and the eastern Mediterranean. Other branches reached the Adriatic coast, the Black Sea, and ultimately Egypt and Mesopotamia. At its peak during the first and second centuries AD, the route was as commercially vital as the Silk Road — and considerably older."
+      },
+      {
+        type: "heading",
+        text: "The People Who Made It Work"
+      },
+      {
+        type: "paragraph",
+        text: "The amber trade was not organised by any single empire. It was sustained by chains of local middlemen — Germanic tribes, Celtic communities, Illyrian merchants — each controlling a segment of the route and taking a share of the profit. The Romans eventually tried to rationalise the commerce directly: the emperor Nero famously sent an expedition northward specifically to source amber for the spectacular gladiatorial games he planned, and his agent reportedly returned with so much resin that nets used to protect spectators from wild animals were strung with amber beads. The sheer audacity of the gesture tells you something about how intoxicating the material had become."
+      },
+      {
+        type: "heading",
+        text: "Amber as Archaeological Fingerprint"
+      },
+      {
+        type: "paragraph",
+        text: "One of amber\'s remarkable gifts to modern archaeology is its chemical distinctiveness. Baltic amber contains succinic acid in concentrations found nowhere else on earth, which means a small sample subjected to infrared spectroscopy can be pinpointed to the Baltic coast with near-certainty. This has allowed researchers to trace trade connections with extraordinary precision, confirming Baltic amber in Mycenaean shaft graves at Shaft Grave Circle A in Mycenae dating to around 1600 BC, in Bronze Age hoards in Wessex, and in Phoenician contexts across the Levant. The amber doesn\'t lie: it tells us the ancient world was connected far earlier and far more intricately than historians once believed."
+      },
+      {
+        type: "heading",
+        text: "The Mythology That Travelled With the Resin"
+      },
+      {
+        type: "paragraph",
+        text: "Trade goods rarely travel alone — they carry stories with them. The Greeks explained amber through the myth of Phaethon, the reckless son of Helios who borrowed his father\'s sun-chariot and drove it too close to the earth, scorching it, before Zeus struck him down with a thunderbolt into the river Eridanus. His grieving sisters, the Heliades, were transformed into poplar trees on the riverbank and wept ceaselessly; their tears hardened into amber. The myth is a geographical clue: ancient Greeks associated the Eridanus with a far northern river, most likely the Po or possibly the Rhine, which placed the land of amber precisely where it actually was. Stories, it turns out, can preserve geographical memory for centuries."
+      },
+      {
+        type: "heading",
+        text: "Decline, Rediscovery, and a Strange Persistence"
+      },
+      {
+        type: "paragraph",
+        text: "The fall of the western Roman Empire in the fifth century AD disrupted the amber trade catastrophically, collapsing the demand that had sustained professional long-distance commerce for millennia. Yet amber never entirely disappeared: medieval physicians prescribed it, the Church used it for rosaries, and the princes of northern Europe commissioned extraordinary amber objects as diplomatic gifts. The most spectacular expression of this tradition was the legendary Amber Room, commissioned by Prussian King Frederick I in 1701 and later given to Peter the Great of Russia — an entire chamber lined with intricately carved amber panels, gilded mirrors, and mosaics, described by contemporaries as the Eighth Wonder of the World."
+      },
+      {
+        type: "heading",
+        text: "What the Road Tells Us About Ourselves"
+      },
+      {
+        type: "paragraph",
+        text: "The Amber Road is ultimately a story about human desire — the irresistible urge to possess something rare, beautiful, and touched with mystery, regardless of the distance or danger involved. It demonstrates that long-distance trade is not an invention of the modern era or even of classical antiquity, but a deeply embedded human behaviour stretching back into prehistory. Every piece of Baltic amber found in an Egyptian tomb or a Mycenaean grave is a small, silent rebuke to the idea that ancient peoples lived in isolated, local worlds. They were, in their own fashion, as globally connected as we imagine ourselves to be — and the golden resin they coveted was the internet of its age."
+      }
     ]
   },
   personOfTheDay: {
-    name: "Roald Amundsen",
-    lifespan: "1872–1928",
-    category: "Exploration & Adventure",
-    image: "https://upload.wikimedia.org/wikipedia/commons/6/6f/Amundsen_in_fur_skins.jpg",
-    bio: "Roald Amundsen was born in Borge, Norway, in 1872, into a family of shipowners and mariners, and from boyhood he fixed his ambitions on the polar regions with a single-mindedness that bordered on obsession. He slept with his windows open in winter to harden himself, read every account of Arctic and Antarctic exploration he could find, and quietly abandoned a half-hearted medical degree the moment his mother died and freed him from family obligation. His apprenticeship was as demanding as any university: he served as mate aboard the Belgica during the first expedition to winter in Antarctic ice, where scurvy and near-madness tested every man aboard.\n\nHis first great triumph came between 1903 and 1906, when he navigated the Northwest Passage — the sea route through the Arctic archipelago above Canada that European explorers had sought for four centuries — in a small converted herring boat called the Gjøa. He spent two winters frozen in place near King William Island, using the enforced delay productively by learning dog-sledge techniques and survival skills from the local Netsilik Inuit, knowledge that would later prove decisive. When the Gjøa finally broke through into the Pacific in August 1906, Amundsen had achieved what John Franklin, Henry Hudson, and scores of others had died attempting.\n\nHis name is immortalised above all by the race to the South Pole. In October 1911 he led a Norwegian team south from the Bay of Whales using dog teams and meticulous logistical planning, reaching 90° South on December 14, 1911 — five weeks ahead of Robert Falcon Scott\'s doomed British expedition. Where Scott\'s party perished on the return journey, all five of Amundsen\'s men came home safely, a testament to preparation over heroics. He disappeared in June 1928 while flying a search mission over the Barents Sea to find survivors of a crashed airship, and his body was never recovered; the ocean kept him, as it keeps so many of the people who spend their lives defying it."
+    name: "Alexander von Humboldt",
+    lifespan: "1769–1859",
+    category: "Exploration & Science",
+    image: "https://upload.wikimedia.org/wikipedia/commons/3/36/Stieler%2C_Joseph_Karl_-_Alexander_von_Humboldt_-_1843.jpg",
+    bio: "Alexander von Humboldt was born in Berlin on September 14, 1769, into a wealthy Prussian family that gave him every advantage education could offer. From an early age he was consumed by an insatiable curiosity about the natural world, studying geology, botany, and mineralogy before embarking on the expedition that would define his life. Between 1799 and 1804, he and the French botanist Aimé Bonpland travelled through Spanish America — modern Venezuela, Cuba, Colombia, Ecuador, Peru, and Mexico — covering roughly 60,000 kilometres on foot, horseback, and canoe, recording everything they saw with meticulous precision.\n\nHumboldt climbed Chimborazo in Ecuador, then believed to be the highest mountain on earth, reaching an altitude of 5,878 metres before altitude sickness stopped him — a world record at the time. He measured ocean temperature and identified the cold Pacific current that now bears his name. He documented the relationship between altitude and vegetation zones, essentially inventing the discipline of ecology before the word existed. He was the first to map isotherms, lines of equal temperature across a map, which transformed meteorology. His five-volume masterwork Cosmos, begun when he was in his seventies, attempted nothing less than a unified description of the entire physical universe — and became one of the bestselling books of the nineteenth century.\n\nIn his lifetime Humboldt was arguably the most famous scientist on earth, celebrated from Paris to St Petersburg to Washington. Charles Darwin called him 'the greatest scientific traveller who ever lived' and credited Humboldt\'s Personal Narrative of the American journey with inspiring his own voyage on the Beagle. Humboldt was also one of the earliest and most forceful critics of slavery and of colonial environmental destruction, writing with striking modernity about how European land use was altering climates and depleting soils. He died in Berlin in 1859, aged 89, still dictating the final volume of Cosmos — a man who spent a full century trying, with magnificent ambition, to hold the whole world in his mind at once."
   },
   onThisDay: {
-    headline: "MUTINY ON THE BOUNTY: THE CREW SEIZES THE SHIP",
-    date: "April 28, 1789",
-    summary: "In the pre-dawn darkness of April 28, 1789, Fletcher Christian led a group of mutineers aboard HMS Bounty and seized control of the vessel from Captain William Bligh in one of the most famous acts of maritime rebellion in history. Bligh was awakened at bayonet-point, forced onto the deck in his nightclothes, and set adrift in the ship\'s open launch with eighteen loyal crew members, minimal provisions, and a sextant — somewhere near the Tongan island of Tofua in the South Pacific. The mutineers' grievances were complex, woven from months of brutal discipline, the seductive comfort of Tahiti where the ship had lingered for five months collecting breadfruit plants, and the particular tensions between Christian and Bligh that had curdled a once-close friendship.\n\nWhat followed was one of the most remarkable open-boat voyages ever accomplished. Bligh navigated the 23-foot launch nearly 3,600 miles to Timor in 47 days, losing only one man to a stone-throwing attack by islanders — a feat of seamanship that arguably outshines anything his mutinous crew achieved. Christian and the Bounty\'s company, meanwhile, attempted to settle on Tahiti before the more determined mutineers sailed on to the remote and uncharted Pitcairn Island, where they burned the Bounty and established a hidden community. The mutiny on the Bounty became legend almost immediately, inspiring novels, films, and endless debate about tyranny, paradise, and the fragility of order at sea.",
-    image: "https://images.unsplash.com/photo-1574781355506-36e0d797b351?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxNVVRJTlklMjBPTiUyMFRIRSUyMEJPVU5UWSUzQSUyMFRIRSUyMENSRVclMjBTRUlaRVMlMjBUSEUlMjBTSElQfGVufDB8MHx8fDE3NzczNTI4MzJ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    headline: "The First Zipper Patent Is Granted — And Nobody Cares Yet",
+    date: "April 29, 1913",
+    summary: "On April 29, 1913, Gideon Sundback, a Swedish-American electrical engineer working in Hoboken, New Jersey, received a patent for a radically improved 'separable fastener' — the device the world would eventually call the zipper. Sundback had refined earlier, unreliable hook-and-eye designs into something genuinely functional: interlocking metal teeth drawn together or apart by a sliding tab, a mechanism so elegant that its basic design has barely changed in more than a century. His employer, the Universal Fastener Company, had been struggling for years to make the concept commercially viable after earlier inventors had produced gadgets prone to popping open at inopportune moments.\n\nFor the first several years after the patent, the zipper found almost no civilian market whatsoever. Its early adopters were the United States Navy and Army, who used it on flying suits and money belts during the First World War, largely because it was faster and more secure than buttons under combat conditions. The general public remained indifferent, wedded to buttons as they had been for centuries. It was only in the late 1920s and 1930s — helped enormously by a sustained marketing campaign and endorsements from the fashion industry — that the zipper finally conquered everyday clothing. By then, Sundback\'s patent had long expired, but his mechanism had quietly become one of the most ubiquitous objects in human history.",
+    image: "https://upload.wikimedia.org/wikipedia/en/7/70/Josh_Groban_-_Granted.jpg"
   }
 };

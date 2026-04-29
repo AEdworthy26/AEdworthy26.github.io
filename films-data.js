@@ -1,18 +1,18 @@
 // films-data.js
-// Auto-updated 2026-04-28 — do not edit manually
+// Auto-updated 2026-04-29 — do not edit manually
 
 var FILMS_DATA = {
-  date: "2026-04-28",
+  date: "2026-04-29",
   film: {
-    title: "Tampopo",
-    director: "Juzo Itami",
-    year: 1985,
-    genres: ["Comedy", "Drama", "World Cinema"],
-    desc: "A deliriously inventive Japanese comedy that follows a truck driver who helps a determined widow transform her struggling ramen shop into a noodle paradise, Tampopo is unlike anything else ever made. Itami weaves in a series of anarchic vignettes exploring obsession, desire, and ritual around food — from a dying woman who rises to cook one last meal to a gangster who turns oyster-eating into an act of erotic philosophy. The film coined the term 'ramen western,' and its affectionate riff on the genre is both a love letter to craft and a joyful skewering of social pretension. Nobuko Miyamoto is utterly winning in the title role, bringing genuine warmth to what could have been a one-note premise. Few films manage to be this funny, this tender, and this genuinely strange all at once.",
-    cast: ["Nobuko Miyamoto", "Tsutomu Yamazaki", "Ken Watanabe"],
-    rating: 99,
+    title: "Certified Copy",
+    director: "Abbas Kiarostami",
+    year: 2010,
+    genres: ["Romance", "Drama"],
+    desc: "A British author and a French antiques dealer meet in Tuscany and spend an afternoon together that quietly, mysteriously transforms — strangers becoming, or perhaps revealing themselves as, a long-married couple. Kiarostami plays this ontological sleight-of-hand with absolute confidence, never explaining the shift, trusting the viewer to feel it rather than decode it. Juliette Binoche won the Best Actress prize at Cannes for a performance of startling emotional nakedness, cycling through tenderness, irritation, and longing within single unbroken takes. The film is equally a meditation on authenticity and copies in art and in love, asking whether something must be original to be real, or whether living inside an illusion long enough makes it true. Luminous, quietly radical, and endlessly re-watchable.",
+    cast: ["Juliette Binoche", "William Shimell", "Jean-Claude Carrière"],
+    rating: 87,
     ratingSource: "Rotten Tomatoes",
-    ratingExtra: "Japan Academy Prize Nominee",
-    posterUrl: "https://upload.wikimedia.org/wikipedia/en/0/00/Tampopo_-_Poster.jpg"
+    ratingExtra: "Cannes Best Actress Award",
+    posterUrl: "https://upload.wikimedia.org/wikipedia/en/3/31/Copie-conforme-poster.png"
   }
 };
