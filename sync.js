@@ -26,7 +26,9 @@
     'ph_recipes_v1',
     'ph_ex_routines_v1',
     'ph_ex_logs_v1',
-    'ph_ex_acts_v1'
+    'ph_ex_acts_v1',
+    'ph_curiosity_favs_v1',
+    'ph_philosophy_favs_v1'
   ];
 
   /* ── helpers ── */

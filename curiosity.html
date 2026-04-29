@@ -207,6 +207,20 @@
     .empty-title { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; margin-bottom: 0.5rem; }
     .empty-text { font-size: 0.85rem; color: var(--muted); line-height: 1.65; }
 
+    /* ── FAVOURITES ── */
+    .fav-save-btn { display: inline-flex; align-items: center; gap: 0.3rem; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--curiosity); background: none; border: 1px solid currentColor; padding: 0.22rem 0.7rem; border-radius: 20px; cursor: pointer; font-family: inherit; transition: background .15s, color .15s; flex-shrink: 0; margin-left: auto; }
+    .fav-save-btn:hover { background: var(--curiosity); color: #fff; }
+    .fav-save-btn.saved { color: var(--gold) !important; border-color: var(--gold) !important; }
+    .fav-list { display: flex; flex-direction: column; gap: 0.8rem; }
+    .fav-card { display: flex; align-items: flex-start; gap: 1rem; background: var(--card-bg); border: 1px solid var(--subtle); border-radius: var(--radius); padding: 1rem 1.2rem; box-shadow: var(--shadow-sm); }
+    .fav-card-main { flex: 1; min-width: 0; }
+    .fav-card-type { font-size: 0.58rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: #fff; background: var(--curiosity); padding: 0.18rem 0.6rem; border-radius: 10px; display: inline-block; margin-bottom: 0.4rem; }
+    .fav-card-title { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 0.92rem; line-height: 1.35; margin-bottom: 0.3rem; }
+    .fav-card-meta { font-size: 0.62rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--light); }
+    .fav-del-btn { flex-shrink: 0; background: none; border: none; cursor: pointer; color: var(--light); font-size: 1.1rem; line-height: 1; padding: 0.1rem 0.3rem; border-radius: 4px; transition: color .15s, background .15s; margin-top: 0.1rem; }
+    .fav-del-btn:hover { color: #dc2626; background: #fee2e2; }
+    .fav-empty { font-size: 0.85rem; color: var(--muted); font-style: italic; }
+
     /* ── FOOTER ── */
     .site-footer { text-align: center; font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--light); border-top: 1px solid var(--border); padding: 1.4rem 2rem; margin-top: 2rem; }
 
@@ -305,6 +319,7 @@
 
   <!-- populated by JS -->
   <div id="curiosity-output" class="page-wrap"></div>
+  <div id="cur-favs-output" class="page-wrap" style="padding-top:0;padding-bottom:2rem;"></div>
 
   <footer class="site-footer">Personal Hub &mdash; Alfie Edworthy &mdash; Private &amp; Confidential</footer>
 
@@ -346,6 +361,56 @@
         + '</div>';
     }
 
+    // ── Favourites ────────────────────────────────────────────────────────────
+    var CUR_FAVS_KEY = 'ph_curiosity_favs_v1';
+    var CUR_FAV_LABELS = { article: 'Main Article', person: 'Person of the Day', onthisday: 'On This Day' };
+
+    function loadFavs() {
+      try { return JSON.parse(localStorage.getItem(CUR_FAVS_KEY) || '[]'); } catch(e) { return []; }
+    }
+    function saveFavs(arr) { localStorage.setItem(CUR_FAVS_KEY, JSON.stringify(arr)); }
+
+    function renderFavs() {
+      var el = document.getElementById('cur-favs-output');
+      if (!el) return;
+      var favs = loadFavs();
+      var divHTML = '<div class="section-divider"><div class="section-divider-rule"></div>'
+        + '<span class="section-divider-label">&#9733; My Favourites</span>'
+        + '<div class="section-divider-rule"></div></div>';
+      if (!favs.length) {
+        el.innerHTML = divHTML + '<p class="fav-empty">Nothing saved yet — use the &#9733;&nbsp;Save buttons to add items you’d like to revisit.</p>';
+        return;
+      }
+      var cards = favs.slice().reverse().map(function(f) {
+        var savedDate = new Date(f.savedAt).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+        return '<div class="fav-card">'
+          + '<div class="fav-card-main">'
+          +   '<span class="fav-card-type">' + esc(CUR_FAV_LABELS[f.type] || f.type) + '</span>'
+          +   '<div class="fav-card-title">' + esc(f.title) + '</div>'
+          +   '<div class="fav-card-meta">From ' + fmtDate(f.contentDate) + ' &bull; Saved ' + savedDate + '</div>'
+          + '</div>'
+          + '<button class="fav-del-btn" onclick="window._deleteCurFav(\'' + f.id + '\')" title="Remove">&times;</button>'
+          + '</div>';
+      }).join('');
+      el.innerHTML = divHTML + '<div class="fav-list">' + cards + '</div>';
+    }
+
+    window._curFavData = {};
+    window._saveCurFav = function(type) {
+      var d = window._curFavData[type];
+      if (!d) return;
+      var favs = loadFavs();
+      favs.push({ id: String(Date.now()), type: type, title: d.title, contentDate: d.contentDate, savedAt: new Date().toISOString() });
+      saveFavs(favs);
+      renderFavs();
+      var btn = document.querySelector('.fav-save-btn[data-favtype="' + type + '"]');
+      if (btn) { btn.innerHTML = '&#10003; Saved'; btn.classList.add('saved'); setTimeout(function(){ btn.innerHTML = '&#9733; Save'; btn.classList.remove('saved'); }, 2000); }
+    };
+    window._deleteCurFav = function(id) {
+      saveFavs(loadFavs().filter(function(f){ return f.id !== id; }));
+      renderFavs();
+    };
+
     // ── Main Article ─────────────────────────────────────────────────────────
     var a = data.mainArticle;
     var bodyHTML = '';
@@ -377,6 +442,7 @@
       + '<div class="article-eyebrow">'
       +   '<span class="article-tag">Main Article</span>'
       +   (a.readTime ? '<span class="article-readtime">&#128337; ' + esc(a.readTime) + ' read</span>' : '')
+      +   '<button class="fav-save-btn" data-favtype="article" onclick="window._saveCurFav(\'article\')">&#9733; Save</button>'
       + '</div>'
       + '<h2 class="article-title">' + esc(a.title) + '</h2>'
       + (a.subtitle ? '<p class="article-subtitle">' + esc(a.subtitle) + '</p>' : '')
@@ -398,7 +464,7 @@
     }).join('');
 
     var potdHTML =
-      sectionDivider('Person of the Day')
+      '<div class="section-divider"><div class="section-divider-rule"></div><span class="section-divider-label">Person of the Day</span><div class="section-divider-rule"></div><button class="fav-save-btn" data-favtype="person" onclick="window._saveCurFav(\'person\')">&#9733; Save</button></div>'
       + '<section class="potd-wrap">'
       + '<div class="potd-grid">'
       +   '<div class="potd-portrait">' + portraitHTML + '</div>'
@@ -430,7 +496,7 @@
       : '';
 
     var otdHTML =
-      sectionDivider('On This Day')
+      '<div class="section-divider"><div class="section-divider-rule"></div><span class="section-divider-label">On This Day</span><div class="section-divider-rule"></div><button class="fav-save-btn" data-favtype="onthisday" onclick="window._saveCurFav(\'onthisday\')">&#9733; Save</button></div>'
       + '<section class="otd-wrap">'
       + '<div class="otd-card">'
       + '<div class="otd-card-inner' + (hasImage ? ' has-image' : '') + '">'
@@ -448,6 +514,13 @@
     var footerHTML = '<p class="last-updated">Last updated: ' + fmtDate(data.date) + '</p>';
 
     output.innerHTML = articleHTML + potdHTML + otdHTML + footerHTML;
+
+    window._curFavData = {
+      article:   { title: data.mainArticle.title,    contentDate: data.date },
+      person:    { title: data.personOfTheDay.name,  contentDate: data.date },
+      onthisday: { title: data.onThisDay.headline,   contentDate: data.date }
+    };
+    renderFavs();
 
     // ── Reading progress bar ─────────────────────────────────────────────────
     var bar     = document.getElementById('read-progress');
