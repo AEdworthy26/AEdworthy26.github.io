@@ -231,9 +231,11 @@
       var cards = secondary.map(function (item, i) {
         var hasBody = Array.isArray(item.body) && item.body.length > 0;
         var thumbContent = imgOrPlaceholder(item.image, item.title, 'card-thumb', cfg.icon);
-        var thumbHTML = item.url
-          ? '<a href="' + esc(item.url) + '" target="_blank" rel="noopener" tabindex="-1" style="display:block;overflow:hidden;">' + thumbContent + '</a>'
-          : '<div>' + thumbContent + '</div>';
+        var thumbHTML = hasBody
+          ? '<div style="cursor:pointer;overflow:hidden;" onclick="window._openStoryModal(window._newsItems[' + i + '])">' + thumbContent + '</div>'
+          : (item.url
+            ? '<a href="' + esc(item.url) + '" target="_blank" rel="noopener" tabindex="-1" style="display:block;overflow:hidden;">' + thumbContent + '</a>'
+            : '<div>' + thumbContent + '</div>');
         var titleHTML = hasBody
           ? '<h3 class="card-title" style="cursor:pointer;" onclick="window._openStoryModal(window._newsItems[' + i + '])">' + esc(item.title) + '</h3>'
           : (item.url
