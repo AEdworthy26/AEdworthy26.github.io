@@ -1,61 +1,61 @@
 // world-news-data.js
-// Auto-updated 2026-04-27 — do not edit manually
+// Auto-updated 2026-04-29 — do not edit manually
 
 var WORLD_NEWS = {
-  date: "2026-04-27",
+  date: "2026-04-29",
   main: {
-    title: "US-Iran Peace Talks Collapse Into 'No War, No Peace' Limbo as Ceasefires Fray",
-    category: "Geopolitics",
+    title: "UAE Quits OPEC After Nearly 60 Years, Dealing Potential Death Blow to Oil Cartel",
+    category: "Economics",
     content: [
-      "Diplomatic efforts to formally end the US-Iran war have entered a dangerous stalemate after a second round of direct talks in Pakistan collapsed before it even began. Washington cancelled a planned envoy trip to Islamabad — which would have been led by Steve Witkoff and Jared Kushner — after Iran signalled there were no plans for a direct meeting. Iran\'s foreign minister Abbas Araghchi is now travelling to Moscow to meet Vladimir Putin, signalling Tehran\'s intent to shore up its diplomatic backing from Russia as negotiations with Washington remain frozen.",
-      "The breakdown has left both sides in an uneasy limbo that analysts are describing as 'no war, no peace.' Each government appears to be betting that the other will blink first, but experts warn that a prolonged stalemate without a formal agreement carries its own serious risks — including the possibility of miscalculation tipping into renewed full-scale conflict. Oil markets have already reacted sharply, with Brent crude rising more than two percent on Monday following news that the second round of Pakistan-hosted talks had failed to materialise.",
-      "On the ground, the fragility of existing ceasefires is becoming increasingly apparent. Israel and Hezbollah have resumed trading strikes in Lebanon, with fresh satellite imagery revealing the massive scale of destruction already wrought on towns in the country\'s south. The Lebanese ceasefire, brokered earlier in the conflict, is now described as being on deeply shaky ground, raising fears of a broader re-escalation across the Levant that could draw in further regional actors.",
-      "The geopolitical ripple effects of the conflict are being felt far beyond the Middle East. From Australia to Vietnam, the sustained disruption to global oil supplies caused by the Iran war is fuelling a dramatic surge in electric vehicle sales, as consumers seek to insulate themselves from volatile petrol and diesel prices. Meanwhile, China — a key economic partner of Iran — is being watched closely by analysts for signs of how Beijing intends to navigate the crisis, with some suggesting it may seek to position itself as an indispensable back-channel mediator.",
-      "President Trump, speaking on Sunday, said Iranian leaders are free to call him directly if they wish to resume talks, framing the diplomatic impasse as Tehran\'s problem to solve. The remark came amid significant domestic distraction following a shooting incident at the White House Correspondents' Dinner, which temporarily drew attention away from the Iran crisis. With Iran\'s foreign minister in Moscow, ceasefire lines under strain in Lebanon, and oil prices climbing, the window for a negotiated settlement appears to be narrowing — leaving a volatile and unresolved conflict as the defining international crisis of the moment.",
+      "The United Arab Emirates has announced its withdrawal from OPEC, the Organisation of the Petroleum Exporting Countries, ending a membership stretching back almost six decades. The decision marks one of the most significant ruptures in the history of the oil cartel, which has long sought to coordinate production levels among major state-owned producers to stabilise and influence global energy prices. Analysts are already describing the departure as a potential death knell for an organisation whose grip on world oil markets has been visibly weakening for years.",
+      "The UAE has grown increasingly frustrated with OPEC\'s quota system, which Emirati officials have long argued unfairly caps exports relative to the country\'s actual production capacity. Abu Dhabi has invested heavily in expanding its oil infrastructure in recent years, and the quotas imposed by the cartel have prevented it from fully capitalising on those investments. The tension between the UAE\'s ambitions and OPEC\'s collective discipline has been a source of friction for well over a decade, and this departure represents the final breaking point.",
+      "The timing of the announcement is particularly significant, coming as Iran-related strains continue to reverberate through global energy markets. The ongoing US war with Iran has disrupted supply chains and shipping routes in the Persian Gulf, adding a layer of geopolitical volatility that has complicated OPEC\'s ability to manage oil prices with any consistency. In this environment, the UAE appears to have calculated that it stands to gain more from acting independently than from remaining bound by cartel agreements that no longer serve its interests.",
+      "The departure is expected to substantially weaken OPEC\'s influence at a moment when the organisation is already grappling with the long-term pressures of the global energy transition and competition from non-member producers. Saudi Arabia, OPEC\'s dominant member, now faces the prospect of attempting to hold the remaining bloc together without one of its most economically powerful Gulf neighbours. If other members interpret the UAE\'s move as a signal that the cartel\'s authority is terminally diminished, further defections cannot be ruled out.",
+      "For global energy markets, the implications are profound. A UAE free from quota constraints could significantly increase its output, placing downward pressure on oil prices at a time when many producing nations depend on elevated revenues to fund domestic spending. The move also raises fresh questions about the long-term future of multilateral energy governance, and whether any institution will be capable of filling the coordination vacuum left by a weakened OPEC. Energy traders and policymakers around the world will be watching closely to see how Saudi Arabia and the remaining members respond in the days and weeks ahead."
     ],
-    image: "https://images.unsplash.com/photo-1772299399227-8840776aa3c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxVUy1JcmFuJTIwUGVhY2UlMjBUYWxrcyUyMENvbGxhcHNlJTIwSW50byUyMHxlbnwwfDB8fHwxNzc3MjY2MDgyfDA&ixlib=rb-4.1.0&q=80&w=1080",
-    source: "The New York Times",
-    sourceUrl: "https://www.nytimes.com/2026/04/26/world/middleeast/iran-united-states-israel-war-truce.html"
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/d25d/live/b07940f0-4305-11f1-bd52-e755d604ece4.jpg",
+    source: "BBC News",
+    sourceUrl: "https://www.bbc.com/news/articles/cj4pxwlr52yo?at_medium=RSS&at_campaign=rss"
   },
   secondary: [
     {
       id: "s1",
-      title: "Mali\'s Defence Minister Killed in Coordinated Wave of Insurgent Attacks",
-      summary: "Mali\'s defence minister Sadio Camara was killed by a car bomb at his home as al-Qaida-linked militants and separatists launched one of the largest coordinated assaults on the country in years.",
+      title: "Somali Piracy Fears Resurge After Three Vessels Hijacked in a Week",
+      summary: "Three ships have been seized off the coast of Somalia in a single week, raising alarm that Somali piracy is making a dangerous comeback as international naval resources are stretched thin by Middle East operations.",
       body: [
-        "Sadio Camara, Mali\'s defence minister, was killed when a suicide car bomb exploded at his residence, the government confirmed on Sunday. The assassination came amid a sweeping wave of coordinated attacks the previous day, in which the al-Qaida-affiliated group JNIM claimed responsibility for strikes on Bamako\'s international airport and targets in at least four other cities across the country.",
-        "The scale and coordination of the assault marks a significant escalation in the Sahel\'s long-running jihadist insurgency, and poses a serious challenge to Mali\'s military government, which has relied heavily on Russian Wagner Group forces after expelling French troops. The killing of such a senior official signals that militants are capable of striking at the very heart of the Malian state."
+        "Three vessels have been hijacked in the waters off Somalia within the past week, including the merchant vessel Sward seized on 26 April, reviving fears of a resurgence in piracy around the strategically critical Horn of Africa. Security analysts believe pirates are exploiting a reduction in the regional naval presence as international forces have been redirected to the Middle East in connection with the US-Iran conflict.",
+        "Somali piracy was largely suppressed after a major international naval effort in the early 2010s, but the latest incidents suggest that the conditions enabling it — weakened governance onshore and reduced deterrence at sea — are reasserting themselves. The renewed threat adds further pressure to a global shipping industry already contending with disruption in the Red Sea and Persian Gulf, compounding delays and insurance costs for cargo travelling through some of the world\'s busiest maritime corridors."
       ],
-      image: "https://images.unsplash.com/photo-1724515069509-041738081bcf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxNYWxpJTVDfGVufDB8MHx8fDE3NzcyNjYwODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      image: "https://i.guim.co.uk/img/media/c29d72483201cad9e7040f02ba9a4d19431186cc/372_0_861_689/master/861.jpg?width=1200&quality=85&auto=format&fit=max&s=06c43652a093f18cf6058bf35e04a9c0",
       source: "The Guardian",
-      url: "https://www.theguardian.com/world/2026/apr/26/mali-defence-minister-killed-amid-flurry-of-insurgent-attacks",
-      category: "Conflict"
+      url: "https://www.theguardian.com/world/2026/apr/28/fears-resurgence-somalia-piracy-three-vessels-hijacked-past-week",
+      category: "Security"
     },
     {
       id: "s2",
-      title: "Grand Egyptian Museum Finally Opens Its Doors After Decades of Delays",
-      summary: "Egypt\'s long-awaited Grand Egyptian Museum, a vast new institution outside Cairo housing the world\'s largest collection of ancient Egyptian artefacts, has officially opened to the public after decades of planning and construction.",
+      title: "Russia Claims Africa Corps Foiled Coup in Mali as Rebel Insurgents Seize Towns",
+      summary: "Russia\'s defence ministry says its Africa Corps paramilitary group prevented a coup attempt in Mali after al-Qaida-affiliated insurgents and Tuareg rebels launched coordinated attacks on military bases and seized towns.",
       body: [
-        "The Grand Egyptian Museum, situated near the Giza pyramids, represents one of the most ambitious cultural infrastructure projects in the Arab world, designed to showcase thousands of artefacts — including the complete treasures of Tutankhamun — in a purpose-built space of extraordinary scale. Its opening marks the end of a drawn-out process that saw repeated delays stretching back over twenty years.",
-        "Egyptian authorities hope the museum will become a centrepiece of the country\'s tourism industry and a source of national pride, drawing millions of visitors annually from around the world. The opening is also seen as a diplomatic and cultural statement, positioning Egypt as a global steward of one of humanity\'s most celebrated ancient civilisations."
+        "Russia\'s Africa Corps — the successor organisation to the Wagner mercenary group — claims to have repelled a major insurgent offensive in Mali over the weekend, with the Kremlin stating that its forces inflicted 'irreplaceable losses' on rebel fighters while avoiding civilian casualties. The attacks, carried out by JNIM militants and Tuareg fighters, targeted military installations and penetrated into significant urban centres, inflicting serious casualties on Malian government troops.",
+        "The violence underscores the deepening instability across the Sahel, where al-Qaida-affiliated groups have been emboldened by their counterparts' success in Syria and are testing the limits of Mali\'s weakened junta government. Russia\'s increasing military footprint in the region, trading security guarantees for political influence and access to natural resources, means that any further deterioration in Mali directly implicates Moscow\'s strategic ambitions across West Africa."
       ],
-      image: "https://images.unsplash.com/photo-1767668425135-55d22434161a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxHcmFuZCUyMEVneXB0aWFuJTIwTXVzZXVtJTIwRmluYWxseSUyME9wZW5zJTIwSXRzJTIwRG9vcnMlMjBBZnRlciUyMERlY2FkZXMlMjBvZiUyMERlbGF5c3xlbnwwfDB8fHwxNzc3MjY2MDgyfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "NPR",
-      url: "https://www.npr.org/2026/04/26/nx-s1-5708771/egypts-grand-museum-opens-after-many-delays",
-      category: "Culture"
+      image: "https://i.guim.co.uk/img/media/d03fb17b17e0182f8c3e339197c958523a160ce2/1311_544_2889_2312/master/2889.jpg?width=1200&quality=85&auto=format&fit=max&s=0f5bd0b0f5085e882b9df6f5ce66a0ed",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/world/2026/apr/28/russia-claims-its-africa-corps-group-prevented-coup-in-mali-after-rebels-seize-towns",
+      category: "Conflict"
     },
     {
       id: "s3",
-      title: "Israeli President Seeks Plea Deal for Netanyahu Rather Than Granting Pardon",
-      summary: "Israeli President Isaac Herzog has decided against issuing a presidential pardon to Prime Minister Benjamin Netanyahu over his corruption convictions, instead pushing for a mediated plea agreement.",
+      title: "Ukraine Strikes Russian Oil Refinery for Third Time, Prompting Evacuations Near Tuapse",
+      summary: "A third Ukrainian drone or missile strike on a Russian oil refinery in Tuapse has sparked fires and forced the evacuation of nearby residents, with the Kremlin accusing Kyiv of deliberately destabilising global energy markets.",
       body: [
-        "President Herzog\'s decision not to pardon Netanyahu at this stage prolongs the legal and political uncertainty surrounding the Israeli prime minister, who was convicted on corruption charges and has been seeking relief through the presidential pardon mechanism. Officials say Herzog believes a negotiated plea deal — rather than an outright pardon — is the more appropriate path, and will push for mediation between Netanyahu\'s legal team and prosecutors.",
-        "The move adds a further layer of complexity to Israeli politics at an already turbulent moment, with the country engaged in ongoing military operations in Lebanon and closely entangled in the broader US-Iran conflict. Critics of Netanyahu have warned that any form of pardon or deal could set a troubling precedent for the rule of law in Israel, while his supporters argue the legal proceedings have been politically motivated."
+        "Residents living near the Tuapse oil refinery on Russia\'s Black Sea coast have been ordered to evacuate after Ukrainian forces struck the facility for the third time, igniting a large blaze that emergency services have been working to contain. The repeated targeting of the refinery signals a sustained Ukrainian strategy of striking deep into Russian energy infrastructure to impose economic costs and disrupt fuel supplies to the Russian military.",
+        "The Kremlin has condemned the attacks, framing them as an assault not merely on Russian territory but on global energy stability, a characterisation likely aimed at building international pressure against Kyiv\'s long-range strike campaign. The strikes come at a particularly sensitive moment for energy markets already rattled by the UAE\'s OPEC departure and ongoing disruption in the Persian Gulf, adding yet another layer of volatility to the outlook for oil supply."
       ],
-      image: "https://static01.nyt.com/images/2026/04/26/multimedia/26int-israel-pardon-wfjv/26int-israel-pardon-wfjv-mediumSquareAt3X.jpg",
-      source: "The New York Times",
-      url: "https://www.nytimes.com/2026/04/26/world/middleeast/israel-netanyahu-pardon-herzog.html",
-      category: "Politics"
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/757a/live/9b97dc60-430e-11f1-bd52-e755d604ece4.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.com/news/articles/cvgzd4qk7qgo?at_medium=RSS&at_campaign=rss",
+      category: "Conflict"
     }
   ]
 };

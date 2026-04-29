@@ -1,61 +1,61 @@
 // tech-news-data.js
-// Auto-updated 2026-04-27 — do not edit manually
+// Auto-updated 2026-04-29 — do not edit manually
 
 var TECH_NEWS = {
-  date: "2026-04-27",
+  date: "2026-04-29",
   main: {
-    title: "UK Cyber Chiefs Urge Nation to Abandon Passwords in Favour of Passkeys",
-    category: "Cybersecurity",
+    title: "Google Signs Major AI Deal With the Pentagon as Tech Giants Race for Defense Contracts",
+    category: "Artificial Intelligence",
     content: [
-      "The United Kingdom\'s National Cyber Security Centre (NCSC) has issued a landmark recommendation urging individuals and organisations across the country to move away from traditional passwords and adopt passkeys as their primary method of securing online accounts. The guidance marks one of the most significant shifts in mainstream cybersecurity advice in decades, reflecting a growing consensus among experts that the password — long the default gatekeeper of our digital lives — is fundamentally ill-suited to the modern threat landscape. The NCSC\'s endorsement carries considerable weight, as the agency serves as the UK\'s foremost authority on digital security and advises both government bodies and private enterprises on best practices.",
-      "Passkeys represent a fundamentally different approach to authentication, replacing the familiar string of characters with a cryptographic key pair that is unique to each user and each service. When a user registers with a website or app using a passkey, a private key is stored securely on their device — whether a smartphone, laptop, or hardware token — while a corresponding public key is held by the service. Authentication is then completed through biometrics such as a fingerprint or facial recognition, or a device PIN, meaning there is no password to steal, guess, or leak in a data breach.",
-      "The move comes as password-related security failures continue to be the root cause of a staggering proportion of cyberattacks globally. Credential stuffing, phishing campaigns, and brute-force attacks all rely on the exploitability of passwords, and despite years of advice urging users to create long, unique passwords for every account and store them in a password manager, compliance rates remain worryingly low. Passkeys sidestep these human-factor vulnerabilities entirely, since they cannot be reused across sites, cannot be phished in the traditional sense, and are never transmitted over the internet in a form that could be intercepted.",
-      "Major technology platforms have been quietly laying the groundwork for passkey adoption for several years, with Apple, Google, and Microsoft all integrating passkey support into their operating systems and browsers as part of the FIDO2 standard. Consumers who use services from these companies may already have encountered passkey prompts without fully understanding what they were agreeing to. The NCSC\'s public-facing campaign is designed to demystify the technology and accelerate uptake among everyday users who might otherwise be reluctant to change long-established habits, with plain-language explainers accompanying the technical guidance.",
-      "The shift to passkeys is not without its challenges. Users who switch between devices from different ecosystems — for example, an Android phone and a Windows laptop — may encounter friction, and legacy systems at banks, government portals, and smaller businesses may take years to fully support the standard. There are also accessibility considerations for users who struggle with biometric authentication. Nevertheless, the NCSC\'s endorsement signals that the cybersecurity establishment believes the benefits decisively outweigh the transitional difficulties, and the agency has urged service providers to begin implementing passkey support as a matter of priority in order to protect their users from the ever-escalating tide of credential-based attacks."
+      "Google has signed a significant artificial intelligence deal with the United States Department of Defense, marking a major milestone in the growing relationship between Silicon Valley\'s biggest players and the American military. The agreement positions Google as one of several leading AI companies now formally embedded in Pentagon operations, signaling a broader shift in how the U.S. government is approaching the integration of cutting-edge AI into national security infrastructure. The deal underscores how rapidly the competitive landscape for government AI contracts has evolved, with tech giants now openly vying for influence within classified and operational defense networks.",
+      "Google is not alone in securing such an arrangement — the Pentagon has also inked separate deals with OpenAI and Elon Musk\'s xAI to deploy artificial intelligence on classified networks. This cluster of agreements reflects the Department of Defense\'s urgent desire to modernize its capabilities and leverage the most powerful AI systems commercially available. The moves come amid a notable dispute with Anthropic, the AI safety-focused startup, suggesting that not all negotiations between the government and AI firms have proceeded smoothly.",
+      "The Google deal is particularly notable given the company\'s turbulent history with military contracts. In 2018, a significant employee backlash over Project Maven — a Pentagon initiative to use AI for analyzing drone footage — led Google to decline renewing that contract, a decision that reverberated across the industry. The company\'s willingness to re-engage with defense work at this scale represents a substantial strategic reversal, one that reflects both the changed internal culture at Google and the immense financial and geopolitical stakes now attached to AI supremacy.",
+      "For the Pentagon, diversifying its AI partnerships across multiple vendors reduces reliance on any single provider and creates competitive pressure that may accelerate capability development. Having Google, OpenAI, and xAI all operating within defense frameworks simultaneously also raises complex questions about data security, interoperability, and the ethical guardrails that will govern how these systems are used in sensitive or classified contexts. Defense analysts note that the speed of these signings suggests the government is prioritizing capability acquisition over the slower, more deliberate procurement processes that have historically characterized major defense technology decisions.",
+      "The broader implications of these deals extend well beyond the immediate contracts themselves. As AI systems become increasingly central to intelligence analysis, logistics, cybersecurity, and potentially autonomous decision-making in conflict scenarios, the companies that build and maintain those systems will wield extraordinary influence over national security outcomes. Critics and AI ethics advocates are already raising alarms about transparency, accountability, and the long-term consequences of deeply integrating profit-driven AI firms into the machinery of the world\'s most powerful military — a debate that shows no signs of slowing as the contracts continue to multiply."
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/7683/live/03337050-3fd6-11f1-aec8-9b10f844369d.jpg",
-    source: "BBC News",
-    sourceUrl: "https://www.bbc.com/news/articles/cq8wnzly5j5o?at_medium=RSS&at_campaign=rss"
+    image: "https://static01.nyt.com/images/2026/04/28/multimedia/28biz-google-pentagon-fhzk/28biz-google-pentagon-fhzk-mediumSquareAt3X.jpg",
+    source: "The New York Times",
+    sourceUrl: "https://www.nytimes.com/2026/04/28/technology/google-ai-deal-pentagon.html"
   },
   secondary: [
     {
       id: "tc1",
-      title: "Musk vs. Altman: OpenAI Founding Battle Heads to Court in Oakland",
-      summary: "Elon Musk\'s lawsuit against Sam Altman and OpenAI goes to trial this week, with the case set to expose the bitter behind-the-scenes conflict over the company\'s founding mission and its pivot to a for-profit model.",
+      title: "Microsoft and OpenAI Restructure Their Partnership, Ending Exclusivity",
+      summary: "Microsoft will continue licensing OpenAI\'s technology but has relinquished its position as the startup\'s exclusive licensee, marking a significant shift in one of tech\'s most consequential partnerships.",
       body: [
-        "The legal showdown between Elon Musk and Sam Altman is finally arriving in a courtroom in Oakland, California, with Musk alleging that Altman broke the founding agreement that established OpenAI as a non-profit dedicated to the benefit of humanity rather than commercial gain. The trial is expected to feature testimony from some of Silicon Valley\'s most prominent figures and could have sweeping implications for how AI companies are structured and governed going forward.",
-        "The case cuts to the heart of tensions that have long simmered in the AI industry over whether safety-focused, mission-driven organisations can survive the enormous capital demands of frontier AI development without compromising their original ideals. A ruling against OpenAI could force significant structural changes at one of the world\'s most influential technology companies at a critical moment in the AI race."
+        "Microsoft, which has invested billions of dollars into OpenAI and built much of its Copilot AI ecosystem on the startup\'s models, will no longer hold exclusive rights to license OpenAI\'s technology going forward. The loosening of their partnership agreement signals a new phase for both companies, as OpenAI pursues broader commercial relationships and Microsoft seeks to diversify its own AI strategy.",
+        "The change carries significant implications for the competitive AI landscape, potentially allowing OpenAI to strike deeper deals with other major cloud providers and enterprises without restriction. It also reflects the rapidly maturing state of the AI industry, where the tight early-stage alliances that defined the field\'s initial boom are giving way to more complex, multi-party commercial arrangements."
       ],
-      image: "https://i.guim.co.uk/img/media/e58e6018ecf5d31f073cbecec654aa2d8ffd0a7b/0_0_3000_2400/master/3000.jpg?width=1200&quality=85&auto=format&fit=max&s=a9504195b92112a7533193b714caab5f",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/technology/2026/apr/26/musk-altman-openai-court",
+      image: "https://static01.nyt.com/images/2025/09/11/multimedia/27BIZ-MICROSOFT-OPENAI/11BIZ-OPENAI-1-qwbf-mediumSquareAt3X.jpg",
+      source: "The New York Times",
+      url: "https://www.nytimes.com/2026/04/27/technology/microsoft-openai-partnership.html",
       category: "Artificial Intelligence"
     },
     {
       id: "tc2",
-      title: "Met Police Investigates Hundreds of Officers After Palantir AI Surveillance Tool Uncovers Rule-Breaking",
-      summary: "London\'s Metropolitan Police has launched investigations into hundreds of its own officers after deploying an AI tool built by Palantir to monitor staff data and identify misconduct ranging from work-from-home violations to suspected corruption.",
+      title: "Humanoid Robots Set to Take on Baggage Handling Duties at Tokyo\'s Haneda Airport",
+      summary: "Japan Airlines will trial humanoid robots as baggage handlers at Haneda Airport, as Japan looks to robotics to address acute labor shortages driven by a surge in inbound tourism.",
       body: [
-        "The Metropolitan Police\'s use of Palantir\'s AI software over the course of a single week resulted in the identification of a wide spectrum of alleged rule-breaking among its own ranks, prompting a wave of internal investigations that has sent shockwaves through the force. The deployment highlights the growing willingness of law enforcement agencies to turn the surveillance tools typically aimed outward at the public inward upon their own personnel.",
-        "The use of Palantir — a company that has itself been the subject of considerable controversy over civil liberties concerns — to police the police raises profound questions about oversight, consent, and the appropriate scope of AI-powered workplace monitoring, even within institutions that operate under special public-trust obligations. Critics have warned that normalising such tools internally could accelerate their use in broader public surveillance contexts."
+        "Japan Airlines has announced plans to deploy humanoid robots on a trial basis at Tokyo\'s Haneda Airport, tasking them with baggage handling duties that have become increasingly strained as the country experiences record levels of inbound tourism. The robots will require periodic recharging breaks, but are expected to provide meaningful relief to human workers who are in short supply across many of Japan\'s service industries.",
+        "The experiment reflects Japan\'s broader strategic embrace of robotics and automation as a response to its aging population and shrinking workforce, challenges that are particularly acute in labor-intensive sectors like aviation ground services. If the trial proves successful, it could accelerate adoption of humanoid robots across airports and logistics operations both in Japan and internationally."
       ],
-      image: "https://i.guim.co.uk/img/media/1eeacbb3ed233aa92023d96822d37378c6bc54b4/348_0_3960_3168/master/3960.jpg?width=1200&quality=85&auto=format&fit=max&s=360840a1c2456b78a65194d80f3f9554",
+      image: "https://i.guim.co.uk/img/media/5472db1bfe40dac31b1f22a2b63217169aa018c8/201_0_3327_2661/master/3327.jpg?width=1200&quality=85&auto=format&fit=max&s=9d87ad003acbe30745467d0bcf7d50bd",
       source: "The Guardian",
-      url: "https://www.theguardian.com/uk-news/2026/apr/25/met-police-investigates-hundreds-officers-palantir-ai-tool",
-      category: "Artificial Intelligence"
+      url: "https://www.theguardian.com/world/2026/apr/28/humanoid-robots-baggage-handlers-japan-airports",
+      category: "Robotics"
     },
     {
       id: "tc3",
-      title: "New Robotic Control Software Lets Robots Learn From Each Other Across Different Hardware",
-      summary: "Researchers have developed a breakthrough robotic control system that prevents joint jamming and allows robots with entirely different physical configurations to share and transfer learned behaviours.",
+      title: "Apple\'s MacBook Pro M5 Sets a New Performance Benchmark for Professional Laptops",
+      summary: "Apple\'s latest MacBook Pro, powered by the new M5 chip family, delivers a significant leap in processing power while maintaining the long battery life that has defined the M-series lineup.",
       body: [
-        "A newly published robotic control framework is drawing attention for solving one of the persistent practical headaches of real-world robotics: the tendency of robotic joints to jam or overextend during complex tasks, particularly when machines are operating in unstructured environments. The software, described as providing 'kinematic intelligence,' teaches robots to understand and respect the physical limits of their own bodies in a more adaptive way than previous approaches allowed.",
-        "Perhaps more significantly, the system enables knowledge transfer between robots that have different underlying hardware, meaning a lesson learned by one robotic platform can be shared with and applied by a machine of an entirely different design. This capability could dramatically accelerate the pace at which robotic systems become practically useful across industries, reducing the need to train each new robot model entirely from scratch."
+        "Apple has refreshed its flagship MacBook Pro line with M5-series chips, introducing what reviewers are calling a meaningful generational performance jump that cements the Mac\'s standing as the benchmark for professional portable computing. The new models offer expanded storage options and come in a two-tier configuration depending on which variant of the M5 processor is selected.",
+        "The launch follows a strong year for Apple\'s Mac lineup, which has already seen the introduction of the budget MacBook Neo and an updated MacBook Air M5, suggesting Apple is systematically refreshing its entire computer portfolio. For creative professionals and developers, the combination of raw computational power and enduring battery life continues to make the MacBook Pro a compelling choice in an increasingly competitive laptop market."
       ],
-      image: "https://cdn.arstechnica.net/wp-content/uploads/2026/04/GettyImages-1455924520-1152x648.jpg",
-      source: "Ars Technica",
-      url: "https://arstechnica.com/science/2026/04/kinematic-intelligence-helps-robots-learn-their-limits/",
-      category: "Robotics"
+      image: "https://images.unsplash.com/photo-1667185614611-9e2400848f4d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxBcHBsZSU1Q3xlbnwwfDB8fHwxNzc3NDM5MDU5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/technology/2026/apr/28/apple-macbook-pro-m5-review-serious-power-still-long-battery-life",
+      category: "Hardware"
     }
   ]
 };

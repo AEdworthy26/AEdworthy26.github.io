@@ -1,61 +1,61 @@
 // us-politics-news-data.js
-// Auto-updated 2026-04-27 — do not edit manually
+// Auto-updated 2026-04-29 — do not edit manually
 
 var US_POLITICS_NEWS = {
-  date: "2026-04-27",
+  date: "2026-04-29",
   main: {
-    title: "Shooting at White House Correspondents' Dinner Raises Security Questions After Suspect Targeted Trump Officials",
+    title: "King Charles Urges Congress to Defend Democratic Norms in Historic Address, Raising Eyebrows at the White House",
     category: "Politics",
     content: [
-      "A gunman attempted to breach the White House Correspondents' Association dinner at the Washington Hilton on Saturday night, sending hundreds of journalists, cabinet members, and President Donald Trump scrambling for cover as shots rang out near the venue. The suspect, identified as Cole Tomas Allen, a 31-year-old teacher and engineer from Southern California, was taken into custody after Secret Service and law enforcement intervened before he could enter the ballroom where Trump and his guests were gathered. Trump later said publicly that he 'wasn\'t worried' during the incident, projecting calm even as those inside the event described diving under tables and scrambling for exits in a scene of considerable panic.",
-      "Writings recovered from Allen reveal that he had composed a document denouncing Trump and expressing a desire to target administration officials, according to authorities and reporting by CBS News, the New York Times, and the Washington Post. The alleged manifesto described political grievances and listed potential targets, painting a picture of premeditated intent rather than a spontaneous act. Trump, responding directly to the suspect\'s writings during a CBS News interview, pushed back on specific claims made in the document, calling veteran anchor Norah O\'Donnell 'disgraceful' for reading portions of the text on air.",
-      "Security experts and former law enforcement officials have raised pointed questions in the aftermath about the protocols surrounding the annual dinner, which this year drew not only the president but a large number of cabinet secretaries and senior administration figures. The Washington Post reported that the event was not granted the highest federal security designation, which would have unlocked a significantly broader array of federal resources and personnel. A former Secret Service agent told The Hill that the administration should seriously reconsider concentrating so many high-ranking officials — potentially a dozen or more in the line of succession — at a single public venue without maximum security measures in place.",
-      "Despite the fact that Allen never breached the ballroom itself, the incident marks the third major security scare involving Trump in as many years, compounding scrutiny of the protective apparatus surrounding the president and his inner circle. Security analysts quoted by the New York Times noted that while the perimeter held and the system 'worked as intended' in keeping the gunman out, the very occurrence of such an incident at a high-profile, well-publicized event underscores persistent vulnerabilities. The Justice Department also moved quickly to leverage the shooting for a separate political objective, with Acting Attorney General Todd Blanche urging a preservation group suing the White House over a ballroom renovation project to drop its lawsuit in the wake of the attack.",
-      "In the days following the shooting, the future of the White House Correspondents' Association dinner itself is uncertain, with journalists and organizers debating whether to move to a new venue, relocate to the East Wing of the White House, or restructure the event entirely. Trump weighed in, urging the WHCA to reschedule the dinner within 30 days, framing a swift return as a show of resilience. The suspect, Cole Allen, is due in court on Monday, where investigators are expected to present further evidence as the full scope of his alleged plot comes into sharper focus."
+      "King Charles III delivered a historic address to a joint session of Congress on Tuesday, using the rare platform to warn American lawmakers about the dangers of unchecked executive power and the importance of upholding democratic institutions. Without ever naming President Trump directly, the monarch\'s remarks were widely interpreted as a pointed commentary on the current political climate in the United States. The speech drew a prolonged standing ovation from many lawmakers, particularly Democrats, who saw in Charles\'s words a validation of their own concerns about the direction of American governance.",
+      "In his address, Charles emphasized the enduring importance of the U.S.-U.K. special relationship, calling it 'more important than ever in times of great uncertainty.' He highlighted the necessity of Western unity, offered implicit support for Ukraine, and underscored the value of democratic norms that both nations have historically championed. The carefully worded speech appeared designed to thread a diplomatic needle — strengthening bilateral ties while subtly pushing back against what many allies perceive as a drift away from established democratic conventions under the Trump administration.",
+      "The political reverberations on Capitol Hill were immediate. Democratic lawmakers reportedly cheered several passages that touched on institutional checks and balances, while Republican allies of the White House were visibly more restrained in their applause at key moments. Anonymous White House aides were said to have raised eyebrows at the King\'s framing, which some interpreted as an implicit rebuke of Trump\'s governing style, even as the administration publicly embraced the visit as a triumph of diplomacy and transatlantic friendship.",
+      "The speech came against a backdrop of genuine tension in the U.S.-U.K. relationship, with trade disputes and disagreements over the war in the Middle East complicating what both governments publicly describe as an unbreakable alliance. Charles\'s decision to address Congress at all — a rare occurrence for any foreign monarch — signaled the seriousness with which London views the current moment in Western politics. British officials were careful to frame the visit as apolitical, but the substance of the King\'s remarks made clear that the Crown was willing to use its unique moral authority to speak to broader democratic values.",
+      "The visit concluded with a lavish state dinner at the White House, where Trump presented himself as a gracious host and Charles offered a charming gift of a golden bell, quipping that the president should 'just give us a ring' if he ever needed to reach the British. Six Supreme Court justices were among the guests, alongside top administration officials, Republican lawmakers, and prominent billionaires. Despite the evening\'s warm optics, the day\'s most lasting political image remained the King standing before Congress, delivering a message about democratic accountability that resonated far beyond the ceremonial confines of the chamber."
     ],
-    image: "https://static01.nyt.com/images/2026/04/26/multimedia/26wwk-wchd-suspect-hpwb/26wwk-wchd-suspect-hpwb-mediumSquareAt3X.jpg",
-    source: "NPR",
-    sourceUrl: "https://www.npr.org/2026/04/26/nx-s1-5800124/whcd-shooting-investigation-underway-heres-what-we-know"
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/1ce6/live/05fc6d20-4380-11f1-b927-49e1f65be0b5.jpg",
+    source: "Washington Post",
+    sourceUrl: "https://www.washingtonpost.com/politics/2026/04/28/trump-king-charles-white-house-visit/"
   },
   secondary: [
     {
       id: "us1",
-      title: "Security Protocols Under Fire: WHCA Dinner Lacked Top Federal Security Designation",
-      summary: "Despite the presence of the president and numerous cabinet members, the White House Correspondents' Dinner was not granted the highest security status that would have unlocked full federal resources.",
+      title: "Grand Jury Indicts Former FBI Director James Comey a Second Time Over Cryptic Social Media Post",
+      summary: "A federal grand jury has indicted James Comey for a second time, charging him over a 2025 Instagram photo of seashells spelling out '8647,' which the Justice Department alleges constitutes a threat against President Trump\'s life.",
       body: [
-        "The Washington Post revealed that Saturday\'s White House Correspondents' Dinner, attended by President Trump and a large contingent of senior cabinet officials, was not classified at the highest federal security level, a designation that would have dramatically expanded the law enforcement footprint at the event. Former Secret Service officials told The Hill that the concentration of so many officials in the line of succession at a single public venue without maximum protections represents a significant strategic risk that the administration should now urgently reassess.",
-        "The revelation has intensified congressional and public debate about how security resources are allocated for high-profile political and media events, and whether the traditionally press-focused nature of the correspondents' dinner has historically led organizers and officials to underestimate its security requirements. Experts say the incident will likely prompt a fundamental review of how such gatherings are planned and protected going forward."
+        "The indictment centers on a photo Comey posted to Instagram last year showing seashells arranged on a beach to read '86 47' — a combination that some interpreted as a call to 'eighty-six,' or eliminate, the 47th president. Federal prosecutors argued before the grand jury that the post amounted to an unlawful threat against a sitting president, a charge Comey and his legal team are expected to vigorously contest. This marks the second time Comey has faced federal indictment under the Trump-era Justice Department.",
+        "The case has intensified debate over the boundary between political expression and criminal incitement, with civil liberties advocates warning that the prosecution sets a dangerous precedent for prosecuting ambiguous speech. Critics of the administration allege the charges represent a continuation of Trump\'s long-running political vendetta against Comey, who he fired as FBI director in 2017 in a move that triggered the appointment of a special counsel."
       ],
-      image: "https://images.pexels.com/photos/19813740/pexels-photo-19813740.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      source: "Washington Post",
-      url: "https://www.washingtonpost.com/politics/2026/04/26/white-house-correspondents-dinner-security-status/",
+      image: "https://images.unsplash.com/photo-1551728069-3ae0d8b619a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxHcmFuZCUyMEp1cnklMjBJbmRpY3RzJTIwRm9ybWVyJTIwRkJJJTIwRGlyZWN0b3IlMjBKYW1lcyUyMENvbWV5JTIwYSUyMFNlY29uZCUyMFRpbWUlMjBPdmVyJTIwQ3J5cHRpYyUyMFNvY2lhbCUyME1lZGlhJTIwUG9zdHxlbnwwfDB8fHwxNzc3NDM4OTc1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "NPR",
+      url: "https://www.npr.org/2026/04/28/nx-s1-5803167/james-comey-indictment",
       category: "Politics"
     },
     {
       id: "us2",
-      title: "Who Is Cole Allen? Profile of the Suspected WHCA Dinner Shooter Emerges",
-      summary: "The 31-year-old California teacher and engineer suspected of the White House Correspondents' Dinner shooting is described by those who knew him as an ordinary, intelligent person, even as his writings revealed deep political grievances.",
+      title: "FCC Orders ABC to Seek Early Broadcast License Renewals Following Jimmy Kimmel\'s Melania Trump Joke",
+      summary: "The Federal Communications Commission has directed Disney-owned ABC stations to pursue early broadcast license renewals, a punitive action triggered by backlash over a joke late-night host Jimmy Kimmel made about First Lady Melania Trump.",
       body: [
-        "Cole Tomas Allen, the man identified by authorities as the suspect in Saturday\'s shooting, was known to students he mentored in Southern California as 'very smart' and presented publicly as a completely average individual, making the alleged attack all the more shocking to those in his community. Investigators say Allen sent a message to family members before the event stating his intention to target Trump administration officials, and that a written document recovered from him elaborated on his grievances and potential targets.",
-        "The case highlights the ongoing challenge for law enforcement in identifying so-called 'lone actor' threats — individuals who display few outward warning signs but harbor strong ideological motivations. Allen is scheduled to appear in court on Monday, where prosecutors are expected to lay out the evidence underpinning the charges against him as the investigation continues."
+        "The FCC\'s order requires the eight ABC-owned television stations to file for early license renewals, a rare and disruptive regulatory action that imposes significant administrative burden on the network and is widely seen as a form of political pressure. The move stems from a joke Kimmel made on his late-night program that drew the ire of the Trump administration, which has made no secret of its adversarial relationship with major media organizations. Disney is expected to challenge the order legally, arguing it constitutes government retaliation against protected speech.",
+        "The action has alarmed media law experts and First Amendment advocates, who warn that using the FCC\'s licensing power to punish broadcasters for editorial content crosses a fundamental constitutional line. The episode is the latest in a pattern of the Trump administration leveraging federal regulatory authority against media outlets perceived as hostile, raising broader concerns about press freedom and the independence of the nation\'s airwaves."
       ],
-      image: "https://images.unsplash.com/photo-1776079614815-22bc8a11bd5f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxXaG8lMjBJcyUyMENvbGUlMjBBbGxlbiUzRiUyMFByb2ZpbGUlMjBvZiUyMHRoZSUyMFN1c3BlY3RlZCUyMFdIQ0ElMjBEaW5uZXIlMjBTaG9vdGVyJTIwRW1lcmdlc3xlbnwwfDB8fHwxNzc3MjY2MTg0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      image: "https://images.pexels.com/photos/5061702/pexels-photo-5061702.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       source: "NPR",
-      url: "https://www.npr.org/2026/04/26/g-s1-118826/cole-allen-suspected-white-house-correspondents-dinner-shooter-profile",
+      url: "https://www.npr.org/2026/04/28/nx-s1-5802997/fcc-abc-license-renewal-melania-trump-jimmy-kimmel",
       category: "Politics"
     },
     {
       id: "us3",
-      title: "Georgia Senate GOP Primary Heats Up as Carter and Collins Clash in Debate",
-      summary: "Republican congressmen Buddy Carter and Mike Collins traded sharp attacks at a Georgia Senate GOP primary debate on Sunday, one day before early voting begins in the competitive race.",
+      title: "White House Pressures Speaker Johnson to Quickly Pass DHS Funding Bill",
+      summary: "The White House has issued an unusually direct call on House Speaker Mike Johnson to move swiftly on a homeland security spending bill, publicly rebuking the Republican leader for delaying action on a measure critical to funding immigration enforcement.",
       body: [
-        "Representatives Buddy Carter and Mike Collins dominated the exchanges at Sunday\'s Georgia Senate Republican primary debate, trading pointed barbs over their records and fitness for the Senate seat, while former college football coach Derek Dooley largely sought to position himself above the fray as a fresh-faced outsider candidate. The five-way field also includes former Senate candidate John Coyne and retired Brigadier General Jonathan McColumn, all vying for the GOP nomination to challenge Democratic incumbent Senator Jon Ossoff in what is expected to be one of the most competitive Senate races of the 2026 cycle.",
-        "The debate comes at a critical moment, with early voting opening Monday and the outcome of the primary carrying major implications for Republican efforts to expand their Senate majority. Georgia has remained a closely contested battleground since Ossoff\'s narrow 2021 victory, and national Republican strategists are watching the primary closely to assess which candidate offers the strongest path to flipping the seat."
+        "The White House\'s demand amounted to a rare public rebuke of the Speaker, who has stalled on bringing the Department of Homeland Security funding bill to the floor and suggested this week that the legislation required further changes before he could support it. The standoff highlights growing friction between the Trump administration and House Republican leadership over the pace and priorities of the congressional agenda, even as both sides publicly profess unity. DHS funding is considered a flagship issue for the administration, which has made border security and immigration enforcement central to its political identity.",
+        "The episode underscores the persistent challenges facing Republicans in translating the party\'s policy ambitions into legislative reality, with a narrow House majority leaving leadership with little room for defections. If Johnson fails to move quickly, the administration risks a lapse in homeland security appropriations that could embarrass the White House and undercut its messaging on immigration, one of the few issues where Trump retains strong approval among his political base."
       ],
-      image: "https://thehill.com/wp-content/uploads/sites/2/2026/04/AP26116782967184-e1777247822161.jpg?w=900",
-      source: "The Hill",
-      url: "https://thehill.com/homenews/campaign/5850187-gop-primary-georgia-senate-race/",
-      category: "Elections"
+      image: "https://static01.nyt.com/images/2026/04/28/multimedia/28dc-cong-dhs-qvmw/28dc-cong-dhs-qvmw-mediumSquareAt3X.jpg",
+      source: "New York Times",
+      url: "https://www.nytimes.com/2026/04/28/us/politics/congress-dhs-funding.html",
+      category: "Politics"
     }
   ]
 };
