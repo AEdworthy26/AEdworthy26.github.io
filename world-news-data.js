@@ -1,43 +1,43 @@
 // world-news-data.js
-// Auto-updated 2026-04-29 — do not edit manually
+// Auto-updated 2026-04-30 — do not edit manually
 
 var WORLD_NEWS = {
-  date: "2026-04-29",
+  date: "2026-04-30",
   main: {
-    title: "UAE Quits OPEC After Nearly 60 Years, Dealing Potential Death Blow to Oil Cartel",
-    category: "Economics",
+    title: "Iran War Costs Hit $25 Billion as Oil Prices Soar and Calls Grow for Hormuz Humanitarian Corridor",
+    category: "Geopolitics",
     content: [
-      "The United Arab Emirates has announced its withdrawal from OPEC, the Organisation of the Petroleum Exporting Countries, ending a membership stretching back almost six decades. The decision marks one of the most significant ruptures in the history of the oil cartel, which has long sought to coordinate production levels among major state-owned producers to stabilise and influence global energy prices. Analysts are already describing the departure as a potential death knell for an organisation whose grip on world oil markets has been visibly weakening for years.",
-      "The UAE has grown increasingly frustrated with OPEC\'s quota system, which Emirati officials have long argued unfairly caps exports relative to the country\'s actual production capacity. Abu Dhabi has invested heavily in expanding its oil infrastructure in recent years, and the quotas imposed by the cartel have prevented it from fully capitalising on those investments. The tension between the UAE\'s ambitions and OPEC\'s collective discipline has been a source of friction for well over a decade, and this departure represents the final breaking point.",
-      "The timing of the announcement is particularly significant, coming as Iran-related strains continue to reverberate through global energy markets. The ongoing US war with Iran has disrupted supply chains and shipping routes in the Persian Gulf, adding a layer of geopolitical volatility that has complicated OPEC\'s ability to manage oil prices with any consistency. In this environment, the UAE appears to have calculated that it stands to gain more from acting independently than from remaining bound by cartel agreements that no longer serve its interests.",
-      "The departure is expected to substantially weaken OPEC\'s influence at a moment when the organisation is already grappling with the long-term pressures of the global energy transition and competition from non-member producers. Saudi Arabia, OPEC\'s dominant member, now faces the prospect of attempting to hold the remaining bloc together without one of its most economically powerful Gulf neighbours. If other members interpret the UAE\'s move as a signal that the cartel\'s authority is terminally diminished, further defections cannot be ruled out.",
-      "For global energy markets, the implications are profound. A UAE free from quota constraints could significantly increase its output, placing downward pressure on oil prices at a time when many producing nations depend on elevated revenues to fund domestic spending. The move also raises fresh questions about the long-term future of multilateral energy governance, and whether any institution will be capable of filling the coordination vacuum left by a weakened OPEC. Energy traders and policymakers around the world will be watching closely to see how Saudi Arabia and the remaining members respond in the days and weeks ahead."
+      "The US-led war on Iran has now accumulated a cost of at least $25 billion over just two months of conflict, according to Pentagon estimates presented in congressional testimony by Defense Secretary Pete Hegseth. Hegseth\'s appearance before lawmakers was notable for what he declined to say as much as what he revealed — he offered no timeline for when the war might end, leaving both Congress and markets deeply uncertain about the conflict\'s trajectory. The admission has intensified scrutiny of the administration\'s strategic objectives and the absence of any clearly defined exit conditions.",
+      "Oil markets responded sharply on Thursday, with prices surging to their highest levels since 2022 following reports that US Central Command has prepared plans for a wave of 'short and powerful' strikes on Iran, as briefed to President Trump. Al Jazeera reported that the US blockade of Iranian ports has further stoked fears of prolonged supply disruptions, prompting President Trump to convene emergency meetings with major oil firms to explore ways of minimising the impact on domestic fuel prices. The convergence of military escalation and energy market volatility has alarmed governments and businesses worldwide.",
+      "Humanitarian organisations are now sounding urgent alarms about the blockade\'s devastating knock-on effects for some of the world\'s most vulnerable populations. Aid groups are calling for a dedicated humanitarian corridor through the Strait of Hormuz, warning that soaring oil prices and the naval blockade are preventing food, fuel, and medicine from reaching millions of people in desperate need across the wider region. NGOs say the economic shockwaves from the conflict are being felt most acutely in fragile states that depend on international supply chains for basic necessities.",
+      "The geopolitical ripple effects of the Iran conflict are reshaping alliances and pressure points far beyond the immediate theatre of war. Paraguay\'s delicate balancing act between Taiwan and China, South Africa\'s internal tensions, and Mali\'s insurgency all reflect a world order increasingly destabilised by the conflict\'s disruption to energy supplies and global diplomacy. Analysts warn that without a clear diplomatic off-ramp, the combination of economic strain and military escalation risks drawing additional regional actors into a broader confrontation.",
+      "Inside Iran, and across the Arab world more broadly, populations are grappling with the psychological and material weight of the ongoing conflict, with social media creators reportedly turning to gallows humour as a coping mechanism. The humanitarian situation is expected to worsen in the coming weeks if the Hormuz blockade continues, with aid organisations warning that the window for preventing a large-scale humanitarian crisis is narrowing rapidly. International pressure for a ceasefire or at minimum a humanitarian pause is growing, though no formal diplomatic initiative has yet gained traction among the major powers."
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/d25d/live/b07940f0-4305-11f1-bd52-e755d604ece4.jpg",
-    source: "BBC News",
-    sourceUrl: "https://www.bbc.com/news/articles/cj4pxwlr52yo?at_medium=RSS&at_campaign=rss"
+    image: "https://i.guim.co.uk/img/media/d9f25a6186b4d882994fd880b0c2e110d149a30e/538_0_6763_5413/master/6763.jpg?width=1200&quality=85&auto=format&fit=max&s=5f32b97a995cbd0b7497bc7987a93741",
+    source: "NPR",
+    sourceUrl: "https://www.npr.org/2026/04/29/g-s1-119333/the-iran-war-now-has-a-price-tag-25-billion-but-still-no-end-date"
   },
   secondary: [
     {
       id: "s1",
-      title: "Somali Piracy Fears Resurge After Three Vessels Hijacked in a Week",
-      summary: "Three ships have been seized off the coast of Somalia in a single week, raising alarm that Somali piracy is making a dangerous comeback as international naval resources are stretched thin by Middle East operations.",
+      title: "South Korean Court Sentences Ex-President Yoon to Seven Years in Prison",
+      summary: "An appeals court has sentenced ousted South Korean President Yoon Suk Yeol to seven years in prison for his role in the brief imposition of martial law in December 2024.",
       body: [
-        "Three vessels have been hijacked in the waters off Somalia within the past week, including the merchant vessel Sward seized on 26 April, reviving fears of a resurgence in piracy around the strategically critical Horn of Africa. Security analysts believe pirates are exploiting a reduction in the regional naval presence as international forces have been redirected to the Middle East in connection with the US-Iran conflict.",
-        "Somali piracy was largely suppressed after a major international naval effort in the early 2010s, but the latest incidents suggest that the conditions enabling it — weakened governance onshore and reduced deterrence at sea — are reasserting themselves. The renewed threat adds further pressure to a global shipping industry already contending with disruption in the Red Sea and Persian Gulf, compounding delays and insurance costs for cargo travelling through some of the world\'s busiest maritime corridors."
+        "The South Korean appeals court handed down the seven-year sentence after finding Yoon guilty of resisting arrest and bypassing a required Cabinet meeting before declaring martial law — a move that lasted only hours before being overturned by the National Assembly. The verdict marks one of the most consequential judicial outcomes in South Korean political history, following months of legal proceedings that gripped the nation and triggered widespread protests both for and against the former president.",
+        "Yoon\'s downfall is a stark reminder of the fragility of democratic institutions even in established democracies, and the sentencing is likely to reverberate through South Korean politics ahead of upcoming elections. The case has also drawn international attention as an example of judicial accountability for executive overreach, with observers watching closely to see whether Yoon mounts a further appeal to the Supreme Court."
       ],
-      image: "https://i.guim.co.uk/img/media/c29d72483201cad9e7040f02ba9a4d19431186cc/372_0_861_689/master/861.jpg?width=1200&quality=85&auto=format&fit=max&s=06c43652a093f18cf6058bf35e04a9c0",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/world/2026/apr/28/fears-resurgence-somalia-piracy-three-vessels-hijacked-past-week",
-      category: "Security"
+      image: "https://images.unsplash.com/photo-1558227133-970557764393?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTb3V0aCUyMEtvcmVhbiUyMENvdXJ0JTIwU2VudGVuY2VzJTIwRXgtUHJlc2lkZW50JTIwWW9vbiUyMHRvJTIwU2V2ZW4lMjBZZWFycyUyMGluJTIwUHJpc29ufGVufDB8MHx8fDE3Nzc1MjUyODN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "NPR",
+      url: "https://www.npr.org/2026/04/29/g-s1-119165/south-korean-court-sentences-ex-president-yoon",
+      category: "Politics"
     },
     {
       id: "s2",
-      title: "Russia Claims Africa Corps Foiled Coup in Mali as Rebel Insurgents Seize Towns",
-      summary: "Russia\'s defence ministry says its Africa Corps paramilitary group prevented a coup attempt in Mali after al-Qaida-affiliated insurgents and Tuareg rebels launched coordinated attacks on military bases and seized towns.",
+      title: "Russia Claims Africa Corps Foiled Coup in Mali as Heavy Fighting Footage Emerges",
+      summary: "Russia\'s defence ministry says its Africa Corps paramilitary group prevented a coup in Mali after rebels seized several towns, with video emerging of intense gun battles between Malian forces and insurgents.",
       body: [
-        "Russia\'s Africa Corps — the successor organisation to the Wagner mercenary group — claims to have repelled a major insurgent offensive in Mali over the weekend, with the Kremlin stating that its forces inflicted 'irreplaceable losses' on rebel fighters while avoiding civilian casualties. The attacks, carried out by JNIM militants and Tuareg fighters, targeted military installations and penetrated into significant urban centres, inflicting serious casualties on Malian government troops.",
-        "The violence underscores the deepening instability across the Sahel, where al-Qaida-affiliated groups have been emboldened by their counterparts' success in Syria and are testing the limits of Mali\'s weakened junta government. Russia\'s increasing military footprint in the region, trading security guarantees for political influence and access to natural resources, means that any further deterioration in Mali directly implicates Moscow\'s strategic ambitions across West Africa."
+        "The Kremlin-controlled Africa Corps — successor to the former Wagner mercenary group — claimed it had repelled a significant rebel offensive in Mali over the weekend, alleging it inflicted 'irreplaceable losses' on insurgents while avoiding civilian casualties. Footage published by the Russian mercenaries showed a heavy firefight between Mali\'s military and rebel forces, offering a rare and visceral glimpse into the ongoing instability gripping the Sahel nation.",
+        "The claims are impossible to independently verify, and the assertion that civilian casualties were avoided has been met with scepticism by human rights observers familiar with Africa Corps' operational history in the region. Mali\'s military junta, which expelled French forces and turned to Russia for security support, remains deeply dependent on the Africa Corps presence — a dynamic that has drawn sustained criticism from Western governments and regional bodies alike."
       ],
       image: "https://i.guim.co.uk/img/media/d03fb17b17e0182f8c3e339197c958523a160ce2/1311_544_2889_2312/master/2889.jpg?width=1200&quality=85&auto=format&fit=max&s=0f5bd0b0f5085e882b9df6f5ce66a0ed",
       source: "The Guardian",
@@ -46,16 +46,16 @@ var WORLD_NEWS = {
     },
     {
       id: "s3",
-      title: "Ukraine Strikes Russian Oil Refinery for Third Time, Prompting Evacuations Near Tuapse",
-      summary: "A third Ukrainian drone or missile strike on a Russian oil refinery in Tuapse has sparked fires and forced the evacuation of nearby residents, with the Kremlin accusing Kyiv of deliberately destabilising global energy markets.",
+      title: "Paraguay Reaffirms Taiwan Ties as China Intensifies Pressure to Switch Allegiance",
+      summary: "Paraguay, one of Taiwan\'s last remaining formal diplomatic allies, is resisting sustained Chinese pressure to sever ties with Taipei and establish relations with Beijing instead.",
       body: [
-        "Residents living near the Tuapse oil refinery on Russia\'s Black Sea coast have been ordered to evacuate after Ukrainian forces struck the facility for the third time, igniting a large blaze that emergency services have been working to contain. The repeated targeting of the refinery signals a sustained Ukrainian strategy of striking deep into Russian energy infrastructure to impose economic costs and disrupt fuel supplies to the Russian military.",
-        "The Kremlin has condemned the attacks, framing them as an assault not merely on Russian territory but on global energy stability, a characterisation likely aimed at building international pressure against Kyiv\'s long-range strike campaign. The strikes come at a particularly sensitive moment for energy markets already rattled by the UAE\'s OPEC departure and ongoing disruption in the Persian Gulf, adding yet another layer of volatility to the outlook for oil supply."
+        "Despite significant economic incentives being dangled by Beijing, Paraguay\'s government has publicly reaffirmed its decades-long diplomatic relationship with Taiwan, a bond that has endured long after most of Latin America shifted recognition to the People\'s Republic of China. The unusual alliance is rooted in historical ties and ideological alignment, but analysts say China is now intensifying its courtship of Asunción with offers of trade deals and infrastructure investment that are increasingly difficult to dismiss.",
+        "The situation reflects a broader global pattern in which Beijing is methodically working to reduce Taiwan\'s already tiny circle of formal diplomatic partners, applying pressure at moments of political transition or economic vulnerability. For Taiwan, the potential loss of Paraguay would be a significant symbolic and diplomatic blow, further isolating the island at a time when cross-strait tensions remain elevated."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/757a/live/9b97dc60-430e-11f1-bd52-e755d604ece4.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/cvgzd4qk7qgo?at_medium=RSS&at_campaign=rss",
-      category: "Conflict"
+      image: "https://images.pexels.com/photos/36951290/pexels-photo-36951290.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      source: "The New York Times",
+      url: "https://www.nytimes.com/2026/04/29/world/paraguay-taiwan-china-pena.html",
+      category: "Diplomacy"
     }
   ]
 };

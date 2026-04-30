@@ -1,10 +1,10 @@
 // quiz-data.js
-// Auto-updated 2026-04-29 — do not edit manually
+// Auto-updated 2026-04-30 — do not edit manually
 
 window.QUIZ_DATA = {
-  date: '2026-04-29',
+  date: '2026-04-30',
   category: 'Transport',
-  question: 'The Mallard, the steam locomotive that holds the world speed record for steam traction, achieved its record-breaking run in 1938 — but on which specific stretch of railway line in England did it set that record?',
-  answer: 'Between Grantham and Peterborough, on the East Coast Main Line.',
-  funFact: 'The Mallard hit 126 mph (203 km/h) on 3rd July 1938 while hurtling downhill on Stoke Bank, just south of Grantham. The achievement came at a cost — the locomotive\'s middle big-end bearing overheated badly during the run and had to be repaired afterwards. The record has stood for over 85 years and is considered unbeatable in the steam era.'
+  question: 'The Eurostar train service made its first commercial passenger journey in November 1994 — but which station in London was its original terminus before St Pancras International took over in 2007?',
+  answer: 'Waterloo International',
+  funFact: 'Waterloo International was purpose-built for Eurostar at a cost of around £130 million, featuring five dedicated platforms beneath a sweeping curved glass roof designed by Nicholas Grimshaw. When services moved to St Pancras in 2007, the terminal was mothballed and sat largely unused for years, becoming one of Britain\'s more peculiar pieces of abandoned modern architecture. The platforms were eventually repurposed as part of wider Waterloo station redevelopment plans.'
 };
