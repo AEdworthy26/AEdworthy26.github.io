@@ -1,18 +1,18 @@
 // films-data.js
-// Auto-updated 2026-04-29 — do not edit manually
+// Auto-updated 2026-04-30 — do not edit manually
 
 var FILMS_DATA = {
-  date: "2026-04-29",
+  date: "2026-04-30",
   film: {
-    title: "Certified Copy",
-    director: "Abbas Kiarostami",
-    year: 2010,
-    genres: ["Romance", "Drama"],
-    desc: "A British author and a French antiques dealer meet in Tuscany and spend an afternoon together that quietly, mysteriously transforms — strangers becoming, or perhaps revealing themselves as, a long-married couple. Kiarostami plays this ontological sleight-of-hand with absolute confidence, never explaining the shift, trusting the viewer to feel it rather than decode it. Juliette Binoche won the Best Actress prize at Cannes for a performance of startling emotional nakedness, cycling through tenderness, irritation, and longing within single unbroken takes. The film is equally a meditation on authenticity and copies in art and in love, asking whether something must be original to be real, or whether living inside an illusion long enough makes it true. Luminous, quietly radical, and endlessly re-watchable.",
-    cast: ["Juliette Binoche", "William Shimell", "Jean-Claude Carrière"],
-    rating: 87,
+    title: "The Heartbreak Kid",
+    director: "Elaine May",
+    year: 1972,
+    genres: ["Comedy", "Romance"],
+    desc: "Elaine May\'s razor-sharp comedy follows a newlywed man who falls obsessively for a different woman during his honeymoon, dissecting the American myth of romantic perfectionism with gleeful, unsettling precision. Charles Grodin delivers one of the great deadpan comic performances in cinema history, his polite monstrousness somehow both appalling and irresistible at every turn. The film refuses to let its audience off the hook — we laugh, cringe, and gradually realize May is holding a mirror up to social climbing, self-delusion, and the restless hunger that prosperity breeds. Neil Simon\'s script crackles with wit but May elevates it into something genuinely strange and uncomfortable, ending on a note that lingers long after the credits roll. Criminally underseen compared to its peers, this is a dark gem from one of Hollywood\'s most underappreciated directors.",
+    cast: ["Charles Grodin", "Cybill Shepherd", "Jeannie Berlin"],
+    rating: 93,
     ratingSource: "Rotten Tomatoes",
-    ratingExtra: "Cannes Best Actress Award",
-    posterUrl: "https://upload.wikimedia.org/wikipedia/en/3/31/Copie-conforme-poster.png"
+    ratingExtra: "2 Academy Award Nominations",
+    posterUrl: "https://upload.wikimedia.org/wikipedia/en/f/f2/The_Heartbreak_Kid_%281972_film%29.jpg"
   }
 };

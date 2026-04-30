@@ -1,61 +1,61 @@
 // financial-news-data.js
-// Auto-updated 2026-04-29 — do not edit manually
+// Auto-updated 2026-04-30 — do not edit manually
 
 var FINANCIAL_NEWS = {
-  date: "2026-04-29",
+  date: "2026-04-30",
   main: {
-    title: "UAE Quits OPEC After 60 Years, Sending Shockwaves Through Global Energy Markets",
+    title: "Brent Crude Surges Past $126 as Iran Conflict Rattles Global Markets",
     category: "Energy & Markets",
     content: [
-      "The United Arab Emirates has announced its withdrawal from the Organization of the Petroleum Exporting Countries after nearly six decades of membership, delivering what many analysts are calling a potentially fatal blow to the oil cartel\'s cohesion and pricing power. The UAE, OPEC\'s third-largest producer, made the decision at a moment of extraordinary turbulence in global energy markets, with supply disruptions stemming from the ongoing Iran war already straining the world\'s ability to meet oil demand. The departure strips OPEC of one of its most consequential members and raises immediate questions about the group\'s capacity to coordinate output cuts or defend price floors going forward.",
-      "Energy markets reacted with sharp volatility to the news, with oil prices swinging between gains and losses as traders struggled to price in the competing dynamics at play. On one hand, the UAE\'s exit signals its intention to ramp up production independently, freed from OPEC\'s quota constraints — a bearish signal for prices over the medium term. On the other, the broader supply crisis triggered by the Iran war and disruptions to key shipping passages in the Middle East continues to provide a floor, leaving the net directional impact deeply uncertain.",
-      "The UAE\'s exit is widely seen as a geopolitical and commercial windfall for the United States, with President Trump having long accused OPEC of artificially inflating oil prices at consumers' expense. Abu Dhabi has been chafing under production quotas that it argued were disproportionately restricting its output while other members cheated on their own limits. By leaving, the UAE can pursue its stated goal of maximising production from its vast reserves without seeking OPEC\'s approval, aligning its interests more closely with major Western consumer nations.",
-      "The immediate implications for Saudi Arabia, OPEC\'s de facto leader, are severe. Riyadh has relied on the cartel as its primary instrument for managing oil revenues and stabilising its fiscal position, and the loss of the UAE weakens both the coalition\'s output base and its political legitimacy. Analysts at several major banks warned that if the UAE\'s departure emboldens other restless members — including Iraq and Kuwait, which have also bristled under quota arrangements — OPEC could face an existential fragmentation that would fundamentally reshape how the global oil market is governed.",
-      "Economists and market strategists are now watching closely to see how the UAE manages its ramp-up in practice, given that even outside OPEC, Abu Dhabi will need to exercise caution to avoid flooding a market already contending with enormous uncertainty. The Iran war has simultaneously removed significant volumes of supply while also raising the spectre of broader regional disruption, meaning a poorly timed surge in UAE output could trigger a destabilising price collapse. In the longer run, the unravelling of OPEC\'s cohesion may prove to be as consequential a structural shift in energy markets as the shale revolution — with profound implications for petrostates, central banks, and inflation outlooks worldwide."
+      "Oil prices surged to their highest level in nearly four years on Thursday, with Brent crude breaking through $126 per barrel as hopes of a near-term resolution to the Iran conflict continued to fade. The rally was triggered in part by reports that US Central Command has prepared plans for a wave of 'short and powerful' strikes on Iran, and by President Trump\'s assertion that the naval blockade of Iranian ports would remain in place indefinitely. The combination of geopolitical escalation and constrained supply has pushed energy markets into a state of acute anxiety not seen since the early days of the conflict.",
+      "The oil spike is reverberating well beyond the energy sector, injecting a fresh wave of inflationary pressure into economies that were already struggling with the downstream effects of the Iran war. UK refineries have been asked by the government to maximise jet fuel production amid growing fears that supply shortfalls could force airlines to ground planes. Energy minister Michael Shanks confirmed the government is actively monitoring fuel availability, signalling that contingency planning has moved from theoretical to operational.",
+      "For central banks on both sides of the Atlantic, the oil surge has dramatically complicated the policy calculus. The European Central Bank and the Bank of England were both expected to hold interest rates steady on Thursday, caught between the inflationary impulse of soaring energy costs and the growth-dampening effects of prolonged conflict and supply disruption. Analysts warn that if crude prices remain elevated, the window for rate cuts that many had anticipated in the second half of 2026 may close entirely, forcing policymakers into a painful stagflationary dilemma.",
+      "Adding a further layer of structural uncertainty to global oil markets, the United Arab Emirates is preparing to formally exit OPEC in May, a move analysts say was enabled by the Iran war. The conflict gave Abu Dhabi the political cover it needed to pursue an independent production strategy, and the UAE\'s departure is expected to further fragment the cartel\'s ability to manage global supply. With a major producer going solo at precisely the moment when supply anxiety is peaking, traders see little near-term relief from upward price pressure.",
+      "Financial markets broadly felt the strain, with equity indices paring gains driven by a strong night for megacap technology earnings. Risk sentiment soured as investors weighed the possibility that a sustained oil shock could erode corporate margins, dampen consumer spending, and force central banks into a more hawkish posture than markets had priced in. Bloomberg analysts described the situation as 'a crude awakening on inflation,' noting that the assumption of a short, contained conflict is rapidly being abandoned by institutional investors who are now repositioning for a prolonged period of elevated energy costs."
     ],
-    image: "https://i.guim.co.uk/img/media/3ce8265a9f46b7083880e7ce74b2155e33e80f27/915_0_6880_5504/master/6880.jpg?width=1200&quality=85&auto=format&fit=max&s=9555f10d8508cda997b91c3171434d99",
-    source: "The Guardian",
-    sourceUrl: "https://www.theguardian.com/business/2026/apr/28/uae-quit-opec-oil-exporters-cartel-donald-trump"
+    image: "https://images.pexels.com/photos/27275198/pexels-photo-27275198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    source: "Bloomberg Markets",
+    sourceUrl: "https://www.bloomberg.com/news/articles/2026-04-29/stock-market-today-dow-s-p-live-updates"
   },
   secondary: [
     {
       id: "fn1",
-      title: "Starbucks Posts Surprise Sales Surge, Lifts Outlook on Turnaround Progress",
-      summary: "Starbucks reported stronger-than-expected quarterly sales and raised its outlook, crediting its turnaround strategy with bringing younger and lower-income customers back into stores.",
+      title: "Big Tech Earnings Split: Alphabet Shines While Meta Slides on AI Spending Fears",
+      summary: "A blockbuster night for megacap tech earnings produced sharply divergent reactions, with Alphabet emerging as the standout winner while Meta shares fell as investors grew anxious about the scale of AI capital expenditure.",
       body: [
-        "Starbucks delivered an upbeat earnings report that exceeded Wall Street\'s expectations, with U.S. same-store sales rising on the back of improved store traffic — a key metric the chain had been struggling with for several quarters. Chief Executive Brian Niccol credited the company\'s ongoing turnaround plan, which has focused on simplifying the menu, speeding up service, and reengaging lapsed customers, particularly among younger and lower-income demographics who had drifted toward cheaper competitors.",
-        "The results sent a positive signal to investors who had been cautious about the pace of the chain\'s recovery, though management flagged that rising gas and utility costs remained a concern for consumer spending patterns. The company\'s raised full-year outlook suggested confidence that the momentum is sustainable, making Starbucks one of the more encouraging corporate earnings stories in an otherwise anxious reporting season."
+        "Alphabet, Meta, Amazon, and Microsoft all reported quarterly earnings simultaneously on Wednesday, flooding markets with a wave of results that revealed a growing divide in how investors are evaluating AI spending. Alphabet was the clear standout, with strong cloud growth and an earnings beat helping justify its raised spending projections, sending its stock higher in after-hours trading.",
+        "Meta, by contrast, saw its shares slide as investors questioned whether its aggressive AI investment strategy would translate into near-term returns. The divergence highlights a maturing skepticism on Wall Street about Big Tech\'s AI spending spree, with markets beginning to demand clearer timelines for monetisation rather than accepting heavy capital outlay on faith."
       ],
-      image: "https://images.unsplash.com/photo-1657696489802-e62ba8a6f68e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTdGFyYnVja3MlMjBQb3N0cyUyMFN1cnByaXNlJTIwU2FsZXMlMjBTdXJnZSUyQyUyMExpZnRzJTIwT3V0bG9vayUyMG9uJTIwVHVybmFyb3VuZCUyMFByb2dyZXNzfGVufDB8MHx8fDE3Nzc0MzkwMTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "The New York Times",
-      url: "https://www.nytimes.com/2026/04/28/business/starbucks-quarterly-earnings.html",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/d6a0/live/137a2f70-43f1-11f1-9113-1988573e8ff7.jpg",
+      source: "MarketWatch",
+      url: "https://www.marketwatch.com/story/why-alphabets-stock-is-the-standout-gainer-on-big-techs-monster-earnings-day-bb49b193?mod=mw_rss_topstories",
       category: "Corporate Earnings"
     },
     {
       id: "fn2",
-      title: "UK Faces £35bn Economic Hit and Recession Risk from Iran War Fallout",
-      summary: "Leading thinktank NIESR warned that Britain faces a £35 billion economic blow and a potential recession in 2026 as the financial consequences of the Iran war compound existing pressures on the economy.",
+      title: "Powell to Remain on Fed Board as Central Bank Holds Rates Amid Uncertainty",
+      summary: "The US Federal Reserve held interest rates steady and confirmed that chair Jerome Powell will remain on the Fed\'s rate-setting board after his term as chair expires in May.",
       body: [
-        "The National Institute of Economic and Social Research issued a stark warning that even under its most optimistic scenario, the UK economy will grow at a materially slower pace in both 2026 and 2027 as the spillover effects of the Iran war — including elevated energy prices, disrupted trade routes, and weakened business confidence — take hold. In a worst-case scenario, NIESR said the cumulative economic cost could reach £35 billion, enough to push the country into a technical recession.",
-        "The warning adds to a difficult economic backdrop for Chancellor Rachel Reeves, who is already navigating tight fiscal headroom while managing rising borrowing costs. The report underscores how geopolitical shocks in the Middle East are rapidly transmitting into Western economic data, with the UK\'s relative openness to trade and energy imports making it particularly exposed compared to more self-sufficient economies."
+        "In a decision that carries significant implications for monetary policy continuity, Jerome Powell announced he will stay on the Federal Reserve\'s board of governors even after stepping down as chair, overseeing what the central bank described as 'remaining steps in the process.' The Fed simultaneously voted to hold its benchmark interest rate unchanged, citing persistent uncertainty stemming from the Iran conflict and its effects on inflation and growth.",
+        "Powell\'s decision to remain on the board is seen as a stabilising signal at a moment of heightened tension between the Fed and the White House, where pressure for rate cuts has been a recurring theme. His continued presence is expected to provide institutional continuity during what could be a turbulent transition to a new Fed chair."
       ],
-      image: "https://i.guim.co.uk/img/media/c81d6d4dbd81966fcf66c4fd8a92682590394fed/321_0_2917_2333/master/2917.jpg?width=1200&quality=85&auto=format&fit=max&s=a2749f1347946f144eac0b90e8076736",
+      image: "https://i.guim.co.uk/img/media/4ddc756ef0d52abe5bd743622d8562c25f41ed75/170_0_4909_3928/master/4909.jpg?width=1200&quality=85&auto=format&fit=max&s=e9dee4d23673c7e3d035cf0f97d040c2",
       source: "The Guardian",
-      url: "https://www.theguardian.com/business/2026/apr/29/uk-risk-of-recession-this-year-over-impact-of-iran-war-thinktank-warns",
-      category: "Economics"
+      url: "https://www.theguardian.com/business/2026/apr/29/fed-jerome-powell-decision-hold-interest-rate",
+      category: "Monetary Policy"
     },
     {
       id: "fn3",
-      title: "Markets Tread Water as Fed Decision and Mega-Cap Tech Earnings Loom",
-      summary: "Global stocks fluctuated in cautious trading as investors positioned ahead of the Federal Reserve\'s interest rate decision and a packed week of earnings from the largest technology companies.",
+      title: "AstraZeneca Reverses Course with Surprise £300m UK Investment",
+      summary: "AstraZeneca has pledged £300 million in UK investment across two sites, reversing a prolonged pause in large-scale projects driven by dissatisfaction with the British business environment.",
       body: [
-        "Equity markets struggled to find direction as traders adopted a wait-and-see posture ahead of two major risk events: the Federal Reserve\'s monetary policy decision and quarterly results from several of the world\'s most valuable technology firms, including Meta Platforms. The uncertainty was compounded by volatile oil prices following the UAE\'s OPEC exit, leaving portfolio managers reluctant to make large directional bets.",
-        "The Fed is widely expected to hold rates steady at its current meeting, but investors are parsing any signal about the timeline for cuts given persistent inflation pressures from elevated energy costs and ongoing supply chain disruptions tied to the Middle East conflict. Meanwhile, the earnings from mega-cap tech firms are seen as a bellwether for the health of corporate America\'s investment in artificial intelligence, with Meta in particular facing scrutiny over whether its AI spending can translate into revenue streams beyond its core advertising business."
+        "Britain\'s largest drugmaker announced the investment U-turn in a move welcomed by Prime Minister Keir Starmer, who has made attracting major corporate commitments a central pillar of his economic growth agenda. AstraZeneca had previously stalled UK expansion plans, citing concerns about regulatory conditions and the availability of skilled labour, making the reversal a notable vote of confidence in the domestic pharmaceutical environment.",
+        "The £300m commitment spans two sites and is expected to support both manufacturing capacity and research operations. The announcement comes at a sensitive moment for UK industrial policy, as the government seeks to demonstrate that Britain remains a competitive destination for life sciences investment in the post-Brexit landscape."
       ],
-      image: "https://images.unsplash.com/photo-1632507127573-f4098f6f027f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxNYXJrZXRzJTIwVHJlYWQlMjBXYXRlciUyMGFzJTIwRmVkJTIwRGVjaXNpb24lMjBhbmQlMjBNZWdhLUNhcCUyMFRlY2glMjBFYXJuaW5ncyUyMExvb218ZW58MHwwfHx8MTc3NzQzOTAyMHww&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "Bloomberg",
-      url: "https://www.bloomberg.com/news/articles/2026-04-28/asian-stocks-set-for-muted-open-after-us-selloff-markets-wrap",
-      category: "Markets"
+      image: "https://i.guim.co.uk/img/media/7d65f6db020383477ad5c00f415db8777a305d58/113_0_4024_3220/master/4024.jpg?width=1200&quality=85&auto=format&fit=max&s=0d5743dc71799323d18576888040d741",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/business/2026/apr/29/astrazeneca-makes-surprise-u-turn-with-300m-pharma-investment",
+      category: "Business"
     }
   ]
 };

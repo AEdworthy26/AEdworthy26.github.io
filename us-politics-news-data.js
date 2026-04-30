@@ -1,60 +1,60 @@
 // us-politics-news-data.js
-// Auto-updated 2026-04-29 — do not edit manually
+// Auto-updated 2026-04-30 — do not edit manually
 
 var US_POLITICS_NEWS = {
-  date: "2026-04-29",
+  date: "2026-04-30",
   main: {
-    title: "King Charles Urges Congress to Defend Democratic Norms in Historic Address, Raising Eyebrows at the White House",
+    title: "House Passes Budget Blueprint to Unlock $70 Billion for Immigration Enforcement as Johnson Quashes Internal Revolts",
     category: "Politics",
     content: [
-      "King Charles III delivered a historic address to a joint session of Congress on Tuesday, using the rare platform to warn American lawmakers about the dangers of unchecked executive power and the importance of upholding democratic institutions. Without ever naming President Trump directly, the monarch\'s remarks were widely interpreted as a pointed commentary on the current political climate in the United States. The speech drew a prolonged standing ovation from many lawmakers, particularly Democrats, who saw in Charles\'s words a validation of their own concerns about the direction of American governance.",
-      "In his address, Charles emphasized the enduring importance of the U.S.-U.K. special relationship, calling it 'more important than ever in times of great uncertainty.' He highlighted the necessity of Western unity, offered implicit support for Ukraine, and underscored the value of democratic norms that both nations have historically championed. The carefully worded speech appeared designed to thread a diplomatic needle — strengthening bilateral ties while subtly pushing back against what many allies perceive as a drift away from established democratic conventions under the Trump administration.",
-      "The political reverberations on Capitol Hill were immediate. Democratic lawmakers reportedly cheered several passages that touched on institutional checks and balances, while Republican allies of the White House were visibly more restrained in their applause at key moments. Anonymous White House aides were said to have raised eyebrows at the King\'s framing, which some interpreted as an implicit rebuke of Trump\'s governing style, even as the administration publicly embraced the visit as a triumph of diplomacy and transatlantic friendship.",
-      "The speech came against a backdrop of genuine tension in the U.S.-U.K. relationship, with trade disputes and disagreements over the war in the Middle East complicating what both governments publicly describe as an unbreakable alliance. Charles\'s decision to address Congress at all — a rare occurrence for any foreign monarch — signaled the seriousness with which London views the current moment in Western politics. British officials were careful to frame the visit as apolitical, but the substance of the King\'s remarks made clear that the Crown was willing to use its unique moral authority to speak to broader democratic values.",
-      "The visit concluded with a lavish state dinner at the White House, where Trump presented himself as a gracious host and Charles offered a charming gift of a golden bell, quipping that the president should 'just give us a ring' if he ever needed to reach the British. Six Supreme Court justices were among the guests, alongside top administration officials, Republican lawmakers, and prominent billionaires. Despite the evening\'s warm optics, the day\'s most lasting political image remained the King standing before Congress, delivering a message about democratic accountability that resonated far beyond the ceremonial confines of the chamber."
+      "Speaker Mike Johnson steered the House through a turbulent Wednesday, securing a narrow 215-211-1 party-line vote to adopt a budget blueprint that unlocks up to $70 billion for immigration enforcement agencies. The measure clears the procedural path for Republicans to begin drafting a filibuster-proof reconciliation bill that would fund Immigration and Customs Enforcement and Customs and Border Protection. The lone non-party vote came from Rep. Kevin Kiley of California, who voted present, underscoring the razor-thin margins Johnson continues to navigate in a fractious caucus.",
+      "The budget blueprint is a central pillar of the Republican plan to reopen the long-shuttered Department of Homeland Security, which has remained in a state of legislative limbo for months. By routing the funding through the reconciliation process, GOP leaders aim to bypass the 60-vote Senate filibuster threshold, allowing the bill to advance with a simple majority. The move represents one of the most significant congressional actions on immigration enforcement since the start of the Trump administration\'s second term.",
+      "Johnson\'s path to the vote was far from smooth. Over the course of several tense hours on and around the chamber floor, the Speaker and fellow Republican leaders engaged in intensive negotiations with holdouts on multiple fronts simultaneously — including a surveillance bill and a farm policy measure — before finally threading the needle on the budget resolution. Lawmakers described the atmosphere as chaotic, with Republican leaders cajoling reluctant members right up until the gavel fell.",
+      "The farm bill rebellion proved particularly difficult to manage. A bloc of agricultural-state Republicans had threatened to withhold support for the budget blueprint unless their concerns about farm policy were addressed, creating a multi-front standoff for leadership. Johnson ultimately quashed the revolt through a combination of procedural maneuvering and political persuasion, though the underlying tensions over agricultural subsidies and rural priorities remain unresolved heading into the next phase of the reconciliation fight.",
+      "The vote now shifts the legislative battlefield to the Senate, where the reconciliation bill will face its own set of challenges and intra-party negotiations. Democrats have uniformly opposed the immigration enforcement funding, characterizing the spending as a vehicle for mass deportation operations and the erosion of due process protections. For Republicans, the successful passage of the blueprint marks a meaningful legislative milestone in President Trump\'s broader effort to reshape federal immigration policy ahead of the 2026 midterm elections."
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/1ce6/live/05fc6d20-4380-11f1-b927-49e1f65be0b5.jpg",
-    source: "Washington Post",
-    sourceUrl: "https://www.washingtonpost.com/politics/2026/04/28/trump-king-charles-white-house-visit/"
+    image: "https://static01.nyt.com/images/2026/04/29/multimedia/29DC-BUDGET-lhvb/29DC-BUDGET-lhvb-mediumSquareAt3X.jpg",
+    source: "The New York Times",
+    sourceUrl: "https://www.nytimes.com/2026/04/29/us/politics/house-ice-budget-immigration.html"
   },
   secondary: [
     {
       id: "us1",
-      title: "Grand Jury Indicts Former FBI Director James Comey a Second Time Over Cryptic Social Media Post",
-      summary: "A federal grand jury has indicted James Comey for a second time, charging him over a 2025 Instagram photo of seashells spelling out '8647,' which the Justice Department alleges constitutes a threat against President Trump\'s life.",
+      title: "Former FBI Director Comey Indicted Over Seashell Post, Lawyers Vow to Fight Charges as Vindictive",
+      summary: "James Comey surrendered to federal authorities after being indicted on charges that a 2025 Instagram post featuring a seashell arrangement constituted a threat against President Trump\'s life.",
       body: [
-        "The indictment centers on a photo Comey posted to Instagram last year showing seashells arranged on a beach to read '86 47' — a combination that some interpreted as a call to 'eighty-six,' or eliminate, the 47th president. Federal prosecutors argued before the grand jury that the post amounted to an unlawful threat against a sitting president, a charge Comey and his legal team are expected to vigorously contest. This marks the second time Comey has faced federal indictment under the Trump-era Justice Department.",
-        "The case has intensified debate over the boundary between political expression and criminal incitement, with civil liberties advocates warning that the prosecution sets a dangerous precedent for prosecuting ambiguous speech. Critics of the administration allege the charges represent a continuation of Trump\'s long-running political vendetta against Comey, who he fired as FBI director in 2017 in a move that triggered the appointment of a special counsel."
+        "Acting Attorney General Todd Blanche announced that prosecutors had spent months investigating the post, in which Comey shared an image of seashells arranged to read '86 47' — a sequence the government argues was a coded call for violence against the 47th president. Comey made his first court appearance following the indictment, during which his legal team signaled they would mount an aggressive defense against what they described as a politically motivated prosecution. Legal experts across the spectrum have expressed significant skepticism that the government can secure a conviction, given the indirect nature of the alleged threat.",
+        "Comey\'s lawyers have indicated they plan to challenge the charges on First Amendment grounds and argue the prosecution is vindictive, stemming from the longstanding animosity between Trump and the former FBI director he fired in 2017. The case has ignited a broader debate about the limits of prosecutorial discretion and whether the Justice Department is being weaponized against political adversaries — a charge the administration flatly denies."
       ],
-      image: "https://images.unsplash.com/photo-1551728069-3ae0d8b619a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxHcmFuZCUyMEp1cnklMjBJbmRpY3RzJTIwRm9ybWVyJTIwRkJJJTIwRGlyZWN0b3IlMjBKYW1lcyUyMENvbWV5JTIwYSUyMFNlY29uZCUyMFRpbWUlMjBPdmVyJTIwQ3J5cHRpYyUyMFNvY2lhbCUyME1lZGlhJTIwUG9zdHxlbnwwfDB8fHwxNzc3NDM4OTc1fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "NPR",
-      url: "https://www.npr.org/2026/04/28/nx-s1-5803167/james-comey-indictment",
+      image: "https://images.unsplash.com/photo-1771340590060-be598dfb81bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxGb3JtZXIlMjBGQkklMjBEaXJlY3RvciUyMENvbWV5JTIwSW5kaWN0ZWQlMjBPdmVyJTIwU2Vhc2hlbGwlMjBQb3N0JTJDJTIwTGF3eWVycyUyMFZvdyUyMHRvJTIwRmlnaHQlMjBDaGFyZ2VzJTIwYXMlMjBWaW5kaWN0aXZlfGVufDB8MHx8fDE3Nzc1MjUzODB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "BBC News",
+      url: "https://www.bbc.com/news/articles/clyp70l1egeo?at_medium=RSS&at_campaign=rss",
       category: "Politics"
     },
     {
       id: "us2",
-      title: "FCC Orders ABC to Seek Early Broadcast License Renewals Following Jimmy Kimmel\'s Melania Trump Joke",
-      summary: "The Federal Communications Commission has directed Disney-owned ABC stations to pursue early broadcast license renewals, a punitive action triggered by backlash over a joke late-night host Jimmy Kimmel made about First Lady Melania Trump.",
+      title: "Florida Redistricting Map Could Hand Republicans Up to Four Additional House Seats Before Midterms",
+      summary: "Florida lawmakers have passed a new congressional voting map drawn by Governor Ron DeSantis that is designed to flip up to four House seats from Democratic to Republican control.",
       body: [
-        "The FCC\'s order requires the eight ABC-owned television stations to file for early license renewals, a rare and disruptive regulatory action that imposes significant administrative burden on the network and is widely seen as a form of political pressure. The move stems from a joke Kimmel made on his late-night program that drew the ire of the Trump administration, which has made no secret of its adversarial relationship with major media organizations. Disney is expected to challenge the order legally, arguing it constitutes government retaliation against protected speech.",
-        "The action has alarmed media law experts and First Amendment advocates, who warn that using the FCC\'s licensing power to punish broadcasters for editorial content crosses a fundamental constitutional line. The episode is the latest in a pattern of the Trump administration leveraging federal regulatory authority against media outlets perceived as hostile, raising broader concerns about press freedom and the independence of the nation\'s airwaves."
+        "The newly approved map restructures several competitive and Democratic-leaning districts across Florida, boosting Republican incumbents and making it significantly harder for Democratic challengers to win. The redistricting effort is part of a coordinated national Republican strategy to maximize the party\'s House majority ahead of the 2026 midterm elections, with Florida serving as one of the most consequential battlegrounds in that effort. Analysts note that the GOP now holds a slight overall edge over Democrats in the national redistricting landscape.",
+        "The move mirrors similar efforts underway in Louisiana, where Governor Jeff Landry is preparing to suspend House primaries scheduled for May 16 to allow lawmakers to redraw the congressional map following a court ruling. Together, these state-level redistricting actions reflect the Trump administration\'s active role in shaping the electoral map to protect and expand its congressional majority heading into what is expected to be a highly competitive midterm cycle."
       ],
-      image: "https://images.pexels.com/photos/5061702/pexels-photo-5061702.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      image: "https://images.unsplash.com/photo-1650853774391-d75b7245056b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxGbG9yaWRhJTIwUmVkaXN0cmljdGluZyUyME1hcCUyMENvdWxkJTIwSGFuZCUyMFJlcHVibGljYW5zJTIwVXAlMjB0byUyMEZvdXIlMjBBZGRpdGlvbmFsJTIwSG91c2UlMjBTZWF0cyUyMEJlZm9yZSUyME1pZHRlcm1zfGVufDB8MHx8fDE3Nzc1MjUzODB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       source: "NPR",
-      url: "https://www.npr.org/2026/04/28/nx-s1-5802997/fcc-abc-license-renewal-melania-trump-jimmy-kimmel",
+      url: "https://www.npr.org/2026/04/29/nx-s1-5804703/florida-redistricting-voting-map-republicans-house-seats",
       category: "Politics"
     },
     {
       id: "us3",
-      title: "White House Pressures Speaker Johnson to Quickly Pass DHS Funding Bill",
-      summary: "The White House has issued an unusually direct call on House Speaker Mike Johnson to move swiftly on a homeland security spending bill, publicly rebuking the Republican leader for delaying action on a measure critical to funding immigration enforcement.",
+      title: "Trump Administration Moves to Dismiss National Science Board Members, Raising Fears Over Agency Independence",
+      summary: "The Trump administration has initiated the removal of members of the National Science Board, the governing body of the National Science Foundation, in a move that dismissed members say threatens the agency\'s scientific independence.",
       body: [
-        "The White House\'s demand amounted to a rare public rebuke of the Speaker, who has stalled on bringing the Department of Homeland Security funding bill to the floor and suggested this week that the legislation required further changes before he could support it. The standoff highlights growing friction between the Trump administration and House Republican leadership over the pace and priorities of the congressional agenda, even as both sides publicly profess unity. DHS funding is considered a flagship issue for the administration, which has made border security and immigration enforcement central to its political identity.",
-        "The episode underscores the persistent challenges facing Republicans in translating the party\'s policy ambitions into legislative reality, with a narrow House majority leaving leadership with little room for defections. If Johnson fails to move quickly, the administration risks a lapse in homeland security appropriations that could embarrass the White House and undercut its messaging on immigration, one of the few issues where Trump retains strong approval among his political base."
+        "The National Science Board oversees the National Science Foundation, which funds billions of dollars in basic scientific research across American universities and institutions each year. Dismissed board members warned that the firings represent a direct assault on the independence of one of the country\'s most important scientific funding bodies, potentially subordinating research priorities to political considerations. The move follows a broader pattern of the administration restructuring or downsizing federal scientific and regulatory agencies.",
+        "The dismissals come alongside separate reporting that EPA Administrator Lee Zeldin has overseen sweeping rollbacks of environmental regulations, eliminated entire departments within the agency, and terminated the contracts of numerous scientists — changes that critics say are systematically dismantling the federal government\'s capacity for independent scientific oversight. Together, these actions signal a sustained and deliberate effort by the Trump administration to reshape the federal bureaucracy\'s relationship with scientific expertise and regulatory authority."
       ],
-      image: "https://static01.nyt.com/images/2026/04/28/multimedia/28dc-cong-dhs-qvmw/28dc-cong-dhs-qvmw-mediumSquareAt3X.jpg",
-      source: "New York Times",
-      url: "https://www.nytimes.com/2026/04/28/us/politics/congress-dhs-funding.html",
+      image: "https://static01.nyt.com/images/2026/04/29/multimedia/29dc-guns-twkf/29dc-guns-twkf-mediumSquareAt3X.jpg",
+      source: "NPR",
+      url: "https://www.npr.org/2026/04/29/nx-s1-5802921/trump-administration-moves-to-dismiss-members-of-the-national-science-board",
       category: "Politics"
     }
   ]

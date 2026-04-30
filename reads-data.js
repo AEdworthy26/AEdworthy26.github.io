@@ -1,19 +1,19 @@
 // reads-data.js
-// Auto-updated 2026-04-29 — do not edit manually
+// Auto-updated 2026-04-30 — do not edit manually
 
 var READS_DATA = {
-  date: "2026-04-29",
+  date: "2026-04-30",
   book: {
-    title: "The Body: A Guide for Occupants",
-    author: "Bill Bryson",
-    year: 2019,
-    genres: ["Science", "Medicine", "Popular Non-Fiction"],
-    desc: "Bill Bryson turns his irrepressible curiosity on the most intimate subject imaginable: the human body itself. With the same wit and sweep he brought to A Short History of Nearly Everything, he conducts a grand tour through skin, bones, organs, and neurons, uncovering astonishing facts at every turn — the brain operates on roughly the same energy as a dim light bulb, and the gut contains more bacteria than there are stars in the Milky Way. Bryson weaves together cutting-edge science, medical history, and laugh-out-loud anecdotes to make the deeply complex feel both accessible and wondrous. The cumulative effect is a profound sense of awe at the improbable, intricate machine you\'ve been walking around in all your life without giving it nearly enough credit.",
-    whyRead: "At a moment when conversations about health, longevity, and what bodies can and cannot do feel more urgent than ever, this book hands you the most useful and delightful education you\'ll find — and you\'ll finish it genuinely astonished to be alive.",
-    rating: 4.2,
+    title: "The Moviegoer",
+    author: "Walker Percy",
+    year: 1961,
+    genres: ["Literary Fiction", "Existentialism", "Southern Literature"],
+    desc: "Binx Bolling is a New Orleans stockbroker who spends his days watching films and conducting what he calls 'the search' — a restless, ironic quest for meaning in a life that otherwise threatens to become entirely ordinary. Percy\'s National Book Award-winning debut is a strange and luminous thing: formally it resembles a quiet character study, but underneath runs a fierce philosophical current about alienation, authenticity, and what it means to be conscious in a world that encourages you not to be. The prose is precise and funny and occasionally devastating, capturing mid-century American suburban comfort with the eye of someone who finds it both seductive and deeply strange. Mardi Gras week, New Orleans, a cast of brilliantly drawn women, and a cousin in crisis give Binx just enough friction to make his internal drama feel urgently real.",
+    whyRead: "At a moment when distraction is the default mode of existence, Percy\'s portrait of a man trying to stay awake to his own life feels less like a period piece and more like a mirror — and it\'s short enough to read in a weekend.",
+    rating: 4.0,
     ratingSource: "Goodreads",
-    ratingCount: "130,000+",
-    coverUrl: "https://covers.openlibrary.org/b/id/12722746-L.jpg",
-    amazonUrl: "https://www.amazon.co.uk/dp/3442313988"
+    ratingCount: "28,000+",
+    coverUrl: "https://covers.openlibrary.org/b/id/291181-L.jpg",
+    amazonUrl: "https://www.amazon.co.uk/dp/0394437039"
   }
 };
