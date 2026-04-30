@@ -215,6 +215,26 @@
     .fav-save-btn { display: inline-flex; align-items: center; gap: 0.3rem; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--philo); background: none; border: 1px solid currentColor; padding: 0.22rem 0.7rem; border-radius: 20px; cursor: pointer; font-family: inherit; transition: background .15s, color .15s; flex-shrink: 0; margin-left: auto; }
     .fav-save-btn:hover { background: var(--philo); color: #fff; }
     .fav-save-btn.saved { color: var(--philo-mid) !important; border-color: var(--philo-mid) !important; }
+    /* ── FAV MODAL ── */
+    .fav-modal-overlay { position:fixed; inset:0; background:rgba(10,15,30,0.55); backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px); display:none; align-items:center; justify-content:center; z-index:999; padding:1rem; }
+    .fav-modal-overlay.open { display:flex; }
+    .fav-modal { background:#fff; border-radius:14px; box-shadow:0 28px 80px rgba(0,0,0,0.22); width:100%; max-width:620px; max-height:90vh; overflow-y:auto; animation:fmIn .2s cubic-bezier(.22,1,.36,1); }
+    @keyframes fmIn { from { opacity:0; transform:scale(.96) translateY(12px); } to { opacity:1; transform:none; } }
+    .fm-hero { width:100%; aspect-ratio:16/7; overflow:hidden; background:var(--subtle); border-radius:14px 14px 0 0; flex-shrink:0; }
+    .fm-hero img { width:100%; height:100%; object-fit:cover; display:block; }
+    .fm-body { padding:1.5rem 1.8rem 1.8rem; }
+    .fm-eyebrow { display:flex; align-items:center; justify-content:space-between; margin-bottom:0.9rem; }
+    .fm-type-tag { font-size:0.58rem; font-weight:700; letter-spacing:0.18em; text-transform:uppercase; color:#fff; padding:0.22rem 0.65rem; border-radius:10px; }
+    .fm-close { background:none; border:none; font-size:1.3rem; line-height:1; cursor:pointer; color:#94a3b8; padding:0.1rem 0.35rem; border-radius:6px; transition:color .15s,background .15s; }
+    .fm-close:hover { color:#0d0d0d; background:#f1f5f9; }
+    .fm-title { font-family:'Playfair Display',serif; font-weight:900; font-size:1.25rem; line-height:1.3; color:#0d0d0d; margin-bottom:0.5rem; }
+    .fm-subtitle { font-size:0.9rem; line-height:1.65; color:#555; margin-bottom:1.1rem; font-style:italic; }
+    .fm-content p { font-size:0.875rem; line-height:1.8; color:#374151; margin-bottom:0.75rem; }
+    .fm-content p:last-child { margin-bottom:0; }
+    .fm-content h3 { font-family:'Playfair Display',serif; font-weight:700; font-size:1rem; margin:1.4rem 0 0.5rem; color:#0d0d0d; }
+    .fm-footer { margin-top:1.3rem; padding-top:1rem; border-top:1px solid #e5e7eb; font-size:0.62rem; letter-spacing:0.1em; text-transform:uppercase; color:#94a3b8; }
+    .fav-card-main { cursor:pointer; transition:opacity .15s; }
+    .fav-card-main:hover { opacity:0.8; }
     .fav-list { display: flex; flex-direction: column; gap: 0.8rem; }
     .fav-card { display: flex; align-items: flex-start; gap: 1rem; background: var(--card-bg); border: 1px solid var(--subtle); border-radius: var(--radius); padding: 1rem 1.2rem; box-shadow: var(--shadow-sm); }
     .fav-card-main { flex: 1; min-width: 0; }
@@ -405,10 +425,10 @@
       var cards = favs.slice().reverse().map(function(f) {
         var savedDate = new Date(f.savedAt).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
         return '<div class="fav-card">'
-          + '<div class="fav-card-main">'
+          + '<div class="fav-card-main" onclick="window._openPhiloFavModal(\'' + f.id + '\')">'
           +   '<span class="fav-card-type">' + esc(PHILO_FAV_LABELS[f.type] || f.type) + '</span>'
           +   '<div class="fav-card-title">' + esc(f.title) + '</div>'
-          +   '<div class="fav-card-meta">From ' + fmtDate(f.contentDate) + ' &bull; Saved ' + savedDate + '</div>'
+          +   '<div class="fav-card-meta">From ' + fmtDate(f.contentDate) + ' &bull; Saved ' + savedDate + ' &bull; <span style="color:var(--philo)">Click to read</span></div>'
           + '</div>'
           + '<button class="fav-del-btn" onclick="window._deletePhiloFav(\'' + f.id + '\')" title="Remove">&times;</button>'
           + '</div>';
@@ -421,7 +441,7 @@
       var d = window._philoFavData[type];
       if (!d) return;
       var favs = loadPhiloFavs();
-      favs.push({ id: String(Date.now()), type: type, title: d.title, contentDate: d.contentDate, savedAt: new Date().toISOString() });
+      favs.push({ id: String(Date.now()), type: type, title: d.title, contentDate: d.contentDate, savedAt: new Date().toISOString(), fullData: d.fullData || null });
       savePhiloFavs(favs);
       renderPhiloFavs();
       var btn = document.querySelector('.fav-save-btn[data-favtype="' + type + '"]');
@@ -430,6 +450,77 @@
     window._deletePhiloFav = function(id) {
       savePhiloFavs(loadPhiloFavs().filter(function(f){ return f.id !== id; }));
       renderPhiloFavs();
+    };
+
+    var _philoFavModalEl = null;
+    function buildPhiloFavModal() {
+      if (_philoFavModalEl) return;
+      _philoFavModalEl = document.createElement('div');
+      _philoFavModalEl.className = 'fav-modal-overlay';
+      _philoFavModalEl.innerHTML =
+        '<div class="fav-modal">'
+        + '<div class="fm-hero" id="fm-hero"></div>'
+        + '<div class="fm-body">'
+        +   '<div class="fm-eyebrow"><span class="fm-type-tag" id="fm-type-tag"></span><button class="fm-close" onclick="window._closePhiloFavModal()" aria-label="Close">&times;</button></div>'
+        +   '<div class="fm-title" id="fm-title"></div>'
+        +   '<div class="fm-subtitle" id="fm-subtitle"></div>'
+        +   '<div class="fm-content" id="fm-content"></div>'
+        +   '<div class="fm-footer" id="fm-footer"></div>'
+        + '</div>'
+        + '</div>';
+      document.body.appendChild(_philoFavModalEl);
+      _philoFavModalEl.addEventListener('click', function(e) { if (e.target === _philoFavModalEl) window._closePhiloFavModal(); });
+      document.addEventListener('keydown', function(e) { if (e.key === 'Escape') window._closePhiloFavModal(); });
+    }
+
+    window._openPhiloFavModal = function(id) {
+      buildPhiloFavModal();
+      var fav = loadPhiloFavs().filter(function(f){ return f.id === id; })[0];
+      if (!fav) return;
+      var fd = fav.fullData || null;
+      var heroEl = document.getElementById('fm-hero');
+      var heroImg = fd && (fd.image || '');
+      if (heroImg) { heroEl.style.display = ''; heroEl.innerHTML = '<img src="' + esc(heroImg) + '" alt="" loading="lazy">'; }
+      else heroEl.style.display = 'none';
+      var typeTag = document.getElementById('fm-type-tag');
+      typeTag.textContent = PHILO_FAV_LABELS[fav.type] || fav.type;
+      typeTag.style.background = 'var(--philo)';
+      document.getElementById('fm-title').textContent = fav.title;
+      var subEl = document.getElementById('fm-subtitle');
+      var subtitle = '';
+      if (fd) {
+        if (fav.type === 'philosopher') subtitle = [fd.lifespan, fd.category].filter(Boolean).join(' · ');
+        else subtitle = fd.subtitle || '';
+      }
+      if (subtitle) { subEl.textContent = subtitle; subEl.style.display = ''; } else subEl.style.display = 'none';
+      var contentHTML = '';
+      if (!fd) {
+        contentHTML = '<p style="color:#888;font-style:italic">Full content not available — saved before article storage was added.</p>';
+      } else if (fav.type === 'theory') {
+        var blocks = Array.isArray(fd.content) ? fd.content : (fd.content || '').split(/\n+/).filter(Boolean).map(function(t){ return { type:'paragraph', text:t }; });
+        contentHTML = blocks.map(function(b){
+          if (b.type === 'heading') return '<h3>' + esc(b.text) + '</h3>';
+          if (b.type === 'quote') return '<div style="border-left:3px solid var(--philo);padding:0.5rem 1rem;margin:0.6rem 0;font-style:italic;opacity:0.85"><p>' + esc(b.text) + '</p>' + (b.attribution ? '<p style="font-size:0.75rem;margin-top:0.25rem;opacity:0.7">— ' + esc(b.attribution) + '</p>' : '') + '</div>';
+          return '<p>' + esc(b.text) + '</p>';
+        }).join('');
+        if (Array.isArray(fd.takeaways) && fd.takeaways.length) {
+          contentHTML += '<hr style="margin:1.2rem 0;border:none;border-top:1px solid #e5e7eb"><p style="font-weight:700;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.1em;color:#555;margin-bottom:0.6rem">Key Takeaways</p>'
+            + fd.takeaways.map(function(t){ return '<p style="padding-left:0.9rem;border-left:2px solid #e5e7eb">' + esc(t) + '</p>'; }).join('');
+        }
+      } else if (fav.type === 'philosopher') {
+        contentHTML = (fd.bio || '').split(/\n+/).filter(Boolean).map(function(t){ return '<p>' + esc(t) + '</p>'; }).join('');
+        if (fd.contributions) contentHTML += '<p style="font-weight:700;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.1em;color:#555;margin:1.2rem 0 0.4rem">Main Contributions</p><p>' + esc(fd.contributions) + '</p>';
+        if (fd.rivals) contentHTML += '<p style="font-weight:700;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.1em;color:#555;margin:1.2rem 0 0.4rem">Key Rivals &amp; Critics</p><p>' + esc(fd.rivals) + '</p>';
+      }
+      document.getElementById('fm-content').innerHTML = contentHTML || '<p style="color:#888;font-style:italic">No content stored.</p>';
+      document.getElementById('fm-footer').textContent = 'From: ' + fmtDate(fav.contentDate);
+      _philoFavModalEl.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    };
+
+    window._closePhiloFavModal = function() {
+      if (_philoFavModalEl) _philoFavModalEl.classList.remove('open');
+      document.body.style.overflow = '';
     };
 
     // Render an array of content blocks (paragraph / heading / quote)
@@ -611,8 +702,8 @@
     output.innerHTML = pageHeaderHTML + articleHTML + taHTML + ctHTML + wtmHTML + potdHTML + footerHTML;
 
     window._philoFavData = {
-      theory:      { title: (data.mainTheory || {}).title,              contentDate: data.date },
-      philosopher: { title: (data.philosopherOfTheDay || {}).name,      contentDate: data.date }
+      theory:      { title: mt.title, contentDate: data.date, fullData: { title: mt.title, subtitle: mt.subtitle || '', image: mt.image || '', content: mt.content, takeaways: data.keyTakeaways || [] } },
+      philosopher: { title: p.name,   contentDate: data.date, fullData: { name: p.name, lifespan: p.lifespan || '', category: p.category || '', bio: p.bio || '', image: p.image || '', contributions: p.contributions || '', rivals: p.rivals || '' } }
     };
     renderPhiloFavs();
 
