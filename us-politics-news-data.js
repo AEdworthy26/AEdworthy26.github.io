@@ -1,60 +1,60 @@
 // us-politics-news-data.js
-// Auto-updated 2026-04-30 — do not edit manually
+// Auto-updated 2026-05-01 — do not edit manually
 
 var US_POLITICS_NEWS = {
-  date: "2026-04-30",
+  date: "2026-05-01",
   main: {
-    title: "House Passes Budget Blueprint to Unlock $70 Billion for Immigration Enforcement as Johnson Quashes Internal Revolts",
+    title: "Congress Ends Record DHS Shutdown, Trump Signs Bill Restoring Partial Homeland Security Funding",
     category: "Politics",
     content: [
-      "Speaker Mike Johnson steered the House through a turbulent Wednesday, securing a narrow 215-211-1 party-line vote to adopt a budget blueprint that unlocks up to $70 billion for immigration enforcement agencies. The measure clears the procedural path for Republicans to begin drafting a filibuster-proof reconciliation bill that would fund Immigration and Customs Enforcement and Customs and Border Protection. The lone non-party vote came from Rep. Kevin Kiley of California, who voted present, underscoring the razor-thin margins Johnson continues to navigate in a fractious caucus.",
-      "The budget blueprint is a central pillar of the Republican plan to reopen the long-shuttered Department of Homeland Security, which has remained in a state of legislative limbo for months. By routing the funding through the reconciliation process, GOP leaders aim to bypass the 60-vote Senate filibuster threshold, allowing the bill to advance with a simple majority. The move represents one of the most significant congressional actions on immigration enforcement since the start of the Trump administration\'s second term.",
-      "Johnson\'s path to the vote was far from smooth. Over the course of several tense hours on and around the chamber floor, the Speaker and fellow Republican leaders engaged in intensive negotiations with holdouts on multiple fronts simultaneously — including a surveillance bill and a farm policy measure — before finally threading the needle on the budget resolution. Lawmakers described the atmosphere as chaotic, with Republican leaders cajoling reluctant members right up until the gavel fell.",
-      "The farm bill rebellion proved particularly difficult to manage. A bloc of agricultural-state Republicans had threatened to withhold support for the budget blueprint unless their concerns about farm policy were addressed, creating a multi-front standoff for leadership. Johnson ultimately quashed the revolt through a combination of procedural maneuvering and political persuasion, though the underlying tensions over agricultural subsidies and rural priorities remain unresolved heading into the next phase of the reconciliation fight.",
-      "The vote now shifts the legislative battlefield to the Senate, where the reconciliation bill will face its own set of challenges and intra-party negotiations. Democrats have uniformly opposed the immigration enforcement funding, characterizing the spending as a vehicle for mass deportation operations and the erosion of due process protections. For Republicans, the successful passage of the blueprint marks a meaningful legislative milestone in President Trump\'s broader effort to reshape federal immigration policy ahead of the 2026 midterm elections."
+      "President Trump signed legislation Thursday ending the longest government shutdown in American history at the Department of Homeland Security, a more than two-month funding crisis that had thrown airport operations into chaos and exposed deep fractures within Congress over immigration enforcement spending. The bill passed after weeks of bitter partisan feuding over how much funding, if any, should be directed toward Trump\'s aggressive immigration crackdown. The signing brings a measure of stability to a department that had been running on fumes, with thousands of federal employees working without pay or being furloughed entirely.",
+      "The legislation that ultimately cleared Congress, however, was far from a clean victory for the White House. The funding bill conspicuously excludes direct appropriations for Immigration and Customs Enforcement and Customs and Border Protection — the two agencies most central to Trump\'s border enforcement agenda. That omission reflects the intense negotiations that preceded the vote, with enough members of both chambers unwilling to write a blank check for the immigration enforcement operations that have defined the administration\'s domestic policy.",
+      "The shutdown\'s effects on everyday Americans were acute and highly visible, particularly at the nation\'s airports, where staffing shortfalls at DHS-adjacent security and customs operations created widespread delays and confusion. The chaos provided Democrats with a potent political argument that Republican infighting and the administration\'s maximalist demands were causing tangible harm to ordinary travelers and federal workers. Unions representing DHS employees had grown increasingly vocal in recent weeks, warning of a morale crisis and an exodus of experienced personnel from agencies stretched to their breaking point.",
+      "The political dynamics surrounding the shutdown reveal the persistent tension between the Trump White House and even sympathetic members of Congress over the pace and funding of immigration enforcement. While the administration has used executive tools aggressively to pursue deportations and border security measures, translating that agenda into sustainable congressional appropriations has proven far more difficult. The final bill\'s exclusion of ICE and CBP funding suggests that legislative dealmaking on immigration remains as contentious as ever, even with Republicans holding majorities in both chambers.",
+      "With the shutdown now resolved, attention is expected to shift quickly to the next budget battle and whether Congress can reach a longer-term funding agreement before another deadline looms. Democrats have signaled they will continue using appropriations leverage to press for oversight conditions on immigration enforcement operations, while the White House has not ruled out seeking supplemental funding for ICE and CBP through separate legislation. The episode has underscored how immigration policy — more than perhaps any other issue — continues to define the fault lines of American domestic politics in 2026, with midterm elections now firmly on the horizon."
     ],
-    image: "https://static01.nyt.com/images/2026/04/29/multimedia/29DC-BUDGET-lhvb/29DC-BUDGET-lhvb-mediumSquareAt3X.jpg",
-    source: "The New York Times",
-    sourceUrl: "https://www.nytimes.com/2026/04/29/us/politics/house-ice-budget-immigration.html"
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/7833/live/d58e74e0-44d2-11f1-8de1-593a7bb5acaa.jpg",
+    source: "NPR",
+    sourceUrl: "https://www.npr.org/2026/04/30/nx-s1-5806054/congress-dhs-shutdown"
   },
   secondary: [
     {
       id: "us1",
-      title: "Former FBI Director Comey Indicted Over Seashell Post, Lawyers Vow to Fight Charges as Vindictive",
-      summary: "James Comey surrendered to federal authorities after being indicted on charges that a 2025 Instagram post featuring a seashell arrangement constituted a threat against President Trump\'s life.",
+      title: "Trump Drops Casey Means, Nominates Fox News Contributor Dr. Nicole Saphier as Surgeon General",
+      summary: "President Trump withdrew the stalled nomination of MAHA favorite Casey Means and announced Fox News radiologist Dr. Nicole Saphier as his third pick for surgeon general.",
       body: [
-        "Acting Attorney General Todd Blanche announced that prosecutors had spent months investigating the post, in which Comey shared an image of seashells arranged to read '86 47' — a sequence the government argues was a coded call for violence against the 47th president. Comey made his first court appearance following the indictment, during which his legal team signaled they would mount an aggressive defense against what they described as a politically motivated prosecution. Legal experts across the spectrum have expressed significant skepticism that the government can secure a conviction, given the indirect nature of the alleged threat.",
-        "Comey\'s lawyers have indicated they plan to challenge the charges on First Amendment grounds and argue the prosecution is vindictive, stemming from the longstanding animosity between Trump and the former FBI director he fired in 2017. The case has ignited a broader debate about the limits of prosecutorial discretion and whether the Justice Department is being weaponized against political adversaries — a charge the administration flatly denies."
+        "Dr. Casey Means, whose nomination had become a cause célèbre in Robert F. Kennedy Jr.'s Make America Healthy Again movement, saw her path to confirmation collapse after Republican senators raised concerns about her medical credentials and her stance on childhood vaccines. President Trump moved swiftly to replace her, announcing that Dr. Nicole Saphier — a radiologist and prominent Fox News contributor — would be his new choice for the nation\'s top public health communicator.",
+        "Saphier\'s selection is notable in part because she has been publicly critical of RFK Jr.'s more heterodox views on vaccines, signaling a possible recalibration of the administration\'s approach to public health messaging. She becomes the third nominee Trump has put forward for surgeon general, a role that has taken on heightened political significance during an era of intense debate over vaccine policy and government health guidance."
       ],
-      image: "https://images.unsplash.com/photo-1771340590060-be598dfb81bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxGb3JtZXIlMjBGQkklMjBEaXJlY3RvciUyMENvbWV5JTIwSW5kaWN0ZWQlMjBPdmVyJTIwU2Vhc2hlbGwlMjBQb3N0JTJDJTIwTGF3eWVycyUyMFZvdyUyMHRvJTIwRmlnaHQlMjBDaGFyZ2VzJTIwYXMlMjBWaW5kaWN0aXZlfGVufDB8MHx8fDE3Nzc1MjUzODB8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/clyp70l1egeo?at_medium=RSS&at_campaign=rss",
+      image: "https://images.pexels.com/photos/30964771/pexels-photo-30964771.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      source: "NPR",
+      url: "https://www.npr.org/2026/04/30/g-s1-119571/nicole-saphier-trump-casey-means-surgeon-general-nomination",
       category: "Politics"
     },
     {
       id: "us2",
-      title: "Florida Redistricting Map Could Hand Republicans Up to Four Additional House Seats Before Midterms",
-      summary: "Florida lawmakers have passed a new congressional voting map drawn by Governor Ron DeSantis that is designed to flip up to four House seats from Democratic to Republican control.",
+      title: "Maine Gov. Janet Mills Suspends Senate Bid, Shaking Up Key Democratic Race",
+      summary: "Maine Governor Janet Mills abruptly suspended her U.S. Senate campaign, upending Democratic efforts to recapture the chamber in a race viewed as critically competitive.",
       body: [
-        "The newly approved map restructures several competitive and Democratic-leaning districts across Florida, boosting Republican incumbents and making it significantly harder for Democratic challengers to win. The redistricting effort is part of a coordinated national Republican strategy to maximize the party\'s House majority ahead of the 2026 midterm elections, with Florida serving as one of the most consequential battlegrounds in that effort. Analysts note that the GOP now holds a slight overall edge over Democrats in the national redistricting landscape.",
-        "The move mirrors similar efforts underway in Louisiana, where Governor Jeff Landry is preparing to suspend House primaries scheduled for May 16 to allow lawmakers to redraw the congressional map following a court ruling. Together, these state-level redistricting actions reflect the Trump administration\'s active role in shaping the electoral map to protect and expand its congressional majority heading into what is expected to be a highly competitive midterm cycle."
+        "Governor Janet Mills announced Thursday that she is stepping back from the Maine Senate race, a decision that sent shockwaves through Democratic Party circles and immediately prompted Senate Minority Leader Chuck Schumer to reach out to remaining candidate Graham Platner. The Maine seat is considered one of Democrats' best pickup opportunities as the party works to retake the Senate majority in the 2026 midterms, making Mills' exit a significant strategic setback.",
+        "Platner, who has faced scrutiny over past controversial social media posts and other personal baggage, now emerges as a leading contender despite lingering concerns from within the party. Schumer and Platner spoke in what was described as a cordial conversation, even though Schumer had previously backed Schumer\'s rival, suggesting the party establishment is prepared to consolidate behind Platner rather than cede the seat to Republicans."
       ],
-      image: "https://images.unsplash.com/photo-1650853774391-d75b7245056b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxGbG9yaWRhJTIwUmVkaXN0cmljdGluZyUyME1hcCUyMENvdWxkJTIwSGFuZCUyMFJlcHVibGljYW5zJTIwVXAlMjB0byUyMEZvdXIlMjBBZGRpdGlvbmFsJTIwSG91c2UlMjBTZWF0cyUyMEJlZm9yZSUyME1pZHRlcm1zfGVufDB8MHx8fDE3Nzc1MjUzODB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      image: "https://images.unsplash.com/photo-1483489966031-7662708c95e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxNYWluZSUyMEdvdi4lMjBKYW5ldCUyME1pbGxzJTIwU3VzcGVuZHMlMjBTZW5hdGUlMjBCaWQlMkMlMjBTaGFraW5nJTIwVXAlMjBLZXklMjBEZW1vY3JhdGljJTIwUmFjZXxlbnwwfDB8fHwxNzc3NjExNzc5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       source: "NPR",
-      url: "https://www.npr.org/2026/04/29/nx-s1-5804703/florida-redistricting-voting-map-republicans-house-seats",
+      url: "https://www.npr.org/2026/04/30/nx-s1-5805902/maine-gov-janet-mills-says-shes-suspending-her-campaign-for-u-s-senate",
       category: "Politics"
     },
     {
       id: "us3",
-      title: "Trump Administration Moves to Dismiss National Science Board Members, Raising Fears Over Agency Independence",
-      summary: "The Trump administration has initiated the removal of members of the National Science Board, the governing body of the National Science Foundation, in a move that dismissed members say threatens the agency\'s scientific independence.",
+      title: "Louisiana Suspends House Primaries After Supreme Court Strikes Down Congressional Map as Racial Gerrymander",
+      summary: "Louisiana halted its upcoming U.S. House primaries after the Supreme Court ruled the state\'s congressional map is an unconstitutional racial gerrymander, forcing lawmakers to draw a new district plan.",
       body: [
-        "The National Science Board oversees the National Science Foundation, which funds billions of dollars in basic scientific research across American universities and institutions each year. Dismissed board members warned that the firings represent a direct assault on the independence of one of the country\'s most important scientific funding bodies, potentially subordinating research priorities to political considerations. The move follows a broader pattern of the administration restructuring or downsizing federal scientific and regulatory agencies.",
-        "The dismissals come alongside separate reporting that EPA Administrator Lee Zeldin has overseen sweeping rollbacks of environmental regulations, eliminated entire departments within the agency, and terminated the contracts of numerous scientists — changes that critics say are systematically dismantling the federal government\'s capacity for independent scientific oversight. Together, these actions signal a sustained and deliberate effort by the Trump administration to reshape the federal bureaucracy\'s relationship with scientific expertise and regulatory authority."
+        "Governor Jeff Landry issued an order pausing Louisiana\'s scheduled U.S. House primaries following a landmark Supreme Court ruling that found the state\'s congressional map violated the Voting Rights Act by constituting an unconstitutional racial gerrymander. The suspension gives the Republican-controlled state legislature time to draft and approve a new map before elections can proceed, a process that could significantly reshape the state\'s delegation in Washington.",
+        "The ruling puts Louisiana among a growing number of red states facing federal judicial pressure to redraw their congressional boundaries, with potential implications for the balance of power in the U.S. House. Republicans in the state have acknowledged the redistricting process could ultimately result in the GOP gaining one or two additional seats, depending on how new lines are drawn — adding a competitive political dimension to what is formally a legal compliance exercise."
       ],
-      image: "https://static01.nyt.com/images/2026/04/29/multimedia/29dc-guns-twkf/29dc-guns-twkf-mediumSquareAt3X.jpg",
+      image: "https://images.unsplash.com/flagged/photo-1574298967939-b46c2c88cdc1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxMb3Vpc2lhbmElMjBTdXNwZW5kcyUyMEhvdXNlJTIwUHJpbWFyaWVzJTIwQWZ0ZXIlMjBTdXByZW1lJTIwQ291cnQlMjBTdHJpa2VzJTIwRG93biUyMENvbmdyZXNzaW9uYWwlMjBNYXAlMjBhcyUyMFJhY2lhbCUyMEdlcnJ5bWFuZGVyfGVufDB8MHx8fDE3Nzc2MTE3Nzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
       source: "NPR",
-      url: "https://www.npr.org/2026/04/29/nx-s1-5802921/trump-administration-moves-to-dismiss-members-of-the-national-science-board",
+      url: "https://www.npr.org/2026/04/30/nx-s1-5806000/louisiana-suspends-house-primaries-supreme-court",
       category: "Politics"
     }
   ]

@@ -3,6 +3,45 @@
 
 var RICS_LOG = [
   {
+    "date": "2026-05-01",
+    "topic": "Golden Brick Structures: Mechanics, Risk Allocation and JV Structuring",
+    "module": "Land Acquisition and Joint Ventures",
+    "level": 3,
+    "apc_competency": "Development/Project Briefs (Level 3)",
+    "focus": "This lesson examines golden brick structures in depth \u2014 how they work as a land acquisition mechanism, how they interact with VAT, grant funding and affordable housing delivery in RP-led JVs, and how Alfie would structure and negotiate one in practice. Understanding golden brick is essential for P&D candidates working in the housing association and land-led development space, where it is a primary tool for managing VAT exposure and structuring developer/RP joint ventures.",
+    "image": "https://images.unsplash.com/photo-1763098844923-95668c23955f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxHb2xkZW4lMjBCcmljayUyMFN0cnVjdHVyZXMlM0ElMjBNZWNoYW5pY3MlMkMlMjBSaXNrJTIwQWxsb2NhdGlvbiUyMGFuZCUyMEpWJTIwU3RydWN0dXJpbmclMjBhcmNoaXRlY3R1cmV8ZW58MHwwfHx8MTc3NzYxMjE5Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+    "content": [],
+    "summary": [
+      "Golden brick threshold is plot-specific (first course of bricks above DPC or equivalent) \u2014 each plot must reach the threshold independently before its transfer can be zero-rated for VAT under HMRC VAT Notice 708.",
+      "The VAT saving is material: on a 60-unit affordable scheme with an AHLV of \u00a325,000/plot, zero-rating saves \u00a3300,000 in irrecoverable VAT compared to a standard-rated land transfer \u2014 directly improving viability and reducing Homes England grant dependency.",
+      "CIL social housing relief must be claimed before commencement of the chargeable development \u2014 in a golden brick JV, Alfie must ensure Latimer submits the assumption of liability and relief notice before the developer commences any groundworks, even on market sale plots.",
+      "Insolvency risk before golden brick transfer is the dominant legal risk \u2014 mitigated by a unilateral notice or restriction on HMLR title at exchange, a non-disturbance agreement from the developer\\'s senior lender, and step-in rights in the development agreement.",
+      "Homes England AHP grant compliance requires the development agreement to be structured so Latimer is the developer of record for the affordable plots \u2014 typically achieved by Latimer formally sub-contracting the sub-structure works to the private developer as Latimer\\'s agent, confirming golden brick transfer as the AHP 'start on site' trigger."
+    ],
+    "qa": [
+      {
+        "q": "What is the legal basis for zero-rating a golden brick transfer for VAT purposes, and what evidence does the developer need to provide to the RP at completion?",
+        "a": "The zero-rating is grounded in s.30 and Schedule 8 of the Value Added Tax Act 1994, as applied through HMRC VAT Notice 708 (Buildings and Construction). The notice confirms that a supply of a partly-completed new dwelling \u2014 where construction has progressed to at least the first course of bricks above DPC on each plot \u2014 qualifies as a zero-rated supply. At completion of each golden brick transfer, the developer should provide: (a) an architect\\'s or contractor\\'s certificate confirming the relevant plots have reached the golden brick threshold; (b) a VAT certificate or written confirmation from the developer\\'s tax advisers confirming the zero-rated nature of the supply; and (c) the transfer documentation (TR1) reflecting a zero consideration for VAT. Latimer\\'s solicitors should retain this evidence in case of HMRC enquiry."
+      },
+      {
+        "q": "How does a golden brick structure interact with Homes England\\'s Affordable Homes Programme grant conditions, and what specific drafting is needed in the development agreement to protect Latimer\\'s grant position?",
+        "a": "AHP grant requires the RP to be the developer of the affordable units \u2014 specifically, the entity procuring construction works. In a golden brick structure, the private developer builds the sub-structure before transfer to Latimer, risking a Homes England finding that Latimer is not the developer for the sub-structure phase. To protect the grant, the development agreement should: (i) characterise Latimer as the employer and the private developer as Latimer\\'s contractor for the sub-structure works on the affordable plots; (ii) confirm that the golden brick transfer date constitutes Latimer\\'s 'start on site' for AHP grant trigger purposes; and (iii) require the developer to provide a construction contract (or deed of appointment) reflecting this structure. This should be agreed with Homes England\\'s grant manager before the grant offer is accepted, as Homes England has discretion over what it accepts as a valid start on site."
+      },
+      {
+        "q": "Describe the key insolvency risk in a golden brick JV and the three main legal protections Alfie should insist upon in the development agreement.",
+        "a": "The key risk is that until legal transfer at golden brick, Latimer has only a contractual right to acquire the plots \u2014 not a proprietary interest. Developer insolvency before transfer leaves Latimer as an unsecured creditor, with no effective recourse to the land. The three main protections are: (1) Registration of a unilateral notice or agreed restriction on the developer\\'s HMLR title immediately on exchange \u2014 this does not create a proprietary interest but binds any subsequent purchaser or lender with notice, making enforcement of the development agreement in rem more viable; (2) A non-disturbance agreement (NDA) from the developer\\'s senior development finance lender, confirming the lender will not disturb Latimer\\'s contractual rights on enforcement of its security; (3) Step-in rights in the development agreement allowing Latimer to take over construction of the affordable plots if the developer fails to reach golden brick by the longstop date, ideally backed by a building contract novation mechanism."
+      },
+      {
+        "q": "Why is the timing of the CIL social housing relief claim particularly sensitive in a golden brick structure, and what happens if the claim is not made in time?",
+        "a": "CIL social housing relief under Regulation 49 of the CIL Regulations 2010 (as amended) disapplies CIL liability on qualifying affordable dwellings. However, the relief must be claimed before commencement of development \u2014 and 'commencement' for CIL purposes is defined as the first material operation on any part of the chargeable development (not plot-by-plot). In a golden brick structure, the private developer typically commences groundworks on all plots \u2014 including affordable plots \u2014 simultaneously. If Latimer has not submitted its assumption of liability (Form 1) and relief claim (Form 7) before that date, the relief is lost permanently and the CIL liability reverts to the developer, who will almost certainly pass the cost through to Latimer under the development agreement\\'s cost allocation provisions. Alfie must treat the CIL relief submission as a critical pre-commencement milestone and ensure Latimer\\'s planning solicitor has this in their brief."
+      },
+      {
+        "q": "On a timber frame scheme, how is the golden brick equivalent defined, and what drafting risk arises if the development agreement uses the phrase 'first course of bricks above DPC' without qualification?",
+        "a": "HMRC accepts the golden brick threshold applies by analogy to non-masonry construction \u2014 the relevant point is when a permanent structural element equivalent to the first course of bricks above DPC has been completed. For timber frame, this is typically the completion of the sole plate and first wall panels; for modular/volumetric construction, it may be the first module placed on its foundation. If the development agreement uses the literal phrase 'first course of bricks above DPC' without a non-masonry equivalent definition, the trigger point becomes ambiguous on a timber frame scheme: neither party can point to a moment when 'bricks above DPC' have been laid, creating a potential dispute about when the transfer obligation is triggered. This could delay Latimer\\'s grant drawdown and the VAT zero-rating confirmation. The development agreement must include a specific alternative definition agreed between both parties' solicitors and tax advisers \u2014 and ideally pre-cleared with HMRC by advance ruling if the scheme is large enough to warrant it."
+      }
+    ]
+  },
+  {
     "date": "2026-04-30",
     "topic": "Development Agreement Clawback: Structures, Triggers and Enforcement in Residential JVs",
     "module": "Land and Joint Ventures",

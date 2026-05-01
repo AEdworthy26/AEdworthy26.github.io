@@ -1,88 +1,92 @@
 // curiosity-data.js
-// Auto-updated 2026-04-30 — do not edit manually
+// Auto-updated 2026-05-01 — do not edit manually
 
 var CURIOSITY_DATA = {
-  date: "2026-04-30",
+  date: "2026-05-01",
   mainArticle: {
-    title: "The Radium Girls: How Dying Factory Workers Changed the Law Forever",
-    subject: "The Radium Girls",
-    subtitle: "They painted watch dials with their lips and paid with their lives — then fought back and rewrote the rules of worker safety.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/8/8a/All_women_or_girls_using_radium_paint_with_no_protection_or_warnings_in_1922%2C_from-_USRadiumGirls-Argonne1%2Cca1922-23-150dpi_%28cropped%29.jpg",
+    title: "The Nazca Lines: Messages in the Desert No One Was Meant to Read",
+    subject: "Nazca Lines Peru",
+    subtitle: "Scratched into one of the driest places on Earth, the geoglyphs of southern Peru have survived two thousand years — and still refuse to give up their secrets.",
+    image: "https://images.unsplash.com/photo-1715898777545-ba17b9d3ea24?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxOYXpjYSUyMExpbmVzJTIwUGVydXxlbnwwfDB8fHwxNzc3NjEyMDU2fDA&ixlib=rb-4.1.0&q=80&w=1080",
     readTime: "8 min",
     content: [
       {
         type: "paragraph",
-        text: "In the years after the First World War, young women across New Jersey and Illinois filed into bright, bustling factories to perform what seemed like glamorous, well-paid work. They painted the dials of watches, clocks, and military instruments with a luminous paint called Undark — a mixture laced with radium, the miraculous element recently isolated by Marie Curie. Their supervisors taught them to shape the finest brushstrokes by pursing the bristles between their lips, a technique the factory managers called 'lip, dip, paint.' Nobody told the women that the substance glowing on their fingertips was quietly destroying them from the inside out."
+        text: "On the arid plateau of southern Peru, between the towns of Nazca and Palpa, the ground itself has been turned into a canvas. Scraped into the reddish-brown desert surface are hundreds of enormous figures — a hummingbird with a wingspan of ninety metres, a spider the size of a football pitch, a monkey with a coiled tail stretching nearly a hundred and fifty metres across. They are so vast that their true shapes are completely invisible from the ground, and it was not until commercial aviation crossed the region in the 1920s that the full extent of the phenomenon began to dawn on the outside world. For the people who made them, sometime between 500 BCE and 500 CE, the view from altitude was simply not available — which raises the most fundamental question: what, exactly, were they for?"
       },
       {
         type: "heading",
-        text: "The Miracle Element and the Factory Floor"
+        text: "A Canvas of Stone and Sky"
       },
       {
         type: "paragraph",
-        text: "Radium had captured the world\'s imagination after its discovery in 1898, and by the 1910s it was being marketed as a health tonic, added to toothpaste, water crocks, and face creams. The United States Radium Corporation, operating out of Orange, New Jersey, employed hundreds of young women who took pride in their work and in the eerie, beautiful glow it left on their skin and clothes. They were encouraged to believe the paint was harmless — the same company executives who knew otherwise made sure never to handle the material themselves, using lead screens and tongs in private while their workers lipped brushes all day long."
+        text: "The geoglyphs were made by the Nazca culture, a sophisticated pre-Columbian civilisation that flourished in the coastal and river valleys of what is now southern Peru. The technique was deceptively simple: workers removed the upper layer of dark, iron-oxide-coated pebbles to expose the pale yellowish-grey ground beneath, piling the darker stones along the edges to create visible lines. What makes the lines so durable is the Nazca plateau\'s almost supernatural stillness — low wind, negligible rainfall, and the slight heat created by the dark stones forming a protective cushion of warm air just above the surface. The result is that marks made by human hands two millennia ago remain as crisp as if they were laid down last year."
       },
       {
         type: "heading",
-        text: "Bodies Failing, Doctors Baffled"
+        text: "Animals, Spirals, and Straight Lines to Nowhere"
       },
       {
         type: "paragraph",
-        text: "By the early 1920s, dial painters began to experience a cascade of devastating symptoms: teeth loosening and falling out, jawbones crumbling, legs fracturing spontaneously under ordinary weight. Physicians, unfamiliar with radiation sickness, misdiagnosed the women with syphilis — a false and stigmatising verdict that companies were happy to allow to circulate. When Grace Fryer, a dial painter from New Jersey, sought a lawyer willing to sue the Radium Corporation, she was turned away repeatedly; no attorney wanted to take on a wealthy industrial firm."
+        text: "The figures divide roughly into two categories: the famous biomorphs — the animals, plants, and humanoid figures — and the far more numerous geometric forms, including dead-straight lines that run for kilometres across the pampa without deviation, trapezoids wide enough to land a small aircraft, and spirals that wind inward to a tight central point. The straight lines in particular have attracted wild speculation, from ancient landing strips for spacecraft to sacred pathways for invisible beings. More careful analysis has shown that many lines point toward significant positions on the horizon — the rising of particular stars, the direction of seasonal water sources, the movement of the Pleiades — suggesting the plateau was used as a kind of monumental astronomical and calendrical instrument."
       },
       {
         type: "heading",
-        text: "The Lawsuit That Shook Industry"
+        text: "Water, Ritual, and a People Under Pressure"
       },
       {
         type: "paragraph",
-        text: "Grace Fryer eventually found her lawyer in 1927, and four other women — Catherine Donohue, Edna Hussman, Katherine Schaub, and Albina Larice — joined her suit. The press called them the 'Radium Girls,' and their case became a national sensation as photographs revealed women too weak to raise their arms, some arriving in court on stretchers. The company\'s defence argued the statute of limitations had expired, a legal shield that threatened to leave the plaintiffs with nothing. After months of legal battles and extraordinary public pressure, the case was settled in 1928: each woman received a lump sum, an annual pension, and — critically — the company was forced to pay their ongoing medical bills."
+        text: "The most compelling modern hypothesis links the lines not to astronomy alone but to water — the most precious resource in one of the driest inhabited environments on the planet. The Nazca people constructed an extraordinary network of underground aqueducts called puquios, some of which are still in use today, to tap aquifers and irrigate their fields. Researcher David Johnson and others have argued that many of the major geoglyphs and lines map directly onto the underground water system, serving as surface markers of subterranean sources and routes. If correct, the lines were not decorations or landing strips but a practical spiritual technology — a way of honouring and communicating with the water gods whose goodwill determined whether the harvest lived or died."
       },
       {
         type: "heading",
-        text: "Radiation Science Learns Its Lessons"
+        text: "Maria Reiche and the Woman Who Devoted Her Life to the Desert"
       },
       {
         type: "paragraph",
-        text: "The bodies of the Radium Girls became, in a grim sense, among the most scientifically important in American history. Because radium chemically mimics calcium, it had been absorbed directly into their bones, effectively turning their skeletons into radioactive sources; some women\'s remains were still measurably radioactive decades after their deaths. Researchers studying the dial painters developed foundational understandings of radiation dose, bone cancer, and the body\'s long-term response to radioactive materials. Those findings directly shaped the safety standards adopted by the Manhattan Project scientists who handled radioactive materials during the Second World War."
+        text: "No figure is more associated with the Nazca Lines than Maria Reiche, a German mathematician and archaeologist who dedicated more than fifty years of her life to studying and preserving them. She arrived in Peru in the 1930s and encountered the lines through the American historian Paul Kosok, who had observed that on the winter solstice the sun set precisely along one of the major lines — leading him to call Nazca 'the largest astronomy book in the world.' Reiche embraced the astronomical hypothesis with missionary intensity, sleeping on the pampa, personally sweeping sections of lines with a broom, and lobbying the Peruvian government to protect them from encroachment. She died in Lima in 1998, aged ninety-five, having never fully abandoned the idea that the ancient Nazca were star-gazers who wrote their knowledge into the earth."
       },
       {
         type: "heading",
-        text: "Catherine Donohue and the Illinois Fight"
+        text: "New Technologies, New Discoveries"
       },
       {
         type: "paragraph",
-        text: "The struggle did not end in New Jersey. In Ottawa, Illinois, workers at the Radium Dial Company — a separate firm — faced identical conditions and identical denial from their employers. Catherine Donohue, a dial painter who developed bone cancer of the hip, pursued her case before the Illinois Industrial Commission even as she was dying, eventually giving testimony from a cot carried into the hearing room. Her case was decided in her favour in 1938, though she died the following year; the ruling established important precedents in Illinois occupational disease law. The Ottawa dial painters' fight continued into the 1980s, when contaminated soil from the factory was finally removed from the town."
+        text: "The advent of drone photography and machine-learning image analysis has triggered a new golden age of Nazca research. In 2019 a Japanese team from Yamagata University announced the discovery of more than one hundred and forty previously unknown geoglyphs using a combination of drone surveys and AI pattern recognition — including small figures of decapitated humans, llamas, and snakes that had been overlooked for decades because they were simply too faint or too small to detect from the air. These newer discoveries tend to cluster closer to ancient pathways and habitation sites, suggesting they served a more localised ritual function than the great plateau figures. The plateau is now understood not as a single monument with a single meaning, but as a living landscape that different communities modified across many generations."
       },
       {
         type: "heading",
-        text: "A Legal Legacy Written in Bone"
+        text: "A Heritage Under Threat"
       },
       {
         type: "paragraph",
-        text: "The Radium Girls' lawsuits were among the first successful cases in which corporate negligence in workplace safety was held legally accountable in the United States, and their outcomes helped pave the way for the eventual creation of occupational health and safety legislation. Before their cases, employers held near-absolute authority over working conditions, and the idea that a company could be sued for knowingly exposing workers to harm was legally and culturally radical. The concept of an employee\'s right to a safe workplace — which we now take entirely for granted — owes a measurable debt to women who had to sacrifice their lives to establish it."
+        text: "UNESCO inscribed the Nazca Lines as a World Heritage Site in 1994, but protection has proved extraordinarily difficult. In 2009 heavy rains associated with El Niño caused flooding that damaged several figures. In 2014 activists from the environmental group Greenpeace caused international outrage when they walked across a section of the pampa near the hummingbird figure to lay out a banner, leaving footprints in the fragile surface that will persist for centuries. Illegal squatting, mining, and the expansion of the Pan-American Highway have all taken their toll. The very remoteness and scale that protected the lines for two thousand years now works against them as tourism, infrastructure, and climate change converge on the plateau."
       },
       {
         type: "heading",
-        text: "The Glowing Graves of Ottawa"
+        text: "What They Tell Us About Human Nature"
       },
       {
         type: "paragraph",
-        text: "There is one final, haunting coda to this story. In the cemeteries around Ottawa, Illinois, the graves of some dial painters were found, decades later, to be faintly radioactive — the radium in their bones persisting long after death, just as the companies had once promised their product would glow forever. The half-life of radium-226 is approximately 1,600 years, meaning the bones of these women will remain radioactive into the far future. They are, in the most literal sense, still glowing: a permanent, quiet monument to what happens when profit is placed above the lives of the people who create it."
+        text: "Perhaps the most profound thing about the Nazca Lines is not what they tell us about astronomy or water management or ritual sacrifice, but what they tell us about the human compulsion to make marks — to assert presence, to communicate with forces larger than ourselves, to leave something behind. The Nazca had no writing system, no monumental stone architecture comparable to the Inca or the Maya, and their civilisation collapsed sometime around 750 CE, possibly due to catastrophic deforestation and the floods that followed. Yet they moved millions of tonnes of stone across hundreds of square kilometres to create images that, by definition, only the gods could fully see. In that impulse — ambitious, hopeful, slightly desperate — they are not so different from us."
+      },
+      {
+        type: "paragraph",
+        text: "The lines endure not because anyone planned for them to. They endure because the desert is merciless to everything except patience, and because the people who made them worked with extraordinary care on something they believed mattered absolutely. Two thousand years later, staring down from a small aircraft banking over the pampa, it is almost impossible not to feel that it still does."
       }
     ]
   },
   personOfTheDay: {
-    name: "Alice Hamilton",
-    lifespan: "1869–1970",
-    category: "Medicine & Social Reform",
-    image: "https://upload.wikimedia.org/wikipedia/commons/a/a4/Alice_Hamilton.jpg",
-    bio: "Alice Hamilton was an American physician, research scientist, and social reformer who became the founding figure of industrial toxicology in the United States. Born in New York City in 1869 and educated at the University of Michigan Medical School, she joined Hull House, the famous Chicago settlement community founded by Jane Addams, in 1897. Living among immigrant workers in one of America\'s most industrialised cities gave her an intimate understanding of the diseases and injuries that factory life inflicted on ordinary people.\n\nHamilton\'s investigative work, carried out on behalf of the state of Illinois and later the federal government, brought her into the same world as the Radium Girls — she was among the first scientists to document the lethal effects of lead, mercury, carbon monoxide, and other industrial toxins on workers' bodies. Her 1925 book Industrial Poisons in the United States became a landmark reference, and her patient, methodical gathering of evidence against powerful corporate interests required both scientific rigour and considerable personal courage. She had no legal authority to compel companies to cooperate, yet she consistently managed to extract the truth through persistence and the force of her reputation.\n\nIn 1919, Hamilton became the first woman appointed to the faculty of Harvard Medical School — a position she accepted only after Harvard agreed to allow her to continue her field research, and despite the university\'s refusal at the time to grant her access to the Harvard Club or to march in commencement processions. She retired from Harvard in 1935 but continued writing and advocating into her nineties, living to the remarkable age of 101. Hamilton\'s life work established the principle that governments bear a duty to protect workers from the hazards their employers would rather conceal, a principle that underpins every modern workplace safety regulation in the Western world."
+    name: "Imhotep",
+    lifespan: "c. 2650–2600 BCE",
+    category: "Architecture, Medicine & Statecraft",
+    image: "https://upload.wikimedia.org/wikipedia/commons/e/e6/Imhotep%2C_donated_by_Padisu_MET_DP164134.jpg",
+    bio: "Imhotep stands as one of the most extraordinary individuals in all of ancient history — a man of such towering genius that he was eventually deified, worshipped as a god of medicine for more than two thousand years after his death. He served under the Third Dynasty pharaoh Djoser, holding titles that included Chancellor of the King of Lower Egypt, First After the King of Upper Egypt, and High Priest of Heliopolis. In a society where nearly every significant role was inherited by birth, Imhotep appears to have risen entirely through the force of his own intellect and ability — an almost unparalleled achievement in the ancient world.\n\nHis greatest physical legacy is the Step Pyramid at Saqqara, constructed around 2630 BCE and widely recognised as the world\'s oldest large-scale cut-stone structure. Before Imhotep, Egyptian monumental architecture was built from mud brick and organic materials; he conceived the radical idea of stacking mastaba tomb platforms in progressively smaller tiers, building upward rather than outward, and executing the entire complex in dressed limestone. The Step Pyramid complex is not merely a pyramid but a vast ceremonial precinct complete with courtyards, temples, and colonnaded corridors — an architectural revolution compressed into a single building programme. No other individual in the ancient world can be credited so directly with inventing a new architectural language.\n\nImhotep\'s reputation as a physician was equally formidable. Although no medical texts survive that can be definitively attributed to him, ancient Egyptian sources and later Greek writers credited him with founding the practice of rational medicine — diagnosis, examination, and treatment based on observation rather than purely on magical intervention. The Edwin Smith Papyrus, an ancient surgical text believed to preserve material dating to the Old Kingdom, is sometimes associated with his tradition. The Greeks identified him with their own god of medicine, Asclepius, and his temple at Memphis became a centre of healing pilgrimage. That a single man should be remembered as both the father of architecture and the father of medicine, across a span of civilisations separated by millennia, speaks to an achievement almost without parallel in human history."
   },
   onThisDay: {
-    headline: "Washington Is Sworn In as America\'s First President",
-    date: "April 30, 1789",
-    summary: "On April 30, 1789, George Washington stood on the balcony of Federal Hall in New York City and took the oath of office as the first President of the United States, placing his hand on a Masonic Bible and swearing to 'preserve, protect and defend the Constitution.' The scene was witnessed by enormous, jubilant crowds lining the streets below, and Washington reportedly added the words 'so help me God' at the close of the oath — a tradition, disputed by historians, that has been attributed to every president since. New York was then the young nation\'s capital, and the occasion was regarded by contemporaries as a moment of world-historical significance: an elected republican government was taking power in a manner that had no true modern precedent.\n\nWashington\'s inauguration address, delivered in the Senate Chamber afterward, was notably humble and anxious in tone — he confessed to feelings of inadequacy and expressed deep uncertainty about whether he possessed the talents required for the role. This was not mere performance; Washington had genuinely been reluctant to leave his retirement at Mount Vernon and accepted the presidency only because he believed refusal would damage the fragile new republic. The address set important precedents in its deference to Congress and its avoidance of specific policy demands, establishing a template for executive restraint that would define the office for generations. Within a decade, however, the nature of the presidency would be fiercely contested by the very men who had helped create it.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Flag_of_the_United_States_%28DDD-F-416E_specifications%29.svg/1280px-Flag_of_the_United_States_%28DDD-F-416E_specifications%29.svg.png"
+    headline: "The Great Exhibition Opens in London\'s Crystal Palace",
+    date: "May 1, 1851",
+    summary: "On the morning of 1 May 1851, Queen Victoria and Prince Albert arrived at a vast iron-and-glass structure in Hyde Park to declare open the Great Exhibition of the Works of Industry of All Nations — the world\'s first truly international trade fair. More than fourteen thousand exhibitors from across Britain and its empire and from thirty-nine foreign nations had filled the Crystal Palace, designed by the engineer Joseph Paxton, with everything from raw cotton and steam engines to porcelain, jewellery, and the Koh-i-Noor diamond. The opening ceremony drew an audience of around five hundred thousand people in and around Hyde Park, and Queen Victoria, visibly moved, recorded in her diary that it was 'the greatest day in our history.'\n\nThe Exhibition ran until 15 October 1851 and attracted over six million visitors — roughly a third of the entire population of Britain — during its five-and-a-half-month run. It was the brainchild of Prince Albert and the civil servant Henry Cole, conceived as a celebration of modern industrial achievement and a demonstration of Britain\'s position at the apex of global manufacturing and trade. The profits, amounting to around £186,000, were used to purchase land in South Kensington on which the Victoria and Albert Museum, the Science Museum, and the Natural History Museum were subsequently built. The Crystal Palace itself was later dismantled and re-erected at Sydenham Hill, where it stood until it burned down in a spectacular fire in 1936.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/6/67/London_Skyline_%28125508655%29.jpeg"
   }
 };

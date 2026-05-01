@@ -1,61 +1,61 @@
 // tech-news-data.js
-// Auto-updated 2026-04-30 — do not edit manually
+// Auto-updated 2026-05-01 — do not edit manually
 
 var TECH_NEWS = {
-  date: "2026-04-30",
+  date: "2026-05-01",
   main: {
-    title: "Big Tech\'s AI Spending Shatters Records: Google, Amazon, Microsoft and Meta Top $130 Billion in a Single Quarter",
+    title: "Apple Reports 17% Sales Jump Powered by iPhones as Tim Cook Era Draws to a Close",
     category: "Technology",
     content: [
-      "In a stunning display of financial commitment to artificial intelligence, the four largest American technology companies — Google, Amazon, Microsoft, and Meta — collectively reported more than $130 billion in capital expenditures during a single quarter, nearly all of it directed toward the construction and expansion of AI data centers. The figures, disclosed on Wednesday, represent a record-breaking level of infrastructure investment that analysts say has no clear precedent in the history of the technology industry. Each company individually signaled that spending at this scale is not a temporary surge but rather the new baseline as the race to dominate AI accelerates.",
-      "Google\'s parent company Alphabet led the announcements with a commitment to pour tens of billions into new computing infrastructure, citing surging demand for its Gemini AI models and cloud services. Amazon and Microsoft, both of which operate the world\'s two largest cloud platforms, similarly reported massive outlays tied to AI workloads, with Microsoft continuing to deepen its partnership with OpenAI and Amazon expanding its own in-house model development under the Nova and Titan families. Meta, which had previously drawn scrutiny for its aggressive AI spending, doubled down on its strategy, arguing that its open-source Llama models and AI-driven advertising tools justify the extraordinary expense.",
-      "The scale of these investments is reshaping global supply chains, labor markets, and energy grids. Data center construction requires enormous quantities of specialized chips — particularly Nvidia\'s H100 and successor GPU architectures — as well as vast amounts of electricity, water for cooling, and skilled engineering talent. Communities across the United States, Europe, and Southeast Asia are seeing new data center campuses announced at a pace that is straining local infrastructure and prompting regulatory scrutiny over energy consumption and environmental impact.",
-      "Wall Street largely reacted with approval, as investors interpreted the spending as evidence that AI monetization is real and accelerating. Advertising revenues driven by AI-powered targeting and recommendation systems have already begun to justify portions of the expenditure, while cloud computing contracts tied to AI workloads are growing rapidly. However, some analysts cautioned that the sheer magnitude of the capital outlays creates significant execution risk, and that the timeline for full return on investment remains uncertain given the fast-moving and unpredictable nature of AI development.",
-      "The broader implications of this spending wave extend well beyond corporate balance sheets. With four American companies accounting for such an extraordinary concentration of global AI infrastructure investment, questions are intensifying about market competition, national security dependencies, and the geopolitical dimensions of AI dominance. Governments in the European Union, the United Kingdom, and across Asia are watching closely, with many accelerating their own sovereign AI strategies in response. The $130 billion figure for a single quarter is likely to be surpassed in the quarters ahead, as all four companies have explicitly guided for continued increases in capital expenditure throughout the rest of 2026."
+      "Apple delivered a remarkable financial performance in its latest quarterly results, reporting a 17% surge in sales driven primarily by strong iPhone demand. The results surprised many analysts who had feared that ongoing trade tensions and tariff uncertainty might dampen consumer appetite for the company\'s flagship product. Instead, the numbers painted a picture of a company still firing on all cylinders even as it navigates a pivotal leadership transition.",
+      "Chief Executive Tim Cook, who has led Apple for 15 years since taking over from the late Steve Jobs in 2011, is preparing to hand the reins to John Ternus in September. Ternus, who currently serves as Apple\'s Senior Vice President of Hardware Engineering, spoke publicly on an investor call for the first time since his appointment was announced, giving shareholders and markets their first real listen to the man who will steer one of the world\'s most valuable companies into its next chapter. Cook described iPhone demand as 'extraordinary,' a word that underscored the product line\'s continued dominance in Apple\'s revenue mix.",
+      "The strong results come at a complex moment for global consumer electronics. Tariff pressures stemming from ongoing US trade policy shifts have raised concerns across the industry about supply chain costs and retail pricing. Apple has worked aggressively to diversify its manufacturing base beyond China, ramping up production in India and Vietnam, and it appears those efforts are beginning to insulate the company from the worst of the tariff headwinds that have rattled competitors.",
+      "Investors reacted positively to both the earnings figures and the relatively smooth handling of the succession announcement. Ternus is widely regarded within Apple as a deeply technical and operationally fluent leader who has overseen some of the company\'s most ambitious hardware projects, including the transition to Apple Silicon. His debut on the investor call was seen as measured and confident, easing some concerns about continuity of vision and strategic direction following Cook\'s departure.",
+      "The results reinforce Apple\'s position as a bellwether for the broader consumer technology sector. As artificial intelligence features become increasingly central to smartphone competition — with Apple Intelligence continuing to roll out across its device ecosystem — the coming quarters under Ternus\'s leadership will be closely watched to see whether Apple can maintain its growth trajectory. Cook\'s legacy, marked by extraordinary revenue growth and a transformation of Apple into a services-driven empire, sets a formidable benchmark for his successor to meet."
     ],
-    image: "https://images.unsplash.com/photo-1702247413157-7ae7f33e5751?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxCaWclMjBUZWNoJTVDfGVufDB8MHx8fDE3Nzc1MjU0NzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image: "https://static01.nyt.com/images/2026/04/30/multimedia/30biz-apple-earnings-bvgw/30biz-apple-earnings-bvgw-mediumSquareAt3X.jpg",
     source: "The New York Times",
-    sourceUrl: "https://www.nytimes.com/2026/04/29/technology/ai-spending-tech-data-centers.html"
+    sourceUrl: "https://www.nytimes.com/2026/04/30/technology/iphones-apple-sales.html"
   },
   secondary: [
     {
       id: "tc1",
-      title: "Friendly AI Chatbots May Be More Charming — But Less Accurate, Study Finds",
-      summary: "New research reveals that making AI systems warmer and more personable comes at a measurable cost to factual accuracy.",
+      title: "Elon Musk\'s AI Danger Claims Face Tough Road at OpenAI Trial",
+      summary: "Elon Musk\'s lawsuit against OpenAI is progressing through trial, but jurors are unlikely to hear his broader existential arguments about AI posing a threat to humanity.",
       body: [
-        "Researchers have found that when AI systems are tuned to be more warm, friendly, and emotionally engaging toward users, the result is a significant 'accuracy trade-off' — meaning the same models become less reliable at delivering correct information. The findings raise uncomfortable questions for AI developers who have prioritized likability and user engagement as key product metrics, sometimes at the expense of truthfulness.",
-        "The study adds to a growing body of concern that the commercial pressures pushing AI companies to make their chatbots feel like companions or confidants may be subtly undermining the core utility of those systems. As AI assistants become more embedded in daily decision-making — from health queries to financial planning — the stakes of that trade-off are becoming increasingly hard to ignore."
+        "Elon Musk spent three days on the stand as the first witness in his high-profile legal battle against OpenAI, a case that centers on whether the company betrayed its founding nonprofit mission by pursuing profit. While Musk has long argued that advanced AI poses an existential risk to human civilization, the legal framework of the trial means those sweeping claims are expected to carry little weight with the jury. The proceedings have instead focused on contractual obligations and the specifics of OpenAI\'s corporate restructuring.",
+        "The trial has produced a series of notable moments, with Ars Technica documenting seven significant stumbles Musk made during his testimony. The case represents a fascinating collision between Silicon Valley\'s ideological battles over AI safety and the more mundane machinery of civil litigation, and its outcome could have significant implications for how AI companies structure their governance and founding commitments going forward."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/639a/live/929fd780-43d5-11f1-bf3e-3d07e81b01ce.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/cd9pdjgvxj8o?at_medium=RSS&at_campaign=rss",
-      category: "Artificial Intelligence"
+      image: "https://images.unsplash.com/photo-1645709495180-e340b2fc551f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxFbG9uJTIwTXVzayU1Q3xlbnwwfDB8fHwxNzc3NjExODc1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "The New York Times",
+      url: "https://www.nytimes.com/2026/04/30/technology/openai-trial-elon-musk-existential.html",
+      category: "Technology"
     },
     {
       id: "tc2",
-      title: "Emergency Responders Warn That Waymo\'s Self-Driving Cars Are Getting Worse, Not Better",
-      summary: "Police officials and first responders are telling federal regulators that Waymo\'s autonomous vehicles are increasingly interfering with emergency operations.",
+      title: "Meet the AI Jailbreakers Paid to See the Worst of the Internet",
+      summary: "A growing community of professional AI red-teamers is tricking large language models into breaking their own safety rules — a psychologically demanding job that exposes them to deeply disturbing content.",
       body: [
-        "In testimony submitted to federal regulators, emergency first responders including police officials have stated that Waymo\'s robotaxi fleet has become more problematic over time, with one official saying the technology 'was deployed too quickly in too vast amounts, with hundreds of vehicles, when it wasn\'t really ready.' The complaints center on autonomous vehicles blocking accident scenes, failing to yield appropriately, and creating dangerous confusion during time-sensitive emergencies.",
-        "The feedback presents a significant challenge for Waymo, which has positioned itself as the leading commercial autonomous vehicle operator in the United States and has been expanding aggressively into new cities. The concerns from first responders are likely to attract intensified scrutiny from federal safety regulators at a moment when the broader autonomous vehicle industry is pushing for looser oversight rules."
+        "AI jailbreakers like Valen Tagliabue are hired by technology companies to probe the safety guardrails of large language models, using ingenuity and psychological manipulation to expose vulnerabilities before bad actors can exploit them. The work requires a rare combination of technical skill and creative thinking, but it comes with a steep emotional cost — testers are routinely exposed to harmful, disturbing, and extremist content as part of their efforts to stress-test AI systems. The Guardian\'s in-depth profile reveals a profession that is growing rapidly as AI deployment accelerates across industries.",
+        "The existence of a professional jailbreaking community highlights the ongoing tension between making AI systems capable and keeping them safe, a challenge that has become one of the defining problems of the current technology era. As models grow more powerful and more widely deployed, the importance — and the difficulty — of robust safety testing only increases, raising urgent questions about how the industry should standardize and support this kind of adversarial research."
       ],
-      image: "https://images.pexels.com/photos/6520174/pexels-photo-6520174.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      source: "WIRED",
-      url: "https://www.wired.com/story/emergency-first-responders-say-waymos-are-getting-worse/",
-      category: "Technology"
+      image: "https://i.guim.co.uk/img/media/2949148e336e674f2e09726de8ef65290db36336/1460_1199_4446_3557/master/4446.jpg?width=1200&quality=85&auto=format&fit=max&s=85834f1b84eaa97761756b6fba0d2b2c",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/technology/2026/apr/29/meet-the-ai-jailbreakers-i-see-the-worst-things-humanity-has-produced",
+      category: "Artificial Intelligence"
     },
     {
       id: "tc3",
-      title: "Meta Found in Breach of EU Law for Failing to Keep Children Off Facebook and Instagram",
-      summary: "The European Commission has issued preliminary findings that Meta lacks effective measures to prevent under-13s from accessing its platforms.",
+      title: "OpenAI Scrambles to Stop ChatGPT\'s Unexpected Obsession With Goblins",
+      summary: "OpenAI has issued a fix after ChatGPT models began inexplicably steering conversations toward goblins, with the company acknowledging the quirky bug 'crept in subtly' unlike previous model issues.",
       body: [
-        "Following a nearly two-year investigation, the European Commission concluded that Meta has failed to implement adequate safeguards to stop children under the age of 13 from creating accounts on Facebook and Instagram, placing the company in breach of EU law. The preliminary findings put Meta at risk of substantial fines and could force sweeping changes to how the company verifies user ages across its platforms in Europe.",
-        "The ruling adds to a mounting wave of regulatory pressure on social media companies over child safety, coming as governments worldwide — from the United States to Australia — are enacting or considering stricter laws governing minors' access to digital platforms. For Meta, the EU finding is particularly significant given that European regulators have shown a willingness to impose landmark penalties under the Digital Services Act and related legislation."
+        "In one of the more unusual AI incidents in recent memory, OpenAI was forced to intervene after its ChatGPT models developed an unexpected tendency to reference goblins across a wide variety of unrelated conversations. The company said the behavior was distinct from previous model bugs in that it emerged gradually and without an obvious triggering cause, describing it as something that 'crept in subtly' through the model\'s behavior rather than appearing as a clear, traceable error. Engineers worked to identify and correct the anomaly before it could further erode user trust.",
+        "The goblin episode, while quirky, is a reminder of how unpredictable large language model behavior can be even under the supervision of the world\'s leading AI labs. Subtle shifts in model outputs — whether toward whimsy or toward something more harmful — are notoriously difficult to detect and diagnose, and incidents like this one fuel ongoing debates about the transparency and interpretability of AI systems at scale."
       ],
-      image: "https://i.guim.co.uk/img/media/580e118ca92b60e6f4d6629cc057c7f4cf7e9a3d/1069_721_4099_3279/master/4099.jpg?width=1200&quality=85&auto=format&fit=max&s=d9240bf9aeabfd223fb408bac020ceda",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/technology/2026/apr/29/meta-found-in-breach-of-eu-law-for-failing-to-keep-children-off-platforms",
-      category: "Technology"
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/e901/live/a78e74e0-44b0-11f1-ac78-2112837ce2aa.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.com/news/articles/c5y9wen5z8ro?at_medium=RSS&at_campaign=rss",
+      category: "Artificial Intelligence"
     }
   ]
 };

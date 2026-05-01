@@ -1,18 +1,18 @@
 // films-data.js
-// Auto-updated 2026-04-30 — do not edit manually
+// Auto-updated 2026-05-01 — do not edit manually
 
 var FILMS_DATA = {
-  date: "2026-04-30",
+  date: "2026-05-01",
   film: {
-    title: "The Heartbreak Kid",
-    director: "Elaine May",
-    year: 1972,
-    genres: ["Comedy", "Romance"],
-    desc: "Elaine May\'s razor-sharp comedy follows a newlywed man who falls obsessively for a different woman during his honeymoon, dissecting the American myth of romantic perfectionism with gleeful, unsettling precision. Charles Grodin delivers one of the great deadpan comic performances in cinema history, his polite monstrousness somehow both appalling and irresistible at every turn. The film refuses to let its audience off the hook — we laugh, cringe, and gradually realize May is holding a mirror up to social climbing, self-delusion, and the restless hunger that prosperity breeds. Neil Simon\'s script crackles with wit but May elevates it into something genuinely strange and uncomfortable, ending on a note that lingers long after the credits roll. Criminally underseen compared to its peers, this is a dark gem from one of Hollywood\'s most underappreciated directors.",
-    cast: ["Charles Grodin", "Cybill Shepherd", "Jeannie Berlin"],
-    rating: 93,
+    title: "The Headless Woman",
+    director: "Lucrecia Martel",
+    year: 2008,
+    genres: ["Drama", "Thriller", "Mystery"],
+    desc: "An Argentine bourgeois woman drives her car, hits something on the road, and keeps going — and the film never lets you, or her, fully know what happened. Lucrecia Martel constructs an almost suffocatingly intimate study of guilt, denial, and class privilege, using shallow focus and off-center framing to place the viewer inside a consciousness coming apart at its seams. María Onetto\'s performance is extraordinary in its restraint, conveying entire worlds of suppressed panic through posture, glance, and silence. The film is less interested in resolving its central mystery than in exposing how wealth and social position conspire to make certain truths simply disappear. It is one of the most formally daring films of the 2000s — unsettling, hypnotic, and impossible to shake.",
+    cast: ["María Onetto", "Claudia Cantero", "Inés Efron"],
+    rating: 88,
     ratingSource: "Rotten Tomatoes",
-    ratingExtra: "2 Academy Award Nominations",
-    posterUrl: "https://upload.wikimedia.org/wikipedia/en/f/f2/The_Heartbreak_Kid_%281972_film%29.jpg"
+    ratingExtra: "Cannes Competition Selection",
+    posterUrl: "https://upload.wikimedia.org/wikipedia/en/5/52/La_Mujer_Sin_Cabeza.jpg"
   }
 };
