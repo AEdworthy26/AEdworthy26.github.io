@@ -1,60 +1,60 @@
 // us-politics-news-data.js
-// Auto-updated 2026-05-01 — do not edit manually
+// Auto-updated 2026-05-02 — do not edit manually
 
 var US_POLITICS_NEWS = {
-  date: "2026-05-01",
+  date: "2026-05-02",
   main: {
-    title: "Congress Ends Record DHS Shutdown, Trump Signs Bill Restoring Partial Homeland Security Funding",
+    title: "Trump Tells Congress Iran Ceasefire Means He Needs No Authorization for War",
     category: "Politics",
     content: [
-      "President Trump signed legislation Thursday ending the longest government shutdown in American history at the Department of Homeland Security, a more than two-month funding crisis that had thrown airport operations into chaos and exposed deep fractures within Congress over immigration enforcement spending. The bill passed after weeks of bitter partisan feuding over how much funding, if any, should be directed toward Trump\'s aggressive immigration crackdown. The signing brings a measure of stability to a department that had been running on fumes, with thousands of federal employees working without pay or being furloughed entirely.",
-      "The legislation that ultimately cleared Congress, however, was far from a clean victory for the White House. The funding bill conspicuously excludes direct appropriations for Immigration and Customs Enforcement and Customs and Border Protection — the two agencies most central to Trump\'s border enforcement agenda. That omission reflects the intense negotiations that preceded the vote, with enough members of both chambers unwilling to write a blank check for the immigration enforcement operations that have defined the administration\'s domestic policy.",
-      "The shutdown\'s effects on everyday Americans were acute and highly visible, particularly at the nation\'s airports, where staffing shortfalls at DHS-adjacent security and customs operations created widespread delays and confusion. The chaos provided Democrats with a potent political argument that Republican infighting and the administration\'s maximalist demands were causing tangible harm to ordinary travelers and federal workers. Unions representing DHS employees had grown increasingly vocal in recent weeks, warning of a morale crisis and an exodus of experienced personnel from agencies stretched to their breaking point.",
-      "The political dynamics surrounding the shutdown reveal the persistent tension between the Trump White House and even sympathetic members of Congress over the pace and funding of immigration enforcement. While the administration has used executive tools aggressively to pursue deportations and border security measures, translating that agenda into sustainable congressional appropriations has proven far more difficult. The final bill\'s exclusion of ICE and CBP funding suggests that legislative dealmaking on immigration remains as contentious as ever, even with Republicans holding majorities in both chambers.",
-      "With the shutdown now resolved, attention is expected to shift quickly to the next budget battle and whether Congress can reach a longer-term funding agreement before another deadline looms. Democrats have signaled they will continue using appropriations leverage to press for oversight conditions on immigration enforcement operations, while the White House has not ruled out seeking supplemental funding for ICE and CBP through separate legislation. The episode has underscored how immigration policy — more than perhaps any other issue — continues to define the fault lines of American domestic politics in 2026, with midterm elections now firmly on the horizon."
+      "President Trump formally notified Congress on Friday that the ongoing ceasefire with Iran has effectively stopped the 60-day clock established by the War Powers Act, arguing that because hostilities have 'terminated,' he is no longer required to seek legislative authorization for the military campaign. The letters, sent simultaneously to the House and Senate, represent the administration\'s most explicit legal argument yet for why it believes it can conduct the Iran war without a formal congressional authorization for use of military force. The move came precisely on the 60th day since Trump first notified lawmakers of U.S. military operations in Iran, a deadline that would have otherwise compelled either congressional approval or a withdrawal of forces.",
+      "The War Powers Resolution of 1973 was passed in the wake of Vietnam to reassert Congress\'s constitutional authority to declare war, requiring the president to notify lawmakers within 48 hours of committing forces to hostilities and mandating that those forces be withdrawn within 60 days absent congressional authorization. Trump\'s legal argument — that a ceasefire constitutes a termination of hostilities, thereby resetting or suspending the clock — is a novel interpretation that legal scholars and congressional critics are already contesting. The administration has not publicly released the full text of the letters, but officials familiar with their contents say they lean heavily on the premise that the current pause in fighting renders the War Powers clock moot.",
+      "Not all Republicans are rallying behind the White House\'s position. Senator Todd Young of Indiana, a Republican who has long advocated for Congress to reclaim its war-making authority, publicly stated Friday that the administration would need to seek congressional approval before renewing any military strikes against Iran. Young\'s dissent is significant, as it signals potential fractures within the GOP caucus on a question that goes to the heart of the constitutional separation of powers. His comments echo a broader, if often dormant, bipartisan concern that the executive branch has steadily eroded legislative oversight over armed conflict since the War Powers Resolution was enacted.",
+      "Historically, presidents of both parties have had a complicated relationship with the War Powers Act. Both George H.W. Bush and George W. Bush sought and received congressional authorization for their major military engagements in the Gulf War and Iraq, respectively, while Ronald Reagan also worked with Congress on key military actions. By contrast, Bill Clinton conducted air campaigns in the Balkans and Barack Obama launched strikes in Libya without formal authorization, citing the limited nature of the operations. Trump\'s legal team appears to be drawing on that more permissive precedent, though critics note that the scale and duration of operations against Iran are far greater than those earlier interventions, making the comparison legally tenuous.",
+      "The political stakes of this constitutional standoff are considerable. If Congress accepts the administration\'s interpretation passively, it would effectively validate a significant expansion of presidential war-making power, setting a precedent that future administrations could exploit. If lawmakers push back — through a formal resolution to withdraw forces, a vote on authorization, or legal challenges — it could trigger a constitutional confrontation between the branches at a time when the Iran conflict remains unresolved. For Trump, sidestepping Congress serves both a legal and a political purpose: avoiding a potentially embarrassing debate over a war that, according to Republican strategists, is already creating headwinds for his domestic agenda and approval ratings heading into the midterm election cycle."
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/7833/live/d58e74e0-44d2-11f1-8de1-593a7bb5acaa.jpg",
-    source: "NPR",
-    sourceUrl: "https://www.npr.org/2026/04/30/nx-s1-5806054/congress-dhs-shutdown"
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/26ce/live/cba9b850-4594-11f1-b55d-0f258dce1735.jpg",
+    source: "The New York Times",
+    sourceUrl: "https://www.nytimes.com/2026/05/01/us/politics/trump-congress-authorization-iran-war.html"
   },
   secondary: [
     {
       id: "us1",
-      title: "Trump Drops Casey Means, Nominates Fox News Contributor Dr. Nicole Saphier as Surgeon General",
-      summary: "President Trump withdrew the stalled nomination of MAHA favorite Casey Means and announced Fox News radiologist Dr. Nicole Saphier as his third pick for surgeon general.",
+      title: "Supreme Court Gerrymandering Ruling Triggers Special Sessions in Alabama and Tennessee",
+      summary: "A landmark Supreme Court decision curtailing the Voting Rights Act has prompted Republican governors in Alabama and Tennessee to call special legislative sessions to redraw congressional maps that could eliminate seats held by Black Democratic members of Congress.",
       body: [
-        "Dr. Casey Means, whose nomination had become a cause célèbre in Robert F. Kennedy Jr.'s Make America Healthy Again movement, saw her path to confirmation collapse after Republican senators raised concerns about her medical credentials and her stance on childhood vaccines. President Trump moved swiftly to replace her, announcing that Dr. Nicole Saphier — a radiologist and prominent Fox News contributor — would be his new choice for the nation\'s top public health communicator.",
-        "Saphier\'s selection is notable in part because she has been publicly critical of RFK Jr.'s more heterodox views on vaccines, signaling a possible recalibration of the administration\'s approach to public health messaging. She becomes the third nominee Trump has put forward for surgeon general, a role that has taken on heightened political significance during an era of intense debate over vaccine policy and government health guidance."
+        "Following the Supreme Court\'s decision to narrow the scope of the Voting Rights Act, GOP-led legislatures in Alabama and Tennessee are moving swiftly to redraw congressional districts in ways that could end the careers of several Black Democratic House members. Alabama lawmakers are set to convene as early as Monday in Montgomery, with Tennessee following shortly after, as both states race to take advantage of the new legal landscape before any potential court challenges can be mounted.",
+        "The ruling has sent shockwaves through redistricting watchers nationwide, with NPR reporting that the decision is expected to unleash a broader wave of aggressive gerrymandering across multiple states. Critics argue the maps being considered represent a deliberate effort to dilute minority voting power under the cover of the court\'s weakened VRA standard, while Republican officials frame the redrawing as a straightforward exercise in political mapmaking now permitted under the new precedent."
       ],
-      image: "https://images.pexels.com/photos/30964771/pexels-photo-30964771.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      source: "NPR",
-      url: "https://www.npr.org/2026/04/30/g-s1-119571/nicole-saphier-trump-casey-means-surgeon-general-nomination",
+      image: "https://thehill.com/wp-content/uploads/sites/2/2025/03/67da0bf557a6c8.31620688-e1777690379163.jpeg?w=900",
+      source: "The Washington Post",
+      url: "https://www.washingtonpost.com/politics/2026/05/01/alabama-tennessee-gerrymandering-congress-vra/",
       category: "Politics"
     },
     {
       id: "us2",
-      title: "Maine Gov. Janet Mills Suspends Senate Bid, Shaking Up Key Democratic Race",
-      summary: "Maine Governor Janet Mills abruptly suspended her U.S. Senate campaign, upending Democratic efforts to recapture the chamber in a race viewed as critically competitive.",
+      title: "Trump Endorses Rep. Andy Barr for Kentucky Senate Seat as Musk-Backed Rival Exits Race",
+      summary: "President Trump has endorsed Representative Andy Barr in the Kentucky Republican primary to succeed Mitch McConnell, after Nate Morris — the candidate backed by Elon Musk — announced he was withdrawing and joining the Trump administration.",
       body: [
-        "Governor Janet Mills announced Thursday that she is stepping back from the Maine Senate race, a decision that sent shockwaves through Democratic Party circles and immediately prompted Senate Minority Leader Chuck Schumer to reach out to remaining candidate Graham Platner. The Maine seat is considered one of Democrats' best pickup opportunities as the party works to retake the Senate majority in the 2026 midterms, making Mills' exit a significant strategic setback.",
-        "Platner, who has faced scrutiny over past controversial social media posts and other personal baggage, now emerges as a leading contender despite lingering concerns from within the party. Schumer and Platner spoke in what was described as a cordial conversation, even though Schumer had previously backed Schumer\'s rival, suggesting the party establishment is prepared to consolidate behind Platner rather than cede the seat to Republicans."
+        "Trump\'s endorsement of Barr consolidates the field in one of the most closely watched Senate primaries of the cycle, a race to fill the seat being vacated by longtime Senate Republican leader Mitch McConnell. Nate Morris, who had attracted support from Elon Musk\'s political operation, announced his exit from the race after meeting privately with the president, saying he would instead take a role in the Trump administration — a move that effectively clears the path for Barr.",
+        "The Kentucky seat is considered safe for Republicans in a general election, making the primary the decisive contest, and Trump\'s intervention underscores his continued dominance over the GOP nomination process. The episode also illustrates the evolving and sometimes transactional relationship between Trump and the Musk political orbit, with the tech billionaire\'s preferred candidate ultimately deferring to the president\'s wishes."
       ],
-      image: "https://images.unsplash.com/photo-1483489966031-7662708c95e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxNYWluZSUyMEdvdi4lMjBKYW5ldCUyME1pbGxzJTIwU3VzcGVuZHMlMjBTZW5hdGUlMjBCaWQlMkMlMjBTaGFraW5nJTIwVXAlMjBLZXklMjBEZW1vY3JhdGljJTIwUmFjZXxlbnwwfDB8fHwxNzc3NjExNzc5fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "NPR",
-      url: "https://www.npr.org/2026/04/30/nx-s1-5805902/maine-gov-janet-mills-says-shes-suspending-her-campaign-for-u-s-senate",
+      image: "https://static01.nyt.com/images/2026/05/01/multimedia/01pol-kentucky-senate-phwv/01pol-kentucky-senate-phwv-mediumSquareAt3X.jpg",
+      source: "The New York Times",
+      url: "https://www.nytimes.com/2026/05/01/us/politics/trump-andy-barr-kentucky-senate-endorsement.html",
       category: "Politics"
     },
     {
       id: "us3",
-      title: "Louisiana Suspends House Primaries After Supreme Court Strikes Down Congressional Map as Racial Gerrymander",
-      summary: "Louisiana halted its upcoming U.S. House primaries after the Supreme Court ruled the state\'s congressional map is an unconstitutional racial gerrymander, forcing lawmakers to draw a new district plan.",
+      title: "Medicaid Work Requirements Take Effect in Nebraska Under Trump\'s Budget Law",
+      summary: "Nebraska became the first state to implement Medicaid work requirements under President Trump\'s sweeping budget legislation, with many enrollees now required to prove they are employed — a policy that will roll out nationally beginning in January.",
       body: [
-        "Governor Jeff Landry issued an order pausing Louisiana\'s scheduled U.S. House primaries following a landmark Supreme Court ruling that found the state\'s congressional map violated the Voting Rights Act by constituting an unconstitutional racial gerrymander. The suspension gives the Republican-controlled state legislature time to draft and approve a new map before elections can proceed, a process that could significantly reshape the state\'s delegation in Washington.",
-        "The ruling puts Louisiana among a growing number of red states facing federal judicial pressure to redraw their congressional boundaries, with potential implications for the balance of power in the U.S. House. Republicans in the state have acknowledged the redistricting process could ultimately result in the GOP gaining one or two additional seats, depending on how new lines are drawn — adding a competitive political dimension to what is formally a legal compliance exercise."
+        "Starting May 1st, Medicaid recipients in Nebraska must document that they are working, searching for work, or engaged in qualifying activities in order to maintain their health coverage, marking the first real-world implementation of work requirements mandated by Trump\'s budget law. Advocates and social service providers have expressed deep concern that many eligible recipients — including caregivers, people with intermittent employment, and those with limited internet access — will lose coverage not because they are ineligible but because they struggle to navigate the administrative requirements.",
+        "The Nebraska rollout is being watched closely as a harbinger of what is to come when the requirement takes effect in all participating states in January, a change that analysts project could result in millions of Americans losing Medicaid coverage. The policy represents one of the most significant structural changes to the Medicaid program in decades and is already drawing legal scrutiny from health advocacy organizations who argue the requirements undermine the program\'s core purpose."
       ],
-      image: "https://images.unsplash.com/flagged/photo-1574298967939-b46c2c88cdc1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxMb3Vpc2lhbmElMjBTdXNwZW5kcyUyMEhvdXNlJTIwUHJpbWFyaWVzJTIwQWZ0ZXIlMjBTdXByZW1lJTIwQ291cnQlMjBTdHJpa2VzJTIwRG93biUyMENvbmdyZXNzaW9uYWwlMjBNYXAlMjBhcyUyMFJhY2lhbCUyMEdlcnJ5bWFuZGVyfGVufDB8MHx8fDE3Nzc2MTE3Nzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      image: "https://images.pexels.com/photos/31513071/pexels-photo-31513071.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       source: "NPR",
-      url: "https://www.npr.org/2026/04/30/nx-s1-5806000/louisiana-suspends-house-primaries-supreme-court",
+      url: "https://www.npr.org/2026/05/01/nx-s1-5806260/trump-medicaid-work-requirements-nebraska-big-beautiful-bill-hr1-obbba",
       category: "Politics"
     }
   ]

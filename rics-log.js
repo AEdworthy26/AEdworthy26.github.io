@@ -3,6 +3,45 @@
 
 var RICS_LOG = [
   {
+    "date": "2026-05-02",
+    "topic": "CIL Liability, Exemptions and Charging Schedule Mechanics",
+    "module": "Legal and Regulatory Compliance",
+    "level": 2,
+    "apc_competency": "Legal/Regulatory Compliance (Level 2)",
+    "focus": "This lesson examines the Community Infrastructure Levy in granular detail \u2014 how charging schedules are structured, how liability is calculated on mixed-tenure schemes, and how exemptions (social housing relief, self-build, charitable) interact with clawback risk. For Alfie, CIL is a live transactional issue on every land acquisition and appraisal, directly affecting residual land value and cashflow timing on Latimer\\'s mixed-tenure schemes.",
+    "image": "https://images.unsplash.com/photo-1742552096036-53e5b7d9a364?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxDSUwlMjBMaWFiaWxpdHklMkMlMjBFeGVtcHRpb25zJTIwYW5kJTIwQ2hhcmdpbmclMjBTY2hlZHVsZSUyME1lY2hhbmljcyUyMGFyY2hpdGVjdHVyZXxlbnwwfDB8fHwxNzc3Njk4NTczfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "content": [],
+    "summary": [
+      "CIL liability = CIL rate (indexed by BCIS TPI) \u00d7 chargeable net floor area; the in-use credit only applies if the existing building was lawfully occupied for 6 months in the preceding 36 months \u2014 vacant brownfield buildings often get no credit.",
+      "London has a two-tier CIL system: Mayoral CIL (MCIL2, currently \u00a360/m\u00b2) applies on top of borough CIL; both must be modelled in appraisals and cashflows as separate line items with their respective instalment schedules.",
+      "Social housing relief (Reg. 49) exempts affordable rent, social rent and qualifying shared ownership units from CIL entirely \u2014 but Form 8 must be submitted before any material operation constituting commencement, or the relief is permanently lost for those units.",
+      "CIL relief is subject to a 7-year clawback period; any RP disposal, portfolio transaction or staircasing event within 7 years of commencement must be reviewed for clawback exposure, with notification obligations falling on the RP within 14 days of a disqualifying event.",
+      "On land acquisition, submitting Form 1 (Assumption of Liability) transfers CIL control to Latimer as incoming developer \u2014 without it, liability may default to the vendor or landowning entity, creating complications for lenders and JV structures."
+    ],
+    "qa": [
+      {
+        "q": "You\\'re appraising a brownfield site in a London borough. The existing warehouse has been vacant for 5 years. The borough CIL rate in the charging schedule was \u00a3140/m\u00b2 when adopted; the BCIS TPI has risen 18% since adoption. How do you calculate the current effective CIL rate, and what is the in-use credit position?",
+        "a": "The indexed CIL rate is \u00a3140 \u00d7 1.18 = \u00a3165.20/m\u00b2 (borough). MCIL2 adds \u00a360/m\u00b2, so total effective rate is \u00a3225.20/m\u00b2. The in-use credit is not available: the existing building must have been in lawful use for a continuous 6-month period in the 36 months preceding the grant of planning permission (Reg. 40). A building vacant for 5 years fails this test, so the full GIA of new development is chargeable. This must be modelled in the appraisal on a gross chargeable floorspace basis with no credit offset."
+      },
+      {
+        "q": "On a 150-unit scheme (50% affordable by unit count: 40 affordable rent, 35 shared ownership), your colleague says you can claim social housing relief on all 75 affordable units. Is that correct, and what conditions apply?",
+        "a": "Social housing relief is available for affordable rent and shared ownership units that meet the qualifying criteria under Reg. 49, so in principle all 75 units could qualify. However, three conditions must be met: (1) the dwellings must be provided by or transferred to a registered provider; (2) Form 8 must be submitted to the Collecting Authority before commencement of the chargeable development; and (3) for shared ownership, the initial equity tranche must be at least 25% and the dwelling must meet the affordable housing definition. If any unit is later converted to market sale or the RP disposes of it outside qualifying terms within 7 years, clawback applies to that unit\\'s pro-rata CIL exemption."
+      },
+      {
+        "q": "You are acquiring a site with an existing planning permission. A CIL liability notice was issued 8 months ago to the current landowner. What steps must Latimer take on completion of the land purchase to manage CIL liability correctly?",
+        "a": "Latimer should submit Form 1 (Assumption of Liability Notice) to the Collecting Authority promptly on or before completion. This formally transfers liability from the vendor to Latimer as the incoming developer with a chargeable interest, giving Latimer control over instalment elections, exemption claims and the commencement trigger. Without Form 1, liability defaults to the owner of the chargeable interest at commencement \u2014 which could create issues if the vendor retains any interest or if the conveyancing structure involves a nominee or SPV. Legal due diligence should also confirm whether any instalment payments have already been made or whether the liability notice is correctly calculated, including whether the existing permission pre-dates CIL adoption (in which case transitional exemption may apply)."
+      },
+      {
+        "q": "On a phased residential scheme, your programme manager advises that Phase 1 demolition works will start in 3 weeks to meet a grant drawdown milestone. What CIL actions are required before those works commence?",
+        "a": "Two statutory forms must be submitted to the Collecting Authority before any material operation on Phase 1: (1) Form 1 \u2014 Assumption of Liability, confirming Latimer as the liable party for Phase 1; and (2) Form 8 \u2014 Claiming Exemption or Relief, if social housing relief is being claimed for qualifying affordable units in Phase 1. Demolition constitutes a 'material operation' under s.56 TCPA 1990 and therefore triggers commencement for CIL purposes. If Form 8 is not submitted before the demolition starts, social housing relief is permanently lost for the Phase 1 affordable units \u2014 a potentially very significant cost. This should be a hard gate on the programme dashboard with the development manager as named owner."
+      },
+      {
+        "q": "An assessor asks you to explain the difference between CIL and the proposed Infrastructure Levy under LURA 2023. What are the key structural differences, and what is the current status as of 2026?",
+        "a": "CIL is a fixed-rate, per-square-metre charge based on floorspace, set in advance in a charging schedule and applied uniformly within use class zones regardless of individual scheme viability. The Infrastructure Levy (IL) proposed under the Levelling-Up and Regeneration Act 2023 would instead be a value-based charge calculated on the difference between gross development value and a minimum threshold (the 'reference value'), applied at a percentage rate set by each authority. The IL was intended to replace both CIL and much of S106 negotiation with a single, more transparent capture mechanism, with the IL being levied on actual sale value rather than estimated floorspace costs. As of 2026, the IL has not been implemented \u2014 it remains subject to piloting and secondary legislation consultation, and CIL and S106 continue to operate as the live regime. Candidates should note that the IL as originally conceived raised significant concerns about its interaction with affordable housing delivery, since RP transfers at sub-market value could reduce the IL base, and the government has been consulting on how affordable housing obligations would be protected."
+      }
+    ]
+  },
+  {
     "date": "2026-05-01",
     "topic": "Golden Brick Structures: Mechanics, Risk Allocation and JV Structuring",
     "module": "Land Acquisition and Joint Ventures",

@@ -1,92 +1,88 @@
 // curiosity-data.js
-// Auto-updated 2026-05-01 — do not edit manually
+// Auto-updated 2026-05-02 — do not edit manually
 
 var CURIOSITY_DATA = {
-  date: "2026-05-01",
+  date: "2026-05-02",
   mainArticle: {
-    title: "The Nazca Lines: Messages in the Desert No One Was Meant to Read",
-    subject: "Nazca Lines Peru",
-    subtitle: "Scratched into one of the driest places on Earth, the geoglyphs of southern Peru have survived two thousand years — and still refuse to give up their secrets.",
-    image: "https://images.unsplash.com/photo-1715898777545-ba17b9d3ea24?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxOYXpjYSUyMExpbmVzJTIwUGVydXxlbnwwfDB8fHwxNzc3NjEyMDU2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    title: "The Tulip Mania: When a Flower Broke the Dutch Economy",
+    subject: "Dutch Tulip Mania",
+    subtitle: "In the winter of 1636, a single tulip bulb cost more than a canal house in Amsterdam. Then, almost overnight, it was worth nothing at all.",
+    image: "https://images.pexels.com/photos/16644082/pexels-photo-16644082.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     readTime: "8 min",
     content: [
       {
         type: "paragraph",
-        text: "On the arid plateau of southern Peru, between the towns of Nazca and Palpa, the ground itself has been turned into a canvas. Scraped into the reddish-brown desert surface are hundreds of enormous figures — a hummingbird with a wingspan of ninety metres, a spider the size of a football pitch, a monkey with a coiled tail stretching nearly a hundred and fifty metres across. They are so vast that their true shapes are completely invisible from the ground, and it was not until commercial aviation crossed the region in the 1920s that the full extent of the phenomenon began to dawn on the outside world. For the people who made them, sometime between 500 BCE and 500 CE, the view from altitude was simply not available — which raises the most fundamental question: what, exactly, were they for?"
+        text: "There is a moment in the history of the Dutch Golden Age that feels almost too strange to be real. In the winter of 1636 and early 1637, the price of a single rare tulip bulb — a plant, not even yet in bloom — reached the equivalent of ten times a skilled craftsman\'s annual wage. Contracts were drawn up, fortunes pledged, and an entire shadow economy built on the promise of flowers. Then, in February 1637, the market collapsed in a matter of days, and the most famous speculative bubble in economic history was over before most people had even understood what it was."
       },
       {
         type: "heading",
-        text: "A Canvas of Stone and Sky"
+        text: "A Flower from the East"
       },
       {
         type: "paragraph",
-        text: "The geoglyphs were made by the Nazca culture, a sophisticated pre-Columbian civilisation that flourished in the coastal and river valleys of what is now southern Peru. The technique was deceptively simple: workers removed the upper layer of dark, iron-oxide-coated pebbles to expose the pale yellowish-grey ground beneath, piling the darker stones along the edges to create visible lines. What makes the lines so durable is the Nazca plateau\'s almost supernatural stillness — low wind, negligible rainfall, and the slight heat created by the dark stones forming a protective cushion of warm air just above the surface. The result is that marks made by human hands two millennia ago remain as crisp as if they were laid down last year."
+        text: "The tulip was not native to the Netherlands. It arrived in Western Europe in the mid-sixteenth century, brought back by Flemish diplomat Ogier de Busbecq from the court of Suleiman the Magnificent in Constantinople, where the flower had been cultivated and adored for generations. The Ottoman passion for the tulip — its name derived from a Turkish word for turban — translated almost immediately into European obsession. By the time the botanist Carolus Clusius planted the first tulip bulbs in Leiden around 1593, the flower was already an object of extraordinary desire among the wealthy."
       },
       {
         type: "heading",
-        text: "Animals, Spirals, and Straight Lines to Nowhere"
+        text: "The Broken Tulip and the Birth of Speculation"
       },
       {
         type: "paragraph",
-        text: "The figures divide roughly into two categories: the famous biomorphs — the animals, plants, and humanoid figures — and the far more numerous geometric forms, including dead-straight lines that run for kilometres across the pampa without deviation, trapezoids wide enough to land a small aircraft, and spirals that wind inward to a tight central point. The straight lines in particular have attracted wild speculation, from ancient landing strips for spacecraft to sacred pathways for invisible beings. More careful analysis has shown that many lines point toward significant positions on the horizon — the rising of particular stars, the direction of seasonal water sources, the movement of the Pleiades — suggesting the plateau was used as a kind of monumental astronomical and calendrical instrument."
+        text: "What truly ignited the mania was a botanical curiosity — the so-called 'broken' tulip, whose petals displayed vivid streaks and flames of contrasting colour. We now know this effect was caused by a mosaic virus transmitted by aphids, but to seventeenth-century eyes it looked like a miracle of nature. A plain red tulip might transform into a sensational 'Semper Augustus' — white petals striped with carmine — and no grower could predict which bulbs would 'break' and which would not. This uncertainty was the engine of speculation: you were not just buying a flower, you were buying a lottery ticket."
       },
       {
         type: "heading",
-        text: "Water, Ritual, and a People Under Pressure"
+        text: "The Tavern Market and Futures in Flowers"
       },
       {
         type: "paragraph",
-        text: "The most compelling modern hypothesis links the lines not to astronomy alone but to water — the most precious resource in one of the driest inhabited environments on the planet. The Nazca people constructed an extraordinary network of underground aqueducts called puquios, some of which are still in use today, to tap aquifers and irrigate their fields. Researcher David Johnson and others have argued that many of the major geoglyphs and lines map directly onto the underground water system, serving as surface markers of subterranean sources and routes. If correct, the lines were not decorations or landing strips but a practical spiritual technology — a way of honouring and communicating with the water gods whose goodwill determined whether the harvest lived or died."
+        text: "As demand outstripped supply through the mid-1630s, trading shifted from professional florists to a much wider public. Taverns became informal exchanges where merchants, weavers, bakers, and farmers bought and sold bulbs that were still in the ground, using a form of futures contract. Most participants never intended to take physical delivery of a single bulb — they planned to sell their contracts at a profit before the bulbs were lifted. This was one of the earliest recorded examples of derivative trading, conducted over beer in the back rooms of Dutch inns."
+      },
+      {
+        type: "paragraph",
+        text: "At the peak, in the winter of 1636–37, prices defied all reason. The famous Semper Augustus bulb changed hands for 6,000 guilders — at a time when a comfortable Amsterdam house on a good canal could be bought for around 500. Even more ordinary varieties multiplied in price tenfold within weeks. The Dutch Republic was at the height of its global commercial power, flush with capital from the spice trade and bursting with entrepreneurial confidence; the tulip market absorbed all of that energy and reflected it back, distorted into something feverish."
       },
       {
         type: "heading",
-        text: "Maria Reiche and the Woman Who Devoted Her Life to the Desert"
+        text: "The Collapse"
       },
       {
         type: "paragraph",
-        text: "No figure is more associated with the Nazca Lines than Maria Reiche, a German mathematician and archaeologist who dedicated more than fifty years of her life to studying and preserving them. She arrived in Peru in the 1930s and encountered the lines through the American historian Paul Kosok, who had observed that on the winter solstice the sun set precisely along one of the major lines — leading him to call Nazca 'the largest astronomy book in the world.' Reiche embraced the astronomical hypothesis with missionary intensity, sleeping on the pampa, personally sweeping sections of lines with a broom, and lobbying the Peruvian government to protect them from encroachment. She died in Lima in 1998, aged ninety-five, having never fully abandoned the idea that the ancient Nazca were star-gazers who wrote their knowledge into the earth."
+        text: "The end came swiftly and with little drama. On the first Tuesday of February 1637, buyers simply failed to appear at a routine bulb auction in Haarlem. No one knows exactly why that particular sale was the tipping point — perhaps confidence had quietly eroded, or sellers had become too numerous, or enough people had begun to question whether a flower could truly be worth a house. Within days the word had spread to Amsterdam and Utrecht, and by the end of the week prices had fallen by ninety percent or more. Contracts became worthless. Fortunes evaporated."
       },
       {
         type: "heading",
-        text: "New Technologies, New Discoveries"
+        text: "The Myth and the Reality"
       },
       {
         type: "paragraph",
-        text: "The advent of drone photography and machine-learning image analysis has triggered a new golden age of Nazca research. In 2019 a Japanese team from Yamagata University announced the discovery of more than one hundred and forty previously unknown geoglyphs using a combination of drone surveys and AI pattern recognition — including small figures of decapitated humans, llamas, and snakes that had been overlooked for decades because they were simply too faint or too small to detect from the air. These newer discoveries tend to cluster closer to ancient pathways and habitation sites, suggesting they served a more localised ritual function than the great plateau figures. The plateau is now understood not as a single monument with a single meaning, but as a living landscape that different communities modified across many generations."
+        text: "Later generations, particularly nineteenth-century moralists, exaggerated the tulip crash into a tale of universal ruin — a cautionary fable about greed destroying an entire nation. Modern economic historians have substantially revised this picture. The majority of contracts appear to have been settled quietly through negotiation, courts were largely reluctant to enforce speculative flower debts, and the broader Dutch economy was not meaningfully damaged. The mania was real, the collapse was real, but the apocalypse was largely invented after the fact."
       },
       {
         type: "heading",
-        text: "A Heritage Under Threat"
+        text: "A Mirror Held to Every Age"
       },
       {
         type: "paragraph",
-        text: "UNESCO inscribed the Nazca Lines as a World Heritage Site in 1994, but protection has proved extraordinarily difficult. In 2009 heavy rains associated with El Niño caused flooding that damaged several figures. In 2014 activists from the environmental group Greenpeace caused international outrage when they walked across a section of the pampa near the hummingbird figure to lay out a banner, leaving footprints in the fragile surface that will persist for centuries. Illegal squatting, mining, and the expansion of the Pan-American Highway have all taken their toll. The very remoteness and scale that protected the lines for two thousand years now works against them as tourism, infrastructure, and climate change converge on the plateau."
-      },
-      {
-        type: "heading",
-        text: "What They Tell Us About Human Nature"
+        text: "What makes Tulip Mania enduringly fascinating is not its scale but its anatomy. Every element of the modern speculative bubble was present in those Dutch taverns: assets detached from intrinsic value, the contagion of collective belief, the intoxicating momentum of rising prices, and the sudden, inexplicable reversal of sentiment. The tulip mania has been invoked to explain everything from the South Sea Bubble to the dot-com crash to cryptocurrency markets, and each comparison reveals something true. Human beings, it turns out, have been making the same financial mistakes for as long as they have had money."
       },
       {
         type: "paragraph",
-        text: "Perhaps the most profound thing about the Nazca Lines is not what they tell us about astronomy or water management or ritual sacrifice, but what they tell us about the human compulsion to make marks — to assert presence, to communicate with forces larger than ourselves, to leave something behind. The Nazca had no writing system, no monumental stone architecture comparable to the Inca or the Maya, and their civilisation collapsed sometime around 750 CE, possibly due to catastrophic deforestation and the floods that followed. Yet they moved millions of tonnes of stone across hundreds of square kilometres to create images that, by definition, only the gods could fully see. In that impulse — ambitious, hopeful, slightly desperate — they are not so different from us."
-      },
-      {
-        type: "paragraph",
-        text: "The lines endure not because anyone planned for them to. They endure because the desert is merciless to everything except patience, and because the people who made them worked with extraordinary care on something they believed mattered absolutely. Two thousand years later, staring down from a small aircraft banking over the pampa, it is almost impossible not to feel that it still does."
+        text: "The tulip itself, of course, survived. The Netherlands went on to become the world\'s dominant flower producer, and the tulip remains its national symbol — a gorgeous irony that a flower once associated with financial catastrophe now decorates the country\'s brand with cheerful innocence. Every spring, the fields around Lisse blaze with millions of blooms, utterly indifferent to the strange chapter in economic history they once inspired. The bulbs go into the ground and come up again, reliable as seasons, as if the whole peculiar episode of 1637 never happened at all."
       }
     ]
   },
   personOfTheDay: {
-    name: "Imhotep",
-    lifespan: "c. 2650–2600 BCE",
-    category: "Architecture, Medicine & Statecraft",
-    image: "https://upload.wikimedia.org/wikipedia/commons/e/e6/Imhotep%2C_donated_by_Padisu_MET_DP164134.jpg",
-    bio: "Imhotep stands as one of the most extraordinary individuals in all of ancient history — a man of such towering genius that he was eventually deified, worshipped as a god of medicine for more than two thousand years after his death. He served under the Third Dynasty pharaoh Djoser, holding titles that included Chancellor of the King of Lower Egypt, First After the King of Upper Egypt, and High Priest of Heliopolis. In a society where nearly every significant role was inherited by birth, Imhotep appears to have risen entirely through the force of his own intellect and ability — an almost unparalleled achievement in the ancient world.\n\nHis greatest physical legacy is the Step Pyramid at Saqqara, constructed around 2630 BCE and widely recognised as the world\'s oldest large-scale cut-stone structure. Before Imhotep, Egyptian monumental architecture was built from mud brick and organic materials; he conceived the radical idea of stacking mastaba tomb platforms in progressively smaller tiers, building upward rather than outward, and executing the entire complex in dressed limestone. The Step Pyramid complex is not merely a pyramid but a vast ceremonial precinct complete with courtyards, temples, and colonnaded corridors — an architectural revolution compressed into a single building programme. No other individual in the ancient world can be credited so directly with inventing a new architectural language.\n\nImhotep\'s reputation as a physician was equally formidable. Although no medical texts survive that can be definitively attributed to him, ancient Egyptian sources and later Greek writers credited him with founding the practice of rational medicine — diagnosis, examination, and treatment based on observation rather than purely on magical intervention. The Edwin Smith Papyrus, an ancient surgical text believed to preserve material dating to the Old Kingdom, is sometimes associated with his tradition. The Greeks identified him with their own god of medicine, Asclepius, and his temple at Memphis became a centre of healing pilgrimage. That a single man should be remembered as both the father of architecture and the father of medicine, across a span of civilisations separated by millennia, speaks to an achievement almost without parallel in human history."
+    name: "John Law",
+    lifespan: "1671–1729",
+    category: "Economics & Finance",
+    image: "https://images.unsplash.com/photo-1761724639378-e1df3487080c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxKb2huJTIwTGF3JTIwcG9ydHJhaXR8ZW58MHwyfHx8MTc3NzY5ODQ0N3ww&ixlib=rb-4.1.0&q=80&w=1080&crop=faces,entropy&fit=crop",
+    bio: "John Law was a Scottish economist, gambler, and financial visionary whose ideas about paper money and credit were simultaneously brilliant and catastrophic. Born in Edinburgh in 1671, the son of a goldsmith and banker, Law showed an extraordinary aptitude for mathematics from an early age and studied the mechanics of trade and finance with an intensity unusual for a young man of his background. A fatal duel in London in 1694 — which Law survived, though his opponent did not — forced him into exile on the Continent, where he spent two decades gambling professionally and developing increasingly ambitious theories about the nature of money.\n\nLaw\'s central insight was that a country\'s economic vitality was constrained not by its stock of gold and silver but by the volume of credit in circulation, and that a well-managed bank issuing paper notes could unlock enormous latent productive capacity. It was a genuinely modern idea, anticipated by almost no one in his era. After failing to persuade the governments of Scotland, Savoy, and Venice to adopt his scheme, he finally found a willing patron in the Regent of France, Philippe II, Duke of Orléans, who in 1716 granted Law permission to establish the Banque Générale — effectively France\'s first central bank.\n\nWhat followed was one of the most dazzling and disastrous experiments in financial history. Law\'s bank merged with a trading monopoly called the Compagnie des Indes, which held rights over the vast but largely unexplored Louisiana Territory in North America. Share prices in the company soared on the promise of fabulous American wealth, creating the Mississippi Bubble of 1719–20 — the French counterpart to England\'s South Sea Bubble, which collapsed at almost exactly the same moment. When confidence broke, the rush to redeem paper notes for gold destroyed the bank, ruined thousands of investors, and set back French financial development by decades. Law fled France in disgrace, dying in Venice in 1729, poor and largely forgotten. Yet his theoretical framework — that credit, not coin, is the lifeblood of a modern economy — proved entirely correct, and the institutions he pioneered, however clumsily, are the ancestors of every central bank in the world today."
   },
   onThisDay: {
-    headline: "The Great Exhibition Opens in London\'s Crystal Palace",
-    date: "May 1, 1851",
-    summary: "On the morning of 1 May 1851, Queen Victoria and Prince Albert arrived at a vast iron-and-glass structure in Hyde Park to declare open the Great Exhibition of the Works of Industry of All Nations — the world\'s first truly international trade fair. More than fourteen thousand exhibitors from across Britain and its empire and from thirty-nine foreign nations had filled the Crystal Palace, designed by the engineer Joseph Paxton, with everything from raw cotton and steam engines to porcelain, jewellery, and the Koh-i-Noor diamond. The opening ceremony drew an audience of around five hundred thousand people in and around Hyde Park, and Queen Victoria, visibly moved, recorded in her diary that it was 'the greatest day in our history.'\n\nThe Exhibition ran until 15 October 1851 and attracted over six million visitors — roughly a third of the entire population of Britain — during its five-and-a-half-month run. It was the brainchild of Prince Albert and the civil servant Henry Cole, conceived as a celebration of modern industrial achievement and a demonstration of Britain\'s position at the apex of global manufacturing and trade. The profits, amounting to around £186,000, were used to purchase land in South Kensington on which the Victoria and Albert Museum, the Science Museum, and the Natural History Museum were subsequently built. The Crystal Palace itself was later dismantled and re-erected at Sydenham Hill, where it stood until it burned down in a spectacular fire in 1936.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/6/67/London_Skyline_%28125508655%29.jpeg"
+    headline: "Leonardo da Vinci Dies at Amboise",
+    date: "May 2, 1519",
+    summary: "On May 2, 1519, Leonardo da Vinci died at the Château du Clos Lucé near Amboise, France, at the age of sixty-seven. He had spent the final three years of his life as a guest of King Francis I of France, who had invited him to the Loire Valley with the honorary title of Premier Painter, Engineer, and Architect to the King. According to the later account of Giorgio Vasari, Francis held Leonardo\'s head in his arms as he died — a story almost certainly embellished, but one that captures the extraordinary esteem in which the artist was held by one of Europe\'s most powerful monarchs.\n\nLeonardo left behind a body of work that defied easy categorisation. His paintings — among them the Mona Lisa, The Last Supper, and The Virgin of the Rocks — had already secured his fame across Europe. But the thousands of pages of notebooks he left, filled with anatomical drawings, designs for flying machines, studies of water flow, geological observations, and philosophical reflections, would not be fully appreciated for centuries. He bequeathed most of his paintings and manuscripts to his devoted pupil and companion Francesco Melzi, who guarded them carefully, though after Melzi\'s death the collection was scattered and much was eventually lost.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/e/ef/AmboiseRue.JPG"
   }
 };

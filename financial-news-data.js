@@ -1,60 +1,60 @@
 // financial-news-data.js
-// Auto-updated 2026-05-01 — do not edit manually
+// Auto-updated 2026-05-02 — do not edit manually
 
 var FINANCIAL_NEWS = {
-  date: "2026-05-01",
+  date: "2026-05-02",
   main: {
-    title: "UAE\'s Shock OPEC Exit Threatens Oil Market Stability as Middle East War Reshapes Energy Order",
-    category: "Markets & Commodities",
+    title: "Trump Tears Up EU Tariff Deal, Hiking Auto Import Duties to 25%",
+    category: "Economics",
     content: [
-      "The United Arab Emirates' sudden departure from OPEC after six decades of membership has sent shockwaves through global oil markets, raising the prospect of a prolonged price war between Gulf giants that could destabilize energy supplies for years to come. The UAE\'s exit — the most dramatic rupture in the cartel\'s history — follows weeks of mounting tension with Saudi Arabia over production quotas and market strategy amid the ongoing Iran conflict. Analysts warn that without the UAE\'s roughly 3.5 million barrels per day of output bound by cartel discipline, the carefully managed supply agreements that have underpinned global oil prices could begin to unravel.",
-      "Oil markets were already on edge heading into May, with crude holding its second consecutive weekly gain after US President Donald Trump confirmed that the naval blockade of Iranian ports would remain in place, stoking fears that the Strait of Hormuz — through which roughly a fifth of the world\'s traded oil passes — could remain restricted indefinitely. The blockade has removed a significant volume of Iranian crude from world markets and pushed prices sharply higher, generating enormous profits for non-Iranian producers. It is this windfall, and disagreements about how to respond to it, that reportedly lies at the heart of the Saudi-UAE rift.",
-      "Saudi Arabia has historically used OPEC as a tool to smooth volatility and maintain a target price band that balances producer revenues with avoiding demand destruction in consuming nations. The UAE, buoyed by its massive and relatively low-cost Murban crude fields, has increasingly chafed at production ceilings it views as handing market share to rivals outside the cartel. With the Iran war creating a supply vacuum, Abu Dhabi appears to have calculated that the moment is right to pump at will and capture a larger slice of the global market, even if that means a damaging standoff with Riyadh.",
-      "The financial consequences of a full-blown Gulf oil price war could be severe and far-reaching. If Saudi Arabia retaliates by flooding markets with its own crude — as it famously did in 2020 — prices could swing violently in both directions, making long-term energy investment planning nearly impossible for producers and consumers alike. European governments, already weighing temporary windfall taxes on oil company profits, would face a complicated new calculus if prices collapsed even as the underlying conflict kept supply routes uncertain. Emerging market economies heavily dependent on stable energy import costs would be particularly exposed to such volatility.",
-      "For ordinary consumers and businesses, the medium-term outlook remains deeply uncertain. The Bank of England, holding UK interest rates at 3.75% this week, warned explicitly that 'higher inflation is unavoidable' given the energy shock cascading from the Middle East conflict, signaling that rate cuts may be off the table for much of 2026. In the United States, first-quarter GDP rebounded to a 2% annual rate driven by AI investment and government spending, but consumer spending is already slowing under the weight of elevated energy prices. Markets will be watching closely to see whether the OPEC fracture accelerates the oil shock or, paradoxically, brings a surge of new supply that eventually eases the pressure on household budgets worldwide."
+      "Markets face fresh turbulence after President Trump announced late Friday that he is unilaterally raising tariffs on European Union cars and lorries to 25%, up from the 15% rate established under a deal negotiated just last July at his Scottish golf course. The move blindsided Brussels on a public holiday across much of the continent, limiting the EU\'s ability to mount an immediate coordinated response. Automakers on both sides of the Atlantic saw their shares slide in after-hours trading as investors digested the implications of a steeper trade barrier on one of the world\'s most valuable export categories.",
+      "The original July 2025 accord had been widely hailed as a de-escalation in transatlantic trade tensions, giving European manufacturers — particularly German giants such as Volkswagen, BMW, and Mercedes-Benz — a degree of certainty around their U.S. pricing strategies. Trump\'s decision to tear up the automotive component of that deal, citing what he called Brussels' failure to ratify the agreement in a timely fashion, removes that certainty and injects fresh cost pressures into supply chains that are already strained by the broader conflict in the Middle East. Analysts warned that a 25% tariff would materially erode profit margins for European carmakers, who collectively export hundreds of thousands of vehicles annually to the U.S. market.",
+      "The economic ripple effects are expected to extend well beyond the showroom floor. Suppliers of components, steel, and electronics integrated into EU-assembled vehicles could face reduced orders if manufacturers shift production or cut volumes destined for America. Meanwhile, U.S. consumers shopping for European luxury and performance cars should expect sticker prices to climb, adding another inflationary pressure point at a time when the Federal Reserve is already navigating a complicated rate environment. Some industry analysts suggested that certain automakers may accelerate plans to expand U.S.-based manufacturing to sidestep the tariff wall entirely.",
+      "The timing of the announcement — issued on a Friday ahead of a long weekend in Europe — is seen by trade economists as a deliberate pressure tactic designed to limit the EU\'s immediate diplomatic options. European Commission officials are expected to convene early next week to assess retaliatory measures, which could range from counter-tariffs on American goods to legal challenges through the World Trade Organization. Any tit-for-tat escalation would raise the stakes considerably for U.S. exporters, including agricultural producers and technology companies that count Europe as a critical revenue market. Currency markets also reacted, with the euro slipping against the dollar as risk appetite cooled.",
+      "From a broader market perspective, the announcement revives fears of a sustained trade war that equity strategists had largely priced out following last summer\'s deal. Equity futures for European indices pointed lower ahead of Monday\'s open, and bond markets may see a flight-to-safety bid as uncertainty mounts. Investors will be watching closely for official EU retaliation timelines and any signals from Federal Reserve officials on whether renewed trade friction could influence the pace of monetary policy adjustments. For now, the consensus view is that the breakdown adds a meaningful downside risk to global growth forecasts for the second half of 2026."
     ],
-    image: "https://images.unsplash.com/photo-1721977592357-83091542c989?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxVQUUlNUN8ZW58MHwwfHx8MTc3NzYxMTgzMHww&ixlib=rb-4.1.0&q=80&w=1080",
+    image: "https://i.guim.co.uk/img/media/9e3828c1776fce5aa657441120d8cefd21f699b7/667_0_3333_2667/master/3333.jpg?width=1200&quality=85&auto=format&fit=max&s=cceea1e1907aded775fff155aa45196c",
     source: "The Guardian",
-    sourceUrl: "https://www.theguardian.com/business/2026/apr/30/uae-saudi-arabia-opec-gulf-oil-price-war"
+    sourceUrl: "https://www.theguardian.com/us-news/2026/may/01/trump-tears-up-eu-tariff-deal-raises-import-duties-europe"
   },
   secondary: [
     {
       id: "fn1",
-      title: "Apple Reports 'Extraordinary' iPhone Demand as Tim Cook Era Draws to a Close",
-      summary: "Apple hailed exceptional iPhone sales in its latest earnings report even as CEO Tim Cook prepares to hand the reins to successor John Ternus after 15 years at the helm.",
+      title: "Apple Abandons Net-Cash-Neutral Target, Fuelling M&A Speculation",
+      summary: "Apple\'s decision to retire its net-cash-neutral financial target has sparked speculation that the tech giant is positioning itself for a major AI-driven acquisition.",
       body: [
-        "Apple\'s latest quarterly results delivered stronger-than-expected iPhone demand, which Cook described as 'extraordinary,' providing a significant boost to investor confidence at a moment of leadership transition for one of the world\'s most valuable companies. The results underscore Apple\'s continued ability to grow its core hardware business despite a challenging macroeconomic environment marked by elevated inflation and slowing consumer spending in key markets.",
-        "Cook, who transformed Apple from a struggling tech firm into a multi-trillion-dollar colossus over his 15-year tenure, will hand over to hardware engineering chief John Ternus in a transition that analysts say has been carefully managed to minimise market disruption. Investors will be watching Ternus closely for signals about Apple\'s strategic direction, particularly its approach to artificial intelligence integration and its exposure to global supply chain risks."
+        "By officially stepping back from its long-held goal of reaching a net-cash-neutral balance sheet, Apple is signalling to investors that it is prepared to deploy its vast capital reserves more aggressively, potentially through a transformative merger or acquisition in the artificial intelligence space. Analysts at several Wall Street firms noted that the shift in capital allocation philosophy is the clearest indication yet that Apple\'s leadership believes organic AI development alone may not be sufficient to keep pace with rivals.",
+        "The move comes as Apple faces intensifying competitive pressure from Microsoft, Google, and a wave of AI-native startups that have moved faster in integrating large language models into consumer and enterprise products. A major acquisition — potentially targeting an AI infrastructure company, a foundational model developer, or an enterprise software firm — could dramatically accelerate Apple\'s strategic position and justify the balance sheet shift to shareholders."
       ],
-      image: "https://images.unsplash.com/photo-1659035260002-11d486d6e9f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxBcHBsZSUyMFJlcG9ydHMlMjB8ZW58MHwwfHx8MTc3NzYxMTgzMXww&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/ce8pdk3l4d2o?at_medium=RSS&at_campaign=rss",
-      category: "Corporate Earnings"
-    },
-    {
-      id: "fn2",
-      title: "Alphabet Surges to Record Market Cap Milestone as Cloud and AI Growth Accelerates",
-      summary: "Alphabet added a record $421 billion to its market capitalisation in a single session, fuelled by massive cloud revenue growth and mounting AI momentum that is closing the gap with Nvidia.",
-      body: [
-        "Google\'s parent company Alphabet achieved a historic single-day market cap gain of $421 billion after reporting blowout cloud and AI-driven earnings, cementing its position as one of the largest companies by valuation in the world and bringing it within striking distance of Nvidia\'s towering market cap. The surge reflects investor conviction that Alphabet\'s Google Cloud platform is emerging as a genuine rival to Amazon Web Services and Microsoft Azure in the race to monetise enterprise AI adoption.",
-        "The result adds to a broader wave of megacap tech earnings momentum that has pushed S&P 500 and Nasdaq futures higher, signalling that Wall Street\'s record-breaking rally may have further to run despite macroeconomic headwinds from energy prices and slowing consumer spending. Alphabet\'s performance reinforces the view that large-cap technology firms with deep AI capabilities are increasingly seen as defensive growth plays in an uncertain global economy."
-      ],
-      image: "https://images.mktw.net/im-04974196",
+      image: "https://images.unsplash.com/photo-1707227547719-1438d26b8754?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxBcHBsZSUyMEFiYW5kb25zJTIwTmV0LUNhc2gtTmV1dHJhbCUyMFRhcmdldCUyQyUyMEZ1ZWxsaW5nJTIwTSUyNkElMjBTcGVjdWxhdGlvbnxlbnwwfDB8fHwxNzc3Njk4MjI0fDA&ixlib=rb-4.1.0&q=80&w=1080",
       source: "MarketWatch",
-      url: "https://www.marketwatch.com/story/alphabet-hits-a-milestone-as-it-closes-in-on-nvidia-00622b31?mod=mw_rss_topstories",
+      url: "https://www.marketwatch.com/story/apple-just-gave-a-subtle-clue-that-a-splashy-ai-acquisition-may-be-in-the-cards-110f5ce2?mod=mw_rss_topstories",
       category: "Markets"
     },
     {
-      id: "fn3",
-      title: "Central Banks Accelerate Gold Buying as Middle East War Heightens Reserve Risk",
-      summary: "Central banks around the world are ramping up gold purchases and grappling with where to securely store the influx of reserves as geopolitical risk from the widening Middle East conflict intensifies demand for the safe-haven asset.",
+      id: "fn2",
+      title: "Czech Energy Group Eyes Combined Bid for British Steel and Speciality Steel UK",
+      summary: "Sev.en Global Investments has hinted it could pursue a combined acquisition of British Steel and Speciality Steel UK, which would create Britain\'s largest steelmaker.",
       body: [
-        "The escalating Iran war and broader geopolitical instability have supercharged a multi-year trend of central bank gold accumulation, with institutions from Europe to Asia adding to their reserves at a pace not seen in decades and creating a logistical challenge around secure storage of the heavy metal. Gold\'s role as a crisis asset has been reinforced by the energy shock and dollar volatility, prompting policymakers to treat bullion as an essential buffer against financial system stress.",
-        "The surge in demand raises practical questions about vault capacity, counterparty risk, and the ability to rapidly mobilise gold reserves in a genuine liquidity crisis — concerns that are now being taken more seriously by reserve managers who witnessed the asset freezes imposed on Russian central bank holdings in 2022. Analysts suggest the buying trend is unlikely to reverse while the Middle East conflict persists, providing a structural floor under gold prices that could complicate the inflation-fighting calculus for monetary policymakers worldwide."
+        "Czech billionaire Pavel Tykač's Sev.en Global Investments, already the owner of the UK\'s largest electric steelworks, has signalled to the British government that it believes a single buyer for both state-owned British Steel and Speciality Steel UK would be the most economically rational outcome, potentially consolidating the country\'s fragmented steel industry under one roof. The proposed combination would represent one of the most significant industrial mergers in the UK steel sector in decades.",
+        "The approach comes as the UK government grapples with what to do with assets that are strategically sensitive but financially precarious, particularly against the backdrop of global overcapacity and shifting tariff dynamics. A deal of this scale would face intense scrutiny from regulators and politicians concerned about foreign ownership of critical national infrastructure, but proponents argue that consolidation is essential to achieving the economies of scale needed for long-term viability."
       ],
-      image: "https://images.unsplash.com/photo-1774779685524-cc735ae11a9e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxDZW50cmFsJTIwQmFua3MlMjBBY2NlbGVyYXRlJTIwR29sZCUyMEJ1eWluZyUyMGFzJTIwTWlkZGxlJTIwRWFzdCUyMFdhciUyMEhlaWdodGVucyUyMFJlc2VydmUlMjBSaXNrfGVufDB8MHx8fDE3Nzc2MTE4MzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "The New York Times",
-      url: "https://www.nytimes.com/2026/05/01/business/central-banks-gold-buying.html",
+      image: "https://i.guim.co.uk/img/media/b9b2aa20c13b88ea6fd6817597181fdd8cecc721/0_0_4560_3648/master/4560.jpg?width=1200&quality=85&auto=format&fit=max&s=646fba685a96aed0d58c497ce772913e",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/business/2026/may/01/seven-energy-group-hints-bid-british-steel-speciality-steel-uk",
+      category: "Mergers & Acquisitions"
+    },
+    {
+      id: "fn3",
+      title: "Columbia University\'s Credit Outlook Cut to Negative by Moody\'s",
+      summary: "Moody\'s Ratings revised Columbia University\'s credit outlook to negative, citing mounting financial risks stemming from the hostile federal environment for higher education.",
+      body: [
+        "The ratings agency pointed to increasing uncertainty around federal funding flows and the broader political climate targeting elite universities as the key drivers behind the negative outlook revision, a move that stops short of an outright downgrade but signals that one could follow if conditions deteriorate further. Columbia, like several of its Ivy League peers, has faced significant federal funding pressure, which threatens to constrain research revenues and operational budgets.",
+        "The development carries wider financial market implications because universities are significant issuers of tax-exempt municipal bonds, and a ratings downgrade would raise their borrowing costs and potentially trigger covenant clauses on existing debt instruments. Bond investors holding paper from higher-education institutions have been reassessing risk premiums across the sector, and Moody\'s action on Columbia is likely to accelerate that repricing conversation."
+      ],
+      image: "https://images.unsplash.com/photo-1754380578524-2612e9de4366?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxDb2x1bWJpYSUyMFVuaXZlcnNpdHklNUN8ZW58MHwwfHx8MTc3NzY5ODIyNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "Bloomberg",
+      url: "https://www.bloomberg.com/news/articles/2026-05-01/columbia-risks-losing-top-credit-rating-as-trump-slams-colleges",
       category: "Economics"
     }
   ]

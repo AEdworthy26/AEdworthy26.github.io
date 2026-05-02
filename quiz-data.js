@@ -1,10 +1,10 @@
 // quiz-data.js
-// Auto-updated 2026-05-01 — do not edit manually
+// Auto-updated 2026-05-02 — do not edit manually
 
 window.QUIZ_DATA = {
-  date: '2026-05-01',
+  date: '2026-05-02',
   category: 'Transport',
-  question: 'The Eurostar train service ran through the Channel Tunnel for the first time in which year — and what was the name of the London terminus it originally departed from?',
-  answer: '1994, from Waterloo International.',
-  funFact: 'Eurostar services didn\'t move to St Pancras International until November 2007, when the completion of the High Speed 1 rail link dramatically cut journey times to Paris. The original Waterloo International terminal, designed by Nicholas Grimshaw and once celebrated as an architectural landmark, was mothballed after the switch and sat largely unused for years. At its 1994 opening, the service was seen as a genuine engineering marvel — the tunnel itself had taken around 13,000 workers and roughly six years to complete.'
+  question: 'The Falkirk Wheel in Scotland, opened in 2002, is the world\'s only rotating boat lift — but how many degrees does it rotate to transfer boats between the two canals?',
+  answer: '180 degrees.',
+  funFact: 'The Falkirk Wheel connects the Forth & Clyde Canal to the Union Canal, replacing a flight of 11 locks that had been demolished in 1933. Remarkably, the wheel uses roughly the same energy as boiling just eight household kettles per rotation, because the two gondolas always contain equal weights of water, keeping the structure in perfect balance.'
 };

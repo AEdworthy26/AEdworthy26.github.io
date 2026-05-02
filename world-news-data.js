@@ -1,61 +1,61 @@
 // world-news-data.js
-// Auto-updated 2026-05-01 — do not edit manually
+// Auto-updated 2026-05-02 — do not edit manually
 
 var WORLD_NEWS = {
-  date: "2026-05-01",
+  date: "2026-05-02",
   main: {
-    title: "Iran War Triggers Global Humanitarian Crisis as Strait of Hormuz Blockade Strands Sailors and Threatens Food Security",
-    category: "Geopolitics",
+    title: "Iran War Threatens Global Food Security as Fertiliser Shortages Loom Over Poorest Nations",
+    category: "International",
     content: [
-      "The ongoing US and Israeli war on Iran has entered a new and deeply alarming phase, with the blockade of the Strait of Hormuz now threatening to destabilise global food and energy supplies on a catastrophic scale. Aid organisations and international bodies are calling for an emergency humanitarian corridor through the strait, as soaring oil prices and the naval blockade prevent food, fuel, and medicine from reaching millions of people in desperate need. The United Nations has urged the belligerent parties to facilitate the release of an estimated 20,000 civilian sailors who remain stranded in the Gulf, unable to navigate freely through one of the world\'s most critical maritime chokepoints.",
-      "The human cost of the blockade is mounting by the day. Thousands of seafarers from dozens of nations are effectively marooned on their vessels, with the UN warning that their physical and mental wellbeing is deteriorating as the standoff drags on with no clear diplomatic resolution in sight. NGOs operating in the region say the disruption to shipping lanes has drastically slowed or entirely blocked the delivery of humanitarian aid to some of the world\'s most vulnerable populations, particularly in Yemen, East Africa, and South Asia, where supply chains depend heavily on Persian Gulf transit routes.",
-      "The economic shockwaves are now being felt far beyond the immediate theatre of conflict. Svein Tore Holsether, chief executive of Yara International — the world\'s largest fertiliser company — has issued a stark warning that the war could have 'dramatic consequences' for food security across Africa. With Iran being a significant supplier of petrochemical inputs used in fertiliser production, and with shipping disruptions adding enormous costs to global supply chains, Holsether cautioned that a 'global auction' for remaining fertiliser supplies would inevitably leave the poorest nations scrambling to feed their populations ahead of the next growing season.",
-      "Tehran has declared that the siege of its ports is 'intolerable,' raising the spectre of further escalation as Iranian officials signalled they are weighing retaliatory options. US President Trump has indicated he is considering additional military and economic measures, though the precise nature of any further action remains unclear. The Pentagon confirmed this week that the war has already cost the United States an estimated $25 billion, a figure that is expected to climb sharply as operations continue and the logistical demands of maintaining a naval blockade in contested waters intensify.",
-      "The broader international community is increasingly alarmed by the conflict\'s cascading effects. Calls for a ceasefire and a negotiated humanitarian corridor have come from the African Union, several European governments, and dozens of non-governmental organisations, though no concrete diplomatic breakthrough has yet materialised. With Iranian civilians described as living beneath a 'smooth veneer' while quietly grappling with grief, economic stress, and a profound loss of hope, the human dimension of the conflict is becoming impossible to ignore — and pressure on world leaders to pursue a diplomatic off-ramp is growing louder with each passing week."
+      "The ongoing conflict with Iran is sending shockwaves far beyond the Middle East, with the world\'s largest fertiliser company warning of potentially catastrophic consequences for global food supplies. Svein Tore Holsether, chief executive of Yara International, has issued a stark warning that disruptions to fertiliser production and distribution caused by the Iran war could leave billions of meals at risk. He cautioned that the poorest countries, particularly across Africa, would face a brutal scramble for supplies they can ill afford, as a global auction dynamic drives prices beyond their reach.",
+      "Fertiliser production is heavily reliant on natural gas, and Iran is one of the world\'s significant suppliers of petrochemical inputs to the sector. With conflict disrupting supply chains and shipping through the region, the knock-on effects for agricultural productivity are expected to be severe and long-lasting. Yara, which supplies fertilisers to farmers across more than 160 countries, says reduced access to key inputs could meaningfully cut crop yields at a time when global food insecurity is already elevated.",
+      "The warning comes as the United States escalates its military posture in the region, with President Trump openly boasting that US forces are operating 'like pirates' seizing Iranian oil tankers and cargo near the Strait of Hormuz. The Strait remains one of the world\'s most critical chokepoints for energy and trade, and sustained military operations there are adding further pressure to commodity markets. Shipping insurance costs have surged, and many commercial vessels are now rerouting around the region entirely, compounding delays and costs across global supply chains.",
+      "For sub-Saharan Africa, which imports a substantial portion of its fertiliser needs, the consequences could prove particularly dire ahead of critical planting seasons. Nations already contending with food insecurity driven by drought, conflict, and economic instability now face the additional burden of fertiliser prices spiking on global markets. Aid organisations and agricultural economists have begun calling on wealthy nations to intervene with emergency subsidies or strategic reserve releases to prevent a cascading hunger crisis.",
+      "The situation underscores the deeply interconnected nature of modern geopolitics and food security, and has prompted renewed calls at the United Nations for a diplomatic resolution to the Iran conflict. World leaders are being urged to consider the humanitarian consequences of prolonged military engagement, not just for the immediate region but for vulnerable populations thousands of miles away. With planting windows approaching across much of the developing world, the window to avert the worst food security outcomes is narrowing rapidly."
     ],
-    image: "https://i.guim.co.uk/img/media/d9f25a6186b4d882994fd880b0c2e110d149a30e/538_0_6763_5413/master/6763.jpg?width=1200&quality=85&auto=format&fit=max&s=5f32b97a995cbd0b7497bc7987a93741",
+    image: "https://i.guim.co.uk/img/media/72572e4531d8b96763219808cc31193fb6123299/178_3_1122_897/master/1122.jpg?width=1200&quality=85&auto=format&fit=max&s=80e87dda2be63ded51f96867ffe910dc",
     source: "The Guardian",
-    sourceUrl: "https://www.theguardian.com/global-development/2026/apr/29/humanitarian-corridor-strait-of-hormuz-iran-war-hits-vital-aid"
+    sourceUrl: "https://www.theguardian.com/business/2026/may/01/iran-war-may-cause-food-shortages-in-africa-world-largest-fertiliser-firm-yara-says"
   },
   secondary: [
     {
       id: "s1",
-      title: "Myanmar Junta Claims Aung San Suu Kyi Moved to House Arrest, But Doubts Persist",
-      summary: "Myanmar\'s military says the imprisoned Nobel laureate Aung San Suu Kyi has been transferred from prison to house arrest, though her son and international observers say they have received no credible confirmation of her wellbeing.",
+      title: "US to Cut 5,000 Troops from Germany Amid Deepening Rift with Merz Over Iran",
+      summary: "Washington is reducing its military presence in Germany by 5,000 troops as tensions flare between the Trump administration and Chancellor Merz over the Iran conflict.",
       body: [
-        "The Myanmar military junta announced that Aung San Suu Kyi, the country\'s ousted civilian leader, has been moved from prison to house arrest — a development that, if verified, would mark the first significant change in her detention conditions since the February 2021 coup. However, her son Kim Aris has said he has received no authoritative confirmation of the move, and secrecy surrounding her new location has prompted widespread alarm among human rights advocates.",
-        "Suu Kyi, a Nobel Peace Prize laureate who led Myanmar\'s elected government before the military seized power, has been held in detention for over five years and faces a lengthy prison sentence on a range of charges widely condemned as politically motivated. The announcement comes amid ongoing civil war in Myanmar and intense international pressure on the junta to release political prisoners and engage in dialogue."
+        "The United States has announced it will withdraw approximately 5,000 troops from Germany, a significant reduction in the NATO ally\'s hosting of American forces that comes amid a sharp diplomatic dispute between President Trump and German Chancellor Friedrich Merz. The row centres on disagreements over the US-led military campaign against Iran, with Germany among the European allies most vocally opposed to Washington\'s approach. The move has alarmed NATO partners who fear it signals a broader US retreat from its European security commitments.",
+        "The decision marks a serious deterioration in one of the transatlantic alliance\'s most important bilateral relationships, coming at a moment when European nations are already grappling with uncertainty over American security guarantees. Germany hosts one of the largest contingents of US forces on the continent, and any reduction carries both symbolic and strategic weight. European defence officials are now facing fresh pressure to accelerate their own rearmament and reduce dependency on American military presence."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/2031/live/852957f0-44b3-11f1-ac78-2112837ce2aa.jpg",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/9794/live/527f9bf0-45c3-11f1-b55d-0f258dce1735.jpg",
       source: "BBC News",
-      url: "https://www.bbc.com/news/articles/cz72j8eex4eo?at_medium=RSS&at_campaign=rss",
-      category: "Human Rights"
+      url: "https://www.bbc.com/news/articles/c0729d374mxo?at_medium=RSS&at_campaign=rss",
+      category: "Geopolitics"
     },
     {
       id: "s2",
-      title: "Israel\'s Raid on Gaza Aid Flotilla Draws International Condemnation",
-      summary: "Israel has provoked widespread international outrage after intercepting and raiding Gaza-bound aid boats in international waters, with protests erupting across multiple countries.",
+      title: "Lithuania Uncovers Russian Sabotage and Murder Plots, Arrests Nine",
+      summary: "Lithuanian authorities have arrested nine people in connection with Russian-orchestrated sabotage and assassination plots, highlighting the persistent threat Moscow poses within Europe.",
       body: [
-        "Israel\'s interception of a flotilla carrying humanitarian aid destined for Gaza has triggered a wave of condemnation from governments, international organisations, and civil society groups around the world. The raid, which took place in international waters, has drawn comparisons to the 2010 Mavi Marmara incident and reignited fierce debate over the legality and morality of Israel\'s ongoing blockade of the Gaza Strip.",
-        "Protests have broken out in several cities in response to the incident, with demonstrators demanding accountability and calling on Western governments to take firmer action. The episode adds further strain to Israel\'s already embattled international standing, coming at a time when it is simultaneously engaged in military operations in Lebanon and embroiled in the wider regional conflict involving Iran."
+        "Lithuania\'s security services have broken up a series of Russian-directed plots involving sabotage and murder, resulting in the arrests of nine individuals, in a stark reminder of the covert warfare Russia continues to wage across European soil. The operation comes at a moment when Washington\'s strategic attention has shifted heavily toward the Middle East, leaving European nations increasingly alert to the risk of Russian exploitation of the distraction. Lithuanian officials described the plots as part of a sustained campaign by Russian intelligence to destabilise NATO\'s eastern flank.",
+        "The arrests follow a pattern of suspected Russian hybrid operations across Europe in recent years, including infrastructure sabotage, arson attacks, and assassination attempts targeting dissidents and officials. Baltic states, sitting on NATO\'s front line with Russia, have been particularly vigilant and have repeatedly urged their western allies to take the threat more seriously. The latest revelations are expected to intensify calls within the EU and NATO for a coordinated response to Russian subversion on European territory."
       ],
-      image: "https://images.unsplash.com/photo-1652273946728-194af735b363?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxJc3JhZWwlNUN8ZW58MHwwfHx8MTc3NzYxMTY3N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "Al Jazeera",
-      url: "https://www.aljazeera.com/video/newsfeed/2026/5/1/condemnation-and-protests-against-israels-raid-of-gaza-aid-flotilla?traffic_source=rss",
-      category: "Conflict"
+      image: "https://static01.nyt.com/images/2026/05/01/multimedia/01Lithuania-sabotage-vlwz/01Lithuania-sabotage-vlwz-mediumSquareAt3X.jpg",
+      source: "The New York Times",
+      url: "https://www.nytimes.com/2026/05/01/world/europe/russia-sabotage-lithuania.html",
+      category: "Security"
     },
     {
       id: "s3",
-      title: "Venice Biennale Jury Resigns Over Russia\'s Return to Exhibition",
-      summary: "The jury of the Venice Biennale has resigned en masse just days before the prestigious art exhibition opens, following intense controversy over Russia\'s participation for the first time since its full-scale invasion of Ukraine.",
+      title: "Uganda\'s New Dissent Bill Draws Comparisons to Russia and China, Critics Warn",
+      summary: "A sweeping new Ugandan bill that proposes up to 20 years in prison for promoting 'foreign interests' has been condemned by human rights groups as a blueprint for authoritarian repression.",
       body: [
-        "All members of the Venice Biennale\'s jury stepped down this week in a dramatic collective protest, citing growing tensions over the decision to allow Russia to return to the world\'s most prestigious international art exhibition. Russia had been excluded from the Biennale following its full-scale invasion of Ukraine in 2022, making its reinstatement a deeply divisive move within the international arts community.",
-        "The resignations cast a shadow over an event that prides itself on cultural diplomacy and openness, and have reignited broader debates about whether artistic and cultural institutions should maintain exclusions tied to geopolitical conduct. Ukrainian cultural figures and their supporters have been vocal in opposing Russia\'s return, arguing that normalising its presence on the world stage sends the wrong message while the war in Ukraine continues."
+        "Uganda is moving to pass legislation that would criminalise the promotion of so-called 'foreign interests', imposing prison sentences of up to two decades on a broad range of individuals and organisations that work with or receive funding from overseas partners. Critics, including opposition politicians, legal experts, and human rights organisations, have condemned the bill as a deliberate attempt to silence dissent and neutralise civil society, drawing direct parallels with repressive laws enacted in Russia and China. The legislation\'s sweeping scope means it could be applied to journalists, NGO workers, academics, and political opponents alike.",
+        "The bill arrives in a context of tightening political control in Uganda under President Yoweri Museveni, who has held power for four decades and faces growing domestic opposition. International human rights bodies have warned that the law, if passed, would effectively shut down independent civic life in the country and entrench authoritarian rule. Aid donors and foreign governments are expected to come under pressure to respond, potentially through the withdrawal of funding or diplomatic sanctions, though Uganda\'s government has shown little sign of backing down."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/bad6/live/0773d1f0-44e0-11f1-bd52-e755d604ece4.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/c78qdg4g80eo?at_medium=RSS&at_campaign=rss",
-      category: "Culture & Diplomacy"
+      image: "https://images.unsplash.com/photo-1557041046-68419635a6e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxVZ2FuZGElNUN8ZW58MHwwfHx8MTc3NzY5ODA4MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/global-development/2026/may/01/uganda-copying-russia-and-china-with-new-bill-designed-to-crush-dissent-say-critics",
+      category: "Human Rights"
     }
   ]
 };

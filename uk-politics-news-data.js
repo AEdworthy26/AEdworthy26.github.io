@@ -1,60 +1,60 @@
 // uk-politics-news-data.js
-// Auto-updated 2026-05-01 — do not edit manually
+// Auto-updated 2026-05-02 — do not edit manually
 
 var UK_POLITICS_NEWS = {
-  date: "2026-05-01",
+  date: "2026-05-02",
   main: {
-    title: "Renters' Rights Act: No-Fault Eviction Ban Comes Into Force as Solicitors Report Last-Minute Rush",
+    title: "Andy Burnham Planning Return to Westminster 'Within Weeks' to Challenge Starmer for Labour Leadership",
     category: "Politics",
     content: [
-      "The Renters' Rights Act is set to come into force in England on Friday, bringing with it a landmark ban on no-fault evictions — a change that housing campaigners have hailed as the most significant reform to the private rented sector in a generation. Solicitors across the country have reported being inundated with last-minute requests from landlords seeking to serve section 21 notices before the deadline, in what has been described as a late flood of evictions. Advice charities have similarly been stretched thin, helping thousands of tenants understand their rights and navigate the often complex legal landscape in the final days before the legislation takes effect.",
-      "Section 21 notices, commonly known as 'no-fault evictions', have long been a source of anxiety for renters in England, allowing landlords to evict tenants without giving any reason, provided they followed the correct procedure. Critics have argued for years that the mechanism left renters in a state of chronic insecurity, unable to put down roots or make long-term plans for fear of sudden displacement. The ban has been a flagship policy commitment for the Labour government, framed as a core part of its promise to rebalance the relationship between landlords and tenants.",
-      "Housing charities and tenant advocacy groups have cautiously welcomed the incoming legislation, while warning that enforcement will be critical to its success. There are concerns that some landlords may attempt to use other legal routes to remove tenants, and that the courts — already under significant pressure — could struggle to cope with an increase in dispute cases. Campaigners are urging the government to ensure that adequate resources are directed towards the legal aid system and housing tribunals to prevent the new protections from becoming unenforceable in practice.",
-      "The legislation also introduces a raft of other reforms alongside the eviction ban, including stronger protections against rent increases being used as a backdoor eviction tool, and new rights for tenants to request pets in their homes. Housing Minister Matthew Pennycook has pointed to the Act as evidence of the government\'s serious intent to address the imbalance of power in the rental market. However, landlord associations have raised concerns that the cumulative burden of regulation could push more private landlords to sell up, potentially reducing the overall supply of rented homes at a time when demand remains acute.",
-      "The timing of the Act\'s implementation, coming just days before local elections, has added a political dimension to the story. Labour is hoping the reform will resonate with younger and urban voters who are disproportionately represented in the private rental sector. With parties including the Greens also targeting renters as a key constituency, the government will be keen to ensure the rollout is smooth and that the headline promise of ending no-fault evictions is seen to be delivering real change on the ground for the millions of people currently renting their homes across England."
+      "Andy Burnham, the Mayor of Greater Manchester, is said to have a credible plan to return to Westminster 'within weeks', according to allies of the former Health Secretary. The Greater Manchester mayor is reportedly close to identifying a parliamentary seat where a sitting Labour MP would voluntarily step aside, triggering a by-election that could pave the way for his long-anticipated return to frontline national politics. The development marks a significant escalation in the simmering internal Labour tensions that have dogged Prime Minister Keir Starmer\'s administration in recent months.",
+      "Sources close to Burnham say he has already identified several potential constituencies where sitting Labour MPs are prepared to make way, with the understanding that a successful by-election campaign would allow him to mount a formal leadership challenge. The move has been described by supportive Labour MPs as the most viable route to refreshing the party\'s direction at a time of mounting concern about Starmer\'s electoral prospects. One senior Labour figure was quoted as saying 'no other plan comes close' when assessing potential routes back to competitiveness for the party.",
+      "Burnham\'s potential candidacy has been discussed with increasing urgency among Labour backbenchers who are worried about the government\'s poll ratings and its perceived failure to articulate a compelling vision for the country. The Manchester mayor has built a formidable reputation over his decade in Greater Manchester, overseeing ambitious transport and housing projects while cultivating a more communitarian political identity distinct from the technocratic style that has characterised Starmer\'s leadership. His supporters argue he represents a bridge between Labour\'s traditional working-class base and the progressive urban voters the party needs to retain.",
+      "A return to Parliament via a by-election would give Burnham a high-profile platform to set out what allies describe as a 'new agenda for government', potentially wrong-footing Starmer at a critical juncture. The choreography of any such move would be delicate: Labour party rules require formal leadership contests to be triggered, and Burnham would need to enter the Commons before mounting any challenge. Nevertheless, insiders say the logistical groundwork is already well advanced, with conversations held in private over recent weeks reaching a point of near-readiness.",
+      "The news lands at a particularly turbulent moment for Labour, with the party facing pressure on multiple fronts — from a resurgent Reform UK on its right flank, from the Greens and Liberal Democrats eating into its metropolitan base, and from deepening unease on the Labour benches about the government\'s handling of public services and economic strategy. For Burnham, the timing may never be better: his approval ratings outside Westminster remain strong, and he enters any contest with a record of delivery that few rivals can match. Whether he ultimately pulls the trigger will be one of the defining political questions of the coming weeks.",
     ],
-    image: "https://images.unsplash.com/photo-1590986201364-ce95ab280ca2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxSZW50ZXJzfGVufDB8MHx8fDE3Nzc2MTE3MjV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image: "https://static.independent.co.uk/2026/03/04/14/27/Andy-Burnham-keynote-speech-s5tkl8xs.jpeg?width=1200&auto=webp&trim=0%2C0%2C0%2C0",
     source: "The Guardian",
-    sourceUrl: "https://www.theguardian.com/society/2026/apr/30/late-flood-no-fault-evictions-ban-england-renters-rights-act"
+    sourceUrl: "https://www.theguardian.com/politics/2026/may/01/andy-burnham-westminster-return-plan-within-weeks"
   },
   secondary: [
     {
       id: "uk1",
-      title: "Met Chief Condemns Green Leader Polanski Over Golders Green Arrest Post",
-      summary: "Metropolitan Police Commissioner Sir Mark Rowley has written to Green Party leader Zack Polanski warning that his criticism of officers who arrested the Golders Green terror suspect will have a 'chilling effect' on policing.",
+      title: "Starmer Calls Polanski 'Not Fit to Lead' After Green Leader Shares Post Criticising Police at Golders Green Stabbings",
+      summary: "Keir Starmer condemned Greens leader Zack Polanski as 'disgraceful' and unfit to head a political party after he shared a social media post critical of officers who responded to the Golders Green stabbings.",
       body: [
-        "Sir Mark Rowley has publicly rebuked Green Party leader Zack Polanski after the politician shared a post condemning the manner in which police subdued a 45-year-old man arrested following the stabbing of two Jewish people in Golders Green, north London. The Met Commissioner described Polanski as 'misinformed' and said the post risked undermining public confidence in officers who were acting to protect the community in a dangerous situation.",
-        "The row has erupted just days before local elections, creating a sharp dividing line between the Greens and other parties over policing and free expression. Polanski hit back, accusing Labour of being 'authoritarian' and claiming the government was exploiting Jewish pain to justify restricting protest rights — a charge Labour and Jewish community groups have firmly rejected."
+        "Zack Polanski, who leads the Green Party in England and Wales, apologised after sharing a post that claimed police were 'repeatedly and violently kicking a mentally ill man in the head' during the Golders Green stabbing incident. The Metropolitan Police Commissioner publicly rebuked Polanski, warning that the post risked undermining public confidence in officers and was based on inaccurate information.",
+        "Prime Minister Keir Starmer seized on the controversy to deliver a stinging attack on the Green leader, declaring that Polanski was 'not fit to lead any political party'. The episode has raised fresh questions about the Greens' leadership judgment at a moment when the party has been gaining ground in London and other urban areas at Labour\'s expense."
       ],
-      image: "https://i.guim.co.uk/img/media/b5d0ea54affb050ef24310ae908430e2ea5a50ca/305_0_2500_2000/master/2500.jpg?width=1200&quality=85&auto=format&fit=max&s=09ec7d784ef326f191b1ad5dd37ffd37",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/c74r9rlw9ngo?at_medium=RSS&at_campaign=rss",
+      image: "https://images.pexels.com/photos/7580860/pexels-photo-7580860.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/politics/2026/may/01/keir-starmer-condemns-zack-polanski-sharing-post-criticising-police-golders-green-stabbings",
       category: "Politics"
     },
     {
       id: "uk2",
-      title: "Blair Institute Urges Labour to Scrap 'Unaffordable' Pension Triple Lock",
-      summary: "The Tony Blair Institute has called on the Labour government to abandon its manifesto commitment to the pensions triple lock, warning it is financially unsustainable amid mounting pressure on public finances.",
+      title: "John Major Warns UK Must Stop Changing Prime Ministers, Says Leaders Are Failing Young People",
+      summary: "Former Conservative Prime Minister Sir John Major has warned that Britain\'s habit of repeatedly changing its political leadership is damaging the country\'s ability to tackle long-term challenges.",
       body: [
-        "The Tony Blair Institute for Global Change has urged the government to scrap the triple lock on the state pension, describing it as a policy 'built for a different era' that can no longer be justified given the scale of strain on public finances. The think tank argues that with spending commitments already stretched, the automatic guarantee that pensions rise by the highest of inflation, earnings growth, or 2.5 percent represents an increasingly unaffordable obligation.",
-        "The intervention places the influential institute at odds with Labour\'s official manifesto position, and is likely to prove politically sensitive given the importance of older voters to the party\'s coalition. The government has so far given no indication it intends to revisit the pledge, but the public intervention by a body closely associated with a former Labour prime minister will add to pressure on Keir Starmer\'s administration to set out a long-term fiscal strategy."
+        "Speaking to the BBC, Sir John Major argued that the revolving door of prime ministers in recent years has left successive governments unable to address structural problems facing young people, from housing to economic opportunity. He called on political leaders across party lines to show greater commitment to long-term thinking rather than short-term political survival.",
+        "Major\'s intervention carries particular weight given his own experience of navigating a turbulent period in office, and his remarks were seen as an implicit criticism of both the current Labour administration and the chaotic final years of Conservative government. His comments add to a broader chorus of concern from establishment figures about the state of British political leadership."
       ],
-      image: "https://i.guim.co.uk/img/media/f23e95065d1276a61e49f3fcc6aa18ca08e9784a/0_45_3533_2827/master/3533.jpg?width=1200&quality=85&auto=format&fit=max&s=b886d8d95f1955fb78b3f67959a9f4f2",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/money/2026/may/01/tony-blair-thinktank-urges-labour-scrap-pension-triple-lock",
-      category: "Economics"
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/2806/live/2f600d10-4520-11f1-ac78-2112837ce2aa.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.com/news/articles/cgepy0xw1nzo?at_medium=RSS&at_campaign=rss",
+      category: "Politics"
     },
     {
       id: "uk3",
-      title: "John Major Warns Against Trend of Changing Prime Ministers Too Frequently",
-      summary: "Former Conservative Prime Minister Sir John Major has cautioned that the UK\'s habit of removing leaders before they can address long-term challenges is letting down younger generations.",
+      title: "Starmer Urges Ban on Certain Protest Chants in Antisemitism Crackdown as Minister Says Marches Have Been 'Hijacked'",
+      summary: "Prime Minister Keir Starmer has called for restrictions on some pro-Palestinian protest chants in what he described as a necessary crackdown on antisemitism, while a minister warned marches have been hijacked by extremists.",
       body: [
-        "Sir John Major, who served as Prime Minister from 1990 to 1997, has issued a stark warning about the instability created by the rapid turnover of prime ministers in recent years, telling the BBC that political leaders are failing young people by prioritising short-term survival over substantive long-term policymaking. The former Tory leader said the country needed leaders with the courage to make difficult decisions across multiple parliaments rather than retreating to populism.",
-        "Major\'s comments come against a backdrop of significant political turbulence in Westminster, with the UK having seen multiple changes of prime minister in a relatively short period. His intervention is likely to be read as a broader critique of the culture within both major parties, and arrives at a moment when questions about Labour\'s own internal pressures and the future direction of the Conservative Party under Kemi Badenoch continue to dominate political commentary."
+        "Starmer challenged marchers who hear chants of 'globalise the Intifada' to ask themselves why they are not speaking out, and signalled support for banning such slogans at public demonstrations. The remarks were accompanied by comments from minister Alex Davies-Jones, who said pro-Palestinian marches have been hijacked, while cautioning that any new restrictions must be carefully balanced against the fundamental right to protest.",
+        "The announcements reflect the government\'s ongoing struggle to navigate one of the most politically charged issues of the current Parliament, with pressure from Jewish community groups and some Labour MPs for stronger action sitting uneasily alongside concerns from civil liberties advocates about the erosion of protest rights. The policy debate is likely to intensify ahead of further planned demonstrations in London and other major cities."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/657d/live/70809e50-44b6-11f1-b55d-0f258dce1735.png",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/cgepy0xw1nzo?at_medium=RSS&at_campaign=rss",
+      image: "https://static.independent.co.uk/2026/05/01/07/Britain_Antisemitism_Attack_25293.jpg?width=1200&auto=webp&crop=3%3A2",
+      source: "The Independent",
+      url: "https://www.independent.co.uk/news/uk/politics/starmer-ban-protest-antisemitism-palestine-b2969129.html",
       category: "Politics"
     }
   ]
