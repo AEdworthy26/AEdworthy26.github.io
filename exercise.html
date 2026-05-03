@@ -157,8 +157,10 @@
     .form-row-4 { grid-template-columns: 1fr 1fr 1fr 1fr; }
     .form-field { display: flex; flex-direction: column; gap: .22rem; }
     .form-label { font-size: .62rem; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; color: var(--muted); }
-    .form-input { border: 1px solid var(--border); border-radius: 6px; padding: .38rem .65rem; font-size: .82rem; background: var(--paper); color: var(--ink); transition: border-color .15s; width: 100%; }
-    .form-input:focus { outline: none; border-color: #888; background: var(--card); }
+    .form-input { border: 1px solid var(--border); border-radius: 6px; padding: .38rem .65rem; font-size: .82rem; background: var(--paper); color: var(--ink); transition: border-color .15s, box-shadow .15s; width: 100%; }
+    .form-input:focus { outline: none; border-color: #2563eb; box-shadow: 0 0 0 3px rgba(37,99,235,.1); background: var(--card); }
+    select.form-input { appearance: none; -webkit-appearance: none; padding-right: 2.2rem; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right .65rem center; cursor: pointer; }
+    select.form-input:focus { border-color: #2563eb; box-shadow: 0 0 0 3px rgba(37,99,235,.1); }
     .wtype-toggle { display: flex; border: 1px solid var(--border); border-radius: 6px; overflow: hidden; }
     .wtype-btn { flex: 1; border: none; background: none; padding: .36rem; font-size: .72rem; font-weight: 500; color: var(--muted); transition: all .12s; }
     .wtype-btn.active { background: #2563eb; color: #fff; }
