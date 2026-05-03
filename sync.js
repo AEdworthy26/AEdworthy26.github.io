@@ -1,14 +1,11 @@
 /* ── Personal Hub Cloud Sync ─────────────────────────────────────────────────
-   Syncs organisational data to a private GitHub Gist.
-   Token is stored only in localStorage on each device — never in this file.
-   Gist ID is not sensitive (it's just a storage key, not a credential).
+   Syncs organisational data via a Cloudflare Worker (token lives server-side).
+   No credentials are stored in the browser.
    ────────────────────────────────────────────────────────────────────────── */
 (function () {
-  var GIST_ID   = '15906d39db7dcba2325f33eab0ee1a9b';
-  var GIST_FILE = 'personal-hub-sync.json';
-  var API_URL   = 'https://api.github.com/gists/' + GIST_ID;
+  var WORKER_URL = 'https://personal-hub-sync.alfieedworthy.workers.dev';
+  var GIST_FILE  = 'personal-hub-sync.json';
 
-  var TOKEN_KEY     = 'ph_sync_token';
   var LAST_SYNC_KEY = 'ph_sync_last';
   var RELOAD_FLAG   = 'ph_sync_reloaded_' + location.pathname;
 
@@ -35,38 +32,7 @@
   var _origSet = localStorage.setItem.bind(localStorage);
   var _origGet = localStorage.getItem.bind(localStorage);
 
-  function setCookie(name, value, days) {
-    var expires = new Date(Date.now() + days * 86400000).toUTCString();
-    document.cookie = name + '=' + encodeURIComponent(value) + '; expires=' + expires + '; path=/; SameSite=Strict';
-  }
-
-  function getCookie(name) {
-    var m = document.cookie.match('(?:^|;)\\s*' + name + '=([^;]*)');
-    return m ? decodeURIComponent(m[1]) : null;
-  }
-
-  function getToken() {
-    var t = _origGet(TOKEN_KEY);
-    if (!t) {
-      t = getCookie(TOKEN_KEY);
-      if (t) _origSet(TOKEN_KEY, t); // restore from cookie backup
-    }
-    return t;
-  }
-
-  function saveToken(token) {
-    _origSet(TOKEN_KEY, token);
-    setCookie(TOKEN_KEY, token, 365);
-  }
-
-  function authHeaders(token) {
-    return {
-      'Authorization': 'token ' + token,
-      'Content-Type':  'application/json'
-    };
-  }
-
-  var TIMESTAMPS_KEY = 'ph_sync_timestamps'; // local record of when each key was last written here
+  var TIMESTAMPS_KEY = 'ph_sync_timestamps';
 
   function getLocalTimestamps() {
     try { return JSON.parse(_origGet(TIMESTAMPS_KEY) || '{}'); } catch(e) { return {}; }
@@ -77,7 +43,7 @@
     _origSet(TIMESTAMPS_KEY, JSON.stringify(ts));
   }
 
-  /* ── push: localStorage → Gist ── */
+  /* ── push: localStorage → Worker → Gist ── */
   var pushTimer = null;
   function schedulePush() {
     clearTimeout(pushTimer);
@@ -96,12 +62,10 @@
   }
 
   function doPush(keepalive) {
-    var token = getToken();
-    if (!token) return;
-    fetch(API_URL, {
-      method:   'PATCH',
-      headers:  authHeaders(token),
-      body:     buildPayload(),
+    fetch(WORKER_URL, {
+      method:    'PATCH',
+      headers:   { 'Content-Type': 'application/json' },
+      body:      buildPayload(),
       keepalive: !!keepalive
     }).then(function () {
       _origSet(LAST_SYNC_KEY, new Date().toISOString());
@@ -111,11 +75,9 @@
     });
   }
 
-  /* ── pull: Gist → localStorage ── */
+  /* ── pull: Worker → Gist → localStorage ── */
   function doPull(callback) {
-    var token = getToken();
-    if (!token) { if (callback) callback(false, 'no-token'); return; }
-    fetch(API_URL, { headers: authHeaders(token) })
+    fetch(WORKER_URL)
       .then(function (r) {
         if (!r.ok) throw new Error('http ' + r.status);
         return r.json();
@@ -131,18 +93,14 @@
         var changed = false;
 
         SYNC_KEYS.forEach(function (k) {
-          if (remote[k] === undefined) return; // remote has nothing — never overwrite
+          if (remote[k] === undefined) return;
           var localVal   = _origGet(k);
           var remoteTime = remoteTs[k] || 0;
           var localTime  = localTs[k]  || 0;
 
-          // Only overwrite local if:
-          // 1. We have no local data at all, OR
-          // 2. Remote timestamp is strictly newer than local timestamp
           if (localVal === null || remoteTime > localTime) {
             if (remote[k] !== localVal) {
               _origSet(k, remote[k]);
-              // adopt remote timestamp so we don't immediately push back
               var ts = getLocalTimestamps();
               ts[k] = remoteTime || Date.now();
               _origSet(TIMESTAMPS_KEY, JSON.stringify(ts));
@@ -162,9 +120,7 @@
   /* ── intercept localStorage.setItem to auto-push ── */
   localStorage.setItem = function (key, value) {
     _origSet(key, value);
-    if (key === TOKEN_KEY) {
-      setCookie(TOKEN_KEY, value, 365);
-    } else if (key !== LAST_SYNC_KEY && SYNC_KEYS.indexOf(key) !== -1) {
+    if (key !== LAST_SYNC_KEY && SYNC_KEYS.indexOf(key) !== -1) {
       setLocalTimestamp(key);
       schedulePush();
     }
@@ -172,12 +128,6 @@
 
   /* ── on page load: pull then reload once if data changed ── */
   window.addEventListener('DOMContentLoaded', function () {
-    var _tok = getToken();
-    if (_tok) setCookie(TOKEN_KEY, _tok, 365); // rolling expiry — resets on every visit
-    if (!getToken()) {
-      injectSyncWarning('Cloud sync is not active &mdash; your data is only stored in this browser and could be lost if it is cleared.');
-      return;
-    }
     var alreadyReloaded = sessionStorage.getItem(RELOAD_FLAG);
     doPull(function (ok, reason) {
       if (ok && reason === 'updated' && !alreadyReloaded) {
@@ -188,7 +138,9 @@
         var hoursSince = last ? (Date.now() - new Date(last).getTime()) / 3600000 : Infinity;
         if (hoursSince > 24) {
           var days = Math.floor(hoursSince / 24);
-          var daysMsg = hoursSince === Infinity ? ' No successful backup on record.' : ' Last successful backup was ' + days + ' day' + (days === 1 ? '' : 's') + ' ago.';
+          var daysMsg = hoursSince === Infinity
+            ? ' No successful backup on record.'
+            : ' Last successful backup was ' + days + ' day' + (days === 1 ? '' : 's') + ' ago.';
           injectSyncWarning('Sync is failing &mdash; your data is not being backed up.' + daysMsg);
         }
         updateSyncUI('error');
@@ -205,19 +157,19 @@
     var el = document.createElement('div');
     el.id = 'ph-sync-warning';
     el.style.cssText = 'background:#7a1a1a;color:#fff;padding:0.65rem 1.4rem;text-align:center;font-size:0.82rem;font-family:sans-serif;position:sticky;top:0;z-index:99999;line-height:1.6;';
-    el.innerHTML = '<strong>⚠ Sync warning:</strong> ' + msg + ' &mdash; <a href="/personal_hub.html" style="color:#ffd;text-underline-offset:2px;">Go to Hub to fix →</a>';
+    el.innerHTML = '<strong>&#9888; Sync warning:</strong> ' + msg;
     if (document.body) {
       document.body.insertBefore(el, document.body.firstChild);
     }
   }
 
-  /* ── push on tab close / navigation away (keepalive so browser doesn't kill it) ── */
+  /* ── push on tab close ── */
   window.addEventListener('beforeunload', function () { doPush(true); });
 
-  /* ── safety-net: push every 2 minutes while the page is open ── */
-  setInterval(function () { if (getToken()) doPush(); }, 2 * 60 * 1000);
+  /* ── safety-net: push every 2 minutes ── */
+  setInterval(function () { doPush(); }, 2 * 60 * 1000);
 
-  /* ── sync status indicator (subtle, top-right of page) ── */
+  /* ── sync status indicator ── */
   function updateSyncUI(state) {
     var el = document.getElementById('ph-sync-indicator');
     if (!el) return;
@@ -230,23 +182,10 @@
     }
   }
 
-  /* ── public API (used by setup UI in personal_hub.html) ── */
+  /* ── public API ── */
   window.PhSync = {
-    TOKEN_KEY:    TOKEN_KEY,
     LAST_SYNC_KEY: LAST_SYNC_KEY,
-    getToken:     getToken,
-    setToken: function (token, callback) {
-      saveToken(token.trim());
-      doPull(function (ok, reason) {
-        if (ok) {
-          updateSyncUI('synced');
-          if (callback) callback(true, reason);
-        } else {
-          if (callback) callback(false, reason);
-        }
-      });
-    },
-    push:   function() { doPush(); },
+    push:   function () { doPush(); },
     pull:   doPull,
     status: updateSyncUI
   };
