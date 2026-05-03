@@ -277,6 +277,16 @@
     .ingredients-list li:last-child { border-bottom: none; }
     .ing-qty { font-weight: 600; color: var(--ink); min-width: 60px; }
     .ing-name { color: var(--muted); }
+    /* ── INGREDIENT GROUPS ── */
+    .ing-group { margin-bottom: 1.1rem; }
+    .ing-group:last-child { margin-bottom: 0; }
+    .ing-group-label { font-size: 0.59rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.45rem; padding-bottom: 0.32rem; border-bottom: 1.5px solid var(--subtle); display: flex; align-items: center; gap: 0.4rem; }
+    .ing-group-label::before { content: ''; display: inline-block; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); flex-shrink: 0; }
+    /* ── SUBSTITUTES ── */
+    .sub-list { display: flex; flex-direction: column; gap: 0.85rem; }
+    .sub-ingredient { font-size: 0.78rem; font-weight: 600; color: var(--ink); margin-bottom: 0.32rem; }
+    .sub-alternatives { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+    .sub-alt { font-size: 0.71rem; background: rgba(122,60,0,0.07); color: var(--accent); border: 1px solid rgba(122,60,0,0.2); border-radius: 20px; padding: 0.18rem 0.65rem; font-weight: 500; }
     .steps-list { list-style: none; display: flex; flex-direction: column; gap: 0.8rem; }
     .steps-list li { display: flex; gap: 0.8rem; font-size: 0.83rem; line-height: 1.7; }
     .step-num { flex-shrink: 0; width: 22px; height: 22px; background: var(--accent); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.62rem; font-weight: 700; margin-top: 0.14rem; }
@@ -587,7 +597,11 @@
         </div>
         <p id="vm-desc" style="font-size:0.88rem;line-height:1.7;color:var(--muted);margin-bottom:0.5rem"></p>
         <span class="section-label">Ingredients</span>
-        <ul class="ingredients-list" id="vm-ingredients"></ul>
+        <div id="vm-ingredients"></div>
+        <div id="vm-substitutes-wrap">
+          <span class="section-label">Ingredient Substitutes</span>
+          <div class="sub-list" id="vm-substitutes"></div>
+        </div>
         <span class="section-label">Method</span>
         <ol class="steps-list" id="vm-steps"></ol>
         <div class="view-actions">
@@ -907,11 +921,32 @@
       document.getElementById('vm-serves').textContent = r.serves ? 'Serves ' + r.serves : '';
       document.getElementById('vm-desc').textContent = r.desc || '';
 
-      var ings = (r.ingredients || []).map(function(i) {
-        var qty = (i.quantity && +i.quantity > 0) ? (i.quantity + (i.unit ? ' ' + i.unit : '')) : (i.unit || '');
-        return '<li><span class="ing-qty">' + esc(qty) + '</span><span class="ing-name">' + esc(i.name) + '</span></li>';
-      }).join('');
-      document.getElementById('vm-ingredients').innerHTML = ings || '<li style="color:var(--light);font-style:italic">No ingredients listed</li>';
+      function _ingListHTML(items) {
+        var rows = (items || []).map(function(i) {
+          var qty = (i.quantity && +i.quantity > 0) ? (i.quantity + (i.unit ? ' ' + i.unit : '')) : (i.unit || '');
+          return '<li><span class="ing-qty">' + esc(qty) + '</span><span class="ing-name">' + esc(i.name) + '</span></li>';
+        }).join('');
+        return '<ul class="ingredients-list">' + (rows || '<li style="color:var(--light);font-style:italic">None listed</li>') + '</ul>';
+      }
+      var ingHTML = '';
+      if (r.ingredientGroups && r.ingredientGroups.length) {
+        ingHTML = r.ingredientGroups.map(function(g) {
+          return '<div class="ing-group"><div class="ing-group-label">' + esc(g.group) + '</div>' + _ingListHTML(g.items) + '</div>';
+        }).join('');
+      } else {
+        ingHTML = _ingListHTML(r.ingredients || []);
+      }
+      document.getElementById('vm-ingredients').innerHTML = ingHTML;
+      var subsWrap = document.getElementById('vm-substitutes-wrap');
+      if (r.substitutes && r.substitutes.length) {
+        document.getElementById('vm-substitutes').innerHTML = r.substitutes.map(function(s) {
+          return '<div class="sub-item"><div class="sub-ingredient">' + esc(s.ingredient) + '</div>'
+            + '<div class="sub-alternatives">' + (s.alternatives || []).map(function(a) { return '<span class="sub-alt">' + esc(a) + '</span>'; }).join('') + '</div></div>';
+        }).join('');
+        subsWrap.style.display = '';
+      } else {
+        subsWrap.style.display = 'none';
+      }
 
       var steps = (r.instructions || []).map(function(s, i) {
         return '<li><span class="step-num">' + (i+1) + '</span><span>' + esc(s) + '</span></li>';
@@ -934,7 +969,10 @@
 
       cookBtn.onclick = function() {
         closeModal('view-modal');
-        startCooking(r.instructions || [], r.ingredients || [], r.title || '');
+        var flatIngs = r.ingredientGroups
+          ? r.ingredientGroups.reduce(function(acc, g) { return acc.concat(g.items || []); }, [])
+          : (r.ingredients || []);
+        startCooking(r.instructions || [], flatIngs, r.title || '');
       };
 
       openModal('view-modal');

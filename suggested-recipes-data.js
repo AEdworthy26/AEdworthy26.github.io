@@ -11,25 +11,39 @@ window.SUGGESTED_RECIPES = [
     desc: "One of Venice\'s most ancient and deeply satisfying dishes, sarde in saor layers crispy fried sardines under a silky agrodolce of slow-cooked onions, white wine vinegar, plump sultanas and toasted pine nuts. Served over creamy soft polenta, it\'s a masterclass in bold, sweet-sour contrast — rustic and refined at the same time.",
     emoji: "🐟",
     image: "https://images.unsplash.com/photo-1739660740405-661c1e096d42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxWZW5ldGlhbiUyMFNhcmRlJTIwaW4lMjBTYW9yJTIwJUUyJTgwJTk0JTIwU3dlZXQlMjAlMjYlMjBTb3VyJTIwRnJpZWQlMjBTYXJkaW5lcyUyMHdpdGglMjBQaW5lJTIwTnV0cyUyQyUyMFN1bHRhbmFzJTIwJTI2JTIwUG9sZW50YSUyMGZvb2QlMjBkaXNofGVufDB8MHx8fDE3Nzc1MjU4NjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    ingredients: [
-      { name: "Fresh sardines, butterflied and pin-boned", quantity: 600, unit: "g" },
-      { name: "Plain flour, for dusting", quantity: 60, unit: "g" },
-      { name: "Olive oil, for frying", quantity: 80, unit: "ml" },
-      { name: "Large white onions, very thinly sliced", quantity: 3, unit: "" },
-      { name: "White wine vinegar", quantity: 120, unit: "ml" },
-      { name: "Dry white wine", quantity: 100, unit: "ml" },
-      { name: "Sultanas", quantity: 50, unit: "g" },
-      { name: "Pine nuts, toasted", quantity: 40, unit: "g" },
-      { name: "Bay leaves", quantity: 2, unit: "" },
-      { name: "Whole cloves", quantity: 3, unit: "" },
-      { name: "Caster sugar", quantity: 1, unit: "tsp" },
-      { name: "Fine polenta (quick-cook)", quantity: 200, unit: "g" },
-      { name: "Whole milk", quantity: 600, unit: "ml" },
-      { name: "Water", quantity: 400, unit: "ml" },
-      { name: "Unsalted butter", quantity: 40, unit: "g" },
-      { name: "Parmesan, finely grated", quantity: 40, unit: "g" },
-      { name: "Flat-leaf parsley, roughly chopped", quantity: 1, unit: "small handful" },
-      { name: "Sea salt and black pepper", quantity: 0, unit: "to taste" }
+    ingredientGroups: [
+      { group: "For the sardines", items: [
+        { name: "Fresh sardines, butterflied and pin-boned", quantity: 600, unit: "g" },
+        { name: "Plain flour, for dusting", quantity: 60, unit: "g" },
+        { name: "Olive oil, for frying", quantity: 80, unit: "ml" }
+      ]},
+      { group: "For the agrodolce", items: [
+        { name: "Large white onions, very thinly sliced", quantity: 3, unit: "" },
+        { name: "White wine vinegar", quantity: 120, unit: "ml" },
+        { name: "Dry white wine", quantity: 100, unit: "ml" },
+        { name: "Sultanas", quantity: 50, unit: "g" },
+        { name: "Pine nuts, toasted", quantity: 40, unit: "g" },
+        { name: "Bay leaves", quantity: 2, unit: "" },
+        { name: "Whole cloves", quantity: 3, unit: "" },
+        { name: "Caster sugar", quantity: 1, unit: "tsp" }
+      ]},
+      { group: "For the polenta", items: [
+        { name: "Fine polenta (quick-cook)", quantity: 200, unit: "g" },
+        { name: "Whole milk", quantity: 600, unit: "ml" },
+        { name: "Water", quantity: 400, unit: "ml" },
+        { name: "Unsalted butter", quantity: 40, unit: "g" },
+        { name: "Parmesan, finely grated", quantity: 40, unit: "g" }
+      ]},
+      { group: "To finish", items: [
+        { name: "Flat-leaf parsley, roughly chopped", quantity: 1, unit: "small handful" },
+        { name: "Sea salt and black pepper", quantity: 0, unit: "to taste" }
+      ]}
+    ],
+    substitutes: [
+      { ingredient: "Fresh sardines", alternatives: ["Fresh mackerel fillets", "Sprats", "Tinned sardines in oil (drain well)"] },
+      { ingredient: "Sultanas", alternatives: ["Raisins", "Dried currants", "Dried cranberries"] },
+      { ingredient: "Pine nuts", alternatives: ["Toasted flaked almonds", "Walnuts, roughly chopped", "Pumpkin seeds"] },
+      { ingredient: "Parmesan", alternatives: ["Pecorino Romano", "Grana Padano", "Aged Cheddar"] }
     ],
     instructions: [
       "Step 1 — Soak the sultanas in the white wine vinegar for 15 minutes to plump them up. Meanwhile, bring the milk and water to a gentle simmer in a heavy-based saucepan with a generous pinch of salt. Slowly whisk in the polenta in a thin, steady stream, whisking constantly to prevent lumps. Reduce heat to the lowest setting and stir frequently for 8–10 minutes until thick and creamy. Stir in the butter and Parmesan, season well, cover and keep warm.",
@@ -48,22 +62,34 @@ window.SUGGESTED_RECIPES = [
     desc: "Sopa de lima is the bright, aromatic soul food of the Yucatán — a deeply flavourful chicken broth spiked with the uniquely floral bitterness of Mexican lima limes, roasted tomatoes and charred onion, finished with crunchy tortilla strips and cool avocado. It\'s fast to make but layered with genuine depth, and tastes like nothing else in Mexican cuisine.",
     emoji: "🍋",
     image: "https://images.pexels.com/photos/34638420/pexels-photo-34638420.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    ingredients: [
-      { name: "Bone-in, skin-on chicken thighs", quantity: 4, unit: "" },
-      { name: "Good chicken stock", quantity: 1.2, unit: "litres" },
-      { name: "Vine tomatoes, halved", quantity: 3, unit: "" },
-      { name: "White onion, quartered", quantity: 1, unit: "" },
-      { name: "Garlic cloves, unpeeled", quantity: 4, unit: "" },
-      { name: "Green pepper, quartered and deseeded", quantity: 1, unit: "" },
-      { name: "Dried oregano (Mexican if possible)", quantity: 1, unit: "tsp" },
-      { name: "Ground cumin", quantity: 0.5, unit: "tsp" },
-      { name: "Limes, juice and zest", quantity: 3, unit: "" },
-      { name: "Corn tortillas", quantity: 4, unit: "" },
-      { name: "Vegetable oil, for frying", quantity: 100, unit: "ml" },
-      { name: "Ripe avocado, sliced", quantity: 1, unit: "" },
-      { name: "Fresh coriander, roughly torn", quantity: 1, unit: "large handful" },
-      { name: "Red chilli, finely sliced", quantity: 1, unit: "" },
-      { name: "Sea salt and black pepper", quantity: 0, unit: "to taste" }
+    ingredientGroups: [
+      { group: "For the broth", items: [
+        { name: "Bone-in, skin-on chicken thighs", quantity: 4, unit: "" },
+        { name: "Good chicken stock", quantity: 1.2, unit: "litres" },
+        { name: "Vine tomatoes, halved", quantity: 3, unit: "" },
+        { name: "White onion, quartered", quantity: 1, unit: "" },
+        { name: "Garlic cloves, unpeeled", quantity: 4, unit: "" },
+        { name: "Green pepper, quartered and deseeded", quantity: 1, unit: "" },
+        { name: "Dried oregano (Mexican if possible)", quantity: 1, unit: "tsp" },
+        { name: "Ground cumin", quantity: 0.5, unit: "tsp" },
+        { name: "Sea salt and black pepper", quantity: 0, unit: "to taste" }
+      ]},
+      { group: "For the tortilla strips", items: [
+        { name: "Corn tortillas", quantity: 4, unit: "" },
+        { name: "Vegetable oil, for frying", quantity: 100, unit: "ml" }
+      ]},
+      { group: "To finish", items: [
+        { name: "Limes, juice and zest", quantity: 3, unit: "" },
+        { name: "Ripe avocado, sliced", quantity: 1, unit: "" },
+        { name: "Fresh coriander, roughly torn", quantity: 1, unit: "large handful" },
+        { name: "Red chilli, finely sliced", quantity: 1, unit: "" }
+      ]}
+    ],
+    substitutes: [
+      { ingredient: "Bone-in chicken thighs", alternatives: ["Chicken breast (reduce poaching to 15 mins)", "Leftover rotisserie chicken (skip poaching step)", "Turkey thighs"] },
+      { ingredient: "Corn tortillas", alternatives: ["Flour tortillas", "Corn chips, roughly crushed", "Flatbread, torn and toasted in a dry pan"] },
+      { ingredient: "Fresh coriander", alternatives: ["Flat-leaf parsley", "Fresh mint", "Parsley with extra lime zest"] },
+      { ingredient: "Green pepper", alternatives: ["Red or yellow pepper", "Poblano pepper", "1 stick of celery"] }
     ],
     instructions: [
       "Step 1 — Place a dry cast-iron or heavy frying pan over high heat until very hot. Add the halved tomatoes, onion quarters, unpeeled garlic cloves and green pepper directly to the dry pan. Char for 8–10 minutes, turning occasionally, until deeply blackened in places and softened — this roasting is what gives the soup its distinctive smoky-sweet backbone. Peel the garlic and roughly chop everything.",
@@ -82,21 +108,33 @@ window.SUGGESTED_RECIPES = [
     desc: "Alsace\'s answer to pizza is a revelation — a paper-thin, cracklingly crisp flatbread base spread with tangy crème fraîche and topped with sweet caramelised onions, smoky lardons and melted Gruyère. Traditionally cooked in wood-fired ovens, this version uses a screaming-hot domestic oven with a preheated tray to achieve that same blistered, slightly charred base that makes Flammkuchen utterly addictive.",
     emoji: "🧅",
     image: "https://images.unsplash.com/photo-1560384418-4339cfb525dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxBbHNhdGlhbiUyMFRhcnRlJTIwRmxhbWIlQzMlQTllJTIwJTI4RmxhbW1rdWNoZW4lMjklMjB3aXRoJTIwQ3IlQzMlQThtZSUyMEZyYSVDMyVBRWNoZSUyQyUyMFNtb2tlZCUyMExhcmRvbnMlMkMlMjBDYXJhbWVsaXNlZCUyME9uaW9ucyUyMCUyNiUyMEdydXklQzMlQThyZSUyMGZvb2QlMjBkaXNofGVufDB8MHx8fDE3Nzc1MjU4NjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    ingredients: [
-      { name: "Strong white bread flour", quantity: 300, unit: "g" },
-      { name: "Fast-action dried yeast", quantity: 7, unit: "g" },
-      { name: "Warm water", quantity: 180, unit: "ml" },
-      { name: "Olive oil", quantity: 2, unit: "tbsp" },
-      { name: "Fine salt", quantity: 1, unit: "tsp" },
-      { name: "Full-fat crème fraîche", quantity: 250, unit: "g" },
-      { name: "Fromage blanc or cream cheese", quantity: 80, unit: "g" },
-      { name: "Large white onions, very thinly sliced into half-moons", quantity: 2, unit: "" },
-      { name: "Unsalted butter", quantity: 25, unit: "g" },
-      { name: "Smoked lardons or pancetta cubes", quantity: 200, unit: "g" },
-      { name: "Gruyère, coarsely grated", quantity: 100, unit: "g" },
-      { name: "Freshly grated nutmeg", quantity: 0, unit: "pinch" },
-      { name: "Chives, finely snipped", quantity: 1, unit: "small bunch" },
-      { name: "Sea salt and white pepper", quantity: 0, unit: "to taste" }
+    ingredientGroups: [
+      { group: "For the dough", items: [
+        { name: "Strong white bread flour", quantity: 300, unit: "g" },
+        { name: "Fast-action dried yeast", quantity: 7, unit: "g" },
+        { name: "Warm water", quantity: 180, unit: "ml" },
+        { name: "Olive oil", quantity: 2, unit: "tbsp" },
+        { name: "Fine salt", quantity: 1, unit: "tsp" }
+      ]},
+      { group: "For the topping", items: [
+        { name: "Full-fat crème fraîche", quantity: 250, unit: "g" },
+        { name: "Fromage blanc or cream cheese", quantity: 80, unit: "g" },
+        { name: "Large white onions, very thinly sliced into half-moons", quantity: 2, unit: "" },
+        { name: "Unsalted butter", quantity: 25, unit: "g" },
+        { name: "Smoked lardons or pancetta cubes", quantity: 200, unit: "g" },
+        { name: "Gruyère, coarsely grated", quantity: 100, unit: "g" },
+        { name: "Freshly grated nutmeg", quantity: 0, unit: "pinch" },
+        { name: "Sea salt and white pepper", quantity: 0, unit: "to taste" }
+      ]},
+      { group: "To finish", items: [
+        { name: "Chives, finely snipped", quantity: 1, unit: "small bunch" }
+      ]}
+    ],
+    substitutes: [
+      { ingredient: "Fromage blanc / cream cheese", alternatives: ["Soured cream", "Quark", "Extra crème fraîche, lightly whipped"] },
+      { ingredient: "Smoked lardons", alternatives: ["Streaky bacon, diced", "Pancetta, diced", "Prosciutto, torn (add after baking)"] },
+      { ingredient: "Gruyère", alternatives: ["Emmental", "Comté", "Aged Cheddar"] },
+      { ingredient: "Strong white bread flour", alternatives: ["Plain flour (slightly less crisp result)", "00 pasta flour", "Spelt flour"] }
     ],
     instructions: [
       "Step 1 — Make the dough: combine the flour, yeast and salt in a large bowl and make a well in the centre. Add the warm water and olive oil, then mix to a rough dough. Turn out and knead on a lightly floured surface for 8–10 minutes until smooth and elastic. Place in a lightly oiled bowl, cover with a damp cloth and leave to prove in a warm place for 30 minutes — the dough should puff up noticeably but doesn\'t need to double.",
