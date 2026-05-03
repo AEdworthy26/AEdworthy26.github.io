@@ -655,7 +655,7 @@
           else break;
         }
       });
-      return result.sort(function(a,b){ return a.date!==b.date?a.date.localeCompare(b.date):(a.startTime||'zzz').localeCompare(b.startTime||'zzz'); });
+      return result.sort(function(a,b){ return a.date!==b.date?a.date.localeCompare(b.date):(a.allDay?'':a.startTime||'zzz').localeCompare(b.allDay?'':b.startTime||'zzz'); });
     }
 
     function groupByDate(evs) {
@@ -776,7 +776,7 @@
       var mPct=mTotal?Math.round(mDone/mTotal*100):0;
       // Week events: use full selected-week range so cross-month weeks show all days
       var wEvs=events.filter(function(e){return e.date>=activeWeekISO&&e.date<=activeWeekEnd;});
-      wEvs.sort(function(a,b){return a.date!==b.date?a.date.localeCompare(b.date):(a.startTime||'').localeCompare(b.startTime||'');});
+      wEvs.sort(function(a,b){return a.date!==b.date?a.date.localeCompare(b.date):(a.allDay?'':a.startTime||'zzz').localeCompare(b.allDay?'':b.startTime||'zzz');});
       var leftHTML=wEvs.map(function(e){
         var c=CATS[e.category]||CATS.other;
         return '<div style="display:flex;align-items:center;gap:.35rem;padding:.18rem 0;font-size:.72rem;overflow:hidden">'
