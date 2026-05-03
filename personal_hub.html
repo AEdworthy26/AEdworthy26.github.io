@@ -978,7 +978,6 @@
           <button class="backup-btn" onclick="syncActivate()">Activate</button>
         </div>
         <span id="ph-sync-indicator"></span>
-        <button class="backup-btn" id="backup-download-btn" style="display:none" onclick="PhSync.downloadBackup()">&#8659; Download Backup</button>
         <button class="backup-btn" id="sync-disconnect-btn" style="display:none" onclick="syncDisconnect()">Disconnect</button>
       </div>
     </div>
@@ -2159,7 +2158,6 @@
         if (ok) {
           document.getElementById('sync-setup').style.display = 'none';
           document.getElementById('sync-disconnect-btn').style.display = '';
-          document.getElementById('backup-download-btn').style.display = '';
           document.getElementById('sync-desc').textContent = 'Your data is syncing automatically across all devices.';
           document.getElementById('ph-sync-indicator').textContent = '✓ Synced';
           document.getElementById('ph-sync-indicator').style.color = '#3a3';
@@ -2188,7 +2186,6 @@
       if (PhSync.getToken()) {
         document.getElementById('sync-setup').style.display = 'none';
         document.getElementById('sync-disconnect-btn').style.display = '';
-        document.getElementById('backup-download-btn').style.display = '';
         document.getElementById('sync-desc').textContent = 'Your data is syncing automatically across all devices.';
         var last = localStorage.getItem(PhSync.LAST_SYNC_KEY);
         if (last) {

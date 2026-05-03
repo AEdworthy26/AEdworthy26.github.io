@@ -185,26 +185,6 @@
     }
   }
 
-  /* ── backup download: all SYNC_KEYS → timestamped JSON file ── */
-  function doDownloadBackup() {
-    var data = { _exported: new Date().toISOString(), _keys: SYNC_KEYS };
-    SYNC_KEYS.forEach(function (k) {
-      var v = _origGet(k);
-      if (v !== null) {
-        try { data[k] = JSON.parse(v); } catch (e) { data[k] = v; }
-      }
-    });
-    var blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
-    var url = URL.createObjectURL(blob);
-    var a = document.createElement('a');
-    a.href = url;
-    a.download = 'personal-hub-backup-' + new Date().toISOString().slice(0, 10) + '.json';
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
-  }
-
   /* ── push on tab close / navigation away (keepalive so browser doesn't kill it) ── */
   window.addEventListener('beforeunload', function () { doPush(true); });
 
@@ -240,9 +220,8 @@
         }
       });
     },
-    push:           function() { doPush(); },
-    pull:           doPull,
-    status:         updateSyncUI,
-    downloadBackup: doDownloadBackup
+    push:   function() { doPush(); },
+    pull:   doPull,
+    status: updateSyncUI
   };
 })();
