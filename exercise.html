@@ -663,20 +663,27 @@
     /* ── Migrate old single-weight format to per-day format ── */
     function migrateExercise(ex) {
       if (ex.wt === 'time') return ex;
-      if ('heavyWMin' in ex || 'heavyW' in ex || 'lightWMin' in ex || 'lightW' in ex) return ex;
-      var days = ex.days || ['heavy'];
-      var hasH = days.indexOf('heavy') > -1;
-      var hasL = days.indexOf('light') > -1;
-      if (ex.wt === 'range') {
-        ex.heavyWMin = hasH ? (ex.wMin !== undefined ? ex.wMin : null) : null;
-        ex.heavyWMax = hasH ? (ex.wMax !== undefined ? ex.wMax : null) : null;
-        ex.lightWMin  = hasL ? (ex.wMin !== undefined ? ex.wMin : null) : null;
-        ex.lightWMax  = hasL ? (ex.wMax !== undefined ? ex.wMax : null) : null;
-        delete ex.wMin; delete ex.wMax;
-      } else {
-        ex.heavyW = hasH ? (ex.w !== undefined ? ex.w : null) : null;
-        ex.lightW  = hasL ? (ex.w !== undefined ? ex.w : null) : null;
-        delete ex.w;
+      // Phase 1: migrate old flat w/wMin/wMax to per-day fields
+      if (!('heavyWMin' in ex || 'heavyW' in ex || 'lightWMin' in ex || 'lightW' in ex)) {
+        var days = ex.days || ['heavy'];
+        var hasH = days.indexOf('heavy') > -1;
+        var hasL = days.indexOf('light') > -1;
+        if (ex.wt === 'range') {
+          ex.heavyWMin = hasH ? (ex.wMin !== undefined ? ex.wMin : null) : null;
+          ex.heavyWMax = hasH ? (ex.wMax !== undefined ? ex.wMax : null) : null;
+          ex.lightWMin  = hasL ? (ex.wMin !== undefined ? ex.wMin : null) : null;
+          ex.lightWMax  = hasL ? (ex.wMax !== undefined ? ex.wMax : null) : null;
+          delete ex.wMin; delete ex.wMax;
+        } else {
+          ex.heavyW = hasH ? (ex.w !== undefined ? ex.w : null) : null;
+          ex.lightW  = hasL ? (ex.w !== undefined ? ex.w : null) : null;
+          delete ex.w;
+        }
+      }
+      // Phase 2: migrate global wt to per-day heavyWt/lightWt
+      if (!ex.heavyWt && !ex.lightWt && ex.wt) {
+        ex.heavyWt = ex.wt;
+        ex.lightWt  = ex.wt;
       }
       return ex;
     }
@@ -684,7 +691,8 @@
     /* ── Weight display ─────────────────────────────── */
     function wStrDay(ex, day) {
       if (ex.wt === 'time') return null;
-      if (ex.wt === 'range') {
+      var dayWt = ex[day + 'Wt'] || ex.wt || 'range';
+      if (dayWt === 'range') {
         var mn = ex[day + 'WMin'], mx = ex[day + 'WMax'];
         if (mn !== null && mn !== undefined) return mn + '–' + mx + 'kg';
         return null;
@@ -743,7 +751,7 @@
       }
 
       // Add form (hidden by default)
-      if (!addState[cat]) addState[cat] = { weightType: cat === 'cardio' ? 'time' : 'range', hasHeavy: true, hasLight: false };
+      if (!addState[cat]) addState[cat] = { heavyWt: cat === 'cardio' ? 'time' : 'range', lightWt: cat === 'cardio' ? 'time' : 'range', hasHeavy: true, hasLight: false };
       html += buildAddForm(cat);
       html += '<button class="add-exercise-btn" id="add-btn-' + cat + '" onclick="showAddForm(\'' + cat + '\')">+ Add Exercise</button>';
 
@@ -752,8 +760,9 @@
 
     function buildAddForm(cat) {
       var isCardio = cat === 'cardio';
-      var st = addState[cat] || { weightType: isCardio ? 'time' : 'range', hasHeavy: true, hasLight: false };
-      var isRange = st.weightType !== 'single';
+      var st = addState[cat] || { heavyWt: isCardio ? 'time' : 'range', lightWt: isCardio ? 'time' : 'range', hasHeavy: true, hasLight: false };
+      var heavyIsRange = (st.heavyWt || 'range') !== 'single';
+      var lightIsRange = (st.lightWt || 'range') !== 'single';
       var html = '<div class="add-form-wrap" id="add-form-' + cat + '" style="display:none">'
         + '<div class="add-form-title">Add Exercise to ' + CAT[cat] + '</div>'
         + '<div class="form-row form-row-3"><div class="form-field" style="grid-column:1/-1"><label class="form-label">Exercise Name</label><input class="form-input" id="af-name-' + cat + '" type="text" placeholder="e.g. Bench Press"></div></div>'
@@ -762,14 +771,6 @@
         + '<div class="form-field"><label class="form-label">Reps</label><input class="form-input" id="af-reps-' + cat + '" type="text" placeholder="8–12"></div>'
         + '<div class="form-field"><label class="form-label">PR ' + (isCardio ? '(time)' : '(kg max)') + '</label><input class="form-input" id="af-pr-' + cat + '" type="text" placeholder="' + (isCardio ? '22:30' : '120') + '"></div>'
         + '</div>';
-      if (!isCardio) {
-        html += '<div class="form-row form-row-2" style="margin-bottom:.6rem">'
-          + '<div class="form-field"><label class="form-label">Weight Type</label>'
-          + '<div class="wtype-toggle" id="af-wt-' + cat + '">'
-          + '<button class="wtype-btn' + (isRange ? ' active' : '') + '" onclick="setAddWt(\'' + cat + '\',\'range\')">Range</button>'
-          + '<button class="wtype-btn' + (!isRange ? ' active' : '') + '" onclick="setAddWt(\'' + cat + '\',\'single\')">Single</button>'
-          + '</div></div></div>';
-      }
       html += '<div class="form-field" style="margin-bottom:.6rem"><label class="form-label">Day Types</label>'
         + '<div class="day-toggle">'
         + '<button class="day-btn heavy' + (st.hasHeavy ? ' on' : '') + '" id="af-heavy-' + cat + '" onclick="toggleAddDay(\'' + cat + '\',\'heavy\')">Heavy Day</button>'
@@ -778,20 +779,28 @@
       if (!isCardio) {
         html += '<div id="af-heavy-fields-' + cat + '" style="' + (st.hasHeavy ? '' : 'display:none') + ';margin-bottom:.55rem">'
           + '<div style="font-size:.61rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#dc2626;margin-bottom:.35rem">Heavy Day Weight</div>'
-          + '<div class="form-row form-row-2" id="af-heavy-range-' + cat + '" style="' + (!isRange ? 'display:none' : '') + '">'
+          + '<div class="wtype-toggle" id="af-hwt-' + cat + '" style="margin-bottom:.45rem">'
+          + '<button class="wtype-btn' + (heavyIsRange ? ' active' : '') + '" onclick="setAddWt(\'' + cat + '\',\'heavy\',\'range\')">Range</button>'
+          + '<button class="wtype-btn' + (!heavyIsRange ? ' active' : '') + '" onclick="setAddWt(\'' + cat + '\',\'heavy\',\'single\')">Single</button>'
+          + '</div>'
+          + '<div class="form-row form-row-2" id="af-heavy-range-' + cat + '" style="' + (!heavyIsRange ? 'display:none' : '') + '">'
           + '<div class="form-field"><label class="form-label">Min (kg)</label><input class="form-input" id="af-hwmin-' + cat + '" type="number" min="0" placeholder="60"></div>'
           + '<div class="form-field"><label class="form-label">Max (kg)</label><input class="form-input" id="af-hwmax-' + cat + '" type="number" min="0" placeholder="80"></div>'
           + '</div>'
-          + '<div class="form-row" id="af-heavy-single-' + cat + '" style="' + (isRange ? 'display:none' : '') + '">'
+          + '<div class="form-row" id="af-heavy-single-' + cat + '" style="' + (heavyIsRange ? 'display:none' : '') + '">'
           + '<div class="form-field"><label class="form-label">Weight (kg) — 0 for bodyweight</label><input class="form-input" id="af-hw-' + cat + '" type="number" min="0" placeholder="70"></div>'
           + '</div></div>'
           + '<div id="af-light-fields-' + cat + '" style="' + (st.hasLight ? '' : 'display:none') + ';margin-bottom:.55rem">'
           + '<div style="font-size:.61rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#2563eb;margin-bottom:.35rem">Light Day Weight</div>'
-          + '<div class="form-row form-row-2" id="af-light-range-' + cat + '" style="' + (!isRange ? 'display:none' : '') + '">'
+          + '<div class="wtype-toggle" id="af-lwt-' + cat + '" style="margin-bottom:.45rem">'
+          + '<button class="wtype-btn' + (lightIsRange ? ' active' : '') + '" onclick="setAddWt(\'' + cat + '\',\'light\',\'range\')">Range</button>'
+          + '<button class="wtype-btn' + (!lightIsRange ? ' active' : '') + '" onclick="setAddWt(\'' + cat + '\',\'light\',\'single\')">Single</button>'
+          + '</div>'
+          + '<div class="form-row form-row-2" id="af-light-range-' + cat + '" style="' + (!lightIsRange ? 'display:none' : '') + '">'
           + '<div class="form-field"><label class="form-label">Min (kg)</label><input class="form-input" id="af-lwmin-' + cat + '" type="number" min="0" placeholder="50"></div>'
           + '<div class="form-field"><label class="form-label">Max (kg)</label><input class="form-input" id="af-lwmax-' + cat + '" type="number" min="0" placeholder="70"></div>'
           + '</div>'
-          + '<div class="form-row" id="af-light-single-' + cat + '" style="' + (isRange ? 'display:none' : '') + '">'
+          + '<div class="form-row" id="af-light-single-' + cat + '" style="' + (lightIsRange ? 'display:none' : '') + '">'
           + '<div class="form-field"><label class="form-label">Weight (kg) — 0 for bodyweight</label><input class="form-input" id="af-lw-' + cat + '" type="number" min="0" placeholder="60"></div>'
           + '</div></div>';
       }
@@ -1030,7 +1039,7 @@
       var b = document.getElementById('add-btn-' + cat);
       if (f) f.style.display = 'block';
       if (b) b.style.display = 'none';
-      if (!addState[cat]) addState[cat] = { weightType: cat === 'cardio' ? 'time' : 'range', hasHeavy: true, hasLight: false };
+      if (!addState[cat]) addState[cat] = { heavyWt: cat === 'cardio' ? 'time' : 'range', lightWt: cat === 'cardio' ? 'time' : 'range', hasHeavy: true, hasLight: false };
     };
 
     window.hideAddForm = function (cat) {
@@ -1040,18 +1049,17 @@
       if (b) b.style.display = 'flex';
     };
 
-    window.setAddWt = function (cat, type) {
+    window.setAddWt = function (cat, day, type) {
       if (!addState[cat]) addState[cat] = {};
-      addState[cat].weightType = type;
-      var tog = document.getElementById('af-wt-' + cat);
+      addState[cat][day + 'Wt'] = type;
+      var togId = day === 'heavy' ? 'af-hwt-' + cat : 'af-lwt-' + cat;
+      var tog = document.getElementById(togId);
       if (tog) tog.querySelectorAll('.wtype-btn').forEach(function (b, i) { b.classList.toggle('active', (type === 'range' && i === 0) || (type === 'single' && i === 1)); });
       var isRange = type === 'range';
-      ['heavy', 'light'].forEach(function(d) {
-        var rng = document.getElementById('af-' + d + '-range-' + cat);
-        var sng = document.getElementById('af-' + d + '-single-' + cat);
-        if (rng) rng.style.display = isRange ? '' : 'none';
-        if (sng) sng.style.display = isRange ? 'none' : '';
-      });
+      var rng = document.getElementById('af-' + day + '-range-' + cat);
+      var sng = document.getElementById('af-' + day + '-single-' + cat);
+      if (rng) rng.style.display = isRange ? '' : 'none';
+      if (sng) sng.style.display = isRange ? 'none' : '';
     };
 
     window.toggleAddDay = function (cat, day) {
@@ -1083,17 +1091,21 @@
         ex.wt = 'time';
         if (prVal) { ex.pr = prVal; ex.prType = 'time'; }
       } else {
-        ex.wt = st.weightType || 'range';
-        if (ex.wt === 'range') {
+        ex.heavyWt = st.heavyWt || 'range';
+        ex.lightWt  = st.lightWt  || 'range';
+        if (ex.heavyWt === 'range') {
           ex.heavyWMin = hasHeavy ? (parseFloat((document.getElementById('af-hwmin-' + cat) || {}).value) || null) : null;
           ex.heavyWMax = hasHeavy ? (parseFloat((document.getElementById('af-hwmax-' + cat) || {}).value) || null) : null;
-          ex.lightWMin  = hasLight  ? (parseFloat((document.getElementById('af-lwmin-' + cat) || {}).value) || null) : null;
-          ex.lightWMax  = hasLight  ? (parseFloat((document.getElementById('af-lwmax-' + cat) || {}).value) || null) : null;
         } else {
           var hwv = parseFloat((document.getElementById('af-hw-' + cat) || {}).value);
-          var lwv = parseFloat((document.getElementById('af-lw-' + cat) || {}).value);
           ex.heavyW = hasHeavy ? (isNaN(hwv) ? null : hwv) : null;
-          ex.lightW  = hasLight  ? (isNaN(lwv) ? null : lwv) : null;
+        }
+        if (ex.lightWt === 'range') {
+          ex.lightWMin = hasLight ? (parseFloat((document.getElementById('af-lwmin-' + cat) || {}).value) || null) : null;
+          ex.lightWMax = hasLight ? (parseFloat((document.getElementById('af-lwmax-' + cat) || {}).value) || null) : null;
+        } else {
+          var lwv = parseFloat((document.getElementById('af-lw-' + cat) || {}).value);
+          ex.lightW = hasLight ? (isNaN(lwv) ? null : lwv) : null;
         }
         if (prVal) ex.pr = parseFloat(prVal) || null;
       }
@@ -1114,11 +1126,13 @@
       var ex = findItem(routines[cat] || [], function (e) { return e.id === id; });
       if (!ex) return;
       editCtx.cat = cat; editCtx.id = id;
-      editCtx.weightType = ex.wt || 'range';
+      editCtx.heavyWt = ex.heavyWt || ex.wt || 'range';
+      editCtx.lightWt  = ex.lightWt  || ex.wt || 'range';
       editCtx.hasHeavy = (ex.days || []).indexOf('heavy') > -1;
       editCtx.hasLight = (ex.days || []).indexOf('light') > -1;
       var isCardio = cat === 'cardio';
-      var isRange = editCtx.weightType !== 'single';
+      var heavyIsRange = editCtx.heavyWt !== 'single';
+      var lightIsRange = editCtx.lightWt  !== 'single';
       var html = '<div class="modal-hdr"><h3 class="modal-title">Edit: ' + esc(ex.name) + '</h3></div>'
         + '<div class="modal-body-pad">'
         + '<div class="form-field" style="margin-bottom:.7rem"><label class="form-label">Name</label><input class="form-input" id="ed-name" type="text" value="' + esc(ex.name) + '"></div>'
@@ -1128,13 +1142,6 @@
         + '</div>'
         + '<div class="form-field" style="margin-bottom:.7rem"><label class="form-label">PR ' + (isCardio ? '(time/record)' : '(max kg)') + '</label>'
         + '<input class="form-input" id="ed-pr" type="text" value="' + esc(ex.pr || '') + '" placeholder="' + (isCardio ? 'e.g. 22:30' : 'e.g. 120') + '"></div>';
-      if (!isCardio) {
-        html += '<div class="form-field" style="margin-bottom:.7rem"><label class="form-label">Weight Type</label>'
-          + '<div class="wtype-toggle" id="ed-wtype">'
-          + '<button class="wtype-btn' + (isRange ? ' active' : '') + '" onclick="setEditWt(\'range\')">Range</button>'
-          + '<button class="wtype-btn' + (!isRange ? ' active' : '') + '" onclick="setEditWt(\'single\')">Single</button>'
-          + '</div></div>';
-      }
       html += '<div class="form-field" style="margin-bottom:.6rem"><label class="form-label">Day Types</label>'
         + '<div class="day-toggle">'
         + '<button class="day-btn heavy' + (editCtx.hasHeavy ? ' on' : '') + '" id="ed-heavy" onclick="toggleEditDay(\'heavy\')">Heavy Day</button>'
@@ -1143,20 +1150,28 @@
       if (!isCardio) {
         html += '<div id="ed-heavy-fields" style="' + (editCtx.hasHeavy ? '' : 'display:none') + ';margin-bottom:.55rem">'
           + '<div style="font-size:.61rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#dc2626;margin-bottom:.35rem">Heavy Day Weight</div>'
-          + '<div class="form-row form-row-2" id="ed-heavy-range" style="' + (!isRange ? 'display:none' : '') + '">'
+          + '<div class="wtype-toggle" id="ed-hwtype" style="margin-bottom:.45rem">'
+          + '<button class="wtype-btn' + (heavyIsRange ? ' active' : '') + '" onclick="setEditWt(\'heavy\',\'range\')">Range</button>'
+          + '<button class="wtype-btn' + (!heavyIsRange ? ' active' : '') + '" onclick="setEditWt(\'heavy\',\'single\')">Single</button>'
+          + '</div>'
+          + '<div class="form-row form-row-2" id="ed-heavy-range" style="' + (!heavyIsRange ? 'display:none' : '') + '">'
           + '<div class="form-field"><label class="form-label">Min (kg)</label><input class="form-input" id="ed-hwmin" type="number" value="' + (ex.heavyWMin !== null && ex.heavyWMin !== undefined ? ex.heavyWMin : '') + '"></div>'
           + '<div class="form-field"><label class="form-label">Max (kg)</label><input class="form-input" id="ed-hwmax" type="number" value="' + (ex.heavyWMax !== null && ex.heavyWMax !== undefined ? ex.heavyWMax : '') + '"></div>'
           + '</div>'
-          + '<div class="form-row" id="ed-heavy-single" style="' + (isRange ? 'display:none' : '') + '">'
+          + '<div class="form-row" id="ed-heavy-single" style="' + (heavyIsRange ? 'display:none' : '') + '">'
           + '<div class="form-field"><label class="form-label">Weight (kg) — 0 for bodyweight</label><input class="form-input" id="ed-hw" type="number" value="' + (ex.heavyW !== null && ex.heavyW !== undefined ? ex.heavyW : '') + '"></div>'
           + '</div></div>'
           + '<div id="ed-light-fields" style="' + (editCtx.hasLight ? '' : 'display:none') + ';margin-bottom:.55rem">'
           + '<div style="font-size:.61rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#2563eb;margin-bottom:.35rem">Light Day Weight</div>'
-          + '<div class="form-row form-row-2" id="ed-light-range" style="' + (!isRange ? 'display:none' : '') + '">'
+          + '<div class="wtype-toggle" id="ed-lwtype" style="margin-bottom:.45rem">'
+          + '<button class="wtype-btn' + (lightIsRange ? ' active' : '') + '" onclick="setEditWt(\'light\',\'range\')">Range</button>'
+          + '<button class="wtype-btn' + (!lightIsRange ? ' active' : '') + '" onclick="setEditWt(\'light\',\'single\')">Single</button>'
+          + '</div>'
+          + '<div class="form-row form-row-2" id="ed-light-range" style="' + (!lightIsRange ? 'display:none' : '') + '">'
           + '<div class="form-field"><label class="form-label">Min (kg)</label><input class="form-input" id="ed-lwmin" type="number" value="' + (ex.lightWMin !== null && ex.lightWMin !== undefined ? ex.lightWMin : '') + '"></div>'
           + '<div class="form-field"><label class="form-label">Max (kg)</label><input class="form-input" id="ed-lwmax" type="number" value="' + (ex.lightWMax !== null && ex.lightWMax !== undefined ? ex.lightWMax : '') + '"></div>'
           + '</div>'
-          + '<div class="form-row" id="ed-light-single" style="' + (isRange ? 'display:none' : '') + '">'
+          + '<div class="form-row" id="ed-light-single" style="' + (lightIsRange ? 'display:none' : '') + '">'
           + '<div class="form-field"><label class="form-label">Weight (kg) — 0 for bodyweight</label><input class="form-input" id="ed-lw" type="number" value="' + (ex.lightW !== null && ex.lightW !== undefined ? ex.lightW : '') + '"></div>'
           + '</div></div>';
       }
@@ -1170,17 +1185,16 @@
 
     window.closeModal = function () { document.getElementById('edit-modal').classList.remove('open'); };
 
-    window.setEditWt = function (type) {
-      editCtx.weightType = type;
-      var tog = document.getElementById('ed-wtype');
+    window.setEditWt = function (day, type) {
+      editCtx[day + 'Wt'] = type;
+      var togId = day === 'heavy' ? 'ed-hwtype' : 'ed-lwtype';
+      var tog = document.getElementById(togId);
       if (tog) tog.querySelectorAll('.wtype-btn').forEach(function (b, i) { b.classList.toggle('active', (type === 'range' && i === 0) || (type === 'single' && i === 1)); });
       var isRange = type === 'range';
-      ['heavy', 'light'].forEach(function(d) {
-        var rng = document.getElementById('ed-' + d + '-range');
-        var sng = document.getElementById('ed-' + d + '-single');
-        if (rng) rng.style.display = isRange ? '' : 'none';
-        if (sng) sng.style.display = isRange ? 'none' : '';
-      });
+      var rng = document.getElementById('ed-' + day + '-range');
+      var sng = document.getElementById('ed-' + day + '-single');
+      if (rng) rng.style.display = isRange ? '' : 'none';
+      if (sng) sng.style.display = isRange ? 'none' : '';
     };
 
     window.toggleEditDay = function (day) {
@@ -1209,20 +1223,23 @@
         ex.pr = prVal || null;
         if (prVal) ex.prType = 'time';
       } else {
-        ex.wt = editCtx.weightType;
-        if (editCtx.weightType === 'range') {
+        ex.heavyWt = editCtx.heavyWt || 'range';
+        ex.lightWt  = editCtx.lightWt  || 'range';
+        if (ex.heavyWt === 'range') {
           ex.heavyWMin = editCtx.hasHeavy ? (parseFloat(document.getElementById('ed-hwmin').value) || null) : null;
           ex.heavyWMax = editCtx.hasHeavy ? (parseFloat(document.getElementById('ed-hwmax').value) || null) : null;
-          ex.lightWMin  = editCtx.hasLight  ? (parseFloat(document.getElementById('ed-lwmin').value) || null) : null;
-          ex.lightWMax  = editCtx.hasLight  ? (parseFloat(document.getElementById('ed-lwmax').value) || null) : null;
-          delete ex.wMin; delete ex.wMax;
         } else {
           var hwv = parseFloat(document.getElementById('ed-hw').value);
-          var lwv = parseFloat(document.getElementById('ed-lw').value);
           ex.heavyW = editCtx.hasHeavy ? (isNaN(hwv) ? null : hwv) : null;
-          ex.lightW  = editCtx.hasLight  ? (isNaN(lwv) ? null : lwv) : null;
-          delete ex.w;
         }
+        if (ex.lightWt === 'range') {
+          ex.lightWMin = editCtx.hasLight ? (parseFloat(document.getElementById('ed-lwmin').value) || null) : null;
+          ex.lightWMax = editCtx.hasLight ? (parseFloat(document.getElementById('ed-lwmax').value) || null) : null;
+        } else {
+          var lwv = parseFloat(document.getElementById('ed-lw').value);
+          ex.lightW = editCtx.hasLight ? (isNaN(lwv) ? null : lwv) : null;
+        }
+        delete ex.wMin; delete ex.wMax; delete ex.w;
         ex.pr = prVal ? (parseFloat(prVal) || null) : null;
       }
       save();
