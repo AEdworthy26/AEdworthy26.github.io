@@ -1,60 +1,60 @@
 // uk-politics-news-data.js
-// Auto-updated 2026-04-30 — do not edit manually
+// Auto-updated 2026-05-03 — do not edit manually
 
 var UK_POLITICS_NEWS = {
-  date: "2026-04-30",
+  date: "2026-05-03",
   main: {
-    title: "Farage Referred to Standards Watchdog Over Undisclosed £5m Gift from Crypto Tycoon",
+    title: "Starmer Signals Support for Banning Some Pro-Palestine Marches Amid Rising Antisemitism Fears",
     category: "Politics",
     content: [
-      "Nigel Farage, the leader of Reform UK, has been referred to Parliament\'s standards watchdog after it emerged he received an undeclared £5 million gift from a party donor — a Thai-based British cryptocurrency billionaire named Christopher Harborne. The revelation, first reported by the Guardian, has triggered immediate calls for a formal investigation from rival parties across Westminster. The Conservative Party chair was among those to formally refer Farage to the Parliamentary Commissioner for Standards, citing what they described as a serious failure to disclose a substantial personal benefit.",
-      "Farage has sought to get ahead of the story by publicly acknowledging the payment, insisting the £5 million was provided for his personal security and was not a political donation requiring formal declaration. He described the 'huge danger' he faces as a public figure to justify the arrangement, framing the gift as a private matter rather than one falling under parliamentary transparency rules. However, critics and constitutional experts have questioned this characterisation, arguing that the scale of the payment and the donor\'s close ties to Reform UK make it impossible to treat as a purely personal transaction.",
-      "The episode has reignited long-running questions about the financial transparency of Reform UK and its often unconventional approach to party funding and governance. Harborne, who has previously been identified as a significant financial backer of Reform-aligned causes, is a British national who has made a substantial fortune in cryptocurrency and operates primarily from Thailand. The fact that such a significant sum changed hands before Farage formally became a Member of Parliament — he won his Clacton seat at the 2024 general election — adds further complexity to the question of what disclosure obligations applied at the time.",
-      "Opposition parties have been swift to demand answers, with Labour and Liberal Democrat spokespeople arguing that the public deserves full transparency about the financial relationships between one of Britain\'s most prominent politicians and his wealthy backers. The timing is particularly sensitive given that Reform UK is expected to make significant gains in the local elections taking place next week, with polling experts predicting the party will emerge as the biggest winners. Any suggestion that Farage\'s political operation is financially opaque could undermine Reform\'s anti-establishment positioning, which has been central to its electoral appeal.",
-      "The referral to the standards commissioner means the matter will now be subject to a formal investigation, the outcome of which could take several months. If the commissioner finds that Farage breached the MPs' code of conduct, he could face a range of sanctions, including a formal reprimand or, in more serious cases, suspension from the House of Commons. Farage\'s defenders argue the referral is politically motivated and designed to damage him ahead of the local elections, while his opponents maintain that no MP — regardless of political stripe — should be exempt from the transparency rules that underpin public trust in Parliament."
+      "Prime Minister Sir Keir Starmer has indicated that some pro-Palestine demonstrations could be stopped, citing the 'cumulative' effect of certain marches on Britain\'s Jewish community. Speaking to BBC Radio 4's Today programme on Saturday morning, Starmer said he was deeply concerned about the atmosphere being created by repeated protests, particularly where chants such as 'globalise the Intifada' are heard. His comments mark a significant intervention from a Labour prime minister who has previously sought to balance robust support for the right to protest with concern about rising antisemitism in the UK.",
+      "The Metropolitan Police\'s most senior officer reinforced Starmer\'s concerns, stating that the threat to Jewish communities across Britain is now greater than it has ever been. Starmer challenged marchers who witness inflammatory chants to stop and ask themselves: 'Why am I not calling this out?' His remarks were widely interpreted as a willingness to see existing public order powers deployed more actively against demonstrations deemed to cross a legal or moral threshold, rather than a call for sweeping new legislation.",
+      "Organisers of pro-Palestine marches swiftly pushed back against the Prime Minister\'s intervention, arguing that any attempt to ban demonstrations would 'strike at the root of free assembly and free speech' in the United Kingdom. Campaign groups said the right to protest peacefully, even on deeply contested foreign policy issues, was a cornerstone of British democracy and should not be curtailed in response to the actions of a small minority. They warned that the language being used by Starmer risked conflating legitimate political protest with criminal behaviour.",
+      "The row places Starmer in an uncomfortable position within his own party, with many Labour MPs and grassroots members historically sympathetic to the Palestinian cause and deeply protective of civil liberties. Critics on the left accused the Prime Minister of playing to a right-wing gallery ahead of Thursday\'s local elections, in which Labour is widely expected to suffer significant losses. Supporters of his approach, however, argue that defending Jewish communities from harassment and intimidation is a matter of basic principle that transcends party political calculation.",
+      "The intervention comes at a politically charged moment, with Thursday\'s local elections looming and the Prime Minister under intense scrutiny from multiple directions. BBC political editor Chris Mason noted that Starmer used the Today programme interview to draw a deliberate contrast with critics both within his own party and beyond, presenting himself as a leader willing to make difficult calls on sensitive issues. With the elections expected to deliver heavy council losses for Labour and potential gains for Reform UK, the coming days will test whether Starmer\'s willingness to take contentious positions shores up or further erodes his standing with voters."
     ],
-    image: "https://i.guim.co.uk/img/media/91b42a749798d3ce37cd15896fa9a3774554d4d6/401_0_4008_3206/master/4008.jpg?width=1200&quality=85&auto=format&fit=max&s=b1aea0eca1e470936fe28f41d841e7ff",
+    image: "https://e3.365dm.com/26/05/1920x1080/skynews-keir-starmer-golders-green_7237116.jpg?20260502160623",
     source: "The Guardian",
-    sourceUrl: "https://www.theguardian.com/politics/2026/apr/29/nigel-farage-referred-standards-watchdog-undisclosed-gift"
+    sourceUrl: "https://www.theguardian.com/politics/2026/may/02/keir-starmer-calls-for-ban-on-some-pro-palestian-protests-british-jews"
   },
   secondary: [
     {
       id: "uk1",
-      title: "PM Defends Record as Badenoch Accuses Starmer of Squandering Election Win",
-      summary: "Keir Starmer and Kemi Badenoch clashed sharply over welfare and defence spending as both leaders traded blows ahead of next week\'s local elections.",
+      title: "Local Elections Loom as Labour Faces Loss of Up to 2,000 Council Seats",
+      summary: "Thursday\'s local elections are shaping up to be a severe test for Labour, with projections suggesting the party could lose the vast majority of the council seats it is defending.",
       body: [
-        "Prime Minister Keir Starmer mounted a robust defence of his government\'s record as Conservative leader Kemi Badenoch accused him of squandering the historic mandate Labour received at the 2024 general election. The confrontation centred on disagreements over welfare reform and defence spending commitments, with Badenoch arguing that Labour had failed to make meaningful progress on either front despite holding a commanding parliamentary majority.",
-        "The exchange comes at a politically fraught moment for Starmer, whose government is simultaneously managing the fallout from the Mandelson vetting row and bracing for what polls suggest could be painful losses in next week\'s local elections. Badenoch, meanwhile, is under pressure to demonstrate she can cut through as an opposition leader, with the Conservatives facing stiff competition from Reform UK for voters disillusioned with both main parties."
+        "Sky News analysis suggests that Labour could lose as many as 2,000 of its 2,500 council seats up for grabs this Thursday, in what would represent one of the most dramatic local election collapses for a governing party in recent memory. The fragmentation of the vote across Reform UK, the Liberal Democrats and the Greens means some seats could be won on historically low vote shares, further complicating any reading of the national picture.",
+        "The results will be seen as a critical early verdict on Sir Keir Starmer\'s first year in government, and senior Labour figures are already bracing for a difficult night. Constituencies like St Helens in Merseyside — once considered part of Labour\'s impregnable red wall — are now being eyed by Nigel Farage\'s Reform UK, underscoring just how far the party\'s traditional working-class support has eroded."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/a58e/live/bb1966b0-43e2-11f1-ab33-71d613cbf6ef.png",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/cx2182v12e4o?at_medium=RSS&at_campaign=rss",
+      image: "https://e3.365dm.com/26/05/1920x1080/skynews-local-elections-2026_7237758.png?20260503044400",
+      source: "Sky News",
+      url: "https://news.sky.com/story/local-elections-could-see-council-seats-won-on-record-low-vote-shares-13538561",
       category: "Politics"
     },
     {
       id: "uk2",
-      title: "Hereditary Peers Bid Farewell as 700-Year-Old System Formally Abolished",
-      summary: "The last hereditary peers have left the House of Lords following the passage of legislation removing their centuries-old right to sit in the upper chamber.",
+      title: "Badenoch Apologises After Bloody Sunday Footage Used in Post Defending UK Veterans",
+      summary: "Conservative leader Kemi Badenoch has apologised after footage from the 1972 Bloody Sunday massacre was used without her knowledge in social media posts criticising Labour\'s legacy proposals for Northern Ireland.",
       body: [
-        "In a historic moment for the British constitution, hereditary peers made their final appearances in the House of Lords this week after legislation stripping them of their right to sit in the upper chamber passed last month. The system, which had allowed individuals to inherit a seat in Parliament simply by virtue of birth, dated back more than seven centuries and had survived a previous partial reform under Tony Blair\'s government in 1999, which had reduced but not eliminated the hereditary presence.",
-        "The abolition represents one of the most significant constitutional changes of the Starmer government and fulfils a long-standing Labour manifesto commitment. Supporters argue it is a straightforward democratic reform, removing an anomaly that had no place in a modern legislature, while some traditionalists have lamented the severing of a link to Britain\'s parliamentary heritage."
+        "Kemi Badenoch said on Saturday that she did not sign off on the use of a clip from Bloody Sunday — in which British soldiers opened fire on unarmed civilians during a civil rights march — in Conservative Party social media content attacking the government\'s Troubles legacy bill. The footage was included in a post intended to defend the position of UK veterans, but its use was immediately condemned as deeply inappropriate and offensive.",
+        "The episode represents an embarrassing stumble for Badenoch at a sensitive moment, just days before local elections in which she is seeking to position the Conservatives as a credible opposition. The Bloody Sunday massacre remains one of the most painful and contested events in modern British and Irish history, and its use in partisan political messaging drew swift condemnation from across the political spectrum."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/4149/live/802947b0-43fa-11f1-a314-cde9f81d6d3e.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/ckgp5j5gpplo?at_medium=RSS&at_campaign=rss",
+      image: "https://i.guim.co.uk/img/media/308c2c8bd49ff1d7f58a4306ad75bdd3e44b3bd0/218_0_2319_1855/master/2319.jpg?width=1200&quality=85&auto=format&fit=max&s=46c42167b2e58e15a8bf5be71d139f41",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/politics/2026/may/02/kemi-badenoch-social-media-posts-bloody-sunday-footage",
       category: "Politics"
     },
     {
       id: "uk3",
-      title: "Labour Set to Lose Three-Quarters of Council Seats, Polling Expert Warns",
-      summary: "A leading polling expert has predicted that Labour faces devastating losses in next week\'s local elections, with Reform UK positioned to be the biggest beneficiary.",
+      title: "Reform UK Faces Questions After Frontbenchers Promoted JCB Products Following £200,000 Donation",
+      summary: "The Guardian has revealed that senior Reform UK figures including Nigel Farage, Lee Anderson and Robert Jenrick repeatedly praised a JCB pothole-fixing machine after the construction company donated £200,000 to the party.",
       body: [
-        "Labour could lose as many as three-quarters of the council seats it is defending in next week\'s local elections, according to a stark prediction from a leading polling expert, with Nigel Farage\'s Reform UK forecast to emerge as the biggest winners of the night. The Greens are also expected to make notable gains, further fragmenting the political landscape and heaping pressure on Keir Starmer\'s leadership.",
-        "The predicted scale of the losses has intensified internal debate within Labour about the government\'s direction, with some MPs privately urging a change of course on issues including welfare cuts and the cost of living. Starmer\'s team is reportedly split over whether to respond to the expected results with a cabinet reshuffle, with differing views on whether fresh faces would help to reset the government\'s fortunes or create an impression of panic."
+        "Multiple Reform UK frontbenchers sang the praises of JCB\'s new PotHole Pro machine on social media and in public appearances, with the Guardian revealing that the promotion coincided with a £200,000 donation from the British digger manufacturer to the party. The pattern of behaviour raises questions about the relationship between corporate donors and the public messaging of Reform\'s leading politicians, at a time when the party is positioning itself as a clean-break alternative to the established political order.",
+        "The revelation is particularly awkward for Reform, whose entire electoral pitch rests on presenting itself as free from the donor-driven corruption it attributes to Labour and the Conservatives. Farage and his colleagues have not addressed the apparent conflict of interest directly, but the story is likely to follow the party into the final days of the local election campaign as rivals seek to highlight the gap between Reform\'s populist rhetoric and its fundraising practices."
       ],
-      image: "https://static.independent.co.uk/2026/03/30/9/48/Prime-Minister-Keir-Starmer-Launches-Labours-Local-Elections-Campaign-In-The-West-Midlands-mv4vl3q2.jpeg?width=1200&auto=webp&trim=0%2C0%2C0%2C0",
-      source: "The Independent",
-      url: "https://www.independent.co.uk/news/uk/politics/labour-local-election-council-keir-starmer-wales-b2967436.html",
+      image: "https://i.guim.co.uk/img/media/45d1a2677a5ce93ba9a513b02ce3972cc7f328fa/784_0_4583_3667/master/4583.jpg?width=1200&quality=85&auto=format&fit=max&s=f05dd9f3fe6a787ed3230526f67c3416",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/politics/2026/may/02/reform-uk-funding-promoting-jcb-machine-farage-jenrick-anderson",
       category: "Politics"
     }
   ]

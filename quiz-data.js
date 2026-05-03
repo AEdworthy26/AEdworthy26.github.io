@@ -1,10 +1,10 @@
 // quiz-data.js
-// Auto-updated 2026-04-30 — do not edit manually
+// Auto-updated 2026-05-03 — do not edit manually
 
 window.QUIZ_DATA = {
-  date: '2026-04-30',
-  category: 'Transport',
-  question: 'The Eurostar train service made its first commercial passenger journey in November 1994 — but which station in London was its original terminus before St Pancras International took over in 2007?',
-  answer: 'Waterloo International',
-  funFact: 'Waterloo International was purpose-built for Eurostar at a cost of around £130 million, featuring five dedicated platforms beneath a sweeping curved glass roof designed by Nicholas Grimshaw. When services moved to St Pancras in 2007, the terminal was mothballed and sat largely unused for years, becoming one of Britain\'s more peculiar pieces of abandoned modern architecture. The platforms were eventually repurposed as part of wider Waterloo station redevelopment plans.'
+  date: '2026-05-03',
+  category: 'Food & Drink',
+  question: 'Which Italian city is the traditional home of panettone, the tall, dome-shaped sweet bread typically associated with Christmas?',
+  answer: 'Milan',
+  funFact: 'Milanese bakeries have been producing panettone since at least the 15th century, and the name is thought to derive from "pane di Toni" — the bread of a baker named Toni, according to popular legend. The modern industrialised version was pioneered by Angelo Motta in the 1920s, who gave it its distinctive tall shape by forcing the dough upward in a paper mould during baking.'
 };

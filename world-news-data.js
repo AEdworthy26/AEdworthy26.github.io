@@ -1,61 +1,61 @@
 // world-news-data.js
-// Auto-updated 2026-04-30 — do not edit manually
+// Auto-updated 2026-05-03 — do not edit manually
 
 var WORLD_NEWS = {
-  date: "2026-04-30",
+  date: "2026-05-03",
   main: {
-    title: "Iran War Costs Hit $25 Billion as Oil Prices Soar and Calls Grow for Hormuz Humanitarian Corridor",
+    title: "Iran Submits 14-Point Peace Proposal as Trump Warns Strikes Could Resume",
     category: "Geopolitics",
     content: [
-      "The US-led war on Iran has now accumulated a cost of at least $25 billion over just two months of conflict, according to Pentagon estimates presented in congressional testimony by Defense Secretary Pete Hegseth. Hegseth\'s appearance before lawmakers was notable for what he declined to say as much as what he revealed — he offered no timeline for when the war might end, leaving both Congress and markets deeply uncertain about the conflict\'s trajectory. The admission has intensified scrutiny of the administration\'s strategic objectives and the absence of any clearly defined exit conditions.",
-      "Oil markets responded sharply on Thursday, with prices surging to their highest levels since 2022 following reports that US Central Command has prepared plans for a wave of 'short and powerful' strikes on Iran, as briefed to President Trump. Al Jazeera reported that the US blockade of Iranian ports has further stoked fears of prolonged supply disruptions, prompting President Trump to convene emergency meetings with major oil firms to explore ways of minimising the impact on domestic fuel prices. The convergence of military escalation and energy market volatility has alarmed governments and businesses worldwide.",
-      "Humanitarian organisations are now sounding urgent alarms about the blockade\'s devastating knock-on effects for some of the world\'s most vulnerable populations. Aid groups are calling for a dedicated humanitarian corridor through the Strait of Hormuz, warning that soaring oil prices and the naval blockade are preventing food, fuel, and medicine from reaching millions of people in desperate need across the wider region. NGOs say the economic shockwaves from the conflict are being felt most acutely in fragile states that depend on international supply chains for basic necessities.",
-      "The geopolitical ripple effects of the Iran conflict are reshaping alliances and pressure points far beyond the immediate theatre of war. Paraguay\'s delicate balancing act between Taiwan and China, South Africa\'s internal tensions, and Mali\'s insurgency all reflect a world order increasingly destabilised by the conflict\'s disruption to energy supplies and global diplomacy. Analysts warn that without a clear diplomatic off-ramp, the combination of economic strain and military escalation risks drawing additional regional actors into a broader confrontation.",
-      "Inside Iran, and across the Arab world more broadly, populations are grappling with the psychological and material weight of the ongoing conflict, with social media creators reportedly turning to gallows humour as a coping mechanism. The humanitarian situation is expected to worsen in the coming weeks if the Hormuz blockade continues, with aid organisations warning that the window for preventing a large-scale humanitarian crisis is narrowing rapidly. International pressure for a ceasefire or at minimum a humanitarian pause is growing, though no formal diplomatic initiative has yet gained traction among the major powers."
+      "Iran has formally submitted a 14-point response to the United States' proposal to end the war, according to Iranian state media, marking a significant — if tentative — step toward a diplomatic resolution to one of the most destabilising conflicts the Middle East has seen in years. The document was presented through back-channel intermediaries and represents Tehran\'s first structured counter-offer since a fragile ceasefire paused active hostilities between Iran and the US-Israeli coalition. The submission has been closely watched by regional powers, European governments, and global energy markets, all of which have been rattled by the conflict\'s cascading economic consequences.",
+      "President Trump, however, moved quickly to temper expectations, expressing doubt that Iran\'s proposal was 'acceptable' in its current form and issuing a stark warning that American and Israeli strikes could resume if Tehran was seen to 'misbehave.' The comments underscored the precariousness of the ceasefire and the enormous distance that still separates the two sides on core issues, including uranium enrichment, sanctions relief, and Iran\'s regional military posture. Analysts noted that Trump\'s language, while characteristically blunt, was also consistent with a negotiating strategy designed to extract maximum concessions before any formal agreement is reached.",
+      "The Iranian economy has been devastated by what the US military dubbed 'Operation Economic Fury,' a sustained campaign targeting infrastructure, energy exports, and financial systems. Al Jazeera reports that millions of jobs have been lost, with everyday life in Tehran severely disrupted even as the guns have temporarily fallen silent. The scale of economic destruction has added urgency to Tehran\'s diplomatic outreach, with Iranian officials apparently calculating that a negotiated settlement — even a costly one — is preferable to the continued erosion of the country\'s economic foundations.",
+      "The geopolitical ripples from the Iran conflict have extended far beyond the immediate battlefield. Ukraine\'s President Zelensky has been visiting Gulf states to demonstrate his country\'s military capabilities, with analysts noting that the Iran war has — in surprising ways — strengthened Ukraine\'s strategic position by drawing Western and Israeli military attention and resources into the Middle East theatre, potentially creating new leverage in ceasefire negotiations with Russia. Meanwhile, the UAE\'s decision to lift all air traffic restrictions introduced since the start of the war signals cautious optimism among regional governments that a durable cessation of hostilities may be achievable.",
+      "The United States has simultaneously approved $8.6 billion in arms sales to Middle East allies, with the State Department citing emergency circumstances to fast-track the deals without congressional approval — a move that critics argue could inflame tensions even as diplomacy inches forward. The tanker hijacking in waters near Somalia, which has stoked fears of emerging cooperation between Houthi rebels and Somali pirates, is a further reminder that the conflict\'s destabilising effects continue to spread. As Iran\'s 14-point proposal enters detailed review in Washington, the coming days will be critical in determining whether the ceasefire holds and whether a formal framework for ending the war can be constructed before either side concludes that renewed military action serves its interests better than the negotiating table.",
     ],
-    image: "https://i.guim.co.uk/img/media/d9f25a6186b4d882994fd880b0c2e110d149a30e/538_0_6763_5413/master/6763.jpg?width=1200&quality=85&auto=format&fit=max&s=5f32b97a995cbd0b7497bc7987a93741",
-    source: "NPR",
-    sourceUrl: "https://www.npr.org/2026/04/29/g-s1-119333/the-iran-war-now-has-a-price-tag-25-billion-but-still-no-end-date"
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/2be1/live/a8b851f0-463c-11f1-aa14-ad910202f501.jpg",
+    source: "Al Jazeera",
+    sourceUrl: "https://www.aljazeera.com/news/2026/5/3/trump-reviews-iranian-peace-proposal-warns-strikes-could-resume?traffic_source=rss"
   },
   secondary: [
     {
       id: "s1",
-      title: "South Korean Court Sentences Ex-President Yoon to Seven Years in Prison",
-      summary: "An appeals court has sentenced ousted South Korean President Yoon Suk Yeol to seven years in prison for his role in the brief imposition of martial law in December 2024.",
+      title: "Germany Confirms US Troop Withdrawal 'Foreseeable' as NATO Allies Grow Anxious",
+      summary: "Germany\'s defence minister has acknowledged that a US withdrawal of 5,000 troops is anticipated, deepening European fears about the reliability of American security guarantees.",
       body: [
-        "The South Korean appeals court handed down the seven-year sentence after finding Yoon guilty of resisting arrest and bypassing a required Cabinet meeting before declaring martial law — a move that lasted only hours before being overturned by the National Assembly. The verdict marks one of the most consequential judicial outcomes in South Korean political history, following months of legal proceedings that gripped the nation and triggered widespread protests both for and against the former president.",
-        "Yoon\'s downfall is a stark reminder of the fragility of democratic institutions even in established democracies, and the sentencing is likely to reverberate through South Korean politics ahead of upcoming elections. The case has also drawn international attention as an example of judicial accountability for executive overreach, with observers watching closely to see whether Yoon mounts a further appeal to the Supreme Court."
+        "Germany\'s defence minister moved to play down the operational impact of the Pentagon\'s decision to pull 5,000 troops from the country, but the announcement has nonetheless sent tremors through NATO, with reports suggesting Spain and Italy could face similar reductions. Two senior Republican senators in Washington have also broken with the administration to voice concern over the decision, highlighting unusual bipartisan unease about the direction of US defence policy in Europe.",
+        "The withdrawals add to a growing sense among European capitals that the continent can no longer take American security commitments for granted, accelerating debates about increased European defence spending and strategic autonomy. Trump\'s additional warnings of further 'cuts' have left alliance planners scrambling to assess what a substantially reduced US military footprint on the continent would mean for deterrence against Russia."
       ],
-      image: "https://images.unsplash.com/photo-1558227133-970557764393?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTb3V0aCUyMEtvcmVhbiUyMENvdXJ0JTIwU2VudGVuY2VzJTIwRXgtUHJlc2lkZW50JTIwWW9vbiUyMHRvJTIwU2V2ZW4lMjBZZWFycyUyMGluJTIwUHJpc29ufGVufDB8MHx8fDE3Nzc1MjUyODN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/2be1/live/a8b851f0-463c-11f1-aa14-ad910202f501.jpg",
       source: "NPR",
-      url: "https://www.npr.org/2026/04/29/g-s1-119165/south-korean-court-sentences-ex-president-yoon",
-      category: "Politics"
+      url: "https://www.npr.org/2026/05/02/nx-s1-5808891/europe-allies-germany-troop-withdrawal-us",
+      category: "Defence & Security"
     },
     {
       id: "s2",
-      title: "Russia Claims Africa Corps Foiled Coup in Mali as Heavy Fighting Footage Emerges",
-      summary: "Russia\'s defence ministry says its Africa Corps paramilitary group prevented a coup in Mali after rebels seized several towns, with video emerging of intense gun battles between Malian forces and insurgents.",
+      title: "WHO Approves First-Ever Malaria Treatment Specifically for Babies",
+      summary: "The World Health Organization has granted prequalification to Coartem Baby, the first malaria drug designed and approved for safe use in newborns and very young infants.",
       body: [
-        "The Kremlin-controlled Africa Corps — successor to the former Wagner mercenary group — claimed it had repelled a significant rebel offensive in Mali over the weekend, alleging it inflicted 'irreplaceable losses' on insurgents while avoiding civilian casualties. Footage published by the Russian mercenaries showed a heavy firefight between Mali\'s military and rebel forces, offering a rare and visceral glimpse into the ongoing instability gripping the Sahel nation.",
-        "The claims are impossible to independently verify, and the assertion that civilian casualties were avoided has been met with scepticism by human rights observers familiar with Africa Corps' operational history in the region. Mali\'s military junta, which expelled French forces and turned to Russia for security support, remains deeply dependent on the Africa Corps presence — a dynamic that has drawn sustained criticism from Western governments and regional bodies alike."
+        "The WHO\'s prequalification of Coartem Baby is being hailed as a landmark in global public health, as it opens the door to widespread use of a treatment tailored for the youngest and most vulnerable malaria patients for the first time. In parts of sub-Saharan Africa, up to 18% of children under six months old are infected with malaria, yet until now clinicians have been forced to use medications formulated for older children, with significant risks around dosing accuracy and safety.",
+        "The approval is expected to have an immediate and measurable impact on infant mortality in high-burden countries across Africa, where malaria remains one of the leading killers of young children. Health organisations are now working to accelerate procurement and distribution to ensure the drug reaches frontline clinics and community health workers as quickly as possible."
       ],
-      image: "https://i.guim.co.uk/img/media/d03fb17b17e0182f8c3e339197c958523a160ce2/1311_544_2889_2312/master/2889.jpg?width=1200&quality=85&auto=format&fit=max&s=0f5bd0b0f5085e882b9df6f5ce66a0ed",
+      image: "https://i.guim.co.uk/img/media/d96baef46133aea7b12e2018eaac1a46ca7faa2a/0_1412_3863_3091/master/3863.jpg?width=1200&quality=85&auto=format&fit=max&s=e6676940d10a81761ae9b9ecd1f6797d",
       source: "The Guardian",
-      url: "https://www.theguardian.com/world/2026/apr/28/russia-claims-its-africa-corps-group-prevented-coup-in-mali-after-rebels-seize-towns",
-      category: "Conflict"
+      url: "https://www.theguardian.com/global-development/2026/may/02/new-drug-coartem-baby-babies-malaria-who-treatment",
+      category: "Global Health"
     },
     {
       id: "s3",
-      title: "Paraguay Reaffirms Taiwan Ties as China Intensifies Pressure to Switch Allegiance",
-      summary: "Paraguay, one of Taiwan\'s last remaining formal diplomatic allies, is resisting sustained Chinese pressure to sever ties with Taipei and establish relations with Beijing instead.",
+      title: "Zambia Cancels World\'s Largest Human Rights and Technology Summit Days Before Opening",
+      summary: "The Zambian government has blocked the RightsCon 2026 conference at the last minute, claiming the event did not align with the country\'s 'national values.'",
       body: [
-        "Despite significant economic incentives being dangled by Beijing, Paraguay\'s government has publicly reaffirmed its decades-long diplomatic relationship with Taiwan, a bond that has endured long after most of Latin America shifted recognition to the People\'s Republic of China. The unusual alliance is rooted in historical ties and ideological alignment, but analysts say China is now intensifying its courtship of Asunción with offers of trade deals and infrastructure investment that are increasingly difficult to dismiss.",
-        "The situation reflects a broader global pattern in which Beijing is methodically working to reduce Taiwan\'s already tiny circle of formal diplomatic partners, applying pressure at moments of political transition or economic vulnerability. For Taiwan, the potential loss of Paraguay would be a significant symbolic and diplomatic blow, further isolating the island at a time when cross-strait tensions remain elevated."
+        "Zambia\'s government had originally welcomed RightsCon 2026, the world\'s largest summit on human rights in the digital age, but reversed course just days before thousands of delegates were due to arrive, telling organisers the conference was incompatible with national values. The abrupt cancellation has left civil society groups, journalists, and technology advocates scrambling and drawn sharp condemnation from international human rights organisations.",
+        "Critics argue the move reflects a broader regional trend of governments using vague cultural or moral justifications to suppress gatherings that might amplify dissenting voices or scrutinise state surveillance and censorship practices. The incident has raised serious questions about Zambia\'s commitment to civil liberties and its suitability as a host for future international forums of this nature."
       ],
-      image: "https://images.pexels.com/photos/36951290/pexels-photo-36951290.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      source: "The New York Times",
-      url: "https://www.nytimes.com/2026/04/29/world/paraguay-taiwan-china-pena.html",
-      category: "Diplomacy"
+      image: "https://images.unsplash.com/photo-1552635409-e92d03c3820e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxaYW1iaWElMjBDYW5jZWxzJTIwV29ybGQlNUN8ZW58MHwwfHx8MTc3Nzc4NDQ3NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/global-development/2026/may/02/zambia-cancels-rightscon-summit-largest-human-rights-technology-conference",
+      category: "Human Rights"
     }
   ]
 };

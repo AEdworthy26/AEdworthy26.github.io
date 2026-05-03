@@ -1,19 +1,19 @@
 // reads-data.js
-// Auto-updated 2026-04-30 — do not edit manually
+// Auto-updated 2026-05-03 — do not edit manually
 
 var READS_DATA = {
-  date: "2026-04-30",
+  date: "2026-05-03",
   book: {
-    title: "The Moviegoer",
-    author: "Walker Percy",
-    year: 1961,
-    genres: ["Literary Fiction", "Existentialism", "Southern Literature"],
-    desc: "Binx Bolling is a New Orleans stockbroker who spends his days watching films and conducting what he calls 'the search' — a restless, ironic quest for meaning in a life that otherwise threatens to become entirely ordinary. Percy\'s National Book Award-winning debut is a strange and luminous thing: formally it resembles a quiet character study, but underneath runs a fierce philosophical current about alienation, authenticity, and what it means to be conscious in a world that encourages you not to be. The prose is precise and funny and occasionally devastating, capturing mid-century American suburban comfort with the eye of someone who finds it both seductive and deeply strange. Mardi Gras week, New Orleans, a cast of brilliantly drawn women, and a cousin in crisis give Binx just enough friction to make his internal drama feel urgently real.",
-    whyRead: "At a moment when distraction is the default mode of existence, Percy\'s portrait of a man trying to stay awake to his own life feels less like a period piece and more like a mirror — and it\'s short enough to read in a weekend.",
-    rating: 4.0,
+    title: "The Botany of Desire: A Plant\'s-Eye View of the World",
+    author: "Michael Pollan",
+    year: 2001,
+    genres: ["Nature", "Science", "Food"],
+    desc: "Michael Pollan flips the script on our relationship with the natural world by arguing that plants have been quietly domesticating us just as surely as we have domesticated them, using four plants — the apple, the tulip, cannabis, and the potato — as his lenses. Each chapter is a deeply researched, elegantly written exploration of a human desire (sweetness, beauty, intoxication, control) and the plant that exploited it to spread across the Earth. Pollan writes with the rare gift of making botanical science feel genuinely thrilling, weaving in history, philosophy, and personal anecdote without ever losing the thread. By the end, the garden feels like a negotiation between species rather than a human triumph, and the ordinary world looks permanently strange and more interesting.",
+    whyRead: "In a moment when questions about food systems, ecology, and our relationship with the non-human world feel more urgent than ever, Pollan\'s witty, paradigm-shifting book is the perfect antidote to anthropocentric tunnel vision.",
+    rating: 3.9,
     ratingSource: "Goodreads",
-    ratingCount: "28,000+",
-    coverUrl: "https://covers.openlibrary.org/b/id/291181-L.jpg",
-    amazonUrl: "https://www.amazon.co.uk/dp/0394437039"
+    ratingCount: "90,000+",
+    coverUrl: "https://covers.openlibrary.org/b/id/3232846-L.jpg",
+    amazonUrl: "https://www.amazon.co.uk/dp/2746704803"
   }
 };

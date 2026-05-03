@@ -1,147 +1,210 @@
 // suggested-recipes-data.js
-// Auto-updated 2026-04-30 — do not edit manually
+// Auto-updated 2026-05-03 — do not edit manually
 
 window.SUGGESTED_RECIPES = [
   {
     id: "sug1",
-    title: "Venetian Sarde in Saor — Sweet & Sour Fried Sardines with Pine Nuts, Sultanas & Polenta",
+    title: "Peruvian Ají de Gallina with Creamy Walnut Sauce & Yellow Chilli",
     category: "Dinner",
-    time: "50 mins",
+    time: "1 hr",
     serves: "4",
-    desc: "One of Venice\'s most ancient and deeply satisfying dishes, sarde in saor layers crispy fried sardines under a silky agrodolce of slow-cooked onions, white wine vinegar, plump sultanas and toasted pine nuts. Served over creamy soft polenta, it\'s a masterclass in bold, sweet-sour contrast — rustic and refined at the same time.",
-    emoji: "🐟",
-    image: "https://images.unsplash.com/photo-1739660740405-661c1e096d42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxWZW5ldGlhbiUyMFNhcmRlJTIwaW4lMjBTYW9yJTIwJUUyJTgwJTk0JTIwU3dlZXQlMjAlMjYlMjBTb3VyJTIwRnJpZWQlMjBTYXJkaW5lcyUyMHdpdGglMjBQaW5lJTIwTnV0cyUyQyUyMFN1bHRhbmFzJTIwJTI2JTIwUG9sZW50YSUyMGZvb2QlMjBkaXNofGVufDB8MHx8fDE3Nzc1MjU4NjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    desc: "One of Peru\'s most beloved comfort dishes — shredded chicken blanketed in a deeply savoury, golden sauce built from ají amarillo paste, toasted bread, walnuts and Parmesan. It\'s rich, warming and unlike anything else in the world of stews, with a vibrant colour and a gentle heat that lingers beautifully. Serve over white rice with black olives and a hard-boiled egg for the full traditional experience.",
+    emoji: "🇵🇪",
+    image: "https://images.unsplash.com/photo-1619738257761-c929eada245d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxQZXJ1dmlhbiUyMEFqJUMzJUFEJTIwZGUlMjBHYWxsaW5hJTIwd2l0aCUyMENyZWFteSUyMFdhbG51dCUyMFNhdWNlJTIwJTI2JTIwWWVsbG93JTIwQ2hpbGxpJTIwZm9vZCUyMGRpc2h8ZW58MHwwfHx8MTc3Nzc4NTAyMnww&ixlib=rb-4.1.0&q=80&w=1080",
     ingredientGroups: [
-      { group: "For the sardines", items: [
-        { name: "Fresh sardines, butterflied and pin-boned", quantity: 600, unit: "g" },
-        { name: "Plain flour, for dusting", quantity: 60, unit: "g" },
-        { name: "Olive oil, for frying", quantity: 80, unit: "ml" }
-      ]},
-      { group: "For the agrodolce", items: [
-        { name: "Large white onions, very thinly sliced", quantity: 3, unit: "" },
-        { name: "White wine vinegar", quantity: 120, unit: "ml" },
-        { name: "Dry white wine", quantity: 100, unit: "ml" },
-        { name: "Sultanas", quantity: 50, unit: "g" },
-        { name: "Pine nuts, toasted", quantity: 40, unit: "g" },
-        { name: "Bay leaves", quantity: 2, unit: "" },
-        { name: "Whole cloves", quantity: 3, unit: "" },
-        { name: "Caster sugar", quantity: 1, unit: "tsp" }
-      ]},
-      { group: "For the polenta", items: [
-        { name: "Fine polenta (quick-cook)", quantity: 200, unit: "g" },
-        { name: "Whole milk", quantity: 600, unit: "ml" },
-        { name: "Water", quantity: 400, unit: "ml" },
-        { name: "Unsalted butter", quantity: 40, unit: "g" },
-        { name: "Parmesan, finely grated", quantity: 40, unit: "g" }
-      ]},
-      { group: "To finish", items: [
-        { name: "Flat-leaf parsley, roughly chopped", quantity: 1, unit: "small handful" },
-        { name: "Sea salt and black pepper", quantity: 0, unit: "to taste" }
-      ]}
+      {
+        group: "For the chicken",
+        items: [
+          { name: "Bone-in chicken thighs", quantity: 900, unit: "g" },
+          { name: "Chicken stock", quantity: 500, unit: "ml" },
+          { name: "Salt and black pepper", quantity: 0, unit: "to taste" }
+        ]
+      },
+      {
+        group: "For the sauce",
+        items: [
+          { name: "Vegetable oil", quantity: 2, unit: "tbsp" },
+          { name: "White onion, finely diced", quantity: 1, unit: "large" },
+          { name: "Garlic cloves, minced", quantity: 4, unit: "" },
+          { name: "Ají amarillo paste", quantity: 4, unit: "tbsp" },
+          { name: "Turmeric", quantity: 0.5, unit: "tsp" },
+          { name: "White bread, crusts removed", quantity: 3, unit: "slices" },
+          { name: "Whole milk", quantity: 200, unit: "ml" },
+          { name: "Walnuts, toasted", quantity: 80, unit: "g" },
+          { name: "Finely grated Parmesan", quantity: 50, unit: "g" }
+        ]
+      },
+      {
+        group: "To serve",
+        items: [
+          { name: "Cooked white rice", quantity: 0, unit: "to serve" },
+          { name: "Hard-boiled eggs, halved", quantity: 4, unit: "" },
+          { name: "Black olives", quantity: 50, unit: "g" },
+          { name: "Flat-leaf parsley, to garnish", quantity: 0, unit: "handful" }
+        ]
+      }
     ],
     substitutes: [
-      { ingredient: "Fresh sardines", alternatives: ["Fresh mackerel fillets", "Sprats", "Tinned sardines in oil (drain well)"] },
-      { ingredient: "Sultanas", alternatives: ["Raisins", "Dried currants", "Dried cranberries"] },
-      { ingredient: "Pine nuts", alternatives: ["Toasted flaked almonds", "Walnuts, roughly chopped", "Pumpkin seeds"] },
-      { ingredient: "Parmesan", alternatives: ["Pecorino Romano", "Grana Padano", "Aged Cheddar"] }
+      {
+        ingredient: "Ají amarillo paste",
+        alternatives: ["Chipotle paste", "Sriracha + pinch of turmeric", "Red chilli paste"]
+      },
+      {
+        ingredient: "Walnuts",
+        alternatives: ["Pecans", "Cashews", "Blanched almonds"]
+      },
+      {
+        ingredient: "Bone-in chicken thighs",
+        alternatives: ["Skinless chicken breasts", "Rotisserie chicken (shredded)"]
+      },
+      {
+        ingredient: "Whole milk",
+        alternatives: ["Evaporated milk", "Oat milk (unsweetened)", "Single cream (diluted)"]
+      }
     ],
     instructions: [
-      "Step 1 — Soak the sultanas in the white wine vinegar for 15 minutes to plump them up. Meanwhile, bring the milk and water to a gentle simmer in a heavy-based saucepan with a generous pinch of salt. Slowly whisk in the polenta in a thin, steady stream, whisking constantly to prevent lumps. Reduce heat to the lowest setting and stir frequently for 8–10 minutes until thick and creamy. Stir in the butter and Parmesan, season well, cover and keep warm.",
-      "Step 2 — Pat the sardines dry with kitchen paper and season well. Dust lightly but thoroughly in flour, shaking off any excess. Heat a generous pour of olive oil in a wide frying pan over medium-high heat. Fry the sardines in batches for 1–2 minutes per side until golden and just cooked through — they should be crisp on the outside and just opaque. Transfer to a plate lined with kitchen paper.",
-      "Step 3 — In the same pan, add a little more olive oil and reduce heat to medium-low. Add the sliced onions, bay leaves and cloves with a pinch of salt. Cook slowly for 20–25 minutes, stirring occasionally, until the onions are completely soft, golden and almost jammy — don\'t rush this step, the sweetness of the onions is the foundation of the dish.",
-      "Step 4 — Add the white wine to the onions and let it bubble for 2 minutes. Pour in the strained vinegar from the sultanas, add the sugar, and stir well. Simmer for a further 5 minutes until the liquid has reduced slightly and the onions have absorbed the sweet-sour flavour. Fold in the soaked sultanas and toasted pine nuts, taste and adjust seasoning — it should be balanced between sweet, sharp and savoury.",
-      "Step 5 — To serve, spoon the creamy polenta into wide bowls or onto plates. Lay the fried sardines over the top and pile the warm agrodolce onions generously over everything. Scatter with flat-leaf parsley and finish with a crack of black pepper and a drizzle of good olive oil."
+      "Step 1 — Poach the chicken: place the chicken thighs in a saucepan with the chicken stock and enough water to cover. Bring to a gentle simmer, season well, and poach for 25–30 minutes until cooked through. Remove the chicken, reserve the poaching liquid, then shred the meat finely with two forks, discarding the skin and bones.",
+      "Step 2 — While the chicken poaches, tear the bread into chunks and soak in the warm milk for 5 minutes until fully saturated. Transfer the soaked bread, toasted walnuts, and Parmesan to a blender and blitz to a smooth, thick paste. Set aside.",
+      "Step 3 — Heat the vegetable oil in a wide, deep sauté pan over medium heat. Add the onion and cook gently for 10–12 minutes, stirring often, until completely soft and golden. Add the garlic, ají amarillo paste, and turmeric; cook for 3–4 minutes, stirring constantly, until the paste is fragrant and deepened in colour.",
+      "Step 4 — Pour in 300ml of the reserved poaching liquid and bring to a gentle simmer. Stir in the bread-walnut paste and mix vigorously until the sauce is smooth and homogenous. Simmer for 5–6 minutes, stirring often, until the sauce thickens to a creamy, coating consistency. Add more poaching liquid to loosen if needed.",
+      "Step 5 — Fold the shredded chicken into the sauce and stir well to coat every strand. Taste and adjust seasoning generously — the dish should be savoury, nutty and warmly spiced. Simmer for a final 3–4 minutes together.",
+      "Step 6 — Serve over mounds of white rice, topped with halved hard-boiled eggs and a few black olives. Scatter with flat-leaf parsley and finish with a drizzle of extra ají amarillo paste if you like more heat."
     ]
   },
   {
     id: "sug2",
-    title: "Mexican Sopa de Lima — Yucatán Lime Soup with Shredded Chicken, Fried Tortilla Strips & Avocado",
+    title: "Griddled Halloumi & Roasted Red Pepper Salad with Freekeh, Mint & Pomegranate Molasses",
     category: "Lunch",
-    time: "40 mins",
-    serves: "4",
-    desc: "Sopa de lima is the bright, aromatic soul food of the Yucatán — a deeply flavourful chicken broth spiked with the uniquely floral bitterness of Mexican lima limes, roasted tomatoes and charred onion, finished with crunchy tortilla strips and cool avocado. It\'s fast to make but layered with genuine depth, and tastes like nothing else in Mexican cuisine.",
-    emoji: "🍋",
-    image: "https://images.pexels.com/photos/34638420/pexels-photo-34638420.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    time: "35 mins",
+    serves: "2",
+    desc: "A vibrant, Middle Eastern-inspired grain salad that punches well above its weight — smoky freekeh forms the base, topped with char-marked halloumi, sweet roasted peppers, toasted almonds and a tangle of fresh herbs. The dressing of pomegranate molasses, lemon and cumin ties everything together with a sharp, deeply fruity intensity. Hearty enough to satisfy but light enough to feel virtuous.",
+    emoji: "🫙",
+    image: "https://images.unsplash.com/photo-1669472546359-418a98630699?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxHcmlkZGxlZCUyMEhhbGxvdW1pJTIwJTI2JTIwUm9hc3RlZCUyMFJlZCUyMFBlcHBlciUyMFNhbGFkJTIwd2l0aCUyMEZyZWVrZWglMkMlMjBNaW50JTIwJTI2JTIwUG9tZWdyYW5hdGUlMjBNb2xhc3NlcyUyMGZvb2QlMjBkaXNofGVufDB8MHx8fDE3Nzc3ODUwMjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
     ingredientGroups: [
-      { group: "For the broth", items: [
-        { name: "Bone-in, skin-on chicken thighs", quantity: 4, unit: "" },
-        { name: "Good chicken stock", quantity: 1.2, unit: "litres" },
-        { name: "Vine tomatoes, halved", quantity: 3, unit: "" },
-        { name: "White onion, quartered", quantity: 1, unit: "" },
-        { name: "Garlic cloves, unpeeled", quantity: 4, unit: "" },
-        { name: "Green pepper, quartered and deseeded", quantity: 1, unit: "" },
-        { name: "Dried oregano (Mexican if possible)", quantity: 1, unit: "tsp" },
-        { name: "Ground cumin", quantity: 0.5, unit: "tsp" },
-        { name: "Sea salt and black pepper", quantity: 0, unit: "to taste" }
-      ]},
-      { group: "For the tortilla strips", items: [
-        { name: "Corn tortillas", quantity: 4, unit: "" },
-        { name: "Vegetable oil, for frying", quantity: 100, unit: "ml" }
-      ]},
-      { group: "To finish", items: [
-        { name: "Limes, juice and zest", quantity: 3, unit: "" },
-        { name: "Ripe avocado, sliced", quantity: 1, unit: "" },
-        { name: "Fresh coriander, roughly torn", quantity: 1, unit: "large handful" },
-        { name: "Red chilli, finely sliced", quantity: 1, unit: "" }
-      ]}
+      {
+        group: "For the freekeh",
+        items: [
+          { name: "Cracked freekeh", quantity: 150, unit: "g" },
+          { name: "Vegetable stock", quantity: 400, unit: "ml" }
+        ]
+      },
+      {
+        group: "For the dressing",
+        items: [
+          { name: "Pomegranate molasses", quantity: 2, unit: "tbsp" },
+          { name: "Lemon, juiced", quantity: 1, unit: "" },
+          { name: "Extra virgin olive oil", quantity: 3, unit: "tbsp" },
+          { name: "Ground cumin", quantity: 0.75, unit: "tsp" },
+          { name: "Smoked paprika", quantity: 0.5, unit: "tsp" },
+          { name: "Garlic clove, finely grated", quantity: 1, unit: "" },
+          { name: "Salt and black pepper", quantity: 0, unit: "to taste" }
+        ]
+      },
+      {
+        group: "To assemble",
+        items: [
+          { name: "Halloumi, sliced 1cm thick", quantity: 250, unit: "g" },
+          { name: "Roasted red peppers from a jar, drained & sliced", quantity: 200, unit: "g" },
+          { name: "Spring onions, finely sliced", quantity: 3, unit: "" },
+          { name: "Fresh mint leaves", quantity: 0, unit: "large handful" },
+          { name: "Flat-leaf parsley, roughly chopped", quantity: 0, unit: "large handful" },
+          { name: "Pomegranate seeds", quantity: 60, unit: "g" },
+          { name: "Flaked almonds, toasted", quantity: 40, unit: "g" }
+        ]
+      }
     ],
     substitutes: [
-      { ingredient: "Bone-in chicken thighs", alternatives: ["Chicken breast (reduce poaching to 15 mins)", "Leftover rotisserie chicken (skip poaching step)", "Turkey thighs"] },
-      { ingredient: "Corn tortillas", alternatives: ["Flour tortillas", "Corn chips, roughly crushed", "Flatbread, torn and toasted in a dry pan"] },
-      { ingredient: "Fresh coriander", alternatives: ["Flat-leaf parsley", "Fresh mint", "Parsley with extra lime zest"] },
-      { ingredient: "Green pepper", alternatives: ["Red or yellow pepper", "Poblano pepper", "1 stick of celery"] }
+      {
+        ingredient: "Cracked freekeh",
+        alternatives: ["Bulgur wheat", "Quinoa", "Farro"]
+      },
+      {
+        ingredient: "Halloumi",
+        alternatives: ["Paneer", "Firm tofu (pat dry before griddling)", "Feta (crumbled over, not griddled)"]
+      },
+      {
+        ingredient: "Pomegranate molasses",
+        alternatives: ["Balsamic reduction + honey (equal parts)", "Tamarind paste (thinned)"]
+      },
+      {
+        ingredient: "Pomegranate seeds",
+        alternatives: ["Dried cranberries", "Dried sour cherries", "Barberries"]
+      }
     ],
     instructions: [
-      "Step 1 — Place a dry cast-iron or heavy frying pan over high heat until very hot. Add the halved tomatoes, onion quarters, unpeeled garlic cloves and green pepper directly to the dry pan. Char for 8–10 minutes, turning occasionally, until deeply blackened in places and softened — this roasting is what gives the soup its distinctive smoky-sweet backbone. Peel the garlic and roughly chop everything.",
-      "Step 2 — In a large saucepan, bring the chicken stock to a simmer. Add the chicken thighs, charred vegetables, oregano and cumin. Simmer gently for 20–22 minutes until the chicken is fully cooked through. Remove the chicken thighs, allow to cool slightly, then shred the meat into generous pieces, discarding the skin and bones. Strain the broth through a sieve, pressing the vegetables firmly to extract all their flavour. Discard the solids and return the clear, deep-gold broth to the pan.",
-      "Step 3 — While the chicken poaches, cut the corn tortillas into thin strips about 1cm wide. Heat the vegetable oil in a small frying pan over medium-high heat until shimmering. Fry the tortilla strips in batches for 2–3 minutes until deeply golden and crisp. Drain on kitchen paper and season immediately with a pinch of salt.",
-      "Step 4 — Return the shredded chicken to the strained broth and bring back to a gentle simmer. Add the lime zest and squeeze in the juice of 2½ limes. Taste — the soup should be bright and tangy with a pleasant bitterness. Season generously with salt and pepper, adjusting lime to taste.",
-      "Step 5 — Ladle the hot soup into bowls, making sure each bowl gets plenty of shredded chicken. Top with a generous pile of crispy tortilla strips, a few slices of avocado, torn coriander and sliced red chilli. Serve with the remaining lime half cut into wedges on the side for squeezing at the table."
+      "Step 1 — Rinse the freekeh under cold water, then tip into a saucepan with the vegetable stock. Bring to a boil, reduce to a simmer and cook for 20–22 minutes until the grain is tender but still has a pleasant chew. Drain any excess liquid, fluff with a fork, and spread on a tray to cool slightly.",
+      "Step 2 — Meanwhile, make the dressing: whisk together the pomegranate molasses, lemon juice, olive oil, ground cumin, smoked paprika and grated garlic. Season generously with salt and pepper — it should be bold, tart and aromatic.",
+      "Step 3 — Heat a griddle pan over high heat until smoking. Pat the halloumi slices dry with kitchen paper, then griddle for 2–3 minutes per side without moving them, until deep char marks form and the cheese is golden and yielding. Remove from the heat and cut each slice in half on the diagonal.",
+      "Step 4 — Toss the warm freekeh with two-thirds of the dressing, the roasted red peppers, spring onions, parsley and most of the mint. Spread onto a serving platter or shallow bowl.",
+      "Step 5 — Arrange the griddled halloumi pieces over the top. Scatter generously with pomegranate seeds, toasted flaked almonds and the remaining fresh mint. Drizzle over the rest of the dressing and serve immediately while the halloumi is still warm and squeaky."
     ]
   },
   {
     id: "sug3",
-    title: "Alsatian Tarte Flambée (Flammkuchen) with Crème Fraîche, Smoked Lardons, Caramelised Onions & Gruyère",
+    title: "Slow-Roasted Pork Shoulder (Porchetta-Style) with Fennel, Garlic & White Wine Salsa Verde",
     category: "Dinner",
-    time: "55 mins",
-    serves: "4",
-    desc: "Alsace\'s answer to pizza is a revelation — a paper-thin, cracklingly crisp flatbread base spread with tangy crème fraîche and topped with sweet caramelised onions, smoky lardons and melted Gruyère. Traditionally cooked in wood-fired ovens, this version uses a screaming-hot domestic oven with a preheated tray to achieve that same blistered, slightly charred base that makes Flammkuchen utterly addictive.",
-    emoji: "🧅",
-    image: "https://images.unsplash.com/photo-1560384418-4339cfb525dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxBbHNhdGlhbiUyMFRhcnRlJTIwRmxhbWIlQzMlQTllJTIwJTI4RmxhbW1rdWNoZW4lMjklMjB3aXRoJTIwQ3IlQzMlQThtZSUyMEZyYSVDMyVBRWNoZSUyQyUyMFNtb2tlZCUyMExhcmRvbnMlMkMlMjBDYXJhbWVsaXNlZCUyME9uaW9ucyUyMCUyNiUyMEdydXklQzMlQThyZSUyMGZvb2QlMjBkaXNofGVufDB8MHx8fDE3Nzc1MjU4NjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    time: "3 hrs 30 mins",
+    serves: "6",
+    desc: "A spectacular centrepiece that rewards patience — a boneless pork shoulder is scored deeply, rubbed inside and out with fennel seed, wild garlic, chilli and lemon zest, then slow-roasted until the flesh is falling-apart tender and the crackling shatters at a touch. A punchy white wine salsa verde with cornichons and capers cuts through the richness magnificently. This is the kind of dish that makes the whole house smell extraordinary.",
+    emoji: "🐖",
+    image: "https://images.unsplash.com/photo-1606225716165-c3e2b60cd1fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTbG93LVJvYXN0ZWQlMjBQb3JrJTIwU2hvdWxkZXIlMjAlMjhQb3JjaGV0dGEtU3R5bGUlMjklMjB3aXRoJTIwRmVubmVsJTJDJTIwR2FybGljJTIwJTI2JTIwV2hpdGUlMjBXaW5lJTIwU2Fsc2ElMjBWZXJkZSUyMGZvb2QlMjBkaXNofGVufDB8MHx8fDE3Nzc3ODUwMjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
     ingredientGroups: [
-      { group: "For the dough", items: [
-        { name: "Strong white bread flour", quantity: 300, unit: "g" },
-        { name: "Fast-action dried yeast", quantity: 7, unit: "g" },
-        { name: "Warm water", quantity: 180, unit: "ml" },
-        { name: "Olive oil", quantity: 2, unit: "tbsp" },
-        { name: "Fine salt", quantity: 1, unit: "tsp" }
-      ]},
-      { group: "For the topping", items: [
-        { name: "Full-fat crème fraîche", quantity: 250, unit: "g" },
-        { name: "Fromage blanc or cream cheese", quantity: 80, unit: "g" },
-        { name: "Large white onions, very thinly sliced into half-moons", quantity: 2, unit: "" },
-        { name: "Unsalted butter", quantity: 25, unit: "g" },
-        { name: "Smoked lardons or pancetta cubes", quantity: 200, unit: "g" },
-        { name: "Gruyère, coarsely grated", quantity: 100, unit: "g" },
-        { name: "Freshly grated nutmeg", quantity: 0, unit: "pinch" },
-        { name: "Sea salt and white pepper", quantity: 0, unit: "to taste" }
-      ]},
-      { group: "To finish", items: [
-        { name: "Chives, finely snipped", quantity: 1, unit: "small bunch" }
-      ]}
+      {
+        group: "For the pork",
+        items: [
+          { name: "Boneless pork shoulder, skin-on and butterflied", quantity: 2, unit: "kg" },
+          { name: "Fennel seeds", quantity: 2, unit: "tbsp" },
+          { name: "Dried chilli flakes", quantity: 1, unit: "tsp" },
+          { name: "Garlic cloves", quantity: 6, unit: "" },
+          { name: "Lemon, zested", quantity: 2, unit: "" },
+          { name: "Fresh rosemary leaves", quantity: 3, unit: "tbsp" },
+          { name: "Fresh thyme leaves", quantity: 2, unit: "tbsp" },
+          { name: "Olive oil", quantity: 4, unit: "tbsp" },
+          { name: "Flaky sea salt", quantity: 2, unit: "tbsp" },
+          { name: "Cracked black pepper", quantity: 1, unit: "tbsp" },
+          { name: "Dry white wine", quantity: 200, unit: "ml" }
+        ]
+      },
+      {
+        group: "For the salsa verde",
+        items: [
+          { name: "Flat-leaf parsley", quantity: 40, unit: "g" },
+          { name: "Fresh basil leaves", quantity: 20, unit: "g" },
+          { name: "Cornichons, finely chopped", quantity: 6, unit: "" },
+          { name: "Capers, rinsed and chopped", quantity: 2, unit: "tbsp" },
+          { name: "Dijon mustard", quantity: 1, unit: "tsp" },
+          { name: "Red wine vinegar", quantity: 1, unit: "tbsp" },
+          { name: "Extra virgin olive oil", quantity: 80, unit: "ml" },
+          { name: "Garlic clove", quantity: 1, unit: "" },
+          { name: "Salt", quantity: 0, unit: "to taste" }
+        ]
+      }
     ],
     substitutes: [
-      { ingredient: "Fromage blanc / cream cheese", alternatives: ["Soured cream", "Quark", "Extra crème fraîche, lightly whipped"] },
-      { ingredient: "Smoked lardons", alternatives: ["Streaky bacon, diced", "Pancetta, diced", "Prosciutto, torn (add after baking)"] },
-      { ingredient: "Gruyère", alternatives: ["Emmental", "Comté", "Aged Cheddar"] },
-      { ingredient: "Strong white bread flour", alternatives: ["Plain flour (slightly less crisp result)", "00 pasta flour", "Spelt flour"] }
+      {
+        ingredient: "Dry white wine",
+        alternatives: ["Chicken stock + splash of white wine vinegar", "Dry vermouth", "Apple cider"]
+      },
+      {
+        ingredient: "Fennel seeds",
+        alternatives: ["Caraway seeds", "Anise seeds", "Ground fennel"]
+      },
+      {
+        ingredient: "Cornichons",
+        alternatives: ["Dill pickles, finely chopped", "Caperberries, sliced", "Pickled cucumber"]
+      },
+      {
+        ingredient: "Boneless pork shoulder",
+        alternatives: ["Pork belly (skin-on, reduce time slightly)", "Pork loin (reduce to 1 hr 30 mins)"]
+      }
     ],
     instructions: [
-      "Step 1 — Make the dough: combine the flour, yeast and salt in a large bowl and make a well in the centre. Add the warm water and olive oil, then mix to a rough dough. Turn out and knead on a lightly floured surface for 8–10 minutes until smooth and elastic. Place in a lightly oiled bowl, cover with a damp cloth and leave to prove in a warm place for 30 minutes — the dough should puff up noticeably but doesn\'t need to double.",
-      "Step 2 — While the dough proves, melt the butter in a wide frying pan over medium-low heat. Add the sliced onions with a pinch of salt and cook slowly for 20–25 minutes, stirring regularly, until deeply golden, soft and sweet. Don\'t rush — properly caramelised onions are essential here. Remove from the pan and set aside. In the same pan over medium-high heat, fry the lardons until golden and just beginning to crisp at the edges. Drain on kitchen paper.",
-      "Step 3 — Preheat your oven to its absolute maximum temperature — ideally 250–260°C/gas 9+ — with two heavy baking trays or a pizza stone inside. The hotter the better. Mix the crème fraîche and fromage blanc together in a bowl with a good grating of nutmeg and season generously with salt and white pepper.",
-      "Step 4 — Divide the dough into two equal pieces. On a well-floured surface, roll each piece as thinly as humanly possible — almost translucent, roughly 30x40cm. The dough should be significantly thinner than pizza dough. Lay each base on a sheet of baking paper.",
-      "Step 5 — Working quickly, spread a thin, even layer of the crème fraîche mixture over each base, right to the edges. Scatter over the caramelised onions, then the lardons, then the Gruyère. Carefully slide the flatbreads (still on their baking paper) onto the screaming-hot trays in the oven. Bake for 8–10 minutes until the edges are deeply blistered and charred in places, the topping is bubbling and the base is crisp and cracker-like underneath. Scatter immediately with chives and serve at once, cut into irregular pieces."
+      "Step 1 — The day before (or at least 4 hours ahead), toast the fennel seeds in a dry pan for 1–2 minutes until fragrant, then crush coarsely in a pestle and mortar. Add the garlic cloves, rosemary, thyme, chilli flakes, lemon zest, 1 tbsp sea salt and plenty of black pepper and pound to a rough paste. Work in 2 tbsp olive oil.",
+      "Step 2 — Lay the butterflied pork shoulder skin-side down. Score the flesh deeply with a knife in a crosshatch pattern and rub the herb paste aggressively all over the inside. Roll the pork tightly along its length and secure at regular intervals with kitchen twine. Score the skin generously with a sharp knife, rub with the remaining olive oil and remaining sea salt, working it into every crevice. Refrigerate uncovered overnight, or for as long as possible.",
+      "Step 3 — Remove the pork from the fridge 1 hour before cooking. Preheat the oven to 240°C/220°C fan. Place the pork on a rack over a roasting tin, pour the white wine into the base of the tin, and roast at high heat for 30–35 minutes until the skin is blistered and beginning to crackle aggressively.",
+      "Step 4 — Reduce the oven temperature to 160°C/140°C fan and continue to roast for a further 2 hrs 30 mins, basting with the pan juices every 45 minutes. The pork is ready when the flesh is completely tender and yielding when prodded with a skewer. If the crackling needs a final blast, return to 240°C for 10–15 minutes at the end.",
+      "Step 5 — While the pork rests (rest for at least 20 minutes, loosely tented with foil but leave the crackling exposed), make the salsa verde. Finely chop the parsley and basil with the single garlic clove, then transfer to a bowl. Stir in the cornichons, capers, Dijon mustard, red wine vinegar and extra virgin olive oil. Mix well, taste, and season assertively — it should be vibrant, sharp and herby.",
+      "Step 6 — Carve the pork into thick slices, ensuring everyone gets some crackling. Spoon over the salsa verde generously and serve with the resting juices from the tin poured around. Excellent alongside roasted fennel bulbs, crushed new potatoes or a simple dressed radicchio salad."
     ]
   }
 ];

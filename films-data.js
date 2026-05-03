@@ -1,18 +1,18 @@
 // films-data.js
-// Auto-updated 2026-04-30 — do not edit manually
+// Auto-updated 2026-05-03 — do not edit manually
 
 var FILMS_DATA = {
-  date: "2026-04-30",
+  date: "2026-05-03",
   film: {
-    title: "The Heartbreak Kid",
-    director: "Elaine May",
-    year: 1972,
-    genres: ["Comedy", "Romance"],
-    desc: "Elaine May\'s razor-sharp comedy follows a newlywed man who falls obsessively for a different woman during his honeymoon, dissecting the American myth of romantic perfectionism with gleeful, unsettling precision. Charles Grodin delivers one of the great deadpan comic performances in cinema history, his polite monstrousness somehow both appalling and irresistible at every turn. The film refuses to let its audience off the hook — we laugh, cringe, and gradually realize May is holding a mirror up to social climbing, self-delusion, and the restless hunger that prosperity breeds. Neil Simon\'s script crackles with wit but May elevates it into something genuinely strange and uncomfortable, ending on a note that lingers long after the credits roll. Criminally underseen compared to its peers, this is a dark gem from one of Hollywood\'s most underappreciated directors.",
-    cast: ["Charles Grodin", "Cybill Shepherd", "Jeannie Berlin"],
-    rating: 93,
+    title: "Ace in the Hole",
+    director: "Billy Wilder",
+    year: 1951,
+    genres: ["Drama", "Noir", "Thriller"],
+    desc: "A cynical, washed-up reporter stumbles upon a man trapped in a collapsed mine in rural New Mexico and masterminds a media circus to prolong the rescue and revive his own career. Billy Wilder\'s most caustic and daring film is a savage indictment of American sensationalism that felt ahead of its time in 1951 and has only grown more unsettling since. Kirk Douglas delivers one of his greatest performances as Chuck Tatum, a man so corroded by ambition that he becomes genuinely monstrous, yet remains compulsively watchable in every frame. The film surrounds the mine with a grotesque carnival of spectators, vendors, and thrill-seekers, turning the landscape into a damning portrait of collective moral failure. Wilder himself considered it his best work, and its unflinching cynicism makes it feel like a film that was made yesterday.",
+    cast: ["Kirk Douglas", "Jan Sterling", "Robert Arthur"],
+    rating: 96,
     ratingSource: "Rotten Tomatoes",
-    ratingExtra: "2 Academy Award Nominations",
-    posterUrl: "https://upload.wikimedia.org/wikipedia/en/f/f2/The_Heartbreak_Kid_%281972_film%29.jpg"
+    ratingExtra: "Cannes Grand Prix Winner",
+    posterUrl: "https://upload.wikimedia.org/wikipedia/commons/8/88/Ace_in_the_Hole_%281951_film_poster%29.jpg"
   }
 };
