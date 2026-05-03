@@ -35,7 +35,29 @@
   var _origSet = localStorage.setItem.bind(localStorage);
   var _origGet = localStorage.getItem.bind(localStorage);
 
-  function getToken() { return _origGet(TOKEN_KEY); }
+  function setCookie(name, value, days) {
+    var expires = new Date(Date.now() + days * 86400000).toUTCString();
+    document.cookie = name + '=' + encodeURIComponent(value) + '; expires=' + expires + '; path=/; SameSite=Strict';
+  }
+
+  function getCookie(name) {
+    var m = document.cookie.match('(?:^|;)\\s*' + name + '=([^;]*)');
+    return m ? decodeURIComponent(m[1]) : null;
+  }
+
+  function getToken() {
+    var t = _origGet(TOKEN_KEY);
+    if (!t) {
+      t = getCookie(TOKEN_KEY);
+      if (t) _origSet(TOKEN_KEY, t); // restore from cookie backup
+    }
+    return t;
+  }
+
+  function saveToken(token) {
+    _origSet(TOKEN_KEY, token);
+    setCookie(TOKEN_KEY, token, 365);
+  }
 
   function authHeaders(token) {
     return {
@@ -140,7 +162,9 @@
   /* ── intercept localStorage.setItem to auto-push ── */
   localStorage.setItem = function (key, value) {
     _origSet(key, value);
-    if (key !== TOKEN_KEY && key !== LAST_SYNC_KEY && SYNC_KEYS.indexOf(key) !== -1) {
+    if (key === TOKEN_KEY) {
+      setCookie(TOKEN_KEY, value, 365);
+    } else if (key !== LAST_SYNC_KEY && SYNC_KEYS.indexOf(key) !== -1) {
       setLocalTimestamp(key);
       schedulePush();
     }
@@ -210,7 +234,7 @@
     LAST_SYNC_KEY: LAST_SYNC_KEY,
     getToken:     getToken,
     setToken: function (token, callback) {
-      _origSet(TOKEN_KEY, token.trim());
+      saveToken(token.trim());
       doPull(function (ok, reason) {
         if (ok) {
           updateSyncUI('synced');
