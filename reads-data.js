@@ -1,19 +1,19 @@
 // reads-data.js
-// Auto-updated 2026-05-02 — do not edit manually
+// Auto-updated 2026-05-03 — do not edit manually
 
 var READS_DATA = {
-  date: "2026-05-02",
+  date: "2026-05-03",
   book: {
-    title: "The Uninhabitable Earth: Life After Warming",
-    author: "David Wallace-Wells",
-    year: 2019,
-    genres: ["Science", "Politics", "Nature"],
-    desc: "David Wallace-Wells takes the full, unflinching measure of climate change not as a distant abstraction but as a cascading series of crises already unfolding across food systems, economies, mental health, and geopolitics. Drawing on hundreds of scientific studies and interviews, he moves chapter by chapter through the specific horrors — heat death, hunger, drowning, wildfire, unbreathable air — with the urgency of a thriller and the precision of a science journalist. What makes the book remarkable is that it refuses both false comfort and paralysis: Wallace-Wells is not interested in letting readers look away, but he is equally uninterested in nihilism. The writing is electrifying, almost baroque in its intensity, treating climate as the master narrative of our civilisation rather than a single-issue concern.",
-    whyRead: "With extreme weather events and climate policy dominating headlines in 2026, this book provides the most lucid and intellectually serious framework for understanding what is actually at stake — and why the scale of the challenge demands an entirely different kind of thinking.",
-    rating: 4.0,
+    title: "The Botany of Desire: A Plant\'s-Eye View of the World",
+    author: "Michael Pollan",
+    year: 2001,
+    genres: ["Nature", "Science", "Food"],
+    desc: "Michael Pollan flips the script on our relationship with the natural world by arguing that plants have been quietly domesticating us just as surely as we have domesticated them, using four plants — the apple, the tulip, cannabis, and the potato — as his lenses. Each chapter is a deeply researched, elegantly written exploration of a human desire (sweetness, beauty, intoxication, control) and the plant that exploited it to spread across the Earth. Pollan writes with the rare gift of making botanical science feel genuinely thrilling, weaving in history, philosophy, and personal anecdote without ever losing the thread. By the end, the garden feels like a negotiation between species rather than a human triumph, and the ordinary world looks permanently strange and more interesting.",
+    whyRead: "In a moment when questions about food systems, ecology, and our relationship with the non-human world feel more urgent than ever, Pollan\'s witty, paradigm-shifting book is the perfect antidote to anthropocentric tunnel vision.",
+    rating: 3.9,
     ratingSource: "Goodreads",
-    ratingCount: "60,000+",
-    coverUrl: null,
-    amazonUrl: "https://www.amazon.co.uk/dp/1090807031"
+    ratingCount: "90,000+",
+    coverUrl: "https://covers.openlibrary.org/b/id/3232846-L.jpg",
+    amazonUrl: "https://www.amazon.co.uk/dp/2746704803"
   }
 };

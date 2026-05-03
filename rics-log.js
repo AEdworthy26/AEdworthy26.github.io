@@ -3,6 +3,45 @@
 
 var RICS_LOG = [
   {
+    "date": "2026-05-03",
+    "topic": "Grampian and Pre-Commencement Conditions: Drafting, Discharge and Risk Management",
+    "module": "Planning and Development Management",
+    "level": 2,
+    "apc_competency": "Planning and Development Management (Level 2)",
+    "focus": "This lesson examines the mechanics of Grampian-style and pre-commencement planning conditions \u2014 how they are drafted, what makes them lawful, how they are discharged, and the commercial and programme risks they create on residential-led development schemes. For Alfie, managing the condition discharge process on complex consented schemes is a day-to-day reality that directly affects land acquisition timing, drawdown of grant funding and contractor start on site.",
+    "image": "https://images.unsplash.com/photo-1696707966941-77a49b95f06e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxHcmFtcGlhbiUyMGFuZCUyMFByZS1Db21tZW5jZW1lbnQlMjBDb25kaXRpb25zJTNBJTIwRHJhZnRpbmclMkMlMjBEaXNjaGFyZ2UlMjBhbmQlMjBSaXNrJTIwTWFuYWdlbWVudCUyMGFyY2hpdGVjdHVyZXxlbnwwfDB8fHwxNzc3Nzg0OTM5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "content": [],
+    "summary": [
+      "A Grampian condition is negatively worded and prevents commencement until an action (which may be on third-party land) is completed \u2014 it does not impose a positive obligation on the developer and is commonly used for off-site highway, drainage or ecological mitigation works.",
+      "The 2018 Pre-commencement Conditions Regulations require LPAs to notify applicants before imposing PCCs and give applicants 10 working days to object \u2014 this is a procedural tool to challenge unnecessary PCCs before consent is granted.",
+      "Start on site without lawfully discharging all applicable pre-commencement conditions risks treating the permission as not yet implemented \u2014 with consequences for the 3-year clock, Homes England grant drawdown triggers and enforcement exposure.",
+      "Conditions discharge programmes should be sequenced and batched strategically \u2014 submit least contested conditions first, use pre-submission dialogue with statutory consultees on complex technical conditions, and integrate the discharge timeline into the project critical path and cashflow model.",
+      "s73 applications are the primary tool for varying conditions post-consent \u2014 they create a new permission with revised conditions but leave the original intact; they are subject to full planning assessment and can be refused, so the interaction between original and s73 permissions must be carefully managed."
+    ],
+    "qa": [
+      {
+        "q": "What is the legal basis for a Grampian condition and what are its limits?",
+        "a": "A Grampian condition is based on the House of Lords decision in Grampian Regional Council v City of Aberdeen [1984]. It is a negatively-worded condition that prohibits commencement or continuation of development until a specified event occurs \u2014 including events outside the applicant\\'s direct control or on land outside the red-line. Its limits are the Newbury tests: it must be for a planning purpose, reasonably related to the development, not unreasonably onerous, precise and enforceable. Critically, it cannot require the applicant to do something positively \u2014 it can only prohibit development until something happens. If there is no reasonable prospect of the condition ever being discharged (e.g. the required off-site works are clearly impossible), the condition \u2014 and potentially the permission \u2014 may be unenforceable, and the LPA may be acting unreasonably in imposing it."
+      },
+      {
+        "q": "On a Latimer scheme, planning consent is granted with a pre-commencement condition requiring submission and approval of a surface water drainage strategy. Your civil engineer advises this will take 14 weeks to prepare and the LPA will need 8 weeks to determine it. Your conditional contract long-stop date is 18 months from consent. How do you manage this risk?",
+        "a": "First, instruct the civil engineer immediately post-consent and do not wait for the design to be fully resolved \u2014 the drainage strategy can be prepared in parallel with detailed design. Second, engage the LPA\\'s drainage officer and Lead Local Flood Authority (LLFA) pre-submission to informally agree the scope and level of detail required \u2014 this reduces the risk of rejection on technical grounds. Third, submit as early as possible within the 14-week preparation window. Fourth, track the 8-week determination clock formally and escalate to the case officer if the deadline is approaching without a decision. Fifth, review the conditional contract long-stop: if there are multiple PCCs of similar complexity, 18 months may be insufficient \u2014 negotiate an extension provision linked to demonstrable progress on discharge. Finally, reflect the realistic PCC discharge timeline in the programme and cashflow model, ensuring grant drawdown milestones are not set before start on site is achievable."
+      },
+      {
+        "q": "What is the difference between using a s73 application and a non-material amendment (NMA) under s96A to modify a planning condition?",
+        "a": "A s73 application under the TCPA 1990 is used to vary or remove a condition on an existing permission. It involves a full planning assessment and creates a new planning permission with revised conditions if approved \u2014 the original permission remains extant. It is the correct route where the change to a condition is material in planning terms. An NMA under s96A can only make non-material amendments to the permission \u2014 minor changes that do not alter the substance or character of what is permitted. An NMA cannot be used to vary conditions; it can only amend the description of development or approved drawings where the change is genuinely non-material. In practice, Alfie would use a s73 to vary a phasing condition or update a parameter plan, and an NMA to correct a minor drawing error or adjust a window position that does not affect the character of the scheme."
+      },
+      {
+        "q": "A planning inspector has granted consent on appeal with a condition requiring a Construction Traffic Management Plan (CTMP) to be submitted and approved before any development commences. The LPA delays determination of the CTMP discharge application beyond 8 weeks. What options are available and what are their practical limitations?",
+        "a": "There is no deemed approval for discharge of condition applications \u2014 unlike planning applications, failure to determine within 8 weeks does not automatically approve the submission. Options are: (1) appeal to PINS against non-determination under s78 \u2014 this is slow (typically 6\u201318 months for written representations) and not commercially viable for a CTMP condition; (2) seek a judicial review of the LPA\\'s failure to act, which requires leave and is procedurally complex; (3) write formally to the LPA\\'s head of development management escalating the delay and requesting a written response within a specified period; (4) consider whether the CTMP condition could be re-worded via a s73 application to allow a phased or revised approach that is less contentious. In practice, the most effective tool is direct escalation with the LPA and, if the scheme involves Homes England grant, engaging Homes England\\'s local team to apply soft pressure \u2014 LPAs are generally more responsive when public subsidy and housing delivery are at stake."
+      },
+      {
+        "q": "How does the grant of a s73 permission interact with the original planning permission, and what are the programme implications for a developer managing multiple active permissions on the same site?",
+        "a": "A s73 application, if approved, creates a new, freestanding planning permission with revised conditions \u2014 the original permission is not cancelled and remains extant alongside the s73 permission. Both permissions can be lawfully implemented, provided neither has lapsed. This creates a strategic choice for the developer: if the s73 is more favourable (e.g. allows a larger scheme or removes an onerous condition), work can commence under the s73; if the s73 is refused or appealed, the original permission can still be implemented. The programme implication is that the developer must track two sets of conditions and two 3-year implementation clocks. A critical risk arises if the original permission is 'accidentally' implemented in a way that also implements the s73 permission \u2014 legal advice is essential to confirm which permission is being relied upon at start on site and to ensure all relevant PCCs under that specific permission are discharged. This is particularly important where Homes England grant drawdown references a specific planning permission reference number."
+      }
+    ]
+  },
+  {
     "date": "2026-05-02",
     "topic": "CIL Liability, Exemptions and Charging Schedule Mechanics",
     "module": "Legal and Regulatory Compliance",

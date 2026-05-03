@@ -1,18 +1,18 @@
 // films-data.js
-// Auto-updated 2026-05-02 — do not edit manually
+// Auto-updated 2026-05-03 — do not edit manually
 
 var FILMS_DATA = {
-  date: "2026-05-02",
+  date: "2026-05-03",
   film: {
-    title: "The Ruling Class",
-    director: "Peter Medak",
-    year: 1972,
-    genres: ["Comedy", "Satire", "Drama"],
-    desc: "Peter O\'Toole delivers one of cinema\'s most audaciously unhinged performances as Jack, the 14th Earl of Gurney — a paranoid schizophrenic who believes himself to be Jesus Christ and inherits a crumbling English aristocratic estate. The film is a savage, wickedly funny dismantling of the British class system, toggling between absurdist musical numbers, Brechtian monologues, and genuine psychological horror with breathtaking confidence. Adapted from Peter Barnes\'s stage play, it refuses every tonal comfort zone, shifting from slapstick farce to something genuinely cold and murderous by its final act. O\'Toole\'s performance — mercurial, tender, terrifying — earned him an Academy Award nomination and remains one of the great overlooked turns of the 1970s. For anyone who loves films that bite the hand that feeds them, this British cult classic is essential, revelatory viewing.",
-    cast: ["Peter O\'Toole", "Alastair Sim", "Arthur Lowe"],
-    rating: 83,
+    title: "Ace in the Hole",
+    director: "Billy Wilder",
+    year: 1951,
+    genres: ["Drama", "Noir", "Thriller"],
+    desc: "A cynical, washed-up reporter stumbles upon a man trapped in a collapsed mine in rural New Mexico and masterminds a media circus to prolong the rescue and revive his own career. Billy Wilder\'s most caustic and daring film is a savage indictment of American sensationalism that felt ahead of its time in 1951 and has only grown more unsettling since. Kirk Douglas delivers one of his greatest performances as Chuck Tatum, a man so corroded by ambition that he becomes genuinely monstrous, yet remains compulsively watchable in every frame. The film surrounds the mine with a grotesque carnival of spectators, vendors, and thrill-seekers, turning the landscape into a damning portrait of collective moral failure. Wilder himself considered it his best work, and its unflinching cynicism makes it feel like a film that was made yesterday.",
+    cast: ["Kirk Douglas", "Jan Sterling", "Robert Arthur"],
+    rating: 96,
     ratingSource: "Rotten Tomatoes",
-    ratingExtra: "1 Academy Award Nomination",
-    posterUrl: "https://upload.wikimedia.org/wikipedia/en/2/29/1972_Peter_Medak_film_The_Ruling_Class_distribution_poster_U.S.jpg"
+    ratingExtra: "Cannes Grand Prix Winner",
+    posterUrl: "https://upload.wikimedia.org/wikipedia/commons/8/88/Ace_in_the_Hole_%281951_film_poster%29.jpg"
   }
 };

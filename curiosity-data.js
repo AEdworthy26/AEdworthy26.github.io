@@ -1,88 +1,92 @@
 // curiosity-data.js
-// Auto-updated 2026-05-02 — do not edit manually
+// Auto-updated 2026-05-03 — do not edit manually
 
 var CURIOSITY_DATA = {
-  date: "2026-05-02",
+  date: "2026-05-03",
   mainArticle: {
-    title: "The Tulip Mania: When a Flower Broke the Dutch Economy",
-    subject: "Dutch Tulip Mania",
-    subtitle: "In the winter of 1636, a single tulip bulb cost more than a canal house in Amsterdam. Then, almost overnight, it was worth nothing at all.",
-    image: "https://images.pexels.com/photos/16644082/pexels-photo-16644082.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    title: "The Kingdom of Kush: The Pharaohs Africa Forgot",
+    subject: "Kingdom of Kush, Nubia",
+    subtitle: "For centuries they ruled Egypt, built hundreds of pyramids, and commanded an empire stretching deep into Africa. Then history looked away.",
+    image: "https://images.unsplash.com/photo-1696508367478-fa3312a7bbab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxLaW5nZG9tJTIwb2YlMjBLdXNoJTJDJTIwTnViaWF8ZW58MHwwfHx8MTc3Nzc4NDgxOHww&ixlib=rb-4.1.0&q=80&w=1080",
     readTime: "8 min",
     content: [
       {
         type: "paragraph",
-        text: "There is a moment in the history of the Dutch Golden Age that feels almost too strange to be real. In the winter of 1636 and early 1637, the price of a single rare tulip bulb — a plant, not even yet in bloom — reached the equivalent of ten times a skilled craftsman\'s annual wage. Contracts were drawn up, fortunes pledged, and an entire shadow economy built on the promise of flowers. Then, in February 1637, the market collapsed in a matter of days, and the most famous speculative bubble in economic history was over before most people had even understood what it was."
+        text: "Somewhere between the fourth and sixth cataracts of the Nile, in what is today northern Sudan, the ruins of Meroe rise from the desert in eerie silence. Dozens of steep, narrow pyramids — sharper and more angular than anything on the Giza plateau — cast long shadows across the sand at dawn. They are the tombs of kings and queens who ruled one of the ancient world\'s most sophisticated civilisations for over a thousand years, and most people alive today have never heard of them."
       },
       {
         type: "heading",
-        text: "A Flower from the East"
+        text: "The Kingdom That Conquered the Conquerors"
       },
       {
         type: "paragraph",
-        text: "The tulip was not native to the Netherlands. It arrived in Western Europe in the mid-sixteenth century, brought back by Flemish diplomat Ogier de Busbecq from the court of Suleiman the Magnificent in Constantinople, where the flower had been cultivated and adored for generations. The Ottoman passion for the tulip — its name derived from a Turkish word for turban — translated almost immediately into European obsession. By the time the botanist Carolus Clusius planted the first tulip bulbs in Leiden around 1593, the flower was already an object of extraordinary desire among the wealthy."
+        text: "The Kushite kingdom, centred in what the Egyptians called Nubia, had a relationship with Egypt that lurched between rivalry, subjugation, and remarkable reversal. For stretches of the second millennium BC, Egyptian pharaohs pushed south and colonised Nubian territory, extracting gold, ivory, and enslaved people. But around 750 BC, something extraordinary happened: the Kushite king Piye marched north, overwhelmed the fractured Egyptian city-states one by one, and declared himself pharaoh of all Egypt. For nearly a century, black African kings from the south sat on the throne of the most storied civilisation in the ancient world."
       },
       {
         type: "heading",
-        text: "The Broken Tulip and the Birth of Speculation"
+        text: "The Twenty-Fifth Dynasty and Its Ambitions"
       },
       {
         type: "paragraph",
-        text: "What truly ignited the mania was a botanical curiosity — the so-called 'broken' tulip, whose petals displayed vivid streaks and flames of contrasting colour. We now know this effect was caused by a mosaic virus transmitted by aphids, but to seventeenth-century eyes it looked like a miracle of nature. A plain red tulip might transform into a sensational 'Semper Augustus' — white petals striped with carmine — and no grower could predict which bulbs would 'break' and which would not. This uncertainty was the engine of speculation: you were not just buying a flower, you were buying a lottery ticket."
+        text: "Piye\'s successors — Shabaka, Shebitku, Taharqa, and Tantamani — are collectively known to Egyptologists as the Twenty-Fifth Dynasty, though they preferred to see themselves not as conquerors but as restorers. They revived old temples, commissioned new ones in a consciously archaic style, and patronised the arts with the zeal of rulers trying to out-Egyptian the Egyptians. Taharqa in particular is remembered as a great builder whose constructions stretched from the Nile Delta to deep in Sudan; the Bible mentions him by name as a king who came to the aid of Jerusalem against the Assyrians. It was those same Assyrians — under Esarhaddon and later Ashurbanipal — who eventually drove the Kushites back south, ending their rule of Egypt but not their civilisation."
       },
       {
         type: "heading",
-        text: "The Tavern Market and Futures in Flowers"
+        text: "Meroe: An African Metropolis"
       },
       {
         type: "paragraph",
-        text: "As demand outstripped supply through the mid-1630s, trading shifted from professional florists to a much wider public. Taverns became informal exchanges where merchants, weavers, bakers, and farmers bought and sold bulbs that were still in the ground, using a form of futures contract. Most participants never intended to take physical delivery of a single bulb — they planned to sell their contracts at a profit before the bulbs were lifted. This was one of the earliest recorded examples of derivative trading, conducted over beer in the back rooms of Dutch inns."
-      },
-      {
-        type: "paragraph",
-        text: "At the peak, in the winter of 1636–37, prices defied all reason. The famous Semper Augustus bulb changed hands for 6,000 guilders — at a time when a comfortable Amsterdam house on a good canal could be bought for around 500. Even more ordinary varieties multiplied in price tenfold within weeks. The Dutch Republic was at the height of its global commercial power, flush with capital from the spice trade and bursting with entrepreneurial confidence; the tulip market absorbed all of that energy and reflected it back, distorted into something feverish."
+        text: "Retreating from Egypt did not diminish Kush. The kingdom simply relocated its heart further south to Meroe, a city on a bend of the Nile that would flourish for six more centuries. Meroe sat at the intersection of trade routes connecting sub-Saharan Africa, Egypt, Arabia, and eventually India and Rome; Roman coins and Indian cotton have both been found in its ruins. The city developed its own iron-smelting industry on a scale that supplied metal tools and weapons across a vast region — slag heaps there are so large they have been called the Birmingham of the ancient world. Meroe also gave birth to its own script, Meroitic, which remains only partially understood, a haunting reminder of how much of Kushite inner life is still locked away from us."
       },
       {
         type: "heading",
-        text: "The Collapse"
+        text: "The Warrior Queens: Kandakes of Kush"
       },
       {
         type: "paragraph",
-        text: "The end came swiftly and with little drama. On the first Tuesday of February 1637, buyers simply failed to appear at a routine bulb auction in Haarlem. No one knows exactly why that particular sale was the tipping point — perhaps confidence had quietly eroded, or sellers had become too numerous, or enough people had begun to question whether a flower could truly be worth a house. Within days the word had spread to Amsterdam and Utrecht, and by the end of the week prices had fallen by ninety percent or more. Contracts became worthless. Fortunes evaporated."
+        text: "Among the most startling aspects of Kushite civilisation is the prominent role of women in power. The Kandake — a title meaning queen mother or ruling queen — was a genuine political force, not merely a ceremonial one. Several Kandakes appear to have ruled outright, and others commanded armies in the field; one, Amanirenas, is credited with leading a successful military campaign against Roman Egypt around 24 BC, reportedly attacking the Roman garrison at Aswan and carrying off a bronze head of Augustus as a trophy. That head was deliberately buried beneath the steps of a Meroitic building, so that Romans visiting would unknowingly trample the face of their emperor — a gesture of defiance across two thousand years."
       },
       {
         type: "heading",
-        text: "The Myth and the Reality"
+        text: "Pyramids by the Hundred"
       },
       {
         type: "paragraph",
-        text: "Later generations, particularly nineteenth-century moralists, exaggerated the tulip crash into a tale of universal ruin — a cautionary fable about greed destroying an entire nation. Modern economic historians have substantially revised this picture. The majority of contracts appear to have been settled quietly through negotiation, courts were largely reluctant to enforce speculative flower debts, and the broader Dutch economy was not meaningfully damaged. The mania was real, the collapse was real, but the apocalypse was largely invented after the fact."
+        text: "The most visible legacy of Kush is its pyramids — and there are more of them than in Egypt itself. Sudan contains over 200 ancient pyramids, concentrated at the royal cemeteries of Meroe, Nuri, and El-Kurru. They differ from their Egyptian predecessors in being smaller at the base but dramatically taller relative to their footprint, giving them a spire-like silhouette that can feel almost Gothic. Many were damaged or destroyed in the 1830s by an Italian treasure hunter named Giuseppe Ferlini, who blew the tops off dozens searching for gold — and found some — in an act of vandalism that still makes archaeologists wince. What survived continues to yield extraordinary finds; recent excavations have uncovered painted burial chambers, intricate jewellery, and inscriptions that hint at a royal theology quite distinct from anything Egyptian."
       },
       {
         type: "heading",
-        text: "A Mirror Held to Every Age"
+        text: "Why Did History Forget?"
       },
       {
         type: "paragraph",
-        text: "What makes Tulip Mania enduringly fascinating is not its scale but its anatomy. Every element of the modern speculative bubble was present in those Dutch taverns: assets detached from intrinsic value, the contagion of collective belief, the intoxicating momentum of rising prices, and the sudden, inexplicable reversal of sentiment. The tulip mania has been invoked to explain everything from the South Sea Bubble to the dot-com crash to cryptocurrency markets, and each comparison reveals something true. Human beings, it turns out, have been making the same financial mistakes for as long as they have had money."
+        text: "The eclipse of Kush from mainstream historical consciousness is itself a story worth examining. Part of the answer is geographic: the ruins lie in a region that was, for much of the nineteenth and twentieth centuries, difficult to access and politically marginal to European scholarship. Part of it is interpretive: early Egyptologists, some operating with the racial assumptions of their era, struggled to fit a powerful, literate, pyramid-building African kingdom into their frameworks and often treated Kush as a footnote to Egyptian history rather than a civilisation in its own right. It took generations of archaeologists — including pioneering Sudanese scholars from the twentieth century onward — to begin reconstructing the full picture."
+      },
+      {
+        type: "heading",
+        text: "A Civilisation Reclaiming Its Place"
       },
       {
         type: "paragraph",
-        text: "The tulip itself, of course, survived. The Netherlands went on to become the world\'s dominant flower producer, and the tulip remains its national symbol — a gorgeous irony that a flower once associated with financial catastrophe now decorates the country\'s brand with cheerful innocence. Every spring, the fields around Lisse blaze with millions of blooms, utterly indifferent to the strange chapter in economic history they once inspired. The bulbs go into the ground and come up again, reliable as seasons, as if the whole peculiar episode of 1637 never happened at all."
+        text: "Today, Meroë is a UNESCO World Heritage Site, and the study of Kushite history has been transformed by new excavations, advances in isotope analysis, and determined efforts by Sudanese archaeologists to centre their own nation\'s past. The ongoing effort to decipher the Meroitic script — which uses an alphabet derived from Egyptian hieroglyphs but encodes a completely different language — could, if it succeeds, open up Kush\'s inner world the way the Rosetta Stone opened Egypt\'s. What already seems clear is that the Kingdom of Kush was not a shadow of Egypt but a parallel civilisation: original, resilient, and astonishingly long-lived."
+      },
+      {
+        type: "paragraph",
+        text: "When Piye stood in the temple of Ptah at Memphis after his conquest and refused to allow the defeated Egyptian princes into his presence because they had eaten impure food — a detail recorded on his own victory stele, with unmistakable pride — he was not imitating Egyptian culture. He was judging it. That confidence, that self-possessed sense of civilisational identity, runs through a thousand years of Kushite history. It deserves to run through ours as well."
       }
     ]
   },
   personOfTheDay: {
-    name: "John Law",
-    lifespan: "1671–1729",
-    category: "Economics & Finance",
-    image: "https://images.unsplash.com/photo-1761724639378-e1df3487080c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxKb2huJTIwTGF3JTIwcG9ydHJhaXR8ZW58MHwyfHx8MTc3NzY5ODQ0N3ww&ixlib=rb-4.1.0&q=80&w=1080&crop=faces,entropy&fit=crop",
-    bio: "John Law was a Scottish economist, gambler, and financial visionary whose ideas about paper money and credit were simultaneously brilliant and catastrophic. Born in Edinburgh in 1671, the son of a goldsmith and banker, Law showed an extraordinary aptitude for mathematics from an early age and studied the mechanics of trade and finance with an intensity unusual for a young man of his background. A fatal duel in London in 1694 — which Law survived, though his opponent did not — forced him into exile on the Continent, where he spent two decades gambling professionally and developing increasingly ambitious theories about the nature of money.\n\nLaw\'s central insight was that a country\'s economic vitality was constrained not by its stock of gold and silver but by the volume of credit in circulation, and that a well-managed bank issuing paper notes could unlock enormous latent productive capacity. It was a genuinely modern idea, anticipated by almost no one in his era. After failing to persuade the governments of Scotland, Savoy, and Venice to adopt his scheme, he finally found a willing patron in the Regent of France, Philippe II, Duke of Orléans, who in 1716 granted Law permission to establish the Banque Générale — effectively France\'s first central bank.\n\nWhat followed was one of the most dazzling and disastrous experiments in financial history. Law\'s bank merged with a trading monopoly called the Compagnie des Indes, which held rights over the vast but largely unexplored Louisiana Territory in North America. Share prices in the company soared on the promise of fabulous American wealth, creating the Mississippi Bubble of 1719–20 — the French counterpart to England\'s South Sea Bubble, which collapsed at almost exactly the same moment. When confidence broke, the rush to redeem paper notes for gold destroyed the bank, ruined thousands of investors, and set back French financial development by decades. Law fled France in disgrace, dying in Venice in 1729, poor and largely forgotten. Yet his theoretical framework — that credit, not coin, is the lifeblood of a modern economy — proved entirely correct, and the institutions he pioneered, however clumsily, are the ancestors of every central bank in the world today."
+    name: "Taharqa",
+    lifespan: "c. 710–664 BC",
+    category: "Ancient Rulers & Conquerors",
+    image: "https://upload.wikimedia.org/wikipedia/commons/3/3f/Taharqa%2C_Louvre_Museum.jpg",
+    bio: "Taharqa was the fourth pharaoh of ancient Egypt\'s Twenty-Fifth Dynasty and one of the most powerful rulers of the ancient Near East in the seventh century BC. Born into the Kushite royal family in Nubia, he came to the throne around 690 BC following the death of his predecessor Shebitku, inheriting an empire that stretched from deep in Sudan to the Mediterranean coast. He ruled for over twenty-five years, a reign marked by extraordinary building activity, diplomatic ambition, and ultimately catastrophic military conflict.\n\nAs a builder, Taharqa had few peers in the ancient world. He restored and expanded temples across Egypt, erected a spectacular colonnaded kiosk within the precinct of Karnak whose single surviving pillar still stands ten metres high, and commissioned massive structures at Kawa and Sanam in his Nubian heartland. He regarded himself as a pious restorer of Egyptian religious tradition, and his inscriptions bristle with references to the gods' approval of his rule. A high Nile flood early in his reign, which produced bumper harvests across the kingdom, was taken — and recorded — as divine confirmation of his legitimacy.\n\nTaharqa\'s downfall came from the east. The Assyrian empire under Esarhaddon invaded Egypt in 674 BC and again in 671 BC, eventually sacking Memphis and forcing Taharqa to flee south. His nephew and successor Tantamani briefly retook Memphis, but a further Assyrian campaign under Ashurbanipal definitively ended Kushite rule in Egypt. Taharqa spent his final years in Nubia, where he continued building and ruling until his death around 664 BC. He is mentioned in the Hebrew Bible as 'Tirhakah king of Kush,' a king who marched to defend Judah against the Assyrian siege of Jerusalem — a measure of just how wide his reach and reputation extended across the ancient world."
   },
   onThisDay: {
-    headline: "Leonardo da Vinci Dies at Amboise",
-    date: "May 2, 1519",
-    summary: "On May 2, 1519, Leonardo da Vinci died at the Château du Clos Lucé near Amboise, France, at the age of sixty-seven. He had spent the final three years of his life as a guest of King Francis I of France, who had invited him to the Loire Valley with the honorary title of Premier Painter, Engineer, and Architect to the King. According to the later account of Giorgio Vasari, Francis held Leonardo\'s head in his arms as he died — a story almost certainly embellished, but one that captures the extraordinary esteem in which the artist was held by one of Europe\'s most powerful monarchs.\n\nLeonardo left behind a body of work that defied easy categorisation. His paintings — among them the Mona Lisa, The Last Supper, and The Virgin of the Rocks — had already secured his fame across Europe. But the thousands of pages of notebooks he left, filled with anatomical drawings, designs for flying machines, studies of water flow, geological observations, and philosophical reflections, would not be fully appreciated for centuries. He bequeathed most of his paintings and manuscripts to his devoted pupil and companion Francesco Melzi, who guarded them carefully, though after Melzi\'s death the collection was scattered and much was eventually lost.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/e/ef/AmboiseRue.JPG"
+    headline: "THE POLISH CONSTITUTION OF 1791: EUROPE\'S FIRST MODERN CHARTER",
+    date: "May 3, 1791",
+    summary: "On May 3, 1791, the Polish–Lithuanian Commonwealth adopted the Constitution of 3 May — the first codified national constitution in modern European history and only the second written national constitution in the world, after the United States Constitution of 1787. Passed by the Great Sejm in Warsaw amid intense political drama, the document abolished the notorious liberum veto (which had allowed a single nobleman to paralyse parliament), curtailed the excessive privileges of the szlachta nobility, extended rights to the bourgeoisie, and placed the Polish state on a more rational, reformist footing. Its authors, including King Stanisław August Poniatowski and the jurist Hugo Kołłątaj, were acutely aware that Poland was surrounded by predatory neighbours — Russia, Prussia, and Austria had already taken chunks of Polish territory in the First Partition of 1772.\n\nThe constitution was celebrated by reformers across Europe and America; Edmund Burke praised it and Thomas Paine admired it. But its life was tragically short. Russia, alarmed by a democratic Poland on its border, invaded in 1792 at the invitation of a faction of Polish reactionaries known as the Confederation of Targowica. The constitution was annulled, and within three years Poland had been partitioned out of existence entirely, not to reappear on the map of Europe for over a century. May 3rd remains a national holiday in Poland to this day, commemorating a moment when a battered kingdom tried to save itself through reason and reform — and almost succeeded.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Europe_orthographic_Caucasus_Urals_boundary_%28with_borders%29.svg/960px-Europe_orthographic_Caucasus_Urals_boundary_%28with_borders%29.svg.png"
   }
 };

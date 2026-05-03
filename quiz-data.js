@@ -1,10 +1,10 @@
 // quiz-data.js
-// Auto-updated 2026-05-02 — do not edit manually
+// Auto-updated 2026-05-03 — do not edit manually
 
 window.QUIZ_DATA = {
-  date: '2026-05-02',
-  category: 'Transport',
-  question: 'The Falkirk Wheel in Scotland, opened in 2002, is the world\'s only rotating boat lift — but how many degrees does it rotate to transfer boats between the two canals?',
-  answer: '180 degrees.',
-  funFact: 'The Falkirk Wheel connects the Forth & Clyde Canal to the Union Canal, replacing a flight of 11 locks that had been demolished in 1933. Remarkably, the wheel uses roughly the same energy as boiling just eight household kettles per rotation, because the two gondolas always contain equal weights of water, keeping the structure in perfect balance.'
+  date: '2026-05-03',
+  category: 'Food & Drink',
+  question: 'Which Italian city is the traditional home of panettone, the tall, dome-shaped sweet bread typically associated with Christmas?',
+  answer: 'Milan',
+  funFact: 'Milanese bakeries have been producing panettone since at least the 15th century, and the name is thought to derive from "pane di Toni" — the bread of a baker named Toni, according to popular legend. The modern industrialised version was pioneered by Angelo Motta in the 1920s, who gave it its distinctive tall shape by forcing the dough upward in a paper mould during baking.'
 };

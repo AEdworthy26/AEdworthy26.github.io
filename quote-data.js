@@ -1,8 +1,8 @@
 // quote-data.js
-// Auto-updated 2026-05-02 — do not edit manually
+// Auto-updated 2026-05-03 — do not edit manually
 
 var QUOTE_DATA = {
-  date: "2026-05-02",
-  text: "The most erroneous stories are those we think we know best — and therefore never scrutinize or question.",
-  author: "Stephen Jay Gould"
+  date: "2026-05-03",
+  text: "The map is not the territory, but you can\'t fold up the territory and put it in your pocket.",
+  author: "Alfred Korzybski"
 };
