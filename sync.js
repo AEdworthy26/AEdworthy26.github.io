@@ -159,14 +159,12 @@
         window.location.reload();
       } else if (!ok) {
         var last = _origGet(LAST_SYNC_KEY);
-        var daysMsg = '';
-        if (last) {
-          var days = Math.floor((Date.now() - new Date(last).getTime()) / 86400000);
-          if (days >= 1) daysMsg = ' Last successful backup was ' + days + ' day' + (days === 1 ? '' : 's') + ' ago.';
-        } else {
-          daysMsg = ' No successful backup on record.';
+        var hoursSince = last ? (Date.now() - new Date(last).getTime()) / 3600000 : Infinity;
+        if (hoursSince > 24) {
+          var days = Math.floor(hoursSince / 24);
+          var daysMsg = hoursSince === Infinity ? ' No successful backup on record.' : ' Last successful backup was ' + days + ' day' + (days === 1 ? '' : 's') + ' ago.';
+          injectSyncWarning('Sync is failing &mdash; your data is not being backed up.' + daysMsg);
         }
-        injectSyncWarning('Sync is failing &mdash; your data is not being backed up.' + daysMsg);
         updateSyncUI('error');
       } else {
         updateSyncUI('synced');
