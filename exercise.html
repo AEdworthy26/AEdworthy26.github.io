@@ -176,6 +176,7 @@
     .log-card-title { font-family: 'Inter', sans-serif; font-weight: 700; font-size: .82rem; letter-spacing: .07em; text-transform: uppercase; margin: -1.3rem -1.3rem 1.3rem; padding: .85rem 1.3rem; background: linear-gradient(135deg, #1e293b 0%, #334155 100%); color: #fff; display: flex; align-items: center; gap: .5rem; }
     .ex-log-row { display: grid; grid-template-columns: 2fr 70px 90px 80px 28px; gap: .45rem; align-items: center; margin-bottom: .4rem; }
     .act-log-row { display: grid; grid-template-columns: 2fr 90px 90px 28px; gap: .45rem; align-items: center; margin-bottom: .4rem; }
+    .cardio-log-row { display: grid; grid-template-columns: 2fr 90px 80px 55px 28px; gap: .45rem; align-items: center; margin-bottom: .4rem; }
     .btn-add-row { background: none; border: 1px dashed var(--border); border-radius: 6px; padding: .3rem .8rem; font-size: .74rem; color: var(--muted); transition: all .12s; margin-top: .2rem; }
     .btn-add-row:hover { border-color: #999; color: var(--ink); background: var(--subtle); }
     .btn-del-row { background: none; border: none; color: var(--light); font-size: 1.1rem; line-height: 1; padding: 0 .2rem; transition: color .12s; }
@@ -404,7 +405,7 @@
         </div>
         <div id="log-cat-exercises" class="log-ex-picker"></div>
         <div id="log-ex-added-wrap" style="display:none">
-          <div class="log-ex-added-sep"><span>Added to this workout</span></div>
+          <div class="log-ex-added-sep"><span>Exercises added</span></div>
           <div style="display:grid;grid-template-columns:2fr 70px 90px 80px 28px;gap:.45rem;margin-bottom:.35rem">
             <span class="col-label">Exercise</span>
             <span class="col-label">Sets</span>
@@ -414,7 +415,18 @@
           </div>
           <div id="log-ex-rows"></div>
         </div>
-        <button class="btn-add-row" style="margin-top:.5rem" onclick="addLogExRow()">+ Add manually</button>
+        <div id="log-cardio-added-wrap" style="display:none">
+          <div class="log-ex-added-sep"><span>Cardio logged</span></div>
+          <div style="display:grid;grid-template-columns:2fr 90px 80px 55px 28px;gap:.45rem;margin-bottom:.35rem">
+            <span class="col-label">Activity</span>
+            <span class="col-label">Time</span>
+            <span class="col-label">Distance</span>
+            <span class="col-label">Unit</span>
+            <span></span>
+          </div>
+          <div id="log-cardio-rows"></div>
+        </div>
+        <button class="btn-add-row" style="margin-top:.5rem" onclick="addLogRow()">+ Add manually</button>
       </div>
 
       <div class="log-card">
@@ -562,6 +574,7 @@
     var addState = {}; // per-cat: { weightType, lightOn, heavyOn }
     var editCtx = { cat: null, id: null, weightType: 'range', hasHeavy: true, hasLight: false };
     var logExRows = [];
+    var logCardioRows = [];
     var logActRows = [];
     var logCat = 'push';
 
@@ -844,9 +857,11 @@
       }
       el.innerHTML = sorted.map(function (log) {
         var exCount = (log.exercises || []).length;
+        var cardioCount = (log.cardio || []).length;
         var actCount = (log.activities || []).length;
         var sumParts = [];
         if (exCount) sumParts.push(exCount + ' exercise' + (exCount !== 1 ? 's' : ''));
+        if (cardioCount) sumParts.push(cardioCount + ' cardio');
         if (actCount) sumParts.push(actCount + ' activit' + (actCount !== 1 ? 'ies' : 'y'));
 
         var exRows = (log.exercises || []).map(function (e) {
@@ -854,6 +869,13 @@
             + '<td>' + esc(e.sets || '—') + '</td>'
             + '<td>' + esc(e.weight || '—') + '</td>'
             + '<td>' + esc(e.reps || '—') + '</td></tr>';
+        }).join('');
+
+        var cardioRows = (log.cardio || []).map(function (c) {
+          var dist = c.distance ? c.distance + ' ' + (c.distUnit || 'km') : '—';
+          return '<tr><td>' + esc(c.name || '—') + '</td>'
+            + '<td>' + esc(c.time || '—') + '</td>'
+            + '<td>' + esc(dist) + '</td></tr>';
         }).join('');
 
         var actRows = (log.activities || []).map(function (a) {
@@ -879,6 +901,8 @@
           + '<div class="log-entry-body">'
           + (exRows ? '<div class="log-section-lbl">Exercises</div>'
             + '<table class="lb-ex-table"><thead><tr><th>Exercise</th><th>Sets</th><th>Weight</th><th>Reps</th></tr></thead><tbody>' + exRows + '</tbody></table>' : '')
+          + (cardioRows ? '<div class="log-section-lbl">Cardio</div>'
+            + '<table class="lb-ex-table"><thead><tr><th>Activity</th><th>Time</th><th>Distance</th></tr></thead><tbody>' + cardioRows + '</tbody></table>' : '')
           + (actRows ? '<div class="log-section-lbl">Activities</div><div>' + actRows + '</div>' : '')
           + (log.notes ? '<div class="log-section-lbl">Notes</div><div class="lb-notes-block">' + esc(log.notes) + '</div>' : '')
           + '<div class="lb-footer">'
@@ -990,6 +1014,27 @@
       }).join('');
     }
 
+    function renderLogCardioRows() {
+      var wrap = document.getElementById('log-cardio-added-wrap');
+      if (wrap) wrap.style.display = logCardioRows.length ? '' : 'none';
+      var el = document.getElementById('log-cardio-rows');
+      if (!el) return;
+      if (!logCardioRows.length) { el.innerHTML = ''; return; }
+      el.innerHTML = logCardioRows.map(function (r, i) {
+        return '<div class="cardio-log-row">'
+          + '<input class="form-input" type="text" value="' + esc(r.name) + '" placeholder="Activity" oninput="updLogCardio(' + i + ',\'name\',this.value)">'
+          + '<input class="form-input" type="text" value="' + esc(r.time) + '" placeholder="22:30" oninput="updLogCardio(' + i + ',\'time\',this.value)">'
+          + '<input class="form-input" type="number" value="' + esc(r.distance) + '" placeholder="5" min="0" step="0.01" oninput="updLogCardio(' + i + ',\'distance\',this.value)">'
+          + '<select class="form-input" onchange="updLogCardio(' + i + ',\'distUnit\',this.value)">'
+          + '<option value="km"' + (r.distUnit === 'km' ? ' selected' : '') + '>km</option>'
+          + '<option value="mi"' + (r.distUnit === 'mi' ? ' selected' : '') + '>mi</option>'
+          + '<option value="m"' + (r.distUnit === 'm' ? ' selected' : '') + '>m</option>'
+          + '</select>'
+          + '<button class="btn-del-row" onclick="delLogCardio(' + i + ')">×</button>'
+          + '</div>';
+      }).join('');
+    }
+
     function renderLogCatExercises() {
       var el = document.getElementById('log-cat-exercises');
       if (!el) return;
@@ -1020,7 +1065,7 @@
       if (tab === 'stats') renderStats();
       if (tab === 'logbook') renderLogbook();
       if (tab === 'activities') renderActivities();
-      if (tab === 'log') { renderLogExRows(); renderLogActRows(); renderLogCatExercises(); }
+      if (tab === 'log') { renderLogExRows(); renderLogCardioRows(); renderLogActRows(); renderLogCatExercises(); }
     };
 
     window.switchLogCat = function (cat) {
@@ -1281,9 +1326,21 @@
       renderLogExRows();
     };
 
-    window.delLogEx = function (i) { logExRows.splice(i, 1); renderLogExRows(); };
+    window.addLogRow = function () {
+      if (logCat === 'cardio') {
+        logCardioRows.push({ id: uid(), name: '', time: '', distance: '', distUnit: 'km' });
+        renderLogCardioRows();
+      } else {
+        logExRows.push({ id: uid(), name: '', sets: '', weight: '', reps: '' });
+        renderLogExRows();
+      }
+    };
 
+    window.delLogEx = function (i) { logExRows.splice(i, 1); renderLogExRows(); };
     window.updLogEx = function (i, f, v) { if (logExRows[i]) logExRows[i][f] = v; };
+
+    window.delLogCardio = function (i) { logCardioRows.splice(i, 1); renderLogCardioRows(); };
+    window.updLogCardio = function (i, f, v) { if (logCardioRows[i]) logCardioRows[i][f] = v; };
 
     window.addLogActRow = function () {
       logActRows.push({ id: uid(), name: '', duration: '', unit: 'mins' });
@@ -1299,26 +1356,34 @@
       ['push', 'pull', 'legs', 'cardio'].forEach(function (cat) {
         if (!ex) ex = findItem(routines[cat] || [], function (e) { return e.id === exId; });
       });
-      logExRows.push({
-        id: uid(), name: name,
-        sets: ex ? ex.sets : '',
-        weight: ex ? (wStrDay(ex, 'heavy') || wStrDay(ex, 'light') || '') : '',
-        reps: ex ? ex.reps || '' : ''
-      });
-      renderLogExRows();
+      if (logCat === 'cardio' || (ex && ex.wt === 'time')) {
+        logCardioRows.push({ id: uid(), name: name, time: '', distance: '', distUnit: 'km' });
+        renderLogCardioRows();
+      } else {
+        logExRows.push({
+          id: uid(), name: name,
+          sets: ex ? ex.sets : '',
+          weight: ex ? (wStrDay(ex, 'heavy') || wStrDay(ex, 'light') || '') : '',
+          reps: ex ? ex.reps || '' : ''
+        });
+        renderLogExRows();
+      }
     };
 
     window.saveLog = function () {
       var date = (document.getElementById('log-date') || {}).value || todayISO();
       var notes = (document.getElementById('log-notes') || {}).value || '';
       var exs = logExRows.filter(function (r) { return r.name.trim(); });
+      var cardio = logCardioRows.filter(function (r) { return r.name.trim(); });
       var acts = logActRows.filter(function (r) { return r.name.trim(); });
-      if (!exs.length && !acts.length) { showToast('Add at least one exercise or activity'); return; }
-      logs.push({ id: uid(), date: date, exercises: exs, activities: acts, notes: notes.trim() });
+      if (!exs.length && !cardio.length && !acts.length) { showToast('Add at least one exercise or activity'); return; }
+      logs.push({ id: uid(), date: date, exercises: exs, cardio: cardio, activities: acts, notes: notes.trim() });
       save();
       logExRows = [];
+      logCardioRows = [];
       logActRows = [];
       renderLogExRows();
+      renderLogCardioRows();
       renderLogActRows();
       document.getElementById('log-notes').value = '';
       showToast('Workout saved! 💪');
