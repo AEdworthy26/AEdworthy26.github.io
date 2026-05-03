@@ -172,6 +172,8 @@
 
   /* ── on page load: pull then reload once if data changed ── */
   window.addEventListener('DOMContentLoaded', function () {
+    var _tok = getToken();
+    if (_tok) setCookie(TOKEN_KEY, _tok, 365); // rolling expiry — resets on every visit
     if (!getToken()) {
       injectSyncWarning('Cloud sync is not active &mdash; your data is only stored in this browser and could be lost if it is cleared.');
       return;
