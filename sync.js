@@ -148,18 +148,64 @@
 
   /* ── on page load: pull then reload once if data changed ── */
   window.addEventListener('DOMContentLoaded', function () {
-    if (!getToken()) return;
+    if (!getToken()) {
+      injectSyncWarning('Cloud sync is not active &mdash; your data is only stored in this browser and could be lost if it is cleared.');
+      return;
+    }
     var alreadyReloaded = sessionStorage.getItem(RELOAD_FLAG);
     doPull(function (ok, reason) {
       if (ok && reason === 'updated' && !alreadyReloaded) {
         sessionStorage.setItem(RELOAD_FLAG, '1');
         window.location.reload();
+      } else if (!ok) {
+        var last = _origGet(LAST_SYNC_KEY);
+        var daysMsg = '';
+        if (last) {
+          var days = Math.floor((Date.now() - new Date(last).getTime()) / 86400000);
+          if (days >= 1) daysMsg = ' Last successful backup was ' + days + ' day' + (days === 1 ? '' : 's') + ' ago.';
+        } else {
+          daysMsg = ' No successful backup on record.';
+        }
+        injectSyncWarning('Sync is failing &mdash; your data is not being backed up.' + daysMsg);
+        updateSyncUI('error');
       } else {
         updateSyncUI('synced');
         sessionStorage.removeItem(RELOAD_FLAG);
       }
     });
   });
+
+  /* ── sync health warning banner ── */
+  function injectSyncWarning(msg) {
+    if (document.getElementById('ph-sync-warning')) return;
+    var el = document.createElement('div');
+    el.id = 'ph-sync-warning';
+    el.style.cssText = 'background:#7a1a1a;color:#fff;padding:0.65rem 1.4rem;text-align:center;font-size:0.82rem;font-family:sans-serif;position:sticky;top:0;z-index:99999;line-height:1.6;';
+    el.innerHTML = '<strong>⚠ Sync warning:</strong> ' + msg + ' &mdash; <a href="/personal_hub.html" style="color:#ffd;text-underline-offset:2px;">Go to Hub to fix →</a>';
+    if (document.body) {
+      document.body.insertBefore(el, document.body.firstChild);
+    }
+  }
+
+  /* ── backup download: all SYNC_KEYS → timestamped JSON file ── */
+  function doDownloadBackup() {
+    var data = { _exported: new Date().toISOString(), _keys: SYNC_KEYS };
+    SYNC_KEYS.forEach(function (k) {
+      var v = _origGet(k);
+      if (v !== null) {
+        try { data[k] = JSON.parse(v); } catch (e) { data[k] = v; }
+      }
+    });
+    var blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = 'personal-hub-backup-' + new Date().toISOString().slice(0, 10) + '.json';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  }
 
   /* ── push on tab close / navigation away (keepalive so browser doesn't kill it) ── */
   window.addEventListener('beforeunload', function () { doPush(true); });
@@ -196,8 +242,9 @@
         }
       });
     },
-    push:    function() { doPush(); },
-    pull:    doPull,
-    status:  updateSyncUI
+    push:           function() { doPush(); },
+    pull:           doPull,
+    status:         updateSyncUI,
+    downloadBackup: doDownloadBackup
   };
 })();
