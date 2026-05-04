@@ -902,7 +902,7 @@ RULES:
 - Content blocks: mix of paragraphs, headings, callout (APC tips with worked examples), and key_term blocks
 - At least 10 content blocks
 - 5 specific technical Q&A pairs an APC assessor would ask this candidate
-- 2-3 news items relevant to the topic from UK housing/planning (plausible recent news)
+- 6 news items: 3 focused on the RP / housing association sector (affordable housing, Homes England, RSH, development finance, RP strategy), and 3 on the wider UK real estate market (commercial property, residential investment, planning policy, PropTech, construction). Each must have a one-sentence body teaser and a summary array of 2 detailed paragraphs for the popup
 
 Output ONLY valid JavaScript. No explanation, no markdown. Start directly with "var RICS_DATA".
 
@@ -941,9 +941,12 @@ var RICS_DATA = {{
     {{ q: "...", a: "..." }}
   ],
   news: [
-    {{ tag: "Topic Tag", headline: "Relevant UK real estate/planning headline", body: "2-3 sentence body." }},
-    {{ tag: "Topic Tag", headline: "...", body: "..." }},
-    {{ tag: "Topic Tag", headline: "...", body: "..." }}
+    {{ tag: "RP / Housing Association", headline: "RP or HA sector headline", body: "One sentence teaser.", summary: ["First detailed paragraph (2-3 sentences).", "Second detailed paragraph (2-3 sentences)."] }},
+    {{ tag: "RP / Housing Association", headline: "...", body: "...", summary: ["...", "..."] }},
+    {{ tag: "RP / Housing Association", headline: "...", body: "...", summary: ["...", "..."] }},
+    {{ tag: "Real Estate Market", headline: "Wider real estate/commercial/planning headline", body: "One sentence teaser.", summary: ["First detailed paragraph (2-3 sentences).", "Second detailed paragraph (2-3 sentences)."] }},
+    {{ tag: "Real Estate Market", headline: "...", body: "...", summary: ["...", "..."] }},
+    {{ tag: "Real Estate Market", headline: "...", body: "...", summary: ["...", "..."] }}
   ]
 }};"""
 
