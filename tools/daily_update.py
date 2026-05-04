@@ -660,9 +660,9 @@ Pick ONE category completely at random — rotate unpredictably across all of th
 Geography, Sport, Science, Nature, Food & Drink, Music, Film & TV, Literature, Art, Architecture, Technology, Medicine, Space & Astronomy, Language & Words, Mythology, Religion & Culture, Law & Justice, Fashion & Design, Economics, British History, World History, British Politics, World Politics, Exploration & Discovery, Philosophy, Animals, Transport, TV Catchphrases, Famous Firsts, Record Breakers, Inventions.
 
 Rules:
-- Be genuinely unpredictable — do not default to famous events or well-known facts.
+- Pitch it at genuine pub quiz level — the kind of question a table of reasonably well-read adults has a fair chance of getting. Not too easy (capital cities, obvious dates) but not specialist trivia either.
 - Ask about specific details: a year, a name, a place, a number, a first — not vague concepts.
-- Vary difficulty freely: some questions should be hard enough to stump people.
+- Avoid obscure or niche facts that only an expert in that field would know. If someone hasn't heard of the subject at all, it's too hard.
 - Do NOT repeat or closely resemble any of these recent questions:
 {avoid_q}
 
