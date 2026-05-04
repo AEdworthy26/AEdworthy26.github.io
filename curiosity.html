@@ -383,7 +383,7 @@
 
     // ── Favourites ────────────────────────────────────────────────────────────
     var CUR_FAVS_KEY = 'ph_curiosity_favs_v1';
-    var CUR_FAV_LABELS = { article: 'Main Article', person: 'Person of the Day', onthisday: 'On This Day' };
+    var CUR_FAV_LABELS = { full: 'Curiosity Corner', article: 'Main Article', person: 'Person of the Day', onthisday: 'On This Day' };
 
     function loadFavs() {
       try { return JSON.parse(localStorage.getItem(CUR_FAVS_KEY) || '[]'); } catch(e) { return []; }
@@ -458,7 +458,11 @@
       if (!fav) return;
       var fd = fav.fullData || null;
       var heroEl = document.getElementById('fm-hero');
-      var heroImg = fd && (fd.image || fd.portrait || '');
+      var heroImg = '';
+      if (fd) {
+        if (fav.type === 'full') heroImg = (fd.article && fd.article.image) || '';
+        else heroImg = fd.image || fd.portrait || '';
+      }
       if (heroImg) { heroEl.style.display = ''; heroEl.innerHTML = '<img src="' + esc(heroImg) + '" alt="" loading="lazy">'; }
       else heroEl.style.display = 'none';
       var typeTag = document.getElementById('fm-type-tag');
@@ -468,7 +472,8 @@
       var subEl = document.getElementById('fm-subtitle');
       var subtitle = '';
       if (fd) {
-        if (fav.type === 'person') subtitle = [fd.lifespan, fd.category].filter(Boolean).join(' · ');
+        if (fav.type === 'full') subtitle = (fd.article && fd.article.subtitle) || '';
+        else if (fav.type === 'person') subtitle = [fd.lifespan, fd.category].filter(Boolean).join(' · ');
         else if (fav.type === 'onthisday') subtitle = fd.date || '';
         else subtitle = fd.subtitle || '';
       }
@@ -476,6 +481,26 @@
       var contentHTML = '';
       if (!fd) {
         contentHTML = '<p style="color:#888;font-style:italic">Full content not available — saved before article storage was added.</p>';
+      } else if (fav.type === 'full') {
+        var artFd = fd.article || {};
+        var artBlocks = Array.isArray(artFd.content) ? artFd.content : (artFd.content || '').split(/\n+/).filter(Boolean).map(function(t){ return { type:'paragraph', text:t }; });
+        contentHTML = artBlocks.map(function(b){ return b.type === 'heading' ? '<h3>' + esc(b.text) + '</h3>' : '<p>' + esc(b.text) + '</p>'; }).join('');
+        if (fd.person) {
+          var pFd = fd.person;
+          contentHTML += '<hr style="margin:1.5rem 0;border:none;border-top:1px solid #e5e7eb">'
+            + '<p style="font-weight:700;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--curiosity);margin-bottom:0.5rem">Person of the Day</p>'
+            + '<p style="font-family:\'Playfair Display\',serif;font-weight:700;font-size:1rem;margin-bottom:0.3rem">' + esc(pFd.name) + '</p>';
+          if (pFd.lifespan || pFd.category) contentHTML += '<p style="font-size:0.75rem;color:#888;margin-bottom:0.5rem">' + esc([pFd.lifespan, pFd.category].filter(Boolean).join(' · ')) + '</p>';
+          contentHTML += (pFd.bio || '').split(/\n+/).filter(Boolean).map(function(t){ return '<p>' + esc(t) + '</p>'; }).join('');
+        }
+        if (fd.onthisday) {
+          var oFd = fd.onthisday;
+          contentHTML += '<hr style="margin:1.5rem 0;border:none;border-top:1px solid #e5e7eb">'
+            + '<p style="font-weight:700;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--curiosity);margin-bottom:0.5rem">On This Day</p>';
+          if (oFd.date) contentHTML += '<p style="font-size:0.75rem;color:#888;margin-bottom:0.3rem">' + esc(oFd.date) + '</p>';
+          if (oFd.headline) contentHTML += '<p style="font-family:\'Playfair Display\',serif;font-weight:700;font-size:1rem;margin-bottom:0.5rem">' + esc(oFd.headline) + '</p>';
+          contentHTML += (oFd.summary || '').split(/\n+/).filter(Boolean).map(function(t){ return '<p>' + esc(t) + '</p>'; }).join('');
+        }
       } else if (fav.type === 'article') {
         var blocks = Array.isArray(fd.content) ? fd.content : (fd.content || '').split(/\n+/).filter(Boolean).map(function(t){ return { type:'paragraph', text:t }; });
         contentHTML = blocks.map(function(b){ return b.type === 'heading' ? '<h3>' + esc(b.text) + '</h3>' : '<p>' + esc(b.text) + '</p>'; }).join('');
@@ -526,7 +551,7 @@
       + '<div class="article-eyebrow">'
       +   '<span class="article-tag">Main Article</span>'
       +   (a.readTime ? '<span class="article-readtime">&#128337; ' + esc(a.readTime) + ' read</span>' : '')
-      +   '<button class="fav-save-btn" data-favtype="article" onclick="window._saveCurFav(\'article\')">&#9733; Save</button>'
+      + ''
       + '</div>'
       + '<h2 class="article-title">' + esc(a.title) + '</h2>'
       + (a.subtitle ? '<p class="article-subtitle">' + esc(a.subtitle) + '</p>' : '')
@@ -548,7 +573,7 @@
     }).join('');
 
     var potdHTML =
-      '<div class="section-divider"><div class="section-divider-rule"></div><span class="section-divider-label">Person of the Day</span><div class="section-divider-rule"></div><button class="fav-save-btn" data-favtype="person" onclick="window._saveCurFav(\'person\')">&#9733; Save</button></div>'
+      '<div class="section-divider"><div class="section-divider-rule"></div><span class="section-divider-label">Person of the Day</span><div class="section-divider-rule"></div></div>'
       + '<section class="potd-wrap">'
       + '<div class="potd-grid">'
       +   '<div class="potd-portrait">' + portraitHTML + '</div>'
@@ -580,7 +605,7 @@
       : '';
 
     var otdHTML =
-      '<div class="section-divider"><div class="section-divider-rule"></div><span class="section-divider-label">On This Day</span><div class="section-divider-rule"></div><button class="fav-save-btn" data-favtype="onthisday" onclick="window._saveCurFav(\'onthisday\')">&#9733; Save</button></div>'
+      '<div class="section-divider"><div class="section-divider-rule"></div><span class="section-divider-label">On This Day</span><div class="section-divider-rule"></div></div>'
       + '<section class="otd-wrap">'
       + '<div class="otd-card">'
       + '<div class="otd-card-inner' + (hasImage ? ' has-image' : '') + '">'
@@ -597,7 +622,10 @@
     // ── Page header ──────────────────────────────────────────────────────────
     var pageHeaderHTML =
       '<div class="page-header">'
-      + '<div class="page-header-meta">Curiosity Corner &nbsp;&bull;&nbsp; ' + fmtDate(data.date) + '</div>'
+      + '<div class="page-header-meta" style="display:flex;align-items:center;justify-content:space-between;">'
+      +   '<span>Curiosity Corner &nbsp;&bull;&nbsp; ' + fmtDate(data.date) + '</span>'
+      +   '<button class="fav-save-btn" data-favtype="full" onclick="window._saveCurFav(\'full\')">&#9733; Save</button>'
+      + '</div>'
       + '<h1>Curiosity Corner</h1>'
       + '<p class="standfirst">Daily deep dives into history, ancient civilisations, politics, science, sport, and the ideas that shaped our world.</p>'
       + '</div>';
@@ -608,6 +636,7 @@
     output.innerHTML = pageHeaderHTML + articleHTML + potdHTML + otdHTML + footerHTML;
 
     window._curFavData = {
+      full:      { title: a.title, contentDate: data.date, fullData: { article: { title: a.title, subtitle: a.subtitle || '', image: a.image || '', content: a.content }, person: { name: p.name, lifespan: p.lifespan || '', category: p.category || '', bio: p.bio || '', image: p.image || '' }, onthisday: { date: o.date, headline: o.headline, summary: o.summary || '', image: o.image || '' } } },
       article:   { title: a.title, contentDate: data.date, fullData: { title: a.title, subtitle: a.subtitle || '', image: a.image || '', content: a.content } },
       person:    { title: p.name,  contentDate: data.date, fullData: { name: p.name, lifespan: p.lifespan || '', category: p.category || '', bio: p.bio || '', image: p.image || '' } },
       onthisday: { title: o.headline, contentDate: data.date, fullData: { date: o.date, headline: o.headline, summary: o.summary || '', image: o.image || '' } }

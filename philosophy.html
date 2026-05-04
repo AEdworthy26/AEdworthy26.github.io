@@ -404,7 +404,7 @@
 
     // ── Favourites ────────────────────────────────────────────────────────────
     var PHILO_FAVS_KEY = 'ph_philosophy_favs_v1';
-    var PHILO_FAV_LABELS = { theory: 'Theory of the Day', philosopher: 'Philosopher of the Day' };
+    var PHILO_FAV_LABELS = { full: 'Philosophy Corner', theory: 'Theory of the Day', philosopher: 'Philosopher of the Day' };
 
     function loadPhiloFavs() {
       try { return JSON.parse(localStorage.getItem(PHILO_FAVS_KEY) || '[]'); } catch(e) { return []; }
@@ -479,7 +479,11 @@
       if (!fav) return;
       var fd = fav.fullData || null;
       var heroEl = document.getElementById('fm-hero');
-      var heroImg = fd && (fd.image || '');
+      var heroImg = '';
+      if (fd) {
+        if (fav.type === 'full') heroImg = (fd.theory && fd.theory.image) || '';
+        else heroImg = fd.image || '';
+      }
       if (heroImg) { heroEl.style.display = ''; heroEl.innerHTML = '<img src="' + esc(heroImg) + '" alt="" loading="lazy">'; }
       else heroEl.style.display = 'none';
       var typeTag = document.getElementById('fm-type-tag');
@@ -489,13 +493,62 @@
       var subEl = document.getElementById('fm-subtitle');
       var subtitle = '';
       if (fd) {
-        if (fav.type === 'philosopher') subtitle = [fd.lifespan, fd.category].filter(Boolean).join(' · ');
+        if (fav.type === 'full') subtitle = (fd.theory && fd.theory.subtitle) || '';
+        else if (fav.type === 'philosopher') subtitle = [fd.lifespan, fd.category].filter(Boolean).join(' · ');
         else subtitle = fd.subtitle || '';
       }
       if (subtitle) { subEl.textContent = subtitle; subEl.style.display = ''; } else subEl.style.display = 'none';
       var contentHTML = '';
       if (!fd) {
         contentHTML = '<p style="color:#888;font-style:italic">Full content not available — saved before article storage was added.</p>';
+      } else if (fav.type === 'full') {
+        var thFd = fd.theory || {};
+        var thBlocks = Array.isArray(thFd.content) ? thFd.content : (thFd.content || '').split(/\n+/).filter(Boolean).map(function(t){ return { type:'paragraph', text:t }; });
+        contentHTML = thBlocks.map(function(b){
+          if (b.type === 'heading') return '<h3>' + esc(b.text) + '</h3>';
+          if (b.type === 'quote') return '<div style="border-left:3px solid var(--philo);padding:0.5rem 1rem;margin:0.6rem 0;font-style:italic;opacity:0.85"><p>' + esc(b.text) + '</p>' + (b.attribution ? '<p style="font-size:0.75rem;margin-top:0.25rem;opacity:0.7">— ' + esc(b.attribution) + '</p>' : '') + '</div>';
+          return '<p>' + esc(b.text) + '</p>';
+        }).join('');
+        if (Array.isArray(thFd.takeaways) && thFd.takeaways.length) {
+          contentHTML += '<hr style="margin:1.2rem 0;border:none;border-top:1px solid #e5e7eb"><p style="font-weight:700;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.1em;color:#555;margin-bottom:0.6rem">Key Takeaways</p>'
+            + thFd.takeaways.map(function(t){ return '<p style="padding-left:0.9rem;border-left:2px solid #e5e7eb">' + esc(t) + '</p>'; }).join('');
+        }
+        if (Array.isArray(fd.counterTheories) && fd.counterTheories.length) {
+          contentHTML += '<hr style="margin:1.5rem 0;border:none;border-top:1px solid #e5e7eb">'
+            + '<p style="font-weight:700;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.1em;color:#555;margin-bottom:0.6rem">Critiques &amp; Counterarguments</p>';
+          fd.counterTheories.forEach(function(ct) {
+            contentHTML += '<p style="font-family:\'Playfair Display\',serif;font-weight:700;font-size:0.95rem;margin:0.8rem 0 0.3rem">' + esc(ct.philosopher) + '</p>';
+            if (ct.period || ct.school) contentHTML += '<p style="font-size:0.72rem;color:#888;margin-bottom:0.4rem">' + esc([ct.period, ct.school].filter(Boolean).join(' · ')) + '</p>';
+            if (Array.isArray(ct.argument)) {
+              ct.argument.forEach(function(b) {
+                if (b.type === 'heading') contentHTML += '<p style="font-weight:700;font-size:0.85rem;margin:0.4rem 0 0.2rem">' + esc(b.text) + '</p>';
+                else contentHTML += '<p>' + esc(b.text) + '</p>';
+              });
+            }
+            if (ct.contrast) contentHTML += '<p style="border-left:3px solid var(--philo);padding:0.5rem 0.8rem;margin:0.6rem 0;font-style:italic;font-size:0.88rem">' + esc(ct.contrast) + '</p>';
+          });
+        }
+        if (fd.whyItMatters) {
+          var wtm = fd.whyItMatters;
+          contentHTML += '<hr style="margin:1.5rem 0;border:none;border-top:1px solid #e5e7eb">'
+            + '<p style="font-weight:700;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.1em;color:#555;margin-bottom:0.6rem">Why It Matters Today</p>';
+          var wtmBlocks = Array.isArray(wtm.content) ? wtm.content : [];
+          if (wtmBlocks.length) {
+            contentHTML += wtmBlocks.map(function(b){ return '<p>' + esc(b.text || b) + '</p>'; }).join('');
+          } else if (wtm.text) {
+            contentHTML += wtm.text.split(/\n+/).filter(Boolean).map(function(t){ return '<p>' + esc(t) + '</p>'; }).join('');
+          }
+        }
+        if (fd.philosopher) {
+          var phFd = fd.philosopher;
+          contentHTML += '<hr style="margin:1.5rem 0;border:none;border-top:1px solid #e5e7eb">'
+            + '<p style="font-weight:700;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--philo);margin-bottom:0.5rem">Philosopher of the Day</p>'
+            + '<p style="font-family:\'Playfair Display\',serif;font-weight:700;font-size:1rem;margin-bottom:0.3rem">' + esc(phFd.name) + '</p>';
+          if (phFd.lifespan || phFd.category) contentHTML += '<p style="font-size:0.75rem;color:#888;margin-bottom:0.5rem">' + esc([phFd.lifespan, phFd.category].filter(Boolean).join(' · ')) + '</p>';
+          contentHTML += (phFd.bio || '').split(/\n+/).filter(Boolean).map(function(t){ return '<p>' + esc(t) + '</p>'; }).join('');
+          if (phFd.contributions) contentHTML += '<p style="font-weight:700;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.1em;color:#555;margin:1rem 0 0.4rem">Main Contributions</p><p>' + esc(phFd.contributions) + '</p>';
+          if (phFd.rivals) contentHTML += '<p style="font-weight:700;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.1em;color:#555;margin:1rem 0 0.4rem">Key Rivals &amp; Critics</p><p>' + esc(phFd.rivals) + '</p>';
+        }
       } else if (fav.type === 'theory') {
         var blocks = Array.isArray(fd.content) ? fd.content : (fd.content || '').split(/\n+/).filter(Boolean).map(function(t){ return { type:'paragraph', text:t }; });
         contentHTML = blocks.map(function(b){
@@ -553,7 +606,10 @@
     // ── Page header ───────────────────────────────────────────────────────────
     var pageHeaderHTML =
       '<div class="page-header">'
-      + '<div class="page-header-meta">Philosophy Corner &nbsp;&bull;&nbsp; ' + fmtDate(data.date) + '</div>'
+      + '<div class="page-header-meta" style="display:flex;align-items:center;justify-content:space-between;">'
+      +   '<span>Philosophy Corner &nbsp;&bull;&nbsp; ' + fmtDate(data.date) + '</span>'
+      +   '<button class="fav-save-btn" data-favtype="full" onclick="window._savePhiloFav(\'full\')">&#9733; Save</button>'
+      + '</div>'
       + '<h1>Philosophy Corner</h1>'
       + '<p class="standfirst">Daily philosophical theory, rival perspectives, and the thinkers who shaped how we understand reality, morality, and the human condition.</p>'
       + '</div>';
@@ -571,7 +627,7 @@
       + '<div class="article-eyebrow">'
       +   '<span class="article-tag">Theory of the Day</span>'
       +   (mt.readTime ? '<span class="article-readtime">&#128337; ' + esc(mt.readTime) + ' read</span>' : '')
-      +   '<button class="fav-save-btn" data-favtype="theory" onclick="window._savePhiloFav(\'theory\')">&#9733; Save</button>'
+      + ''
       + '</div>'
       + '<h2 class="article-title">' + esc(mt.title) + '</h2>'
       + (mt.subtitle ? '<p class="article-subtitle">' + esc(mt.subtitle) + '</p>' : '')
@@ -678,7 +734,7 @@
       : '';
 
     var potdHTML =
-      '<div class="section-divider"><div class="section-divider-rule"></div><span class="section-divider-label">Philosopher of the Day</span><div class="section-divider-rule"></div><button class="fav-save-btn" data-favtype="philosopher" onclick="window._savePhiloFav(\'philosopher\')">&#9733; Save</button></div>'
+      '<div class="section-divider"><div class="section-divider-rule"></div><span class="section-divider-label">Philosopher of the Day</span><div class="section-divider-rule"></div></div>'
       + '<section class="potd-wrap">'
       + '<div class="potd-grid">'
       +   '<div class="potd-portrait">' + portraitHTML + '</div>'
@@ -702,6 +758,7 @@
     output.innerHTML = pageHeaderHTML + articleHTML + taHTML + ctHTML + wtmHTML + potdHTML + footerHTML;
 
     window._philoFavData = {
+      full:        { title: mt.title, contentDate: data.date, fullData: { theory: { title: mt.title, subtitle: mt.subtitle || '', image: mt.image || '', content: mt.content, takeaways: data.keyTakeaways || [] }, counterTheories: data.counterTheories || [], whyItMatters: data.whyItMatters || null, philosopher: { name: p.name, lifespan: p.lifespan || '', category: p.category || '', bio: p.bio || '', image: p.image || '', contributions: p.contributions || '', rivals: p.rivals || '' } } },
       theory:      { title: mt.title, contentDate: data.date, fullData: { title: mt.title, subtitle: mt.subtitle || '', image: mt.image || '', content: mt.content, takeaways: data.keyTakeaways || [] } },
       philosopher: { title: p.name,   contentDate: data.date, fullData: { name: p.name, lifespan: p.lifespan || '', category: p.category || '', bio: p.bio || '', image: p.image || '', contributions: p.contributions || '', rivals: p.rivals || '' } }
     };
