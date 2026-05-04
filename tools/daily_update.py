@@ -1297,7 +1297,7 @@ def gen_recipes():
     avoid_recipes = '\n'.join(f'- {t}' for t in recent_recipe_titles) if recent_recipe_titles else 'None'
     prompt = f"""Generate exactly 3 recipe suggestions for today ({TODAY}) for a personal recipe website.
 The user loves: bold flavours, European and world cuisines, seasonal ingredients, and genuinely delicious food.
-The recipes should be high quality and taste impressive, but accessible to a confident home cook.
+The recipes should be genuinely delicious and feel special, but achievable for an everyday home cook — no cheffy techniques like spherification, sous vide, or complex pastry work. Think flavour-forward dishes that come together without specialist equipment or hard-to-find ingredients. Impressive results from straightforward cooking.
 
 VARIETY IS ESSENTIAL — the 3 recipes must span completely different cuisines, protein sources, and meal styles. Do NOT repeat ingredients, proteins, or cuisines across the 3 recipes today.
 
