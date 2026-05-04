@@ -826,7 +826,28 @@ def gen_rics():
         'https://images.unsplash.com/photo-1574920162043-b872873f19bc?w=1200&auto=format&fit=crop',
     ]
 
-    prompt = f"""Generate a daily RICS APC study lesson for {TODAY} for the Planning and Development (P&D) pathway.
+    def topic_is_duplicate(topic):
+        """Return matching recent topic string if too similar, else None."""
+        t = topic.lower()
+        for rt in recent_topics:
+            rt_lower = rt.lower()
+            if rt_lower[:55] in t or t[:55] in rt_lower:
+                return rt
+            rt_words = set(rt_lower.split()[:8])
+            gen_words = set(t.split()[:8])
+            if len(rt_words & gen_words) >= 4:
+                return rt
+        return None
+
+    def build_prompt(extra_notice=''):
+        forbidden_block = f"""⛔ FORBIDDEN — DO NOT USE ANY OF THESE TOPICS ⛔
+The topics below have already been covered. Choosing any of them — or any topic that covers the same ground from a different angle — is NOT ALLOWED. This is a hard rule, not a suggestion.
+{avoid_topics}
+{extra_notice}
+KEYWORD BLOCK — these subjects appeared recently; do NOT cover them today even with a different title: {keyword_block_str}
+
+Before writing a single word of JavaScript, verify the topic you intend to use does NOT appear in the list above and shares NO significant keywords with any item in the list. If it does, stop and pick something entirely different."""
+        return f"""Generate a daily RICS APC study lesson for {TODAY} for the Planning and Development (P&D) pathway.
 
 CANDIDATE PROFILE:
 Alfie is an Assistant Development Manager at Latimer by Clarion Housing Group, the development arm of one of the UK's largest housing associations. His role spans the full development lifecycle on residential-led, mixed-tenure schemes (market sale, shared ownership, affordable/social rent). Key areas of his role include:
@@ -849,11 +870,7 @@ Alfie is an Assistant Development Manager at Latimer by Clarion Housing Group, t
 
 Affordable housing and RP context is a recurring theme but NOT the only one. Contractor/procurement is NOT part of his role.
 
-RECENTLY COVERED TOPICS (do NOT repeat these — hard rule):
-{avoid_topics}
-
-KEYWORD BLOCK — these subjects appeared recently, do NOT cover them today even with a different title:
-{keyword_block_str}
+{forbidden_block}
 
 RECENTLY COVERED COMPETENCIES in last 14 days (try to avoid repeating — rotate to something different):
 {avoid_competencies}
@@ -930,7 +947,29 @@ var RICS_DATA = {{
   ]
 }};"""
 
-    js = extract_js(call_claude(prompt, timeout=420, max_tokens=8192))
+    # Retry loop — up to 3 attempts to get a non-duplicate topic
+    last_js = None
+    for attempt in range(3):
+        extra_notice = ''
+        if attempt > 0:
+            extra_notice = (f'⚠️ YOUR PREVIOUS ATTEMPT CHOSE A FORBIDDEN TOPIC. '
+                            f'You MUST pick something completely different. '
+                            f'Do NOT write about planning conditions, Grampian, pre-commencement, '
+                            f'S106, S73, BNG, viability, or anything already on the forbidden list.\n')
+        js = extract_js(call_claude(build_prompt(extra_notice), timeout=420, max_tokens=8192))
+        if not js:
+            return last_js
+        last_js = js
+        topic_m = re.search(r'topic:\s*"([^"]+)"', js)
+        if topic_m:
+            dup = topic_is_duplicate(topic_m.group(1))
+            if dup:
+                log(f'  [retry {attempt+1}/3] Duplicate topic "{topic_m.group(1)[:60]}"'
+                    f' ≈ "{dup[:60]}" — retrying')
+                continue
+            log(f'  ✓ Topic accepted (attempt {attempt+1}): {topic_m.group(1)[:70]}')
+        break
+    js = last_js
     if not js:
         return None
     # Inject a topic-relevant image from Unsplash
