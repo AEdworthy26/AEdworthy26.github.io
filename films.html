@@ -317,6 +317,42 @@
     .ticker-track a:hover { color: #e8000d; text-decoration: none; cursor: pointer; }
     .ticker-track .ticker-sep { color: #e8000d; font-size: 1rem; font-weight: 700; flex-shrink: 0; line-height: 1; }
     @keyframes ticker-scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+    /* ────────────────── WATCHLIST ────────────────── */
+    .save-log-btn {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      margin-top: 1rem;
+      padding: 0.55rem 1.4rem;
+      background: transparent; color: var(--dark-text);
+      border: 1.5px solid rgba(210,200,180,0.3);
+      font-family: inherit; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.04em;
+      border-radius: 6px; cursor: pointer;
+      transition: background 0.15s, border-color 0.15s;
+    }
+    .save-log-btn:hover:not(:disabled) { background: rgba(255,255,255,0.07); border-color: rgba(210,200,180,0.6); }
+    .save-log-btn:disabled { cursor: default; }
+    .watchlist-section { max-width: 900px; margin: 3rem auto 2rem; padding: 0 1.5rem; }
+    .watchlist-section h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.5rem; font-weight: 700; margin-bottom: 1.2rem;
+      border-bottom: 1px solid rgba(210,200,180,0.12); padding-bottom: 0.6rem;
+    }
+    .watchlist-item {
+      display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem;
+      padding: 0.9rem 0; border-bottom: 1px solid rgba(210,200,180,0.08);
+    }
+    .watchlist-item-info { flex: 1; }
+    .watchlist-item-title { font-weight: 700; font-size: 1rem; }
+    .watchlist-item-meta { font-size: 0.78rem; color: var(--dark-muted); margin-top: 0.2rem; }
+    .watchlist-item-actions { display: flex; gap: 0.5rem; align-items: center; flex-shrink: 0; }
+    .wl-btn {
+      background: none; border: 1px solid rgba(210,200,180,0.2);
+      color: var(--dark-muted); font-family: inherit; font-size: 0.72rem;
+      padding: 0.3rem 0.7rem; border-radius: 4px; cursor: pointer;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .wl-btn:hover { border-color: rgba(210,200,180,0.5); color: var(--dark-text); }
+    .wl-btn.watched { color: var(--gold); border-color: var(--gold-dim); }
   </style>
 </head>
 <body>
@@ -408,6 +444,9 @@
 
   <!-- populated by JS -->
   <div id="js-film"></div>
+
+  <!-- Watchlist (populated by JS) -->
+  <div id="js-watchlist"></div>
 
   <!-- ── FOOTER ── -->
   <footer class="site-footer">
@@ -515,6 +554,7 @@
   }
 
   function buildFilm(film, idx) {
+    window._currentFilm = film;
     var el = document.getElementById('js-film');
     var imgHTML = coverImgHTML(film.posterUrl, filmSVG(film, idx));
     el.innerHTML = '<section class="rec-feature rec-film">'
@@ -531,6 +571,10 @@
       + '<div class="rt-bar-track"><div class="rt-bar-fill" data-w="' + film.rating + '%"></div></div>'
       + '<span class="rating-source">' + (film.ratingExtra || '') + '</span>'
       + '</div></div>'
+      + '<button id="film-save-btn" class="save-log-btn" onclick="saveFilm()"'
+      + (isFilmSaved(film.title) ? ' disabled style="opacity:0.6"' : '') + '>'
+      + (isFilmSaved(film.title) ? '✓ Added to Watchlist' : '+ Add to Watchlist')
+      + '</button>'
       + '</div>'
       + '<div class="rec-image"><div class="rec-cover-wrap">' + imgHTML + '</div></div>'
       + '</section>';
@@ -591,7 +635,73 @@
   var activeFilm = (typeof FILMS_DATA !== 'undefined' && FILMS_DATA && FILMS_DATA.film)
     ? FILMS_DATA.film : FILMS[filmIdx];
 
+  // ── Film watchlist ─────────────────────────────────────────
+  var FL_LOG_KEY = 'ph_films_log_v1';
+  function loadFilmsLog() {
+    try { return JSON.parse(localStorage.getItem(FL_LOG_KEY) || '[]'); } catch(_) { return []; }
+  }
+  function saveFilmsLog(log) {
+    try { localStorage.setItem(FL_LOG_KEY, JSON.stringify(log)); } catch(_) {}
+  }
+  function isFilmSaved(title) {
+    return loadFilmsLog().some(function(f) { return f.title === title; });
+  }
+  function saveFilm() {
+    var film = window._currentFilm;
+    if (!film || isFilmSaved(film.title)) return;
+    var log = loadFilmsLog();
+    log.unshift({
+      id: Date.now().toString(36),
+      title: film.title,
+      director: film.director,
+      year: film.year,
+      genres: film.genres || [],
+      watched: false,
+      addedAt: Date.now()
+    });
+    saveFilmsLog(log);
+    var btn = document.getElementById('film-save-btn');
+    if (btn) { btn.textContent = '✓ Added to Watchlist'; btn.disabled = true; btn.style.opacity = '0.6'; }
+    renderWatchlist();
+  }
+  function removeFilm(id) {
+    saveFilmsLog(loadFilmsLog().filter(function(f) { return f.id !== id; }));
+    renderWatchlist();
+    var film = window._currentFilm;
+    if (film && !isFilmSaved(film.title)) {
+      var btn = document.getElementById('film-save-btn');
+      if (btn) { btn.textContent = '+ Add to Watchlist'; btn.disabled = false; btn.style.opacity = ''; }
+    }
+  }
+  function toggleWatched(id) {
+    saveFilmsLog(loadFilmsLog().map(function(f) {
+      return f.id === id ? Object.assign({}, f, { watched: !f.watched }) : f;
+    }));
+    renderWatchlist();
+  }
+  function renderWatchlist() {
+    var el = document.getElementById('js-watchlist');
+    if (!el) return;
+    var log = loadFilmsLog();
+    if (!log.length) { el.innerHTML = ''; return; }
+    var rows = log.map(function(f) {
+      var t = f.title.replace(/&/g,'&amp;').replace(/</g,'&lt;');
+      return '<div class="watchlist-item">'
+        + '<div class="watchlist-item-info">'
+        + '<div class="watchlist-item-title">' + t + '</div>'
+        + '<div class="watchlist-item-meta">' + (f.director || '') + ' &middot; ' + (f.year || '') + '</div>'
+        + '</div>'
+        + '<div class="watchlist-item-actions">'
+        + '<button class="wl-btn' + (f.watched ? ' watched' : '') + '" onclick="toggleWatched(\'' + f.id + '\')">'
+        + (f.watched ? '✓ Watched' : 'Mark watched') + '</button>'
+        + '<button class="wl-btn" onclick="removeFilm(\'' + f.id + '\')">&times; Remove</button>'
+        + '</div></div>';
+    });
+    el.innerHTML = '<div class="watchlist-section"><h2>My Watchlist</h2>' + rows.join('') + '</div>';
+  }
+
   buildFilm(activeFilm, filmIdx);
+  renderWatchlist();
 
   // Fetch live rating
   fetchFilmRating(activeFilm, function(data) {

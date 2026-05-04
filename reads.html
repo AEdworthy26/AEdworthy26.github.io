@@ -402,6 +402,20 @@
     .ticker-track a:hover { color: #e8000d; text-decoration: none; cursor: pointer; }
     .ticker-track .ticker-sep { color: #e8000d; font-size: 1rem; font-weight: 700; flex-shrink: 0; line-height: 1; }
     @keyframes ticker-scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+    /* ────────────────── SAVE BUTTON ────────────────── */
+    .rec-btn-row { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; margin-top: 0.5rem; }
+    .save-log-btn {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      padding: 0.55rem 1.2rem;
+      background: transparent; color: var(--dark-text);
+      border: 1.5px solid rgba(210,200,180,0.3);
+      font-family: inherit; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.04em;
+      border-radius: 6px; cursor: pointer;
+      transition: background 0.15s, border-color 0.15s;
+    }
+    .save-log-btn:hover:not(:disabled) { background: rgba(255,255,255,0.07); border-color: rgba(210,200,180,0.6); }
+    .save-log-btn:disabled { cursor: default; }
   </style>
 </head>
 <body>
@@ -689,6 +703,7 @@
   }
 
   function buildBook(book, idx) {
+    window._currentBook = book;
     var el = document.getElementById('js-book');
     var imgHTML = coverImgHTML(book.coverUrl, bookSVG(book, idx));
     var amazonUrl = (book.amazonUrl && book.amazonUrl.indexOf('ASIN_HERE') === -1)
@@ -706,7 +721,13 @@
       + starsHTML(book.rating)
       + '<span class="rating-source" style="margin-top:0.2rem;">' + book.ratingSource + ' &nbsp;&middot;&nbsp; ' + (book.ratingCount || '') + ' ratings</span>'
       + '</div></div>'
+      + '<div class="rec-btn-row">'
       + '<a href="' + amazonUrl + '" target="_blank" rel="noopener" class="amazon-btn">Buy on Amazon</a>'
+      + '<button id="book-save-btn" class="save-log-btn" onclick="saveBook()"'
+      + (isBookSaved(book.title) ? ' disabled style="opacity:0.6"' : '') + '>'
+      + (isBookSaved(book.title) ? '✓ Saved to Reading List' : '+ Save to Reading List')
+      + '</button>'
+      + '</div>'
       + '</div>'
       + '<div class="rec-image"><div class="rec-cover-wrap">' + imgHTML + '</div></div>'
       + '</section>';
@@ -851,6 +872,33 @@
     ? READS_DATA.book : BOOKS[bookIdx];
   var activeFilm = (typeof FILMS_DATA !== 'undefined' && FILMS_DATA && FILMS_DATA.film)
     ? FILMS_DATA.film : FILMS[filmIdx];
+
+  // ── Book save ──────────────────────────────────────────────
+  var BK_LOG_KEY = 'personal_hub_books_v2';
+  function loadBookLog() {
+    try { return JSON.parse(localStorage.getItem(BK_LOG_KEY) || '[]'); } catch(_) { return []; }
+  }
+  function isBookSaved(title) {
+    return loadBookLog().some(function(b) { return b.title === title; });
+  }
+  function saveBook() {
+    var book = window._currentBook;
+    if (!book || isBookSaved(book.title)) return;
+    var log = loadBookLog();
+    log.unshift({
+      id: Date.now().toString(36),
+      title: book.title,
+      author: book.author,
+      status: 'Want to read',
+      genre: (book.genres && book.genres[0]) || '',
+      pages: '',
+      cover: book.coverUrl || '',
+      rating: 0
+    });
+    try { localStorage.setItem(BK_LOG_KEY, JSON.stringify(log)); } catch(_) {}
+    var btn = document.getElementById('book-save-btn');
+    if (btn) { btn.textContent = '✓ Saved to Reading List'; btn.disabled = true; btn.style.opacity = '0.6'; }
+  }
 
   buildBook(activeBook, bookIdx);
   loadLiveRatings(activeBook, activeFilm, cachedData);
