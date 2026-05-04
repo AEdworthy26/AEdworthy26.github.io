@@ -1,19 +1,19 @@
 // reads-data.js
-// Auto-updated 2026-05-03 — do not edit manually
+// Auto-updated 2026-05-04 — do not edit manually
 
 var READS_DATA = {
-  date: "2026-05-03",
+  date: "2026-05-04",
   book: {
-    title: "The Botany of Desire: A Plant\'s-Eye View of the World",
-    author: "Michael Pollan",
+    title: "The Corrections",
+    author: "Jonathan Franzen",
     year: 2001,
-    genres: ["Nature", "Science", "Food"],
-    desc: "Michael Pollan flips the script on our relationship with the natural world by arguing that plants have been quietly domesticating us just as surely as we have domesticated them, using four plants — the apple, the tulip, cannabis, and the potato — as his lenses. Each chapter is a deeply researched, elegantly written exploration of a human desire (sweetness, beauty, intoxication, control) and the plant that exploited it to spread across the Earth. Pollan writes with the rare gift of making botanical science feel genuinely thrilling, weaving in history, philosophy, and personal anecdote without ever losing the thread. By the end, the garden feels like a negotiation between species rather than a human triumph, and the ordinary world looks permanently strange and more interesting.",
-    whyRead: "In a moment when questions about food systems, ecology, and our relationship with the non-human world feel more urgent than ever, Pollan\'s witty, paradigm-shifting book is the perfect antidote to anthropocentric tunnel vision.",
+    genres: ["Literary Fiction", "Family Drama", "Social Satire"],
+    desc: "Jonathan Franzen\'s National Book Award-winning novel follows the Lambert family — ageing patriarch Alfred, whose mind is being dismantled by Parkinson\'s, and his three adult children each caught in the wreckage of their own ambitions, marriages, and self-deceptions — as they careen toward one last Christmas reunion. The prose is ferociously intelligent and wickedly funny, skewering the pharmaceutical industry, Wall Street, academia, and the seductive myths of self-improvement all at once. What makes it devastating rather than merely satirical is the tenderness Franzen ultimately extends to these flawed, difficult people: by the end, their struggles feel achingly universal. It is one of the defining American novels of the past quarter-century, as sharp on the dysfunction of institutions as it is on the dysfunction of families.",
+    whyRead: "In an era saturated with anxiety about ageing, belonging, and the gap between who we meant to be and who we became, The Corrections hits harder than ever — and its dark comedy makes the medicine go down beautifully.",
     rating: 3.9,
     ratingSource: "Goodreads",
-    ratingCount: "90,000+",
-    coverUrl: "https://covers.openlibrary.org/b/id/3232846-L.jpg",
-    amazonUrl: "https://www.amazon.co.uk/dp/2746704803"
+    ratingCount: "280,000+",
+    coverUrl: "https://covers.openlibrary.org/b/id/9273701-L.jpg",
+    amazonUrl: "https://www.amazon.co.uk/dp/1841157899"
   }
 };

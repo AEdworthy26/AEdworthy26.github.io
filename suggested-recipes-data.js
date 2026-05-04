@@ -1,210 +1,110 @@
 // suggested-recipes-data.js
-// Auto-updated 2026-05-03 — do not edit manually
+// Auto-updated 2026-05-04 — do not edit manually
 
 window.SUGGESTED_RECIPES = [
   {
     id: "sug1",
-    title: "Peruvian Ají de Gallina with Creamy Walnut Sauce & Yellow Chilli",
-    category: "Dinner",
-    time: "1 hr",
-    serves: "4",
-    desc: "One of Peru\'s most beloved comfort dishes — shredded chicken blanketed in a deeply savoury, golden sauce built from ají amarillo paste, toasted bread, walnuts and Parmesan. It\'s rich, warming and unlike anything else in the world of stews, with a vibrant colour and a gentle heat that lingers beautifully. Serve over white rice with black olives and a hard-boiled egg for the full traditional experience.",
-    emoji: "🇵🇪",
-    image: "https://images.unsplash.com/photo-1619738257761-c929eada245d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxQZXJ1dmlhbiUyMEFqJUMzJUFEJTIwZGUlMjBHYWxsaW5hJTIwd2l0aCUyMENyZWFteSUyMFdhbG51dCUyMFNhdWNlJTIwJTI2JTIwWWVsbG93JTIwQ2hpbGxpJTIwZm9vZCUyMGRpc2h8ZW58MHwwfHx8MTc3Nzc4NTAyMnww&ixlib=rb-4.1.0&q=80&w=1080",
-    ingredientGroups: [
-      {
-        group: "For the chicken",
-        items: [
-          { name: "Bone-in chicken thighs", quantity: 900, unit: "g" },
-          { name: "Chicken stock", quantity: 500, unit: "ml" },
-          { name: "Salt and black pepper", quantity: 0, unit: "to taste" }
-        ]
-      },
-      {
-        group: "For the sauce",
-        items: [
-          { name: "Vegetable oil", quantity: 2, unit: "tbsp" },
-          { name: "White onion, finely diced", quantity: 1, unit: "large" },
-          { name: "Garlic cloves, minced", quantity: 4, unit: "" },
-          { name: "Ají amarillo paste", quantity: 4, unit: "tbsp" },
-          { name: "Turmeric", quantity: 0.5, unit: "tsp" },
-          { name: "White bread, crusts removed", quantity: 3, unit: "slices" },
-          { name: "Whole milk", quantity: 200, unit: "ml" },
-          { name: "Walnuts, toasted", quantity: 80, unit: "g" },
-          { name: "Finely grated Parmesan", quantity: 50, unit: "g" }
-        ]
-      },
-      {
-        group: "To serve",
-        items: [
-          { name: "Cooked white rice", quantity: 0, unit: "to serve" },
-          { name: "Hard-boiled eggs, halved", quantity: 4, unit: "" },
-          { name: "Black olives", quantity: 50, unit: "g" },
-          { name: "Flat-leaf parsley, to garnish", quantity: 0, unit: "handful" }
-        ]
-      }
-    ],
-    substitutes: [
-      {
-        ingredient: "Ají amarillo paste",
-        alternatives: ["Chipotle paste", "Sriracha + pinch of turmeric", "Red chilli paste"]
-      },
-      {
-        ingredient: "Walnuts",
-        alternatives: ["Pecans", "Cashews", "Blanched almonds"]
-      },
-      {
-        ingredient: "Bone-in chicken thighs",
-        alternatives: ["Skinless chicken breasts", "Rotisserie chicken (shredded)"]
-      },
-      {
-        ingredient: "Whole milk",
-        alternatives: ["Evaporated milk", "Oat milk (unsweetened)", "Single cream (diluted)"]
-      }
+    title: "Grilled Halloumi & Roasted Red Pepper Salad with Bulgur, Pomegranate & Mint",
+    category: "Lunch",
+    time: "35 mins",
+    serves: "2",
+    desc: "A vibrant Eastern Mediterranean salad built around golden, squeaky halloumi and smoky sweet peppers on a bed of fluffy bulgur wheat. Jewels of pomegranate, fresh mint and a punchy lemon-sumac dressing bring bold contrast in every mouthful. It\'s satisfying enough to stand alone yet light enough for a spring afternoon.",
+    emoji: "🥗",
+    image: "https://images.unsplash.com/photo-1632446087108-a0034661001d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxHcmlsbGVkJTIwSGFsbG91bWklMjAlMjYlMjBSb2FzdGVkJTIwUmVkJTIwUGVwcGVyJTIwU2FsYWQlMjB3aXRoJTIwQnVsZ3VyJTJDJTIwUG9tZWdyYW5hdGUlMjAlMjYlMjBNaW50JTIwZm9vZCUyMGRpc2h8ZW58MHwwfHx8MTc3Nzg3MTQyOXww&ixlib=rb-4.1.0&q=80&w=1080",
+    ingredients: [
+      { name: "Halloumi, sliced 1cm thick", quantity: 250, unit: "g" },
+      { name: "Bulgur wheat (medium)", quantity: 150, unit: "g" },
+      { name: "Red peppers", quantity: 3, unit: "" },
+      { name: "Pomegranate seeds", quantity: 80, unit: "g" },
+      { name: "Fresh mint leaves", quantity: 15, unit: "g" },
+      { name: "Flat-leaf parsley, roughly chopped", quantity: 10, unit: "g" },
+      { name: "Spring onions, finely sliced", quantity: 3, unit: "" },
+      { name: "Toasted pine nuts", quantity: 40, unit: "g" },
+      { name: "Sumac", quantity: 1.5, unit: "tsp" },
+      { name: "Extra virgin olive oil", quantity: 4, unit: "tbsp" },
+      { name: "Lemon, juice and zest", quantity: 1, unit: "" },
+      { name: "Garlic clove, minced", quantity: 1, unit: "" },
+      { name: "Runny honey", quantity: 1, unit: "tsp" },
+      { name: "Salt and black pepper", quantity: 0, unit: "to taste" }
     ],
     instructions: [
-      "Step 1 — Poach the chicken: place the chicken thighs in a saucepan with the chicken stock and enough water to cover. Bring to a gentle simmer, season well, and poach for 25–30 minutes until cooked through. Remove the chicken, reserve the poaching liquid, then shred the meat finely with two forks, discarding the skin and bones.",
-      "Step 2 — While the chicken poaches, tear the bread into chunks and soak in the warm milk for 5 minutes until fully saturated. Transfer the soaked bread, toasted walnuts, and Parmesan to a blender and blitz to a smooth, thick paste. Set aside.",
-      "Step 3 — Heat the vegetable oil in a wide, deep sauté pan over medium heat. Add the onion and cook gently for 10–12 minutes, stirring often, until completely soft and golden. Add the garlic, ají amarillo paste, and turmeric; cook for 3–4 minutes, stirring constantly, until the paste is fragrant and deepened in colour.",
-      "Step 4 — Pour in 300ml of the reserved poaching liquid and bring to a gentle simmer. Stir in the bread-walnut paste and mix vigorously until the sauce is smooth and homogenous. Simmer for 5–6 minutes, stirring often, until the sauce thickens to a creamy, coating consistency. Add more poaching liquid to loosen if needed.",
-      "Step 5 — Fold the shredded chicken into the sauce and stir well to coat every strand. Taste and adjust seasoning generously — the dish should be savoury, nutty and warmly spiced. Simmer for a final 3–4 minutes together.",
-      "Step 6 — Serve over mounds of white rice, topped with halved hard-boiled eggs and a few black olives. Scatter with flat-leaf parsley and finish with a drizzle of extra ají amarillo paste if you like more heat."
+      "Step 1 — Roast the peppers: Place the whole red peppers directly over a gas flame or under a very hot grill, turning with tongs every 2–3 minutes until completely charred and collapsed all over. Transfer to a bowl, cover tightly with cling film and leave to steam for 10 minutes. Peel away the blackened skins, remove seeds and slice the flesh into thick strips. Reserve any sweet juices in the bowl.",
+      "Step 2 — Cook the bulgur: Place the bulgur in a heatproof bowl and pour over just enough boiling salted water to cover by 1cm. Cover with a plate and leave to absorb for 10–12 minutes. Fluff with a fork, season generously with salt and a drizzle of olive oil, then spread out to cool slightly.",
+      "Step 3 — Make the dressing: Whisk together the olive oil, lemon juice and zest, minced garlic, honey, sumac and a good pinch of salt. Taste — it should be bright, tangy and lightly sweet. Add any reserved pepper juices from the bowl.",
+      "Step 4 — Grill the halloumi: Heat a dry ridged griddle pan or heavy frying pan over high heat until smoking. Pat the halloumi slices dry with kitchen paper. Grill for 2 minutes per side without moving until deep golden char lines appear. Remove immediately — it firms up as it cools so serve promptly.",
+      "Step 5 — Assemble: Toss the bulgur with most of the dressing, the roasted pepper strips, spring onions and herbs. Spread onto a large serving platter. Lay the hot halloumi slices over the top, scatter over the pomegranate seeds and toasted pine nuts, drizzle with the remaining dressing and finish with an extra pinch of sumac."
     ]
   },
   {
     id: "sug2",
-    title: "Griddled Halloumi & Roasted Red Pepper Salad with Freekeh, Mint & Pomegranate Molasses",
-    category: "Lunch",
-    time: "35 mins",
-    serves: "2",
-    desc: "A vibrant, Middle Eastern-inspired grain salad that punches well above its weight — smoky freekeh forms the base, topped with char-marked halloumi, sweet roasted peppers, toasted almonds and a tangle of fresh herbs. The dressing of pomegranate molasses, lemon and cumin ties everything together with a sharp, deeply fruity intensity. Hearty enough to satisfy but light enough to feel virtuous.",
-    emoji: "🫙",
-    image: "https://images.unsplash.com/photo-1669472546359-418a98630699?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxHcmlkZGxlZCUyMEhhbGxvdW1pJTIwJTI2JTIwUm9hc3RlZCUyMFJlZCUyMFBlcHBlciUyMFNhbGFkJTIwd2l0aCUyMEZyZWVrZWglMkMlMjBNaW50JTIwJTI2JTIwUG9tZWdyYW5hdGUlMjBNb2xhc3NlcyUyMGZvb2QlMjBkaXNofGVufDB8MHx8fDE3Nzc3ODUwMjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    ingredientGroups: [
-      {
-        group: "For the freekeh",
-        items: [
-          { name: "Cracked freekeh", quantity: 150, unit: "g" },
-          { name: "Vegetable stock", quantity: 400, unit: "ml" }
-        ]
-      },
-      {
-        group: "For the dressing",
-        items: [
-          { name: "Pomegranate molasses", quantity: 2, unit: "tbsp" },
-          { name: "Lemon, juiced", quantity: 1, unit: "" },
-          { name: "Extra virgin olive oil", quantity: 3, unit: "tbsp" },
-          { name: "Ground cumin", quantity: 0.75, unit: "tsp" },
-          { name: "Smoked paprika", quantity: 0.5, unit: "tsp" },
-          { name: "Garlic clove, finely grated", quantity: 1, unit: "" },
-          { name: "Salt and black pepper", quantity: 0, unit: "to taste" }
-        ]
-      },
-      {
-        group: "To assemble",
-        items: [
-          { name: "Halloumi, sliced 1cm thick", quantity: 250, unit: "g" },
-          { name: "Roasted red peppers from a jar, drained & sliced", quantity: 200, unit: "g" },
-          { name: "Spring onions, finely sliced", quantity: 3, unit: "" },
-          { name: "Fresh mint leaves", quantity: 0, unit: "large handful" },
-          { name: "Flat-leaf parsley, roughly chopped", quantity: 0, unit: "large handful" },
-          { name: "Pomegranate seeds", quantity: 60, unit: "g" },
-          { name: "Flaked almonds, toasted", quantity: 40, unit: "g" }
-        ]
-      }
-    ],
-    substitutes: [
-      {
-        ingredient: "Cracked freekeh",
-        alternatives: ["Bulgur wheat", "Quinoa", "Farro"]
-      },
-      {
-        ingredient: "Halloumi",
-        alternatives: ["Paneer", "Firm tofu (pat dry before griddling)", "Feta (crumbled over, not griddled)"]
-      },
-      {
-        ingredient: "Pomegranate molasses",
-        alternatives: ["Balsamic reduction + honey (equal parts)", "Tamarind paste (thinned)"]
-      },
-      {
-        ingredient: "Pomegranate seeds",
-        alternatives: ["Dried cranberries", "Dried sour cherries", "Barberries"]
-      }
+    title: "Porcini & Pancetta Risotto with Crispy Sage & Aged Parmesan",
+    category: "Dinner",
+    time: "50 mins",
+    serves: "4",
+    desc: "A deeply savoury, earthy risotto that draws its backbone from a double hit of mushroom — dried porcini soaked to make the stock and fresh chestnut mushrooms sautéed until golden. Salty pancetta and a blizzard of aged Parmesan make this northern Italian classic thoroughly indulgent. Crispy fried sage leaves on top add a haunting, herbal crunch that elevates every spoonful.",
+    emoji: "🍚",
+    image: "https://images.unsplash.com/photo-1727375713771-5469d9a05db5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxQb3JjaW5pJTIwJTI2JTIwUGFuY2V0dGElMjBSaXNvdHRvJTIwd2l0aCUyMENyaXNweSUyMFNhZ2UlMjAlMjYlMjBBZ2VkJTIwUGFybWVzYW4lMjBmb29kJTIwZGlzaHxlbnwwfDB8fHwxNzc3ODcxNDI5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    ingredients: [
+      { name: "Dried porcini mushrooms", quantity: 30, unit: "g" },
+      { name: "Boiling water (for soaking)", quantity: 500, unit: "ml" },
+      { name: "Good quality chicken or vegetable stock", quantity: 900, unit: "ml" },
+      { name: "Pancetta lardons", quantity: 150, unit: "g" },
+      { name: "Chestnut mushrooms, thickly sliced", quantity: 300, unit: "g" },
+      { name: "Carnaroli or Arborio rice", quantity: 320, unit: "g" },
+      { name: "Shallots, finely diced", quantity: 3, unit: "" },
+      { name: "Garlic cloves, minced", quantity: 2, unit: "" },
+      { name: "Dry white wine", quantity: 150, unit: "ml" },
+      { name: "Unsalted butter", quantity: 60, unit: "g" },
+      { name: "Aged Parmesan, finely grated", quantity: 80, unit: "g" },
+      { name: "Fresh sage leaves", quantity: 16, unit: "" },
+      { name: "Olive oil", quantity: 3, unit: "tbsp" },
+      { name: "Thyme sprigs", quantity: 3, unit: "" },
+      { name: "Salt and black pepper", quantity: 0, unit: "to taste" }
     ],
     instructions: [
-      "Step 1 — Rinse the freekeh under cold water, then tip into a saucepan with the vegetable stock. Bring to a boil, reduce to a simmer and cook for 20–22 minutes until the grain is tender but still has a pleasant chew. Drain any excess liquid, fluff with a fork, and spread on a tray to cool slightly.",
-      "Step 2 — Meanwhile, make the dressing: whisk together the pomegranate molasses, lemon juice, olive oil, ground cumin, smoked paprika and grated garlic. Season generously with salt and pepper — it should be bold, tart and aromatic.",
-      "Step 3 — Heat a griddle pan over high heat until smoking. Pat the halloumi slices dry with kitchen paper, then griddle for 2–3 minutes per side without moving them, until deep char marks form and the cheese is golden and yielding. Remove from the heat and cut each slice in half on the diagonal.",
-      "Step 4 — Toss the warm freekeh with two-thirds of the dressing, the roasted red peppers, spring onions, parsley and most of the mint. Spread onto a serving platter or shallow bowl.",
-      "Step 5 — Arrange the griddled halloumi pieces over the top. Scatter generously with pomegranate seeds, toasted flaked almonds and the remaining fresh mint. Drizzle over the rest of the dressing and serve immediately while the halloumi is still warm and squeaky."
+      "Step 1 — Prepare the porcini stock: Soak the dried porcini in 500ml of boiling water for 20 minutes. Lift out with a slotted spoon, roughly chop and set aside. Carefully pour the dark soaking liquid into your chicken or vegetable stock through a fine sieve lined with kitchen paper to catch any grit. Keep the combined stock warm in a saucepan over low heat throughout cooking — cold stock will shock the rice and ruin the texture.",
+      "Step 2 — Crisp the pancetta and mushrooms: Heat 1 tbsp olive oil in a wide, heavy-bottomed saucepan over medium-high heat. Add the pancetta lardons and fry for 4–5 minutes until golden and crisp. Remove with a slotted spoon and set aside on kitchen paper. Increase heat to high, add the chestnut mushrooms to the pancetta fat with the thyme and cook without stirring for 3–4 minutes until deeply browned. Add the rehydrated porcini, toss, season and set aside with the pancetta.",
+      "Step 3 — Build the risotto base: Reduce heat to medium. Add 1 tbsp olive oil and 20g butter to the pan. Gently sweat the shallots for 5–6 minutes until completely soft and translucent. Add the garlic and stir for 1 minute. Add the rice and toast, stirring constantly, for 2 minutes until the grains look glassy at the edges and smell faintly nutty.",
+      "Step 4 — Cook the risotto: Pour in the white wine and stir vigorously until completely absorbed. Begin adding the warm porcini stock one ladleful at a time, stirring frequently and only adding the next ladle once the previous one is absorbed. This process takes 18–22 minutes. After 15 minutes, fold in the mushroom and pancetta mixture. The final risotto should be loose and flowing — all\'onda — not stiff.",
+      "Step 5 — Mantecatura and finish: Remove from heat. Add the remaining 40g cold butter cut into cubes and all but a handful of the Parmesan. Stir vigorously for 90 seconds to emulsify into a glossy, creamy sauce. Cover and rest for 2 minutes. Meanwhile, heat the remaining olive oil in a small pan over high heat and fry the sage leaves for 30–45 seconds until crisp. Drain on paper. Serve the risotto in warm bowls topped with crispy sage, reserved Parmesan and a crack of black pepper."
     ]
   },
   {
     id: "sug3",
-    title: "Slow-Roasted Pork Shoulder (Porchetta-Style) with Fennel, Garlic & White Wine Salsa Verde",
+    title: "Spiced Beef Keema with Peas, Soft-Boiled Eggs & Warm Roti",
     category: "Dinner",
-    time: "3 hrs 30 mins",
-    serves: "6",
-    desc: "A spectacular centrepiece that rewards patience — a boneless pork shoulder is scored deeply, rubbed inside and out with fennel seed, wild garlic, chilli and lemon zest, then slow-roasted until the flesh is falling-apart tender and the crackling shatters at a touch. A punchy white wine salsa verde with cornichons and capers cuts through the richness magnificently. This is the kind of dish that makes the whole house smell extraordinary.",
-    emoji: "🐖",
-    image: "https://images.unsplash.com/photo-1606225716165-c3e2b60cd1fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTbG93LVJvYXN0ZWQlMjBQb3JrJTIwU2hvdWxkZXIlMjAlMjhQb3JjaGV0dGEtU3R5bGUlMjklMjB3aXRoJTIwRmVubmVsJTJDJTIwR2FybGljJTIwJTI2JTIwV2hpdGUlMjBXaW5lJTIwU2Fsc2ElMjBWZXJkZSUyMGZvb2QlMjBkaXNofGVufDB8MHx8fDE3Nzc3ODUwMjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    ingredientGroups: [
-      {
-        group: "For the pork",
-        items: [
-          { name: "Boneless pork shoulder, skin-on and butterflied", quantity: 2, unit: "kg" },
-          { name: "Fennel seeds", quantity: 2, unit: "tbsp" },
-          { name: "Dried chilli flakes", quantity: 1, unit: "tsp" },
-          { name: "Garlic cloves", quantity: 6, unit: "" },
-          { name: "Lemon, zested", quantity: 2, unit: "" },
-          { name: "Fresh rosemary leaves", quantity: 3, unit: "tbsp" },
-          { name: "Fresh thyme leaves", quantity: 2, unit: "tbsp" },
-          { name: "Olive oil", quantity: 4, unit: "tbsp" },
-          { name: "Flaky sea salt", quantity: 2, unit: "tbsp" },
-          { name: "Cracked black pepper", quantity: 1, unit: "tbsp" },
-          { name: "Dry white wine", quantity: 200, unit: "ml" }
-        ]
-      },
-      {
-        group: "For the salsa verde",
-        items: [
-          { name: "Flat-leaf parsley", quantity: 40, unit: "g" },
-          { name: "Fresh basil leaves", quantity: 20, unit: "g" },
-          { name: "Cornichons, finely chopped", quantity: 6, unit: "" },
-          { name: "Capers, rinsed and chopped", quantity: 2, unit: "tbsp" },
-          { name: "Dijon mustard", quantity: 1, unit: "tsp" },
-          { name: "Red wine vinegar", quantity: 1, unit: "tbsp" },
-          { name: "Extra virgin olive oil", quantity: 80, unit: "ml" },
-          { name: "Garlic clove", quantity: 1, unit: "" },
-          { name: "Salt", quantity: 0, unit: "to taste" }
-        ]
-      }
-    ],
-    substitutes: [
-      {
-        ingredient: "Dry white wine",
-        alternatives: ["Chicken stock + splash of white wine vinegar", "Dry vermouth", "Apple cider"]
-      },
-      {
-        ingredient: "Fennel seeds",
-        alternatives: ["Caraway seeds", "Anise seeds", "Ground fennel"]
-      },
-      {
-        ingredient: "Cornichons",
-        alternatives: ["Dill pickles, finely chopped", "Caperberries, sliced", "Pickled cucumber"]
-      },
-      {
-        ingredient: "Boneless pork shoulder",
-        alternatives: ["Pork belly (skin-on, reduce time slightly)", "Pork loin (reduce to 1 hr 30 mins)"]
-      }
+    time: "45 mins",
+    serves: "4",
+    desc: "Keema is one of South Asia\'s great comfort dishes — minced beef cooked down with warming spices, tomato and aromatics into a rich, fragrant mince that\'s deeply satisfying yet surprisingly quick. The addition of fresh peas adds sweetness and a flash of spring colour, while jammy soft-boiled eggs laid on top make it a complete and beautiful meal. Serve with warm roti or chapati to scoop up every last bit.",
+    emoji: "🥘",
+    image: "https://images.unsplash.com/photo-1774127026693-3c9aeddb1a40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTcGljZWQlMjBCZWVmJTIwS2VlbWElMjB3aXRoJTIwUGVhcyUyQyUyMFNvZnQtQm9pbGVkJTIwRWdncyUyMCUyNiUyMFdhcm0lMjBSb3RpJTIwZm9vZCUyMGRpc2h8ZW58MHwwfHx8MTc3Nzg3MTQzNnww&ixlib=rb-4.1.0&q=80&w=1080",
+    ingredients: [
+      { name: "Minced beef (20% fat)", quantity: 600, unit: "g" },
+      { name: "Frozen or fresh peas", quantity: 150, unit: "g" },
+      { name: "Eggs", quantity: 4, unit: "" },
+      { name: "Onions, finely diced", quantity: 2, unit: "" },
+      { name: "Garlic cloves, minced", quantity: 4, unit: "" },
+      { name: "Fresh ginger, grated", quantity: 30, unit: "g" },
+      { name: "Tinned chopped tomatoes", quantity: 400, unit: "g" },
+      { name: "Green finger chillies, sliced", quantity: 2, unit: "" },
+      { name: "Ground cumin", quantity: 2, unit: "tsp" },
+      { name: "Ground coriander", quantity: 2, unit: "tsp" },
+      { name: "Garam masala", quantity: 1.5, unit: "tsp" },
+      { name: "Turmeric", quantity: 0.5, unit: "tsp" },
+      { name: "Kashmiri chilli powder", quantity: 1, unit: "tsp" },
+      { name: "Whole black cardamom pods", quantity: 2, unit: "" },
+      { name: "Bay leaves", quantity: 2, unit: "" },
+      { name: "Neutral oil", quantity: 3, unit: "tbsp" },
+      { name: "Fresh coriander, to serve", quantity: 15, unit: "g" },
+      { name: "Roti or chapati", quantity: 4, unit: "" },
+      { name: "Salt", quantity: 0, unit: "to taste" }
     ],
     instructions: [
-      "Step 1 — The day before (or at least 4 hours ahead), toast the fennel seeds in a dry pan for 1–2 minutes until fragrant, then crush coarsely in a pestle and mortar. Add the garlic cloves, rosemary, thyme, chilli flakes, lemon zest, 1 tbsp sea salt and plenty of black pepper and pound to a rough paste. Work in 2 tbsp olive oil.",
-      "Step 2 — Lay the butterflied pork shoulder skin-side down. Score the flesh deeply with a knife in a crosshatch pattern and rub the herb paste aggressively all over the inside. Roll the pork tightly along its length and secure at regular intervals with kitchen twine. Score the skin generously with a sharp knife, rub with the remaining olive oil and remaining sea salt, working it into every crevice. Refrigerate uncovered overnight, or for as long as possible.",
-      "Step 3 — Remove the pork from the fridge 1 hour before cooking. Preheat the oven to 240°C/220°C fan. Place the pork on a rack over a roasting tin, pour the white wine into the base of the tin, and roast at high heat for 30–35 minutes until the skin is blistered and beginning to crackle aggressively.",
-      "Step 4 — Reduce the oven temperature to 160°C/140°C fan and continue to roast for a further 2 hrs 30 mins, basting with the pan juices every 45 minutes. The pork is ready when the flesh is completely tender and yielding when prodded with a skewer. If the crackling needs a final blast, return to 240°C for 10–15 minutes at the end.",
-      "Step 5 — While the pork rests (rest for at least 20 minutes, loosely tented with foil but leave the crackling exposed), make the salsa verde. Finely chop the parsley and basil with the single garlic clove, then transfer to a bowl. Stir in the cornichons, capers, Dijon mustard, red wine vinegar and extra virgin olive oil. Mix well, taste, and season assertively — it should be vibrant, sharp and herby.",
-      "Step 6 — Carve the pork into thick slices, ensuring everyone gets some crackling. Spoon over the salsa verde generously and serve with the resting juices from the tin poured around. Excellent alongside roasted fennel bulbs, crushed new potatoes or a simple dressed radicchio salad."
+      "Step 1 — Soft-boil the eggs: Bring a small saucepan of water to a rolling boil. Lower the eggs in gently and cook for exactly 6 minutes and 30 seconds. Transfer immediately to an ice bath for 5 minutes, then peel carefully and set aside. These will go in whole at the end.",
+      "Step 2 — Build the masala base: Heat the oil in a large, wide frying pan or karahi over medium-high heat. Add the black cardamom pods and bay leaves and let them sizzle for 30 seconds until fragrant. Add the diced onions and cook, stirring regularly, for 10–12 minutes until deep golden brown — don\'t rush this, as caramelised onion is the backbone of the dish. Add the garlic, ginger and green chillies and cook for a further 2 minutes.",
+      "Step 3 — Add the spices: Reduce to medium heat. Add the cumin, coriander, turmeric and Kashmiri chilli powder and stir for 60 seconds until the spices are fragrant and coating the onion. Add the tinned tomatoes and cook down for 6–8 minutes, stirring occasionally, until the oil begins to separate from the masala and the mixture is thick and paste-like.",
+      "Step 4 — Cook the keema: Increase heat to high and add the minced beef, breaking it up thoroughly with a wooden spoon. Cook for 8–10 minutes, stirring frequently, until the mince is well browned and any liquid has fully evaporated — this browning is essential for depth of flavour. Season generously with salt. Stir in the garam masala and cook for 1 further minute.",
+      "Step 5 — Finish and serve: Add the peas and stir through for 2–3 minutes until just cooked. Taste and adjust seasoning. Nestle the peeled soft-boiled eggs gently into the keema, cutting them lightly so the yolk begins to bleed into the mince. Scatter generously with fresh coriander and serve straight from the pan with warm roti."
     ]
   }
 ];

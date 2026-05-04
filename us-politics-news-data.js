@@ -1,60 +1,60 @@
 // us-politics-news-data.js
-// Auto-updated 2026-05-03 — do not edit manually
+// Auto-updated 2026-05-04 — do not edit manually
 
 var US_POLITICS_NEWS = {
-  date: "2026-05-03",
+  date: "2026-05-04",
   main: {
-    title: "Trump Tells Congress Ceasefire Means He Needs No Authorization for Iran War",
+    title: "Supreme Court Voting Rights Ruling Threatens Black Representation in Congress, Civil Rights Groups Warn",
     category: "Politics",
     content: [
-      "President Trump has formally notified Congress that he does not require their authorization to continue or resume military operations against Iran, arguing that the current ceasefire means hostilities have effectively 'terminated.' In a written communication to lawmakers, Trump asserted that because the fighting has paused, the conditions that would trigger the War Powers Resolution\'s requirements no longer apply. The move represents one of the most direct challenges to congressional war-making authority in recent memory, and has drawn sharp criticism from members of both parties who argue the president is exploiting a technicality to sidestep constitutional oversight.",
-      "The War Powers Resolution of 1973 requires the president to notify Congress within 48 hours of committing armed forces to hostilities and limits unauthorized engagements to 60 days without legislative approval. Trump\'s legal argument hinges on the claim that a ceasefire — even a fragile or temporary one — constitutes the end of hostilities, resetting the clock on any congressional mandate. Legal scholars are divided on whether this interpretation holds water, with many arguing that a ceasefire is not the same as a formal end to conflict and that the underlying authorization question remains unresolved.",
-      "The White House\'s position comes as Iran submitted a 14-point response to the U.S. proposal to end the war, and Trump himself initially flatly rejected the offer before later walking back his comments, saying he had only been briefed on the 'concept of the deal.' This vacillation has added to uncertainty on Capitol Hill about the administration\'s strategic intentions and whether a lasting diplomatic resolution is genuinely within reach. Some lawmakers have expressed concern that the ceasefire framing is being used not just to deflect the War Powers question, but to preserve maximum executive flexibility as negotiations remain fluid.",
-      "Historically, the record on presidential compliance with the War Powers Resolution is mixed. Both George H.W. Bush and George W. Bush sought and received congressional authorization before major military campaigns, while President Reagan and later President Clinton and Obama pursued military actions without formal legislative approval. Trump\'s argument — that a ceasefire ends the authorization requirement entirely — goes further than most previous administrations, essentially claiming that the executive can unilaterally determine when a conflict starts and stops for the purposes of congressional oversight, a posture that constitutional scholars say is legally novel and potentially dangerous.",
-      "On Capitol Hill, the response has been cautious but pointed. Senior members of the Senate Foreign Relations and Armed Services committees have indicated they are reviewing the administration\'s legal rationale and have not ruled out legislative action to reassert congressional authority. The episode is shaping up to be a defining test of separation-of-powers principles during the Trump administration\'s second term, raising fundamental questions about who holds the power to commit the United States to war — and who gets to decide when that war is over. With midterm election dynamics already heating up, the war powers controversy is expected to become a central flashpoint between the White House and Congress in the weeks ahead."
+      "The Supreme Court has delivered a significant blow to the Voting Rights Act, issuing a ruling that civil rights advocates say could fundamentally reshape Black political representation across the Deep South. The decision has sent shockwaves through communities that spent decades fighting for fair representation in Congress and state legislatures. Legal experts warn the ruling could unravel district maps that were explicitly drawn to give minority voters an equal opportunity to elect candidates of their choice.",
+      "For figures like Press Robinson of Louisiana, who mounted a historic legal fight decades ago to become the first Black person elected to a local school board, the ruling represents a potential reversal of a lifetime of hard-won progress. Robinson and others who lived through the era before the Voting Rights Act\'s strongest protections were in place now fear a return to conditions that systematically diluted minority voting power. 'He spent 60 years building Black political power,' one report noted, 'and he sees a wipeout coming.'",
+      "House Minority Leader Hakeem Jeffries (D-N.Y.) drew the ire of President Trump after calling the Supreme Court 'illegitimate' in response to the ruling. Trump, posting on social media, questioned whether Jeffries was 'subject to Impeachment' for the remark, escalating what had already become a fiercely partisan political battle over the court\'s direction. The exchange underscored how deeply the ruling has inflamed tensions between the two parties over the judiciary\'s role in American democracy.",
+      "Civil rights organizations across the South are now scrambling to assess the full legal and political implications of the decision. Advocacy groups are expected to mount fresh legislative and legal challenges, though the path forward is significantly narrowed following the court\'s ruling. Some are urging Congress to pass new legislation shoring up voting protections, an effort that faces steep odds given the current composition of the House and Senate.",
+      "The ruling arrives at a moment of heightened anxiety about democratic participation and electoral fairness in the United States. Critics argue that weakening the Voting Rights Act — a cornerstone of the civil rights movement signed into law in 1965 — risks dismantling one of the most consequential pieces of legislation in American history. Supporters of the ruling contend it reflects a proper constitutional interpretation, but for millions of voters in affected states, the political consequences could be felt as early as the 2026 midterm elections."
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/26ce/live/cba9b850-4594-11f1-b55d-0f258dce1735.jpg",
-    source: "BBC News",
-    sourceUrl: "https://www.bbc.com/news/articles/c4g4xexy4w7o?at_medium=RSS&at_campaign=rss"
+    image: "https://thehill.com/wp-content/uploads/sites/2/2026/05/AP26122014840998-e1777683962295.jpg?w=900",
+    source: "NPR",
+    sourceUrl: "https://www.npr.org/2026/05/03/nx-s1-5806269/civil-rights-groups-in-the-south-respond-to-supreme-courts-blow-to-voting-rights"
   },
   secondary: [
     {
       id: "us1",
-      title: "Trump Disapproval Hits Record High as Democrats Open Lead on Congressional Ballot",
-      summary: "A new Post-ABC-Ipsos poll finds President Trump\'s disapproval rating has reached its highest point yet, with Democrats now holding a five-point advantage in congressional support.",
+      title: "Ballistic Evidence Links WHCD Shooting Suspect to Attack on Secret Service Agent",
+      summary: "U.S. Attorney Jeanine Pirro says a buckshot pellet found embedded in a Secret Service officer\'s vest 'definitively' connects suspect Cole Tomas Allen to the White House Correspondents' Dinner attack.",
       body: [
-        "The survey marks a significant shift in the political landscape heading into the 2026 midterm cycle, with Democratic support for Congress climbing to a five-point edge over Republicans, up from just two points in February. Analysts attribute the movement to sustained public dissatisfaction with Trump\'s handling of the Iran conflict, economic pressures from ongoing tariff policies, and controversy surrounding several cabinet officials.",
-        "High disapproval ratings at this stage of a presidency have historically correlated with significant midterm losses for the president\'s party, putting Republican House members in competitive districts on notice. The White House has pushed back on the polling, arguing that the survey methodology oversamples Democratic-leaning respondents, though independent analysts say the trend lines are consistent across multiple polling organizations."
+        "U.S. Attorney Jeanine Pirro announced Sunday that forensic ballistic evidence has produced a definitive link between suspect Cole Tomas Allen and the shooting at the White House Correspondents' Dinner, telling CNN that a pellet from Allen\'s shotgun was found physically intertwined with the fibers of a Secret Service agent\'s protective vest. The discovery significantly strengthens the government\'s case ahead of what is expected to be a high-profile federal prosecution.",
+        "The attack at one of Washington\'s most prominent annual press events sent shockwaves through the political and media establishment, and the case has drawn intense scrutiny over security protocols surrounding major public gatherings of officials and journalists. Pirro\'s comments signal prosecutors are building a robust evidentiary case against Allen as the investigation continues."
       ],
-      image: "https://images.pexels.com/photos/8849362/pexels-photo-8849362.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      source: "The Washington Post",
-      url: "https://www.washingtonpost.com/politics/2026/05/03/trump-approval-ratings-poll/",
+      image: "https://images.pexels.com/photos/8369512/pexels-photo-8369512.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      source: "NPR",
+      url: "https://www.npr.org/2026/05/03/nx-s1-5809482/correspondents-dinner-shooter-bullet-vest-secret-service",
       category: "Politics"
     },
     {
       id: "us2",
-      title: "Supreme Court Asked to Restore Mail Access to Abortion Pill Mifepristone",
-      summary: "Drugmakers have petitioned the Supreme Court to overturn a Fifth Circuit ruling that restricts the abortion pill mifepristone to in-person pickup only, ending mail distribution.",
+      title: "Tariff Refund Process Leaves Small Businesses Stranded After Supreme Court Ruling",
+      summary: "Following the Supreme Court\'s decision striking down most of President Trump\'s tariffs, small business owners seeking refunds are facing a bureaucratic maze that experts say could prevent billions of dollars from ever being repaid.",
       body: [
-        "The U.S. Court of Appeals for the Fifth Circuit ruled that mifepristone — a drug widely used in medication abortions — can no longer be distributed by mail, reversing an FDA regulation that had significantly expanded patient access in recent years. Pharmaceutical manufacturers are now asking the Supreme Court to intervene and restore the mail-access rule while litigation over the underlying regulatory question continues in lower courts.",
-        "The case has enormous practical implications for millions of Americans, particularly those in states with limited abortion clinic access, for whom mail delivery of the drug has been a critical alternative. The Supreme Court\'s willingness to take up the emergency application will be closely watched as a signal of how the current bench intends to approach reproductive rights questions in the post-Dobbs legal landscape."
+        "Richard Brown is one of countless small business owners who began assembling paperwork after the Supreme Court struck down the bulk of President Trump\'s tariff regime, hoping to recoup duties paid on imported goods. But trade law experts warn that the refund process is so complex, time-consuming, and poorly resourced that a large share of businesses — particularly smaller ones without dedicated legal and compliance teams — may never successfully recover their money.",
+        "The situation has reignited debate on Capitol Hill over the administration\'s aggressive use of tariff authority and the downstream consequences for American commerce. For many small business owners, the tariffs represented a significant financial strain, and the prospect of permanent losses even after a court victory is fueling frustration with both the executive branch and the federal bureaucracy."
       ],
-      image: "https://static01.nyt.com/images/2026/05/02/multimedia/00dc-scotus-abortionpill-01-cfwg/00dc-scotus-abortionpill-01-cfwg-mediumSquareAt3X.jpg",
-      source: "The New York Times",
-      url: "https://www.nytimes.com/2026/05/02/us/politics/supreme-court-mail-abortion-pill.html",
-      category: "Politics"
+      image: "https://thehill.com/wp-content/uploads/sites/2/2026/05/AP26122014840998-e1777683962295.jpg?w=900",
+      source: "NPR",
+      url: "https://www.npr.org/2026/05/03/nx-s1-5805045/tariff-refunds-small-business",
+      category: "Economics"
     },
     {
       id: "us3",
-      title: "Trump Uses Primary Challengers to Pressure Indiana Republicans on Redistricting",
-      summary: "President Trump is backing primary challengers against Indiana state senators who refused to redraw congressional districts in a way designed to protect Republican U.S. House seats.",
+      title: "Justice Department Inquiry Into Fed Chair Jerome Powell Could Be Revived, Pirro Warns",
+      summary: "U.S. Attorney Jeanine Pirro signaled that a Justice Department inquiry into Federal Reserve Chair Jerome Powell — dropped last month after a federal judge blocked grand jury subpoenas — could potentially be resurrected.",
       body: [
-        "Trump has inserted himself directly into Indiana\'s state-level politics, recruiting and endorsing Republican primary opponents to target state senators who blocked a redistricting plan that would have shored up GOP congressional margins ahead of the 2026 elections. The effort reflects Trump\'s broader strategy of using the threat of primary challenges to enforce loyalty among Republican officeholders at every level of government.",
-        "The redistricting fight in Indiana is being watched nationally as a test case for how much influence Trump can exert over state legislative processes, and whether his intervention helps or hurts Republican unity heading into a midterm environment that polling suggests may already be challenging for the party. Critics argue the president\'s involvement in state-level redistricting represents an unprecedented centralization of political power in the White House."
+        "The Justice Department\'s inquiry into Federal Reserve Chair Jerome Powell was shelved last month after a federal judge blocked the grand jury subpoenas underpinning the investigation, but U.S. Attorney Jeanine Pirro suggested Sunday that the matter may not be permanently closed. The probe had alarmed financial markets and raised serious questions about the independence of the Federal Reserve from political pressure.",
+        "The possibility of renewed scrutiny of Powell comes amid ongoing tension between the Trump administration and the Fed over interest rate policy, with Trump having repeatedly and publicly criticized Powell for not cutting rates more aggressively. Any revival of a formal legal inquiry would almost certainly rattle markets and intensify the constitutional debate over the limits of executive influence over independent federal institutions."
       ],
-      image: "https://images.unsplash.com/photo-1600396042820-2dff779a9386?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUcnVtcCUyMFVzZXMlMjBQcmltYXJ5JTIwQ2hhbGxlbmdlcnMlMjB0byUyMFByZXNzdXJlJTIwSW5kaWFuYSUyMFJlcHVibGljYW5zJTIwb24lMjBSZWRpc3RyaWN0aW5nfGVufDB8MHx8fDE3Nzc3ODQ1Njh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "NPR",
-      url: "https://www.npr.org/2026/05/02/nx-s1-5798859/how-are-trumps-efforts-to-reshape-indianas-congressional-districts-going",
+      image: "https://static01.nyt.com/images/2026/05/03/multimedia/03trump-news-pirro-powell-lgpq/03trump-news-pirro-powell-lgpq-mediumSquareAt3X.jpg",
+      source: "The New York Times",
+      url: "https://www.nytimes.com/2026/05/03/us/politics/justice-department-fed-chair-powell-inquiry-pirro.html",
       category: "Politics"
     }
   ]
