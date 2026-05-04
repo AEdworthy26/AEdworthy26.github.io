@@ -1324,9 +1324,18 @@ window.SUGGESTED_RECIPES = [
     desc: "2-3 sentence description of what makes this dish special.",
     emoji: "🍽️",
     image: "__IMG_R1__",
-    ingredients: [
-      {{ name: "Ingredient name", quantity: 200, unit: "g" }},
-      {{ name: "Another ingredient", quantity: 2, unit: "tbsp" }}
+    ingredientGroups: [
+      {{ group: "Main", items: [
+        {{ name: "Ingredient name", quantity: 200, unit: "g" }},
+        {{ name: "Another ingredient", quantity: 2, unit: "tbsp" }}
+      ]}},
+      {{ group: "Sauce", items: [
+        {{ name: "Sauce ingredient", quantity: 3, unit: "tbsp" }}
+      ]}}
+    ],
+    substitutes: [
+      {{ ingredient: "Key ingredient", alternatives: ["Substitute 1", "Substitute 2"] }},
+      {{ ingredient: "Another ingredient", alternatives: ["Alternative A", "Alternative B"] }}
     ],
     instructions: [
       "Step 1 — detailed, technique-forward instruction.",
@@ -1342,8 +1351,12 @@ window.SUGGESTED_RECIPES = [
     desc: "2-3 sentence description.",
     emoji: "🐟",
     image: "__IMG_R2__",
-    ingredients: [
-      {{ name: "Ingredient", quantity: 1, unit: "" }}
+    ingredientGroups: [
+      {{ group: "Main", items: [{{ name: "Ingredient", quantity: 1, unit: "" }}] }},
+      {{ group: "Dressing", items: [{{ name: "Dressing ingredient", quantity: 2, unit: "tbsp" }}] }}
+    ],
+    substitutes: [
+      {{ ingredient: "Key ingredient", alternatives: ["Substitute 1", "Substitute 2"] }}
     ],
     instructions: [
       "Step 1."
@@ -1358,8 +1371,12 @@ window.SUGGESTED_RECIPES = [
     desc: "2-3 sentence description.",
     emoji: "🥗",
     image: "__IMG_R3__",
-    ingredients: [
-      {{ name: "Ingredient", quantity: 100, unit: "g" }}
+    ingredientGroups: [
+      {{ group: "Main", items: [{{ name: "Ingredient", quantity: 100, unit: "g" }}] }},
+      {{ group: "Marinade", items: [{{ name: "Marinade ingredient", quantity: 2, unit: "tbsp" }}] }}
+    ],
+    substitutes: [
+      {{ ingredient: "Key ingredient", alternatives: ["Substitute 1", "Substitute 2"] }}
     ],
     instructions: [
       "Step 1."

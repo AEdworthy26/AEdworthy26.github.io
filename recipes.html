@@ -809,7 +809,9 @@
       var r = {
         id: uid(), sugId: s.id, title: s.title, category: s.category,
         desc: s.desc, time: s.time, serves: s.serves,
-        ingredients: s.ingredients, instructions: s.instructions,
+        ingredients: s.ingredients, ingredientGroups: s.ingredientGroups || null,
+        substitutes: s.substitutes || [],
+        instructions: s.instructions,
         rating: _sugRatings[id] || 0, favourite: false, createdAt: Date.now(),
         emoji: s.emoji || '🍽️', image: s.image || null
       };
@@ -825,7 +827,9 @@
       openViewModal({
         id: null, title: s.title, category: s.category,
         desc: s.desc, time: s.time, serves: s.serves,
-        ingredients: s.ingredients, instructions: s.instructions, rating: s.rating
+        ingredients: s.ingredients, ingredientGroups: s.ingredientGroups || null,
+        substitutes: s.substitutes || [],
+        instructions: s.instructions, rating: s.rating
       }, true);
     };
 
