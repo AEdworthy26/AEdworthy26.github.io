@@ -177,6 +177,7 @@
       } else {
         updateSyncUI('synced');
         sessionStorage.removeItem(RELOAD_FLAG);
+        doPush();
       }
     });
   });
