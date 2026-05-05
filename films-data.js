@@ -1,18 +1,18 @@
 // films-data.js
-// Auto-updated 2026-05-04 — do not edit manually
+// Auto-updated 2026-05-05 — do not edit manually
 
 var FILMS_DATA = {
-  date: "2026-05-04",
+  date: "2026-05-05",
   film: {
-    title: "The Bandit",
-    director: "Yılmaz Güney",
-    year: 1996,
-    genres: ["Drama", "Road Film", "Turkish Cinema"],
-    desc: "A sweeping, melancholic Turkish road film following a legendary outlaw released from prison who journeys across the rugged Anatolian landscape to find the woman he loves, only to discover time has reshaped everything he once knew. Director Yavuz Turgul — working in the spirit of Yılmaz Güney\'s tradition — crafts a film of stunning visual grandeur, pairing magnificent mountain scenery with an aching, deeply human story about loyalty, displacement, and the impossibility of returning to a lost past. Şener Şen delivers one of Turkish cinema\'s great performances, all quiet dignity and suppressed grief, making the bandit Baran one of the most indelible screen presences of 1990s world cinema. The film won multiple awards and became a beloved classic in Turkey, beloved for its rare ability to hold both epic scale and intimate emotional truth simultaneously. It is the kind of film that lingers — a genuine discovery for anyone who has yet to encounter it.",
-    cast: ["Şener Şen", "Uğur Yücel", "Sermin Hürmeriç"],
-    rating: 92,
-    ratingSource: "Turkish Film Critics",
-    ratingExtra: "8 Antalya Golden Orange Awards",
-    posterUrl: "https://upload.wikimedia.org/wikipedia/en/d/d2/E%C5%9Fk%C4%B1ya.jpg"
+    title: "The Bitter Tears of Petra von Kant",
+    director: "Rainer Werner Fassbinder",
+    year: 1972,
+    genres: ["Drama", "World Cinema"],
+    desc: "Fassbinder\'s razor-sharp chamber piece confines itself almost entirely to a single opulent apartment, where fashion designer Petra von Kant becomes consumed by obsessive, destructive desire for a younger woman named Karin. Shot with extraordinary visual precision by Michael Ballhaus, every frame is staged like a painting in motion — lush fabrics, mannequins, and mirrors creating a suffocating world of vanity and longing. The film is a savage dissection of power dynamics within intimate relationships, cycling through cruelty, submission, and humiliation with almost operatic intensity. Margit Carstensen delivers one of the great performances of 1970s European cinema, unraveling across the film\'s running time in ways that are equal parts devastating and darkly comic. It remains one of Fassbinder\'s most formally daring works and a foundational text in queer cinema.",
+    cast: ["Margit Carstensen", "Hanna Schygulla", "Katrin Schaake"],
+    rating: 94,
+    ratingSource: "Rotten Tomatoes",
+    ratingExtra: "FIPRESCI Prize, Berlin International Film Festival",
+    posterUrl: "https://upload.wikimedia.org/wikipedia/en/8/86/The_Bitter_Tears_of_Petra_von_Kant%2C_film_poster.jpg"
   }
 };

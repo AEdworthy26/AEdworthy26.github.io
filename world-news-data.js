@@ -4,27 +4,27 @@
 var WORLD_NEWS = {
   date: "2026-05-05",
   main: {
-    title: "Strait of Hormuz in Crisis: US Forces Battle Iran as UAE Comes Under Attack",
+    title: "Hormuz Crisis Deepens as U.S. Warships Repel Missile and Drone Attacks in the Gulf",
     category: "Geopolitics",
     content: [
-      "The Strait of Hormuz — through which approximately one-fifth of the world\'s oil supply flows — has become the flashpoint for a dangerous new confrontation between the United States, Iran, and their regional allies. US Navy warships shot down missiles and drones aimed at vessels being guided through the critical waterway, as Iranian forces attacked targets including an oil facility in the United Arab Emirates. The USS-escorted commercial tanker operated by shipping giant Maersk successfully transited the strait under military protection, in what Washington described as a show of resolve to keep the passage open.",
-      "The UAE confirmed that Iranian missiles and drones struck one of its oil facilities, marking a dramatic escalation in the Gulf standoff that has been simmering for weeks. US forces sank six Iranian fast boats during the clashes, according to Pentagon statements, as American warships fired in defence of commercial shipping navigating the narrow passage between Iran and Oman. President Trump announced that the US would 'guide' stranded ships through the strait, framing the military operation as a protection of global trade rather than an act of war.",
-      "The international response was swift and largely condemnatory of Tehran. Saudi Arabia, Qatar, Kuwait, and Bahrain all denounced what they called Iranian aggression, while Germany, the UK, and Canada urged Iran to stand down and return to diplomatic talks. The breadth of the regional condemnation — including from fellow Gulf states that have occasionally maintained cautious relations with Iran — signals the degree to which the attacks have alarmed the Arab world and shifted the strategic calculus in the Middle East.",
-      "Oil markets reacted with immediate alarm, with Brent crude surging nearly six percent on fears that prolonged disruption to the Strait of Hormuz could choke global energy supplies. Analysts warned that if the waterway were effectively closed for any sustained period, the consequences for energy prices worldwide would be severe, compounding inflationary pressures already straining many economies. The spike also renewed debate about the vulnerability of global supply chains to geopolitical flashpoints, with calls growing louder in several capitals for accelerated investment in alternative energy sources and supply routes.",
-      "The crisis has broader strategic dimensions that extend well beyond energy markets. The confrontation tests the limits of American military commitment in the region at a time when Washington is simultaneously managing tensions in the Pacific and navigating fraught trade disputes globally. For Iran, the attacks may reflect domestic pressure from hardliners, or a calculated attempt to extract leverage in any future negotiations over its nuclear programme. With the ceasefire described as being pushed to the brink, diplomats and analysts alike are warning that the window for de-escalation is narrowing rapidly, and that miscalculation by any party could trigger a far wider conflict."
+      "The Strait of Hormuz crisis entered a dangerous new phase on day 67 of the Iran conflict, as U.S. Navy warships shot down a wave of missiles and drones targeting vessels being escorted through the critical waterway. The United Arab Emirates separately confirmed it had intercepted Iranian missiles following a suspected drone attack on its territory, though Iran offered no official comment on the incidents. The escalation marks one of the most direct and sustained confrontations in the Gulf since the current conflict began, raising fears of a broader regional conflagration.",
+      "The Strait of Hormuz, through which roughly a fifth of the world\'s oil supply passes, has become the central flashpoint of the ongoing Iran conflict, with attacks on commercial and military shipping threatening to choke global energy markets. The United States has been deploying naval assets to escort vessels through the strait, a mission that has now come under direct fire. Western officials have described the situation as gravely serious, with the potential to disrupt fuel supplies across Europe, Asia, and beyond if the waterway becomes effectively impassable.",
+      "The ripple effects of the Hormuz crisis are already being felt far beyond the Gulf region. The UK government has been scrambling to address a looming jet fuel shortage, with Transport Secretary Heidi Alexander identifying imports from the United States and West Africa — including Nigeria\'s Dangote refinery — as part of a contingency plan to ensure aviation supplies ahead of the summer travel season. The crisis has injected fresh urgency into debates about Western energy dependency and the fragility of global supply chains that run through contested maritime corridors.",
+      "Regional neighbours are watching the escalation with alarm. The UAE\'s decision to publicly attribute the drone attack to Iran represents a significant diplomatic step, as Gulf states have historically sought to avoid being drawn directly into the conflict. Analysts note that any miscalculation — a stray missile, a sunken vessel, a casualty among naval personnel — could trigger a much wider military response that neither side has so far been willing to risk. Diplomatic back-channels remain active, but the tempo of attacks suggests that neither Iran nor its adversaries are ready to de-escalate.",
+      "The broader international community has called for restraint, with the United Nations warning that sustained disruption to the Strait of Hormuz would constitute a humanitarian and economic crisis affecting countries far removed from the immediate conflict zone. Energy prices have surged on global markets in response to the latest incidents, and insurance premiums for vessels transiting the Gulf have reached record highs. As military and diplomatic pressure mounts simultaneously, the coming days are widely viewed as critical in determining whether the conflict remains contained or tips into a wider regional war."
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/4dcd/live/020fd5a0-47de-11f1-90ad-2ff82eec9d15.jpg",
+    image: "https://static01.nyt.com/images/2026/05/04/multimedia/04mideast-live-promo-745p-qvmb/04mideast-live-promo-745p-qvmb-mediumSquareAt3X.jpg",
     source: "Al Jazeera",
-    sourceUrl: "https://www.aljazeera.com/economy/2026/5/5/oil-prices-surge-as-violence-flares-in-strait-of-hormuz?traffic_source=rss"
+    sourceUrl: "https://www.aljazeera.com/news/2026/5/5/iran-war-whats-happening-on-day-67-as-hormuz-crisis-deepens?traffic_source=rss"
   },
   secondary: [
     {
       id: "s1",
-      title: "Hantavirus Outbreak on Cruise Ship Kills Three, Leaves Crew Member in Critical Care",
-      summary: "A suspected hantavirus outbreak aboard the MV Hondius cruise ship in the Atlantic has killed three passengers and left a British crew member in urgent need of medical care.",
+      title: "Hantavirus Outbreak on Atlantic Cruise Ship Kills Three, Leaves British Crew in Critical Care",
+      summary: "A suspected hantavirus outbreak aboard the luxury cruise ship MV Hondius has killed three passengers and left a British crew member and a UK passenger in critical condition as the vessel awaits assistance off the coast of Cape Verde.",
       body: [
-        "The World Health Organisation confirmed seven suspected or confirmed cases of hantavirus on the MV Hondius, a luxury cruise ship currently in the Atlantic, with three passengers — including a Dutch married couple and a German national — having died from the rare infection. A British crew member was reported to be in urgent need of medical care, while a UK passenger remained in a critical but stable condition, raising international concern about the ship\'s ability to dock and receive emergency assistance.",
-        "Hantavirus is a rare but serious illness typically transmitted through contact with infected rodents or their droppings, and human-to-human transmission is uncommon, making the cluster of cases aboard a single vessel particularly alarming to health authorities. The ship\'s operators and port authorities in Cape Verde were in discussions about allowing the vessel to dock, as the international response highlighted the difficulties of managing infectious disease outbreaks in the confined environment of ocean-going vessels."
+        "The MV Hondius, carrying nearly 150 people, has been stranded in the Atlantic Ocean off Cape Verde after a suspected hantavirus outbreak killed a Dutch couple and a German national, with the World Health Organisation confirming seven cases in total — either confirmed or suspected. A British crew member was described as requiring urgent medical care, while a second UK passenger remained in a critical but stable condition, prompting urgent diplomatic and logistical efforts to bring medical assistance to the vessel.",
+        "Hantavirus is a rare and serious infection typically transmitted to humans through contact with infected rodents or their droppings, making its appearance aboard a cruise ship particularly unusual and alarming to health authorities. The outbreak has drawn significant international attention, with public health experts calling for a thorough investigation into the source of the infection once passengers and crew are safely ashore."
       ],
       image: "https://i.guim.co.uk/img/media/6adde1cdf2cb63354dd69c0a998ec1af299f5a7a/434_0_2998_2398/master/2998.jpg?width=1200&quality=85&auto=format&fit=max&s=3fa45cadc1311484381589a516829381",
       source: "The Guardian",
@@ -33,29 +33,29 @@ var WORLD_NEWS = {
     },
     {
       id: "s2",
-      title: "Car Driven Into Crowd in German City of Leipzig, Leaving Two Dead and Many Injured",
-      summary: "A 33-year-old German citizen drove a car into a crowd in Leipzig, killing two people and injuring many others before being detained by police.",
+      title: "Explosion at Chinese Fireworks Factory Kills 26 and Injures Dozens in Liuyang",
+      summary: "A massive explosion tore through a fireworks factory in China\'s Liuyang region — known as the world\'s fireworks capital — killing at least 26 people and injuring 61 others.",
       body: [
-        "German authorities detained a 33-year-old German citizen after a car was deliberately driven into a crowd in the city of Leipzig, killing two people and leaving a significant number of others injured in what police are treating as an intentional attack. Emergency services were deployed rapidly to the scene, and the suspect was taken into custody shortly after the incident, though authorities have not yet publicly disclosed a motive.",
-        "The attack is the latest in a series of vehicle-ramming incidents in European cities in recent years, and is likely to reignite debate in Germany about public safety and security measures at crowded public spaces. German officials have been under pressure to address both the threat of politically motivated violence and the practical challenges of protecting civilians in open urban environments."
+        "Rescue operations were still under way following the catastrophic blast, which devastated the factory site and sent shockwaves through surrounding areas. Chinese state authorities confirmed the death toll of 26 and said dozens of injured were receiving hospital treatment, with the cause of the explosion under investigation.",
+        "Liuyang in Hunan province produces the vast majority of the world\'s consumer fireworks and has a long and troubled history of industrial accidents linked to the highly volatile materials involved in pyrotechnic manufacturing. The disaster will intensify scrutiny of safety regulations in China\'s fireworks industry, which has faced repeated calls for stricter oversight following a string of fatal incidents over the past decade."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/395d/live/537900a0-47f3-11f1-a5a5-9ff681d5bd63.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/ckgpzgxgz58o?at_medium=RSS&at_campaign=rss",
-      category: "Europe"
+      image: "https://images.pexels.com/photos/15497729/pexels-photo-15497729.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      source: "Al Jazeera",
+      url: "https://www.aljazeera.com/news/2026/5/5/explosion-at-fireworks-factory-in-china-kills-26-injures-61?traffic_source=rss",
+      category: "World"
     },
     {
       id: "s3",
-      title: "Explosion at Chinese Fireworks Plant Kills at Least 21 and Injures Dozens",
-      summary: "A massive explosion at a fireworks manufacturing plant in central China has killed at least 21 people and injured 61 others.",
+      title: "Russia Declares Unilateral Ceasefire in Ukraine for Victory Day, Threatens Retaliation",
+      summary: "Russia has announced a unilateral two-day ceasefire in Ukraine to coincide with Victory Day celebrations marking the defeat of Nazi Germany, while simultaneously warning it will strike back if Kyiv attempts to disrupt the commemorations.",
       body: [
-        "An explosion tore through a fireworks production facility in a central Chinese province, killing at least 21 workers and injuring 61 others in one of the deadliest industrial accidents in the country in recent months. Emergency crews were dispatched to the site, with rescue operations ongoing as authorities worked to account for all workers who had been present at the plant at the time of the blast.",
-        "China\'s fireworks industry, though heavily regulated following a series of deadly disasters in past decades, remains prone to catastrophic accidents due to the inherently volatile nature of the materials involved. The incident is expected to prompt fresh scrutiny from Chinese safety regulators and may lead to temporary suspensions of operations at similar facilities across the country."
+        "The Kremlin declared the truce for Friday and Saturday, framing it as a gesture of goodwill ahead of the major national holiday, though Ukrainian officials have historically regarded such unilateral announcements with deep scepticism, questioning whether Russian forces would genuinely halt offensive operations along the front lines. The announcement came amid ongoing fighting across multiple sectors of the conflict and was not the product of any bilateral negotiation.",
+        "Victory Day on 9 May remains one of the most politically significant dates in the Russian calendar, and the Kremlin has consistently used the occasion to project an image of national strength and historical legitimacy for its military campaigns. Ukraine and Western allies are expected to closely monitor the front lines over the ceasefire period, with any violations likely to be swiftly documented and used to challenge Moscow\'s stated intentions."
       ],
-      image: "https://images.unsplash.com/photo-1658674589319-17714b08e3bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxFeHBsb3Npb24lMjBhdCUyMENoaW5lc2UlMjBGaXJld29ya3MlMjBQbGFudCUyMEtpbGxzJTIwYXQlMjBMZWFzdCUyMDIxJTIwYW5kJTIwSW5qdXJlcyUyMERvemVuc3xlbnwwfDB8fHwxNzc3OTU3MjgwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "Al Jazeera",
-      url: "https://www.aljazeera.com/video/newsfeed/2026/5/5/an-explosion-at-a-fireworks-plant-in-china-has-killed-at-least-21-people?traffic_source=rss",
-      category: "Asia"
+      image: "https://images.unsplash.com/photo-1681393889158-e3dff1463bc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxSdXNzaWElMjBEZWNsYXJlcyUyMFVuaWxhdGVyYWwlMjBDZWFzZWZpcmUlMjBpbiUyMFVrcmFpbmUlMjBmb3IlMjBWaWN0b3J5JTIwRGF5JTJDJTIwVGhyZWF0ZW5zJTIwUmV0YWxpYXRpb258ZW58MHwwfHx8MTc3Nzk2NDcxOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "NPR",
+      url: "https://www.npr.org/2026/05/05/g-s1-120129/russia-declares-a-truce-in-ukraine-to-mark-victory-day",
+      category: "Conflict"
     }
   ]
 };

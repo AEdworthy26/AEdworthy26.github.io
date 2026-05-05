@@ -3,6 +3,45 @@
 
 var RICS_LOG = [
   {
+    "date": "2026-05-05",
+    "topic": "Ransom Strips, Marriage Value and Hope Value in Land Assembly",
+    "module": "Valuation",
+    "level": 2,
+    "apc_competency": "Valuation (Level 2)",
+    "focus": "This lesson examines the valuation mechanics behind ransom strips, marriage value and hope value \u2014 three concepts that regularly arise in land assembly, option structuring and pre-acquisition due diligence. For a candidate working on land-led JV schemes at Latimer, understanding how these concepts affect residual appraisals, negotiation strategy and title risk is essential for APC Level 2 applied competence in Valuation.",
+    "image": "https://images.pexels.com/photos/6115301/pexels-photo-6115301.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "content": [],
+    "summary": [
+      "Ransom strips give a third-party owner control over a developer\\'s access route; value is typically assessed as a share (often one-third per Stokes v Cambridge) of the development profit unlocked \u2014 always identify and price this risk at feasibility stage.",
+      "Marriage value is the additional value created by combining two interests; in JV and land assembly contexts it underpins profit-split negotiations and overage structuring, and must be explicitly modelled in the development appraisal.",
+      "Hope value reflects the probability-weighted expectation of future planning consent; it sits between EUV and fully consented residual value and must be stated with clear planning assumptions in any Red Book valuation.",
+      "RICS Red Book (VPS 4) requires clear distinction between Market Value and any special purchaser premium or marriage value element; development finance lenders will not lend against unqualified hope value without satisfactory planning risk assessment.",
+      "CPO powers \u2014 increasingly informed by LURA 2024 reforms on hope value \u2014 provide an important backstop mechanism in LA-partnered regeneration schemes, effectively capping the ransom a third party can extract by limiting compensation to the no-scheme market value."
+    ],
+    "qa": [
+      {
+        "q": "A ransom strip across your site\\'s only access route is owned by an adjoining occupier. How would you quantify the ransom value and what contractual protection would you seek?",
+        "a": "Using the Stokes v Cambridge principle as a starting point, I would quantify the ransom as approximately one-third of the development profit unlocked by access over the strip \u2014 so if scheme profit is \u00a36m, the ransom exposure could be up to \u00a32m. I would instruct solicitors to investigate whether any prescriptive easement or historic right of way already exists, which would negate the ransom. Contractually, I would make the acquisition conditional on resolving access \u2014 either by purchasing the strip outright (with a cap in the appraisal), agreeing an access licence, or including a CPO backstop provision where an LA partner is involved. The maximum land bid would be stress-tested with and without the ransom cost."
+      },
+      {
+        "q": "What is the difference between hope value and existing use value, and how do you reflect this distinction in a development appraisal?",
+        "a": "Existing use value (EUV) is the value of a site in its current lawful use, with no regard to any alternative development potential. Hope value is the premium above EUV that reflects the market\\'s expectation \u2014 not certainty \u2014 of obtaining planning permission for a more valuable use. In a development appraisal, I present EUV as the floor value (relevant for CPO compensation benchmarks under NPPG viability methodology), hope value as a probability-weighted intermediate figure (e.g. 70% x consented residual, less planning costs and risk), and full consented residual as the ceiling. The offer price is calibrated to the hope value scenario, with the contract structure (option or conditional) deferring exchange until planning risk is mitigated."
+      },
+      {
+        "q": "How does marriage value feature in a joint venture negotiation between Latimer and a private landowner contributing land without planning?",
+        "a": "The landowner\\'s land without planning has limited standalone value \u2014 perhaps agricultural or low-grade commercial. Latimer\\'s planning expertise, development finance and Homes England grant access are what unlock the development value. The marriage value is the difference between the sum of those separate values and the combined scheme value with consent. In negotiating the JV profit split, the landowner will argue for a higher share on the basis that their land contains the latent development potential; Latimer will argue that without its capital, grant and planning risk-taking the value would never be realised. The profit split \u2014 and any overage above a base scheme \u2014 is effectively the negotiated apportionment of marriage value between the parties."
+      },
+      {
+        "q": "Under the RICS Red Book, when must a valuer distinguish between Market Value and the price a special purchaser might pay?",
+        "a": "Under RICS Valuation \u2014 Global Standards (VPS 4), Market Value assumes a hypothetical willing buyer and seller with no special advantage. A special purchaser \u2014 such as an adjoining owner for whom a ransom strip has uniquely high strategic value \u2014 may pay more than MV because of a particular advantage only available to them. The valuer must identify if a special purchaser scenario applies and, if so, report the MV separately from the estimated price the special purchaser might pay. The premium above MV must be clearly explained and not blended into the MV figure, as MV is the basis on which most secured lending and investment committee decisions are made."
+      },
+      {
+        "q": "How do the Levelling-up and Regeneration Act 2024 reforms to land compensation affect Latimer\\'s approach to CPO-backed schemes?",
+        "a": "LURA 2024 introduced provisions allowing acquiring authorities, in defined circumstances, to disregard hope value when assessing CPO compensation \u2014 particularly for affordable housing delivery. For Latimer, working with LA partners on affordable-led regeneration, this is potentially significant: it means land within a CPO could be acquired closer to EUV rather than at a premium reflecting planning expectation, reducing the cost of assembly and improving scheme viability. However, the practical application of these provisions is still developing \u2014 the Secretary of State must designate specific areas \u2014 and their use remains politically sensitive. In practice, the threat of a hope-value-disregarding CPO can be a powerful lever in negotiation with recalcitrant landowners, even without the power being exercised."
+      }
+    ]
+  },
+  {
     "date": "2026-05-04",
     "topic": "Drawdown Schedules, Lender Reporting and Cash Flow Management in RP-Led Residential Schemes",
     "module": "Project Finance",

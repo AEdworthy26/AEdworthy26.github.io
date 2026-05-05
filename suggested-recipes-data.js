@@ -1,110 +1,168 @@
 // suggested-recipes-data.js
-// Auto-updated 2026-05-04 — do not edit manually
+// Auto-updated 2026-05-05 — do not edit manually
 
 window.SUGGESTED_RECIPES = [
   {
     id: "sug1",
-    title: "Grilled Halloumi & Roasted Red Pepper Salad with Bulgur, Pomegranate & Mint",
-    category: "Lunch",
-    time: "35 mins",
-    serves: "2",
-    desc: "A vibrant Eastern Mediterranean salad built around golden, squeaky halloumi and smoky sweet peppers on a bed of fluffy bulgur wheat. Jewels of pomegranate, fresh mint and a punchy lemon-sumac dressing bring bold contrast in every mouthful. It\'s satisfying enough to stand alone yet light enough for a spring afternoon.",
-    emoji: "🥗",
-    image: "https://images.unsplash.com/photo-1632446087108-a0034661001d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxHcmlsbGVkJTIwSGFsbG91bWklMjAlMjYlMjBSb2FzdGVkJTIwUmVkJTIwUGVwcGVyJTIwU2FsYWQlMjB3aXRoJTIwQnVsZ3VyJTJDJTIwUG9tZWdyYW5hdGUlMjAlMjYlMjBNaW50JTIwZm9vZCUyMGRpc2h8ZW58MHwwfHx8MTc3Nzg3MTQyOXww&ixlib=rb-4.1.0&q=80&w=1080",
-    ingredients: [
-      { name: "Halloumi, sliced 1cm thick", quantity: 250, unit: "g" },
-      { name: "Bulgur wheat (medium)", quantity: 150, unit: "g" },
-      { name: "Red peppers", quantity: 3, unit: "" },
-      { name: "Pomegranate seeds", quantity: 80, unit: "g" },
-      { name: "Fresh mint leaves", quantity: 15, unit: "g" },
-      { name: "Flat-leaf parsley, roughly chopped", quantity: 10, unit: "g" },
-      { name: "Spring onions, finely sliced", quantity: 3, unit: "" },
-      { name: "Toasted pine nuts", quantity: 40, unit: "g" },
-      { name: "Sumac", quantity: 1.5, unit: "tsp" },
-      { name: "Extra virgin olive oil", quantity: 4, unit: "tbsp" },
-      { name: "Lemon, juice and zest", quantity: 1, unit: "" },
-      { name: "Garlic clove, minced", quantity: 1, unit: "" },
-      { name: "Runny honey", quantity: 1, unit: "tsp" },
-      { name: "Salt and black pepper", quantity: 0, unit: "to taste" }
+    title: "Smoky Spanish Chorizo & White Bean Stew with Manchego Toasts",
+    category: "Dinner",
+    time: "40 mins",
+    serves: "4",
+    desc: "A deeply satisfying Spanish-style stew where spicy cured chorizo releases its paprika-rich oils into a broth of creamy white beans, sweet tomatoes, and wilted greens. Served with toasts rubbed with garlic and blanketed in shaved Manchego, it\'s a one-pot wonder that tastes like it\'s been bubbling for hours.",
+    emoji: "🫘",
+    image: "https://images.unsplash.com/photo-1715216553304-4960f95dfff2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTbW9reSUyMFNwYW5pc2glMjBDaG9yaXpvJTIwJTI2JTIwV2hpdGUlMjBCZWFuJTIwU3RldyUyMHdpdGglMjBNYW5jaGVnbyUyMFRvYXN0cyUyMGZvb2QlMjBkaXNofGVufDB8MHx8fDE3Nzc5NjU1MTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    ingredientGroups: [
+      {
+        group: "Main",
+        items: [
+          { name: "Cooking chorizo, sliced into thick coins", quantity: 300, unit: "g" },
+          { name: "Cannellini beans, drained and rinsed (2 tins)", quantity: 800, unit: "g" },
+          { name: "Cavolo nero or kale, tough stems removed, roughly chopped", quantity: 200, unit: "g" },
+          { name: "Cherry tomatoes", quantity: 250, unit: "g" },
+          { name: "Brown onion, finely diced", quantity: 1, unit: "" },
+          { name: "Garlic cloves, thinly sliced", quantity: 4, unit: "" },
+          { name: "Smoked paprika (pimentón de la Vera)", quantity: 2, unit: "tsp" },
+          { name: "Chicken or vegetable stock", quantity: 400, unit: "ml" },
+          { name: "Olive oil", quantity: 2, unit: "tbsp" },
+          { name: "Sherry vinegar", quantity: 1, unit: "tbsp" },
+          { name: "Flat-leaf parsley, roughly chopped", quantity: 1, unit: "small bunch" },
+          { name: "Flaky sea salt and black pepper", quantity: 0, unit: "to taste" }
+        ]
+      },
+      {
+        group: "Manchego Toasts",
+        items: [
+          { name: "Sourdough or rustic bread, thickly sliced", quantity: 4, unit: "slices" },
+          { name: "Garlic clove, halved", quantity: 1, unit: "" },
+          { name: "Manchego, shaved or coarsely grated", quantity: 80, unit: "g" },
+          { name: "Olive oil for drizzling", quantity: 1, unit: "tbsp" }
+        ]
+      }
+    ],
+    substitutes: [
+      { ingredient: "Cooking chorizo", alternatives: ["Spanish-style pork sausages with paprika", "Nduja stirred in at the end"] },
+      { ingredient: "Cannellini beans", alternatives: ["Butter beans", "Borlotti beans"] },
+      { ingredient: "Cavolo nero", alternatives: ["Savoy cabbage", "Spinach (add at the last minute)"] },
+      { ingredient: "Manchego", alternatives: ["Aged Cheddar", "Pecorino"] },
+      { ingredient: "Sherry vinegar", alternatives: ["Red wine vinegar", "A squeeze of lemon"] }
     ],
     instructions: [
-      "Step 1 — Roast the peppers: Place the whole red peppers directly over a gas flame or under a very hot grill, turning with tongs every 2–3 minutes until completely charred and collapsed all over. Transfer to a bowl, cover tightly with cling film and leave to steam for 10 minutes. Peel away the blackened skins, remove seeds and slice the flesh into thick strips. Reserve any sweet juices in the bowl.",
-      "Step 2 — Cook the bulgur: Place the bulgur in a heatproof bowl and pour over just enough boiling salted water to cover by 1cm. Cover with a plate and leave to absorb for 10–12 minutes. Fluff with a fork, season generously with salt and a drizzle of olive oil, then spread out to cool slightly.",
-      "Step 3 — Make the dressing: Whisk together the olive oil, lemon juice and zest, minced garlic, honey, sumac and a good pinch of salt. Taste — it should be bright, tangy and lightly sweet. Add any reserved pepper juices from the bowl.",
-      "Step 4 — Grill the halloumi: Heat a dry ridged griddle pan or heavy frying pan over high heat until smoking. Pat the halloumi slices dry with kitchen paper. Grill for 2 minutes per side without moving until deep golden char lines appear. Remove immediately — it firms up as it cools so serve promptly.",
-      "Step 5 — Assemble: Toss the bulgur with most of the dressing, the roasted pepper strips, spring onions and herbs. Spread onto a large serving platter. Lay the hot halloumi slices over the top, scatter over the pomegranate seeds and toasted pine nuts, drizzle with the remaining dressing and finish with an extra pinch of sumac."
+      "Step 1 — Heat the olive oil in a large, wide casserole or deep frying pan over medium-high heat. Add the chorizo coins and fry for 4–5 minutes, turning occasionally, until they are deeply golden and the pan is pooling with red, paprika-stained oil. Remove the chorizo with a slotted spoon and set aside, leaving all the fat in the pan.",
+      "Step 2 — Reduce the heat to medium. Add the diced onion to the same pan and cook in the chorizo fat for 5–6 minutes, stirring frequently, until soft and beginning to caramelise at the edges. Add the sliced garlic and smoked paprika and stir for 1 minute until fragrant — the pan should smell extraordinary.",
+      "Step 3 — Add the cherry tomatoes and cook for 3–4 minutes, pressing them down gently with the back of a spoon until they begin to blister and collapse into a loose, jammy sauce.",
+      "Step 4 — Pour in the stock and add the drained cannellini beans. Return the chorizo to the pan. Stir everything together, bring to a gentle simmer, and cook for 10 minutes so the beans absorb the smoky broth. Crush a quarter of the beans roughly with the back of a spoon to thicken the stew naturally.",
+      "Step 5 — Stir in the cavolo nero or kale, pushing it down into the liquid. Cook for a further 4–5 minutes until the greens are tender but still vivid. Add the sherry vinegar, taste, and season generously with salt and black pepper. The vinegar should brighten the whole dish without making it noticeably sour.",
+      "Step 6 — While the stew finishes, make the Manchego toasts. Toast or grill the bread until golden on both sides. Immediately rub one side of each slice with the cut garlic clove, drizzle with olive oil, and pile on the shaved Manchego. Return briefly to the grill for 1–2 minutes until the cheese is just melting.",
+      "Step 7 — Ladle the stew into deep bowls, scatter generously with flat-leaf parsley, and serve with the Manchego toasts on the side for dunking. A glass of Rioja is not optional."
     ]
   },
   {
     id: "sug2",
-    title: "Porcini & Pancetta Risotto with Crispy Sage & Aged Parmesan",
-    category: "Dinner",
-    time: "50 mins",
-    serves: "4",
-    desc: "A deeply savoury, earthy risotto that draws its backbone from a double hit of mushroom — dried porcini soaked to make the stock and fresh chestnut mushrooms sautéed until golden. Salty pancetta and a blizzard of aged Parmesan make this northern Italian classic thoroughly indulgent. Crispy fried sage leaves on top add a haunting, herbal crunch that elevates every spoonful.",
-    emoji: "🍚",
-    image: "https://images.unsplash.com/photo-1727375713771-5469d9a05db5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxQb3JjaW5pJTIwJTI2JTIwUGFuY2V0dGElMjBSaXNvdHRvJTIwd2l0aCUyMENyaXNweSUyMFNhZ2UlMjAlMjYlMjBBZ2VkJTIwUGFybWVzYW4lMjBmb29kJTIwZGlzaHxlbnwwfDB8fHwxNzc3ODcxNDI5fDA&ixlib=rb-4.1.0&q=80&w=1080",
-    ingredients: [
-      { name: "Dried porcini mushrooms", quantity: 30, unit: "g" },
-      { name: "Boiling water (for soaking)", quantity: 500, unit: "ml" },
-      { name: "Good quality chicken or vegetable stock", quantity: 900, unit: "ml" },
-      { name: "Pancetta lardons", quantity: 150, unit: "g" },
-      { name: "Chestnut mushrooms, thickly sliced", quantity: 300, unit: "g" },
-      { name: "Carnaroli or Arborio rice", quantity: 320, unit: "g" },
-      { name: "Shallots, finely diced", quantity: 3, unit: "" },
-      { name: "Garlic cloves, minced", quantity: 2, unit: "" },
-      { name: "Dry white wine", quantity: 150, unit: "ml" },
-      { name: "Unsalted butter", quantity: 60, unit: "g" },
-      { name: "Aged Parmesan, finely grated", quantity: 80, unit: "g" },
-      { name: "Fresh sage leaves", quantity: 16, unit: "" },
-      { name: "Olive oil", quantity: 3, unit: "tbsp" },
-      { name: "Thyme sprigs", quantity: 3, unit: "" },
-      { name: "Salt and black pepper", quantity: 0, unit: "to taste" }
+    title: "Japanese Gyoza Soup with Ginger Broth, Crispy Tofu & Sesame",
+    category: "Lunch",
+    time: "35 mins",
+    serves: "2",
+    desc: "This is the kind of soul-warming bowl that makes you feel immediately better about everything — store-bought gyoza transformed into something genuinely special by a deeply flavoured ginger, soy, and miso broth. Crispy pan-fried tofu adds substance, while sesame oil, spring onion, and chilli oil finish it with swagger.",
+    emoji: "🥟",
+    image: "https://images.unsplash.com/photo-1727867183218-66517e5d5c44?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxKYXBhbmVzZSUyMEd5b3phJTIwU291cCUyMHdpdGglMjBHaW5nZXIlMjBCcm90aCUyQyUyMENyaXNweSUyMFRvZnUlMjAlMjYlMjBTZXNhbWUlMjBmb29kJTIwZGlzaHxlbnwwfDB8fHwxNzc3OTY1NTE2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    ingredientGroups: [
+      {
+        group: "Broth",
+        items: [
+          { name: "Good-quality chicken or vegetable stock", quantity: 900, unit: "ml" },
+          { name: "Fresh ginger, peeled and cut into matchsticks", quantity: 30, unit: "g" },
+          { name: "Garlic cloves, smashed", quantity: 3, unit: "" },
+          { name: "White miso paste", quantity: 2, unit: "tbsp" },
+          { name: "Soy sauce", quantity: 2, unit: "tbsp" },
+          { name: "Mirin", quantity: 1, unit: "tbsp" },
+          { name: "Toasted sesame oil", quantity: 1, unit: "tsp" }
+        ]
+      },
+      {
+        group: "Bowl",
+        items: [
+          { name: "Pork or vegetable gyoza (fresh or frozen)", quantity: 12, unit: "" },
+          { name: "Firm tofu, pressed and cut into 2cm cubes", quantity: 200, unit: "g" },
+          { name: "Pak choi, halved lengthways", quantity: 2, unit: "heads" },
+          { name: "Neutral oil for frying", quantity: 2, unit: "tbsp" },
+          { name: "Cornflour", quantity: 1, unit: "tbsp" },
+          { name: "Spring onions, finely sliced", quantity: 3, unit: "" },
+          { name: "Chilli oil or crispy chilli in oil", quantity: 1, unit: "tbsp" },
+          { name: "Toasted sesame seeds", quantity: 1, unit: "tbsp" }
+        ]
+      }
+    ],
+    substitutes: [
+      { ingredient: "Pork gyoza", alternatives: ["Prawn gyoza", "Vegetable dumplings", "Wonton-style dumplings"] },
+      { ingredient: "Firm tofu", alternatives: ["Soft-boiled egg, halved", "Edamame"] },
+      { ingredient: "White miso", alternatives: ["Red miso (stronger, use a little less)", "A splash of fish sauce"] },
+      { ingredient: "Pak choi", alternatives: ["Baby spinach added at the last minute", "Tenderstem broccoli"] },
+      { ingredient: "Mirin", alternatives: ["A pinch of sugar plus a splash of rice vinegar"] }
     ],
     instructions: [
-      "Step 1 — Prepare the porcini stock: Soak the dried porcini in 500ml of boiling water for 20 minutes. Lift out with a slotted spoon, roughly chop and set aside. Carefully pour the dark soaking liquid into your chicken or vegetable stock through a fine sieve lined with kitchen paper to catch any grit. Keep the combined stock warm in a saucepan over low heat throughout cooking — cold stock will shock the rice and ruin the texture.",
-      "Step 2 — Crisp the pancetta and mushrooms: Heat 1 tbsp olive oil in a wide, heavy-bottomed saucepan over medium-high heat. Add the pancetta lardons and fry for 4–5 minutes until golden and crisp. Remove with a slotted spoon and set aside on kitchen paper. Increase heat to high, add the chestnut mushrooms to the pancetta fat with the thyme and cook without stirring for 3–4 minutes until deeply browned. Add the rehydrated porcini, toss, season and set aside with the pancetta.",
-      "Step 3 — Build the risotto base: Reduce heat to medium. Add 1 tbsp olive oil and 20g butter to the pan. Gently sweat the shallots for 5–6 minutes until completely soft and translucent. Add the garlic and stir for 1 minute. Add the rice and toast, stirring constantly, for 2 minutes until the grains look glassy at the edges and smell faintly nutty.",
-      "Step 4 — Cook the risotto: Pour in the white wine and stir vigorously until completely absorbed. Begin adding the warm porcini stock one ladleful at a time, stirring frequently and only adding the next ladle once the previous one is absorbed. This process takes 18–22 minutes. After 15 minutes, fold in the mushroom and pancetta mixture. The final risotto should be loose and flowing — all\'onda — not stiff.",
-      "Step 5 — Mantecatura and finish: Remove from heat. Add the remaining 40g cold butter cut into cubes and all but a handful of the Parmesan. Stir vigorously for 90 seconds to emulsify into a glossy, creamy sauce. Cover and rest for 2 minutes. Meanwhile, heat the remaining olive oil in a small pan over high heat and fry the sage leaves for 30–45 seconds until crisp. Drain on paper. Serve the risotto in warm bowls topped with crispy sage, reserved Parmesan and a crack of black pepper."
+      "Step 1 — Start the broth. Pour the stock into a medium saucepan and add the ginger matchsticks and smashed garlic. Bring to a gentle simmer over medium heat and cook for 10 minutes to allow the aromatics to fully infuse the liquid. You want the broth to smell clean and deeply gingery.",
+      "Step 2 — Meanwhile, prepare the crispy tofu. Pat the tofu cubes very dry with kitchen paper — this is essential for crispiness. Toss in the cornflour with a pinch of salt until lightly coated. Heat the neutral oil in a non-stick frying pan over high heat. Fry the tofu for 3–4 minutes per side without disturbing, until golden and crisp all over. Remove and drain on kitchen paper.",
+      "Step 3 — Strain the broth through a sieve, discarding the ginger and garlic, and return the clear broth to the pan. Whisk in the white miso paste until fully dissolved (don\'t let it boil vigorously after adding miso — it kills the flavour). Add the soy sauce, mirin, and sesame oil. Taste and adjust seasoning.",
+      "Step 4 — Bring the broth back to a gentle simmer. Add the gyoza and cook according to packet instructions (usually 4–6 minutes for fresh, 6–8 for frozen), until they float and are cooked through. In the last 2 minutes, add the halved pak choi and cook until the leaves are tender and the stalks still have a little bite.",
+      "Step 5 — Divide the gyoza, pak choi, and crispy tofu between two deep bowls. Ladle over the hot broth generously. Finish each bowl with a tangle of sliced spring onions, a drizzle of chilli oil, and a scattering of toasted sesame seeds. Eat immediately while the gyoza are still perfectly tender."
     ]
   },
   {
     id: "sug3",
-    title: "Spiced Beef Keema with Peas, Soft-Boiled Eggs & Warm Roti",
+    title: "Ethiopian Doro Wat — Spiced Braised Chicken in Berbere Butter Sauce with Injera",
     category: "Dinner",
-    time: "45 mins",
+    time: "1 hr 15 mins",
     serves: "4",
-    desc: "Keema is one of South Asia\'s great comfort dishes — minced beef cooked down with warming spices, tomato and aromatics into a rich, fragrant mince that\'s deeply satisfying yet surprisingly quick. The addition of fresh peas adds sweetness and a flash of spring colour, while jammy soft-boiled eggs laid on top make it a complete and beautiful meal. Serve with warm roti or chapati to scoop up every last bit.",
-    emoji: "🥘",
-    image: "https://images.unsplash.com/photo-1774127026693-3c9aeddb1a40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTcGljZWQlMjBCZWVmJTIwS2VlbWElMjB3aXRoJTIwUGVhcyUyQyUyMFNvZnQtQm9pbGVkJTIwRWdncyUyMCUyNiUyMFdhcm0lMjBSb3RpJTIwZm9vZCUyMGRpc2h8ZW58MHwwfHx8MTc3Nzg3MTQzNnww&ixlib=rb-4.1.0&q=80&w=1080",
-    ingredients: [
-      { name: "Minced beef (20% fat)", quantity: 600, unit: "g" },
-      { name: "Frozen or fresh peas", quantity: 150, unit: "g" },
-      { name: "Eggs", quantity: 4, unit: "" },
-      { name: "Onions, finely diced", quantity: 2, unit: "" },
-      { name: "Garlic cloves, minced", quantity: 4, unit: "" },
-      { name: "Fresh ginger, grated", quantity: 30, unit: "g" },
-      { name: "Tinned chopped tomatoes", quantity: 400, unit: "g" },
-      { name: "Green finger chillies, sliced", quantity: 2, unit: "" },
-      { name: "Ground cumin", quantity: 2, unit: "tsp" },
-      { name: "Ground coriander", quantity: 2, unit: "tsp" },
-      { name: "Garam masala", quantity: 1.5, unit: "tsp" },
-      { name: "Turmeric", quantity: 0.5, unit: "tsp" },
-      { name: "Kashmiri chilli powder", quantity: 1, unit: "tsp" },
-      { name: "Whole black cardamom pods", quantity: 2, unit: "" },
-      { name: "Bay leaves", quantity: 2, unit: "" },
-      { name: "Neutral oil", quantity: 3, unit: "tbsp" },
-      { name: "Fresh coriander, to serve", quantity: 15, unit: "g" },
-      { name: "Roti or chapati", quantity: 4, unit: "" },
-      { name: "Salt", quantity: 0, unit: "to taste" }
+    desc: "Doro Wat is Ethiopia\'s most celebrated dish — chicken braised low and slow in a gloriously deep, brick-red berbere and niter kibbeh sauce that is simultaneously spicy, aromatic, and impossibly rich. Hard-boiled eggs are a traditional and essential addition, absorbing the sauce as they sit, and the whole thing served over spongy injera (or flatbread) makes for a meal that is completely unlike anything else.",
+    emoji: "🍗",
+    image: "https://images.pexels.com/photos/35156472/pexels-photo-35156472.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    ingredientGroups: [
+      {
+        group: "Chicken & Eggs",
+        items: [
+          { name: "Bone-in chicken thighs and drumsticks, skin removed", quantity: 1.2, unit: "kg" },
+          { name: "Eggs", quantity: 4, unit: "" },
+          { name: "Lemon juice", quantity: 2, unit: "tbsp" },
+          { name: "Salt", quantity: 1, unit: "tsp" }
+        ]
+      },
+      {
+        group: "Sauce Base",
+        items: [
+          { name: "Red onions, very finely diced", quantity: 4, unit: "large" },
+          { name: "Unsalted butter", quantity: 80, unit: "g" },
+          { name: "Berbere spice blend", quantity: 3, unit: "tbsp" },
+          { name: "Garlic cloves, minced", quantity: 5, unit: "" },
+          { name: "Fresh ginger, finely grated", quantity: 25, unit: "g" },
+          { name: "Tomato purée", quantity: 2, unit: "tbsp" },
+          { name: "Chicken stock or water", quantity: 250, unit: "ml" },
+          { name: "Dry red wine or tej (Ethiopian honey wine)", quantity: 100, unit: "ml" },
+          { name: "Cardamom pods, lightly crushed", quantity: 3, unit: "" },
+          { name: "Salt and black pepper", quantity: 0, unit: "to taste" }
+        ]
+      },
+      {
+        group: "To Serve",
+        items: [
+          { name: "Injera (store-bought) or warmed flatbreads", quantity: 4, unit: "" },
+          { name: "Fresh coriander or flat-leaf parsley", quantity: 1, unit: "small handful" }
+        ]
+      }
+    ],
+    substitutes: [
+      { ingredient: "Berbere spice blend", alternatives: ["Mix of 1 tbsp each smoked paprika and chilli flakes, plus ½ tsp each of cinnamon, fenugreek, coriander, and allspice"] },
+      { ingredient: "Bone-in chicken thighs", alternatives: ["Whole chicken legs", "Chicken drumsticks only"] },
+      { ingredient: "Dry red wine", alternatives: ["Extra stock plus a splash of red wine vinegar", "Pomegranate juice"] },
+      { ingredient: "Injera", alternatives: ["Warmed flatbreads", "Toasted sourdough", "Steamed basmati rice"] }
     ],
     instructions: [
-      "Step 1 — Soft-boil the eggs: Bring a small saucepan of water to a rolling boil. Lower the eggs in gently and cook for exactly 6 minutes and 30 seconds. Transfer immediately to an ice bath for 5 minutes, then peel carefully and set aside. These will go in whole at the end.",
-      "Step 2 — Build the masala base: Heat the oil in a large, wide frying pan or karahi over medium-high heat. Add the black cardamom pods and bay leaves and let them sizzle for 30 seconds until fragrant. Add the diced onions and cook, stirring regularly, for 10–12 minutes until deep golden brown — don\'t rush this, as caramelised onion is the backbone of the dish. Add the garlic, ginger and green chillies and cook for a further 2 minutes.",
-      "Step 3 — Add the spices: Reduce to medium heat. Add the cumin, coriander, turmeric and Kashmiri chilli powder and stir for 60 seconds until the spices are fragrant and coating the onion. Add the tinned tomatoes and cook down for 6–8 minutes, stirring occasionally, until the oil begins to separate from the masala and the mixture is thick and paste-like.",
-      "Step 4 — Cook the keema: Increase heat to high and add the minced beef, breaking it up thoroughly with a wooden spoon. Cook for 8–10 minutes, stirring frequently, until the mince is well browned and any liquid has fully evaporated — this browning is essential for depth of flavour. Season generously with salt. Stir in the garam masala and cook for 1 further minute.",
-      "Step 5 — Finish and serve: Add the peas and stir through for 2–3 minutes until just cooked. Taste and adjust seasoning. Nestle the peeled soft-boiled eggs gently into the keema, cutting them lightly so the yolk begins to bleed into the mince. Scatter generously with fresh coriander and serve straight from the pan with warm roti."
+      "Step 1 — Score the chicken pieces a few times to the bone with a sharp knife — this helps the sauce penetrate deeply. Rub all over with lemon juice and salt and set aside for 15 minutes. Meanwhile, hard-boil the eggs for 9 minutes, cool in cold water, peel, and pierce each one all over with a fork or skewer. This allows the sauce to absorb into the eggs as they cook — don\'t skip this.",
+      "Step 2 — The most critical step: dry-cook the diced red onions in a large, heavy-bottomed pot or Dutch oven over medium-low heat with no oil or butter for 15–20 minutes, stirring frequently. The onions will soften dramatically and release their moisture, eventually becoming a deep, jammy, almost dry mass. This is the foundation of the sauce and cannot be rushed.",
+      "Step 3 — Add the butter to the onions and let it melt into them. Then add the berbere spice blend and stir continuously for 2–3 minutes until the spices are toasted in the butter and the kitchen smells incredible. Add the minced garlic, grated ginger, and crushed cardamom pods and cook for another 2 minutes.",
+      "Step 4 — Stir in the tomato purée and cook for 1 minute. Pour in the red wine and let it bubble and reduce by half, about 2 minutes. Add the stock, stir well, and bring to a simmer.",
+      "Step 5 — Add the chicken pieces, turning to coat in the sauce. Nestle them in so they are mostly submerged. Cover with a lid, reduce heat to low, and braise for 30 minutes, turning the chicken once halfway through.",
+      "Step 6 — Remove the lid. Add the peeled, pricked hard-boiled eggs to the sauce, pushing them in gently. Continue cooking uncovered for a further 15 minutes until the sauce has thickened to a rich, coating consistency and the chicken is completely tender and falling off the bone. Taste and season generously.",
+      "Step 7 — To serve, lay injera or flatbreads on large plates or a communal platter. Spoon the chicken and eggs over the bread, ladling the sauce generously over everything — the bread should soak it up. Scatter with fresh coriander and serve immediately. Doro Wat is traditionally eaten communally, scooping with torn pieces of injera."
     ]
   }
 ];

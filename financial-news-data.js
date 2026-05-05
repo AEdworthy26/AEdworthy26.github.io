@@ -4,40 +4,27 @@
 var FINANCIAL_NEWS = {
   date: "2026-05-05",
   main: {
-    title: "Gulf Clash Sends Brent and Inflation Expectations to Landmark Highs as Markets Reel",
-    category: "Markets & Economics",
+    title: "Oil Prices Slide but Remain Elevated as Middle East Conflict Chokes Hormuz Shipping",
+    category: "Markets & Commodities",
     content: [
-      "Global markets sold off sharply on Tuesday after an exchange of fire between the United States and Iran in the Gulf region drove Brent crude prices to new highs and sent inflation expectations surging. Asian equities followed Wall Street lower in overnight trading, with the dollar strengthening as investors fled to safe-haven assets. The escalation has forced traders and economists to reassess near-term outlooks for energy costs, supply chains, and central bank policy across major economies.",
-      "At the heart of the market anxiety is the Strait of Hormuz, through which roughly 20% of the world\'s traded oil passes daily. The US has announced it will begin 'guiding' stranded vessels out of the waterway, but shipping firms have openly questioned whether that commitment translates into genuine safety for commercial traffic. Insurance premiums for vessels transiting the region have spiked dramatically, adding a tangible cost layer to global trade that analysts warn will feed through quickly into consumer prices.",
-      "Oil\'s surge is rekindling inflation fears that central banks had only recently begun to tame. With Brent hitting landmark highs, energy-sensitive sectors from airlines to petrochemicals are facing an abrupt repricing of their cost bases. Bond markets reflected the concern, with inflation breakevens — a market measure of expected future price growth — climbing to levels not seen since the peak of the 2022 energy crisis, complicating the calculus for the Federal Reserve and the European Central Bank as both weigh potential rate adjustments later this year.",
-      "The broader macroeconomic consequences are potentially severe. Indonesia\'s economy, which posted a stronger-than-expected 5.6% growth rate for the first quarter of 2026, was cited by Bloomberg analysts as a rare bright spot displaying resilience 'even as the prolonged war in Iran begins to weigh on global growth' — language that signals how widely the conflict\'s economic drag is now being acknowledged. Supply chain strategists are warning of second-order effects including delayed manufacturing shipments, higher freight costs, and potential shortages of Gulf-produced petrochemicals used in plastics and fertilisers worldwide.",
-      "Equity strategists caution that the market selloff may deepen if the situation in the Strait does not stabilise quickly. Energy stocks were among the few gainers in Monday\'s session, but broader indices suffered as technology and consumer discretionary shares led losses. The episode underscores the fragility of a global economy already navigating trade uncertainty, and it raises serious questions about how sustained high oil prices would interact with still-elevated household cost pressures — particularly in Europe and Asia, where energy import dependence remains acute."
+      "Oil prices retreated on Tuesday, giving back a portion of the sharp gains recorded in the previous session, as markets attempted to digest the rapidly escalating military situation in the Middle East. Brent crude and West Texas Intermediate both edged lower, though both benchmarks remained significantly elevated compared to levels seen before the latest round of hostilities. Traders are caught between the near-term relief of some vessels successfully clearing the Strait of Hormuz and the persistent fear that the conflict could intensify further, cutting off one of the world\'s most critical energy chokepoints.",
+      "The Strait of Hormuz remains at the center of global energy market anxiety, with hundreds of vessels reported clustering near Dubai as shipping companies seek safety away from the contested waterway. Shipping giant Maersk confirmed that one of its US-flagged commercial vessels had successfully exited the strait under US military escort, offering a rare moment of reassurance to markets. However, Bloomberg reported that Iran has been actively widening its area of operational control in the region, keeping the broader passage effectively empty and the risk premium on oil stubbornly high.",
+      "The disruption to oil flows through Hormuz carries profound implications for global energy supply, given that roughly 20 percent of the world\'s traded oil passes through the strait on any given day. Analysts warn that even a partial or intermittent closure could rapidly drain strategic petroleum reserves across importing nations, pushing prices sharply higher again. Airlines, petrochemical companies, and utilities are among the industries already scrambling to secure alternative supply arrangements, with jet fuel shortages beginning to emerge as a distinct concern for the coming summer travel season.",
+      "Financial markets more broadly have been rattled by the conflict\'s trajectory, with equities under pressure and safe-haven assets such as gold and government bonds seeing renewed demand. HSBC\'s latest earnings update underscored the widening financial fallout, as the bank raised its expected credit loss forecast for the year, citing both a major UK fraud-related charge and the economic disruption stemming from the Iran conflict. The bank now expects its expected credit loss charge as a percentage of average gross loans to reach approximately 45 basis points in 2026, a significant upward revision that signals growing concern among major lenders about the war\'s knock-on effects on creditworthiness and economic activity.",
+      "Longer-term, the sustained elevation in oil prices is already reshaping strategic energy decisions globally. China, facing high import costs, has doubled down on its wind power industrial policy, leveraging subsidies and import restrictions to accelerate a domestic buildout that could reduce its hydrocarbon dependency over time. For Western economies, the crisis is renewing urgent debate about energy security, supply chain resilience, and the pace of transition away from fossil fuels — with the market\'s message being stark: geopolitical risk in the Gulf is no longer a tail risk, but a persistent and structurally significant feature of the global economic landscape."
     ],
-    image: "https://images.unsplash.com/photo-1632507127573-f4098f6f027f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxHdWxmJTIwQ2xhc2glMjBTZW5kcyUyMEJyZW50JTIwYW5kJTIwSW5mbGF0aW9uJTIwRXhwZWN0YXRpb25zJTIwdG8lMjBMYW5kbWFyayUyMEhpZ2hzJTIwYXMlMjBNYXJrZXRzJTIwUmVlbHxlbnwwfDB8fHwxNzc3OTU3NDEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
-    source: "Bloomberg Markets",
-    sourceUrl: "https://www.bloomberg.com/opinion/newsletters/2026-05-05/iran-draws-a-line-and-puts-markets-on-notice"
+    image: "https://static01.nyt.com/images/2026/05/05/multimedia/05Biz-Oil-Stocks-Gas-promo-cflk/05Biz-Oil-Stocks-Gas-promo-cflk-mediumSquareAt3X.jpg",
+    source: "The New York Times",
+    sourceUrl: "https://www.nytimes.com/2026/05/05/business/oil-gas-prices-iran.html"
   },
   secondary: [
     {
       id: "fn1",
-      title: "GameStop Makes Audacious $55.5 Billion Takeover Bid for eBay",
-      summary: "GameStop CEO Ryan Cohen has launched a $55.5 billion offer to acquire eBay, framing the deal as a bid to build a serious rival to Amazon.",
+      title: "Palantir Posts Fastest-Ever Revenue Growth, Riding Wave of AI Demand",
+      summary: "Palantir beat earnings expectations with its strongest revenue growth on record, driven by explosive demand for its AI platforms in the US market.",
       body: [
-        "GameStop, the video game retailer that became a symbol of meme-stock mania, has dramatically raised its corporate ambitions by tabling a $55.5 billion takeover offer for e-commerce marketplace eBay. CEO Ryan Cohen argues that eBay\'s existing infrastructure and seller base could be transformed into a far more formidable competitor to Amazon with the right strategic vision and investment.",
-        "The audacious bid marks one of the most unexpected proposed mergers in recent memory, given GameStop\'s origins as a struggling brick-and-mortar retailer. Markets will be closely watching eBay\'s board response and whether institutional investors view the offer price and Cohen\'s vision as credible, particularly given the enormous financing questions such a deal would raise."
-      ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/0759/live/6f3aea00-474a-11f1-b55d-0f258dce1735.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/cn0p8yled1do?at_medium=RSS&at_campaign=rss",
-      category: "Mergers & Acquisitions"
-    },
-    {
-      id: "fn2",
-      title: "Palantir Posts Fastest Revenue Growth Ever Amid Explosive AI Demand",
-      summary: "Palantir Technologies reported its highest-ever revenue growth rate, driven by surging demand for its AI products in the US market.",
-      body: [
-        "Palantir Technologies beat earnings expectations in its latest quarterly report, recording the fastest revenue growth in the company\'s history as demand for artificial intelligence tools from US government and commercial clients accelerated sharply. The company also took the opportunity to distance itself from what it labelled 'AI slop' — a term for low-quality, mass-produced AI-generated content flooding the market.",
-        "The results underscore the widening divergence in the AI sector between companies with defensible, enterprise-grade platforms and those riding a more speculative wave of hype. Palantir\'s strong performance adds to a growing body of earnings evidence suggesting that real-world AI deployment, particularly in defence, intelligence, and large-scale data analytics, is entering a durable growth phase."
+        "Palantir Technologies reported its fastest revenue growth in the company\'s history, surpassing analyst expectations as demand for its artificial intelligence and data analytics platforms surged, particularly among US government and commercial clients. The results underscored the company\'s increasingly central role in the AI infrastructure buildout, with management pointedly criticizing what they called 'AI slop' — a term aimed at undifferentiated, low-quality AI products from competitors.",
+        "The strong print from Palantir adds to a growing body of evidence that enterprise and government spending on serious AI capabilities is accelerating, even as broader tech valuations remain volatile. Investors have increasingly viewed Palantir as a bellwether for real-world AI adoption, and Tuesday\'s results are likely to reinforce that narrative and provide a degree of support to the wider AI sector."
       ],
       image: "https://images.mktw.net/im-47990992",
       source: "MarketWatch",
@@ -45,17 +32,30 @@ var FINANCIAL_NEWS = {
       category: "Corporate Earnings"
     },
     {
-      id: "fn3",
-      title: "Amazon Opens Its Logistics Network to Outside Businesses in Major Expansion",
-      summary: "Amazon is offering its shipping, fulfilment, and delivery infrastructure to third-party companies, with several large corporations already signed on.",
+      id: "fn2",
+      title: "Amazon Opens Its Logistics Network to Outside Businesses",
+      summary: "Amazon is expanding its shipping, fulfillment, and delivery infrastructure to third-party companies, marking a significant push to monetize its vast logistics operation.",
       body: [
-        "Amazon has announced a significant expansion of its logistics arm, making its delivery and fulfilment capabilities available to businesses outside its own marketplace for the first time at scale. The move transforms what was built as an internal competitive advantage into a standalone revenue-generating service, potentially reshaping the competitive landscape for third-party logistics providers.",
-        "The strategy mirrors Amazon\'s earlier playbook with Amazon Web Services, where internal infrastructure was commercialised into one of the most profitable businesses in the world. Analysts say the logistics expansion could open a substantial new revenue stream while simultaneously deepening the dependency of major retailers on Amazon\'s ecosystem — a dynamic that is likely to attract regulatory scrutiny."
+        "Amazon announced it will offer its world-class shipping, fulfillment, and last-mile delivery services to businesses beyond its own marketplace, with several large corporations already confirmed as early clients. The move transforms Amazon\'s logistics arm from an internal competitive advantage into a standalone revenue-generating business line, putting it in direct competition with established players such as UPS and FedEx.",
+        "The expansion represents a classic Amazon strategy of converting internal infrastructure into a commercial product — the same playbook that turned its cloud computing operations into Amazon Web Services, now the company\'s most profitable division. Analysts say the logistics-as-a-service market is substantial, and Amazon\'s scale and technology advantages could allow it to undercut rivals on price while maintaining strong margins."
       ],
       image: "https://static01.nyt.com/images/2026/05/04/multimedia/04biz-amazon-logistics-qzlk/04biz-amazon-logistics-qzlk-mediumSquareAt3X.jpg",
       source: "The New York Times",
       url: "https://www.nytimes.com/2026/05/04/business/amazon-shipping-services.html",
       category: "Business"
+    },
+    {
+      id: "fn3",
+      title: "UK Bond Markets Nervously Eye Labour Leadership Uncertainty",
+      summary: "Gilt traders are closely watching potential Labour leadership contenders, fearing that a shift to less fiscally disciplined leadership could unsettle the UK\'s sovereign bond market.",
+      body: [
+        "Investors in UK government bonds are growing increasingly anxious about the political uncertainty surrounding the Labour Party leadership, with potential successors to Keir Starmer — including Angela Rayner and Andy Burnham — scrambling to reassure markets that they would maintain existing fiscal rules. The concern is that a leadership change could bring looser spending commitments, echoing the market turmoil triggered by the Liz Truss mini-budget in 2022, which sent gilt yields surging and forced an emergency Bank of England intervention.",
+        "Bond market participants have described 'a good deal of fear' in the market about the UK\'s fiscal trajectory, with gilt spreads already reflecting some degree of political risk premium. The episode highlights how sovereign bond markets have become a powerful and immediate check on government fiscal ambitions in the post-Truss era, with traders ready to punish any perceived deviation from credible debt management."
+      ],
+      image: "https://i.guim.co.uk/img/media/4f5507fdb7d9cad98b90d87e2caa766bba601930/1170_113_2937_2350/master/2937.jpg?width=1200&quality=85&auto=format&fit=max&s=d3ac1da6f12426154f35baaba1917cef",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/business/2026/may/05/labour-leadership-challenge-bond-markets-angela-rayner-andy-burnham-keir-starmer",
+      category: "Economics"
     }
   ]
 };

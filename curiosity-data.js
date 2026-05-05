@@ -1,89 +1,88 @@
 // curiosity-data.js
-// Auto-updated 2026-05-04 — do not edit manually
+// Auto-updated 2026-05-05 — do not edit manually
 
 var CURIOSITY_DATA = {
-  date: "2026-05-04",
+  date: "2026-05-05",
   mainArticle: {
-    title: "The Plague of Justinian: How a Pandemic Unmade the Ancient World",
-    subject: "Justinian I and the Plague of Justinian",
-    subtitle: "Before the Black Death, a different pestilence swept the Mediterranean — and may have ended Rome\'s last chance at resurrection.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/3/3d/Mosaic_of_Justinianus_I_-_Basilica_San_Vitale_%28Ravenna%29.jpg",
+    title: "The Silk Road of the Sea: How the Monsoon Winds Built the Indian Ocean World",
+    subject: "Indian Ocean trade routes and monsoon winds",
+    subtitle: "Long before European ships rounded Africa, Arab, Indian, and Chinese merchants had mastered the greatest trading system the ancient world ever knew.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/d/d3/Indian_Ocean-CIA_WFB_Map.png",
     readTime: "8 min",
     content: [
       {
         type: "paragraph",
-        text: "In the year 541 AD, ships arriving at the Egyptian port of Pelusium carried grain from the Nile Delta — and something else entirely. Rats swarmed the docks, and within weeks the sailors were dying with terrifying swiftness: fever, delirium, and swellings the size of apples beneath their arms and in their groins. The disease moved west along the shipping lanes with the same efficiency that had made the Roman trade network great. Within a year, it had reached Constantinople, the capital of the Byzantine Empire and the most populous city in the Western world."
+        text: "Sometime around the first century BCE, a Greek sailor named Hippalus — or so the story goes — 'discovered' that the Indian Ocean breathed. Every summer the winds blew steadily northeast toward India; every winter they reversed and carried ships home. In reality, Arab and Indian navigators had known this for centuries, and the monsoon system had already been sustaining one of history\'s most complex and lucrative trading networks. What Hippalus may have done was simply convince Mediterranean merchants that the route was safe enough for Roman gold."
       },
       {
         type: "heading",
-        text: "The Emperor Who Survived — and Wished He Hadn\'t"
+        text: "A Highway Made of Wind"
       },
       {
         type: "paragraph",
-        text: "Emperor Justinian I was at the height of his ambition in 541. His generals had just recaptured North Africa from the Vandals and were in the process of wresting Italy from the Ostrogoths — a breathtaking military campaign that seemed to herald the genuine restoration of a unified Roman Empire. Then the plague arrived in Constantinople and killed perhaps five thousand people a day at its peak, according to the court historian Procopius. Justinian himself contracted the disease, survived against the odds, and emerged into an empire that would never recover its momentum."
+        text: "The Indian Ocean is the only ocean on Earth whose surface winds reverse direction seasonally, driven by the differential heating of land and sea across Asia and Africa. This predictable rhythm transformed what might have been a terrifying expanse of open water into something navigators could plan around with almost calendar precision. Sailors loaded their dhows and junks knowing that nature itself would deliver them to their destination and then, six months later, bring them home again. The monsoon did not merely assist trade — it made civilisation on this scale possible."
       },
       {
         type: "heading",
-        text: "Yersinia Pestis: The Same Killer, a Different Century"
+        text: "The Ports at the End of the World"
       },
       {
         type: "paragraph",
-        text: "For centuries, scholars debated whether the Plague of Justinian was truly bubonic plague or something else entirely. Ancient descriptions of swellings — called buboes — were suggestive, but proof was elusive. Then, in the 2010s, geneticists extracted DNA from the teeth of sixth-century plague victims buried in Bavaria and identified the culprit definitively: Yersinia pestis, the very bacterium responsible for the Black Death eight centuries later. The Justinianic strain appears to have originated in Central Asia and reached the Mediterranean via the same trade routes that carried silk and spices."
+        text: "At the height of the Roman Empire, the emporium of Muzris on India\'s Malabar Coast received Roman merchant vessels carrying vast quantities of gold coin, wine, and glassware. In exchange, Rome\'s wealthy elite consumed pepper, cardamom, ivory, and Chinese silk at prices that horrified moralists. The Elder Pliny complained that India drained fifty million sesterces from the Roman treasury every year — a figure that, even if exaggerated, points to a trade deficit that shaped imperial monetary policy. Archaeology has since confirmed the scale: Roman coins and amphorae turn up in excavations from southern India to Vietnam."
       },
       {
         type: "heading",
-        text: "A World Turned Upside Down"
+        text: "The Middlemen Who Shaped History"
       },
       {
         type: "paragraph",
-        text: "The pandemic did not strike once and retreat. It returned in waves — at least fifteen recurrences between 541 and 750 AD — each one finding fresh populations with no immunity and weakened food supplies. Procopius describes Constantinople\'s streets littered with corpses, mass graves dug outside the city walls, and Justinian himself supervising the disposal of the dead when officials had fled or died. Agricultural land fell fallow across Egypt, Syria, and Anatolia as the farming population collapsed, and tax revenues — the lifeblood of the Byzantine military machine — dried up catastrophically."
+        text: "The greatest beneficiaries of the system were rarely its endpoints but its intermediaries. Arab merchants sailing from Oman and Yemen, Indian Gujarati traders, Jewish and later Muslim Swahili merchants on the East African coast — these were the people who understood every leg of the network and extracted value at each transfer point. The city of Calicut on the Malabar Coast became so synonymous with Indian textiles that we still name a fabric after it: calico. Hormuz, at the mouth of the Persian Gulf, grew so wealthy that a Portuguese chronicler wrote that if the world were a ring, Hormuz would be its jewel."
       },
       {
         type: "heading",
-        text: "The Italian Campaign: A Dream Deferred Forever"
+        text: "What Actually Travelled"
       },
       {
         type: "paragraph",
-        text: "The consequences for Justinian\'s grand reconquest of Italy were devastating and irreversible. His general Belisarius, one of the greatest commanders of late antiquity, found himself fighting not just the Ostrogoths but famine, depleted reinforcements, and a treasury that could no longer sustain the campaign. The war dragged on for nearly twenty years, turning Italy from a prosperous Roman province into a depopulated wasteland of ruined cities and abandoned farms. When the Lombards invaded from the north in 568 — just three years after the war finally ended — there was nothing left to stop them."
+        text: "Spices and silk get all the glory, but the Indian Ocean trade moved something far more consequential: ideas, religions, and people. Buddhism travelled from India to Southeast Asia along merchant shipping lanes, not overland missionary paths. Islam reached the Indonesian archipelago centuries before any conquering army, carried by Muslim traders whose piety and commercial networks were inseparable. The Swahili language itself is a monument to this mixing — a Bantu grammar carrying hundreds of Arabic loanwords, the linguistic residue of a thousand years of coastal commerce."
       },
       {
         type: "heading",
-        text: "The Rise of Islam: A Connection Scholars Still Debate"
+        text: "The Disruption of 1498"
       },
       {
         type: "paragraph",
-        text: "Some historians have drawn a striking connection between the Plague of Justinian and the rapid expansion of Islam in the seventh century. The Byzantine Empire and the Sassanid Persian Empire — the two great powers that had dominated the Middle East for generations — were both demographically and economically shattered by a century of plague and near-constant war with each other. When Arab armies erupted out of Arabia in the 630s, they met opponents who were exhausted, depleted, and bitterly resentful of the taxes levied to pay for fruitless campaigns. The speed with which both empires collapsed before the Islamic advance is otherwise difficult to explain."
+        text: "When Vasco da Gama rounded the Cape of Good Hope and arrived at Calicut in 1498, he was not discovering an unknown world — he was gate-crashing a thriving one. The Arab pilot Ahmed ibn Majid guided his fleet across the final stretch, proof that the Indian Ocean network had navigational knowledge Europeans could only borrow. What Portugal brought was not superior seamanship but superior firepower, and within decades the Estado da India was extorting tolls from merchants who had sailed freely for centuries. The violence was shocking precisely because the existing system had been, by the standards of the age, remarkably open."
       },
       {
         type: "heading",
-        text: "What the Plague Left Behind"
+        text: "The World the Monsoon Made"
       },
       {
         type: "paragraph",
-        text: "The Plague of Justinian reshaped the demographic map of the Mediterranean in ways that persisted for centuries. Egypt, once the breadbasket of the ancient world, saw its population fall by perhaps a third and never fully recovered under Byzantine rule. The great cities of Syria — Antioch, Apamea, Laodicea — shrank from metropolises to provincial towns. Interestingly, some historians argue that the plague also accelerated a cultural shift: the surviving populations became intensely focused on the afterlife, fuelling a surge in monastic movements, apocalyptic theology, and the distinctive spiritual intensity that characterises late antique Christianity."
+        text: "The Indian Ocean world produced artistic and architectural forms that defy simple national attribution. The mosque styles of coastal East Africa blend Arab pointed arches with local coral stone and mangrove timber in ways that belong to no single culture. The cuisine of Malaysia fuses Chinese technique, Indian spice, and Malay ingredient into something entirely its own. Even the crops moved: Southeast Asian sugarcane and citrus reached the Mediterranean via Arab traders; American chillies, arriving after 1500, were so rapidly absorbed into Indian and Thai cooking that it is now almost impossible to imagine those cuisines without them."
       },
       {
         type: "heading",
-        text: "History\'s Forgotten Catastrophe"
+        text: "Why This Story Was Forgotten — and Why It Matters"
       },
       {
         type: "paragraph",
-        text: "The Black Death of the fourteenth century has entered cultural mythology as the definitive medieval catastrophe — the subject of art, literature, and endless scholarly attention. The Plague of Justinian, which may have killed between 25 and 50 million people across its two-century run, has slipped into relative obscurity. Yet its consequences were arguably more transformative: it closed the door on the possibility of a revived Roman Empire, restructured the religious geography of the Mediterranean, and set in motion the chain of events that would produce medieval Europe as we recognise it. It is, in a very real sense, the pandemic that made the modern world."
+        text: "For much of the nineteenth and twentieth centuries, Western historiography framed the story of global trade as beginning with European expansion. The Indian Ocean world was treated as a collection of passive markets waiting to be connected by Portuguese caravels and Dutch East Indiamen. Historians like K.N. Chaudhuri and, later, Michael Pearson and Janet Abu-Lughod spent careers dismantling this myth, demonstrating that a genuinely globalised economy existed centuries before Vasco da Gama set sail. Their work reshaped how we understand not just trade history but the very definition of modernity. The monsoon, it turns out, was the first engine of globalisation — and it ran entirely without European hands on the wheel."
       }
     ]
   },
   personOfTheDay: {
-    name: "Belisarius",
-    lifespan: "c. 505–565",
-    category: "Military Command & Ancient History",
-    image: "https://upload.wikimedia.org/wikipedia/commons/8/8b/Belisarius_mosaic.jpg",
-    bio: "Belisarius was the supreme military commander of the Byzantine Empire under Emperor Justinian I, widely regarded as one of the greatest generals of the ancient world. Born around 505 AD, probably in the Balkans, he rose through the ranks with extraordinary speed, commanding his first major campaign against the Sassanid Persians while still in his mid-twenties. His tactical genius lay in his mastery of the heavy cavalry — the cataphracts — and in his ability to project aggression on the battlefield while carefully avoiding the pitched engagements his outnumbered forces could not afford to lose.\n\nHis most celebrated achievement was the reconquest of North Africa from the Vandal Kingdom in 533–534 AD, a campaign accomplished in barely a year with an army of just fifteen thousand men. He followed this with the far more gruelling Italian campaign against the Ostrogoths, during which he captured Rome, defended it against overwhelming odds, and recaptured it again — all while being chronically undersupplied and underreinforced by a cautious and sometimes jealous emperor. The arrival of the Plague of Justinian devastated his army and prolonged the Italian war into a two-decade ordeal that shattered the peninsula he had been sent to liberate.\n\nBelisarius\'s later life was marked by the ambiguity that often attends greatness under autocracy. He was recalled from Italy on suspicion of excessive ambition, briefly disgraced, and then repeatedly summoned again when the empire had no one else capable of holding back its enemies. He repelled a Bulgarian raid on Constantinople in 559 at the age of nearly sixty, fighting on foot with a scratch force of veterans and palace guards. A later tradition — probably apocryphal — claimed that Justinian finally had him blinded and reduced to begging in the streets, a story that so captured the imagination of later centuries that it inspired paintings, poems, and operas. He died in 565, within months of Justinian himself, leaving behind a military reputation that has never entirely faded."
+    name: "Ahmad ibn Majid",
+    lifespan: "c. 1432–c. 1500",
+    category: "Exploration & Navigation",
+    image: "https://images.unsplash.com/photo-1656759685195-8b035b7f30d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxBaG1hZCUyMGlibiUyME1hamlkJTIwcG9ydHJhaXR8ZW58MHwyfHx8MTc3Nzk2NTA3Nnww&ixlib=rb-4.1.0&q=80&w=1080&crop=faces,entropy&fit=crop",
+    bio: "Ahmad ibn Majid was born around 1432 in Julfar, in what is now the United Arab Emirates, into a family of master navigators. His father and grandfather were both celebrated pilots of the Indian Ocean, and Ibn Majid absorbed their accumulated knowledge of stars, currents, and monsoon patterns from childhood. He would go on to become the greatest Arab navigator of the medieval period, earning the honorary title 'Lion of the Sea' and composing works on navigation that were without parallel in any language of his age.\n\nIbn Majid wrote more than forty navigational texts, including his masterwork the Kitab al-Fawa\'id ('Book of Useful Information on the Principles and Rules of Navigation'), completed around 1490. These were not merely practical sailing manuals — they were sophisticated astronomical and geographical treatises that described the star paths, seasonal winds, and coastal landmarks of the entire Indian Ocean basin, from East Africa to China. He invented a system of measuring stellar altitude using a device called a kamal, a simple but brilliant tool that allowed sailors to fix their latitude with remarkable accuracy. His writings preserved centuries of accumulated Arab navigational wisdom in a single, coherent body of knowledge.\n\nIbn Majid is most famous in the West for a claim that troubles historians: that he was the pilot who guided Vasco da Gama from Malindi on the East African coast to Calicut in 1498. The evidence is ambiguous — some Arabic sources name him, but he himself never mentions the encounter in his surviving writings, and some scholars believe a different pilot was involved. Whether or not he personally assisted the Portuguese, the episode encapsulates the paradox of his legacy: the man who perhaps did most to hand the Indian Ocean to European powers was himself the supreme embodiment of the independent navigational tradition those powers would soon suppress. He died sometime around 1500, on the cusp of the transformation he may have helped set in motion."
   },
   onThisDay: {
-    headline: "THE KENT STATE SHOOTINGS SHOCK AMERICA",
-    date: "May 4, 1970",
-    summary: "On May 4, 1970, National Guard soldiers opened fire on student protesters at Kent State University in Ohio, killing four students and wounding nine others. The students had gathered to protest President Nixon\'s announcement that US forces had expanded the Vietnam War into Cambodia — an escalation that had ignited fury on campuses across the country. In the chaos of the confrontation, Guardsmen fired sixty-seven rounds in thirteen seconds into a crowd that included bystanders as well as protesters.",
-    summary2: "The photographs taken that day — particularly John Filo\'s Pulitzer Prize-winning image of a young woman kneeling in anguish over a dying student — became among the most iconic of the entire Vietnam era. The killings provoked a nationwide student strike that shut down hundreds of universities and colleges, and they deepened the fracture between American society\'s hawks and doves to a degree from which trust in government would not recover for a generation. The phrase 'four dead in Ohio,' immortalised by Neil Young in his song 'Ohio' written just days later, became one of the defining laments of the 1970s.",
-    image: "https://images.pexels.com/photos/32967753/pexels-photo-32967753.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    headline: "Napoleon Bonaparte Dies in Exile on Saint Helena",
+    date: "May 5, 1821",
+    summary: "On May 5, 1821, Napoleon Bonaparte died on the remote South Atlantic island of Saint Helena, six years after his final defeat at Waterloo. He was fifty-one years old, and his death — officially attributed to stomach cancer, though theories of arsenic poisoning have circulated ever since — ended one of the most extraordinary careers in the history of warfare and statecraft. The man who had once commanded an empire stretching from Portugal to the borders of Russia died in a damp, wind-battered house called Longwood, attended by a small circle of loyal followers and closely watched by his British captors.\n\nHis last years on the island were marked by a deliberate campaign of self-mythologising. Confined and humiliated, Napoleon spent long hours dictating his memoirs, carefully recasting his wars as defensive struggles for European liberty against reactionary monarchies and reframing his legal and administrative reforms — the Napoleonic Code, the reorganisation of the French state — as his true legacy. It was a brilliant piece of posthumous propaganda. By the time his remains were returned to Paris in 1840, to be interred beneath the golden dome of Les Invalides, France had transformed him from a defeated tyrant into a romantic hero. The Napoleonic legend, more than the man himself, would haunt European politics for the rest of the nineteenth century.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Flag_of_Saint_Helena.svg/1280px-Flag_of_Saint_Helena.svg.png"
   }
 };
