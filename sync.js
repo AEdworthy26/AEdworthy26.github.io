@@ -3,8 +3,10 @@
    No credentials are stored in the browser.
    ────────────────────────────────────────────────────────────────────────── */
 (function () {
-  var WORKER_URL = 'https://personal-hub-sync.alfieedworthy.workers.dev';
-  var GIST_FILE  = 'personal-hub-sync.json';
+  var WORKER_URL   = 'https://personal-hub-sync.alfieedworthy.workers.dev';
+  var GIST_FILE    = 'personal-hub-sync.json';
+  var BACKUP_FILE  = 'personal-hub-backup.json';
+  var BACKUP_DATE_KEY = 'ph_backup_date';
 
   var LAST_SYNC_KEY = 'ph_sync_last';
   var RELOAD_FLAG   = 'ph_sync_reloaded_' + location.pathname;
@@ -69,8 +71,14 @@
       var v = _origGet(k);
       if (v !== null) data[k] = v;
     });
+    var content = JSON.stringify(data);
     var files = {};
-    files[GIST_FILE] = { content: JSON.stringify(data) };
+    files[GIST_FILE] = { content: content };
+    var today = new Date().toISOString().slice(0, 10);
+    if (_origGet(BACKUP_DATE_KEY) !== today) {
+      files[BACKUP_FILE] = { content: content };
+      _origSet(BACKUP_DATE_KEY, today);
+    }
     return JSON.stringify({ files: files });
   }
 
