@@ -1121,7 +1121,7 @@
           '<span class="inline-confirm-text">Delete <strong>' + esc(goals.find(function(g){return g.id===goalId;}).title) + '</strong>?</span>' +
           '<button class="inline-confirm-no">Cancel</button>' +
           '<button class="inline-confirm-yes">Delete</button>';
-        var header = card.querySelector('.goal-card-header');
+        var header = card.querySelector('.goal-card-top');
         header.insertAdjacentElement('afterend', strip);
         return;
       }
