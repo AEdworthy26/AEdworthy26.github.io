@@ -1,60 +1,60 @@
 // us-politics-news-data.js
-// Auto-updated 2026-05-04 — do not edit manually
+// Auto-updated 2026-05-05 — do not edit manually
 
 var US_POLITICS_NEWS = {
-  date: "2026-05-04",
+  date: "2026-05-05",
   main: {
-    title: "Supreme Court Voting Rights Ruling Threatens Black Representation in Congress, Civil Rights Groups Warn",
+    title: "Trump Administration Demands Names of 2020 Georgia Election Workers in Renewed Push to Relitigate Stolen Election Claims",
     category: "Politics",
     content: [
-      "The Supreme Court has delivered a significant blow to the Voting Rights Act, issuing a ruling that civil rights advocates say could fundamentally reshape Black political representation across the Deep South. The decision has sent shockwaves through communities that spent decades fighting for fair representation in Congress and state legislatures. Legal experts warn the ruling could unravel district maps that were explicitly drawn to give minority voters an equal opportunity to elect candidates of their choice.",
-      "For figures like Press Robinson of Louisiana, who mounted a historic legal fight decades ago to become the first Black person elected to a local school board, the ruling represents a potential reversal of a lifetime of hard-won progress. Robinson and others who lived through the era before the Voting Rights Act\'s strongest protections were in place now fear a return to conditions that systematically diluted minority voting power. 'He spent 60 years building Black political power,' one report noted, 'and he sees a wipeout coming.'",
-      "House Minority Leader Hakeem Jeffries (D-N.Y.) drew the ire of President Trump after calling the Supreme Court 'illegitimate' in response to the ruling. Trump, posting on social media, questioned whether Jeffries was 'subject to Impeachment' for the remark, escalating what had already become a fiercely partisan political battle over the court\'s direction. The exchange underscored how deeply the ruling has inflamed tensions between the two parties over the judiciary\'s role in American democracy.",
-      "Civil rights organizations across the South are now scrambling to assess the full legal and political implications of the decision. Advocacy groups are expected to mount fresh legislative and legal challenges, though the path forward is significantly narrowed following the court\'s ruling. Some are urging Congress to pass new legislation shoring up voting protections, an effort that faces steep odds given the current composition of the House and Senate.",
-      "The ruling arrives at a moment of heightened anxiety about democratic participation and electoral fairness in the United States. Critics argue that weakening the Voting Rights Act — a cornerstone of the civil rights movement signed into law in 1965 — risks dismantling one of the most consequential pieces of legislation in American history. Supporters of the ruling contend it reflects a proper constitutional interpretation, but for millions of voters in affected states, the political consequences could be felt as early as the 2026 midterm elections."
+      "The Trump Justice Department has issued demands for the names of election workers who participated in Georgia\'s 2020 presidential election, in what critics are describing as the latest and most alarming use of federal investigative power to revisit long-debunked claims that Democrats stole the last election. The move marks a significant escalation in the administration\'s ongoing efforts to scrutinize the conduct of state and local officials involved in certifying results that showed Joe Biden defeating Donald Trump. Legal experts and civil liberties advocates have raised urgent alarms that the DOJ is weaponizing its subpoena authority to intimidate individuals who carried out routine, lawful electoral duties.",
+      "The demand targets ordinary poll workers, election supervisors, and county officials who were on the front lines of administering Georgia\'s 2020 vote — many of whom have already faced years of harassment, threats, and personal danger following the spread of conspiracy theories amplified by Trump and his allies. Georgia became a central battleground for post-election disputes, with Trump famously pressuring Secretary of State Brad Raffensperger to 'find' enough votes to reverse the outcome. Multiple investigations at both the state and federal level have repeatedly found no evidence of the widespread fraud Trump alleged, making the DOJ\'s renewed inquiry all the more controversial.",
+      "The Justice Department\'s action appears to be part of a broader pattern under Attorney General Pam Bondi\'s tenure of directing federal law enforcement resources toward politically motivated investigations. Opponents argue that demanding the identities of low-level election workers serves no legitimate prosecutorial purpose and instead functions as a tool of political retribution and voter intimidation ahead of future election cycles. Democratic leaders in Georgia and in Congress have called the move an unprecedented and unconstitutional intrusion into state election administration.",
+      "Civil rights organizations have vowed to challenge the demands in court, arguing they violate the privacy rights of election workers and could have a chilling effect on the willingness of citizens to volunteer for or participate in election administration in future cycles. The targeting of individual poll workers — rather than elected officials — has struck many observers as particularly troubling, as these are largely private citizens who agreed to serve their communities in a clerical capacity. Several former DOJ officials from both parties have publicly condemned the move as a gross misuse of the department\'s investigative mandate.",
+      "The Georgia demands come at a politically charged moment, as the Trump administration faces growing scrutiny over its use of federal agencies to pursue what critics characterize as a political vendetta against perceived enemies. Congressional Democrats have promised hearings and have called on Inspector General offices to investigate whether proper procedures were followed in authorizing the demands. The episode is likely to intensify the broader national debate over the independence of the Justice Department and the integrity of American democratic institutions under the current administration."
     ],
-    image: "https://thehill.com/wp-content/uploads/sites/2/2026/05/AP26122014840998-e1777683962295.jpg?w=900",
-    source: "NPR",
-    sourceUrl: "https://www.npr.org/2026/05/03/nx-s1-5806269/civil-rights-groups-in-the-south-respond-to-supreme-courts-blow-to-voting-rights"
+    image: "https://static01.nyt.com/images/2026/05/04/multimedia/04pol-georgia-doj-ghpf/04pol-georgia-doj-ghpf-mediumSquareAt3X.jpg",
+    source: "The New York Times",
+    sourceUrl: "https://www.nytimes.com/2026/05/04/us/politics/trump-2020-georgia-election-workers.html"
   },
   secondary: [
     {
       id: "us1",
-      title: "Ballistic Evidence Links WHCD Shooting Suspect to Attack on Secret Service Agent",
-      summary: "U.S. Attorney Jeanine Pirro says a buckshot pellet found embedded in a Secret Service officer\'s vest 'definitively' connects suspect Cole Tomas Allen to the White House Correspondents' Dinner attack.",
+      title: "Supreme Court Fast-Tracks Louisiana Voting Map Case After Voting Rights Act Ruling",
+      summary: "The Supreme Court agreed to expedite a decision on Louisiana\'s congressional voting map following last week\'s ruling that weakened a core provision of the Voting Rights Act.",
       body: [
-        "U.S. Attorney Jeanine Pirro announced Sunday that forensic ballistic evidence has produced a definitive link between suspect Cole Tomas Allen and the shooting at the White House Correspondents' Dinner, telling CNN that a pellet from Allen\'s shotgun was found physically intertwined with the fibers of a Secret Service agent\'s protective vest. The discovery significantly strengthens the government\'s case ahead of what is expected to be a high-profile federal prosecution.",
-        "The attack at one of Washington\'s most prominent annual press events sent shockwaves through the political and media establishment, and the case has drawn intense scrutiny over security protocols surrounding major public gatherings of officials and journalists. Pirro\'s comments signal prosecutors are building a robust evidentiary case against Allen as the investigation continues."
+        "The Supreme Court moved swiftly to clear the path for Louisiana to redraw its congressional districts, agreeing to fast-track the return of the redistricting case to lower courts after voters who had successfully challenged the map as an illegal racial gerrymander petitioned for quick resolution. The Court\'s action follows a landmark ruling issued just days earlier that significantly curtailed the reach of the Voting Rights Act, potentially making it harder for minority voters to challenge maps they argue dilute their political representation.",
+        "Former Attorney General Eric Holder, who chairs the National Democratic Redistricting Committee, warned that the combined effect of last week\'s VRA ruling and the Louisiana case could set off a wave of redistricting challenges that sharply reduce Black representation in Congress. The decisions are expected to have far-reaching implications for the 2026 midterm elections and the congressional maps drawn after the 2030 census."
       ],
-      image: "https://images.pexels.com/photos/8369512/pexels-photo-8369512.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      source: "NPR",
-      url: "https://www.npr.org/2026/05/03/nx-s1-5809482/correspondents-dinner-shooter-bullet-vest-secret-service",
+      image: "https://static01.nyt.com/images/2026/05/04/multimedia/04dc-scotus-voting-lgcz/04dc-scotus-voting-lgcz-mediumSquareAt3X.jpg",
+      source: "The New York Times",
+      url: "https://www.nytimes.com/2026/05/04/us/politics/supreme-court-louisiana-voting-rights-act.html",
       category: "Politics"
     },
     {
       id: "us2",
-      title: "Tariff Refund Process Leaves Small Businesses Stranded After Supreme Court Ruling",
-      summary: "Following the Supreme Court\'s decision striking down most of President Trump\'s tariffs, small business owners seeking refunds are facing a bureaucratic maze that experts say could prevent billions of dollars from ever being repaid.",
+      title: "Judge Blocks DOJ From Searching Data Seized From Washington Post Reporter",
+      summary: "A second federal judge has ruled that the Justice Department cannot search through a phone and computers it seized from Washington Post reporter Hannah Natanson as part of a leak investigation.",
       body: [
-        "Richard Brown is one of countless small business owners who began assembling paperwork after the Supreme Court struck down the bulk of President Trump\'s tariff regime, hoping to recoup duties paid on imported goods. But trade law experts warn that the refund process is so complex, time-consuming, and poorly resourced that a large share of businesses — particularly smaller ones without dedicated legal and compliance teams — may never successfully recover their money.",
-        "The situation has reignited debate on Capitol Hill over the administration\'s aggressive use of tariff authority and the downstream consequences for American commerce. For many small business owners, the tariffs represented a significant financial strain, and the prospect of permanent losses even after a court victory is fueling frustration with both the executive branch and the federal bureaucracy."
+        "In a significant setback for the Trump Justice Department, a second federal judge upheld a ruling preventing investigators from accessing data seized from Washington Post reporter Hannah Natanson, whose devices were confiscated during a leak probe. The back-to-back judicial rebukes reinforce growing concerns about the administration\'s aggressive posture toward the press and its willingness to use criminal investigations as leverage against journalists covering the federal government.",
+        "The case has drawn fierce condemnation from press freedom advocates, who argue that seizing a journalist\'s devices strikes at the constitutional protections of the First and Fourth Amendments. The DOJ\'s pursuit of Natanson\'s data is part of a broader pattern of the administration targeting media organizations it views as adversarial, raising questions about whether the rule of law is being subordinated to political interests."
       ],
-      image: "https://thehill.com/wp-content/uploads/sites/2/2026/05/AP26122014840998-e1777683962295.jpg?w=900",
-      source: "NPR",
-      url: "https://www.npr.org/2026/05/03/nx-s1-5805045/tariff-refunds-small-business",
-      category: "Economics"
+      image: "https://images.unsplash.com/photo-1589394471525-dbb7bd2658a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxKdWRnZSUyMEJsb2NrcyUyMERPSiUyMEZyb20lMjBTZWFyY2hpbmclMjBEYXRhJTIwU2VpemVkJTIwRnJvbSUyMFdhc2hpbmd0b24lMjBQb3N0JTIwUmVwb3J0ZXJ8ZW58MHwwfHx8MTc3Nzk1NzM3M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "The Washington Post",
+      url: "https://www.washingtonpost.com/national-security/2026/05/04/post-reporter-justice-department-search/",
+      category: "Politics"
     },
     {
       id: "us3",
-      title: "Justice Department Inquiry Into Fed Chair Jerome Powell Could Be Revived, Pirro Warns",
-      summary: "U.S. Attorney Jeanine Pirro signaled that a Justice Department inquiry into Federal Reserve Chair Jerome Powell — dropped last month after a federal judge blocked grand jury subpoenas — could potentially be resurrected.",
+      title: "Trump Dismisses Iran War\'s Economic Impact, Calls Economy 'Roaring' at Small Business Event",
+      summary: "President Trump used a White House Small Business Week event to downplay the economic fallout from the ongoing conflict with Iran, insisting gas prices would soon fall despite turmoil in the Strait of Hormuz.",
       body: [
-        "The Justice Department\'s inquiry into Federal Reserve Chair Jerome Powell was shelved last month after a federal judge blocked the grand jury subpoenas underpinning the investigation, but U.S. Attorney Jeanine Pirro suggested Sunday that the matter may not be permanently closed. The probe had alarmed financial markets and raised serious questions about the independence of the Federal Reserve from political pressure.",
-        "The possibility of renewed scrutiny of Powell comes amid ongoing tension between the Trump administration and the Fed over interest rate policy, with Trump having repeatedly and publicly criticized Powell for not cutting rates more aggressively. Any revival of a formal legal inquiry would almost certainly rattle markets and intensify the constitutional debate over the limits of executive influence over independent federal institutions."
+        "With U.S. military forces actively engaged against Iranian assets in the Persian Gulf, President Trump sought Monday to project confidence in the American economy, telling small business owners gathered at the White House that conditions were 'roaring' and that fuel costs would stabilize soon. The remarks came as Maersk reported one of its US-flagged vessels had to be escorted through the Strait of Hormuz under military protection, underscoring the real-world disruption the conflict is causing to global trade and energy markets.",
+        "Economists and energy analysts have pushed back sharply on the administration\'s optimistic framing, warning that a protracted conflict affecting one of the world\'s most critical oil chokepoints could sustain elevated energy prices for months and dampen consumer confidence. Trump\'s effort to decouple domestic political messaging from the war\'s economic consequences reflects a broader White House strategy of insulating its political brand from the costs of military engagement in the Middle East."
       ],
-      image: "https://static01.nyt.com/images/2026/05/03/multimedia/03trump-news-pirro-powell-lgpq/03trump-news-pirro-powell-lgpq-mediumSquareAt3X.jpg",
+      image: "https://images.unsplash.com/photo-1578686489172-06cc5e264771?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUcnVtcCUyMERpc21pc3NlcyUyMElyYW4lMjBXYXIlNUN8ZW58MHwwfHx8MTc3Nzk1NzM3M3ww&ixlib=rb-4.1.0&q=80&w=1080",
       source: "The New York Times",
-      url: "https://www.nytimes.com/2026/05/03/us/politics/justice-department-fed-chair-powell-inquiry-pirro.html",
+      url: "https://www.nytimes.com/2026/05/04/us/politics/trump-economy-iran-war.html",
       category: "Politics"
     }
   ]

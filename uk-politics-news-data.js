@@ -1,60 +1,60 @@
 // uk-politics-news-data.js
-// Auto-updated 2026-05-04 — do not edit manually
+// Auto-updated 2026-05-05 — do not edit manually
 
 var UK_POLITICS_NEWS = {
-  date: "2026-05-04",
+  date: "2026-05-05",
   main: {
-    title: "Labour MPs Demand End to 'Endless Drama' of Leadership Speculation as Downing Street Fights Back",
+    title: "Cabinet Ministers Rally to Defend Starmer as Labour Faces Potentially Devastating Local Election Results",
     category: "Politics",
     content: [
-      "Labour MPs are mounting a concerted effort to draw a line under the mounting speculation surrounding Sir Keir Starmer\'s future as party leader, with Downing Street launching a fightback against predictions of an imminent leadership challenge. Senior backbenchers have warned in increasingly urgent terms that the relentless cycle of briefings about when and how the Prime Minister could be removed is actively damaging the party with voters. The intervention comes at a particularly sensitive moment, with crucial local elections just days away and Labour bracing for what could be historically severe losses across English councils.",
-      "Deputy Labour leader Angela Rayner\'s ally Lucy Powell told the Guardian that there would be 'no magic bullet' to solve either Labour\'s internal difficulties or the broader challenges facing the country, as MPs grapple with how to navigate the aftermath of Thursday\'s votes. Powell\'s remarks reflect a broader anxiety within the parliamentary party about the gap between Westminster intrigue and the concerns of ordinary voters. Several backbenchers have pointed out that repeated media briefings about potential successors — with Health Secretary Wes Streeting prominently among those discussed — are serving only to undermine the government\'s ability to communicate its policy agenda.",
-      "The leadership speculation has intensified against a backdrop of dire polling figures, with some projections suggesting Labour could lose as many as 2,000 of its 2,500 council seats in Thursday\'s local elections. Analysts have described the expected results as a potential watershed moment for the Starmer project, with the fragmentation of the left-wing vote towards the Greens and insurgent gains by Reform UK on the right creating a deeply unfavourable electoral landscape. The scale of anticipated losses has fuelled a sense among some Labour figures that a reckoning over the party\'s direction is unavoidable, whatever the leadership\'s public messaging.",
-      "Downing Street aides have pushed back firmly against what they characterise as premature and destabilising speculation, insisting that Starmer retains the full confidence of his Cabinet and remains committed to delivering his long-term reform agenda. Sources close to the Prime Minister argue that the local elections, while painful, were always going to be difficult given the legacy of Conservative-held councils defending large majorities won in previous cycles. They contend that the true measure of Labour\'s standing should be judged not by mid-term council results but by the government\'s progress on its core missions around economic growth, public services and national security.",
-      "The episode has thrown into sharp relief the tensions that have been building within the Labour movement since the party\'s general election victory last year, with some on the left frustrated by the pace and direction of reform and others on the centre anxious about electoral viability. For Starmer personally, the coming days represent a critical test of his authority, with the local election results likely to either dampen or dramatically amplify the calls for a change in leadership. Whether the Downing Street fightback succeeds in drawing a line under the speculation may ultimately depend less on internal party management and more on the raw numbers that come in from council counts across England and Wales on Friday morning."
+      "Cabinet ministers have moved swiftly to shore up Keir Starmer\'s position ahead of what is expected to be a bruising set of local election results for Labour this Thursday. Senior figures in government have been warning mutinous backbenchers that any attempt to oust the Prime Minister in the immediate aftermath of the polls would plunge the party into chaos from which it would struggle to recover. The intervention reflects growing anxiety within the upper echelons of the Labour Party about the scale of potential losses and the political turbulence that could follow.",
+      "According to sources speaking to the Guardian, several MPs have nonetheless told the paper that even with the Prime Minister\'s defences currently holding, his long-term position remains deeply uncertain. Top pollster Sir John Curtice has gone further, warning in an exclusive interview with the Independent that the likelihood of Starmer leading Labour into the next general election is 'very low indeed'. The assessment from one of Britain\'s most respected electoral analysts will make uncomfortable reading for a government that came to power less than two years ago with a commanding parliamentary majority.",
+      "Thursday\'s local elections in England are expected to bring significant losses for Labour, with reports suggesting as many as 2,000 of the party\'s approximately 2,500 council seats could be at risk. The scale of that potential loss, if realised, would represent one of the most dramatic single-night reversals in modern local election history for a governing party. Analysts point to voter frustration over the cost of living, public service performance, and a sense that the government has yet to deliver meaningful change as key drivers of the expected swing away from Labour.",
+      "Reform UK, led by Nigel Farage, is widely anticipated to be among the primary beneficiaries of Labour\'s losses, capitalising on discontent among working-class voters in areas that have historically been Labour strongholds. The rise of Reform has complicated Labour\'s strategic calculus, as the party struggles to respond to its populist challenge without abandoning its broader electoral coalition. Meanwhile, the Liberal Democrats and Greens are also expected to make gains in areas where they have been building local strength, further fragmenting the opposition landscape.",
+      "For Starmer personally, the coming days represent a critical test of his authority and political resilience. Cabinet allies are insisting publicly and privately that changing leader now would be an act of self-destruction for a party that needs stability to rebuild public trust. However, the warnings from ministers may do little to quiet the murmuring on the backbenches if election night delivers the kind of results that many within the party are privately bracing for, and the question of Labour\'s direction — and who should lead it — is likely to dominate Westminster politics in the weeks that follow."
     ],
-    image: "https://images.unsplash.com/photo-1598630954900-c04a6886c8b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxMYWJvdXIlMjBNUHMlMjBEZW1hbmQlMjBFbmQlMjB0byUyMHxlbnwwfDB8fHwxNzc3ODcwOTIwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image: "https://i.guim.co.uk/img/media/6bbd850611659fa0a62076f611f4206a1bf25a0d/688_0_6880_5504/master/6880.jpg?width=1200&quality=85&auto=format&fit=max&s=8698abe16ba8a2d11c07025d51074f6f",
     source: "The Guardian",
-    sourceUrl: "https://www.theguardian.com/politics/2026/may/04/labour-mps-say-endless-drama-of-leadership-speculation-must-stop"
+    sourceUrl: "https://www.theguardian.com/politics/2026/may/04/cabinet-ministers-warn-mutinous-mps-over-ousting-keir-starmer"
   },
   secondary: [
     {
       id: "uk1",
-      title: "Starmer Suggests Some Pro-Palestine Marches Could Be Stopped Over Impact on Jewish Community",
-      summary: "Sir Keir Starmer has indicated that certain pro-Palestine marches could be halted due to the 'cumulative' effect they are having on Britain\'s Jewish community.",
+      title: "Starmer Hosts Downing Street Summit to Tackle Rising Antisemitism",
+      summary: "Prime Minister Keir Starmer has convened a cross-sector roundtable at Downing Street, warning that attacks on British Jews are 'a crisis for all of us' requiring a whole-of-society response.",
       body: [
-        "Speaking to the BBC, the Prime Minister said he was concerned about the repeated nature and perceived impact of pro-Palestine demonstrations, suggesting that in some cases authorities should consider stopping them altogether. The comments mark a notable hardening of the government\'s public position on protest rights and are likely to provoke fierce debate about the balance between civil liberties and community safety.",
-        "The remarks come amid heightened tensions following a series of incidents at recent marches and the ongoing fallout from the Golders Green terror attack, and will be closely scrutinised by both civil liberties advocates and members of the Jewish community ahead of this week\'s local elections."
+        "Keir Starmer hosted leaders from across multiple sectors at Downing Street on Tuesday, calling for urgent and coordinated action to address a marked rise in antisemitic incidents across the United Kingdom. The Prime Minister declared that responsibility to stand with Jewish communities lies with 'every one of us', and that condemning antisemitism in words alone is insufficient — it must be demonstrated through concrete action.",
+        "The summit comes against a backdrop of sharply rising recorded antisemitic incidents in Britain, a trend that has caused deep alarm within Jewish community organisations. Starmer also indicated that some pro-Palestine marches could be subject to restrictions where they are deemed to have a damaging impact on Jewish communities, a statement that is likely to provoke significant debate about the balance between free expression and community protection."
       ],
-      image: "https://e3.365dm.com/26/05/1920x1080/skynews-keir-starmer-golders-green_7237116.jpg?20260502160623",
-      source: "Sky News",
-      url: "https://news.sky.com/story/starmer-says-some-pro-palestine-marches-could-be-stopped-13539282",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/1886/live/deeddd10-47fb-11f1-a14e-833a5f437cb7.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.com/news/articles/czd2l55d1e7o?at_medium=RSS&at_campaign=rss",
       category: "Politics"
     },
     {
       id: "uk2",
-      title: "Local Elections Could See Council Seats Won on Record-Low Vote Shares as Votes Fragment",
-      summary: "Thursday\'s local elections are forecast to produce unprecedented results, with council seats potentially changing hands on historically low vote shares as support splinters across multiple parties.",
+      title: "Reform UK Vows to Place Migrant Detention Centres in Green-Voting Areas",
+      summary: "Nigel Farage\'s Reform UK has pledged to deliberately site new migrant detention centres in areas represented by Green Party councillors or MPs, drawing widespread condemnation from rival parties.",
       body: [
-        "With Labour potentially losing up to 2,000 of its 2,500 council seats and votes divided between Reform UK, the Greens, Liberal Democrats and Conservatives, analysts warn that the arithmetic of first-past-the-post could produce deeply anomalous outcomes. The fragmentation means that in some wards, candidates could secure victory with shares of the vote that would previously have been considered derisory.",
-        "The unusual electoral landscape reflects a broader collapse in two-party dominance, particularly visible in London where both the Greens in areas like Hackney and Reform UK in outer boroughs like Bromley are making concerted bids to displace traditional party strongholds."
+        "Reform UK has announced a provocative policy pledge to locate migrant detention facilities specifically in areas that elect Green Party representatives, a move branded 'grotesque' and 'abhorrent' by political opponents. The Greens accused Reform of making the announcement purely as a cynical distraction tactic days before local elections, while other parties condemned it as showing 'contempt for all voters, including their own'.",
+        "The announcement is the latest in a series of eye-catching pre-election moves by Reform designed to dominate the news cycle and reinforce the party\'s hardline immigration credentials ahead of Thursday\'s polls. Critics argue the policy, even if it could be implemented legally, would punish local communities for their democratic choices — a charge Reform has dismissed as it seeks to maximise its vote share."
       ],
-      image: "https://e3.365dm.com/26/05/1920x1080/skynews-local-elections-2026_7237758.png?20260503044400",
-      source: "Sky News",
-      url: "https://news.sky.com/story/local-elections-could-see-council-seats-won-on-record-low-vote-shares-13538561",
+      image: "https://i.guim.co.uk/img/media/4013db1d5636aaab999a644f96a7c9759f1ee5e2/398_0_3969_3177/master/3969.jpg?width=1200&quality=85&auto=format&fit=max&s=aba4c8344bb0f8bded13f9a32329b6aa",
+      source: "BBC News",
+      url: "https://www.bbc.com/news/articles/c362e9p385yo?at_medium=RSS&at_campaign=rss",
       category: "Politics"
     },
     {
       id: "uk3",
-      title: "Badenoch Accuses Farage of Avoiding TV Interview Over £5m Donation Controversy",
-      summary: "Conservative leader Kemi Badenoch has accused Nigel Farage of ducking a scheduled BBC interview in order to avoid scrutiny over a £5 million donation to Reform UK from a Thai-based billionaire.",
+      title: "Local Elections Set to See Council Seats Won on Record-Low Vote Shares",
+      summary: "Thursday\'s English local elections are forecast to produce historic results, with the fragmentation of the vote potentially allowing candidates to win seats on unprecedentedly low shares of the vote.",
       body: [
-        "Reform UK leader Nigel Farage has been referred to Parliament\'s standards watchdog over the donation from Christopher Harborne, a billionaire who was also a major financial backer of the Brexit campaign, raising fresh questions about the party\'s funding transparency. Badenoch used the row to challenge Farage\'s credentials as an anti-establishment outsider, arguing that accepting large gifts from offshore-based donors while refusing media accountability was the behaviour of the political class he claims to oppose.",
-        "The controversy adds to a difficult pre-election period for Reform, which despite strong polling faces mounting questions about its internal governance and the backgrounds of some of its candidates — issues that Farage\'s rivals hope will temper the party\'s expected gains on Thursday."
+        "With support for Labour, the Conservatives, Reform, the Liberal Democrats, and the Greens all splitting the electorate in different ways across different regions, this Thursday\'s local elections could see council seats change hands on vote shares that would have been unthinkable in previous decades. Sky News analysis suggests Labour could lose as many as 2,000 of its 2,500 council seats, a staggering figure that underscores the depth of the governing party\'s current unpopularity.",
+        "The state of local roads has emerged as a surprising but potent symbol of voter frustration, with potholes repeatedly cited by voters as a tangible and daily reminder of what they see as failing public services. The highly fragmented political landscape means the results will be difficult to read as a simple national verdict, but the overall trajectory is expected to point firmly away from the two traditional governing parties and towards newer political forces."
       ],
-      image: "https://static.independent.co.uk/2026/05/01/12/01KQHN2Y29D45AE77V9RYTSYWT.jpg?width=1200&auto=webp&crop=3%3A2",
-      source: "The Independent",
-      url: "https://www.independent.co.uk/news/uk/politics/badenoch-farage-reform-donation-bbc-harborne-b2969706.html",
+      image: "https://e3.365dm.com/26/05/1920x1080/skynews-local-elections-2026_7237758.png?20260503044400",
+      source: "Sky News",
+      url: "https://news.sky.com/story/local-elections-could-see-council-seats-won-on-record-low-vote-shares-13538561",
       category: "Politics"
     }
   ]

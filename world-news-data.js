@@ -1,61 +1,61 @@
 // world-news-data.js
-// Auto-updated 2026-05-04 — do not edit manually
+// Auto-updated 2026-05-05 — do not edit manually
 
 var WORLD_NEWS = {
-  date: "2026-05-04",
+  date: "2026-05-05",
   main: {
-    title: "Iran Warns Trump\'s 'Project Freedom' Naval Mission Violates Ceasefire as Hormuz Crisis Deepens",
+    title: "Strait of Hormuz in Crisis: US Forces Battle Iran as UAE Comes Under Attack",
     category: "Geopolitics",
     content: [
-      "President Donald Trump has announced a major US naval operation — dubbed 'Project Freedom' — to escort stranded commercial ships through the Strait of Hormuz, one of the world\'s most critical maritime chokepoints, which has been gripped by disruption stemming from the ongoing war with Iran. Trump said the effort would begin on Monday, framing it as a necessary intervention to protect international shipping lanes and restore the flow of global trade through the strait. The announcement came as two vessels near the strait reported being attacked, underscoring the acute dangers facing commercial shipping in the region.",
-      "Tehran responded swiftly and sharply, warning that the American naval mission constitutes a violation of ceasefire terms and could escalate an already volatile situation. Iran\'s government protested the operation formally, insisting that any foreign military presence in or around the strait during the current fragile pause in hostilities would be seen as a provocative act. The warning raises serious questions about the durability of any truce and whether 'Project Freedom' could inadvertently reignite open conflict between US and Iranian forces.",
-      "Despite Trump\'s announcement, oil markets remained largely unmoved, with Brent crude trading flat as traders appeared unconvinced that the naval escort operation would meaningfully resolve the underlying disruption to Hormuz shipping. The strait carries roughly a fifth of the world\'s oil supply, and sustained uncertainty there has already driven US gas prices up by more than 30 cents a gallon in a single week. The market\'s muted response suggests deep scepticism that a unilateral US mission can stabilise a waterway caught in the crossfire of an active geopolitical standoff.",
-      "The broader diplomatic picture remains murky. Iran has said the United States responded to its latest peace proposal, though Washington has yet to formally confirm this. Reports indicate that Trump privately told Israel\'s Kan News that Iran\'s proposal was unacceptable, suggesting a significant gap remains between the two sides. The simultaneous pursuit of a naval operation and tentative back-channel diplomacy reflects the contradictory pressures bearing down on the administration as it tries to manage both the military and political dimensions of the conflict.",
-      "The crisis in the Strait of Hormuz is reverberating well beyond the immediate region, reshaping energy markets, testing alliance structures, and forcing governments worldwide to reassess supply chain vulnerabilities. Analysts note that the Iran war has already had unexpected strategic consequences — including, according to some assessments, strengthening Ukraine\'s hand in its own conflict with Russia by diverting global attention and resources. As 'Project Freedom' gets underway, the international community will be watching closely to see whether American naval muscle can bring stability to the strait or whether Tehran\'s warnings of a ceasefire breach will prove the more consequential development."
+      "The Strait of Hormuz — through which approximately one-fifth of the world\'s oil supply flows — has become the flashpoint for a dangerous new confrontation between the United States, Iran, and their regional allies. US Navy warships shot down missiles and drones aimed at vessels being guided through the critical waterway, as Iranian forces attacked targets including an oil facility in the United Arab Emirates. The USS-escorted commercial tanker operated by shipping giant Maersk successfully transited the strait under military protection, in what Washington described as a show of resolve to keep the passage open.",
+      "The UAE confirmed that Iranian missiles and drones struck one of its oil facilities, marking a dramatic escalation in the Gulf standoff that has been simmering for weeks. US forces sank six Iranian fast boats during the clashes, according to Pentagon statements, as American warships fired in defence of commercial shipping navigating the narrow passage between Iran and Oman. President Trump announced that the US would 'guide' stranded ships through the strait, framing the military operation as a protection of global trade rather than an act of war.",
+      "The international response was swift and largely condemnatory of Tehran. Saudi Arabia, Qatar, Kuwait, and Bahrain all denounced what they called Iranian aggression, while Germany, the UK, and Canada urged Iran to stand down and return to diplomatic talks. The breadth of the regional condemnation — including from fellow Gulf states that have occasionally maintained cautious relations with Iran — signals the degree to which the attacks have alarmed the Arab world and shifted the strategic calculus in the Middle East.",
+      "Oil markets reacted with immediate alarm, with Brent crude surging nearly six percent on fears that prolonged disruption to the Strait of Hormuz could choke global energy supplies. Analysts warned that if the waterway were effectively closed for any sustained period, the consequences for energy prices worldwide would be severe, compounding inflationary pressures already straining many economies. The spike also renewed debate about the vulnerability of global supply chains to geopolitical flashpoints, with calls growing louder in several capitals for accelerated investment in alternative energy sources and supply routes.",
+      "The crisis has broader strategic dimensions that extend well beyond energy markets. The confrontation tests the limits of American military commitment in the region at a time when Washington is simultaneously managing tensions in the Pacific and navigating fraught trade disputes globally. For Iran, the attacks may reflect domestic pressure from hardliners, or a calculated attempt to extract leverage in any future negotiations over its nuclear programme. With the ceasefire described as being pushed to the brink, diplomats and analysts alike are warning that the window for de-escalation is narrowing rapidly, and that miscalculation by any party could trigger a far wider conflict."
     ],
-    image: "https://images.unsplash.com/photo-1670787325681-cc481822bbe3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxJcmFuJTIwV2FybnMlMjBUcnVtcCU1Q3xlbnwwfDB8fHwxNzc3ODcwODgwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/4dcd/live/020fd5a0-47de-11f1-90ad-2ff82eec9d15.jpg",
     source: "Al Jazeera",
-    sourceUrl: "https://www.aljazeera.com/news/liveblog/2026/5/4/iran-war-live-tehran-says-trumps-hormuz-mission-violates-ceasefire?traffic_source=rss"
+    sourceUrl: "https://www.aljazeera.com/economy/2026/5/5/oil-prices-surge-as-violence-flares-in-strait-of-hormuz?traffic_source=rss"
   },
   secondary: [
     {
       id: "s1",
-      title: "Three Dead in Suspected Hantavirus Outbreak Aboard Atlantic Cruise Ship",
-      summary: "A rare hantavirus outbreak on a cruise ship in the Atlantic Ocean has killed three passengers and left several others critically ill, prompting a WHO investigation.",
+      title: "Hantavirus Outbreak on Cruise Ship Kills Three, Leaves Crew Member in Critical Care",
+      summary: "A suspected hantavirus outbreak aboard the MV Hondius cruise ship in the Atlantic has killed three passengers and left a British crew member in urgent need of medical care.",
       body: [
-        "Three passengers, including a Dutch husband and wife, have died following a suspected hantavirus outbreak aboard a cruise ship sailing in the Atlantic Ocean, with the World Health Organization confirming one case and investigating five further suspected infections. Hantavirus is an unusual and dangerous pathogen typically transmitted through contact with the urine, saliva, or faeces of infected rodents such as rats or mice, and outbreaks aboard ships are extremely rare. South Africa\'s health department is also involved in the response, suggesting the vessel may have passed through or near southern African waters.",
-        "The outbreak has raised urgent questions about biosecurity protocols on large passenger vessels and the capacity of international health bodies to respond rapidly to novel outbreaks in isolated maritime environments. Hantavirus infections, while rare, can cause severe and often fatal respiratory illness, and there is currently no specific antiviral treatment approved for the disease. The WHO\'s confirmation of at least one case is expected to prompt heightened screening and containment measures across the cruise industry."
+        "The World Health Organisation confirmed seven suspected or confirmed cases of hantavirus on the MV Hondius, a luxury cruise ship currently in the Atlantic, with three passengers — including a Dutch married couple and a German national — having died from the rare infection. A British crew member was reported to be in urgent need of medical care, while a UK passenger remained in a critical but stable condition, raising international concern about the ship\'s ability to dock and receive emergency assistance.",
+        "Hantavirus is a rare but serious illness typically transmitted through contact with infected rodents or their droppings, and human-to-human transmission is uncommon, making the cluster of cases aboard a single vessel particularly alarming to health authorities. The ship\'s operators and port authorities in Cape Verde were in discussions about allowing the vessel to dock, as the international response highlighted the difficulties of managing infectious disease outbreaks in the confined environment of ocean-going vessels."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/7798/live/b7202c10-472f-11f1-92b3-95f249f40d33.jpg",
+      image: "https://i.guim.co.uk/img/media/6adde1cdf2cb63354dd69c0a998ec1af299f5a7a/434_0_2998_2398/master/2998.jpg?width=1200&quality=85&auto=format&fit=max&s=3fa45cadc1311484381589a516829381",
       source: "The Guardian",
-      url: "https://www.theguardian.com/world/2026/may/03/three-passengers-dead-after-suspected-hantavirus-outbreak-on-cruise-ship",
+      url: "https://www.theguardian.com/science/2026/may/04/cruise-ship-suspected-hantavirus-outbreak-blocked-docking-cape-verde",
       category: "Health"
     },
     {
       id: "s2",
-      title: "WHO Approves First-Ever Malaria Drug Specifically for Babies in 'Major Public Health Milestone'",
-      summary: "The World Health Organization has granted prequalification to Coartem Baby, the first malaria treatment designed and approved for safe use in newborns and very young infants.",
+      title: "Car Driven Into Crowd in German City of Leipzig, Leaving Two Dead and Many Injured",
+      summary: "A 33-year-old German citizen drove a car into a crowd in Leipzig, killing two people and injuring many others before being detained by police.",
       body: [
-        "The WHO has approved Coartem Baby, marking a historic breakthrough in the global fight against malaria — a disease that infects up to 18% of children under six months of age in parts of Africa, a population for whom no safe dedicated treatment previously existed. Until now, clinicians were forced to use medications formulated for older children, raising serious concerns about dosing accuracy and safety in the most vulnerable patients. The prequalification clears the path for widespread procurement and distribution of the drug across high-burden countries.",
-        "Global health advocates have hailed the approval as one of the most significant milestones in paediatric infectious disease in years, with the potential to save tens of thousands of infant lives annually. Malaria remains one of the leading causes of child mortality in sub-Saharan Africa, and the availability of a purpose-built treatment for the youngest age group is expected to significantly improve survival outcomes. Organisations working on malaria elimination say the drug\'s rollout could accelerate progress towards broader eradication goals."
+        "German authorities detained a 33-year-old German citizen after a car was deliberately driven into a crowd in the city of Leipzig, killing two people and leaving a significant number of others injured in what police are treating as an intentional attack. Emergency services were deployed rapidly to the scene, and the suspect was taken into custody shortly after the incident, though authorities have not yet publicly disclosed a motive.",
+        "The attack is the latest in a series of vehicle-ramming incidents in European cities in recent years, and is likely to reignite debate in Germany about public safety and security measures at crowded public spaces. German officials have been under pressure to address both the threat of politically motivated violence and the practical challenges of protecting civilians in open urban environments."
       ],
-      image: "https://i.guim.co.uk/img/media/d96baef46133aea7b12e2018eaac1a46ca7faa2a/0_1412_3863_3091/master/3863.jpg?width=1200&quality=85&auto=format&fit=max&s=e6676940d10a81761ae9b9ecd1f6797d",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/global-development/2026/may/02/new-drug-coartem-baby-babies-malaria-who-treatment",
-      category: "Health"
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/395d/live/537900a0-47f3-11f1-a5a5-9ff681d5bd63.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.com/news/articles/ckgpzgxgz58o?at_medium=RSS&at_campaign=rss",
+      category: "Europe"
     },
     {
       id: "s3",
-      title: "Zambia Cancels World\'s Largest Human Rights and Technology Summit Days Before It Was Due to Start",
-      summary: "The Zambian government has abruptly cancelled RightsCon 2026, the world\'s biggest human rights and technology conference, claiming the event did not align with the country\'s national values.",
+      title: "Explosion at Chinese Fireworks Plant Kills at Least 21 and Injures Dozens",
+      summary: "A massive explosion at a fireworks manufacturing plant in central China has killed at least 21 people and injured 61 others.",
       body: [
-        "Zambia\'s government has blocked RightsCon 2026 from taking place on its soil just days before the conference was due to begin, telling organisers that the summit — focused on human rights in the digital age — did not align with national values, despite having originally welcomed the event. The cancellation shocked the global digital rights community and left hundreds of international delegates and civil society groups scrambling to respond. RightsCon is the world\'s largest annual gathering on the intersection of human rights and technology, drawing participants from governments, NGOs, and the private sector.",
-        "The move has drawn widespread condemnation from human rights organisations, who see the cancellation as itself emblematic of the pressures facing civil society and free expression across parts of Africa. Critics argue the government\'s invocation of 'national values' is a thinly veiled attempt to prevent scrutiny of domestic digital surveillance and censorship practices. The episode is likely to intensify debate about the risks of hosting major international civil society events in countries where political space for dissent is narrowing."
+        "An explosion tore through a fireworks production facility in a central Chinese province, killing at least 21 workers and injuring 61 others in one of the deadliest industrial accidents in the country in recent months. Emergency crews were dispatched to the site, with rescue operations ongoing as authorities worked to account for all workers who had been present at the plant at the time of the blast.",
+        "China\'s fireworks industry, though heavily regulated following a series of deadly disasters in past decades, remains prone to catastrophic accidents due to the inherently volatile nature of the materials involved. The incident is expected to prompt fresh scrutiny from Chinese safety regulators and may lead to temporary suspensions of operations at similar facilities across the country."
       ],
-      image: "https://images.unsplash.com/photo-1552635409-e92d03c3820e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxaYW1iaWElMjBDYW5jZWxzJTIwV29ybGQlNUN8ZW58MHwwfHx8MTc3Nzc4NDQ3NHww&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/global-development/2026/may/02/zambia-cancels-rightscon-summit-largest-human-rights-technology-conference",
-      category: "Human Rights"
+      image: "https://images.unsplash.com/photo-1658674589319-17714b08e3bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxFeHBsb3Npb24lMjBhdCUyMENoaW5lc2UlMjBGaXJld29ya3MlMjBQbGFudCUyMEtpbGxzJTIwYXQlMjBMZWFzdCUyMDIxJTIwYW5kJTIwSW5qdXJlcyUyMERvemVuc3xlbnwwfDB8fHwxNzc3OTU3MjgwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "Al Jazeera",
+      url: "https://www.aljazeera.com/video/newsfeed/2026/5/5/an-explosion-at-a-fireworks-plant-in-china-has-killed-at-least-21-people?traffic_source=rss",
+      category: "Asia"
     }
   ]
 };
