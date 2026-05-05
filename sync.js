@@ -142,11 +142,28 @@
   /* ── on page load: pull then reload once if data changed ── */
   window.addEventListener('DOMContentLoaded', function () {
     var alreadyReloaded = sessionStorage.getItem(RELOAD_FLAG);
+
+    // If localStorage appears empty (data just cleared) and we haven't already
+    // reloaded, hide the page immediately so the user never sees a blank flash.
+    // The pull will restore data then trigger a reload; the page reveals with
+    // everything in place. Safety net shows the page after 4s regardless.
+    var localLooksEmpty = !alreadyReloaded && !SYNC_KEYS.some(function(k) {
+      return _origGet(k) !== null;
+    });
+    if (localLooksEmpty) {
+      document.documentElement.style.visibility = 'hidden';
+      setTimeout(function() { document.documentElement.style.visibility = ''; }, 4000);
+    }
+
     doPull(function (ok, reason) {
       if (ok && reason === 'updated' && !alreadyReloaded) {
         sessionStorage.setItem(RELOAD_FLAG, '1');
         window.location.reload();
-      } else if (!ok) {
+      } else {
+        // Restore visibility whether pull succeeded with no changes, or failed
+        document.documentElement.style.visibility = '';
+      }
+      if (!ok) {
         var last = _origGet(LAST_SYNC_KEY);
         var hoursSince = last ? (Date.now() - new Date(last).getTime()) / 3600000 : Infinity;
         if (hoursSince > 24) {
