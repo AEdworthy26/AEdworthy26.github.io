@@ -821,9 +821,14 @@ def gen_rics():
     keyword_block_str = ', '.join(sorted(keyword_blocks)) if keyword_blocks else 'None'
     # Fallback images if Unsplash fetch fails
     rics_fallback_images = [
-        'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1200&auto=format&fit=crop',
-        'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&auto=format&fit=crop',
-        'https://images.unsplash.com/photo-1574920162043-b872873f19bc?w=1200&auto=format&fit=crop',
+        'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1200&auto=format&fit=crop',  # construction crane
+        'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&auto=format&fit=crop',  # glass office tower
+        'https://images.unsplash.com/photo-1574920162043-b872873f19bc?w=1200&auto=format&fit=crop',  # residential terrace
+        'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&auto=format&fit=crop',  # modern apartment block
+        'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1200&auto=format&fit=crop',  # housing development
+        'https://images.unsplash.com/photo-1582407947304-fd86f28f82f7?w=1200&auto=format&fit=crop',  # city skyline
+        'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&auto=format&fit=crop',  # residential exterior
+        'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&auto=format&fit=crop',  # mixed-use development
     ]
 
     def topic_is_duplicate(topic):
@@ -981,7 +986,10 @@ var RICS_DATA = {{
         module_m = re.search(r'module:\s*"([^"]+)"', js)
         topic_str = topic_m.group(1) if topic_m else ''
         module_str = module_m.group(1) if module_m else ''
-        search_term = (topic_str or module_str or 'property development UK') + ' architecture'
+        # Use only a couple of topic keywords + strong architectural anchors
+        # to avoid people/social images when topics mention community, housing, etc.
+        topic_kw = ' '.join((topic_str or module_str or '').split()[:3])
+        search_term = (topic_kw + ' UK property architecture building exterior').strip()
         url = (fetch_unsplash_image(search_term)
                or fetch_pexels_image(search_term)
                or random.choice(rics_fallback_images))
