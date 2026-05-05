@@ -271,6 +271,9 @@
     /* View modal */
     .view-meta { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.2rem; font-size: 0.76rem; color: var(--muted); align-items: center; font-weight: 500; }
     .view-stars { color: #c8a348; font-size: 0.95rem; }
+    .view-star-btn { background: none; border: none; font-size: 1rem; cursor: pointer; color: #d8d3c8; padding: 0 0.02rem; transition: transform 0.1s, color 0.1s; line-height: 1; }
+    .view-star-btn.active { color: #c8a348; }
+    .view-star-btn:hover { transform: scale(1.2); color: #c8a348; }
     .section-label { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--light); margin-bottom: 0.6rem; margin-top: 1.3rem; display: block; }
     .ingredients-list { list-style: none; display: flex; flex-direction: column; gap: 0.3rem; }
     .ingredients-list li { font-size: 0.83rem; line-height: 1.5; padding: 0.28rem 0; border-bottom: 1px solid var(--subtle); display: flex; gap: 0.5rem; }
@@ -812,7 +815,7 @@
         ingredients: s.ingredients, ingredientGroups: s.ingredientGroups || null,
         substitutes: s.substitutes || [],
         instructions: s.instructions,
-        rating: _sugRatings[id] || 0, favourite: false, createdAt: Date.now(),
+        rating: _sugRatings[id] || 0, favourite: true, createdAt: Date.now(),
         emoji: s.emoji || '🍽️', image: s.image || null
       };
       recipes.unshift(r);
@@ -916,11 +919,33 @@
     // ── VIEW MODAL ────────────────────────────────────────────────────────
     var _viewingId = null;
 
+    function renderViewStars(recipeId, rating) {
+      var el = document.getElementById('vm-stars');
+      el.innerHTML = '';
+      for (var i = 1; i <= 5; i++) {
+        (function(n) {
+          var btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'view-star-btn' + (n <= rating ? ' active' : '');
+          btn.textContent = n <= rating ? '★' : '☆';
+          btn.onclick = function() {
+            var rec = recipes.find(function(x) { return x.id === recipeId; });
+            if (rec) { rec.rating = n; saveRecipes(); renderGrid(); renderViewStars(recipeId, n); }
+          };
+          el.appendChild(btn);
+        })(i);
+      }
+    }
+
     function openViewModal(r, isSuggestion) {
       _viewingId = r.id || null;
       document.getElementById('vm-title').textContent = r.title;
       document.getElementById('vm-cat-row').innerHTML = catBadge(r.category);
-      document.getElementById('vm-stars').textContent = starsHtml(r.rating || 0);
+      if (isSuggestion) {
+        document.getElementById('vm-stars').textContent = starsHtml(r.rating || 0);
+      } else {
+        renderViewStars(r.id, r.rating || 0);
+      }
       document.getElementById('vm-time').textContent = r.time ? '⏱ ' + r.time : '';
       document.getElementById('vm-serves').textContent = r.serves ? 'Serves ' + r.serves : '';
       document.getElementById('vm-desc').textContent = r.desc || '';
