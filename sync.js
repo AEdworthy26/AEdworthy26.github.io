@@ -83,6 +83,8 @@
   }
 
   function doPush(keepalive) {
+    var hasData = SYNC_KEYS.some(function(k) { return _origGet(k) !== null; });
+    if (!hasData) return;
     fetch(WORKER_URL, {
       method:    'PATCH',
       headers:   { 'Content-Type': 'application/json' },
