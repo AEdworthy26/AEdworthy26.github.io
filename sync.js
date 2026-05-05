@@ -10,22 +10,35 @@
   var RELOAD_FLAG   = 'ph_sync_reloaded_' + location.pathname;
 
   var SYNC_KEYS = [
+    // Calendar & organisation
     'ph_calendar_v3',
     'ph_todos_v1',
-    'personal_hub_books_v2',
     'ph_wishlist_v1',
-    'personal_hub_achievements',
-    'personal_hub_meal_planner_v2',
-    'ph_wordle_v1',
-    'ph_wordle_stats_v1',
     'personal_hub_goals',
-    'reads_daily',
+    'personal_hub_achievements',
+    'personal_hub_checkins',
+    // Books
+    'personal_hub_books_v2',
+    'personal_hub_books_order',
+    'personal_hub_books_order_reading',
+    'personal_hub_books_order_toread',
+    // Recipes & meal planner
     'ph_recipes_v1',
+    'personal_hub_meal_planner_v2',
+    // Films watchlist
+    'ph_films_log_v1',
+    // Exercise
     'ph_ex_routines_v1',
     'ph_ex_logs_v1',
     'ph_ex_acts_v1',
+    // Saved articles
     'ph_curiosity_favs_v1',
-    'ph_philosophy_favs_v1'
+    'ph_philosophy_favs_v1',
+    // Wordle
+    'ph_wordle_v1',
+    'ph_wordle_stats_v1',
+    // Daily cache (preserves today's rotation across devices)
+    'reads_daily',
   ];
 
   /* ── helpers ── */
