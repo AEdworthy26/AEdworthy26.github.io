@@ -178,7 +178,7 @@
     .month-grid-weeks { grid-template-columns: 40px repeat(7,1fr); }
     .month-dh { text-align: center; padding: .6rem .25rem; border-right: 1px solid rgba(255,255,255,0.1); border-bottom: none; font-size: .6rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,0.75); background: linear-gradient(135deg, #1e293b 0%, #334155 100%); }
     .month-dh-corner { background: linear-gradient(135deg, #1e293b 0%, #334155 100%); border-right: 1px solid rgba(255,255,255,0.1); }
-    .month-cell { height: 155px; padding: .45rem .4rem; border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); vertical-align: top; transition: background .1s; cursor: pointer; overflow: hidden; }
+    .month-cell { height: 185px; padding: .45rem .4rem; border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); vertical-align: top; transition: background .1s; cursor: pointer; overflow: hidden; }
     .month-cell:hover { background: #f5f7ff; }
     .month-cell.other-month { opacity: .35; }
     .month-cell.drag-over { outline: 2px solid var(--blue); outline-offset: -2px; background: var(--blue-light) !important; }
@@ -775,7 +775,7 @@
       var mTotal=mEvs.length;
       var mPct=mTotal?Math.round(mDone/mTotal*100):0;
       // Week events: use full selected-week range so cross-month weeks show all days
-      var wEvs=events.filter(function(e){return e.date>=activeWeekISO&&e.date<=activeWeekEnd;});
+      var wEvs=events.filter(function(e){return e.date>=activeWeekISO&&e.date<=activeWeekEnd&&e.category!=='todo';});
       wEvs.sort(function(a,b){return a.date!==b.date?a.date.localeCompare(b.date):(a.allDay?'':a.startTime||'zzz').localeCompare(b.allDay?'':b.startTime||'zzz');});
       var leftHTML=wEvs.map(function(e){
         var c=CATS[e.category]||CATS.other;
