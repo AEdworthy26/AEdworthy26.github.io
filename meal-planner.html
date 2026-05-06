@@ -490,7 +490,6 @@
       <div class="shop-section">
         <div class="shop-head">
           <div class="shop-title-wrap">
-            <span style="font-size:1.1rem">🛒</span>
             <span class="shop-title">Shopping List</span>
             <span class="shop-count" id="shop-count">0</span>
           </div>
@@ -532,9 +531,9 @@
     var DAY_SHORT = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
     var MEALS     = ['breakfast','lunch','dinner'];
     var MEAL_META = {
-      breakfast: { emoji: '☕', label: 'Breakfast', ph: 'What\'s for breakfast?' },
-      lunch:     { emoji: '🍽', label: 'Lunch',     ph: 'What\'s for lunch?' },
-      dinner:    { emoji: '🌙', label: 'Dinner',    ph: 'What\'s for dinner?' }
+      breakfast: { label: 'Breakfast', ph: 'What\'s for breakfast?' },
+      lunch:     { label: 'Lunch',     ph: 'What\'s for lunch?' },
+      dinner:    { label: 'Dinner',    ph: 'What\'s for dinner?' }
     };
     var LS_KEY = 'personal_hub_meal_planner_v2';
 
@@ -683,7 +682,6 @@
         var meal  = ((todayData[mk] || {}).meal  || '').trim();
         var notes = ((todayData[mk] || {}).notes || '').trim();
         return '<div class="tc-meal-row tc-row-' + mk + (meal ? ' has-meal' : '') + '">'
-          + '<span class="tc-emoji">' + meta.emoji + '</span>'
           + '<div class="tc-content">'
           +   '<span class="tc-meal-label tc-meal-label-' + mk + '">' + meta.label + '</span>'
           +   '<span class="tc-meal-text' + (!meal ? ' empty' : '') + '">' + (meal ? esc(meal) : 'Nothing planned yet') + '</span>'
@@ -723,7 +721,7 @@
         var data = dayData[mk] || {meal:'',notes:''};
         return '<div class="dm-slot">'
           + '<span class="dm-slot-accent dm-slot-accent-' + mk + '"></span>'
-          + '<span class="dm-slot-label dm-slot-label-' + mk + '">' + meta.emoji + ' ' + meta.label + '</span>'
+          + '<span class="dm-slot-label dm-slot-label-' + mk + '">' + meta.label + '</span>'
           + '<textarea class="dm-meal-ta" data-mk="' + mk + '" placeholder="' + meta.ph + '" rows="2">' + esc(data.meal) + '</textarea>'
           + '<textarea class="dm-notes-ta" data-notes="' + mk + '" placeholder="Notes, calories, prep time…" rows="1">' + esc(data.notes) + '</textarea>'
           + '</div>';
