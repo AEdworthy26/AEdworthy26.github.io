@@ -39,6 +39,8 @@
     // Wordle
     'ph_wordle_v1',
     'ph_wordle_stats_v1',
+    // Vocabulary log
+    'ph_vocab_v1',
     // Daily cache (preserves today's rotation across devices)
     'reads_daily',
   ];

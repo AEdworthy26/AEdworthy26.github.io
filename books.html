@@ -178,6 +178,55 @@
     .btn-danger{font-family:'Inter',system-ui,sans-serif;font-size:.78rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:.55rem 1rem;background:none;border:1px solid rgba(212,64,0,.3);border-radius:7px;color:var(--tomato);cursor:pointer;margin-right:auto;transition:all .15s}
     .btn-danger:hover{background:rgba(212,64,0,.08)}
 
+    /* ── VOCABULARY ── */
+    .vocab-add-row{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:1.8rem;align-items:flex-end}
+    .vocab-input{font-family:'Inter',system-ui,sans-serif;font-size:.84rem;padding:.52rem .85rem;background:var(--dark-card);border:1px solid var(--dark-border);border-radius:7px;color:var(--dark-text);outline:none;transition:border-color .15s;flex:1;min-width:140px}
+    .vocab-input::placeholder{color:var(--dark-dim)}
+    .vocab-input:focus{border-color:rgba(200,163,72,.4)}
+    .vocab-input.vocab-def{flex:2;min-width:220px}
+    .vocab-add-btn{font-family:'Inter',system-ui,sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:.52rem 1.1rem;background:var(--gold);color:#0c0b09;border:none;border-radius:7px;cursor:pointer;white-space:nowrap;transition:background .15s;flex-shrink:0}
+    .vocab-add-btn:hover{background:#d4aa52}
+    .vocab-toolbar{display:flex;align-items:center;gap:.8rem;margin-bottom:1.2rem}
+    .vocab-count{font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--dark-dim)}
+    .vocab-fc-btn{font-family:'Inter',system-ui,sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:.48rem 1.1rem;background:none;border:1px solid rgba(200,163,72,.35);border-radius:7px;color:var(--gold);cursor:pointer;transition:all .15s;margin-left:auto}
+    .vocab-fc-btn:hover{background:rgba(200,163,72,.1);border-color:var(--gold)}
+    .vocab-fc-btn:disabled{opacity:.35;cursor:default;pointer-events:none}
+    .vocab-list{display:flex;flex-direction:column;gap:.5rem}
+    .vocab-entry{background:var(--dark-card);border:1px solid var(--dark-border);border-radius:9px;padding:.8rem 1rem;display:flex;align-items:flex-start;gap:.9rem;transition:border-color .15s}
+    .vocab-entry:hover{border-color:rgba(200,163,72,.2)}
+    .vocab-entry-body{flex:1;min-width:0}
+    .vocab-word{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--dark-text);margin-bottom:.2rem}
+    .vocab-def{font-size:.82rem;line-height:1.55;color:var(--dark-muted)}
+    .vocab-book{font-size:.65rem;letter-spacing:.08em;text-transform:uppercase;color:var(--dark-dim);margin-top:.3rem}
+    .vocab-del{background:none;border:none;color:var(--dark-dim);font-size:1rem;cursor:pointer;padding:.1rem .3rem;border-radius:4px;transition:color .12s,background .12s;flex-shrink:0;line-height:1;margin-top:.1rem}
+    .vocab-del:hover{color:#c0392b;background:rgba(192,57,43,.1)}
+    .vocab-empty{padding:3rem 0;text-align:center;color:var(--dark-dim);font-size:.88rem}
+
+    /* ── FLASHCARD OVERLAY ── */
+    .fc-overlay{position:fixed;inset:0;background:var(--dark-bg);z-index:2000;display:none;flex-direction:column;align-items:center;justify-content:center;padding:2rem}
+    .fc-overlay.open{display:flex}
+    .fc-header{position:absolute;top:1.2rem;left:0;right:0;display:flex;align-items:center;justify-content:space-between;padding:0 1.6rem}
+    .fc-progress{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--dark-muted)}
+    .fc-close{background:none;border:1px solid var(--dark-border);border-radius:7px;color:var(--dark-muted);font-size:.75rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:.4rem .9rem;cursor:pointer;transition:all .15s}
+    .fc-close:hover{color:var(--dark-text);border-color:rgba(210,200,180,.3)}
+    .fc-card{background:var(--dark-card);border:1px solid var(--dark-border);border-radius:16px;max-width:560px;width:100%;padding:3rem 2.5rem;text-align:center;min-height:280px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.2rem}
+    .fc-word{font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:900;color:var(--dark-text);line-height:1.15}
+    .fc-book-label{font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;color:var(--dark-dim)}
+    .fc-reveal-btn{font-family:'Inter',system-ui,sans-serif;font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:.55rem 1.4rem;background:rgba(200,163,72,.12);border:1px solid rgba(200,163,72,.35);border-radius:8px;color:var(--gold);cursor:pointer;transition:all .15s}
+    .fc-reveal-btn:hover{background:rgba(200,163,72,.22)}
+    .fc-definition{font-size:.92rem;line-height:1.65;color:var(--dark-muted);display:none;max-width:420px}
+    .fc-actions{display:none;gap:.8rem;margin-top:.5rem}
+    .fc-btn-again{font-family:'Inter',system-ui,sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:.52rem 1.3rem;background:none;border:1px solid rgba(212,64,0,.4);border-radius:8px;color:var(--tomato);cursor:pointer;transition:all .15s}
+    .fc-btn-again:hover{background:rgba(212,64,0,.08)}
+    .fc-btn-got{font-family:'Inter',system-ui,sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:.52rem 1.3rem;background:none;border:1px solid rgba(58,158,110,.4);border-radius:8px;color:var(--green);cursor:pointer;transition:all .15s}
+    .fc-btn-got:hover{background:rgba(58,158,110,.08)}
+    .fc-done{text-align:center;display:none;flex-direction:column;align-items:center;gap:1rem}
+    .fc-done-icon{font-size:3rem}
+    .fc-done-msg{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:var(--dark-text)}
+    .fc-done-sub{font-size:.82rem;color:var(--dark-muted)}
+    .fc-restart-btn{font-family:'Inter',system-ui,sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:.52rem 1.3rem;background:var(--gold);color:#0c0b09;border:none;border-radius:8px;cursor:pointer;transition:background .15s;margin-top:.5rem}
+    .fc-restart-btn:hover{background:#d4aa52}
+
     /* ── FOOTER ── */
     .site-footer{text-align:center;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--dark-dim);border-top:1px solid var(--dark-border);padding:1.5rem 2rem}
   </style>
@@ -274,6 +323,7 @@
     <button class="tab-btn active" data-tab="reading">Reading <span class="tab-count" id="cnt-reading">0</span></button>
     <button class="tab-btn" data-tab="read">Read <span class="tab-count" id="cnt-read">0</span></button>
     <button class="tab-btn" data-tab="toread">To Read <span class="tab-count" id="cnt-toread">0</span></button>
+    <button class="tab-btn" data-tab="vocab">Vocabulary <span class="tab-count" id="cnt-vocab">0</span></button>
   </div>
 
   <!-- TOOLBAR -->
@@ -306,6 +356,47 @@
     <div class="empty-state" id="empty-toread" style="display:none">
       <div style="font-size:2rem">📚</div>
       <p>Your reading wishlist is empty. Add some books!</p>
+    </div>
+  </div>
+
+  <!-- VOCABULARY PANEL -->
+  <div class="tab-panel" id="panel-vocab">
+    <div style="max-width:860px;margin:0 auto;padding-top:.4rem">
+      <div class="vocab-add-row">
+        <input class="vocab-input" type="text" id="vc-word" placeholder="Word or phrase…" autocomplete="off">
+        <input class="vocab-input vocab-def" type="text" id="vc-def" placeholder="Definition…" autocomplete="off">
+        <input class="vocab-input" type="text" id="vc-book" placeholder="Source book (optional)" autocomplete="off" style="flex:1.2;min-width:160px">
+        <button class="vocab-add-btn" id="vc-add-btn">+ Add Word</button>
+      </div>
+      <div class="vocab-toolbar">
+        <span class="vocab-count" id="vc-count">0 words</span>
+        <button class="vocab-fc-btn" id="vc-fc-btn" disabled>&#9654; Flashcards</button>
+      </div>
+      <div class="vocab-list" id="vc-list"></div>
+    </div>
+  </div>
+
+  <!-- FLASHCARD OVERLAY -->
+  <div class="fc-overlay" id="fc-overlay">
+    <div class="fc-header">
+      <span class="fc-progress" id="fc-progress"></span>
+      <button class="fc-close" id="fc-close">&#10005; End</button>
+    </div>
+    <div class="fc-card" id="fc-card">
+      <div class="fc-word" id="fc-word"></div>
+      <div class="fc-book-label" id="fc-book-label"></div>
+      <button class="fc-reveal-btn" id="fc-reveal-btn">Show Definition</button>
+      <div class="fc-definition" id="fc-definition"></div>
+      <div class="fc-actions" id="fc-actions">
+        <button class="fc-btn-again" id="fc-again">&#8635; Again</button>
+        <button class="fc-btn-got" id="fc-got">&#10003; Got it</button>
+      </div>
+    </div>
+    <div class="fc-done" id="fc-done">
+      <div class="fc-done-icon">&#127891;</div>
+      <div class="fc-done-msg">Session complete!</div>
+      <div class="fc-done-sub" id="fc-done-sub"></div>
+      <button class="fc-restart-btn" id="fc-restart">&#8635; Go again</button>
     </div>
   </div>
 
@@ -746,6 +837,7 @@ document.querySelectorAll('.tab-btn').forEach(function(btn) {
     document.querySelectorAll('.tab-btn').forEach(function(b){ b.classList.toggle('active', b === btn); });
     document.querySelectorAll('.tab-panel').forEach(function(p){ p.classList.toggle('active', p.id === 'panel-' + activeTab); });
     document.getElementById('js-drag-hint').style.display = (activeTab === 'read') ? '' : 'none';
+    document.querySelector('.toolbar').style.display = (activeTab === 'vocab') ? 'none' : '';
   });
 });
 
@@ -844,6 +936,146 @@ document.getElementById('modal-save-btn').addEventListener('click', function() {
 });
 
 document.getElementById('js-add-btn').addEventListener('click', function() { openModal(null); });
+
+// ── VOCABULARY ────────────────────────────────────────────────
+var VC_KEY = 'ph_vocab_v1';
+var vocab = (function() {
+  try { return JSON.parse(localStorage.getItem(VC_KEY) || '[]'); } catch(e) { return []; }
+})();
+
+function saveVocab() { localStorage.setItem(VC_KEY, JSON.stringify(vocab)); }
+
+function renderVocab() {
+  var list = document.getElementById('vc-list');
+  var count = document.getElementById('vc-count');
+  var fcBtn = document.getElementById('vc-fc-btn');
+  document.getElementById('cnt-vocab').textContent = vocab.length;
+  count.textContent = vocab.length + ' word' + (vocab.length !== 1 ? 's' : '');
+  fcBtn.disabled = vocab.length === 0;
+  if (!vocab.length) {
+    list.innerHTML = '<div class="vocab-empty">No words yet — add one above to get started.</div>';
+    return;
+  }
+  list.innerHTML = vocab.map(function(v) {
+    return '<div class="vocab-entry" data-id="' + v.id + '">'
+      + '<div class="vocab-entry-body">'
+      + '<div class="vocab-word">' + esc(v.word) + '</div>'
+      + '<div class="vocab-def">' + esc(v.definition) + '</div>'
+      + (v.book ? '<div class="vocab-book">From: ' + esc(v.book) + '</div>' : '')
+      + '</div>'
+      + '<button class="vocab-del" data-del="' + v.id + '" title="Delete">&times;</button>'
+      + '</div>';
+  }).join('');
+}
+
+document.getElementById('vc-add-btn').addEventListener('click', function() {
+  var word = document.getElementById('vc-word').value.trim();
+  var def  = document.getElementById('vc-def').value.trim();
+  if (!word || !def) {
+    if (!word) document.getElementById('vc-word').focus();
+    else document.getElementById('vc-def').focus();
+    return;
+  }
+  vocab.unshift({ id: uid(), word: word, definition: def, book: document.getElementById('vc-book').value.trim() });
+  saveVocab();
+  renderVocab();
+  document.getElementById('vc-word').value = '';
+  document.getElementById('vc-def').value  = '';
+  document.getElementById('vc-book').value = '';
+  document.getElementById('vc-word').focus();
+});
+
+['vc-word', 'vc-def', 'vc-book'].forEach(function(id) {
+  document.getElementById(id).addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') document.getElementById('vc-add-btn').click();
+  });
+});
+
+document.getElementById('vc-list').addEventListener('click', function(e) {
+  var del = e.target.closest('[data-del]');
+  if (!del) return;
+  vocab = vocab.filter(function(v) { return v.id !== del.dataset.del; });
+  saveVocab();
+  renderVocab();
+});
+
+// ── FLASHCARDS ────────────────────────────────────────────────
+var fcDeck = [], fcIdx = 0, fcGot = 0, fcAgain = [];
+
+function shuffle(arr) {
+  for (var i = arr.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var t = arr[i]; arr[i] = arr[j]; arr[j] = t;
+  }
+  return arr;
+}
+
+function startFlashcards() {
+  fcDeck  = shuffle(vocab.slice());
+  fcIdx   = 0;
+  fcGot   = 0;
+  fcAgain = [];
+  document.getElementById('fc-done').style.display  = 'none';
+  document.getElementById('fc-card').style.display  = 'flex';
+  document.getElementById('fc-overlay').classList.add('open');
+  showCard();
+}
+
+function showCard() {
+  if (fcIdx >= fcDeck.length) {
+    if (fcAgain.length) {
+      fcDeck  = shuffle(fcAgain.slice());
+      fcIdx   = 0;
+      fcAgain = [];
+    } else {
+      endFlashcards();
+      return;
+    }
+  }
+  var v = fcDeck[fcIdx];
+  document.getElementById('fc-word').textContent       = v.word;
+  document.getElementById('fc-book-label').textContent = v.book ? 'From: ' + v.book : '';
+  document.getElementById('fc-definition').textContent = v.definition;
+  document.getElementById('fc-definition').style.display = 'none';
+  document.getElementById('fc-reveal-btn').style.display = '';
+  document.getElementById('fc-actions').style.display    = 'none';
+  document.getElementById('fc-progress').textContent    = (fcIdx + 1) + ' / ' + fcDeck.length;
+}
+
+function endFlashcards() {
+  document.getElementById('fc-card').style.display = 'none';
+  document.getElementById('fc-done').style.display = 'flex';
+  document.getElementById('fc-done-sub').textContent =
+    fcGot + ' of ' + vocab.length + ' word' + (vocab.length !== 1 ? 's' : '') + ' correct.';
+}
+
+document.getElementById('fc-reveal-btn').addEventListener('click', function() {
+  document.getElementById('fc-definition').style.display = '';
+  document.getElementById('fc-reveal-btn').style.display = 'none';
+  document.getElementById('fc-actions').style.display    = 'flex';
+});
+
+document.getElementById('fc-got').addEventListener('click', function() {
+  fcGot++;
+  fcIdx++;
+  showCard();
+});
+
+document.getElementById('fc-again').addEventListener('click', function() {
+  fcAgain.push(fcDeck[fcIdx]);
+  fcIdx++;
+  showCard();
+});
+
+document.getElementById('fc-restart').addEventListener('click', startFlashcards);
+
+document.getElementById('fc-close').addEventListener('click', function() {
+  document.getElementById('fc-overlay').classList.remove('open');
+});
+
+document.getElementById('vc-fc-btn').addEventListener('click', startFlashcards);
+
+renderVocab();
 
 // ── Date ─────────────────────────────────────────────────────
 (function(){
