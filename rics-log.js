@@ -3,6 +3,45 @@
 
 var RICS_LOG = [
   {
+    "date": "2026-05-06",
+    "topic": "Overage Mechanisms: Structures, Triggers, Valuation and Enforcement in Residential Land Transactions",
+    "module": "Land & Joint Ventures",
+    "level": 2,
+    "apc_competency": "Legal/Regulatory Compliance (Level 2)",
+    "focus": "This lesson examines overage (clawback) agreements in detail \u2014 how they are structured, common trigger events, valuation methodologies for calculating overage payments, and practical enforcement challenges. For Alfie, overage is a live commercial reality on almost every land acquisition: understanding how to negotiate, model and manage overage obligations is essential both for protecting Latimer\\'s position and for demonstrating applied legal and commercial competence at APC Level 2.",
+    "image": "https://images.unsplash.com/photo-1682403299053-5dea162de9b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxPdmVyYWdlJTIwTWVjaGFuaXNtcyUzQSUyMFN0cnVjdHVyZXMlMkMlMjBVSyUyMHByb3BlcnR5JTIwYXJjaGl0ZWN0dXJlJTIwYnVpbGRpbmclMjBleHRlcmlvcnxlbnwwfDB8fHwxNzc4MDQ0MTc5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "content": [],
+    "summary": [
+      "Overage is a contractual right (not a statutory levy) entitling a vendor to share in future value uplift \u2014 it must be modelled as a contingent cost in Latimer\\'s acquisition appraisals and tracked across the full development lifecycle.",
+      "The four main overage structures \u2014 planning, implementation, sales/revenue, and profit \u2014 each carry different trigger definitions, valuation methodologies and enforcement risks; the choice of structure is a key negotiation point at acquisition.",
+      "Valuation disputes are the most common point of contention: the 'before and after' residual method is standard for planning overage, but inputs (GDV, build costs, affordable carve-out) must be tightly specified in the overage deed to avoid ambiguity.",
+      "Title restrictions are the most effective security mechanism for overage beneficiaries but require a deed of priority with Latimer\\'s development finance lender \u2014 this is a standard pre-drawdown step that must be programmed into the legal timetable.",
+      "In the RP context, LA and Homes England land disposals carry more prescriptive overage regimes; affordable units must be carved out of GDV calculations to avoid Latimer paying overage on value it will never receive."
+    ],
+    "qa": [
+      {
+        "q": "A vendor\\'s overage deed triggers on 'grant of planning permission for residential use.' Latimer later secures a non-material amendment increasing unit numbers by 8. Does overage re-trigger?",
+        "a": "A non-material amendment (NMA) under s96A TCPA 1990 does not constitute a new grant of planning permission \u2014 it amends the existing consent. Therefore, on a strict reading, the overage trigger (grant of permission) would not re-fire on an NMA alone. However, if the overage deed is drafted broadly \u2014 for example, 'grant of any planning permission or amendment thereto which increases the consented quantum' \u2014 it may catch an NMA. Alfie should ensure Latimer\\'s solicitors review the precise trigger language before applying for any NMA and, if necessary, seek the vendor\\'s written confirmation that the NMA does not constitute a trigger event."
+      },
+      {
+        "q": "How does Latimer account for overage in a residual appraisal submitted to support a planning viability assessment?",
+        "a": "Overage is a private contractual cost \u2014 it is not universally accepted as a deductible cost in planning viability assessments. NPPG viability guidance requires costs to be evidenced and market-tested. Latimer should disclose the overage liability as a site-specific abnormal cost, supported by the overage deed, and argue that it is a genuine acquisition cost that reduces the residual available for planning obligations. However, assessors and LPAs may push back, particularly if the overage terms appear generous to the vendor. The safest approach is to present the overage as a 'known cost' line in the appraisal with the deed available for inspection, rather than attempting to omit it or bury it in contingency."
+      },
+      {
+        "q": "What is a 'cascade' provision in an overage deed and why does it matter to Latimer?",
+        "a": "A cascade provision obliges a purchaser who sells the overage-burdened land on to a third party to ensure that the overage obligation is transferred to and binding on the new owner \u2014 and that the original vendor\\'s rights are not extinguished by the disposal. Without a cascade, Latimer could theoretically sell the site on, collect a capital receipt reflecting the full planning uplift, and leave the vendor with no enforceable right against the new owner. Cascade clauses typically require Latimer to: (a) give the vendor notice of any proposed onward sale; (b) procure that the buyer enters into a direct deed of covenant with the vendor; and (c) pay any crystallised overage on the disposal event. This is particularly relevant if Latimer sells a consented site to a contracting developer or disposes of a phase to a third-party RSL."
+      },
+      {
+        "q": "Latimer acquires a site from a local authority. The overage deed includes a 'claw-back' if the site is not started within 5 years. How does this interact with Latimer\\'s development programme?",
+        "a": "This is an implementation trigger functioning as a longstop \u2014 if Latimer fails to commence material operations within 5 years, the LA can trigger clawback, potentially requiring Latimer to repay part of the purchase price or transfer the land back at original cost. Alfie must ensure: (1) the programme is realistic and the 5-year longstop is achievable given planning, design and procurement timelines; (2) 'material operations' is clearly defined \u2014 ideally as anything beyond strip foundations, not limited to substantial structural works; (3) the longstop can be extended by agreement if delays arise from planning or statutory processes outside Latimer\\'s control (force majeure and planning delay carve-outs are standard asks); and (4) the longstop and its extension mechanics are flagged in the project risk register and Investment Committee papers."
+      },
+      {
+        "q": "Explain the difference between a restriction on title and a positive covenant as mechanisms for securing overage, and which is preferable from a vendor\\'s perspective.",
+        "a": "A restriction on the title register (entered under s42 Land Registration Act 2002) prevents the registered proprietor from making a disposition \u2014 including a mortgage \u2014 without the overage beneficiary\\'s consent or the lodging of a certificate. This is self-enforcing through the Land Registry system and does not depend on the personal covenant of the purchaser. A positive covenant, by contrast, requires the covenantor personally to perform an obligation (pay overage) and does not automatically bind successors in title \u2014 under English law, the burden of positive covenants does not run with the land at common law (Halsall v Brizell notwithstanding). Accordingly, a restriction is significantly more robust for the vendor. For Latimer as acquirer, the restriction is the bigger operational issue \u2014 it must be 'unlocked' with a deed of priority before development finance can be secured, requiring the vendor\\'s cooperation at a critical point in the programme."
+      }
+    ]
+  },
+  {
     "date": "2026-05-05",
     "topic": "Ransom Strips, Marriage Value and Hope Value in Land Assembly",
     "module": "Valuation",

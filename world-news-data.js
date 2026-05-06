@@ -1,61 +1,61 @@
 // world-news-data.js
-// Auto-updated 2026-05-05 — do not edit manually
+// Auto-updated 2026-05-06 — do not edit manually
 
 var WORLD_NEWS = {
-  date: "2026-05-05",
+  date: "2026-05-06",
   main: {
-    title: "Hormuz Crisis Deepens as U.S. Warships Repel Missile and Drone Attacks in the Gulf",
+    title: "Trump Pauses Strait of Hormuz Escort Mission as Iran Deal Talks Show Progress",
     category: "Geopolitics",
     content: [
-      "The Strait of Hormuz crisis entered a dangerous new phase on day 67 of the Iran conflict, as U.S. Navy warships shot down a wave of missiles and drones targeting vessels being escorted through the critical waterway. The United Arab Emirates separately confirmed it had intercepted Iranian missiles following a suspected drone attack on its territory, though Iran offered no official comment on the incidents. The escalation marks one of the most direct and sustained confrontations in the Gulf since the current conflict began, raising fears of a broader regional conflagration.",
-      "The Strait of Hormuz, through which roughly a fifth of the world\'s oil supply passes, has become the central flashpoint of the ongoing Iran conflict, with attacks on commercial and military shipping threatening to choke global energy markets. The United States has been deploying naval assets to escort vessels through the strait, a mission that has now come under direct fire. Western officials have described the situation as gravely serious, with the potential to disrupt fuel supplies across Europe, Asia, and beyond if the waterway becomes effectively impassable.",
-      "The ripple effects of the Hormuz crisis are already being felt far beyond the Gulf region. The UK government has been scrambling to address a looming jet fuel shortage, with Transport Secretary Heidi Alexander identifying imports from the United States and West Africa — including Nigeria\'s Dangote refinery — as part of a contingency plan to ensure aviation supplies ahead of the summer travel season. The crisis has injected fresh urgency into debates about Western energy dependency and the fragility of global supply chains that run through contested maritime corridors.",
-      "Regional neighbours are watching the escalation with alarm. The UAE\'s decision to publicly attribute the drone attack to Iran represents a significant diplomatic step, as Gulf states have historically sought to avoid being drawn directly into the conflict. Analysts note that any miscalculation — a stray missile, a sunken vessel, a casualty among naval personnel — could trigger a much wider military response that neither side has so far been willing to risk. Diplomatic back-channels remain active, but the tempo of attacks suggests that neither Iran nor its adversaries are ready to de-escalate.",
-      "The broader international community has called for restraint, with the United Nations warning that sustained disruption to the Strait of Hormuz would constitute a humanitarian and economic crisis affecting countries far removed from the immediate conflict zone. Energy prices have surged on global markets in response to the latest incidents, and insurance premiums for vessels transiting the Gulf have reached record highs. As military and diplomatic pressure mounts simultaneously, the coming days are widely viewed as critical in determining whether the conflict remains contained or tips into a wider regional war."
+      "President Donald Trump announced on Wednesday that the United States would pause 'Project Freedom', a day-old military operation designed to escort commercial vessels through the Strait of Hormuz, citing progress toward a potential deal with Iran. The decision came just hours after Secretary of State Marco Rubio had publicly affirmed the mission, underscoring the volatile and rapidly shifting nature of US strategy in the ongoing conflict with Tehran. The sudden reversal left allies and analysts scrambling to interpret Washington\'s intentions in one of the world\'s most strategically critical waterways.",
+      "The Strait of Hormuz, a narrow passage between Iran and the Arabian Peninsula, is the transit point for roughly a fifth of the world\'s oil supply, and Iran\'s ability to threaten or restrict passage through it has given Tehran significant leverage since the outbreak of hostilities. The US military escort operation had been framed as a way to reassure commercial shipping operators and stabilise global energy markets, which have been severely disrupted since the war began. Jet fuel prices in particular have surged dramatically, with airlines already passing costs on to passengers through higher baggage fees and surcharges.",
+      "BBC diplomatic editor Jeremy Bowen warned that the Strait standoff continues to raise the risk of sliding back into all-out war, describing the ceasefire in the Gulf region as 'fragile' and under serious jeopardy. Both Washington and Tehran have shown a determination to keep economic and military pressure on each other even as back-channel negotiations reportedly continue. The situation is further complicated by Iran\'s insistence that any deal must include significant face-saving compromises that the Trump administration has so far been reluctant to offer publicly.",
+      "Analysts have noted that Trump appears to be searching for a swift diplomatic resolution — a so-called 'silver bullet' — but Tehran\'s calculus is unlikely to shift without a substantive concession that allows the Iranian government to claim a form of victory domestically. The war has already reshaped regional dynamics, with Lebanon suffering renewed bombardment and Ukrainian-style civilian entrapment playing out in unexpected corners of the conflict\'s ripple effects. Global oil markets remain on edge, with energy ministers from multiple nations convening emergency consultations to assess supply chain vulnerabilities.",
+      "The pausing of the escort mission will be watched closely by shipping companies, insurers, and governments that depend on Hormuz for energy imports. Whether the move signals genuine diplomatic momentum or another episode of strategic ambiguity from the Trump White House remains deeply unclear. What is certain is that the coming days will be critical: if nuclear-adjacent talks with Iran stall again, pressure will mount on the administration to recommit to a military posture it has now publicly walked back, potentially weakening its negotiating hand."
     ],
-    image: "https://static01.nyt.com/images/2026/05/04/multimedia/04mideast-live-promo-745p-qvmb/04mideast-live-promo-745p-qvmb-mediumSquareAt3X.jpg",
-    source: "Al Jazeera",
-    sourceUrl: "https://www.aljazeera.com/news/2026/5/5/iran-war-whats-happening-on-day-67-as-hormuz-crisis-deepens?traffic_source=rss"
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/2c3f/live/af9c9120-48da-11f1-ac78-2112837ce2aa.jpg",
+    source: "BBC News",
+    sourceUrl: "https://www.bbc.com/news/articles/clypekl71gdo?at_medium=RSS&at_campaign=rss"
   },
   secondary: [
     {
       id: "s1",
-      title: "Hantavirus Outbreak on Atlantic Cruise Ship Kills Three, Leaves British Crew in Critical Care",
-      summary: "A suspected hantavirus outbreak aboard the luxury cruise ship MV Hondius has killed three passengers and left a British crew member and a UK passenger in critical condition as the vessel awaits assistance off the coast of Cape Verde.",
+      title: "Hantavirus Cruise Ship Allowed to Dock in Canary Islands After Atlantic Standoff",
+      summary: "Spain has agreed to allow a cruise ship struck by a suspected hantavirus outbreak to dock in the Canary Islands, following the deaths of three passengers and urgent medical needs among crew.",
       body: [
-        "The MV Hondius, carrying nearly 150 people, has been stranded in the Atlantic Ocean off Cape Verde after a suspected hantavirus outbreak killed a Dutch couple and a German national, with the World Health Organisation confirming seven cases in total — either confirmed or suspected. A British crew member was described as requiring urgent medical care, while a second UK passenger remained in a critical but stable condition, prompting urgent diplomatic and logistical efforts to bring medical assistance to the vessel.",
-        "Hantavirus is a rare and serious infection typically transmitted to humans through contact with infected rodents or their droppings, making its appearance aboard a cruise ship particularly unusual and alarming to health authorities. The outbreak has drawn significant international attention, with public health experts calling for a thorough investigation into the source of the infection once passengers and crew are safely ashore."
+        "The MV Hondius, a luxury expedition vessel, has been granted permission to dock in the Canary Islands after days of being refused entry to ports across the Atlantic region. The World Health Organisation confirmed seven confirmed or suspected cases of hantavirus on board, including three passengers who have died — among them a Dutch husband and wife — with at least two crew members still requiring urgent medical care.",
+        "Hantavirus is a rare but potentially lethal infection typically transmitted through contact with infected rodents or their droppings, and outbreaks aboard enclosed vessels present unique containment challenges. The case has alarmed public health officials and raised questions about biosecurity protocols on cruise ships operating in remote Atlantic waters."
       ],
       image: "https://i.guim.co.uk/img/media/6adde1cdf2cb63354dd69c0a998ec1af299f5a7a/434_0_2998_2398/master/2998.jpg?width=1200&quality=85&auto=format&fit=max&s=3fa45cadc1311484381589a516829381",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/science/2026/may/04/cruise-ship-suspected-hantavirus-outbreak-blocked-docking-cape-verde",
+      source: "Al Jazeera",
+      url: "https://www.aljazeera.com/news/2026/5/6/spain-agrees-to-let-hantavirus-hit-cruise-ship-dock-in-canary-islands?traffic_source=rss",
       category: "Health"
     },
     {
       id: "s2",
-      title: "Explosion at Chinese Fireworks Factory Kills 26 and Injures Dozens in Liuyang",
-      summary: "A massive explosion tore through a fireworks factory in China\'s Liuyang region — known as the world\'s fireworks capital — killing at least 26 people and injuring 61 others.",
+      title: "Romania\'s Pro-EU Government Collapses After No-Confidence Vote",
+      summary: "Romania\'s pro-European coalition government led by Prime Minister Ilie Bolojan has been ousted following a successful parliamentary vote of no confidence.",
       body: [
-        "Rescue operations were still under way following the catastrophic blast, which devastated the factory site and sent shockwaves through surrounding areas. Chinese state authorities confirmed the death toll of 26 and said dozens of injured were receiving hospital treatment, with the cause of the explosion under investigation.",
-        "Liuyang in Hunan province produces the vast majority of the world\'s consumer fireworks and has a long and troubled history of industrial accidents linked to the highly volatile materials involved in pyrotechnic manufacturing. The disaster will intensify scrutiny of safety regulations in China\'s fireworks industry, which has faced repeated calls for stricter oversight following a string of fatal incidents over the past decade."
+        "The fall of the Bolojan government marks a significant political rupture in Romania, a NATO and EU member state whose alignment with Western institutions had been a cornerstone of its post-Cold War identity. The no-confidence vote succeeded amid rising domestic discontent and pressure from nationalist and Eurosceptic political factions that have gained ground across much of Central and Eastern Europe in recent years.",
+        "The development raises fresh concerns in Brussels about the stability of EU membership cohesion at a moment when the bloc is already navigating the pressures of the Iran war\'s economic fallout and ongoing instability on its eastern flank. Romania\'s political future now hangs on coalition negotiations that could determine whether the country shifts meaningfully toward a more Eurosceptic posture."
       ],
-      image: "https://images.pexels.com/photos/15497729/pexels-photo-15497729.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      image: "https://images.unsplash.com/photo-1756968210095-3ac54a4088b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxSb21hbmlhJTVDfGVufDB8MHx8fDE3NzgwNDM2ODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
       source: "Al Jazeera",
-      url: "https://www.aljazeera.com/news/2026/5/5/explosion-at-fireworks-factory-in-china-kills-26-injures-61?traffic_source=rss",
-      category: "World"
+      url: "https://www.aljazeera.com/video/newsfeed/2026/5/6/romanias-pro-eu-government-ousted-after-no-confidence-vote?traffic_source=rss",
+      category: "Politics"
     },
     {
       id: "s3",
-      title: "Russia Declares Unilateral Ceasefire in Ukraine for Victory Day, Threatens Retaliation",
-      summary: "Russia has announced a unilateral two-day ceasefire in Ukraine to coincide with Victory Day celebrations marking the defeat of Nazi Germany, while simultaneously warning it will strike back if Kyiv attempts to disrupt the commemorations.",
+      title: "Kenya\'s AI Healthcare System Found to Systematically Penalise the Poor",
+      summary: "An investigation has found that an AI algorithm used to determine Kenyans' healthcare contributions has consistently driven up costs for the country\'s poorest citizens.",
       body: [
-        "The Kremlin declared the truce for Friday and Saturday, framing it as a gesture of goodwill ahead of the major national holiday, though Ukrainian officials have historically regarded such unilateral announcements with deep scepticism, questioning whether Russian forces would genuinely halt offensive operations along the front lines. The announcement came amid ongoing fighting across multiple sectors of the conflict and was not the product of any bilateral negotiation.",
-        "Victory Day on 9 May remains one of the most politically significant dates in the Russian calendar, and the Kremlin has consistently used the occasion to project an image of national strength and historical legitimacy for its military campaigns. Ukraine and Western allies are expected to closely monitor the front lines over the ceasefire period, with any violations likely to be swiftly documented and used to challenge Moscow\'s stated intentions."
+        "A Guardian investigation has revealed that Kenya\'s AI-driven national health financing system, rolled out as part of President William Ruto\'s pledge to provide universal healthcare access, contains serious flaws that have resulted in lower-income Kenyans being assigned disproportionately high contribution rates. The algorithm, which is designed to assess individual affordability, appears to systematically miscalculate the financial capacity of rural and informal-sector workers.",
+        "The findings are particularly significant given that the healthcare reforms were presented as a flagship social equity initiative following widespread civil unrest in Kenya in recent years. Critics argue the case illustrates the broader risks of deploying poorly calibrated AI systems in high-stakes public services across the developing world, where data quality and algorithmic transparency are often inadequate safeguards."
       ],
-      image: "https://images.unsplash.com/photo-1681393889158-e3dff1463bc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxSdXNzaWElMjBEZWNsYXJlcyUyMFVuaWxhdGVyYWwlMjBDZWFzZWZpcmUlMjBpbiUyMFVrcmFpbmUlMjBmb3IlMjBWaWN0b3J5JTIwRGF5JTJDJTIwVGhyZWF0ZW5zJTIwUmV0YWxpYXRpb258ZW58MHwwfHx8MTc3Nzk2NDcxOHww&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "NPR",
-      url: "https://www.npr.org/2026/05/05/g-s1-120129/russia-declares-a-truce-in-ukraine-to-mark-victory-day",
-      category: "Conflict"
+      image: "https://images.unsplash.com/photo-1713260886924-15b8ea16992b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxLZW55YSU1Q3xlbnwwfDB8fHwxNzc4MDQzNjg1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/global-development/2026/may/04/kenya-ai-healthcare-reforms-driving-up-costs-for-poor",
+      category: "Global Development"
     }
   ]
 };

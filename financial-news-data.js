@@ -1,61 +1,61 @@
 // financial-news-data.js
-// Auto-updated 2026-05-05 — do not edit manually
+// Auto-updated 2026-05-06 — do not edit manually
 
 var FINANCIAL_NEWS = {
-  date: "2026-05-05",
+  date: "2026-05-06",
   main: {
-    title: "Oil Prices Slide but Remain Elevated as Middle East Conflict Chokes Hormuz Shipping",
-    category: "Markets & Commodities",
+    title: "Oil Falls and Stocks Rally as Trump Pauses Strait of Hormuz Operation to Pursue Iran Deal",
+    category: "Markets",
     content: [
-      "Oil prices retreated on Tuesday, giving back a portion of the sharp gains recorded in the previous session, as markets attempted to digest the rapidly escalating military situation in the Middle East. Brent crude and West Texas Intermediate both edged lower, though both benchmarks remained significantly elevated compared to levels seen before the latest round of hostilities. Traders are caught between the near-term relief of some vessels successfully clearing the Strait of Hormuz and the persistent fear that the conflict could intensify further, cutting off one of the world\'s most critical energy chokepoints.",
-      "The Strait of Hormuz remains at the center of global energy market anxiety, with hundreds of vessels reported clustering near Dubai as shipping companies seek safety away from the contested waterway. Shipping giant Maersk confirmed that one of its US-flagged commercial vessels had successfully exited the strait under US military escort, offering a rare moment of reassurance to markets. However, Bloomberg reported that Iran has been actively widening its area of operational control in the region, keeping the broader passage effectively empty and the risk premium on oil stubbornly high.",
-      "The disruption to oil flows through Hormuz carries profound implications for global energy supply, given that roughly 20 percent of the world\'s traded oil passes through the strait on any given day. Analysts warn that even a partial or intermittent closure could rapidly drain strategic petroleum reserves across importing nations, pushing prices sharply higher again. Airlines, petrochemical companies, and utilities are among the industries already scrambling to secure alternative supply arrangements, with jet fuel shortages beginning to emerge as a distinct concern for the coming summer travel season.",
-      "Financial markets more broadly have been rattled by the conflict\'s trajectory, with equities under pressure and safe-haven assets such as gold and government bonds seeing renewed demand. HSBC\'s latest earnings update underscored the widening financial fallout, as the bank raised its expected credit loss forecast for the year, citing both a major UK fraud-related charge and the economic disruption stemming from the Iran conflict. The bank now expects its expected credit loss charge as a percentage of average gross loans to reach approximately 45 basis points in 2026, a significant upward revision that signals growing concern among major lenders about the war\'s knock-on effects on creditworthiness and economic activity.",
-      "Longer-term, the sustained elevation in oil prices is already reshaping strategic energy decisions globally. China, facing high import costs, has doubled down on its wind power industrial policy, leveraging subsidies and import restrictions to accelerate a domestic buildout that could reduce its hydrocarbon dependency over time. For Western economies, the crisis is renewing urgent debate about energy security, supply chain resilience, and the pace of transition away from fossil fuels — with the market\'s message being stark: geopolitical risk in the Gulf is no longer a tail risk, but a persistent and structurally significant feature of the global economic landscape."
+      "Oil prices fell sharply and global equity markets rose on Wednesday after President Donald Trump announced a pause in the U.S. military operation to escort commercial ships through the Strait of Hormuz, signalling a potential diplomatic off-ramp from a conflict that has rattled energy markets for weeks. Crude futures dropped notably on the news, offering some relief to consumers and businesses that have been squeezed by fuel costs driven to multi-year highs by the Middle East hostilities. Investors interpreted the move as a sign that the administration may be stepping back from direct confrontation with Iran in favour of a negotiated settlement.",
+      "The Strait of Hormuz is one of the world\'s most critical energy chokepoints, with roughly a fifth of global oil supply transiting the waterway at any given time. Disruption to shipping through the strait had sent jet fuel, diesel, and gasoline prices surging in recent weeks, forcing airlines to cut capacity and weighing heavily on consumer spending. The partial easing of those supply fears was enough to send risk assets higher across multiple asset classes, with Asian currencies also rallying on the improved sentiment, according to Bloomberg Markets data.",
+      "Despite the day\'s relief rally, market analysts cautioned that the underlying situation remains fragile and that a durable resolution has yet to materialise. The pause in U.S. operations is intended to create space for diplomatic negotiations, but there is no formal ceasefire in place and the conflict could escalate again quickly if talks break down. Bloomberg Markets noted that foreign policy volatility has been a persistent driver of risk sentiment throughout the crisis, with markets swinging sharply on each new development from Washington.",
+      "The broader economic damage from the conflict has already been significant. Two million airline seats have been cut from May schedules globally as carriers redraw operations in response to soaring jet fuel prices, with further summer cancellations possible if Middle East fuel supply disruptions continue. In the United Kingdom, inflation fears linked to the war have contributed to a selloff in government bonds, pushing long-term borrowing costs to their highest level since 1998 — a development that threatens to further strain public finances and mortgage affordability for British households.",
+      "For equity investors, Wednesday\'s oil price retreat and stock market gains offered a welcome reprieve after weeks of turbulence, but analysts stressed that the economic consequences of the conflict will persist even if a deal is eventually struck. Higher fuel costs have already fed into inflation expectations in major economies, complicating the task of central banks considering rate adjustments. The interplay between geopolitical risk, energy prices, and monetary policy is expected to remain the defining theme for financial markets in the weeks ahead, as traders watch closely for any concrete signs of progress in U.S.-Iran negotiations."
     ],
-    image: "https://static01.nyt.com/images/2026/05/05/multimedia/05Biz-Oil-Stocks-Gas-promo-cflk/05Biz-Oil-Stocks-Gas-promo-cflk-mediumSquareAt3X.jpg",
+    image: "https://static01.nyt.com/images/2026/05/06/multimedia/06Biz-Oil-Stocks-Gas-promo-clgw/06Biz-Oil-Stocks-Gas-promo-clgw-mediumSquareAt3X.jpg",
     source: "The New York Times",
-    sourceUrl: "https://www.nytimes.com/2026/05/05/business/oil-gas-prices-iran.html"
+    sourceUrl: "https://www.nytimes.com/2026/05/06/business/oil-gas-price-iran.html"
   },
   secondary: [
     {
       id: "fn1",
-      title: "Palantir Posts Fastest-Ever Revenue Growth, Riding Wave of AI Demand",
-      summary: "Palantir beat earnings expectations with its strongest revenue growth on record, driven by explosive demand for its AI platforms in the US market.",
+      title: "UK Long-Term Borrowing Costs Hit 28-Year High Amid Inflation and Bond Market Jitters",
+      summary: "UK government bond yields have surged to their highest level since 1998, threatening Labour\'s spending plans as inflation fears tied to the Iran conflict drive a sharp selloff in gilts.",
       body: [
-        "Palantir Technologies reported its fastest revenue growth in the company\'s history, surpassing analyst expectations as demand for its artificial intelligence and data analytics platforms surged, particularly among US government and commercial clients. The results underscored the company\'s increasingly central role in the AI infrastructure buildout, with management pointedly criticizing what they called 'AI slop' — a term aimed at undifferentiated, low-quality AI products from competitors.",
-        "The strong print from Palantir adds to a growing body of evidence that enterprise and government spending on serious AI capabilities is accelerating, even as broader tech valuations remain volatile. Investors have increasingly viewed Palantir as a bellwether for real-world AI adoption, and Tuesday\'s results are likely to reinforce that narrative and provide a degree of support to the wider AI sector."
+        "Long-term UK borrowing costs climbed to levels not seen since 1998 this week, as fears of war-driven inflation prompted investors to dump government bonds, pushing yields sharply higher. The selloff reflects deep anxiety in financial markets about the fiscal outlook for the UK, with the conflict in the Middle East adding an unpredictable new variable to already stretched public finances.",
+        "The surge in gilt yields poses a direct challenge to the government\'s tax and spending framework, as higher borrowing costs increase the bill for servicing the national debt and could force difficult choices on public investment or tax rises. Mortgage affordability has also deteriorated to its worst level since 2008, compounding the pressure on British households at a time of elevated living costs."
       ],
-      image: "https://images.mktw.net/im-47990992",
-      source: "MarketWatch",
-      url: "https://www.marketwatch.com/story/palantir-posts-its-fastest-revenue-growth-ever-while-calling-out-ai-slop-03108298?mod=mw_rss_topstories",
-      category: "Corporate Earnings"
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/2125/live/9eec4b60-489c-11f1-9d2b-c9f441ed383e.jpg",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/business/2026/may/05/uk-borrowing-costs-bond-yields-gilts-rachel-reeves",
+      category: "Economics"
     },
     {
       id: "fn2",
-      title: "Amazon Opens Its Logistics Network to Outside Businesses",
-      summary: "Amazon is expanding its shipping, fulfillment, and delivery infrastructure to third-party companies, marking a significant push to monetize its vast logistics operation.",
+      title: "Airlines Cut Two Million Seats in May as Soaring Jet Fuel Prices Bite",
+      summary: "Airlines worldwide have slashed around two million seats from May schedules as the Middle East conflict drives jet fuel prices sharply higher, with further summer cancellations now a real possibility.",
       body: [
-        "Amazon announced it will offer its world-class shipping, fulfillment, and last-mile delivery services to businesses beyond its own marketplace, with several large corporations already confirmed as early clients. The move transforms Amazon\'s logistics arm from an internal competitive advantage into a standalone revenue-generating business line, putting it in direct competition with established players such as UPS and FedEx.",
-        "The expansion represents a classic Amazon strategy of converting internal infrastructure into a commercial product — the same playbook that turned its cloud computing operations into Amazon Web Services, now the company\'s most profitable division. Analysts say the logistics-as-a-service market is substantial, and Amazon\'s scale and technology advantages could allow it to undercut rivals on price while maintaining strong margins."
+        "Approximately 13,000 fewer flights will operate globally in May following a wave of cancellations driven by the steep rise in jet fuel costs linked to disrupted Middle East supply chains. Carriers are rapidly redrawing their networks in response, with analysts warning that the rescheduling seen this month could be a preview of much larger summer disruptions if the conflict continues.",
+        "The aviation industry, still recovering from previous years of financial stress, is particularly exposed to fuel price shocks, as jet fuel typically represents the single largest operating cost for most airlines. The capacity cuts are expected to push up airfares for consumers and further dampen travel demand at what is normally one of the busiest periods of the year."
       ],
-      image: "https://static01.nyt.com/images/2026/05/04/multimedia/04biz-amazon-logistics-qzlk/04biz-amazon-logistics-qzlk-mediumSquareAt3X.jpg",
-      source: "The New York Times",
-      url: "https://www.nytimes.com/2026/05/04/business/amazon-shipping-services.html",
+      image: "https://i.guim.co.uk/img/media/8f486843ca1f58821af100ec58c06a04c9c1a20d/1394_0_5456_4366/master/5456.jpg?width=1200&quality=85&auto=format&fit=max&s=f6f015c1954031ed5b074a75b9970364",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/business/2026/may/05/airline-seats-cut-jet-fuel-prices",
       category: "Business"
     },
     {
       id: "fn3",
-      title: "UK Bond Markets Nervously Eye Labour Leadership Uncertainty",
-      summary: "Gilt traders are closely watching potential Labour leadership contenders, fearing that a shift to less fiscally disciplined leadership could unsettle the UK\'s sovereign bond market.",
+      title: "Super Micro Stock Surges 18% as Investors Cheer Margin Recovery",
+      summary: "Shares in AI server maker Super Micro Computer jumped 18% after the company reported a strong rebound in gross margins, overshadowing a miss on revenue expectations.",
       body: [
-        "Investors in UK government bonds are growing increasingly anxious about the political uncertainty surrounding the Labour Party leadership, with potential successors to Keir Starmer — including Angela Rayner and Andy Burnham — scrambling to reassure markets that they would maintain existing fiscal rules. The concern is that a leadership change could bring looser spending commitments, echoing the market turmoil triggered by the Liz Truss mini-budget in 2022, which sent gilt yields surging and forced an emergency Bank of England intervention.",
-        "Bond market participants have described 'a good deal of fear' in the market about the UK\'s fiscal trajectory, with gilt spreads already reflecting some degree of political risk premium. The episode highlights how sovereign bond markets have become a powerful and immediate check on government fiscal ambitions in the post-Truss era, with traders ready to punish any perceived deviation from credible debt management."
+        "Super Micro Computer\'s stock climbed sharply after the AI server manufacturer reported quarterly results showing a significant recovery in gross margins, reassuring investors who had grown concerned about the company\'s profitability amid intense competition and supply chain pressures. Wall Street analysts responded positively, with several upgrading their outlooks for the stock following the earnings release.",
+        "The result adds to a broader wave of optimism around AI infrastructure spending, with fellow chipmaker-adjacent firm Astera Labs also seeing its stock rise after issuing upbeat earnings and revenue guidance. Together, the results suggest that demand for AI-related hardware and connectivity solutions remains robust despite macroeconomic headwinds elsewhere in the market."
       ],
-      image: "https://i.guim.co.uk/img/media/4f5507fdb7d9cad98b90d87e2caa766bba601930/1170_113_2937_2350/master/2937.jpg?width=1200&quality=85&auto=format&fit=max&s=d3ac1da6f12426154f35baaba1917cef",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/business/2026/may/05/labour-leadership-challenge-bond-markets-angela-rayner-andy-burnham-keir-starmer",
-      category: "Economics"
+      image: "https://images.mktw.net/im-31427887",
+      source: "MarketWatch",
+      url: "https://www.marketwatch.com/story/super-micros-stock-surges-as-wall-street-cheers-a-margin-recovery-80f17361?mod=mw_rss_topstories",
+      category: "Markets"
     }
   ]
 };

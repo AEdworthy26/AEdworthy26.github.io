@@ -1,19 +1,19 @@
 // reads-data.js
-// Auto-updated 2026-05-05 — do not edit manually
+// Auto-updated 2026-05-06 — do not edit manually
 
 var READS_DATA = {
-  date: "2026-05-05",
+  date: "2026-05-06",
   book: {
-    title: "Never Let Me Go",
-    author: "Kazuo Ishiguro",
-    year: 2005,
-    genres: ["Literary Fiction", "Science Fiction", "Dystopia"],
-    desc: "Told through the quietly devastating voice of Kathy H., this novel follows three friends raised at a seemingly idyllic English boarding school who gradually come to understand the true purpose of their existence — and what it means to live, love, and grieve within those limits. Ishiguro withholds and reveals information with surgical precision, so the horror creeps in slowly, making the emotional impact far greater than any conventional thriller could manage. The book is less interested in the mechanics of its speculative premise than in questions of memory, denial, and what we choose to see when the truth is too painful — making it feel profoundly human rather than coldly sci-fi. It is one of those rare novels that you finish and then simply sit with, changed in ways that are hard to articulate.",
-    whyRead: "In an era of relentless information and noise, Ishiguro\'s restrained, almost whispered prose feels like an antidote — and the questions it raises about personhood and what we owe each other have only grown more urgent.",
-    rating: 4.0,
+    title: "The Noise of Time",
+    author: "Julian Barnes",
+    year: 2016,
+    genres: ["Literary Fiction", "Biography", "Music"],
+    desc: "Julian Barnes reimagines the inner life of Soviet composer Dmitri Shostakovich, a man forced to survive under Stalin\'s terror by making impossible moral compromises with power. The novel unfolds across three pivotal nights — waiting by an elevator with a suitcase, fearing arrest at any moment — and asks what it means to preserve your art, your family, and your soul when the state holds all the cards. Barnes writes with devastating compression and irony, capturing the particular anguish of a genius who must choose between courage and survival, and who must live with whatever choice he makes. It is a book about how tyranny colonises not just behaviour but thought itself, and how the inner self bargains, rationalises, and endures. Short enough to read in a sitting, it lingers for weeks.",
+    whyRead: "At a moment when questions about art, complicity, and political pressure feel urgently alive, this cool and brilliant novel puts those questions in the sharpest possible relief — and Barnes makes Shostakovich\'s compromised humanity feel achingly, uncomfortably familiar.",
+    rating: 3.9,
     ratingSource: "Goodreads",
-    ratingCount: "740,000+",
-    coverUrl: "https://covers.openlibrary.org/b/id/1047334-L.jpg",
-    amazonUrl: "https://www.amazon.co.uk/dp/8373595023"
+    ratingCount: "18,000+",
+    coverUrl: "https://covers.openlibrary.org/b/id/8047093-L.jpg",
+    amazonUrl: "https://www.amazon.co.uk/dp/178470332X"
   }
 };

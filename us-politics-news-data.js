@@ -1,60 +1,60 @@
 // us-politics-news-data.js
-// Auto-updated 2026-05-05 — do not edit manually
+// Auto-updated 2026-05-06 — do not edit manually
 
 var US_POLITICS_NEWS = {
-  date: "2026-05-05",
+  date: "2026-05-06",
   main: {
-    title: "Trump Administration Demands Names of 2020 Georgia Election Workers in Renewed Push to Relitigate Stolen Election Claims",
+    title: "Trump\'s Indiana Purge: President Ousts State Lawmakers Who Defied His Redistricting Push",
     category: "Politics",
     content: [
-      "The Trump Justice Department has formally demanded the names of election workers who participated in Georgia\'s 2020 presidential vote count, a move that critics say represents a disturbing escalation in the administration\'s use of federal investigative power to revisit long-debunked allegations of widespread electoral fraud. The demand marks one of the most direct federal interventions into state-level election administration since Trump returned to the White House, and it has immediately drawn condemnation from civil liberties advocates and Democratic officials who warn it could intimidate future election workers. The request targets individuals who were on the front lines of administering a democratic election that was certified, litigated, and upheld through dozens of court challenges.",
-      "The Justice Department\'s move appears to revive conspiracy theories that were rejected by Republican officials in Georgia, including then-Secretary of State Brad Raffensperger, as well as by federal judges, state courts, and the Department of Homeland Security\'s own Cybersecurity and Infrastructure Security Agency under Trump\'s first term. Former Attorney General William Barr himself declared there was no evidence of fraud sufficient to change the outcome of the 2020 election. Despite this exhaustive legal and administrative record, the current DOJ has chosen to reopen inquiries that many legal observers say have no legitimate prosecutorial basis.",
-      "Election law experts are raising alarms that the subpoena-style demands could have a chilling effect on the willingness of ordinary citizens to serve as poll workers, precinct managers, and ballot counters in future elections. Such workers are typically volunteers or low-wage public employees who carry out the unglamorous but essential mechanics of democracy, and the prospect of having their identities demanded by federal investigators years after the fact could deter future participation. Several voting rights organizations have already announced they are exploring legal avenues to challenge the demands before any names are handed over.",
-      "The political context of the move is difficult to separate from the administration\'s broader messaging strategy. Trump has consistently used the mythology of a stolen 2020 election as a fundraising and mobilization tool, and the Justice Department\'s latest action gives that narrative the institutional weight of an ongoing federal inquiry. Democrats and some Republicans have accused the administration of weaponizing the DOJ to serve partisan political purposes, echoing concerns that were also raised when the department pursued leak investigations targeting journalists and political opponents earlier in the year.",
-      "The development arrives at a moment when federal courts are simultaneously grappling with a series of high-stakes voting rights and redistricting cases, creating a confluence of pressures on the institutions that govern American electoral democracy. With midterm election cycles beginning to take shape and the Supreme Court having just weakened key provisions of the Voting Rights Act, the Georgia election worker demands add yet another front in what many democracy advocates describe as a coordinated effort to reshape the rules and culture surrounding elections. Congressional Democrats have called for immediate hearings, though whether the Republican-controlled legislature will act on those demands remains deeply uncertain."
+      "President Trump scored a sweeping political victory in Indiana\'s Tuesday primaries, successfully ousting five of seven Republican state senators who had defied his call to redraw congressional maps ahead of the 2026 midterms. The result represents one of the most aggressive and successful uses of presidential political muscle against members of his own party at the state level in modern American history. Trump had made the Indiana races a personal mission, throwing his support behind primary challengers to punish incumbents who refused to comply with his demand that red states redraw House districts to maximize Republican gains in Congress.",
+      "The central dispute stemmed from Trump\'s broader strategy to use state-level redistricting as a tool to entrench Republican control of the House of Representatives before the midterm elections. When Indiana\'s GOP-controlled state Senate balked, Trump treated it as an act of insubordination and began recruiting and endorsing challengers against the holdouts. The message sent to Republican lawmakers across the country is unmistakable: cross the president on redistricting, and face the political consequences at the ballot box.",
+      "Among the notable defeats was incumbent state Sen. Travis Holdman, who was beaten by Trump-backed challenger Blake Fiechter. Only one of the seven targeted incumbents survived the evening, a result that exceeded expectations for Trump\'s influence in state-level contests. The lopsided outcome demonstrates that Trump\'s endorsement remains a powerful and feared weapon even in intra-party fights far removed from Washington, D.C.",
+      "The Indiana results arrive in the context of Trump\'s broader campaign to pressure red states into redrawing congressional maps mid-decade, a legally and politically contentious strategy. Republicans in Washington have argued that such moves are necessary to counterbalance gerrymandering in Democratic-leaning states, while critics contend it represents a norm-breaking manipulation of electoral rules for partisan advantage. The success in Indiana is likely to embolden Trump to pursue similar pressure campaigns in other states whose Republican legislatures have been reluctant to act.",
+      "The evening\'s results will reverberate well beyond Indiana\'s statehouse, signaling to congressional Republicans and state legislators alike that Trump\'s political operation is willing and able to intervene in primaries at every level of government. Analysts noted that the sheer breadth of the losses — five out of seven incumbents defeated — gives Trump significant leverage as he continues to push for redistricting in other states. With midterm elections approaching, the Indiana purge may prove to be a defining moment in how the Republican Party navigates the tension between institutional norms and the demands of its dominant political figure."
     ],
-    image: "https://static01.nyt.com/images/2026/05/04/multimedia/04pol-georgia-doj-ghpf/04pol-georgia-doj-ghpf-mediumSquareAt3X.jpg",
+    image: "https://images.unsplash.com/photo-1612278920639-cfbae3835fee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUcnVtcCU1Q3xlbnwwfDB8fHwxNzc4MDQzNzgxfDA&ixlib=rb-4.1.0&q=80&w=1080",
     source: "The New York Times",
-    sourceUrl: "https://www.nytimes.com/2026/05/04/us/politics/trump-2020-georgia-election-workers.html"
+    sourceUrl: "https://www.nytimes.com/2026/05/05/us/politics/trump-indiana-takeaways.html"
   },
   secondary: [
     {
       id: "us1",
-      title: "Supreme Court Fast-Tracks Louisiana Voting Map Case After Voting Rights Act Ruling",
-      summary: "The Supreme Court has agreed to expedite a decision on Louisiana\'s congressional voting map, clearing the way for a new district to be drawn following last week\'s ruling that weakened the Voting Rights Act.",
+      title: "Vivek Ramaswamy Wins Ohio GOP Governor Nomination in Trump-Backed Bid",
+      summary: "Vivek Ramaswamy has secured the Republican nomination for Ohio governor, setting up a potentially competitive general election race against Democrat Amy Acton this fall.",
       body: [
-        "The Supreme Court\'s decision to fast-track the Louisiana redistricting case comes just days after the justices issued an opinion that significantly curtailed a central enforcement mechanism of the Voting Rights Act, a move that civil rights groups warned would reduce Black representation in Congress. Louisiana voters who successfully challenged the existing map as an illegal racial gerrymander had urgently petitioned the Court to return the matter to lower courts so that a remedial map could be drawn before the next election cycle.",
-        "Former Attorney General Eric Holder, now chairman of the National Democratic Redistricting Committee, has warned that the combined effect of the Court\'s recent rulings could dramatically reduce the number of minority-majority districts across the country, with cascading consequences for Black and Latino representation in the House of Representatives. The Louisiana case is being watched as a bellwether for how aggressively lower courts will now apply the weakened Voting Rights Act standards."
+        "Vivek Ramaswamy, the entrepreneur and former Republican presidential candidate, won the GOP primary for Ohio governor on Tuesday with strong backing from President Trump, positioning himself as the party\'s standard-bearer in a state that hasn\'t elected a Democratic governor in two decades. Ramaswamy made criticism of Ohio\'s pandemic-era response a central theme of his campaign, targeting his Democratic rival directly on the issue. His victory consolidates Trump\'s influence over a key swing-state race heading into the fall.",
+        "Despite the state\'s Republican lean, analysts say the general election against Democratic nominee Amy Acton could be competitive, particularly given voter concerns about the rising cost of living that have dominated conversations in Ohio communities. Ramaswamy\'s celebrity profile and national fundraising network may give him advantages, but Acton is expected to mount a well-funded challenge in what could become one of the most-watched gubernatorial contests of the 2026 cycle."
       ],
-      image: "https://static01.nyt.com/images/2026/05/04/multimedia/04dc-scotus-voting-lgcz/04dc-scotus-voting-lgcz-mediumSquareAt3X.jpg",
-      source: "The New York Times",
-      url: "https://www.nytimes.com/2026/05/04/us/politics/supreme-court-louisiana-voting-rights-act.html",
-      category: "Politics"
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/9b5f/live/65fea100-4891-11f1-b55d-0f258dce1735.jpg",
+      source: "NPR",
+      url: "https://www.npr.org/2026/05/05/nx-s1-5812914/ramaswamy-trump-ohio-governor",
+      category: "Elections"
     },
     {
       id: "us2",
-      title: "Trump Tries to Downplay Economic Fallout From Iran War as Gas Prices Spike",
-      summary: "President Trump insisted at a White House Small Business Week event that the economy is 'roaring' and predicted gas prices would soon fall, even as the U.S.-Iran conflict sends energy markets into turmoil.",
+      title: "Trump Administration Finds New Avenues to Withhold Federal Science Funding",
+      summary: "After court-ordered restorations of billions in research funding, watchdogs say the Trump administration has shifted to alternative methods to keep money from scientists and research institutions.",
       body: [
-        "With the Strait of Hormuz disrupted by ongoing U.S.-Iran hostilities and oil prices rising sharply, President Trump used a domestic policy event to project confidence about the American economy, framing the conflict\'s economic pressures as temporary and manageable. His remarks came as small business owners across the country reported anxiety about fuel costs, supply chain disruptions, and broader uncertainty stemming from the war.",
-        "The political stakes of the economic messaging are considerable: Trump\'s approval ratings have historically tracked closely with consumer perceptions of the economy, and a sustained rise in gas prices risks undermining one of his core reelection arguments. White House officials have privately acknowledged that a prolonged conflict affecting energy exports through the Strait of Hormuz could complicate the administration\'s economic narrative heading into the midterm cycle."
+        "The Trump administration is employing new bureaucratic and procedural mechanisms to withhold federal science funding even after courts ordered the restoration of billions of dollars that had been cut earlier in the president\'s term, according to watchdog groups and affected researchers. Scientists report that grants are being delayed, reviews are being stalled, and funding pipelines are being quietly constrained in ways that do not trigger the same legal challenges as outright cuts. The pattern suggests a deliberate effort to achieve the same policy goals through administrative means rather than formal budget actions.",
+        "The development raises significant concerns about the long-term health of American research institutions, many of which depend on federal funding for a large share of their operating budgets. Critics argue the administration is effectively circumventing judicial oversight by finding workarounds that slow or prevent the flow of congressionally appropriated money, a practice that legal experts say may itself be challengeable in court."
       ],
-      image: "https://static01.nyt.com/images/2026/05/04/multimedia/04DC-TRUMP-01-lftq/04DC-TRUMP-01-lftq-mediumSquareAt3X.jpg",
-      source: "The New York Times",
-      url: "https://www.nytimes.com/2026/05/04/us/politics/trump-economy-iran-war.html",
-      category: "Politics"
+      image: "https://images.unsplash.com/photo-1660529652081-077349f80853?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUcnVtcCUyMEFkbWluaXN0cmF0aW9uJTIwRmluZHMlMjBOZXclMjBBdmVudWVzJTIwdG8lMjBXaXRoaG9sZCUyMEZlZGVyYWwlMjBTY2llbmNlJTIwRnVuZGluZ3xlbnwwfDB8fHwxNzc4MDQzNzgxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "NPR",
+      url: "https://www.npr.org/2026/05/05/nx-s1-5808286/the-trump-administration-is-finding-new-ways-to-withhold-federal-funding-for-science",
+      category: "Policy"
     },
     {
       id: "us3",
-      title: "Judge Blocks DOJ From Searching Data Seized From Washington Post Reporter",
-      summary: "A second federal judge has ruled that the Justice Department cannot search data seized from Washington Post reporter Hannah Natanson, dealing another blow to the administration\'s aggressive leak investigation.",
+      title: "Grand Jury Indicts Man on Four Felony Counts Over White House Correspondents' Dinner Plot",
+      summary: "Cole Tomas Allen has been charged with attempting to assassinate President Trump and assaulting a Secret Service officer, following an alleged incident at the White House Correspondents' Dinner.",
       body: [
-        "The ruling marks the second time a federal judge has blocked the DOJ from accessing material taken from Natanson\'s phone and computers, which were seized as part of a leak investigation, reinforcing legal protections for journalists even as the administration pursues an unusually aggressive posture toward the press. The back-to-back judicial rebukes suggest that courts are skeptical of the government\'s legal theory for accessing a reporter\'s communications materials.",
-        "Press freedom advocates have pointed to the Natanson case as emblematic of a broader pattern under the current administration of using the Justice Department\'s investigative apparatus to pressure news organizations and their sources. The case has drawn comparisons to the most aggressive leak prosecutions of prior administrations, with First Amendment attorneys warning that the chilling effect on government whistleblowers and journalists could be severe."
+        "A federal grand jury has indicted Cole Tomas Allen on four felony charges, including the attempted assassination of President Donald Trump and assault of a Secret Service officer with a shotgun, in connection with an alleged plot targeting the high-profile Washington press event. The charges represent some of the most serious accusations related to presidential security in recent memory and highlight the ongoing threats facing the administration. Allen now faces potentially decades in federal prison if convicted on all counts.",
+        "The case is expected to draw significant attention as it moves through the federal court system, given the gravity of the alleged conduct and the prominence of the event targeted. Secret Service officials have said the incident underscores the persistent and evolving nature of threats against the president, and the indictment is likely to fuel debate over security protocols at large public gatherings attended by senior government officials."
       ],
-      image: "https://images.unsplash.com/photo-1589394471525-dbb7bd2658a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxKdWRnZSUyMEJsb2NrcyUyMERPSiUyMEZyb20lMjBTZWFyY2hpbmclMjBEYXRhJTIwU2VpemVkJTIwRnJvbSUyMFdhc2hpbmd0b24lMjBQb3N0JTIwUmVwb3J0ZXJ8ZW58MHwwfHx8MTc3Nzk1NzM3M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      image: "https://images.unsplash.com/photo-1678070838781-18aeac8389f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxHcmFuZCUyMEp1cnklMjBJbmRpY3RzJTIwTWFuJTIwb24lMjBGb3VyJTIwRmVsb255JTIwQ291bnRzJTIwT3ZlciUyMFdoaXRlJTIwSG91c2UlMjBDb3JyZXNwb25kZW50c3xlbnwwfDB8fHwxNzc4MDQzNzgyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       source: "The Washington Post",
-      url: "https://www.washingtonpost.com/national-security/2026/05/04/post-reporter-justice-department-search/",
+      url: "https://www.washingtonpost.com/national-security/2026/05/05/cole-tomas-allen-indictment/",
       category: "Politics"
     }
   ]

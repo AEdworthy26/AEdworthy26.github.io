@@ -1,18 +1,18 @@
 // films-data.js
-// Auto-updated 2026-05-05 — do not edit manually
+// Auto-updated 2026-05-06 — do not edit manually
 
 var FILMS_DATA = {
-  date: "2026-05-05",
+  date: "2026-05-06",
   film: {
-    title: "The Bitter Tears of Petra von Kant",
-    director: "Rainer Werner Fassbinder",
-    year: 1972,
-    genres: ["Drama", "World Cinema"],
-    desc: "Fassbinder\'s razor-sharp chamber piece confines itself almost entirely to a single opulent apartment, where fashion designer Petra von Kant becomes consumed by obsessive, destructive desire for a younger woman named Karin. Shot with extraordinary visual precision by Michael Ballhaus, every frame is staged like a painting in motion — lush fabrics, mannequins, and mirrors creating a suffocating world of vanity and longing. The film is a savage dissection of power dynamics within intimate relationships, cycling through cruelty, submission, and humiliation with almost operatic intensity. Margit Carstensen delivers one of the great performances of 1970s European cinema, unraveling across the film\'s running time in ways that are equal parts devastating and darkly comic. It remains one of Fassbinder\'s most formally daring works and a foundational text in queer cinema.",
-    cast: ["Margit Carstensen", "Hanna Schygulla", "Katrin Schaake"],
-    rating: 94,
+    title: "Eat Drink Man Woman",
+    director: "Ang Lee",
+    year: 1994,
+    genres: ["Drama", "Comedy", "Romance"],
+    desc: "A widowed master chef in Taipei prepares elaborate Sunday dinners for his three adult daughters, using food as the only language through which he can express love in a household grown quietly distant. Ang Lee orchestrates a feast of generational tension, longing, and surprise — each daughter carrying her own secret life that will upend the family\'s careful routines. The film is ravishing to watch, its cooking sequences filmed with an almost sacred attention that makes hunger feel inseparable from emotional yearning. Beneath its warm, comedic surface runs a deeply moving meditation on how families communicate without speaking and how late in life it is never too late to begin again.",
+    cast: ["Sihung Lung", "Kuei-Mei Yang", "Chien-Lien Wu"],
+    rating: 96,
     ratingSource: "Rotten Tomatoes",
-    ratingExtra: "FIPRESCI Prize, Berlin International Film Festival",
-    posterUrl: "https://upload.wikimedia.org/wikipedia/en/8/86/The_Bitter_Tears_of_Petra_von_Kant%2C_film_poster.jpg"
+    ratingExtra: "Academy Award Nominee, Best Foreign Language Film",
+    posterUrl: "https://upload.wikimedia.org/wikipedia/en/b/b4/Eat_Drink_Man_Woman.jpg"
   }
 };

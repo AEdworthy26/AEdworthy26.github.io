@@ -1,88 +1,92 @@
 // curiosity-data.js
-// Auto-updated 2026-05-05 — do not edit manually
+// Auto-updated 2026-05-06 — do not edit manually
 
 var CURIOSITY_DATA = {
-  date: "2026-05-05",
+  date: "2026-05-06",
   mainArticle: {
-    title: "The Silk Road of the Sea: How the Monsoon Winds Built the Indian Ocean World",
-    subject: "Indian Ocean trade routes and monsoon winds",
-    subtitle: "Long before European ships rounded Africa, Arab, Indian, and Chinese merchants had mastered the greatest trading system the ancient world ever knew.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/d/d3/Indian_Ocean-CIA_WFB_Map.png",
+    title: "The Ashoka Puzzle: How a Warrior King Became the World\'s First Moral Statesman",
+    subject: "Ashoka the Great",
+    subtitle: "He conquered half a continent in blood — then spent the rest of his life trying to atone for it.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/2/28/Ashoka%27s_visit_to_the_Ramagrama_stupa_Sanchi_Stupa_1_Southern_gateway.jpg",
     readTime: "8 min",
     content: [
       {
         type: "paragraph",
-        text: "Sometime around the first century BCE, a Greek sailor named Hippalus — or so the story goes — 'discovered' that the Indian Ocean breathed. Every summer the winds blew steadily northeast toward India; every winter they reversed and carried ships home. In reality, Arab and Indian navigators had known this for centuries, and the monsoon system had already been sustaining one of history\'s most complex and lucrative trading networks. What Hippalus may have done was simply convince Mediterranean merchants that the route was safe enough for Roman gold."
+        text: "In the third century BCE, a king named Ashoka ruled the largest empire the Indian subcontinent had ever seen — a dominion stretching from present-day Afghanistan to the Bay of Bengal. He had won it the old-fashioned way: through campaigns of extraordinary violence. Then, after one particular battle, something broke inside him — and what followed was one of the strangest pivots in all of political history."
       },
       {
         type: "heading",
-        text: "A Highway Made of Wind"
+        text: "The Slaughter at Kalinga"
       },
       {
         type: "paragraph",
-        text: "The Indian Ocean is the only ocean on Earth whose surface winds reverse direction seasonally, driven by the differential heating of land and sea across Asia and Africa. This predictable rhythm transformed what might have been a terrifying expanse of open water into something navigators could plan around with almost calendar precision. Sailors loaded their dhows and junks knowing that nature itself would deliver them to their destination and then, six months later, bring them home again. The monsoon did not merely assist trade — it made civilisation on this scale possible."
+        text: "Around 261 BCE, Ashoka launched a war of conquest against the kingdom of Kalinga, a prosperous coastal state in what is now Odisha. The Mauryan forces won decisively, but the cost was catastrophic: ancient sources record roughly 100,000 killed in battle, another 150,000 deported, and countless more dead from famine and disease in the aftermath. What made this battle unique in ancient history was not its scale but what happened next — the victor publicly recorded his own horror at what he had done."
       },
       {
         type: "heading",
-        text: "The Ports at the End of the World"
+        text: "Edicts Carved in Stone"
       },
       {
         type: "paragraph",
-        text: "At the height of the Roman Empire, the emporium of Muzris on India\'s Malabar Coast received Roman merchant vessels carrying vast quantities of gold coin, wine, and glassware. In exchange, Rome\'s wealthy elite consumed pepper, cardamom, ivory, and Chinese silk at prices that horrified moralists. The Elder Pliny complained that India drained fifty million sesterces from the Roman treasury every year — a figure that, even if exaggerated, points to a trade deficit that shaped imperial monetary policy. Archaeology has since confirmed the scale: Roman coins and amphorae turn up in excavations from southern India to Vietnam."
+        text: "Ashoka\'s response to Kalinga was to commission a series of inscriptions — edicts carved onto polished sandstone pillars and rock faces across his empire — in which he announced a transformation of royal policy. Written in the vernacular languages of each region, these texts declared his commitment to dhamma: a concept blending moral law, compassion, religious tolerance, and non-violence. These edicts are among the earliest surviving examples of a ruler explicitly addressing his subjects as moral citizens rather than merely as subjects to be taxed and conscripted."
       },
       {
         type: "heading",
-        text: "The Middlemen Who Shaped History"
+        text: "What Dhamma Actually Meant"
       },
       {
         type: "paragraph",
-        text: "The greatest beneficiaries of the system were rarely its endpoints but its intermediaries. Arab merchants sailing from Oman and Yemen, Indian Gujarati traders, Jewish and later Muslim Swahili merchants on the East African coast — these were the people who understood every leg of the network and extracted value at each transfer point. The city of Calicut on the Malabar Coast became so synonymous with Indian textiles that we still name a fabric after it: calico. Hormuz, at the mouth of the Persian Gulf, grew so wealthy that a Portuguese chronicler wrote that if the world were a ring, Hormuz would be its jewel."
+        text: "Ashoka\'s dhamma was deliberately ecumenical — it was not a Buddhist catechism, though he was a Buddhist convert. It preached respect for Brahmins, Jains, Ajivikas, and Greeks alike, and explicitly condemned empty religious ritual in favour of ethical conduct. He established hospitals for humans and animals, planted shading trees along roads, dug wells, and sent diplomatic missions to Hellenistic kingdoms in the West. The Greek king Antiochus II, Ptolemy II of Egypt, and several others received Mauryan ambassadors preaching non-violence — a geopolitical novelty that left no recorded parallel in the ancient world."
       },
       {
         type: "heading",
-        text: "What Actually Travelled"
+        text: "The Lion Capital and Its Afterlife"
       },
       {
         type: "paragraph",
-        text: "Spices and silk get all the glory, but the Indian Ocean trade moved something far more consequential: ideas, religions, and people. Buddhism travelled from India to Southeast Asia along merchant shipping lanes, not overland missionary paths. Islam reached the Indonesian archipelago centuries before any conquering army, carried by Muslim traders whose piety and commercial networks were inseparable. The Swahili language itself is a monument to this mixing — a Bantu grammar carrying hundreds of Arabic loanwords, the linguistic residue of a thousand years of coastal commerce."
+        text: "The most famous physical legacy of Ashoka\'s reign is a polished sandstone column capital found at Sarnath — four lions seated back to back atop an abacus decorated with a wheel, an elephant, a bull, and a horse. Crafted to a standard of finish that rivals anything in the Hellenistic world, the capital sat largely forgotten for centuries until archaeologists excavated Sarnath in 1904. When India became independent in 1947, the government adopted the Lion Capital as the national emblem and placed Ashoka\'s wheel — the Dharma Chakra — at the centre of the new national flag."
       },
       {
         type: "heading",
-        text: "The Disruption of 1498"
+        text: "Lost, Found, and Decoded"
       },
       {
         type: "paragraph",
-        text: "When Vasco da Gama rounded the Cape of Good Hope and arrived at Calicut in 1498, he was not discovering an unknown world — he was gate-crashing a thriving one. The Arab pilot Ahmed ibn Majid guided his fleet across the final stretch, proof that the Indian Ocean network had navigational knowledge Europeans could only borrow. What Portugal brought was not superior seamanship but superior firepower, and within decades the Estado da India was extorting tolls from merchants who had sailed freely for centuries. The violence was shocking precisely because the existing system had been, by the standards of the age, remarkably open."
+        text: "For nearly two thousand years, Ashoka himself was largely forgotten — his empire collapsed within fifty years of his death, and his identity had been erased from living memory. The pillars he left behind were known; the Mughal emperor Akbar marvelled at them in the sixteenth century, but no one could read the Brahmi script in which they were inscribed. It was the British scholar James Prinsep who, in 1837, cracked the Brahmi alphabet by analysing donor inscriptions on Buddhist monuments — and suddenly, dozens of identical inscriptions across South Asia all revealed the same name: Devanampiya Piyadasi, 'Beloved of the Gods, He Who Looks on with Kindness.' Archaeologists eventually confirmed this was Ashoka."
       },
       {
         type: "heading",
-        text: "The World the Monsoon Made"
+        text: "The Question of Sincerity"
       },
       {
         type: "paragraph",
-        text: "The Indian Ocean world produced artistic and architectural forms that defy simple national attribution. The mosque styles of coastal East Africa blend Arab pointed arches with local coral stone and mangrove timber in ways that belong to no single culture. The cuisine of Malaysia fuses Chinese technique, Indian spice, and Malay ingredient into something entirely its own. Even the crops moved: Southeast Asian sugarcane and citrus reached the Mediterranean via Arab traders; American chillies, arriving after 1500, were so rapidly absorbed into Indian and Thai cooking that it is now almost impossible to imagine those cuisines without them."
+        text: "Historians have long debated how genuinely Ashoka transformed — or whether the edicts were sophisticated propaganda by a shrewd ruler managing a vast, ethnically diverse empire through ideology rather than perpetual military force. The honest answer is probably both. The Arthashastra, the Mauryan manual of statecraft attributed to the minister Kautilya, reveals a state apparatus of spies, informants, and calculated ruthlessness that continued operating under Ashoka\'s reign even as the stone columns proclaimed compassion."
       },
       {
         type: "heading",
-        text: "Why This Story Was Forgotten — and Why It Matters"
+        text: "Why Ashoka Matters Now"
       },
       {
         type: "paragraph",
-        text: "For much of the nineteenth and twentieth centuries, Western historiography framed the story of global trade as beginning with European expansion. The Indian Ocean world was treated as a collection of passive markets waiting to be connected by Portuguese caravels and Dutch East Indiamen. Historians like K.N. Chaudhuri and, later, Michael Pearson and Janet Abu-Lughod spent careers dismantling this myth, demonstrating that a genuinely globalised economy existed centuries before Vasco da Gama set sail. Their work reshaped how we understand not just trade history but the very definition of modernity. The monsoon, it turns out, was the first engine of globalisation — and it ran entirely without European hands on the wheel."
+        text: "Ashoka\'s experiment is remarkable precisely because it was an experiment — a powerful ruler using the machinery of the state to propagate ethical norms across a multilingual, multi-religious empire, two millennia before the concept of pluralism had a name. He failed to prevent his empire\'s decline, and his successors abandoned his policies almost immediately. But the idea he left behind — that power could be exercised with restraint and accountability, and that rulers owed their subjects an explanation of their choices — is one that still makes people uncomfortable in palaces and parliaments alike."
+      },
+      {
+        type: "paragraph",
+        text: "H.G. Wells, writing in his Outline of History in 1920, declared that among the great monarchs of history, Ashoka\'s star 'shines, and shines almost alone, a star.' It is a verdict that has only grown more interesting as the centuries accumulate more counterexamples."
       }
     ]
   },
   personOfTheDay: {
-    name: "Ahmad ibn Majid",
-    lifespan: "c. 1432–c. 1500",
-    category: "Exploration & Navigation",
-    image: "https://images.unsplash.com/photo-1656759685195-8b035b7f30d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxBaG1hZCUyMGlibiUyME1hamlkJTIwcG9ydHJhaXR8ZW58MHwyfHx8MTc3Nzk2NTA3Nnww&ixlib=rb-4.1.0&q=80&w=1080&crop=faces,entropy&fit=crop",
-    bio: "Ahmad ibn Majid was born around 1432 in Julfar, in what is now the United Arab Emirates, into a family of master navigators. His father and grandfather were both celebrated pilots of the Indian Ocean, and Ibn Majid absorbed their accumulated knowledge of stars, currents, and monsoon patterns from childhood. He would go on to become the greatest Arab navigator of the medieval period, earning the honorary title 'Lion of the Sea' and composing works on navigation that were without parallel in any language of his age.\n\nIbn Majid wrote more than forty navigational texts, including his masterwork the Kitab al-Fawa\'id ('Book of Useful Information on the Principles and Rules of Navigation'), completed around 1490. These were not merely practical sailing manuals — they were sophisticated astronomical and geographical treatises that described the star paths, seasonal winds, and coastal landmarks of the entire Indian Ocean basin, from East Africa to China. He invented a system of measuring stellar altitude using a device called a kamal, a simple but brilliant tool that allowed sailors to fix their latitude with remarkable accuracy. His writings preserved centuries of accumulated Arab navigational wisdom in a single, coherent body of knowledge.\n\nIbn Majid is most famous in the West for a claim that troubles historians: that he was the pilot who guided Vasco da Gama from Malindi on the East African coast to Calicut in 1498. The evidence is ambiguous — some Arabic sources name him, but he himself never mentions the encounter in his surviving writings, and some scholars believe a different pilot was involved. Whether or not he personally assisted the Portuguese, the episode encapsulates the paradox of his legacy: the man who perhaps did most to hand the Indian Ocean to European powers was himself the supreme embodiment of the independent navigational tradition those powers would soon suppress. He died sometime around 1500, on the cusp of the transformation he may have helped set in motion."
+    name: "James Prinsep",
+    lifespan: "1799–1840",
+    category: "Scholarship & Archaeology",
+    image: "https://upload.wikimedia.org/wikipedia/commons/0/0b/James_Prinsep_Medal.jpg",
+    bio: "James Prinsep was born in Hertfordshire, England, in 1799, the seventh of ten children in a prosperous family with strong ties to India through the East India Company. Trained as an architect, he arrived in Calcutta in 1819 and quickly demonstrated a restless intellectual energy that overflowed the boundaries of any single discipline — within a decade he had redesigned the Calcutta Mint, conducted pioneering studies of Indian meteorology and chemistry, and assumed editorship of the Journal of the Asiatic Society of Bengal.\n\nHis most consequential achievement came through an obsession with ancient Indian scripts that no living person could read. For years he collected inscriptions from coins, pillars, and rock faces across the subcontinent, comparing letterforms with the patience of a watchmaker. In 1837 he achieved the decisive breakthrough: by studying bilingual Pali-Sanskrit donation inscriptions at Buddhist sites, he reconstructed the Brahmi alphabet — one of the most important acts of decipherment in the history of scholarship. Within months, dozens of pillar inscriptions that had baffled Mughal emperors and British officers alike suddenly spoke in a clear voice, all bearing the name of a previously unknown king who called himself Piyadasi. That king, scholars would confirm, was Ashoka.\n\nThe effort destroyed him. Prinsep worked at a pace that contemporaries described as frightening, sleeping little and corresponding furiously with scholars across Europe and Asia. By 1838 his health had collapsed completely; he suffered what appears to have been a series of strokes or a severe neurological breakdown and was shipped home to England in a desperate attempt at recovery. He died in London in April 1840, aged just forty. He never knew the full scale of what his decipherment had unlocked — the entire rediscovery of Mauryan India, and the restoration of Ashoka to history, was built on the foundation he laid in that single electric year."
   },
   onThisDay: {
-    headline: "Napoleon Bonaparte Dies in Exile on Saint Helena",
-    date: "May 5, 1821",
-    summary: "On May 5, 1821, Napoleon Bonaparte died on the remote South Atlantic island of Saint Helena, six years after his final defeat at Waterloo. He was fifty-one years old, and his death — officially attributed to stomach cancer, though theories of arsenic poisoning have circulated ever since — ended one of the most extraordinary careers in the history of warfare and statecraft. The man who had once commanded an empire stretching from Portugal to the borders of Russia died in a damp, wind-battered house called Longwood, attended by a small circle of loyal followers and closely watched by his British captors.\n\nHis last years on the island were marked by a deliberate campaign of self-mythologising. Confined and humiliated, Napoleon spent long hours dictating his memoirs, carefully recasting his wars as defensive struggles for European liberty against reactionary monarchies and reframing his legal and administrative reforms — the Napoleonic Code, the reorganisation of the French state — as his true legacy. It was a brilliant piece of posthumous propaganda. By the time his remains were returned to Paris in 1840, to be interred beneath the golden dome of Les Invalides, France had transformed him from a defeated tyrant into a romantic hero. The Napoleonic legend, more than the man himself, would haunt European politics for the rest of the nineteenth century.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Flag_of_Saint_Helena.svg/1280px-Flag_of_Saint_Helena.svg.png"
+    headline: "The Hindenburg Erupts in Flames Over New Jersey",
+    date: "May 6, 1937",
+    summary: "At 7:25 in the evening of May 6, 1937, the German passenger airship LZ 129 Hindenburg burst into flames as it attempted to dock at the Naval Air Station in Lakehurst, New Jersey, killing 36 of the 97 people on board and one member of the ground crew. The hydrogen-filled giant, the largest flying machine ever built at 245 metres in length, had completed the transatlantic crossing from Frankfurt in just under three days and was manoeuvring toward its mooring mast when fire erupted near the tail. Within 34 seconds, the entire structure had collapsed to the ground in a burning wreck.\n\nThe disaster was witnessed and recorded in extraordinary detail — newsreel cameras were rolling, and radio journalist Herbert Morrison of WLS Chicago was broadcasting live, his voice breaking into an anguished cry that became one of the most replayed pieces of audio in broadcast history: 'Oh, the humanity!' The combination of live radio, motion picture footage, and front-page photographs made the Hindenburg the first major disaster to be experienced almost in real time by a mass global audience. The precise cause of ignition has been debated ever since — theories range from static electricity to sabotage to a hydrogen leak ignited by the ship\'s own engines — but no definitive answer has ever been established. The disaster effectively ended the era of passenger airship travel; the planned American counterpart to the Hindenburg was never filled with hydrogen, and within two years the world\'s attention had turned to the approaching catastrophe of the Second World War.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Flag_of_New_Jersey.svg/960px-Flag_of_New_Jersey.svg.png"
   }
 };
