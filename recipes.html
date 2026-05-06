@@ -647,14 +647,14 @@
           <button class="btn-danger" id="vm-delete-btn">Delete</button>
         </div>
         <div id="plan-panel" style="display:none">
-          <span class="plan-section-label">Day</span>
+          <span class="plan-section-label">Which days? <span style="font-weight:400;text-transform:none;letter-spacing:0">(tap to toggle)</span></span>
           <div class="plan-pills" id="plan-day-pills"></div>
           <span class="plan-section-label">Meal</span>
           <div class="plan-pills" id="plan-meal-pills"></div>
           <div class="plan-footer">
             <button class="btn-ghost" onclick="window.togglePlanPanel()">Cancel</button>
-            <button class="btn-primary" onclick="window.confirmPlan()">Add to Planner</button>
-            <span id="plan-success">&#10003; Added to meal planner!</span>
+            <button class="btn-primary" id="plan-confirm-btn" onclick="window.confirmPlan()" disabled style="opacity:0.5">Add to Planner</button>
+            <span id="plan-success">&#10003; Added!</span>
           </div>
         </div>
       </div>
@@ -999,7 +999,7 @@
     var _viewRecipeData = null;
     var _viewServes = 0;
     var _viewOrigServes = 0;
-    var _planDay = null, _planMeal = null;
+    var _planDays = [], _planMeal = null;
     var MP_STORE = 'personal_hub_meal_planner_v2';
     var MP_DAYS = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
     var MP_MEALS = ['breakfast','lunch','dinner'];
@@ -1179,7 +1179,7 @@
       // Reset plan panel
       var planPanel = document.getElementById('plan-panel');
       if (planPanel) planPanel.style.display = 'none';
-      _planDay = null; _planMeal = null;
+      _planDays = []; _planMeal = null;
       document.getElementById('plan-success').classList.remove('show');
 
       openModal('view-modal');
@@ -1212,17 +1212,33 @@
       return mon.getFullYear() + '-' + String(mon.getMonth()+1).padStart(2,'0') + '-' + String(mon.getDate()).padStart(2,'0');
     }
 
+    function updatePlanConfirmBtn() {
+      var btn = document.getElementById('plan-confirm-btn');
+      if (!btn) return;
+      var ready = _planDays.length > 0 && !!_planMeal;
+      btn.disabled = !ready;
+      btn.style.opacity = ready ? '' : '0.5';
+      if (!ready) { btn.textContent = 'Add to Planner'; return; }
+      var mealLabel = _planMeal.charAt(0).toUpperCase() + _planMeal.slice(1);
+      if (_planDays.length === 1) {
+        btn.textContent = 'Add ' + mealLabel + ' · ' + _planDays[0].slice(0,3);
+      } else {
+        btn.textContent = 'Add ' + mealLabel + ' · ' + _planDays.length + ' days';
+      }
+    }
+
     function renderPlanPills() {
       var dayPills = document.getElementById('plan-day-pills');
       var mealPills = document.getElementById('plan-meal-pills');
       if (!dayPills || !mealPills) return;
       dayPills.innerHTML = MP_DAYS.map(function(d) {
-        return '<span class="plan-pill' + (d === _planDay ? ' active' : '') + '" onclick="window.selectPlanDay(\'' + d + '\')">' + d.slice(0,3) + '</span>';
+        return '<span class="plan-pill' + (_planDays.indexOf(d) !== -1 ? ' active' : '') + '" onclick="window.selectPlanDay(\'' + d + '\')">' + d.slice(0,3) + '</span>';
       }).join('');
       mealPills.innerHTML = MP_MEALS.map(function(m) {
         var label = m.charAt(0).toUpperCase() + m.slice(1);
         return '<span class="plan-pill' + (m === _planMeal ? ' active' : '') + '" onclick="window.selectPlanMeal(\'' + m + '\')">' + label + '</span>';
       }).join('');
+      updatePlanConfirmBtn();
     }
 
     window.togglePlanPanel = function() {
@@ -1230,32 +1246,43 @@
       var isOpen = panel.style.display !== 'none';
       panel.style.display = isOpen ? 'none' : 'block';
       if (!isOpen) {
-        _planDay = null; _planMeal = null;
+        _planDays = []; _planMeal = null;
         document.getElementById('plan-success').classList.remove('show');
         renderPlanPills();
       }
     };
 
-    window.selectPlanDay = function(day) { _planDay = day; renderPlanPills(); };
+    window.selectPlanDay = function(day) {
+      var idx = _planDays.indexOf(day);
+      if (idx === -1) { _planDays.push(day); } else { _planDays.splice(idx, 1); }
+      renderPlanPills();
+    };
     window.selectPlanMeal = function(meal) { _planMeal = meal; renderPlanPills(); };
 
     window.confirmPlan = function() {
-      if (!_planDay || !_planMeal || !_viewRecipeData) return;
-      try {
-        var mp = JSON.parse(localStorage.getItem(MP_STORE) || '{"weeks":{},"shoppingList":[]}');
-        if (!mp.weeks) mp.weeks = {};
-        var wk = weekMondayKey();
-        if (!mp.weeks[wk]) mp.weeks[wk] = {};
-        if (!mp.weeks[wk][_planDay]) mp.weeks[wk][_planDay] = {breakfast:{meal:'',notes:''},lunch:{meal:'',notes:''},dinner:{meal:'',notes:''}};
-        mp.weeks[wk][_planDay][_planMeal].meal = _viewRecipeData.title;
-        localStorage.setItem(MP_STORE, JSON.stringify(mp));
-        var sEl = document.getElementById('plan-success');
-        sEl.classList.add('show');
-        setTimeout(function() {
-          sEl.classList.remove('show');
-          document.getElementById('plan-panel').style.display = 'none';
-        }, 2000);
-      } catch(e) {}
+      if (!_planDays.length || !_planMeal || !_viewRecipeData) return;
+      var mp;
+      try { mp = JSON.parse(localStorage.getItem(MP_STORE) || '{}'); } catch(e) { mp = {}; }
+      if (!mp.weeks) mp.weeks = {};
+      if (!mp.shoppingList) mp.shoppingList = [];
+      var wk = weekMondayKey();
+      if (!mp.weeks[wk]) mp.weeks[wk] = {};
+      _planDays.forEach(function(day) {
+        if (!mp.weeks[wk][day]) {
+          mp.weeks[wk][day] = {
+            breakfast: {meal:'',notes:''}, lunch: {meal:'',notes:''}, dinner: {meal:'',notes:''}
+          };
+        }
+        mp.weeks[wk][day][_planMeal].meal = _viewRecipeData.title;
+      });
+      localStorage.setItem(MP_STORE, JSON.stringify(mp));
+      var sEl = document.getElementById('plan-success');
+      sEl.textContent = '✓ Added to ' + (_planDays.length === 1 ? _planDays[0] : _planDays.length + ' days') + '!';
+      sEl.classList.add('show');
+      setTimeout(function() {
+        sEl.classList.remove('show');
+        document.getElementById('plan-panel').style.display = 'none';
+      }, 2200);
     };
 
     window.openViewModal_byId = function(id) {
