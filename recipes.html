@@ -444,6 +444,34 @@
     }
 
     .site-footer { text-align: center; font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--light); border-top: 1px solid var(--border); padding: 1.4rem 2rem; margin-top: 2rem; }
+
+    /* ── SERVES ADJUSTER ── */
+    .serves-adj-btn { background: var(--subtle); border: 1.5px solid var(--border); color: var(--ink); border-radius: 50%; width: 22px; height: 22px; display: inline-flex; align-items: center; justify-content: center; font-size: 0.82rem; line-height: 1; padding: 0; cursor: pointer; transition: background 0.15s, border-color 0.15s; vertical-align: middle; }
+    .serves-adj-btn:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
+    #vm-serves-num { font-weight: 600; display: inline-block; min-width: 1.4rem; text-align: center; vertical-align: middle; }
+
+    /* ── PLAN PANEL ── */
+    #plan-panel { margin-top: 1.1rem; border-top: 1px solid var(--subtle); padding-top: 1rem; }
+    .plan-section-label { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--light); margin-bottom: 0.45rem; display: block; }
+    .plan-pills { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-bottom: 0.75rem; }
+    .plan-pill { background: var(--subtle); border: 1.5px solid var(--border); border-radius: 9999px; padding: 0.3rem 0.75rem; font-size: 0.72rem; font-weight: 500; color: var(--muted); cursor: pointer; transition: all 0.15s; user-select: none; }
+    .plan-pill:hover { border-color: var(--accent); color: var(--accent); background: rgba(122,60,0,0.06); }
+    .plan-pill.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .plan-footer { display: flex; gap: 0.5rem; margin-top: 0.9rem; align-items: center; flex-wrap: wrap; }
+    #plan-success { color: #1a6630; font-size: 0.78rem; font-weight: 600; display: none; align-items: center; gap: 0.3rem; }
+    #plan-success.show { display: flex; }
+
+    /* ── COOKED BADGE ── */
+    .rc-cooked-badge { position: absolute; bottom: 0.45rem; left: 0.5rem; background: rgba(26,102,48,0.9); color: #fff; font-size: 0.56rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; border-radius: 9999px; padding: 0.14rem 0.5rem; z-index: 3; pointer-events: none; }
+    .vm-cooked-badge { display: inline-flex; align-items: center; gap: 0.3rem; background: rgba(26,102,48,0.1); color: #1a6630; border: 1px solid rgba(26,102,48,0.3); border-radius: 9999px; padding: 0.2rem 0.7rem; font-size: 0.7rem; font-weight: 600; }
+
+    /* ── FILTER PILLS ── */
+    .filter-pills-wrap { display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1.6rem; }
+    .filter-row { display: flex; align-items: center; gap: 0.4rem; flex-wrap: wrap; }
+    .filter-row-label { font-size: 0.59rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--light); white-space: nowrap; min-width: 52px; }
+    .filter-pill { background: var(--card-bg); border: 1.5px solid var(--border); border-radius: 9999px; padding: 0.28rem 0.8rem; font-size: 0.73rem; font-weight: 500; color: var(--muted); cursor: pointer; transition: all 0.15s; white-space: nowrap; user-select: none; }
+    .filter-pill:hover { border-color: var(--accent-mid); color: var(--accent); }
+    .filter-pill.active { background: var(--accent); border-color: var(--accent); color: #fff; }
   </style>
 </head>
 <body>
@@ -550,30 +578,33 @@
         <div class="section-rule"></div>
         <span class="section-count" id="recipe-count-label"></span>
       </div>
-      <div class="scrapbook-controls">
-        <input type="search" class="search-input" id="search-input" placeholder="Search recipes…">
-        <select class="filter-select" id="filter-cat">
-          <option value="">All categories</option>
-          <option value="Breakfast">Breakfast</option>
-          <option value="Lunch">Lunch</option>
-          <option value="Dinner">Dinner</option>
-          <option value="Snack">Snack</option>
-          <option value="Dessert">Dessert</option>
-          <option value="Drink">Drink</option>
-          <option value="Other">Other</option>
-        </select>
-        <select class="filter-select" id="filter-rating">
-          <option value="">Any rating</option>
-          <option value="5">★★★★★ only</option>
-          <option value="4">★★★★ &amp; above</option>
-          <option value="3">★★★ &amp; above</option>
-        </select>
-        <select class="filter-select" id="sort-select">
-          <option value="newest">Newest first</option>
-          <option value="oldest">Oldest first</option>
-          <option value="rating">Highest rated</option>
-          <option value="az">A → Z</option>
-        </select>
+      <div class="filter-pills-wrap">
+        <input type="search" class="search-input" id="search-input" placeholder="Search recipes…" style="max-width:360px">
+        <div class="filter-row">
+          <span class="filter-row-label">Category</span>
+          <span class="filter-pill fp-cat active" data-val="" onclick="window.setFilterCat('')">All</span>
+          <span class="filter-pill fp-cat" data-val="Breakfast" onclick="window.setFilterCat('Breakfast')">Breakfast</span>
+          <span class="filter-pill fp-cat" data-val="Lunch" onclick="window.setFilterCat('Lunch')">Lunch</span>
+          <span class="filter-pill fp-cat" data-val="Dinner" onclick="window.setFilterCat('Dinner')">Dinner</span>
+          <span class="filter-pill fp-cat" data-val="Snack" onclick="window.setFilterCat('Snack')">Snack</span>
+          <span class="filter-pill fp-cat" data-val="Dessert" onclick="window.setFilterCat('Dessert')">Dessert</span>
+          <span class="filter-pill fp-cat" data-val="Drink" onclick="window.setFilterCat('Drink')">Drink</span>
+          <span class="filter-pill fp-cat" data-val="Other" onclick="window.setFilterCat('Other')">Other</span>
+        </div>
+        <div class="filter-row">
+          <span class="filter-row-label">Rating</span>
+          <span class="filter-pill fp-rating active" data-val="0" onclick="window.setFilterRating(0)">Any</span>
+          <span class="filter-pill fp-rating" data-val="3" onclick="window.setFilterRating(3)">&#9733;&#9733;&#9733;+</span>
+          <span class="filter-pill fp-rating" data-val="4" onclick="window.setFilterRating(4)">&#9733;&#9733;&#9733;&#9733;+</span>
+          <span class="filter-pill fp-rating" data-val="5" onclick="window.setFilterRating(5)">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        </div>
+        <div class="filter-row">
+          <span class="filter-row-label">Sort by</span>
+          <span class="filter-pill fp-sort active" data-val="newest" onclick="window.setSort('newest')">Newest</span>
+          <span class="filter-pill fp-sort" data-val="oldest" onclick="window.setSort('oldest')">Oldest</span>
+          <span class="filter-pill fp-sort" data-val="rating" onclick="window.setSort('rating')">Top rated</span>
+          <span class="filter-pill fp-sort" data-val="az" onclick="window.setSort('az')">A &#8594; Z</span>
+        </div>
       </div>
       <div class="scrapbook-board"><div class="recipe-grid" id="recipe-grid"></div></div>
     </section>
@@ -597,6 +628,7 @@
           <span class="view-stars" id="vm-stars"></span>
           <span id="vm-time"></span>
           <span id="vm-serves"></span>
+          <span id="vm-cooked"></span>
         </div>
         <p id="vm-desc" style="font-size:0.88rem;line-height:1.7;color:var(--muted);margin-bottom:0.5rem"></p>
         <span class="section-label">Ingredients</span>
@@ -609,8 +641,21 @@
         <ol class="steps-list" id="vm-steps"></ol>
         <div class="view-actions">
           <button class="btn-primary" id="vm-cook-btn">&#9197; Cooking Mode</button>
+          <button class="btn-secondary" id="vm-plan-btn" onclick="window.togglePlanPanel()">&#128197; Plan this</button>
+          <button class="btn-ghost" id="vm-cooked-btn" onclick="window.toggleCooked()">&#9675; Mark cooked</button>
           <button class="btn-secondary" id="vm-edit-btn">Edit</button>
           <button class="btn-danger" id="vm-delete-btn">Delete</button>
+        </div>
+        <div id="plan-panel" style="display:none">
+          <span class="plan-section-label">Day</span>
+          <div class="plan-pills" id="plan-day-pills"></div>
+          <span class="plan-section-label">Meal</span>
+          <div class="plan-pills" id="plan-meal-pills"></div>
+          <div class="plan-footer">
+            <button class="btn-ghost" onclick="window.togglePlanPanel()">Cancel</button>
+            <button class="btn-primary" onclick="window.confirmPlan()">Add to Planner</button>
+            <span id="plan-success">&#10003; Added to meal planner!</span>
+          </div>
         </div>
       </div>
     </div>
@@ -866,26 +911,37 @@
 
     function getFiltered() {
       var q = document.getElementById('search-input').value.toLowerCase();
-      var cat = document.getElementById('filter-cat').value;
-      var minRating = parseInt(document.getElementById('filter-rating').value) || 0;
-      var sort = document.getElementById('sort-select').value;
-
       var list = recipes.filter(function(r) {
         if (q && r.title.toLowerCase().indexOf(q) === -1 &&
             (!r.desc || r.desc.toLowerCase().indexOf(q) === -1)) return false;
-        if (cat && r.category !== cat) return false;
-        if (minRating && (r.rating || 0) < minRating) return false;
+        if (_filterCat && r.category !== _filterCat) return false;
+        if (_filterRating && (r.rating || 0) < _filterRating) return false;
         return true;
       });
-
       list.sort(function(a, b) {
-        if (sort === 'oldest') return a.createdAt - b.createdAt;
-        if (sort === 'rating') return (b.rating || 0) - (a.rating || 0);
-        if (sort === 'az') return a.title.localeCompare(b.title);
-        return b.createdAt - a.createdAt; // newest
+        if (_sortBy === 'oldest') return a.createdAt - b.createdAt;
+        if (_sortBy === 'rating') return (b.rating || 0) - (a.rating || 0);
+        if (_sortBy === 'az') return a.title.localeCompare(b.title);
+        return b.createdAt - a.createdAt;
       });
       return list;
     }
+
+    window.setFilterCat = function(cat) {
+      _filterCat = cat;
+      document.querySelectorAll('.fp-cat').forEach(function(p) { p.classList.toggle('active', p.dataset.val === cat); });
+      renderGrid();
+    };
+    window.setFilterRating = function(r) {
+      _filterRating = r;
+      document.querySelectorAll('.fp-rating').forEach(function(p) { p.classList.toggle('active', +p.dataset.val === r); });
+      renderGrid();
+    };
+    window.setSort = function(s) {
+      _sortBy = s;
+      document.querySelectorAll('.fp-sort').forEach(function(p) { p.classList.toggle('active', p.dataset.val === s); });
+      renderGrid();
+    };
 
     function renderGrid() {
       var list = getFiltered();
@@ -912,6 +968,7 @@
               + '<div class="rc-thumb-ph" style="display:none">' + (r.emoji || '🍽️') + '</div>'
             : '<div class="rc-thumb-ph">' + (r.emoji || '🍽️') + '</div>')
           + '<button class="rc-fav" onclick="toggleFav(event,\'' + r.id + '\')">' + (r.favourite ? '❤️' : '🤍') + '</button>'
+          + (r.cooked ? '<span class="rc-cooked-badge">&#10003; Cooked</span>' : '')
           + '</div>'
           + '<div class="rc-body">'
           +   '<div class="rc-cat-row">' + catBadge(r.category) + '</div>'
@@ -939,6 +996,16 @@
 
     // ── VIEW MODAL ────────────────────────────────────────────────────────
     var _viewingId = null;
+    var _viewRecipeData = null;
+    var _viewServes = 0;
+    var _viewOrigServes = 0;
+    var _planDay = null, _planMeal = null;
+    var MP_STORE = 'personal_hub_meal_planner_v2';
+    var MP_DAYS = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
+    var MP_MEALS = ['breakfast','lunch','dinner'];
+    var _filterCat = '';
+    var _filterRating = 0;
+    var _sortBy = 'newest';
 
     function renderViewStars(recipeId, rating) {
       var el = document.getElementById('vm-stars');
@@ -958,8 +1025,83 @@
       }
     }
 
+    function parseServes(s) {
+      if (!s) return 0;
+      var n = parseInt(s);
+      return isNaN(n) ? 0 : n;
+    }
+
+    function parseQty(s) {
+      if (!s && s !== 0) return null;
+      s = String(s).trim();
+      if (!s) return null;
+      var FRACS = {'½':0.5,'⅓':1/3,'⅔':2/3,'¼':0.25,'¾':0.75,'⅕':0.2,'⅖':0.4,'⅗':0.6,'⅘':0.8,'⅛':0.125,'⅜':0.375,'⅝':0.625,'⅞':0.875};
+      if (FRACS[s] !== undefined) return FRACS[s];
+      var m = s.match(/^(\d+)\s*([½⅓⅔¼¾⅕⅖⅗⅘⅛⅜⅝⅞])$/);
+      if (m) return parseInt(m[1]) + FRACS[m[2]];
+      m = s.match(/^(\d+)\s+(\d+)\/(\d+)$/);
+      if (m) return parseInt(m[1]) + parseInt(m[2])/parseInt(m[3]);
+      m = s.match(/^(\d+)\/(\d+)$/);
+      if (m) return parseInt(m[1])/parseInt(m[2]);
+      var n = parseFloat(s);
+      return isNaN(n) ? null : n;
+    }
+
+    function formatQty(n) {
+      if (n === null || n === undefined) return '';
+      var whole = Math.floor(n);
+      var frac = n - whole;
+      var FRACS = [[1,2,'½'],[1,3,'⅓'],[2,3,'⅔'],[1,4,'¼'],[3,4,'¾'],[1,8,'⅛'],[3,8,'⅜'],[5,8,'⅝'],[7,8,'⅞']];
+      if (frac < 0.02) return whole === 0 ? '0' : String(whole);
+      for (var i = 0; i < FRACS.length; i++) {
+        if (Math.abs(frac - FRACS[i][0]/FRACS[i][1]) < 0.04) {
+          return (whole > 0 ? whole + ' ' : '') + FRACS[i][2];
+        }
+      }
+      return n < 1 ? n.toFixed(1) : n.toFixed(1).replace(/\.0$/, '');
+    }
+
+    function renderViewIngredients(scale) {
+      var r = _viewRecipeData;
+      if (!r) return;
+      function _scaledIngListHTML(items) {
+        var rows = (items || []).map(function(item) {
+          var origQty = parseQty(item.quantity);
+          var qty;
+          if (origQty !== null && scale !== 1) {
+            qty = formatQty(origQty * scale) + (item.unit ? ' ' + item.unit : '');
+          } else {
+            qty = (item.quantity && +item.quantity > 0) ? (item.quantity + (item.unit ? ' ' + item.unit : '')) : (item.unit || '');
+          }
+          return '<li><span class="ing-qty">' + esc(qty) + '</span><span class="ing-name">' + esc(item.name) + '</span></li>';
+        }).join('');
+        return '<ul class="ingredients-list">' + (rows || '<li style="color:var(--light);font-style:italic">None listed</li>') + '</ul>';
+      }
+      var ingHTML = '';
+      if (r.ingredientGroups && r.ingredientGroups.length) {
+        ingHTML = r.ingredientGroups.map(function(g) {
+          return '<div class="ing-group"><div class="ing-group-label">' + esc(g.group) + '</div>' + _scaledIngListHTML(g.items) + '</div>';
+        }).join('');
+      } else {
+        ingHTML = _scaledIngListHTML(r.ingredients || []);
+      }
+      document.getElementById('vm-ingredients').innerHTML = ingHTML;
+    }
+
+    window.changeServes = function(delta) {
+      _viewServes = Math.max(1, _viewServes + delta);
+      var scale = _viewOrigServes > 0 ? _viewServes / _viewOrigServes : 1;
+      var numEl = document.getElementById('vm-serves-num');
+      if (numEl) numEl.textContent = _viewServes;
+      renderViewIngredients(scale);
+    };
+
     function openViewModal(r, isSuggestion) {
       _viewingId = r.id || null;
+      _viewRecipeData = r;
+      _viewServes = parseServes(r.serves);
+      _viewOrigServes = _viewServes;
+
       document.getElementById('vm-title').textContent = r.title;
       document.getElementById('vm-cat-row').innerHTML = catBadge(r.category);
       if (isSuggestion) {
@@ -968,25 +1110,19 @@
         renderViewStars(r.id, r.rating || 0);
       }
       document.getElementById('vm-time').textContent = r.time ? '⏱ ' + r.time : '';
-      document.getElementById('vm-serves').textContent = r.serves ? 'Serves ' + r.serves : '';
-      document.getElementById('vm-desc').textContent = r.desc || '';
 
-      function _ingListHTML(items) {
-        var rows = (items || []).map(function(i) {
-          var qty = (i.quantity && +i.quantity > 0) ? (i.quantity + (i.unit ? ' ' + i.unit : '')) : (i.unit || '');
-          return '<li><span class="ing-qty">' + esc(qty) + '</span><span class="ing-name">' + esc(i.name) + '</span></li>';
-        }).join('');
-        return '<ul class="ingredients-list">' + (rows || '<li style="color:var(--light);font-style:italic">None listed</li>') + '</ul>';
-      }
-      var ingHTML = '';
-      if (r.ingredientGroups && r.ingredientGroups.length) {
-        ingHTML = r.ingredientGroups.map(function(g) {
-          return '<div class="ing-group"><div class="ing-group-label">' + esc(g.group) + '</div>' + _ingListHTML(g.items) + '</div>';
-        }).join('');
+      if (_viewServes > 0) {
+        document.getElementById('vm-serves').innerHTML = 'Serves '
+          + '<button class="serves-adj-btn" onclick="window.changeServes(-1)" title="Fewer servings">−</button>'
+          + '<span id="vm-serves-num">' + _viewServes + '</span>'
+          + '<button class="serves-adj-btn" onclick="window.changeServes(1)" title="More servings">+</button>';
       } else {
-        ingHTML = _ingListHTML(r.ingredients || []);
+        document.getElementById('vm-serves').textContent = r.serves ? 'Serves ' + r.serves : '';
       }
-      document.getElementById('vm-ingredients').innerHTML = ingHTML;
+
+      document.getElementById('vm-desc').textContent = r.desc || '';
+      renderViewIngredients(1);
+
       var subsWrap = document.getElementById('vm-substitutes-wrap');
       if (r.substitutes && r.substitutes.length) {
         document.getElementById('vm-substitutes').innerHTML = r.substitutes.map(function(s) {
@@ -1006,13 +1142,28 @@
       var editBtn = document.getElementById('vm-edit-btn');
       var deleteBtn = document.getElementById('vm-delete-btn');
       var cookBtn = document.getElementById('vm-cook-btn');
+      var planBtn = document.getElementById('vm-plan-btn');
+      var cookedBtn = document.getElementById('vm-cooked-btn');
+      var cookedEl = document.getElementById('vm-cooked');
 
       if (isSuggestion) {
         editBtn.style.display = 'none';
         deleteBtn.style.display = 'none';
+        planBtn.style.display = 'none';
+        cookedBtn.style.display = 'none';
+        cookedEl.innerHTML = '';
       } else {
         editBtn.style.display = '';
         deleteBtn.style.display = '';
+        planBtn.style.display = '';
+        cookedBtn.style.display = '';
+        cookedBtn.textContent = r.cooked ? '✓ Cooked' : '○ Mark cooked';
+        cookedBtn.className = r.cooked ? 'btn-secondary' : 'btn-ghost';
+        cookedEl.innerHTML = r.cooked
+          ? '<span class="vm-cooked-badge">✓ Cooked'
+            + (r.lastCooked ? ' · ' + new Date(r.lastCooked).toLocaleDateString('en-GB', {day:'numeric',month:'short'}) : '')
+            + '</span>'
+          : '';
         editBtn.onclick = function() { closeModal('view-modal'); openFormModal(_viewingId); };
         deleteBtn.onclick = function() { deleteRecipe(_viewingId); };
       }
@@ -1022,11 +1173,90 @@
         var flatIngs = r.ingredientGroups
           ? r.ingredientGroups.reduce(function(acc, g) { return acc.concat(g.items || []); }, [])
           : (r.ingredients || []);
-        startCooking(r.instructions || [], flatIngs, r.title || '');
+        startCooking(r.instructions || [], flatIngs, r.title || '', r.id || null);
       };
+
+      // Reset plan panel
+      var planPanel = document.getElementById('plan-panel');
+      if (planPanel) planPanel.style.display = 'none';
+      _planDay = null; _planMeal = null;
+      document.getElementById('plan-success').classList.remove('show');
 
       openModal('view-modal');
     }
+
+    window.toggleCooked = function() {
+      if (!_viewingId) return;
+      var rec = recipes.find(function(x) { return x.id === _viewingId; });
+      if (!rec) return;
+      rec.cooked = !rec.cooked;
+      if (rec.cooked) rec.lastCooked = Date.now();
+      saveRecipes();
+      renderGrid();
+      var cookedBtn = document.getElementById('vm-cooked-btn');
+      var cookedEl = document.getElementById('vm-cooked');
+      cookedBtn.textContent = rec.cooked ? '✓ Cooked' : '○ Mark cooked';
+      cookedBtn.className = rec.cooked ? 'btn-secondary' : 'btn-ghost';
+      cookedEl.innerHTML = rec.cooked
+        ? '<span class="vm-cooked-badge">✓ Cooked'
+          + (rec.lastCooked ? ' · ' + new Date(rec.lastCooked).toLocaleDateString('en-GB', {day:'numeric',month:'short'}) : '')
+          + '</span>'
+        : '';
+    };
+
+    function weekMondayKey() {
+      var d = new Date();
+      var day = d.getDay();
+      var diff = day === 0 ? -6 : 1 - day;
+      var mon = new Date(d.getFullYear(), d.getMonth(), d.getDate() + diff);
+      return mon.getFullYear() + '-' + String(mon.getMonth()+1).padStart(2,'0') + '-' + String(mon.getDate()).padStart(2,'0');
+    }
+
+    function renderPlanPills() {
+      var dayPills = document.getElementById('plan-day-pills');
+      var mealPills = document.getElementById('plan-meal-pills');
+      if (!dayPills || !mealPills) return;
+      dayPills.innerHTML = MP_DAYS.map(function(d) {
+        return '<span class="plan-pill' + (d === _planDay ? ' active' : '') + '" onclick="window.selectPlanDay(\'' + d + '\')">' + d.slice(0,3) + '</span>';
+      }).join('');
+      mealPills.innerHTML = MP_MEALS.map(function(m) {
+        var label = m.charAt(0).toUpperCase() + m.slice(1);
+        return '<span class="plan-pill' + (m === _planMeal ? ' active' : '') + '" onclick="window.selectPlanMeal(\'' + m + '\')">' + label + '</span>';
+      }).join('');
+    }
+
+    window.togglePlanPanel = function() {
+      var panel = document.getElementById('plan-panel');
+      var isOpen = panel.style.display !== 'none';
+      panel.style.display = isOpen ? 'none' : 'block';
+      if (!isOpen) {
+        _planDay = null; _planMeal = null;
+        document.getElementById('plan-success').classList.remove('show');
+        renderPlanPills();
+      }
+    };
+
+    window.selectPlanDay = function(day) { _planDay = day; renderPlanPills(); };
+    window.selectPlanMeal = function(meal) { _planMeal = meal; renderPlanPills(); };
+
+    window.confirmPlan = function() {
+      if (!_planDay || !_planMeal || !_viewRecipeData) return;
+      try {
+        var mp = JSON.parse(localStorage.getItem(MP_STORE) || '{"weeks":{},"shoppingList":[]}');
+        if (!mp.weeks) mp.weeks = {};
+        var wk = weekMondayKey();
+        if (!mp.weeks[wk]) mp.weeks[wk] = {};
+        if (!mp.weeks[wk][_planDay]) mp.weeks[wk][_planDay] = {breakfast:{meal:'',notes:''},lunch:{meal:'',notes:''},dinner:{meal:'',notes:''}};
+        mp.weeks[wk][_planDay][_planMeal].meal = _viewRecipeData.title;
+        localStorage.setItem(MP_STORE, JSON.stringify(mp));
+        var sEl = document.getElementById('plan-success');
+        sEl.classList.add('show');
+        setTimeout(function() {
+          sEl.classList.remove('show');
+          document.getElementById('plan-panel').style.display = 'none';
+        }, 2000);
+      } catch(e) {}
+    };
 
     window.openViewModal_byId = function(id) {
       var r = recipes.find(function(x) { return x.id === id; });
@@ -1245,7 +1475,7 @@
     document.getElementById('btn-new-recipe').onclick = function() { openFormModal(null); };
 
     // ── COOKING MODE ──────────────────────────────────────────────────────
-    var _ckSteps = [], _ckIngredients = [], _ckIdx = 0, _ckTitle = '';
+    var _ckSteps = [], _ckIngredients = [], _ckIdx = 0, _ckTitle = '', _ckRecipeId = null;
     var _ckIngKeywords = [];
 
     function fmtQty(ing) {
@@ -1287,13 +1517,14 @@
       return result;
     }
 
-    function startCooking(steps, ingredients, title) {
+    function startCooking(steps, ingredients, title, recipeId) {
       if (!steps || steps.length === 0) return;
       _ckSteps = steps;
       _ckIngredients = ingredients || [];
       _ckIngKeywords = buildIngKeywords(_ckIngredients);
       _ckTitle = title || '';
       _ckIdx = 0;
+      _ckRecipeId = recipeId || null;
       // Build dots
       document.getElementById('ck-dots').innerHTML = _ckSteps.map(function(_, i) {
         return '<div class="ck-dot" onclick="ckJump(' + i + ')"></div>';
@@ -1387,7 +1618,13 @@
     };
     document.getElementById('ck-next').onclick = function() {
       if (_ckIdx < _ckSteps.length - 1) { _ckIdx++; updateCookingStep(); }
-      else { document.getElementById('cooking-mode').classList.remove('open'); }
+      else {
+        document.getElementById('cooking-mode').classList.remove('open');
+        if (_ckRecipeId) {
+          var rec = recipes.find(function(x) { return x.id === _ckRecipeId; });
+          if (rec) { rec.cooked = true; rec.lastCooked = Date.now(); saveRecipes(); renderGrid(); }
+        }
+      }
     };
     document.getElementById('cooking-close').onclick = function() {
       document.getElementById('cooking-mode').classList.remove('open');
@@ -1411,10 +1648,7 @@
     });
 
     // ── FILTERS ───────────────────────────────────────────────────────────
-    ['search-input','filter-cat','filter-rating','sort-select'].forEach(function(id) {
-      document.getElementById(id).addEventListener('input', renderGrid);
-      document.getElementById(id).addEventListener('change', renderGrid);
-    });
+    document.getElementById('search-input').addEventListener('input', renderGrid);
 
     // ── DATE + TICKER ──────────────────────────────────────────────────────
     document.getElementById('js-date').textContent = new Date().toLocaleDateString('en-GB', {
