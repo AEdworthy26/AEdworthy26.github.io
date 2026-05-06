@@ -96,10 +96,15 @@
     .planner-standfirst { font-size: 0.82rem; color: var(--muted); margin-top: 0.35rem; }
 
     /* ── CHIPS SECTION ── */
-    .chips-section { margin-bottom: 2.5rem; }
+    .chips-section {
+      background: var(--card); border: 1.5px solid var(--border);
+      border-radius: var(--radius); padding: 1.5rem 1.5rem 1.4rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 18px rgba(0,0,0,0.07);
+    }
     .chips-head {
       display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;
-      gap: 0.7rem; margin-bottom: 1.2rem;
+      gap: 0.7rem; margin-bottom: 1.3rem;
     }
     .week-nav {
       display: inline-flex; align-items: center; gap: 0.15rem;
@@ -131,46 +136,46 @@
 
     /* ── DAY CHIPS ── */
     .day-chips-strip {
-      display: flex; gap: 0.65rem;
+      display: flex; gap: 0.6rem;
       overflow-x: auto; scrollbar-width: none; padding-bottom: 4px;
     }
     .day-chips-strip::-webkit-scrollbar { display: none; }
     .day-chip {
       flex-shrink: 0;
-      min-width: 88px;
-      background: var(--card); border: 1.5px solid var(--border);
+      min-width: 112px;
+      background: var(--subtle); border: 1.5px solid var(--border);
       border-radius: var(--radius);
-      padding: 1rem 1rem 0.85rem;
-      display: flex; flex-direction: column; align-items: center; gap: 0.35rem;
-      cursor: pointer; transition: all 0.2s;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+      padding: 1.15rem 1rem 1.05rem;
+      display: flex; flex-direction: column; align-items: center; gap: 0.28rem;
+      cursor: pointer; transition: all 0.18s;
       position: relative;
     }
     .day-chip:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-      border-color: rgba(0,51,153,0.3);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 22px rgba(0,0,0,0.1);
+      border-color: rgba(0,51,153,0.25);
+      background: #fff;
     }
-    .day-chip:active { transform: translateY(-1px); }
+    .day-chip:active { transform: translateY(0); }
     .day-chip.is-today {
       background: var(--blue);
       border-color: var(--blue);
-      box-shadow: 0 0 0 3px rgba(0,51,153,0.15), 0 6px 20px rgba(0,51,153,0.25);
+      box-shadow: 0 0 0 3px rgba(0,51,153,0.15), 0 6px 20px rgba(0,51,153,0.28);
     }
     .day-chip.is-today:hover { background: var(--blue-mid); border-color: var(--blue-mid); }
     .dc-name { font-size: 0.56rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--light); }
     .day-chip.is-today .dc-name { color: rgba(255,255,255,0.6); }
-    .dc-num { font-size: 1.75rem; font-weight: 800; color: var(--ink); line-height: 1; letter-spacing: -0.05em; }
+    .dc-num { font-size: 1.85rem; font-weight: 800; color: var(--ink); line-height: 1; letter-spacing: -0.05em; }
     .day-chip.is-today .dc-num { color: #fff; }
-    .dc-dots { display: flex; gap: 4px; margin-top: 0.1rem; }
-    .dc-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--subtle); transition: background 0.2s; }
-    .day-chip.is-today .dc-dot { background: rgba(255,255,255,0.25); }
-    .dc-dot.b-on { background: var(--break-col); }
-    .dc-dot.l-on { background: var(--lunch-col); }
-    .dc-dot.d-on { background: var(--dinner-col); }
-    .day-chip.is-today .dc-dot.b-on { background: rgba(234,120,38,0.85); }
-    .day-chip.is-today .dc-dot.l-on { background: rgba(14,165,114,0.85); }
-    .day-chip.is-today .dc-dot.d-on { background: rgba(91,95,207,0.85); }
+    .dc-ticks { display: flex; gap: 5px; margin-top: 0.22rem; align-items: center; }
+    .dc-tick { font-size: 0.92rem; font-weight: 900; color: #d8d4ce; transition: color 0.15s; line-height: 1; }
+    .day-chip.is-today .dc-tick { color: rgba(255,255,255,0.22); }
+    .dc-tick.b-on { color: var(--break-col); }
+    .dc-tick.l-on { color: var(--lunch-col); }
+    .dc-tick.d-on { color: var(--dinner-col); }
+    .day-chip.is-today .dc-tick.b-on { color: #ff9a52; }
+    .day-chip.is-today .dc-tick.l-on { color: #2de5a0; }
+    .day-chip.is-today .dc-tick.d-on { color: #9b9fff; }
 
     /* ── MAIN COLUMNS ── */
     .main-cols {
@@ -185,44 +190,56 @@
     .today-card {
       background: var(--card); border: 1.5px solid var(--border);
       border-radius: var(--radius); overflow: hidden;
-      box-shadow: 0 2px 14px rgba(0,0,0,0.06);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
     }
     .tc-head {
       display: flex; align-items: flex-start; justify-content: space-between;
-      padding: 1.4rem 1.5rem 1.2rem;
-      background: linear-gradient(135deg, var(--blue) 0%, var(--blue-mid) 100%);
+      padding: 1.5rem 1.5rem 1.35rem;
+      background: linear-gradient(135deg, #001c7a 0%, #1240c8 55%, #2861f0 100%);
     }
-    .tc-label { font-size: 0.57rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.55); display: block; margin-bottom: 0.3rem; }
-    .tc-dayname { font-family: 'Playfair Display', serif; font-size: 1.85rem; font-weight: 900; color: #fff; line-height: 1; letter-spacing: -0.02em; }
-    .tc-date { font-size: 0.75rem; color: rgba(255,255,255,0.6); margin-top: 0.25rem; }
+    .tc-label { font-size: 0.57rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.5); display: block; margin-bottom: 0.3rem; }
+    .tc-dayname { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 900; color: #fff; line-height: 1; letter-spacing: -0.02em; }
+    .tc-date { font-size: 0.75rem; color: rgba(255,255,255,0.55); margin-top: 0.28rem; }
     .tc-edit-btn {
-      background: rgba(255,255,255,0.15); color: #fff;
+      background: rgba(255,255,255,0.13); color: #fff;
       border: 1px solid rgba(255,255,255,0.28); border-radius: 9999px;
-      padding: 0.42rem 1rem; font-size: 0.68rem; font-weight: 600;
+      padding: 0.44rem 1.05rem; font-size: 0.68rem; font-weight: 600;
       letter-spacing: 0.03em; transition: background 0.15s; white-space: nowrap; flex-shrink: 0;
     }
     .tc-edit-btn:hover { background: rgba(255,255,255,0.26); }
     .tc-meal-row {
       display: flex; align-items: flex-start; gap: 0.85rem;
-      padding: 1rem 1.5rem;
+      padding: 1.1rem 1.5rem 1.1rem 1.25rem;
       border-bottom: 1px solid #f2ede7;
-      transition: background 0.1s;
+      border-left: 3px solid transparent;
+      transition: background 0.12s;
     }
     .tc-meal-row:last-child { border-bottom: none; }
-    .tc-meal-row:hover { background: #faf8f4; }
-    .tc-emoji { font-size: 1.15rem; flex-shrink: 0; padding-top: 0.08rem; }
+    .tc-row-breakfast { border-left-color: var(--break-col); }
+    .tc-row-lunch     { border-left-color: var(--lunch-col); }
+    .tc-row-dinner    { border-left-color: var(--dinner-col); }
+    .tc-row-breakfast.has-meal { background: rgba(234,120,38,0.04); }
+    .tc-row-lunch.has-meal     { background: rgba(14,165,114,0.04); }
+    .tc-row-dinner.has-meal    { background: rgba(91,95,207,0.04); }
+    .tc-meal-row:hover { background: #faf8f4 !important; }
+    .tc-emoji { font-size: 1.2rem; flex-shrink: 0; padding-top: 0.04rem; }
     .tc-content { flex: 1; min-width: 0; }
-    .tc-meal-label { font-size: 0.52rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; display: block; margin-bottom: 0.22rem; }
-    .tc-meal-label-breakfast { color: var(--break-col); }
-    .tc-meal-label-lunch     { color: var(--lunch-col); }
-    .tc-meal-label-dinner    { color: var(--dinner-col); }
-    .tc-meal-text { font-size: 0.9rem; color: var(--ink); font-weight: 500; line-height: 1.45; display: block; }
-    .tc-meal-text.empty { color: #c4bfb8; font-weight: 400; font-style: italic; font-size: 0.82rem; }
+    .tc-meal-label {
+      font-size: 0.49rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+      display: inline-block; margin-bottom: 0.3rem;
+      padding: 0.19rem 0.58rem; border-radius: 9999px; color: #fff;
+    }
+    .tc-meal-label-breakfast { background: var(--break-col); }
+    .tc-meal-label-lunch     { background: var(--lunch-col); }
+    .tc-meal-label-dinner    { background: var(--dinner-col); }
+    .tc-meal-text { font-size: 1.02rem; color: var(--ink); font-weight: 600; line-height: 1.45; display: block; }
+    .tc-meal-text.empty { color: #c0bbb2; font-weight: 400; font-style: italic; font-size: 0.86rem; }
     .tc-meal-notes { font-size: 0.67rem; color: var(--light); margin-top: 0.15rem; display: block; }
 
     /* ── DAY EDIT MODAL ── */
     .dm-overlay {
-      position: fixed; inset: 0; background: rgba(0,0,0,0.45);
+      position: fixed; inset: 0; background: rgba(0,0,0,0.42);
+      backdrop-filter: blur(3px); -webkit-backdrop-filter: blur(3px);
       z-index: 600; display: flex; align-items: center; justify-content: center;
       padding: 1rem;
       opacity: 0; pointer-events: none; transition: opacity 0.22s;
@@ -444,6 +461,7 @@
         <h1 class="planner-title">Meal Planner</h1>
         <p class="planner-standfirst">Plan your week, track today, build your shopping list.</p>
       </div>
+      <span id="ph-sync-indicator" style="font-size:0.68rem;color:var(--light);align-self:flex-end"></span>
     </div>
 
     <!-- CHIPS SECTION -->
@@ -643,10 +661,10 @@
         return '<div class="day-chip' + (isToday ? ' is-today' : '') + '" onclick="window.openDayModal(\'' + d + '\')">'
           + '<span class="dc-name">' + DAY_SHORT[i] + '</span>'
           + '<span class="dc-num">' + dateNum + '</span>'
-          + '<div class="dc-dots">'
-          +   '<span class="dc-dot' + (bf ? ' b-on' : '') + '"></span>'
-          +   '<span class="dc-dot' + (lu ? ' l-on' : '') + '"></span>'
-          +   '<span class="dc-dot' + (di ? ' d-on' : '') + '"></span>'
+          + '<div class="dc-ticks">'
+          +   '<span class="dc-tick' + (bf ? ' b-on' : '') + '">&#10003;</span>'
+          +   '<span class="dc-tick' + (lu ? ' l-on' : '') + '">&#10003;</span>'
+          +   '<span class="dc-tick' + (di ? ' d-on' : '') + '">&#10003;</span>'
           + '</div>'
           + '</div>';
       }).join('');
@@ -664,7 +682,7 @@
         var meta = MEAL_META[mk];
         var meal  = ((todayData[mk] || {}).meal  || '').trim();
         var notes = ((todayData[mk] || {}).notes || '').trim();
-        return '<div class="tc-meal-row">'
+        return '<div class="tc-meal-row tc-row-' + mk + (meal ? ' has-meal' : '') + '">'
           + '<span class="tc-emoji">' + meta.emoji + '</span>'
           + '<div class="tc-content">'
           +   '<span class="tc-meal-label tc-meal-label-' + mk + '">' + meta.label + '</span>'
