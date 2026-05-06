@@ -302,6 +302,50 @@
     /* ── FOOTER ── */
     .site-footer { text-align: center; font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--light); border-top: 1px solid #ccc; padding: 0.8rem 2rem; }
 
+    /* ── WEEKLY REVIEW MODAL ── */
+    .review-overlay {
+      position: fixed; inset: 0; background: rgba(0,0,0,0.45); backdrop-filter: blur(4px);
+      display: none; align-items: center; justify-content: center; z-index: 500; padding: 1rem;
+    }
+    .review-overlay.open { display: flex; }
+    .review-panel {
+      background: var(--paper); border-radius: 18px;
+      box-shadow: 0 28px 80px rgba(0,0,0,0.22);
+      width: 100%; max-width: 510px; max-height: 90vh;
+      overflow: hidden; display: flex; flex-direction: column;
+      animation: reviewIn .22s cubic-bezier(.22,1,.36,1);
+    }
+    @keyframes reviewIn { from{opacity:0;transform:scale(.96) translateY(10px)} to{opacity:1;transform:none} }
+    .review-header {
+      padding: 1.25rem 1.5rem;
+      background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+      display: flex; align-items: flex-start; justify-content: space-between; flex-shrink: 0;
+    }
+    .review-title { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.25rem; color: #fff; }
+    .review-subtitle { font-size: 0.62rem; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.55); margin-top: 0.2rem; }
+    .review-close { background: none; border: none; color: rgba(255,255,255,0.55); font-size: 1.1rem; cursor: pointer; padding: 0 0.15rem; transition: color .15s; }
+    .review-close:hover { color: #fff; }
+    .review-body { overflow-y: auto; flex: 1; padding: 1.4rem 1.5rem; display: flex; flex-direction: column; gap: 1.25rem; }
+    .review-stats { display: grid; grid-template-columns: repeat(3,1fr); gap: 0.75rem; }
+    .review-stat { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 0.9rem 0.7rem; text-align: center; }
+    .review-stat-val { font-family: 'Playfair Display', serif; font-weight: 900; font-size: 1.7rem; line-height: 1; color: var(--ink); }
+    .review-stat-lbl { font-size: 0.55rem; font-weight: 700; letter-spacing: 0.13em; text-transform: uppercase; color: var(--light); margin-top: 0.25rem; }
+    .review-progress-bar { height: 7px; background: var(--subtle); border-radius: 4px; overflow: hidden; border: 1px solid var(--border); }
+    .review-progress-fill { height: 100%; border-radius: 4px; background: linear-gradient(90deg, #15803d, #4ade80); transition: width .7s cubic-bezier(.22,1,.36,1); }
+    .review-msg { font-size: 0.78rem; color: var(--muted); font-style: italic; margin-top: 0.55rem; line-height: 1.5; }
+    .review-section-title { font-size: 0.58rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--blue); margin-bottom: 0.55rem; }
+    .review-task-row { display: flex; align-items: center; gap: 0.55rem; padding: 0.38rem 0; border-bottom: 1px solid var(--subtle); font-family: 'Inter', sans-serif; font-size: 0.8rem; }
+    .review-task-row:last-child { border-bottom: none; }
+    .review-task-title { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--ink); }
+    .review-task-title.done { text-decoration: line-through; color: var(--muted); }
+    .review-task-date { font-size: 0.63rem; color: var(--light); white-space: nowrap; flex-shrink: 0; }
+    .review-empty { font-size: 0.78rem; color: var(--light); font-style: italic; padding: 0.3rem 0; }
+    .review-footer { padding: 1rem 1.5rem 1.25rem; border-top: 1px solid var(--border); display: flex; justify-content: flex-end; gap: 0.6rem; flex-shrink: 0; background: var(--card); }
+    .btn-review-dismiss { font-family: 'Inter', sans-serif; font-size: 0.75rem; font-weight: 600; padding: 0.5rem 1rem; background: none; border: 1px solid var(--border); border-radius: 9999px; color: var(--muted); cursor: pointer; transition: all .15s; }
+    .btn-review-dismiss:hover { border-color: #aaa; color: var(--ink); }
+    .btn-review-start { font-family: 'Inter', sans-serif; font-size: 0.75rem; font-weight: 700; padding: 0.5rem 1.3rem; background: var(--blue); color: #fff; border: none; border-radius: 9999px; cursor: pointer; transition: background .15s; }
+    .btn-review-start:hover { background: #002277; }
+
     /* ── RESPONSIVE ── */
     @media (max-width: 600px) {
       .stats-strip { grid-template-columns: 1fr; }
@@ -1096,6 +1140,96 @@
       });
     })();
 
+    // ── WEEKLY REVIEW ────────────────────────────────────────────────────────
+    var REVIEW_KEY = 'ph_weekly_review_shown';
+
+    function getWeekRange() {
+      var today = new Date();
+      var day = today.getDay();
+      var diffToMon = (day === 0) ? -6 : 1 - day;
+      var monday = new Date(today); monday.setDate(today.getDate() + diffToMon);
+      var sunday = new Date(monday); sunday.setDate(monday.getDate() + 6);
+      return { start: toISO(monday), end: toISO(sunday) };
+    }
+
+    window.openWeeklyReview = function() {
+      var wr = getWeekRange();
+      var weekDates = [];
+      var d = new Date(wr.start + 'T12:00:00');
+      for (var i = 0; i < 7; i++) { weekDates.push(toISO(d)); d.setDate(d.getDate() + 1); }
+
+      // Completed tasks this week (all backlog entries Mon–Sun)
+      var completedAll = [];
+      weekDates.forEach(function(date) {
+        (backlog[date] || []).forEach(function(t) {
+          completedAll.push({ title: t.title, date: date, priority: t.priority });
+        });
+      });
+
+      // Carry-overs: active tasks with dueDate on or before Sunday of this week
+      var todayStr = todayISO();
+      var carryOvers = tasks.filter(function(t) {
+        return t.dueDate && t.dueDate <= wr.end;
+      }).sort(function(a, b) { return (a.dueDate || '').localeCompare(b.dueDate || ''); });
+
+      var total = completedAll.length + carryOvers.length;
+      var rate  = total > 0 ? Math.round(completedAll.length / total * 100) : (completedAll.length > 0 ? 100 : 0);
+
+      var monFmt = new Date(wr.start + 'T12:00:00').toLocaleDateString('en-GB', { day:'numeric', month:'short' });
+      var sunFmt = new Date(wr.end   + 'T12:00:00').toLocaleDateString('en-GB', { day:'numeric', month:'short' });
+
+      var msg;
+      if (completedAll.length === 0 && carryOvers.length === 0) msg = 'Nothing due this week — hopefully you had some well-earned rest.';
+      else if (rate === 100 && completedAll.length > 0) msg = 'Flawless week — every task done. Outstanding.';
+      else if (rate >= 75) msg = 'Strong week. A few things carried over, but solid progress throughout.';
+      else if (rate >= 50) msg = 'More than half done — decent week. The carry-overs can lead Monday.';
+      else if (completedAll.length === 0) msg = 'Nothing ticked off this week. A clean slate starts tomorrow.';
+      else msg = 'Tough week. Note the carry-overs and start Monday with a clear plan.';
+
+      var completedHTML = completedAll.length
+        ? completedAll.slice(0, 15).map(function(t) {
+            var dayStr = new Date(t.date + 'T12:00:00').toLocaleDateString('en-GB', { weekday:'short' });
+            return '<div class="review-task-row">'
+              + '<span style="color:#15803d;font-size:.75rem;flex-shrink:0">✓</span>'
+              + '<span class="review-task-title done">' + esc(t.title) + '</span>'
+              + '<span class="review-task-date">' + dayStr + '</span>'
+              + '</div>';
+          }).join('') + (completedAll.length > 15 ? '<div style="font-size:.7rem;color:var(--light);padding:.3rem 0">+' + (completedAll.length - 15) + ' more</div>' : '')
+        : '<div class="review-empty">No tasks completed this week.</div>';
+
+      var carryHTML = carryOvers.length
+        ? carryOvers.slice(0, 10).map(function(t) {
+            var overdue = t.dueDate < todayStr;
+            return '<div class="review-task-row">'
+              + '<span style="color:' + (overdue ? '#dc2626' : '#d97706') + ';font-size:.7rem;flex-shrink:0">' + (overdue ? '⚑' : '→') + '</span>'
+              + '<span class="review-task-title">' + esc(t.title) + '</span>'
+              + (t.dueDate ? '<span class="review-task-date" style="color:' + (overdue ? '#dc2626' : 'var(--muted)') + '">' + fmtDate(t.dueDate) + '</span>' : '')
+              + '</div>';
+          }).join('') + (carryOvers.length > 10 ? '<div style="font-size:.7rem;color:var(--light);padding:.3rem 0">+' + (carryOvers.length - 10) + ' more</div>' : '')
+        : '<div class="review-empty">No carry-overs — clean slate for next week!</div>';
+
+      document.getElementById('review-week-label').textContent = monFmt + ' – ' + sunFmt;
+      document.getElementById('review-stat-completed').textContent = completedAll.length;
+      document.getElementById('review-stat-rate').textContent = total > 0 ? rate + '%' : '—';
+      document.getElementById('review-stat-carry').textContent = carryOvers.length;
+      document.getElementById('review-progress-fill').style.width = rate + '%';
+      document.getElementById('review-msg').textContent = msg;
+      document.getElementById('review-completed-list').innerHTML = completedHTML;
+      document.getElementById('review-carry-list').innerHTML = carryHTML;
+      document.getElementById('review-overlay').classList.add('open');
+    };
+
+    window.closeWeeklyReview = function() {
+      document.getElementById('review-overlay').classList.remove('open');
+      localStorage.setItem(REVIEW_KEY, todayISO());
+    };
+
+    function maybeShowWeeklyReview() {
+      if (new Date().getDay() !== 0) return;           // only on Sunday
+      if (localStorage.getItem(REVIEW_KEY) === todayISO()) return; // already seen today
+      setTimeout(window.openWeeklyReview, 900);
+    }
+
     // ── META DATE ────────────────────────────────────────────────────────────
     document.getElementById('js-date').textContent =
       new Date().toLocaleDateString('en-GB', { weekday:'long', day:'numeric', month:'long', year:'numeric' });
@@ -1103,9 +1237,57 @@
     // ── INIT ─────────────────────────────────────────────────────────────────
     load();
     render();
+    maybeShowWeeklyReview();
 
   })();
   </script>
+  <!-- Weekly Review Modal -->
+  <div class="review-overlay" id="review-overlay" onclick="if(event.target===this)window.closeWeeklyReview()">
+    <div class="review-panel">
+      <div class="review-header">
+        <div>
+          <div class="review-title">&#9728; Weekly Review</div>
+          <div class="review-subtitle" id="review-week-label"></div>
+        </div>
+        <button class="review-close" onclick="window.closeWeeklyReview()">&#215;</button>
+      </div>
+      <div class="review-body">
+        <div>
+          <div class="review-stats">
+            <div class="review-stat">
+              <div class="review-stat-val" id="review-stat-completed">0</div>
+              <div class="review-stat-lbl">Completed</div>
+            </div>
+            <div class="review-stat">
+              <div class="review-stat-val" id="review-stat-rate">—</div>
+              <div class="review-stat-lbl">Done Rate</div>
+            </div>
+            <div class="review-stat">
+              <div class="review-stat-val" id="review-stat-carry">0</div>
+              <div class="review-stat-lbl">Carry-overs</div>
+            </div>
+          </div>
+          <div class="review-progress-bar" style="margin-top:.85rem">
+            <div class="review-progress-fill" id="review-progress-fill" style="width:0%"></div>
+          </div>
+          <div class="review-msg" id="review-msg"></div>
+        </div>
+        <div>
+          <div class="review-section-title">Completed This Week</div>
+          <div id="review-completed-list"></div>
+        </div>
+        <div>
+          <div class="review-section-title">Carry-overs &amp; Overdue</div>
+          <div id="review-carry-list"></div>
+        </div>
+      </div>
+      <div class="review-footer">
+        <button class="btn-review-dismiss" onclick="window.closeWeeklyReview()">Dismiss</button>
+        <button class="btn-review-start" onclick="window.closeWeeklyReview()">Start the new week ›</button>
+      </div>
+    </div>
+  </div>
+
   <script src="world-news-data.js?v=202605060511"></script>
   <script src="ticker.js?v=202605060511"></script>
   <script src="sync.js?v=202605060511"></script>
