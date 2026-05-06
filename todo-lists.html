@@ -599,7 +599,8 @@
       backlog[today].unshift({
         id: task.id, title: task.title,
         category: task.category, priority: task.priority,
-        dueDate: task.dueDate, completedAt: nowTimeStr()
+        dueDate: task.dueDate, completedAt: nowTimeStr(),
+        createdAt: task.createdAt
       });
       removeFromCalendar(task.calEventId);
       if (_editingId === id) _editingId = null;
@@ -648,9 +649,13 @@
     // ── STATS ─────────────────────────────────────────────────────────────────
     function getEnteredToday() {
       var today = todayISO();
-      return tasks.filter(function(t) {
-        return toISO(new Date(t.createdAt)) === today;
+      var active = tasks.filter(function(t) {
+        return t.createdAt && toISO(new Date(t.createdAt)) === today;
       }).length;
+      var completed = (backlog[today] || []).filter(function(t) {
+        return t.createdAt && toISO(new Date(t.createdAt)) === today;
+      }).length;
+      return active + completed;
     }
 
     function getTodayStats() {
