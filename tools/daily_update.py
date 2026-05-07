@@ -905,9 +905,9 @@ RULES:
 - Worked examples and APC tips must feel authentic to Alfie's role — land-led, planning-focused, JV and RP context
 - Write at a high level — APC preparation for a practitioner, not a student
 - Content blocks: mix of paragraphs, headings, callout (APC tips with worked examples), and key_term blocks
-- At least 10 content blocks
+- At least 8 content blocks
 - 5 specific technical Q&A pairs an APC assessor would ask this candidate
-- 6 news items: 3 focused on the RP / housing association sector (affordable housing, Homes England, RSH, development finance, RP strategy), and 3 on the wider UK real estate market (commercial property, residential investment, planning policy, PropTech, construction). Each must have a one-sentence body teaser and a summary array of 2 detailed paragraphs for the popup
+- 6 news items: 3 focused on the RP / housing association sector (affordable housing, Homes England, RSH, development finance, RP strategy), and 3 on the wider UK real estate market (commercial property, residential investment, planning policy, PropTech, construction). Each must have a one-sentence body teaser and a summary array with 1 detailed paragraph (3-4 sentences) for the popup
 
 Output ONLY valid JavaScript. No explanation, no markdown. Start directly with "var RICS_DATA".
 
@@ -946,12 +946,12 @@ var RICS_DATA = {{
     {{ q: "...", a: "..." }}
   ],
   news: [
-    {{ tag: "RP / Housing Association", headline: "RP or HA sector headline", body: "One sentence teaser.", summary: ["First detailed paragraph (2-3 sentences).", "Second detailed paragraph (2-3 sentences)."] }},
-    {{ tag: "RP / Housing Association", headline: "...", body: "...", summary: ["...", "..."] }},
-    {{ tag: "RP / Housing Association", headline: "...", body: "...", summary: ["...", "..."] }},
-    {{ tag: "Real Estate Market", headline: "Wider real estate/commercial/planning headline", body: "One sentence teaser.", summary: ["First detailed paragraph (2-3 sentences).", "Second detailed paragraph (2-3 sentences)."] }},
-    {{ tag: "Real Estate Market", headline: "...", body: "...", summary: ["...", "..."] }},
-    {{ tag: "Real Estate Market", headline: "...", body: "...", summary: ["...", "..."] }}
+    {{ tag: "RP / Housing Association", headline: "RP or HA sector headline", body: "One sentence teaser.", summary: ["Detailed paragraph of 3-4 sentences explaining the story and its significance."] }},
+    {{ tag: "RP / Housing Association", headline: "...", body: "...", summary: ["..."] }},
+    {{ tag: "RP / Housing Association", headline: "...", body: "...", summary: ["..."] }},
+    {{ tag: "Real Estate Market", headline: "Wider real estate/commercial/planning headline", body: "One sentence teaser.", summary: ["Detailed paragraph of 3-4 sentences explaining the story and its significance."] }},
+    {{ tag: "Real Estate Market", headline: "...", body: "...", summary: ["..."] }},
+    {{ tag: "Real Estate Market", headline: "...", body: "...", summary: ["..."] }}
   ]
 }};"""
 
@@ -964,7 +964,7 @@ var RICS_DATA = {{
                             f'You MUST pick something completely different. '
                             f'Do NOT write about planning conditions, Grampian, pre-commencement, '
                             f'S106, S73, BNG, viability, or anything already on the forbidden list.\n')
-        js = extract_js(call_claude(build_prompt(extra_notice), timeout=420, max_tokens=8192))
+        js = extract_js(call_claude(build_prompt(extra_notice), timeout=600, max_tokens=8192))
         if not js:
             return last_js
         last_js = js
@@ -1285,18 +1285,248 @@ var FILMS_DATA = {{
 
 def gen_quote():
     log("\n── Quote of the Day")
-    prompt = f"""Pick a single outstanding quote for today ({TODAY}) for a personal dashboard.
-Choose something genuinely interesting — from philosophy, history, literature, politics, science, or sport.
-Avoid clichés and overused motivational quotes. Prefer surprising, precise, or profound selections.
-
-Output ONLY valid JavaScript. No explanation, no markdown. Start directly with "var QUOTE_DATA".
-
-var QUOTE_DATA = {{
-  date: "{TODAY}",
-  text: "The exact quote text here.",
-  author: "Full Name"
-}};"""
-    return extract_js(call_claude(prompt, timeout=30))
+    import hashlib
+    QUOTES = [
+        {"text": "Waste no more time arguing what a good man should be. Be one.", "author": "Marcus Aurelius"},
+        {"text": "You have power over your mind, not outside events. Realise this, and you will find strength.", "author": "Marcus Aurelius"},
+        {"text": "The impediment to action advances action. What stands in the way becomes the way.", "author": "Marcus Aurelius"},
+        {"text": "The best revenge is to be unlike him who performed the injury.", "author": "Marcus Aurelius"},
+        {"text": "He who is brave is free.", "author": "Seneca"},
+        {"text": "While we are postponing, life speeds by.", "author": "Seneca"},
+        {"text": "One who is everywhere is nowhere.", "author": "Seneca"},
+        {"text": "Luck is what happens when preparation meets opportunity.", "author": "Seneca"},
+        {"text": "Difficulties strengthen the mind, as labour does the body.", "author": "Seneca"},
+        {"text": "Character is fate.", "author": "Heraclitus"},
+        {"text": "No man ever steps in the same river twice, for it's not the same river and he's not the same man.", "author": "Heraclitus"},
+        {"text": "The only constant in life is change.", "author": "Heraclitus"},
+        {"text": "One of the penalties for refusing to participate in politics is that you end up being governed by your inferiors.", "author": "Plato"},
+        {"text": "It is the mark of an educated mind to be able to entertain a thought without accepting it.", "author": "Aristotle"},
+        {"text": "The educated differ from the uneducated as much as the living from the dead.", "author": "Aristotle"},
+        {"text": "He who learns but does not think is lost; he who thinks but does not learn is in great danger.", "author": "Confucius"},
+        {"text": "Knowing others is intelligence; knowing yourself is true wisdom.", "author": "Laozi"},
+        {"text": "Seek not that the things which happen should happen as you wish; but wish the things which happen to be as they are.", "author": "Epictetus"},
+        {"text": "The greatest thing in the world is to know how to belong to oneself.", "author": "Michel de Montaigne"},
+        {"text": "Every man carries the whole stamp of the human condition within him.", "author": "Michel de Montaigne"},
+        {"text": "Nothing is so firmly believed as what we least know.", "author": "Michel de Montaigne"},
+        {"text": "It is better to be feared than loved, if you cannot be both.", "author": "Niccolò Machiavelli"},
+        {"text": "This above all: to thine own self be true.", "author": "William Shakespeare"},
+        {"text": "Brevity is the soul of wit.", "author": "William Shakespeare"},
+        {"text": "We know what we are, but know not what we may be.", "author": "William Shakespeare"},
+        {"text": "Cowards die many times before their deaths; the valiant never taste of death but once.", "author": "William Shakespeare"},
+        {"text": "All truths are easy to understand once they are discovered; the point is to discover them.", "author": "Galileo Galilei"},
+        {"text": "The best is the enemy of the good.", "author": "Voltaire"},
+        {"text": "To hold a pen is to be at war.", "author": "Voltaire"},
+        {"text": "The more I read, the more I acquire, the more certain I am that I know nothing.", "author": "Voltaire"},
+        {"text": "Patriotism is the last refuge of a scoundrel.", "author": "Samuel Johnson"},
+        {"text": "The chains of habit are too weak to be felt until they are too strong to be broken.", "author": "Samuel Johnson"},
+        {"text": "Nothing concentrates the mind so wonderfully as the prospect of being hanged in a fortnight.", "author": "Samuel Johnson"},
+        {"text": "Liberty for wolves is death to the lambs.", "author": "Isaiah Berlin"},
+        {"text": "Little else is requisite to carry a state to the highest degree of opulence from the lowest barbarism, but peace, easy taxes, and a tolerable administration of justice.", "author": "Adam Smith"},
+        {"text": "Man is an animal that makes bargains: no other animal does this.", "author": "Adam Smith"},
+        {"text": "Those who would give up essential liberty to purchase a little temporary safety deserve neither liberty nor safety.", "author": "Benjamin Franklin"},
+        {"text": "Well done is better than well said.", "author": "Benjamin Franklin"},
+        {"text": "An investment in knowledge pays the best interest.", "author": "Benjamin Franklin"},
+        {"text": "Life can only be understood backwards; but it must be lived forwards.", "author": "Søren Kierkegaard"},
+        {"text": "The most common form of despair is not being who you are.", "author": "Søren Kierkegaard"},
+        {"text": "There are two ways to be fooled. One is to believe what is not true; the other is to refuse to believe what is true.", "author": "Søren Kierkegaard"},
+        {"text": "Without music, life would be a mistake.", "author": "Friedrich Nietzsche"},
+        {"text": "He who fights with monsters should look to it that he himself does not become a monster.", "author": "Friedrich Nietzsche"},
+        {"text": "There are no facts, only interpretations.", "author": "Friedrich Nietzsche"},
+        {"text": "And those who were seen dancing were thought to be insane by those who could not hear the music.", "author": "Friedrich Nietzsche"},
+        {"text": "Beauty will save the world.", "author": "Fyodor Dostoyevsky"},
+        {"text": "The degree of civilisation in a society can be judged by entering its prisons.", "author": "Fyodor Dostoyevsky"},
+        {"text": "Pain and suffering are always inevitable for a large intelligence and a deep heart.", "author": "Fyodor Dostoyevsky"},
+        {"text": "Everyone thinks of changing the world, but no one thinks of changing himself.", "author": "Leo Tolstoy"},
+        {"text": "Respect was invented to cover the empty place where love should be.", "author": "Leo Tolstoy"},
+        {"text": "The philosophers have only interpreted the world, in various ways. The point is to change it.", "author": "Karl Marx"},
+        {"text": "Men make their own history, but they do not make it as they please.", "author": "Karl Marx"},
+        {"text": "Give me six hours to chop down a tree and I will spend the first four sharpening the axe.", "author": "Abraham Lincoln"},
+        {"text": "Better to remain silent and be thought a fool than to speak out and remove all doubt.", "author": "Abraham Lincoln"},
+        {"text": "Whenever you find yourself on the side of the majority, it is time to pause and reflect.", "author": "Mark Twain"},
+        {"text": "It is easier to fool people than to convince them that they have been fooled.", "author": "Mark Twain"},
+        {"text": "Get your facts first, then you can distort them as you please.", "author": "Mark Twain"},
+        {"text": "A cynic is a man who knows the price of everything and the value of nothing.", "author": "Oscar Wilde"},
+        {"text": "The truth is rarely pure and never simple.", "author": "Oscar Wilde"},
+        {"text": "I can resist everything except temptation.", "author": "Oscar Wilde"},
+        {"text": "A man who does not think for himself does not think at all.", "author": "Oscar Wilde"},
+        {"text": "We are all in the gutter, but some of us are looking at the stars.", "author": "Oscar Wilde"},
+        {"text": "Chance favours the prepared mind.", "author": "Louis Pasteur"},
+        {"text": "It is not the strongest of the species that survives, nor the most intelligent, but the one most responsive to change.", "author": "Charles Darwin"},
+        {"text": "No bird soars too high if he soars with his own wings.", "author": "William Blake"},
+        {"text": "Think where man's glory most begins and ends, and say my glory was I had such friends.", "author": "W. B. Yeats"},
+        {"text": "Things fall apart; the centre cannot hold.", "author": "W. B. Yeats"},
+        {"text": "Education is not the filling of a pail, but the lighting of a fire.", "author": "W. B. Yeats"},
+        {"text": "Treat a man as he is, and he will remain as he is. Treat a man as he could and should be, and he will become as he could and should be.", "author": "Johann Wolfgang von Goethe"},
+        {"text": "Knowing is not enough; we must apply. Willing is not enough; we must do.", "author": "Johann Wolfgang von Goethe"},
+        {"text": "Whatever you can do, or dream you can do, begin it. Boldness has genius, power, and magic in it.", "author": "Johann Wolfgang von Goethe"},
+        {"text": "The price of anything is the amount of life you exchange for it.", "author": "Henry David Thoreau"},
+        {"text": "Our life is frittered away by detail. Simplify, simplify.", "author": "Henry David Thoreau"},
+        {"text": "You cannot find peace by avoiding life.", "author": "Virginia Woolf"},
+        {"text": "Arrange whatever pieces come your way.", "author": "Virginia Woolf"},
+        {"text": "Mistakes are the portals of discovery.", "author": "James Joyce"},
+        {"text": "A book must be the axe for the frozen sea within us.", "author": "Franz Kafka"},
+        {"text": "One must imagine Sisyphus happy.", "author": "Albert Camus"},
+        {"text": "In the depth of winter, I finally learned that within me there lay an invincible summer.", "author": "Albert Camus"},
+        {"text": "We are condemned to be free.", "author": "Jean-Paul Sartre"},
+        {"text": "The past is never dead. It is not even past.", "author": "William Faulkner"},
+        {"text": "The only journey is the one within.", "author": "Rainer Maria Rilke"},
+        {"text": "Don't tell me the moon is shining; show me the glint of light on broken glass.", "author": "Anton Chekhov"},
+        {"text": "If you only read the books that everyone else is reading, you can only think what everyone else is thinking.", "author": "Haruki Murakami"},
+        {"text": "The real voyage of discovery consists not in seeking new landscapes, but in having new eyes.", "author": "Marcel Proust"},
+        {"text": "There is nothing noble in being superior to your fellow man; true nobility is being superior to your former self.", "author": "Ernest Hemingway"},
+        {"text": "Courage is grace under pressure.", "author": "Ernest Hemingway"},
+        {"text": "The world breaks everyone, and afterward, some are strong at the broken places.", "author": "Ernest Hemingway"},
+        {"text": "The test of a first-rate intelligence is the ability to hold two opposed ideas in mind at the same time.", "author": "F. Scott Fitzgerald"},
+        {"text": "Time forks perpetually toward innumerable futures.", "author": "Jorge Luis Borges"},
+        {"text": "Only those who will risk going too far can possibly find out how far one can go.", "author": "T. S. Eliot"},
+        {"text": "Be regular and orderly in your life, so that you may be violent and original in your work.", "author": "Gustave Flaubert"},
+        {"text": "Political language is designed to make lies sound truthful and murder respectable.", "author": "George Orwell"},
+        {"text": "The most effective way to destroy people is to deny and obliterate their own understanding of their history.", "author": "George Orwell"},
+        {"text": "All animals are equal, but some animals are more equal than others.", "author": "George Orwell"},
+        {"text": "A lie gets halfway around the world before the truth has a chance to get its trousers on.", "author": "Winston Churchill"},
+        {"text": "If you're going through hell, keep going.", "author": "Winston Churchill"},
+        {"text": "Success consists of going from failure to failure without loss of enthusiasm.", "author": "Winston Churchill"},
+        {"text": "To improve is to change; to be perfect is to change often.", "author": "Winston Churchill"},
+        {"text": "The only thing we have to fear is fear itself.", "author": "Franklin D. Roosevelt"},
+        {"text": "Ask not what your country can do for you — ask what you can do for your country.", "author": "John F. Kennedy"},
+        {"text": "The time is always right to do what is right.", "author": "Martin Luther King Jr."},
+        {"text": "Darkness cannot drive out darkness; only light can do that.", "author": "Martin Luther King Jr."},
+        {"text": "Freedom is never voluntarily given by the oppressor; it must be demanded by the oppressed.", "author": "Martin Luther King Jr."},
+        {"text": "The arc of the moral universe is long, but it bends toward justice.", "author": "Theodore Parker"},
+        {"text": "It always seems impossible until it is done.", "author": "Nelson Mandela"},
+        {"text": "I never lose. I either win or learn.", "author": "Nelson Mandela"},
+        {"text": "Education is the most powerful weapon which you can use to change the world.", "author": "Nelson Mandela"},
+        {"text": "Not everything that is faced can be changed, but nothing can be changed until it is faced.", "author": "James Baldwin"},
+        {"text": "If you have some power, then your job is to empower somebody else.", "author": "Toni Morrison"},
+        {"text": "Hope is not a feeling of certainty that everything ends well. Hope is just a feeling that life and work have meaning.", "author": "Václav Havel"},
+        {"text": "The most radical revolutionary will become a conservative the day after the revolution.", "author": "Hannah Arendt"},
+        {"text": "There are no dangerous thoughts; thinking itself is dangerous.", "author": "Hannah Arendt"},
+        {"text": "The good life is one inspired by love and guided by knowledge.", "author": "Bertrand Russell"},
+        {"text": "The fundamental cause of trouble in the world today is that the stupid are cocksure while the intelligent are full of doubt.", "author": "Bertrand Russell"},
+        {"text": "The most savage controversies are those about matters as to which there is no good evidence either way.", "author": "Bertrand Russell"},
+        {"text": "What can be said at all can be said clearly, and what one cannot speak about one must pass over in silence.", "author": "Ludwig Wittgenstein"},
+        {"text": "If a lion could speak, we could not understand him.", "author": "Ludwig Wittgenstein"},
+        {"text": "In the long run we are all dead.", "author": "John Maynard Keynes"},
+        {"text": "When the facts change, I change my mind. What do you do, sir?", "author": "John Maynard Keynes"},
+        {"text": "The first principle is that you must not fool yourself — and you are the easiest person to fool.", "author": "Richard Feynman"},
+        {"text": "Nothing in life is to be feared, it is only to be understood.", "author": "Marie Curie"},
+        {"text": "We can only see a short distance ahead, but we can see plenty there that needs to be done.", "author": "Alan Turing"},
+        {"text": "Don't play what's there, play what's not there.", "author": "Miles Davis"},
+        {"text": "It takes a long time to play like yourself.", "author": "Miles Davis"},
+        {"text": "There is a crack in everything. That's how the light gets in.", "author": "Leonard Cohen"},
+        {"text": "I don't know where I'm going from here, but I promise it won't be boring.", "author": "David Bowie"},
+        {"text": "If you are first you are first. If you are second, you are nothing.", "author": "Bill Shankly"},
+        {"text": "Some people believe football is a matter of life and death. I am very disappointed with that attitude. I can assure you it is much, much more important than that.", "author": "Bill Shankly"},
+        {"text": "Rome wasn't built in a day, but I wasn't on that particular job.", "author": "Brian Clough"},
+        {"text": "Every disadvantage has its advantage.", "author": "Johan Cruyff"},
+        {"text": "Playing football is very simple, but playing simple football is the hardest thing there is.", "author": "Johan Cruyff"},
+        {"text": "Float like a butterfly, sting like a bee.", "author": "Muhammad Ali"},
+        {"text": "Service to others is the rent you pay for your room here on earth.", "author": "Muhammad Ali"},
+        {"text": "The man who has no imagination has no wings.", "author": "Muhammad Ali"},
+        {"text": "The man who can drive himself further once the effort gets painful is the man who will win.", "author": "Roger Bannister"},
+        {"text": "Being second is to be the first of the ones who lose.", "author": "Ayrton Senna"},
+        {"text": "Form follows function.", "author": "Louis Sullivan"},
+        {"text": "Less is more.", "author": "Ludwig Mies van der Rohe"},
+        {"text": "The details are not the details. They make the design.", "author": "Charles Eames"},
+        {"text": "Simplicity is the ultimate sophistication.", "author": "Leonardo da Vinci"},
+        {"text": "Show me a sane man and I will cure him for you.", "author": "Carl Jung"},
+        {"text": "Until you make the unconscious conscious, it will direct your life and you will call it fate.", "author": "Carl Jung"},
+        {"text": "Who looks outside, dreams; who looks inside, awakes.", "author": "Carl Jung"},
+        {"text": "History is a set of lies agreed upon.", "author": "Napoleon Bonaparte"},
+        {"text": "Never interrupt your enemy when he is making a mistake.", "author": "Napoleon Bonaparte"},
+        {"text": "Impossible is a word to be found only in the dictionary of fools.", "author": "Napoleon Bonaparte"},
+        {"text": "The reasonable man adapts himself to the world; the unreasonable one persists in trying to adapt the world to himself. Therefore all progress depends on the unreasonable man.", "author": "George Bernard Shaw"},
+        {"text": "A room without books is like a body without a soul.", "author": "Marcus Tullius Cicero"},
+        {"text": "The more you know, the more you know you don't know.", "author": "Aristotle"},
+        {"text": "Read not to contradict and confute, nor to believe and take for granted, but to weigh and consider.", "author": "Francis Bacon"},
+        {"text": "Knowledge is power.", "author": "Francis Bacon"},
+        {"text": "The unexamined life is not worth living.", "author": "Socrates"},
+        {"text": "There is only one good, knowledge, and one evil, ignorance.", "author": "Socrates"},
+        {"text": "I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.", "author": "Maya Angelou"},
+        {"text": "There is no greater agony than bearing an untold story inside you.", "author": "Maya Angelou"},
+        {"text": "A society grows great when old men plant trees whose shade they know they shall never sit in.", "author": "Greek Proverb"},
+        {"text": "Do not go where the path may lead, go instead where there is no path and leave a trail.", "author": "Ralph Waldo Emerson"},
+        {"text": "What lies behind us and what lies before us are tiny matters compared to what lies within us.", "author": "Ralph Waldo Emerson"},
+        {"text": "Foolish consistency is the hobgoblin of little minds.", "author": "Ralph Waldo Emerson"},
+        {"text": "Beauty is truth, truth beauty — that is all ye know on earth, and all ye need to know.", "author": "John Keats"},
+        {"text": "Not all those who wander are lost.", "author": "J. R. R. Tolkien"},
+        {"text": "Management is doing things right; leadership is doing the right things.", "author": "Peter Drucker"},
+        {"text": "Culture eats strategy for breakfast.", "author": "Peter Drucker"},
+        {"text": "A little learning is a dangerous thing; drink deep, or taste not the Pierian spring.", "author": "Alexander Pope"},
+        {"text": "The best time to plant a tree was twenty years ago. The second best time is now.", "author": "Chinese Proverb"},
+        {"text": "Fall seven times, stand up eight.", "author": "Japanese Proverb"},
+        {"text": "I am not afraid of an army of lions led by a sheep; I am afraid of an army of sheep led by a lion.", "author": "Alexander the Great"},
+        {"text": "History is a gallery of pictures in which there are few originals and many copies.", "author": "Alexis de Tocqueville"},
+        {"text": "The health of a democratic society may be measured by the quality of functions performed by private citizens.", "author": "Alexis de Tocqueville"},
+        {"text": "Great minds discuss ideas; average minds discuss events; small minds discuss people.", "author": "Eleanor Roosevelt"},
+        {"text": "No one can make you feel inferior without your consent.", "author": "Eleanor Roosevelt"},
+        {"text": "The future belongs to those who believe in the beauty of their dreams.", "author": "Eleanor Roosevelt"},
+        {"text": "Champions keep playing until they get it right.", "author": "Billie Jean King"},
+        {"text": "You miss 100 per cent of the shots you don't take.", "author": "Wayne Gretzky"},
+        {"text": "I skate to where the puck is going to be, not where it has been.", "author": "Wayne Gretzky"},
+        {"text": "Difficulties are just things to overcome, after all.", "author": "Ernest Shackleton"},
+        {"text": "The most important thing in communication is hearing what isn't said.", "author": "Peter Drucker"},
+        {"text": "In three words I can sum up everything I've learned about life: it goes on.", "author": "Robert Frost"},
+        {"text": "History repeats itself, first as tragedy, second as farce.", "author": "Karl Marx"},
+        {"text": "To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.", "author": "Ralph Waldo Emerson"},
+        {"text": "Imagination is more important than knowledge. For knowledge is limited, whereas imagination encircles the world.", "author": "Albert Einstein"},
+        {"text": "A people that elect corrupt politicians are not victims but accomplices.", "author": "George Orwell"},
+        {"text": "The whole problem with the world is that fools and fanatics are always so certain of themselves, and wiser people so full of doubts.", "author": "Bertrand Russell"},
+        {"text": "It is not the man who has too little, but the man who craves more, that is poor.", "author": "Seneca"},
+        {"text": "Don't explain your philosophy. Embody it.", "author": "Epictetus"},
+        {"text": "Make the best use of what is in your power, and take the rest as it happens.", "author": "Epictetus"},
+        {"text": "First say to yourself what you would be; and then do what you have to do.", "author": "Epictetus"},
+        {"text": "The curious paradox is that when I accept myself just as I am, then I can change.", "author": "Carl Rogers"},
+        {"text": "Whoever fights monsters should see to it that in the process he does not become a monster.", "author": "Friedrich Nietzsche"},
+        {"text": "The higher we soar, the smaller we appear to those who cannot fly.", "author": "Friedrich Nietzsche"},
+        {"text": "Not I, but the city teaches.", "author": "Socrates"},
+        {"text": "Buy when there's blood in the streets, even if the blood is your own.", "author": "Baron Rothschild"},
+        {"text": "Price is what you pay. Value is what you get.", "author": "Warren Buffett"},
+        {"text": "It's far better to buy a wonderful company at a fair price than a fair company at a wonderful price.", "author": "Warren Buffett"},
+        {"text": "Rule No. 1: Never lose money. Rule No. 2: Never forget Rule No. 1.", "author": "Warren Buffett"},
+        {"text": "The secret of getting ahead is getting started.", "author": "Mark Twain"},
+        {"text": "You become what you think about most of the time.", "author": "Earl Nightingale"},
+        {"text": "If your actions inspire others to dream more, learn more, do more and become more, you are a leader.", "author": "John Quincy Adams"},
+        {"text": "The two most important days in your life are the day you are born and the day you find out why.", "author": "Mark Twain"},
+        {"text": "Success is not final, failure is not fatal: it is the courage to continue that counts.", "author": "Winston Churchill"},
+        {"text": "Do what you can, with what you have, where you are.", "author": "Theodore Roosevelt"},
+        {"text": "Speak softly and carry a big stick.", "author": "Theodore Roosevelt"},
+        {"text": "Far better it is to dare mighty things, to win glorious triumphs, even though chequered by failure.", "author": "Theodore Roosevelt"},
+        {"text": "Optimism is the faith that leads to achievement. Nothing can be done without hope and confidence.", "author": "Helen Keller"},
+        {"text": "The only way to do great work is to love what you do.", "author": "Steve Jobs"},
+        {"text": "Stay hungry, stay foolish.", "author": "Stewart Brand"},
+        {"text": "An eye for an eye only ends up making the whole world blind.", "author": "Mahatma Gandhi"},
+        {"text": "Be the change you wish to see in the world.", "author": "Mahatma Gandhi"},
+        {"text": "Speak only if it improves upon the silence.", "author": "Mahatma Gandhi"},
+        {"text": "The greatest glory in living lies not in never falling, but in rising every time we fall.", "author": "Nelson Mandela"},
+        {"text": "Not everything that counts can be counted, and not everything that can be counted counts.", "author": "William Bruce Cameron"},
+        {"text": "A man who dares to waste one hour of time has not discovered the value of life.", "author": "Charles Darwin"},
+        {"text": "In theory there is no difference between theory and practice. In practice there is.", "author": "Yogi Berra"},
+        {"text": "It ain't over till it's over.", "author": "Yogi Berra"},
+        {"text": "Whenever I hear anyone arguing for slavery, I feel a strong impulse to see it tried on him personally.", "author": "Abraham Lincoln"},
+        {"text": "The ballot is stronger than the bullet.", "author": "Abraham Lincoln"},
+        {"text": "I never had a policy; I have just tried to do my very best each and every day.", "author": "Abraham Lincoln"},
+        {"text": "To me, boxing is like a ballet, except there's no music, no choreography, and the dancers hit each other.", "author": "Jack Handey"},
+        {"text": "The aim of art is to represent not the outward appearance of things, but their inward significance.", "author": "Aristotle"},
+        {"text": "He who has a why to live can bear almost any how.", "author": "Friedrich Nietzsche"},
+        {"text": "Without deviation from the norm, progress is not possible.", "author": "Frank Zappa"},
+        {"text": "Some painters transform the sun into a yellow spot; others transform a yellow spot into the sun.", "author": "Pablo Picasso"},
+        {"text": "Everything you can imagine is real.", "author": "Pablo Picasso"},
+        {"text": "Others have seen what is and asked why. I have seen what could be and asked why not.", "author": "Pablo Picasso"},
+        {"text": "What we think, we become.", "author": "Buddha"},
+        {"text": "Three things cannot be long hidden: the sun, the moon, and the truth.", "author": "Buddha"},
+        {"text": "The mind is everything. What you think you become.", "author": "Buddha"},
+        {"text": "It does not matter how slowly you go as long as you do not stop.", "author": "Confucius"},
+        {"text": "Our greatest glory is not in never falling, but in rising every time we fall.", "author": "Confucius"},
+        {"text": "When you see a good person, think of becoming like her/him. When you see someone not so good, reflect on your own weak points.", "author": "Confucius"},
+    ]
+    day_hash = int(hashlib.md5(TODAY.encode()).hexdigest(), 16)
+    q = QUOTES[day_hash % len(QUOTES)]
+    text = q['text'].replace('"', '\\"').replace("'", "\\'")
+    author = q['author'].replace('"', '\\"')
+    js = f'var QUOTE_DATA = {{\n  date: "{TODAY}",\n  text: "{text}",\n  author: "{author}"\n}};'
+    log(f"  ✓ Quote selected: {q['author']}")
+    return js
 
 
 def gen_recipes():
@@ -1522,9 +1752,6 @@ def main():
         if js is None and filename == 'curiosity-data.js':
             log("  Retrying curiosity corner with extended timeout...")
             js = gen_curiosity()
-        if js is None and filename == 'rics-data.js':
-            log("  Retrying RICS study with extended timeout...")
-            js = gen_rics()
         if js is None and filename == 'suggested-recipes-data.js':
             log("  Retrying recipes with extended timeout...")
             js = gen_recipes()
