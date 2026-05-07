@@ -750,6 +750,7 @@
     function renderRoutine(cat) {
       var el = document.getElementById('sub-' + cat);
       if (!el) return;
+      var isCardio = cat === 'cardio';
       var list = routines[cat] || [];
       var html = '';
 
