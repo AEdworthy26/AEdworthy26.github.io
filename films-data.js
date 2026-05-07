@@ -1,18 +1,18 @@
 // films-data.js
-// Auto-updated 2026-05-06 — do not edit manually
+// Auto-updated 2026-05-07 — do not edit manually
 
 var FILMS_DATA = {
-  date: "2026-05-06",
+  date: "2026-05-07",
   film: {
-    title: "Eat Drink Man Woman",
-    director: "Ang Lee",
-    year: 1994,
-    genres: ["Drama", "Comedy", "Romance"],
-    desc: "A widowed master chef in Taipei prepares elaborate Sunday dinners for his three adult daughters, using food as the only language through which he can express love in a household grown quietly distant. Ang Lee orchestrates a feast of generational tension, longing, and surprise — each daughter carrying her own secret life that will upend the family\'s careful routines. The film is ravishing to watch, its cooking sequences filmed with an almost sacred attention that makes hunger feel inseparable from emotional yearning. Beneath its warm, comedic surface runs a deeply moving meditation on how families communicate without speaking and how late in life it is never too late to begin again.",
-    cast: ["Sihung Lung", "Kuei-Mei Yang", "Chien-Lien Wu"],
-    rating: 96,
+    title: "The Straight Story",
+    director: "David Lynch",
+    year: 1999,
+    genres: ["Drama", "Road Movie"],
+    desc: "An elderly man named Alvin Straight travels across Iowa and Wisconsin on a lawnmower to visit his ailing, estranged brother — and the result is one of the most unexpectedly tender films ever made. David Lynch, known for surrealism and darkness, here strips everything down to its quietest essence: unhurried landscapes, weathered faces, and the slow accumulation of a life honestly lived. Richard Farnsworth delivers a performance of breathtaking, unshowy grace, earning an Academy Award nomination at 79 years old in what would be his final major role. The film asks what it means to reconcile with the past and to keep moving forward when every mile costs you something, and it answers with extraordinary warmth and patience. A G-rated Lynch film sounds like a paradox, but 'The Straight Story' is proof that restraint can be its own kind of revelation.",
+    cast: ["Richard Farnsworth", "Sissy Spacek", "Harry Dean Stanton"],
+    rating: 95,
     ratingSource: "Rotten Tomatoes",
-    ratingExtra: "Academy Award Nominee, Best Foreign Language Film",
-    posterUrl: "https://upload.wikimedia.org/wikipedia/en/b/b4/Eat_Drink_Man_Woman.jpg"
+    ratingExtra: "1 Academy Award Nomination",
+    posterUrl: "https://upload.wikimedia.org/wikipedia/en/8/8a/The_Straight_Story_poster.jpg"
   }
 };

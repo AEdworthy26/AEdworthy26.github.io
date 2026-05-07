@@ -1,180 +1,208 @@
 // suggested-recipes-data.js
-// Auto-updated 2026-05-06 — do not edit manually
+// Auto-updated 2026-05-07 — do not edit manually
 
 window.SUGGESTED_RECIPES = [
   {
     id: "sug1",
-    title: "Greek Lamb-Free Gigantes Plaki with Roasted Tomatoes & Smoky Feta",
-    category: "Lunch",
+    title: "Venetian Sarde in Saor — Sweet & Sour Sardines with Pine Nuts, Raisins & Polenta",
+    category: "Dinner",
     time: "50 mins",
     serves: "4",
-    desc: "Giant butter beans slow-baked in a rich, garlicky tomato sauce with smoked paprika and oregano, finished with crumbled feta and a drizzle of good olive oil. This is Greek taverna cooking at its most satisfying — humble ingredients transformed into something deeply savoury and comforting. Serve with crusty bread to mop up every drop of that glossy, herb-scented sauce.",
-    emoji: "🫘",
-    image: "https://images.pexels.com/photos/5863607/pexels-photo-5863607.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    desc: "One of Venice\'s oldest and most beloved dishes, sarde in saor layers crispy fried sardines with silky agrodolce onions, plump raisins and toasted pine nuts — a flavour combination that is deeply savoury, sweet, sour and completely addictive. Served over soft, creamy polenta, this is rustic Italian cooking at its most soulful and surprising.",
+    emoji: "🐟",
+    image: "https://images.unsplash.com/photo-1682496039948-ab599c31a8e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxWZW5ldGlhbiUyMFNhcmRlJTIwaW4lMjBTYW9yJTIwJUUyJTgwJTk0JTIwU3dlZXQlMjAlMjYlMjBTb3VyJTIwU2FyZGluZXMlMjB3aXRoJTIwUGluZSUyME51dHMlMkMlMjBSYWlzaW5zJTIwJTI2JTIwUG9sZW50YSUyMGZvb2QlMjBkaXNofGVufDB8MHx8fDE3NzgxMzA2Njh8MA&ixlib=rb-4.1.0&q=80&w=1080",
     ingredientGroups: [
       {
-        group: "Main",
+        group: "Sardines",
         items: [
-          { name: "Giant butter beans (jarred or canned, drained)", quantity: 700, unit: "g" },
-          { name: "Olive oil", quantity: 5, unit: "tbsp" },
-          { name: "Brown onion, finely diced", quantity: 2, unit: "" },
-          { name: "Garlic cloves, thinly sliced", quantity: 5, unit: "" },
-          { name: "Celery stalks, finely diced", quantity: 2, unit: "" },
-          { name: "Smoked paprika", quantity: 1.5, unit: "tsp" },
-          { name: "Dried oregano", quantity: 1.5, unit: "tsp" },
-          { name: "Dried chilli flakes", quantity: 0.5, unit: "tsp" },
-          { name: "Tin chopped tomatoes", quantity: 400, unit: "g" },
-          { name: "Tomato purée", quantity: 2, unit: "tbsp" },
-          { name: "Runny honey", quantity: 1, unit: "tbsp" },
-          { name: "Vegetable stock", quantity: 150, unit: "ml" },
-          { name: "Salt and black pepper", quantity: 0, unit: "" }
+          { name: "Fresh sardines, gutted and cleaned (or butterflied fillets)", quantity: 600, unit: "g" },
+          { name: "Plain flour, for dusting", quantity: 4, unit: "tbsp" },
+          { name: "Olive oil, for frying", quantity: 5, unit: "tbsp" },
+          { name: "Flaky sea salt", quantity: 1, unit: "tsp" },
+          { name: "Black pepper, freshly ground", quantity: 0.5, unit: "tsp" }
+        ]
+      },
+      {
+        group: "Saor (Sweet & Sour Onion Sauce)",
+        items: [
+          { name: "Large white onions, very thinly sliced", quantity: 4, unit: "" },
+          { name: "Olive oil", quantity: 4, unit: "tbsp" },
+          { name: "White wine vinegar", quantity: 100, unit: "ml" },
+          { name: "Dry white wine", quantity: 100, unit: "ml" },
+          { name: "Raisins or sultanas", quantity: 50, unit: "g" },
+          { name: "Pine nuts, lightly toasted", quantity: 50, unit: "g" },
+          { name: "Caster sugar", quantity: 1, unit: "tsp" },
+          { name: "Bay leaves", quantity: 2, unit: "" },
+          { name: "Whole cloves", quantity: 3, unit: "" }
+        ]
+      },
+      {
+        group: "Soft Polenta",
+        items: [
+          { name: "Quick-cook polenta", quantity: 200, unit: "g" },
+          { name: "Whole milk", quantity: 500, unit: "ml" },
+          { name: "Water", quantity: 500, unit: "ml" },
+          { name: "Unsalted butter", quantity: 40, unit: "g" },
+          { name: "Parmesan, finely grated", quantity: 40, unit: "g" },
+          { name: "Salt", quantity: 1.5, unit: "tsp" }
         ]
       },
       {
         group: "To Finish",
         items: [
-          { name: "Feta cheese, crumbled", quantity: 150, unit: "g" },
           { name: "Fresh flat-leaf parsley, roughly chopped", quantity: 1, unit: "handful" },
-          { name: "Extra virgin olive oil, to drizzle", quantity: 2, unit: "tbsp" },
-          { name: "Crusty sourdough bread, to serve", quantity: 4, unit: "slices" }
+          { name: "Lemon, for squeezing", quantity: 1, unit: "" }
         ]
       }
     ],
     substitutes: [
-      { ingredient: "Giant butter beans", alternatives: ["Cannellini beans", "Borlotti beans"] },
-      { ingredient: "Feta cheese", alternatives: ["Ricotta salata", "Goat\'s cheese"] },
-      { ingredient: "Runny honey", alternatives: ["Maple syrup", "A pinch of sugar"] }
+      { ingredient: "Fresh sardines", alternatives: ["Mackerel fillets", "Fresh herring fillets"] },
+      { ingredient: "White wine vinegar", alternatives: ["Cider vinegar", "Prosecco vinegar"] },
+      { ingredient: "Quick-cook polenta", alternatives: ["Instant polenta", "Creamy mashed potato"] },
+      { ingredient: "Pine nuts", alternatives: ["Flaked almonds", "Roughly chopped walnuts"] }
     ],
     instructions: [
-      "Preheat your oven to 190°C (170°C fan). In a wide, ovenproof pan or shallow casserole, warm 4 tablespoons of olive oil over a medium heat. Add the onion and celery with a good pinch of salt and cook gently for 10–12 minutes, stirring occasionally, until completely soft, golden, and sweet — don\'t rush this step, it forms the flavour base.",
-      "Add the garlic, smoked paprika, dried oregano, and chilli flakes. Stir and cook for another 2 minutes until fragrant. Add the tomato purée and cook for a further minute, letting it catch slightly on the base of the pan for a deeper flavour.",
-      "Pour in the tinned tomatoes and vegetable stock. Stir in the honey, season generously with salt and black pepper, and bring to a gentle simmer. Cook for 5 minutes to let the sauce thicken slightly, then fold in the drained butter beans, turning them gently so they\'re well coated.",
-      "Transfer to the oven (or keep in the same ovenproof pan) and bake uncovered for 25–30 minutes, until the sauce is thick, glossy, and slightly caramelised at the edges. The beans on top should look a little blistered and golden.",
-      "Remove from the oven and immediately scatter over the crumbled feta and chopped parsley. Drizzle generously with the remaining extra virgin olive oil. Serve straight from the dish with plenty of crusty bread."
+      "Make the saor first — heat 4 tbsp olive oil in a large, wide pan over a low-medium heat. Add the thinly sliced onions with the bay leaves, cloves and a good pinch of salt. Cook very slowly, stirring occasionally, for 20–25 minutes until the onions are completely soft, pale gold and jammy — do not rush this step.",
+      "Add the white wine to the onions and let it bubble for 2 minutes, then pour in the white wine vinegar. Add the sugar, raisins and half the pine nuts. Stir well and simmer gently for 5 minutes until slightly thickened and fragrant. Taste and adjust — it should be tangy, slightly sweet and deeply savoury. Remove the bay leaves and cloves. Set aside.",
+      "Pat the sardines very dry with kitchen paper — this is key to getting a good crisp. Season all over with salt and pepper, then dust lightly in plain flour, shaking off any excess.",
+      "Heat a generous pour of olive oil in a large frying pan over a high heat until shimmering. Fry the sardines in batches for 2–3 minutes per side until golden and crispy — don\'t crowd the pan. Drain on kitchen paper.",
+      "Make the polenta: bring the milk and water to a gentle boil in a large saucepan with the salt. Pour in the polenta in a steady stream, whisking constantly to prevent lumps. Switch to a wooden spoon and stir over a medium-low heat for 5–8 minutes (or per packet instructions) until thick and creamy. Beat in the butter and Parmesan. Keep warm, adding a splash more milk if it stiffens.",
+      "To assemble: spoon generous portions of polenta into wide shallow bowls. Lay 2–3 crispy sardines over each portion, then spoon the warm saor onions generously over the top. Scatter the remaining toasted pine nuts and fresh parsley. Squeeze over a little lemon and serve immediately."
     ]
   },
   {
     id: "sug2",
-    title: "Szechuan-Style Dan Dan Noodles with Minced Pork & Crispy Chilli Oil",
-    category: "Dinner",
-    time: "35 mins",
-    serves: "4",
-    desc: "One of Sichuan\'s most iconic street foods — springy wheat noodles coated in a deeply savoury, nutty, and mouth-tinglingly spicy sauce made from tahini, soy, black vinegar, and chilli oil, topped with a sticky five-spice pork mince. The contrast of textures and that characteristic ma la (numbing-hot) sensation make this one of the most addictive bowls of noodles you can make at home. It comes together in under 40 minutes and tastes like pure fire.",
-    emoji: "🍜",
-    image: "https://images.unsplash.com/photo-1777476588739-a5285445a0c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTemVjaHVhbi1TdHlsZSUyMERhbiUyMERhbiUyME5vb2RsZXMlMjB3aXRoJTIwTWluY2VkJTIwUG9yayUyMCUyNiUyMENyaXNweSUyMENoaWxsaSUyME9pbCUyMGZvb2QlMjBkaXNofGVufDB8MHx8fDE3NzgwNDQyNjh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    title: "Colombian Bandeja Paisa — Rice, Crispy Chicharrón, Black Beans, Fried Egg & Ají Verde",
+    category: "Lunch",
+    time: "55 mins",
+    serves: "2",
+    desc: "Colombia\'s most iconic platter, bandeja paisa is the ultimate feast-on-a-plate: crispy pork belly strips, silky black beans, fluffy white rice, a perfectly fried egg and a bright, herbaceous ají verde sauce that cuts through everything beautifully. It\'s bold, satisfying, deeply comforting and comes together from mostly pantry staples — the ají verde alone is worth making by the jarful.",
+    emoji: "🍳",
+    image: "https://images.pexels.com/photos/34130182/pexels-photo-34130182.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     ingredientGroups: [
       {
-        group: "Pork Topping",
+        group: "Crispy Chicharrón",
         items: [
-          { name: "Minced pork (20% fat)", quantity: 400, unit: "g" },
-          { name: "Vegetable oil", quantity: 1, unit: "tbsp" },
-          { name: "Shaoxing rice wine", quantity: 2, unit: "tbsp" },
-          { name: "Light soy sauce", quantity: 1, unit: "tbsp" },
-          { name: "Five-spice powder", quantity: 0.5, unit: "tsp" },
-          { name: "Dark soy sauce", quantity: 1, unit: "tsp" }
+          { name: "Pork belly strips, skin on, about 2cm thick", quantity: 300, unit: "g" },
+          { name: "Salt", quantity: 1, unit: "tsp" },
+          { name: "Ground cumin", quantity: 0.5, unit: "tsp" },
+          { name: "Bicarbonate of soda (rubbed on the skin)", quantity: 0.5, unit: "tsp" },
+          { name: "Neutral oil, for frying", quantity: 2, unit: "tbsp" }
         ]
       },
       {
-        group: "Dan Dan Sauce",
+        group: "Black Beans",
         items: [
-          { name: "Tahini (or Chinese sesame paste)", quantity: 4, unit: "tbsp" },
-          { name: "Light soy sauce", quantity: 3, unit: "tbsp" },
-          { name: "Chinese black vinegar (Chinkiang)", quantity: 2, unit: "tbsp" },
-          { name: "Chilli oil (with sediment)", quantity: 3, unit: "tbsp" },
-          { name: "Toasted sesame oil", quantity: 1, unit: "tbsp" },
-          { name: "Garlic cloves, finely grated", quantity: 3, unit: "" },
-          { name: "Fresh ginger, finely grated", quantity: 1, unit: "tsp" },
-          { name: "Caster sugar", quantity: 1, unit: "tsp" },
-          { name: "Hot noodle cooking water", quantity: 80, unit: "ml" }
+          { name: "Tinned black beans, drained and rinsed", quantity: 400, unit: "g" },
+          { name: "White onion, finely diced", quantity: 0.5, unit: "" },
+          { name: "Garlic cloves, minced", quantity: 2, unit: "" },
+          { name: "Ground cumin", quantity: 1, unit: "tsp" },
+          { name: "Smoked paprika", quantity: 0.5, unit: "tsp" },
+          { name: "Chicken or vegetable stock", quantity: 150, unit: "ml" },
+          { name: "Olive oil", quantity: 1, unit: "tbsp" },
+          { name: "Salt and pepper", quantity: 1, unit: "pinch" }
         ]
       },
       {
-        group: "Noodles & Garnish",
+        group: "White Rice",
         items: [
-          { name: "Fresh wheat noodles (or dried medium egg noodles)", quantity: 400, unit: "g" },
-          { name: "Pak choi or baby spinach", quantity: 200, unit: "g" },
-          { name: "Spring onions, finely sliced", quantity: 4, unit: "" },
-          { name: "Roasted peanuts, roughly crushed", quantity: 60, unit: "g" },
-          { name: "Sichuan peppercorns, toasted and ground", quantity: 0.5, unit: "tsp" }
-        ]
-      }
-    ],
-    substitutes: [
-      { ingredient: "Minced pork", alternatives: ["Minced chicken", "Crumbled firm tofu for vegetarian"] },
-      { ingredient: "Chinese black vinegar", alternatives: ["Rice wine vinegar with a pinch of sugar", "Balsamic vinegar (use half the amount)"] },
-      { ingredient: "Fresh wheat noodles", alternatives: ["Dried spaghetti", "Ramen noodles"] },
-      { ingredient: "Sichuan peppercorns", alternatives: ["A small pinch of white pepper — flavour differs but works", "Omit if unavailable"] }
-    ],
-    instructions: [
-      "Start the pork: heat vegetable oil in a wok or heavy frying pan over a high heat. Add the minced pork and press it into the pan — don\'t stir immediately. Let it sit for 2–3 minutes until it develops a deep brown crust, then break it up. Add the Shaoxing wine and let it sizzle away, then add both soy sauces and the five-spice. Stir-fry for another 3–4 minutes until the pork is caramelised, sticky, and fragrant. Set aside.",
-      "Make the sauce: in a bowl or jug, whisk together the tahini, light soy sauce, black vinegar, chilli oil, sesame oil, grated garlic, ginger, and sugar until smooth. It will look thick — that\'s correct. Set aside and don\'t add the cooking water yet.",
-      "Cook the noodles according to packet instructions in a large pot of boiling water. In the last minute, add the pak choi or spinach to wilt. Reserve 80ml of the starchy cooking water before draining. Drain the noodles and greens well.",
-      "Loosen the sauce with the hot noodle cooking water, whisking until it becomes a pourable, silky consistency. Divide the sauce between four bowls, then add the noodles and greens on top.",
-      "Spoon the caramelised pork mince over the noodles, then scatter with spring onions, crushed peanuts, and a pinch of ground Sichuan peppercorn. Add an extra drizzle of chilli oil if you like heat. Toss everything together at the table before eating."
-    ]
-  },
-  {
-    id: "sug3",
-    title: "Cajun Blackened Salmon with Corn, Avocado & Lime Salsa",
-    category: "Dinner",
-    time: "30 mins",
-    serves: "4",
-    desc: "Salmon fillets coated in a smoky-spiced Cajun crust, seared until deeply blackened and crisp outside while staying butter-soft within, served over a bright, punchy salsa of charred sweetcorn, avocado, red onion, and lime. This is bold, joyful American Deep South cooking that feels fresh and vibrant thanks to the contrast between the spiced fish and the cool, zesty salsa. Ready in half an hour and absolutely knockout.",
-    emoji: "🐟",
-    image: "https://images.unsplash.com/photo-1660180751539-dcfae463ef05?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxDYWp1biUyMEJsYWNrZW5lZCUyMFNhbG1vbiUyMHdpdGglMjBDb3JuJTJDJTIwQXZvY2FkbyUyMCUyNiUyMExpbWUlMjBTYWxzYSUyMGZvb2QlMjBkaXNofGVufDB8MHx8fDE3NzgwNDQyNjl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    ingredientGroups: [
-      {
-        group: "Cajun Spice Rub",
-        items: [
-          { name: "Smoked paprika", quantity: 2, unit: "tsp" },
-          { name: "Garlic powder", quantity: 1, unit: "tsp" },
-          { name: "Onion powder", quantity: 1, unit: "tsp" },
-          { name: "Dried thyme", quantity: 0.5, unit: "tsp" },
-          { name: "Dried oregano", quantity: 0.5, unit: "tsp" },
-          { name: "Cayenne pepper", quantity: 0.75, unit: "tsp" },
-          { name: "Ground black pepper", quantity: 1, unit: "tsp" },
-          { name: "Fine salt", quantity: 1, unit: "tsp" }
+          { name: "Long-grain white rice", quantity: 150, unit: "g" },
+          { name: "Water", quantity: 280, unit: "ml" },
+          { name: "Salt", quantity: 0.5, unit: "tsp" },
+          { name: "Neutral oil", quantity: 1, unit: "tsp" }
         ]
       },
       {
-        group: "Salmon",
+        group: "Ají Verde",
         items: [
-          { name: "Skin-on salmon fillets", quantity: 4, unit: "" },
-          { name: "Neutral oil (sunflower or vegetable)", quantity: 2, unit: "tbsp" }
-        ]
-      },
-      {
-        group: "Corn & Avocado Salsa",
-        items: [
-          { name: "Sweetcorn cobs (or 350g tinned sweetcorn, drained)", quantity: 2, unit: "" },
-          { name: "Ripe avocados, diced", quantity: 2, unit: "" },
-          { name: "Red onion, very finely diced", quantity: 0.5, unit: "" },
-          { name: "Fresh red chilli, finely sliced", quantity: 1, unit: "" },
-          { name: "Fresh coriander, roughly chopped", quantity: 1, unit: "large handful" },
-          { name: "Limes, juice and zest", quantity: 2, unit: "" },
-          { name: "Extra virgin olive oil", quantity: 1, unit: "tbsp" },
-          { name: "Salt", quantity: 0, unit: "to taste" }
+          { name: "Large bunch of fresh coriander, leaves and stems", quantity: 1, unit: "" },
+          { name: "Spring onions, roughly chopped", quantity: 3, unit: "" },
+          { name: "Green chilli (jalapeño or serrano), roughly chopped", quantity: 1, unit: "" },
+          { name: "Garlic clove", quantity: 1, unit: "" },
+          { name: "Lime juice", quantity: 2, unit: "tbsp" },
+          { name: "Olive oil", quantity: 3, unit: "tbsp" },
+          { name: "Salt", quantity: 0.5, unit: "tsp" }
         ]
       },
       {
         group: "To Serve",
         items: [
-          { name: "Soured cream or crème fraîche", quantity: 4, unit: "tbsp" },
-          { name: "Lime wedges", quantity: 4, unit: "" }
+          { name: "Eggs", quantity: 2, unit: "" },
+          { name: "Ripe avocado, sliced", quantity: 1, unit: "" },
+          { name: "Butter, for frying eggs", quantity: 10, unit: "g" }
         ]
       }
     ],
     substitutes: [
-      { ingredient: "Salmon fillets", alternatives: ["Cod loins", "Mahi-mahi or haddock"] },
-      { ingredient: "Fresh coriander", alternatives: ["Flat-leaf parsley", "Mint — gives a different but lovely freshness"] },
-      { ingredient: "Fresh sweetcorn", alternatives: ["Tinned sweetcorn, well drained", "Frozen sweetcorn, defrosted and patted dry"] }
+      { ingredient: "Pork belly strips", alternatives: ["Thick-cut streaky bacon", "Pork ribs"] },
+      { ingredient: "Tinned black beans", alternatives: ["Tinned kidney beans", "Tinned pinto beans"] },
+      { ingredient: "Green chilli", alternatives: ["Half a green pepper for milder heat", "Pickled jalapeño"] }
     ],
     instructions: [
-      "Make the salsa first so the flavours can develop: if using fresh corn, hold each cob upright and slice the kernels off with a sharp knife. Heat a dry cast-iron pan or heavy frying pan over a very high heat and add the corn kernels in a single layer. Leave them completely undisturbed for 3–4 minutes until charred and popping. Tip into a bowl. If using tinned corn, dry-fry the same way for 4–5 minutes. Leave to cool for a few minutes.",
-      "Add the diced avocado, red onion, chilli, coriander, lime juice and zest, and olive oil to the corn. Season generously with salt, toss gently to combine, and set aside. Don\'t make this too far in advance or the avocado will discolour.",
-      "Mix all the Cajun spice rub ingredients together in a small bowl. Pat the salmon fillets completely dry with kitchen paper — this is crucial for a good crust. Press the flesh side generously into the spice rub, coating well.",
-      "Heat the neutral oil in your heaviest frying pan (cast iron is ideal) over a high heat until almost smoking. Place the salmon spice-side down and press gently with a spatula. Cook for 3–4 minutes without moving until the crust is very dark and crisp. Carefully flip and cook the skin side for 2–3 minutes more. The fish should still have a little give in the centre — don\'t overcook.",
-      "Serve the blackened salmon immediately alongside a generous spoonful of the corn and avocado salsa, a dollop of soured cream, and a wedge of lime. Eat while the contrast between hot, spiced fish and cool, zesty salsa is at its most vivid."
+      "Prepare the chicharrón: pat the pork belly strips completely dry. Score the skin lightly, then rub the skin side with bicarbonate of soda. Season all over with salt and cumin. Place skin-side down in a cold, dry heavy frying pan and set over a medium heat — starting cold helps render the fat. Cook for 12–15 minutes, pressing down occasionally, until the skin is deeply golden and crackling. Flip and cook the flesh side for 4–5 more minutes. Rest on a wire rack.",
+      "While the pork renders, cook the rice: heat the oil in a small saucepan over medium heat, add the rice and stir for 1 minute until the grains look opaque. Add water and salt, bring to the boil, then cover tightly, reduce to the lowest heat and cook for 12 minutes. Remove from heat and leave covered for 5 minutes, then fluff with a fork.",
+      "Make the black beans: heat olive oil in a small saucepan over medium heat. Sauté the onion for 5 minutes until softened, then add garlic, cumin and smoked paprika and cook for 1 minute. Add the drained black beans and stock. Simmer for 8–10 minutes, stirring and lightly mashing some beans against the side of the pan to create a slightly creamy texture. Season well.",
+      "Make the ají verde: blitz the coriander, spring onions, chilli, garlic, lime juice, olive oil and salt in a small blender or use a stick blender. Blitz until smooth and bright green — taste and adjust lime and salt. It should be punchy, herby and fresh.",
+      "Fry the eggs in butter over a medium heat until the whites are just set but the yolks are still runny. Season with salt and pepper.",
+      "To plate: arrange a mound of rice and a generous spoonful of black beans side by side on each plate. Lean the chicharrón strips against the rice, nestle the fried egg alongside, and fan out the avocado slices. Spoon or drizzle the ají verde generously over everything and serve the rest alongside."
+    ]
+  },
+  {
+    id: "sug3",
+    title: "Turkish Mercimek Çorbası — Red Lentil & Cumin Soup with Burnt Butter, Aleppo Pepper & Warm Flatbread",
+    category: "Dinner",
+    time: "40 mins",
+    serves: "4",
+    desc: "Turkey\'s most beloved everyday soup, mercimek çorbası is a masterclass in how a handful of humble ingredients can produce something genuinely profound. Velvety smooth red lentils are deepened with slow-cooked onion, carrot and warm spices, then finished with a dramatic pour of sizzling burnt butter infused with Aleppo pepper — that final flourish transforms the whole bowl. Serve with warm flatbread for a deeply comforting, fully plant-based dinner.",
+    emoji: "🍲",
+    image: "https://images.unsplash.com/photo-1741026079032-7cb660e44bad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUdXJraXNoJTIwTWVyY2ltZWslMjAlQzMlODdvcmJhcyVDNCVCMSUyMCVFMiU4MCU5NCUyMFJlZCUyMExlbnRpbCUyMCUyNiUyMEN1bWluJTIwU291cCUyMHdpdGglMjBCdXJudCUyMEJ1dHRlciUyQyUyMEFsZXBwbyUyMFBlcHBlciUyMCUyNiUyMFdhcm0lMjBGbGF0YnJlYWQlMjBmb29kJTIwZGlzaHxlbnwwfDB8fHwxNzc4MTMwNjY5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    ingredientGroups: [
+      {
+        group: "Soup Base",
+        items: [
+          { name: "Red split lentils, rinsed", quantity: 300, unit: "g" },
+          { name: "Large white onion, roughly diced", quantity: 1, unit: "" },
+          { name: "Large carrot, roughly diced", quantity: 1, unit: "" },
+          { name: "Garlic cloves, roughly chopped", quantity: 3, unit: "" },
+          { name: "Olive oil", quantity: 3, unit: "tbsp" },
+          { name: "Ground cumin", quantity: 2, unit: "tsp" },
+          { name: "Ground turmeric", quantity: 0.5, unit: "tsp" },
+          { name: "Tomato paste", quantity: 2, unit: "tbsp" },
+          { name: "Vegetable stock", quantity: 1.5, unit: "litres" },
+          { name: "Salt", quantity: 2, unit: "tsp" },
+          { name: "Black pepper", quantity: 0.5, unit: "tsp" }
+        ]
+      },
+      {
+        group: "Burnt Butter Finish",
+        items: [
+          { name: "Unsalted butter", quantity: 50, unit: "g" },
+          { name: "Aleppo pepper (pul biber) or sweet smoked paprika", quantity: 1.5, unit: "tsp" },
+          { name: "Dried mint", quantity: 0.5, unit: "tsp" }
+        ]
+      },
+      {
+        group: "To Serve",
+        items: [
+          { name: "Lemon, cut into wedges", quantity: 1, unit: "" },
+          { name: "Fresh flat-leaf parsley, roughly torn", quantity: 1, unit: "small handful" },
+          { name: "Warm flatbreads or pitta", quantity: 4, unit: "" },
+          { name: "Thick plain yoghurt (optional)", quantity: 4, unit: "tbsp" }
+        ]
+      }
+    ],
+    substitutes: [
+      { ingredient: "Aleppo pepper (pul biber)", alternatives: ["Sweet smoked paprika with a small pinch of chilli flakes", "Ancho chilli flakes"] },
+      { ingredient: "Unsalted butter", alternatives: ["Olive oil for a vegan version", "Ghee for extra depth"] },
+      { ingredient: "Vegetable stock", alternatives: ["Chicken stock for extra richness", "Water with an extra pinch of salt"] }
+    ],
+    instructions: [
+      "Heat the olive oil in a large saucepan over a medium heat. Add the onion and carrot with a good pinch of salt and cook for 8–10 minutes, stirring occasionally, until softened and starting to colour at the edges. Add the garlic and cook for another minute.",
+      "Add the tomato paste, ground cumin and turmeric to the pan. Stir everything together and cook for 2 minutes, letting the tomato paste caramelise slightly against the bottom of the pan — this builds real depth.",
+      "Add the rinsed red lentils and pour in the vegetable stock. Stir well, bring to the boil, then reduce to a steady simmer. Cook uncovered for 20–25 minutes, stirring occasionally, until the lentils are completely tender and beginning to collapse. The soup will look quite thick — that\'s correct.",
+      "Remove from the heat and blend the soup until completely smooth using a stick blender (or carefully in batches in a standing blender). Return to the heat. Thin with a splash more stock or hot water if needed — the ideal consistency is like thick, velvety bisque. Taste and season generously with salt, pepper and a squeeze of lemon.",
+      "Make the burnt butter finish just before serving: melt the butter in a small saucepan over a medium-high heat. Swirl and watch it carefully — after foaming it will begin to turn golden, then deeply nutty brown and smell like hazelnuts. The moment it reaches a rich amber (about 2–3 minutes), remove from the heat immediately and stir in the Aleppo pepper and dried mint. It will sizzle dramatically.",
+      "Ladle the hot soup into bowls. Immediately pour a generous swirl of the crimson Aleppo butter over each bowl. Add a spoonful of yoghurt if using, a scatter of fresh parsley, a squeeze of lemon wedge on the side, and serve with plenty of warm flatbread."
     ]
   }
 ];

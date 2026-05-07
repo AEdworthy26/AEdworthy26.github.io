@@ -3,6 +3,45 @@
 
 var RICS_LOG = [
   {
+    "date": "2026-05-07",
+    "topic": "Overage Mechanisms: Structures, Triggers, Calculation and Enforcement in Residential Land Transactions",
+    "module": "Land Assembly and Joint Ventures",
+    "level": 3,
+    "apc_competency": "Planning and Development Management (Level 3)",
+    "focus": "This lesson examines overage (also known as clawback or uplift) mechanisms in depth \u2014 how they are structured on land-led residential schemes, the principal trigger events used in practice, the calculation methodologies, and the enforcement and security arrangements that protect both parties. For a candidate at Latimer managing conditional contracts and JV land acquisitions, understanding how to negotiate, model and manage overage is a core technical competency tested at Level 3.",
+    "image": "https://images.unsplash.com/photo-1682403299053-5dea162de9b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxPdmVyYWdlJTIwTWVjaGFuaXNtcyUzQSUyMFN0cnVjdHVyZXMlMkMlMjBVSyUyMHByb3BlcnR5JTIwYXJjaGl0ZWN0dXJlJTIwYnVpbGRpbmclMjBleHRlcmlvcnxlbnwwfDB8fHwxNzc4MDQ0MTc5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "content": [],
+    "summary": [
+      "Overage trigger events \u2014 planning permission, implementation, disposal or GDV threshold \u2014 must be precisely defined and modelled as contingent land costs in the development appraisal from Day 1, not treated as a post-acquisition surprise.",
+      "The calculation methodology (percentage uplift share vs fixed sum per unit) determines whether a post-permission RICS valuation is required \u2014 uplift-share mechanisms introduce valuation dispute risk that should be mitigated by agreeing the RICS Red Book methodology and expert determination process in the overage deed.",
+      "Registration of a Form RX1 restriction at HMLR is the standard security mechanism binding successors in title \u2014 without it, the overage obligation is a personal covenant only, unenforceable against a subsequent purchaser of the burdened land.",
+      "On affordable housing schemes, the interaction between overage receipts and Homes England grant conditions must be actively managed \u2014 unexpected income from overage may need to be declared under the grant funding agreement and could affect additionality assessments.",
+      "Anti-avoidance provisions, the overage period, and the treatment of grant within GDV-based calculations are the three most commercially sensitive drafting points \u2014 candidates should be able to articulate their position on each from live transaction experience."
+    ],
+    "qa": [
+      {
+        "q": "You are acquiring a site conditionally for \u00a33.8m. The overage clause provides that the vendor receives 30% of the uplift above \u00a33.8m, triggered on grant of planning permission, with the land value assessed by an independent RICS valuer. Planning is granted for 140 units and the RICS valuation confirms a land value of \u00a36.1m. Walk me through the overage payment calculation and how you would have modelled this in your appraisal.",
+        "a": "The uplift is \u00a36.1m minus \u00a33.8m equals \u00a32.3m. The overage payment is 30% of \u00a32.3m, giving \u00a3690,000 payable to the vendor on grant of permission. In the appraisal, I would have modelled the base case at the agreed unit number threshold to establish whether overage was triggered under that scenario, and run a sensitivity showing the enhanced permission scenario with the overage cost deducted as a land-related Day 1 cost. The \u00a3690,000 would be shown as an additional land payment in the cashflow, timed to the expected planning grant date, reducing the residual and impacting the profit on cost and IRR. The appraisal would demonstrate the scheme remains viable on both the base and overage scenarios before investment committee submission."
+      },
+      {
+        "q": "What security mechanism would you require if you were the vendor on a land sale where overage is payable on planning permission, and how does that security interact with the developer\\'s construction finance?",
+        "a": "As vendor, I would require a Form RX1 restriction registered at HMLR on the title, preventing any registrable disposition \u2014 including a charge in favour of a development lender \u2014 without my solicitor certifying that the overage has been paid or is not triggered. This creates a practical tension with the developer\\'s construction lender, who will require a first legal charge over the site free of restrictions. The standard resolution is a priority agreement or deed of postponement, where I as vendor agree to defer enforcement of the restriction to permit the lender\\'s charge to rank first, typically in exchange for a direct covenant from the lender to notify me of any enforcement action and to account for overage from any sale proceeds before returning the surplus to the borrower. Without this arrangement, a lender will decline to lend against a restricted title."
+      },
+      {
+        "q": "How would you handle an overage obligation on a site Latimer is acquiring where the overage period is 25 years and Latimer intends to retain the affordable units long-term as social rent?",
+        "a": "The key risk is that the overage obligation persists through the long-term ownership of the retained affordable stock. I would seek to negotiate a carve-out from the overage for the affordable and social rent units, on the basis that they are not being disposed of in a way that realises planning uplift, and that their continued use as affordable housing is a public benefit the vendor should not seek to profit from. Alternatively, I would negotiate a 'partial discharge' mechanism whereby overage on the market sale units crystallises and is paid at disposal, with the affordable units expressly excluded. The remaining restriction on the affordable title should be removed by the vendor following payment of the market sale overage, to avoid the restriction affecting Latimer\\'s long-term financing of the retained stock \u2014 particularly relevant for bond-financed affordable housing where clean title is a lender requirement."
+      },
+      {
+        "q": "On a GDV-based overage mechanism, should Homes England AHP grant be included in the GDV definition? What are the arguments on each side?",
+        "a": "This is a live drafting point. The vendor\\'s argument for including grant is that it forms part of the total income stream of the scheme and inflates the GDV above what the land alone would support \u2014 to exclude it would allow the developer to reduce apparent GDV artificially on grant-heavy schemes. The developer\\'s argument for excluding grant is that grant is a public subsidy conditional on delivering affordable housing outputs, it is not profit and carries clawback risk if outputs are not delivered, and it is not reflective of the underlying market value of the development. In practice, I would argue strongly for exclusion of grant from the GDV definition, and separately ensure that any overage receipts Latimer receives as vendor are reviewed against the grant funding agreement with Homes England to assess whether they need to be declared as additional scheme income. The grant additionality principle means that receipts which reduce the funding gap could technically reduce grant entitlement."
+      },
+      {
+        "q": "What is an anti-avoidance provision in an overage deed, and can you give an example of how a developer might attempt to circumvent a planning trigger without one?",
+        "a": "An anti-avoidance provision is a clause that prevents the buyer from structuring their planning or disposal strategy to avoid crystallising the trigger. Without one, a developer could circumvent a 'more than 150 units' planning trigger by submitting two separate applications for 80 units and 75 units respectively on different parts of the site, each below the threshold, together delivering 155 units but individually not triggering overage. An anti-avoidance provision would deem any combination of planning applications on the burdened land or any land within a defined radius within a specified period as a single application for the purpose of the trigger calculation. A well-drafted provision will also address phased disposals designed to keep individual transactions below a GDV threshold, and the use of nominees or associated entities to hold different parts of the site."
+      }
+    ]
+  },
+  {
     "date": "2026-05-06",
     "topic": "Overage Mechanisms: Structures, Triggers, Valuation and Enforcement in Residential Land Transactions",
     "module": "Land & Joint Ventures",

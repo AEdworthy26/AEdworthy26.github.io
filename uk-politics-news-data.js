@@ -1,61 +1,61 @@
 // uk-politics-news-data.js
-// Auto-updated 2026-05-06 — do not edit manually
+// Auto-updated 2026-05-07 — do not edit manually
 
 var UK_POLITICS_NEWS = {
-  date: "2026-05-06",
+  date: "2026-05-07",
   main: {
-    title: "Campaigning Sprint Finish as Britain Heads to the Polls Tomorrow",
+    title: "Millions Head to the Polls in Biggest Electoral Test Since 2024 General Election",
     category: "Politics",
     content: [
-      "Candidates across Britain are making their final pitches to voters ahead of local elections tomorrow, with political parties mounting an intense last-day push in what is expected to produce a mesmerising and consequential mix of results. The elections will serve as the first major electoral test since last year\'s general election, with every major party fighting for crucial signals about the direction of public opinion. Polling stations will open across England, Scotland and Wales as voters deliver their verdicts on councils and, by extension, on the national parties that lead them.",
-      "Labour is bracing for significant losses, with polling forecasts suggesting the party could shed anywhere between half and three-quarters of its current councillors. The scale of any losses will be scrutinised intensely at Westminster, with party strategists hoping to limit the damage and prevent the results from fuelling damaging internal narratives about the government\'s trajectory in its second year of office. Prime Minister Sir Keir Starmer has spent the final days of campaigning defending the government\'s record while attempting to draw a contrast with opposition parties.",
-      "Reform UK, led by Nigel Farage, is widely expected to make substantial gains, potentially establishing itself as a formidable force in local government for the first time. However, the party faces its own turbulence heading into polling day, with Farage under scrutiny over a reported £5 million gift that he has insisted he had no obligation to declare, describing it as 'purely private' and not political in any sense. The party has also faced demands to suspend a candidate over alleged posts celebrating the rape of Sikh women, adding to a difficult final stretch for Reform\'s campaign managers.",
-      "The Green Party is also facing its own pre-election controversy, with leader Zack Polanski accused of falsely claiming to be a spokesperson for the British Red Cross and of incorrectly stating he was a full member of the National Council of Hypnotherapy. The charity has firmly denied any formal association with Polanski, casting a shadow over the party\'s final campaign days. Despite the controversy, the Greens are hoping to build on their recent momentum and consolidate gains in urban areas where their support has grown.",
-      "Because there is no overnight counting in Scotland and Wales, political watchers expect the English council results to dominate the breakfast headlines on 8 May, shaping the immediate political narrative. Sky News has described the count as a complex exercise for observers to follow, given the sheer variety of councils, mayoral contests and other elections taking place simultaneously. Whatever the results, they are likely to have significant ramifications for all of Westminster\'s main parties and could accelerate internal debates about leadership, strategy and policy direction heading into the second half of the parliament."
+      "Millions of voters across England, Scotland and Wales are heading to the polls today in what constitutes the most significant test of public opinion since the 2024 general election. The scale of the elections — covering hundreds of council seats and key mayoral contests — has made this a pivotal moment for all the major political parties, and particularly for a Labour government that has struggled to maintain its post-election momentum. Political analysts have been warning for weeks that the results could prove decisive in shaping the direction of British politics for the remainder of this parliament.",
+      "For Prime Minister Keir Starmer, the stakes could scarcely be higher. Labour is braced for what some within the party privately describe as record-breaking losses, with the governing party facing a severe squeeze from both the resurgent Reform UK on its right flank and the increasingly competitive Green Party on its left. In a last-minute message to voters, Starmer argued that Reform\'s Nigel Farage and the Greens' Zack Polanski were 'not fit to meet this moment', seeking to frame the election as a choice between responsible government and populist alternatives that he claims cannot be trusted with power.",
+      "Reform UK, led by Nigel Farage, is widely expected to make substantial gains across English councils, capitalising on voter frustration with both Labour\'s record in government and the lingering unpopularity of the Conservative Party. The Greens, under the energetic deputy leadership of Zack Polanski, are also poised for significant advances, particularly in urban areas where younger voters have grown disillusioned with Labour\'s pace of change on climate and public services. The Conservative Party, still rebuilding under Kemi Badenoch following its catastrophic 2024 defeat, faces its own reckoning as it attempts to demonstrate it remains a credible force in English local government.",
+      "In Scotland and Wales, the electoral picture carries its own distinct dynamics, with devolved political cultures and party systems adding layers of complexity to the national picture. Scottish voters are weighing their choices against a backdrop of continued SNP dominance, though that party has faced its own turbulence in recent months. In Wales, Labour\'s historic stronghold status is under pressure, with both Plaid Cymru and Reform making inroads into communities that once considered themselves safe Labour territory. Counting in Scotland and Wales will not begin until Friday, meaning it will be English council results that dominate the early morning headlines on 8 May.",
+      "The results are expected to begin filtering through overnight from English councils, with political journalists and party strategists alike watching closely for bellwether results that could signal the broader national mood. A catastrophic performance for Labour could intensify internal pressure on Starmer\'s leadership and accelerate demands for a change in political direction, while strong showings for Reform and the Greens would confirm that British politics remains in a profound period of fragmentation. Whatever the outcome, today\'s vote will send a powerful message to Westminster about the state of public trust — and the consequences of that message will be felt far beyond the council chambers whose control is being decided.",
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/bed9/live/ed3fe1e0-48c5-11f1-b000-cd419c6b9b09.jpg",
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/a13b/live/76fd5e30-497a-11f1-b9d6-9f6a897bd1ff.jpg",
     source: "BBC News",
-    sourceUrl: "https://www.bbc.com/news/articles/c759z9w7z3yo?at_medium=RSS&at_campaign=rss"
+    sourceUrl: "https://www.bbc.com/news/articles/c62xkw1pyvzo?at_medium=RSS&at_campaign=rss"
   },
   secondary: [
     {
       id: "uk1",
-      title: "Starmer Calls Antisemitism 'A Crisis for All of Us' at Downing Street Summit",
-      summary: "Prime Minister Sir Keir Starmer has convened a major summit of leaders from the police, arts, and universities to tackle what he described as a society-wide crisis of antisemitism following a spate of attacks on British Jews.",
+      title: "Starmer Tells Civil Servants to Speak 'Truth to Power' After Vetting Row",
+      summary: "Prime Minister Keir Starmer has written to civil servants urging them to speak truth to power, following tensions sparked by the sacking of former Foreign Office permanent secretary Sir Olly Robbins.",
       body: [
-        "Sir Keir Starmer hosted a Downing Street roundtable bringing together senior figures from policing, universities and the arts to address a sharp rise in antisemitic attacks, declaring that the problem demands a 'whole of society' response. The Prime Minister also warned that Iran\'s attempts to destabilise British society through the fomenting of hatred 'will not be tolerated', and confirmed that extra security measures have been put in place to protect the Jewish community.",
-        "In a parallel move, the Director of Public Prosecutions announced that hate crime prosecutions in England and Wales are to be fast-tracked, instructing prosecutors to bring charges more quickly following a series of high-profile antisemitic incidents. The twin announcements signal a significant escalation in the government\'s response to what community leaders have described as an increasingly dangerous atmosphere for British Jews."
+        "The letter from Downing Street comes amid heightened anxiety within the senior civil service about political interference and the independence of official advice, after the controversial removal of Sir Olly Robbins from his post as permanent secretary at the Foreign Office. Starmer\'s message sought to reassure officials that candid, honest counsel would be welcomed rather than punished, a signal interpreted by many as an attempt to draw a line under the damaging episode.",
+        "The row over Robbins' departure had raised broader questions about the relationship between ministers and their senior officials, and whether political considerations were overriding the traditional expectation of impartial, fearless advice. The Prime Minister\'s intervention underscores the sensitivity of civil service morale at a time when the government is already under significant electoral pressure."
       ],
-      image: "https://images.unsplash.com/photo-1713311588007-432556a5d59b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTdGFybWVyJTIwQ2FsbHMlMjBBbnRpc2VtaXRpc20lMjB8ZW58MHwwfHx8MTc3ODA0MzcyN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/6288/live/318ac370-498d-11f1-9cba-7526402c46eb.jpg",
       source: "BBC News",
-      url: "https://www.bbc.com/news/articles/czd2l55d1e7o?at_medium=RSS&at_campaign=rss",
+      url: "https://www.bbc.com/news/articles/c5y09gl1282o?at_medium=RSS&at_campaign=rss",
       category: "Politics"
     },
     {
       id: "uk2",
-      title: "Farage Says No Obligation to Declare £5 Million Gift as Reform Faces Pre-Election Scrutiny",
-      summary: "Nigel Farage has defended his decision not to declare a reported £5 million gift, insisting it was 'purely private' and carried no obligation for public disclosure.",
+      title: "Nigel Farage Has Earned £2 Million on Top of His MP\'s Salary Since July 2024",
+      summary: "An analysis of the MPs' register of interests reveals that Reform UK leader Nigel Farage has accumulated more than £2 million in outside earnings since entering Parliament, through speeches, media appearances, and commercial ventures.",
       body: [
-        "The Reform UK leader brushed aside mounting questions about the undisclosed gift on the eve of local elections, arguing that the transaction was entirely personal and 'wasn\'t political in any sense at all.' Critics and rival politicians have questioned whether the public has a right to know about such significant financial arrangements involving the leader of a major political party.",
-        "The controversy adds to a turbulent final campaign period for Reform, which is simultaneously facing calls to suspend a candidate over alleged social media posts celebrating sexual violence against Sikh women. Despite the controversies, Reform is still widely forecast to make significant gains in tomorrow\'s local elections, underlining the party\'s resilience with its core voter base."
+        "The Guardian\'s analysis of the parliamentary register of members' financial interests shows Farage has registered a remarkably diverse range of income streams since his election as MP for Clacton, including fees for Cameo video messages, paid speeches, and involvement in promoting gold bullion products. The figures place him among the very highest earners in the House of Commons when outside income is taken into account, far surpassing the vast majority of his colleagues across all parties.",
+        "The revelations are particularly striking given Farage\'s political positioning as a champion of ordinary working people against a self-serving elite, and Labour has been quick to highlight the apparent contradiction ahead of today\'s local elections. Critics argue the scale of his personal enrichment raises legitimate questions about his priorities and the sincerity of his anti-establishment brand."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/d58e/live/d16791c0-48a7-11f1-90e6-350a323e11ac.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/c8jv8xl17l8o?at_medium=RSS&at_campaign=rss",
+      image: "https://images.unsplash.com/photo-1639221314321-44739ac46b63?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxOaWdlbCUyMEZhcmFnZSUyMEhhcyUyMEVhcm5lZCUyMCVDMiVBMzIlMjBNaWxsaW9uJTIwb24lMjBUb3AlMjBvZiUyMEhpcyUyME1QJTVDfGVufDB8MHx8fDE3NzgxMzAxMjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/politics/2026/may/06/nigel-farage-finance-parliament-salary-reform",
       category: "Politics"
     },
     {
       id: "uk3",
-      title: "TUC Urges Government to Reinstate Higher Windfall Tax on Banks After £14bn Profits",
-      summary: "The Trades Union Congress has called on the government to raise the windfall tax on UK banks back to 8% after the big four lenders reported nearly £14 billion in combined first-quarter profits.",
+      title: "Sudanese Asylum Seekers Challenge Home Office Plan to Halve Leave to Remain",
+      summary: "Two Sudanese asylum seekers are mounting a legal challenge against Home Secretary Shabana Mahmood\'s plans to cut refugees' leave to remain in the UK from five years to just 30 months.",
       body: [
-        "The TUC renewed its demand for a higher surcharge on bank profits after Barclays, HSBC, Lloyds and NatWest revealed bumper earnings for the first three months of 2026, with the TUC arguing that the rate should be restored from its current 3% to the previous 8%. Union leaders pointed to the scale of bank profitability — partly fuelled by market turbulence arising from the Iran war — as justification for the levy.",
-        "The call puts additional pressure on Chancellor Rachel Reeves, who is already facing criticism from the pub industry after new figures showed around two pubs closing every day in the first quarter of the year, attributed to the sheer weight of recent tax rises. The dual pressures illustrate the difficult balancing act the Treasury faces as it seeks to raise revenue while managing the economic impact of its fiscal decisions."
+        "The legal challenge targets what lawyers describe as a fundamental erosion of refugee protections, with the Home Secretary\'s proposals to halve the standard period of leave to remain drawing criticism from the United Nations refugee agency as well as legal and humanitarian groups. Mahmood has defended the policy as a necessary measure to ensure the asylum system is not exploited, accusing some claimants of being 'asylum shoppers' who cycle through protections they do not genuinely need.",
+        "The case is being closely watched as an early judicial test of Labour\'s harder line on asylum and immigration, a policy shift designed in part to neutralise Reform UK\'s political appeal on the issue ahead of elections. Campaigners warn that reducing security of status for genuine refugees — including those fleeing the ongoing conflict in Sudan — could cause serious harm and leave vulnerable people in a state of prolonged uncertainty."
       ],
-      image: "https://i.guim.co.uk/img/media/d7f7ab14501a20ee32b1eeedbf9839b88c91327d/1057_171_3747_2997/master/3747.jpg?width=1200&quality=85&auto=format&fit=max&s=d5750b0e7fb077266e71c6b6f439ab72",
+      image: "https://i.guim.co.uk/img/media/19caae0a281523dd54589facbe33636c3230eda6/462_0_4630_3704/master/4630.jpg?width=1200&quality=85&auto=format&fit=max&s=ad29f67f71a4e6104b4b8ad9146d003c",
       source: "The Guardian",
-      url: "https://www.theguardian.com/business/2026/may/06/raise-windfall-tax-on-banks-urges-tuc",
-      category: "Economics"
+      url: "https://www.theguardian.com/uk-news/2026/may/06/sudanese-asylum-seekers-challenge-home-office-changes-to-refugee-rules",
+      category: "Politics"
     }
   ]
 };

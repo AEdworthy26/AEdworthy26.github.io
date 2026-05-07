@@ -1,61 +1,61 @@
 // world-news-data.js
-// Auto-updated 2026-05-06 — do not edit manually
+// Auto-updated 2026-05-07 — do not edit manually
 
 var WORLD_NEWS = {
-  date: "2026-05-06",
+  date: "2026-05-07",
   main: {
-    title: "Trump Pauses Strait of Hormuz Escort Mission as Iran Deal Talks Show Progress",
+    title: "Iran Reviews US Peace Proposal as Trump Warns of Swift Military Action If Talks Fail",
     category: "Geopolitics",
     content: [
-      "President Donald Trump announced on Wednesday that the United States would pause 'Project Freedom', a day-old military operation designed to escort commercial vessels through the Strait of Hormuz, citing progress toward a potential deal with Iran. The decision came just hours after Secretary of State Marco Rubio had publicly affirmed the mission, underscoring the volatile and rapidly shifting nature of US strategy in the ongoing conflict with Tehran. The sudden reversal left allies and analysts scrambling to interpret Washington\'s intentions in one of the world\'s most strategically critical waterways.",
-      "The Strait of Hormuz, a narrow passage between Iran and the Arabian Peninsula, is the transit point for roughly a fifth of the world\'s oil supply, and Iran\'s ability to threaten or restrict passage through it has given Tehran significant leverage since the outbreak of hostilities. The US military escort operation had been framed as a way to reassure commercial shipping operators and stabilise global energy markets, which have been severely disrupted since the war began. Jet fuel prices in particular have surged dramatically, with airlines already passing costs on to passengers through higher baggage fees and surcharges.",
-      "BBC diplomatic editor Jeremy Bowen warned that the Strait standoff continues to raise the risk of sliding back into all-out war, describing the ceasefire in the Gulf region as 'fragile' and under serious jeopardy. Both Washington and Tehran have shown a determination to keep economic and military pressure on each other even as back-channel negotiations reportedly continue. The situation is further complicated by Iran\'s insistence that any deal must include significant face-saving compromises that the Trump administration has so far been reluctant to offer publicly.",
-      "Analysts have noted that Trump appears to be searching for a swift diplomatic resolution — a so-called 'silver bullet' — but Tehran\'s calculus is unlikely to shift without a substantive concession that allows the Iranian government to claim a form of victory domestically. The war has already reshaped regional dynamics, with Lebanon suffering renewed bombardment and Ukrainian-style civilian entrapment playing out in unexpected corners of the conflict\'s ripple effects. Global oil markets remain on edge, with energy ministers from multiple nations convening emergency consultations to assess supply chain vulnerabilities.",
-      "The pausing of the escort mission will be watched closely by shipping companies, insurers, and governments that depend on Hormuz for energy imports. Whether the move signals genuine diplomatic momentum or another episode of strategic ambiguity from the Trump White House remains deeply unclear. What is certain is that the coming days will be critical: if nuclear-adjacent talks with Iran stall again, pressure will mount on the administration to recommit to a military posture it has now publicly walked back, potentially weakening its negotiating hand."
+      "Iran\'s Foreign Ministry confirmed on Wednesday that it is actively reviewing a formal proposal put forward by the Trump administration to end the ongoing conflict, with a response to be relayed through mediating country Pakistan. Tehran\'s spokesman said negotiators are carefully assessing the terms of the American plan, signalling a cautious but meaningful engagement with the diplomatic process. The development marks one of the more substantive moments of dialogue since the conflict escalated, raising tentative hopes that a negotiated resolution may be within reach.",
+      "President Trump struck a confident tone, declaring that any war with Iran would be 'over quickly' should Tehran fail to reach an agreement, while simultaneously expressing optimism about what he described as 'very good talks' in the preceding 24 hours. However, analysts have noted that Trump\'s public posture has injected a note of caution into proceedings, with the threat of renewed bombing sitting uneasily alongside diplomatic overtures. The dual messaging — peace on one hand, military pressure on the other — reflects the administration\'s stated strategy of negotiating from a position of maximum leverage.",
+      "Pakistan, which has emerged as a key intermediary in the talks, said it is 'endeavouring to convert this ceasefire into a permanent end to this war,' underscoring the regional stakes of the negotiations. Islamabad\'s role as a trusted channel between Washington and Tehran has given the diplomatic effort a credibility that direct US-Iran contacts have historically lacked. The involvement of a nuclear-armed regional power with relationships on both sides adds a significant layer of weight to the current round of discussions.",
+      "The conflict has taken a severe toll on Iran\'s economy, with the US naval blockade increasingly strangling the country\'s vital oil export sector. Tehran has publicly insisted it can endure the economic pain, but analysts suggest that its oil may soon have nowhere to go as buyers face intensifying American pressure to comply with the embargo. The mounting fiscal strain is widely seen as a primary driver behind Iran\'s willingness to engage with the US proposal, even as hardliners within the country\'s political establishment remain deeply suspicious of American intentions.",
+      "Meanwhile, the broader regional picture remains volatile. Israel struck targets near Beirut for the first time since a ceasefire with Hezbollah was reached in mid-April, saying it had targeted a senior Hezbollah figure in the Lebanese capital. The strike threatens to complicate the diplomatic atmosphere at a delicate moment, as any escalation involving Israeli military action risks drawing in Iran and undermining the fragile progress being made through Pakistani mediation. The coming days are expected to be critical in determining whether the current diplomatic momentum can be sustained long enough to produce a durable agreement.",
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/2c3f/live/af9c9120-48da-11f1-ac78-2112837ce2aa.jpg",
-    source: "BBC News",
-    sourceUrl: "https://www.bbc.com/news/articles/clypekl71gdo?at_medium=RSS&at_campaign=rss"
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/b568/live/479e7760-498d-11f1-9cba-7526402c46eb.png",
+    source: "NPR",
+    sourceUrl: "https://www.npr.org/2026/05/06/nx-s1-5813497/iran-war-strait-hormuz-updates"
   },
   secondary: [
     {
       id: "s1",
-      title: "Hantavirus Cruise Ship Allowed to Dock in Canary Islands After Atlantic Standoff",
-      summary: "Spain has agreed to allow a cruise ship struck by a suspected hantavirus outbreak to dock in the Canary Islands, following the deaths of three passengers and urgent medical needs among crew.",
+      title: "Israel Strikes Beirut for First Time Since Hezbollah Ceasefire",
+      summary: "Israel carried out its first strike on Beirut since a mid-April ceasefire with Hezbollah, saying it targeted a senior figure from the militant group in the Lebanese capital.",
       body: [
-        "The MV Hondius, a luxury expedition vessel, has been granted permission to dock in the Canary Islands after days of being refused entry to ports across the Atlantic region. The World Health Organisation confirmed seven confirmed or suspected cases of hantavirus on board, including three passengers who have died — among them a Dutch husband and wife — with at least two crew members still requiring urgent medical care.",
-        "Hantavirus is a rare but potentially lethal infection typically transmitted through contact with infected rodents or their droppings, and outbreaks aboard enclosed vessels present unique containment challenges. The case has alarmed public health officials and raised questions about biosecurity protocols on cruise ships operating in remote Atlantic waters."
+        "The Israeli military confirmed it had conducted an airstrike on Beirut, marking a significant escalation and the first such action since a ceasefire agreement with Hezbollah was reached in mid-April. Israeli officials stated the strike was directed at a senior Hezbollah commander, framing the attack as a targeted counter-terrorism operation rather than a broader resumption of hostilities.",
+        "The strike has drawn sharp international concern, coming at a moment when regional diplomacy — particularly over the Iran conflict — is at a sensitive juncture. Critics warn that unilateral Israeli military action risks destabilising the ceasefire framework and could reignite a broader conflict along Lebanon\'s southern front."
       ],
-      image: "https://i.guim.co.uk/img/media/6adde1cdf2cb63354dd69c0a998ec1af299f5a7a/434_0_2998_2398/master/2998.jpg?width=1200&quality=85&auto=format&fit=max&s=3fa45cadc1311484381589a516829381",
-      source: "Al Jazeera",
-      url: "https://www.aljazeera.com/news/2026/5/6/spain-agrees-to-let-hantavirus-hit-cruise-ship-dock-in-canary-islands?traffic_source=rss",
-      category: "Health"
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/fb1a/live/fc55db50-4981-11f1-b768-41eba02d8af8.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.com/news/articles/crmpjjl02l2o?at_medium=RSS&at_campaign=rss",
+      category: "Conflict"
     },
     {
       id: "s2",
-      title: "Romania\'s Pro-EU Government Collapses After No-Confidence Vote",
-      summary: "Romania\'s pro-European coalition government led by Prime Minister Ilie Bolojan has been ousted following a successful parliamentary vote of no confidence.",
+      title: "Hantavirus Patients Evacuated from Cruise Ship as WHO Confirms Seven Cases",
+      summary: "Three people displaying symptoms of the rare hantavirus were evacuated from the luxury cruise ship MV Hondius, with the WHO confirming seven confirmed or suspected cases and three deaths linked to the outbreak.",
       body: [
-        "The fall of the Bolojan government marks a significant political rupture in Romania, a NATO and EU member state whose alignment with Western institutions had been a cornerstone of its post-Cold War identity. The no-confidence vote succeeded amid rising domestic discontent and pressure from nationalist and Eurosceptic political factions that have gained ground across much of Central and Eastern Europe in recent years.",
-        "The development raises fresh concerns in Brussels about the stability of EU membership cohesion at a moment when the bloc is already navigating the pressures of the Iran war\'s economic fallout and ongoing instability on its eastern flank. Romania\'s political future now hangs on coalition negotiations that could determine whether the country shifts meaningfully toward a more Eurosceptic posture."
+        "The MV Hondius departed Cape Verde after authorities allowed it to leave following days of uncertainty, with three evacuees — including a British national — airlifted to the Netherlands for urgent medical care. The World Health Organisation confirmed seven confirmed or suspected cases of hantavirus aboard the vessel, including three passengers who died, among them an elderly Dutch couple.",
+        "Hantavirus is a rare but serious infection typically transmitted through contact with infected rodents or their droppings, and person-to-person transmission is considered uncommon in most strains. Health authorities are now working to trace the source of the outbreak and monitor the condition of remaining passengers and crew as the ship heads towards the Canary Islands."
       ],
-      image: "https://images.unsplash.com/photo-1756968210095-3ac54a4088b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxSb21hbmlhJTVDfGVufDB8MHx8fDE3NzgwNDM2ODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "Al Jazeera",
-      url: "https://www.aljazeera.com/video/newsfeed/2026/5/6/romanias-pro-eu-government-ousted-after-no-confidence-vote?traffic_source=rss",
-      category: "Politics"
+      image: "https://static01.nyt.com/images/2026/05/06/multimedia/06int-cruise-virus-01-zghb/06int-cruise-virus-01-zghb-mediumSquareAt3X.jpg",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/world/2026/may/03/three-passengers-dead-after-suspected-hantavirus-outbreak-on-cruise-ship",
+      category: "Health"
     },
     {
       id: "s3",
-      title: "Kenya\'s AI Healthcare System Found to Systematically Penalise the Poor",
-      summary: "An investigation has found that an AI algorithm used to determine Kenyans' healthcare contributions has consistently driven up costs for the country\'s poorest citizens.",
+      title: "South Korean Court Cuts Former PM Han Duck-soo\'s Prison Sentence in Martial Law Case",
+      summary: "A Seoul appeals court reduced former South Korean Prime Minister Han Duck-soo\'s prison sentence from 23 years to 15 in connection with the martial law crisis that rocked the country.",
       body: [
-        "A Guardian investigation has revealed that Kenya\'s AI-driven national health financing system, rolled out as part of President William Ruto\'s pledge to provide universal healthcare access, contains serious flaws that have resulted in lower-income Kenyans being assigned disproportionately high contribution rates. The algorithm, which is designed to assess individual affordability, appears to systematically miscalculate the financial capacity of rural and informal-sector workers.",
-        "The findings are particularly significant given that the healthcare reforms were presented as a flagship social equity initiative following widespread civil unrest in Kenya in recent years. Critics argue the case illustrates the broader risks of deploying poorly calibrated AI systems in high-stakes public services across the developing world, where data quality and algorithmic transparency are often inadequate safeguards."
+        "South Korea\'s appeals court handed down a revised sentence of 15 years to former Prime Minister Han Duck-soo, significantly reducing the 23-year term originally imposed over his role in the martial law crisis that plunged the country into political turmoil. The case stems from events in which Han was convicted of participating in or failing to prevent an unconstitutional declaration of martial law.",
+        "The ruling is the latest development in a sweeping legal reckoning that has followed one of South Korea\'s most dramatic political crises in decades, implicating several senior figures across government and the military. The case continues to shape South Korean domestic politics ahead of a period of significant electoral and institutional reform."
       ],
-      image: "https://images.unsplash.com/photo-1713260886924-15b8ea16992b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxLZW55YSU1Q3xlbnwwfDB8fHwxNzc4MDQzNjg1fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/global-development/2026/may/04/kenya-ai-healthcare-reforms-driving-up-costs-for-poor",
-      category: "Global Development"
+      image: "https://images.unsplash.com/photo-1716329759192-2b7097ac782a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTb3V0aCUyMEtvcmVhbiUyMENvdXJ0JTIwQ3V0cyUyMEZvcm1lciUyMFBNJTIwSGFuJTIwRHVjay1zb28lNUN8ZW58MHwwfHx8MTc3ODEzMDA3Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "Al Jazeera",
+      url: "https://www.aljazeera.com/news/2026/5/7/south-korean-court-reduces-han-duck-soos-prison-term-in-martial-law-case?traffic_source=rss",
+      category: "Politics"
     }
   ]
 };

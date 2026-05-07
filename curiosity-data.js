@@ -1,92 +1,92 @@
 // curiosity-data.js
-// Auto-updated 2026-05-06 — do not edit manually
+// Auto-updated 2026-05-07 — do not edit manually
 
 var CURIOSITY_DATA = {
-  date: "2026-05-06",
+  date: "2026-05-07",
   mainArticle: {
-    title: "The Ashoka Puzzle: How a Warrior King Became the World\'s First Moral Statesman",
-    subject: "Ashoka the Great",
-    subtitle: "He conquered half a continent in blood — then spent the rest of his life trying to atone for it.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/2/28/Ashoka%27s_visit_to_the_Ramagrama_stupa_Sanchi_Stupa_1_Southern_gateway.jpg",
+    title: "The Cartographer\'s Dream: How Ptolemy\'s Geography Shaped and Misled the World for 1,400 Years",
+    subject: "Ptolemy\'s Geographia and ancient cartography",
+    subtitle: "A second-century scholar drew a map of the world from his desk in Alexandria — and the errors he made sent explorers chasing phantoms for over a millennium.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/c/c9/Ptolemy_1476_with_armillary_sphere_model.jpg",
     readTime: "8 min",
     content: [
       {
         type: "paragraph",
-        text: "In the third century BCE, a king named Ashoka ruled the largest empire the Indian subcontinent had ever seen — a dominion stretching from present-day Afghanistan to the Bay of Bengal. He had won it the old-fashioned way: through campaigns of extraordinary violence. Then, after one particular battle, something broke inside him — and what followed was one of the strangest pivots in all of political history."
+        text: "In the second century AD, a Greek scholar named Claudius Ptolemy sat in the great city of Alexandria and attempted something almost impossibly ambitious: he tried to write down the precise location of every known place on Earth. His work, the Geographia, was not an atlas in the modern sense but a mathematical treatise — a set of coordinates, projections, and instructions for drawing the world. It was the most sophisticated geographical work of the ancient world, and it was spectacularly, consequentially wrong in ways that would echo through history for fourteen centuries."
       },
       {
         type: "heading",
-        text: "The Slaughter at Kalinga"
+        text: "A Man Who Never Left His Library"
       },
       {
         type: "paragraph",
-        text: "Around 261 BCE, Ashoka launched a war of conquest against the kingdom of Kalinga, a prosperous coastal state in what is now Odisha. The Mauryan forces won decisively, but the cost was catastrophic: ancient sources record roughly 100,000 killed in battle, another 150,000 deported, and countless more dead from famine and disease in the aftermath. What made this battle unique in ancient history was not its scale but what happened next — the victor publicly recorded his own horror at what he had done."
+        text: "Almost nothing certain is known about Ptolemy\'s personal life, which makes his intellectual ambition all the more striking. He worked in Alexandria between roughly AD 100 and 170, producing major works on astronomy, optics, and music alongside the Geographia. He was a compiler and synthesiser of genius, drawing heavily on the lost work of Marinos of Tyre and on the reports of merchants, soldiers, and diplomats who had actually seen the lands he described. He likely never set foot outside Egypt, yet he placed thousands of cities, rivers, mountains, and coastlines on a mathematical grid stretching from the Canary Islands to Southeast Asia."
       },
       {
         type: "heading",
-        text: "Edicts Carved in Stone"
+        text: "The Grid That Changed Everything"
       },
       {
         type: "paragraph",
-        text: "Ashoka\'s response to Kalinga was to commission a series of inscriptions — edicts carved onto polished sandstone pillars and rock faces across his empire — in which he announced a transformation of royal policy. Written in the vernacular languages of each region, these texts declared his commitment to dhamma: a concept blending moral law, compassion, religious tolerance, and non-violence. These edicts are among the earliest surviving examples of a ruler explicitly addressing his subjects as moral citizens rather than merely as subjects to be taxed and conscripted."
+        text: "Ptolemy\'s great conceptual innovation was the application of latitude and longitude to geography — a systematic coordinate system that, in principle, could locate any point on the globe precisely. He adopted the earlier Greek understanding that Earth was a sphere and developed several map projections to represent it on a flat surface, including a sophisticated conic projection. This mathematical rigour gave his work an authority that no previous geographical text had possessed, and it meant that his errors, when they came, were precise errors — baked into numbers that looked trustworthy."
       },
       {
         type: "heading",
-        text: "What Dhamma Actually Meant"
+        text: "The Errors That Haunted Explorers"
       },
       {
         type: "paragraph",
-        text: "Ashoka\'s dhamma was deliberately ecumenical — it was not a Buddhist catechism, though he was a Buddhist convert. It preached respect for Brahmins, Jains, Ajivikas, and Greeks alike, and explicitly condemned empty religious ritual in favour of ethical conduct. He established hospitals for humans and animals, planted shading trees along roads, dug wells, and sent diplomatic missions to Hellenistic kingdoms in the West. The Greek king Antiochus II, Ptolemy II of Egypt, and several others received Mauryan ambassadors preaching non-violence — a geopolitical novelty that left no recorded parallel in the ancient world."
+        text: "The most fateful of Ptolemy\'s mistakes was his underestimate of Earth\'s circumference. He accepted a figure roughly 30 percent smaller than the actual value, compressing the unknown western ocean between Europe and Asia into a crossing that looked almost feasible. It was precisely this Ptolemaic miscalculation that Columbus cited when persuading the Spanish crown to fund his 1492 voyage — Columbus genuinely believed Asia was where the Americas turned out to be, and his confidence rested on Ptolemy\'s numbers. Had Ptolemy got the circumference right, the voyage might never have been proposed at all."
+      },
+      {
+        type: "paragraph",
+        text: "Ptolemy also invented a vast landmass he called Terra Incognita that closed off the southern Indian Ocean, turning it into an enclosed sea like the Mediterranean. He depicted Africa curving eastward to join Southeast Asia, making a sea route to India appear impossible. This ghost continent haunted maps for centuries and may have delayed the Portuguese programme of southward exploration, since cartographers kept debating whether Ptolemy\'s enclosed ocean was real. When Bartolomeu Dias rounded the Cape of Good Hope in 1488, he was not just reaching a new place — he was erasing a fiction that had been authoritative for thirteen hundred years."
       },
       {
         type: "heading",
-        text: "The Lion Capital and Its Afterlife"
+        text: "Lost, Rediscovered, and Reborn"
       },
       {
         type: "paragraph",
-        text: "The most famous physical legacy of Ashoka\'s reign is a polished sandstone column capital found at Sarnath — four lions seated back to back atop an abacus decorated with a wheel, an elephant, a bull, and a horse. Crafted to a standard of finish that rivals anything in the Hellenistic world, the capital sat largely forgotten for centuries until archaeologists excavated Sarnath in 1904. When India became independent in 1947, the government adopted the Lion Capital as the national emblem and placed Ashoka\'s wheel — the Dharma Chakra — at the centre of the new national flag."
+        text: "The Geographia survived in the Byzantine world but was virtually unknown in Western Europe through the early medieval period. Its dramatic re-entry came in 1406, when a manuscript was brought from Constantinople to Florence and translated into Latin by Jacopo d\'Angelo. The timing was extraordinary: the Renaissance was flowering, printing was approaching, and European explorers were beginning to push beyond the familiar. Within decades, the Geographia was being printed and illustrated with maps, becoming the most authoritative geographical text in Europe just as Europeans were about to shatter its framework completely."
       },
       {
         type: "heading",
-        text: "Lost, Found, and Decoded"
+        text: "The Map as Power"
       },
       {
         type: "paragraph",
-        text: "For nearly two thousand years, Ashoka himself was largely forgotten — his empire collapsed within fifty years of his death, and his identity had been erased from living memory. The pillars he left behind were known; the Mughal emperor Akbar marvelled at them in the sixteenth century, but no one could read the Brahmi script in which they were inscribed. It was the British scholar James Prinsep who, in 1837, cracked the Brahmi alphabet by analysing donor inscriptions on Buddhist monuments — and suddenly, dozens of identical inscriptions across South Asia all revealed the same name: Devanampiya Piyadasi, 'Beloved of the Gods, He Who Looks on with Kindness.' Archaeologists eventually confirmed this was Ashoka."
+        text: "The rediscovery of Ptolemy\'s text transformed cartography from a craft into a science with classical credentials — and it became politically explosive. Kings and princes funded expeditions partly to correct Ptolemy, and the corrected maps were treated as state secrets, locked away in Lisbon and Seville to prevent rivals from learning the sea routes to spice and gold. The act of mapping became an act of possession: to draw a coastline accurately was to claim it. Ptolemy had imagined geography as a neutral mathematical description of the world, but his successors turned it into the sharpest instrument of imperial competition."
       },
       {
         type: "heading",
-        text: "The Question of Sincerity"
+        text: "What He Got Right"
       },
       {
         type: "paragraph",
-        text: "Historians have long debated how genuinely Ashoka transformed — or whether the edicts were sophisticated propaganda by a shrewd ruler managing a vast, ethnically diverse empire through ideology rather than perpetual military force. The honest answer is probably both. The Arthashastra, the Mauryan manual of statecraft attributed to the minister Kautilya, reveals a state apparatus of spies, informants, and calculated ruthlessness that continued operating under Ashoka\'s reign even as the stone columns proclaimed compassion."
+        text: "It would be unjust to remember Ptolemy only for his errors. His grid system of coordinates is the direct ancestor of the one that governs every GPS device today. His understanding that Earth was spherical was entirely correct, and his attempt to project a sphere onto a flat plane anticipated problems that cartographers are still solving. The Geographia listed roughly 8,000 place names with coordinates — an act of scholarly ambition that has no real parallel in the ancient world. Many of his coordinates for the Mediterranean are remarkably accurate, the result of careful triangulation from astronomical observations and travellers' reports."
       },
       {
         type: "heading",
-        text: "Why Ashoka Matters Now"
+        text: "The Last Ptolemaic Map"
       },
       {
         type: "paragraph",
-        text: "Ashoka\'s experiment is remarkable precisely because it was an experiment — a powerful ruler using the machinery of the state to propagate ethical norms across a multilingual, multi-religious empire, two millennia before the concept of pluralism had a name. He failed to prevent his empire\'s decline, and his successors abandoned his policies almost immediately. But the idea he left behind — that power could be exercised with restraint and accountability, and that rulers owed their subjects an explanation of their choices — is one that still makes people uncomfortable in palaces and parliaments alike."
-      },
-      {
-        type: "paragraph",
-        text: "H.G. Wells, writing in his Outline of History in 1920, declared that among the great monarchs of history, Ashoka\'s star 'shines, and shines almost alone, a star.' It is a verdict that has only grown more interesting as the centuries accumulate more counterexamples."
+        text: "By the early sixteenth century, the Geographia was being overtaken by reality faster than printers could keep up. Each new edition required additions and corrections as Portuguese, Spanish, and later Dutch explorers returned with coastlines that simply did not exist in Ptolemy\'s scheme. The 1513 Strasbourg edition included a striking supplement: a map of the newly discovered lands of the western Atlantic, modestly labelled 'Terra Incognita' — the same phrase Ptolemy had used for his fictional southern continent. The irony was complete. The man who had filled the unknown world with confident numbers had been replaced by the honest admission that the world was, once again, larger and stranger than anyone had mapped."
       }
     ]
   },
   personOfTheDay: {
-    name: "James Prinsep",
-    lifespan: "1799–1840",
-    category: "Scholarship & Archaeology",
-    image: "https://upload.wikimedia.org/wikipedia/commons/0/0b/James_Prinsep_Medal.jpg",
-    bio: "James Prinsep was born in Hertfordshire, England, in 1799, the seventh of ten children in a prosperous family with strong ties to India through the East India Company. Trained as an architect, he arrived in Calcutta in 1819 and quickly demonstrated a restless intellectual energy that overflowed the boundaries of any single discipline — within a decade he had redesigned the Calcutta Mint, conducted pioneering studies of Indian meteorology and chemistry, and assumed editorship of the Journal of the Asiatic Society of Bengal.\n\nHis most consequential achievement came through an obsession with ancient Indian scripts that no living person could read. For years he collected inscriptions from coins, pillars, and rock faces across the subcontinent, comparing letterforms with the patience of a watchmaker. In 1837 he achieved the decisive breakthrough: by studying bilingual Pali-Sanskrit donation inscriptions at Buddhist sites, he reconstructed the Brahmi alphabet — one of the most important acts of decipherment in the history of scholarship. Within months, dozens of pillar inscriptions that had baffled Mughal emperors and British officers alike suddenly spoke in a clear voice, all bearing the name of a previously unknown king who called himself Piyadasi. That king, scholars would confirm, was Ashoka.\n\nThe effort destroyed him. Prinsep worked at a pace that contemporaries described as frightening, sleeping little and corresponding furiously with scholars across Europe and Asia. By 1838 his health had collapsed completely; he suffered what appears to have been a series of strokes or a severe neurological breakdown and was shipped home to England in a desperate attempt at recovery. He died in London in April 1840, aged just forty. He never knew the full scale of what his decipherment had unlocked — the entire rediscovery of Mauryan India, and the restoration of Ashoka to history, was built on the foundation he laid in that single electric year."
+    name: "Gerardus Mercator",
+    lifespan: "1512–1594",
+    category: "Cartography & Geography",
+    image: "https://upload.wikimedia.org/wikipedia/commons/e/e6/Gerardo_Mercatore_-_Gerardus_Mercator.jpg",
+    bio: "Gerardus Mercator was born Gerard de Cremer in Rupelmonde, in what is now Belgium, in 1512, and went on to become the most influential cartographer in the history of Western civilisation. Educated at the University of Leuven, he mastered mathematics, philosophy, and the craft of engraving, skills that would define his life\'s work. He produced his first major map — of Palestine — in 1537, and his reputation grew rapidly across the courts and counting houses of Europe.\n\nMercator\'s life was not without danger. In 1544 he was arrested on suspicion of heresy during a period of religious persecution in the Low Countries, spending seven months in prison before being released without charge. He eventually relocated to Duisburg, in the Duchy of Cleves, where he spent the rest of his life in relative security, producing a stream of maps, globes, and geographical instruments of extraordinary quality. It was here that he completed his most famous work: the 1569 world map drawn on the projection that still bears his name.\n\nThe Mercator projection solved a problem that had bedevilled navigators for generations. By representing lines of constant compass bearing as straight lines on a flat map, it made it possible for a sailor to plot a course simply by drawing a line with a ruler — an indispensable tool in the age of oceanic exploration. The distortion it introduces at high latitudes, making Greenland appear as large as Africa, is a geometric necessity of the mathematics, not a careless error. Later in life Mercator coined the word 'atlas' for a collection of maps — naming it after the Titan who held up the sky — and his posthumously published Atlas of 1595 established the format that world atlases follow to this day."
   },
   onThisDay: {
-    headline: "The Hindenburg Erupts in Flames Over New Jersey",
-    date: "May 6, 1937",
-    summary: "At 7:25 in the evening of May 6, 1937, the German passenger airship LZ 129 Hindenburg burst into flames as it attempted to dock at the Naval Air Station in Lakehurst, New Jersey, killing 36 of the 97 people on board and one member of the ground crew. The hydrogen-filled giant, the largest flying machine ever built at 245 metres in length, had completed the transatlantic crossing from Frankfurt in just under three days and was manoeuvring toward its mooring mast when fire erupted near the tail. Within 34 seconds, the entire structure had collapsed to the ground in a burning wreck.\n\nThe disaster was witnessed and recorded in extraordinary detail — newsreel cameras were rolling, and radio journalist Herbert Morrison of WLS Chicago was broadcasting live, his voice breaking into an anguished cry that became one of the most replayed pieces of audio in broadcast history: 'Oh, the humanity!' The combination of live radio, motion picture footage, and front-page photographs made the Hindenburg the first major disaster to be experienced almost in real time by a mass global audience. The precise cause of ignition has been debated ever since — theories range from static electricity to sabotage to a hydrogen leak ignited by the ship\'s own engines — but no definitive answer has ever been established. The disaster effectively ended the era of passenger airship travel; the planned American counterpart to the Hindenburg was never filled with hydrogen, and within two years the world\'s attention had turned to the approaching catastrophe of the Second World War.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Flag_of_New_Jersey.svg/960px-Flag_of_New_Jersey.svg.png"
+    headline: "Beethoven\'s Ninth Premieres — the Composer Hears Nothing",
+    date: "May 7, 1824",
+    summary: "On the evening of May 7, 1824, Ludwig van Beethoven\'s Ninth Symphony received its world premiere at the Kärntnertortheater in Vienna — one of the most celebrated and emotionally charged events in the history of music. Beethoven, by this point entirely deaf, stood on stage beside the conductor Michael Umlauf and followed the score, beating time and indicating tempo changes, though he could hear nothing of the music filling the hall around him. Umlauf had quietly instructed the musicians and singers to follow him rather than Beethoven, sparing the composer the humiliation of a public collapse.\n\nWhen the final movement — with its unprecedented choral setting of Friedrich Schiller\'s 'Ode to Joy' — came to an end, the audience erupted in an ovation of extraordinary intensity, reportedly applauding five times and throwing hats and handkerchiefs into the air. Beethoven, with his back to the hall, was unaware of the reception until one of the soloists gently turned him around to see the cheering crowd. By most accounts, he wept. The symphony had been composed almost entirely in a state of complete deafness, a fact that seemed to the audience to give the soaring affirmation of its final movement an almost supernatural quality.\n\nThe Ninth Symphony was a revolutionary work in multiple respects: it was the longest symphony yet written, the first by a major composer to incorporate a full chorus and vocal soloists into the symphonic form, and its finale\'s central theme — the 'Ode to Joy' — has since become one of the most recognised melodies on Earth. It was adopted as the anthem of the European Union in 1985. The premiere of May 7, 1824, stands as one of those rare historical moments when a work of art is recognised as transformative almost at the instant of its creation.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Joseph_Karl_Stieler%27s_Beethoven_mit_dem_Manuskript_der_Missa_solemnis.jpg/3840px-Joseph_Karl_Stieler%27s_Beethoven_mit_dem_Manuskript_der_Missa_solemnis.jpg"
   }
 };
