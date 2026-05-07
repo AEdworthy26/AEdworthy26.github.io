@@ -110,8 +110,21 @@
     .filter-row { display: flex; align-items: center; gap: 0.7rem; flex-wrap: wrap; }
     .filter-search { flex: 1; min-width: 180px; border: 1px solid var(--border); border-radius: 8px; padding: 0.38rem 0.7rem; font-size: 0.8rem; background: var(--subtle); color: var(--ink); outline: none; transition: border-color 0.15s; }
     .filter-search:focus { border-color: var(--blue); background: #fff; }
-    .filter-select { border: 1px solid var(--border); border-radius: 8px; padding: 0.38rem 0.7rem; font-size: 0.78rem; background: var(--subtle); color: var(--ink); outline: none; cursor: pointer; transition: border-color 0.15s; }
-    .filter-select:focus { border-color: var(--blue); }
+    .flt-dd { position: relative; display: inline-block; flex-shrink: 0; }
+    .flt-dd-btn { display: flex; align-items: center; gap: 0.45rem; border: 1px solid var(--border); border-radius: 8px; padding: 0.38rem 0.75rem; font-size: 0.78rem; font-family: 'Inter', sans-serif; font-weight: 500; background: var(--subtle); color: var(--ink); cursor: pointer; transition: border-color 0.15s, background 0.15s, box-shadow 0.15s; white-space: nowrap; }
+    .flt-dd-btn:hover { border-color: #aaa; background: #fff; }
+    .flt-dd.open .flt-dd-btn { border-color: var(--blue); background: #fff; box-shadow: 0 0 0 3px rgba(0,51,153,0.1); }
+    .flt-dd-caret { font-size: 0.52rem; color: var(--muted); transition: transform 0.18s; line-height: 1; }
+    .flt-dd.open .flt-dd-caret { transform: rotate(180deg); }
+    .flt-dd-menu { position: absolute; top: calc(100% + 5px); left: 0; background: #fff; border: 1px solid rgba(0,0,0,0.1); border-radius: 10px; box-shadow: 0 8px 28px rgba(0,0,0,0.12), 0 2px 6px rgba(0,0,0,0.06); min-width: 100%; display: none; flex-direction: column; z-index: 100; overflow: hidden; animation: ddReveal 0.14s ease both; }
+    .flt-dd.open .flt-dd-menu { display: flex; }
+    @keyframes ddReveal { from { opacity:0; transform:translateY(-5px); } to { opacity:1; transform:none; } }
+    .flt-dd-opt { padding: 0.48rem 0.9rem 0.48rem 0.7rem; font-size: 0.78rem; font-family: 'Inter', sans-serif; font-weight: 500; color: var(--ink); background: none; border: none; text-align: left; cursor: pointer; transition: background 0.1s; white-space: nowrap; display: flex; align-items: center; gap: 0.45rem; }
+    .flt-dd-opt::before { content: ''; display: inline-block; width: 0.7rem; font-size: 0.6rem; flex-shrink: 0; }
+    .flt-dd-opt.active { font-weight: 700; color: var(--blue); }
+    .flt-dd-opt.active::before { content: '✓'; }
+    .flt-dd-opt:hover { background: var(--subtle); }
+    .flt-dd-opt + .flt-dd-opt { border-top: 1px solid var(--subtle); }
     .filter-total { margin-left: auto; font-family: 'Inter', sans-serif; font-weight: 700; font-size: 0.88rem; color: var(--ink); white-space: nowrap; background: var(--subtle); border: 1px solid var(--border); border-radius: 9999px; padding: 0.2rem 0.7rem; }
 
     /* ── BTN ADD ── */
@@ -389,26 +402,30 @@
       <div class="filter-card-body">
       <div class="filter-row">
         <input type="text" class="filter-search" id="filter-search" placeholder="Search items&hellip;" oninput="window.onFilterChange()">
-        <select class="filter-select" id="filter-priority" onchange="window.onFilterChange()">
-          <option value="">All Priorities</option>
-          <option value="high">High</option>
-          <option value="medium">Medium</option>
-          <option value="low">Low</option>
-        </select>
-        <select class="filter-select" id="filter-category" onchange="window.onFilterChange()">
-          <option value="">All Categories</option>
-          <option value="tech">Tech</option>
-          <option value="clothing">Clothing</option>
-          <option value="books">Books</option>
-          <option value="home">Home</option>
-          <option value="other">Other</option>
-        </select>
-        <select class="filter-select" id="filter-sort" onchange="window.onFilterChange()">
-          <option value="date">Newest</option>
-          <option value="price-asc">Price ↑</option>
-          <option value="price-desc">Price ↓</option>
-          <option value="priority">Priority</option>
-        </select>
+        <div class="flt-dd" id="dd-priority">
+          <button type="button" class="flt-dd-btn" id="dd-priority-btn">
+            <span id="dd-priority-label">All Priorities</span>
+            <span class="flt-dd-caret">▾</span>
+          </button>
+          <div class="flt-dd-menu" id="dd-priority-menu"></div>
+          <input type="hidden" id="filter-priority" value="">
+        </div>
+        <div class="flt-dd" id="dd-category">
+          <button type="button" class="flt-dd-btn" id="dd-category-btn">
+            <span id="dd-category-label">All Categories</span>
+            <span class="flt-dd-caret">▾</span>
+          </button>
+          <div class="flt-dd-menu" id="dd-category-menu"></div>
+          <input type="hidden" id="filter-category" value="">
+        </div>
+        <div class="flt-dd" id="dd-sort">
+          <button type="button" class="flt-dd-btn" id="dd-sort-btn">
+            <span id="dd-sort-label">Newest</span>
+            <span class="flt-dd-caret">▾</span>
+          </button>
+          <div class="flt-dd-menu" id="dd-sort-menu"></div>
+          <input type="hidden" id="filter-sort" value="date">
+        </div>
         <div class="filter-total" id="filter-total"></div>
       </div>
       </div>
@@ -714,6 +731,71 @@
     }
 
     function capitalize(s) { return s ? s.charAt(0).toUpperCase() + s.slice(1) : ''; }
+
+    // ── CUSTOM DROPDOWNS ─────────────────────────────────────────────────────
+    var DD_OPTS = {
+      priority: [
+        { value: '', label: 'All Priorities' },
+        { value: 'high', label: 'High' },
+        { value: 'medium', label: 'Medium' },
+        { value: 'low', label: 'Low' }
+      ],
+      category: [
+        { value: '', label: 'All Categories' },
+        { value: 'tech', label: 'Tech' },
+        { value: 'clothing', label: 'Clothing' },
+        { value: 'books', label: 'Books' },
+        { value: 'home', label: 'Home' },
+        { value: 'other', label: 'Other' }
+      ],
+      sort: [
+        { value: 'date', label: 'Newest' },
+        { value: 'price-asc', label: 'Price ↑' },
+        { value: 'price-desc', label: 'Price ↓' },
+        { value: 'priority', label: 'Priority' }
+      ]
+    };
+
+    function initDropdowns() {
+      ['priority', 'category', 'sort'].forEach(function (key) {
+        var dd = document.getElementById('dd-' + key);
+        var btn = document.getElementById('dd-' + key + '-btn');
+        var menu = document.getElementById('dd-' + key + '-menu');
+        var labelEl = document.getElementById('dd-' + key + '-label');
+        var hidden = document.getElementById('filter-' + key);
+        var opts = DD_OPTS[key];
+
+        menu.innerHTML = opts.map(function (opt) {
+          var isActive = hidden.value === opt.value;
+          return '<button type="button" class="flt-dd-opt' + (isActive ? ' active' : '') + '" data-value="' + esc(opt.value) + '">' + esc(opt.label) + '</button>';
+        }).join('');
+
+        btn.addEventListener('click', function (e) {
+          e.stopPropagation();
+          var isOpen = dd.classList.contains('open');
+          document.querySelectorAll('.flt-dd.open').forEach(function (el) { el.classList.remove('open'); });
+          if (!isOpen) dd.classList.add('open');
+        });
+
+        menu.addEventListener('click', function (e) {
+          var optBtn = e.target.closest('.flt-dd-opt');
+          if (!optBtn) return;
+          var val = optBtn.getAttribute('data-value');
+          hidden.value = val;
+          var chosen = opts.find(function (o) { return o.value === val; });
+          if (chosen) labelEl.textContent = chosen.label;
+          menu.querySelectorAll('.flt-dd-opt').forEach(function (o) {
+            o.classList.toggle('active', o.getAttribute('data-value') === val);
+          });
+          dd.classList.remove('open');
+          window.onFilterChange();
+        });
+      });
+
+      document.addEventListener('click', function () {
+        document.querySelectorAll('.flt-dd.open').forEach(function (el) { el.classList.remove('open'); });
+      });
+    }
 
     // ── FILTERS ──────────────────────────────────────────────────────────────
     window.onFilterChange = function () {
@@ -1024,6 +1106,7 @@
     // ── INIT ──────────────────────────────────────────────────────────────────
     load();
     render();
+    initDropdowns();
 
   })();
   </script>
