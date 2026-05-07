@@ -96,8 +96,53 @@
     .search-input{flex:1;max-width:280px;font-family:'Inter',system-ui,sans-serif;font-size:.82rem;padding:.48rem .9rem;background:var(--dark-card);border:1px solid var(--dark-border);border-radius:6px;color:var(--dark-text);outline:none;transition:border-color .15s}
     .search-input::placeholder{color:var(--dark-dim)}
     .search-input:focus{border-color:rgba(200,163,72,.4)}
-    .genre-filter-select{font-family:'Inter',system-ui,sans-serif;font-size:.78rem;padding:.45rem .8rem;background:var(--dark-card);border:1px solid var(--dark-border);border-radius:6px;color:var(--dark-muted);cursor:pointer;outline:none}
-    .genre-filter-select:focus{border-color:rgba(200,163,72,.4)}
+    /* ── CUSTOM GENRE FILTER ── */
+    .genre-filter { position: relative; }
+    .genre-filter-btn {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      font-family: 'Inter', system-ui, sans-serif; font-size: 0.78rem; font-weight: 600;
+      padding: 0.46rem 0.88rem; background: var(--dark-card);
+      border: 1px solid var(--dark-border); border-radius: 6px;
+      color: var(--dark-muted); cursor: pointer;
+      transition: border-color 0.15s, color 0.15s; white-space: nowrap;
+    }
+    .genre-filter-btn:hover { border-color: rgba(200,163,72,0.35); color: var(--dark-text); }
+    .genre-filter-btn.open { border-color: rgba(200,163,72,0.5); color: var(--dark-text); }
+    .gf-caret { font-size: 0.48rem; opacity: 0.5; transition: transform 0.18s; line-height: 1; }
+    .genre-filter-btn.open .gf-caret { transform: rotate(180deg); }
+    .genre-filter-menu {
+      position: absolute; top: calc(100% + 6px); left: 0; min-width: 195px;
+      background: #1e1c18; border: 1px solid rgba(210,200,180,0.15);
+      border-radius: 10px; padding: 0.35rem 0;
+      box-shadow: 0 12px 36px rgba(0,0,0,0.6);
+      display: none; flex-direction: column; z-index: 200;
+    }
+    .genre-filter-menu.open { display: flex; animation: gf-in 0.14s ease; }
+    @keyframes gf-in { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
+    .gf-opt {
+      font-family: 'Inter', system-ui, sans-serif; font-size: 0.78rem;
+      padding: 0.52rem 1.1rem; cursor: pointer; color: var(--dark-muted);
+      transition: background 0.1s, color 0.1s; background: none; border: none;
+      text-align: left; width: 100%; letter-spacing: 0.01em;
+    }
+    .gf-opt:hover { background: rgba(255,255,255,0.05); color: var(--dark-text); }
+    .gf-opt.gf-selected { color: var(--gold); font-weight: 600; }
+    .gf-divider { height: 1px; background: rgba(210,200,180,0.08); margin: 0.3rem 0; }
+
+    /* ── STATUS PILLS ── */
+    .status-pills {
+      display: flex; border: 1px solid rgba(210,200,180,0.12);
+      border-radius: 7px; overflow: hidden;
+    }
+    .status-pill {
+      flex: 1; font-family: 'Inter', system-ui, sans-serif; font-size: 0.76rem; font-weight: 600;
+      padding: 0.58rem 0.5rem; background: #141210; color: var(--dark-muted);
+      border: none; cursor: pointer; transition: background 0.15s, color 0.15s;
+      letter-spacing: 0.02em; white-space: nowrap;
+    }
+    .status-pill + .status-pill { border-left: 1px solid rgba(210,200,180,0.12); }
+    .status-pill:hover { background: rgba(255,255,255,0.05); color: var(--dark-text); }
+    .status-pill.active { background: rgba(200,163,72,0.15); color: var(--gold); }
     .drag-hint{margin-left:auto;font-size:.65rem;color:var(--dark-dim);letter-spacing:.06em}
 
     /* ── MAIN CONTENT ── */
@@ -330,7 +375,13 @@
   <div class="toolbar">
     <button class="add-btn" id="js-add-btn">+ Add Book</button>
     <input class="search-input" type="text" id="js-search" placeholder="Search books…">
-    <select class="genre-filter-select" id="js-genre-filter"><option value="">All Genres</option></select>
+    <div class="genre-filter" id="genre-filter-wrap">
+      <button class="genre-filter-btn" id="genre-filter-btn" type="button">
+        <span id="genre-filter-label">All Genres</span>
+        <span class="gf-caret">&#9660;</span>
+      </button>
+      <div class="genre-filter-menu" id="genre-filter-menu"></div>
+    </div>
     <span class="drag-hint" id="js-drag-hint" style="display:none">&#9776; Drag to reorder</span>
   </div>
 
@@ -418,11 +469,12 @@
       </div>
       <div class="form-row">
         <label>Status</label>
-        <select id="f-status">
-          <option value="Reading">Reading</option>
-          <option value="Read">Read</option>
-          <option value="Want to read">To Read</option>
-        </select>
+        <div class="status-pills" id="status-pills">
+          <button type="button" class="status-pill active" data-status="Reading">Reading</button>
+          <button type="button" class="status-pill" data-status="Read">Read</button>
+          <button type="button" class="status-pill" data-status="Want to read">To Read</button>
+        </div>
+        <input type="hidden" id="f-status" value="Reading">
       </div>
       <div class="form-row">
         <label>Pages</label>
@@ -641,10 +693,24 @@ function refreshGenreFilter() {
   var genres = [];
   BOOKS.forEach(function(b) { if (b.genre && genres.indexOf(b.genre) === -1) genres.push(b.genre); });
   genres.sort();
-  var sel = document.getElementById('js-genre-filter');
-  var cur = sel.value;
-  sel.innerHTML = '<option value="">All Genres</option>'
-    + genres.map(function(g) { return '<option value="'+esc(g)+'"'+(g===cur?' selected':'')+'>'+esc(g)+'</option>'; }).join('');
+  var menu  = document.getElementById('genre-filter-menu');
+  var label = document.getElementById('genre-filter-label');
+  if (!menu) return;
+  var html = '<button class="gf-opt' + (!genreFilter ? ' gf-selected' : '') + '" data-value="">All Genres</button>'
+    + '<div class="gf-divider"></div>'
+    + genres.map(function(g) {
+        return '<button class="gf-opt' + (g === genreFilter ? ' gf-selected' : '') + '" data-value="' + esc(g) + '">' + esc(g) + '</button>';
+      }).join('');
+  menu.innerHTML = html;
+  if (label) label.textContent = genreFilter || 'All Genres';
+  menu.querySelectorAll('.gf-opt').forEach(function(opt) {
+    opt.addEventListener('click', function() {
+      genreFilter = opt.dataset.value;
+      document.getElementById('genre-filter-btn').classList.remove('open');
+      menu.classList.remove('open');
+      render();
+    });
+  });
 }
 
 // ── Render ────────────────────────────────────────────────────
@@ -845,8 +911,27 @@ document.querySelectorAll('.tab-btn').forEach(function(btn) {
 document.getElementById('js-search').addEventListener('input', function() {
   searchQ = this.value.trim(); render();
 });
-document.getElementById('js-genre-filter').addEventListener('change', function() {
-  genreFilter = this.value; render();
+
+// Genre filter dropdown toggle
+document.getElementById('genre-filter-btn').addEventListener('click', function(e) {
+  e.stopPropagation();
+  this.classList.toggle('open');
+  document.getElementById('genre-filter-menu').classList.toggle('open');
+});
+document.addEventListener('click', function() {
+  var btn  = document.getElementById('genre-filter-btn');
+  var menu = document.getElementById('genre-filter-menu');
+  if (btn)  btn.classList.remove('open');
+  if (menu) menu.classList.remove('open');
+});
+
+// Status pills
+document.querySelectorAll('.status-pill').forEach(function(pill) {
+  pill.addEventListener('click', function() {
+    document.querySelectorAll('.status-pill').forEach(function(p) { p.classList.remove('active'); });
+    pill.classList.add('active');
+    document.getElementById('f-status').value = pill.dataset.status;
+  });
 });
 
 // ── Modal ─────────────────────────────────────────────────────
@@ -859,7 +944,11 @@ function openModal(id) {
   document.getElementById('f-title').value  = book ? (book.title||'') : '';
   document.getElementById('f-author').value = book ? (book.author||'') : '';
   document.getElementById('f-genre').value  = book ? (book.genre||'') : '';
-  document.getElementById('f-status').value = book ? (book.status||'Reading') : 'Reading';
+  var status = book ? (book.status||'Reading') : 'Reading';
+  document.getElementById('f-status').value = status;
+  document.querySelectorAll('.status-pill').forEach(function(p) {
+    p.classList.toggle('active', p.dataset.status === status);
+  });
   document.getElementById('f-pages').value  = book ? (book.pages||'') : '';
   document.getElementById('f-cover').value  = book ? (book.cover||'') : '';
 
