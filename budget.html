@@ -280,15 +280,31 @@
     .data-btn.danger:hover { background: #fee2e2; }
 
     /* ── MODAL ── */
-    .modal-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,.45); z-index: 500; display: none; align-items: center; justify-content: center; }
-    .modal-backdrop.open { display: flex; }
-    .modal { background: var(--card); border-radius: var(--radius); padding: 1.75rem; max-width: 400px; width: 90%; box-shadow: 0 20px 60px rgba(0,0,0,.25); }
-    .modal-title { font-family: 'Source Serif 4', serif; font-size: 1.1rem; font-weight: 600; margin-bottom: .6rem; }
-    .modal-body { font-size: .85rem; color: var(--muted); margin-bottom: 1.25rem; line-height: 1.5; }
+    .modal-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,.48); z-index: 500; display: flex; align-items: center; justify-content: center; visibility: hidden; opacity: 0; transition: opacity .22s, visibility .22s; }
+    .modal-backdrop.open { visibility: visible; opacity: 1; }
+    .modal { background: var(--card); border-radius: var(--radius); padding: 1.75rem 2rem; max-width: 430px; width: 90%; box-shadow: 0 24px 64px rgba(0,0,0,.22), 0 4px 16px rgba(0,0,0,.08); transform: scale(0.93) translateY(12px); transition: transform .26s cubic-bezier(0.34,1.4,0.64,1); }
+    .modal-backdrop.open .modal { transform: scale(1) translateY(0); }
+    .modal-icon { font-size: 1.6rem; margin-bottom: .65rem; }
+    .modal-title { font-family: 'Source Serif 4', serif; font-size: 1.15rem; font-weight: 600; margin-bottom: .45rem; }
+    .modal-body { font-size: .84rem; color: var(--muted); margin-bottom: 1.4rem; line-height: 1.6; }
     .modal-btns { display: flex; gap: .6rem; justify-content: flex-end; }
-    .modal-cancel { background: var(--subtle); border: 1px solid var(--border); border-radius: 8px; padding: .5rem 1.1rem; font-size: .82rem; font-weight: 600; }
-    .modal-confirm { background: var(--expense); color: #fff; border: none; border-radius: 8px; padding: .5rem 1.1rem; font-size: .82rem; font-weight: 600; }
-    .modal-confirm:hover { opacity: .85; }
+    .modal-cancel { background: transparent; border: 1px solid var(--border); border-radius: 9px; padding: .52rem 1.2rem; font-size: .82rem; font-weight: 600; color: var(--muted); cursor: pointer; transition: background .13s, color .13s, border-color .13s; }
+    .modal-cancel:hover { background: var(--subtle); color: var(--ink); border-color: #9ca3af; }
+    .modal-confirm { background: var(--expense); color: #fff; border: none; border-radius: 9px; padding: .52rem 1.2rem; font-size: .82rem; font-weight: 600; cursor: pointer; transition: opacity .15s, transform .1s; }
+    .modal-confirm:hover { opacity: .88; }
+    .modal-confirm:active { transform: scale(0.97); }
+    .modal-confirm.primary { background: var(--ink); }
+    .modal-confirm.success { background: var(--income); }
+
+    /* ── TOAST ── */
+    .toast-area { position: fixed; bottom: 1.5rem; right: 1.5rem; display: flex; flex-direction: column-reverse; gap: .45rem; z-index: 600; pointer-events: none; }
+    .toast { background: #1f2937; color: #fff; padding: .72rem 1rem; border-radius: 11px; font-size: .82rem; font-weight: 500; box-shadow: 0 4px 20px rgba(0,0,0,.24), 0 1px 4px rgba(0,0,0,.1); opacity: 0; transform: translateX(14px) scale(.97); transition: opacity .25s, transform .25s; display: flex; align-items: center; gap: .55rem; min-width: 210px; max-width: 320px; pointer-events: auto; }
+    .toast.show { opacity: 1; transform: translateX(0) scale(1); }
+    .toast-icon { width: 18px; height: 18px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: .72rem; font-weight: 700; flex-shrink: 0; }
+    .toast-success .toast-icon { background: var(--income); }
+    .toast-error .toast-icon { background: var(--expense); }
+    .toast-info .toast-icon { background: #4b5563; }
+    .toast-msg { flex: 1; line-height: 1.4; }
 
     /* ── MISC ── */
     .no-data { text-align: center; padding: 2rem; color: var(--muted); font-style: italic; font-family: 'Source Serif 4', serif; }
@@ -580,6 +596,7 @@
 <!-- MODAL -->
 <div class="modal-backdrop" id="modal">
   <div class="modal">
+    <div class="modal-icon" id="modal-icon"></div>
     <div class="modal-title" id="modal-title"></div>
     <div class="modal-body" id="modal-body"></div>
     <div class="modal-btns">
@@ -589,8 +606,117 @@
   </div>
 </div>
 
+<!-- TOASTS -->
+<div class="toast-area" id="toast-area"></div>
+
 <script src="sync.js?v=202605081329"></script>
 <script>
+/* ═══════════════════════════════════════════════════════
+   CUSTOM SELECT
+═══════════════════════════════════════════════════════ */
+var CSel = (function() {
+  var map = {};
+
+  function build(el) {
+    if (!el || el._csBuilt) return;
+    el._csBuilt = true;
+    var wrap = document.createElement('div');
+    wrap.className = 'csel-wrap';
+    el.parentNode.insertBefore(wrap, el);
+    el.style.cssText = 'position:absolute;opacity:0;pointer-events:none;width:1px;height:1px;';
+    wrap.appendChild(el);
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'csel-btn';
+    btn.innerHTML = '<span class="csel-label"></span><svg class="csel-caret" viewBox="0 0 10 6" width="10" height="6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+    wrap.appendChild(btn);
+    var menu = document.createElement('div');
+    menu.className = 'csel-menu';
+    wrap.appendChild(menu);
+    map[el.id] = { el: el, wrap: wrap, btn: btn, menu: menu };
+    btn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var isOpen = menu.classList.contains('open');
+      closeAll();
+      if (!isOpen) {
+        menu.classList.add('open');
+        btn.classList.add('open');
+        var sel = menu.querySelector('.csel-opt.selected');
+        if (sel) sel.scrollIntoView({ block: 'nearest' });
+      }
+    });
+    refresh(el);
+  }
+
+  function refresh(el) {
+    if (!el || !map[el.id]) return;
+    var inst = map[el.id];
+    var menu = inst.menu, btn = inst.btn;
+    var label = btn.querySelector('.csel-label');
+    menu.innerHTML = '';
+    var opts = Array.prototype.slice.call(el.options);
+    opts.forEach(function(opt) {
+      var item = document.createElement('button');
+      item.type = 'button';
+      item.className = 'csel-opt' + (opt.value === el.value ? ' selected' : '') + (!opt.value ? ' csel-ph-opt' : '');
+      item.textContent = opt.text;
+      item.dataset.value = opt.value;
+      (function(o) {
+        item.addEventListener('click', function(e) {
+          e.stopPropagation();
+          el.value = o.value;
+          el.dispatchEvent(new Event('change', { bubbles: true }));
+          refresh(el);
+          closeAll();
+        });
+      })(opt);
+      menu.appendChild(item);
+    });
+    var selOpt = el.options[el.selectedIndex];
+    label.textContent = selOpt ? selOpt.text : '';
+    label.classList.toggle('csel-ph', !selOpt || !selOpt.value);
+  }
+
+  function refreshById(id) {
+    var inst = map[id];
+    if (inst) refresh(inst.el);
+  }
+
+  function closeAll() {
+    for (var k in map) {
+      if (map.hasOwnProperty(k)) {
+        map[k].menu.classList.remove('open');
+        map[k].btn.classList.remove('open');
+      }
+    }
+  }
+
+  document.addEventListener('click', closeAll);
+  document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeAll(); });
+
+  return { build: build, refresh: refresh, refreshById: refreshById };
+})();
+
+/* ═══════════════════════════════════════════════════════
+   TOASTS
+═══════════════════════════════════════════════════════ */
+function showToast(msg, type) {
+  type = type || 'info';
+  var icons = { success: '✓', error: '✕', info: 'ℹ' };
+  var area = document.getElementById('toast-area');
+  var t = document.createElement('div');
+  t.className = 'toast toast-' + type;
+  t.innerHTML = '<div class="toast-icon">' + (icons[type] || 'ℹ') + '</div><span class="toast-msg">' + msg + '</span>';
+  area.appendChild(t);
+  requestAnimationFrame(function() {
+    requestAnimationFrame(function() { t.classList.add('show'); });
+  });
+  setTimeout(function() {
+    t.classList.remove('show');
+    setTimeout(function() { if (t.parentNode) t.parentNode.removeChild(t); }, 350);
+  }, 3200);
+}
+
 /* ═══════════════════════════════════════════════════════
    BUDGET — Core data model & persistence
 ═══════════════════════════════════════════════════════ */
@@ -1049,7 +1175,8 @@ function renderTracking() {
           DATA.transactions = DATA.transactions.filter(function(t) { return t.id !== btn.dataset.id; });
           saveData();
           renderTracking();
-        });
+          showToast('Transaction deleted.', 'info');
+        }, { icon: '🗑', confirmText: 'Delete' });
       });
     });
   }
@@ -1168,11 +1295,13 @@ function populateYearSelects() {
       if (years.indexOf(thisY) !== -1) el.value = thisY;
       else el.value = years[years.length - 1];
     }
+    CSel.refreshById(id);
   });
 
   var copyFrom = document.getElementById('plan-copy-from');
   copyFrom.innerHTML = '<option value="">Copy budgets from…</option>' +
     years.map(function(y) { return '<option value="' + y + '">' + y + '</option>'; }).join('');
+  CSel.refreshById('plan-copy-from');
 }
 
 function populateMonthSelects() {
@@ -1185,6 +1314,8 @@ function populateMonthSelects() {
   trkMonth.innerHTML = '<option value="">All Months</option>' + MONTHS_FULL.map(function(m, i) {
     return '<option value="' + i + '">' + m + '</option>';
   }).join('');
+  CSel.refreshById('dash-month');
+  CSel.refreshById('trk-month');
 }
 
 function populateCategoryDropdown() {
@@ -1193,11 +1324,13 @@ function populateCategoryDropdown() {
   var cats = type ? (DATA.categories[type] || []) : [];
   catSel.innerHTML = (cats.length ? '' : '<option value="">Select type first…</option>') +
     cats.map(function(c) { return '<option value="' + c + '">' + c + '</option>'; }).join('');
+  CSel.refreshById('tx-category');
 
   var trkCat = document.getElementById('trk-cat');
   var all = DATA.categories.income.concat(DATA.categories.expense).concat(DATA.categories.saving);
   trkCat.innerHTML = '<option value="">All Categories</option>' +
     all.map(function(c) { return '<option value="' + c + '">' + c + '</option>'; }).join('');
+  CSel.refreshById('trk-cat');
 }
 
 function updateEffNote() {
@@ -1216,18 +1349,32 @@ function updateEffNote() {
 /* ═══════════════════════════════════════════════════════
    MODAL
 ═══════════════════════════════════════════════════════ */
-function showModal(title, body, onConfirm) {
+function showModal(title, body, onConfirm, opts) {
+  opts = opts || {};
+  document.getElementById('modal-icon').textContent = opts.icon || '';
+  document.getElementById('modal-icon').style.display = opts.icon ? '' : 'none';
   document.getElementById('modal-title').textContent = title;
   document.getElementById('modal-body').textContent = body;
+
+  var confirmBtn = document.getElementById('modal-confirm');
+  confirmBtn.textContent = opts.confirmText || 'Confirm';
+  confirmBtn.className = 'modal-confirm' + (opts.style ? ' ' + opts.style : '');
+
   var modal = document.getElementById('modal');
   modal.classList.add('open');
-  var confirmBtn = document.getElementById('modal-confirm');
-  var cancelBtn = document.getElementById('modal-cancel');
+
   var newConfirm = confirmBtn.cloneNode(true);
   confirmBtn.parentNode.replaceChild(newConfirm, confirmBtn);
-  newConfirm.addEventListener('click', function() { modal.classList.remove('open'); onConfirm(); });
-  cancelBtn.onclick = function() { modal.classList.remove('open'); };
-  modal.onclick = function(e) { if (e.target === modal) modal.classList.remove('open'); };
+
+  function close() { modal.classList.remove('open'); }
+  newConfirm.addEventListener('click', function() { close(); onConfirm(); });
+  document.getElementById('modal-cancel').onclick = close;
+  modal.onclick = function(e) { if (e.target === modal) close(); };
+
+  function escHandler(e) {
+    if (e.key === 'Escape') { close(); document.removeEventListener('keydown', escHandler); }
+  }
+  document.addEventListener('keydown', escHandler);
 }
 
 /* ═══════════════════════════════════════════════════════
@@ -1253,6 +1400,12 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   document.addEventListener('click', function() {
     document.querySelectorAll('.nav-drop-menu').forEach(function(m) { m.style.display = ''; });
+  });
+
+  // Build custom selects (must happen before populating options)
+  ['dash-year','dash-month','plan-year','plan-copy-from','tx-type','tx-category','trk-year','trk-month','trk-type','trk-cat'].forEach(function(id) {
+    var el = document.getElementById(id);
+    if (el) CSel.build(el);
   });
 
   // Populate controls
@@ -1287,11 +1440,12 @@ document.addEventListener('DOMContentLoaded', function() {
     if (!fromYear || fromYear === toYear) return;
     showModal('Copy Budget?', 'Copy all budget amounts from ' + fromYear + ' into ' + toYear + '? This will overwrite existing entries.', function() {
       var src = DATA.budgets[fromYear];
-      if (!src) return;
+      if (!src) { showToast('No budget data found for ' + fromYear + '.', 'error'); return; }
       DATA.budgets[toYear] = JSON.parse(JSON.stringify(src));
       saveData();
       renderBudgetPlan();
-    });
+      showToast('Budget copied from ' + fromYear + ' to ' + toYear + '.', 'success');
+    }, { icon: '📋', confirmText: 'Copy', style: 'primary' });
   });
 
   // Add transaction form toggle
@@ -1326,7 +1480,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var amount = parseFloat(document.getElementById('tx-amount').value);
     var details = document.getElementById('tx-details').value.trim();
     if (!date || !type || !category || isNaN(amount) || amount <= 0) {
-      alert('Please fill in all required fields with valid values.');
+      showToast('Please fill in all required fields with valid values.', 'error');
       return;
     }
     DATA.transactions.push({ id: genId(), date: date, type: type, category: category, amount: amount, details: details });
@@ -1346,7 +1500,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (method) DATA.settings.savingsRateMethod = method.value;
     saveData();
     populateYearSelects();
-    alert('Settings saved.');
+    showToast('Settings saved.', 'success');
   });
 
   // Export
@@ -1372,9 +1526,9 @@ document.addEventListener('DOMContentLoaded', function() {
           populateYearSelects();
           renderSettings();
           renderDashboard();
-          alert('Data imported successfully.');
-        });
-      } catch(err) { alert('Invalid JSON file.'); }
+          showToast('Data imported successfully.', 'success');
+        }, { icon: '📥', confirmText: 'Import', style: 'primary' });
+      } catch(err) { showToast('Invalid JSON file — please check the format.', 'error'); }
     };
     reader.readAsText(file);
     this.value = '';
@@ -1388,8 +1542,8 @@ document.addEventListener('DOMContentLoaded', function() {
       saveData();
       renderDashboard();
       renderTracking();
-      alert('Data reset.');
-    });
+      showToast('All data has been reset.', 'info');
+    }, { icon: '⚠️', confirmText: 'Reset' });
   });
 
   // Initial render
