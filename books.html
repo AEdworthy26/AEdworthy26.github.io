@@ -1299,7 +1299,9 @@ renderVocab();
 
 // ── SCRAPBOOK ─────────────────────────────────────────────────
 function sbBooks() {
-  return BOOKS.filter(function(b) { return b.status === 'Reading' || b.status === 'Read'; });
+  var reading = BOOKS.filter(function(b) { return b.status === 'Reading'; });
+  var read    = BOOKS.filter(function(b) { return b.status === 'Read'; });
+  return reading.concat(read);
 }
 
 function sbTotalNotes() {
