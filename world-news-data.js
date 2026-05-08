@@ -4,58 +4,46 @@
 var WORLD_NEWS = {
   date: "2026-05-08",
   main: {
-    title: "US and Iran Exchange Fire in Strait of Hormuz Despite Declared Ceasefire",
+    title: "US and Iran Exchange Fire in Strait of Hormuz as Ceasefire Strains",
     category: "Geopolitics",
     content: [
-      "The United States and Iran traded fire in the Strait of Hormuz on Thursday in a dangerous escalation that has cast serious doubt over the fragility of their declared ceasefire. The US military reported that Iranian forces attacked three US Navy destroyers as they transited the strategically vital waterway, prompting American forces to intercept the strikes and retaliate by targeting what Central Command described as Iranian military facilities responsible for the attacks. The incident marks one of the most direct and alarming confrontations between the two nations in recent memory, raising fears that the broader conflict could reignite at any moment.",
-      "President Donald Trump moved quickly to assert that the ceasefire agreement remained technically in place, even as his administration acknowledged that US forces had struck Iranian military targets in response to the provocation. Speaking publicly, Trump warned Iran that it had better 'sign the agreement fast,' signalling that American patience for Iranian brinkmanship is wearing thin. The dual message — that the ceasefire holds while military strikes continue — has left observers and allies deeply confused about the actual status of hostilities between the two countries.",
-      "Iran, for its part, took the opposite view, accusing the United States of being the aggressor and violating the terms of the truce. Tehran alleged that American forces had targeted an Iranian oil tanker and carried out attacks on coastal areas, framing the confrontation as an unprovoked assault rather than a defensive response. The competing narratives from both governments have made it extremely difficult for the international community to assess culpability, and the risk of miscalculation in one of the world\'s most critical maritime chokepoints remains extraordinarily high.",
-      "The Strait of Hormuz is the passage through which roughly a fifth of the world\'s oil supply flows, and the exchange of fire sent immediate shockwaves through global energy markets. Brent crude prices jumped sharply on the news, reflecting investor anxiety about potential disruptions to supply if the situation deteriorates further. Germany\'s Finance Minister Lars Klingbeil was among the first European officials to react sharply, blaming Trump\'s 'irresponsible war in Iran' for harming the German economy and warning that continued instability in the region would compound an already difficult global economic environment.",
-      "The clash comes at a moment when diplomatic channels between Washington and Tehran have been under enormous strain, with the two sides struggling to formalise any lasting agreement since the initial ceasefire was announced. Secretary of State Marco Rubio\'s concurrent visit to the Vatican — partly aimed at managing escalating tensions between the Trump administration and Pope Leo — underscores the degree to which America\'s foreign relationships are under stress on multiple fronts simultaneously. The international community is watching the Strait of Hormuz situation with grave concern, aware that a single miscalculation in those narrow waters could trigger a far wider regional or even global conflict."
+      "A fragile ceasefire between the United States and Iran came under severe strain on Thursday after the two powers exchanged fire in the Strait of Hormuz, one of the world's most strategically critical waterways. President Donald Trump insisted the truce remained in place despite the incident, characterising it as a limited exchange that did not constitute a breakdown in the broader agreement. The episode has nonetheless sent shockwaves through global energy markets and diplomatic channels, raising fears that months of tentative de-escalation could rapidly unravel.",
+      "Iran moved swiftly to accuse Washington of violating the ceasefire terms, alleging that US forces had targeted an Iranian oil tanker and carried out strikes on coastal areas during the confrontation. Tehran's foreign ministry demanded an international investigation and called the actions a deliberate provocation, framing them as evidence of American bad faith in negotiations. The competing accounts of events have made it difficult for outside observers to establish a clear picture of how the exchange began and who bore responsibility for escalating the situation.",
+      "The Strait of Hormuz is the narrow chokepoint through which roughly a fifth of the world's oil supply passes daily, making any military activity in the region immediately consequential for global commodity prices. Brent crude surged on the news, with traders pricing in the risk of a prolonged closure or sustained disruption to tanker traffic in the Gulf. The sensitivity of the waterway means that even a contained military exchange carries outsized economic consequences far beyond the immediate theatre of conflict.",
+      "The incident marks one of the most serious direct confrontations between US and Iranian forces since the ceasefire was announced, and it arrives at a particularly delicate moment in diplomatic efforts to contain Tehran's nuclear programme. Back-channel talks had reportedly been making modest progress in recent weeks, with both sides signalling a cautious willingness to engage. Observers now worry that the exchange of fire could harden positions on both sides and give hardliners in Tehran additional ammunition against any negotiated settlement.",
+      "For the international community, the episode underscores the inherent instability of the current arrangement, in which a ceasefire exists in name without the structural agreements needed to make it durable. European governments, which have invested considerable diplomatic capital in keeping lines of communication open with both Washington and Tehran, issued calls for restraint and urged both parties to return to dialogue. The coming days will likely test whether the fragile equilibrium can hold, or whether a miscalculation in the Hormuz strait tips the region toward a broader confrontation with consequences for global energy security and the wider international order."
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/3ad9/live/27fe0690-4a7e-11f1-b55d-0f258dce1735.jpg",
-    source: "The New York Times",
-    sourceUrl: "https://www.nytimes.com/live/2026/05/07/world/iran-trump-hormuz-peace-deal"
+    image: "https://images.unsplash.com/photo-1569163139394-de4e4f43e4e3?w=1200&auto=format&fit=crop",
+    source: "BBC News",
+    sourceUrl: "https://www.bbc.com/news/articles/c626zyywxjno?at_medium=RSS&at_campaign=rss"
   },
   secondary: [
     {
       id: "s1",
-      title: "Russia\'s Victory Day Parade Stripped of Tanks as Ukraine War Strains Military",
-      summary: "Moscow\'s Victory Day parade will feature no military hardware for the first time in nearly two decades, widely seen as a sign that the Ukraine war is depleting Russia\'s armoured forces.",
-      body: [
-        "For the first time in approximately twenty years, Russia\'s Victory Day parade in Moscow on Saturday will consist solely of marching soldiers, with no tanks or other military hardware on display. The striking absence of armoured vehicles — long a centrepiece of the Kremlin\'s annual showcase of military might — is being interpreted by many analysts as a telling indicator that the prolonged war in Ukraine has taken a significant toll on Russia\'s available equipment and its willingness to expose that reality publicly.",
-        "The parade has historically served as a powerful propaganda tool for the Kremlin, designed to project an image of overwhelming military strength and national pride. The decision to strip it of hardware this year risks undermining that narrative at a sensitive moment, suggesting that the costs of the Ukraine conflict — in both men and machines — are becoming increasingly difficult for Moscow to conceal from its own population and the wider world."
-      ],
-      image: "https://images.unsplash.com/photo-1610332227380-f16c2404484f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxSdXNzaWElNUN8ZW58MHwwfHx8MTc3ODIxNjQ4Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      title: "Anti-War Protests Rock Japan as PM Pushes for Stronger Defence",
+      summary: "Japan has seen its largest anti-war demonstrations in decades as Prime Minister Ishiba presses ahead with plans to expand the country's military capabilities and reinterpret its pacifist constitution.",
+      image: "https://images.unsplash.com/photo-1580130775562-0ef92da028de?w=800&auto=format&fit=crop",
       source: "BBC News",
-      url: "https://www.bbc.com/news/articles/cwy2gj2jlr8o?at_medium=RSS&at_campaign=rss",
-      category: "Conflict"
-    },
-    {
-      id: "s2",
-      title: "China Sentences Two Former Defence Ministers to Suspended Death Penalties",
-      summary: "Two of China\'s former defence ministers have been handed suspended death sentences for bribery under President Xi Jinping\'s sweeping and long-running anti-corruption campaign.",
-      body: [
-        "Chinese courts have sentenced two former defence ministers to suspended death penalties after convicting them of bribery, the latest high-profile scalps in President Xi Jinping\'s anti-corruption drive that has now stretched across more than a decade. Suspended death sentences in China typically result in commutation to life imprisonment after a two-year review period, but the severity of the charge sends a stark message about the scale of alleged misconduct at the very top of the People\'s Liberation Army.",
-        "Xi\'s anti-corruption campaign has ensnared hundreds of senior military and civilian officials since it was launched in 2012, and observers note that it has also served to consolidate the president\'s personal grip on the armed forces. The sentencing of two defence ministers simultaneously is an exceptionally rare and dramatic development, raising questions internationally about the internal stability and cohesion of China\'s military leadership structure."
-      ],
-      image: "https://images.unsplash.com/photo-1588423886414-df39bc9d52d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxDaGluYSUyMFNlbnRlbmNlcyUyMFR3byUyMEZvcm1lciUyMERlZmVuY2UlMjBNaW5pc3RlcnMlMjB0byUyMFN1c3BlbmRlZCUyMERlYXRoJTIwUGVuYWx0aWVzfGVufDB8MHx8fDE3NzgyMTY0ODZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "NPR",
-      url: "https://www.npr.org/2026/05/07/g-s1-120688/china-gives-suspended-death-sentences-to-2-former-defense-ministers-accused-of-bribery",
+      url: "https://www.bbc.com/news/articles/c4g93v8jqnyo?at_medium=RSS&at_campaign=rss",
       category: "Politics"
     },
     {
+      id: "s2",
+      title: "Somali Woman Describes Torture After Arrest for Peaceful Protest",
+      summary: "Sadia Moalim Ali, a 27-year-old rickshaw driver jailed in Somalia for participating in anti-government demonstrations, says she was stripped and beaten by male guards in an exclusive interview given from prison.",
+      image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&auto=format&fit=crop",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/global-development/2026/may/07/sadia-moalim-ali-woman-somalia-jail-peaceful-protest",
+      category: "Human Rights"
+    },
+    {
       id: "s3",
-      title: "WHO Reassures World as Hantavirus Cases on Cruise Ship Leave Three Dead",
-      summary: "The World Health Organization says a hantavirus outbreak aboard the cruise ship MV Hondius, which has killed three passengers, does not represent the beginning of a pandemic.",
-      body: [
-        "The World Health Organization has moved to calm public anxiety after a hantavirus outbreak aboard the MV Hondius cruise ship resulted in three passenger deaths and seven confirmed or suspected cases, with several individuals — including two British nationals — requiring emergency medical evacuation. The WHO emphasised that unlike Covid-19, hantavirus does not transmit easily between humans, making a pandemic scenario highly unlikely, though the outbreak remains a serious public health incident under active investigation.",
-        "The MV Hondius is now heading for the Canary Islands after Spain confirmed the vessel would be permitted to dock, having previously been blocked from ports amid fears over the outbreak. Among those evacuated was British expedition guide Martin Anstee, 56, who is receiving care in the Netherlands, while a 69-year-old British passenger remains in intensive care at a private hospital in Johannesburg; both are reported to be improving, offering some cautious grounds for optimism."
-      ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/98ce/live/b935e910-4a16-11f1-a7ce-b934bcb15ff4.jpg",
+      title: "World Cup Fans in China and India Face Broadcast Blackout",
+      summary: "With the tournament just weeks away, broadcasters in the world's two most populous countries have yet to secure rights deals with FIFA, leaving billions of potential viewers facing the prospect of no official coverage.",
+      image: "https://images.unsplash.com/photo-1568454537842-d933259bb258?w=800&auto=format&fit=crop",
       source: "BBC News",
-      url: "https://www.bbc.com/news/articles/cnvpzgn26edo?at_medium=RSS&at_campaign=rss",
-      category: "Health"
+      url: "https://www.bbc.com/news/articles/cp9py4k8mllo?at_medium=RSS&at_campaign=rss",
+      category: "Sport"
     }
   ]
 };

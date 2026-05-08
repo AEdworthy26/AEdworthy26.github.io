@@ -3,6 +3,6 @@
 
 var QUOTE_DATA = {
   date: "2026-05-08",
-  text: "The good life is one inspired by love and guided by knowledge.",
-  author: "Bertrand Russell"
+  text: "The crisis consists precisely in the fact that the old is dying and the new cannot be born; in this interregnum a great variety of morbid symptoms appear.",
+  author: "Antonio Gramsci"
 };
