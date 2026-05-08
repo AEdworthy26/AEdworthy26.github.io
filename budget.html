@@ -1069,57 +1069,51 @@ function renderBudgetPlan() {
     { key: 'expense', label: 'Expenses', cats: C.expense },
     { key: 'saving', label: 'Savings', cats: C.saving }
   ];
-  var html = '<thead><tr><th>Category</th>';
-  MONTHS.forEach(function(m) { html += '<th>' + m + '</th>'; });
-  html += '<th>Annual</th></tr></thead><tbody>';
+
+  var html = '<thead><tr><th style="text-align:left">Category</th><th>Monthly Budget</th><th>Annual</th></tr></thead><tbody>';
 
   sections.forEach(function(sec) {
-    html += '<tr class="section-row"><td colspan="14">' + sec.label + '</td></tr>';
+    html += '<tr class="section-row"><td colspan="3">' + sec.label + '</td></tr>';
+    var colorVar = sec.key === 'expense' ? 'var(--expense)' : sec.key === 'saving' ? 'var(--saving)' : 'var(--income)';
     sec.cats.forEach(function(cat) {
-      html += '<tr><td class="cat-name" style="color:var(--' + (sec.key === 'expense' ? 'expense' : sec.key === 'saving' ? 'saving' : 'income') + ')">' + cat + '</td>';
-      var annual = 0;
-      for (var mi = 0; mi < 12; mi++) {
-        var val = getBudget(year, cat, mi);
-        annual += val;
-        html += '<td><input type="number" class="plan-input" data-year="' + year + '" data-cat="' + encodeURIComponent(cat) + '" data-month="' + mi + '" value="' + (val || '') + '" min="0" step="0.01" placeholder="0"></td>';
-      }
-      html += '<td class="plan-cell-annual">' + fmt(annual) + '</td></tr>';
+      var monthly = getMonthlyBudget(year, cat);
+      html += '<tr>'
+        + '<td class="cat-name" style="color:' + colorVar + '">' + cat + '</td>'
+        + '<td style="text-align:right"><div class="plan-amt-wrap"><span class="plan-amt-sym">£</span>'
+        + '<input type="number" class="plan-input" data-year="' + year + '" data-cat="' + encodeURIComponent(cat) + '" value="' + (monthly || '') + '" min="0" step="0.01" placeholder="0">'
+        + '</div></td>'
+        + '<td style="text-align:right;padding-right:.9rem">' + fmt(monthly * 12) + '</td>'
+        + '</tr>';
     });
-    // Section totals
-    html += '<tr class="total-row"><td>Total ' + sec.label + '</td>';
-    var annualTotal = 0;
-    for (var mi = 0; mi < 12; mi++) {
-      var secTotal = sec.cats.reduce(function(s, cat) { return s + getBudget(year, cat, mi); }, 0);
-      annualTotal += secTotal;
-      html += '<td>' + (secTotal > 0 ? fmt(secTotal) : '') + '</td>';
-    }
-    html += '<td class="plan-cell-annual">' + fmt(annualTotal) + '</td></tr>';
+    // Section total
+    var secMonthly = sec.cats.reduce(function(s, c) { return s + getMonthlyBudget(year, c); }, 0);
+    html += '<tr class="total-row">'
+      + '<td>Total ' + sec.label + '</td>'
+      + '<td style="text-align:right">' + fmt(secMonthly) + '</td>'
+      + '<td style="text-align:right;padding-right:.9rem">' + fmt(secMonthly * 12) + '</td>'
+      + '</tr>';
   });
 
   // Net row
-  html += '<tr class="total-row"><td>Net (Income − Exp − Sav)</td>';
-  var annualNet = 0;
-  for (var mi = 0; mi < 12; mi++) {
-    var incB = C.income.reduce(function(s, c) { return s + getBudget(year, c, mi); }, 0);
-    var expB = C.expense.reduce(function(s, c) { return s + getBudget(year, c, mi); }, 0);
-    var savB = C.saving.reduce(function(s, c) { return s + getBudget(year, c, mi); }, 0);
-    var net = incB - expB - savB;
-    annualNet += net;
-    html += '<td style="color:' + (net >= 0 ? 'var(--income)' : 'var(--expense)') + ';font-weight:700;">' + fmt(net) + '</td>';
-  }
-  html += '<td class="plan-cell-annual" style="color:' + (annualNet >= 0 ? 'var(--income)' : 'var(--expense)') + '">' + fmt(annualNet) + '</td></tr>';
-  html += '</tbody>';
+  var incM = C.income.reduce(function(s, c) { return s + getMonthlyBudget(year, c); }, 0);
+  var expM = C.expense.reduce(function(s, c) { return s + getMonthlyBudget(year, c); }, 0);
+  var savM = C.saving.reduce(function(s, c) { return s + getMonthlyBudget(year, c); }, 0);
+  var netM = incM - expM - savM;
+  html += '<tr class="total-row">'
+    + '<td>Net (Income − Exp − Sav)</td>'
+    + '<td style="text-align:right;color:' + (netM >= 0 ? 'var(--income)' : 'var(--expense)') + ';font-weight:700">' + fmt(netM) + '</td>'
+    + '<td style="text-align:right;padding-right:.9rem;color:' + (netM >= 0 ? 'var(--income)' : 'var(--expense)') + ';font-weight:700">' + fmt(netM * 12) + '</td>'
+    + '</tr>';
 
+  html += '</tbody>';
   document.getElementById('plan-table').innerHTML = html;
 
-  // Attach listeners
   document.querySelectorAll('.plan-input').forEach(function(inp) {
     inp.addEventListener('change', function() {
       var yr = parseInt(this.dataset.year);
       var cat = decodeURIComponent(this.dataset.cat);
-      var mi = parseInt(this.dataset.month);
       var val = parseFloat(this.value) || 0;
-      setBudget(yr, cat, mi, val);
+      setMonthlyBudget(yr, cat, val);
       renderBudgetPlan();
     });
   });
