@@ -331,13 +331,10 @@
 
 <!-- TICKER -->
 <div class="ticker-wrap">
-  <div class="ticker-label">&#9679; Live</div>
+  <div class="ticker-label">Breaking News</div>
   <div class="ticker-inner">
-    <div class="ticker-track" id="ticker-track">
-      <span>Personal Hub</span><span class="ticker-sep">&#8226;</span>
-      <span>Budget Tracker</span><span class="ticker-sep">&#8226;</span>
-      <span>Personal Hub</span><span class="ticker-sep">&#8226;</span>
-      <span>Budget Tracker</span><span class="ticker-sep">&#8226;</span>
+    <div class="ticker-track" id="js-ticker">
+      <span style="color:rgba(255,255,255,0.5); font-size:0.78rem; padding:0 2rem; font-family:'Source Serif 4',serif;">Loading headlines&hellip;</span>
     </div>
   </div>
 </div>
@@ -630,6 +627,8 @@
 <!-- TOASTS -->
 <div class="toast-area" id="toast-area"></div>
 
+<script src="world-news-data.js?v=202605081329"></script>
+<script src="ticker.js?v=202605081329"></script>
 <script src="sync.js?v=202605081329"></script>
 <script>
 /* ═══════════════════════════════════════════════════════
@@ -1408,19 +1407,26 @@ function renderSettings() {
     });
   });
 
+  function addCategory(type) {
+    var inp = document.getElementById('cat-add-input-' + type);
+    var val = inp.value.trim();
+    if (!val) return;
+    if (DATA.categories[type].indexOf(val) === -1) {
+      DATA.categories[type].push(val);
+      saveData();
+      renderSettings();
+      populateCategoryDropdown();
+    }
+    inp.value = '';
+  }
+
   catEl.querySelectorAll('.cat-add-btn').forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      var type = btn.dataset.type;
-      var inp = document.getElementById('cat-add-input-' + type);
-      var val = inp.value.trim();
-      if (!val) return;
-      if (DATA.categories[type].indexOf(val) === -1) {
-        DATA.categories[type].push(val);
-        saveData();
-        renderSettings();
-        populateCategoryDropdown();
-      }
-      inp.value = '';
+    btn.addEventListener('click', function() { addCategory(btn.dataset.type); });
+  });
+
+  catEl.querySelectorAll('.cat-add-input').forEach(function(inp) {
+    inp.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') { e.preventDefault(); addCategory(inp.id.replace('cat-add-input-', '')); }
     });
   });
 }
