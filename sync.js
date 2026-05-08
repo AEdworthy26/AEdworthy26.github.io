@@ -43,6 +43,8 @@
     'ph_vocab_v1',
     // Daily cache (preserves today's rotation across devices)
     'reads_daily',
+    // Budget tracker
+    'ph_budget_v1',
   ];
 
   /* ── helpers ── */
