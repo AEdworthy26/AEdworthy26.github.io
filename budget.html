@@ -177,23 +177,25 @@
     .chart-wide-container { position: relative; height: 220px; }
     @media (max-width: 700px) { .charts-grid { grid-template-columns: 1fr; } }
 
-    /* ── BUDGET PLAN GRID ── */
-    .plan-wrap { overflow-x: auto; }
-    .plan-table { border-collapse: collapse; min-width: 900px; font-size: .8rem; }
-    .plan-table th { font-size: .65rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--muted); padding: .45rem .6rem; text-align: right; background: var(--subtle); border: 1px solid var(--border); white-space: nowrap; position: sticky; top: 0; z-index: 2; }
-    .plan-table th:first-child { text-align: left; position: sticky; left: 0; z-index: 3; min-width: 155px; }
-    .plan-table td { padding: .3rem .5rem; border: 1px solid var(--border); text-align: right; }
-    .plan-table td:first-child { text-align: left; font-weight: 500; background: var(--card); position: sticky; left: 0; z-index: 1; }
-    .plan-table .section-row td { background: var(--subtle); font-weight: 700; font-size: .72rem; letter-spacing: .07em; text-transform: uppercase; color: var(--muted); padding: .4rem .6rem; }
-    .plan-table .section-row td:first-child { color: var(--muted); }
+    /* ── BUDGET PLAN TABLE ── */
+    .plan-wrap { }
+    .plan-table { border-collapse: collapse; width: 100%; font-size: .85rem; }
+    .plan-table th { font-size: .68rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--muted); padding: .55rem .9rem; text-align: right; border-bottom: 2px solid var(--border); }
+    .plan-table th:first-child { text-align: left; }
+    .plan-table td { padding: .55rem .9rem; text-align: right; border-bottom: 1px solid var(--subtle); font-variant-numeric: tabular-nums; vertical-align: middle; }
+    .plan-table td:first-child { text-align: left; }
+    .plan-table .section-row td { background: var(--subtle); font-weight: 800; font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; padding: .4rem .9rem; }
     .plan-table .total-row td { background: #f8f6f0; font-weight: 700; }
-    .plan-table .total-row td:first-child { font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; }
-    .plan-input { width: 100%; background: transparent; border: none; text-align: right; font-size: .8rem; font-variant-numeric: tabular-nums; color: var(--ink); padding: 0; outline: none; min-width: 55px; }
-    .plan-input:focus { background: #fffbeb; border-radius: 3px; }
-    .plan-cell-annual { font-weight: 600; color: var(--muted); background: #f8f6f0 !important; font-size: .78rem; font-variant-numeric: tabular-nums; }
-    .section-income .plan-table td:first-child.cat-name { color: var(--income); }
-    .section-expense .plan-table td:first-child.cat-name { color: var(--expense); }
-    .section-saving .plan-table td:first-child.cat-name { color: var(--saving); }
+    .plan-table .total-row td:first-child { font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+    .plan-table .net-row td { border-top: 2px solid var(--border); font-weight: 700; }
+    .plan-table .net-row td:first-child { font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; }
+    .plan-amt-wrap { display: inline-flex; align-items: center; background: var(--subtle); border: 1px solid var(--border); border-radius: 8px; padding: .3rem .65rem; transition: border-color .15s, background .15s; }
+    .plan-amt-wrap:focus-within { border-color: #6b7280; background: #fff; box-shadow: 0 0 0 3px rgba(107,114,128,.1); }
+    .plan-amt-sym { font-size: .8rem; color: var(--muted); line-height: 1; user-select: none; }
+    .plan-input { width: 80px; background: transparent; border: none; outline: none; font-size: .85rem; font-variant-numeric: tabular-nums; text-align: right; color: var(--ink); }
+    .plan-input::-webkit-inner-spin-button, .plan-input::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+    .plan-input[type=number] { -moz-appearance: textfield; }
+    .plan-cell-annual { color: var(--muted); font-size: .82rem; }
 
     /* ── TRACKING ── */
     .add-form-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 1rem; overflow: hidden; }
@@ -809,6 +811,21 @@ function setBudget(year, category, monthIdx, val) {
   if (!DATA.budgets[y]) DATA.budgets[y] = {};
   if (!DATA.budgets[y][category]) DATA.budgets[y][category] = [0,0,0,0,0,0,0,0,0,0,0,0];
   DATA.budgets[y][category][monthIdx] = val;
+  saveData();
+}
+
+function getMonthlyBudget(year, category) {
+  var y = String(year);
+  if (!DATA.budgets[y] || !DATA.budgets[y][category]) return 0;
+  var vals = DATA.budgets[y][category];
+  var sum = vals.reduce(function(a, b) { return a + (b || 0); }, 0);
+  return Math.round((sum / 12) * 100) / 100;
+}
+
+function setMonthlyBudget(year, category, amount) {
+  var y = String(year);
+  if (!DATA.budgets[y]) DATA.budgets[y] = {};
+  DATA.budgets[y][category] = [amount,amount,amount,amount,amount,amount,amount,amount,amount,amount,amount,amount];
   saveData();
 }
 
