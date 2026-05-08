@@ -2208,18 +2208,36 @@ function renderSavedReportsList() {
     return;
   }
   listEl.innerHTML = reports.map(function(r) {
-    return '<div class="saved-report-item" data-year="' + r.year + '" data-month="' + r.month + '">' +
-      MONTHS_FULL[r.month] + ' ' + r.year +
-      '<div style="font-size:.68rem;color:var(--muted);">' + (r.generatedAt ? new Date(r.generatedAt).toLocaleDateString('en-GB') : '') + '</div>' +
+    return '<div class="saved-report-item" data-year="' + r.year + '" data-month="' + r.month + '" style="display:flex;align-items:center;justify-content:space-between;gap:.5rem;">' +
+      '<div style="flex:1;min-width:0;">' +
+        MONTHS_FULL[r.month] + ' ' + r.year +
+        '<div style="font-size:.68rem;color:var(--muted);">' + (r.generatedAt ? new Date(r.generatedAt).toLocaleDateString('en-GB') : '') + '</div>' +
+      '</div>' +
+      '<button class="del-report-btn" data-year="' + r.year + '" data-month="' + r.month + '" title="Delete report" style="background:none;border:none;cursor:pointer;color:var(--muted);font-size:.9rem;padding:.15rem .3rem;border-radius:4px;flex-shrink:0;line-height:1;">✕</button>' +
       '</div>';
   }).join('');
   listEl.querySelectorAll('.saved-report-item').forEach(function(item) {
-    item.addEventListener('click', function() {
+    item.addEventListener('click', function(e) {
+      if (e.target.classList.contains('del-report-btn')) return;
       var yr = parseInt(this.dataset.year);
       var mo = parseInt(this.dataset.month);
       listEl.querySelectorAll('.saved-report-item').forEach(function(i) { i.classList.remove('active'); });
       this.classList.add('active');
       displayReport(DATA.reports[String(yr)][String(mo)]);
+    });
+  });
+  listEl.querySelectorAll('.del-report-btn').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var yr = String(btn.dataset.year);
+      var mo = String(btn.dataset.month);
+      if (!DATA.reports[yr]) return;
+      delete DATA.reports[yr][mo];
+      if (Object.keys(DATA.reports[yr]).length === 0) delete DATA.reports[yr];
+      saveData();
+      var displayEl = document.getElementById('report-display');
+      if (displayEl) displayEl.innerHTML = '';
+      renderReports();
     });
   });
 }
