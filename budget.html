@@ -191,6 +191,11 @@
     .plan-table .total-row td { background: #f8f6f0; font-weight: 700; }
     .plan-table .total-row td:first-child { font-size: .62rem; letter-spacing: .05em; text-transform: uppercase; color: var(--muted); }
     .plan-cell-annual { color: var(--muted); padding-right: .4rem !important; }
+    .plan-drag { display: inline-block; cursor: grab; color: var(--muted); margin-right: .35rem; font-size: .8rem; opacity: .35; user-select: none; vertical-align: middle; }
+    .plan-drag:active { cursor: grabbing; }
+    .plan-table tr[draggable]:hover .plan-drag { opacity: .7; }
+    .plan-table tr[draggable].plan-dragging { opacity: .4; }
+    .plan-table tr[draggable].plan-drag-over td { background: rgba(107,114,128,.09) !important; }
     .plan-input { width: 100%; background: var(--subtle); border: 1px solid transparent; border-radius: 4px; outline: none; font-size: .72rem; font-variant-numeric: tabular-nums; text-align: right; color: var(--ink); padding: .18rem .25rem; box-sizing: border-box; transition: border-color .15s, background .15s; }
     .plan-input:focus { border-color: #6b7280; background: #fff; box-shadow: 0 0 0 2px rgba(107,114,128,.1); }
     .plan-input::-webkit-inner-spin-button, .plan-input::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
@@ -313,6 +318,13 @@
     .section-divider::after { content: ''; flex: 1; height: 1px; background: var(--border); }
     .inline-note { font-size: .75rem; color: var(--muted); font-style: italic; }
     .plan-copy-row { display: flex; align-items: center; gap: .75rem; margin-bottom: .75rem; flex-wrap: wrap; }
+    .plan-yr-nav { display: inline-flex; align-items: center; gap: .3rem; }
+    .plan-yr-btn { background: var(--card); border: 1px solid var(--border); border-radius: 7px; padding: .28rem .6rem; font-size: .88rem; line-height: 1; cursor: pointer; color: var(--ink); transition: background .12s; }
+    .plan-yr-btn:hover { background: var(--subtle); }
+    .plan-yr-val { font-size: .88rem; font-weight: 700; color: var(--ink); min-width: 3rem; text-align: center; }
+    .plan-view-toggle { display: inline-flex; background: var(--subtle); border: 1px solid var(--border); border-radius: 8px; padding: 2px; gap: 2px; }
+    .pvt-btn { background: none; border: none; border-radius: 6px; padding: .28rem .8rem; font-size: .74rem; font-weight: 600; letter-spacing: .04em; cursor: pointer; color: var(--muted); transition: background .15s, color .15s; }
+    .pvt-btn.active { background: #fff; color: var(--ink); box-shadow: 0 1px 4px rgba(0,0,0,.1); }
   </style>
 </head>
 <body>
@@ -436,8 +448,16 @@
   <!-- ═══════════════════════════ BUDGET PLAN ═══════════════════════════ -->
   <div id="tab-plan" class="tab-panel">
     <div class="plan-copy-row">
-      <span class="ctrl-label">Year:</span>
-      <select class="ctrl-select" id="plan-year"></select>
+      <div class="plan-yr-nav">
+        <button class="plan-yr-btn" id="plan-year-prev">&#8249;</button>
+        <span class="plan-yr-val" id="plan-year-display"></span>
+        <button class="plan-yr-btn" id="plan-year-next">&#8250;</button>
+      </div>
+      <div class="plan-view-toggle">
+        <button class="pvt-btn active" id="pvt-annual">Annual</button>
+        <button class="pvt-btn" id="pvt-month">Month</button>
+      </div>
+      <select class="ctrl-select" id="plan-month"></select>
       <select class="ctrl-select" id="plan-copy-from">
         <option value="">Copy budgets from…</option>
       </select>
@@ -1060,8 +1080,18 @@ function renderDashboard() {
 /* ═══════════════════════════════════════════════════════
    BUDGET PLAN
 ═══════════════════════════════════════════════════════ */
+var planYear  = new Date().getFullYear();
+var planView  = 'annual'; // 'annual' | 'month'
+var planMonth = new Date().getMonth();
+
+function setPlanYearDisplay() {
+  document.getElementById('plan-year-display').textContent = planYear;
+}
+
 function renderBudgetPlan() {
-  var year = parseInt(document.getElementById('plan-year').value);
+  setPlanYearDisplay();
+  if (planView === 'month') { renderBudgetPlanMonth(); return; }
+  var year = planYear;
   var C = DATA.categories;
   var sections = [
     { key: 'income', label: 'Income', cats: C.income },
@@ -1081,7 +1111,7 @@ function renderBudgetPlan() {
     html += '<tr class="section-row"><td colspan="14">' + sec.label + '</td></tr>';
     var colorVar = sec.key === 'expense' ? 'var(--expense)' : sec.key === 'saving' ? 'var(--saving)' : 'var(--income)';
     sec.cats.forEach(function(cat) {
-      html += '<tr><td class="cat-name" style="color:' + colorVar + '">' + cat + '</td>';
+      html += '<tr draggable="true" data-section="' + sec.key + '" data-cat="' + encodeURIComponent(cat) + '"><td class="cat-name" style="color:' + colorVar + '"><span class="plan-drag">⠿</span>' + cat + '</td>';
       var annual = 0;
       for (var mi = 0; mi < 12; mi++) {
         var val = getBudget(year, cat, mi);
@@ -1122,6 +1152,104 @@ function renderBudgetPlan() {
       var mi = parseInt(this.dataset.month);
       var val = parseFloat(this.value) || 0;
       setBudget(yr, cat, mi, val);
+      renderBudgetPlan();
+    });
+  });
+  attachPlanDrag();
+}
+
+function renderBudgetPlanMonth() {
+  var year = planYear;
+  var mi   = planMonth;
+  var C = DATA.categories;
+  var sections = [
+    { key: 'income',  label: 'Income',   cats: C.income  },
+    { key: 'expense', label: 'Expenses', cats: C.expense },
+    { key: 'saving',  label: 'Savings',  cats: C.saving  }
+  ];
+  var mLabel = MONTHS[mi];
+
+  var html = '<colgroup><col style="width:50%"><col style="width:25%"><col style="width:25%"></colgroup>';
+  html += '<thead><tr><th style="text-align:left">Category</th><th>' + mLabel + ' Budget</th><th>Annual Total</th></tr></thead><tbody>';
+
+  sections.forEach(function(sec) {
+    html += '<tr class="section-row"><td colspan="3">' + sec.label + '</td></tr>';
+    var colorVar = sec.key === 'expense' ? 'var(--expense)' : sec.key === 'saving' ? 'var(--saving)' : 'var(--income)';
+    sec.cats.forEach(function(cat) {
+      var val    = getBudget(year, cat, mi);
+      var annual = 0;
+      for (var i = 0; i < 12; i++) annual += getBudget(year, cat, i);
+      html += '<tr draggable="true" data-section="' + sec.key + '" data-cat="' + encodeURIComponent(cat) + '">'
+        + '<td class="cat-name" style="color:' + colorVar + '"><span class="plan-drag">⠿</span>' + cat + '</td>'
+        + '<td style="text-align:right"><input type="number" class="plan-input" data-year="' + year + '" data-cat="' + encodeURIComponent(cat) + '" data-month="' + mi + '" value="' + (val || '') + '" min="0" step="0.01" placeholder="0"></td>'
+        + '<td class="plan-cell-annual">' + fmt(annual) + '</td>'
+        + '</tr>';
+    });
+    var secTotal = sec.cats.reduce(function(s, c) { return s + getBudget(year, c, mi); }, 0);
+    var secAnnual = sec.cats.reduce(function(s, c) {
+      var a = 0; for (var i = 0; i < 12; i++) a += getBudget(year, c, i); return s + a;
+    }, 0);
+    html += '<tr class="total-row"><td>Total ' + sec.label + '</td><td style="text-align:right">' + fmt(secTotal) + '</td><td class="plan-cell-annual">' + fmt(secAnnual) + '</td></tr>';
+  });
+
+  var incM = C.income.reduce(function(s, c) { return s + getBudget(year, c, mi); }, 0);
+  var expM = C.expense.reduce(function(s, c) { return s + getBudget(year, c, mi); }, 0);
+  var savM = C.saving.reduce(function(s, c) { return s + getBudget(year, c, mi); }, 0);
+  var net  = incM - expM - savM;
+  html += '<tr class="total-row"><td>Net (Income − Exp − Sav)</td>'
+    + '<td style="text-align:right;color:' + (net >= 0 ? 'var(--income)' : 'var(--expense)') + ';font-weight:700">' + fmt(net) + '</td>'
+    + '<td class="plan-cell-annual"></td></tr>';
+  html += '</tbody>';
+
+  document.getElementById('plan-table').innerHTML = html;
+
+  document.querySelectorAll('.plan-input').forEach(function(inp) {
+    inp.addEventListener('change', function() {
+      var yr  = parseInt(this.dataset.year);
+      var cat = decodeURIComponent(this.dataset.cat);
+      var m   = parseInt(this.dataset.month);
+      var val = parseFloat(this.value) || 0;
+      setBudget(yr, cat, m, val);
+      renderBudgetPlan();
+    });
+  });
+  attachPlanDrag();
+}
+
+function attachPlanDrag() {
+  var dragSrc = null;
+  document.querySelectorAll('.plan-table tr[draggable]').forEach(function(row) {
+    row.addEventListener('dragstart', function(e) {
+      dragSrc = { section: this.dataset.section, cat: decodeURIComponent(this.dataset.cat) };
+      this.classList.add('plan-dragging');
+      e.dataTransfer.effectAllowed = 'move';
+    });
+    row.addEventListener('dragend', function() {
+      this.classList.remove('plan-dragging');
+      document.querySelectorAll('.plan-table .plan-drag-over').forEach(function(r) { r.classList.remove('plan-drag-over'); });
+    });
+    row.addEventListener('dragover', function(e) {
+      e.preventDefault();
+      e.dataTransfer.dropEffect = 'move';
+      this.classList.add('plan-drag-over');
+    });
+    row.addEventListener('dragleave', function() {
+      this.classList.remove('plan-drag-over');
+    });
+    row.addEventListener('drop', function(e) {
+      e.preventDefault();
+      this.classList.remove('plan-drag-over');
+      if (!dragSrc) return;
+      var targetSection = this.dataset.section;
+      var targetCat     = decodeURIComponent(this.dataset.cat);
+      if (!dragSrc.section || dragSrc.section !== targetSection || dragSrc.cat === targetCat) return;
+      var arr     = DATA.categories[dragSrc.section];
+      var fromIdx = arr.indexOf(dragSrc.cat);
+      var toIdx   = arr.indexOf(targetCat);
+      if (fromIdx === -1 || toIdx === -1) return;
+      arr.splice(fromIdx, 1);
+      arr.splice(toIdx, 0, dragSrc.cat);
+      saveData();
       renderBudgetPlan();
     });
   });
@@ -1303,7 +1431,7 @@ function renderSettings() {
 function populateYearSelects() {
   var years = availableYears();
 
-  ['dash-year', 'plan-year', 'trk-year'].forEach(function(id) {
+  ['dash-year', 'trk-year'].forEach(function(id) {
     var el = document.getElementById(id);
     var cur = el.value;
     el.innerHTML = (id === 'trk-year' ? '<option value="">All Years</option>' : '') +
@@ -1317,10 +1445,30 @@ function populateYearSelects() {
     CSel.refreshById(id);
   });
 
+  // Copy-from: show all years that have any budget data, plus the wide range
+  var start = DATA.settings.startYear || 2024;
+  var thisYear = new Date().getFullYear();
+  var allYears = [];
+  for (var y = Math.min(start, thisYear - 5); y <= thisYear + 20; y++) allYears.push(y);
   var copyFrom = document.getElementById('plan-copy-from');
   copyFrom.innerHTML = '<option value="">Copy budgets from…</option>' +
-    years.map(function(y) { return '<option value="' + y + '">' + y + '</option>'; }).join('');
+    allYears.map(function(y) { return '<option value="' + y + '">' + y + '</option>'; }).join('');
   CSel.refreshById('plan-copy-from');
+
+  // Populate month select for month view
+  var mSel = document.getElementById('plan-month');
+  if (!mSel.options.length) {
+    MONTHS.forEach(function(m, i) {
+      var opt = document.createElement('option');
+      opt.value = i; opt.textContent = m;
+      mSel.appendChild(opt);
+    });
+    mSel.value = planMonth;
+    CSel.build(mSel);
+    mSel.parentNode.style.display = 'none'; // hidden until month view is active
+  }
+
+  setPlanYearDisplay();
 }
 
 function populateMonthSelects() {
@@ -1451,11 +1599,45 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('dash-year').addEventListener('change', renderDashboard);
   document.getElementById('dash-month').addEventListener('change', renderDashboard);
 
-  // Plan controls
-  document.getElementById('plan-year').addEventListener('change', renderBudgetPlan);
+  // Plan controls — year nav
+  document.getElementById('plan-year-prev').addEventListener('click', function() {
+    planYear--; renderBudgetPlan();
+  });
+  document.getElementById('plan-year-next').addEventListener('click', function() {
+    planYear++; renderBudgetPlan();
+  });
+
+  // Plan controls — view toggle
+  function setPlanMonthVisible(visible) {
+    var mEl = document.getElementById('plan-month');
+    var wrap = mEl._csBuilt ? mEl.parentNode : mEl;
+    wrap.style.display = visible ? '' : 'none';
+  }
+  document.getElementById('pvt-annual').addEventListener('click', function() {
+    planView = 'annual';
+    document.getElementById('pvt-annual').classList.add('active');
+    document.getElementById('pvt-month').classList.remove('active');
+    setPlanMonthVisible(false);
+    renderBudgetPlan();
+  });
+  document.getElementById('pvt-month').addEventListener('click', function() {
+    planView = 'month';
+    document.getElementById('pvt-month').classList.add('active');
+    document.getElementById('pvt-annual').classList.remove('active');
+    setPlanMonthVisible(true);
+    renderBudgetPlan();
+  });
+
+  // Month select for month view
+  document.getElementById('plan-month').addEventListener('change', function() {
+    planMonth = parseInt(this.value);
+    if (planView === 'month') renderBudgetPlan();
+  });
+
+  // Copy budget
   document.getElementById('plan-copy-btn').addEventListener('click', function() {
     var fromYear = document.getElementById('plan-copy-from').value;
-    var toYear = document.getElementById('plan-year').value;
+    var toYear   = String(planYear);
     if (!fromYear || fromYear === toYear) return;
     showModal('Copy Budget?', 'Copy all budget amounts from ' + fromYear + ' into ' + toYear + '? This will overwrite existing entries.', function() {
       var src = DATA.budgets[fromYear];
