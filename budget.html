@@ -14,25 +14,26 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --ink:    #0d0d0d;
-      --paper:  #f4f0e6;
+      --bg:     #f0f4f8;
+      --ink:    #0f172a;
+      --paper:  #f0f4f8;
       --rule:   #1a1a1a;
-      --muted:  #555;
-      --light:  #888;
-      --blue:   #003399;
-      --border: #d8d3c8;
-      --subtle: #ece8e0;
+      --muted:  #64748b;
+      --light:  #94a3b8;
+      --blue:   #2563eb;
+      --border: #e2e8f0;
+      --subtle: #f1f5f9;
       --card:   #ffffff;
-      --shadow-sm: 0 1px 4px rgba(0,0,0,0.06);
-      --shadow-md: 0 4px 16px rgba(0,0,0,0.09);
+      --shadow-sm: 0 1px 3px rgba(0,0,0,.08), 0 4px 16px rgba(0,0,0,.06);
+      --shadow: 0 2px 8px rgba(0,0,0,.1), 0 12px 32px rgba(0,0,0,.08);
       --radius: 14px;
       --income:  #059669;
-      --expense: #dc2626;
+      --expense: #e11d48;
       --saving:  #2563eb;
-      --warn:    #d97706;
+      --warn:    #f59e0b;
     }
 
-    body { background: var(--paper); color: var(--ink); font-family: 'Inter', system-ui, sans-serif; min-height: 100vh; font-size: 14px; }
+    body { background: var(--bg); color: var(--ink); font-family: 'Inter', system-ui, sans-serif; min-height: 100vh; font-size: 14px; }
     a { color: inherit; text-decoration: none; }
     a:hover { text-decoration: underline; }
     button, input, select, textarea { font-family: inherit; }
@@ -92,28 +93,32 @@
     .page-subtitle { font-size: .85rem; color: var(--muted); font-family: 'Source Serif 4', serif; font-style: italic; }
 
     /* ── TABS ── */
-    .tab-bar { display: flex; gap: .25rem; margin-bottom: 1.5rem; border-bottom: 2px solid var(--border); padding-bottom: 0; }
-    .tab-btn { background: none; border: none; padding: .65rem 1.2rem; font-size: .82rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); border-bottom: 2px solid transparent; margin-bottom: -2px; transition: color .15s, border-color .15s; }
-    .tab-btn:hover { color: var(--ink); }
-    .tab-btn.active { color: var(--ink); border-bottom-color: var(--ink); }
+    .tab-bar { display: flex; gap: .35rem; margin-bottom: 1.5rem; background: var(--subtle); border: 1px solid var(--border); border-radius: 12px; padding: .3rem; width: fit-content; flex-wrap: wrap; }
+    .tab-btn { background: none; border: none; padding: .55rem 1.1rem; font-size: .78rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); border-radius: 9px; transition: color .15s, background .15s, box-shadow .15s; }
+    .tab-btn:hover { color: var(--ink); background: rgba(255,255,255,.6); }
+    .tab-btn.active { color: var(--ink); background: var(--card); box-shadow: 0 1px 4px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.06); }
     .tab-panel { display: none; }
     .tab-panel.active { display: block; }
 
     /* ── CARD ── */
-    .card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.25rem 1.5rem; box-shadow: var(--shadow-sm); }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.4rem 1.6rem; box-shadow: var(--shadow-sm); }
     .card + .card { margin-top: 1rem; }
     .card-title { font-size: .7rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: .9rem; }
 
     /* ── KPI TILES ── */
     .kpi-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1rem; }
-    .kpi-tile { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.1rem 1.25rem; box-shadow: var(--shadow-sm); }
+    .kpi-tile { background: var(--card); border: 1px solid var(--border); border-left: 3px solid var(--muted); border-radius: var(--radius); padding: 1.25rem 1.4rem; box-shadow: var(--shadow-sm); }
+    .kpi-tile.kpi-income { border-left-color: var(--income); }
+    .kpi-tile.kpi-expense { border-left-color: var(--expense); }
+    .kpi-tile.kpi-saving { border-left-color: var(--saving); }
+    .kpi-tile.kpi-neutral { border-left-color: var(--muted); }
     .kpi-label { font-size: .68rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: .4rem; }
-    .kpi-value { font-size: 1.6rem; font-weight: 700; line-height: 1.1; font-variant-numeric: tabular-nums; }
+    .kpi-value { font-size: 1.5rem; font-weight: 800; line-height: 1.1; font-variant-numeric: tabular-nums; }
     .kpi-value.positive { color: var(--income); }
     .kpi-value.negative { color: var(--expense); }
     .kpi-sub { font-size: .75rem; color: var(--muted); margin-top: .25rem; }
-    .kpi-bar { height: 4px; background: var(--subtle); border-radius: 2px; margin-top: .5rem; overflow: hidden; }
-    .kpi-bar-fill { height: 100%; border-radius: 2px; background: var(--income); transition: width .4s; }
+    .kpi-bar { height: 5px; background: var(--subtle); border-radius: 3px; margin-top: .6rem; overflow: hidden; }
+    .kpi-bar-fill { height: 100%; border-radius: 3px; background: linear-gradient(90deg, var(--income) 0%, #34d399 100%); transition: width .4s; }
     @media (max-width: 700px) { .kpi-row { grid-template-columns: 1fr 1fr; } }
 
     /* ── CONTROLS ROW ── */
@@ -158,7 +163,11 @@
     .breakdown-table th { font-size: .68rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--muted); padding: .5rem .75rem; text-align: right; border-bottom: 2px solid var(--border); }
     .breakdown-table th:first-child { text-align: left; }
     .breakdown-table td { padding: .6rem .75rem; text-align: right; border-bottom: 1px solid var(--subtle); font-variant-numeric: tabular-nums; }
-    .breakdown-table td:first-child { text-align: left; font-weight: 600; }
+    .breakdown-table td:first-child { text-align: left; font-weight: 600; padding-left: 1rem; }
+    .breakdown-table tr:nth-child(even) { background: var(--subtle); }
+    .breakdown-table .row-income { border-left: 3px solid var(--income); }
+    .breakdown-table .row-expense { border-left: 3px solid var(--expense); }
+    .breakdown-table .row-saving { border-left: 3px solid var(--saving); }
     .breakdown-table .row-income td:first-child { color: var(--income); }
     .breakdown-table .row-expense td:first-child { color: var(--expense); }
     .breakdown-table .row-saving td:first-child { color: var(--saving); }
@@ -185,24 +194,24 @@
 
     /* ── BUDGET PLAN TABLE ── */
     .plan-wrap { }
-    .plan-table { border-collapse: collapse; width: 100%; table-layout: fixed; font-size: .72rem; }
+    .plan-table { border-collapse: collapse; width: 100%; table-layout: fixed; font-size: .82rem; }
     .plan-table .col-cat { width: 15%; }
     .plan-table .col-month { width: 6%; }
     .plan-table .col-annual { width: 7%; }
-    .plan-table th { font-size: .58rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; color: var(--muted); padding: .4rem .15rem; text-align: right; border-bottom: 2px solid var(--border); white-space: nowrap; }
+    .plan-table th { font-size: .65rem; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; color: var(--ink); padding: .5rem .2rem; text-align: right; border-bottom: 2px solid var(--border); white-space: nowrap; }
     .plan-table th:first-child { text-align: left; padding-left: .6rem; }
     .plan-table td { padding: .38rem .15rem; text-align: right; border-bottom: 1px solid var(--subtle); font-variant-numeric: tabular-nums; vertical-align: middle; }
-    .plan-table td:first-child { text-align: left; padding-left: .6rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-    .plan-table .section-row td { background: var(--subtle); font-weight: 800; font-size: .6rem; letter-spacing: .1em; text-transform: uppercase; padding: .35rem .6rem; }
-    .plan-table .total-row td { background: #f8f6f0; font-weight: 700; }
+    .plan-table td:first-child { text-align: left; padding-left: .6rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: .88rem; font-weight: 600; }
+    .plan-table .section-row td { background: #0f172a; color: #fff; font-weight: 700; font-size: .65rem; letter-spacing: .12em; text-transform: uppercase; padding: .55rem .8rem; }
+    .plan-table .total-row td { background: var(--subtle); font-weight: 700; }
     .plan-table .total-row td:first-child { font-size: .62rem; letter-spacing: .05em; text-transform: uppercase; color: var(--muted); }
     .plan-cell-annual { color: var(--muted); padding-right: .4rem !important; }
+    .plan-input { width: 100%; background: #fff; border: 1px solid var(--border); border-radius: 6px; outline: none; font-size: .78rem; font-variant-numeric: tabular-nums; text-align: right; color: var(--ink); padding: .25rem .5rem; box-sizing: border-box; transition: border-color .15s, background .15s; }
     .plan-drag { display: inline-block; cursor: grab; color: var(--muted); margin-right: .35rem; font-size: .8rem; opacity: .35; user-select: none; vertical-align: middle; }
     .plan-drag:active { cursor: grabbing; }
     .plan-table tr[draggable]:hover .plan-drag { opacity: .7; }
     .plan-table tr[draggable].plan-dragging { opacity: .4; }
     .plan-table tr[draggable].plan-drag-over td { background: rgba(107,114,128,.09) !important; }
-    .plan-input { width: 100%; background: var(--subtle); border: 1px solid transparent; border-radius: 4px; outline: none; font-size: .72rem; font-variant-numeric: tabular-nums; text-align: right; color: var(--ink); padding: .18rem .25rem; box-sizing: border-box; transition: border-color .15s, background .15s; }
     .plan-input:focus { border-color: #6b7280; background: #fff; box-shadow: 0 0 0 2px rgba(107,114,128,.1); }
     .plan-input::-webkit-inner-spin-button, .plan-input::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
     .plan-input[type=number] { -moz-appearance: textfield; }
@@ -331,6 +340,88 @@
     .plan-view-toggle { display: inline-flex; background: var(--subtle); border: 1px solid var(--border); border-radius: 8px; padding: 2px; gap: 2px; }
     .pvt-btn { background: none; border: none; border-radius: 6px; padding: .28rem .8rem; font-size: .74rem; font-weight: 600; letter-spacing: .04em; cursor: pointer; color: var(--muted); transition: background .15s, color .15s; }
     .pvt-btn.active { background: #fff; color: var(--ink); box-shadow: 0 1px 4px rgba(0,0,0,.1); }
+
+    /* ── HEATMAP ── */
+    .heatmap-section { margin-top: 1.5rem; }
+    .heatmap-title { font-size: .7rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: .75rem; }
+    .heatmap-wrap { overflow-x: auto; }
+    .heatmap-grid { border-collapse: collapse; width: 100%; font-size: .75rem; }
+    .heatmap-grid th { font-size: .6rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; color: var(--muted); padding: .35rem .4rem; text-align: center; border-bottom: 2px solid var(--border); white-space: nowrap; }
+    .heatmap-grid th:first-child { text-align: left; min-width: 120px; }
+    .heatmap-grid td { padding: .3rem .35rem; text-align: center; border: 1px solid var(--border); font-size: .7rem; font-variant-numeric: tabular-nums; cursor: pointer; transition: filter .15s; min-width: 52px; }
+    .heatmap-grid td:first-child { text-align: left; font-weight: 600; font-size: .78rem; padding-left: .5rem; background: var(--subtle) !important; cursor: default; }
+    .heatmap-grid td:hover:not(:first-child) { filter: brightness(.92); }
+
+    /* ── BUDGET PROGRESS ── */
+    #budget-progress-section { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 1rem; }
+    .bp-toggle { width: 100%; background: none; border: none; padding: .85rem 1.25rem; display: flex; align-items: center; justify-content: space-between; font-size: .8rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); cursor: pointer; }
+    .bp-toggle .bp-caret { font-size: .7rem; transition: transform .2s; }
+    .bp-toggle.open .bp-caret { transform: rotate(180deg); }
+    .bp-body { display: none; padding: 0 1.25rem 1.1rem; }
+    .bp-body.open { display: block; }
+    .bp-row { display: flex; align-items: center; gap: .75rem; padding: .35rem 0; border-bottom: 1px solid var(--subtle); }
+    .bp-row:last-child { border-bottom: none; }
+    .bp-label { min-width: 130px; font-size: .78rem; font-weight: 600; color: var(--ink); flex-shrink: 0; }
+    .bp-bar-wrap { flex: 1; background: var(--subtle); border-radius: 4px; height: 7px; overflow: hidden; }
+    .bp-bar-fill { height: 100%; border-radius: 4px; transition: width .4s; }
+    .bp-bar-fill.green { background: var(--income); }
+    .bp-bar-fill.amber { background: var(--warn); }
+    .bp-bar-fill.red { background: var(--expense); }
+    .bp-amounts { font-size: .72rem; color: var(--muted); white-space: nowrap; min-width: 120px; text-align: right; }
+    .bp-pct { font-size: .72rem; font-weight: 700; min-width: 40px; text-align: right; }
+
+    /* ── RECURRING STRIP ── */
+    #recurring-strip { background: #fffbeb; border: 1px solid #fde68a; border-radius: var(--radius); padding: .9rem 1.25rem; margin-bottom: .9rem; }
+    .rec-strip-title { font-size: .68rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: #92400e; margin-bottom: .6rem; }
+    .rec-strip-items { display: flex; flex-wrap: wrap; gap: .5rem; }
+    .rec-item { display: flex; align-items: center; gap: .5rem; background: #fff; border: 1px solid #fde68a; border-radius: 8px; padding: .35rem .75rem; font-size: .78rem; }
+    .rec-item-label { font-weight: 600; color: var(--ink); }
+    .rec-item-amt { color: var(--muted); }
+    .rec-add-btn { background: var(--ink); color: #fff; border: none; border-radius: 6px; padding: .25rem .6rem; font-size: .72rem; font-weight: 600; cursor: pointer; }
+    .rec-add-btn:hover { opacity: .8; }
+    .recur-check-label { display: flex; align-items: center; gap: .5rem; font-size: .8rem; color: var(--muted); cursor: pointer; margin-top: .6rem; }
+    .recur-check-label input { accent-color: var(--ink); }
+
+    /* ── ROLLOVER SETTINGS ── */
+    .rollover-row { display: flex; align-items: center; justify-content: space-between; padding: .45rem 0; border-bottom: 1px solid var(--subtle); }
+    .rollover-row:last-child { border-bottom: none; }
+    .rollover-label { font-size: .82rem; color: var(--ink); font-weight: 500; }
+
+    /* ── RECURRING SETTINGS ── */
+    .rec-tpl-row { display: flex; align-items: center; justify-content: space-between; padding: .45rem 0; border-bottom: 1px solid var(--subtle); }
+    .rec-tpl-row:last-child { border-bottom: none; }
+    .rec-tpl-info { font-size: .82rem; color: var(--ink); }
+    .rec-tpl-info .rec-tpl-cat { font-weight: 600; }
+    .rec-tpl-info .rec-tpl-meta { font-size: .72rem; color: var(--muted); }
+
+    /* ── TRENDS TAB ── */
+    .trends-section { margin-bottom: 1.5rem; }
+    .trends-section-title { font-size: .7rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-bottom: .6rem; display: flex; align-items: center; gap: .75rem; }
+    .trends-section-title::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+    .trends-table { width: 100%; border-collapse: collapse; font-size: .8rem; }
+    .trends-table th { font-size: .62rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; color: var(--muted); padding: .4rem .6rem; text-align: right; border-bottom: 2px solid var(--border); white-space: nowrap; }
+    .trends-table th:first-child { text-align: left; }
+    .trends-table td { padding: .45rem .6rem; text-align: right; border-bottom: 1px solid var(--subtle); font-variant-numeric: tabular-nums; vertical-align: top; }
+    .trends-table td:first-child { text-align: left; font-weight: 600; }
+    .trends-table .trends-total td { background: var(--subtle); font-weight: 700; }
+    .trends-table .cell-hot { background: #fef3c7; }
+    .trends-table .cell-zero { background: #f1f5f9; color: var(--muted); }
+    .trends-cell-budget { display: block; font-size: .65rem; color: var(--muted); line-height: 1; margin-top: .15rem; }
+
+    /* ── REPORTS TAB ── */
+    .reports-layout { display: grid; grid-template-columns: 1fr 300px; gap: 1.5rem; }
+    @media (max-width: 900px) { .reports-layout { grid-template-columns: 1fr; } }
+    .reports-kpi-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: .75rem; margin-bottom: 1rem; }
+    @media (max-width: 700px) { .reports-kpi-row { grid-template-columns: 1fr 1fr; } }
+    .report-kpi { background: var(--subtle); border-radius: 10px; padding: .9rem 1rem; }
+    .report-kpi-label { font-size: .62rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--muted); margin-bottom: .3rem; }
+    .report-kpi-val { font-size: 1.25rem; font-weight: 800; font-variant-numeric: tabular-nums; }
+    .saved-reports-list { display: flex; flex-direction: column; gap: .4rem; }
+    .saved-report-item { background: var(--subtle); border: 1px solid var(--border); border-radius: 9px; padding: .6rem .9rem; cursor: pointer; font-size: .8rem; transition: background .12s; }
+    .saved-report-item:hover { background: var(--border); }
+    .saved-report-item.active { background: var(--ink); color: #fff; }
+    .report-notes-area { width: 100%; background: var(--subtle); border: 1px solid var(--border); border-radius: 8px; padding: .6rem .8rem; font-size: .85rem; font-family: inherit; resize: vertical; min-height: 80px; color: var(--ink); }
+    .report-notes-area:focus { outline: none; border-color: #6b7280; background: #fff; }
   </style>
 </head>
 <body>
@@ -421,6 +512,8 @@
     <button class="tab-btn active" data-tab="dashboard">Dashboard</button>
     <button class="tab-btn" data-tab="plan">Budget Plan</button>
     <button class="tab-btn" data-tab="tracking">Tracking</button>
+    <button class="tab-btn" data-tab="trends">Trends</button>
+    <button class="tab-btn" data-tab="reports">Reports</button>
     <button class="tab-btn" data-tab="settings">Settings</button>
   </div>
 
@@ -445,6 +538,13 @@
     <div class="chart-wide">
       <div class="card-title">Monthly Expenses: Tracked vs Budget — <span id="bar-year-label"></span></div>
       <div class="chart-wide-container"><canvas id="monthly-bar-chart"></canvas></div>
+    </div>
+
+    <div class="heatmap-section card">
+      <div class="heatmap-title" id="heatmap-title">Year at a Glance</div>
+      <div class="heatmap-wrap">
+        <table class="heatmap-grid" id="heatmap-table"></table>
+      </div>
     </div>
   </div>
 
@@ -484,6 +584,13 @@
   <div id="tab-tracking" class="tab-panel">
     <div class="kpi-row" id="track-kpis"></div>
 
+    <div id="recurring-strip" style="display:none;"></div>
+
+    <div id="budget-progress-section">
+      <button class="bp-toggle" id="bp-toggle">Budget Progress <span class="bp-caret">▾</span></button>
+      <div class="bp-body" id="bp-body"></div>
+    </div>
+
     <div class="add-form-card">
       <button class="add-form-toggle" id="add-form-toggle">
         + Add Transaction <span class="toggle-caret">▾</span>
@@ -522,6 +629,9 @@
           <button class="form-submit" id="tx-save">Add Transaction</button>
           <span class="inline-note" id="tx-eff-note"></span>
         </div>
+        <label class="recur-check-label">
+          <input type="checkbox" id="tx-recurring"> Save as recurring template
+        </label>
       </div>
     </div>
 
@@ -563,6 +673,36 @@
     <div class="chart-wide" style="margin-top:1rem;">
       <div class="card-title">Running Balance Over Time</div>
       <div class="chart-wide-container"><canvas id="balance-chart"></canvas></div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════ TRENDS ═══════════════════════════ -->
+  <div id="tab-trends" class="tab-panel">
+    <div class="controls-row">
+      <span class="ctrl-label">Year:</span>
+      <select class="ctrl-select" id="trends-year"></select>
+    </div>
+    <div id="trends-content"></div>
+  </div>
+
+  <!-- ═══════════════════════════ REPORTS ═══════════════════════════ -->
+  <div id="tab-reports" class="tab-panel">
+    <div class="controls-row" style="margin-bottom:1rem;">
+      <span class="ctrl-label">Period:</span>
+      <select class="ctrl-select" id="report-year"></select>
+      <select class="ctrl-select" id="report-month"></select>
+      <button class="form-submit" id="report-generate-btn" style="align-self:auto;">Generate &amp; Save</button>
+    </div>
+    <div class="reports-layout">
+      <div>
+        <div id="report-display"></div>
+      </div>
+      <div>
+        <div class="card">
+          <div class="card-title">Saved Reports</div>
+          <div class="saved-reports-list" id="saved-reports-list"></div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -609,6 +749,19 @@
       <div class="card">
         <div class="card-title">Category Management</div>
         <div id="cat-mgmt"></div>
+      </div>
+    </div>
+
+    <div class="settings-grid" style="margin-top:1rem;">
+      <div class="card">
+        <div class="card-title">Budget Rollover</div>
+        <p style="font-size:.82rem;color:var(--muted);margin-bottom:.9rem;">When enabled, any underspend in a category rolls over to the next month (capped at 2× base budget).</p>
+        <div id="rollover-list"></div>
+      </div>
+      <div class="card">
+        <div class="card-title">Recurring Templates</div>
+        <p style="font-size:.82rem;color:var(--muted);margin-bottom:.9rem;">Templates saved from transactions for quick re-entry.</p>
+        <div id="recurring-templates-list"></div>
       </div>
     </div>
 
@@ -767,11 +920,13 @@ var DEFAULT_CATS = {
 
 function freshData() {
   return {
-    settings: { startYear: 2024, lateIncomeActive: true, lateIncomeDay: 20, savingsRateMethod: 'allocated' },
+    settings: { startYear: 2024, lateIncomeActive: true, lateIncomeDay: 20, savingsRateMethod: 'allocated', rollover: {} },
     categories: JSON.parse(JSON.stringify(DEFAULT_CATS)),
     budgets: {},
     transactions: [],
-    pension: {}
+    pension: {},
+    recurring: [],
+    reports: {}
   };
 }
 
@@ -786,7 +941,10 @@ function loadData() {
   if (!DATA.budgets) DATA.budgets = {};
   if (!DATA.transactions) DATA.transactions = [];
   if (!DATA.settings) DATA.settings = freshData().settings;
+  if (!DATA.settings.rollover) DATA.settings.rollover = {};
   if (!DATA.pension) DATA.pension = {};
+  if (!DATA.recurring) DATA.recurring = [];
+  if (!DATA.reports) DATA.reports = {};
 }
 
 function saveData() {
@@ -839,6 +997,22 @@ function getBudget(year, category, monthIdx) {
   var y = String(year);
   if (!DATA.budgets[y] || !DATA.budgets[y][category]) return 0;
   return DATA.budgets[y][category][monthIdx] || 0;
+}
+
+function getEffectiveBudget(year, cat, monthIdx) {
+  if (!DATA.settings.rollover || !DATA.settings.rollover[cat]) {
+    return getBudget(year, cat, monthIdx);
+  }
+  if (monthIdx === 0) return getBudget(year, cat, 0);
+  var prevEffective = getEffectiveBudget(year, cat, monthIdx - 1);
+  var prevTxs = txForPeriod(year, monthIdx - 1).filter(function(t) {
+    return t.type === 'expense' && t.category === cat;
+  });
+  var prevSpent = prevTxs.reduce(function(s, t) { return s + t.amount; }, 0);
+  var underspend = Math.max(0, prevEffective - prevSpent);
+  var base = getBudget(year, cat, monthIdx);
+  underspend = Math.min(underspend, base); // cap rollover at base (so max 2× base)
+  return base + underspend;
 }
 
 function setBudget(year, category, monthIdx, val) {
@@ -988,12 +1162,12 @@ function renderDashboard() {
   // KPI tiles
   var kpiEl = document.getElementById('dash-kpis');
   kpiEl.innerHTML = [
-    { label: 'Selected Period', val: isAllYear ? 'Full Year ' + year : MONTHS_FULL[monthIdx] + ' ' + year, sub: '', bar: false },
-    { label: isAllYear ? 'Year Progress' : 'Period Completion', val: pct + '%', sub: pct === 100 ? (isAllYear ? 'Year complete' : 'Month complete') : pct === 0 ? 'Future period' : 'Days elapsed', bar: true, barVal: pct },
-    { label: 'Tracking Balance', val: fmtCompact(balance), sub: 'Income − Expenses − Savings', cls: balance >= 0 ? 'positive' : 'negative', bar: false },
-    { label: 'Savings Rate', val: savingsRate.toFixed(1) + '%', sub: (DATA.settings.savingsRateMethod === 'not_expenses' ? '(Income − Expenses + Pension) / Income' : '(Savings + Pension) / Income') + (pensionTotal > 0 ? ' · £' + pensionTotal.toFixed(0) + ' pension' : ''), bar: true, barVal: Math.min(savingsRate, 100) }
+    { label: 'Selected Period', val: isAllYear ? 'Full Year ' + year : MONTHS_FULL[monthIdx] + ' ' + year, sub: '', bar: false, accent: 'kpi-neutral' },
+    { label: isAllYear ? 'Year Progress' : 'Period Completion', val: pct + '%', sub: pct === 100 ? (isAllYear ? 'Year complete' : 'Month complete') : pct === 0 ? 'Future period' : 'Days elapsed', bar: true, barVal: pct, accent: 'kpi-neutral' },
+    { label: 'Tracking Balance', val: fmtCompact(balance), sub: 'Income − Expenses − Savings', cls: balance >= 0 ? 'positive' : 'negative', bar: false, accent: balance >= 0 ? 'kpi-income' : 'kpi-expense' },
+    { label: 'Savings Rate', val: savingsRate.toFixed(1) + '%', sub: (DATA.settings.savingsRateMethod === 'not_expenses' ? '(Income − Expenses + Pension) / Income' : '(Savings + Pension) / Income') + (pensionTotal > 0 ? ' · £' + pensionTotal.toFixed(0) + ' pension' : ''), bar: true, barVal: Math.min(savingsRate, 100), accent: 'kpi-saving' }
   ].map(function(t) {
-    return '<div class="kpi-tile">' +
+    return '<div class="kpi-tile ' + (t.accent || '') + '">' +
       '<div class="kpi-label">' + t.label + '</div>' +
       '<div class="kpi-value' + (t.cls ? ' ' + t.cls : '') + '">' + t.val + '</div>' +
       (t.sub ? '<div class="kpi-sub">' + t.sub + '</div>' : '') +
@@ -1006,7 +1180,7 @@ function renderDashboard() {
   var alerts = [];
   if (!isAllYear) {
     DATA.categories.expense.forEach(function(cat) {
-      var budget = getBudget(year, cat, monthIdx);
+      var budget = getEffectiveBudget(year, cat, monthIdx);
       if (budget <= 0) return;
       var txCat = txForPeriod(year, monthIdx).filter(function(t) { return t.category === cat; });
       var total = txCat.reduce(function(s, t) { return s + t.amount; }, 0);
@@ -1132,7 +1306,7 @@ function renderDashboard() {
         labels: MONTHS,
         datasets: [
           { label: 'Tracked Expenses', data: barTracked, backgroundColor: barColors, borderRadius: 4, borderSkipped: false },
-          { label: 'Budgeted Expenses', data: barBudget, backgroundColor: 'rgba(0,0,0,0.08)', borderRadius: 4, borderSkipped: false, borderWidth: 1, borderColor: '#d8d3c8' }
+          { label: 'Budgeted Expenses', data: barBudget, backgroundColor: 'rgba(0,0,0,0.08)', borderRadius: 4, borderSkipped: false, borderWidth: 1, borderColor: '#e2e8f0' }
         ]
       },
       options: {
@@ -1145,6 +1319,75 @@ function renderDashboard() {
       }
     });
   }
+
+  renderHeatmap(year, monthIdx);
+}
+
+function renderHeatmap(year, selectedMonthIdx) {
+  var titleEl = document.getElementById('heatmap-title');
+  var tableEl = document.getElementById('heatmap-table');
+  if (!titleEl || !tableEl) return;
+
+  titleEl.textContent = 'Year at a Glance — ' + year;
+
+  // Only show expense cats that have any budget in the year
+  var cats = DATA.categories.expense.filter(function(cat) {
+    for (var mi = 0; mi < 12; mi++) {
+      if (getEffectiveBudget(year, cat, mi) > 0) return true;
+    }
+    return false;
+  });
+
+  if (cats.length === 0) {
+    tableEl.innerHTML = '<tr><td colspan="13" style="text-align:center;padding:1.5rem;color:var(--muted);font-style:italic;">No expense budgets set for ' + year + '</td></tr>';
+    return;
+  }
+
+  var html = '<thead><tr><th>Category</th>';
+  MONTHS.forEach(function(m) { html += '<th>' + m + '</th>'; });
+  html += '</tr></thead><tbody>';
+
+  cats.forEach(function(cat) {
+    html += '<tr><td>' + cat + '</td>';
+    for (var mi = 0; mi < 12; mi++) {
+      var budget = getEffectiveBudget(year, cat, mi);
+      if (budget <= 0) {
+        html += '<td style="background:#f8fafc;color:var(--muted);" data-month="' + mi + '">—</td>';
+      } else {
+        var spent = txForPeriod(year, mi).filter(function(t) { return t.type === 'expense' && t.category === cat; })
+          .reduce(function(s, t) { return s + t.amount; }, 0);
+        var ratio = spent / budget;
+        var bg;
+        if (ratio <= 0) bg = '#ffffff';
+        else if (ratio <= 0.8) {
+          // interpolate white to #fef3c7
+          var pct = ratio / 0.8;
+          bg = 'rgba(254,243,199,' + pct.toFixed(2) + ')';
+        } else if (ratio <= 1.0) {
+          bg = '#fca5a5';
+        } else {
+          bg = '#dc2626';
+        }
+        var textColor = ratio > 1.0 ? '#fff' : '';
+        var styleStr = 'background:' + bg + ';' + (textColor ? 'color:' + textColor + ';' : '');
+        html += '<td style="' + styleStr + '" data-month="' + mi + '">' + fmt(spent) + '</td>';
+      }
+    }
+    html += '</tr>';
+  });
+
+  html += '</tbody>';
+  tableEl.innerHTML = html;
+
+  // Click handlers — set dash-month and re-render
+  tableEl.querySelectorAll('td[data-month]').forEach(function(cell) {
+    cell.addEventListener('click', function() {
+      var mi = parseInt(this.dataset.month);
+      var dashMonthEl = document.getElementById('dash-month');
+      dashMonthEl.value = mi;
+      dashMonthEl.dispatchEvent(new Event('change', { bubbles: true }));
+    });
+  });
 }
 
 /* ═══════════════════════════════════════════════════════
@@ -1395,6 +1638,91 @@ function attachPlanDrag() {
 ═══════════════════════════════════════════════════════ */
 var balChartInst = null;
 
+function renderBudgetProgress() {
+  var trkYear = document.getElementById('trk-year').value;
+  var trkMonth = document.getElementById('trk-month').value;
+  var bpBody = document.getElementById('bp-body');
+  if (!bpBody) return;
+
+  if (!trkYear || trkMonth === '') {
+    bpBody.innerHTML = '<p style="font-size:.8rem;color:var(--muted);padding:.5rem 0;">Select a specific year and month to see budget progress.</p>';
+    return;
+  }
+
+  var year = parseInt(trkYear);
+  var mi = parseInt(trkMonth);
+  var cats = DATA.categories.expense.filter(function(cat) {
+    return getEffectiveBudget(year, cat, mi) > 0;
+  });
+
+  if (cats.length === 0) {
+    bpBody.innerHTML = '<p style="font-size:.8rem;color:var(--muted);padding:.5rem 0;">No expense budgets set for this period.</p>';
+    return;
+  }
+
+  var rows = cats.map(function(cat) {
+    var budget = getEffectiveBudget(year, cat, mi);
+    var spent = txForPeriod(year, mi).filter(function(t) { return t.type === 'expense' && t.category === cat; })
+      .reduce(function(s, t) { return s + t.amount; }, 0);
+    var pct = budget > 0 ? Math.min(Math.round((spent / budget) * 100), 100) : 0;
+    var barClass = pct >= 100 ? 'red' : pct >= 80 ? 'amber' : 'green';
+    return '<div class="bp-row">' +
+      '<span class="bp-label">' + cat + '</span>' +
+      '<div class="bp-bar-wrap"><div class="bp-bar-fill ' + barClass + '" style="width:' + pct + '%"></div></div>' +
+      '<span class="bp-amounts">' + fmt(spent) + ' / ' + fmt(budget) + '</span>' +
+      '<span class="bp-pct" style="color:var(--' + (pct >= 100 ? 'expense' : pct >= 80 ? 'warn' : 'income') + ')">' + pct + '%</span>' +
+      '</div>';
+  });
+  bpBody.innerHTML = rows.join('');
+}
+
+function renderRecurringStrip() {
+  var strip = document.getElementById('recurring-strip');
+  if (!strip) return;
+  if (!DATA.recurring || DATA.recurring.length === 0) { strip.style.display = 'none'; return; }
+
+  var trkYear = document.getElementById('trk-year').value;
+  var trkMonth = document.getElementById('trk-month').value;
+  if (!trkYear || trkMonth === '') { strip.style.display = 'none'; return; }
+
+  var year = parseInt(trkYear);
+  var mi = parseInt(trkMonth);
+  var periodTxs = txForPeriod(year, mi);
+
+  var unmatched = DATA.recurring.filter(function(tpl) {
+    return !periodTxs.some(function(t) {
+      return t.type === tpl.type && t.category === tpl.category && Math.abs(t.amount - tpl.amount) < 0.01;
+    });
+  });
+
+  if (unmatched.length === 0) { strip.style.display = 'none'; return; }
+
+  strip.style.display = '';
+  strip.innerHTML = '<div class="rec-strip-title">Unmatched Recurring Templates</div>' +
+    '<div class="rec-strip-items">' +
+    unmatched.map(function(tpl) {
+      return '<div class="rec-item">' +
+        '<span class="rec-item-label">' + tpl.category + '</span>' +
+        '<span class="rec-item-amt">' + fmt(tpl.amount) + '</span>' +
+        '<button class="rec-add-btn" data-id="' + tpl.id + '">＋ Add</button>' +
+        '</div>';
+    }).join('') +
+    '</div>';
+
+  strip.querySelectorAll('.rec-add-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var tplId = btn.dataset.id;
+      var tpl = DATA.recurring.find(function(r) { return r.id === tplId; });
+      if (!tpl) return;
+      var todayStr = new Date().toISOString().slice(0, 10);
+      DATA.transactions.push({ id: genId(), date: todayStr, type: tpl.type, category: tpl.category, amount: tpl.amount, details: tpl.details || '' });
+      saveData();
+      renderTracking();
+      showToast('Transaction added from recurring template.', 'success');
+    });
+  });
+}
+
 function renderTracking() {
   var today = new Date();
   var allTxs = DATA.transactions;
@@ -1496,6 +1824,9 @@ function renderTracking() {
       }
     });
   }
+
+  renderBudgetProgress();
+  renderRecurringStrip();
 }
 
 /* ═══════════════════════════════════════════════════════
@@ -1565,6 +1896,64 @@ function renderSettings() {
       if (e.key === 'Enter') { e.preventDefault(); addCategory(inp.id.replace('cat-add-input-', '')); }
     });
   });
+
+  // Rollover settings
+  var rolloverEl = document.getElementById('rollover-list');
+  if (rolloverEl) {
+    var expCats = DATA.categories.expense;
+    if (expCats.length === 0) {
+      rolloverEl.innerHTML = '<p style="font-size:.82rem;color:var(--muted);">No expense categories defined.</p>';
+    } else {
+      rolloverEl.innerHTML = expCats.map(function(cat) {
+        var enabled = !!(DATA.settings.rollover && DATA.settings.rollover[cat]);
+        return '<div class="rollover-row">' +
+          '<span class="rollover-label">' + cat + '</span>' +
+          '<label class="toggle-switch">' +
+          '<input type="checkbox" class="rollover-toggle" data-cat="' + encodeURIComponent(cat) + '"' + (enabled ? ' checked' : '') + '>' +
+          '<span class="toggle-slider"></span>' +
+          '</label>' +
+          '</div>';
+      }).join('');
+      rolloverEl.querySelectorAll('.rollover-toggle').forEach(function(cb) {
+        cb.addEventListener('change', function() {
+          var cat = decodeURIComponent(this.dataset.cat);
+          if (!DATA.settings.rollover) DATA.settings.rollover = {};
+          DATA.settings.rollover[cat] = this.checked;
+          saveData();
+          showToast('Rollover ' + (this.checked ? 'enabled' : 'disabled') + ' for ' + cat + '.', 'info');
+        });
+      });
+    }
+  }
+
+  // Recurring templates settings
+  var recTplEl = document.getElementById('recurring-templates-list');
+  if (recTplEl) {
+    if (!DATA.recurring || DATA.recurring.length === 0) {
+      recTplEl.innerHTML = '<p style="font-size:.82rem;color:var(--muted);">No recurring templates saved yet.</p>';
+    } else {
+      recTplEl.innerHTML = DATA.recurring.map(function(tpl) {
+        return '<div class="rec-tpl-row">' +
+          '<div class="rec-tpl-info">' +
+          '<span class="rec-tpl-cat">' + tpl.category + '</span>' +
+          '<span class="rec-tpl-meta"> · ' + tpl.type + ' · ' + fmt(tpl.amount) + (tpl.details ? ' · ' + tpl.details : '') + '</span>' +
+          '</div>' +
+          '<button class="del-btn rec-tpl-del" data-id="' + tpl.id + '" title="Delete template">✕</button>' +
+          '</div>';
+      }).join('');
+      recTplEl.querySelectorAll('.rec-tpl-del').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          var tplId = btn.dataset.id;
+          showModal('Delete Template?', 'Remove this recurring template?', function() {
+            DATA.recurring = DATA.recurring.filter(function(r) { return r.id !== tplId; });
+            saveData();
+            renderSettings();
+            showToast('Template deleted.', 'info');
+          }, { icon: '🗑', confirmText: 'Delete' });
+        });
+      });
+    }
+  }
 }
 
 /* ═══════════════════════════════════════════════════════
@@ -1573,8 +1962,9 @@ function renderSettings() {
 function populateYearSelects() {
   var years = availableYears();
 
-  ['dash-year', 'trk-year'].forEach(function(id) {
+  ['dash-year', 'trk-year', 'trends-year', 'report-year'].forEach(function(id) {
     var el = document.getElementById(id);
+    if (!el) return;
     var cur = el.value;
     el.innerHTML = (id === 'trk-year' ? '<option value="">All Years</option>' : '') +
       years.map(function(y) { return '<option value="' + y + '">' + y + '</option>'; }).join('');
@@ -1586,6 +1976,20 @@ function populateYearSelects() {
     }
     CSel.refreshById(id);
   });
+
+  // Report month select
+  var reportMonthEl = document.getElementById('report-month');
+  if (reportMonthEl && !reportMonthEl.options.length) {
+    MONTHS_FULL.forEach(function(m, i) {
+      var opt = document.createElement('option');
+      opt.value = i; opt.textContent = m;
+      reportMonthEl.appendChild(opt);
+    });
+    reportMonthEl.value = new Date().getMonth();
+    CSel.build(reportMonthEl);
+  } else if (reportMonthEl) {
+    CSel.refreshById('report-month');
+  }
 
   // Copy-from: show all years that have any budget data, plus the wide range
   var start = DATA.settings.startYear || 2024;
@@ -1656,6 +2060,233 @@ function updateEffNote() {
 }
 
 /* ═══════════════════════════════════════════════════════
+   TRENDS
+═══════════════════════════════════════════════════════ */
+function renderTrends() {
+  var yearEl = document.getElementById('trends-year');
+  if (!yearEl) return;
+  var year = parseInt(yearEl.value);
+  var contentEl = document.getElementById('trends-content');
+  if (!contentEl) return;
+
+  // Determine 6 most recent months up to year end (or current month)
+  var today = new Date();
+  var endYear = today.getFullYear(), endMonth = today.getMonth(); // 0-indexed
+  if (year < endYear) { endMonth = 11; } // full year if past year
+  else if (year > endYear) { endMonth = 11; } // future year: show all
+
+  var months = [];
+  for (var count = 0; count < 6; count++) {
+    months.unshift({ y: year, m: endMonth - count < 0 ? endMonth - count + 12 : endMonth - count, yr: endMonth - count < 0 ? year - 1 : year });
+  }
+  // Only keep months within range
+  months = months.filter(function(mo) { return mo.yr >= (DATA.settings.startYear || 2024) && mo.yr <= year; });
+
+  var sections = [
+    { key: 'income', label: 'Income Trends', cats: DATA.categories.income },
+    { key: 'expense', label: 'Expense Trends', cats: DATA.categories.expense },
+    { key: 'saving', label: 'Savings Trends', cats: DATA.categories.saving }
+  ];
+
+  var html = '';
+  sections.forEach(function(sec) {
+    html += '<div class="trends-section card" style="margin-bottom:1rem;">' +
+      '<div class="trends-section-title">' + sec.label + '</div>' +
+      '<div style="overflow-x:auto;">' +
+      '<table class="trends-table"><thead><tr><th>Category</th>';
+    months.forEach(function(mo) {
+      html += '<th>' + MONTHS[mo.m] + (mo.yr !== year ? ' ' + mo.yr : '') + '</th>';
+    });
+    html += '<th>6M Avg</th></tr></thead><tbody>';
+
+    var totals = new Array(months.length).fill(0);
+    sec.cats.forEach(function(cat) {
+      var vals = months.map(function(mo) {
+        return txForPeriod(mo.yr, mo.m).filter(function(t) { return t.type === sec.key && t.category === cat; })
+          .reduce(function(s, t) { return s + t.amount; }, 0);
+      });
+      var nonZero = vals.filter(function(v) { return v > 0; });
+      var avg = nonZero.length > 0 ? vals.reduce(function(a, b) { return a + b; }, 0) / months.length : 0;
+      html += '<tr>';
+      html += '<td>' + cat + '</td>';
+      vals.forEach(function(v, i) {
+        totals[i] += v;
+        var cellClass = '';
+        if (avg > 0 && v >= avg * 1.5) cellClass = ' cell-hot';
+        else if (avg > 0 && v === 0) cellClass = ' cell-zero';
+        var budget = sec.key === 'expense' ? getEffectiveBudget(months[i].yr, cat, months[i].m) : 0;
+        html += '<td class="' + cellClass + '">' + (v > 0 ? fmt(v) : '<span style="color:var(--muted)">—</span>') +
+          (sec.key === 'expense' && budget > 0 ? '<span class="trends-cell-budget">' + fmt(budget) + ' budget</span>' : '') + '</td>';
+      });
+      html += '<td>' + (avg > 0 ? fmt(avg) : '—') + '</td></tr>';
+    });
+
+    // Total row
+    html += '<tr class="trends-total"><td>Total</td>';
+    var grandTotal = 0;
+    totals.forEach(function(t) {
+      grandTotal += t;
+      html += '<td>' + fmt(t) + '</td>';
+    });
+    html += '<td>' + fmt(grandTotal / months.length) + '</td></tr>';
+    html += '</tbody></table></div></div>';
+  });
+
+  contentEl.innerHTML = html;
+}
+
+/* ═══════════════════════════════════════════════════════
+   REPORTS
+═══════════════════════════════════════════════════════ */
+function renderReports() {
+  renderSavedReportsList();
+  var displayEl = document.getElementById('report-display');
+  if (displayEl && !displayEl.innerHTML.trim()) {
+    displayEl.innerHTML = '<div class="card"><p style="font-size:.85rem;color:var(--muted);padding:.5rem 0;">Select a period and click "Generate &amp; Save" to create a report.</p></div>';
+  }
+}
+
+function renderSavedReportsList() {
+  var listEl = document.getElementById('saved-reports-list');
+  if (!listEl) return;
+  var reports = [];
+  Object.keys(DATA.reports).forEach(function(yr) {
+    Object.keys(DATA.reports[yr]).forEach(function(mo) {
+      reports.push(DATA.reports[yr][mo]);
+    });
+  });
+  reports.sort(function(a, b) { return (b.year * 100 + b.month) - (a.year * 100 + a.month); });
+  if (reports.length === 0) {
+    listEl.innerHTML = '<p style="font-size:.82rem;color:var(--muted);">No saved reports yet.</p>';
+    return;
+  }
+  listEl.innerHTML = reports.map(function(r) {
+    return '<div class="saved-report-item" data-year="' + r.year + '" data-month="' + r.month + '">' +
+      MONTHS_FULL[r.month] + ' ' + r.year +
+      '<div style="font-size:.68rem;color:var(--muted);">' + (r.generatedAt ? new Date(r.generatedAt).toLocaleDateString('en-GB') : '') + '</div>' +
+      '</div>';
+  }).join('');
+  listEl.querySelectorAll('.saved-report-item').forEach(function(item) {
+    item.addEventListener('click', function() {
+      var yr = parseInt(this.dataset.year);
+      var mo = parseInt(this.dataset.month);
+      listEl.querySelectorAll('.saved-report-item').forEach(function(i) { i.classList.remove('active'); });
+      this.classList.add('active');
+      displayReport(DATA.reports[String(yr)][String(mo)]);
+    });
+  });
+}
+
+function displayReport(r) {
+  if (!r) return;
+  var displayEl = document.getElementById('report-display');
+  if (!displayEl) return;
+
+  var html = '<div class="card">';
+  html += '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;">';
+  html += '<div><div class="card-title" style="margin-bottom:.2rem;">' + MONTHS_FULL[r.month] + ' ' + r.year + '</div>';
+  html += '<div style="font-size:.72rem;color:var(--muted);">Generated ' + (r.generatedAt ? new Date(r.generatedAt).toLocaleDateString('en-GB') : '') + '</div></div>';
+  html += '</div>';
+
+  // KPIs
+  html += '<div class="reports-kpi-row">';
+  [
+    { label: 'Income', val: fmt(r.income), cls: 'var(--income)' },
+    { label: 'Expenses', val: fmt(r.expense), cls: 'var(--expense)' },
+    { label: 'Savings', val: fmt(r.saving), cls: 'var(--saving)' },
+    { label: 'Savings Rate', val: r.savingsRate.toFixed(1) + '%', cls: 'var(--saving)' }
+  ].forEach(function(k) {
+    html += '<div class="report-kpi"><div class="report-kpi-label">' + k.label + '</div><div class="report-kpi-val" style="color:' + k.cls + '">' + k.val + '</div></div>';
+  });
+  html += '</div>';
+
+  // Category breakdown
+  if (r.categoryBreakdown && r.categoryBreakdown.length) {
+    html += '<div class="card-title" style="margin-top:1rem;margin-bottom:.6rem;">Category Breakdown</div>';
+    html += '<table class="breakdown-table"><thead><tr><th>Category</th><th>Budget</th><th>Spent</th><th>Variance</th><th>%</th></tr></thead><tbody>';
+    r.categoryBreakdown.forEach(function(row) {
+      var pct = row.budget > 0 ? ((row.spent / row.budget) * 100).toFixed(0) + '%' : '—';
+      var variance = row.budget > 0 ? row.budget - row.spent : null;
+      html += '<tr class="row-expense"><td>' + row.cat + '</td>' +
+        '<td>' + (row.budget > 0 ? fmt(row.budget) : '—') + '</td>' +
+        '<td>' + fmt(row.spent) + '</td>' +
+        '<td>' + (variance !== null ? fmt(Math.abs(variance)) + (variance < 0 ? ' over' : ' under') : '—') + '</td>' +
+        '<td>' + pct + '</td></tr>';
+    });
+    html += '</tbody></table>';
+  }
+
+  // Balance
+  html += '<div style="margin-top:.8rem;font-size:.85rem;"><strong>Balance (Income − Exp − Sav):</strong> <span style="font-weight:700;color:' + (r.balance >= 0 ? 'var(--income)' : 'var(--expense)') + '">' + fmt(r.balance) + '</span></div>';
+  if (r.pensionTotal > 0) {
+    html += '<div style="font-size:.82rem;color:var(--muted);margin-top:.3rem;">Pension: ' + fmt(r.pensionTotal) + '</div>';
+  }
+
+  // Notes
+  html += '<div style="margin-top:1rem;">';
+  html += '<div class="card-title" style="margin-bottom:.4rem;">Notes</div>';
+  html += '<textarea class="report-notes-area" id="report-note-area" placeholder="Add notes for this period…">' + (r.note || '') + '</textarea>';
+  html += '<button class="form-submit" id="save-note-btn" style="margin-top:.5rem;">Save Note</button>';
+  html += '</div></div>';
+
+  displayEl.innerHTML = html;
+
+  document.getElementById('save-note-btn').addEventListener('click', function() {
+    var note = document.getElementById('report-note-area').value;
+    if (!DATA.reports[String(r.year)]) DATA.reports[String(r.year)] = {};
+    if (DATA.reports[String(r.year)][String(r.month)]) {
+      DATA.reports[String(r.year)][String(r.month)].note = note;
+      saveData();
+      showToast('Note saved.', 'success');
+    }
+  });
+}
+
+function generateReport(year, monthIdx) {
+  var tracked = periodTotals(year, monthIdx);
+  var pension = getPensionForPeriod(year, monthIdx);
+  var pensionTotal = pension.personal + pension.employer;
+  var savingsRate = 0;
+  if (tracked.income > 0) {
+    if (DATA.settings.savingsRateMethod === 'not_expenses') {
+      savingsRate = ((tracked.income - tracked.expense + pensionTotal) / tracked.income) * 100;
+    } else {
+      savingsRate = ((tracked.saving + pensionTotal) / tracked.income) * 100;
+    }
+  }
+  var balance = tracked.income - tracked.expense - tracked.saving;
+
+  var categoryBreakdown = DATA.categories.expense.map(function(cat) {
+    var spent = txForPeriod(year, monthIdx).filter(function(t) { return t.type === 'expense' && t.category === cat; })
+      .reduce(function(s, t) { return s + t.amount; }, 0);
+    var budget = getEffectiveBudget(year, cat, monthIdx);
+    return { cat: cat, spent: spent, budget: budget };
+  }).filter(function(r) { return r.spent > 0 || r.budget > 0; });
+
+  var report = {
+    year: year,
+    month: monthIdx,
+    generatedAt: new Date().toISOString(),
+    income: tracked.income,
+    expense: tracked.expense,
+    saving: tracked.saving,
+    pensionTotal: pensionTotal,
+    savingsRate: savingsRate,
+    balance: balance,
+    categoryBreakdown: categoryBreakdown,
+    note: ''
+  };
+
+  if (!DATA.reports[String(year)]) DATA.reports[String(year)] = {};
+  // Preserve existing note if re-generating
+  var existing = DATA.reports[String(year)][String(monthIdx)];
+  if (existing && existing.note) report.note = existing.note;
+  DATA.reports[String(year)][String(monthIdx)] = report;
+  saveData();
+  return report;
+}
+
+/* ═══════════════════════════════════════════════════════
    MODAL
 ═══════════════════════════════════════════════════════ */
 function showModal(title, body, onConfirm, opts) {
@@ -1712,7 +2343,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   // Build custom selects (must happen before populating options)
-  ['dash-year','dash-month','plan-year','plan-copy-from','tx-type','tx-category','trk-year','trk-month','trk-type','trk-cat'].forEach(function(id) {
+  ['dash-year','dash-month','plan-year','plan-copy-from','tx-type','tx-category','trk-year','trk-month','trk-type','trk-cat','trends-year','report-year'].forEach(function(id) {
     var el = document.getElementById(id);
     if (el) CSel.build(el);
   });
@@ -1733,6 +2364,8 @@ document.addEventListener('DOMContentLoaded', function() {
       if (btn.dataset.tab === 'dashboard') renderDashboard();
       if (btn.dataset.tab === 'plan') renderBudgetPlan();
       if (btn.dataset.tab === 'tracking') renderTracking();
+      if (btn.dataset.tab === 'trends') renderTrends();
+      if (btn.dataset.tab === 'reports') renderReports();
       if (btn.dataset.tab === 'settings') renderSettings();
     });
   });
@@ -1815,6 +2448,39 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById(id).addEventListener('change', renderTracking);
   });
 
+  // Budget progress toggle
+  var bpToggle = document.getElementById('bp-toggle');
+  var bpBody = document.getElementById('bp-body');
+  if (bpToggle && bpBody) {
+    var bpOpen = localStorage.getItem('ph_bp_open') === 'true';
+    if (bpOpen) { bpBody.classList.add('open'); bpToggle.classList.add('open'); }
+    bpToggle.addEventListener('click', function() {
+      var isOpen = bpBody.classList.contains('open');
+      bpBody.classList.toggle('open', !isOpen);
+      bpToggle.classList.toggle('open', !isOpen);
+      localStorage.setItem('ph_bp_open', String(!isOpen));
+      if (!isOpen) renderBudgetProgress();
+    });
+  }
+
+  // Trends year change
+  var trendsYearEl = document.getElementById('trends-year');
+  if (trendsYearEl) trendsYearEl.addEventListener('change', renderTrends);
+
+  // Reports — generate button
+  var reportGenBtn = document.getElementById('report-generate-btn');
+  if (reportGenBtn) {
+    reportGenBtn.addEventListener('click', function() {
+      var yr = parseInt(document.getElementById('report-year').value);
+      var mo = parseInt(document.getElementById('report-month').value);
+      if (isNaN(yr) || isNaN(mo)) { showToast('Please select a valid year and month.', 'error'); return; }
+      var report = generateReport(yr, mo);
+      renderSavedReportsList();
+      displayReport(report);
+      showToast('Report generated for ' + MONTHS_FULL[mo] + ' ' + yr + '.', 'success');
+    });
+  }
+
   // Add transaction
   document.getElementById('tx-save').addEventListener('click', function() {
     var date = document.getElementById('tx-date').value;
@@ -1827,6 +2493,13 @@ document.addEventListener('DOMContentLoaded', function() {
       return;
     }
     DATA.transactions.push({ id: genId(), date: date, type: type, category: category, amount: amount, details: details });
+    // Handle recurring template
+    var recurCb = document.getElementById('tx-recurring');
+    if (recurCb && recurCb.checked) {
+      DATA.recurring.push({ id: genId(), type: type, category: category, amount: amount, details: details });
+      recurCb.checked = false;
+      showToast('Transaction added and saved as recurring template.', 'success');
+    }
     saveData();
     document.getElementById('tx-amount').value = '';
     document.getElementById('tx-details').value = '';
