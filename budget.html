@@ -172,9 +172,9 @@
     .charts-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1rem; }
     .chart-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.1rem; box-shadow: var(--shadow-sm); }
     .chart-card-title { font-size: .68rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: .75rem; text-align: center; }
-    .chart-card-body { display: flex; align-items: center; gap: .9rem; }
-    .chart-container { position: relative; height: 160px; flex: 0 0 160px; }
-    .donut-legend { flex: 1; display: flex; flex-direction: column; gap: .35rem; min-width: 0; }
+    .chart-card-body { display: flex; flex-direction: column; gap: .75rem; }
+    .chart-container { position: relative; height: 150px; }
+    .donut-legend { display: flex; flex-direction: column; gap: .3rem; }
     .donut-legend-item { display: flex; align-items: center; gap: .45rem; font-size: .72rem; min-width: 0; }
     .donut-legend-dot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
     .donut-legend-label { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--ink); font-weight: 500; }
@@ -208,7 +208,7 @@
     .plan-input[type=number] { -moz-appearance: textfield; }
 
     /* ── TRACKING ── */
-    .add-form-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 1rem; overflow: hidden; }
+    .add-form-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 1rem; }
     .add-form-toggle { width: 100%; background: none; border: none; padding: .9rem 1.25rem; display: flex; align-items: center; justify-content: space-between; font-size: .82rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--ink); }
     .add-form-toggle .toggle-caret { font-size: .7rem; color: var(--muted); transition: transform .2s; }
     .add-form-toggle.open .toggle-caret { transform: rotate(180deg); }
@@ -564,7 +564,7 @@
         <div class="card-title">General Settings</div>
         <div class="setting-group">
           <label class="setting-label">Starting Year</label>
-          <input type="number" class="setting-input" id="set-start-year" min="2020" max="2035" style="width:120px;">
+          <input type="text" inputmode="numeric" pattern="[0-9]*" class="setting-input" id="set-start-year" style="width:120px;">
         </div>
         <div class="setting-group">
           <label class="setting-label">Late Income Shift</label>
@@ -858,7 +858,9 @@ function txForPeriod(year, monthIdx) {
   return DATA.transactions.filter(function(t) {
     var ed = getEffectiveDate(t.date, t.type);
     var parts = ed.split('-');
-    return parseInt(parts[0]) === year && parseInt(parts[1]) - 1 === monthIdx;
+    if (parseInt(parts[0]) !== year) return false;
+    if (monthIdx < 0) return true; // full year
+    return parseInt(parts[1]) - 1 === monthIdx;
   });
 }
 
@@ -876,9 +878,12 @@ function periodTotals(year, monthIdx) {
 function periodBudgetTotals(year, monthIdx) {
   var C = DATA.categories;
   var income = 0, expense = 0, saving = 0;
-  C.income.forEach(function(c) { income += getBudget(year, c, monthIdx); });
-  C.expense.forEach(function(c) { expense += getBudget(year, c, monthIdx); });
-  C.saving.forEach(function(c) { saving += getBudget(year, c, monthIdx); });
+  var months = monthIdx < 0 ? [0,1,2,3,4,5,6,7,8,9,10,11] : [monthIdx];
+  months.forEach(function(mi) {
+    C.income.forEach(function(c) { income += getBudget(year, c, mi); });
+    C.expense.forEach(function(c) { expense += getBudget(year, c, mi); });
+    C.saving.forEach(function(c) { saving += getBudget(year, c, mi); });
+  });
   return { income: income, expense: expense, saving: saving };
 }
 
@@ -923,12 +928,13 @@ var barChartInst = null;
 
 function renderDashboard() {
   var year = parseInt(document.getElementById('dash-year').value);
-  var monthIdx = parseInt(document.getElementById('dash-month').value);
-  var month1 = monthIdx + 1;
+  var monthVal = document.getElementById('dash-month').value;
+  var monthIdx = monthVal === '' ? -1 : parseInt(monthVal);
+  var isAllYear = monthIdx < 0;
 
   var tracked = periodTotals(year, monthIdx);
   var budgeted = periodBudgetTotals(year, monthIdx);
-  var pct = periodCompletion(year, month1);
+  var pct = isAllYear ? Math.round((new Date().getMonth() + 1) / 12 * 100) : periodCompletion(year, monthIdx + 1);
   var balance = tracked.income - tracked.expense - tracked.saving;
 
   var savingsRate = 0;
@@ -943,8 +949,8 @@ function renderDashboard() {
   // KPI tiles
   var kpiEl = document.getElementById('dash-kpis');
   kpiEl.innerHTML = [
-    { label: 'Selected Period', val: MONTHS_FULL[monthIdx] + ' ' + year, sub: '', bar: false },
-    { label: 'Period Completion', val: pct + '%', sub: pct === 100 ? 'Month complete' : pct === 0 ? 'Future period' : 'Days elapsed', bar: true, barVal: pct },
+    { label: 'Selected Period', val: isAllYear ? 'Full Year ' + year : MONTHS_FULL[monthIdx] + ' ' + year, sub: '', bar: false },
+    { label: isAllYear ? 'Year Progress' : 'Period Completion', val: pct + '%', sub: pct === 100 ? (isAllYear ? 'Year complete' : 'Month complete') : pct === 0 ? 'Future period' : 'Days elapsed', bar: true, barVal: pct },
     { label: 'Tracking Balance', val: fmtCompact(balance), sub: 'Income − Expenses − Savings', cls: balance >= 0 ? 'positive' : 'negative', bar: false },
     { label: 'Savings Rate', val: savingsRate.toFixed(1) + '%', sub: DATA.settings.savingsRateMethod === 'not_expenses' ? '(Income − Expenses) / Income' : 'Savings / Income', bar: true, barVal: Math.min(savingsRate, 100) }
   ].map(function(t) {
@@ -959,15 +965,17 @@ function renderDashboard() {
   // Alerts
   var alertsEl = document.getElementById('dash-alerts');
   var alerts = [];
-  DATA.categories.expense.forEach(function(cat) {
-    var budget = getBudget(year, cat, monthIdx);
-    if (budget <= 0) return;
-    var txCat = txForPeriod(year, monthIdx).filter(function(t) { return t.category === cat; });
-    var total = txCat.reduce(function(s, t) { return s + t.amount; }, 0);
-    var ratio = total / budget;
-    if (ratio > 1) alerts.push({ cls: 'crit', text: cat + ': ' + fmt(total) + ' / ' + fmt(budget) + ' (over budget)' });
-    else if (ratio >= 0.8) alerts.push({ cls: 'warn', text: cat + ': ' + Math.round(ratio*100) + '% of budget used' });
-  });
+  if (!isAllYear) {
+    DATA.categories.expense.forEach(function(cat) {
+      var budget = getBudget(year, cat, monthIdx);
+      if (budget <= 0) return;
+      var txCat = txForPeriod(year, monthIdx).filter(function(t) { return t.category === cat; });
+      var total = txCat.reduce(function(s, t) { return s + t.amount; }, 0);
+      var ratio = total / budget;
+      if (ratio > 1) alerts.push({ cls: 'crit', text: cat + ': ' + fmt(total) + ' / ' + fmt(budget) + ' (over budget)' });
+      else if (ratio >= 0.8) alerts.push({ cls: 'warn', text: cat + ': ' + Math.round(ratio*100) + '% of budget used' });
+    });
+  }
   alertsEl.innerHTML = alerts.map(function(a) {
     return '<div class="alert-badge ' + a.cls + '"><span class="alert-dot"></span>' + a.text + '</div>';
   }).join('');
@@ -983,7 +991,7 @@ function renderDashboard() {
     rows.map(function(r) {
       var pctVal = r.budgeted > 0 ? (r.tracked / r.budgeted) * 100 : null;
       var pctStr = pctVal !== null ? pctVal.toFixed(0) + '%' : '—';
-      var pctCls = pctVal === null ? '' : pctVal >= 100 ? 'pct-over' : pctVal >= 80 ? 'pct-warn' : 'pct-under';
+      var pctCls = pctVal === null ? '' : pctVal > 100 ? 'pct-over' : pctVal >= 80 ? 'pct-warn' : 'pct-under';
       var remaining = r.budgeted - r.tracked;
       var excess = r.tracked > r.budgeted && r.budgeted > 0 ? r.tracked - r.budgeted : 0;
       return '<tr class="' + r.cls + '">' +
@@ -1078,12 +1086,13 @@ function renderDashboard() {
       barTracked.push(t.expense);
       barBudget.push(b.expense);
     }
+    var barColors = barTracked.map(function(v, i) { return v > barBudget[i] ? '#dc2626' : '#059669'; });
     barChartInst = new Chart(barCanvas.getContext('2d'), {
       type: 'bar',
       data: {
         labels: MONTHS,
         datasets: [
-          { label: 'Tracked Expenses', data: barTracked, backgroundColor: '#dc2626', borderRadius: 4, borderSkipped: false },
+          { label: 'Tracked Expenses', data: barTracked, backgroundColor: barColors, borderRadius: 4, borderSkipped: false },
           { label: 'Budgeted Expenses', data: barBudget, backgroundColor: 'rgba(0,0,0,0.08)', borderRadius: 4, borderSkipped: false, borderWidth: 1, borderColor: '#d8d3c8' }
         ]
       },
@@ -1504,7 +1513,7 @@ function populateMonthSelects() {
   var dashMonth = document.getElementById('dash-month');
   var trkMonth = document.getElementById('trk-month');
   var curM = new Date().getMonth();
-  dashMonth.innerHTML = MONTHS_FULL.map(function(m, i) {
+  dashMonth.innerHTML = '<option value="">Full Year</option>' + MONTHS_FULL.map(function(m, i) {
     return '<option value="' + i + '"' + (i === curM ? ' selected' : '') + '>' + m + '</option>';
   }).join('');
   trkMonth.innerHTML = '<option value="">All Months</option>' + MONTHS_FULL.map(function(m, i) {
