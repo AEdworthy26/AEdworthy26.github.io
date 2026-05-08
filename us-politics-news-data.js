@@ -1,61 +1,61 @@
 // us-politics-news-data.js
-// Auto-updated 2026-05-07 — do not edit manually
+// Auto-updated 2026-05-08 — do not edit manually
 
 var US_POLITICS_NEWS = {
-  date: "2026-05-07",
+  date: "2026-05-08",
   main: {
-    title: "Republicans Seek $1 Billion for Trump Ballroom Security Tucked Into ICE Funding Bill",
+    title: "Tennessee Redistricting Map Signed Into Law, Eliminating State\'s Only Majority-Black District",
     category: "Politics",
     content: [
-      "Congressional Republicans are pushing to include $1 billion in dedicated security funding for President Trump\'s White House ballroom as part of a broader partisan legislation aimed at funding Immigration and Customs Enforcement. The unusual provision has drawn immediate scrutiny from Democrats and government watchdog groups who argue it represents a misuse of federal immigration enforcement funds for what amounts to personal presidential amenities. The proposal reflects the increasing willingness of Republican lawmakers to attach priorities directly tied to Trump\'s personal comfort and image onto otherwise unrelated spending vehicles.",
-      "The ballroom in question has become a signature venue for Trump administration events and fundraisers, and the White House has previously sought enhanced security infrastructure around the space. Proponents of the funding argue that securing any presidential facility is a legitimate national security expenditure, framing the $1 billion as consistent with broader Secret Service and protective infrastructure investments. Critics, however, have pointed out that bundling such an expenditure with ICE funding creates a misleading picture of immigration enforcement costs and priorities.",
-      "The move is the latest example of Republican lawmakers using must-pass or high-profile spending legislation to advance provisions that might not survive as standalone measures. Democrats on the relevant committees have signaled they intend to highlight the ballroom provision as emblematic of what they call Republican fiscal irresponsibility dressed up in law-and-order language. The ICE funding component itself remains deeply contentious, with Democrats opposed to what they describe as a blank check for aggressive immigration enforcement operations.",
-      "Fiscal hawks within the Republican Party have also expressed quiet unease about the ballroom security line item, particularly as the party simultaneously pushes for sweeping cuts to domestic social programs under the banner of deficit reduction. The optics of allocating ten figures to a presidential entertainment venue while cutting food assistance or housing programs could prove politically damaging in competitive congressional districts heading into the 2026 midterm cycle. Leadership aides have reportedly been working to find alternative justifications for the funding that might soften public criticism.",
-      "The broader legislative package reflects the complex and often contradictory pressures facing Republican majorities in both chambers as they attempt to deliver on Trump administration priorities while managing an increasingly restless electorate. Whether the ballroom security provision survives floor debate, conference negotiations, or a potential presidential signature remains to be seen, but its inclusion alone has already succeeded in drawing attention to the bill. Observers across the political spectrum are watching closely to see whether Republican leaders will defend, modify, or quietly drop the provision as the legislation advances."
+      "Tennessee Governor Bill Lee signed a new congressional redistricting map into law Thursday, making the state the latest in a wave of southern Republican-led legislatures to redraw voting boundaries in ways that consolidate GOP power. The map dismantles the state\'s only majority-Black congressional district, which covers parts of Memphis, and threatens the seat held by the lone Democrat in Tennessee\'s nine-member congressional delegation. The legislation passed rapidly through the Republican-controlled statehouse over the vocal objections of Democratic lawmakers and protesters who gathered inside the state capitol.",
+      "The redistricting push has been emboldened by the weakening of key protections for minority voting power under the Voting Rights Act, following recent federal court decisions that have given states broader latitude to redraw maps without prior federal approval. Republicans in Tennessee and other southern states have moved quickly to exploit that opening, arguing that their maps reflect legitimate partisan interests rather than racial discrimination. Critics, however, contend that in Tennessee\'s case the two are inseparable, given the demographic composition of the district being carved up.",
+      "The NAACP filed an emergency petition in Davidson County Chancery Court on Thursday, urging Governor Lee and the state legislature not to enact the new plan. The civil rights organization argues the map violates the Tennessee state constitution, framing the legal challenge around state rather than federal protections in a deliberate strategic move. The emergency filing signals the beginning of what could be a prolonged legal battle over the map\'s validity before it takes effect for future elections.",
+      "Inside the Tennessee statehouse, the reaction from Democrats was fierce. One Democratic state lawmaker representing Memphis went so far as to call for the city to secede from the state in protest, a largely symbolic but politically charged statement that underscored the depth of outrage among minority communities and their representatives. The rapid passage of the bill and its immediate signing left opponents with little time to mount a legislative response, pushing the fight almost entirely into the courts.",
+      "Tennessee\'s action is part of a broader regional pattern that voting rights advocates are watching with alarm. Several other southern states have undertaken similar redistricting efforts in recent months, collectively reshaping the congressional map in ways that could entrench Republican majorities for the remainder of the decade. The outcome of the NAACP\'s legal challenge — and others likely to follow — will help determine whether state constitutional provisions can serve as a meaningful check on partisan gerrymandering in the absence of robust federal protections."
     ],
-    image: "https://images.unsplash.com/photo-1603275217764-0c25d8b5132d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxSZXB1YmxpY2FucyUyMFNlZWslMjAlMjQxJTIwQmlsbGlvbiUyMGZvciUyMFRydW1wJTIwQmFsbHJvb20lMjBTZWN1cml0eSUyMFR1Y2tlZCUyMEludG8lMjBJQ0UlMjBGdW5kaW5nJTIwQmlsbHxlbnwwfDB8fHwxNzc4MTMwMTcyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image: "https://images.pexels.com/photos/19784164/pexels-photo-19784164.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     source: "NPR",
-    sourceUrl: "https://www.npr.org/2026/05/06/g-s1-120455/republicans-trump-ballroom-billion"
+    sourceUrl: "https://www.npr.org/2026/05/07/nx-s1-5814814/tennessee-joins-southern-push-to-redistricting-in-favor-of-the-gop"
   },
   secondary: [
     {
       id: "us1",
-      title: "Judge Rules FBI May Keep 2020 Election Ballots Seized From Fulton County, Georgia",
-      summary: "A federal judge denied Fulton County\'s request to have its 2020 election materials returned after they were seized by the FBI, dealing a setback to local election officials and alarming democracy advocates.",
+      title: "Judge Rules DOGE\'s Cuts to Humanities Grants Were Unconstitutional",
+      summary: "A federal judge found that more than $100 million in cuts to National Endowment for the Humanities grants made by DOGE were discriminatory and unconstitutional.",
       body: [
-        "The ruling allows the FBI to retain voting materials taken from Fulton County, Georgia, in what officials describe as a continuing investigation tied to President Trump\'s longstanding efforts to relitigate his 2020 election loss in the state. The county is expected to appeal the decision, setting up a prolonged legal battle over the custody and integrity of the ballots.",
-        "Election security advocates have raised concerns that the seizure and retention of official voting materials by federal law enforcement sets a troubling precedent, potentially chilling election administration at the local level. The case remains one of the most direct examples of the Trump administration using federal investigative power to revisit the disputed 2020 results."
+        "A federal judge ruled Thursday that the Department of Government Efficiency\'s sweeping cuts to NEH grants violated the Constitution, finding the reductions were applied in a discriminatory manner and exceeded the administration\'s lawful authority. The ruling, which revealed new details about how DOGE operatives actually implemented the cuts internally, marks one of the most significant judicial rebukes yet of the cost-cutting initiative championed by the Trump administration.",
+        "The decision adds to a growing body of court rulings pushing back on DOGE\'s methods, raising fresh questions about the legal durability of the administration\'s broader effort to slash federal spending through executive action rather than congressional appropriations. Legal observers say the case could set important precedent for challenges to other DOGE-directed funding cuts currently working their way through the courts."
       ],
-      image: "https://static01.nyt.com/images/2026/04/07/multimedia/06pol-fulton-ballots/07dc-factcheck-03-ktjb-mediumSquareAt3X.jpg",
-      source: "The New York Times",
-      url: "https://www.nytimes.com/2026/05/06/us/politics/judge-says-fbi-can-keep-2020-election-records-seized-from-georgia.html",
+      image: "https://images.unsplash.com/photo-1590799003711-0666304a4ff5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxKdWRnZSUyMFJ1bGVzJTIwRE9HRSU1Q3xlbnwwfDB8fHwxNzc4MjE2NTc1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "Washington Post",
+      url: "https://www.washingtonpost.com/politics/2026/05/07/doge-neh-humanities-grants-ruling/",
       category: "Politics"
     },
     {
       id: "us2",
-      title: "Commerce Secretary Lutnick Grilled by House Lawmakers Over Ties to Jeffrey Epstein",
-      summary: "Commerce Secretary Howard Lutnick testified before the House Oversight Committee Wednesday to address discrepancies between his stated account of his relationship with Jeffrey Epstein and newly released Epstein files.",
+      title: "Supreme Court Weighs Telehealth Access to Abortion Pill Mifepristone",
+      summary: "The Supreme Court is now considering whether to restore telemedicine access to mifepristone after an appeals court moved to end the practice.",
       body: [
-        "Lutnick had previously stated he cut ties with Epstein in 2005, but documents from the Epstein files suggest the two maintained contact well beyond that date, including a 2012 lunch held on Epstein\'s private island. Lawmakers pressed Lutnick on the contradiction during a voluntary interview, making it one of the more pointed congressional confrontations involving a sitting Trump cabinet member.",
-        "The hearing is part of a broader congressional effort to scrutinize the network of individuals connected to Epstein, whose files have continued to generate political fallout across both parties. Lutnick\'s appearance underscores how the Epstein documents are reshaping political accountability conversations even years after the financier\'s 2019 death."
+        "With legal briefs now submitted by all parties, the Supreme Court is weighing a consequential case over whether patients can continue to obtain mifepristone — one of two drugs used in medication abortions — through telemedicine consultations and mail delivery. The case arose after a federal appeals court ruled against the telehealth pathway, prompting the Supreme Court to intervene and pause that ruling while it deliberates.",
+        "The outcome will have sweeping implications for abortion access across the country, particularly in states where clinic-based services have been restricted or eliminated. Medication abortion has accounted for a growing share of all abortions in the United States, making the availability of telemedicine prescribing a central front in the ongoing legal and political battles over reproductive rights."
       ],
-      image: "https://images.pexels.com/photos/32386664/pexels-photo-32386664.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      image: "https://images.pexels.com/photos/36984937/pexels-photo-36984937.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       source: "NPR",
-      url: "https://www.npr.org/2026/05/06/nx-s1-5814081/howard-lutnick-epstein-files-house-oversight-committee",
+      url: "https://www.npr.org/2026/05/07/nx-s1-5815294/abortion-pill-mifepristone-supreme-court-telemedicine",
       category: "Politics"
     },
     {
       id: "us3",
-      title: "California Governor\'s Race Heats Up as Debate Devolves Into Bickering Among Crowded Field",
-      summary: "A Wednesday debate among candidates vying to succeed Governor Gavin Newsom descended into personal attacks and squabbling, reflecting the volatile dynamics of a wide-open primary race with no clear frontrunner.",
+      title: "Senator Fetterman Declares He Has 'No Plans' to Leave the Democratic Party",
+      summary: "Pennsylvania Senator John Fetterman pushed back against speculation about his political future, writing in a Washington Post op-ed that his core values remain Democratic even as he diverges from the party on some issues.",
       body: [
-        "Former Health and Human Services Secretary Xavier Becerra emerged as a primary target for rival candidates following his surge in recent polling, with opponents lining up to challenge his record and political positioning. The debate\'s chaotic tone highlighted how difficult it is for any single candidate to break through in a field that polling suggests has at least four competitive contenders.",
-        "The California governor\'s race is being watched nationally as a bellwether for the direction of the Democratic Party, with the eventual nominee likely to become one of the most prominent Democratic voices heading into the 2028 presidential cycle. The primary\'s outcome could also shape California\'s legislative agenda and the state\'s posture toward the Trump administration on key policy fronts."
+        "Senator John Fetterman of Pennsylvania used a Washington Post opinion piece to firmly state he has no intention of leaving the Democratic Party, despite months of friction with colleagues over his positions on Israel, immigration, and other issues. Fetterman acknowledged being 'at odds' with the party\'s prevailing approach in several areas but insisted his fundamental values had not shifted.",
+        "The statement comes amid persistent speculation — and pointed criticism from progressive Democrats — about whether Fetterman\'s frequent breaks with the party caucus represent a deeper ideological realignment. His op-ed appeared designed to quell growing rumors while also sending a message to Democratic leadership that he intends to remain an independent voice within the party rather than a reliable vote for the leadership\'s agenda."
       ],
-      image: "https://images.unsplash.com/photo-1610528496266-30c5740ad006?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxDYWxpZm9ybmlhJTIwR292ZXJub3IlNUN8ZW58MHwwfHx8MTc3ODEzMDE3M3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "The Hill",
-      url: "https://thehill.com/homenews/campaign/5867335-california-governor-debate-bickering/",
-      category: "Elections"
+      image: "https://static01.nyt.com/images/2026/05/07/multimedia/07POL-fetterman-wvlz/07POL-fetterman-wvlz-mediumSquareAt3X.jpg",
+      source: "New York Times",
+      url: "https://www.nytimes.com/2026/05/07/us/politics/john-fetterman-democratic-party.html",
+      category: "Politics"
     }
   ]
 };

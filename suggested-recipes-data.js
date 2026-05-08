@@ -1,208 +1,187 @@
 // suggested-recipes-data.js
-// Auto-updated 2026-05-07 — do not edit manually
+// Auto-updated 2026-05-08 — do not edit manually
 
 window.SUGGESTED_RECIPES = [
   {
     id: "sug1",
-    title: "Venetian Sarde in Saor — Sweet & Sour Sardines with Pine Nuts, Raisins & Polenta",
-    category: "Dinner",
-    time: "50 mins",
+    title: "Venetian-Style Chicken Liver Crostini with Marsala, Sage & Salted Ricotta",
+    category: "Lunch",
+    time: "25 mins",
     serves: "4",
-    desc: "One of Venice\'s oldest and most beloved dishes, sarde in saor layers crispy fried sardines with silky agrodolce onions, plump raisins and toasted pine nuts — a flavour combination that is deeply savoury, sweet, sour and completely addictive. Served over soft, creamy polenta, this is rustic Italian cooking at its most soulful and surprising.",
-    emoji: "🐟",
-    image: "https://images.unsplash.com/photo-1682496039948-ab599c31a8e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxWZW5ldGlhbiUyMFNhcmRlJTIwaW4lMjBTYW9yJTIwJUUyJTgwJTk0JTIwU3dlZXQlMjAlMjYlMjBTb3VyJTIwU2FyZGluZXMlMjB3aXRoJTIwUGluZSUyME51dHMlMkMlMjBSYWlzaW5zJTIwJTI2JTIwUG9sZW50YSUyMGZvb2QlMjBkaXNofGVufDB8MHx8fDE3NzgxMzA2Njh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    desc: "A bold, old-school Italian cicchetti dish that punches far above its price — chicken livers cooked fast and hot with marsala, caramelised onion and sage until silky and just-pink inside. Piled onto toasted sourdough and finished with crumbled salted ricotta, it\'s rich, savoury and deeply satisfying in just 25 minutes.",
+    emoji: "🍷",
+    image: "https://images.unsplash.com/photo-1585036563230-8f7d49ebba2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxWZW5ldGlhbi1TdHlsZSUyMENoaWNrZW4lMjBMaXZlciUyMENyb3N0aW5pJTIwd2l0aCUyME1hcnNhbGElMkMlMjBTYWdlJTIwJTI2JTIwU2FsdGVkJTIwUmljb3R0YSUyMGZvb2QlMjBkaXNofGVufDB8MHx8fDE3NzgyMTcxMTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
     ingredientGroups: [
       {
-        group: "Sardines",
+        group: "Crostini Base",
         items: [
-          { name: "Fresh sardines, gutted and cleaned (or butterflied fillets)", quantity: 600, unit: "g" },
-          { name: "Plain flour, for dusting", quantity: 4, unit: "tbsp" },
-          { name: "Olive oil, for frying", quantity: 5, unit: "tbsp" },
-          { name: "Flaky sea salt", quantity: 1, unit: "tsp" },
-          { name: "Black pepper, freshly ground", quantity: 0.5, unit: "tsp" }
+          { name: "Sourdough loaf, cut into thick slices", quantity: 8, unit: "slices" },
+          { name: "Garlic clove, halved", quantity: 1, unit: "" },
+          { name: "Extra-virgin olive oil", quantity: 3, unit: "tbsp" }
         ]
       },
       {
-        group: "Saor (Sweet & Sour Onion Sauce)",
+        group: "Chicken Liver Mixture",
         items: [
-          { name: "Large white onions, very thinly sliced", quantity: 4, unit: "" },
-          { name: "Olive oil", quantity: 4, unit: "tbsp" },
-          { name: "White wine vinegar", quantity: 100, unit: "ml" },
-          { name: "Dry white wine", quantity: 100, unit: "ml" },
-          { name: "Raisins or sultanas", quantity: 50, unit: "g" },
-          { name: "Pine nuts, lightly toasted", quantity: 50, unit: "g" },
-          { name: "Caster sugar", quantity: 1, unit: "tsp" },
-          { name: "Bay leaves", quantity: 2, unit: "" },
-          { name: "Whole cloves", quantity: 3, unit: "" }
-        ]
-      },
-      {
-        group: "Soft Polenta",
-        items: [
-          { name: "Quick-cook polenta", quantity: 200, unit: "g" },
-          { name: "Whole milk", quantity: 500, unit: "ml" },
-          { name: "Water", quantity: 500, unit: "ml" },
-          { name: "Unsalted butter", quantity: 40, unit: "g" },
-          { name: "Parmesan, finely grated", quantity: 40, unit: "g" },
-          { name: "Salt", quantity: 1.5, unit: "tsp" }
+          { name: "Chicken livers, trimmed and patted dry", quantity: 400, unit: "g" },
+          { name: "White onion, finely sliced", quantity: 1, unit: "large" },
+          { name: "Unsalted butter", quantity: 30, unit: "g" },
+          { name: "Olive oil", quantity: 2, unit: "tbsp" },
+          { name: "Fresh sage leaves", quantity: 12, unit: "" },
+          { name: "Marsala wine (dry or semi-dry)", quantity: 100, unit: "ml" },
+          { name: "Dijon mustard", quantity: 1, unit: "tsp" },
+          { name: "Salt and black pepper", quantity: 0, unit: "to taste" }
         ]
       },
       {
         group: "To Finish",
         items: [
-          { name: "Fresh flat-leaf parsley, roughly chopped", quantity: 1, unit: "handful" },
-          { name: "Lemon, for squeezing", quantity: 1, unit: "" }
+          { name: "Salted ricotta, crumbled", quantity: 80, unit: "g" },
+          { name: "Flat-leaf parsley, roughly chopped", quantity: 2, unit: "tbsp" },
+          { name: "Lemon, juice only", quantity: 0.5, unit: "" },
+          { name: "Pinch of chilli flakes", quantity: 0, unit: "to taste" }
         ]
       }
     ],
     substitutes: [
-      { ingredient: "Fresh sardines", alternatives: ["Mackerel fillets", "Fresh herring fillets"] },
-      { ingredient: "White wine vinegar", alternatives: ["Cider vinegar", "Prosecco vinegar"] },
-      { ingredient: "Quick-cook polenta", alternatives: ["Instant polenta", "Creamy mashed potato"] },
-      { ingredient: "Pine nuts", alternatives: ["Flaked almonds", "Roughly chopped walnuts"] }
+      { ingredient: "Chicken livers", alternatives: ["Duck livers", "Lamb\'s liver (sliced thin)"] },
+      { ingredient: "Marsala wine", alternatives: ["Dry sherry (fino or amontillado)", "Madeira wine"] },
+      { ingredient: "Salted ricotta", alternatives: ["Pecorino, finely grated", "Aged feta, crumbled"] },
+      { ingredient: "Sourdough", alternatives: ["Ciabatta", "Baguette slices, toasted"] }
     ],
     instructions: [
-      "Make the saor first — heat 4 tbsp olive oil in a large, wide pan over a low-medium heat. Add the thinly sliced onions with the bay leaves, cloves and a good pinch of salt. Cook very slowly, stirring occasionally, for 20–25 minutes until the onions are completely soft, pale gold and jammy — do not rush this step.",
-      "Add the white wine to the onions and let it bubble for 2 minutes, then pour in the white wine vinegar. Add the sugar, raisins and half the pine nuts. Stir well and simmer gently for 5 minutes until slightly thickened and fragrant. Taste and adjust — it should be tangy, slightly sweet and deeply savoury. Remove the bay leaves and cloves. Set aside.",
-      "Pat the sardines very dry with kitchen paper — this is key to getting a good crisp. Season all over with salt and pepper, then dust lightly in plain flour, shaking off any excess.",
-      "Heat a generous pour of olive oil in a large frying pan over a high heat until shimmering. Fry the sardines in batches for 2–3 minutes per side until golden and crispy — don\'t crowd the pan. Drain on kitchen paper.",
-      "Make the polenta: bring the milk and water to a gentle boil in a large saucepan with the salt. Pour in the polenta in a steady stream, whisking constantly to prevent lumps. Switch to a wooden spoon and stir over a medium-low heat for 5–8 minutes (or per packet instructions) until thick and creamy. Beat in the butter and Parmesan. Keep warm, adding a splash more milk if it stiffens.",
-      "To assemble: spoon generous portions of polenta into wide shallow bowls. Lay 2–3 crispy sardines over each portion, then spoon the warm saor onions generously over the top. Scatter the remaining toasted pine nuts and fresh parsley. Squeeze over a little lemon and serve immediately."
+      "Step 1 — Toast the bread. Grill or griddle the sourdough slices until golden and charred at the edges. While still hot, rub each slice firmly with the cut side of the garlic clove, then brush with olive oil. Set aside on a board.",
+      "Step 2 — Caramelise the onion. In a wide frying pan, melt the butter with 1 tbsp olive oil over medium-low heat. Add the sliced onion with a pinch of salt and cook gently for 10–12 minutes, stirring occasionally, until soft, golden and sweet. Scoop out and set aside.",
+      "Step 3 — Fry the sage. Add the remaining tablespoon of oil to the same pan over medium-high heat. Add the sage leaves and fry for 30–45 seconds until crisp. Remove with a slotted spoon and drain on kitchen paper.",
+      "Step 4 — Sear the livers. Turn the heat to high. Pat the chicken livers dry again and season generously. Add to the hot pan in a single layer — don\'t crowd them. Sear for 90 seconds per side until deeply browned outside but still slightly pink in the centre. They continue cooking off the heat, so don\'t overdo it.",
+      "Step 5 — Deglaze with marsala. Return the caramelised onions to the pan. Pour in the marsala — it will sizzle and steam dramatically. Let it bubble for 60–90 seconds, scraping up any browned bits. Stir in the Dijon mustard and remove from heat. Taste for seasoning and add a squeeze of lemon juice.",
+      "Step 6 — Assemble and serve. Roughly chop the livers or leave whole and spoon generously over the toasted crostini. Scatter over the crumbled salted ricotta, crispy sage leaves, chopped parsley and a pinch of chilli flakes. Serve immediately while everything is hot."
     ]
   },
   {
     id: "sug2",
-    title: "Colombian Bandeja Paisa — Rice, Crispy Chicharrón, Black Beans, Fried Egg & Ají Verde",
-    category: "Lunch",
-    time: "55 mins",
-    serves: "2",
-    desc: "Colombia\'s most iconic platter, bandeja paisa is the ultimate feast-on-a-plate: crispy pork belly strips, silky black beans, fluffy white rice, a perfectly fried egg and a bright, herbaceous ají verde sauce that cuts through everything beautifully. It\'s bold, satisfying, deeply comforting and comes together from mostly pantry staples — the ají verde alone is worth making by the jarful.",
-    emoji: "🍳",
-    image: "https://images.pexels.com/photos/34130182/pexels-photo-34130182.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    title: "West African Peanut & Tomato Beef Stew (Groundnut Soup) with Jollof Rice",
+    category: "Dinner",
+    time: "1 hr 20 mins",
+    serves: "4",
+    desc: "One of West Africa\'s most beloved dishes — tender chunks of beef slowly simmered in a deeply savoury, slightly spiced peanut and tomato broth that\'s rich without being heavy. Served alongside smoky, party-style jollof rice cooked with scotch bonnet and tomato paste, this is a genuinely spectacular weeknight feast that fills the house with incredible aromas.",
+    emoji: "🥜",
+    image: "https://images.unsplash.com/photo-1664992960082-0ea299a9c53e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxXZXN0JTIwQWZyaWNhbiUyMFBlYW51dCUyMCUyNiUyMFRvbWF0byUyMEJlZWYlMjBTdGV3JTIwJTI4R3JvdW5kbnV0JTIwU291cCUyOSUyMHdpdGglMjBKb2xsb2YlMjBSaWNlJTIwZm9vZCUyMGRpc2h8ZW58MHwwfHx8MTc3ODIxNzExMXww&ixlib=rb-4.1.0&q=80&w=1080",
     ingredientGroups: [
       {
-        group: "Crispy Chicharrón",
+        group: "Stew",
         items: [
-          { name: "Pork belly strips, skin on, about 2cm thick", quantity: 300, unit: "g" },
-          { name: "Salt", quantity: 1, unit: "tsp" },
-          { name: "Ground cumin", quantity: 0.5, unit: "tsp" },
-          { name: "Bicarbonate of soda (rubbed on the skin)", quantity: 0.5, unit: "tsp" },
-          { name: "Neutral oil, for frying", quantity: 2, unit: "tbsp" }
-        ]
-      },
-      {
-        group: "Black Beans",
-        items: [
-          { name: "Tinned black beans, drained and rinsed", quantity: 400, unit: "g" },
-          { name: "White onion, finely diced", quantity: 0.5, unit: "" },
-          { name: "Garlic cloves, minced", quantity: 2, unit: "" },
+          { name: "Braising beef (chuck or stewing steak), cut into 4cm chunks", quantity: 700, unit: "g" },
+          { name: "Smooth peanut butter (no added sugar)", quantity: 150, unit: "g" },
+          { name: "Tinned chopped tomatoes", quantity: 400, unit: "g" },
+          { name: "White onion, roughly chopped", quantity: 1, unit: "large" },
+          { name: "Garlic cloves, minced", quantity: 4, unit: "" },
+          { name: "Fresh ginger, grated", quantity: 20, unit: "g" },
+          { name: "Scotch bonnet chilli (or to taste), finely chopped", quantity: 1, unit: "" },
+          { name: "Tomato paste", quantity: 2, unit: "tbsp" },
+          { name: "Beef stock", quantity: 500, unit: "ml" },
+          { name: "Ground coriander", quantity: 1, unit: "tsp" },
           { name: "Ground cumin", quantity: 1, unit: "tsp" },
-          { name: "Smoked paprika", quantity: 0.5, unit: "tsp" },
-          { name: "Chicken or vegetable stock", quantity: 150, unit: "ml" },
-          { name: "Olive oil", quantity: 1, unit: "tbsp" },
-          { name: "Salt and pepper", quantity: 1, unit: "pinch" }
+          { name: "Smoked paprika", quantity: 1, unit: "tsp" },
+          { name: "Groundnut or vegetable oil", quantity: 2, unit: "tbsp" },
+          { name: "Salt and black pepper", quantity: 0, unit: "to taste" }
         ]
       },
       {
-        group: "White Rice",
+        group: "Jollof Rice",
         items: [
-          { name: "Long-grain white rice", quantity: 150, unit: "g" },
-          { name: "Water", quantity: 280, unit: "ml" },
-          { name: "Salt", quantity: 0.5, unit: "tsp" },
-          { name: "Neutral oil", quantity: 1, unit: "tsp" }
-        ]
-      },
-      {
-        group: "Ají Verde",
-        items: [
-          { name: "Large bunch of fresh coriander, leaves and stems", quantity: 1, unit: "" },
-          { name: "Spring onions, roughly chopped", quantity: 3, unit: "" },
-          { name: "Green chilli (jalapeño or serrano), roughly chopped", quantity: 1, unit: "" },
-          { name: "Garlic clove", quantity: 1, unit: "" },
-          { name: "Lime juice", quantity: 2, unit: "tbsp" },
-          { name: "Olive oil", quantity: 3, unit: "tbsp" },
-          { name: "Salt", quantity: 0.5, unit: "tsp" }
+          { name: "Long-grain parboiled rice, rinsed", quantity: 300, unit: "g" },
+          { name: "Tinned chopped tomatoes", quantity: 200, unit: "g" },
+          { name: "Red bell pepper, roughly chopped", quantity: 1, unit: "" },
+          { name: "White onion, roughly chopped", quantity: 0.5, unit: "" },
+          { name: "Tomato paste", quantity: 2, unit: "tbsp" },
+          { name: "Chicken or vegetable stock", quantity: 400, unit: "ml" },
+          { name: "Smoked paprika", quantity: 1, unit: "tsp" },
+          { name: "Bay leaves", quantity: 2, unit: "" },
+          { name: "Groundnut or vegetable oil", quantity: 2, unit: "tbsp" },
+          { name: "Salt", quantity: 0, unit: "to taste" }
         ]
       },
       {
         group: "To Serve",
         items: [
-          { name: "Eggs", quantity: 2, unit: "" },
-          { name: "Ripe avocado, sliced", quantity: 1, unit: "" },
-          { name: "Butter, for frying eggs", quantity: 10, unit: "g" }
+          { name: "Fresh coriander, roughly torn", quantity: 1, unit: "small bunch" },
+          { name: "Lime wedges", quantity: 4, unit: "" },
+          { name: "Roasted salted peanuts, roughly crushed", quantity: 50, unit: "g" }
         ]
       }
     ],
     substitutes: [
-      { ingredient: "Pork belly strips", alternatives: ["Thick-cut streaky bacon", "Pork ribs"] },
-      { ingredient: "Tinned black beans", alternatives: ["Tinned kidney beans", "Tinned pinto beans"] },
-      { ingredient: "Green chilli", alternatives: ["Half a green pepper for milder heat", "Pickled jalapeño"] }
+      { ingredient: "Braising beef", alternatives: ["Bone-in goat pieces", "Lamb neck fillet, cubed"] },
+      { ingredient: "Scotch bonnet", alternatives: ["½ tsp cayenne pepper", "Habanero chilli"] },
+      { ingredient: "Smooth peanut butter", alternatives: ["Cashew butter", "Almond butter (gives a milder flavour)"] },
+      { ingredient: "Parboiled long-grain rice", alternatives: ["Basmati rice (reduce cooking liquid slightly)", "Jasmine rice"] }
     ],
     instructions: [
-      "Prepare the chicharrón: pat the pork belly strips completely dry. Score the skin lightly, then rub the skin side with bicarbonate of soda. Season all over with salt and cumin. Place skin-side down in a cold, dry heavy frying pan and set over a medium heat — starting cold helps render the fat. Cook for 12–15 minutes, pressing down occasionally, until the skin is deeply golden and crackling. Flip and cook the flesh side for 4–5 more minutes. Rest on a wire rack.",
-      "While the pork renders, cook the rice: heat the oil in a small saucepan over medium heat, add the rice and stir for 1 minute until the grains look opaque. Add water and salt, bring to the boil, then cover tightly, reduce to the lowest heat and cook for 12 minutes. Remove from heat and leave covered for 5 minutes, then fluff with a fork.",
-      "Make the black beans: heat olive oil in a small saucepan over medium heat. Sauté the onion for 5 minutes until softened, then add garlic, cumin and smoked paprika and cook for 1 minute. Add the drained black beans and stock. Simmer for 8–10 minutes, stirring and lightly mashing some beans against the side of the pan to create a slightly creamy texture. Season well.",
-      "Make the ají verde: blitz the coriander, spring onions, chilli, garlic, lime juice, olive oil and salt in a small blender or use a stick blender. Blitz until smooth and bright green — taste and adjust lime and salt. It should be punchy, herby and fresh.",
-      "Fry the eggs in butter over a medium heat until the whites are just set but the yolks are still runny. Season with salt and pepper.",
-      "To plate: arrange a mound of rice and a generous spoonful of black beans side by side on each plate. Lean the chicharrón strips against the rice, nestle the fried egg alongside, and fan out the avocado slices. Spoon or drizzle the ají verde generously over everything and serve the rest alongside."
+      "Step 1 — Brown the beef. Season the beef chunks generously with salt and pepper. Heat the oil in a large heavy-based pot or casserole over high heat. Working in batches, sear the beef on all sides until deeply browned — about 3–4 minutes per batch. Don\'t rush this; it\'s where much of the flavour lives. Set the browned meat aside.",
+      "Step 2 — Build the stew base. Reduce heat to medium. Add the onion to the same pot and cook for 5 minutes until softened. Add garlic, ginger and scotch bonnet and cook for another 2 minutes. Stir in the tomato paste, cumin, coriander and smoked paprika and cook for 1 minute until fragrant.",
+      "Step 3 — Add tomatoes and peanut butter. Pour in the tinned tomatoes and stock, scraping up any browned bits from the base. Whisk in the peanut butter until fully dissolved into the broth — it will look slightly rough at first but will smooth out as it cooks. Return the browned beef to the pot.",
+      "Step 4 — Simmer low and slow. Bring to a gentle boil, then reduce to a low simmer. Cover partially and cook for 50–60 minutes, stirring occasionally, until the beef is tender and the sauce is thick and coating. Taste and adjust seasoning — add more scotch bonnet if you want more heat.",
+      "Step 5 — Make the jollof rice. Blend the tinned tomatoes, red pepper and onion together until smooth. Heat oil in a medium saucepan over medium heat. Add the tomato-pepper blend and tomato paste and cook, stirring often, for 8–10 minutes until the mixture darkens, thickens and the raw smell disappears. Add smoked paprika, bay leaves and a generous pinch of salt.",
+      "Step 6 — Cook the rice. Add the rinsed rice to the tomato base and stir to coat every grain. Pour in the stock, stir once, then reduce to the lowest heat possible and cover tightly with a lid (or foil under the lid for a tighter seal). Cook for 25–30 minutes without lifting the lid. The bottom will catch slightly — that\'s the coveted 'party crust'. Fluff with a fork before serving.",
+      "Step 7 — Serve. Spoon the jollof rice into bowls and ladle the peanut beef stew generously alongside. Top with torn coriander, crushed roasted peanuts and a squeeze of lime."
     ]
   },
   {
     id: "sug3",
-    title: "Turkish Mercimek Çorbası — Red Lentil & Cumin Soup with Burnt Butter, Aleppo Pepper & Warm Flatbread",
-    category: "Dinner",
-    time: "40 mins",
-    serves: "4",
-    desc: "Turkey\'s most beloved everyday soup, mercimek çorbası is a masterclass in how a handful of humble ingredients can produce something genuinely profound. Velvety smooth red lentils are deepened with slow-cooked onion, carrot and warm spices, then finished with a dramatic pour of sizzling burnt butter infused with Aleppo pepper — that final flourish transforms the whole bowl. Serve with warm flatbread for a deeply comforting, fully plant-based dinner.",
-    emoji: "🍲",
-    image: "https://images.unsplash.com/photo-1741026079032-7cb660e44bad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUdXJraXNoJTIwTWVyY2ltZWslMjAlQzMlODdvcmJhcyVDNCVCMSUyMCVFMiU4MCU5NCUyMFJlZCUyMExlbnRpbCUyMCUyNiUyMEN1bWluJTIwU291cCUyMHdpdGglMjBCdXJudCUyMEJ1dHRlciUyQyUyMEFsZXBwbyUyMFBlcHBlciUyMCUyNiUyMFdhcm0lMjBGbGF0YnJlYWQlMjBmb29kJTIwZGlzaHxlbnwwfDB8fHwxNzc4MTMwNjY5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    title: "Turkish Menemen with Roasted Peppers, Feta & Za\'atar Flatbread",
+    category: "Breakfast/Brunch",
+    time: "30 mins",
+    serves: "2",
+    desc: "Turkey\'s beloved spiced egg dish — far more flavourful than any scrambled egg you\'ve had — cooked with charred peppers, ripe tomatoes, a generous hand with cumin and pul biber, and finished with crumbled white feta. Served straight from the pan with warm za\'atar flatbread for mopping, this is one of the most satisfying brunches in the Mediterranean canon and comes together effortlessly.",
+    emoji: "🍳",
+    image: "https://images.unsplash.com/photo-1759216280661-e785edc3922e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUdXJraXNoJTIwTWVuZW1lbiUyMHdpdGglMjBSb2FzdGVkJTIwUGVwcGVycyUyQyUyMEZldGElMjAlMjYlMjBaYSU1QyUyMGZvb2QlMjBkaXNofGVufDB8MHx8fDE3NzgyMTcxMTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
     ingredientGroups: [
       {
-        group: "Soup Base",
+        group: "Menemen",
         items: [
-          { name: "Red split lentils, rinsed", quantity: 300, unit: "g" },
-          { name: "Large white onion, roughly diced", quantity: 1, unit: "" },
-          { name: "Large carrot, roughly diced", quantity: 1, unit: "" },
-          { name: "Garlic cloves, roughly chopped", quantity: 3, unit: "" },
+          { name: "Large free-range eggs", quantity: 4, unit: "" },
+          { name: "Long green peppers (Turkish sivri or Italian frying peppers), sliced", quantity: 2, unit: "" },
+          { name: "Ripe vine tomatoes, roughly chopped", quantity: 3, unit: "large" },
+          { name: "White onion, finely diced", quantity: 1, unit: "small" },
+          { name: "Garlic cloves, thinly sliced", quantity: 2, unit: "" },
+          { name: "Pul biber (Aleppo pepper flakes)", quantity: 1.5, unit: "tsp" },
+          { name: "Ground cumin", quantity: 0.5, unit: "tsp" },
+          { name: "Tomato paste", quantity: 1, unit: "tbsp" },
           { name: "Olive oil", quantity: 3, unit: "tbsp" },
-          { name: "Ground cumin", quantity: 2, unit: "tsp" },
-          { name: "Ground turmeric", quantity: 0.5, unit: "tsp" },
-          { name: "Tomato paste", quantity: 2, unit: "tbsp" },
-          { name: "Vegetable stock", quantity: 1.5, unit: "litres" },
-          { name: "Salt", quantity: 2, unit: "tsp" },
-          { name: "Black pepper", quantity: 0.5, unit: "tsp" }
+          { name: "Salt and black pepper", quantity: 0, unit: "to taste" }
         ]
       },
       {
-        group: "Burnt Butter Finish",
+        group: "To Finish",
         items: [
-          { name: "Unsalted butter", quantity: 50, unit: "g" },
-          { name: "Aleppo pepper (pul biber) or sweet smoked paprika", quantity: 1.5, unit: "tsp" },
-          { name: "Dried mint", quantity: 0.5, unit: "tsp" }
+          { name: "White feta cheese, crumbled", quantity: 80, unit: "g" },
+          { name: "Fresh flat-leaf parsley, chopped", quantity: 2, unit: "tbsp" },
+          { name: "Extra-virgin olive oil, to drizzle", quantity: 1, unit: "tbsp" }
         ]
       },
       {
-        group: "To Serve",
+        group: "Za\'atar Flatbread",
         items: [
-          { name: "Lemon, cut into wedges", quantity: 1, unit: "" },
-          { name: "Fresh flat-leaf parsley, roughly torn", quantity: 1, unit: "small handful" },
-          { name: "Warm flatbreads or pitta", quantity: 4, unit: "" },
-          { name: "Thick plain yoghurt (optional)", quantity: 4, unit: "tbsp" }
+          { name: "Ready-made flatbreads or pittas", quantity: 2, unit: "" },
+          { name: "Za\'atar spice blend", quantity: 2, unit: "tbsp" },
+          { name: "Olive oil", quantity: 2, unit: "tbsp" }
         ]
       }
     ],
     substitutes: [
-      { ingredient: "Aleppo pepper (pul biber)", alternatives: ["Sweet smoked paprika with a small pinch of chilli flakes", "Ancho chilli flakes"] },
-      { ingredient: "Unsalted butter", alternatives: ["Olive oil for a vegan version", "Ghee for extra depth"] },
-      { ingredient: "Vegetable stock", alternatives: ["Chicken stock for extra richness", "Water with an extra pinch of salt"] }
+      { ingredient: "Long green peppers", alternatives: ["Green bell pepper, diced", "Padron peppers, halved"] },
+      { ingredient: "Pul biber", alternatives: ["½ tsp sweet smoked paprika + pinch of cayenne", "Gochugaru (Korean chilli flakes)"] },
+      { ingredient: "White feta", alternatives: ["Crumbled goat\'s cheese", "Halloumi, grilled and crumbled"] },
+      { ingredient: "Ready-made flatbreads", alternatives: ["Sourdough toast", "Warm tortillas"] }
     ],
     instructions: [
-      "Heat the olive oil in a large saucepan over a medium heat. Add the onion and carrot with a good pinch of salt and cook for 8–10 minutes, stirring occasionally, until softened and starting to colour at the edges. Add the garlic and cook for another minute.",
-      "Add the tomato paste, ground cumin and turmeric to the pan. Stir everything together and cook for 2 minutes, letting the tomato paste caramelise slightly against the bottom of the pan — this builds real depth.",
-      "Add the rinsed red lentils and pour in the vegetable stock. Stir well, bring to the boil, then reduce to a steady simmer. Cook uncovered for 20–25 minutes, stirring occasionally, until the lentils are completely tender and beginning to collapse. The soup will look quite thick — that\'s correct.",
-      "Remove from the heat and blend the soup until completely smooth using a stick blender (or carefully in batches in a standing blender). Return to the heat. Thin with a splash more stock or hot water if needed — the ideal consistency is like thick, velvety bisque. Taste and season generously with salt, pepper and a squeeze of lemon.",
-      "Make the burnt butter finish just before serving: melt the butter in a small saucepan over a medium-high heat. Swirl and watch it carefully — after foaming it will begin to turn golden, then deeply nutty brown and smell like hazelnuts. The moment it reaches a rich amber (about 2–3 minutes), remove from the heat immediately and stir in the Aleppo pepper and dried mint. It will sizzle dramatically.",
-      "Ladle the hot soup into bowls. Immediately pour a generous swirl of the crimson Aleppo butter over each bowl. Add a spoonful of yoghurt if using, a scatter of fresh parsley, a squeeze of lemon wedge on the side, and serve with plenty of warm flatbread."
+      "Step 1 — Blister the peppers. Heat the olive oil in a wide heavy frying pan (cast iron is ideal) over medium-high heat. Add the sliced green peppers and cook for 5–6 minutes, turning occasionally, until lightly charred and blistered at the edges. This charring is important for depth of flavour — don\'t rush it.",
+      "Step 2 — Cook the onion and garlic. Reduce heat to medium. Add the diced onion to the peppers and cook for 4–5 minutes until softened and translucent. Add the sliced garlic, pul biber and cumin and stir for 1 minute. Add the tomato paste and cook for another minute until it darkens slightly.",
+      "Step 3 — Add the tomatoes. Tip in the chopped tomatoes, season well with salt and pepper, and cook for 8–10 minutes over medium heat, stirring occasionally, until the tomatoes have collapsed into a thick, fragrant sauce and most of the liquid has evaporated. The mixture should be jammy and concentrated.",
+      "Step 4 — Add the eggs. Make 4 small wells in the tomato mixture and crack an egg into each one. Reduce heat to low-medium. For traditional menemen, gently fold and scramble the eggs into the pepper-tomato mixture with a spatula, keeping them soft and custardy — you want flowing, creamy curds throughout, not dry or set. Remove from the heat while the eggs look just slightly underdone; carry-over heat finishes them.",
+      "Step 5 — Warm the flatbreads. While the eggs cook, mix the za\'atar with olive oil in a small bowl to form a paste. Brush generously over the flatbreads and warm them in a dry pan for 60–90 seconds per side, or toast briefly under the grill until fragrant.",
+      "Step 6 — Finish and serve. Take the pan directly to the table. Scatter crumbled feta and chopped parsley generously over the menemen, drizzle with a little extra-virgin olive oil, and serve straight from the pan with the warm za\'atar flatbreads alongside."
     ]
   }
 ];

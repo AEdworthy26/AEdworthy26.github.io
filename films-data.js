@@ -1,18 +1,18 @@
 // films-data.js
-// Auto-updated 2026-05-07 — do not edit manually
+// Auto-updated 2026-05-08 — do not edit manually
 
 var FILMS_DATA = {
-  date: "2026-05-07",
+  date: "2026-05-08",
   film: {
-    title: "The Straight Story",
-    director: "David Lynch",
-    year: 1999,
-    genres: ["Drama", "Road Movie"],
-    desc: "An elderly man named Alvin Straight travels across Iowa and Wisconsin on a lawnmower to visit his ailing, estranged brother — and the result is one of the most unexpectedly tender films ever made. David Lynch, known for surrealism and darkness, here strips everything down to its quietest essence: unhurried landscapes, weathered faces, and the slow accumulation of a life honestly lived. Richard Farnsworth delivers a performance of breathtaking, unshowy grace, earning an Academy Award nomination at 79 years old in what would be his final major role. The film asks what it means to reconcile with the past and to keep moving forward when every mile costs you something, and it answers with extraordinary warmth and patience. A G-rated Lynch film sounds like a paradox, but 'The Straight Story' is proof that restraint can be its own kind of revelation.",
-    cast: ["Richard Farnsworth", "Sissy Spacek", "Harry Dean Stanton"],
-    rating: 95,
+    title: "The Conversation",
+    director: "Francis Ford Coppola",
+    year: 1974,
+    genres: ["Thriller", "Drama"],
+    desc: "Harry Caul is the best surveillance man in the business — a paranoid, intensely private wiretapper in San Francisco who becomes obsessed with a recording he has made of a young couple in Union Square. Gene Hackman delivers one of the great quiet performances in American cinema, conveying a man slowly unraveling as professional detachment gives way to moral dread. Coppola made this film between the two Godfather pictures, and it stands as his most personal work: a razor-sharp meditation on privacy, guilt, and the violence of knowing too much. Walter Murch\'s sound design turns eavesdropping itself into a kind of horror, making the mundane act of listening feel deeply unsettling. It won the Palme d\'Or at Cannes and remains a landmark of 1970s American paranoia cinema.",
+    cast: ["Gene Hackman", "John Cazale", "Allen Garfield"],
+    rating: 98,
     ratingSource: "Rotten Tomatoes",
-    ratingExtra: "1 Academy Award Nomination",
-    posterUrl: "https://upload.wikimedia.org/wikipedia/en/8/8a/The_Straight_Story_poster.jpg"
+    ratingExtra: "Palme d\'Or, Cannes 1974",
+    posterUrl: "https://upload.wikimedia.org/wikipedia/en/e/e0/Theconversation.jpg"
   }
 };
