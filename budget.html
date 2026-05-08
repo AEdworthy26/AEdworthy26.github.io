@@ -469,6 +469,15 @@
     <div class="plan-wrap">
       <table class="plan-table" id="plan-table"></table>
     </div>
+    <div class="card" style="margin-top:1rem;">
+      <div class="card-title" style="display:flex;align-items:center;gap:.6rem;">
+        Pension Contributions
+        <span style="font-size:.72rem;color:var(--muted);font-weight:400;text-transform:none;letter-spacing:0;font-family:inherit;">excluded from budget · included in savings rate</span>
+      </div>
+      <div class="plan-wrap">
+        <table class="plan-table" id="pension-table"></table>
+      </div>
+    </div>
   </div>
 
   <!-- ═══════════════════════════ TRACKING ═══════════════════════════ -->
@@ -761,7 +770,8 @@ function freshData() {
     settings: { startYear: 2024, lateIncomeActive: true, lateIncomeDay: 20, savingsRateMethod: 'allocated' },
     categories: JSON.parse(JSON.stringify(DEFAULT_CATS)),
     budgets: {},
-    transactions: []
+    transactions: [],
+    pension: {}
   };
 }
 
@@ -776,6 +786,7 @@ function loadData() {
   if (!DATA.budgets) DATA.budgets = {};
   if (!DATA.transactions) DATA.transactions = [];
   if (!DATA.settings) DATA.settings = freshData().settings;
+  if (!DATA.pension) DATA.pension = {};
 }
 
 function saveData() {
@@ -851,6 +862,31 @@ function setMonthlyBudget(year, category, amount) {
   if (!DATA.budgets[y]) DATA.budgets[y] = {};
   DATA.budgets[y][category] = [amount,amount,amount,amount,amount,amount,amount,amount,amount,amount,amount,amount];
   saveData();
+}
+
+/* ── Pension helpers ── */
+function getPension(year, monthIdx) {
+  var y = String(year);
+  if (!DATA.pension[y]) return { personal: 0, employer: 0 };
+  var row = DATA.pension[y];
+  return {
+    personal: (row.personal && row.personal[monthIdx]) || 0,
+    employer: (row.employer && row.employer[monthIdx]) || 0
+  };
+}
+function setPension(year, monthIdx, type, val) {
+  var y = String(year);
+  if (!DATA.pension[y]) DATA.pension[y] = { personal: new Array(12).fill(0), employer: new Array(12).fill(0) };
+  DATA.pension[y][type][monthIdx] = val;
+  saveData();
+}
+function getPensionForPeriod(year, monthIdx) {
+  if (monthIdx < 0) {
+    var t = { personal: 0, employer: 0 };
+    for (var mi = 0; mi < 12; mi++) { var p = getPension(year, mi); t.personal += p.personal; t.employer += p.employer; }
+    return t;
+  }
+  return getPension(year, monthIdx);
 }
 
 /* Get all transactions for a given year+month using effective date */
@@ -937,12 +973,15 @@ function renderDashboard() {
   var pct = isAllYear ? Math.round((new Date().getMonth() + 1) / 12 * 100) : periodCompletion(year, monthIdx + 1);
   var balance = tracked.income - tracked.expense - tracked.saving;
 
+  var pension = getPensionForPeriod(year, monthIdx);
+  var pensionTotal = pension.personal + pension.employer;
+
   var savingsRate = 0;
   if (tracked.income > 0) {
     if (DATA.settings.savingsRateMethod === 'not_expenses') {
-      savingsRate = ((tracked.income - tracked.expense) / tracked.income) * 100;
+      savingsRate = ((tracked.income - tracked.expense + pensionTotal) / tracked.income) * 100;
     } else {
-      savingsRate = (tracked.saving / tracked.income) * 100;
+      savingsRate = ((tracked.saving + pensionTotal) / tracked.income) * 100;
     }
   }
 
@@ -952,7 +991,7 @@ function renderDashboard() {
     { label: 'Selected Period', val: isAllYear ? 'Full Year ' + year : MONTHS_FULL[monthIdx] + ' ' + year, sub: '', bar: false },
     { label: isAllYear ? 'Year Progress' : 'Period Completion', val: pct + '%', sub: pct === 100 ? (isAllYear ? 'Year complete' : 'Month complete') : pct === 0 ? 'Future period' : 'Days elapsed', bar: true, barVal: pct },
     { label: 'Tracking Balance', val: fmtCompact(balance), sub: 'Income − Expenses − Savings', cls: balance >= 0 ? 'positive' : 'negative', bar: false },
-    { label: 'Savings Rate', val: savingsRate.toFixed(1) + '%', sub: DATA.settings.savingsRateMethod === 'not_expenses' ? '(Income − Expenses) / Income' : 'Savings / Income', bar: true, barVal: Math.min(savingsRate, 100) }
+    { label: 'Savings Rate', val: savingsRate.toFixed(1) + '%', sub: (DATA.settings.savingsRateMethod === 'not_expenses' ? '(Income − Expenses + Pension) / Income' : '(Savings + Pension) / Income') + (pensionTotal > 0 ? ' · £' + pensionTotal.toFixed(0) + ' pension' : ''), bar: true, barVal: Math.min(savingsRate, 100) }
   ].map(function(t) {
     return '<div class="kpi-tile">' +
       '<div class="kpi-label">' + t.label + '</div>' +
@@ -973,7 +1012,6 @@ function renderDashboard() {
       var total = txCat.reduce(function(s, t) { return s + t.amount; }, 0);
       var ratio = total / budget;
       if (ratio > 1) alerts.push({ cls: 'crit', text: cat + ': ' + fmt(total) + ' / ' + fmt(budget) + ' (over budget)' });
-      else if (ratio >= 0.8) alerts.push({ cls: 'warn', text: cat + ': ' + Math.round(ratio*100) + '% of budget used' });
     });
   }
   alertsEl.innerHTML = alerts.map(function(a) {
@@ -1187,6 +1225,7 @@ function renderBudgetPlan() {
     });
   });
   attachPlanDrag();
+  renderPensionPlan();
 }
 
 function renderBudgetPlanMonth() {
@@ -1245,6 +1284,70 @@ function renderBudgetPlanMonth() {
     });
   });
   attachPlanDrag();
+  renderPensionPlan();
+}
+
+function renderPensionPlan() {
+  var year = planYear;
+  var pensionEl = document.getElementById('pension-table');
+  if (!pensionEl) return;
+
+  if (planView === 'month') {
+    var mi = planMonth;
+    var p = getPension(year, mi);
+    var html = '<colgroup><col style="width:50%"><col style="width:25%"><col style="width:25%"></colgroup>';
+    html += '<thead><tr><th style="text-align:left">Type</th><th>' + MONTHS[mi] + '</th><th>Annual Total</th></tr></thead><tbody>';
+    ['personal', 'employer'].forEach(function(type) {
+      var label = type === 'personal' ? 'Personal Contribution' : 'Employer Matched';
+      var val = p[type];
+      var annual = 0; for (var i = 0; i < 12; i++) annual += getPension(year, i)[type];
+      html += '<tr><td class="cat-name">' + label + '</td>'
+        + '<td style="text-align:right"><input type="number" class="plan-input" data-year="' + year + '" data-type="' + type + '" data-month="' + mi + '" value="' + (val || '') + '" min="0" step="0.01" placeholder="0"></td>'
+        + '<td class="plan-cell-annual">' + fmt(annual) + '</td></tr>';
+    });
+    var mTotal = p.personal + p.employer;
+    var aTotal = 0; for (var i = 0; i < 12; i++) { var pp = getPension(year, i); aTotal += pp.personal + pp.employer; }
+    html += '<tr class="total-row"><td>Total Pension</td><td style="text-align:right">' + fmt(mTotal) + '</td><td class="plan-cell-annual">' + fmt(aTotal) + '</td></tr>';
+    html += '</tbody>';
+    pensionEl.innerHTML = html;
+  } else {
+    var html = '<colgroup><col class="col-cat">';
+    for (var ci = 0; ci < 12; ci++) html += '<col class="col-month">';
+    html += '<col class="col-annual"></colgroup>';
+    html += '<thead><tr><th>Type</th>';
+    MONTHS.forEach(function(m) { html += '<th>' + m + '</th>'; });
+    html += '<th>Annual</th></tr></thead><tbody>';
+
+    ['personal', 'employer'].forEach(function(type) {
+      var label = type === 'personal' ? 'Personal Contribution' : 'Employer Matched';
+      var annual = 0;
+      html += '<tr><td class="cat-name">' + label + '</td>';
+      for (var mi = 0; mi < 12; mi++) {
+        var val = getPension(year, mi)[type];
+        annual += val;
+        html += '<td><input type="number" class="plan-input" data-year="' + year + '" data-type="' + type + '" data-month="' + mi + '" value="' + (val || '') + '" min="0" step="0.01" placeholder="0"></td>';
+      }
+      html += '<td class="plan-cell-annual">' + fmt(annual) + '</td></tr>';
+    });
+
+    var annualTotal = 0;
+    html += '<tr class="total-row"><td>Total Pension</td>';
+    for (var mi = 0; mi < 12; mi++) {
+      var p = getPension(year, mi); var mTotal = p.personal + p.employer;
+      annualTotal += mTotal;
+      html += '<td>' + (mTotal > 0 ? fmt(mTotal) : '') + '</td>';
+    }
+    html += '<td class="plan-cell-annual">' + fmt(annualTotal) + '</td></tr>';
+    html += '</tbody>';
+    pensionEl.innerHTML = html;
+  }
+
+  pensionEl.querySelectorAll('.plan-input').forEach(function(inp) {
+    inp.addEventListener('change', function() {
+      setPension(parseInt(this.dataset.year), parseInt(this.dataset.month), this.dataset.type, parseFloat(this.value) || 0);
+      renderPensionPlan();
+    });
+  });
 }
 
 function attachPlanDrag() {
