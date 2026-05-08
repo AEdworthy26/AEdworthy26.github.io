@@ -1149,11 +1149,9 @@ function periodCompletion(year, month1) {
 }
 
 function availableYears() {
-  var start = DATA.settings.startYear || 2024;
   var thisYear = new Date().getFullYear();
-  var end = Math.max(thisYear + 1, start + 3);
   var years = [];
-  for (var y = start; y <= end; y++) years.push(y);
+  for (var y = thisYear; y <= thisYear + 3; y++) years.push(y);
   return years;
 }
 
