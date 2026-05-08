@@ -1191,13 +1191,14 @@ function renderDashboard() {
 
   var pension = getPensionForPeriod(year, monthIdx);
   var pensionTotal = pension.personal + pension.employer;
+  var pensionPersonal = pension.personal;
 
   var savingsRate = 0;
   if (tracked.income > 0) {
     if (DATA.settings.savingsRateMethod === 'not_expenses') {
-      savingsRate = ((tracked.income - tracked.expense + pensionTotal) / tracked.income) * 100;
+      savingsRate = ((tracked.income - tracked.expense + pensionPersonal) / tracked.income) * 100;
     } else {
-      savingsRate = ((tracked.saving + pensionTotal) / tracked.income) * 100;
+      savingsRate = ((tracked.saving + pensionPersonal) / tracked.income) * 100;
     }
   }
 
@@ -1207,7 +1208,7 @@ function renderDashboard() {
     { label: 'Selected Period', val: isAllYear ? 'Full Year ' + year : MONTHS_FULL[monthIdx] + ' ' + year, sub: '', bar: false, accent: 'kpi-neutral' },
     { label: isAllYear ? 'Year Progress' : 'Period Completion', val: pct + '%', sub: pct === 100 ? (isAllYear ? 'Year complete' : 'Month complete') : pct === 0 ? 'Future period' : 'Days elapsed', bar: true, barVal: pct, accent: 'kpi-neutral' },
     { label: 'Tracking Balance', val: fmtCompact(balance), sub: 'Income − Expenses − Savings', cls: balance >= 0 ? 'positive' : 'negative', bar: false, accent: balance >= 0 ? 'kpi-income' : 'kpi-expense' },
-    { label: 'Savings Rate', val: savingsRate.toFixed(1) + '%', sub: (DATA.settings.savingsRateMethod === 'not_expenses' ? '(Income − Expenses + Pension) / Income' : '(Savings + Pension) / Income') + (pensionTotal > 0 ? ' · £' + pensionTotal.toFixed(0) + ' pension' : ''), bar: true, barVal: Math.min(savingsRate, 100), accent: 'kpi-saving' }
+    { label: 'Savings Rate', val: savingsRate.toFixed(1) + '%', sub: (DATA.settings.savingsRateMethod === 'not_expenses' ? '(Income − Expenses + Pension) / Income' : '(Savings + Pension) / Income') + (pensionPersonal > 0 ? ' · £' + pensionPersonal.toFixed(0) + ' pension' : ''), bar: true, barVal: Math.min(savingsRate, 100), accent: 'kpi-saving' }
   ].map(function(t) {
     return '<div class="kpi-tile ' + (t.accent || '') + '">' +
       '<div class="kpi-label">' + t.label + '</div>' +
@@ -2292,12 +2293,13 @@ function generateReport(year, monthIdx) {
   var tracked = periodTotals(year, monthIdx);
   var pension = getPensionForPeriod(year, monthIdx);
   var pensionTotal = pension.personal + pension.employer;
+  var pensionPersonal = pension.personal;
   var savingsRate = 0;
   if (tracked.income > 0) {
     if (DATA.settings.savingsRateMethod === 'not_expenses') {
-      savingsRate = ((tracked.income - tracked.expense + pensionTotal) / tracked.income) * 100;
+      savingsRate = ((tracked.income - tracked.expense + pensionPersonal) / tracked.income) * 100;
     } else {
-      savingsRate = ((tracked.saving + pensionTotal) / tracked.income) * 100;
+      savingsRate = ((tracked.saving + pensionPersonal) / tracked.income) * 100;
     }
   }
   var balance = tracked.income - tracked.expense - tracked.saving;
