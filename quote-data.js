@@ -3,6 +3,6 @@
 
 var QUOTE_DATA = {
   date: "2026-05-08",
-  text: "The crisis consists precisely in the fact that the old is dying and the new cannot be born; in this interregnum a great variety of morbid symptoms appear.",
-  author: "Antonio Gramsci"
+  text: "The opposite of a correct statement is a false statement. But the opposite of a profound truth may well be another profound truth.",
+  author: "Niels Bohr"
 };
