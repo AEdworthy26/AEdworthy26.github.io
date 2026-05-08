@@ -240,6 +240,9 @@
     .track-table td { padding: .5rem .75rem; border-bottom: 1px solid var(--subtle); vertical-align: middle; }
     .track-table td.num { text-align: right; font-variant-numeric: tabular-nums; }
     .track-table tbody tr:hover { background: #faf9f5; }
+    .edit-btn { background: none; border: none; color: var(--muted); cursor: pointer; font-size: .82rem; padding: .2rem .35rem; border-radius: 5px; transition: background .12s, color .12s; margin-right: .15rem; }
+    .edit-btn:hover { background: var(--subtle); color: var(--ink); }
+    .edit-form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: .75rem; }
     .track-table .t-income td:first-child { border-left: 3px solid var(--income); }
     .track-table .t-expense td:first-child { border-left: 3px solid var(--expense); }
     .track-table .t-saving td:first-child { border-left: 3px solid var(--saving); }
@@ -790,6 +793,43 @@
     <div class="modal-btns">
       <button class="modal-cancel" id="modal-cancel">Cancel</button>
       <button class="modal-confirm" id="modal-confirm">Confirm</button>
+    </div>
+  </div>
+</div>
+
+<!-- EDIT TRANSACTION MODAL -->
+<div class="modal-backdrop" id="edit-modal">
+  <div class="modal" style="width:min(480px,94vw);">
+    <div class="modal-title" style="margin-bottom:1rem;">Edit Transaction</div>
+    <div class="edit-form-grid">
+      <div class="form-group">
+        <label class="form-label">Date</label>
+        <input type="date" class="form-input" id="edit-date">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Type</label>
+        <select class="form-input" id="edit-type">
+          <option value="income">Income</option>
+          <option value="expense">Expense</option>
+          <option value="saving">Saving</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Category</label>
+        <select class="form-input" id="edit-category"></select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Amount (£)</label>
+        <input type="number" class="form-input" id="edit-amount" min="0" step="0.01" placeholder="0.00">
+      </div>
+      <div class="form-group" style="grid-column:1/-1;">
+        <label class="form-label">Details</label>
+        <input type="text" class="form-input" id="edit-details" placeholder="Optional note…">
+      </div>
+    </div>
+    <div class="modal-btns" style="margin-top:1.25rem;">
+      <button class="modal-cancel" id="edit-modal-cancel">Cancel</button>
+      <button class="modal-confirm primary" id="edit-modal-save">Save Changes</button>
     </div>
   </div>
 </div>
@@ -1777,7 +1817,7 @@ function renderTracking() {
         '<td class="num ' + amtCls + '">' + sign + fmt(t.amount) + '</td>' +
         '<td>' + (t.details || '<span style="color:var(--light)">—</span>') + '</td>' +
         '<td class="num ' + balCls + '">' + fmt(t.runBalance) + '</td>' +
-        '<td><button class="del-btn" data-id="' + t.id + '" title="Delete">✕</button></td>' +
+        '<td style="white-space:nowrap"><button class="edit-btn" data-id="' + t.id + '" title="Edit">✎</button><button class="del-btn" data-id="' + t.id + '" title="Delete">✕</button></td>' +
         '</tr>';
     }).join('');
 
@@ -1790,6 +1830,10 @@ function renderTracking() {
           showToast('Transaction deleted.', 'info');
         }, { icon: '🗑', confirmText: 'Delete' });
       });
+    });
+
+    tbody.querySelectorAll('.edit-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() { openEditTx(btn.dataset.id); });
     });
   }
 
@@ -2287,6 +2331,77 @@ function generateReport(year, monthIdx) {
   saveData();
   return report;
 }
+
+/* ═══════════════════════════════════════════════════════
+   EDIT TRANSACTION
+═══════════════════════════════════════════════════════ */
+var _editingId = null;
+
+function populateEditCategories() {
+  var type = document.getElementById('edit-type').value;
+  var sel = document.getElementById('edit-category');
+  var cats = DATA.categories[type] || [];
+  sel.innerHTML = cats.map(function(c) { return '<option value="' + c + '">' + c + '</option>'; }).join('');
+}
+
+function openEditTx(id) {
+  var tx = DATA.transactions.find(function(t) { return t.id === id; });
+  if (!tx) return;
+  _editingId = id;
+
+  document.getElementById('edit-date').value    = tx.date;
+  document.getElementById('edit-type').value    = tx.type;
+  populateEditCategories();
+  document.getElementById('edit-category').value = tx.category;
+  document.getElementById('edit-amount').value  = tx.amount;
+  document.getElementById('edit-details').value = tx.details || '';
+
+  var modal = document.getElementById('edit-modal');
+  modal.classList.add('open');
+  document.getElementById('edit-amount').focus();
+}
+
+function closeEditModal() {
+  document.getElementById('edit-modal').classList.remove('open');
+  _editingId = null;
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('edit-type').addEventListener('change', populateEditCategories);
+
+  document.getElementById('edit-modal-cancel').addEventListener('click', closeEditModal);
+  document.getElementById('edit-modal').addEventListener('click', function(e) {
+    if (e.target === this) closeEditModal();
+  });
+
+  document.getElementById('edit-modal-save').addEventListener('click', function() {
+    if (!_editingId) return;
+    var date     = document.getElementById('edit-date').value;
+    var type     = document.getElementById('edit-type').value;
+    var category = document.getElementById('edit-category').value;
+    var amount   = parseFloat(document.getElementById('edit-amount').value);
+    var details  = document.getElementById('edit-details').value.trim();
+
+    if (!date || !category || isNaN(amount) || amount <= 0) {
+      showToast('Please fill in all required fields.', 'error');
+      return;
+    }
+
+    var idx = DATA.transactions.findIndex(function(t) { return t.id === _editingId; });
+    if (idx === -1) return;
+    DATA.transactions[idx] = Object.assign({}, DATA.transactions[idx], { date: date, type: type, category: category, amount: amount, details: details });
+    saveData();
+    closeEditModal();
+    renderTracking();
+    renderDashboard();
+    showToast('Transaction updated.', 'success');
+  });
+
+  // Escape key closes edit modal
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && document.getElementById('edit-modal').classList.contains('open')) closeEditModal();
+  });
+});
 
 /* ═══════════════════════════════════════════════════════
    MODAL
