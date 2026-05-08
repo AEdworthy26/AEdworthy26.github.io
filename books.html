@@ -223,9 +223,38 @@
     .btn-danger{font-family:'Inter',system-ui,sans-serif;font-size:.78rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:.55rem 1rem;background:none;border:1px solid rgba(212,64,0,.3);border-radius:7px;color:var(--tomato);cursor:pointer;margin-right:auto;transition:all .15s}
     .btn-danger:hover{background:rgba(212,64,0,.08)}
 
-    /* ── NOTES ── */
-    .notes-indicator{display:inline-flex;align-items:center;gap:.25rem;font-size:.6rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--gold);opacity:.75;margin-top:.35rem}
-    .row-notes-preview{font-size:.72rem;color:var(--dark-muted);font-style:italic;margin-top:.18rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:340px;line-height:1.4}
+    /* ── SCRAPBOOK ── */
+    .sb-add-card{background:var(--dark-card);border:1px solid var(--dark-border);border-radius:10px;padding:1.2rem 1.3rem;margin-bottom:1.8rem}
+    .sb-add-top{display:flex;gap:.7rem;align-items:center;flex-wrap:wrap;margin-bottom:.7rem}
+    .sb-select{font-family:'Inter',system-ui,sans-serif;font-size:.84rem;padding:.52rem .85rem;background:#141210;border:1px solid rgba(210,200,180,.12);border-radius:7px;color:var(--dark-text);outline:none;transition:border-color .15s;flex:1;min-width:200px;cursor:pointer}
+    .sb-select:focus{border-color:rgba(200,163,72,.4)}
+    .sb-select option{background:#141210}
+    .sb-textarea{font-family:'Inter',system-ui,sans-serif;font-size:.84rem;padding:.55rem .85rem;background:#141210;border:1px solid rgba(210,200,180,.12);border-radius:7px;color:var(--dark-text);outline:none;transition:border-color .15s;width:100%;resize:vertical;line-height:1.6;min-height:80px}
+    .sb-textarea::placeholder{color:var(--dark-dim)}
+    .sb-textarea:focus{border-color:rgba(200,163,72,.4)}
+    .sb-add-btn{font-family:'Inter',system-ui,sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:.52rem 1.1rem;background:var(--gold);color:#0c0b09;border:none;border-radius:7px;cursor:pointer;white-space:nowrap;transition:background .15s;flex-shrink:0}
+    .sb-add-btn:hover{background:#d4aa52}
+    .sb-folder{margin-bottom:1.2rem}
+    .sb-folder-hdr{display:flex;align-items:center;gap:.75rem;padding:.65rem .9rem;background:var(--dark-card);border:1px solid var(--dark-border);border-radius:9px;cursor:pointer;user-select:none;transition:border-color .15s}
+    .sb-folder-hdr:hover{border-color:rgba(200,163,72,.3)}
+    .sb-folder-hdr.open{border-radius:9px 9px 0 0;border-bottom-color:transparent}
+    .sb-folder-thumb{width:32px;height:46px;border-radius:3px;object-fit:cover;flex-shrink:0;background:linear-gradient(145deg,#1f1c17,#2a2520);border:1px solid rgba(210,200,180,.08)}
+    .sb-folder-info{flex:1;min-width:0}
+    .sb-folder-title{font-size:.9rem;font-weight:700;color:var(--dark-text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .sb-folder-meta{font-size:.65rem;letter-spacing:.07em;text-transform:uppercase;color:var(--dark-muted);margin-top:.1rem}
+    .sb-folder-count{font-size:.65rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);background:rgba(200,163,72,.1);border-radius:20px;padding:.15rem .55rem;flex-shrink:0}
+    .sb-folder-caret{color:var(--dark-dim);font-size:.7rem;transition:transform .2s;flex-shrink:0}
+    .sb-folder-hdr.open .sb-folder-caret{transform:rotate(180deg)}
+    .sb-notes-list{border:1px solid var(--dark-border);border-top:none;border-radius:0 0 9px 9px;overflow:hidden;display:none}
+    .sb-folder-hdr.open + .sb-notes-list{display:block}
+    .sb-note{padding:.85rem 1rem;border-bottom:1px solid rgba(210,200,180,.06);display:flex;gap:.8rem;align-items:flex-start}
+    .sb-note:last-child{border-bottom:none}
+    .sb-note-body{flex:1;min-width:0}
+    .sb-note-text{font-size:.85rem;line-height:1.65;color:var(--dark-text);white-space:pre-wrap;word-break:break-word}
+    .sb-note-date{font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:var(--dark-dim);margin-top:.35rem}
+    .sb-note-del{background:none;border:none;color:var(--dark-dim);font-size:1rem;cursor:pointer;padding:.1rem .3rem;border-radius:4px;transition:color .12s,background .12s;flex-shrink:0;line-height:1;margin-top:.1rem}
+    .sb-note-del:hover{color:#c0392b;background:rgba(192,57,43,.1)}
+    .sb-empty{padding:3rem 0;text-align:center;color:var(--dark-dim);font-size:.88rem}
 
     /* ── VOCABULARY ── */
     .vocab-add-row{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:1.8rem;align-items:flex-end}
@@ -384,6 +413,7 @@
     <button class="tab-btn" data-tab="read">Read <span class="tab-count" id="cnt-read">0</span></button>
     <button class="tab-btn" data-tab="toread">To Read <span class="tab-count" id="cnt-toread">0</span></button>
     <button class="tab-btn" data-tab="vocab">Vocabulary <span class="tab-count" id="cnt-vocab">0</span></button>
+    <button class="tab-btn" data-tab="scrapbook">Scrapbook <span class="tab-count" id="cnt-scrapbook">0</span></button>
   </div>
 
   <!-- TOOLBAR -->
@@ -439,6 +469,22 @@
         <button class="vocab-fc-btn" id="vc-fc-btn" disabled>&#9654; Flashcards</button>
       </div>
       <div class="vocab-list" id="vc-list"></div>
+    </div>
+  </div>
+
+  <!-- SCRAPBOOK PANEL -->
+  <div class="tab-panel" id="panel-scrapbook">
+    <div style="max-width:860px;margin:0 auto;padding-top:.4rem">
+      <div class="sb-add-card">
+        <div class="sb-add-top">
+          <select class="sb-select" id="sb-book-sel">
+            <option value="">— Select a book —</option>
+          </select>
+          <button class="sb-add-btn" id="sb-add-btn">+ Add Note</button>
+        </div>
+        <textarea class="sb-textarea" id="sb-text" placeholder="Write your note, quote or thought…"></textarea>
+      </div>
+      <div id="sb-list"></div>
     </div>
   </div>
 
@@ -510,10 +556,6 @@
             <input type="url" id="f-cover" placeholder="https://… or leave blank">
           </div>
         </div>
-      </div>
-      <div class="form-row">
-        <label>Notes</label>
-        <textarea id="f-notes" rows="4" placeholder="Thoughts, quotes, key ideas…" style="resize:vertical;line-height:1.6"></textarea>
       </div>
       <div class="modal-actions">
         <button class="btn-danger" id="modal-delete-btn" style="display:none">Delete</button>
@@ -746,6 +788,8 @@ function render() {
 
   var totalRead = BOOKS.filter(function(b){return b.status==='Read';}).length;
   document.getElementById('js-stat').textContent = totalRead + ' read';
+  var sbCountEl = document.getElementById('cnt-scrapbook');
+  if (sbCountEl) sbCountEl.textContent = sbTotalNotes();
 
   // drag hint only on Read tab
   document.getElementById('js-drag-hint').style.display = (activeTab === 'read') ? '' : 'none';
@@ -770,7 +814,6 @@ function renderCards(gridId, emptyId, books, status) {
       +'<div class="bk-title">'+esc(b.title)+'</div>'
       +'<div class="bk-author">'+esc(b.author||'')+'</div>'
       +(b.genre?'<span class="bk-genre">'+esc(b.genre)+'</span>':'')
-      +(b.notes?'<div class="notes-indicator">&#9998; Notes</div>':'')
       +'</div></div>';
   }).join('');
   initCardDrag(gridId, status);
@@ -841,7 +884,6 @@ function renderList(listId, emptyId, books) {
       +'<div class="row-info">'
       +'<div class="row-title">'+esc(b.title)+'</div>'
       +'<div class="row-author">'+esc(b.author||'')+'</div>'
-      +(b.notes?'<div class="row-notes-preview">&#9998; '+esc(b.notes.slice(0,80))+(b.notes.length>80?'…':'')+'</div>':'')
       +'</div>'
       +'<div class="row-meta">'
       +(b.genre?'<span class="row-genre">'+esc(b.genre)+'</span>':'')
@@ -924,7 +966,8 @@ document.querySelectorAll('.tab-btn').forEach(function(btn) {
     document.querySelectorAll('.tab-btn').forEach(function(b){ b.classList.toggle('active', b === btn); });
     document.querySelectorAll('.tab-panel').forEach(function(p){ p.classList.toggle('active', p.id === 'panel-' + activeTab); });
     document.getElementById('js-drag-hint').style.display = (activeTab === 'read') ? '' : 'none';
-    document.querySelector('.toolbar').style.display = (activeTab === 'vocab') ? 'none' : '';
+    document.querySelector('.toolbar').style.display = (activeTab === 'vocab' || activeTab === 'scrapbook') ? 'none' : '';
+    if (activeTab === 'scrapbook') renderScrapbook();
   });
 });
 
@@ -978,7 +1021,6 @@ function openModal(id) {
   rSlider.value = rating;
   document.getElementById('f-rating-val').textContent = rating > 0 ? rating + '/10' : '—';
 
-  document.getElementById('f-notes').value = book ? (book.notes||'') : '';
   updateCoverPreview(book ? (book.cover||'') : '');
   document.getElementById('modal-delete-btn').style.display = book ? '' : 'none';
   overlay.classList.add('open');
@@ -1023,7 +1065,6 @@ document.getElementById('modal-save-btn').addEventListener('click', function() {
     pages:  isNaN(pages) ? null : pages,
     cover:  document.getElementById('f-cover').value.trim(),
     rating: rating > 0 ? rating : null,
-    notes:  document.getElementById('f-notes').value.trim() || null,
   };
   if (editingId) {
     var book = BOOKS.find(function(b){ return b.id === editingId; });
@@ -1237,6 +1278,118 @@ document.getElementById('fc-close').addEventListener('click', function() {
 document.getElementById('vc-fc-btn').addEventListener('click', startFlashcards);
 
 renderVocab();
+
+// ── SCRAPBOOK ─────────────────────────────────────────────────
+function sbBooks() {
+  return BOOKS.filter(function(b) { return b.status === 'Reading' || b.status === 'Read'; });
+}
+
+function sbTotalNotes() {
+  return BOOKS.reduce(function(n, b) { return n + ((b.scrapbook || []).length); }, 0);
+}
+
+function populateSbSelect() {
+  var sel = document.getElementById('sb-book-sel');
+  if (!sel) return;
+  var books = sbBooks();
+  sel.innerHTML = '<option value="">— Select a book —</option>'
+    + books.map(function(b) {
+        return '<option value="' + esc(b.id) + '">' + esc(b.title) + (b.status === 'Reading' ? ' (reading)' : '') + '</option>';
+      }).join('');
+}
+
+function renderScrapbook() {
+  populateSbSelect();
+  var total = sbTotalNotes();
+  var countEl = document.getElementById('cnt-scrapbook');
+  if (countEl) countEl.textContent = total;
+
+  var list = document.getElementById('sb-list');
+  if (!list) return;
+
+  var booksWithNotes = BOOKS.filter(function(b) { return b.scrapbook && b.scrapbook.length; });
+  if (!booksWithNotes.length) {
+    list.innerHTML = '<div class="sb-empty">No notes yet — select a book and write your first note above.</div>';
+    return;
+  }
+
+  list.innerHTML = booksWithNotes.map(function(b) {
+    var notes = b.scrapbook.slice().reverse();
+    var thumbSrc = b.cover
+      ? '<img class="sb-folder-thumb" src="' + esc(b.cover) + '" loading="lazy" onerror="this.style.display=\'none\'">'
+      : '<div class="sb-folder-thumb"></div>';
+    var statusLbl = b.status === 'Reading' ? 'Currently reading' : 'Read';
+    var noteCount = notes.length + ' note' + (notes.length !== 1 ? 's' : '');
+    return '<div class="sb-folder">'
+      + '<div class="sb-folder-hdr" data-sbfolder="' + esc(b.id) + '">'
+      + thumbSrc
+      + '<div class="sb-folder-info">'
+      + '<div class="sb-folder-title">' + esc(b.title) + '</div>'
+      + '<div class="sb-folder-meta">' + esc(b.author || '') + ' &middot; ' + esc(statusLbl) + '</div>'
+      + '</div>'
+      + '<span class="sb-folder-count">' + noteCount + '</span>'
+      + '<span class="sb-folder-caret">&#9660;</span>'
+      + '</div>'
+      + '<div class="sb-notes-list">'
+      + notes.map(function(n) {
+          return '<div class="sb-note">'
+            + '<div class="sb-note-body">'
+            + '<div class="sb-note-text">' + esc(n.text) + '</div>'
+            + '<div class="sb-note-date">' + esc(n.date) + '</div>'
+            + '</div>'
+            + '<button class="sb-note-del" data-sbdel="' + esc(b.id) + '" data-sbnote="' + esc(n.id) + '" title="Delete note">&times;</button>'
+            + '</div>';
+        }).join('')
+      + '</div>'
+      + '</div>';
+  }).join('');
+
+  // Folder toggle
+  list.querySelectorAll('.sb-folder-hdr').forEach(function(hdr) {
+    hdr.addEventListener('click', function(e) {
+      if (e.target.closest('.sb-note-del')) return;
+      hdr.classList.toggle('open');
+    });
+  });
+
+  // Delete note
+  list.querySelectorAll('.sb-note-del').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var bookId = btn.dataset.sbdel;
+      var noteId = btn.dataset.sbnote;
+      var book = BOOKS.find(function(b) { return b.id === bookId; });
+      if (book && book.scrapbook) {
+        book.scrapbook = book.scrapbook.filter(function(n) { return n.id !== noteId; });
+        saveBooks(BOOKS);
+        renderScrapbook();
+      }
+    });
+  });
+}
+
+document.getElementById('sb-add-btn').addEventListener('click', function() {
+  var sel = document.getElementById('sb-book-sel');
+  var txt = document.getElementById('sb-text');
+  var bookId = sel && sel.value;
+  var text = txt && txt.value.trim();
+  if (!bookId) { alert('Please select a book first.'); return; }
+  if (!text) { alert('Please write a note first.'); return; }
+  var book = BOOKS.find(function(b) { return b.id === bookId; });
+  if (!book) return;
+  if (!book.scrapbook) book.scrapbook = [];
+  book.scrapbook.push({
+    id: uid(),
+    text: text,
+    date: new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })
+  });
+  saveBooks(BOOKS);
+  txt.value = '';
+  renderScrapbook();
+  // Auto-open that book's folder
+  var folder = document.querySelector('[data-sbfolder="' + bookId + '"]');
+  if (folder && !folder.classList.contains('open')) folder.classList.add('open');
+});
 
 // ── Date ─────────────────────────────────────────────────────
 (function(){
