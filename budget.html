@@ -172,7 +172,13 @@
     .charts-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1rem; }
     .chart-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.1rem; box-shadow: var(--shadow-sm); }
     .chart-card-title { font-size: .68rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: .75rem; text-align: center; }
-    .chart-container { position: relative; height: 160px; }
+    .chart-card-body { display: flex; align-items: center; gap: .9rem; }
+    .chart-container { position: relative; height: 160px; flex: 0 0 160px; }
+    .donut-legend { flex: 1; display: flex; flex-direction: column; gap: .35rem; min-width: 0; }
+    .donut-legend-item { display: flex; align-items: center; gap: .45rem; font-size: .72rem; min-width: 0; }
+    .donut-legend-dot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
+    .donut-legend-label { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--ink); font-weight: 500; }
+    .donut-legend-val { color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
     .chart-wide { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.25rem; box-shadow: var(--shadow-sm); margin-bottom: 1rem; }
     .chart-wide-container { position: relative; height: 220px; }
     @media (max-width: 700px) { .charts-grid { grid-template-columns: 1fr; } }
@@ -437,7 +443,7 @@
     <div class="charts-grid" id="donut-charts"></div>
 
     <div class="chart-wide">
-      <div class="card-title">Monthly Tracked vs Budget — <span id="bar-year-label"></span></div>
+      <div class="card-title">Monthly Expenses: Tracked vs Budget — <span id="bar-year-label"></span></div>
       <div class="chart-wide-container"><canvas id="monthly-bar-chart"></canvas></div>
     </div>
   </div>
@@ -959,7 +965,7 @@ function renderDashboard() {
     var txCat = txForPeriod(year, monthIdx).filter(function(t) { return t.category === cat; });
     var total = txCat.reduce(function(s, t) { return s + t.amount; }, 0);
     var ratio = total / budget;
-    if (ratio >= 1) alerts.push({ cls: 'crit', text: cat + ': ' + fmt(total) + ' / ' + fmt(budget) + ' (over budget)' });
+    if (ratio > 1) alerts.push({ cls: 'crit', text: cat + ': ' + fmt(total) + ' / ' + fmt(budget) + ' (over budget)' });
     else if (ratio >= 0.8) alerts.push({ cls: 'warn', text: cat + ': ' + Math.round(ratio*100) + '% of budget used' });
   });
   alertsEl.innerHTML = alerts.map(function(a) {
@@ -992,25 +998,26 @@ function renderDashboard() {
 
   // Donut charts
   var donutEl = document.getElementById('donut-charts');
-  donutEl.innerHTML = [
+  var DONUT_DEFS = [
     { id: 'donut-income', label: 'Income Breakdown', cats: DATA.categories.income, type: 'income' },
     { id: 'donut-expense', label: 'Expense Breakdown', cats: DATA.categories.expense, type: 'expense' },
     { id: 'donut-saving', label: 'Savings Breakdown', cats: DATA.categories.saving, type: 'saving' }
-  ].map(function(d) {
-    return '<div class="chart-card"><div class="chart-card-title">' + d.label + '</div><div class="chart-container"><canvas id="' + d.id + '"></canvas></div></div>';
+  ];
+  donutEl.innerHTML = DONUT_DEFS.map(function(d) {
+    return '<div class="chart-card"><div class="chart-card-title">' + d.label + '</div>' +
+      '<div class="chart-card-body">' +
+      '<div class="chart-container"><canvas id="' + d.id + '"></canvas></div>' +
+      '<div class="donut-legend" id="' + d.id + '-legend"></div>' +
+      '</div></div>';
   }).join('');
 
   var DONUT_COLORS = {
-    income:  ['#059669','#34d399','#6ee7b7','#a7f3d0','#d1fae5'],
+    income:  ['#059669','#34d399','#6ee7b7','#a7f3d0','#d1fae5','#bbf7d0','#86efac','#4ade80'],
     expense: ['#dc2626','#f87171','#fca5a5','#ef4444','#b91c1c','#fee2e2','#991b1b','#fecaca','#fbd5d5'],
-    saving:  ['#2563eb','#60a5fa','#93c5fd']
+    saving:  ['#2563eb','#60a5fa','#93c5fd','#bfdbfe','#dbeafe']
   };
 
-  [
-    { id: 'donut-income', cats: DATA.categories.income, type: 'income' },
-    { id: 'donut-expense', cats: DATA.categories.expense, type: 'expense' },
-    { id: 'donut-saving', cats: DATA.categories.saving, type: 'saving' }
-  ].forEach(function(d) {
+  DONUT_DEFS.forEach(function(d) {
     var txs = txForPeriod(year, monthIdx).filter(function(t) { return t.type === d.type; });
     var vals = d.cats.map(function(c) {
       return txs.filter(function(t) { return t.category === c; }).reduce(function(s, t) { return s + t.amount; }, 0);
@@ -1018,12 +1025,12 @@ function renderDashboard() {
     var total = vals.reduce(function(a, b) { return a + b; }, 0);
     var canvas = document.getElementById(d.id);
     if (!canvas) return;
-    var ctx = canvas.getContext('2d');
-    new Chart(ctx, {
+    var colors = DONUT_COLORS[d.type];
+    new Chart(canvas.getContext('2d'), {
       type: 'doughnut',
       data: {
         labels: d.cats,
-        datasets: [{ data: vals, backgroundColor: DONUT_COLORS[d.type], borderWidth: 1, borderColor: '#fff' }]
+        datasets: [{ data: vals, backgroundColor: d.cats.map(function(_,i){ return colors[i % colors.length]; }), borderWidth: 1, borderColor: '#fff' }]
       },
       options: {
         responsive: true, maintainAspectRatio: false, cutout: '65%',
@@ -1041,9 +1048,25 @@ function renderDashboard() {
         }
       }
     });
+
+    // Top-5 legend
+    var paired = d.cats.map(function(c, i) { return { label: c, val: vals[i], color: colors[i % colors.length] }; });
+    paired.sort(function(a, b) { return b.val - a.val; });
+    var top5 = paired.slice(0, 5).filter(function(p) { return p.val > 0; });
+    var legendEl = document.getElementById(d.id + '-legend');
+    if (legendEl) {
+      legendEl.innerHTML = top5.length ? top5.map(function(p) {
+        var pct = total > 0 ? ' (' + ((p.val / total) * 100).toFixed(0) + '%)' : '';
+        return '<div class="donut-legend-item">' +
+          '<span class="donut-legend-dot" style="background:' + p.color + '"></span>' +
+          '<span class="donut-legend-label">' + p.label + '</span>' +
+          '<span class="donut-legend-val">' + fmt(p.val) + pct + '</span>' +
+          '</div>';
+      }).join('') : '<span style="font-size:.72rem;color:var(--muted)">No data</span>';
+    }
   });
 
-  // Monthly bar chart
+  // Monthly bar chart — expense tracked vs expense budget
   document.getElementById('bar-year-label').textContent = year;
   if (barChartInst) { barChartInst.destroy(); barChartInst = null; }
   var barCanvas = document.getElementById('monthly-bar-chart');
@@ -1052,16 +1075,16 @@ function renderDashboard() {
     for (var mi = 0; mi < 12; mi++) {
       var t = periodTotals(year, mi);
       var b = periodBudgetTotals(year, mi);
-      barTracked.push(t.income - t.expense - t.saving);
-      barBudget.push(b.income - b.expense - b.saving);
+      barTracked.push(t.expense);
+      barBudget.push(b.expense);
     }
     barChartInst = new Chart(barCanvas.getContext('2d'), {
       type: 'bar',
       data: {
         labels: MONTHS,
         datasets: [
-          { label: 'Tracked Net', data: barTracked, backgroundColor: '#059669', borderRadius: 4, borderSkipped: false },
-          { label: 'Budget Net', data: barBudget, backgroundColor: 'rgba(0,0,0,0.08)', borderRadius: 4, borderSkipped: false, borderWidth: 1, borderColor: '#d8d3c8' }
+          { label: 'Tracked Expenses', data: barTracked, backgroundColor: '#dc2626', borderRadius: 4, borderSkipped: false },
+          { label: 'Budgeted Expenses', data: barBudget, backgroundColor: 'rgba(0,0,0,0.08)', borderRadius: 4, borderSkipped: false, borderWidth: 1, borderColor: '#d8d3c8' }
         ]
       },
       options: {
