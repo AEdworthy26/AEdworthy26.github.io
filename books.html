@@ -223,6 +223,10 @@
     .btn-danger{font-family:'Inter',system-ui,sans-serif;font-size:.78rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:.55rem 1rem;background:none;border:1px solid rgba(212,64,0,.3);border-radius:7px;color:var(--tomato);cursor:pointer;margin-right:auto;transition:all .15s}
     .btn-danger:hover{background:rgba(212,64,0,.08)}
 
+    /* ── NOTES ── */
+    .notes-indicator{display:inline-flex;align-items:center;gap:.25rem;font-size:.6rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--gold);opacity:.75;margin-top:.35rem}
+    .row-notes-preview{font-size:.72rem;color:var(--dark-muted);font-style:italic;margin-top:.18rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:340px;line-height:1.4}
+
     /* ── VOCABULARY ── */
     .vocab-add-row{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:1.8rem;align-items:flex-end}
     .vocab-input{font-family:'Inter',system-ui,sans-serif;font-size:.84rem;padding:.52rem .85rem;background:var(--dark-card);border:1px solid var(--dark-border);border-radius:7px;color:var(--dark-text);outline:none;transition:border-color .15s;flex:1;min-width:140px}
@@ -507,6 +511,10 @@
           </div>
         </div>
       </div>
+      <div class="form-row">
+        <label>Notes</label>
+        <textarea id="f-notes" rows="4" placeholder="Thoughts, quotes, key ideas…" style="resize:vertical;line-height:1.6"></textarea>
+      </div>
       <div class="modal-actions">
         <button class="btn-danger" id="modal-delete-btn" style="display:none">Delete</button>
         <button class="btn-secondary" id="modal-cancel-btn">Cancel</button>
@@ -762,6 +770,7 @@ function renderCards(gridId, emptyId, books, status) {
       +'<div class="bk-title">'+esc(b.title)+'</div>'
       +'<div class="bk-author">'+esc(b.author||'')+'</div>'
       +(b.genre?'<span class="bk-genre">'+esc(b.genre)+'</span>':'')
+      +(b.notes?'<div class="notes-indicator">&#9998; Notes</div>':'')
       +'</div></div>';
   }).join('');
   initCardDrag(gridId, status);
@@ -832,6 +841,7 @@ function renderList(listId, emptyId, books) {
       +'<div class="row-info">'
       +'<div class="row-title">'+esc(b.title)+'</div>'
       +'<div class="row-author">'+esc(b.author||'')+'</div>'
+      +(b.notes?'<div class="row-notes-preview">&#9998; '+esc(b.notes.slice(0,80))+(b.notes.length>80?'…':'')+'</div>':'')
       +'</div>'
       +'<div class="row-meta">'
       +(b.genre?'<span class="row-genre">'+esc(b.genre)+'</span>':'')
@@ -968,6 +978,7 @@ function openModal(id) {
   rSlider.value = rating;
   document.getElementById('f-rating-val').textContent = rating > 0 ? rating + '/10' : '—';
 
+  document.getElementById('f-notes').value = book ? (book.notes||'') : '';
   updateCoverPreview(book ? (book.cover||'') : '');
   document.getElementById('modal-delete-btn').style.display = book ? '' : 'none';
   overlay.classList.add('open');
@@ -1012,6 +1023,7 @@ document.getElementById('modal-save-btn').addEventListener('click', function() {
     pages:  isNaN(pages) ? null : pages,
     cover:  document.getElementById('f-cover').value.trim(),
     rating: rating > 0 ? rating : null,
+    notes:  document.getElementById('f-notes').value.trim() || null,
   };
   if (editingId) {
     var book = BOOKS.find(function(b){ return b.id === editingId; });
