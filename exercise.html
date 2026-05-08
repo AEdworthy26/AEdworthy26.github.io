@@ -101,7 +101,12 @@
 
     /* EXERCISE CARD */
     .exercise-list { display: flex; flex-direction: column; gap: .75rem; margin-bottom: 1rem; }
-    .muscle-group-hdr { font-size: .59rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--light); padding: .6rem 0 .25rem; border-bottom: 1px solid var(--border); margin-bottom: .1rem; }
+    .muscle-group-hdr { font-size: .59rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--light); padding: .6rem 0 .25rem; border-bottom: 1px solid var(--border); margin-bottom: .1rem; display: flex; align-items: center; justify-content: space-between; cursor: pointer; user-select: none; }
+    .muscle-group-hdr:hover { color: var(--ink); }
+    .mg-caret { font-size: .65rem; transition: transform .2s; display: inline-block; }
+    .muscle-group-hdr.collapsed .mg-caret { transform: rotate(-90deg); }
+    .mg-exercises { display: flex; flex-direction: column; gap: .75rem; margin-bottom: .5rem; }
+    .mg-exercises.collapsed { display: none; }
     .exercise-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.1rem 1.2rem 1.1rem 1.5rem; box-shadow: var(--shadow-sm); display: flex; align-items: center; gap: .9rem; transition: box-shadow .15s, border-color .15s; position: relative; overflow: hidden; cursor: pointer; }
     .exercise-card:hover { box-shadow: var(--shadow-md); border-color: #2563eb; transform: translateY(-1px); }
     .cat-bar { position: absolute; left: 0; top: 0; bottom: 0; width: 5px; border-radius: var(--radius) 0 0 var(--radius); }
@@ -770,7 +775,10 @@
 
         html += '<div class="exercise-list">';
         orderedGroups.forEach(function (groupName) {
-          if (groupOrder.length) html += '<div class="muscle-group-hdr">' + groupName + '</div>';
+          var storeKey = 'ex_mg_' + cat + '_' + groupName;
+          var isCollapsed = sessionStorage.getItem(storeKey) === '1';
+          if (groupOrder.length) html += '<div class="muscle-group-hdr' + (isCollapsed ? ' collapsed' : '') + '" data-mgkey="' + esc(storeKey) + '">' + esc(groupName) + '<span class="mg-caret">▾</span></div>';
+          html += '<div class="mg-exercises' + (isCollapsed ? ' collapsed' : '') + '">';
           (groups[groupName] || []).forEach(function (ex) {
             var ps = prStr(ex);
             var days = ex.days || [];
@@ -806,6 +814,7 @@
               + '<button class="btn-icon del" onclick="event.stopPropagation();delExercise(\'' + cat + '\',\'' + ex.id + '\')">✕</button>'
               + '</div></div>';
           });
+          html += '</div>'; // close mg-exercises
         });
         html += '</div>';
       }
@@ -816,6 +825,17 @@
       html += '<button class="add-exercise-btn" id="add-btn-' + cat + '" onclick="showAddForm(\'' + cat + '\')">+ Add Exercise</button>';
 
       el.innerHTML = html;
+
+      el.querySelectorAll('.muscle-group-hdr').forEach(function (hdr) {
+        hdr.addEventListener('click', function () {
+          var key = hdr.dataset.mgkey;
+          var exercises = hdr.nextElementSibling;
+          var isNowCollapsed = !exercises.classList.contains('collapsed');
+          hdr.classList.toggle('collapsed', isNowCollapsed);
+          exercises.classList.toggle('collapsed', isNowCollapsed);
+          sessionStorage.setItem(key, isNowCollapsed ? '1' : '0');
+        });
+      });
     }
 
     function buildAddForm(cat) {
