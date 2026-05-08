@@ -1012,6 +1012,7 @@ function renderDashboard() {
       var total = txCat.reduce(function(s, t) { return s + t.amount; }, 0);
       var ratio = total / budget;
       if (ratio > 1) alerts.push({ cls: 'crit', text: cat + ': ' + fmt(total) + ' / ' + fmt(budget) + ' (over budget)' });
+      else if (ratio >= 0.8) alerts.push({ cls: 'warn', text: cat + ': ' + Math.round(ratio*100) + '% of budget used' });
     });
   }
   alertsEl.innerHTML = alerts.map(function(a) {
