@@ -226,9 +226,22 @@
     /* ── SCRAPBOOK ── */
     .sb-add-card{background:var(--dark-card);border:1px solid var(--dark-border);border-radius:10px;padding:1.2rem 1.3rem;margin-bottom:1.8rem}
     .sb-add-top{display:flex;gap:.7rem;align-items:center;flex-wrap:wrap;margin-bottom:.7rem}
-    .sb-select{font-family:'Inter',system-ui,sans-serif;font-size:.84rem;padding:.52rem .85rem;background:#141210;border:1px solid rgba(210,200,180,.12);border-radius:7px;color:var(--dark-text);outline:none;transition:border-color .15s;flex:1;min-width:200px;cursor:pointer}
-    .sb-select:focus{border-color:rgba(200,163,72,.4)}
-    .sb-select option{background:#141210}
+    .sb-book-dd{position:relative;flex:1;min-width:200px}
+    .sb-book-dd-btn{width:100%;display:flex;align-items:center;gap:.65rem;font-family:'Inter',system-ui,sans-serif;font-size:.84rem;padding:.52rem .85rem;background:#141210;border:1px solid rgba(210,200,180,.12);border-radius:7px;color:var(--dark-muted);cursor:pointer;transition:border-color .15s,color .15s;text-align:left}
+    .sb-book-dd-btn:hover{border-color:rgba(200,163,72,.35);color:var(--dark-text)}
+    .sb-book-dd-btn.open{border-color:rgba(200,163,72,.5);color:var(--dark-text)}
+    .sb-dd-thumb{width:22px;height:32px;border-radius:2px;object-fit:cover;flex-shrink:0;background:linear-gradient(145deg,#1f1c17,#2a2520);border:1px solid rgba(210,200,180,.1)}
+    .sb-dd-label{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+    .sb-dd-caret{font-size:.48rem;opacity:.5;transition:transform .18s;flex-shrink:0}
+    .sb-book-dd-btn.open .sb-dd-caret{transform:rotate(180deg)}
+    .sb-book-dd-menu{position:absolute;top:calc(100% + 5px);left:0;right:0;background:#1e1c18;border:1px solid rgba(210,200,180,.15);border-radius:10px;padding:.35rem 0;box-shadow:0 12px 36px rgba(0,0,0,.65);display:none;flex-direction:column;z-index:300;max-height:260px;overflow-y:auto}
+    .sb-book-dd-menu.open{display:flex;animation:gf-in .14s ease}
+    .sb-dd-opt{display:flex;align-items:center;gap:.65rem;padding:.52rem .9rem;cursor:pointer;background:none;border:none;text-align:left;width:100%;transition:background .1s}
+    .sb-dd-opt:hover{background:rgba(255,255,255,.05)}
+    .sb-dd-opt.selected{background:rgba(200,163,72,.07)}
+    .sb-dd-opt-thumb{width:22px;height:32px;border-radius:2px;object-fit:cover;flex-shrink:0;background:linear-gradient(145deg,#1f1c17,#2a2520);border:1px solid rgba(210,200,180,.08)}
+    .sb-dd-opt-title{font-family:'Inter',system-ui,sans-serif;font-size:.82rem;font-weight:600;color:var(--dark-text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1}
+    .sb-dd-opt-status{font-size:.6rem;letter-spacing:.07em;text-transform:uppercase;color:var(--gold);flex-shrink:0}
     .sb-textarea{font-family:'Inter',system-ui,sans-serif;font-size:.84rem;padding:.55rem .85rem;background:#141210;border:1px solid rgba(210,200,180,.12);border-radius:7px;color:var(--dark-text);outline:none;transition:border-color .15s;width:100%;resize:vertical;line-height:1.6;min-height:80px}
     .sb-textarea::placeholder{color:var(--dark-dim)}
     .sb-textarea:focus{border-color:rgba(200,163,72,.4)}
@@ -477,9 +490,14 @@
     <div style="max-width:860px;margin:0 auto;padding-top:.4rem">
       <div class="sb-add-card">
         <div class="sb-add-top">
-          <select class="sb-select" id="sb-book-sel">
-            <option value="">— Select a book —</option>
-          </select>
+          <div class="sb-book-dd" id="sb-book-dd">
+            <button class="sb-book-dd-btn" id="sb-book-dd-btn" type="button">
+              <div class="sb-dd-thumb" id="sb-dd-thumb"></div>
+              <span class="sb-dd-label" id="sb-dd-label">Select a book…</span>
+              <span class="sb-dd-caret">&#9660;</span>
+            </button>
+            <div class="sb-book-dd-menu" id="sb-book-dd-menu"></div>
+          </div>
           <button class="sb-add-btn" id="sb-add-btn">+ Add Note</button>
         </div>
         <textarea class="sb-textarea" id="sb-text" placeholder="Write your note, quote or thought…"></textarea>
@@ -1288,18 +1306,63 @@ function sbTotalNotes() {
   return BOOKS.reduce(function(n, b) { return n + ((b.scrapbook || []).length); }, 0);
 }
 
+var _sbSelectedId = null;
+
 function populateSbSelect() {
-  var sel = document.getElementById('sb-book-sel');
-  if (!sel) return;
+  var menu = document.getElementById('sb-book-dd-menu');
+  if (!menu) return;
   var books = sbBooks();
-  sel.innerHTML = '<option value="">— Select a book —</option>'
-    + books.map(function(b) {
-        return '<option value="' + esc(b.id) + '">' + esc(b.title) + (b.status === 'Reading' ? ' (reading)' : '') + '</option>';
-      }).join('');
+  menu.innerHTML = books.map(function(b) {
+    var thumbHtml = b.cover
+      ? '<img class="sb-dd-opt-thumb" src="' + esc(b.cover) + '" loading="lazy" onerror="this.style.display=\'none\'">'
+      : '<div class="sb-dd-opt-thumb"></div>';
+    var statusLbl = b.status === 'Reading' ? 'Reading' : '';
+    return '<button class="sb-dd-opt' + (b.id === _sbSelectedId ? ' selected' : '') + '" data-sbid="' + esc(b.id) + '" type="button">'
+      + thumbHtml
+      + '<span class="sb-dd-opt-title">' + esc(b.title) + '</span>'
+      + (statusLbl ? '<span class="sb-dd-opt-status">' + statusLbl + '</span>' : '')
+      + '</button>';
+  }).join('');
+
+  menu.querySelectorAll('.sb-dd-opt').forEach(function(opt) {
+    opt.addEventListener('click', function() {
+      _sbSelectedId = opt.dataset.sbid;
+      var book = BOOKS.find(function(b) { return b.id === _sbSelectedId; });
+      var btn = document.getElementById('sb-book-dd-btn');
+      var lbl = document.getElementById('sb-dd-label');
+      var thumb = document.getElementById('sb-dd-thumb');
+      if (book) {
+        lbl.textContent = book.title;
+        if (book.cover) {
+          thumb.outerHTML = '<img class="sb-dd-thumb" id="sb-dd-thumb" src="' + esc(book.cover) + '" loading="lazy" onerror="this.style.display=\'none\'">';
+        }
+      }
+      btn.classList.remove('open');
+      menu.classList.remove('open');
+    });
+  });
 }
 
+// Toggle dropdown
+document.getElementById('sb-book-dd-btn').addEventListener('click', function(e) {
+  e.stopPropagation();
+  var btn = document.getElementById('sb-book-dd-btn');
+  var menu = document.getElementById('sb-book-dd-menu');
+  var isOpen = menu.classList.contains('open');
+  btn.classList.toggle('open', !isOpen);
+  menu.classList.toggle('open', !isOpen);
+  if (!isOpen) populateSbSelect();
+});
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('#sb-book-dd')) {
+    var btn = document.getElementById('sb-book-dd-btn');
+    var menu = document.getElementById('sb-book-dd-menu');
+    if (btn) btn.classList.remove('open');
+    if (menu) menu.classList.remove('open');
+  }
+});
+
 function renderScrapbook() {
-  populateSbSelect();
   var total = sbTotalNotes();
   var countEl = document.getElementById('cnt-scrapbook');
   if (countEl) countEl.textContent = total;
@@ -1369,9 +1432,8 @@ function renderScrapbook() {
 }
 
 document.getElementById('sb-add-btn').addEventListener('click', function() {
-  var sel = document.getElementById('sb-book-sel');
   var txt = document.getElementById('sb-text');
-  var bookId = sel && sel.value;
+  var bookId = _sbSelectedId;
   var text = txt && txt.value.trim();
   if (!bookId) { alert('Please select a book first.'); return; }
   if (!text) { alert('Please write a note first.'); return; }
