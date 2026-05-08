@@ -212,7 +212,7 @@ def recent_values(filename, field, days=7):
                 ['git', '-C', REPO_DIR, 'show', f'{commit}:{filename}'],
                 capture_output=True, text=True
             ).stdout
-            matches = re.findall(field + r'[:\s]+["\']([^"\']{4,80})["\']', content)
+            matches = re.findall(field + r'[:\s]+["\']([^"\']{4,200})["\']', content)
             for m in matches:
                 if m not in values:
                     values.append(m)
@@ -815,7 +815,8 @@ def gen_rics():
     # Extract keyword blocklist from recent topics — prevents subtle rephrasing of the same subject
     keyword_blocks = set()
     for t in recent_topics:
-        for kw in ['Section 73', 'BNG', 'biodiversity net gain', 'S106', 'viability', 'CIL', 'golden brick', 'overage']:
+        for kw in ['Section 73', 'BNG', 'biodiversity net gain', 'S106', 'viability', 'CIL',
+                   'golden brick', 'overage', 'Grampian', 'pre-commencement', 'EIA']:
             if kw.lower() in t.lower():
                 keyword_blocks.add(kw)
     keyword_block_str = ', '.join(sorted(keyword_blocks)) if keyword_blocks else 'None'
@@ -831,16 +832,23 @@ def gen_rics():
         'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&auto=format&fit=crop',  # mixed-use development
     ]
 
+    _STOP = {'and', 'or', 'in', 'of', 'the', 'a', 'an', 'to', 'for', 'with', 'by', 'on', 'its'}
+
+    def _sig(s):
+        clean = re.sub(r'[^a-z0-9 ]', '', s.lower())
+        return {w for w in clean.split() if len(w) > 3 and w not in _STOP}
+
     def topic_is_duplicate(topic):
         """Return matching recent topic string if too similar, else None."""
-        t = topic.lower()
+        t_clean = re.sub(r'[^a-z0-9 ]', '', topic.lower())
+        t_sig = _sig(topic)
         for rt in recent_topics:
-            rt_lower = rt.lower()
-            if rt_lower[:55] in t or t[:55] in rt_lower:
+            rt_clean = re.sub(r'[^a-z0-9 ]', '', rt.lower())
+            # Normalised substring match
+            if rt_clean[:50] in t_clean or t_clean[:50] in rt_clean:
                 return rt
-            rt_words = set(rt_lower.split()[:8])
-            gen_words = set(t.split()[:8])
-            if len(rt_words & gen_words) >= 4:
+            # 3+ significant words overlap (punctuation-insensitive)
+            if len(t_sig & _sig(rt)) >= 3:
                 return rt
         return None
 
