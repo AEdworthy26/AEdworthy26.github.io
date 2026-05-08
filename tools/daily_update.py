@@ -695,7 +695,7 @@ IMPORTANT — the Philosopher of the Day must NOT be any of these recently featu
 {avoid_people}
 
 Write in the style of a high-quality long-read magazine — engaging, intelligent, structured with subheadings.
-Main article: EXACTLY 8 content blocks (mix of paragraphs and headings). Each paragraph: 4-5 sentences.
+Main article: 12–16 content blocks (mix of paragraphs and headings). Each paragraph: 4-5 sentences. Aim for a thorough, substantial piece.
 Counter theories: 2 real philosophers who challenged this theory, 2-3 paragraph argument each.
 Philosopher of the Day: a real historical philosopher (different from the main theory's thinker), accurate biography.
 
@@ -1095,8 +1095,7 @@ IMPORTANT — do NOT repeat any of these recently covered main article topics (h
 IMPORTANT — the Person of the Day must NOT be any of these recently featured people (hard rule, no exceptions):
 {avoid_people}
 
-Write in the style of a high-quality long-read. The main article should have EXACTLY 8 content blocks — no more.
-Each paragraph should be 3-4 sentences (not longer). Keep the bio to 3 paragraphs.
+Write in the style of a high-quality long-read. The main article should have 12–16 content blocks (mix of paragraphs and headings). Each paragraph should be 3-4 sentences. Keep the bio to 3-4 paragraphs.
 The onThisDay section must be a REAL event that actually happened on {datetime.date.today().strftime('%B %-d')} in history.
 The personOfTheDay must be a real historical figure with an accurate biography.
 
@@ -1114,11 +1113,15 @@ var CURIOSITY_DATA = {{
       {{ type: "paragraph", text: "..." }},
       {{ type: "heading", text: "..." }},
       {{ type: "paragraph", text: "..." }},
-      {{ type: "heading", text: "..." }},
       {{ type: "paragraph", text: "..." }},
       {{ type: "heading", text: "..." }},
       {{ type: "paragraph", text: "..." }},
+      {{ type: "paragraph", text: "..." }},
       {{ type: "heading", text: "..." }},
+      {{ type: "paragraph", text: "..." }},
+      {{ type: "paragraph", text: "..." }},
+      {{ type: "heading", text: "..." }},
+      {{ type: "paragraph", text: "..." }},
       {{ type: "paragraph", text: "..." }},
       {{ type: "paragraph", text: "..." }}
     ]

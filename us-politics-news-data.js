@@ -4,46 +4,58 @@
 var US_POLITICS_NEWS = {
   date: "2026-05-08",
   main: {
-    title: "Tennessee Republicans Redraw Map to Eliminate State's Only Democratic House Seat After Supreme Court Weakens Voting Rights Act",
+    title: "Tennessee Republicans Pass New House Map to Dismantle State\'s Only Democratic Seat, Triggering NAACP Legal Challenge",
     category: "Politics",
     content: [
-      "Tennessee Republicans have passed a new congressional district map designed to break up the state's sole Democratic-held US House seat, making Tennessee the first state in the nation to act following the Supreme Court's decision last week significantly curtailing the Voting Rights Act's protections against racial discrimination in the redistricting process. The move, long anticipated by voting rights advocates, confirms fears that the ruling would swiftly be exploited by Republican-controlled legislatures eager to consolidate power ahead of future congressional elections. The new map represents one of the most direct and immediate legislative responses to a major Supreme Court shift in recent memory.",
-      "The Supreme Court's ruling last week removed a key enforcement mechanism of the Voting Rights Act that had historically been used to challenge district maps drawn in ways that diluted the voting power of minority communities. That provision had previously served as a significant legal barrier against the most aggressive forms of partisan and racial gerrymandering, and civil rights organizations had relied on it repeatedly to challenge maps in Southern states with histories of voter suppression. With that protection now substantially weakened, Republican legislatures have gained far greater latitude to redraw boundaries without facing successful legal challenges under federal civil rights law.",
-      "Tennessee's lone Democratic House seat has long been a target for the state's Republican supermajority in the legislature, which previously attempted redistricting maneuvers that drew legal scrutiny under the old Voting Rights Act standard. The newly passed map carves up the district in a way that disperses Democratic and minority voters across multiple heavily Republican districts, a classic \"cracking\" gerrymander technique intended to dilute concentrated opposition voting power. Supporters of the map argue it reflects population changes and complies with all current constitutional requirements, while critics say it is a transparently political act dressed in procedural language.",
-      "Democratic lawmakers and civil rights groups reacted with alarm, arguing that the map disenfranchises Black voters in particular, who make up a substantial portion of the affected district's electorate. Several organizations have indicated they are exploring what legal avenues remain available in the wake of the Supreme Court ruling, though the path to a successful challenge is now considerably narrower. The speed with which Tennessee moved — within days of the high court's decision — has become a rallying point for voting rights advocates warning that a wave of similar actions is likely across other Republican-led states before the next federal election cycle.",
-      "The Tennessee map sets a precedent that is being closely watched by Republican legislatures in states including Georgia, Alabama, and Louisiana, all of which have faced prior redistricting battles and may now move to redraw their own maps under the relaxed legal framework. For Democrats, the practical consequence could be the loss of additional House seats at a time when the balance of power in Congress remains fiercely contested. The episode underscores how profoundly last week's Supreme Court ruling may reshape the composition of Congress — not through a single dramatic vote, but through a cascade of quiet, state-level map-drawing sessions playing out far from national headlines."
+      "Tennessee Republicans have passed a new congressional redistricting map that would effectively dismantle the state\'s only Democratic-held House seat, making Tennessee the first state to redraw its U.S. House map in the wake of the Supreme Court\'s landmark decision last week to weaken the Voting Rights Act\'s protections against racial discrimination in redistricting. The move came over vocal protests inside the state capitol, as lawmakers rushed to take advantage of the newly loosened legal landscape. The passage of the map signals the beginning of what observers expect to be a sweeping wave of Republican-led redistricting efforts across the South.",
+      "The new map specifically targets Tennessee\'s Fifth Congressional District, which contains Nashville and is home to the state\'s only majority-Black congressional district. By breaking up that district, Republicans would effectively dilute the concentrated voting power of Black residents in the Nashville area and make the seat far more competitive — or outright unwinnable — for Democrats. Critics argue the map is a deliberate act of racial gerrymandering dressed in procedural clothing, enabled directly by the Supreme Court\'s weakening of the Voting Rights Act.",
+      "The NAACP responded swiftly, filing an emergency petition in Davidson County Chancery Court on Thursday to block the newly approved redistricting plan from taking effect. The organization argued that the map violates the Tennessee state constitution, separate from federal Voting Rights Act claims, urging Governor Bill Lee and the state legislature to refrain from enacting the new boundaries while the legal challenge proceeds. The emergency filing underscores how quickly voting rights advocates are moving to contest the redistricting wave through state-level legal avenues, given the weakened federal protections.",
+      "The Tennessee action is widely seen as a preview of what is coming in other Southern states, where Republican-controlled legislatures have been waiting for precisely this kind of legal opening to reshape their congressional maps. Political analysts note that even a handful of redrawn districts across states like Georgia, Louisiana, and North Carolina could meaningfully affect the balance of power in the U.S. House heading into the 2026 midterm elections. With Republicans already holding a slim House majority, locking in additional safe seats through redistricting could prove decisive in maintaining — or even expanding — their congressional advantage.",
+      "The broader political stakes extend well beyond Tennessee. Democrats, already facing an uphill battle in the midterms despite President Trump\'s mid-30s approval ratings and public unease over the Iran war, now must contend with a rapidly shifting congressional map engineered to suppress minority political representation. Civil rights groups are vowing to fight every new map in court, but the legal path forward is far narrower than it was before last week\'s Supreme Court ruling. The Tennessee redistricting fight has thus become a flashpoint for one of the most consequential battles in American democratic politics heading into the second half of the decade."
     ],
-    image: "https://images.unsplash.com/photo-1617531653332-bd46c16f4d68?w=1200&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1594731940920-0a37e4eb3f54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUZW5uZXNzZWUlMjBSZXB1YmxpY2FucyUyMFBhc3MlMjBOZXclMjBIb3VzZSUyME1hcCUyMHRvJTIwRGlzbWFudGxlJTIwU3RhdGUlNUN8ZW58MHwwfHx8MTc3ODIzNjMzM3ww&ixlib=rb-4.1.0&q=80&w=1080",
     source: "NPR",
     sourceUrl: "https://www.npr.org/2026/05/08/nx-s1-5815291/tennessee-republicans-pass-new-house-map-to-break-up-states-lone-democratic-seat"
   },
   secondary: [
     {
       id: "us1",
-      title: "Trump's Truth Social Posts Reveal the Mind of an Extremely Online President",
-      summary: "An analysis of President Trump's social media activity shows his Truth Social posts — dominated by narrow obsessions and grievances — offer a candid window into his priorities as he steers the country through war and domestic upheaval.",
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/a264/live/ea115f80-4a8c-11f1-8cc6-3107ba12e291.jpg",
-      source: "NPR",
-      url: "https://www.npr.org/2026/05/08/nx-s1-5749358/trump-truth-social-online-posts-iran-white-house-ballroom",
+      title: "Judge Rules DOGE\'s Cuts to Humanities Grants Were Unconstitutional",
+      summary: "A federal judge found that DOGE\'s more than $100 million in cuts to National Endowment for the Humanities grants were unconstitutional and discriminatory.",
+      body: [
+        "A federal judge ruled Thursday that cuts carried out by Elon Musk\'s Department of Government Efficiency targeting over $100 million in National Endowment for the Humanities grants were unconstitutional, marking one of the most significant judicial rebukes of DOGE\'s cost-cutting operations to date. The ruling revealed new details about DOGE\'s internal decision-making processes, raising further questions about the legal basis on which the department has been operating across multiple federal agencies.",
+        "The decision adds to a growing body of court rulings pushing back against DOGE\'s sweeping unilateral cuts to federally funded programs, and is likely to embolden other legal challenges currently working their way through the courts. Congressional Democrats have pointed to the ruling as evidence that DOGE has been operating well outside the boundaries of executive authority, intensifying calls for greater legislative oversight of the department\'s activities."
+      ],
+      image: "https://images.unsplash.com/photo-1590799003711-0666304a4ff5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxKdWRnZSUyMFJ1bGVzJTIwRE9HRSU1Q3xlbnwwfDB8fHwxNzc4MjM2MzMzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "Washington Post",
+      url: "https://www.washingtonpost.com/politics/2026/05/07/doge-neh-humanities-grants-ruling/",
       category: "Politics"
     },
     {
       id: "us2",
-      title: "US to Revoke Passports of Parents With Unpaid Child Support Debt",
-      summary: "The federal government will begin revoking passports from parents who owe more than $2,500 in child support, a policy that critics say could affect hundreds of thousands of Americans.",
-      image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&auto=format&fit=crop",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/c62r52l107po",
-      category: "Federal Policy"
+      title: "Supreme Court Weighs Telehealth Access for Abortion Pill Mifepristone",
+      summary: "The Supreme Court is now considering whether to restore telemedicine access to mifepristone after an appeals court moved to curtail it.",
+      body: [
+        "With legal briefs now submitted by all parties, the Supreme Court is weighing whether to reinstate telehealth access to mifepristone, one of the two drugs used in medication abortions, after a federal appeals court ruled to end the practice of prescribing it remotely. The case represents the Court\'s most direct engagement with abortion access since the overturning of Roe v. Wade, and its outcome could significantly affect how millions of Americans across the country obtain abortion medication.",
+        "Telemedicine prescriptions for mifepristone had become an increasingly important pathway to abortion access, particularly in states with restrictive in-person clinic requirements. A ruling against telehealth access would effectively create a new layer of restriction on top of existing state-level abortion bans, while a ruling in favor could preserve a critical avenue for reproductive healthcare in an already dramatically restricted national landscape."
+      ],
+      image: "https://images.pexels.com/photos/36984937/pexels-photo-36984937.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      source: "NPR",
+      url: "https://www.npr.org/2026/05/07/nx-s1-5815294/abortion-pill-mifepristone-supreme-court-telemedicine",
+      category: "Politics"
     },
     {
       id: "us3",
-      title: "White House Press Secretary Karoline Leavitt Announces Birth of Daughter",
-      summary: "Karoline Leavitt, the Trump administration's press secretary, announced the birth of her baby girl and said other White House officials will handle press briefings during her maternity leave.",
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/5939/live/1d335ab0-4a2b-11f1-ac78-2112837ce2aa.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/cx21e1zx30ro",
-      category: "White House"
+      title: "GOP Braces for High-Stakes 2027 Spending Fight With Midterms Looming",
+      summary: "House Republican leaders are plunging into a bruising fiscal 2027 appropriations battle that will serve as the last major legislative test before the November midterm elections.",
+      body: [
+        "Barely recovered from two government shutdowns during the 2026 appropriations cycle, House Republican leaders are already preparing for what promises to be an even more politically fraught fight over fiscal year 2027 spending, with the midterm elections casting a long shadow over every budget decision. Speaker Mike Johnson faces the difficult task of uniting a fractious caucus around a spending blueprint that can pass the House without Democratic support while avoiding another shutdown that could damage Republicans heading into November.",
+        "The stakes are unusually high because the 2027 budget fight will unfold in full public view as voters assess the Republican majority\'s governing record ahead of midterms where Democrats see real pickup opportunities, particularly given President Trump\'s depressed approval ratings and economic anxieties tied to the Iran conflict. Hardline conservatives are already signaling demands for deeper cuts, setting up another potential collision with defense hawks and moderate members who represent competitive districts."
+      ],
+      image: "https://thehill.com/wp-content/uploads/sites/2/2026/05/johnsonmike_050726gn02_w.jpg?w=900",
+      source: "The Hill",
+      url: "https://thehill.com/homenews/house/5868783-appropriations-2027-clash-midterms/",
+      category: "Politics"
     }
   ]
 };

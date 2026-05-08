@@ -4,15 +4,15 @@
 var FILMS_DATA = {
   date: "2026-05-08",
   film: {
-    title: "Singin' in the Rain",
-    director: "Stanley Donen & Gene Kelly",
-    year: 1952,
-    genres: ["Musical", "Comedy", "Romance"],
-    desc: "Singin' in the Rain is the gold standard of Hollywood musicals — a film so infectiously joyful it has never once loosened its grip across seven decades. Set during the industry's chaotic lurch from silent films to talkies, it wrings brilliant comedy and surprisingly tender romance from the panic of an era. Gene Kelly and a luminous Debbie Reynolds deliver every number with an ease that conceals astonishing craft, culminating in that title sequence: Kelly splashing through puddles in a downpour, cinema's most purely elating image. Donald O'Connor's 'Make 'Em Laugh' is a masterclass in physical comedy that leaves audiences breathless even now. It is, without argument, the happiest great film ever made.",
-    cast: ["Gene Kelly", "Debbie Reynolds", "Donald O'Connor"],
-    rating: 100,
+    title: "Closely Watched Trains",
+    director: "Jiří Menzel",
+    year: 1966,
+    genres: ["Comedy", "Drama", "War"],
+    desc: "Set in a small Czech railway station during the Nazi occupation, this tender and quietly subversive film follows a young apprentice dispatcher preoccupied far more with his sexual awakening than with the surrounding horrors of wartime. Jiří Menzel balances dry, deadpan humor with genuine melancholy in a way that feels utterly singular — scenes of bureaucratic absurdity and bumbling desire give way to moments of unexpected moral courage. Adapted from Bohumil Hrabal\'s beloved novel, the film captures a generation of ordinary people navigating history with awkwardness, warmth, and quiet dignity. Its unhurried pace and deeply human performances make it one of the Czech New Wave\'s most accessible and emotionally resonant achievements, earning it the Academy Award for Best Foreign Language Film.",
+    cast: ["Václav Neckář", "Jitka Bendová", "Vladimír Valenta"],
+    rating: 97,
     ratingSource: "Rotten Tomatoes",
-    ratingExtra: "2 Academy Award nominations",
-    posterUrl: null
+    ratingExtra: "1 Academy Award (Best Foreign Language Film)",
+    posterUrl: "https://upload.wikimedia.org/wikipedia/en/8/88/Closelywatchedtrains.jpg"
   }
 };

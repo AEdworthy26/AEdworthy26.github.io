@@ -3,6 +3,6 @@
 
 var QUOTE_DATA = {
   date: "2026-05-08",
-  text: "The opposite of a correct statement is a false statement. But the opposite of a profound truth may well be another profound truth.",
-  author: "Niels Bohr"
+  text: "The good life is one inspired by love and guided by knowledge.",
+  author: "Bertrand Russell"
 };

@@ -4,46 +4,58 @@
 var FINANCIAL_NEWS = {
   date: "2026-05-08",
   main: {
-    title: "US Trade Court Strikes Down Trump's Global Tariffs in Landmark Ruling",
-    category: "Economics",
+    title: "Oil Surges and Airlines Warn of Profit Hits as U.S.-Iran Clashes Rattle Markets",
+    category: "Markets & Energy",
     content: [
-      "The US Court of International Trade delivered a seismic blow to the White House's trade agenda on Thursday, ruling that President Trump's sweeping 10% global tariffs were unlawful and could not be justified under the 1970s trade legislation his administration had invoked. The case was brought by a coalition of small businesses that argued the across-the-board levies, which took effect on 24 April, exceeded the executive branch's legal authority under existing trade law. The ruling represents one of the most significant judicial checks on presidential trade powers in decades, and markets responded swiftly to the prospect of a potential unwinding of the tariff regime.",
-      "The tariffs had already sent shockwaves through global supply chains and contributed to upward pressure on consumer prices since their introduction. Importers, particularly small and mid-sized businesses with thin margins and limited ability to absorb additional costs, had been among the loudest critics of the policy, arguing the blanket nature of the levies was economically destructive and administratively unworkable. Thursday's ruling validated those concerns at the highest judicial level available to trade disputes, setting the stage for an almost certain appeal by the administration.",
-      "Adding to the turbulence, Trump simultaneously issued a fresh ultimatum to the European Union, demanding Brussels implement trade deal terms within weeks or face tariffs being raised to what he described as 'much higher levels.' The threat landed just hours after the court ruling, highlighting the tension between judicial constraints on tariff authority domestically and the administration's continued use of tariff threats as a primary diplomatic lever internationally. Analysts noted the contradiction placed businesses and trading partners in an unusually uncertain position, with legal and political signals pointing in opposite directions simultaneously.",
-      "For financial markets, the ruling injects a fresh layer of complexity into an already volatile macro environment. Equity investors had partially priced in a prolonged tariff regime as a structural feature of the trading landscape; a potential reversal or legal constraint on that regime forces a reassessment of earnings forecasts across import-dependent sectors from retail to manufacturing. Currency markets also reacted, with the dollar softening against several major peers as traders weighed the implications for US growth and inflation dynamics if the tariff-driven price pressures begin to ease.",
-      "Economists have been tracking the downstream effects of the tariffs on consumer prices, with data showing meaningful pass-through to end consumers in categories ranging from electronics to foodstuffs. Should the court ruling hold — and the legal path forward remains uncertain, with the administration likely to seek an emergency stay while it appeals — the relief to inflationary pressures could be material. The Federal Reserve, which has been navigating a difficult path between sticky inflation and slowing growth, will be watching the legal proceedings closely, as a sustained reduction in tariff-driven price pressures could shift the calculus on the timing of future rate decisions."
+      "Oil prices climbed sharply on Friday after U.S. and Iranian forces exchanged fire near the Strait of Hormuz, reigniting fears that one of the world\'s most critical energy chokepoints could be disrupted. The clashes came even as the Trump administration insisted a broader ceasefire remained technically in place and pushed for a permanent peace deal. Markets reacted swiftly, with crude benchmarks spiking as traders priced in the risk of supply disruptions through a strait that handles roughly a fifth of global oil trade.",
+      "The immediate market fallout extended well beyond the oil patch. Gold rose as investors sought safe-haven assets, while equity markets showed a split reaction — technology stocks provided a partial buffer, helping lift U.S. index futures even as energy-sensitive sectors came under pressure. Global food prices also jumped, according to tracking data cited by The Guardian, as higher energy costs feed directly into the price of fertilizers, transport, and agricultural production, threatening to add another layer to already-elevated consumer inflation.",
+      "The airline industry is among the most exposed corporate casualties of the conflict. International Airlines Group, parent of British Airways, Aer Lingus, Iberia, and Vueling, issued a stark profit warning Friday, saying it now expects to spend approximately €2 billion — roughly £1.72 billion — more on jet fuel this year than it had budgeted before the Iran war began. The warning underscores how persistently elevated energy costs are translating into real earnings damage across industries that cannot quickly or cheaply hedge their exposure to oil prices.",
+      "At the same time, a parallel story is emerging on the other side of the ledger: a cohort of companies is reaping substantial financial windfalls from the conflict. Defense contractors, certain energy producers, and logistics firms with strategic positioning have seen surging profits or soaring share prices since hostilities escalated. This divergence — between industries being squeezed by war-driven cost inflation and those benefiting from it — is increasingly shaping portfolio strategy and earnings season narratives across global markets.",
+      "Analysts warn that the market\'s ability to absorb further escalation is limited. European consumers, already scarred by the energy crisis of the early 2020s, are accelerating purchases of solar panels and heat pumps as a hedge against what many describe as crushing energy bills driven by geopolitical instability. In financial markets, the key variable remains the Strait of Hormuz itself: any sustained disruption to tanker traffic through the strait would send energy prices to levels that could meaningfully slow global economic growth, complicate central bank rate decisions, and deepen profit warnings across a wide swath of corporate earnings reports in the months ahead."
     ],
-    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&auto=format&fit=crop",
-    source: "The Guardian",
-    sourceUrl: "https://www.theguardian.com/us-news/2026/may/07/trump-global-tariffs-trade-court-ruling"
+    image: "https://static01.nyt.com/images/2026/05/08/multimedia/08-Biz-Oil-Stocks-Gas-vmzt/08-Biz-Oil-Stocks-Gas-vmzt-mediumSquareAt3X.jpg",
+    source: "The New York Times",
+    sourceUrl: "https://www.nytimes.com/2026/05/08/business/oil-gas-price-iran.html"
   },
   secondary: [
     {
       id: "fn1",
-      title: "Oil Prices Jump as Hormuz Strait Tensions Flare",
-      summary: "Crude prices spiked after reports of US and Iranian military exchanges near the Strait of Hormuz, the critical shipping chokepoint through which around a fifth of the world's oil supply passes.",
-      image: "https://images.unsplash.com/photo-1585776245991-cf89dd7fc73a?w=800&auto=format&fit=crop",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/c86dp85g59xo?at_medium=RSS&at_campaign=rss",
-      category: "Commodities"
+      title: "U.S. Trade Court Strikes Down Trump\'s 10% Global Tariffs as Unlawful",
+      summary: "A federal trade court ruled that President Trump\'s sweeping 10% across-the-board import tariffs were not legally justified under the 1970s trade law used to impose them.",
+      body: [
+        "A panel of judges at the U.S. Court of International Trade ruled Thursday that the Trump administration\'s 10% global tariffs — which took effect earlier this year — exceeded the president\'s legal authority under the decades-old trade statute invoked to impose them. The ruling came in response to a challenge brought by small businesses and represents the second major judicial rebuke of Trump\'s broad tariff agenda after the Supreme Court vacated earlier levies.",
+        "The decision carries significant economic weight, as the 10% baseline tariff had been applied to imports from most of the United States' trading partners, adding to business costs and fueling uncertainty in supply chains. Markets will now watch closely to see whether the administration appeals, seeks new legal authority, or attempts to renegotiate trade terms bilaterally — each path carrying different implications for corporate pricing strategies and inflation."
+      ],
+      image: "https://images.unsplash.com/photo-1741018423883-c985b4d4747d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxVLlMuJTIwVHJhZGUlMjBDb3VydCUyMFN0cmlrZXMlMjBEb3duJTIwVHJ1bXAlNUN8ZW58MHwwfHx8MTc3ODIzNjM4MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/us-news/2026/may/07/trump-global-tariffs-trade-court-ruling",
+      category: "Trade & Economics"
     },
     {
       id: "fn2",
-      title: "Global Food Prices Surge as Iran Conflict Drives Up Costs",
-      summary: "Food commodity prices jumped sharply as the ongoing Iran conflict disrupted shipping routes and pushed energy costs higher, compounding inflationary pressures already weighing on household budgets across Europe and beyond.",
-      image: "https://images.unsplash.com/photo-1526470498-9ae73c665de8?w=800&auto=format&fit=crop",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/business/live/2026/may/08/oil-us-iran-ceasefire-uk-house-prices-food-prices-jobs-report-pound-bonds-elections-latest-news-updates",
+      title: "Bank of America Flags Unexplained Slump in U.S. Consumer Spending",
+      summary: "Bank of America\'s internal credit and debit card data revealed an unexpected and unexplained drop in U.S. consumer spending, raising fresh questions about the health of the American economy.",
+      body: [
+        "Bank of America, analyzing transaction data across its tens of millions of retail customers, has identified a notable and puzzling decline in consumer spending that the bank says it cannot yet fully explain. The slump, visible in both credit and debit card usage, is significant because consumer spending accounts for roughly two-thirds of U.S. economic output and has been one of the few consistently resilient pillars of the domestic economy in recent years.",
+        "The timing is particularly sensitive, arriving as markets are already contending with energy price volatility from the Iran conflict, the legal uncertainty around tariffs, and an upcoming monthly jobs report. If the spending weakness reflects a broader retrenchment by American households — rather than a statistical anomaly — it could signal that elevated costs are finally beginning to bite into discretionary budgets in ways that slower GDP growth figures have not yet fully captured."
+      ],
+      image: "https://images.mktw.net/im-32829883",
+      source: "MarketWatch",
+      url: "https://www.marketwatch.com/story/spending-in-the-u-s-just-slumped-and-bank-of-america-isnt-sure-why-ea384b24?mod=mw_rss_topstories",
       category: "Economics"
     },
     {
       id: "fn3",
-      title: "Defence and Energy Firms Reap Billions as Iran War Reshapes Markets",
-      summary: "A cohort of defence contractors and energy producers have seen surging profits and soaring share prices since the outbreak of the Iran conflict, underscoring how geopolitical crises redistribute economic winners and losers across global markets.",
-      image: "https://images.unsplash.com/photo-1568454537842-d933259bb258?w=800&auto=format&fit=crop",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/ce8pyyz5e0ro?at_medium=RSS&at_campaign=rss",
-      category: "Markets"
+      title: "South East Water CEO Steps Down After Widespread Supply Failures",
+      summary: "David Hinton, chief executive of South East Water, announced his resignation following major supply outages that left tens of thousands of customers in Kent and Sussex without water.",
+      body: [
+        "David Hinton, who has led South East Water since joining its board in 2013, said Friday he would step down following a damaging series of supply failures that cut water access to large parts of Kent and Sussex. His departure follows the resignation of the company\'s chair, Chris Train, just a week earlier, marking a significant governance upheaval at one of England\'s regional water utilities.",
+        "The dual leadership exits put fresh pressure on the broader UK water sector, which has faced mounting scrutiny from regulators and the public over infrastructure investment, service reliability, and executive accountability. For investors in water utility assets, the episode reinforces regulatory and reputational risks that are increasingly difficult to ignore as the industry faces calls for more stringent oversight."
+      ],
+      image: "https://i.guim.co.uk/img/media/c0e0db6a36d2ea7e22841bc1fb39e502b709ec44/540_0_6955_5564/master/6955.jpg?width=1200&quality=85&auto=format&fit=max&s=a1be0060b456e210351edaeccd8f9984",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/business/2026/may/08/south-east-water-ceo-david-hinton-to-step-down-kent-sussex-supply-outages",
+      category: "Corporate"
     }
   ]
 };
