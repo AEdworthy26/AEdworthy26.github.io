@@ -1669,15 +1669,15 @@
       _ingCount = 0;
       var ingRows = document.getElementById('ing-rows');
       ingRows.innerHTML = '';
-      var ings = r ? r.ingredients : [{ name: '', quantity: '', unit: 'g' }];
-      ings.forEach(function(i) { addIngRow(i.name, i.quantity, i.unit); });
+      var ings = (r && r.ingredients && r.ingredients.length) ? r.ingredients : [{ name: '', quantity: '', unit: 'g' }];
+      ings.forEach(function(i) { addIngRow(i.name || '', i.quantity || '', i.unit || 'g'); });
 
       // Steps
       _stepCount = 0;
       var stepRows = document.getElementById('step-rows');
       stepRows.innerHTML = '';
-      var steps = r ? r.instructions : [''];
-      steps.forEach(function(s) { addStepRow(s); });
+      var steps = (r && r.instructions && r.instructions.length) ? r.instructions : [''];
+      steps.forEach(function(s) { addStepRow(s || ''); });
 
       // Rating
       _formRating = r ? (r.rating || 0) : 0;
