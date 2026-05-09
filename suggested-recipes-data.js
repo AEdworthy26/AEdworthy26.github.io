@@ -5,7 +5,8 @@ window.SUGGESTED_RECIPES = [
   {
     id: "sug1",
     title: "Caldo Verde — Portuguese Chorizo, Kale & Potato Soup with Crusty Bread",
-    category: "Dinner",
+    category: "Soups & Stews",
+    calories: 595, protein: 16, fibre: 5, healthScore: 52,
     time: "45 mins",
     serves: "4",
     desc: "Portugal\'s most beloved soup — silky, golden potato broth laced with smoky cured chorizo and ribbons of tender kale. Simple ingredients transform into something deeply comforting and bold, finished with a glug of good olive oil and served with hunks of crusty bread to mop every last drop.",
@@ -52,7 +53,8 @@ window.SUGGESTED_RECIPES = [
   {
     id: "sug2",
     title: "Japanese Katsu Curry Udon with Crispy Panko Chicken & Soft-Boiled Egg",
-    category: "Lunch",
+    category: "Chicken",
+    calories: 680, protein: 38, fibre: 3, healthScore: 55,
     time: "40 mins",
     serves: "2",
     desc: "Thick, bouncy udon noodles swim in a velvety Japanese curry broth — mild, warming, and subtly sweet — topped with a shattering-crisp panko chicken cutlet and a jammy soft-boiled egg. This is the kind of deeply satisfying bowl that feels like pure comfort food, with every element pulling its weight.",
@@ -110,7 +112,8 @@ window.SUGGESTED_RECIPES = [
   {
     id: "sug3",
     title: "Moroccan Spiced Lamb-Free Merguez-Style Sausage Patties with Harissa Carrot Salad & Herbed Couscous",
-    category: "Dinner",
+    category: "Beef",
+    calories: 620, protein: 44, fibre: 8, healthScore: 65,
     time: "35 mins",
     serves: "4",
     desc: "Boldly spiced beef patties flavoured with all the hallmarks of merguez — cumin, coriander, fennel, and a generous hit of harissa — served alongside a vibrant roasted carrot salad and fluffy herbed couscous. A North African feast that\'s punchy, fragrant, and entirely achievable on a weeknight.",

@@ -203,6 +203,31 @@
     .strip-card-title { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 0.78rem; line-height: 1.3; margin-bottom: 0.2rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .strip-card-meta { font-size: 0.59rem; color: var(--light); font-weight: 500; }
 
+    @keyframes toastIn { from { opacity: 0; transform: translateX(-50%) translateY(10px); } to { opacity: 1; transform: translateX(-50%) translateY(0); } }
+
+    /* ── NUTRITION ── */
+    .rc-nutrition { display: flex; align-items: center; gap: 0.55rem; font-size: 0.62rem; color: var(--muted); margin-bottom: 0.5rem; flex-wrap: wrap; }
+    .health-badge { display: inline-flex; align-items: center; padding: 0.08rem 0.42rem; border-radius: 9999px; font-weight: 700; font-size: 0.59rem; }
+    .health-badge.good  { background: rgba(22,163,74,0.1);  color: #16a34a; }
+    .health-badge.ok    { background: rgba(217,119,6,0.1);   color: #b45309; }
+    .health-badge.fair  { background: rgba(220,38,38,0.1);   color: #dc2626; }
+    .vm-nutrition { display: grid; grid-template-columns: repeat(4,1fr); gap: 0.6rem; background: var(--subtle); border-radius: 10px; padding: 1rem; margin: 0.8rem 0 1.2rem; }
+    @media (max-width: 480px) { .vm-nutrition { grid-template-columns: repeat(2,1fr); } }
+    .vm-nut-item { text-align: center; }
+    .vm-nut-val { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 700; line-height: 1; }
+    .vm-nut-label { font-size: 0.56rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--light); margin-top: 0.25rem; }
+    .vm-nut-score.good .vm-nut-val { color: #16a34a; }
+    .vm-nut-score.ok   .vm-nut-val { color: #b45309; }
+    .vm-nut-score.fair .vm-nut-val { color: #dc2626; }
+
+    /* ── CARD FAVOURITE BUTTON ── */
+    .rc-fav-btn { background: none; border: none; font-size: 0.88rem; cursor: pointer; padding: 0; line-height: 1; color: #ccc; transition: color 0.15s, transform 0.15s; flex-shrink: 0; }
+    .rc-fav-btn:hover { transform: scale(1.25); }
+    .rc-fav-btn.fav-on { color: #e53e3e; }
+    .strip-fav-btn { background: none; border: none; font-size: 0.78rem; cursor: pointer; padding: 0; line-height: 1; color: #ccc; transition: color 0.15s, transform 0.15s; }
+    .strip-fav-btn:hover { transform: scale(1.25); }
+    .strip-fav-btn.fav-on { color: #e53e3e; }
+
     /* ── EMPTY STATE ── */
     .empty-state { text-align: center; padding: 3rem 2rem; border: 2px dashed var(--border); border-radius: 12px; background: rgba(255,255,255,0.6); }
     .empty-icon { font-size: 2.8rem; opacity: 0.4; margin-bottom: 0.8rem; display: block; }
@@ -551,12 +576,16 @@
         <div class="filter-row">
           <span class="filter-row-label">Category</span>
           <span class="filter-pill fp-cat active" data-val="" onclick="window.setFilterCat('')">All</span>
-          <span class="filter-pill fp-cat" data-val="Breakfast" onclick="window.setFilterCat('Breakfast')">Breakfast</span>
-          <span class="filter-pill fp-cat" data-val="Lunch" onclick="window.setFilterCat('Lunch')">Lunch</span>
-          <span class="filter-pill fp-cat" data-val="Dinner" onclick="window.setFilterCat('Dinner')">Dinner</span>
-          <span class="filter-pill fp-cat" data-val="Snack" onclick="window.setFilterCat('Snack')">Snack</span>
-          <span class="filter-pill fp-cat" data-val="Dessert" onclick="window.setFilterCat('Dessert')">Dessert</span>
-          <span class="filter-pill fp-cat" data-val="Drink" onclick="window.setFilterCat('Drink')">Drink</span>
+          <span class="filter-pill fp-cat" data-val="Chicken" onclick="window.setFilterCat('Chicken')">Chicken</span>
+          <span class="filter-pill fp-cat" data-val="Beef" onclick="window.setFilterCat('Beef')">Beef</span>
+          <span class="filter-pill fp-cat" data-val="Lamb" onclick="window.setFilterCat('Lamb')">Lamb</span>
+          <span class="filter-pill fp-cat" data-val="Pork" onclick="window.setFilterCat('Pork')">Pork</span>
+          <span class="filter-pill fp-cat" data-val="Fish &amp; Seafood" onclick="window.setFilterCat('Fish &amp; Seafood')">Fish &amp; Seafood</span>
+          <span class="filter-pill fp-cat" data-val="Vegetarian" onclick="window.setFilterCat('Vegetarian')">Vegetarian</span>
+          <span class="filter-pill fp-cat" data-val="Vegan" onclick="window.setFilterCat('Vegan')">Vegan</span>
+          <span class="filter-pill fp-cat" data-val="Pasta &amp; Grains" onclick="window.setFilterCat('Pasta &amp; Grains')">Pasta &amp; Grains</span>
+          <span class="filter-pill fp-cat" data-val="Soups &amp; Stews" onclick="window.setFilterCat('Soups &amp; Stews')">Soups &amp; Stews</span>
+          <span class="filter-pill fp-cat" data-val="Desserts &amp; Bakes" onclick="window.setFilterCat('Desserts &amp; Bakes')">Desserts &amp; Bakes</span>
           <span class="filter-pill fp-cat" data-val="Other" onclick="window.setFilterCat('Other')">Other</span>
         </div>
         <div class="filter-row">
@@ -581,6 +610,13 @@
 
   <footer class="site-footer">Personal Hub &mdash; Alfie Edworthy &mdash; Private &amp; Confidential</footer>
 
+  <!-- ── UNDO DELETE TOAST ── -->
+  <div id="undo-toast" style="display:none;position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);background:#1f2937;color:#fff;border-radius:10px;padding:0.85rem 1.2rem;display:none;align-items:center;gap:1rem;box-shadow:0 8px 28px rgba(0,0,0,0.32);z-index:700;white-space:nowrap;animation:toastIn .3s cubic-bezier(.22,1,.36,1)">
+    <span id="undo-msg" style="font-size:0.83rem;font-weight:500"></span>
+    <button onclick="window.undoDelete()" style="background:var(--accent);color:#fff;border:none;border-radius:6px;padding:0.38rem 0.9rem;font-size:0.77rem;font-weight:700;cursor:pointer;font-family:inherit">Undo</button>
+    <button onclick="window.dismissUndo()" style="background:none;border:none;color:rgba(255,255,255,0.45);font-size:1rem;cursor:pointer;line-height:1;padding:0">&times;</button>
+  </div>
+
   <!-- ── VIEW MODAL ── -->
   <div class="modal-overlay" id="view-modal">
     <div class="modal">
@@ -599,6 +635,7 @@
           <span id="vm-cooked"></span>
         </div>
         <p id="vm-desc" style="font-size:0.88rem;line-height:1.7;color:var(--muted);margin-bottom:0.5rem"></p>
+        <div id="vm-nutrition" style="display:none"></div>
         <span class="section-label">Ingredients</span>
         <div id="vm-ingredients"></div>
         <div id="vm-substitutes-wrap">
@@ -646,8 +683,9 @@
             <label class="form-label">Category</label>
             <select class="form-input" id="f-cat">
               <option value="">— Select —</option>
-              <option>Breakfast</option><option>Lunch</option><option>Dinner</option>
-              <option>Snack</option><option>Dessert</option><option>Drink</option><option>Other</option>
+              <option>Chicken</option><option>Beef</option><option>Lamb</option><option>Pork</option>
+              <option>Fish &amp; Seafood</option><option>Vegetarian</option><option>Vegan</option>
+              <option>Pasta &amp; Grains</option><option>Soups &amp; Stews</option><option>Desserts &amp; Bakes</option><option>Other</option>
             </select>
           </div>
         </div>
@@ -675,6 +713,25 @@
           <div class="form-group">
             <label class="form-label">Serves (optional)</label>
             <input type="text" class="form-input" id="f-serves" placeholder="e.g. 4">
+          </div>
+        </div>
+
+        <div class="form-row" style="grid-template-columns:repeat(4,1fr)">
+          <div class="form-group">
+            <label class="form-label">Calories (kcal)</label>
+            <input type="number" class="form-input" id="f-calories" placeholder="e.g. 450" min="0">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Protein (g)</label>
+            <input type="number" class="form-input" id="f-protein" placeholder="e.g. 30" min="0">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Fibre (g)</label>
+            <input type="number" class="form-input" id="f-fibre" placeholder="e.g. 5" min="0">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Health score /100</label>
+            <input type="number" class="form-input" id="f-health" placeholder="e.g. 70" min="0" max="100">
           </div>
         </div>
 
@@ -757,8 +814,17 @@
 
     // ── CATEGORY COLOURS ───────────────────────────────────────────────────
     var CAT_COLORS = {
-      'Breakfast': '#d97706', 'Lunch': '#059669', 'Dinner': '#1d4ed8',
-      'Snack': '#7c3aed', 'Dessert': '#dc2626', 'Drink': '#0891b2', 'Other': '#4b5563'
+      'Chicken':         '#ea580c',
+      'Beef':            '#b91c1c',
+      'Lamb':            '#be123c',
+      'Pork':            '#db2777',
+      'Fish & Seafood':  '#0891b2',
+      'Vegetarian':      '#16a34a',
+      'Vegan':           '#059669',
+      'Pasta & Grains':  '#d97706',
+      'Soups & Stews':   '#7c3aed',
+      'Desserts & Bakes':'#ec4899',
+      'Other':           '#4b5563'
     };
     function catColor(c) { return CAT_COLORS[c] || '#374151'; }
     function catBadge(c) {
@@ -849,8 +915,10 @@
         ingredients: s.ingredients, ingredientGroups: s.ingredientGroups || null,
         substitutes: s.substitutes || [],
         instructions: s.instructions,
-        rating: _sugRatings[id] || 0, favourite: true, createdAt: Date.now(),
-        emoji: s.emoji || '🍽️', image: s.image || null
+        rating: _sugRatings[id] || 0, favourite: false, createdAt: Date.now(),
+        emoji: s.emoji || '🍽️', image: s.image || null,
+        calories: s.calories || null, protein: s.protein || null,
+        fibre: s.fibre || null, healthScore: s.healthScore || null
       };
       recipes.unshift(r);
       saveRecipes();
@@ -866,7 +934,9 @@
         desc: s.desc, time: s.time, serves: s.serves,
         ingredients: s.ingredients, ingredientGroups: s.ingredientGroups || null,
         substitutes: s.substitutes || [],
-        instructions: s.instructions, rating: s.rating
+        instructions: s.instructions, rating: s.rating,
+        calories: s.calories || null, protein: s.protein || null,
+        fibre: s.fibre || null, healthScore: s.healthScore || null
       }, true);
     };
 
@@ -911,6 +981,35 @@
       renderGrid();
     };
 
+    function healthClass(s) { return s >= 70 ? 'good' : s >= 50 ? 'ok' : 'fair'; }
+
+    function nutStrip(r) {
+      var parts = [];
+      if (r.calories) parts.push('⚡ ' + r.calories + ' kcal');
+      if (r.protein)  parts.push('🥩 ' + r.protein + 'g protein');
+      if (r.fibre)    parts.push('🌾 ' + r.fibre + 'g fibre');
+      var scoreHtml = r.healthScore != null
+        ? '<span class="health-badge ' + healthClass(r.healthScore) + '">' + r.healthScore + '/100</span>' : '';
+      if (!parts.length && !scoreHtml) return '';
+      return '<div class="rc-nutrition">' + parts.join(' · ') + (parts.length && scoreHtml ? ' ' : '') + scoreHtml + '</div>';
+    }
+
+    function nutGrid(r) {
+      if (!r.calories && !r.protein && !r.fibre && r.healthScore == null) return '';
+      var items = [
+        { val: r.calories != null ? r.calories : '—', label: 'kcal', cls: '' },
+        { val: r.protein  != null ? r.protein + 'g' : '—', label: 'protein', cls: '' },
+        { val: r.fibre    != null ? r.fibre + 'g'   : '—', label: 'fibre', cls: '' },
+        { val: r.healthScore != null ? r.healthScore : '—', label: 'health / 100',
+          cls: 'vm-nut-score' + (r.healthScore != null ? ' ' + healthClass(r.healthScore) : '') }
+      ];
+      return '<div class="vm-nutrition">'
+        + items.map(function(it) {
+            return '<div class="vm-nut-item ' + it.cls + '"><div class="vm-nut-val">' + it.val + '</div><div class="vm-nut-label">' + it.label + '</div></div>';
+          }).join('')
+        + '</div>';
+    }
+
     function recipeCardHTML(r, i) {
       var color = catColor(r.category);
       var initial = r.title ? r.title.charAt(0).toUpperCase() : '?';
@@ -921,13 +1020,13 @@
       return '<div class="recipe-card" style="--card-accent:' + color + ';animation-delay:' + (i * 50) + 'ms" onclick="openViewModal_byId(\'' + r.id + '\')">'
         + '<div class="rc-thumb">'
         +   thumbInner
-        +   '<button class="rc-fav" onclick="toggleFav(event,\'' + r.id + '\')">' + (r.favourite ? '❤️' : '🤍') + '</button>'
         +   (r.cooked ? '<span class="rc-cooked-badge">&#10003; Cooked</span>' : '')
         + '</div>'
         + '<div class="rc-body">'
         +   '<div class="rc-cat-row">' + catBadge(r.category) + '</div>'
         +   '<div class="rc-title">' + esc(r.title) + '</div>'
         +   (r.desc ? '<p class="rc-desc">' + esc(r.desc) + '</p>' : '')
+        +   (r.calories || r.healthScore ? nutStrip(r) : '')
         +   '<div class="rc-footer">'
         +     '<span class="rc-stars">' + starsHtml(r.rating || 0) + '</span>'
         +     '<span class="rc-meta">'
@@ -935,6 +1034,7 @@
         +       (r.time && r.serves ? ' · ' : '')
         +       (r.serves ? 'Serves ' + esc(r.serves) : '')
         +     '</span>'
+        +     '<button class="rc-fav-btn' + (r.favourite ? ' fav-on' : '') + '" onclick="toggleFav(event,\'' + r.id + '\')" title="' + (r.favourite ? 'Remove from favourites' : 'Add to favourites') + '">' + (r.favourite ? '♥' : '♡') + '</button>'
         +   '</div>'
         + '</div>'
         + '</div>';
@@ -946,15 +1046,18 @@
       var thumbInner = r.image
         ? '<img src="' + esc(r.image) + '" alt="' + esc(r.title) + '" loading="lazy">'
         : esc(initial);
-      return '<div class="strip-card" style="--card-accent:' + color + '" onclick="openViewModal_byId(\'' + r.id + '\')">'
+      return '<div class="strip-card" style="--card-accent:' + color + ';display:flex;flex-direction:column" onclick="openViewModal_byId(\'' + r.id + '\')">'
         + '<div class="strip-card-thumb">' + thumbInner + '</div>'
-        + '<div class="strip-card-body">'
-        +   '<div class="strip-card-title">' + esc(r.title) + '</div>'
-        +   '<div class="strip-card-meta">'
-        +     (r.category ? esc(r.category) : '')
-        +     (r.category && r.time ? ' · ' : '')
-        +     (r.time ? esc(r.time) : '')
+        + '<div class="strip-card-body" style="display:flex;align-items:flex-start;gap:0.3rem">'
+        +   '<div style="flex:1;min-width:0">'
+        +     '<div class="strip-card-title">' + esc(r.title) + '</div>'
+        +     '<div class="strip-card-meta">'
+        +       (r.category ? esc(r.category) : '')
+        +       (r.category && r.time ? ' · ' : '')
+        +       (r.time ? esc(r.time) : '')
+        +     '</div>'
         +   '</div>'
+        +   '<button class="strip-fav-btn' + (r.favourite ? ' fav-on' : '') + '" onclick="toggleFav(event,\'' + r.id + '\')" title="' + (r.favourite ? 'Remove from favourites' : 'Add to favourites') + '">' + (r.favourite ? '♥' : '♡') + '</button>'
         + '</div>'
         + '</div>';
     }
@@ -1010,7 +1113,7 @@
         return;
       }
 
-      var CAT_ORDER = ['Breakfast','Lunch','Dinner','Snack','Dessert','Drink','Other'];
+      var CAT_ORDER = ['Chicken','Beef','Lamb','Pork','Fish & Seafood','Vegetarian','Vegan','Pasta & Grains','Soups & Stews','Desserts & Bakes','Other'];
       var ROMAN = ['I','II','III','IV','V','VI','VII','VIII'];
       var grouped = {};
       var uncategorised = [];
@@ -1178,6 +1281,10 @@
       }
 
       document.getElementById('vm-desc').textContent = r.desc || '';
+      var nutEl = document.getElementById('vm-nutrition');
+      var nutHtml = nutGrid(r);
+      if (nutHtml) { nutEl.innerHTML = nutHtml; nutEl.style.display = ''; }
+      else nutEl.style.display = 'none';
       renderViewIngredients(1);
 
       var subsWrap = document.getElementById('vm-substitutes-wrap');
@@ -1347,13 +1454,57 @@
       if (r) openViewModal(r, false);
     };
 
+    // ── UNDO DELETE ───────────────────────────────────────────────────────
+    var _deletedRecipe = null;
+    var _deletedIndex = null;
+    var _undoTimer = null;
+    var _undoCountdown = null;
+
+    function showUndoToast() {
+      if (_undoTimer) clearTimeout(_undoTimer);
+      if (_undoCountdown) clearInterval(_undoCountdown);
+      var toast = document.getElementById('undo-toast');
+      var msg = document.getElementById('undo-msg');
+      toast.style.display = 'flex';
+      var secs = 60;
+      msg.textContent = '“' + esc(_deletedRecipe.title) + '” deleted — ' + secs + 's';
+      _undoCountdown = setInterval(function() {
+        secs--;
+        if (secs <= 0) { clearInterval(_undoCountdown); dismissUndo(); }
+        else msg.textContent = '“' + esc(_deletedRecipe ? _deletedRecipe.title : '') + '” deleted — ' + secs + 's';
+      }, 1000);
+      _undoTimer = setTimeout(dismissUndo, 60000);
+    }
+
+    window.undoDelete = function() {
+      if (!_deletedRecipe) return;
+      recipes.splice(_deletedIndex, 0, _deletedRecipe);
+      _deletedRecipe = null; _deletedIndex = null;
+      saveRecipes();
+      renderGrid();
+      renderSuggested();
+      dismissUndo();
+    };
+
+    window.dismissUndo = function() {
+      if (_undoTimer) { clearTimeout(_undoTimer); _undoTimer = null; }
+      if (_undoCountdown) { clearInterval(_undoCountdown); _undoCountdown = null; }
+      var toast = document.getElementById('undo-toast');
+      if (toast) toast.style.display = 'none';
+      _deletedRecipe = null; _deletedIndex = null;
+    };
+
     function deleteRecipe(id) {
-      if (!confirm('Delete this recipe?')) return;
-      recipes = recipes.filter(function(r) { return r.id !== id; });
+      var idx = recipes.findIndex(function(r) { return r.id === id; });
+      if (idx === -1) return;
+      _deletedRecipe = recipes[idx];
+      _deletedIndex = idx;
+      recipes.splice(idx, 1);
       saveRecipes();
       closeModal('view-modal');
       renderGrid();
       renderSuggested();
+      showUndoToast();
     }
 
     // ── FORM MODAL ────────────────────────────────────────────────────────
@@ -1374,6 +1525,10 @@
       document.getElementById('f-desc').value = r ? (r.desc || '') : '';
       document.getElementById('f-time').value = r ? (r.time || '') : '';
       document.getElementById('f-serves').value = r ? (r.serves || '') : '';
+      document.getElementById('f-calories').value = r && r.calories != null ? r.calories : '';
+      document.getElementById('f-protein').value  = r && r.protein  != null ? r.protein  : '';
+      document.getElementById('f-fibre').value    = r && r.fibre    != null ? r.fibre    : '';
+      document.getElementById('f-health').value   = r && r.healthScore != null ? r.healthScore : '';
 
       // Ingredients
       _ingCount = 0;
@@ -1535,7 +1690,11 @@
         ingredients: ings,
         instructions: steps,
         rating: _formRating,
-        image: _uploadedImage || null
+        image: _uploadedImage || null,
+        calories:    document.getElementById('f-calories').value ? parseInt(document.getElementById('f-calories').value) : null,
+        protein:     document.getElementById('f-protein').value  ? parseFloat(document.getElementById('f-protein').value)  : null,
+        fibre:       document.getElementById('f-fibre').value    ? parseFloat(document.getElementById('f-fibre').value)    : null,
+        healthScore: document.getElementById('f-health').value   ? parseInt(document.getElementById('f-health').value)   : null
       };
 
       if (_editingId) {
