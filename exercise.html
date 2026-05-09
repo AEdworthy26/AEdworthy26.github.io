@@ -103,13 +103,13 @@
 
     /* EXERCISE CARD */
     .exercise-list { display: flex; flex-direction: column; gap: .75rem; margin-bottom: 1rem; }
-    .muscle-group-hdr { font-size: .59rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,0.35); padding: .6rem 0 .25rem; border-bottom: 1px solid var(--dark-border); margin-bottom: .1rem; display: flex; align-items: center; justify-content: space-between; cursor: pointer; user-select: none; }
-    .muscle-group-hdr:hover { color: rgba(255,255,255,0.7); }
-    .mg-caret { font-size: .65rem; transition: transform .2s; display: inline-block; }
+    .muscle-group-hdr { font-size: 1rem; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; color: rgba(255,255,255,0.92); background: rgba(255,255,255,0.05); padding: .85rem 1rem .75rem; border-radius: 9px 9px 0 0; border-bottom: 2px solid rgba(255,255,255,0.12); margin-bottom: .5rem; display: flex; align-items: center; justify-content: space-between; cursor: pointer; user-select: none; transition: background .15s, color .15s; }
+    .muscle-group-hdr:hover { background: rgba(255,255,255,0.09); color: #fff; border-bottom-color: #60a5fa; }
+    .mg-caret { font-size: 1rem; transition: transform .2s; display: inline-block; }
     .muscle-group-hdr.collapsed .mg-caret { transform: rotate(-90deg); }
-    .mg-exercises { display: flex; flex-direction: column; gap: .75rem; margin-bottom: .5rem; }
+    .mg-exercises { display: flex; flex-direction: column; gap: .75rem; margin-bottom: 1rem; }
     .mg-exercises.collapsed { display: none; }
-    .exercise-card { background: var(--dark-card); border: 1px solid var(--dark-border); border-radius: var(--radius); padding: 1.1rem 1.2rem 1.1rem 1.5rem; box-shadow: var(--shadow-sm); display: flex; align-items: center; gap: .9rem; transition: box-shadow .15s, border-color .15s; position: relative; overflow: hidden; cursor: pointer; }
+    .exercise-card { background: var(--dark-card); border: 1px solid rgba(255,255,255,0.12); border-radius: var(--radius); padding: 1.1rem 1.2rem 1.1rem 1.5rem; box-shadow: var(--shadow-sm); display: flex; align-items: center; gap: .9rem; transition: box-shadow .15s, border-color .15s; position: relative; overflow: hidden; cursor: pointer; }
     .exercise-card:hover { border-color: #60a5fa; box-shadow: 0 4px 20px rgba(37,99,235,0.25); transform: translateY(-1px); }
     .cat-bar { position: absolute; left: 0; top: 0; bottom: 0; width: 4px; border-radius: var(--radius) 0 0 var(--radius); }
     .cat-bar-push { background: var(--push); }
