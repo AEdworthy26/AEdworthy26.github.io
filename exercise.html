@@ -268,6 +268,7 @@
     .pr-cat-pull { background: rgba(59,130,246,0.15); color: #93c5fd; }
     .pr-cat-legs { background: rgba(16,185,129,0.15); color: #6ee7b7; }
     .pr-cat-cardio { background: rgba(245,158,11,0.15); color: #fcd34d; }
+    .pr-cat-mixed { background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.6); }
     .streak-wrap { display: flex; align-items: center; justify-content: center; flex-direction: column; }
     .streak-ring { position: relative; width: 80px; height: 80px; }
     .streak-ring svg { transform: rotate(-90deg); }
@@ -630,6 +631,28 @@
       return d.toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' });
     }
 
+    function inferWorkoutType(log) {
+      var exNames = (log.exercises || []).map(function(e) { return (e.name || '').toLowerCase().trim(); });
+      var counts = { push: 0, pull: 0, legs: 0 };
+      ['push', 'pull', 'legs'].forEach(function(cat) {
+        (routines[cat] || []).forEach(function(ex) {
+          var rn = (ex.name || '').toLowerCase().trim();
+          if (rn && exNames.indexOf(rn) !== -1) counts[cat]++;
+        });
+      });
+      var total = counts.push + counts.pull + counts.legs;
+      if (!total) return (log.cardio || []).length ? ['cardio'] : null;
+      var max = Math.max(counts.push, counts.pull, counts.legs);
+      return ['push', 'pull', 'legs'].filter(function(c) { return counts[c] === max; });
+    }
+
+    function workoutTypeBadge(types) {
+      if (!types || !types.length) return '';
+      var label = types.map(function(t) { return CAT[t]; }).join(' + ') + ' day';
+      var cls = types.length === 1 ? 'pr-cat-badge pr-cat-' + types[0] : 'pr-cat-badge pr-cat-mixed';
+      return '<span class="' + cls + '" style="margin-right:.45rem;">' + label + '</span>';
+    }
+
     function actIcon(name) {
       var lc = (name || '').toLowerCase();
       for (var k in ICONS) { if (lc.indexOf(k) !== -1) return ICONS[k]; }
@@ -979,6 +1002,7 @@
           var exCount = (log.exercises || []).length;
           var cardioCount = (log.cardio || []).length;
           var actCount = (log.activities || []).length;
+          var wType = inferWorkoutType(log);
           var sumParts = [];
           if (exCount) sumParts.push(exCount + ' exercise' + (exCount !== 1 ? 's' : ''));
           if (cardioCount) sumParts.push(cardioCount + ' cardio');
@@ -1011,7 +1035,7 @@
             + '<div class="log-entry-hdr" onclick="toggleLog(\'' + log.id + '\')">'
             + '<div class="log-hdr-left">'
             + '<div class="log-date-str">' + fmtDate(log.date) + '</div>'
-            + (sumParts.length ? '<div class="log-summary">' + esc(sumParts.join(' · ')) + '</div>' : '')
+            + '<div class="log-summary">' + workoutTypeBadge(wType) + (sumParts.length ? esc(sumParts.join(' · ')) : '') + '</div>'
             + '</div>'
             + '<div class="log-hdr-right">'
             + '<button class="lb-edit-btn" onclick="event.stopPropagation();openEditLog(\'' + log.id + '\')">Edit</button>'
@@ -1163,12 +1187,11 @@
         var items = [];
         logs.forEach(function(l) {
           if (l.date >= w.monISO && l.date <= w.sunISO) {
-            var parts = [];
-            var exCount = (l.exercises || []).length;
-            var cardioCount = (l.cardio || []).length;
-            if (exCount) parts.push(exCount + ' exercise' + (exCount !== 1 ? 's' : ''));
-            if (cardioCount) parts.push(cardioCount + ' cardio');
-            items.push({ kind: 'workout', label: parts.length ? parts.join(', ') : 'Workout', date: l.date });
+            var wt = inferWorkoutType(l);
+            var label = wt && wt.length
+              ? wt.map(function(t) { return CAT[t]; }).join(' + ') + ' day'
+              : ((l.exercises || []).length ? 'Workout' : 'Cardio');
+            items.push({ kind: 'workout', wType: wt, label: label, date: l.date });
           }
         });
         activities.forEach(function(a) {
@@ -1269,9 +1292,20 @@
           } else {
             html += d.items.map(function(item) {
               var icon = item.kind === 'workout' ? '🏋️' : actIcon(item.name || item.label);
-              var col = item.kind === 'workout' ? '#60a5fa' : '#34d399';
-              var badge = '<span style="font-size:0.58rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:' + col + ';background:rgba(255,255,255,0.06);border-radius:4px;padding:1px 5px;margin-right:0.4rem;flex-shrink:0;">'
-                + (item.kind === 'workout' ? 'Workout' : 'Activity') + '</span>';
+              var catColors = { push: '#f87171', pull: '#93c5fd', legs: '#6ee7b7', cardio: '#fcd34d' };
+              var catBgs = { push: 'rgba(239,68,68,0.15)', pull: 'rgba(59,130,246,0.15)', legs: 'rgba(16,185,129,0.15)', cardio: 'rgba(245,158,11,0.15)' };
+              var col, bg;
+              if (item.kind === 'workout' && item.wType && item.wType.length === 1) {
+                col = catColors[item.wType[0]] || '#60a5fa';
+                bg = catBgs[item.wType[0]] || 'rgba(255,255,255,0.06)';
+              } else if (item.kind === 'workout') {
+                col = '#60a5fa'; bg = 'rgba(255,255,255,0.06)';
+              } else {
+                col = '#34d399'; bg = 'rgba(16,185,129,0.12)';
+              }
+              var badgeLabel = item.kind === 'activity' ? 'Activity' : (item.wType && item.wType.length ? item.wType.map(function(t){return CAT[t];}).join('+') : 'Workout');
+              var badge = '<span style="font-size:0.58rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:' + col + ';background:' + bg + ';border-radius:4px;padding:1px 5px;margin-right:0.4rem;flex-shrink:0;">'
+                + badgeLabel + '</span>';
               return '<div style="display:flex;align-items:baseline;gap:0.2rem;margin-top:0.3rem;">'
                 + '<span style="flex-shrink:0;margin-right:0.25rem;">' + icon + '</span>'
                 + badge
