@@ -1,19 +1,19 @@
 // reads-data.js
-// Auto-updated 2026-05-08 — do not edit manually
+// Auto-updated 2026-05-09 — do not edit manually
 
 var READS_DATA = {
-  date: "2026-05-08",
+  date: "2026-05-09",
   book: {
-    title: "The Master and Margarita",
-    author: "Mikhail Bulgakov",
-    year: 1967,
-    genres: ["Literary Fiction", "Satire", "Magical Realism"],
-    desc: "When the Devil — accompanied by a giant, chess-playing black cat and a retinue of mischievous demons — descends on Soviet Moscow, the city\'s bureaucrats, censors, and petty opportunists are exposed in a blaze of supernatural chaos. Woven through the mayhem is a second, achingly tender story: a novel-within-a-novel about Pontius Pilate and his encounter with Yeshua Ha-Nozri, and the forbidden love between a persecuted writer known only as the Master and the fierce, devoted Margarita. Bulgakov wrote it in secret across the Stalin years, knowing it could never be published in his lifetime, and that desperation lends the book a reckless, visionary energy impossible to fake. It is simultaneously a vicious political satire, a love story of operatic intensity, and a meditation on artistic integrity, cowardice, and what it costs a person to tell the truth.",
-    whyRead: "In an era when questions about power, propaganda, and the suppression of inconvenient reality feel urgently alive, Bulgakov\'s century-old masterpiece reads like it was finished yesterday — and it is, above all, outrageously fun.",
-    rating: 4.3,
+    title: "The Righteous Mind: Why Good People Are Divided by Politics and Religion",
+    author: "Jonathan Haidt",
+    year: 2012,
+    genres: ["Psychology", "Politics", "Philosophy"],
+    desc: "Moral psychologist Jonathan Haidt draws on decades of cross-cultural research to argue that human morality is far richer and more varied than the simple harm-and-fairness framework that dominates liberal thinking — it encompasses loyalty, authority, sanctity, and liberty as well, which explains why people who seem perfectly reasonable in daily life can hold political views that strike others as baffling or monstrous. Haidt introduces his 'moral foundations theory' with the memorable metaphor of the rider and the elephant: our rational minds are jockeys atop vast intuitive beasts, constructing post-hoc justifications for feelings that arrived a split second earlier. The book is bracingly honest in its willingness to challenge progressive assumptions as vigorously as conservative ones, making it genuinely uncomfortable reading for anyone across the political spectrum. By the end, Haidt\'s argument that we are each 'groupish' by nature — tribally wired to circle the wagons and demonise outsiders — feels less like a counsel of despair and more like a precise diagnosis that opens the door to genuine understanding.",
+    whyRead: "In a political moment that still feels defined by mutual incomprehension and hardening tribalism, Haidt\'s framework is one of the most useful lenses available for understanding why your opponents are not simply stupid or evil — and why you might not be entirely right either.",
+    rating: 4.1,
     ratingSource: "Goodreads",
-    ratingCount: "200,000+",
-    coverUrl: "https://covers.openlibrary.org/b/id/12947486-L.jpg",
-    amazonUrl: "https://www.amazon.co.uk/dp/6254054116"
+    ratingCount: "150,000+",
+    coverUrl: "https://covers.openlibrary.org/b/id/7256782-L.jpg",
+    amazonUrl: "https://www.amazon.co.uk/dp/9584277928"
   }
 };

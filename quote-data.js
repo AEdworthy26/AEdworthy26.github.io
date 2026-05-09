@@ -1,8 +1,8 @@
 // quote-data.js
-// Auto-updated 2026-05-08 — do not edit manually
+// Auto-updated 2026-05-09 — do not edit manually
 
 var QUOTE_DATA = {
-  date: "2026-05-08",
-  text: "The good life is one inspired by love and guided by knowledge.",
-  author: "Bertrand Russell"
+  date: "2026-05-09",
+  text: "The unexamined life is not worth living.",
+  author: "Socrates"
 };

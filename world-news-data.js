@@ -1,60 +1,60 @@
 // world-news-data.js
-// Auto-updated 2026-05-08 — do not edit manually
+// Auto-updated 2026-05-09 — do not edit manually
 
 var WORLD_NEWS = {
-  date: "2026-05-08",
+  date: "2026-05-09",
   main: {
-    title: "US and Iran Exchange Fire in Strait of Hormuz as Ceasefire Hangs by a Thread",
+    title: "US Strikes Iranian Oil Tankers as Tehran Accuses Washington of 'Reckless Military Adventure'",
     category: "Geopolitics",
     content: [
-      "A fragile ceasefire between the United States and Iran came under severe strain on Friday after both sides exchanged fire in the Strait of Hormuz, one of the world\'s most strategically critical waterways. President Donald Trump insisted the truce — in place since April 8 — remained intact, but the incidents marked the most dangerous escalation since the two nations agreed to pause hostilities. The exchange raised immediate fears of a return to open conflict that could have devastating consequences for global energy supplies and regional stability.",
-      "Iran moved quickly to accuse the United States of violating the terms of the ceasefire, alleging that American forces had targeted an Iranian oil tanker and carried out strikes against coastal areas. Washington, for its part, said it had attacked Iranian military targets in direct response to Iranian strikes on American naval vessels operating in the strait. The competing narratives highlighted the deep mistrust between the two governments even as diplomats from both sides were reportedly engaged in negotiations over a broader peace proposal.",
-      "The exchange of fire sent oil prices climbing sharply, reflecting the market\'s acute sensitivity to any disruption in the Hormuz strait, through which roughly a fifth of the world\'s oil supply passes. Traders and energy analysts warned that a full breakdown of the ceasefire could trigger a supply shock not seen since the early 1970s. Several Gulf states privately urged both Washington and Tehran to exercise maximum restraint and return immediately to the negotiating table.",
-      "Pakistan, which has been playing a quiet but significant mediating role between the United States and Iran, found itself drawn further into the crisis as its diplomatic efforts came under scrutiny. The peacemaking efforts have already strained Islamabad\'s ties with the United Arab Emirates, with Pakistani workers reportedly being expelled from the UAE in large numbers amid the diplomatic fallout. The situation underscored the complex web of regional allegiances that any durable peace settlement would need to navigate.",
-      "European NATO allies, already alarmed by Trump\'s decision to launch earlier strikes on Iran without consulting the alliance, watched Friday\'s developments with mounting anxiety. Senior officials in Berlin, Paris, and London have been pushing for a greater European role in managing the crisis, with some calling for an independent diplomatic channel to Tehran. The events in the Hormuz strait now lend fresh urgency to those efforts, as the prospect of an uncontrolled escalation in one of the world\'s most vital sea lanes threatens consequences that would extend far beyond the Middle East."
+      "The United States has carried out strikes on two Iranian oil tankers in the Strait of Hormuz, with the Pentagon releasing footage of the attacks as tensions between Washington and Tehran continue to escalate sharply. Iran\'s Foreign Minister Abbas Araghchi condemned the action in forceful terms, accusing the US of embarking on a 'reckless military adventure' that he argued was deliberately timed to sabotage diplomatic progress. Araghchi stated that each time a viable solution appears on the negotiating table, the US resorts to military strikes — a pattern he described as deeply destabilising to the entire region.",
+      "The Strait of Hormuz, one of the world\'s most strategically vital waterways through which a significant share of global oil supplies flow, has become a flashpoint in the escalating confrontation. Reports of clashes in the strait have compounded fears that the conflict could disrupt international energy markets and draw in additional regional actors. The strikes on the Iranian tankers mark a significant escalation in what has been a period of sustained military engagement between US forces and Iran.",
+      "Iran\'s position has been that the US attacks are not only militarily provocative but politically calculated, undermining Iranian moderates who have sought to engage in dialogue. Araghchi\'s remarks signal that Tehran views the strikes as a fundamental obstacle to any negotiated settlement, raising doubts about whether a diplomatic off-ramp remains viable in the near term. Meanwhile, Al Jazeera\'s live coverage of the conflict indicates that the US is still awaiting Tehran\'s formal reply to a proposed peace framework.",
+      "The broader regional picture has grown increasingly grim, with Israeli strikes killing at least 31 people in southern Lebanon — including a rescue worker — according to Lebanon\'s National News Agency. The simultaneity of these developments across multiple fronts has alarmed international observers and regional governments alike, who fear a wider conflagration if diplomatic channels remain blocked. The situation in the Strait of Hormuz is being watched particularly closely by Asian economies heavily dependent on Gulf oil exports.",
+      "The conflict has placed enormous pressure on international institutions and third-party mediators to intervene before the situation deteriorates further. With Iran accusing the US of bad faith and Washington framing its strikes as responses to Iranian provocations, the two sides appear locked in a cycle of action and recrimination that shows little sign of breaking. The coming days — and whether Tehran ultimately responds to the proposed peace deal — are likely to determine whether a diplomatic resolution remains possible or whether the region is entering a prolonged period of open conflict."
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/ceca/live/514c94a0-4a6d-11f1-9270-375e80dbfe3c.jpg",
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/9c78/live/9157bc30-4add-11f1-9eb0-1940b1e77213.jpg",
     source: "BBC News",
-    sourceUrl: "https://www.bbc.com/news/articles/c626zyywxjno?at_medium=RSS&at_campaign=rss"
+    sourceUrl: "https://www.bbc.com/news/articles/c99lpn9ze8ro?at_medium=RSS&at_campaign=rss"
   },
   secondary: [
     {
       id: "s1",
-      title: "Europe Steps Up as NATO Leadership Vacuum Deepens",
-      summary: "European nations are moving to assert greater leadership within NATO after the US sidelined the alliance in its military campaign against Iran.",
+      title: "Trump Announces Three-Day Russia-Ukraine Ceasefire Amid Victory Day Tensions",
+      summary: "President Trump says Russia and Ukraine have agreed to a three-day ceasefire, even as both sides accuse each other of violating earlier truces around Victory Day commemorations.",
       body: [
-        "Trump\'s decision to launch strikes on Iran without informing NATO allies in advance has inflamed tensions within the alliance and accelerated calls for Europe to take a more independent defence posture. Senior officials in Germany and France have signalled a willingness to take on greater strategic responsibilities, including direct diplomatic engagement with Tehran.",
-        "The episode has given new momentum to longstanding European debates about reducing reliance on American military leadership, debates that have grown considerably more urgent since Trump returned to the White House. Analysts say the Iran crisis may prove to be a turning point in the transatlantic relationship, fundamentally reshaping how the alliance operates."
+        "President Trump announced that Russia and Ukraine have agreed to observe a three-day ceasefire, a claim confirmed by Ukrainian President Volodymyr Zelenskyy and Kremlin foreign affairs adviser Yuri Ushakov. The agreement also includes a prisoner exchange, offering a rare moment of potential de-escalation in a conflict that has ground on for years. However, the announcement came amid mutual accusations that each side had already violated separate ceasefires declared around Russia\'s Victory Day — the commemoration of the Soviet Union\'s defeat of Nazi Germany in World War Two.",
+        "Victory Day celebrations in Moscow were notably muted this year, overshadowed by fears of Ukrainian drone attacks and a war-weary Russian public. The timing of any ceasefire around the symbolic holiday carries significant political weight for the Kremlin, making its durability deeply uncertain. International observers will be watching closely to see whether this fragile pause holds or follows the pattern of previous short-lived truces."
       ],
-      image: "https://images.unsplash.com/photo-1647006875983-1874b7aa7356?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxFdXJvcGUlMjBTdGVwcyUyMFVwJTIwYXMlMjBOQVRPJTIwTGVhZGVyc2hpcCUyMFZhY3V1bSUyMERlZXBlbnN8ZW58MHwwfHx8MTc3ODIzNjI0MXww&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "NPR",
-      url: "https://www.npr.org/2026/05/08/nx-s1-5810515/us-war-trump-nato-iran-europe-canada-germany",
-      category: "Geopolitics"
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/2140/live/997dd690-4ad0-11f1-ac78-2112837ce2aa.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.com/news/articles/c202zn5gg0lo?at_medium=RSS&at_campaign=rss",
+      category: "Conflict"
     },
     {
       id: "s2",
-      title: "Anti-War Protests Rock Japan as PM Pushes Defence Expansion",
-      summary: "Japan has seen its largest anti-war demonstrations in decades as Prime Minister Ishiba presses ahead with plans to strengthen the country\'s military capabilities.",
+      title: "China Accused of Pressuring Zambia to Cancel Major Human Rights Conference",
+      summary: "Organisers of RightsCon, the world\'s largest digital rights conference, say Chinese diplomatic pressure led Zambia to abruptly cancel its hosting of the event.",
       body: [
-        "Tens of thousands of protesters took to the streets across Japan this week in what observers described as the most significant public pushback against the country\'s defence policy in a generation. The demonstrations were sparked by Prime Minister Ishiba\'s push to revise Japan\'s pacifist constitution and dramatically increase military spending amid growing regional tensions.",
-        "The protests reflect a deep generational and ideological divide in Japanese society between those who see expanded defence as a necessary response to threats from China and North Korea, and those who regard the pacifist constitution as a foundational national value hard-won after the devastation of World War Two. The political debate is set to intensify as parliamentary votes on the constitutional question approach."
+        "Zambia was set to host RightsCon, the world\'s biggest digital rights and internet freedom gathering, this week, but organisers say the event was abruptly cancelled following intervention by China. Organisers allege that Beijing pressured Zambian authorities to pull the plug on the conference, which regularly brings together activists, technologists, and policymakers to discuss censorship, surveillance, and online freedoms. The cancellation has been condemned by civil society groups as a chilling example of authoritarian influence extending beyond national borders.",
+        "The incident highlights growing concerns about China\'s use of economic leverage — particularly in African nations where Beijing has made substantial infrastructure investments — to curtail discussions it considers politically sensitive. Zambia has significant financial ties to China through Belt and Road Initiative loans, giving Beijing a degree of influence over Lusaka\'s decision-making. The episode has reignited debate about the conditions attached to Chinese development finance and the long-term implications for host nations' sovereignty and civil freedoms."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/c835/live/c4771c70-4914-11f1-b60d-11e8305a3b87.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/c4g93v8jqnyo?at_medium=RSS&at_campaign=rss",
-      category: "Politics"
+      image: "https://images.pexels.com/photos/6050473/pexels-photo-6050473.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      source: "NPR",
+      url: "https://www.npr.org/2026/05/08/nx-s1-5809455/organizers-of-a-canceled-human-rights-conference-in-zambia-say-china-intervened",
+      category: "International"
     },
     {
       id: "s3",
-      title: "Russia Stages Scaled-Back Victory Day Parade as Ukraine War Grinds On",
-      summary: "Russia\'s annual Victory Day parade will be notably smaller this year, as the continuing war in Ukraine depletes military resources and personnel.",
+      title: "Cambodia-Thailand Border Ceasefire Holds Uneasily as Displaced Families Fear Fresh Fighting",
+      summary: "Cambodians displaced by recent border clashes with Thailand are struggling to rebuild their lives under a tense and fragile ceasefire, with education and basic services severely disrupted.",
       body: [
-        "Moscow\'s Red Square parade marking the Soviet Union\'s victory over Nazi Germany in 1945 will proceed on Friday but with a reduced display of military hardware and fewer troops than in recent years, a reflection of the toll the war in Ukraine has taken on Russian forces and equipment. The Kremlin has sought to maintain the parade as a symbol of national strength even as the conflict enters its fifth year.",
-        "The scaled-back ceremony stands in stark contrast to the grandiose spectacles Vladimir Putin staged in the years before the full-scale invasion of Ukraine, when the parade served as a showcase for Russia\'s military modernisation. Critics and Western officials noted the irony of a diminished Victory Day display at a time when the Kremlin continues to frame its war in Ukraine in the language of anti-fascist struggle."
+        "Families displaced by fighting along the Cambodia-Thailand border say they remain fearful of renewed conflict despite a ceasefire between the two nations, with daily life in affected communities thrown into disarray. Education has been among the hardest-hit areas, with schools closed and children unable to access learning amid the ongoing instability. The border dispute has drawn international attention to long-standing territorial tensions between the two Southeast Asian neighbours.",
+        "The ceasefire, while holding for now, is described by those living near the frontier as deeply fragile, with little confidence that it will lead to a lasting political settlement. Aid organisations have raised concerns about the humanitarian situation for displaced communities, many of whom have lost homes, livelihoods, and access to basic services. Regional bodies including ASEAN face pressure to step in and facilitate a durable diplomatic resolution before conditions worsen further."
       ],
-      image: "https://images.unsplash.com/photo-1746828361027-cf87951b0816?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxSdXNzaWElMjBTdGFnZXMlMjBTY2FsZWQtQmFjayUyMFZpY3RvcnklMjBEYXklMjBQYXJhZGUlMjBhcyUyMFVrcmFpbmUlMjBXYXIlMjBHcmluZHMlMjBPbnxlbnwwfDB8fHwxNzc4MjM2MjQxfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "NPR",
-      url: "https://www.npr.org/2026/05/08/nx-s1-5810926/as-war-on-ukraine-continues-russia-prepares-for-smaller-victory-day-parade",
+      image: "https://images.unsplash.com/photo-1720655258275-4d1aaa6c9c01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxDYW1ib2RpYS1UaGFpbGFuZCUyMEJvcmRlciUyMENlYXNlZmlyZSUyMEhvbGRzJTIwVW5lYXNpbHklMjBhcyUyMERpc3BsYWNlZCUyMEZhbWlsaWVzJTIwRmVhciUyMEZyZXNoJTIwRmlnaHRpbmd8ZW58MHwwfHx8MTc3ODMwMjg4OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "Al Jazeera",
+      url: "https://www.aljazeera.com/news/2026/5/9/cambodians-struggle-with-displaced-lives-amid-tense-ceasefire-with-thailand?traffic_source=rss",
       category: "Conflict"
     }
   ]
