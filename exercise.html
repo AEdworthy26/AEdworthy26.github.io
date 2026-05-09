@@ -1212,8 +1212,9 @@
         return isTime ? String(h.value) : (parseFloat(h.value) + unit);
       };
       var listHTML = history.slice().reverse().map(function (h) {
+        var dateLabel = h.date || 'Previous best';
         return '<div style="display:flex;justify-content:space-between;align-items:center;padding:.48rem 0;border-bottom:1px solid rgba(255,255,255,0.06);font-size:.82rem">'
-          + '<span style="color:rgba(255,255,255,0.5)">' + esc(h.date) + '</span>'
+          + '<span style="color:rgba(255,255,255,0.5)">' + esc(dateLabel) + '</span>'
           + '<span style="font-weight:700;color:#fcd34d">' + esc(fmt(h)) + '</span>'
           + '</div>';
       }).join('');
@@ -1874,7 +1875,8 @@
       var cardio = logCardioRows.filter(function (r) { return r.name.trim(); });
       var acts = logActRows.filter(function (r) { return r.name.trim(); });
       if (!exs.length && !cardio.length && !acts.length) { showToast('Add at least one exercise or activity'); return; }
-      logs.push({ id: uid(), date: date, exercises: exs, cardio: cardio, activities: acts, notes: notes.trim() });
+      var logId = uid();
+      logs.push({ id: logId, date: date, exercises: exs, cardio: cardio, activities: acts, notes: notes.trim() });
 
       // Auto-detect new PRs from logged weights
       var prsHit = [];
@@ -1890,9 +1892,13 @@
         if (!found || found.wt === 'time' || found.isBodyweight) return;
         var current = parseFloat(found.pr) || 0;
         if (w > current) {
-          found.pr = w;
           if (!Array.isArray(found.prHistory)) found.prHistory = [];
-          found.prHistory.push({ date: date, value: w });
+          // Preserve any existing manual PR as a baseline entry before overwriting
+          if (current > 0 && !found.prHistory.some(function (h) { return !h.logId; })) {
+            found.prHistory.unshift({ date: null, value: current, logId: null });
+          }
+          found.pr = w;
+          found.prHistory.push({ date: date, value: w, logId: logId });
           prsHit.push(found.name + ' ' + w + 'kg');
         }
       });
@@ -1919,7 +1925,30 @@
     };
 
     window.delLog = function (id) {
+      var log = findItem(logs, function (l) { return l.id === id; });
       logs = logs.filter(function (l) { return l.id !== id; });
+
+      // Roll back any PRs that were set by this log
+      if (log) {
+        (log.exercises || []).forEach(function (r) {
+          var name = (r.name || '').toLowerCase().trim();
+          if (!name) return;
+          ['push', 'pull', 'legs'].forEach(function (cat) {
+            (routines[cat] || []).forEach(function (ex) {
+              if ((ex.name || '').toLowerCase().trim() !== name) return;
+              if (!Array.isArray(ex.prHistory)) return;
+              ex.prHistory = ex.prHistory.filter(function (h) { return h.logId !== id; });
+              if (ex.prHistory.length > 0) {
+                var vals = ex.prHistory.map(function (h) { return parseFloat(h.value) || 0; });
+                ex.pr = Math.max.apply(null, vals);
+              } else {
+                ex.pr = null;
+              }
+            });
+          });
+        });
+      }
+
       save();
       renderLogbook();
     };
