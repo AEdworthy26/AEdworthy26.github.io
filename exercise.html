@@ -235,6 +235,11 @@
     .lb-footer { display: flex; justify-content: flex-end; padding-top: .85rem; margin-top: .85rem; border-top: 1px solid var(--dark-border); }
     .lb-del-btn { background: none; border: 1px solid rgba(239,68,68,0.3); border-radius: 6px; padding: .3rem .85rem; font-size: .72rem; font-weight: 600; color: #f87171; transition: all .12s; }
     .lb-del-btn:hover { background: rgba(239,68,68,0.1); }
+    .lb-act-hdr { background: linear-gradient(135deg, #131f18 0%, #1a2e24 100%); }
+    .log-entry-hdr.lb-act-hdr:hover { background: linear-gradient(135deg, #1a2a20 0%, #223d2e 100%); }
+    .lb-act-badge { font-size: .57rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: .17rem .48rem; border-radius: 5px; background: rgba(16,185,129,0.2); color: #34d399; border: 1px solid rgba(16,185,129,0.3); display: inline-block; vertical-align: middle; }
+    .lb-act-del-btn { background: none; border: none; color: rgba(255,255,255,0.3); font-size: 1.05rem; line-height: 1; padding: 0 .28rem; transition: color .12s; flex-shrink: 0; }
+    .lb-act-del-btn:hover { color: #f87171; }
 
     /* STATS */
     .stats-row { display: grid; grid-template-columns: repeat(4,1fr); gap: 1.1rem; margin-bottom: 2rem; }
@@ -944,66 +949,108 @@
     function renderLogbook() {
       var el = document.getElementById('logbook-list');
       if (!el) return;
-      var sorted = logs.slice().sort(function (a, b) { return a.date < b.date ? 1 : -1; });
-      if (!sorted.length) {
-        el.innerHTML = '<div class="empty-state"><span class="empty-icon">📓</span>No workouts logged yet. Use the Log Workout tab to get started.</div>';
+
+      // Merge workout logs and standalone activities into one chronological list
+      var combined = [];
+      (logs || []).forEach(function(log) { combined.push({ kind: 'workout', date: log.date, data: log }); });
+      (activities || []).forEach(function(act) { combined.push({ kind: 'activity', date: act.date, data: act }); });
+      combined.sort(function(a, b) { return a.date < b.date ? 1 : -1; });
+
+      if (!combined.length) {
+        el.innerHTML = '<div class="empty-state"><span class="empty-icon">📓</span>No entries yet. Log a workout or an activity to get started.</div>';
         return;
       }
-      el.innerHTML = sorted.map(function (log) {
-        var exCount = (log.exercises || []).length;
-        var cardioCount = (log.cardio || []).length;
-        var actCount = (log.activities || []).length;
-        var sumParts = [];
-        if (exCount) sumParts.push(exCount + ' exercise' + (exCount !== 1 ? 's' : ''));
-        if (cardioCount) sumParts.push(cardioCount + ' cardio');
-        if (actCount) sumParts.push(actCount + ' activit' + (actCount !== 1 ? 'ies' : 'y'));
 
-        var exRows = (log.exercises || []).map(function (e) {
-          return '<tr><td>' + esc(e.name || '—') + '</td>'
-            + '<td>' + esc(e.sets || '—') + '</td>'
-            + '<td>' + esc(e.weight || '—') + '</td>'
-            + '<td>' + esc(e.reps || '—') + '</td></tr>';
-        }).join('');
+      el.innerHTML = combined.map(function(entry) {
+        if (entry.kind === 'workout') {
+          var log = entry.data;
+          var exCount = (log.exercises || []).length;
+          var cardioCount = (log.cardio || []).length;
+          var actCount = (log.activities || []).length;
+          var sumParts = [];
+          if (exCount) sumParts.push(exCount + ' exercise' + (exCount !== 1 ? 's' : ''));
+          if (cardioCount) sumParts.push(cardioCount + ' cardio');
+          if (actCount) sumParts.push(actCount + ' activit' + (actCount !== 1 ? 'ies' : 'y'));
 
-        var cardioRows = (log.cardio || []).map(function (c) {
-          var dist = c.distance ? c.distance + ' ' + (c.distUnit || 'km') : '—';
-          return '<tr><td>' + esc(c.name || '—') + '</td>'
-            + '<td>' + esc(c.time || '—') + '</td>'
-            + '<td>' + esc(dist) + '</td></tr>';
-        }).join('');
+          var exRows = (log.exercises || []).map(function(e) {
+            return '<tr><td>' + esc(e.name || '—') + '</td>'
+              + '<td>' + esc(e.sets || '—') + '</td>'
+              + '<td>' + esc(e.weight || '—') + '</td>'
+              + '<td>' + esc(e.reps || '—') + '</td></tr>';
+          }).join('');
 
-        var actRows = (log.activities || []).map(function (a) {
-          return '<div class="lb-act-row">'
-            + '<span style="font-size:1.15rem;flex-shrink:0">' + actIcon(a.name) + '</span>'
-            + '<span style="font-weight:600;flex:1">' + esc(a.name) + '</span>'
-            + '<span style="color:rgba(255,255,255,0.45)">' + esc(a.duration) + ' ' + esc(a.unit) + '</span>'
-            + (a.notes ? '<span style="color:rgba(255,255,255,0.3);font-size:.74rem;white-space:nowrap">' + esc(a.notes) + '</span>' : '')
+          var cardioRows = (log.cardio || []).map(function(c) {
+            var dist = c.distance ? c.distance + ' ' + (c.distUnit || 'km') : '—';
+            return '<tr><td>' + esc(c.name || '—') + '</td>'
+              + '<td>' + esc(c.time || '—') + '</td>'
+              + '<td>' + esc(dist) + '</td></tr>';
+          }).join('');
+
+          var actRows = (log.activities || []).map(function(a) {
+            return '<div class="lb-act-row">'
+              + '<span style="font-size:1.15rem;flex-shrink:0">' + actIcon(a.name) + '</span>'
+              + '<span style="font-weight:600;flex:1">' + esc(a.name) + '</span>'
+              + '<span style="color:rgba(255,255,255,0.45)">' + esc(a.duration) + ' ' + esc(a.unit) + '</span>'
+              + (a.notes ? '<span style="color:rgba(255,255,255,0.3);font-size:.74rem;white-space:nowrap">' + esc(a.notes) + '</span>' : '')
+              + '</div>';
+          }).join('');
+
+          return '<div class="log-entry" id="le-' + log.id + '">'
+            + '<div class="log-entry-hdr" onclick="toggleLog(\'' + log.id + '\')">'
+            + '<div class="log-hdr-left">'
+            + '<div class="log-date-str">' + fmtDate(log.date) + '</div>'
+            + (sumParts.length ? '<div class="log-summary">' + esc(sumParts.join(' · ')) + '</div>' : '')
+            + '</div>'
+            + '<div class="log-hdr-right">'
+            + '<button class="lb-edit-btn" onclick="event.stopPropagation();openEditLog(\'' + log.id + '\')">Edit</button>'
+            + '<span class="log-caret">▾</span>'
+            + '</div>'
+            + '</div>'
+            + '<div class="log-entry-body">'
+            + (exRows ? '<div class="log-section-lbl">Exercises</div>'
+              + '<table class="lb-ex-table"><thead><tr><th>Exercise</th><th>Sets</th><th>Weight</th><th>Reps</th></tr></thead><tbody>' + exRows + '</tbody></table>' : '')
+            + (cardioRows ? '<div class="log-section-lbl">Cardio</div>'
+              + '<table class="lb-ex-table"><thead><tr><th>Activity</th><th>Time</th><th>Distance</th></tr></thead><tbody>' + cardioRows + '</tbody></table>' : '')
+            + (actRows ? '<div class="log-section-lbl">Activities</div><div>' + actRows + '</div>' : '')
+            + (log.notes ? '<div class="log-section-lbl">Notes</div><div class="lb-notes-block">' + esc(log.notes) + '</div>' : '')
+            + '<div class="lb-footer">'
+            + '<button class="lb-del-btn" onclick="delLog(\'' + log.id + '\')">Delete entry</button>'
+            + '</div></div></div>';
+
+        } else {
+          // Standalone activity entry
+          var act = entry.data;
+          var hasNotes = !!act.notes;
+          return '<div class="log-entry" id="le-act-' + act.id + '">'
+            + '<div class="log-entry-hdr lb-act-hdr"'
+            + (hasNotes ? ' onclick="toggleLog(\'act-' + act.id + '\')" style="cursor:pointer"' : '')
+            + '>'
+            + '<div class="log-hdr-left" style="display:flex;align-items:center;gap:.65rem">'
+            + '<span style="font-size:1.3rem;flex-shrink:0">' + actIcon(act.name) + '</span>'
+            + '<div>'
+            + '<div class="log-date-str">' + fmtDate(act.date) + '&ensp;<span class="lb-act-badge">Activity</span></div>'
+            + '<div class="log-summary">' + esc(act.name) + ' · ' + esc(act.duration) + ' ' + esc(act.unit) + '</div>'
+            + '</div>'
+            + '</div>'
+            + '<div class="log-hdr-right">'
+            + '<button class="lb-act-del-btn" onclick="event.stopPropagation();delActivityFromLogbook(\'' + act.id + '\')" title="Delete">✕</button>'
+            + (hasNotes ? '<span class="log-caret">▾</span>' : '')
+            + '</div>'
+            + '</div>'
+            + (hasNotes
+              ? '<div class="log-entry-body"><div class="lb-notes-block">' + esc(act.notes) + '</div></div>'
+              : '')
             + '</div>';
-        }).join('');
-
-        return '<div class="log-entry" id="le-' + log.id + '">'
-          + '<div class="log-entry-hdr" onclick="toggleLog(\'' + log.id + '\')">'
-          + '<div class="log-hdr-left">'
-          + '<div class="log-date-str">' + fmtDate(log.date) + '</div>'
-          + (sumParts.length ? '<div class="log-summary">' + esc(sumParts.join(' · ')) + '</div>' : '')
-          + '</div>'
-          + '<div class="log-hdr-right">'
-          + '<button class="lb-edit-btn" onclick="event.stopPropagation();openEditLog(\'' + log.id + '\')">Edit</button>'
-          + '<span class="log-caret">▾</span>'
-          + '</div>'
-          + '</div>'
-          + '<div class="log-entry-body">'
-          + (exRows ? '<div class="log-section-lbl">Exercises</div>'
-            + '<table class="lb-ex-table"><thead><tr><th>Exercise</th><th>Sets</th><th>Weight</th><th>Reps</th></tr></thead><tbody>' + exRows + '</tbody></table>' : '')
-          + (cardioRows ? '<div class="log-section-lbl">Cardio</div>'
-            + '<table class="lb-ex-table"><thead><tr><th>Activity</th><th>Time</th><th>Distance</th></tr></thead><tbody>' + cardioRows + '</tbody></table>' : '')
-          + (actRows ? '<div class="log-section-lbl">Activities</div><div>' + actRows + '</div>' : '')
-          + (log.notes ? '<div class="log-section-lbl">Notes</div><div class="lb-notes-block">' + esc(log.notes) + '</div>' : '')
-          + '<div class="lb-footer">'
-          + '<button class="lb-del-btn" onclick="delLog(\'' + log.id + '\')">Delete entry</button>'
-          + '</div></div></div>';
+        }
       }).join('');
     }
+
+    window.delActivityFromLogbook = function(id) {
+      activities = activities.filter(function(a) { return a.id !== id; });
+      save();
+      renderActivities();
+      renderLogbook();
+    };
 
     /* ── Stats ──────────────────────────────────────── */
     function renderStats() {
@@ -1452,6 +1499,7 @@
       document.getElementById('act-notes').value = '';
       if (dateEl) dateEl.value = todayISO();
       renderActivities();
+      renderLogbook();
       showToast('Activity logged!');
     };
 
@@ -1459,6 +1507,7 @@
       activities = activities.filter(function (a) { return a.id !== id; });
       save();
       renderActivities();
+      renderLogbook();
     };
 
     /* ── Log Workout ────────────────────────────────── */
