@@ -46,8 +46,7 @@
       '.sm-source{font-size:0.6rem;letter-spacing:0.1em;text-transform:uppercase;color:#94a3b8;}',
       '.sm-read-btn{display:inline-flex;align-items:center;gap:0.35rem;font-size:0.7rem;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;color:#fff;background:var(--blue,#003399);padding:0.45rem 1rem;border-radius:8px;text-decoration:none;transition:opacity .15s;}',
       '.sm-read-btn:hover{opacity:0.85;text-decoration:none;}',
-      '.card-summary-btn{display:inline-flex;align-items:center;gap:0.3rem;font-size:0.65rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--blue,#003399);background:none;border:none;padding:0;cursor:pointer;font-family:inherit;transition:color .15s;}',
-      '.card-summary-btn:hover{text-decoration:underline;}'
+      ''
     ].join('');
     document.head.appendChild(style);
 
@@ -242,7 +241,7 @@
             ? '<a href="' + esc(item.url) + '" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;" class="card-title-link"><h3 class="card-title">' + esc(item.title) + '</h3></a>'
             : '<h3 class="card-title">' + esc(item.title) + '</h3>');
         var footerAction = hasBody
-          ? '<button class="card-summary-btn" onclick="window._openStoryModal(window._newsItems[' + i + '])">Read summary &#9658;</button>'
+          ? ''
           : (item.url ? '<a class="card-read-more" href="' + esc(item.url) + '" target="_blank" rel="noopener">Read more &rarr;</a>' : '');
         return '<article class="news-card" style="animation-delay:' + (i * 120) + 'ms">'
           + '<div class="card-thumb">' + thumbHTML + '</div>'
