@@ -277,7 +277,7 @@
     .pr-cat-hdr-cardio { background: rgba(245,158,11,0.14); color: #fcd34d; border-left-color: #f59e0b; }
     .pr-hdr-count { margin-left: auto; font-size: .62rem; opacity: .65; font-weight: 700; margin-right: .4rem; }
     .pr-card-grid { display: grid; grid-template-columns: repeat(auto-fill,minmax(120px,1fr)); gap: .7rem; }
-    .pr-card { background: var(--dark-card2); border: 1px solid var(--dark-border); border-radius: 12px; padding: 1rem .8rem .85rem; text-align: center; transition: transform .12s, box-shadow .12s; }
+    .pr-card { background: var(--dark-card2); border: 1px solid var(--dark-border); border-radius: 12px; padding: 1rem .8rem .85rem; text-align: center; transition: transform .12s, box-shadow .12s; cursor: pointer; }
     .pr-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,.35); }
     .pr-card-trophy { font-size: 1.3rem; display: block; margin-bottom: .25rem; }
     .pr-card-val { font-family: 'Inter', sans-serif; font-weight: 800; font-size: 1.35rem; color: #fcd34d; line-height: 1.1; margin-bottom: .4rem; }
@@ -1154,10 +1154,12 @@
             + '</div>'
             + '<div class="pr-card-grid">';
           exes.forEach(function (ex) {
-            html += '<div class="pr-card">'
+            var histLen = Array.isArray(ex.prHistory) ? ex.prHistory.length : 0;
+            html += '<div class="pr-card" onclick="window.openPrHistory(\'' + esc(cat) + '\',\'' + esc(ex.id) + '\')" title="Click to see PR history">'
               + '<span class="pr-card-trophy">🏆</span>'
               + '<div class="pr-card-val">' + esc(prStr(ex)) + '</div>'
               + '<div class="pr-card-name">' + esc(ex.name) + '</div>'
+              + (histLen ? '<div style="font-size:.58rem;color:rgba(255,255,255,0.3);margin-top:.3rem">' + histLen + ' logged</div>' : '')
               + '</div>';
           });
           html += '</div></div>';
@@ -1170,6 +1172,71 @@
       var el = document.getElementById(id);
       if (el) el.textContent = val;
     }
+
+    /* ── PR History modal ───────────────────────────── */
+    window.openPrHistory = function (cat, id) {
+      var ex = findItem(routines[cat] || [], function (e) { return e.id === id; });
+      if (!ex) return;
+      var isTime = ex.prType === 'time';
+      var unit = ex.isBodyweight ? ' reps' : 'kg';
+      var history = Array.isArray(ex.prHistory) ? ex.prHistory : [];
+
+      // SVG sparkline (numeric PRs only, 2+ points)
+      var svgHTML = '';
+      if (history.length >= 2 && !isTime) {
+        var vals = history.map(function (h) { return parseFloat(h.value) || 0; });
+        var minV = Math.min.apply(null, vals);
+        var maxV = Math.max.apply(null, vals);
+        var W = 360, H = 90, px = 18, py = 14;
+        var yRange = maxV - minV || 1;
+        var xStep = (W - px * 2) / (vals.length - 1);
+        var pts = vals.map(function (v, i) {
+          var x = px + i * xStep;
+          var y = H - py - ((v - minV) / yRange) * (H - py * 2);
+          return x.toFixed(1) + ',' + y.toFixed(1);
+        }).join(' ');
+        svgHTML = '<svg viewBox="0 0 ' + W + ' ' + H + '" style="width:100%;height:80px;display:block;margin:.8rem 0 .2rem">'
+          + '<polyline points="' + pts + '" fill="none" stroke="#fcd34d" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>';
+        vals.forEach(function (v, i) {
+          var x = px + i * xStep;
+          var y = H - py - ((v - minV) / yRange) * (H - py * 2);
+          svgHTML += '<circle cx="' + x.toFixed(1) + '" cy="' + y.toFixed(1) + '" r="4" fill="#fcd34d" stroke="#1e293b" stroke-width="1.5"/>';
+        });
+        // Y axis labels
+        svgHTML += '<text x="2" y="' + py + '" fill="rgba(255,255,255,0.3)" font-size="9" font-family="Inter,sans-serif">' + maxV + '</text>';
+        svgHTML += '<text x="2" y="' + (H - 4) + '" fill="rgba(255,255,255,0.3)" font-size="9" font-family="Inter,sans-serif">' + minV + '</text>';
+        svgHTML += '</svg>';
+      }
+
+      var fmt = function (h) {
+        return isTime ? String(h.value) : (parseFloat(h.value) + unit);
+      };
+      var listHTML = history.slice().reverse().map(function (h) {
+        return '<div style="display:flex;justify-content:space-between;align-items:center;padding:.48rem 0;border-bottom:1px solid rgba(255,255,255,0.06);font-size:.82rem">'
+          + '<span style="color:rgba(255,255,255,0.5)">' + esc(h.date) + '</span>'
+          + '<span style="font-weight:700;color:#fcd34d">' + esc(fmt(h)) + '</span>'
+          + '</div>';
+      }).join('');
+      if (!listHTML) {
+        listHTML = '<div style="color:rgba(255,255,255,0.3);font-style:italic;padding:.9rem 0;text-align:center;font-size:.82rem">No history yet — log a workout to record progress</div>';
+      }
+
+      var modalBody = document.getElementById('edit-modal-body');
+      var overlay = document.getElementById('edit-modal');
+      if (!modalBody || !overlay) return;
+      modalBody.innerHTML =
+        '<div class="modal-hdr"><h2 class="modal-title">🏆 ' + esc(ex.name) + '</h2></div>'
+        + '<div class="modal-body-pad">'
+        + '<div style="text-align:center;margin-bottom:.6rem">'
+        +   '<div style="font-size:2.2rem;font-weight:800;color:#fcd34d;line-height:1">' + esc(prStr(ex)) + '</div>'
+        +   '<div style="font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-top:.35rem">Current PR</div>'
+        + '</div>'
+        + svgHTML
+        + (history.length ? '<div style="font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:.3rem;margin-top:.6rem">History</div>' + listHTML : listHTML)
+        + '<button class="btn-secondary" style="width:100%;margin-top:1.2rem" onclick="closeModal()">Close</button>'
+        + '</div>';
+      overlay.classList.add('open');
+    };
 
     /* ── Weekly Chart ───────────────────────────────── */
     function renderWeeklyChart() {
@@ -1808,6 +1875,28 @@
       var acts = logActRows.filter(function (r) { return r.name.trim(); });
       if (!exs.length && !cardio.length && !acts.length) { showToast('Add at least one exercise or activity'); return; }
       logs.push({ id: uid(), date: date, exercises: exs, cardio: cardio, activities: acts, notes: notes.trim() });
+
+      // Auto-detect new PRs from logged weights
+      var prsHit = [];
+      exs.forEach(function (r) {
+        var w = parseFloat(r.weight);
+        if (!w || isNaN(w)) return;
+        var found = null;
+        ['push', 'pull', 'legs'].forEach(function (cat) {
+          (routines[cat] || []).forEach(function (ex) {
+            if ((ex.name || '').toLowerCase().trim() === (r.name || '').toLowerCase().trim()) found = ex;
+          });
+        });
+        if (!found || found.wt === 'time' || found.isBodyweight) return;
+        var current = parseFloat(found.pr) || 0;
+        if (w > current) {
+          found.pr = w;
+          if (!Array.isArray(found.prHistory)) found.prHistory = [];
+          found.prHistory.push({ date: date, value: w });
+          prsHit.push(found.name + ' ' + w + 'kg');
+        }
+      });
+
       save();
       logExRows = [];
       logCardioRows = [];
@@ -1816,7 +1905,11 @@
       renderLogCardioRows();
       renderLogActRows();
       document.getElementById('log-notes').value = '';
-      showToast('Workout saved! 💪');
+      if (prsHit.length) {
+        showToast('🏆 New PR' + (prsHit.length > 1 ? 's' : '') + '! ' + prsHit.join(', '));
+      } else {
+        showToast('Workout saved! 💪');
+      }
     };
 
     /* ── Logbook ────────────────────────────────────── */
