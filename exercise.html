@@ -257,18 +257,28 @@
     .stat-num { font-family: 'Inter', sans-serif; font-weight: 800; font-size: 2.4rem; line-height: 1; color: var(--dark-text); }
     .stat-lbl { font-size: .63rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-top: .35rem; }
     .section-h { font-family: 'Inter', sans-serif; font-weight: 700; font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; margin-bottom: .9rem; padding: .65rem 1rem; background: linear-gradient(135deg, #1e293b 0%, #334155 100%); color: rgba(255,255,255,0.9); border-radius: 8px; }
-    .pr-table { width: 100%; border-collapse: collapse; font-family: 'Inter', sans-serif; font-size: .82rem; }
-    .pr-table th { text-align: left; font-size: .6rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: rgba(255,255,255,0.4); padding: .55rem .7rem; border-bottom: 2px solid var(--dark-border); }
-    .pr-table td { padding: .65rem .7rem; border-bottom: 1px solid rgba(255,255,255,0.06); vertical-align: middle; }
-    .pr-table td:first-child { font-weight: 600; color: var(--dark-text); }
-    .pr-table tr:last-child td { border-bottom: none; }
-    .pr-val { font-weight: 800; color: #fcd34d; font-size: .88rem; }
     .pr-cat-badge { display: inline-block; font-size: .6rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; padding: .18rem .55rem; border-radius: 5px; }
     .pr-cat-push { background: rgba(239,68,68,0.15); color: #f87171; }
     .pr-cat-pull { background: rgba(59,130,246,0.15); color: #93c5fd; }
     .pr-cat-legs { background: rgba(16,185,129,0.15); color: #6ee7b7; }
     .pr-cat-cardio { background: rgba(245,158,11,0.15); color: #fcd34d; }
     .pr-cat-mixed { background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.6); }
+    /* PR card grid */
+    .pr-section { margin-top: .5rem; }
+    .pr-cat-group { margin-bottom: 1.6rem; }
+    .pr-cat-hdr { display: flex; align-items: center; gap: .6rem; padding: .5rem 1rem .5rem 1rem; border-radius: 9px; margin-bottom: .9rem; font-size: .67rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; border-left: 3px solid transparent; }
+    .pr-cat-hdr-push { background: rgba(239,68,68,0.14); color: #f87171; border-left-color: #ef4444; }
+    .pr-cat-hdr-pull { background: rgba(59,130,246,0.14); color: #93c5fd; border-left-color: #3b82f6; }
+    .pr-cat-hdr-legs { background: rgba(16,185,129,0.14); color: #6ee7b7; border-left-color: #10b981; }
+    .pr-cat-hdr-cardio { background: rgba(245,158,11,0.14); color: #fcd34d; border-left-color: #f59e0b; }
+    .pr-hdr-count { margin-left: auto; font-size: .62rem; opacity: .65; font-weight: 700; }
+    .pr-card-grid { display: grid; grid-template-columns: repeat(auto-fill,minmax(120px,1fr)); gap: .7rem; }
+    .pr-card { background: var(--dark-card2); border: 1px solid var(--dark-border); border-radius: 12px; padding: 1rem .8rem .85rem; text-align: center; transition: transform .12s, box-shadow .12s; }
+    .pr-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,.35); }
+    .pr-card-trophy { font-size: 1.3rem; display: block; margin-bottom: .25rem; }
+    .pr-card-val { font-family: 'Inter', sans-serif; font-weight: 800; font-size: 1.35rem; color: #fcd34d; line-height: 1.1; margin-bottom: .4rem; }
+    .pr-card-name { font-size: .67rem; font-weight: 600; color: rgba(255,255,255,0.55); line-height: 1.3; }
+    .pr-empty { text-align: center; color: rgba(255,255,255,0.3); font-style: italic; font-size: .83rem; padding: 2.5rem 0; }
     .streak-wrap { display: flex; align-items: center; justify-content: center; flex-direction: column; }
     .streak-ring { position: relative; width: 80px; height: 80px; }
     .streak-ring svg { transform: rotate(-90deg); }
@@ -555,28 +565,22 @@
         </div>
       </div>
 
-      <div style="display:grid;grid-template-columns:1fr 1.8fr;gap:1.5rem;margin-top:.5rem">
-        <div>
-          <h3 class="section-h">All Time</h3>
-          <div class="stat-card" style="margin-bottom:1.1rem">
-            <span class="stat-icon">📓</span>
-            <div class="stat-num" id="s-total">0</div>
-            <div class="stat-lbl">Workouts Logged</div>
-          </div>
-          <div class="stat-card stat-card-green">
-            <span class="stat-icon">⚡</span>
-            <div class="stat-num" id="s-total-acts">0</div>
-            <div class="stat-lbl">Activities Logged</div>
-          </div>
+      <h3 class="section-h">All Time</h3>
+      <div class="stats-row" style="grid-template-columns:1fr 1fr;margin-bottom:2rem">
+        <div class="stat-card">
+          <span class="stat-icon">📓</span>
+          <div class="stat-num" id="s-total">0</div>
+          <div class="stat-lbl">Workouts Logged</div>
         </div>
-        <div>
-          <h3 class="section-h">Personal Records</h3>
-          <table class="pr-table">
-            <thead><tr><th>Exercise</th><th>PR</th><th>Category</th></tr></thead>
-            <tbody id="pr-tbody"></tbody>
-          </table>
+        <div class="stat-card stat-card-green">
+          <span class="stat-icon">⚡</span>
+          <div class="stat-num" id="s-total-acts">0</div>
+          <div class="stat-lbl">Activities Logged</div>
         </div>
       </div>
+
+      <h3 class="section-h">Personal Records</h3>
+      <div class="pr-section" id="pr-section"></div>
     </div>
 
   </div><!-- /page-wrap -->
@@ -1127,24 +1131,33 @@
         arc.style.strokeDashoffset = circ * (1 - Math.min(streak / 30, 1));
       }
 
-      // PR table
-      var prTbody = document.getElementById('pr-tbody');
-      if (prTbody) {
-        var rows = [];
+      // PR card grid
+      var prSection = document.getElementById('pr-section');
+      if (prSection) {
+        var catEmoji = { push: '🔴', pull: '🔵', legs: '🟢', cardio: '🟡' };
+        var catLabel = { push: 'Push', pull: 'Pull', legs: 'Legs', cardio: 'Cardio' };
+        var anyPR = false;
+        var html = '';
         ['push', 'pull', 'legs', 'cardio'].forEach(function (cat) {
-          (routines[cat] || []).forEach(function (ex) {
-            if (ex.pr) rows.push({ name: ex.name, pr: prStr(ex), cat: cat });
+          var exes = (routines[cat] || []).filter(function (ex) { return ex.pr; });
+          if (!exes.length) return;
+          anyPR = true;
+          html += '<div class="pr-cat-group">'
+            + '<div class="pr-cat-hdr pr-cat-hdr-' + cat + '">'
+            + catEmoji[cat] + ' ' + catLabel[cat]
+            + '<span class="pr-hdr-count">' + exes.length + ' PR' + (exes.length !== 1 ? 's' : '') + '</span>'
+            + '</div>'
+            + '<div class="pr-card-grid">';
+          exes.forEach(function (ex) {
+            html += '<div class="pr-card">'
+              + '<span class="pr-card-trophy">🏆</span>'
+              + '<div class="pr-card-val">' + esc(prStr(ex)) + '</div>'
+              + '<div class="pr-card-name">' + esc(ex.name) + '</div>'
+              + '</div>';
           });
+          html += '</div></div>';
         });
-        if (!rows.length) {
-          prTbody.innerHTML = '<tr><td colspan="3" style="text-align:center;color:rgba(255,255,255,0.35);font-style:italic;padding:1rem">No PRs set yet — edit an exercise to add one</td></tr>';
-        } else {
-          prTbody.innerHTML = rows.map(function (r) {
-            return '<tr><td>' + esc(r.name) + '</td>'
-              + '<td><span class="pr-val">★ ' + esc(r.pr) + '</span></td>'
-              + '<td><span class="pr-cat-badge pr-cat-' + r.cat + '">' + CAT[r.cat] + '</span></td></tr>';
-          }).join('');
-        }
+        prSection.innerHTML = anyPR ? html : '<div class="pr-empty">No PRs set yet — edit an exercise to add one</div>';
       }
     }
 
