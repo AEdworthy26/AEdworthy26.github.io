@@ -141,16 +141,24 @@
     /* ── RECIPE BOOK CHAPTERS ── */
     .scrapbook-section { margin-top: 2rem; }
 
-    .chapter-section { margin-bottom: 4rem; }
-    .chapter-hdr { margin-bottom: 2rem; padding-bottom: 1.1rem; border-bottom: 3px solid var(--chapter-color, #7a3c00); }
+    .chapter-section { margin-bottom: 3.5rem; }
+    .chapter-hdr { margin-bottom: 2rem; padding-bottom: 1.1rem; border-bottom: 3px solid var(--chapter-color, #7a3c00); cursor: pointer; user-select: none; }
     .chapter-label { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: var(--light); margin-bottom: 0.45rem; }
-    .chapter-name-row { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; }
+    .chapter-name-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
     .chapter-name { font-family: 'Playfair Display', serif; font-weight: 900; font-size: clamp(1.7rem, 3vw, 2.4rem); line-height: 1; letter-spacing: -0.01em; color: var(--chapter-color, #7a3c00); }
     .chapter-count { font-size: 0.65rem; color: var(--light); white-space: nowrap; font-weight: 500; }
+    .chapter-caret { font-size: 0.85rem; color: var(--chapter-color, #7a3c00); opacity: 0.6; transition: transform 0.22s; display: inline-block; flex-shrink: 0; }
+    .chapter-section.collapsed .chapter-caret { transform: rotate(-90deg); }
+    .chapter-section.collapsed .chapter-grid { display: none; }
 
     .chapter-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; }
     @media (max-width: 900px) { .chapter-grid { grid-template-columns: repeat(2, 1fr); } }
     @media (max-width: 560px) { .chapter-grid { grid-template-columns: 1fr; } }
+
+    .cat-pill-picker { display: flex; flex-wrap: wrap; gap: 0.45rem; }
+    .cat-pill { background: var(--card-bg); border: 1.5px solid var(--border); border-radius: 9999px; padding: 0.35rem 0.85rem; font-size: 0.78rem; font-weight: 500; color: var(--muted); cursor: pointer; transition: all 0.15s; white-space: nowrap; font-family: inherit; }
+    .cat-pill:hover { border-color: var(--accent-mid); color: var(--ink); }
+    .cat-pill.active { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
 
     @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
 
@@ -726,14 +734,28 @@
             <label class="form-label">Recipe Title *</label>
             <input type="text" class="form-input" id="f-title" placeholder="e.g. Chicken Stir Fry">
           </div>
-          <div class="form-group">
+          <div class="form-group" style="grid-column:1/-1">
             <label class="form-label">Category</label>
-            <select class="form-input" id="f-cat">
+            <select id="f-cat" style="display:none">
               <option value="">— Select —</option>
               <option>Chicken</option><option>Beef</option><option>Lamb</option><option>Pork</option>
               <option>Fish &amp; Seafood</option><option>Vegetarian</option><option>Vegan</option>
               <option>Pasta &amp; Grains</option><option>Soups &amp; Stews</option><option>Desserts &amp; Bakes</option><option>Other</option>
             </select>
+            <div class="cat-pill-picker" id="cat-pill-picker">
+              <button type="button" class="cat-pill" data-cat="" onclick="pickCat('')">None</button>
+              <button type="button" class="cat-pill" data-cat="Chicken" onclick="pickCat('Chicken')">🍗 Chicken</button>
+              <button type="button" class="cat-pill" data-cat="Beef" onclick="pickCat('Beef')">🥩 Beef</button>
+              <button type="button" class="cat-pill" data-cat="Lamb" onclick="pickCat('Lamb')">🐑 Lamb</button>
+              <button type="button" class="cat-pill" data-cat="Pork" onclick="pickCat('Pork')">🐷 Pork</button>
+              <button type="button" class="cat-pill" data-cat="Fish &amp; Seafood" onclick="pickCat('Fish &amp; Seafood')">🐟 Fish &amp; Seafood</button>
+              <button type="button" class="cat-pill" data-cat="Vegetarian" onclick="pickCat('Vegetarian')">🥦 Vegetarian</button>
+              <button type="button" class="cat-pill" data-cat="Vegan" onclick="pickCat('Vegan')">🌱 Vegan</button>
+              <button type="button" class="cat-pill" data-cat="Pasta &amp; Grains" onclick="pickCat('Pasta &amp; Grains')">🍝 Pasta &amp; Grains</button>
+              <button type="button" class="cat-pill" data-cat="Soups &amp; Stews" onclick="pickCat('Soups &amp; Stews')">🍲 Soups &amp; Stews</button>
+              <button type="button" class="cat-pill" data-cat="Desserts &amp; Bakes" onclick="pickCat('Desserts &amp; Bakes')">🎂 Desserts &amp; Bakes</button>
+              <button type="button" class="cat-pill" data-cat="Other" onclick="pickCat('Other')">📁 Other</button>
+            </div>
           </div>
         </div>
         <div class="form-group">
@@ -1024,6 +1046,13 @@
       return list;
     }
 
+    window.pickCat = function(val) {
+      document.getElementById('f-cat').value = val;
+      document.querySelectorAll('#cat-pill-picker .cat-pill').forEach(function(p) {
+        p.classList.toggle('active', p.dataset.cat === val);
+      });
+    };
+
     window.setFilterCat = function(cat) {
       _filterCat = cat;
       document.querySelectorAll('.fp-cat').forEach(function(p) { p.classList.toggle('active', p.dataset.val === cat); });
@@ -1247,12 +1276,17 @@
         var displayName = cat || 'Other';
         var color = catColor(displayName);
         var roman = ROMAN[chapterNum++] || String(chapterNum);
-        return '<div class="chapter-section" style="--chapter-color:' + color + '">'
-          + '<div class="chapter-hdr">'
+        var safeId = 'ch-' + displayName.replace(/[^a-z0-9]/gi, '-');
+        var isCollapsed = !!_collapsedChapters[displayName];
+        return '<div class="chapter-section' + (isCollapsed ? ' collapsed' : '') + '" id="' + safeId + '" style="--chapter-color:' + color + '">'
+          + '<div class="chapter-hdr" onclick="toggleChapter(\'' + displayName.replace(/'/g,"\\'") + '\')">'
           +   '<div class="chapter-label">Chapter ' + roman + '</div>'
           +   '<div class="chapter-name-row">'
           +     '<div class="chapter-name">' + displayName + '</div>'
-          +     '<span class="chapter-count">' + recs.length + ' recipe' + (recs.length !== 1 ? 's' : '') + '</span>'
+          +     '<div style="display:flex;align-items:center;gap:0.7rem">'
+          +       '<span class="chapter-count">' + recs.length + ' recipe' + (recs.length !== 1 ? 's' : '') + '</span>'
+          +       '<span class="chapter-caret">&#9660;</span>'
+          +     '</div>'
           +   '</div>'
           + '</div>'
           + '<div class="chapter-grid">'
@@ -1261,6 +1295,14 @@
           + '</div>';
       }).join('');
     }
+
+    var _collapsedChapters = {};
+    window.toggleChapter = function(name) {
+      _collapsedChapters[name] = !_collapsedChapters[name];
+      var safeId = 'ch-' + name.replace(/[^a-z0-9]/gi, '-');
+      var el = document.getElementById(safeId);
+      if (el) el.classList.toggle('collapsed', !!_collapsedChapters[name]);
+    };
 
     window.toggleFav = function(e, id) {
       e.stopPropagation();
@@ -1656,7 +1698,7 @@
 
       document.getElementById('fm-title').textContent = r ? 'Edit Recipe' : 'New Recipe';
       document.getElementById('f-title').value = r ? r.title : '';
-      document.getElementById('f-cat').value = r ? (r.category || '') : '';
+      window.pickCat(r ? (r.category || '') : '');
       document.getElementById('f-desc').value = r ? (r.desc || '') : '';
       document.getElementById('f-time').value = r ? (r.time || '') : '';
       document.getElementById('f-serves').value = r ? (r.serves || '') : '';
