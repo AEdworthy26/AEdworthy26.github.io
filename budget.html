@@ -1512,7 +1512,8 @@ function renderBudgetPlan() {
 
   document.getElementById('plan-table').innerHTML = html;
 
-  document.querySelectorAll('.plan-input').forEach(function(inp) {
+  var planInputs = Array.from(document.querySelectorAll('#plan-table .plan-input'));
+  planInputs.forEach(function(inp, i) {
     inp.addEventListener('change', function() {
       var yr = parseInt(this.dataset.year);
       var cat = decodeURIComponent(this.dataset.cat);
@@ -1520,6 +1521,18 @@ function renderBudgetPlan() {
       var val = parseFloat(this.value) || 0;
       setBudget(yr, cat, mi, val);
       renderBudgetPlan();
+    });
+    inp.addEventListener('keydown', function(e) {
+      if (e.key === 'Tab' && !e.shiftKey) {
+        e.preventDefault();
+        if (i + 1 < planInputs.length) planInputs[i + 1].focus();
+      } else if (e.key === 'Enter') {
+        e.preventDefault();
+        var mi = inp.dataset.month;
+        var sameCol = planInputs.filter(function(x) { return x.dataset.month === mi; });
+        var ci = sameCol.indexOf(inp);
+        if (ci + 1 < sameCol.length) sameCol[ci + 1].focus();
+      }
     });
   });
   attachPlanDrag();
