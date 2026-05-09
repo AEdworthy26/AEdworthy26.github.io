@@ -1513,7 +1513,31 @@ function renderBudgetPlan() {
   document.getElementById('plan-table').innerHTML = html;
 
   var planInputs = Array.from(document.querySelectorAll('#plan-table .plan-input'));
+  var _navIntent = null;
+
+  document.getElementById('plan-table').addEventListener('mousedown', function() {
+    _navIntent = null;
+  });
+
   planInputs.forEach(function(inp, i) {
+    inp.addEventListener('keydown', function(e) {
+      if (e.key === 'Tab' && !e.shiftKey) {
+        e.preventDefault();
+        var next = planInputs[i + 1];
+        if (next) { _navIntent = { cat: next.dataset.cat, month: next.dataset.month }; next.focus(); }
+      } else if (e.key === 'Tab' && e.shiftKey) {
+        e.preventDefault();
+        var prev = planInputs[i - 1];
+        if (prev) { _navIntent = { cat: prev.dataset.cat, month: prev.dataset.month }; prev.focus(); }
+      } else if (e.key === 'Enter') {
+        e.preventDefault();
+        var mi = inp.dataset.month;
+        var sameCol = planInputs.filter(function(x) { return x.dataset.month === mi; });
+        var ci = sameCol.indexOf(inp);
+        var next = sameCol[ci + 1];
+        if (next) { _navIntent = { cat: next.dataset.cat, month: next.dataset.month }; next.focus(); }
+      }
+    });
     inp.addEventListener('change', function() {
       var yr = parseInt(this.dataset.year);
       var cat = decodeURIComponent(this.dataset.cat);
@@ -1522,17 +1546,11 @@ function renderBudgetPlan() {
       setBudget(yr, cat, mi, val);
       renderBudgetPlan();
       renderDashboard();
-    });
-    inp.addEventListener('keydown', function(e) {
-      if (e.key === 'Tab' && !e.shiftKey) {
-        e.preventDefault();
-        if (i + 1 < planInputs.length) planInputs[i + 1].focus();
-      } else if (e.key === 'Enter') {
-        e.preventDefault();
-        var mi = inp.dataset.month;
-        var sameCol = planInputs.filter(function(x) { return x.dataset.month === mi; });
-        var ci = sameCol.indexOf(inp);
-        if (ci + 1 < sameCol.length) sameCol[ci + 1].focus();
+      if (_navIntent) {
+        var nav = _navIntent;
+        _navIntent = null;
+        var target = document.querySelector('#plan-table .plan-input[data-cat="' + nav.cat + '"][data-month="' + nav.month + '"]');
+        if (target) target.focus();
       }
     });
   });
@@ -1623,9 +1641,9 @@ function renderPensionPlan() {
     html += '</tbody>';
     pensionEl.innerHTML = html;
   } else {
-    var html = '<colgroup><col class="col-cat">';
-    for (var ci = 0; ci < 12; ci++) html += '<col class="col-month">';
-    html += '<col class="col-annual"></colgroup>';
+    var html = '<colgroup><col style="width:150px">';
+    for (var ci = 0; ci < 12; ci++) html += '<col style="width:60px">';
+    html += '<col style="width:75px"></colgroup>';
     html += '<thead><tr><th>Type</th>';
     MONTHS.forEach(function(m) { html += '<th>' + m + '</th>'; });
     html += '<th>Annual</th></tr></thead><tbody>';
