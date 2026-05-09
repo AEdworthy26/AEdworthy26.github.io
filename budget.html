@@ -296,8 +296,12 @@
     .cat-section-title.expense { color: var(--expense); }
     .cat-section-title.saving { color: var(--saving); }
     .cat-list { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: .5rem; }
-    .cat-tag { display: flex; align-items: center; gap: .3rem; background: var(--subtle); border: 1px solid var(--border); border-radius: 20px; padding: .25rem .65rem .25rem .75rem; font-size: .78rem; }
-    .cat-del { background: none; border: none; color: var(--light); font-size: .75rem; padding: 0 .1rem; line-height: 1; }
+    .cat-tag { display: inline-flex; align-items: center; gap: .3rem; background: var(--subtle); border: 1.5px solid var(--border); border-radius: 20px; padding: .25rem .65rem .25rem .75rem; font-size: .78rem; transition: border-color .15s, box-shadow .15s; }
+    .cat-tag:has(.cat-name-input) { border-color: #6d28d9; box-shadow: 0 0 0 3px rgba(109,40,217,.1); background: #fff; }
+    .cat-name-lbl { cursor: text; border-radius: 4px; padding: .05rem .15rem; transition: background .12s; }
+    .cat-name-lbl:hover { background: rgba(99,102,241,.1); }
+    .cat-name-input { border: none; outline: none; background: transparent; font: inherit; color: var(--ink); min-width: 40px; max-width: 160px; padding: 0; }
+    .cat-del { background: none; border: none; color: var(--light); font-size: .75rem; padding: 0 .1rem; line-height: 1; cursor: pointer; }
     .cat-del:hover { color: var(--expense); }
     .cat-add-row { display: flex; gap: .4rem; }
     .cat-add-input { background: var(--subtle); border: 1px solid var(--border); border-radius: 8px; padding: .35rem .7rem; font-size: .82rem; color: var(--ink); flex: 1; }
@@ -1907,7 +1911,7 @@ function renderSettings() {
       '<div class="cat-section-title ' + sec.cls + '">' + sec.label + '</div>' +
       '<div class="cat-list">' +
       cats.map(function(c) {
-        return '<div class="cat-tag">' + c + '<button class="cat-del" data-type="' + sec.key + '" data-cat="' + encodeURIComponent(c) + '" title="Remove">✕</button></div>';
+        return '<div class="cat-tag" data-type="' + sec.key + '" data-cat="' + encodeURIComponent(c) + '"><span class="cat-name-lbl" title="Click to rename">' + c + '</span><button class="cat-del" data-type="' + sec.key + '" data-cat="' + encodeURIComponent(c) + '" title="Remove">✕</button></div>';
       }).join('') +
       '</div>' +
       '<div class="cat-add-row">' +
@@ -1925,6 +1929,49 @@ function renderSettings() {
       saveData();
       renderSettings();
       populateCategoryDropdown();
+    });
+  });
+
+  catEl.querySelectorAll('.cat-name-lbl').forEach(function(lbl) {
+    lbl.addEventListener('click', function() {
+      var tag = lbl.closest('.cat-tag');
+      var type = tag.dataset.type;
+      var oldName = decodeURIComponent(tag.dataset.cat);
+      var inp = document.createElement('input');
+      inp.className = 'cat-name-input';
+      inp.value = oldName;
+      inp.style.width = Math.max(oldName.length * 8, 60) + 'px';
+      lbl.replaceWith(inp);
+      inp.focus();
+      inp.select();
+
+      function commit() {
+        var newName = inp.value.trim();
+        if (newName && newName !== oldName) {
+          var idx = DATA.categories[type].indexOf(oldName);
+          if (idx !== -1) DATA.categories[type][idx] = newName;
+          Object.keys(DATA.budgets || {}).forEach(function(yr) {
+            if (DATA.budgets[yr][oldName] !== undefined) {
+              DATA.budgets[yr][newName] = DATA.budgets[yr][oldName];
+              delete DATA.budgets[yr][oldName];
+            }
+          });
+          (DATA.transactions || []).forEach(function(t) {
+            if (t.category === oldName) t.category = newName;
+          });
+          saveData();
+          renderSettings();
+          populateCategoryDropdown();
+        } else {
+          inp.replaceWith(lbl);
+        }
+      }
+
+      inp.addEventListener('blur', commit);
+      inp.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') { e.preventDefault(); inp.blur(); }
+        if (e.key === 'Escape') { inp.removeEventListener('blur', commit); inp.replaceWith(lbl); }
+      });
     });
   });
 
