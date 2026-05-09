@@ -858,9 +858,15 @@
     function loadRecipes() {
       try { recipes = JSON.parse(localStorage.getItem(STORE) || '[]'); } catch(_) { recipes = []; }
       var MEAL_TYPES = ['Breakfast', 'Lunch', 'Dinner', 'Brunch', 'Snack'];
+      var changed = false;
       recipes.forEach(function(r) {
-        if (MEAL_TYPES.indexOf(r.category) !== -1) r.category = '';
+        if (MEAL_TYPES.indexOf(r.category) !== -1) { r.category = ''; changed = true; }
+        var t = (r.title || '').toLowerCase();
+        if (t.indexOf('colombian') !== -1 && r.category !== 'Pork') { r.category = 'Pork'; changed = true; }
+        if (t.indexOf('sichuan') !== -1 && r.category !== 'Pork') { r.category = 'Pork'; changed = true; }
+        if (t.indexOf('doro wat') !== -1 && r.category !== 'Chicken') { r.category = 'Chicken'; changed = true; }
       });
+      if (changed) localStorage.setItem(STORE, JSON.stringify(recipes));
     }
     function saveRecipes() { localStorage.setItem(STORE, JSON.stringify(recipes)); }
     function uid() { return Date.now().toString(36) + Math.random().toString(36).slice(2, 6); }
