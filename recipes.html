@@ -157,27 +157,32 @@
     /* ── RECIPE CARD ── */
     .recipe-card {
       background: #fff;
-      border-radius: 10px; overflow: hidden;
+      border-radius: 16px; overflow: hidden;
       box-shadow: 0 2px 10px rgba(0,0,0,0.07), 0 1px 3px rgba(0,0,0,0.04);
       display: flex; flex-direction: column;
       cursor: pointer;
-      transition: box-shadow 0.22s, transform 0.22s;
-      border-top: 4px solid var(--card-accent, #7a3c00);
+      transition: box-shadow 0.25s, transform 0.25s;
       animation: fadeIn 0.35s cubic-bezier(0.22,1,0.36,1) both;
     }
-    .recipe-card:hover { box-shadow: 0 8px 28px rgba(0,0,0,0.13); transform: translateY(-3px); }
+    .recipe-card:hover { box-shadow: 0 12px 36px rgba(0,0,0,0.14); transform: translateY(-4px); }
 
-    .rc-thumb { width: 100%; aspect-ratio: 16/9; background: var(--subtle); display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; }
-    .rc-thumb img { width: 100%; height: 100%; object-fit: cover; }
-    .rc-thumb-ph { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; font-family: 'Playfair Display', serif; font-size: 3.2rem; font-weight: 900; letter-spacing: -0.02em; color: rgba(0,0,0,0.1); }
-    .rc-fav { position: absolute; top: 0.45rem; right: 0.45rem; background: rgba(255,255,255,0.92); border: none; border-radius: 50%; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; cursor: pointer; box-shadow: 0 1px 4px rgba(0,0,0,0.15); transition: transform 0.15s; z-index: 3; }
-    .rc-fav:hover { transform: scale(1.2); }
+    .rc-thumb { width: 100%; aspect-ratio: 4/3; background: var(--subtle); display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; flex-shrink: 0; }
+    .rc-thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; display: block; }
+    .recipe-card:hover .rc-thumb img { transform: scale(1.06); }
+    .rc-thumb-ph { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; font-family: 'Playfair Display', serif; font-size: 3.2rem; font-weight: 900; letter-spacing: -0.02em; color: rgba(0,0,0,0.12); }
+
+    /* Image overlays */
+    .rc-img-gradient { position: absolute; bottom: 0; left: 0; right: 0; height: 55%; background: linear-gradient(to top, rgba(0,0,0,0.65) 0%, transparent 100%); pointer-events: none; z-index: 2; }
+    .rc-cat-overlay { position: absolute; bottom: 0.55rem; left: 0.55rem; z-index: 3; }
+    .rc-fav-overlay { position: absolute; top: 0.55rem; right: 0.55rem; z-index: 3; background: rgba(255,255,255,0.92); border: none; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; font-size: 0.82rem; cursor: pointer; box-shadow: 0 1px 5px rgba(0,0,0,0.2); transition: transform 0.15s, background 0.15s; color: #bbb; }
+    .rc-fav-overlay:hover { transform: scale(1.2); background: #fff; }
+    .rc-fav-overlay.fav-on { color: #e53e3e; }
 
     .rc-body { padding: 0.85rem 1rem 0.8rem; flex: 1; display: flex; flex-direction: column; }
     .rc-cat-row { display: flex; align-items: center; gap: 0.4rem; margin-bottom: 0.35rem; flex-wrap: wrap; }
     .cat-badge { font-family: 'Inter', sans-serif; font-size: 0.57rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.14rem 0.55rem; border-radius: 20px; color: #fff; white-space: nowrap; }
 
-    .rc-title { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 0.97rem; line-height: 1.3; margin-bottom: 0.35rem; transition: color 0.2s; }
+    .rc-title { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 0.97rem; line-height: 1.3; margin-bottom: 0.35rem; transition: color 0.2s; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
     .recipe-card:hover .rc-title { color: var(--accent-mid); }
     .rc-desc { font-size: 0.72rem; line-height: 1.6; color: var(--muted); flex: 1; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin-bottom: 0.6rem; }
 
@@ -228,6 +233,14 @@
     .strip-fav-btn:hover { transform: scale(1.25); }
     .strip-fav-btn.fav-on { color: #e53e3e; }
 
+    /* ── PROS / CONS ── */
+    .vm-pros-cons { display: flex; gap: 0.5rem; flex-wrap: wrap; margin: 0 0 1.2rem; }
+    .vpc-col { flex: 1; min-width: 130px; display: flex; flex-direction: column; gap: 0.3rem; }
+    .vpc-item { display: flex; align-items: flex-start; gap: 0.45rem; font-size: 0.77rem; line-height: 1.4; padding: 0.42rem 0.65rem; border-radius: 8px; }
+    .vpc-pro { background: rgba(22,163,74,0.09); color: #15803d; border: 1px solid rgba(22,163,74,0.18); }
+    .vpc-con { background: rgba(217,119,6,0.08); color: #92400e; border: 1px solid rgba(217,119,6,0.18); }
+    .vpc-icon { font-size: 0.65rem; flex-shrink: 0; margin-top: 0.12rem; font-weight: 700; }
+
     /* ── EMPTY STATE ── */
     .empty-state { text-align: center; padding: 3rem 2rem; border: 2px dashed var(--border); border-radius: 12px; background: rgba(255,255,255,0.6); }
     .empty-icon { font-size: 2.8rem; opacity: 0.4; margin-bottom: 0.8rem; display: block; }
@@ -246,6 +259,13 @@
     .modal-close { background: var(--subtle); border: none; font-size: 1rem; color: var(--muted); cursor: pointer; padding: 0; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; line-height: 1; border-radius: 50%; flex-shrink: 0; transition: background 0.15s, color 0.15s; }
     .modal-close:hover { background: #ddd; color: var(--ink); }
     .modal-body { padding: 1.4rem 1.6rem 1.8rem; }
+
+    /* ── VIEW MODAL HERO ── */
+    .vm-hero { position: relative; border-radius: 16px 16px 0 0; overflow: hidden; background: var(--subtle); flex-shrink: 0; line-height: 0; }
+    .vm-hero img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; }
+    .vm-float-close { position: absolute; top: 0.75rem; right: 0.75rem; background: rgba(0,0,0,0.42); border: none; color: #fff; width: 32px; height: 32px; border-radius: 50%; font-size: 1.15rem; line-height: 1; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.15s; z-index: 5; }
+    .vm-float-close:hover { background: rgba(0,0,0,0.7); }
+    .modal.has-hero .modal-header { border-bottom: none; padding-top: 0.9rem; padding-bottom: 0.7rem; }
 
     /* View modal */
     .view-meta { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.2rem; font-size: 0.76rem; color: var(--muted); align-items: center; font-weight: 500; }
@@ -611,7 +631,7 @@
   <footer class="site-footer">Personal Hub &mdash; Alfie Edworthy &mdash; Private &amp; Confidential</footer>
 
   <!-- ── UNDO DELETE TOAST ── -->
-  <div id="undo-toast" style="display:none;position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);background:#1f2937;color:#fff;border-radius:10px;padding:0.85rem 1.2rem;display:none;align-items:center;gap:1rem;box-shadow:0 8px 28px rgba(0,0,0,0.32);z-index:700;white-space:nowrap;animation:toastIn .3s cubic-bezier(.22,1,.36,1)">
+  <div id="undo-toast" style="display:none;position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);background:#1f2937;color:#fff;border-radius:10px;padding:0.85rem 1.2rem;align-items:center;gap:1rem;box-shadow:0 8px 28px rgba(0,0,0,0.32);z-index:700;white-space:nowrap;">
     <span id="undo-msg" style="font-size:0.83rem;font-weight:500"></span>
     <button onclick="window.undoDelete()" style="background:var(--accent);color:#fff;border:none;border-radius:6px;padding:0.38rem 0.9rem;font-size:0.77rem;font-weight:700;cursor:pointer;font-family:inherit">Undo</button>
     <button onclick="window.dismissUndo()" style="background:none;border:none;color:rgba(255,255,255,0.45);font-size:1rem;cursor:pointer;line-height:1;padding:0">&times;</button>
@@ -619,13 +639,18 @@
 
   <!-- ── VIEW MODAL ── -->
   <div class="modal-overlay" id="view-modal">
-    <div class="modal">
+    <div class="modal" id="view-modal-inner">
+      <!-- Hero image (shown by JS when recipe has an image) -->
+      <div class="vm-hero" id="vm-hero" style="display:none">
+        <div id="vm-hero-img-wrap"></div>
+        <button class="vm-float-close" onclick="closeModal('view-modal')">&times;</button>
+      </div>
       <div class="modal-header">
         <div>
           <div id="vm-cat-row" class="rc-cat-row" style="margin-bottom:0.4rem"></div>
           <div class="modal-title" id="vm-title"></div>
         </div>
-        <button class="modal-close" onclick="closeModal('view-modal')">&times;</button>
+        <button class="modal-close" id="vm-header-close-btn" onclick="closeModal('view-modal')">&times;</button>
       </div>
       <div class="modal-body">
         <div class="view-meta">
@@ -636,6 +661,7 @@
         </div>
         <p id="vm-desc" style="font-size:0.88rem;line-height:1.7;color:var(--muted);margin-bottom:0.5rem"></p>
         <div id="vm-nutrition" style="display:none"></div>
+        <div id="vm-pros-cons" style="display:none"></div>
         <span class="section-label">Ingredients</span>
         <div id="vm-ingredients"></div>
         <div id="vm-substitutes-wrap">
@@ -1010,20 +1036,68 @@
         + '</div>';
     }
 
+    function nutProsCons(r) {
+      var pros = [], cons = [];
+      if (r.protein != null) {
+        if (r.protein >= 35) pros.push('Excellent source of protein');
+        else if (r.protein >= 25) pros.push('Good source of protein');
+        else if (r.protein < 15) cons.push('Low in protein');
+      }
+      if (r.fibre != null) {
+        if (r.fibre >= 8) pros.push('High in dietary fibre');
+        else if (r.fibre >= 5) pros.push('Good source of fibre');
+        else if (r.fibre < 3) cons.push('Low in fibre — add a side veg');
+      }
+      if (r.calories != null) {
+        if (r.calories <= 400) pros.push('Light on calories');
+        else if (r.calories > 700) cons.push('Calorie-dense');
+      }
+      if (r.category === 'Vegetarian') pros.push('Plant-based — lower environmental footprint');
+      if (r.category === 'Vegan') pros.push('Fully plant-based');
+      if (r.category === 'Fish & Seafood') pros.push('Rich in omega-3 fatty acids');
+      if (r.category === 'Soups & Stews') pros.push('Hydrating — high water content');
+      if (r.category === 'Desserts & Bakes') cons.push('Best enjoyed as an occasional treat');
+      if (r.healthScore != null) {
+        if (r.healthScore >= 75) pros.push('Well-balanced, nutritious meal');
+        if (r.healthScore < 45) cons.push('Consider adding vegetables for balance');
+      }
+      if (!pros.length && !cons.length) return '';
+      var html = '<div class="vm-pros-cons">';
+      if (pros.length) {
+        html += '<div class="vpc-col">'
+          + pros.map(function(p) { return '<div class="vpc-item vpc-pro"><span class="vpc-icon">✓</span><span>' + esc(p) + '</span></div>'; }).join('')
+          + '</div>';
+      }
+      if (cons.length) {
+        html += '<div class="vpc-col">'
+          + cons.map(function(c) { return '<div class="vpc-item vpc-con"><span class="vpc-icon">⚠</span><span>' + esc(c) + '</span></div>'; }).join('')
+          + '</div>';
+      }
+      html += '</div>';
+      return html;
+    }
+
     function recipeCardHTML(r, i) {
-      var color = catColor(r.category);
       var initial = r.title ? r.title.charAt(0).toUpperCase() : '?';
-      var thumbInner = r.image
-        ? '<img src="' + esc(r.image) + '" alt="' + esc(r.title) + '" loading="lazy" onerror="this.style.display=\'none\';this.nextSibling.style.display=\'flex\'">'
+      var hasImage = !!r.image;
+      var thumbContent;
+      if (hasImage) {
+        thumbContent = '<img src="' + esc(r.image) + '" alt="' + esc(r.title) + '" loading="lazy" onerror="this.style.display=\'none\';this.nextSibling.style.display=\'flex\'">'
           + '<div class="rc-thumb-ph" style="display:none">' + esc(initial) + '</div>'
-        : '<div class="rc-thumb-ph">' + esc(initial) + '</div>';
-      return '<div class="recipe-card" style="--card-accent:' + color + ';animation-delay:' + (i * 50) + 'ms" onclick="openViewModal_byId(\'' + r.id + '\')">'
+          + '<div class="rc-img-gradient"></div>'
+          + '<div class="rc-cat-overlay">' + catBadge(r.category) + '</div>';
+      } else {
+        thumbContent = '<div class="rc-thumb-ph">' + esc(initial) + '</div>';
+      }
+      var favBtn = '<button class="rc-fav-overlay' + (r.favourite ? ' fav-on' : '') + '" onclick="toggleFav(event,\'' + r.id + '\')" title="' + (r.favourite ? 'Remove from favourites' : 'Add to favourites') + '">' + (r.favourite ? '♥' : '♡') + '</button>';
+      return '<div class="recipe-card" style="animation-delay:' + (i * 50) + 'ms" onclick="openViewModal_byId(\'' + r.id + '\')">'
         + '<div class="rc-thumb">'
-        +   thumbInner
+        +   thumbContent
         +   (r.cooked ? '<span class="rc-cooked-badge">&#10003; Cooked</span>' : '')
+        +   favBtn
         + '</div>'
         + '<div class="rc-body">'
-        +   '<div class="rc-cat-row">' + catBadge(r.category) + '</div>'
+        +   (!hasImage ? '<div class="rc-cat-row">' + catBadge(r.category) + '</div>' : '')
         +   '<div class="rc-title">' + esc(r.title) + '</div>'
         +   (r.desc ? '<p class="rc-desc">' + esc(r.desc) + '</p>' : '')
         +   (r.calories || r.healthScore ? nutStrip(r) : '')
@@ -1034,7 +1108,6 @@
         +       (r.time && r.serves ? ' · ' : '')
         +       (r.serves ? 'Serves ' + esc(r.serves) : '')
         +     '</span>'
-        +     '<button class="rc-fav-btn' + (r.favourite ? ' fav-on' : '') + '" onclick="toggleFav(event,\'' + r.id + '\')" title="' + (r.favourite ? 'Remove from favourites' : 'Add to favourites') + '">' + (r.favourite ? '♥' : '♡') + '</button>'
         +   '</div>'
         + '</div>'
         + '</div>';
@@ -1118,7 +1191,7 @@
       var grouped = {};
       var uncategorised = [];
       list.forEach(function(r) {
-        var key = r.category || '';
+        var key = CAT_ORDER.indexOf(r.category) !== -1 ? r.category : (r.category ? 'Other' : '');
         if (!key) { uncategorised.push(r); return; }
         if (!grouped[key]) grouped[key] = [];
         grouped[key].push(r);
@@ -1264,6 +1337,22 @@
 
       document.getElementById('vm-title').textContent = r.title;
       document.getElementById('vm-cat-row').innerHTML = catBadge(r.category);
+
+      // Hero image
+      var heroEl = document.getElementById('vm-hero');
+      var heroImgWrap = document.getElementById('vm-hero-img-wrap');
+      var headerCloseBtn = document.getElementById('vm-header-close-btn');
+      var modalInnerEl = document.getElementById('view-modal-inner');
+      if (r.image) {
+        heroImgWrap.innerHTML = '<img src="' + esc(r.image) + '" alt="' + esc(r.title) + '" loading="lazy" onerror="this.parentElement.parentElement.style.display=\'none\';document.getElementById(\'vm-header-close-btn\').style.display=\'\';document.getElementById(\'view-modal-inner\').classList.remove(\'has-hero\')">';
+        heroEl.style.display = '';
+        headerCloseBtn.style.display = 'none';
+        modalInnerEl.classList.add('has-hero');
+      } else {
+        heroEl.style.display = 'none';
+        headerCloseBtn.style.display = '';
+        modalInnerEl.classList.remove('has-hero');
+      }
       if (isSuggestion) {
         document.getElementById('vm-stars').textContent = starsHtml(r.rating || 0);
       } else {
@@ -1285,6 +1374,12 @@
       var nutHtml = nutGrid(r);
       if (nutHtml) { nutEl.innerHTML = nutHtml; nutEl.style.display = ''; }
       else nutEl.style.display = 'none';
+
+      var pcEl = document.getElementById('vm-pros-cons');
+      var pcHtml = nutProsCons(r);
+      if (pcHtml) { pcEl.innerHTML = pcHtml; pcEl.style.display = ''; }
+      else pcEl.style.display = 'none';
+
       renderViewIngredients(1);
 
       var subsWrap = document.getElementById('vm-substitutes-wrap');
