@@ -241,6 +241,11 @@
     .lb-act-del-btn { background: none; border: none; color: rgba(255,255,255,0.3); font-size: 1.05rem; line-height: 1; padding: 0 .28rem; transition: color .12s; flex-shrink: 0; }
     .lb-act-del-btn:hover { color: #f87171; }
 
+    /* CHART */
+    .chart-card { background: var(--dark-card); border: 1px solid rgba(255,255,255,0.08); border-radius: var(--radius); padding: 1.2rem 1.4rem 0.7rem; margin-bottom: 2rem; }
+    .chart-legend { display: flex; align-items: center; gap: 0.45rem; font-size: 0.7rem; color: rgba(255,255,255,0.38); margin-bottom: 0.8rem; }
+    .chart-legend-dot { width: 8px; height: 8px; border-radius: 50%; background: #60a5fa; flex-shrink: 0; }
+
     /* STATS */
     .stats-row { display: grid; grid-template-columns: repeat(4,1fr); gap: 1.1rem; margin-bottom: 2rem; }
     .stat-card { background: var(--dark-card); border: 1px solid var(--dark-border); border-radius: var(--radius); padding: 1.4rem 1rem 1.1rem; text-align: center; box-shadow: var(--shadow-sm); position: relative; overflow: hidden; }
@@ -540,6 +545,14 @@
           </div>
           <div class="stat-lbl" style="margin-top:.3rem">Day Streak</div>
         </div>
+      </div>
+
+      <h3 class="section-h">Weekly Activity Trend</h3>
+      <div class="chart-card">
+        <div class="chart-legend">
+          <span class="chart-legend-dot"></span> Workouts &amp; activities combined &mdash; past 12 weeks (Mon &ndash; Sun)
+        </div>
+        <div id="weekly-chart"></div>
       </div>
 
       <div style="display:grid;grid-template-columns:1fr 1.8fr;gap:1.5rem;margin-top:.5rem">
@@ -1110,11 +1123,113 @@
           }).join('');
         }
       }
+      renderWeeklyChart();
     }
 
     function setText(id, val) {
       var el = document.getElementById(id);
       if (el) el.textContent = val;
+    }
+
+    /* ── Weekly Chart ───────────────────────────────── */
+    function renderWeeklyChart() {
+      var el = document.getElementById('weekly-chart');
+      if (!el) return;
+
+      var WEEKS = 12;
+      var MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+      function getMonday(d) {
+        var day = d.getDay();
+        var diff = day === 0 ? -6 : 1 - day;
+        var m = new Date(d.getFullYear(), d.getMonth(), d.getDate() + diff);
+        m.setHours(0, 0, 0, 0);
+        return m;
+      }
+
+      var today = new Date();
+      var currentMon = getMonday(today);
+      var weeks = [];
+      for (var i = WEEKS - 1; i >= 0; i--) {
+        var mon = new Date(currentMon);
+        mon.setDate(mon.getDate() - i * 7);
+        var sun = new Date(mon);
+        sun.setDate(sun.getDate() + 6);
+        var monISO = mon.getFullYear() + '-' + pad(mon.getMonth() + 1) + '-' + pad(mon.getDate());
+        var sunISO = sun.getFullYear() + '-' + pad(sun.getMonth() + 1) + '-' + pad(sun.getDate());
+        weeks.push({ mon: mon, monISO: monISO, sunISO: sunISO });
+      }
+
+      var data = weeks.map(function(w) {
+        var count = 0;
+        logs.forEach(function(l) { if (l.date >= w.monISO && l.date <= w.sunISO) count++; });
+        activities.forEach(function(a) { if (a.date >= w.monISO && a.date <= w.sunISO) count++; });
+        return { week: w, count: count };
+      });
+
+      var VW = 580, VH = 180;
+      var pL = 34, pR = 12, pT = 14, pB = 34;
+      var cW = VW - pL - pR, cH = VH - pT - pB;
+      var n = data.length;
+
+      var maxVal = 0;
+      data.forEach(function(d) { if (d.count > maxVal) maxVal = d.count; });
+      maxVal = Math.max(maxVal, 4);
+
+      function xp(i) { return pL + (i / (n - 1)) * cW; }
+      function yp(v) { return pT + cH - (v / maxVal) * cH; }
+
+      // Grid lines & y-axis labels
+      var STEPS = 4;
+      var gridSVG = '';
+      for (var g = 0; g <= STEPS; g++) {
+        var gv = Math.round((maxVal / STEPS) * g);
+        var gy = yp(gv);
+        gridSVG += '<line x1="' + pL + '" y1="' + gy.toFixed(1) + '" x2="' + (pL + cW) + '" y2="' + gy.toFixed(1) + '" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>';
+        gridSVG += '<text x="' + (pL - 5) + '" y="' + (gy + 3.5).toFixed(1) + '" text-anchor="end" font-family="Inter,sans-serif" font-size="9" fill="rgba(255,255,255,0.35)">' + gv + '</text>';
+      }
+
+      // Line path + area fill
+      var pts = data.map(function(d, i) { return [xp(i), yp(d.count)]; });
+      var linePath = pts.map(function(p, i) { return (i === 0 ? 'M' : 'L') + p[0].toFixed(1) + ',' + p[1].toFixed(1); }).join(' ');
+      var areaPath = linePath + ' L' + pts[n-1][0].toFixed(1) + ',' + (pT + cH) + ' L' + pL.toFixed(1) + ',' + (pT + cH) + ' Z';
+
+      // X-axis labels: show every 3rd week + always current
+      var xLabelsSVG = '';
+      data.forEach(function(d, i) {
+        if (i === n - 1) return; // current week handled separately
+        if (i % 3 !== 0) return;
+        var lbl = d.week.mon.getDate() + ' ' + MONTHS[d.week.mon.getMonth()];
+        xLabelsSVG += '<text x="' + xp(i).toFixed(1) + '" y="' + (pT + cH + 18) + '" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="rgba(255,255,255,0.35)">' + lbl + '</text>';
+      });
+      // Current week label (highlighted)
+      var curMon = data[n-1].week.mon;
+      xLabelsSVG += '<text x="' + xp(n-1).toFixed(1) + '" y="' + (pT + cH + 18) + '" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="600" fill="rgba(96,165,250,0.85)">'
+        + curMon.getDate() + ' ' + MONTHS[curMon.getMonth()] + '</text>';
+
+      // Dots with tooltips
+      var dotsSVG = pts.map(function(p, i) {
+        var d = data[i];
+        var isCur = i === n - 1;
+        var tipDate = d.week.mon.getDate() + ' ' + MONTHS[d.week.mon.getMonth()];
+        var tip = 'w/c ' + tipDate + ': ' + d.count + ' session' + (d.count !== 1 ? 's' : '');
+        return '<circle cx="' + p[0].toFixed(1) + '" cy="' + p[1].toFixed(1) + '" r="' + (isCur ? 4.5 : 3.5) + '"'
+          + ' fill="' + (d.count > 0 ? (isCur ? '#60a5fa' : '#3b82f6') : '#1e3a5f') + '"'
+          + ' stroke="' + (isCur ? '#93c5fd' : 'rgba(255,255,255,0.12)') + '" stroke-width="' + (isCur ? 2 : 1.5) + '">'
+          + '<title>' + tip + '</title></circle>';
+      }).join('');
+
+      el.innerHTML = '<svg viewBox="0 0 ' + VW + ' ' + VH + '" width="100%" style="display:block;overflow:visible">'
+        + '<defs><linearGradient id="wc-grad" x1="0" y1="0" x2="0" y2="1">'
+        + '<stop offset="0%" stop-color="#3b82f6" stop-opacity="0.28"/>'
+        + '<stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>'
+        + '</linearGradient></defs>'
+        + gridSVG
+        + '<path d="' + areaPath + '" fill="url(#wc-grad)"/>'
+        + '<path d="' + linePath + '" fill="none" stroke="#60a5fa" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>'
+        + xLabelsSVG
+        + dotsSVG
+        + '</svg>';
     }
 
     /* ── Log Workout Form ───────────────────────────── */
