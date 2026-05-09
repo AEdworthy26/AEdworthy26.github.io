@@ -1177,6 +1177,7 @@
     window.openPrHistory = function (cat, id) {
       var ex = findItem(routines[cat] || [], function (e) { return e.id === id; });
       if (!ex) return;
+      window._prCtx = { cat: cat, id: id };
       var isTime = ex.prType === 'time';
       var unit = ex.isBodyweight ? ' reps' : 'kg';
       var history = Array.isArray(ex.prHistory) ? ex.prHistory : [];
@@ -1202,7 +1203,6 @@
           var y = H - py - ((v - minV) / yRange) * (H - py * 2);
           svgHTML += '<circle cx="' + x.toFixed(1) + '" cy="' + y.toFixed(1) + '" r="4" fill="#fcd34d" stroke="#1e293b" stroke-width="1.5"/>';
         });
-        // Y axis labels
         svgHTML += '<text x="2" y="' + py + '" fill="rgba(255,255,255,0.3)" font-size="9" font-family="Inter,sans-serif">' + maxV + '</text>';
         svgHTML += '<text x="2" y="' + (H - 4) + '" fill="rgba(255,255,255,0.3)" font-size="9" font-family="Inter,sans-serif">' + minV + '</text>';
         svgHTML += '</svg>';
@@ -1211,13 +1211,18 @@
       var fmt = function (h) {
         return isTime ? String(h.value) : (parseFloat(h.value) + unit);
       };
-      var listHTML = history.slice().reverse().map(function (h) {
+
+      // Build list newest-first, keeping actual array index for delete
+      var listHTML = '';
+      for (var i = history.length - 1; i >= 0; i--) {
+        var h = history[i];
         var dateLabel = h.date || 'Previous best';
-        return '<div style="display:flex;justify-content:space-between;align-items:center;padding:.48rem 0;border-bottom:1px solid rgba(255,255,255,0.06);font-size:.82rem">'
-          + '<span style="color:rgba(255,255,255,0.5)">' + esc(dateLabel) + '</span>'
+        listHTML += '<div style="display:flex;justify-content:space-between;align-items:center;padding:.48rem 0;border-bottom:1px solid rgba(255,255,255,0.06);font-size:.82rem;gap:.6rem">'
+          + '<span style="color:rgba(255,255,255,0.5);flex:1">' + esc(dateLabel) + '</span>'
           + '<span style="font-weight:700;color:#fcd34d">' + esc(fmt(h)) + '</span>'
+          + '<button onclick="window.deletePrEntry(' + i + ')" style="background:none;border:1px solid rgba(239,68,68,0.3);border-radius:5px;padding:.14rem .48rem;font-size:.7rem;font-weight:700;color:#f87171;cursor:pointer;line-height:1.4;flex-shrink:0" onmouseover="this.style.background=\'rgba(239,68,68,0.12)\'" onmouseout="this.style.background=\'none\'">×</button>'
           + '</div>';
-      }).join('');
+      }
       if (!listHTML) {
         listHTML = '<div style="color:rgba(255,255,255,0.3);font-style:italic;padding:.9rem 0;text-align:center;font-size:.82rem">No history yet — log a workout to record progress</div>';
       }
@@ -1233,10 +1238,27 @@
         +   '<div style="font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-top:.35rem">Current PR</div>'
         + '</div>'
         + svgHTML
-        + (history.length ? '<div style="font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:.3rem;margin-top:.6rem">History</div>' + listHTML : listHTML)
+        + (history.length ? '<div style="font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:.3rem;margin-top:.6rem">History</div>' : '')
+        + listHTML
         + '<button class="btn-secondary" style="width:100%;margin-top:1.2rem" onclick="closeModal()">Close</button>'
         + '</div>';
       overlay.classList.add('open');
+    };
+
+    window.deletePrEntry = function (idx) {
+      var ctx = window._prCtx;
+      if (!ctx) return;
+      var ex = findItem(routines[ctx.cat] || [], function (e) { return e.id === ctx.id; });
+      if (!ex || !Array.isArray(ex.prHistory)) return;
+      ex.prHistory.splice(idx, 1);
+      if (ex.prHistory.length > 0) {
+        var vals = ex.prHistory.map(function (h) { return parseFloat(h.value) || 0; });
+        ex.pr = Math.max.apply(null, vals);
+      } else {
+        ex.pr = null;
+      }
+      save();
+      window.openPrHistory(ctx.cat, ctx.id);
     };
 
     /* ── Weekly Chart ───────────────────────────────── */
