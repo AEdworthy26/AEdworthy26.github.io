@@ -1557,7 +1557,13 @@ AVOID defaulting to the same ingredients repeatedly (lamb, sea bass, asparagus h
   Proteins: chicken, beef, pork, duck, lamb, venison, salmon, cod, prawns, mussels, crab, tofu, eggs, legumes, halloumi — vary every day
   Cuisines: Italian, French, Spanish, Greek, Moroccan, Middle Eastern, Indian, Thai, Japanese, Korean, Mexican, Vietnamese, American, British — rotate widely
   Meal types: pasta, risotto, curry, stew, stir-fry, salad, soup, tart, pie, roast, burger, noodles, grain bowl, tagine, braise — vary every session
-  Categories: include a mix of Dinner, Lunch, and Breakfast/Brunch across the week
+  Categories (use EXACTLY one of these): Chicken, Beef, Lamb, Pork, Fish & Seafood, Vegetarian, Vegan, Pasta & Grains, Soups & Stews, Desserts & Bakes, Other
+
+NUTRITION — for each recipe include realistic per-serving estimates based on the actual ingredients you list:
+  calories: kcal per serving (integer)
+  protein: grams per serving (integer)
+  fibre: grams per serving (integer)
+  healthScore: 0–100 holistic rating (consider: whole foods vs processed, lean protein, vegetables, fibre, saturated fat, added sugar, sodium — higher is healthier)
 
 Each recipe should feel distinctly different from the others in today's set.
 
@@ -1567,7 +1573,11 @@ window.SUGGESTED_RECIPES = [
   {{
     id: "sug1",
     title: "Recipe Title",
-    category: "Dinner",
+    category: "Chicken",
+    calories: 520,
+    protein: 38,
+    fibre: 4,
+    healthScore: 72,
     time: "45 mins",
     serves: "4",
     desc: "2-3 sentence description of what makes this dish special.",
@@ -1594,7 +1604,11 @@ window.SUGGESTED_RECIPES = [
   {{
     id: "sug2",
     title: "Second Recipe Title",
-    category: "Lunch",
+    category: "Fish & Seafood",
+    calories: 410,
+    protein: 32,
+    fibre: 3,
+    healthScore: 78,
     time: "30 mins",
     serves: "2",
     desc: "2-3 sentence description.",
@@ -1614,7 +1628,11 @@ window.SUGGESTED_RECIPES = [
   {{
     id: "sug3",
     title: "Third Recipe Title",
-    category: "Dinner",
+    category: "Vegetarian",
+    calories: 480,
+    protein: 18,
+    fibre: 9,
+    healthScore: 82,
     time: "1 hr",
     serves: "4",
     desc: "2-3 sentence description.",
