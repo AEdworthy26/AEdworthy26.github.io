@@ -513,6 +513,13 @@
 
     <!-- ── TAB: LOGBOOK ──────────────────────────────── -->
     <div class="tab-panel" id="tab-logbook">
+      <h3 class="section-h">Weekly Activity Trend</h3>
+      <div class="chart-card">
+        <div class="chart-legend">
+          <span class="chart-legend-dot"></span> Workouts &amp; activities combined &mdash; past 12 weeks (Mon &ndash; Sun)
+        </div>
+        <div id="weekly-chart"></div>
+      </div>
       <div id="logbook-list"></div>
     </div>
 
@@ -545,14 +552,6 @@
           </div>
           <div class="stat-lbl" style="margin-top:.3rem">Day Streak</div>
         </div>
-      </div>
-
-      <h3 class="section-h">Weekly Activity Trend</h3>
-      <div class="chart-card">
-        <div class="chart-legend">
-          <span class="chart-legend-dot"></span> Workouts &amp; activities combined &mdash; past 12 weeks (Mon &ndash; Sun)
-        </div>
-        <div id="weekly-chart"></div>
       </div>
 
       <div style="display:grid;grid-template-columns:1fr 1.8fr;gap:1.5rem;margin-top:.5rem">
@@ -1123,7 +1122,6 @@
           }).join('');
         }
       }
-      renderWeeklyChart();
     }
 
     function setText(id, val) {
@@ -1339,7 +1337,7 @@
       document.querySelectorAll('.main-tab').forEach(function (b) { b.classList.toggle('active', b.dataset.tab === tab); });
       document.querySelectorAll('.tab-panel').forEach(function (p) { p.classList.toggle('active', p.id === 'tab-' + tab); });
       if (tab === 'stats') renderStats();
-      if (tab === 'logbook') renderLogbook();
+      if (tab === 'logbook') { renderLogbook(); renderWeeklyChart(); }
       if (tab === 'activities') renderActivities();
       if (tab === 'log') { renderLogExRows(); renderLogCardioRows(); renderLogActRows(); renderLogCatExercises(); }
     };
