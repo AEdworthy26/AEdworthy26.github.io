@@ -1521,6 +1521,7 @@ function renderBudgetPlan() {
       var val = parseFloat(this.value) || 0;
       setBudget(yr, cat, mi, val);
       renderBudgetPlan();
+      renderDashboard();
     });
     inp.addEventListener('keydown', function(e) {
       if (e.key === 'Tab' && !e.shiftKey) {
@@ -1785,6 +1786,7 @@ function renderRecurringStrip() {
       DATA.transactions.push({ id: genId(), date: todayStr, type: tpl.type, category: tpl.category, amount: tpl.amount, details: tpl.details || '' });
       saveData();
       renderTracking();
+      renderDashboard();
       showToast('Transaction added from recurring template.', 'success');
     });
   });
@@ -1852,6 +1854,7 @@ function renderTracking() {
           DATA.transactions = DATA.transactions.filter(function(t) { return t.id !== btn.dataset.id; });
           saveData();
           renderTracking();
+          renderDashboard();
           showToast('Transaction deleted.', 'info');
         }, { icon: '🗑', confirmText: 'Delete' });
       });
@@ -2709,6 +2712,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('tx-details').value = '';
     document.getElementById('tx-date').value = new Date().toISOString().slice(0, 10);
     renderTracking();
+    renderDashboard();
   });
 
   // Settings save
