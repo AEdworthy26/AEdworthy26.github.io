@@ -1155,14 +1155,30 @@
         sun.setDate(sun.getDate() + 6);
         var monISO = mon.getFullYear() + '-' + pad(mon.getMonth() + 1) + '-' + pad(mon.getDate());
         var sunISO = sun.getFullYear() + '-' + pad(sun.getMonth() + 1) + '-' + pad(sun.getDate());
-        weeks.push({ mon: mon, monISO: monISO, sunISO: sunISO });
+        weeks.push({ mon: mon, sun: sun, monISO: monISO, sunISO: sunISO });
       }
 
+      // Build per-week data including named items for tooltip
       var data = weeks.map(function(w) {
-        var count = 0;
-        logs.forEach(function(l) { if (l.date >= w.monISO && l.date <= w.sunISO) count++; });
-        activities.forEach(function(a) { if (a.date >= w.monISO && a.date <= w.sunISO) count++; });
-        return { week: w, count: count };
+        var items = [];
+        logs.forEach(function(l) {
+          if (l.date >= w.monISO && l.date <= w.sunISO) {
+            var parts = [];
+            var exCount = (l.exercises || []).length;
+            var cardioCount = (l.cardio || []).length;
+            if (exCount) parts.push(exCount + ' exercise' + (exCount !== 1 ? 's' : ''));
+            if (cardioCount) parts.push(cardioCount + ' cardio');
+            items.push({ kind: 'workout', label: parts.length ? parts.join(', ') : 'Workout', date: l.date });
+          }
+        });
+        activities.forEach(function(a) {
+          if (a.date >= w.monISO && a.date <= w.sunISO) {
+            var dur = a.duration ? ' — ' + a.duration + ' ' + a.unit : '';
+            items.push({ kind: 'activity', name: a.name, label: a.name + dur, date: a.date });
+          }
+        });
+        items.sort(function(a, b) { return a.date < b.date ? -1 : 1; });
+        return { week: w, count: items.length, items: items };
       });
 
       var VW = 580, VH = 180;
@@ -1192,31 +1208,34 @@
       var linePath = pts.map(function(p, i) { return (i === 0 ? 'M' : 'L') + p[0].toFixed(1) + ',' + p[1].toFixed(1); }).join(' ');
       var areaPath = linePath + ' L' + pts[n-1][0].toFixed(1) + ',' + (pT + cH) + ' L' + pL.toFixed(1) + ',' + (pT + cH) + ' Z';
 
-      // X-axis labels: show every 3rd week + always current
+      // X-axis labels
       var xLabelsSVG = '';
       data.forEach(function(d, i) {
-        if (i === n - 1) return; // current week handled separately
+        if (i === n - 1) return;
         if (i % 3 !== 0) return;
         var lbl = d.week.mon.getDate() + ' ' + MONTHS[d.week.mon.getMonth()];
         xLabelsSVG += '<text x="' + xp(i).toFixed(1) + '" y="' + (pT + cH + 18) + '" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="rgba(255,255,255,0.35)">' + lbl + '</text>';
       });
-      // Current week label (highlighted)
       var curMon = data[n-1].week.mon;
       xLabelsSVG += '<text x="' + xp(n-1).toFixed(1) + '" y="' + (pT + cH + 18) + '" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="600" fill="rgba(96,165,250,0.85)">'
         + curMon.getDate() + ' ' + MONTHS[curMon.getMonth()] + '</text>';
 
-      // Dots with tooltips
+      // Dots — data-idx for hover wiring
       var dotsSVG = pts.map(function(p, i) {
         var d = data[i];
         var isCur = i === n - 1;
-        var tipDate = d.week.mon.getDate() + ' ' + MONTHS[d.week.mon.getMonth()];
-        var tip = 'w/c ' + tipDate + ': ' + d.count + ' session' + (d.count !== 1 ? 's' : '');
-        return '<circle cx="' + p[0].toFixed(1) + '" cy="' + p[1].toFixed(1) + '" r="' + (isCur ? 4.5 : 3.5) + '"'
+        return '<circle data-idx="' + i + '" cx="' + p[0].toFixed(1) + '" cy="' + p[1].toFixed(1) + '" r="' + (isCur ? 4.5 : 3.5) + '"'
           + ' fill="' + (d.count > 0 ? (isCur ? '#60a5fa' : '#3b82f6') : '#1e3a5f') + '"'
-          + ' stroke="' + (isCur ? '#93c5fd' : 'rgba(255,255,255,0.12)') + '" stroke-width="' + (isCur ? 2 : 1.5) + '">'
-          + '<title>' + tip + '</title></circle>';
+          + ' stroke="' + (isCur ? '#93c5fd' : 'rgba(255,255,255,0.12)') + '" stroke-width="' + (isCur ? 2 : 1.5) + '"'
+          + ' style="cursor:pointer"/>';
       }).join('');
 
+      // Invisible wider hit targets over each dot
+      var hitsSVG = pts.map(function(p, i) {
+        return '<circle data-idx="' + i + '" cx="' + p[0].toFixed(1) + '" cy="' + p[1].toFixed(1) + '" r="14" fill="transparent" style="cursor:pointer"/>';
+      }).join('');
+
+      el.style.position = 'relative';
       el.innerHTML = '<svg viewBox="0 0 ' + VW + ' ' + VH + '" width="100%" style="display:block;overflow:visible">'
         + '<defs><linearGradient id="wc-grad" x1="0" y1="0" x2="0" y2="1">'
         + '<stop offset="0%" stop-color="#3b82f6" stop-opacity="0.28"/>'
@@ -1227,7 +1246,62 @@
         + '<path d="' + linePath + '" fill="none" stroke="#60a5fa" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>'
         + xLabelsSVG
         + dotsSVG
+        + hitsSVG
         + '</svg>';
+
+      // Custom HTML tooltip
+      var tt = document.createElement('div');
+      tt.style.cssText = 'position:absolute;display:none;background:#0c1220;border:1px solid rgba(255,255,255,0.13);border-radius:11px;padding:0.6rem 0.85rem 0.7rem;pointer-events:none;z-index:30;box-shadow:0 10px 28px rgba(0,0,0,0.55);min-width:160px;max-width:240px;font-size:0.72rem;line-height:1.5;';
+      el.appendChild(tt);
+
+      var svgEl = el.querySelector('svg');
+      el.querySelectorAll('circle[data-idx]').forEach(function(circ) {
+        var idx = parseInt(circ.getAttribute('data-idx'), 10);
+        circ.addEventListener('mouseenter', function() {
+          var d = data[idx];
+          var monD = d.week.mon, sunD = d.week.sun;
+          var monLbl = monD.getDate() + ' ' + MONTHS[monD.getMonth()];
+          var sunLbl = sunD.getDate() + ' ' + MONTHS[sunD.getMonth()];
+          var html = '<div style="font-weight:700;color:#fff;font-size:0.75rem;margin-bottom:0.45rem;border-bottom:1px solid rgba(255,255,255,0.08);padding-bottom:0.35rem;">'
+            + monLbl + ' – ' + sunLbl + '</div>';
+          if (!d.items.length) {
+            html += '<div style="color:rgba(255,255,255,0.35);font-style:italic;">No activity this week</div>';
+          } else {
+            html += d.items.map(function(item) {
+              var icon = item.kind === 'workout' ? '🏋️' : actIcon(item.name || item.label);
+              var col = item.kind === 'workout' ? '#60a5fa' : '#34d399';
+              var badge = '<span style="font-size:0.58rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:' + col + ';background:rgba(255,255,255,0.06);border-radius:4px;padding:1px 5px;margin-right:0.4rem;flex-shrink:0;">'
+                + (item.kind === 'workout' ? 'Workout' : 'Activity') + '</span>';
+              return '<div style="display:flex;align-items:baseline;gap:0.2rem;margin-top:0.3rem;">'
+                + '<span style="flex-shrink:0;margin-right:0.25rem;">' + icon + '</span>'
+                + badge
+                + '<span style="color:rgba(255,255,255,0.82);">' + esc(item.label) + '</span>'
+                + '</div>';
+            }).join('');
+          }
+          tt.innerHTML = html;
+          // Position: measure after making visible but hidden
+          tt.style.visibility = 'hidden';
+          tt.style.display = 'block';
+          var svgRect = svgEl.getBoundingClientRect();
+          var elRect = el.getBoundingClientRect();
+          var scaleX = svgRect.width / VW;
+          var scaleY = svgRect.height / VH;
+          var cx = parseFloat(circ.getAttribute('cx')) * scaleX + (svgRect.left - elRect.left);
+          var cy = parseFloat(circ.getAttribute('cy')) * scaleY + (svgRect.top - elRect.top);
+          var left = cx - tt.offsetWidth / 2;
+          var top = cy - tt.offsetHeight - 14;
+          if (left < 4) left = 4;
+          if (left + tt.offsetWidth > el.offsetWidth - 4) left = el.offsetWidth - tt.offsetWidth - 4;
+          if (top < 4) top = cy + 18;
+          tt.style.left = left + 'px';
+          tt.style.top = top + 'px';
+          tt.style.visibility = 'visible';
+        });
+        circ.addEventListener('mouseleave', function() {
+          tt.style.display = 'none';
+        });
+      });
     }
 
     /* ── Log Workout Form ───────────────────────────── */
