@@ -2126,7 +2126,7 @@ function populateMonthSelects() {
     return '<option value="' + i + '"' + (i === curM ? ' selected' : '') + '>' + m + '</option>';
   }).join('');
   trkMonth.innerHTML = '<option value="">All Months</option>' + MONTHS_FULL.map(function(m, i) {
-    return '<option value="' + i + '">' + m + '</option>';
+    return '<option value="' + i + '"' + (i === curM ? ' selected' : '') + '>' + m + '</option>';
   }).join('');
   CSel.refreshById('dash-month');
   CSel.refreshById('trk-month');
