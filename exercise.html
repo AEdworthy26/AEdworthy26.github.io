@@ -583,7 +583,10 @@
         </div>
       </div>
 
-      <h3 class="section-h">Personal Records</h3>
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.5rem">
+        <h3 class="section-h" style="margin-bottom:0">Personal Records</h3>
+        <button onclick="rescanPRs()" style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.6);font-size:.68rem;font-weight:600;letter-spacing:.04em;padding:.3rem .75rem;border-radius:6px;cursor:pointer;" title="Re-process all logged workouts and update PRs">↻ Re-scan logs</button>
+      </div>
       <div class="pr-section" id="pr-section"></div>
     </div>
 
@@ -1167,6 +1170,62 @@
         prSection.innerHTML = anyPR ? html : '<div class="pr-empty">No PRs set yet — edit an exercise to add one</div>';
       }
     }
+
+    window.rescanPRs = function () {
+      // Clear all log-linked prHistory entries and recompute from scratch
+      ['push', 'pull', 'legs'].forEach(function (cat) {
+        (routines[cat] || []).forEach(function (ex) {
+          if (ex.wt === 'time') return;
+          // Keep only manually-set baseline entries (logId === null/undefined)
+          if (Array.isArray(ex.prHistory)) {
+            ex.prHistory = ex.prHistory.filter(function (h) { return !h.logId; });
+          } else {
+            ex.prHistory = [];
+          }
+          // If there's a manual baseline, seed pr from it; otherwise clear
+          var manualEntry = ex.prHistory.find(function (h) { return !h.logId; });
+          ex.pr = manualEntry ? manualEntry.value : null;
+        });
+      });
+
+      // Replay every log in chronological order
+      var sorted = logs.slice().sort(function (a, b) { return a.date < b.date ? -1 : a.date > b.date ? 1 : 0; });
+      sorted.forEach(function (log) {
+        (log.exercises || []).forEach(function (r) {
+          var found = null;
+          ['push', 'pull', 'legs'].forEach(function (cat) {
+            (routines[cat] || []).forEach(function (ex) {
+              if ((ex.name || '').toLowerCase().trim() === (r.name || '').toLowerCase().trim()) found = ex;
+            });
+          });
+          if (!found || found.wt === 'time') return;
+
+          if (found.isBodyweight) {
+            var reps = parseInt(r.weight, 10) || parseInt(r.reps, 10) || 0;
+            if (!reps) return;
+            var current = parseInt(found.pr, 10) || 0;
+            if (reps > current) {
+              found.pr = reps;
+              if (!Array.isArray(found.prHistory)) found.prHistory = [];
+              found.prHistory.push({ date: log.date, value: reps, logId: log.id });
+            }
+          } else {
+            var w = parseFloat(r.weight);
+            if (!w || isNaN(w)) return;
+            var current = parseFloat(found.pr) || 0;
+            if (w > current) {
+              found.pr = w;
+              if (!Array.isArray(found.prHistory)) found.prHistory = [];
+              found.prHistory.push({ date: log.date, value: w, logId: log.id });
+            }
+          }
+        });
+      });
+
+      save();
+      renderStats();
+      showToast('PRs updated from workout logs ✓');
+    };
 
     function setText(id, val) {
       var el = document.getElementById(id);
