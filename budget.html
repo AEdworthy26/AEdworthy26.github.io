@@ -180,7 +180,15 @@
     /* ── CHARTS ── */
     .charts-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1rem; }
     .chart-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.1rem; box-shadow: var(--shadow-sm); }
-    .chart-card-title { font-size: .68rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; margin-bottom: .75rem; text-align: center; background: linear-gradient(90deg, #1d4ed8 0%, #6d28d9 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .chart-card-title { font-size: .7rem; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; margin-bottom: .9rem; padding-bottom: .6rem; border-bottom: 1.5px solid var(--border); display: flex; align-items: center; gap: .45rem; color: var(--ink); position: relative; }
+    .chart-card-title::after { content: ''; position: absolute; bottom: -1.5px; left: 0; width: 28px; height: 1.5px; }
+    .chart-card-title.ct-income::after { background: #059669; }
+    .chart-card-title.ct-expense::after { background: #dc2626; }
+    .chart-card-title.ct-saving::after { background: #2563eb; }
+    .chart-card-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+    .ct-income .chart-card-dot { background: #059669; }
+    .ct-expense .chart-card-dot { background: #dc2626; }
+    .ct-saving .chart-card-dot { background: #2563eb; }
     .chart-card-body { display: flex; flex-direction: column; gap: .75rem; }
     .chart-container { position: relative; height: 150px; }
     .donut-legend { display: flex; flex-direction: column; gap: .3rem; }
@@ -359,14 +367,34 @@
 
     /* ── HEATMAP ── */
     .heatmap-section { margin-top: 1.5rem; }
-    .heatmap-title { font-size: .7rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: .75rem; }
+    .heatmap-header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: .5rem; margin-bottom: 1rem; }
+    .heatmap-title { font-size: .7rem; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; color: var(--ink); }
+    .heatmap-legend { display: flex; align-items: center; gap: .75rem; flex-wrap: wrap; }
+    .heatmap-legend-item { display: flex; align-items: center; gap: .3rem; font-size: .62rem; color: var(--muted); font-weight: 500; }
+    .heatmap-legend-swatch { width: 10px; height: 10px; border-radius: 3px; flex-shrink: 0; }
     .heatmap-wrap { overflow-x: auto; }
-    .heatmap-grid { border-collapse: collapse; width: 100%; font-size: .75rem; }
-    .heatmap-grid th { font-size: .6rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; color: var(--muted); padding: .35rem .4rem; text-align: center; border-bottom: 2px solid var(--border); white-space: nowrap; }
+    .heatmap-grid { border-collapse: separate; border-spacing: 4px; width: 100%; }
+    .heatmap-grid th { font-size: .58rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; color: var(--muted); padding: .2rem .4rem; text-align: center; white-space: nowrap; }
     .heatmap-grid th:first-child { text-align: left; min-width: 120px; }
-    .heatmap-grid td { padding: .3rem .35rem; text-align: center; border: 1px solid var(--border); font-size: .7rem; font-variant-numeric: tabular-nums; cursor: pointer; transition: filter .15s; min-width: 52px; }
-    .heatmap-grid td:first-child { text-align: left; font-weight: 600; font-size: .78rem; padding-left: .5rem; background: var(--subtle) !important; cursor: default; }
-    .heatmap-grid td:hover:not(:first-child) { filter: brightness(.92); }
+    .hm-cur-month-hdr { color: var(--ink) !important; position: relative; }
+    .hm-cur-month-hdr::after { content: '●'; font-size: .4rem; color: #2563eb; position: absolute; top: -.1rem; right: .2rem; }
+    .hm-cell { border-radius: 8px; padding: .45rem .3rem .35rem; text-align: center; cursor: pointer; transition: transform .12s, box-shadow .12s; min-width: 60px; font-variant-numeric: tabular-nums; vertical-align: middle; }
+    .hm-cell:hover { transform: translateY(-1px); box-shadow: 0 3px 8px rgba(0,0,0,.12); }
+    .hm-pct { font-size: .72rem; font-weight: 700; line-height: 1.1; display: block; }
+    .hm-amt { font-size: .58rem; opacity: .75; display: block; margin-top: .1rem; }
+    .hm-bar-wrap { height: 3px; border-radius: 2px; margin-top: .3rem; background: rgba(0,0,0,.08); overflow: hidden; }
+    .hm-bar-fill { height: 100%; border-radius: 2px; }
+    .hm-empty { border-radius: 8px; min-width: 60px; background: var(--subtle); }
+    .hm-future { opacity: .38; }
+    .hm-row-label { font-size: .78rem; font-weight: 600; color: var(--ink); padding: .3rem .5rem; white-space: nowrap; vertical-align: middle; }
+    .hm-annual-cell { border-radius: 8px; padding: .45rem .5rem .35rem; text-align: center; font-variant-numeric: tabular-nums; vertical-align: middle; opacity: .95; }
+    .hm-annual-pct { font-size: .72rem; font-weight: 700; line-height: 1.1; display: block; }
+    .hm-annual-amt { font-size: .58rem; opacity: .75; display: block; margin-top: .1rem; }
+    #hm-tooltip { position: fixed; pointer-events: none; z-index: 999; background: #1e293b; color: #f1f5f9; border-radius: 8px; padding: .55rem .75rem; font-size: .72rem; line-height: 1.55; box-shadow: 0 4px 16px rgba(0,0,0,.25); white-space: nowrap; display: none; }
+    #hm-tooltip .hmt-label { font-weight: 700; font-size: .75rem; margin-bottom: .2rem; }
+    #hm-tooltip .hmt-row { display: flex; justify-content: space-between; gap: 1.5rem; }
+    #hm-tooltip .hmt-key { color: #94a3b8; }
+    #hm-tooltip .hmt-val { font-weight: 600; }
 
     /* ── BUDGET PROGRESS ── */
     #budget-progress-section { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 1rem; }
@@ -559,11 +587,15 @@
     </div>
 
     <div class="heatmap-section card">
-      <div class="heatmap-title" id="heatmap-title">Year at a Glance</div>
+      <div class="heatmap-header">
+        <div class="heatmap-title" id="heatmap-title">Year at a Glance</div>
+        <div class="heatmap-legend" id="heatmap-legend"></div>
+      </div>
       <div class="heatmap-wrap">
         <table class="heatmap-grid" id="heatmap-table"></table>
       </div>
     </div>
+    <div id="hm-tooltip"></div>
   </div>
 
   <!-- ═══════════════════════════ BUDGET PLAN ═══════════════════════════ -->
@@ -1279,7 +1311,7 @@ function renderDashboard() {
     { id: 'donut-saving', label: 'Savings Breakdown', cats: DATA.categories.saving, type: 'saving' }
   ];
   donutEl.innerHTML = DONUT_DEFS.map(function(d) {
-    return '<div class="chart-card"><div class="chart-card-title">' + d.label + '</div>' +
+    return '<div class="chart-card"><div class="chart-card-title ct-' + d.type + '"><span class="chart-card-dot"></span>' + d.label + '</div>' +
       '<div class="chart-card-body">' +
       '<div class="chart-container"><canvas id="' + d.id + '"></canvas></div>' +
       '<div class="donut-legend" id="' + d.id + '-legend"></div>' +
@@ -1378,13 +1410,39 @@ function renderDashboard() {
 }
 
 function renderHeatmap(year, selectedMonthIdx) {
-  var titleEl = document.getElementById('heatmap-title');
-  var tableEl = document.getElementById('heatmap-table');
+  var titleEl  = document.getElementById('heatmap-title');
+  var tableEl  = document.getElementById('heatmap-table');
+  var legendEl = document.getElementById('heatmap-legend');
   if (!titleEl || !tableEl) return;
+
+  var now       = new Date();
+  var curYear   = now.getFullYear();
+  var curMonth  = now.getMonth();
 
   titleEl.textContent = 'Year at a Glance — ' + year;
 
-  // Only show expense cats that have any budget in the year
+  // Legend
+  if (legendEl) {
+    var legendItems = [
+      { color: '#f1f5f9', label: 'No spend' },
+      { color: '#10b981', label: '< 50%' },
+      { color: '#f59e0b', label: '50–80%' },
+      { color: '#ef4444', label: '80–100%' },
+      { color: '#dc2626', label: 'Over budget' }
+    ];
+    legendEl.innerHTML = legendItems.map(function(l) {
+      return '<div class="heatmap-legend-item"><div class="heatmap-legend-swatch" style="background:' + l.color + '"></div>' + l.label + '</div>';
+    }).join('');
+  }
+
+  function heatColor(ratio) {
+    if (ratio <= 0)   return { bg: '#f1f5f9', text: '#94a3b8', bar: '#cbd5e1' };
+    if (ratio <= 0.5) return { bg: 'rgba(16,185,129,0.14)', text: '#065f46', bar: '#10b981' };
+    if (ratio <= 0.8) return { bg: 'rgba(245,158,11,0.18)', text: '#92400e', bar: '#f59e0b' };
+    if (ratio <= 1.0) return { bg: 'rgba(239,68,68,0.15)', text: '#991b1b', bar: '#ef4444' };
+    return { bg: '#dc2626', text: '#ffffff', bar: 'rgba(255,255,255,0.55)' };
+  }
+
   var cats = DATA.categories.expense.filter(function(cat) {
     for (var mi = 0; mi < 12; mi++) {
       if (getEffectiveBudget(year, cat, mi) > 0) return true;
@@ -1393,39 +1451,62 @@ function renderHeatmap(year, selectedMonthIdx) {
   });
 
   if (cats.length === 0) {
-    tableEl.innerHTML = '<tr><td colspan="13" style="text-align:center;padding:1.5rem;color:var(--muted);font-style:italic;">No expense budgets set for ' + year + '</td></tr>';
+    tableEl.innerHTML = '<tr><td colspan="14" style="text-align:center;padding:1.5rem;color:var(--muted);font-style:italic;">No expense budgets set for ' + year + '</td></tr>';
     return;
   }
 
-  var html = '<thead><tr><th>Category</th>';
-  MONTHS.forEach(function(m) { html += '<th>' + m + '</th>'; });
-  html += '</tr></thead><tbody>';
+  // Header row
+  var html = '<thead><tr><th></th>';
+  MONTHS.forEach(function(m, mi) {
+    var isCur = (year === curYear && mi === curMonth);
+    html += '<th class="' + (isCur ? 'hm-cur-month-hdr' : '') + '">' + m + '</th>';
+  });
+  html += '<th>Annual</th></tr></thead><tbody>';
 
   cats.forEach(function(cat) {
-    html += '<tr><td>' + cat + '</td>';
+    html += '<tr><td class="hm-row-label">' + cat + '</td>';
+    var annualSpent  = 0;
+    var annualBudget = 0;
     for (var mi = 0; mi < 12; mi++) {
       var budget = getEffectiveBudget(year, cat, mi);
+      var isFuture = (year > curYear) || (year === curYear && mi > curMonth);
       if (budget <= 0) {
-        html += '<td style="background:#f8fafc;color:var(--muted);" data-month="' + mi + '">—</td>';
+        html += '<td class="hm-empty' + (isFuture ? ' hm-future' : '') + '"></td>';
       } else {
         var spent = txForPeriod(year, mi).filter(function(t) { return t.type === 'expense' && t.category === cat; })
           .reduce(function(s, t) { return s + t.amount; }, 0);
-        var ratio = spent / budget;
-        var bg;
-        if (ratio <= 0) bg = '#ffffff';
-        else if (ratio <= 0.8) {
-          // interpolate white to #fef3c7
-          var pct = ratio / 0.8;
-          bg = 'rgba(254,243,199,' + pct.toFixed(2) + ')';
-        } else if (ratio <= 1.0) {
-          bg = '#fca5a5';
-        } else {
-          bg = '#dc2626';
-        }
-        var textColor = ratio > 1.0 ? '#fff' : '';
-        var styleStr = 'background:' + bg + ';' + (textColor ? 'color:' + textColor + ';' : '');
-        html += '<td style="' + styleStr + '" data-month="' + mi + '">' + fmt(spent) + '</td>';
+        annualSpent  += spent;
+        annualBudget += budget;
+        var ratio  = spent / budget;
+        var clamp  = Math.min(ratio, 1);
+        var col    = heatColor(ratio);
+        var pctStr = ratio <= 0 ? '0%' : (ratio * 100).toFixed(0) + '%';
+        html += '<td class="hm-cell' + (isFuture ? ' hm-future' : '') + '"'
+          + ' style="background:' + col.bg + ';color:' + col.text + ';"'
+          + ' data-month="' + mi + '"'
+          + ' data-cat="' + cat.replace(/"/g, '&quot;') + '"'
+          + ' data-budget="' + budget + '"'
+          + ' data-spent="' + spent.toFixed(2) + '"'
+          + ' data-ratio="' + ratio.toFixed(3) + '">'
+          + '<span class="hm-pct">' + pctStr + '</span>'
+          + '<span class="hm-amt">£' + spent.toFixed(0) + '</span>'
+          + '<div class="hm-bar-wrap"><div class="hm-bar-fill" style="width:' + (clamp * 100).toFixed(1) + '%;background:' + col.bar + ';"></div></div>'
+          + '</td>';
       }
+    }
+    // Annual summary cell
+    if (annualBudget > 0) {
+      var aRatio = annualSpent / annualBudget;
+      var aCol   = heatColor(aRatio);
+      var aClamp = Math.min(aRatio, 1);
+      var aPct   = (aRatio * 100).toFixed(0) + '%';
+      html += '<td class="hm-annual-cell" style="background:' + aCol.bg + ';color:' + aCol.text + ';">'
+        + '<span class="hm-annual-pct">' + aPct + '</span>'
+        + '<span class="hm-annual-amt">£' + annualSpent.toFixed(0) + '</span>'
+        + '<div class="hm-bar-wrap"><div class="hm-bar-fill" style="width:' + (aClamp * 100).toFixed(1) + '%;background:' + aCol.bar + ';"></div></div>'
+        + '</td>';
+    } else {
+      html += '<td class="hm-empty"></td>';
     }
     html += '</tr>';
   });
@@ -1433,8 +1514,36 @@ function renderHeatmap(year, selectedMonthIdx) {
   html += '</tbody>';
   tableEl.innerHTML = html;
 
+  // Tooltip
+  var tip = document.getElementById('hm-tooltip');
+  if (tip) {
+    tableEl.querySelectorAll('.hm-cell').forEach(function(cell) {
+      cell.addEventListener('mouseenter', function(e) {
+        var cat    = cell.dataset.cat;
+        var mi     = parseInt(cell.dataset.month);
+        var budget = parseFloat(cell.dataset.budget) || 0;
+        var spent  = parseFloat(cell.dataset.spent)  || 0;
+        var ratio  = parseFloat(cell.dataset.ratio)  || 0;
+        var status = ratio <= 0 ? 'No spend' : ratio <= 0.5 ? 'On track' : ratio <= 0.8 ? 'Getting close' : ratio <= 1.0 ? 'Nearly over' : 'Over budget';
+        tip.innerHTML = '<div class="hmt-label">' + cat + ' — ' + MONTHS[mi] + '</div>'
+          + '<div class="hmt-row"><span class="hmt-key">Budget</span><span class="hmt-val">£' + budget.toFixed(2) + '</span></div>'
+          + '<div class="hmt-row"><span class="hmt-key">Spent</span><span class="hmt-val">£' + spent.toFixed(2) + '</span></div>'
+          + '<div class="hmt-row"><span class="hmt-key">Used</span><span class="hmt-val">' + (ratio * 100).toFixed(1) + '%</span></div>'
+          + '<div class="hmt-row"><span class="hmt-key">Status</span><span class="hmt-val">' + status + '</span></div>';
+        tip.style.display = 'block';
+      });
+      cell.addEventListener('mousemove', function(e) {
+        tip.style.left = (e.clientX + 14) + 'px';
+        tip.style.top  = (e.clientY - 10) + 'px';
+      });
+      cell.addEventListener('mouseleave', function() {
+        tip.style.display = 'none';
+      });
+    });
+  }
+
   // Click handlers — set dash-month and re-render
-  tableEl.querySelectorAll('td[data-month]').forEach(function(cell) {
+  tableEl.querySelectorAll('.hm-cell').forEach(function(cell) {
     cell.addEventListener('click', function() {
       var mi = parseInt(this.dataset.month);
       var dashMonthEl = document.getElementById('dash-month');
