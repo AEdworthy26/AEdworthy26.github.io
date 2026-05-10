@@ -3,6 +3,45 @@
 
 var RICS_LOG = [
   {
+    "date": "2026-05-10",
+    "topic": "Option Agreements: Structures, Conditionality and Negotiation Strategy in Residential Land Transactions",
+    "module": "Land and Joint Ventures",
+    "level": 3,
+    "apc_competency": "Planning and Development Management (Level 3)",
+    "focus": "This lesson examines option agreement structures \u2014 conditional, unconditional, and hybrid \u2014 with a focus on how they are negotiated, priced and managed in residential-led land transactions involving RPs, JV partners and private landowners. The lesson addresses conditionality mechanics, option fees, exclusivity, extension triggers and the commercial risk points that arise between exchange and exercise. Directly relevant to Alfie\\'s pre-acquisition and land assembly work, where option structures are the primary tool for controlling risk on planning-speculative sites.",
+    "image": "https://images.unsplash.com/photo-1682403299053-5dea162de9b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxPcHRpb24lMjBBZ3JlZW1lbnRzJTNBJTIwU3RydWN0dXJlcyUyQyUyMFVLJTIwcHJvcGVydHklMjBhcmNoaXRlY3R1cmUlMjBidWlsZGluZyUyMGV4dGVyaW9yfGVufDB8MHx8fDE3NzgzOTAxOTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "content": [],
+    "summary": [
+      "A conditional option grants the right (not obligation) to purchase land on satisfaction of a defined planning condition \u2014 the 'satisfactory planning permission' test must be drafted with precision, specifying minimum unit numbers, tenure split and density thresholds to avoid exercise-stage disputes.",
+      "The land price formula \u2014 GDV-linked, fixed-indexed or open-book residual \u2014 determines commercial outcome; key variables including profit assumption, abnormal cost deductions and S106 treatment must be agreed at heads of terms, not left to exercise-stage negotiation.",
+      "Exclusivity must be protected by registering the option as a notice against the freehold title at HMLR immediately post-exchange \u2014 an unregistered option is vulnerable to a bona fide purchaser for value without notice.",
+      "Extension mechanics tied to planning events (PPA programme, committee resolution, JR challenge) are essential to protect the developer from longstop expiry caused by LPA delays \u2014 automatic extension triggers should be explicitly drafted and aligned with the planning programme.",
+      "In RP-led transactions, Homes England AHP grant should be excluded from the GDV formula to protect the developer from grant risk; tenure covenants imposed by landowners conflict with RP obligations and should be resisted; title due diligence (including restrictive covenant review) cannot be deferred to exercise stage."
+    ],
+    "qa": [
+      {
+        "q": "You have exchanged a conditional option on a brownfield site in Manchester. The LPA has now exceeded its 13-week determination period and it is approaching month seven with no decision. Your option longstop is in 14 months. What steps do you take and what contractual protections should you have in place?",
+        "a": "First, review the option agreement for automatic extension triggers \u2014 ideally the agreement will extend the longstop by the period of LPA delay beyond an agreed baseline. If a Planning Performance Agreement (PPA) is in place, the PPA programme should be referenced as the extension basis. If no automatic extension exists, serve notice on the landowner of the delay and seek a negotiated extension, potentially against a further option fee. Simultaneously, consider whether to issue an appeal for non-determination under s.78 TCPA 1990 \u2014 a non-determination appeal preserves the developer\\'s planning programme and can be withdrawn if the LPA subsequently resolves to grant. At Investment Committee, report the programme risk and the cost implication of an extended option period. The lesson: extension mechanics tied to planning events should be negotiated at heads of terms stage, not after problems arise."
+      },
+      {
+        "q": "Your landowner is insisting on a GDV-linked land price formula. How do you ensure that Homes England AHP grant does not inflate the land price paid to the landowner?",
+        "a": "The GDV formula should expressly exclude grant income \u2014 the definition of GDV for the purposes of the formula should be restricted to market sale receipts only, with affordable housing grant receipts carved out entirely. The commercial rationale to present to the landowner is that grant is not guaranteed at option stage, is subject to Spending Review and Homes England allocation decisions, and may be reduced or withdrawn \u2014 the developer therefore cannot factor uncertain grant income into a committed land price. This is consistent with NPPG guidance on grant treatment in viability assessments. The formula should also specify that the affordable unit GDV (whether at social rent or shared ownership) is either excluded or valued at an agreed transfer price to the RP, not at open market value."
+      },
+      {
+        "q": "What is the legal difference between an option to purchase and a right of pre-emption, and why does it matter in a competitive land acquisition context?",
+        "a": "An option to purchase gives the developer the unilateral right to compel the landowner to sell on exercise \u2014 the developer controls the transaction and can force completion at any point within the option period on satisfaction of conditions. A right of pre-emption (right of first refusal) only obliges the landowner to offer the site to the developer before selling to a third party \u2014 it does not give the developer the right to compel sale at a time of its choosing. In a competitive context, a pre-emption right is significantly weaker: if the landowner decides not to sell at all, the pre-emption right is not triggered. Options should always be preferred; pre-emption rights should only be accepted as a fallback where the landowner refuses an option, with a view to converting to a full option as the relationship matures. Both should be registered at HMLR to bind successors in title."
+      },
+      {
+        "q": "You discover at exercise stage that the site is subject to a 1970 restrictive covenant preventing residential use. Planning permission has been granted. What are your options and which would you recommend in a time-pressured transaction?",
+        "a": "Planning permission does not override private law interests \u2014 the restrictive covenant remains enforceable regardless of the grant of consent. The developer has three principal options: (1) restrictive covenant indemnity insurance \u2014 the fastest and most cost-effective route where the covenant is historic, the covenantee is untraceable or likely deceased, and the risk of enforcement is assessed as low by insurers; (2) application to the Upper Tribunal (Lands Chamber) under s.84 LPA 1925 for modification or discharge on grounds including obsoleteness or impediment to reasonable use \u2014 time-consuming (typically 12\u201318 months minimum) and uncertain; (3) direct negotiation with the covenantee if identifiable, seeking a formal release by deed. In a time-pressured transaction, indemnity insurance is almost always the recommended first step \u2014 it is available quickly and at relatively low cost. The option agreement should contain a condition permitting the developer to walk away if insurance is unavailable on acceptable terms."
+      },
+      {
+        "q": "How would you structure the 'satisfactory planning permission' definition in an option agreement for a 200-unit residential scheme where 35% affordable housing is the local policy requirement?",
+        "a": "The satisfactory planning permission definition is one of the most commercially critical drafting points in the agreement. For a 200-unit scheme with 35% affordable policy, a robust definition would specify: (a) minimum net residential units \u2014 e.g. no fewer than 180 units (allowing for scheme variation through design development); (b) maximum affordable percentage \u2014 e.g. permission must not require affordable housing in excess of 40% of total units by habitable room, to protect viability headroom; (c) no conditions requiring on-site infrastructure obligations materially beyond the agreed S106 base position at heads of terms; (d) no condition that would prohibit commencement within a reasonable period (e.g. 36 months); (e) absence of third-party challenge \u2014 some agreements include a JR standstill period before the developer is obliged to exercise, allowing time to assess challenge risk. The walkaway right should be expressly linked to the developer\\'s right not to exercise if any of these conditions are not met \u2014 the agreement should make clear that a permission failing the satisfaction test is treated as if no permission has been granted."
+      }
+    ]
+  },
+  {
     "date": "2026-05-09",
     "topic": "Design Review Panels, Design Codes and HQI Compliance: Managing Design Quality on Residential-Led Schemes",
     "module": "Design Team Management",

@@ -1,11 +1,10 @@
 // quiz-data.js
-// Auto-updated 2026-05-09 — do not edit manually
+// Auto-updated 2026-05-10 — do not edit manually
 
 window.QUIZ_DATA = {
-  date: '2026-05-09',
-  category: 'Famous Firsts',
-  question: 'Which woman became the first person to swim the English Channel in both directions, completing the double crossing in 1961?',
-  answer: 'Brenda Fisher... actually, it was Abla Khairi — no. The correct answer is: Linda McGill. Wait — the first person to swim the Channel both ways non-stop was Antonio Abertondo in 1961, but the first woman to swim the Channel at all was Gertrude Ederle in 1926.',
-  answer: 'Gertrude Ederle, in 1926.',
-  funFact: 'Gertrude Ederle, an American swimmer and Olympic gold medallist, crossed the English Channel on 6th August 1926, becoming the first woman to do so and smashing the existing men\'s record by nearly two hours. She completed the 35-mile crossing in 14 hours and 31 minutes despite treacherous conditions. On her return to New York, she was given a ticker-tape parade attended by an estimated two million people.'
+  date: '2026-05-10',
+  category: 'Music',
+  question: 'Which British rock band took their name from a 1930s American slang term for a type of cheap, low-quality wine, and went on to headline Glastonbury Festival in 1995?',
+  answer: 'Pulp',
+  funFact: 'Pulp, fronted by Jarvis Cocker, delivered one of the most celebrated Glastonbury headline sets in the festival\'s history, stepping in at short notice after The Stone Roses pulled out due to injury. The band\'s name was chosen simply for its gritty, unpretentious feel rather than any specific reference to the slang term. Their 1995 album "Different Class" became one of the defining records of the Britpop era.'
 };
