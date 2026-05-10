@@ -1182,9 +1182,12 @@
           } else {
             ex.prHistory = [];
           }
-          // If there's a manual baseline, seed pr from it; otherwise clear
-          var manualEntry = ex.prHistory.find(function (h) { return !h.logId; });
-          ex.pr = manualEntry ? manualEntry.value : null;
+          // If there are manual baseline entries, derive pr from them.
+          // Otherwise leave ex.pr untouched — it may have been set before history tracking existed.
+          var manualVals = ex.prHistory.map(function (h) { return parseFloat(h.value) || 0; });
+          if (manualVals.length > 0) {
+            ex.pr = Math.max.apply(null, manualVals);
+          }
         });
       });
 
