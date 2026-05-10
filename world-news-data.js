@@ -1,60 +1,60 @@
 // world-news-data.js
-// Auto-updated 2026-05-09 — do not edit manually
+// Auto-updated 2026-05-10 — do not edit manually
 
 var WORLD_NEWS = {
-  date: "2026-05-09",
+  date: "2026-05-10",
   main: {
-    title: "US Strikes Iranian Oil Tankers as Tehran Accuses Washington of 'Reckless Military Adventure'",
+    title: "Putin Signals Ukraine War 'Coming to an End' as Victory Day Parade Reflects Moscow\'s Vulnerabilities",
     category: "Geopolitics",
     content: [
-      "The United States has carried out strikes on two Iranian oil tankers in the Strait of Hormuz, with the Pentagon releasing footage of the attacks as tensions between Washington and Tehran continue to escalate sharply. Iran\'s Foreign Minister Abbas Araghchi condemned the action in forceful terms, accusing the US of embarking on a 'reckless military adventure' that he argued was deliberately timed to sabotage diplomatic progress. Araghchi stated that each time a viable solution appears on the negotiating table, the US resorts to military strikes — a pattern he described as deeply destabilising to the entire region.",
-      "The Strait of Hormuz, one of the world\'s most strategically vital waterways through which a significant share of global oil supplies flow, has become a flashpoint in the escalating confrontation. Reports of clashes in the strait have compounded fears that the conflict could disrupt international energy markets and draw in additional regional actors. The strikes on the Iranian tankers mark a significant escalation in what has been a period of sustained military engagement between US forces and Iran.",
-      "Iran\'s position has been that the US attacks are not only militarily provocative but politically calculated, undermining Iranian moderates who have sought to engage in dialogue. Araghchi\'s remarks signal that Tehran views the strikes as a fundamental obstacle to any negotiated settlement, raising doubts about whether a diplomatic off-ramp remains viable in the near term. Meanwhile, Al Jazeera\'s live coverage of the conflict indicates that the US is still awaiting Tehran\'s formal reply to a proposed peace framework.",
-      "The broader regional picture has grown increasingly grim, with Israeli strikes killing at least 31 people in southern Lebanon — including a rescue worker — according to Lebanon\'s National News Agency. The simultaneity of these developments across multiple fronts has alarmed international observers and regional governments alike, who fear a wider conflagration if diplomatic channels remain blocked. The situation in the Strait of Hormuz is being watched particularly closely by Asian economies heavily dependent on Gulf oil exports.",
-      "The conflict has placed enormous pressure on international institutions and third-party mediators to intervene before the situation deteriorates further. With Iran accusing the US of bad faith and Washington framing its strikes as responses to Iranian provocations, the two sides appear locked in a cycle of action and recrimination that shows little sign of breaking. The coming days — and whether Tehran ultimately responds to the proposed peace deal — are likely to determine whether a diplomatic resolution remains possible or whether the region is entering a prolonged period of open conflict."
+      "Russian President Vladimir Putin has declared that he believes the conflict in Ukraine is 'coming to an end,' signalling an openness to negotiations while simultaneously condemning Western nations for their continued backing of President Volodymyr Zelensky. In a striking diplomatic gesture, Putin also indicated he would be willing to meet Zelensky in a third country, contingent on the reaching of a long-term peace agreement. The statements represent some of the most direct language Putin has used regarding a potential resolution to a war that has now dragged on for well over four years.",
+      "The remarks came in the immediate aftermath of Russia\'s Victory Day parade on 9 May — a celebration of the Soviet Union\'s defeat of Nazi Germany in 1945 that Putin has long used as a centrepiece of Russian nationalist identity. However, this year\'s parade was notably scaled back compared to previous displays, with analysts and observers noting the diminished spectacle reflects growing security concerns as the war bleeds ever closer to Russian cities. The reduction in pomp has added to a broader sense that Moscow and other population centres can no longer be fully insulated from the consequences of the prolonged conflict.",
+      "The New York Times reported that the shrunken parade underscores Putin\'s growing vulnerability on the home front, with drone strikes and cross-border incursions having repeatedly demonstrated that Russian territory is far from immune to Ukrainian military action. Security fears reportedly drove decisions about which military hardware to display and how many troops to mobilise, a stark contrast to the grandiose shows of force that characterised earlier years of Putin\'s rule. For many observers, the muted ceremony was as telling a signal about the state of the war as any battlefield report.",
+      "Putin\'s comments about negotiations arrive amid a complex diplomatic landscape. The Trump administration in Washington has been engaged in talks aimed at brokering some form of ceasefire or settlement, and pressure on Kyiv to consider a negotiated end to hostilities has been intensifying from multiple quarters. Zelensky, for his part, has maintained that Ukraine will not accept any deal that cedes sovereign territory or rewards Russian aggression, a position that continues to put him at odds with some of his Western partners who are quietly pushing for compromise.",
+      "The coming weeks are likely to prove pivotal. Any genuine movement toward talks would mark a dramatic shift after years of grinding attrition warfare that has claimed hundreds of thousands of lives and displaced millions. Yet scepticism remains widespread: Putin\'s previous overtures have often been accompanied by continued military operations on the ground, and Ukrainian officials have consistently warned that Russian expressions of interest in peace cannot be taken at face value without concrete, verifiable commitments. The international community will be watching closely to see whether this latest signal represents a genuine change of course or another manoeuvre in a conflict defined by its diplomatic complexity."
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/9c78/live/9157bc30-4add-11f1-9eb0-1940b1e77213.jpg",
-    source: "BBC News",
-    sourceUrl: "https://www.bbc.com/news/articles/c99lpn9ze8ro?at_medium=RSS&at_campaign=rss"
+    image: "https://images.unsplash.com/photo-1646005995482-c1b65bd42d3b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxQdXRpbiUyMFNpZ25hbHMlMjBVa3JhaW5lJTIwV2FyJTIwfGVufDB8MHx8fDE3NzgzODkyODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    source: "Al Jazeera",
+    sourceUrl: "https://www.aljazeera.com/news/2026/5/10/putin-suggests-russias-war-on-ukraine-coming-to-an-end?traffic_source=rss"
   },
   secondary: [
     {
       id: "s1",
-      title: "Trump Announces Three-Day Russia-Ukraine Ceasefire Amid Victory Day Tensions",
-      summary: "President Trump says Russia and Ukraine have agreed to a three-day ceasefire, even as both sides accuse each other of violating earlier truces around Victory Day commemorations.",
+      title: "Hantavirus-Hit Cruise Ship Docks in Tenerife as Medics Stand Ready",
+      summary: "The MV Hondius arrives in Tenerife carrying passengers affected by a deadly hantavirus outbreak, with medical teams mobilised at the port to manage the public health emergency.",
       body: [
-        "President Trump announced that Russia and Ukraine have agreed to observe a three-day ceasefire, a claim confirmed by Ukrainian President Volodymyr Zelenskyy and Kremlin foreign affairs adviser Yuri Ushakov. The agreement also includes a prisoner exchange, offering a rare moment of potential de-escalation in a conflict that has ground on for years. However, the announcement came amid mutual accusations that each side had already violated separate ceasefires declared around Russia\'s Victory Day — the commemoration of the Soviet Union\'s defeat of Nazi Germany in World War Two.",
-        "Victory Day celebrations in Moscow were notably muted this year, overshadowed by fears of Ukrainian drone attacks and a war-weary Russian public. The timing of any ceasefire around the symbolic holiday carries significant political weight for the Kremlin, making its durability deeply uncertain. International observers will be watching closely to see whether this fragile pause holds or follows the pattern of previous short-lived truces."
+        "Medical personnel in Tenerife have been placed on high alert ahead of the docking of the MV Hondius, an expedition cruise ship struck by a hantavirus outbreak that has already claimed lives and prompted emergency evacuations of passengers to hospitals in South Africa and the Netherlands. BBC correspondent Sarah Rainsford reported from the port as authorities braced for the vessel\'s arrival, with health officials coordinating a careful response to prevent further spread of the rare but dangerous virus.",
+        "Hantavirus is a serious viral illness typically transmitted through contact with infected rodents and their droppings, and outbreaks in contained environments such as ships present particular logistical challenges for health authorities. Two British nationals previously evacuated from the ship were reported to be improving in hospital, offering a measure of cautious optimism amid an otherwise grave situation that has drawn attention from global health organisations."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/2140/live/997dd690-4ad0-11f1-ac78-2112837ce2aa.jpg",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/32af/live/5301da10-4bff-11f1-96df-11e294cb5416.jpg",
       source: "BBC News",
-      url: "https://www.bbc.com/news/articles/c202zn5gg0lo?at_medium=RSS&at_campaign=rss",
-      category: "Conflict"
+      url: "https://www.bbc.com/news/articles/cn7pzmg8zeno?at_medium=RSS&at_campaign=rss",
+      category: "Health"
     },
     {
       id: "s2",
-      title: "China Accused of Pressuring Zambia to Cancel Major Human Rights Conference",
-      summary: "Organisers of RightsCon, the world\'s largest digital rights conference, say Chinese diplomatic pressure led Zambia to abruptly cancel its hosting of the event.",
+      title: "Guardian Journalist Detained and Beaten by Somali Police After Prison Torture Coverage",
+      summary: "Somali authorities arrested and physically assaulted Guardian reporter Mohamed Bulbul and two colleagues following his reporting on a woman allegedly being tortured while imprisoned for peaceful protest.",
       body: [
-        "Zambia was set to host RightsCon, the world\'s biggest digital rights and internet freedom gathering, this week, but organisers say the event was abruptly cancelled following intervention by China. Organisers allege that Beijing pressured Zambian authorities to pull the plug on the conference, which regularly brings together activists, technologists, and policymakers to discuss censorship, surveillance, and online freedoms. The cancellation has been condemned by civil society groups as a chilling example of authoritarian influence extending beyond national borders.",
-        "The incident highlights growing concerns about China\'s use of economic leverage — particularly in African nations where Beijing has made substantial infrastructure investments — to curtail discussions it considers politically sensitive. Zambia has significant financial ties to China through Belt and Road Initiative loans, giving Beijing a degree of influence over Lusaka\'s decision-making. The episode has reignited debate about the conditions attached to Chinese development finance and the long-term implications for host nations' sovereignty and civil freedoms."
+        "Mohamed Bulbul, a journalist reporting for the Guardian, was detained in Mogadishu and beaten with pistols by Somali police alongside colleagues Abdihafid Nor Barre and Abdishakur Mohamed Mohamed, in what press freedom advocates are condemning as a direct act of intimidation against independent journalism. The arrests came in the wake of Bulbul\'s coverage of Sadia Moalim Ali, a 27-year-old rickshaw driver who described being stripped and beaten by male prison guards after she was jailed for participating in peaceful anti-government demonstrations.",
+        "The case has drawn international condemnation, shining a harsh spotlight on press freedom and human rights conditions in Somalia. Ali\'s account, given in an exclusive interview from inside the prison, detailed treatment that human rights organisations say amounts to torture — raising serious questions about the conduct of Somali security forces and the government\'s tolerance for dissent."
       ],
-      image: "https://images.pexels.com/photos/6050473/pexels-photo-6050473.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      source: "NPR",
-      url: "https://www.npr.org/2026/05/08/nx-s1-5809455/organizers-of-a-canceled-human-rights-conference-in-zambia-say-china-intervened",
-      category: "International"
+      image: "https://i.guim.co.uk/img/media/00d5e8efee01a420dc8d1bc678ee7231e1223a39/350_0_3500_2800/master/3500.jpg?width=1200&quality=85&auto=format&fit=max&s=c5604bd094625c43a7c8ea25bff35fc6",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/global-development/2026/may/09/guardian-reporter-and-colleagues-detained-and-beaten-by-somali-police",
+      category: "Human Rights"
     },
     {
       id: "s3",
-      title: "Cambodia-Thailand Border Ceasefire Holds Uneasily as Displaced Families Fear Fresh Fighting",
-      summary: "Cambodians displaced by recent border clashes with Thailand are struggling to rebuild their lives under a tense and fragile ceasefire, with education and basic services severely disrupted.",
+      title: "Lebanon Says Israeli Strikes Killed 39 as Ceasefire Deal Continues to Fray",
+      summary: "Lebanese authorities report 39 people killed in Israeli strikes even as a ceasefire agreement declared last month remains nominally in place, with Hezbollah and Israel continuing to exchange fire.",
       body: [
-        "Families displaced by fighting along the Cambodia-Thailand border say they remain fearful of renewed conflict despite a ceasefire between the two nations, with daily life in affected communities thrown into disarray. Education has been among the hardest-hit areas, with schools closed and children unable to access learning amid the ongoing instability. The border dispute has drawn international attention to long-standing territorial tensions between the two Southeast Asian neighbours.",
-        "The ceasefire, while holding for now, is described by those living near the frontier as deeply fragile, with little confidence that it will lead to a lasting political settlement. Aid organisations have raised concerns about the humanitarian situation for displaced communities, many of whom have lost homes, livelihoods, and access to basic services. Regional bodies including ASEAN face pressure to step in and facilitate a durable diplomatic resolution before conditions worsen further."
+        "The Lebanese government has reported that Israeli military strikes have killed 39 people, underscoring the fragility of a ceasefire deal that was announced only last month but has failed to halt the cycle of retaliatory violence between Israeli forces and Hezbollah militants. The continued exchanges of fire have raised serious doubts about the durability of the agreement and the prospects for a more lasting cessation of hostilities along Israel\'s northern border.",
+        "The ongoing conflict adds another layer of volatility to an already deeply destabilised Middle East region, where the broader war has had cascading effects far beyond the immediate theatre of operations — including, according to NPR reporting, worsening food and fuel scarcity as far afield as Sri Lanka. International mediators face mounting pressure to find a more robust mechanism for enforcing the ceasefire before the death toll climbs further."
       ],
-      image: "https://images.unsplash.com/photo-1720655258275-4d1aaa6c9c01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxDYW1ib2RpYS1UaGFpbGFuZCUyMEJvcmRlciUyMENlYXNlZmlyZSUyMEhvbGRzJTIwVW5lYXNpbHklMjBhcyUyMERpc3BsYWNlZCUyMEZhbWlsaWVzJTIwRmVhciUyMEZyZXNoJTIwRmlnaHRpbmd8ZW58MHwwfHx8MTc3ODMwMjg4OHww&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "Al Jazeera",
-      url: "https://www.aljazeera.com/news/2026/5/9/cambodians-struggle-with-displaced-lives-amid-tense-ceasefire-with-thailand?traffic_source=rss",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/014d/live/7398ef90-4bc1-11f1-8bbe-110a0d5a715a.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.com/news/articles/cn4pjegk358o?at_medium=RSS&at_campaign=rss",
       category: "Conflict"
     }
   ]

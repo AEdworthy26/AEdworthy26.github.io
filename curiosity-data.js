@@ -1,104 +1,120 @@
 // curiosity-data.js
-// Auto-updated 2026-05-09 — do not edit manually
+// Auto-updated 2026-05-10 — do not edit manually
 
 var CURIOSITY_DATA = {
-  date: "2026-05-09",
+  date: "2026-05-10",
   mainArticle: {
-    title: "The Sweat Sickness: The Mysterious Plague That Terrified Tudor England and Then Vanished Forever",
-    subject: "English Sweating Sickness Tudor epidemic",
-    subtitle: "Five times it erupted, killed without warning, and disappeared. Then, after 1551, it never came back — and nobody has ever explained why.",
-    image: "https://images.unsplash.com/photo-1778082628895-368d7b06b413?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxFbmdsaXNoJTIwU3dlYXRpbmclMjBTaWNrbmVzcyUyMFR1ZG9yJTIwZXBpZGVtaWN8ZW58MHwwfHx8MTc3ODMwMzI5M3ww&ixlib=rb-4.1.0&q=80&w=1080",
-    readTime: "9 min",
+    title: "The Money That Conquered the World: How the Spanish Piece of Eight Became History\'s First Global Currency",
+    subject: "Spanish piece of eight silver coin",
+    subtitle: "Minted in the mountains of colonial America, a single silver coin crossed every ocean, funded every empire, and held the world economy together for three centuries.",
+    image: "https://images.unsplash.com/photo-1666771619968-a2d4494e6988?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTcGFuaXNoJTIwcGllY2UlMjBvZiUyMGVpZ2h0JTIwc2lsdmVyJTIwY29pbnxlbnwwfDB8fHwxNzc4Mzg5NjkzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    readTime: "11 min",
     content: [
       {
         type: "paragraph",
-        text: "In the summer of 1485, a new and terrifying disease arrived in England along with Henry Tudor\'s invading army. Within days of the Battle of Bosworth Field, it had spread from the soldiers to the streets of London. It killed so fast that contemporaries said a man could be 'merry at dinner and dead at supper.' No one had seen anything like it before, and for the next sixty-six years, it would haunt the kingdom like a recurring nightmare."
+        text: "In 1792, when the newly independent United States decided to create its own currency, its founders did not invent something from scratch. They based the dollar — its weight, its silver content, its very concept — on a coin that had been minted in Spanish colonial America for nearly three hundred years. That coin was the real de a ocho, the piece of eight, and it was arguably the most consequential object in the history of global trade. No other currency before or since has simultaneously circulated in Europe, the Americas, Africa, India, the Middle East, and China."
       },
       {
         type: "paragraph",
-        text: "The disease became known as the sweating sickness — sudor anglicus in Latin — and it was unlike the plague, unlike typhus, unlike anything the physicians of the age had in their textbooks. It struck with violent suddenness, producing drenching sweats, a thunderous heartbeat, and an overwhelming compulsion to sleep that, if yielded to, was almost always fatal. Most victims were dead within twenty-four hours of showing their first symptom. Those who survived the first day usually recovered completely."
+        text: "The piece of eight was legal tender in the United States until 1857. It was the backbone of the Chinese imperial economy for two centuries. Pirates treasured it, emperors demanded it, and merchants from Seville to Shanghai priced their goods in it. To understand how a coin minted in the Andes came to wire the entire early modern world together is to understand something fundamental about how globalisation actually began — not with ideals, but with silver."
       },
       {
         type: "heading",
-        text: "A Disease That Chose Its Victims Carefully"
+        text: "The Mountain That Ate Men"
       },
       {
         type: "paragraph",
-        text: "What made the sweating sickness especially strange — and especially frightening to Tudor society — was who it killed. Unlike the plague, which cut indiscriminately through the poor and overcrowded, the sweat seemed to prefer the prosperous. Young, healthy men in the prime of life were its most frequent victims; the old, the very young, and the poor seemed comparatively protected. This was deeply unsettling to a society that interpreted disease as divine punishment, since the wealthy were being struck down while the wretched survived."
+        text: "The story begins in 1545, high in the Bolivian Andes, at a place called Cerro Rico — 'Rich Mountain.' A Quechua herder named Diego Huallpa, sheltering from the cold on its slopes, allegedly discovered that the rock beneath him was almost pure silver. Within a decade, the Spanish crown had transformed the barren peak into the most productive silver mine in human history, and built an entire city — Potosí — at 4,000 metres above sea level to service it. At its peak in the early seventeenth century, Potosí was one of the largest cities on Earth, with a population rivalling London or Paris."
       },
       {
         type: "paragraph",
-        text: "The disease also showed a striking preference for the English. When it crossed the Channel in 1528 and swept through continental Europe, it killed English residents of Antwerp and Paris while leaving their French and Flemish neighbours largely untouched. This pattern was so pronounced that foreign observers remarked on it with a mixture of pity and grim satisfaction. Holy Roman Emperor Charles V dismissed his English attendants from court during the 1528 outbreak, not wanting to catch whatever peculiarly English curse had descended upon them."
+        text: "The human cost was staggering. The Spanish resurrected an Inca labour system called the mita, forcing indigenous communities to send a rotating quota of men into the mountain\'s tunnels. Conditions were lethal: mercury poisoning from the refining process, collapse, cold, and exhaustion killed workers at a horrifying rate. Historians estimate that over the two and a half centuries of colonial extraction, as many as eight million people died in service of Cerro Rico. The mountain, locals said, devoured men the way the Spanish empire devoured the world."
       },
       {
         type: "heading",
-        text: "Five Outbreaks, Five Panics"
+        text: "What Is a Piece of Eight?"
       },
       {
         type: "paragraph",
-        text: "The sweating sickness struck England five times: in 1485, 1508, 1517, 1528, and 1551. Each outbreak arrived without warning and vanished just as abruptly, usually within a few weeks to a few months. The 1528 epidemic was the worst and widest, reaching Hamburg, Vienna, and Scandinavia. The 1551 outbreak, though confined to England, was notable for the meticulous account left by the physician John Caius, who produced the first serious clinical description of the disease in his book 'A Boke or Counseill Against the Disease Commonly Called the Sweate or Sweatyng Sicknesse.'"
+        text: "The coin itself was standardised in 1497 under Ferdinand and Isabella, though it reached its definitive form under the colonial mints of the New World. It weighed approximately 27 grams of high-purity silver and was worth eight reales — hence the name. Its design evolved over the decades: early versions were crude, hand-hammered lumps called macuquinas or 'cobs,' their edges clipped and irregular. Later versions, minted from the 1730s onwards, became the elegant milled coins with their distinctive pillars-and-waves design that collectors still prize today."
       },
       {
         type: "paragraph",
-        text: "Cardinal Wolsey, the most powerful man in England after Henry VIII, caught the sweat in 1517 and survived — barely. Anne Boleyn contracted it in 1528 while Henry was desperately writing her love letters and arranging the best physicians he could find. She survived too, though several of her household did not. Henry VIII himself lived in terror of the sweating sickness throughout his life and would flee London at the first rumour of its approach, abandoning court, councils, and everything else in his headlong panic."
+        text: "The coin\'s reliability was its genius. In an era before central banking, when every principality, city-state, and kingdom issued its own coinage of wildly variable quality, the piece of eight was consistent. Its silver content was guaranteed by royal assay, its weight was standardised, and its design was recognisable from the dockyards of Antwerp to the bazaars of Goa. Merchants who trusted nothing else trusted the Spanish dollar. It was, in the language of modern economics, a reserve currency — the first the world had ever known."
       },
       {
         type: "heading",
-        text: "What the Doctors Said — and Got Wrong"
+        text: "The Pacific Highway of Silver"
       },
       {
         type: "paragraph",
-        text: "Tudor medicine was still operating largely within the Galenic framework of humours and miasmas, and its practitioners were predictably baffled. The standard treatment was to keep the patient warm, bundle them in blankets, and — critically — not allow them to sleep. Attendants would walk patients up and down for hours, pinching and slapping them to keep their eyes open, since sleep in the first twenty-four hours was observed to be fatal. Whether this actually helped or merely tortured the dying is impossible to say, but it was the one piece of advice that seems to have had some empirical basis, however misunderstood."
+        text: "Spain\'s treasure fleets carried silver from Potosí and the Mexican mines of Zacatecas across the Atlantic to Seville — but that was only the most famous route. The truly astonishing story is what happened on the other side of the Americas. From the Pacific port of Acapulco, the Manila Galleons — vast, creaking ships of extraordinary tonnage — carried Mexican silver westward across the Pacific to the Philippines every year from 1565 to 1815. It was the world\'s longest trade route, and it ran with metronomic regularity for two and a half centuries."
       },
       {
         type: "paragraph",
-        text: "John Caius, whose 1552 account remains the most valuable primary source, was a Cambridge-trained physician who had studied at Padua under the anatomist Vesalius. He blamed the disease on 'evil vapours' and the damp English climate, but his symptom descriptions are precise enough to be medically useful today. He noted the rapid onset, the profuse sweating, the cardiac symptoms, the peculiar lethality of the first hours, and the tendency of survivors to recover completely without lasting damage. His account is a remarkable piece of Renaissance medical writing — careful, observational, and tantalisingly incomplete."
+        text: "In Manila, that silver was exchanged for Chinese silk, porcelain, and luxury goods brought by merchants from Fujian province. The pieces of eight then flowed onward into China itself, where the Ming and later Qing dynasties had done something remarkable: they had converted their entire tax system to silver. A Chinese peasant who owed grain taxes in the 1570s would, within a generation, owe silver instead — and the silver that satisfied the Chinese state came overwhelmingly from the Andes. Economists call this the 'silver drain,' and its consequences for Chinese history were enormous."
       },
       {
         type: "heading",
-        text: "The Great Unsolved Mystery"
+        text: "Why China Needed Spanish Silver"
       },
       {
         type: "paragraph",
-        text: "After the 1551 epidemic, the sweating sickness disappeared entirely from the historical record. It did not fade gradually, it did not become endemic at low levels, and it did not transform into something else recognisable. It simply stopped. No subsequent outbreak has ever been convincingly identified anywhere in the world. This complete disappearance is, if anything, more puzzling than the disease itself — most infectious diseases either persist, evolve, or leave traceable descendants, but the sweating sickness left nothing."
+        text: "China\'s appetite for silver was not mere greed. The Ming dynasty faced a genuine monetary crisis in the sixteenth century. Paper money, which China had invented centuries earlier, had collapsed under inflationary pressure. Copper coinage was insufficient for large transactions. Silver was the solution, but China\'s own mines were modest, and domestic supply could not keep pace with an economy of 150 million people. The arrival of New World silver was not an accident of trade — it was a structural necessity that the Chinese economy had been waiting for."
       },
       {
         type: "paragraph",
-        text: "Historians and epidemiologists have proposed dozens of candidate pathogens over the centuries. Anthrax was suggested early on, then dismissed. Typhus has its advocates, though the symptom profile fits poorly. Relapsing fever has been proposed. In the late twentieth century, attention shifted to hantaviruses — rodent-borne viruses that cause haemorrhagic fevers with pulmonary symptoms — and the theory has attracted serious support. The 1993 outbreak of hantavirus pulmonary syndrome in the American Southwest produced a disease with some striking similarities to Tudor accounts, including rapid onset, severe respiratory distress, and high mortality in otherwise healthy adults."
-      },
-      {
-        type: "paragraph",
-        text: "A related theory, advanced by a team of French researchers in 2012, points specifically to a hantavirus carried by a species of field mouse. The researchers noted that the disease\'s English predilection and rural summer seasonality fit the ecological patterns of rodent-borne transmission, and that the collapse of a particular mouse population — perhaps through a change in climate or agriculture — could explain the disease\'s sudden disappearance after 1551. It remains a hypothesis, not a verdict, but it is currently the most scientifically credible candidate."
+        text: "The economist Dennis Flynn has argued that the Chinese demand for silver was, in fact, the primary engine driving Spanish colonialism in the Americas. The Spanish didn\'t mine silver to spend it in Europe — much of it simply passed through Spanish hands on its way east. The real market was China, and the Manila Galleon trade was the mechanism. This reframes the entire story of early globalisation: instead of a European-centred narrative of conquest and commerce, we see a system pulled as much by Asian demand as by Western ambition."
       },
       {
         type: "heading",
-        text: "Why It Still Matters"
+        text: "Silver, Slaves, and the Atlantic Economy"
       },
       {
         type: "paragraph",
-        text: "The sweating sickness matters not just as a curiosity but as a case study in how completely a lethal disease can vanish before the age of microbiology — leaving nothing behind but frightened descriptions in old books. Modern medicine has identified the mechanisms of hundreds of historical plagues, from Justinian\'s to the Black Death, through DNA analysis of skeletal remains and preserved tissue. But the sweating sickness has so far resisted every attempt to pin it down, because we have never found confirmed remains from a victim whose death can be attributed to it with certainty."
+        text: "The Atlantic flow of silver had its own grim machinery. Pieces of eight purchased African enslaved people from Portuguese and later British traders along the West African coast. Those people were transported to the Caribbean and the Americas to work plantations producing sugar, tobacco, and cotton — commodities that were themselves traded back to Europe for manufactured goods. The piece of eight was the lubricant of the entire triangular trade system, the universal medium that made every exchange possible across three continents."
       },
       {
         type: "paragraph",
-        text: "There is also something quietly sobering in its story for the present age. A disease arrived, killed thousands, terrified a continent, and departed — all within living memory of the people who experienced it, all without leaving us enough evidence to know what it truly was. The sweating sickness is a reminder that history contains silences as well as records, and that the natural world is capable of mounting threats that come and go on their own terms, indifferent to our attempts to classify or contain them."
+        text: "In West Africa, Spanish coins became so familiar that local rulers developed sophisticated methods for testing their purity — biting them, ringing them against stone, weighing them on precision scales. The idea of silver as a standard of value penetrated economies that had no direct contact with Spain or its colonies, simply because the coin was everywhere. By the seventeenth century, the piece of eight was not just a currency. It was a cultural artefact, a symbol of the connected world that early modern trade had created."
+      },
+      {
+        type: "heading",
+        text: "The Coin That Built Empires — and Broke Them"
       },
       {
         type: "paragraph",
-        text: "Henry VIII\'s England survived five visitations of something that could kill a cardinal by nightfall. The kingdom mourned, panicked, prayed, and eventually moved on — as societies always do. But the sweating sickness never granted its victims the dignity of an explanation. It remains, more than four centuries after its last appearance, the most mysterious epidemic in English history: a ghost disease that once killed kings' companions and now refuses even to tell us its name."
+        text: "Spain\'s extraordinary silver wealth ultimately proved as much a curse as a blessing. The massive influx of New World silver into the Spanish economy triggered what historians call the 'price revolution' — a sustained inflation across sixteenth and seventeenth century Europe that eroded real wages, destabilised governments, and contributed to social upheaval from England to the Ottoman Empire. Spain itself, paradoxically, industrialised less than its neighbours, because silver made imports cheap and domestic manufacturing uncompetitive. The empire that controlled the world\'s money grew rich and then hollowed out."
+      },
+      {
+        type: "paragraph",
+        text: "The Dutch and the British, meanwhile, used trade profits generated partly by handling Spanish silver to build financial institutions — stock companies, central banks, bond markets — that would eventually eclipse Spanish power entirely. The piece of eight financed its own obsolescence. By the time Spain\'s colonial empire collapsed in the early nineteenth century, the world economy had grown complex enough to move beyond any single metal coin — though the silver dollar\'s ghost lingered in the U.S. dollar, the Chinese yuan, and a dozen other modern currencies whose names and weights descend directly from that coin hammered in the Andes."
+      },
+      {
+        type: "heading",
+        text: "A Legacy Buried in Language"
+      },
+      {
+        type: "paragraph",
+        text: "The piece of eight left its mark in unexpected places. The American practice of quoting stock prices in eighths of a dollar persisted on Wall Street until 2001 — a direct inheritance from the way pieces of eight were physically cut into halves, quarters, and eighths to make change. A 'two bits' still means a quarter-dollar in American slang, because two bits of a piece of eight equalled exactly that. The '$' sign itself is disputed, but one credible theory traces it to the 'PS' abbreviation for pesos — which were, of course, pieces of eight under another name."
+      },
+      {
+        type: "paragraph",
+        text: "Cerro Rico still stands above Potosí, still being mined by cooperatives of Bolivian workers under conditions that would be recognisable to their ancestors. The mountain is visibly smaller than it was in 1545 — centuries of extraction have literally reduced it. UNESCO lists Potosí as a World Heritage Site in danger. The coin it produced is gone, melted down or worn away, but its shape is pressed into the architecture of the modern world so deeply that we rarely think to look for it. Every time a dollar changes hands, the ghost of a Spanish mine in the clouds passes with it."
       }
     ]
   },
   personOfTheDay: {
-    name: "John Caius",
-    lifespan: "1510–1573",
-    category: "Medicine & Scholarship",
-    image: "https://upload.wikimedia.org/wikipedia/commons/5/59/John_Caius_G%26C.jpg",
-    bio: "John Caius was an English physician and scholar whose combination of Renaissance humanism and rigorous clinical observation made him one of the most important medical figures of sixteenth-century Europe. Born in Norwich in 1510, he studied at Gonville Hall, Cambridge, before travelling to Padua — then the greatest medical school in the world — where he shared lodgings with Andreas Vesalius, the revolutionary anatomist who was in the process of overturning a thousand years of received wisdom about the human body. The experience left a permanent mark on Caius: he returned to England with a deep commitment to direct observation over inherited authority, a radical position in an age still dominated by Galenic tradition.\n\nBack in England, Caius built a formidable reputation as a physician and was appointed personal doctor to three successive monarchs — Edward VI, Mary I, and Elizabeth I — a remarkable feat of political survival in an age when backing the wrong sovereign could be fatal. He was admitted to the College of Physicians in 1547 and served as its president nine times, using the position to push for higher standards and to campaign against unlicensed medical practice. He lectured on anatomy and was among the first in England to conduct systematic human dissections, securing an annual grant of executed criminals' bodies from the crown for this purpose.\n\nCaius is perhaps best remembered today for two things: his detailed account of the sweating sickness, published in 1552, and his refounding of his old Cambridge college. His 'A Boke or Counseill Against the Disease Commonly Called the Sweate' is the most important primary source on the Tudor epidemic, combining careful symptom descriptions with practical advice for patients and physicians. In 1557, he re-endowed Gonville Hall with his own considerable fortune, expanding it and renaming it Gonville and Caius College — the institution that still bears his name and where he served as Master for several years. He controversially required his college to accept no students who were deformed, disabled, or Welsh, prejudices that sit uncomfortably alongside his undoubted intellectual achievements.\n\nIn his final years, Caius became embroiled in fierce disputes with the younger Protestant fellows of his own college, who resented both his conservative Catholicism and his autocratic governance. They eventually ransacked his rooms and burned his collection of vestments and Catholic objects — a humiliating end for a man who had shaped English medicine for a generation. He died in 1573 and was buried in the college chapel at Cambridge, in the institution he had rebuilt and that had ultimately rejected him. His legacy is the tension at the heart of Renaissance learning: brilliant, meticulous, generous, and also deeply limited by the prejudices of his age."
+    name: "Mansa Musa I",
+    lifespan: "c. 1280–c. 1337",
+    category: "Royalty & Political History",
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/46/Catalan_Atlas_BNF_Sheet_6_Mansa_Musa_%28cropped%29.jpg",
+    bio: "Mansa Musa I was the tenth Mansa — or emperor — of the Mali Empire, and by most assessments the wealthiest individual who has ever lived. Ruling over a realm that encompassed much of West Africa, including the gold fields of Bambuk and Bure and the salt mines of Taghaza, he presided over an economy so productive that his personal fortune defies meaningful modern calculation. Estimates that have attempted to convert his wealth into contemporary dollars have produced figures in the hundreds of billions, though historians are quick to note that such comparisons are almost meaningless — Musa did not merely own gold, he controlled its entire supply chain across a continent.\n\nHe is best remembered in the outside world for his pilgrimage to Mecca in 1324–25, one of the most dramatic single events in the history of medieval trade and diplomacy. Musa travelled with a retinue estimated at between 60,000 and 80,000 people, including thousands of soldiers, servants, heralds, and enslaved people, along with a baggage train of camels carrying hundreds of pounds of gold dust. His caravan distributed gold so lavishly in Cairo, Medina, and Mecca that he triggered a decade-long inflation across the entire Mediterranean and Middle East. Egyptian and Arabian gold prices took twelve years to recover from his passage through.\n\nThe pilgrimage did more than wreck currency markets. It announced the Mali Empire to the wider world with extraordinary force. Musa met with the Sultan of Egypt, exchanged embassies with the Mamluk court, and attracted scholars, architects, and poets back to his capital, Niani, on his return. Most famously, he brought back the Andalusian architect and poet Abu Ishaq al-Sahili, who designed mosques and public buildings in Timbuktu and Gao in a style that blended North African and Sahelian traditions. The Great Mosque of Djingareyber in Timbuktu, still standing today, is a monument to that encounter.\n\nUnder Musa\'s reign, Timbuktu became one of the great intellectual centres of the medieval world, home to a university at the Sankore Mosque that attracted students and scholars from across the Islamic world. He invested heavily in education, architecture, and trade infrastructure, and his empire\'s reach extended across trans-Saharan caravan routes that connected sub-Saharan Africa to North Africa and the Mediterranean. He appears on the 1375 Catalan Atlas — one of the most important maps of the medieval period — depicted seated on a golden throne, holding a golden sceptre and a golden orb, a visual shorthand for wealth so extreme it had become mythological even in his own lifetime. He died around 1337, and the empire he had built began to fragment within a generation, but his reign remains the high-water mark of West African medieval civilisation."
   },
   onThisDay: {
-    headline: "The First Ascent of Annapurna: Mankind Reaches 8,000 Metres",
-    date: "May 9, 1950",
-    summary: "On this day in 1950, French mountaineers Maurice Herzog and Louis Lachenal became the first human beings in history to reach the summit of an eight-thousander — a peak above 8,000 metres. Annapurna I, standing at 8,091 metres in the Nepalese Himalayas, had only been identified as a potential climbing target weeks earlier when the French expedition, initially hoping to attempt Dhaulagiri, discovered that Annapurna was actually the more accessible goal. In a matter of days, with almost no detailed maps and in deteriorating weather, the team identified a viable route and launched their summit push.\n\nThe ascent was an extraordinary achievement shadowed by terrible cost. Herzog and Lachenal reached the top in the early afternoon, becoming heroes overnight and inspiring a generation of mountaineers. But the descent was catastrophic: caught in an avalanche, losing their gloves in the snow, and descending through a brutal storm, both men suffered severe frostbite. Herzog lost all his fingers and toes; Lachenal lost his toes. The expedition doctor performed repeated amputations in the field using basic equipment, and the injured men were carried down through the mountains on the backs of porters and teammates. Herzog\'s 1952 memoir, 'Annapurna,' became one of the best-selling mountaineering books ever written, though Lachenal\'s own account — more honest about the terror and the cost — was suppressed for decades and only published posthumously in edited form. Annapurna remains, statistically, the most dangerous of all the eight-thousanders, with a fatality-to-summit ratio that still dwarfs Everest.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/0/0e/Spectrum514d.jpg"
+    headline: "THE CUMBERLAND GAP OPENS: BOONE\'S WILDERNESS ROAD REACHES KENTUCKY",
+    date: "May 10, 1775",
+    summary: "On this day in 1775, a small group of American settlers completed the arduous journey through the Cumberland Gap into Kentucky, marking the effective opening of the Wilderness Road — the pathway that would carry hundreds of thousands of settlers westward across the Appalachian Mountains over the following decades. The route had been blazed earlier that spring by Daniel Boone and a party of axemen working on behalf of the Transylvania Company, a private land speculation enterprise that had purchased an enormous tract of land from the Cherokee in a treaty of deeply questionable legality. Boone\'s party had fought off several Shawnee attacks during the cutting of the trail, losing several men including Boone\'s own son James in a raid the previous year, but the road was now passable — barely — by people on foot and horseback.\n\nThe Cumberland Gap itself was a remarkable natural feature: a notch in the Appalachian ridge at the junction of present-day Virginia, Kentucky, and Tennessee, low enough that it could be crossed without the brutal mountain climbing that blocked passage elsewhere along the range. Cherokee hunters had used the gap for centuries; the explorer Thomas Walker had passed through it in 1750 and given it its name. But it was Boone\'s road that transformed it from a hunters' trace into the primary artery of American westward migration. By the end of the eighteenth century, an estimated 300,000 people had passed through the Gap into the interior of the continent, making the Wilderness Road one of the most consequential migration routes in American history and opening the question — soon to become the defining question of the new republic — of how far west American settlement would ultimately reach.",
+    image: "https://images.unsplash.com/photo-1717538854589-938402028d6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUSEUlMjBDVU1CRVJMQU5EJTIwR0FQJTIwT1BFTlMlM0ElMjBCT09ORSU1Q3xlbnwwfDB8fHwxNzc4Mzg5Njk0fDA&ixlib=rb-4.1.0&q=80&w=1080"
   }
 };

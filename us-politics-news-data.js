@@ -1,60 +1,60 @@
 // us-politics-news-data.js
-// Auto-updated 2026-05-09 — do not edit manually
+// Auto-updated 2026-05-10 — do not edit manually
 
 var US_POLITICS_NEWS = {
-  date: "2026-05-09",
+  date: "2026-05-10",
   main: {
-    title: "Trump\'s Corruption Pardons Raise Alarms as Federal Anti-Corruption Office Is Dismantled",
+    title: "Republican Redistricting Blitz Reshapes Midterm Map, Putting Democrats on Defense",
     category: "Politics",
     content: [
-      "President Trump has issued a series of pardons to officials convicted of public corruption, a pattern that has drawn sharp criticism from ethics watchdogs, Democratic lawmakers, and some legal scholars who argue the executive clemency power is being wielded in a manner that undermines the rule of law. The pardons have been granted to individuals who were found guilty of abusing their positions of public trust, including bribery, fraud, and obstruction charges, raising questions about the administration\'s commitment to accountability in government. Critics contend that by selectively erasing the criminal records of politically connected figures, the White House is sending a signal that loyalty to the president can serve as a de facto shield from legal consequences.",
-      "What has amplified the controversy surrounding these pardons is the simultaneous dismantling of the federal office responsible for investigating and prosecuting public corruption cases. The closure or gutting of that office — which had long served as one of the primary institutional bulwarks against graft at the federal level — has left a significant enforcement vacuum, according to former prosecutors and anti-corruption advocates. Legal experts warn that removing both the consequences for past corruption and the machinery for detecting future misconduct creates a dangerous precedent that could embolden wrongdoing across the executive branch.",
-      "The White House has offered limited public justification for the individual pardons, with administration officials characterizing several of the cases as politically motivated prosecutions carried out by a weaponized Justice Department under previous administrations. Supporters of the pardons argue that Trump is correcting genuine miscarriages of justice, pointing to procedural irregularities in some of the underlying cases. However, the breadth of the pardons — spanning officials from multiple states and levels of government — has made it difficult for even sympathetic observers to construct a coherent legal or moral framework for the decisions.",
-      "Democrats in Congress have called for hearings and investigations into the pattern of pardons, arguing that the combination of clemency for corrupt officials and the neutering of oversight bodies represents a systematic effort to insulate allies from accountability. Several House Judiciary Committee members have written to the Department of Justice demanding a full accounting of the criteria used to select pardon recipients. Meanwhile, some Republican lawmakers have remained notably silent, reflecting the broader tension within the party between institutional loyalty and concerns about the long-term reputational damage these moves could inflict.",
-      "The political fallout from the corruption pardons is expected to become a significant issue heading into the 2026 midterm elections, with Democrats planning to use the decisions as evidence of what they describe as a culture of impunity within the Trump administration. Public polling has historically shown that corruption and abuse of power rank among the issues most likely to shift independent voters, making the pardons a potentially potent line of attack for opposition candidates. For now, the administration shows no sign of reversing course, and legal challenges to the pardons themselves face an extraordinarily high bar given the near-absolute nature of the presidential clemency power under the Constitution."
+      "Republicans have executed a sweeping redistricting offensive over the past ten days, dramatically reshaping the congressional map ahead of November\'s midterm elections. Capitalizing on a recent Supreme Court ruling that weakened minority voting rights protections, GOP-controlled legislatures in at least four Southern states have moved aggressively to redraw district boundaries. The rapid pace of these changes has caught many Democrats off guard and forced party strategists to rethink their path to reclaiming the House majority.",
+      "At the heart of the Republican strategy is the dismantling of majority-Black congressional districts across the South — a deliberate effort to dilute the concentrated Democratic voting power those districts have historically represented. The Supreme Court\'s ruling gave state legislatures the legal cover to proceed, and Republicans wasted little time translating that legal opening into concrete map changes. National politics reporters covering the developments note that the moves could cost Democrats several seats they had counted on as reliable anchors for any bid to retake the chamber.",
+      "The political fallout has been swift and significant. According to The Washington Post, Republicans are now estimated to be eight seats closer to retaining control of the House, dramatically steepening the climb for Democrats who had harbored cautious optimism about their midterm prospects. That margin is particularly consequential given the narrow majorities that have defined the House in recent years, where a handful of seats can determine which party controls the agenda, committee chairmanships, and the legislative calendar heading into a potential presidential election cycle.",
+      "Virginia has emerged as a particularly painful flashpoint for Democrats. A court ruling nullified Democratic redistricting efforts in the state, dealing a significant blow to Governor Abigail Spanberger, who had already been navigating a difficult political environment marked by the Iran war, record oil prices, and contentious immigration policy debates. Spanberger had reportedly been skeptical of the push for new maps from the outset, and the court\'s intervention has now left the state\'s Democratic establishment scrambling for alternatives with the election calendar advancing rapidly.",
+      "The broader redistricting battle reflects a calculated and coordinated effort by the Trump White House to reshape the structural terrain of American electoral politics ahead of the midterms. By pressing state-level allies to act quickly following favorable judicial decisions, Republicans have demonstrated a willingness to move faster and more aggressively than their opponents anticipated. For Democrats, the challenge is now not just one of messaging or candidate recruitment, but of competing on a map that has been fundamentally redrawn in the span of less than two weeks — a structural disadvantage that no amount of enthusiasm or fundraising can easily overcome."
     ],
-    image: "https://images.unsplash.com/photo-1695645463910-afab02a430d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUcnVtcCU1Q3xlbnwwfDB8fHwxNzc4MzAyOTc2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-    source: "NPR",
-    sourceUrl: "https://www.npr.org/2026/05/08/nx-s1-5815216/whats-behind-trumps-pardons-of-people-convicted-of-public-corruption"
+    image: "https://images.pexels.com/photos/4669115/pexels-photo-4669115.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    source: "The New York Times",
+    sourceUrl: "https://www.nytimes.com/2026/05/09/us/politics/midterm-redistricting-house-map-republicans.html"
   },
   secondary: [
     {
       id: "us1",
-      title: "Republicans Build Redistricting Edge After Virginia Court Strikes Down Democratic Map",
-      summary: "The Virginia Supreme Court invalidated a voter-approved redistricting measure that had favored Democrats, dealing a significant blow to the party\'s efforts to counter Republican gerrymandering nationwide.",
+      title: "DOJ Faces Internal Crisis After Push to Prosecute Former FBI Director Comey",
+      summary: "Several prosecutors have resigned from the Justice Department following a politically charged effort to bring charges against former FBI Director James Comey.",
       body: [
-        "The Virginia Supreme Court struck down a redistricting measure that voters had approved on April 21, ruling against a map that would have given Democrats an advantage in four congressional districts. The decision is a major setback for the Democratic Party, which had hoped to use Virginia as a counterweight to GOP-led redistricting efforts in states like Tennessee and Alabama.",
-        "The ruling adds to a broader national picture in which Republicans are consolidating a structural advantage in House maps ahead of the 2026 midterms, with court decisions and state legislative actions increasingly tilting the playing field in the GOP\'s favor. Democrats now face a steeper climb to retake the House majority, as favorable maps in key states are being reversed or blocked through judicial intervention."
+        "The Justice Department is experiencing significant internal fallout after leadership pushed to prosecute former FBI Director James Comey, with multiple prosecutors departing the agency and at least one major case being disrupted as a result. The departures signal deep unease within the career ranks of federal prosecutors about the direction of the department under the Trump administration\'s continued pressure on perceived political adversaries.",
+        "The episode highlights the ongoing tension between political appointees seeking to use the DOJ as a vehicle for settling scores with figures from previous administrations and career law enforcement officials who view such moves as a threat to the institution\'s independence and credibility. Critics argue the pursuit of Comey is emblematic of a broader pattern of politicizing federal law enforcement that risks long-term damage to public trust in the justice system."
       ],
-      image: "https://images.unsplash.com/photo-1625012608827-8e0fb91f199d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxSZXB1YmxpY2FucyUyMEJ1aWxkJTIwUmVkaXN0cmljdGluZyUyMEVkZ2UlMjBBZnRlciUyMFZpcmdpbmlhJTIwQ291cnQlMjBTdHJpa2VzJTIwRG93biUyMERlbW9jcmF0aWMlMjBNYXB8ZW58MHwwfHx8MTc3ODMwMjk3Nnww&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "Washington Post",
-      url: "https://www.washingtonpost.com/politics/2026/05/08/virginia-court-invalidates-redistricting-measure/",
+      image: "https://images.unsplash.com/photo-1688956020469-50f4ecef7489?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxET0olMjBGYWNlcyUyMEludGVybmFsJTIwQ3Jpc2lzJTIwQWZ0ZXIlMjBQdXNoJTIwdG8lMjBQcm9zZWN1dGUlMjBGb3JtZXIlMjBGQkklMjBEaXJlY3RvciUyMENvbWV5fGVufDB8MHx8fDE3NzgzODkzNzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "The Washington Post",
+      url: "https://www.washingtonpost.com/national-security/2026/05/09/doj-sees-fallout-after-push-prosecute-former-fbi-director-james-comey/",
       category: "Politics"
     },
     {
       id: "us2",
-      title: "ABC Accuses Trump Administration of Chilling Free Speech Over 'The View' Dispute",
-      summary: "ABC has filed legal arguments claiming the Trump administration is attempting to suppress constitutionally protected speech through regulatory pressure over whether 'The View' is subject to equal time broadcasting rules.",
+      title: "White House Moves to Replace FDA Commissioner Marty Makary Amid Agency Turmoil",
+      summary: "The White House is preparing to remove FDA Commissioner Marty Makary following mounting criticism over his leadership of the agency responsible for vaccine and drug approvals.",
       body: [
-        "In a new court filing, ABC argues that the Trump administration is using the Federal Communications Commission\'s equal time rules as a pretext to target the network\'s political commentary program 'The View,' framing the government\'s actions as an unconstitutional effort to chill free expression. The network contends that applying equal time requirements to an opinion and entertainment format like 'The View' would be a radical and unprecedented expansion of broadcast regulation.",
-        "The case has drawn attention from First Amendment advocates who see it as part of a broader pattern of the administration applying regulatory and legal pressure to media organizations perceived as critical of the president. If the government\'s position prevails, it could have sweeping implications for how political speech on broadcast television is regulated, potentially forcing networks to dramatically alter or curtail commentary programming."
+        "The Trump administration is moving to replace FDA Commissioner Marty Makary, according to reporting from The Washington Post, as the agency faces a period of significant internal turbulence. Makary has drawn criticism from both public health experts and within the administration over his handling of the FDA\'s core regulatory functions, including the oversight of vaccine approvals at a time of heightened public scrutiny.",
+        "The anticipated leadership change at the FDA adds to a pattern of instability across federal health agencies under the current administration and raises fresh questions about continuity in drug and vaccine regulation. The timing is particularly sensitive given ongoing public health concerns and the political salience of pharmaceutical policy as voters head toward the November midterms."
       ],
-      image: "https://images.unsplash.com/photo-1577990843539-6fe38cd01c85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxBQkMlMjBBY2N1c2VzJTIwVHJ1bXAlMjBBZG1pbmlzdHJhdGlvbiUyMG9mJTIwQ2hpbGxpbmclMjBGcmVlJTIwU3BlZWNoJTIwT3ZlciUyMHxlbnwwfDB8fHwxNzc4MzAyOTc2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "NPR",
-      url: "https://www.npr.org/2026/05/09/nx-s1-5816844/abc-trump-administration-free-speech",
+      image: "https://images.unsplash.com/photo-1742413628280-8bfae633391b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxXaGl0ZSUyMEhvdXNlJTIwTW92ZXMlMjB0byUyMFJlcGxhY2UlMjBGREElMjBDb21taXNzaW9uZXIlMjBNYXJ0eSUyME1ha2FyeSUyMEFtaWQlMjBBZ2VuY3klMjBUdXJtb2lsfGVufDB8MHx8fDE3NzgzODkzNzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "The Washington Post",
+      url: "https://www.washingtonpost.com/health/2026/05/08/fda-commissioner-marty-makary/",
       category: "Politics"
     },
     {
       id: "us3",
-      title: "Federal Judge Rules DOGE\'s Cuts to National Endowment for the Humanities Were Unconstitutional",
-      summary: "A federal judge found that more than $100 million in grant cuts carried out by DOGE at the National Endowment for the Humanities were unconstitutional, offering a rare judicial window into the department\'s internal operations.",
+      title: "Midterm Voters Focused on Oil Prices, Iran War, and Immigration as Key Issues",
+      summary: "NPR\'s analysis of the 2026 midterm landscape finds voters driven by record oil prices, the ongoing war with Iran, and divisive immigration policies as the election season intensifies.",
       body: [
-        "A federal judge ruled that the sweeping cuts DOGE made to National Endowment for the Humanities grants were discriminatory and violated the Constitution, ordering the restoration of more than $100 million in funding that had been abruptly terminated. The ruling is one of the most detailed judicial examinations yet of how DOGE has operated inside federal agencies, with the court finding that the grant cancellations were not carried out through a lawful or neutral process.",
-        "The decision adds to a growing body of court rulings that have pushed back against DOGE\'s methods, raising questions about the legal durability of the cost-cutting campaign\'s actions across the federal government. Supporters of the humanities funding argued the cuts were ideologically motivated and targeted grants associated with diversity and academic freedom, a characterization the administration has disputed."
+        "As the November midterms draw closer, NPR\'s political team has identified a complex and volatile set of issues animating the American electorate, including record-high oil prices hitting household budgets, the political and human costs of the ongoing military conflict with Iran, and deeply contested immigration enforcement policies that have split public opinion along sharp partisan lines.",
+        "The confluence of these issues creates an unpredictable environment for both parties, with economic anxiety potentially benefiting challengers while national security dynamics could cut in multiple directions depending on how the Iran situation evolves. Polls also show President Trump\'s approval ratings under significant pressure, particularly on economic management, adding another layer of uncertainty to an already complex midterm calculus."
       ],
-      image: "https://images.unsplash.com/photo-1621932953986-15fcf084da0f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxGZWRlcmFsJTIwSnVkZ2UlMjBSdWxlcyUyMERPR0UlNUN8ZW58MHwwfHx8MTc3ODMwMjk3N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "Washington Post",
-      url: "https://www.washingtonpost.com/politics/2026/05/07/doge-neh-humanities-grants-ruling/",
+      image: "https://images.unsplash.com/photo-1772299399273-d71c7fce5da0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxNaWR0ZXJtJTIwVm90ZXJzJTIwRm9jdXNlZCUyMG9uJTIwT2lsJTIwUHJpY2VzJTJDJTIwSXJhbiUyMFdhciUyQyUyMGFuZCUyMEltbWlncmF0aW9uJTIwYXMlMjBLZXklMjBJc3N1ZXN8ZW58MHwwfHx8MTc3ODM4OTM4MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "NPR",
+      url: "https://www.npr.org/2026/05/09/nx-s1-5813787/tracking-the-hot-button-issues-driving-this-years-midterms-politics",
       category: "Politics"
     }
   ]

@@ -1,19 +1,19 @@
 // reads-data.js
-// Auto-updated 2026-05-09 — do not edit manually
+// Auto-updated 2026-05-10 — do not edit manually
 
 var READS_DATA = {
-  date: "2026-05-09",
+  date: "2026-05-10",
   book: {
-    title: "The Righteous Mind: Why Good People Are Divided by Politics and Religion",
-    author: "Jonathan Haidt",
-    year: 2012,
-    genres: ["Psychology", "Politics", "Philosophy"],
-    desc: "Moral psychologist Jonathan Haidt draws on decades of cross-cultural research to argue that human morality is far richer and more varied than the simple harm-and-fairness framework that dominates liberal thinking — it encompasses loyalty, authority, sanctity, and liberty as well, which explains why people who seem perfectly reasonable in daily life can hold political views that strike others as baffling or monstrous. Haidt introduces his 'moral foundations theory' with the memorable metaphor of the rider and the elephant: our rational minds are jockeys atop vast intuitive beasts, constructing post-hoc justifications for feelings that arrived a split second earlier. The book is bracingly honest in its willingness to challenge progressive assumptions as vigorously as conservative ones, making it genuinely uncomfortable reading for anyone across the political spectrum. By the end, Haidt\'s argument that we are each 'groupish' by nature — tribally wired to circle the wagons and demonise outsiders — feels less like a counsel of despair and more like a precise diagnosis that opens the door to genuine understanding.",
-    whyRead: "In a political moment that still feels defined by mutual incomprehension and hardening tribalism, Haidt\'s framework is one of the most useful lenses available for understanding why your opponents are not simply stupid or evil — and why you might not be entirely right either.",
+    title: "The Soul of an Octopus: A Surprising Exploration into the Wonder of Consciousness",
+    author: "Sy Montgomery",
+    year: 2015,
+    genres: ["Nature", "Science", "Memoir"],
+    desc: "Sy Montgomery spent years befriending the giant Pacific octopuses at the New England Aquarium, and what she discovered upended assumptions about intelligence, emotion, and what it means to be a person. Each octopus has a distinct personality — one is playful, another suspicious, another bold — and Montgomery\'s growing relationships with them become a meditation on consciousness radiating out in forms utterly unlike our own. The book weaves rigorous marine biology with genuine wonder, showing how an animal with neurons distributed throughout its arms and no evolutionary connection to vertebrates somehow manages curiosity, recognition, and what looks unmistakably like affection. It is also quietly a book about mortality, friendship, and the expanding circle of who we allow ourselves to love.",
+    whyRead: "In a moment when questions about the nature of mind and moral consideration feel newly urgent — from AI to animal welfare — Montgomery offers something rare: hard science delivered with the force of a love story.",
     rating: 4.1,
     ratingSource: "Goodreads",
-    ratingCount: "150,000+",
-    coverUrl: "https://covers.openlibrary.org/b/id/7256782-L.jpg",
-    amazonUrl: "https://www.amazon.co.uk/dp/9584277928"
+    ratingCount: "50,000+",
+    coverUrl: "https://covers.openlibrary.org/b/id/10665428-L.jpg",
+    amazonUrl: "https://www.amazon.co.uk/dp/1451697716"
   }
 };
