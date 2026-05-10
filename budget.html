@@ -2450,6 +2450,7 @@ function populateEditCategories() {
   var sel = document.getElementById('edit-category');
   var cats = DATA.categories[type] || [];
   sel.innerHTML = cats.map(function(c) { return '<option value="' + c + '">' + c + '</option>'; }).join('');
+  CSel.refreshById('edit-category');
 }
 
 function openEditTx(id) {
@@ -2459,8 +2460,10 @@ function openEditTx(id) {
 
   document.getElementById('edit-date').value    = tx.date;
   document.getElementById('edit-type').value    = tx.type;
+  CSel.refreshById('edit-type');
   populateEditCategories();
   document.getElementById('edit-category').value = tx.category;
+  CSel.refreshById('edit-category');
   document.getElementById('edit-amount').value  = tx.amount;
   document.getElementById('edit-details').value = tx.details || '';
 
@@ -2568,7 +2571,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   // Build custom selects (must happen before populating options)
-  ['dash-year','dash-month','plan-year','plan-copy-from','tx-type','tx-category','trk-year','trk-month','trk-type','trk-cat','trends-year','report-year'].forEach(function(id) {
+  ['dash-year','dash-month','plan-year','plan-copy-from','tx-type','tx-category','trk-year','trk-month','trk-type','trk-cat','trends-year','report-year','edit-type','edit-category'].forEach(function(id) {
     var el = document.getElementById(id);
     if (el) CSel.build(el);
   });
