@@ -1454,10 +1454,11 @@
       if (!el) return;
       if (!logExRows.length) { el.innerHTML = ''; return; }
       el.innerHTML = logExRows.map(function (r, i) {
+        var bw = !!r.isBodyweight;
         return '<div class="ex-log-row">'
           + '<input class="form-input" type="text" value="' + esc(r.name) + '" placeholder="Exercise name" oninput="updLogEx(' + i + ',\'name\',this.value)">'
           + '<input class="form-input" type="number" value="' + esc(r.sets) + '" placeholder="Sets" min="1" oninput="updLogEx(' + i + ',\'sets\',this.value)">'
-          + '<input class="form-input" type="text" value="' + esc(r.weight) + '" placeholder="Weight" oninput="updLogEx(' + i + ',\'weight\',this.value)">'
+          + '<input class="form-input" type="' + (bw ? 'number' : 'text') + '" value="' + esc(r.weight) + '" placeholder="' + (bw ? 'Reps' : 'Weight') + '" oninput="updLogEx(' + i + ',\'weight\',this.value)">'
           + '<input class="form-input reps-col" type="text" value="' + esc(r.reps) + '" placeholder="Reps" oninput="updLogEx(' + i + ',\'reps\',this.value)">'
           + '<button class="btn-del-row" onclick="delLogEx(' + i + ')">×</button>'
           + '</div>';
@@ -1856,7 +1857,20 @@
     };
 
     window.delLogEx = function (i) { logExRows.splice(i, 1); renderLogExRows(); };
-    window.updLogEx = function (i, f, v) { if (logExRows[i]) logExRows[i][f] = v; };
+    window.updLogEx = function (i, f, v) {
+      if (!logExRows[i]) return;
+      logExRows[i][f] = v;
+      if (f === 'name') {
+        var n = v.toLowerCase().trim();
+        var bw = false;
+        ['push', 'pull', 'legs'].forEach(function (cat) {
+          (routines[cat] || []).forEach(function (ex) {
+            if ((ex.name || '').toLowerCase().trim() === n) bw = !!ex.isBodyweight;
+          });
+        });
+        logExRows[i].isBodyweight = bw;
+      }
+    };
 
     window.delLogCardio = function (i) { logCardioRows.splice(i, 1); renderLogCardioRows(); };
     window.updLogCardio = function (i, f, v) { if (logCardioRows[i]) logCardioRows[i][f] = v; };
@@ -1880,11 +1894,13 @@
         renderLogCardioRows();
       } else {
         var pickDay = (ex && (ex.days || []).indexOf('heavy') > -1) ? 'heavy' : 'light';
+        var isBw = ex ? !!ex.isBodyweight : false;
         logExRows.push({
           id: uid(), name: name,
           sets: ex ? (pickDay === 'heavy' ? ex.heavySets || ex.sets || '' : ex.lightSets || ex.sets || '') : '',
-          weight: ex ? (wStrDay(ex, pickDay) || '') : '',
-          reps: ex ? (pickDay === 'heavy' ? ex.heavyReps || ex.reps || '' : ex.lightReps || ex.reps || '') : ''
+          weight: (isBw) ? '' : (ex ? (wStrDay(ex, pickDay) || '') : ''),
+          reps: ex ? (pickDay === 'heavy' ? ex.heavyReps || ex.reps || '' : ex.lightReps || ex.reps || '') : '',
+          isBodyweight: isBw
         });
         renderLogExRows();
       }
@@ -1900,28 +1916,44 @@
       var logId = uid();
       logs.push({ id: logId, date: date, exercises: exs, cardio: cardio, activities: acts, notes: notes.trim() });
 
-      // Auto-detect new PRs from logged weights
+      // Auto-detect new PRs from logged weights/reps
       var prsHit = [];
       exs.forEach(function (r) {
-        var w = parseFloat(r.weight);
-        if (!w || isNaN(w)) return;
         var found = null;
         ['push', 'pull', 'legs'].forEach(function (cat) {
           (routines[cat] || []).forEach(function (ex) {
             if ((ex.name || '').toLowerCase().trim() === (r.name || '').toLowerCase().trim()) found = ex;
           });
         });
-        if (!found || found.wt === 'time' || found.isBodyweight) return;
-        var current = parseFloat(found.pr) || 0;
-        if (w > current) {
-          if (!Array.isArray(found.prHistory)) found.prHistory = [];
-          // Preserve any existing manual PR as a baseline entry before overwriting
-          if (current > 0 && !found.prHistory.some(function (h) { return !h.logId; })) {
-            found.prHistory.unshift({ date: null, value: current, logId: null });
+        if (!found || found.wt === 'time') return;
+
+        if (found.isBodyweight) {
+          // Bodyweight exercises: PR is best rep count (entered in the weight field)
+          var reps = parseInt(r.weight, 10) || parseInt(r.reps, 10) || 0;
+          if (!reps) return;
+          var current = parseInt(found.pr, 10) || 0;
+          if (reps > current) {
+            if (!Array.isArray(found.prHistory)) found.prHistory = [];
+            if (current > 0 && !found.prHistory.some(function (h) { return !h.logId; })) {
+              found.prHistory.unshift({ date: null, value: current, logId: null });
+            }
+            found.pr = reps;
+            found.prHistory.push({ date: date, value: reps, logId: logId });
+            prsHit.push(found.name + ' ' + reps + ' reps');
           }
-          found.pr = w;
-          found.prHistory.push({ date: date, value: w, logId: logId });
-          prsHit.push(found.name + ' ' + w + 'kg');
+        } else {
+          var w = parseFloat(r.weight);
+          if (!w || isNaN(w)) return;
+          var current = parseFloat(found.pr) || 0;
+          if (w > current) {
+            if (!Array.isArray(found.prHistory)) found.prHistory = [];
+            if (current > 0 && !found.prHistory.some(function (h) { return !h.logId; })) {
+              found.prHistory.unshift({ date: null, value: current, logId: null });
+            }
+            found.pr = w;
+            found.prHistory.push({ date: date, value: w, logId: logId });
+            prsHit.push(found.name + ' ' + w + 'kg');
+          }
         }
       });
 
