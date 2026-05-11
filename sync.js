@@ -119,13 +119,17 @@
         var localTs  = getLocalTimestamps();
         var changed = false;
 
+        // If this device has never written timestamps it pre-dates the sync
+        // system — always defer to remote so stale local data cannot win.
+        var localHasTimestamps = _origGet(TIMESTAMPS_KEY) !== null;
+
         SYNC_KEYS.forEach(function (k) {
           if (remote[k] === undefined) return;
           var localVal   = _origGet(k);
           var remoteTime = remoteTs[k] || 0;
           var localTime  = localTs[k]  || 0;
 
-          if (localVal === null || remoteTime > localTime) {
+          if (localVal === null || remoteTime > localTime || !localHasTimestamps) {
             if (remote[k] !== localVal) {
               _origSet(k, remote[k]);
               var ts = getLocalTimestamps();
