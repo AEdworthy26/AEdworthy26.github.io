@@ -1,17 +1,17 @@
 // tech-news-data.js
-// Auto-updated 2026-05-10 — do not edit manually
+// Auto-updated 2026-05-11 — do not edit manually
 
 var TECH_NEWS = {
-  date: "2026-05-10",
+  date: "2026-05-11",
   main: {
-    title: "SpaceX Plans $55 Billion Investment to Build AI Chip Factory Called Terafab",
+    title: "SpaceX Plans $55 Billion Investment to Build A.I. Chip Factory Called Terafab",
     category: "Technology",
     content: [
-      "Elon Musk\'s SpaceX has announced an extraordinarily ambitious plan to invest $55 billion in a new semiconductor manufacturing facility dubbed Terafab, marking a dramatic expansion of the rocket company\'s ambitions far beyond aerospace. The facility is intended to produce artificial intelligence chips at scale, positioning SpaceX as a direct player in the fiercely competitive AI hardware market currently dominated by Nvidia, AMD, and a handful of specialized chip designers. The announcement signals that Musk is increasingly intent on controlling the full vertical stack of AI infrastructure, from the raw silicon underpinning large language models to the software and data centers that run them.",
-      "The scale of the proposed investment is staggering even by the standards of today\'s AI-fueled capital expenditure race. For context, $55 billion rivals the annual chip-related spending commitments made by some of the world\'s largest technology conglomerates, and it would make Terafab one of the most significant semiconductor projects announced in the United States in recent years. If realized, the factory could reduce SpaceX\'s and Musk\'s other ventures' dependence on third-party chip suppliers, giving him a strategic advantage in building and running AI systems at a time when GPU shortages have repeatedly constrained the industry.",
-      "The move fits a broader pattern in Musk\'s empire-building strategy. His AI company xAI, which operates the Grok chatbot and maintains one of the world\'s largest GPU clusters, has been a voracious consumer of specialized chips, and securing an in-house supply chain would dramatically reduce costs and procurement delays. SpaceX already has deep expertise in advanced manufacturing, precision engineering, and rapid iteration — skills that translate reasonably well to the demands of cutting-edge semiconductor production, even if chipmaking remains one of the most technically demanding industries on the planet.",
-      "Analysts have greeted the announcement with a mixture of admiration and skepticism. Building a world-class chip fabrication plant from scratch requires not just capital but an extraordinarily specialized workforce, years of process development, and partnerships with equipment makers such as ASML, whose extreme ultraviolet lithography machines are essential for producing leading-edge nodes. Some experts note that even well-funded incumbents like Intel have struggled for years to close the gap with Taiwan Semiconductor Manufacturing Company, suggesting that Terafab faces a long and difficult road before it can compete on performance or cost.",
-      "Nevertheless, the announcement is likely to reverberate across the semiconductor and AI industries, reinforcing the sense that the AI infrastructure buildout is entering a new phase in which major players feel compelled to own their own silicon destiny. It also underscores the degree to which SpaceX, once narrowly defined by its rocket launches and satellite constellation, has transformed into a diversified technology conglomerate with fingers in defense, communications, and now computing. Whether Terafab ultimately delivers on its promise or becomes a cautionary tale about overreach, the $55 billion commitment ensures it will be one of the most closely watched technology projects of the coming decade."
+      "Elon Musk\'s SpaceX has announced an ambitious plan to invest $55 billion in a new semiconductor manufacturing facility dubbed Terafab, marking one of the most significant private-sector bets on artificial intelligence infrastructure in history. The factory is intended to produce the specialized AI chips that power large-scale machine learning systems, an area of the tech supply chain that has become fiercely competitive and strategically critical. The announcement signals a dramatic expansion of SpaceX\'s ambitions well beyond rockets and satellites, positioning the company as a vertically integrated player across both the hardware and software layers of the AI economy.",
+      "The move is widely seen as part of Musk\'s broader strategy to dominate the artificial intelligence landscape through multiple interlocking ventures, including his AI company xAI and its Grok chatbot. By manufacturing its own chips, SpaceX could reduce its dependence on Nvidia and other third-party suppliers whose products have been in chronic short supply due to surging global demand. Controlling chip production would give Musk\'s constellation of companies a significant cost and supply-chain advantage at a time when AI compute is the scarcest and most valuable resource in the technology industry.",
+      "The scale of the proposed investment is extraordinary even by the standards of today\'s capital-intensive AI buildout. For context, major chip fabrication plants — known as fabs — typically cost between $10 billion and $20 billion to construct, meaning Terafab\'s projected price tag implies either an exceptionally large facility, multiple sites, or an integrated ecosystem of design, manufacturing, and testing infrastructure. Analysts have noted that such an investment would put SpaceX in the same league as Intel, Samsung, and TSMC in terms of semiconductor ambition, though executing on that vision would require years of construction and an enormous influx of specialized engineering talent.",
+      "The announcement raises important questions about where the funding will come from and how it fits within SpaceX\'s existing financial commitments, which already include the development of the Starship launch system, the Starlink broadband satellite network, and various government contracts with NASA and the U.S. Department of Defense. SpaceX has not yet gone public, which limits its ability to raise capital through equity markets in the way that competitors like Nvidia or AMD can. Investors and industry observers will be watching closely to see whether the company pursues outside financing, brings in strategic partners, or relies on revenue generated by its existing businesses to fund the venture.",
+      "If Terafab becomes a reality, it could fundamentally reshape the competitive dynamics of the global AI chip market, which is currently dominated by a handful of companies operating under enormous geopolitical scrutiny. The United States has been pushing aggressively to reshore semiconductor manufacturing as part of its broader competition with China, and a major domestic AI chip fab backed by one of the country\'s most prominent entrepreneurs would align neatly with those policy goals. Whether SpaceX can successfully make the leap from aerospace engineering to semiconductor fabrication remains an open question, but the sheer scale of the announced commitment suggests this is not a speculative gesture — it is a declaration of intent to become a cornerstone of the next era of computing infrastructure."
     ],
     image: "https://static01.nyt.com/images/2026/05/07/multimedia/07SpaceX-fkcl/07SpaceX-fkcl-mediumSquareAt3X.jpg",
     source: "The New York Times",
@@ -20,42 +20,42 @@ var TECH_NEWS = {
   secondary: [
     {
       id: "tc1",
-      title: "Meta Kills End-to-End Encryption on Instagram DMs in Major Privacy U-Turn",
-      summary: "Meta has removed end-to-end encryption from Instagram direct messages, reversing a privacy protection that had been a key security feature for millions of users.",
+      title: "Meta Removes End-to-End Encryption from Instagram DMs in Major Privacy U-Turn",
+      summary: "Meta has disabled end-to-end encryption on Instagram direct messages, reversing a privacy commitment that had been seen as a landmark protection for users.",
       body: [
-        "Instagram users woke up today to find that the end-to-end encryption previously protecting their private direct messages has been switched off by parent company Meta, in what privacy advocates are calling a significant and troubling reversal. The feature, which ensured that only sender and recipient could read message contents, had been rolled out as a default across Instagram\'s DMs after years of lobbying from security experts and civil liberties groups.",
-        "The decision is likely to reignite long-running debates about how much trust users can place in large social platforms to safeguard their communications, particularly at a time when government pressure on tech companies to provide access to private messages is intensifying globally. Privacy campaigners warn that without end-to-end encryption, users' intimate conversations become far more vulnerable to both corporate data harvesting and potential legal demands from law enforcement agencies."
+        "Meta\'s Instagram platform has switched off end-to-end encrypted messaging for users, meaning that direct messages are no longer protected by the strongest available form of digital privacy. The change represents a significant reversal for parent company Meta, which had previously positioned the encryption feature as a core commitment to user security across its messaging products.",
+        "The decision is likely to reignite debate about the tension between user privacy and platform moderation, as end-to-end encryption prevents even Meta itself from reading message contents. Privacy advocates are expected to criticize the move sharply, while some law enforcement bodies have long argued that such encryption hampers investigations into serious crimes."
       ],
-      image: "https://images.unsplash.com/photo-1688678991326-a79b865c025d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxNZXRhJTIwS2lsbHMlMjBFbmQtdG8tRW5kJTIwRW5jcnlwdGlvbiUyMG9uJTIwSW5zdGFncmFtJTIwRE1zJTIwaW4lMjBNYWpvciUyMFByaXZhY3klMjBVLVR1cm58ZW58MHwwfHx8MTc3ODM4OTQ2OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      image: "https://images.unsplash.com/photo-1688678991326-a79b865c025d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxNZXRhJTIwUmVtb3ZlcyUyMEVuZC10by1FbmQlMjBFbmNyeXB0aW9uJTIwZnJvbSUyMEluc3RhZ3JhbSUyMERNcyUyMGluJTIwTWFqb3IlMjBQcml2YWN5JTIwVS1UdXJufGVufDB8MHx8fDE3Nzg0NzU4NjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       source: "BBC News",
       url: "https://www.bbc.com/news/articles/clypzxl3lvqo?at_medium=RSS&at_campaign=rss",
-      category: "Cybersecurity"
+      category: "Technology"
     },
     {
       id: "tc2",
       title: "TikTok Scales Back AI Video Descriptions After Feature Produces Absurd Errors",
-      summary: "TikTok has curtailed its AI-generated video description feature after it produced wildly inaccurate and bizarre captions that spread widely across social media.",
+      summary: "TikTok has pulled back an AI-generated video description feature after it delivered wildly inaccurate and often bizarre captions that spread widely across social media.",
       body: [
-        "TikTok has moved to scale back an experimental feature that used artificial intelligence to automatically generate descriptions for videos, after examples of the tool producing nonsensical, inaccurate, and at times deeply strange captions began circulating widely online. The feature had only been rolled out to a subset of users, but the errors it made were striking enough to attract significant mockery and concern about the reliability of AI-generated content labels.",
-        "The episode serves as a pointed reminder that AI systems trained on vast datasets can still fail in unpredictable and embarrassing ways when applied to real-world content at scale, particularly when dealing with the enormous variety of video styles, languages, and cultural contexts found on a platform as large as TikTok. For a company already navigating intense regulatory scrutiny in multiple markets, the reputational cost of visibly malfunctioning AI features adds another layer of pressure to get its technology right before broad deployment."
+        "TikTok\'s experiment with automatically generating AI-written descriptions for videos has run into embarrassing trouble, with the feature producing nonsensical and sometimes comically wrong summaries that users were quick to screenshot and share. Although the rollout was limited to a subset of users, the errors were visible enough to attract widespread ridicule online and prompt the company to scale back the feature.",
+        "The stumble is a reminder of the persistent reliability challenges facing AI content tools, particularly when deployed at the scale and diversity of content that defines TikTok\'s platform. The episode adds to a growing body of cautionary examples that have made both users and regulators more skeptical of automated AI moderation and description systems."
       ],
       image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/d9ff/live/60622bb0-4a33-11f1-a70d-c72ff4101914.jpg",
       source: "BBC News",
       url: "https://www.bbc.com/news/articles/c5yerd05n01o?at_medium=RSS&at_campaign=rss",
-      category: "Artificial Intelligence"
+      category: "Technology"
     },
     {
       id: "tc3",
-      title: "Experts Warn UK Schools to Remove Pupils' Photos as AI Blackmail Threat Grows",
-      summary: "Child safety experts and the UK\'s National Crime Agency are urging schools to take down students' photos from websites and social media, warning that criminals are using AI to create sexually explicit images for blackmail.",
+      title: "Cyber-Crime Increasingly Accompanied by Threats of Physical Violence Against Staff",
+      summary: "A new trend in cyber-crime sees hackers combining digital attacks with direct intimidation and threats of physical harm toward company employees.",
       body: [
-        "A coalition of child safety specialists and the UK\'s National Crime Agency has issued an urgent warning to schools across the country, urging them to remove photographs of pupils' faces from public-facing websites and social media accounts. The warning follows a documented rise in cases where criminals are using AI image-manipulation tools to create sexually explicit material from ordinary school photos, which is then used to extort money or compliance from victims and their families.",
-        "The threat highlights one of the most disturbing practical consequences of the rapid democratization of AI image generation tools, which have become powerful enough to produce convincing manipulated imagery from minimal source material. Experts say that even well-intentioned school communications — class photos, sports day snapshots, award ceremonies — can inadvertently provide the raw material for this form of abuse, making a cautious approach to publishing children\'s images online more essential than ever."
+        "Security researchers and law enforcement agencies are warning that a growing number of cyber-criminal operations are now pairing traditional hacking tactics with explicit threats of physical violence directed at employees, their families, and executives. The shift marks a troubling evolution from purely digital extortion toward a more aggressive, hybrid model of coercion designed to force faster compliance from targeted organizations.",
+        "The trend poses new challenges for corporate security teams, which have historically focused on technical defenses rather than physical protection protocols. Experts say companies need to update their incident response plans to account for the personal safety of staff, not just the integrity of their data systems."
       ],
-      image: "https://i.guim.co.uk/img/media/d95928e9f50fd04fa2c00f6b7b7ae080b1146273/244_0_5151_4122/master/5151.jpg?width=1200&quality=85&auto=format&fit=max&s=db1d3aaacd300f34c562a842ed2cdba2",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/technology/2026/may/08/uk-schools-remove-pupils-photos-online-ai-blackmail-threat-grows",
-      category: "Artificial Intelligence"
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/d5d0/live/0fa188f0-3eea-11f1-a821-9161fbfb806d.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.com/news/articles/cr71d8vyjv0o?at_medium=RSS&at_campaign=rss",
+      category: "Cybersecurity"
     }
   ]
 };

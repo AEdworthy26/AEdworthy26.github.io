@@ -1,60 +1,60 @@
 // uk-politics-news-data.js
-// Auto-updated 2026-05-10 — do not edit manually
+// Auto-updated 2026-05-11 — do not edit manually
 
 var UK_POLITICS_NEWS = {
-  date: "2026-05-10",
+  date: "2026-05-11",
   main: {
-    title: "Labour MP Issues Ultimatum: Challenge Starmer by Monday or I Will Trigger Leadership Contest",
+    title: "Starmer Fights for Political Survival as Leadership Rivals Circle and MPs Demand He Quit",
     category: "Politics",
     content: [
-      "Sir Keir Starmer is facing the most serious internal threat to his leadership since becoming Prime Minister, after former junior minister Catherine West issued a stark ultimatum to cabinet colleagues on Sunday. West told the BBC that if no senior cabinet minister steps forward to challenge Starmer by Monday, she will take matters into her own hands and attempt to gather the signatures necessary to trigger a formal Labour leadership contest. The intervention came just days after Labour suffered a catastrophic set of local election results, losing more than 1,200 council seats across England to a surging Reform UK and a resurgent Conservative Party.",
-      "The backdrop to West\'s ultimatum is a party in a state of shock following Thursday\'s local elections, which exposed deep and widespread dissatisfaction with the government\'s direction after less than two years in office. Reform UK, led by Nigel Farage, made sweeping gains from Swansea to Sunderland, eating into Labour\'s traditional working-class base in areas the party had long considered safe. The scale of the losses has prompted urgent conversations at every level of the Labour movement about whether Starmer remains the right person to lead the party into the next general election.",
-      "MPs from Labour\'s left wing are understood to be moving to urge former Energy Secretary Ed Miliband to consider putting himself forward as a leadership candidate in the coming days. Miliband\'s name has circulated as a figure who could unite the party\'s disparate factions, though sources close to him have given no clear indication of his intentions. Meanwhile, Health Secretary Wes Streeting has declined to rule out leadership ambitions, fuelling speculation that a more centrist challenger could also emerge from within the cabinet.",
-      "Downing Street has attempted to project an air of calm in the face of the mounting pressure, with aides insisting that Starmer retains the confidence of the parliamentary party and is focused on governing. The Prime Minister has responded to the crisis by turning to experienced Labour hands for advice, reaching out to figures with long institutional memories of how the party has navigated previous periods of turbulence. He has also revived the question of Brexit and closer EU ties as a key part of a fightback plan, signalling a willingness to make bolder policy moves to differentiate his government from what critics say has been an overly cautious first term.",
-      "Former deputy Labour leader Harriet Harman added her voice to the chorus of concern on Sunday, saying that while she believed Starmer should remain as Prime Minister for now, 'more of the same is not acceptable.' Her comments underlined the precarious nature of Starmer\'s position — supported enough to survive in the short term, but facing a serious credibility test that will define the coming weeks. Political observers across Westminster noted that the next 48 hours will be critical: if a credible challenger emerges, the Labour Party could be heading toward its most consequential internal contest in a generation."
+      "Sir Keir Starmer is battling for his political survival after a catastrophic set of local and devolved election results left him facing the most serious challenge to his leadership since taking office. The Prime Minister is set to deliver a make-or-break speech on Monday, vowing to 'face up to the big challenges' confronting Britain, in a last-ditch attempt to persuade his own MPs not to move against him. Around 40 Labour backbenchers have already publicly called on him to resign, and the pressure shows little sign of abating as potential successors begin openly positioning themselves for a contest.",
+      "The scale of Labour\'s electoral humiliation has been described as devastating, with the party losing almost 1,500 councillors in England and, critically, losing control of the Welsh Senedd for the first time. The results have emboldened a growing chorus of critics within the parliamentary party, with some senior figures now willing to say publicly what many have whispered for months — that Starmer lacks the political instinct and popular touch needed to lead Labour into the next general election. The losses have been interpreted by many in the party as a fundamental verdict on the government\'s direction, rather than a mid-term protest.",
+      "Among the most significant voices to break cover is former Deputy Prime Minister Angela Rayner, who issued what amounted to a 'last chance' ultimatum to Starmer in a carefully worded public statement. Rayner called for a bold change of direction and backed Andy Burnham\'s return to parliament, a move seen as a pointed signal about her own preferences for a potential successor. Her intervention carries particular weight given her former position in government and her standing among the Labour left, with many interpreting her comments as the opening move in a leadership campaign of her own.",
+      "Health Secretary Wes Streeting has also refused to rule out leadership ambitions, while Labour MP Catherine West dramatically threatened to launch a formal challenge herself if no cabinet minister was willing to act first. West\'s ultimatum — delivered in a high-profile television appearance — represented an extraordinary moment of public rebellion, as she sat alongside Education Secretary Bridget Phillipson, one of Starmer\'s most steadfast defenders. The stand-off exposed the raw divisions now running through the parliamentary Labour Party, with ministers scrambling to shore up the Prime Minister even as backbenchers demand his head.",
+      "Starmer\'s allies insist he intends to fight on and that Monday\'s speech will signal a renewed sense of urgency and ambition in his government\'s programme. Senior cabinet figures have rallied publicly to his defence, arguing that removing a sitting Prime Minister at this stage would be deeply damaging to Labour\'s long-term credibility and hand ammunition to both Reform UK and the Conservatives. Nevertheless, the coming days are widely regarded as decisive: if Starmer cannot reassert his authority and demonstrate a credible path forward, the mechanisms for a formal leadership challenge could be triggered within weeks."
     ],
-    image: "https://i.guim.co.uk/img/media/9418a788aa3d552cafa804ea08ec6b461b651af6/0_0_6630_5304/master/6630.jpg?width=1200&quality=85&auto=format&fit=max&s=41a265263484a2554adb27c4603c1aa8",
-    source: "BBC News",
-    sourceUrl: "https://www.bbc.com/news/articles/cx210w87l4do?at_medium=RSS&at_campaign=rss"
+    image: "https://i.guim.co.uk/img/media/73f5b10cca4c712b9ea30002cdc21b939d8f8080/1190_0_5952_4761/master/5952.jpg?width=1200&quality=85&auto=format&fit=max&s=e5faae198a2b180661f41d941dd7026e",
+    source: "The Guardian",
+    sourceUrl: "https://www.theguardian.com/politics/2026/may/10/starmer-faces-perilous-24-hours-streeting-readying-leadership-bid"
   },
   secondary: [
     {
       id: "uk1",
-      title: "How Reform UK Won Votes from Swansea to Sunderland — Reshaping England\'s Political Map",
-      summary: "Reform UK\'s sweeping gains in the local elections have devastated both Labour and the Conservatives, fundamentally redrawing England\'s political landscape.",
+      title: "Rayner Backs Burnham\'s Return and Issues 'Last Chance' Warning to Starmer",
+      summary: "Angela Rayner has broken her silence after Labour\'s election defeats, calling for bolder action from Starmer and backing Andy Burnham\'s return to parliament.",
       body: [
-        "The local election results have confirmed what polling had long suggested: England\'s two-party system is fracturing at an accelerating pace, with Reform UK making gains in communities that had never previously elected one of its councillors. From former industrial heartlands in the north-east to Welsh border towns and southern coastal seats, the party led by Nigel Farage has demonstrated a genuinely national reach that its predecessors in the populist right never managed to achieve.",
-        "The consequences for both Labour and the Conservatives are severe and potentially long-lasting. Labour lost over 1,200 council seats, while the Tories also suffered significant losses, leaving analysts to question whether the traditional dominance of the two main parties at any level of British democracy can any longer be taken for granted."
+        "In her first public comments since Labour\'s devastating local and Senedd election losses, Angela Rayner described blocking Andy Burnham\'s return to parliament as a mistake and demanded a significant shift in the government\'s political direction. Her statement was widely seen as a direct challenge to Starmer\'s authority, with Rayner making clear that the Prime Minister\'s position was far from secure.",
+        "Rayner\'s intervention is significant not only for its content but for its timing, coming as potential leadership candidates openly position themselves ahead of what many believe could be an imminent contest. Her backing for Burnham signals that the former Greater Manchester mayor — seen as a unifying figure on the Labour left — could emerge as a key player if a vacancy arises."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/31ab/live/2bbf89a0-4bb6-11f1-ac78-2112837ce2aa.jpg",
+      image: "https://images.pexels.com/photos/161962/lighthouse-beach-black-and-white-sand-161962.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       source: "BBC News",
-      url: "https://www.bbc.com/news/articles/cwy2nz4gwj5o?at_medium=RSS&at_campaign=rss",
+      url: "https://www.bbc.com/news/articles/c5yekp5j36zo?at_medium=RSS&at_campaign=rss",
       category: "Politics"
     },
     {
       id: "uk2",
-      title: "SNP Emerges as Scotland\'s Biggest Election Winner as Independence Pressure Grows",
-      summary: "The SNP has consolidated its position as Scotland\'s dominant political force following the elections, with pressure for a fresh independence referendum expected to intensify.",
+      title: "Full Nationalisation of British Steel Expected in King\'s Speech",
+      summary: "The government is expected to announce the full nationalisation of British Steel in this week\'s King\'s Speech, safeguarding thousands of jobs at the Scunthorpe plant.",
       body: [
-        "The Scottish National Party emerged as the clear winner of the Scottish elections, confirming its status as the largest party in Holyrood and handing First Minister John Swinney a significant personal mandate. Swinney has wasted little time in seeking to leverage the result, announcing plans to coordinate with fellow nationalist leaders in Wales and Northern Ireland to present a unified front against Westminster government policies on the cost of living and public spending.",
-        "The SNP\'s strong showing is widely expected to reignite calls for a second independence referendum, placing renewed strain on the already fraught relationship between Holyrood and Downing Street. With Labour\'s authority weakened by its poor performance in England, Swinney sees a political opening to press the case for greater Scottish autonomy and, ultimately, independence."
+        "Officials are reportedly drafting legislation to bring British Steel into full public ownership, a move expected to be unveiled in the King\'s Speech this week and likely to protect Britain\'s last remaining blast furnaces. The steelmaker employs around 3,500 people at its Scunthorpe facility and has been under government operational control since ministers stepped in to take over its day-to-day running from Chinese owner Jingye last year.",
+        "The anticipated announcement represents one of the most significant acts of industrial nationalisation in decades and is likely to prove popular with Labour\'s traditional support base at a moment when the party is under intense political pressure. It also reflects a broader government ambition to secure strategic domestic industries, though critics will question the long-term costs to the public purse."
       ],
-      image: "https://images.unsplash.com/photo-1570611457302-673b47119365?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTTlAlMjBFbWVyZ2VzJTIwYXMlMjBTY290bGFuZCU1Q3xlbnwwfDB8fHwxNzc4Mzg5MzMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "Sky News",
-      url: "https://news.sky.com/story/snp-is-scotlands-biggest-winner-with-pressure-for-independence-vote-likely-to-follow-13541795",
+      image: "https://i.guim.co.uk/img/media/ae92298a992bb06eea9333a9e6c7c163fd7f2415/0_0_6126_4901/master/6126.jpg?width=1200&quality=85&auto=format&fit=max&s=13526f38299658f705744e642a77eb0e",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/business/2026/may/10/full-nationalisation-of-british-steel-expected-in-kings-speech",
       category: "Politics"
     },
     {
       id: "uk3",
-      title: "Starmer Pivots to Brexit and EU Ties in Bid to Steady Leadership After Election Rout",
-      summary: "The Prime Minister has outlined a fightback strategy centred on closer European Union ties as he seeks to reassert authority following Labour\'s worst local election performance in years.",
+      title: "Plaid Cymru Plans Minority Welsh Government Built on Cross-Party Cooperation",
+      summary: "Plaid Cymru leader Rhun ap Iorwerth has announced plans to form a minority government in the Senedd and seek cooperation from all opposition parties after Labour lost control of Wales.",
       body: [
-        "Sir Keir Starmer has returned to the question of Britain\'s relationship with Europe as a central plank of his political recovery plan, arguing that closer ties with the EU represent a tangible offer to voters who feel left behind by the consequences of Brexit. The move marks a notable shift in tone for a Prime Minister who has previously been cautious about reopening Brexit debates, apparently calculating that the scale of Labour\'s losses demands a bolder, more distinctive political offer.",
-        "The strategy carries significant risks as well as potential rewards. While polling suggests a majority of voters now believe Brexit was a mistake, Starmer\'s critics within Labour warn that leaning into pro-EU messaging could further alienate the working-class voters in Leave-supporting communities who have already migrated to Reform UK in large numbers."
+        "Rhun ap Iorwerth said his administration would seek 'mature cooperation' from all opposition parties in the Senedd and would press the UK government for additional powers over policy areas including policing. The announcement follows Plaid Cymru\'s strong performance in the Welsh devolved elections, which saw Labour lose control of the Senedd for the first time.",
+        "The development marks a historic shift in Welsh politics and adds to the pressure on Keir Starmer at Westminster, with Labour\'s Senedd collapse widely seen as part of the same wave of voter discontent that devastated the party in English council elections. A Plaid Cymru-led Welsh government would also introduce a new dynamic in relations between Cardiff Bay and Downing Street."
       ],
-      image: "https://static.independent.co.uk/2026/05/09/21/a097fde5fa9afa82e6556951ecdb31c9Y29udGVudHNlYXJjaGFwaSwxNzc4NDQxNzgz-2.84560750.jpg?width=1200&auto=webp&crop=3%3A2",
-      source: "The Independent",
-      url: "https://www.independent.co.uk/news/uk/politics/starmer-labour-leadership-brexit-b2973666.html",
+      image: "https://i.guim.co.uk/img/media/027e4eea42736a1aac45bf78f97b1f65b55229c2/296_84_2553_2042/master/2553.jpg?width=1200&quality=85&auto=format&fit=max&s=fca48877d0cd344420cde472800232ec",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/politics/2026/may/10/plaid-cymru-leader-plans-minority-welsh-government-cooperation",
       category: "Politics"
     }
   ]
