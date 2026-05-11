@@ -1,61 +1,61 @@
 // world-news-data.js
-// Auto-updated 2026-05-10 — do not edit manually
+// Auto-updated 2026-05-11 — do not edit manually
 
 var WORLD_NEWS = {
-  date: "2026-05-10",
+  date: "2026-05-11",
   main: {
-    title: "Putin Signals Ukraine War 'Coming to an End' as Victory Day Parade Reflects Moscow\'s Vulnerabilities",
+    title: "Trump Rejects Iran\'s Response to US Ceasefire Proposal as 'Totally Unacceptable'",
     category: "Geopolitics",
     content: [
-      "Russian President Vladimir Putin has declared that he believes the conflict in Ukraine is 'coming to an end,' signalling an openness to negotiations while simultaneously condemning Western nations for their continued backing of President Volodymyr Zelensky. In a striking diplomatic gesture, Putin also indicated he would be willing to meet Zelensky in a third country, contingent on the reaching of a long-term peace agreement. The statements represent some of the most direct language Putin has used regarding a potential resolution to a war that has now dragged on for well over four years.",
-      "The remarks came in the immediate aftermath of Russia\'s Victory Day parade on 9 May — a celebration of the Soviet Union\'s defeat of Nazi Germany in 1945 that Putin has long used as a centrepiece of Russian nationalist identity. However, this year\'s parade was notably scaled back compared to previous displays, with analysts and observers noting the diminished spectacle reflects growing security concerns as the war bleeds ever closer to Russian cities. The reduction in pomp has added to a broader sense that Moscow and other population centres can no longer be fully insulated from the consequences of the prolonged conflict.",
-      "The New York Times reported that the shrunken parade underscores Putin\'s growing vulnerability on the home front, with drone strikes and cross-border incursions having repeatedly demonstrated that Russian territory is far from immune to Ukrainian military action. Security fears reportedly drove decisions about which military hardware to display and how many troops to mobilise, a stark contrast to the grandiose shows of force that characterised earlier years of Putin\'s rule. For many observers, the muted ceremony was as telling a signal about the state of the war as any battlefield report.",
-      "Putin\'s comments about negotiations arrive amid a complex diplomatic landscape. The Trump administration in Washington has been engaged in talks aimed at brokering some form of ceasefire or settlement, and pressure on Kyiv to consider a negotiated end to hostilities has been intensifying from multiple quarters. Zelensky, for his part, has maintained that Ukraine will not accept any deal that cedes sovereign territory or rewards Russian aggression, a position that continues to put him at odds with some of his Western partners who are quietly pushing for compromise.",
-      "The coming weeks are likely to prove pivotal. Any genuine movement toward talks would mark a dramatic shift after years of grinding attrition warfare that has claimed hundreds of thousands of lives and displaced millions. Yet scepticism remains widespread: Putin\'s previous overtures have often been accompanied by continued military operations on the ground, and Ukrainian officials have consistently warned that Russian expressions of interest in peace cannot be taken at face value without concrete, verifiable commitments. The international community will be watching closely to see whether this latest signal represents a genuine change of course or another manoeuvre in a conflict defined by its diplomatic complexity."
+      "President Donald Trump declared Iran\'s latest response to a US ceasefire proposal 'totally unacceptable' on Sunday, dealing a significant blow to ongoing diplomatic efforts to bring the conflict between the two nations to an end. Iran delivered its response to Pakistani mediators, who have been serving as intermediaries in the sensitive back-channel negotiations, according to Iran\'s state-run Islamic Republic News Agency. The sharp rejection from Trump signals that a resolution remains elusive despite weeks of intensive diplomatic maneuvering involving multiple regional actors.",
+      "The talks had been focused on a proposed 30-day extension to the existing cease-fire between the United States and Iran, alongside a contentious demand for the reopening of the Strait of Hormuz — one of the world\'s most strategically vital waterways, through which roughly a fifth of global oil supply passes. Neither the full contents of the US proposal nor the specifics of Iran\'s counter-response have been made public, leaving analysts and regional governments to speculate about the exact sticking points. The opacity surrounding both sides' positions has complicated efforts by outside parties to bridge the gap.",
+      "Pakistan\'s role as a mediating power reflects the complex diplomatic geometry now surrounding the conflict, with Islamabad positioning itself as a credible interlocutor acceptable to both Washington and Tehran. The use of a third-party channel underscores the deep mistrust between the US and Iran and the absence of direct high-level communication between the two governments. Other regional powers, including Gulf states with significant economic stakes in any reopening of the Strait of Hormuz, have been watching the negotiations with acute anxiety.",
+      "The failure to secure agreement on even a temporary cease-fire extension raises the prospect of renewed or escalating hostilities in a region already under severe strain from multiple active conflicts. An open Strait of Hormuz is considered a prerequisite by the US for any lasting diplomatic framework, but Iran has historically treated its influence over the waterway as a core strategic leverage point. Any disruption to shipping through the strait would send immediate shockwaves through global energy markets, with oil prices having already exhibited significant volatility over the course of the conflict.",
+      "International observers and allied governments are urging both sides to return to negotiations and avoid steps that could collapse the existing cease-fire arrangement entirely. The United Nations and European diplomatic channels have been quietly engaged in parallel efforts to keep the dialogue alive, though their influence over Washington\'s negotiating posture remains limited. With Trump\'s patience apparently wearing thin and Iran\'s position hardening, the coming days are likely to prove critical in determining whether diplomacy can still avert a broader escalation."
     ],
-    image: "https://images.unsplash.com/photo-1646005995482-c1b65bd42d3b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxQdXRpbiUyMFNpZ25hbHMlMjBVa3JhaW5lJTIwV2FyJTIwfGVufDB8MHx8fDE3NzgzODkyODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    source: "Al Jazeera",
-    sourceUrl: "https://www.aljazeera.com/news/2026/5/10/putin-suggests-russias-war-on-ukraine-coming-to-an-end?traffic_source=rss"
+    image: "https://images.unsplash.com/photo-1665292275574-a9782ee1da0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUcnVtcCUyMFJlamVjdHMlMjBJcmFuJTVDfGVufDB8MHx8fDE3Nzg0NzU2NzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    source: "NPR",
+    sourceUrl: "https://www.npr.org/2026/05/10/nx-s1-5817605/trump-rejects-iran-ceasefire-proposal"
   },
   secondary: [
     {
       id: "s1",
-      title: "Hantavirus-Hit Cruise Ship Docks in Tenerife as Medics Stand Ready",
-      summary: "The MV Hondius arrives in Tenerife carrying passengers affected by a deadly hantavirus outbreak, with medical teams mobilised at the port to manage the public health emergency.",
+      title: "Israeli Settlers Force Palestinian Family to Exhume Father\'s Freshly Buried Body in West Bank",
+      summary: "Israeli settlers in the West Bank compelled a Palestinian family to dig up their father\'s body shortly after his burial, prompting widespread international condemnation.",
       body: [
-        "Medical personnel in Tenerife have been placed on high alert ahead of the docking of the MV Hondius, an expedition cruise ship struck by a hantavirus outbreak that has already claimed lives and prompted emergency evacuations of passengers to hospitals in South Africa and the Netherlands. BBC correspondent Sarah Rainsford reported from the port as authorities braced for the vessel\'s arrival, with health officials coordinating a careful response to prevent further spread of the rare but dangerous virus.",
-        "Hantavirus is a serious viral illness typically transmitted through contact with infected rodents and their droppings, and outbreaks in contained environments such as ships present particular logistical challenges for health authorities. Two British nationals previously evacuated from the ship were reported to be improving in hospital, offering a measure of cautious optimism amid an otherwise grave situation that has drawn attention from global health organisations."
+        "The relatives of Hussein Asasa described to journalists how they were forced to exhume and rebury their father after Israeli settlers interfered with his grave in the West Bank, in a deeply distressing incident that has drawn global outrage. The UN human rights office condemned the episode as 'appalling and emblematic of the dehumanisation of Palestinians' taking place across the occupied West Bank, calling for urgent accountability.",
+        "The incident is the latest in a series of documented settler actions against Palestinian communities that human rights groups say have intensified significantly in recent years. International bodies and foreign governments have repeatedly called on Israel to rein in settler violence, but critics argue that enforcement remains inadequate and that impunity for such acts continues to fuel tensions across the territory."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/32af/live/5301da10-4bff-11f1-96df-11e294cb5416.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/cn7pzmg8zeno?at_medium=RSS&at_campaign=rss",
-      category: "Health"
+      image: "https://images.unsplash.com/photo-1682780052938-653bc981c4da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxJc3JhZWxpJTIwU2V0dGxlcnMlMjBGb3JjZSUyMFBhbGVzdGluaWFuJTIwRmFtaWx5JTIwdG8lMjBFeGh1bWUlMjBGYXRoZXIlNUN8ZW58MHwwfHx8MTc3ODQ3NTY3NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "NPR",
+      url: "https://www.npr.org/2026/05/10/nx-s1-5817496/israeli-settlers-palestinian-exhume-grave-west-bank-jenin",
+      category: "Conflict"
     },
     {
       id: "s2",
-      title: "Guardian Journalist Detained and Beaten by Somali Police After Prison Torture Coverage",
-      summary: "Somali authorities arrested and physically assaulted Guardian reporter Mohamed Bulbul and two colleagues following his reporting on a woman allegedly being tortured while imprisoned for peaceful protest.",
+      title: "Hantavirus Outbreak on Cruise Ship Spreads Concern as Passengers Return Home",
+      summary: "Passengers from the hantavirus-affected cruise ship MV Hondius are being repatriated and placed under medical monitoring, with at least one US traveller testing positive for the virus.",
       body: [
-        "Mohamed Bulbul, a journalist reporting for the Guardian, was detained in Mogadishu and beaten with pistols by Somali police alongside colleagues Abdihafid Nor Barre and Abdishakur Mohamed Mohamed, in what press freedom advocates are condemning as a direct act of intimidation against independent journalism. The arrests came in the wake of Bulbul\'s coverage of Sadia Moalim Ali, a 27-year-old rickshaw driver who described being stripped and beaten by male prison guards after she was jailed for participating in peaceful anti-government demonstrations.",
-        "The case has drawn international condemnation, shining a harsh spotlight on press freedom and human rights conditions in Somalia. Ali\'s account, given in an exclusive interview from inside the prison, detailed treatment that human rights organisations say amounts to torture — raising serious questions about the conduct of Somali security forces and the government\'s tolerance for dissent."
+        "American passengers from the MV Hondius are returning home and heading primarily to Nebraska for evaluation by health officials, while a French national who disembarked has shown symptoms of hantavirus, prompting France\'s prime minister to announce that five passengers will be quarantined in Paris until further notice. At least one US passenger has already tested positive for the virus, raising alarm among global health authorities monitoring the outbreak.",
+        "Two British nationals who were medically evacuated from the vessel earlier — one treated in Johannesburg and another in the Netherlands — are reported to be improving, offering some cautious reassurance. Hantavirus is primarily transmitted through contact with infected rodents or their droppings, and outbreaks aboard confined vessels present particular challenges for containment and contact tracing."
       ],
-      image: "https://i.guim.co.uk/img/media/00d5e8efee01a420dc8d1bc678ee7231e1223a39/350_0_3500_2800/master/3500.jpg?width=1200&quality=85&auto=format&fit=max&s=c5604bd094625c43a7c8ea25bff35fc6",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/global-development/2026/may/09/guardian-reporter-and-colleagues-detained-and-beaten-by-somali-police",
-      category: "Human Rights"
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/a28c/live/532e8af0-4ca5-11f1-a52e-37ef6facf99b.jpg",
+      source: "NPR",
+      url: "https://www.npr.org/2026/05/10/nx-s1-5817578/hantavirus-cruise-ship-nebraska-us-passengers",
+      category: "Health"
     },
     {
       id: "s3",
-      title: "Lebanon Says Israeli Strikes Killed 39 as Ceasefire Deal Continues to Fray",
-      summary: "Lebanese authorities report 39 people killed in Israeli strikes even as a ceasefire agreement declared last month remains nominally in place, with Hezbollah and Israel continuing to exchange fire.",
+      title: "Thailand\'s Former Prime Minister Thaksin Shinawatra Released from Prison on Parole",
+      summary: "Influential Thai former leader Thaksin Shinawatra has been released on parole after spending approximately eight months behind bars.",
       body: [
-        "The Lebanese government has reported that Israeli military strikes have killed 39 people, underscoring the fragility of a ceasefire deal that was announced only last month but has failed to halt the cycle of retaliatory violence between Israeli forces and Hezbollah militants. The continued exchanges of fire have raised serious doubts about the durability of the agreement and the prospects for a more lasting cessation of hostilities along Israel\'s northern border.",
-        "The ongoing conflict adds another layer of volatility to an already deeply destabilised Middle East region, where the broader war has had cascading effects far beyond the immediate theatre of operations — including, according to NPR reporting, worsening food and fuel scarcity as far afield as Sri Lanka. International mediators face mounting pressure to find a more robust mechanism for enforcing the ceasefire before the death toll climbs further."
+        "Thaksin Shinawatra, one of Thailand\'s most consequential and controversial political figures, was released from prison on parole on Monday after serving roughly eight months of his sentence, according to Al Jazeera. The former prime minister, who was ousted in a military coup in 2006 and spent years in self-imposed exile, had returned to Thailand in 2023 before being imprisoned on charges his supporters characterise as politically motivated.",
+        "Thaksin\'s release is likely to reverberate through Thai politics, where his influence — exercised through loyalist political parties — has remained a defining force for two decades despite his personal legal travails. His freedom will be closely watched by opposition figures and the military establishment alike, as Thailand navigates ongoing debates about democratic reform, judicial independence, and the role of populist politics in the country\'s future."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/014d/live/7398ef90-4bc1-11f1-8bbe-110a0d5a715a.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/cn4pjegk358o?at_medium=RSS&at_campaign=rss",
-      category: "Conflict"
+      image: "https://images.unsplash.com/photo-1615259844850-10eacfec0ec8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUaGFpbGFuZCU1Q3xlbnwwfDB8fHwxNzc4NDc1Njc0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "Al Jazeera",
+      url: "https://www.aljazeera.com/news/2026/5/11/thailands-thaksin-shinawatra-released-from-prison?traffic_source=rss",
+      category: "Politics"
     }
   ]
 };

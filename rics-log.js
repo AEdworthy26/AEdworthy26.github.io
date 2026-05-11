@@ -3,6 +3,45 @@
 
 var RICS_LOG = [
   {
+    "date": "2026-05-11",
+    "topic": "Compulsory Purchase Orders: Compensation Principles, RP Participation and Strategic Risk in Residential Land Assembly",
+    "module": "Land Assembly, Legal Risk and Stakeholder Strategy",
+    "level": 2,
+    "apc_competency": "Legal/Regulatory Compliance (Level 2)",
+    "focus": "This lesson examines CPO as a land assembly tool \u2014 covering the legal framework, compensation principles under the Land Compensation Acts, and how Registered Providers like Latimer engage with CPO processes either as acquiring authorities, promoters working alongside LAs, or as third-party landowners. The lesson is directly relevant to Alfie\\'s JV and land-led work where CPO risk or LA partnership structures intersect with site assembly strategy.",
+    "image": "https://images.unsplash.com/photo-1682403299053-5dea162de9b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxDb21wdWxzb3J5JTIwUHVyY2hhc2UlMjBPcmRlcnMlM0ElMjBVSyUyMHByb3BlcnR5JTIwYXJjaGl0ZWN0dXJlJTIwYnVpbGRpbmclMjBleHRlcmlvcnxlbnwwfDB8fHwxNzc4NDc2MjU5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "content": [],
+    "summary": [
+      "CPO powers for housing-led schemes primarily derive from S226 TCPA 1990 and the Housing and Regeneration Act 2008 \u2014 the acquiring authority must satisfy the Compelling Case in the Public Interest (CCPI) threshold, requiring clear public benefit, human rights compliance and realistic deliverability.",
+      "Compensation is assessed under the Land Compensation Act 1961 (Rule 2: open market value in the no-scheme world), plus supplementary heads including disturbance (Rule 6), Basic Loss Payments (7.5% capped at \u00a375,000) and statutory interest on advance payments at 8% above base rate.",
+      "The no-scheme world principle \u2014 codified by the Neighbourhood Planning Act 2017 \u2014 strips out scheme-related value changes from compensation assessments, preventing landowners from capturing public-sector uplift while protecting them from blight-induced undervaluation.",
+      "RPs like Latimer typically act as scheme promoters indemnifying the LA under a development agreement \u2014 key negotiated risk points include cost caps, programme longstop dates, inquiry cost allocation and advance payment interest exposure.",
+      "CPO programme timescales of 24\u201348+ months must be built into cashflow models and development agreements, with careful alignment to Homes England AHP grant allocation windows to avoid viability risk from grant lapse."
+    ],
+    "qa": [
+      {
+        "q": "Under what enabling legislation would a London Borough most commonly promote a CPO for a housing-led regeneration scheme, and what is the key evidential test they must satisfy?",
+        "a": "The most common power is Section 226(1)(a) of the Town and Country Planning Act 1990, which allows an LPA to acquire land it considers suitable for development, re-development or improvement likely to contribute to the promotion or improvement of economic, social or environmental wellbeing of its area. The authority must satisfy the Compelling Case in the Public Interest (CCPI) \u2014 demonstrating clear public benefit, that the scheme cannot reasonably be delivered without CPO, that there is a realistic prospect of implementation within a reasonable timescale, and that the interference with private rights is proportionate under Article 1, Protocol 1 ECHR. MHCLG Circular 06/2004 remains the primary procedural guidance."
+      },
+      {
+        "q": "A landowner within the CPO boundary argues that their land has been blighted by the CPO proposal and is worth \u00a3500,000 less than its pre-announcement value. How does the no-scheme world principle protect them, and which legislation codified this?",
+        "a": "The no-scheme world principle requires the valuer to assess compensation as if the acquiring authority\\'s scheme \u2014 and any related scheme \u2014 had never been proposed, stripping out both increases and decreases in value attributable to the scheme. If blight from the CPO announcement has suppressed the land\\'s market value, that suppression is excluded and compensation is based on the pre-blight value. This principle was codified and clarified by the Neighbourhood Planning Act 2017, which inserted Sections 6A\u20136E into the Land Compensation Act 1961. The landowner is therefore protected against under-compensation caused by scheme-related blight."
+      },
+      {
+        "q": "Latimer is indemnifying a London Borough for CPO costs on a 200-unit affordable housing scheme. What are the four key commercial risk points you would expect the development agreement to address in relation to the CPO?",
+        "a": "Four key risk points are: (1) Cost cap or agreed CPO budget with a clear approval mechanism for the LA to authorise overruns \u2014 inquiry costs can be 3\u20135x uncontested costs and must be controlled. (2) Programme longstop dates \u2014 if the CPO is not confirmed by an agreed date, Latimer needs termination rights or at minimum a programme renegotiation mechanism, to protect AHP grant alignment. (3) Advance payment interest exposure \u2014 if the LA delays advance payments beyond the statutory three-month window, interest accrues at 8% above base rate under s52 LCA 1973; the agreement must allocate this risk between the parties. (4) Step-in rights \u2014 if the LA fails to progress the CPO diligently, Latimer needs a contractual mechanism to compel progress or take over conduct, given the scheme\\'s delivery programme depends on CPO completion."
+      },
+      {
+        "q": "A residential owner-occupier within a CPO boundary has a property with a market value of \u00a3300,000 in the no-scheme world. What total compensation heads of claim would they be entitled to pursue?",
+        "a": "The owner-occupier would be entitled to: (1) Rule 2 market value: \u00a3300,000 assessed in the no-scheme world. (2) Basic Loss Payment: 7.5% of market value = \u00a322,500, plus the additional \u00a325,000 occupier supplement (capped at \u00a347,500 total under the occupier provisions). (3) Disturbance under Rule 6: reasonable costs of relocation, including removal expenses, professional fees for finding a replacement property, and any mortgage redemption penalties \u2014 these are assessed on a reasonable cost basis, not market value. (4) Statutory interest on any advance payment shortfall if the advance payment (90% of agreed sum) is not paid within three months of entry. Surveyors' and legal fees reasonably incurred in the compensation claim are also recoverable from the acquiring authority."
+      },
+      {
+        "q": "What is a General Vesting Declaration, and why is it typically preferred over a Notice to Treat/Notice of Entry process in housing-led regeneration CPOs?",
+        "a": "A General Vesting Declaration (GVD) is a mechanism under the Compulsory Purchase (Vesting Declarations) Act 1981 that allows an acquiring authority to automatically vest title to all CPO land simultaneously on a specified date (minimum 28 days' notice, 14 days in urgent cases), without requiring individual conveyances for each parcel. Title passes to the authority by operation of law on the vesting date, subject to subsequent compensation assessment. In housing-led regeneration CPOs, the GVD is preferred because: (i) it provides a clean, simultaneous title transfer across multiple fragmented parcels \u2014 essential for site assembly where individual notices to treat would create a patchwork of different possession dates; (ii) it allows the authority and the RP/developer to begin enabling works and infrastructure delivery without waiting for compensation disputes to be resolved; and (iii) it simplifies the conveyancing chain, reducing title risk on complex multi-ownership sites."
+      }
+    ]
+  },
+  {
     "date": "2026-05-10",
     "topic": "Option Agreements: Structures, Conditionality and Negotiation Strategy in Residential Land Transactions",
     "module": "Land and Joint Ventures",

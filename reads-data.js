@@ -1,19 +1,19 @@
 // reads-data.js
-// Auto-updated 2026-05-10 — do not edit manually
+// Auto-updated 2026-05-11 — do not edit manually
 
 var READS_DATA = {
-  date: "2026-05-10",
+  date: "2026-05-11",
   book: {
-    title: "The Soul of an Octopus: A Surprising Exploration into the Wonder of Consciousness",
-    author: "Sy Montgomery",
-    year: 2015,
-    genres: ["Nature", "Science", "Memoir"],
-    desc: "Sy Montgomery spent years befriending the giant Pacific octopuses at the New England Aquarium, and what she discovered upended assumptions about intelligence, emotion, and what it means to be a person. Each octopus has a distinct personality — one is playful, another suspicious, another bold — and Montgomery\'s growing relationships with them become a meditation on consciousness radiating out in forms utterly unlike our own. The book weaves rigorous marine biology with genuine wonder, showing how an animal with neurons distributed throughout its arms and no evolutionary connection to vertebrates somehow manages curiosity, recognition, and what looks unmistakably like affection. It is also quietly a book about mortality, friendship, and the expanding circle of who we allow ourselves to love.",
-    whyRead: "In a moment when questions about the nature of mind and moral consideration feel newly urgent — from AI to animal welfare — Montgomery offers something rare: hard science delivered with the force of a love story.",
-    rating: 4.1,
+    title: "The Idiot",
+    author: "Elif Batuman",
+    year: 2017,
+    genres: ["Literary Fiction", "Coming of Age", "Humour"],
+    desc: "Selin is an eighteen-year-old Turkish-American student arriving at Harvard in 1995, and Batuman\'s novel follows her through a year of language classes, email exchanges with an enigmatic Hungarian mathematician, and a summer teaching English in rural Turkey. Nothing much happens in the plot-driven sense, and that is entirely the point — the book is a sustained, deadpan investigation into how a highly intelligent person can understand almost nothing about the world or herself. Batuman writes with a wit so dry it takes a moment to realise you\'re laughing, and the novel captures the particular vertigo of encountering serious literature, serious language, and the first stirrings of desire all at once. It is a love story about ideas as much as people, and one of the most accurate portrayals of what it feels like to be young and overwhelmed by the possibility that everything might be meaningful.",
+    whyRead: "In a cultural moment saturated with urgency and noise, Batuman\'s slow, funny, deeply intelligent novel is a reminder that confusion and wonder are their own rewards — and it will make you want to learn a language immediately.",
+    rating: 3.9,
     ratingSource: "Goodreads",
-    ratingCount: "50,000+",
-    coverUrl: "https://covers.openlibrary.org/b/id/10665428-L.jpg",
-    amazonUrl: "https://www.amazon.co.uk/dp/1451697716"
+    ratingCount: "90,000+",
+    coverUrl: "https://covers.openlibrary.org/b/id/8054401-L.jpg",
+    amazonUrl: "https://www.amazon.co.uk/dp/1910702692"
   }
 };

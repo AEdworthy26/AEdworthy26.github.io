@@ -1,60 +1,60 @@
 // us-politics-news-data.js
-// Auto-updated 2026-05-10 — do not edit manually
+// Auto-updated 2026-05-11 — do not edit manually
 
 var US_POLITICS_NEWS = {
-  date: "2026-05-10",
+  date: "2026-05-11",
   main: {
-    title: "Republican Redistricting Blitz Reshapes Midterm Map, Putting Democrats on Defense",
+    title: "Trump Publicly Rebukes Supreme Court Justices Barrett and Gorsuch Over Tariff Ruling",
     category: "Politics",
     content: [
-      "Republicans have executed a sweeping redistricting offensive over the past ten days, dramatically reshaping the congressional map ahead of November\'s midterm elections. Capitalizing on a recent Supreme Court ruling that weakened minority voting rights protections, GOP-controlled legislatures in at least four Southern states have moved aggressively to redraw district boundaries. The rapid pace of these changes has caught many Democrats off guard and forced party strategists to rethink their path to reclaiming the House majority.",
-      "At the heart of the Republican strategy is the dismantling of majority-Black congressional districts across the South — a deliberate effort to dilute the concentrated Democratic voting power those districts have historically represented. The Supreme Court\'s ruling gave state legislatures the legal cover to proceed, and Republicans wasted little time translating that legal opening into concrete map changes. National politics reporters covering the developments note that the moves could cost Democrats several seats they had counted on as reliable anchors for any bid to retake the chamber.",
-      "The political fallout has been swift and significant. According to The Washington Post, Republicans are now estimated to be eight seats closer to retaining control of the House, dramatically steepening the climb for Democrats who had harbored cautious optimism about their midterm prospects. That margin is particularly consequential given the narrow majorities that have defined the House in recent years, where a handful of seats can determine which party controls the agenda, committee chairmanships, and the legislative calendar heading into a potential presidential election cycle.",
-      "Virginia has emerged as a particularly painful flashpoint for Democrats. A court ruling nullified Democratic redistricting efforts in the state, dealing a significant blow to Governor Abigail Spanberger, who had already been navigating a difficult political environment marked by the Iran war, record oil prices, and contentious immigration policy debates. Spanberger had reportedly been skeptical of the push for new maps from the outset, and the court\'s intervention has now left the state\'s Democratic establishment scrambling for alternatives with the election calendar advancing rapidly.",
-      "The broader redistricting battle reflects a calculated and coordinated effort by the Trump White House to reshape the structural terrain of American electoral politics ahead of the midterms. By pressing state-level allies to act quickly following favorable judicial decisions, Republicans have demonstrated a willingness to move faster and more aggressively than their opponents anticipated. For Democrats, the challenge is now not just one of messaging or candidate recruitment, but of competing on a map that has been fundamentally redrawn in the span of less than two weeks — a structural disadvantage that no amount of enthusiasm or fundraising can easily overcome."
+      "President Trump launched a sharp public attack on Sunday against two of his own Supreme Court appointees, Justices Amy Coney Barrett and Neil Gorsuch, over their February ruling that struck down key elements of his tariff agenda. In a lengthy social media post, Trump accused the justices of having 'hurt our Country so badly,' expressing bitter frustration that individuals he had elevated to the nation\'s highest court had ruled against his signature economic policy. The rebuke was notable both for its intensity and for the fact that it targeted conservatives who had been celebrated as major wins for the Republican legal movement during Trump\'s first term.",
+      "The tariff decision in question, handed down earlier this year, represented a significant legal check on the administration\'s broad use of executive authority to impose sweeping trade levies. The ruling created immediate political and economic consequences, complicating the White House\'s efforts to use tariffs as both a revenue tool and a negotiating instrument in international trade disputes. By publicly singling out Barrett and Gorsuch by name, Trump escalated his long-running tension with the judiciary to a new level, openly challenging the independence of justices he personally nominated and whose Senate confirmations he championed.",
+      "Trump\'s willingness to criticize sitting Supreme Court justices from his own party reflects a broader pattern of the president demanding personal loyalty from institutions that are constitutionally designed to operate independently of the executive branch. Legal scholars and court observers have noted that such public pressure campaigns, while not unprecedented in American political history, carry particular weight when they come from a sitting president and are directed at lifetime-appointed jurists. The attack also underscores the degree to which Trump views the courts as political actors whose decisions should align with his administration\'s goals rather than as neutral arbiters of the law.",
+      "The episode has reignited debate within Republican circles about the nature of judicial conservatism and whether originalist justices will consistently side with expansive executive power. Barrett and Gorsuch have, on various occasions, demonstrated willingness to rule against the administration\'s positions, signaling that their jurisprudential commitments do not always translate into outcomes favorable to the White House. That independence — prized by traditional conservatives as a mark of judicial integrity — is precisely what appears to have drawn Trump\'s ire, as he continues to push the boundaries of presidential authority across multiple policy domains.",
+      "The public fallout from Trump\'s post is likely to have lasting implications for how the White House engages with the Supreme Court going forward, particularly as additional cases touching on executive power, immigration, and economic policy work their way through the federal judiciary. Congressional Democrats were quick to seize on the comments as evidence of Trump\'s disregard for the separation of powers, while some Republicans remained silent, reluctant to either defend the justices or endorse the president\'s attack. With the administration already navigating a complex legal landscape across multiple fronts, the decision to publicly antagonize two of its own Supreme Court appointees adds a volatile new dimension to the relationship between the executive and judicial branches."
     ],
-    image: "https://images.pexels.com/photos/4669115/pexels-photo-4669115.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    source: "The New York Times",
-    sourceUrl: "https://www.nytimes.com/2026/05/09/us/politics/midterm-redistricting-house-map-republicans.html"
+    image: "https://thehill.com/wp-content/uploads/sites/2/2026/05/Trump-small-business-5.jpeg?w=900",
+    source: "The Hill",
+    sourceUrl: "https://thehill.com/homenews/administration/5872012-trump-scolds-justices-barrett-gorsuch/"
   },
   secondary: [
     {
       id: "us1",
-      title: "DOJ Faces Internal Crisis After Push to Prosecute Former FBI Director Comey",
-      summary: "Several prosecutors have resigned from the Justice Department following a politically charged effort to bring charges against former FBI Director James Comey.",
+      title: "Election Deniers Positioned to Win Governorships With Oversight of 2028 Swing State Elections",
+      summary: "Republican candidates who denied the results of the 2020 presidential election are now frontrunners in gubernatorial races in key swing states, raising fresh concerns about the integrity of future elections.",
       body: [
-        "The Justice Department is experiencing significant internal fallout after leadership pushed to prosecute former FBI Director James Comey, with multiple prosecutors departing the agency and at least one major case being disrupted as a result. The departures signal deep unease within the career ranks of federal prosecutors about the direction of the department under the Trump administration\'s continued pressure on perceived political adversaries.",
-        "The episode highlights the ongoing tension between political appointees seeking to use the DOJ as a vehicle for settling scores with figures from previous administrations and career law enforcement officials who view such moves as a threat to the institution\'s independence and credibility. Critics argue the pursuit of Comey is emblematic of a broader pattern of politicizing federal law enforcement that risks long-term damage to public trust in the justice system."
+        "Several Republican candidates who publicly denied or cast doubt on the legitimacy of the 2020 presidential election results are now well-positioned to win governorships in states including Arizona, Wisconsin, and Pennsylvania — all of which played decisive roles in recent presidential contests. If elected, these individuals would have direct oversight authority over election administration in their states, including certification processes and the appointment of key election officials, ahead of the 2028 presidential election.",
+        "The prospect has alarmed election integrity advocates and Democratic officials who warn that placing election deniers in charge of swing-state electoral machinery could create conditions for future disputes or administrative interference. The races are being closely watched as a bellwether for how far the Republican Party\'s skepticism of the 2020 outcome continues to shape its electoral politics heading into the next presidential cycle."
       ],
-      image: "https://images.unsplash.com/photo-1688956020469-50f4ecef7489?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxET0olMjBGYWNlcyUyMEludGVybmFsJTIwQ3Jpc2lzJTIwQWZ0ZXIlMjBQdXNoJTIwdG8lMjBQcm9zZWN1dGUlMjBGb3JtZXIlMjBGQkklMjBEaXJlY3RvciUyMENvbWV5fGVufDB8MHx8fDE3NzgzODkzNzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "The Washington Post",
-      url: "https://www.washingtonpost.com/national-security/2026/05/09/doj-sees-fallout-after-push-prosecute-former-fbi-director-james-comey/",
+      image: "https://images.unsplash.com/photo-1604496464355-a5032e3b47e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxFbGVjdGlvbiUyMERlbmllcnMlMjBQb3NpdGlvbmVkJTIwdG8lMjBXaW4lMjBHb3Zlcm5vcnNoaXBzJTIwV2l0aCUyME92ZXJzaWdodCUyMG9mJTIwMjAyOCUyMFN3aW5nJTIwU3RhdGUlMjBFbGVjdGlvbnN8ZW58MHwwfHx8MTc3ODQ3NTc3NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "Washington Post",
+      url: "https://www.washingtonpost.com/politics/2026/05/11/election-governor-deniers-trump/",
       category: "Politics"
     },
     {
       id: "us2",
-      title: "White House Moves to Replace FDA Commissioner Marty Makary Amid Agency Turmoil",
-      summary: "The White House is preparing to remove FDA Commissioner Marty Makary following mounting criticism over his leadership of the agency responsible for vaccine and drug approvals.",
+      title: "White House Weighs Pausing Federal Gas Tax as National Prices Exceed $4.50 Per Gallon",
+      summary: "The Trump administration is considering suspending the federal gasoline tax of roughly 18 cents per gallon in an effort to provide relief to American consumers facing persistently high fuel prices.",
       body: [
-        "The Trump administration is moving to replace FDA Commissioner Marty Makary, according to reporting from The Washington Post, as the agency faces a period of significant internal turbulence. Makary has drawn criticism from both public health experts and within the administration over his handling of the FDA\'s core regulatory functions, including the oversight of vaccine approvals at a time of heightened public scrutiny.",
-        "The anticipated leadership change at the FDA adds to a pattern of instability across federal health agencies under the current administration and raises fresh questions about continuity in drug and vaccine regulation. The timing is particularly sensitive given ongoing public health concerns and the political salience of pharmaceutical policy as voters head toward the November midterms."
+        "Energy Secretary Chris Wright confirmed Sunday that the Trump administration is actively considering a pause on the federal gas tax, which currently stands at just over 18 cents per gallon, as the national average price of gasoline has climbed above $4.50. The measure would represent one of the administration\'s most direct domestic policy responses to consumer price pressures, though economists have noted that the modest size of the federal tax means the relief offered to drivers would be limited.",
+        "Critics argue that suspending the gas tax, which funds highway infrastructure and transportation projects, could create long-term damage to the federal Highway Trust Fund without meaningfully addressing the underlying causes of elevated fuel prices. The proposal nonetheless signals that the White House is searching for visible, immediate actions it can point to on kitchen-table economic issues as midterm elections approach."
       ],
-      image: "https://images.unsplash.com/photo-1742413628280-8bfae633391b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxXaGl0ZSUyMEhvdXNlJTIwTW92ZXMlMjB0byUyMFJlcGxhY2UlMjBGREElMjBDb21taXNzaW9uZXIlMjBNYXJ0eSUyME1ha2FyeSUyMEFtaWQlMjBBZ2VuY3klMjBUdXJtb2lsfGVufDB8MHx8fDE3NzgzODkzNzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "The Washington Post",
-      url: "https://www.washingtonpost.com/health/2026/05/08/fda-commissioner-marty-makary/",
-      category: "Politics"
+      image: "https://static01.nyt.com/images/2026/05/10/multimedia/10trump-news-gas-prices-tfjq/10trump-news-gas-prices-tfjq-mediumSquareAt3X.jpg",
+      source: "The New York Times",
+      url: "https://www.nytimes.com/2026/05/10/us/politics/energy-secretary-federal-gas-tax.html",
+      category: "Economics"
     },
     {
       id: "us3",
-      title: "Midterm Voters Focused on Oil Prices, Iran War, and Immigration as Key Issues",
-      summary: "NPR\'s analysis of the 2026 midterm landscape finds voters driven by record oil prices, the ongoing war with Iran, and divisive immigration policies as the election season intensifies.",
+      title: "Nebraska\'s 'Blue Dot' Congressional District Splits Democratic Primary Field",
+      summary: "Nebraska\'s second congressional district — which awards its Electoral College vote independently and has occasionally backed Democratic presidential candidates — is now at the center of a contentious Democratic House primary ahead of the midterms.",
       body: [
-        "As the November midterms draw closer, NPR\'s political team has identified a complex and volatile set of issues animating the American electorate, including record-high oil prices hitting household budgets, the political and human costs of the ongoing military conflict with Iran, and deeply contested immigration enforcement policies that have split public opinion along sharp partisan lines.",
-        "The confluence of these issues creates an unpredictable environment for both parties, with economic anxiety potentially benefiting challengers while national security dynamics could cut in multiple directions depending on how the Iran situation evolves. Polls also show President Trump\'s approval ratings under significant pressure, particularly on economic management, adding another layer of uncertainty to an already complex midterm calculus."
+        "Nebraska\'s second congressional district, nicknamed the 'blue dot' for its occasional tendency to back Democratic presidential candidates in an otherwise reliably Republican state, has become a flashpoint in an increasingly bitter Democratic House primary race. Candidates are clashing over strategy, ideology, and the district\'s political identity as they compete for the nomination in what could be a competitive general election seat.",
+        "The district\'s unique status — it awards its single Electoral College vote separately from the rest of Nebraska — has long made it a subject of national political attention, but the internal Democratic fight over how best to appeal to its diverse electorate reflects broader tensions within the party as it seeks to rebuild its coalition heading into the 2026 midterm elections."
       ],
-      image: "https://images.unsplash.com/photo-1772299399273-d71c7fce5da0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxNaWR0ZXJtJTIwVm90ZXJzJTIwRm9jdXNlZCUyMG9uJTIwT2lsJTIwUHJpY2VzJTJDJTIwSXJhbiUyMFdhciUyQyUyMGFuZCUyMEltbWlncmF0aW9uJTIwYXMlMjBLZXklMjBJc3N1ZXN8ZW58MHwwfHx8MTc3ODM4OTM4MHww&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "NPR",
-      url: "https://www.npr.org/2026/05/09/nx-s1-5813787/tracking-the-hot-button-issues-driving-this-years-midterms-politics",
+      image: "https://images.unsplash.com/photo-1699419142619-ad9e1890cb10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxOZWJyYXNrYSU1Q3xlbnwwfDB8fHwxNzc4NDc1Nzc0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "The New York Times",
+      url: "https://www.nytimes.com/2026/05/10/us/politics/nebraska-blue-dot-democrats-house.html",
       category: "Politics"
     }
   ]
