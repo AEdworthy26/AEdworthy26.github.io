@@ -281,9 +281,26 @@
     .allday-thumb { position: absolute; width: 14px; height: 14px; border-radius: 50%; background: #fff; top: 3px; left: 3px; transition: left .2s; box-shadow: 0 1px 3px rgba(0,0,0,.2); }
     .allday-label input:checked ~ .allday-track { background: var(--blue); }
     .allday-label input:checked ~ .allday-track .allday-thumb { left: 19px; }
-    /* ── Time input ── */
+    /* ── Date / time input ── */
+    .f-input[type="date"], .f-input[type="time"] { cursor: pointer; color-scheme: dark; }
+    .f-input[type="date"]::-webkit-calendar-picker-indicator,
+    .f-input[type="time"]::-webkit-calendar-picker-indicator { opacity: .5; cursor: pointer; filter: invert(1) brightness(1.5); }
     .f-time { cursor: pointer; }
-    .f-time::-webkit-calendar-picker-indicator { opacity: 0.45; cursor: pointer; }
+
+    /* ── Custom select (CalSel) ── */
+    .csel-wrap { position: relative; width: 100%; }
+    .csel-btn { width: 100%; background: var(--subtle); border: 1.5px solid var(--border); border-radius: 8px; padding: .5rem .75rem; font-family: inherit; font-size: .83rem; color: var(--ink); outline: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: .5rem; transition: border-color .15s, box-shadow .15s; text-align: left; }
+    .csel-btn:hover { border-color: rgba(107,143,247,.4); }
+    .csel-btn.open { border-color: var(--blue); box-shadow: 0 0 0 3px rgba(107,143,247,.15); }
+    .csel-arrow { font-size: .6rem; color: var(--muted); transition: transform .2s; flex-shrink: 0; }
+    .csel-btn.open .csel-arrow { transform: rotate(180deg); }
+    .csel-drop { position: absolute; top: calc(100% + 5px); left: 0; right: 0; background: #1e1b17; border: 1.5px solid rgba(107,143,247,.3); border-radius: 10px; box-shadow: 0 8px 32px rgba(0,0,0,.55); z-index: 600; overflow: hidden; display: none; }
+    .csel-drop.open { display: block; animation: cselIn .14s cubic-bezier(.22,1,.36,1); }
+    @keyframes cselIn { from { opacity:0; transform: translateY(-5px); } to { opacity:1; transform: none; } }
+    .csel-item { padding: .55rem .9rem; font-size: .82rem; color: var(--ink); cursor: pointer; transition: background .1s; font-family: inherit; }
+    .csel-item + .csel-item { border-top: 1px solid rgba(210,200,180,.05); }
+    .csel-item:hover { background: rgba(107,143,247,.12); }
+    .csel-item.selected { background: rgba(107,143,247,.18); color: var(--blue); font-weight: 600; }
     /* ── Multi-day event banner ── */
     .ev-chip.multi-day { border-left: 3px solid currentColor; }
     .modal-footer { display: flex; align-items: center; justify-content: space-between; padding: 1rem 1.5rem 1.2rem; border-top: 1px solid var(--border); }
@@ -1129,6 +1146,7 @@
       document.getElementById('f-reminder').value=ev&&ev.reminder!=null?ev.reminder:'';
       document.getElementById('f-recur').value=ev?(ev.recurrence||''):'';
       document.getElementById('f-recur-end').value=ev?(ev.recurrenceEnd||''):'';
+      ['f-reminder','f-recur'].forEach(function(id){ var el=document.getElementById(id); if(el&&CalSel) CalSel.refresh(el); });
       document.getElementById('f-completed').checked=ev?!!ev.completed:false;
       document.getElementById('recur-end-row').style.display=ev&&ev.recurrence?'':'none';
       buildCatBtns(ev?ev.category:'work');
@@ -1452,6 +1470,74 @@
       else { var h=['id','title','category','date','startTime','endTime','venue','notes','completed']; var rows=events.map(function(e){return h.map(function(k){return JSON.stringify(e[k]??'');}).join(',');}); blob=new Blob([[h.join(',')].concat(rows).join('\n')],{type:'text/csv'}); name+='.csv'; }
       var a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download=name; a.click(); URL.revokeObjectURL(a.href);
     };
+
+    // ── CalSel — custom select component ─────────────────────────────────────
+    var CalSel = (function() {
+      function build(el) {
+        if (el._calsel) return;
+        var opts = Array.from(el.options).map(function(o) { return { value: o.value, label: o.text }; });
+        var wrap = document.createElement('div');
+        wrap.className = 'csel-wrap';
+        el.parentNode.insertBefore(wrap, el);
+        wrap.appendChild(el);
+        el.style.display = 'none';
+        var btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'csel-btn';
+        btn.innerHTML = '<span class="csel-val"></span><span class="csel-arrow">▾</span>';
+        wrap.insertBefore(btn, el);
+        var drop = document.createElement('div');
+        drop.className = 'csel-drop';
+        wrap.appendChild(drop);
+        opts.forEach(function(o) {
+          var item = document.createElement('div');
+          item.className = 'csel-item';
+          item.dataset.value = o.value;
+          item.textContent = o.label;
+          item.addEventListener('mousedown', function(e) {
+            e.preventDefault();
+            el.value = o.value;
+            el.dispatchEvent(new Event('change', { bubbles: true }));
+            refresh(el);
+            drop.classList.remove('open');
+            btn.classList.remove('open');
+          });
+          drop.appendChild(item);
+        });
+        btn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          var isOpen = drop.classList.contains('open');
+          closeAll();
+          if (!isOpen) { drop.classList.add('open'); btn.classList.add('open'); }
+        });
+        el._calsel = { btn: btn, drop: drop };
+        refresh(el);
+      }
+      function refresh(el) {
+        if (!el._calsel) return;
+        var val = el.value;
+        var found = '';
+        el._calsel.drop.querySelectorAll('.csel-item').forEach(function(item) {
+          var sel = item.dataset.value === val;
+          item.classList.toggle('selected', sel);
+          if (sel) found = item.textContent;
+        });
+        if (!found) found = el._calsel.drop.querySelector('.csel-item') ? el._calsel.drop.querySelector('.csel-item').textContent : '';
+        el._calsel.btn.querySelector('.csel-val').textContent = found;
+      }
+      function closeAll() {
+        document.querySelectorAll('.csel-drop.open').forEach(function(d){ d.classList.remove('open'); });
+        document.querySelectorAll('.csel-btn.open').forEach(function(b){ b.classList.remove('open'); });
+      }
+      document.addEventListener('click', closeAll);
+      return { build: build, refresh: refresh };
+    })();
+
+    // Build custom selects for the event modal
+    ['f-reminder', 'f-recur'].forEach(function(id) {
+      var el = document.getElementById(id);
+      if (el) CalSel.build(el);
+    });
 
     // ── Init ──────────────────────────────────────────────────────────────────
     load();
