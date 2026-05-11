@@ -542,13 +542,12 @@ RSS = {
         'https://feeds.bloomberg.com/markets/news.rss',            # Bloomberg Markets
     ],
     'tech': [
-        'https://feeds.bbci.co.uk/news/technology/rss.xml',
-        'https://www.theguardian.com/uk/technology/rss',
-        'https://feeds.arstechnica.com/arstechnica/index',         # Ars Technica
-        'https://www.wired.com/feed/rss',                          # Wired
-        'https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml', # NYT Tech
-        'https://feeds.reuters.com/reuters/technologyNews',        # Reuters Tech
-        'https://feeds.feedburner.com/TechCrunch/',                # TechCrunch
+        'https://feeds.arstechnica.com/arstechnica/index',         # Ars Technica (fresh)
+        'https://techcrunch.com/feed/',                            # TechCrunch (fresh)
+        'https://www.theverge.com/rss/index.xml',                  # The Verge (fresh)
+        'https://www.wired.com/feed/rss',                          # Wired (fresh)
+        'https://feeds.bbci.co.uk/news/technology/rss.xml',        # BBC Tech
+        'https://www.theguardian.com/uk/technology/rss',           # Guardian Tech
     ],
 }
 
@@ -571,9 +570,11 @@ def gen_news(category, var_name, img_key, secondary_ids, focus_hint='', all_arti
 Here are today's real headlines from reputable news sources:
 {art_text}
 
+⚠️ CRITICAL RULE: You MUST use ONLY the stories listed above. Do NOT invent, hallucinate, or draw on training-data knowledge for story titles, facts, or URLs. Every story in your output — main and secondary — must come directly from the numbered list above. If a story title does not appear in the list above, do not use it.
+
 Output ONLY valid JavaScript — absolutely no explanation, no markdown, no preamble. Start directly with "var {var_name}".
 
-Use only real stories from the headlines above. Write 5 substantial, well-crafted paragraphs for the main story (each at least 3 sentences). Pick the most category-appropriate story as the main piece — follow the section instructions above strictly. Write 3 secondary stories with a one-sentence summary each.
+Pick the most category-appropriate story from the list above as the main piece — follow the section instructions above strictly. Write 5 substantial, well-crafted paragraphs for the main story (each at least 3 sentences), based solely on what the headline and summary say. Write 3 secondary stories with a one-sentence summary each, also from the list above.
 
 IMPORTANT: Each story above includes a URL field — use the exact URL provided for that story in the sourceUrl/url fields below.
 
@@ -597,6 +598,19 @@ var {var_name} = {{
     js = extract_js(call_claude(prompt))
     if not js:
         return None
+
+    # Validate: warn if the main story title doesn't match any fetched RSS article
+    try:
+        main_title_m = re.search(r'main\s*:\s*\{[^{]*?title\s*:\s*["\'](.+?)["\']', js, re.DOTALL)
+        if main_title_m:
+            main_title = main_title_m.group(1).lower()
+            rss_titles = [a['title'].lower() for a in articles]
+            matched = any(main_title[:40] in t or t[:40] in main_title for t in rss_titles)
+            if not matched:
+                log(f"  [warning] Main story '{main_title_m.group(1)[:60]}' not found in RSS headlines — possible hallucination")
+    except Exception:
+        pass
+
     # Inject images: RSS article image → Pexels → Unsplash fallback
     try:
         titles = re.findall(r'title:\s*["\'](.+?)["\']', js)
