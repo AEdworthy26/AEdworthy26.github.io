@@ -1468,7 +1468,7 @@
     });
 
     var upcoming = expanded
-      .filter(function(ev) { return ev.date >= todayISO; })
+      .filter(function(ev) { return ev.date >= todayISO && ev.category !== 'todo'; })
       .sort(function(a, b) {
         if (a.date !== b.date) return a.date.localeCompare(b.date);
         return (a.startTime||'').localeCompare(b.startTime||'');
