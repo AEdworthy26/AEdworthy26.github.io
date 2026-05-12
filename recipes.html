@@ -1621,9 +1621,8 @@
       sEl.textContent = '✓ Added to ' + (_planDays.length === 1 ? _planDays[0] : _planDays.length + ' days') + '!';
       sEl.classList.add('show');
       setTimeout(function() {
-        sEl.classList.remove('show');
-        document.getElementById('plan-panel').style.display = 'none';
-      }, 2200);
+        window.location.href = 'meal-planner.html';
+      }, 900);
     };
 
     window.openViewModal_byId = function(id) {
