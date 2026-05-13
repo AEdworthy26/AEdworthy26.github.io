@@ -3,6 +3,45 @@
 
 var RICS_LOG = [
   {
+    "date": "2026-05-13",
+    "topic": "Homes England Grant Conditions, Additionality and AHP Funding Strategy in RP-Led Residential Schemes",
+    "module": "Project Finance",
+    "level": 3,
+    "apc_competency": "Project Finance (Level 3)",
+    "focus": "This lesson examines the strategic and technical mechanics of Homes England Affordable Homes Programme (AHP) grant funding \u2014 covering additionality requirements, grant conditions, drawdown triggers, clawback risk and the interaction between grant and development appraisal assumptions. For an APC candidate at Alfie\\'s level, demonstrating applied understanding of how grant shapes scheme viability, JV structuring and programme delivery is essential at Level 3.",
+    "image": "https://images.unsplash.com/photo-1568667075743-4fb2503048a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxIb21lcyUyMEVuZ2xhbmQlMjBHcmFudCUyMFVLJTIwcHJvcGVydHklMjBhcmNoaXRlY3R1cmUlMjBidWlsZGluZyUyMGV4dGVyaW9yfGVufDB8MHx8fDE3Nzg2NDkzMTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "content": [],
+    "summary": [
+      "AHP grant is an additionality instrument \u2014 it must be demonstrated via open-book appraisal that grant is the minimum necessary to make the scheme viable, not a windfall to the RP or landowner.",
+      "Strategic Partners (like Clarion) access higher grant rates and programme certainty, but in return commit to delivery trajectories with programme-level clawback if targets are missed.",
+      "Grant drawdown is staged (typically 50% SOS / 25% structural / 25% PC) and the timing of receipts must be modelled in the development cashflow \u2014 lenders will not lend against anticipated future grant tranches.",
+      "Clawback is triggered by tenure change, early disposal, design standard failure or programme non-delivery \u2014 it must be flagged in the project risk register and managed through the development agreement and funding agreement in JV structures.",
+      "IC submissions must present grant-secured, grant-reduced and no-grant sensitivity scenarios, and must confirm whether GLA or Homes England is the administering body \u2014 affecting both rate benchmarks and the bidding process."
+    ],
+    "qa": [
+      {
+        "q": "How would you demonstrate additionality to Homes England on a scheme where 35% affordable housing is already required by the planning permission?",
+        "a": "Additionality is demonstrated through an open-book residual appraisal showing the 'without grant' position produces a land value below benchmark land value or an RP return below the minimum required. The planning obligation requires the units to exist, but if the scheme cannot viably deliver them at policy tenure and affordability levels without grant, the subsidy is genuinely enabling delivery that would otherwise trigger a viability review and reduction in affordable housing. The appraisal must be submitted in Homes England\\'s prescribed format with actual or contracted costs, and the land value assumption will be scrutinised to ensure it has not been inflated to engineer a grant dependency."
+      },
+      {
+        "q": "What is the risk to a JV structure where the RP holds the grant funding agreement but the development is delivered through a JV SPV controlled by a private partner?",
+        "a": "The funding agreement runs between Homes England and the RP alone \u2014 the JV SPV has no direct relationship with Homes England. If the private partner goes into administration before completion, the RP must have step-in rights under the development agreement to take over delivery, otherwise Homes England may treat the SOS milestone as at risk and could withdraw the grant offer or suspend drawdown. Homes England will sometimes require a deed of priority or a security interest in the site as a condition of the grant, and the development agreement must provide adequate step-in rights, title controls and programme obligations to protect the RP\\'s position."
+      },
+      {
+        "q": "A scheme\\'s grant offer is made at 80% of the Homes England benchmark rate. Walk me through how you would assess the impact on scheme viability.",
+        "a": "I would rerun the residual appraisal with the reduced grant quantum. If the benchmark rate is \u00a350,000/unit for 40 affordable rent units (total \u00a32m), an 80% offer means \u00a31.6m \u2014 a \u00a3400,000 shortfall. This reduces the residual land value by the same amount. I would assess whether the revised RLV still exceeds the benchmark land value: if it does, the scheme remains viable and we can proceed. If not, we have options: renegotiate the land price (if not yet exchanged), seek additional grant from a second source, reduce the affordable housing quantum (subject to planning agreement flexibility), or seek IC approval to proceed at a lower margin with the reduced grant as a known risk. Sensitivity analysis would test all three scenarios across a range of build cost and GDV assumptions."
+      },
+      {
+        "q": "What triggers a clawback event under a Homes England funding agreement, and how long does the restriction period typically last?",
+        "a": "Common clawback triggers include: disposal of grant-funded units within the restriction period (typically 10\u201315 years for affordable rent, shorter for shared ownership); change of tenure from that funded without Homes England consent; failure to comply with NDSS or other design conditions confirmed at completion; and failure to deliver within the agreed programme period. Clawback is calculated on a sliding scale in many agreements \u2014 reducing proportionally over time \u2014 but full recovery is possible in early years. The restriction period and clawback provisions are set out in the funding agreement and must be flagged in the project risk register from SOS through to expiry."
+      },
+      {
+        "q": "How does a DOV (Deed of Variation) to a S106 agreement affect an existing Homes England funding agreement, and what steps must the RP take?",
+        "a": "A DOV that changes the tenure mix, unit numbers or affordability levels of the affordable housing will trigger a requirement to notify Homes England and seek an amendment to the funding agreement. Homes England will require a revised open-book appraisal and may recalculate the grant if the revised mix is less grant-intensive (e.g. replacing affordable rent with shared ownership at a lower grant rate). If the amendment reduces the grant quantum, the RP must ensure the revised appraisal still supports viability \u2014 and if not, the DOV may need to be reconsidered. In practice, the funding agreement amendment process can take 8\u201312 weeks, and this must be built into the programme as a constraint before implementing any S73 or DOV."
+      }
+    ]
+  },
+  {
     "date": "2026-05-11",
     "topic": "Compulsory Purchase Orders: Compensation Principles, RP Participation and Strategic Risk in Residential Land Assembly",
     "module": "Land Assembly, Legal Risk and Stakeholder Strategy",

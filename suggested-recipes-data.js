@@ -1,174 +1,201 @@
 // suggested-recipes-data.js
-// Auto-updated 2026-05-11 — do not edit manually
+// Auto-updated 2026-05-13 — do not edit manually
 
 window.SUGGESTED_RECIPES = [
   {
     id: "sug1",
-    title: "Hungarian Chicken Paprikash with Buttered Egg Noodles & Soured Cream",
-    category: "Chicken",
+    title: "Taiwanese Braised Pork Rice (Lu Rou Fan) with Pickled Mustard Greens & Soft-Boiled Egg",
+    category: "Pork",
     calories: 610,
-    protein: 42,
+    protein: 34,
     fibre: 3,
-    healthScore: 65,
-    time: "55 mins",
+    healthScore: 61,
+    time: "1 hr 15 mins",
     serves: "4",
-    desc: "A deeply comforting Central European classic where bone-in chicken thighs are slowly braised in a rich, paprika-saturated sauce that turns an extraordinary shade of crimson. The soured cream stirred in at the end transforms it into something silky, tangy, and utterly luxurious — served over buttered egg noodles to catch every drop of that glorious sauce.",
-    emoji: "🫕",
-    image: "https://images.unsplash.com/photo-1594610352455-e4d10d2f2cf0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxIdW5nYXJpYW4lMjBDaGlja2VuJTIwUGFwcmlrYXNoJTIwd2l0aCUyMEJ1dHRlcmVkJTIwRWdnJTIwTm9vZGxlcyUyMCUyNiUyMFNvdXJlZCUyMENyZWFtJTIwZm9vZCUyMGRpc2h8ZW58MHwwfHx8MTc3ODQ3NjM2Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+    desc: "One of Taiwan\'s most beloved comfort foods — fatty pork belly slow-braised in soy, rice wine, and five-spice until the sauce turns dark, glossy, and impossibly fragrant. Spooned over steamed jasmine rice with tangy pickled mustard greens and a jammy soy-marinated egg, it\'s the kind of bowl that tastes like it took all day but comes together on a weeknight without fuss.",
+    emoji: "🍚",
+    image: "https://images.unsplash.com/photo-1682496178083-74db4a32e473?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUYWl3YW5lc2UlMjBCcmFpc2VkJTIwUG9yayUyMFJpY2UlMjAlMjhMdSUyMFJvdSUyMEZhbiUyOSUyMHdpdGglMjBQaWNrbGVkJTIwTXVzdGFyZCUyMEdyZWVucyUyMCUyNiUyMFNvZnQtQm9pbGVkJTIwRWdnJTIwZm9vZCUyMGRpc2h8ZW58MHwwfHx8MTc3ODY0OTQyMnww&ixlib=rb-4.1.0&q=80&w=1080",
     ingredientGroups: [
-      { group: "Chicken", items: [
-        { name: "Bone-in, skin-on chicken thighs", quantity: 8, unit: "" },
-        { name: "Fine sea salt", quantity: 1, unit: "tsp" },
-        { name: "Black pepper", quantity: 0.5, unit: "tsp" },
-        { name: "Sunflower oil", quantity: 2, unit: "tbsp" }
-      ]},
-      { group: "Paprikash Base", items: [
-        { name: "White onions, finely diced", quantity: 2, unit: "large" },
-        { name: "Garlic cloves, minced", quantity: 4, unit: "" },
-        { name: "Sweet Hungarian paprika", quantity: 4, unit: "tbsp" },
-        { name: "Hot smoked paprika", quantity: 1, unit: "tsp" },
-        { name: "Caraway seeds", quantity: 0.5, unit: "tsp" },
-        { name: "Tomato purée", quantity: 2, unit: "tbsp" },
-        { name: "Chicken stock", quantity: 400, unit: "ml" },
-        { name: "Green pepper, finely diced", quantity: 1, unit: "" }
-      ]},
-      { group: "To Finish", items: [
-        { name: "Full-fat soured cream", quantity: 200, unit: "ml" },
-        { name: "Plain flour", quantity: 1, unit: "tbsp" },
-        { name: "Fresh dill, roughly chopped", quantity: 3, unit: "tbsp" }
-      ]},
-      { group: "Egg Noodles", items: [
-        { name: "Dried egg noodles or spätzle", quantity: 350, unit: "g" },
-        { name: "Unsalted butter", quantity: 40, unit: "g" },
-        { name: "Salt", quantity: 1, unit: "pinch" }
-      ]}
+      {
+        group: "Braised Pork",
+        items: [
+          { name: "Pork belly, skin-on, cut into 1cm cubes", quantity: 700, unit: "g" },
+          { name: "Shallots, thinly sliced", quantity: 6, unit: "" },
+          { name: "Garlic cloves, minced", quantity: 4, unit: "" },
+          { name: "Fresh ginger, finely sliced", quantity: 25, unit: "g" },
+          { name: "Neutral oil", quantity: 2, unit: "tbsp" },
+          { name: "Shaoxing rice wine", quantity: 60, unit: "ml" },
+          { name: "Dark soy sauce", quantity: 3, unit: "tbsp" },
+          { name: "Light soy sauce", quantity: 3, unit: "tbsp" },
+          { name: "Rock sugar (or soft brown sugar)", quantity: 20, unit: "g" },
+          { name: "Five-spice powder", quantity: 1, unit: "tsp" },
+          { name: "White pepper", quantity: 0.5, unit: "tsp" },
+          { name: "Water", quantity: 400, unit: "ml" }
+        ]
+      },
+      {
+        group: "Soy-Marinated Eggs",
+        items: [
+          { name: "Large eggs", quantity: 4, unit: "" },
+          { name: "Light soy sauce", quantity: 3, unit: "tbsp" },
+          { name: "Water", quantity: 100, unit: "ml" },
+          { name: "Caster sugar", quantity: 1, unit: "tsp" }
+        ]
+      },
+      {
+        group: "To Serve",
+        items: [
+          { name: "Jasmine rice, cooked", quantity: 300, unit: "g" },
+          { name: "Pickled mustard greens (suan cai), rinsed and roughly chopped", quantity: 100, unit: "g" },
+          { name: "Spring onions, finely sliced", quantity: 2, unit: "" },
+          { name: "White sesame seeds, toasted", quantity: 1, unit: "tsp" }
+        ]
+      }
     ],
     substitutes: [
-      { ingredient: "Hungarian sweet paprika", alternatives: ["Spanish pimentón dulce", "Regular sweet paprika (increase quantity slightly)"] },
-      { ingredient: "Soured cream", alternatives: ["Full-fat crème fraîche", "Greek yoghurt (add off heat to prevent splitting)"] },
-      { ingredient: "Egg noodles", alternatives: ["Tagliatelle", "Buttered rice"] }
+      { ingredient: "Shaoxing rice wine", alternatives: ["Dry sherry", "Mirin (reduce sugar slightly)"] },
+      { ingredient: "Rock sugar", alternatives: ["Soft brown sugar", "Palm sugar"] },
+      { ingredient: "Pickled mustard greens", alternatives: ["Kimchi (rinsed)", "Quick-pickled cucumber in rice vinegar and sugar"] },
+      { ingredient: "Pork belly", alternatives: ["Skin-on pork shoulder", "Minced pork (reduce cook time to 30 mins)"] }
     ],
     instructions: [
-      "Pat the chicken thighs thoroughly dry with kitchen paper and season generously all over with salt and black pepper. Heat the sunflower oil in a large, wide, heavy-based casserole or Dutch oven over medium-high heat until shimmering.",
-      "Lay the chicken thighs skin-side down in the pan (in batches if needed — don\'t crowd them) and sear without moving for 6–7 minutes until the skin is deeply golden and releases easily. Flip and sear the other side for 3 minutes. Transfer to a plate and set aside. Pour off all but 2 tablespoons of fat from the pan.",
-      "Reduce the heat to medium. Add the diced onions and green pepper to the pan with a pinch of salt. Cook, stirring occasionally, for 10–12 minutes until softened, sweet, and beginning to turn golden at the edges. Add the garlic and caraway seeds and cook for a further 2 minutes.",
-      "Remove the pan from the heat momentarily — this is important. Stir in the sweet paprika, hot smoked paprika, and tomato purée. Stir constantly for 60 seconds off the heat or on very low heat so the paprika blooms and perfumes without burning (burnt paprika turns bitter).",
-      "Return the pan to medium heat. Pour in the chicken stock and stir well, scraping up any caramelised bits from the base of the pan. Return the chicken thighs to the pan skin-side up, nestling them into the sauce. Bring to a gentle simmer, then partially cover and cook for 30–35 minutes until the chicken is cooked through and tender.",
-      "Meanwhile, cook the egg noodles in well-salted boiling water according to packet instructions until just tender. Drain, toss immediately with the butter and a pinch of salt, and keep warm.",
-      "In a small bowl, whisk the flour into the soured cream until smooth — this prevents it from curdling. Lift the chicken pieces out of the sauce and set aside. Reduce the heat under the sauce to its lowest setting and stir in the soured cream mixture steadily. Stir gently for 2–3 minutes until the sauce thickens and becomes glossy. Taste and adjust seasoning.",
-      "Return the chicken to the sauce and warm through for 2 minutes. Serve the chicken and sauce over the buttered egg noodles, scattered generously with fresh dill."
+      "Step 1 — Make the soy eggs: Bring a pan of water to a rolling boil, lower in the eggs gently and cook for exactly 7 minutes. Transfer to iced water, peel once cool, then submerge in a small bowl with the soy sauce, water, and sugar. Marinate for at least 30 minutes (or up to 24 hours in the fridge) turning occasionally.",
+      "Step 2 — Fry the shallots: Heat the oil in a wide, heavy-based pot or Dutch oven over medium heat. Add the sliced shallots and fry, stirring regularly, for 12–15 minutes until deeply golden and starting to crisp. This caramelised base is the soul of the dish — don\'t rush it. Add the garlic and ginger and stir-fry for another 2 minutes.",
+      "Step 3 — Brown the pork: Increase the heat to medium-high and add the diced pork belly in a single layer if possible. Cook undisturbed for 3–4 minutes until well browned on one side, then turn and repeat. You want real colour on the pork for depth of flavour.",
+      "Step 4 — Build the braise: Add the Shaoxing wine and let it bubble and reduce for 1 minute, scraping any sticky bits from the bottom of the pan. Stir in both soy sauces, the rock sugar, five-spice, white pepper, and water. Bring to a boil, then reduce to the lowest simmer, cover with the lid slightly ajar, and braise for 45–50 minutes.",
+      "Step 5 — Reduce the sauce: Remove the lid and increase the heat to medium. Simmer uncovered for a further 10–12 minutes, stirring occasionally, until the sauce has thickened and clings beautifully to the pork in a dark, glossy glaze. Taste and adjust — more soy for saltiness, a pinch more sugar for balance.",
+      "Step 6 — Serve: Spoon generous amounts of braised pork and its sauce over steamed jasmine rice. Halve the soy eggs and place alongside. Top with pickled mustard greens, sliced spring onions, and a scattering of sesame seeds. Serve immediately."
     ]
   },
   {
     id: "sug2",
-    title: "Seared Tuna Tataki with Ponzu, Pickled Ginger, Avocado & Crispy Wonton Strips",
+    title: "Grilled Swordfish with Sicilian Salmoriglio, Charred Courgette & Cannellini Beans",
     category: "Fish & Seafood",
-    calories: 385,
-    protein: 36,
-    fibre: 4,
+    calories: 470,
+    protein: 43,
+    fibre: 7,
     healthScore: 81,
-    time: "25 mins",
+    time: "35 mins",
     serves: "2",
-    desc: "A Japanese-inspired dish where thick tuna steaks are seared hard and fast to create a mahogany crust over a cool, ruby-rare interior, then sliced and fanned over ripe avocado and dressed with an intensely savoury, citrus-sharp ponzu. Crispy wonton strips shattered over the top add the kind of crunch that makes every mouthful feel like an event.",
+    desc: "Salmoriglio is the bold, sunlit Sicilian herb sauce of lemon, garlic, and oregano that was made for meaty, char-grilled fish — and swordfish, with its firm steak-like texture, is its perfect match. Paired with smoky griddled courgette and creamy cannellini beans that soak up every drop of the sauce, this is summer-in-a-bowl cooking at its most satisfying.",
     emoji: "🐟",
-    image: "https://images.unsplash.com/photo-1630698467933-60129917a2c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTZWFyZWQlMjBUdW5hJTIwVGF0YWtpJTIwd2l0aCUyMFBvbnp1JTJDJTIwUGlja2xlZCUyMEdpbmdlciUyQyUyMEF2b2NhZG8lMjAlMjYlMjBDcmlzcHklMjBXb250b24lMjBTdHJpcHMlMjBmb29kJTIwZGlzaHxlbnwwfDB8fHwxNzc4NDc2MzYzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image: "https://images.pexels.com/photos/27662741/pexels-photo-27662741.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     ingredientGroups: [
-      { group: "Tuna", items: [
-        { name: "Sashimi-grade tuna steaks (2–3cm thick)", quantity: 2, unit: "" },
-        { name: "Toasted sesame oil", quantity: 1, unit: "tbsp" },
-        { name: "Black sesame seeds", quantity: 1, unit: "tbsp" },
-        { name: "White sesame seeds", quantity: 1, unit: "tbsp" },
-        { name: "Flaked sea salt", quantity: 0.5, unit: "tsp" }
-      ]},
-      { group: "Ponzu Dressing", items: [
-        { name: "Soy sauce (light)", quantity: 3, unit: "tbsp" },
-        { name: "Fresh lime juice", quantity: 2, unit: "tbsp" },
-        { name: "Fresh lemon juice", quantity: 1, unit: "tbsp" },
-        { name: "Mirin", quantity: 1, unit: "tbsp" },
-        { name: "Fresh ginger, finely grated", quantity: 1, unit: "tsp" },
-        { name: "Toasted sesame oil", quantity: 1, unit: "tsp" },
-        { name: "Red chilli, finely sliced", quantity: 0.5, unit: "" }
-      ]},
-      { group: "To Serve", items: [
-        { name: "Ripe avocados, halved and thinly sliced", quantity: 1, unit: "large" },
-        { name: "Wonton wrappers, cut into strips", quantity: 6, unit: "" },
-        { name: "Neutral oil for frying", quantity: 200, unit: "ml" },
-        { name: "Pickled sushi ginger", quantity: 2, unit: "tbsp" },
-        { name: "Spring onions, finely sliced", quantity: 3, unit: "" },
-        { name: "Micro herbs or baby salad leaves", quantity: 1, unit: "handful" }
-      ]}
+      {
+        group: "Swordfish",
+        items: [
+          { name: "Swordfish steaks (about 200g each, 2cm thick)", quantity: 2, unit: "" },
+          { name: "Olive oil", quantity: 1, unit: "tbsp" },
+          { name: "Flaky sea salt and black pepper", quantity: 1, unit: "pinch" }
+        ]
+      },
+      {
+        group: "Salmoriglio Sauce",
+        items: [
+          { name: "Extra virgin olive oil", quantity: 5, unit: "tbsp" },
+          { name: "Lemon, zest and juice", quantity: 1, unit: "" },
+          { name: "Garlic cloves, very finely minced", quantity: 2, unit: "" },
+          { name: "Dried oregano (Sicilian if possible)", quantity: 1.5, unit: "tsp" },
+          { name: "Fresh flat-leaf parsley, finely chopped", quantity: 3, unit: "tbsp" },
+          { name: "Flaky sea salt", quantity: 0.5, unit: "tsp" },
+          { name: "Warm water", quantity: 1, unit: "tbsp" }
+        ]
+      },
+      {
+        group: "Charred Courgette & Beans",
+        items: [
+          { name: "Courgettes, sliced lengthways 5mm thick", quantity: 2, unit: "" },
+          { name: "Cannellini beans, drained and rinsed", quantity: 400, unit: "g" },
+          { name: "Garlic clove, halved", quantity: 1, unit: "" },
+          { name: "Olive oil", quantity: 2, unit: "tbsp" },
+          { name: "Dried chilli flakes", quantity: 0.25, unit: "tsp" },
+          { name: "Cherry tomatoes, halved", quantity: 150, unit: "g" },
+          { name: "Lemon juice", quantity: 1, unit: "tbsp" }
+        ]
+      }
     ],
     substitutes: [
-      { ingredient: "Sashimi-grade tuna", alternatives: ["Thick-cut salmon fillet (sear the same way)", "Yellowfin tuna steaks from a good fishmonger"] },
-      { ingredient: "Wonton wrappers", alternatives: ["Fried tortilla strips", "Crispy prawn crackers, roughly broken"] },
-      { ingredient: "Mirin", alternatives: ["1 tsp honey dissolved in 1 tbsp water", "Dry sherry with a pinch of sugar"] }
+      { ingredient: "Swordfish", alternatives: ["Tuna steak", "Thick-cut salmon fillet", "Mahi-mahi"] },
+      { ingredient: "Cannellini beans", alternatives: ["Butter beans", "Borlotti beans"] },
+      { ingredient: "Courgettes", alternatives: ["Aubergine slices", "Romano peppers"] }
     ],
     instructions: [
-      "Make the ponzu dressing first so the flavours can meld: whisk together the soy sauce, lime juice, lemon juice, mirin, grated ginger, sesame oil, and sliced chilli in a small bowl. Taste — it should be bracingly sour, deeply savoury, and aromatic. Set aside.",
-      "Fry the wonton strips: heat the neutral oil in a small saucepan to 180°C (a strip of wonton should sizzle immediately and turn golden in about 60 seconds). Fry the wonton strips in small batches for 45–60 seconds until pale golden and crisp. Lift out with a slotted spoon onto kitchen paper. Season with a tiny pinch of salt. They will crisp further as they cool.",
-      "Mix the black and white sesame seeds together on a flat plate. Pat the tuna steaks completely dry with kitchen paper — moisture is the enemy of a good sear. Brush the tuna all over with the sesame oil, then press firmly into the sesame seeds on all sides to coat thoroughly.",
-      "Heat a heavy-based skillet or cast iron pan over the highest heat until it is smoking hot — this is non-negotiable for tataki. Place the tuna steaks in the dry pan and sear for exactly 45–60 seconds per side (including the thin edges if your steaks are thick enough to stand up). The outside should be deeply seared; the inside should remain raw and cool. Transfer immediately to a board.",
-      "Fan the sliced avocado across two plates. Slice the tuna steaks into 1cm-thick pieces with a sharp knife and arrange over and around the avocado. Spoon the ponzu dressing generously over everything.",
-      "Scatter over the pickled ginger, sliced spring onions, micro herbs, and a generous handful of crispy wonton strips. Serve immediately while the wonton strips still have their crunch."
+      "Step 1 — Make the salmoriglio: Whisk together the extra virgin olive oil, lemon zest and juice, minced garlic, dried oregano, chopped parsley, and a good pinch of flaky salt. Add the tablespoon of warm water and whisk again until emulsified and glossy. Taste — it should be punchy, bright, and herby. Set aside.",
+      "Step 2 — Char the courgettes: Heat a griddle pan (or heavy skillet) over high heat until smoking. Brush the courgette slices with 1 tablespoon of olive oil and season. Grill in batches for 2–3 minutes per side without moving until you have deep char marks and the flesh is just tender. Set aside.",
+      "Step 3 — Cook the beans: Reduce the heat to medium and add the remaining tablespoon of olive oil to the same pan. Add the halved garlic clove cut-side down and let it sizzle for 1 minute. Add the cherry tomatoes and chilli flakes and cook for 3–4 minutes until the tomatoes have softened and released their juices. Tip in the drained cannellini beans, stir well, and warm through for 3 minutes. Add a squeeze of lemon juice, season generously, and stir in the griddled courgette slices. Remove from heat.",
+      "Step 4 — Grill the swordfish: Pat the swordfish steaks dry and rub with olive oil. Season both sides generously. Return the griddle pan to high heat. Cook the swordfish for 3 minutes on the first side — resist moving it to get a good sear. Flip and cook for a further 2–3 minutes depending on thickness. Swordfish should be just cooked through with a very slight blush in the centre — take care not to overcook or it turns dry.",
+      "Step 5 — Serve: Spoon the warm courgette and cannellini bean mixture into shallow bowls or onto plates. Lay the swordfish on top and spoon the salmoriglio sauce generously over everything. Finish with an extra crack of black pepper and serve immediately, with crusty bread alongside to mop up the sauce."
     ]
   },
   {
     id: "sug3",
-    title: "Spiced Pumpkin & Black Bean Enchiladas with Salsa Verde, Crumbled Feta & Pickled Jalapeños",
+    title: "Roasted Beetroot, Walnut & Puy Lentil Salad with Goat\'s Cheese, Tarragon & Sherry Vinegar Dressing",
     category: "Vegetarian",
-    calories: 520,
+    calories: 430,
     protein: 19,
-    fibre: 12,
-    healthScore: 80,
-    time: "1 hr",
+    fibre: 11,
+    healthScore: 88,
+    time: "50 mins",
     serves: "4",
-    desc: "Earthy, smoky, and deeply satisfying Mexican enchiladas filled with cumin-spiced roasted pumpkin and creamy black beans, rolled in warm corn tortillas and blanketed in a bright, tangy tomatillo salsa verde. Finished with crumbled feta, cooling soured cream, and fiery pickled jalapeños, this is bold, vibrant vegetarian cooking at its most nourishing and celebratory.",
-    emoji: "🌮",
-    image: "https://images.unsplash.com/photo-1705177114594-261331bcb0b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTcGljZWQlMjBQdW1wa2luJTIwJTI2JTIwQmxhY2slMjBCZWFuJTIwRW5jaGlsYWRhcyUyMHdpdGglMjBTYWxzYSUyMFZlcmRlJTJDJTIwQ3J1bWJsZWQlMjBGZXRhJTIwJTI2JTIwUGlja2xlZCUyMEphbGFwZSVDMyVCMW9zJTIwZm9vZCUyMGRpc2h8ZW58MHwwfHx8MTc3ODQ3NjM2M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+    desc: "Earthy roasted beetroot, nutty Puy lentils, toasted walnuts, and creamy goat\'s cheese are a combination that has been brilliant for decades and shows no sign of stopping. What lifts this version is a warm sherry vinegar and Dijon dressing that softens slightly into the lentils and a generous hand with fresh tarragon — an underused herb that bridges the sweet beetroot and tangy cheese with something almost anise-like and deeply aromatic.",
+    emoji: "🥗",
+    image: "https://images.unsplash.com/photo-1761305155084-7c4555b2d8b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxSb2FzdGVkJTIwQmVldHJvb3QlMkMlMjBXYWxudXQlMjAlMjYlMjBQdXklMjBMZW50aWwlMjBTYWxhZCUyMHdpdGglMjBHb2F0JTVDJTIwZm9vZCUyMGRpc2h8ZW58MHwwfHx8MTc3ODY0OTQyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
     ingredientGroups: [
-      { group: "Filling", items: [
-        { name: "Pumpkin or butternut squash, peeled and cubed (1.5cm)", quantity: 700, unit: "g" },
-        { name: "Ground cumin", quantity: 1.5, unit: "tsp" },
-        { name: "Smoked paprika", quantity: 1, unit: "tsp" },
-        { name: "Chipotle paste or chipotle in adobo (minced)", quantity: 1, unit: "tbsp" },
-        { name: "Olive oil", quantity: 3, unit: "tbsp" },
-        { name: "Canned black beans, drained and rinsed", quantity: 400, unit: "g" },
-        { name: "Garlic cloves, minced", quantity: 3, unit: "" },
-        { name: "Sea salt", quantity: 1, unit: "tsp" }
-      ]},
-      { group: "Salsa Verde", items: [
-        { name: "Canned tomatillos (or fresh if available), drained", quantity: 400, unit: "g" },
-        { name: "White onion, roughly chopped", quantity: 0.5, unit: "" },
-        { name: "Garlic clove", quantity: 1, unit: "" },
-        { name: "Fresh coriander", quantity: 1, unit: "large bunch" },
-        { name: "Fresh jalapeño or green chilli", quantity: 1, unit: "" },
-        { name: "Lime juice", quantity: 2, unit: "tbsp" },
-        { name: "Chicken-style or vegetable stock", quantity: 100, unit: "ml" },
-        { name: "Salt to taste", quantity: 1, unit: "pinch" }
-      ]},
-      { group: "Assembly & Toppings", items: [
-        { name: "Corn tortillas (15–16cm)", quantity: 12, unit: "" },
-        { name: "Feta cheese, crumbled", quantity: 120, unit: "g" },
-        { name: "Soured cream", quantity: 150, unit: "ml" },
-        { name: "Pickled jalapeño slices", quantity: 3, unit: "tbsp" },
-        { name: "Spring onions, thinly sliced", quantity: 3, unit: "" },
-        { name: "Extra coriander leaves to garnish", quantity: 1, unit: "handful" }
-      ]}
+      {
+        group: "Roasted Beetroot",
+        items: [
+          { name: "Raw beetroots, peeled and cut into wedges", quantity: 600, unit: "g" },
+          { name: "Olive oil", quantity: 2, unit: "tbsp" },
+          { name: "Balsamic vinegar", quantity: 1, unit: "tbsp" },
+          { name: "Fresh thyme sprigs", quantity: 4, unit: "" },
+          { name: "Flaky sea salt and black pepper", quantity: 1, unit: "pinch" }
+        ]
+      },
+      {
+        group: "Puy Lentils",
+        items: [
+          { name: "Puy lentils, rinsed", quantity: 220, unit: "g" },
+          { name: "Bay leaf", quantity: 1, unit: "" },
+          { name: "Garlic clove, whole", quantity: 1, unit: "" },
+          { name: "Vegetable stock", quantity: 600, unit: "ml" }
+        ]
+      },
+      {
+        group: "Sherry Vinegar Dressing",
+        items: [
+          { name: "Sherry vinegar", quantity: 3, unit: "tbsp" },
+          { name: "Extra virgin olive oil", quantity: 5, unit: "tbsp" },
+          { name: "Dijon mustard", quantity: 1.5, unit: "tsp" },
+          { name: "Honey", quantity: 1, unit: "tsp" },
+          { name: "Garlic clove, finely grated", quantity: 1, unit: "" },
+          { name: "Flaky sea salt and black pepper", quantity: 1, unit: "pinch" }
+        ]
+      },
+      {
+        group: "Salad & Toppings",
+        items: [
+          { name: "Soft goat\'s cheese (chèvre), crumbled", quantity: 150, unit: "g" },
+          { name: "Walnuts, roughly broken and toasted", quantity: 60, unit: "g" },
+          { name: "Fresh tarragon leaves", quantity: 3, unit: "tbsp" },
+          { name: "Flat-leaf parsley, roughly torn", quantity: 2, unit: "tbsp" },
+          { name: "Peppery salad leaves (rocket or watercress)", quantity: 50, unit: "g" }
+        ]
+      }
     ],
     substitutes: [
-      { ingredient: "Pumpkin", alternatives: ["Butternut squash", "Sweet potato"] },
-      { ingredient: "Canned tomatillos", alternatives: ["6–8 fresh tomatillos, husked and halved", "Green tomatoes with a squeeze of lime"] },
-      { ingredient: "Corn tortillas", alternatives: ["Small flour tortillas", "Gluten-free tortillas"] },
-      { ingredient: "Feta", alternatives: ["Crumbled Lancashire cheese", "Cotija if available"] }
+      { ingredient: "Puy lentils", alternatives: ["Green lentils", "Pre-cooked beluga lentils (skip cooking step)"] },
+      { ingredient: "Goat\'s cheese", alternatives: ["Soft feta, crumbled", "Ricotta salata"] },
+      { ingredient: "Sherry vinegar", alternatives: ["Red wine vinegar", "Cabernet Sauvignon vinegar"] },
+      { ingredient: "Fresh tarragon", alternatives: ["Fresh dill", "Fresh chervil"] },
+      { ingredient: "Walnuts", alternatives: ["Pecans", "Hazelnuts, skinned and toasted"] }
     ],
     instructions: [
-      "Preheat the oven to 220°C / 200°C fan. Toss the cubed pumpkin with the olive oil, ground cumin, smoked paprika, chipotle paste, minced garlic, and salt until every piece is well coated. Spread in a single layer across one or two large roasting trays — don\'t overcrowd or they\'ll steam instead of roast. Roast for 25–30 minutes, turning halfway, until caramelised at the edges and completely tender.",
-      "While the pumpkin roasts, make the salsa verde: blend the drained tomatillos, white onion, garlic, fresh jalapeño, most of the coriander bunch (reserve leaves for garnish), lime juice, and vegetable stock in a blender until smooth. Season generously with salt. Pour into a wide, shallow pan and simmer over medium heat for 8–10 minutes until the sauce deepens in colour and loses its raw edge. Taste and adjust seasoning.",
-      "When the pumpkin is done, tip it into a large bowl and roughly crush about a third of the pieces with the back of a fork — you want a mix of chunks and mash for texture. Fold in the drained black beans gently. Taste the filling and adjust seasoning.",
-      "Reduce the oven to 190°C / 170°C fan. Warm the corn tortillas to make them pliable: wrap them in a damp tea towel and microwave for 60 seconds, or warm them one by one in a dry skillet for 20 seconds per side. Spread a ladleful of salsa verde across the base of a large baking dish (approximately 30 x 22cm).",
-      "Working quickly with one tortilla at a time, spoon 2–3 tablespoons of the pumpkin and black bean filling down the centre. Roll firmly and place seam-side down in the baking dish. Repeat with the remaining tortillas and filling, packing them snugly side by side.",
-      "Pour the remaining salsa verde generously over the top of the enchiladas, making sure all the tortilla edges are covered (exposed edges dry out and crack). Scatter half the crumbled feta over the top. Bake for 18–22 minutes until the sauce is bubbling at the edges and the tops of the enchiladas are just beginning to colour.",
-      "Remove from the oven and immediately dollop the soured cream in generous spoonfuls across the top. Scatter over the remaining feta, pickled jalapeños, sliced spring onions, and fresh coriander leaves. Serve straight from the dish to the table while everything is hot and the contrast of warm enchiladas against cool soured cream is at its best."
+      "Step 1 — Roast the beetroot: Preheat the oven to 200°C (180°C fan). Toss the beetroot wedges with olive oil, balsamic vinegar, thyme sprigs, salt, and pepper on a large baking tray. Spread in a single layer and roast for 35–40 minutes, turning once halfway, until tender throughout and starting to caramelise at the edges. Remove and discard the thyme.",
+      "Step 2 — Cook the lentils: While the beetroot roasts, place the rinsed Puy lentils in a saucepan with the bay leaf, whole garlic clove, and vegetable stock. Bring to a boil, then reduce to a steady simmer and cook for 20–25 minutes until tender but still holding their shape — they should have a slight bite, not be mushy. Drain well, discard the bay and garlic, and transfer to a large mixing bowl.",
+      "Step 3 — Toast the walnuts: Spread the walnuts in a dry frying pan over medium heat and toast for 3–4 minutes, tossing regularly, until fragrant and lightly golden. Watch carefully — they catch quickly. Remove and let cool.",
+      "Step 4 — Make the dressing: Whisk together the sherry vinegar, Dijon mustard, honey, grated garlic, salt, and pepper in a small bowl. Gradually whisk in the extra virgin olive oil until the dressing is emulsified and glossy. Taste — it should be bold, tangy, and slightly sweet.",
+      "Step 5 — Dress the lentils: While the lentils are still warm, pour two-thirds of the dressing over them and toss well. Warm lentils absorb dressing beautifully and become richly flavoured. Let stand for 5 minutes.",
+      "Step 6 — Assemble: Arrange the peppery leaves on a large platter or in a wide shallow bowl. Spoon the dressed lentils over the leaves, then nestle the roasted beetroot wedges amongst them. Scatter over the crumbled goat\'s cheese, toasted walnuts, fresh tarragon, and parsley. Drizzle the remaining dressing over everything and finish with a final crack of black pepper. Serve at room temperature."
     ]
   }
 ];

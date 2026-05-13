@@ -1,60 +1,60 @@
 // uk-politics-news-data.js
-// Auto-updated 2026-05-12 — do not edit manually
+// Auto-updated 2026-05-13 — do not edit manually
 
 var UK_POLITICS_NEWS = {
-  date: "2026-05-12",
+  date: "2026-05-13",
   main: {
-    title: "Starmer on the Brink: Cabinet Ministers and Over 80 Labour MPs Demand Prime Minister Resign",
+    title: "Starmer Fights to Survive as Labour Leadership Crisis Deepens Ahead of King\'s Speech",
     category: "Politics",
     content: [
-      "Keir Starmer\'s grip on power has deteriorated dramatically, with more than 80 Labour MPs now publicly calling for him to stand down as Prime Minister. Senior cabinet ministers, including Home Secretary Shabana Mahmood and reportedly Yvette Cooper, are believed to be among those urging Starmer to set out a timetable for an orderly departure. The scale of the revolt represents one of the most serious internal challenges to a sitting Labour prime minister in modern political history.",
-      "The crisis deepened despite Starmer delivering a fightback speech earlier in the week in which he pledged to fight for the soul of Britain and resist any leadership challenge. Rather than quelling the rebellion, the address appeared to embolden critics further, with the list of MPs publicly demanding his resignation continuing to grow throughout the day. BBC political editor Chris Mason described it as a dam breaking, with Labour MPs openly expressing their loss of confidence in the Prime Minister in unprecedented numbers.",
-      "Health Secretary Wes Streeting is reported to be poised to launch a formal leadership bid, adding a significant and credible challenger to the mounting pressure on Starmer. The resignation of Joe Morris, a ministerial aide to Streeting, further signalled that the ground was shifting beneath the Prime Minister\'s feet. Morris called explicitly for Starmer to set out 'a swift timetable' to step aside, in a statement that reflected the mood of a growing faction within the parliamentary party.",
-      "The rebellion has drawn together MPs from different wings of the Labour Party, suggesting that discontent with Starmer\'s leadership is not confined to any one ideological grouping. Angela Rayner was reported to have spoken at the CWU conference calling for Greater Manchester Mayor Andy Burnham to return to frontline national politics, widely interpreted as a signal of support for a change at the top. Burnham, who has unsuccessfully stood for the Labour leadership twice before, has been increasingly discussed as a potential candidate to revive the party\'s fortunes.",
-      "A crucial cabinet meeting was scheduled for Tuesday morning, with the Prime Minister described as 'weighing up his options' amid the extraordinary pressure from within his own government. The turmoil follows a bruising set of local election results that exposed deep voter disillusionment with Labour, with reports suggesting many voters feel the country simply does not work for them. Whether Starmer can survive the week in office remains deeply uncertain, with the coming hours likely to prove decisive for both his premiership and the future direction of the Labour Party."
+      "Keir Starmer is fighting for his political survival after heavy election losses triggered a significant revolt within the Labour Party, with the prime minister telling Cabinet colleagues on Tuesday that he would not be resigning and that a formal leadership contest had not been triggered. The crisis has reached a critical point, with several allies of Health Secretary Wes Streeting resigning from their ministerial posts in an apparent move to destabilise the government. Starmer\'s defiant message to Cabinet was clear: he intended to remain in Downing Street and would challenge those who wished to remove him to make their move official.",
+      "Despite the pressure mounting from within his own party, Starmer appeared to gain a degree of breathing room on Tuesday after a challenge from Wes Streeting failed to fully materialise. Downing Street insiders suggested that the Health Secretary did not yet command sufficient support among Labour MPs to mount a credible leadership push, leaving the immediate threat to the prime minister reduced but far from extinguished. The episode nevertheless laid bare the deep divisions within the Labour parliamentary party, divisions that have been building since the local election results delivered a brutal verdict on the government\'s first year in office.",
+      "Over 111 Labour MPs signed a letter calling for unity and urging the party not to descend into a leadership battle at such a critical moment, providing Starmer with a significant public show of support. The letter warned that infighting was exactly what the country did not need and called on colleagues to focus on regaining public trust. However, the fact that such a letter was deemed necessary at all underscored the scale of the crisis engulfing the prime minister, with scores of other MPs remaining conspicuously absent from the list of signatories.",
+      "Starmer is now pinning his hopes on Wednesday\'s King\'s Speech to reset the political narrative and demonstrate that his government retains a coherent and ambitious legislative agenda. The speech is expected to include around 35 bills covering housing, immigration, energy and other policy areas, in what Downing Street hopes will be seen as evidence of a functioning and purposeful administration. However, the optics of the occasion have been complicated by reported awkwardness with the Palace over King Charles\'s role in delivering the speech at a time of such evident political turbulence surrounding the prime minister.",
+      "The coming days are likely to prove decisive for Starmer\'s tenure in Downing Street. Wes Streeting was due to hold a face-to-face meeting with the prime minister on Wednesday morning, just hours before the King\'s Speech, in what observers described as a potential showdown over the future direction of the government. Whether Streeting ultimately decides to mount a formal challenge or fall back into line will be one of the most consequential decisions in British politics this year, with the outcome set to shape not only the fate of the prime minister but the direction of the Labour Party for years to come."
     ],
-    image: "https://i.guim.co.uk/img/media/4eadd10f2687989c6cf521de2baf0441cc934527/154_0_5537_4430/master/5537.jpg?width=1200&quality=85&auto=format&fit=max&s=10e6b1d9e2020508f001b90663cdc133",
-    source: "The Guardian",
-    sourceUrl: "https://www.theguardian.com/politics/2026/may/11/more-than-60-labour-mps-call-on-starmer-to-set-timetable-to-quit"
+    image: "https://static.independent.co.uk/2026/05/12/12/57/starmer-phillips.jpeg?width=1200&auto=webp&crop=3%3A2",
+    source: "BBC News",
+    sourceUrl: "https://www.bbc.com/news/articles/c8jv1mzzkjgo?at_medium=RSS&at_campaign=rss"
   },
   secondary: [
     {
       id: "uk1",
-      title: "Welfare Bill Dropped from King\'s Speech as Government Retreats on Reform",
-      summary: "The government has confirmed it will not include a welfare bill in the upcoming King\'s Speech, signalling it is not yet ready to bring forward new parliamentary legislation on the issue.",
+      title: "King\'s Speech to Feature 35 Bills as Starmer Bids to Regain Initiative",
+      summary: "Keir Starmer\'s government will set out a sweeping legislative programme on Wednesday, including bills on housing, immigration and energy, in an attempt to reassert its authority amid a mounting leadership crisis.",
       body: [
-        "In a significant climbdown, the government has decided that a new welfare bill will not feature in the King\'s Speech, with sources indicating ministers are simply not prepared to put forward the legislation at this stage. The decision reflects the intense political pressures bearing down on the Starmer administration at a moment of acute internal crisis.",
-        "The omission of the welfare bill is likely to fuel further criticism from Labour MPs who have been pressing for a bolder and more distinctive domestic agenda. It adds to the sense that the government is struggling to maintain momentum and coherence on policy at a time when its political foundations are being severely tested."
+        "The King\'s Speech will outline around 35 pieces of proposed legislation for the next parliamentary session, spanning a wide range of policy areas including housing reform, immigration and clean energy — an ambitious package designed to project governmental competence at a moment of acute political vulnerability for the prime minister. The sheer volume of planned bills is intended to signal that Starmer\'s administration remains focused on delivery despite the internal turmoil consuming Westminster.",
+        "The speech represents Starmer\'s most significant opportunity to steady the ship and remind both his party and the public why Labour was elected in the first place. However, the political backdrop of a rebellion within his own parliamentary party means the legislative announcements may struggle to cut through the noise of the ongoing leadership speculation."
       ],
-      image: "https://images.unsplash.com/photo-1761069234412-f8f2b7f9900c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxXZWxmYXJlJTIwQmlsbCUyMERyb3BwZWQlMjBmcm9tJTIwS2luZyU1Q3xlbnwwfDB8fHwxNzc4NTYyMTA5fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/ckgplx9vzq2o?at_medium=RSS&at_campaign=rss",
+      image: "https://images.unsplash.com/photo-1513307878903-4c4a7cab5b9a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxLaW5nJTVDfGVufDB8MHx8fDE3Nzg2NDg1MTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/politics/2026/may/12/starmer-bills-kings-speech",
       category: "Politics"
     },
     {
       id: "uk2",
-      title: "Starmer Announces British Steel Nationalisation Plans",
-      summary: "Keir Starmer has announced that legislation to formally nationalise British Steel will be put before Parliament this week, nearly a year after the steelworks was placed under government control.",
+      title: "Who Could Replace Starmer? The Potential Labour Leadership Challengers Profiled",
+      summary: "Andy Burnham, Angela Rayner and Wes Streeting have all emerged as potential candidates to succeed Keir Starmer should a formal Labour leadership contest be triggered.",
       body: [
-        "The Prime Minister has unveiled plans to bring forward a parliamentary bill to nationalise British Steel, with the steelworks having been under effective government control for close to a year. The move represents one of the most significant acts of state ownership of a major industrial asset in recent British history.",
-        "The announcement comes at a politically turbulent moment for Starmer, though supporters argue it demonstrates that the government is capable of decisive industrial action. The legislation is expected to face scrutiny over the long-term costs and strategic rationale for permanent public ownership of the steel sector."
+        "As speculation swirls around Keir Starmer\'s future, attention has turned to the figures who could credibly put themselves forward in a leadership contest, with Andy Burnham, Angela Rayner and Wes Streeting identified as the most prominent potential candidates. Each brings a distinct political brand and a different vision for the direction of the Labour Party, and any contest between them would be fiercely contested.",
+        "Burnham, currently serving as Mayor of Greater Manchester, has long been seen as a figure capable of reconnecting Labour with its traditional working-class base, while Streeting represents a more modernising strand of the party. Harriet Harman has already publicly urged Starmer to bring Burnham into the Cabinet, describing him as possessing 'huge talents' that should be harnessed by the government regardless of the leadership question."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/3d94/live/87576030-4d32-11f1-bd52-e755d604ece4.png",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/a6bc/live/a2d47da0-4e24-11f1-ac78-2112837ce2aa.jpg",
       source: "BBC News",
-      url: "https://www.bbc.com/news/articles/c8xwg0gdrpzo?at_medium=RSS&at_campaign=rss",
+      url: "https://www.bbc.com/news/articles/c3e2n7xn14xo?at_medium=RSS&at_campaign=rss",
       category: "Politics"
     },
     {
       id: "uk3",
-      title: "Green Party Leader Polanski Apologises Over Houseboat Council Tax Failure",
-      summary: "Green Party leader Polanski has apologised after it emerged he had been living on a houseboat in London and may have failed to pay council tax.",
+      title: "Charities Urge Labour to Fulfil Clean Air Act Promise Ahead of King\'s Speech",
+      summary: "More than 60 charities have called on the government to include a new Clean Air Act in Wednesday\'s King\'s Speech, arguing it should ban wood burning and clear diesel vehicles from roads.",
       body: [
-        "The Green Party has been forced into an embarrassing admission after it emerged that its leader had, until recently, been residing on a houseboat in London and may not have been paying council tax on the property. Polanski issued a public apology, acknowledging the situation and the reputational damage it risks causing to his party.",
-        "The revelation is particularly awkward for the Greens, who have positioned themselves as champions of fairness and public responsibility. The episode threatens to undermine the party\'s credibility at a time when it has been making gains by presenting itself as an ethical alternative to the established parties."
+        "A coalition of over 60 charities has written to the government ahead of the King\'s Speech demanding that ministers introduce a Clean Air Act that would ban domestic wood burning, remove diesel vehicles from roads and compel local councils to take meaningful action on pollution. Labour had held out the prospect of such legislation while in opposition, but the policy did not make it into the party\'s general election manifesto.",
+        "The charities argue that the King\'s Speech presents a crucial opportunity for the government to honour the spirit of its environmental commitments and take decisive action on a public health issue that claims tens of thousands of lives in the UK each year. Whether the legislation makes it into the final programme will be closely watched by environmental campaigners who feel the government has so far fallen short on its green promises."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/aa92/live/23db4230-4d8f-11f1-b55d-0f258dce1735.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/cy02wdzrg6jo?at_medium=RSS&at_campaign=rss",
+      image: "https://i.guim.co.uk/img/media/9842b09cdc5bee85f2faf612a76190bd7543b35e/366_0_5000_4000/master/5000.jpg?width=1200&quality=85&auto=format&fit=max&s=2a0f322eff8734ff690e48183b922df5",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/environment/2026/may/13/labour-must-fulfil-promise-to-introduce-clean-air-act-charities-urge",
       category: "Politics"
     }
   ]

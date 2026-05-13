@@ -1,60 +1,60 @@
 // us-politics-news-data.js
-// Auto-updated 2026-05-12 — do not edit manually
+// Auto-updated 2026-05-13 — do not edit manually
 
 var US_POLITICS_NEWS = {
-  date: "2026-05-12",
+  date: "2026-05-13",
   main: {
-    title: "Senate Advances Kevin Warsh as Trump\'s Pick to Chair the Federal Reserve",
+    title: "Trump\'s 'Golden Dome' Missile Defense Plan Projected to Cost $1.2 Trillion — Nearly Seven Times His Estimate",
     category: "Politics",
     content: [
-      "The United States Senate voted 49-44 on Monday to advance the nomination of Kevin Warsh to the Federal Reserve Board of Governors, clearing a significant procedural hurdle that puts him on track to be confirmed later this week as the next chair of the Federal Reserve. The vote was widely anticipated following the Senate Banking Committee\'s earlier approval of the nomination. Warsh would replace Jerome Powell, whose contentious relationship with President Trump made his eventual departure a matter of considerable political interest.",
-      "The nomination of Warsh represents one of the most consequential economic appointments of the Trump administration\'s second term, as the Federal Reserve chair wields enormous influence over American monetary policy, interest rates, and the broader health of the U.S. economy. Trump has repeatedly and publicly clashed with Powell over interest rate decisions, arguing that the Fed kept borrowing costs too high for too long. The selection of Warsh, a former Fed governor and Wall Street figure with ties to the Republican establishment, signals Trump\'s intent to install leadership at the central bank more aligned with his economic preferences.",
-      "Warsh previously served on the Federal Reserve Board of Governors from 2006 to 2011, giving him institutional familiarity with the central bank\'s operations during one of the most turbulent periods in modern financial history, including the 2008 financial crisis. His supporters argue that this experience, combined with a market-oriented perspective, makes him well-suited to navigate the Fed through ongoing economic uncertainties. Critics, however, have raised concerns about the independence of the central bank if its new chair is seen as politically beholden to the president who appointed him.",
-      "The Federal Reserve\'s independence from political pressure has long been considered a cornerstone of American economic stability, and the circumstances surrounding Warsh\'s nomination have reignited that debate in Washington. Several Democratic senators who voted against advancing the nomination cited worries that a Warsh-led Fed could bend to White House pressure on rate cuts in ways that might prioritize short-term political gains over long-term economic health. The 49-44 vote largely fell along partisan lines, underscoring the deeply political nature of the confirmation process.",
-      "With full Senate confirmation expected later in the week, attention will quickly turn to how Warsh plans to manage the Fed\'s balance sheet, communicate with markets, and handle any future disagreements with the White House. His confirmation would mark a landmark shift in the leadership of one of the world\'s most powerful financial institutions. For the Trump administration, installing Warsh at the Fed\'s helm would represent a decisive victory in its long-running effort to reshape the institutional landscape of American economic governance."
+      "President Trump\'s ambitious 'Golden Dome' missile defense initiative carries a projected price tag of $1.2 trillion, according to an independent budget office — a figure that is nearly seven times higher than the administration\'s own initial estimate. The staggering gap between the White House\'s projection and the independent assessment has reignited fierce debate on Capitol Hill about the feasibility and fiscal responsibility of the program. The revelation puts renewed pressure on lawmakers already grappling with a federal budget stretched thin by ongoing military commitments and domestic spending demands.",
+      "Beyond the eye-watering cost, analysts warn that the Golden Dome system may still fall short of its central promise: reliably stopping a full-scale missile attack against the United States. The independent budget office\'s findings suggest that while the program could provide meaningful defensive capabilities in certain scenarios, it would not constitute an impenetrable shield against a coordinated all-out strike. Critics argue this fundamental limitation calls into question whether the enormous investment can ever be justified on purely strategic grounds.",
+      "The Trump administration has framed the Golden Dome as a generational leap in national security infrastructure, invoking comparisons to Israel\'s Iron Dome system but on a continental scale. Supporters of the program within the Republican Party contend that even partial missile defense capability represents a meaningful deterrent and that the cost must be weighed against the existential stakes of leaving the American homeland vulnerable. However, the independent budget assessment threatens to undercut that argument by making the program\'s limitations impossible to ignore.",
+      "The political dynamics surrounding the Golden Dome are complex, with some defense hawks enthusiastically backing the president\'s vision while fiscal conservatives in Congress balk at the price tag. Democrats have largely seized on the cost discrepancy as evidence of what they describe as the administration\'s pattern of overpromising and underestimating expenses on marquee policy initiatives. The debate is expected to intensify in coming weeks as Congress takes up defense appropriations and must decide how much funding, if any, to allocate toward early development of the system.",
+      "The Golden Dome announcement fits into a broader pattern of the Trump administration advancing large-scale, high-concept defense and infrastructure proposals that generate significant public attention but face serious scrutiny over their details and costs. With the national debt continuing to climb and the economic pressures of the ongoing Iran conflict already weighing on the economy, the $1.2 trillion figure presents a significant political obstacle for the White House. Whether Trump can marshal enough Congressional support to move the project forward — or whether it becomes a symbol of unrealized ambition — will be one of the defining legislative battles of the coming months."
     ],
-    image: "https://images.unsplash.com/photo-1585249988465-b9f684e8162b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTZW5hdGUlMjBBZHZhbmNlcyUyMEtldmluJTIwV2Fyc2glMjBhcyUyMFRydW1wJTVDfGVufDB8MHx8fDE3Nzg1NjIxNTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    source: "The Hill",
-    sourceUrl: "https://thehill.com/homenews/senate/5873160-warsh-federal-reserve/"
+    image: "https://images.unsplash.com/photo-1612278920777-12ea7620bac5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUcnVtcCU1Q3xlbnwwfDB8fHwxNzc4NjQ4NTY0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    source: "BBC News",
+    sourceUrl: "https://www.bbc.com/news/articles/cqxp27j1xyjo?at_medium=RSS&at_campaign=rss"
   },
   secondary: [
     {
       id: "us1",
-      title: "Supreme Court Clears Path for Alabama to Use New Voting Map, Threatening Majority-Black District",
-      summary: "A majority of Supreme Court justices sided with Alabama in a redistricting case that could eliminate a majority-Black congressional district ahead of November\'s midterm elections.",
+      title: "Kash Patel Lashes Out at Lawmakers Over 'Excessive Drinking' Questions",
+      summary: "FBI Director Kash Patel offered a combative defense before lawmakers who questioned whether his alleged excessive drinking has impaired his ability to lead the bureau.",
       body: [
-        "The Supreme Court handed Alabama a major boost in its redistricting fight, clearing the way for the state to implement a new congressional district map that would eliminate a majority-Black district. The decision came in the wake of last month\'s Supreme Court ruling that weakened the Voting Rights Act, and Alabama legislators have been eager to redraw lines in ways they hope will boost Republican prospects in November\'s midterm elections.",
-        "The ruling has broad implications beyond Alabama, as Virginia Democrats simultaneously appealed to the Supreme Court to save their own new House maps, with some top Virginia Democrats expressing little hope the appeal would affect congressional elections this November. Together, the cases signal an aggressive new phase of redistricting battles playing out at the highest levels of the American judiciary."
+        "FBI Director Kash Patel responded with a sharp and defiant tone when members of Congress pressed him on a news report alleging that his 'excessive drinking' had undermined his effectiveness at the helm of the nation\'s top law enforcement agency. Patel rejected the characterizations outright, offering what observers described as a brash and unapologetic rebuttal rather than a measured institutional response.",
+        "The confrontation underscores the ongoing tensions between the Trump-appointed FBI director and a Congress that has grown increasingly restive about leadership and accountability at major federal agencies. The episode adds to a series of controversies surrounding Patel\'s tenure and raises fresh questions about his standing both on Capitol Hill and within the bureau itself."
       ],
-      image: "https://static01.nyt.com/images/2026/05/11/multimedia/11dc-scotus-alabama-mhkj/11dc-scotus-alabama-mhkj-mediumSquareAt3X.jpg",
-      source: "The New York Times",
-      url: "https://www.nytimes.com/2026/05/11/us/politics/supreme-court-alabama-map.html",
+      image: "https://images.unsplash.com/photo-1599594407685-1b16111e4e89?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxLYXNoJTIwUGF0ZWwlMjBMYXNoZXMlMjBPdXQlMjBhdCUyMExhd21ha2VycyUyME92ZXIlMjB8ZW58MHwwfHx8MTc3ODY0ODU2NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "The Washington Post",
+      url: "https://www.washingtonpost.com/national-security/2026/05/12/kash-patel-lashes-out-lawmakers-question-excessive-drinking/",
       category: "Politics"
     },
     {
       id: "us2",
-      title: "Justice Department Subpoenas Wall Street Journal in Leak Investigation, Raising Press Freedom Alarms",
-      summary: "The Trump Justice Department issued subpoenas to the Wall Street Journal related to an article about internal deliberations on the risks of military action against Iran, drawing sharp criticism from press freedom advocates.",
+      title: "Hegseth and Caine Face Bipartisan Fury Over Iran War Costs and Strategy",
+      summary: "Defense Secretary Hegseth and a senior administration official faced unusually bipartisan congressional frustration over the mounting costs and unclear endgame of the U.S. conflict with Iran.",
       body: [
-        "The Justice Department subpoenaed the Wall Street Journal as part of a leak investigation tied to a story the paper published about internal government deliberations regarding the potential risks of military action in Iran. The Journal disclosed receiving the subpoenas, prompting an immediate and forceful response from critics who argued the move represents a dangerous assault on press freedom and the ability of journalists to hold the government accountable.",
-        "The use of subpoenas against news organizations to uncover confidential sources has historically been one of the most contentious tools in the federal government\'s arsenal, and the Trump administration\'s willingness to deploy it against a major financial newspaper signals an aggressive posture toward the press. The episode adds to a broader pattern of tension between the administration and news organizations over the publication of sensitive national security information."
+        "In a notable display of cross-aisle discontent, Republicans joined Democrats in pressing Defense Secretary Pete Hegseth and administration official Caine for specifics on the financial costs of the Iran war and the White House\'s strategy for bringing the conflict to a close. The hearing grew tense as lawmakers expressed frustration that the administration has yet to provide a coherent exit plan, particularly as a ceasefire with Tehran appears to be faltering.",
+        "The bipartisan pushback represents a significant political challenge for the Trump administration, signaling that the Iran war is no longer a rallying point even among the president\'s own party. With the conflict\'s economic toll becoming increasingly visible to American consumers and businesses, the pressure on the White House to articulate a credible path forward is intensifying."
       ],
-      image: "https://static01.nyt.com/images/2026/05/11/multimedia/11dc-justice-cjmh/11dc-justice-cjmh-mediumSquareAt3X.jpg",
-      source: "The New York Times",
-      url: "https://www.nytimes.com/2026/05/11/us/politics/subpoenas-wall-street-journal-trump.html",
+      image: "https://images.unsplash.com/photo-1772299399273-d71c7fce5da0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxIZWdzZXRoJTIwYW5kJTIwQ2FpbmUlMjBGYWNlJTIwQmlwYXJ0aXNhbiUyMEZ1cnklMjBPdmVyJTIwSXJhbiUyMFdhciUyMENvc3RzJTIwYW5kJTIwU3RyYXRlZ3l8ZW58MHwwfHx8MTc3ODY0ODU2NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "The Washington Post",
+      url: "https://www.washingtonpost.com/national-security/2026/05/12/hegseth-hearings-iran-war/",
       category: "Politics"
     },
     {
       id: "us3",
-      title: "Trump Floats Vance and Rubio as 2028 'Dream Team' at White House Event",
-      summary: "President Trump informally polled attendees at a White House event about Vice President J.D. Vance and Secretary of State Marco Rubio as a potential 2028 presidential ticket, stopping short of a formal endorsement.",
+      title: "Southern States Rush to Redraw Congressional Districts After Supreme Court Ruling",
+      summary: "State legislatures across the South are moving quickly to redraw congressional maps following a Supreme Court decision that cleared the path for new redistricting efforts, with Black voters warning their representation is at stake.",
       body: [
-        "President Trump publicly floated the idea of a Vance-Rubio or Rubio-Vance ticket for the 2028 presidential election during a White House event on Monday, asking attendees to weigh in on which of the two figures they preferred. While Trump stopped short of formally endorsing either man, the moment drew significant attention as an early and unusual signal from a sitting president about his preferred successors.",
-        "The informal straw poll puts both Vance and Rubio squarely in the spotlight as the two most prominent figures vying to inherit Trump\'s political coalition, setting the stage for what is expected to be an intensely competitive Republican primary race. The episode reflects Trump\'s continued grip on the direction and attention of the Republican Party even as his own second term is still in its early stages."
+        "Following a recent Supreme Court ruling, several Southern state legislatures have launched urgent efforts to redraw their congressional district boundaries, setting off a scramble that voting rights advocates say could dramatically reshape political representation in the region. Black voters and civil rights organizations have raised alarms, arguing that the rushed redistricting process risks diluting minority voting power ahead of the 2026 elections.",
+        "The redistricting push carries enormous implications for the balance of power in the U.S. House of Representatives, where a handful of seats could determine which party controls the chamber after November. The speed at which some states are moving through the process has drawn criticism from Democrats and voting rights groups who argue that proper community input and legal review are being bypassed in the rush to finalize new maps."
       ],
-      image: "https://thehill.com/wp-content/uploads/sites/2/2026/02/AP26050521127734-e1771534131350.jpg?w=900",
-      source: "The Hill",
-      url: "https://thehill.com/homenews/campaign/5873326-trump-pulse-check-vance-rubio/",
+      image: "https://images.pexels.com/photos/36984943/pexels-photo-36984943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      source: "NPR",
+      url: "https://www.npr.org/2026/05/12/nx-s1-5818688/southern-states-rush-to-draw-new-congressional-districts-after-supreme-court-ruling",
       category: "Politics"
     }
   ]
