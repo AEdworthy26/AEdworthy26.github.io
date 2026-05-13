@@ -1,10 +1,10 @@
 // quiz-data.js
-// Auto-updated 2026-05-11 — do not edit manually
+// Auto-updated 2026-05-13 — do not edit manually
 
 window.QUIZ_DATA = {
-  date: '2026-05-11',
+  date: '2026-05-13',
   category: 'Sport',
-  question: 'At the 1970 FIFA World Cup in Mexico, Brazilian striker Pelé famously attempted an audacious shot from inside his own half that almost caught the goalkeeper off guard. Against which country was that match played?',
-  answer: 'Czechoslovakia',
-  funFact: 'The moment came in Brazil\'s opening group match against Czechoslovakia. Pelé spotted goalkeeper Ivo Viktor off his line and struck a long-range shot from near the halfway line that drifted just wide of the post. It remains one of the most talked-about near-misses in World Cup history, and Brazil went on to win that tournament with what many consider the greatest team ever assembled.'
+  question: 'In which year did Ayrton Senna win his first Formula One World Drivers\' Championship, and for which constructor was he driving at the time?',
+  answer: '1988, McLaren (McLaren-Honda).',
+  funFact: 'Senna\'s 1988 season was one of the most dominant in F1 history — he and teammate Alain Prost won 15 of the 16 races between them, with Senna claiming eight victories. The two drivers\' fierce rivalry became one of sport\'s great storylines, culminating in deliberate collisions at successive Japanese Grands Prix in 1989 and 1990.'
 };

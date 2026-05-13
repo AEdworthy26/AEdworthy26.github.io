@@ -1,8 +1,8 @@
 // quote-data.js
-// Auto-updated 2026-05-12 — do not edit manually
+// Auto-updated 2026-05-13 — do not edit manually
 
 var QUOTE_DATA = {
-  date: "2026-05-12",
-  text: "Give me six hours to chop down a tree and I will spend the first four sharpening the axe.",
-  author: "Abraham Lincoln"
+  date: "2026-05-13",
+  text: "The first principle is that you must not fool yourself — and you are the easiest person to fool.",
+  author: "Richard Feynman"
 };
