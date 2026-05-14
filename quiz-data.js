@@ -1,10 +1,10 @@
 // quiz-data.js
-// Auto-updated 2026-05-13 — do not edit manually
+// Auto-updated 2026-05-14 — do not edit manually
 
 window.QUIZ_DATA = {
-  date: '2026-05-13',
+  date: '2026-05-14',
   category: 'Sport',
-  question: 'In which year did Ayrton Senna win his first Formula One World Drivers\' Championship, and for which constructor was he driving at the time?',
-  answer: '1988, McLaren (McLaren-Honda).',
-  funFact: 'Senna\'s 1988 season was one of the most dominant in F1 history — he and teammate Alain Prost won 15 of the 16 races between them, with Senna claiming eight victories. The two drivers\' fierce rivalry became one of sport\'s great storylines, culminating in deliberate collisions at successive Japanese Grands Prix in 1989 and 1990.'
+  question: 'At the 1992 Barcelona Olympics, which British sprinter won gold in the 100 metres, becoming the oldest man at the time to win the event at an Olympic Games?',
+  answer: 'Linford Christie',
+  funFact: 'Christie was 32 years old when he claimed gold in Barcelona, finishing in 9.96 seconds. He remains the only British man ever to win the Olympic 100 metres title. His victory came in a race from which the favourite, American Dennis Mitchell, was disqualified for a false start.'
 };

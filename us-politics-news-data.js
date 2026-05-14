@@ -1,60 +1,60 @@
 // us-politics-news-data.js
-// Auto-updated 2026-05-13 — do not edit manually
+// Auto-updated 2026-05-14 — do not edit manually
 
 var US_POLITICS_NEWS = {
-  date: "2026-05-13",
+  date: "2026-05-14",
   main: {
-    title: "Trump\'s 'Golden Dome' Missile Defense Plan Projected to Cost $1.2 Trillion — Nearly Seven Times His Estimate",
+    title: "How the Trump Administration Has Undermined the Fight Against Public Corruption",
     category: "Politics",
     content: [
-      "President Trump\'s ambitious 'Golden Dome' missile defense initiative carries a projected price tag of $1.2 trillion, according to an independent budget office — a figure that is nearly seven times higher than the administration\'s own initial estimate. The staggering gap between the White House\'s projection and the independent assessment has reignited fierce debate on Capitol Hill about the feasibility and fiscal responsibility of the program. The revelation puts renewed pressure on lawmakers already grappling with a federal budget stretched thin by ongoing military commitments and domestic spending demands.",
-      "Beyond the eye-watering cost, analysts warn that the Golden Dome system may still fall short of its central promise: reliably stopping a full-scale missile attack against the United States. The independent budget office\'s findings suggest that while the program could provide meaningful defensive capabilities in certain scenarios, it would not constitute an impenetrable shield against a coordinated all-out strike. Critics argue this fundamental limitation calls into question whether the enormous investment can ever be justified on purely strategic grounds.",
-      "The Trump administration has framed the Golden Dome as a generational leap in national security infrastructure, invoking comparisons to Israel\'s Iron Dome system but on a continental scale. Supporters of the program within the Republican Party contend that even partial missile defense capability represents a meaningful deterrent and that the cost must be weighed against the existential stakes of leaving the American homeland vulnerable. However, the independent budget assessment threatens to undercut that argument by making the program\'s limitations impossible to ignore.",
-      "The political dynamics surrounding the Golden Dome are complex, with some defense hawks enthusiastically backing the president\'s vision while fiscal conservatives in Congress balk at the price tag. Democrats have largely seized on the cost discrepancy as evidence of what they describe as the administration\'s pattern of overpromising and underestimating expenses on marquee policy initiatives. The debate is expected to intensify in coming weeks as Congress takes up defense appropriations and must decide how much funding, if any, to allocate toward early development of the system.",
-      "The Golden Dome announcement fits into a broader pattern of the Trump administration advancing large-scale, high-concept defense and infrastructure proposals that generate significant public attention but face serious scrutiny over their details and costs. With the national debt continuing to climb and the economic pressures of the ongoing Iran conflict already weighing on the economy, the $1.2 trillion figure presents a significant political obstacle for the White House. Whether Trump can marshal enough Congressional support to move the project forward — or whether it becomes a symbol of unrealized ambition — will be one of the defining legislative battles of the coming months."
+      "President Trump has granted pardons to at least 15 former elected officials and their co-conspirators who were convicted of corruption-related offenses over the past year, according to a new NPR investigation. The pardons have drawn sharp criticism from ethics watchdogs and former prosecutors who argue that the president is systematically dismantling one of the federal government\'s core tools for holding public officials accountable. The breadth and pace of these clemency actions have raised questions about the administration\'s commitment to the rule of law and its willingness to shield political allies from legal consequences.",
+      "The pattern represents a significant shift in how the executive branch has historically treated public corruption cases, which have long been prosecuted vigorously regardless of the party affiliation of the accused. By intervening in cases that had already been adjudicated by juries and upheld by courts, the administration is effectively signaling to current and future officeholders that corruption convictions may be reversible through political favor. Legal experts warn that this precedent could have a chilling effect on federal investigators and prosecutors who bring these difficult and resource-intensive cases.",
+      "Critics have pointed out that several of the pardoned individuals had been convicted after exhaustive investigations and trials involving extensive evidence of bribery, fraud, and abuse of public trust. The decision to pardon co-conspirators alongside the principal defendants has been particularly alarming to anti-corruption advocates, as it suggests the clemency is being extended not just to prominent figures but to the full network of individuals involved in corrupt schemes. This broader application amplifies the potential damage to deterrence and public confidence in government accountability.",
+      "The Justice Department under the Trump administration has also been accused of deprioritizing public corruption enforcement more broadly, with some career prosecutors reportedly reassigned or sidelined in favor of political appointees with different enforcement priorities. Together with the pardons, this internal restructuring has left many in the law enforcement community concerned that the institutional capacity to pursue public corruption cases has been materially weakened. Congressional Democrats have called for hearings into the clemency decisions, though prospects for meaningful oversight remain uncertain given the current composition of Capitol Hill.",
+      "The political stakes of this issue extend well beyond individual cases, touching on fundamental questions about democratic accountability and whether powerful figures can act with impunity. Voters in upcoming midterm elections may weigh the administration\'s record on corruption as they evaluate candidates and party platforms. For now, the cumulative effect of these pardons represents one of the most consequential uses of executive clemency power in recent American political history, with implications that legal scholars say will be felt for years to come."
     ],
-    image: "https://images.unsplash.com/photo-1612278920777-12ea7620bac5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUcnVtcCU1Q3xlbnwwfDB8fHwxNzc4NjQ4NTY0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-    source: "BBC News",
-    sourceUrl: "https://www.bbc.com/news/articles/cqxp27j1xyjo?at_medium=RSS&at_campaign=rss"
+    image: "https://images.unsplash.com/photo-1603275217764-0c25d8b5132d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxIb3clMjB0aGUlMjBUcnVtcCUyMEFkbWluaXN0cmF0aW9uJTIwSGFzJTIwVW5kZXJtaW5lZCUyMHRoZSUyMEZpZ2h0JTIwQWdhaW5zdCUyMFB1YmxpYyUyMENvcnJ1cHRpb258ZW58MHwwfHx8MTc3ODczNDk4MXww&ixlib=rb-4.1.0&q=80&w=1080",
+    source: "NPR",
+    sourceUrl: "https://www.npr.org/2026/05/13/g-s1-121485/trump-pardons-public-corruption-justice"
   },
   secondary: [
     {
       id: "us1",
-      title: "Kash Patel Lashes Out at Lawmakers Over 'Excessive Drinking' Questions",
-      summary: "FBI Director Kash Patel offered a combative defense before lawmakers who questioned whether his alleged excessive drinking has impaired his ability to lead the bureau.",
+      title: "Denise Powell Wins Democratic Primary in Key Nebraska House Race",
+      summary: "Political organizer Denise Powell has won the Democratic primary for Nebraska\'s 2nd congressional district, defeating State Sen. John Cavanaugh in a closely watched race that could influence control of the House.",
       body: [
-        "FBI Director Kash Patel responded with a sharp and defiant tone when members of Congress pressed him on a news report alleging that his 'excessive drinking' had undermined his effectiveness at the helm of the nation\'s top law enforcement agency. Patel rejected the characterizations outright, offering what observers described as a brash and unapologetic rebuttal rather than a measured institutional response.",
-        "The confrontation underscores the ongoing tensions between the Trump-appointed FBI director and a Congress that has grown increasingly restive about leadership and accountability at major federal agencies. The episode adds to a series of controversies surrounding Patel\'s tenure and raises fresh questions about his standing both on Capitol Hill and within the bureau itself."
+        "Denise Powell emerged victorious in a competitive Democratic primary for the Omaha-based 2nd congressional district seat, which is currently held by a retiring Republican and is considered a genuine pickup opportunity for Democrats heading into November. Her win over State Sen. John Cavanaugh sets up what is expected to be a fiercely contested general election in a district that has long been viewed as a bellwether for national political trends.",
+        "Nebraska\'s 2nd district is one of only two congressional districts in the country that can split its electoral vote from the rest of the state, making it a perennial focal point for both parties. A Democratic win here in November would contribute meaningfully to the party\'s effort to retake the House majority, making Powell\'s primary victory a significant moment in the broader midterm landscape."
       ],
-      image: "https://images.unsplash.com/photo-1599594407685-1b16111e4e89?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxLYXNoJTIwUGF0ZWwlMjBMYXNoZXMlMjBPdXQlMjBhdCUyMExhd21ha2VycyUyME92ZXIlMjB8ZW58MHwwfHx8MTc3ODY0ODU2NHww&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "The Washington Post",
-      url: "https://www.washingtonpost.com/national-security/2026/05/12/kash-patel-lashes-out-lawmakers-question-excessive-drinking/",
-      category: "Politics"
+      image: "https://static01.nyt.com/images/2026/05/13/multimedia/13pol-powell-hfo-blhc/13pol-powell-hfo-blhc-mediumSquareAt3X.jpg",
+      source: "NPR",
+      url: "https://www.npr.org/2026/05/13/g-s1-121987/denise-powell-democrat-wins-nebraska-second-congressional-district",
+      category: "Elections"
     },
     {
       id: "us2",
-      title: "Hegseth and Caine Face Bipartisan Fury Over Iran War Costs and Strategy",
-      summary: "Defense Secretary Hegseth and a senior administration official faced unusually bipartisan congressional frustration over the mounting costs and unclear endgame of the U.S. conflict with Iran.",
+      title: "The Gerrymandering Wars: How Recent Court Rulings Have Tilted Maps Toward Republicans",
+      summary: "Two recent court decisions have reshaped redistricting battles across multiple US states, giving Republicans a significant advantage in congressional maps ahead of the November midterms.",
       body: [
-        "In a notable display of cross-aisle discontent, Republicans joined Democrats in pressing Defense Secretary Pete Hegseth and administration official Caine for specifics on the financial costs of the Iran war and the White House\'s strategy for bringing the conflict to a close. The hearing grew tense as lawmakers expressed frustration that the administration has yet to provide a coherent exit plan, particularly as a ceasefire with Tehran appears to be faltering.",
-        "The bipartisan pushback represents a significant political challenge for the Trump administration, signaling that the Iran war is no longer a rallying point even among the president\'s own party. With the conflict\'s economic toll becoming increasingly visible to American consumers and businesses, the pressure on the White House to articulate a credible path forward is intensifying."
+        "A pair of consequential court rulings have shifted the balance of power in redistricting fights, with Republicans emerging as the primary beneficiaries of new congressional maps that could lock in favorable electoral terrain for years to come. In Tennessee, for example, new maps have split Memphis — previously represented by a single Democratic congressman — into three separate districts each likely to elect a Republican, dramatically altering the political landscape of the state.",
+        "Legal and political analysts caution that while Republicans currently hold the upper hand, the redistricting wars are far from over, as ongoing litigation and future census cycles could once again redraw the lines. The implications of these map changes extend well beyond the upcoming midterms, potentially influencing the balance of power in the House of Representatives for the better part of a decade."
       ],
-      image: "https://images.unsplash.com/photo-1772299399273-d71c7fce5da0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxIZWdzZXRoJTIwYW5kJTIwQ2FpbmUlMjBGYWNlJTIwQmlwYXJ0aXNhbiUyMEZ1cnklMjBPdmVyJTIwSXJhbiUyMFdhciUyMENvc3RzJTIwYW5kJTIwU3RyYXRlZ3l8ZW58MHwwfHx8MTc3ODY0ODU2NXww&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "The Washington Post",
-      url: "https://www.washingtonpost.com/national-security/2026/05/12/hegseth-hearings-iran-war/",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/5b40/live/2ce04030-4f09-11f1-bbd7-4dd9e7da3820.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.com/news/articles/ckgpjqvjyz8o?at_medium=RSS&at_campaign=rss",
       category: "Politics"
     },
     {
       id: "us3",
-      title: "Southern States Rush to Redraw Congressional Districts After Supreme Court Ruling",
-      summary: "State legislatures across the South are moving quickly to redraw congressional maps following a Supreme Court decision that cleared the path for new redistricting efforts, with Black voters warning their representation is at stake.",
+      title: "White House to Host 9-Hour Prayer Festival Focused on Christian Roots of the United States",
+      summary: "The Trump administration is set to host a sweeping prayer event at the White House featuring Pete Hegseth, Marco Rubio, and Mike Johnson, centered on the claim that America\'s founders intended the nation to be explicitly Christian.",
       body: [
-        "Following a recent Supreme Court ruling, several Southern state legislatures have launched urgent efforts to redraw their congressional district boundaries, setting off a scramble that voting rights advocates say could dramatically reshape political representation in the region. Black voters and civil rights organizations have raised alarms, arguing that the rushed redistricting process risks diluting minority voting power ahead of the 2026 elections.",
-        "The redistricting push carries enormous implications for the balance of power in the U.S. House of Representatives, where a handful of seats could determine which party controls the chamber after November. The speed at which some states are moving through the process has drawn criticism from Democrats and voting rights groups who argue that proper community input and legal review are being bypassed in the rush to finalize new maps."
+        "Senior administration officials including Defense Secretary Pete Hegseth, Secretary of State Marco Rubio, and House Speaker Mike Johnson are scheduled to speak at a nine-hour prayer festival hosted at the White House, an event organizers have framed as a rededication of the United States to its purported Christian founding principles. The gathering, tied to the country\'s 250th anniversary celebrations, reflects the administration\'s broader effort to align federal institutions with a distinctly religious nationalist vision.",
+        "Critics and civil liberties advocates have raised concerns about the use of the White House as a venue for an event so explicitly rooted in a single religious tradition, arguing it risks blurring the constitutional line between church and state. The event nonetheless underscores the degree to which Christian nationalism has become a prominent and officially embraced element of the current administration\'s political identity."
       ],
-      image: "https://images.pexels.com/photos/36984943/pexels-photo-36984943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      source: "NPR",
-      url: "https://www.npr.org/2026/05/12/nx-s1-5818688/southern-states-rush-to-draw-new-congressional-districts-after-supreme-court-ruling",
+      image: "https://images.unsplash.com/photo-1763315379063-194ab57a1c25?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxXaGl0ZSUyMEhvdXNlJTIwdG8lMjBIb3N0JTIwOS1Ib3VyJTIwUHJheWVyJTIwRmVzdGl2YWwlMjBGb2N1c2VkJTIwb24lMjBDaHJpc3RpYW4lMjBSb290cyUyMG9mJTIwdGhlJTIwVW5pdGVkJTIwU3RhdGVzfGVufDB8MHx8fDE3Nzg3MzQ5ODF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "Washington Post",
+      url: "https://www.washingtonpost.com/religion/2026/05/13/trump-administration-host-rededicate-250-jubilee-mall-sunday/",
       category: "Politics"
     }
   ]

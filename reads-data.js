@@ -1,19 +1,19 @@
 // reads-data.js
-// Auto-updated 2026-05-13 — do not edit manually
+// Auto-updated 2026-05-14 — do not edit manually
 
 var READS_DATA = {
-  date: "2026-05-13",
+  date: "2026-05-14",
   book: {
-    title: "The Pianist",
-    author: "Władysław Szpilman",
-    year: 1946,
-    genres: ["Memoir", "Music", "War"],
-    desc: "Władysław Szpilman was the finest pianist in Warsaw when the Nazi occupation shattered his world, and this memoir — suppressed for decades and only widely published in 1999 — recounts his survival in the rubble of the Warsaw Ghetto with a spare, almost disbelieving clarity. What makes the book extraordinary is Szpilman\'s refusal to sentimentalize or moralize: he writes as a musician observes, precisely and without ornament, which makes the horror land all the harder. The relationship that forms near the end with a German officer who shelters him — a man himself destroyed by the war — is one of the most quietly devastating encounters in all of memoir literature. It is a book about music as the irreducible core of a person, and about how that core can somehow persist when everything else is stripped away.",
-    whyRead: "In a moment when questions of survival, complicity, and human decency feel urgently alive, Szpilman\'s account cuts through noise with the precision of a single piano note — essential reading that takes only an afternoon but stays for years.",
-    rating: 4.3,
+    title: "The Remains of the Day",
+    author: "Kazuo Ishiguro",
+    year: 1989,
+    genres: ["Literary Fiction", "Character Study", "British Literature"],
+    desc: "Stevens, the consummate English butler, embarks on a rare motoring holiday through the West Country and spends the journey examining the choices that defined — and quietly destroyed — his life. Ishiguro constructs the novel as a masterclass in unreliable narration: Stevens believes he is reminiscing fondly, but the reader watches with mounting sadness as dignity curdles into self-deception and professional devotion reveals itself as a flight from feeling. The prose is formal, measured, and devastatingly precise, mirroring a man who has polished away every rough human edge. Few novels have captured so acutely the tragedy of a life half-lived, of loyalty misplaced and love quietly surrendered in the name of duty.",
+    whyRead: "With Ishiguro\'s Nobel legacy still resonating and questions of institutional loyalty and personal integrity everywhere in public life, this slim, perfect novel lands with the force of a philosophical provocation dressed as a country drive.",
+    rating: 4.2,
     ratingSource: "Goodreads",
-    ratingCount: "90,000+",
-    coverUrl: "https://covers.openlibrary.org/b/id/6938171-L.jpg",
-    amazonUrl: "https://www.amazon.co.uk/dp/3548363512"
+    ratingCount: "400,000+",
+    coverUrl: "https://covers.openlibrary.org/b/id/95742-L.jpg",
+    amazonUrl: "https://www.amazon.co.uk/dp/1405880449"
   }
 };

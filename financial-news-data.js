@@ -1,61 +1,61 @@
 // financial-news-data.js
-// Auto-updated 2026-05-13 — do not edit manually
+// Auto-updated 2026-05-14 — do not edit manually
 
 var FINANCIAL_NEWS = {
-  date: "2026-05-13",
+  date: "2026-05-14",
   main: {
-    title: "UK Borrowing Costs Surge to 28-Year High as Investor Jitters Over Starmer Uncertainty Grip Markets",
-    category: "Economics",
+    title: "Senate Confirms Kevin Warsh as Fed Chair in Razor-Thin Vote",
+    category: "Monetary Policy",
     content: [
-      "Long-term UK borrowing costs have soared to their highest level in almost three decades, rattling bond markets and sending the pound lower against the dollar. The spike in gilt yields has been driven by mounting investor fears over a potential change in Labour leadership, with uncertainty surrounding Prime Minister Keir Starmer\'s future at the helm proving deeply unsettling for financial markets. The move marks one of the most significant bouts of bond market turbulence the UK has experienced in years, drawing uncomfortable comparisons to past episodes of fiscal instability.",
-      "The sharp rise in bond yields reflects a broader anxiety among investors about what a leadership transition within the Labour Party could mean for the UK\'s tax and spending trajectory. Markets have grown accustomed to the current government\'s fiscal framework, and any shift toward a prime minister perceived as more aggressive on redistribution or hostile to financial services could materially alter that calculus. The sell-off in gilts signals that investors are demanding a higher risk premium to hold UK government debt, effectively raising the cost of borrowing for the state.",
-      "The alarm has been amplified by warnings from major financial institutions, most notably JP Morgan chief executive Jamie Dimon, who stated that the US banking giant could scrap its planned £3 billion London headquarters in Canary Wharf if Starmer is replaced by a Labour leader seen as hostile to banks. Dimon\'s intervention underscores just how sensitive large-scale corporate investment decisions have become to political risk in the UK. The prospect of one of Wall Street\'s most prominent institutions walking away from a flagship London project sent an additional chill through the City.",
-      "The pound\'s decline against the dollar compounds the challenge for policymakers, as a weaker currency can feed through into higher import prices and add to inflationary pressures at an already delicate moment for the global economy. For the Bank of England, the combination of rising borrowing costs and a softer currency creates a difficult balancing act, potentially limiting its room to cut interest rates even as growth concerns linger. Currency and bond markets are in effect sending a joint warning signal that political uncertainty carries real and immediate economic costs.",
-      "Analysts have warned that further bond market turbulence cannot be ruled out if the political situation remains unresolved, with some pointing to the potential for a self-reinforcing spiral in which higher borrowing costs themselves become a drag on economic confidence. The episode serves as a stark reminder of how quickly sovereign debt markets can move when investors sense a shift in the political winds, particularly in an environment already heightened by global macro pressures. For now, the Treasury and Downing Street face the unenviable task of trying to restore market confidence while navigating what has become a highly fluid political landscape."
+      "Kevin Warsh has been confirmed by the United States Senate as the new Chair of the Federal Reserve, replacing Jerome H. Powell in one of the most consequential monetary policy appointments in recent memory. The confirmation passed by the narrowest margin since the role first required a Senate confirmation vote, underscoring the deep divisions surrounding both the nominee and the broader question of central bank independence. Markets had been watching the confirmation process closely, with investors acutely aware that the new Fed chair will inherit an economy under significant stress.",
+      "Warsh takes the helm at a moment of extraordinary uncertainty for the American economy. US inflation has climbed to a three-year high, driven in large part by elevated energy costs stemming from the ongoing conflict in the Middle East, and the Federal Reserve faces the unenviable task of calibrating interest rate policy amid competing pressures. A tighter monetary stance risks further slowing an economy already strained by geopolitical disruption, while any perceived loosening could entrench inflationary expectations further.",
+      "One of the central concerns surrounding the Warsh appointment has been the question of Federal Reserve independence. The Fed has long operated at arm\'s length from the executive branch, a structural feature that markets have traditionally viewed as a guarantor of credible, long-term inflation management. The narrowness of Warsh\'s confirmation margin has amplified those concerns, with critics warning that a Fed chair seen as ideologically aligned with the White House could undermine the institution\'s credibility with bond markets and international investors.",
+      "Warsh is a former Fed governor who served during the 2008 financial crisis and has been a vocal critic of unconventional monetary policy tools such as quantitative easing. His views on inflation and interest rates will be scrutinized intensely in his first public appearances as chair, with traders and economists seeking signals about whether he intends to maintain the current policy trajectory or shift course. The yield curve and the dollar have already shown sensitivity to developments surrounding the Fed leadership transition in recent weeks.",
+      "The confirmation sets the stage for a pivotal period in US monetary policy, with the Federal Open Market Committee facing decisions that will reverberate through mortgage rates, business borrowing costs, and consumer spending for years to come. Global central banks, including the European Central Bank — which is itself reassessing the likelihood of a June rate move — will be watching Warsh\'s early signals carefully. How he navigates the intersection of political pressure, stubborn inflation, and slowing growth may well define the economic legacy of this era."
     ],
-    image: "https://i.guim.co.uk/img/media/0ec06bbd14696444370d10765c3d43400fadc7d8/645_0_6475_5182/master/6475.jpg?width=1200&quality=85&auto=format&fit=max&s=8bad37b924daab5e5838c04d66566ef5",
-    source: "The Guardian",
-    sourceUrl: "https://www.theguardian.com/business/2026/may/12/uk-borrowing-costs-keir-starmer-bond-yields-pound-dollar-labour"
+    image: "https://static01.nyt.com/images/2026/05/11/multimedia/00dc-warsh-jgtm/00dc-warsh-jgtm-mediumSquareAt3X.jpg",
+    source: "The New York Times",
+    sourceUrl: "https://www.nytimes.com/2026/05/13/us/politics/kevin-warsh-fed-chair-confirmed.html"
   },
   secondary: [
     {
       id: "fn1",
-      title: "US Inflation Jumps to 3.8% as Energy Costs Surge from Iran War",
-      summary: "American inflation has climbed to its highest level since May 2023, driven by surging energy costs linked to the ongoing conflict with Iran.",
+      title: "Cisco Stock Rockets Toward Record High After AI Pivot and Upbeat Earnings",
+      summary: "Cisco announced job cuts to free up investment capital for artificial intelligence, sending its stock surging toward record territory following a strong earnings report.",
       body: [
-        "The latest US inflation reading came in at 3.8%, surprising markets and marking the sharpest acceleration in price pressures in three years. Surging energy costs, directly tied to the war in Iran and its disruption of regional oil supply chains, are identified as the primary driver of the jump, with consumers feeling the squeeze at the pump and in their utility bills.",
-        "The hotter-than-expected print has significant implications for Federal Reserve policy, potentially complicating any near-term pivot toward interest rate cuts and reigniting debate about whether the central bank has done enough to anchor inflation expectations. Bond markets responded to the news with a sell-off, reflecting fears that elevated rates may need to persist for longer than previously anticipated."
+        "Cisco Systems unveiled plans to cut jobs as part of a strategic reallocation of resources toward artificial intelligence infrastructure, a move that was welcomed enthusiastically by investors. The networking giant paired the announcement with an upbeat earnings report, driving its stock sharply higher and toward record levels.",
+        "The results place Cisco among the broader cohort of S&P 500 companies this earnings season that have reported soaring sales and improving profit margins, particularly those with exposure to AI-oriented hardware and services. The market\'s reaction reflects growing investor conviction that companies willing to restructure aggressively around AI stand to capture outsized long-term returns."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/f750/live/8172ffc0-4e00-11f1-aa37-6b8846c2f74e.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/c202pgxx89lo?at_medium=RSS&at_campaign=rss",
-      category: "Economics"
+      image: "https://images.mktw.net/im-02582341",
+      source: "MarketWatch",
+      url: "https://www.marketwatch.com/story/cisco-to-cut-jobs-so-it-can-invest-more-in-ai-and-the-stock-rockets-toward-a-record-cf9d09a9?mod=mw_rss_topstories",
+      category: "Markets"
     },
     {
       id: "fn2",
-      title: "eBay Rejects GameStop\'s $55.5bn Takeover Bid as 'Neither Credible Nor Attractive'",
-      summary: "eBay\'s board has firmly rebuffed an unsolicited $55.5 billion acquisition offer from video game retailer GameStop, citing serious doubts about the credibility of its financing.",
+      title: "Cerebras Prices Massive IPO Well Above Range in Fresh Test for AI Investor Appetite",
+      summary: "AI chipmaker Cerebras priced its highly anticipated IPO at $185 per share, significantly above its previously announced range, signalling robust investor demand for AI infrastructure plays.",
       body: [
-        "GameStop made a surprise unsolicited bid for eBay earlier this month, publishing an open letter outlining what it described as a transformative merger proposal, but the online marketplace\'s board wasted little time in dismissing the approach. eBay characterised the offer as neither credible nor attractive, pointing specifically to uncertainty surrounding how GameStop intended to finance a deal of such enormous scale.",
-        "The rejected bid represents one of the more audacious corporate manoeuvres in recent memory, given the vast gulf between GameStop\'s own market capitalisation and the price it proposed to pay for eBay. The episode is likely to draw renewed scrutiny of GameStop\'s strategic direction and the credibility of its leadership as it continues to search for a viable long-term business model beyond its origins as a bricks-and-mortar video game retailer."
+        "Cerebras Systems priced its initial public offering at $185 a share late Wednesday, a figure that came in well above the top of its previously announced $150–$160 range and pointing to strong institutional appetite for the AI infrastructure sector. The listing is one of the most closely watched technology IPOs of the year, given Cerebras\'s position as a developer of large-scale AI processing chips designed to compete with dominant players in the space.",
+        "The pricing will serve as a significant data point for the broader IPO market, testing whether investor enthusiasm for artificial intelligence can sustain premium valuations even as macroeconomic headwinds — including elevated inflation and geopolitical uncertainty — weigh on risk sentiment more generally. A strong debut could open the door for a wave of AI-adjacent companies currently waiting in the wings to proceed with their own public listings."
       ],
-      image: "https://images.pexels.com/photos/17122728/pexels-photo-17122728.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/business/2026/may/12/gamestop-bid-for-ebay-rejected-as-neither-credible-nor-attractive",
-      category: "Mergers & Acquisitions"
+      image: "https://images.mktw.net/im-09861778",
+      source: "MarketWatch",
+      url: "https://www.marketwatch.com/story/cerebrass-ipo-will-be-fresh-a-test-of-investor-excitement-for-ai-infrastructure-3499a2a5?mod=mw_rss_topstories",
+      category: "Markets"
     },
     {
       id: "fn3",
-      title: "Stocks Swing to Gains as Dip Buyers Step In Despite Inflation Shock",
-      summary: "Equity markets recovered from early weakness to post gains as dip buyers returned, even as faster-than-expected US inflation data sent government bonds lower globally.",
+      title: "Japan\'s Eneos Acquires Chevron\'s Asian Oil Assets in $2.2 Billion Deal",
+      summary: "Japanese refiner Eneos Holdings has agreed to purchase Chevron\'s refining and retail assets across the Asia-Pacific region for approximately $2.17 billion, significantly expanding its regional footprint.",
       body: [
-        "Stock markets swung from an initial sell-off to end in positive territory as investors willing to buy the dip stepped in, betting that a record-breaking equity rally still has further room to run despite the inflationary headwinds. Chipmakers, which led the early decline, recovered ground as the session progressed, reflecting continuing underlying confidence in the technology sector\'s long-term earnings potential.",
-        "Government bonds told a different story, with yields rising from Australia to Japan as markets followed US Treasuries lower in the wake of the inflation surprise, reflecting a global reassessment of how long central banks may need to keep monetary policy restrictive. The divergence between buoyant equities and a rattled bond market highlights the unusually complex crosscurrents investors are navigating as geopolitical risks, inflation and corporate earnings all compete for attention."
+        "Eneos Holdings, Japan\'s largest refiner, has struck a deal to acquire a portfolio of Chevron\'s refining and retail assets across Asia-Pacific for $2.17 billion, in one of the more substantial energy sector transactions of the year. The acquisition will meaningfully extend Eneos\'s operational reach across a region that remains central to global oil demand growth.",
+        "The deal reflects a broader trend of Western energy majors rationalising their downstream assets in Asia as they redirect capital toward core operations and energy transition investments, creating acquisition opportunities for regional players with the balance sheet capacity to absorb them. For Eneos, the purchase represents a strategic bet on sustained Asian fuel demand at a time when oil markets remain elevated due to geopolitical tensions in the Middle East."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/f750/live/8172ffc0-4e00-11f1-aa37-6b8846c2f74e.jpg",
+      image: "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxKYXBhbiU1Q3xlbnwwfDB8fHwxNzc4NzM1MDIwfDA&ixlib=rb-4.1.0&q=80&w=1080",
       source: "Bloomberg Markets",
-      url: "https://www.bloomberg.com/news/articles/2026-05-12/asian-stocks-under-pressure-as-us-inflation-rises-markets-wrap",
-      category: "Markets"
+      url: "https://www.bloomberg.com/news/articles/2026-05-14/japan-s-eneos-buys-chevron-s-asian-oil-assets-for-2-2-billion",
+      category: "Mergers & Acquisitions"
     }
   ]
 };

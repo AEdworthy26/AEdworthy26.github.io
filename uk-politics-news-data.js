@@ -1,60 +1,60 @@
 // uk-politics-news-data.js
-// Auto-updated 2026-05-13 — do not edit manually
+// Auto-updated 2026-05-14 — do not edit manually
 
 var UK_POLITICS_NEWS = {
-  date: "2026-05-13",
+  date: "2026-05-14",
   main: {
-    title: "Starmer Fights to Survive as Labour Leadership Crisis Deepens Ahead of King\'s Speech",
+    title: "Starmer Warns of 'Chaos' as Wes Streeting Prepares to Launch Labour Leadership Challenge",
     category: "Politics",
     content: [
-      "Keir Starmer is fighting for his political survival after heavy election losses triggered a significant revolt within the Labour Party, with the prime minister telling Cabinet colleagues on Tuesday that he would not be resigning and that a formal leadership contest had not been triggered. The crisis has reached a critical point, with several allies of Health Secretary Wes Streeting resigning from their ministerial posts in an apparent move to destabilise the government. Starmer\'s defiant message to Cabinet was clear: he intended to remain in Downing Street and would challenge those who wished to remove him to make their move official.",
-      "Despite the pressure mounting from within his own party, Starmer appeared to gain a degree of breathing room on Tuesday after a challenge from Wes Streeting failed to fully materialise. Downing Street insiders suggested that the Health Secretary did not yet command sufficient support among Labour MPs to mount a credible leadership push, leaving the immediate threat to the prime minister reduced but far from extinguished. The episode nevertheless laid bare the deep divisions within the Labour parliamentary party, divisions that have been building since the local election results delivered a brutal verdict on the government\'s first year in office.",
-      "Over 111 Labour MPs signed a letter calling for unity and urging the party not to descend into a leadership battle at such a critical moment, providing Starmer with a significant public show of support. The letter warned that infighting was exactly what the country did not need and called on colleagues to focus on regaining public trust. However, the fact that such a letter was deemed necessary at all underscored the scale of the crisis engulfing the prime minister, with scores of other MPs remaining conspicuously absent from the list of signatories.",
-      "Starmer is now pinning his hopes on Wednesday\'s King\'s Speech to reset the political narrative and demonstrate that his government retains a coherent and ambitious legislative agenda. The speech is expected to include around 35 bills covering housing, immigration, energy and other policy areas, in what Downing Street hopes will be seen as evidence of a functioning and purposeful administration. However, the optics of the occasion have been complicated by reported awkwardness with the Palace over King Charles\'s role in delivering the speech at a time of such evident political turbulence surrounding the prime minister.",
-      "The coming days are likely to prove decisive for Starmer\'s tenure in Downing Street. Wes Streeting was due to hold a face-to-face meeting with the prime minister on Wednesday morning, just hours before the King\'s Speech, in what observers described as a potential showdown over the future direction of the government. Whether Streeting ultimately decides to mount a formal challenge or fall back into line will be one of the most consequential decisions in British politics this year, with the outcome set to shape not only the fate of the prime minister but the direction of the Labour Party for years to come."
+      "Sir Keir Starmer has issued a stark warning that the Labour Party faces 'chaos' if it is plunged into a leadership contest, as Health Secretary Wes Streeting readies himself to resign from the Cabinet and formally trigger a challenge as early as Thursday. The Prime Minister, who delivered his second King\'s Speech just days ago, is facing the most serious internal threat of his tenure, with Streeting understood to have been canvassing support among Labour MPs to determine whether he can command enough backing to force a contest. Starmer has insisted he intends 'to fight to win', framing the looming battle as a test of political stability versus internal party upheaval.",
+      "Streeting\'s decision to move against Starmer has sent shockwaves through Westminster, sparking a frantic scramble on the left of the Labour Party to identify a candidate capable of opposing him in any resulting leadership race. The Health Secretary\'s allies have confirmed that he is prepared to resign his Cabinet post, a move that would formally set the contest in motion under Labour\'s internal rules. Energy Secretary Ed Miliband is also expected to enter the race, according to reports, suggesting the contest could rapidly become a crowded and fiercely contested field.",
+      "The drama has unfolded against the backdrop of the King\'s Speech, in which the government laid out an ambitious legislative agenda covering education, health and the courts — measures that Starmer had hoped would reassert his authority over a restive parliamentary party. Instead, the ceremony served to highlight the gulf between the Prime Minister\'s aspirations and his increasingly fragile grip on power. The juxtaposition of a formal statement of governmental intent and simultaneous briefings about imminent Cabinet resignations was, by any measure, an extraordinary moment in modern British political history.",
+      "Adding further complexity to the crisis is the position of Greater Manchester Mayor Andy Burnham, who has reportedly told Labour MPs to 'hold the line' and assured his supporters that he still has options to return to Westminster. Allies of Burnham had identified several parliamentary seats as potential routes back to the Commons, though reports suggest those prospects have now become considerably less certain. Senior figures including former MP Harriet Harman have urged Starmer to bring Burnham into the Cabinet, arguing that the mayor\'s 'huge talents' could help stabilise the government and broaden its appeal.",
+      "The crisis has also been compounded by the anticipated release of another tranche of so-called 'Mandelson files', which are expected to pile further pressure on the Prime Minister in the coming days. Starmer\'s biographer Tom Baldwin has warned that Labour risks repeating the Conservative Party\'s damaging pattern of cycling through leaders if it ousts him now, arguing there is a 'real chance' of the party changing leader again before the next general election. With the outcome of the next 24 hours deeply uncertain, political analysts across Westminster are in agreement on one thing: this is a defining moment not just for Starmer, but for the future direction of the Labour Party itself."
     ],
-    image: "https://static.independent.co.uk/2026/05/12/12/57/starmer-phillips.jpeg?width=1200&auto=webp&crop=3%3A2",
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/0a6b/live/5b767670-4f0f-11f1-bbd7-4dd9e7da3820.jpg",
     source: "BBC News",
-    sourceUrl: "https://www.bbc.com/news/articles/c8jv1mzzkjgo?at_medium=RSS&at_campaign=rss"
+    sourceUrl: "https://www.bbc.com/news/articles/cvgzv4eqdrno?at_medium=RSS&at_campaign=rss"
   },
   secondary: [
     {
       id: "uk1",
-      title: "King\'s Speech to Feature 35 Bills as Starmer Bids to Regain Initiative",
-      summary: "Keir Starmer\'s government will set out a sweeping legislative programme on Wednesday, including bills on housing, immigration and energy, in an attempt to reassert its authority amid a mounting leadership crisis.",
+      title: "King\'s Speech Sets Out Government\'s Legislative Agenda for New Parliamentary Session",
+      summary: "King Charles has delivered the King\'s Speech outlining Keir Starmer\'s plans for new laws covering education, health and the courts in the next session of Parliament.",
       body: [
-        "The King\'s Speech will outline around 35 pieces of proposed legislation for the next parliamentary session, spanning a wide range of policy areas including housing reform, immigration and clean energy — an ambitious package designed to project governmental competence at a moment of acute political vulnerability for the prime minister. The sheer volume of planned bills is intended to signal that Starmer\'s administration remains focused on delivery despite the internal turmoil consuming Westminster.",
-        "The speech represents Starmer\'s most significant opportunity to steady the ship and remind both his party and the public why Labour was elected in the first place. However, the political backdrop of a rebellion within his own parliamentary party means the legislative announcements may struggle to cut through the noise of the ongoing leadership speculation."
+        "The monarch read out the government\'s legislative programme for the coming parliamentary year, with Starmer\'s agenda spanning reforms to the education system, the National Health Service and the courts. The speech was intended as a show of governmental confidence and direction at a moment of acute political turbulence for the Prime Minister.",
+        "The King\'s Speech traditionally marks the formal opening of a new parliamentary session and sets the tone for the government\'s priorities, but this year\'s address was overshadowed by mounting speculation about Starmer\'s own political survival and the imminent threat of a leadership challenge from within his own Cabinet."
       ],
       image: "https://images.unsplash.com/photo-1513307878903-4c4a7cab5b9a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxLaW5nJTVDfGVufDB8MHx8fDE3Nzg2NDg1MTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/politics/2026/may/12/starmer-bills-kings-speech",
+      source: "BBC News",
+      url: "https://www.bbc.com/news/articles/clypj215wgpo?at_medium=RSS&at_campaign=rss",
       category: "Politics"
     },
     {
       id: "uk2",
-      title: "Who Could Replace Starmer? The Potential Labour Leadership Challengers Profiled",
-      summary: "Andy Burnham, Angela Rayner and Wes Streeting have all emerged as potential candidates to succeed Keir Starmer should a formal Labour leadership contest be triggered.",
+      title: "Farage Faces Standards Probe Over £5 Million Gift from Crypto Billionaire",
+      summary: "Reform UK leader Nigel Farage is facing a parliamentary standards investigation into whether he properly declared a £5 million gift from a cryptocurrency billionaire.",
       body: [
-        "As speculation swirls around Keir Starmer\'s future, attention has turned to the figures who could credibly put themselves forward in a leadership contest, with Andy Burnham, Angela Rayner and Wes Streeting identified as the most prominent potential candidates. Each brings a distinct political brand and a different vision for the direction of the Labour Party, and any contest between them would be fiercely contested.",
-        "Burnham, currently serving as Mayor of Greater Manchester, has long been seen as a figure capable of reconnecting Labour with its traditional working-class base, while Streeting represents a more modernising strand of the party. Harriet Harman has already publicly urged Starmer to bring Burnham into the Cabinet, describing him as possessing 'huge talents' that should be harnessed by the government regardless of the leadership question."
+        "The probe will examine whether Farage, who leads the right-wing Reform UK party, fulfilled his obligations under parliamentary rules by declaring the substantial gift from the crypto billionaire. The investigation adds to the political pressures facing the Reform leader at a time when his party has been positioning itself as a challenger to the established parties.",
+        "Standards investigations into MPs and party leaders carry significant reputational risks and can distract from day-to-day political activity; the probe is likely to draw considerable public and media scrutiny given both the size of the alleged gift and Farage\'s prominent national profile."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/a6bc/live/a2d47da0-4e24-11f1-ac78-2112837ce2aa.jpg",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/e6be/live/03a17820-4eef-11f1-b640-47713d08220e.jpg",
       source: "BBC News",
-      url: "https://www.bbc.com/news/articles/c3e2n7xn14xo?at_medium=RSS&at_campaign=rss",
+      url: "https://www.bbc.com/news/articles/c0l26g01703o?at_medium=RSS&at_campaign=rss",
       category: "Politics"
     },
     {
       id: "uk3",
-      title: "Charities Urge Labour to Fulfil Clean Air Act Promise Ahead of King\'s Speech",
-      summary: "More than 60 charities have called on the government to include a new Clean Air Act in Wednesday\'s King\'s Speech, arguing it should ban wood burning and clear diesel vehicles from roads.",
+      title: "Plaid Cymru\'s Rhun ap Iorwerth Sworn In as First Minister of Wales",
+      summary: "Plaid Cymru leader Rhun ap Iorwerth has been officially sworn in as the new First Minister of Wales, ending Labour\'s 27-year dominance of the Senedd.",
       body: [
-        "A coalition of over 60 charities has written to the government ahead of the King\'s Speech demanding that ministers introduce a Clean Air Act that would ban domestic wood burning, remove diesel vehicles from roads and compel local councils to take meaningful action on pollution. Labour had held out the prospect of such legislation while in opposition, but the policy did not make it into the party\'s general election manifesto.",
-        "The charities argue that the King\'s Speech presents a crucial opportunity for the government to honour the spirit of its environmental commitments and take decisive action on a public health issue that claims tens of thousands of lives in the UK each year. Whether the legislation makes it into the final programme will be closely watched by environmental campaigners who feel the government has so far fallen short on its green promises."
+        "The swearing-in of ap Iorwerth marks a historic shift in Welsh politics, with Plaid Cymru breaking Labour\'s stranglehold on the devolved government that had persisted since the Senedd was established. The change in government in Cardiff represents one of the most significant results in devolved Welsh politics since devolution began.",
+        "Labour\'s loss of power in Wales adds another layer of difficulty for the party nationally, as it grapples simultaneously with a leadership crisis at Westminster and the erosion of its traditional strongholds across the United Kingdom."
       ],
-      image: "https://i.guim.co.uk/img/media/9842b09cdc5bee85f2faf612a76190bd7543b35e/366_0_5000_4000/master/5000.jpg?width=1200&quality=85&auto=format&fit=max&s=2a0f322eff8734ff690e48183b922df5",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/environment/2026/may/13/labour-must-fulfil-promise-to-introduce-clean-air-act-charities-urge",
+      image: "https://images.pexels.com/photos/36605387/pexels-photo-36605387.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      source: "Sky News",
+      url: "https://news.sky.com/story/plaid-cymru-leader-rhun-ap-iorwerth-named-first-minister-of-wales-after-labour-humbled-13543167",
       category: "Politics"
     }
   ]
