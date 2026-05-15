@@ -1,19 +1,19 @@
 // reads-data.js
-// Auto-updated 2026-05-14 — do not edit manually
+// Auto-updated 2026-05-15 — do not edit manually
 
 var READS_DATA = {
-  date: "2026-05-14",
+  date: "2026-05-15",
   book: {
-    title: "The Remains of the Day",
-    author: "Kazuo Ishiguro",
-    year: 1989,
-    genres: ["Literary Fiction", "Character Study", "British Literature"],
-    desc: "Stevens, the consummate English butler, embarks on a rare motoring holiday through the West Country and spends the journey examining the choices that defined — and quietly destroyed — his life. Ishiguro constructs the novel as a masterclass in unreliable narration: Stevens believes he is reminiscing fondly, but the reader watches with mounting sadness as dignity curdles into self-deception and professional devotion reveals itself as a flight from feeling. The prose is formal, measured, and devastatingly precise, mirroring a man who has polished away every rough human edge. Few novels have captured so acutely the tragedy of a life half-lived, of loyalty misplaced and love quietly surrendered in the name of duty.",
-    whyRead: "With Ishiguro\'s Nobel legacy still resonating and questions of institutional loyalty and personal integrity everywhere in public life, this slim, perfect novel lands with the force of a philosophical provocation dressed as a country drive.",
-    rating: 4.2,
+    title: "The Hours",
+    author: "Michael Cunningham",
+    year: 1998,
+    genres: ["Literary Fiction", "Contemporary Fiction", "LGBTQ+"],
+    desc: "Three women in three different eras — Virginia Woolf composing Mrs Dalloway in 1920s Richmond, a 1950s Los Angeles housewife quietly suffocating inside a perfect life, and a New York editor in the 1990s navigating love and loss during the AIDS crisis — are braided together in a single luminous day. Cunningham\'s prose is breathtakingly controlled, each sentence carrying the weight of ordinary moments rendered extraordinary, and the cumulative effect is something closer to music than conventional narrative. The novel won the Pulitzer Prize and the PEN/Faulkner Award, and remains one of the most elegant achievements in late-twentieth-century American fiction. It asks, with devastating gentleness, what it means to choose a life, to want more from it, or to relinquish it altogether.",
+    whyRead: "As the days lengthen and the world hums with ordinary urgency, The Hours is a perfect reminder of how much drama lives inside a single afternoon — and why great fiction makes that feel like everything.",
+    rating: 3.9,
     ratingSource: "Goodreads",
-    ratingCount: "400,000+",
-    coverUrl: "https://covers.openlibrary.org/b/id/95742-L.jpg",
-    amazonUrl: "https://www.amazon.co.uk/dp/1405880449"
+    ratingCount: "200,000+",
+    coverUrl: "https://covers.openlibrary.org/b/id/223032-L.jpg",
+    amazonUrl: "https://www.amazon.co.uk/dp/5941450168"
   }
 };

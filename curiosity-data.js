@@ -1,108 +1,108 @@
 // curiosity-data.js
-// Auto-updated 2026-05-14 — do not edit manually
+// Auto-updated 2026-05-15 — do not edit manually
 
 var CURIOSITY_DATA = {
-  date: "2026-05-14",
+  date: "2026-05-15",
   mainArticle: {
-    title: "The Plague of Bronze: How the Late Bronze Age Collapse Erased Civilisation in a Generation",
-    subject: "Late Bronze Age Collapse",
-    subtitle: "Around 1200 BC, every great civilisation ringing the eastern Mediterranean — Egypt, the Hittites, Mycenae, Ugarit — buckled and fell within fifty years. Nobody has ever fully explained why.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Bronze_Age_End.svg/1280px-Bronze_Age_End.svg.png",
+    title: "The Money That Grew on Trees: How the Bark of a Peruvian Shrub Saved Millions and Built Empires",
+    subject: "Cinchona bark and quinine",
+    subtitle: "Hidden in the cloud forests of the Andes was a remedy that would decide the fate of European empires, reshape world history, and launch the first great quest for a synthetic medicine.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/6/66/Cinchona.pubescens01.jpg",
     readTime: "10 min",
     content: [
       {
         type: "paragraph",
-        text: "There are moments in history when the world does not merely change — it ends. Sometime around 1200 BC, the most sophisticated, interconnected network of civilisations the ancient world had yet produced simply stopped existing. The Hittite Empire, which had once traded blows with Egypt and commanded the Anatolian plateau for centuries, vanished so completely that its very existence was forgotten until the twentieth century. The great Mycenaean palace cities of Greece — Tiryns, Pylos, Mycenae itself — were burned, abandoned, or both. In the space of roughly fifty years, the Bronze Age collapsed, and the darkness that followed lasted three centuries."
+        text: "Of all the treasures the Spanish extracted from the Americas, few proved more consequential than a wrinkled, bitter-tasting strip of reddish bark from the eastern slopes of the Andes. For untold generations, the Quechua peoples of Peru had known that the powdered bark of the cinchona tree could break a killing fever. When Jesuit missionaries observed this remedy in the 1630s and carried it back to Europe, they unleashed a medical revolution that would, within two centuries, determine which continents European armies could conquer and which would remain forever beyond their reach."
       },
       {
         type: "paragraph",
-        text: "What makes this catastrophe uniquely compelling — and uniquely maddening — is that it has never been satisfactorily explained. Historians and archaeologists have proposed earthquakes, climate change, drought, internal rebellion, epidemic disease, and the arrival of mysterious raiders called the Sea Peoples. Some argue for all of them at once. The Bronze Age Collapse is the ancient world\'s greatest cold case, and the closer scholars look, the more complicated the picture becomes."
+        text: "Malaria had stalked humanity since the dawn of civilisation. Ancient Egyptian papyri describe its cyclical fevers; Hippocrates catalogued its patterns; Roman poets blamed the poisonous air — 'mal aria' — rising from the Pontine Marshes. By the seventeenth century, it killed popes in Rome, kings in France, and ordinary soldiers in their tens of thousands. No one understood what caused it, and no one had the faintest idea how to stop it. Then a bark from a tree most Europeans had never heard of changed everything."
       },
       {
         type: "heading",
-        text: "A World of Extraordinary Complexity"
+        text: "The Countess, the Jesuits, and the Politics of a Miracle Cure"
       },
       {
         type: "paragraph",
-        text: "To understand what was lost, you must first understand what existed. By 1300 BC, the eastern Mediterranean was home to an international order of remarkable sophistication. Egypt under Ramesses II, the Hittites under Hattusili III, the Mycenaean Greeks, the Kassites of Babylon, the Assyrians, and the merchant city-states of the Levantine coast all participated in a web of diplomacy, trade, and cultural exchange that would not be equalled for another thousand years. Royal correspondence — the Amarna Letters, discovered in Egypt in 1887 — shows these kings addressing each other as brothers, exchanging gold, grain, lapis lazuli, and diplomatic brides with the casual ease of long-established partners."
+        text: "The most famous story surrounding cinchona\'s arrival in Europe involves Ana de Osorio, Countess of Chinchón and wife of the Viceroy of Peru, who according to legend was cured of a dangerous fever in Lima around 1638 by local bark. The tale is probably embellished — her diary, recovered in the twentieth century, mentions no such episode — but it gave the tree its enduring scientific name. What is certain is that Jesuit priests were the first systematic distributors of the remedy in Europe, earning it the nicknames 'Jesuit\'s bark' and 'Cardinal\'s powder.'"
       },
       {
         type: "paragraph",
-        text: "The city of Ugarit, on the Syrian coast, is the best window we have into this vanished world. A cosmopolitan trading hub of perhaps eight thousand people, it housed merchants from Egypt, Cyprus, the Aegean, and Mesopotamia. Its scribes wrote in at least eight languages. Its warehouses held copper ingots from Cyprus, tin from Afghanistan, grain from Egypt, and olive oil from the Aegean. It was, in the vocabulary of modern economists, a node in a globalised supply chain — and it is precisely its interconnectedness that made it, and everywhere like it, so catastrophically vulnerable."
+        text: "The bark\'s introduction was not universally welcomed. Protestant physicians in England and northern Europe viewed anything associated with Jesuits with deep suspicion, and for decades some refused to prescribe it on ideological grounds. Oliver Cromwell himself allegedly refused the Jesuit remedy during his fatal illness in 1658, dying of what was almost certainly malaria — a decision that may have altered the course of English history. The bark thus arrived in Europe entangled not only in medicine but in the fiercest religious and political controversies of the age."
       },
       {
         type: "heading",
-        text: "The Letters That Capture a World Dying"
+        text: "Robert Talbor and the Secret Remedy That Conquered Courts"
       },
       {
         type: "paragraph",
-        text: "Among the most haunting documents to survive antiquity are a series of clay tablets found at Ugarit, apparently written in the final weeks before the city\'s destruction. In one, the king of Alashiya (probably Cyprus) writes urgently to the king of Ugarit: 'Enemy ships have been sighted at sea.' In another, Ugarit\'s own king writes to the king of the Hittites pleading for troops and grain, explaining that his soldiers and chariots have been sent away and the city is defenceless. The Hittite king\'s reply is bleak: he has nothing to send. These tablets were never dispatched. They were found still in the kiln, waiting to be fired, when archaeologists unearthed the ruins of the city in the 1930s."
+        text: "The man who finally broke the resistance was an unlikely figure: Robert Talbor, an English apothecary\'s apprentice with no formal medical degree, who in the 1670s began advertising himself as a specialist in curing fevers. His secret remedy worked spectacularly. He cured King Charles II of England of a dangerous ague, was knighted for it, and was then summoned to Paris, where he cured the young son of Louis XIV at a moment when the boy\'s life was thought hopeless. The French court was transfixed."
       },
       {
         type: "paragraph",
-        text: "Ugarit was burned around 1185 BC and never rebuilt. The fire was so intense that it fused mud bricks into a glassy mass. Grain stores were discovered still in their containers, suggesting the destruction was sudden and total, leaving no survivors with the will or ability to reclaim what had been left behind. Across the region, the pattern repeats itself: Mycenae, Tiryns, Pylos, Hazor, Megiddo, Ashdod — all show evidence of burning, abandonment, or dramatic population decline within a few decades of each other."
+        text: "Louis XIV bought Talbor\'s secret formula for 3,000 gold crowns and a pension for life — to be revealed only after Talbor\'s death. When Talbor died in 1681 and the formula was published, the secret turned out to be exactly what the medical establishment had long mocked: cinchona bark, dissolved in wine to mask the bitterness. The most powerful monarch in Europe had paid a fortune to be told that his physicians' contempt for a colonial plant remedy had been catastrophically wrong."
       },
       {
         type: "heading",
-        text: "The Sea Peoples: Raiders, Refugees, or Myth?"
+        text: "Quinine: Isolating the Ghost in the Bark"
       },
       {
         type: "paragraph",
-        text: "Egyptian records, particularly those of Ramesses III at Medinet Habu, describe massive invasions by coalitions of seafaring peoples around 1177 BC. The inscriptions are triumphalist — Ramesses claims to have repelled them — but the very fact that he needed to record the victory so grandly suggests the threat was genuine and severe. The so-called Sea Peoples have been identified tentatively as migrants from the Aegean, Anatolia, and possibly even Sicily and Sardinia, though no consensus exists on their precise origins. Their names — the Peleset, the Tjeker, the Shekelesh, the Denyen — tantalize scholars who have tried, with limited success, to match them to known Bronze Age peoples."
+        text: "For nearly two centuries, cinchona bark was used as a crude powder or extract, with wildly varying results depending on the quality and species of bark. The breakthrough came in 1820 in Paris, when two young French chemists — Pierre Joseph Pelletier and Joseph Bienaimé Caventou — isolated the active compound from the bark and named it quinine. It was one of the landmark moments in the history of pharmacology: for the first time, a specific disease-fighting chemical had been extracted from a natural source and identified in pure form. The implications were enormous."
       },
       {
         type: "paragraph",
-        text: "For most of the twentieth century, the Sea Peoples were cast as the principal villains of the collapse — a barbarian tsunami that overwhelmed cultured civilisations. Modern scholarship is considerably more ambivalent. Many archaeologists now believe the Sea Peoples were not so much a cause as a symptom: populations displaced by the same forces that were simultaneously destabilising the civilisations they attacked. The collapse, on this reading, was systemic rather than military — a feedback loop of failed harvests, broken trade networks, and political disintegration into which raiders, migrants, and opportunists poured, accelerating what was already falling."
+        text: "With pure quinine available in standardised doses, European armies and colonial administrators could for the first time venture into malarial regions with a fighting chance of survival. The famous prescription — quinine dissolved in carbonated water and sweetened with sugar and gin to disguise the bitterness — gave the world the gin and tonic, one of history\'s most civilised accidents. But its real significance was darker: quinine unlocked sub-Saharan Africa and Southeast Asia to sustained European colonisation. The drug that saved lives also, in a very real sense, enabled conquest."
       },
       {
         type: "heading",
-        text: "Climate, Drought, and the Fragility of Complexity"
+        text: "The Race to Secure the Tree — and the Greatest Botanical Heist in History"
       },
       {
         type: "paragraph",
-        text: "Since the early 2010s, climate science has moved to the centre of the debate. Pollen data recovered from lake sediments in Turkey, Israel, and the Aegean reveal a sustained drought across the eastern Mediterranean beginning around 1200 BC and lasting for several decades. Isotopic analysis of ancient teeth and grain residues confirms that harvests failed repeatedly and catastrophically in exactly the regions and exactly the decades that saw civilisations crumble. The climate signal is now too strong to dismiss, though it remains one thread in what is clearly a multi-causal catastrophe."
+        text: "By the mid-nineteenth century, European powers recognised that whoever controlled cinchona controlled tropical empire. Peru and Bolivia, acutely aware of the bark\'s value, made it illegal to export living plants or seeds. Britain and the Netherlands launched covert operations to smuggle cinchona out of South America. The most successful was Clements Markham, a British geographer who in 1860 trekked through the Peruvian Andes disguised as a traveller, gathered cinchona seedlings, and spirited them out under the authorities' noses — a feat of botanical espionage that changed the global balance of power."
       },
       {
         type: "paragraph",
-        text: "The historian Eric Cline, whose 2014 book '1177 B.C.' popularised the systems-collapse theory for a general audience, draws an explicit parallel to the modern world. Bronze Age civilisation was not undone by any single catastrophe, he argues, but by the fragility inherent in complexity itself. A highly integrated, specialised, interdependent system — much like the global economy of the twenty-first century — can be more vulnerable than a simple one, because a failure in any one part propagates rapidly through all the others. The Bronze Age collapse was, in this reading, the ancient world\'s first globalisation crisis."
+        text: "The Dutch proved even more effective. Using seeds partly obtained from the English attempts, Dutch botanists in Java spent decades selectively breeding cinchona until they developed varieties with quinine concentrations ten times higher than wild Andean trees. By 1900, the Dutch East Indies supplied more than ninety percent of the world\'s quinine. A Peruvian forest medicine had been transplanted to Southeast Asia and turned into an industrial pharmaceutical monopoly. The Andes had been quietly plundered of one of their greatest secrets."
       },
       {
         type: "heading",
-        text: "What Was Lost — and What Survived"
+        text: "Quinine in Wartime: When a Drug Decided Campaigns"
       },
       {
         type: "paragraph",
-        text: "The scale of what was lost is difficult to fully comprehend. Writing systems disappeared: Linear B, the script of the Mycenaean Greeks, vanished with the palace civilisation that had produced it, and Greece would not be literate again for four hundred years. Urban populations across the Aegean and Anatolia collapsed by estimates of fifty to ninety percent. Long-distance trade in the exotic materials that had made Bronze Age culture possible — tin, copper, lapis lazuli, ebony — dried up for generations. Technologies, administrative systems, artistic traditions, even religious practices were either extinguished or transformed beyond recognition."
+        text: "The strategic importance of quinine crystallised with brutal clarity during the Second World War. When Japan captured the Dutch East Indies in 1942, the Allies lost access to almost the entire global supply of quinine overnight. American and Australian troops in the Pacific and Allied forces in North Africa and Italy suddenly faced malaria as a lethal strategic threat. At certain points in the Pacific campaign, malaria was hospitalising more soldiers than Japanese bullets. The crisis became a scientific emergency that accelerated the synthesis of new anti-malarial drugs on a war footing."
       },
       {
         type: "paragraph",
-        text: "Yet civilisation did not entirely die. Egypt survived, though diminished and inward-looking. Assyria contracted but endured. The Phoenician cities of the Levantine coast — Tyre, Sidon, Byblos — recovered relatively quickly and would go on to build a new maritime trading world in the Iron Age. And from the ruins of Mycenaean Greece, four centuries of slow reconstruction would eventually produce the culture of Homer, Socrates, and the Parthenon. The Iron Age that followed the Bronze Age collapse was in some ways a more democratic, more dispersed world — iron ore is far more widely available than tin and copper, and the new metal gradually put tools and weapons in the hands of people who could never before have afforded bronze."
+        text: "The response produced chloroquine and other synthetic anti-malarials — fulfilling, at last, the dream that had preoccupied chemists since quinine\'s isolation in 1820: to understand the molecule well enough to build it from scratch without any tree. The first total laboratory synthesis of quinine was achieved in 1944 by Robert Woodward and William Doering at Harvard, a feat so chemically complex that it is still celebrated as one of the great triumphs of organic chemistry. The Andean bark had, across three centuries, driven the entire field of synthetic medicine into existence."
       },
       {
         type: "heading",
-        text: "The Mystery That Will Not Resolve"
+        text: "The Legacy Written in Bark"
       },
       {
         type: "paragraph",
-        text: "What makes the Bronze Age Collapse so persistently fascinating is precisely that it resists a clean answer. Every proposed explanation — drought, raiders, earthquakes, internal revolt, disease — is supported by some evidence and undermined by the uncomfortable fact that civilisations have survived all of these things individually before. The uniqueness of 1200 BC seems to lie in the collision of multiple stresses upon a system that had grown too interconnected and too specialised to absorb them. It is a warning written in the ruins of palaces and the ash layers of burned cities, and it is addressed, perhaps uncomfortably, not only to the ancient world but to our own."
+        text: "Today, despite a suite of synthetic alternatives, quinine remains in use — in intravenous form for severe malaria cases where other drugs have failed, and in diluted form in tonic water on every bar in the world. Malaria still kills hundreds of thousands of people annually, mostly children in sub-Saharan Africa, reminding us that the story is far from over. But the cinchona bark\'s three-hundred-year journey — from Andean cloud forest to Jesuit pharmacy to royal courts to colonial conquest to total chemical synthesis — is a parable about how a single natural compound can simultaneously heal and harm, liberate and subjugate, depending entirely on who controls it."
       },
       {
         type: "paragraph",
-        text: "The clay tablets of Ugarit, those desperate, unsent letters, remain the most human document of the catastrophe. They show us not grand forces or abstract systems but specific people — a king, frightened, watching enemy ships gather on the horizon, writing to an ally who had nothing left to give. The Bronze Age did not end with a manifesto or a declaration. It ended in silence: a kiln full of clay, a city full of ash, and letters that were never read."
+        text: "Few substances have so thoroughly shaped the modern world without ever becoming truly famous. The cinchona tree toppled no empires by force, fought in no battles, signed no treaties. It simply offered its bark to whoever came looking — and the world was never the same. That the drink you order on a warm evening still contains a ghost of the molecule that decided the fate of continents is one of history\'s quieter jokes."
       }
     ]
   },
   personOfTheDay: {
-    name: "Enheduanna",
-    lifespan: "c. 2285–2250 BC",
-    category: "Literature & Religion",
-    image: "https://upload.wikimedia.org/wikipedia/commons/3/3d/Enheduanna%2C_daughter_of_Sargon_of_Akkad.jpg",
-    bio: "Enheduanna is the earliest named author in human history — a distinction that belongs not to a Greek philosopher or a Roman poet but to a Sumerian high priestess who lived in the ancient city of Ur more than four thousand years ago. Daughter of Sargon of Akkad, the world\'s first empire-builder, she was appointed High Priestess of the moon god Nanna at Ur, a position of immense religious and political power that her father almost certainly created specifically for her as a tool of imperial unification. She held the office for decades, outlasting her father\'s reign and navigating the treacherous politics of his successors.\n\nWhat sets Enheduanna apart from the vast anonymous mass of ancient history is that we know her name, her face — a carved alabaster disc portrait survives showing her in a ceremonial procession — and her words. She composed hymns to the goddess Inanna of such lyrical power and theological sophistication that they were still being copied by scribal students five hundred years after her death. Her great works, the 'Hymn to Inanna' and the autobiographical lament 'The Exaltation of Inanna,' describe her own political crisis — a usurper briefly overthrew her and expelled her from Ur — with a personal voice and emotional intensity unlike almost anything else in ancient literature.\n\nHer theological contribution was equally remarkable. Enheduanna developed and systematised the mythology of Inanna, elevating the goddess from a local fertility deity to the supreme cosmic force governing love, war, and the descent into the underworld. Scholars believe her literary reimagining of Inanna profoundly shaped the subsequent development of Mesopotamian religion, and some have traced her influence on later goddess traditions as far as the Greek Aphrodite and the Roman Venus. She was, in effect, not merely a recorder of religion but one of its architects.\n\nFor most of Western history, Enheduanna was completely unknown, her works buried in untranslated clay tablets scattered across museum collections. Her rediscovery in the mid-twentieth century, largely through the work of the Assyriologist William Hallo, was one of the great revelations of modern scholarship. She reminds us that the very concept of individual authorship — the idea that a specific human being made something with their mind and attached their name to it — did not begin in Athens or Florence but in the temple complex of ancient Ur, with a woman who looked at the infinite sky and found words worthy of it."
+    name: "Pierre Joseph Pelletier",
+    lifespan: "1788–1842",
+    category: "Science & Medicine",
+    image: "https://upload.wikimedia.org/wikipedia/commons/5/54/Pierre_Joseph_Pelletier.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    bio: "Pierre Joseph Pelletier was born in Paris in 1788, the son of a pharmacist, and followed his father into the study of chemistry and natural substances at a time when the discipline was being transformed by the revolutionary work of Lavoisier\'s successors. He trained at the École de Pharmacie and spent his entire career there, rising to become one of its most distinguished professors. His genius lay in a meticulous, patient approach to isolating the active constituents of medicinal plants — work that placed him at the very foundation of modern pharmacology.\n\nIn 1817, working with fellow chemist Joseph Bienaimé Caventou, Pelletier isolated chlorophyll from green plants, giving science its first pure sample of the pigment responsible for photosynthesis. But the collaboration\'s greatest triumph came in 1820, when the two men isolated quinine from cinchona bark. It was a moment of profound consequence: for the first time, a discrete chemical compound had been extracted from a plant and identified as the source of its medical power. Pelletier and Caventou published their findings in the Annales de Chimie et de Physique and, remarkably, declined to patent the process, insisting that a remedy of such importance to human welfare should be freely available to all.\n\nThe partnership went on to isolate strychnine, brucine, veratrine, and colchicine — a cascade of alkaloid discoveries that essentially created the field of alkaloid chemistry as a scientific discipline. Each isolation demonstrated the same principle: that the healing or toxic properties of plants resided not in mystical essences but in specific, isolable molecules that could be studied, measured, and eventually manufactured. This insight underpins every pharmaceutical development that followed, from aspirin to antibiotics.\n\nPelletier died in Paris in 1842, internationally celebrated but never quite receiving the recognition his work deserved in the popular imagination. A statue of him and Caventou was eventually erected on the Boulevard Saint-Michel in Paris — a monument to the two young chemists who turned a Peruvian bark into a global medicine. It stands as a reminder that some of the most important moments in human history happen not on battlefields but in quiet laboratories, over boiling flasks and patient observation."
   },
   onThisDay: {
-    headline: "Israel Declares Independence — and a New Nation Is Born in Hours",
-    date: "May 14, 1948",
-    summary: "At four o\'clock in the afternoon on May 14, 1948, in the Tel Aviv Museum on Rothschild Boulevard, David Ben-Gurion rose before a gathering of Jewish leaders, dignitaries, and journalists and read aloud the Israeli Declaration of Independence. The ceremony lasted thirty-two minutes. By midnight, the British Mandate for Palestine would formally expire, and the State of Israel — the first Jewish sovereign state in nearly two thousand years — would exist in international law. Eleven minutes after the declaration was read, the United States, under President Harry Truman, became the first country to grant it de facto recognition. The Soviet Union followed three days later.",
-    image: "https://upload.wikimedia.org/wikipedia/en/2/27/Newnationuk.gif"
+    headline: "The First Airmail Service in the United States Takes to the Sky",
+    date: "May 15, 1918",
+    summary: "On May 15, 1918, the United States Post Office Department launched the world\'s first regular scheduled airmail service, inaugurating flights between Washington D.C., Philadelphia, and New York. The occasion was attended by considerable fanfare: President Woodrow Wilson watched from the polo grounds at Potomac Park as pilot Lieutenant George Boyle prepared to fly the inaugural Washington-to-Philadelphia leg. The ceremony, however, did not go entirely to plan — Boyle\'s aircraft took off in the wrong direction and was forced to land in a field in Maryland after running out of fuel, having covered almost no ground. The New York-to-Washington flight, operated from the other end simultaneously, succeeded without incident.\n\nDespite the inauspicious debut, the airmail service rapidly became one of the great transformative institutions of early aviation. The Post Office took direct control of flights from the Army shortly afterward and began the relentless expansion of routes that would, within a decade, link the entire continental United States by air. The economic pressure to fly mail faster and more reliably drove rapid improvements in aircraft, navigation, and the creation of night-flying infrastructure — including the transcontinental airway beacon system, a chain of rotating lights stretching from New York to San Francisco that made after-dark flying possible for the first time. The airmail experiment thus did more to develop practical aviation in America than almost any other single institution, laying the physical and organisational foundation on which commercial passenger aviation would be built in the following decade.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/July_night_sky_%2835972569256%29.jpg/3840px-July_night_sky_%2835972569256%29.jpg"
   }
 };

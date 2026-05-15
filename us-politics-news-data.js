@@ -1,60 +1,60 @@
 // us-politics-news-data.js
-// Auto-updated 2026-05-14 — do not edit manually
+// Auto-updated 2026-05-15 — do not edit manually
 
 var US_POLITICS_NEWS = {
-  date: "2026-05-14",
+  date: "2026-05-15",
   main: {
-    title: "How the Trump Administration Has Undermined the Fight Against Public Corruption",
+    title: "Supreme Court Preserves Nationwide Access to Abortion Pill Mifepristone via Telehealth and Mail",
     category: "Politics",
     content: [
-      "President Trump has granted pardons to at least 15 former elected officials and their co-conspirators who were convicted of corruption-related offenses over the past year, according to a new NPR investigation. The pardons have drawn sharp criticism from ethics watchdogs and former prosecutors who argue that the president is systematically dismantling one of the federal government\'s core tools for holding public officials accountable. The breadth and pace of these clemency actions have raised questions about the administration\'s commitment to the rule of law and its willingness to shield political allies from legal consequences.",
-      "The pattern represents a significant shift in how the executive branch has historically treated public corruption cases, which have long been prosecuted vigorously regardless of the party affiliation of the accused. By intervening in cases that had already been adjudicated by juries and upheld by courts, the administration is effectively signaling to current and future officeholders that corruption convictions may be reversible through political favor. Legal experts warn that this precedent could have a chilling effect on federal investigators and prosecutors who bring these difficult and resource-intensive cases.",
-      "Critics have pointed out that several of the pardoned individuals had been convicted after exhaustive investigations and trials involving extensive evidence of bribery, fraud, and abuse of public trust. The decision to pardon co-conspirators alongside the principal defendants has been particularly alarming to anti-corruption advocates, as it suggests the clemency is being extended not just to prominent figures but to the full network of individuals involved in corrupt schemes. This broader application amplifies the potential damage to deterrence and public confidence in government accountability.",
-      "The Justice Department under the Trump administration has also been accused of deprioritizing public corruption enforcement more broadly, with some career prosecutors reportedly reassigned or sidelined in favor of political appointees with different enforcement priorities. Together with the pardons, this internal restructuring has left many in the law enforcement community concerned that the institutional capacity to pursue public corruption cases has been materially weakened. Congressional Democrats have called for hearings into the clemency decisions, though prospects for meaningful oversight remain uncertain given the current composition of Capitol Hill.",
-      "The political stakes of this issue extend well beyond individual cases, touching on fundamental questions about democratic accountability and whether powerful figures can act with impunity. Voters in upcoming midterm elections may weigh the administration\'s record on corruption as they evaluate candidates and party platforms. For now, the cumulative effect of these pardons represents one of the most consequential uses of executive clemency power in recent American political history, with implications that legal scholars say will be felt for years to come."
+      "The United States Supreme Court ruled on Thursday that the abortion pill mifepristone can continue to be prescribed online or over the phone and sent through the mail, maintaining nationwide access to medication abortion while litigation over the drug\'s distribution continues through the courts. The decision represents a significant moment in the ongoing legal battle over reproductive rights in the United States, temporarily blocking attempts to restrict how the widely used pill is dispensed. Mifepristone is currently the most common method of terminating pregnancies in the country, making the Court\'s intervention one of the most consequential rulings on abortion access in recent years.",
+      "The case centered on whether states and anti-abortion advocates could successfully challenge the federal approval process and distribution methods for mifepristone, particularly the ability of healthcare providers to prescribe the drug via telehealth appointments and have it shipped directly to patients through the postal system. Louisiana was among the states at the center of the legal fight, with the ruling coming amid a broader national reckoning over how far individual states can go in restricting access to federally approved medications. The Supreme Court\'s decision to preserve access, at least for now, signals that the justices were unwilling to allow sweeping restrictions to take effect while the underlying legal questions remain unresolved.",
+      "For millions of Americans living in states with limited access to in-person abortion services, the ability to obtain mifepristone through telehealth and mail-order pharmacy has been a critical lifeline. The telehealth pathway in particular has allowed patients in rural and underserved areas to consult with physicians remotely and receive the medication without traveling long distances to a clinic, a barrier that has grown significantly since the Supreme Court\'s 2022 Dobbs decision overturned Roe v. Wade. Reproductive rights advocates celebrated Thursday\'s ruling as a vital protection, even as they acknowledged that the legal battle over mifepristone\'s future is far from over.",
+      "The ruling places the Supreme Court once again at the center of the intensely divisive national debate over abortion policy, a debate that has reshaped American electoral politics since Dobbs. Anti-abortion groups and conservative state attorneys general had pushed aggressively for restrictions on mail distribution, arguing that the FDA\'s expanded access rules had bypassed proper regulatory safeguards. The Court\'s decision to maintain the status quo, however temporarily, suggests the justices are proceeding cautiously before making any ruling that could dramatically curtail access to the nation\'s most commonly used abortion method.",
+      "The political reverberations of Thursday\'s decision are expected to be felt well into the 2026 midterm election cycle, as abortion rights have consistently proven to be a mobilizing issue for Democratic voters and a source of internal tension within the Republican Party. Vice President JD Vance and other Republican leaders have sought to focus midterm messaging on issues like Medicaid fraud and border security, but the Supreme Court\'s continued engagement with abortion access ensures the issue will remain front and center in the public debate. With litigation over mifepristone set to continue, further Supreme Court rulings on the matter are likely before the year is out."
     ],
-    image: "https://images.unsplash.com/photo-1603275217764-0c25d8b5132d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxIb3clMjB0aGUlMjBUcnVtcCUyMEFkbWluaXN0cmF0aW9uJTIwSGFzJTIwVW5kZXJtaW5lZCUyMHRoZSUyMEZpZ2h0JTIwQWdhaW5zdCUyMFB1YmxpYyUyMENvcnJ1cHRpb258ZW58MHwwfHx8MTc3ODczNDk4MXww&ixlib=rb-4.1.0&q=80&w=1080",
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/5a4e/live/f7f76ea0-4fe1-11f1-b25f-11d991ea08a3.jpg",
     source: "NPR",
-    sourceUrl: "https://www.npr.org/2026/05/13/g-s1-121485/trump-pardons-public-corruption-justice"
+    sourceUrl: "https://www.npr.org/2026/05/14/nx-s1-5821591/mifepristone-supreme-court-louisiana-telehealth"
   },
   secondary: [
     {
       id: "us1",
-      title: "Denise Powell Wins Democratic Primary in Key Nebraska House Race",
-      summary: "Political organizer Denise Powell has won the Democratic primary for Nebraska\'s 2nd congressional district, defeating State Sen. John Cavanaugh in a closely watched race that could influence control of the House.",
+      title: "Justice Dept. Says Trump-Ordered Citizenship Voting Lists Are Likely Unreliable",
+      summary: "A government lawyer told a federal court that no 'responsible state' should rely on Trump-ordered citizenship lists to update voter rolls.",
       body: [
-        "Denise Powell emerged victorious in a competitive Democratic primary for the Omaha-based 2nd congressional district seat, which is currently held by a retiring Republican and is considered a genuine pickup opportunity for Democrats heading into November. Her win over State Sen. John Cavanaugh sets up what is expected to be a fiercely contested general election in a district that has long been viewed as a bellwether for national political trends.",
-        "Nebraska\'s 2nd district is one of only two congressional districts in the country that can split its electoral vote from the rest of the state, making it a perennial focal point for both parties. A Democratic win here in November would contribute meaningfully to the party\'s effort to retake the House majority, making Powell\'s primary victory a significant moment in the broader midterm landscape."
+        "At a court hearing examining a presidential order aimed at exerting greater federal control over elections, a Justice Department lawyer acknowledged that citizenship lists compiled under the Trump administration\'s directive are likely unreliable and should not be used by states to make changes to their voter rolls. The admission is a striking one, coming from the very administration that ordered the lists to be created, and it raises serious questions about the legal and practical foundation of the underlying executive action.",
+        "The case reflects a broader struggle over who controls the mechanics of American elections, with the Trump administration pushing to expand federal influence over voter registration processes that have traditionally been managed at the state level. Critics of the citizenship list initiative have argued from the outset that the data underpinning such lists is error-prone and could lead to eligible voters being improperly purged, making the Justice Department\'s own concession a potentially significant development in ongoing litigation."
       ],
-      image: "https://static01.nyt.com/images/2026/05/13/multimedia/13pol-powell-hfo-blhc/13pol-powell-hfo-blhc-mediumSquareAt3X.jpg",
-      source: "NPR",
-      url: "https://www.npr.org/2026/05/13/g-s1-121987/denise-powell-democrat-wins-nebraska-second-congressional-district",
-      category: "Elections"
+      image: "https://static01.nyt.com/images/2026/05/14/multimedia/14dc-voting-qlgz/14dc-voting-qlgz-mediumSquareAt3X.jpg",
+      source: "The New York Times",
+      url: "https://www.nytimes.com/2026/05/14/us/politics/trump-citizenship-list-voting.html",
+      category: "Politics"
     },
     {
       id: "us2",
-      title: "The Gerrymandering Wars: How Recent Court Rulings Have Tilted Maps Toward Republicans",
-      summary: "Two recent court decisions have reshaped redistricting battles across multiple US states, giving Republicans a significant advantage in congressional maps ahead of the November midterms.",
+      title: "Vance Travels to Maine to Pitch Medicaid Anti-Fraud Message Ahead of Midterms",
+      summary: "Vice President JD Vance traveled to Maine to deliver a midterm election pitch arguing that only Republicans can root out fraud in public benefit programs.",
       body: [
-        "A pair of consequential court rulings have shifted the balance of power in redistricting fights, with Republicans emerging as the primary beneficiaries of new congressional maps that could lock in favorable electoral terrain for years to come. In Tennessee, for example, new maps have split Memphis — previously represented by a single Democratic congressman — into three separate districts each likely to elect a Republican, dramatically altering the political landscape of the state.",
-        "Legal and political analysts caution that while Republicans currently hold the upper hand, the redistricting wars are far from over, as ongoing litigation and future census cycles could once again redraw the lines. The implications of these map changes extend well beyond the upcoming midterms, potentially influencing the balance of power in the House of Representatives for the better part of a decade."
+        "Vice President JD Vance traveled to Maine on Thursday to deliver a politically charged speech blaming Democrats for fraud in Medicaid and other public benefits programs, framing the Republican Party as the only force capable of cleaning up what he characterized as systemic abuse. The visit came as the administration has halted some Medicaid payments, citing fraud concerns, a move that has drawn sharp criticism from Democrats and advocates for low-income Americans who rely on the program.",
+        "The Maine stop also featured an unexpected moment of bipartisan warmth, with Vance praising Republican Senator Susan Collins, a moderate and occasional critic of President Trump, as he campaigned for Republican House candidate Paul LePage. The carefully managed appearance underscored the GOP\'s strategy of projecting party unity while seeking to energize the base around anti-fraud and fiscal responsibility themes heading into the November midterms."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/5b40/live/2ce04030-4f09-11f1-bbd7-4dd9e7da3820.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/ckgpjqvjyz8o?at_medium=RSS&at_campaign=rss",
+      image: "https://images.pexels.com/photos/5205504/pexels-photo-5205504.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      source: "The New York Times",
+      url: "https://www.nytimes.com/2026/05/14/us/politics/medicaid-fraud-vance-republicans-maine.html",
       category: "Politics"
     },
     {
       id: "us3",
-      title: "White House to Host 9-Hour Prayer Festival Focused on Christian Roots of the United States",
-      summary: "The Trump administration is set to host a sweeping prayer event at the White House featuring Pete Hegseth, Marco Rubio, and Mike Johnson, centered on the claim that America\'s founders intended the nation to be explicitly Christian.",
+      title: "Redistricting Battles Upend Voting Maps Across Multiple States Ahead of Midterms",
+      summary: "Two major court decisions have thrown redistricting fights into turmoil across several US states, with voting experts warning that ordinary voters are bearing the heaviest costs.",
       body: [
-        "Senior administration officials including Defense Secretary Pete Hegseth, Secretary of State Marco Rubio, and House Speaker Mike Johnson are scheduled to speak at a nine-hour prayer festival hosted at the White House, an event organizers have framed as a rededication of the United States to its purported Christian founding principles. The gathering, tied to the country\'s 250th anniversary celebrations, reflects the administration\'s broader effort to align federal institutions with a distinctly religious nationalist vision.",
-        "Critics and civil liberties advocates have raised concerns about the use of the White House as a venue for an event so explicitly rooted in a single religious tradition, arguing it risks blurring the constitutional line between church and state. The event nonetheless underscores the degree to which Christian nationalism has become a prominent and officially embraced element of the current administration\'s political identity."
+        "A pair of recent court rulings have dramatically reshuffled the redistricting landscape across multiple US states, creating confusion over voting maps at a time when both parties are fighting intensely for control of Congress heading into the November midterms. Louisiana has emerged as a central battleground, with the state moving to redraw a Black House district following the Supreme Court\'s recent decision to weaken the Voting Rights Act, a move that voting rights advocates have condemned as a rollback of hard-won protections.",
+        "While much of the political coverage has focused on which party stands to gain from the redrawn maps, voting experts and advocates warn that it is ordinary citizens who will pay the steepest price — dealing with thrown-out ballots, map confusion, and uncertainty about which district they belong to. Republicans, who had feared losing ground in the midterms before the court decisions shifted the playing field, now appear to have secured a structural advantage that could influence not just 2026 but elections well beyond."
       ],
-      image: "https://images.unsplash.com/photo-1763315379063-194ab57a1c25?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxXaGl0ZSUyMEhvdXNlJTIwdG8lMjBIb3N0JTIwOS1Ib3VyJTIwUHJheWVyJTIwRmVzdGl2YWwlMjBGb2N1c2VkJTIwb24lMjBDaHJpc3RpYW4lMjBSb290cyUyMG9mJTIwdGhlJTIwVW5pdGVkJTIwU3RhdGVzfGVufDB8MHx8fDE3Nzg3MzQ5ODF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "Washington Post",
-      url: "https://www.washingtonpost.com/religion/2026/05/13/trump-administration-host-rededicate-250-jubilee-mall-sunday/",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/5b40/live/2ce04030-4f09-11f1-bbd7-4dd9e7da3820.jpg",
+      source: "NPR",
+      url: "https://www.npr.org/2026/05/14/nx-s1-5818507/redistricting-voters-louisiana-alabama-virginia",
       category: "Politics"
     }
   ]

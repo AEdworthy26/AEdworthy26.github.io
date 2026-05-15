@@ -1,61 +1,61 @@
 // financial-news-data.js
-// Auto-updated 2026-05-14 — do not edit manually
+// Auto-updated 2026-05-15 — do not edit manually
 
 var FINANCIAL_NEWS = {
-  date: "2026-05-14",
+  date: "2026-05-15",
   main: {
-    title: "Senate Confirms Kevin Warsh as Fed Chair in Razor-Thin Vote",
-    category: "Monetary Policy",
+    title: "Jaguar Land Rover Annual Profit Falls 99% After US Tariffs and Cyber-Attack Take Toll",
+    category: "Corporate Earnings",
     content: [
-      "Kevin Warsh has been confirmed by the United States Senate as the new Chair of the Federal Reserve, replacing Jerome H. Powell in one of the most consequential monetary policy appointments in recent memory. The confirmation passed by the narrowest margin since the role first required a Senate confirmation vote, underscoring the deep divisions surrounding both the nominee and the broader question of central bank independence. Markets had been watching the confirmation process closely, with investors acutely aware that the new Fed chair will inherit an economy under significant stress.",
-      "Warsh takes the helm at a moment of extraordinary uncertainty for the American economy. US inflation has climbed to a three-year high, driven in large part by elevated energy costs stemming from the ongoing conflict in the Middle East, and the Federal Reserve faces the unenviable task of calibrating interest rate policy amid competing pressures. A tighter monetary stance risks further slowing an economy already strained by geopolitical disruption, while any perceived loosening could entrench inflationary expectations further.",
-      "One of the central concerns surrounding the Warsh appointment has been the question of Federal Reserve independence. The Fed has long operated at arm\'s length from the executive branch, a structural feature that markets have traditionally viewed as a guarantor of credible, long-term inflation management. The narrowness of Warsh\'s confirmation margin has amplified those concerns, with critics warning that a Fed chair seen as ideologically aligned with the White House could undermine the institution\'s credibility with bond markets and international investors.",
-      "Warsh is a former Fed governor who served during the 2008 financial crisis and has been a vocal critic of unconventional monetary policy tools such as quantitative easing. His views on inflation and interest rates will be scrutinized intensely in his first public appearances as chair, with traders and economists seeking signals about whether he intends to maintain the current policy trajectory or shift course. The yield curve and the dollar have already shown sensitivity to developments surrounding the Fed leadership transition in recent weeks.",
-      "The confirmation sets the stage for a pivotal period in US monetary policy, with the Federal Open Market Committee facing decisions that will reverberate through mortgage rates, business borrowing costs, and consumer spending for years to come. Global central banks, including the European Central Bank — which is itself reassessing the likelihood of a June rate move — will be watching Warsh\'s early signals carefully. How he navigates the intersection of political pressure, stubborn inflation, and slowing growth may well define the economic legacy of this era."
+      "Jaguar Land Rover, Britain\'s largest carmaker, has reported a catastrophic collapse in annual profits, with earnings before tax and exceptional items falling more than 99% to just £14 million in the year to March. The figure represents one of the most dramatic profit declines in recent British automotive history, stripping away nearly all of the company\'s bottom-line gains in a single reporting period. The results have sent shockwaves through the UK manufacturing sector, which had already been bracing for a difficult year amid global trade tensions and geopolitical instability.",
+      "The dual blows of US tariffs and a debilitating cyber-attack are being cited as the primary drivers of the collapse. The cyber-attack disrupted JLR\'s factories for months, halting production at a time when the company could least afford operational downtime, and the financial damage from that incident alone is expected to have run into hundreds of millions of pounds. Meanwhile, US tariffs imposed on imported vehicles dramatically increased the cost of doing business in one of JLR\'s most important and lucrative markets, squeezing margins on every vehicle sold stateside.",
+      "Adding to the company\'s woes, JLR has also seen its competitive position in China erode significantly. Sales in the Chinese market were hit hard by intensifying local competition, as domestic electric vehicle makers and other rivals have rapidly gained market share at the expense of traditional premium Western brands. China had been a critical growth engine for JLR in previous years, making the deterioration there particularly painful and difficult to offset through performance in other regions.",
+      "The results underscore a broader vulnerability facing legacy automakers that have supply chains, tariff exposures, and market dependencies spread across multiple geopolitical fault lines. JLR\'s parent company, Tata Motors of India, will now face hard questions from investors about the path to recovery and whether the brand\'s ambitious electrification strategy can be sustained given the severe pressure on cash flows. Analysts are likely to scrutinise whether the company has sufficient liquidity to weather further disruption while simultaneously funding its electric vehicle transition.",
+      "The JLR earnings report arrives as a stark real-world illustration of how converging risks — trade policy, cybersecurity vulnerabilities, and shifting consumer preferences — can compound simultaneously to devastating effect. For the broader UK economy, a near-total profit wipeout at its largest carmaker is a sobering signal even as other data this week showed surprising resilience in GDP growth. The company\'s results will likely intensify calls from industry groups for the UK government to negotiate stronger trade protections and invest more heavily in industrial cyber defences to safeguard manufacturing competitiveness."
     ],
-    image: "https://static01.nyt.com/images/2026/05/11/multimedia/00dc-warsh-jgtm/00dc-warsh-jgtm-mediumSquareAt3X.jpg",
-    source: "The New York Times",
-    sourceUrl: "https://www.nytimes.com/2026/05/13/us/politics/kevin-warsh-fed-chair-confirmed.html"
+    image: "https://i.guim.co.uk/img/media/ecf0e67e75c86b140675845224c7dd6693a625a0/988_0_4940_3952/master/4940.jpg?width=1200&quality=85&auto=format&fit=max&s=1dff5fb37b0a8e29b9ffec2c1c2bb587",
+    source: "The Guardian",
+    sourceUrl: "https://www.theguardian.com/business/2026/may/14/jaguar-land-rover-annual-profit-falls-99-per-cent-us-tariffs-cyber-attack"
   },
   secondary: [
     {
       id: "fn1",
-      title: "Cisco Stock Rockets Toward Record High After AI Pivot and Upbeat Earnings",
-      summary: "Cisco announced job cuts to free up investment capital for artificial intelligence, sending its stock surging toward record territory following a strong earnings report.",
+      title: "UK Economy Sees Surprise 0.3% Growth in March Despite Iran War",
+      summary: "Britain\'s economy grew by 0.3% in March, defying analyst forecasts of a small contraction amid the ongoing Iran conflict.",
       body: [
-        "Cisco Systems unveiled plans to cut jobs as part of a strategic reallocation of resources toward artificial intelligence infrastructure, a move that was welcomed enthusiastically by investors. The networking giant paired the announcement with an upbeat earnings report, driving its stock sharply higher and toward record levels.",
-        "The results place Cisco among the broader cohort of S&P 500 companies this earnings season that have reported soaring sales and improving profit margins, particularly those with exposure to AI-oriented hardware and services. The market\'s reaction reflects growing investor conviction that companies willing to restructure aggressively around AI stand to capture outsized long-term returns."
+        "Official figures from the ONS showed the UK economy expanding by 0.3% in March, a result that caught markets and economists off guard given widespread expectations of a contraction driven by the uncertainties of the Iran war and associated energy price pressures. The stronger-than-expected reading has provided a degree of reassurance that the UK\'s economic foundations remain more resilient than feared at the outset of the conflict.",
+        "Chancellor Rachel Reeves was quick to seize on the data as validation of the current government\'s economic stewardship, arguing that now is not the time to introduce instability into economic policy. The figures will offer relief to financial markets and businesses monitoring UK economic momentum, though analysts caution that one month of positive data does not guarantee the economy is insulated from the longer-term effects of the war."
       ],
-      image: "https://images.mktw.net/im-02582341",
-      source: "MarketWatch",
-      url: "https://www.marketwatch.com/story/cisco-to-cut-jobs-so-it-can-invest-more-in-ai-and-the-stock-rockets-toward-a-record-cf9d09a9?mod=mw_rss_topstories",
-      category: "Markets"
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/b1fe/live/5a756b80-4e9e-11f1-8afc-5fc3c33cbd56.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.com/news/articles/cx213n20njzo?at_medium=RSS&at_campaign=rss",
+      category: "Economics"
     },
     {
       id: "fn2",
-      title: "Cerebras Prices Massive IPO Well Above Range in Fresh Test for AI Investor Appetite",
-      summary: "AI chipmaker Cerebras priced its highly anticipated IPO at $185 per share, significantly above its previously announced range, signalling robust investor demand for AI infrastructure plays.",
+      title: "Cerebras AI Chip Maker Soars 89% in Market Debut as Tech IPO Wave Builds",
+      summary: "Cerebras, a Silicon Valley artificial intelligence chip manufacturer, surged 89% on its first day of trading as a broader wave of high-profile tech IPOs gathers momentum.",
       body: [
-        "Cerebras Systems priced its initial public offering at $185 a share late Wednesday, a figure that came in well above the top of its previously announced $150–$160 range and pointing to strong institutional appetite for the AI infrastructure sector. The listing is one of the most closely watched technology IPOs of the year, given Cerebras\'s position as a developer of large-scale AI processing chips designed to compete with dominant players in the space.",
-        "The pricing will serve as a significant data point for the broader IPO market, testing whether investor enthusiasm for artificial intelligence can sustain premium valuations even as macroeconomic headwinds — including elevated inflation and geopolitical uncertainty — weigh on risk sentiment more generally. A strong debut could open the door for a wave of AI-adjacent companies currently waiting in the wings to proceed with their own public listings."
+        "Cerebras made a stunning stock market debut, with shares rocketing 89% on the first day of trading and signalling robust investor appetite for AI-focused hardware companies even amid broader market uncertainty. The listing is part of a growing wave of technology initial public offerings, with SpaceX, OpenAI, and Anthropic also reported to be taking steps toward going public.",
+        "The Cerebras debut is being watched closely by market participants as a barometer for how much premium investors are willing to assign to AI infrastructure plays at a time when the sector continues to attract enormous capital despite elevated valuations. A successful IPO pipeline in the AI space could unlock significant new capital formation in the technology sector through the remainder of 2026."
       ],
-      image: "https://images.mktw.net/im-09861778",
-      source: "MarketWatch",
-      url: "https://www.marketwatch.com/story/cerebrass-ipo-will-be-fresh-a-test-of-investor-excitement-for-ai-infrastructure-3499a2a5?mod=mw_rss_topstories",
+      image: "https://static01.nyt.com/images/2026/05/14/multimedia/14biz-cerebras-2-wbqh/14biz-cerebras-2-wbqh-mediumSquareAt3X.jpg",
+      source: "The New York Times",
+      url: "https://www.nytimes.com/2026/05/14/technology/cerebras-ipo-ai.html",
       category: "Markets"
     },
     {
       id: "fn3",
-      title: "Japan\'s Eneos Acquires Chevron\'s Asian Oil Assets in $2.2 Billion Deal",
-      summary: "Japanese refiner Eneos Holdings has agreed to purchase Chevron\'s refining and retail assets across the Asia-Pacific region for approximately $2.17 billion, significantly expanding its regional footprint.",
+      title: "Boeing Shares Slide as China Deal Delivers Only 200 Jets — Far Below Expectations",
+      summary: "Boeing\'s stock suffered its steepest single-day fall in six months after China committed to buying 200 aircraft, well short of the 500-plane deal investors had anticipated from Trump\'s Beijing visit.",
       body: [
-        "Eneos Holdings, Japan\'s largest refiner, has struck a deal to acquire a portfolio of Chevron\'s refining and retail assets across Asia-Pacific for $2.17 billion, in one of the more substantial energy sector transactions of the year. The acquisition will meaningfully extend Eneos\'s operational reach across a region that remains central to global oil demand growth.",
-        "The deal reflects a broader trend of Western energy majors rationalising their downstream assets in Asia as they redirect capital toward core operations and energy transition investments, creating acquisition opportunities for regional players with the balance sheet capacity to absorb them. For Eneos, the purchase represents a strategic bet on sustained Asian fuel demand at a time when oil markets remain elevated due to geopolitical tensions in the Middle East."
+        "Boeing shares fell sharply after President Trump\'s high-profile trip to Beijing yielded a commitment from China to purchase 200 of the company\'s jets, a figure that deeply disappointed investors who had been pricing in an order of more than double that number. The gap between expectation and delivery underscored the limits of what the diplomatic visit was able to achieve in concrete commercial terms for one of America\'s flagship exporters.",
+        "The disappointing order outcome adds to a turbulent period for Boeing, which has been navigating production challenges, safety scrutiny, and weakened demand in key international markets. The stock\'s reaction highlights how closely Wall Street had tied its near-term Boeing thesis to a transformative trade breakthrough with China that ultimately did not materialise."
       ],
-      image: "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxKYXBhbiU1Q3xlbnwwfDB8fHwxNzc4NzM1MDIwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "Bloomberg Markets",
-      url: "https://www.bloomberg.com/news/articles/2026-05-14/japan-s-eneos-buys-chevron-s-asian-oil-assets-for-2-2-billion",
-      category: "Mergers & Acquisitions"
+      image: "https://images.mktw.net/im-51805407",
+      source: "MarketWatch",
+      url: "https://www.marketwatch.com/story/boeings-stock-drops-as-trumps-order-deal-with-china-disappoints-baff30fa?mod=mw_rss_topstories",
+      category: "Markets"
     }
   ]
 };

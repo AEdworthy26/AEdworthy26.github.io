@@ -1,60 +1,60 @@
 // tech-news-data.js
-// Auto-updated 2026-05-14 — do not edit manually
+// Auto-updated 2026-05-15 — do not edit manually
 
 var TECH_NEWS = {
-  date: "2026-05-14",
+  date: "2026-05-15",
   main: {
-    title: "Solar Drone With Jumbo Jet Wingspan Broke a Flight Record — Then It Crashed",
-    category: "Technology",
+    title: "Energy Supplier Abandons Lake Tahoe Residents to Serve Data Centers",
+    category: "Technology & Energy",
     content: [
-      "A pioneering solar-powered drone with a wingspan comparable to a jumbo jet has come to a dramatic end, breaking a flight record before ultimately crashing and leaving behind a complex legacy in the world of experimental aviation. The aircraft represented years of engineering ambition, designed to harness solar energy to stay aloft for extended periods without the need for conventional fuel. Its record-breaking flight marked a genuine milestone in renewable-energy-powered aviation, demonstrating that solar propulsion could push boundaries previously thought unreachable.",
-      "Solar-powered drones of this scale occupy a unique niche in aerospace development, sitting at the intersection of renewable energy research, surveillance technology, and high-altitude communications platforms. Engineers working on such aircraft must contend with the inherent fragility of ultra-lightweight structures needed to maximize solar panel surface area while minimizing weight. The tension between structural integrity and aerodynamic efficiency has long been one of the central engineering challenges in the field.",
-      "The crash itself underscores the perilous nature of operating aircraft at the extreme edges of what current materials and design philosophies can support. Large-wingspan solar drones are particularly vulnerable to atmospheric disturbances, as their enormous, lightweight frames can be overwhelmed by wind shear or turbulence that conventional aircraft would handle with ease. Investigators will likely spend considerable time analyzing flight data to determine the precise sequence of events that led to the loss of the vehicle.",
-      "Despite the crash, the record set during this aircraft\'s final flight will stand as a testament to how far solar aviation has advanced. Programs like this one help establish the design parameters and operational lessons that future generations of solar drones will build upon, even when they end in failure. The data gathered across all of the aircraft\'s flights will remain a valuable resource for aerospace engineers pushing toward longer-duration, higher-altitude solar-powered missions.",
-      "The drone\'s complex legacy reflects a broader truth about pioneering technology: progress is rarely linear, and the most ambitious projects often carry the greatest risk of catastrophic failure alongside the greatest potential for breakthrough. Its enormous wingspan captured imaginations and demonstrated the extraordinary scale that solar aviation can now achieve. As the industry mourns the loss of the aircraft, attention will turn to what comes next — and how the lessons of this pioneering program will shape the solar drones of the future.",
+      "A growing conflict over energy allocation is playing out in the Lake Tahoe region of California, where an energy supplier has effectively deprioritized service to approximately 49,000 local residents in favor of meeting the voracious power demands of data centers located across the border in Nevada. The situation has thrust an otherwise picturesque mountain community into the center of a national debate about who gets to claim America\'s electrical grid as artificial intelligence infrastructure continues its rapid expansion. Residents say the shift has left them vulnerable to outages and uncertain about the reliability of their power supply going forward.",
+      "The tension between residential energy needs and data center demand is not unique to Lake Tahoe, but the starkness of the tradeoff in this case has drawn significant attention. Data centers, which power everything from cloud computing platforms to large AI model training runs, consume extraordinary amounts of electricity and are increasingly being built in areas where land is cheap and regulatory conditions are favorable. The problem is that these facilities often outcompete existing residential and commercial customers for grid capacity, leaving communities to bear the consequences of an infrastructure system that was never designed to absorb such concentrated industrial demand.",
+      "Nevada has positioned itself as a favorable environment for data center development, offering tax incentives and streamlined permitting that attract major technology companies looking to expand their computing infrastructure. This has created a situation where the energy supplier in question faces competing obligations — on one side, long-standing residential customers in California who depend on reliable power for heating, cooling, and daily life, and on the other, high-revenue industrial contracts with data center operators who pay premium rates and consume power at scale. When forced to choose where to allocate constrained supply, the economics appear to have favored the data centers.",
+      "The broader implications of this story stretch well beyond Lake Tahoe. As AI development accelerates and the number of large-scale data centers multiplies across the United States, energy grids in many regions are being pushed to their limits. Utilities, grid operators, and regulators are scrambling to understand how to manage a future in which industrial computing demand may rival or exceed that of entire cities. The Lake Tahoe case serves as a cautionary tale about what happens when that reckoning arrives faster than policy frameworks can adapt, leaving ordinary residents caught in the middle.",
+      "Community advocates and local officials are reportedly pushing back against the supplier\'s prioritization decisions, calling for regulatory intervention to ensure that residential customers are not left behind in the race to power the AI economy. The situation raises fundamental questions about the public obligation of utility companies and whether energy — as an essential service — should be subject to stricter allocation rules when scarcity arises. As data center construction shows no signs of slowing, pressure is mounting on state and federal regulators to establish clearer guidelines before similar conflicts emerge in communities across the country."
     ],
-    image: "https://cdn.arstechnica.net/wp-content/uploads/2026/05/skydweller-predawn-flight-1024x648.jpg",
+    image: "https://cdn.arstechnica.net/wp-content/uploads/2026/05/Lake-Tahoe-town-1152x648.jpg",
     source: "Ars Technica",
-    sourceUrl: "https://arstechnica.com/gadgets/2026/05/solar-drone-with-jumbo-jet-wingspan-broke-a-flight-record-then-it-crashed/"
+    sourceUrl: "https://arstechnica.com/ai/2026/05/energy-supplier-abandons-lake-tahoe-residents-to-serve-data-centers/"
   },
   secondary: [
     {
       id: "tc1",
-      title: "Notion Transforms Its Workspace Into a Hub for AI Agents",
-      summary: "Notion has launched a new developer platform that lets teams connect AI agents, external data sources, and custom code directly into their workspace.",
+      title: "Meta Brings Virtual Neural Handwriting to All Ray-Ban Display Glasses Users",
+      summary: "Meta is rolling out the ability to write messages using only hand gestures to all users of its Ray-Ban Display smart glasses, expanding access to a feature previously limited to developers.",
       body: [
-        "Notion\'s new developer platform marks a significant pivot for the popular productivity tool, enabling teams to embed AI agents and external data pipelines directly into the familiar workspace environment. The move positions Notion as a central orchestration layer for agentic workflows rather than simply a notes and documents application.",
-        "The push into agentic productivity software reflects a broader industry trend, with major software platforms racing to integrate autonomous AI capabilities before competitors can establish dominance in the space. By opening its platform to developers, Notion is betting that a rich ecosystem of connected agents will make its workspace indispensable to modern teams."
+        "Meta has announced that its neural handwriting feature — which allows wearers to compose messages simply by making hand gestures — is now available to all users of the Meta Ray-Ban Display smart glasses, not just developers. The rollout includes support for WhatsApp, Messenger, Instagram, and native Android and iOS messaging applications, making it a broadly practical tool for everyday communication.",
+        "The expansion marks a significant step in Meta\'s push to make its smart glasses a genuinely functional computing platform rather than a novelty device. By integrating gesture-based input with major messaging apps, Meta is signaling that it sees the Ray-Ban Display line as a serious interface for daily digital life, with ambitions that extend well beyond simple audio and camera features."
       ],
-      image: "https://images.unsplash.com/photo-1642132652859-3ef5a1048fd1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxOb3Rpb24lMjBUcmFuc2Zvcm1zJTIwSXRzJTIwV29ya3NwYWNlJTIwSW50byUyMGElMjBIdWIlMjBmb3IlMjBBSSUyMEFnZW50c3xlbnwwfDB8fHwxNzc4NzM1MDU2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "TechCrunch",
-      url: "https://techcrunch.com/2026/05/13/notion-just-turned-its-workspace-into-a-hub-for-ai-agents/",
-      category: "Artificial Intelligence"
+      image: "https://images.pexels.com/photos/14126678/pexels-photo-14126678.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      source: "The Verge",
+      url: "https://www.theverge.com/tech/930941/meta-ray-ban-display-virtual-neural-handwriting-apps-developer",
+      category: "Hardware & Wearables"
     },
     {
       id: "tc2",
-      title: "Thousands of Waymo Robotaxis Recalled After Vehicle Drove Into Flooded Creek",
-      summary: "Waymo has issued a voluntary recall affecting thousands of its autonomous vehicles following an April incident in which an empty robotaxi entered a flooded road in San Antonio, Texas.",
+      title: "SpaceXAI Has Lost More Than 50 Employees Since Its February Merger",
+      summary: "Elon Musk\'s newly merged SpaceXAI company has seen a significant exodus of staff since its formation, with over 50 employees departing amid concerns about burnout, leadership shifts, and weakened retention incentives.",
       body: [
-        "The voluntary recall stems from a troubling April 20th incident in which a Waymo vehicle, operating without a passenger, navigated onto a flooded road and was swept into a creek in San Antonio. The episode raised serious questions about how the autonomous driving system assesses and responds to hazardous road conditions such as standing water and flooding.",
-        "Waymo\'s recall is a notable moment for the robotaxi industry, which has long argued that autonomous vehicles can out-perform human drivers in safety-critical situations. The incident serves as a reminder that edge cases involving unusual environmental conditions remain a significant challenge for even the most advanced self-driving systems currently in commercial operation."
+        "More than 50 employees have left SpaceXAI since the company was formed through a merger in February, according to reporting by TechCrunch, raising serious questions about the organizational stability of one of the most high-profile ventures in the AI and aerospace sectors. Observers point to a combination of factors driving the departures, including burnout, changes in leadership dynamics following the merger, and active talent poaching by competitors.",
+        "Analysts also note that liquidity events tied to the merger may have weakened traditional equity-based retention incentives, giving employees who had already cashed out less financial reason to stay through a turbulent transition period. The staff bleed comes at a critical time for the AI industry, where top engineering talent is fiercely contested, and losing experienced personnel could have meaningful consequences for SpaceXAI\'s ability to compete."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/4e77/live/96f04200-4eae-11f1-92a2-156bc6ac560f.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/cwy2011dl4xo?at_medium=RSS&at_campaign=rss",
-      category: "Technology"
+      image: "https://images.pexels.com/photos/32756227/pexels-photo-32756227.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      source: "TechCrunch",
+      url: "https://techcrunch.com/2026/05/14/elon-musks-spacexai-has-been-bleeding-staff-since-its-merger/",
+      category: "Tech Industry"
     },
     {
       id: "tc3",
-      title: "Microsoft Edge Copilot Update Uses AI to Pull Information Across All Your Open Tabs",
-      summary: "Microsoft is updating its Edge browser\'s Copilot AI chatbot to gather and synthesize information from all of a user\'s open tabs simultaneously.",
+      title: "Raspberry Pi Boss Warns AI Hype Could Deter People From Pursuing Tech Careers",
+      summary: "Eben Upton, founder and CEO of Raspberry Pi, has cautioned that exaggerated claims about AI eliminating computing jobs could discourage young people from entering the technology sector, with potentially damaging consequences for the broader economy.",
       body: [
-        "Microsoft\'s latest Edge update gives its built-in Copilot assistant the ability to read across every open browser tab, allowing users to ask questions, compare products, and summarize articles without switching between windows. The feature represents a meaningful leap in browser-native AI utility, turning the tab bar into a queryable knowledge base.",
-        "The update places Microsoft\'s Edge in more direct competition with third-party AI browser extensions that have offered similar cross-tab functionality, and signals that the company intends to make Copilot a genuinely useful daily driver rather than a novelty. As AI assistants become embedded deeper into core computing tools, the browser is emerging as one of the most contested battlegrounds for user attention."
+        "Eben Upton has spoken out against the growing narrative that artificial intelligence will render vast numbers of software and computing jobs obsolete, arguing that such claims risk creating a chilling effect on technology education and career choices. Upton, whose Raspberry Pi organization has long focused on making computing accessible and encouraging new generations of programmers, said the rhetoric does not reflect the likely reality of AI\'s impact on the job market.",
+        "The warning carries weight given Raspberry Pi\'s grassroots influence on tech education globally. If prospective students or career changers are put off from pursuing computing skills because they believe AI will make those skills worthless, the long-term result could be a talent shortage that harms innovation and economic growth — even as the demand for skilled technologists continues to rise in an increasingly AI-driven world."
       ],
-      image: "https://images.pexels.com/photos/30530406/pexels-photo-30530406.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      source: "The Verge",
-      url: "https://www.theverge.com/tech/930188/microsoft-edge-copilot-ai-tabs",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/b124/live/7a8cb440-4fc1-11f1-b651-41ca043d3d3f.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.com/news/articles/clypr8p2lewo?at_medium=RSS&at_campaign=rss",
       category: "Artificial Intelligence"
     }
   ]

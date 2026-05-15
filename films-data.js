@@ -1,18 +1,18 @@
 // films-data.js
-// Auto-updated 2026-05-14 — do not edit manually
+// Auto-updated 2026-05-15 — do not edit manually
 
 var FILMS_DATA = {
-  date: "2026-05-14",
+  date: "2026-05-15",
   film: {
-    title: "The Earrings of Madame de...",
-    director: "Max Ophüls",
-    year: 1953,
-    genres: ["Romance", "Drama"],
-    desc: "A pair of diamond earrings passes through a glittering Parisian world of vanity, desire, and heartbreak, tracing a perfect circular trajectory that becomes one of cinema\'s most elegant structural conceits. Max Ophüls directs with an almost physical sensuality — his camera waltzes through ballrooms and boudoirs in long, fluid takes that make the mise-en-scène itself feel like a form of longing. Danielle Darrieux gives a performance of extraordinary delicacy as the Countess, a woman who discovers genuine feeling too late, while Charles Boyer and Vittorio De Sica lend the film a weight of masculine pride that quietly destroys everything. The film is simultaneously a sparkling comedy of manners and a devastatingly sad meditation on self-deception, social performance, and the terrible cost of finally telling the truth. Few films have ever made the geometry of a love affair — its circles, its returns, its inevitabilities — feel so heartbreakingly beautiful.",
-    cast: ["Danielle Darrieux", "Charles Boyer", "Vittorio De Sica"],
-    rating: 98,
+    title: "Blaze",
+    director: "Ethan Hawke",
+    year: 2018,
+    genres: ["Drama", "Music", "Biography"],
+    desc: "Ethan Hawke\'s deeply personal portrait of Blaze Foley — the Texas singer-songwriter who died in obscurity in 1989 and was later recognized as a foundational figure in outlaw country — is one of the most soulful music biopics ever made. Ben Dickey, in a staggering debut performance, inhabits Foley with a bruised, lumbering tenderness that feels lived-in rather than performed, while Alia Shawkat brings fierce, heartbreaking intelligence to the woman who loved him. Hawke fractures the timeline beautifully, weaving together three strands of memory and testimony so that the film feels less like a biopic and more like a folk song told from multiple voices around a fire. The film is full of mud, pine trees, cheap wine, and the kind of music that sounds like it came up from the ground rather than being written by anyone. It is unhurried, uncommercial, and quietly devastating — a film that rewards patience with something that feels genuinely irreplaceable.",
+    cast: ["Ben Dickey", "Alia Shawkat", "Charlie Sexton"],
+    rating: 88,
     ratingSource: "Rotten Tomatoes",
-    ratingExtra: "Ranked #7 on Sight & Sound 2022 Greatest Films list",
-    posterUrl: "https://upload.wikimedia.org/wikipedia/en/0/08/Madamedeposter.jpg"
+    ratingExtra: "Sundance Special Jury Prize",
+    posterUrl: "https://upload.wikimedia.org/wikipedia/en/3/3c/Blaze_%282018_movie_poster%29.png"
   }
 };

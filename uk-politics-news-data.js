@@ -1,60 +1,60 @@
 // uk-politics-news-data.js
-// Auto-updated 2026-05-14 — do not edit manually
+// Auto-updated 2026-05-15 — do not edit manually
 
 var UK_POLITICS_NEWS = {
-  date: "2026-05-14",
+  date: "2026-05-15",
   main: {
-    title: "Starmer Warns of 'Chaos' as Wes Streeting Prepares to Launch Labour Leadership Challenge",
+    title: "Burnham to Make Bid to Return as MP as Pressure Mounts on Starmer",
     category: "Politics",
     content: [
-      "Sir Keir Starmer has issued a stark warning that the Labour Party faces 'chaos' if it is plunged into a leadership contest, as Health Secretary Wes Streeting readies himself to resign from the Cabinet and formally trigger a challenge as early as Thursday. The Prime Minister, who delivered his second King\'s Speech just days ago, is facing the most serious internal threat of his tenure, with Streeting understood to have been canvassing support among Labour MPs to determine whether he can command enough backing to force a contest. Starmer has insisted he intends 'to fight to win', framing the looming battle as a test of political stability versus internal party upheaval.",
-      "Streeting\'s decision to move against Starmer has sent shockwaves through Westminster, sparking a frantic scramble on the left of the Labour Party to identify a candidate capable of opposing him in any resulting leadership race. The Health Secretary\'s allies have confirmed that he is prepared to resign his Cabinet post, a move that would formally set the contest in motion under Labour\'s internal rules. Energy Secretary Ed Miliband is also expected to enter the race, according to reports, suggesting the contest could rapidly become a crowded and fiercely contested field.",
-      "The drama has unfolded against the backdrop of the King\'s Speech, in which the government laid out an ambitious legislative agenda covering education, health and the courts — measures that Starmer had hoped would reassert his authority over a restive parliamentary party. Instead, the ceremony served to highlight the gulf between the Prime Minister\'s aspirations and his increasingly fragile grip on power. The juxtaposition of a formal statement of governmental intent and simultaneous briefings about imminent Cabinet resignations was, by any measure, an extraordinary moment in modern British political history.",
-      "Adding further complexity to the crisis is the position of Greater Manchester Mayor Andy Burnham, who has reportedly told Labour MPs to 'hold the line' and assured his supporters that he still has options to return to Westminster. Allies of Burnham had identified several parliamentary seats as potential routes back to the Commons, though reports suggest those prospects have now become considerably less certain. Senior figures including former MP Harriet Harman have urged Starmer to bring Burnham into the Cabinet, arguing that the mayor\'s 'huge talents' could help stabilise the government and broaden its appeal.",
-      "The crisis has also been compounded by the anticipated release of another tranche of so-called 'Mandelson files', which are expected to pile further pressure on the Prime Minister in the coming days. Starmer\'s biographer Tom Baldwin has warned that Labour risks repeating the Conservative Party\'s damaging pattern of cycling through leaders if it ousts him now, arguing there is a 'real chance' of the party changing leader again before the next general election. With the outcome of the next 24 hours deeply uncertain, political analysts across Westminster are in agreement on one thing: this is a defining moment not just for Starmer, but for the future direction of the Labour Party itself."
+      "Sir Keir Starmer is fighting for his political survival as a full-scale Labour revolt threatens to bring down his premiership. The prime minister faces mounting pressure following heavy election losses that have emboldened critics within his own party to speak openly about the need for new leadership. The crisis has rapidly escalated into one of the most serious challenges to face a sitting Labour prime minister in a generation.",
+      "Andy Burnham, the Greater Manchester mayor, has announced he will attempt to return to Westminster after Labour MP Josh Simons confirmed he would vacate his Makerfield seat to allow Burnham to contest a by-election. The move ends days of intense speculation about whether Burnham could find a viable route back into Parliament, and now sets up what could become a defining moment for the Labour Party. Burnham has made clear his intention to seek a return to the Commons, widely seen as the first step toward mounting a leadership challenge against Starmer.",
+      "Adding to the prime minister\'s difficulties, Health Secretary Wes Streeting resigned from the Cabinet, saying he had lost confidence in Sir Keir Starmer\'s leadership and calling for an open debate about 'what comes next' for the Labour Party. Streeting\'s departure is a significant blow, as he had been considered one of the more prominent and capable ministers in the government. His resignation letter pointedly criticised what he described as a sense of 'drift' within the administration, a charge that will resonate painfully with Labour backbenchers already alarmed by the party\'s polling and electoral performance.",
+      "Starmer has confirmed he will not attempt to block Burnham from standing in the Makerfield by-election, a decision that effectively acknowledges the political reality that such an intervention would be both futile and damaging. However, the path for Burnham is far from straightforward — he must first win the by-election in a seat that analysts warn could be fiercely contested by Reform UK. A defeat for Burnham at the by-election stage would be a serious embarrassment and could derail his leadership ambitions before they fully materialise.",
+      "The unfolding drama marks a dramatic turning point in British politics, with Labour\'s internal divisions now fully in the open for the first time since the party\'s general election victory. Deputy Prime Minister Angela Rayner, who was separately cleared by HMRC over her tax affairs, has also added to the pressure on Starmer by suggesting he should 'reflect' on stepping aside. With junior ministers reportedly considering their own leadership bids and backbench MPs growing increasingly vocal, the coming days are likely to prove decisive for the future of Starmer\'s government."
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/0a6b/live/5b767670-4f0f-11f1-bbd7-4dd9e7da3820.jpg",
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/a995/live/3035ec10-4fd3-11f1-89a3-d1f559421220.jpg",
     source: "BBC News",
-    sourceUrl: "https://www.bbc.com/news/articles/cvgzv4eqdrno?at_medium=RSS&at_campaign=rss"
+    sourceUrl: "https://www.bbc.com/news/articles/c1l2e325zvgo?at_medium=RSS&at_campaign=rss"
   },
   secondary: [
     {
       id: "uk1",
-      title: "King\'s Speech Sets Out Government\'s Legislative Agenda for New Parliamentary Session",
-      summary: "King Charles has delivered the King\'s Speech outlining Keir Starmer\'s plans for new laws covering education, health and the courts in the next session of Parliament.",
+      title: "Streeting Resigns and Criticises Government\'s 'Drift'",
+      summary: "Wes Streeting has quit as Health Secretary, saying he has lost confidence in Sir Keir Starmer and calling for an open debate about the future direction of the Labour government.",
       body: [
-        "The monarch read out the government\'s legislative programme for the coming parliamentary year, with Starmer\'s agenda spanning reforms to the education system, the National Health Service and the courts. The speech was intended as a show of governmental confidence and direction at a moment of acute political turbulence for the Prime Minister.",
-        "The King\'s Speech traditionally marks the formal opening of a new parliamentary session and sets the tone for the government\'s priorities, but this year\'s address was overshadowed by mounting speculation about Starmer\'s own political survival and the imminent threat of a leadership challenge from within his own Cabinet."
+        "Wes Streeting resigned from his position as Health Secretary, delivering a pointed public statement in which he accused the Starmer government of lacking purpose and direction. He described continuing in Cabinet as 'dishonourable and unprincipled' given his loss of confidence in the prime minister\'s leadership.",
+        "Streeting\'s resignation is among the most significant Cabinet departures of Starmer\'s tenure and has been interpreted by many observers as a calculated move to position himself — or allies — for a potential leadership contest. James Murray has since been named as the new Health Secretary in the wake of Streeting\'s departure."
       ],
-      image: "https://images.unsplash.com/photo-1513307878903-4c4a7cab5b9a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxLaW5nJTVDfGVufDB8MHx8fDE3Nzg2NDg1MTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/755f/live/516a5730-4f8e-11f1-9047-c9775177a8ab.jpg",
       source: "BBC News",
-      url: "https://www.bbc.com/news/articles/clypj215wgpo?at_medium=RSS&at_campaign=rss",
+      url: "https://www.bbc.com/news/articles/cgkpr6y3266o?at_medium=RSS&at_campaign=rss",
       category: "Politics"
     },
     {
       id: "uk2",
-      title: "Farage Faces Standards Probe Over £5 Million Gift from Crypto Billionaire",
-      summary: "Reform UK leader Nigel Farage is facing a parliamentary standards investigation into whether he properly declared a £5 million gift from a cryptocurrency billionaire.",
+      title: "Andy Burnham\'s Route Back to the Commons — One Big Hurdle Remains",
+      summary: "Analysis suggests Andy Burnham\'s path to Parliament is clearer following Josh Simons' decision to stand down, but he still faces a potentially bitter by-election battle against Reform UK in Makerfield.",
       body: [
-        "The probe will examine whether Farage, who leads the right-wing Reform UK party, fulfilled his obligations under parliamentary rules by declaring the substantial gift from the crypto billionaire. The investigation adds to the political pressures facing the Reform leader at a time when his party has been positioning itself as a challenger to the established parties.",
-        "Standards investigations into MPs and party leaders carry significant reputational risks and can distract from day-to-day political activity; the probe is likely to draw considerable public and media scrutiny given both the size of the alleged gift and Farage\'s prominent national profile."
+        "Political analysts note that while Burnham now has a credible mechanism to re-enter Parliament, the Makerfield by-election is unlikely to be a simple formality, with Reform UK expected to mount a serious campaign in the seat. A high-profile contest of this nature would attract national attention and carry significant risk for Burnham personally.",
+        "Should Burnham successfully navigate the by-election, he would be well placed to launch a formal Labour leadership campaign — but failure at that stage could be politically fatal, removing him from contention at a critical moment for the party."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/e6be/live/03a17820-4eef-11f1-b640-47713d08220e.jpg",
+      image: "https://images.pexels.com/photos/5576006/pexels-photo-5576006.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       source: "BBC News",
-      url: "https://www.bbc.com/news/articles/c0l26g01703o?at_medium=RSS&at_campaign=rss",
+      url: "https://www.bbc.com/news/articles/cx21x2rpm12o?at_medium=RSS&at_campaign=rss",
       category: "Politics"
     },
     {
       id: "uk3",
-      title: "Plaid Cymru\'s Rhun ap Iorwerth Sworn In as First Minister of Wales",
-      summary: "Plaid Cymru leader Rhun ap Iorwerth has been officially sworn in as the new First Minister of Wales, ending Labour\'s 27-year dominance of the Senedd.",
+      title: "Farage Bought £1.4m Property After Receiving £5m Crypto Gift",
+      summary: "Reform UK leader Nigel Farage purchased a £1.4 million property in cash shortly after receiving a £5 million personal gift from British crypto billionaire donor Christopher Harborne, Sky News has learned.",
       body: [
-        "The swearing-in of ap Iorwerth marks a historic shift in Welsh politics, with Plaid Cymru breaking Labour\'s stranglehold on the devolved government that had persisted since the Senedd was established. The change in government in Cardiff represents one of the most significant results in devolved Welsh politics since devolution began.",
-        "Labour\'s loss of power in Wales adds another layer of difficulty for the party nationally, as it grapples simultaneously with a leadership crisis at Westminster and the erosion of its traditional strongholds across the United Kingdom."
+        "Property records seen by Sky News reveal that Farage acquired the multimillion-pound home in a cash transaction following the substantial gift from Harborne, raising questions about the financial relationships between Reform UK\'s leadership and its major backers.",
+        "The revelation comes at a sensitive time for Reform UK as the party seeks to present itself as an anti-establishment force and expand its political footprint, with scrutiny of its funding arrangements and leadership\'s personal finances likely to intensify as a result."
       ],
-      image: "https://images.pexels.com/photos/36605387/pexels-photo-36605387.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      image: "https://e3.365dm.com/26/05/1920x1080/skynews-nigel-nigel-farage_7248454.jpg?20260514114527",
       source: "Sky News",
-      url: "https://news.sky.com/story/plaid-cymru-leader-rhun-ap-iorwerth-named-first-minister-of-wales-after-labour-humbled-13543167",
+      url: "https://news.sky.com/story/nigel-farage-bought-16314m-property-after-receiving-1635m-gift-from-british-crypto-billionaire-sky-news-learns-13543909",
       category: "Politics"
     }
   ]
