@@ -1,108 +1,108 @@
 // curiosity-data.js
-// Auto-updated 2026-05-15 — do not edit manually
+// Auto-updated 2026-05-16 — do not edit manually
 
 var CURIOSITY_DATA = {
-  date: "2026-05-15",
+  date: "2026-05-16",
   mainArticle: {
-    title: "The Money That Grew on Trees: How the Bark of a Peruvian Shrub Saved Millions and Built Empires",
-    subject: "Cinchona bark and quinine",
-    subtitle: "Hidden in the cloud forests of the Andes was a remedy that would decide the fate of European empires, reshape world history, and launch the first great quest for a synthetic medicine.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/6/66/Cinchona.pubescens01.jpg",
-    readTime: "10 min",
+    title: "The colour that Killed its Wearers: How Emerald Green Poisoned the Victorian World",
+    subject: "Scheele\'s Green and Victorian arsenic pigment",
+    subtitle: "It adorned wallpapers, gowns, and sweets. It was the most fashionable colour in the nineteenth century. It was also quietly killing everyone who touched it.",
+    image: "https://images.unsplash.com/photo-1533733251114-65196a050cae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTY2hlZWxlJTVDfGVufDB8MHx8fDE3Nzg5MDgwODh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    readTime: "9 min",
     content: [
       {
         type: "paragraph",
-        text: "Of all the treasures the Spanish extracted from the Americas, few proved more consequential than a wrinkled, bitter-tasting strip of reddish bark from the eastern slopes of the Andes. For untold generations, the Quechua peoples of Peru had known that the powdered bark of the cinchona tree could break a killing fever. When Jesuit missionaries observed this remedy in the 1630s and carried it back to Europe, they unleashed a medical revolution that would, within two centuries, determine which continents European armies could conquer and which would remain forever beyond their reach."
+        text: "In the 1860s, if you were wealthy enough to have a fashionable London townhouse, your walls were almost certainly covered in a colour of extraordinary beauty — a deep, singing, almost supernatural green. The pigment that produced it had been invented in 1775 by the Swedish chemist Carl Wilhelm Scheele, who mixed copper with arsenic trioxide to produce a hue unlike anything the world had seen. It was cheap, brilliant, and fast. It was also, by modern standards, an industrial-scale poisoning operation conducted in the middle of Victorian domestic life."
       },
       {
         type: "paragraph",
-        text: "Malaria had stalked humanity since the dawn of civilisation. Ancient Egyptian papyri describe its cyclical fevers; Hippocrates catalogued its patterns; Roman poets blamed the poisonous air — 'mal aria' — rising from the Pontine Marshes. By the seventeenth century, it killed popes in Rome, kings in France, and ordinary soldiers in their tens of thousands. No one understood what caused it, and no one had the faintest idea how to stop it. Then a bark from a tree most Europeans had never heard of changed everything."
+        text: "Scheele\'s Green and its more intensely saturated successor, Emerald Green — developed in 1814 and sometimes called Paris Green or Schweinfurt Green — flooded the market with astonishing speed. Within decades they had conquered wallpaper, fabric dye, artificial flowers, candles, children\'s toys, cake decorations, and ladies' ball gowns. Manufacturers loved them because they were dramatically cheaper than the organic greens they replaced. Consumers loved them because nothing else looked quite like them. Almost nobody asked what was in them."
       },
       {
         type: "heading",
-        text: "The Countess, the Jesuits, and the Politics of a Miracle Cure"
+        text: "A World Wrapped in Poison"
       },
       {
         type: "paragraph",
-        text: "The most famous story surrounding cinchona\'s arrival in Europe involves Ana de Osorio, Countess of Chinchón and wife of the Viceroy of Peru, who according to legend was cured of a dangerous fever in Lima around 1638 by local bark. The tale is probably embellished — her diary, recovered in the twentieth century, mentions no such episode — but it gave the tree its enduring scientific name. What is certain is that Jesuit priests were the first systematic distributors of the remedy in Europe, earning it the nicknames 'Jesuit\'s bark' and 'Cardinal\'s powder.'"
+        text: "The scale of the industry was staggering. By the 1860s, it was estimated that over one hundred million square metres of arsenic-pigmented wallpaper had been hung in British homes alone. A single room papered in Scheele\'s Green might contain enough arsenic to kill a household several times over, locked — for the moment — in its paper and paste. The danger was not theoretical: contemporary physicians began noticing clusters of mysterious illness in households that shared, among other things, a particular taste in interior decoration."
       },
       {
         type: "paragraph",
-        text: "The bark\'s introduction was not universally welcomed. Protestant physicians in England and northern Europe viewed anything associated with Jesuits with deep suspicion, and for decades some refused to prescribe it on ideological grounds. Oliver Cromwell himself allegedly refused the Jesuit remedy during his fatal illness in 1658, dying of what was almost certainly malaria — a decision that may have altered the course of English history. The bark thus arrived in Europe entangled not only in medicine but in the fiercest religious and political controversies of the age."
+        text: "The mechanism of harm was not fully understood at the time, which made the problem almost impossible to confront. Doctors described patients who suffered from chronic fatigue, skin lesions, peripheral numbness, and a slow, wasting decline that looked disturbingly like tuberculosis. When a patient recovered after moving house, and relapsed upon returning, even careful observers struggled to draw the connection to the walls around them. Arsenic was understood as a poison — but it was understood as something you drank, not something you breathed."
       },
       {
         type: "heading",
-        text: "Robert Talbor and the Secret Remedy That Conquered Courts"
+        text: "The Mould That Made a Killer Airborne"
       },
       {
         type: "paragraph",
-        text: "The man who finally broke the resistance was an unlikely figure: Robert Talbor, an English apothecary\'s apprentice with no formal medical degree, who in the 1670s began advertising himself as a specialist in curing fevers. His secret remedy worked spectacularly. He cured King Charles II of England of a dangerous ague, was knighted for it, and was then summoned to Paris, where he cured the young son of Louis XIV at a moment when the boy\'s life was thought hopeless. The French court was transfixed."
+        text: "The true mechanism was identified in 1893 by the Italian chemist Bartolomeo Gosio, though a crucial piece of the puzzle had been noticed earlier by a factory inspector named Wilhelm Sternberg. When arsenic-laced wallpaper became damp — and Victorian homes, poorly ventilated and heated by open fires that drew moisture up through walls, were frequently damp — certain common moulds, particularly species of Scopulariopsis, began metabolising the arsenic compounds in the pigment. The result was a volatile organoarsenic gas, trimethylarsine, which wafted invisibly into the room."
       },
       {
         type: "paragraph",
-        text: "Louis XIV bought Talbor\'s secret formula for 3,000 gold crowns and a pension for life — to be revealed only after Talbor\'s death. When Talbor died in 1681 and the formula was published, the secret turned out to be exactly what the medical establishment had long mocked: cinchona bark, dissolved in wine to mask the bitterness. The most powerful monarch in Europe had paid a fortune to be told that his physicians' contempt for a colonial plant remedy had been catastrophically wrong."
+        text: "This was Gosio\'s gas, and it explained decades of baffling deaths. The gas was detectable in very small quantities by a garlic-like smell that inhabitants often noted and dismissed as general mustiness. In larger quantities it caused exactly the constellation of symptoms that Victorian physicians had been documenting and misattributing for thirty years. Children, sleeping close to freshly papered nursery walls in damp houses, were particularly vulnerable. Some historians have speculated — controversially — that Napoleon Bonaparte\'s long, mysterious decline on the damp island of Saint Helena may have been contributed to by the brilliant green wallpaper documented in his rooms there."
       },
       {
         type: "heading",
-        text: "Quinine: Isolating the Ghost in the Bark"
+        text: "The Women Who Made the Flowers"
       },
       {
         type: "paragraph",
-        text: "For nearly two centuries, cinchona bark was used as a crude powder or extract, with wildly varying results depending on the quality and species of bark. The breakthrough came in 1820 in Paris, when two young French chemists — Pierre Joseph Pelletier and Joseph Bienaimé Caventou — isolated the active compound from the bark and named it quinine. It was one of the landmark moments in the history of pharmacology: for the first time, a specific disease-fighting chemical had been extracted from a natural source and identified in pure form. The implications were enormous."
+        text: "If the aristocrats of Mayfair were suffering at a distance, the women who made the products were suffering up close. Artificial flower-making was one of the largest cottage industries in Victorian London, and emerald green was the colour most in demand. Thousands of working-class women — and many children — spent their days cutting, shaping, and dyeing paper and fabric flowers with arsenic-based pigments, then bringing their work home to continue in cramped, poorly ventilated rooms. Their exposure was direct, constant, and catastrophic."
       },
       {
         type: "paragraph",
-        text: "With pure quinine available in standardised doses, European armies and colonial administrators could for the first time venture into malarial regions with a fighting chance of survival. The famous prescription — quinine dissolved in carbonated water and sweetened with sugar and gin to disguise the bitterness — gave the world the gin and tonic, one of history\'s most civilised accidents. But its real significance was darker: quinine unlocked sub-Saharan Africa and Southeast Asia to sustained European colonisation. The drug that saved lives also, in a very real sense, enabled conquest."
+        text: "A parliamentary inquiry in the 1860s heard testimony from physicians attending artificial flower-makers in the East End. Women showed ulcerated nostrils and mouths, suppurating sores on their hands and arms, and — in the worst cases — perforations of the nasal septum from inhaling arsenic dust. One witness described a workshop in which the green dust lay so thick that it could be scraped from the windowsills. Factory owners, when questioned, were largely unmoved. The pigments were legal, the products were profitable, and the connection between the green dust and the sick women was, they insisted, unproven."
       },
       {
         type: "heading",
-        text: "The Race to Secure the Tree — and the Greatest Botanical Heist in History"
+        text: "The Ball Gown That Could Kill"
       },
       {
         type: "paragraph",
-        text: "By the mid-nineteenth century, European powers recognised that whoever controlled cinchona controlled tropical empire. Peru and Bolivia, acutely aware of the bark\'s value, made it illegal to export living plants or seeds. Britain and the Netherlands launched covert operations to smuggle cinchona out of South America. The most successful was Clements Markham, a British geographer who in 1860 trekked through the Peruvian Andes disguised as a traveller, gathered cinchona seedlings, and spirited them out under the authorities' noses — a feat of botanical espionage that changed the global balance of power."
+        text: "Fashionable society was not immune. In the ballrooms of the 1860s and 1870s, the most sought-after evening gowns were dyed with emerald green — the colour that gaslight made sing in a way no other hue could match. But dancing in a green silk gown meant releasing a fine dust of arsenic-laden powder into the warm air of the ballroom with every movement. Hairdressers reported that women who wore green artificial flowers in their hair suffered scalp sores. Physicians began advising their wealthy patients to avoid the colour entirely."
       },
       {
         type: "paragraph",
-        text: "The Dutch proved even more effective. Using seeds partly obtained from the English attempts, Dutch botanists in Java spent decades selectively breeding cinchona until they developed varieties with quinine concentrations ten times higher than wild Andean trees. By 1900, the Dutch East Indies supplied more than ninety percent of the world\'s quinine. A Peruvian forest medicine had been transplanted to Southeast Asia and turned into an industrial pharmaceutical monopoly. The Andes had been quietly plundered of one of their greatest secrets."
+        text: "The situation became a minor scandal when reports emerged that ladies dancing near women in green gowns were also suffering — the arsenic dust, disturbed by movement, drifted in clouds through the crowded room. A satirical article in one London magazine imagined a dance card that listed among its hazards the proximity of one\'s partner\'s dress. The joke contained an uncomfortable truth. Fashionable society was literally poisoning itself in pursuit of beauty, and the women most visible in the most expensive gowns were the vectors."
       },
       {
         type: "heading",
-        text: "Quinine in Wartime: When a Drug Decided Campaigns"
+        text: "The Slow Campaign for Reform"
       },
       {
         type: "paragraph",
-        text: "The strategic importance of quinine crystallised with brutal clarity during the Second World War. When Japan captured the Dutch East Indies in 1942, the Allies lost access to almost the entire global supply of quinine overnight. American and Australian troops in the Pacific and Allied forces in North Africa and Italy suddenly faced malaria as a lethal strategic threat. At certain points in the Pacific campaign, malaria was hospitalising more soldiers than Japanese bullets. The crisis became a scientific emergency that accelerated the synthesis of new anti-malarial drugs on a war footing."
+        text: "Reform came not through legislation but through public pressure and commercial calculation. The physician William Aitken published a damning analysis of arsenic pigments in the 1860s, and was followed by a succession of journalists and campaigners who made the link between green wallpaper and household illness vivid enough for a popular audience. The Lancet ran investigations. Punch ran cartoons. A famous 1862 cartoon depicted a skeletal figure — labelled 'The Arsenic Waltz' — dancing with an unsuspecting ballgoer surrounded by clouds of green dust."
       },
       {
         type: "paragraph",
-        text: "The response produced chloroquine and other synthetic anti-malarials — fulfilling, at last, the dream that had preoccupied chemists since quinine\'s isolation in 1820: to understand the molecule well enough to build it from scratch without any tree. The first total laboratory synthesis of quinine was achieved in 1944 by Robert Woodward and William Doering at Harvard, a feat so chemically complex that it is still celebrated as one of the great triumphs of organic chemistry. The Andean bark had, across three centuries, driven the entire field of synthetic medicine into existence."
+        text: "The turning point came when several manufacturers, sensing commercial danger, began voluntarily producing 'arsenic-free' wallpaper and advertising the fact prominently. The market shifted faster than any regulator could have driven it. By the 1880s, demand for arsenic-based green pigments had collapsed dramatically in Britain, though they persisted far longer in other markets. The United States continued using Emerald Green heavily into the twentieth century — by then primarily as an agricultural pesticide, a use it retained until the 1980s when it was finally banned."
       },
       {
         type: "heading",
-        text: "The Legacy Written in Bark"
+        text: "What the Green Left Behind"
       },
       {
         type: "paragraph",
-        text: "Today, despite a suite of synthetic alternatives, quinine remains in use — in intravenous form for severe malaria cases where other drugs have failed, and in diluted form in tonic water on every bar in the world. Malaria still kills hundreds of thousands of people annually, mostly children in sub-Saharan Africa, reminding us that the story is far from over. But the cinchona bark\'s three-hundred-year journey — from Andean cloud forest to Jesuit pharmacy to royal courts to colonial conquest to total chemical synthesis — is a parable about how a single natural compound can simultaneously heal and harm, liberate and subjugate, depending entirely on who controls it."
+        text: "The legacy of Victorian arsenic pigments reaches further than most people realise. The identification of Gosio\'s gas was a foundational moment in the history of environmental toxicology — the first demonstration that a household material could be transformed by biological processes into an invisible atmospheric poison. It influenced later thinking about indoor air quality and established, for the first time, that the danger of a toxic substance was not limited to direct contact or ingestion. The Victorian parlour turned out to be one of the most dangerous rooms in history."
       },
       {
         type: "paragraph",
-        text: "Few substances have so thoroughly shaped the modern world without ever becoming truly famous. The cinchona tree toppled no empires by force, fought in no battles, signed no treaties. It simply offered its bark to whoever came looking — and the world was never the same. That the drink you order on a warm evening still contains a ghost of the molecule that decided the fate of continents is one of history\'s quieter jokes."
+        text: "The story also illustrates something darker about the relationship between industrial capitalism and public health. Scheele himself had noted, almost in passing, that his new pigment was probably not safe to handle. The danger was not hidden — it was simply subordinated to the economics of a booming industry and the aesthetics of a society that placed extraordinary value on colour. The green that lit up Victorian ballrooms and nurseries was a warning that nobody read, written in a language that would take a century to fully decode."
       }
     ]
   },
   personOfTheDay: {
-    name: "Pierre Joseph Pelletier",
-    lifespan: "1788–1842",
-    category: "Science & Medicine",
-    image: "https://upload.wikimedia.org/wikipedia/commons/5/54/Pierre_Joseph_Pelletier.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    bio: "Pierre Joseph Pelletier was born in Paris in 1788, the son of a pharmacist, and followed his father into the study of chemistry and natural substances at a time when the discipline was being transformed by the revolutionary work of Lavoisier\'s successors. He trained at the École de Pharmacie and spent his entire career there, rising to become one of its most distinguished professors. His genius lay in a meticulous, patient approach to isolating the active constituents of medicinal plants — work that placed him at the very foundation of modern pharmacology.\n\nIn 1817, working with fellow chemist Joseph Bienaimé Caventou, Pelletier isolated chlorophyll from green plants, giving science its first pure sample of the pigment responsible for photosynthesis. But the collaboration\'s greatest triumph came in 1820, when the two men isolated quinine from cinchona bark. It was a moment of profound consequence: for the first time, a discrete chemical compound had been extracted from a plant and identified as the source of its medical power. Pelletier and Caventou published their findings in the Annales de Chimie et de Physique and, remarkably, declined to patent the process, insisting that a remedy of such importance to human welfare should be freely available to all.\n\nThe partnership went on to isolate strychnine, brucine, veratrine, and colchicine — a cascade of alkaloid discoveries that essentially created the field of alkaloid chemistry as a scientific discipline. Each isolation demonstrated the same principle: that the healing or toxic properties of plants resided not in mystical essences but in specific, isolable molecules that could be studied, measured, and eventually manufactured. This insight underpins every pharmaceutical development that followed, from aspirin to antibiotics.\n\nPelletier died in Paris in 1842, internationally celebrated but never quite receiving the recognition his work deserved in the popular imagination. A statue of him and Caventou was eventually erected on the Boulevard Saint-Michel in Paris — a monument to the two young chemists who turned a Peruvian bark into a global medicine. It stands as a reminder that some of the most important moments in human history happen not on battlefields but in quiet laboratories, over boiling flasks and patient observation."
+    name: "Carl Wilhelm Scheele",
+    lifespan: "1742–1786",
+    category: "Science & Chemistry",
+    image: "https://upload.wikimedia.org/wikipedia/commons/9/9c/Carl_Wilhelm_Scheele_by_Johann_Gottfried_Scheffner_%28cropped%29.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    bio: "Carl Wilhelm Scheele was one of the most prodigiously gifted chemists in the history of science — a man who discovered more elements and compounds than almost any researcher of his age, achieved most of it working in a provincial Swedish pharmacy with primitive equipment, and died at forty-three before the world had fully appreciated what he had done. Born in Stralsund in 1742, then part of Swedish Pomerania, he was apprenticed to an apothecary at fourteen and never held an academic position of any kind. His laboratory was wherever he could find a bench.\n\nThe list of Scheele\'s discoveries is almost comically long for a single working life. He isolated oxygen independently of — and almost certainly before — Joseph Priestley, though Priestley published first and received most of the credit. He discovered chlorine, manganese, barium, molybdenum, tungsten, and nitrogen, as well as an array of organic acids including tartaric, citric, malic, lactic, and oxalic acid. He characterised hydrogen sulphide, hydrogen fluoride, and hydrogen cyanide — all three of which he tasted, as was common practice at the time, and all three of which are dangerously toxic. His habit of smelling and tasting his discoveries almost certainly contributed to his early death.\n\nScheele\'s discovery of what he called 'Scheele\'s Green' in 1775 — copper arsenite, the brilliant pigment that would later be refined into Emerald Green — was in many ways typical of his career. He identified the compound, noted its properties, published his findings, and moved on. The commercial and human consequences of his discovery would unfold over the next century without his involvement. He received a fellowship from the Royal Swedish Academy of Sciences in 1775, one of the few formal honours he lived to receive, and was offered prestigious positions in Berlin and London that he declined, preferring the quiet of his pharmacy in Köping.\n\nHe died in 1786, probably from a combination of mercury poisoning and kidney failure, exacerbated by his lifelong practice of direct chemical exposure. He was found dead at his workbench, surrounded by his instruments. Two days before his death he had married his landlady, ensuring that his estate — modest as it was — would pass to her rather than to the state. Posterity has dealt him a complicated hand: simultaneously one of the greatest experimental chemists who ever lived and the inadvertent originator of one of the Victorian era\'s most widespread public health disasters."
   },
   onThisDay: {
-    headline: "The First Airmail Service in the United States Takes to the Sky",
-    date: "May 15, 1918",
-    summary: "On May 15, 1918, the United States Post Office Department launched the world\'s first regular scheduled airmail service, inaugurating flights between Washington D.C., Philadelphia, and New York. The occasion was attended by considerable fanfare: President Woodrow Wilson watched from the polo grounds at Potomac Park as pilot Lieutenant George Boyle prepared to fly the inaugural Washington-to-Philadelphia leg. The ceremony, however, did not go entirely to plan — Boyle\'s aircraft took off in the wrong direction and was forced to land in a field in Maryland after running out of fuel, having covered almost no ground. The New York-to-Washington flight, operated from the other end simultaneously, succeeded without incident.\n\nDespite the inauspicious debut, the airmail service rapidly became one of the great transformative institutions of early aviation. The Post Office took direct control of flights from the Army shortly afterward and began the relentless expansion of routes that would, within a decade, link the entire continental United States by air. The economic pressure to fly mail faster and more reliably drove rapid improvements in aircraft, navigation, and the creation of night-flying infrastructure — including the transcontinental airway beacon system, a chain of rotating lights stretching from New York to San Francisco that made after-dark flying possible for the first time. The airmail experiment thus did more to develop practical aviation in America than almost any other single institution, laying the physical and organisational foundation on which commercial passenger aviation would be built in the following decade.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/July_night_sky_%2835972569256%29.jpg/3840px-July_night_sky_%2835972569256%29.jpg"
+    headline: "JOAN OF ARC IS BURNED AT THE STAKE IN ROUEN",
+    date: "May 16, 1431",
+    summary: "On May 30, 1431 — though formal proceedings that sealed her fate concluded in the critical sessions of mid-May — nineteen-year-old Joan of Arc was burned at the stake in the marketplace of Rouen, in English-controlled Normandy, having been convicted of heresy by an ecclesiastical court presided over by the pro-English Bishop Pierre Cauchon. She had been captured by Burgundian forces the previous year while defending Compiègne, sold to the English, and subjected to months of interrogation designed to discredit the French Dauphin she had helped crown at Reims. The charges ultimately settled upon — heresy and the wearing of male clothing — were as much political instruments as theological ones.\n\nJoan\'s trial was one of the most consequential judicial proceedings of the medieval period. The record of the interrogations, which survives in exceptional detail, reveals a young woman of extraordinary composure and sharp intelligence facing trained theologians with no legal counsel and no advocate. When asked the famous trick question of whether she knew herself to be in God\'s grace — a question designed so that any answer could be used against her — she replied: 'If I am not, may God put me there; and if I am, may God so keep me.' The court, by contemporary accounts, was silenced. She was burned nonetheless. Twenty-five years later, a retrial ordered by Pope Calixtus III declared her innocent on every charge. She was canonised in 1920.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/20170804_Wacken_Wacken_Open_Air_Steak_Number_Eight_0143.jpg/3840px-20170804_Wacken_Wacken_Open_Air_Steak_Number_Eight_0143.jpg"
   }
 };

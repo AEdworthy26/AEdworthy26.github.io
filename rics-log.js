@@ -3,6 +3,45 @@
 
 var RICS_LOG = [
   {
+    "date": "2026-05-16",
+    "topic": "Planning Appeals: Written Representations, Hearings and Inquiries \u2014 Strategy, Process and Risk Management",
+    "module": "Planning and Development Management",
+    "level": 3,
+    "apc_competency": "Planning and Development Management (Level 3)",
+    "focus": "This lesson covers the three routes of planning appeal in England \u2014 written representations, hearings and public inquiries \u2014 with a focus on strategic decision-making, procedural requirements and risk management in the context of residential-led and affordable housing schemes. For Alfie at Latimer, understanding when and how to appeal, and how to manage the process commercially, is critical competency at Level 3.",
+    "image": "__IMG_RICS__",
+    "content": [],
+    "summary": [
+      "The three appeal procedures (written representations, hearings, public inquiries) differ in complexity, cost and timescale \u2014 correct procedural selection is a strategic decision, not an administrative one.",
+      "Written representations are appropriate for documentary disputes; hearings for moderate complexity; inquiries where expert evidence, cross-examination and legal argument are required.",
+      "Programme risk from appeals is material \u2014 WR takes ~24 weeks, hearings ~34 weeks, inquiries 12\u201318 months \u2014 and must be mapped against land option long-stops and grant funding windows.",
+      "Costs awards require unreasonable behaviour AND demonstrable wasted expense \u2014 they are a strategic tool, not a routine tactic, and must be deployed with care in LPA relationship management.",
+      "For RP-led developers, the decision to appeal requires a structured merits assessment weighing legal prospects, programme, costs, LPA relationship risk and the availability of a negotiated solution."
+    ],
+    "qa": [
+      {
+        "q": "An LPA refuses your 120-unit residential scheme on a single ground \u2014 that the proposed affordable housing tenure mix does not comply with the Local Plan. The viability dispute is entirely a matter of documented evidence. What appeal procedure would you recommend, and why?",
+        "a": "Written representations. The dispute is entirely documentary \u2014 it turns on the appraisal methodology, comparable evidence and NPPG compliance, all of which can be fully assessed by the Inspector from the written record. There is no factual dispute requiring oral examination, and the issues are well-defined. WR is also the fastest procedure (~20\u201326 weeks) and the least costly, which matters given programme and budget pressures. I would submit a detailed Statement of Case cross-referencing NPPG paragraphs on viability, the RICS Viability Guidance Note 2019, and the independently assessed appraisal. I would also consider whether to make a costs application if the LPA\\'s refusal was not supported by an independent viability review."
+      },
+      {
+        "q": "What is a 'recovered appeal' and why does it matter for a 300-unit residential scheme promoted by Latimer?",
+        "a": "A recovered appeal is one where the Secretary of State (acting through MHCLG) directs that the appeal be determined by the SoS personally, rather than by the Inspector. The Inspector still conducts the inquiry and writes a report with a recommendation, but the decision is made at ministerial level. Recovery criteria include proposals of 150+ dwellings or 5+ hectares, proposals significantly inconsistent with national policy, and cases raising novel legal issues. For a 300-unit Latimer scheme, recovery is likely on scale grounds. The practical implications are: (1) the timetable extends by 3\u20136 months post-inquiry; (2) there is additional political risk, as the SoS may depart from the Inspector\\'s recommendation for policy reasons; and (3) the decision is more susceptible to judicial review if procedurally flawed."
+      },
+      {
+        "q": "Describe the procedural stages of a planning inquiry from validation to decision.",
+        "a": "Following validation by PINS: (1) Pre-inquiry meeting (PIM) \u2014 chaired by the Inspector, agrees the programme, main issues, Rule 6 parties and any procedural matters. (2) Exchange of Statements of Case by all parties. (3) Exchange of Proofs of Evidence (expert witness statements) and Rebuttal Proofs. (4) The inquiry itself: opening statements, examination-in-chief of witnesses, cross-examination by opposing parties and Rule 6 parties, re-examination, closing submissions (oral or written). (5) Accompanied site visit. (6) Inspector\\'s decision or report to SoS (if recovered), typically 6\u201312 weeks after close of inquiry. Document management \u2014 a paginated, indexed bundle lodged with PINS and all parties \u2014 runs throughout."
+      },
+      {
+        "q": "What threshold must be met for a successful costs award in a planning appeal, and what would you cite as unreasonable LPA behaviour in the context of a heritage-related refusal?",
+        "a": "Under s78A TCPA 1990 and Planning Practice Guidance, a costs award requires: (1) unreasonable behaviour by the party against whom costs are sought, AND (2) that unreasonable behaviour has caused the applicant to incur unnecessary or wasted expense. Behaviour is unreasonable where a party does not have a reasonable case, fails to comply with procedural requirements, or introduces new grounds without proper notice. In a heritage-related refusal, unreasonable LPA behaviour might include: the LPA\\'s own conservation officer having supported the scheme at pre-application stage but the LPA subsequently refusing on heritage grounds without new evidence; the LPA failing to call a heritage witness at inquiry to defend the heritage reason for refusal; or the LPA introducing a new heritage objection post-validation without prior notification. I would need to demonstrate both elements \u2014 the behaviour and the consequential wasted cost \u2014 with supporting evidence."
+      },
+      {
+        "q": "You are the development manager for a Latimer scheme where the LPA has refused consent and you are considering appeal. Walk me through the merits assessment framework you would apply before advising the investment committee whether to appeal.",
+        "a": "A structured merits assessment would consider: (1) Reasons for refusal \u2014 are they grounded in adopted local plan policy and NPPF, or are they based on officer/committee judgment that is inconsistent with the policy framework? Have comparable schemes been approved nearby? (2) Appeal prospects \u2014 planning consultant\\'s written advice on realistic probability of success (not just theoretical prospects). (3) Programme \u2014 does the appeal timetable (WR: ~24 weeks; inquiry: 12\u201318 months) fit within the land option long-stop or grant funding window? Can the long-stop be extended? (4) Cost \u2014 what are the estimated professional fees for the appeal procedure being recommended? (5) Negotiation \u2014 can the reason for refusal be addressed through revised design, S106 terms or a further pre-app discussion without going to appeal? (6) Relationship risk \u2014 what is the strategic importance of this LPA to Latimer\\'s wider pipeline? A narrow win at inquiry on an adversarially conducted case may cost more in future development opportunities than it delivers. (7) Precedent \u2014 does a refusal, if unchallenged, set a precedent that damages Latimer\\'s wider pipeline in this or adjacent LPAs? All these factors are weighed and presented to the investment committee with a clear recommendation and risk register entry."
+      }
+    ]
+  },
+  {
     "date": "2026-05-15",
     "topic": "Contaminated Land: Phase 1 and Phase 2 Site Investigations, Remediation Strategy and Liability Allocation in Residential Development",
     "module": "Contaminated Land",

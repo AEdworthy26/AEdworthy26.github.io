@@ -1,61 +1,61 @@
 // financial-news-data.js
-// Auto-updated 2026-05-15 — do not edit manually
+// Auto-updated 2026-05-16 — do not edit manually
 
 var FINANCIAL_NEWS = {
-  date: "2026-05-15",
+  date: "2026-05-16",
   main: {
-    title: "Jaguar Land Rover Annual Profit Falls 99% After US Tariffs and Cyber-Attack Take Toll",
-    category: "Corporate Earnings",
+    title: "Stock Market Rally Confronts Inflation and Higher Interest Rates",
+    category: "Markets & Economics",
     content: [
-      "Jaguar Land Rover, Britain\'s largest carmaker, has reported a catastrophic collapse in annual profits, with earnings before tax and exceptional items falling more than 99% to just £14 million in the year to March. The figure represents one of the most dramatic profit declines in recent British automotive history, stripping away nearly all of the company\'s bottom-line gains in a single reporting period. The results have sent shockwaves through the UK manufacturing sector, which had already been bracing for a difficult year amid global trade tensions and geopolitical instability.",
-      "The dual blows of US tariffs and a debilitating cyber-attack are being cited as the primary drivers of the collapse. The cyber-attack disrupted JLR\'s factories for months, halting production at a time when the company could least afford operational downtime, and the financial damage from that incident alone is expected to have run into hundreds of millions of pounds. Meanwhile, US tariffs imposed on imported vehicles dramatically increased the cost of doing business in one of JLR\'s most important and lucrative markets, squeezing margins on every vehicle sold stateside.",
-      "Adding to the company\'s woes, JLR has also seen its competitive position in China erode significantly. Sales in the Chinese market were hit hard by intensifying local competition, as domestic electric vehicle makers and other rivals have rapidly gained market share at the expense of traditional premium Western brands. China had been a critical growth engine for JLR in previous years, making the deterioration there particularly painful and difficult to offset through performance in other regions.",
-      "The results underscore a broader vulnerability facing legacy automakers that have supply chains, tariff exposures, and market dependencies spread across multiple geopolitical fault lines. JLR\'s parent company, Tata Motors of India, will now face hard questions from investors about the path to recovery and whether the brand\'s ambitious electrification strategy can be sustained given the severe pressure on cash flows. Analysts are likely to scrutinise whether the company has sufficient liquidity to weather further disruption while simultaneously funding its electric vehicle transition.",
-      "The JLR earnings report arrives as a stark real-world illustration of how converging risks — trade policy, cybersecurity vulnerabilities, and shifting consumer preferences — can compound simultaneously to devastating effect. For the broader UK economy, a near-total profit wipeout at its largest carmaker is a sobering signal even as other data this week showed surprising resilience in GDP growth. The company\'s results will likely intensify calls from industry groups for the UK government to negotiate stronger trade protections and invest more heavily in industrial cyber defences to safeguard manufacturing competitiveness."
+      "The S&P 500 has been on a remarkable winning streak, notching multiple consecutive weeks of gains even as economic headwinds gather force. Strong corporate earnings have been the primary engine powering equities higher, giving investors enough confidence to overlook deteriorating macro signals. The resilience of the market has surprised many analysts who expected the weight of tighter financial conditions to have already taken a greater toll on valuations.",
+      "Inflation has been accelerating in recent months, raising the prospect that the Federal Reserve may be forced to resume interest rate increases after a prolonged pause. Higher borrowing costs typically compress corporate profit margins and make equities less attractive relative to bonds, putting upward pressure on yields. Yet markets have so far shrugged off these concerns, buoyed by earnings reports that have broadly beaten expectations across multiple sectors.",
+      "The tension between robust earnings and a worsening inflation backdrop has created a fundamental question for investors: how long can corporate profits shield stock prices from the consequences of a tighter monetary environment? Historically, rate-hiking cycles have eventually crimped consumer spending and business investment, eroding the very earnings growth that has underpinned the rally. Bulls argue that corporate balance sheets remain strong enough to absorb higher costs, while bears warn that the lag effects of monetary policy have not yet fully materialized.",
+      "Bond markets are beginning to send clearer warning signals, with yields rising as traders price in a greater probability of additional rate hikes later in the year. The divergence between a buoyant stock market and a more cautious fixed-income market is a pattern that strategists say cannot persist indefinitely. If the Fed does move to tighten further, the repricing in equities could be swift and significant, particularly for growth stocks that are most sensitive to discount-rate changes.",
+      "For now, the market rally continues to defy gravity, sustained by an earnings season that has delivered more positive surprises than disappointments. Investors are being forced to weigh the immediate evidence of corporate health against the longer-term risks posed by sticky inflation and a potentially more hawkish central bank. The coming weeks of economic data — particularly inflation readings and labor market figures — are likely to prove decisive in determining whether the rally has the staying power to extend further or whether a meaningful correction is on the horizon."
     ],
-    image: "https://i.guim.co.uk/img/media/ecf0e67e75c86b140675845224c7dd6693a625a0/988_0_4940_3952/master/4940.jpg?width=1200&quality=85&auto=format&fit=max&s=1dff5fb37b0a8e29b9ffec2c1c2bb587",
-    source: "The Guardian",
-    sourceUrl: "https://www.theguardian.com/business/2026/may/14/jaguar-land-rover-annual-profit-falls-99-per-cent-us-tariffs-cyber-attack"
+    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTdG9jayUyME1hcmtldCUyMFJhbGx5JTIwQ29uZnJvbnRzJTIwSW5mbGF0aW9uJTIwYW5kJTIwSGlnaGVyJTIwSW50ZXJlc3QlMjBSYXRlc3xlbnwwfDB8fHwxNzc4OTA3ODE3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    source: "The New York Times",
+    sourceUrl: "https://www.nytimes.com/2026/05/15/business/stocks-bonds-interest-rates-inflation.html"
   },
   secondary: [
     {
       id: "fn1",
-      title: "UK Economy Sees Surprise 0.3% Growth in March Despite Iran War",
-      summary: "Britain\'s economy grew by 0.3% in March, defying analyst forecasts of a small contraction amid the ongoing Iran conflict.",
+      title: "Pound Heads for Worst Week in 18 Months Amid UK Political Uncertainty",
+      summary: "Sterling slumped toward its worst weekly performance in a year and a half as City traders grew anxious over a potential Labour leadership challenge from Manchester Mayor Andy Burnham.",
       body: [
-        "Official figures from the ONS showed the UK economy expanding by 0.3% in March, a result that caught markets and economists off guard given widespread expectations of a contraction driven by the uncertainties of the Iran war and associated energy price pressures. The stronger-than-expected reading has provided a degree of reassurance that the UK\'s economic foundations remain more resilient than feared at the outset of the conflict.",
-        "Chancellor Rachel Reeves was quick to seize on the data as validation of the current government\'s economic stewardship, arguing that now is not the time to introduce instability into economic policy. The figures will offer relief to financial markets and businesses monitoring UK economic momentum, though analysts caution that one month of positive data does not guarantee the economy is insulated from the longer-term effects of the war."
+        "The pound came under sustained selling pressure this week as financial markets reacted to growing speculation that Prime Minister Keir Starmer could face a leadership challenge from Andy Burnham later in 2026. UK government borrowing costs also jumped sharply, with analysts pointing to concerns that a Burnham-led government would adopt a more expansionary fiscal stance and increase public borrowing. The twin moves in sterling and gilt yields reflected a classic market response to political uncertainty layered on top of pre-existing worries about inflation.",
+        "Rising oil prices added further fuel to inflation concerns, compounding the anxiety already gripping bond and currency markets. The convergence of political risk and macroeconomic headwinds created a particularly difficult environment for UK assets this week, with traders unwilling to hold sterling through a weekend of continued uncertainty. The scale of the weekly decline in the pound — its largest since late 2024 — underscored just how seriously financial markets are taking the prospect of a shift in the UK\'s economic policy direction."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/b1fe/live/5a756b80-4e9e-11f1-8afc-5fc3c33cbd56.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/cx213n20njzo?at_medium=RSS&at_campaign=rss",
-      category: "Economics"
+      image: "https://i.guim.co.uk/img/media/7dfdfc19628844d06515db4621323c59bd0f7f77/499_0_2038_1629/master/2038.jpg?width=1200&quality=85&auto=format&fit=max&s=2f06f68788ceb95a22d937b0a6ee77c7",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/business/2026/may/15/pound-sterling-andy-burnham-labour-bid-uk-borrowing-bond-yield-oil-price-inflation",
+      category: "Currency & Markets"
     },
     {
       id: "fn2",
-      title: "Cerebras AI Chip Maker Soars 89% in Market Debut as Tech IPO Wave Builds",
-      summary: "Cerebras, a Silicon Valley artificial intelligence chip manufacturer, surged 89% on its first day of trading as a broader wave of high-profile tech IPOs gathers momentum.",
+      title: "FTSE 100 Insurer Hiscox Shares Surge on Takeover Approach from Canada\'s Intact Financial",
+      summary: "Shares in London-listed insurer Hiscox leapt to record highs after reports that Canada\'s Intact Financial Corp is exploring a potential takeover bid for the company.",
       body: [
-        "Cerebras made a stunning stock market debut, with shares rocketing 89% on the first day of trading and signalling robust investor appetite for AI-focused hardware companies even amid broader market uncertainty. The listing is part of a growing wave of technology initial public offerings, with SpaceX, OpenAI, and Anthropic also reported to be taking steps toward going public.",
-        "The Cerebras debut is being watched closely by market participants as a barometer for how much premium investors are willing to assign to AI infrastructure plays at a time when the sector continues to attract enormous capital despite elevated valuations. A successful IPO pipeline in the AI space could unlock significant new capital formation in the technology sector through the remainder of 2026."
+        "Hiscox became the latest in a string of UK-listed companies to attract overseas acquisition interest, with its shares surging to all-time highs on Friday following reports that Intact Financial Corp, one of Canada\'s largest property and casualty insurers, is weighing a formal offer. The news added to a busy week for UK mergers and acquisitions activity, with Tate & Lyle also reported to be drawing interest from a US suitor. The flurry of bids reflects a broader trend of foreign buyers viewing sterling-denominated assets as attractively valued following the currency\'s recent weakness.",
+        "A successful takeover of Hiscox would represent a significant deal in the specialty insurance market, where the Lloyd\'s of London-focused insurer has built a strong reputation. The willingness of large overseas corporates to pursue UK targets despite political and economic uncertainty suggests that fundamental valuations remain compelling from an international buyer\'s perspective. Analysts noted that the wave of inbound M&A interest could itself provide a degree of support for UK equity markets more broadly."
       ],
-      image: "https://static01.nyt.com/images/2026/05/14/multimedia/14biz-cerebras-2-wbqh/14biz-cerebras-2-wbqh-mediumSquareAt3X.jpg",
-      source: "The New York Times",
-      url: "https://www.nytimes.com/2026/05/14/technology/cerebras-ipo-ai.html",
-      category: "Markets"
+      image: "https://i.guim.co.uk/img/media/498981111bc1ed8e26b5722b104c9e3fbf2c82e3/0_105_4501_3603/master/4501.jpg?width=1200&quality=85&auto=format&fit=max&s=4aa82e847e01604368c152e506309505",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/business/2026/may/15/ftse-100-insurer-hiscox-shares-takeover-bid-intact-tate-lyle",
+      category: "Mergers & Acquisitions"
     },
     {
       id: "fn3",
-      title: "Boeing Shares Slide as China Deal Delivers Only 200 Jets — Far Below Expectations",
-      summary: "Boeing\'s stock suffered its steepest single-day fall in six months after China committed to buying 200 aircraft, well short of the 500-plane deal investors had anticipated from Trump\'s Beijing visit.",
+      title: "Berkshire\'s Abel Bets $2.8 Billion on Delta as He Diverges from Buffett\'s Playbook",
+      summary: "New Berkshire Hathaway chief Greg Abel has placed a bold $2.8 billion wager on Delta Air Lines, marking a striking departure from predecessor Warren Buffett\'s decision to exit all airline stocks in 2020.",
       body: [
-        "Boeing shares fell sharply after President Trump\'s high-profile trip to Beijing yielded a commitment from China to purchase 200 of the company\'s jets, a figure that deeply disappointed investors who had been pricing in an order of more than double that number. The gap between expectation and delivery underscored the limits of what the diplomatic visit was able to achieve in concrete commercial terms for one of America\'s flagship exporters.",
-        "The disappointing order outcome adds to a turbulent period for Boeing, which has been navigating production challenges, safety scrutiny, and weakened demand in key international markets. The stock\'s reaction highlights how closely Wall Street had tied its near-term Boeing thesis to a transformative trade breakthrough with China that ultimately did not materialise."
+        "Greg Abel, who took the helm at Berkshire Hathaway following Warren Buffett\'s retirement, has made one of his most consequential early investment decisions by building a $2.8 billion position in Delta Air Lines. The move is particularly notable given that Buffett famously dumped all of Berkshire\'s airline holdings in 2020 at a significant loss, calling the aviation sector structurally challenged. Abel\'s bullish stance on Delta suggests he sees a meaningfully different risk-reward profile in the airline today compared to the pandemic era.",
+        "The bet on Delta comes at an interesting moment for the aviation industry, with soaring fuel costs weighing on margins across the sector. In a contrasting move, hedge fund Appaloosa simultaneously disclosed it had exited its entire positions in Delta, American, and United Airlines, redirecting capital into Amazon and Uber instead. The divergence between Berkshire\'s accumulation and Appaloosa\'s exit illustrates the sharply divided views among sophisticated investors about the outlook for major US carriers."
       ],
-      image: "https://images.mktw.net/im-51805407",
+      image: "https://images.unsplash.com/photo-1626202826025-07ce3d501413?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxCZXJrc2hpcmUlNUN8ZW58MHwwfHx8MTc3ODkwNzgxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
       source: "MarketWatch",
-      url: "https://www.marketwatch.com/story/boeings-stock-drops-as-trumps-order-deal-with-china-disappoints-baff30fa?mod=mw_rss_topstories",
-      category: "Markets"
+      url: "https://www.marketwatch.com/story/berkshires-abel-sours-on-some-of-warren-buffetts-picks-while-betting-big-on-delta-7ad679f7?mod=mw_rss_topstories",
+      category: "Investing"
     }
   ]
 };

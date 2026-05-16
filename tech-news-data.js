@@ -1,61 +1,61 @@
 // tech-news-data.js
-// Auto-updated 2026-05-15 — do not edit manually
+// Auto-updated 2026-05-16 — do not edit manually
 
 var TECH_NEWS = {
-  date: "2026-05-15",
+  date: "2026-05-16",
   main: {
-    title: "Energy Supplier Abandons Lake Tahoe Residents to Serve Data Centers",
-    category: "Technology & Energy",
+    title: "YouTube Expands AI Deepfake Detection Tool to All Adult Users",
+    category: "AI & Technology",
     content: [
-      "A growing conflict over energy allocation is playing out in the Lake Tahoe region of California, where an energy supplier has effectively deprioritized service to approximately 49,000 local residents in favor of meeting the voracious power demands of data centers located across the border in Nevada. The situation has thrust an otherwise picturesque mountain community into the center of a national debate about who gets to claim America\'s electrical grid as artificial intelligence infrastructure continues its rapid expansion. Residents say the shift has left them vulnerable to outages and uncertain about the reliability of their power supply going forward.",
-      "The tension between residential energy needs and data center demand is not unique to Lake Tahoe, but the starkness of the tradeoff in this case has drawn significant attention. Data centers, which power everything from cloud computing platforms to large AI model training runs, consume extraordinary amounts of electricity and are increasingly being built in areas where land is cheap and regulatory conditions are favorable. The problem is that these facilities often outcompete existing residential and commercial customers for grid capacity, leaving communities to bear the consequences of an infrastructure system that was never designed to absorb such concentrated industrial demand.",
-      "Nevada has positioned itself as a favorable environment for data center development, offering tax incentives and streamlined permitting that attract major technology companies looking to expand their computing infrastructure. This has created a situation where the energy supplier in question faces competing obligations — on one side, long-standing residential customers in California who depend on reliable power for heating, cooling, and daily life, and on the other, high-revenue industrial contracts with data center operators who pay premium rates and consume power at scale. When forced to choose where to allocate constrained supply, the economics appear to have favored the data centers.",
-      "The broader implications of this story stretch well beyond Lake Tahoe. As AI development accelerates and the number of large-scale data centers multiplies across the United States, energy grids in many regions are being pushed to their limits. Utilities, grid operators, and regulators are scrambling to understand how to manage a future in which industrial computing demand may rival or exceed that of entire cities. The Lake Tahoe case serves as a cautionary tale about what happens when that reckoning arrives faster than policy frameworks can adapt, leaving ordinary residents caught in the middle.",
-      "Community advocates and local officials are reportedly pushing back against the supplier\'s prioritization decisions, calling for regulatory intervention to ensure that residential customers are not left behind in the race to power the AI economy. The situation raises fundamental questions about the public obligation of utility companies and whether energy — as an essential service — should be subject to stricter allocation rules when scarcity arises. As data center construction shows no signs of slowing, pressure is mounting on state and federal regulators to establish clearer guidelines before similar conflicts emerge in communities across the country."
+      "YouTube is rolling out its AI-powered likeness detection program to all users over the age of 18, marking a significant expansion of a tool that was previously available only to a limited group. The feature allows virtually any adult on the platform to enlist YouTube\'s artificial intelligence to hunt for potential deepfakes of themselves circulating across the site. This represents one of the most ambitious consumer-facing deployments of AI deepfake detection technology by a major platform to date.",
+      "The likeness detection system works through a selfie-style facial scan that a user submits to YouTube, which the platform\'s AI then uses as a reference point to monitor uploaded content for lookalikes. When the system identifies a potential match — footage that may have been synthetically generated or manipulated to resemble the user — YouTube sends an alert so the individual can review and take action. The process is designed to give everyday users a meaningful degree of control over how their appearance is used or misused on the platform.",
+      "The expansion comes amid a growing crisis of AI-generated non-consensual imagery and deepfake videos proliferating across social media and video platforms worldwide. Celebrities, public figures, and ordinary individuals alike have found themselves victims of convincingly fabricated videos that can damage reputations, facilitate harassment, or be used in scams and fraud. YouTube\'s move signals that major platforms are under increasing pressure — from regulators, advocacy groups, and users — to take proactive rather than reactive stances on synthetic media.",
+      "By opening the tool to all adults rather than restricting it to verified creators or public figures, YouTube is acknowledging that deepfake harm is not limited to the famous or professionally prominent. Anyone with an online presence can become a target, and the democratization of AI video generation tools has made it easier than ever for bad actors to fabricate convincing content. Making the detection feature universally available is a meaningful step toward leveling the playing field between those who create harmful synthetic content and those who are victimized by it.",
+      "The move will likely intensify broader industry conversations about the responsibilities of large platforms in policing AI-generated content. Questions remain about the accuracy of the detection system, the potential for false positives, and how YouTube will handle disputed cases where the platform\'s AI flags content that creators argue is legitimate. Nevertheless, YouTube\'s expansion of this tool sets a new benchmark for what users can reasonably expect from video platforms in the age of generative AI, and may prompt competitors to accelerate the development of similar protective features."
     ],
-    image: "https://cdn.arstechnica.net/wp-content/uploads/2026/05/Lake-Tahoe-town-1152x648.jpg",
-    source: "Ars Technica",
-    sourceUrl: "https://arstechnica.com/ai/2026/05/energy-supplier-abandons-lake-tahoe-residents-to-serve-data-centers/"
+    image: "https://images.unsplash.com/photo-1611162616475-46b635cb6868?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxZb3VUdWJlJTIwRXhwYW5kcyUyMEFJJTIwRGVlcGZha2UlMjBEZXRlY3Rpb24lMjBUb29sJTIwdG8lMjBBbGwlMjBBZHVsdCUyMFVzZXJzfGVufDB8MHx8fDE3Nzg5MDc4NjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    source: "The Verge",
+    sourceUrl: "https://www.theverge.com/news/931884/youtube-likeness-detection-ai-deepfake-expansion-all-adults"
   },
   secondary: [
     {
       id: "tc1",
-      title: "Meta Brings Virtual Neural Handwriting to All Ray-Ban Display Glasses Users",
-      summary: "Meta is rolling out the ability to write messages using only hand gestures to all users of its Ray-Ban Display smart glasses, expanding access to a feature previously limited to developers.",
+      title: "ArXiv Will Ban Researchers Who Upload Papers Full of AI Slop",
+      summary: "ArXiv is cracking down on academic papers that show clear signs of unchecked AI-generated content, threatening bans for authors whose submissions contain hallucinated references or LLM meta-comments.",
       body: [
-        "Meta has announced that its neural handwriting feature — which allows wearers to compose messages simply by making hand gestures — is now available to all users of the Meta Ray-Ban Display smart glasses, not just developers. The rollout includes support for WhatsApp, Messenger, Instagram, and native Android and iOS messaging applications, making it a broadly practical tool for everyday communication.",
-        "The expansion marks a significant step in Meta\'s push to make its smart glasses a genuinely functional computing platform rather than a novelty device. By integrating gesture-based input with major messaging apps, Meta is signaling that it sees the Ray-Ban Display line as a serious interface for daily digital life, with ambitions that extend well beyond simple audio and camera features."
+        "The preprint research platform ArXiv has announced a new enforcement policy targeting papers that contain 'incontrovertible evidence' that authors failed to review AI-generated output, such as hallucinated citations or stray meta-comments left behind by large language models. Researchers found to be submitting such work will face bans from the platform, marking one of the stiffest penalties any major academic repository has imposed for AI misuse.",
+        "The policy reflects growing alarm within the scientific community about the degradation of research quality as generative AI tools become ubiquitous in academic writing. ArXiv\'s intervention is significant because preprint servers play a critical role in the rapid dissemination of scientific findings, and low-quality AI-generated content risks polluting the broader research ecosystem before peer review can catch errors."
       ],
-      image: "https://images.pexels.com/photos/14126678/pexels-photo-14126678.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      image: "https://images.unsplash.com/photo-1775185172785-4bbd6b0fc8f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxBclhpdiUyMFdpbGwlMjBCYW4lMjBSZXNlYXJjaGVycyUyMFdobyUyMFVwbG9hZCUyMFBhcGVycyUyMEZ1bGwlMjBvZiUyMEFJJTIwU2xvcHxlbnwwfDB8fHwxNzc4OTA3ODYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       source: "The Verge",
-      url: "https://www.theverge.com/tech/930941/meta-ray-ban-display-virtual-neural-handwriting-apps-developer",
-      category: "Hardware & Wearables"
+      url: "https://www.theverge.com/science/931766/arxiv-ai-slop-ban-researchers",
+      category: "AI & Science"
     },
     {
       id: "tc2",
-      title: "SpaceXAI Has Lost More Than 50 Employees Since Its February Merger",
-      summary: "Elon Musk\'s newly merged SpaceXAI company has seen a significant exodus of staff since its formation, with over 50 employees departing amid concerns about burnout, leadership shifts, and weakened retention incentives.",
+      title: "Hotel Check-In System Exposed a Million Passports and Driver\'s Licenses",
+      summary: "A tech company maintaining a hotel check-in system misconfigured its cloud storage to public, leaving over a million passports and driver\'s licenses accessible to anyone without a password.",
       body: [
-        "More than 50 employees have left SpaceXAI since the company was formed through a merger in February, according to reporting by TechCrunch, raising serious questions about the organizational stability of one of the most high-profile ventures in the AI and aerospace sectors. Observers point to a combination of factors driving the departures, including burnout, changes in leadership dynamics following the merger, and active talent poaching by competitors.",
-        "Analysts also note that liquidity events tied to the merger may have weakened traditional equity-based retention incentives, giving employees who had already cashed out less financial reason to stay through a turbulent transition period. The staff bleed comes at a critical time for the AI industry, where top engineering talent is fiercely contested, and losing experienced personnel could have meaningful consequences for SpaceXAI\'s ability to compete."
+        "A serious cybersecurity lapse has come to light after a hotel check-in technology provider was found to have set its cloud storage bucket to public, inadvertently exposing the sensitive identity documents of roughly one million guests. The exposed data included scans of passports and driver\'s licenses — among the most valuable categories of personal information for identity thieves and fraudsters.",
+        "The incident highlights the persistent risks posed by cloud misconfiguration, a relatively simple but devastatingly common error that continues to result in large-scale data exposures across industries. For the hospitality sector, which routinely collects government-issued identification during check-in, the breach underscores an urgent need for tighter oversight of the third-party technology vendors entrusted with guests' most sensitive data."
       ],
-      image: "https://images.pexels.com/photos/32756227/pexels-photo-32756227.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      image: "https://images.unsplash.com/photo-1581553673739-c4906b5d0de8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxIb3RlbCUyMENoZWNrLUluJTIwU3lzdGVtJTIwRXhwb3NlZCUyMGElMjBNaWxsaW9uJTIwUGFzc3BvcnRzJTIwYW5kJTIwRHJpdmVyJTVDfGVufDB8MHx8fDE3Nzg5MDc4NjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       source: "TechCrunch",
-      url: "https://techcrunch.com/2026/05/14/elon-musks-spacexai-has-been-bleeding-staff-since-its-merger/",
-      category: "Tech Industry"
+      url: "https://techcrunch.com/2026/05/15/a-hotel-check-in-system-left-a-million-passports-and-drivers-licenses-open-for-anyone-to-see/",
+      category: "Cybersecurity"
     },
     {
       id: "tc3",
-      title: "Raspberry Pi Boss Warns AI Hype Could Deter People From Pursuing Tech Careers",
-      summary: "Eben Upton, founder and CEO of Raspberry Pi, has cautioned that exaggerated claims about AI eliminating computing jobs could discourage young people from entering the technology sector, with potentially damaging consequences for the broader economy.",
+      title: "Greg Brockman Officially Takes Control of OpenAI\'s Products in Latest Shake-Up",
+      summary: "OpenAI has reorganized its executive structure once again, with co-founder Greg Brockman taking charge of products as the company works to unify ChatGPT and Codex into a single core experience.",
       body: [
-        "Eben Upton has spoken out against the growing narrative that artificial intelligence will render vast numbers of software and computing jobs obsolete, arguing that such claims risk creating a chilling effect on technology education and career choices. Upton, whose Raspberry Pi organization has long focused on making computing accessible and encouraging new generations of programmers, said the rhetoric does not reflect the likely reality of AI\'s impact on the job market.",
-        "The warning carries weight given Raspberry Pi\'s grassroots influence on tech education globally. If prospective students or career changers are put off from pursuing computing skills because they believe AI will make those skills worthless, the long-term result could be a talent shortage that harms innovation and economic growth — even as the demand for skilled technologists continues to rise in an increasingly AI-driven world."
+        "OpenAI is undergoing another internal reorganization, with Greg Brockman stepping into a central product leadership role as the company pursues a strategy of merging its flagship ChatGPT assistant and its Codex coding tool into one unified product experience. The reshuffle reflects OpenAI\'s ongoing efforts to streamline its increasingly sprawling portfolio of AI offerings under clearer organizational ownership.",
+        "Brockman\'s return to a prominent operational role is notable given his earlier sabbatical from the company, and signals that OpenAI\'s leadership is leaning on its founding generation to navigate a critical period of product consolidation and intensifying competition from rivals including Google, Anthropic, and Meta. The shake-up comes at a time when the AI industry is watching OpenAI closely amid its high-profile legal battles and continued transition toward a more conventional corporate structure."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/b124/live/7a8cb440-4fc1-11f1-b651-41ca043d3d3f.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/clypr8p2lewo?at_medium=RSS&at_campaign=rss",
-      category: "Artificial Intelligence"
+      image: "https://media.wired.com/photos/6a074b744504eb478c5455df/master/pass/OpenAI-ReOrg-Business-AP-26120551910145.jpg",
+      source: "WIRED",
+      url: "https://www.wired.com/story/openai-reorg-greg-brockman-product/",
+      category: "AI Industry"
     }
   ]
 };

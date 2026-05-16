@@ -1,60 +1,60 @@
 // us-politics-news-data.js
-// Auto-updated 2026-05-15 — do not edit manually
+// Auto-updated 2026-05-16 — do not edit manually
 
 var US_POLITICS_NEWS = {
-  date: "2026-05-15",
+  date: "2026-05-16",
   main: {
-    title: "Supreme Court Preserves Nationwide Access to Abortion Pill Mifepristone via Telehealth and Mail",
+    title: "Supreme Court Rejects Virginia Democrats' Effort to Reinstate New Voting Map",
     category: "Politics",
     content: [
-      "The United States Supreme Court ruled on Thursday that the abortion pill mifepristone can continue to be prescribed online or over the phone and sent through the mail, maintaining nationwide access to medication abortion while litigation over the drug\'s distribution continues through the courts. The decision represents a significant moment in the ongoing legal battle over reproductive rights in the United States, temporarily blocking attempts to restrict how the widely used pill is dispensed. Mifepristone is currently the most common method of terminating pregnancies in the country, making the Court\'s intervention one of the most consequential rulings on abortion access in recent years.",
-      "The case centered on whether states and anti-abortion advocates could successfully challenge the federal approval process and distribution methods for mifepristone, particularly the ability of healthcare providers to prescribe the drug via telehealth appointments and have it shipped directly to patients through the postal system. Louisiana was among the states at the center of the legal fight, with the ruling coming amid a broader national reckoning over how far individual states can go in restricting access to federally approved medications. The Supreme Court\'s decision to preserve access, at least for now, signals that the justices were unwilling to allow sweeping restrictions to take effect while the underlying legal questions remain unresolved.",
-      "For millions of Americans living in states with limited access to in-person abortion services, the ability to obtain mifepristone through telehealth and mail-order pharmacy has been a critical lifeline. The telehealth pathway in particular has allowed patients in rural and underserved areas to consult with physicians remotely and receive the medication without traveling long distances to a clinic, a barrier that has grown significantly since the Supreme Court\'s 2022 Dobbs decision overturned Roe v. Wade. Reproductive rights advocates celebrated Thursday\'s ruling as a vital protection, even as they acknowledged that the legal battle over mifepristone\'s future is far from over.",
-      "The ruling places the Supreme Court once again at the center of the intensely divisive national debate over abortion policy, a debate that has reshaped American electoral politics since Dobbs. Anti-abortion groups and conservative state attorneys general had pushed aggressively for restrictions on mail distribution, arguing that the FDA\'s expanded access rules had bypassed proper regulatory safeguards. The Court\'s decision to maintain the status quo, however temporarily, suggests the justices are proceeding cautiously before making any ruling that could dramatically curtail access to the nation\'s most commonly used abortion method.",
-      "The political reverberations of Thursday\'s decision are expected to be felt well into the 2026 midterm election cycle, as abortion rights have consistently proven to be a mobilizing issue for Democratic voters and a source of internal tension within the Republican Party. Vice President JD Vance and other Republican leaders have sought to focus midterm messaging on issues like Medicaid fraud and border security, but the Supreme Court\'s continued engagement with abortion access ensures the issue will remain front and center in the public debate. With litigation over mifepristone set to continue, further Supreme Court rulings on the matter are likely before the year is out."
+      "The United States Supreme Court has dealt a significant blow to Virginia Democrats by rejecting their effort to reinstate a newly drawn congressional map ahead of this year\'s midterm elections. State officials had urgently petitioned the justices to intervene and allow Virginia to use the Democrat-drawn map, which had recently been approved by voters in a referendum. The Court\'s refusal to step in effectively leaves the state without the new boundaries that Democrats had hoped would improve their electoral prospects in key congressional districts.",
+      "The map at the center of the dispute was drawn by Democrats and subsequently put before Virginia voters, who approved it in a referendum. However, the Virginia Supreme Court had already declared that referendum null and void, ruling that state lawmakers failed to follow the proper legal procedures required to place the issue on the ballot in the first place. That procedural failure proved fatal to the Democrats' effort, as it gave the state\'s highest court grounds to invalidate the popular vote entirely, regardless of the outcome.",
+      "The case highlights the increasingly high-stakes legal battles being waged over congressional redistricting as the 2026 midterm elections approach. Redistricting fights have become a central front in American partisan politics, with both parties understanding that the shape of congressional maps can determine which party controls the House of Representatives for years at a time. Virginia, a state that has been a competitive battleground in recent cycles, is seen as a particularly important arena in the fight for House seats.",
+      "For Virginia Democrats, the Supreme Court\'s refusal to intervene is a painful setback that removes what they had hoped would be a more favorable electoral landscape going into the midterms. The procedural misstep by Democratic lawmakers in failing to properly shepherd the referendum onto the ballot ultimately undermined what voters had approved at the polls. Critics of the ruling argue that it effectively disenfranchises Virginia voters whose expressed will — ratified at the ballot box — has now been set aside on technical procedural grounds.",
+      "The episode serves as a cautionary tale about the legal complexities surrounding the redistricting process and the importance of strict procedural compliance when pursuing ballot referendums. It also underscores the outsized role that courts continue to play in shaping American elections, with judicial decisions on map boundaries capable of overriding both legislative action and direct voter participation. As the midterms draw closer, both parties are watching closely to see what map Virginia will ultimately use and what downstream effects the Court\'s decision may have on the broader balance of power in Congress."
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/5a4e/live/f7f76ea0-4fe1-11f1-b25f-11d991ea08a3.jpg",
-    source: "NPR",
-    sourceUrl: "https://www.npr.org/2026/05/14/nx-s1-5821591/mifepristone-supreme-court-louisiana-telehealth"
+    image: "https://static01.nyt.com/images/2026/05/13/multimedia/00dc-scotus-virginia-lvgj/00dc-scotus-virginia-lvgj-mediumSquareAt3X.jpg",
+    source: "The New York Times",
+    sourceUrl: "https://www.nytimes.com/2026/05/15/us/politics/supreme-court-virginia-redistricting.html"
   },
   secondary: [
     {
       id: "us1",
-      title: "Justice Dept. Says Trump-Ordered Citizenship Voting Lists Are Likely Unreliable",
-      summary: "A government lawyer told a federal court that no 'responsible state' should rely on Trump-ordered citizenship lists to update voter rolls.",
+      title: "Top Drug Regulator Fired From the FDA Amid Agency Tumult",
+      summary: "Dr. Tracy Beth Hoeg was abruptly dismissed from the FDA, saying she did not know who had fired her or why, as the agency faces significant internal turmoil.",
       body: [
-        "At a court hearing examining a presidential order aimed at exerting greater federal control over elections, a Justice Department lawyer acknowledged that citizenship lists compiled under the Trump administration\'s directive are likely unreliable and should not be used by states to make changes to their voter rolls. The admission is a striking one, coming from the very administration that ordered the lists to be created, and it raises serious questions about the legal and practical foundation of the underlying executive action.",
-        "The case reflects a broader struggle over who controls the mechanics of American elections, with the Trump administration pushing to expand federal influence over voter registration processes that have traditionally been managed at the state level. Critics of the citizenship list initiative have argued from the outset that the data underpinning such lists is error-prone and could lead to eligible voters being improperly purged, making the Justice Department\'s own concession a potentially significant development in ongoing litigation."
+        "Dr. Tracy Beth Hoeg, a top drug regulator at the Food and Drug Administration, was fired under circumstances that she described as opaque — she stated that she did not know who had fired her or the reasons behind her dismissal. The termination comes during a period of notable instability at the FDA, with the agency experiencing broader upheaval in recent days that has alarmed public health advocates and industry observers alike.",
+        "The firing of a senior regulator without clear explanation raises serious questions about the direction of federal drug oversight and the independence of scientific decision-making within the agency. Critics warn that politically motivated personnel changes at the FDA could undermine public confidence in the drug approval process, which depends heavily on the perception of impartiality and scientific rigor."
       ],
-      image: "https://static01.nyt.com/images/2026/05/14/multimedia/14dc-voting-qlgz/14dc-voting-qlgz-mediumSquareAt3X.jpg",
+      image: "https://static01.nyt.com/images/2026/05/15/multimedia/15trump-news-fda-topart-jfmg/15trump-news-fda-topart-jfmg-mediumSquareAt3X.jpg",
       source: "The New York Times",
-      url: "https://www.nytimes.com/2026/05/14/us/politics/trump-citizenship-list-voting.html",
+      url: "https://www.nytimes.com/2026/05/15/us/politics/fda-drug-regulator-fired.html",
       category: "Politics"
     },
     {
       id: "us2",
-      title: "Vance Travels to Maine to Pitch Medicaid Anti-Fraud Message Ahead of Midterms",
-      summary: "Vice President JD Vance traveled to Maine to deliver a midterm election pitch arguing that only Republicans can root out fraud in public benefit programs.",
+      title: "Colorado\'s Democratic Governor Commutes Sentence of Trump Ally Tina Peters",
+      summary: "Governor Jared Polis granted an early release to Tina Peters, a former county official convicted of tampering with election equipment, following pressure from the Trump administration.",
       body: [
-        "Vice President JD Vance traveled to Maine on Thursday to deliver a politically charged speech blaming Democrats for fraud in Medicaid and other public benefits programs, framing the Republican Party as the only force capable of cleaning up what he characterized as systemic abuse. The visit came as the administration has halted some Medicaid payments, citing fraud concerns, a move that has drawn sharp criticism from Democrats and advocates for low-income Americans who rely on the program.",
-        "The Maine stop also featured an unexpected moment of bipartisan warmth, with Vance praising Republican Senator Susan Collins, a moderate and occasional critic of President Trump, as he campaigned for Republican House candidate Paul LePage. The carefully managed appearance underscored the GOP\'s strategy of projecting party unity while seeking to energize the base around anti-fraud and fiscal responsibility themes heading into the November midterms."
+        "Colorado\'s Democratic Governor Jared Polis made the controversial decision to commute the sentence of Tina Peters, a former county clerk who was convicted of tampering with election equipment, allowing her to leave prison early. The commutation came after a sustained pressure campaign by the Trump administration, which had advocated for Peters' release, making the decision a politically charged one for the Democratic governor.",
+        "Peters became a prominent figure in election-denial circles after she was accused of allowing unauthorized access to voting systems in Mesa County, Colorado, and her case drew significant national attention. Polis\'s decision to grant the commutation, despite his Democratic affiliation and the serious nature of Peters' conviction, is likely to generate fierce debate about the intersection of political pressure and the administration of criminal justice."
       ],
-      image: "https://images.pexels.com/photos/5205504/pexels-photo-5205504.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      source: "The New York Times",
-      url: "https://www.nytimes.com/2026/05/14/us/politics/medicaid-fraud-vance-republicans-maine.html",
+      image: "https://images.unsplash.com/photo-1524429656589-6633a470097c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxDb2xvcmFkbyU1Q3xlbnwwfDB8fHwxNzc4OTA3NzY5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "NPR",
+      url: "https://www.npr.org/2026/05/15/nx-s1-5690286/tina-peters-polis-commutation-trump",
       category: "Politics"
     },
     {
       id: "us3",
-      title: "Redistricting Battles Upend Voting Maps Across Multiple States Ahead of Midterms",
-      summary: "Two major court decisions have thrown redistricting fights into turmoil across several US states, with voting experts warning that ordinary voters are bearing the heaviest costs.",
+      title: "Trump Discloses $220 Million in Financial Transactions Involving Major U.S. Companies",
+      summary: "Newly released financial disclosure forms show President Trump reported at least $220 million in securities transactions involving major American corporations earlier this year.",
       body: [
-        "A pair of recent court rulings have dramatically reshuffled the redistricting landscape across multiple US states, creating confusion over voting maps at a time when both parties are fighting intensely for control of Congress heading into the November midterms. Louisiana has emerged as a central battleground, with the state moving to redraw a Black House district following the Supreme Court\'s recent decision to weaken the Voting Rights Act, a move that voting rights advocates have condemned as a rollback of hard-won protections.",
-        "While much of the political coverage has focused on which party stands to gain from the redrawn maps, voting experts and advocates warn that it is ordinary citizens who will pay the steepest price — dealing with thrown-out ballots, map confusion, and uncertainty about which district they belong to. Republicans, who had feared losing ground in the midterms before the court decisions shifted the playing field, now appear to have secured a structural advantage that could influence not just 2026 but elections well beyond."
+        "The U.S. Office of Government Ethics released financial disclosure forms on Thursday revealing that President Trump disclosed at least $220 million in financial transactions involving securities of major U.S. companies, with cumulative values estimated to range between $220 million and approximately $750 million. The disclosures include purchases of securities linked to prominent American corporations, raising fresh questions about potential conflicts of interest at the highest level of the executive branch.",
+        "Financial disclosures by sitting presidents are closely scrutinized by ethics watchdogs and political opponents alike, as the scale and nature of a president\'s investments can create situations where personal financial interests may intersect with official policy decisions. The breadth of the transactions revealed in Thursday\'s filings is expected to intensify ongoing scrutiny of Trump\'s financial entanglements and their potential influence on federal policy."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/5b40/live/2ce04030-4f09-11f1-bbd7-4dd9e7da3820.jpg",
-      source: "NPR",
-      url: "https://www.npr.org/2026/05/14/nx-s1-5818507/redistricting-voters-louisiana-alabama-virginia",
+      image: "https://thehill.com/wp-content/uploads/sites/2/2026/05/AP26135552024615-e1778858860401.jpg?w=900",
+      source: "The Hill",
+      url: "https://thehill.com/homenews/administration/5881010-trump-discloses-220m-transactions/",
       category: "Politics"
     }
   ]

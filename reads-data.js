@@ -1,19 +1,19 @@
 // reads-data.js
-// Auto-updated 2026-05-15 — do not edit manually
+// Auto-updated 2026-05-16 — do not edit manually
 
 var READS_DATA = {
-  date: "2026-05-15",
+  date: "2026-05-16",
   book: {
-    title: "The Hours",
-    author: "Michael Cunningham",
-    year: 1998,
-    genres: ["Literary Fiction", "Contemporary Fiction", "LGBTQ+"],
-    desc: "Three women in three different eras — Virginia Woolf composing Mrs Dalloway in 1920s Richmond, a 1950s Los Angeles housewife quietly suffocating inside a perfect life, and a New York editor in the 1990s navigating love and loss during the AIDS crisis — are braided together in a single luminous day. Cunningham\'s prose is breathtakingly controlled, each sentence carrying the weight of ordinary moments rendered extraordinary, and the cumulative effect is something closer to music than conventional narrative. The novel won the Pulitzer Prize and the PEN/Faulkner Award, and remains one of the most elegant achievements in late-twentieth-century American fiction. It asks, with devastating gentleness, what it means to choose a life, to want more from it, or to relinquish it altogether.",
-    whyRead: "As the days lengthen and the world hums with ordinary urgency, The Hours is a perfect reminder of how much drama lives inside a single afternoon — and why great fiction makes that feel like everything.",
+    title: "The Tipping Point: How Little Things Can Make a Big Difference",
+    author: "Malcolm Gladwell",
+    year: 2000,
+    genres: ["Psychology", "Sociology", "Popular Science"],
+    desc: "Malcolm Gladwell argues that social epidemics — the sudden spread of ideas, products, and behaviours — follow the same logic as biological ones, and that tiny, precise changes can tip the balance into a cascade. He introduces three types of people who drive contagion (Connectors, Mavens, and Salesmen), a 'stickiness factor' that determines whether a message lodges in the memory, and the overlooked power of context and environment in shaping human behaviour. Drawing on cases as varied as the resurrection of Hush Puppies shoes, the dramatic drop in New York crime in the 1990s, and the enduring cult of Sesame Street, the book is propulsive and endlessly quotable. Gladwell writes with the precision of a journalist and the sweep of a theorist, making abstract social science feel viscerally alive.",
+    whyRead: "In an era saturated with viral content and tipping-point rhetoric, going back to the book that coined the modern usage of the term reveals just how sharp and original the thinking really was — and how much of it still cuts through.",
     rating: 3.9,
     ratingSource: "Goodreads",
-    ratingCount: "200,000+",
-    coverUrl: "https://covers.openlibrary.org/b/id/223032-L.jpg",
-    amazonUrl: "https://www.amazon.co.uk/dp/5941450168"
+    ratingCount: "700,000+",
+    coverUrl: "https://covers.openlibrary.org/b/id/10873292-L.jpg",
+    amazonUrl: "https://www.amazon.co.uk/dp/0316316962"
   }
 };
