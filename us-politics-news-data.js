@@ -1,60 +1,60 @@
 // us-politics-news-data.js
-// Auto-updated 2026-05-16 — do not edit manually
+// Auto-updated 2026-05-17 — do not edit manually
 
 var US_POLITICS_NEWS = {
-  date: "2026-05-16",
+  date: "2026-05-17",
   main: {
-    title: "Supreme Court Rejects Virginia Democrats' Effort to Reinstate New Voting Map",
+    title: "Trump-Backed Challenger Defeats Republican Senator Who Voted to Convict President",
     category: "Politics",
     content: [
-      "The United States Supreme Court has dealt a significant blow to Virginia Democrats by rejecting their effort to reinstate a newly drawn congressional map ahead of this year\'s midterm elections. State officials had urgently petitioned the justices to intervene and allow Virginia to use the Democrat-drawn map, which had recently been approved by voters in a referendum. The Court\'s refusal to step in effectively leaves the state without the new boundaries that Democrats had hoped would improve their electoral prospects in key congressional districts.",
-      "The map at the center of the dispute was drawn by Democrats and subsequently put before Virginia voters, who approved it in a referendum. However, the Virginia Supreme Court had already declared that referendum null and void, ruling that state lawmakers failed to follow the proper legal procedures required to place the issue on the ballot in the first place. That procedural failure proved fatal to the Democrats' effort, as it gave the state\'s highest court grounds to invalidate the popular vote entirely, regardless of the outcome.",
-      "The case highlights the increasingly high-stakes legal battles being waged over congressional redistricting as the 2026 midterm elections approach. Redistricting fights have become a central front in American partisan politics, with both parties understanding that the shape of congressional maps can determine which party controls the House of Representatives for years at a time. Virginia, a state that has been a competitive battleground in recent cycles, is seen as a particularly important arena in the fight for House seats.",
-      "For Virginia Democrats, the Supreme Court\'s refusal to intervene is a painful setback that removes what they had hoped would be a more favorable electoral landscape going into the midterms. The procedural misstep by Democratic lawmakers in failing to properly shepherd the referendum onto the ballot ultimately undermined what voters had approved at the polls. Critics of the ruling argue that it effectively disenfranchises Virginia voters whose expressed will — ratified at the ballot box — has now been set aside on technical procedural grounds.",
-      "The episode serves as a cautionary tale about the legal complexities surrounding the redistricting process and the importance of strict procedural compliance when pursuing ballot referendums. It also underscores the outsized role that courts continue to play in shaping American elections, with judicial decisions on map boundaries capable of overriding both legislative action and direct voter participation. As the midterms draw closer, both parties are watching closely to see what map Virginia will ultimately use and what downstream effects the Court\'s decision may have on the broader balance of power in Congress."
+      "Senator Bill Cassidy of Louisiana, a two-term Republican who made the fateful decision to vote to convict President Donald Trump following the January 6, 2021 attack on the Capitol, has been defeated in his state\'s GOP Senate primary. Cassidy failed to muster enough votes to advance to a runoff, effectively ending his reelection bid and capping years of intense political fallout stemming from that single impeachment vote. Trump-endorsed Representative Julia Letlow emerged as the top candidate and advanced to the runoff, delivering a decisive victory for the president and his allies.",
+      "Trump had thrown his full political weight behind Letlow, branding Cassidy as 'disloyal' and making the Louisiana race a referendum on loyalty to the MAGA movement. The president\'s direct intervention in the primary underscored how thoroughly he has worked to reshape the Republican Party in his own image, using his endorsement power as both a reward for allies and a weapon against those who crossed him. Cassidy\'s defeat sends an unmistakable message to any remaining Republican officeholder who might consider defying Trump on a consequential vote.",
+      "Cassidy was one of only seven Republican senators who voted to convict Trump in the 2021 impeachment trial, a group that has since been systematically winnowed down through retirement, primary defeats, and decisions not to seek reelection. With Cassidy\'s loss, the New York Times noted that no more than two of those original seven will remain in Congress next year, a remarkable consolidation of Trump\'s grip on the Senate Republican caucus. The near-total elimination of this group from elected office illustrates the severe political consequences that followed their historic votes.",
+      "The Louisiana primary was not without its own layer of chaos. Election day confusion erupted after the state\'s governor canceled the U.S. House primaries after tens of thousands of votes had already been cast, leaving voters struggling to make sense of last-minute changes to the ballot and the rules governing the contest. The turmoil added an unusual backdrop to what was already one of the most closely watched Republican primaries of the 2026 cycle, given the high symbolic stakes attached to Cassidy\'s fate.",
+      "Cassidy\'s defeat is widely seen as a defining moment for the post-Trump GOP, confirming that there is virtually no viable political space within the Republican primary electorate for figures who opposed the president on impeachment. For Trump, the victory is a personal triumph that reinforces his dominance over the party heading into the 2026 midterm elections. The result also foreshadows continued pressure on any Republican in Congress who might consider breaking with the White House, as the Louisiana outcome will loom large as a cautionary tale for years to come."
     ],
-    image: "https://static01.nyt.com/images/2026/05/13/multimedia/00dc-scotus-virginia-lvgj/00dc-scotus-virginia-lvgj-mediumSquareAt3X.jpg",
-    source: "The New York Times",
-    sourceUrl: "https://www.nytimes.com/2026/05/15/us/politics/supreme-court-virginia-redistricting.html"
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/5a2c/live/abce2a10-5198-11f1-b57e-4930d304e43a.jpg",
+    source: "NPR",
+    sourceUrl: "https://www.npr.org/2026/05/16/nx-s1-5824533/bill-cassidy-lost-louisiana-primary-letlow-trump"
   },
   secondary: [
     {
       id: "us1",
-      title: "Top Drug Regulator Fired From the FDA Amid Agency Tumult",
-      summary: "Dr. Tracy Beth Hoeg was abruptly dismissed from the FDA, saying she did not know who had fired her or why, as the agency faces significant internal turmoil.",
+      title: "7 Republicans Voted to Convict Trump. Most Are No Longer in Office.",
+      summary: "With Bill Cassidy\'s primary defeat, the once-historic group of seven Republican senators who voted to convict Trump has been almost entirely erased from Congress.",
       body: [
-        "Dr. Tracy Beth Hoeg, a top drug regulator at the Food and Drug Administration, was fired under circumstances that she described as opaque — she stated that she did not know who had fired her or the reasons behind her dismissal. The termination comes during a period of notable instability at the FDA, with the agency experiencing broader upheaval in recent days that has alarmed public health advocates and industry observers alike.",
-        "The firing of a senior regulator without clear explanation raises serious questions about the direction of federal drug oversight and the independence of scientific decision-making within the agency. Critics warn that politically motivated personnel changes at the FDA could undermine public confidence in the drug approval process, which depends heavily on the perception of impartiality and scientific rigor."
+        "Senator Cassidy\'s loss means that the small band of Republican senators who crossed party lines to vote for Trump\'s conviction in 2021 has effectively been dismantled through a combination of primary defeats, retirements, and decisions not to seek reelection. The New York Times reports that no more than two of the original seven will remain in Congress after next year, a striking testament to the political cost of defying Trump within the Republican Party.",
+        "The near-total disappearance of these senators from elected office marks a significant chapter in the transformation of the GOP, signaling that loyalty to Trump is now an essential prerequisite for survival in a Republican primary. Their fates serve as a durable warning to current and future Republican lawmakers about the limits of independence from the president."
       ],
-      image: "https://static01.nyt.com/images/2026/05/15/multimedia/15trump-news-fda-topart-jfmg/15trump-news-fda-topart-jfmg-mediumSquareAt3X.jpg",
+      image: "https://static01.nyt.com/images/2026/05/03/multimedia/00pol-cassidy-convictions-hfo/03pol-trump-retribution-print3-fjvl-mediumSquareAt3X.jpg",
       source: "The New York Times",
-      url: "https://www.nytimes.com/2026/05/15/us/politics/fda-drug-regulator-fired.html",
+      url: "https://www.nytimes.com/2026/05/16/us/politics/republicans-trump-cassidy-conviction-impeachment.html",
       category: "Politics"
     },
     {
       id: "us2",
-      title: "Colorado\'s Democratic Governor Commutes Sentence of Trump Ally Tina Peters",
-      summary: "Governor Jared Polis granted an early release to Tina Peters, a former county official convicted of tampering with election equipment, following pressure from the Trump administration.",
+      title: "Trump Threatens to Pull Endorsement of Rep. Boebert as She Campaigns with Massie",
+      summary: "President Trump publicly threatened to withdraw his support for Representative Lauren Boebert after she campaigned alongside Representative Thomas Massie, calling her 'weak-minded' on Truth Social.",
       body: [
-        "Colorado\'s Democratic Governor Jared Polis made the controversial decision to commute the sentence of Tina Peters, a former county clerk who was convicted of tampering with election equipment, allowing her to leave prison early. The commutation came after a sustained pressure campaign by the Trump administration, which had advocated for Peters' release, making the decision a politically charged one for the Democratic governor.",
-        "Peters became a prominent figure in election-denial circles after she was accused of allowing unauthorized access to voting systems in Mesa County, Colorado, and her case drew significant national attention. Polis\'s decision to grant the commutation, despite his Democratic affiliation and the serious nature of Peters' conviction, is likely to generate fierce debate about the intersection of political pressure and the administration of criminal justice."
+        "In a pair of back-to-back posts on Truth Social, President Trump railed against Colorado Representative Lauren Boebert, calling her 'weak-minded' and asking whether anyone was interested in challenging her in a primary, effectively threatening to endorse a rival against the sitting congresswoman. The public rebuke came as Boebert was campaigning with Kentucky Representative Thomas Massie, a frequent thorn in the side of House Republican leadership.",
+        "The episode highlights how Trump continues to use his social media platform and endorsement power as tools of discipline within the Republican caucus, even against members who have generally supported him. With Boebert already facing a tough reelection fight, the threat of a Trump-backed primary challenger could significantly complicate her path to another term."
       ],
-      image: "https://images.unsplash.com/photo-1524429656589-6633a470097c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxDb2xvcmFkbyU1Q3xlbnwwfDB8fHwxNzc4OTA3NzY5fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "NPR",
-      url: "https://www.npr.org/2026/05/15/nx-s1-5690286/tina-peters-polis-commutation-trump",
+      image: "https://thehill.com/wp-content/uploads/sites/2/2026/05/boebertlauren_042326gn01_w.jpg?w=900",
+      source: "The Hill",
+      url: "https://thehill.com/homenews/campaign/5881792-trump-boebert-endorsement-threat/",
       category: "Politics"
     },
     {
       id: "us3",
-      title: "Trump Discloses $220 Million in Financial Transactions Involving Major U.S. Companies",
-      summary: "Newly released financial disclosure forms show President Trump reported at least $220 million in securities transactions involving major American corporations earlier this year.",
+      title: "Senate Ruling Threatens Ballroom Funding in G.O.P. Budget Bill",
+      summary: "The Senate\'s top parliamentary referee determined that a $1 billion provision for a White House ballroom does not comply with budget rules, dealing a setback to the Republican spending legislation.",
       body: [
-        "The U.S. Office of Government Ethics released financial disclosure forms on Thursday revealing that President Trump disclosed at least $220 million in financial transactions involving securities of major U.S. companies, with cumulative values estimated to range between $220 million and approximately $750 million. The disclosures include purchases of securities linked to prominent American corporations, raising fresh questions about potential conflicts of interest at the highest level of the executive branch.",
-        "Financial disclosures by sitting presidents are closely scrutinized by ethics watchdogs and political opponents alike, as the scale and nature of a president\'s investments can create situations where personal financial interests may intersect with official policy decisions. The breadth of the transactions revealed in Thursday\'s filings is expected to intensify ongoing scrutiny of Trump\'s financial entanglements and their potential influence on federal policy."
+        "Democrats announced Saturday night that the Senate parliamentarian had ruled that a $1 billion provision tucked into the GOP budget bill — intended to fund a White House ballroom — did not comply with the chamber\'s strict budget reconciliation rules. The ruling strips that funding from the legislation unless Republicans can find another procedural path to include it, adding a new complication to the already fraught process of passing the party\'s signature budget package.",
+        "The parliamentarian\'s decision underscores the procedural tightrope Republicans must walk in using the reconciliation process to advance their legislative priorities without Democratic support. Democrats were quick to highlight the ruling as evidence of overreach, and the episode is expected to intensify debate over what can and cannot be included in the sweeping budget bill as it moves through the Senate."
       ],
-      image: "https://thehill.com/wp-content/uploads/sites/2/2026/05/AP26135552024615-e1778858860401.jpg?w=900",
-      source: "The Hill",
-      url: "https://thehill.com/homenews/administration/5881010-trump-discloses-220m-transactions/",
+      image: "https://static01.nyt.com/images/2026/05/16/multimedia/16dc-ballroom-vwqk/16dc-ballroom-vwqk-mediumSquareAt3X.jpg",
+      source: "The New York Times",
+      url: "https://www.nytimes.com/2026/05/16/us/politics/white-house-ballroom-senate.html",
       category: "Politics"
     }
   ]

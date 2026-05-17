@@ -3,6 +3,45 @@
 
 var RICS_LOG = [
   {
+    "date": "2026-05-17",
+    "topic": "Residual Land Value Methodology: GDV Construction, Profit Benchmarks and Developer\\'s Return in Residential Appraisals",
+    "module": "Development Appraisals",
+    "level": 3,
+    "apc_competency": "Development Appraisals (Level 3)",
+    "focus": "This lesson focuses on the mechanical construction of a residual land value appraisal \u2014 how GDV is built up from unit mix, tenure assumptions and comparable evidence, how developer\\'s profit is benchmarked and risk-adjusted, and how the residual output drives land bid strategy. For Alfie, this is a daily tool in pre-acquisition appraisals, investment committee submissions and JV negotiations, and assessors will expect him to demonstrate mastery of both methodology and the professional judgement underpinning key inputs.",
+    "image": "https://images.unsplash.com/photo-1607900840367-a83dcd63296d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxSZXNpZHVhbCUyMExhbmQlMjBWYWx1ZSUyMFVLJTIwcHJvcGVydHklMjBhcmNoaXRlY3R1cmUlMjBidWlsZGluZyUyMGV4dGVyaW9yfGVufDB8MHx8fDE3Nzg5OTQ5NjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "content": [],
+    "summary": [
+      "GDV must be constructed tenure by tenure \u2014 market sale on \u00a3/sq ft comparables, shared ownership at full market value (with unsold equity flagged separately), and affordable/social rent at capitalised income or cost basis consistent with grant assumptions.",
+      "Developer\\'s profit is benchmarked at 15\u201320% on GDV or 20\u201325% on cost for market sale; the RP\\'s profit expectation on retained affordable units is materially lower (6\u20138% on cost) and must be justified separately to the examiner.",
+      "The RLV is a scheme-specific, assumption-dependent output \u2014 not a Red Book valuation. Two developers can produce materially different residuals from the same site due to different cost bases, profit hurdles and GDV assumptions.",
+      "Finance costs must include land finance (cost of financing the land payment), not just construction finance. Omitting land finance overstates RLV and is a common APC-level error.",
+      "For investment committee and JV negotiations, the RLV must be presented with a full sensitivity table (GDV down 5\u201310%, costs up 10\u201315%, programme extended 6\u201312 months) \u2014 a scheme viable only in the base case will not pass committee scrutiny."
+    ],
+    "qa": [
+      {
+        "q": "You\\'ve built a residual appraisal for a 150-unit mixed-tenure scheme and your profit assumption is 17.5% on GDV. An assessor asks you to express that as a profit on cost. Total development costs excluding land are \u00a328m and GDV is \u00a334m. What is the profit on cost figure and is it within normal benchmarks?",
+        "a": "Profit at 17.5% on GDV of \u00a334m = \u00a35.95m. Profit on cost = \u00a35.95m / \u00a328m = 21.25%. This sits within the normal benchmark range of 20\u201325% profit on cost for a residential development scheme, which confirms that the two conventions are consistent for this cost-to-value ratio. The cost-to-value ratio here is \u00a328m / \u00a334m = 82.4%, which is typical for a mixed-tenure urban scheme. Candidates should be able to move fluently between both conventions and explain that the appropriate benchmark depends on scheme risk \u2014 a highly complex brownfield or phased scheme may require 22\u201325% on cost to reflect the additional risk premium."
+      },
+      {
+        "q": "In a static residual appraisal for an RP-led scheme, how should AHP grant be treated and what is the most common error candidates make in its treatment?",
+        "a": "AHP grant is a positive cashflow item \u2014 it is income received from Homes England that partially offsets the cost of delivering affordable units. In a static residual, it should appear as a deduction from net development costs (i.e., costs net of grant), or equivalently as an addition to GDV. The most common error is double-counting: treating grant both as an income item AND reducing the assumed build cost of affordable units to reflect that grant has been received. The two treatments are mutually exclusive. A second common error is failing to model the grant drawdown timing correctly in cashflow appraisals \u2014 grant is typically drawn at specific milestone stages (land acquisition, start on site, practical completion) and if modelled as a lump sum at the wrong point in the cashflow, it understates peak debt and therefore understates finance costs."
+      },
+      {
+        "q": "What is the difference between NSA and GIA, why does it matter in a development appraisal, and what efficiency ratio would you typically expect for a build-to-sell residential apartment scheme?",
+        "a": "Net Sales Area (NSA) is the area of a unit that is sold to a purchaser \u2014 it excludes common parts, cores, circulation, plant and structure. Gross Internal Area (GIA) is the total internal floor area measured to the inner face of the perimeter walls, including all common areas. It matters in appraisals because build costs are almost always quoted on a GIA basis (e.g., \u00a32,200/sq m GIA) while residential sales values are quoted on an NSA basis (e.g., \u00a3500/sq ft NSA). Applying sales rates to GIA \u2014 or build costs to NSA \u2014 will produce a materially wrong appraisal. For a build-to-sell residential apartment scheme, a typical NSA/GIA efficiency ratio is 80\u201385%. A well-designed scheme with efficient cores may achieve 85%; a complex mixed-use podium scheme with extensive common areas may fall to 78\u201380%."
+      },
+      {
+        "q": "You are presenting an investment committee paper for a 200-unit phased development. The IC asks why you have used a cashflow appraisal rather than a static residual. What is your answer?",
+        "a": "A static residual is adequate for simple, short-duration single-phase schemes where the timing of expenditure and receipts is relatively uniform. For a 200-unit phased development, the timing of cashflows is critical: infrastructure and abnormal costs are front-loaded in early phases, market sale receipts are back-loaded, and Homes England grant drawdowns occur at specific contractual milestones. A static residual cannot model peak debt dynamically \u2014 it applies a blended finance cost percentage to total costs, which will either overstate or understate true finance charges depending on the cashflow profile. A monthly development cashflow models peak debt accurately, applies finance charges only to the drawn balance at each period, and discounts all cashflows to present value to produce an IRR and NPV alongside the residual. For a phased scheme, this is the only method that accurately reflects the risk and return profile the IC needs to evaluate."
+      },
+      {
+        "q": "A landowner is expecting a land value of \u00a33m for a site where your RLV has come out at \u00a31.2m based on a 30% affordable housing requirement and no grant. How do you structure the negotiation and what deal mechanics might bridge the gap?",
+        "a": "The \u00a31.8m gap between the landowner\\'s expectation (\u00a33m) and the RLV (\u00a31.2m) must be addressed through a combination of scheme optimisation, deal structure and expectation management. First, I would test whether the affordable housing requirement can be reduced through a viability-evidenced planning negotiation, or whether Homes England grant (e.g., AHP 2026\u201329) can be secured \u2014 either of which could increase the RLV toward the landowner\\'s expectation. Second, I would consider a conditional contract with deferred land payment: fix the land price at \u00a31.2m payable on grant of planning consent, with an additional overage mechanism entitling the landowner to a share of any uplift if GDV exceeds the appraisal base case. Third, a phased land payment structure could reduce the upfront land cost while giving the landowner participation in scheme upside. The key discipline is not to overbid \u2014 paying \u00a33m for a site with a \u00a31.2m RLV means the developer is taking on a loss-making position from day one, which no investment committee should approve."
+      }
+    ]
+  },
+  {
     "date": "2026-05-16",
     "topic": "Planning Appeals: Written Representations, Hearings and Inquiries \u2014 Strategy, Process and Risk Management",
     "module": "Planning and Development Management",

@@ -1,61 +1,61 @@
 // financial-news-data.js
-// Auto-updated 2026-05-16 — do not edit manually
+// Auto-updated 2026-05-17 — do not edit manually
 
 var FINANCIAL_NEWS = {
-  date: "2026-05-16",
+  date: "2026-05-17",
   main: {
-    title: "Stock Market Rally Confronts Inflation and Higher Interest Rates",
-    category: "Markets & Economics",
+    title: "UK Borrowing Costs Rise and Pound Falls as Leadership Drama Continues",
+    category: "Economics",
     content: [
-      "The S&P 500 has been on a remarkable winning streak, notching multiple consecutive weeks of gains even as economic headwinds gather force. Strong corporate earnings have been the primary engine powering equities higher, giving investors enough confidence to overlook deteriorating macro signals. The resilience of the market has surprised many analysts who expected the weight of tighter financial conditions to have already taken a greater toll on valuations.",
-      "Inflation has been accelerating in recent months, raising the prospect that the Federal Reserve may be forced to resume interest rate increases after a prolonged pause. Higher borrowing costs typically compress corporate profit margins and make equities less attractive relative to bonds, putting upward pressure on yields. Yet markets have so far shrugged off these concerns, buoyed by earnings reports that have broadly beaten expectations across multiple sectors.",
-      "The tension between robust earnings and a worsening inflation backdrop has created a fundamental question for investors: how long can corporate profits shield stock prices from the consequences of a tighter monetary environment? Historically, rate-hiking cycles have eventually crimped consumer spending and business investment, eroding the very earnings growth that has underpinned the rally. Bulls argue that corporate balance sheets remain strong enough to absorb higher costs, while bears warn that the lag effects of monetary policy have not yet fully materialized.",
-      "Bond markets are beginning to send clearer warning signals, with yields rising as traders price in a greater probability of additional rate hikes later in the year. The divergence between a buoyant stock market and a more cautious fixed-income market is a pattern that strategists say cannot persist indefinitely. If the Fed does move to tighten further, the repricing in equities could be swift and significant, particularly for growth stocks that are most sensitive to discount-rate changes.",
-      "For now, the market rally continues to defy gravity, sustained by an earnings season that has delivered more positive surprises than disappointments. Investors are being forced to weigh the immediate evidence of corporate health against the longer-term risks posed by sticky inflation and a potentially more hawkish central bank. The coming weeks of economic data — particularly inflation readings and labor market figures — are likely to prove decisive in determining whether the rally has the staying power to extend further or whether a meaningful correction is on the horizon."
+      "UK financial markets came under fresh pressure this week as borrowing costs climbed and the pound fell against major currencies, with analysts pointing squarely at the political uncertainty surrounding the Labour Party\'s leadership. The turbulence reflects growing investor unease about the direction of economic policy in Britain, as the prospect of a change in leadership at the top of government begins to be priced into asset valuations. Bond markets in particular have proven sensitive to the shifting political winds, with yields on UK government debt moving higher as traders reassess the risk premium attached to British assets.",
+      "At the centre of market concerns is Greater Manchester Mayor Andy Burnham, who has emerged as a frontrunner to succeed Keir Starmer as Labour leader and, potentially, as Prime Minister. Burnham has publicly advocated for a programme of mass renationalisation, proposing to bring energy and water companies back under public control — a platform that has significant implications for both public spending and the private investors who currently hold stakes in those industries. Analysts say the moves in gilt yields and sterling have been directly fuelled by fears that a Burnham-led government would increase government borrowing substantially to fund such an agenda.",
+      "The fall in the pound adds another layer of complexity to the UK\'s economic outlook, particularly at a time when inflationary pressures have only recently begun to ease. A weaker currency tends to push up the cost of imports, threatening to reignite price pressures in an economy still recovering from several years of elevated inflation. For the Bank of England, any renewed currency weakness complicates the already delicate calculus around the pace and scale of potential interest rate reductions.",
+      "Rising borrowing costs are also a direct fiscal concern, given the UK government\'s existing debt burden and its ongoing need to refinance obligations in the bond market. Higher gilt yields mean the government pays more to service its debt, squeezing the fiscal headroom that Chancellor Rachel Reeves has worked to protect. If market participants begin to treat a shift in leadership — and a more expansionary fiscal stance — as a base-case scenario, the pressure on borrowing costs could persist or intensify in the weeks ahead.",
+      "For investors in UK-listed energy and utility stocks, the political backdrop introduces meaningful valuation uncertainty. Companies such as those operating in the water and energy sectors could face a significantly different regulatory and ownership environment if renationalisation becomes credible government policy. The episode is a reminder of how quickly domestic political developments can translate into tangible market movements, with real consequences for consumers, businesses, and the broader trajectory of the British economy."
     ],
-    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTdG9jayUyME1hcmtldCUyMFJhbGx5JTIwQ29uZnJvbnRzJTIwSW5mbGF0aW9uJTIwYW5kJTIwSGlnaGVyJTIwSW50ZXJlc3QlMjBSYXRlc3xlbnwwfDB8fHwxNzc4OTA3ODE3fDA&ixlib=rb-4.1.0&q=80&w=1080",
-    source: "The New York Times",
-    sourceUrl: "https://www.nytimes.com/2026/05/15/business/stocks-bonds-interest-rates-inflation.html"
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/2ac1/live/4d841640-5094-11f1-8eb4-7bbd1eefc905.png",
+    source: "BBC News",
+    sourceUrl: "https://www.bbc.com/news/articles/czr2pl5lj84o?at_medium=RSS&at_campaign=rss"
   },
   secondary: [
     {
       id: "fn1",
-      title: "Pound Heads for Worst Week in 18 Months Amid UK Political Uncertainty",
-      summary: "Sterling slumped toward its worst weekly performance in a year and a half as City traders grew anxious over a potential Labour leadership challenge from Manchester Mayor Andy Burnham.",
+      title: "British Gas Pays £20m Over Prepayment Meter Force-Fitting Scandal",
+      summary: "British Gas has been ordered to pay £20 million after regulator Ofgem found the energy supplier breached licence conditions designed to protect vulnerable customers by force-fitting prepayment meters.",
       body: [
-        "The pound came under sustained selling pressure this week as financial markets reacted to growing speculation that Prime Minister Keir Starmer could face a leadership challenge from Andy Burnham later in 2026. UK government borrowing costs also jumped sharply, with analysts pointing to concerns that a Burnham-led government would adopt a more expansionary fiscal stance and increase public borrowing. The twin moves in sterling and gilt yields reflected a classic market response to political uncertainty layered on top of pre-existing worries about inflation.",
-        "Rising oil prices added further fuel to inflation concerns, compounding the anxiety already gripping bond and currency markets. The convergence of political risk and macroeconomic headwinds created a particularly difficult environment for UK assets this week, with traders unwilling to hold sterling through a weekend of continued uncertainty. The scale of the weekly decline in the pound — its largest since late 2024 — underscored just how seriously financial markets are taking the prospect of a shift in the UK\'s economic policy direction."
+        "Energy regulator Ofgem determined that British Gas violated key licence conditions that exist specifically to safeguard customers in vulnerable situations, resulting in a £20 million penalty for the supplier. The force-fitting of prepayment meters — which require customers to pay upfront for energy — had drawn widespread public outrage after investigative reporting exposed the practice being carried out on some of the most financially fragile households in the country.",
+        "The case has intensified scrutiny of the energy sector\'s treatment of struggling consumers and raises broader questions about regulatory oversight of large utility companies. The financial penalty, while significant, will also be measured against calls from consumer advocates for more systemic reform of how energy suppliers are permitted to manage debt recovery from vulnerable customers."
       ],
-      image: "https://i.guim.co.uk/img/media/7dfdfc19628844d06515db4621323c59bd0f7f77/499_0_2038_1629/master/2038.jpg?width=1200&quality=85&auto=format&fit=max&s=2f06f68788ceb95a22d937b0a6ee77c7",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/business/2026/may/15/pound-sterling-andy-burnham-labour-bid-uk-borrowing-bond-yield-oil-price-inflation",
-      category: "Currency & Markets"
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/4d64/live/4d3fa100-4fd5-11f1-b682-cf91850925ea.png",
+      source: "BBC News",
+      url: "https://www.bbc.com/news/articles/cq8p7l1y59lo?at_medium=RSS&at_campaign=rss",
+      category: "Business"
     },
     {
       id: "fn2",
-      title: "FTSE 100 Insurer Hiscox Shares Surge on Takeover Approach from Canada\'s Intact Financial",
-      summary: "Shares in London-listed insurer Hiscox leapt to record highs after reports that Canada\'s Intact Financial Corp is exploring a potential takeover bid for the company.",
+      title: "China Indicates Tariffs Were Discussed at Trump Summit, Signalling Preliminary Agreement",
+      summary: "China\'s Ministry of Commerce said the two countries reached a preliminary agreement to reduce some tariffs at a recent summit, a statement that appeared to contradict positions put forward by President Trump.",
       body: [
-        "Hiscox became the latest in a string of UK-listed companies to attract overseas acquisition interest, with its shares surging to all-time highs on Friday following reports that Intact Financial Corp, one of Canada\'s largest property and casualty insurers, is weighing a formal offer. The news added to a busy week for UK mergers and acquisitions activity, with Tate & Lyle also reported to be drawing interest from a US suitor. The flurry of bids reflects a broader trend of foreign buyers viewing sterling-denominated assets as attractively valued following the currency\'s recent weakness.",
-        "A successful takeover of Hiscox would represent a significant deal in the specialty insurance market, where the Lloyd\'s of London-focused insurer has built a strong reputation. The willingness of large overseas corporates to pursue UK targets despite political and economic uncertainty suggests that fundamental valuations remain compelling from an international buyer\'s perspective. Analysts noted that the wave of inbound M&A interest could itself provide a degree of support for UK equity markets more broadly."
+        "The diverging public accounts from Washington and Beijing following the summit have introduced fresh uncertainty into financial markets that have been closely tracking the state of US-China trade relations. China\'s Ministry of Commerce specifically indicated that tariff reductions were on the table and that a preliminary deal had been struck, a claim with potentially significant consequences for global supply chains and trade-exposed equities.",
+        "The apparent contradiction between the two governments' characterisations of the talks highlights the fragility of any emerging trade détente, and investors will be watching closely for clarification in the days ahead. A genuine reduction in tariffs between the world\'s two largest economies would represent a meaningful shift in the trade landscape that has weighed on global growth forecasts throughout the mid-2020s."
       ],
-      image: "https://i.guim.co.uk/img/media/498981111bc1ed8e26b5722b104c9e3fbf2c82e3/0_105_4501_3603/master/4501.jpg?width=1200&quality=85&auto=format&fit=max&s=4aa82e847e01604368c152e506309505",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/business/2026/may/15/ftse-100-insurer-hiscox-shares-takeover-bid-intact-tate-lyle",
-      category: "Mergers & Acquisitions"
+      image: "https://static01.nyt.com/images/2026/05/14/multimedia/16dc-trade/16dc-trade-mediumSquareAt3X.jpg",
+      source: "The New York Times",
+      url: "https://www.nytimes.com/2026/05/16/business/economy/china-tariffs-trump-summit.html",
+      category: "Economics"
     },
     {
       id: "fn3",
-      title: "Berkshire\'s Abel Bets $2.8 Billion on Delta as He Diverges from Buffett\'s Playbook",
-      summary: "New Berkshire Hathaway chief Greg Abel has placed a bold $2.8 billion wager on Delta Air Lines, marking a striking departure from predecessor Warren Buffett\'s decision to exit all airline stocks in 2020.",
+      title: "Australia Moves to Overhaul Capital Gains Tax to Fix 'Broken' Housing Market",
+      summary: "Australian Treasurer Jim Chalmers confirmed that proposed changes to the country\'s capital gains tax laws are aimed at addressing deep structural problems in the nation\'s housing market.",
       body: [
-        "Greg Abel, who took the helm at Berkshire Hathaway following Warren Buffett\'s retirement, has made one of his most consequential early investment decisions by building a $2.8 billion position in Delta Air Lines. The move is particularly notable given that Buffett famously dumped all of Berkshire\'s airline holdings in 2020 at a significant loss, calling the aviation sector structurally challenged. Abel\'s bullish stance on Delta suggests he sees a meaningfully different risk-reward profile in the airline today compared to the pandemic era.",
-        "The bet on Delta comes at an interesting moment for the aviation industry, with soaring fuel costs weighing on margins across the sector. In a contrasting move, hedge fund Appaloosa simultaneously disclosed it had exited its entire positions in Delta, American, and United Airlines, redirecting capital into Amazon and Uber instead. The divergence between Berkshire\'s accumulation and Appaloosa\'s exit illustrates the sharply divided views among sophisticated investors about the outlook for major US carriers."
+        "Treasurer Chalmers reiterated on Sunday that the planned capital gains tax overhaul is a direct response to what the government describes as a broken housing market, where affordability has deteriorated sharply for first-time buyers and renters alike. The changes are expected to alter the investment calculus for property investors, who have long benefited from favourable tax treatment that critics argue has inflated house prices at the expense of owner-occupiers.",
+        "The announcement has significant implications for the Australian property sector and for the broader investment community, as real estate has historically been a dominant asset class for both institutional and retail investors in the country. Markets will be watching for the specific details of the reforms, which are likely to reshape capital flows and potentially dampen speculative demand in major urban property markets."
       ],
-      image: "https://images.unsplash.com/photo-1626202826025-07ce3d501413?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxCZXJrc2hpcmUlNUN8ZW58MHwwfHx8MTc3ODkwNzgxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "MarketWatch",
-      url: "https://www.marketwatch.com/story/berkshires-abel-sours-on-some-of-warren-buffetts-picks-while-betting-big-on-delta-7ad679f7?mod=mw_rss_topstories",
-      category: "Investing"
+      image: "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ibJEgcuH9DHU/v0/1200x-1.jpg",
+      source: "Bloomberg Markets",
+      url: "https://www.bloomberg.com/news/articles/2026-05-17/australia-says-tax-changes-aim-to-fix-broken-housing-market",
+      category: "Economics"
     }
   ]
 };

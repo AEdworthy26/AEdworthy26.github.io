@@ -1,187 +1,186 @@
 // suggested-recipes-data.js
-// Auto-updated 2026-05-16 — do not edit manually
+// Auto-updated 2026-05-17 — do not edit manually
 
 window.SUGGESTED_RECIPES = [
   {
     id: "sug1",
-    title: "Ligurian Rabbit Cacciatore with Olives, Capers & White Wine Polenta",
-    category: "Other",
+    title: "Yucatán-Style Cochinita Pibil Pork Tacos with Pickled Red Onion & Habanero Salsa",
+    category: "Pork",
     calories: 610,
-    protein: 44,
+    protein: 42,
     fibre: 5,
-    healthScore: 74,
-    time: "1 hr 20 mins",
-    serves: "4",
-    desc: "A deeply savoury, rustic Italian braise from the Ligurian coast — rabbit pieces simmered in white wine with green olives, capers, rosemary and anchovy until the meat falls effortlessly from the bone. Served over soft, silky polenta loaded with butter and Parmesan, this is the kind of slow Sunday dish that makes a table go quiet with pleasure.",
-    emoji: "🫕",
-    image: "https://images.unsplash.com/photo-1615852735201-2ce54ffa6afa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxMaWd1cmlhbiUyMFJhYmJpdCUyMENhY2NpYXRvcmUlMjB3aXRoJTIwT2xpdmVzJTJDJTIwQ2FwZXJzJTIwJTI2JTIwV2hpdGUlMjBXaW5lJTIwUG9sZW50YSUyMGZvb2QlMjBkaXNofGVufDB8MHx8fDE3Nzg5MDg0ODh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    healthScore: 68,
+    time: "2 hrs 45 mins",
+    serves: "6",
+    desc: "Slow-braised pork shoulder marinated in achiote, bitter orange and earthy spices until fall-apart tender — the closest a home oven can get to the legendary Yucatán pit-roasted original. Piled into warm corn tortillas with sharp pickled red onion and a fruity-fierce habanero salsa, every mouthful is smoky, tangy and deeply satisfying.",
+    emoji: "🌮",
+    image: "https://images.pexels.com/photos/28895968/pexels-photo-28895968.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     ingredientGroups: [
-      { group: "Rabbit & Braise", items: [
-        { name: "Rabbit, jointed into 8 pieces (ask your butcher)", quantity: 1.4, unit: "kg" },
-        { name: "Dry white wine", quantity: 250, unit: "ml" },
-        { name: "Chicken stock", quantity: 300, unit: "ml" },
-        { name: "Tinned whole plum tomatoes", quantity: 400, unit: "g" },
-        { name: "Green olives, pitted and roughly chopped", quantity: 80, unit: "g" },
-        { name: "Capers, drained and rinsed", quantity: 2, unit: "tbsp" },
-        { name: "Anchovy fillets in oil", quantity: 4, unit: "" },
-        { name: "Garlic cloves, thinly sliced", quantity: 4, unit: "" },
-        { name: "Rosemary sprigs", quantity: 2, unit: "" },
-        { name: "Dried chilli flakes", quantity: 0.5, unit: "tsp" },
-        { name: "Olive oil", quantity: 3, unit: "tbsp" },
-        { name: "Plain flour, for dusting", quantity: 2, unit: "tbsp" },
-        { name: "Salt and black pepper", quantity: 0, unit: "" }
+      { group: "Pork & Marinade", items: [
+        { name: "Bone-in pork shoulder", quantity: 1.5, unit: "kg" },
+        { name: "Achiote (annatto) paste", quantity: 80, unit: "g" },
+        { name: "Fresh orange juice", quantity: 150, unit: "ml" },
+        { name: "Fresh lime juice", quantity: 60, unit: "ml" },
+        { name: "White wine vinegar", quantity: 2, unit: "tbsp" },
+        { name: "Garlic cloves, minced", quantity: 6, unit: "" },
+        { name: "Ground cumin", quantity: 1.5, unit: "tsp" },
+        { name: "Dried oregano (Mexican if possible)", quantity: 1, unit: "tsp" },
+        { name: "Ground cinnamon", quantity: 0.5, unit: "tsp" },
+        { name: "Ground black pepper", quantity: 1, unit: "tsp" },
+        { name: "Fine sea salt", quantity: 2, unit: "tsp" },
+        { name: "Banana leaves (optional but recommended)", quantity: 2, unit: "large pieces" }
       ]},
-      { group: "White Wine Polenta", items: [
-        { name: "Coarse polenta (not instant)", quantity: 200, unit: "g" },
-        { name: "Whole milk", quantity: 500, unit: "ml" },
-        { name: "Water", quantity: 500, unit: "ml" },
-        { name: "Unsalted butter", quantity: 40, unit: "g" },
-        { name: "Parmesan, finely grated", quantity: 50, unit: "g" },
-        { name: "Salt", quantity: 1, unit: "tsp" }
+      { group: "Pickled Red Onion", items: [
+        { name: "Red onions, thinly sliced", quantity: 2, unit: "" },
+        { name: "Fresh lime juice", quantity: 80, unit: "ml" },
+        { name: "White wine vinegar", quantity: 60, unit: "ml" },
+        { name: "Caster sugar", quantity: 1, unit: "tsp" },
+        { name: "Fine sea salt", quantity: 0.5, unit: "tsp" },
+        { name: "Dried oregano", quantity: 0.5, unit: "tsp" }
       ]},
-      { group: "To Finish", items: [
-        { name: "Flat-leaf parsley, roughly chopped", quantity: 1, unit: "small bunch" },
-        { name: "Lemon zest", quantity: 1, unit: "" }
+      { group: "Habanero Salsa", items: [
+        { name: "Habanero chillies (or Scotch bonnets), seeds removed", quantity: 2, unit: "" },
+        { name: "Ripe tomatoes, roughly chopped", quantity: 3, unit: "" },
+        { name: "White onion, quartered", quantity: 0.5, unit: "" },
+        { name: "Garlic cloves", quantity: 2, unit: "" },
+        { name: "Fresh lime juice", quantity: 2, unit: "tbsp" },
+        { name: "Fresh coriander", quantity: 15, unit: "g" },
+        { name: "Salt", quantity: 1, unit: "pinch" }
+      ]},
+      { group: "To Serve", items: [
+        { name: "Small corn tortillas, warmed", quantity: 18, unit: "" },
+        { name: "Fresh coriander leaves", quantity: 20, unit: "g" },
+        { name: "Lime wedges", quantity: 2, unit: "" }
       ]}
     ],
     substitutes: [
-      { ingredient: "Rabbit", alternatives: ["Bone-in chicken thighs and drumsticks", "Pheasant pieces"] },
-      { ingredient: "Coarse polenta", alternatives: ["Instant polenta (reduce cooking time to 5 mins)", "Creamy mashed potato"] },
-      { ingredient: "Green olives", alternatives: ["Castelvetrano olives", "Pitted black olives"] }
+      { ingredient: "Achiote paste", alternatives: ["Mix 1 tbsp sweet smoked paprika + 1 tsp turmeric + 0.5 tsp cumin as a rough stand-in", "Achiote powder mixed with a little oil to form a paste"] },
+      { ingredient: "Habanero chillies", alternatives: ["Scotch bonnets (similar heat)", "2 red bird\'s eye chillies for less heat"] },
+      { ingredient: "Banana leaves", alternatives: ["Parchment paper lined inside a tight-lidded casserole (same steaming effect)", "Omit entirely and braise uncovered"] },
+      { ingredient: "Pork shoulder", alternatives: ["Pork cheeks (reduce cook time to 2 hrs)", "Skinless chicken thighs (reduce to 1 hr 15 mins)"] }
     ],
     instructions: [
-      "Season the rabbit pieces generously with salt and black pepper, then dust lightly in flour, shaking off any excess. Heat the olive oil in a large, heavy-based casserole or Dutch oven over a medium-high heat. Brown the rabbit pieces in batches — don\'t crowd the pan — for 3–4 minutes per side until deep golden. Transfer to a plate and set aside.",
-      "Reduce the heat to medium. Add the anchovy fillets to the same pan and let them melt into the oil for about 1 minute, stirring. Add the sliced garlic and chilli flakes and cook for another minute until fragrant but not coloured.",
-      "Pour in the white wine and let it bubble vigorously for 2 minutes, scraping up any browned bits from the bottom of the pan — this is all flavour. Add the tinned tomatoes, crushing them roughly with your hands as they go in, then pour in the chicken stock. Nestle in the rosemary sprigs.",
-      "Return the rabbit pieces to the pot, pressing them down so they\'re mostly submerged. Bring to a gentle simmer, then cover partially with a lid and cook over a low heat for 55–65 minutes, turning the rabbit once or twice, until the meat is completely tender and pulling away from the bone.",
-      "In the final 10 minutes of cooking, stir in the chopped olives and capers. Taste the sauce — it should be rich, slightly salty and deeply savoury. Adjust seasoning and remove the rosemary sprigs.",
-      "Meanwhile, make the polenta. Bring the milk and water to the boil in a large saucepan with the salt. Pour in the polenta in a slow, steady stream, whisking constantly to prevent lumps. Reduce the heat to its lowest setting and cook for 35–40 minutes, stirring frequently with a wooden spoon, until thick, smooth and pulling away from the sides. Stir in the butter and Parmesan off the heat. Season well.",
-      "To serve, spoon a generous mound of polenta into wide bowls. Lay the rabbit pieces on top and ladle over plenty of the olive-caper sauce. Finish with a shower of chopped parsley and a grating of fresh lemon zest for brightness."
+      "Start the pickle first — combine the sliced red onion in a bowl with lime juice, white wine vinegar, sugar, salt and oregano. Toss well and set aside at room temperature for at least 1 hour, turning occasionally. The onions will turn a vivid pink and become tender and sharp.",
+      "Make the marinade by whisking together the achiote paste, orange juice, lime juice, white wine vinegar, garlic, cumin, oregano, cinnamon, black pepper and salt until smooth. Score the pork shoulder all over with a sharp knife, making deep cuts about 3 cm apart to let the marinade penetrate.",
+      "Place the pork in a large zip-lock bag or deep baking dish. Pour over the marinade, turning to coat completely. Refrigerate for at least 2 hours, ideally overnight — the longer it marinates, the more deeply flavoured the pork will be.",
+      "Preheat your oven to 150°C (130°C fan). If using banana leaves, pass them briefly over a gas flame or under a hot grill for 20 seconds per side until they turn dark green and become pliable. Line a large, deep roasting tin with the banana leaves, leaving plenty of overhang.",
+      "Place the marinated pork and all its marinade in the centre of the banana leaves. Fold the leaves tightly up and over the pork to create a sealed parcel. Add 100ml of water to the base of the tin, then cover the entire tin very tightly with two layers of foil.",
+      "Roast for 2 hours 30 minutes until the pork is completely tender and falling off the bone. Remove from the oven and rest, still wrapped, for 20 minutes. Unwrap and shred the meat with two forks, mixing it back through all the gorgeous cooking juices in the tin.",
+      "While the pork rests, make the habanero salsa. Char the tomatoes, onion and garlic in a dry frying pan over high heat for 5–6 minutes until blackened in spots. Transfer to a blender with the habanero chillies, lime juice and coriander. Blitz to a rough, textured salsa. Season with salt.",
+      "To serve, warm the corn tortillas in a dry pan or directly over a flame for 30 seconds each side. Pile generously with shredded cochinita pibil, top with drained pickled red onion, a spoon of habanero salsa and fresh coriander leaves. Finish with a squeeze of lime."
     ]
   },
   {
     id: "sug2",
-    title: "Malaysian Asam Pedas Mackerel — Tamarind & Chilli Fish Stew with Turmeric Rice",
+    title: "Normandy Cod with Mussels, Cider, Crème Fraîche & Tarragon",
     category: "Fish & Seafood",
-    calories: 490,
-    protein: 36,
-    fibre: 6,
-    healthScore: 78,
-    time: "45 mins",
+    calories: 435,
+    protein: 48,
+    fibre: 2,
+    healthScore: 76,
+    time: "35 mins",
     serves: "4",
-    desc: "Asam pedas — literally 'sour and spicy' — is one of Malaysia\'s great fish stews: a bold, tangy broth of tamarind, dried chillies and fresh aromatics that elevates mackerel into something genuinely extraordinary. The fish holds up beautifully to the assertive sauce, and served over golden turmeric-scented rice with a pile of crisp beansprouts, it\'s a meal that\'s bright, punchy and totally addictive.",
+    desc: "A classic of the Norman coast — thick cod fillets poached gently in a broth of dry cider, shallots and butter alongside plump mussels, finished with crème fraîche and a handful of fresh tarragon. The sauce is bracingly savoury, apple-sharp and beautifully rich without being heavy — serve with plenty of crusty bread to mop every last drop.",
     emoji: "🐟",
-    image: "https://images.unsplash.com/photo-1665332398215-825114bbb355?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxNYWxheXNpYW4lMjBBc2FtJTIwUGVkYXMlMjBNYWNrZXJlbCUyMCVFMiU4MCU5NCUyMFRhbWFyaW5kJTIwJTI2JTIwQ2hpbGxpJTIwRmlzaCUyMFN0ZXclMjB3aXRoJTIwVHVybWVyaWMlMjBSaWNlJTIwZm9vZCUyMGRpc2h8ZW58MHwwfHx8MTc3ODkwODQ4OXww&ixlib=rb-4.1.0&q=80&w=1080",
+    image: "https://images.pexels.com/photos/10895779/pexels-photo-10895779.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     ingredientGroups: [
-      { group: "Fish & Marinade", items: [
-        { name: "Whole mackerel, cleaned and cut into thick steaks (or fillets, skin on)", quantity: 800, unit: "g" },
-        { name: "Turmeric powder", quantity: 1, unit: "tsp" },
-        { name: "Salt", quantity: 0.5, unit: "tsp" }
+      { group: "Fish & Shellfish", items: [
+        { name: "Thick cod fillets, skin on", quantity: 4, unit: "x 180g" },
+        { name: "Fresh mussels, scrubbed and debearded", quantity: 600, unit: "g" },
+        { name: "Fine sea salt & white pepper", quantity: 1, unit: "to taste" }
       ]},
-      { group: "Asam Pedas Paste", items: [
-        { name: "Dried red chillies, soaked in hot water for 15 mins, drained", quantity: 8, unit: "" },
-        { name: "Shallots, roughly chopped", quantity: 5, unit: "" },
-        { name: "Garlic cloves", quantity: 3, unit: "" },
-        { name: "Fresh ginger, roughly chopped", quantity: 3, unit: "cm" },
-        { name: "Lemongrass stalks (white part only), sliced", quantity: 2, unit: "" },
-        { name: "Belacan (shrimp paste, toasted)", quantity: 1, unit: "tsp" },
-        { name: "Vegetable oil", quantity: 3, unit: "tbsp" }
+      { group: "Cider Broth", items: [
+        { name: "Dry Norman cider (or dry apple cider)", quantity: 300, unit: "ml" },
+        { name: "Fish stock", quantity: 200, unit: "ml" },
+        { name: "Shallots, finely sliced", quantity: 4, unit: "" },
+        { name: "Unsalted butter", quantity: 40, unit: "g" },
+        { name: "Garlic cloves, thinly sliced", quantity: 2, unit: "" },
+        { name: "Bay leaves", quantity: 2, unit: "" },
+        { name: "Whole black peppercorns", quantity: 6, unit: "" }
       ]},
-      { group: "Stew", items: [
-        { name: "Tamarind paste (from concentrate)", quantity: 3, unit: "tbsp" },
-        { name: "Water", quantity: 400, unit: "ml" },
-        { name: "Tomatoes, cut into wedges", quantity: 2, unit: "" },
-        { name: "Okra, tops trimmed", quantity: 150, unit: "g" },
-        { name: "Palm sugar or soft brown sugar", quantity: 1, unit: "tbsp" },
-        { name: "Fish sauce", quantity: 1.5, unit: "tbsp" },
-        { name: "Fresh bird\'s eye chillies, halved (optional, for extra heat)", quantity: 2, unit: "" }
-      ]},
-      { group: "Turmeric Rice", items: [
-        { name: "Jasmine rice, rinsed", quantity: 300, unit: "g" },
-        { name: "Water", quantity: 480, unit: "ml" },
-        { name: "Turmeric powder", quantity: 0.5, unit: "tsp" },
-        { name: "Pandan leaf (optional, tied in a knot)", quantity: 1, unit: "" },
-        { name: "Salt", quantity: 0.5, unit: "tsp" }
+      { group: "Sauce & Finish", items: [
+        { name: "Full-fat crème fraîche", quantity: 150, unit: "g" },
+        { name: "Dijon mustard", quantity: 1, unit: "tsp" },
+        { name: "Fresh tarragon leaves", quantity: 15, unit: "g" },
+        { name: "Flat-leaf parsley, roughly chopped", quantity: 10, unit: "g" },
+        { name: "Lemon juice", quantity: 1, unit: "tbsp" }
       ]},
       { group: "To Serve", items: [
-        { name: "Beansprouts, blanched briefly", quantity: 100, unit: "g" },
-        { name: "Fresh coriander", quantity: 1, unit: "small bunch" },
-        { name: "Lime wedges", quantity: 1, unit: "" }
+        { name: "Crusty sourdough or baguette", quantity: 1, unit: "loaf" }
       ]}
     ],
     substitutes: [
-      { ingredient: "Mackerel", alternatives: ["Kingfish steaks", "Sea bream fillets", "Salmon fillets"] },
-      { ingredient: "Belacan (shrimp paste)", alternatives: ["1 tsp miso paste (vegetarian option)", "1 tsp fish sauce extra"] },
-      { ingredient: "Okra", alternatives: ["Baby aubergine, quartered", "Courgette chunks", "Green beans"] },
-      { ingredient: "Palm sugar", alternatives: ["Soft brown sugar", "Coconut sugar"] }
+      { ingredient: "Cod", alternatives: ["Hake (same cook time)", "Haddock (same cook time)", "Pollock (slightly firmer)"] },
+      { ingredient: "Mussels", alternatives: ["Clams (cockles work too)", "Omit and increase cod to 220g per person"] },
+      { ingredient: "Crème fraîche", alternatives: ["Double cream with a squeeze of lemon", "Soured cream (don\'t let it boil)"] },
+      { ingredient: "Fresh tarragon", alternatives: ["Fresh dill (different but complementary)", "Chervil for a milder anise note"] }
     ],
     instructions: [
-      "Rub the mackerel pieces all over with the turmeric and salt and set aside while you prepare everything else. This brief marinade helps the fish hold together during cooking.",
-      "Start the turmeric rice: combine the rinsed rice, water, turmeric, pandan leaf (if using) and salt in a medium saucepan. Bring to the boil, stir once, then reduce to the lowest heat, cover tightly and cook for 12 minutes. Remove from heat and leave covered for 10 minutes — do not lift the lid.",
-      "Make the paste: blend the soaked dried chillies, shallots, garlic, ginger, lemongrass and belacan together in a small food processor or using a pestle and mortar until you have a coarse, fragrant paste. Add a splash of water if needed to help it blend.",
-      "Heat the vegetable oil in a wide, shallow pan or wok over medium heat. Fry the paste, stirring frequently, for 8–10 minutes until it darkens considerably, smells deeply fragrant and the oil begins to separate at the edges. This step is crucial — don\'t rush it.",
-      "Mix the tamarind paste into the water until dissolved. Pour this into the pan with the fried paste and stir well. Add the palm sugar and fish sauce. Bring to a simmer and taste — the broth should be sour, spicy and just slightly sweet. Adjust with more tamarind, sugar or fish sauce as needed.",
-      "Add the tomato wedges and okra to the simmering broth. Cook for 3 minutes, then carefully lay in the mackerel pieces and the fresh bird\'s eye chillies if using. Cover and simmer gently for 6–8 minutes, spooning the broth over the fish occasionally, until the fish is just cooked through and flaking at the edges.",
-      "Fluff the turmeric rice with a fork and remove the pandan leaf. Serve the rice in bowls, topped with the asam pedas and plenty of broth. Pile on blanched beansprouts, fresh coriander leaves and a fat wedge of lime for squeezing."
+      "Check the mussels — discard any that are cracked or that don\'t close when tapped sharply on the side of the bowl. Set aside. Pat the cod fillets dry with kitchen paper and season generously on both sides with fine sea salt and white pepper.",
+      "Melt the butter in a large, wide, lidded sauté pan or shallow casserole over medium heat. Add the shallots and cook gently for 6–7 minutes until completely softened and translucent — do not let them colour. Add the garlic and cook for another minute.",
+      "Pour in the cider and let it bubble vigorously for 2 minutes to cook off the alcohol. Add the fish stock, bay leaves and peppercorns. Taste the broth — it should be bright, appley and well-seasoned. Adjust salt if needed.",
+      "Reduce the heat to a gentle simmer. Nestle the cod fillets into the broth, skin-side down. Scatter the mussels around the cod, cover with the lid and cook for 6–8 minutes, until the cod is just opaque through and the mussels have all opened. Discard any mussels that remain shut.",
+      "Carefully lift the cod and mussels out of the pan with a slotted spoon and set aside in a warm place. Increase the heat and boil the broth for 2–3 minutes to concentrate it slightly. Remove the bay leaves.",
+      "Reduce the heat to low and whisk in the crème fraîche and Dijon mustard. Do not let the sauce boil once the crème fraîche is added or it may split. Add the lemon juice and taste — it should be creamy, tangy and savoury. Stir through most of the tarragon and parsley.",
+      "Return the cod and mussels to the pan, spooning sauce over the fish. Serve directly from the pan at the table, scattered with the remaining fresh herbs and accompanied by thick slices of crusty bread to mop up the extraordinary broth."
     ]
   },
   {
     id: "sug3",
-    title: "Çığır Böreği — Turkish Crispy Spinach & Feta Filo Pie with Sumac Yoghurt",
-    category: "Vegetarian",
-    calories: 440,
-    protein: 17,
-    fibre: 5,
-    healthScore: 70,
-    time: "1 hr",
-    serves: "6",
-    desc: "A stunning Turkish börek made by layering butter-brushed filo pastry with a fragrant filling of wilted spinach, creamy feta, pine nuts and nutmeg — then baked until shatteringly crisp and golden. Served with a cool, tangy sumac yoghurt, this is the kind of dish that looks impossibly impressive but requires nothing more than a baking tin and a pastry brush.",
-    emoji: "🥧",
-    image: "https://images.pexels.com/photos/18884737/pexels-photo-18884737.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    title: "Burmese Tofu & Potato Kyaw — Golden Fried Beancurd with Crispy Shallots, Tamarind, Turmeric & Sesame",
+    category: "Vegan",
+    calories: 395,
+    protein: 18,
+    fibre: 7,
+    healthScore: 79,
+    time: "50 mins",
+    serves: "4",
+    desc: "Inspired by the bold street-food flavours of Yangon\'s markets, this dish pairs golden-fried firm tofu and crispy potatoes with a deeply savoury tamarind-soy glaze, heaps of fried shallots and a punchy sesame-chilli finish. It\'s the kind of vegan dish that converts everyone — intensely flavoured, texturally thrilling and built from a pantry of straightforward ingredients.",
+    emoji: "🌿",
+    image: "https://images.unsplash.com/photo-1690949237809-3f0336b9ba33?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxCdXJtZXNlJTIwVG9mdSUyMCUyNiUyMFBvdGF0byUyMEt5YXclMjAlRTIlODAlOTQlMjBHb2xkZW4lMjBGcmllZCUyMEJlYW5jdXJkJTIwd2l0aCUyMENyaXNweSUyMFNoYWxsb3RzJTJDJTIwVGFtYXJpbmQlMkMlMjBUdXJtZXJpYyUyMCUyNiUyMFNlc2FtZSUyMGZvb2QlMjBkaXNofGVufDB8MHx8fDE3Nzg5OTUwNzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
     ingredientGroups: [
-      { group: "Filling", items: [
-        { name: "Fresh spinach, washed", quantity: 700, unit: "g" },
-        { name: "Feta cheese, crumbled", quantity: 250, unit: "g" },
-        { name: "Ricotta cheese", quantity: 150, unit: "g" },
-        { name: "Pine nuts, lightly toasted", quantity: 40, unit: "g" },
-        { name: "Spring onions, finely sliced", quantity: 4, unit: "" },
-        { name: "Eggs, beaten", quantity: 2, unit: "" },
-        { name: "Nutmeg, freshly grated", quantity: 0.25, unit: "tsp" },
-        { name: "Dried mint", quantity: 1, unit: "tsp" },
-        { name: "Black pepper", quantity: 0, unit: "" }
+      { group: "Tofu & Potatoes", items: [
+        { name: "Firm tofu, pressed and cut into 3 cm cubes", quantity: 400, unit: "g" },
+        { name: "Waxy potatoes (Charlotte or new), cut into 2 cm chunks", quantity: 400, unit: "g" },
+        { name: "Ground turmeric", quantity: 1.5, unit: "tsp" },
+        { name: "Fine sea salt", quantity: 1, unit: "tsp" },
+        { name: "Neutral oil (sunflower or vegetable)", quantity: 4, unit: "tbsp" }
       ]},
-      { group: "Pastry", items: [
-        { name: "Filo pastry sheets (270g pack)", quantity: 270, unit: "g" },
-        { name: "Unsalted butter, melted", quantity: 80, unit: "g" },
-        { name: "Olive oil", quantity: 2, unit: "tbsp" },
-        { name: "Nigella seeds (black sesame or sesame seeds also fine)", quantity: 1, unit: "tsp" }
+      { group: "Crispy Shallots", items: [
+        { name: "Banana shallots, very thinly sliced into rings", quantity: 4, unit: "" },
+        { name: "Neutral oil for frying", quantity: 150, unit: "ml" }
       ]},
-      { group: "Sumac Yoghurt", items: [
-        { name: "Full-fat Greek yoghurt", quantity: 250, unit: "g" },
-        { name: "Sumac", quantity: 1.5, unit: "tsp" },
-        { name: "Garlic clove, minced to a paste with a pinch of salt", quantity: 1, unit: "" },
-        { name: "Extra virgin olive oil", quantity: 1, unit: "tbsp" },
-        { name: "Lemon juice", quantity: 1, unit: "tbsp" },
-        { name: "Salt", quantity: 0, unit: "" }
+      { group: "Tamarind Glaze", items: [
+        { name: "Tamarind paste (smooth, seedless)", quantity: 3, unit: "tbsp" },
+        { name: "Soy sauce", quantity: 2, unit: "tbsp" },
+        { name: "Palm sugar (or light brown sugar)", quantity: 1, unit: "tbsp" },
+        { name: "Garlic cloves, minced", quantity: 3, unit: "" },
+        { name: "Fresh ginger, finely grated", quantity: 1.5, unit: "tsp" },
+        { name: "Red chilli, finely sliced", quantity: 2, unit: "" },
+        { name: "Water", quantity: 3, unit: "tbsp" }
+      ]},
+      { group: "To Finish & Serve", items: [
+        { name: "Toasted sesame seeds", quantity: 2, unit: "tbsp" },
+        { name: "Fresh coriander, roughly torn", quantity: 20, unit: "g" },
+        { name: "Spring onions, finely sliced", quantity: 3, unit: "" },
+        { name: "Jasmine rice, steamed", quantity: 300, unit: "g" },
+        { name: "Lime wedges", quantity: 2, unit: "" }
       ]}
     ],
     substitutes: [
-      { ingredient: "Fresh spinach", alternatives: ["Frozen spinach, thoroughly defrosted and squeezed very dry", "Swiss chard, blanched and squeezed"] },
-      { ingredient: "Ricotta cheese", alternatives: ["Cottage cheese, drained", "More crumbled feta (reduce added salt)"] },
-      { ingredient: "Pine nuts", alternatives: ["Roughly chopped walnuts", "Toasted sunflower seeds"] },
-      { ingredient: "Filo pastry", alternatives: ["Yufka pastry if available", "No direct substitute — filo is essential here"] }
+      { ingredient: "Firm tofu", alternatives: ["Burmese-style chickpea tofu (tofu made from chickpea flour — very traditional)", "Tempeh, sliced and fried the same way"] },
+      { ingredient: "Tamarind paste", alternatives: ["2 tbsp lime juice + 1 tbsp soy sauce (less complex but works)", "Pomegranate molasses mixed with a little lime"] },
+      { ingredient: "Palm sugar", alternatives: ["Light brown sugar", "Coconut sugar"] },
+      { ingredient: "Waxy potatoes", alternatives: ["Sweet potato (slightly softer result)", "Butternut squash cubes"] }
     ],
     instructions: [
-      "Preheat your oven to 200°C / 180°C fan / Gas 6. Grease a 30 x 20 cm baking tin (or a similar-sized deep roasting tin) with a little of the melted butter.",
-      "Wilt the spinach in a large dry frying pan over a high heat in two or three batches, tossing until just collapsed — about 1–2 minutes per batch. Transfer to a colander and leave to cool, then squeeze out as much moisture as you possibly can with your hands. Excess water is the enemy of a crisp börek. Roughly chop the squeezed spinach.",
-      "Combine the chopped spinach, crumbled feta, ricotta, toasted pine nuts, spring onions, beaten eggs, nutmeg and dried mint in a large bowl. Season with black pepper — the feta is salty so taste before adding any salt. Mix well.",
-      "Mix the melted butter and olive oil together in a small bowl. Keep the filo pastry under a clean, slightly damp tea towel when you\'re not using it to prevent it drying out.",
-      "Lay one sheet of filo into the prepared tin, letting the edges overhang. Brush generously with the butter-oil mixture. Repeat with 5 more sheets of filo, brushing each layer. Don\'t worry if sheets tear — just patch them together.",
-      "Spread the spinach and feta filling evenly over the filo base, pressing it gently into an even layer. Now layer the remaining filo sheets on top, brushing each one generously with the butter-oil mixture. Fold any overhanging pastry up and over the top to seal the edges, brushing these too.",
-      "Using a sharp knife, score the top of the börek into 6 rectangles or diamond shapes — this makes it much easier to cut cleanly once baked and also allows steam to escape. Scatter the nigella seeds over the top.",
-      "Bake for 35–40 minutes until the top is deeply golden and shattering-crisp. If it\'s browning too fast, cover loosely with foil for the last 10 minutes.",
-      "While the börek bakes, stir together the Greek yoghurt, sumac, garlic paste, olive oil and lemon juice. Season with salt to taste and refrigerate until needed.",
-      "Remove the börek from the oven and leave to rest for at least 10 minutes before cutting along the scored lines. Serve warm with a generous dollop of sumac yoghurt alongside and a simple green salad if you like."
+      "Press the tofu well — wrap in a clean tea towel and place a heavy pan on top for 20 minutes. This removes excess moisture and ensures a gloriously crispy exterior when fried. Meanwhile, boil the potato chunks in salted water for 8–10 minutes until just tender but still holding their shape. Drain and leave to steam-dry in the colander.",
+      "Make the crispy shallots: heat 150ml of oil in a small saucepan over medium heat. Add the shallot rings and fry, stirring frequently, for 10–12 minutes until deep golden and crisp. Watch them carefully in the last few minutes — they go from golden to burnt quickly. Remove with a slotted spoon onto kitchen paper and season with a pinch of salt. Set aside the shallot oil — you\'ll use some of it for cooking.",
+      "Toss the pressed tofu cubes with 1 tsp turmeric and half the salt until evenly coated. Heat 3 tbsp of the reserved shallot oil (or fresh oil) in a large non-stick or cast-iron frying pan over high heat. Fry the tofu in a single layer for 3–4 minutes per side without moving it, until each face is deeply golden and crisp. Remove and set aside.",
+      "In the same pan, add the drained potatoes with 1 tbsp oil and the remaining 0.5 tsp turmeric. Fry over high heat for 4–5 minutes, tossing occasionally, until the potatoes are golden and crispy at the edges. Season with salt. Remove and set aside with the tofu.",
+      "Make the glaze by combining tamarind paste, soy sauce, palm sugar, garlic, ginger, chilli and water in a small bowl. Stir until the sugar dissolves. Return the pan to medium-high heat and add a tiny splash of oil. Pour in the tamarind glaze and let it bubble for 60–90 seconds until it thickens to a glossy, dark syrup that coats the back of a spoon.",
+      "Return the crispy tofu and potatoes to the pan and toss vigorously to coat everything in the glaze. Cook for a further minute so the glaze caramelises slightly on the tofu. Taste and adjust — add more tamarind for tartness, soy for salt or sugar for balance.",
+      "Pile onto a large platter over steamed jasmine rice. Top generously with the crispy shallots (add them last so they stay crunchy), toasted sesame seeds, spring onions and torn coriander. Serve with lime wedges on the side for squeezing over — the hit of fresh citrus at the table makes everything sing."
     ]
   }
 ];

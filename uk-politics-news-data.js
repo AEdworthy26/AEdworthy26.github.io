@@ -1,61 +1,61 @@
 // uk-politics-news-data.js
-// Auto-updated 2026-05-16 — do not edit manually
+// Auto-updated 2026-05-17 — do not edit manually
 
 var UK_POLITICS_NEWS = {
-  date: "2026-05-16",
+  date: "2026-05-17",
   main: {
     title: "How Rayner, Streeting and Burnham Weakened Starmer in 12 Hours of Political Drama",
     category: "Politics",
     content: [
-      "In an extraordinary sequence of events that gripped Westminster, three of the Labour Party\'s most senior politicians delivered a series of blows to Prime Minister Sir Keir Starmer within a single twelve-hour period. The interventions — from Deputy Prime Minister Angela Rayner, Health Secretary Wes Streeting, and Greater Manchester Mayor Andy Burnham — combined to create what observers have described as an unforgettable day in British political history. Each move, whether by design or coincidence, appeared to chip away at Starmer\'s authority at a moment when his leadership is already under intense scrutiny.",
-      "Andy Burnham\'s role in the drama was perhaps the most structurally significant, as Labour\'s ruling National Executive Committee cleared him to seek selection as the parliamentary candidate in the upcoming Makerfield by-election. With a seat in the Commons, Burnham would be formally positioned to mount a leadership challenge against Starmer, potentially as early as the Labour autumn conference in Liverpool. His allies have been explicit about the timeline, suggesting he intends to push for the premiership before the conference takes place, aiming for what would amount to a victorious homecoming in his home region.",
-      "Wes Streeting\'s contribution to the day\'s drama added another layer of instability, as the Health Secretary reportedly refused to rule out his own leadership ambitions when pressed. This was a significant moment of public positioning from a Cabinet minister who, under normal conventions of collective responsibility, would be expected to offer unwavering loyalty to the sitting prime minister. His refusal to close down the question of his own ambitions sent a clear signal that the Cabinet itself is not united in its support for Starmer\'s continued leadership.",
-      "Angela Rayner\'s intervention rounded out the trio of damaging episodes, with her actions and statements further undermining the sense of cohesion at the top of the Labour government. The confluence of three such prominent figures all, in their own ways, distancing themselves from or challenging the Prime Minister in so short a window represents a serious and potentially irreversible erosion of his authority. Political analysts have noted that once senior figures begin to move in this way, it becomes extremely difficult for a leader to re-establish the discipline and loyalty necessary to govern effectively.",
-      "The broader context makes the situation even more precarious for Starmer. UK borrowing costs have hit their highest level since the financial crash era, with markets rattled by the political uncertainty surrounding the leadership question. Reform UK has indicated it will fight hard in the Makerfield by-election, meaning Burnham\'s path to parliament is not guaranteed, but the very fact that this contest is now being framed as a national political referendum on Starmer\'s future speaks to how dramatically the political landscape has shifted. What began as a mayoralty decision has rapidly become the defining question of British domestic politics in 2026.",
+      "In what has been described as an unforgettable day in British politics, three senior Labour figures delivered a series of devastating blows to Prime Minister Keir Starmer\'s authority within the space of just twelve hours. The coordinated — or perhaps coincidental — interventions from Angela Rayner, Wes Streeting, and Andy Burnham have dramatically reshaped the political landscape within the governing party. Analysts are now openly questioning whether Starmer can reassert his grip on Labour in the weeks and months ahead.",
+      "Wes Streeting, the former health secretary, made the most headline-grabbing move by publicly confirming he intends to stand in any Labour leadership contest to replace Starmer. In a major speech — his first since resigning from the Cabinet — Streeting also called for the United Kingdom to seek to rejoin the European Union, a position that represents a significant break from Labour\'s current settled policy on Brexit. His remarks were widely interpreted as a direct challenge to the Prime Minister\'s authority and a bid to define the ideological terrain of a coming leadership race.",
+      "Meanwhile, Andy Burnham, the Mayor of Greater Manchester, was cleared to run for candidate selection in the pivotal Makerfield by-election, which would return him to Westminster and provide the formal springboard for a leadership challenge against Starmer. Burnham struck a notably populist tone, declaring that Labour needed to be 'saved from where it\'s been' and outlining a bold programme of renationalisation — bringing energy and water back under public control — as the centrepiece of his prospective platform. His entry into the by-election race has electrified Labour\'s left and galvanised those who believe the party has drifted too far from its traditional base.",
+      "The question of Brexit has re-emerged as a defining fault line in the Labour leadership jostling, with the Makerfield constituency — a traditionally working-class, pro-Leave seat — providing a complex backdrop. Burnham is expected to soften or drop his previous calls to reverse Brexit in order to appeal to voters in the seat, while Streeting has staked out a pro-Rejoin position that could prove popular with the party membership even if it risks alienating large sections of the electorate. The divergence between the two putative candidates on Europe underscores how unsettled Labour\'s position on the UK\'s relationship with the EU truly remains.",
+      "The political turmoil has had immediate economic consequences, with UK borrowing costs hitting a fresh financial crash-era high amid the uncertainty surrounding Starmer\'s leadership. Cabinet unity has also frayed visibly, with Lisa Nandy breaking ranks to join Burnham on the campaign trail, and Jess Phillips publicly stating that Starmer 'doesn\'t listen'. The events of the past twenty-four hours have left Downing Street on the defensive, and with a by-election imminent and a potential leadership contest looming, the Prime Minister faces the most serious test of his authority since taking office."
     ],
     image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/9734/live/f56a69d0-509f-11f1-b14d-d3adf2548784.jpg",
     source: "BBC News",
-    sourceUrl: "https://www.bbc.com/news/articles/cvgzjj474ywo?at_medium=RSS&at_campaign=rss"
+    sourceUrl: "https://www.bbc.com/news/articles/cvgzjj474ywo"
   },
   secondary: [
     {
       id: "uk1",
-      title: "Burnham Cleared to Run for Selection in Pivotal Makerfield By-Election",
-      summary: "Labour\'s ruling NEC has approved Andy Burnham to seek selection as the candidate in the Makerfield by-election, opening a direct path to a leadership challenge against Sir Keir Starmer.",
+      title: "Wes Streeting: I\'ll Stand for Labour Leadership — and Britain Must Rejoin EU",
+      summary: "Former health secretary Wes Streeting has confirmed he will run in any Labour leadership contest and called for the UK to rejoin the European Union.",
       body: [
-        "Labour\'s National Executive Committee has given Andy Burnham the green light to enter the candidate selection process for the Makerfield by-election, triggered by the resignation of MP Josh Simons. Burnham, who still has two years remaining on his term as Greater Manchester Mayor, will need to win the selection and then the by-election itself before he can formally challenge for the Labour leadership.",
-        "The decision represents a significant moment for the Labour Party, which had previously blocked Burnham from running in an earlier by-election contest in Gorton and Denton. His allies have confirmed he intends to move quickly, targeting the Labour autumn conference in Liverpool as a venue for a victorious leadership push."
+        "Wes Streeting delivered his first public speech since resigning as health secretary, using it to formally signal his intention to enter any Labour leadership race and to champion the cause of EU re-entry — a bold and controversial position that puts him at odds with the current government\'s settled stance on Brexit. The speech was seen as a deliberate attempt to carve out a distinct political identity ahead of what many now regard as an inevitable contest for the Labour crown.",
+        "Streeting\'s pro-Rejoin stance is likely to prove popular among the Labour membership, who lean heavily towards closer European integration, though it carries significant electoral risks in parts of England that voted strongly for Leave in 2016. His intervention has dramatically raised the stakes in the emerging leadership race and forced rivals, including Andy Burnham, to clarify their own positions on Europe."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/8682/live/c678dde0-507d-11f1-b637-39d6d94b351f.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/ckgp2e0rrj4o?at_medium=RSS&at_campaign=rss",
+      image: "https://images.pexels.com/photos/36694857/pexels-photo-36694857.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      source: "The Independent",
+      url: "https://www.independent.co.uk/news/uk/politics/wes-streeting-eu-brexit-labour-burnham-b2977934.html",
       category: "Politics"
     },
     {
       id: "uk2",
-      title: "UK Borrowing Costs Hit Fresh Financial Crash-Era High Amid Political Turmoil",
-      summary: "Benchmark UK borrowing costs have risen to their highest level since the financial crash era as political uncertainty over Sir Keir Starmer\'s leadership rattles markets.",
+      title: "Burnham Cleared to Run in Makerfield By-Election as Leadership Challenge Takes Shape",
+      summary: "Andy Burnham has been given the green light to seek selection as Labour\'s candidate in the Makerfield by-election, a crucial stepping stone to launching a leadership bid against Keir Starmer.",
       body: [
-        "The yield on UK government bonds has climbed to a level not seen since the era of the 2008 financial crisis, with investors reacting nervously to the ongoing political instability surrounding the Prime Minister\'s position. The rise in borrowing costs adds a serious economic dimension to what has until now been primarily a political crisis for the Labour government.",
-        "The timing is deeply uncomfortable for the Chancellor and the wider Cabinet, as higher borrowing costs constrain the government\'s fiscal headroom and could force difficult decisions on spending or taxation. Markets are closely watching whether Starmer can stabilise his position or whether the leadership contest will intensify further in the weeks ahead."
+        "The Greater Manchester mayor received confirmation that he is cleared to pursue candidate selection in the Makerfield by-election, a seat that would return him to the House of Commons and enable him formally to challenge for the Labour leadership. Burnham has vowed to 'save' Labour, signalling a sharp change in direction from the Starmer government\'s current approach and promising a programme of renationalisation including energy and water.",
+        "However, winning Makerfield is not guaranteed — the constituency is a pro-Leave seat and Burnham\'s path to selection and victory will require him to navigate difficult questions about his previous positions on Brexit. Analysts note that the by-election itself has become a proxy battle for the soul of the Labour Party, with the result likely to shape the terms of any forthcoming leadership contest."
+      ],
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/8682/live/c678dde0-507d-11f1-b637-39d6d94b351f.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.com/news/articles/ckgp2e0rrj4o",
+      category: "Politics"
+    },
+    {
+      id: "uk3",
+      title: "UK Borrowing Costs Hit Fresh Financial Crash-Era High Amid Labour Political Turmoil",
+      summary: "The benchmark UK borrowing cost has risen to its highest level since the financial crash as political uncertainty surrounding Keir Starmer\'s leadership rattles markets.",
+      body: [
+        "UK gilt yields have climbed to levels not seen since the global financial crisis, with investors citing growing political instability around the Starmer government as a key factor weighing on confidence. The timing of the spike — coinciding directly with the Labour leadership drama — has drawn uncomfortable comparisons to the market turbulence that accompanied previous periods of British political upheaval.",
+        "The surge in borrowing costs threatens to complicate the government\'s fiscal plans at a delicate moment, with the Treasury already under pressure to demonstrate economic credibility. The juxtaposition of a leadership crisis and rising debt costs has handed political opponents a powerful line of attack against a Prime Minister already struggling to maintain authority within his own party."
       ],
       image: "https://e3.365dm.com/26/05/1920x1080/skynews-downing-street-viewfinder_7248333.jpg?20260514082457",
       source: "Sky News",
       url: "https://news.sky.com/story/uk-borrowing-costs-hit-fresh-financial-crash-era-high-amid-political-uncertainty-13544322",
       category: "Economics"
-    },
-    {
-      id: "uk3",
-      title: "Far-Right Activists Barred from UK Ahead of Tommy Robinson Rally",
-      summary: "Eleven foreign far-right activists have been blocked from entering the United Kingdom ahead of a rally organised by Tommy Robinson supporters, as Keir Starmer accused Robinson of 'peddling hatred and division'.",
-      body: [
-        "The Home Office confirmed that eleven individuals with far-right affiliations from overseas had been prevented from entering the UK in the run-up to a major rally being organised by supporters of Tommy Robinson. Prime Minister Sir Keir Starmer used the occasion to directly condemn Robinson, accusing him of seeking to spread hatred and division across the country.",
-        "The Archbishop of Canterbury also weighed in, urging members of the public to 'choose hope' in the face of the rally, while a range of faith leaders spoke out against the planned demonstration. Metropolitan Police have been preparing one of their largest recent operations to manage both the far-right rally and a simultaneous pro-Palestine march, with more than 100,000 protesters expected on the streets of London on the same day as the FA Cup final at Wembley."
-      ],
-      image: "https://i.guim.co.uk/img/media/4cb7f9a49610f5fdff168a01e2cafb645fd9b5a5/0_0_5000_4000/master/5000.jpg?width=1200&quality=85&auto=format&fit=max&s=fda5d5b20acadc68498bf98bd6f75de5",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/uk-news/2026/may/15/far-right-activists-barred-uk-tommy-robinson-rally",
-      category: "Politics"
     }
   ]
 };

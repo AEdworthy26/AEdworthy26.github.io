@@ -1,61 +1,61 @@
 // tech-news-data.js
-// Auto-updated 2026-05-16 — do not edit manually
+// Auto-updated 2026-05-17 — do not edit manually
 
 var TECH_NEWS = {
-  date: "2026-05-16",
+  date: "2026-05-17",
   main: {
-    title: "YouTube Expands AI Deepfake Detection Tool to All Adult Users",
-    category: "AI & Technology",
+    title: "Anthropic\'s $1.5B Copyright Settlement Is Getting Messy as Judge Delays Approval",
+    category: "Technology / AI",
     content: [
-      "YouTube is rolling out its AI-powered likeness detection program to all users over the age of 18, marking a significant expansion of a tool that was previously available only to a limited group. The feature allows virtually any adult on the platform to enlist YouTube\'s artificial intelligence to hunt for potential deepfakes of themselves circulating across the site. This represents one of the most ambitious consumer-facing deployments of AI deepfake detection technology by a major platform to date.",
-      "The likeness detection system works through a selfie-style facial scan that a user submits to YouTube, which the platform\'s AI then uses as a reference point to monitor uploaded content for lookalikes. When the system identifies a potential match — footage that may have been synthetically generated or manipulated to resemble the user — YouTube sends an alert so the individual can review and take action. The process is designed to give everyday users a meaningful degree of control over how their appearance is used or misused on the platform.",
-      "The expansion comes amid a growing crisis of AI-generated non-consensual imagery and deepfake videos proliferating across social media and video platforms worldwide. Celebrities, public figures, and ordinary individuals alike have found themselves victims of convincingly fabricated videos that can damage reputations, facilitate harassment, or be used in scams and fraud. YouTube\'s move signals that major platforms are under increasing pressure — from regulators, advocacy groups, and users — to take proactive rather than reactive stances on synthetic media.",
-      "By opening the tool to all adults rather than restricting it to verified creators or public figures, YouTube is acknowledging that deepfake harm is not limited to the famous or professionally prominent. Anyone with an online presence can become a target, and the democratization of AI video generation tools has made it easier than ever for bad actors to fabricate convincing content. Making the detection feature universally available is a meaningful step toward leveling the playing field between those who create harmful synthetic content and those who are victimized by it.",
-      "The move will likely intensify broader industry conversations about the responsibilities of large platforms in policing AI-generated content. Questions remain about the accuracy of the detection system, the potential for false positives, and how YouTube will handle disputed cases where the platform\'s AI flags content that creators argue is legitimate. Nevertheless, YouTube\'s expansion of this tool sets a new benchmark for what users can reasonably expect from video platforms in the age of generative AI, and may prompt competitors to accelerate the development of similar protective features."
+      "A landmark $1.5 billion copyright settlement between Anthropic and a group of authors has hit a significant snag, with a federal judge delaying approval of the deal amid mounting controversy over how the proceeds would be distributed. The case, which pits the AI company against writers who alleged their work was used without permission to train large language models, was widely seen as a bellwether for how the legal system would treat AI and intellectual property. The judge\'s hesitation signals that the path to resolution may be far longer and more complicated than either side had anticipated.",
+      "At the center of the dispute are accusations that the lawyers representing the authors rushed the settlement process in order to secure an outsized share of the payout for themselves. Critics have pointed to the $320 million in proposed legal fees as a figure that raises serious ethical questions about whether class counsel prioritized their own financial interests over those of the authors they were supposed to represent. This kind of internal conflict in large class-action settlements is not unprecedented, but the sheer scale of the amounts involved has drawn unusual scrutiny from both the court and the public.",
+      "A number of authors have stepped forward to fight for higher individual payouts, arguing that the current terms of the settlement do not adequately compensate them for the commercial harm done by having their creative work ingested into AI training datasets without consent. These objecting authors contend that Anthropic built a multi-billion-dollar business on the foundation of their labor, and that a distribution formula weighted heavily toward legal fees fundamentally undervalues their contribution. Their intervention has turned what might have been a straightforward approval hearing into a contested legal proceeding.",
+      "The case carries enormous implications for the broader AI industry, which has faced a wave of similar copyright lawsuits from authors, visual artists, musicians, and news organizations. A clean settlement with Anthropic could have established a financial template for how AI companies compensate rights holders going forward, potentially reducing uncertainty across the sector. Instead, the delays and internal discord have left the legal landscape murky, and other AI firms watching the proceedings will be cautious about drawing too many conclusions until a final ruling is handed down.",
+      "Anthropic, which has positioned itself as a safety-focused AI lab and recently reached a valuation in the tens of billions of dollars, now faces the prospect of prolonged litigation at a time when it is aggressively expanding its Claude family of AI models. The reputational dimension of the dispute is not trivial — being seen as resistant to fairly compensating creators could complicate the company\'s relationships with the creative communities whose work underlies its products. Whether the judge ultimately approves a revised settlement or sends the parties back to the negotiating table, this case has already reshaped the conversation about accountability, compensation, and the ethics of AI development."
     ],
-    image: "https://images.unsplash.com/photo-1611162616475-46b635cb6868?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxZb3VUdWJlJTIwRXhwYW5kcyUyMEFJJTIwRGVlcGZha2UlMjBEZXRlY3Rpb24lMjBUb29sJTIwdG8lMjBBbGwlMjBBZHVsdCUyMFVzZXJzfGVufDB8MHx8fDE3Nzg5MDc4NjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    source: "The Verge",
-    sourceUrl: "https://www.theverge.com/news/931884/youtube-likeness-detection-ai-deepfake-expansion-all-adults"
+    image: "https://images.pexels.com/photos/30558559/pexels-photo-30558559.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    source: "Ars Technica",
+    sourceUrl: "https://arstechnica.com/tech-policy/2026/05/authors-fight-for-higher-payouts-from-anthropics-1-5b-copyright-settlement/"
   },
   secondary: [
     {
       id: "tc1",
-      title: "ArXiv Will Ban Researchers Who Upload Papers Full of AI Slop",
-      summary: "ArXiv is cracking down on academic papers that show clear signs of unchecked AI-generated content, threatening bans for authors whose submissions contain hallucinated references or LLM meta-comments.",
+      title: "ArXiv Will Ban Authors for a Year If They Let AI Do All the Work",
+      summary: "The preprint research repository ArXiv is cracking down on the careless use of large language models in scientific papers, threatening year-long bans for authors who outsource their writing entirely to AI.",
       body: [
-        "The preprint research platform ArXiv has announced a new enforcement policy targeting papers that contain 'incontrovertible evidence' that authors failed to review AI-generated output, such as hallucinated citations or stray meta-comments left behind by large language models. Researchers found to be submitting such work will face bans from the platform, marking one of the stiffest penalties any major academic repository has imposed for AI misuse.",
-        "The policy reflects growing alarm within the scientific community about the degradation of research quality as generative AI tools become ubiquitous in academic writing. ArXiv\'s intervention is significant because preprint servers play a critical role in the rapid dissemination of scientific findings, and low-quality AI-generated content risks polluting the broader research ecosystem before peer review can catch errors."
+        "ArXiv, the widely used repository for preprint scientific research, has announced a new enforcement policy that would ban authors for up to a year if they are found to have used AI to generate the entirety of their submitted papers. The move reflects growing concern within the academic community that the proliferation of AI-generated content is undermining the integrity and originality expected of scholarly work.",
+        "The policy draws a distinction between using AI as an assistive tool — for editing, formatting, or checking grammar — and wholesale delegation of the writing process to a large language model. By setting a clear and meaningful consequence for violations, ArXiv is staking out a position that academic publishing must actively defend standards of human authorship rather than passively accept the status quo."
       ],
-      image: "https://images.unsplash.com/photo-1775185172785-4bbd6b0fc8f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxBclhpdiUyMFdpbGwlMjBCYW4lMjBSZXNlYXJjaGVycyUyMFdobyUyMFVwbG9hZCUyMFBhcGVycyUyMEZ1bGwlMjBvZiUyMEFJJTIwU2xvcHxlbnwwfDB8fHwxNzc4OTA3ODYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "The Verge",
-      url: "https://www.theverge.com/science/931766/arxiv-ai-slop-ban-researchers",
-      category: "AI & Science"
+      image: "https://images.unsplash.com/photo-1732694144890-05fd2d02b1bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxBclhpdiUyMFdpbGwlMjBCYW4lMjBBdXRob3JzJTIwZm9yJTIwYSUyMFllYXIlMjBJZiUyMFRoZXklMjBMZXQlMjBBSSUyMERvJTIwQWxsJTIwdGhlJTIwV29ya3xlbnwwfDB8fHwxNzc4OTk0MjU5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "TechCrunch",
+      url: "https://techcrunch.com/2026/05/16/research-repository-arxiv-will-ban-authors-for-a-year-if-they-let-ai-do-all-the-work/",
+      category: "AI / Science"
     },
     {
       id: "tc2",
-      title: "Hotel Check-In System Exposed a Million Passports and Driver\'s Licenses",
-      summary: "A tech company maintaining a hotel check-in system misconfigured its cloud storage to public, leaving over a million passports and driver\'s licenses accessible to anyone without a password.",
+      title: "Cybercriminal Twins Caught After They Forgot to Turn Off Microsoft Teams Recording",
+      summary: "A pair of cybercriminal twins were apprehended after inadvertently leaving a Microsoft Teams recording running during what appears to have been an incriminating conversation.",
       body: [
-        "A serious cybersecurity lapse has come to light after a hotel check-in technology provider was found to have set its cloud storage bucket to public, inadvertently exposing the sensitive identity documents of roughly one million guests. The exposed data included scans of passports and driver\'s licenses — among the most valuable categories of personal information for identity thieves and fraudsters.",
-        "The incident highlights the persistent risks posed by cloud misconfiguration, a relatively simple but devastatingly common error that continues to result in large-scale data exposures across industries. For the hospitality sector, which routinely collects government-issued identification during check-in, the breach underscores an urgent need for tighter oversight of the third-party technology vendors entrusted with guests' most sensitive data."
+        "In a case that is equal parts cautionary tale and dark comedy, twin cybercriminals were caught by investigators after they failed to stop a Microsoft Teams session from recording, leaving behind a digital record of their activities. The blunder underscores how even sophisticated bad actors can be undone by mundane oversights in the software tools they use every day.",
+        "The arrest is part of a broader week in cybersecurity news that also includes the conclusion of a ransomware incident involving Instructure\'s Canvas learning management system and the arrest of an alleged dark net market kingpin. The string of enforcement actions suggests that law enforcement agencies are increasingly effective at leveraging digital evidence — sometimes handed to them accidentally — to build airtight cases against cybercriminals."
       ],
-      image: "https://images.unsplash.com/photo-1581553673739-c4906b5d0de8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxIb3RlbCUyMENoZWNrLUluJTIwU3lzdGVtJTIwRXhwb3NlZCUyMGElMjBNaWxsaW9uJTIwUGFzc3BvcnRzJTIwYW5kJTIwRHJpdmVyJTVDfGVufDB8MHx8fDE3Nzg5MDc4NjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "TechCrunch",
-      url: "https://techcrunch.com/2026/05/15/a-hotel-check-in-system-left-a-million-passports-and-drivers-licenses-open-for-anyone-to-see/",
+      image: "https://images.unsplash.com/photo-1649433391841-02a04e22ad50?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxDeWJlcmNyaW1pbmFsJTIwVHdpbnMlMjBDYXVnaHQlMjBBZnRlciUyMFRoZXklMjBGb3Jnb3QlMjB0byUyMFR1cm4lMjBPZmYlMjBNaWNyb3NvZnQlMjBUZWFtcyUyMFJlY29yZGluZ3xlbnwwfDB8fHwxNzc4OTk0MjU5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "WIRED",
+      url: "https://www.wired.com/story/security-news-this-week-cybercriminal-twins-caught-after-they-forgot-to-turn-off-microsoft-teams-recording/",
       category: "Cybersecurity"
     },
     {
       id: "tc3",
-      title: "Greg Brockman Officially Takes Control of OpenAI\'s Products in Latest Shake-Up",
-      summary: "OpenAI has reorganized its executive structure once again, with co-founder Greg Brockman taking charge of products as the company works to unify ChatGPT and Codex into a single core experience.",
+      title: "AI Could Put People Off Tech Jobs and Hurt the Economy, Warns Raspberry Pi Boss",
+      summary: "Raspberry Pi founder Eben Upton has cautioned that overstated claims about AI eliminating computing jobs could discourage young people from pursuing careers in technology, with damaging consequences for the broader economy.",
       body: [
-        "OpenAI is undergoing another internal reorganization, with Greg Brockman stepping into a central product leadership role as the company pursues a strategy of merging its flagship ChatGPT assistant and its Codex coding tool into one unified product experience. The reshuffle reflects OpenAI\'s ongoing efforts to streamline its increasingly sprawling portfolio of AI offerings under clearer organizational ownership.",
-        "Brockman\'s return to a prominent operational role is notable given his earlier sabbatical from the company, and signals that OpenAI\'s leadership is leaning on its founding generation to navigate a critical period of product consolidation and intensifying competition from rivals including Google, Anthropic, and Meta. The shake-up comes at a time when the AI industry is watching OpenAI closely amid its high-profile legal battles and continued transition toward a more conventional corporate structure."
+        "Eben Upton, the founder of Raspberry Pi and a prominent voice in computing education, has warned that the tech industry\'s rhetoric around AI replacing programmers and other technology workers risks creating a chilling effect on career choices. If students and young professionals come to believe that computing jobs are destined to disappear, fewer will invest the time and effort required to develop technical skills, potentially creating a talent shortage even as demand for those skills remains high.",
+        "Upton\'s comments add an important counterweight to the prevailing narrative in some corners of Silicon Valley that AI will soon make human software developers largely redundant. His perspective, rooted in decades of work promoting accessible computing education, suggests that the societal cost of such messaging may be underappreciated, and that the industry has a responsibility to communicate more carefully about the realistic — rather than the most dramatic — implications of AI advancement."
       ],
-      image: "https://media.wired.com/photos/6a074b744504eb478c5455df/master/pass/OpenAI-ReOrg-Business-AP-26120551910145.jpg",
-      source: "WIRED",
-      url: "https://www.wired.com/story/openai-reorg-greg-brockman-product/",
-      category: "AI Industry"
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/b124/live/7a8cb440-4fc1-11f1-b651-41ca043d3d3f.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.com/news/articles/clypr8p2lewo?at_medium=RSS&at_campaign=rss",
+      category: "Technology / AI"
     }
   ]
 };

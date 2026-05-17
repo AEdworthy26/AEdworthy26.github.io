@@ -1,8 +1,8 @@
 // quote-data.js
-// Auto-updated 2026-05-16 — do not edit manually
+// Auto-updated 2026-05-17 — do not edit manually
 
 var QUOTE_DATA = {
-  date: "2026-05-16",
-  text: "Education is the most powerful weapon which you can use to change the world.",
-  author: "Nelson Mandela"
+  date: "2026-05-17",
+  text: "It is better to be feared than loved, if you cannot be both.",
+  author: "Niccolò Machiavelli"
 };
