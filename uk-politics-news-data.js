@@ -1,61 +1,61 @@
 // uk-politics-news-data.js
-// Auto-updated 2026-05-17 — do not edit manually
+// Auto-updated 2026-05-18 — do not edit manually
 
 var UK_POLITICS_NEWS = {
-  date: "2026-05-17",
+  date: "2026-05-18",
   main: {
-    title: "How Rayner, Streeting and Burnham Weakened Starmer in 12 Hours of Political Drama",
+    title: "Andy Burnham Faces Perilous Race to Win Makerfield Byelection as Labour Leadership Crisis Deepens",
     category: "Politics",
     content: [
-      "In what has been described as an unforgettable day in British politics, three senior Labour figures delivered a series of devastating blows to Prime Minister Keir Starmer\'s authority within the space of just twelve hours. The coordinated — or perhaps coincidental — interventions from Angela Rayner, Wes Streeting, and Andy Burnham have dramatically reshaped the political landscape within the governing party. Analysts are now openly questioning whether Starmer can reassert his grip on Labour in the weeks and months ahead.",
-      "Wes Streeting, the former health secretary, made the most headline-grabbing move by publicly confirming he intends to stand in any Labour leadership contest to replace Starmer. In a major speech — his first since resigning from the Cabinet — Streeting also called for the United Kingdom to seek to rejoin the European Union, a position that represents a significant break from Labour\'s current settled policy on Brexit. His remarks were widely interpreted as a direct challenge to the Prime Minister\'s authority and a bid to define the ideological terrain of a coming leadership race.",
-      "Meanwhile, Andy Burnham, the Mayor of Greater Manchester, was cleared to run for candidate selection in the pivotal Makerfield by-election, which would return him to Westminster and provide the formal springboard for a leadership challenge against Starmer. Burnham struck a notably populist tone, declaring that Labour needed to be 'saved from where it\'s been' and outlining a bold programme of renationalisation — bringing energy and water back under public control — as the centrepiece of his prospective platform. His entry into the by-election race has electrified Labour\'s left and galvanised those who believe the party has drifted too far from its traditional base.",
-      "The question of Brexit has re-emerged as a defining fault line in the Labour leadership jostling, with the Makerfield constituency — a traditionally working-class, pro-Leave seat — providing a complex backdrop. Burnham is expected to soften or drop his previous calls to reverse Brexit in order to appeal to voters in the seat, while Streeting has staked out a pro-Rejoin position that could prove popular with the party membership even if it risks alienating large sections of the electorate. The divergence between the two putative candidates on Europe underscores how unsettled Labour\'s position on the UK\'s relationship with the EU truly remains.",
-      "The political turmoil has had immediate economic consequences, with UK borrowing costs hitting a fresh financial crash-era high amid the uncertainty surrounding Starmer\'s leadership. Cabinet unity has also frayed visibly, with Lisa Nandy breaking ranks to join Burnham on the campaign trail, and Jess Phillips publicly stating that Starmer 'doesn\'t listen'. The events of the past twenty-four hours have left Downing Street on the defensive, and with a by-election imminent and a potential leadership contest looming, the Prime Minister faces the most serious test of his authority since taking office."
+      "Andy Burnham, the Greater Manchester mayor, faces a perilous race to win the Makerfield seat in what allies are already describing as an extraordinarily difficult contest. Burnham is expected to be confirmed as Labour\'s candidate for the north-west constituency, but the scale of the challenge ahead is becoming increasingly apparent. Reform UK, which won more than 50% of the local election vote in the area, is expected to focus heavily on immigration and Brexit, making this a defining test of whether Labour can still speak to its traditional northern heartlands.",
+      "The byelection has rapidly become about far more than a single parliamentary seat, with allies and observers alike acknowledging that its outcome could shape the long-term future of both the Labour Party and the country. A defeat for Burnham in a seat Labour would historically have expected to hold comfortably would represent a serious blow to any leadership ambitions he has harboured, while a victory would dramatically strengthen his hand. The stakes could not be higher at a moment when the party is already consumed by questions about the direction and longevity of Keir Starmer\'s leadership.",
+      "The contest has also thrust Brexit back to the centre of British political debate in a way that few anticipated. With Wes Streeting accused of restarting 'Brexit wars' within Labour by raising the prospect of closer EU alignment, the Makerfield byelection is shaping up as a proxy battle over the UK\'s post-Brexit identity. Reform\'s strong local showing suggests that anti-immigration and pro-Brexit sentiment remains potent in parts of the north of England that Labour cannot afford to lose.",
+      "The broader context for the Makerfield contest is a Labour Party gripped by internal tension, with prominent figures including Lisa Nandy joining Burnham on the campaign trail in what observers have interpreted as a significant break from collective government loyalty. Meanwhile, Culture Secretary Nandy has publicly described whether Starmer fights on as a 'personal decision' for the Prime Minister, while insisting he has 'shown before that he\'s up for a fight'. The coded language of Cabinet ministers signals just how openly the question of the Labour leadership is now being discussed at the highest levels.",
+      "For Burnham, the Makerfield byelection represents both an extraordinary opportunity and a significant risk. A convincing win would cement his standing as a credible alternative to Starmer and a candidate capable of reconnecting Labour with working-class voters in its traditional strongholds. But the combination of Reform\'s surging support, the charged atmosphere around Brexit, and the sheer weight of expectation means that failure would be politically devastating — not just for Burnham personally, but for the wing of the Labour Party he is increasingly coming to represent."
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/9734/live/f56a69d0-509f-11f1-b14d-d3adf2548784.jpg",
-    source: "BBC News",
-    sourceUrl: "https://www.bbc.com/news/articles/cvgzjj474ywo"
+    image: "https://i.guim.co.uk/img/media/86ce8d5ef83851d5a67e2c5711d3258c70e464aa/354_0_2790_2232/master/2790.jpg?width=1200&quality=85&auto=format&fit=max&s=f1682278fbc4f01143111f740fad3fb5",
+    source: "The Guardian",
+    sourceUrl: "https://www.theguardian.com/politics/2026/may/17/andy-burnham-faces-perilous-race-to-win-makerfield-byelection-allies-say"
   },
   secondary: [
     {
       id: "uk1",
-      title: "Wes Streeting: I\'ll Stand for Labour Leadership — and Britain Must Rejoin EU",
-      summary: "Former health secretary Wes Streeting has confirmed he will run in any Labour leadership contest and called for the UK to rejoin the European Union.",
+      title: "UK Borrowing Costs Hit Fresh Financial Crash-Era High Amid Labour Leadership Uncertainty",
+      summary: "Benchmark UK borrowing costs have surged to levels not seen since the financial crash as political uncertainty surrounding Keir Starmer\'s future intensifies.",
       body: [
-        "Wes Streeting delivered his first public speech since resigning as health secretary, using it to formally signal his intention to enter any Labour leadership race and to champion the cause of EU re-entry — a bold and controversial position that puts him at odds with the current government\'s settled stance on Brexit. The speech was seen as a deliberate attempt to carve out a distinct political identity ahead of what many now regard as an inevitable contest for the Labour crown.",
-        "Streeting\'s pro-Rejoin stance is likely to prove popular among the Labour membership, who lean heavily towards closer European integration, though it carries significant electoral risks in parts of England that voted strongly for Leave in 2016. His intervention has dramatically raised the stakes in the emerging leadership race and forced rivals, including Andy Burnham, to clarify their own positions on Europe."
-      ],
-      image: "https://images.pexels.com/photos/36694857/pexels-photo-36694857.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      source: "The Independent",
-      url: "https://www.independent.co.uk/news/uk/politics/wes-streeting-eu-brexit-labour-burnham-b2977934.html",
-      category: "Politics"
-    },
-    {
-      id: "uk2",
-      title: "Burnham Cleared to Run in Makerfield By-Election as Leadership Challenge Takes Shape",
-      summary: "Andy Burnham has been given the green light to seek selection as Labour\'s candidate in the Makerfield by-election, a crucial stepping stone to launching a leadership bid against Keir Starmer.",
-      body: [
-        "The Greater Manchester mayor received confirmation that he is cleared to pursue candidate selection in the Makerfield by-election, a seat that would return him to the House of Commons and enable him formally to challenge for the Labour leadership. Burnham has vowed to 'save' Labour, signalling a sharp change in direction from the Starmer government\'s current approach and promising a programme of renationalisation including energy and water.",
-        "However, winning Makerfield is not guaranteed — the constituency is a pro-Leave seat and Burnham\'s path to selection and victory will require him to navigate difficult questions about his previous positions on Brexit. Analysts note that the by-election itself has become a proxy battle for the soul of the Labour Party, with the result likely to shape the terms of any forthcoming leadership contest."
-      ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/8682/live/c678dde0-507d-11f1-b637-39d6d94b351f.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/ckgp2e0rrj4o",
-      category: "Politics"
-    },
-    {
-      id: "uk3",
-      title: "UK Borrowing Costs Hit Fresh Financial Crash-Era High Amid Labour Political Turmoil",
-      summary: "The benchmark UK borrowing cost has risen to its highest level since the financial crash as political uncertainty surrounding Keir Starmer\'s leadership rattles markets.",
-      body: [
-        "UK gilt yields have climbed to levels not seen since the global financial crisis, with investors citing growing political instability around the Starmer government as a key factor weighing on confidence. The timing of the spike — coinciding directly with the Labour leadership drama — has drawn uncomfortable comparisons to the market turbulence that accompanied previous periods of British political upheaval.",
-        "The surge in borrowing costs threatens to complicate the government\'s fiscal plans at a delicate moment, with the Treasury already under pressure to demonstrate economic credibility. The juxtaposition of a leadership crisis and rising debt costs has handed political opponents a powerful line of attack against a Prime Minister already struggling to maintain authority within his own party."
+        "The benchmark UK borrowing cost has hit a fresh financial crash-era high, with markets rattled by the mounting political uncertainty surrounding Prime Minister Sir Keir Starmer and the prospect of a Labour leadership challenge from Andy Burnham. The spike in borrowing costs signals growing concern among investors about the stability of the government at a critical moment for the public finances.",
+        "The development adds a serious economic dimension to what has until now been primarily a political crisis for Labour. Higher borrowing costs make it more expensive for the government to service its debt and could constrain Chancellor Rachel Reeves\'s already limited room for manoeuvre on public spending."
       ],
       image: "https://e3.365dm.com/26/05/1920x1080/skynews-downing-street-viewfinder_7248333.jpg?20260514082457",
       source: "Sky News",
       url: "https://news.sky.com/story/uk-borrowing-costs-hit-fresh-financial-crash-era-high-amid-political-uncertainty-13544322",
       category: "Economics"
+    },
+    {
+      id: "uk2",
+      title: "David Lammy Promises 25% Cut in Children Jailed Awaiting Trial in Youth Justice Overhaul",
+      summary: "Justice Secretary David Lammy has published a white paper promising sweeping reforms to youth justice, including cutting by a quarter the number of children held on remand and potentially ending lifelong criminal records for under-18s.",
+      body: [
+        "David Lammy\'s white paper sets out an ambitious overhaul of the youth justice system, with a central pledge to reduce by 25% the number of children kept in custody while they await trial. The reforms could also see under-18s spared the burden of lifelong criminal records, a change that campaigners have long argued is essential to giving young offenders a genuine chance at rehabilitation.",
+        "The announcement comes alongside separate government measures focused on early intervention and tougher action against parents to tackle youth crime, though campaigners have argued that these additional steps fall short of the 'ambitious action' that is truly needed. Lammy has framed the white paper as a significant step towards a more humane and effective justice system for the youngest and most vulnerable offenders."
+      ],
+      image: "https://i.guim.co.uk/img/media/0a6662f1e215d50754ad7c350a91916ea98130d7/427_0_4267_3414/master/4267.jpg?width=1200&quality=85&auto=format&fit=max&s=98726f6c7e7483d76ef871da43f57012",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/law/2026/may/18/david-lammy-promises-cut-in-children-jailed-awaiting-trial",
+      category: "Politics"
+    },
+    {
+      id: "uk3",
+      title: "HS2 Failings Blamed on High-Speed Focus and Political Pressure, New Review Confirms",
+      summary: "A new review has confirmed that HS2's fundamental problems stemmed from its 'original sins' — an overly technical design focus, shifting political priorities, and costs that ballooned far beyond initial projections.",
+      body: [
+        "The review lays bare the catalogue of failures that dogged HS2 from its earliest stages, identifying a combination of an overly ambitious technical design, relentless political pressure to deliver at speed, and a chronic inability to control escalating costs as the project\'s defining weaknesses. These 'original sins', as the review describes them, set the high-speed rail project on a troubled trajectory from which it never recovered.",
+        "The findings are a damning verdict on decisions made across successive governments of different political stripes, underscoring how short-term political imperatives consistently overrode sound project management and financial discipline. The review is expected to inform future major infrastructure decisions as the government grapples with the lessons of one of Britain\'s most controversial and costly public spending commitments."
+      ],
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/e29e/live/7de080e0-5237-11f1-ab05-b32c08414332.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.com/news/articles/c936xeeye41o?at_medium=RSS&at_campaign=rss",
+      category: "Politics"
     }
   ]
 };

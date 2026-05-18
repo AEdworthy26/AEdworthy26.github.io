@@ -1,60 +1,60 @@
 // financial-news-data.js
-// Auto-updated 2026-05-17 — do not edit manually
+// Auto-updated 2026-05-18 — do not edit manually
 
 var FINANCIAL_NEWS = {
-  date: "2026-05-17",
+  date: "2026-05-18",
   main: {
-    title: "UK Borrowing Costs Rise and Pound Falls as Leadership Drama Continues",
-    category: "Economics",
+    title: "Iran War Sends Oil Soaring, Bonds Tumbling, and US Stocks Into Retreat",
+    category: "Markets",
     content: [
-      "UK financial markets came under fresh pressure this week as borrowing costs climbed and the pound fell against major currencies, with analysts pointing squarely at the political uncertainty surrounding the Labour Party\'s leadership. The turbulence reflects growing investor unease about the direction of economic policy in Britain, as the prospect of a change in leadership at the top of government begins to be priced into asset valuations. Bond markets in particular have proven sensitive to the shifting political winds, with yields on UK government debt moving higher as traders reassess the risk premium attached to British assets.",
-      "At the centre of market concerns is Greater Manchester Mayor Andy Burnham, who has emerged as a frontrunner to succeed Keir Starmer as Labour leader and, potentially, as Prime Minister. Burnham has publicly advocated for a programme of mass renationalisation, proposing to bring energy and water companies back under public control — a platform that has significant implications for both public spending and the private investors who currently hold stakes in those industries. Analysts say the moves in gilt yields and sterling have been directly fuelled by fears that a Burnham-led government would increase government borrowing substantially to fund such an agenda.",
-      "The fall in the pound adds another layer of complexity to the UK\'s economic outlook, particularly at a time when inflationary pressures have only recently begun to ease. A weaker currency tends to push up the cost of imports, threatening to reignite price pressures in an economy still recovering from several years of elevated inflation. For the Bank of England, any renewed currency weakness complicates the already delicate calculus around the pace and scale of potential interest rate reductions.",
-      "Rising borrowing costs are also a direct fiscal concern, given the UK government\'s existing debt burden and its ongoing need to refinance obligations in the bond market. Higher gilt yields mean the government pays more to service its debt, squeezing the fiscal headroom that Chancellor Rachel Reeves has worked to protect. If market participants begin to treat a shift in leadership — and a more expansionary fiscal stance — as a base-case scenario, the pressure on borrowing costs could persist or intensify in the weeks ahead.",
-      "For investors in UK-listed energy and utility stocks, the political backdrop introduces meaningful valuation uncertainty. Companies such as those operating in the water and energy sectors could face a significantly different regulatory and ownership environment if renationalisation becomes credible government policy. The episode is a reminder of how quickly domestic political developments can translate into tangible market movements, with real consequences for consumers, businesses, and the broader trajectory of the British economy."
+      "Global financial markets are facing a deepening storm as the ongoing US-Israeli war on Iran enters its third month with no resolution in sight. US stock-index futures fell on Sunday while crude oil prices pushed sharply higher, extending a pattern that has rattled investors and policymakers alike. The continued closure of the Strait of Hormuz — one of the world\'s most critical energy chokepoints — has kept oil supply tightly constrained, sending prices on what analysts are describing as a wild ride with no clear ceiling in view.",
+      "The bond market has been hit particularly hard, with a global selloff extending into Monday as inflation fears take hold. The yield on 30-year US Treasury notes climbed to its highest level since 2023, reflecting deep investor anxiety about the inflationary consequences of sustained high energy prices. Rising yields signal that bond investors are demanding greater compensation for holding long-dated debt, a development that ripples across mortgages, corporate borrowing costs, and consumer credit — tightening financial conditions across the entire economy.",
+      "The macroeconomic stakes are enormous. One analysis cited by MarketWatch estimates the Iran war could represent a $300 billion shock to the US economy alone, driving up mortgage rates and squeezing wages as energy costs filter through to virtually every sector. Walmart has already flagged that consumers begin meaningfully cutting back on spending when gasoline prices hit the $4.50 to $5.00 per gallon range — a threshold that now appears perilously close. Earnings reports from Walmart and Target are expected to offer the clearest picture yet of how dramatically shopping habits have shifted in response to the conflict.",
+      "The fallout is being felt well beyond the United States. In the UK, a major survey of employers shows businesses are halting investment and hiring plans as the Iran war pushes up costs, with April job vacancies falling 7.7% as companies struggle to absorb what bosses are calling 'the latest economic shock.' The humanitarian toll is equally stark: a New York Times report warns of catastrophe emerging in the world\'s most vulnerable regions, where the war is driving soaring costs for food, fuel, and fertilizer at precisely the moment when international relief infrastructure has been decimated by funding cuts.",
+      "Central banks now find themselves caught between a rock and a hard place. The bond market selloff reflects growing bets that policymakers will need to continue tightening monetary policy to combat energy-driven inflation, even as a slowing economy would normally call for rate cuts or pauses. The combination of rising oil prices, surging long-term yields, and weakening corporate confidence creates a stagflationary backdrop that central banks are poorly equipped to address with any single policy lever. Markets will be watching closely in the days ahead for any diplomatic breakthrough — or further deterioration — that could determine whether this crisis deepens into a full-blown global recession.",
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/2ac1/live/4d841640-5094-11f1-8eb4-7bbd1eefc905.png",
-    source: "BBC News",
-    sourceUrl: "https://www.bbc.com/news/articles/czr2pl5lj84o?at_medium=RSS&at_campaign=rss"
+    image: "https://i.guim.co.uk/img/media/0646a80e9fe385ac054e18903fde96056aeccce0/656_69_4484_3590/master/4484.jpg?width=1200&quality=85&auto=format&fit=max&s=258139e37cc804b06af59ec040023820",
+    source: "Bloomberg Markets",
+    sourceUrl: "https://www.bloomberg.com/news/articles/2026-05-17/oil-climbs-as-iran-war-shows-no-sign-of-ending-markets-wrap"
   },
   secondary: [
     {
       id: "fn1",
-      title: "British Gas Pays £20m Over Prepayment Meter Force-Fitting Scandal",
-      summary: "British Gas has been ordered to pay £20 million after regulator Ofgem found the energy supplier breached licence conditions designed to protect vulnerable customers by force-fitting prepayment meters.",
+      title: "US 30-Year Bond Yield Hits Highest Since 2023 on Inflation Fears",
+      summary: "Treasuries sold off sharply on Monday, pushing the 30-year yield to a near three-year high as the Iran war fans inflation concerns.",
       body: [
-        "Energy regulator Ofgem determined that British Gas violated key licence conditions that exist specifically to safeguard customers in vulnerable situations, resulting in a £20 million penalty for the supplier. The force-fitting of prepayment meters — which require customers to pay upfront for energy — had drawn widespread public outrage after investigative reporting exposed the practice being carried out on some of the most financially fragile households in the country.",
-        "The case has intensified scrutiny of the energy sector\'s treatment of struggling consumers and raises broader questions about regulatory oversight of large utility companies. The financial penalty, while significant, will also be measured against calls from consumer advocates for more systemic reform of how energy suppliers are permitted to manage debt recovery from vulnerable customers."
+        "The yield on 30-year US Treasury notes surged to its highest level in almost three years on Monday, as investors offloaded government debt amid mounting fears that the Iran conflict will keep energy prices elevated and inflation persistently high. The move extended a broader global bond selloff that has been building for several sessions, with markets in Europe and Asia also under pressure.",
+        "Rising long-term yields have significant real-world consequences, feeding directly into mortgage rates, corporate financing costs, and government borrowing expenses. The development puts the Federal Reserve in an increasingly difficult position, as tighter financial conditions arrive just as the economic outlook is darkening."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/4d64/live/4d3fa100-4fd5-11f1-b682-cf91850925ea.png",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/cq8p7l1y59lo?at_medium=RSS&at_campaign=rss",
-      category: "Business"
+      image: "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/itXMeAQXPlBA/v0/1200x-1.jpg",
+      source: "Bloomberg Markets",
+      url: "https://www.bloomberg.com/news/articles/2026-05-18/us-long-bond-yield-hits-highest-since-2023-on-inflation-concern",
+      category: "Markets"
     },
     {
       id: "fn2",
-      title: "China Indicates Tariffs Were Discussed at Trump Summit, Signalling Preliminary Agreement",
-      summary: "China\'s Ministry of Commerce said the two countries reached a preliminary agreement to reduce some tariffs at a recent summit, a statement that appeared to contradict positions put forward by President Trump.",
+      title: "NextEra Energy in Talks to Acquire Dominion in Landmark Utility Mega-Deal",
+      summary: "NextEra Energy is reportedly in discussions to acquire Dominion Energy, a move that would create one of the largest utility companies in the United States.",
       body: [
-        "The diverging public accounts from Washington and Beijing following the summit have introduced fresh uncertainty into financial markets that have been closely tracking the state of US-China trade relations. China\'s Ministry of Commerce specifically indicated that tariff reductions were on the table and that a preliminary deal had been struck, a claim with potentially significant consequences for global supply chains and trade-exposed equities.",
-        "The apparent contradiction between the two governments' characterisations of the talks highlights the fragility of any emerging trade détente, and investors will be watching closely for clarification in the days ahead. A genuine reduction in tariffs between the world\'s two largest economies would represent a meaningful shift in the trade landscape that has weighed on global growth forecasts throughout the mid-2020s."
+        "NextEra Energy, the Florida-based utility giant, is said to be in advanced talks to acquire Virginia-based Dominion Energy in a deal that would reshape the US power sector. The potential combination would create a utility behemoth at a moment when electricity demand is surging, driven in large part by the explosive growth of artificial intelligence data centers requiring vast amounts of power.",
+        "The timing of the talks reflects broader strategic pressures in the energy industry, as utilities race to secure scale and generation capacity to meet the AI-fuelled demand boom. A successful deal would rank among the largest utility mergers in recent memory and would likely draw close regulatory scrutiny given the combined company\'s reach across two major US states."
       ],
-      image: "https://static01.nyt.com/images/2026/05/14/multimedia/16dc-trade/16dc-trade-mediumSquareAt3X.jpg",
+      image: "https://static01.nyt.com/images/2026/05/18/multimedia/18biz-utility-deal1-kfcl/18biz-utility-deal1-kfcl-mediumSquareAt3X.jpg",
       source: "The New York Times",
-      url: "https://www.nytimes.com/2026/05/16/business/economy/china-tariffs-trump-summit.html",
-      category: "Economics"
+      url: "https://www.nytimes.com/2026/05/17/business/nextera-dominion-deal.html",
+      category: "Mergers & Acquisitions"
     },
     {
       id: "fn3",
-      title: "Australia Moves to Overhaul Capital Gains Tax to Fix 'Broken' Housing Market",
-      summary: "Australian Treasurer Jim Chalmers confirmed that proposed changes to the country\'s capital gains tax laws are aimed at addressing deep structural problems in the nation\'s housing market.",
+      title: "Thames Water Investors Warn Nationalisation Would Derail Recovery",
+      summary: "Investors in the embattled water company have pushed back against calls for temporary nationalisation, arguing it would slow rather than accelerate the firm\'s turnaround.",
       body: [
-        "Treasurer Chalmers reiterated on Sunday that the planned capital gains tax overhaul is a direct response to what the government describes as a broken housing market, where affordability has deteriorated sharply for first-time buyers and renters alike. The changes are expected to alter the investment calculus for property investors, who have long benefited from favourable tax treatment that critics argue has inflated house prices at the expense of owner-occupiers.",
-        "The announcement has significant implications for the Australian property sector and for the broader investment community, as real estate has historically been a dominant asset class for both institutional and retail investors in the country. Markets will be watching for the specific details of the reforms, which are likely to reshape capital flows and potentially dampen speculative demand in major urban property markets."
+        "Investors in Thames Water have issued a stark warning to the UK Labour government, arguing that placing the company under temporary public ownership would undermine its financial recovery rather than support it. The intervention comes amid political turbulence, with Greater Manchester Mayor Andy Burnham calling for water utilities and other key businesses to be renationalised.",
+        "Thames Water has been one of the UK\'s most high-profile corporate turnaround cases, burdened by heavy debt and regulatory penalties. The investor pushback highlights the tension between political pressure to act on struggling public services and the financial realities of attracting private capital needed to fund infrastructure investment."
       ],
-      image: "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ibJEgcuH9DHU/v0/1200x-1.jpg",
-      source: "Bloomberg Markets",
-      url: "https://www.bloomberg.com/news/articles/2026-05-17/australia-says-tax-changes-aim-to-fix-broken-housing-market",
+      image: "https://i.guim.co.uk/img/media/567e7153785aa20485ebcc32b46d4b783b18567e/850_889_5716_4575/master/5716.jpg?width=1200&quality=85&auto=format&fit=max&s=3fbf8b82cf1b022fcd48b70499a79bb5",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/business/2026/may/17/thames-water-investors-say-temporary-nationalisation-would-slow-its-recovery",
       category: "Economics"
     }
   ]

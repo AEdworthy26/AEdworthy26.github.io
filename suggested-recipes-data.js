@@ -1,186 +1,206 @@
 // suggested-recipes-data.js
-// Auto-updated 2026-05-17 — do not edit manually
+// Auto-updated 2026-05-18 — do not edit manually
 
 window.SUGGESTED_RECIPES = [
   {
     id: "sug1",
-    title: "Yucatán-Style Cochinita Pibil Pork Tacos with Pickled Red Onion & Habanero Salsa",
-    category: "Pork",
+    title: "Venetian Duck & Radicchio Risotto with Red Wine & Orange Gremolata",
+    category: "Other",
     calories: 610,
-    protein: 42,
-    fibre: 5,
-    healthScore: 68,
-    time: "2 hrs 45 mins",
-    serves: "6",
-    desc: "Slow-braised pork shoulder marinated in achiote, bitter orange and earthy spices until fall-apart tender — the closest a home oven can get to the legendary Yucatán pit-roasted original. Piled into warm corn tortillas with sharp pickled red onion and a fruity-fierce habanero salsa, every mouthful is smoky, tangy and deeply satisfying.",
-    emoji: "🌮",
-    image: "https://images.pexels.com/photos/28895968/pexels-photo-28895968.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    protein: 36,
+    fibre: 3,
+    healthScore: 65,
+    time: "55 mins",
+    serves: "4",
+    desc: "Rich, deeply savoured risotto where braised duck legs meet the bitter crunch of Treviso radicchio and a splash of Bardolino red wine. The orange and parsley gremolata stirred through at the end cuts the richness beautifully, lifting the whole dish into something genuinely memorable. A Venetian classic that feels special but rewards patient stirring more than any technical skill.",
+    emoji: "🦆",
+    image: "https://images.unsplash.com/photo-1739660740431-68dbe10e999e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxWZW5ldGlhbiUyMER1Y2slMjAlMjYlMjBSYWRpY2NoaW8lMjBSaXNvdHRvJTIwd2l0aCUyMFJlZCUyMFdpbmUlMjAlMjYlMjBPcmFuZ2UlMjBHcmVtb2xhdGElMjBmb29kJTIwZGlzaHxlbnwwfDB8fHwxNzc5MDgxMzUxfDA&ixlib=rb-4.1.0&q=80&w=1080",
     ingredientGroups: [
-      { group: "Pork & Marinade", items: [
-        { name: "Bone-in pork shoulder", quantity: 1.5, unit: "kg" },
-        { name: "Achiote (annatto) paste", quantity: 80, unit: "g" },
-        { name: "Fresh orange juice", quantity: 150, unit: "ml" },
-        { name: "Fresh lime juice", quantity: 60, unit: "ml" },
-        { name: "White wine vinegar", quantity: 2, unit: "tbsp" },
-        { name: "Garlic cloves, minced", quantity: 6, unit: "" },
-        { name: "Ground cumin", quantity: 1.5, unit: "tsp" },
-        { name: "Dried oregano (Mexican if possible)", quantity: 1, unit: "tsp" },
-        { name: "Ground cinnamon", quantity: 0.5, unit: "tsp" },
-        { name: "Ground black pepper", quantity: 1, unit: "tsp" },
-        { name: "Fine sea salt", quantity: 2, unit: "tsp" },
-        { name: "Banana leaves (optional but recommended)", quantity: 2, unit: "large pieces" }
-      ]},
-      { group: "Pickled Red Onion", items: [
-        { name: "Red onions, thinly sliced", quantity: 2, unit: "" },
-        { name: "Fresh lime juice", quantity: 80, unit: "ml" },
-        { name: "White wine vinegar", quantity: 60, unit: "ml" },
-        { name: "Caster sugar", quantity: 1, unit: "tsp" },
-        { name: "Fine sea salt", quantity: 0.5, unit: "tsp" },
-        { name: "Dried oregano", quantity: 0.5, unit: "tsp" }
-      ]},
-      { group: "Habanero Salsa", items: [
-        { name: "Habanero chillies (or Scotch bonnets), seeds removed", quantity: 2, unit: "" },
-        { name: "Ripe tomatoes, roughly chopped", quantity: 3, unit: "" },
-        { name: "White onion, quartered", quantity: 0.5, unit: "" },
-        { name: "Garlic cloves", quantity: 2, unit: "" },
-        { name: "Fresh lime juice", quantity: 2, unit: "tbsp" },
-        { name: "Fresh coriander", quantity: 15, unit: "g" },
-        { name: "Salt", quantity: 1, unit: "pinch" }
-      ]},
-      { group: "To Serve", items: [
-        { name: "Small corn tortillas, warmed", quantity: 18, unit: "" },
-        { name: "Fresh coriander leaves", quantity: 20, unit: "g" },
-        { name: "Lime wedges", quantity: 2, unit: "" }
-      ]}
+      {
+        group: "Duck",
+        items: [
+          { name: "Duck legs", quantity: 2, unit: "" },
+          { name: "Olive oil", quantity: 2, unit: "tbsp" },
+          { name: "Celery stalks, finely diced", quantity: 2, unit: "" },
+          { name: "Carrot, finely diced", quantity: 1, unit: "" },
+          { name: "Brown onion, finely diced", quantity: 1, unit: "" },
+          { name: "Garlic cloves, sliced", quantity: 3, unit: "" },
+          { name: "Red wine (Bardolino or similar)", quantity: 200, unit: "ml" },
+          { name: "Chicken stock", quantity: 1, unit: "litre" },
+          { name: "Bay leaves", quantity: 2, unit: "" },
+          { name: "Fresh thyme sprigs", quantity: 3, unit: "" }
+        ]
+      },
+      {
+        group: "Risotto",
+        items: [
+          { name: "Carnaroli or Arborio rice", quantity: 320, unit: "g" },
+          { name: "Treviso radicchio or chicory, shredded", quantity: 1, unit: "head" },
+          { name: "Dry white wine", quantity: 100, unit: "ml" },
+          { name: "Unsalted butter", quantity: 40, unit: "g" },
+          { name: "Parmigiano Reggiano, finely grated", quantity: 60, unit: "g" },
+          { name: "Salt and black pepper", quantity: 0, unit: "to taste" }
+        ]
+      },
+      {
+        group: "Orange Gremolata",
+        items: [
+          { name: "Flat-leaf parsley, finely chopped", quantity: 4, unit: "tbsp" },
+          { name: "Orange, zest only", quantity: 1, unit: "" },
+          { name: "Garlic clove, finely minced", quantity: 1, unit: "" }
+        ]
+      }
     ],
     substitutes: [
-      { ingredient: "Achiote paste", alternatives: ["Mix 1 tbsp sweet smoked paprika + 1 tsp turmeric + 0.5 tsp cumin as a rough stand-in", "Achiote powder mixed with a little oil to form a paste"] },
-      { ingredient: "Habanero chillies", alternatives: ["Scotch bonnets (similar heat)", "2 red bird\'s eye chillies for less heat"] },
-      { ingredient: "Banana leaves", alternatives: ["Parchment paper lined inside a tight-lidded casserole (same steaming effect)", "Omit entirely and braise uncovered"] },
-      { ingredient: "Pork shoulder", alternatives: ["Pork cheeks (reduce cook time to 2 hrs)", "Skinless chicken thighs (reduce to 1 hr 15 mins)"] }
+      { ingredient: "Duck legs", alternatives: ["Chicken thighs (bone-in)", "Pheasant legs"] },
+      { ingredient: "Treviso radicchio", alternatives: ["Belgian endive", "Red chicory", "Cavolo nero"] },
+      { ingredient: "Carnaroli rice", alternatives: ["Arborio rice", "Vialone Nano rice"] },
+      { ingredient: "Bardolino red wine", alternatives: ["Valpolicella", "Any light Italian red"] }
     ],
     instructions: [
-      "Start the pickle first — combine the sliced red onion in a bowl with lime juice, white wine vinegar, sugar, salt and oregano. Toss well and set aside at room temperature for at least 1 hour, turning occasionally. The onions will turn a vivid pink and become tender and sharp.",
-      "Make the marinade by whisking together the achiote paste, orange juice, lime juice, white wine vinegar, garlic, cumin, oregano, cinnamon, black pepper and salt until smooth. Score the pork shoulder all over with a sharp knife, making deep cuts about 3 cm apart to let the marinade penetrate.",
-      "Place the pork in a large zip-lock bag or deep baking dish. Pour over the marinade, turning to coat completely. Refrigerate for at least 2 hours, ideally overnight — the longer it marinates, the more deeply flavoured the pork will be.",
-      "Preheat your oven to 150°C (130°C fan). If using banana leaves, pass them briefly over a gas flame or under a hot grill for 20 seconds per side until they turn dark green and become pliable. Line a large, deep roasting tin with the banana leaves, leaving plenty of overhang.",
-      "Place the marinated pork and all its marinade in the centre of the banana leaves. Fold the leaves tightly up and over the pork to create a sealed parcel. Add 100ml of water to the base of the tin, then cover the entire tin very tightly with two layers of foil.",
-      "Roast for 2 hours 30 minutes until the pork is completely tender and falling off the bone. Remove from the oven and rest, still wrapped, for 20 minutes. Unwrap and shred the meat with two forks, mixing it back through all the gorgeous cooking juices in the tin.",
-      "While the pork rests, make the habanero salsa. Char the tomatoes, onion and garlic in a dry frying pan over high heat for 5–6 minutes until blackened in spots. Transfer to a blender with the habanero chillies, lime juice and coriander. Blitz to a rough, textured salsa. Season with salt.",
-      "To serve, warm the corn tortillas in a dry pan or directly over a flame for 30 seconds each side. Pile generously with shredded cochinita pibil, top with drained pickled red onion, a spoon of habanero salsa and fresh coriander leaves. Finish with a squeeze of lime."
+      "Season the duck legs generously with salt and pepper. Heat the olive oil in a wide, heavy-based pot over medium-high heat and sear the duck legs skin-side down for 6–8 minutes until deeply golden and a good amount of fat has rendered out. Flip and brown the other side for 3 minutes, then remove and set aside.",
+      "Pour off all but 2 tablespoons of the rendered duck fat from the pot (reserve the rest — it\'s liquid gold for roasting potatoes). Add the diced onion, celery, and carrot to the pot over medium heat and cook, stirring often, for 8 minutes until soft and just beginning to colour. Add the sliced garlic and cook for a further minute.",
+      "Return the duck legs to the pot, pour in the red wine and let it bubble and reduce by half — about 3 minutes. Add 600ml of the chicken stock along with the bay leaves and thyme. Bring to a gentle simmer, cover, and cook for 35–40 minutes until the duck meat is tender and falling off the bone.",
+      "While the duck cooks, warm the remaining 400ml stock in a separate saucepan and keep it at a low simmer. Once the duck is ready, remove the legs, strip all the meat from the bones using two forks, discarding the skin and bones. Strain the braising liquid and add it to the warm stock — you should have around 1 litre of richly flavoured liquid.",
+      "In a wide, deep sauté pan, melt half the butter over medium heat. Add the shredded radicchio and cook for 3–4 minutes, stirring, until it wilts and softens. Add the rice and stir well to coat every grain in the buttery juices. Pour in the white wine and stir until fully absorbed.",
+      "Begin adding the warm duck stock one ladleful at a time, stirring continuously and letting each addition be fully absorbed before adding the next. Keep the heat at a steady medium — not a roaring boil, not barely simmering. This process takes around 18–20 minutes and the gentle agitation is what releases the starch and creates that beautiful creamy consistency.",
+      "When the rice is just al dente — tender with the tiniest bite at the centre — remove from the heat. Fold in the shredded duck meat, the remaining butter, and all the grated Parmesan. Stir vigorously for a minute (this is the mantecatura — the secret to a glossy, creamy risotto). Season with salt and plenty of black pepper, and loosen with a little more stock if needed — risotto should flow, not sit in a solid mound.",
+      "Meanwhile, combine the finely chopped parsley, orange zest, and minced garlic in a small bowl to make the gremolata. Serve the risotto immediately in warm, shallow bowls, finished with a generous pinch of gremolata over each portion."
     ]
   },
   {
     id: "sug2",
-    title: "Normandy Cod with Mussels, Cider, Crème Fraîche & Tarragon",
-    category: "Fish & Seafood",
-    calories: 435,
-    protein: 48,
-    fibre: 2,
-    healthScore: 76,
-    time: "35 mins",
+    title: "Lebanese Spiced Beef Kafta Skewers with Fattoush, Toasted Flatbread & Tahini Drizzle",
+    category: "Beef",
+    calories: 545,
+    protein: 42,
+    fibre: 6,
+    healthScore: 70,
+    time: "40 mins",
     serves: "4",
-    desc: "A classic of the Norman coast — thick cod fillets poached gently in a broth of dry cider, shallots and butter alongside plump mussels, finished with crème fraîche and a handful of fresh tarragon. The sauce is bracingly savoury, apple-sharp and beautifully rich without being heavy — serve with plenty of crusty bread to mop every last drop.",
-    emoji: "🐟",
-    image: "https://images.pexels.com/photos/10895779/pexels-photo-10895779.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    desc: "Tender, aromatic minced beef kafta — loaded with seven-spice, fresh herbs, and grated onion — grilled over high heat until charred and juicy, then served alongside a vibrant, crunchy fattoush packed with cucumber, tomato, and crispy toasted flatbread shards. A tahini-lemon drizzle ties everything together in a dish that\'s genuinely one of the great grilled-meat recipes of any cuisine.",
+    emoji: "🥙",
+    image: "https://images.pexels.com/photos/17303312/pexels-photo-17303312.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     ingredientGroups: [
-      { group: "Fish & Shellfish", items: [
-        { name: "Thick cod fillets, skin on", quantity: 4, unit: "x 180g" },
-        { name: "Fresh mussels, scrubbed and debearded", quantity: 600, unit: "g" },
-        { name: "Fine sea salt & white pepper", quantity: 1, unit: "to taste" }
-      ]},
-      { group: "Cider Broth", items: [
-        { name: "Dry Norman cider (or dry apple cider)", quantity: 300, unit: "ml" },
-        { name: "Fish stock", quantity: 200, unit: "ml" },
-        { name: "Shallots, finely sliced", quantity: 4, unit: "" },
-        { name: "Unsalted butter", quantity: 40, unit: "g" },
-        { name: "Garlic cloves, thinly sliced", quantity: 2, unit: "" },
-        { name: "Bay leaves", quantity: 2, unit: "" },
-        { name: "Whole black peppercorns", quantity: 6, unit: "" }
-      ]},
-      { group: "Sauce & Finish", items: [
-        { name: "Full-fat crème fraîche", quantity: 150, unit: "g" },
-        { name: "Dijon mustard", quantity: 1, unit: "tsp" },
-        { name: "Fresh tarragon leaves", quantity: 15, unit: "g" },
-        { name: "Flat-leaf parsley, roughly chopped", quantity: 10, unit: "g" },
-        { name: "Lemon juice", quantity: 1, unit: "tbsp" }
-      ]},
-      { group: "To Serve", items: [
-        { name: "Crusty sourdough or baguette", quantity: 1, unit: "loaf" }
-      ]}
+      {
+        group: "Kafta Skewers",
+        items: [
+          { name: "Minced beef (15–20% fat)", quantity: 600, unit: "g" },
+          { name: "Brown onion, coarsely grated", quantity: 1, unit: "" },
+          { name: "Flat-leaf parsley, very finely chopped", quantity: 5, unit: "tbsp" },
+          { name: "Fresh mint leaves, finely chopped", quantity: 2, unit: "tbsp" },
+          { name: "Baharat (Lebanese seven-spice)", quantity: 2, unit: "tsp" },
+          { name: "Ground cumin", quantity: 1, unit: "tsp" },
+          { name: "Ground cinnamon", quantity: 0.5, unit: "tsp" },
+          { name: "Aleppo pepper (pul biber)", quantity: 1, unit: "tsp" },
+          { name: "Salt", quantity: 1.5, unit: "tsp" },
+          { name: "Black pepper", quantity: 0.5, unit: "tsp" }
+        ]
+      },
+      {
+        group: "Fattoush",
+        items: [
+          { name: "Large pitta breads", quantity: 2, unit: "" },
+          { name: "Olive oil", quantity: 3, unit: "tbsp" },
+          { name: "Ripe vine tomatoes, roughly chopped", quantity: 4, unit: "" },
+          { name: "Cucumber, halved lengthways and sliced", quantity: 1, unit: "" },
+          { name: "Radishes, thinly sliced", quantity: 6, unit: "" },
+          { name: "Spring onions, sliced", quantity: 4, unit: "" },
+          { name: "Romaine lettuce, roughly torn", quantity: 0.5, unit: "head" },
+          { name: "Sumac", quantity: 2, unit: "tsp" },
+          { name: "Lemon, juice only", quantity: 1, unit: "" },
+          { name: "Extra-virgin olive oil", quantity: 3, unit: "tbsp" },
+          { name: "Pomegranate molasses", quantity: 1, unit: "tbsp" },
+          { name: "Salt and black pepper", quantity: 0, unit: "to taste" }
+        ]
+      },
+      {
+        group: "Tahini Drizzle",
+        items: [
+          { name: "Tahini", quantity: 4, unit: "tbsp" },
+          { name: "Lemon, juice only", quantity: 1, unit: "" },
+          { name: "Garlic clove, crushed to a paste", quantity: 1, unit: "" },
+          { name: "Cold water", quantity: 4, unit: "tbsp" },
+          { name: "Salt", quantity: 0, unit: "to taste" }
+        ]
+      }
     ],
     substitutes: [
-      { ingredient: "Cod", alternatives: ["Hake (same cook time)", "Haddock (same cook time)", "Pollock (slightly firmer)"] },
-      { ingredient: "Mussels", alternatives: ["Clams (cockles work too)", "Omit and increase cod to 220g per person"] },
-      { ingredient: "Crème fraîche", alternatives: ["Double cream with a squeeze of lemon", "Soured cream (don\'t let it boil)"] },
-      { ingredient: "Fresh tarragon", alternatives: ["Fresh dill (different but complementary)", "Chervil for a milder anise note"] }
+      { ingredient: "Minced beef", alternatives: ["Minced lamb", "50/50 beef and lamb mince"] },
+      { ingredient: "Baharat seven-spice", alternatives: ["Ras el hanout", "Mixed spice plus extra cumin and cinnamon"] },
+      { ingredient: "Aleppo pepper", alternatives: ["Mild chilli flakes", "Smoked sweet paprika with a pinch of cayenne"] },
+      { ingredient: "Pomegranate molasses", alternatives: ["A squeeze of extra lemon juice with a pinch of brown sugar", "Balsamic vinegar"] }
     ],
     instructions: [
-      "Check the mussels — discard any that are cracked or that don\'t close when tapped sharply on the side of the bowl. Set aside. Pat the cod fillets dry with kitchen paper and season generously on both sides with fine sea salt and white pepper.",
-      "Melt the butter in a large, wide, lidded sauté pan or shallow casserole over medium heat. Add the shallots and cook gently for 6–7 minutes until completely softened and translucent — do not let them colour. Add the garlic and cook for another minute.",
-      "Pour in the cider and let it bubble vigorously for 2 minutes to cook off the alcohol. Add the fish stock, bay leaves and peppercorns. Taste the broth — it should be bright, appley and well-seasoned. Adjust salt if needed.",
-      "Reduce the heat to a gentle simmer. Nestle the cod fillets into the broth, skin-side down. Scatter the mussels around the cod, cover with the lid and cook for 6–8 minutes, until the cod is just opaque through and the mussels have all opened. Discard any mussels that remain shut.",
-      "Carefully lift the cod and mussels out of the pan with a slotted spoon and set aside in a warm place. Increase the heat and boil the broth for 2–3 minutes to concentrate it slightly. Remove the bay leaves.",
-      "Reduce the heat to low and whisk in the crème fraîche and Dijon mustard. Do not let the sauce boil once the crème fraîche is added or it may split. Add the lemon juice and taste — it should be creamy, tangy and savoury. Stir through most of the tarragon and parsley.",
-      "Return the cod and mussels to the pan, spooning sauce over the fish. Serve directly from the pan at the table, scattered with the remaining fresh herbs and accompanied by thick slices of crusty bread to mop up the extraordinary broth."
+      "Start with the kafta mixture so it has time to firm up. In a large bowl, combine the minced beef, grated onion (squeeze out as much moisture as possible through a clean cloth first — wet mince won\'t hold on skewers), parsley, mint, baharat, cumin, cinnamon, Aleppo pepper, salt, and black pepper. Mix vigorously with your hands for a full 2 minutes — this develops the protein and helps the mixture bind. Cover and refrigerate for at least 20 minutes.",
+      "Tear the pitta breads into rough, jagged pieces — around 3–4cm. Toss with 2 tablespoons of olive oil and a good pinch of salt, then spread across a baking tray. Toast in an oven at 200°C (180°C fan) for 8–10 minutes, turning once, until deeply golden and crisp. Set aside to cool.",
+      "Make the tahini drizzle: whisk together the tahini, lemon juice, and crushed garlic. It will seize and look worryingly thick — just keep adding the cold water a tablespoon at a time, whisking constantly, until it loosens into a pourable, creamy sauce. Season with salt. It should taste bright, nutty, and garlicky.",
+      "If using wooden skewers, soak them in water for 20 minutes beforehand. Divide the kafta mixture into 8 equal portions. With wet hands, mould each portion around a flat skewer in a long, sausage shape — about 15cm long — pressing firmly so it grips. Alternatively, shape into elongated patties for a griddle pan.",
+      "Heat a griddle pan, barbecue, or heavy frying pan over very high heat until smoking hot. Cook the kafta skewers for 3–4 minutes per side without moving them — you want genuine charred grill marks and a juicy, just-cooked interior. They should feel firm but springy when pressed.",
+      "While the kafta cooks, assemble the fattoush: combine the tomatoes, cucumber, radishes, spring onions, and torn lettuce in a large bowl. Whisk together the lemon juice, extra-virgin olive oil, pomegranate molasses, and sumac, then season generously with salt and pepper. Dress the salad, toss well, then fold in the crispy pitta shards at the very last moment so they stay crunchy.",
+      "Serve the hot kafta skewers on a large platter alongside the fattoush, with the tahini drizzle spooned generously over the meat. A few extra pinches of sumac and fresh parsley over everything finish it perfectly."
     ]
   },
   {
     id: "sug3",
-    title: "Burmese Tofu & Potato Kyaw — Golden Fried Beancurd with Crispy Shallots, Tamarind, Turmeric & Sesame",
+    title: "Keralan Avial — Mixed Vegetable Coconut Curry with Curry Leaves, Green Chilli & Coconut Oil",
     category: "Vegan",
-    calories: 395,
-    protein: 18,
-    fibre: 7,
-    healthScore: 79,
+    calories: 340,
+    protein: 9,
+    fibre: 10,
+    healthScore: 88,
     time: "50 mins",
     serves: "4",
-    desc: "Inspired by the bold street-food flavours of Yangon\'s markets, this dish pairs golden-fried firm tofu and crispy potatoes with a deeply savoury tamarind-soy glaze, heaps of fried shallots and a punchy sesame-chilli finish. It\'s the kind of vegan dish that converts everyone — intensely flavoured, texturally thrilling and built from a pantry of straightforward ingredients.",
-    emoji: "🌿",
-    image: "https://images.unsplash.com/photo-1690949237809-3f0336b9ba33?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxCdXJtZXNlJTIwVG9mdSUyMCUyNiUyMFBvdGF0byUyMEt5YXclMjAlRTIlODAlOTQlMjBHb2xkZW4lMjBGcmllZCUyMEJlYW5jdXJkJTIwd2l0aCUyMENyaXNweSUyMFNoYWxsb3RzJTJDJTIwVGFtYXJpbmQlMkMlMjBUdXJtZXJpYyUyMCUyNiUyMFNlc2FtZSUyMGZvb2QlMjBkaXNofGVufDB8MHx8fDE3Nzg5OTUwNzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    desc: "Avial is one of the great vegetarian dishes of South India — a fragrant, mildly spiced coconut and yoghurt-dressed medley of vegetables that is simultaneously simple and deeply complex in flavour. The finishing flourish of coconut oil sizzled with fresh curry leaves and dried chilli is extraordinary, flooding the dish with a tropical, smoky fragrance that is entirely unique to Kerala\'s cooking.",
+    emoji: "🥥",
+    image: "https://images.pexels.com/photos/8395780/pexels-photo-8395780.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     ingredientGroups: [
-      { group: "Tofu & Potatoes", items: [
-        { name: "Firm tofu, pressed and cut into 3 cm cubes", quantity: 400, unit: "g" },
-        { name: "Waxy potatoes (Charlotte or new), cut into 2 cm chunks", quantity: 400, unit: "g" },
-        { name: "Ground turmeric", quantity: 1.5, unit: "tsp" },
-        { name: "Fine sea salt", quantity: 1, unit: "tsp" },
-        { name: "Neutral oil (sunflower or vegetable)", quantity: 4, unit: "tbsp" }
-      ]},
-      { group: "Crispy Shallots", items: [
-        { name: "Banana shallots, very thinly sliced into rings", quantity: 4, unit: "" },
-        { name: "Neutral oil for frying", quantity: 150, unit: "ml" }
-      ]},
-      { group: "Tamarind Glaze", items: [
-        { name: "Tamarind paste (smooth, seedless)", quantity: 3, unit: "tbsp" },
-        { name: "Soy sauce", quantity: 2, unit: "tbsp" },
-        { name: "Palm sugar (or light brown sugar)", quantity: 1, unit: "tbsp" },
-        { name: "Garlic cloves, minced", quantity: 3, unit: "" },
-        { name: "Fresh ginger, finely grated", quantity: 1.5, unit: "tsp" },
-        { name: "Red chilli, finely sliced", quantity: 2, unit: "" },
-        { name: "Water", quantity: 3, unit: "tbsp" }
-      ]},
-      { group: "To Finish & Serve", items: [
-        { name: "Toasted sesame seeds", quantity: 2, unit: "tbsp" },
-        { name: "Fresh coriander, roughly torn", quantity: 20, unit: "g" },
-        { name: "Spring onions, finely sliced", quantity: 3, unit: "" },
-        { name: "Jasmine rice, steamed", quantity: 300, unit: "g" },
-        { name: "Lime wedges", quantity: 2, unit: "" }
-      ]}
+      {
+        group: "Vegetables",
+        items: [
+          { name: "Drumstick (moringa) pods or green beans, cut into 5cm lengths", quantity: 150, unit: "g" },
+          { name: "Raw banana or plantain, peeled and cut into batons", quantity: 1, unit: "" },
+          { name: "Carrot, peeled and cut into batons", quantity: 2, unit: "" },
+          { name: "Courgette, cut into batons", quantity: 1, unit: "" },
+          { name: "Waxy potato, peeled and cut into batons", quantity: 200, unit: "g" },
+          { name: "Fresh or frozen peas", quantity: 100, unit: "g" },
+          { name: "Turmeric", quantity: 0.5, unit: "tsp" },
+          { name: "Salt", quantity: 1, unit: "tsp" },
+          { name: "Water", quantity: 150, unit: "ml" }
+        ]
+      },
+      {
+        group: "Coconut Paste",
+        items: [
+          { name: "Freshly grated coconut or desiccated coconut (rehydrated)", quantity: 120, unit: "g" },
+          { name: "Green chillies, roughly chopped", quantity: 3, unit: "" },
+          { name: "Ground cumin", quantity: 1.5, unit: "tsp" },
+          { name: "Plain coconut yoghurt (or regular full-fat yoghurt if not vegan)", quantity: 150, unit: "g" }
+        ]
+      },
+      {
+        group: "Temper",
+        items: [
+          { name: "Coconut oil", quantity: 2, unit: "tbsp" },
+          { name: "Fresh curry leaves", quantity: 15, unit: "" },
+          { name: "Dried red chillies", quantity: 2, unit: "" }
+        ]
+      }
     ],
     substitutes: [
-      { ingredient: "Firm tofu", alternatives: ["Burmese-style chickpea tofu (tofu made from chickpea flour — very traditional)", "Tempeh, sliced and fried the same way"] },
-      { ingredient: "Tamarind paste", alternatives: ["2 tbsp lime juice + 1 tbsp soy sauce (less complex but works)", "Pomegranate molasses mixed with a little lime"] },
-      { ingredient: "Palm sugar", alternatives: ["Light brown sugar", "Coconut sugar"] },
-      { ingredient: "Waxy potatoes", alternatives: ["Sweet potato (slightly softer result)", "Butternut squash cubes"] }
+      { ingredient: "Drumstick pods", alternatives: ["Extra green beans", "Asparagus cut into short lengths"] },
+      { ingredient: "Raw banana/plantain", alternatives: ["Sweet potato", "Raw jackfruit"] },
+      { ingredient: "Fresh coconut", alternatives: ["Desiccated coconut soaked in warm water for 15 minutes", "Frozen grated coconut (widely available in Asian supermarkets)"] },
+      { ingredient: "Coconut yoghurt", alternatives: ["Full-fat dairy yoghurt (omit to keep vegan)", "Vegan cashew yoghurt"] }
     ],
     instructions: [
-      "Press the tofu well — wrap in a clean tea towel and place a heavy pan on top for 20 minutes. This removes excess moisture and ensures a gloriously crispy exterior when fried. Meanwhile, boil the potato chunks in salted water for 8–10 minutes until just tender but still holding their shape. Drain and leave to steam-dry in the colander.",
-      "Make the crispy shallots: heat 150ml of oil in a small saucepan over medium heat. Add the shallot rings and fry, stirring frequently, for 10–12 minutes until deep golden and crisp. Watch them carefully in the last few minutes — they go from golden to burnt quickly. Remove with a slotted spoon onto kitchen paper and season with a pinch of salt. Set aside the shallot oil — you\'ll use some of it for cooking.",
-      "Toss the pressed tofu cubes with 1 tsp turmeric and half the salt until evenly coated. Heat 3 tbsp of the reserved shallot oil (or fresh oil) in a large non-stick or cast-iron frying pan over high heat. Fry the tofu in a single layer for 3–4 minutes per side without moving it, until each face is deeply golden and crisp. Remove and set aside.",
-      "In the same pan, add the drained potatoes with 1 tbsp oil and the remaining 0.5 tsp turmeric. Fry over high heat for 4–5 minutes, tossing occasionally, until the potatoes are golden and crispy at the edges. Season with salt. Remove and set aside with the tofu.",
-      "Make the glaze by combining tamarind paste, soy sauce, palm sugar, garlic, ginger, chilli and water in a small bowl. Stir until the sugar dissolves. Return the pan to medium-high heat and add a tiny splash of oil. Pour in the tamarind glaze and let it bubble for 60–90 seconds until it thickens to a glossy, dark syrup that coats the back of a spoon.",
-      "Return the crispy tofu and potatoes to the pan and toss vigorously to coat everything in the glaze. Cook for a further minute so the glaze caramelises slightly on the tofu. Taste and adjust — add more tamarind for tartness, soy for salt or sugar for balance.",
-      "Pile onto a large platter over steamed jasmine rice. Top generously with the crispy shallots (add them last so they stay crunchy), toasted sesame seeds, spring onions and torn coriander. Serve with lime wedges on the side for squeezing over — the hit of fresh citrus at the table makes everything sing."
+      "Place the potato and carrot batons in a wide, deep pan — these take longest to cook. Add the water, turmeric, and salt, bring to a brisk simmer, cover, and cook for 5 minutes.",
+      "Add the plantain or raw banana, courgette, and green beans (or drumstick pieces) to the pan. Stir, cover again, and cook for a further 8–10 minutes over medium heat, checking occasionally and adding a splash more water if the pan looks dry. The vegetables should be just tender — not mushy. Stir in the peas for the final 2 minutes.",
+      "While the vegetables cook, make the coconut paste: blitz the grated coconut, green chillies, and cumin in a small food processor or blender with a tablespoon or two of water to form a coarse, fragrant paste. You\'re not looking for a smooth purée — a little texture is good. If you don\'t have a blender, simply finely chop the chillies and mix everything together by hand.",
+      "Once all the vegetables are just cooked through and most of the water has been absorbed (there should be a little liquid remaining in the base — not a soup, not bone dry), reduce the heat to its absolute lowest. Stir in the coconut paste thoroughly, making sure it coats all the vegetables. Cook gently for 3 minutes, stirring.",
+      "Remove the pan completely from the heat before adding the yoghurt — this is critical. If the pan is too hot the yoghurt will split, giving an unappealing grainy texture. Fold the coconut yoghurt gently but thoroughly through the vegetable mixture. It should give the whole dish a creamy, lightly tangy coating. Taste for salt.",
+      "For the tempering — the soul of this dish — heat the coconut oil in a small pan over high heat until shimmering. Add the dried red chillies and let them darken for 20 seconds, then immediately add the fresh curry leaves (stand back — they will spit dramatically in the oil). Let them crackle and turn dark and fragrant — just 30 seconds. Pour this entire, sizzling, aromatic tempering directly over the avial.",
+      "Serve immediately with steamed basmati rice or Kerala-style red rice. Avial is traditionally also eaten with dosas or as part of a full Sadya feast. The coconut oil tempering aroma will be extraordinary — intensely tropical and smoky in the best possible way."
     ]
   }
 ];

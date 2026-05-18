@@ -1,8 +1,8 @@
 // quote-data.js
-// Auto-updated 2026-05-17 — do not edit manually
+// Auto-updated 2026-05-18 — do not edit manually
 
 var QUOTE_DATA = {
-  date: "2026-05-17",
-  text: "It is better to be feared than loved, if you cannot be both.",
-  author: "Niccolò Machiavelli"
+  date: "2026-05-18",
+  text: "The secret of getting ahead is getting started.",
+  author: "Mark Twain"
 };
