@@ -1,8 +1,8 @@
 // quote-data.js
-// Auto-updated 2026-05-18 — do not edit manually
+// Auto-updated 2026-05-19 — do not edit manually
 
 var QUOTE_DATA = {
-  date: "2026-05-18",
-  text: "The secret of getting ahead is getting started.",
-  author: "Mark Twain"
+  date: "2026-05-19",
+  text: "Well done is better than well said.",
+  author: "Benjamin Franklin"
 };

@@ -1,60 +1,60 @@
 // us-politics-news-data.js
-// Auto-updated 2026-05-18 — do not edit manually
+// Auto-updated 2026-05-19 — do not edit manually
 
 var US_POLITICS_NEWS = {
-  date: "2026-05-18",
+  date: "2026-05-19",
   main: {
-    title: "Trump-Backed Challenger Defeats Republican Senator Who Voted to Convict President",
+    title: "Tuesday Is a Big Primary Day: Six States Vote in Contests That Could Shape Congress",
     category: "Politics",
     content: [
-      "Senator Bill Cassidy of Louisiana has lost his Republican primary race, failing to advance to the runoff after being targeted by President Donald Trump for his 2021 vote to convict him following the January 6 Capitol riot. Trump threw his full support behind Representative Julia Letlow, branding Cassidy as 'disloyal' and making the Louisiana Senate race a high-stakes test of his grip on the Republican Party. The result was a decisive rebuke of the incumbent senator, who will not appear in the runoff that will determine the party\'s nominee.",
-      "The outcome sends a powerful message to Republicans across the country about the cost of defying Trump, even years after the fact. Cassidy was one of only seven Republican senators to vote to convict Trump during his second impeachment trial, and the president never forgave the slight. Saturday\'s result confirms that Trump\'s political memory is long and his influence over GOP primary voters remains formidable heading into the 2026 midterm cycle.",
-      "Julia Letlow and State Treasurer John Fleming will now advance to the runoff for the Republican nomination to the Louisiana Senate seat. Letlow had secured Trump\'s endorsement and benefited enormously from the president\'s active campaign against Cassidy, who had struggled to rehabilitate his standing with the base despite his legislative record. The runoff will determine which Trump-aligned candidate ultimately carries the party banner in what is expected to be a reliably Republican general election contest.",
-      "Former Senator Mitt Romney, one of the few remaining prominent GOP voices willing to criticize Trump, called Cassidy\'s defeat a 'loss for the country,' underscoring the sense among some Republicans that the party\'s ideological purge carries long-term risks. Romney himself declined to seek re-election in 2024 in part due to the hostility he faced within his own party. His reaction reflects the ongoing tension between the traditional wing of the Republican Party and the Trump-dominated movement that now controls its primary apparatus.",
-      "The result in Louisiana also carries broader implications for how the 2026 midterm primaries are likely to unfold across the country. Analysts note that the state\'s newly closed primary system — which allowed only registered Republicans to vote — may have played a significant role in Cassidy\'s defeat by limiting the moderate and independent voters who might otherwise have supported him. Trump\'s success in ousting a sitting senator who defied him strengthens his leverage over every Republican official currently weighing whether to break with the White House on any major issue."
+      "Six states are holding primary elections on May 19, 2026, in contests that carry significant implications for the balance of power in Congress and in key state governments. The primaries span Alabama, Georgia, Idaho, Kentucky, Oregon, and Pennsylvania, making it one of the most consequential single primary days of the 2026 election cycle. Voters across these states are weighing in on races that will help define the composition of the next Congress and determine which political figures emerge with momentum heading into the general election.",
+      "One of the most closely watched races of the day is in Kentucky, where incumbent Republican Congressman Thomas Massie faces a well-funded effort to remove him from office. Massie has repeatedly clashed with former President Donald Trump over federal spending and the release of the Epstein files, making him a prime target for Trump-aligned forces. Reports indicate that approximately $20 million has been directed toward ousting Massie, an extraordinary sum for a House primary race that underscores just how personally the White House has taken his defiance.",
+      "In Pennsylvania, the primary results could have broader national implications, particularly given the state\'s status as a perennial presidential battleground. Pennsylvania Governor Josh Shapiro has been mentioned as a potential 2028 presidential contender, and the candidates who emerge from today\'s primaries will set the stage for general election contests in a state both parties desperately need. The outcome of today\'s vote will signal whether Democratic or Republican candidates are better positioned ahead of November.",
+      "The primaries also come amid a broader national conversation about loyalty within the Republican Party and the consequences of crossing the Trump administration. The recent primary defeat of Senator Bill Cassidy of Louisiana — who voted to convict Trump in his impeachment trial — has served as a stark warning to other Republicans who might consider breaking with the president. Today\'s results, particularly in Kentucky, will test whether that dynamic continues to hold, or whether voters in some districts are willing to reward independent-minded lawmakers despite White House opposition.",
+      "Democrats are equally focused on today\'s contests, eyeing opportunities to gain ground in competitive districts across the six states. Candidates like Jack Schlossberg, grandson of President John F. Kennedy, are running in Democratic primaries with an eye on energizing a party base hungry for fresh voices and new leadership. The full picture of today\'s results will not be known until late tonight, but political analysts on both sides of the aisle will be parsing the outcomes closely for clues about the national political environment heading into the fall campaign season."
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/5a2c/live/abce2a10-5198-11f1-b57e-4930d304e43a.jpg",
-    source: "BBC News",
-    sourceUrl: "https://www.bbc.com/news/articles/cx21d4pxq23o?at_medium=RSS&at_campaign=rss"
+    image: "https://images.unsplash.com/photo-1540908390241-82158ab62887?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUdWVzZGF5JTIwSXMlMjBhJTIwQmlnJTIwUHJpbWFyeSUyMERheSUzQSUyMFNpeCUyMFN0YXRlcyUyMFZvdGUlMjBpbiUyMENvbnRlc3RzJTIwVGhhdCUyMENvdWxkJTIwU2hhcGUlMjBDb25ncmVzc3xlbnwwfDB8fHwxNzc5MTY2OTY4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    source: "NPR",
+    sourceUrl: "https://www.npr.org/2026/05/18/g-s1-122235/primary-day-alabama-georgia-idaho-kentucky-oregon-pennsylvania"
   },
   secondary: [
     {
       id: "us1",
-      title: "Nearly Half of Americans Anxious About Finances Amid Frustrations With Trump\'s Economy",
-      summary: "A new CBS News/YouGov poll finds 44 percent of Americans describe their personal financial situation as 'fairly bad' or 'very bad,' reflecting widespread economic anxiety under President Trump.",
+      title: "Trump Drops $10 Billion IRS Lawsuit, Sparking Ethics Concerns",
+      summary: "President Trump has walked away from a $10 billion lawsuit he filed against the IRS, drawing sharp criticism from House Democrats and ethics officials who are questioning the circumstances of the resolution.",
       body: [
-        "The poll highlights a deepening sense of financial unease among the American public, with nearly half of respondents expressing anxiety about their own economic circumstances. The findings come amid broader frustrations with how President Trump has handled the economy, including the ongoing impact of his Iran war and its ripple effects on trade and consumer prices.",
-        "The data poses a significant political challenge for the White House as the midterm election cycle gains momentum. Economic dissatisfaction historically correlates with losses for the party in power, and the numbers suggest Trump\'s economic messaging has not yet reassured a substantial portion of the electorate."
+        "President Trump has voluntarily dismissed a $10 billion case he had filed against the Internal Revenue Service, a move that has drawn immediate scrutiny from House Democrats and government ethics officials. The sudden withdrawal of such a massive lawsuit has raised questions about what, if anything, was negotiated or exchanged as part of the resolution.",
+        "Ethics watchdogs and Democratic lawmakers are crying foul, suggesting the manner in which the case was dropped warrants further investigation. The episode adds to ongoing tensions between the White House and congressional Democrats over perceived conflicts of interest and the administration\'s relationship with federal agencies."
       ],
-      image: "https://thehill.com/wp-content/uploads/sites/2/2026/05/AP26135832954636-e1779020021941.jpg?w=900",
-      source: "The Hill",
-      url: "https://thehill.com/business/5882571-poll-trump-economy-frustrations/",
+      image: "https://images.unsplash.com/photo-1547651703-c740f5ad23bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUcnVtcCUyMERyb3BzJTIwJTI0MTAlMjBCaWxsaW9uJTIwSVJTJTIwTGF3c3VpdCUyQyUyMFNwYXJraW5nJTIwRXRoaWNzJTIwQ29uY2VybnN8ZW58MHwwfHx8MTc3OTE2Njk2OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "NPR",
+      url: "https://www.npr.org/2026/05/18/nx-s1-5825812/president-trump-drops-lawsuit-against-irs",
       category: "Politics"
     },
     {
       id: "us2",
-      title: "Greene Predicts 'Political Revolution' If U.S. Troops Are Sent Into Iran",
-      summary: "Former Representative Marjorie Taylor Greene warned Sunday that deploying American ground troops to Iran would trigger a political revolution inside the United States.",
+      title: "GOP Senator Cassidy Fails to Make Runoff After Impeachment Vote Backlash",
+      summary: "Senator Bill Cassidy of Louisiana has failed to advance to the runoff in his Republican Senate primary, five years after his vote to convict Donald Trump in his impeachment trial made him a political target.",
       body: [
-        "Greene, once a close Trump ally who has since clashed with the president on several issues, made the stark prediction on Sunday, arguing that the American public would not tolerate a ground war in Iran. Her comments reflect growing unease among some corners of the Republican base about the scope and direction of U.S. military involvement in the region.",
-        "The warning adds to the political pressure on the Trump administration as it navigates the ongoing conflict with Iran, which has already strained the economy and complicated the president\'s diplomatic agenda. Greene\'s split from Trump on this issue illustrates the fragile coalition the White House must manage as it considers its next military steps."
+        "Senator Bill Cassidy\'s primary defeat marks one of the most dramatic examples yet of the political consequences facing Republicans who broke with Trump during the impeachment proceedings. Trump had publicly called for Cassidy\'s ouster following the vote, and the primary result suggests that message resonated with Louisiana Republican voters.",
+        "Cassidy now joins a short but notable list of Republican senators who have spoken out against Trump, a group whose electoral fortunes have been closely watched as a bellwether for intra-party dissent. His defeat is likely to reinforce the chilling effect on other Republican lawmakers who might consider challenging the president\'s agenda or conduct."
       ],
-      image: "https://images.unsplash.com/photo-1563477710521-5ae0aa5085ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxHcmVlbmUlMjBQcmVkaWN0cyUyMHxlbnwwfDB8fHwxNzc5MDgwNTU3fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "The Hill",
-      url: "https://thehill.com/policy/defense/5882593-greene-predicts-revolution-iran/",
+      image: "https://images.unsplash.com/photo-1576082176859-e557bdc7b1b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxHT1AlMjBTZW5hdG9yJTIwQ2Fzc2lkeSUyMEZhaWxzJTIwdG8lMjBNYWtlJTIwUnVub2ZmJTIwQWZ0ZXIlMjBJbXBlYWNobWVudCUyMFZvdGUlMjBCYWNrbGFzaHxlbnwwfDB8fHwxNzc5MTY2OTY5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "The Washington Post",
+      url: "https://www.washingtonpost.com/politics/2026/05/16/gop-senator-who-defied-trump-impeachment-faces-voters-five-years-later/",
       category: "Politics"
     },
     {
       id: "us3",
-      title: "How Colorado Gov. Jared Polis Came to Commute Election Denier Tina Peters\'s Prison Sentence",
-      summary: "Democratic Governor Jared Polis commuted the sentence of convicted election denier Tina Peters following months of tense discussions that included a conversation with President Trump.",
+      title: "Supreme Court Sidesteps Key Voting Rights Act Enforcement Question",
+      summary: "The Supreme Court has declined for now to take up a legal question that could severely limit enforcement of the remaining protections under the Voting Rights Act for minority voters.",
       body: [
-        "The decision by Polis, a Democrat, to release Peters — who had been convicted for her role in a breach of election equipment in Colorado — came after a prolonged and politically sensitive deliberation process. The involvement of President Trump in those discussions adds an unusual dimension to the story, suggesting behind-the-scenes pressure that crossed partisan lines.",
-        "The commutation is likely to reignite debate over election security and the political treatment of figures convicted in connection with efforts to undermine the 2020 election results. For Polis, the move represents a significant and controversial use of executive clemency that will face scrutiny from both Democrats and election integrity advocates."
+        "The Supreme Court chose not to resolve a contested legal question around whether private parties have the right to enforce the Voting Rights Act, leaving the issue unresolved for the time being. The court\'s inaction comes after it recently weakened other provisions of the landmark civil rights law, making the future of minority voter protections increasingly uncertain.",
+        "Civil rights advocates have expressed concern that the court\'s avoidance of the question, rather than settling it in favor of enforcement, leaves minority communities in a legally precarious position. The decision to pass on the case for now does not foreclose the possibility that the justices will take it up in a future term, potentially with far-reaching consequences for how the Voting Rights Act is implemented across the country."
       ],
-      image: "https://static01.nyt.com/images/2026/05/17/multimedia/17pol-colorado-peters-01-mfqz/17pol-colorado-peters-01-mfqz-mediumSquareAt3X.jpg",
-      source: "The New York Times",
-      url: "https://www.nytimes.com/2026/05/17/us/politics/jared-polis-trump-tina-peters.html",
+      image: "https://images.unsplash.com/photo-1658958327132-a80f8a9409fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTdXByZW1lJTIwQ291cnQlMjBTaWRlc3RlcHMlMjBLZXklMjBWb3RpbmclMjBSaWdodHMlMjBBY3QlMjBFbmZvcmNlbWVudCUyMFF1ZXN0aW9ufGVufDB8MHx8fDE3NzkxNjY5Njl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "NPR",
+      url: "https://www.npr.org/2026/05/18/nx-s1-5616665/supreme-court-voting-rights-act-private-right",
       category: "Politics"
     }
   ]
