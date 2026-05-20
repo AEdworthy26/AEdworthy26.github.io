@@ -1,61 +1,61 @@
 // financial-news-data.js
-// Auto-updated 2026-05-19 — do not edit manually
+// Auto-updated 2026-05-20 — do not edit manually
 
 var FINANCIAL_NEWS = {
-  date: "2026-05-19",
+  date: "2026-05-20",
   main: {
-    title: "Bond Market Sends Warning to the Fed: Address Inflation or Face Rate Hikes",
-    category: "Monetary Policy",
+    title: "Global Bond Yields Hit Highest Levels Since 2007 as Inflation Fears Grip Markets",
+    category: "Markets",
     content: [
-      "The bond market is sending an increasingly urgent signal to the Federal Reserve: get serious about inflation and the prospect of rate hikes, or risk a deeper rout in the Treasury market. Yields on longer-dated government bonds have been climbing, putting significant pressure on equity valuations and rattling investor confidence across multiple asset classes. The warning comes at a delicate moment for the Fed, which has been navigating a complex economic environment marked by persistent inflationary pressures and lingering uncertainty about the pace of growth.",
-      "Analysts are warning that tough talk from the Federal Reserve about the possibility of rate hikes may be the only tool capable of calming what has become a sustained selloff in Treasury markets. The current rout reflects a growing fear among bond investors that the central bank has fallen behind the curve, allowing inflation expectations to become unanchored. If the Fed fails to reassert its credibility as an inflation fighter, the consequences for borrowing costs across the economy — from mortgages to corporate debt — could be severe and far-reaching.",
-      "The broader market impact of rising bond yields was visible in global equity markets, with technology stocks leading losses in Asian trading as higher yields around the world cast doubt on the lofty valuations that have characterized the recent AI-driven rally. The relationship between bond yields and equity valuations is fundamental: when the risk-free rate rises, future corporate earnings are discounted more heavily, making high-multiple growth stocks particularly vulnerable. The selloff underscores how quickly sentiment can shift when the fixed income market begins to price in a more hawkish monetary policy trajectory.",
-      "The Fed finds itself in a difficult position, balancing the risk of overtightening against the danger of allowing inflation expectations to drift higher. Market participants are increasingly frustrated with what they see as mixed messaging from Fed officials, and some analysts believe only a clear and consistent signal about the central bank\'s willingness to raise rates will be enough to restore confidence. The longer policymakers wait to address the bond market\'s concerns, the more entrenched the selloff could become, potentially creating a self-reinforcing cycle of rising yields and tightening financial conditions.",
-      "For everyday investors and consumers, the stakes are high. Rising Treasury yields feed through to higher mortgage rates, more expensive car loans, and increased costs for businesses looking to finance expansion. The bond market\'s warning to the Fed is ultimately a warning to the entire economy: that the era of historically low interest rates may not be as firmly in the rearview mirror as many had hoped. Whether the Fed chooses to respond with decisive rhetoric or concrete policy action in the coming weeks could define the financial landscape for the remainder of 2026."
+      "Global bond markets are experiencing their most severe selloff in nearly two decades, with the 30-year U.S. Treasury yield climbing to levels not seen since the lead-up to the 2007–2008 global financial crisis. The surge in yields reflects deepening investor anxiety about inflation, as geopolitical instability — particularly the ongoing conflict in the Middle East and its disruption to energy supply chains — feeds through to consumer prices. Elevated yields across the United States, Europe, and Asia signal that the pressure is not contained to a single market but has taken on a distinctly global character.",
+      "Strategists are warning that the bond selloff has further room to run, meaning yields could climb still higher before market forces find a new equilibrium. The rise in long-maturity yields is particularly concerning for equity investors, as higher borrowing costs erode the present value of future corporate earnings and make stocks comparatively less attractive. Global equities have already responded, extending losses into their longest losing streak in more than two months as mounting inflation concerns prompt investors to reassess valuations following a record-breaking rally earlier in the year.",
+      "The inflationary backdrop is being compounded by supply-side disruptions tied to the effective blockade of the Strait of Hormuz, which has driven up fuel and energy prices across Western economies. This dynamic is not merely a financial market abstraction — it is feeding directly into the cost of goods, logistics, and household energy bills, making the task of central banks significantly more complex. Policymakers who had hoped to ease monetary conditions in 2026 now face a difficult balancing act between supporting growth and preventing inflation expectations from becoming unanchored.",
+      "Japan offered a rare pocket of relative stability on Wednesday, with longer-maturity Japanese government bonds gaining after a 20-year bond auction attracted firmer-than-expected investor demand — above the 12-month average. The result provided short-term relief to Japanese debt markets, though the broader global trend of rising yields remains a powerful headwind. Analysts caution that even Japan, long insulated from the bond volatility experienced elsewhere, is not entirely immune to the worldwide repricing of risk and inflation expectations.",
+      "For investors, the current environment represents a fundamental recalibration of the post-pandemic financial landscape. The era of ultra-low interest rates, which underpinned a decade-long bull market in both equities and bonds, appears to be giving way to a more structurally inflationary world shaped by energy insecurity, supply chain fragmentation, and geopolitical tension. With Nvidia\'s earnings closely watched as a bellwether for the technology sector — itself heavily sensitive to discount-rate changes — the coming days will be critical in determining whether markets can stabilise or whether the bond-driven rout has further to go.",
     ],
-    image: "https://images.mktw.net/im-73170274",
-    source: "MarketWatch",
-    sourceUrl: "https://www.marketwatch.com/story/the-bond-market-has-a-warning-for-the-fed-get-serious-about-inflation-and-potential-rate-hikes-asap-f38bbdcf?mod=mw_rss_topstories"
+    image: "https://static01.nyt.com/images/2026/05/19/multimedia/2026-may-biz-promos-bond-yields/2026-may-biz-promos-bond-yields-mediumSquareAt3X-v10.png",
+    source: "The New York Times",
+    sourceUrl: "https://www.nytimes.com/2026/05/19/business/bond-market-iran-war-inflation.html"
   },
   secondary: [
     {
       id: "fn1",
-      title: "Stocks Drop as Higher Bond Yields Weigh on Markets Globally",
-      summary: "Technology stocks led losses across Asian equity markets as surging bond yields worldwide raised questions about stretched valuations following a record AI-driven rally.",
+      title: "UK Supermarkets Reject Government Push for Voluntary Food Price Caps",
+      summary: "The UK government has urged supermarkets to consider freezing prices on essential foods like eggs, bread, and milk, but retailers have pushed back, calling the proposal unjustified and potentially counterproductive.",
       body: [
-        "Global equity markets came under pressure as higher bond yields weighed on investor sentiment, with technology shares — particularly those that have benefited most from the artificial intelligence boom — bearing the brunt of the selloff. The losses in Asian markets reflected growing concern that the record-breaking rally in AI-related stocks may have left valuations dangerously exposed to any shift in the interest rate environment.",
-        "The market turbulence highlights the fragile relationship between the current AI-driven bull market and the broader fixed income environment. As yields rise, the premium investors are willing to pay for future earnings growth shrinks, making the lofty multiples assigned to many technology companies increasingly difficult to justify."
+        "Faced with rising food inflation driven in part by the Middle East conflict and surging energy costs, the UK government has asked major supermarkets to voluntarily cap prices on key grocery staples. Retail sources have rebuffed the plan, arguing that any such caps would be unjustified and could push costs up more broadly across their product ranges as margins are squeezed.",
+        "The episode highlights the tension between government pressure to protect consumers from the cost-of-living squeeze and the commercial realities facing retailers already contending with higher taxes, fuel costs, and energy bills. Analysts note that voluntary price controls historically risk distorting supply incentives, potentially leading to shortages of the very items they are designed to protect."
       ],
-      image: "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i3xI6XIJKL44/v0/1200x-1.jpg",
-      source: "Bloomberg Markets",
-      url: "https://www.bloomberg.com/news/articles/2026-05-18/oil-slips-as-trump-spurs-optimism-over-iran-deal-markets-wrap",
-      category: "Markets"
+      image: "https://i.guim.co.uk/img/media/7f1a1e5425aa78f613290942e7e2e96f469d0ea3/550_0_4211_3370/master/4211.jpg?width=1200&quality=85&auto=format&fit=max&s=9df63cd3f5ceb5aa6cd47b7cf92d1004",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/business/2026/may/19/uk-supermarkets-urged-to-consider-voluntary-price-caps-on-essential-foods",
+      category: "Economics"
     },
     {
       id: "fn2",
-      title: "Jury Hands Sam Altman and OpenAI Victory Over Elon Musk",
-      summary: "A federal jury ruled in favor of Sam Altman, OpenAI, and its president Greg Brockman, finding them not liable for Elon Musk\'s claims that they had broken contracts made when co-founding the AI startup.",
+      title: "Indonesian Stocks Slide as Government Tightens Commodity Export Controls",
+      summary: "Indonesian equities fell sharply after President Prabowo Subianto announced plans to tighten oversight of commodity exports, raising fears of greater state intervention and weaker profitability in one of the country\'s most important industries.",
       body: [
-        "The long-running legal battle between Elon Musk and OpenAI came to a decisive conclusion in an Oakland federal court, with jurors finding that Sam Altman, OpenAI, and president Greg Brockman did not breach contracts formed during the company\'s founding. Musk had alleged that Altman effectively 'stole a charity,' arguing that OpenAI had abandoned its original nonprofit mission in pursuit of commercial profit — a claim the jury ultimately rejected.",
-        "The verdict is a significant win for OpenAI as it continues to grow into one of the most valuable private companies in the world, removing a cloud of legal uncertainty that had hung over its leadership. For Musk, the ruling represents the latest in a string of courtroom defeats and raises questions about his legal strategy going forward, particularly given the financial and reputational costs involved."
+        "Indonesian markets experienced choppy and ultimately lower trading on Wednesday following the government\'s move to impose stricter controls on commodity exports, a sector that forms a cornerstone of the country\'s economy and stock market. Investors responded negatively to the prospect of increased state oversight, interpreting the policy as a potential drag on earnings for major commodity producers listed on the Jakarta exchange.",
+        "The development adds to a broader emerging-market headache at a time when global risk appetite is already being tested by rising bond yields and inflation fears. Indonesia\'s heavy reliance on commodity exports — including coal, palm oil, and nickel — means that any regulatory tightening has outsized implications for corporate profitability and foreign investor sentiment toward the country."
       ],
-      image: "https://i.guim.co.uk/img/media/e58e6018ecf5d31f073cbecec654aa2d8ffd0a7b/0_0_3000_2400/master/3000.jpg?width=1200&quality=85&auto=format&fit=max&s=a9504195b92112a7533193b714caab5f",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/technology/2026/may/18/sam-altman-trial-victory-elon-musk-openai",
-      category: "Business"
+      image: "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iWzICUmQnWlo/v2/1200x-1.png",
+      source: "Bloomberg Markets",
+      url: "https://www.bloomberg.com/news/articles/2026-05-20/indonesian-markets-extend-fall-on-government-export-control-plan",
+      category: "Markets"
     },
     {
       id: "fn3",
-      title: "NextEra and Dominion\'s Giant Utility Merger: What It Means for Your Electric Bill",
-      summary: "The proposed merger between two of America\'s largest utility companies is raising consumer concerns about rising electricity costs, as three-quarters of Americans report their home energy bills have already climbed in recent years.",
+      title: "HS2 Cost Balloons to £102bn as First Trains Pushed Back to 2039",
+      summary: "The UK government has admitted that the HS2 high-speed rail project will now cost up to £102.7 billion — some £70 billion more than originally promised — with the first trains between London and Birmingham not expected until as late as 2039.",
       body: [
-        "The planned merger between NextEra Energy and Dominion Energy would create one of the largest utility companies in the United States, drawing intense scrutiny from regulators and consumer advocates worried about the impact on household electricity prices. The deal comes at a particularly sensitive time, with a large majority of American consumers already reporting that their home energy costs have risen significantly in recent years.",
-        "Mergers in the utility sector often promise efficiency gains and infrastructure investment, but critics argue that reduced competition can ultimately lead to higher rates for captive customers who have little choice in their energy provider. Regulators will be tasked with determining whether the promised benefits of the combination outweigh the potential risks to affordability and grid reliability for millions of households."
+        "In a significant blow to UK infrastructure credibility, Transport Secretary Heidi Alexander confirmed that the already-truncated HS2 project has seen its budget swell to £102.7 billion, representing one of the most dramatic cost overruns in British public works history. The first passenger services between London and Birmingham, originally slated for the mid-2020s, have now been pushed back by up to 13 years.",
+        "The revelation raises serious questions about public sector project governance and the fiscal risks embedded in the UK\'s infrastructure pipeline at a time when government borrowing costs are already rising. The eye-watering overrun will intensify scrutiny of other major capital commitments, including the £38 billion Sizewell C nuclear plant, which the National Audit Office has simultaneously flagged as carrying 'immediate and substantial' financial risks."
       ],
-      image: "https://images.pexels.com/photos/18725782/pexels-photo-18725782.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      source: "MarketWatch",
-      url: "https://www.marketwatch.com/story/what-nextera-and-dominions-giant-utility-merger-means-for-your-electric-bill-94e0784d?mod=mw_rss_topstories",
-      category: "Business"
+      image: "https://i.guim.co.uk/img/media/73f7dd8f5e22949c4f5c812fd03dd7ee8f68ad9e/683_0_6827_5464/master/6827.jpg?width=1200&quality=85&auto=format&fit=max&s=2b293a9a695cc7ffb75abc53e7a8a752",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/business/2026/may/19/hs2-bill-could-rise-102bn-pounds-first-trains-delayed-until-2039-government-admits",
+      category: "Economics"
     }
   ]
 };

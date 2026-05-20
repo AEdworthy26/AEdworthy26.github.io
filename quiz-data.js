@@ -1,10 +1,10 @@
 // quiz-data.js
-// Auto-updated 2026-05-19 — do not edit manually
+// Auto-updated 2026-05-20 — do not edit manually
 
 window.QUIZ_DATA = {
-  date: '2026-05-19',
-  category: 'Film & TV',
-  question: 'In the 1994 film Forrest Gump, Forrest claims his mother always said life was like a box of chocolates — but what specific brand of chocolates is shown in the famous opening scene with the feather?',
-  answer: 'Whitman\'s Sampler',
-  funFact: 'The box of chocolates seen in the film is a Whitman\'s Sampler, a classic American brand. Interestingly, the famous quote as most people remember it — "Life is like a box of chocolates" — is actually a slight misquote; the line in the film is "Life was like a box of chocolates." The chocolates prop became so associated with the film that Whitman\'s reportedly saw a significant boost in sales after its release.'
+  date: '2026-05-20',
+  category: 'Sport',
+  question: 'At the 1996 Atlanta Olympics, which British rower won gold in the coxless pairs alongside his partner Matthew Pinsent, completing an unbeaten run of 40 consecutive international races?',
+  answer: 'Steve Redgrave (partnered with Matthew Pinsent).',
+  funFact: 'Redgrave famously declared after winning in Atlanta that anyone who saw him near a boat again had permission to shoot him — yet he went on to win a fifth consecutive Olympic gold medal in Sydney in 2000. His achievement of five golds across five successive Olympics remains one of the greatest feats in British sporting history. The 40-race unbeaten sequence with Pinsent between 1990 and 1996 underlined just how dominant the pair were throughout that era.'
 };

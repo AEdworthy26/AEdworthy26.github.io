@@ -1,18 +1,18 @@
 // films-data.js
-// Auto-updated 2026-05-19 — do not edit manually
+// Auto-updated 2026-05-20 — do not edit manually
 
 var FILMS_DATA = {
-  date: "2026-05-19",
+  date: "2026-05-20",
   film: {
-    title: "The Murderers Are Among Us",
-    director: "Wolfgang Staudte",
-    year: 1946,
-    genres: ["Drama", "Noir"],
-    desc: "The very first film produced in postwar Germany, shot among the literal rubble of bombed-out Berlin, this haunting noir follows a traumatized surgeon haunted by wartime atrocities while a former concentration camp survivor tries to rebuild her life in their shared apartment. Staudte wrings extraordinary expressionist power from the devastated cityscape, turning the ruins into a psychological landscape of guilt and denial that feels almost unbearably immediate. The film dares to ask whether justice or forgiveness is the more human response to atrocity, and arrives at no easy answer. Decades before 'coming to terms with the past' became a cultural movement, Staudte placed that moral reckoning at the center of German cinema with a boldness that still startles.",
-    cast: ["Hildegard Knef", "Ernst Wilhelm Borchert", "Arno Paulsen"],
-    rating: 92,
+    title: "Mon Oncle",
+    director: "Jacques Tati",
+    year: 1958,
+    genres: ["Comedy", "Satire"],
+    desc: "Jacques Tati\'s gentle, deadpan masterpiece follows the bumbling but warmhearted Monsieur Hulot as he stumbles through the sterile, gadget-obsessed world of his nouveau-riche relatives — a world of automatic garage doors, gurgling fish-fountain centerpieces, and furniture nobody is allowed to sit on. The film is a supremely funny yet quietly melancholic meditation on modernity\'s cost, contrasting Hulot\'s chaotic, human neighborhood with the cold efficiency of progress. Tati builds his comedy almost entirely from visual choreography and ambient sound rather than dialogue, trusting the audience\'s eye in a way that feels radical even today. It won the Academy Award for Best Foreign Language Film and remains one of cinema\'s most perfectly observed comedies, landing its satirical punches with the lightest possible touch.",
+    cast: ["Jacques Tati", "Jean-Pierre Zola", "Adrienne Servantie"],
+    rating: 96,
     ratingSource: "Rotten Tomatoes",
-    ratingExtra: "BAFTA nominated",
-    posterUrl: "https://upload.wikimedia.org/wikipedia/en/f/fb/Murderers_Among_Us_poster.jpg"
+    ratingExtra: "1 Academy Award (Best Foreign Language Film)",
+    posterUrl: "https://upload.wikimedia.org/wikipedia/en/c/cc/Mononcle_poster.jpg"
   }
 };

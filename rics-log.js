@@ -3,6 +3,45 @@
 
 var RICS_LOG = [
   {
+    "date": "2026-05-20",
+    "topic": "Joint Venture Structuring with Local Authorities: Equity Splits, Governance and Risk Allocation in Residential-Led Schemes",
+    "module": "Land, Development and Planning",
+    "level": 3,
+    "apc_competency": "Planning and Development Management (Level 3)",
+    "focus": "This lesson examines the mechanics of structuring joint ventures between Registered Providers and Local Authorities on residential-led schemes \u2014 covering equity and profit split models, governance frameworks, risk allocation, and the legal and commercial considerations that arise when public and private development interests must be aligned. For an Assistant Development Manager at an RP, LA JVs are a core route to unlocking council-owned land and de-risking large mixed-tenure schemes, making this a high-priority APC competency.",
+    "image": "https://images.unsplash.com/photo-1682403299053-5dea162de9b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxKb2ludCUyMFZlbnR1cmUlMjBTdHJ1Y3R1cmluZyUyMFVLJTIwcHJvcGVydHklMjBhcmNoaXRlY3R1cmUlMjBidWlsZGluZyUyMGV4dGVyaW9yfGVufDB8MHx8fDE3NzkyNTQxODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "content": [],
+    "summary": [
+      "LA JVs are subject to best-value obligations under the Local Government Act 1999, almost always requiring competitive procurement before a development partner can be appointed \u2014 Latimer must demonstrate commercial robustness AND RP-specific credentials (grant access, affordable housing management, covenant strength) in its bid.",
+      "The three principal legal structures are LLP, JVCo (SPV) and contractual JV \u2014 the JVCo is most common for single-scheme delivery, providing cleaner liability ring-fencing, grant-funding drawdown mechanics and exit provisions.",
+      "Equity splits must reflect the relative value of each party\\'s contribution (land vs. development expertise and capital), be supported by independent RICS Red Book valuation of the land, and be defensible under best-value scrutiny; profit waterfalls typically include capital return, preferred return to the development-risk party, and a residual split.",
+      "Governance must clearly define reserved matters requiring joint consent, include LA-friendly deadlock resolution (expert determination before buyout mechanisms), and explicitly distinguish the RP\\'s role as development manager from its separate regulatory role as registered provider.",
+      "Homes England/GLA grant access is a key RP competitive advantage in LA JV bids, but grant conditions (additionality, audit rights, clawback) must be explicitly allocated in the JV agreement so that the council as co-investor understands and accepts the associated obligations."
+    ],
+    "qa": [
+      {
+        "q": "A London Borough wants to enter a JV with Latimer to develop a council-owned brownfield site. What procurement process must it follow, and why?",
+        "a": "The council must run a competitive procurement process to satisfy its best-value duty under the Local Government Act 1999 and its obligations under the Public Contracts Regulations 2015 (or Concession Contracts Regulations 2016, depending on the structure). Simply awarding a JV to Latimer without competition would risk legal challenge. The process typically involves a restricted or competitive dialogue procedure, with evaluation weighted across financial offer, development expertise, affordable housing commitment, financial standing and social value. Latimer\\'s bid must demonstrate both a compelling residual land value offer and its RP credentials \u2014 grant-funding capacity, registered provider status and delivery track record."
+      },
+      {
+        "q": "How would you structure a profit waterfall in an LA JVCo where the council contributes land worth \u00a38m and Latimer contributes \u00a312m in development costs?",
+        "a": "A typical waterfall would have four tiers: (1) return of capital contributions in proportion to each party\\'s equity \u2014 \u00a38m to the council, \u00a312m to Latimer; (2) a preferred return to Latimer (e.g. 6\u20138% p.a.) on its capital to compensate for the additional development risk it carries; (3) a catch-up payment to the council to bring it to an equivalent preferred return level if the JV agreement provides for parity; and (4) residual profit split, typically weighted towards Latimer (e.g. 60:40) to reflect its disproportionate development risk. The affordable housing cross-subsidy must be stripped out of the appraisal and modelled separately, with Latimer retaining affordable units at cost or grant-funded transfer price, so the waterfall operates only on the market-tenure profit."
+      },
+      {
+        "q": "What is the difference between a 'reserved matter' in a JV governance context and a 'reserved matter' in a planning context, and why does this distinction matter for an APC candidate?",
+        "a": "In a JV governance context, a reserved matter is a decision category specified in the shareholders' or LLP agreement that falls outside the development manager\\'s delegated authority and requires the consent of all (or a supermajority of) JV parties \u2014 examples include budget variations beyond a defined threshold, changes to planning strategy, and additional borrowing. In a planning context, 'reserved matters' refers to the details (layout, scale, appearance, access, landscaping) left to be approved by the LPA following the grant of an outline planning permission, under Article 2 of the Town and Country Planning (Development Management Procedure) Order 2015. The distinction matters because an APC assessor may test whether a candidate conflates the two \u2014 demonstrating understanding of both usages in their correct contexts is a marker of technical depth."
+      },
+      {
+        "q": "How does an RP\\'s regulatory status as a Registered Provider create potential conflicts of interest within an LA JV, and how are these typically managed?",
+        "a": "As development manager within the JVCo, Latimer owes fiduciary and contractual duties to the JV to maximise the commercial outcome of the scheme. As RP, it has independent regulatory obligations to RSH (including Value for Money, governance and financial viability standards) and grant conditions to Homes England (additionality, specification, management obligations). Conflicts can arise where, for example, reducing the affordable housing quantum would improve JV profitability but breach grant conditions or undermine Latimer\\'s regulatory compliance. These conflicts are managed by: clearly separating the development management agreement from the affordable housing management agreement; ensuring the JV reserved matters include any changes to affordable housing mix or specification; and disclosing the regulatory obligations to the council at JV inception so both parties understand the constraints. Some JVs include a 'regulatory carve-out' clause that explicitly overrides JV governance provisions where RP regulatory compliance requires it."
+      },
+      {
+        "q": "What is the significance of the Building Safety Act 2022 for the exit provisions of an LA JV delivering a residential scheme over 18 metres?",
+        "a": "The Building Safety Act 2022 introduces the Higher-Risk Buildings (HRB) regime for residential buildings over 18 metres or 7 storeys, requiring a Building Safety Case, registration with the Building Safety Regulator, and appointment of an Accountable Person and Principal Accountable Person. In an LA JV, the exit provisions must address: (1) which entity becomes the Accountable Person at practical completion \u2014 typically the entity that owns the freehold or holds the long leasehold; (2) how Building Safety Case documentation is compiled and transferred from the JVCo to the long-term owner; (3) the allocation of remediation liability for any historical cladding or fire safety defects under the Building Safety Act\\'s extended limitation periods (now 30 years for retrospective claims under the Defective Premises Act 1972 as amended); and (4) the requirement for a Golden Thread of information to be maintained and handed over. JV exit provisions that were drafted pre-BSA 2022 will almost certainly need to be reviewed and updated to address these obligations."
+      }
+    ]
+  },
+  {
     "date": "2026-05-19",
     "topic": "Collateral Warranties, Third-Party Rights and PI Insurance: Managing Legal Risk in Residential Development Teams",
     "module": "Legal and Regulatory Compliance",

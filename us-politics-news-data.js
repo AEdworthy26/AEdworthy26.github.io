@@ -1,60 +1,60 @@
 // us-politics-news-data.js
-// Auto-updated 2026-05-19 — do not edit manually
+// Auto-updated 2026-05-20 — do not edit manually
 
 var US_POLITICS_NEWS = {
-  date: "2026-05-19",
+  date: "2026-05-20",
   main: {
-    title: "Tuesday Is a Big Primary Day: Six States Vote in Contests That Could Shape Congress",
+    title: "Trump Crushes Republican Dissent: Massie Defeated in Kentucky Primary",
     category: "Politics",
     content: [
-      "Six states are holding primary elections on May 19, 2026, in contests that carry significant implications for the balance of power in Congress and in key state governments. The primaries span Alabama, Georgia, Idaho, Kentucky, Oregon, and Pennsylvania, making it one of the most consequential single primary days of the 2026 election cycle. Voters across these states are weighing in on races that will help define the composition of the next Congress and determine which political figures emerge with momentum heading into the general election.",
-      "One of the most closely watched races of the day is in Kentucky, where incumbent Republican Congressman Thomas Massie faces a well-funded effort to remove him from office. Massie has repeatedly clashed with former President Donald Trump over federal spending and the release of the Epstein files, making him a prime target for Trump-aligned forces. Reports indicate that approximately $20 million has been directed toward ousting Massie, an extraordinary sum for a House primary race that underscores just how personally the White House has taken his defiance.",
-      "In Pennsylvania, the primary results could have broader national implications, particularly given the state\'s status as a perennial presidential battleground. Pennsylvania Governor Josh Shapiro has been mentioned as a potential 2028 presidential contender, and the candidates who emerge from today\'s primaries will set the stage for general election contests in a state both parties desperately need. The outcome of today\'s vote will signal whether Democratic or Republican candidates are better positioned ahead of November.",
-      "The primaries also come amid a broader national conversation about loyalty within the Republican Party and the consequences of crossing the Trump administration. The recent primary defeat of Senator Bill Cassidy of Louisiana — who voted to convict Trump in his impeachment trial — has served as a stark warning to other Republicans who might consider breaking with the president. Today\'s results, particularly in Kentucky, will test whether that dynamic continues to hold, or whether voters in some districts are willing to reward independent-minded lawmakers despite White House opposition.",
-      "Democrats are equally focused on today\'s contests, eyeing opportunities to gain ground in competitive districts across the six states. Candidates like Jack Schlossberg, grandson of President John F. Kennedy, are running in Democratic primaries with an eye on energizing a party base hungry for fresh voices and new leadership. The full picture of today\'s results will not be known until late tonight, but political analysts on both sides of the aisle will be parsing the outcomes closely for clues about the national political environment heading into the fall campaign season."
+      "President Trump\'s campaign to purge dissenting Republicans from Congress reached a defining milestone on Tuesday when Ed Gallrein, Trump\'s hand-picked challenger, defeated incumbent Representative Thomas Massie in the Kentucky GOP House primary. The result marks one of the most significant victories of Trump\'s midterm retribution crusade, ending the reelection bid of one of the most prominent libertarian-leaning voices in the House Republican caucus. Massie had long drawn the president\'s ire through his repeated refusals to fall in line with key Trump priorities, making him a prime target for the kind of primary challenge that has become a hallmark of Trump\'s approach to party discipline.",
+      "The Kentucky race had been closely watched as a bellwether for Trump\'s grip on the Republican Party heading into the 2026 midterms. A victory for Gallrein was widely interpreted as a demonstration that Trump retains the organizational muscle and voter loyalty necessary to unseat even entrenched incumbents who defy him. Massie, who had served multiple terms in Congress and built a fiercely independent reputation, was unable to survive the concentrated weight of a presidential endorsement being thrown against him in a Republican primary.",
+      "Massie\'s defeat is the latest in a string of losses suffered by Republicans who have clashed with Trump, from his earliest days back in the White House through the current primary season. The pattern has sent a chilling signal to other Republican members of Congress who might be weighing whether to break with the president on legislative votes or public statements. Trump\'s willingness to invest political capital in unseating his own party\'s incumbents has reshaped the calculus for nearly every Republican on Capitol Hill.",
+      "Tuesday\'s result also underscored the structural advantages Trump enjoys in Republican primaries, where his endorsement can rapidly mobilize grassroots energy and donor money behind a previously little-known challenger. Gallrein, who was not a nationally prominent figure before receiving Trump\'s backing, was able to convert the presidential seal of approval into a winning campaign against an established congressman. This dynamic raises serious questions about the independence of the House Republican caucus as it navigates a legislative agenda that will require difficult votes in the months ahead.",
+      "Political analysts are already drawing broader takeaways from Tuesday\'s primary results, which spanned six states and delivered a series of outcomes favorable to Trump\'s preferred candidates. The Massie defeat in particular is being described as the crescendo of Trump\'s retribution campaign, signaling that no Republican — however entrenched or ideologically distinct — is beyond the reach of a primary challenge backed by the White House. As the midterm election cycle intensifies, the message to the Republican Party is unambiguous: loyalty to Trump remains the paramount currency in GOP primary politics.",
     ],
-    image: "https://images.unsplash.com/photo-1540908390241-82158ab62887?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUdWVzZGF5JTIwSXMlMjBhJTIwQmlnJTIwUHJpbWFyeSUyMERheSUzQSUyMFNpeCUyMFN0YXRlcyUyMFZvdGUlMjBpbiUyMENvbnRlc3RzJTIwVGhhdCUyMENvdWxkJTIwU2hhcGUlMjBDb25ncmVzc3xlbnwwfDB8fHwxNzc5MTY2OTY4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-    source: "NPR",
-    sourceUrl: "https://www.npr.org/2026/05/18/g-s1-122235/primary-day-alabama-georgia-idaho-kentucky-oregon-pennsylvania"
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/13c7/live/7dfb7aa0-53f2-11f1-8b8c-6d33e1d5abb6.jpg",
+    source: "The New York Times",
+    sourceUrl: "https://www.nytimes.com/2026/05/19/us/politics/trump-massie-primary-takeaways.html"
   },
   secondary: [
     {
       id: "us1",
-      title: "Trump Drops $10 Billion IRS Lawsuit, Sparking Ethics Concerns",
-      summary: "President Trump has walked away from a $10 billion lawsuit he filed against the IRS, drawing sharp criticism from House Democrats and ethics officials who are questioning the circumstances of the resolution.",
+      title: "Trump Endorses Paxton Over Cornyn in Texas Senate Primary",
+      summary: "President Trump has endorsed Texas Attorney General Ken Paxton over incumbent Senator John Cornyn in the state\'s Republican Senate primary, defying the advice of his own advisers and dismaying many Senate Republicans.",
       body: [
-        "President Trump has voluntarily dismissed a $10 billion case he had filed against the Internal Revenue Service, a move that has drawn immediate scrutiny from House Democrats and government ethics officials. The sudden withdrawal of such a massive lawsuit has raised questions about what, if anything, was negotiated or exchanged as part of the resolution.",
-        "Ethics watchdogs and Democratic lawmakers are crying foul, suggesting the manner in which the case was dropped warrants further investigation. The episode adds to ongoing tensions between the White House and congressional Democrats over perceived conflicts of interest and the administration\'s relationship with federal agencies."
+        "Trump\'s decision to back Paxton came despite warnings from his advisers that the attorney general carries significant political baggage, and it has unsettled Senate Republicans who have worked closely with Cornyn for decades. The endorsement is seen as a high-stakes gamble, with Trump bowing to pressure from his base who favored the more combative Paxton over the establishment incumbent.",
+        "The Texas Senate race is a crucial contest that could reshape the dynamics of the upper chamber, and Trump\'s intervention marks another instance of the president prioritizing ideological loyalty and base enthusiasm over electability concerns flagged by party strategists. The move has deepened tensions between the White House and senior Senate Republicans."
       ],
-      image: "https://images.unsplash.com/photo-1547651703-c740f5ad23bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUcnVtcCUyMERyb3BzJTIwJTI0MTAlMjBCaWxsaW9uJTIwSVJTJTIwTGF3c3VpdCUyQyUyMFNwYXJraW5nJTIwRXRoaWNzJTIwQ29uY2VybnN8ZW58MHwwfHx8MTc3OTE2Njk2OHww&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "NPR",
-      url: "https://www.npr.org/2026/05/18/nx-s1-5825812/president-trump-drops-lawsuit-against-irs",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/209a/live/4bc991c0-53c5-11f1-8b8c-6d33e1d5abb6.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.com/news/articles/cy72v488g4go?at_medium=RSS&at_campaign=rss",
       category: "Politics"
     },
     {
       id: "us2",
-      title: "GOP Senator Cassidy Fails to Make Runoff After Impeachment Vote Backlash",
-      summary: "Senator Bill Cassidy of Louisiana has failed to advance to the runoff in his Republican Senate primary, five years after his vote to convict Donald Trump in his impeachment trial made him a political target.",
+      title: "U.S. Government Drops Tax Claims Against Trump in IRS Settlement",
+      summary: "The U.S. government has agreed to a sweeping IRS settlement that permanently bars federal authorities from examining or prosecuting President Trump, his sons, and the Trump Organization over current tax issues.",
       body: [
-        "Senator Bill Cassidy\'s primary defeat marks one of the most dramatic examples yet of the political consequences facing Republicans who broke with Trump during the impeachment proceedings. Trump had publicly called for Cassidy\'s ouster following the vote, and the primary result suggests that message resonated with Louisiana Republican voters.",
-        "Cassidy now joins a short but notable list of Republican senators who have spoken out against Trump, a group whose electoral fortunes have been closely watched as a bellwether for intra-party dissent. His defeat is likely to reinforce the chilling effect on other Republican lawmakers who might consider challenging the president\'s agenda or conduct."
+        "A document posted to the Department of Justice website confirms that as part of the settlement, the U.S. is 'forever barred and precluded' from further examining or pursuing tax claims against Trump and his family business. The agreement represents an extraordinary legal resolution that effectively shields the president and his organization from ongoing federal tax scrutiny.",
+        "The settlement has drawn significant attention given the long-running nature of federal scrutiny of Trump\'s tax affairs and the sweeping breadth of the protections it now affords. Critics are likely to raise questions about the independence of the IRS and DOJ in reaching such a broad agreement while Trump remains in the White House."
       ],
-      image: "https://images.unsplash.com/photo-1576082176859-e557bdc7b1b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxHT1AlMjBTZW5hdG9yJTIwQ2Fzc2lkeSUyMEZhaWxzJTIwdG8lMjBNYWtlJTIwUnVub2ZmJTIwQWZ0ZXIlMjBJbXBlYWNobWVudCUyMFZvdGUlMjBCYWNrbGFzaHxlbnwwfDB8fHwxNzc5MTY2OTY5fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "The Washington Post",
-      url: "https://www.washingtonpost.com/politics/2026/05/16/gop-senator-who-defied-trump-impeachment-faces-voters-five-years-later/",
+      image: "https://images.unsplash.com/photo-1647527933386-b6fe77f2493e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxVLlMuJTIwR292ZXJubWVudCUyMERyb3BzJTIwVGF4JTIwQ2xhaW1zJTIwQWdhaW5zdCUyMFRydW1wJTIwaW4lMjBJUlMlMjBTZXR0bGVtZW50fGVufDB8MHx8fDE3NzkyNTMzNzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "NPR",
+      url: "https://www.npr.org/2026/05/19/g-s1-122938/irs-trump-settlement-tax-returns-audit",
       category: "Politics"
     },
     {
       id: "us3",
-      title: "Supreme Court Sidesteps Key Voting Rights Act Enforcement Question",
-      summary: "The Supreme Court has declined for now to take up a legal question that could severely limit enforcement of the remaining protections under the Voting Rights Act for minority voters.",
+      title: "South Carolina House Passes Map Aimed at Forcing Out Rep. Clyburn",
+      summary: "The South Carolina House has passed a new congressional redistricting map that redraws the district held by veteran Democratic power broker James E. Clyburn, sending the map to the State Senate for consideration.",
       body: [
-        "The Supreme Court chose not to resolve a contested legal question around whether private parties have the right to enforce the Voting Rights Act, leaving the issue unresolved for the time being. The court\'s inaction comes after it recently weakened other provisions of the landmark civil rights law, making the future of minority voter protections increasingly uncertain.",
-        "Civil rights advocates have expressed concern that the court\'s avoidance of the question, rather than settling it in favor of enforcement, leaves minority communities in a legally precarious position. The decision to pass on the case for now does not foreclose the possibility that the justices will take it up in a future term, potentially with far-reaching consequences for how the Voting Rights Act is implemented across the country."
+        "The new map represents a direct political threat to Clyburn, one of the most influential Democrats in Congress, by redrawing the boundaries of his district in ways that could undermine his electoral viability. The move is part of a broader redistricting effort that Republicans in the state legislature are using to reshape the congressional map ahead of future elections.",
+        "Redistricting battles have become an increasingly central front in the broader partisan struggle for control of Congress, with state legislatures wielding their mapmaking authority to protect incumbents of one party while targeting those of the other. The South Carolina effort now advances to the State Senate, where its fate will determine whether Clyburn faces a dramatically altered political landscape."
       ],
-      image: "https://images.unsplash.com/photo-1658958327132-a80f8a9409fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTdXByZW1lJTIwQ291cnQlMjBTaWRlc3RlcHMlMjBLZXklMjBWb3RpbmclMjBSaWdodHMlMjBBY3QlMjBFbmZvcmNlbWVudCUyMFF1ZXN0aW9ufGVufDB8MHx8fDE3NzkxNjY5Njl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "NPR",
-      url: "https://www.npr.org/2026/05/18/nx-s1-5616665/supreme-court-voting-rights-act-private-right",
+      image: "https://images.unsplash.com/photo-1562364648-ea0a64c4635a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTb3V0aCUyMENhcm9saW5hJTIwSG91c2UlMjBQYXNzZXMlMjBNYXAlMjBBaW1lZCUyMGF0JTIwRm9yY2luZyUyME91dCUyMFJlcC4lMjBDbHlidXJufGVufDB8MHx8fDE3NzkyNTMzNzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "The New York Times",
+      url: "https://www.nytimes.com/2026/05/20/us/politics/south-carolina-redistricting-map-clyburn.html",
       category: "Politics"
     }
   ]

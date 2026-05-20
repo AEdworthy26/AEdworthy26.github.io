@@ -1,61 +1,61 @@
 // tech-news-data.js
-// Auto-updated 2026-05-19 — do not edit manually
+// Auto-updated 2026-05-20 — do not edit manually
 
 var TECH_NEWS = {
-  date: "2026-05-19",
+  date: "2026-05-20",
   main: {
-    title: "Anthropic Acquires Stainless, the Dev Tools Startup Used by OpenAI, Google, and Cloudflare",
-    category: "AI / Software",
+    title: "Everything Announced at Google I/O 2026: Gemini, Search, Smart Glasses, and the 'Foothills of the Singularity'",
+    category: "Artificial Intelligence",
     content: [
-      "Anthropic, the AI safety company behind the Claude family of models, has made a significant strategic move by acquiring Stainless, a New York-based developer tools startup founded in 2022. Stainless built its reputation in the fast-growing AI industry by automating the creation and maintenance of software development kits — commonly known as SDKs — which are the libraries developers rely on to interact with application programming interfaces, or APIs. The acquisition signals Anthropic\'s intent to deepen its infrastructure capabilities and make it easier for developers to build on top of Claude.",
-      "What makes the acquisition particularly notable is the client list Stainless had accumulated before being bought out. The startup\'s tools were trusted by some of the biggest names in the technology industry, including OpenAI, Google, and Cloudflare — meaning Anthropic has effectively absorbed a company that was actively serving its competitors. This speaks to both the quality and neutrality of Stainless\'s offerings, which had become something of a quiet backbone for API-driven development across the AI ecosystem.",
-      "SDKs play a critical but often overlooked role in the developer experience. When a company exposes an API, it needs accompanying libraries in multiple programming languages — Python, JavaScript, Go, and more — so that developers can integrate the service without writing tedious boilerplate code from scratch. Stainless automated much of this process, dramatically reducing the engineering overhead involved in maintaining SDKs as APIs evolve and change over time.",
-      "For Anthropic, bringing this capability in-house could provide a meaningful competitive advantage in the battle for developer mindshare. The AI industry increasingly recognizes that winning developers is just as important as winning end users, since developers are the ones who build the products and services that millions of people eventually interact with. By owning the tooling layer, Anthropic can ensure that integrating Claude into new applications is as seamless and well-supported as possible.",
-      "The deal also reflects a broader trend of AI companies moving up and down the technology stack to consolidate control over the developer experience. Rather than relying on third-party tooling that might evolve in unpredictable directions — or that could be acquired by a rival — Anthropic is choosing to own the relationship with developers from the ground up. As competition between Claude, GPT, and other AI platforms intensifies, acquisitions like this one may become increasingly common as each company tries to make its ecosystem the most attractive place to build."
+      "Google\'s annual developer conference, I/O 2026, delivered one of the most sweeping showcases of artificial intelligence integration the company has ever presented. From a revamped Gemini model lineup to AI-powered search agents and brand-new smart glasses hardware, the announcements painted a picture of a company going all-in on AI across every product it makes. The breadth of the reveal made clear that Google views this moment not as incremental progress, but as a fundamental transformation of how people interact with technology.",
+      "Among the most striking announcements was the expansion of Google\'s AI agents — described as 'information agents' capable of monitoring topics in the background and proactively alerting users to relevant updates and changes. Unlike traditional search, which requires a user to actively pose a query, these agents work autonomously to surface information the user might need before they even know to ask for it. The feature represents a meaningful shift in the relationship between users and search engines, moving from reactive tools to proactive digital assistants.",
+      "Gmail also received a significant AI upgrade, with Google introducing conversational voice search powered by Gemini directly inside the inbox. Users can now speak naturally to their email, asking questions like where a confirmation number is buried or what time a reservation was made, and receive spoken answers in return. The feature is designed to reduce the friction of hunting through cluttered inboxes and brings a distinctly hands-free, assistant-style experience to one of Google\'s most widely used products.",
+      "On the hardware front, Google announced its first pair of smart glasses since the notorious Google Glass experiment more than a decade ago. Set to go on sale in autumn, the new glasses are built around Google\'s Gemini AI, allowing the assistant to perceive and interact with the user\'s real-world environment. The announcement signals Google\'s renewed confidence in the wearables space, particularly as competitors like Meta have demonstrated growing consumer appetite for AI-assisted eyewear.",
+      "Closing out the keynote, Google DeepMind CEO Demis Hassabis offered perhaps the most philosophically charged statement of the event, describing the current moment as potentially the 'foothills of the singularity' — a reference to the theoretical point at which artificial intelligence surpasses human intelligence and accelerates beyond prediction. Hassabis framed Google\'s research and products as central to unlocking AGI\'s potential 'for the benefit of the entire world,' and suggested that future generations will look back on this period as a historic turning point. Whether that vision inspires awe or concern likely depends on who is doing the listening, but it underscored just how seriously Google\'s leadership believes the stakes of this technological moment to be."
     ],
-    image: "https://images.unsplash.com/photo-1699274060234-e3f18cc8b135?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxBbnRocm9waWMlMjBBY3F1aXJlcyUyMFN0YWlubGVzcyUyQyUyMHRoZSUyMERldiUyMFRvb2xzJTIwU3RhcnR1cCUyMFVzZWQlMjBieSUyME9wZW5BSSUyQyUyMEdvb2dsZSUyQyUyMGFuZCUyMENsb3VkZmxhcmV8ZW58MHwwfHx8MTc3OTE2NzA0OXww&ixlib=rb-4.1.0&q=80&w=1080",
-    source: "TechCrunch",
-    sourceUrl: "https://techcrunch.com/2026/05/18/anthropic-has-acquired-the-dev-tools-startup-used-by-openai-google-and-cloudflare/"
+    image: "https://media.wired.com/photos/6a047ecbec98d3bd8037fdbe/master/pass/GettyImages-2215577882.jpg",
+    source: "WIRED",
+    sourceUrl: "https://www.wired.com/story/everything-google-announced-at-google-io-2026/"
   },
   secondary: [
     {
       id: "tc1",
-      title: "SandboxAQ Brings Drug Discovery Models to Claude — No PhD Required",
-      summary: "SandboxAQ is integrating its advanced drug discovery AI models with Anthropic\'s Claude, betting that accessibility — not just raw model performance — is the key obstacle holding back pharmaceutical research.",
+      title: "Discord Rolls Out End-to-End Encryption for Voice and Video Calls to All Users",
+      summary: "Discord has enabled end-to-end encrypted voice and video calling for its hundreds of millions of users, meaning even Discord itself can no longer access the content of those communications.",
       body: [
-        "SandboxAQ has announced that it is bringing its specialized drug discovery models to Claude, Anthropic\'s AI assistant, in a move designed to make cutting-edge computational chemistry tools available to researchers who lack deep computing expertise. The company argues that while competitors like Chai Discovery and Isomorphic Labs have focused on building ever-more-powerful models, the real bottleneck in the industry is access — making complex tools usable by scientists who aren\'t also software engineers.",
-        "By integrating with Claude, SandboxAQ hopes to lower the barrier to entry for drug discovery workflows, allowing a broader range of researchers to leverage sophisticated AI without needing to wrangle APIs or navigate complex technical setups. The move reflects a growing recognition in the AI industry that ease of use and natural language interaction can be just as transformative as raw model capability."
+        "The move marks a major privacy upgrade for one of the world\'s most popular communication platforms, which has historically lacked the robust encryption protections offered by dedicated secure messaging apps. With end-to-end encryption now active by default for voice and video, users can communicate with confidence that their conversations are scrambled from sender to recipient without any third-party access.",
+        "The announcement is significant not just for Discord\'s gaming and community-focused user base, but as a broader signal that mainstream platforms are increasingly prioritizing privacy as a competitive feature. As concerns about data surveillance and platform access to private communications continue to grow, Discord\'s move puts pressure on other large platforms to follow suit."
       ],
-      image: "https://images.pexels.com/photos/9742765/pexels-photo-9742765.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      image: "https://images.unsplash.com/photo-1729860648897-270eddd9026b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxEaXNjb3JkJTIwUm9sbHMlMjBPdXQlMjBFbmQtdG8tRW5kJTIwRW5jcnlwdGlvbiUyMGZvciUyMFZvaWNlJTIwYW5kJTIwVmlkZW8lMjBDYWxscyUyMHRvJTIwQWxsJTIwVXNlcnN8ZW58MHwwfHx8MTc3OTI1MzQ2NXww&ixlib=rb-4.1.0&q=80&w=1080",
       source: "TechCrunch",
-      url: "https://techcrunch.com/2026/05/18/sandboxaq-brings-its-drug-discovery-models-to-claude-no-phd-in-computing-required/",
-      category: "AI / Science"
+      url: "https://techcrunch.com/2026/05/19/discord-enables-end-to-end-encrypted-voice-and-video-calling-for-every-user/",
+      category: "Cybersecurity"
     },
     {
       id: "tc2",
-      title: "LG Announces the World\'s First 1000Hz, 1080p Gaming Monitor",
-      summary: "LG\'s new UltraGear 25G590B will be the first monitor capable of a native 1000Hz refresh rate at 1,920 x 1,080 resolution, pushing gaming display technology into uncharted territory.",
+      title: "NASA Science Chief Dreams of Mass-Produced Satellites to Supercharge Space Research",
+      summary: "NASA\'s science chief has expressed a strong desire for commercially mass-produced satellites, arguing that affordable, standardized hardware is the key to getting dramatically more science done in orbit.",
       body: [
-        "LG has unveiled the UltraGear 25G590B, set to become the world\'s first commercially available monitor to achieve a native 1000Hz refresh rate at full 1080p resolution. Previous 1000Hz prototype displays had required significant compromises on resolution, making LG\'s announcement a meaningful leap forward for competitive gaming hardware.",
-        "The monitor is expected to appeal primarily to esports players and competitive gamers for whom every millisecond of input lag and every frame of visual clarity can make a tangible difference in performance. LG has said the display will be released this year, though pricing and exact availability details have not yet been announced."
+        "Speaking with evident enthusiasm, NASA\'s science chief described a vision in which off-the-shelf, mass-produced satellites would allow the agency to pursue far more scientific missions than its current custom-built, one-of-a-kind spacecraft budget allows. The sentiment — summed up in the quote 'How in the hell do I get more science into space? That is my goal' — reflects growing frustration with the cost and timeline of traditional big-ticket NASA science missions.",
+        "The comments align with a broader shift in the space industry toward commercialization and commoditization of satellite hardware, driven in large part by companies like SpaceX and a new generation of small-sat manufacturers. If NASA can tap into that ecosystem effectively, it could mean a dramatic increase in the volume and frequency of scientific observations from orbit."
       ],
-      image: "https://images.unsplash.com/photo-1760901627502-4969155b3330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxMRyUyMEFubm91bmNlcyUyMHRoZSUyMFdvcmxkJTVDfGVufDB8MHx8fDE3NzkxNjcwNTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "The Verge",
-      url: "https://www.theverge.com/games/933204/lg-1000hz-1080p-ultragear-25g590b",
-      category: "Hardware / Gaming"
+      image: "https://cdn.arstechnica.net/wp-content/uploads/2026/05/jpegPIA10500.jpg",
+      source: "Ars Technica",
+      url: "https://arstechnica.com/space/2026/05/ill-buy-10-of-those-nasa-science-chief-yearns-for-mass-produced-satellites/",
+      category: "Space"
     },
     {
       id: "tc3",
-      title: "AI-Generated Fake Legal Citations Sink Facebook Defamation Revenge Lawsuit",
-      summary: "A man\'s defamation lawsuit against Facebook users who criticized him on the \"Are We Dating the Same Guy\" group collapsed after AI-generated fake case citations were discovered in his legal filings.",
+      title: "Plex Triples Lifetime Pass Price to $750, Pushing Users Toward Subscription Model",
+      summary: "Plex is raising the price of its Lifetime Pass to $750 — a near-tripling of the current cost — giving existing and prospective users until July 1st to lock in today\'s rate before the hike takes effect.",
       body: [
-        "A would-be plaintiff\'s attempt to sue Facebook users who described him as a bad date has ended in embarrassing failure after courts discovered that his legal filings were riddled with fictitious case citations generated by AI. The case serves as a cautionary tale about the growing problem of AI \"hallucinations\" in legal contexts, where language models confidently fabricate court case names, dates, and rulings that do not exist.",
-        "Judges and courts across the country have increasingly encountered AI-generated fake citations since tools like ChatGPT became widely accessible, leading to sanctions and case dismissals. This latest incident underscores the critical importance of verifying any AI-assisted legal research before submitting documents to a court."
+        "The move is the latest in a series of aggressive pricing changes from Plex, which doubled the Lifetime Pass price last year and is now tripling it again, signaling that the company is deliberately trying to steer its user base away from one-time purchases and toward recurring subscription revenue. The Lifetime Pass has long been a popular option among Plex\'s dedicated community of home media server enthusiasts, making the hike feel particularly pointed.",
+        "Plex has reportedly even considered eliminating the Lifetime Pass option altogether, and this latest increase may be a step in that direction rather than simply a revenue adjustment. For users who rely on Plex to stream their own locally stored media from their own hardware, the irony of paying escalating fees to access content they already own has not been lost on a vocal and frustrated community."
       ],
-      image: "https://images.unsplash.com/photo-1762340279673-c45af70bdc77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxBSS1HZW5lcmF0ZWQlMjBGYWtlJTIwTGVnYWwlMjBDaXRhdGlvbnMlMjBTaW5rJTIwRmFjZWJvb2slMjBEZWZhbWF0aW9uJTIwUmV2ZW5nZSUyMExhd3N1aXR8ZW58MHwwfHx8MTc3OTE2NzA1MXww&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "Ars Technica",
-      url: "https://arstechnica.com/tech-policy/2026/05/legal-fail-dont-use-ai-to-sue-facebook-users-for-calling-you-a-bad-date/",
-      category: "AI / Law"
+      image: "https://cdn.arstechnica.net/wp-content/uploads/2026/05/plex-1152x648.jpg",
+      source: "The Verge",
+      url: "https://www.theverge.com/tech/934269/plex-pass-lifetime-subscription-triple-750-price-hike",
+      category: "Software"
     }
   ]
 };

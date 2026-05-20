@@ -1,108 +1,101 @@
 // curiosity-data.js
-// Auto-updated 2026-05-19 — do not edit manually
+// Auto-updated 2026-05-20 — do not edit manually
 
 var CURIOSITY_DATA = {
-  date: "2026-05-19",
+  date: "2026-05-20",
   mainArticle: {
-    title: "The Colour of Power: How Purple Dye Ruled the Ancient World",
-    subject: "Tyrian purple dye ancient Phoenicia",
-    subtitle: "For a thousand years, a single colour was more valuable than gold. It came from rotting sea snails, it smelled like death, and it built an empire.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Phoenicia_map-en.svg/960px-Phoenicia_map-en.svg.png",
+    title: "The Money Changers of the Medieval World: How the Knights Templar Invented Banking",
+    subject: "Knights Templar banking system",
+    subtitle: "They began as warrior monks sworn to poverty. They ended as the most powerful financial institution in the medieval world — and their invention still shapes how money moves today.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Bandeira_Templ%C3%A1ria.svg/1280px-Bandeira_Templ%C3%A1ria.svg.png",
     readTime: "10 min",
     content: [
       {
         type: "paragraph",
-        text: "In the ancient world, colour was not decoration — it was power. And for more than a thousand years, one colour stood above all others: a deep, luminous purple extracted from the crushed bodies of sea snails on the coast of what is now Lebanon. Tyrian purple, as the Romans called it after the great Phoenician city of Tyre, was worth more by weight than gold. An emperor\'s robe might cost the equivalent of a provincial governor\'s annual salary. To wear it without permission was, in some periods, a capital offence."
+        text: "In the year 1119, nine French knights knelt before the Patriarch of Jerusalem and took vows of poverty, chastity, and obedience. They called themselves the Poor Fellow-Soldiers of Christ and of the Temple of Solomon. Within two centuries, those same monks — sworn to own nothing personally — would be operating a financial network stretching from Scotland to the Holy Land, holding the debts of kings, managing the papal treasury, and pioneering instruments of credit that would not be equalled again until the Renaissance. The contradiction is one of the great ironies of medieval history."
       },
       {
         type: "paragraph",
-        text: "The colour\'s dominance over the ancient imagination is almost impossible to overstate. It coloured the robes of Assyrian kings, the borders of Roman senatorial togas, the vestments of Jewish high priests, and the ceremonial garments of Byzantine emperors. When Alexander the Great sacked the Persian capital of Persepolis in 330 BC, his soldiers discovered stored purple fabric worth tens of thousands of gold talents — treasure so valuable it had been stockpiled for generations. The Phoenicians, who controlled the secret of its production, built a commercial empire on that single, reeking monopoly."
+        text: "The Templars began with a straightforward military purpose: protecting Christian pilgrims travelling the dangerous roads of the Holy Land after the First Crusade. Their early years were genuinely austere. A famous seal showed two knights sharing a single horse, a symbol of their collective poverty. But the problem of pilgrimage quickly revealed itself to be not just a military problem but a financial one — and the Templars, almost by accident, found themselves solving it."
       },
       {
         type: "heading",
-        text: "The Snail That Built a City"
+        text: "The Problem That Created a Bank"
       },
       {
         type: "paragraph",
-        text: "The dye came from two species of predatory sea snail: Murex brandaris and Murex trunculus, harvested in enormous quantities from the eastern Mediterranean. Deep within each snail\'s body lay a small hypobranchial gland — a mucous organ the creature used to sedate its prey — which contained a colourless compound that, when exposed to air and sunlight, transformed through a remarkable series of chemical reactions into a vivid, permanent purple. The transformation required sunlight, oxygen, and time, and the process was carefully guarded by Phoenician craftsmen who passed the secret from generation to generation."
+        text: "A pilgrim travelling from Paris to Jerusalem in the twelfth century faced an almost insoluble dilemma. The journey could take six months or more, crossing dozens of territories controlled by different lords, bandits, and rival faiths. Carrying gold or silver was an invitation to be robbed, murdered, or simply taxed into destitution at every border. Yet without money, a traveller could not eat, sleep, or bribe their way through emergencies. The road to the Holy Land was littered with those who had tried and failed to solve this problem."
       },
       {
         type: "paragraph",
-        text: "The logistics of production were staggering and revolting in equal measure. It took roughly ten thousand snails to produce a single gram of dye. The snails were caught in baited traps, then cracked open while still alive, their glands extracted and left to ferment in vats of seawater under the Mediterranean sun. Ancient sources describe the smell as unbearable — a combination of rotting shellfish and sulphurous fumes that could be detected miles from a dye works. Tyre\'s dye quarter, archaeologically confirmed, was located at the edge of the city and downwind of everything else for obvious reasons."
+        text: "The Templars' solution was elegant in its simplicity, revolutionary in its implications. A pilgrim could deposit money at a Templar house in France, receive a written letter of credit — encoded, to prevent forgery — and then withdraw equivalent funds at any Templar commandery along the route to Jerusalem. The letter was essentially a cheque, centuries before that word existed. It was the first large-scale system of cashless transfer in the Western world, and it worked because the Templars had what no private merchant could offer: an international network of fortified houses bound by a single discipline and a common trust."
       },
       {
         type: "heading",
-        text: "The Chemistry of Prestige"
+        text: "Building the Network"
       },
       {
         type: "paragraph",
-        text: "What made Tyrian purple so extraordinary beyond its rarity was its extraordinary durability. Unlike virtually every other pigment available in the ancient world — which faded, washed out, or altered on exposure to light — Tyrian purple actually intensified with sunlight. The active compound, now identified as 6,6'-dibromoindigo, is one of the most chemically stable dyes ever discovered, binding to wool fibres at the molecular level in a way that defied bleaching. A purple robe passed through three generations still looked as vivid as the day it left the dyeworks."
+        text: "By the mid-twelfth century, the Templars had commanderies in virtually every significant city in Christendom. London, Paris, Genoa, Venice, Barcelona, Acre, Antioch — their preceptories were simultaneously military barracks, warehouses, treasuries, and branch offices. The London Temple, built on the north bank of the Thames, became so central to English royal finance that it served as the de facto national treasury under several Plantagenet kings. When King John needed to move money to pay his soldiers, he moved it through the Templars. When crusading monarchs needed to fund armies, they borrowed from the Templars."
       },
       {
         type: "paragraph",
-        text: "This permanence was deeply significant in a world where material goods decayed and faded. A purple garment was not merely expensive — it was visually incorruptible, an emblem of authority that literally did not diminish with time. Ancient observers noticed this quality and loaded it with symbolic meaning: the colour was associated with immortality, divine favour, and royal perpetuity. When Homer called the sea 'wine-dark,' classical scholars have argued he may have been invoking the very same purple-blue spectrum that stained the glands of the murex snail — a colour woven into the oldest vocabulary of civilisation."
+        text: "The financial instruments they developed went well beyond simple letters of credit. Templars accepted deposits and paid a form of interest — technically forbidden by the Church\'s prohibition on usury, but disguised through accounting creativity. They issued loans secured against future revenues, managed estates for absent crusaders, and collected papal taxes across whole kingdoms. The Paris Temple became the centre of French royal finance for over a century, its vaulted cellars holding the crown jewels and the national accounts. The Order had become, without quite intending it, a sovereign financial power."
       },
       {
         type: "heading",
-        text: "The Phoenician Monopoly"
+        text: "The Arithmetic of God"
       },
       {
         type: "paragraph",
-        text: "The Phoenicians did not merely produce Tyrian purple — they weaponised it commercially. From their home cities of Tyre, Sidon, and Byblos, Phoenician merchants carried purple cloth across the entire Mediterranean and beyond, establishing trading posts from Carthage to Cadiz specifically to distribute this single commodity. The word 'Phoenician' may itself derive from the Greek 'phoinix,' meaning purple-red, suggesting that other ancient peoples defined this entire civilisation by the colour it sold. Their glass, their alphabet, their cedar timber — all of it mattered, but purple was the crown jewel."
+        text: "The theological tension at the heart of the Templar enterprise was never fully resolved. The Church officially condemned usury — the lending of money at interest — as a sin against the natural order, since money, unlike grain or livestock, could not 'breed' of its own nature. The Templars threaded this needle with considerable ingenuity. They charged fees rather than interest. They structured loans as property transfers. They offset interest payments against the 'risk' of non-repayment. Medieval accountants, it turns out, were every bit as inventive as modern ones when theological compliance required it."
       },
       {
         type: "paragraph",
-        text: "Phoenician traders understood the economics of luxury goods with sophistication that would not seem out of place in a modern business school. They maintained strict quality grades, charging vastly different prices for fabric dyed once versus twice-dipped purple, which was almost black and nearly priceless. They established controlled distribution, ensuring that the dye never became widely available and that its association with royalty and power remained intact. The business model was, in modern terms, a vertically integrated luxury monopoly — and it funded the construction of one of the most remarkable maritime civilisations antiquity ever produced."
+        text: "What made this possible was the Templars' unique status as a religious order directly subordinate to the Pope, exempt from the authority of local bishops and secular rulers. This gave them a kind of legal superpower: they could operate across borders without being subject to local taxation or seizure, and they could appeal directly to Rome if any king tried to interfere with their operations. In effect, they enjoyed something close to diplomatic immunity combined with a pan-European operating licence — a combination no merchant house could replicate."
       },
       {
         type: "heading",
-        text: "Purple in the Corridors of Power"
+        text: "The Downfall: Power, Debt, and a King\'s Revenge"
       },
       {
         type: "paragraph",
-        text: "Rome\'s relationship with purple was simultaneously an obsession and a political battlefield. Republican Rome initially frowned on purple as a mark of the despised monarchy, then gradually allowed it for generals celebrating triumphs, then watched helplessly as it crept across the wardrobe of the ruling class. Julius Caesar was reportedly the first Roman to wear an entirely purple toga — a pointed statement of ambition that his enemies did not miss. Augustus, who became Rome\'s first emperor, wore only a purple-bordered toga, ostentatiously modest by imperial standards, but his successors threw off restraint entirely."
+        text: "The Templars' financial power eventually became the instrument of their destruction. By the early fourteenth century, the Crusading era was effectively over — Jerusalem had been lost in 1187, and the last Crusader stronghold, Acre, fell in 1291. The Templars' military raison d'être had evaporated, but their financial empire was larger than ever. This made them simultaneously useless and threatening to the crowned heads of Europe, none more so than Philip IV of France, who was catastrophically in debt to the Order."
       },
       {
         type: "paragraph",
-        text: "The Emperor Caligula reportedly had the King of Mauretania executed for appearing at a public spectacle in a purple cloak that outshone his own. Diocletian, reforming the empire\'s economy in the late third century, included Tyrian purple in his famous Edict on Maximum Prices — the attempted price-freeze that covered hundreds of commodities — and valued it at the highest rate in the document: three times the price of gold by weight. The word 'porphyrogennetos,' literally 'born in the purple,' became a formal Byzantine imperial title for children born to reigning emperors, given birth in a special purple-decorated chamber in the Great Palace of Constantinople."
+        text: "Philip, known to history as 'the Fair' — a reference to his looks rather than his character — moved against the Templars with a ruthlessness that would have impressed a later generation of autocrats. On Friday, October 13, 1307 (the origin, some claim, of the superstition around that date), he ordered the simultaneous arrest of every Templar in France. The charges were spectacular: heresy, sodomy, devil worship, spitting on the cross, and the adoration of a mysterious idol called Baphomet. Most of these accusations were fabricated or extracted under torture, but in an age when confession was considered the queen of proofs, it hardly mattered."
+      },
+      {
+        type: "paragraph",
+        text: "The last Grand Master of the Templars, Jacques de Molay, was burned alive in Paris in March 1314, recanting his confessions and reportedly cursing Philip and Pope Clement V from the flames. Both men were dead within a year. The story proved irresistible to later mythologisers, and the Templars passed from historical reality into a vast imaginative afterlife — the seedbed of Freemasonry legends, conspiracy theories, and a thousand novels. The actual history is extraordinary enough without embellishment."
       },
       {
         type: "heading",
-        text: "The Fall of an Empire, the Death of a Colour"
+        text: "The Legacy Beneath Our Feet"
       },
       {
         type: "paragraph",
-        text: "For centuries, the Byzantine Empire maintained a state monopoly on Tyrian purple production, using it as a tool of diplomacy — gifting purple-dyed silk to foreign rulers as the ultimate mark of imperial favour, a gift that could elevate a barbarian king to the status of Rome\'s friend and ally. The colour\'s power was so thoroughly understood that Byzantine emperors occasionally deployed it as a weapon in reverse: withholding purple cloth from a rival was a calculated insult, a declaration that the recipient stood outside the civilised order. Entire foreign policies were conducted through the language of textile."
+        text: "The Templars were dissolved as an institution, but the financial world they had helped to create did not disappear with them. The techniques they pioneered — letters of credit, deposit banking, international fund transfer, mortgage lending — were absorbed and refined by the Italian merchant banks of Genoa, Florence, and Venice that rose to dominance in the fourteenth and fifteenth centuries. The Medici Bank, which would finance the Renaissance, owed more to Templar precedents than either party would likely have acknowledged."
       },
       {
         type: "paragraph",
-        text: "When the Ottoman Turks finally sacked Constantinople in 1453, the Byzantine dye works fell silent. The exact methods of producing Tyrian purple — the precise fermentation times, the specific combinations of sunlight and salt, the trade secrets accumulated over a millennium — died with the craftsmen who carried them. European scholars knew purple had been made from snails; they found the ancient shell middens, read the ancient texts, but could not reproduce the process. For four centuries, the most famous colour in Western history was a mystery — known only from descriptions, fragments of dyed cloth in museum drawers, and the faint, ammonia-sharp smell of imagination."
-      },
-      {
-        type: "heading",
-        text: "Rediscovery and Legacy"
-      },
-      {
-        type: "paragraph",
-        text: "The chemical secret of Tyrian purple was finally cracked in the 1990s, when organic chemists analysing ancient dyed textiles identified 6,6'-dibromoindigo as the active compound and reproduced the synthesis from scratch. Experimental archaeologists at various sites have since attempted to replicate ancient production methods, confirming the ancient sources: the smell is exactly as terrible as described, the snails are exactly as numerous as claimed, and the resulting colour is exactly as extraordinary as a thousand years of imperial propaganda insisted. You can now buy replicated Tyrian purple — for approximately €2,000 per gram."
-      },
-      {
-        type: "paragraph",
-        text: "The deeper legacy of Tyrian purple, however, is not chemical but cultural. It represents one of the earliest and most complete examples of a commodity so freighted with symbolic meaning that its material reality almost ceased to matter. Purple was not merely a colour — it was a system of belief about hierarchy, legitimacy, and the divine right of rulers. When synthetic aniline dyes democratised colour in the mid-nineteenth century, flooding the market with cheap purples and magentas, commentators at the time understood that something profound had shifted. Power had once worn a colour that cost a thousand snails per inch of fabric. Now any shop girl could match it for a penny. The ancient world\'s most jealously guarded secret had dissolved, quietly, into a vat of coal tar."
+        text: "It is a peculiar kind of immortality: an organisation founded on the complete rejection of worldly wealth ended up bequeathing to the world the mechanics of modern finance. Every time you deposit money in one country and withdraw it in another, every time you transfer funds across a border without physically moving gold, you are, in some small and deeply ironic sense, following a system devised by warrior monks who had sworn never to own anything at all."
       }
     ]
   },
   personOfTheDay: {
-    name: "Anne Boleyn",
-    lifespan: "c. 1501–1536",
-    category: "Political History & Remarkable Lives",
-    image: "https://upload.wikimedia.org/wikipedia/commons/0/03/AnneBoleynHever.jpg",
-    bio: "Anne Boleyn occupies one of the most contested and consequential places in the history of England — and, arguably, of Western Christianity. Born around 1501 to a family of ambitious English courtiers, she spent formative years at the courts of the Burgundian Netherlands and France, absorbing a sophisticated continental education that set her apart from almost every other woman at the English court. She returned to England in 1522 fluent in French, steeped in Renaissance humanism, and possessed of a sharp intelligence and magnetic force of personality that contemporaries found simultaneously irresistible and alarming.\n\nHer relationship with King Henry VIII began around 1526, when Henry — already searching for a way to annul his marriage to Catherine of Aragon — turned his attention to the dark-eyed courtier who refused, unusually and pointedly, to become merely another royal mistress. Anne\'s insistence on marriage rather than a liaison was either a masterpiece of strategic calculation or a genuine moral stance — historians still argue the point. Whatever her reasoning, the consequence was world-historical: Henry\'s efforts to secure papal approval for an annulment, rebuffed by a pope who could not afford to offend Catherine\'s nephew Emperor Charles V, led directly to the English Reformation, the break with Rome, and the creation of the Church of England. Anne Boleyn did not cause the Reformation alone, but the Reformation almost certainly would not have happened when and how it did without her.\n\nThey married in secret in January 1533, and Anne was crowned Queen of England in a ceremony of spectacular magnificence in June of that year — one of the most elaborate coronations in English history, a public declaration that the new order was real and permanent. But the marriage that had reshaped a kingdom proved fragile. Anne\'s failure to produce a male heir — she bore the future Elizabeth I in September 1533, then suffered a series of miscarriages — eroded her position at a court built on dynastic calculation. Henry, whose appetite for new romantic interests had not been extinguished by matrimony, began to look elsewhere.\n\nIn the spring of 1536, Anne was arrested on charges of adultery with five men, including her own brother George — charges almost universally regarded by modern historians as fabricated or grotesquely exaggerated, political instruments designed to clear the way for Henry\'s next marriage. She was tried before a court that had no intention of acquitting her, convicted, and executed on Tower Green on 19 May 1536 — this very date — at the age of approximately thirty-five. She faced her death with extraordinary composure, giving a speech from the scaffold that was careful, dignified, and deeply ambiguous. The daughter she left behind became Elizabeth I, arguably the greatest monarch England ever produced. Anne Boleyn was, by any reckoning, one of the most consequential women in the history of the English-speaking world."
+    name: "Jacques de Molay",
+    lifespan: "c. 1243–1314",
+    category: "Military & Political History",
+    image: "https://upload.wikimedia.org/wikipedia/commons/5/50/JacquesdeMolay.jpg",
+    bio: "Jacques de Molay was born around 1243 in the Burgundy region of France, and entered the Knights Templar as a young man, likely in 1265. He rose steadily through the Order\'s ranks over the following decades, serving in the Holy Land during the twilight of the Crusading era and witnessing the catastrophic fall of Acre in 1291 — the event that stripped the Templars of their last territorial foothold in the Levant. He was elected Grand Master of the Order around 1292, inheriting an institution of enormous wealth and prestige but uncertain purpose in a post-Crusade world.\n\nAs Grand Master, de Molay worked to restore the Order\'s credibility and plan a new Crusade, travelling to Europe to lobby popes and kings. He was aware of growing hostility toward the Templars but almost certainly did not anticipate the scale of what was coming. When King Philip IV of France struck in October 1307, de Molay was among the first arrested. Under torture, he confessed to various charges of heresy — confessions he would later recant, a courageous but fatal decision in medieval legal terms.\n\nThe years between his arrest and execution were a prolonged ordeal of imprisonment, repeated interrogations, and the spectacle of his Order being dismantled around him. The Council of Vienne formally suppressed the Templars in 1312, and de Molay remained imprisoned, his fate unresolved, as Philip pressed for a definitive verdict. In March 1314, he was brought before a papal commission and sentenced to life imprisonment. At this point de Molay made his final, decisive act: he publicly recanted his confessions, declared the Order innocent, and accepted death rather than bear false witness.\n\nHe was burned at the stake on the Île des Juifs in Paris on March 18, 1314, reportedly maintaining his composure to the end and asking to be bound facing Notre-Dame so that he could pray. The reports of his dying curse against Philip IV and Pope Clement V became legendary — both men were dead within the year, lending the story an almost scriptural weight. De Molay remains one of history\'s most poignant figures: a man destroyed not for what his Order actually was, but for what it was useful to accuse it of being."
   },
   onThisDay: {
-    headline: "ANNE BOLEYN EXECUTED ON TOWER GREEN",
-    date: "May 19, 1536",
-    summary: "On the morning of 19 May 1536, Anne Boleyn — Queen of England, second wife of Henry VIII, and mother of the future Elizabeth I — was beheaded on Tower Green within the Tower of London. She had been arrested less than three weeks earlier on charges of adultery, incest, and conspiracy against the king\'s life, charges that were almost certainly manufactured by Thomas Cromwell and other political enemies to pave the way for Henry\'s marriage to Jane Seymour. She was tried before a court of peers that included her own former suitor Henry Percy, found guilty by unanimous verdict, and sentenced to death. Henry commuted the original sentence of burning to beheading and arranged for a skilled French swordsman to be brought from Calais — a mercy, of sorts, in an age when the axe was frequently botched.\n\nAnne walked to the scaffold accompanied by four ladies-in-waiting, dressed in a dark grey gown with a red petticoat and a white linen cap covering her famous dark hair. Her final speech from the scaffold was a masterwork of controlled ambiguity — she neither confirmed nor denied the charges, praised the king as 'a most noble, gentle, and sovereign lord,' and commended her soul to God. The swordsman took her head with a single stroke. She was buried without ceremony in the Chapel of St Peter ad Vincula within the Tower, her body wrapped in an old arrow box. Henry VIII announced his betrothal to Jane Seymour the following morning. The execution sent a shockwave across Europe and stands as one of the most dramatic and chilling episodes in the long history of the English monarchy.",
-    image: "https://images.pexels.com/photos/37521831/pexels-photo-37521831.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    headline: "Magellan\'s Expedition Completes the First Circumnavigation of the Globe",
+    date: "May 20, 1522",
+    summary: "On May 20, 1522, the Victoria — the sole surviving ship of Ferdinand Magellan\'s original fleet of five — limped into the harbour of Sanlúcar de Barrameda in southern Spain, completing the first circumnavigation of the Earth in recorded history. She had left the same port in September 1519 with 270 men aboard five vessels. She returned with eighteen survivors and a hold full of spices. Magellan himself was not among them; he had been killed in the Philippines in April 1521, leaving his Basque navigator Juan Sebastián Elcano to complete the journey across the Indian Ocean and around the Cape of Good Hope.\n\nThe voyage had been one of sustained catastrophe and endurance. Magellan had navigated the treacherous straits at the tip of South America that now bear his name, crossed an impossibly vast Pacific — a ocean so much larger than any European had imagined that his crews were reduced to eating rats, sawdust, and boiled leather to survive — and forged through the island kingdoms of Southeast Asia before the fatal encounter on Mactan. Yet the cargo of cloves that the Victoria brought home was valuable enough that it more than paid for the entire expedition, financially vindicating what had otherwise been a human catastrophe. The circumnavigation also settled, beyond any remaining doubt, the spherical nature of the Earth and demonstrated the true scale of the Pacific — transforming European understanding of global geography in a single voyage."
+    ,
+    image: "https://upload.wikimedia.org/wikipedia/commons/9/9c/Ferdinand_Magellan.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
   }
 };

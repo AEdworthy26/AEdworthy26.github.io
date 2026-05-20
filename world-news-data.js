@@ -1,61 +1,61 @@
 // world-news-data.js
-// Auto-updated 2026-05-19 — do not edit manually
+// Auto-updated 2026-05-20 — do not edit manually
 
 var WORLD_NEWS = {
-  date: "2026-05-19",
+  date: "2026-05-20",
   main: {
-    title: "WHO Declares Global Emergency as Ebola Kills at Least 118 in DR Congo",
+    title: "Ebola Outbreak in Central Africa Could Last Months, W.H.O. Warns as Cases Surpass 500",
     category: "Global Health",
     content: [
-      "The World Health Organization has declared the Ebola outbreak in the Democratic Republic of the Congo an international public health emergency, as the death toll climbs to at least 118 people. The outbreak is centred in the country\'s eastern Ituri province, a region that has endured successive cycles of conflict and disease. Health authorities in both the DRC and neighbouring Uganda are scrambling to contain the spread, deploying experts and emergency medical supplies to affected areas.",
-      "Residents of Ituri province have described widespread panic, with fear of the disease permeating daily life in towns such as Mongbwalu, a mining hub where cases have been reported. 'On public transport, in bars and at mass gatherings, everyone is talking about Ebola,' said Gloire Mumbesa, a local resident. The psychological and economic toll is compounding an already fragile situation, as people avoid public spaces and commerce slows to a halt.",
-      "The outbreak comes six years after the DRC\'s last major Ebola crisis, which was itself one of the deadliest on record. The Global Preparedness Monitoring Board has warned in a newly published report that the world is becoming less resilient to outbreaks of infectious diseases, citing Ebola alongside other pathogens such as hantavirus as growing threats. Experts warn that deforestation, population displacement, and weakened health infrastructure are accelerating the frequency and severity of such outbreaks.",
-      "The WHO\'s declaration of a Public Health Emergency of International Concern is significant, triggering a coordinated global response and unlocking additional international resources and attention. Health teams are working urgently to trace contacts of confirmed cases and establish treatment facilities in affected areas. However, ongoing insecurity in eastern DRC presents a serious obstacle to containment efforts, with armed groups operating in some of the same regions where health workers are trying to respond.",
-      "The international community is being urged to act swiftly and not repeat the delays that characterised responses to previous outbreaks. Campaigners and health officials alike stress that the window for containment is narrow, and that a failure to act decisively risks allowing the virus to spread beyond DRC\'s borders. The situation is being watched closely by global health authorities, who fear that a combination of under-resourced health systems and regional instability could turn a serious outbreak into a far wider catastrophe."
+      "A rapidly escalating Ebola outbreak in the Democratic Republic of Congo and Uganda has alarmed global health officials, with more than 130 suspected deaths and upwards of 540 confirmed or suspected cases reported as of this week. The World Health Organization\'s chief has described himself as 'deeply concerned' by the pace of the outbreak, warning that it could persist for months. Health authorities on the ground acknowledge they were slow to detect the virus, and that response teams are still playing catch-up with its spread through eastern DRC, a region already battered by years of conflict and instability.",
+      "The strain at the centre of this outbreak is the Bundibugyo variant of Ebola, a less commonly seen form of the virus that was first identified in Uganda in 2007. Unlike the more frequently studied Zaire strain, fewer approved vaccines and treatments exist for the Bundibugyo variant, complicating efforts to contain it. WHO officials are now actively considering whether experimental vaccines and medicines still in clinical development could be deployed under emergency authorisation to slow the outbreak\'s progress.",
+      "Experts warn that the official case figures almost certainly undercount the true scale of infections, as limited surveillance infrastructure, remote geography, and deep community mistrust of health authorities make comprehensive testing difficult. Fear has gripped affected communities, with residents and local leaders describing the situation as one in which 'Ebola has tortured us.' A WHO doctor warned publicly that the outbreak may be spreading faster than initial assessments suggested, raising fears of wider regional transmission if cross-border movement goes unmonitored.",
+      "The conditions fuelling the outbreak are grimly familiar to those who have studied previous Ebola emergencies in central Africa. Ongoing armed conflict in eastern DRC has repeatedly disrupted vaccination campaigns, forced displacement of communities, and made it dangerous for health workers to operate in affected areas. Chronic mistrust of government institutions and foreign health organisations — rooted in past experiences of mismanaged responses — has further slowed the uptake of testing and treatment, allowing the virus to circulate undetected for longer than would otherwise be the case.",
+      "The international response has already attracted political friction. U.S. Secretary of State Marco Rubio publicly criticised the WHO\'s handling of the situation, saying the organisation had been 'a little late' in identifying the outbreak — comments that drew sharp attention given that the United States has continued to implement sweeping cuts to its global public health funding and contributions to multilateral health bodies. With the outbreak now crossing an international border into Uganda, pressure is mounting on donor nations and health agencies to dramatically scale up resources before the crisis deepens further.",
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/4eaa/live/fff74570-52cb-11f1-b4b8-8bc40cabb834.jpg",
-    source: "BBC News",
-    sourceUrl: "https://www.bbc.com/news/articles/cq6pz60p996o?at_medium=RSS&at_campaign=rss"
+    image: "https://static01.nyt.com/images/2026/05/19/multimedia/19xp-ebola-cases-jkcv/19xp-ebola-cases-jkcv-mediumSquareAt3X-v2.jpg",
+    source: "The New York Times",
+    sourceUrl: "https://www.nytimes.com/2026/05/19/world/africa/ebola-outbreak-deaths-congo-who.html"
   },
   secondary: [
     {
       id: "s1",
-      title: "Trump Says He Called Off Iran Attack at Request of Gulf States",
-      summary: "US President Trump says he halted a planned attack on Iran after Gulf states asked him to stand down, as serious negotiations get underway.",
+      title: "Xi and Putin Meet in Beijing Days After Trump\'s China Visit",
+      summary: "Chinese President Xi Jinping and Russian President Vladimir Putin have held talks in Beijing in a high-profile summit coming just days after U.S. President Donald Trump made an official visit to China.",
       body: [
-        "President Trump announced that he called off a military strike against Iran that had been planned for Tuesday, saying the decision came at the direct request of Gulf state partners. The president indicated that 'serious negotiations are now taking place', suggesting a diplomatic track remains open despite weeks of heightened tension over Iran\'s nuclear programme.",
-        "The development comes amid a broader regional realignment, with Gulf states — many of whom have significant economic and security stakes in avoiding a wider war — apparently playing an active mediating role. Analysts note that Trump\'s repeated ultimatums have nonetheless been viewed by some observers as reflecting limited US leverage over Tehran, particularly as Iran\'s leadership has shown resilience in the face of previous pressure campaigns."
+        "The meeting between Xi Jinping and Vladimir Putin in Beijing underscores the continued closeness of the China-Russia strategic partnership at a moment of intense global diplomatic activity. The timing is particularly striking, coming only days after President Trump concluded his own official visit to the Chinese capital, signalling that Beijing is actively managing relationships with both Washington and Moscow simultaneously.",
+        "The back-to-back summits place Beijing at the centre of a complex web of great-power diplomacy, as the world\'s major nations jostle for influence amid ongoing conflicts and shifting alliances. Analysts will be watching closely for any signals from the Xi-Putin talks about the future of Russian energy exports, arms cooperation, and the two nations' coordinated stance on Western-led international institutions."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/7abc/live/e242fd30-530c-11f1-8b8c-6d33e1d5abb6.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/c7079e55zjro?at_medium=RSS&at_campaign=rss",
+      image: "https://images.unsplash.com/photo-1719017671454-400cf17267c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxYaSUyMGFuZCUyMFB1dGluJTIwTWVldCUyMGluJTIwQmVpamluZyUyMERheXMlMjBBZnRlciUyMFRydW1wJTVDfGVufDB8MHx8fDE3NzkyNTMyODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "Al Jazeera",
+      url: "https://www.aljazeera.com/news/2026/5/20/chinas-xi-jinping-and-russian-president-vladimir-putin-meet-in-beijing?traffic_source=rss",
       category: "Geopolitics"
     },
     {
       id: "s2",
-      title: "Ukraine Launches One of Its Largest Drone Strikes on Russia as Peace Talks Stall",
-      summary: "Ukraine has conducted a massive drone offensive against Russia in one of the biggest such strikes since the full-scale invasion began, as diplomatic efforts to end the war falter.",
+      title: "Trump Says He Postponed 'Very Major Attack' on Iran, Leaving Middle East on Edge",
+      summary: "President Trump has threatened 'another big hit' on Iran while claiming he personally postponed a major military strike, giving Tehran days to return to the negotiating table as regional tensions remain acute.",
       body: [
-        "Ukraine launched a large-scale drone attack targeting Russian territory, with officials describing it as one of the most significant strikes of the entire war. The offensive was timed amid stalling peace negotiations, with Kyiv apparently seeking to demonstrate its continued capacity to hit deep inside Russia and weaken its adversary\'s war machine.",
-        "The strike underlines the increasingly attritional nature of the conflict and the degree to which both sides are pressing military advantages even as international mediators push for a ceasefire. The failure of recent diplomatic rounds to produce tangible results has led Ukrainian commanders to pursue a strategy of sustained pressure, hoping to shift the balance at the negotiating table."
+        "Donald Trump\'s declaration that he held back a significant planned military strike against Iran has sent a fresh wave of uncertainty through the Middle East, with diplomats and regional governments scrambling to assess the credibility and intent behind the statement. Pakistan, which has been playing an active mediation role, is continuing its efforts to broker a return to negotiations between Washington and Tehran.",
+        "The remarks come amid an already volatile regional landscape following the war between Israel and Iran, during which Israeli authorities have also been accused of accelerating demolition orders against Palestinians in East Jerusalem. The combination of unresolved military threats and ongoing human rights concerns has left the broader Middle East region in a state of prolonged and dangerous uncertainty."
       ],
-      image: "https://images.unsplash.com/photo-1650046300363-93a34e4e3447?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxVa3JhaW5lJTIwTGF1bmNoZXMlMjBPbmUlMjBvZiUyMEl0cyUyMExhcmdlc3QlMjBEcm9uZSUyMFN0cmlrZXMlMjBvbiUyMFJ1c3NpYSUyMGFzJTIwUGVhY2UlMjBUYWxrcyUyMFN0YWxsfGVufDB8MHx8fDE3NzkxNjY4NzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "NPR",
-      url: "https://www.npr.org/2026/05/18/nx-s1-5824988/ukraine-launches-large-scale-drone-strikes-on-russia",
-      category: "Conflict"
+      image: "https://static01.nyt.com/images/2026/05/19/multimedia/19int-iran-trump-02-lqfw/19int-iran-trump-02-lqfw-mediumSquareAt3X.jpg",
+      source: "The New York Times",
+      url: "https://www.nytimes.com/2026/05/19/world/middleeast/iran-trump-tension.html",
+      category: "International Security"
     },
     {
       id: "s3",
-      title: "Landmark ICC Hearing for Libyan Militia Commander Accused of Torture and Enslavement",
-      summary: "A former Libyan militia commander accused of overseeing murder, rape, enslavement and torture of migrants and refugees will appear before the International Criminal Court in a case hailed as a historic step toward accountability.",
+      title: "Ukraine\'s Strikes on Russian Oil Sites Trigger Mounting Environmental Disaster",
+      summary: "Ukraine\'s campaign of drone and missile strikes targeting Russian oil infrastructure has caused significant ecological damage, with environmental groups warning of a growing disaster unfolding around key Russian refining sites.",
       body: [
-        "The International Criminal Court is set to hear the case of a former Libyan militia commander accused of presiding over systematic abuses in detention centres where migrants and refugees attempting to reach Europe were held. Campaigners have described the hearing as a 'huge milestone', calling it a landmark moment for 'justice, truth, reparation and deterrence' against the exploitation of vulnerable people.",
-        "The case shines a harsh light on the conditions faced by African migrants transiting through Libya, where detention facilities have long been documented as sites of extreme violence and human rights violations. Advocates hope the prosecution will send a clear signal to others involved in similar abuses that international justice mechanisms can and will pursue accountability, regardless of the political complexities surrounding migration in the Mediterranean."
+        "More than four years into Russia\'s invasion, Ukraine has increasingly turned to strikes on Russian oil infrastructure as a means of cutting into the Kremlin\'s vital energy revenues, with the port and refinery complex at Tuapse among the sites affected. While the strategy has strategic logic — oil exports remain a cornerstone of Moscow\'s war financing — the attacks have also triggered serious environmental consequences as storage tanks, pipelines, and processing facilities burn or leak.",
+        "The situation represents a significant shift in the character of the conflict\'s environmental toll, which has until now been associated primarily with Russian actions on Ukrainian territory. Observers note the profound irony that Kyiv, widely recognised as a victim of ecological destruction caused by Russian military operations, now finds itself causing cross-border environmental harm as the war enters a new and grimly attritional phase."
       ],
-      image: "https://i.guim.co.uk/img/media/a5f3ce2be2d4d44dbc19c79ce98d8171a1b445b9/260_323_3075_2461/master/3075.jpg?width=1200&quality=85&auto=format&fit=max&s=ad236fe4d7c7bb3a5c9f9243517e7a7c",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/world/2026/may/19/libya-militia-commander-refugees-international-criminal-court",
-      category: "Human Rights"
+      image: "https://images.unsplash.com/photo-1665758886246-e991200f237a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxVa3JhaW5lJTVDfGVufDB8MHx8fDE3NzkyNTMyODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "The New York Times",
+      url: "https://www.nytimes.com/2026/05/19/world/europe/russia-ukraine-oil-attacks-war-tuapse.html",
+      category: "Conflict"
     }
   ]
 };

@@ -1,169 +1,172 @@
 // suggested-recipes-data.js
-// Auto-updated 2026-05-19 — do not edit manually
+// Auto-updated 2026-05-20 — do not edit manually
 
 window.SUGGESTED_RECIPES = [
   {
     id: "sug1",
-    title: "Venetian-Spiced Duck Breast with Sour Cherry Sauce, Wilted Cavolo Nero & Creamy Polenta",
-    category: "Other",
+    title: "Venetian-Spiced Venison Ragù with Pappardelle, Juniper & Orange Zest",
+    category: "Pasta & Grains",
     calories: 610,
     protein: 42,
     fibre: 5,
     healthScore: 68,
-    time: "55 mins",
+    time: "1 hr 45 mins",
     serves: "4",
-    desc: "Duck breasts scored and rubbed with warm spices — cinnamon, allspice and black pepper — then seared until the skin crackles and rendered golden, finished with a sweet-sour cherry sauce that cuts beautifully through the rich fat. Served over silky polenta with cavolo nero wilted in garlic, this is the kind of deeply satisfying mid-spring dinner that feels genuinely celebratory.",
-    emoji: "🦆",
-    image: "https://images.unsplash.com/photo-1582391123232-6130296f1fcd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxWZW5ldGlhbi1TcGljZWQlMjBEdWNrJTIwQnJlYXN0JTIwd2l0aCUyMFNvdXIlMjBDaGVycnklMjBTYXVjZSUyQyUyMFdpbHRlZCUyMENhdm9sbyUyME5lcm8lMjAlMjYlMjBDcmVhbXklMjBQb2xlbnRhJTIwZm9vZCUyMGRpc2h8ZW58MHwwfHx8MTc3OTE2NzgxOHww&ixlib=rb-4.1.0&q=80&w=1080",
+    desc: "A deeply aromatic northern Italian–style ragù where venison mince is slowly braised with juniper, red wine, and a strip of orange peel until it becomes impossibly rich and tender. Tossed through wide ribbons of pappardelle and finished with a dusting of aged Parmesan, this is the kind of bold, wintry pasta that rewards patience with every forkful.",
+    emoji: "🦌",
+    image: "https://images.unsplash.com/photo-1645930558646-1fab14e40578?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxWZW5ldGlhbi1TcGljZWQlMjBWZW5pc29uJTIwUmFnJUMzJUI5JTIwd2l0aCUyMFBhcHBhcmRlbGxlJTJDJTIwSnVuaXBlciUyMCUyNiUyME9yYW5nZSUyMFplc3QlMjBmb29kJTIwZGlzaHxlbnwwfDB8fHwxNzc5MjU0Mjg1fDA&ixlib=rb-4.1.0&q=80&w=1080",
     ingredientGroups: [
-      { group: "Duck", items: [
-        { name: "Duck breasts, skin on", quantity: 4, unit: "" },
-        { name: "Ground cinnamon", quantity: 0.5, unit: "tsp" },
-        { name: "Ground allspice", quantity: 0.5, unit: "tsp" },
-        { name: "Coarsely ground black pepper", quantity: 1, unit: "tsp" },
-        { name: "Flaky sea salt", quantity: 1, unit: "tsp" }
+      { group: "Main", items: [
+        { name: "Venison mince", quantity: 600, unit: "g" },
+        { name: "Pappardelle pasta", quantity: 350, unit: "g" },
+        { name: "Brown onion, finely diced", quantity: 1, unit: "" },
+        { name: "Celery stalks, finely diced", quantity: 2, unit: "" },
+        { name: "Carrot, finely diced", quantity: 1, unit: "" },
+        { name: "Garlic cloves, minced", quantity: 4, unit: "" },
+        { name: "Pancetta, diced", quantity: 100, unit: "g" }
       ]},
-      { group: "Sour Cherry Sauce", items: [
-        { name: "Morello cherries in juice (jar or tin)", quantity: 400, unit: "g" },
-        { name: "Chicken or duck stock", quantity: 150, unit: "ml" },
-        { name: "Red wine vinegar", quantity: 2, unit: "tbsp" },
-        { name: "Soft brown sugar", quantity: 1, unit: "tbsp" },
-        { name: "Unsalted butter", quantity: 20, unit: "g" }
+      { group: "Braising & Sauce", items: [
+        { name: "Dry red wine (e.g. Barbera or Chianti)", quantity: 200, unit: "ml" },
+        { name: "Whole canned tomatoes", quantity: 400, unit: "g" },
+        { name: "Beef or venison stock", quantity: 200, unit: "ml" },
+        { name: "Tomato purée", quantity: 2, unit: "tbsp" },
+        { name: "Juniper berries, lightly crushed", quantity: 8, unit: "" },
+        { name: "Dried bay leaves", quantity: 2, unit: "" },
+        { name: "Fresh thyme sprigs", quantity: 3, unit: "" },
+        { name: "Orange zest (1 large orange)", quantity: 1, unit: "strip" },
+        { name: "Olive oil", quantity: 3, unit: "tbsp" }
       ]},
-      { group: "Polenta", items: [
-        { name: "Quick-cook polenta", quantity: 200, unit: "g" },
-        { name: "Whole milk", quantity: 600, unit: "ml" },
-        { name: "Water", quantity: 400, unit: "ml" },
-        { name: "Parmesan, finely grated", quantity: 50, unit: "g" },
-        { name: "Unsalted butter", quantity: 30, unit: "g" },
-        { name: "Salt and white pepper", quantity: 1, unit: "pinch" }
-      ]},
-      { group: "Cavolo Nero", items: [
-        { name: "Cavolo nero, tough stems removed, roughly chopped", quantity: 300, unit: "g" },
-        { name: "Garlic cloves, thinly sliced", quantity: 3, unit: "" },
-        { name: "Olive oil", quantity: 2, unit: "tbsp" },
-        { name: "Dried chilli flakes", quantity: 0.25, unit: "tsp" }
+      { group: "To Finish", items: [
+        { name: "Aged Parmesan, finely grated", quantity: 60, unit: "g" },
+        { name: "Unsalted butter", quantity: 20, unit: "g" },
+        { name: "Flat-leaf parsley, chopped", quantity: 3, unit: "tbsp" },
+        { name: "Sea salt and black pepper", quantity: 1, unit: "to taste" }
       ]}
     ],
     substitutes: [
-      { ingredient: "Morello cherries", alternatives: ["Frozen sour cherries, thawed", "Dried sour cherries rehydrated in warm water"] },
-      { ingredient: "Cavolo nero", alternatives: ["Savoy cabbage, thinly sliced", "Kale, thick stems removed"] },
-      { ingredient: "Quick-cook polenta", alternatives: ["Regular polenta (cook longer per packet)", "Mashed potato"] }
+      { ingredient: "Venison mince", alternatives: ["Beef mince (80/20)", "Wild boar mince"] },
+      { ingredient: "Pappardelle", alternatives: ["Tagliatelle", "Rigatoni"] },
+      { ingredient: "Pancetta", alternatives: ["Smoked streaky bacon", "Guanciale"] },
+      { ingredient: "Juniper berries", alternatives: ["A small splash of gin", "Allspice berries"] }
     ],
     instructions: [
-      "Remove duck breasts from the fridge 30 minutes before cooking. Pat completely dry with kitchen paper — this is essential for crisp skin. Using a sharp knife, score the skin in a crosshatch pattern at 1cm intervals, cutting through the fat but not into the flesh. Mix the cinnamon, allspice, black pepper and salt together and rub all over both sides of each breast.",
-      "Place duck breasts skin-side down in a cold, dry ovenproof frying pan. Turn the heat to medium — starting cold renders more fat. Cook undisturbed for 10–12 minutes until the skin is deep golden and most of the fat has rendered out. You\'ll hear the sizzling mellow as the fat goes. Flip and sear the flesh side for 2 minutes, then transfer the pan to a 200°C oven for 6–8 minutes for medium-rare (or 10 for medium). Remove and rest on a warm plate, loosely tented with foil, for 8 minutes.",
-      "While duck cooks, make the cherry sauce. Pour off most of the duck fat from a separate small saucepan (save it — it\'s gold for roast potatoes). Add the cherries with their juice, stock, vinegar and sugar. Bring to a lively simmer and reduce for 10–12 minutes until slightly syrupy. Taste and balance: it should be intensely savoury with a pleasing sweet-sour edge. Swirl in the butter off the heat to give it gloss. Season well.",
-      "For the polenta, bring the milk and water to a gentle boil in a large saucepan with a generous pinch of salt. Pour in the polenta in a thin, steady stream, whisking constantly to avoid lumps. Reduce to a low heat and stir with a wooden spoon for 5–8 minutes until thick, smooth and pulling away from the sides. Beat in the butter and Parmesan, taste for salt and white pepper. Keep warm over the lowest heat possible, adding a splash of milk if it thickens too much.",
-      "For the cavolo nero, heat olive oil in a wide pan over medium-high heat. Add garlic and chilli flakes and sizzle for 30 seconds until fragrant. Add the cavolo nero with a splash of water and cook, tossing regularly, for 4–5 minutes until wilted, tender and slightly caramelised at the edges. Season with salt.",
-      "To serve, spoon a generous mound of polenta into each bowl or plate. Top with a tangle of cavolo nero. Slice each duck breast at an angle and fan over the greens. Spoon the warm cherry sauce generously over and around the duck. Serve immediately."
+      "Step 1 — Heat 2 tbsp olive oil in a wide, heavy-based saucepan or Dutch oven over medium heat. Add the pancetta and cook for 4–5 minutes until the fat renders and the pieces turn golden. Remove with a slotted spoon and set aside.",
+      "Step 2 — In the same pan, add the remaining olive oil and fry the onion, celery, and carrot (the soffritto) over medium-low heat for 10–12 minutes, stirring occasionally, until completely soft and beginning to turn golden. Add the garlic and cook for a further 2 minutes.",
+      "Step 3 — Increase the heat to high. Add the venison mince and cook, breaking it up with a wooden spoon, for 6–8 minutes until well browned all over with no grey patches. Season generously with salt and black pepper.",
+      "Step 4 — Return the pancetta to the pan. Add the tomato purée and stir through for 1 minute. Pour in the red wine, scraping up any caramelised bits from the bottom of the pan, and let it bubble vigorously for 3–4 minutes until reduced by half.",
+      "Step 5 — Add the canned tomatoes (crushing them with your hands as you go), stock, juniper berries, bay leaves, thyme, and orange zest strip. Stir well, bring to a gentle simmer, then reduce the heat to low and cover with a lid left slightly ajar. Cook for 1 hour to 1 hour 15 minutes, stirring occasionally, until the sauce is thick, glossy, and deeply flavoured. Remove the bay, thyme sprigs, and orange zest. Taste and adjust seasoning.",
+      "Step 6 — About 10 minutes before serving, bring a large pot of heavily salted water to the boil. Cook the pappardelle until al dente according to packet instructions. Reserve a mugful of pasta cooking water before draining.",
+      "Step 7 — Add the butter and a ladleful of pasta water to the ragù and stir to loosen into a silky sauce. Tip the drained pappardelle directly into the pan and toss vigorously to coat every ribbon. Add a little more pasta water if needed — you want the sauce to cling and flow.",
+      "Step 8 — Divide between warmed bowls, scatter generously with Parmesan and chopped parsley, and serve immediately with extra Parmesan on the side."
     ]
   },
   {
     id: "sug2",
-    title: "Basque Tuna & Pepper Marmitako — Potato & Piperade Stew with Fresh Tuna & Smoked Paprika",
+    title: "Thai Laab Pla — Minced Tilapia Salad with Toasted Rice, Lime, Chilli & Fresh Herbs",
     category: "Fish & Seafood",
-    calories: 445,
+    calories: 320,
     protein: 36,
-    fibre: 6,
-    healthScore: 79,
-    time: "50 mins",
-    serves: "4",
-    desc: "Marmitako is the Basque fisherman\'s stew — a deeply flavoured broth built on slow-cooked peppers, tomatoes and smoked paprika, into which potatoes are coaxed to absorb every drop before chunks of fresh tuna are added at the very last moment so they stay just barely cooked through. It is honest, bold and utterly delicious, perfect for a cool May evening when you want something that genuinely warms from the inside.",
+    fibre: 3,
+    healthScore: 84,
+    time: "30 mins",
+    serves: "3",
+    desc: "Laab is northern Thailand\'s most vibrant salad — here made with quickly cooked minced tilapia rather than the traditional pork or chicken, keeping it light but punchy. The secret weapon is toasted rice powder (khao khua), which adds a uniquely nutty crunch and thickens the lime-forward dressing, while fish sauce, shallots, chilli, and a blizzard of fresh mint and coriander make every mouthful sing.",
     emoji: "🐟",
-    image: "https://images.unsplash.com/photo-1528451635828-f28cd48439a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxCYXNxdWUlMjBUdW5hJTIwJTI2JTIwUGVwcGVyJTIwTWFybWl0YWtvJTIwJUUyJTgwJTk0JTIwUG90YXRvJTIwJTI2JTIwUGlwZXJhZGUlMjBTdGV3JTIwd2l0aCUyMEZyZXNoJTIwVHVuYSUyMCUyNiUyMFNtb2tlZCUyMFBhcHJpa2ElMjBmb29kJTIwZGlzaHxlbnwwfDB8fHwxNzc5MTY3ODE5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image: "https://images.unsplash.com/photo-1757715377412-749d66c9c297?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUaGFpJTIwTGFhYiUyMFBsYSUyMCVFMiU4MCU5NCUyME1pbmNlZCUyMFRpbGFwaWElMjBTYWxhZCUyMHdpdGglMjBUb2FzdGVkJTIwUmljZSUyQyUyMExpbWUlMkMlMjBDaGlsbGklMjAlMjYlMjBGcmVzaCUyMEhlcmJzJTIwZm9vZCUyMGRpc2h8ZW58MHwwfHx8MTc3OTI1NDI4NXww&ixlib=rb-4.1.0&q=80&w=1080",
     ingredientGroups: [
-      { group: "Stew Base", items: [
-        { name: "Olive oil", quantity: 4, unit: "tbsp" },
-        { name: "White onion, finely diced", quantity: 2, unit: "" },
-        { name: "Green peppers, deseeded and finely diced", quantity: 2, unit: "" },
-        { name: "Red peppers, deseeded and finely diced", quantity: 2, unit: "" },
-        { name: "Garlic cloves, finely chopped", quantity: 4, unit: "" },
-        { name: "Smoked sweet paprika (pimentón dulce)", quantity: 2, unit: "tsp" },
-        { name: "Hot smoked paprika", quantity: 0.5, unit: "tsp" },
-        { name: "Dry white wine", quantity: 150, unit: "ml" },
-        { name: "Tinned whole plum tomatoes", quantity: 400, unit: "g" },
-        { name: "Good-quality fish stock", quantity: 600, unit: "ml" }
+      { group: "Salad", items: [
+        { name: "Tilapia fillets, roughly minced by hand or processor", quantity: 500, unit: "g" },
+        { name: "Shallots, very thinly sliced", quantity: 4, unit: "" },
+        { name: "Spring onions, thinly sliced", quantity: 3, unit: "" },
+        { name: "Bird\'s eye chillies, finely sliced (adjust to taste)", quantity: 3, unit: "" },
+        { name: "Fresh mint leaves", quantity: 25, unit: "g" },
+        { name: "Fresh coriander, roughly chopped", quantity: 20, unit: "g" },
+        { name: "Vegetable oil", quantity: 1, unit: "tbsp" }
       ]},
-      { group: "Potatoes & Tuna", items: [
-        { name: "Waxy potatoes (e.g. Desiree or Charlotte), peeled and cut into rough 3cm chunks", quantity: 700, unit: "g" },
-        { name: "Fresh yellowfin or bigeye tuna steak, cut into 3cm cubes", quantity: 600, unit: "g" },
-        { name: "Flaky sea salt and black pepper", quantity: 1, unit: "pinch" }
+      { group: "Toasted Rice Powder", items: [
+        { name: "Uncooked jasmine rice", quantity: 3, unit: "tbsp" },
+        { name: "Dried kaffir lime leaf (optional)", quantity: 1, unit: "" }
       ]},
-      { group: "To Finish", items: [
-        { name: "Flat-leaf parsley, finely chopped", quantity: 4, unit: "tbsp" },
-        { name: "Extra virgin olive oil, to drizzle", quantity: 2, unit: "tbsp" },
-        { name: "Crusty white bread, to serve", quantity: 1, unit: "loaf" }
+      { group: "Dressing", items: [
+        { name: "Fish sauce", quantity: 3, unit: "tbsp" },
+        { name: "Fresh lime juice (about 3 limes)", quantity: 4, unit: "tbsp" },
+        { name: "Dried chilli flakes or ground dried chilli", quantity: 1, unit: "tsp" },
+        { name: "Pinch of sugar", quantity: 0.5, unit: "tsp" }
+      ]},
+      { group: "To Serve", items: [
+        { name: "Steamed jasmine rice or sticky rice", quantity: 1, unit: "portion" },
+        { name: "Raw white cabbage wedges", quantity: 1, unit: "" },
+        { name: "Fresh cucumber, sliced", quantity: 0.5, unit: "" },
+        { name: "Lime wedges", quantity: 1, unit: "to serve" }
       ]}
     ],
     substitutes: [
-      { ingredient: "Fresh tuna", alternatives: ["Swordfish steaks, cut into cubes", "Boneless cod loin, cut into large chunks"] },
-      { ingredient: "Fish stock", alternatives: ["Good-quality vegetable stock with a splash of white wine", "Light chicken stock"] },
-      { ingredient: "Green peppers", alternatives: ["Italian frying peppers (friggitelli)", "One additional red pepper"] }
+      { ingredient: "Tilapia", alternatives: ["Cod loin", "Sea bream fillets", "Firm white fish of choice"] },
+      { ingredient: "Fish sauce", alternatives: ["Light soy sauce plus a tiny pinch of salt (vegetarian option)", "Coconut aminos"] },
+      { ingredient: "Bird\'s eye chillies", alternatives: ["Serrano chilli", "Dried chilli flakes at reduced quantity"] }
     ],
     instructions: [
-      "Heat the olive oil in a wide, heavy-based casserole or deep sauté pan over a medium-low heat. Add the onion and both colours of diced pepper with a pinch of salt. Cook gently, stirring occasionally, for 15–18 minutes until completely softened, sweet and beginning to colour lightly at the edges — don\'t rush this, it is the flavour foundation of the whole dish.",
-      "Add the garlic and both paprikas and stir for 1–2 minutes until the kitchen smells extraordinary. Pour in the white wine, turn the heat up to medium-high and let it bubble and reduce by half, about 3 minutes.",
-      "Crush the tinned tomatoes roughly with your hands as you add them. Pour in the fish stock, stir well and bring to a steady simmer. Taste the broth — it should already be deeply savoury, smoky and slightly sweet. Adjust with salt and black pepper.",
-      "Add the potato chunks and stir to submerge. Cook at a gentle but active simmer, partially covered, for 20–25 minutes. The Basque trick here: as the potatoes become just tender, break one or two pieces apart against the side of the pot with a wooden spoon — the starch will naturally thicken and enrich the broth without any flour.",
-      "Once the potatoes are fully cooked through and the broth has a beautiful silky body, turn the heat to its absolute lowest setting. Season the tuna cubes with salt and pepper, then nestle them into the stew. Put a lid on and leave undisturbed for exactly 4–5 minutes. The residual heat will cook the tuna to perfectly opaque with a still-tender centre — do not be tempted to stir or boil.",
-      "Remove from the heat, scatter over the chopped parsley generously and drizzle with extra virgin olive oil. Ladle into deep bowls and serve immediately with plenty of crusty bread for the broth."
+      "Step 1 — Make the toasted rice powder: place the jasmine rice (and kaffir lime leaf if using) in a dry frying pan over medium heat. Toast, shaking the pan constantly, for 5–7 minutes until the rice turns golden brown and smells nutty. Transfer to a spice grinder or pestle and mortar and grind to a coarse powder. Set aside.",
+      "Step 2 — Mix the dressing: in a small bowl, combine the fish sauce, lime juice, dried chilli flakes, and sugar. Taste — it should be intensely sour, salty, and a little spicy. Adjust with more lime or fish sauce to your preference.",
+      "Step 3 — Cook the fish: heat the vegetable oil in a non-stick pan over medium-high heat. Add the minced tilapia and cook, breaking it apart with a spatula, for 3–4 minutes until just cooked through and opaque. Do not brown — you want it tender. Remove from heat and let cool for 2 minutes.",
+      "Step 4 — Assemble the laab: transfer the warm fish to a large mixing bowl. Add the shallots, spring onions, and sliced fresh chillies. Pour over the dressing and toss gently to combine.",
+      "Step 5 — Add 2–3 tablespoons of the toasted rice powder (reserve the rest for sprinkling) and most of the mint and coriander. Toss again — the rice powder will absorb the dressing and create a beautifully textured, almost creamy coating on the fish.",
+      "Step 6 — Taste once more and adjust with extra lime juice or fish sauce. The flavour should be bold, bright, and thoroughly alive. Pile onto a serving platter, scatter with the remaining herbs and another dusting of rice powder.",
+      "Step 7 — Serve immediately alongside steamed jasmine rice or sticky rice, raw cabbage wedges, and sliced cucumber for scooping and cooling bites between mouthfuls."
     ]
   },
   {
     id: "sug3",
-    title: "Chana Saag — Punjabi Chickpea & Spinach Curry with Toasted Cumin, Ginger & Warm Roti",
-    category: "Vegan",
-    calories: 390,
-    protein: 17,
-    fibre: 12,
-    healthScore: 88,
-    time: "45 mins",
+    title: "Spanish Escalivada with Romesco, Soft-Boiled Eggs & Toasted Sourdough",
+    category: "Vegetarian",
+    calories: 430,
+    protein: 16,
+    fibre: 8,
+    healthScore: 81,
+    time: "55 mins",
     serves: "4",
-    desc: "This Punjab classic builds a proper tarka of whole spices bloomed in oil, a long-cooked onion-tomato masala and freshly grated ginger and garlic, before chickpeas and masses of fresh spinach are stirred through to create a thick, deeply spiced curry that is both earthy and vibrant. It is proper home-cook Indian food at its very best — cheap, nutritious, packed with flavour and entirely plant-based.",
-    emoji: "🌿",
-    image: "https://images.pexels.com/photos/9287035/pexels-photo-9287035.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    desc: "Escalivada is the Catalan art of transforming humble vegetables — aubergine, red peppers, and onion — into something silky, smoky, and magnificent through slow oven-roasting. Draped over charred sourdough and paired with a gutsy homemade romesco sauce and jammy soft-boiled eggs, this simple dish becomes an impressively satisfying vegetarian centrepiece that showcases what Spanish cooking does best: coaxing extraordinary flavour from honest ingredients.",
+    emoji: "🫑",
+    image: "https://images.unsplash.com/photo-1650174756716-27220ec8f3ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTcGFuaXNoJTIwRXNjYWxpdmFkYSUyMHdpdGglMjBSb21lc2NvJTJDJTIwU29mdC1Cb2lsZWQlMjBFZ2dzJTIwJTI2JTIwVG9hc3RlZCUyMFNvdXJkb3VnaCUyMGZvb2QlMjBkaXNofGVufDB8MHx8fDE3NzkyNTQyODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
     ingredientGroups: [
-      { group: "Tarka & Masala Base", items: [
-        { name: "Neutral oil or ghee (use oil to keep vegan)", quantity: 4, unit: "tbsp" },
-        { name: "Cumin seeds", quantity: 1.5, unit: "tsp" },
-        { name: "Black mustard seeds", quantity: 1, unit: "tsp" },
-        { name: "White onions, finely diced", quantity: 2, unit: "" },
-        { name: "Fresh ginger, grated to a paste", quantity: 30, unit: "g" },
-        { name: "Garlic cloves, grated or finely minced", quantity: 5, unit: "" },
-        { name: "Green finger chillies, finely chopped (deseed for less heat)", quantity: 2, unit: "" },
-        { name: "Ground coriander", quantity: 2, unit: "tsp" },
-        { name: "Ground turmeric", quantity: 0.75, unit: "tsp" },
-        { name: "Kashmiri chilli powder (mild, deeply red)", quantity: 1, unit: "tsp" },
-        { name: "Garam masala", quantity: 1, unit: "tsp" },
-        { name: "Tinned chopped tomatoes", quantity: 400, unit: "g" },
-        { name: "Salt", quantity: 1.5, unit: "tsp" }
+      { group: "Escalivada Vegetables", items: [
+        { name: "Large aubergines", quantity: 2, unit: "" },
+        { name: "Red peppers", quantity: 3, unit: "" },
+        { name: "Red onions", quantity: 2, unit: "" },
+        { name: "Olive oil", quantity: 4, unit: "tbsp" },
+        { name: "Sea salt flakes", quantity: 1, unit: "to taste" }
       ]},
-      { group: "Chickpeas & Spinach", items: [
-        { name: "Cooked chickpeas (2 tins, drained and rinsed)", quantity: 800, unit: "g" },
-        { name: "Fresh baby spinach", quantity: 250, unit: "g" },
-        { name: "Water", quantity: 100, unit: "ml" }
+      { group: "Romesco Sauce", items: [
+        { name: "Jarred roasted red peppers, drained", quantity: 120, unit: "g" },
+        { name: "Blanched almonds, toasted", quantity: 60, unit: "g" },
+        { name: "Garlic cloves", quantity: 2, unit: "" },
+        { name: "Cherry tomatoes, halved and roasted at 200°C for 20 mins", quantity: 200, unit: "g" },
+        { name: "Smoked paprika (pimentón)", quantity: 1.5, unit: "tsp" },
+        { name: "Sherry vinegar", quantity: 2, unit: "tbsp" },
+        { name: "Extra virgin olive oil", quantity: 5, unit: "tbsp" },
+        { name: "Pinch of cayenne pepper", quantity: 1, unit: "pinch" }
       ]},
-      { group: "To Finish & Serve", items: [
-        { name: "Lemon juice", quantity: 2, unit: "tbsp" },
-        { name: "Fresh coriander leaves, roughly chopped", quantity: 4, unit: "tbsp" },
-        { name: "Roti or wholemeal flatbreads, to serve", quantity: 8, unit: "" },
-        { name: "Sliced white onion, green chilli and lemon wedges, to garnish", quantity: 1, unit: "serving" }
+      { group: "To Serve", items: [
+        { name: "Large free-range eggs", quantity: 4, unit: "" },
+        { name: "Thick sourdough slices", quantity: 4, unit: "" },
+        { name: "Flat-leaf parsley, roughly chopped", quantity: 3, unit: "tbsp" },
+        { name: "Extra virgin olive oil, to drizzle", quantity: 2, unit: "tbsp" },
+        { name: "Black olives (optional)", quantity: 40, unit: "g" }
       ]}
     ],
     substitutes: [
-      { ingredient: "Fresh spinach", alternatives: ["Frozen spinach, fully defrosted and squeezed dry", "Mustard leaves or Swiss chard, finely shredded"] },
-      { ingredient: "Kashmiri chilli powder", alternatives: ["Half sweet paprika, half regular chilli powder", "Ancho chilli powder"] },
-      { ingredient: "Tinned chickpeas", alternatives: ["Cooked dried chickpeas (soak overnight, boil until tender)", "Tinned butter beans for a creamier result"] }
+      { ingredient: "Aubergines", alternatives: ["Courgettes (reduce roasting time by 10 mins)", "Portobello mushrooms"] },
+      { ingredient: "Blanched almonds", alternatives: ["Hazelnuts (toasted and skins rubbed off)", "Walnuts"] },
+      { ingredient: "Sherry vinegar", alternatives: ["Red wine vinegar", "Apple cider vinegar"] },
+      { ingredient: "Sourdough", alternatives: ["Ciabatta", "Baguette slices"] }
     ],
     instructions: [
-      "Heat the oil in a large, heavy-based casserole or deep frying pan over medium-high heat until shimmering. Add the cumin seeds and mustard seeds and let them sizzle for 30–45 seconds until the mustard seeds begin to pop and the cumin turns a shade darker and smells toasty — this step builds the aromatic backbone of the whole dish.",
-      "Add the diced onions and a good pinch of salt. Cook over medium heat, stirring regularly, for 15–18 minutes until they are soft, deeply golden and beginning to catch and colour at the edges. Don\'t skimp on this — properly caramelised onion is what gives the masala its sweetness and depth.",
-      "Add the garlic, ginger and green chilli and cook for 2 minutes, stirring constantly, until the raw smell of garlic has gone. Add the ground coriander, turmeric, Kashmiri chilli and garam masala and stir vigorously for 1 minute — the spices will toast against the hot pan. If anything threatens to stick, add a splash of water.",
-      "Pour in the tinned tomatoes and add the salt. Stir well and cook over medium heat, breaking the tomatoes down, for 10–12 minutes until the masala is thick, dark and the oil has begun to separate and pool at the edges — this is the sign it is cooked through. The mixture should be paste-like, not watery.",
-      "Add the chickpeas and stir well to coat every one in the masala. Pour in 100ml water, stir, then bring to a simmer. Cook for 8–10 minutes so the chickpeas absorb the flavour and the sauce tightens around them.",
-      "Add the fresh spinach in two or three large handfuls, folding it in each time and letting it wilt before adding more. It will reduce dramatically. Cook for a further 3–4 minutes, stirring gently, until the spinach is fully wilted and incorporated. Taste for salt — it will likely need a good amount.",
-      "Remove from the heat and stir in the lemon juice and most of the fresh coriander. Serve in generous bowls scattered with remaining coriander and the raw onion, chilli and lemon garnish alongside warm roti for scooping."
+      "Step 1 — Preheat your oven to 210°C (190°C fan). Place the whole aubergines, whole red peppers, and the red onions (halved, skins on) onto a large roasting tray. Rub everything generously with olive oil and season with sea salt. Roast for 40–45 minutes, turning once halfway through, until the peppers are charred and collapsed, the aubergines are completely soft, and the onions are tender and caramelised.",
+      "Step 2 — While the vegetables roast, make the romesco: place the toasted almonds and garlic in a food processor and blitz to a rough crumb. Add the jarred roasted peppers, roasted cherry tomatoes, smoked paprika, cayenne, and sherry vinegar. Pulse to combine, then with the motor running, drizzle in the olive oil until you have a thick, slightly rough sauce. Season well with salt. Taste — it should be smoky, rich, and tangy. Set aside at room temperature.",
+      "Step 3 — When the roasted vegetables are ready, transfer the peppers and aubergines to a bowl, cover tightly with cling film or a plate, and leave to steam for 10 minutes — this makes peeling them effortless. Peel away and discard the charred skins from all the vegetables. Tear the aubergine flesh into long strips. Slice the peppers into wide ribbons, reserving any sweet juices. Separate the onion petals. Toss everything together gently with a little olive oil and salt.",
+      "Step 4 — Soft-boil the eggs: lower them into gently boiling water and cook for 6 minutes 30 seconds exactly. Transfer to a bowl of cold water for 2 minutes, then peel carefully — the whites should be set and the yolks jammy and golden.",
+      "Step 5 — Toast or griddle the sourdough slices until golden and slightly charred at the edges. Rub each slice once with a cut garlic clove if you like extra depth.",
+      "Step 6 — To plate: spread a generous spoonful of romesco onto each slice of sourdough. Pile the warm escalivada vegetables on top, halve the soft-boiled eggs and nestle them alongside. Scatter with flat-leaf parsley, add a few black olives if using, and finish with a drizzle of your best extra virgin olive oil. Serve with any remaining romesco on the side."
     ]
   }
 ];
