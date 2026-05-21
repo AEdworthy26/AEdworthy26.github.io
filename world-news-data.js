@@ -1,61 +1,61 @@
 // world-news-data.js
-// Auto-updated 2026-05-20 — do not edit manually
+// Auto-updated 2026-05-21 — do not edit manually
 
 var WORLD_NEWS = {
-  date: "2026-05-20",
+  date: "2026-05-21",
   main: {
-    title: "Ebola Outbreak in Central Africa Could Last Months, W.H.O. Warns as Cases Surpass 500",
+    title: "Ebola Vaccine Could Take Nine Months as Death Toll Rises Further, WHO Warns",
     category: "Global Health",
     content: [
-      "A rapidly escalating Ebola outbreak in the Democratic Republic of Congo and Uganda has alarmed global health officials, with more than 130 suspected deaths and upwards of 540 confirmed or suspected cases reported as of this week. The World Health Organization\'s chief has described himself as 'deeply concerned' by the pace of the outbreak, warning that it could persist for months. Health authorities on the ground acknowledge they were slow to detect the virus, and that response teams are still playing catch-up with its spread through eastern DRC, a region already battered by years of conflict and instability.",
-      "The strain at the centre of this outbreak is the Bundibugyo variant of Ebola, a less commonly seen form of the virus that was first identified in Uganda in 2007. Unlike the more frequently studied Zaire strain, fewer approved vaccines and treatments exist for the Bundibugyo variant, complicating efforts to contain it. WHO officials are now actively considering whether experimental vaccines and medicines still in clinical development could be deployed under emergency authorisation to slow the outbreak\'s progress.",
-      "Experts warn that the official case figures almost certainly undercount the true scale of infections, as limited surveillance infrastructure, remote geography, and deep community mistrust of health authorities make comprehensive testing difficult. Fear has gripped affected communities, with residents and local leaders describing the situation as one in which 'Ebola has tortured us.' A WHO doctor warned publicly that the outbreak may be spreading faster than initial assessments suggested, raising fears of wider regional transmission if cross-border movement goes unmonitored.",
-      "The conditions fuelling the outbreak are grimly familiar to those who have studied previous Ebola emergencies in central Africa. Ongoing armed conflict in eastern DRC has repeatedly disrupted vaccination campaigns, forced displacement of communities, and made it dangerous for health workers to operate in affected areas. Chronic mistrust of government institutions and foreign health organisations — rooted in past experiences of mismanaged responses — has further slowed the uptake of testing and treatment, allowing the virus to circulate undetected for longer than would otherwise be the case.",
-      "The international response has already attracted political friction. U.S. Secretary of State Marco Rubio publicly criticised the WHO\'s handling of the situation, saying the organisation had been 'a little late' in identifying the outbreak — comments that drew sharp attention given that the United States has continued to implement sweeping cuts to its global public health funding and contributions to multilateral health bodies. With the outbreak now crossing an international border into Uganda, pressure is mounting on donor nations and health agencies to dramatically scale up resources before the crisis deepens further.",
+      "The World Health Organization has issued a stark warning over the escalating Ebola outbreak in the Democratic Republic of the Congo, revealing that a vaccine could be nine months away even as the death toll continues to climb. The WHO\'s latest update records at least 139 suspected deaths and more than 600 cases, figures that have been rising at an alarming pace. Global health officials have described the scale and speed of the outbreak as deeply concerning, with the WHO\'s chief saying he was 'heartbroken' by the unfolding emergency.",
+      "The current outbreak is caused by the Bundibugyo strain of Ebola, a variant that has historically proven more difficult to contain than some other forms of the virus. Health authorities are now actively considering whether experimental vaccines and medicines still in development could be deployed in an emergency capacity to slow transmission. The situation is complicated by the fact that proven, licensed vaccines specifically targeting this strain are not yet available at scale, leaving responders with limited tools.",
+      "The human cost of the crisis has extended beyond the DRC\'s borders, underscoring the international dimension of the outbreak. An American doctor who contracted Ebola while working in the DRC has been evacuated to Germany for specialist treatment, along with his wife and four children, who are being monitored for symptoms. The case has drawn global attention to the dangers faced by medical workers on the front line and to the logistical challenges of containing a highly infectious disease in a conflict-affected region.",
+      "Conflict, deep-seated community mistrust of health authorities, and delays in detecting the initial outbreak have all been identified as factors complicating the response. Lessons from previous Ebola emergencies in the DRC point to the critical importance of community engagement and trust-building alongside medical intervention. Authorities note that the smell of chlorine — used to decontaminate surfaces and hands — has become a constant presence around outbreak centres, a reminder of the painstaking, hands-on work required to prevent further spread.",
+      "The outbreak has also sparked international debate over the adequacy of the global health response and the role of major powers in supporting it. US Secretary of State Marco Rubio criticised the WHO, saying the organisation was 'a little late' in identifying the outbreak, even as the United States continues to implement sweeping cuts to public health funding. The controversy has highlighted what some African health officials and commentators describe as a double standard in how the world responds to health crises on the continent, renewing calls for more equitable and sustained investment in global health infrastructure.",
     ],
-    image: "https://static01.nyt.com/images/2026/05/19/multimedia/19xp-ebola-cases-jkcv/19xp-ebola-cases-jkcv-mediumSquareAt3X-v2.jpg",
-    source: "The New York Times",
-    sourceUrl: "https://www.nytimes.com/2026/05/19/world/africa/ebola-outbreak-deaths-congo-who.html"
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/959a/live/e216d3b0-5436-11f1-97ae-1b4b9bb4c9eb.jpg",
+    source: "BBC News",
+    sourceUrl: "https://www.bbc.com/news/articles/cwy2g197dp8o"
   },
   secondary: [
     {
       id: "s1",
-      title: "Xi and Putin Meet in Beijing Days After Trump\'s China Visit",
-      summary: "Chinese President Xi Jinping and Russian President Vladimir Putin have held talks in Beijing in a high-profile summit coming just days after U.S. President Donald Trump made an official visit to China.",
+      title: "Putin Visits Beijing but Leaves Without Landmark Pipeline Deal",
+      summary: "Vladimir Putin received a warm welcome from Xi Jinping in China, with the two leaders projecting unity, but Russia failed to secure a long-sought new gas pipeline agreement.",
       body: [
-        "The meeting between Xi Jinping and Vladimir Putin in Beijing underscores the continued closeness of the China-Russia strategic partnership at a moment of intense global diplomatic activity. The timing is particularly striking, coming only days after President Trump concluded his own official visit to the Chinese capital, signalling that Beijing is actively managing relationships with both Washington and Moscow simultaneously.",
-        "The back-to-back summits place Beijing at the centre of a complex web of great-power diplomacy, as the world\'s major nations jostle for influence amid ongoing conflicts and shifting alliances. Analysts will be watching closely for any signals from the Xi-Putin talks about the future of Russian energy exports, arms cooperation, and the two nations' coordinated stance on Western-led international institutions."
+        "Russian President Vladimir Putin travelled to Beijing for a high-profile state visit, where he and Chinese President Xi Jinping presented themselves as a stabilising force on the world stage amid ongoing turbulence caused by shifting US foreign policy. The two leaders exchanged warm diplomatic signals and reaffirmed their close partnership, but substantive progress on a major new gas pipeline — a priority for Moscow — did not materialise.",
+        "The BBC\'s Russia Editor noted that while Russia and China were keen to appear shoulder-to-shoulder publicly, the absence of a pipeline deal revealed clear limits to the relationship. The visit came just days after Xi had hosted Donald Trump, illustrating China\'s careful balancing act between its partnership with Russia and its broader global economic interests."
       ],
-      image: "https://images.unsplash.com/photo-1719017671454-400cf17267c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxYaSUyMGFuZCUyMFB1dGluJTIwTWVldCUyMGluJTIwQmVpamluZyUyMERheXMlMjBBZnRlciUyMFRydW1wJTVDfGVufDB8MHx8fDE3NzkyNTMyODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "Al Jazeera",
-      url: "https://www.aljazeera.com/news/2026/5/20/chinas-xi-jinping-and-russian-president-vladimir-putin-meet-in-beijing?traffic_source=rss",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/f31d/live/403b1fd0-5466-11f1-90bc-1d92dab59cbe.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.com/news/articles/c8r8me3nlllo?at_medium=RSS&at_campaign=rss",
       category: "Geopolitics"
     },
     {
       id: "s2",
-      title: "Trump Says He Postponed 'Very Major Attack' on Iran, Leaving Middle East on Edge",
-      summary: "President Trump has threatened 'another big hit' on Iran while claiming he personally postponed a major military strike, giving Tehran days to return to the negotiating table as regional tensions remain acute.",
+      title: "US Indicts Raúl Castro Over 1996 Downing of Two Planes That Killed Four",
+      summary: "American prosecutors have charged 94-year-old former Cuban president Raúl Castro with murder and other offences over the Cuban military\'s shooting down of two NGO aircraft nearly three decades ago.",
       body: [
-        "Donald Trump\'s declaration that he held back a significant planned military strike against Iran has sent a fresh wave of uncertainty through the Middle East, with diplomats and regional governments scrambling to assess the credibility and intent behind the statement. Pakistan, which has been playing an active mediation role, is continuing its efforts to broker a return to negotiations between Washington and Tehran.",
-        "The remarks come amid an already volatile regional landscape following the war between Israel and Iran, during which Israeli authorities have also been accused of accelerating demolition orders against Palestinians in East Jerusalem. The combination of unresolved military threats and ongoing human rights concerns has left the broader Middle East region in a state of prolonged and dangerous uncertainty."
+        "A US grand jury in Miami has returned an indictment against Raúl Castro, the former Cuban president and brother of Fidel Castro, over the 1996 incident in which Cuban fighter jets shot down two small planes operated by the humanitarian group Brothers to the Rescue, killing four people on board. The charges include conspiracy to kill US nationals and destruction of aircraft, and represent a dramatic legal escalation in the long-running tension between Washington and Havana.",
+        "Cuba\'s current president swiftly condemned the indictment as a 'political manoeuvre', and Havana\'s ambassador to the United Nations alleged that the Trump administration was manufacturing pretexts rather than negotiating in good faith. Cubans both in Havana and in Miami have reacted with strong and divided emotions to the charges against the now 94-year-old former leader."
       ],
-      image: "https://static01.nyt.com/images/2026/05/19/multimedia/19int-iran-trump-02-lqfw/19int-iran-trump-02-lqfw-mediumSquareAt3X.jpg",
-      source: "The New York Times",
-      url: "https://www.nytimes.com/2026/05/19/world/middleeast/iran-trump-tension.html",
-      category: "International Security"
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/303e/live/c129b180-54cd-11f1-89a3-d1f559421220.jpg",
+      source: "NPR",
+      url: "https://www.npr.org/2026/05/20/g-s1-122383/us-cuba-raul-castro-indictment",
+      category: "International"
     },
     {
       id: "s3",
-      title: "Ukraine\'s Strikes on Russian Oil Sites Trigger Mounting Environmental Disaster",
-      summary: "Ukraine\'s campaign of drone and missile strikes targeting Russian oil infrastructure has caused significant ecological damage, with environmental groups warning of a growing disaster unfolding around key Russian refining sites.",
+      title: "Far-Right Israeli Minister Condemned for Taunting Detained Gaza Flotilla Activists",
+      summary: "France, Italy and other countries have condemned Israeli far-right minister Itamar Ben-Gvir after a video emerged showing him taunting dozens of handcuffed international activists detained at an Israeli port.",
       body: [
-        "More than four years into Russia\'s invasion, Ukraine has increasingly turned to strikes on Russian oil infrastructure as a means of cutting into the Kremlin\'s vital energy revenues, with the port and refinery complex at Tuapse among the sites affected. While the strategy has strategic logic — oil exports remain a cornerstone of Moscow\'s war financing — the attacks have also triggered serious environmental consequences as storage tanks, pipelines, and processing facilities burn or leak.",
-        "The situation represents a significant shift in the character of the conflict\'s environmental toll, which has until now been associated primarily with Russian actions on Ukrainian territory. Observers note the profound irony that Kyiv, widely recognised as a victim of ecological destruction caused by Russian military operations, now finds itself causing cross-border environmental harm as the war enters a new and grimly attritional phase."
+        "Israeli national security minister Itamar Ben-Gvir has drawn sharp international condemnation after a video circulated online showing him taunting activists from a Gaza-bound flotilla who had been detained and handcuffed at an Israeli port. Several European governments, including France and Italy, publicly criticised his conduct as deeply inappropriate and incompatible with the treatment of detainees under international norms.",
+        "The incident has added further diplomatic strain to Israel\'s already fraught international relationships at a time of intense global scrutiny over its military operations in Gaza. The flotilla had been attempting to break Israel\'s blockade to deliver humanitarian aid, and the detention and subsequent footage of Ben-Gvir\'s behaviour has intensified calls from European governments for accountability."
       ],
-      image: "https://images.unsplash.com/photo-1665758886246-e991200f237a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxVa3JhaW5lJTVDfGVufDB8MHx8fDE3NzkyNTMyODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "The New York Times",
-      url: "https://www.nytimes.com/2026/05/19/world/europe/russia-ukraine-oil-attacks-war-tuapse.html",
-      category: "Conflict"
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/c3ee/live/74d107a0-5457-11f1-8b8c-6d33e1d5abb6.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.com/news/articles/clyp32weyn8o?at_medium=RSS&at_campaign=rss",
+      category: "Middle East"
     }
   ]
 };
