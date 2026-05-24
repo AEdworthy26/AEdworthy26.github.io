@@ -1,8 +1,8 @@
 // quote-data.js
-// Auto-updated 2026-05-23 — do not edit manually
+// Auto-updated 2026-05-24 — do not edit manually
 
 var QUOTE_DATA = {
-  date: "2026-05-23",
-  text: "What lies behind us and what lies before us are tiny matters compared to what lies within us.",
-  author: "Ralph Waldo Emerson"
+  date: "2026-05-24",
+  text: "The most effective way to destroy people is to deny and obliterate their own understanding of their history.",
+  author: "George Orwell"
 };
