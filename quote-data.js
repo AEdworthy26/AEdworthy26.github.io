@@ -1,8 +1,8 @@
 // quote-data.js
-// Auto-updated 2026-05-28 — do not edit manually
+// Auto-updated 2026-05-29 — do not edit manually
 
 var QUOTE_DATA = {
-  date: "2026-05-28",
-  text: "The most important thing in communication is hearing what isn\'t said.",
-  author: "Peter Drucker"
+  date: "2026-05-29",
+  text: "In the depth of winter, I finally learned that within me there lay an invincible summer.",
+  author: "Albert Camus"
 };
