@@ -1,8 +1,8 @@
 // quote-data.js
-// Auto-updated 2026-05-30 — do not edit manually
+// Auto-updated 2026-05-31 — do not edit manually
 
 var QUOTE_DATA = {
-  date: "2026-05-30",
-  text: "I don\'t know where I\'m going from here, but I promise it won\'t be boring.",
-  author: "David Bowie"
+  date: "2026-05-31",
+  text: "If you only read the books that everyone else is reading, you can only think what everyone else is thinking.",
+  author: "Haruki Murakami"
 };
