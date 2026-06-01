@@ -1,8 +1,8 @@
 // quote-data.js
-// Auto-updated 2026-05-31 — do not edit manually
+// Auto-updated 2026-06-01 — do not edit manually
 
 var QUOTE_DATA = {
-  date: "2026-05-31",
-  text: "If you only read the books that everyone else is reading, you can only think what everyone else is thinking.",
-  author: "Haruki Murakami"
+  date: "2026-06-01",
+  text: "Be the change you wish to see in the world.",
+  author: "Mahatma Gandhi"
 };
