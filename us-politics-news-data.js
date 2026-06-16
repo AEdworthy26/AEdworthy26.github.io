@@ -1,60 +1,60 @@
 // us-politics-news-data.js
-// Auto-updated 2026-05-21 — do not edit manually
+// Auto-updated 2026-06-16 — do not edit manually
 
 var US_POLITICS_NEWS = {
-  date: "2026-05-21",
+  date: "2026-06-16",
   main: {
-    title: "Trump Exerts Iron Grip on Republican Party with Massie Defeated",
+    title: "Potential End of War Tests Trump\'s Promise of Quick Economic Rebound",
     category: "Politics",
     content: [
-      "President Trump has once again demonstrated his commanding hold over the Republican Party, with a key primary victory over Kentucky Representative Thomas Massie — one of the GOP\'s most prominent internal dissenters. The defeat of Massie, a libertarian-leaning congressman who had repeatedly bucked the president on key votes, signals that Trump\'s ability to mobilize his base against fellow Republicans remains formidable heading into the 2026 midterm cycle. The result reinforces the extent to which the modern Republican Party has been reshaped in Trump\'s image, leaving little room for ideological independence.",
-      "Massie had long been considered an iconoclast within the House GOP, frequently breaking ranks on issues ranging from foreign policy to fiscal spending. His willingness to vote against the party line made him a target for Trump, who viewed such defiance as an unacceptable challenge to his authority within the caucus. The primary campaign against Massie drew significant outside resources and attention, transforming a Kentucky congressional race into a national referendum on loyalty to the president.",
-      "The outcome sends a clear message to any sitting Republican lawmakers who might be contemplating resistance to the White House\'s legislative agenda. In a party where primary challenges backed by Trump have historically carried enormous weight, the Massie result is likely to have a chilling effect on dissent within Congress. Republican members watching the race will now face a stark calculation: cross the president at the risk of their political careers.",
-      "However, analysts are already pointing to the long-term risks this dynamic poses for Republicans in a general election context. Trump\'s grip on the base is strongest in deeply conservative districts, but the broader American electorate has shown signs of discomfort with the direction of the party. The purging of moderate or independent voices could leave the GOP ill-equipped to compete in the swing districts that will ultimately determine control of the House after November.",
-      "The Massie defeat thus captures what commentators are calling the central Trump paradox of this political moment: the president is never stronger than when wielding power within his own party, yet that very strength may be contributing to vulnerabilities in the wider electorate. As the midterms approach, Republican strategists will need to grapple with how to balance the demands of a Trump-loyal base against the need to appeal to voters who are less enthusiastic about the president\'s style of politics. For now, the message from Kentucky is unambiguous — in today\'s Republican Party, loyalty to Trump is the price of political survival.",
+      "The announcement of an initial deal between the United States and Iran to end the war and reopen the Strait of Hormuz has been greeted with cautious relief in Washington, but the political fallout for the Trump White House is far from over. Gas prices and a wide range of consumer goods are expected to remain elevated for months, even as the military conflict winds down. That prolonged economic pain poses a serious political challenge for an administration that had promised swift and decisive results from its confrontational posture in the Middle East.",
+      "The deal, described as a major breakthrough, nonetheless left critical issues unresolved, setting them aside for further negotiations at an unspecified date. Trump administration officials have been eager to frame the agreement as a victory, but economists and political analysts warn that the disruption to global oil markets caused by the conflict will not simply evaporate overnight. Supply chains that were severed during the fighting will take time to reconstitute, and American consumers are likely to feel the pinch well into the fall.",
+      "The timing could hardly be more fraught for the Republican Party, with midterm elections approaching and the White House acutely aware of how economic conditions shape voter sentiment. Historically, presidents who preside over periods of elevated inflation and high energy costs face significant headwinds at the polls. The administration\'s ability to credibly claim credit for the peace deal while deflecting blame for the ongoing economic squeeze will be a central political test in the months ahead.",
+      "President Trump moved quickly to dispute some of the more damaging details emerging from peace negotiations, taking to social media to call reports of a $300 billion U.S. reconstruction fund for Iran 'Fake News.' The White House is clearly sensitive to the perception that American taxpayers might be footing the bill for Iran\'s rebuilding, a narrative that opposition Democrats and even some Republicans could weaponize ahead of November. Managing the domestic political messaging around the deal is shaping up to be as complex as the diplomacy itself.",
+      "For the Trump administration, the Iran deal represents both a potential triumph and a liability. Successfully ending a war that set the Middle East aflame and shook the global economy could be presented as a signature foreign policy achievement. Yet the economic wreckage left in the war\'s wake — stubbornly high prices at the pump and in grocery stores — means that voters may evaluate the president not on the peace he secured, but on the hardship they continue to endure long after the guns have fallen silent.",
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/8c32/live/f49a1970-542c-11f1-89a3-d1f559421220.jpg",
-    source: "BBC News",
-    sourceUrl: "https://www.bbc.com/news/articles/cdjpng88d2vo?at_medium=RSS&at_campaign=rss"
+    image: "https://static01.nyt.com/images/2026/06/15/multimedia/15dc-trump-econ-trump2-lvqg/15dc-trump-econ-trump2-lvqg-mediumSquareAt3X.jpg",
+    source: "The New York Times",
+    sourceUrl: "https://www.nytimes.com/2026/06/15/us/politics/iran-war-deal-trump-economic-rebound.html"
   },
   secondary: [
     {
       id: "us1",
-      title: "DOJ Moves to Spare Trump and His Companies from Past Tax Problems",
-      summary: "The Justice Department is pursuing a settlement that would free President Trump and his businesses from past IRS issues, drawing sharp criticism from watchdogs who say it amounts to an unprecedented presidential self-dealing.",
+      title: "Kennedy Orders Woman to Stay in Hantavirus Quarantine, Despite C.D.C. Recommendation",
+      summary: "Health Secretary Robert F. Kennedy Jr. has ordered a woman to remain in hantavirus quarantine against the recommendation of the Centers for Disease Control and Prevention, while others from the same facility have been allowed to return home.",
       body: [
-        "The Department of Justice is working to finalize a settlement related to the leak of President Trump\'s tax returns that would, according to critics, effectively shield him and his companies from any prior IRS audits or tax penalties. The move has drawn immediate condemnation from ethics advocates and Democratic lawmakers, who argue that the president is using the machinery of the federal government to protect his own personal financial interests.",
-        "No previous president has been accused of leveraging DOJ resources so directly for personal financial benefit, making this case a flashpoint in ongoing debates about conflicts of interest in the Trump administration. Critics warn that the settlement could set a dangerous precedent, insulating a sitting president from the kind of tax scrutiny that applies to ordinary citizens and businesses."
+        "Health Secretary Robert F. Kennedy Jr. has intervened directly in a hantavirus quarantine case, ordering one woman to remain isolated even as the CDC recommended a different course of action. Others who were held at the same facility have been permitted to return to their homes in recent weeks for monitoring by local health officials, making the continued quarantine of this individual a notable exception.",
+        "The decision underscores ongoing tensions between Kennedy\'s leadership at the Department of Health and Human Services and the scientific and public health agencies nominally under his purview. Critics argue that overriding CDC guidance sets a dangerous precedent and further erodes public trust in federal health institutions at a time when that trust is already fragile."
       ],
-      image: "https://static01.nyt.com/images/2026/05/20/multimedia/20dc-corruption-01-hmlc/20dc-corruption-01-hmlc-mediumSquareAt3X.jpg",
-      source: "NPR",
-      url: "https://www.npr.org/2026/05/20/nx-s1-5828302/the-doj-is-trying-to-let-trump-and-his-companies-off-the-hook-for-past-tax-problems",
+      image: "https://images.pexels.com/photos/3985287/pexels-photo-3985287.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      source: "The New York Times",
+      url: "https://www.nytimes.com/2026/06/15/health/hantavirus-quarantine-kennedy.html",
       category: "Politics"
     },
     {
       id: "us2",
-      title: "Supreme Court Voting Rights Ruling Threatens Minority Voter Power at Local Level",
-      summary: "A recent Supreme Court ruling on the Voting Rights Act could significantly diminish the political power of racial-minority voters not just in federal elections, but across at least 17 state and local governments, according to a new NPR analysis.",
+      title: "Inside the Trump Administration\'s Rapid Rollback of Gun Regulations",
+      summary: "The Trump administration has delivered a string of victories for gun rights groups by rapidly rolling back federal gun regulations, drawing sharp criticism from advocates of stricter gun laws who warn the moves could endanger public safety.",
       body: [
-        "The Supreme Court\'s latest Voting Rights Act ruling is poised to have far-reaching consequences beyond congressional districts, with NPR finding that the decision threatens minority voter representation in at least 17 state and local government jurisdictions. The ruling narrows the legal tools available to challenge electoral maps and structures that critics argue dilute the votes of racial minorities.",
-        "Civil rights organizations are already warning that the decision could unravel decades of progress in ensuring equitable representation at every level of government, from city councils to school boards. The ruling is expected to trigger a wave of legal challenges and redistricting fights as localities reassess what compliance with the Voting Rights Act now requires."
+        "Gun rights organizations have celebrated a series of wins as the Trump administration moves at an unprecedented pace to dismantle federal firearms regulations, fulfilling longstanding priorities of the nation\'s most ardent Second Amendment advocates. Backers of tighter gun controls, however, say the rapid rollback could have serious public safety consequences that will be felt for years to come.",
+        "The regulatory push comes alongside a separate decision by the Supreme Court, which on Monday declined to hear a gun industry challenge to a New York law that allows lawsuits against manufacturers and dealers for harms resulting from the criminal misuse of their products — a rare check on the broader trend favoring gun rights at the federal level."
       ],
-      image: "https://images.pexels.com/photos/7102910/pexels-photo-7102910.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      source: "NPR",
-      url: "https://www.npr.org/2026/05/20/nx-s1-5812837-e1/why-the-supreme-courts-voting-rights-ruling-could-play-a-big-role-at-the-local-level",
+      image: "https://images.unsplash.com/photo-1612278920639-cfbae3835fee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxJbnNpZGUlMjB0aGUlMjBUcnVtcCUyMEFkbWluaXN0cmF0aW9uJTVDfGVufDB8MHx8fDE3ODE1ODYxODN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "The Washington Post",
+      url: "https://www.washingtonpost.com/national-security/2026/06/15/inside-trump-administrations-rapid-rollback-gun-regulations/",
       category: "Politics"
     },
     {
       id: "us3",
-      title: "Colorado Governor Censured by Own Party for Commuting Election Denier\'s Sentence",
-      summary: "The Colorado State Democratic Party formally censured Governor Jared Polis after he commuted the prison sentence of Tina Peters, a convicted election denier, sparking a significant intra-party backlash.",
+      title: "Lawmakers Caution Burgum and NPS They Have 'No Power to Build' Trump\'s Triumphal Arch",
+      summary: "A bipartisan group of six lawmakers has sent a formal letter warning Interior Secretary Doug Burgum and National Park Service officials that they lack congressional authority to construct a triumphal arch proposed by President Trump.",
       body: [
-        "In a rare and pointed rebuke, the Colorado State Democratic Party voted to censure Governor Jared Polis following his decision to release Tina Peters — who was convicted in connection with a breach of election equipment — from prison. The censure reflects deep frustration among rank-and-file Democratic voters who view the commutation as a betrayal of the party\'s commitment to defending election integrity.",
-        "The episode highlights growing tensions within the Democratic Party over how elected officials should handle issues tied to the 2020 election denial movement, particularly as the 2026 midterms draw closer. For Polis, a governor who has often positioned himself as a pragmatic moderate, the censure represents a significant political setback within his own state party."
+        "Six members of Congress wrote to Interior Secretary Doug Burgum and Acting National Park Service Director Jessica Bowron on Monday, asserting in strong terms that the administration has 'no power to build' a triumphal arch without explicit approval from the legislative branch. The lawmakers said they oppose the project in the strongest terms and object to any attempt to move forward without congressional authorization.",
+        "The dispute highlights the broader tension between the Trump administration\'s ambitious plans to reshape the National Mall and its symbolic landscape, and the constitutional prerogatives of Congress over federal lands and spending. The letter is likely to set the stage for a legal and legislative standoff if the White House continues to pursue the arch project."
       ],
-      image: "https://static01.nyt.com/images/2026/05/20/multimedia/20nat-polis-1-bthl/20nat-polis-1-bthl-mediumSquareAt3X.jpg",
-      source: "The New York Times",
-      url: "https://www.nytimes.com/2026/05/20/us/politics/colorado-governor-polis-tina-peters.html",
+      image: "https://thehill.com/wp-content/uploads/sites/2/2026/01/kingangus_012926gn02_w.jpg?w=900",
+      source: "The Hill",
+      url: "https://thehill.com/homenews/administration/5925597-lawmakers-oppose-triumphal-arch/",
       category: "Politics"
     }
   ]

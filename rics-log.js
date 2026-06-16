@@ -3,6 +3,45 @@
 
 var RICS_LOG = [
   {
+    "date": "2026-06-16",
+    "topic": "Hope Value, EUV+ and Special Purchaser Premiums: Valuation Methodology in Residential Land Transactions",
+    "module": "Valuation",
+    "level": 2,
+    "apc_competency": "Valuation (Level 2)",
+    "focus": "This lesson examines how hope value, existing use value plus (EUV+) and special purchaser premiums are applied in the valuation of development land, with particular focus on how registered providers and development managers use these concepts when structuring acquisition bids, appraisals and negotiating land transactions. Understanding the distinction between these bases is critical for APC candidates operating in land-led, mixed-tenure development contexts.",
+    "image": "https://images.pexels.com/photos/31204612/pexels-photo-31204612.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "content": [],
+    "summary": [
+      "EUV is the floor of land value (current use); FDV is the ceiling (fully consented development value); hope value sits between them, reflecting planning probability and market sentiment.",
+      "EUV+ (EUV plus a reasonable landowner incentive premium) is the policy-compliant benchmark for affordable housing viability assessments under RICS guidance and GLA/Homes England frameworks \u2014 not open market value.",
+      "RPs can be special purchasers: Homes England grant boosts the supportable land value above what a private developer can pay, but RSH Value for Money scrutiny means this advantage must be documented and proportionate.",
+      "The Levelling-Up and Regeneration Act 2023 amended the Land Compensation Act 1961 to allow hope value to be excluded from CPO compensation where a Secretary of State Direction is granted \u2014 a material tool for LA/RP JV land assembly on affordable housing schemes.",
+      "Investment committee appraisals should clearly distinguish EUV, hope-value-adjusted bid, FDV and the grant-supported RP-specific value, with comparable evidence used to sense-check the residual \u2014 not to set it."
+    ],
+    "qa": [
+      {
+        "q": "What is the difference between market value, EUV+ and hope value, and why does this distinction matter in an affordable housing viability assessment?",
+        "a": "Market value (RICS Red Book definition) is the estimated price in an arm\\'s length transaction between willing parties. EUV+ is the existing use value plus a reasonable premium to incentivise the landowner to sell \u2014 it is the policy-compliant benchmark land value in affordable housing viability under RICS guidance (Financial Viability in Planning, 2019) and GLA/Homes England frameworks. Hope value is the additional premium above EUV reflecting the probability of achieving a more valuable planning consent \u2014 it is what most private vendors price in when selling. The distinction matters because using market value (which incorporates hope value) as the benchmark in viability assessments tends to erode the scheme\\'s ability to deliver affordable housing, as the land price expectation is set too high. EUV+ prevents the planning gain created by public policy being fully captured by the vendor."
+      },
+      {
+        "q": "How would you justify paying above the market comparable evidence for a residential development site at investment committee, where Latimer is using Homes England grant?",
+        "a": "I would present two appraisals: a 'non-grant' residual reflecting what a private developer without grant could support (effectively the open market land value), and a 'grant-supported' residual showing the additional land value Latimer can support by virtue of AHP grant income on the affordable units. The recommended bid sits at or below the grant-supported residual. I would document that the premium above open market reflects Latimer\\'s specific position as a registered provider with grant access \u2014 a legitimate special purchaser premium \u2014 and cross-reference RSH Value for Money obligations to confirm the bid is proportionate. Comparable evidence would be presented to sense-check the non-grant residual, with adjustments for planning status, tenure mix, density and location."
+      },
+      {
+        "q": "What is the significance of the Levelling-Up and Regeneration Act 2023's amendments to the Land Compensation Act 1961 for RP-led affordable housing schemes?",
+        "a": "The LURA 2023 inserted new provisions into the Land Compensation Act 1961 (section 17A and related amendments) allowing the Secretary of State to issue a Direction that hope value should be disregarded in CPO compensation assessments where this would facilitate affordable housing or regeneration and is in the public interest. For an RP like Latimer working in JV with a local authority that holds CPO powers, this means the authority could potentially acquire land at closer to EUV rather than hope value \u2014 materially reducing the land cost and improving scheme viability for affordable housing delivery. However, the Direction must be actively applied for, is not automatic, and landowners retain appeal rights. Case law on the new regime is still developing and its practical utility remains untested at scale as of mid-2026."
+      },
+      {
+        "q": "A vendor is asking \u00a35m for a site where your residual appraisal produces a maximum land value of \u00a34.2m at 20% profit on GDV, before applying any planning risk discount. How would you approach this gap in negotiation?",
+        "a": "First, I would identify what assumptions are driving the gap \u2014 typically, the vendor has applied a lower profit benchmark, more optimistic sales values or lower cost assumptions than our appraisal. I would present our appraisal transparently to the vendor or their agent, highlighting the planning risk (probability and timing of consent) and the cost risk (abnormals, remediation, infrastructure). I would then assess whether any grant support could bridge the gap without breaching VfM requirements. If the vendor\\'s expectation is anchored to hope value that our residual cannot support, I would consider whether an option agreement or conditional contract with a deferred payment or overage mechanism could align interests \u2014 paying closer to \u00a34.2m on exchange but providing the vendor with upside if planning is secured at a higher density or value than our base case. If the gap remains unbridgeable, I would recommend not proceeding."
+      },
+      {
+        "q": "How does Alternative Use Value differ from EUV, and in what circumstances would you use AUV rather than EUV+ as the benchmark land value in a viability assessment?",
+        "a": "EUV reflects the value of the site in its current lawful use \u2014 for example, a warehouse as a warehouse. EUV+ adds a reasonable landowner incentive premium to this. AUV reflects the value of the site in its best realistic alternative use other than the proposed development \u2014 for example, a site with extant consent for a retail unit would have an AUV reflecting retail development value. AUV is used as the benchmark land value where it exceeds EUV+, because a rational vendor would not sell for less than what they could otherwise achieve with the extant or realistic alternative consent. In a viability assessment, using EUV+ where AUV is materially higher would be unrealistic and would likely not withstand scrutiny at a planning inquiry \u2014 the assessor would argue the benchmark must at least equal AUV."
+      }
+    ]
+  },
+  {
     "date": "2026-05-20",
     "topic": "Joint Venture Structuring with Local Authorities: Equity Splits, Governance and Risk Allocation in Residential-Led Schemes",
     "module": "Land, Development and Planning",

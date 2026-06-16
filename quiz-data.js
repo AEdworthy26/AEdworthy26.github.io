@@ -1,10 +1,10 @@
 // quiz-data.js
-// Auto-updated 2026-05-20 — do not edit manually
+// Auto-updated 2026-06-16 — do not edit manually
 
 window.QUIZ_DATA = {
-  date: '2026-05-20',
+  date: '2026-06-16',
   category: 'Sport',
-  question: 'At the 1996 Atlanta Olympics, which British rower won gold in the coxless pairs alongside his partner Matthew Pinsent, completing an unbeaten run of 40 consecutive international races?',
-  answer: 'Steve Redgrave (partnered with Matthew Pinsent).',
-  funFact: 'Redgrave famously declared after winning in Atlanta that anyone who saw him near a boat again had permission to shoot him — yet he went on to win a fifth consecutive Olympic gold medal in Sydney in 2000. His achievement of five golds across five successive Olympics remains one of the greatest feats in British sporting history. The 40-race unbeaten sequence with Pinsent between 1990 and 1996 underlined just how dominant the pair were throughout that era.'
+  question: 'At the 1970 FIFA World Cup in Mexico, which Brazilian player scored what is often voted the greatest goal in World Cup history, finishing a sweeping 11-pass team move against Italy in the final?',
+  answer: 'Carlos Alberto',
+  funFact: 'The goal, scored in the 86th minute of the final in Mexico City, capped a move involving almost every Brazilian outfield player and sealed a 4–1 victory. Carlos Alberto, the captain, arrived late to slam the ball into the net with his right foot. Brazil were allowed to keep the Jules Rimet Trophy permanently after winning it for the third time that day.'
 };

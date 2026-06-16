@@ -1,61 +1,61 @@
 // financial-news-data.js
-// Auto-updated 2026-05-20 — do not edit manually
+// Auto-updated 2026-06-16 — do not edit manually
 
 var FINANCIAL_NEWS = {
-  date: "2026-05-20",
+  date: "2026-06-16",
   main: {
-    title: "Global Bond Yields Hit Highest Levels Since 2007 as Inflation Fears Grip Markets",
+    title: "Oil Prices Hit Three-Month Low and Markets Reach Record High Amid Iran Deal Breakthrough",
     category: "Markets",
     content: [
-      "Global bond markets are experiencing their most severe selloff in nearly two decades, with the 30-year U.S. Treasury yield climbing to levels not seen since the lead-up to the 2007–2008 global financial crisis. The surge in yields reflects deepening investor anxiety about inflation, as geopolitical instability — particularly the ongoing conflict in the Middle East and its disruption to energy supply chains — feeds through to consumer prices. Elevated yields across the United States, Europe, and Asia signal that the pressure is not contained to a single market but has taken on a distinctly global character.",
-      "Strategists are warning that the bond selloff has further room to run, meaning yields could climb still higher before market forces find a new equilibrium. The rise in long-maturity yields is particularly concerning for equity investors, as higher borrowing costs erode the present value of future corporate earnings and make stocks comparatively less attractive. Global equities have already responded, extending losses into their longest losing streak in more than two months as mounting inflation concerns prompt investors to reassess valuations following a record-breaking rally earlier in the year.",
-      "The inflationary backdrop is being compounded by supply-side disruptions tied to the effective blockade of the Strait of Hormuz, which has driven up fuel and energy prices across Western economies. This dynamic is not merely a financial market abstraction — it is feeding directly into the cost of goods, logistics, and household energy bills, making the task of central banks significantly more complex. Policymakers who had hoped to ease monetary conditions in 2026 now face a difficult balancing act between supporting growth and preventing inflation expectations from becoming unanchored.",
-      "Japan offered a rare pocket of relative stability on Wednesday, with longer-maturity Japanese government bonds gaining after a 20-year bond auction attracted firmer-than-expected investor demand — above the 12-month average. The result provided short-term relief to Japanese debt markets, though the broader global trend of rising yields remains a powerful headwind. Analysts caution that even Japan, long insulated from the bond volatility experienced elsewhere, is not entirely immune to the worldwide repricing of risk and inflation expectations.",
-      "For investors, the current environment represents a fundamental recalibration of the post-pandemic financial landscape. The era of ultra-low interest rates, which underpinned a decade-long bull market in both equities and bonds, appears to be giving way to a more structurally inflationary world shaped by energy insecurity, supply chain fragmentation, and geopolitical tension. With Nvidia\'s earnings closely watched as a bellwether for the technology sector — itself heavily sensitive to discount-rate changes — the coming days will be critical in determining whether markets can stabilise or whether the bond-driven rout has further to go.",
+      "Global oil prices tumbled to a three-month low on Monday as a landmark US-Iran peace deal sparked immediate hopes that the Strait of Hormuz — the world\'s most critical oil shipping chokepoint — could reopen within days. Brent crude fell sharply following news of the breakthrough, with US President Donald Trump posting 'Let the oil flow' on social media, signalling his administration\'s confidence that the agreement would translate into a rapid resumption of energy shipments. Stock markets responded with broad-based enthusiasm, closing at record highs as investors priced in the prospect of easing energy costs and a reduction in the geopolitical risk premium that has weighed on equities for months.",
+      "The US-Iran deal has been widely described as the most significant development in the greatest energy supply crisis in the history of the market — a crisis that has disrupted global trade, fuelled inflation, and strained the finances of energy-importing nations around the world. Trump declared that the Strait of Hormuz would be fully reopened by Friday, though European allies have expressed cautious scepticism about that timeline, noting that physical and logistical factors may delay the resumption of normal shipping. Wall Street\'s biggest banks moved quickly to revise their outlook, cutting oil price forecasts for coming quarters as optimism over a revival of Middle East crude output began to take hold across trading desks.",
+      "Despite the market euphoria, economists and energy analysts are urging caution, warning that oil and gas prices are unlikely to return to pre-war levels for months even if the Strait of Hormuz reopens on schedule. The physical infrastructure for oil transport, insurance markets, and tanker routing all require time to normalise after a prolonged period of disruption, meaning the relief for consumers and businesses will be gradual rather than immediate. Supply chains that were restructured during the crisis will also take time to unwind, keeping some upward pressure on energy costs in the near term.",
+      "The ripple effects of the deal extend well beyond oil markets, with implications for food prices, inflation, and central bank policy worldwide. Experts noted that energy costs feed directly into agricultural production and shipping, meaning that any sustained decline in oil prices could ease food inflation that has burdened households across both developed and emerging economies. Central banks in the US and UK, which are both expected to hold interest rates steady at their upcoming meetings this week, may find the peace deal provides additional cover to maintain a patient stance as inflationary pressures gradually subside.",
+      "The broader market rally reflects a significant shift in investor sentiment after months of elevated uncertainty tied to the conflict and its effects on global supply chains. Record highs in stock indices suggest that traders are betting the peace deal marks a genuine turning point rather than a temporary lull, though the divergence between Wall Street optimism and European diplomatic caution underscores how much uncertainty remains. As the week unfolds, attention will focus on whether the Strait of Hormuz reopens as promised, how quickly oil supply returns to pre-war levels, and whether central banks adjust their forward guidance in response to the rapidly changing energy landscape.",
     ],
-    image: "https://static01.nyt.com/images/2026/05/19/multimedia/2026-may-biz-promos-bond-yields/2026-may-biz-promos-bond-yields-mediumSquareAt3X-v10.png",
-    source: "The New York Times",
-    sourceUrl: "https://www.nytimes.com/2026/05/19/business/bond-market-iran-war-inflation.html"
+    image: "https://i.guim.co.uk/img/media/d8390a69919bf424e2aa22b7f89df6640337ce1f/469_0_2879_2304/master/2879.jpg?width=1200&quality=85&auto=format&fit=max&s=ea45a169a7d02e1ba1b21c931e96fcaa",
+    source: "The Guardian",
+    sourceUrl: "https://www.theguardian.com/business/2026/jun/15/oil-prices-fall-strait-of-hormuz-reopening-hopes-iran-us-peace-deal"
   },
   secondary: [
     {
       id: "fn1",
-      title: "UK Supermarkets Reject Government Push for Voluntary Food Price Caps",
-      summary: "The UK government has urged supermarkets to consider freezing prices on essential foods like eggs, bread, and milk, but retailers have pushed back, calling the proposal unjustified and potentially counterproductive.",
+      title: "Bank of Japan Raises Interest Rate to Highest Level Since 1995",
+      summary: "The Bank of Japan has hiked interest rates to a 31-year high, acting against the prime minister\'s wishes amid war-driven inflation and a weakening yen.",
       body: [
-        "Faced with rising food inflation driven in part by the Middle East conflict and surging energy costs, the UK government has asked major supermarkets to voluntarily cap prices on key grocery staples. Retail sources have rebuffed the plan, arguing that any such caps would be unjustified and could push costs up more broadly across their product ranges as margins are squeezed.",
-        "The episode highlights the tension between government pressure to protect consumers from the cost-of-living squeeze and the commercial realities facing retailers already contending with higher taxes, fuel costs, and energy bills. Analysts note that voluntary price controls historically risk distorting supply incentives, potentially leading to shortages of the very items they are designed to protect."
+        "The Bank of Japan raised its benchmark interest rate to its highest level since 1995, defying Prime Minister Takaichi\'s preferences as policymakers moved to combat inflation fuelled by energy disruptions stemming from the Middle East conflict. The decision reflected mounting pressure from a tanking currency and rising import costs that have squeezed Japanese households and businesses. It marks the latest step in the Bank of Japan\'s gradual tightening cycle, which began in earnest in 2024 after decades of near-zero interest rates.",
+        "The rate hike signals a significant normalisation of Japanese monetary policy and has broad implications for global capital flows, as higher Japanese yields may draw investment back home and reduce the appeal of the yen carry trade. Markets paused to assess the move as part of a broader recalibration of central bank policy worldwide, with investors weighing the BOJ\'s hawkish turn against the potential deflationary tailwind of falling oil prices following the US-Iran deal."
       ],
-      image: "https://i.guim.co.uk/img/media/7f1a1e5425aa78f613290942e7e2e96f469d0ea3/550_0_4211_3370/master/4211.jpg?width=1200&quality=85&auto=format&fit=max&s=9df63cd3f5ceb5aa6cd47b7cf92d1004",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/business/2026/may/19/uk-supermarkets-urged-to-consider-voluntary-price-caps-on-essential-foods",
-      category: "Economics"
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/3a76/live/d7e33c30-6872-11f1-8d7f-231b457c3604.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.com/news/articles/cjdgl213dpzo?at_medium=RSS&at_campaign=rss",
+      category: "Monetary Policy"
     },
     {
       id: "fn2",
-      title: "Indonesian Stocks Slide as Government Tightens Commodity Export Controls",
-      summary: "Indonesian equities fell sharply after President Prabowo Subianto announced plans to tighten oversight of commodity exports, raising fears of greater state intervention and weaker profitability in one of the country\'s most important industries.",
+      title: "SpaceX IPO Raised $87.5 Billion — $10 Billion More Than Initially Reported",
+      summary: "SpaceX\'s landmark stock market listing raised $87.5 billion, significantly exceeding the $75 billion figure initially reported.",
       body: [
-        "Indonesian markets experienced choppy and ultimately lower trading on Wednesday following the government\'s move to impose stricter controls on commodity exports, a sector that forms a cornerstone of the country\'s economy and stock market. Investors responded negatively to the prospect of increased state oversight, interpreting the policy as a potential drag on earnings for major commodity producers listed on the Jakarta exchange.",
-        "The development adds to a broader emerging-market headache at a time when global risk appetite is already being tested by rising bond yields and inflation fears. Indonesia\'s heavy reliance on commodity exports — including coal, palm oil, and nickel — means that any regulatory tightening has outsized implications for corporate profitability and foreign investor sentiment toward the country."
+        "SpaceX\'s initial public offering raised $87.5 billion, a figure $10 billion larger than the $75 billion that was originally reported, making it one of the most valuable stock market listings in history. The revised figure underscores the enormous investor appetite for the Elon Musk-led space and technology company, which has expanded aggressively into launch services, satellite internet, and aerospace infrastructure. The IPO has prompted widespread discussion about the economic impact on communities surrounding SpaceX facilities, including Bastrop, Texas, where residents are wondering what the windfall might mean for their town.",
+        "The scale of the listing has reshaped expectations for the private technology IPO market, potentially encouraging other high-profile companies to accelerate their own public offering timelines. The revelation of the higher fundraising total adds to the sense that SpaceX\'s public debut has set a new benchmark for mega-cap tech listings in the mid-2020s."
       ],
-      image: "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iWzICUmQnWlo/v2/1200x-1.png",
-      source: "Bloomberg Markets",
-      url: "https://www.bloomberg.com/news/articles/2026-05-20/indonesian-markets-extend-fall-on-government-export-control-plan",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/62fc/live/fe9e1080-68e4-11f1-a322-77bd30adf518.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.com/news/articles/cgrk21wnvy9o?at_medium=RSS&at_campaign=rss",
       category: "Markets"
     },
     {
       id: "fn3",
-      title: "HS2 Cost Balloons to £102bn as First Trains Pushed Back to 2039",
-      summary: "The UK government has admitted that the HS2 high-speed rail project will now cost up to £102.7 billion — some £70 billion more than originally promised — with the first trains between London and Birmingham not expected until as late as 2039.",
+      title: "Roku Agrees to $22 Billion Sale to Fox, Sending Stock to Four-Year High",
+      summary: "Roku\'s shares surged to a four-year high after the streaming platform agreed to be acquired by Fox in a deal valued at $22 billion.",
       body: [
-        "In a significant blow to UK infrastructure credibility, Transport Secretary Heidi Alexander confirmed that the already-truncated HS2 project has seen its budget swell to £102.7 billion, representing one of the most dramatic cost overruns in British public works history. The first passenger services between London and Birmingham, originally slated for the mid-2020s, have now been pushed back by up to 13 years.",
-        "The revelation raises serious questions about public sector project governance and the fiscal risks embedded in the UK\'s infrastructure pipeline at a time when government borrowing costs are already rising. The eye-watering overrun will intensify scrutiny of other major capital commitments, including the £38 billion Sizewell C nuclear plant, which the National Audit Office has simultaneously flagged as carrying 'immediate and substantial' financial risks."
+        "Roku\'s stock rallied sharply after the company announced it had agreed to be acquired by Fox in a deal valued at $22 billion, marking one of the most significant media and technology mergers of the year. The transaction raises major questions about the strategic direction of both companies, as Fox gains a substantial foothold in the streaming device and platform market at a time when traditional media groups are racing to adapt to shifting viewer habits. Roku shareholders have reacted enthusiastically, driving the stock to levels not seen in four years.",
+        "The deal reflects broader consolidation pressures in the streaming industry, where scale and data are increasingly seen as decisive competitive advantages. For Fox, acquiring Roku\'s expansive user base and advertising technology platform could provide a powerful complement to its existing content and broadcast assets as the media landscape continues to fragment."
       ],
-      image: "https://i.guim.co.uk/img/media/73f7dd8f5e22949c4f5c812fd03dd7ee8f68ad9e/683_0_6827_5464/master/6827.jpg?width=1200&quality=85&auto=format&fit=max&s=2b293a9a695cc7ffb75abc53e7a8a752",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/business/2026/may/19/hs2-bill-could-rise-102bn-pounds-first-trains-delayed-until-2039-government-admits",
-      category: "Economics"
+      image: "https://images.mktw.net/im-06926649",
+      source: "MarketWatch",
+      url: "https://www.marketwatch.com/story/rokus-sale-to-fox-for-22-billion-raises-a-big-question-aecb5346?mod=mw_rss_topstories",
+      category: "Mergers & Acquisitions"
     }
   ]
 };

@@ -1,172 +1,179 @@
 // suggested-recipes-data.js
-// Auto-updated 2026-05-20 — do not edit manually
+// Auto-updated 2026-06-16 — do not edit manually
 
 window.SUGGESTED_RECIPES = [
   {
     id: "sug1",
-    title: "Venetian-Spiced Venison Ragù with Pappardelle, Juniper & Orange Zest",
-    category: "Pasta & Grains",
-    calories: 610,
+    title: "Georgian Chicken Satsivi — Poached Chicken in Walnut & Spice Sauce with Flatbread",
+    category: "Chicken",
+    calories: 545,
     protein: 42,
-    fibre: 5,
-    healthScore: 68,
-    time: "1 hr 45 mins",
+    fibre: 3,
+    healthScore: 74,
+    time: "55 mins",
     serves: "4",
-    desc: "A deeply aromatic northern Italian–style ragù where venison mince is slowly braised with juniper, red wine, and a strip of orange peel until it becomes impossibly rich and tender. Tossed through wide ribbons of pappardelle and finished with a dusting of aged Parmesan, this is the kind of bold, wintry pasta that rewards patience with every forkful.",
-    emoji: "🦌",
-    image: "https://images.unsplash.com/photo-1645930558646-1fab14e40578?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxWZW5ldGlhbi1TcGljZWQlMjBWZW5pc29uJTIwUmFnJUMzJUI5JTIwd2l0aCUyMFBhcHBhcmRlbGxlJTJDJTIwSnVuaXBlciUyMCUyNiUyME9yYW5nZSUyMFplc3QlMjBmb29kJTIwZGlzaHxlbnwwfDB8fHwxNzc5MjU0Mjg1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    desc: "Satsivi is one of Georgia\'s most celebrated dishes — tender poached chicken smothered in a deeply aromatic, golden walnut sauce fragrant with coriander, fenugreek, saffron and a gentle warmth of chilli. It\'s served at room temperature, which makes the flavours bloom beautifully, and eaten scooped up with warm flatbread for an utterly satisfying meal.",
+    emoji: "🐔",
+    image: "https://images.unsplash.com/photo-1659275799168-c4d45e6d0555?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxHZW9yZ2lhbiUyMENoaWNrZW4lMjBTYXRzaXZpJTIwJUUyJTgwJTk0JTIwUG9hY2hlZCUyMENoaWNrZW4lMjBpbiUyMFdhbG51dCUyMCUyNiUyMFNwaWNlJTIwU2F1Y2UlMjB3aXRoJTIwRmxhdGJyZWFkJTIwZm9vZCUyMGRpc2h8ZW58MHwwfHx8MTc4MTU4NzEwNHww&ixlib=rb-4.1.0&q=80&w=1080",
     ingredientGroups: [
-      { group: "Main", items: [
-        { name: "Venison mince", quantity: 600, unit: "g" },
-        { name: "Pappardelle pasta", quantity: 350, unit: "g" },
-        { name: "Brown onion, finely diced", quantity: 1, unit: "" },
-        { name: "Celery stalks, finely diced", quantity: 2, unit: "" },
-        { name: "Carrot, finely diced", quantity: 1, unit: "" },
-        { name: "Garlic cloves, minced", quantity: 4, unit: "" },
-        { name: "Pancetta, diced", quantity: 100, unit: "g" }
+      { group: "Chicken", items: [
+        { name: "Bone-in chicken thighs", quantity: 8, unit: "" },
+        { name: "Onion, halved", quantity: 1, unit: "" },
+        { name: "Bay leaves", quantity: 2, unit: "" },
+        { name: "Black peppercorns", quantity: 1, unit: "tsp" },
+        { name: "Salt", quantity: 1.5, unit: "tsp" }
       ]},
-      { group: "Braising & Sauce", items: [
-        { name: "Dry red wine (e.g. Barbera or Chianti)", quantity: 200, unit: "ml" },
-        { name: "Whole canned tomatoes", quantity: 400, unit: "g" },
-        { name: "Beef or venison stock", quantity: 200, unit: "ml" },
-        { name: "Tomato purée", quantity: 2, unit: "tbsp" },
-        { name: "Juniper berries, lightly crushed", quantity: 8, unit: "" },
-        { name: "Dried bay leaves", quantity: 2, unit: "" },
-        { name: "Fresh thyme sprigs", quantity: 3, unit: "" },
-        { name: "Orange zest (1 large orange)", quantity: 1, unit: "strip" },
-        { name: "Olive oil", quantity: 3, unit: "tbsp" }
+      { group: "Walnut Sauce", items: [
+        { name: "Walnut halves", quantity: 300, unit: "g" },
+        { name: "Onion, finely chopped", quantity: 1, unit: "" },
+        { name: "Garlic cloves", quantity: 4, unit: "" },
+        { name: "Unsalted butter", quantity: 30, unit: "g" },
+        { name: "Ground coriander", quantity: 2, unit: "tsp" },
+        { name: "Ground fenugreek", quantity: 0.5, unit: "tsp" },
+        { name: "Ground turmeric", quantity: 0.5, unit: "tsp" },
+        { name: "Dried chilli flakes", quantity: 0.5, unit: "tsp" },
+        { name: "Saffron strands, soaked in 2 tbsp warm water", quantity: 0.25, unit: "tsp" },
+        { name: "White wine vinegar", quantity: 2, unit: "tbsp" },
+        { name: "Fresh coriander, finely chopped", quantity: 20, unit: "g" }
       ]},
-      { group: "To Finish", items: [
-        { name: "Aged Parmesan, finely grated", quantity: 60, unit: "g" },
-        { name: "Unsalted butter", quantity: 20, unit: "g" },
-        { name: "Flat-leaf parsley, chopped", quantity: 3, unit: "tbsp" },
-        { name: "Sea salt and black pepper", quantity: 1, unit: "to taste" }
+      { group: "To Serve", items: [
+        { name: "Flatbreads or lavash", quantity: 4, unit: "" },
+        { name: "Pomegranate seeds", quantity: 3, unit: "tbsp" },
+        { name: "Fresh coriander leaves", quantity: 10, unit: "g" }
       ]}
     ],
     substitutes: [
-      { ingredient: "Venison mince", alternatives: ["Beef mince (80/20)", "Wild boar mince"] },
-      { ingredient: "Pappardelle", alternatives: ["Tagliatelle", "Rigatoni"] },
-      { ingredient: "Pancetta", alternatives: ["Smoked streaky bacon", "Guanciale"] },
-      { ingredient: "Juniper berries", alternatives: ["A small splash of gin", "Allspice berries"] }
+      { ingredient: "Walnut halves", alternatives: ["Cashews (richer, slightly sweeter)", "Blanched almonds (lighter flavour)"] },
+      { ingredient: "Ground fenugreek", alternatives: ["A pinch of celery salt", "Omit — the sauce is still excellent without it"] },
+      { ingredient: "Bone-in chicken thighs", alternatives: ["Skin-on chicken breasts", "A whole jointed chicken"] }
     ],
     instructions: [
-      "Step 1 — Heat 2 tbsp olive oil in a wide, heavy-based saucepan or Dutch oven over medium heat. Add the pancetta and cook for 4–5 minutes until the fat renders and the pieces turn golden. Remove with a slotted spoon and set aside.",
-      "Step 2 — In the same pan, add the remaining olive oil and fry the onion, celery, and carrot (the soffritto) over medium-low heat for 10–12 minutes, stirring occasionally, until completely soft and beginning to turn golden. Add the garlic and cook for a further 2 minutes.",
-      "Step 3 — Increase the heat to high. Add the venison mince and cook, breaking it up with a wooden spoon, for 6–8 minutes until well browned all over with no grey patches. Season generously with salt and black pepper.",
-      "Step 4 — Return the pancetta to the pan. Add the tomato purée and stir through for 1 minute. Pour in the red wine, scraping up any caramelised bits from the bottom of the pan, and let it bubble vigorously for 3–4 minutes until reduced by half.",
-      "Step 5 — Add the canned tomatoes (crushing them with your hands as you go), stock, juniper berries, bay leaves, thyme, and orange zest strip. Stir well, bring to a gentle simmer, then reduce the heat to low and cover with a lid left slightly ajar. Cook for 1 hour to 1 hour 15 minutes, stirring occasionally, until the sauce is thick, glossy, and deeply flavoured. Remove the bay, thyme sprigs, and orange zest. Taste and adjust seasoning.",
-      "Step 6 — About 10 minutes before serving, bring a large pot of heavily salted water to the boil. Cook the pappardelle until al dente according to packet instructions. Reserve a mugful of pasta cooking water before draining.",
-      "Step 7 — Add the butter and a ladleful of pasta water to the ragù and stir to loosen into a silky sauce. Tip the drained pappardelle directly into the pan and toss vigorously to coat every ribbon. Add a little more pasta water if needed — you want the sauce to cling and flow.",
-      "Step 8 — Divide between warmed bowls, scatter generously with Parmesan and chopped parsley, and serve immediately with extra Parmesan on the side."
+      "Step 1 — Place the chicken thighs in a large saucepan with the halved onion, bay leaves, peppercorns and salt. Cover with cold water (about 1.5 litres), bring to a gentle boil, then reduce heat and simmer for 25–30 minutes until the chicken is just cooked through. Skim any foam from the surface as it cooks. Remove the chicken and set aside; strain and reserve the stock.",
+      "Step 2 — While the chicken poaches, blitz the walnuts, garlic and fresh coriander in a food processor until you have a coarse, sandy paste — you want texture, not a smooth purée. Scrape down the sides a couple of times.",
+      "Step 3 — In a wide, heavy-based pan, melt the butter over medium heat and sweat the chopped onion for 8–10 minutes until very soft and just beginning to turn golden. Add the ground coriander, fenugreek, turmeric and chilli flakes, stir well, and cook for another 2 minutes until fragrant.",
+      "Step 4 — Add the walnut paste to the pan and stir to combine with the spiced onion. Pour in 400ml of the reserved chicken stock and the saffron with its soaking water. Stir everything together and simmer gently for 10 minutes, stirring often, until you have a thick, golden, velvety sauce. Season with salt and add the white wine vinegar — taste and adjust.",
+      "Step 5 — Remove the skin from the poached chicken and pull the meat from the bones in generous pieces. Fold the chicken into the walnut sauce and leave to cool to room temperature — this resting time is key, as the chicken absorbs the sauce and the flavours deepen.",
+      "Step 6 — Serve at room temperature on a large platter, scattered generously with pomegranate seeds and fresh coriander leaves, with warm flatbreads alongside for scooping."
     ]
   },
   {
     id: "sug2",
-    title: "Thai Laab Pla — Minced Tilapia Salad with Toasted Rice, Lime, Chilli & Fresh Herbs",
+    title: "Provençal Prawn & Fennel Soup with Saffron, Pastis & Rouille Toasts",
     category: "Fish & Seafood",
-    calories: 320,
-    protein: 36,
-    fibre: 3,
-    healthScore: 84,
-    time: "30 mins",
-    serves: "3",
-    desc: "Laab is northern Thailand\'s most vibrant salad — here made with quickly cooked minced tilapia rather than the traditional pork or chicken, keeping it light but punchy. The secret weapon is toasted rice powder (khao khua), which adds a uniquely nutty crunch and thickens the lime-forward dressing, while fish sauce, shallots, chilli, and a blizzard of fresh mint and coriander make every mouthful sing.",
-    emoji: "🐟",
-    image: "https://images.unsplash.com/photo-1757715377412-749d66c9c297?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUaGFpJTIwTGFhYiUyMFBsYSUyMCVFMiU4MCU5NCUyME1pbmNlZCUyMFRpbGFwaWElMjBTYWxhZCUyMHdpdGglMjBUb2FzdGVkJTIwUmljZSUyQyUyMExpbWUlMkMlMjBDaGlsbGklMjAlMjYlMjBGcmVzaCUyMEhlcmJzJTIwZm9vZCUyMGRpc2h8ZW58MHwwfHx8MTc3OTI1NDI4NXww&ixlib=rb-4.1.0&q=80&w=1080",
+    calories: 420,
+    protein: 34,
+    fibre: 5,
+    healthScore: 79,
+    time: "50 mins",
+    serves: "4",
+    desc: "A sun-drenched bowlful that captures the spirit of the French Mediterranean coast — sweet, plump prawns simmered in a deeply flavoured tomato and fennel broth spiked with saffron and a splash of pastis for that unmistakable anise warmth. Served with garlicky, golden rouille spread over crisp baguette toasts floated on top, this is a seriously beautiful bowl of soup.",
+    emoji: "🦐",
+    image: "https://images.unsplash.com/photo-1621174438159-6a9a82405498?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxQcm92ZW4lQzMlQTdhbCUyMFByYXduJTIwJTI2JTIwRmVubmVsJTIwU291cCUyMHdpdGglMjBTYWZmcm9uJTJDJTIwUGFzdGlzJTIwJTI2JTIwUm91aWxsZSUyMFRvYXN0cyUyMGZvb2QlMjBkaXNofGVufDB8MHx8fDE3ODE1ODcxMDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
     ingredientGroups: [
-      { group: "Salad", items: [
-        { name: "Tilapia fillets, roughly minced by hand or processor", quantity: 500, unit: "g" },
-        { name: "Shallots, very thinly sliced", quantity: 4, unit: "" },
-        { name: "Spring onions, thinly sliced", quantity: 3, unit: "" },
-        { name: "Bird\'s eye chillies, finely sliced (adjust to taste)", quantity: 3, unit: "" },
-        { name: "Fresh mint leaves", quantity: 25, unit: "g" },
-        { name: "Fresh coriander, roughly chopped", quantity: 20, unit: "g" },
-        { name: "Vegetable oil", quantity: 1, unit: "tbsp" }
+      { group: "Soup Base", items: [
+        { name: "Raw king prawns, shell-on", quantity: 600, unit: "g" },
+        { name: "Fennel bulb, thinly sliced (fronds reserved)", quantity: 2, unit: "" },
+        { name: "Shallots, sliced", quantity: 3, unit: "" },
+        { name: "Garlic cloves, sliced", quantity: 4, unit: "" },
+        { name: "Olive oil", quantity: 3, unit: "tbsp" },
+        { name: "Pastis or Pernod", quantity: 3, unit: "tbsp" },
+        { name: "Dry white wine", quantity: 150, unit: "ml" },
+        { name: "Tinned chopped tomatoes", quantity: 400, unit: "g" },
+        { name: "Fish or vegetable stock", quantity: 800, unit: "ml" },
+        { name: "Saffron strands, soaked in 2 tbsp warm water", quantity: 0.5, unit: "tsp" },
+        { name: "Smoked paprika", quantity: 1, unit: "tsp" },
+        { name: "Chilli flakes", quantity: 0.25, unit: "tsp" },
+        { name: "Salt and black pepper", quantity: 1, unit: "to taste" }
       ]},
-      { group: "Toasted Rice Powder", items: [
-        { name: "Uncooked jasmine rice", quantity: 3, unit: "tbsp" },
-        { name: "Dried kaffir lime leaf (optional)", quantity: 1, unit: "" }
+      { group: "Rouille Toasts", items: [
+        { name: "Baguette, cut into 12 diagonal slices", quantity: 1, unit: "" },
+        { name: "Mayonnaise", quantity: 4, unit: "tbsp" },
+        { name: "Garlic clove, crushed to a paste", quantity: 2, unit: "" },
+        { name: "Smoked paprika", quantity: 0.5, unit: "tsp" },
+        { name: "Lemon juice", quantity: 1, unit: "tsp" },
+        { name: "Pinch of saffron, dissolved in 1 tsp warm water", quantity: 1, unit: "pinch" }
       ]},
-      { group: "Dressing", items: [
-        { name: "Fish sauce", quantity: 3, unit: "tbsp" },
-        { name: "Fresh lime juice (about 3 limes)", quantity: 4, unit: "tbsp" },
-        { name: "Dried chilli flakes or ground dried chilli", quantity: 1, unit: "tsp" },
-        { name: "Pinch of sugar", quantity: 0.5, unit: "tsp" }
-      ]},
-      { group: "To Serve", items: [
-        { name: "Steamed jasmine rice or sticky rice", quantity: 1, unit: "portion" },
-        { name: "Raw white cabbage wedges", quantity: 1, unit: "" },
-        { name: "Fresh cucumber, sliced", quantity: 0.5, unit: "" },
-        { name: "Lime wedges", quantity: 1, unit: "to serve" }
+      { group: "To Finish", items: [
+        { name: "Fennel fronds", quantity: 1, unit: "handful" },
+        { name: "Extra virgin olive oil", quantity: 1, unit: "drizzle" }
       ]}
     ],
     substitutes: [
-      { ingredient: "Tilapia", alternatives: ["Cod loin", "Sea bream fillets", "Firm white fish of choice"] },
-      { ingredient: "Fish sauce", alternatives: ["Light soy sauce plus a tiny pinch of salt (vegetarian option)", "Coconut aminos"] },
-      { ingredient: "Bird\'s eye chillies", alternatives: ["Serrano chilli", "Dried chilli flakes at reduced quantity"] }
+      { ingredient: "Raw king prawns", alternatives: ["Whole langoustines", "Firm white fish fillet chunks (monkfish or hake)"] },
+      { ingredient: "Pastis or Pernod", alternatives: ["A pinch of extra fennel seed and a squeeze of lemon", "Dry vermouth"] },
+      { ingredient: "Mayonnaise (for rouille)", alternatives: ["Aioli", "Homemade mayo blended with roasted garlic"] }
     ],
     instructions: [
-      "Step 1 — Make the toasted rice powder: place the jasmine rice (and kaffir lime leaf if using) in a dry frying pan over medium heat. Toast, shaking the pan constantly, for 5–7 minutes until the rice turns golden brown and smells nutty. Transfer to a spice grinder or pestle and mortar and grind to a coarse powder. Set aside.",
-      "Step 2 — Mix the dressing: in a small bowl, combine the fish sauce, lime juice, dried chilli flakes, and sugar. Taste — it should be intensely sour, salty, and a little spicy. Adjust with more lime or fish sauce to your preference.",
-      "Step 3 — Cook the fish: heat the vegetable oil in a non-stick pan over medium-high heat. Add the minced tilapia and cook, breaking it apart with a spatula, for 3–4 minutes until just cooked through and opaque. Do not brown — you want it tender. Remove from heat and let cool for 2 minutes.",
-      "Step 4 — Assemble the laab: transfer the warm fish to a large mixing bowl. Add the shallots, spring onions, and sliced fresh chillies. Pour over the dressing and toss gently to combine.",
-      "Step 5 — Add 2–3 tablespoons of the toasted rice powder (reserve the rest for sprinkling) and most of the mint and coriander. Toss again — the rice powder will absorb the dressing and create a beautifully textured, almost creamy coating on the fish.",
-      "Step 6 — Taste once more and adjust with extra lime juice or fish sauce. The flavour should be bold, bright, and thoroughly alive. Pile onto a serving platter, scatter with the remaining herbs and another dusting of rice powder.",
-      "Step 7 — Serve immediately alongside steamed jasmine rice or sticky rice, raw cabbage wedges, and sliced cucumber for scooping and cooling bites between mouthfuls."
+      "Step 1 — Peel the prawns, reserving all the shells and heads. Set the prawn tails aside in the fridge. Heat 1 tbsp olive oil in a medium saucepan over high heat, add the prawn shells and heads, and fry hard for 3–4 minutes, stirring, until they turn deep pink and smell wonderful. Add 500ml of the stock, bring to a boil, then simmer for 15 minutes. Strain through a fine sieve, pressing hard on the shells to extract every drop of flavour. Discard the shells and set the prawn stock aside.",
+      "Step 2 — In a large, wide saucepan, heat the remaining 2 tbsp olive oil over medium heat. Add the fennel and shallots with a good pinch of salt and cook gently for 10–12 minutes, stirring often, until soft, sweet and slightly caramelised. Add the sliced garlic and cook for 2 more minutes.",
+      "Step 3 — Increase the heat, pour in the pastis and let it sizzle and reduce for 30 seconds — it will smell extraordinary. Add the white wine and bubble for 2 minutes, then add the tinned tomatoes, saffron with its water, smoked paprika, chilli flakes, the prawn stock and the remaining 300ml plain stock. Bring to a simmer and cook for 15 minutes until the soup is fragrant and slightly thickened. Taste and season generously.",
+      "Step 4 — While the soup simmers, make the rouille: stir together the mayonnaise, crushed garlic, smoked paprika, lemon juice and saffron water until smooth and golden-yellow. Toast or grill the baguette slices until crisp and golden, then spread each one generously with the rouille.",
+      "Step 5 — Add the raw prawn tails to the simmering soup and cook for just 2–3 minutes until they are pink and just cooked through — do not overcook them.",
+      "Step 6 — Ladle the soup into deep, warmed bowls. Float 3 rouille toasts on the surface of each bowl, scatter with fennel fronds and finish with a thin drizzle of extra virgin olive oil. Serve immediately."
     ]
   },
   {
     id: "sug3",
-    title: "Spanish Escalivada with Romesco, Soft-Boiled Eggs & Toasted Sourdough",
-    category: "Vegetarian",
-    calories: 430,
-    protein: 16,
-    fibre: 8,
-    healthScore: 81,
-    time: "55 mins",
+    title: "Turkish Mercimek Köftesi — Red Lentil & Bulgur Patties with Walnut-Pepper Filling & Sumac Salad",
+    category: "Vegan",
+    calories: 465,
+    protein: 19,
+    fibre: 11,
+    healthScore: 88,
+    time: "1 hr",
     serves: "4",
-    desc: "Escalivada is the Catalan art of transforming humble vegetables — aubergine, red peppers, and onion — into something silky, smoky, and magnificent through slow oven-roasting. Draped over charred sourdough and paired with a gutsy homemade romesco sauce and jammy soft-boiled eggs, this simple dish becomes an impressively satisfying vegetarian centrepiece that showcases what Spanish cooking does best: coaxing extraordinary flavour from honest ingredients.",
-    emoji: "🫑",
-    image: "https://images.unsplash.com/photo-1650174756716-27220ec8f3ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTcGFuaXNoJTIwRXNjYWxpdmFkYSUyMHdpdGglMjBSb21lc2NvJTJDJTIwU29mdC1Cb2lsZWQlMjBFZ2dzJTIwJTI2JTIwVG9hc3RlZCUyMFNvdXJkb3VnaCUyMGZvb2QlMjBkaXNofGVufDB8MHx8fDE3NzkyNTQyODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    desc: "A festive, flavour-packed Turkish mezze staple — smoky, spiced red lentil and fine bulgur patties formed around a filling of toasted walnuts and roasted red pepper, served with a punchy sumac-dressed herb salad and cos lettuce leaves for wrapping. This is vegan food at its most satisfying: deeply savoury, texturally interesting and genuinely impressive.",
+    emoji: "🫘",
+    image: "https://images.unsplash.com/photo-1730312382876-b948ea2143a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUdXJraXNoJTIwTWVyY2ltZWslMjBLJUMzJUI2ZnRlc2klMjAlRTIlODAlOTQlMjBSZWQlMjBMZW50aWwlMjAlMjYlMjBCdWxndXIlMjBQYXR0aWVzJTIwd2l0aCUyMFdhbG51dC1QZXBwZXIlMjBGaWxsaW5nJTIwJTI2JTIwU3VtYWMlMjBTYWxhZCUyMGZvb2QlMjBkaXNofGVufDB8MHx8fDE3ODE1ODcxMDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
     ingredientGroups: [
-      { group: "Escalivada Vegetables", items: [
-        { name: "Large aubergines", quantity: 2, unit: "" },
-        { name: "Red peppers", quantity: 3, unit: "" },
-        { name: "Red onions", quantity: 2, unit: "" },
+      { group: "Lentil & Bulgur Base", items: [
+        { name: "Red split lentils, rinsed", quantity: 250, unit: "g" },
+        { name: "Fine bulgur wheat", quantity: 150, unit: "g" },
+        { name: "Water", quantity: 650, unit: "ml" },
         { name: "Olive oil", quantity: 4, unit: "tbsp" },
-        { name: "Sea salt flakes", quantity: 1, unit: "to taste" }
+        { name: "Onion, finely diced", quantity: 1, unit: "" },
+        { name: "Tomato paste", quantity: 2, unit: "tbsp" },
+        { name: "Red pepper paste (or extra tomato paste)", quantity: 1, unit: "tbsp" },
+        { name: "Ground cumin", quantity: 2, unit: "tsp" },
+        { name: "Sweet smoked paprika", quantity: 1.5, unit: "tsp" },
+        { name: "Dried chilli flakes", quantity: 0.5, unit: "tsp" },
+        { name: "Salt", quantity: 1.5, unit: "tsp" },
+        { name: "Spring onions, finely sliced", quantity: 4, unit: "" },
+        { name: "Fresh flat-leaf parsley, finely chopped", quantity: 30, unit: "g" }
       ]},
-      { group: "Romesco Sauce", items: [
-        { name: "Jarred roasted red peppers, drained", quantity: 120, unit: "g" },
-        { name: "Blanched almonds, toasted", quantity: 60, unit: "g" },
-        { name: "Garlic cloves", quantity: 2, unit: "" },
-        { name: "Cherry tomatoes, halved and roasted at 200°C for 20 mins", quantity: 200, unit: "g" },
-        { name: "Smoked paprika (pimentón)", quantity: 1.5, unit: "tsp" },
-        { name: "Sherry vinegar", quantity: 2, unit: "tbsp" },
-        { name: "Extra virgin olive oil", quantity: 5, unit: "tbsp" },
-        { name: "Pinch of cayenne pepper", quantity: 1, unit: "pinch" }
+      { group: "Walnut & Pepper Filling", items: [
+        { name: "Walnut halves, toasted and roughly chopped", quantity: 100, unit: "g" },
+        { name: "Roasted red peppers from a jar, finely chopped", quantity: 2, unit: "" },
+        { name: "Garlic clove, grated", quantity: 1, unit: "" },
+        { name: "Pomegranate molasses", quantity: 1, unit: "tbsp" },
+        { name: "Pinch of salt and chilli flakes", quantity: 1, unit: "" }
       ]},
-      { group: "To Serve", items: [
-        { name: "Large free-range eggs", quantity: 4, unit: "" },
-        { name: "Thick sourdough slices", quantity: 4, unit: "" },
-        { name: "Flat-leaf parsley, roughly chopped", quantity: 3, unit: "tbsp" },
-        { name: "Extra virgin olive oil, to drizzle", quantity: 2, unit: "tbsp" },
-        { name: "Black olives (optional)", quantity: 40, unit: "g" }
+      { group: "Sumac Herb Salad & Serving", items: [
+        { name: "Cherry tomatoes, halved", quantity: 200, unit: "g" },
+        { name: "Cucumber, diced small", quantity: 0.5, unit: "" },
+        { name: "Red onion, very thinly sliced", quantity: 0.5, unit: "" },
+        { name: "Fresh mint leaves", quantity: 15, unit: "g" },
+        { name: "Flat-leaf parsley leaves", quantity: 15, unit: "g" },
+        { name: "Sumac", quantity: 1.5, unit: "tsp" },
+        { name: "Lemon juice", quantity: 2, unit: "tbsp" },
+        { name: "Extra virgin olive oil", quantity: 2, unit: "tbsp" },
+        { name: "Cos or little gem lettuce leaves", quantity: 12, unit: "" },
+        { name: "Pomegranate seeds", quantity: 3, unit: "tbsp" }
       ]}
     ],
     substitutes: [
-      { ingredient: "Aubergines", alternatives: ["Courgettes (reduce roasting time by 10 mins)", "Portobello mushrooms"] },
-      { ingredient: "Blanched almonds", alternatives: ["Hazelnuts (toasted and skins rubbed off)", "Walnuts"] },
-      { ingredient: "Sherry vinegar", alternatives: ["Red wine vinegar", "Apple cider vinegar"] },
-      { ingredient: "Sourdough", alternatives: ["Ciabatta", "Baguette slices"] }
+      { ingredient: "Fine bulgur wheat", alternatives: ["Fine couscous (use same method)", "Quinoa, well-drained and cooled"] },
+      { ingredient: "Pomegranate molasses", alternatives: ["A squeeze of lemon with a pinch of brown sugar", "Tamarind paste, thinned slightly"] },
+      { ingredient: "Red pepper paste", alternatives: ["Harissa paste (spicier)", "Extra tomato paste with a pinch of paprika"] }
     ],
     instructions: [
-      "Step 1 — Preheat your oven to 210°C (190°C fan). Place the whole aubergines, whole red peppers, and the red onions (halved, skins on) onto a large roasting tray. Rub everything generously with olive oil and season with sea salt. Roast for 40–45 minutes, turning once halfway through, until the peppers are charred and collapsed, the aubergines are completely soft, and the onions are tender and caramelised.",
-      "Step 2 — While the vegetables roast, make the romesco: place the toasted almonds and garlic in a food processor and blitz to a rough crumb. Add the jarred roasted peppers, roasted cherry tomatoes, smoked paprika, cayenne, and sherry vinegar. Pulse to combine, then with the motor running, drizzle in the olive oil until you have a thick, slightly rough sauce. Season well with salt. Taste — it should be smoky, rich, and tangy. Set aside at room temperature.",
-      "Step 3 — When the roasted vegetables are ready, transfer the peppers and aubergines to a bowl, cover tightly with cling film or a plate, and leave to steam for 10 minutes — this makes peeling them effortless. Peel away and discard the charred skins from all the vegetables. Tear the aubergine flesh into long strips. Slice the peppers into wide ribbons, reserving any sweet juices. Separate the onion petals. Toss everything together gently with a little olive oil and salt.",
-      "Step 4 — Soft-boil the eggs: lower them into gently boiling water and cook for 6 minutes 30 seconds exactly. Transfer to a bowl of cold water for 2 minutes, then peel carefully — the whites should be set and the yolks jammy and golden.",
-      "Step 5 — Toast or griddle the sourdough slices until golden and slightly charred at the edges. Rub each slice once with a cut garlic clove if you like extra depth.",
-      "Step 6 — To plate: spread a generous spoonful of romesco onto each slice of sourdough. Pile the warm escalivada vegetables on top, halve the soft-boiled eggs and nestle them alongside. Scatter with flat-leaf parsley, add a few black olives if using, and finish with a drizzle of your best extra virgin olive oil. Serve with any remaining romesco on the side."
+      "Step 1 — Combine the rinsed lentils and water in a saucepan with a pinch of salt. Bring to a boil, then simmer for 12–15 minutes, stirring regularly, until the lentils are completely soft and have absorbed most of the water — the mixture should be thick and porridge-like. While still hot, stir in the dry bulgur wheat, cover tightly with a lid, and leave off the heat for 15 minutes to steam and absorb. The mixture will firm up considerably.",
+      "Step 2 — Meanwhile, heat the olive oil in a frying pan over medium heat. Add the diced onion with a pinch of salt and cook for 10 minutes until soft and golden. Add the tomato paste, red pepper paste, cumin, smoked paprika and chilli flakes, stir well, and cook for 3 minutes until the paste darkens slightly and smells deeply fragrant. Remove from the heat.",
+      "Step 3 — Tip the spiced onion mixture into the lentil-bulgur base and mix thoroughly. Add the sliced spring onions and chopped parsley and knead everything together with your hands for 2–3 minutes until the mixture is smooth, cohesive and holds its shape when pressed. Taste and adjust salt — it should be well-seasoned. Allow to cool for 10 minutes.",
+      "Step 4 — Make the walnut-pepper filling: combine the chopped toasted walnuts, roasted red peppers, grated garlic, pomegranate molasses, salt and chilli flakes in a small bowl and mix well.",
+      "Step 5 — To form the köfte, take a heaped tablespoon of lentil mixture and flatten into a disc in your palm. Place a small spoonful of walnut filling in the centre, then bring the edges up and around to enclose it, shaping into a smooth oval patty about 5cm long. Repeat with the remaining mixture — you should get about 20 patties. Arrange on a platter.",
+      "Step 6 — Make the sumac salad: toss the tomatoes, cucumber, red onion, mint and parsley together. Dress with sumac, lemon juice, olive oil and a pinch of salt, then toss gently.",
+      "Step 7 — Serve the köfte on a large platter alongside the sumac salad, crisp lettuce leaves for wrapping, and a scattering of pomegranate seeds over everything. To eat, nestle a köfte into a lettuce leaf, pile on salad, and fold up like a small parcel."
     ]
   }
 ];

@@ -1,61 +1,61 @@
 // tech-news-data.js
-// Auto-updated 2026-05-20 — do not edit manually
+// Auto-updated 2026-06-16 — do not edit manually
 
 var TECH_NEWS = {
-  date: "2026-05-20",
+  date: "2026-06-16",
   main: {
-    title: "Everything Announced at Google I/O 2026: Gemini, Search, Smart Glasses, and the 'Foothills of the Singularity'",
+    title: "Inside the Fight Over Claude Mythos 5: Anthropic vs. the Trump Administration",
     category: "Artificial Intelligence",
     content: [
-      "Google\'s annual developer conference, I/O 2026, delivered one of the most sweeping showcases of artificial intelligence integration the company has ever presented. From a revamped Gemini model lineup to AI-powered search agents and brand-new smart glasses hardware, the announcements painted a picture of a company going all-in on AI across every product it makes. The breadth of the reveal made clear that Google views this moment not as incremental progress, but as a fundamental transformation of how people interact with technology.",
-      "Among the most striking announcements was the expansion of Google\'s AI agents — described as 'information agents' capable of monitoring topics in the background and proactively alerting users to relevant updates and changes. Unlike traditional search, which requires a user to actively pose a query, these agents work autonomously to surface information the user might need before they even know to ask for it. The feature represents a meaningful shift in the relationship between users and search engines, moving from reactive tools to proactive digital assistants.",
-      "Gmail also received a significant AI upgrade, with Google introducing conversational voice search powered by Gemini directly inside the inbox. Users can now speak naturally to their email, asking questions like where a confirmation number is buried or what time a reservation was made, and receive spoken answers in return. The feature is designed to reduce the friction of hunting through cluttered inboxes and brings a distinctly hands-free, assistant-style experience to one of Google\'s most widely used products.",
-      "On the hardware front, Google announced its first pair of smart glasses since the notorious Google Glass experiment more than a decade ago. Set to go on sale in autumn, the new glasses are built around Google\'s Gemini AI, allowing the assistant to perceive and interact with the user\'s real-world environment. The announcement signals Google\'s renewed confidence in the wearables space, particularly as competitors like Meta have demonstrated growing consumer appetite for AI-assisted eyewear.",
-      "Closing out the keynote, Google DeepMind CEO Demis Hassabis offered perhaps the most philosophically charged statement of the event, describing the current moment as potentially the 'foothills of the singularity' — a reference to the theoretical point at which artificial intelligence surpasses human intelligence and accelerates beyond prediction. Hassabis framed Google\'s research and products as central to unlocking AGI\'s potential 'for the benefit of the entire world,' and suggested that future generations will look back on this period as a historic turning point. Whether that vision inspires awe or concern likely depends on who is doing the listening, but it underscored just how seriously Google\'s leadership believes the stakes of this technological moment to be."
+      "Anthropic, the AI safety company behind the Claude family of models, spent a fraught weekend locked in a dispute with the Trump administration after receiving a US export control directive at 5:21 PM on Friday. The directive ordered the company to suspend access to its latest models, Mythos 5 and Fable 5, marking one of the most dramatic confrontations yet between a major AI lab and the federal government. The timing was particularly striking, arriving as much of the country was celebrating the United States' first-ever World Cup victory and the New York Knicks' championship.",
+      "The export control directive caught Anthropic largely off guard, forcing its leadership and legal teams to work through the weekend to understand the scope of the order and mount a response. Export controls are typically associated with hardware and semiconductors — tools that can be physically prevented from crossing borders — but applying them to software models represents a significant and novel escalation in how the government is choosing to regulate the AI industry. The move signals that Washington is increasingly willing to treat advanced AI models as strategic assets subject to national security restrictions.",
+      "According to reporting by The Verge, the administration\'s decision to target Anthropic\'s cybersecurity-focused models may be retaliatory or reactionary in nature, rather than driven by a specific, credible threat. TechCrunch noted that the ban was never about an AI jailbreak, as some early speculation suggested, but rather reflects a broader pattern of the Trump administration asserting control over the AI sector in ways that go beyond conventional regulatory frameworks. The distinction matters enormously, because a jailbreak-based rationale would imply a fixable technical problem, whereas a politically motivated directive suggests ongoing and unpredictable interference.",
+      "The episode raises profound questions about the independence of American AI companies and their ability to release and distribute products without government interference. Anthropic has built its brand around safety-focused AI development, and the irony of its most safety-conscious models being pulled from distribution by government order has not been lost on industry observers. If companies cannot predict when or why a model might be targeted, it could chill investment in cybersecurity AI tools at a moment when demand for such capabilities is surging globally.",
+      "The broader implications for the AI industry are significant and unsettling. Other major AI labs will be watching closely to see how Anthropic navigates the dispute and what precedent emerges from it. The incident underscores a new and volatile dynamic in which the competitive race to build more powerful AI models is now intersecting with geopolitical strategy, domestic politics, and export law in ways the industry has never had to contend with before. Whatever the outcome for Anthropic, the message to the entire sector appears unmistakable: the AI industry is no longer operating outside the reach of US government intervention."
     ],
-    image: "https://media.wired.com/photos/6a047ecbec98d3bd8037fdbe/master/pass/GettyImages-2215577882.jpg",
-    source: "WIRED",
-    sourceUrl: "https://www.wired.com/story/everything-google-announced-at-google-io-2026/"
+    image: "https://images.pexels.com/photos/36806945/pexels-photo-36806945.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    source: "The Verge",
+    sourceUrl: "https://www.theverge.com/ai-artificial-intelligence/950412/anthropic-trump-adminstration-claude-mythos-fable-5-export-controls"
   },
   secondary: [
     {
       id: "tc1",
-      title: "Discord Rolls Out End-to-End Encryption for Voice and Video Calls to All Users",
-      summary: "Discord has enabled end-to-end encrypted voice and video calling for its hundreds of millions of users, meaning even Discord itself can no longer access the content of those communications.",
+      title: "Nvidia Seeks to Raise Over $25 Billion in First Bond Deal Since 2021",
+      summary: "Nvidia is launching a massive debt sale to raise more than $25 billion, its first bond offering in five years, testing investor appetite for continued AI sector exposure.",
       body: [
-        "The move marks a major privacy upgrade for one of the world\'s most popular communication platforms, which has historically lacked the robust encryption protections offered by dedicated secure messaging apps. With end-to-end encryption now active by default for voice and video, users can communicate with confidence that their conversations are scrambled from sender to recipient without any third-party access.",
-        "The announcement is significant not just for Discord\'s gaming and community-focused user base, but as a broader signal that mainstream platforms are increasingly prioritizing privacy as a competitive feature. As concerns about data surveillance and platform access to private communications continue to grow, Discord\'s move puts pressure on other large platforms to follow suit."
+        "The chipmaker Nvidia has moved to raise over $25 billion through a bond deal, its largest debt offering since 2021, as the company looks to capitalize on its dominant position in the AI hardware market. The sale is being closely watched as a barometer of how hungry investors remain for exposure to the AI sector amid a broader wave of borrowing across the technology industry.",
+        "Nvidia\'s move into the bond market comes as the company continues to post extraordinary revenues driven by insatiable demand for its GPUs from AI data centers. The scale of the offering reflects both the company\'s financial ambitions and the confidence its leadership has in sustained AI infrastructure spending for the years ahead."
       ],
-      image: "https://images.unsplash.com/photo-1729860648897-270eddd9026b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxEaXNjb3JkJTIwUm9sbHMlMjBPdXQlMjBFbmQtdG8tRW5kJTIwRW5jcnlwdGlvbiUyMGZvciUyMFZvaWNlJTIwYW5kJTIwVmlkZW8lMjBDYWxscyUyMHRvJTIwQWxsJTIwVXNlcnN8ZW58MHwwfHx8MTc3OTI1MzQ2NXww&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "TechCrunch",
-      url: "https://techcrunch.com/2026/05/19/discord-enables-end-to-end-encrypted-voice-and-video-calling-for-every-user/",
-      category: "Cybersecurity"
+      image: "https://cdn.arstechnica.net/wp-content/uploads/2025/08/nvidia-chip-1152x648-1754500479.jpg",
+      source: "Ars Technica",
+      url: "https://arstechnica.com/ai/2026/06/chipmaker-nvidia-seeks-to-raise-over-25b-in-first-bond-deal-since-2021/",
+      category: "Technology"
     },
     {
       id: "tc2",
-      title: "NASA Science Chief Dreams of Mass-Produced Satellites to Supercharge Space Research",
-      summary: "NASA\'s science chief has expressed a strong desire for commercially mass-produced satellites, arguing that affordable, standardized hardware is the key to getting dramatically more science done in orbit.",
+      title: "Fox Acquires Roku in $22 Billion Deal to Take Over Your TV",
+      summary: "Fox has announced a $22 billion acquisition of streaming platform Roku, a move that would give the media giant a foothold in more than 100 million homes worldwide.",
       body: [
-        "Speaking with evident enthusiasm, NASA\'s science chief described a vision in which off-the-shelf, mass-produced satellites would allow the agency to pursue far more scientific missions than its current custom-built, one-of-a-kind spacecraft budget allows. The sentiment — summed up in the quote 'How in the hell do I get more science into space? That is my goal' — reflects growing frustration with the cost and timeline of traditional big-ticket NASA science missions.",
-        "The comments align with a broader shift in the space industry toward commercialization and commoditization of satellite hardware, driven in large part by companies like SpaceX and a new generation of small-sat manufacturers. If NASA can tap into that ecosystem effectively, it could mean a dramatic increase in the volume and frequency of scientific observations from orbit."
+        "Fox\'s acquisition of Roku in a $22 billion deal represents one of the most significant media and technology mergers in recent memory, positioning the broadcaster to control the gateway through which tens of millions of viewers access streaming services like Netflix, Disney Plus, and Hulu. The deal may not immediately change Roku\'s familiar purple interface, but it gives Fox unprecedented leverage over how consumers navigate the streaming landscape.",
+        "The acquisition underscores the intensifying battle for control of the living room, as traditional media companies seek to gain distribution advantages in a market increasingly dominated by streaming. For Roku, the deal offers the financial backing of a major media conglomerate; for Fox, it represents a bold bet that owning the platform matters as much as owning the content."
       ],
-      image: "https://cdn.arstechnica.net/wp-content/uploads/2026/05/jpegPIA10500.jpg",
-      source: "Ars Technica",
-      url: "https://arstechnica.com/space/2026/05/ill-buy-10-of-those-nasa-science-chief-yearns-for-mass-produced-satellites/",
-      category: "Space"
+      image: "https://cdn.arstechnica.net/wp-content/uploads/2025/08/nvidia-chip-1152x648-1754500479.jpg",
+      source: "The Verge",
+      url: "https://www.theverge.com/streaming/950116/fox-roku-takeover",
+      category: "Technology"
     },
     {
       id: "tc3",
-      title: "Plex Triples Lifetime Pass Price to $750, Pushing Users Toward Subscription Model",
-      summary: "Plex is raising the price of its Lifetime Pass to $750 — a near-tripling of the current cost — giving existing and prospective users until July 1st to lock in today\'s rate before the hike takes effect.",
+      title: "Meta Rolls Out 'AI Mode' on Facebook Powered by Public Posts",
+      summary: "Meta is launching a new AI Mode for Facebook search that draws on public information from across its platforms to generate AI-powered results.",
       body: [
-        "The move is the latest in a series of aggressive pricing changes from Plex, which doubled the Lifetime Pass price last year and is now tripling it again, signaling that the company is deliberately trying to steer its user base away from one-time purchases and toward recurring subscription revenue. The Lifetime Pass has long been a popular option among Plex\'s dedicated community of home media server enthusiasts, making the hike feel particularly pointed.",
-        "Plex has reportedly even considered eliminating the Lifetime Pass option altogether, and this latest increase may be a step in that direction rather than simply a revenue adjustment. For users who rely on Plex to stream their own locally stored media from their own hardware, the irony of paying escalating fees to access content they already own has not been lost on a vocal and frustrated community."
+        "Meta\'s new AI Mode feature on Facebook will appear alongside standard search options like People and Marketplace, offering users AI-generated answers that are informed by public posts across Meta\'s ecosystem of platforms. The rollout is part of a broader wave of AI features the company is deploying as it works to compete more aggressively in the AI race and keep users more deeply engaged.",
+        "The feature raises questions about how Meta will handle the vast troves of public user-generated content it is now feeding into AI systems, even as the company frames it as a productivity and discovery tool. It reflects the increasingly central role AI is playing in how social media platforms are redesigning their core user experiences."
       ],
-      image: "https://cdn.arstechnica.net/wp-content/uploads/2026/05/plex-1152x648.jpg",
-      source: "The Verge",
-      url: "https://www.theverge.com/tech/934269/plex-pass-lifetime-subscription-triple-750-price-hike",
-      category: "Software"
+      image: "https://images.unsplash.com/photo-1689439518156-3659596b5c6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxNZXRhJTIwUm9sbHMlMjBPdXQlMjB8ZW58MHwwfHx8MTc4MTU4NjI3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "TechCrunch",
+      url: "https://techcrunch.com/2026/06/15/metas-new-ai-mode-on-facebook-pulls-from-public-info-across-its-platforms/",
+      category: "Artificial Intelligence"
     }
   ]
 };
