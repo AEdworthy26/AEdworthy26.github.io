@@ -1,61 +1,61 @@
 // world-news-data.js
-// Auto-updated 2026-06-16 — do not edit manually
+// Auto-updated 2026-06-17 — do not edit manually
 
 var WORLD_NEWS = {
-  date: "2026-06-16",
+  date: "2026-06-17",
   main: {
-    title: "U.S. and Iran Sign Preliminary Deal to End Fighting and Reopen Strait of Hormuz",
+    title: "Tehran Selling US-Iran Deal as Victory – But For Iranians It Was Necessity",
     category: "Geopolitics",
     content: [
-      "The United States and Iran have signed a preliminary agreement aimed at ending hostilities and reopening the Strait of Hormuz, a critical global shipping lane whose closure had sent energy markets into turmoil. President Trump and Iran\'s lead negotiator both signed the framework deal, though the specific terms have not been publicly released. The agreement marks a significant, if fragile, diplomatic breakthrough following a brief but deadly conflict that left thousands dead.",
-      "Vice President Vance described the document as 'about a page and a half' and 'very general', acknowledging that many of the finer details will need to be worked out in subsequent negotiations. The preliminary nature of the deal has drawn both cautious optimism and sharp scrutiny from observers, who note that critical questions remain unanswered. The lack of transparency around the agreement\'s terms has already raised concerns among key regional partners, with Israel\'s leader appearing not to be fully on board with the arrangement.",
-      "BBC News correspondent Jeremy Bowen characterised the deal as one that effectively leaves both sides where they were just 24 hours before the conflict escalated — only with a devastating human cost now attached. The war, Bowen argued, revealed the limits of American dominance in the region, as the U.S. was unable to achieve a decisive strategic victory despite its overwhelming military capacity. Iran, meanwhile, demonstrated a willingness to absorb significant punishment before agreeing to a ceasefire framework.",
-      "Markets responded swiftly and positively to news of the agreement. Crude oil prices fell sharply as traders priced in the prospect of the Strait of Hormuz reopening, alleviating fears of a prolonged energy supply crisis that had rattled economies worldwide. U.S. stock markets also climbed, with the benchmark S&P 500 rising 1.7 percent and the tech-heavy Nasdaq jumping 3.1 percent, reflecting broad investor relief that the conflict appeared to be drawing to a close.",
-      "Trump arrived in France for the G7 leaders summit in Cannes touting the agreement as a diplomatic victory, and was congratulated by French President Emmanuel Macron upon his arrival. The G7 gathering now provides an immediate international forum in which the deal\'s implications can be discussed among the world\'s leading economies. However, with the full text of the agreement yet to be released and major implementation details unresolved, analysts warn that the road to a durable peace remains long and uncertain."
+      "A landmark agreement between the United States and Iran is reshaping the geopolitical landscape of the Middle East, with Tehran\'s government working to frame the deal as a diplomatic triumph for the Islamic Republic. Iran\'s foreign minister announced that new talks on nuclear arms and sanctions relief would begin on Friday, immediately after an initial agreement is formally signed. The development marks one of the most significant shifts in US-Iran relations in years, and comes after a period of intense military tension that left the region on edge.",
+      "For ordinary Iranians, however, the framing of victory rings hollow against the backdrop of economic hardship and the ever-present fear of renewed conflict. The central question on the streets of Tehran and other cities is not whether the deal represents a geopolitical win, but whether it will bring down prices and reduce the threat of another devastating war. Years of sanctions have taken a severe toll on the Iranian economy, and many citizens are more focused on practical relief than on national prestige.",
+      "President Trump, meanwhile, expressed hope that the war could be put in the 'rearview mirror,' signalling a desire to move beyond the conflict that has destabilised the wider region. The agreement has injected cautious optimism into diplomatic circles, with G7 leaders meeting in France also noting that the Iran peace framework helped soften the tone of their summit. European leaders, long critical of Trump\'s foreign policy approach, appeared to welcome the development as a potential turning point.",
+      "The deal, however, leaves significant unanswered questions, not least regarding the position of Israel, which has been notably sidelined in the negotiations. Israel\'s ambassador to the United States stated plainly that Israel is 'not going to withdraw from South Lebanon,' complicating any broader regional settlement. Analysts warn that without Israeli buy-in, the fragile architecture of any peace agreement could be severely tested in the months ahead.",
+      "The situation in Lebanon underscores just how precarious the current moment remains. Many Lebanese citizens are deeply doubtful that the US-Iran truce could finally bring an end to the protracted fighting between Israel and Hezbollah, which has caused widespread destruction and displacement. For the region as a whole, the coming weeks of follow-up diplomacy will be critical in determining whether this agreement represents a genuine turning point or merely another pause in a cycle of conflict."
     ],
-    image: "https://static01.nyt.com/images/2026/07/15/multimedia/15mideast-promo-0035-kvlf/15mideast-promo-0035-kvlf-mediumSquareAt3X.jpg",
-    source: "The New York Times",
-    sourceUrl: "https://www.nytimes.com/live/2026/06/15/world/iran-war-trump-us-deal"
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/bd69/live/fa1ab490-698f-11f1-bf78-b9ee73ed2967.jpg",
+    source: "BBC News",
+    sourceUrl: "https://www.bbc.com/news/articles/cn4rwzxvl8ko?at_medium=RSS&at_campaign=rss"
   },
   secondary: [
     {
       id: "s1",
-      title: "Russia Strikes Kyiv\'s Historic Pechersk Lavra Monastery as Drone War Intensifies",
-      summary: "A Russian drone and missile attack on Kyiv has set fire to one of Ukraine\'s most revered Orthodox Christian cultural and religious sites.",
+      title: "Russian Artist and Putin Critic Shot Dead in Poland",
+      summary: "Robert Kuzovkov, a Russian artist known for caricatures of Vladimir Putin, has been shot dead in Poland in what appears to be a targeted killing.",
       body: [
-        "Russian strikes targeted Kyiv overnight, with the historic Pechersk Lavra monastery — a sacred site for both Ukrainian and Russian Orthodox faiths — badly damaged by fire in the assault. A bishop reported that many holy items had been recovered from the cathedral before the blaze took hold, though the cultural and spiritual loss is described as devastating. The attack is the latest in a pattern of Russian strikes targeting Ukraine\'s cultural heritage.",
-        "The assault underscores how the war in Ukraine continues to reach beyond military targets, leaving deep cultural scars across the country. Previous strikes have damaged Kharkiv\'s Art Museum and other storied landmarks, drawing widespread international condemnation. The destruction of religiously significant sites has added a particular dimension of grief to the ongoing conflict."
+        "Robert Kuzovkov, who worked under the pseudonym Semyon Skrepetsky and was well known for his satirical caricatures of Russian President Vladimir Putin and other politicians, has been killed in Poland. The shooting raises immediate fears of a politically motivated assassination targeting a prominent Kremlin critic living in exile.",
+        "The killing is likely to intensify international scrutiny of the safety of Russian dissidents and anti-Putin voices abroad, particularly in European countries that have become home to many who fled Russia. Polish authorities are investigating the circumstances of his death, and the incident adds to a troubling pattern of critics of the Russian government meeting violent ends outside Russia\'s borders."
       ],
-      image: "https://images.unsplash.com/photo-1656426743061-d9d7f5848912?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxSdXNzaWElMjBTdHJpa2VzJTIwS3lpdiU1Q3xlbnwwfDB8fHwxNzgxNTg2MDg4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "The New York Times",
-      url: "https://www.nytimes.com/2026/06/15/world/europe/ukraine-kyiv-russia-attack-orthodox-cathedral.html",
-      category: "Conflict"
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/802d/live/a26f4a30-6962-11f1-9f4a-21531e88e991.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.com/news/articles/clyrzd5g6k2o?at_medium=RSS&at_campaign=rss",
+      category: "Security"
     },
     {
       id: "s2",
-      title: "Ukraine Opens First Phase of EU Membership Talks",
-      summary: "Ukraine has officially begun the first phase of negotiations to join the European Union, marking a landmark moment in its bid for membership.",
+      title: "Global Attacks on Schools Surge 40% With Over 10,600 Students and Staff Harmed",
+      summary: "A new study has found that violent attacks on schools, pupils, and staff worldwide increased by 40%, with incidents recorded across 83 countries in 2024 and 2025.",
       body: [
-        "Ukraine formally opened membership talks with the European Union on Monday, beginning the structured accession process that could eventually see the war-torn country join the bloc. The move represents the culmination of years of political effort by Kyiv and strong advocacy from Eastern European EU member states. The opening of talks is seen as a powerful signal of the EU\'s long-term commitment to Ukraine\'s sovereignty and future.",
-        "EU accession is a lengthy and complex process involving alignment with a vast body of European law and governance standards, meaning full membership remains years away. Nevertheless, the symbolic and political significance of formally beginning negotiations is considerable, both for Ukrainians and for the EU\'s geopolitical posture toward Russia. The development comes as Ukraine continues to face Russian military aggression on its territory."
-      ],
-      image: "https://images.unsplash.com/photo-1758138225333-ceb6e904ccba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxVa3JhaW5lJTIwT3BlbnMlMjBGaXJzdCUyMFBoYXNlJTIwb2YlMjBFVSUyME1lbWJlcnNoaXAlMjBUYWxrc3xlbnwwfDB8fHwxNzgxNTg2MDg5fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "Al Jazeera",
-      url: "https://www.aljazeera.com/video/newsfeed/2026/6/16/ukraine-starts-negotiations-to-join-eu?traffic_source=rss",
-      category: "Diplomacy"
-    },
-    {
-      id: "s3",
-      title: "Attacks on Schools Worldwide Surge 40%, With Over 10,600 Students and Staff Harmed",
-      summary: "A new global study has found that violent attacks on schools, pupils, and education staff rose by 40% in 2024 and 2025, affecting 83 countries.",
-      body: [
-        "Research from the Global Coalition to Protect Education from Attack (GCPEA) has documented 8,556 recorded incidents of attacks on education in 2024 and 2025, resulting in at least 10,600 students and staff being killed, injured, abducted, arrested, or otherwise harmed. The incidents were reported across 83 countries, indicating that the threat to education from armed conflict and violence is a truly global crisis. The 40% surge compared to previous periods points to a dramatic deterioration in the safety of educational environments worldwide.",
-        "The findings highlight the devastating human cost of ongoing conflicts and instability on some of the world\'s most vulnerable populations — children and teachers. Armed groups, state forces, and other actors have all been implicated in attacks on schools, which in many cases are also used for military purposes, making them targets. Humanitarian and education advocates are calling for urgent international action to enforce existing legal protections for schools in conflict zones."
+        "Research published by the Global Coalition to Protect Education from Attack (GCPEA) has revealed a dramatic 40% surge in attacks on education globally, with more than 8,556 recorded incidents and at least 10,600 students and staff killed, injured, abducted, arrested or otherwise harmed across 2024 and 2025. The scale of the crisis spans 83 countries, reflecting the increasingly dangerous environment in which millions of children and educators attempt to learn and teach.",
+        "The findings represent a stark warning to the international community about the erosion of protections for education in conflict zones and beyond. Attacks on schools and universities not only cause immediate physical harm but also have long-lasting consequences for affected communities, disrupting education for entire generations and deepening cycles of poverty and instability."
       ],
       image: "https://i.guim.co.uk/img/media/6dac1cfee0895baf98d046cb4ae8c69266ffb82e/342_0_1977_1582/master/1977.jpg?width=1200&quality=85&auto=format&fit=max&s=ced5a2717105c4621a0c661ef7f67441",
       source: "The Guardian",
       url: "https://www.theguardian.com/global-development/2026/jun/15/global-attacks-killing-abductions-education-pupils-staff-up-40pc-gcpea-study",
       category: "Global Development"
+    },
+    {
+      id: "s3",
+      title: "Messi Hat-Trick Fires Argentina to Opening World Cup Win Over Algeria",
+      summary: "Lionel Messi scored a hat-trick as defending champions Argentina opened their 2026 World Cup campaign with a commanding 3-0 victory against Algeria.",
+      body: [
+        "In a moment that further cements his status as the greatest footballer of all time, Lionel Messi scored three goals as Argentina defeated Algeria 3-0 in their opening match of the 2026 World Cup. Remarkably, the hat-trick came exactly 20 years to the day that Messi made his World Cup debut for Argentina, adding a poetic dimension to an already historic performance.",
+        "The victory signals that the defending champions remain a formidable force as they bid to retain the trophy they won in 2022. The 2026 World Cup has already been described as a thrilling edition, and Messi\'s record sixth World Cup appearance — now marked by one of his finest individual performances on the biggest stage — has captivated fans around the globe."
+      ],
+      image: "https://images.pexels.com/photos/36024823/pexels-photo-36024823.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      source: "Al Jazeera",
+      url: "https://www.aljazeera.com/sports/2026/6/17/messi-fires-argentina-to-win-against-algeria-in-world-cup-defence-opener?traffic_source=rss",
+      category: "Sport"
     }
   ]
 };

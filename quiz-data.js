@@ -1,10 +1,10 @@
 // quiz-data.js
-// Auto-updated 2026-06-16 — do not edit manually
+// Auto-updated 2026-06-17 — do not edit manually
 
 window.QUIZ_DATA = {
-  date: '2026-06-16',
-  category: 'Sport',
-  question: 'At the 1970 FIFA World Cup in Mexico, which Brazilian player scored what is often voted the greatest goal in World Cup history, finishing a sweeping 11-pass team move against Italy in the final?',
-  answer: 'Carlos Alberto',
-  funFact: 'The goal, scored in the 86th minute of the final in Mexico City, capped a move involving almost every Brazilian outfield player and sealed a 4–1 victory. Carlos Alberto, the captain, arrived late to slam the ball into the net with his right foot. Brazil were allowed to keep the Jules Rimet Trophy permanently after winning it for the third time that day.'
+  date: '2026-06-17',
+  category: 'Music',
+  question: 'Which British singer released the 1983 hit "Red Red Wine," which had originally been recorded by Neil Diamond in 1967, and what was the name of the band?',
+  answer: 'UB40, with lead vocalist Ali Campbell.',
+  funFact: 'UB40\'s reggae-inflected cover became a far bigger hit than Diamond\'s original, reaching number one in the UK and — after a delayed US release in 1988 — topping the American Billboard Hot 100 as well. The band took their name from the form number of the UK unemployment benefit card, reflecting the economic hardship of their Birmingham roots. Neil Diamond himself has said he prefers the UB40 version to his own original recording.'
 };

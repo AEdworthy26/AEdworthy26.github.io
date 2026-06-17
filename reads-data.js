@@ -1,19 +1,19 @@
 // reads-data.js
-// Auto-updated 2026-06-16 — do not edit manually
+// Auto-updated 2026-06-17 — do not edit manually
 
 var READS_DATA = {
-  date: "2026-06-16",
+  date: "2026-06-17",
   book: {
-    title: "The Buried Giant",
-    author: "Kazuo Ishiguro",
-    year: 2015,
-    genres: ["Literary Fiction", "Fantasy", "Allegory"],
-    desc: "In post-Arthurian Britain, an elderly couple sets out across a mist-shrouded landscape to find a son they can barely remember, in a country where everyone has forgotten the past — and where a dragon\'s breath may be keeping it that way. Ishiguro, working in a register far stranger than his usual realist mode, turns Arthurian myth into a meditation on marriage, memory, collective forgiveness, and the terrible cost of peace. The prose moves at a deliberate, dreamlike pace that pulls you deeper even as it unsettles you, and the emotional payload of the final act lands with quiet devastation. It is a book about what nations and couples choose to forget in order to go on living together, and whether unearthing the truth is always an act of courage — or sometimes one of cruelty.",
-    whyRead: "With the world in a season of contested memory and historical reckoning, Ishiguro\'s fable about the politics of forgetting feels less like fantasy and more like a mirror held up to right now.",
-    rating: 3.9,
+    title: "The Overstory",
+    author: "Richard Powers",
+    year: 2018,
+    genres: ["Literary Fiction", "Nature", "Environmental"],
+    desc: "Richard Powers weaves together nine interconnected stories of people whose lives are transformed by their encounters with trees — a chestnut that survives a blight to become a family\'s living diary, a scientist who discovers that forests communicate and cooperate, an activist pair who spend years in the canopy of a doomed redwood. The novel is dizzyingly ambitious, structured like a tree itself: roots, trunk, crown, and seeds. Powers renders the inner lives of non-human organisms with a conviction that quietly dismantles everything you thought you knew about consciousness, time, and what it means to be alive. It won the Pulitzer Prize for Fiction and is the rare novel that genuinely changes how readers move through the world — many report they cannot look at a tree the same way again.",
+    whyRead: "With ecological anxiety running at full pitch in 2026, this is the book that transforms abstract crisis into something felt in the body — urgent, gorgeous, and impossible to dismiss.",
+    rating: 4.2,
     ratingSource: "Goodreads",
-    ratingCount: "90,000+",
-    coverUrl: "https://covers.openlibrary.org/b/id/12602978-L.jpg",
-    amazonUrl: "https://www.amazon.co.uk/dp/2762138981"
+    ratingCount: "290,000+",
+    coverUrl: null,
+    amazonUrl: null
   }
 };

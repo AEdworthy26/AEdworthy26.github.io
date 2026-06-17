@@ -1,61 +1,61 @@
 // tech-news-data.js
-// Auto-updated 2026-06-16 — do not edit manually
+// Auto-updated 2026-06-17 — do not edit manually
 
 var TECH_NEWS = {
-  date: "2026-06-16",
+  date: "2026-06-17",
   main: {
-    title: "Inside the Fight Over Claude Mythos 5: Anthropic vs. the Trump Administration",
-    category: "Artificial Intelligence",
+    title: "Android 17 Arrives on Pixel Phones Today",
+    category: "Technology",
     content: [
-      "Anthropic, the AI safety company behind the Claude family of models, spent a fraught weekend locked in a dispute with the Trump administration after receiving a US export control directive at 5:21 PM on Friday. The directive ordered the company to suspend access to its latest models, Mythos 5 and Fable 5, marking one of the most dramatic confrontations yet between a major AI lab and the federal government. The timing was particularly striking, arriving as much of the country was celebrating the United States' first-ever World Cup victory and the New York Knicks' championship.",
-      "The export control directive caught Anthropic largely off guard, forcing its leadership and legal teams to work through the weekend to understand the scope of the order and mount a response. Export controls are typically associated with hardware and semiconductors — tools that can be physically prevented from crossing borders — but applying them to software models represents a significant and novel escalation in how the government is choosing to regulate the AI industry. The move signals that Washington is increasingly willing to treat advanced AI models as strategic assets subject to national security restrictions.",
-      "According to reporting by The Verge, the administration\'s decision to target Anthropic\'s cybersecurity-focused models may be retaliatory or reactionary in nature, rather than driven by a specific, credible threat. TechCrunch noted that the ban was never about an AI jailbreak, as some early speculation suggested, but rather reflects a broader pattern of the Trump administration asserting control over the AI sector in ways that go beyond conventional regulatory frameworks. The distinction matters enormously, because a jailbreak-based rationale would imply a fixable technical problem, whereas a politically motivated directive suggests ongoing and unpredictable interference.",
-      "The episode raises profound questions about the independence of American AI companies and their ability to release and distribute products without government interference. Anthropic has built its brand around safety-focused AI development, and the irony of its most safety-conscious models being pulled from distribution by government order has not been lost on industry observers. If companies cannot predict when or why a model might be targeted, it could chill investment in cybersecurity AI tools at a moment when demand for such capabilities is surging globally.",
-      "The broader implications for the AI industry are significant and unsettling. Other major AI labs will be watching closely to see how Anthropic navigates the dispute and what precedent emerges from it. The incident underscores a new and volatile dynamic in which the competitive race to build more powerful AI models is now intersecting with geopolitical strategy, domestic politics, and export law in ways the industry has never had to contend with before. Whatever the outcome for Anthropic, the message to the entire sector appears unmistakable: the AI industry is no longer operating outside the reach of US government intervention."
+      "Google has officially begun rolling out Android 17 to compatible Pixel phones today, marking one of the most feature-rich annual Android updates in recent memory. The release follows the operating system\'s official debut last month, and arrives alongside additional exclusive features as part of the June Pixel Drop. Not every feature announced alongside the OS at the pre-I/O Android Show is available on day one, but the core update is now making its way to users.",
+      "Among the headline features of Android 17 is a new floating 'Bubble' app window system designed to make multitasking significantly easier for users juggling multiple applications. The Bubble interface allows apps to float over other content on the screen, enabling quicker switching and more fluid workflows without fully leaving the current app. This kind of windowed multitasking has been a long-requested feature from power users and productivity-focused Android fans.",
+      "Android 17 also introduces a Screen Reaction recording mode, which represents a meaningful upgrade for content creators and anyone who shares their phone screen with others. This mode likely allows the device to capture on-screen activity alongside camera or reaction feeds, opening up new possibilities for video content directly from a Pixel device. The addition signals Google\'s continued push to make Pixel phones a first-class platform for creators.",
+      "For foldable phone owners, Android 17 brings a dedicated 50/50 split gaming mode that takes advantage of the larger, unfolded display format. This feature underscores Google\'s growing commitment to the foldable form factor as a serious platform for both productivity and entertainment. As foldable devices become more mainstream, software features tailored specifically to their unique screen configurations become increasingly important differentiators.",
+      "The Android 17 rollout is accompanied by the simultaneous launch of Wear OS 7, which brings Live Updates and improved battery life to Pixel Watch devices. Together, the two releases represent a cohesive push from Google to update its entire hardware ecosystem in a coordinated fashion. The combination of phone and wearable improvements on the same day demonstrates Google\'s maturing ability to deliver synchronized platform updates across its growing lineup of first-party devices."
     ],
-    image: "https://images.pexels.com/photos/36806945/pexels-photo-36806945.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    image: "https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxBbmRyb2lkJTIwMTclMjBBcnJpdmVzJTIwb24lMjBQaXhlbCUyMFBob25lcyUyMFRvZGF5fGVufDB8MHx8fDE3ODE2NzI2NzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
     source: "The Verge",
-    sourceUrl: "https://www.theverge.com/ai-artificial-intelligence/950412/anthropic-trump-adminstration-claude-mythos-fable-5-export-controls"
+    sourceUrl: "https://www.theverge.com/tech/950651/android-17-release-pixel-drop-google-bubble-screen-reaction"
   },
   secondary: [
     {
       id: "tc1",
-      title: "Nvidia Seeks to Raise Over $25 Billion in First Bond Deal Since 2021",
-      summary: "Nvidia is launching a massive debt sale to raise more than $25 billion, its first bond offering in five years, testing investor appetite for continued AI sector exposure.",
+      title: "SpaceX Valuation Surges to $2.6 Trillion, Briefly Surpassing Amazon",
+      summary: "SpaceX\'s valuation has skyrocketed to $2.6 trillion, increasing by a staggering $1 trillion in just days as its shares began trading.",
       body: [
-        "The chipmaker Nvidia has moved to raise over $25 billion through a bond deal, its largest debt offering since 2021, as the company looks to capitalize on its dominant position in the AI hardware market. The sale is being closely watched as a barometer of how hungry investors remain for exposure to the AI sector amid a broader wave of borrowing across the technology industry.",
-        "Nvidia\'s move into the bond market comes as the company continues to post extraordinary revenues driven by insatiable demand for its GPUs from AI data centers. The scale of the offering reflects both the company\'s financial ambitions and the confidence its leadership has in sustained AI infrastructure spending for the years ahead."
+        "SpaceX has reached a landmark valuation of $2.6 trillion, briefly overtaking Amazon in total market value in a remarkable milestone for the private aerospace and technology company. The $1 trillion increase occurred rapidly after the company\'s shares began trading on Friday, signaling extraordinary investor confidence in SpaceX\'s trajectory.",
+        "The valuation surge cements SpaceX\'s status as one of the most valuable companies in the world, rivaling the largest publicly traded tech giants despite remaining a private entity. The milestone reflects broader enthusiasm for the company\'s expanding portfolio, which spans satellite internet through Starlink, rocket launch services, and ambitious deep-space exploration goals."
       ],
-      image: "https://cdn.arstechnica.net/wp-content/uploads/2025/08/nvidia-chip-1152x648-1754500479.jpg",
-      source: "Ars Technica",
-      url: "https://arstechnica.com/ai/2026/06/chipmaker-nvidia-seeks-to-raise-over-25b-in-first-bond-deal-since-2021/",
+      image: "https://images.pexels.com/photos/586054/pexels-photo-586054.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      source: "TechCrunch",
+      url: "https://techcrunch.com/2026/06/16/spacex-valuation-balloons-to-2-6t-briefly-passes-amazon/",
       category: "Technology"
     },
     {
       id: "tc2",
-      title: "Fox Acquires Roku in $22 Billion Deal to Take Over Your TV",
-      summary: "Fox has announced a $22 billion acquisition of streaming platform Roku, a move that would give the media giant a foothold in more than 100 million homes worldwide.",
+      title: "Qualcomm Bets Big on AI Wearables as the Next Major Computing Platform",
+      summary: "Qualcomm has announced two new products and revealed it is working on over 40 AI wearable devices, signaling a major strategic shift away from smartphones.",
       body: [
-        "Fox\'s acquisition of Roku in a $22 billion deal represents one of the most significant media and technology mergers in recent memory, positioning the broadcaster to control the gateway through which tens of millions of viewers access streaming services like Netflix, Disney Plus, and Hulu. The deal may not immediately change Roku\'s familiar purple interface, but it gives Fox unprecedented leverage over how consumers navigate the streaming landscape.",
-        "The acquisition underscores the intensifying battle for control of the living room, as traditional media companies seek to gain distribution advantages in a market increasingly dominated by streaming. For Roku, the deal offers the financial backing of a major media conglomerate; for Fox, it represents a bold bet that owning the platform matters as much as owning the content."
+        "Qualcomm CEO Cristiano Amon announced Tuesday that the chipmaker is collaborating on more than 40 different AI wearable devices, including jewelry, camera-equipped earbuds, pins, and smartwatches, as part of an aggressive push to define the next era of personal computing. The company unveiled two new products aimed squarely at this emerging wearables market.",
+        "Qualcomm\'s strategy reflects a growing industry conviction that the smartphone, long the dominant personal computing device, may eventually be supplemented or replaced by a constellation of smaller, always-on AI-powered wearables. By positioning its chips at the heart of this transition, Qualcomm aims to replicate the central role it played in the smartphone revolution for whatever platform comes next."
       ],
-      image: "https://cdn.arstechnica.net/wp-content/uploads/2025/08/nvidia-chip-1152x648-1754500479.jpg",
-      source: "The Verge",
-      url: "https://www.theverge.com/streaming/950116/fox-roku-takeover",
+      image: "https://images.unsplash.com/photo-1758714919726-88145c5b0d45?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxRdWFsY29tbSUyMEJldHMlMjBCaWclMjBvbiUyMEFJJTIwV2VhcmFibGVzJTIwYXMlMjB0aGUlMjBOZXh0JTIwTWFqb3IlMjBDb21wdXRpbmclMjBQbGF0Zm9ybXxlbnwwfDB8fHwxNzgxNjcyNjc1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "TechCrunch",
+      url: "https://techcrunch.com/2026/06/16/qualcomm-wants-to-be-the-chip-inside-whatever-replaces-your-smartphone-and-it-just-announced-two-products-toward-that-end/",
       category: "Technology"
     },
     {
       id: "tc3",
-      title: "Meta Rolls Out 'AI Mode' on Facebook Powered by Public Posts",
-      summary: "Meta is launching a new AI Mode for Facebook search that draws on public information from across its platforms to generate AI-powered results.",
+      title: "Google Launches Wear OS 7 with Live Updates and Battery Life Improvements",
+      summary: "Google\'s Wear OS 7 is rolling out today for Pixel Watch 2, 3, and 4, bringing a new Live Updates feature and meaningful battery life gains.",
       body: [
-        "Meta\'s new AI Mode feature on Facebook will appear alongside standard search options like People and Marketplace, offering users AI-generated answers that are informed by public posts across Meta\'s ecosystem of platforms. The rollout is part of a broader wave of AI features the company is deploying as it works to compete more aggressively in the AI race and keep users more deeply engaged.",
-        "The feature raises questions about how Meta will handle the vast troves of public user-generated content it is now feeding into AI systems, even as the company frames it as a productivity and discovery tool. It reflects the increasingly central role AI is playing in how social media platforms are redesigning their core user experiences."
+        "Wear OS 7 is now available for Pixel Watch 2, 3, and 4, introducing a Live Updates feature that syncs real-time information — such as sports scores or food delivery tracking — directly to a user\'s wrist. The update ensures that dynamic notifications users already rely on from their Android phones will now surface seamlessly on their smartwatch.",
+        "Beyond Live Updates, Wear OS 7 also promises improved battery life, a perennial concern for smartwatch users who often find themselves charging their devices daily. The release also lays the groundwork for future connectivity with Android XR smart glasses, hinting at Google\'s broader ambitions to build a tightly integrated ecosystem of wearable and extended reality devices."
       ],
-      image: "https://images.unsplash.com/photo-1689439518156-3659596b5c6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxNZXRhJTIwUm9sbHMlMjBPdXQlMjB8ZW58MHwwfHx8MTc4MTU4NjI3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "TechCrunch",
-      url: "https://techcrunch.com/2026/06/15/metas-new-ai-mode-on-facebook-pulls-from-public-info-across-its-platforms/",
-      category: "Artificial Intelligence"
+      image: "https://images.pexels.com/photos/32767987/pexels-photo-32767987.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      source: "The Verge",
+      url: "https://www.theverge.com/gadgets/950671/wear-os-7-pixel-watches-launch",
+      category: "Technology"
     }
   ]
 };

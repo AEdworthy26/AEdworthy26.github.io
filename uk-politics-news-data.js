@@ -1,60 +1,60 @@
 // uk-politics-news-data.js
-// Auto-updated 2026-06-16 — do not edit manually
+// Auto-updated 2026-06-17 — do not edit manually
 
 var UK_POLITICS_NEWS = {
-  date: "2026-06-16",
+  date: "2026-06-17",
   main: {
-    title: "Russia Was Behind Arson Attacks Targeting PM Starmer, BBC Reveals",
+    title: "Streeting Warns Starmer He Could Trigger Labour Leadership Contest As Early As Next Week",
     category: "Politics",
     content: [
-      "A BBC investigation has revealed that Russia was the directing force behind a series of arson attacks targeting properties and a vehicle linked to Prime Minister Keir Starmer. The findings represent a dramatic escalation in the known scope of the attacks, which had previously been treated primarily as a domestic criminal matter. Two men have now been found guilty in connection with the attacks, but the BBC\'s reporting makes clear that the plot extended far beyond the individuals prosecuted in court.",
-      "According to the BBC, evidence shows that Russian operatives were actively directing the plot against the Prime Minister. The revelation places the attacks within the broader context of alleged Russian state interference in British public life, a pattern that security services and politicians have warned about with increasing urgency in recent years. The specific chain of command and the methods used by Russian handlers to coordinate the arson campaign are central to the BBC\'s findings.",
-      "Particularly alarming is the BBC\'s revelation that those behind the plot also sought to stoke social division within Britain. Russian actors are said to have used fake far-right and Muslim groups to inflame tensions, suggesting the arson attacks were part of a wider information and destabilisation operation rather than simply a targeted assault on the Prime Minister himself. This dual strategy — physical attack combined with manufactured community conflict — points to a sophisticated and coordinated effort.",
-      "The convictions of the two men found guilty over the attacks mark a significant moment for British law enforcement, but the BBC\'s findings raise profound questions about the extent to which domestic criminal prosecutions can fully address the threat posed by state-sponsored interference. Security analysts are likely to argue that prosecuting individual perpetrators, while necessary, does not adequately deter a foreign government with the resources and motivation to run such operations on British soil.",
-      "The revelations come at a particularly sensitive moment for the Starmer government, which has been dealing with a turbulent period in domestic politics. The Prime Minister has been at the G7 summit in France this week, where he has pledged new sanctions against Russia and promised continued support for Ukraine. The confirmation of Russian involvement in attacks on his own property lends a deeply personal dimension to his confrontation with Moscow, and is likely to intensify pressure on the government to take further action against Russian networks operating within and targeting the United Kingdom.",
+      "Wes Streeting, the former health secretary, has issued a dramatic public warning to Prime Minister Sir Keir Starmer, stating that he would be prepared to trigger a Labour leadership contest as early as next week. Speaking to BBC Newsnight, Streeting confirmed he has secured the backing of the 80 MPs required to stand in a contest under Labour Party rules. The intervention marks one of the most serious and direct challenges to Starmer\'s authority since he entered Downing Street.",
+      "Despite the stark warning, Streeting insisted he would prefer for the situation not to come to a forced contest, expressing a preference for the Prime Minister to 'take a decision on his own terms'. The former health secretary\'s comments suggest a belief within significant sections of the Parliamentary Labour Party that Starmer\'s leadership is no longer tenable. The carefully worded statement nonetheless leaves little ambiguity about Streeting\'s readiness to act if Starmer does not move first.",
+      "The challenge comes at a deeply difficult moment for the Prime Minister, who is currently attending the G7 summit abroad. Critics within the party have pointed to a series of setbacks in recent weeks, including the high-profile resignation of former Defence Secretary John Healey over the government\'s defence investment plan, as evidence that the administration is losing its sense of direction. The combination of internal dissent and external pressures has left Starmer increasingly isolated.",
+      "Streeting\'s move follows a broader pattern of senior Labour figures beginning to position themselves or voice concerns about the party\'s trajectory under Starmer. Sky News has also reported on Streeting\'s warning, with the former health secretary telling their political team directly that a leadership challenge next week remains a live possibility. The convergence of multiple media appearances on the same day suggests a coordinated effort to maximise pressure on the Prime Minister.",
+      "The developments raise profound questions about the future direction of the Labour government and what a potential leadership transition might look like. With the Makerfield by-election in the recent political backdrop and polling showing growing public disillusionment, the arithmetic of Labour\'s parliamentary majority adds further complexity to any contest. Westminster is now braced for what could be one of the most consequential weeks in British domestic politics in years."
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/7fbd/live/e9c69370-662e-11f1-8546-8f19e4fe30f4.png",
+    image: "https://static.independent.co.uk/2026/06/17/00/2281246189..?width=1200&auto=webp&trim=0%2C0%2C0%2C0",
     source: "BBC News",
-    sourceUrl: "https://www.bbc.com/news/articles/c8r2l352z2do?at_medium=RSS&at_campaign=rss"
+    sourceUrl: "https://www.bbc.com/news/articles/c4gyeg2207yo?at_medium=RSS&at_campaign=rss"
   },
   secondary: [
     {
       id: "uk1",
-      title: "Reform Pledges New Tax on Hiring Foreign Workers to Fund NI Reversal",
-      summary: "Reform UK has announced plans to introduce a levy on employers hiring foreign workers, promising to use the revenue to reverse last year\'s National Insurance rise for British workers.",
+      title: "UK Forces Face Operational Cuts Without More Cash, Defence Chief Warns",
+      summary: "Britain\'s defence chief has warned that the armed forces will face significant operational cuts unless further funding is provided, as ex-defence secretary John Healey says the UK\'s enemies do not follow Treasury timetables.",
       body: [
-        "Reform UK has set out a policy that would impose a new tax on businesses for each foreign worker they employ, framing the measure as a way to prioritise British workers in the labour market. The party argues the funds raised would be sufficient to reverse the National Insurance increase introduced by the Labour government last year, which proved deeply unpopular with both employers and employees.",
-        "The announcement represents Reform\'s latest attempt to position itself as a credible policy-making force rather than solely a protest movement, ahead of what is expected to be an increasingly competitive electoral landscape. Whether the numbers add up to the scale of NI relief promised will face close scrutiny from economists and political opponents alike."
+        "The head of the UK\'s armed forces has issued a stark warning that without additional government funding, operational capabilities will have to be reduced, raising serious questions about the country\'s defence readiness. The warning comes in the wake of John Healey\'s resignation as Defence Secretary, which was triggered by his belief that the government\'s draft Defence Investment Plan fell 'well short of what\'s required'.",
+        "Healey, speaking alongside former defence minister Al Carns in resignation statements to MPs, argued that the UK\'s adversaries operate on their own timelines and cannot be expected to wait while Whitehall debates spending levels. The controversy places significant pressure on new Defence Secretary Dan Jarvis, who is now tasked with finalising the Defence Investment Plan before its publication."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/2774/live/b3183570-68ba-11f1-a143-b5a0b6622147.jpg",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/fa3e/live/1b787b00-698a-11f1-8e1d-bbbb1017d210.jpg",
       source: "BBC News",
-      url: "https://www.bbc.com/news/articles/czx5ne278x8o?at_medium=RSS&at_campaign=rss",
+      url: "https://www.bbc.com/news/articles/c20ydx06ym2o?at_medium=RSS&at_campaign=rss",
       category: "Politics"
     },
     {
       id: "uk2",
-      title: "Assisted Dying Bill Returns to Parliament as MP Urges Peers to 'Finish the Job'",
-      summary: "MP Lauren Edwards is reintroducing the assisted dying bill in its exact previous form, urging the House of Lords to pass the legislation after it ran out of parliamentary time.",
+      title: "Farage\'s Equal Pay Proposal Could Cost Female Workers Money, Unions Warn",
+      summary: "Unions have warned that a Reform UK legislative proposal championed by Nigel Farage as a measure to strengthen women\'s rights could in practice remove equal pay protections and leave female workers financially worse off.",
       body: [
-        "Lauren Edwards MP has brought the assisted dying bill back before Parliament, presenting the same text that was narrowly passed by the House of Commons but failed to complete its passage through the Lords before time ran out. Her call for peers to 'finish the job' reflects the frustration felt by supporters of the bill who believe the Commons has already given a clear democratic mandate for the legislation.",
-        "The reintroduction of the bill is set to reignite one of the most emotionally charged debates in British politics, with strong views held on all sides about the ethics, safeguards, and practical implications of legalising assisted dying in England and Wales. The Lords will face renewed pressure to act decisively rather than allow the legislation to stall once again."
+        "The TUC\'s general secretary has described Reform UK\'s proposed 'women and motherhood protection act' as 'a smokescreen for slashing women\'s rights', warning that the policy could eliminate equal pay for work of equal value — a cornerstone of existing employment law. The proposal was put forward by Farage\'s party in the days leading up to the Makerfield by-election, drawing accusations of political opportunism from critics.",
+        "The controversy highlights the ongoing battle over which parties can credibly claim to represent the interests of working women, with unions arguing that Reform\'s framing obscures the concrete legal protections that would be stripped away. The row adds to scrutiny of Reform UK\'s policy platform as the party seeks to broaden its electoral appeal beyond its traditional base."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/40e1/live/59cd9570-fcde-11f0-b7e1-afb6d0884c18.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/c4gyxgwkyxyo?at_medium=RSS&at_campaign=rss",
+      image: "https://images.unsplash.com/photo-1553885762-df52cdc82f36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxGYXJhZ2UlNUN8ZW58MHwwfHx8MTc4MTY3MjU0Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/politics/2026/jun/16/farages-plan-for-equal-pay-legislation-may-cost-female-workers-money-say-unions",
       category: "Politics"
     },
     {
       id: "uk3",
-      title: "Labour MPs Doubt EHRC Guidance on Biological Sex Ruling is Workable",
-      summary: "A significant number of Labour MPs are expressing concern that guidance on implementing the Supreme Court\'s biological sex ruling under the Equality Act will prove unworkable and trigger a wave of legal disputes.",
+      title: "EU and UK Announce Summit to Discuss 'Reset' in Post-Brexit Relations",
+      summary: "The European Union and the United Kingdom have confirmed they will hold their next summit on 22 July in Brussels, aimed at advancing the 'reset' in relations between London and the bloc following years of post-Brexit friction.",
       body: [
-        "More than 135 Labour MPs have put their names to a Commons motion calling for the Equality and Human Rights Commission\'s code of practice to be blocked, amid growing worry about its impact on transgender people. Legislators backing the motion argue that the guidance, intended to clarify how organisations should apply the Supreme Court\'s ruling that 'sex' in the Equality Act refers to biological sex, is too difficult to implement in practical settings.",
-        "Some MPs are predicting the guidance will lead to a flood of competing legal claims as organisations struggle to navigate conflicting obligations, creating uncertainty rather than the clarity the EHRC had intended to provide. The internal Labour dissent on this issue underlines the continued political difficulty the party faces in reconciling its commitments both to upholding the law and to protecting transgender rights."
+        "The summit, which will take place in Brussels, has been delayed on multiple occasions amid ongoing disagreements over the details of a proposed youth mobility scheme that would allow under-30s from each side to live, work, and study in the other\'s territory. The announcement signals that both sides have made sufficient progress to commit to a formal meeting date, though significant details of any deal remain to be resolved.",
+        "The summit represents a key moment for the Starmer government\'s flagship foreign policy ambition of resetting the UK\'s relationship with its nearest neighbours after years of acrimonious post-Brexit negotiations. Reaching a workable agreement on youth mobility is seen as central to unlocking broader cooperation on trade, security, and other areas of mutual interest."
       ],
-      image: "https://i.guim.co.uk/img/media/d0d8fc5bf540efa762cfb18b237aae5ac1654298/408_0_4080_3264/master/4080.jpg?width=1200&quality=85&auto=format&fit=max&s=01eb5216642bc9e27091285def2bf844",
+      image: "https://i.guim.co.uk/img/media/d205c31bda72562c1268988e4a5a4b28b4758e7f/566_0_4163_3330/master/4163.jpg?width=1200&quality=85&auto=format&fit=max&s=2084131fd0e57644caaa476d52d9638f",
       source: "The Guardian",
-      url: "https://www.theguardian.com/society/2026/jun/16/labour-mps-ehrc-guidance-biological-sex-ruling-transgender-commons-motion",
+      url: "https://www.theguardian.com/world/2026/jun/16/eu-uk-announce-summit-reset-post-brexit-relations",
       category: "Politics"
     }
   ]
