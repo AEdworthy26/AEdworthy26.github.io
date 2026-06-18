@@ -1,19 +1,19 @@
 // reads-data.js
-// Auto-updated 2026-06-17 — do not edit manually
+// Auto-updated 2026-06-18 — do not edit manually
 
 var READS_DATA = {
-  date: "2026-06-17",
+  date: "2026-06-18",
   book: {
-    title: "The Overstory",
-    author: "Richard Powers",
-    year: 2018,
-    genres: ["Literary Fiction", "Nature", "Environmental"],
-    desc: "Richard Powers weaves together nine interconnected stories of people whose lives are transformed by their encounters with trees — a chestnut that survives a blight to become a family\'s living diary, a scientist who discovers that forests communicate and cooperate, an activist pair who spend years in the canopy of a doomed redwood. The novel is dizzyingly ambitious, structured like a tree itself: roots, trunk, crown, and seeds. Powers renders the inner lives of non-human organisms with a conviction that quietly dismantles everything you thought you knew about consciousness, time, and what it means to be alive. It won the Pulitzer Prize for Fiction and is the rare novel that genuinely changes how readers move through the world — many report they cannot look at a tree the same way again.",
-    whyRead: "With ecological anxiety running at full pitch in 2026, this is the book that transforms abstract crisis into something felt in the body — urgent, gorgeous, and impossible to dismiss.",
-    rating: 4.2,
+    title: "The Corrections",
+    author: "Jonathan Franzen",
+    year: 2001,
+    genres: ["Literary Fiction", "Family Drama", "Contemporary"],
+    desc: "The Lambert family is unravelling: patriarch Alfred is sliding into dementia, his wife Enid is desperate to orchestrate one last perfect Christmas, and their three adult children are each failing in spectacularly different ways — on Wall Street, in academia, in a doomed Philadelphia restaurant. Franzen renders every character with merciless precision and genuine compassion, making their particular American anxieties feel both absurd and heartbreaking. The novel moves between continents and decades with tremendous confidence, weaving together dark comedy, neuroscience, Eastern European political chaos, and the quiet tragedy of a long marriage. It remains one of the most fully achieved American novels of the past quarter-century, the kind of book that makes you feel you\'ve lived inside several other lives.",
+    whyRead: "With so much cultural noise about family, aging, and the American middle class, Franzen\'s masterwork cuts through it all with prose that is furiously alive — it rewards reading or rereading right now.",
+    rating: 3.9,
     ratingSource: "Goodreads",
-    ratingCount: "290,000+",
-    coverUrl: null,
-    amazonUrl: null
+    ratingCount: "200,000+",
+    coverUrl: "https://covers.openlibrary.org/b/id/9273701-L.jpg",
+    amazonUrl: "https://www.amazon.co.uk/dp/1841157899"
   }
 };

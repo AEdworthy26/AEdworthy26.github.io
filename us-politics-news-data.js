@@ -1,60 +1,60 @@
 // us-politics-news-data.js
-// Auto-updated 2026-06-17 — do not edit manually
+// Auto-updated 2026-06-18 — do not edit manually
 
 var US_POLITICS_NEWS = {
-  date: "2026-06-17",
+  date: "2026-06-18",
   main: {
-    title: "Georgia Vexes Trump Yet Again: Voters Reject His Preferred Governor Pick in Republican Runoff",
+    title: "Trump\'s Iran Deal Opens New Rifts in G.O.P. as Critics Question Concessions",
     category: "Politics",
     content: [
-      "Georgia Republicans delivered a notable setback to President Donald Trump on Tuesday, rejecting his endorsed candidate, Lieutenant Governor Burt Jones, in the state\'s Republican gubernatorial runoff. Health care executive and billionaire Rick Jackson defeated Jones by a single-digit margin, dealing Trump one of his most significant primary losses in the 2026 election cycle. The result marks the second time one of Trump\'s endorsees in a major Georgia statewide race has fallen short, underlining the limits of his political influence in the Peach State.",
-      "Trump had publicly backed Jones ahead of the runoff, making the loss particularly striking given the president\'s track record of using endorsements to consolidate Republican primary support. Georgia has proven to be persistently challenging terrain for Trump, who famously feuded with state Republicans over the 2020 presidential election results. The state\'s Republican electorate has repeatedly demonstrated a degree of independence that other GOP-heavy states have not shown as consistently.",
-      "Despite the governor\'s race setback, Trump\'s preferred candidates fared better in other contests across the state and region on Tuesday night. The mixed results underscore a pattern in which Trump retains strong influence in many Republican primaries while occasionally finding his endorsements insufficient against well-funded, locally popular challengers. Rick Jackson\'s victory as a self-financed health care executive suggests that candidate quality and personal resources can still outweigh a presidential endorsement in certain competitive races.",
-      "In a separate Georgia development, Representative Mike Collins won his Republican primary and will now face Democratic incumbent Senator Jon Ossoff in the general election. Ossoff, who flipped his seat in the pivotal January 2021 runoffs, is considered one of the more vulnerable Democratic senators heading into the November contest. The Collins-Ossoff matchup will be one of the most closely watched Senate races in the country, with control of the chamber potentially hanging in the balance.",
-      "The Georgia results arrive amid a broader midterm primary season that is testing Trump\'s grip on the Republican Party as his second term progresses. While he has accumulated many endorsement victories, the losses in Georgia\'s governor\'s race are likely to invite scrutiny about whether his political capital is beginning to show cracks in key swing states. Analysts will be watching upcoming primaries in South Carolina and Oklahoma closely to assess whether the Georgia outcome represents an isolated anomaly or the early signs of a shifting dynamic within the GOP.",
+      "President Trump has signed a memorandum of understanding with Iran to end the war between the two countries, but the agreement has drawn sharp criticism from within his own Republican Party. Some GOP members are skeptical about whether the deal includes adequate concessions from Iranian officials, raising questions about what the United States actually achieved after more than three months of conflict. The political fallout from the agreement is already reshaping alliances and tensions within the Republican caucus, presenting Trump with an unexpected challenge from his own base.",
+      "At the conclusion of the G7 summit in France, Trump gave a wide-ranging press conference in which he touted the economic benefits of the ceasefire while also threatening force if Iran violates the terms. He lashed out at critics who argued the agreement achieves less than the nuclear deal President Barack Obama signed in 2015, a comparison that visibly irritated the president. Trump also broke with a longtime ally, criticizing Israel during the press conference, a move that further surprised observers across the political spectrum.",
+      "The 14-paragraph memorandum of understanding includes an end to fighting, a stated agreement that Iran will never have a nuclear weapon, and a sweeping $300 billion redevelopment package for Iran. However, analysts and critics note that the text of the agreement falls short of Trump\'s earlier demands, including his insistence that Iran could never buy, develop, or produce a nuclear weapon — language that was notably softened in the final document. Many of the toughest issues were punted to future negotiations, leaving significant core sticking points unresolved.",
+      "The deal came after a last-minute scramble, with negotiations going down to the wire before an agreement could be reached. While Iran suffered substantial losses during the war, the country demonstrated it could deploy economic chaos as a weapon against even the world\'s most powerful military — a fact that complicated U.S. negotiating leverage significantly. Trump had initially demanded Iran\'s surrender before any talks could begin, making the final terms of the agreement a notable departure from that original posture.",
+      "The domestic political consequences of the deal are still unfolding, with Republican lawmakers divided over how to respond. Some in the party are pressing for greater scrutiny of the agreement\'s terms, while others have rallied around the president\'s framing of it as a historic diplomatic achievement. The rift underscores the challenge Trump faces in selling the deal not just to the American public but to his own political coalition, as midterm election positioning begins to take shape and voters in key swing states weigh in on the conflict\'s costs and outcomes.",
     ],
-    image: "https://static01.nyt.com/images/2026/06/16/multimedia/16pol-takeaways-blvj/16pol-takeaways-blvj-mediumSquareAt3X.jpg",
+    image: "https://images.unsplash.com/photo-1550531996-ff3dcede9477?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUcnVtcCU1Q3xlbnwwfDB8fHwxNzgxNzU4OTg0fDA&ixlib=rb-4.1.0&q=80&w=1080",
     source: "The New York Times",
-    sourceUrl: "https://www.nytimes.com/2026/06/17/us/politics/georgia-alabama-elections-trump-takeaways.html"
+    sourceUrl: "https://www.nytimes.com/2026/06/17/us/politics/trump-iran-deal-republicans-criticism.html"
   },
   secondary: [
     {
       id: "us1",
-      title: "Five Arrested for Alleged Plot to Attack UFC Event at the White House",
-      summary: "The FBI says it thwarted a plot to attack a White House UFC watch event using explosive-laden drones and sniper fire, leading to five arrests.",
+      title: "Senate Postpones Intel Chief Confirmation Hearing After Trump Demands Delay",
+      summary: "Trump has blocked the fast-tracking of his own Director of National Intelligence nominee, tying the confirmation to stalled voting legislation.",
       body: [
-        "Federal authorities announced the arrest of five individuals accused of plotting a violent attack on a UFC event hosted at the White House, with court filings alleging that the group discussed deploying explosive-loaded drones and positioning snipers to shoot people who attempted to flee. The FBI said the group expressed grievances about corruption, the Epstein files, and data centers, according to newly unsealed documents. The alleged plot represents one of the most serious publicly disclosed threats against the White House in recent memory.",
-        "The Justice Department\'s announcement highlights the ongoing security challenges surrounding high-profile events at executive branch facilities. Officials credited law enforcement\'s early detection and intervention with preventing what could have been a mass casualty event. The case is expected to raise fresh questions in Congress about White House event security protocols and domestic extremism monitoring."
+        "Senators had moved to fast-track President Trump\'s pick for Director of National Intelligence, Jay Clayton, but the confirmation hearing has now been postponed after Trump himself called for the delay. The president has linked the hearing\'s scheduling to the passage of voting legislation that has already failed once in the Senate, creating an unusual standoff between the White House and Capitol Hill members of his own party.",
+        "The move illustrates Trump\'s continued use of executive nominations as political leverage, even when it means slowing down the confirmation of his own appointees. The delay leaves a key national security post in limbo at a moment when the country is navigating the aftermath of the Iran war and a complex new diplomatic agreement."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/76bb/live/f3fbc9c0-6979-11f1-a63b-a7cb529e1ca8.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/cqx10xlje1lo?at_medium=RSS&at_campaign=rss",
+      image: "https://images.unsplash.com/photo-1624417963912-8532660d9de8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTZW5hdGUlMjBQb3N0cG9uZXMlMjBJbnRlbCUyMENoaWVmJTIwQ29uZmlybWF0aW9uJTIwSGVhcmluZyUyMEFmdGVyJTIwVHJ1bXAlMjBEZW1hbmRzJTIwRGVsYXl8ZW58MHwwfHx8MTc4MTc1ODk4NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "NPR",
+      url: "https://www.npr.org/2026/06/17/nx-s1-5859298/jay-clayton-confirmation-hearing-director-of-national-intelligence",
       category: "Politics"
     },
     {
       id: "us2",
-      title: "Trump Officials Sue to Block Reparations Program in Chicago Suburb of Evanston",
-      summary: "The Justice Department has filed a legal challenge against Evanston, Illinois\'s reparations program, arguing it is racist and unconstitutional.",
+      title: "Georgia Republicans Drop Redistricting Plan That Would Have Hurt Black Representation",
+      summary: "A special legislative session called by Governor Brian Kemp to redraw congressional maps for GOP advantage has been abandoned by Republican lawmakers.",
       body: [
-        "The Trump administration\'s Justice Department filed a lawsuit challenging Evanston, Illinois\'s landmark reparations program, which was designed to compensate Black residents for decades of housing discrimination. Federal lawyers argued that the program, which has drawn national attention as one of the first municipal reparations efforts in the United States, constitutes racial discrimination and violates the Constitution. The move signals the administration\'s intent to use federal legal power to challenge race-conscious local policies across the country.",
-        "Evanston\'s reparations initiative has been closely watched by advocates and opponents of reparations nationwide since it was established, making it a symbolically significant target for the Justice Department. The lawsuit is likely to be a lengthy legal battle that could ultimately reach federal appellate courts, and possibly the Supreme Court. The case adds to a growing list of Trump administration legal actions aimed at rolling back diversity, equity, and inclusion-related programs at the state and local level."
+        "Georgia Republicans have pulled the plug on a redistricting plan that critics said would have hurt Black representation in the state\'s congressional delegation. Governor Brian Kemp had called a special legislative session specifically so Republicans could redraw maps to secure one or more additional House seats ahead of the 2028 elections, but lawmakers ultimately chose not to move forward.",
+        "The decision is a significant setback for Republican efforts to expand their House majority through state-level map manipulation in Georgia. The retreat may reflect concern about legal challenges or broader political risks associated with the plan, which had drawn significant scrutiny from voting rights advocates."
       ],
-      image: "https://static01.nyt.com/images/2026/06/16/multimedia/16dc-trump-reparations-pqth/16dc-trump-reparations-pqth-mediumSquareAt3X.jpg",
-      source: "The New York Times",
-      url: "https://www.nytimes.com/2026/06/16/us/politics/reparations-chicago-evanston-trump-lawsuit.html",
+      image: "https://images.unsplash.com/photo-1733084275592-be7bd3610f58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxHZW9yZ2lhJTIwUmVwdWJsaWNhbnMlMjBEcm9wJTIwUmVkaXN0cmljdGluZyUyMFBsYW4lMjBUaGF0JTIwV291bGQlMjBIYXZlJTIwSHVydCUyMEJsYWNrJTIwUmVwcmVzZW50YXRpb258ZW58MHwwfHx8MTc4MTc1ODk4NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "The Washington Post",
+      url: "https://www.washingtonpost.com/politics/2026/06/17/georgia-republicans-say-no-redistricting-now/",
       category: "Politics"
     },
     {
       id: "us3",
-      title: "South Carolina GOP Skeptical of Trump\'s Pick, President Weighs Dual Endorsement",
-      summary: "With his preferred candidate struggling to gain traction in South Carolina\'s governor\'s race, Trump is reportedly considering endorsing both Republican contenders to avoid a damaging loss.",
+      title: "Poll: Most Americans Say Civil Liberties, Including the Right to Vote, Are Under Threat",
+      summary: "A new AP-NORC survey finds that 66 percent of Americans believe the right to vote faces either a major or minor threat.",
       body: [
-        "President Trump is mulling the unusual step of issuing a co-endorsement in South Carolina\'s Republican gubernatorial primary after his initial pick failed to consolidate support among the state\'s conservative activists. A dual endorsement would allow Trump to hedge his political bets and sidestep the reputational risk of backing a losing candidate in a competitive intraparty contest. The move would be the latest in a series of tactical adjustments Trump has made in the 2026 primary cycle to protect his image as a political kingmaker.",
-        "The situation in South Carolina illustrates the delicate balance Trump must strike between asserting dominance over the Republican Party and maintaining the goodwill of grassroots conservative factions that do not always follow his lead. If Trump does issue a split endorsement, it could also be seen as an acknowledgment that his influence has limits even in reliably red states. Political observers will be watching closely to see whether the strategy helps or further complicates his standing within the broader GOP primary landscape."
+        "A new AP-NORC Center poll has found that the majority of Americans believe their civil liberties are under threat, with 66 percent of respondents saying the right to vote faces either a 'major threat' or a 'minor threat' in the United States. The findings come as Congress continues to debate voting legislation that has already stalled in the Senate, and as political battles over election rules intensify across the country.",
+        "The poll adds to a growing body of survey data suggesting that anxieties about democratic institutions are running high among the American public. Separately, a PRRI poll found that fewer Americans than in previous years say they are proud of their national identity, with just 51 percent saying they are 'extremely' or 'very' proud to be American — a notable decline heading into the country\'s 250th anniversary."
       ],
-      image: "https://images.unsplash.com/photo-1562364648-ea0a64c4635a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTb3V0aCUyMENhcm9saW5hJTIwR09QJTIwU2tlcHRpY2FsJTIwb2YlMjBUcnVtcCU1Q3xlbnwwfDB8fHwxNzgxNjcyNTk0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "The Washington Post",
-      url: "https://www.washingtonpost.com/politics/2026/06/16/trump-mulls-co-endorsement-south-carolina-governors-race-proves-tight/",
+      image: "https://thehill.com/wp-content/uploads/sites/2/2026/03/losangelesnokings_033026ap.jpg?w=900",
+      source: "The Hill",
+      url: "https://thehill.com/blogs/blog-briefing-room/news/5929565-poll-rights-freedom-threat/",
       category: "Politics"
     }
   ]

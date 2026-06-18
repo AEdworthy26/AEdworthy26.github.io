@@ -1,61 +1,61 @@
 // tech-news-data.js
-// Auto-updated 2026-06-17 — do not edit manually
+// Auto-updated 2026-06-18 — do not edit manually
 
 var TECH_NEWS = {
-  date: "2026-06-17",
+  date: "2026-06-18",
   main: {
-    title: "Android 17 Arrives on Pixel Phones Today",
+    title: "Sooner Than Expected? Useful Quantum Error Correction Promised for 2028",
     category: "Technology",
     content: [
-      "Google has officially begun rolling out Android 17 to compatible Pixel phones today, marking one of the most feature-rich annual Android updates in recent memory. The release follows the operating system\'s official debut last month, and arrives alongside additional exclusive features as part of the June Pixel Drop. Not every feature announced alongside the OS at the pre-I/O Android Show is available on day one, but the core update is now making its way to users.",
-      "Among the headline features of Android 17 is a new floating 'Bubble' app window system designed to make multitasking significantly easier for users juggling multiple applications. The Bubble interface allows apps to float over other content on the screen, enabling quicker switching and more fluid workflows without fully leaving the current app. This kind of windowed multitasking has been a long-requested feature from power users and productivity-focused Android fans.",
-      "Android 17 also introduces a Screen Reaction recording mode, which represents a meaningful upgrade for content creators and anyone who shares their phone screen with others. This mode likely allows the device to capture on-screen activity alongside camera or reaction feeds, opening up new possibilities for video content directly from a Pixel device. The addition signals Google\'s continued push to make Pixel phones a first-class platform for creators.",
-      "For foldable phone owners, Android 17 brings a dedicated 50/50 split gaming mode that takes advantage of the larger, unfolded display format. This feature underscores Google\'s growing commitment to the foldable form factor as a serious platform for both productivity and entertainment. As foldable devices become more mainstream, software features tailored specifically to their unique screen configurations become increasingly important differentiators.",
-      "The Android 17 rollout is accompanied by the simultaneous launch of Wear OS 7, which brings Live Updates and improved battery life to Pixel Watch devices. Together, the two releases represent a cohesive push from Google to update its entire hardware ecosystem in a coordinated fashion. The combination of phone and wearable improvements on the same day demonstrates Google\'s maturing ability to deliver synchronized platform updates across its growing lineup of first-party devices."
+      "Amazon and QuEra Computing have made a bold joint promise that catches the quantum computing world\'s attention: genuinely useful quantum error correction could arrive as soon as 2028, a timeline that many experts had considered optimistic just a year ago. The announcement signals a significant acceleration in the roadmap for practical quantum hardware, and suggests that the race to achieve beyond-classical computation is intensifying among major technology players. Both companies have indicated they are pooling research resources and engineering talent to hit this ambitious milestone.",
+      "Quantum error correction has long been regarded as the critical unsolved challenge standing between today\'s noisy, error-prone quantum processors and the fault-tolerant machines needed for real-world applications. Current quantum computers make frequent calculation errors that compound quickly, limiting the depth and complexity of computations they can reliably execute. Error correction schemes theoretically address this by encoding quantum information redundantly across many physical qubits, but doing so efficiently enough to be practical has proven enormously difficult.",
+      "Amazon\'s involvement underscores how seriously major cloud providers are investing in quantum as a future computing platform. Amazon Web Services has been building out its quantum division for several years and sees fault-tolerant quantum computing as a transformative capability for areas such as drug discovery, materials science, logistics optimization, and financial modeling. By partnering with QuEra, which specializes in neutral-atom qubit architectures, Amazon is betting on one of the most promising alternative hardware approaches to the superconducting qubits used by competitors like IBM and Google.",
+      "The 2028 promise also comes alongside reports of beyond-classical quantum hardware demonstrations, suggesting that the field is reaching a tipping point where quantum machines can outperform classical supercomputers on at least some well-defined tasks. Classical computing, for its part, has not stood still — continued improvements in chip design and algorithms mean the bar for demonstrating genuine quantum advantage keeps rising. The competitive dynamic between quantum and classical approaches is, paradoxically, pushing innovation on both sides.",
+      "Industry analysts will be watching closely to see whether the 2028 target holds as engineering realities set in, since quantum computing has a storied history of ambitious deadlines that slip. Nevertheless, a credible commitment from a company with Amazon\'s resources lends the timeline more weight than similar pronouncements from pure-play startups. If useful quantum error correction does arrive on schedule, it could mark one of the most consequential technological transitions of the decade, opening the door to computational capabilities that are simply impossible on any classical machine today."
     ],
-    image: "https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxBbmRyb2lkJTIwMTclMjBBcnJpdmVzJTIwb24lMjBQaXhlbCUyMFBob25lcyUyMFRvZGF5fGVufDB8MHx8fDE3ODE2NzI2NzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    source: "The Verge",
-    sourceUrl: "https://www.theverge.com/tech/950651/android-17-release-pixel-drop-google-bubble-screen-reaction"
+    image: "https://cdn.arstechnica.net/wp-content/uploads/2026/06/Libra-internals44-copy-1152x648.jpeg",
+    source: "Ars Technica",
+    sourceUrl: "https://arstechnica.com/science/2026/06/amazon-quera-promise-useful-quantum-error-correction-by-2028/"
   },
   secondary: [
     {
       id: "tc1",
-      title: "SpaceX Valuation Surges to $2.6 Trillion, Briefly Surpassing Amazon",
-      summary: "SpaceX\'s valuation has skyrocketed to $2.6 trillion, increasing by a staggering $1 trillion in just days as its shares began trading.",
+      title: "Massive Breach Spills Credentials for Thousands of Sensitive Networks",
+      summary: "A large-scale cybersecurity breach has exposed login credentials for thousands of sensitive corporate and government networks, with victims including Oracle, Lenovo, FedEx, a NATO contractor, and Fortinet.",
       body: [
-        "SpaceX has reached a landmark valuation of $2.6 trillion, briefly overtaking Amazon in total market value in a remarkable milestone for the private aerospace and technology company. The $1 trillion increase occurred rapidly after the company\'s shares began trading on Friday, signaling extraordinary investor confidence in SpaceX\'s trajectory.",
-        "The valuation surge cements SpaceX\'s status as one of the most valuable companies in the world, rivaling the largest publicly traded tech giants despite remaining a private entity. The milestone reflects broader enthusiasm for the company\'s expanding portfolio, which spans satellite internet through Starlink, rocket launch services, and ambitious deep-space exploration goals."
+        "The breach represents one of the most sweeping credential leaks in recent memory, affecting a strikingly diverse range of organizations spanning logistics, enterprise technology, defense supply chains, and cybersecurity itself. The exposure of credentials for a NATO contractor and a major cybersecurity vendor like Fortinet is particularly alarming, as it suggests attackers may have been able to gain footholds in networks that are supposed to model best-in-class security practices.",
+        "Credential breaches of this scale are especially dangerous because stolen usernames and passwords can be used to launch follow-on attacks, including ransomware deployments, data exfiltration, and supply chain compromises. Affected organizations are being urged to rotate credentials immediately, enforce multi-factor authentication, and audit access logs for any signs of unauthorized activity in the period preceding the disclosure."
       ],
-      image: "https://images.pexels.com/photos/586054/pexels-photo-586054.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      source: "TechCrunch",
-      url: "https://techcrunch.com/2026/06/16/spacex-valuation-balloons-to-2-6t-briefly-passes-amazon/",
-      category: "Technology"
+      image: "https://cdn.arstechnica.net/wp-content/uploads/2023/07/exploit-vulnerability-security.jpg",
+      source: "Ars Technica",
+      url: "https://arstechnica.com/security/2026/06/massive-breach-spills-credentials-for-thousands-of-sensitive-networks/",
+      category: "Cybersecurity"
     },
     {
       id: "tc2",
-      title: "Qualcomm Bets Big on AI Wearables as the Next Major Computing Platform",
-      summary: "Qualcomm has announced two new products and revealed it is working on over 40 AI wearable devices, signaling a major strategic shift away from smartphones.",
+      title: "Tim Cook Says RAM Expenses Are 'Unsustainable' and Apple Is Going to Raise Prices",
+      summary: "Apple CEO Tim Cook has warned that an ongoing memory shortage is creating unsustainable cost pressures, and that iPhone price increases are now unavoidable.",
       body: [
-        "Qualcomm CEO Cristiano Amon announced Tuesday that the chipmaker is collaborating on more than 40 different AI wearable devices, including jewelry, camera-equipped earbuds, pins, and smartwatches, as part of an aggressive push to define the next era of personal computing. The company unveiled two new products aimed squarely at this emerging wearables market.",
-        "Qualcomm\'s strategy reflects a growing industry conviction that the smartphone, long the dominant personal computing device, may eventually be supplemented or replaced by a constellation of smaller, always-on AI-powered wearables. By positioning its chips at the heart of this transition, Qualcomm aims to replicate the central role it played in the smartphone revolution for whatever platform comes next."
+        "In an interview with The Wall Street Journal, Cook said Apple has been working hard to shield customers from rising costs but has reached a point where price increases can no longer be absorbed internally. The memory shortage driving these costs is connected in part to surging AI-related demand for high-bandwidth RAM, which has tightened supply across the entire semiconductor industry and pushed prices sharply higher.",
+        "The announcement marks a significant moment for Apple, which has long used its supply chain leverage and enormous purchasing power to keep pricing relatively stable even as component costs fluctuated. Consumers and analysts alike will be watching to see how large the price increases are and whether they affect the full iPhone lineup or are targeted at higher-end AI-capable models that require more onboard memory."
       ],
-      image: "https://images.unsplash.com/photo-1758714919726-88145c5b0d45?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxRdWFsY29tbSUyMEJldHMlMjBCaWclMjBvbiUyMEFJJTIwV2VhcmFibGVzJTIwYXMlMjB0aGUlMjBOZXh0JTIwTWFqb3IlMjBDb21wdXRpbmclMjBQbGF0Zm9ybXxlbnwwfDB8fHwxNzgxNjcyNjc1fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "TechCrunch",
-      url: "https://techcrunch.com/2026/06/16/qualcomm-wants-to-be-the-chip-inside-whatever-replaces-your-smartphone-and-it-just-announced-two-products-toward-that-end/",
+      image: "https://images.unsplash.com/photo-1742552508595-18eb90a9db7f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUaW0lMjBDb29rJTIwU2F5cyUyMFJBTSUyMEV4cGVuc2VzJTIwQXJlJTIwfGVufDB8MHx8fDE3ODE3NTkwNjV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "The Verge",
+      url: "https://www.theverge.com/tech/951948/apple-tim-cook-price-increases-ram",
       category: "Technology"
     },
     {
       id: "tc3",
-      title: "Google Launches Wear OS 7 with Live Updates and Battery Life Improvements",
-      summary: "Google\'s Wear OS 7 is rolling out today for Pixel Watch 2, 3, and 4, bringing a new Live Updates feature and meaningful battery life gains.",
+      title: "Midjourney Medical Goes From Generating 'Cat Images' to Full-Body Ultrasound Scans",
+      summary: "Midjourney has unveiled its first hardware product, the Midjourney Scanner — an ultrasound-based full-body scanner — alongside plans to open a San Francisco spa where the device will be offered.",
       body: [
-        "Wear OS 7 is now available for Pixel Watch 2, 3, and 4, introducing a Live Updates feature that syncs real-time information — such as sports scores or food delivery tracking — directly to a user\'s wrist. The update ensures that dynamic notifications users already rely on from their Android phones will now surface seamlessly on their smartwatch.",
-        "Beyond Live Updates, Wear OS 7 also promises improved battery life, a perennial concern for smartwatch users who often find themselves charging their devices daily. The release also lays the groundwork for future connectivity with Android XR smart glasses, hinting at Google\'s broader ambitions to build a tightly integrated ecosystem of wearable and extended reality devices."
+        "The Midjourney Scanner uses a ring of sensors to capture vertical full-body ultrasound data, representing a dramatic pivot from the AI image generation software that made the company famous. CEO David Holz acknowledged the striking contrast with the company\'s origins, joking that the device is somewhat removed from the 'cat pictures' that first brought Midjourney to public attention.",
+        "The move into medical hardware reflects a broader trend of AI-native companies expanding into physical products, leveraging their expertise in machine learning to interpret and enhance sensor data in ways that were previously impractical. If Midjourney can bring the same accessibility and quality to medical imaging that it brought to generative art, the scanner could have significant implications for preventive healthcare and early diagnostics."
       ],
-      image: "https://images.pexels.com/photos/32767987/pexels-photo-32767987.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      image: "https://images.unsplash.com/photo-1512102438733-bfa4ed29aef7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxNaWRqb3VybmV5JTIwTWVkaWNhbCUyMEdvZXMlMjBGcm9tJTIwR2VuZXJhdGluZyUyMHxlbnwwfDB8fHwxNzgxNzU5MDY2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       source: "The Verge",
-      url: "https://www.theverge.com/gadgets/950671/wear-os-7-pixel-watches-launch",
-      category: "Technology"
+      url: "https://www.theverge.com/ai-artificial-intelligence/952011/midjourney-medical-ai-ultrasound-scan",
+      category: "AI"
     }
   ]
 };

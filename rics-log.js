@@ -3,6 +3,45 @@
 
 var RICS_LOG = [
   {
+    "date": "2026-06-18",
+    "topic": "Masterplanning Parameter Plans, Density Metrics and Housing Mix Policy in Residential-Led Schemes",
+    "module": "Masterplanning and Urban Design",
+    "level": 2,
+    "apc_competency": "Masterplanning and Urban Design (Level 2)",
+    "focus": "This lesson examines how parameter plans establish the spatial envelope for large residential-led schemes, how density is measured and defended in planning, and how housing mix policy requirements shape scheme design and viability. For Alfie, these tools are essential at pre-application stage and throughout the planning process on Latimer\\'s mixed-tenure, land-led schemes.",
+    "image": "https://images.unsplash.com/photo-1710883727427-59d1ccc368fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxNYXN0ZXJwbGFubmluZyUyMFBhcmFtZXRlciUyMFBsYW5zJTJDJTIwVUslMjBwcm9wZXJ0eSUyMGFyY2hpdGVjdHVyZSUyMGJ1aWxkaW5nJTIwZXh0ZXJpb3J8ZW58MHwwfHx8MTc4MTc1OTc3OHww&ixlib=rb-4.1.0&q=80&w=1080",
+    "content": [],
+    "summary": [
+      "Parameter plans fix the legally binding spatial envelope (heights, footprints, land use zones) for outline/hybrid consents \u2014 poorly drawn parameters create permanent commercial risk that cannot easily be corrected without a Section 73 application.",
+      "Density should be measured and presented in multiple metrics: dph, hrph, FAR and site coverage. The London Plan SRQ matrix uses hrph against PTAL to define appropriate density ranges \u2014 know the numbers for your scheme.",
+      "Housing mix policy creates direct tension with GDV optimisation: LPA requirements for family-sized units must be tested against housing needs evidence, viability, and comparable consent benchmarks \u2014 not accepted uncritically.",
+      "The National Model Design Code and local design codes are increasingly material considerations in major residential applications \u2014 the parameter plan suite and DAS must address code requirements explicitly.",
+      "Protecting parameter plan headroom is a live commercial management task throughout the scheme\\'s life \u2014 design team value engineering decisions that reduce massing below approved maxima permanently reduce development potential."
+    ],
+    "qa": [
+      {
+        "q": "An LPA officer tells you that your proposed scheme of 145 dph is too dense for the location. How do you construct your planning argument to defend the density?",
+        "a": "I would reframe the density argument using hrph rather than dph alone, since dph is insensitive to unit mix. I would calculate the scheme\\'s hrph figure and cross-reference it against the London Plan SRQ matrix (or relevant local policy range) for the site\\'s PTAL level, demonstrating policy compliance. I would then marshall supporting evidence: the site\\'s brownfield status and sustainability credentials, the quantum of affordable housing being delivered, daylight/sunlight compliance testing (demonstrating no harm to amenity), a Design Review Panel-supported design narrative, and comparable approved schemes at similar or higher densities in the borough. Finally, I would commission a housing needs assessment if not already done, to demonstrate that the mix and density reflect genuine identified need rather than commercial optimisation alone."
+      },
+      {
+        "q": "What is the legal status of an approved parameter plan, and what are the implications if reserved matters proposals exceed the approved building heights parameter?",
+        "a": "An approved parameter plan forms part of the planning permission \u2014 typically attached as a document referenced in a planning condition requiring reserved matters to accord with it. It is therefore legally binding. If a reserved matters application proposes building heights that exceed the approved maximum shown on the heights parameter plan, the application would not comply with the condition and would be refused \u2014 or if approved in error, could be subject to judicial review. To increase heights beyond the parameter plan, Latimer would need to submit a Section 73 application to vary the relevant condition, which effectively creates a new permission, triggers a full planning assessment including potential EIA screening, and resets the consent clock. This has significant programme and cost implications and should be avoided by ensuring parameter plans are drawn with adequate commercial headroom from the outset."
+      },
+      {
+        "q": "How does the London Plan\\'s Policy H12 on housing mix apply to an RP-led scheme, and how does it interact with Clarion\\'s own asset management preferences?",
+        "a": "London Plan Policy H12 requires that development proposals demonstrate that they will provide a range of unit sizes to meet the needs of different household types, and that the affordable housing mix broadly reflects the overall scheme mix. In practice, boroughs will typically seek to negotiate specific minimum proportions of 3+ bed units within the affordable tenures, particularly affordable rent. For Clarion as the RP, the conflict arises where its lettings demand data or asset management strategy indicates that smaller units are more appropriate for its waiting list and long-term management model. The resolution approach is to commission an up-to-date housing needs assessment for the specific borough, present lettings and demand evidence alongside management cost considerations, and negotiate a mix schedule in the Section 106 that balances policy compliance with deliverability. A degree of tenure-specific flexibility \u2014 for example, allowing shared ownership to index more heavily towards 2-bed \u2014 can also provide commercial headroom."
+      },
+      {
+        "q": "What is the difference between a parameter plan and a design code, and when would you use each?",
+        "a": "A parameter plan defines the quantitative spatial envelope \u2014 maximum heights, minimum/maximum footprints, land use zones \u2014 and is a mandatory submission document for outline or hybrid applications on schemes requiring EIA or where reserved matters are to be determined. It is legally binding once approved as part of the permission. A design code is a qualitative document that sets out the design principles, character standards, materials palette, streetscape hierarchy and public realm requirements that will govern detailed design across the scheme. It may be submitted alongside the parameter plans as a planning condition document, or may be adopted separately. The NMDC provides the national framework for design codes. On a large multi-phase scheme, both are used in combination: the parameter plan defines what can be built, the design code defines how it should look and feel. The design code gives the LPA confidence in long-term quality control without the parameter plan\\'s rigid quantitative constraints being applied to qualitative matters."
+      },
+      {
+        "q": "You are preparing the pre-application submission for a 500-unit hybrid application. What parameter plans would you include in the submission and what would each show?",
+        "a": "A comprehensive parameter plan suite for a 500-unit hybrid application would typically include: (1) Land Use Parameter Plan \u2014 defining zones for residential, retail/commercial ground floor, community/D1 use, public open space, private amenity, and infrastructure; (2) Building Heights Parameter Plan \u2014 showing minimum, intermediate and maximum heights per zone, typically expressed in storeys and/or metres AOD; (3) Building Footprint/Site Coverage Plan \u2014 showing maximum footprint as a percentage of each zone, and any minimum active frontage requirements; (4) Green Infrastructure and Public Realm Parameter Plan \u2014 showing quantum and location of public open space, green corridors, play space and SUDS areas; (5) Access, Movement and Servicing Parameter Plan \u2014 showing proposed site access points, internal street hierarchy, pedestrian/cycle routes, and servicing areas. Each plan would be cross-referenced in the Design and Access Statement, which provides the planning rationale and design logic underpinning the parameters. All plans should be drawn by the masterplanning architect and reviewed by the planning consultant before submission."
+      }
+    ]
+  },
+  {
     "date": "2026-06-17",
     "topic": "Deferred Land Payments: Structures, Valuation Mechanics and Risk Allocation in Residential Land Transactions",
     "module": "Planning and Development Management",

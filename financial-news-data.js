@@ -1,61 +1,61 @@
 // financial-news-data.js
-// Auto-updated 2026-06-17 — do not edit manually
+// Auto-updated 2026-06-18 — do not edit manually
 
 var FINANCIAL_NEWS = {
-  date: "2026-06-17",
+  date: "2026-06-18",
   main: {
-    title: "SpaceX Overtakes Amazon to Become World\'s Fifth Most Valuable Company After IPO Surge",
-    category: "Markets",
+    title: "Fed Holds Rates Steady But Signals Possible Hike Before Year\'s End Under New Chair Warsh",
+    category: "Monetary Policy",
     content: [
-      "Elon Musk\'s SpaceX has surged past Amazon to claim the title of the world\'s fifth most valuable company, just days after its stock market debut. The rocket and space exploration firm\'s valuation climbed as high as $2.97 trillion at its peak, a remarkable milestone that underscores the extraordinary investor appetite for companies at the frontier of technology and space. The listing has been one of the most closely watched IPOs in recent memory, and early trading has far exceeded even the most bullish expectations on Wall Street.",
-      "A key catalyst for the valuation surge was SpaceX\'s announcement that it would acquire Anysphere, the startup behind the AI-powered coding application Cursor, in a deal valued at $60 billion. The move signals SpaceX\'s intent to position itself not merely as a launch and satellite provider, but as a broad technology conglomerate with deep roots in artificial intelligence. Investors appear to have responded enthusiastically to the strategic ambition implied by the Cursor acquisition, viewing it as a sign that SpaceX is building a diversified technology empire capable of competing across multiple high-growth sectors.",
-      "Amazon, the retail and cloud computing giant that SpaceX has now overtaken in market capitalization, has long been considered one of the most formidable and durable technology businesses in the world. The fact that a company so recently arrived on public markets has eclipsed Amazon\'s valuation speaks to the speed at which investor sentiment has shifted toward next-generation technology platforms. It also reflects ongoing questions about Amazon\'s near-term growth trajectory in the face of intensifying competition in cloud services and changing consumer spending patterns.",
-      "SpaceX\'s rise to the upper echelon of global market valuations places it in company with only a handful of firms in history to have achieved such scale. The company\'s core businesses — including its Starlink satellite internet network, launch services for commercial and government clients, and its ambitious deep-space exploration programs — provide multiple revenue streams that analysts believe are still in relatively early stages of monetization. Many on Wall Street argue that the long-term earnings potential of Starlink alone, with its global broadband ambitions, justifies a premium valuation that would have seemed implausible just a few years ago.",
-      "The broader market implications of SpaceX\'s meteoric debut are significant, raising fresh questions about valuation norms in an era of AI-driven enthusiasm and mega-cap technology dominance. For index investors and fund managers, the addition of a near-$3 trillion company to public markets in such a short timeframe creates both opportunities and rebalancing pressures. The coming weeks will be closely watched to see whether SpaceX\'s valuation holds, consolidates, or retreats as the initial IPO euphoria gives way to more measured scrutiny of its financials and competitive position."
+      "The Federal Reserve held interest rates steady at a range of 3.5% to 3.75% at its latest meeting, the first presided over by new chairman Kevin Warsh. The decision was widely anticipated by markets, but the accompanying signals sent a jolt through Wall Street. US stock markets dropped on Wednesday afternoon as investors digested the possibility that the next move in rates could be upward rather than downward.",
+      "Warsh\'s debut press conference drew considerable attention, with the new Fed chair laying out a vision for change at the central bank while fielding questions from reporters. His comments positioned him clearly as an inflation hawk, raising speculation among traders and economists that rate hikes could be back on the table before the end of 2026. Fed officials were reportedly split between forecasting no cuts this year and projecting one or more rate increases, according to a new set of economic projections released alongside the decision.",
+      "The Fed\'s policy statement itself underwent notable linguistic changes from previous editions, reflecting a shift in tone under Warsh\'s leadership. While the committee acknowledged that economic activity is expanding at a solid pace, it also signaled a heightened vigilance toward inflationary pressures. The language evolution in the statement was closely parsed by analysts as a sign that the era of anticipated rate cuts may have come to an abrupt pause, if not a full reversal.",
+      "The backdrop of geopolitical uncertainty has complicated the Fed\'s calculus considerably. Ongoing upheaval in the Middle East and uncertainty surrounding a US-Iran interim peace deal have injected volatility into energy markets, which in turn feeds directly into inflation expectations. The Fed\'s difficult task is to balance a still-solid economy against the risk that external shocks could reignite price pressures at a time when inflation has not yet been fully tamed to the central bank\'s 2% target.",
+      "Markets reacted swiftly to the hawkish tilt, with copper falling more than 1% to wipe out gains made earlier in the week, a signal that traders are recalibrating expectations for global growth and demand. The dollar strengthened modestly while Treasury yields ticked higher as bond investors priced in a reduced likelihood of near-term easing. For businesses and consumers alike, the prospect of rates remaining elevated — or even climbing higher — adds a layer of financial pressure heading into the second half of the year, with borrowing costs for mortgages, corporate debt, and consumer credit all sensitive to the Fed\'s trajectory."
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/4d41/live/929b64a0-697a-11f1-8546-8f19e4fe30f4.jpg",
-    source: "BBC News",
-    sourceUrl: "https://www.bbc.com/news/articles/cvgd5g7d7gyo?at_medium=RSS&at_campaign=rss"
+    image: "https://i.guim.co.uk/img/media/c92c1c20bcac8189f2e9705c2645f342475fccde/540_0_5396_4317/master/5396.jpg?width=1200&quality=85&auto=format&fit=max&s=39cc052e5b4645f0b6cce64666541df1",
+    source: "The Guardian",
+    sourceUrl: "https://www.theguardian.com/business/2026/jun/17/federal-reserve-interest-rates"
   },
   secondary: [
     {
       id: "fn1",
-      title: "Thames Water Edges Closer to Nationalisation as Government Rejects £10bn Rescue Deal",
-      summary: "The UK government has objected to a £10bn private rescue proposal for Thames Water, citing an undue financial burden on consumers and pushing the troubled utility closer to public ownership.",
+      title: "Bank of England Expected to Hold Rates as UK Inflation Stays at 2.8%",
+      summary: "The Bank of England is set to keep interest rates on hold after UK inflation unexpectedly remained steady at 2.8% in May, defying forecasts of a rise to 3%.",
       body: [
-        "The UK\'s environment secretary has formally raised objections to Thames Water\'s £10bn rescue deal, arguing that the proposal would place an unacceptable financial burden on customers and fail to meet environmental standards. The intervention significantly increases the likelihood that the debt-laden utility, which supplies water to roughly 16 million people, will ultimately fall into temporary public ownership through a special administration regime.",
-        "Thames Water has been struggling under a mountain of debt and has faced intense regulatory and public scrutiny over its environmental record, including sewage discharges into rivers and waterways. Nationalisation, even on a temporary basis, would represent one of the most significant interventions in the UK\'s privatised utilities sector since water companies were sold off in 1989, carrying major implications for the broader infrastructure investment market."
+        "UK inflation held firm at 2.8% in May, as slower food price increases offset rising transport and energy costs linked to the Iran conflict, according to the latest consumer price index figures. The unchanged reading surprised economists who had broadly predicted an uptick to 3%, providing the Bank of England with a degree of cover to maintain its current rate stance.",
+        "The Bank of England last cut interest rates in December, and continued Middle East instability has stalled any further reductions since then. The benign inflation data may signal a softer economic hit than previously feared, but policymakers are expected to remain cautious given the persistent uncertainty in global energy markets."
       ],
-      image: "https://i.guim.co.uk/img/media/701b16c64b62c73d63238cd2ab586e61606e5a2d/245_0_2609_2089/master/2609.jpg?width=1200&quality=85&auto=format&fit=max&s=ba7d5f1dd6348b6b28a31bd696a4a0ae",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/9a31/live/89a05f40-6a51-11f1-9ea9-fdea8f57a693.jpg",
       source: "The Guardian",
-      url: "https://www.theguardian.com/business/2026/jun/16/thames-water-nationalisation-rescue-deal-ofwat",
+      url: "https://www.theguardian.com/business/2026/jun/17/uk-inflation-steady-despite-iran-conflict-fuel-prices",
       category: "Economics"
     },
     {
       id: "fn2",
-      title: "Pizza Hut Sold for $2.7 Billion as Yum Brands Offloads Struggling Chain",
-      summary: "Yum Brands has agreed to sell Pizza Hut for $2.7 billion, splitting the chain between Yum China for mainland locations and private equity firm LongRange Capital for US and international outlets.",
+      title: "Apple to Raise Prices as AI Boom Drives Up Chip Costs",
+      summary: "Apple has warned that product prices will rise as surging demand from the artificial intelligence boom pushes up the cost of semiconductors.",
       body: [
-        "Yum Brands has struck a $2.7 billion deal to divest Pizza Hut, splitting the iconic but struggling pizza chain between two separate buyers. Yum China will acquire Pizza Hut\'s mainland China operations, while US-based private equity firm LongRange Capital will take on the chain\'s American and international locations, in a transaction that reflects the brand\'s prolonged difficulties in a fiercely competitive fast-food landscape.",
-        "Pizza Hut has faced mounting pressure from a range of rivals, from fast-casual competitors to the explosive growth of food delivery platforms that have fragmented consumer loyalty. The sale marks a significant strategic pivot for Yum Brands, which will retain its KFC and Taco Bell operations, and signals that private equity sees potential in restructuring the Pizza Hut brand even as its current trajectory has disappointed investors and franchisees alike."
+        "Apple\'s outgoing chief executive Tim Cook confirmed that the company plans to raise prices on its products, citing increased chip costs driven by the ongoing AI investment boom. Cook did not specify which products would be affected or when the price increases would take effect, leaving consumers and investors with considerable uncertainty.",
+        "The announcement underscores the broader cost pressures rippling through the consumer electronics industry as chipmakers struggle to keep pace with voracious AI-related demand. For Apple, which has been investing heavily in on-device AI capabilities, the squeeze on semiconductor supply chains represents both a strategic challenge and a potential test of consumer brand loyalty at higher price points."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/fc30/live/7b572ab0-69a0-11f1-938e-83ab58a2163c.jpg",
-      source: "The New York Times",
-      url: "https://www.nytimes.com/2026/06/16/business/pizza-hut-yum-brands-sold.html",
-      category: "Mergers & Acquisitions"
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/09cb/live/82d01bd0-6aa9-11f1-9a45-c56b5234f7dc.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.com/news/articles/c3wyxvqdx1zo?at_medium=RSS&at_campaign=rss",
+      category: "Technology & Business"
     },
     {
       id: "fn3",
-      title: "Oil Tankers Rush to Reposition as Strait of Hormuz Reopening Looms",
-      summary: "Oil tankers have begun reversing course in the Indian Ocean to race back to the Middle East ahead of a potential reopening of the Strait of Hormuz following a US-Iran interim peace agreement.",
+      title: "Jaguar Land Rover Pivots to Hybrids in Push to Win Wealthy American Buyers",
+      summary: "Jaguar Land Rover is scaling back its all-electric strategy and expanding hybrid and petrol offerings as it targets growth among affluent US consumers.",
       body: [
-        "At least two oil tankers that had been diverting around Africa have abruptly changed course and are now heading back toward the Middle East, as shipowners scramble to reposition their fleets ahead of a potential reopening of the Strait of Hormuz. The moves follow a framework agreement between the United States and Iran that has raised expectations that one of the world\'s most critical oil shipping chokepoints may soon resume normal operations.",
-        "The Strait of Hormuz handles a significant share of global seaborne crude oil flows, and its prolonged disruption has added pressure to energy markets and global supply chains. However, analysts caution that while crude oil shipments may resume relatively quickly, other critical commodities including fertilizers could face a longer wait before they are cleared to transit, raising concerns about agricultural supply chains in the months ahead."
+        "Britain\'s largest carmaker told investors it would offer petrol and hybrid versions of new models as part of a strategic pivot focused on the lucrative US market, reversing previously announced plans for an all-electric factory. The move reflects a broader recalibration across the automotive industry as EV adoption rates in key markets fall short of earlier expectations.",
+        "JLR\'s shift highlights the commercial tension between long-term sustainability commitments and near-term revenue demands, particularly as wealthy American buyers have shown stronger appetite for high-end hybrids than for fully electric luxury vehicles. The company\'s decision to prioritise US growth is also a financial hedge against ongoing trade uncertainties affecting its other key markets."
       ],
-      image: "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i7SwE_Gn3F5g/v0/1200x-1.png",
-      source: "Bloomberg Markets",
-      url: "https://www.bloomberg.com/news/articles/2026-06-17/oil-tankers-u-turn-rush-to-middle-east-before-hormuz-reopening",
-      category: "Commodities"
+      image: "https://i.guim.co.uk/img/media/400acece5c0b014ea5e286bd843423db89edf175/0_0_5698_4561/master/5698.jpg?width=1200&quality=85&auto=format&fit=max&s=2197043fcbf9aa2266699e3286b12530",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/business/2026/jun/17/jaguar-land-rover-reverses-ev-only-factory-plans",
+      category: "Corporate Strategy"
     }
   ]
 };
