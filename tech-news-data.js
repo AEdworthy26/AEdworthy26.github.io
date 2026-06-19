@@ -1,60 +1,60 @@
 // tech-news-data.js
-// Auto-updated 2026-06-18 — do not edit manually
+// Auto-updated 2026-06-19 — do not edit manually
 
 var TECH_NEWS = {
-  date: "2026-06-18",
+  date: "2026-06-19",
   main: {
-    title: "Sooner Than Expected? Useful Quantum Error Correction Promised for 2028",
-    category: "Technology",
+    title: "A Bold Satellite Rescue Mission Came Together in Record Time, But Will It Work?",
+    category: "Space",
     content: [
-      "Amazon and QuEra Computing have made a bold joint promise that catches the quantum computing world\'s attention: genuinely useful quantum error correction could arrive as soon as 2028, a timeline that many experts had considered optimistic just a year ago. The announcement signals a significant acceleration in the roadmap for practical quantum hardware, and suggests that the race to achieve beyond-classical computation is intensifying among major technology players. Both companies have indicated they are pooling research resources and engineering talent to hit this ambitious milestone.",
-      "Quantum error correction has long been regarded as the critical unsolved challenge standing between today\'s noisy, error-prone quantum processors and the fault-tolerant machines needed for real-world applications. Current quantum computers make frequent calculation errors that compound quickly, limiting the depth and complexity of computations they can reliably execute. Error correction schemes theoretically address this by encoding quantum information redundantly across many physical qubits, but doing so efficiently enough to be practical has proven enormously difficult.",
-      "Amazon\'s involvement underscores how seriously major cloud providers are investing in quantum as a future computing platform. Amazon Web Services has been building out its quantum division for several years and sees fault-tolerant quantum computing as a transformative capability for areas such as drug discovery, materials science, logistics optimization, and financial modeling. By partnering with QuEra, which specializes in neutral-atom qubit architectures, Amazon is betting on one of the most promising alternative hardware approaches to the superconducting qubits used by competitors like IBM and Google.",
-      "The 2028 promise also comes alongside reports of beyond-classical quantum hardware demonstrations, suggesting that the field is reaching a tipping point where quantum machines can outperform classical supercomputers on at least some well-defined tasks. Classical computing, for its part, has not stood still — continued improvements in chip design and algorithms mean the bar for demonstrating genuine quantum advantage keeps rising. The competitive dynamic between quantum and classical approaches is, paradoxically, pushing innovation on both sides.",
-      "Industry analysts will be watching closely to see whether the 2028 target holds as engineering realities set in, since quantum computing has a storied history of ambitious deadlines that slip. Nevertheless, a credible commitment from a company with Amazon\'s resources lends the timeline more weight than similar pronouncements from pure-play startups. If useful quantum error correction does arrive on schedule, it could mark one of the most consequential technological transitions of the decade, opening the door to computational capabilities that are simply impossible on any classical machine today."
+      "In an extraordinary feat of engineering and organizational willpower, a satellite rescue mission has been assembled in record time, drawing widespread attention from the space industry and beyond. The mission targets a satellite in distress, and the speed at which teams mobilized resources, personnel, and hardware has itself been hailed as a remarkable achievement. Even before the outcome is known, those involved in the effort are expressing a sense of pride and accomplishment simply for getting to the launch pad.",
+      "The mission represents a level of ambition rarely seen in the commercial or government space sectors, where complex rescue operations typically require years of planning and coordination. In this case, teams compressed what would normally be a multi-year timeline into a dramatically shorter window, raising the bar for what rapid-response space operations can look like. The collaborative spirit behind the effort has been described by participants as unprecedented, with organizations setting aside bureaucratic obstacles to make the mission possible.",
+      "Central to the story is the question of whether the technical approach will actually succeed once the mission is underway. Rescuing a satellite in orbit involves overcoming formidable challenges, including precise rendezvous maneuvers, potential hardware incompatibilities, and the unforgiving physics of orbital mechanics. Engineers and mission planners have had to innovate on the fly, developing solutions to problems that have no established playbook.",
+      "One of the mission\'s key voices captured the spirit of the endeavor succinctly: 'I consider this a success already, just from the fact that we\'re even going to try this.' That sentiment reflects a broader philosophy emerging in the space industry — that attempting difficult things, and normalizing the effort to do so, is itself a form of progress. Whether or not the satellite is ultimately saved, the mission is expected to generate invaluable data and lessons for future rescue operations.",
+      "The outcome of the mission remains uncertain, and the space community is watching closely. If successful, it could open the door to a new era of on-orbit servicing and satellite recovery, potentially extending the operational lifespans of billions of dollars' worth of space infrastructure. Even in the event of failure, the rapid assembly of this mission has already demonstrated that the industry is capable of responding to in-space emergencies with a speed and decisiveness that was previously thought impossible."
     ],
-    image: "https://cdn.arstechnica.net/wp-content/uploads/2026/06/Libra-internals44-copy-1152x648.jpeg",
+    image: "https://cdn.arstechnica.net/wp-content/uploads/2026/06/Testing-Link-Vibration-tests-2_4000x2600-1152x648.jpg",
     source: "Ars Technica",
-    sourceUrl: "https://arstechnica.com/science/2026/06/amazon-quera-promise-useful-quantum-error-correction-by-2028/"
+    sourceUrl: "https://arstechnica.com/space/2026/06/a-bold-satellite-rescue-mission-came-together-in-record-time-but-will-it-work/"
   },
   secondary: [
     {
       id: "tc1",
-      title: "Massive Breach Spills Credentials for Thousands of Sensitive Networks",
-      summary: "A large-scale cybersecurity breach has exposed login credentials for thousands of sensitive corporate and government networks, with victims including Oracle, Lenovo, FedEx, a NATO contractor, and Fortinet.",
+      title: "Microsoft Discovers New Lightweight Backdoor That Steals Cryptocurrency",
+      summary: "Microsoft has identified a new self-propagating malware called Crypto Clipper that spreads via USB drives and communicates covertly over the Tor network to steal cryptocurrency.",
       body: [
-        "The breach represents one of the most sweeping credential leaks in recent memory, affecting a strikingly diverse range of organizations spanning logistics, enterprise technology, defense supply chains, and cybersecurity itself. The exposure of credentials for a NATO contractor and a major cybersecurity vendor like Fortinet is particularly alarming, as it suggests attackers may have been able to gain footholds in networks that are supposed to model best-in-class security practices.",
-        "Credential breaches of this scale are especially dangerous because stolen usernames and passwords can be used to launch follow-on attacks, including ransomware deployments, data exfiltration, and supply chain compromises. Affected organizations are being urged to rotate credentials immediately, enforce multi-factor authentication, and audit access logs for any signs of unauthorized activity in the period preceding the disclosure."
+        "Microsoft\'s security researchers have uncovered a dangerous new piece of malware dubbed Crypto Clipper, which is designed to intercept and redirect cryptocurrency transactions by quietly replacing wallet addresses on infected machines. The malware is notably lightweight and spreads through USB devices, making it capable of jumping between air-gapped or less-connected systems that might otherwise avoid typical network-based threats.",
+        "What makes Crypto Clipper particularly concerning is its use of the Tor anonymity network for command-and-control communications, making it significantly harder for defenders to trace or shut down its infrastructure. The discovery underscores the evolving sophistication of financially motivated cybercriminals, who continue to adapt their tools to exploit both human behavior and trusted hardware like USB drives."
       ],
-      image: "https://cdn.arstechnica.net/wp-content/uploads/2023/07/exploit-vulnerability-security.jpg",
+      image: "https://cdn.arstechnica.net/wp-content/uploads/2026/02/cryptocurrency-theft-heist-1152x648.jpg",
       source: "Ars Technica",
-      url: "https://arstechnica.com/security/2026/06/massive-breach-spills-credentials-for-thousands-of-sensitive-networks/",
+      url: "https://arstechnica.com/security/2026/06/microsoft-spots-new-self-propagating-malware-for-stealing-cryptocurrency/",
       category: "Cybersecurity"
     },
     {
       id: "tc2",
-      title: "Tim Cook Says RAM Expenses Are 'Unsustainable' and Apple Is Going to Raise Prices",
-      summary: "Apple CEO Tim Cook has warned that an ongoing memory shortage is creating unsustainable cost pressures, and that iPhone price increases are now unavoidable.",
+      title: "AI Inference Startup Baseten Reportedly Raising $1.5 Billion Months After Its Last Mega-Round",
+      summary: "Baseten, an AI inference startup, is reportedly close to closing a $1.5 billion funding round at a $13 billion valuation, highlighting the ongoing frenzy of investment in AI infrastructure.",
       body: [
-        "In an interview with The Wall Street Journal, Cook said Apple has been working hard to shield customers from rising costs but has reached a point where price increases can no longer be absorbed internally. The memory shortage driving these costs is connected in part to surging AI-related demand for high-bandwidth RAM, which has tightened supply across the entire semiconductor industry and pushed prices sharply higher.",
-        "The announcement marks a significant moment for Apple, which has long used its supply chain leverage and enormous purchasing power to keep pricing relatively stable even as component costs fluctuated. Consumers and analysts alike will be watching to see how large the price increases are and whether they affect the full iPhone lineup or are targeted at higher-end AI-capable models that require more onboard memory."
+        "Baseten is said to be finalizing a massive $1.5 billion fundraise just months after completing its previous large funding round, a sign of just how voracious investor appetite remains for companies powering the AI inference layer. The round would value the startup at $13 billion, a dramatic leap that reflects the critical role inference infrastructure plays as AI models are deployed at massive scale across the industry.",
+        "The news speaks to what observers are calling an 'inference gold rush,' as companies race to build and operate the compute pipelines needed to serve AI-generated responses to millions of users in real time. Baseten\'s rapid successive fundraising rounds suggest investors view the inference market as one of the most strategically important — and lucrative — segments of the broader AI boom."
       ],
-      image: "https://images.unsplash.com/photo-1742552508595-18eb90a9db7f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUaW0lMjBDb29rJTIwU2F5cyUyMFJBTSUyMEV4cGVuc2VzJTIwQXJlJTIwfGVufDB8MHx8fDE3ODE3NTkwNjV8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "The Verge",
-      url: "https://www.theverge.com/tech/951948/apple-tim-cook-price-increases-ram",
-      category: "Technology"
+      image: "https://images.pexels.com/photos/15863044/pexels-photo-15863044.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      source: "TechCrunch",
+      url: "https://techcrunch.com/2026/06/18/ai-inference-startup-baseten-reportedly-raising-1-5b-months-after-its-last-mega-round/",
+      category: "AI"
     },
     {
       id: "tc3",
-      title: "Midjourney Medical Goes From Generating 'Cat Images' to Full-Body Ultrasound Scans",
-      summary: "Midjourney has unveiled its first hardware product, the Midjourney Scanner — an ultrasound-based full-body scanner — alongside plans to open a San Francisco spa where the device will be offered.",
+      title: "Snap Spins Off AI Video Team Into New Independent Company Called Dotmo",
+      summary: "Snapchat parent Snap is spinning off its internal AI video development team into a new standalone company named Dotmo, citing the high costs of maintaining the unit in-house.",
       body: [
-        "The Midjourney Scanner uses a ring of sensors to capture vertical full-body ultrasound data, representing a dramatic pivot from the AI image generation software that made the company famous. CEO David Holz acknowledged the striking contrast with the company\'s origins, joking that the device is somewhat removed from the 'cat pictures' that first brought Midjourney to public attention.",
-        "The move into medical hardware reflects a broader trend of AI-native companies expanding into physical products, leveraging their expertise in machine learning to interpret and enhance sensor data in ways that were previously impractical. If Midjourney can bring the same accessibility and quality to medical imaging that it brought to generative art, the scanner could have significant implications for preventive healthcare and early diagnostics."
+        "Snap has announced the creation of Dotmo, a new independent company formed from current Snap employees who will leave the social media giant to focus exclusively on AI video technology. The move is driven primarily by cost considerations, as developing cutting-edge AI video tools requires substantial and sustained investment that Snap has determined is better pursued outside its core business structure.",
+        "The spinoff marks another instance of Snap separating internal innovation units into standalone entities, a strategy that allows specialized teams to pursue focused missions and potentially attract their own dedicated funding. As AI video generation becomes an increasingly competitive space, Dotmo will need to establish itself quickly against well-funded rivals also racing to define the next generation of AI-powered video creation."
       ],
-      image: "https://images.unsplash.com/photo-1512102438733-bfa4ed29aef7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxNaWRqb3VybmV5JTIwTWVkaWNhbCUyMEdvZXMlMjBGcm9tJTIwR2VuZXJhdGluZyUyMHxlbnwwfDB8fHwxNzgxNzU5MDY2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "The Verge",
-      url: "https://www.theverge.com/ai-artificial-intelligence/952011/midjourney-medical-ai-ultrasound-scan",
+      image: "https://images.pexels.com/photos/21405528/pexels-photo-21405528.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      source: "TechCrunch",
+      url: "https://techcrunch.com/2026/06/18/snap-spins-off-ai-video-team-into-new-company-dotmo-due-to-costs/",
       category: "AI"
     }
   ]

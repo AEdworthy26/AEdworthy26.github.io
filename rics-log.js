@@ -3,6 +3,45 @@
 
 var RICS_LOG = [
   {
+    "date": "2026-06-19",
+    "topic": "S106 Negotiation Strategy: Heads of Terms, Viability Constraints and Affordable Housing Obligations",
+    "module": "Legal and Regulatory Compliance",
+    "level": 2,
+    "apc_competency": "Legal/Regulatory Compliance (Level 2)",
+    "focus": "This lesson examines the mechanics of Section 106 negotiation from a developer\\'s perspective \u2014 structuring heads of terms, managing viability evidence to constrain obligations, and protecting the RP\\'s interest in affordable housing delivery. For Alfie, S106 is a live commercial and legal risk on every scheme, directly affecting residual land value, grant eligibility and JV equity returns.",
+    "image": "https://images.pexels.com/photos/31204612/pexels-photo-31204612.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "content": [],
+    "summary": [
+      "S106 obligations must satisfy three Reg 122 tests: necessary, directly related, and fairly and reasonably related in scale \u2014 obligations failing any limb are ultra vires and unenforceable.",
+      "Heads of Terms should be agreed before resolution to grant \u2014 post-resolution the LPA\\'s leverage increases and the developer loses negotiating position on quantum, tenure split and trigger mechanics.",
+      "FVAs must follow the RICS Financial Viability in Planning Professional Standard (2019/2023): BLV derived from EUV+, transparent inputs, and a competitive return benchmark of 15\u201320% profit on GDV.",
+      "Viability review mechanisms (early and late stage) are now standard where obligations are below policy \u2014 RP-led schemes must ensure grant-funded units are ring-fenced from review calculations to avoid double-counting.",
+      "Grant condition precedent clauses in the S106 protect the RP/developer if Homes England grant is withdrawn, but require careful negotiation with LPAs who will resist any mechanism that dilutes the affordable obligation."
+    ],
+    "qa": [
+      {
+        "q": "What are the three statutory tests a Section 106 obligation must satisfy, and where are they codified?",
+        "a": "The three tests are set out in Regulation 122 of the CIL Regulations 2010 (as amended): the obligation must be (1) necessary to make the development acceptable in planning terms, (2) directly related to the development, and (3) fairly and reasonably related in scale and kind. These tests apply both at the decision-making stage and on appeal. An obligation failing any single limb is unlawful and cannot be given weight in the planning balance."
+      },
+      {
+        "q": "How does the RICS Financial Viability in Planning Professional Standard (2023) require Benchmark Land Value to be assessed, and why does this matter in S106 negotiation?",
+        "a": "BLV must be assessed by reference to the site\\'s Existing Use Value (EUV) plus an appropriate landowner premium, not by reference to the price paid for the land or the landowner\\'s expectation. The standard requires transparent, policy-informed inputs rather than market-driven land values. In negotiation, this matters because developers often inflate BLV to suppress the apparent viability headroom, reducing the affordable obligation. An LPA-appointed assessor will challenge any BLV that exceeds EUV+ or is anchored to an inflated acquisition price. Getting BLV right is the single most contested element of most FVAs."
+      },
+      {
+        "q": "On a Latimer scheme where you are acting as both developer and RP, how would you structure the S106 to protect against the risk that Homes England grant is not secured?",
+        "a": "I would negotiate a grant condition precedent clause in the S106 \u2014 a mechanism that makes the full affordable housing obligation conditional on grant being secured by a longstop date. If grant is not confirmed by that date, the obligation reverts to a reduced, unassisted-viable quantum or triggers a re-negotiation mechanism. This needs to be agreed with the LPA at HOT stage, as LPAs will typically resist any provision that allows the developer to exit the obligation. In practice, I would pair this with a cascade provision that converts undeliverable social rent to affordable rent if grant falls through, to give the LPA confidence that some affordable delivery is guaranteed in any scenario."
+      },
+      {
+        "q": "What is a late stage viability review mechanism, when is it typically triggered, and what specific issue arises for RP-led schemes?",
+        "a": "A late stage review recalculates scheme viability at a defined milestone \u2014 typically 75% of market units sold or let \u2014 to capture any windfall profit above the developer\\'s competitive return threshold. If the updated appraisal shows profit above benchmark, the surplus is shared between additional affordable units and the developer. For RP-led schemes, the specific risk is that grant-funded affordable units are inadvertently included in the late stage review calculation, creating a double-benefit argument from the LPA: if grant has boosted viability, the LPA may argue this surplus is captured by the review. The S106 must explicitly exclude grant receipts from the revenue inputs used in the review appraisal."
+      },
+      {
+        "q": "How does a cascade provision in an S106 work in practice, and how would you use it commercially as an RP?",
+        "a": "A cascade provision allows affordable housing tenure to change sequentially if the primary tenure cannot be delivered \u2014 for example, if no RP (other than Latimer itself) can be procured for social rent units within 18 months of trigger, the obligation cascades from social rent to affordable rent, then to shared ownership, then potentially to a commuted sum payable to the LPA\\'s affordable housing fund. As an RP in the role of both developer and provider, Latimer can use the cascade timeline as commercial leverage: by confirming its own willingness to take the units as RP within the cascade window, it avoids the commuted sum outcome, retains the units on balance sheet, and preserves grant eligibility. The risk is accepting units on poor subsidy terms to prevent cascade \u2014 so the AHMA must be negotiated to ensure the internal transfer price reflects actual grant funding availability."
+      }
+    ]
+  },
+  {
     "date": "2026-06-18",
     "topic": "Masterplanning Parameter Plans, Density Metrics and Housing Mix Policy in Residential-Led Schemes",
     "module": "Masterplanning and Urban Design",

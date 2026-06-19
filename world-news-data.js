@@ -1,60 +1,60 @@
 // world-news-data.js
-// Auto-updated 2026-06-18 — do not edit manually
+// Auto-updated 2026-06-19 — do not edit manually
 
 var WORLD_NEWS = {
-  date: "2026-06-18",
+  date: "2026-06-19",
   main: {
-    title: "US and Iran Sign Framework Agreement to End War, Promising $300bn Reconstruction and Nuclear Commitments",
-    category: "Diplomacy",
+    title: "US Lifts Naval Blockade as Iran\'s Supreme Leader Says Trump Made Deal 'Out of Desperation'",
+    category: "Geopolitics",
     content: [
-      "The United States and Iran have signed a landmark framework agreement — formally structured as a memorandum of understanding — that sets out conditions to end the war between the two countries, which began more than three months ago when US and Israeli forces launched military operations against Iran. The 14-paragraph document represents what negotiators are describing as a preliminary accord, with a 60-day window now opened for further, more detailed talks on Iran\'s nuclear programme. The agreement has been hailed by some as a historic diplomatic breakthrough, though it has already drawn fierce criticism from within the United States itself.",
-      "At the heart of the deal is a $300 billion redevelopment and reconstruction package for Iran, a country whose infrastructure and economy have been significantly degraded by months of sustained conflict. The text also includes a firm commitment that Iran will never acquire a nuclear weapon, a condition that American officials say is non-negotiable and forms the backbone of any lasting settlement. The framework further calls for a cessation of active hostilities, offering the prospect of relief to a region that has been destabilised by the conflict\'s ripple effects on oil markets, trade routes, and neighbouring states.",
-      "Markets responded swiftly to the news of the agreement. Brent crude oil prices dropped by as much as 1.6 percent as traders priced in the prospect of Iranian oil returning to global markets without restriction, while stock indices across Asia — including in Japan, South Korea, and Taiwan — climbed sharply. The economic toll of the conflict had already been felt far beyond the Middle East, with supply chain disruptions and elevated energy prices weighing on economies worldwide for months, making any credible peace framework a significant event for global markets.",
-      "The deal has not been without controversy. President Trump, who departed the G7 summit in France shortly after details of the agreement were released, publicly denied that the United States would itself be contributing to the $300 billion rebuilding fund, though the text of the memorandum as circulated appeared to outline exactly such a plan. Trump also used the occasion to compare the agreement favourably to the 2015 nuclear deal brokered under President Barack Obama, framing the new accord as a stronger and more comprehensive settlement. His remarks reflected both his personal investment in the deal\'s success and his enduring rivalry with his predecessor\'s foreign policy legacy.",
-      "Not everyone within the American political establishment has welcomed the agreement. Louisiana Senator Bill Cassidy was among the most vocal critics, denouncing the US-Iran memorandum of understanding as the 'worst foreign policy blunder in decades'. The backlash from some Republican quarters signals that the path from preliminary framework to a ratified, lasting peace will be politically fraught. Meanwhile, the situation on the ground remains fluid: ship-tracking data showed that three Iranian tankers loaded with crude oil passed the US military blockade line in the Gulf of Oman even as the ink was drying on the new accord, underscoring the fragile and contested nature of the ceasefire in its earliest hours.",
+      "The United States has lifted its naval blockade on Iranian ports, allowing ships to freely enter and exit Iranian coastal areas as the two countries move into a new and fragile phase of diplomacy. The move follows the signing of a memorandum of understanding by President Donald Trump and Iranian President Masoud Pezeshkian, brokered in part with the involvement of Pakistan\'s prime minister. The agreement sets a 60-day clock ticking for the two sides to negotiate a more permanent and comprehensive deal.",
+      "Iran\'s supreme leader, however, wasted little time in publicly distancing himself from the accord, declaring that Trump had signed the agreement 'out of desperation' rather than from a position of strength. His comments underscore the deep internal tensions within Iran over how to present the deal domestically, with hardliners reluctant to be seen as having capitulated to American pressure. The supreme leader made clear he personally disagreed with the terms, raising immediate questions about whether the Iranian government can hold together a unified negotiating position over the weeks ahead.",
+      "BBC analysts note that both Washington and Tehran are claiming victory from the agreement, a dynamic that points to its inherent ambiguity and the political pressures each side faces at home. For the United States, the deal offers a pause in hostilities and a potential path to constraining Iran\'s nuclear programme, which has been a central preoccupation of successive American administrations. For Iran, the lifting of the naval blockade represents immediate and tangible economic relief after a period of severe pressure on its ports and oil exports.",
+      "Yet the deal has drawn sharp criticism from Israel, whose leaders have been vocal opponents of any agreement that they believe leaves Iran\'s nuclear infrastructure intact or rewards the regime after the war. Vice President JD Vance issued a blunt warning to Israeli critics, telling them not to alienate America — their most important ally — by publicly undermining the administration\'s diplomatic efforts. The episode has strained what was already a complicated relationship between Washington and Jerusalem, with Europe and the wider international community watching closely to see whether the understanding can mature into a lasting settlement.",
+      "BBC correspondent Jeremy Bowen has raised the inescapable question of what the war was ultimately for, given that the Iranian regime has not only survived the conflict but arguably emerged from it with its position consolidated. The human cost of the fighting has been immense, yet the political and strategic calculus appears deeply uncertain, with neither side able to claim an unambiguous triumph on the battlefield. As the 60-day negotiating window opens, the world will be watching to see whether this fragile memorandum of understanding can be translated into a durable agreement, or whether the deep mistrust and domestic political pressures on both sides will cause the process to unravel."
     ],
-    image: "https://static01.nyt.com/images/2026/06/11/multimedia/00int-bahrain-citizenship-1-ctmz/00int-bahrain-citizenship-1-ctmz-mediumSquareAt3X.jpg",
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/2322/live/09e592b0-6b97-11f1-8e1d-bbbb1017d210.jpg",
     source: "BBC News",
-    sourceUrl: "https://www.bbc.com/news/articles/cvgmqzr6p9mo?at_medium=RSS&at_campaign=rss"
+    sourceUrl: "https://www.bbc.com/news/articles/c8r2eejdd35o?at_medium=RSS&at_campaign=rss"
   },
   secondary: [
     {
       id: "s1",
-      title: "Ukraine Targets Crimea Supply Routes in 'Logistics Lockdown' Strategy",
-      summary: "Ukraine has launched scores of targeted attacks against Russian supply routes into Crimea, causing fuel shortages as part of a campaign Kyiv calls a 'logistics lockdown'.",
+      title: "Ukraine Strikes Moscow Oil Refinery in One of Largest Drone Attacks on Russian Capital",
+      summary: "Ukraine launched a massive wave of almost 200 drones targeting the Moscow region, striking an oil refinery and a shopping centre and forcing the capital\'s airports to shut down for several hours.",
       body: [
-        "Ukraine\'s military has intensified efforts to sever Russian supply lines running through and into Crimea, carrying out a sustained campaign of strikes against fuel depots, bridges, and transit infrastructure that has begun to cause notable gasoline shortages in the occupied peninsula. Kyiv has framed the offensive as a deliberate strategic effort to strangle Russian logistics rather than engage in direct frontal assaults, reflecting an evolution in Ukrainian military doctrine.",
-        "The 'logistics lockdown' strategy marks a significant phase in the now years-long conflict, as Ukraine seeks to use precision and persistence to erode Russian operational capacity in the south. If successful, the approach could hamper Russia\'s ability to supply and reinforce its forces in the region, potentially shifting the balance of the war without the heavy casualties associated with conventional offensive operations."
+        "The large-scale Ukrainian drone assault hit an oil refinery to the south-east of Moscow, sparking fires and sending black rain drifting over residential neighbourhoods as residents reported fallout from the burning facility. The attack was described as one of the most significant strikes on the Russian capital since the Kremlin launched its full-scale invasion of Ukraine more than four years ago, and it forced temporary closures of Moscow\'s airports.",
+        "The strike is part of an escalating Ukrainian campaign to bring the reality of the war home to ordinary Russians, increasing pressure on the Kremlin and its civilian population. Kyiv has been stepping up long-range drone operations as it simultaneously urges the European Union to press Russia to end the conflict before another winter sets in, with President Zelenskyy warning that Ukraine will need significant support if fighting continues into the colder months."
       ],
-      image: "https://static01.nyt.com/images/2026/06/17/multimedia/17int-russia-crimea-02-zvhj/17int-russia-crimea-02-zvhj-mediumSquareAt3X.jpg",
-      source: "The New York Times",
-      url: "https://www.nytimes.com/2026/06/17/world/europe/russia-ukraine-crimea-fuel-shortages.html",
+      image: "https://static01.nyt.com/images/2026/06/18/multimedia/18int-russia-drones-01-gqjl/18int-russia-drones-01-gqjl-mediumSquareAt3X.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.com/news/articles/c98291g5rr1o?at_medium=RSS&at_campaign=rss",
       category: "Conflict"
     },
     {
       id: "s2",
-      title: "Japan\'s Defence Minister Says Ramping Up Military Capability Is 'Critical' to Prevent War",
-      summary: "Japanese Defence Minister Shinjiro Koizumi has told the BBC that Japan must revisit its post-World War Two pacifist posture in order to deter conflict in an increasingly dangerous region.",
+      title: "CDC Taps $107 Million in Emergency Funding as Ebola Cases in DRC and Uganda Top 1,000",
+      summary: "The US Centers for Disease Control and Prevention has unlocked over $100 million in emergency funds to respond to a growing Ebola outbreak in the Democratic Republic of the Congo and Uganda.",
       body: [
-        "In a significant statement reflecting Japan\'s shifting strategic outlook, Defence Minister Shinjiro Koizumi argued that expanding Japan\'s military capabilities is not an act of aggression but a necessary measure to preserve peace in the Asia-Pacific. Koizumi told the BBC that the pacifist constitution and posture that has defined Japan since 1945 must be critically reassessed in light of the current security environment.",
-        "Japan has in recent years already begun increasing its defence budget and acquiring longer-range strike capabilities, representing one of the most substantial shifts in its security policy in decades. Koizumi\'s comments signal that Tokyo intends to continue and deepen that trajectory, a move that will be closely watched by neighbours including China and South Korea, as well as Japan\'s key ally the United States."
+        "Health officials confirmed that the number of people infected in the ongoing Ebola outbreak has now surpassed 1,000, prompting the CDC to activate $107 million in emergency funding to bolster the response across the DRC and Uganda. Despite the scale of the outbreak, authorities said the global risk to other regions remains assessed as low for the time being.",
+        "The decision to release emergency funds reflects the seriousness with which international health bodies are treating the situation, particularly given the cross-border spread between the DRC and Uganda. The outbreak adds to a complex series of public health challenges facing Central and East Africa, and will require sustained international coordination to contain."
       ],
-      image: "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxKYXBhbiU1Q3xlbnwwfDB8fHwxNzgxNzU4ODk0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/cly8qd4595eo?at_medium=RSS&at_campaign=rss",
-      category: "Defence"
+      image: "https://i.guim.co.uk/img/media/03aa8980d8c6f8e815cfe8aff8c0bd42470bc588/745_0_4581_3666/master/4581.jpg?width=1200&quality=85&auto=format&fit=max&s=bc5ee2b2269c9de1fb3002b7d1b0a2e7",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/us-news/2026/jun/18/cdc-emergency-ebola-funding",
+      category: "Health"
     },
     {
       id: "s3",
-      title: "Ghana Hosts Global Reparatory Justice Conference Following Landmark UN Resolution",
-      summary: "Heads of state and delegates from more than 80 countries have gathered in Accra for a three-day conference aimed at advancing actionable commitments on reparatory justice for the transatlantic slave trade.",
+      title: "Barbados Launches New Reparations Manifesto at Historic Ghana Conference",
+      summary: "Barbados Prime Minister Mia Mottley has unveiled a landmark manifesto asserting the moral, ethical and legal case for slavery reparations, with other Caribbean nations considering adopting the document.",
       body: [
-        "Ghana is hosting the first major international gathering on reparatory justice since the United Nations passed a landmark resolution declaring the trafficking of enslaved Africans the gravest crime against humanity, bringing together leaders and representatives from over 80 nations to discuss concrete next steps. The Accra conference aims to move the conversation beyond symbolic acknowledgement toward tangible commitments on reconciliation and restitution.",
-        "The event represents a significant moment in a long-running global debate about how the world should reckon with the enduring economic and social legacies of the slave trade. Organisers hope that the political momentum generated by the UN resolution can be translated into binding agreements or financial frameworks that deliver meaningful outcomes for affected communities and nations."
+        "Speaking at a conference in Ghana described as historic, Prime Minister Mottley presented an updated reparations manifesto from Caribbean leaders that places particular emphasis on the harm done to African women during centuries of enslavement. The document is now being considered by other Caribbean countries as a unified regional position in the ongoing global debate over reparations.",
+        "The push for reparations has been gaining momentum across the Caribbean and parts of the African continent, with advocates arguing that the economic and social legacies of the transatlantic slave trade continue to shape inequality today. The choice of Ghana as the venue for the conference carries deep symbolic weight, given the country\'s central role in the history of the slave trade and its long-standing advocacy for diaspora reconnection."
       ],
-      image: "https://i.guim.co.uk/img/media/08a862ae935a708cdb52de67bb13526054b382fa/273_0_2670_2136/master/2670.jpg?width=1200&quality=85&auto=format&fit=max&s=76f42bd9523328d0b83aa0b9b763e28d",
+      image: "https://i.guim.co.uk/img/media/90096680177812e34dcb5f7b1083554f8d2d2f1c/325_13_3461_2769/master/3461.jpg?width=1200&quality=85&auto=format&fit=max&s=a0b2b290188128ede9f27443a0cb4d9a",
       source: "The Guardian",
-      url: "https://www.theguardian.com/news/2026/jun/17/ghana-to-advance-reparatory-justice-at-first-major-gathering-since-landmark-un-resolution",
+      url: "https://www.theguardian.com/news/2026/jun/18/barbados-prime-minister-manifesto-slavery-reparations",
       category: "International"
     }
   ]

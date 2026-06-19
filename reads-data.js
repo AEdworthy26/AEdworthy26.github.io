@@ -1,19 +1,19 @@
 // reads-data.js
-// Auto-updated 2026-06-18 — do not edit manually
+// Auto-updated 2026-06-19 — do not edit manually
 
 var READS_DATA = {
-  date: "2026-06-18",
+  date: "2026-06-19",
   book: {
-    title: "The Corrections",
-    author: "Jonathan Franzen",
-    year: 2001,
-    genres: ["Literary Fiction", "Family Drama", "Contemporary"],
-    desc: "The Lambert family is unravelling: patriarch Alfred is sliding into dementia, his wife Enid is desperate to orchestrate one last perfect Christmas, and their three adult children are each failing in spectacularly different ways — on Wall Street, in academia, in a doomed Philadelphia restaurant. Franzen renders every character with merciless precision and genuine compassion, making their particular American anxieties feel both absurd and heartbreaking. The novel moves between continents and decades with tremendous confidence, weaving together dark comedy, neuroscience, Eastern European political chaos, and the quiet tragedy of a long marriage. It remains one of the most fully achieved American novels of the past quarter-century, the kind of book that makes you feel you\'ve lived inside several other lives.",
-    whyRead: "With so much cultural noise about family, aging, and the American middle class, Franzen\'s masterwork cuts through it all with prose that is furiously alive — it rewards reading or rereading right now.",
-    rating: 3.9,
+    title: "Say Nothing: A True Story of Murder and Memory in Northern Ireland",
+    author: "Patrick Radden Keefe",
+    year: 2018,
+    genres: ["True Crime", "Political History", "Narrative Non-Fiction"],
+    desc: "Patrick Radden Keefe uses the 1972 abduction and murder of Jean McConville — a widowed mother of ten dragged from her Belfast home by the IRA — as a lens through which to examine the entire arc of the Troubles, from idealistic revolutionary fervour to brutal disillusionment. The book follows a vivid cast of real figures, including Dolours Price and Gerry Adams, with the propulsive tension of a thriller and the moral seriousness of the best literary journalism. Keefe is masterful at showing how ordinary people convince themselves that atrocity is justified, and how communities live with — and suppress — decades of shared guilt. The final section, in which survivors reckon with what they did and what was done to them, is among the most emotionally devastating non-fiction writing of the past decade.",
+    whyRead: "At a moment when political violence and the negotiated compromises of peace are back at the centre of global debate, this book asks the hardest possible questions about memory, justice, and whether a society can ever truly reckon with its own darkness — and it does so with the grip of a great novel.",
+    rating: 4.4,
     ratingSource: "Goodreads",
-    ratingCount: "200,000+",
-    coverUrl: "https://covers.openlibrary.org/b/id/9273701-L.jpg",
-    amazonUrl: "https://www.amazon.co.uk/dp/1841157899"
+    ratingCount: "180,000+",
+    coverUrl: "https://covers.openlibrary.org/b/id/9242450-L.jpg",
+    amazonUrl: "https://www.amazon.co.uk/dp/8466356096"
   }
 };

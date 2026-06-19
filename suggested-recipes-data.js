@@ -1,171 +1,193 @@
 // suggested-recipes-data.js
-// Auto-updated 2026-06-18 — do not edit manually
+// Auto-updated 2026-06-19 — do not edit manually
 
 window.SUGGESTED_RECIPES = [
   {
     id: "sug1",
-    title: "Vietnamese Caramelised Ginger Beef — Bò Kho Gừng with Rice Noodles & Thai Basil",
-    category: "Beef",
-    calories: 548,
-    protein: 41,
+    title: "Crispy Peking-Style Duck Legs with Hoisin Cucumber Slaw & Steamed Rice",
+    category: "Other",
+    calories: 610,
+    protein: 42,
     fibre: 3,
-    healthScore: 68,
-    time: "50 mins",
+    healthScore: 65,
+    time: "1 hr 45 mins",
     serves: "4",
-    desc: "Thin-sliced beef shin simmered in a deeply fragrant caramel of fish sauce, palm sugar, ginger and star anise until sticky and intensely flavoured — a Vietnamese braise that punches well above its weight. Served over silky rice noodles with crisp bean sprouts, fresh Thai basil and a squeeze of lime, it\'s a bowl that hits every register: sweet, salty, sour and warmly spiced. This is weeknight comfort food with serious soul.",
-    emoji: "🍜",
-    image: "https://images.unsplash.com/photo-1562565651-7d4948f339eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxWaWV0bmFtZXNlJTIwQ2FyYW1lbGlzZWQlMjBHaW5nZXIlMjBCZWVmJTIwJUUyJTgwJTk0JTIwQiVDMyVCMiUyMEtobyUyMEclRTElQkIlQUJuZyUyMHdpdGglMjBSaWNlJTIwTm9vZGxlcyUyMCUyNiUyMFRoYWklMjBCYXNpbCUyMGZvb2QlMjBkaXNofGVufDB8MHx8fDE3ODE3NTk4ODZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    desc: "Slow-roasted duck legs lacquered with a five-spice and honey glaze emerge from the oven with shatteringly crisp skin and deeply savoury, yielding meat. A cool, crunchy hoisin-dressed cucumber and spring onion slaw cuts right through the richness. All the drama of a restaurant centrepiece, with nothing more than a roasting tin and a sharp knife.",
+    emoji: "🦆",
+    image: "https://images.unsplash.com/photo-1765441012353-10fb4701a276?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxDcmlzcHklMjBQZWtpbmctU3R5bGUlMjBEdWNrJTIwTGVncyUyMHdpdGglMjBIb2lzaW4lMjBDdWN1bWJlciUyMFNsYXclMjAlMjYlMjBTdGVhbWVkJTIwUmljZSUyMGZvb2QlMjBkaXNofGVufDB8MHx8fDE3ODE4NDU5Njl8MA&ixlib=rb-4.1.0&q=80&w=1080",
     ingredientGroups: [
-      { group: "Beef & Marinade", items: [
-        { name: "Beef shin or braising steak, thinly sliced across the grain", quantity: 700, unit: "g" },
-        { name: "Fish sauce", quantity: 3, unit: "tbsp" },
-        { name: "Palm sugar or soft brown sugar", quantity: 2, unit: "tbsp" },
-        { name: "Fresh ginger, peeled and finely grated", quantity: 40, unit: "g" },
-        { name: "Garlic cloves, minced", quantity: 4, unit: "" },
-        { name: "Lemongrass stalk, white part only, finely minced", quantity: 1, unit: "" },
-        { name: "Star anise", quantity: 2, unit: "" },
-        { name: "Ground turmeric", quantity: 0.5, unit: "tsp" }
-      ]},
-      { group: "Braise", items: [
-        { name: "Neutral oil (groundnut or vegetable)", quantity: 2, unit: "tbsp" },
-        { name: "Shallots, finely sliced", quantity: 3, unit: "" },
-        { name: "Beef or chicken stock", quantity: 300, unit: "ml" },
-        { name: "Dark soy sauce", quantity: 1, unit: "tbsp" }
-      ]},
-      { group: "To Serve", items: [
-        { name: "Flat rice noodles (bún or vermicelli)", quantity: 300, unit: "g" },
-        { name: "Bean sprouts", quantity: 120, unit: "g" },
-        { name: "Thai basil leaves", quantity: 1, unit: "large handful" },
-        { name: "Spring onions, finely sliced", quantity: 3, unit: "" },
-        { name: "Red chilli, finely sliced", quantity: 1, unit: "" },
-        { name: "Lime, cut into wedges", quantity: 2, unit: "" }
-      ]}
+      {
+        group: "Duck",
+        items: [
+          { name: "Duck legs", quantity: 4, unit: "" },
+          { name: "Chinese five-spice powder", quantity: 2, unit: "tsp" },
+          { name: "Flaky sea salt", quantity: 1.5, unit: "tsp" },
+          { name: "Ground white pepper", quantity: 0.5, unit: "tsp" },
+          { name: "Runny honey", quantity: 2, unit: "tbsp" },
+          { name: "Dark soy sauce", quantity: 2, unit: "tbsp" },
+          { name: "Rice wine vinegar", quantity: 1, unit: "tbsp" },
+          { name: "Garlic cloves, minced", quantity: 3, unit: "" }
+        ]
+      },
+      {
+        group: "Cucumber Slaw",
+        items: [
+          { name: "Cucumber, halved, deseeded & thinly sliced", quantity: 1, unit: "large" },
+          { name: "Spring onions, finely sliced", quantity: 4, unit: "" },
+          { name: "Fresh red chilli, finely sliced", quantity: 1, unit: "" },
+          { name: "Hoisin sauce", quantity: 3, unit: "tbsp" },
+          { name: "Sesame oil", quantity: 1, unit: "tbsp" },
+          { name: "Rice wine vinegar", quantity: 1, unit: "tbsp" },
+          { name: "Fresh ginger, grated", quantity: 1, unit: "tsp" },
+          { name: "Toasted sesame seeds", quantity: 1, unit: "tbsp" }
+        ]
+      },
+      {
+        group: "To Serve",
+        items: [
+          { name: "Jasmine rice, cooked", quantity: 300, unit: "g" },
+          { name: "Fresh coriander leaves", quantity: 1, unit: "handful" }
+        ]
+      }
     ],
     substitutes: [
-      { ingredient: "Beef shin", alternatives: ["Beef flank steak", "Bavette steak"] },
-      { ingredient: "Palm sugar", alternatives: ["Soft brown sugar", "Coconut sugar"] },
-      { ingredient: "Thai basil", alternatives: ["Regular basil", "Coriander (cilantro)"] },
-      { ingredient: "Fish sauce", alternatives: ["Soy sauce with a squeeze of lime", "Coconut aminos"] }
+      { ingredient: "Duck legs", alternatives: ["Chicken legs (reduce cooking time by 20 mins)", "Bone-in chicken thighs"] },
+      { ingredient: "Hoisin sauce", alternatives: ["Plum sauce", "Oyster sauce with a pinch of sugar"] },
+      { ingredient: "Rice wine vinegar", alternatives: ["Apple cider vinegar", "White wine vinegar"] }
     ],
     instructions: [
-      "Step 1 — Marinate the beef: Combine the sliced beef with the fish sauce, palm sugar, grated ginger, minced garlic, lemongrass, star anise and turmeric in a bowl. Toss well to coat every piece and leave to marinate for at least 20 minutes at room temperature, or up to 4 hours in the fridge.",
-      "Step 2 — Build the caramel base: Heat the oil in a wide, heavy-based pan or wok over medium-high heat. Add the sliced shallots and cook, stirring often, for 6–8 minutes until deep golden and beginning to crisp at the edges. Push to the sides of the pan.",
-      "Step 3 — Sear the beef: Add the marinated beef to the centre of the pan in a single layer (work in two batches if needed). Leave untouched for 2 minutes to develop a caramelised sear, then toss everything together with the shallots. The sugars in the marinade will catch slightly — this is good, it builds deep flavour.",
-      "Step 4 — Braise: Pour in the stock and dark soy sauce, scraping up any caramelised bits from the base of the pan. Reduce the heat to a gentle simmer and cook uncovered for 18–22 minutes, stirring occasionally, until the sauce has reduced to a glossy, sticky coating around the beef. Remove the star anise.",
-      "Step 5 — Cook the noodles: While the beef braises, soak or cook the rice noodles according to the packet instructions. Drain and divide between four deep bowls. Top with bean sprouts.",
-      "Step 6 — Assemble: Spoon the sticky caramelised beef and all its glossy sauce over the noodles. Scatter over spring onions, Thai basil leaves and red chilli. Serve immediately with lime wedges for squeezing over — the acidity cuts through the richness beautifully."
+      "Pat the duck legs very thoroughly dry with kitchen paper — this is the single most important step for crispy skin. Score the skin in a crosshatch pattern with a sharp knife, cutting through the fat but not into the flesh.",
+      "Mix the five-spice, salt and white pepper together and rub all over the duck, getting into the score marks. Leave uncovered in the fridge for at least 1 hour, or overnight if you have time — the air-drying is what gives you truly lacquered skin.",
+      "Preheat your oven to 180°C (160°C fan). Place the duck legs skin-side up on a rack set over a roasting tin (the tin will catch the fat — it\'s liquid gold for roasting potatoes another day). Roast for 1 hour.",
+      "Meanwhile, whisk together the honey, dark soy sauce, rice wine vinegar and garlic to make the glaze. After the first hour of cooking, brush the duck generously with the glaze. Return to the oven and increase the heat to 220°C (200°C fan). Roast for a further 20–25 minutes, brushing once more halfway through, until the skin is deeply burnished and crackly.",
+      "While the duck finishes, make the slaw. Toss the cucumber, spring onions and red chilli together. Whisk the hoisin, sesame oil, rice wine vinegar and ginger, then pour over the vegetables and toss well. Scatter with sesame seeds.",
+      "Rest the duck for 10 minutes before serving. Plate up with steamed jasmine rice, a generous pile of slaw alongside and plenty of fresh coriander scattered over the top."
     ]
   },
   {
     id: "sug2",
-    title: "Catalan Baked Cod with Samfaina — Roasted Pepper & Aubergine Sauce with Toasted Almonds & Parsley",
+    title: "Butter-Basted Salmon with Brown Butter Capers, Lemon & Crushed Peas",
     category: "Fish & Seafood",
-    calories: 412,
+    calories: 520,
     protein: 44,
     fibre: 6,
-    healthScore: 81,
-    time: "55 mins",
-    serves: "4",
-    desc: "Samfaina is Catalonia\'s answer to ratatouille — a slow-cooked, deeply sweet and smoky sauce of roasted peppers, aubergine, tomatoes and onion that transforms thick cod fillets into something truly spectacular when baked together in the same pan. A finish of toasted almonds, fresh parsley and a drizzle of good olive oil lifts the whole dish into something elegant enough for a dinner party yet simple enough for a Tuesday night. This is Spanish home cooking at its most soulful.",
+    healthScore: 74,
+    time: "25 mins",
+    serves: "2",
+    desc: "Pan-seared salmon fillets, basted until golden and just-cooked through, served over a vibrantly crushed pea and mint base and finished with a nutty brown butter caper sauce. This is French brasserie cooking at its most achievable — elegant, buttery, and deeply satisfying with just one pan and a saucepan. June peas are at their sweetest right now, making this the perfect moment for it.",
     emoji: "🐟",
-    image: "https://images.unsplash.com/photo-1614549099339-729737b3cfd9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxDYXRhbGFuJTIwQmFrZWQlMjBDb2QlMjB3aXRoJTIwU2FtZmFpbmElMjAlRTIlODAlOTQlMjBSb2FzdGVkJTIwUGVwcGVyJTIwJTI2JTIwQXViZXJnaW5lJTIwU2F1Y2UlMjB3aXRoJTIwVG9hc3RlZCUyMEFsbW9uZHMlMjAlMjYlMjBQYXJzbGV5JTIwZm9vZCUyMGRpc2h8ZW58MHwwfHx8MTc4MTc1OTg4Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+    image: "https://images.unsplash.com/photo-1559058789-672da06263d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxCdXR0ZXItQmFzdGVkJTIwU2FsbW9uJTIwd2l0aCUyMEJyb3duJTIwQnV0dGVyJTIwQ2FwZXJzJTJDJTIwTGVtb24lMjAlMjYlMjBDcnVzaGVkJTIwUGVhcyUyMGZvb2QlMjBkaXNofGVufDB8MHx8fDE3ODE4NDU5NzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
     ingredientGroups: [
-      { group: "Samfaina Sauce", items: [
-        { name: "Aubergine, cut into 2cm cubes", quantity: 1, unit: "large" },
-        { name: "Red peppers, deseeded and roughly chopped", quantity: 2, unit: "" },
-        { name: "Yellow pepper, deseeded and roughly chopped", quantity: 1, unit: "" },
-        { name: "White onion, finely diced", quantity: 1, unit: "large" },
-        { name: "Garlic cloves, thinly sliced", quantity: 4, unit: "" },
-        { name: "Ripe tomatoes, roughly chopped (or 400g tin chopped tomatoes)", quantity: 400, unit: "g" },
-        { name: "Smoked paprika (pimentón)", quantity: 1.5, unit: "tsp" },
-        { name: "Olive oil", quantity: 4, unit: "tbsp" },
-        { name: "Dry sherry or white wine", quantity: 60, unit: "ml" },
-        { name: "Fresh thyme sprigs", quantity: 3, unit: "" },
-        { name: "Bay leaf", quantity: 1, unit: "" },
-        { name: "Sea salt and black pepper", quantity: 1, unit: "to taste" }
-      ]},
-      { group: "Cod", items: [
-        { name: "Thick cod fillets, skin on", quantity: 700, unit: "g" },
-        { name: "Olive oil", quantity: 1, unit: "tbsp" },
-        { name: "Sea salt", quantity: 1, unit: "pinch" }
-      ]},
-      { group: "To Finish", items: [
-        { name: "Blanched almonds, roughly toasted and chopped", quantity: 40, unit: "g" },
-        { name: "Flat-leaf parsley, roughly chopped", quantity: 1, unit: "large handful" },
-        { name: "Extra virgin olive oil, to drizzle", quantity: 1, unit: "tbsp" },
-        { name: "Crusty bread or boiled new potatoes, to serve", quantity: 1, unit: "to serve" }
-      ]}
+      {
+        group: "Salmon",
+        items: [
+          { name: "Skin-on salmon fillets", quantity: 2, unit: "x 180g" },
+          { name: "Olive oil", quantity: 1, unit: "tbsp" },
+          { name: "Unsalted butter", quantity: 20, unit: "g" },
+          { name: "Garlic clove, lightly crushed", quantity: 1, unit: "" },
+          { name: "Fresh thyme sprigs", quantity: 3, unit: "" },
+          { name: "Sea salt & black pepper", quantity: 1, unit: "to taste" }
+        ]
+      },
+      {
+        group: "Brown Butter Caper Sauce",
+        items: [
+          { name: "Unsalted butter", quantity: 40, unit: "g" },
+          { name: "Capers, drained", quantity: 2, unit: "tbsp" },
+          { name: "Lemon, juice & zest", quantity: 1, unit: "" },
+          { name: "Flat-leaf parsley, finely chopped", quantity: 2, unit: "tbsp" }
+        ]
+      },
+      {
+        group: "Crushed Peas",
+        items: [
+          { name: "Frozen peas", quantity: 300, unit: "g" },
+          { name: "Unsalted butter", quantity: 15, unit: "g" },
+          { name: "Fresh mint leaves, finely chopped", quantity: 2, unit: "tbsp" },
+          { name: "Lemon juice", quantity: 1, unit: "tsp" },
+          { name: "Sea salt & black pepper", quantity: 1, unit: "to taste" }
+        ]
+      }
     ],
     substitutes: [
-      { ingredient: "Cod", alternatives: ["Hake", "Pollock", "Sea bream fillets"] },
-      { ingredient: "Dry sherry", alternatives: ["Dry white wine", "Chicken stock with a squeeze of lemon"] },
-      { ingredient: "Blanched almonds", alternatives: ["Toasted pine nuts", "Toasted hazelnuts"] }
+      { ingredient: "Salmon fillets", alternatives: ["Trout fillets", "Sea trout"] },
+      { ingredient: "Capers", alternatives: ["Finely chopped cornichons", "Green olives, chopped"] },
+      { ingredient: "Frozen peas", alternatives: ["Broad beans, podded and blanched", "Edamame beans"] }
     ],
     instructions: [
-      "Step 1 — Salt the aubergine: Toss the cubed aubergine with a generous pinch of salt and set aside in a colander for 15 minutes. This draws out excess moisture. Pat dry with kitchen paper before cooking.",
-      "Step 2 — Build the samfaina: Heat 4 tbsp olive oil in a large, wide, ovenproof pan or deep sauté pan over medium heat. Add the onion and cook for 8 minutes until softened and translucent. Add the garlic and cook for 1 minute more. Add the aubergine and peppers, increase the heat to medium-high, and cook for 10 minutes, stirring occasionally, until the vegetables are softened and lightly caramelised.",
-      "Step 3 — Add the tomatoes and spices: Stir in the smoked paprika, then pour in the sherry and let it bubble for 1 minute. Add the chopped tomatoes, thyme and bay leaf. Season generously. Reduce heat to medium-low and simmer for 15 minutes, stirring occasionally, until the sauce is rich, thick and deeply flavoured. Taste and adjust seasoning — it should be bold and slightly sweet from the peppers.",
-      "Step 4 — Preheat the oven to 200°C (180°C fan). While the sauce is finishing, pat the cod fillets completely dry with kitchen paper. Season the flesh side with sea salt and a little black pepper.",
-      "Step 5 — Bake the cod: Nestle the cod fillets skin-side down into the samfaina, pressing them gently into the sauce. Drizzle over 1 tbsp olive oil. Transfer the pan to the oven and bake for 12–15 minutes, depending on thickness, until the cod is opaque all the way through and flakes easily when pressed. Avoid overcooking — the fish should be just set and still moist.",
-      "Step 6 — Finish and serve: Remove the bay leaf and thyme stalks. Scatter generously with toasted chopped almonds and fresh parsley. Drizzle over a final thread of your best extra virgin olive oil. Bring the whole pan to the table and serve with crusty bread for mopping up the sauce, or alongside boiled new potatoes."
+      "Take the salmon out of the fridge 15 minutes before cooking so it comes to room temperature — this ensures even cooking. Pat the skin completely dry with kitchen paper and season both sides generously with salt and pepper.",
+      "Cook the peas in boiling salted water for 3 minutes until tender. Drain, then return to the pan with the butter, chopped mint, lemon juice, salt and pepper. Use a fork or potato masher to roughly crush — you want texture, not a smooth purée. Keep warm over the lowest heat.",
+      "Heat the olive oil in a heavy-based frying pan over high heat until shimmering. Place the salmon skin-side down, pressing gently with a fish slice for the first 30 seconds to prevent curling. Reduce heat to medium-high and cook for 4 minutes until the skin is deep golden and crisp and the flesh has turned opaque about two-thirds of the way up.",
+      "Add the 20g butter, crushed garlic and thyme to the pan. As the butter foams, tilt the pan and use a spoon to continuously baste the flesh of the salmon with the hot butter for 1–2 minutes. Flip and cook for just 30 seconds more — the salmon should still be slightly blush pink in the very centre. Remove and rest on a warm plate.",
+      "Wipe the pan clean and return to medium heat. Add the 40g butter and let it cook, swirling occasionally, for 2–3 minutes until it turns a deep hazelnut brown and smells nutty. Immediately add the capers (they\'ll spit, so step back) and fry for 30 seconds. Off the heat, squeeze in the lemon juice, add the zest and parsley and stir.",
+      "Spoon the crushed peas onto warmed plates, sit the salmon skin-side up on top, and pour the brown butter caper sauce generously over everything. Serve immediately."
     ]
   },
   {
     id: "sug3",
-    title: "Ottomane-Spiced Roasted Cauliflower & Chickpea Tray Bake with Pomegranate Tahini, Crispy Capers & Mint",
-    category: "Vegan",
-    calories: 467,
-    protein: 16,
-    fibre: 11,
-    healthScore: 88,
-    time: "45 mins",
+    title: "Mexican Black Bean & Roasted Poblano Enchiladas with Chipotle Tomato Sauce & Crumbled Feta",
+    category: "Vegetarian",
+    calories: 545,
+    protein: 22,
+    fibre: 14,
+    healthScore: 79,
+    time: "55 mins",
     serves: "4",
-    desc: "A stunning Middle Eastern-inspired tray bake where whole roasted cauliflower florets and golden crispy chickpeas meet a warming Ottoman spice blend of cumin, coriander, cinnamon and Aleppo pepper — the kind of dish that makes vegetables feel genuinely exciting. The creamy pomegranate-laced tahini sauce poured underneath catches all the roasting juices while crispy fried capers and fresh mint add pops of briny, cooling contrast. Serve with flatbreads and this becomes a centrepiece meal in its own right.",
-    emoji: "🌿",
-    image: "https://images.unsplash.com/photo-1627279000955-dec899e5f8bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxPdHRvbWFuZS1TcGljZWQlMjBSb2FzdGVkJTIwQ2F1bGlmbG93ZXIlMjAlMjYlMjBDaGlja3BlYSUyMFRyYXklMjBCYWtlJTIwd2l0aCUyMFBvbWVncmFuYXRlJTIwVGFoaW5pJTJDJTIwQ3Jpc3B5JTIwQ2FwZXJzJTIwJTI2JTIwTWludCUyMGZvb2QlMjBkaXNofGVufDB8MHx8fDE3ODE3NTk4ODd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    desc: "Smoky chipotle-spiked tomato sauce blankets soft corn tortillas stuffed with charred poblano peppers, cumin-spiced black beans and melted cheese — this is the kind of vegetarian dish that absolutely no one misses the meat in. The sauce is built quickly with tinned tomatoes and chipotle in adobo, giving it extraordinary depth for minimal effort. Crumbled feta, pickled jalapeños and fresh coriander on top make it look as good as it tastes.",
+    emoji: "🌮",
+    image: "https://images.unsplash.com/photo-1671225603584-8412a795a2d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxNZXhpY2FuJTIwQmxhY2slMjBCZWFuJTIwJTI2JTIwUm9hc3RlZCUyMFBvYmxhbm8lMjBFbmNoaWxhZGFzJTIwd2l0aCUyMENoaXBvdGxlJTIwVG9tYXRvJTIwU2F1Y2UlMjAlMjYlMjBDcnVtYmxlZCUyMEZldGElMjBmb29kJTIwZGlzaHxlbnwwfDB8fHwxNzgxODQ1OTcwfDA&ixlib=rb-4.1.0&q=80&w=1080",
     ingredientGroups: [
-      { group: "Roasted Cauliflower & Chickpeas", items: [
-        { name: "Cauliflower, broken into medium florets", quantity: 1, unit: "large head (approx 800g)" },
-        { name: "Tinned chickpeas, drained, rinsed and very well dried", quantity: 400, unit: "g" },
-        { name: "Olive oil", quantity: 4, unit: "tbsp" },
-        { name: "Ground cumin", quantity: 1.5, unit: "tsp" },
-        { name: "Ground coriander", quantity: 1, unit: "tsp" },
-        { name: "Ground cinnamon", quantity: 0.5, unit: "tsp" },
-        { name: "Aleppo pepper (pul biber) or mild chilli flakes", quantity: 1, unit: "tsp" },
-        { name: "Ground allspice", quantity: 0.25, unit: "tsp" },
-        { name: "Sea salt", quantity: 1, unit: "tsp" }
-      ]},
-      { group: "Pomegranate Tahini Sauce", items: [
-        { name: "Tahini (good quality, runny)", quantity: 80, unit: "g" },
-        { name: "Pomegranate molasses", quantity: 2, unit: "tbsp" },
-        { name: "Lemon juice, freshly squeezed", quantity: 2, unit: "tbsp" },
-        { name: "Garlic clove, very finely grated", quantity: 1, unit: "" },
-        { name: "Ice-cold water, to thin", quantity: 4, unit: "tbsp" },
-        { name: "Sea salt", quantity: 1, unit: "pinch" }
-      ]},
-      { group: "Crispy Capers & Toppings", items: [
-        { name: "Capers, drained and patted dry", quantity: 30, unit: "g" },
-        { name: "Olive oil (for frying capers)", quantity: 1.5, unit: "tbsp" },
-        { name: "Pomegranate seeds", quantity: 60, unit: "g" },
-        { name: "Fresh mint leaves", quantity: 1, unit: "large handful" },
-        { name: "Flat-leaf parsley, roughly torn", quantity: 1, unit: "small handful" },
-        { name: "Toasted pine nuts", quantity: 30, unit: "g" },
-        { name: "Warm flatbreads, to serve", quantity: 4, unit: "" }
-      ]}
+      {
+        group: "Chipotle Tomato Sauce",
+        items: [
+          { name: "Olive oil", quantity: 2, unit: "tbsp" },
+          { name: "Onion, finely diced", quantity: 1, unit: "large" },
+          { name: "Garlic cloves, minced", quantity: 4, unit: "" },
+          { name: "Ground cumin", quantity: 1.5, unit: "tsp" },
+          { name: "Smoked paprika", quantity: 1, unit: "tsp" },
+          { name: "Chipotle chillies in adobo sauce", quantity: 2, unit: "" },
+          { name: "Tinned chopped tomatoes", quantity: 400, unit: "g" },
+          { name: "Vegetable stock", quantity: 100, unit: "ml" },
+          { name: "Sea salt", quantity: 1, unit: "to taste" }
+        ]
+      },
+      {
+        group: "Filling",
+        items: [
+          { name: "Poblano peppers (or large green peppers)", quantity: 3, unit: "" },
+          { name: "Tinned black beans, drained & rinsed", quantity: 2, unit: "x 400g tins" },
+          { name: "Ground cumin", quantity: 1, unit: "tsp" },
+          { name: "Dried oregano", quantity: 0.5, unit: "tsp" },
+          { name: "Lime, juice only", quantity: 1, unit: "" },
+          { name: "Grated cheddar or Monterey Jack", quantity: 150, unit: "g" }
+        ]
+      },
+      {
+        group: "Assembly & Topping",
+        items: [
+          { name: "Corn tortillas (15cm)", quantity: 12, unit: "" },
+          { name: "Crumbled feta cheese", quantity: 80, unit: "g" },
+          { name: "Pickled jalapeños", quantity: 2, unit: "tbsp" },
+          { name: "Soured cream", quantity: 4, unit: "tbsp" },
+          { name: "Fresh coriander, roughly chopped", quantity: 1, unit: "large handful" },
+          { name: "Lime wedges", quantity: 1, unit: "to serve" }
+        ]
+      }
     ],
     substitutes: [
-      { ingredient: "Aleppo pepper", alternatives: ["Mild chilli flakes with a pinch of sweet paprika", "Ancho chilli flakes"] },
-      { ingredient: "Pomegranate molasses", alternatives: ["1 tbsp balsamic glaze mixed with 1 tsp honey", "Tamarind paste thinned with a little water"] },
-      { ingredient: "Cauliflower", alternatives: ["Broccoli florets", "Butternut squash cubes"] },
-      { ingredient: "Pine nuts", alternatives: ["Toasted flaked almonds", "Pumpkin seeds"] }
+      { ingredient: "Poblano peppers", alternatives: ["Large green bell peppers", "Anaheim peppers"] },
+      { ingredient: "Chipotle chillies in adobo", alternatives: ["1 tsp chipotle paste + ½ tsp smoked paprika", "1 tbsp harissa (different flavour but similar heat)"] },
+      { ingredient: "Corn tortillas", alternatives: ["Small flour tortillas", "Gluten-free wraps"] },
+      { ingredient: "Feta cheese", alternatives: ["Ricotta salata", "Queso fresco"] }
     ],
     instructions: [
-      "Step 1 — Preheat the oven to 220°C (200°C fan). Line two large baking trays with baking paper. The key to this dish is high heat and not overcrowding — two trays ensure everything roasts rather than steams.",
-      "Step 2 — Season and roast: Spread the cauliflower florets across one tray and the dried chickpeas across the other. Drizzle each tray with 2 tbsp olive oil. Combine all the spices with the sea salt in a small bowl, then divide the spice mix evenly between both trays, tossing well with your hands to coat every floret and chickpea thoroughly.",
-      "Step 3 — Roast: Place both trays in the oven. Roast the chickpeas for 25–30 minutes, shaking the tray halfway through, until deeply golden, crispy and popped. Roast the cauliflower for 28–32 minutes, turning once halfway, until the florets are caramelised and charred at the edges and tender through the middle. Both should look more golden than you think — that colour is flavour.",
-      "Step 4 — Make the pomegranate tahini: While everything roasts, whisk together the tahini, pomegranate molasses, lemon juice and grated garlic in a bowl. Add cold water a tablespoon at a time, whisking well between additions — the sauce will seize initially then loosen into a smooth, creamy, pourable consistency. Season with salt and taste: it should be nutty, slightly sweet-sharp from the pomegranate, and tangy from the lemon.",
-      "Step 5 — Fry the capers: Heat 1.5 tbsp olive oil in a small frying pan over medium-high heat. When shimmering, add the dry capers and fry for 2–3 minutes, stirring occasionally, until they burst open and turn crispy and golden. Drain on kitchen paper — they turn wonderfully crunchy as they cool.",
-      "Step 6 — Assemble: Pour most of the pomegranate tahini sauce onto a large serving platter, spreading it out. Pile the roasted cauliflower on top, then scatter over the crispy chickpeas. Drizzle over any remaining tahini sauce. Finish with pomegranate seeds, crispy capers, mint leaves, torn parsley and toasted pine nuts. Serve immediately with warm flatbreads for scooping."
+      "Start with the sauce. Heat the olive oil in a heavy saucepan over medium heat. Add the onion with a pinch of salt and cook for 8–10 minutes until soft and beginning to turn golden. Add the garlic, cumin and smoked paprika and cook for 1 minute until fragrant.",
+      "Finely chop the chipotle chillies (including a tablespoon of the adobo sauce from the tin) and add to the pan. Pour in the tomatoes and stock, stir well and simmer for 15 minutes until the sauce has thickened slightly and the flavours have melded. Season to taste. If you like a smoother sauce, blitz briefly with a stick blender.",
+      "While the sauce simmers, char the poblano peppers. Place them directly over a gas flame or under a very hot grill, turning with tongs, until blackened and blistered all over — about 8–10 minutes. Place in a bowl, cover with cling film and leave for 5 minutes. The steam loosens the skins. Peel, deseed and roughly chop the flesh.",
+      "Mix the chopped roasted peppers with the drained black beans, cumin, dried oregano and lime juice. Season generously — this filling needs bold seasoning. Stir through half the grated cheddar.",
+      "Preheat the oven to 200°C (180°C fan). Warm the tortillas briefly in a dry frying pan for 20 seconds each side — warm tortillas roll without cracking. Spoon a ladleful of the chipotle tomato sauce across the base of a large baking dish. Divide the filling between the tortillas, roll tightly and place seam-side down in the dish.",
+      "Pour the remaining sauce over the top, spreading it to cover the tortillas completely (this prevents them drying out). Scatter over the remaining grated cheddar. Bake for 20–25 minutes until the cheese is bubbling and the edges are beginning to crisp.",
+      "Remove from the oven and immediately scatter with crumbled feta, pickled jalapeños and fresh coriander. Add dollops of soured cream and serve straight from the dish with lime wedges alongside."
     ]
   }
 ];

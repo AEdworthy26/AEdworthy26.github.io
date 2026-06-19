@@ -1,10 +1,10 @@
 // quiz-data.js
-// Auto-updated 2026-06-18 — do not edit manually
+// Auto-updated 2026-06-19 — do not edit manually
 
 window.QUIZ_DATA = {
-  date: '2026-06-18',
+  date: '2026-06-19',
   category: 'Sport',
-  question: 'At the 1986 FIFA World Cup quarter-final between Argentina and England, Diego Maradona scored two goals — one infamous, one widely regarded as the greatest of all time. How many England players did he dribble past on his way to scoring that second goal?',
-  answer: 'Five outfield players (plus the goalkeeper), making six in total.',
-  funFact: 'Maradona picked up the ball just inside his own half and ran 60 metres in around ten seconds, leaving five defenders trailing before slotting past goalkeeper Peter Shilton. The goal was later voted the "Goal of the Century" by FIFA voters in 2002. The match itself ended 2–1 to Argentina, and both of Maradona\'s goals came within four minutes of each other.'
+  question: 'At the 1986 FIFA World Cup in Mexico, Diego Maradona scored two of the most famous goals in football history within four minutes of each other against England. The second is widely considered the greatest individual goal ever scored — but how many England players did Maradona dribble past before slotting the ball into the net?',
+  answer: 'Five outfield players (plus the goalkeeper, Peter Shilton), so six England players in total were beaten.',
+  funFact: 'The goal was later voted "Goal of the Century" in a poll by FIFA. Maradona collected the ball in his own half, ran roughly 60 metres in around 10 seconds, and beat five defenders before rounding Shilton. Argentine commentator Víctor Hugo Morales delivered one of sport\'s most celebrated pieces of commentary as it unfolded, calling Maradona "a cosmic kite" and "from which planet did you come?"'
 };
