@@ -1,193 +1,159 @@
 // suggested-recipes-data.js
-// Auto-updated 2026-06-19 — do not edit manually
+// Auto-updated 2026-06-20 — do not edit manually
 
 window.SUGGESTED_RECIPES = [
   {
     id: "sug1",
-    title: "Crispy Peking-Style Duck Legs with Hoisin Cucumber Slaw & Steamed Rice",
-    category: "Other",
+    title: "Tuscan Pork Arista with White Beans, Rosemary & Salsa Verde",
+    category: "Pork",
     calories: 610,
-    protein: 42,
-    fibre: 3,
-    healthScore: 65,
-    time: "1 hr 45 mins",
+    protein: 46,
+    fibre: 8,
+    healthScore: 71,
+    time: "1 hr 10 mins",
     serves: "4",
-    desc: "Slow-roasted duck legs lacquered with a five-spice and honey glaze emerge from the oven with shatteringly crisp skin and deeply savoury, yielding meat. A cool, crunchy hoisin-dressed cucumber and spring onion slaw cuts right through the richness. All the drama of a restaurant centrepiece, with nothing more than a roasting tin and a sharp knife.",
-    emoji: "🦆",
-    image: "https://images.unsplash.com/photo-1765441012353-10fb4701a276?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxDcmlzcHklMjBQZWtpbmctU3R5bGUlMjBEdWNrJTIwTGVncyUyMHdpdGglMjBIb2lzaW4lMjBDdWN1bWJlciUyMFNsYXclMjAlMjYlMjBTdGVhbWVkJTIwUmljZSUyMGZvb2QlMjBkaXNofGVufDB8MHx8fDE3ODE4NDU5Njl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    desc: "A gloriously Tuscan Sunday centrepiece: pork loin rubbed with garlic, fennel seed and rosemary, roasted until golden and juicy, then served over creamy white beans braised with sage and pancetta. A punchy salsa verde cut through with capers and lemon ties everything together with vivid freshness.",
+    emoji: "🐷",
+    image: "https://images.unsplash.com/photo-1682496039948-ab599c31a8e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUdXNjYW4lMjBQb3JrJTIwQXJpc3RhJTIwd2l0aCUyMFdoaXRlJTIwQmVhbnMlMkMlMjBSb3NlbWFyeSUyMCUyNiUyMFNhbHNhJTIwVmVyZGUlMjBmb29kJTIwZGlzaHxlbnwwfDB8fHwxNzgxOTMyNTQxfDA&ixlib=rb-4.1.0&q=80&w=1080",
     ingredientGroups: [
-      {
-        group: "Duck",
-        items: [
-          { name: "Duck legs", quantity: 4, unit: "" },
-          { name: "Chinese five-spice powder", quantity: 2, unit: "tsp" },
-          { name: "Flaky sea salt", quantity: 1.5, unit: "tsp" },
-          { name: "Ground white pepper", quantity: 0.5, unit: "tsp" },
-          { name: "Runny honey", quantity: 2, unit: "tbsp" },
-          { name: "Dark soy sauce", quantity: 2, unit: "tbsp" },
-          { name: "Rice wine vinegar", quantity: 1, unit: "tbsp" },
-          { name: "Garlic cloves, minced", quantity: 3, unit: "" }
-        ]
-      },
-      {
-        group: "Cucumber Slaw",
-        items: [
-          { name: "Cucumber, halved, deseeded & thinly sliced", quantity: 1, unit: "large" },
-          { name: "Spring onions, finely sliced", quantity: 4, unit: "" },
-          { name: "Fresh red chilli, finely sliced", quantity: 1, unit: "" },
-          { name: "Hoisin sauce", quantity: 3, unit: "tbsp" },
-          { name: "Sesame oil", quantity: 1, unit: "tbsp" },
-          { name: "Rice wine vinegar", quantity: 1, unit: "tbsp" },
-          { name: "Fresh ginger, grated", quantity: 1, unit: "tsp" },
-          { name: "Toasted sesame seeds", quantity: 1, unit: "tbsp" }
-        ]
-      },
-      {
-        group: "To Serve",
-        items: [
-          { name: "Jasmine rice, cooked", quantity: 300, unit: "g" },
-          { name: "Fresh coriander leaves", quantity: 1, unit: "handful" }
-        ]
-      }
+      { group: "Pork & Rub", items: [
+        { name: "Pork loin joint, boneless", quantity: 900, unit: "g" },
+        { name: "Garlic cloves, minced", quantity: 4, unit: "" },
+        { name: "Fennel seeds", quantity: 2, unit: "tsp" },
+        { name: "Fresh rosemary, finely chopped", quantity: 2, unit: "tbsp" },
+        { name: "Dried chilli flakes", quantity: 0.5, unit: "tsp" },
+        { name: "Olive oil", quantity: 3, unit: "tbsp" },
+        { name: "Flaky sea salt", quantity: 1.5, unit: "tsp" },
+        { name: "Black pepper, freshly ground", quantity: 1, unit: "tsp" }
+      ]},
+      { group: "White Beans", items: [
+        { name: "Pancetta, diced", quantity: 80, unit: "g" },
+        { name: "Cannellini beans, tinned (drained)", quantity: 800, unit: "g" },
+        { name: "Chicken stock", quantity: 250, unit: "ml" },
+        { name: "Dry white wine", quantity: 100, unit: "ml" },
+        { name: "Fresh sage leaves", quantity: 8, unit: "" },
+        { name: "Shallots, finely sliced", quantity: 2, unit: "" },
+        { name: "Olive oil", quantity: 1, unit: "tbsp" }
+      ]},
+      { group: "Salsa Verde", items: [
+        { name: "Flat-leaf parsley, leaves only", quantity: 30, unit: "g" },
+        { name: "Fresh basil leaves", quantity: 15, unit: "g" },
+        { name: "Capers, rinsed", quantity: 2, unit: "tbsp" },
+        { name: "Dijon mustard", quantity: 1, unit: "tsp" },
+        { name: "Red wine vinegar", quantity: 1, unit: "tbsp" },
+        { name: "Olive oil, extra virgin", quantity: 5, unit: "tbsp" },
+        { name: "Garlic clove", quantity: 1, unit: "" },
+        { name: "Lemon, zested and juiced", quantity: 0.5, unit: "" }
+      ]}
     ],
     substitutes: [
-      { ingredient: "Duck legs", alternatives: ["Chicken legs (reduce cooking time by 20 mins)", "Bone-in chicken thighs"] },
-      { ingredient: "Hoisin sauce", alternatives: ["Plum sauce", "Oyster sauce with a pinch of sugar"] },
-      { ingredient: "Rice wine vinegar", alternatives: ["Apple cider vinegar", "White wine vinegar"] }
+      { ingredient: "Pork loin joint", alternatives: ["Pork tenderloin (reduce cooking time by 25 mins)", "Chicken thighs bone-in (same rub, same time)"] },
+      { ingredient: "Cannellini beans", alternatives: ["Butter beans", "Borlotti beans"] },
+      { ingredient: "Pancetta", alternatives: ["Smoked streaky bacon", "Guanciale"] },
+      { ingredient: "Dry white wine", alternatives: ["Extra chicken stock with a squeeze of lemon", "Dry vermouth"] }
     ],
     instructions: [
-      "Pat the duck legs very thoroughly dry with kitchen paper — this is the single most important step for crispy skin. Score the skin in a crosshatch pattern with a sharp knife, cutting through the fat but not into the flesh.",
-      "Mix the five-spice, salt and white pepper together and rub all over the duck, getting into the score marks. Leave uncovered in the fridge for at least 1 hour, or overnight if you have time — the air-drying is what gives you truly lacquered skin.",
-      "Preheat your oven to 180°C (160°C fan). Place the duck legs skin-side up on a rack set over a roasting tin (the tin will catch the fat — it\'s liquid gold for roasting potatoes another day). Roast for 1 hour.",
-      "Meanwhile, whisk together the honey, dark soy sauce, rice wine vinegar and garlic to make the glaze. After the first hour of cooking, brush the duck generously with the glaze. Return to the oven and increase the heat to 220°C (200°C fan). Roast for a further 20–25 minutes, brushing once more halfway through, until the skin is deeply burnished and crackly.",
-      "While the duck finishes, make the slaw. Toss the cucumber, spring onions and red chilli together. Whisk the hoisin, sesame oil, rice wine vinegar and ginger, then pour over the vegetables and toss well. Scatter with sesame seeds.",
-      "Rest the duck for 10 minutes before serving. Plate up with steamed jasmine rice, a generous pile of slaw alongside and plenty of fresh coriander scattered over the top."
+      "Step 1 — Remove the pork loin from the fridge 30 minutes before cooking. Preheat your oven to 220°C (200°C fan). In a small bowl, combine the minced garlic, fennel seeds, rosemary, chilli flakes, 2 tbsp olive oil, salt and pepper into a rough paste. Score the fat cap of the pork in a crosshatch pattern with a sharp knife, then rub the paste all over the joint, pressing it into the scores.",
+      "Step 2 — Heat 1 tbsp olive oil in a large ovenproof frying pan or roasting dish over high heat. Sear the pork fat-side down for 4–5 minutes until deeply golden and crackling, then sear the remaining sides for 2 minutes each. Transfer the pan to the oven and roast at 220°C for 15 minutes, then reduce to 180°C (160°C fan) and continue roasting for a further 30–35 minutes until the internal temperature reads 65–68°C at the thickest point.",
+      "Step 3 — While the pork roasts, make the white beans. In a wide saucepan, fry the pancetta in 1 tbsp olive oil over medium heat for 4–5 minutes until crispy and golden. Add the shallots and sage and cook for another 3 minutes until softened. Pour in the white wine and let it bubble for 2 minutes, then add the cannellini beans and chicken stock. Simmer gently for 15 minutes, crushing a quarter of the beans lightly with the back of a spoon to thicken the broth. Season well with salt and pepper.",
+      "Step 4 — Make the salsa verde by blitzing the parsley, basil, capers, garlic, mustard, red wine vinegar and lemon zest together in a small food processor or finely chopping by hand. Stir in the extra virgin olive oil and lemon juice, then taste and adjust seasoning — it should be sharp, herby and punchy.",
+      "Step 5 — Rest the pork loin on a board, loosely covered with foil, for 10 minutes before carving into thick slices. Spoon the white beans generously onto warm plates, lay the pork slices on top, and finish with a bold drizzle of salsa verde. Serve immediately."
     ]
   },
   {
     id: "sug2",
-    title: "Butter-Basted Salmon with Brown Butter Capers, Lemon & Crushed Peas",
+    title: "Japanese Crab & Corn Chawanmushi with Dashi, Mirin & Toasted Sesame",
     category: "Fish & Seafood",
-    calories: 520,
-    protein: 44,
-    fibre: 6,
-    healthScore: 74,
-    time: "25 mins",
-    serves: "2",
-    desc: "Pan-seared salmon fillets, basted until golden and just-cooked through, served over a vibrantly crushed pea and mint base and finished with a nutty brown butter caper sauce. This is French brasserie cooking at its most achievable — elegant, buttery, and deeply satisfying with just one pan and a saucepan. June peas are at their sweetest right now, making this the perfect moment for it.",
-    emoji: "🐟",
-    image: "https://images.unsplash.com/photo-1559058789-672da06263d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxCdXR0ZXItQmFzdGVkJTIwU2FsbW9uJTIwd2l0aCUyMEJyb3duJTIwQnV0dGVyJTIwQ2FwZXJzJTJDJTIwTGVtb24lMjAlMjYlMjBDcnVzaGVkJTIwUGVhcyUyMGZvb2QlMjBkaXNofGVufDB8MHx8fDE3ODE4NDU5NzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    calories: 290,
+    protein: 24,
+    fibre: 2,
+    healthScore: 80,
+    time: "40 mins",
+    serves: "4",
+    desc: "Chawanmushi is Japan\'s most elegant comfort food — a silky, savoury steamed egg custard that trembles on the spoon. This summer version is loaded with sweet white crab meat and fresh corn kernels, set in a delicate dashi broth perfumed with mirin and soy, then crowned with toasted sesame and a few drops of chilli oil for warmth.",
+    emoji: "🦀",
+    image: "https://images.unsplash.com/photo-1727573647907-b7cde19c6c4b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxKYXBhbmVzZSUyMENyYWIlMjAlMjYlMjBDb3JuJTIwQ2hhd2FubXVzaGklMjB3aXRoJTIwRGFzaGklMkMlMjBNaXJpbiUyMCUyNiUyMFRvYXN0ZWQlMjBTZXNhbWUlMjBmb29kJTIwZGlzaHxlbnwwfDB8fHwxNzgxOTMyNTQxfDA&ixlib=rb-4.1.0&q=80&w=1080",
     ingredientGroups: [
-      {
-        group: "Salmon",
-        items: [
-          { name: "Skin-on salmon fillets", quantity: 2, unit: "x 180g" },
-          { name: "Olive oil", quantity: 1, unit: "tbsp" },
-          { name: "Unsalted butter", quantity: 20, unit: "g" },
-          { name: "Garlic clove, lightly crushed", quantity: 1, unit: "" },
-          { name: "Fresh thyme sprigs", quantity: 3, unit: "" },
-          { name: "Sea salt & black pepper", quantity: 1, unit: "to taste" }
-        ]
-      },
-      {
-        group: "Brown Butter Caper Sauce",
-        items: [
-          { name: "Unsalted butter", quantity: 40, unit: "g" },
-          { name: "Capers, drained", quantity: 2, unit: "tbsp" },
-          { name: "Lemon, juice & zest", quantity: 1, unit: "" },
-          { name: "Flat-leaf parsley, finely chopped", quantity: 2, unit: "tbsp" }
-        ]
-      },
-      {
-        group: "Crushed Peas",
-        items: [
-          { name: "Frozen peas", quantity: 300, unit: "g" },
-          { name: "Unsalted butter", quantity: 15, unit: "g" },
-          { name: "Fresh mint leaves, finely chopped", quantity: 2, unit: "tbsp" },
-          { name: "Lemon juice", quantity: 1, unit: "tsp" },
-          { name: "Sea salt & black pepper", quantity: 1, unit: "to taste" }
-        ]
-      }
+      { group: "Custard", items: [
+        { name: "Eggs, large", quantity: 4, unit: "" },
+        { name: "Dashi stock (instant or homemade)", quantity: 600, unit: "ml" },
+        { name: "Light soy sauce", quantity: 1.5, unit: "tbsp" },
+        { name: "Mirin", quantity: 1.5, unit: "tbsp" },
+        { name: "Fine sea salt", quantity: 0.25, unit: "tsp" }
+      ]},
+      { group: "Filling", items: [
+        { name: "White crab meat, fresh or tinned (drained well)", quantity: 200, unit: "g" },
+        { name: "Fresh corn kernels (from 1 large cob)", quantity: 100, unit: "g" },
+        { name: "Spring onions, finely sliced", quantity: 3, unit: "" },
+        { name: "Fresh ginger, finely grated", quantity: 1, unit: "tsp" }
+      ]},
+      { group: "To Finish", items: [
+        { name: "Toasted sesame seeds", quantity: 2, unit: "tsp" },
+        { name: "Chilli oil (e.g. Lao Gan Ma or similar)", quantity: 1, unit: "tsp" },
+        { name: "Shiso leaves or micro herbs", quantity: 8, unit: "" },
+        { name: "Light soy sauce, for the table", quantity: 1, unit: "tsp" }
+      ]}
     ],
     substitutes: [
-      { ingredient: "Salmon fillets", alternatives: ["Trout fillets", "Sea trout"] },
-      { ingredient: "Capers", alternatives: ["Finely chopped cornichons", "Green olives, chopped"] },
-      { ingredient: "Frozen peas", alternatives: ["Broad beans, podded and blanched", "Edamame beans"] }
+      { ingredient: "White crab meat", alternatives: ["Cooked king prawns, roughly chopped", "Hot-smoked trout, flaked"] },
+      { ingredient: "Dashi stock", alternatives: ["Light chicken stock (reduces authenticity but still delicious)", "Bonito flakes steeped in hot water for 10 mins then strained"] },
+      { ingredient: "Shiso leaves", alternatives: ["Fresh basil leaves", "Baby coriander leaves"] }
     ],
     instructions: [
-      "Take the salmon out of the fridge 15 minutes before cooking so it comes to room temperature — this ensures even cooking. Pat the skin completely dry with kitchen paper and season both sides generously with salt and pepper.",
-      "Cook the peas in boiling salted water for 3 minutes until tender. Drain, then return to the pan with the butter, chopped mint, lemon juice, salt and pepper. Use a fork or potato masher to roughly crush — you want texture, not a smooth purée. Keep warm over the lowest heat.",
-      "Heat the olive oil in a heavy-based frying pan over high heat until shimmering. Place the salmon skin-side down, pressing gently with a fish slice for the first 30 seconds to prevent curling. Reduce heat to medium-high and cook for 4 minutes until the skin is deep golden and crisp and the flesh has turned opaque about two-thirds of the way up.",
-      "Add the 20g butter, crushed garlic and thyme to the pan. As the butter foams, tilt the pan and use a spoon to continuously baste the flesh of the salmon with the hot butter for 1–2 minutes. Flip and cook for just 30 seconds more — the salmon should still be slightly blush pink in the very centre. Remove and rest on a warm plate.",
-      "Wipe the pan clean and return to medium heat. Add the 40g butter and let it cook, swirling occasionally, for 2–3 minutes until it turns a deep hazelnut brown and smells nutty. Immediately add the capers (they\'ll spit, so step back) and fry for 30 seconds. Off the heat, squeeze in the lemon juice, add the zest and parsley and stir.",
-      "Spoon the crushed peas onto warmed plates, sit the salmon skin-side up on top, and pour the brown butter caper sauce generously over everything. Serve immediately."
+      "Step 1 — Make the dashi custard base: whisk the eggs in a large bowl until fully combined but not frothy — you want as few bubbles as possible for a silky result. Warm the dashi stock gently until just body temperature (not hot), then whisk it into the eggs along with the light soy sauce, mirin and salt. Strain the mixture through a fine sieve into a jug for the smoothest possible custard.",
+      "Step 2 — Set up your steamer: bring a large pan of water to the boil, then reduce to a steady low simmer. If you don\'t have a traditional bamboo steamer, a wide deep pan with a fitted lid works perfectly — place a folded tea towel under the lid to absorb excess steam and prevent water droplets dripping onto the custard.",
+      "Step 3 — Divide the crab meat, corn kernels, spring onions and grated ginger evenly between four heatproof cups or ramekins (around 200ml capacity each). Pour the dashi custard mixture gently over the fillings, filling each cup to just below the rim. Cover each cup with a small square of clingfilm or foil to protect the surface.",
+      "Step 4 — Steam the custards over low heat for 14–16 minutes. The key is a very gentle steam — vigorous boiling will give you bubbles and a spongy texture rather than the desired silky wobble. Check at 14 minutes: the custard should be just set at the edges with a slight jiggle in the very centre, like a soft panna cotta. Remove and uncover carefully.",
+      "Step 5 — Finish each chawanmushi with a pinch of toasted sesame seeds, a few drops of chilli oil, and a shiso or herb leaf. Serve immediately in the cups, with a small dish of soy sauce alongside for guests to add a drop to taste. Eat with a small spoon, scooping from the silky custard down to the sweet crab and corn hiding at the base."
     ]
   },
   {
     id: "sug3",
-    title: "Mexican Black Bean & Roasted Poblano Enchiladas with Chipotle Tomato Sauce & Crumbled Feta",
+    title: "Greek Spanakorizo — Spinach & Rice with Lemon, Dill, Feta & Crispy Capers",
     category: "Vegetarian",
-    calories: 545,
-    protein: 22,
-    fibre: 14,
-    healthScore: 79,
-    time: "55 mins",
+    calories: 420,
+    protein: 14,
+    fibre: 7,
+    healthScore: 84,
+    time: "45 mins",
     serves: "4",
-    desc: "Smoky chipotle-spiked tomato sauce blankets soft corn tortillas stuffed with charred poblano peppers, cumin-spiced black beans and melted cheese — this is the kind of vegetarian dish that absolutely no one misses the meat in. The sauce is built quickly with tinned tomatoes and chipotle in adobo, giving it extraordinary depth for minimal effort. Crumbled feta, pickled jalapeños and fresh coriander on top make it look as good as it tastes.",
-    emoji: "🌮",
-    image: "https://images.unsplash.com/photo-1671225603584-8412a795a2d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxNZXhpY2FuJTIwQmxhY2slMjBCZWFuJTIwJTI2JTIwUm9hc3RlZCUyMFBvYmxhbm8lMjBFbmNoaWxhZGFzJTIwd2l0aCUyMENoaXBvdGxlJTIwVG9tYXRvJTIwU2F1Y2UlMjAlMjYlMjBDcnVtYmxlZCUyMEZldGElMjBmb29kJTIwZGlzaHxlbnwwfDB8fHwxNzgxODQ1OTcwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    desc: "Spanakorizo is the kind of Greek home cooking that rarely makes it onto restaurant menus but is utterly addictive once you discover it. Masses of wilted spinach are cooked down with onion, garlic and dill, then simmered together with rice until everything is fragrant and unctuous. Finished with a generous hit of lemon and crowned with salty crumbled feta and crackling fried capers, this is vegetarian food that punches with real character.",
+    emoji: "🥬",
+    image: "https://images.unsplash.com/photo-1594040815645-5442fb6d48f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxHcmVlayUyMFNwYW5ha29yaXpvJTIwJUUyJTgwJTk0JTIwU3BpbmFjaCUyMCUyNiUyMFJpY2UlMjB3aXRoJTIwTGVtb24lMkMlMjBEaWxsJTJDJTIwRmV0YSUyMCUyNiUyMENyaXNweSUyMENhcGVycyUyMGZvb2QlMjBkaXNofGVufDB8MHx8fDE3ODE5MzI1NDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
     ingredientGroups: [
-      {
-        group: "Chipotle Tomato Sauce",
-        items: [
-          { name: "Olive oil", quantity: 2, unit: "tbsp" },
-          { name: "Onion, finely diced", quantity: 1, unit: "large" },
-          { name: "Garlic cloves, minced", quantity: 4, unit: "" },
-          { name: "Ground cumin", quantity: 1.5, unit: "tsp" },
-          { name: "Smoked paprika", quantity: 1, unit: "tsp" },
-          { name: "Chipotle chillies in adobo sauce", quantity: 2, unit: "" },
-          { name: "Tinned chopped tomatoes", quantity: 400, unit: "g" },
-          { name: "Vegetable stock", quantity: 100, unit: "ml" },
-          { name: "Sea salt", quantity: 1, unit: "to taste" }
-        ]
-      },
-      {
-        group: "Filling",
-        items: [
-          { name: "Poblano peppers (or large green peppers)", quantity: 3, unit: "" },
-          { name: "Tinned black beans, drained & rinsed", quantity: 2, unit: "x 400g tins" },
-          { name: "Ground cumin", quantity: 1, unit: "tsp" },
-          { name: "Dried oregano", quantity: 0.5, unit: "tsp" },
-          { name: "Lime, juice only", quantity: 1, unit: "" },
-          { name: "Grated cheddar or Monterey Jack", quantity: 150, unit: "g" }
-        ]
-      },
-      {
-        group: "Assembly & Topping",
-        items: [
-          { name: "Corn tortillas (15cm)", quantity: 12, unit: "" },
-          { name: "Crumbled feta cheese", quantity: 80, unit: "g" },
-          { name: "Pickled jalapeños", quantity: 2, unit: "tbsp" },
-          { name: "Soured cream", quantity: 4, unit: "tbsp" },
-          { name: "Fresh coriander, roughly chopped", quantity: 1, unit: "large handful" },
-          { name: "Lime wedges", quantity: 1, unit: "to serve" }
-        ]
-      }
+      { group: "Main", items: [
+        { name: "Fresh spinach leaves", quantity: 600, unit: "g" },
+        { name: "Long grain white rice, rinsed", quantity: 200, unit: "g" },
+        { name: "White onion, finely diced", quantity: 1, unit: "" },
+        { name: "Garlic cloves, thinly sliced", quantity: 3, unit: "" },
+        { name: "Olive oil", quantity: 4, unit: "tbsp" },
+        { name: "Vegetable stock", quantity: 500, unit: "ml" },
+        { name: "Tomato purée", quantity: 1, unit: "tbsp" },
+        { name: "Lemon, zested and juiced", quantity: 1, unit: "" },
+        { name: "Fresh dill, roughly chopped", quantity: 25, unit: "g" },
+        { name: "Spring onions, sliced", quantity: 4, unit: "" },
+        { name: "Black pepper, freshly ground", quantity: 1, unit: "tsp" },
+        { name: "Sea salt", quantity: 1, unit: "tsp" }
+      ]},
+      { group: "Topping", items: [
+        { name: "Feta cheese, crumbled", quantity: 150, unit: "g" },
+        { name: "Capers, drained and patted dry", quantity: 3, unit: "tbsp" },
+        { name: "Olive oil (for frying capers)", quantity: 2, unit: "tbsp" },
+        { name: "Extra lemon wedges, to serve", quantity: 4, unit: "" },
+        { name: "Extra fresh dill, to finish", quantity: 1, unit: "small handful" }
+      ]}
     ],
     substitutes: [
-      { ingredient: "Poblano peppers", alternatives: ["Large green bell peppers", "Anaheim peppers"] },
-      { ingredient: "Chipotle chillies in adobo", alternatives: ["1 tsp chipotle paste + ½ tsp smoked paprika", "1 tbsp harissa (different flavour but similar heat)"] },
-      { ingredient: "Corn tortillas", alternatives: ["Small flour tortillas", "Gluten-free wraps"] },
-      { ingredient: "Feta cheese", alternatives: ["Ricotta salata", "Queso fresco"] }
+      { ingredient: "Fresh spinach", alternatives: ["Frozen spinach, thoroughly defrosted and squeezed dry (use 400g)", "Swiss chard, stems removed and leaves roughly chopped"] },
+      { ingredient: "Feta cheese", alternatives: ["Ricotta salata", "Crumbled firm goat\'s cheese"] },
+      { ingredient: "Long grain white rice", alternatives: ["Short grain rice (add 50ml extra stock and cook 5 mins longer)", "Brown rice (add 200ml extra stock, extend cooking by 15 mins)"] }
     ],
     instructions: [
-      "Start with the sauce. Heat the olive oil in a heavy saucepan over medium heat. Add the onion with a pinch of salt and cook for 8–10 minutes until soft and beginning to turn golden. Add the garlic, cumin and smoked paprika and cook for 1 minute until fragrant.",
-      "Finely chop the chipotle chillies (including a tablespoon of the adobo sauce from the tin) and add to the pan. Pour in the tomatoes and stock, stir well and simmer for 15 minutes until the sauce has thickened slightly and the flavours have melded. Season to taste. If you like a smoother sauce, blitz briefly with a stick blender.",
-      "While the sauce simmers, char the poblano peppers. Place them directly over a gas flame or under a very hot grill, turning with tongs, until blackened and blistered all over — about 8–10 minutes. Place in a bowl, cover with cling film and leave for 5 minutes. The steam loosens the skins. Peel, deseed and roughly chop the flesh.",
-      "Mix the chopped roasted peppers with the drained black beans, cumin, dried oregano and lime juice. Season generously — this filling needs bold seasoning. Stir through half the grated cheddar.",
-      "Preheat the oven to 200°C (180°C fan). Warm the tortillas briefly in a dry frying pan for 20 seconds each side — warm tortillas roll without cracking. Spoon a ladleful of the chipotle tomato sauce across the base of a large baking dish. Divide the filling between the tortillas, roll tightly and place seam-side down in the dish.",
-      "Pour the remaining sauce over the top, spreading it to cover the tortillas completely (this prevents them drying out). Scatter over the remaining grated cheddar. Bake for 20–25 minutes until the cheese is bubbling and the edges are beginning to crisp.",
-      "Remove from the oven and immediately scatter with crumbled feta, pickled jalapeños and fresh coriander. Add dollops of soured cream and serve straight from the dish with lime wedges alongside."
+      "Step 1 — Fry the capers first so they\'re ready to go: heat 2 tbsp olive oil in a small frying pan over high heat. When shimmering, add the dried capers and fry for 2–3 minutes, stirring occasionally, until they have burst open and turned golden and crispy. Remove with a slotted spoon onto kitchen paper and set aside — they will crisp further as they cool.",
+      "Step 2 — In a large, wide saucepan or deep sauté pan, heat 4 tbsp olive oil over medium heat. Add the diced onion and cook gently for 8–10 minutes, stirring often, until completely soft and beginning to turn golden. Add the garlic and spring onions and cook for another 2 minutes until fragrant.",
+      "Step 3 — Stir in the tomato purée and cook for 1 minute to caramelise it slightly. Now add the spinach in large handfuls, tossing and folding it into the onions — it will seem like far too much but will wilt down dramatically within 3–4 minutes over medium-high heat. Season with salt and black pepper and stir through half the chopped dill.",
+      "Step 4 — Add the rinsed rice to the pan and stir to coat every grain in the spinach and olive oil. Pour in the vegetable stock, add the lemon zest, and stir once to combine. Bring to a gentle boil, then reduce the heat to low, cover the pan tightly with a lid, and cook for 18–20 minutes until the rice has absorbed the liquid and is just tender. Check once during cooking — if it looks dry, add a splash of hot water.",
+      "Step 5 — Remove from the heat. Squeeze over the lemon juice, add the remaining fresh dill, and taste for seasoning — it should be bright, herby and slightly tangy. Leave to rest covered for 5 minutes, which helps the rice finish steaming and the flavours meld. Serve in warm bowls, topped generously with crumbled feta, the crispy capers, extra dill fronds, and a wedge of lemon on the side."
     ]
   }
 ];

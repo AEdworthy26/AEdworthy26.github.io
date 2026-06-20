@@ -1,18 +1,18 @@
 // films-data.js
-// Auto-updated 2026-06-19 — do not edit manually
+// Auto-updated 2026-06-20 — do not edit manually
 
 var FILMS_DATA = {
-  date: "2026-06-19",
+  date: "2026-06-20",
   film: {
-    title: "The Miracle of Morgan\'s Creek",
-    director: "Preston Sturges",
-    year: 1944,
-    genres: ["Comedy", "Satire"],
-    desc: "A small-town girl wakes up after a wild wartime send-off party with a ring on her finger, a baby on the way, and absolutely no memory of who she married — and from there Preston Sturges engineers one of the most gloriously anarchic comedies ever permitted through the Hollywood studio system. Betty Hutton is a force of pure kinetic energy in the lead role, while Eddie Bracken\'s hapless, lovesick Norval Jones provides the perfect straight-man foil to the mounting absurdity. Sturges somehow got past the Hays Office censors by moving so fast they couldn\'t catch what he was doing, cramming the film with innuendo, political satire, and sheer irreverence toward American mythology. The film builds to a finale of such delirious, over-the-top national hysteria that it feels less like a punchline and more like a philosophical statement about the country\'s capacity for self-delusion. James Agee called it the happiest American comedy since sound came in, and it remains a peerless example of slapstick with a subversive spine.",
-    cast: ["Betty Hutton", "Eddie Bracken", "William Demarest"],
-    rating: 100,
+    title: "The Match Factory Girl",
+    director: "Aki Kaurismäki",
+    year: 1990,
+    genres: ["Drama", "Dark Comedy"],
+    desc: "Aki Kaurismäki\'s deadpan Finnish masterpiece follows Iris, a mousy young woman working in a match factory, living a life of grinding routine and quiet humiliation at the hands of her indifferent family and an exploitative lover. Shot with almost no dialogue and a rigidly still camera, the film turns minimalism into a kind of devastating poetry — every small cruelty lands like a hammer blow precisely because so little is said. Kaurismäki channels Douglas Sirk and Bresson into something entirely his own: a tragicomedy of the working poor that somehow manages to be funny, bleak, and oddly tender all at once. The film\'s final act pivots into something wickedly surprising, giving its heroine a moment of agency that audiences have never quite forgotten. Lean, ruthless, and shot through with a strange warmth, it is one of the great undervalued films of European cinema.",
+    cast: ["Kati Outinen", "Elina Salo", "Vesa Vierikko"],
+    rating: 95,
     ratingSource: "Rotten Tomatoes",
-    ratingExtra: "National Film Registry Selection",
-    posterUrl: null
+    ratingExtra: "Cannes Film Festival Selection",
+    posterUrl: "https://upload.wikimedia.org/wikipedia/en/7/71/TheMatchFactoryGirl.jpg"
   }
 };

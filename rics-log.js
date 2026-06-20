@@ -3,6 +3,46 @@
 
 var RICS_LOG = [
   {
+    "date": "2026-06-20",
+    "topic": "Development Appraisal Cashflow Timing: Phasing, S-Curves and Sensitivity in Residential-Led Schemes",
+    "module": "Development Appraisals",
+    "level": 3,
+    "apc_competency": "Development Appraisals (Level 3)",
+    "focus": "This lesson examines the mechanics of cashflow timing in residential development appraisals \u2014 how phasing assumptions, S-curve revenue profiles and cost draw-down sequencing affect IRR, peak debt and scheme viability. For a candidate like Alfie working on multi-phase, mixed-tenure schemes, accurate cashflow modelling is a core competency the assessor will probe at Level 3 depth.",
+    "image": "https://images.unsplash.com/photo-1595751100377-9954f1f99bad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxEZXZlbG9wbWVudCUyMEFwcHJhaXNhbCUyMENhc2hmbG93JTIwVUslMjBwcm9wZXJ0eSUyMGFyY2hpdGVjdHVyZSUyMGJ1aWxkaW5nJTIwZXh0ZXJpb3J8ZW58MHwwfHx8MTc4MTkzMjQzNHww&ixlib=rb-4.1.0&q=80&w=1080",
+    "content": [],
+    "summary": [
+      "Cashflow timing determines IRR and peak debt \u2014 two metrics that investment committees and lenders scrutinise more closely than static residual profit figures on multi-phase residential schemes.",
+      "Revenue follows an S-curve; mixed-tenure schemes add complexity because affordable housing transfer values and Homes England grant drawdowns arrive at programme milestones, not pro-rata with market sales.",
+      "Peak debt typically falls mid-programme, between the bulk of construction cost incurred and the wave of market sale completions \u2014 this is the figure that sizes the development loan facility.",
+      "Sensitivity analysis at Level 3 means a two-variable matrix stress-testing combinations of sales price, build cost, programme delay and interest rate \u2014 not just single-variable movement.",
+      "In JV structures, cashflow timing directly affects equity waterfall outcomes: programme delays can shift profit distribution between partners, making cashflow sensitivity analysis a negotiating tool as well as a risk management tool.",
+      "RP-specific constraints \u2014 RSH financial viability standard, bond covenants, interest cover ratios \u2014 mean project cashflows must be viewed in the context of the organisation\\'s treasury position, not in isolation."
+    ],
+    "qa": [
+      {
+        "q": "You are presenting a cashflow model to the investment committee for a 220-unit phased scheme. The committee asks why your IRR is 11.2% when your profit on cost is 19.8%. How do you explain the relationship between the two metrics?",
+        "a": "Profit on cost is a static measure \u2014 it divides total profit by total cost without any regard to when those flows occur. IRR, by contrast, accounts for the time value of money: every month that capital is deployed and at risk before revenues are received, the cost of that capital erodes the return. On a 4-year programme with a 24-month construction phase and a 12-month sales tail, the time-weighted cost of capital \u2014 even at a relatively low rate \u2014 can reduce the IRR to well below what the headline profit margin might suggest. In this case, 19.8% profit on cost over a 4-year programme translates to an 11.2% IRR because significant equity and debt is deployed from month 1 but revenues are concentrated in years 3 and 4. If the programme shortened by 6 months, IRR would increase to approximately 13\u201314% on the same nominal profit, illustrating why programme management is a direct financial performance issue."
+      },
+      {
+        "q": "On a mixed-tenure scheme with Homes England grant, how does grant timing affect the cashflow model and what are the implications for peak debt?",
+        "a": "Homes England AHP grant is drawn in tranches tied to programme milestones \u2014 typically a proportion at start on site and the balance at practical completion of affordable units. This means grant does not reduce upfront land and pre-construction costs but does reduce peak debt if the start-on-site tranche is drawn early in the construction phase. The practical completion tranche arrives at the same time as the affordable housing transfer payment from the RP, so the two cashflows partially offset. Peak debt is therefore primarily driven by the gap between construction cost draw-down and market sale completion receipts. If grant milestones slip \u2014 for example, if Homes England\\'s sign-off on a start-on-site claim is delayed \u2014 the start-on-site tranche may arrive 4\u20136 weeks later than modelled, increasing peak debt by the full tranche amount for that period. On a large scheme, this could represent \u00a31\u20132m of additional facility headroom required."
+      },
+      {
+        "q": "A JV partner is arguing that the preferred return in the waterfall should be calculated from the date of their equity contribution rather than from practical completion. Why does this matter financially and what is the typical market approach?",
+        "a": "The timing of the preferred return clock start is highly material: if the 8% preferred return accrues from the date of equity contribution (day one of the project), it compounds over the full 4-year programme and represents a significantly larger preferred return obligation than if it accrues only from the date the partner\\'s capital is actually deployed or from practical completion. On a \u00a35m equity contribution over 4 years at 8%, the difference between day-one accrual and practical-completion accrual could be \u00a31.5\u20131.8m in additional preferred return \u2014 directly reducing the profit available for the equity split. Market practice varies, but in RP-led JVs the preferred return typically accrues from the date each equity tranche is drawn, not from day one, and runs until the relevant tranche is repaid from sales receipts. This aligns the economic burden of the preferred return with the period during which the capital is genuinely at risk."
+      },
+      {
+        "q": "How would you construct a stress-test scenario for an investment committee submission on a scheme in a currently fragile sales market, and what thresholds would you use?",
+        "a": "A credible stress test for current market conditions should combine at least three variables simultaneously rather than testing each in isolation. A reasonable composite stress scenario might be: (1) sales prices 7.5% below base case \u2014 reflecting market softening and potential Help to Buy-equivalent incentives required; (2) sales velocity reduced by 30% (e.g., from 3.5 units per week to 2.5 units per week), extending the sales programme by approximately 6 months; (3) construction costs 5% above base case reflecting ongoing materials and labour inflation. Under this composite scenario, the cashflow model should report revised profit on cost, revised IRR, revised peak debt and the headroom remaining against the facility limit. Investment committees typically require that even under the stress scenario, profit on cost remains above a minimum threshold (commonly 12\u201315% for RP-led schemes) and that peak debt does not breach the agreed facility limit. If the stress scenario breaches these thresholds, the scheme either needs additional contingency funding or the land price must be renegotiated."
+      },
+      {
+        "q": "You are reviewing a cashflow model prepared by a consultant. You notice they have modelled all market sale revenues as arriving at practical completion of each unit. What is wrong with this and what is the correct approach?",
+        "a": "The error is failing to distinguish between exchange and completion in the revenue timing. On a new-build residential scheme, buyers typically exchange contracts off-plan, paying a 10% deposit at exchange which is received \u2014 and is a material cashflow \u2014 6\u201318 months before practical completion. The remaining 90% of the purchase price is received at completion. By modelling all revenue at practical completion, the consultant has deferred 10% of total revenues by up to 18 months, which overstates peak debt and understates IRR. The correct approach is to model exchange deposits separately \u2014 typically showing 60\u201380% of units exchanged off-plan with deposits received 6\u201312 months before practical completion \u2014 and completion proceeds at the practical completion date for each phase. On a \u00a320m market sale revenue line, this distinction alone could shift peak debt by \u00a32m and increase IRR by 1\u20132 percentage points. Assessors will expect a Level 3 candidate to identify this error and explain its financial significance."
+      }
+    ]
+  },
+  {
     "date": "2026-06-19",
     "topic": "S106 Negotiation Strategy: Heads of Terms, Viability Constraints and Affordable Housing Obligations",
     "module": "Legal and Regulatory Compliance",

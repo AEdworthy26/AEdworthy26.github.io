@@ -1,61 +1,61 @@
 // tech-news-data.js
-// Auto-updated 2026-06-19 — do not edit manually
+// Auto-updated 2026-06-20 — do not edit manually
 
 var TECH_NEWS = {
-  date: "2026-06-19",
+  date: "2026-06-20",
   main: {
-    title: "A Bold Satellite Rescue Mission Came Together in Record Time, But Will It Work?",
-    category: "Space",
+    title: "Microsoft Discovers New Lightweight Backdoor That Steals Cryptocurrency",
+    category: "Cybersecurity",
     content: [
-      "In an extraordinary feat of engineering and organizational willpower, a satellite rescue mission has been assembled in record time, drawing widespread attention from the space industry and beyond. The mission targets a satellite in distress, and the speed at which teams mobilized resources, personnel, and hardware has itself been hailed as a remarkable achievement. Even before the outcome is known, those involved in the effort are expressing a sense of pride and accomplishment simply for getting to the launch pad.",
-      "The mission represents a level of ambition rarely seen in the commercial or government space sectors, where complex rescue operations typically require years of planning and coordination. In this case, teams compressed what would normally be a multi-year timeline into a dramatically shorter window, raising the bar for what rapid-response space operations can look like. The collaborative spirit behind the effort has been described by participants as unprecedented, with organizations setting aside bureaucratic obstacles to make the mission possible.",
-      "Central to the story is the question of whether the technical approach will actually succeed once the mission is underway. Rescuing a satellite in orbit involves overcoming formidable challenges, including precise rendezvous maneuvers, potential hardware incompatibilities, and the unforgiving physics of orbital mechanics. Engineers and mission planners have had to innovate on the fly, developing solutions to problems that have no established playbook.",
-      "One of the mission\'s key voices captured the spirit of the endeavor succinctly: 'I consider this a success already, just from the fact that we\'re even going to try this.' That sentiment reflects a broader philosophy emerging in the space industry — that attempting difficult things, and normalizing the effort to do so, is itself a form of progress. Whether or not the satellite is ultimately saved, the mission is expected to generate invaluable data and lessons for future rescue operations.",
-      "The outcome of the mission remains uncertain, and the space community is watching closely. If successful, it could open the door to a new era of on-orbit servicing and satellite recovery, potentially extending the operational lifespans of billions of dollars' worth of space infrastructure. Even in the event of failure, the rapid assembly of this mission has already demonstrated that the industry is capable of responding to in-space emergencies with a speed and decisiveness that was previously thought impossible."
+      "Microsoft has uncovered a new and sophisticated piece of malware, dubbed 'Crypto Clipper,' that specifically targets cryptocurrency users by silently intercepting and redirecting digital transactions. The malware operates as a lightweight backdoor, making it harder for traditional security tools to detect compared to heavier, more resource-intensive threats. Its discovery highlights the continuing evolution of financially motivated cybercrime, with attackers focusing their efforts on the largely unregulated and often irreversible world of digital currency.",
+      "One of the most notable characteristics of Crypto Clipper is its ability to spread via USB drives, a propagation method reminiscent of older malware families but still remarkably effective in environments where removable media is commonplace. By piggybacking on physical storage devices, the malware can jump across air-gapped or otherwise network-isolated systems that might otherwise be considered secure. This self-propagating capability significantly broadens the potential attack surface and complicates containment efforts once an infection takes hold.",
+      "To evade detection and maintain persistent communication with its operators, Crypto Clipper routes its network traffic through Tor, the anonymizing network more commonly associated with privacy advocates and, unfortunately, cybercriminals alike. Using Tor as a command-and-control channel makes it exceedingly difficult for network defenders and law enforcement to trace communications back to the malware\'s authors or hosting infrastructure. This technical sophistication suggests the threat actors behind the campaign are experienced and well-resourced.",
+      "The core mechanism of a 'clipboard hijacker' or crypto clipper is deceptively simple yet devastatingly effective: when a victim copies a cryptocurrency wallet address to their clipboard — a routine step when sending digital funds — the malware silently replaces the address with one controlled by the attacker. Because cryptocurrency wallet addresses are long, complex alphanumeric strings that users rarely verify character by character, the substitution often goes unnoticed until the funds are irrecoverably gone. The attack requires no additional interaction from the victim beyond the normal act of making a transaction.",
+      "Microsoft\'s discovery and public disclosure of Crypto Clipper serves as an important reminder that cybersecurity vigilance remains critical in the age of digital assets. Users handling cryptocurrency are strongly advised to double-check wallet addresses carefully before confirming any transaction, and to keep their systems patched and protected with up-to-date security software. The finding also underscores the need for organizations to implement strict USB device policies and to monitor outbound Tor traffic as part of a comprehensive defense-in-depth strategy."
     ],
-    image: "https://cdn.arstechnica.net/wp-content/uploads/2026/06/Testing-Link-Vibration-tests-2_4000x2600-1152x648.jpg",
+    image: "https://cdn.arstechnica.net/wp-content/uploads/2026/02/cryptocurrency-theft-heist-1152x648.jpg",
     source: "Ars Technica",
-    sourceUrl: "https://arstechnica.com/space/2026/06/a-bold-satellite-rescue-mission-came-together-in-record-time-but-will-it-work/"
+    sourceUrl: "https://arstechnica.com/security/2026/06/microsoft-spots-new-self-propagating-malware-for-stealing-cryptocurrency/"
   },
   secondary: [
     {
       id: "tc1",
-      title: "Microsoft Discovers New Lightweight Backdoor That Steals Cryptocurrency",
-      summary: "Microsoft has identified a new self-propagating malware called Crypto Clipper that spreads via USB drives and communicates covertly over the Tor network to steal cryptocurrency.",
+      title: "NASA Selects Eric Schmidt\'s Relativity Space for 2028 Mars Mission",
+      summary: "Relativity Space, led by former Google executive Eric Schmidt, has been chosen by NASA to launch the Aeolus payload to Mars in 2028 under a new public-private partnership.",
       body: [
-        "Microsoft\'s security researchers have uncovered a dangerous new piece of malware dubbed Crypto Clipper, which is designed to intercept and redirect cryptocurrency transactions by quietly replacing wallet addresses on infected machines. The malware is notably lightweight and spreads through USB devices, making it capable of jumping between air-gapped or less-connected systems that might otherwise avoid typical network-based threats.",
-        "What makes Crypto Clipper particularly concerning is its use of the Tor anonymity network for command-and-control communications, making it significantly harder for defenders to trace or shut down its infrastructure. The discovery underscores the evolving sophistication of financially motivated cybercriminals, who continue to adapt their tools to exploit both human behavior and trusted hardware like USB drives."
+        "Under the newly announced partnership, Relativity Space will be responsible for providing the spacecraft, rocket, and cruise operations required to deliver NASA\'s Aeolus payload to Mars, marking a significant milestone for the relatively young launch company. The Aeolus payload is expected to deliver the first-of-its-kind scientific data from the Martian environment, adding meaningful scientific value to what is already a landmark commercial spaceflight contract.",
+        "The selection of Relativity Space reflects NASA\'s growing reliance on commercial partners to reduce costs and accelerate mission timelines, a strategy that has already borne fruit with companies like SpaceX. For Relativity Space and Eric Schmidt, the contract represents a high-profile validation of the company\'s technology roadmap and its ambitions to compete in the deep-space launch market."
       ],
-      image: "https://cdn.arstechnica.net/wp-content/uploads/2026/02/cryptocurrency-theft-heist-1152x648.jpg",
-      source: "Ars Technica",
-      url: "https://arstechnica.com/security/2026/06/microsoft-spots-new-self-propagating-malware-for-stealing-cryptocurrency/",
-      category: "Cybersecurity"
+      image: "https://images.unsplash.com/photo-1586999082731-574a06ec7e25?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxOQVNBJTIwU2VsZWN0cyUyMEVyaWMlMjBTY2htaWR0JTVDfGVufDB8MHx8fDE3ODE5MzE4NzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "The Verge",
+      url: "https://www.theverge.com/science/952988/nasa-relativity-space-eric-schmidt-mars",
+      category: "Space"
     },
     {
       id: "tc2",
-      title: "AI Inference Startup Baseten Reportedly Raising $1.5 Billion Months After Its Last Mega-Round",
-      summary: "Baseten, an AI inference startup, is reportedly close to closing a $1.5 billion funding round at a $13 billion valuation, highlighting the ongoing frenzy of investment in AI infrastructure.",
+      title: "A Bold Satellite Rescue Mission Came Together in Record Time — But Will It Work?",
+      summary: "An ambitious and rapidly assembled satellite rescue mission is underway, with engineers and mission planners pushing the boundaries of what can be achieved on an accelerated timeline.",
       body: [
-        "Baseten is said to be finalizing a massive $1.5 billion fundraise just months after completing its previous large funding round, a sign of just how voracious investor appetite remains for companies powering the AI inference layer. The round would value the startup at $13 billion, a dramatic leap that reflects the critical role inference infrastructure plays as AI models are deployed at massive scale across the industry.",
-        "The news speaks to what observers are calling an 'inference gold rush,' as companies race to build and operate the compute pipelines needed to serve AI-generated responses to millions of users in real time. Baseten\'s rapid successive fundraising rounds suggest investors view the inference market as one of the most strategically important — and lucrative — segments of the broader AI boom."
+        "The mission was pulled together in an extraordinarily compressed timeframe, a feat that those involved describe as a success in itself regardless of the final outcome. As one official put it, 'I consider this a success already, just from the fact that we\'re even going to try this,' reflecting the immense logistical and engineering challenges that had to be overcome just to get to launch.",
+        "Satellite rescue missions are rare and technically demanding, requiring precise orbital maneuvering and a deep understanding of both the ailing spacecraft and the rescue vehicle\'s capabilities. The outcome of this attempt could have significant implications for how the industry approaches satellite longevity, insurance, and the feasibility of on-orbit servicing going forward."
       ],
-      image: "https://images.pexels.com/photos/15863044/pexels-photo-15863044.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      source: "TechCrunch",
-      url: "https://techcrunch.com/2026/06/18/ai-inference-startup-baseten-reportedly-raising-1-5b-months-after-its-last-mega-round/",
-      category: "AI"
+      image: "https://cdn.arstechnica.net/wp-content/uploads/2026/06/Testing-Link-Vibration-tests-2_4000x2600-1152x648.jpg",
+      source: "Ars Technica",
+      url: "https://arstechnica.com/space/2026/06/a-bold-satellite-rescue-mission-came-together-in-record-time-but-will-it-work/",
+      category: "Space"
     },
     {
       id: "tc3",
-      title: "Snap Spins Off AI Video Team Into New Independent Company Called Dotmo",
-      summary: "Snapchat parent Snap is spinning off its internal AI video development team into a new standalone company named Dotmo, citing the high costs of maintaining the unit in-house.",
+      title: "Nothing Cancels This Year\'s CMF Phone Due to Surging RAM Prices",
+      summary: "Nothing has scrapped plans for a follow-up to the CMF Phone 2 Pro this year, citing prohibitively high memory prices that make it impossible to deliver the device at a competitive budget price point.",
       body: [
-        "Snap has announced the creation of Dotmo, a new independent company formed from current Snap employees who will leave the social media giant to focus exclusively on AI video technology. The move is driven primarily by cost considerations, as developing cutting-edge AI video tools requires substantial and sustained investment that Snap has determined is better pursued outside its core business structure.",
-        "The spinoff marks another instance of Snap separating internal innovation units into standalone entities, a strategy that allows specialized teams to pursue focused missions and potentially attract their own dedicated funding. As AI video generation becomes an increasingly competitive space, Dotmo will need to establish itself quickly against well-funded rivals also racing to define the next generation of AI-powered video creation."
+        "Nothing co-founder Akis Evangelidis announced the cancellation in a post on X, explaining that with memory prices at their current levels, the company simply cannot build a successor that would meet the budget-friendly expectations of the CMF line. The decision makes Nothing\'s next affordable handset the latest casualty of what has been described as 'RAMageddon,' a market-wide surge in DRAM prices that has rattled smartphone manufacturers across the industry.",
+        "The situation illustrates the razor-thin margins that define the budget smartphone segment, where even modest increases in component costs can make an entire product line economically unviable. For consumers eagerly awaiting a new CMF device, the news means a longer wait, while the broader industry watches closely to see when memory prices will stabilize enough to allow affordable handsets to return to the market."
       ],
-      image: "https://images.pexels.com/photos/21405528/pexels-photo-21405528.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      source: "TechCrunch",
-      url: "https://techcrunch.com/2026/06/18/snap-spins-off-ai-video-team-into-new-company-dotmo-due-to-costs/",
-      category: "AI"
+      image: "https://images.unsplash.com/photo-1672664003242-1c4dc78635d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxOb3RoaW5nJTIwQ2FuY2VscyUyMFRoaXMlMjBZZWFyJTVDfGVufDB8MHx8fDE3ODE5MzE4Nzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "The Verge",
+      url: "https://www.theverge.com/gadgets/953066/nothing-cmf-phone-delayed-ram-prices",
+      category: "Hardware"
     }
   ]
 };

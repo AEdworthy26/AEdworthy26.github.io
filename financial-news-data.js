@@ -1,61 +1,61 @@
 // financial-news-data.js
-// Auto-updated 2026-06-19 — do not edit manually
+// Auto-updated 2026-06-20 — do not edit manually
 
 var FINANCIAL_NEWS = {
-  date: "2026-06-19",
+  date: "2026-06-20",
   main: {
-    title: "Bank of England Holds Rates as Governor Warns of Higher Costs Ahead Despite Iran Peace Deal",
-    category: "Monetary Policy",
+    title: "Oil Prices Rise as U.S.-Iran Deal Faces Tests",
+    category: "Markets & Energy",
     content: [
-      "The Bank of England has kept interest rates on hold, even as a tentative peace deal between the United States and Iran sent oil prices lower in recent days. Governor Andrew Bailey used the occasion to issue a stark warning to British consumers, cautioning that they should expect higher costs throughout the remainder of the year. Bailey cited significant inflationary pressure still working its way through the pipeline, suggesting that falling crude prices alone will not be enough to shield households from price rises already baked into the economy.",
-      "The decision to hold rates reflects the Bank\'s cautious stance in an environment of competing signals. On one hand, the US-Iran initial peace agreement has offered some relief to energy markets, with fuel and gas prices easing noticeably in the days leading up to the Monetary Policy Committee\'s meeting. On the other hand, the broader inflationary environment — shaped by months of Middle East conflict disrupting supply chains and energy flows — continues to exert upward pressure on goods and services across the UK economy.",
-      "Bailey\'s remarks underline the complexity facing central bankers who must weigh transitory commodity price moves against more entrenched domestic cost pressures. The governor\'s tone was notably cautious, signalling that even a more durable resolution to the Iran conflict would not immediately translate into rate cuts. Markets had been watching closely for any hint of a dovish pivot, and the hold decision, paired with the inflation warning, suggested the Bank remains firmly in a wait-and-see posture.",
-      "The backdrop of 80 million barrels of oil sitting in supertankers in the Persian Gulf, reportedly ready to transit the Strait of Hormuz the moment conditions allow, adds an additional layer of uncertainty to the energy price outlook. A flood of supply hitting markets could accelerate the disinflationary effect of the peace deal, potentially shifting the calculus for policymakers in coming months. However, analysts warn that a 60-day diplomatic window is fragile, and any breakdown in negotiations could rapidly reverse the recent decline in fuel costs, reigniting the very pressures the Bank of England is trying to manage.",
-      "For British households already stretched by years of elevated costs, the governor\'s message offers little immediate comfort. The combination of held rates and a clear warning about the inflationary pipeline means mortgage holders, renters, and consumers will need to brace for continued financial pressure well into the second half of 2026. The Bank\'s stance also has broader implications for UK business investment and consumer confidence, both of which have shown tentative signs of recovery — a recovery that could stall if the cost environment deteriorates further as the year progresses."
+      "Oil markets edged higher on Friday as traders grew increasingly cautious about the durability of the U.S.-Iran peace deal, even as crude remains on track for a second consecutive weekly decline. The agreement, signed earlier in the week by President Donald Trump, had initially triggered a wave of relief across global markets, with investors anticipating a significant increase in oil and gas supply from the Gulf region. However, signs of strain emerging ahead of Friday\'s peace talks in Switzerland have given energy traders pause, prompting a partial reversal of earlier price drops.",
+      "The prospect of Iranian oil returning to global markets had been a major driver of the week\'s earlier price falls, with buyers from Europe to Asia pricing in the potential end to supply disruptions that had plagued energy markets throughout the conflict. Brent crude and West Texas Intermediate both slid sharply at the start of the week as the initial deal headlines broke, reflecting widespread expectations that the Strait of Hormuz — a critical chokepoint for global energy flows — would soon reopen fully to commercial shipping. Those expectations are now being tempered as the fragility of the diplomatic agreement becomes more apparent.",
+      "For major oil-importing nations, the stakes could hardly be higher. India, which had developed a significant dependence on Iranian crude before the conflict disrupted supply chains, stands to benefit enormously if the deal holds, with New Delhi eager to restore what was once a crucial energy relationship at competitive prices. Similarly, consumers across Europe and the United Kingdom had been hoping that a sustained peace agreement would translate into lower petrol prices, reduced energy bills, and easing inflationary pressures — relief that may now be delayed if diplomatic talks falter.",
+      "The uncertainty rippling through energy markets is also being felt in the broader financial system. Latin American currencies, many of which are sensitive to commodity price swings, edged cautiously higher in a quiet Friday session described by analysts as a 'holding pattern,' as traders awaited fresh signals from the Middle East. Meanwhile, the Bank of Japan\'s decision to raise interest rates to 1% — also a headline event of the week — added another layer of complexity to the global macro environment, as tighter monetary conditions in Japan interact with shifting energy prices to create unpredictable cross-asset dynamics.",
+      "Analysts warn that oil markets are likely to remain volatile in the near term, swinging sharply on any fresh developments out of the Swiss peace talks or from the Gulf region itself. The week has underscored just how deeply geopolitical risk remains embedded in energy prices, even at moments when diplomacy appears to be gaining the upper hand. For consumers and businesses alike, the message from markets is clear: meaningful and sustained relief at the pump or on energy bills will only come once there is genuine confidence that the peace deal is durable — and that confidence, for now, remains elusive."
     ],
-    image: "https://i.guim.co.uk/img/media/0ee55ebdd112f75114e269bbbc3856ffb5b0e4fc/671_0_6733_5386/master/6733.jpg?width=1200&quality=85&auto=format&fit=max&s=cda6eff9d674e7b68243afbfd096f03b",
-    source: "The Guardian",
-    sourceUrl: "https://www.theguardian.com/business/2026/jun/18/interest-rates-bank-of-england-hold-keep-iran"
+    image: "https://static01.nyt.com/images/2026/06/19/multimedia/19biz-oil-gas-markets-image-pwvh/19biz-oil-gas-markets-image-pwvh-mediumSquareAt3X.jpg",
+    source: "The New York Times",
+    sourceUrl: "https://www.nytimes.com/2026/06/19/business/oil-gas-prices-iran.html"
   },
   secondary: [
     {
       id: "fn1",
-      title: "Brexit Cost the UK Economy 6%, Bank of England Company Data Suggests",
-      summary: "New Bank of England analysis indicates the UK economy is approximately 6% smaller than it would have been had Britain remained in the European Union.",
+      title: "UK Borrows £23.3bn in May as Iran War Fallout Strains Public Finances",
+      summary: "Britain\'s public borrowing surged almost a third higher than a year ago in May, with official figures highlighting the severe fiscal pressure created by the economic fallout from the Iran war.",
       body: [
-        "Research drawing on Bank of England company data has found that Brexit has cost the UK economy around 6% of its total output, offering one of the most detailed assessments yet of the financial toll of leaving the European Union. The analysis modelled how much the UK could have grown had it maintained full EU membership, comparing actual performance against a projected trajectory.",
-        "The findings land at a politically charged moment, as former EU chief Brexit negotiator Michel Barnier has separately said Britain could retain special pre-Brexit terms — including staying outside the euro and the Schengen area — if it were to rejoin the bloc, adding further economic weight to an already intensifying debate about the UK\'s long-term trading future."
+        "The Office for National Statistics confirmed that the UK borrowed £23.3 billion in May, a figure that came in higher than economists had forecast and represented a jump of nearly one-third compared with the same month last year. The Office for Budget Responsibility warned that the country\'s public finances remain 'fragile,' as rising debt servicing costs and weaker tax receipts compound the economic damage from the prolonged conflict in the Middle East.",
+        "The figures land at a politically sensitive moment, but from a financial perspective they underscore a structural challenge for UK economic management: the country\'s fiscal headroom has been substantially eroded, leaving limited room to respond to future economic shocks without further borrowing or spending cuts. Markets will be watching closely for any signs that the UK\'s debt trajectory is becoming a concern for bond investors, which could push gilt yields higher and increase the cost of government borrowing further."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/d91a/live/1bd38900-6b5b-11f1-b47c-952f3223237b.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/cvg75npqkq4o?at_medium=RSS&at_campaign=rss",
+      image: "https://i.guim.co.uk/img/media/d8cf224d544b508acd9f08b3f2defa0a01e65f3c/537_19_5960_4772/master/5960.jpg?width=1200&quality=85&auto=format&fit=max&s=c3927f82dd366e7971f14cc373273a36",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/business/2026/jun/19/uk-borrows-more-than-expected-as-impact-of-iran-war-takes-toll",
       category: "Economics"
     },
     {
       id: "fn2",
-      title: "Supertankers Holding 80 Million Barrels of Oil Poised to Cross Strait of Hormuz",
-      summary: "A vast fleet of supertankers carrying nearly 80 million barrels of oil is waiting in the Persian Gulf, ready to transit the Strait of Hormuz as soon as traders and shipowners give the green light.",
+      title: "UK Retail Sales Jump 1.2% in May as Heatwave Drives Consumer Spending",
+      summary: "A record-breaking May heatwave sparked a surge in retail spending across Great Britain, with sales volumes rising 1.2% — the strongest monthly growth since January — as shoppers snapped up fans, paddling pools, and outdoor goods.",
       body: [
-        "The accumulation of supertankers in the Persian Gulf represents one of the largest concentrations of seaborne oil in recent memory, reflecting the cautious posture of traders who held back shipments during the height of tensions between the US and Iran. With an initial peace deal now signed, the prospect of that oil flowing freely to global markets is already influencing energy price expectations and adding complexity to OPEC\'s supply management efforts.",
-        "The potential release of 80 million barrels onto global markets could meaningfully accelerate the decline in oil prices already triggered by the diplomatic breakthrough, with significant downstream effects for inflation, central bank policy decisions, and the earnings of major energy companies worldwide."
+        "ONS data showed that the volume of retail sales in Great Britain grew 1.2% in May compared to the previous month, beating analyst expectations and offering a rare bright spot in an otherwise pressured economic picture. The hot weather was the primary catalyst, driving strong demand for cooling products and outdoor leisure items, while online sales also posted notable gains during the period.",
+        "The robust retail figure provides some evidence of consumer resilience despite elevated inflation and the broader economic headwinds facing British households, though economists caution that weather-driven spending bounces can be temporary and may not signal a sustained shift in consumer confidence. Retailers will be hoping that summer momentum carries into June, particularly as any easing of energy costs from a potential stabilisation of Middle East oil supplies could free up additional household spending power."
       ],
-      image: "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ilhUGaw4fjdY/v3/1200x-1.png",
-      source: "Bloomberg Markets",
-      url: "https://www.bloomberg.com/news/articles/2026-06-19/supertankers-with-80-million-barrels-of-oil-ready-to-pass-hormuz",
-      category: "Commodities"
+      image: "https://i.guim.co.uk/img/media/c7fd28c18bbdccffa4507179fca4df7838e08af9/849_0_4320_3456/master/4320.jpg?width=1200&quality=85&auto=format&fit=max&s=7f29f29b5fcb9dadabb386c8ac59d7e5",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/business/2026/jun/19/hot-weather-rise-uk-retail-sales-may",
+      category: "Economics"
     },
     {
       id: "fn3",
-      title: "Global Stocks Retreat and Dollar Gains as Investors Weigh Iran Deal Durability",
-      summary: "Global equity markets fell in holiday-thinned trading as investors remained cautious about whether the US-Iran diplomatic process could produce a lasting nuclear accord.",
+      title: "Heathrow Third Runway\'s GDP Boost May Be 90% Less Than Claimed, Analysis Finds",
+      summary: "Government analysis suggests the economic benefit of a Heathrow third runway could be a fraction of previously stated figures, with overall trade-offs potentially costing the UK up to £62.5 billion.",
       body: [
-        "Despite initial optimism surrounding the US-Iran peace deal, global stocks pulled back as traders adopted a risk-off stance, with the dollar strengthening as a safe-haven asset. Markets appeared unwilling to fully price in a sustained geopolitical resolution, opting instead to wait for more concrete progress in the 60-day diplomatic window before making significant moves.",
-        "The muted market reaction reflects broader uncertainty about the durability of the agreement and its ultimate impact on energy supplies, inflation, and central bank policy trajectories across major economies — all of which remain deeply interlinked with the outcome of Middle East negotiations in the weeks ahead."
+        "A Department for Transport analysis has found that the GDP boost generated by expanding Heathrow Airport with a third runway may be as much as 90% lower than figures cited by proponents of the project, casting serious doubt over the financial case that has underpinned years of political and commercial debate. When weighed against broader trade-offs — including environmental costs, infrastructure spending, and disruption — the net impact on the UK economy could represent a loss of up to £62.5 billion.",
+        "The findings are highly significant for investors and businesses that have long factored Heathrow expansion into long-term infrastructure and logistics planning, and they raise fresh questions about whether the project can be justified on purely economic grounds. With public finances under significant strain, the prospect of committing major capital to an expansion that delivers minimal GDP uplift is likely to intensify scrutiny of the government\'s infrastructure priorities."
       ],
-      image: "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/idJBH4N7wqwU/v0/1200x-1.png",
-      source: "Bloomberg Markets",
-      url: "https://www.bloomberg.com/news/articles/2026-06-18/asian-stocks-to-rise-as-us-iran-deal-lifts-mood-markets-wrap",
-      category: "Markets"
+      image: "https://images.pexels.com/photos/33142834/pexels-photo-33142834.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/uk-news/2026/jun/19/heathrow-third-runway-boost-gdp-less-than-stated",
+      category: "Business"
     }
   ]
 };

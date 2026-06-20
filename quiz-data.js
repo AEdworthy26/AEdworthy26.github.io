@@ -1,10 +1,10 @@
 // quiz-data.js
-// Auto-updated 2026-06-19 — do not edit manually
+// Auto-updated 2026-06-20 — do not edit manually
 
 window.QUIZ_DATA = {
-  date: '2026-06-19',
+  date: '2026-06-20',
   category: 'Sport',
-  question: 'At the 1986 FIFA World Cup in Mexico, Diego Maradona scored two of the most famous goals in football history within four minutes of each other against England. The second is widely considered the greatest individual goal ever scored — but how many England players did Maradona dribble past before slotting the ball into the net?',
-  answer: 'Five outfield players (plus the goalkeeper, Peter Shilton), so six England players in total were beaten.',
-  funFact: 'The goal was later voted "Goal of the Century" in a poll by FIFA. Maradona collected the ball in his own half, ran roughly 60 metres in around 10 seconds, and beat five defenders before rounding Shilton. Argentine commentator Víctor Hugo Morales delivered one of sport\'s most celebrated pieces of commentary as it unfolded, calling Maradona "a cosmic kite" and "from which planet did you come?"'
+  question: 'At the 1986 FIFA World Cup in Mexico, England faced Argentina in the quarter-final — a match remembered for two extraordinary goals. What was the official name of the stadium in Mexico City where that game was played?',
+  answer: 'Estadio Azteca',
+  funFact: 'The Azteca is the only stadium to have hosted two FIFA World Cup finals, in 1970 and 1986. The match against Argentina became one of the most debated in football history, featuring both Diego Maradona\'s infamous "Hand of God" goal and what is widely voted the greatest individual goal ever scored — all within four minutes of each other.'
 };
