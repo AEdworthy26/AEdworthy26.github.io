@@ -1,60 +1,60 @@
 // uk-politics-news-data.js
-// Auto-updated 2026-06-20 — do not edit manually
+// Auto-updated 2026-06-21 — do not edit manually
 
 var UK_POLITICS_NEWS = {
-  date: "2026-06-20",
+  date: "2026-06-21",
   main: {
-    title: "Cabinet Loyalists Tell Starmer He Has the Weekend to Set Out Timetable for Exit",
+    title: "PM Under Pressure From Labour MPs and Ministers to Set Timetable for Exit",
     category: "Politics",
     content: [
-      "Keir Starmer is facing an extraordinary moment of political crisis, with cabinet ministers who have been among his most loyal supporters now telling him directly that he must set out a timetable for his departure from Downing Street by the end of the weekend. According to reports from the Guardian, these ministers have warned the Prime Minister that if he fails to act, he risks being forced out of office by his own party in a far more chaotic and damaging fashion. The gravity of the situation is underscored by the fact that it is not backbench rebels but his own cabinet allies delivering this ultimatum.",
-      "The immediate trigger for this escalating pressure is Andy Burnham\'s commanding victory in the Makerfield by-election, in which he secured more than 9,000 votes ahead of his nearest rival from Reform UK. Burnham\'s return to Westminster after nine years as Greater Manchester Mayor has electrified the Labour Party and given momentum to those who believe a change of leadership is both inevitable and necessary. Transport Secretary Heidi Alexander has been identified as the first cabinet minister to explicitly advise Starmer to stand aside, marking a significant and public fracturing of the government\'s top tier.",
-      "Starmer, for his part, has insisted he will fight any leadership challenge and has urged Labour to pull together and avoid plunging the country into chaos. However, the Prime Minister\'s defiant stance appears to be increasingly at odds with the prevailing mood within the parliamentary party, where calls for a so-called Burnham coronation are growing louder. One minister was reported to have described Starmer\'s departure as inevitable, a characterisation that will make it harder for Number 10 to project an image of stability and authority.",
-      "Senior figures across the Labour movement have weighed in on the crisis. Former Labour cabinet minister David Blunkett has suggested that Starmer should stand down, while veteran parliamentarian Harriet Harman told Sky News that the herd within the party was not just moving against Starmer but 'stampeding'. These interventions from respected elder statespeople carry significant symbolic weight and signal that the pressure on the Prime Minister is coming not just from ambitious rivals but from the broad institutional memory of the Labour Party itself.",
-      "The situation presents a profound dilemma for the Labour government at a time when it faces major domestic policy challenges, including controversial questions around infrastructure investment such as the Heathrow third runway. A prolonged and messy leadership contest risks paralysing government decision-making and handing ammunition to Reform UK, which, despite its defeat in Makerfield, remains a potent electoral force. How Starmer responds in the coming days is likely to define not only his own political legacy but the short-to-medium-term direction of the Labour Party and British governance more broadly."
+      "Sir Keir Starmer is facing an intensifying crisis at the heart of his government, with Labour MPs and senior ministers piling on pressure for him to set out a clear timetable for his departure from Downing Street. The BBC has been told that the Transport Secretary is among those advising the Prime Minister that the time has come to announce when he will step down. With over 100 Labour MPs reportedly calling for him to quit, the scale of the rebellion inside his own party has reached a point that many observers believe is now irrecoverable.",
+      "The pressure follows Andy Burnham\'s decisive victory in the Makerfield by-election, in which the outgoing Greater Manchester mayor held off a strong challenge from Reform UK, winning by more than 9,000 votes. The result has been widely interpreted not merely as a personal triumph for Burnham but as a verdict on Starmer\'s leadership — and a signal to the wider parliamentary party that the moment for change has arrived. Burnham himself declared that Labour had a final chance to change course, framing the result as a mandate for a new direction.",
+      "Senior Labour figures have reportedly given Starmer a deadline of Tuesday to announce a resignation timetable, or risk what allies are describing as a public humiliation. A senior Labour peer has added their voice to the chorus, stating bluntly that Starmer 'has no authority and must go now.' Cabinet loyalists are said to have privately told the Prime Minister he has only a narrow window in which to act on his own terms, before events overtake him entirely.",
+      "Downing Street has pushed back against the reports, denying that Starmer is preparing to set out a resignation timetable on Monday. However, the denials have done little to quell the speculation or silence the growing number of voices inside the parliamentary Labour Party. Political editor and commentator Laura Kuenssberg has written that talk of Starmer staying on to fight any leadership challenge is 'fading — fast', reflecting a dramatic shift in the mood among those who until recently were urging him to hold firm.",
+      "Andy Burnham\'s allies are said to be increasingly confident of what they are calling a 'coronation-style' transfer of power, with the number of MPs backing him for the Labour leadership surging in the days since the Makerfield result. Burnham has sought to reassure the markets and the party\'s more centrist wing by insisting he will stick to the government\'s fiscal rules. The coming days are likely to prove decisive for Starmer\'s future and for the question of who will lead the Labour Party — and potentially the country — into the next phase of British political life."
     ],
-    image: "https://i.guim.co.uk/img/media/1bcbdabdab3428433597951edb7fef6e55dee8ef/151_17_2580_2065/master/2580.jpg?width=1200&quality=85&auto=format&fit=max&s=a2346ad20bf580f2833a12ba62f66ccc",
-    source: "The Guardian",
-    sourceUrl: "https://www.theguardian.com/politics/2026/jun/19/keir-starmer-pressure-andy-burnham-wes-streeting-allies-not-fight-leadership-challenge"
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/ecc6/live/b618c600-6c01-11f1-817c-d96159ef580f.jpg",
+    source: "BBC News",
+    sourceUrl: "https://www.bbc.com/news/articles/cqx1ev0wn87o?at_medium=RSS&at_campaign=rss"
   },
   secondary: [
     {
       id: "uk1",
-      title: "Burnham Says Labour Has 'Final Chance to Change' After Makerfield By-Election Win",
-      summary: "Andy Burnham has declared that Labour has a final chance to change course following his landslide by-election victory in Makerfield, where he held off Reform UK by more than 9,000 votes.",
+      title: "Burnham Allies Confident of No 10 'Coronation' After Surge in Backers",
+      summary: "Andy Burnham\'s team are increasingly confident he will take power in a coronation-style handover after a wave of Labour MPs declared their support following his Makerfield by-election victory.",
       body: [
-        "In the wake of his decisive return to Westminster, Andy Burnham struck a tone of both triumph and warning, calling for a 'new path for Britain' and stressing that the Labour Party must seize what he described as a final opportunity to deliver meaningful change. His victory margin of more than 9,000 votes over the Reform UK candidate was described by analysts as seismic, giving him an undeniable mandate and a powerful platform from which to press his case.",
-        "Burnham\'s win was notably built on support from voters who do not traditionally identify as Labour supporters, suggesting a breadth of appeal that his backers believe could be decisive in a general election. His call for change resonates deeply within a party anxious about its poll ratings and the continuing rise of Reform UK across traditional working-class heartlands."
+        "Allies of Andy Burnham say the number of MPs backing him for the Labour leadership has surged significantly in the days since his by-election win, with his team having spent recent days actively enlisting the support of MPs and ministers. Some within the party still want Burnham to face the scrutiny of a contested leadership race, but the momentum is firmly moving in the direction of an uncontested transfer of power.",
+        "A coronation outcome would mark a swift and historic transition, potentially delivering a new Prime Minister without a prolonged internal party battle. Burnham has sought to project stability, pledging to honour the government\'s fiscal rules and calling for a 'new path for Britain' that nonetheless reassures those concerned about economic credibility."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/8083/live/a61e62f0-6be8-11f1-8546-8f19e4fe30f4.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/c4gy72kmg1mo?at_medium=RSS&at_campaign=rss",
+      image: "https://i.guim.co.uk/img/media/d834b182edad7eea25d77445d4de6aeff5314b13/880_0_6990_5592/master/6990.jpg?width=1200&quality=85&auto=format&fit=max&s=5aa0330b15401e95d567b6c8ad1f128d",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/politics/2026/jun/20/burnham-allies-confident-no-10-coronation-after-surge-backers-labour-leadership",
       category: "Politics"
     },
     {
       id: "uk2",
-      title: "Farage Blames Makerfield Defeat on Anti-Starmer Votes",
-      summary: "Nigel Farage has expressed disappointment at Reform UK\'s defeat in Makerfield, arguing that votes cast against his party were primarily a protest against the Prime Minister rather than an endorsement of Burnham.",
+      title: "Harriet Harman: 'Herd Isn\'t Just Moving, It\'s Stampeding' Against Starmer",
+      summary: "Senior Labour figure Harriet Harman has declared that Andy Burnham will become Prime Minister as the mood against Keir Starmer inside the party has become a full-blown stampede.",
       body: [
-        "Nigel Farage sought to reframe Reform UK\'s second-place finish in Makerfield as a consequence of voters turning out specifically to block a Starmer-led Labour government rather than to positively embrace Andy Burnham\'s candidacy. The Reform leader described himself as 'disappointed' with his party\'s performance in what had been billed as a critical test of the insurgent party\'s strength in the north of England.",
-        "Farage\'s attempt to spin the result as an anti-Starmer vote rather than a pro-Burnham one reflects the difficult position Reform finds itself in following a night that failed to deliver the breakthrough many had anticipated. The result suggests that, at least in this contest, Burnham\'s personal popularity and cross-party appeal proved a more effective firewall against the Reform surge than traditional Labour campaigning alone."
+        "Speaking to Sky News, Harriet Harman used striking language to describe the collapse of support for the Prime Minister, saying the parliamentary herd was not merely moving against Starmer but 'stampeding'. Her intervention carries particular weight given her long-standing status as one of Labour\'s most senior and respected grandees.",
+        "Harman\'s comments are part of a wider pattern of Labour heavyweights breaking cover to call for change, with former Cabinet minister Charlie Falconer also making what political observers described as devastating remarks about Starmer\'s loss of authority. Together, these interventions from figures who would previously have stayed neutral or supportive signal that the Prime Minister\'s position has become untenable in the eyes of much of the party establishment."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/ea2e/live/0c5cbe50-6bc5-11f1-a417-cba5aab91344.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/cvgqvj8dkz7o?at_medium=RSS&at_campaign=rss",
+      image: "https://images.pexels.com/photos/20802445/pexels-photo-20802445.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      source: "Sky News",
+      url: "https://news.sky.com/story/burnham-going-to-be-pm-as-herd-is-stampeding-against-starmer-says-harriet-harman-13555857",
       category: "Politics"
     },
     {
       id: "uk3",
-      title: "Heathrow Third Runway GDP Yield May Be 90% Less Than Previous Estimates",
-      summary: "New Department for Transport analysis suggests the economic boost from a Heathrow third runway could be a tiny fraction of earlier projections, with overall trade-offs potentially costing the UK up to £62.5 billion.",
+      title: "Kemi Badenoch Masterminded a Quiet Tory Victory in Aberdeen South By-Election",
+      summary: "While national attention was fixed on Makerfield, the Conservatives pulled off a surprise by-election win in Aberdeen South in what is being described as a carefully planned operation orchestrated by Tory leader Kemi Badenoch.",
       body: [
-        "Government analysis has cast serious doubt on the economic case for expanding Heathrow Airport, indicating that the GDP boost previously cited by ministers and proponents of the third runway may be up to 90% lower than stated figures. The findings suggest that far from being an engine of growth, the expanded airport could represent a significant net cost to the British economy when all trade-offs are accounted for.",
-        "The revelation is politically awkward for a government that has pledged to accelerate the Heathrow expansion as part of its infrastructure and growth agenda. With ministers already under pressure on multiple fronts, questions about whether the project stacks up economically are likely to intensify scrutiny of the decision-making process and the assumptions underpinning major infrastructure commitments."
+        "With the political world focused on the drama unfolding in Makerfield and its implications for Keir Starmer\'s future, the Conservatives were quietly working to secure a victory in Aberdeen South that many had not seen coming. Kemi Badenoch\'s team is said to have deliberately kept a low public profile around the contest, hoping to avoid scrutiny while maximising their chances of an upset result.",
+        "The win provides a much-needed boost for the Conservative Party at a time when it has struggled to assert itself as the primary opposition force against a resurgent Reform UK. For Badenoch, the result offers proof that the Tories retain the ability to win seats and compete effectively when strategic discipline is applied, even in the shadow of a dominant news cycle elsewhere."
       ],
-      image: "https://i.guim.co.uk/img/media/3b5cf33f20273021120af39e9f1b3c59816ad1a9/0_0_5383_4307/master/5383.jpg?width=1200&quality=85&auto=format&fit=max&s=3cddfb24614925babadfdb7bc11a6577",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/uk-news/2026/jun/19/heathrow-third-runway-boost-gdp-less-than-stated",
+      image: "https://static.independent.co.uk/2026/06/19/14/19135537-59909c96-324f-4a18-b58d-cc7e7e13d6c4.jpg?width=1200&auto=webp&crop=3%3A2",
+      source: "The Independent",
+      url: "https://www.independent.co.uk/news/uk/politics/kemi-badernoch-tories-aberdeen-south-byelection-b2999611.html",
       category: "Politics"
     }
   ]

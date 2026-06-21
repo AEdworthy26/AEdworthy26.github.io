@@ -1,121 +1,108 @@
 // curiosity-data.js
-// Auto-updated 2026-06-20 — do not edit manually
+// Auto-updated 2026-06-21 — do not edit manually
 
 var CURIOSITY_DATA = {
-  date: "2026-06-20",
+  date: "2026-06-21",
   mainArticle: {
-    title: "The Counting House of the Dead: How the Maya Invented the Zero and Rewrote Mathematics",
-    subject: "Maya mathematics and calendar system",
-    subtitle: "While Europe was still fumbling with Roman numerals, a civilisation in the jungle had cracked one of the deepest problems in the history of human thought.",
-    image: "https://images.pexels.com/photos/6256066/pexels-photo-6256066.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    readTime: "11 min",
+    title: "The Stone Builders of Malta: The Oldest Free-Standing Structures on Earth",
+    subject: "Megalithic Temples of Malta",
+    subtitle: "Five thousand years before the Colosseum, a people whose name we do not know built temples so sophisticated that they still defy easy explanation.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Ggantija_Temples%2C_Xaghra%2C_Gozo.jpg/3840px-Ggantija_Temples%2C_Xaghra%2C_Gozo.jpg",
+    readTime: "10 min",
     content: [
       {
         type: "paragraph",
-        text: "In the humid lowlands of what is now Mexico and Guatemala, a civilisation was doing something almost no one else on Earth had managed. They had given a name, a symbol, and a place in the counting system to the concept of nothing. The Maya zero — a shell-shaped glyph representing the idea of completion and absence simultaneously — was not merely a placeholder. It was a philosophical statement about the nature of number itself, and it preceded the version that reached Europe by at least six centuries."
+        text: "On a small island in the middle of the Mediterranean, surrounded by the same warm sea that later cradled Greece and Rome, there are buildings older than Stonehenge, older than the Pyramids, older than any monument in Egypt. The megalithic temples of Malta were raised somewhere between 3600 and 2500 BC by a people who left no written records, whose name is entirely unknown, and whose civilisation vanished so completely that when the next wave of settlers arrived, there was apparently nobody left to ask. What they left behind — enormous, beautifully engineered stone temples fitted together with extraordinary precision — is among the most astonishing and least-discussed archaeological puzzles in the world."
       },
       {
         type: "paragraph",
-        text: "The story of how mathematics developed around the world is usually told as a single river flowing from Babylon through Greece to the Islamic world and into Renaissance Europe. The Maya do not fit that story, which is precisely why their achievement is so astonishing. They arrived at their system independently, in isolation from the intellectual currents of Eurasia, and they applied it to problems of time and astronomy with a precision that still commands professional respect."
+        text: "There are at least seven major temple complexes on the Maltese islands, including Ġgantija on the island of Gozo, Ħaġar Qim overlooking the southern cliffs, and Mnajdra, a cluster of three conjoined temples whose inner chambers align so precisely with the rising sun at the solstices and equinoxes that they function, effectively, as a stone calendar. The temples are built from coralline and globigerina limestone, some blocks weighing over fifty tonnes, and yet the builders had no metal tools, no wheeled vehicles, and no draught animals capable of hauling such loads. They are the earliest free-standing stone structures ever built by human hands — a fact that tends to quietly astonish people when they first encounter it."
       },
       {
         type: "heading",
-        text: "The Problem Nobody Wanted to Solve"
+        text: "An Island Alone at the Edge of the World"
       },
       {
         type: "paragraph",
-        text: "To modern eyes, the concept of zero seems obvious — almost trivially so. But for most of human history, the notion of representing nothing as a quantity was deeply counterintuitive, philosophically troubling, and practically unnecessary for everyday counting. The Romans, for all their administrative genius, never developed a zero, which is why multiplication and division in Roman numerals are exercises in pain. The Greeks, despite their towering achievements in geometry and logic, resisted zero on philosophical grounds: how could nothing be something?"
+        text: "Malta lies roughly in the centre of the Mediterranean, ninety kilometres south of Sicily and three hundred north of the North African coast. It is a small, dry, limestone island with few natural resources beyond the stone itself. The first settlers arrived around 5200 BC, crossing from Sicily in simple watercraft, bringing with them the Neolithic package: domesticated animals, grain crops, pottery. For over a millennium they lived quietly, leaving behind the usual traces — sherds, bones, hearths. Then, around 3600 BC, something changed."
       },
       {
         type: "paragraph",
-        text: "The Maya approached the problem from a different direction. They were not primarily interested in arithmetic for trade or engineering in the way Babylonian scribes were. They were obsessed with time — specifically with the vast, cyclical, interlocking calendrical systems they used to track history, prophecy, and the movements of the heavens. To make those systems work with any precision, they needed a positional number system, and a positional number system, by definition, requires a zero."
+        text: "The archaeological record shifts abruptly. Communities that had been building ordinary Neolithic structures suddenly began quarrying, shaping, and erecting megaliths on a scale that had no precedent anywhere in the region. The energy expenditure implied by the temples — the labour of quarrying, transporting, shaping, and raising stones of this size — would have consumed a substantial fraction of the entire island\'s productive capacity for generations. Something was driving this effort: a theological compulsion, a political programme, or perhaps a response to crisis. We do not know."
       },
       {
         type: "heading",
-        text: "A Shell That Held the Universe"
+        text: "The Architecture of the Unknown"
       },
       {
         type: "paragraph",
-        text: "The Maya numerical system was vigesimal — based on twenty rather than the decimal ten we use today — almost certainly because they counted on both fingers and toes. Numbers were written vertically, ascending in powers of twenty, with dots representing ones and horizontal bars representing fives. The shell glyph, placed in any column where a value was absent, made the entire architecture possible. A number like four hundred and one could be written unambiguously because the empty twenty-column wore its shell and could not be confused with twenty-one."
+        text: "The temple plans are strikingly consistent across the archipelago. They follow a trefoil or cloverleaf design: a central corridor leading through a threshold into paired semicircular apses, sometimes with a third apse at the far end. The plan has been described as anthropomorphic — echoing the shape of a human body with outstretched arms — but whether this was intentional symbolism or simply an efficient structural form is debated. What is not debated is the quality of the workmanship. The blocks fit together with a tightness and care that required sophisticated planning and skilled execution."
       },
       {
         type: "paragraph",
-        text: "What makes the Maya zero philosophically distinct from the independently invented Indian zero that would eventually reach Europe is its origin in the concept of completion rather than mere emptiness. The shell glyph was associated with the end of a calendrical cycle — the moment after the last count, before the first. It was not simply absence; it was the pregnant pause between cycles, the breath between heartbeats. Mathematics and cosmology were, for the Maya, the same subject."
+        text: "Inside the temples, the walls are covered in pitted decoration — a technique called 'pit dressing' in which small holes are hammered into the surface of the stone in dense, regular patterns. At Tarxien, the largest complex, fragments survive of a colossal statue of a seated figure — only the lower half remains, but the scale suggests a figure that would have stood nearly three metres tall. Altars, stone basins, oracle holes, and elaborate thresholds speak to a complex ritual life. Animal bones, predominantly sheep and goat, suggest large-scale feasting events that may have drawn participants from across both islands."
       },
       {
         type: "heading",
-        text: "The Calendar Machines"
+        text: "The Sleeping Lady and the World Beneath"
       },
       {
         type: "paragraph",
-        text: "To understand why the Maya needed their mathematics to be so precise, you have to understand their calendrical obsession. They did not use one calendar but at least three simultaneously interlocking systems. The Tzolk\'in was a 260-day ritual calendar, its origin still debated; the Haab' was a 365-day solar calendar divided into eighteen months of twenty days plus a five-day liminal period; and the Long Count was a linear calendar that measured time in vast cycles stretching back to a mythological creation date in 3114 BC and forward into the deep future."
+        text: "In 1902, workers digging a well in the town of Paola broke through the ceiling of an underground hypogeum — a vast, multi-level complex of chambers cut entirely from the living rock, which had been sealed and forgotten for four thousand years. The Ħal Saflieni Hypogeum, as it is now known, is one of the most extraordinary archaeological sites on Earth: three levels of rock-cut halls, passages, and chambers descending twelve metres into the ground, used for burial and possibly ritual from around 3300 to 2500 BC. The bones of at least seven thousand individuals have been found there."
       },
       {
         type: "paragraph",
-        text: "These three calendars meshed like the gears of an astronomical clock. The Tzolk\'in and Haab' together produced the Calendar Round, a 52-year cycle in which any given combination of dates would not recur for a lifetime. The Long Count allowed scribes to pin any event to an absolute date within a cycle lasting approximately 5,125 years. Tracking these cycles accurately — calculating when they would align, when they had last aligned, how many days stood between two dates separated by centuries — was precisely the kind of problem that demanded a zero and a robust positional notation."
+        text: "Among the objects recovered from the Hypogeum was a small terracotta figurine, perhaps fifteen centimetres long, of a recumbent figure lying on its side with eyes closed and a hand tucked beneath its cheek. It is known, universally and inevitably, as the Sleeping Lady. The figurine\'s purpose — idol, votive offering, portrait of the dead, image of a dreaming oracle — is unknown. Its face is serene, its form abundantly curved, and it has been staring at the ceiling of the National Museum of Archaeology in Valletta for over a century with an expression of utter indifference to human interpretation."
       },
       {
         type: "heading",
-        text: "The Astronomers of the Jungle"
+        text: "A Calendar Written in Stone"
       },
       {
         type: "paragraph",
-        text: "The Dresden Codex, one of only four surviving Maya books, contains astronomical tables of breathtaking accuracy. The Maya calculation of the synodic period of Venus — the time it takes Venus to return to the same position relative to the Earth and Sun — was 584 days. The actual figure is 583.92 days. Their lunar tables predicted eclipses with an error of roughly two hours over a span of centuries. They achieved this not with telescopes or mechanical instruments but with naked-eye observation, patient record-keeping across generations, and the mathematical framework their zero made possible."
+        text: "The astronomical alignments at Mnajdra are among the most compelling features of the entire temple complex. The southernmost of the three temples is oriented so precisely that at both equinoxes, the rising sun sends a beam of light directly down the central corridor, striking a decorated altar stone at the far end. At the summer solstice — today — the light falls along the left edge of the doorway threshold; at the winter solstice it falls along the right. These are not accidental coincidences of geometry. The builders knew exactly what they were doing."
       },
       {
         type: "paragraph",
-        text: "The Observatory at Chichén Itzá, known as El Caracol, is oriented precisely toward the northernmost and southernmost rising points of Venus on the horizon. The alignment is not approximate. Windows and doorways were placed so that a watcher standing in the right spot would see Venus rise exactly in the centre of the opening at astronomically significant moments. The building is simultaneously a temple, a calendar, and a scientific instrument — a synthesis that the Maya would not have found strange, since for them the sky was both a clock and a sacred text."
+        text: "This level of astronomical sophistication implies generations of careful observation, a tradition of accumulated knowledge, and the institutional capacity to encode that knowledge into permanent architecture. The people who built Mnajdra were watching the sky long before they laid a single stone, tracking the solstices and equinoxes with the patience and precision of professional astronomers. How this knowledge was preserved and transmitted — whether by a priestly class, by oral tradition, by visual marks on perishable material — we cannot say. It vanished with the civilisation that held it."
       },
       {
         type: "heading",
-        text: "Written in Stone, Lost in Fire"
+        text: "The Silence After"
       },
       {
         type: "paragraph",
-        text: "The preservation of Maya mathematical knowledge is one of the great tragedies of intellectual history. When the Spanish conquistadors arrived in the Yucatán in the sixteenth century, they encountered a civilisation whose priestly class maintained libraries of bark-paper books — codices — containing centuries of accumulated astronomical, mathematical, and ritual knowledge. In 1562, the Franciscan friar Diego de Landa, convinced that the books were works of the devil, gathered the entire library at Maní and burned it. He later estimated that he had destroyed twenty-seven books. He seems to have thought this was thorough work."
+        text: "Around 2500 BC, the temple-building culture of Malta disappeared. The evidence is ambiguous but consistent: the temples fell out of use, the population seems to have collapsed, and when new settlers arrived — a different people with different pottery traditions, different burial rites, and different tools — there is no sign of continuity with what came before. Theories range from environmental catastrophe (overexploitation of the island\'s thin soils leading to agricultural collapse) to epidemic disease, from violent displacement to simple demographic decline. None has been proven."
       },
       {
         type: "paragraph",
-        text: "Only four Maya codices survived, saved by circumstances of geography or accident. De Landa, in a historical irony of the highest order, subsequently wrote the most detailed European account of Maya culture and writing ever produced — a document that proved essential to the eventual decipherment of the glyphs. His Relación de las Cosas de Yucatán is simultaneously one of the greatest acts of cultural destruction and one of the most valuable ethnographic records of the pre-Columbian world. The man who burned the library also wrote the key."
+        text: "What is certain is the completeness of the break. The new arrivals, the people archaeologists call the Tarxien Cemetery culture, used the great temple at Tarxien as a cremation site, digging pits into its floors. They may not have known who built it. The elaborate theological system, the accumulated astronomical knowledge, the identity of the great seated figure in the inner sanctuary — all of it was gone. The temples became ruins, then became buried, then became, in time, legend. The Maltese word 'Ġgantija' means 'giant\'s tower'. Medieval islanders, encountering these impossible structures, assumed they must have been built by a race of giants, because no ordinary human effort could explain them."
       },
       {
         type: "heading",
-        text: "The Long Silence and the Slow Return"
+        text: "What They Tell Us"
       },
       {
         type: "paragraph",
-        text: "For three centuries after the conquest, the Maya script was treated as undecipherable — beautiful, perhaps, but permanently closed. It was not until the 1950s and 1960s that the Soviet epigrapher Yuri Knorozov, working from photographs of the surviving codices in a Leningrad library without ever visiting a Maya site, demonstrated that the script was syllabic rather than purely ideographic. He was largely ignored in the West for decades, in part because Cold War politics made Western scholars reluctant to credit a Soviet researcher. His fundamental insight was eventually vindicated, and the decipherment that followed has transformed our understanding of Maya history."
+        text: "The Maltese temples matter beyond their considerable intrinsic fascination because they complicate the standard narrative of ancient complexity. The conventional story of civilisation moves from simple to complex, from small to large, from dispersed to centralised — it runs through the river valleys of Mesopotamia and Egypt, where writing and bureaucracy and monumental architecture emerge together in dense, irrigated urban cores. Malta fits none of this. It was a small, isolated island. It had no rivers, no cities in any recognisable sense, no writing. And yet it produced architecture of extraordinary sophistication and astronomical precision."
       },
       {
         type: "paragraph",
-        text: "What the deciphered inscriptions revealed was not the peaceful, calendar-obsessed civilisation that nineteenth-century romantics had imagined. The stelae and lintels of sites like Palenque, Tikal, and Copán turned out to be dynastic propaganda, recording wars, alliances, sacrifices, and the rivalries of city-states in granular political detail. The Maya were not a peaceful theocracy communing with the heavens; they were a collection of competing kingdoms with sophisticated courts, hereditary aristocracies, and very human ambitions. Their mathematics was a tool of statecraft and religion woven so tightly together that the two could not be separated."
-      },
-      {
-        type: "heading",
-        text: "A Legacy Written in Two Directions"
-      },
-      {
-        type: "paragraph",
-        text: "The Maya zero never travelled. Unlike the Indian zero, which moved through Persia to the Islamic world and then to Europe, where it transformed commerce, navigation, and science, the Maya discovery remained contained within Mesoamerica. It had no contact with the Eurasian mathematical tradition and exercised no direct influence on the number system the world eventually adopted. In that sense, it is a road not taken — an independent solution to one of mathematics' deepest problems, brilliant and isolated in equal measure."
-      },
-      {
-        type: "paragraph",
-        text: "What the Maya achievement demonstrates, however, is something more important than any single discovery. It shows that the emergence of positional mathematics with a zero is not a historical accident, not the lucky product of one culture\'s genius, but an almost inevitable development when a civilisation becomes sufficiently obsessed with counting time. The Maya were driven by their cosmology to the same mathematical frontier that Indian scholars approached from their own direction. Two civilisations, separated by an ocean and thousands of years, knocked on the same door. The shell glyph and the Sanskrit sunya arrived at the same answer because mathematics, in the end, is not a cultural invention. It is a discovery."
+        text: "The implication is uncomfortable and exciting in equal measure: that the capacity for complex, organised, symbolically rich cultural achievement is not dependent on the conditions we have traditionally assumed to be prerequisites. A few thousand people on a limestone island, working with antler picks and stone hammers, without metal or wheels or draught animals, built structures that still stand five and a half millennia later — structures precisely aligned with the movements of the sun, decorated with care and skill, filled with the bones of their dead and the figurines of their unknown gods. We do not know what they believed. We do not know what they called themselves. We know what they made. And it is enough to make anyone pause."
       }
     ]
   },
   personOfTheDay: {
-    name: "Juana Inés de la Cruz",
-    lifespan: "1651–1695",
-    category: "Literature, Science & Philosophy",
-    image: "https://upload.wikimedia.org/wikipedia/commons/1/1d/Sor_Juana_by_Miguel_Cabrera.png",
-    bio: "Juana Inés de la Cruz was born in 1651 in San Miguel Nepantla, a village in New Spain, the illegitimate daughter of a Spanish captain and a Creole woman who could read. From the age of three, Juana taught herself to read by following her older sister\'s lessons. By eight she had written her first poem. By fifteen she had so thoroughly astounded the Viceroy of New Spain with her command of theology, philosophy, mathematics, and Latin that he assembled forty scholars — theologians, lawyers, poets, mathematicians — and set them to question her on every subject they knew. She answered every question to their satisfaction. The scholars went home. Juana remained in court.\n\nRather than accept a marriage she did not want, she entered the Convent of San Jerónimo in Mexico City in 1669. It was not a retreat from the world but an advance into it. The convent gave her a library, a laboratory, a collection of musical instruments, and freedom from domestic obligation. From that cell she became the greatest literary figure of the Spanish-speaking seventeenth century. Her poetry ranged from devotional verse to satirical comedy, from love sonnets of startling psychological complexity to a philosophical argument, the Primero Sueño, that traced the soul\'s journey through all human knowledge in a single extraordinary night.\n\nJuana was also a scientist in the most practical sense. She conducted experiments in her cell, observed the behaviour of a spinning top and drew mathematical conclusions from it, studied the physics of cooking, and wrote that 'if Aristotle had cooked, he would have written a great deal more.' Her famous letter known as the Respuesta a Sor Filotea — a reply to a bishop who had rebuked her for writing on secular subjects — is one of the earliest and most powerful feminist arguments in the history of Western literature, a defence of a woman\'s right to intellectual life written with surgical precision and immense personal courage.\n\nIn the last years of her life, under increasing pressure from the Church hierarchy, Juana sold her library of four thousand books — one of the largest in the New World — gave the proceeds to the poor, and fell largely silent. She died in 1695 while nursing her sisters through an epidemic, probably typhus. She was forty-three years old. The full scope of her achievement went largely unrecognised for two centuries; the twentieth century eventually restored her to the position she deserves: a polymath of extraordinary power who worked in a world designed to keep her quiet, and declined, for most of her life, to cooperate."
+    name: "Apollonius of Rhodes",
+    lifespan: "c. 295–215 BC",
+    category: "Literature & Scholarship",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Rhodes_sentinel2_%28cropped%29.jpg/3840px-Rhodes_sentinel2_%28cropped%29.jpg",
+    bio: "Apollonius of Rhodes was a Greek poet and scholar of the third century BC, best known as the author of the Argonautica, the only complete surviving epic poem from the Hellenistic period and the first extended literary treatment of romantic love in the Western tradition. Born in Alexandria — despite his epithet 'of Rhodes', which likely reflects a period of exile or residence on the island — he was a pupil of the great Callimachus and eventually rose to become head of the Library of Alexandria, the most prestigious intellectual post in the ancient world. He lived at the epicentre of the greatest concentration of human knowledge ever assembled to that point in history.\n\nThe Argonautica retells the myth of Jason and his crew of heroes — the Argonauts — sailing to the distant land of Colchis at the eastern edge of the Black Sea to recover the legendary Golden Fleece. In four books of hexameter verse, Apollonius follows the voyage out, the struggles and wonders encountered along the way, the pivotal events in Colchis, and the long and perilous journey home. What makes the poem revolutionary is its psychological depth, particularly in its portrait of Medea, the Colchian princess who falls catastrophically in love with Jason. Apollonius devotes extended, searching attention to the interior experience of falling in love — the racing heart, the sleeplessness, the conflict between desire and duty — in a way that had no real precedent in Greek literature.\n\nHis career was apparently marked by a celebrated literary quarrel with his teacher Callimachus, who championed short, polished, learned poetry and reportedly dismissed the long epic as an outdated form. Whether Apollonius published an early draft of the Argonautica, received harsh criticism, and retreated to Rhodes before returning with a revised version, or whether the quarrel has been exaggerated by later tradition, is debated by scholars. What is clear is that his ambition to revive the grand Homeric epic in a thoroughly Hellenistic key — learned, ironic, emotionally sophisticated — was genuinely radical. Virgil read him closely when composing the Aeneid, and the influence of his Medea is visible in Virgil\'s Dido, the queen who loves, is abandoned, and destroys herself.\n\nApollonius occupies an unusual place in the literary canon: admired by specialists, somewhat neglected by general readers, and persistently underestimated by those who approach the Hellenistic age expecting only dry erudition. The Argonautica is, in fact, a gripping, inventive, and emotionally alive poem, one that takes a myth everyone knew and found within it something genuinely new — not the heroics of Achilles or Odysseus, but the trembling interiority of a young woman standing at a crossroads in the dark, deciding to betray everything she knows for a stranger she has known for three days. That it survives complete, when so much else from antiquity does not, is one of the small mercies of history."
   },
   onThisDay: {
-    headline: "QUEEN VICTORIA ASCENDS THE BRITISH THRONE",
-    date: "June 20, 1837",
-    summary: "In the early hours of June 20, 1837, the Archbishop of Canterbury and the Lord Chamberlain arrived at Kensington Palace to wake an eighteen-year-old girl and inform her that she was Queen of the United Kingdom of Great Britain and Ireland. Alexandrina Victoria had been kept in deliberate isolation for most of her childhood under the suffocating 'Kensington System,' a regime designed by her mother and her mother\'s adviser John Conroy to ensure that she would be entirely dependent on them when she came to power. Her first act as queen was to demand an hour alone. Her second was to order that her bed be moved out of her mother\'s room. The reign of sixty-three years and seven months that followed would be the longest in British history to that point.\n\nVictoria\'s accession was also a constitutional accident of dynastic arithmetic. Her predecessor, her uncle William IV, had died without legitimate heirs. His own predecessor, George IV, had died the same way. Before that, George III had fathered fifteen children, many of whom had rushed into marriage in the scramble to produce a legitimate heir once it became clear the succession was in danger — but only Victoria survived. She had been named heir presumptive almost from birth, yet the Kensington System had denied her any real preparation for the role. What courtiers found when they met the new queen was not a pliable girl but a composed, sharp, and immovably resolute young woman who had been absorbing everything around her in silence for years. She would reshape the British monarchy, the British Empire, and — through the marriages of her nine children into the royal houses of Europe — the political landscape of the entire continent for generations."
-    ,
-    image: "https://images.unsplash.com/photo-1571733818896-a01d79166f2c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxRVUVFTiUyMFZJQ1RPUklBJTIwQVNDRU5EUyUyMFRIRSUyMEJSSVRJU0glMjBUSFJPTkV8ZW58MHwwfHx8MTc4MTkzMjExOHww&ixlib=rb-4.1.0&q=80&w=1080"
+    headline: "THE SUMMER SOLSTICE THAT MEASURED THE EARTH",
+    date: "June 21, 240 BC",
+    summary: "On or around the summer solstice of 240 BC, Eratosthenes of Cyrene — chief librarian of the Library of Alexandria — conducted or collated the observations that would allow him to calculate the circumference of the Earth with remarkable accuracy. His method was elegant and simple. He knew that at noon on the summer solstice, the sun shone directly down a well in the city of Syene (modern Aswan) in southern Egypt, casting no shadow — the sun was precisely overhead. At the same moment in Alexandria, roughly 800 kilometres to the north, a vertical stick cast a shadow at an angle of about 7.2 degrees, which is one-fiftieth of a full circle. If the two cities were one-fiftieth of the Earth\'s circumference apart, and the distance between them was known, the circumference could be calculated directly.\n\nEratosthenes estimated the distance between Alexandria and Syene as 5,000 stadia — a figure derived from the reported travel time of royal surveyors — and multiplied by fifty to arrive at a circumference of 250,000 stadia. The precise length of the stadion he used is disputed by historians, but by the most plausible conversion his result comes to between 39,375 and 46,620 kilometres. The actual circumference of the Earth is 40,075 kilometres. By the most favourable interpretation, Eratosthenes was accurate to within one percent — an astonishing result achieved with no instruments beyond a stick, a shadow, and the most powerful tool in science: a well-asked question. His calculation was not seriously improved upon for another seventeen centuries.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Meteosat-12-fci-march-equinox-2025-noon.jpg/3840px-Meteosat-12-fci-march-equinox-2025-noon.jpg"
   }
 };

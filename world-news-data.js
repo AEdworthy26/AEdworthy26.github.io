@@ -1,30 +1,43 @@
 // world-news-data.js
-// Auto-updated 2026-06-20 — do not edit manually
+// Auto-updated 2026-06-21 — do not edit manually
 
 var WORLD_NEWS = {
-  date: "2026-06-20",
+  date: "2026-06-21",
   main: {
-    title: "Israel and Hezbollah Agree Ceasefire as Lebanon Strikes Continue",
+    title: "US-Iran Talks Begin in Switzerland as Tehran Claims Strait of Hormuz Closure",
     category: "Geopolitics",
     content: [
-      "Israel and Hezbollah have agreed to a new ceasefire, the United States announced, even as further strikes on Lebanon were reported in the hours surrounding the deal. The agreement came after intense diplomatic pressure, with ongoing clashes between the two sides threatening to derail the broader framework aimed at ending the war between the US and Iran. The fragile nature of the announcement was underscored by the fact that Hezbollah had not immediately commented on the ceasefire terms.",
-      "According to Israel\'s ambassador, Israel has committed to the new Lebanon ceasefire arrangement, though Israeli troops will remain in place for the time being. This caveat has raised questions about the practical implementation of the deal and whether a lasting cessation of hostilities can be achieved. The continuation of military forces on Lebanese soil is a deeply sensitive issue that has historically complicated peace efforts in the region.",
-      "The fighting between Israel and Hezbollah had become an increasingly urgent concern for US negotiators, as it was directly delaying the next stage of talks designed to consolidate the preliminary agreement reached with Iran. Washington viewed the Lebanon front as a dangerous variable capable of unravelling months of painstaking diplomacy. The ceasefire was therefore seen as a necessary precondition for broader regional stabilisation.",
-      "The wider context of this ceasefire is the preliminary US-Iran agreement signed by President Trump, which itself faces significant challenges before any lasting peace can be established. Iran-backed Hezbollah\'s military activity in Lebanon has long been intertwined with Tehran\'s regional strategy, meaning any deal on the Lebanese front carries implications far beyond the immediate conflict zone. Analysts have cautioned that the preliminary nature of both the Iran deal and this ceasefire leaves enormous room for renewed escalation.",
-      "The situation remains extremely volatile, with reports of strikes continuing even as the ceasefire was being announced — a sign of the deep distrust between the parties and the difficulty of enforcing such agreements in real time. The international community will be watching closely to see whether both Israel and Hezbollah honour the terms in the coming days. Much now depends on whether the ceasefire holds long enough to allow diplomats to make progress on the larger, more complex questions surrounding Iran and regional security."
+      "High-stakes diplomatic talks between the United States and Iran have begun in Switzerland, even as a fresh crisis erupted over Tehran\'s claim that it has closed the Strait of Hormuz — one of the world\'s most strategically critical waterways. Iran stated that the closure was a direct response to Israeli attacks in Lebanon, raising immediate alarm among global energy markets and shipping interests. The move, if confirmed, would threaten to choke off a passage through which a significant portion of the world\'s oil supply flows.",
+      "The United States military disputed Iran\'s claim, insisting that shipping traffic through the Strait of Hormuz was still flowing normally. The contradictory statements from Washington and Tehran created an atmosphere of acute uncertainty, with oil traders and international observers closely monitoring developments. Vice President JD Vance, who is leading the American delegation in Switzerland, acknowledged the situation and said he would prioritise both nuclear issues and the renewed fighting in Lebanon during the negotiations.",
+      "The Swiss talks represent a significant diplomatic moment, bringing together two nations that have spent decades in a state of deep mutual antagonism. The backdrop of Israeli military operations in Lebanon has dramatically complicated the diplomatic environment, giving Tehran additional leverage and domestic political justification for aggressive posturing. Iran\'s invocation of the Hormuz closure appears designed to signal that it retains powerful economic tools even as it engages in dialogue.",
+      "The Strait of Hormuz has long been Iran\'s most potent strategic card in confrontations with the West, and any genuine closure would send shockwaves through global energy supplies. Previous Iranian threats to close the waterway have historically caused immediate spikes in oil prices and triggered urgent responses from the US Navy\'s Fifth Fleet, which patrols the region. The US military\'s insistence that ships are still passing suggests that Iran\'s announcement may be partly a political and psychological manoeuvre timed to coincide with the opening of negotiations.",
+      "The convergence of the Lebanon conflict, the Hormuz standoff, and the Swiss diplomatic talks marks one of the most complex and high-pressure moments in US-Iran relations in recent years. How the two delegations navigate these overlapping crises in the coming days could have profound implications not only for the Middle East but for global energy security and the broader international order. The world will be watching Switzerland closely as diplomats attempt to find common ground against a backdrop of military tension and regional instability."
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/1d8c/live/3048d450-6c0d-11f1-866d-31e44f099e94.jpg",
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/17c2/live/72006a90-6d05-11f1-8e1d-bbbb1017d210.jpg",
     source: "BBC News",
-    sourceUrl: "https://www.bbc.com/news/articles/cwyk7kkygj5o?at_medium=RSS&at_campaign=rss"
+    sourceUrl: "https://www.bbc.com/news/articles/cwyekkwm1mmo?at_medium=RSS&at_campaign=rss"
   },
   secondary: [
     {
       id: "s1",
-      title: "Global Reparatory Justice Framework Adopted at Landmark Ghana Conference",
-      summary: "A historic conference in Accra, Ghana has formally adopted an 18-point global framework for reparatory justice addressing the legacies of enslavement and colonial debt burdens.",
+      title: "BBC Documents Destroyed Villages in Israeli-Occupied Southern Lebanon",
+      summary: "Travelling with a humanitarian convoy, the BBC\'s Hugo Bachega has gained rare access to southern Lebanon under Israeli occupation, revealing widespread village destruction.",
       body: [
-        "Heads of state, government officials, and representatives from across the world gathered in Accra to approve the landmark strategy, which includes measures to ensure fair compensation for those affected by the legacies of enslavement and to address the debt burdens that many argue are rooted in that history. Barbados Prime Minister Mia Mottley was among the leading voices at the conference, presenting a new Caribbean manifesto that asserts the moral, ethical, and legal case for reparations, with a particular emphasis on the harm done to African women.",
-        "The adoption of this 18-point strategic roadmap represents a significant step forward for a movement that has long struggled to gain formal international recognition. The conference signals a growing multilateral consensus that reparatory justice is not merely a domestic political question but a matter of global responsibility, with implications for international law, finance, and diplomacy."
+        "The BBC has been given rare access to Israeli-occupied southern Lebanon, travelling with a humanitarian convoy to document the scale of destruction in the region. Reporter Hugo Bachega\'s footage revealed villages that have been devastated, offering one of the first independent journalistic glimpses into an area that has remained largely inaccessible to outside observers.",
+        "The images and reporting shed new light on the human cost of the ongoing Israeli military operations in Lebanon, which have drawn international condemnation and contributed to Iran\'s justification for its aggressive posturing over the Strait of Hormuz. The rare access underscores the difficulties humanitarian organisations face in reaching affected populations in occupied territories."
+      ],
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/b3bb/live/848ad050-6cbb-11f1-8546-8f19e4fe30f4.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.com/news/videos/c8r2pyv3e2po?at_medium=RSS&at_campaign=rss",
+      category: "Conflict"
+    },
+    {
+      id: "s2",
+      title: "Global Reparatory Justice Framework Adopted at Landmark Ghana Conference",
+      summary: "African and Caribbean leaders have adopted a 19-point global framework for reparatory justice at a landmark conference in Accra, Ghana, demanding formal apologies from nations that benefited from the transatlantic slave trade.",
+      body: [
+        "A landmark conference in Ghana has resulted in the adoption of a global framework for reparatory justice, with heads of state and government from African and Caribbean nations uniting behind a 19-point roadmap that includes calls for formal apologies from countries that profited from the transatlantic slave trade. Barbados Prime Minister Mia Mottley was among the key voices at the conference, presenting a new manifesto that emphasises the particular harm done to African women during centuries of enslavement.",
+        "The Accra conference represents a significant escalation in the coordinated international push for slavery reparations, moving the debate beyond moral arguments into the realm of formal diplomatic and legal frameworks. The adoption of the roadmap signals growing momentum among formerly colonised nations to hold wealthy Western governments accountable for historical injustices, though the path to any concrete reparations agreements remains politically contested."
       ],
       image: "https://i.guim.co.uk/img/media/c388c02e62fcbc0aaa7507bd6786c18caf58e6e8/453_0_4525_3620/master/4525.jpg?width=1200&quality=85&auto=format&fit=max&s=ecbb989a87ba282483a2af2c54ff922c",
       source: "The Guardian",
@@ -32,30 +45,17 @@ var WORLD_NEWS = {
       category: "International"
     },
     {
-      id: "s2",
-      title: "US to End AIDS Funding for South Africa, Putting Millions at Risk",
-      summary: "The United States has announced it will phase out HIV prevention and treatment funding for South Africa, a country home to more than eight million people living with HIV — the highest number in the world.",
-      body: [
-        "An unsigned statement from the US State Department confirmed that support under programmes such as PEPFAR will be wound down for South Africa, a decision that health advocates have warned could have catastrophic consequences for one of the world\'s most HIV-affected populations. South Africa relies heavily on US-backed funding for antiretroviral treatment and prevention initiatives that serve millions of people across the country.",
-        "The announcement has drawn sharp international criticism, with health organisations warning that cutting this lifeline could reverse decades of hard-won progress in reducing HIV transmission rates and AIDS-related deaths. The decision adds to growing global concern about the withdrawal of American funding from international health programmes, following earlier cuts to other global health initiatives."
-      ],
-      image: "https://static01.nyt.com/images/2026/06/19/multimedia/19int-safrica-pepfar-mwlv/19int-safrica-pepfar-mwlv-mediumSquareAt3X.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/cdr457lxr71o?at_medium=RSS&at_campaign=rss",
-      category: "Health"
-    },
-    {
       id: "s3",
-      title: "Ukraine Drone Strike on Moscow Raises Hopes of Shifting War\'s Momentum",
-      summary: "A significant Ukrainian drone attack sent plumes of smoke rising over Moscow, intensifying Ukrainian hopes of bringing the war directly to Russian territory.",
+      title: "CDC Taps $107 Million in Emergency Funding as Ebola Cases in DRC and Uganda Top 1,000",
+      summary: "The US Centers for Disease Control and Prevention has unlocked $107 million in emergency funding to respond to an Ebola outbreak in the Democratic Republic of the Congo and Uganda, as the number of confirmed infections surpasses 1,000.",
       body: [
-        "The drone strike on Moscow has been described by some analysts as a potential game changer, though experts caution it is too soon to assess its full strategic impact. The attack demonstrated Ukraine\'s growing capability to reach deep into Russian territory and struck a powerful symbolic blow, with images of smoke over the Russian capital circulating widely.",
-        "Ukrainian officials expressed hope that the strike could shift the psychological and military dynamics of a conflict that has ground on for years, forcing Russia to divert resources to defending its own heartland. Whether the attack represents a genuine turning point or a dramatic but ultimately limited gesture remains the central question facing military analysts watching the war\'s trajectory."
+        "The Centers for Disease Control and Prevention has announced it will deploy $107 million in emergency funds to combat a growing Ebola outbreak across the Democratic Republic of the Congo and Uganda, with the total number of infected individuals now exceeding 1,000. Health officials have sought to reassure the international community that the global risk remains low, even as the scale of the outbreak continues to grow.",
+        "The continued spread of Ebola in central and east Africa comes at a challenging moment for global health infrastructure, raising concerns about the capacity of affected nations to contain the virus without substantial international support. The CDC\'s emergency funding commitment signals that American health authorities view the outbreak as a serious regional threat requiring urgent and sustained intervention."
       ],
-      image: "https://images.unsplash.com/photo-1714661963184-e1c29f749191?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxVa3JhaW5lJTIwRHJvbmUlMjBTdHJpa2UlMjBvbiUyME1vc2NvdyUyMFJhaXNlcyUyMEhvcGVzJTIwb2YlMjBTaGlmdGluZyUyMFdhciU1Q3xlbnwwfDB8fHwxNzgxOTMxNjkwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "The New York Times",
-      url: "https://www.nytimes.com/2026/06/19/world/europe/ukraine-drone-attack-moscow.html",
-      category: "Conflict"
+      image: "https://i.guim.co.uk/img/media/03aa8980d8c6f8e815cfe8aff8c0bd42470bc588/745_0_4581_3666/master/4581.jpg?width=1200&quality=85&auto=format&fit=max&s=bc5ee2b2269c9de1fb3002b7d1b0a2e7",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/us-news/2026/jun/18/cdc-emergency-ebola-funding",
+      category: "Health"
     }
   ]
 };

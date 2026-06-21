@@ -1,61 +1,61 @@
 // tech-news-data.js
-// Auto-updated 2026-06-20 — do not edit manually
+// Auto-updated 2026-06-21 — do not edit manually
 
 var TECH_NEWS = {
-  date: "2026-06-20",
+  date: "2026-06-21",
   main: {
-    title: "Microsoft Discovers New Lightweight Backdoor That Steals Cryptocurrency",
-    category: "Cybersecurity",
+    title: "Nobel Laureate John Jumper Is Leaving DeepMind for Rival Anthropic",
+    category: "Artificial Intelligence",
     content: [
-      "Microsoft has uncovered a new and sophisticated piece of malware, dubbed 'Crypto Clipper,' that specifically targets cryptocurrency users by silently intercepting and redirecting digital transactions. The malware operates as a lightweight backdoor, making it harder for traditional security tools to detect compared to heavier, more resource-intensive threats. Its discovery highlights the continuing evolution of financially motivated cybercrime, with attackers focusing their efforts on the largely unregulated and often irreversible world of digital currency.",
-      "One of the most notable characteristics of Crypto Clipper is its ability to spread via USB drives, a propagation method reminiscent of older malware families but still remarkably effective in environments where removable media is commonplace. By piggybacking on physical storage devices, the malware can jump across air-gapped or otherwise network-isolated systems that might otherwise be considered secure. This self-propagating capability significantly broadens the potential attack surface and complicates containment efforts once an infection takes hold.",
-      "To evade detection and maintain persistent communication with its operators, Crypto Clipper routes its network traffic through Tor, the anonymizing network more commonly associated with privacy advocates and, unfortunately, cybercriminals alike. Using Tor as a command-and-control channel makes it exceedingly difficult for network defenders and law enforcement to trace communications back to the malware\'s authors or hosting infrastructure. This technical sophistication suggests the threat actors behind the campaign are experienced and well-resourced.",
-      "The core mechanism of a 'clipboard hijacker' or crypto clipper is deceptively simple yet devastatingly effective: when a victim copies a cryptocurrency wallet address to their clipboard — a routine step when sending digital funds — the malware silently replaces the address with one controlled by the attacker. Because cryptocurrency wallet addresses are long, complex alphanumeric strings that users rarely verify character by character, the substitution often goes unnoticed until the funds are irrecoverably gone. The attack requires no additional interaction from the victim beyond the normal act of making a transaction.",
-      "Microsoft\'s discovery and public disclosure of Crypto Clipper serves as an important reminder that cybersecurity vigilance remains critical in the age of digital assets. Users handling cryptocurrency are strongly advised to double-check wallet addresses carefully before confirming any transaction, and to keep their systems patched and protected with up-to-date security software. The finding also underscores the need for organizations to implement strict USB device policies and to monitor outbound Tor traffic as part of a comprehensive defense-in-depth strategy."
+      "In a significant shakeup for the artificial intelligence research world, Nobel laureate John Jumper has announced his departure from Google DeepMind to join rival AI company Anthropic. Jumper is best known as one of the key architects behind AlphaFold, the revolutionary protein-structure prediction system that earned him a share of the 2024 Nobel Prize in Chemistry. His move represents one of the most high-profile talent shifts in the AI industry in recent memory.",
+      "Jumper\'s decision to leave DeepMind marks a remarkable vote of confidence in Anthropic, the safety-focused AI lab founded by former OpenAI researchers. Anthropic has been positioning itself as a serious competitor in foundational AI research, and landing a scientist of Jumper\'s caliber underscores the company\'s growing appeal among top-tier researchers. The move is likely to fuel further speculation about the competitive pressures facing Google\'s AI division.",
+      "According to TechCrunch, Jumper is not the only big name currently departing Google DeepMind, suggesting the exodus may reflect broader dissatisfaction or shifting opportunities within the organization. DeepMind has long been considered one of the world\'s premier AI research institutions, making any significant talent drain a notable development. The timing raises questions about internal dynamics at a moment when the AI race among major players is intensifying.",
+      "Anthropic, for its part, has built a reputation around responsible AI development and its Claude family of large language models. Bringing in a scientist who has demonstrated the ability to translate fundamental research into real-world, Nobel-worthy breakthroughs could accelerate Anthropic\'s ambitions beyond conversational AI. Jumper\'s expertise in applying deep learning to complex scientific problems could open new avenues for Anthropic\'s research agenda.",
+      "The broader implications for the AI industry are hard to overstate. When researchers of Jumper\'s standing move between organizations, they carry with them not just expertise but perspectives on what constitutes meaningful scientific progress. As competition for AI talent continues to reach extraordinary heights, this latest move signals that no institution — not even one backed by Google\'s vast resources — can take its brightest minds for granted."
     ],
-    image: "https://cdn.arstechnica.net/wp-content/uploads/2026/02/cryptocurrency-theft-heist-1152x648.jpg",
-    source: "Ars Technica",
-    sourceUrl: "https://arstechnica.com/security/2026/06/microsoft-spots-new-self-propagating-malware-for-stealing-cryptocurrency/"
+    image: "https://images.pexels.com/photos/30839685/pexels-photo-30839685.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    source: "TechCrunch",
+    sourceUrl: "https://techcrunch.com/2026/06/20/nobel-laureate-john-jumper-is-leaving-deepmind-for-rival-anthropic/"
   },
   secondary: [
     {
       id: "tc1",
-      title: "NASA Selects Eric Schmidt\'s Relativity Space for 2028 Mars Mission",
-      summary: "Relativity Space, led by former Google executive Eric Schmidt, has been chosen by NASA to launch the Aeolus payload to Mars in 2028 under a new public-private partnership.",
+      title: "Signal\'s Meredith Whittaker Warns: AI Chatbots 'Are Not Your Friends'",
+      summary: "Signal president Meredith Whittaker is urging the public to resist anthropomorphizing AI chatbots, reminding users that these systems are neither conscious nor sentient.",
       body: [
-        "Under the newly announced partnership, Relativity Space will be responsible for providing the spacecraft, rocket, and cruise operations required to deliver NASA\'s Aeolus payload to Mars, marking a significant milestone for the relatively young launch company. The Aeolus payload is expected to deliver the first-of-its-kind scientific data from the Martian environment, adding meaningful scientific value to what is already a landmark commercial spaceflight contract.",
-        "The selection of Relativity Space reflects NASA\'s growing reliance on commercial partners to reduce costs and accelerate mission timelines, a strategy that has already borne fruit with companies like SpaceX. For Relativity Space and Eric Schmidt, the contract represents a high-profile validation of the company\'s technology roadmap and its ambitions to compete in the deep-space launch market."
+        "In a pointed public warning, Signal president Meredith Whittaker has pushed back against the growing tendency of users to form emotional bonds with AI chatbots, stating bluntly that 'these are not your friends' and 'these are not conscious beings.' Her comments come as AI companion apps and increasingly conversational models blur the lines between tool and relationship for millions of users worldwide.",
+        "Whittaker\'s remarks highlight a growing concern among technology ethicists and privacy advocates that the design of AI chatbots — engineered to seem warm, empathetic, and responsive — may be deliberately encouraging dependency. As the head of one of the world\'s leading privacy-focused communication platforms, her voice carries particular weight in debates about how technology shapes human behavior."
       ],
-      image: "https://images.unsplash.com/photo-1586999082731-574a06ec7e25?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxOQVNBJTIwU2VsZWN0cyUyMEVyaWMlMjBTY2htaWR0JTVDfGVufDB8MHx8fDE3ODE5MzE4NzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "The Verge",
-      url: "https://www.theverge.com/science/952988/nasa-relativity-space-eric-schmidt-mars",
-      category: "Space"
+      image: "https://images.unsplash.com/photo-1583474884909-230dac058b63?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTaWduYWwlNUN8ZW58MHwwfHx8MTc4MjAxODI2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "TechCrunch",
+      url: "https://techcrunch.com/2026/06/20/signals-meredith-whittaker-wants-you-to-remember-that-ai-chatbots-are-not-your-friends/",
+      category: "Artificial Intelligence"
     },
     {
       id: "tc2",
-      title: "A Bold Satellite Rescue Mission Came Together in Record Time — But Will It Work?",
-      summary: "An ambitious and rapidly assembled satellite rescue mission is underway, with engineers and mission planners pushing the boundaries of what can be achieved on an accelerated timeline.",
+      title: "The Atlantic Builds Searchable Database of Music Used to Train AI Models",
+      summary: "The Atlantic has made public a fully searchable database revealing the music tracks used to train AI models, uncovering datasets containing tens of millions of songs.",
       body: [
-        "The mission was pulled together in an extraordinarily compressed timeframe, a feat that those involved describe as a success in itself regardless of the final outcome. As one official put it, 'I consider this a success already, just from the fact that we\'re even going to try this,' reflecting the immense logistical and engineering challenges that had to be overcome just to get to launch.",
-        "Satellite rescue missions are rare and technically demanding, requiring precise orbital maneuvering and a deep understanding of both the ailing spacecraft and the rescue vehicle\'s capabilities. The outcome of this attempt could have significant implications for how the industry approaches satellite longevity, insurance, and the feasibility of on-orbit servicing going forward."
+        "Atlantic reporter Alex Reisner has uncovered four datasets of music being used to train AI models and compiled them into a searchable public database, exposing the staggering scale at which copyrighted music is being ingested by AI systems. Two of the datasets are enormous, containing 12 million and 9 million tracks respectively, raising serious questions about consent and compensation for artists.",
+        "The release of this database is a landmark moment for the ongoing legal and ethical battle between the music industry and AI developers, giving artists and rights holders a concrete tool to determine whether their work was used without permission. It is likely to intensify calls for regulatory action and may bolster pending lawsuits against AI companies that have relied on scraped audio data for model training."
+      ],
+      image: "https://i.guim.co.uk/img/media/b3962d03da5e05ce790c02cf6de8f24dc3b59578/599_0_2835_2268/master/2835.jpg?width=1200&quality=85&auto=format&fit=max&s=8336ba341e8bca9208af6edd22e89962",
+      source: "The Verge",
+      url: "https://www.theverge.com/ai-artificial-intelligence/953183/the-atlantic-searchable-database-music-ai-training-data",
+      category: "Artificial Intelligence"
+    },
+    {
+      id: "tc3",
+      title: "A Bold Satellite Rescue Mission Came Together in Record Time — But Will It Work?",
+      summary: "A remarkably fast-assembled satellite rescue mission is heading toward a stricken spacecraft, with engineers calling the effort itself already a success regardless of outcome.",
+      body: [
+        "In what engineers are describing as an unprecedented feat of rapid mission planning, a bold satellite rescue operation has been assembled in record time and is now underway, targeting a spacecraft in need of recovery. One mission insider told Ars Technica, 'I consider this a success already, just from the fact that we\'re even going to try this,' capturing the audacious spirit behind the effort.",
+        "The mission highlights both the growing sophistication of the commercial and governmental space sectors and the increasing importance of on-orbit servicing capabilities as more satellites are launched into increasingly crowded orbital environments. Whether or not the rescue ultimately succeeds, the speed with which the operation was conceived and executed sets a new benchmark for emergency space operations."
       ],
       image: "https://cdn.arstechnica.net/wp-content/uploads/2026/06/Testing-Link-Vibration-tests-2_4000x2600-1152x648.jpg",
       source: "Ars Technica",
       url: "https://arstechnica.com/space/2026/06/a-bold-satellite-rescue-mission-came-together-in-record-time-but-will-it-work/",
       category: "Space"
-    },
-    {
-      id: "tc3",
-      title: "Nothing Cancels This Year\'s CMF Phone Due to Surging RAM Prices",
-      summary: "Nothing has scrapped plans for a follow-up to the CMF Phone 2 Pro this year, citing prohibitively high memory prices that make it impossible to deliver the device at a competitive budget price point.",
-      body: [
-        "Nothing co-founder Akis Evangelidis announced the cancellation in a post on X, explaining that with memory prices at their current levels, the company simply cannot build a successor that would meet the budget-friendly expectations of the CMF line. The decision makes Nothing\'s next affordable handset the latest casualty of what has been described as 'RAMageddon,' a market-wide surge in DRAM prices that has rattled smartphone manufacturers across the industry.",
-        "The situation illustrates the razor-thin margins that define the budget smartphone segment, where even modest increases in component costs can make an entire product line economically unviable. For consumers eagerly awaiting a new CMF device, the news means a longer wait, while the broader industry watches closely to see when memory prices will stabilize enough to allow affordable handsets to return to the market."
-      ],
-      image: "https://images.unsplash.com/photo-1672664003242-1c4dc78635d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxOb3RoaW5nJTIwQ2FuY2VscyUyMFRoaXMlMjBZZWFyJTVDfGVufDB8MHx8fDE3ODE5MzE4Nzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "The Verge",
-      url: "https://www.theverge.com/gadgets/953066/nothing-cmf-phone-delayed-ram-prices",
-      category: "Hardware"
     }
   ]
 };

@@ -1,60 +1,60 @@
 // us-politics-news-data.js
-// Auto-updated 2026-06-20 — do not edit manually
+// Auto-updated 2026-06-21 — do not edit manually
 
 var US_POLITICS_NEWS = {
-  date: "2026-06-20",
+  date: "2026-06-21",
   main: {
-    title: "Vance Becomes Face of Iran Deal Amid 2028 Presidential Speculation",
+    title: "Trump\'s Job Approval Rating Drops to 36%, a New Low, NPR/PBS News/Marist Poll Shows",
     category: "Politics",
     content: [
-      "Vice President JD Vance has emerged as the most prominent defender of the newly negotiated US-Iran agreement, fiercely pushing back against mounting criticism of the deal even as the broader geopolitical situation grows more complicated. Operating largely in Trump\'s shadow on domestic affairs, Vance has taken on a distinctly front-facing role in selling the Iran plan to skeptics both within and outside the Republican Party. His fierce public advocacy has drawn considerable attention to his political ambitions and his willingness to stake his reputation on a controversial foreign policy outcome.",
-      "The deal, which critics have characterized as a return to the prewar status quo, has faced pointed opposition from hawkish lawmakers and US allies in the region. Vance has not shied away from confrontation, going so far as to slam the Israeli government\'s reaction to the agreement — an unusually bold move that signals a willingness to break publicly with a historically close American ally. His posture reflects a calculated gamble that the deal will ultimately be seen as a diplomatic success, one that could bolster his standing ahead of a potential 2028 presidential run.",
-      "Speculation about Vance\'s long-term political ambitions has intensified in recent weeks, with observers noting that his handling of the Iran portfolio gives him a unique platform to demonstrate foreign policy leadership independent of the president. While Trump has defended the agreement in broader terms, it is Vance who has been most visible in the day-to-day political combat over its merits. That division of labor has led many analysts to view the vice president as actively cultivating a distinct political identity for what could come next.",
-      "The diplomatic situation became even more fraught when Vance was forced to cancel a planned trip to Switzerland for further talks after Israel launched deadly strikes in Lebanon, targeting Hezbollah positions. The strikes, which killed four Israeli soldiers in addition to causing significant casualties in Lebanon, have complicated the ceasefire framework embedded in the US-Iran deal. US intelligence officials have separately concluded that Israel is likely to continue its attacks in Lebanon despite the agreement\'s calls for an end to the fighting, putting the White House in a difficult position.",
-      "The political stakes for Vance personally could not be higher. If the deal holds and is seen as a diplomatic achievement, he will have earned much of the credit for its public defense; if it unravels amid continued regional conflict, his name will be closely associated with the failure. His aggressive posture — defending the deal, criticizing allies, and staying visible even when the news cycle grows turbulent — suggests a vice president who is not merely executing policy but actively shaping his political legacy. For Democrats and Republicans alike watching the 2028 horizon, Vance\'s performance on Iran is being read as a preview of the kind of candidate he intends to be."
+      "President Donald Trump\'s job approval rating has fallen to 36% according to the latest NPR/PBS News/Marist poll, marking a new low point in his presidency. The survey reflects growing dissatisfaction among the American public, with concerns about the economy cited as a primary driver of the decline. The result represents a significant political warning sign for a White House already navigating multiple foreign policy crises simultaneously.",
+      "Economic anxiety appears to be the central force pulling Trump\'s numbers downward, as many Americans express unease about the direction of the country\'s financial outlook. Polling data of this kind typically reflects accumulated public sentiment over weeks and months, suggesting the erosion of support is not tied to any single event but rather a broader pattern of discontent. For a president who once made economic performance a cornerstone of his political identity, a figure this low carries particularly sharp implications.",
+      "The drop comes at a moment when the administration is deeply engaged in high-stakes diplomacy over Iran\'s nuclear program and the status of the Strait of Hormuz, with Vice President JD Vance traveling to Switzerland for technical-level ceasefire talks. While foreign policy successes can sometimes provide a short-term boost to a president\'s standing, polls historically show that domestic economic concerns tend to outweigh international affairs in the minds of most voters. The timing of the poll\'s release puts additional pressure on the White House to demonstrate tangible wins both abroad and at home.",
+      "A 36% approval rating places Trump in historically difficult territory for a sitting president, limiting his political capital on Capitol Hill at a time when he needs congressional support for a range of domestic and foreign policy initiatives. Republican lawmakers have already shown some distance from the administration\'s Iran ceasefire framework, and weak poll numbers could embolden further dissent within the party. The White House will likely need to recalibrate its messaging strategy to address the economic concerns that appear to be driving voters away.",
+      "The NPR/PBS News/Marist poll is considered one of the more rigorous national surveys, lending its findings added credibility in political circles. Opposition Democrats are expected to seize on the numbers as momentum builds toward the 2026 midterm election cycle, where approval ratings of sitting presidents have historically served as reliable predictors of down-ballot outcomes. For Trump and his advisors, reversing this trend before the political calendar accelerates will be among the most pressing strategic challenges of the coming months.",
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/1efa/live/df12d4a0-6bb2-11f1-8546-8f19e4fe30f4.jpg",
-    source: "BBC News",
-    sourceUrl: "https://www.bbc.com/news/articles/cx23jr133lwo?at_medium=RSS&at_campaign=rss"
+    image: "https://images.unsplash.com/photo-1550531996-ff3dcede9477?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUcnVtcCU1Q3xlbnwwfDB8fHwxNzgyMDE4MTgzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    source: "NPR",
+    sourceUrl: "https://www.npr.org/2026/06/20/nx-s1-5861764/trumps-job-approval-rating-has-dropped-to-36-a-new-npr-pbs-news-marist-poll-shows"
   },
   secondary: [
     {
       id: "us1",
-      title: "Supreme Court Rules Government Cannot Ban Gun Ownership Over Marijuana Use",
-      summary: "In a unanimous decision, the Supreme Court struck down a federal law prohibiting habitual marijuana users from owning firearms, ruling in favor of a Texas man who had been prosecuted under the statute.",
+      title: "Vance Becomes Face of Iran Deal Amid 2028 Presidential Speculation",
+      summary: "Vice President JD Vance has stepped forward as the administration\'s most prominent defender of the Iran ceasefire framework, even as criticism mounts from within the Republican Party.",
       body: [
-        "The Supreme Court issued a sweeping unanimous ruling this week, finding that the federal government cannot restrict gun ownership solely on the basis of habitual marijuana use. The case centered on a Texas man who was prosecuted under a longstanding federal law that barred habitual drug users from possessing firearms, and the justices sided with him across the ideological spectrum.",
-        "The ruling carries significant legal and political implications at a time when marijuana legalization has advanced in dozens of states, creating a growing tension between state permissiveness and federal firearms law. The unanimous nature of the decision underscores how broadly the court viewed the constitutional overreach involved, and it is expected to prompt challenges to related federal statutes governing gun ownership eligibility."
+        "As the Trump administration faces mounting criticism over its Iran deal, Vice President JD Vance has emerged as its most vocal and visible champion, aggressively defending the agreement against detractors both inside and outside the GOP. His willingness to take political fire on the issue has drawn significant attention in Washington, with observers noting the strategic boldness of his stance given the deal\'s uncertain reception among Republican hawks.",
+        "Analysts point out that Vance\'s high-profile role in the Iran negotiations carries a dual political purpose — reinforcing his value to President Trump in the near term while simultaneously raising his national profile ahead of a potential 2028 presidential campaign. His fierce advocacy marks a defining moment that could either cement his reputation as a capable statesman or expose him to lasting criticism should the deal falter."
       ],
-      image: "https://images.unsplash.com/photo-1753059929873-aa8e6438bfb9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTdXByZW1lJTIwQ291cnQlMjBSdWxlcyUyMEdvdmVybm1lbnQlMjBDYW5ub3QlMjBCYW4lMjBHdW4lMjBPd25lcnNoaXAlMjBPdmVyJTIwTWFyaWp1YW5hJTIwVXNlfGVufDB8MHx8fDE3ODE5MzE3ODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "The Washington Post",
-      url: "https://www.washingtonpost.com/politics/2026/06/18/government-cant-restrict-gun-ownership-over-habitual-weed-use-supreme-court-rules/",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/1efa/live/df12d4a0-6bb2-11f1-8546-8f19e4fe30f4.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.com/news/articles/cx23jr133lwo",
       category: "Politics"
     },
     {
       id: "us2",
-      title: "Trump Offers Rare Dual Endorsement in South Carolina Governor\'s Race",
-      summary: "President Trump has endorsed both Republican candidates in the South Carolina gubernatorial runoff, a highly unusual move coming just days before voters head back to the polls.",
+      title: "Disability Groups Sound Alarm Over RFK Jr.'s New Special Education Role",
+      summary: "Advocates for disabled students are expressing serious concern after the Trump administration moved to shift special education programs under the purview of Health Secretary Robert F. Kennedy Jr.",
       body: [
-        "In a surprising political maneuver, President Trump issued endorsements for both contenders in the upcoming South Carolina Republican gubernatorial runoff, breaking from his typical practice of throwing his full weight behind a single candidate. Trump had originally backed Lieutenant Governor Pamela Evette, but the dual endorsement signals a reluctance to be on the losing side in a competitive intraparty contest.",
-        "The move is being closely watched by Republican strategists as a sign of how Trump navigates situations where his preferred candidate\'s path to victory is uncertain. By endorsing both candidates, Trump attempts to preserve his reputation as a kingmaker regardless of the outcome, though critics argue the strategy dilutes the political currency of a Trump endorsement in future races."
+        "Disability rights organizations and special education advocates are raising urgent alarms after the Trump administration announced it would transfer oversight of special education programs to the Department of Health and Human Services under Secretary Robert F. Kennedy Jr. The move has been met with fierce opposition from groups who argue that Kennedy\'s controversial public statements about autism make him a deeply inappropriate steward of programs serving millions of disabled students.",
+        "The decision represents a significant restructuring of how the federal government administers protections and services for students with disabilities, and critics warn it could undermine decades of hard-won legal safeguards. Advocates fear that Kennedy\'s ideological approach to conditions like autism could translate into policy changes that marginalize the very students these programs are designed to protect."
       ],
-      image: "https://thehill.com/wp-content/uploads/sites/2/2026/06/AP26169758825353-e1781816934116.jpg?w=900",
-      source: "The Hill",
-      url: "https://thehill.com/homenews/campaign/5932424-trump-backs-evette-wilson/",
+      image: "https://static01.nyt.com/images/2026/06/19/multimedia/19dc-rfk-eduction-photo-qczk/19dc-rfk-eduction-photo-qczk-mediumSquareAt3X.jpg",
+      source: "The New York Times",
+      url: "https://www.nytimes.com/2026/06/20/us/politics/special-education-rfk.html",
       category: "Politics"
     },
     {
       id: "us3",
-      title: "DOJ Opens Investigation Into MLB Over Bible Verse Cap Controversy During Pride Night",
-      summary: "The Justice Department has launched a probe into Major League Baseball to determine whether the league engaged in religious discrimination when it issued warnings to players who wore caps bearing Bible verses during a Pride Night game.",
+      title: "Judge Rules DOJ Can Release Biden Audio Recordings to Heritage Foundation",
+      summary: "A federal judge has cleared the Justice Department to hand over audio recordings and transcripts of former President Biden to the conservative Heritage Foundation, stemming from the special counsel investigation.",
       body: [
-        "The Department of Justice announced it is investigating Major League Baseball after the league issued warnings to three players who chose to wear caps displaying Bible verses rather than the Pride Night-themed caps encouraged by the organization. The DOJ\'s inquiry centers on whether MLB\'s actions constituted religious discrimination under federal law, marking a notable use of federal enforcement power in a sports-related civil liberties dispute.",
-        "The case has quickly become a flashpoint in the broader culture war debate around religious liberty and LGBTQ inclusion in public and commercial life. Congressional Republicans have also seized on the controversy, and the DOJ\'s decision to open a formal probe is widely seen as consistent with the current administration\'s posture of aggressively defending religious expression in institutional settings."
+        "Federal Judge Dabney Langhorne Friedrich ruled on Friday that the Justice Department may release audio recordings and transcripts of former President Joe Biden to the Heritage Foundation, denying Biden\'s attempt to block the disclosure. The judge did, however, impose a three-week delay on the release to allow an appeals court time to consider Biden\'s legal challenge before the materials are handed over.",
+        "The recordings, which reportedly date back a decade, were gathered as part of the special counsel probe into Biden\'s handling of classified documents. The ruling is a significant legal setback for the former president and is likely to reignite political debate over the scope of executive privilege and the use of special counsel investigations as tools of partisan accountability."
       ],
-      image: "https://thehill.com/wp-content/uploads/sites/2/2025/11/AP25112656817362-e1763651204497.jpg?w=900",
+      image: "https://thehill.com/wp-content/uploads/sites/2/2026/06/AP26169588229912-e1782010165512.jpg?w=900",
       source: "The Hill",
-      url: "https://thehill.com/homenews/5932463-mlb-pride-night-controversy/",
+      url: "https://thehill.com/regulation/court-battles/5932973-judge-allows-release-biden-recordings/",
       category: "Politics"
     }
   ]

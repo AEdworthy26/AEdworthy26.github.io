@@ -1,18 +1,18 @@
 // films-data.js
-// Auto-updated 2026-06-20 — do not edit manually
+// Auto-updated 2026-06-21 — do not edit manually
 
 var FILMS_DATA = {
-  date: "2026-06-20",
+  date: "2026-06-21",
   film: {
-    title: "The Match Factory Girl",
-    director: "Aki Kaurismäki",
-    year: 1990,
-    genres: ["Drama", "Dark Comedy"],
-    desc: "Aki Kaurismäki\'s deadpan Finnish masterpiece follows Iris, a mousy young woman working in a match factory, living a life of grinding routine and quiet humiliation at the hands of her indifferent family and an exploitative lover. Shot with almost no dialogue and a rigidly still camera, the film turns minimalism into a kind of devastating poetry — every small cruelty lands like a hammer blow precisely because so little is said. Kaurismäki channels Douglas Sirk and Bresson into something entirely his own: a tragicomedy of the working poor that somehow manages to be funny, bleak, and oddly tender all at once. The film\'s final act pivots into something wickedly surprising, giving its heroine a moment of agency that audiences have never quite forgotten. Lean, ruthless, and shot through with a strange warmth, it is one of the great undervalued films of European cinema.",
-    cast: ["Kati Outinen", "Elina Salo", "Vesa Vierikko"],
+    title: "All About My Mother",
+    director: "Pedro Almodóvar",
+    year: 1999,
+    genres: ["Drama", "World Cinema"],
+    desc: "After her teenage son is killed on his birthday, a Madrid nurse travels to Barcelona to find his father — a transgender woman she hasn\'t seen in years — and in doing so falls into a constellation of extraordinary, wounded women. Almodóvar conducts this story of grief and reinvention with operatic generosity, never flinching from heartbreak yet finding in every scene a tenderness that feels hard-won and true. The film moves through hospitals, theaters, and cramped apartments with the ease of someone who knows these lives intimately, drawing performances of startling emotional nakedness from Cecilia Roth, Marisa Paredes, and Antonia San Juan. It is a love letter to women who endure, to the messy redemptions of motherhood, and to the theater itself as a space where identity is always being remade. Few films of the last three decades manage to be simultaneously this melodramatic and this deeply, quietly honest.",
+    cast: ["Cecilia Roth", "Marisa Paredes", "Antonia San Juan"],
     rating: 95,
     ratingSource: "Rotten Tomatoes",
-    ratingExtra: "Cannes Film Festival Selection",
-    posterUrl: "https://upload.wikimedia.org/wikipedia/en/7/71/TheMatchFactoryGirl.jpg"
+    ratingExtra: "1 Academy Award",
+    posterUrl: "https://upload.wikimedia.org/wikipedia/en/d/d7/All_about_my_mother.jpg"
   }
 };
