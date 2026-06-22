@@ -1,60 +1,60 @@
 // tech-news-data.js
-// Auto-updated 2026-06-21 — do not edit manually
+// Auto-updated 2026-06-22 — do not edit manually
 
 var TECH_NEWS = {
-  date: "2026-06-21",
+  date: "2026-06-22",
   main: {
-    title: "Nobel Laureate John Jumper Is Leaving DeepMind for Rival Anthropic",
-    category: "Artificial Intelligence",
+    title: "The UK Will Scan Asylum-Seekers' Faces for Age Checks — Despite Knowing the Tech Is Flawed",
+    category: "Technology / AI",
     content: [
-      "In a significant shakeup for the artificial intelligence research world, Nobel laureate John Jumper has announced his departure from Google DeepMind to join rival AI company Anthropic. Jumper is best known as one of the key architects behind AlphaFold, the revolutionary protein-structure prediction system that earned him a share of the 2024 Nobel Prize in Chemistry. His move represents one of the most high-profile talent shifts in the AI industry in recent memory.",
-      "Jumper\'s decision to leave DeepMind marks a remarkable vote of confidence in Anthropic, the safety-focused AI lab founded by former OpenAI researchers. Anthropic has been positioning itself as a serious competitor in foundational AI research, and landing a scientist of Jumper\'s caliber underscores the company\'s growing appeal among top-tier researchers. The move is likely to fuel further speculation about the competitive pressures facing Google\'s AI division.",
-      "According to TechCrunch, Jumper is not the only big name currently departing Google DeepMind, suggesting the exodus may reflect broader dissatisfaction or shifting opportunities within the organization. DeepMind has long been considered one of the world\'s premier AI research institutions, making any significant talent drain a notable development. The timing raises questions about internal dynamics at a moment when the AI race among major players is intensifying.",
-      "Anthropic, for its part, has built a reputation around responsible AI development and its Claude family of large language models. Bringing in a scientist who has demonstrated the ability to translate fundamental research into real-world, Nobel-worthy breakthroughs could accelerate Anthropic\'s ambitions beyond conversational AI. Jumper\'s expertise in applying deep learning to complex scientific problems could open new avenues for Anthropic\'s research agenda.",
-      "The broader implications for the AI industry are hard to overstate. When researchers of Jumper\'s standing move between organizations, they carry with them not just expertise but perspectives on what constitutes meaningful scientific progress. As competition for AI talent continues to reach extraordinary heights, this latest move signals that no institution — not even one backed by Google\'s vast resources — can take its brightest minds for granted."
+      "The United Kingdom has announced plans to use facial recognition technology to verify the ages of asylum-seekers, pressing forward with the scheme even as internal testing has revealed significant and potentially life-altering inaccuracies in the system. The decision has sparked immediate concern among civil liberties advocates and technology researchers who argue that deploying an admittedly flawed tool in such a high-stakes context sets a deeply troubling precedent. At the heart of the controversy is the question of what level of error is acceptable when the consequences of a wrong determination can fundamentally alter a person\'s legal status and future.",
+      "Age verification using facial analysis software has long been one of the more contested applications of biometric AI. Unlike identifying a known individual against a database, estimating age from a face requires the system to make probabilistic inferences about biological characteristics that vary enormously across ethnicities, lighting conditions, and image quality. Researchers have repeatedly documented that such systems perform inconsistently across demographic groups, often with the least accurate results for the very populations — including people from regions with high asylum-seeker numbers — who would be most affected by this particular deployment.",
+      "The UK government\'s own tests reportedly showed that the technology carries a meaningful risk of misclassifying adults as minors or, more dangerously, minors as adults. Being wrongly classified as an adult can strip a young asylum-seeker of legal protections specifically designed for children, including access to specialist support services and different legal processing pathways. Advocates warn that a single erroneous scan could therefore set a vulnerable young person on a far more precarious legal and humanitarian trajectory than they would otherwise face.",
+      "Despite these documented concerns, officials appear determined to proceed, framing the technology as a practical tool to streamline a strained immigration and asylum processing system. Proponents argue that traditional age assessment methods — which often rely on physical examinations or interviews — are also imperfect and subject to their own biases and inconsistencies. However, critics counter that introducing an additional flawed layer of automated decision-making, rather than improving human-led processes, compounds the risk rather than mitigating it, and does so at a speed and scale that outpaces meaningful oversight.",
+      "The UK\'s move is being watched closely by other governments exploring similar applications of biometric technology in immigration contexts. Privacy and human rights organizations are calling for an immediate pause and an independent audit of the technology before any live deployment affecting real cases. The episode underscores a broader and urgent debate about the appropriate boundaries of AI in consequential public-sector decisions — particularly when the populations most affected by errors are among the least empowered to challenge or appeal those decisions.",
     ],
-    image: "https://images.pexels.com/photos/30839685/pexels-photo-30839685.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    source: "TechCrunch",
-    sourceUrl: "https://techcrunch.com/2026/06/20/nobel-laureate-john-jumper-is-leaving-deepmind-for-rival-anthropic/"
+    image: "https://cdn.arstechnica.net/wp-content/uploads/2026/06/GettyImages-2234043771-1152x648.jpg",
+    source: "Ars Technica",
+    sourceUrl: "https://arstechnica.com/tech-policy/2026/06/the-uk-will-scan-asylum-seekers-faces-for-age-checks-despite-knowing-the-tech-is-flawed/"
   },
   secondary: [
     {
       id: "tc1",
-      title: "Signal\'s Meredith Whittaker Warns: AI Chatbots 'Are Not Your Friends'",
-      summary: "Signal president Meredith Whittaker is urging the public to resist anthropomorphizing AI chatbots, reminding users that these systems are neither conscious nor sentient.",
+      title: "An AI Company Cleaned My NYC Apartment for Free — to Train Its Robots",
+      summary: "An AI robotics company is sending human cleaners to people\'s homes at no charge in order to collect real-world data that will train the robots it hopes will one day replace those very workers.",
       body: [
-        "In a pointed public warning, Signal president Meredith Whittaker has pushed back against the growing tendency of users to form emotional bonds with AI chatbots, stating bluntly that 'these are not your friends' and 'these are not conscious beings.' Her comments come as AI companion apps and increasingly conversational models blur the lines between tool and relationship for millions of users worldwide.",
-        "Whittaker\'s remarks highlight a growing concern among technology ethicists and privacy advocates that the design of AI chatbots — engineered to seem warm, empathetic, and responsive — may be deliberately encouraging dependency. As the head of one of the world\'s leading privacy-focused communication platforms, her voice carries particular weight in debates about how technology shapes human behavior."
+        "The unusual promotional strategy sees the company dispatching professional cleaners to New York City apartments free of cost, but the true purpose is data collection: every movement, task, and environmental interaction is recorded to build training datasets for domestic robots. It is a striking illustration of how AI and robotics companies are finding novel — and sometimes ethically complex — ways to gather the high-quality real-world data their systems require.",
+        "The approach raises significant questions about the transparency of the arrangement for both the human cleaners participating and the residents opening their homes. As robotics firms race to develop capable home-assistance machines, the lengths to which they will go to generate proprietary training data is becoming an increasingly important story in the broader AI industry."
       ],
-      image: "https://images.unsplash.com/photo-1583474884909-230dac058b63?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTaWduYWwlNUN8ZW58MHwwfHx8MTc4MjAxODI2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "TechCrunch",
-      url: "https://techcrunch.com/2026/06/20/signals-meredith-whittaker-wants-you-to-remember-that-ai-chatbots-are-not-your-friends/",
-      category: "Artificial Intelligence"
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/570f/live/e297c6a0-6af7-11f1-8546-8f19e4fe30f4.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.com/news/articles/cpwerjy20kyo?at_medium=RSS&at_campaign=rss",
+      category: "AI & Robotics"
     },
     {
       id: "tc2",
-      title: "The Atlantic Builds Searchable Database of Music Used to Train AI Models",
-      summary: "The Atlantic has made public a fully searchable database revealing the music tracks used to train AI models, uncovering datasets containing tens of millions of songs.",
+      title: "Polymarket Reportedly Paid Creators to Post Deceptive Fake-Bet Videos",
+      summary: "A Wall Street Journal investigation found that prediction market platform Polymarket paid social media creators to film fake videos of themselves placing bets and celebrating winnings that were never real.",
       body: [
-        "Atlantic reporter Alex Reisner has uncovered four datasets of music being used to train AI models and compiled them into a searchable public database, exposing the staggering scale at which copyrighted music is being ingested by AI systems. Two of the datasets are enormous, containing 12 million and 9 million tracks respectively, raising serious questions about consent and compensation for artists.",
-        "The release of this database is a landmark moment for the ongoing legal and ethical battle between the music industry and AI developers, giving artists and rights holders a concrete tool to determine whether their work was used without permission. It is likely to intensify calls for regulatory action and may bolster pending lawsuits against AI companies that have relied on scraped audio data for model training."
+        "According to the investigation, more than 1,100 deceptive clips were identified, many filmed on near-perfect replica copies of the Polymarket website, with fabricated trades and payouts presented as genuine to viewers. Creators confirmed they were paid by the company to produce the content without disclosing the sponsorship arrangement, raising serious questions about platform integrity and consumer deception.",
+        "The revelations are a significant blow to Polymarket\'s credibility at a time when prediction markets have been gaining mainstream attention as alternative information aggregators. Regulators and platform watchdogs are likely to scrutinize the practice closely, as undisclosed paid promotion of financial products carries substantial legal risk."
       ],
-      image: "https://i.guim.co.uk/img/media/b3962d03da5e05ce790c02cf6de8f24dc3b59578/599_0_2835_2268/master/2835.jpg?width=1200&quality=85&auto=format&fit=max&s=8336ba341e8bca9208af6edd22e89962",
-      source: "The Verge",
-      url: "https://www.theverge.com/ai-artificial-intelligence/953183/the-atlantic-searchable-database-music-ai-training-data",
-      category: "Artificial Intelligence"
+      image: "https://images.pexels.com/photos/7111608/pexels-photo-7111608.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      source: "TechCrunch",
+      url: "https://techcrunch.com/2026/06/21/polymarket-reportedly-paid-creators-to-post-deceptive-videos-about-fake-bets/",
+      category: "Tech Industry"
     },
     {
       id: "tc3",
-      title: "A Bold Satellite Rescue Mission Came Together in Record Time — But Will It Work?",
-      summary: "A remarkably fast-assembled satellite rescue mission is heading toward a stricken spacecraft, with engineers calling the effort itself already a success regardless of outcome.",
+      title: "Rocket Report: Blue Origin Rebuilds Launch Pad as Relativity Space Eyes Mars",
+      summary: "The latest rocket industry roundup covers reconstruction work beginning at a Blue Origin launch facility and Relativity Space setting its sights on Mars missions.",
       body: [
-        "In what engineers are describing as an unprecedented feat of rapid mission planning, a bold satellite rescue operation has been assembled in record time and is now underway, targeting a spacecraft in need of recovery. One mission insider told Ars Technica, 'I consider this a success already, just from the fact that we\'re even going to try this,' capturing the audacious spirit behind the effort.",
-        "The mission highlights both the growing sophistication of the commercial and governmental space sectors and the increasing importance of on-orbit servicing capabilities as more satellites are launched into increasingly crowded orbital environments. Whether or not the rescue ultimately succeeds, the speed with which the operation was conceived and executed sets a new benchmark for emergency space operations."
+        "Blue Origin has begun the process of rebuilding one of its launch pads following damage, signaling the company\'s continued commitment to its launch cadence even as it works through infrastructure setbacks. Meanwhile, Relativity Space has made headlines by targeting Mars as a long-term destination, an ambitious goal for a company still establishing itself in the competitive commercial launch market.",
+        "The report also notes that a French launch startup is abandoning its rocket\'s name, apparently due to a trademark dispute — a reminder of the many non-engineering challenges facing the crowded new-space sector. Taken together, the week\'s developments paint a picture of a launch industry that is simultaneously expanding its ambitions and navigating very practical operational hurdles."
       ],
-      image: "https://cdn.arstechnica.net/wp-content/uploads/2026/06/Testing-Link-Vibration-tests-2_4000x2600-1152x648.jpg",
+      image: "https://cdn.arstechnica.net/wp-content/uploads/2026/06/relativity-1152x648.jpg",
       source: "Ars Technica",
-      url: "https://arstechnica.com/space/2026/06/a-bold-satellite-rescue-mission-came-together-in-record-time-but-will-it-work/",
+      url: "https://arstechnica.com/space/2026/06/rocket-report-rebuild-begins-at-blue-origin-launch-pad-relativity-targets-mars/",
       category: "Space"
     }
   ]

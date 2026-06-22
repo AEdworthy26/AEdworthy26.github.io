@@ -1,60 +1,60 @@
 // uk-politics-news-data.js
-// Auto-updated 2026-06-21 — do not edit manually
+// Auto-updated 2026-06-22 — do not edit manually
 
 var UK_POLITICS_NEWS = {
-  date: "2026-06-21",
+  date: "2026-06-22",
   main: {
-    title: "PM Under Pressure From Labour MPs and Ministers to Set Timetable for Exit",
+    title: "Starmer Expected to Announce Exit Plan as Burnham Prepares for Downing Street",
     category: "Politics",
     content: [
-      "Sir Keir Starmer is facing an intensifying crisis at the heart of his government, with Labour MPs and senior ministers piling on pressure for him to set out a clear timetable for his departure from Downing Street. The BBC has been told that the Transport Secretary is among those advising the Prime Minister that the time has come to announce when he will step down. With over 100 Labour MPs reportedly calling for him to quit, the scale of the rebellion inside his own party has reached a point that many observers believe is now irrecoverable.",
-      "The pressure follows Andy Burnham\'s decisive victory in the Makerfield by-election, in which the outgoing Greater Manchester mayor held off a strong challenge from Reform UK, winning by more than 9,000 votes. The result has been widely interpreted not merely as a personal triumph for Burnham but as a verdict on Starmer\'s leadership — and a signal to the wider parliamentary party that the moment for change has arrived. Burnham himself declared that Labour had a final chance to change course, framing the result as a mandate for a new direction.",
-      "Senior Labour figures have reportedly given Starmer a deadline of Tuesday to announce a resignation timetable, or risk what allies are describing as a public humiliation. A senior Labour peer has added their voice to the chorus, stating bluntly that Starmer 'has no authority and must go now.' Cabinet loyalists are said to have privately told the Prime Minister he has only a narrow window in which to act on his own terms, before events overtake him entirely.",
-      "Downing Street has pushed back against the reports, denying that Starmer is preparing to set out a resignation timetable on Monday. However, the denials have done little to quell the speculation or silence the growing number of voices inside the parliamentary Labour Party. Political editor and commentator Laura Kuenssberg has written that talk of Starmer staying on to fight any leadership challenge is 'fading — fast', reflecting a dramatic shift in the mood among those who until recently were urging him to hold firm.",
-      "Andy Burnham\'s allies are said to be increasingly confident of what they are calling a 'coronation-style' transfer of power, with the number of MPs backing him for the Labour leadership surging in the days since the Makerfield result. Burnham has sought to reassure the markets and the party\'s more centrist wing by insisting he will stick to the government\'s fiscal rules. The coming days are likely to prove decisive for Starmer\'s future and for the question of who will lead the Labour Party — and potentially the country — into the next phase of British political life."
+      "Keir Starmer is expected to announce a timetable for his departure as Prime Minister on Monday morning, clearing the way for Andy Burnham to assume the role without a formal leadership contest by the autumn. Cabinet ministers have indicated that Starmer will set out his intentions outside No 10 Downing Street, beginning a process that would represent the third change of prime minister in four years. The announcement, if it comes as anticipated, would bring to a close a turbulent period for the Labour government that has seen its poll ratings collapse and its parliamentary support fracture.",
+      "The expected resignation follows a seismic by-election result in Makerfield, where Andy Burnham — the outgoing Greater Manchester mayor — held off a strong challenge from Reform UK, defeating them by more than 9,000 votes. Burnham\'s commanding performance in the contest was widely interpreted as a personal mandate and a demonstration that Labour\'s fortunes could be revived under fresh leadership. The result sent shockwaves through Westminster, accelerating what had already been growing pressure on Starmer from within his own cabinet and parliamentary party.",
+      "BBC political editor Laura Kuenssberg has reported that talk of Starmer staying on to fight is fading fast, with support for the prime minister described as evaporating in the wake of Burnham\'s victory. Senior figures within the Labour Party, including Foreign Secretary Yvette Cooper — the most senior minister to do so — have reportedly told Starmer that he must go. Some MPs have warned that if Starmer does not set out a clear departure timetable, he may face pressure to leave as soon as mid-July.",
+      "Tech Secretary Peter Kyle acknowledged that the prime minister is discussing what he described as the 'political realities' of his position, language widely taken as confirmation that the question is no longer whether Starmer will go, but when. An autumn departure is understood to be the most likely scenario, potentially allowing Burnham to take over as prime minister by September without the need for a full internal party election. Burnham, for his part, has already begun signalling his policy priorities, insisting he will stick to existing fiscal rules while allies have published an ambitious blueprint for reversing decades of privatisation.",
+      "The BBC\'s political editor Chris Mason has noted that all eyes are on Downing Street as the nation waits for the prime minister to speak and set out his plans. Harriet Harman, the former Labour grandee, said the herd is 'not just moving' against Starmer — 'it\'s stampeding'. If Starmer does announce his exit on Monday, he will join a growing list of recent prime ministers whose tenures were cut short by political turbulence, leaving a Labour Party hopeful that Burnham can provide the reset it believes it urgently needs ahead of the next general election.",
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/ecc6/live/b618c600-6c01-11f1-817c-d96159ef580f.jpg",
-    source: "BBC News",
-    sourceUrl: "https://www.bbc.com/news/articles/cqx1ev0wn87o?at_medium=RSS&at_campaign=rss"
+    image: "https://i.guim.co.uk/img/media/237144a6371cf04ab8cb9aaf8aa63d17ee3328cb/0_0_5000_4000/master/5000.jpg?width=1200&quality=85&auto=format&fit=max&s=3f45e3bedd6a47871a2a997ce36307f0",
+    source: "The Guardian",
+    sourceUrl: "https://www.theguardian.com/politics/2026/jun/21/keir-starmer-expected-exit-plan-clear-way-andy-burnham-become-pm"
   },
   secondary: [
     {
       id: "uk1",
-      title: "Burnham Allies Confident of No 10 'Coronation' After Surge in Backers",
-      summary: "Andy Burnham\'s team are increasingly confident he will take power in a coronation-style handover after a wave of Labour MPs declared their support following his Makerfield by-election victory.",
+      title: "Burnham Says Labour Has 'Final Chance' to Change After Makerfield By-Election Win",
+      summary: "Andy Burnham declared Labour has one last opportunity to reform itself after his decisive by-election victory over Reform UK in Makerfield.",
       body: [
-        "Allies of Andy Burnham say the number of MPs backing him for the Labour leadership has surged significantly in the days since his by-election win, with his team having spent recent days actively enlisting the support of MPs and ministers. Some within the party still want Burnham to face the scrutiny of a contested leadership race, but the momentum is firmly moving in the direction of an uncontested transfer of power.",
-        "A coronation outcome would mark a swift and historic transition, potentially delivering a new Prime Minister without a prolonged internal party battle. Burnham has sought to project stability, pledging to honour the government\'s fiscal rules and calling for a 'new path for Britain' that nonetheless reassures those concerned about economic credibility."
+        "Andy Burnham won the Makerfield by-election, holding off a challenge from Reform UK by more than 9,000 votes in what has been widely seen as a personal triumph for the outgoing Greater Manchester mayor. Speaking after the result, Burnham issued a stark warning that Labour must use this moment as a genuine opportunity to change course, describing it as the party\'s final chance to reconnect with voters.",
+        "The result has dramatically shifted the political landscape in Westminster, with Burnham\'s victory providing the catalyst for mounting pressure on Prime Minister Keir Starmer to announce his departure. The by-election was viewed as a crucial test of whether Labour could resist the Reform UK surge in its traditional heartlands."
       ],
-      image: "https://i.guim.co.uk/img/media/d834b182edad7eea25d77445d4de6aeff5314b13/880_0_6990_5592/master/6990.jpg?width=1200&quality=85&auto=format&fit=max&s=5aa0330b15401e95d567b6c8ad1f128d",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/politics/2026/jun/20/burnham-allies-confident-no-10-coronation-after-surge-backers-labour-leadership",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/8083/live/a61e62f0-6be8-11f1-8546-8f19e4fe30f4.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.com/news/articles/c4gy72kmg1mo?at_medium=RSS&at_campaign=rss",
       category: "Politics"
     },
     {
       id: "uk2",
-      title: "Harriet Harman: 'Herd Isn\'t Just Moving, It\'s Stampeding' Against Starmer",
-      summary: "Senior Labour figure Harriet Harman has declared that Andy Burnham will become Prime Minister as the mood against Keir Starmer inside the party has become a full-blown stampede.",
+      title: "Farage Blames Makerfield Defeat on Anti-Starmer Protest Votes",
+      summary: "Reform UK leader Nigel Farage expressed disappointment at his party\'s failure to win Makerfield, attributing the result to voters motivated more by opposition to Starmer than genuine support for Labour.",
       body: [
-        "Speaking to Sky News, Harriet Harman used striking language to describe the collapse of support for the Prime Minister, saying the parliamentary herd was not merely moving against Starmer but 'stampeding'. Her intervention carries particular weight given her long-standing status as one of Labour\'s most senior and respected grandees.",
-        "Harman\'s comments are part of a wider pattern of Labour heavyweights breaking cover to call for change, with former Cabinet minister Charlie Falconer also making what political observers described as devastating remarks about Starmer\'s loss of authority. Together, these interventions from figures who would previously have stayed neutral or supportive signal that the Prime Minister\'s position has become untenable in the eyes of much of the party establishment."
+        "Nigel Farage said he was 'disappointed' with Reform UK\'s performance in the Makerfield by-election, arguing that the party\'s defeat was driven by voters who backed Labour not out of enthusiasm for the party but as a vehicle for expressing discontent with Keir Starmer\'s leadership. The Reform leader\'s comments suggested he viewed the result as an incomplete picture of his party\'s actual support in the region.",
+        "Farage\'s attempt to reframe the defeat reflects the broader challenge facing Reform UK, which had been widely expected to mount a serious challenge in the constituency. The Makerfield result will nonetheless be scrutinised closely as an indicator of whether the Reform surge can be contained in Labour\'s traditional northern strongholds."
       ],
-      image: "https://images.pexels.com/photos/20802445/pexels-photo-20802445.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      source: "Sky News",
-      url: "https://news.sky.com/story/burnham-going-to-be-pm-as-herd-is-stampeding-against-starmer-says-harriet-harman-13555857",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/ea2e/live/0c5cbe50-6bc5-11f1-a417-cba5aab91344.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.com/news/articles/cvgqvj8dkz7o?at_medium=RSS&at_campaign=rss",
       category: "Politics"
     },
     {
       id: "uk3",
-      title: "Kemi Badenoch Masterminded a Quiet Tory Victory in Aberdeen South By-Election",
-      summary: "While national attention was fixed on Makerfield, the Conservatives pulled off a surprise by-election win in Aberdeen South in what is being described as a carefully planned operation orchestrated by Tory leader Kemi Badenoch.",
+      title: "Burnham Ally Unveils Ambitious Plan to Reverse Decades of Privatisation",
+      summary: "A policy blueprint associated with Andy Burnham\'s allies sets out plans for the state to regain control of failing utilities, in a fleshing out of the so-called 'Manchesterism' agenda.",
       body: [
-        "With the political world focused on the drama unfolding in Makerfield and its implications for Keir Starmer\'s future, the Conservatives were quietly working to secure a victory in Aberdeen South that many had not seen coming. Kemi Badenoch\'s team is said to have deliberately kept a low public profile around the contest, hoping to avoid scrutiny while maximising their chances of an upset result.",
-        "The win provides a much-needed boost for the Conservative Party at a time when it has struggled to assert itself as the primary opposition force against a resurgent Reform UK. For Badenoch, the result offers proof that the Tories retain the ability to win seats and compete effectively when strategic discipline is applied, even in the shadow of a dominant news cycle elsewhere."
+        "A new policy paper linked to Andy Burnham\'s allies has outlined an ambitious programme to reverse 40 years of privatisation, envisaging the state taking over failing utilities through a mechanism of 'bonds for shares' and the creation of state competitors to private providers. The document, described as a blueprint for 'Manchesterism', argues that a Burnham-led government should make life more affordable by returning control of essential services to public hands.",
+        "The publication of the paper signals that Burnham\'s allies are already thinking ambitiously about the policy direction of a potential new administration, even as the formal transition of power has yet to begin. The plans are likely to prove both a rallying point for Labour\'s left and a source of scrutiny from those who will question their economic implications and fiscal compatibility."
       ],
-      image: "https://static.independent.co.uk/2026/06/19/14/19135537-59909c96-324f-4a18-b58d-cc7e7e13d6c4.jpg?width=1200&auto=webp&crop=3%3A2",
-      source: "The Independent",
-      url: "https://www.independent.co.uk/news/uk/politics/kemi-badernoch-tories-aberdeen-south-byelection-b2999611.html",
+      image: "https://i.guim.co.uk/img/media/2ef361453206d43d0710fddd27c3ed07620c5b41/1044_91_4401_3523/master/4401.jpg?width=1200&quality=85&auto=format&fit=max&s=0bb946944cf28a87c369ebb67b452a0c",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/politics/2026/jun/21/burnham-ally-to-unveil-ambitious-plan-to-reverse-decades-of-privatisation",
       category: "Politics"
     }
   ]

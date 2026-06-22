@@ -1,60 +1,60 @@
 // us-politics-news-data.js
-// Auto-updated 2026-06-21 — do not edit manually
+// Auto-updated 2026-06-22 — do not edit manually
 
 var US_POLITICS_NEWS = {
-  date: "2026-06-21",
+  date: "2026-06-22",
   main: {
-    title: "Trump\'s Job Approval Rating Drops to 36%, a New Low, NPR/PBS News/Marist Poll Shows",
+    title: "How Trump\'s Fragile Agreement With Iran Is Shaping the Midterms",
     category: "Politics",
     content: [
-      "President Donald Trump\'s job approval rating has fallen to 36% according to the latest NPR/PBS News/Marist poll, marking a new low point in his presidency. The survey reflects growing dissatisfaction among the American public, with concerns about the economy cited as a primary driver of the decline. The result represents a significant political warning sign for a White House already navigating multiple foreign policy crises simultaneously.",
-      "Economic anxiety appears to be the central force pulling Trump\'s numbers downward, as many Americans express unease about the direction of the country\'s financial outlook. Polling data of this kind typically reflects accumulated public sentiment over weeks and months, suggesting the erosion of support is not tied to any single event but rather a broader pattern of discontent. For a president who once made economic performance a cornerstone of his political identity, a figure this low carries particularly sharp implications.",
-      "The drop comes at a moment when the administration is deeply engaged in high-stakes diplomacy over Iran\'s nuclear program and the status of the Strait of Hormuz, with Vice President JD Vance traveling to Switzerland for technical-level ceasefire talks. While foreign policy successes can sometimes provide a short-term boost to a president\'s standing, polls historically show that domestic economic concerns tend to outweigh international affairs in the minds of most voters. The timing of the poll\'s release puts additional pressure on the White House to demonstrate tangible wins both abroad and at home.",
-      "A 36% approval rating places Trump in historically difficult territory for a sitting president, limiting his political capital on Capitol Hill at a time when he needs congressional support for a range of domestic and foreign policy initiatives. Republican lawmakers have already shown some distance from the administration\'s Iran ceasefire framework, and weak poll numbers could embolden further dissent within the party. The White House will likely need to recalibrate its messaging strategy to address the economic concerns that appear to be driving voters away.",
-      "The NPR/PBS News/Marist poll is considered one of the more rigorous national surveys, lending its findings added credibility in political circles. Opposition Democrats are expected to seize on the numbers as momentum builds toward the 2026 midterm election cycle, where approval ratings of sitting presidents have historically served as reliable predictors of down-ballot outcomes. For Trump and his advisors, reversing this trend before the political calendar accelerates will be among the most pressing strategic challenges of the coming months.",
+      "As midterm elections draw closer, the tentative U.S.-Iran memorandum of understanding is emerging as one of the defining fault lines in American domestic politics. Democrats have seized on the agreement — and the months of conflict that preceded it — to argue that President Trump launched an economically painful war that produced no meaningful positive outcome for the United States. The political fallout from the confrontation is now being felt across the country, from gas pumps to farm fields, as voters begin to assess who they hold responsible.",
+      "Republicans, meanwhile, are notably divided in their response to the deal. While many in the party are expressing cautious relief as gas prices begin to fall following the cessation of hostilities, others are deeply skeptical of what the agreement actually delivers. Former Vice President Mike Pence publicly derided the MOU as 'a plan to make a plan,' arguing in a Wall Street Journal op-ed that while Trump acted decisively in launching a military campaign against Iran, the resulting diplomatic framework lacks substance and concrete commitments.",
+      "A new CBS News/YouGov poll underscores the political peril facing the White House. The survey found that more than a third of Americans — 37 percent — believe the memorandum of understanding is better for Iran than for the United States. That perception, if it hardens before November, could complicate Republican efforts to campaign on the president\'s foreign policy record, particularly in competitive districts where economic anxieties are already running high.",
+      "The economic dimension of the Iran conflict is proving especially damaging among some of Trump\'s most loyal constituencies. Farmers, who have faced cash-flow crises throughout the period of hostilities, report that the deal to end the fighting has come too late to prevent serious financial harm. For rural communities that backed Trump in large numbers, the combination of disrupted exports, spiking fuel costs, and market uncertainty has left a bitter residue that campaign messaging may struggle to overcome in the months ahead.",
+      "Adding further turbulence to the political picture, Trump on Sunday threatened to 'hit Iran very hard again' even as Vice President Vance was attending talks with Iranian officials in Switzerland — a striking display of internal messaging tension within the administration. The president also lashed out at the New York Times, calling its coverage of the Iran situation 'TREASONOUS' and threatening to add its reporting to an existing lawsuit against the publication. Together, these developments paint a portrait of an administration still navigating the political consequences of a conflict that has reshaped the landscape heading into what promises to be a volatile midterm cycle.",
     ],
-    image: "https://images.unsplash.com/photo-1550531996-ff3dcede9477?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUcnVtcCU1Q3xlbnwwfDB8fHwxNzgyMDE4MTgzfDA&ixlib=rb-4.1.0&q=80&w=1080",
-    source: "NPR",
-    sourceUrl: "https://www.npr.org/2026/06/20/nx-s1-5861764/trumps-job-approval-rating-has-dropped-to-36-a-new-npr-pbs-news-marist-poll-shows"
+    image: "https://images.unsplash.com/photo-1550531996-ff3dcede9477?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxIb3clMjBUcnVtcCU1Q3xlbnwwfDB8fHwxNzgyMTA0NTgyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    source: "The New York Times",
+    sourceUrl: "https://www.nytimes.com/2026/06/21/us/politics/trump-iran-agreement-midterms.html"
   },
   secondary: [
     {
       id: "us1",
-      title: "Vance Becomes Face of Iran Deal Amid 2028 Presidential Speculation",
-      summary: "Vice President JD Vance has stepped forward as the administration\'s most prominent defender of the Iran ceasefire framework, even as criticism mounts from within the Republican Party.",
+      title: "Pence Rips Trump\'s Iran Deal as 'A Plan to Make a Plan'",
+      summary: "Former Vice President Mike Pence publicly criticized President Trump\'s tentative agreement with Iran, calling it a vague and insubstantial framework that fails to deliver real results.",
       body: [
-        "As the Trump administration faces mounting criticism over its Iran deal, Vice President JD Vance has emerged as its most vocal and visible champion, aggressively defending the agreement against detractors both inside and outside the GOP. His willingness to take political fire on the issue has drawn significant attention in Washington, with observers noting the strategic boldness of his stance given the deal\'s uncertain reception among Republican hawks.",
-        "Analysts point out that Vance\'s high-profile role in the Iran negotiations carries a dual political purpose — reinforcing his value to President Trump in the near term while simultaneously raising his national profile ahead of a potential 2028 presidential campaign. His fierce advocacy marks a defining moment that could either cement his reputation as a capable statesman or expose him to lasting criticism should the deal falter."
+        "In a Wall Street Journal op-ed, Pence acknowledged that Trump acted decisively in launching a military campaign against Iran, but argued that the resulting diplomatic memorandum of understanding amounts to little more than a promise to negotiate further. The criticism from within Trump\'s own political orbit signals the degree to which the Iran deal is fracturing Republican unity ahead of the midterms.",
+        "Pence\'s rebuke is particularly notable given his historical loyalty to Trump and his own ambitions within the Republican Party. By breaking publicly with the administration on such a high-profile foreign policy matter, Pence is positioning himself as a voice for a more hawkish wing of the GOP that views the MOU with deep suspicion."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/1efa/live/df12d4a0-6bb2-11f1-8546-8f19e4fe30f4.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/cx23jr133lwo",
+      image: "https://images.unsplash.com/photo-1550531996-ff3dcede9477?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxQZW5jZSUyMFJpcHMlMjBUcnVtcCU1Q3xlbnwwfDB8fHwxNzgyMTA0NTgyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "The Hill",
+      url: "https://thehill.com/homenews/administration/5933451-pence-criticizes-trump-iran-deal/",
       category: "Politics"
     },
     {
       id: "us2",
-      title: "Disability Groups Sound Alarm Over RFK Jr.'s New Special Education Role",
-      summary: "Advocates for disabled students are expressing serious concern after the Trump administration moved to shift special education programs under the purview of Health Secretary Robert F. Kennedy Jr.",
+      title: "Trump Threatens New York Times Over Iran Coverage, Calls Reporting 'Treasonous'",
+      summary: "President Trump escalated his attacks on the press Sunday, threatening to add New York Times Iran coverage to an existing lawsuit and labeling the newspaper\'s journalism treasonous.",
       body: [
-        "Disability rights organizations and special education advocates are raising urgent alarms after the Trump administration announced it would transfer oversight of special education programs to the Department of Health and Human Services under Secretary Robert F. Kennedy Jr. The move has been met with fierce opposition from groups who argue that Kennedy\'s controversial public statements about autism make him a deeply inappropriate steward of programs serving millions of disabled students.",
-        "The decision represents a significant restructuring of how the federal government administers protections and services for students with disabilities, and critics warn it could undermine decades of hard-won legal safeguards. Advocates fear that Kennedy\'s ideological approach to conditions like autism could translate into policy changes that marginalize the very students these programs are designed to protect."
+        "Trump took to Truth Social to slam the New York Times after the outlet reported that little had fundamentally changed following four months of war between the U.S. and Iran. The president characterized the reporting as 'TREASONOUS' and said the article would be incorporated into his ongoing legal action against the publication.",
+        "The renewed assault on the Times reflects the administration\'s sensitivity to narratives that undercut its portrayal of the Iran conflict as a success. The threat of legal action against a major news organization over its political coverage raises fresh concerns among press freedom advocates about the administration\'s posture toward critical journalism."
       ],
-      image: "https://static01.nyt.com/images/2026/06/19/multimedia/19dc-rfk-eduction-photo-qczk/19dc-rfk-eduction-photo-qczk-mediumSquareAt3X.jpg",
-      source: "The New York Times",
-      url: "https://www.nytimes.com/2026/06/20/us/politics/special-education-rfk.html",
+      image: "https://thehill.com/wp-content/uploads/sites/2/2025/09/donald-trump-nyt-09.16-e1758027214633.png?w=900",
+      source: "The Hill",
+      url: "https://thehill.com/homenews/administration/5933617-trump-slams-new-york-times/",
       category: "Politics"
     },
     {
       id: "us3",
-      title: "Judge Rules DOJ Can Release Biden Audio Recordings to Heritage Foundation",
-      summary: "A federal judge has cleared the Justice Department to hand over audio recordings and transcripts of former President Biden to the conservative Heritage Foundation, stemming from the special counsel investigation.",
+      title: "Trump Claims Vandals Damaged D.C. Reflecting Pool, Vows to Drain It Again",
+      summary: "President Trump alleged on Truth Social that vandals slashed the lining of the newly renovated Washington Reflecting Pool and poured chemicals into the water, though he provided no evidence for the claims.",
       body: [
-        "Federal Judge Dabney Langhorne Friedrich ruled on Friday that the Justice Department may release audio recordings and transcripts of former President Joe Biden to the Heritage Foundation, denying Biden\'s attempt to block the disclosure. The judge did, however, impose a three-week delay on the release to allow an appeals court time to consider Biden\'s legal challenge before the materials are handed over.",
-        "The recordings, which reportedly date back a decade, were gathered as part of the special counsel probe into Biden\'s handling of classified documents. The ruling is a significant legal setback for the former president and is likely to reignite political debate over the scope of executive privilege and the use of special counsel investigations as tools of partisan accountability."
+        "Trump announced that arrests had been made in connection with the alleged vandalism of the Reflecting Pool, which had recently been refilled after renovation work, but offered no supporting documentation or official statements from law enforcement. A former Olympian who was arrested at the site, Davey Hearn, denied wrongdoing, saying he was simply touching fresh paint out of curiosity and did not alter or damage anything.",
+        "The episode quickly became a flashpoint in the broader culture war dynamic that has surrounded Trump\'s renovation and rebranding of prominent Washington landmarks. The president\'s unsubstantiated social media claims drew scrutiny from critics who noted the absence of corroborating evidence even as the story dominated a news cycle."
       ],
-      image: "https://thehill.com/wp-content/uploads/sites/2/2026/06/AP26169588229912-e1782010165512.jpg?w=900",
-      source: "The Hill",
-      url: "https://thehill.com/regulation/court-battles/5932973-judge-allows-release-biden-recordings/",
+      image: "https://images.unsplash.com/photo-1569285645462-a3f9c6332d56?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUcnVtcCUyMENsYWltcyUyMFZhbmRhbHMlMjBEYW1hZ2VkJTIwRC5DLiUyMFJlZmxlY3RpbmclMjBQb29sJTJDJTIwVm93cyUyMHRvJTIwRHJhaW4lMjBJdCUyMEFnYWlufGVufDB8MHx8fDE3ODIxMDQ1ODN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "NPR",
+      url: "https://www.npr.org/2026/06/21/nx-s1-5865636/trump-reflecting-pool-dc-vandals-drain-green",
       category: "Politics"
     }
   ]

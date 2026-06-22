@@ -1,10 +1,11 @@
 // quiz-data.js
-// Auto-updated 2026-06-21 — do not edit manually
+// Auto-updated 2026-06-22 — do not edit manually
 
 window.QUIZ_DATA = {
-  date: '2026-06-21',
-  category: 'Sport',
-  question: 'At the 1986 FIFA World Cup in Mexico, which country did England face in the quarter-finals — the match now infamous for Diego Maradona\'s "Hand of God" goal — and what was the final score?',
-  answer: 'Argentina, who won 2–1.',
-  funFact: 'Maradona scored both Argentine goals in that match: the controversial handball opener and what is widely considered the greatest individual goal ever scored, where he dribbled from his own half past five England players before slotting home. When asked about the first goal after the match, Maradona famously attributed it to "a little with the head of Maradona and a little with the hand of God."'
+  date: '2026-06-22',
+  category: 'Music',
+  question: 'Which American rock band took their name from a character in the 1965 novel "Sometimes a Great Notion" by Ken Kesey, and went on to score a massive 1994 hit with the song "Creep" — wait, no. Which band released the bestselling album "Bat Out of Hell" in 1977, and who wrote the songs on it?',
+  question: 'Which songwriter wrote all the songs on Meat Loaf\'s 1977 album "Bat Out of Hell" — one of the bestselling albums in history — despite not being the one performing them?',
+  answer: 'Jim Steinman wrote all the songs on "Bat Out of Hell."',
+  funFact: '"Bat Out of Hell" was famously rejected by almost every major record label before finally being released, and it spent over 500 weeks on the UK albums chart across various runs. Jim Steinman\'s operatic, theatrical style defined the record, yet Meat Loaf took most of the public credit — Steinman later sued to reclaim the rights to the Bat Out of Hell name.'
 };

@@ -1,18 +1,18 @@
 // films-data.js
-// Auto-updated 2026-06-21 — do not edit manually
+// Auto-updated 2026-06-22 — do not edit manually
 
 var FILMS_DATA = {
-  date: "2026-06-21",
+  date: "2026-06-22",
   film: {
-    title: "All About My Mother",
-    director: "Pedro Almodóvar",
-    year: 1999,
-    genres: ["Drama", "World Cinema"],
-    desc: "After her teenage son is killed on his birthday, a Madrid nurse travels to Barcelona to find his father — a transgender woman she hasn\'t seen in years — and in doing so falls into a constellation of extraordinary, wounded women. Almodóvar conducts this story of grief and reinvention with operatic generosity, never flinching from heartbreak yet finding in every scene a tenderness that feels hard-won and true. The film moves through hospitals, theaters, and cramped apartments with the ease of someone who knows these lives intimately, drawing performances of startling emotional nakedness from Cecilia Roth, Marisa Paredes, and Antonia San Juan. It is a love letter to women who endure, to the messy redemptions of motherhood, and to the theater itself as a space where identity is always being remade. Few films of the last three decades manage to be simultaneously this melodramatic and this deeply, quietly honest.",
-    cast: ["Cecilia Roth", "Marisa Paredes", "Antonia San Juan"],
-    rating: 95,
+    title: "The Heartbreak Kid",
+    director: "Elaine May",
+    year: 1972,
+    genres: ["Comedy", "Romance"],
+    desc: "Elaine May\'s savage romantic comedy follows a newlywed who becomes infatuated with a golden California girl during his honeymoon, ruthlessly abandoning his perfectly decent new wife in pursuit of an impossible ideal. Charles Grodin delivers one of the great comic performances of the 1970s — a man of breathtaking self-delusion whose charming persistence curdles into something genuinely unsettling. The film is wickedly funny and deeply uncomfortable in equal measure, skewering American romantic mythology with a precision that feels almost surgical. Neil Simon adapted Bruce Jay Friedman\'s story, but it is May\'s cool, unsparing direction that transforms it into something far darker than a conventional comedy about marrying the wrong person. Decades on, it remains one of the most honest — and quietly brutal — films ever made about desire, fantasy, and the stories men tell themselves.",
+    cast: ["Charles Grodin", "Cybill Shepherd", "Jeannie Berlin"],
+    rating: 94,
     ratingSource: "Rotten Tomatoes",
-    ratingExtra: "1 Academy Award",
-    posterUrl: "https://upload.wikimedia.org/wikipedia/en/d/d7/All_about_my_mother.jpg"
+    ratingExtra: "2 Academy Award nominations",
+    posterUrl: "https://upload.wikimedia.org/wikipedia/en/f/f2/The_Heartbreak_Kid_%281972_film%29.jpg"
   }
 };

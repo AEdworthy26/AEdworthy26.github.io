@@ -1,19 +1,19 @@
 // reads-data.js
-// Auto-updated 2026-06-21 — do not edit manually
+// Auto-updated 2026-06-22 — do not edit manually
 
 var READS_DATA = {
-  date: "2026-06-21",
+  date: "2026-06-22",
   book: {
-    title: "The Remains of the Day",
-    author: "Kazuo Ishiguro",
-    year: 1989,
-    genres: ["Literary Fiction", "Character Study", "British Fiction"],
-    desc: "Stevens, the consummate English butler, embarks on a rare motoring holiday through the English countryside in the 1950s, and as the miles accumulate so do his careful, measured reflections on a life spent in service — on dignity, on duty, and on the choices he made that can never now be unmade. Ishiguro\'s prose is a masterpiece of controlled irony: Stevens believes he is narrating a story of professional pride and loyalty, but the reader sees, page by page, the quiet catastrophe of a man who suppressed everything human in himself in service of an ideal. The novel\'s emotional devastation arrives not in dramatic confrontation but in the steady, achingly polite accumulation of half-acknowledged regret. It won the Booker Prize and is widely considered one of the finest English-language novels of the twentieth century, yet it rewards rereading in ways that few books do.",
-    whyRead: "With the longest days of the year upon us — time stretched out, light lingering — there is no better moment to sit with a book that asks, quietly and unforgettably, what we have done with the time we were given.",
-    rating: 4.2,
+    title: "The Vegetarian",
+    author: "Han Kang",
+    year: 2007,
+    genres: ["Literary Fiction", "Psychological Fiction", "Translated Fiction"],
+    desc: "Han Kang\'s haunting triptych follows a seemingly ordinary South Korean woman who, after a violent dream, stops eating meat — and through this quiet act of refusal, unravels everything her family, husband, and society have projected onto her body and selfhood. Told across three perspectives that spiral deeper into obsession, desire, and mental collapse, the novel is as visceral as it is philosophically rich, exploring what it means to assert autonomy when the world treats a woman\'s body as communal property. Kang\'s prose — spare and dreamlike in Deborah Smith\'s translation — carries an almost unbearable tension between beauty and dread. It won the International Booker Prize in 2016 and announced Kang as one of the essential voices of world literature.",
+    whyRead: "After Kang\'s Nobel Prize in Literature in 2024, this remains her most unsettling and concentrated work — a slim, perfectly formed novel that repays re-reading and never quite lets you go.",
+    rating: 3.9,
     ratingSource: "Goodreads",
-    ratingCount: "500,000+",
-    coverUrl: "https://covers.openlibrary.org/b/id/95742-L.jpg",
-    amazonUrl: "https://www.amazon.co.uk/dp/0571171273"
+    ratingCount: "400,000+",
+    coverUrl: "https://covers.openlibrary.org/b/id/7412625-L.jpg",
+    amazonUrl: "https://www.amazon.co.uk/dp/0553448196"
   }
 };

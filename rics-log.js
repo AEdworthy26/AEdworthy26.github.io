@@ -3,6 +3,45 @@
 
 var RICS_LOG = [
   {
+    "date": "2026-06-22",
+    "topic": "Biodiversity Net Gain: Mandatory BNG Obligations, Metric Calculations and Strategic Integration in Residential-Led Schemes",
+    "module": "Sustainability and Environmental Compliance",
+    "level": 1,
+    "apc_competency": "Sustainability (Level 1)",
+    "focus": "This lesson covers the mandatory Biodiversity Net Gain framework introduced under the Environment Act 2021, focusing on how the 10% BNG requirement is calculated, evidenced and delivered in residential-led planning applications. It is directly relevant to Alfie\\'s role coordinating ecological surveys, managing planning consultants and structuring land transactions where BNG delivery \u2014 on-site, off-site or via statutory credits \u2014 affects scheme viability and programme.",
+    "image": "https://images.unsplash.com/photo-1607900840367-a83dcd63296d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxCaW9kaXZlcnNpdHklMjBOZXQlMjBHYWluJTNBJTIwVUslMjBwcm9wZXJ0eSUyMGFyY2hpdGVjdHVyZSUyMGJ1aWxkaW5nJTIwZXh0ZXJpb3J8ZW58MHwwfHx8MTc4MjEwNTA3OXww&ixlib=rb-4.1.0&q=80&w=1080",
+    "content": [],
+    "summary": [
+      "Mandatory BNG applies to major developments from 12 February 2024 and small sites from 2 April 2024, requiring a minimum 10% net gain in biodiversity units calculated using Natural England\\'s Biodiversity Metric 4.0 \u2014 this is a statutory obligation under Schedule 14 of the Environment Act 2021, not merely a planning policy requirement.",
+      "The Biodiversity Gain Plan must be submitted and approved by the LPA before development commences \u2014 it is a distinct statutory pre-commencement requirement separate from planning conditions, and LPAs have 8 weeks to determine it, creating a real programme risk on complex sites.",
+      "The delivery hierarchy \u2014 on-site first, then off-site registered Biodiversity Gain Sites, then statutory credits as last resort \u2014 has direct cost and appraisal implications; statutory credits are priced at a deliberate premium (approx. \u00a342,000 per unit for low distinctiveness habitats) to incentivise the private market.",
+      "BNG must be integrated into the appraisal at due diligence stage: greenfield and edge-of-settlement sites with existing high-quality habitats can generate large BNG deficits that materially affect residual land value \u2014 a Phase 1 habitat survey before fixing land price is now prudent standard practice.",
+      "Off-site BNG delivery is secured via a conservation covenant (a new private law mechanism under Environment Act 2021 Part 7) or S106, and the gain site must be registered on Natural England\\'s Biodiversity Gain Site Register \u2014 preventing double-counting and binding successors in title for the mandatory 30-year management period."
+    ],
+    "qa": [
+      {
+        "q": "What is the legal mechanism that makes Biodiversity Net Gain mandatory in England, and from what date did it apply to major residential developments?",
+        "a": "Mandatory BNG is established by Schedule 14 of the Environment Act 2021, which inserts Schedule 7A into the Town and Country Planning Act 1990. It applies to major developments in England from 12 February 2024, and to small sites (those below the major threshold) from 2 April 2024. It does not apply retrospectively to permissions already granted before those dates."
+      },
+      {
+        "q": "On a residential scheme where on-site habitat enhancement only delivers 7% net gain against the 10% statutory minimum, what options are available to the developer and how would you factor the cost into your appraisal?",
+        "a": "The developer must make up the 3-percentage-point shortfall in biodiversity units either through off-site BNG \u2014 purchasing units from a registered Biodiversity Gain Site secured via a conservation covenant or S106 \u2014 or, as a last resort, purchasing statutory biodiversity credits from government. Off-site market unit prices vary by habitat distinctiveness and geography; statutory credits for low distinctiveness habitats cost approximately \u00a342,000 per unit (2024/25 pricing) and medium distinctiveness approximately \u00a3650,000 per unit. In the appraisal, I would quantify the deficit in absolute units from the Metric 4.0 output, apply the relevant unit cost (off-site market rate or statutory credit price depending on availability), and include it as a fixed development cost alongside ecology and landscape fees. On greenfield sites where the deficit could involve medium or high distinctiveness habitats, this cost can be material enough to affect the land bid."
+      },
+      {
+        "q": "What is a conservation covenant, and why is it the preferred legal mechanism for securing off-site BNG rather than a planning condition?",
+        "a": "A conservation covenant is a private law obligation between a landowner and a Responsible Body (such as a conservation charity or public authority) introduced by Part 7 of the Environment Act 2021. It binds the landowner and all successors in title to manage land for conservation purposes for the agreed period \u2014 in BNG terms, at least 30 years. It is preferred over a planning condition for off-site BNG because planning conditions can only attach to the application site and cannot bind a separate parcel of third-party land. A conservation covenant runs with the off-site gain site independently, is enforceable by the Responsible Body without LPA involvement, and is registrable against the title at HMLR, ensuring it survives any future sale of the gain site."
+      },
+      {
+        "q": "How does mandatory BNG interact with a local plan policy that requires 20% biodiversity net gain \u2014 which requirement takes precedence?",
+        "a": "The statutory 10% under the Environment Act 2021 is a floor, not a ceiling. Where a local plan policy requires a higher level of BNG \u2014 such as 20% as sought by a number of progressive LPAs \u2014 the higher local policy requirement applies. The two obligations are not in conflict; they operate in tandem, with the local plan policy being a material consideration in the planning decision and the statutory 10% being enforceable regardless of planning conditions via the Biodiversity Gain Plan mechanism. In practice, I would always check the relevant LPA\\'s local plan and any adopted SPD on biodiversity before running the Metric baseline, to ensure the target in the Gain Plan meets the higher of the two thresholds."
+      },
+      {
+        "q": "At what stage of the development programme should the ecologist be appointed on a residential-led scheme, and how should their role be coordinated with the landscape architect to manage BNG risk?",
+        "a": "The ecologist should be appointed at RIBA Stage 1 or early Stage 2, concurrent with the landscape architect, to establish the habitat baseline and run initial Metric iterations as the scheme layout develops. BNG is highly sensitive to design decisions \u2014 footprint extent, hard/soft landscape ratios, species selection, green roof coverage \u2014 so the ecologist and landscape architect must work iteratively rather than sequentially. I would require the ecologist to issue a Metric sensitivity note alongside each design iteration, quantifying the biodiversity unit impact of any proposed landscape changes. Late substitution of habitat types \u2014 for example, replacing species-rich grassland with standard amenity turf to cut maintenance costs \u2014 can convert an on-site compliant scheme into one requiring expensive off-site credits. Early and continuous coordination, managed through regular design team meetings with clear BNG target thresholds agreed by Stage 2, is the most effective risk management approach."
+      }
+    ]
+  },
+  {
     "date": "2026-06-21",
     "topic": "Land Assembly by Agreement: Title Due Diligence, Constraint Mapping and Risk Allocation in Residential-Led Acquisitions",
     "module": "Legal and Regulatory Compliance",

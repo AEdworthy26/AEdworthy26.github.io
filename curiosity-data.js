@@ -1,108 +1,120 @@
 // curiosity-data.js
-// Auto-updated 2026-06-21 — do not edit manually
+// Auto-updated 2026-06-22 — do not edit manually
 
 var CURIOSITY_DATA = {
-  date: "2026-06-21",
+  date: "2026-06-22",
   mainArticle: {
-    title: "The Stone Builders of Malta: The Oldest Free-Standing Structures on Earth",
-    subject: "Megalithic Temples of Malta",
-    subtitle: "Five thousand years before the Colosseum, a people whose name we do not know built temples so sophisticated that they still defy easy explanation.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Ggantija_Temples%2C_Xaghra%2C_Gozo.jpg/3840px-Ggantija_Temples%2C_Xaghra%2C_Gozo.jpg",
-    readTime: "10 min",
+    title: "The Feathered Serpent and the City of the Gods: The Mystery of Teotihuacan",
+    subject: "Teotihuacan",
+    subtitle: "A million people may have walked its boulevards. Its builders left no written name, no king list, no founding myth. It was simply the largest city on Earth — and then it vanished.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/5/58/Teotihuac%C3%A1n-5973.JPG",
+    readTime: "11 min",
     content: [
       {
         type: "paragraph",
-        text: "On a small island in the middle of the Mediterranean, surrounded by the same warm sea that later cradled Greece and Rome, there are buildings older than Stonehenge, older than the Pyramids, older than any monument in Egypt. The megalithic temples of Malta were raised somewhere between 3600 and 2500 BC by a people who left no written records, whose name is entirely unknown, and whose civilisation vanished so completely that when the next wave of settlers arrived, there was apparently nobody left to ask. What they left behind — enormous, beautifully engineered stone temples fitted together with extraordinary precision — is among the most astonishing and least-discussed archaeological puzzles in the world."
+        text: "Sometime around the first century BC, in the high basin of central Mexico, a city began to grow at a pace the ancient world had rarely seen. By AD 400 it covered more than twenty square kilometres, housed perhaps 125,000 people — by some estimates far more — and was processing obsidian, ceramics, and trade goods on an almost industrial scale. It was, at that moment, among the five largest cities on the planet, comfortably outstripping anything in contemporary Europe. Its name, as its builders called it, we do not know."
       },
       {
         type: "paragraph",
-        text: "There are at least seven major temple complexes on the Maltese islands, including Ġgantija on the island of Gozo, Ħaġar Qim overlooking the southern cliffs, and Mnajdra, a cluster of three conjoined temples whose inner chambers align so precisely with the rising sun at the solstices and equinoxes that they function, effectively, as a stone calendar. The temples are built from coralline and globigerina limestone, some blocks weighing over fifty tonnes, and yet the builders had no metal tools, no wheeled vehicles, and no draught animals capable of hauling such loads. They are the earliest free-standing stone structures ever built by human hands — a fact that tends to quietly astonish people when they first encounter it."
+        text: "The Aztecs, who discovered its ruins centuries after its fall, were so awed by what they found that they named it Teotihuacan — 'the place where the gods were created' — because they could not believe ordinary humans had built it. They were not wrong to be astonished. The city\'s main artery, the Avenue of the Dead, runs for more than four kilometres in a near-perfect straight line, oriented precisely 15.5 degrees east of north. That deviation was deliberate, aligned to the point on the horizon where the Pleiades set — a celestial clock embedded in urban planning at a scale no other ancient culture attempted."
       },
       {
         type: "heading",
-        text: "An Island Alone at the Edge of the World"
+        text: "A City Without a Face"
       },
       {
         type: "paragraph",
-        text: "Malta lies roughly in the centre of the Mediterranean, ninety kilometres south of Sicily and three hundred north of the North African coast. It is a small, dry, limestone island with few natural resources beyond the stone itself. The first settlers arrived around 5200 BC, crossing from Sicily in simple watercraft, bringing with them the Neolithic package: domesticated animals, grain crops, pottery. For over a millennium they lived quietly, leaving behind the usual traces — sherds, bones, hearths. Then, around 3600 BC, something changed."
+        text: "What makes Teotihuacan uniquely disorienting among great ancient civilisations is the near-total absence of the things historians rely on. There is no royal burial, no named king, no dynastic sequence, no intelligible writing system that has been decoded. Neighbouring cultures — the Maya to the south-east, the Zapotec to the south-west — both developed sophisticated scripts. Teotihuacan used a system of glyphs that appears to record names and dates, but its grammar and vocabulary remain impenetrable. We know the city in outline and almost nothing of its inner life."
       },
       {
         type: "paragraph",
-        text: "The archaeological record shifts abruptly. Communities that had been building ordinary Neolithic structures suddenly began quarrying, shaping, and erecting megaliths on a scale that had no precedent anywhere in the region. The energy expenditure implied by the temples — the labour of quarrying, transporting, shaping, and raising stones of this size — would have consumed a substantial fraction of the entire island\'s productive capacity for generations. Something was driving this effort: a theological compulsion, a political programme, or perhaps a response to crisis. We do not know."
+        text: "This silence has fuelled a century of scholarly argument. Some researchers believe the city was governed not by a single god-king but by a council of élites — an oligarchy of merchant and priestly families who deliberately suppressed the cult of individual rulership. The evidence is suggestive: unlike almost every other Mesoamerican site, Teotihuacan produced no monumental portraits of individual rulers, no stelae proclaiming royal victories, no tombs designed to anchor cosmic authority in a single body. Whatever its politics, it was structurally unlike almost anywhere else on Earth."
       },
       {
         type: "heading",
-        text: "The Architecture of the Unknown"
+        text: "The Pyramids That Were Not Tombs"
       },
       {
         type: "paragraph",
-        text: "The temple plans are strikingly consistent across the archipelago. They follow a trefoil or cloverleaf design: a central corridor leading through a threshold into paired semicircular apses, sometimes with a third apse at the far end. The plan has been described as anthropomorphic — echoing the shape of a human body with outstretched arms — but whether this was intentional symbolism or simply an efficient structural form is debated. What is not debated is the quality of the workmanship. The blocks fit together with a tightness and care that required sophisticated planning and skilled execution."
+        text: "The Pyramid of the Sun is the third largest pyramid on Earth by volume, and it was built in a single sustained construction phase sometime around AD 100. It rises 65 metres above the valley floor, its base measuring 220 metres on each side — dimensions that rival Giza, achieved two thousand years later with stone tools, without the wheel, and apparently without draught animals. What it was built for remains genuinely contested. Unlike the Egyptian pyramids, no human remains were found inside when it was first excavated in 1906. It is not a tomb. It may never have been."
       },
       {
         type: "paragraph",
-        text: "Inside the temples, the walls are covered in pitted decoration — a technique called 'pit dressing' in which small holes are hammered into the surface of the stone in dense, regular patterns. At Tarxien, the largest complex, fragments survive of a colossal statue of a seated figure — only the lower half remains, but the scale suggests a figure that would have stood nearly three metres tall. Altars, stone basins, oracle holes, and elaborate thresholds speak to a complex ritual life. Animal bones, predominantly sheep and goat, suggest large-scale feasting events that may have drawn participants from across both islands."
+        text: "Beneath the Pyramid of the Sun, archaeologists discovered a natural lava tube cave that had been artificially extended and shaped into a four-leafed clover of chambers. This cave appears to have been the founding sacred site around which the entire city was organised — possibly representing a place of supernatural origin, a symbolic womb of the earth from which humanity emerged. Mesoamerican cosmologies consistently link caves with creation. The city, in effect, was built as a vast ceremonial machine centred on a hole in the ground. The pyramid above was not a monument to a king. It was a lid."
       },
       {
         type: "heading",
-        text: "The Sleeping Lady and the World Beneath"
+        text: "The Apartment Blocks of Antiquity"
       },
       {
         type: "paragraph",
-        text: "In 1902, workers digging a well in the town of Paola broke through the ceiling of an underground hypogeum — a vast, multi-level complex of chambers cut entirely from the living rock, which had been sealed and forgotten for four thousand years. The Ħal Saflieni Hypogeum, as it is now known, is one of the most extraordinary archaeological sites on Earth: three levels of rock-cut halls, passages, and chambers descending twelve metres into the ground, used for burial and possibly ritual from around 3300 to 2500 BC. The bones of at least seven thousand individuals have been found there."
+        text: "One of the most remarkable and underappreciated features of Teotihuacan is its housing. Rather than the hovels and palaces that characterise most ancient cities, Teotihuacan built its population into large, well-constructed compound apartments — stone structures of multiple rooms arranged around interior courtyards, with plastered walls, drainage systems, and sophisticated painted murals. Archaeologists have identified more than two thousand of these compounds. They are surprisingly uniform in quality, suggesting a degree of planned equality in housing provision that is almost without parallel in the ancient world."
       },
       {
         type: "paragraph",
-        text: "Among the objects recovered from the Hypogeum was a small terracotta figurine, perhaps fifteen centimetres long, of a recumbent figure lying on its side with eyes closed and a hand tucked beneath its cheek. It is known, universally and inevitably, as the Sleeping Lady. The figurine\'s purpose — idol, votive offering, portrait of the dead, image of a dreaming oracle — is unknown. Its face is serene, its form abundantly curved, and it has been staring at the ceiling of the National Museum of Archaeology in Valletta for over a century with an expression of utter indifference to human interpretation."
+        text: "Analysis of isotopes in skeletal remains found in these compounds has revealed something extraordinary: Teotihuacan was genuinely cosmopolitan. Significant populations from Oaxaca, the Gulf Coast, and the Maya lowlands lived in distinct ethnic neighbourhoods within the city, each maintaining their own burial customs, ceramic traditions, and possibly their own languages. This was not a conquered subject population but a city that attracted voluntary migrants across hundreds of kilometres. At the height of its power, Teotihuacan functioned as a kind of ancient metropolis — a place people chose to come to."
       },
       {
         type: "heading",
-        text: "A Calendar Written in Stone"
+        text: "The Obsidian Economy"
       },
       {
         type: "paragraph",
-        text: "The astronomical alignments at Mnajdra are among the most compelling features of the entire temple complex. The southernmost of the three temples is oriented so precisely that at both equinoxes, the rising sun sends a beam of light directly down the central corridor, striking a decorated altar stone at the far end. At the summer solstice — today — the light falls along the left edge of the doorway threshold; at the winter solstice it falls along the right. These are not accidental coincidences of geometry. The builders knew exactly what they were doing."
+        text: "The city\'s wealth rested on two foundations: its location and a volcanic glass. Teotihuacan sat astride the richest obsidian sources in Mesoamerica, particularly the deposits at Pachuca to the north, whose distinctive green-tinged obsidian can be chemically fingerprinted wherever it appears. Pachuca obsidian has been found at Maya sites over a thousand kilometres away, at Gulf Coast trading centres, at Oaxacan settlements, across virtually the entire breadth of ancient Mexico. Teotihuacan did not merely trade this material — it controlled it, processing obsidian into blades, points, and ritual objects on an almost factory scale."
       },
       {
         type: "paragraph",
-        text: "This level of astronomical sophistication implies generations of careful observation, a tradition of accumulated knowledge, and the institutional capacity to encode that knowledge into permanent architecture. The people who built Mnajdra were watching the sky long before they laid a single stone, tracking the solstices and equinoxes with the patience and precision of professional astronomers. How this knowledge was preserved and transmitted — whether by a priestly class, by oral tradition, by visual marks on perishable material — we cannot say. It vanished with the civilisation that held it."
+        text: "This economic dominance translated into political reach that archaeologists are still mapping. Around AD 378, a general named Siyaj K\'ak' — 'Fire is Born' — arrived at the Maya city of Tikal accompanied by warriors bearing Teotihuacan-style atlatl spears. Within days, Tikal\'s ruling king was dead or deposed, and a new dynasty closely linked to Teotihuacan was installed. It was, in effect, a coup d'état projected across seven hundred kilometres of jungle — the clearest evidence we have that Teotihuacan was not merely a trading partner to the wider Mesoamerican world, but an imperial power."
       },
       {
         type: "heading",
-        text: "The Silence After"
+        text: "Fire and Collapse"
       },
       {
         type: "paragraph",
-        text: "Around 2500 BC, the temple-building culture of Malta disappeared. The evidence is ambiguous but consistent: the temples fell out of use, the population seems to have collapsed, and when new settlers arrived — a different people with different pottery traditions, different burial rites, and different tools — there is no sign of continuity with what came before. Theories range from environmental catastrophe (overexploitation of the island\'s thin soils leading to agricultural collapse) to epidemic disease, from violent displacement to simple demographic decline. None has been proven."
+        text: "Around AD 550, something catastrophic happened in Teotihuacan. Archaeological evidence reveals a deliberate, systematic burning — but crucially, concentrated only on the city\'s most important civic and religious buildings along the Avenue of the Dead. The temples, the élite residential compounds, the symbolic heart of the city — all were burned. The apartment compounds of ordinary citizens, the workshops, the outlying neighbourhoods — these were largely untouched. This was not an external sack. It was an internal destruction, almost certainly a revolution."
       },
       {
         type: "paragraph",
-        text: "What is certain is the completeness of the break. The new arrivals, the people archaeologists call the Tarxien Cemetery culture, used the great temple at Tarxien as a cremation site, digging pits into its floors. They may not have known who built it. The elaborate theological system, the accumulated astronomical knowledge, the identity of the great seated figure in the inner sanctuary — all of it was gone. The temples became ruins, then became buried, then became, in time, legend. The Maltese word 'Ġgantija' means 'giant\'s tower'. Medieval islanders, encountering these impossible structures, assumed they must have been built by a race of giants, because no ordinary human effort could explain them."
+        text: "The burning did not immediately empty the city. Population fell gradually over the following century, but people continued to live among the ruins for generations. The great pyramids were never again used for their original purpose. What had been the religious and administrative centre became something like an archaeological site inhabited by its own descendants. By AD 700, the city was effectively finished as a major urban centre, its population dispersed into the valley communities that would eventually give rise to the later cultures the Aztecs encountered. The empire, if that is what it was, simply dissolved."
       },
       {
         type: "heading",
-        text: "What They Tell Us"
+        text: "What the Murals Say"
       },
       {
         type: "paragraph",
-        text: "The Maltese temples matter beyond their considerable intrinsic fascination because they complicate the standard narrative of ancient complexity. The conventional story of civilisation moves from simple to complex, from small to large, from dispersed to centralised — it runs through the river valleys of Mesopotamia and Egypt, where writing and bureaucracy and monumental architecture emerge together in dense, irrigated urban cores. Malta fits none of this. It was a small, isolated island. It had no rivers, no cities in any recognisable sense, no writing. And yet it produced architecture of extraordinary sophistication and astronomical precision."
+        text: "Teotihuacan\'s artists left behind one of the most extensive bodies of mural painting in the ancient Americas, and it is a deeply strange one. Unlike Maya art, which is overwhelmingly occupied with the deeds of rulers — battles, sacrifices, accessions, genealogies — Teotihuacan\'s murals are largely populated by supernatural beings, priests in elaborate costumes, and repeated abstract symbols. The Feathered Serpent, the Storm God, the Great Goddess of the Spider-web Palace — these figures recur across dozens of compounds. Individual human beings, when they appear at all, are often anonymous processional figures, impossible to identify as specific people."
       },
       {
         type: "paragraph",
-        text: "The implication is uncomfortable and exciting in equal measure: that the capacity for complex, organised, symbolically rich cultural achievement is not dependent on the conditions we have traditionally assumed to be prerequisites. A few thousand people on a limestone island, working with antler picks and stone hammers, without metal or wheels or draught animals, built structures that still stand five and a half millennia later — structures precisely aligned with the movements of the sun, decorated with care and skill, filled with the bones of their dead and the figurines of their unknown gods. We do not know what they believed. We do not know what they called themselves. We know what they made. And it is enough to make anyone pause."
+        text: "One mural complex, known as the Paradise of Tlaloc, shows a lush landscape of water, flowers, and small human figures at play — swimming, singing, catching butterflies — in what appears to be a vision of the afterlife or a heavenly realm. It is among the most tender images to survive from the ancient Americas, and it exists entirely without a name attached to whoever commissioned it. Whoever these people were, whatever they believed about the world, they were capable of imagining joy. They painted it on their walls, and the paint is still there."
+      },
+      {
+        type: "heading",
+        text: "The City That Made Itself Sacred"
+      },
+      {
+        type: "paragraph",
+        text: "Teotihuacan\'s deepest legacy may be the hold it maintained over the Mesoamerican imagination long after its fall. The Aztecs — who arose seven hundred years after the city\'s collapse — made ritual pilgrimages to the ruins, conducted burials there, and drew on its architectural symbolism in designing their own capital at Tenochtitlan. They believed the current age of humanity had been created at Teotihuacan, that the gods themselves had sacrificed their lives there to set the sun in motion. A ruined city became a foundation myth for an entire civilisation."
+      },
+      {
+        type: "paragraph",
+        text: "Modern archaeology keeps revising what we thought we knew. In 2003, a tunnel was discovered beneath the Temple of the Feathered Serpent, sealed for nearly two thousand years, filled with thousands of ritual objects — jade figurines, obsidian blades, rubber balls, jaguar remains, human skeletons — arranged with extraordinary precision. In 2017, researchers using LIDAR and ground-penetrating radar found evidence of further unexcavated chambers and tunnels beneath the pyramids. The city has been studied for over a century and still holds secrets it has not released. It may hold them for a very long time yet."
       }
     ]
   },
   personOfTheDay: {
-    name: "Apollonius of Rhodes",
-    lifespan: "c. 295–215 BC",
-    category: "Literature & Scholarship",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Rhodes_sentinel2_%28cropped%29.jpg/3840px-Rhodes_sentinel2_%28cropped%29.jpg",
-    bio: "Apollonius of Rhodes was a Greek poet and scholar of the third century BC, best known as the author of the Argonautica, the only complete surviving epic poem from the Hellenistic period and the first extended literary treatment of romantic love in the Western tradition. Born in Alexandria — despite his epithet 'of Rhodes', which likely reflects a period of exile or residence on the island — he was a pupil of the great Callimachus and eventually rose to become head of the Library of Alexandria, the most prestigious intellectual post in the ancient world. He lived at the epicentre of the greatest concentration of human knowledge ever assembled to that point in history.\n\nThe Argonautica retells the myth of Jason and his crew of heroes — the Argonauts — sailing to the distant land of Colchis at the eastern edge of the Black Sea to recover the legendary Golden Fleece. In four books of hexameter verse, Apollonius follows the voyage out, the struggles and wonders encountered along the way, the pivotal events in Colchis, and the long and perilous journey home. What makes the poem revolutionary is its psychological depth, particularly in its portrait of Medea, the Colchian princess who falls catastrophically in love with Jason. Apollonius devotes extended, searching attention to the interior experience of falling in love — the racing heart, the sleeplessness, the conflict between desire and duty — in a way that had no real precedent in Greek literature.\n\nHis career was apparently marked by a celebrated literary quarrel with his teacher Callimachus, who championed short, polished, learned poetry and reportedly dismissed the long epic as an outdated form. Whether Apollonius published an early draft of the Argonautica, received harsh criticism, and retreated to Rhodes before returning with a revised version, or whether the quarrel has been exaggerated by later tradition, is debated by scholars. What is clear is that his ambition to revive the grand Homeric epic in a thoroughly Hellenistic key — learned, ironic, emotionally sophisticated — was genuinely radical. Virgil read him closely when composing the Aeneid, and the influence of his Medea is visible in Virgil\'s Dido, the queen who loves, is abandoned, and destroys herself.\n\nApollonius occupies an unusual place in the literary canon: admired by specialists, somewhat neglected by general readers, and persistently underestimated by those who approach the Hellenistic age expecting only dry erudition. The Argonautica is, in fact, a gripping, inventive, and emotionally alive poem, one that takes a myth everyone knew and found within it something genuinely new — not the heroics of Achilles or Odysseus, but the trembling interiority of a young woman standing at a crossroads in the dark, deciding to betray everything she knows for a stranger she has known for three days. That it survives complete, when so much else from antiquity does not, is one of the small mercies of history."
+    name: "Nzinga Mbande",
+    lifespan: "c. 1583–1663",
+    category: "Statecraft & Resistance",
+    image: "https://upload.wikimedia.org/wikipedia/commons/2/21/Ann_Zingha.jpg",
+    bio: "Nzinga Mbande — also known as Ana de Sousa Nzinga — was Queen of the Mbundu kingdoms of Ndongo and Matamba in what is now Angola, and one of the most formidable political and military leaders of the seventeenth century. Born around 1583, she was the daughter of King Ngola Kiluanji and spent her early life learning the arts of governance, diplomacy, and war in a court already under severe pressure from expanding Portuguese colonial ambitions. When her brother Ngola Mbande became king, he appointed her as his principal envoy — a sign of her exceptional ability at a time when the Portuguese were pressing deep into Mbundu territory and funnelling enslaved captives through the port of Luanda at a staggering rate.\n\nHer most famous moment came in 1622, when she was sent to negotiate with the Portuguese governor in Luanda. Arriving to find that no chair had been provided for her — an intentional humiliation designed to establish her subordinate status — Nzinga reportedly commanded one of her attendants to kneel on all fours and used the person as her throne. She then negotiated a treaty of remarkable equality, demonstrating a diplomatic intelligence her opponents consistently underestimated. She converted to Christianity and took the baptismal name Ana de Sousa, partly as a strategic move to gain standing in negotiations with the Portuguese crown — a deployment of faith as political instrument.\n\nAfter her brother\'s death in 1624, Nzinga became ruler of Ndongo and proved herself a military commander of the first order. When Portuguese pressure forced her out of Ndongo, she conquered the neighbouring kingdom of Matamba, transforming it into a sovereign state and turning it into a refuge for escaped enslaved people and the landless, which bolstered her army and her legitimacy simultaneously. She formed alliances with the Dutch, who were competing with Portugal for the West African slave trade, and led military campaigns well into her sixties — reportedly fighting in person into old age, dressed in men\'s military clothing.\n\nNzinga governed Matamba until her death in 1663 at roughly eighty years of age, having spent four decades navigating the collision between African sovereignty and European colonialism with a combination of military force, diplomatic cunning, and ideological flexibility that few rulers of any era have matched. She was recognised even by Portuguese sources as an extraordinary figure. Today she is celebrated as a national hero in Angola, with her statue standing in the central square of Luanda. Her life is a reminder that the history of African resistance to colonialism is as old as colonialism itself — and that its leaders were, on occasion, among the most capable statespeople of their age."
   },
   onThisDay: {
-    headline: "THE SUMMER SOLSTICE THAT MEASURED THE EARTH",
-    date: "June 21, 240 BC",
-    summary: "On or around the summer solstice of 240 BC, Eratosthenes of Cyrene — chief librarian of the Library of Alexandria — conducted or collated the observations that would allow him to calculate the circumference of the Earth with remarkable accuracy. His method was elegant and simple. He knew that at noon on the summer solstice, the sun shone directly down a well in the city of Syene (modern Aswan) in southern Egypt, casting no shadow — the sun was precisely overhead. At the same moment in Alexandria, roughly 800 kilometres to the north, a vertical stick cast a shadow at an angle of about 7.2 degrees, which is one-fiftieth of a full circle. If the two cities were one-fiftieth of the Earth\'s circumference apart, and the distance between them was known, the circumference could be calculated directly.\n\nEratosthenes estimated the distance between Alexandria and Syene as 5,000 stadia — a figure derived from the reported travel time of royal surveyors — and multiplied by fifty to arrive at a circumference of 250,000 stadia. The precise length of the stadion he used is disputed by historians, but by the most plausible conversion his result comes to between 39,375 and 46,620 kilometres. The actual circumference of the Earth is 40,075 kilometres. By the most favourable interpretation, Eratosthenes was accurate to within one percent — an astonishing result achieved with no instruments beyond a stick, a shadow, and the most powerful tool in science: a well-asked question. His calculation was not seriously improved upon for another seventeen centuries.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Meteosat-12-fci-march-equinox-2025-noon.jpg/3840px-Meteosat-12-fci-march-equinox-2025-noon.jpg"
+    headline: "Napoleon Crosses the Niemen: The Invasion That Doomed an Empire",
+    date: "June 22, 1941",
+    summary: "On June 22, 1941, Nazi Germany launched Operation Barbarossa, the largest military invasion in the history of warfare, sending over three million soldiers across the Soviet border on a front stretching nearly three thousand kilometres. The assault came without a formal declaration of war, shattering a non-aggression pact signed with the Soviet Union less than two years earlier. Within hours, the Luftwaffe had destroyed over a thousand Soviet aircraft, most of them still on the ground. Entire Soviet armies were encircled within days. Stalin, reportedly stunned into near-paralysis, did not address the Soviet people for eleven days.\n\nThe invasion was Hitler\'s most consequential strategic gamble — and ultimately the decision that destroyed the Third Reich. Germany\'s failure to defeat the Soviet Union before winter, the catastrophic losses at Stalingrad in 1942–43, and the Soviet Union\'s subsequent mobilisation of its vast industrial and human resources reversed the tide of the entire war. By the time the fighting ended in May 1945, the Eastern Front had killed an estimated thirty million people, the majority of them Soviet civilians and soldiers. Operation Barbarossa, launched on this day, set in motion the bloodiest chapter in human history.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/3/3e/OperationBarbarossa.PNG"
   }
 };
