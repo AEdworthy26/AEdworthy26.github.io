@@ -1,61 +1,61 @@
 // tech-news-data.js
-// Auto-updated 2026-06-22 — do not edit manually
+// Auto-updated 2026-06-23 — do not edit manually
 
 var TECH_NEWS = {
-  date: "2026-06-22",
+  date: "2026-06-23",
   main: {
-    title: "The UK Will Scan Asylum-Seekers' Faces for Age Checks — Despite Knowing the Tech Is Flawed",
-    category: "Technology / AI",
+    title: "GM Installs Robots at Flagship EV Factory After Laying Off 1,300 Workers",
+    category: "Technology & Industry",
     content: [
-      "The United Kingdom has announced plans to use facial recognition technology to verify the ages of asylum-seekers, pressing forward with the scheme even as internal testing has revealed significant and potentially life-altering inaccuracies in the system. The decision has sparked immediate concern among civil liberties advocates and technology researchers who argue that deploying an admittedly flawed tool in such a high-stakes context sets a deeply troubling precedent. At the heart of the controversy is the question of what level of error is acceptable when the consequences of a wrong determination can fundamentally alter a person\'s legal status and future.",
-      "Age verification using facial analysis software has long been one of the more contested applications of biometric AI. Unlike identifying a known individual against a database, estimating age from a face requires the system to make probabilistic inferences about biological characteristics that vary enormously across ethnicities, lighting conditions, and image quality. Researchers have repeatedly documented that such systems perform inconsistently across demographic groups, often with the least accurate results for the very populations — including people from regions with high asylum-seeker numbers — who would be most affected by this particular deployment.",
-      "The UK government\'s own tests reportedly showed that the technology carries a meaningful risk of misclassifying adults as minors or, more dangerously, minors as adults. Being wrongly classified as an adult can strip a young asylum-seeker of legal protections specifically designed for children, including access to specialist support services and different legal processing pathways. Advocates warn that a single erroneous scan could therefore set a vulnerable young person on a far more precarious legal and humanitarian trajectory than they would otherwise face.",
-      "Despite these documented concerns, officials appear determined to proceed, framing the technology as a practical tool to streamline a strained immigration and asylum processing system. Proponents argue that traditional age assessment methods — which often rely on physical examinations or interviews — are also imperfect and subject to their own biases and inconsistencies. However, critics counter that introducing an additional flawed layer of automated decision-making, rather than improving human-led processes, compounds the risk rather than mitigating it, and does so at a speed and scale that outpaces meaningful oversight.",
-      "The UK\'s move is being watched closely by other governments exploring similar applications of biometric technology in immigration contexts. Privacy and human rights organizations are calling for an immediate pause and an independent audit of the technology before any live deployment affecting real cases. The episode underscores a broader and urgent debate about the appropriate boundaries of AI in consequential public-sector decisions — particularly when the populations most affected by errors are among the least empowered to challenge or appeal those decisions.",
+      "General Motors has moved swiftly to automate its flagship electric vehicle factory, installing robots at the facility in the wake of laying off 1,300 workers. The move has ignited a fierce debate about the future of manufacturing labor in the United States, with critics arguing that the timing makes the company\'s priorities unmistakably clear. For the workers who lost their jobs, the arrival of robotic systems on the factory floor represents a deeply personal and tangible displacement.",
+      "The United Auto Workers union has responded with alarm, warning that GM\'s actions offer a glimpse into what labor organizers are calling the 'dark factory' future — a manufacturing landscape where human workers are largely or entirely replaced by automated systems. Union representatives have argued that the layoffs were not simply the result of economic pressures but rather a deliberate strategic choice to accelerate automation. The speed with which robots followed the departing workers has lent credibility to those concerns.",
+      "GM\'s decision reflects a broader trend across the automotive industry, where the transition to electric vehicles is being used as an opportunity to fundamentally restructure factory operations. Unlike traditional internal combustion engine vehicles, EVs have fewer moving parts and lend themselves more readily to highly automated assembly processes. Automakers have long viewed this transition as a chance to reduce labor costs and improve production consistency at scale.",
+      "The installation of robotic systems at a flagship facility also signals GM\'s long-term strategic vision for competing with rivals like Tesla, which has pioneered highly automated manufacturing processes. Tesla\'s so-called 'gigafactories' have set a benchmark for production efficiency that legacy automakers feel compelled to match. For GM, the calculus appears to be that the short-term reputational cost of high-profile layoffs is outweighed by the long-term competitive advantages of a leaner, more automated workforce.",
+      "The episode raises profound questions that extend well beyond General Motors and the auto sector. As artificial intelligence and robotics mature rapidly, the manufacturing industry is increasingly at the forefront of a societal reckoning over what role human labor will play in an automated economy. Policymakers, labor advocates, and corporate leaders are all being forced to grapple with how to manage these transitions responsibly — and whether the current pace of automation is outrunning the safety nets and retraining programs needed to support displaced workers.",
     ],
-    image: "https://cdn.arstechnica.net/wp-content/uploads/2026/06/GettyImages-2234043771-1152x648.jpg",
+    image: "https://cdn.arstechnica.net/wp-content/uploads/2026/06/GM-factory-zero-1152x648.jpg",
     source: "Ars Technica",
-    sourceUrl: "https://arstechnica.com/tech-policy/2026/06/the-uk-will-scan-asylum-seekers-faces-for-age-checks-despite-knowing-the-tech-is-flawed/"
+    sourceUrl: "https://arstechnica.com/ai/2026/06/gm-installs-robots-at-flagship-ev-factory-after-laying-off-1300-workers/"
   },
   secondary: [
     {
       id: "tc1",
-      title: "An AI Company Cleaned My NYC Apartment for Free — to Train Its Robots",
-      summary: "An AI robotics company is sending human cleaners to people\'s homes at no charge in order to collect real-world data that will train the robots it hopes will one day replace those very workers.",
+      title: "Kennedy Space Center Not Ready for Era of Super Heavy Rockets",
+      summary: "A new report warns that Kennedy Space Center lacks the infrastructure to handle the ambitious launch cadence planned for next-generation super heavy rockets like SpaceX\'s Starship.",
       body: [
-        "The unusual promotional strategy sees the company dispatching professional cleaners to New York City apartments free of cost, but the true purpose is data collection: every movement, task, and environmental interaction is recorded to build training datasets for domestic robots. It is a striking illustration of how AI and robotics companies are finding novel — and sometimes ethically complex — ways to gather the high-quality real-world data their systems require.",
-        "The approach raises significant questions about the transparency of the arrangement for both the human cleaners participating and the residents opening their homes. As robotics firms race to develop capable home-assistance machines, the lengths to which they will go to generate proprietary training data is becoming an increasingly important story in the broader AI industry."
+        "According to a new report, Kennedy Space Center is unprepared for the demands of the coming era of super heavy lift rockets, raising serious concerns about America\'s launch infrastructure. SpaceX has reportedly told NASA that it intends to launch its Starship vehicle from Kennedy as frequently as every eight days, a cadence that would stress existing facilities to their limits.",
+        "The findings highlight a growing tension between the rapid pace of commercial spaceflight ambitions and the slower-moving world of government infrastructure planning. As Starship moves closer to operational status, the gap between what launch providers need and what Kennedy can currently offer may become a critical bottleneck for America\'s space program."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/570f/live/e297c6a0-6af7-11f1-8546-8f19e4fe30f4.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/cpwerjy20kyo?at_medium=RSS&at_campaign=rss",
-      category: "AI & Robotics"
+      image: "https://cdn.arstechnica.net/wp-content/uploads/2022/08/Artemis-I-Aug-19-2022-9057-1152x648.jpg",
+      source: "Ars Technica",
+      url: "https://arstechnica.com/space/2026/06/report-kennedy-space-center-not-ready-for-era-of-super-heavy-rockets/",
+      category: "Space"
     },
     {
       id: "tc2",
-      title: "Polymarket Reportedly Paid Creators to Post Deceptive Fake-Bet Videos",
-      summary: "A Wall Street Journal investigation found that prediction market platform Polymarket paid social media creators to film fake videos of themselves placing bets and celebrating winnings that were never real.",
+      title: "Nvidia Claims New AI Data Center Design Eliminates Most Water Usage",
+      summary: "Nvidia is highlighting its Rubin generation liquid-cooled data center reference design as a major step forward in reducing both power and water consumption for AI infrastructure.",
       body: [
-        "According to the investigation, more than 1,100 deceptive clips were identified, many filmed on near-perfect replica copies of the Polymarket website, with fabricated trades and payouts presented as genuine to viewers. Creators confirmed they were paid by the company to produce the content without disclosing the sponsorship arrangement, raising serious questions about platform integrity and consumer deception.",
-        "The revelations are a significant blow to Polymarket\'s credibility at a time when prediction markets have been gaining mainstream attention as alternative information aggregators. Regulators and platform watchdogs are likely to scrutinize the practice closely, as undisclosed paid promotion of financial products carries substantial legal risk."
+        "Nvidia has announced that its latest data center reference design, built around the Rubin generation of hardware and fully liquid-cooled, has dramatically reduced both energy usage and water consumption compared to conventional data center architectures. The company says the new design has 'eliminated massive amounts of power usage and pretty much all water usage,' addressing two of the most prominent criticisms leveled at AI infrastructure.",
+        "Public concern over the environmental footprint of AI data centers has been growing steadily, with communities near large facilities raising objections to their water and energy demands. While Nvidia\'s claims represent meaningful progress, analysts note that the announcement does not resolve all of the broader concerns surrounding the rapid proliferation of AI compute infrastructure."
       ],
-      image: "https://images.pexels.com/photos/7111608/pexels-photo-7111608.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      source: "TechCrunch",
-      url: "https://techcrunch.com/2026/06/21/polymarket-reportedly-paid-creators-to-post-deceptive-videos-about-fake-bets/",
-      category: "Tech Industry"
+      image: "https://images.unsplash.com/photo-1781324185628-1a816d8fbb92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxOdmlkaWElMjBDbGFpbXMlMjBOZXclMjBBSSUyMERhdGElMjBDZW50ZXIlMjBEZXNpZ24lMjBFbGltaW5hdGVzJTIwTW9zdCUyMFdhdGVyJTIwVXNhZ2V8ZW58MHwwfHx8MTc4MjE5MTA2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "The Verge",
+      url: "https://www.theverge.com/tech/954139/nvidia-data-centers-rubin-liquid-cooling",
+      category: "AI & Hardware"
     },
     {
       id: "tc3",
-      title: "Rocket Report: Blue Origin Rebuilds Launch Pad as Relativity Space Eyes Mars",
-      summary: "The latest rocket industry roundup covers reconstruction work beginning at a Blue Origin launch facility and Relativity Space setting its sights on Mars missions.",
+      title: "OpenAI Launches Initiative to Find and Patch Open-Source Security Bugs",
+      summary: "OpenAI has unveiled a new program aimed at improving the security of open-source software by using its AI capabilities to identify and help fix vulnerabilities.",
       body: [
-        "Blue Origin has begun the process of rebuilding one of its launch pads following damage, signaling the company\'s continued commitment to its launch cadence even as it works through infrastructure setbacks. Meanwhile, Relativity Space has made headlines by targeting Mars as a long-term destination, an ambitious goal for a company still establishing itself in the competitive commercial launch market.",
-        "The report also notes that a French launch startup is abandoning its rocket\'s name, apparently due to a trademark dispute — a reminder of the many non-engineering challenges facing the crowded new-space sector. Taken together, the week\'s developments paint a picture of a launch industry that is simultaneously expanding its ambitions and navigating very practical operational hurdles."
+        "OpenAI has announced a new security-focused initiative designed to tackle the persistent problem of bugs and vulnerabilities in open-source software, which underpins a vast portion of the world\'s digital infrastructure. The program will apply OpenAI\'s AI systems to the task of discovering security flaws and facilitating their remediation across widely used open-source projects.",
+        "The move positions OpenAI as an active contributor to the broader cybersecurity community, going beyond its core commercial AI products. Open-source software has long faced a resource gap when it comes to security auditing, and an AI-powered approach could significantly accelerate the discovery of vulnerabilities that might otherwise go undetected for years."
       ],
-      image: "https://cdn.arstechnica.net/wp-content/uploads/2026/06/relativity-1152x648.jpg",
-      source: "Ars Technica",
-      url: "https://arstechnica.com/space/2026/06/rocket-report-rebuild-begins-at-blue-origin-launch-pad-relativity-targets-mars/",
-      category: "Space"
+      image: "https://images.unsplash.com/photo-1676299081847-824916de030a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxPcGVuQUklMjBMYXVuY2hlcyUyMEluaXRpYXRpdmUlMjB0byUyMEZpbmQlMjBhbmQlMjBQYXRjaCUyME9wZW4tU291cmNlJTIwU2VjdXJpdHklMjBCdWdzfGVufDB8MHx8fDE3ODIxOTEwNjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "TechCrunch",
+      url: "https://techcrunch.com/2026/06/22/openai-launches-new-initiative-to-help-find-and-patch-open-source-bugs/",
+      category: "Cybersecurity"
     }
   ]
 };

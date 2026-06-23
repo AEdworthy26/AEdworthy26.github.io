@@ -1,61 +1,61 @@
 // world-news-data.js
-// Auto-updated 2026-06-22 — do not edit manually
+// Auto-updated 2026-06-23 — do not edit manually
 
 var WORLD_NEWS = {
-  date: "2026-06-22",
+  date: "2026-06-23",
   main: {
-    title: "First Round of US-Iran Talks End With 'Encouraging Progress', Mediators Say",
-    category: "Diplomacy",
+    title: "US Eases Iran Oil Sanctions as Nuclear Inspection Dispute Clouds Diplomatic Progress",
+    category: "Geopolitics",
     content: [
-      "The first round of landmark US-Iran nuclear talks concluded in Switzerland on Sunday, with mediators from Qatar and Pakistan describing the outcome as showing 'encouraging progress' toward a lasting peace deal. The negotiations, held at Lake Lucerne, represent a significant diplomatic moment after years of heightened tensions between Washington and Tehran. Both sides are reported to have agreed on a roadmap intended to guide further discussions toward a final agreement.",
-      "The talks began on Sunday following an agreement reached last week that included a formal commitment to reach a final deal within 60 days, setting a tight but concrete timeline for negotiators. Qatari and Pakistani officials, who played key mediating roles, expressed cautious optimism about the trajectory of discussions, even as significant obstacles remain. The involvement of regional powers as intermediaries reflects the complexity of rebuilding trust between the two nations after years of escalating hostility.",
-      "However, the diplomatic atmosphere was complicated by notable strains over Lebanon, where ongoing Israeli military activity — including a deadly airstrike that killed leading Lebanese conservationist Mona Khalil — has continued to inflame regional tensions. The broader Middle East context looms large over the Switzerland negotiations, with any Iran deal likely to have far-reaching implications for proxy conflicts and alliances across the region. Mediators acknowledged that the path to a comprehensive agreement remains fraught with difficult trade-offs.",
-      "Adding to the complexity of the diplomatic moment, the Trump administration appeared to be sending mixed signals. Vice President Vance offered Iran an 'outstretched hand' during the talks, emphasising the administration\'s stated willingness to reach a deal, while President Trump simultaneously renewed threats of military action against Iran. This dual messaging has raised questions about the coherence of the American negotiating position and whether it could undermine the goodwill that mediators worked hard to cultivate during the first round.",
-      "Despite the internal contradictions in Washington\'s public posture, analysts noted that the mere fact of face-to-face engagement between US and Iranian officials represents a meaningful step. The 60-day deadline imposes real pressure on both delegations to make substantive progress quickly, limiting the space for prolonged procedural disputes. Whether the 'encouraging progress' reported by mediators can be translated into durable concessions on nuclear activity, sanctions relief, and regional security will be the defining test of the weeks ahead."
+      "The United States has moved to ease oil sanctions on Iran even as a significant dispute has emerged over the terms of recent diplomatic talks held in Switzerland. Vice President JD Vance publicly claimed that Iran had agreed to invite United Nations nuclear inspectors into the country, a statement that would have represented a major concession from Tehran. However, Iran\'s foreign ministry pushed back forcefully, insisting it had made 'no new commitments' on nuclear inspections during the negotiations.",
+      "The contradiction between the American and Iranian accounts of the Switzerland talks has cast a shadow over what was otherwise being portrayed as a diplomatic breakthrough. A reported 'roadmap' toward a final nuclear deal, to be reached within 60 days, had generated cautious optimism among international observers. The conflicting narratives now raise serious questions about how much common ground was genuinely established and whether both sides are negotiating in good faith.",
+      "The decision to ease oil sanctions represents a significant economic concession by the Trump administration, one that will provide Iran with greater access to international energy markets. Sanctions on Iranian oil have been a central lever of American pressure on Tehran for years, and loosening them signals a degree of trust — or at least pragmatic engagement — from Washington. Critics of the move may argue that easing sanctions before a final deal is secured weakens the United States' negotiating hand.",
+      "The nuclear inspections issue is particularly sensitive because international access to Iranian facilities has been severely curtailed since President Trump tore up the Obama-era nuclear agreement in 2018. That withdrawal set off years of escalating tensions, with Iran progressively expanding its uranium enrichment activities in response to renewed sanctions. Restoring meaningful inspections by the International Atomic Energy Agency has been considered a foundational requirement by Western powers for any new agreement to be credible.",
+      "The coming weeks will be critical in determining whether the roadmap framework can survive the early turbulence caused by these conflicting claims. Diplomats on both sides will need to clarify what was actually agreed in Switzerland and whether the language around nuclear inspections can be reconciled. With a 60-day window reportedly on the table, the pressure is on negotiators to translate the outlines of a deal into firm, verifiable commitments before the fragile momentum collapses entirely."
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/068d/live/1ae9c670-6de6-11f1-80ec-79912f81f3b2.jpg",
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/66d4/live/4c1d6d60-6ebc-11f1-8e1d-bbbb1017d210.jpg",
     source: "BBC News",
-    sourceUrl: "https://www.bbc.com/news/articles/cwy0q41v1lzo?at_medium=RSS&at_campaign=rss"
+    sourceUrl: "https://www.bbc.com/news/articles/c3vy3nr63gxo?at_medium=RSS&at_campaign=rss"
   },
   secondary: [
     {
       id: "s1",
-      title: "Trump-Backed Outsider Abelardo De La Espriella Headed for Victory in Colombia Election",
-      summary: "Political outsider and Trump-backed right-wing lawyer Abelardo de la Espriella has taken a preliminary lead in Colombia\'s presidential election, marking a sharp turn to the right for the country.",
+      title: "At Least 13 Killed in Explosion at Qatar\'s Main LNG Processing Site",
+      summary: "A 'technical accident' at the Ras Laffan industrial zone in Qatar has killed at least 13 people and left dozens more injured.",
       body: [
-        "Initial vote counts from Colombia\'s presidential election show Abelardo de la Espriella, a lawyer with no prior political experience, narrowly ahead of his rival Iván Cepeda. His opponent has cautioned that the preliminary count is 'not yet official or binding', leaving the final result subject to confirmation.",
-        "De la Espriella\'s apparent victory would represent a dramatic political shift for Colombia, with significant implications for the country\'s ongoing peace negotiations with rebel groups, which the incoming president has signalled he intends to abandon in favour of a tougher security approach. His win would also be seen as another consolidation of right-wing momentum across Latin America."
+        "An explosion at Qatar\'s main liquefied natural gas processing facility in the Ras Laffan industrial zone has caused significant casualties, with at least 13 people confirmed dead and dozens more reported injured. Authorities described the incident as a 'technical accident', though the precise cause was still under investigation at the time of reporting.",
+        "The Ras Laffan industrial zone is the heart of Qatar\'s vast LNG export infrastructure, making it one of the most strategically important energy sites in the world. Any disruption there carries potential implications for global gas supply chains, particularly for European and Asian nations that depend heavily on Qatari LNG imports."
       ],
-      image: "https://static01.nyt.com/images/2026/06/21/multimedia/21int-colombia-delaespriella-mkfg/21int-colombia-delaespriella-mkfg-mediumSquareAt3X.jpg",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/e7c6/live/d4d68270-6e46-11f1-8a85-d1d176b992ab.jpg",
       source: "BBC News",
-      url: "https://www.bbc.com/news/articles/clye4ky2yzpo?at_medium=RSS&at_campaign=rss",
-      category: "Politics"
+      url: "https://www.bbc.com/news/articles/cwy05llpjpno?at_medium=RSS&at_campaign=rss",
+      category: "Energy"
     },
     {
       id: "s2",
-      title: "Russian Troop Build-Up Threatens Kostyantynivka, Key to Ukraine\'s Donbas",
-      summary: "A significant Russian military build-up is threatening the Ukrainian city of Kostyantynivka, with analysts warning its fall could open the path to Ukraine\'s last remaining eastern strongholds.",
+      title: "Myanmar Army Killed Over 700 Civilians in Six Months, UN Reports",
+      summary: "A new UN report has found that Myanmar\'s military killed 702 civilians, including 153 children, over a six-month period last year.",
       body: [
-        "Russian forces have been amassing troops near Kostyantynivka in Ukraine\'s Donbas region, raising fears of an imminent major offensive push in the east. Military analysts warn that if the city falls, Russian forces would be positioned to advance toward Ukraine\'s final remaining strongholds in the region, dramatically altering the battlefield.",
-        "The development underscores the continued intensity of the conflict despite ongoing diplomatic efforts elsewhere, and highlights the strategic importance of holding key urban centres in the Donbas. Ukrainian forces are reportedly bracing for a sustained assault as the summer campaigning season intensifies pressure along the front lines."
+        "The United Nations has published a damning new report documenting the scale of violence perpetrated by Myanmar\'s military against civilian populations, with 702 deaths recorded over just six months. The toll includes 153 children, underlining the indiscriminate nature of the army\'s campaign against communities across the country.",
+        "The findings deepen international concern about the ongoing humanitarian catastrophe in Myanmar following the military coup of 2021, which plunged the country into civil conflict. Despite repeated international condemnations, the junta has continued its campaign of air strikes, artillery attacks, and ground operations targeting civilian areas."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/5cad/live/dd9b7ea0-6bf9-11f1-8546-8f19e4fe30f4.jpg",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/7875/live/4796c580-6e48-11f1-8a85-d1d176b992ab.jpg",
       source: "BBC News",
-      url: "https://www.bbc.com/news/articles/c9w2g0ewk95o?at_medium=RSS&at_campaign=rss",
-      category: "Conflict"
+      url: "https://www.bbc.com/news/articles/cnv97e42r7yo?at_medium=RSS&at_campaign=rss",
+      category: "Human Rights"
     },
     {
       id: "s3",
-      title: "Qatar LNG Factory Explosion Injures 54 and Leaves 18 Missing",
-      summary: "An explosion at a liquefied natural gas facility in Qatar\'s Ras Laffan Industrial City has injured 54 people and left 18 workers unaccounted for, according to the country\'s Ministry of Interior.",
+      title: "Ghana Conference Adopts Global Framework Calling for Slave Trade Reparations",
+      summary: "African and Caribbean leaders meeting in Accra have adopted a global framework for reparatory justice, demanding formal apologies and compensation from nations that benefited from the transatlantic slave trade.",
       body: [
-        "A blast at the Ras Laffan Industrial City in Qatar — one of the world\'s largest LNG production hubs — caused by what officials described as a 'technical malfunction' injured at least 54 people on Sunday. Eighteen individuals remain missing in the aftermath of the explosion, prompting an urgent emergency response from Qatari authorities.",
-        "Ras Laffan is critical infrastructure for Qatar\'s vast natural gas export industry, and any significant disruption there carries potential implications for global energy markets. The incident is under investigation, with authorities focused on accounting for all missing personnel and assessing the extent of damage to the facility."
+        "A landmark conference held in Accra, Ghana has concluded with the adoption of a global framework for reparatory justice, marking a significant milestone in the long-running international campaign for slavery reparations. Heads of state and government from African and Caribbean nations were among those who endorsed the framework, which includes calls for formal apologies, financial compensation, and debt relief.",
+        "Barbados Prime Minister Mia Mottley was among the most prominent voices at the conference, presenting a new manifesto that emphasises the particular harm done to African women during centuries of enslavement. The framework is now being considered by other Caribbean countries, signalling growing political momentum behind what has historically been a contentious and slow-moving diplomatic cause."
       ],
-      image: "https://images.unsplash.com/photo-1665398509046-a64bf0feb5ec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxRYXRhciUyMExORyUyMEZhY3RvcnklMjBFeHBsb3Npb24lMjBJbmp1cmVzJTIwNTQlMjBhbmQlMjBMZWF2ZXMlMjAxOCUyME1pc3Npbmd8ZW58MHwwfHx8MTc4MjEwNDQ4OHww&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "Al Jazeera",
-      url: "https://www.aljazeera.com/economy/2026/6/22/qatar-lng-factory-explosion-injures-54-leaves-18-missing-govt-says?traffic_source=rss",
-      category: "Economics"
+      image: "https://i.guim.co.uk/img/media/c388c02e62fcbc0aaa7507bd6786c18caf58e6e8/453_0_4525_3620/master/4525.jpg?width=1200&quality=85&auto=format&fit=max&s=ecbb989a87ba282483a2af2c54ff922c",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/news/2026/jun/19/global-framework-reparations-justice-adopted-at-landmark-conference-in-accra-ghana",
+      category: "International"
     }
   ]
 };

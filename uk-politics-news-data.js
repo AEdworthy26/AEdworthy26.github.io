@@ -1,60 +1,60 @@
 // uk-politics-news-data.js
-// Auto-updated 2026-06-22 — do not edit manually
+// Auto-updated 2026-06-23 — do not edit manually
 
 var UK_POLITICS_NEWS = {
-  date: "2026-06-22",
+  date: "2026-06-23",
   main: {
-    title: "Starmer Expected to Announce Exit Plan as Burnham Prepares for Downing Street",
+    title: "Labour MPs Mull Leadership Challenge to Prevent Burnham 'Coronation'",
     category: "Politics",
     content: [
-      "Keir Starmer is expected to announce a timetable for his departure as Prime Minister on Monday morning, clearing the way for Andy Burnham to assume the role without a formal leadership contest by the autumn. Cabinet ministers have indicated that Starmer will set out his intentions outside No 10 Downing Street, beginning a process that would represent the third change of prime minister in four years. The announcement, if it comes as anticipated, would bring to a close a turbulent period for the Labour government that has seen its poll ratings collapse and its parliamentary support fracture.",
-      "The expected resignation follows a seismic by-election result in Makerfield, where Andy Burnham — the outgoing Greater Manchester mayor — held off a strong challenge from Reform UK, defeating them by more than 9,000 votes. Burnham\'s commanding performance in the contest was widely interpreted as a personal mandate and a demonstration that Labour\'s fortunes could be revived under fresh leadership. The result sent shockwaves through Westminster, accelerating what had already been growing pressure on Starmer from within his own cabinet and parliamentary party.",
-      "BBC political editor Laura Kuenssberg has reported that talk of Starmer staying on to fight is fading fast, with support for the prime minister described as evaporating in the wake of Burnham\'s victory. Senior figures within the Labour Party, including Foreign Secretary Yvette Cooper — the most senior minister to do so — have reportedly told Starmer that he must go. Some MPs have warned that if Starmer does not set out a clear departure timetable, he may face pressure to leave as soon as mid-July.",
-      "Tech Secretary Peter Kyle acknowledged that the prime minister is discussing what he described as the 'political realities' of his position, language widely taken as confirmation that the question is no longer whether Starmer will go, but when. An autumn departure is understood to be the most likely scenario, potentially allowing Burnham to take over as prime minister by September without the need for a full internal party election. Burnham, for his part, has already begun signalling his policy priorities, insisting he will stick to existing fiscal rules while allies have published an ambitious blueprint for reversing decades of privatisation.",
-      "The BBC\'s political editor Chris Mason has noted that all eyes are on Downing Street as the nation waits for the prime minister to speak and set out his plans. Harriet Harman, the former Labour grandee, said the herd is 'not just moving' against Starmer — 'it\'s stampeding'. If Starmer does announce his exit on Monday, he will join a growing list of recent prime ministers whose tenures were cut short by political turbulence, leaving a Labour Party hopeful that Burnham can provide the reset it believes it urgently needs ahead of the next general election.",
+      "Senior figures within the Labour Party are actively considering launching leadership bids against Andy Burnham, concerned that the former Greater Manchester mayor may ascend to the party\'s top job — and by extension the keys to Downing Street — without any meaningful contest. Two prominent party figures are understood to be weighing up whether to enter the race, motivated primarily by a desire to ensure that the next leader\'s policy ideas are properly tested through the democratic rigour of a genuine campaign. The prospect of Burnham walking into the leadership unopposed has unsettled a significant faction within the parliamentary party, who believe that a coronation would be bad both for Labour\'s internal culture and for its credibility with the wider public.",
+      "The concern among potential challengers is not simply personal ambition, but a principled argument about democratic legitimacy within the Labour movement. A leadership contest, even a brief one ahead of Parliament\'s return in September, would force Burnham to articulate detailed policy positions, subject his programme to scrutiny, and build a broader coalition of support across the party. Without such a contest, critics argue, Labour could find itself led by someone whose platform has never been properly debated or tested against alternatives, leaving the party vulnerable to internal divisions further down the line.",
+      "Andy Burnham has moved quickly since Sir Keir Starmer\'s resignation, being sworn in as the MP for New Makerfield and immediately meeting with Labour MPs in an effort to, as former deputy leader Harriet Harman put it, 'win their confidence' as the next prime minister. He has pledged to stick to the government\'s existing fiscal rules, a signal to financial markets and to the centrist wing of the party that he does not intend a sharp lurch to the left. His supporters have been working the phones and the corridors of Westminster with considerable energy, and several high-profile endorsements — including from Health Secretary Wes Streeting — have already landed.",
+      "However, the briefing wars that have already broken out among Burnham\'s own camp — particularly over who should serve as his Chancellor, with rival factions pushing for either Wes Streeting or Energy Secretary Ed Miliband — suggest that even within his own coalition there are significant tensions to manage. These internal disagreements, playing out publicly so early in the transition, have given encouragement to those who believe a proper contest is needed to forge a coherent programme and to establish Burnham\'s authority on firmer ground. BBC political editor Chris Mason has noted that Burnham will have to set out his stall clearly and explain how he intends to deliver on his promises.",
+      "Starmer himself has said he will remain in post as Prime Minister until his successor is formally chosen, with the expectation that a new leader will be in place before Parliament returns in September. The compressed timetable adds further urgency to the question of whether any challenger can mount a credible campaign in the weeks available. Whatever the outcome, the turbulence surrounding what many assumed would be a straightforward transition underscores the degree to which the Labour Party, even in this moment of change, remains a coalition of competing visions for Britain\'s future."
     ],
-    image: "https://i.guim.co.uk/img/media/237144a6371cf04ab8cb9aaf8aa63d17ee3328cb/0_0_5000_4000/master/5000.jpg?width=1200&quality=85&auto=format&fit=max&s=3f45e3bedd6a47871a2a997ce36307f0",
-    source: "The Guardian",
-    sourceUrl: "https://www.theguardian.com/politics/2026/jun/21/keir-starmer-expected-exit-plan-clear-way-andy-burnham-become-pm"
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/2bd7/live/e09e4cd0-6eb6-11f1-b1db-af71d47507d6.jpg",
+    source: "BBC News",
+    sourceUrl: "https://www.bbc.com/news/articles/cx2kqd9ver1o?at_medium=RSS&at_campaign=rss"
   },
   secondary: [
     {
       id: "uk1",
-      title: "Burnham Says Labour Has 'Final Chance' to Change After Makerfield By-Election Win",
-      summary: "Andy Burnham declared Labour has one last opportunity to reform itself after his decisive by-election victory over Reform UK in Makerfield.",
+      title: "Why Did Keir Starmer Resign and What Could Happen Next?",
+      summary: "Sir Keir Starmer has stepped down as Prime Minister after conceding he is no longer the right person to lead the country, with Andy Burnham widely expected to succeed him.",
       body: [
-        "Andy Burnham won the Makerfield by-election, holding off a challenge from Reform UK by more than 9,000 votes in what has been widely seen as a personal triumph for the outgoing Greater Manchester mayor. Speaking after the result, Burnham issued a stark warning that Labour must use this moment as a genuine opportunity to change course, describing it as the party\'s final chance to reconnect with voters.",
-        "The result has dramatically shifted the political landscape in Westminster, with Burnham\'s victory providing the catalyst for mounting pressure on Prime Minister Keir Starmer to announce his departure. The by-election was viewed as a crucial test of whether Labour could resist the Reform UK surge in its traditional heartlands."
+        "Keir Starmer bowed to intense pressure to stand down as Prime Minister, announcing his resignation after a prolonged period of mounting political difficulties including disastrous local election results and calls to resign from over a hundred Labour MPs. He acknowledged in emotional terms that he was no longer the right man to lead the country, bringing to a close a tenure that began with Labour\'s historic election victory just two years ago.",
+        "Starmer has confirmed he will remain in Downing Street in a caretaker capacity until his successor is chosen, with the Labour Party targeting a new leader before Parliament resumes in September. The resignation marks a dramatic and rapid reversal of fortunes for a politician who led Labour back to power after more than a decade in opposition."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/8083/live/a61e62f0-6be8-11f1-8546-8f19e4fe30f4.jpg",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/a725/live/f1e30ea0-6e29-11f1-9fdc-51e252bb92b4.jpg",
       source: "BBC News",
-      url: "https://www.bbc.com/news/articles/c4gy72kmg1mo?at_medium=RSS&at_campaign=rss",
+      url: "https://www.bbc.com/news/articles/c0qyllvpkw8o?at_medium=RSS&at_campaign=rss",
       category: "Politics"
     },
     {
       id: "uk2",
-      title: "Farage Blames Makerfield Defeat on Anti-Starmer Protest Votes",
-      summary: "Reform UK leader Nigel Farage expressed disappointment at his party\'s failure to win Makerfield, attributing the result to voters motivated more by opposition to Starmer than genuine support for Labour.",
+      title: "Burnham Insists He Will Stick to Fiscal Rules",
+      summary: "Andy Burnham has moved to reassure financial markets and the Labour mainstream by pledging to adhere to the government\'s existing fiscal rules if he becomes Prime Minister.",
       body: [
-        "Nigel Farage said he was 'disappointed' with Reform UK\'s performance in the Makerfield by-election, arguing that the party\'s defeat was driven by voters who backed Labour not out of enthusiasm for the party but as a vehicle for expressing discontent with Keir Starmer\'s leadership. The Reform leader\'s comments suggested he viewed the result as an incomplete picture of his party\'s actual support in the region.",
-        "Farage\'s attempt to reframe the defeat reflects the broader challenge facing Reform UK, which had been widely expected to mount a serious challenge in the constituency. The Makerfield result will nonetheless be scrutinised closely as an indicator of whether the Reform surge can be contained in Labour\'s traditional northern strongholds."
+        "Andy Burnham has made an early and deliberate signal to economic centrists within the Labour Party and to financial markets by firmly committing to stick to the fiscal rules established under the Starmer government. The pledge is widely seen as an attempt to head off concerns that a Burnham-led government might abandon spending discipline in favour of a more expansionist economic agenda.",
+        "The commitment to fiscal responsibility is a significant political move for Burnham, who built his reputation partly on a more interventionist, community-focused brand of politics during his time as Greater Manchester mayor. By placing economic credibility at the heart of his early messaging, he is seeking to consolidate support from the parliamentary party\'s centrist bloc as the leadership succession unfolds."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/ea2e/live/0c5cbe50-6bc5-11f1-a417-cba5aab91344.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/cvgqvj8dkz7o?at_medium=RSS&at_campaign=rss",
+      image: "https://www.telegraph.co.uk/content/dam/politics/2026/06/20/TELEMMGLPICT000491411152_17819678399240_trans_NvBQzQNjv4BqXEWYWizxfw60_KM_phan_EoJLMgws7YtKL0t8Ddt16M.jpeg",
+      source: "The Telegraph",
+      url: "https://www.telegraph.co.uk/politics/2026/06/20/keir-starmer-latest-news-andy-burnham-labour-leader-resign/",
       category: "Politics"
     },
     {
       id: "uk3",
-      title: "Burnham Ally Unveils Ambitious Plan to Reverse Decades of Privatisation",
-      summary: "A policy blueprint associated with Andy Burnham\'s allies sets out plans for the state to regain control of failing utilities, in a fleshing out of the so-called 'Manchesterism' agenda.",
+      title: "Three in Five Gen Z Britons Would Like New Vote to Rejoin EU, Poll Finds",
+      summary: "Exclusive polling reveals that 60% of Britons aged 18 to 28 would vote to rejoin the European Union if given the opportunity, reflecting deep generational dissatisfaction with Brexit.",
       body: [
-        "A new policy paper linked to Andy Burnham\'s allies has outlined an ambitious programme to reverse 40 years of privatisation, envisaging the state taking over failing utilities through a mechanism of 'bonds for shares' and the creation of state competitors to private providers. The document, described as a blueprint for 'Manchesterism', argues that a Burnham-led government should make life more affordable by returning control of essential services to public hands.",
-        "The publication of the paper signals that Burnham\'s allies are already thinking ambitiously about the policy direction of a potential new administration, even as the formal transition of power has yet to begin. The plans are likely to prove both a rallying point for Labour\'s left and a source of scrutiny from those who will question their economic implications and fiscal compatibility."
+        "New exclusive polling published by The Guardian shows that three in five Generation Z Britons — those aged between 18 and 28 — would vote to rejoin the European Union if a fresh referendum were held, on the tenth anniversary of the original Brexit vote. Many in this cohort were too young to participate in the 2016 referendum and now believe that Britain\'s departure from the EU has failed to deliver on its promises.",
+        "The findings add a significant generational dimension to the ongoing debate about Britain\'s future relationship with Europe, coming as the country marks a decade since the Leave campaign\'s victory fundamentally reshaped its politics. The poll suggests that as younger voters come to represent a larger share of the electorate, pressure for a reconsideration of Brexit could intensify considerably in the years ahead."
       ],
-      image: "https://i.guim.co.uk/img/media/2ef361453206d43d0710fddd27c3ed07620c5b41/1044_91_4401_3523/master/4401.jpg?width=1200&quality=85&auto=format&fit=max&s=0bb946944cf28a87c369ebb67b452a0c",
+      image: "https://i.guim.co.uk/img/media/802bfb9c0ff0f3029701b319a77db3dbe346c9ff/472_0_4320_3456/master/4320.jpg?width=1200&quality=85&auto=format&fit=max&s=4c5be170eb3c8649e03e92e79ad08447",
       source: "The Guardian",
-      url: "https://www.theguardian.com/politics/2026/jun/21/burnham-ally-to-unveil-ambitious-plan-to-reverse-decades-of-privatisation",
+      url: "https://www.theguardian.com/politics/2026/jun/23/majority-gen-z-britons-new-vote-rejoin-eu-poll-finds",
       category: "Politics"
     }
   ]

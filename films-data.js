@@ -1,18 +1,18 @@
 // films-data.js
-// Auto-updated 2026-06-22 — do not edit manually
+// Auto-updated 2026-06-23 — do not edit manually
 
 var FILMS_DATA = {
-  date: "2026-06-22",
+  date: "2026-06-23",
   film: {
-    title: "The Heartbreak Kid",
-    director: "Elaine May",
-    year: 1972,
-    genres: ["Comedy", "Romance"],
-    desc: "Elaine May\'s savage romantic comedy follows a newlywed who becomes infatuated with a golden California girl during his honeymoon, ruthlessly abandoning his perfectly decent new wife in pursuit of an impossible ideal. Charles Grodin delivers one of the great comic performances of the 1970s — a man of breathtaking self-delusion whose charming persistence curdles into something genuinely unsettling. The film is wickedly funny and deeply uncomfortable in equal measure, skewering American romantic mythology with a precision that feels almost surgical. Neil Simon adapted Bruce Jay Friedman\'s story, but it is May\'s cool, unsparing direction that transforms it into something far darker than a conventional comedy about marrying the wrong person. Decades on, it remains one of the most honest — and quietly brutal — films ever made about desire, fantasy, and the stories men tell themselves.",
-    cast: ["Charles Grodin", "Cybill Shepherd", "Jeannie Berlin"],
-    rating: 94,
+    title: "The Fits",
+    director: "Anna Rose Holmer",
+    year: 2015,
+    genres: ["Drama", "Coming-of-Age"],
+    desc: "A quietly electrifying debut feature set almost entirely within a Cincinnati community center, where an eleven-year-old tomboy named Toni drifts from the boxing gym toward a girls' drill team — and finds herself caught up in a mysterious wave of seizures spreading through the squad. Anna Rose Holmer shoots the film with a dancer\'s instinct for rhythm and space, turning ordinary hallways and locker rooms into something hypnotic and slightly uncanny. Royalty Hightower\'s nearly wordless central performance is one of the great discoveries of recent American cinema — she communicates an entire inner life through posture, breath, and hesitation alone. The film sits somewhere between social realism and fable, using collective hysteria as a lens for the bewildering, bodily experience of girlhood and belonging. Spare, strange, and utterly confident, it lingers in the mind the way only the best short novels do.",
+    cast: ["Royalty Hightower", "Alexis Neblett", "Da\'Sean Minor"],
+    rating: 98,
     ratingSource: "Rotten Tomatoes",
-    ratingExtra: "2 Academy Award nominations",
-    posterUrl: "https://upload.wikimedia.org/wikipedia/en/f/f2/The_Heartbreak_Kid_%281972_film%29.jpg"
+    ratingExtra: "Gotham Award Winner",
+    posterUrl: "https://upload.wikimedia.org/wikipedia/en/f/ff/The_Fits_poster.jpg"
   }
 };

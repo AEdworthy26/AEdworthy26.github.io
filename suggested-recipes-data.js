@@ -1,180 +1,214 @@
 // suggested-recipes-data.js
-// Auto-updated 2026-06-22 — do not edit manually
+// Auto-updated 2026-06-23 — do not edit manually
 
 window.SUGGESTED_RECIPES = [
   {
     id: "sug1",
-    title: "Slow-Braised Hungarian Beef Goulash with Egg Noodles & Sour Cream",
-    category: "Beef",
+    title: "Jamaican Brown Stew Chicken with Rice & Peas and Fried Plantain",
+    category: "Chicken",
     calories: 610,
-    protein: 42,
-    fibre: 5,
-    healthScore: 68,
-    time: "2 hrs 15 mins",
+    protein: 44,
+    fibre: 6,
+    healthScore: 71,
+    time: "1 hr 15 mins",
     serves: "4",
-    desc: "A deeply satisfying Central European classic built on a foundation of caramelised onions, sweet Hungarian paprika and slow-braised beef shin — rich, velvety and powerfully flavoured. Served over buttered egg noodles with a generous spoonful of sour cream and a scattering of fresh dill, this is cold-weather comfort cooking at its most honest and delicious.",
-    emoji: "🥩",
-    image: "https://images.unsplash.com/photo-1743148843470-8fd92a31c473?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTbG93LUJyYWlzZWQlMjBIdW5nYXJpYW4lMjBCZWVmJTIwR291bGFzaCUyMHdpdGglMjBFZ2clMjBOb29kbGVzJTIwJTI2JTIwU291ciUyMENyZWFtJTIwZm9vZCUyMGRpc2h8ZW58MHwwfHx8MTc4MjEwNTE3OHww&ixlib=rb-4.1.0&q=80&w=1080",
+    desc: "A deeply flavoured Caribbean classic where chicken pieces are marinated in a punchy blend of allspice, scotch bonnet, and browning sauce, then slow-simmered until the sauce turns rich, glossy and intensely savoury. Served alongside coconut-scented rice and peas and golden fried plantain, this is comfort food with serious soul.",
+    emoji: "🍗",
+    image: "https://images.unsplash.com/photo-1632852576480-c10a8e19496a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxKYW1haWNhbiUyMEJyb3duJTIwU3RldyUyMENoaWNrZW4lMjB3aXRoJTIwUmljZSUyMCUyNiUyMFBlYXMlMjBhbmQlMjBGcmllZCUyMFBsYW50YWluJTIwZm9vZCUyMGRpc2h8ZW58MHwwfHx8MTc4MjE5MTYwNHww&ixlib=rb-4.1.0&q=80&w=1080",
     ingredientGroups: [
       {
-        group: "Goulash",
+        group: "Chicken & Marinade",
         items: [
-          { name: "Beef shin (or chuck), cut into 4cm chunks", quantity: 900, unit: "g" },
-          { name: "White onions, finely sliced", quantity: 3, unit: "large" },
-          { name: "Garlic cloves, finely sliced", quantity: 4, unit: "" },
-          { name: "Sweet Hungarian paprika", quantity: 3, unit: "tbsp" },
-          { name: "Hot smoked paprika", quantity: 1, unit: "tsp" },
-          { name: "Caraway seeds", quantity: 1, unit: "tsp" },
-          { name: "Tomato purée", quantity: 2, unit: "tbsp" },
-          { name: "Roasted red peppers (jarred), roughly chopped", quantity: 2, unit: "" },
-          { name: "Beef stock", quantity: 700, unit: "ml" },
-          { name: "Dry red wine", quantity: 150, unit: "ml" },
-          { name: "Bay leaves", quantity: 2, unit: "" },
-          { name: "Neutral oil", quantity: 2, unit: "tbsp" },
-          { name: "Salt and black pepper", quantity: 0, unit: "to taste" }
+          { name: "Bone-in chicken thighs and drumsticks", quantity: 1.2, unit: "kg" },
+          { name: "Browning sauce (or dark soy sauce)", quantity: 2, unit: "tbsp" },
+          { name: "Scotch bonnet chilli, finely chopped", quantity: 1, unit: "" },
+          { name: "Garlic cloves, minced", quantity: 4, unit: "" },
+          { name: "Fresh thyme sprigs", quantity: 6, unit: "" },
+          { name: "Ground allspice", quantity: 1.5, unit: "tsp" },
+          { name: "Smoked paprika", quantity: 1, unit: "tsp" },
+          { name: "Spring onions, roughly chopped", quantity: 4, unit: "" },
+          { name: "Salt and black pepper", quantity: 1, unit: "to taste" }
         ]
       },
       {
-        group: "To Serve",
+        group: "Brown Stew Sauce",
         items: [
-          { name: "Dried egg noodles or spätzle", quantity: 350, unit: "g" },
-          { name: "Unsalted butter", quantity: 30, unit: "g" },
-          { name: "Full-fat sour cream", quantity: 120, unit: "ml" },
-          { name: "Fresh dill, roughly chopped", quantity: 15, unit: "g" },
-          { name: "Sweet paprika, for dusting", quantity: 1, unit: "pinch" }
+          { name: "Vegetable oil", quantity: 3, unit: "tbsp" },
+          { name: "Brown sugar", quantity: 1, unit: "tbsp" },
+          { name: "White onion, sliced", quantity: 1, unit: "large" },
+          { name: "Red pepper, sliced", quantity: 1, unit: "" },
+          { name: "Tomatoes, roughly chopped", quantity: 3, unit: "" },
+          { name: "Chicken stock", quantity: 300, unit: "ml" },
+          { name: "Ketchup", quantity: 2, unit: "tbsp" },
+          { name: "Worcestershire sauce", quantity: 1, unit: "tbsp" }
+        ]
+      },
+      {
+        group: "Rice & Peas",
+        items: [
+          { name: "Long-grain white rice", quantity: 300, unit: "g" },
+          { name: "Coconut milk", quantity: 400, unit: "ml" },
+          { name: "Kidney beans (tinned, drained)", quantity: 400, unit: "g" },
+          { name: "Water", quantity: 250, unit: "ml" },
+          { name: "Garlic clove, whole", quantity: 1, unit: "" },
+          { name: "Fresh thyme sprig", quantity: 2, unit: "" },
+          { name: "Salt", quantity: 1, unit: "tsp" }
+        ]
+      },
+      {
+        group: "Fried Plantain",
+        items: [
+          { name: "Ripe plantains (yellow-black skin)", quantity: 2, unit: "" },
+          { name: "Vegetable oil for frying", quantity: 4, unit: "tbsp" }
         ]
       }
     ],
     substitutes: [
-      { ingredient: "Beef shin", alternatives: ["Beef chuck", "Beef brisket"] },
-      { ingredient: "Hungarian sweet paprika", alternatives: ["Spanish sweet paprika (slightly less earthy)", "A mix of mild paprika and a pinch of smoked paprika"] },
-      { ingredient: "Egg noodles", alternatives: ["Pappardelle", "Mashed potato"] },
-      { ingredient: "Sour cream", alternatives: ["Crème fraîche", "Full-fat Greek yoghurt"] }
+      { ingredient: "Scotch bonnet chilli", alternatives: ["Habanero chilli", "½ tsp cayenne pepper plus 1 red chilli"] },
+      { ingredient: "Browning sauce", alternatives: ["Dark soy sauce", "Worcestershire sauce with a pinch of sugar"] },
+      { ingredient: "Ripe plantains", alternatives: ["Firm but ripe bananas, pan-fried briefly", "Sweet potato wedges, roasted"] }
     ],
     instructions: [
-      "Step 1 — Pat the beef chunks thoroughly dry with kitchen paper and season generously with salt and black pepper. Heat the oil in a large, heavy-based casserole dish or Dutch oven over a high heat. Sear the beef in two batches — don\'t crowd the pan — until deep brown on all sides, about 4–5 minutes per batch. Remove the beef and set aside.",
-      "Step 2 — Reduce the heat to medium-low and add the sliced onions to the same pan. Cook slowly, stirring occasionally, for 20–25 minutes until deeply golden and jammy. This is essential — the onions form the backbone of the goulash. Add the garlic and caraway seeds and cook for a further 2 minutes.",
-      "Step 3 — Remove the pan from the heat briefly and stir in both paprikas and the tomato purée, coating the onions completely. Return to medium heat and cook, stirring, for 1–2 minutes until fragrant — this blooms the paprika without burning it.",
-      "Step 4 — Pour in the red wine and let it bubble vigorously, scraping up any caramelised bits from the base of the pan. Add the chopped roasted peppers, beef stock and bay leaves. Return the seared beef and any resting juices to the pot. The liquid should come roughly halfway up the beef.",
-      "Step 5 — Bring to a gentle simmer, then cover and cook on a very low heat for 1 hour 45 minutes to 2 hours, until the beef is completely tender and falling apart. Check occasionally and add a splash of water if the sauce looks too thick. Taste and adjust seasoning.",
-      "Step 6 — About 15 minutes before serving, cook the egg noodles in well-salted boiling water according to packet instructions. Drain, toss with the butter and a pinch of salt.",
-      "Step 7 — Divide the buttered noodles between deep bowls, ladle the goulash generously over the top, add a large dollop of sour cream, scatter over the fresh dill and finish with a dusting of sweet paprika. Serve immediately."
+      "Step 1 — Marinate the chicken: In a large bowl, combine the browning sauce, scotch bonnet, garlic, thyme, allspice, smoked paprika, spring onions, salt, and pepper. Score the chicken pieces a few times with a knife so the marinade penetrates, then coat thoroughly. Cover and refrigerate for at least 30 minutes, or overnight for maximum depth.",
+      "Step 2 — Start the rice and peas: Rinse the rice until the water runs clear. In a medium saucepan, combine the coconut milk, water, kidney beans, garlic clove, thyme, and salt. Bring to a boil, stir in the rice, then reduce heat to the lowest setting, cover tightly, and cook for 18–20 minutes until all liquid is absorbed. Remove from heat and leave covered for 5 minutes before fluffing with a fork.",
+      "Step 3 — Brown the chicken: Heat the vegetable oil in a large, heavy-based pan or Dutch oven over high heat. Add the brown sugar to the hot oil and let it caramelise to a dark amber — this 'burning' step gives the stew its characteristic deep colour. Working in batches, add the marinated chicken pieces and brown well on all sides, about 3–4 minutes per side. Remove and set aside.",
+      "Step 4 — Build the stew: In the same pan, reduce heat to medium and fry the sliced onion and red pepper until softened, about 4 minutes. Add the chopped tomatoes and cook down for 3 minutes. Pour in the chicken stock, ketchup, and Worcestershire sauce, scraping up any sticky bits from the base. Return the browned chicken to the pan.",
+      "Step 5 — Simmer to perfection: Bring to a gentle boil, then reduce heat to low, cover partially, and simmer for 35–40 minutes until the chicken is tender and cooked through, and the sauce has reduced to a thick, glossy consistency. Taste and adjust seasoning — it should be bold, slightly sweet, and deeply savoury.",
+      "Step 6 — Fry the plantain: Peel and slice the ripe plantains on a diagonal into 1.5cm pieces. Heat the oil in a frying pan over medium-high heat and fry the plantain slices for 2–3 minutes per side until deeply golden and caramelised. Drain on kitchen paper and season lightly with salt.",
+      "Step 7 — Serve: Mound the coconut rice and peas onto plates, lay the brown stew chicken alongside with a generous spoonful of the glossy sauce, and add the fried plantain. Garnish with fresh thyme and enjoy immediately."
     ]
   },
   {
     id: "sug2",
-    title: "Thai Turmeric & Lemongrass Grilled Mackerel with Green Mango Slaw & Jasmine Rice",
-    category: "Fish & Seafood",
-    calories: 490,
-    protein: 35,
-    fibre: 6,
-    healthScore: 81,
-    time: "40 mins",
+    title: "Venetian-Style Scallop & Radicchio Pasta — Capesante al Radicchio",
+    category: "Pasta & Grains",
+    calories: 540,
+    protein: 31,
+    fibre: 4,
+    healthScore: 68,
+    time: "35 mins",
     serves: "2",
-    desc: "Whole mackerel fillets marinated in a punchy paste of fresh turmeric, lemongrass and fish sauce, then griddled until blistered and crisp-skinned — the kind of dish you\'d eat at a Thai roadside grill. The cooling green mango slaw with toasted peanuts, bird\'s eye chilli and lime cuts perfectly through the oily richness of the fish, making every bite feel alive and balanced.",
-    emoji: "🐟",
-    image: "https://images.unsplash.com/photo-1579619002916-88cd4c81a70c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUaGFpJTIwVHVybWVyaWMlMjAlMjYlMjBMZW1vbmdyYXNzJTIwR3JpbGxlZCUyME1hY2tlcmVsJTIwd2l0aCUyMEdyZWVuJTIwTWFuZ28lMjBTbGF3JTIwJTI2JTIwSmFzbWluZSUyMFJpY2UlMjBmb29kJTIwZGlzaHxlbnwwfDB8fHwxNzgyMTA1MTc5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    desc: "A sophisticated yet unfussy Northern Italian pasta where sweet, seared scallops meet bitter braised radicchio in a silky white wine and butter sauce — a combination beloved in Venice\'s bacari wine bars. The radicchio mellows and turns jammy as it cooks, balancing the richness of the sauce with a distinctive, pleasantly bitter edge.",
+    emoji: "🍝",
+    image: "https://images.unsplash.com/photo-1590759439877-30638b1a4d84?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxWZW5ldGlhbi1TdHlsZSUyMFNjYWxsb3AlMjAlMjYlMjBSYWRpY2NoaW8lMjBQYXN0YSUyMCVFMiU4MCU5NCUyMENhcGVzYW50ZSUyMGFsJTIwUmFkaWNjaGlvJTIwZm9vZCUyMGRpc2h8ZW58MHwwfHx8MTc4MjE5MTYwNHww&ixlib=rb-4.1.0&q=80&w=1080",
     ingredientGroups: [
       {
-        group: "Fish & Marinade",
+        group: "Main",
         items: [
-          { name: "Whole mackerel fillets, skin-on", quantity: 4, unit: "" },
-          { name: "Fresh turmeric, grated (or 1 tsp ground)", quantity: 15, unit: "g" },
-          { name: "Lemongrass stalks, inner white part only, finely minced", quantity: 2, unit: "" },
-          { name: "Garlic cloves, grated", quantity: 3, unit: "" },
-          { name: "Fish sauce", quantity: 2, unit: "tbsp" },
-          { name: "Coconut sugar (or light brown sugar)", quantity: 1, unit: "tbsp" },
-          { name: "Neutral oil", quantity: 1, unit: "tbsp" }
+          { name: "Dried tagliatelle or linguine", quantity: 200, unit: "g" },
+          { name: "King scallops (roe on or off)", quantity: 8, unit: "" },
+          { name: "Radicchio (Treviso or round), shredded", quantity: 150, unit: "g" },
+          { name: "Shallots, finely sliced", quantity: 2, unit: "" },
+          { name: "Garlic cloves, finely sliced", quantity: 2, unit: "" }
         ]
       },
       {
-        group: "Green Mango Slaw",
+        group: "Sauce",
         items: [
-          { name: "Green (unripe) mango, peeled and julienned", quantity: 1, unit: "large" },
-          { name: "Carrot, peeled and julienned", quantity: 1, unit: "large" },
-          { name: "Bird\'s eye chilli, finely sliced", quantity: 1, unit: "" },
-          { name: "Shallots, finely sliced", quantity: 2, unit: "" },
-          { name: "Fresh coriander leaves", quantity: 20, unit: "g" },
-          { name: "Fresh mint leaves", quantity: 10, unit: "g" },
-          { name: "Roasted peanuts, roughly crushed", quantity: 40, unit: "g" },
-          { name: "Lime juice", quantity: 3, unit: "tbsp" },
-          { name: "Fish sauce", quantity: 1, unit: "tbsp" },
-          { name: "Coconut sugar", quantity: 1, unit: "tsp" }
+          { name: "Dry white wine", quantity: 120, unit: "ml" },
+          { name: "Unsalted butter", quantity: 40, unit: "g" },
+          { name: "Extra virgin olive oil", quantity: 3, unit: "tbsp" },
+          { name: "Double cream", quantity: 3, unit: "tbsp" },
+          { name: "Lemon, juice and zest", quantity: 0.5, unit: "" },
+          { name: "Salt and white pepper", quantity: 1, unit: "to taste" }
+        ]
+      },
+      {
+        group: "To Finish",
+        items: [
+          { name: "Flat-leaf parsley, finely chopped", quantity: 3, unit: "tbsp" },
+          { name: "Toasted pine nuts", quantity: 2, unit: "tbsp" },
+          { name: "Pasta cooking water, reserved", quantity: 100, unit: "ml" }
+        ]
+      }
+    ],
+    substitutes: [
+      { ingredient: "King scallops", alternatives: ["Large tiger prawns, peeled", "Monkfish medallions"] },
+      { ingredient: "Radicchio", alternatives: ["Red chicory (endive)", "Cavolo nero, thinly shredded"] },
+      { ingredient: "Double cream", alternatives: ["Crème fraîche", "Omit and use extra pasta water for a lighter sauce"] }
+    ],
+    instructions: [
+      "Step 1 — Prepare the scallops: Pat the scallops completely dry with kitchen paper — this is essential for a proper sear. Season generously with salt and white pepper on both flat sides just before cooking. If any scallops have a small tough muscle on the side, peel it away and discard.",
+      "Step 2 — Cook the pasta: Bring a large pot of well-salted water to a rolling boil. Cook the tagliatelle for 1–2 minutes less than the packet instructions (it will finish in the sauce). Before draining, scoop out at least 100ml of the starchy cooking water and set aside.",
+      "Step 3 — Braise the radicchio: While the pasta cooks, heat 2 tbsp olive oil in a large wide frying pan over medium heat. Add the shallots and cook gently for 3–4 minutes until softened. Add the garlic and cook for 1 minute. Add the shredded radicchio and toss to coat, cooking for 2 minutes until it begins to wilt. Pour in the white wine and let it bubble vigorously for 2 minutes until reduced by half.",
+      "Step 4 — Build the sauce: Reduce the heat to medium-low. Stir in the butter and double cream, then squeeze in the lemon juice and add the zest. Let the sauce simmer gently for 2 minutes until lightly thickened. Season well.",
+      "Step 5 — Sear the scallops: In a separate small frying pan, heat the remaining 1 tbsp olive oil over the highest heat until almost smoking. Add the scallops in a single layer without crowding (do in batches if needed) and sear for exactly 90 seconds without touching — they should develop a deep golden crust. Flip and cook for 60 seconds on the other side. They should be golden outside and just set with a pearlescent centre. Remove from the heat immediately.",
+      "Step 6 — Finish the pasta: Add the drained pasta directly to the radicchio sauce pan along with a splash of pasta water. Toss vigorously over medium heat for 1–2 minutes until the sauce coats every strand beautifully. Add more pasta water if needed to loosen.",
+      "Step 7 — Serve: Twirl the pasta into warmed shallow bowls. Place 4 scallops on top of each portion, spoon over any resting juices from the scallop pan, and scatter with chopped parsley and toasted pine nuts. Serve immediately."
+    ]
+  },
+  {
+    id: "sug3",
+    title: "Ethiopian Misir Wot — Spiced Red Lentil Stew with Injera-Style Flatbreads & Ayib",
+    category: "Vegan",
+    calories: 495,
+    protein: 22,
+    fibre: 14,
+    healthScore: 88,
+    time: "55 mins",
+    serves: "4",
+    desc: "Misir Wot is one of Ethiopia\'s greatest dishes — a deeply spiced, velvety red lentil stew built on a slow-cooked base of caramelised onions and homemade berbere spice blend, with warmth that builds gradually and lingers. Served with easy teff-style flatbreads (made with a mixture of teff and plain flour for accessibility) and fresh ayib-style crumbled cheese, this is one of the most satisfying and nutritious bowls you can make.",
+    emoji: "🫘",
+    image: "https://images.pexels.com/photos/958546/pexels-photo-958546.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    ingredientGroups: [
+      {
+        group: "Misir Wot (Lentil Stew)",
+        items: [
+          { name: "Split red lentils", quantity: 350, unit: "g" },
+          { name: "White onions, very finely diced", quantity: 3, unit: "large" },
+          { name: "Garlic cloves, minced", quantity: 5, unit: "" },
+          { name: "Fresh ginger, grated", quantity: 2, unit: "tbsp" },
+          { name: "Vegetable oil", quantity: 5, unit: "tbsp" },
+          { name: "Tomato purée", quantity: 2, unit: "tbsp" },
+          { name: "Vegetable stock", quantity: 750, unit: "ml" },
+          { name: "Salt", quantity: 1.5, unit: "tsp" }
+        ]
+      },
+      {
+        group: "Berbere Spice Blend",
+        items: [
+          { name: "Hot smoked paprika", quantity: 2, unit: "tbsp" },
+          { name: "Ground cumin", quantity: 1.5, unit: "tsp" },
+          { name: "Ground coriander", quantity: 1, unit: "tsp" },
+          { name: "Ground fenugreek", quantity: 0.5, unit: "tsp" },
+          { name: "Ground cardamom", quantity: 0.5, unit: "tsp" },
+          { name: "Ground cinnamon", quantity: 0.25, unit: "tsp" },
+          { name: "Ground cloves", quantity: 0.25, unit: "tsp" },
+          { name: "Black pepper, freshly ground", quantity: 0.5, unit: "tsp" },
+          { name: "Cayenne pepper", quantity: 0.5, unit: "tsp" }
+        ]
+      },
+      {
+        group: "Flatbreads",
+        items: [
+          { name: "Teff flour", quantity: 100, unit: "g" },
+          { name: "Plain flour", quantity: 150, unit: "g" },
+          { name: "Warm water", quantity: 200, unit: "ml" },
+          { name: "Salt", quantity: 0.5, unit: "tsp" },
+          { name: "Baking powder", quantity: 0.5, unit: "tsp" }
         ]
       },
       {
         group: "To Serve",
         items: [
-          { name: "Jasmine rice, cooked", quantity: 300, unit: "g" },
-          { name: "Lime wedges", quantity: 2, unit: "" }
+          { name: "Feta cheese (or cottage cheese), crumbled", quantity: 100, unit: "g" },
+          { name: "Fresh coriander leaves", quantity: 1, unit: "handful" },
+          { name: "Lemon wedges", quantity: 4, unit: "" }
         ]
       }
     ],
     substitutes: [
-      { ingredient: "Mackerel", alternatives: ["Trout fillets", "Sardines", "Sea bream"] },
-      { ingredient: "Green mango", alternatives: ["Granny Smith apple (julienned)", "Green papaya"] },
-      { ingredient: "Fresh turmeric", alternatives: ["1 tsp ground turmeric"] },
-      { ingredient: "Coconut sugar", alternatives: ["Light brown sugar", "Palm sugar"] }
+      { ingredient: "Teff flour", alternatives: ["Wholemeal flour for all the flatbread flour", "Buckwheat flour blended with plain flour"] },
+      { ingredient: "Fenugreek (ground)", alternatives: ["Omit or use a pinch of dried methi leaves", "Extra cumin as a mild substitute"] },
+      { ingredient: "Feta cheese", alternatives: ["Ricotta salata", "Omit entirely to keep the dish fully vegan"] }
     ],
     instructions: [
-      "Step 1 — Combine the grated turmeric, minced lemongrass, grated garlic, fish sauce, coconut sugar and oil in a bowl to form a loose paste. Score the skin of each mackerel fillet three times diagonally with a sharp knife — this helps the marinade penetrate and prevents curling. Coat the fillets all over with the paste and leave to marinate for at least 20 minutes at room temperature.",
-      "Step 2 — While the fish marinates, make the slaw. Whisk together the lime juice, fish sauce and coconut sugar in a large bowl until the sugar dissolves. Add the julienned mango and carrot, sliced shallots, bird\'s eye chilli, coriander and mint. Toss well to combine and set aside — the acid will slightly soften the mango as it sits.",
-      "Step 3 — Heat a griddle pan or heavy non-stick frying pan over a high heat until very hot. Lay the mackerel fillets skin-side down and press gently with a spatula for the first 30 seconds to ensure full contact. Cook for 3–4 minutes until the skin is deeply charred and crisp, then carefully flip and cook for a further 1–2 minutes on the flesh side. The fish should be just cooked through.",
-      "Step 4 — Just before serving, scatter the crushed peanuts over the slaw and toss lightly. Divide the jasmine rice between two plates, lay two mackerel fillets alongside each portion, and pile the green mango slaw next to the fish. Finish with lime wedges for squeezing over everything at the table."
-    ]
-  },
-  {
-    id: "sug3",
-    title: "Roman-Style Cacio e Pepe Risotto with Crispy Sage & Toasted Hazelnuts",
-    category: "Vegetarian",
-    calories: 540,
-    protein: 16,
-    fibre: 3,
-    healthScore: 59,
-    time: "45 mins",
-    serves: "4",
-    desc: "All the bold, peppery intensity of Rome\'s great Cacio e Pepe pasta — but reimagined as a deeply creamy risotto, where the starchy Arborio creates a sauce-like mantecatura that carries the Pecorino and Parmesan beautifully. Crispy fried sage leaves and toasted hazelnuts add texture and a nutty earthiness that lifts the whole dish into genuinely special territory.",
-    emoji: "🧀",
-    image: "https://images.pexels.com/photos/5175581/pexels-photo-5175581.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    ingredientGroups: [
-      {
-        group: "Risotto",
-        items: [
-          { name: "Arborio rice", quantity: 320, unit: "g" },
-          { name: "Dry white wine", quantity: 150, unit: "ml" },
-          { name: "Good quality vegetable stock, kept hot", quantity: 1.2, unit: "litres" },
-          { name: "Shallots, finely diced", quantity: 2, unit: "" },
-          { name: "Unsalted butter", quantity: 60, unit: "g" },
-          { name: "Pecorino Romano, finely grated", quantity: 80, unit: "g" },
-          { name: "Parmesan, finely grated", quantity: 60, unit: "g" },
-          { name: "Black peppercorns, very coarsely cracked in a pestle and mortar", quantity: 2, unit: "tsp" },
-          { name: "Olive oil", quantity: 1, unit: "tbsp" },
-          { name: "Salt", quantity: 0, unit: "to taste" }
-        ]
-      },
-      {
-        group: "Crispy Garnish",
-        items: [
-          { name: "Fresh sage leaves", quantity: 16, unit: "" },
-          { name: "Blanched hazelnuts, roughly chopped", quantity: 50, unit: "g" },
-          { name: "Unsalted butter", quantity: 20, unit: "g" }
-        ]
-      }
-    ],
-    substitutes: [
-      { ingredient: "Pecorino Romano", alternatives: ["Additional Parmesan (milder result)", "Grana Padano"] },
-      { ingredient: "Arborio rice", alternatives: ["Carnaroli rice (even creamier)", "Vialone Nano"] },
-      { ingredient: "Hazelnuts", alternatives: ["Toasted pine nuts", "Toasted walnuts"] },
-      { ingredient: "Dry white wine", alternatives: ["Extra stock with a squeeze of lemon", "Dry vermouth"] }
-    ],
-    instructions: [
-      "Step 1 — Toast the cracked black peppercorns in a dry pan over medium heat for 60–90 seconds until fragrant. Set aside. This step dramatically intensifies the pepper\'s flavour and is what makes Cacio e Pepe truly special.",
-      "Step 2 — Warm the vegetable stock in a saucepan and keep it at a gentle simmer throughout cooking — cold stock slows the process and makes risotto gluey. In a separate wide, heavy-based pan, melt half the butter with the olive oil over a medium heat. Add the shallots and a pinch of salt and cook gently for 6–8 minutes until completely soft and translucent.",
-      "Step 3 — Add the Arborio rice and stir to coat in the butter for 2 minutes until the edges of each grain turn slightly translucent. Pour in the white wine and stir continuously until fully absorbed.",
-      "Step 4 — Add the toasted cracked pepper now, stirring it through the rice. Begin adding the hot stock one ladleful at a time, stirring constantly and only adding the next ladle once the previous one is fully absorbed. Continue for 18–20 minutes until the rice is al dente — tender with just a little bite — and the risotto is flowing and loose. You may not need all the stock.",
-      "Step 5 — Remove the pan from the heat completely. This is crucial for the next step. Add the remaining cold butter in small pieces and stir vigorously in a circular motion — this is the mantecatura, which emulsifies the butter into the starchy liquid to create a glossy, creamy consistency. Add the Pecorino and Parmesan and continue stirring energetically for a further minute. Taste and adjust salt. The risotto should flow slowly if you tilt the pan.",
-      "Step 6 — For the garnish, melt the 20g butter in a small frying pan over medium-high heat until foaming. Add the sage leaves in a single layer and fry for 60–90 seconds until deep green and crisp. Remove with a slotted spoon to kitchen paper. Add the chopped hazelnuts to the same pan and toast in the brown butter for 1–2 minutes until golden.",
-      "Step 7 — Divide the risotto between warmed bowls immediately — risotto waits for no one. Scatter over the crispy sage leaves and hazelnut pieces, add an extra grind of black pepper and a small grating of Pecorino to finish. Serve at once."
+      "Step 1 — Make the berbere blend: Combine all the spice blend ingredients in a small bowl and mix well. Set aside. This homemade blend is the soul of the dish — toast the whole spices briefly in a dry pan first if you want even more depth.",
+      "Step 2 — Caramelise the onions (the most important step): Heat the vegetable oil in a large heavy-based pot over medium-low heat. Add the finely diced onions and a pinch of salt and cook, stirring frequently, for 20–25 minutes. Do not rush this step — the onions must turn a deep golden caramel colour and almost melt into the oil. This slow-cooked onion base is what gives Misir Wot its characteristic rich sweetness.",
+      "Step 3 — Add aromatics and spice: Increase heat to medium. Add the garlic and ginger and fry for 2 minutes, stirring constantly. Add the entire berbere spice blend and tomato purée and stir vigorously for 2 minutes, letting the spices fry in the oil until deeply fragrant — the pot will smell extraordinary.",
+      "Step 4 — Cook the lentils: Rinse the red lentils well and add them to the pot along with the vegetable stock. Stir everything together, bring to a boil, then reduce to a steady simmer. Cook uncovered for 20–25 minutes, stirring occasionally, until the lentils have completely broken down into a thick, creamy stew. Add a splash more water if it becomes too thick. Taste and adjust salt. The stew should be bold, warming, and deeply flavoured.",
+      "Step 5 — Make the flatbreads: While the stew simmers, combine both flours, salt, and baking powder in a bowl. Gradually add the warm water, mixing to form a smooth, pourable batter (thinner than pancake batter — almost like thick cream). Heat a dry non-stick frying pan over medium-high heat. Pour in a ladleful of batter and swirl to form a thin circle. Cook for 2–3 minutes until bubbles form and the surface looks dry, then carefully flip and cook for 30 seconds on the other side. Stack the flatbreads under a clean tea towel to keep warm and soft.",
+      "Step 6 — Serve: Spoon the Misir Wot generously onto warmed plates or a large shared platter. Scatter the crumbled feta over the top along with fresh coriander leaves. Arrange the warm flatbreads alongside for scooping. Serve with lemon wedges to squeeze over — the acidity brightens all the warm spices beautifully."
     ]
   }
 ];

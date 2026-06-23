@@ -1,19 +1,19 @@
 // reads-data.js
-// Auto-updated 2026-06-22 — do not edit manually
+// Auto-updated 2026-06-23 — do not edit manually
 
 var READS_DATA = {
-  date: "2026-06-22",
+  date: "2026-06-23",
   book: {
-    title: "The Vegetarian",
-    author: "Han Kang",
-    year: 2007,
-    genres: ["Literary Fiction", "Psychological Fiction", "Translated Fiction"],
-    desc: "Han Kang\'s haunting triptych follows a seemingly ordinary South Korean woman who, after a violent dream, stops eating meat — and through this quiet act of refusal, unravels everything her family, husband, and society have projected onto her body and selfhood. Told across three perspectives that spiral deeper into obsession, desire, and mental collapse, the novel is as visceral as it is philosophically rich, exploring what it means to assert autonomy when the world treats a woman\'s body as communal property. Kang\'s prose — spare and dreamlike in Deborah Smith\'s translation — carries an almost unbearable tension between beauty and dread. It won the International Booker Prize in 2016 and announced Kang as one of the essential voices of world literature.",
-    whyRead: "After Kang\'s Nobel Prize in Literature in 2024, this remains her most unsettling and concentrated work — a slim, perfectly formed novel that repays re-reading and never quite lets you go.",
-    rating: 3.9,
+    title: "The Rings of Saturn",
+    author: "W. G. Sebald",
+    year: 1995,
+    genres: ["Literary Fiction", "Travel", "Essay"],
+    desc: "W. G. Sebald\'s singular masterpiece follows a narrator on a walking tour along the Suffolk coast of England, but the journey becomes an extraordinary drift through centuries of history, decay, memory, and melancholy — touching on everything from the herring trade to the Taiping Rebellion to Thomas Browne\'s meditation on mortality. Sebald weaves together fragments of the past with an almost hypnotic, unpunctuated prose rhythm that makes the book feel less like a novel and more like a waking dream you can\'t quite shake. The enigmatic black-and-white photographs scattered throughout blur the line between document and imagination, lending the whole enterprise an eerie, haunted quality unlike anything else in literature. It is a book about entropy — how empires, ecosystems, and human lives all gradually unravel — delivered with quiet, devastating beauty.",
+    whyRead: "In a moment when the world feels saturated with noise and urgency, Sebald\'s slow, meditative walk through time offers a rare and profound kind of attention — the sort that makes you see the world differently after you put it down.",
+    rating: 4.1,
     ratingSource: "Goodreads",
-    ratingCount: "400,000+",
-    coverUrl: "https://covers.openlibrary.org/b/id/7412625-L.jpg",
-    amazonUrl: "https://www.amazon.co.uk/dp/0553448196"
+    ratingCount: "50,000+",
+    coverUrl: "https://covers.openlibrary.org/b/id/1029247-L.jpg",
+    amazonUrl: "https://www.amazon.co.uk/dp/0811213781"
   }
 };
