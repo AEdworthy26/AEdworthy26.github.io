@@ -1,61 +1,61 @@
 // tech-news-data.js
-// Auto-updated 2026-06-23 — do not edit manually
+// Auto-updated 2026-06-24 — do not edit manually
 
 var TECH_NEWS = {
-  date: "2026-06-23",
+  date: "2026-06-24",
   main: {
-    title: "GM Installs Robots at Flagship EV Factory After Laying Off 1,300 Workers",
-    category: "Technology & Industry",
+    title: "White House Drastically Shortens Deadline for Dropping Quantum-Vulnerable Crypto",
+    category: "Cybersecurity",
     content: [
-      "General Motors has moved swiftly to automate its flagship electric vehicle factory, installing robots at the facility in the wake of laying off 1,300 workers. The move has ignited a fierce debate about the future of manufacturing labor in the United States, with critics arguing that the timing makes the company\'s priorities unmistakably clear. For the workers who lost their jobs, the arrival of robotic systems on the factory floor represents a deeply personal and tangible displacement.",
-      "The United Auto Workers union has responded with alarm, warning that GM\'s actions offer a glimpse into what labor organizers are calling the 'dark factory' future — a manufacturing landscape where human workers are largely or entirely replaced by automated systems. Union representatives have argued that the layoffs were not simply the result of economic pressures but rather a deliberate strategic choice to accelerate automation. The speed with which robots followed the departing workers has lent credibility to those concerns.",
-      "GM\'s decision reflects a broader trend across the automotive industry, where the transition to electric vehicles is being used as an opportunity to fundamentally restructure factory operations. Unlike traditional internal combustion engine vehicles, EVs have fewer moving parts and lend themselves more readily to highly automated assembly processes. Automakers have long viewed this transition as a chance to reduce labor costs and improve production consistency at scale.",
-      "The installation of robotic systems at a flagship facility also signals GM\'s long-term strategic vision for competing with rivals like Tesla, which has pioneered highly automated manufacturing processes. Tesla\'s so-called 'gigafactories' have set a benchmark for production efficiency that legacy automakers feel compelled to match. For GM, the calculus appears to be that the short-term reputational cost of high-profile layoffs is outweighed by the long-term competitive advantages of a leaner, more automated workforce.",
-      "The episode raises profound questions that extend well beyond General Motors and the auto sector. As artificial intelligence and robotics mature rapidly, the manufacturing industry is increasingly at the forefront of a societal reckoning over what role human labor will play in an automated economy. Policymakers, labor advocates, and corporate leaders are all being forced to grapple with how to manage these transitions responsibly — and whether the current pace of automation is outrunning the safety nets and retraining programs needed to support displaced workers.",
+      "The White House has issued an executive order sharply accelerating the timeline for federal agencies and critical infrastructure operators to abandon cryptographic systems vulnerable to quantum computing attacks. The order warns that failure to adopt post-quantum cryptography in time poses serious national security risks, as adversaries with access to sufficiently powerful quantum computers could decrypt sensitive government communications and data. The urgency reflects growing concern among intelligence and cybersecurity officials that the quantum computing threat is maturing faster than previously anticipated.",
+      "Post-quantum cryptography refers to a new generation of encryption algorithms designed to withstand attacks from quantum computers, which can theoretically break many of the mathematical problems that underpin today\'s widely used encryption standards. The National Institute of Standards and Technology finalized its first set of post-quantum cryptographic standards in recent years, but adoption across government systems and critical infrastructure has been slow and uneven. The new executive order appears designed to force the pace of that transition by imposing a much tighter deadline than agencies had previously been working toward.",
+      "The stakes could not be higher. Much of the modern internet\'s security — from financial transactions to classified government communications — relies on encryption standards such as RSA and elliptic-curve cryptography, both of which are considered vulnerable to a sufficiently advanced quantum computer running Shor\'s algorithm. Security experts have long warned about a scenario called 'harvest now, decrypt later,' in which adversaries collect encrypted data today with the intention of decrypting it once quantum hardware matures. Tightening the deadline is an acknowledgment that this window of risk may be closing faster than expected.",
+      "For federal agencies, the shortened deadline will require significant investment and coordination, as migrating cryptographic infrastructure is a complex, time-consuming process that touches everything from software libraries to hardware security modules and network protocols. Many legacy government systems were not designed with cryptographic agility in mind, meaning they cannot simply swap out one algorithm for another without extensive re-engineering. The order is expected to put pressure on contractors, vendors, and technology suppliers to the government to accelerate their own post-quantum roadmaps.",
+      "The move is also likely to reverberate through the private sector, as companies that do business with the federal government or operate in regulated industries will face pressure to demonstrate compliance with the new standards. Cybersecurity professionals have broadly welcomed the increased urgency, even as they acknowledge the practical challenges of meeting an accelerated timeline. The executive order underscores a broader strategic reality: the race between quantum computing capability and cryptographic preparedness is no longer a distant theoretical concern, but an active and pressing national security priority."
     ],
-    image: "https://cdn.arstechnica.net/wp-content/uploads/2026/06/GM-factory-zero-1152x648.jpg",
+    image: "https://cdn.arstechnica.net/wp-content/uploads/2024/03/GettyImages-1070527780-1152x648.jpg",
     source: "Ars Technica",
-    sourceUrl: "https://arstechnica.com/ai/2026/06/gm-installs-robots-at-flagship-ev-factory-after-laying-off-1300-workers/"
+    sourceUrl: "https://arstechnica.com/information-technology/2026/06/executive-order-bumps-up-deadline-to-move-off-quantum-vulnerable-crypto/"
   },
   secondary: [
     {
       id: "tc1",
-      title: "Kennedy Space Center Not Ready for Era of Super Heavy Rockets",
-      summary: "A new report warns that Kennedy Space Center lacks the infrastructure to handle the ambitious launch cadence planned for next-generation super heavy rockets like SpaceX\'s Starship.",
+      title: "Oracle\'s 21,000 Layoffs Help Drive Its Debt-Fueled AI Investments",
+      summary: "Oracle is cutting thousands of workers and taking on significant debt to fund massive data center infrastructure spending in pursuit of AI dominance.",
       body: [
-        "According to a new report, Kennedy Space Center is unprepared for the demands of the coming era of super heavy lift rockets, raising serious concerns about America\'s launch infrastructure. SpaceX has reportedly told NASA that it intends to launch its Starship vehicle from Kennedy as frequently as every eight days, a cadence that would stress existing facilities to their limits.",
-        "The findings highlight a growing tension between the rapid pace of commercial spaceflight ambitions and the slower-moving world of government infrastructure planning. As Starship moves closer to operational status, the gap between what launch providers need and what Kennedy can currently offer may become a critical bottleneck for America\'s space program."
+        "Oracle has laid off approximately 21,000 employees as part of a sweeping strategy to redirect resources toward artificial intelligence infrastructure, with the company spending billions on data center capacity to support growing AI workloads. The scale of the layoffs underscores how aggressively Oracle is restructuring its workforce and balance sheet to compete in the AI era.",
+        "The debt-fueled approach is a significant bet that AI-driven cloud and infrastructure services will generate returns large enough to justify both the human cost and the financial risk of taking on substantial new liabilities. Oracle\'s pivot reflects a broader industry trend in which legacy enterprise technology companies are scrambling to reposition themselves as essential players in the AI supply chain."
       ],
-      image: "https://cdn.arstechnica.net/wp-content/uploads/2022/08/Artemis-I-Aug-19-2022-9057-1152x648.jpg",
+      image: "https://images.unsplash.com/photo-1662947774441-a54156b6e503?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxPcmFjbGUlNUN8ZW58MHwwfHx8MTc4MjI3NzQ3NHww&ixlib=rb-4.1.0&q=80&w=1080",
       source: "Ars Technica",
-      url: "https://arstechnica.com/space/2026/06/report-kennedy-space-center-not-ready-for-era-of-super-heavy-rockets/",
-      category: "Space"
+      url: "https://arstechnica.com/ai/2026/06/oracles-21000-layoffs-help-drive-its-debt-fueled-ai-investments/",
+      category: "AI & Industry"
     },
     {
       id: "tc2",
-      title: "Nvidia Claims New AI Data Center Design Eliminates Most Water Usage",
-      summary: "Nvidia is highlighting its Rubin generation liquid-cooled data center reference design as a major step forward in reducing both power and water consumption for AI infrastructure.",
+      title: "Meta Halts Worker Tracking for AI Training Due to Privacy Fears",
+      summary: "Meta has suspended a program that monitored employees' computer usage to generate AI training data, just two months after it began, amid significant privacy concerns.",
       body: [
-        "Nvidia has announced that its latest data center reference design, built around the Rubin generation of hardware and fully liquid-cooled, has dramatically reduced both energy usage and water consumption compared to conventional data center architectures. The company says the new design has 'eliminated massive amounts of power usage and pretty much all water usage,' addressing two of the most prominent criticisms leveled at AI infrastructure.",
-        "Public concern over the environmental footprint of AI data centers has been growing steadily, with communities near large facilities raising objections to their water and energy demands. While Nvidia\'s claims represent meaningful progress, analysts note that the announcement does not resolve all of the broader concerns surrounding the rapid proliferation of AI compute infrastructure."
+        "Meta launched the worker tracking initiative only two months ago, making the rapid reversal a notable moment of internal pushback at one of the world\'s largest technology companies. The program had involved monitoring how employees used their computers, with that behavioral data intended to serve as training material for AI systems.",
+        "The halt highlights the growing tension between the insatiable appetite for high-quality training data in AI development and the privacy rights of the individuals — including a company\'s own staff — whose behavior and data are being harvested. The episode may prompt broader scrutiny of how AI companies source training data from within their own organizations."
       ],
-      image: "https://images.unsplash.com/photo-1781324185628-1a816d8fbb92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxOdmlkaWElMjBDbGFpbXMlMjBOZXclMjBBSSUyMERhdGElMjBDZW50ZXIlMjBEZXNpZ24lMjBFbGltaW5hdGVzJTIwTW9zdCUyMFdhdGVyJTIwVXNhZ2V8ZW58MHwwfHx8MTc4MjE5MTA2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "The Verge",
-      url: "https://www.theverge.com/tech/954139/nvidia-data-centers-rubin-liquid-cooling",
-      category: "AI & Hardware"
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/f1db/live/ef7d0940-6f28-11f1-adf9-6fa2b518a522.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.co.uk/news/articles/cq615g3z36po?at_medium=RSS&at_campaign=rss",
+      category: "AI & Privacy"
     },
     {
       id: "tc3",
-      title: "OpenAI Launches Initiative to Find and Patch Open-Source Security Bugs",
-      summary: "OpenAI has unveiled a new program aimed at improving the security of open-source software by using its AI capabilities to identify and help fix vulnerabilities.",
+      title: "Valve\'s Steam Machine Launches at £879, Citing Rising Component Costs",
+      summary: "Valve has released its long-awaited Steam Machine PC-console hybrid at a £879 price point, with the company attributing the steep cost to a broader trend of rising hardware component prices.",
       body: [
-        "OpenAI has announced a new security-focused initiative designed to tackle the persistent problem of bugs and vulnerabilities in open-source software, which underpins a vast portion of the world\'s digital infrastructure. The program will apply OpenAI\'s AI systems to the task of discovering security flaws and facilitating their remediation across widely used open-source projects.",
-        "The move positions OpenAI as an active contributor to the broader cybersecurity community, going beyond its core commercial AI products. Open-source software has long faced a resource gap when it comes to security auditing, and an AI-powered approach could significantly accelerate the discovery of vulnerabilities that might otherwise go undetected for years."
+        "Valve\'s Steam Machine arrives as a hybrid device aimed at bridging the gap between traditional gaming PCs and living-room consoles, but its £879 launch price is likely to raise eyebrows among consumers already accustomed to premium hardware costs. The company has been transparent that component prices across the industry have risen significantly, making affordable pricing difficult to achieve without sacrificing performance.",
+        "The launch is a significant moment for Valve, which has spent years building its Linux-based gaming ecosystem through the Steam Deck handheld and SteamOS platform. Whether the Steam Machine can carve out a meaningful niche against established consoles and gaming PCs at that price will be a key test of consumer appetite for a hybrid form factor."
       ],
-      image: "https://images.unsplash.com/photo-1676299081847-824916de030a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxPcGVuQUklMjBMYXVuY2hlcyUyMEluaXRpYXRpdmUlMjB0byUyMEZpbmQlMjBhbmQlMjBQYXRjaCUyME9wZW4tU291cmNlJTIwU2VjdXJpdHklMjBCdWdzfGVufDB8MHx8fDE3ODIxOTEwNjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "TechCrunch",
-      url: "https://techcrunch.com/2026/06/22/openai-launches-new-initiative-to-help-find-and-patch-open-source-bugs/",
-      category: "Cybersecurity"
+      image: "https://images.unsplash.com/photo-1582642880428-3e2c04ad14ec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxWYWx2ZSU1Q3xlbnwwfDB8fHwxNzgyMjc3NDc0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "BBC News",
+      url: "https://www.bbc.co.uk/news/articles/c0kyzk2p255o?at_medium=RSS&at_campaign=rss",
+      category: "Hardware & Gaming"
     }
   ]
 };

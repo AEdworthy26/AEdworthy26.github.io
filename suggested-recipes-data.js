@@ -1,214 +1,156 @@
 // suggested-recipes-data.js
-// Auto-updated 2026-06-23 — do not edit manually
+// Auto-updated 2026-06-24 — do not edit manually
 
 window.SUGGESTED_RECIPES = [
   {
     id: "sug1",
-    title: "Jamaican Brown Stew Chicken with Rice & Peas and Fried Plantain",
+    title: "Taiwanese Three-Cup Chicken — San Bei Ji with Steamed Jasmine Rice & Wilted Bok Choy",
     category: "Chicken",
-    calories: 610,
-    protein: 44,
-    fibre: 6,
-    healthScore: 71,
-    time: "1 hr 15 mins",
+    calories: 535,
+    protein: 41,
+    fibre: 3,
+    healthScore: 68,
+    time: "40 mins",
     serves: "4",
-    desc: "A deeply flavoured Caribbean classic where chicken pieces are marinated in a punchy blend of allspice, scotch bonnet, and browning sauce, then slow-simmered until the sauce turns rich, glossy and intensely savoury. Served alongside coconut-scented rice and peas and golden fried plantain, this is comfort food with serious soul.",
+    desc: "A Taiwanese classic built on the holy trinity of sesame oil, soy sauce and rice wine, caramelised down to a sticky, intensely savoury glaze around bone-in chicken pieces. Fresh Thai basil is thrown in at the very last moment, filling the kitchen with an extraordinary anise-sweet aroma that makes the dish utterly unforgettable. Sticky, bold and deeply satisfying — this is weeknight cooking at its most impressive.",
     emoji: "🍗",
-    image: "https://images.unsplash.com/photo-1632852576480-c10a8e19496a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxKYW1haWNhbiUyMEJyb3duJTIwU3RldyUyMENoaWNrZW4lMjB3aXRoJTIwUmljZSUyMCUyNiUyMFBlYXMlMjBhbmQlMjBGcmllZCUyMFBsYW50YWluJTIwZm9vZCUyMGRpc2h8ZW58MHwwfHx8MTc4MjE5MTYwNHww&ixlib=rb-4.1.0&q=80&w=1080",
+    image: "https://images.pexels.com/photos/24738519/pexels-photo-24738519.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     ingredientGroups: [
-      {
-        group: "Chicken & Marinade",
-        items: [
-          { name: "Bone-in chicken thighs and drumsticks", quantity: 1.2, unit: "kg" },
-          { name: "Browning sauce (or dark soy sauce)", quantity: 2, unit: "tbsp" },
-          { name: "Scotch bonnet chilli, finely chopped", quantity: 1, unit: "" },
-          { name: "Garlic cloves, minced", quantity: 4, unit: "" },
-          { name: "Fresh thyme sprigs", quantity: 6, unit: "" },
-          { name: "Ground allspice", quantity: 1.5, unit: "tsp" },
-          { name: "Smoked paprika", quantity: 1, unit: "tsp" },
-          { name: "Spring onions, roughly chopped", quantity: 4, unit: "" },
-          { name: "Salt and black pepper", quantity: 1, unit: "to taste" }
-        ]
-      },
-      {
-        group: "Brown Stew Sauce",
-        items: [
-          { name: "Vegetable oil", quantity: 3, unit: "tbsp" },
-          { name: "Brown sugar", quantity: 1, unit: "tbsp" },
-          { name: "White onion, sliced", quantity: 1, unit: "large" },
-          { name: "Red pepper, sliced", quantity: 1, unit: "" },
-          { name: "Tomatoes, roughly chopped", quantity: 3, unit: "" },
-          { name: "Chicken stock", quantity: 300, unit: "ml" },
-          { name: "Ketchup", quantity: 2, unit: "tbsp" },
-          { name: "Worcestershire sauce", quantity: 1, unit: "tbsp" }
-        ]
-      },
-      {
-        group: "Rice & Peas",
-        items: [
-          { name: "Long-grain white rice", quantity: 300, unit: "g" },
-          { name: "Coconut milk", quantity: 400, unit: "ml" },
-          { name: "Kidney beans (tinned, drained)", quantity: 400, unit: "g" },
-          { name: "Water", quantity: 250, unit: "ml" },
-          { name: "Garlic clove, whole", quantity: 1, unit: "" },
-          { name: "Fresh thyme sprig", quantity: 2, unit: "" },
-          { name: "Salt", quantity: 1, unit: "tsp" }
-        ]
-      },
-      {
-        group: "Fried Plantain",
-        items: [
-          { name: "Ripe plantains (yellow-black skin)", quantity: 2, unit: "" },
-          { name: "Vegetable oil for frying", quantity: 4, unit: "tbsp" }
-        ]
-      }
+      { group: "Main", items: [
+        { name: "Bone-in chicken thighs, cut into large chunks (skin on)", quantity: 900, unit: "g" },
+        { name: "Jasmine rice", quantity: 320, unit: "g" },
+        { name: "Bok choy, halved lengthways", quantity: 4, unit: "" },
+        { name: "Fresh Thai basil leaves", quantity: 30, unit: "g" },
+        { name: "Garlic cloves, peeled and lightly crushed", quantity: 10, unit: "" },
+        { name: "Fresh ginger, cut into thin coins", quantity: 30, unit: "g" },
+        { name: "Dried red chillies", quantity: 4, unit: "" }
+      ]},
+      { group: "Three-Cup Sauce", items: [
+        { name: "Toasted sesame oil", quantity: 60, unit: "ml" },
+        { name: "Shaoxing rice wine (or dry sherry)", quantity: 60, unit: "ml" },
+        { name: "Dark soy sauce", quantity: 60, unit: "ml" },
+        { name: "Light soy sauce", quantity: 2, unit: "tbsp" },
+        { name: "Brown sugar", quantity: 1, unit: "tbsp" },
+        { name: "Neutral oil (groundnut or vegetable)", quantity: 1, unit: "tbsp" }
+      ]}
     ],
     substitutes: [
-      { ingredient: "Scotch bonnet chilli", alternatives: ["Habanero chilli", "½ tsp cayenne pepper plus 1 red chilli"] },
-      { ingredient: "Browning sauce", alternatives: ["Dark soy sauce", "Worcestershire sauce with a pinch of sugar"] },
-      { ingredient: "Ripe plantains", alternatives: ["Firm but ripe bananas, pan-fried briefly", "Sweet potato wedges, roasted"] }
+      { ingredient: "Shaoxing rice wine", alternatives: ["Dry sherry", "Sake", "Dry vermouth"] },
+      { ingredient: "Thai basil", alternatives: ["Regular fresh basil", "Holy basil"] },
+      { ingredient: "Bone-in chicken thighs", alternatives: ["Boneless thighs (reduce cook time slightly)", "Drumsticks"] }
     ],
     instructions: [
-      "Step 1 — Marinate the chicken: In a large bowl, combine the browning sauce, scotch bonnet, garlic, thyme, allspice, smoked paprika, spring onions, salt, and pepper. Score the chicken pieces a few times with a knife so the marinade penetrates, then coat thoroughly. Cover and refrigerate for at least 30 minutes, or overnight for maximum depth.",
-      "Step 2 — Start the rice and peas: Rinse the rice until the water runs clear. In a medium saucepan, combine the coconut milk, water, kidney beans, garlic clove, thyme, and salt. Bring to a boil, stir in the rice, then reduce heat to the lowest setting, cover tightly, and cook for 18–20 minutes until all liquid is absorbed. Remove from heat and leave covered for 5 minutes before fluffing with a fork.",
-      "Step 3 — Brown the chicken: Heat the vegetable oil in a large, heavy-based pan or Dutch oven over high heat. Add the brown sugar to the hot oil and let it caramelise to a dark amber — this 'burning' step gives the stew its characteristic deep colour. Working in batches, add the marinated chicken pieces and brown well on all sides, about 3–4 minutes per side. Remove and set aside.",
-      "Step 4 — Build the stew: In the same pan, reduce heat to medium and fry the sliced onion and red pepper until softened, about 4 minutes. Add the chopped tomatoes and cook down for 3 minutes. Pour in the chicken stock, ketchup, and Worcestershire sauce, scraping up any sticky bits from the base. Return the browned chicken to the pan.",
-      "Step 5 — Simmer to perfection: Bring to a gentle boil, then reduce heat to low, cover partially, and simmer for 35–40 minutes until the chicken is tender and cooked through, and the sauce has reduced to a thick, glossy consistency. Taste and adjust seasoning — it should be bold, slightly sweet, and deeply savoury.",
-      "Step 6 — Fry the plantain: Peel and slice the ripe plantains on a diagonal into 1.5cm pieces. Heat the oil in a frying pan over medium-high heat and fry the plantain slices for 2–3 minutes per side until deeply golden and caramelised. Drain on kitchen paper and season lightly with salt.",
-      "Step 7 — Serve: Mound the coconut rice and peas onto plates, lay the brown stew chicken alongside with a generous spoonful of the glossy sauce, and add the fried plantain. Garnish with fresh thyme and enjoy immediately."
+      "Step 1 — Cook the jasmine rice: rinse 320g rice until the water runs clear, then cook in a rice cooker or covered saucepan with 480ml cold water. Bring to a boil, reduce to the lowest heat, cover tightly and cook for 12 minutes. Remove from heat and leave covered for 10 minutes — do not lift the lid.",
+      "Step 2 — Pat the chicken pieces thoroughly dry with kitchen paper. This is key — moisture is the enemy of good colour. Season lightly with white pepper only (the soy will provide plenty of salt).",
+      "Step 3 — Heat the neutral oil in a wide, heavy-based wok or deep frying pan over high heat until shimmering. Add the chicken pieces skin-side down in a single layer — work in batches if needed. Sear without moving for 4–5 minutes until the skin is deep golden and releases easily. Flip and colour the other side for 2 minutes. Remove and set aside.",
+      "Step 4 — Reduce the heat to medium. Add the sesame oil to the same pan, then add the garlic cloves, ginger coins and dried chillies. Fry, stirring, for 90 seconds until the garlic is lightly golden and fragrant — the sesame oil will perfume everything beautifully.",
+      "Step 5 — Return the chicken to the pan. Pour over the Shaoxing rice wine, dark soy sauce, light soy sauce and brown sugar. Stir to coat everything, then bring to a vigorous simmer. Cook uncovered over medium-high heat for 18–22 minutes, turning the chicken occasionally, until the sauce has reduced to a thick, glossy glaze that clings to every piece. The sugars will caramelise and the colour will deepen to a gorgeous mahogany.",
+      "Step 6 — While the chicken finishes, wilt the bok choy: bring a wide pan of lightly salted water to the boil. Add the bok choy cut-side down, press gently with a spoon, and blanch for 2 minutes until just tender and vivid green. Drain and keep warm.",
+      "Step 7 — When the chicken glaze is sticky and the sauce barely covers the base of the pan, turn off the heat and immediately tumble in all the Thai basil leaves. Toss quickly — the residual heat will wilt them in seconds and release their fragrance into the dish.",
+      "Step 8 — Serve immediately over steamed jasmine rice alongside the bok choy. Spoon any remaining glaze from the pan over the top. The garlic cloves in the sauce are sweet and mellow — encourage everyone to eat them."
     ]
   },
   {
     id: "sug2",
-    title: "Venetian-Style Scallop & Radicchio Pasta — Capesante al Radicchio",
+    title: "Sicilian Pasta con le Sarde — Bucatini with Fresh Sardines, Wild Fennel, Saffron, Pine Nuts & Currants",
     category: "Pasta & Grains",
-    calories: 540,
-    protein: 31,
-    fibre: 4,
-    healthScore: 68,
-    time: "35 mins",
-    serves: "2",
-    desc: "A sophisticated yet unfussy Northern Italian pasta where sweet, seared scallops meet bitter braised radicchio in a silky white wine and butter sauce — a combination beloved in Venice\'s bacari wine bars. The radicchio mellows and turns jammy as it cooks, balancing the richness of the sauce with a distinctive, pleasantly bitter edge.",
+    calories: 610,
+    protein: 34,
+    fibre: 5,
+    healthScore: 71,
+    time: "50 mins",
+    serves: "4",
+    desc: "One of Sicily\'s most iconic pasta dishes, where Arab, Norman and Mediterranean influences collide in a single breathtaking bowl — sardines and fennel braised with saffron-scented wine, sweetened with currants and given crunch from toasted pine nuts and golden breadcrumbs. It sounds unusual but tastes deeply, exquisitely right: sweet, savoury, briny and aromatic all at once. A genuinely ancient dish that earns its place on any table.",
     emoji: "🍝",
-    image: "https://images.unsplash.com/photo-1590759439877-30638b1a4d84?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxWZW5ldGlhbi1TdHlsZSUyMFNjYWxsb3AlMjAlMjYlMjBSYWRpY2NoaW8lMjBQYXN0YSUyMCVFMiU4MCU5NCUyMENhcGVzYW50ZSUyMGFsJTIwUmFkaWNjaGlvJTIwZm9vZCUyMGRpc2h8ZW58MHwwfHx8MTc4MjE5MTYwNHww&ixlib=rb-4.1.0&q=80&w=1080",
+    image: "https://images.pexels.com/photos/34342500/pexels-photo-34342500.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     ingredientGroups: [
-      {
-        group: "Main",
-        items: [
-          { name: "Dried tagliatelle or linguine", quantity: 200, unit: "g" },
-          { name: "King scallops (roe on or off)", quantity: 8, unit: "" },
-          { name: "Radicchio (Treviso or round), shredded", quantity: 150, unit: "g" },
-          { name: "Shallots, finely sliced", quantity: 2, unit: "" },
-          { name: "Garlic cloves, finely sliced", quantity: 2, unit: "" }
-        ]
-      },
-      {
-        group: "Sauce",
-        items: [
-          { name: "Dry white wine", quantity: 120, unit: "ml" },
-          { name: "Unsalted butter", quantity: 40, unit: "g" },
-          { name: "Extra virgin olive oil", quantity: 3, unit: "tbsp" },
-          { name: "Double cream", quantity: 3, unit: "tbsp" },
-          { name: "Lemon, juice and zest", quantity: 0.5, unit: "" },
-          { name: "Salt and white pepper", quantity: 1, unit: "to taste" }
-        ]
-      },
-      {
-        group: "To Finish",
-        items: [
-          { name: "Flat-leaf parsley, finely chopped", quantity: 3, unit: "tbsp" },
-          { name: "Toasted pine nuts", quantity: 2, unit: "tbsp" },
-          { name: "Pasta cooking water, reserved", quantity: 100, unit: "ml" }
-        ]
-      }
+      { group: "Main", items: [
+        { name: "Bucatini (or spaghetti)", quantity: 400, unit: "g" },
+        { name: "Fresh sardines, filleted and pin-boned (or good-quality tinned sardines in oil, drained)", quantity: 500, unit: "g" },
+        { name: "Fresh fennel bulb with fronds, bulb thinly sliced, fronds reserved", quantity: 2, unit: "" },
+        { name: "White onion, finely diced", quantity: 1, unit: "" },
+        { name: "Garlic cloves, finely sliced", quantity: 4, unit: "" },
+        { name: "Currants (or small raisins, soaked in warm water 10 mins)", quantity: 50, unit: "g" },
+        { name: "Pine nuts, lightly toasted in a dry pan", quantity: 60, unit: "g" },
+        { name: "Saffron threads", quantity: 1, unit: "generous pinch" },
+        { name: "Dry white wine", quantity: 150, unit: "ml" },
+        { name: "Extra virgin olive oil", quantity: 5, unit: "tbsp" },
+        { name: "Anchovy fillets in oil", quantity: 4, unit: "" }
+      ]},
+      { group: "Toasted Breadcrumbs (Mollica)", items: [
+        { name: "Stale white bread or panko breadcrumbs", quantity: 80, unit: "g" },
+        { name: "Extra virgin olive oil", quantity: 2, unit: "tbsp" },
+        { name: "Garlic clove, halved", quantity: 1, unit: "" },
+        { name: "Flaky sea salt", quantity: 1, unit: "pinch" }
+      ]}
     ],
     substitutes: [
-      { ingredient: "King scallops", alternatives: ["Large tiger prawns, peeled", "Monkfish medallions"] },
-      { ingredient: "Radicchio", alternatives: ["Red chicory (endive)", "Cavolo nero, thinly shredded"] },
-      { ingredient: "Double cream", alternatives: ["Crème fraîche", "Omit and use extra pasta water for a lighter sauce"] }
+      { ingredient: "Fresh sardines", alternatives: ["Good-quality tinned sardines in oil (drained)", "Fresh mackerel fillets"] },
+      { ingredient: "Bucatini", alternatives: ["Spaghetti", "Linguine", "Perciatelli"] },
+      { ingredient: "Currants", alternatives: ["Small sultanas", "Chopped Medjool dates"] },
+      { ingredient: "Wild or fresh fennel", alternatives: ["Fennel bulb plus 1 tsp fennel seeds added to the oil"] }
     ],
     instructions: [
-      "Step 1 — Prepare the scallops: Pat the scallops completely dry with kitchen paper — this is essential for a proper sear. Season generously with salt and white pepper on both flat sides just before cooking. If any scallops have a small tough muscle on the side, peel it away and discard.",
-      "Step 2 — Cook the pasta: Bring a large pot of well-salted water to a rolling boil. Cook the tagliatelle for 1–2 minutes less than the packet instructions (it will finish in the sauce). Before draining, scoop out at least 100ml of the starchy cooking water and set aside.",
-      "Step 3 — Braise the radicchio: While the pasta cooks, heat 2 tbsp olive oil in a large wide frying pan over medium heat. Add the shallots and cook gently for 3–4 minutes until softened. Add the garlic and cook for 1 minute. Add the shredded radicchio and toss to coat, cooking for 2 minutes until it begins to wilt. Pour in the white wine and let it bubble vigorously for 2 minutes until reduced by half.",
-      "Step 4 — Build the sauce: Reduce the heat to medium-low. Stir in the butter and double cream, then squeeze in the lemon juice and add the zest. Let the sauce simmer gently for 2 minutes until lightly thickened. Season well.",
-      "Step 5 — Sear the scallops: In a separate small frying pan, heat the remaining 1 tbsp olive oil over the highest heat until almost smoking. Add the scallops in a single layer without crowding (do in batches if needed) and sear for exactly 90 seconds without touching — they should develop a deep golden crust. Flip and cook for 60 seconds on the other side. They should be golden outside and just set with a pearlescent centre. Remove from the heat immediately.",
-      "Step 6 — Finish the pasta: Add the drained pasta directly to the radicchio sauce pan along with a splash of pasta water. Toss vigorously over medium heat for 1–2 minutes until the sauce coats every strand beautifully. Add more pasta water if needed to loosen.",
-      "Step 7 — Serve: Twirl the pasta into warmed shallow bowls. Place 4 scallops on top of each portion, spoon over any resting juices from the scallop pan, and scatter with chopped parsley and toasted pine nuts. Serve immediately."
+      "Step 1 — Make the toasted breadcrumbs first (the Sicilian 'poor man\'s Parmesan'): heat 2 tbsp olive oil in a small frying pan over medium heat with the halved garlic clove. When the oil shimmers, remove the garlic and add the breadcrumbs. Toast, stirring constantly, for 4–5 minutes until deep golden and crisp. Season with flaky salt and tip onto a plate to cool. These will keep your pasta from going soggy and add essential texture.",
+      "Step 2 — Dissolve the saffron in 3 tbsp of hot water and leave to steep for at least 10 minutes — this blooms the saffron and distributes its colour evenly.",
+      "Step 3 — Soak the currants in warm water for 10 minutes to plump them, then drain. Toast the pine nuts in a dry frying pan over medium heat for 2–3 minutes until golden — watch them carefully as they burn fast. Set both aside.",
+      "Step 4 — Bring a large pot of very generously salted water to a boil for the pasta. In a wide, deep frying pan or sauté pan, warm 4 tbsp olive oil over medium heat. Add the onion and sliced fennel with a pinch of salt. Cook gently, stirring occasionally, for 12–15 minutes until completely soft, sweet and lightly golden.",
+      "Step 5 — Add the sliced garlic and anchovy fillets. Stir and press the anchovies with a wooden spoon — they will melt into the oil in about 2 minutes, becoming invisible but adding enormous depth. Pour in the white wine and saffron water. Let it bubble and reduce by half, about 3 minutes.",
+      "Step 6 — Add the sardine fillets to the pan. Cook gently for 3–4 minutes, turning once, until just cooked through — they will break apart a little, which is exactly right. Gently stir in the drained currants and toasted pine nuts. Taste and adjust salt. Keep warm over the lowest heat.",
+      "Step 7 — Cook the bucatini in the boiling salted water until 1 minute before al dente according to the packet. Reserve a large mugful (about 250ml) of the starchy pasta water before draining.",
+      "Step 8 — Transfer the drained pasta directly into the sardine pan. Toss vigorously over medium heat, adding pasta water a splash at a time, until the sauce coats every strand and the pasta finishes cooking — about 1–2 minutes. The starch will make everything silky and cohesive.",
+      "Step 9 — Serve immediately in warm bowls, scattered generously with the toasted breadcrumbs and the reserved fennel fronds. A drizzle of your best olive oil over the top is not optional."
     ]
   },
   {
     id: "sug3",
-    title: "Ethiopian Misir Wot — Spiced Red Lentil Stew with Injera-Style Flatbreads & Ayib",
-    category: "Vegan",
-    calories: 495,
-    protein: 22,
-    fibre: 14,
-    healthScore: 88,
-    time: "55 mins",
-    serves: "4",
-    desc: "Misir Wot is one of Ethiopia\'s greatest dishes — a deeply spiced, velvety red lentil stew built on a slow-cooked base of caramelised onions and homemade berbere spice blend, with warmth that builds gradually and lingers. Served with easy teff-style flatbreads (made with a mixture of teff and plain flour for accessibility) and fresh ayib-style crumbled cheese, this is one of the most satisfying and nutritious bowls you can make.",
-    emoji: "🫘",
-    image: "https://images.pexels.com/photos/958546/pexels-photo-958546.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    title: "Colombian Ajiaco — Hearty Potato & Corn Soup with Guascas, Avocado, Cream & Capers",
+    category: "Vegetarian",
+    calories: 455,
+    protein: 12,
+    fibre: 10,
+    healthScore: 79,
+    time: "1 hr 10 mins",
+    serves: "6",
+    desc: "Bogotá's beloved soul-warming soup is one of the great dishes of Latin America — three different potato varieties cooked down to create an extraordinary naturally thick, velvety broth, punctuated by sweet corn cobs and the herbaceous, slightly resinous hit of guascas, Colombia\'s defining herb. The traditional garnishes — cold soured cream, briny capers and silky avocado — are spooned in at the table, creating a layered and completely magical bowl. Deeply comforting, completely vegetarian, and utterly unlike anything else.",
+    emoji: "🍲",
+    image: "https://images.pexels.com/photos/37039787/pexels-photo-37039787.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     ingredientGroups: [
-      {
-        group: "Misir Wot (Lentil Stew)",
-        items: [
-          { name: "Split red lentils", quantity: 350, unit: "g" },
-          { name: "White onions, very finely diced", quantity: 3, unit: "large" },
-          { name: "Garlic cloves, minced", quantity: 5, unit: "" },
-          { name: "Fresh ginger, grated", quantity: 2, unit: "tbsp" },
-          { name: "Vegetable oil", quantity: 5, unit: "tbsp" },
-          { name: "Tomato purée", quantity: 2, unit: "tbsp" },
-          { name: "Vegetable stock", quantity: 750, unit: "ml" },
-          { name: "Salt", quantity: 1.5, unit: "tsp" }
-        ]
-      },
-      {
-        group: "Berbere Spice Blend",
-        items: [
-          { name: "Hot smoked paprika", quantity: 2, unit: "tbsp" },
-          { name: "Ground cumin", quantity: 1.5, unit: "tsp" },
-          { name: "Ground coriander", quantity: 1, unit: "tsp" },
-          { name: "Ground fenugreek", quantity: 0.5, unit: "tsp" },
-          { name: "Ground cardamom", quantity: 0.5, unit: "tsp" },
-          { name: "Ground cinnamon", quantity: 0.25, unit: "tsp" },
-          { name: "Ground cloves", quantity: 0.25, unit: "tsp" },
-          { name: "Black pepper, freshly ground", quantity: 0.5, unit: "tsp" },
-          { name: "Cayenne pepper", quantity: 0.5, unit: "tsp" }
-        ]
-      },
-      {
-        group: "Flatbreads",
-        items: [
-          { name: "Teff flour", quantity: 100, unit: "g" },
-          { name: "Plain flour", quantity: 150, unit: "g" },
-          { name: "Warm water", quantity: 200, unit: "ml" },
-          { name: "Salt", quantity: 0.5, unit: "tsp" },
-          { name: "Baking powder", quantity: 0.5, unit: "tsp" }
-        ]
-      },
-      {
-        group: "To Serve",
-        items: [
-          { name: "Feta cheese (or cottage cheese), crumbled", quantity: 100, unit: "g" },
-          { name: "Fresh coriander leaves", quantity: 1, unit: "handful" },
-          { name: "Lemon wedges", quantity: 4, unit: "" }
-        ]
-      }
+      { group: "Soup Base", items: [
+        { name: "Floury potatoes (e.g. Maris Piper or King Edward), peeled and roughly chopped", quantity: 600, unit: "g" },
+        { name: "Waxy potatoes (e.g. Charlotte or new potatoes), peeled and sliced into rounds", quantity: 400, unit: "g" },
+        { name: "Sweet potatoes, peeled and cut into chunks", quantity: 300, unit: "g" },
+        { name: "Corn cobs, each cut into 4 rounds", quantity: 3, unit: "" },
+        { name: "White onion, roughly chopped", quantity: 1, unit: "" },
+        { name: "Garlic cloves, smashed", quantity: 4, unit: "" },
+        { name: "Spring onions, whole", quantity: 4, unit: "" },
+        { name: "Fresh coriander, large bunch — stalks separated from leaves", quantity: 1, unit: "" },
+        { name: "Dried guascas herb (from Latin delis or online — see substitutes)", quantity: 3, unit: "tbsp" },
+        { name: "Vegetable stock", quantity: 2, unit: "litres" },
+        { name: "Salt and white pepper", quantity: 1, unit: "to taste" }
+      ]},
+      { group: "Table Garnishes", items: [
+        { name: "Ripe avocados, halved and sliced", quantity: 2, unit: "" },
+        { name: "Soured cream or crème fraîche", quantity: 150, unit: "ml" },
+        { name: "Capers in brine, drained", quantity: 4, unit: "tbsp" },
+        { name: "Fresh coriander leaves (from the bunch above)", quantity: 1, unit: "handful" },
+        { name: "Lime, cut into wedges", quantity: 2, unit: "" }
+      ]}
     ],
     substitutes: [
-      { ingredient: "Teff flour", alternatives: ["Wholemeal flour for all the flatbread flour", "Buckwheat flour blended with plain flour"] },
-      { ingredient: "Fenugreek (ground)", alternatives: ["Omit or use a pinch of dried methi leaves", "Extra cumin as a mild substitute"] },
-      { ingredient: "Feta cheese", alternatives: ["Ricotta salata", "Omit entirely to keep the dish fully vegan"] }
+      { ingredient: "Guascas", alternatives: ["1 tbsp dried oregano plus 1 tsp dried marjoram (approximates the herbal quality)", "A mixture of dried sage and dried chamomile — unusual but closer to the real thing"] },
+      { ingredient: "Sweet potato (the third variety)", alternatives: ["Yuca (cassava), peeled and cubed", "Parsnip"] },
+      { ingredient: "Soured cream", alternatives: ["Full-fat crème fraîche", "Plain Greek yoghurt"] }
     ],
     instructions: [
-      "Step 1 — Make the berbere blend: Combine all the spice blend ingredients in a small bowl and mix well. Set aside. This homemade blend is the soul of the dish — toast the whole spices briefly in a dry pan first if you want even more depth.",
-      "Step 2 — Caramelise the onions (the most important step): Heat the vegetable oil in a large heavy-based pot over medium-low heat. Add the finely diced onions and a pinch of salt and cook, stirring frequently, for 20–25 minutes. Do not rush this step — the onions must turn a deep golden caramel colour and almost melt into the oil. This slow-cooked onion base is what gives Misir Wot its characteristic rich sweetness.",
-      "Step 3 — Add aromatics and spice: Increase heat to medium. Add the garlic and ginger and fry for 2 minutes, stirring constantly. Add the entire berbere spice blend and tomato purée and stir vigorously for 2 minutes, letting the spices fry in the oil until deeply fragrant — the pot will smell extraordinary.",
-      "Step 4 — Cook the lentils: Rinse the red lentils well and add them to the pot along with the vegetable stock. Stir everything together, bring to a boil, then reduce to a steady simmer. Cook uncovered for 20–25 minutes, stirring occasionally, until the lentils have completely broken down into a thick, creamy stew. Add a splash more water if it becomes too thick. Taste and adjust salt. The stew should be bold, warming, and deeply flavoured.",
-      "Step 5 — Make the flatbreads: While the stew simmers, combine both flours, salt, and baking powder in a bowl. Gradually add the warm water, mixing to form a smooth, pourable batter (thinner than pancake batter — almost like thick cream). Heat a dry non-stick frying pan over medium-high heat. Pour in a ladleful of batter and swirl to form a thin circle. Cook for 2–3 minutes until bubbles form and the surface looks dry, then carefully flip and cook for 30 seconds on the other side. Stack the flatbreads under a clean tea towel to keep warm and soft.",
-      "Step 6 — Serve: Spoon the Misir Wot generously onto warmed plates or a large shared platter. Scatter the crumbled feta over the top along with fresh coriander leaves. Arrange the warm flatbreads alongside for scooping. Serve with lemon wedges to squeeze over — the acidity brightens all the warm spices beautifully."
+      "Step 1 — Separate the coriander stalks from the leaves. Reserve the leaves for garnishing. Tie the stalks together with a piece of kitchen string — they\'ll go into the pot whole and be fished out later.",
+      "Step 2 — In a large, heavy-based pot (at least 5 litres), combine the vegetable stock, white onion, smashed garlic, whole spring onions, coriander stalk bundle and 2 tbsp of the dried guascas. Bring to a boil over high heat.",
+      "Step 3 — Add all three types of potato to the pot — the floury potatoes, waxy potato rounds and sweet potato chunks. Add the remaining 1 tbsp guascas. Stir, bring back to a boil, then reduce to a steady simmer. Season generously with salt and white pepper.",
+      "Step 4 — Simmer uncovered for 25 minutes, stirring occasionally and pressing some of the floury potato pieces against the side of the pot with a spoon. This is the key technique: the floury potatoes dissolve and naturally thicken the broth to a creamy, velvety consistency without any blending needed. The waxy potatoes and sweet potato hold their shape and provide texture contrast.",
+      "Step 5 — Add the corn cob rounds to the pot and continue simmering for a further 15–20 minutes. The corn will sweeten the broth as it cooks. Keep stirring and mashing the floury potatoes against the sides — the broth should become thick enough to coat a spoon. If it thickens too much, add a splash more stock or water.",
+      "Step 6 — Fish out and discard the coriander stalk bundle and the whole spring onions. Taste the broth carefully — it should be savoury, herbal and slightly sweet from the corn and sweet potato. Adjust seasoning generously. The guascas flavour should be present and fragrant.",
+      "Step 7 — Prepare all the garnishes: slice the avocados and fan onto a plate. Pour the soured cream into a small bowl. Put the capers in a small dish. Arrange the fresh coriander leaves and lime wedges on the table. These garnishes are not optional — they transform the soup.",
+      "Step 8 — Ladle the hot soup into deep bowls, making sure everyone gets at least one piece of corn and a good mix of potato textures. Bring all the garnishes to the table and let everyone customise their bowl: avocado slipped in to one side, a generous spoonful of soured cream swirled through, capers scattered over, fresh coriander on top and a good squeeze of lime. The cold cream hitting the hot soup is one of the great contrasts in all of South American cooking."
     ]
   }
 ];

@@ -1,60 +1,60 @@
 // us-politics-news-data.js
-// Auto-updated 2026-06-23 — do not edit manually
+// Auto-updated 2026-06-24 — do not edit manually
 
 var US_POLITICS_NEWS = {
-  date: "2026-06-23",
+  date: "2026-06-24",
   main: {
-    title: "Federal Judge Finds Trump Administration\'s Voter Data Verification System Unlawful",
+    title: "Congress Passes War Powers Measure, Rebuking Trump\'s War with Iran",
     category: "Politics",
     content: [
-      "A federal judge has ruled that the Trump administration\'s revamped SAVE tool — a data system used to verify the eligibility of tens of millions of American voters — is unlawful. The decision represents a significant legal setback for the administration\'s efforts to reshape how voter rolls are maintained and verified across the country. The ruling comes after the system had already been used to run checks on voter data at a massive scale, raising urgent questions about what happens to the information already processed.",
-      "The SAVE tool, which stands for Systematic Alien Verification for Entitlements, was retooled by the Trump administration as part of a broader push to scrutinize voter eligibility and crack down on what the administration has characterized as fraudulent or ineligible registrations. Critics, however, argued from the outset that the system was being deployed in a manner that exceeded its legal authority and threatened the voting rights of legitimate American citizens. The sheer volume of voters whose data was run through the system — numbering in the tens of millions — amplified concerns about the legal and civil liberties implications of the program.",
-      "The judge\'s ruling specifically found that the administration\'s use of the SAVE system in this context crossed a legal line, determining the program to be unlawful as currently configured and applied. Election integrity advocates and civil rights organizations who had challenged the system welcomed the decision as a critical check on executive overreach in the administration of elections. The ruling adds to a growing body of court decisions that have pushed back against various components of the Trump administration\'s domestic policy agenda.",
-      "The decision arrives at a politically charged moment, with midterm elections drawing closer and voting rights emerging as one of the most contested battlegrounds in American politics. The ruling also comes just a day after the Supreme Court allowed a separate decision to stand that eliminated a key enforcement tool under the Voting Rights Act in seven states, meaning that minority and vulnerable voters are facing a rapidly shifting legal landscape. Together, these developments are likely to intensify the debate in Congress and on the campaign trail over who controls the machinery of American elections.",
-      "The Trump administration has not yet indicated whether it will appeal the ruling or seek to modify the SAVE program to bring it into legal compliance. White House officials have consistently defended their voter verification efforts as necessary safeguards against election fraud, even as courts and opponents have challenged both the legal basis and the factual premise of those claims. As the legal battles continue, election administrators across the country are left navigating an increasingly uncertain environment ahead of the 2026 midterm cycle."
+      "In a historic and symbolically charged vote, Congress has passed a war powers resolution directing President Trump to remove U.S. armed forces from hostilities with Iran — marking the first time Congress has successfully passed such a measure. The resolution reflects growing bipartisan frustration on Capitol Hill over the administration\'s conduct of the conflict, which many lawmakers argue was initiated without proper congressional authorization. Though the measure does not carry the force of law and does not require the president\'s signature, its passage represents a significant institutional rebuke of executive war-making power.",
+      "Senator Tim Kaine of Virginia, a Democratic sponsor of the resolution, has been among the most vocal proponents of reasserting Congress\'s constitutional authority over decisions to go to war. Speaking after the Senate vote, Kaine acknowledged that while the resolution was an important step, he stressed there was considerably more work to be done to bring the conflict to a close. His comments underscored the broader concern among lawmakers that symbolic gestures alone are insufficient to constrain a White House determined to prosecute the war on its own terms.",
+      "The passage of the resolution has further strained the already fraught relationship between President Trump and Senate Republicans. Ties between Trump and Senate Majority Leader John Thune of South Dakota have grown increasingly tense, with some Republican senators openly expressing frustration that the president\'s unpredictable actions are derailing their shared legislative agenda. The war powers vote has brought those tensions into sharp relief, as a number of Senate Republicans crossed the aisle to support the measure, signaling that GOP unity behind the administration on the Iran conflict is far from guaranteed.",
+      "The constitutional debate underlying the resolution is not a new one, but its renewed urgency reflects the scale and duration of U.S. involvement in hostilities with Iran. Critics of the administration argue that the president lacks the legal authority to sustain an ongoing military campaign without explicit congressional authorization, while the White House has maintained that existing authorities and national security imperatives justify its actions. The resolution, even without the force of law, puts every member of Congress on record and amplifies the political cost of continuing the conflict without a clearer mandate.",
+      "The vote adds measurable pressure on the White House to seek a diplomatic resolution or at minimum to engage Congress more formally on the path forward. Observers note that while previous war powers resolutions have largely been ignored by sitting presidents, the bipartisan character of this vote makes it harder to dismiss as mere partisan opposition. The episode is being closely watched as a test of whether Congress can meaningfully reassert its constitutional prerogatives in matters of war and peace, and Senator Kaine\'s promise of further legislative action suggests the conflict between the executive and legislative branches over Iran is far from resolved."
     ],
-    image: "https://images.unsplash.com/photo-1612278920639-cfbae3835fee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxGZWRlcmFsJTIwSnVkZ2UlMjBGaW5kcyUyMFRydW1wJTIwQWRtaW5pc3RyYXRpb24lNUN8ZW58MHwwfHx8MTc4MjE5MDk4Mnww&ixlib=rb-4.1.0&q=80&w=1080",
-    source: "NPR",
-    sourceUrl: "https://www.npr.org/2026/06/22/nx-s1-5866719/save-voter-data-trump-judge-unlawful"
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/340e/live/f69c8770-6f7b-11f1-8e1d-bbbb1017d210.jpg",
+    source: "BBC News",
+    sourceUrl: "https://www.bbc.co.uk/news/articles/ce8j6g3v3r4o?at_medium=RSS&at_campaign=rss"
   },
   secondary: [
     {
       id: "us1",
-      title: "Supreme Court Allows Ruling Stripping Minority Voter Protections in 7 States",
-      summary: "The Supreme Court has left in place a ruling that eliminates a key enforcement mechanism under the Voting Rights Act for voters with disabilities or literacy challenges across seven states.",
+      title: "Mamdani-Backed Candidates Sweep House Primaries in New York City",
+      summary: "All three progressive candidates endorsed by New York City Mayor Zohran Mamdani won their Democratic House primaries, including two who unseated sitting incumbents.",
       body: [
-        "The Supreme Court declined to intervene in a lower court ruling that effectively strikes down a critical tool used to enforce Voting Rights Act protections in seven states, dealing a significant blow to advocates for minority and vulnerable voters. The protections at issue had long served as a mechanism to ensure voters with disabilities or those unable to read or write in English could still have their rights enforced under federal law.",
-        "The decision is likely to have far-reaching consequences as the 2026 midterm elections approach, leaving millions of voters in those seven states with reduced legal recourse if they face discrimination or barriers at the ballot box. Civil rights groups condemned the Court\'s inaction, warning that the ruling chips away at decades of hard-won voting rights protections."
+        "New York City Mayor Zohran Mamdani\'s high-stakes gamble in Tuesday\'s Democratic primaries paid off decisively, with all three of his endorsed candidates — Claire Valdez, Darializa Avila Chevalier, and former mayoral candidate Brad Lander — claiming victories in races that exposed deep fault lines within the city\'s Democratic Party. Most strikingly, Avila Chevalier ousted incumbent Representative Adriano Espaillat, while Lander defeated Representative Dan Goldman in a contest heavily shaped by divisions over the Israel-Gaza war.",
+        "The sweep amounts to a major demonstration of Mamdani\'s political reach and ideological influence within New York\'s Democratic ecosystem, cementing the Democratic Socialist left as a powerful force in the city\'s congressional delegation. Because all three seats are considered safe for Democrats in November, the primary wins are widely expected to translate directly into seats in the House of Representatives."
       ],
-      image: "https://images.pexels.com/photos/36984943/pexels-photo-36984943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      source: "NPR",
-      url: "https://www.npr.org/2026/06/22/nx-s1-5863532/supreme-court-voting-rights-act-private-right-arkansas",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/bde8/live/87a1ba60-6f86-11f1-8546-8f19e4fe30f4.jpg",
+      source: "Washington Post",
+      url: "https://www.washingtonpost.com/elections/2026/06/23/new-york-house-primary-election-live-results-mamdani-candidates-tested/",
       category: "Politics"
     },
     {
       id: "us2",
-      title: "Federal Judge Blocks Trump Administration\'s SNAP Bans on Sugary Drinks and Candy",
-      summary: "A federal judge ruled that the Agriculture Department lacked the legal authority to approve state waivers restricting what SNAP recipients can purchase with their food stamp benefits.",
+      title: "Trump\'s Pick for Top IRS Lawyer Works at Firm That Represents Him",
+      summary: "President Trump\'s nominee for chief counsel at the Internal Revenue Service, James R. Gadwood, is employed by a law firm that has represented Trump himself in tax matters.",
       body: [
-        "A federal judge has blocked the Trump administration\'s effort to allow states to ban the use of food stamps for sugary drinks and candy, finding that the Agriculture Department overstepped its authority in approving such waivers. The court determined that Congress itself defined what qualifies as food under the SNAP program and did not grant the agency the power to rewrite or waive that definition.",
-        "The ruling is a setback for the administration\'s health-focused restrictions on the federal nutrition assistance program, which serves tens of millions of low-income Americans. Critics of the bans had argued they were paternalistic and could disproportionately burden low-income families, while supporters had framed the restrictions as a commonsense public health measure."
+        "James R. Gadwood, nominated by President Trump to serve as the top lawyer at the Internal Revenue Service, currently works at Miller & Chevalier — a firm with a direct financial and legal relationship with the president through its representation of Trump in tax-related matters. The nomination has raised immediate ethics concerns about the potential for conflicts of interest at an agency that oversees federal tax enforcement.",
+        "The arrangement draws renewed scrutiny to the administration\'s approach to filling key regulatory and legal positions with individuals whose professional backgrounds intersect with the president\'s personal legal and financial affairs. Ethics watchdogs argue that placing a nominee from a firm representing Trump at the helm of the IRS\'s legal operations poses serious questions about the independence of the agency."
       ],
-      image: "https://thehill.com/wp-content/uploads/sites/2/2026/06/rollinsbrooke_061026gn03_w.jpg?w=900",
-      source: "The Hill",
-      url: "https://thehill.com/policy/healthcare/5935279-judge-blocks-soda-snap-ban/",
+      image: "https://images.unsplash.com/photo-1550531996-ff3dcede9477?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUcnVtcCU1Q3xlbnwwfDB8fHwxNzgyMjc3MzkxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "The New York Times",
+      url: "https://www.nytimes.com/2026/06/23/us/politics/trump-top-irs-lawyer.html",
       category: "Politics"
     },
     {
       id: "us3",
-      title: "Trump Endorses Rep. John James for Michigan Governor",
-      summary: "President Trump has thrown his support behind Republican Congressman John James in Michigan\'s 2026 gubernatorial race, calling the West Point graduate and Iraq War veteran his pick to lead the state.",
+      title: "Conflict Escalates Between President Trump and Senate Republicans",
+      summary: "Tensions between President Trump and Senate Majority Leader John Thune are intensifying as Republican senators warn that the president\'s erratic behavior is undermining their legislative agenda.",
       body: [
-        "President Trump announced his endorsement of Rep. John James (R-Mich.) for governor of Michigan, praising the combat pilot and West Point graduate as an 'America First' candidate in a post on Truth Social. The endorsement is expected to be a significant boost for James in what is shaping up to be a competitive race in a key battleground state.",
-        "Michigan\'s governor\'s race is being closely watched ahead of the 2026 midterms as both parties look to score a high-profile win in a state that has been a pivotal electoral battleground in recent presidential cycles. Trump\'s backing of James signals his continued desire to shape the Republican Party\'s candidate selection at the state level."
+        "The relationship between President Trump and Senate Republicans has grown visibly strained, with multiple senators expressing concern that the president\'s unpredictable decision-making is creating obstacles to advancing the party\'s shared policy goals. Senate Majority Leader John Thune of South Dakota finds himself in the difficult position of managing an increasingly restless caucus while maintaining working ties with a White House that has shown little appetite for congressional consultation.",
+        "The passage of the bipartisan war powers resolution has served as a flashpoint, illustrating that Republican senators are willing to break with the president on matters they consider to be of constitutional importance. Observers say the growing rift reflects broader anxieties within the GOP about the political consequences of an unpredictable executive as the 2026 midterm elections approach."
       ],
-      image: "https://thehill.com/wp-content/uploads/sites/2/2025/07/hill_nation_summit_071625gn077-e1752686214500.jpg?w=900",
-      source: "The Hill",
-      url: "https://thehill.com/homenews/campaign/5935338-trump-endorses-john-james-michigan/",
+      image: "https://images.unsplash.com/photo-1550531996-ff3dcede9477?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxDb25mbGljdCUyMEVzY2FsYXRlcyUyMEJldHdlZW4lMjBQcmVzaWRlbnQlMjBUcnVtcCUyMGFuZCUyMFNlbmF0ZSUyMFJlcHVibGljYW5zfGVufDB8MHx8fDE3ODIyNzczOTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "NPR",
+      url: "https://www.npr.org/2026/06/23/nx-s1-5862113/conflict-is-escalating-between-president-trump-and-senate-republicans",
       category: "Politics"
     }
   ]

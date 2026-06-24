@@ -1,54 +1,116 @@
 // curiosity-data.js
-// Auto-updated 2026-06-23 — do not edit manually
+// Auto-updated 2026-06-24 — do not edit manually
 
 var CURIOSITY_DATA = {
-  date: "2026-06-23",
+  date: "2026-06-24",
   mainArticle: {
-    title: "The War of the Currents: How Edison and Tesla Fought Over the Future of Electricity — and Edison Lost",
-    subject: "War of Currents Edison Tesla electricity",
-    subtitle: "Two visions of power. One would light the modern world. The other would be left behind by history — and its champion would spend his final years desperately denying it.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/6/6f/Stele_of_Vultures_detail_01a.jpg",
-    readTime: "10 min",
+    title: "The Paper Kingdom: How China Invented Money — and Nearly Destroyed Itself With It",
+    subject: "Song Dynasty paper money jiaozi China",
+    subtitle: "Six centuries before Europe printed its first banknote, Chinese emperors conjured wealth from mulberry bark — and learned the hard way that printing money has consequences.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/China_-_Song_Dynasty-en.svg/960px-China_-_Song_Dynasty-en.svg.png",
+    readTime: "11 min",
     content: [
-      { type: "paragraph", text: "In the late 1880s, the United States stood on the edge of an electrified age — and two men were locked in a furious, deeply personal battle over how that electricity would flow. On one side stood Thomas Edison, the most famous inventor in the world, with a fortune already made and a direct-current system already installed in Manhattan. On the other stood George Westinghouse, a Pittsburgh industrialist, backed by a brilliant, strange, and largely penniless Serbian engineer named Nikola Tesla. The prize was nothing less than the infrastructure of modern civilisation. The loser would be made to look a fool." },
-      { type: "paragraph", text: "What makes the War of the Currents so remarkable is not merely who won, but how viciously the battle was fought. Edison, who prided himself on a certain plain-spoken pragmatism, descended into a campaign of misinformation, theatrical cruelty, and outright fabrication that shocked even his admirers. He lobbied governments, arranged public demonstrations, and — in one of the strangest episodes in the history of technology — helped invent the electric chair, not out of humanitarian concern, but to ensure that alternating current would become synonymous with death." },
-
-      { type: "heading", text: "The Problem With Edison\'s System" },
-      { type: "paragraph", text: "Edison\'s direct current worked beautifully — within a very small radius. His Pearl Street Station in lower Manhattan, opened in 1882, could illuminate a circle roughly one mile across before the voltage dropped so catastrophically that the lights dimmed to uselessness. Every city, every town, every factory that wanted Edison\'s electricity would need its own generating station, its own copper wiring, its own operator. It was, as his critics noted, less a system than an extraordinarily expensive local arrangement." },
-      { type: "paragraph", text: "The copper problem alone was nearly fatal. At the voltages Edison\'s system required, transmitting power over any significant distance demanded cables of almost absurd thickness and weight. One early estimate suggested that electrifying the whole of New York by direct current would require so much copper that it would have consumed the entire global supply. Edison knew this. His private notebooks reveal a man who understood the limitations better than anyone — and chose, for reasons of pride and investment, to paper over them anyway." },
-
-      { type: "heading", text: "The Serbian and the Rotating Magnetic Field" },
-      { type: "paragraph", text: "Nikola Tesla had arrived in America in 1884 with four cents in his pocket, a letter of introduction to Edison, and an idea in his head that he believed would change the world. He was probably right. His insight — arrived at, according to his own account, during a walk in a Budapest park in 1882 — was that a rotating magnetic field could be used to generate alternating current in a form that could be transmitted over vast distances at high voltage, then stepped down by a transformer to safe levels at the point of use. It was, in principle, the solution to Edison\'s copper problem." },
-      { type: "paragraph", text: "Edison employed Tesla briefly, set him impossible tasks, and when Tesla completed them, reportedly laughed off a promised bonus as an 'American joke.' Tesla resigned, spent a demoralising year digging ditches, and eventually found his way to George Westinghouse, who recognised at once what the Serbian\'s patents represented. By 1888, Westinghouse had paid Tesla a fortune for the rights — and the war had properly begun. Edison\'s response to the threat was not to improve his own system, but to destroy his rival\'s reputation." },
-
-      { type: "heading", text: "The Executioner\'s Current" },
-      { type: "paragraph", text: "In 1887, the state of New York was searching for a more humane method of execution than hanging. Edison seized the opportunity with startling cynicism. He publicly opposed capital punishment — and privately helped ensure that any electrical execution method would use alternating current at Westinghouse\'s voltage, not his own. He corresponded with Harold P. Brown, an anti-AC campaigner he secretly funded, and arranged for Westinghouse generators to be purchased under false names for use in the first electric chairs. He even tried, unsuccessfully, to have the verb for electrical execution coined as 'to Westinghouse.'" },
-      { type: "paragraph", text: "The first electric chair execution, of convicted murderer William Kemmler in August 1890, was a catastrophe — prolonged, grotesque, and widely reported as barbaric. Edison had hoped it would terrify the public into rejecting AC power. Instead, it horrified everyone equally and changed precisely nothing about the march of alternating current. Westinghouse, who had fought desperately through the courts to prevent his generators from being used, was reported to have said that he could have done it better with an axe." },
-
-      { type: "heading", text: "The Battle of the Light" },
-      { type: "paragraph", text: "The decisive moment came in 1893, when the World\'s Columbian Exposition opened in Chicago — the great World\'s Fair intended to showcase American modernity. The organising committee put the electrical contract out to tender. Edison, overconfident, bid a sum so enormous that Westinghouse undercut him by nearly half. The entire exposition — all 200,000 incandescent lamps blazing simultaneously — was lit by alternating current. When President Grover Cleveland pressed the button to open the fair and the grounds blazed into light, it was Westinghouse\'s generators that hummed. The moment was watched by twenty-seven million visitors over six months. The argument was, for most practical purposes, over." },
-      { type: "paragraph", text: "The Niagara Falls contract settled what remained. In 1895, a Westinghouse plant using Tesla\'s AC system began transmitting power from the falls to Buffalo, twenty-six miles away — a distance that would have required an impossible weight of copper on Edison\'s system. The newspapers called it a miracle. When the first burst of Niagara power lit Buffalo\'s street lamps, Tesla reportedly wept. Edison said nothing publicly for months, and when he finally spoke of it, he was terse and dismissive. The man who had once been the undisputed master of American electricity had been outmanoeuvred by a pair of men he had each, at different moments, tried to humiliate." },
-
-      { type: "heading", text: "The Long Shadow" },
-      { type: "paragraph", text: "Edison never fully admitted defeat. For years afterward he continued to disparage alternating current in private correspondence, insisting that it was inherently dangerous, that the public had been misled, that history would eventually vindicate him. In a 1903 letter he wrote with remarkable bitterness that the AC system was 'a terrible thing' that had been wished on the public by commercial interests. He was, by that point, simply wrong — and the billions of people whose lights worked because of high-voltage transmission knew it, even if they didn\'t know the story behind it." },
-      { type: "paragraph", text: "There is a painful irony embedded in Edison\'s legacy. He was, in almost every other respect, a genuine genius — a man whose laboratory at Menlo Park produced innovations of lasting importance, whose understanding of commercial research was transformative, and whose showmanship brought science into popular imagination. But on this one question, the most important question of his age, he was blinded by investment, by vanity, and by an inability to admit that a twenty-six-year-old Serbian immigrant had seen further than he had." },
-
-      { type: "heading", text: "What the War Left Behind" },
-      { type: "paragraph", text: "The War of the Currents did not end cleanly. Even today, direct current has its uses — in electronics, in battery storage, in some long-distance submarine cables where AC\'s alternating losses become significant over extreme distances. The irony is that the modern data centres and renewable energy installations of the twenty-first century have created a quiet renaissance of DC transmission in specialist contexts. Edison\'s idea was not wrong; it was merely limited — and history is full of ideas that were not wrong, merely limited, and whose champions destroyed themselves trying to deny it." },
-      { type: "paragraph", text: "Tesla, who should have been the great victor, ended his life in a hotel room in Manhattan in 1943 — nearly penniless, his later years consumed by increasingly eccentric projects, many never built. Westinghouse, who had actually won, is largely forgotten. Edison, who lost, has a thousand schools named after him. History\'s accounting, as ever, is its own peculiar form of injustice. The electrons, meanwhile, flow on — alternating, invisible, and entirely indifferent to who won." }
+      {
+        type: "paragraph",
+        text: "Sometime around the year 960 AD, in the bustling commercial city of Chengdu in Sichuan province, a group of merchants made a decision that would quietly transform the entire human relationship with wealth. Carrying heavy strings of iron coins across mountain roads had become not merely inconvenient but dangerous — bandits knew exactly how much a laden merchant weighed. So the merchants began depositing their coins with trusted shops and carrying lightweight paper receipts instead, receipts that could be exchanged for coin at the other end of the journey. It was a simple solution to a practical problem. It was also the invention of paper money — and it would set off one of the most consequential economic experiments in world history."
+      },
+      {
+        type: "heading",
+        text: "The Weight of Wealth"
+      },
+      {
+        type: "paragraph",
+        text: "To understand why paper money emerged in China first, it helps to understand just how inconvenient Chinese coinage had become. The standard currency was the copper or iron cash coin, round with a square hole, worth almost nothing individually. A single large transaction might require thousands of coins threaded onto strings, each string weighing several kilograms. In Sichuan, the situation was worse still, because the province used iron coins rather than copper, which were heavier and worth even less by weight. A bolt of silk might cost tens of thousands of iron cash — a burden almost literally impossible to carry."
+      },
+      {
+        type: "paragraph",
+        text: "The merchants who devised the paper receipt system called their certificates jiaozi, meaning roughly 'exchange notes.' The shops that issued them charged a small fee for the service and kept the coins in reserve. For a generation the system worked beautifully as a private arrangement, oiling the gears of Sichuan\'s famously sophisticated commercial economy. But the Song Dynasty government, watching the system flourish, recognised something the merchants had perhaps not fully intended to create: a mechanism for the state to manufacture purchasing power from almost nothing."
+      },
+      {
+        type: "heading",
+        text: "When the State Took the Printing Blocks"
+      },
+      {
+        type: "paragraph",
+        text: "In 1023, the Song government nationalised the jiaozi system, establishing the world\'s first government-issued paper currency and the world\'s first institution specifically created to manage it — the Jiaozi Office in Chengdu. The notes were printed on paper made from the bark of the mulberry tree, carefully designed with multiple colours and intricate patterns to deter counterfeiting. Each note was theoretically redeemable for a fixed quantity of coin, and the government pledged to limit the total amount in circulation. For several decades, the system worked with impressive discipline."
+      },
+      {
+        type: "paragraph",
+        text: "The Song Dynasty was, by the standards of the medieval world, a remarkably commercial civilisation. It had gunpowder, the compass, moveable type printing, and a merchant class of wealth and sophistication that would not be matched in Europe for centuries. Paper money suited this world perfectly. Trade accelerated. Tax collection became easier. The enormous administrative costs of minting, transporting, and securing billions of heavy coins shrank. For a moment, the Song bureaucrats must have felt they had discovered something close to economic alchemy — and in a sense, they had."
+      },
+      {
+        type: "heading",
+        text: "The Temptation That Broke Every Dynasty"
+      },
+      {
+        type: "paragraph",
+        text: "The problem with the ability to print money is that it is almost impossible not to abuse in a crisis. The Song Dynasty faced crises in abundance. To the north, the Jurchen Jin Dynasty was pressing relentlessly southward, forcing enormous military expenditure. Wars are expensive. Armies must be fed, armed, and paid. And when the treasury runs dry, the printing blocks are right there, in the Jiaozi Office, waiting. The Song government began issuing notes beyond its reserves, quietly at first, then with increasing desperation."
+      },
+      {
+        type: "paragraph",
+        text: "The result followed with the grim inevitability that would repeat itself in every subsequent experiment with paper currency for the next thousand years. As more notes entered circulation without a corresponding increase in the goods and services available to buy, prices rose. Merchants grew reluctant to accept the notes at face value. The government responded by issuing more notes to cover its now more expensive obligations, which pushed prices higher still. By the twelfth century, Sichuan was experiencing what modern economists would recognise immediately as runaway inflation, and ordinary people — who had no choice but to use the official currency — were being slowly ruined."
+      },
+      {
+        type: "heading",
+        text: "The Mongols and the Ultimate Experiment"
+      },
+      {
+        type: "paragraph",
+        text: "When the Mongols conquered China and established the Yuan Dynasty in the thirteenth century, they inherited both the paper money system and its problems — and decided to double down. Kublai Khan declared paper money the sole legal currency of his empire, backed by nothing more than imperial authority and the threat of execution for those who refused it. The Venetian traveller Marco Polo, arriving at Kublai\'s court in the 1270s, was so astonished by the system that he devoted an entire chapter of his account to it. Europeans reading his description thought he was either lying or deluded. The idea that a piece of paper could be money seemed frankly magical."
+      },
+      {
+        type: "paragraph",
+        text: "For a time, Kublai\'s system worked — because the Mongol Empire was large enough, wealthy enough, and feared enough to give the currency real credibility. But the underlying logic had not changed. Military campaigns, court expenses, and natural disasters kept requiring more spending than the treasury held. Notes were printed. Prices rose. By the mid-fourteenth century, Yuan paper money had lost so much value that it had effectively ceased to function. The resulting economic chaos contributed directly to the popular rebellions that swept the Yuan Dynasty from power in 1368 and brought the Ming Dynasty to the throne."
+      },
+      {
+        type: "heading",
+        text: "The Lesson the Ming Refused to Learn"
+      },
+      {
+        type: "paragraph",
+        text: "The founders of the Ming Dynasty had watched paper money destroy the Yuan. They issued their own paper currency anyway — the Daming Baochao, or 'Great Ming Precious Note.' The parallels with their predecessors were so close as to seem almost parodic. The notes were initially backed by reserves, then increasingly issued beyond them to cover military and administrative costs. Within fifty years of their introduction, Ming paper notes were trading at a fraction of their face value. By the mid-fifteenth century the government itself had largely abandoned them, reverting to silver and copper as the real currency of the empire."
+      },
+      {
+        type: "paragraph",
+        text: "What makes the Ming episode so striking is not that it failed but that everyone involved knew it would likely fail, having watched it fail before. The bureaucrats who managed the system wrote memorials warning of precisely the inflationary dynamics that were already unfolding. The emperor\'s advisors cited the Yuan collapse as a cautionary tale in documents that the emperors read and largely ignored. The pull of the printing block — the promise of instant resources for urgent problems — proved stronger than historical memory every time."
+      },
+      {
+        type: "heading",
+        text: "The Technology That Outlived Its Inventors"
+      },
+      {
+        type: "paragraph",
+        text: "Paper money eventually reached Europe in the seventeenth century, where the same cycle played out with remarkable fidelity. The Swedish Riksbank issued the first European banknotes in 1661. The French Mississippi Bubble of 1720, engineered by John Law, demonstrated that European governments were just as capable of printing their way to catastrophe as Chinese dynasties had been. The difference was that Europe, by then, had more developed commercial institutions — central banks, bond markets, accounting practices — that could sometimes impose the discipline that the Chinese court had repeatedly failed to maintain."
+      },
+      {
+        type: "paragraph",
+        text: "The Chinese inventors of paper money were not naive. The jiaozi system\'s original designers built in careful controls — fixed issuance periods, mandatory redemption dates, reserve requirements. The problem was never the technology itself but the political economy surrounding it: the fact that the people who needed money most urgently were also the people with the most power to obtain it by printing. This is not a Chinese problem, or a medieval one. It is a permanent feature of the relationship between governments and currency that every monetary system in human history has had to grapple with."
+      },
+      {
+        type: "heading",
+        text: "What the Paper Kingdom Left Behind"
+      },
+      {
+        type: "paragraph",
+        text: "The legacy of China\'s paper money experiments is enormous and almost entirely unacknowledged in the standard accounts of financial history, which tend to trace modern banking through Venice, Amsterdam, and London. But the conceptual breakthrough — the idea that money need not be made of something intrinsically valuable, that it can be a shared fiction backed by institutional trust — was Chinese. Every banknote in every wallet in the world today is the direct intellectual descendant of those mulberry-bark rectangles issued in Chengdu in 1023."
+      },
+      {
+        type: "paragraph",
+        text: "The Song, Yuan, and Ming failures also bequeathed something equally important: the first empirical record of what happens when monetary discipline breaks down. Centuries of detailed Chinese administrative records — tax yields, price indices, wage data, government expenditure — constitute something close to a controlled experiment in inflationary dynamics, run at civilisational scale. Modern economists studying hyperinflation still cite the Yuan and Ming cases. The paper kingdom\'s ruins, it turns out, were also a library."
+      }
     ]
   },
   personOfTheDay: {
-    name: "George Westinghouse",
-    lifespan: "1846–1914",
-    category: "Engineering & Industry",
-    image: "https://upload.wikimedia.org/wikipedia/commons/5/5b/George_Westinghouse_1884.png",
-    bio: "George Westinghouse was born in Central Bridge, New York, in 1846, and showed a restless mechanical aptitude almost from childhood. After serving in both the Union Army and Navy during the Civil War, he returned to civilian life and almost immediately began inventing. His first great achievement — the railway air brake, patented in 1869 when he was just twenty-two — transformed the safety of American railroads overnight. Before Westinghouse\'s brake, stopping a train required brakemen on every car to turn wheels by hand on a signal from the engineer; after it, a single operator could halt an entire train simultaneously. It was, by any measure, one of the most consequential engineering innovations of the nineteenth century.\n\nBut Westinghouse\'s second act was even more significant. In the mid-1880s, he became convinced that alternating current was the future of electrical power distribution, and he assembled a remarkable team — most crucially Nikola Tesla, whose AC motor patents he purchased in 1888 for a sum that made Tesla briefly wealthy. Where Edison was an inventor who occasionally became an industrialist, Westinghouse was an industrialist with the instincts of an engineer: he understood systems, logistics, and the gap between a laboratory demonstration and a reliable product. He drove his engineers hard, made mistakes, corrected them, and kept building.\n\nThe 1893 World\'s Fair in Chicago was Westinghouse\'s public triumph, and the Niagara Falls power station of 1895 was his monument. At its peak, the Westinghouse Electric Company was one of the most powerful corporations in America, employing tens of thousands and supplying power to cities across the continent. He was also, unlike many industrialists of his era, a notably enlightened employer — introducing the nine-hour workday, profit-sharing schemes, and pension arrangements that were decades ahead of general practice.\n\nYet Westinghouse died in relative obscurity compared to his rival. The financial panic of 1907 forced him out of his own company, and he spent his final years in declining health, still inventing — he received his last patent in 1913, a year before his death. He never cultivated the myth-making instinct that made Edison a household name. History has been slow to correct the omission, but the alternating current that powers almost every building on Earth is, in a very real sense, George Westinghouse\'s most enduring monument."
+    name: "Wang Zhenyi",
+    lifespan: "1768–1797",
+    category: "Science & Mathematics",
+    image: "https://upload.wikimedia.org/wikipedia/commons/1/13/%E7%8E%8B%E6%8C%AF%E4%B9%89_%28%E5%8C%BB%E5%AD%A6%E5%AE%B6%29.jpg",
+    bio: "Wang Zhenyi was a Chinese mathematician, astronomer, and poet of the Qing Dynasty who, in a short life of just twenty-nine years, produced a body of scientific work of startling originality and range. Born in 1768 into a scholarly family, she had the unusual advantage of a grandfather who possessed a substantial library and the wisdom to let her use it. She taught herself astronomy, mathematics, medicine, and geography at a time when Chinese women of her class were expected to confine their intellectual energies to embroidery and verse — though she excelled at verse too, publishing several collections of poetry that were admired in her own lifetime.\n\nHer scientific contributions were both theoretical and pedagogical. Frustrated by the opacity of existing mathematical texts, she wrote simplified explanations of complex topics including the principles of multiplication and division, trigonometry, and the calculation of the equinoxes. She was particularly gifted at translating difficult astronomical concepts into clear, accessible language, and several of her works were explicitly intended to make science available to readers who lacked access to formal scholarly training — including women. In an era when the transmission of knowledge was heavily gatekept by gender and class, this was a quiet form of radicalism.\n\nWang Zhenyi also conducted her own observational astronomy and developed a correct geometrical explanation for lunar eclipses, demonstrating how the Earth\'s shadow falls upon the Moon — work she reportedly illustrated using a lamp, a mirror, and a round table in her garden. She was one of the few scholars of her era, male or female, who engaged seriously with the Western astronomical and mathematical works that had been filtering into China through Jesuit missionaries, and she attempted to synthesise the Western and Chinese traditions rather than simply deferring to either.\n\nShe died in 1797, aged twenty-nine, leaving behind eleven volumes of completed work and an unknown quantity of manuscripts that were lost or scattered after her death. She was barely recognised outside scholarly circles for nearly two centuries. In recent decades, her reputation has grown considerably as historians of science have revisited the contributions of women in non-Western traditions. In 2020, the International Astronomical Union named a crater on Venus after her — a small, belated acknowledgement of a mind that deserved a much longer run at the universe."
   },
   onThisDay: {
-    headline: "THE UNITED NATIONS CHARTER IS SIGNED",
-    date: "June 26, 1945",
-    summary: "On June 26, 1945 — the signing ceremony having begun on June 25 and concluded on June 26 — representatives of fifty nations gathered in San Francisco to sign the United Nations Charter, the founding document of the most ambitious experiment in international governance the world had ever attempted. The ceremony took place in the Veterans' Memorial Opera House, and delegates signed in the alphabetical order of their countries' names in English, with China — as one of the four principal sponsoring powers — given the honour of signing first. The ink was still wet on the ruins of the most destructive war in human history, and the delegates knew it. Many had flown directly from bombed cities or liberated camps. The mood was less triumphant than solemn.\n\nThe Charter had been negotiated over two months of often fractious debate, with the great powers clashing over the veto rights of the Security Council\'s permanent members, over the status of colonial territories, and over the language of human rights. The Soviet Union had arrived suspicious; smaller nations had arrived afraid of being ignored. What emerged was a document full of compromises and ambiguities — but also one containing, in its preamble, some of the most deliberately hopeful language ever written into a legal instrument: a determination 'to save succeeding generations from the scourge of war' and 'to reaffirm faith in fundamental human rights.' The United Nations formally came into existence on October 24, 1945, once the Charter had been ratified by the required number of states — a date still observed as United Nations Day.",
-    image: "https://images.unsplash.com/photo-1590274853856-f22d5ee3d228?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUSEUlMjBVTklURUQlMjBOQVRJT05TJTIwQ0hBUlRFUiUyMElTJTIwU0lHTkVEfGVufDB8MHx8fDE3ODIxOTEzMTR8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    headline: "THE BATTLE OF BANNOCKBURN: SCOTLAND WINS ITS FREEDOM",
+    date: "June 24, 1314",
+    summary: "On June 24, 1314, the Scottish army under Robert the Bruce completed one of the most decisive military upsets of the medieval world, routing a vastly larger English force under King Edward II at the Battle of Bannockburn, near Stirling in central Scotland. The English army, estimated at perhaps fifteen to twenty thousand men including a powerful force of armoured cavalry, had marched north to relieve Stirling Castle, the last major English-held stronghold in Scotland. Robert\'s force was significantly smaller but superbly disciplined, fighting on ground of his own careful choosing — boggy terrain that neutralised the English cavalry advantage — and organised into tight formations of spearmen called schiltrons that bristled like hedgehogs against mounted attack.\n\nThe battle unfolded over two days. On the first, English cavalry probes were beaten back with humiliating ease, including a famous episode in which the English knight Henry de Bohun charged Robert the Bruce in single combat and was killed with a single axe blow — an act of personal bravery that electrified Scottish morale. On the second day, Edward II committed his full force in a frontal assault across ground that quickly became churned mud. The English cavalry could not manoeuvre, the archers could not find clean lines of fire, and the Scottish schiltrons advanced steadily into the press. When a body of Scottish camp followers appeared on a nearby ridge — mistaken by the panicking English for fresh reinforcements — the English line broke and the rout became catastrophic. Edward II fled the field on horseback and barely escaped capture.\n\nBannockburn did not formally end the Wars of Scottish Independence — that would require another fourteen years of negotiation and further fighting before the Treaty of Edinburgh-Northampton recognised Scottish sovereignty in 1328. But it ended any realistic prospect of English conquest. Edward II never recovered his military credibility, and Robert the Bruce was confirmed in the eyes of his people and of Europe as the undisputed king of a free nation. The battle remains one of the defining moments of Scottish national identity, celebrated and contested in equal measure across seven centuries.",
+    image: "https://images.pexels.com/photos/31203687/pexels-photo-31203687.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
   }
 };

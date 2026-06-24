@@ -1,61 +1,61 @@
 // financial-news-data.js
-// Auto-updated 2026-06-23 — do not edit manually
+// Auto-updated 2026-06-24 — do not edit manually
 
 var FINANCIAL_NEWS = {
-  date: "2026-06-23",
+  date: "2026-06-24",
   main: {
-    title: "Tech Giant Oracle Cuts 21,000 Jobs as It Embraces AI",
-    category: "Technology & Markets",
+    title: "US AI Stock Sell-Off Shakes Markets from Wall Street to Asia",
+    category: "Markets",
     content: [
-      "Oracle has announced a sweeping round of layoffs affecting 21,000 employees, marking one of the largest single workforce reductions in the technology sector in recent memory. The cuts signal a dramatic strategic pivot by the enterprise software giant as it realigns its operations around artificial intelligence. The move reflects a broader and accelerating trend across the tech industry, where companies are simultaneously slashing headcounts while pouring hundreds of billions of dollars into AI infrastructure and capabilities.",
-      "The scale of Oracle\'s layoffs underscores just how profoundly AI is reshaping corporate labor strategies within the technology sector. Rather than viewing automation as a distant threat, major tech firms are now actively restructuring their workforces in real time, replacing roles that were once considered core with AI-driven systems and leaner operational teams. Oracle\'s decision suggests that enterprise software — long a stable employment base — is no longer immune to the disruptive force of machine learning and large language model technologies.",
-      "For investors, the announcement carries a dual message. On one hand, cost reductions of this magnitude can significantly improve operating margins and signal disciplined capital allocation, often welcomed by Wall Street. On the other hand, a layoff of this size raises questions about near-term execution risks, potential disruption to customer service and product development, and the reputational consequences of such a large human toll. Markets will be watching Oracle\'s upcoming earnings guidance closely to gauge whether the AI bet is translating into tangible revenue growth.",
-      "Oracle\'s move fits squarely into a pattern that has defined the tech sector throughout 2025 and into 2026, with firms from Microsoft to Alphabet trimming workforces even as their stock valuations reach historic highs. The paradox of rising profits alongside mass layoffs has drawn scrutiny from economists and labor analysts who argue that AI-driven productivity gains are not being broadly shared. For Oracle specifically, the restructuring is intended to fund aggressive investment in cloud AI services, a segment where the company has been working to close the gap with Amazon Web Services and Microsoft Azure.",
-      "The longer-term market implications of Oracle\'s restructuring extend beyond the company itself, serving as a bellwether for how legacy enterprise technology firms are navigating the AI transition. If Oracle\'s AI investments succeed in capturing meaningful market share in cloud and AI services, the layoffs may be vindicated in financial terms within a few quarters. However, if the pivot falters — as have some high-profile AI commercialization efforts across the industry — the human and financial cost of this gamble will come into sharp focus for shareholders and board members alike."
+      "A sweeping sell-off in technology stocks rattled global markets this week, as investors began seriously questioning the sky-high valuations and enormous capital expenditure commitments that have underpinned the artificial intelligence boom. The tech-heavy Nasdaq index closed 2.2% lower on Tuesday, while the broader S&P 500 also declined as the wave of selling spread well beyond the United States. The rout reflected a growing unease among market participants about whether the extraordinary sums being poured into AI infrastructure can ultimately be justified by the returns on offer.",
+      "The losses were not confined to Wall Street, quickly rippling across Asian markets as the trading day moved westward. A tentative rebound in Asian equities that had been hoped for in early trading failed to hold, as a fresh bout of selling hit technology and semiconductor stocks once again. The contagion underscored just how deeply the AI investment narrative has become embedded in global equity markets, meaning any reassessment of its prospects carries outsized consequences for portfolios worldwide.",
+      "At the heart of investor anxiety is a fundamental question about sustainability: have the valuations of AI-linked companies — ranging from chip designers to cloud infrastructure providers — outrun the realistic near-term revenues those businesses can generate? Stocks of major chipmakers were among the hardest hit, reflecting concerns that demand projections may have been overly optimistic. Markets are now awaiting earnings from memory chipmaker Micron Technology, which analysts hope will provide clearer guidance on whether demand for AI-related hardware remains as robust as bulls have claimed.",
+      "The sell-off also touched SpaceX, which briefly fell below its IPO price of $150 a share — just over a week after its blockbuster public listing — adding to the sense that risk appetite for high-growth technology ventures is cooling. AI chip startup Cerebras also delivered its first earnings report as a public company, but despite upbeat revenue figures, the stock fell in after-hours trading, suggesting investors are demanding more than headline growth. Together, these developments paint a picture of a market recalibrating its expectations after months of euphoric AI-driven gains.",
+      "Analysts remain divided on whether this constitutes the beginning of a more sustained reversal or merely a healthy correction within a longer bull market. State Street Investment Management\'s Dan Farley argued the AI bubble has not yet burst, suggesting the underlying structural demand for AI compute and infrastructure remains intact even if near-term valuations needed trimming. Nevertheless, the events of this week serve as a stark reminder that momentum-driven rallies — however compelling their narrative — are always vulnerable to sharp and sudden reversals when sentiment shifts, and the coming weeks of earnings reports will be critical in determining whether the AI trade can regain its footing.",
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/011d/live/21b2c920-6e9a-11f1-ae80-bf13157382fa.jpg",
-    source: "BBC News",
-    sourceUrl: "https://www.bbc.com/news/articles/c4gy0x0j5deo?at_medium=RSS&at_campaign=rss"
+    image: "https://i.guim.co.uk/img/media/1576ea0394b4abc522ee470f30ec213f183150fb/416_0_4602_3682/master/4602.jpg?width=1200&quality=85&auto=format&fit=max&s=932bbd9246935d42b9a5fba074374a27",
+    source: "The Guardian",
+    sourceUrl: "https://www.theguardian.com/business/2026/jun/23/ai-stocks-sell-off-us-markets"
   },
   secondary: [
     {
       id: "fn1",
-      title: "Iran Rushes to Woo Asia\'s Largest Oil Importers After US Sanctions Waiver",
-      summary: "Iran is aggressively courting major Asian oil buyers following a 60-day US sanctions waiver, aiming to resume exports and clear a backlog of cargoes as peace talks continue.",
+      title: "Alphabet Set to Join the Dow as Index Pivots Further Toward Tech",
+      summary: "Alphabet\'s stock is poised to replace an existing Dow component, marking a significant symbolic shift in the index\'s composition away from its industrial roots.",
       body: [
-        "The 60-day sanctions waiver granted by the United States has given Iran a narrow but significant window to re-engage with Asian energy markets, with Tehran moving quickly to secure commitments from some of the region\'s largest crude importers. The temporary lifeline is expected to allow Iran to resume meaningful export volumes and work through a substantial backlog of oil cargoes that had accumulated during the period of maximum sanctions pressure.",
-        "For global oil markets, the development introduces fresh supply-side uncertainty at a moment when traders are already navigating geopolitical complexity. Oil prices edged lower in recent sessions partly in anticipation of additional Iranian barrels entering the market, and analysts will be watching closely to see how quickly Tehran can translate diplomatic progress into actual shipment volumes before the waiver window closes."
+        "Alphabet, the parent company of Google, is set to join the Dow Jones Industrial Average, displacing an existing member in a move that further cements the index\'s transformation into a technology-dominated benchmark. Strategists have noted that as Alphabet expands its data centre footprint — increasingly borrowing to finance that growth — it is in some ways taking on the capital-intensive characteristics of a traditional industrial company.",
+        "The inclusion reflects how thoroughly big tech has come to define the modern American economy, and it carries weight at a moment when AI infrastructure investment is under intense scrutiny. For index-tracking funds, the change will require rebalancing, potentially generating meaningful flows into Alphabet shares."
       ],
-      image: "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i_mWSl0Dq_AI/v3/1200x-1.png",
-      source: "Bloomberg Markets",
-      url: "https://www.bloomberg.com/news/articles/2026-06-23/iran-rushes-to-woo-asia-s-largest-oil-importers-after-us-waiver",
-      category: "Commodities"
-    },
-    {
-      id: "fn2",
-      title: "Stocks Slump on Tech Selloff as Markets Await US-Iran Developments",
-      summary: "Global equities declined as investors rotated out of high-performing technology shares, with markets also cautiously monitoring the evolving US-Iran peace talks for their economic impact.",
-      body: [
-        "A broad selloff in technology stocks dragged major indices lower, as investors opted to take profits from some of the year\'s strongest performers in the sector. The rotation appeared driven by a combination of valuation concerns and uncertainty surrounding geopolitical developments, particularly the trajectory of US-Iran negotiations and their potential effect on energy prices and global risk appetite.",
-        "The market action reflects a nervousness that has been building beneath the surface of what has otherwise been a strong year for equities, particularly in the AI and semiconductor spaces. Analysts note that the tech-heavy weighting of major indices makes them especially vulnerable to sharp corrections when investor sentiment turns cautious, even briefly."
-      ],
-      image: "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i.O0fzqIEYqw/v1/1200x-1.jpg",
-      source: "Bloomberg Markets",
-      url: "https://www.bloomberg.com/news/articles/2026-06-22/asian-stocks-set-for-gains-as-oil-holds-losses-markets-wrap",
+      image: "https://images.mktw.net/im-87921902",
+      source: "MarketWatch",
+      url: "https://www.marketwatch.com/story/alphabets-stock-is-set-to-join-the-dow-heres-which-company-is-getting-the-boot-73453ca7?mod=mw_rss_topstories",
       category: "Markets"
     },
     {
-      id: "fn3",
-      title: "EasyJet Bidder Castlelake Goes Public With £4.7bn Takeover Proposal",
-      summary: "US investment firm Castlelake has gone public with a £4.7 billion offer to acquire easyJet after its approach was rejected three times by the airline\'s board, in a bid to pressure shareholders into demanding negotiations.",
+      id: "fn2",
+      title: "Oil Extends Drop as Tankers Cross Hormuz and US-Iran Peace Talks Progress",
+      summary: "Oil prices continued to fall as more tankers openly navigated the Strait of Hormuz and signals emerged of progress in negotiations to end the US-Iran conflict.",
       body: [
-        "Castlelake\'s decision to take its takeover proposal directly to easyJet\'s shareholders marks a significant escalation in what has become a protracted and public acquisition battle. Having faced three consecutive rejections from the airline\'s board, the US firm is now betting that shareholders — and notably easyJet founder Stelios Haji-Ioannou — can be persuaded to force the board to the negotiating table.",
-        "Analysts and commentators have noted that the £4.7 billion offer does not yet feel like a knockout bid, leaving considerable room for either a sweetened proposal or a prolonged standoff. The outcome will hinge significantly on whether major institutional shareholders view the current price as fair value for an airline that has faced sustained pressure on margins from fuel costs, competition, and operational disruption."
+        "Crude oil prices extended their decline after more tankers were reported crossing the Strait of Hormuz without incident, easing fears of a prolonged disruption to one of the world\'s most critical energy chokepoints. Diplomatic signals suggesting the United States and Iran are making progress toward ending hostilities further reduced the geopolitical risk premium that had been embedded in oil prices.",
+        "Adding to the easing supply picture, Qatar indicated it expects liquefied natural gas output to return to normal levels within weeks from undamaged parts of its facilities, according to a Financial Times interview with the country\'s Prime Minister. The combination of improving shipping access and potential diplomatic resolution is reshaping energy market expectations at a time when demand forecasts are already under pressure."
       ],
-      image: "https://images.unsplash.com/photo-1568325541679-e17580ab3e4b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxFYXN5SmV0JTIwQmlkZGVyJTIwQ2FzdGxlbGFrZSUyMEdvZXMlMjBQdWJsaWMlMjBXaXRoJTIwJUMyJUEzNC43Ym4lMjBUYWtlb3ZlciUyMFByb3Bvc2FsfGVufDB8MHx8fDE3ODIxOTEwMjh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/business/nils-pratley-on-finance/2026/jun/22/easyjet-bidder-takeover-castlelake-stelios",
-      category: "Mergers & Acquisitions"
+      image: "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/izxdyRQ0FBko/v0/1200x-1.jpg",
+      source: "Bloomberg Markets",
+      url: "https://www.bloomberg.com/news/articles/2026-06-23/latest-oil-market-news-and-analysis-for-june-24",
+      category: "Commodities"
+    },
+    {
+      id: "fn3",
+      title: "Ten Years On, Brexit\'s Economic Impact Is Becoming Clearer",
+      summary: "A decade after the Brexit vote, economists are reaching more confident conclusions about the long-term economic damage sustained by the UK\'s departure from the European Union.",
+      body: [
+        "Ten years after the Brexit referendum, analysts and economists are increasingly able to assess the real-world economic consequences of the UK\'s departure from the EU, with the evidence pointing toward meaningful and lasting damage to trade, investment, and productivity. Many of the warnings made by economists in the run-up to the vote — which were dismissed by Leave campaigners as 'Project Fear' — appear to have found support in the data accumulated over the intervening decade.",
+        "The findings carry particular relevance today as the UK faces fresh fiscal pressures and a new prime minister will soon inherit an economy still grappling with structural challenges. The Brexit debate has matured from a political argument into an economic post-mortem, with implications for how policymakers think about trade relationships and regulatory alignment going forward."
+      ],
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/d195/live/4f1879d0-6e4c-11f1-8e1d-bbbb1017d210.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.co.uk/news/articles/cyv0m164m84o?at_medium=RSS&at_campaign=rss",
+      category: "Economics"
     }
   ]
 };

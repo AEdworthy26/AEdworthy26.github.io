@@ -1,18 +1,18 @@
 // films-data.js
-// Auto-updated 2026-06-23 — do not edit manually
+// Auto-updated 2026-06-24 — do not edit manually
 
 var FILMS_DATA = {
-  date: "2026-06-23",
+  date: "2026-06-24",
   film: {
-    title: "The Fits",
-    director: "Anna Rose Holmer",
-    year: 2015,
-    genres: ["Drama", "Coming-of-Age"],
-    desc: "A quietly electrifying debut feature set almost entirely within a Cincinnati community center, where an eleven-year-old tomboy named Toni drifts from the boxing gym toward a girls' drill team — and finds herself caught up in a mysterious wave of seizures spreading through the squad. Anna Rose Holmer shoots the film with a dancer\'s instinct for rhythm and space, turning ordinary hallways and locker rooms into something hypnotic and slightly uncanny. Royalty Hightower\'s nearly wordless central performance is one of the great discoveries of recent American cinema — she communicates an entire inner life through posture, breath, and hesitation alone. The film sits somewhere between social realism and fable, using collective hysteria as a lens for the bewildering, bodily experience of girlhood and belonging. Spare, strange, and utterly confident, it lingers in the mind the way only the best short novels do.",
-    cast: ["Royalty Hightower", "Alexis Neblett", "Da\'Sean Minor"],
-    rating: 98,
+    title: "The Emigrants",
+    director: "Jan Troell",
+    year: 1971,
+    genres: ["Drama", "Epic", "World Cinema"],
+    desc: "Jan Troell\'s sweeping Swedish masterpiece follows a small group of 19th-century peasants who abandon the harsh soil of Småland for the promise of Minnesota, and the journey reshapes them in ways they never anticipated. Shot with extraordinary intimacy on location, Troell himself served as cinematographer, gifting the film a tactile, almost documentary texture that makes every hardship feel viscerally real. Max von Sydow and Liv Ullmann deliver two of the finest performances of their careers as a stubborn farmer and his quietly resilient wife, their relationship deepening under the weight of loss and hope. The film moves at the unhurried pace of life itself, which only amplifies the emotional devastation when it arrives. Nominated for four Academy Awards including Best Picture and Best Foreign Language Film simultaneously — a rare distinction — it remains one of cinema\'s most profound meditations on the cost of beginning again.",
+    cast: ["Max von Sydow", "Liv Ullmann", "Eddie Axberg"],
+    rating: 96,
     ratingSource: "Rotten Tomatoes",
-    ratingExtra: "Gotham Award Winner",
-    posterUrl: "https://upload.wikimedia.org/wikipedia/en/f/ff/The_Fits_poster.jpg"
+    ratingExtra: "4 Academy Award Nominations",
+    posterUrl: "https://upload.wikimedia.org/wikipedia/en/2/21/The_Emigrants_poster.png"
   }
 };
