@@ -1,61 +1,61 @@
 // financial-news-data.js
-// Auto-updated 2026-06-24 — do not edit manually
+// Auto-updated 2026-06-25 — do not edit manually
 
 var FINANCIAL_NEWS = {
-  date: "2026-06-24",
+  date: "2026-06-25",
   main: {
-    title: "US AI Stock Sell-Off Shakes Markets from Wall Street to Asia",
+    title: "Micron\'s Blowout Forecast Reignites AI Trade, Lifting Global Stocks",
     category: "Markets",
     content: [
-      "A sweeping sell-off in technology stocks rattled global markets this week, as investors began seriously questioning the sky-high valuations and enormous capital expenditure commitments that have underpinned the artificial intelligence boom. The tech-heavy Nasdaq index closed 2.2% lower on Tuesday, while the broader S&P 500 also declined as the wave of selling spread well beyond the United States. The rout reflected a growing unease among market participants about whether the extraordinary sums being poured into AI infrastructure can ultimately be justified by the returns on offer.",
-      "The losses were not confined to Wall Street, quickly rippling across Asian markets as the trading day moved westward. A tentative rebound in Asian equities that had been hoped for in early trading failed to hold, as a fresh bout of selling hit technology and semiconductor stocks once again. The contagion underscored just how deeply the AI investment narrative has become embedded in global equity markets, meaning any reassessment of its prospects carries outsized consequences for portfolios worldwide.",
-      "At the heart of investor anxiety is a fundamental question about sustainability: have the valuations of AI-linked companies — ranging from chip designers to cloud infrastructure providers — outrun the realistic near-term revenues those businesses can generate? Stocks of major chipmakers were among the hardest hit, reflecting concerns that demand projections may have been overly optimistic. Markets are now awaiting earnings from memory chipmaker Micron Technology, which analysts hope will provide clearer guidance on whether demand for AI-related hardware remains as robust as bulls have claimed.",
-      "The sell-off also touched SpaceX, which briefly fell below its IPO price of $150 a share — just over a week after its blockbuster public listing — adding to the sense that risk appetite for high-growth technology ventures is cooling. AI chip startup Cerebras also delivered its first earnings report as a public company, but despite upbeat revenue figures, the stock fell in after-hours trading, suggesting investors are demanding more than headline growth. Together, these developments paint a picture of a market recalibrating its expectations after months of euphoric AI-driven gains.",
-      "Analysts remain divided on whether this constitutes the beginning of a more sustained reversal or merely a healthy correction within a longer bull market. State Street Investment Management\'s Dan Farley argued the AI bubble has not yet burst, suggesting the underlying structural demand for AI compute and infrastructure remains intact even if near-term valuations needed trimming. Nevertheless, the events of this week serve as a stark reminder that momentum-driven rallies — however compelling their narrative — are always vulnerable to sharp and sudden reversals when sentiment shifts, and the coming weeks of earnings reports will be critical in determining whether the AI trade can regain its footing.",
+      "Global equity markets surged Wednesday after Micron Technology delivered a blockbuster sales forecast that reignited investor confidence in the artificial intelligence trade. The strong outlook from one of the world\'s leading memory chipmakers sent stocks rebounding from a two-day losing streak, with gains rippling across markets from New York to Asia. The results served as a powerful reminder that demand for AI-related hardware remains robust, even as broader economic uncertainties continue to weigh on sentiment.",
+      "Micron\'s forecast was interpreted by analysts as a bellwether signal for the health of the broader AI supply chain, given that memory chips are a critical component in the data centers and accelerator hardware that power large language models and AI workloads. Investors had grown anxious over recent weeks that the AI spending boom might be cooling, making Micron\'s upbeat numbers all the more consequential for the sector. The news sent semiconductor stocks broadly higher, lifting indexes and restoring confidence among growth-oriented fund managers who had been trimming exposure.",
+      "Adding further fuel to the market rally, Brent crude oil erased all of the gains it had accumulated during the most recent period of geopolitical tension, declining sharply and easing cost pressures for energy-intensive industries. Lower oil prices act as a de facto tax cut for consumers and businesses alike, and the combination of a tech-driven earnings catalyst with falling energy costs proved a potent mix for bulls. Traders noted that the dual tailwind helped push risk appetite back toward levels seen earlier in the quarter.",
+      "The rally also coincided with a separate but related storyline developing in the memory chip space: South Korean giant SK Hynix is reportedly weighing a $30 billion U.S. stock listing, a move that analysts say could be a double-edged sword for Micron. While such a listing would increase investor awareness of the memory industry\'s strong fundamentals — benefiting the sector as a whole — it would also give institutional investors an alternative route to gaining exposure, potentially diverting flows that might otherwise go to Micron shares. The prospect has introduced a nuanced competitive dynamic into an otherwise celebratory day for the chipmaking industry.",
+      "Looking ahead, market participants are now turning their attention to the upcoming PCE inflation report, which carries significant implications for Federal Reserve policy. Some strategists are warning that hidden triggers within the data — including stubborn services inflation and residual tariff pass-through effects — could force the Fed to consider rate hikes rather than cuts, a scenario that would sharply unwind many of the gains made in recent sessions. For now, however, the mood on trading floors was decisively optimistic, with the Micron earnings beat providing the clearest evidence yet that the AI investment cycle still has meaningful momentum left to run."
     ],
-    image: "https://i.guim.co.uk/img/media/1576ea0394b4abc522ee470f30ec213f183150fb/416_0_4602_3682/master/4602.jpg?width=1200&quality=85&auto=format&fit=max&s=932bbd9246935d42b9a5fba074374a27",
-    source: "The Guardian",
-    sourceUrl: "https://www.theguardian.com/business/2026/jun/23/ai-stocks-sell-off-us-markets"
+    image: "https://images.unsplash.com/photo-1780413910217-efc536b1a7bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxNaWNyb24lNUN8ZW58MHwwfHx8MTc4MjM2MzgzMHww&ixlib=rb-4.1.0&q=80&w=1080",
+    source: "Bloomberg Markets",
+    sourceUrl: "https://www.bloomberg.com/news/articles/2026-06-24/us-stock-futures-surge-on-micron-s-strong-forecast-markets-wrap"
   },
   secondary: [
     {
       id: "fn1",
-      title: "Alphabet Set to Join the Dow as Index Pivots Further Toward Tech",
-      summary: "Alphabet\'s stock is poised to replace an existing Dow component, marking a significant symbolic shift in the index\'s composition away from its industrial roots.",
+      title: "PCE Inflation Report Could Shock Markets With Hidden Rate-Hike Triggers",
+      summary: "Analysts warn that upcoming PCE data may contain under-the-radar inflation pressures that could force the Federal Reserve to raise rates and rattle Wall Street.",
       body: [
-        "Alphabet, the parent company of Google, is set to join the Dow Jones Industrial Average, displacing an existing member in a move that further cements the index\'s transformation into a technology-dominated benchmark. Strategists have noted that as Alphabet expands its data centre footprint — increasingly borrowing to finance that growth — it is in some ways taking on the capital-intensive characteristics of a traditional industrial company.",
-        "The inclusion reflects how thoroughly big tech has come to define the modern American economy, and it carries weight at a moment when AI infrastructure investment is under intense scrutiny. For index-tracking funds, the change will require rebalancing, potentially generating meaningful flows into Alphabet shares."
+        "The forthcoming PCE inflation report — the Federal Reserve\'s preferred gauge of price pressures — is being watched with unusual intensity, as strategists identify two largely overlooked triggers that could push the data above consensus expectations and upend current market positioning. Services inflation and lingering tariff pass-through costs are among the factors analysts fear could surprise to the upside, complicating the Fed\'s already delicate balancing act.",
+        "A hotter-than-expected PCE reading would challenge the prevailing market narrative that the next Fed move is a rate cut, potentially forcing a rapid repricing of interest rate expectations. Given that equities have rallied significantly on the assumption of an easing cycle, any signal of renewed Fed tightening could trigger a sharp and disorderly correction across asset classes."
       ],
-      image: "https://images.mktw.net/im-87921902",
+      image: "https://images.mktw.net/im-06997538",
       source: "MarketWatch",
-      url: "https://www.marketwatch.com/story/alphabets-stock-is-set-to-join-the-dow-heres-which-company-is-getting-the-boot-73453ca7?mod=mw_rss_topstories",
-      category: "Markets"
+      url: "https://www.marketwatch.com/story/inflation-is-about-more-than-oil-these-two-hidden-triggers-could-force-a-fed-rate-hike-d9fa393e?mod=mw_rss_topstories",
+      category: "Monetary Policy"
     },
     {
       id: "fn2",
-      title: "Oil Extends Drop as Tankers Cross Hormuz and US-Iran Peace Talks Progress",
-      summary: "Oil prices continued to fall as more tankers openly navigated the Strait of Hormuz and signals emerged of progress in negotiations to end the US-Iran conflict.",
+      title: "BT Pension Scheme Takes £300 Million Hit on Thames Water Write-Off",
+      summary: "The BT pension scheme has crystallised a £300 million loss after writing off its 8.7% equity stake in debt-laden Thames Water, which is edging closer to nationalisation.",
       body: [
-        "Crude oil prices extended their decline after more tankers were reported crossing the Strait of Hormuz without incident, easing fears of a prolonged disruption to one of the world\'s most critical energy chokepoints. Diplomatic signals suggesting the United States and Iran are making progress toward ending hostilities further reduced the geopolitical risk premium that had been embedded in oil prices.",
-        "Adding to the easing supply picture, Qatar indicated it expects liquefied natural gas output to return to normal levels within weeks from undamaged parts of its facilities, according to a Financial Times interview with the country\'s Prime Minister. The combination of improving shipping access and potential diplomatic resolution is reshaping energy market expectations at a time when demand forecasts are already under pressure."
+        "The BT pension scheme has disclosed a £300 million loss stemming from its decision to write off its entire equity stake in Thames Water, the UK\'s largest water utility, which is buckling under a £20 billion debt pile. The loss was revealed in a presentation and reflects the near-total destruction of value in a company that was once considered a stable, income-generating infrastructure asset suitable for pension fund portfolios.",
+        "Thames Water\'s financial collapse has broader implications for institutional investors who piled into UK water utilities expecting regulated, predictable returns, and the looming prospect of nationalisation has rendered equity stakes effectively worthless. The episode is likely to prompt a reassessment of how pension trustees approach infrastructure investments, particularly in sectors subject to heavy regulatory oversight and political intervention."
       ],
-      image: "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/izxdyRQ0FBko/v0/1200x-1.jpg",
-      source: "Bloomberg Markets",
-      url: "https://www.bloomberg.com/news/articles/2026-06-23/latest-oil-market-news-and-analysis-for-june-24",
-      category: "Commodities"
+      image: "https://i.guim.co.uk/img/media/173c68b36056c420b5e87b7c83f0896a07ad3a0c/0_0_4583_3667/master/4583.jpg?width=1200&quality=85&auto=format&fit=max&s=50f4a34231dc860a24f640ec1bcad0a1",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/business/2026/jun/24/bt-pension-scheme-lost-300m-on-thames-water-stake",
+      category: "Corporate Finance"
     },
     {
       id: "fn3",
-      title: "Ten Years On, Brexit\'s Economic Impact Is Becoming Clearer",
-      summary: "A decade after the Brexit vote, economists are reaching more confident conclusions about the long-term economic damage sustained by the UK\'s departure from the European Union.",
+      title: "Uber Bets $500 Million on Robotaxi Partnerships as Waymo Rivalry Intensifies",
+      summary: "Uber is quietly committing hundreds of millions of dollars to lock in robotaxi supply deals as Waymo\'s rapid expansion threatens to cut the ride-hailing giant out of the autonomous vehicle market.",
       body: [
-        "Ten years after the Brexit referendum, analysts and economists are increasingly able to assess the real-world economic consequences of the UK\'s departure from the EU, with the evidence pointing toward meaningful and lasting damage to trade, investment, and productivity. Many of the warnings made by economists in the run-up to the vote — which were dismissed by Leave campaigners as 'Project Fear' — appear to have found support in the data accumulated over the intervening decade.",
-        "The findings carry particular relevance today as the UK faces fresh fiscal pressures and a new prime minister will soon inherit an economy still grappling with structural challenges. The Brexit debate has matured from a political argument into an economic post-mortem, with implications for how policymakers think about trade relationships and regulatory alignment going forward."
+        "Uber is deploying $500 million in strategic investments to secure robotaxi supply agreements with autonomous vehicle developers, in a bid to ensure it remains relevant as Waymo accelerates its commercial rollout across major U.S. cities. The company\'s approach is striking given that Uber itself builds no autonomous vehicles, making it entirely dependent on third-party technology partnerships to compete in what many consider the most transformative shift in transportation since the smartphone era.",
+        "The robotaxi race has attracted a diverse field of competitors — including Tesla, which is developing its own ride-hailing network around its self-driving hardware — but Uber\'s massive investment underscores the high stakes of being left behind. For investors, the key question is whether Uber\'s platform and rider network give it enough structural advantage to thrive as a middleman, or whether vertically integrated rivals like Waymo will eventually bypass it entirely."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/d195/live/4f1879d0-6e4c-11f1-8e1d-bbbb1017d210.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.co.uk/news/articles/cyv0m164m84o?at_medium=RSS&at_campaign=rss",
-      category: "Economics"
+      image: "https://images.pexels.com/photos/27639789/pexels-photo-27639789.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      source: "MarketWatch",
+      url: "https://www.marketwatch.com/story/tesla-and-waymo-are-chasing-the-robotaxi-dream-but-the-company-spending-the-most-to-win-builds-no-cars-at-all-0d8682b9?mod=mw_rss_topstories",
+      category: "Technology & Markets"
     }
   ]
 };

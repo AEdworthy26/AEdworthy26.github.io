@@ -1,19 +1,19 @@
 // reads-data.js
-// Auto-updated 2026-06-24 — do not edit manually
+// Auto-updated 2026-06-25 — do not edit manually
 
 var READS_DATA = {
-  date: "2026-06-24",
+  date: "2026-06-25",
   book: {
-    title: "The Sixth Extinction: An Unnatural History",
-    author: "Elizabeth Kolbert",
-    year: 2014,
-    genres: ["Nature", "Science", "Environmental Writing"],
-    desc: "Elizabeth Kolbert travels to some of the most remote and imperilled ecosystems on Earth — from the rainforests of the Amazon to the coral reefs of the Great Barrier Reef to the frozen peaks of the Andes — to document the mass extinction event that human civilisation has quietly set in motion. Drawing on cutting-edge science and the history of five previous extinction events, she builds a portrait of a planet undergoing transformation on a geological scale within a single human lifetime. The writing is clear-eyed and urgent without tipping into despair, blending reportage, natural history, and rigorous biology into something that reads like a thriller. Each chapter focuses on a different species or ecosystem, making the abstract viscerally personal: a fungus wiping out frogs worldwide, ocean acidification dissolving the shells of creatures that have survived for millions of years. It won the Pulitzer Prize for General Nonfiction in 2015, and its argument has only grown more compelling — and more verifiable — with every passing year.",
-    whyRead: "With biodiversity loss accelerating faster than most scientific models predicted even a decade ago, Kolbert\'s book is no longer a warning — it\'s a chronicle unfolding in real time, and essential reading for anyone trying to understand the world we are actually living in.",
-    rating: 4.1,
+    title: "The Idiot",
+    author: "Elif Batuman",
+    year: 2017,
+    genres: ["Literary Fiction", "Coming-of-Age", "Humour"],
+    desc: "Selin, a Turkish-American student, arrives at Harvard in 1995 and is immediately bewildered by language, identity, email, and the strange new territory of being in love with someone she can barely speak to honestly. Batuman writes with a deadpan intellectual wit that is genuinely unlike anyone else — the novel is both acutely funny and quietly devastating in its portrait of a young mind trying to make the world cohere. It follows Selin through a summer in Hungary teaching English to rural schoolchildren, a journey that is outwardly undramatic and inwardly enormous. The book wears its learning lightly: Dostoevsky, linguistics, and the philosophy of meaning flicker through a story that is, at its core, about what it feels like to be nineteen and full of perception you cannot yet use.",
+    whyRead: "A novel that captures the particular texture of thinking and not-quite-feeling better than almost anything else in recent fiction — read it if you\'ve ever suspected that being clever was its own form of being lost.",
+    rating: 3.8,
     ratingSource: "Goodreads",
-    ratingCount: "200,000+",
-    coverUrl: "https://covers.openlibrary.org/b/id/7910870-L.jpg",
-    amazonUrl: "https://www.amazon.co.uk/dp/1408851237"
+    ratingCount: "120,000+",
+    coverUrl: "https://covers.openlibrary.org/b/id/8054401-L.jpg",
+    amazonUrl: "https://www.amazon.co.uk/dp/3596198216"
   }
 };

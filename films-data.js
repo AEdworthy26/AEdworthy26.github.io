@@ -1,18 +1,18 @@
 // films-data.js
-// Auto-updated 2026-06-24 — do not edit manually
+// Auto-updated 2026-06-25 — do not edit manually
 
 var FILMS_DATA = {
-  date: "2026-06-24",
+  date: "2026-06-25",
   film: {
-    title: "The Emigrants",
-    director: "Jan Troell",
-    year: 1971,
-    genres: ["Drama", "Epic", "World Cinema"],
-    desc: "Jan Troell\'s sweeping Swedish masterpiece follows a small group of 19th-century peasants who abandon the harsh soil of Småland for the promise of Minnesota, and the journey reshapes them in ways they never anticipated. Shot with extraordinary intimacy on location, Troell himself served as cinematographer, gifting the film a tactile, almost documentary texture that makes every hardship feel viscerally real. Max von Sydow and Liv Ullmann deliver two of the finest performances of their careers as a stubborn farmer and his quietly resilient wife, their relationship deepening under the weight of loss and hope. The film moves at the unhurried pace of life itself, which only amplifies the emotional devastation when it arrives. Nominated for four Academy Awards including Best Picture and Best Foreign Language Film simultaneously — a rare distinction — it remains one of cinema\'s most profound meditations on the cost of beginning again.",
-    cast: ["Max von Sydow", "Liv Ullmann", "Eddie Axberg"],
-    rating: 96,
+    title: "The Crimson Pirate",
+    director: "Robert Siodmak",
+    year: 1952,
+    genres: ["Adventure", "Comedy", "Swashbuckler"],
+    desc: "Burt Lancaster plays a rascally pirate captain who double-crosses everyone — including his own employer — in this gloriously acrobatic, self-aware adventure that predates Pirates of the Caribbean by half a century in its gleeful mockery of the genre. Lancaster and his real-life circus partner Nick Cravat perform astonishing feats of gymnastics and acrobatics with zero visible stunt doubling, swinging through rigging and leaping between ships with infectious, grinning joy. The film cannily winks at its own absurdity, deploying anachronistic gadgetry and slapstick gags while still delivering genuinely thrilling action choreography shot in lush Technicolor off the coast of Ischia, Italy. It is one of cinema\'s great underappreciated crowd-pleasers — a film that manages to be simultaneously a parody and a perfect specimen of the very thing it parodies. Critics and scholars have long championed it as a high-water mark of postwar Hollywood adventure filmmaking that has never received the wide revival attention it deserves.",
+    cast: ["Burt Lancaster", "Nick Cravat", "Eva Bartok"],
+    rating: 91,
     ratingSource: "Rotten Tomatoes",
-    ratingExtra: "4 Academy Award Nominations",
-    posterUrl: "https://upload.wikimedia.org/wikipedia/en/2/21/The_Emigrants_poster.png"
+    ratingExtra: "Nominated 1 BAFTA Award",
+    posterUrl: "https://upload.wikimedia.org/wikipedia/en/c/c6/The_Crimson_Pirate_poster.jpg"
   }
 };

@@ -3,6 +3,45 @@
 
 var RICS_LOG = [
   {
+    "date": "2026-06-25",
+    "topic": "Deed of Variation and Non-Material Amendments: Strategy, Process and Risk in Post-Consent Management",
+    "module": "Planning and Development Management",
+    "level": 2,
+    "apc_competency": "Planning and Development Management (Level 2)",
+    "focus": "This lesson covers the two primary mechanisms for modifying a planning permission post-consent \u2014 Deeds of Variation (DOVs) to S106 agreements and Non-Material Amendment (NMA) applications under S96A of the TCPA 1990 \u2014 alongside the less-used S73 route for changing conditions. For a candidate managing live consents on complex residential-led schemes, understanding when to use each mechanism, how to negotiate them with the LPA, and how to manage the associated legal and programme risk is a core applied competency at Level 2.",
+    "image": "__IMG_RICS__",
+    "content": [],
+    "summary": [
+      "NMAs (S96A) are for non-material design changes only \u2014 they cannot vary conditions, and there is no right of appeal on refusal; use them for minor elevational or detail changes not locked into a condition schedule.",
+      "S73 applications vary planning conditions and create a new, parallel permission; the LPA can re-open the planning balance, triggering stakeholder and political risk, and the process takes 8\u201313 weeks with a statutory right of appeal.",
+      "A Deed of Variation to the S106 is required whenever tenure mix, contribution triggers, phasing, RP nomination or clawback provisions change \u2014 it requires all original signatories and typically takes 6\u201312 weeks for LPA legal sign-off.",
+      "S73 permissions and their associated S106 agreements must be kept in sync: a DOV must be executed contemporaneously with the S73 grant to ensure the S106 obligation is enforceable against the new permission number.",
+      "Programme management of post-consent changes requires parallel-tracking DOVs and S73s, early LPA engagement, and embedding realistic timescales into the critical path \u2014 underestimating LPA legal resource is the most common cause of programme slippage at this stage."
+    ],
+    "qa": [
+      {
+        "q": "You want to increase the ridge height of a residential block by 300mm on a scheme where the approved drawings are listed in a planning condition. Can you use an NMA?",
+        "a": "No. Because the change affects drawings that are listed in a planning condition, varying those drawings requires a S73 application, not an NMA. S96A NMAs cannot be used to vary conditions \u2014 only to amend the permission where no condition is engaged. Submitting an NMA in this scenario would be procedurally incorrect; a competent LPA should refuse to register it, or if granted in error, the resulting permission may be legally vulnerable to challenge."
+      },
+      {
+        "q": "Your S106 agreement requires 30% affordable housing split 70/30 social rent/shared ownership. Homes England\\'s grant offer is conditional on a 60/40 split. What legal mechanism do you use, and who needs to sign it?",
+        "a": "A Deed of Variation to the S106 agreement is required. This is not a planning application \u2014 it is a legal instrument modifying the terms of the obligation. All original parties to the S106 must execute the DOV: typically the developer/RP, the LPA, and any other signatories such as the landowner or a mortgagee. The LPA\\'s legal team must draft or approve the DOV, and sign-off timescales of 6\u201312 weeks are typical. The DOV should also update any associated clawback formula that references the original tenure split."
+      },
+      {
+        "q": "What is the key legal risk when a S73 application is granted on a scheme with an existing S106 agreement, and how do you mitigate it?",
+        "a": "The key risk is that the S73 creates a new planning permission with a new reference number, while the S106 agreement references the original permission number. If the S106 is not updated by a contemporaneous Deed of Variation, the affordable housing and other obligations may not be enforceable against development carried out under the S73 permission. The mitigation is to instruct a parallel DOV to the S106 at the same time as the S73 submission, so that the DOV is executed at or shortly after the S73 is granted, explicitly referencing both permission numbers."
+      },
+      {
+        "q": "A S73 application to vary a materials condition on a contentious scheme has attracted 45 objections and the ward councillor has called it in for committee. What are the programme and risk implications?",
+        "a": "A committee determination significantly extends the programme beyond the standard 8-week statutory period \u2014 it may add 4\u20138 weeks or more. At committee, the LPA has full discretion to refuse or impose new conditions, even on a modest materials change, particularly if the scheme is politically sensitive. The risk is that the committee uses the S73 as an opportunity to revisit the planning balance or impose conditions that were not on the original consent. The development manager should assess whether the S73 is truly necessary, brief the planning consultant on committee strategy, engage the ward councillor proactively to manage political risk, and consider whether an NMA (if technically viable) would have avoided the committee route entirely."
+      },
+      {
+        "q": "How does a Deed of Variation to an S106 differ from a new S106 agreement, and in what circumstances might a local authority insist on a new agreement rather than a DOV?",
+        "a": "A DOV amends specific clauses of an existing S106 while leaving unchanged provisions intact; it is executed by all original parties and does not require a planning application. A new S106 replaces the original entirely. An LPA may insist on a new S106 rather than a DOV where the changes are so extensive that the original agreement is substantially rewritten, where there has been a change in ownership such that new parties must be brought in as principal obligors, or where the original agreement contains drafting errors the LPA wishes to correct. From the developer\\'s perspective, a new S106 is more resource-intensive and carries greater negotiation risk; a DOV is preferable where the changes are targeted and contained."
+      }
+    ]
+  },
+  {
     "date": "2026-06-24",
     "topic": "Development Viability Reporting: Monitoring, Review Triggers and Late-Stage Viability Reviews in Residential-Led Schemes",
     "module": "Project Finance",

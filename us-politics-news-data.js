@@ -1,60 +1,60 @@
 // us-politics-news-data.js
-// Auto-updated 2026-06-24 — do not edit manually
+// Auto-updated 2026-06-25 — do not edit manually
 
 var US_POLITICS_NEWS = {
-  date: "2026-06-24",
+  date: "2026-06-25",
   main: {
-    title: "Congress Passes War Powers Measure, Rebuking Trump\'s War with Iran",
+    title: "Trump Cancels Signing of Bipartisan Housing Bill, Leaving Lawmakers Scrambling",
     category: "Politics",
     content: [
-      "In a historic and symbolically charged vote, Congress has passed a war powers resolution directing President Trump to remove U.S. armed forces from hostilities with Iran — marking the first time Congress has successfully passed such a measure. The resolution reflects growing bipartisan frustration on Capitol Hill over the administration\'s conduct of the conflict, which many lawmakers argue was initiated without proper congressional authorization. Though the measure does not carry the force of law and does not require the president\'s signature, its passage represents a significant institutional rebuke of executive war-making power.",
-      "Senator Tim Kaine of Virginia, a Democratic sponsor of the resolution, has been among the most vocal proponents of reasserting Congress\'s constitutional authority over decisions to go to war. Speaking after the Senate vote, Kaine acknowledged that while the resolution was an important step, he stressed there was considerably more work to be done to bring the conflict to a close. His comments underscored the broader concern among lawmakers that symbolic gestures alone are insufficient to constrain a White House determined to prosecute the war on its own terms.",
-      "The passage of the resolution has further strained the already fraught relationship between President Trump and Senate Republicans. Ties between Trump and Senate Majority Leader John Thune of South Dakota have grown increasingly tense, with some Republican senators openly expressing frustration that the president\'s unpredictable actions are derailing their shared legislative agenda. The war powers vote has brought those tensions into sharp relief, as a number of Senate Republicans crossed the aisle to support the measure, signaling that GOP unity behind the administration on the Iran conflict is far from guaranteed.",
-      "The constitutional debate underlying the resolution is not a new one, but its renewed urgency reflects the scale and duration of U.S. involvement in hostilities with Iran. Critics of the administration argue that the president lacks the legal authority to sustain an ongoing military campaign without explicit congressional authorization, while the White House has maintained that existing authorities and national security imperatives justify its actions. The resolution, even without the force of law, puts every member of Congress on record and amplifies the political cost of continuing the conflict without a clearer mandate.",
-      "The vote adds measurable pressure on the White House to seek a diplomatic resolution or at minimum to engage Congress more formally on the path forward. Observers note that while previous war powers resolutions have largely been ignored by sitting presidents, the bipartisan character of this vote makes it harder to dismiss as mere partisan opposition. The episode is being closely watched as a test of whether Congress can meaningfully reassert its constitutional prerogatives in matters of war and peace, and Senator Kaine\'s promise of further legislative action suggests the conflict between the executive and legislative branches over Iran is far from resolved."
+      "President Trump abruptly cancelled a scheduled signing ceremony for the 21st Century Road to Housing Act on Wednesday, dealing a stunning blow to congressional Republicans who had anticipated a rare legislative victory. The bill, described as the largest housing affordability legislation in decades, had passed Congress with overwhelming bipartisan support — a significant achievement in an era of deep partisan division. Lawmakers on both sides of the aisle had hailed the measure as a meaningful response to one of the most pressing concerns facing American voters: the soaring cost of housing.",
+      "Trump announced via social media that the signing was off until the Senate passes his election integrity bill, effectively holding the housing legislation hostage to an unrelated political demand. The move caught Republican leaders off guard, as they had been preparing to celebrate the bill\'s passage as a demonstration of their governing competence ahead of future electoral contests. It remains unclear whether the president intends to kill the housing bill entirely or is using the cancellation as leverage to extract concessions from the Senate.",
+      "The episode represents the latest in a series of rifts between Trump and his own party in Congress, underlining the unpredictable nature of his relationship with Republican leadership. Congressional Republicans had invested significant political capital in shepherding the bipartisan housing bill through both chambers, only to see their efforts undermined at the final stage by the White House. The episode exposed the degree to which individual legislators remain vulnerable to presidential whims, even when they have secured broad support for popular legislation.",
+      "The housing affordability crisis has become one of the most salient domestic issues for American families, with home prices and rents remaining at historically elevated levels across much of the country. Congress\'s decision to pursue bipartisan legislation on the issue signalled just how acute the political pressure had become, with members from both parties eager to demonstrate responsiveness to constituents struggling to afford housing. Trump\'s decision to cancel the signing risks handing Democrats a potent campaign issue, allowing them to argue that the White House is standing in the way of relief for ordinary Americans.",
+      "The fallout from the cancellation left lawmakers scrambling to determine next steps, with no clear path forward on either the housing bill or the election integrity legislation that Trump cited as his condition. Senior Republicans expressed frustration privately, aware that the episode reinforces a narrative of dysfunction and unpredictability around the party\'s congressional agenda. The situation underscores the broader challenge facing Republican legislators who must navigate a president willing to upend their priorities at a moment\'s notice, making long-term legislative planning exceptionally difficult."
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/340e/live/f69c8770-6f7b-11f1-8e1d-bbbb1017d210.jpg",
-    source: "BBC News",
-    sourceUrl: "https://www.bbc.co.uk/news/articles/ce8j6g3v3r4o?at_medium=RSS&at_campaign=rss"
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/da14/live/705b0540-6ff5-11f1-b12f-f573f7cb1919.jpg",
+    source: "NPR",
+    sourceUrl: "https://www.npr.org/2026/06/24/nx-s1-5869533/trump-upends-bipartisan-housing-bill-leaving-lawmakers-scrambling"
   },
   secondary: [
     {
       id: "us1",
-      title: "Mamdani-Backed Candidates Sweep House Primaries in New York City",
-      summary: "All three progressive candidates endorsed by New York City Mayor Zohran Mamdani won their Democratic House primaries, including two who unseated sitting incumbents.",
+      title: "Senate Republicans Reverse Course on Iran War Powers, Falling Back in Line with Trump",
+      summary: "Senate Republicans voted late Wednesday night to reject a resolution that would have directed President Trump to end the military conflict with Iran, reversing a bipartisan rebuke from just one day earlier.",
       body: [
-        "New York City Mayor Zohran Mamdani\'s high-stakes gamble in Tuesday\'s Democratic primaries paid off decisively, with all three of his endorsed candidates — Claire Valdez, Darializa Avila Chevalier, and former mayoral candidate Brad Lander — claiming victories in races that exposed deep fault lines within the city\'s Democratic Party. Most strikingly, Avila Chevalier ousted incumbent Representative Adriano Espaillat, while Lander defeated Representative Dan Goldman in a contest heavily shaped by divisions over the Israel-Gaza war.",
-        "The sweep amounts to a major demonstration of Mamdani\'s political reach and ideological influence within New York\'s Democratic ecosystem, cementing the Democratic Socialist left as a powerful force in the city\'s congressional delegation. Because all three seats are considered safe for Democrats in November, the primary wins are widely expected to translate directly into seats in the House of Representatives."
+        "In a late-night vote of 47-50-1, the Senate opted not to rebuke the Trump administration a second time over its ongoing military conflict with Iran, after Republican leaders convinced a handful of swing-vote senators that passing the resolution would undermine ongoing negotiations to end the war. The reversal came just one day after a bipartisan majority had passed a similar measure, making the about-face a striking demonstration of the White House\'s ability to pressure Republican holdouts back into compliance.",
+        "The episode highlighted the fragility of Republican independence on the Iran war issue, and illustrated how quickly dissent within the party can be quashed when the president and his allies apply direct pressure. Earlier on Wednesday, Senator Bill Cassidy of Louisiana — who had clashed heatedly with Trump at a White House meeting — received a personal briefing from Vice President JD Vance and Special Envoy Steve Witkoff, signalling the lengths to which the administration went to shore up its Senate support."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/bde8/live/87a1ba60-6f86-11f1-8546-8f19e4fe30f4.jpg",
-      source: "Washington Post",
-      url: "https://www.washingtonpost.com/elections/2026/06/23/new-york-house-primary-election-live-results-mamdani-candidates-tested/",
+      image: "https://thehill.com/wp-content/uploads/sites/2/2026/06/trumpdonald_062426nk15_w.jpg?w=900",
+      source: "The Hill",
+      url: "https://thehill.com/homenews/senate/5939699-senate-gop-gets-back-in-line-with-trump-over-the-iran-war/",
       category: "Politics"
     },
     {
       id: "us2",
-      title: "Trump\'s Pick for Top IRS Lawyer Works at Firm That Represents Him",
-      summary: "President Trump\'s nominee for chief counsel at the Internal Revenue Service, James R. Gadwood, is employed by a law firm that has represented Trump himself in tax matters.",
+      title: "Mamdani\'s Primary Sweep Pulls Democrats Leftward, Shaking Party Establishment",
+      summary: "New York City Mayor Zohran Mamdani\'s endorsed candidates won a clean sweep of their Democratic House primaries, amplifying a leftward shift that is rattling the party\'s establishment.",
       body: [
-        "James R. Gadwood, nominated by President Trump to serve as the top lawyer at the Internal Revenue Service, currently works at Miller & Chevalier — a firm with a direct financial and legal relationship with the president through its representation of Trump in tax-related matters. The nomination has raised immediate ethics concerns about the potential for conflicts of interest at an agency that oversees federal tax enforcement.",
-        "The arrangement draws renewed scrutiny to the administration\'s approach to filling key regulatory and legal positions with individuals whose professional backgrounds intersect with the president\'s personal legal and financial affairs. Ethics watchdogs argue that placing a nominee from a firm representing Trump at the helm of the IRS\'s legal operations poses serious questions about the independence of the agency."
+        "All three congressional candidates endorsed by Mayor Mamdani won their Democratic primary elections on Tuesday, cementing his emergence as a major power broker within the party and raising urgent questions about the direction of the Democratic coalition heading into future national contests. The victories included Darializa Avila Chevalier, a first-time candidate and outspoken Palestinian rights advocate who unseated an incumbent House Democrat despite scrutiny over past social media posts.",
+        "The results are being watched closely by party strategists as a potential bellwether for the broader ideological battle between the Democratic establishment and a growing socialist-aligned faction energised by figures like Mamdani. Analysts warn that Tuesday\'s outcomes could foreshadow bigger internal battles as Democrats attempt to craft a unifying message capable of winning back power nationally."
       ],
-      image: "https://images.unsplash.com/photo-1550531996-ff3dcede9477?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUcnVtcCU1Q3xlbnwwfDB8fHwxNzgyMjc3MzkxfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "The New York Times",
-      url: "https://www.nytimes.com/2026/06/23/us/politics/trump-top-irs-lawyer.html",
+      image: "https://images.unsplash.com/photo-1679355262844-72bbc483589b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxNYW1kYW5pJTVDfGVufDB8MHx8fDE3ODIzNjM3ODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "BBC News",
+      url: "https://www.bbc.co.uk/news/articles/cly818y4v22o?at_medium=RSS&at_campaign=rss",
       category: "Politics"
     },
     {
       id: "us3",
-      title: "Conflict Escalates Between President Trump and Senate Republicans",
-      summary: "Tensions between President Trump and Senate Majority Leader John Thune are intensifying as Republican senators warn that the president\'s erratic behavior is undermining their legislative agenda.",
+      title: "White House Asks Congress for $88 Billion to Fund Iran War",
+      summary: "The Trump administration has formally requested $88 billion from Congress to cover the costs of the ongoing military conflict with Iran, with the bulk of the funds earmarked for the Pentagon.",
       body: [
-        "The relationship between President Trump and Senate Republicans has grown visibly strained, with multiple senators expressing concern that the president\'s unpredictable decision-making is creating obstacles to advancing the party\'s shared policy goals. Senate Majority Leader John Thune of South Dakota finds himself in the difficult position of managing an increasingly restless caucus while maintaining working ties with a White House that has shown little appetite for congressional consultation.",
-        "The passage of the bipartisan war powers resolution has served as a flashpoint, illustrating that Republican senators are willing to break with the president on matters they consider to be of constitutional importance. Observers say the growing rift reflects broader anxieties within the GOP about the political consequences of an unpredictable executive as the 2026 midterm elections approach."
+        "The White House\'s emergency funding request includes $67 billion designated for replenishing the military\'s stocks of munitions and covering the substantial costs of deploying large numbers of American forces to the Middle East. The request puts Congress in a difficult political position, forcing lawmakers to weigh the financial and constitutional implications of funding a war that has already sparked significant internal Republican dissent over the administration\'s war powers.",
+        "The $88 billion request arrives at a moment of heightened tension between the executive and legislative branches over the Iran conflict, with the Senate having only narrowly avoided formally rebuking the president over his war-making authority. The scale of the funding ask underscores how deeply the United States has become militarily committed to the conflict, and is likely to intensify congressional debate over oversight and the long-term strategic objectives of the campaign."
       ],
-      image: "https://images.unsplash.com/photo-1550531996-ff3dcede9477?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxDb25mbGljdCUyMEVzY2FsYXRlcyUyMEJldHdlZW4lMjBQcmVzaWRlbnQlMjBUcnVtcCUyMGFuZCUyMFNlbmF0ZSUyMFJlcHVibGljYW5zfGVufDB8MHx8fDE3ODIyNzczOTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "NPR",
-      url: "https://www.npr.org/2026/06/23/nx-s1-5862113/conflict-is-escalating-between-president-trump-and-senate-republicans",
+      image: "https://thehill.com/wp-content/uploads/sites/2/2026/06/cassidybill_061626gn01_w.jpg?w=900",
+      source: "Washington Post",
+      url: "https://www.washingtonpost.com/politics/2026/06/24/white-house-asks-congress-88-billion-iran-war/",
       category: "Politics"
     }
   ]

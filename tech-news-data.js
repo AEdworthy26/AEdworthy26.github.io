@@ -1,61 +1,61 @@
 // tech-news-data.js
-// Auto-updated 2026-06-24 — do not edit manually
+// Auto-updated 2026-06-25 — do not edit manually
 
 var TECH_NEWS = {
-  date: "2026-06-24",
+  date: "2026-06-25",
   main: {
-    title: "White House Drastically Shortens Deadline for Dropping Quantum-Vulnerable Crypto",
-    category: "Cybersecurity",
+    title: "OpenAI and Broadcom Announce Custom Chip Designed for LLM Inference at Scale",
+    category: "AI & Hardware",
     content: [
-      "The White House has issued an executive order sharply accelerating the timeline for federal agencies and critical infrastructure operators to abandon cryptographic systems vulnerable to quantum computing attacks. The order warns that failure to adopt post-quantum cryptography in time poses serious national security risks, as adversaries with access to sufficiently powerful quantum computers could decrypt sensitive government communications and data. The urgency reflects growing concern among intelligence and cybersecurity officials that the quantum computing threat is maturing faster than previously anticipated.",
-      "Post-quantum cryptography refers to a new generation of encryption algorithms designed to withstand attacks from quantum computers, which can theoretically break many of the mathematical problems that underpin today\'s widely used encryption standards. The National Institute of Standards and Technology finalized its first set of post-quantum cryptographic standards in recent years, but adoption across government systems and critical infrastructure has been slow and uneven. The new executive order appears designed to force the pace of that transition by imposing a much tighter deadline than agencies had previously been working toward.",
-      "The stakes could not be higher. Much of the modern internet\'s security — from financial transactions to classified government communications — relies on encryption standards such as RSA and elliptic-curve cryptography, both of which are considered vulnerable to a sufficiently advanced quantum computer running Shor\'s algorithm. Security experts have long warned about a scenario called 'harvest now, decrypt later,' in which adversaries collect encrypted data today with the intention of decrypting it once quantum hardware matures. Tightening the deadline is an acknowledgment that this window of risk may be closing faster than expected.",
-      "For federal agencies, the shortened deadline will require significant investment and coordination, as migrating cryptographic infrastructure is a complex, time-consuming process that touches everything from software libraries to hardware security modules and network protocols. Many legacy government systems were not designed with cryptographic agility in mind, meaning they cannot simply swap out one algorithm for another without extensive re-engineering. The order is expected to put pressure on contractors, vendors, and technology suppliers to the government to accelerate their own post-quantum roadmaps.",
-      "The move is also likely to reverberate through the private sector, as companies that do business with the federal government or operate in regulated industries will face pressure to demonstrate compliance with the new standards. Cybersecurity professionals have broadly welcomed the increased urgency, even as they acknowledge the practical challenges of meeting an accelerated timeline. The executive order underscores a broader strategic reality: the race between quantum computing capability and cryptographic preparedness is no longer a distant theoretical concern, but an active and pressing national security priority."
+      "OpenAI and Broadcom have jointly announced a new custom silicon chip specifically engineered for large language model inference at scale. The collaboration marks a significant step in OpenAI\'s long-term strategy to reduce its dependence on third-party GPU suppliers, most notably Nvidia, which has dominated the AI accelerator market. By designing silicon tailored to the particular demands of running — rather than training — LLMs, the two companies are targeting one of the most resource-intensive bottlenecks in modern AI deployment.",
+      "Inference, the process by which a trained AI model generates responses to user queries, is distinct from training and presents its own engineering challenges. While training a model requires enormous bursts of parallel computation, inference demands low latency, high throughput, and cost efficiency at a massive scale. The new chip from OpenAI and Broadcom is said to be purpose-built around these inference-specific requirements, potentially offering substantial gains in performance-per-watt compared to general-purpose GPUs.",
+      "The announcement comes amid an intensifying silicon race among AI companies scrambling to keep up with surging demand for generative AI services. Google has long developed its own Tensor Processing Units, Amazon has its Trainium and Inferentia lines, and Microsoft has been investing in custom AI silicon as well. OpenAI entering this space with a dedicated inference chip signals that the company views hardware control as essential to its competitive position and long-term unit economics.",
+      "Broadcom\'s role as a partner is significant given its deep expertise in custom ASIC design and its established relationships with major hyperscalers. The company has previously worked on custom silicon for Google\'s TPUs and brings substantial experience in taking AI chip concepts from architecture to mass production. For OpenAI, partnering with Broadcom rather than attempting to build a pure in-house chip design capability from scratch represents a pragmatic path to getting competitive silicon into production faster.",
+      "Industry analysts are likely to view this announcement as further evidence that the AI chip landscape is fragmenting away from a Nvidia-dominated monoculture. As the largest AI companies internalize more of their hardware stack, the economics of AI services could shift considerably, with lower inference costs potentially enabling new product categories and pricing models. Whether OpenAI\'s new chip delivers on its promise at scale remains to be seen, but the move firmly establishes the company as a serious player in the increasingly strategic world of AI hardware."
     ],
-    image: "https://cdn.arstechnica.net/wp-content/uploads/2024/03/GettyImages-1070527780-1152x648.jpg",
+    image: "https://cdn.arstechnica.net/wp-content/uploads/2026/06/openai-broadcom-jalapeno-inference-chip-image-1152x648.webp",
     source: "Ars Technica",
-    sourceUrl: "https://arstechnica.com/information-technology/2026/06/executive-order-bumps-up-deadline-to-move-off-quantum-vulnerable-crypto/"
+    sourceUrl: "https://arstechnica.com/gadgets/2026/06/openai-and-broadcom-announce-chip-designed-for-llm-inference-at-scale/"
   },
   secondary: [
     {
       id: "tc1",
-      title: "Oracle\'s 21,000 Layoffs Help Drive Its Debt-Fueled AI Investments",
-      summary: "Oracle is cutting thousands of workers and taking on significant debt to fund massive data center infrastructure spending in pursuit of AI dominance.",
+      title: "Scientist Publishes Fresh Doubts Over Microsoft\'s Quantum Computing Claims",
+      summary: "A scientist has published new skepticism regarding Microsoft\'s Majorana chip research, reigniting debate over the tech giant\'s quantum computing milestones.",
       body: [
-        "Oracle has laid off approximately 21,000 employees as part of a sweeping strategy to redirect resources toward artificial intelligence infrastructure, with the company spending billions on data center capacity to support growing AI workloads. The scale of the layoffs underscores how aggressively Oracle is restructuring its workforce and balance sheet to compete in the AI era.",
-        "The debt-fueled approach is a significant bet that AI-driven cloud and infrastructure services will generate returns large enough to justify both the human cost and the financial risk of taking on substantial new liabilities. Oracle\'s pivot reflects a broader industry trend in which legacy enterprise technology companies are scrambling to reposition themselves as essential players in the AI supply chain."
+        "Microsoft has faced renewed scrutiny after a scientist published fresh doubts about the validity of the company\'s claims surrounding its Majorana quantum chip. Despite consistent pushback from some experts in the quantum computing field, Microsoft has stood firmly by its research and the significance of its findings.",
+        "The controversy highlights the broader challenge of verifying extraordinary claims in quantum computing, a field where experimental results can be extraordinarily difficult to reproduce and interpret. The ongoing dispute raises important questions about transparency and peer review standards in cutting-edge tech research."
       ],
-      image: "https://images.unsplash.com/photo-1662947774441-a54156b6e503?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxPcmFjbGUlNUN8ZW58MHwwfHx8MTc4MjI3NzQ3NHww&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "Ars Technica",
-      url: "https://arstechnica.com/ai/2026/06/oracles-21000-layoffs-help-drive-its-debt-fueled-ai-investments/",
-      category: "AI & Industry"
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/823e/live/9bf6bfd0-5e9a-11f1-95ff-f5086c3b3d40.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.co.uk/news/articles/c05y9pl3ejmo?at_medium=RSS&at_campaign=rss",
+      category: "Quantum Computing"
     },
     {
       id: "tc2",
-      title: "Meta Halts Worker Tracking for AI Training Due to Privacy Fears",
-      summary: "Meta has suspended a program that monitored employees' computer usage to generate AI training data, just two months after it began, amid significant privacy concerns.",
+      title: "Cerebras Stock Plunges After First Earnings Report Since IPO",
+      summary: "AI chipmaker Cerebras saw its stock tumble after its first post-IPO earnings report revealed a narrower gross margin forecast, alarming investors.",
       body: [
-        "Meta launched the worker tracking initiative only two months ago, making the rapid reversal a notable moment of internal pushback at one of the world\'s largest technology companies. The program had involved monitoring how employees used their computers, with that behavioral data intended to serve as training material for AI systems.",
-        "The halt highlights the growing tension between the insatiable appetite for high-quality training data in AI development and the privacy rights of the individuals — including a company\'s own staff — whose behavior and data are being harvested. The episode may prompt broader scrutiny of how AI companies source training data from within their own organizations."
+        "Cerebras, the AI chip company that recently went public, experienced a sharp stock decline following its debut earnings report, which included a forecast for narrower gross margins in its core business. CEO Andrew Feldman maintained that investors had misunderstood the margin outlook, but the explanation did little to calm markets on the day of the announcement.",
+        "The reaction underscores the high expectations and thin tolerance for uncertainty that surround AI hardware companies in the current investment climate. Cerebras has positioned itself as a challenger to Nvidia with its distinct wafer-scale chip architecture, but translating technical ambition into consistent profitability remains a key test for the young public company."
+      ],
+      image: "https://images.pexels.com/photos/7947742/pexels-photo-7947742.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      source: "TechCrunch",
+      url: "https://techcrunch.com/2026/06/24/cerebras-stock-plunges-after-earnings-as-ceo-says-margin-outlook-was-misunderstood/",
+      category: "AI & Hardware"
+    },
+    {
+      id: "tc3",
+      title: "Meta Halts Worker Tracking Program It Had Launched for AI Training Data",
+      summary: "Meta has suspended a program that monitored employees' computer usage to gather AI training data, citing privacy concerns just two months after it began.",
+      body: [
+        "Meta has shut down an internal initiative that tracked workers' computer activity with the goal of using that behavioral data to train artificial intelligence systems. The program had only been running for approximately two months before privacy concerns prompted the company to pull the plug.",
+        "The episode illustrates the growing tension between tech companies' insatiable appetite for high-quality AI training data and the privacy rights of the people — including their own employees — whose activities might supply it. It also raises broader questions about the lengths companies may consider going to in order to gain a competitive edge in AI development."
       ],
       image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/f1db/live/ef7d0940-6f28-11f1-adf9-6fa2b518a522.jpg",
       source: "BBC News",
       url: "https://www.bbc.co.uk/news/articles/cq615g3z36po?at_medium=RSS&at_campaign=rss",
       category: "AI & Privacy"
-    },
-    {
-      id: "tc3",
-      title: "Valve\'s Steam Machine Launches at £879, Citing Rising Component Costs",
-      summary: "Valve has released its long-awaited Steam Machine PC-console hybrid at a £879 price point, with the company attributing the steep cost to a broader trend of rising hardware component prices.",
-      body: [
-        "Valve\'s Steam Machine arrives as a hybrid device aimed at bridging the gap between traditional gaming PCs and living-room consoles, but its £879 launch price is likely to raise eyebrows among consumers already accustomed to premium hardware costs. The company has been transparent that component prices across the industry have risen significantly, making affordable pricing difficult to achieve without sacrificing performance.",
-        "The launch is a significant moment for Valve, which has spent years building its Linux-based gaming ecosystem through the Steam Deck handheld and SteamOS platform. Whether the Steam Machine can carve out a meaningful niche against established consoles and gaming PCs at that price will be a key test of consumer appetite for a hybrid form factor."
-      ],
-      image: "https://images.unsplash.com/photo-1582642880428-3e2c04ad14ec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxWYWx2ZSU1Q3xlbnwwfDB8fHwxNzgyMjc3NDc0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "BBC News",
-      url: "https://www.bbc.co.uk/news/articles/c0kyzk2p255o?at_medium=RSS&at_campaign=rss",
-      category: "Hardware & Gaming"
     }
   ]
 };

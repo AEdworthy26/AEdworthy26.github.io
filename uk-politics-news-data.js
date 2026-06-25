@@ -1,60 +1,60 @@
 // uk-politics-news-data.js
-// Auto-updated 2026-06-24 — do not edit manually
+// Auto-updated 2026-06-25 — do not edit manually
 
 var UK_POLITICS_NEWS = {
-  date: "2026-06-24",
+  date: "2026-06-25",
   main: {
-    title: "Starmer Holds Talks with Burnham as He Seeks 'Orderly' Transition",
+    title: "Burnham on Course to Be PM, but Questions Remain Over His No 10 Operation",
     category: "Politics",
     content: [
-      "Sir Keir Starmer is holding direct talks with Andy Burnham as the outgoing Prime Minister attempts to engineer what Downing Street is describing as an 'orderly' transition of power. Following Starmer\'s announcement that he will resign as both Labour leader and Prime Minister, the party has entered a formal leadership contest that has quickly coalesced around the former Greater Manchester Mayor. Starmer is said to be keen to ensure continuity of government and has been offering so-called 'access talks' with the civil service to leading Labour leadership candidates.",
-      "The move to grant candidates access to the machinery of government at such an early stage is highly significant and underscores the urgency with which Downing Street is treating the transition. By inviting Burnham and potentially other contenders into conversations with senior civil servants, Starmer hopes to smooth the handover and prevent any damaging period of governmental paralysis. The gesture also reflects the reality that Burnham is widely regarded as the frontrunner, with his camp described as caught between euphoria and fear following his recent Makerfield by-election victory.",
-      "Andy Burnham has wasted no time in assembling a shadow administration, with reports confirming he has already appointed former Blair-era cabinet minister James Purnell as his chief of staff. The appointment is seen as one of the most consequential decisions Burnham has made since his return to Westminster, signalling a desire to draw on experienced Blairite political talent as he prepares for a potential premiership. Burnham\'s team is evidently moving swiftly to demonstrate governmental readiness and reassure both the parliamentary Labour Party and the broader public.",
-      "A key question hovering over the transition concerns the fate of Chancellor Rachel Reeves. The BBC understands that Burnham is likely to offer Reeves a more junior cabinet role should he become Prime Minister, replacing her at Number 11 Downing Street. This anticipated reshuffle has already fired the starting gun on intense speculation about who could be the UK\'s next chancellor, with a range of senior Labour figures now being discussed in political circles as potential successors to one of the most powerful offices in government.",
-      "The broader backdrop to the leadership contest is one of considerable governmental turbulence. The government is still pressing ahead with a controversial defence investment plan, committing to publish spending proposals before a NATO summit on 7 July despite the chaos surrounding Starmer\'s departure. New Defence Secretary Dan Jarvis has reportedly secured around one billion pounds more for the plan than his predecessor, offering a rare note of policy continuity amid the political upheaval. Whether Burnham ultimately inherits a stable platform or a fractious parliamentary party will be among the defining early tests of his prospective premiership."
+      "Andy Burnham is increasingly on course to become the next Prime Minister following Sir Keir Starmer\'s resignation as Labour leader, with his top team beginning to take shape. The Greater Manchester mayor has emerged as the overwhelming frontrunner to succeed Starmer, and attention has now shifted from whether he will secure the position to how he will govern once in Downing Street. Senior figures within the Labour movement and across Westminster are watching closely as the contours of a Burnham administration begin to come into view.",
+      "One of the most significant and immediately controversial appointments has been Burnham\'s selection of James Purnell as his incoming chief of staff. Purnell, a longstanding friend of Burnham and a former cabinet minister under Tony Blair, previously led Flint Global, an advisory firm whose clients included BP, Amazon, Jaguar Land Rover, and Uber, according to transparency records. The appointment has already drawn criticism from within Labour ranks, with one Labour MP describing it as a 'very bad sign', raising concerns about lobbying links and the direction a Burnham premiership might take.",
+      "Questions over personnel extend beyond the chief of staff role. It is understood that Chancellor Rachel Reeves would be offered a more junior cabinet role under a Burnham government, a significant demotion that signals the incoming prime minister\'s intention to reshape economic policy and place his own stamp firmly on the Treasury\'s direction. Reeves has been a central figure in the current Labour government, and her effective replacement at the top of economic policymaking will be one of the most closely watched decisions Burnham makes.",
+      "On fiscal policy, Burnham has sought to reassure markets and Labour moderates by insisting he will stick to the government\'s existing fiscal rules. However, pressure is already building from senior officials — including some within Number 10 itself — who are planning to lobby Burnham during access talks to revive the idea of 'war bonds' as a mechanism to fund higher defence spending, potentially allowing the Treasury to borrow more for military purposes. How Burnham navigates these competing pressures on public finances is expected to define the early months of his tenure.",
+      "Meanwhile, Burnham has spoken of establishing a so-called 'No 10 in the North', signalling his intention to maintain a visible presence in Manchester even as he moves into Downing Street — a move that would be symbolically significant for a politician who has built his brand on northern identity and devolution. Labour MPs are, however, reported to be under pressure from local party members who would prefer a full leadership contest rather than what is increasingly described as a coronation. Darren Jones, an ally of Starmer, has already ruled himself out of any contest, further clearing the path for Burnham\'s ascent."
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/a17c/live/99969e10-6f14-11f1-8e1d-bbbb1017d210.png",
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/0878/live/3557e600-6fb6-11f1-8546-8f19e4fe30f4.jpg",
     source: "BBC News",
-    sourceUrl: "https://www.bbc.co.uk/news/articles/c2eyj7j4evko?at_medium=RSS&at_campaign=rss"
+    sourceUrl: "https://www.bbc.co.uk/news/articles/cp3xv2j7gepo"
   },
   secondary: [
     {
       id: "uk1",
-      title: "Burnham Picks Former Blair Minister James Purnell as Chief of Staff",
-      summary: "Andy Burnham has chosen Blairite former cabinet colleague James Purnell as his chief of staff as he finalises his team for government.",
+      title: "Badenoch Refuses to Apologise for Fiery PMQs Comments Following Starmer\'s Resignation",
+      summary: "Kemi Badenoch has flatly refused to say sorry for her language during a heated Prime Minister\'s Questions session, in which she attacked government ministers and Labour MPs in the wake of Sir Keir Starmer\'s resignation.",
       body: [
-        "Andy Burnham has selected James Purnell, a former minister under Tony Blair, to serve as his chief of staff, in what is being described as one of the most significant personnel decisions he has made since returning to Westminster as the MP for Makerfield. The appointment signals Burnham\'s intention to draw on experienced centrist Labour figures as he builds out what is increasingly looking like a government-in-waiting.",
-        "Purnell, a long-standing political ally of Burnham\'s from their shared time in government, is expected to play a pivotal role in shaping strategy and managing relationships both within the parliamentary party and with the civil service. The choice of a Blairite figure will be closely watched by different wings of the Labour movement as an early indicator of the ideological direction Burnham intends to take."
+        "The Conservative leader used the PMQs session to go on the offensive, mocking Andy Burnham as little more than 'a pair of eyelashes and a black T-shirt' and claiming Labour MPs had been cheering Starmer\'s downfall despite what she called '400 knives' in the former leader\'s back. The remarks drew immediate controversy, with critics accusing Badenoch of lowering the tone of parliamentary debate at a moment of significant political transition.",
+        "A spokesperson for Badenoch subsequently confirmed she would 'absolutely not' be apologising for her comments, doubling down on her combative approach. Burnham himself responded to the jibe, indicating he was unfazed by the personal attack, and the exchange highlighted the sharp political battle lines already forming as the UK prepares for a change of prime minister."
       ],
-      image: "https://i.guim.co.uk/img/media/5afeeef02038eda7614c51f3c15aaadd6b462f91/256_283_2681_2144/master/2681.jpg?width=1200&quality=85&auto=format&fit=max&s=cc0e1caaba0096edad681a5ac367530a",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/politics/2026/jun/23/andy-burnham-picks-former-blair-minister-james-purnell-as-his-chief-of-staff",
+      image: "https://i.guim.co.uk/img/media/a179b09f0b021c68e438d4099efc37a532141efd/0_0_1666_1333/master/1666.jpg?width=1200&quality=85&auto=format&fit=max&s=f95ccc672cdad19ab721168fc5f7100a",
+      source: "BBC News",
+      url: "https://www.bbc.co.uk/news/articles/cx2jn1k4le8o?at_medium=RSS&at_campaign=rss",
       category: "Politics"
     },
     {
       id: "uk2",
-      title: "Nigel Farage Faces Grilling Over £5m Gift from Crypto Billionaire",
-      summary: "The Reform UK leader is under investigation by the Commons sleaze watchdog for failing to declare a £5 million donation from crypto billionaire Christopher Harborne.",
+      title: "Mahmood\'s Immigration and Asylum Bill Set to Go Before MPs Next Week",
+      summary: "Shabana Mahmood\'s controversial immigration and asylum bill, which includes plans for increased forced removals and stringent age checks on asylum claimants, is scheduled to come before MPs within days amid fears from refugee charities that it is being rushed through.",
       body: [
-        "Nigel Farage is facing a formal investigation by the House of Commons standards watchdog after allegedly failing to declare a £5 million gift from Christopher Harborne, a crypto billionaire. When challenged about the donation, Farage defiantly told reporters: 'I can spend it on cars if I want to,' in remarks that are likely to intensify scrutiny of his conduct.",
-        "The investigation adds to growing pressure on the Reform UK leader at a time when his party has sought to position itself as an insurgent force against the political establishment. Critics have argued that the failure to declare such a substantial donation represents exactly the kind of conduct Reform claims to oppose, potentially dealing a reputational blow to Farage and his movement."
+        "The legislation would introduce significant new powers to increase the forced removal of people refused asylum, place tighter limits on human rights law applications, and implement more stringent age verification checks for those claiming to be children. Refugee and humanitarian organisations have raised serious concerns, arguing the bill is being accelerated through Parliament without adequate scrutiny given the gravity of its provisions.",
+        "The bill represents one of the most consequential pieces of domestic legislation to come before Parliament during this period of political transition, and its passage through the Commons will be closely watched to see whether the government can maintain its majority at a moment of considerable internal Labour turbulence. Critics argue the rushed timetable risks enshrining harmful policies into law before their full implications have been properly debated."
       ],
-      image: "https://static.independent.co.uk/2026/06/11/16/2026-06-10T151429Z_189665924_RC23RLA3367H_RTRMADP_3_BRITAIN-POLITICS-REFORM.JPG?width=1200&auto=webp&trim=0%2C0%2C0%2C0",
-      source: "The Independent",
-      url: "https://www.independent.co.uk/news/uk/politics/nigel-farage-5-million-gift-billionaire-b3001119.html",
+      image: "https://images.pexels.com/photos/4425112/pexels-photo-4425112.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/uk-news/2026/jun/24/shabana-mahmood-immigration-and-asylum-bill-to-go-before-mps-next-week",
       category: "Politics"
     },
     {
       id: "uk3",
-      title: "Weakening Net Zero Policy Would Damage Economy, Chief Climate Adviser Warns",
-      summary: "Climate Change Committee chair Nigel Topping has warned that rolling back the UK\'s net zero commitments would undermine investor confidence and harm economic growth.",
+      title: "Peter Murrell\'s SNP Embezzlement Spending Revealed in Detail",
+      summary: "Items purchased by Peter Murrell using money embezzled from Scottish National Party funds have been revealed, including luxury goods such as Le Creuset ramekins, a £702 salt and pepper set, and matching Montblanc fountain pens in white and yellow gold.",
       body: [
-        "Nigel Topping, chair of the Climate Change Committee, has issued a stark warning that any weakening of the UK\'s net zero policy framework would cause serious damage to the economy by disrupting businesses and deterring inward investment. He stated that repeated U-turns on climate policy are 'really damaging to inward investor confidence,' and argued that consistency is essential for economic growth.",
-        "The warning arrives at a particularly sensitive moment, with the UK in the midst of a leadership transition and questions circulating about whether a new prime minister might seek to revisit existing climate commitments. Topping\'s intervention is likely to be seen as a direct message to Labour leadership candidates that abandoning net zero targets would carry significant economic as well as environmental costs."
+        "The disclosure of what Murrell spent the misappropriated funds on paints a vivid picture of the personal enrichment at the heart of the scandal that has rocked the SNP in recent years. The itemised purchases, which range from designer kitchenware to high-end writing instruments, have drawn widespread condemnation and further damaged the reputation of the party he once led as chief executive.",
+        "The case has had lasting consequences for the SNP as a political force, contributing to the party\'s broader difficulties at both Holyrood and Westminster. The revelations continue to cast a long shadow over Scottish politics and raise ongoing questions about governance and financial oversight within one of the UK\'s major political parties."
       ],
-      image: "https://i.guim.co.uk/img/media/4a2bebb57d6896efa4b2eb80b6e579f7ef0e9988/547_0_5755_4608/master/5755.jpg?width=1200&quality=85&auto=format&fit=max&s=f7f6577c90c15bbb3359b23d0bc14016",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/environment/2026/jun/24/weakening-net-zero-policy-damage-economy-climate-change-committee",
+      image: "https://images.unsplash.com/photo-1623475045709-8998060b23f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxQZXRlciUyME11cnJlbGwlNUN8ZW58MHwwfHx8MTc4MjM2MzczNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "Sky News",
+      url: "https://news.sky.com/story/in-pictures-the-shopping-spree-peter-murrell-went-on-with-money-embezzled-from-snp-funds-13556803",
       category: "Politics"
     }
   ]

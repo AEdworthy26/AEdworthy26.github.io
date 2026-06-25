@@ -1,8 +1,8 @@
 // quote-data.js
-// Auto-updated 2026-06-24 — do not edit manually
+// Auto-updated 2026-06-25 — do not edit manually
 
 var QUOTE_DATA = {
-  date: "2026-06-24",
-  text: "It takes a long time to play like yourself.",
-  author: "Miles Davis"
+  date: "2026-06-25",
+  text: "Our greatest glory is not in never falling, but in rising every time we fall.",
+  author: "Confucius"
 };
