@@ -1,8 +1,8 @@
 // quote-data.js
-// Auto-updated 2026-06-25 — do not edit manually
+// Auto-updated 2026-06-26 — do not edit manually
 
 var QUOTE_DATA = {
-  date: "2026-06-25",
-  text: "Our greatest glory is not in never falling, but in rising every time we fall.",
-  author: "Confucius"
+  date: "2026-06-26",
+  text: "Some people believe football is a matter of life and death. I am very disappointed with that attitude. I can assure you it is much, much more important than that.",
+  author: "Bill Shankly"
 };

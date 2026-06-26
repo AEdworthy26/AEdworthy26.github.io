@@ -1,18 +1,18 @@
 // films-data.js
-// Auto-updated 2026-06-25 — do not edit manually
+// Auto-updated 2026-06-26 — do not edit manually
 
 var FILMS_DATA = {
-  date: "2026-06-25",
+  date: "2026-06-26",
   film: {
-    title: "The Crimson Pirate",
-    director: "Robert Siodmak",
-    year: 1952,
-    genres: ["Adventure", "Comedy", "Swashbuckler"],
-    desc: "Burt Lancaster plays a rascally pirate captain who double-crosses everyone — including his own employer — in this gloriously acrobatic, self-aware adventure that predates Pirates of the Caribbean by half a century in its gleeful mockery of the genre. Lancaster and his real-life circus partner Nick Cravat perform astonishing feats of gymnastics and acrobatics with zero visible stunt doubling, swinging through rigging and leaping between ships with infectious, grinning joy. The film cannily winks at its own absurdity, deploying anachronistic gadgetry and slapstick gags while still delivering genuinely thrilling action choreography shot in lush Technicolor off the coast of Ischia, Italy. It is one of cinema\'s great underappreciated crowd-pleasers — a film that manages to be simultaneously a parody and a perfect specimen of the very thing it parodies. Critics and scholars have long championed it as a high-water mark of postwar Hollywood adventure filmmaking that has never received the wide revival attention it deserves.",
-    cast: ["Burt Lancaster", "Nick Cravat", "Eva Bartok"],
-    rating: 91,
+    title: "Sweet Smell of Success",
+    director: "Alexander Mackendrick",
+    year: 1957,
+    genres: ["Drama", "Noir", "Crime"],
+    desc: "A razor-sharp noir set in the glittering, predatory world of late-night Manhattan, where sycophantic press agent Sidney Falco desperately schemes to please the all-powerful gossip columnist J.J. Hunsecker. Burt Lancaster plays Hunsecker as a cold, monolithic force of corrupt authority, while Tony Curtis delivers one of cinema\'s great against-type performances as the slippery, self-loathing Falco. James Wong Howe\'s breathtaking black-and-white cinematography turns midcentury New York into a place of menace and seduction, all neon and shadow. The dialogue, co-written by Clifford Odets and Ernest Lehman, crackles with a poisonous wit that has never been matched — every line feels like a knife being sharpened. It is a film about power, compromise, and moral rot that feels just as urgent and unsettling today as it did on release.",
+    cast: ["Burt Lancaster", "Tony Curtis", "Susan Harrison"],
+    rating: 97,
     ratingSource: "Rotten Tomatoes",
-    ratingExtra: "Nominated 1 BAFTA Award",
-    posterUrl: "https://upload.wikimedia.org/wikipedia/en/c/c6/The_Crimson_Pirate_poster.jpg"
+    ratingExtra: "Selected for the National Film Registry",
+    posterUrl: "https://upload.wikimedia.org/wikipedia/commons/5/57/Sweet_Smell_of_Success_%281957_poster%29.jpg"
   }
 };

@@ -1,211 +1,204 @@
 // suggested-recipes-data.js
-// Auto-updated 2026-06-25 — do not edit manually
+// Auto-updated 2026-06-26 — do not edit manually
 
 window.SUGGESTED_RECIPES = [
   {
     id: "sug1",
-    title: "Goan Prawn Balchão — Fiery Pickled Prawn Curry with Steamed Basmati & Crispy Shallots",
-    category: "Fish & Seafood",
-    calories: 480,
+    title: "Venetian Liver & Onions — Fegato alla Veneziana with Soft Polenta & Gremolata",
+    category: "Other",
+    calories: 510,
     protein: 34,
-    fibre: 4,
+    fibre: 3,
     healthScore: 71,
-    time: "45 mins",
+    time: "40 mins",
     serves: "4",
-    desc: "Balchão is one of Goa\'s most electrifying dishes — a deeply spiced, vinegar-sharp prawn curry with Portuguese roots and unmistakably Indian soul. The punchy red masala paste, built on dried Kashmiri chillies, cumin, cloves and cider vinegar, clings to plump prawns in a thick, almost jam-like sauce that demands to be mopped up with fluffy basmati. Crispy fried shallots on top add crunch and sweetness against all that fire.",
-    emoji: "🦐",
-    image: "https://images.unsplash.com/photo-1627703567676-baf986fc608a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxHb2FuJTIwUHJhd24lMjBCYWxjaCVDMyVBM28lMjAlRTIlODAlOTQlMjBGaWVyeSUyMFBpY2tsZWQlMjBQcmF3biUyMEN1cnJ5JTIwd2l0aCUyMFN0ZWFtZWQlMjBCYXNtYXRpJTIwJTI2JTIwQ3Jpc3B5JTIwU2hhbGxvdHMlMjBmb29kJTIwZGlzaHxlbnwwfDB8fHwxNzgyMzY0NTYzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    desc: "One of Venice\'s most celebrated dishes, thinly sliced calves' liver is cooked with a mountain of slow-caramelised sweet onions until silky and golden, then finished with a splash of white wine vinegar for brightness. Served over billowing soft polenta and scattered with sharp gremolata, this is deeply savoury Italian comfort food at its most honest and rewarding.",
+    emoji: "🇮🇹",
+    image: "https://images.unsplash.com/photo-1615852735201-2ce54ffa6afa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxWZW5ldGlhbiUyMExpdmVyJTIwJTI2JTIwT25pb25zJTIwJUUyJTgwJTk0JTIwRmVnYXRvJTIwYWxsYSUyMFZlbmV6aWFuYSUyMHdpdGglMjBTb2Z0JTIwUG9sZW50YSUyMCUyNiUyMEdyZW1vbGF0YSUyMGZvb2QlMjBkaXNofGVufDB8MHx8fDE3ODI0NTA3ODd8MA&ixlib=rb-4.1.0&q=80&w=1080",
     ingredientGroups: [
       {
-        group: "Prawns & Base",
+        group: "Main",
         items: [
-          { name: "Raw king prawns, peeled and deveined", quantity: 600, unit: "g" },
-          { name: "Onions, finely sliced", quantity: 2, unit: "large" },
-          { name: "Ripe tomatoes, roughly chopped", quantity: 3, unit: "medium" },
-          { name: "Neutral oil", quantity: 4, unit: "tbsp" },
-          { name: "Basmati rice", quantity: 300, unit: "g" }
+          { name: "Calves' liver, thinly sliced", quantity: 600, unit: "g" },
+          { name: "Large white onions, halved and finely sliced", quantity: 3, unit: "" },
+          { name: "Unsalted butter", quantity: 40, unit: "g" },
+          { name: "Olive oil", quantity: 3, unit: "tbsp" },
+          { name: "White wine vinegar", quantity: 2, unit: "tbsp" },
+          { name: "Dry white wine", quantity: 60, unit: "ml" },
+          { name: "Fresh sage leaves", quantity: 8, unit: "" },
+          { name: "Plain flour, for dusting", quantity: 2, unit: "tbsp" },
+          { name: "Salt and black pepper", quantity: 0, unit: "to taste" }
         ]
       },
       {
-        group: "Balchão Masala Paste",
+        group: "Soft Polenta",
         items: [
-          { name: "Dried Kashmiri chillies, soaked in hot water 15 mins", quantity: 8, unit: "" },
-          { name: "Garlic cloves", quantity: 6, unit: "" },
-          { name: "Fresh ginger, roughly chopped", quantity: 30, unit: "g" },
-          { name: "Cumin seeds", quantity: 1.5, unit: "tsp" },
-          { name: "Whole cloves", quantity: 6, unit: "" },
-          { name: "Black peppercorns", quantity: 1, unit: "tsp" },
-          { name: "Cinnamon stick", quantity: 0.5, unit: "" },
-          { name: "Turmeric", quantity: 0.5, unit: "tsp" },
-          { name: "Cider vinegar", quantity: 4, unit: "tbsp" },
-          { name: "Caster sugar", quantity: 1, unit: "tsp" },
-          { name: "Fine sea salt", quantity: 1, unit: "tsp" }
+          { name: "Instant polenta", quantity: 200, unit: "g" },
+          { name: "Whole milk", quantity: 400, unit: "ml" },
+          { name: "Water", quantity: 600, unit: "ml" },
+          { name: "Unsalted butter", quantity: 30, unit: "g" },
+          { name: "Parmesan, finely grated", quantity: 40, unit: "g" },
+          { name: "Salt", quantity: 0, unit: "to taste" }
         ]
       },
       {
-        group: "To Finish",
+        group: "Gremolata",
         items: [
-          { name: "Shallots, thinly sliced into rings", quantity: 3, unit: "medium" },
-          { name: "Oil for frying shallots", quantity: 3, unit: "tbsp" },
-          { name: "Fresh coriander leaves", quantity: 1, unit: "small handful" },
-          { name: "Lime, cut into wedges", quantity: 1, unit: "" }
+          { name: "Flat-leaf parsley, finely chopped", quantity: 20, unit: "g" },
+          { name: "Lemon zest", quantity: 1, unit: "lemon" },
+          { name: "Garlic clove, minced", quantity: 1, unit: "" }
         ]
       }
     ],
     substitutes: [
-      { ingredient: "Dried Kashmiri chillies", alternatives: ["2 tbsp Kashmiri chilli powder", "Mild dried ancho chillies"] },
-      { ingredient: "King prawns", alternatives: ["Large tiger prawns", "Cleaned squid rings"] },
-      { ingredient: "Cider vinegar", alternatives: ["White wine vinegar", "Coconut vinegar"] }
+      { ingredient: "Calves' liver", alternatives: ["Lamb\'s liver (milder, slightly gamier)", "Chicken livers (cook whole, reduce time)"] },
+      { ingredient: "Instant polenta", alternatives: ["Slow-cook coarse polenta (add 35 mins)", "Creamy mashed potato"] },
+      { ingredient: "White wine vinegar", alternatives: ["Sherry vinegar", "A squeeze of fresh lemon juice"] }
     ],
     instructions: [
-      "Step 1 — Make the balchão paste: drain the soaked Kashmiri chillies and place in a blender with the garlic, ginger, cumin seeds, cloves, peppercorns, cinnamon, turmeric, cider vinegar, sugar and salt. Blend to a very smooth, deep-red paste, adding a splash of water if needed to get it moving. Taste — it should be bold, tangy and deeply aromatic.",
-      "Step 2 — Fry the crispy shallots: heat 3 tbsp oil in a small pan over medium heat. Add the sliced shallots and cook, stirring frequently, for 12–15 minutes until deeply golden and crisp. Remove with a slotted spoon onto kitchen paper and season with a pinch of salt. Set aside.",
-      "Step 3 — Cook the rice: rinse the basmati under cold water until clear, then cook according to packet instructions or bring to the boil in 550ml salted water, cover tightly, and steam on the lowest heat for 12 minutes. Remove from heat and leave covered.",
-      "Step 4 — Build the curry base: heat 4 tbsp oil in a wide, heavy pan over medium-high heat. Add the sliced onions with a big pinch of salt and cook for 10–12 minutes, stirring often, until soft and turning golden at the edges. Don\'t rush this — caramelised onions are the foundation.",
-      "Step 5 — Add the masala paste: tip the entire blended paste into the pan and stir it through the onions. Fry, stirring constantly, for 5–6 minutes until the paste darkens slightly and the oil begins to separate at the sides — this cooks out the raw spices and is key to the dish\'s depth.",
-      "Step 6 — Add tomatoes and simmer: stir in the chopped tomatoes and cook for another 8 minutes, crushing them down with the back of a spoon, until the mixture is thick, jammy and nearly dry. Season well.",
-      "Step 7 — Cook the prawns: add the prawns to the pan and toss to coat in the masala. Cook for 3–4 minutes, stirring, until the prawns are just cooked through and curled — they should be pink with no grey left. Do not overcook. Taste and adjust salt and vinegar balance.",
-      "Step 8 — Serve: pile steamed basmati into bowls and spoon the balchão over the top. Finish with a generous heap of crispy shallots, a scatter of fresh coriander and lime wedges on the side for squeezing."
+      "Make the gremolata first — combine the finely chopped parsley, lemon zest and minced garlic in a small bowl. Mix well and set aside at room temperature so the flavours meld.",
+      "Caramelise the onions — heat 2 tablespoons of the olive oil and half the butter in a large, wide frying pan over a medium-low heat. Add the sliced onions with a generous pinch of salt and cook, stirring occasionally, for 25–30 minutes until deeply golden, sweet and completely soft. Don\'t rush this — the onions should be jammy, not just softened. Add the sage leaves for the last 5 minutes. Transfer the onions to a bowl and keep warm.",
+      "While the onions cook, bring the milk and water to a gentle boil in a medium saucepan for the polenta. Whisk in the polenta in a steady stream, then reduce the heat to low and cook, stirring frequently, for 5–6 minutes until thick and smooth. Stir in the butter and Parmesan, season generously with salt, and keep warm with a lid on, stirring occasionally and adding a splash of water if it thickens too much.",
+      "Prepare the liver — pat the slices thoroughly dry with kitchen paper (crucial for a good sear, not steaming). Season well with salt and pepper on both sides, then dust lightly in flour, shaking off any excess.",
+      "Sear the liver — increase the heat under the onion pan to high and add the remaining olive oil and butter. When the fat is shimmering and just beginning to smoke, add the liver slices in a single layer — do not crowd the pan; cook in batches if needed. Sear for 60–90 seconds per side only. The liver should be browned on the outside but still faintly pink inside; overcooked liver turns grainy and bitter.",
+      "Deglaze and combine — return all the liver to the pan, add the white wine and let it bubble and reduce for 30 seconds, then add the white wine vinegar. Toss briefly to coat, then return the caramelised onions to the pan and fold together gently over the heat for another 30 seconds. Taste and adjust seasoning.",
+      "To serve, spoon generous mounds of soft polenta into warm wide bowls, lay the liver and onions over the top, and finish with a good pinch of gremolata scattered over each portion. Serve immediately."
     ]
   },
   {
     id: "sug2",
-    title: "Alsatian Choucroute-Style Braised Pork Belly with Juniper, Riesling & Mustard Mash",
-    category: "Pork",
-    calories: 720,
-    protein: 42,
-    fibre: 5,
-    healthScore: 58,
-    time: "2 hrs 15 mins",
+    title: "Sri Lankan Devilled Prawns with Coconut Roti & Lime Pickle Yoghurt",
+    category: "Fish & Seafood",
+    calories: 465,
+    protein: 36,
+    fibre: 4,
+    healthScore: 73,
+    time: "35 mins",
     serves: "4",
-    desc: "Alsace sits on the Franco-German border and its cooking reflects that duality perfectly — this slow braise takes pork belly and simmers it low and long with sauerkraut, juniper berries, Riesling and bay until everything is meltingly tender and perfumed with the most extraordinary sweet-sour depth. Served over velvety Dijon mustard mash with a spoonful of the braising juices, it\'s one of the great cold-weather European dishes and shockingly easy to pull off at home.",
-    emoji: "🐷",
-    image: "https://images.unsplash.com/photo-1590057148504-3194bb361cf8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxBbHNhdGlhbiUyMENob3Vjcm91dGUtU3R5bGUlMjBCcmFpc2VkJTIwUG9yayUyMEJlbGx5JTIwd2l0aCUyMEp1bmlwZXIlMkMlMjBSaWVzbGluZyUyMCUyNiUyME11c3RhcmQlMjBNYXNoJTIwZm9vZCUyMGRpc2h8ZW58MHwwfHx8MTc4MjM2NDU2NHww&ixlib=rb-4.1.0&q=80&w=1080",
+    desc: "Sri Lankan devilled dishes are a glorious collision of sweet, sour, hot and savoury — fat prawns are flash-fried with capsicum, red onion, tomato and a fiery spice paste until lacquered and smoky. Paired with pillowy coconut roti and a cooling lime pickle yoghurt, this is one of the island\'s most addictively good street-food preparations.",
+    emoji: "🦐",
+    image: "https://images.unsplash.com/photo-1718942899962-a3413ce42db3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTcmklMjBMYW5rYW4lMjBEZXZpbGxlZCUyMFByYXducyUyMHdpdGglMjBDb2NvbnV0JTIwUm90aSUyMCUyNiUyMExpbWUlMjBQaWNrbGUlMjBZb2dodXJ0JTIwZm9vZCUyMGRpc2h8ZW58MHwwfHx8MTc4MjQ1MDc4OHww&ixlib=rb-4.1.0&q=80&w=1080",
     ingredientGroups: [
       {
-        group: "Pork & Braise",
+        group: "Devilled Prawns",
         items: [
-          { name: "Pork belly, skin scored, cut into 4 portions", quantity: 1.2, unit: "kg" },
-          { name: "Sauerkraut, drained and rinsed", quantity: 500, unit: "g" },
-          { name: "Dry Riesling (or other dry white wine)", quantity: 250, unit: "ml" },
-          { name: "Chicken or pork stock", quantity: 300, unit: "ml" },
-          { name: "Smoked bacon lardons", quantity: 150, unit: "g" },
-          { name: "Onion, finely sliced", quantity: 1, unit: "large" },
-          { name: "Juniper berries, lightly crushed", quantity: 12, unit: "" },
-          { name: "Bay leaves", quantity: 3, unit: "" },
-          { name: "Caraway seeds", quantity: 1, unit: "tsp" },
-          { name: "Whole black peppercorns", quantity: 1, unit: "tsp" },
-          { name: "Neutral oil", quantity: 2, unit: "tbsp" }
+          { name: "Raw king prawns, peeled and deveined", quantity: 600, unit: "g" },
+          { name: "Red onion, cut into wedges", quantity: 2, unit: "" },
+          { name: "Green capsicum, cut into chunky strips", quantity: 1, unit: "" },
+          { name: "Red capsicum, cut into chunky strips", quantity: 1, unit: "" },
+          { name: "Ripe tomatoes, quartered", quantity: 2, unit: "" },
+          { name: "Garlic cloves, thinly sliced", quantity: 4, unit: "" },
+          { name: "Fresh ginger, julienned", quantity: 20, unit: "g" },
+          { name: "Green chillies, split lengthways", quantity: 2, unit: "" },
+          { name: "Tomato ketchup", quantity: 3, unit: "tbsp" },
+          { name: "Soy sauce", quantity: 2, unit: "tbsp" },
+          { name: "Apple cider vinegar", quantity: 1, unit: "tbsp" },
+          { name: "Chilli flakes", quantity: 1, unit: "tsp" },
+          { name: "Sweet paprika", quantity: 1, unit: "tsp" },
+          { name: "Ground black pepper", quantity: 1, unit: "tsp" },
+          { name: "Curry leaves", quantity: 12, unit: "" },
+          { name: "Coconut oil", quantity: 3, unit: "tbsp" },
+          { name: "Salt", quantity: 0, unit: "to taste" }
         ]
       },
       {
-        group: "Mustard Mash",
+        group: "Coconut Roti",
         items: [
-          { name: "Floury potatoes (Maris Piper or King Edward), peeled and cut into chunks", quantity: 900, unit: "g" },
-          { name: "Unsalted butter", quantity: 60, unit: "g" },
-          { name: "Whole milk, warmed", quantity: 80, unit: "ml" },
-          { name: "Dijon mustard", quantity: 2, unit: "tbsp" },
-          { name: "Fine sea salt and white pepper", quantity: 1, unit: "to taste" }
+          { name: "Plain flour", quantity: 250, unit: "g" },
+          { name: "Desiccated coconut", quantity: 60, unit: "g" },
+          { name: "Salt", quantity: 1, unit: "tsp" },
+          { name: "Water, lukewarm", quantity: 120, unit: "ml" },
+          { name: "Coconut oil, for cooking", quantity: 2, unit: "tbsp" }
         ]
       },
       {
-        group: "To Finish",
+        group: "Lime Pickle Yoghurt",
         items: [
-          { name: "Flat-leaf parsley, roughly chopped", quantity: 1, unit: "small handful" },
-          { name: "Wholegrain mustard, to serve", quantity: 2, unit: "tbsp" }
+          { name: "Full-fat Greek yoghurt", quantity: 200, unit: "g" },
+          { name: "Lime pickle, finely chopped", quantity: 2, unit: "tbsp" },
+          { name: "Fresh coriander, chopped", quantity: 15, unit: "g" },
+          { name: "Lime juice", quantity: 1, unit: "tbsp" }
         ]
       }
     ],
     substitutes: [
-      { ingredient: "Pork belly", alternatives: ["Pork shoulder steaks", "Thick-cut pork chops (reduce braising time to 1 hr)"] },
-      { ingredient: "Riesling", alternatives: ["Any dry white wine", "Dry cider"] },
-      { ingredient: "Sauerkraut", alternatives: ["Shredded white cabbage cooked in a little vinegar and sugar", "Kimchi (rinsed — gives a different but delicious result)"] }
+      { ingredient: "Raw king prawns", alternatives: ["Large raw tiger prawns", "Squid rings (reduce cook time to 1 min per side)"] },
+      { ingredient: "Curry leaves", alternatives: ["Omit or add a small bay leaf for a different but pleasant aromatic note"] },
+      { ingredient: "Lime pickle", alternatives: ["Mango chutney with a squeeze of lime", "A pinch of chilli and extra lime juice"] }
     ],
     instructions: [
-      "Step 1 — Preheat your oven to 160°C (fan 140°C). Pat the pork belly pieces very dry with kitchen paper and season generously on all sides with salt and pepper. This is important for getting a good sear.",
-      "Step 2 — Sear the pork: heat the oil in a large heavy ovenproof casserole (or Dutch oven) over high heat. Lay the pork belly pieces skin-side down and sear without moving for 4–5 minutes until deeply golden and beginning to crisp. Turn and sear the other sides for 2–3 minutes. Remove and set aside.",
-      "Step 3 — Build the base: reduce the heat to medium and add the lardons to the same pot. Fry for 3–4 minutes until lightly golden, then add the sliced onion and cook for 8 minutes until soft. Add the juniper berries, caraway seeds, bay leaves and peppercorns, stir for 1 minute.",
-      "Step 4 — Add the sauerkraut and liquid: stir the drained sauerkraut into the pot, followed by the Riesling. Let it bubble for 2 minutes to cook off the alcohol, then pour in the stock. Nestle the pork belly pieces back in, skin-side up, so they sit on top of the sauerkraut with the skin just above the liquid.",
-      "Step 5 — Braise low and slow: cover the casserole tightly with a lid and transfer to the oven. Cook for 1 hour 45 minutes. For the final 15 minutes, remove the lid to let the pork skin colour and caramelise slightly. The pork should be completely tender and yielding.",
-      "Step 6 — Make the mash: while the pork braises, cook the potato chunks in well-salted boiling water for 20–25 minutes until completely tender. Drain thoroughly and leave in the colander to steam dry for 3 minutes — this is crucial for fluffy, non-watery mash. Pass through a ricer or mash well, then beat in the butter, warm milk and Dijon mustard. Season generously with salt and white pepper.",
-      "Step 7 — Check the braising liquid: once the pork is done, taste the braising liquid and juices — it should be savoury, tangy and complex. If it seems thin, transfer the pork to a warm plate, bring the liquid to a rapid boil on the hob and reduce for 5 minutes until slightly syrupy.",
-      "Step 8 — Serve: spoon a generous mound of Dijon mash into shallow bowls. Place a portion of pork belly on top with a heap of the sauerkraut alongside. Spoon braising juices over everything, scatter with parsley and add a dollop of wholegrain mustard at the side."
+      "Make the coconut roti dough — combine flour, desiccated coconut and salt in a bowl. Add water gradually and bring together into a soft, slightly sticky dough. Knead for 2 minutes until smooth, then cover and rest for 15 minutes.",
+      "Make the lime pickle yoghurt — stir together the Greek yoghurt, finely chopped lime pickle, coriander and lime juice. Taste — it should be tangy, cooling and herbaceous. Set aside in the fridge.",
+      "Cook the rotis — divide the dough into 8 equal balls. Press each into a rough circle about 5mm thick with your hands or a rolling pin (they\'re rustic — that\'s the point). Heat a dry non-stick pan over a medium-high heat, brush each roti lightly with coconut oil, and cook for 2–3 minutes per side until charred in spots and cooked through. Stack and cover with a clean tea towel to keep warm.",
+      "Season and sear the prawns — pat the prawns dry, season with salt, paprika, chilli flakes and black pepper. Heat 2 tablespoons of coconut oil in a large wok or heavy frying pan over the highest heat possible until just smoking. Add the prawns in a single layer and sear for 60–90 seconds per side until just pink and beginning to char at the edges. Remove to a plate — they\'ll finish cooking in the sauce.",
+      "Build the devil — in the same wok, add the remaining coconut oil. Add the curry leaves and fry for 20 seconds until they crackle and pop. Add the onion wedges, capsicum strips and green chillies and stir-fry hard over high heat for 3–4 minutes — you want some char on the vegetables, not just softening.",
+      "Add the garlic and ginger and stir-fry for another minute, then add the tomato quarters and toss briefly. Mix together the ketchup, soy sauce and vinegar, pour into the wok and let it bubble and reduce for 1 minute, coating everything in a glossy, sticky sauce.",
+      "Return the seared prawns to the wok, toss everything together vigorously over high heat for 1–2 minutes until the prawns are coated and just cooked through. Taste and adjust seasoning — it should be fiery, sweet, tangy and deeply savoury. Serve immediately with warm coconut roti and the lime pickle yoghurt alongside."
     ]
   },
   {
     id: "sug3",
-    title: "Cypriot Halloumi & Courgette Fritters with Tomato-Olive Salsa, Tzatziki & Warm Pitta",
+    title: "Persian Herb Frittata — Kuku Sabzi with Barberry & Walnut Salad",
     category: "Vegetarian",
-    calories: 510,
-    protein: 22,
-    fibre: 6,
-    healthScore: 69,
-    time: "40 mins",
+    calories: 380,
+    protein: 19,
+    fibre: 5,
+    healthScore: 80,
+    time: "45 mins",
     serves: "4",
-    desc: "These golden, crispy fritters are inspired by Cyprus\'s love of halloumi and the island\'s abundance of summer courgettes — grated courgette and chunks of salty squeaky halloumi are bound with egg and flour into patties and fried until deeply golden outside and molten within. A vibrant tomato and olive salsa brings sharpness and colour, while cool, garlicky tzatziki and warm pitta round everything out into a Mediterranean feast that\'s quick enough for a weeknight but special enough to share.",
-    emoji: "🧀",
-    image: "https://images.pexels.com/photos/6911885/pexels-photo-6911885.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    desc: "Kuku Sabzi is Iran\'s extraordinary herb-packed baked omelette — so laden with fresh parsley, dill, coriander, chives and fenugreek that each golden slice is more herb than egg, with a beautifully dark, crunchy crust and a soft, fragrant interior. Served warm alongside a simple salad of bitter barberries, toasted walnuts and peppery watercress dressed in pomegranate molasses, this is Persian home cooking at its most vibrant and flavour-packed.",
+    emoji: "🌿",
+    image: "https://images.pexels.com/photos/37550972/pexels-photo-37550972.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     ingredientGroups: [
       {
-        group: "Fritters",
+        group: "Kuku Sabzi",
         items: [
-          { name: "Halloumi, coarsely grated", quantity: 250, unit: "g" },
-          { name: "Courgettes, coarsely grated", quantity: 400, unit: "g" },
-          { name: "Spring onions, finely sliced", quantity: 4, unit: "" },
-          { name: "Fresh mint leaves, finely chopped", quantity: 3, unit: "tbsp" },
-          { name: "Eggs, beaten", quantity: 2, unit: "large" },
-          { name: "Plain flour", quantity: 60, unit: "g" },
-          { name: "Dried oregano", quantity: 1, unit: "tsp" },
-          { name: "Chilli flakes", quantity: 0.5, unit: "tsp" },
-          { name: "Black pepper", quantity: 1, unit: "to taste" },
-          { name: "Olive oil, for frying", quantity: 4, unit: "tbsp" }
+          { name: "Large eggs", quantity: 8, unit: "" },
+          { name: "Flat-leaf parsley, finely chopped", quantity: 60, unit: "g" },
+          { name: "Fresh dill, finely chopped", quantity: 40, unit: "g" },
+          { name: "Fresh coriander, finely chopped", quantity: 40, unit: "g" },
+          { name: "Chives or spring onion greens, finely sliced", quantity: 30, unit: "g" },
+          { name: "Dried fenugreek leaves (kasuri methi)", quantity: 1, unit: "tbsp" },
+          { name: "Baking powder", quantity: 0.5, unit: "tsp" },
+          { name: "Ground turmeric", quantity: 0.5, unit: "tsp" },
+          { name: "Dried barberries (zereshk)", quantity: 2, unit: "tbsp" },
+          { name: "Walnuts, roughly chopped", quantity: 40, unit: "g" },
+          { name: "Salt and black pepper", quantity: 0, unit: "to taste" },
+          { name: "Olive oil", quantity: 3, unit: "tbsp" }
         ]
       },
       {
-        group: "Tomato & Olive Salsa",
+        group: "Barberry & Walnut Salad",
         items: [
-          { name: "Ripe vine tomatoes, deseeded and finely diced", quantity: 4, unit: "medium" },
-          { name: "Kalamata olives, pitted and roughly chopped", quantity: 80, unit: "g" },
-          { name: "Red onion, very finely diced", quantity: 0.5, unit: "" },
-          { name: "Extra virgin olive oil", quantity: 2, unit: "tbsp" },
-          { name: "Red wine vinegar", quantity: 1, unit: "tbsp" },
-          { name: "Fresh flat-leaf parsley, roughly chopped", quantity: 2, unit: "tbsp" },
-          { name: "Pinch of sugar", quantity: 1, unit: "" },
-          { name: "Salt and pepper", quantity: 1, unit: "to taste" }
-        ]
-      },
-      {
-        group: "Tzatziki",
-        items: [
-          { name: "Full-fat Greek yoghurt", quantity: 250, unit: "g" },
-          { name: "Cucumber, halved, deseeded and coarsely grated", quantity: 0.5, unit: "" },
-          { name: "Garlic cloves, minced to a paste with salt", quantity: 2, unit: "" },
-          { name: "Fresh dill, finely chopped", quantity: 2, unit: "tbsp" },
-          { name: "Extra virgin olive oil", quantity: 1, unit: "tbsp" },
-          { name: "Lemon juice", quantity: 1, unit: "tbsp" }
+          { name: "Watercress", quantity: 80, unit: "g" },
+          { name: "Dried barberries", quantity: 2, unit: "tbsp" },
+          { name: "Walnuts, toasted and roughly broken", quantity: 40, unit: "g" },
+          { name: "Pomegranate molasses", quantity: 1.5, unit: "tbsp" },
+          { name: "Olive oil", quantity: 2, unit: "tbsp" },
+          { name: "Lemon juice", quantity: 1, unit: "tbsp" },
+          { name: "Salt and black pepper", quantity: 0, unit: "to taste" }
         ]
       },
       {
         group: "To Serve",
         items: [
-          { name: "Warm pitta breads", quantity: 4, unit: "" },
-          { name: "Lemon wedges", quantity: 4, unit: "" }
+          { name: "Full-fat Greek yoghurt", quantity: 150, unit: "g" },
+          { name: "Warm flatbreads or pita", quantity: 4, unit: "" }
         ]
       }
     ],
     substitutes: [
-      { ingredient: "Halloumi", alternatives: ["Firm feta (reduce added salt)", "A firm ricotta salata"] },
-      { ingredient: "Courgettes", alternatives: ["Grated parsnip", "Grated carrot (squeeze very well)"] },
-      { ingredient: "Plain flour", alternatives: ["Chickpea flour (adds nutty depth)", "Gluten-free plain flour blend"] }
+      { ingredient: "Dried barberries", alternatives: ["Dried cranberries (soaked 5 mins to soften)", "Finely chopped dried sour cherries"] },
+      { ingredient: "Dried fenugreek leaves", alternatives: ["A pinch of ground fenugreek", "Omit — the other herbs carry the dish"] },
+      { ingredient: "Watercress", alternatives: ["Rocket (arugula)", "Baby spinach with a little extra lemon"] }
     ],
     instructions: [
-      "Step 1 — Squeeze the courgettes: grate the courgettes into a clean tea towel, gather the edges and twist firmly over the sink to wring out as much moisture as possible. This is the single most important step — wet courgette means soggy fritters. You should be able to squeeze out several tablespoons of liquid.",
-      "Step 2 — Make the fritter mixture: in a large bowl, combine the squeezed courgette, grated halloumi, spring onions, mint, oregano, chilli flakes and plenty of black pepper. Add the beaten eggs and flour and mix well until everything is evenly combined. The mixture should hold together when pressed — if it seems too wet, add another tablespoon of flour.",
-      "Step 3 — Make the tzatziki: squeeze the grated cucumber in the same cloth used for the courgette to remove excess water. Combine in a bowl with the Greek yoghurt, garlic paste, dill, olive oil and lemon juice. Season generously, stir well and refrigerate until needed. Tzatziki always improves with a few minutes of rest.",
-      "Step 4 — Make the tomato and olive salsa: combine the diced tomatoes, chopped olives, red onion, extra virgin olive oil, red wine vinegar, parsley and a pinch of sugar in a bowl. Season with salt and pepper and toss gently. Set aside at room temperature so the flavours meld.",
-      "Step 5 — Fry the fritters: heat 2 tbsp olive oil in a large non-stick frying pan over medium-high heat. Working in batches, scoop heaped tablespoons of the fritter mixture into the pan, pressing gently into rough 1.5cm-thick patties. Cook for 3–4 minutes per side without moving them until deeply golden and crisp on both sides. Transfer to a wire rack (not kitchen paper, which makes them steam) and keep warm. Add more oil between batches as needed.",
-      "Step 6 — Warm the pittas: while the last batch of fritters cooks, warm the pitta breads directly over a gas flame for 20–30 seconds per side for charred spots and puffiness, or toast under the grill for 2 minutes.",
-      "Step 7 — Serve: arrange the golden fritters on a large sharing platter. Spoon the tomato-olive salsa alongside and add a generous bowl of tzatziki. Tuck the warm pittas around the edge and scatter lemon wedges throughout. Let everyone tear, dip and pile up their own plates."
+      "Preheat your oven to 180°C fan (200°C conventional). Finely chop all the fresh herbs — parsley, dill, coriander and chives. This is the most time-consuming part, but don\'t be tempted to rush it; the herbs should be quite fine so they bind into the egg rather than sitting in large clumps. You should have a generous, fragrant mound.",
+      "Beat the eggs in a large bowl with a good pinch of salt, plenty of black pepper, turmeric and baking powder (the baking powder gives the kuku a slightly lighter, less dense texture). Add all the chopped fresh herbs and the dried fenugreek leaves and mix thoroughly until you have a very green, herb-loaded egg mixture — it should look far more herb than egg. Fold in the barberries and walnuts.",
+      "Heat the olive oil in an oven-safe non-stick frying pan (about 24cm) over a medium-high heat. When the oil is hot and shimmering, pour in the egg and herb mixture, spreading it evenly with a spatula. Let it cook on the hob for 3–4 minutes without touching it — listen for it sizzling and watch the edges set and turn a deep golden-brown. This bottom crust is everything: crisp, dark and slightly caramelised.",
+      "Transfer the pan to the preheated oven and bake for 12–15 minutes until the kuku is set all the way through — it should feel firm when you press the centre gently and not wobble. If you prefer a crisp top as well, switch on the grill (broiler) for the final 2–3 minutes. Remove from the oven and allow to cool in the pan for 5 minutes — it will firm up further as it rests.",
+      "While the kuku rests, make the salad. Toast the walnuts in a dry pan over medium heat for 3–4 minutes until golden and fragrant — watch them carefully as they can burn quickly. In a small bowl, whisk together the pomegranate molasses, olive oil and lemon juice with a pinch of salt. Toss the watercress, barberries and toasted walnuts together, then dress just before serving.",
+      "Run a spatula around the edges of the pan and carefully invert the kuku onto a large plate or board so the dark crust faces up — this is the traditional presentation. Cut into wedges like a cake. Serve warm or at room temperature alongside the barberry and walnut salad, a generous spoonful of cold Greek yoghurt, and warm flatbreads for scooping."
     ]
   }
 ];

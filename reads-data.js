@@ -1,19 +1,19 @@
 // reads-data.js
-// Auto-updated 2026-06-25 — do not edit manually
+// Auto-updated 2026-06-26 — do not edit manually
 
 var READS_DATA = {
-  date: "2026-06-25",
+  date: "2026-06-26",
   book: {
-    title: "The Idiot",
-    author: "Elif Batuman",
-    year: 2017,
-    genres: ["Literary Fiction", "Coming-of-Age", "Humour"],
-    desc: "Selin, a Turkish-American student, arrives at Harvard in 1995 and is immediately bewildered by language, identity, email, and the strange new territory of being in love with someone she can barely speak to honestly. Batuman writes with a deadpan intellectual wit that is genuinely unlike anyone else — the novel is both acutely funny and quietly devastating in its portrait of a young mind trying to make the world cohere. It follows Selin through a summer in Hungary teaching English to rural schoolchildren, a journey that is outwardly undramatic and inwardly enormous. The book wears its learning lightly: Dostoevsky, linguistics, and the philosophy of meaning flicker through a story that is, at its core, about what it feels like to be nineteen and full of perception you cannot yet use.",
-    whyRead: "A novel that captures the particular texture of thinking and not-quite-feeling better than almost anything else in recent fiction — read it if you\'ve ever suspected that being clever was its own form of being lost.",
-    rating: 3.8,
+    title: "The Diving Bell and the Butterfly",
+    author: "Jean-Dominique Bauby",
+    year: 1997,
+    genres: ["Memoir", "Literary Nonfiction", "Philosophy"],
+    desc: "In 1995, Jean-Dominique Bauby — editor-in-chief of French Elle — suffered a massive stroke that left him with locked-in syndrome, able to move only his left eyelid. He dictated this entire memoir by blinking as an assistant recited the alphabet, letter by painstaking letter. The result is not a tragedy but a luminous, darkly funny, and achingly beautiful meditation on memory, imagination, and the irreducible life of the mind. In fewer than 150 pages, Bauby conjures oysters, fashion, travel, fatherhood, and longing with a vividness that shames writers who have every physical freedom at their disposal.",
+    whyRead: "At a moment when so much noise competes for attention, this slim book is a reminder of what a single focused consciousness — stripped of almost everything — can still create and feel. It will rearrange your sense of what matters.",
+    rating: 4.2,
     ratingSource: "Goodreads",
     ratingCount: "120,000+",
-    coverUrl: "https://covers.openlibrary.org/b/id/8054401-L.jpg",
-    amazonUrl: "https://www.amazon.co.uk/dp/3596198216"
+    coverUrl: null,
+    amazonUrl: "https://www.amazon.co.uk/dp/1669384985"
   }
 };

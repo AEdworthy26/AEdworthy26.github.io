@@ -1,61 +1,61 @@
 // financial-news-data.js
-// Auto-updated 2026-06-25 — do not edit manually
+// Auto-updated 2026-06-26 — do not edit manually
 
 var FINANCIAL_NEWS = {
-  date: "2026-06-25",
+  date: "2026-06-26",
   main: {
-    title: "Micron\'s Blowout Forecast Reignites AI Trade, Lifting Global Stocks",
-    category: "Markets",
+    title: "Key Fed Inflation Gauge Rises to Three-Year High in May After Gas Prices Peaked",
+    category: "Economics",
     content: [
-      "Global equity markets surged Wednesday after Micron Technology delivered a blockbuster sales forecast that reignited investor confidence in the artificial intelligence trade. The strong outlook from one of the world\'s leading memory chipmakers sent stocks rebounding from a two-day losing streak, with gains rippling across markets from New York to Asia. The results served as a powerful reminder that demand for AI-related hardware remains robust, even as broader economic uncertainties continue to weigh on sentiment.",
-      "Micron\'s forecast was interpreted by analysts as a bellwether signal for the health of the broader AI supply chain, given that memory chips are a critical component in the data centers and accelerator hardware that power large language models and AI workloads. Investors had grown anxious over recent weeks that the AI spending boom might be cooling, making Micron\'s upbeat numbers all the more consequential for the sector. The news sent semiconductor stocks broadly higher, lifting indexes and restoring confidence among growth-oriented fund managers who had been trimming exposure.",
-      "Adding further fuel to the market rally, Brent crude oil erased all of the gains it had accumulated during the most recent period of geopolitical tension, declining sharply and easing cost pressures for energy-intensive industries. Lower oil prices act as a de facto tax cut for consumers and businesses alike, and the combination of a tech-driven earnings catalyst with falling energy costs proved a potent mix for bulls. Traders noted that the dual tailwind helped push risk appetite back toward levels seen earlier in the quarter.",
-      "The rally also coincided with a separate but related storyline developing in the memory chip space: South Korean giant SK Hynix is reportedly weighing a $30 billion U.S. stock listing, a move that analysts say could be a double-edged sword for Micron. While such a listing would increase investor awareness of the memory industry\'s strong fundamentals — benefiting the sector as a whole — it would also give institutional investors an alternative route to gaining exposure, potentially diverting flows that might otherwise go to Micron shares. The prospect has introduced a nuanced competitive dynamic into an otherwise celebratory day for the chipmaking industry.",
-      "Looking ahead, market participants are now turning their attention to the upcoming PCE inflation report, which carries significant implications for Federal Reserve policy. Some strategists are warning that hidden triggers within the data — including stubborn services inflation and residual tariff pass-through effects — could force the Fed to consider rate hikes rather than cuts, a scenario that would sharply unwind many of the gains made in recent sessions. For now, however, the mood on trading floors was decisively optimistic, with the Micron earnings beat providing the clearest evidence yet that the AI investment cycle still has meaningful momentum left to run."
+      "The Federal Reserve\'s preferred inflation measure surged to a three-year high in May, with consumer prices rising 4.1% from a year earlier, according to new data that has rattled financial markets and complicated the outlook for monetary policy. The jump was driven in significant part by peaked gas prices, which pushed the gauge — the Personal Consumption Expenditures index — to levels not seen since the post-pandemic price shock era. The reading represents a sharp acceleration that analysts say will almost certainly delay any near-term expectations of interest rate cuts from the Federal Reserve.",
+      "For investors and economists watching the Fed\'s every move, the data lands at a particularly sensitive moment. Policymakers have been walking a tightrope between keeping borrowing costs elevated enough to tame inflation and avoiding tipping the broader economy into a downturn. A 4.1% annual reading substantially above the Fed\'s 2% target suggests that tightrope has become considerably narrower, and that the central bank may need to hold rates higher for longer than markets had previously priced in.",
+      "Bond markets have already begun repricing rate-cut expectations in the wake of the report, with yields on short-duration Treasuries climbing as traders pushed back their forecasts for the first Fed easing. Equity markets, meanwhile, are contending with the dual pressure of tighter-for-longer monetary policy and the squeeze that higher borrowing costs place on corporate valuations. Growth and technology stocks, which are especially sensitive to interest rate movements, have borne a disproportionate share of the selling pressure.",
+      "The inflation data also carries significant implications for the real economy, as elevated price levels erode consumer purchasing power and squeeze household budgets. Rising costs at the gas pump tend to have an outsized psychological effect on consumer confidence, even when the underlying drivers — such as global supply dynamics — are transient. Should inflation prove sticky rather than a brief spike, the Federal Reserve faces the uncomfortable prospect of having to consider further rate hikes at a time when parts of the economy are already showing signs of stress.",
+      "The report adds a fresh layer of complexity to an already turbulent economic landscape in mid-2026. With the Fed\'s credibility tied closely to its inflation mandate, Chair Jerome Powell and his colleagues will face intense scrutiny at upcoming policy meetings to explain their path forward. Markets will now turn their attention to forthcoming employment data and any signals from Fed officials about whether the May spike is viewed internally as a temporary phenomenon or the beginning of a more persistent inflationary episode that demands a forceful policy response."
     ],
-    image: "https://images.unsplash.com/photo-1780413910217-efc536b1a7bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxNaWNyb24lNUN8ZW58MHwwfHx8MTc4MjM2MzgzMHww&ixlib=rb-4.1.0&q=80&w=1080",
-    source: "Bloomberg Markets",
-    sourceUrl: "https://www.bloomberg.com/news/articles/2026-06-24/us-stock-futures-surge-on-micron-s-strong-forecast-markets-wrap"
+    image: "https://i.guim.co.uk/img/media/5872d99a77dd8ea2e0114ad4b311b937bef25eba/440_0_3001_2401/master/3001.jpg?width=1200&quality=85&auto=format&fit=max&s=31c57aeaaf606032011d7e3cb51cb321",
+    source: "The Guardian",
+    sourceUrl: "https://www.theguardian.com/business/2026/jun/25/us-may-inflation-gauge-three-year-high"
   },
   secondary: [
     {
       id: "fn1",
-      title: "PCE Inflation Report Could Shock Markets With Hidden Rate-Hike Triggers",
-      summary: "Analysts warn that upcoming PCE data may contain under-the-radar inflation pressures that could force the Federal Reserve to raise rates and rattle Wall Street.",
+      title: "EasyJet Opens Talks With Castlelake After Rejecting £4.9bn Takeover Offer",
+      summary: "EasyJet has rejected a fourth £4.9bn takeover bid from US investment firm Castlelake but agreed to open its books in hopes of attracting a higher offer.",
       body: [
-        "The forthcoming PCE inflation report — the Federal Reserve\'s preferred gauge of price pressures — is being watched with unusual intensity, as strategists identify two largely overlooked triggers that could push the data above consensus expectations and upend current market positioning. Services inflation and lingering tariff pass-through costs are among the factors analysts fear could surprise to the upside, complicating the Fed\'s already delicate balancing act.",
-        "A hotter-than-expected PCE reading would challenge the prevailing market narrative that the next Fed move is a rate cut, potentially forcing a rapid repricing of interest rate expectations. Given that equities have rallied significantly on the assumption of an easing cycle, any signal of renewed Fed tightening could trigger a sharp and disorderly correction across asset classes."
+        "Britain\'s low-cost carrier EasyJet unanimously turned down the latest acquisition approach from Castlelake, valuing the airline at £4.9 billion, stating that the offer did not adequately reflect the company\'s true worth. Despite rejecting the bid, EasyJet has agreed to enter into talks and grant the US investment firm access to its financial books, a move that signals the airline is open to a deal — provided the price improves substantially.",
+        "The development marks a significant moment for the European aviation sector, where consolidation pressures have been building amid rising operational costs and fierce competition. For Castlelake, gaining access to EasyJet\'s internal financials represents a meaningful step forward in what has now become a prolonged pursuit, and investors will be watching closely to see whether a revised, higher bid emerges from the due diligence process."
       ],
-      image: "https://images.mktw.net/im-06997538",
-      source: "MarketWatch",
-      url: "https://www.marketwatch.com/story/inflation-is-about-more-than-oil-these-two-hidden-triggers-could-force-a-fed-rate-hike-d9fa393e?mod=mw_rss_topstories",
-      category: "Monetary Policy"
+      image: "https://i.guim.co.uk/img/media/74a50e1255d385a270a968ba54f756c5544906e8/1077_12_3871_3097/master/3871.jpg?width=1200&quality=85&auto=format&fit=max&s=0e6d100c26d9c748d805996c0bf6ad06",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/business/2026/jun/25/easyjet-opens-talks-with-castlelake-after-rejecting-4-9bn-takeover-offer",
+      category: "Mergers & Acquisitions"
     },
     {
       id: "fn2",
-      title: "BT Pension Scheme Takes £300 Million Hit on Thames Water Write-Off",
-      summary: "The BT pension scheme has crystallised a £300 million loss after writing off its 8.7% equity stake in debt-laden Thames Water, which is edging closer to nationalisation.",
+      title: "Apple Price Hikes Spark Asia Tech Selloff on Memory Cost Concerns",
+      summary: "Asian technology stocks slumped after Apple raised product prices, fuelling fears that rising component costs will dampen device demand and slow the AI-driven memory chip rally.",
       body: [
-        "The BT pension scheme has disclosed a £300 million loss stemming from its decision to write off its entire equity stake in Thames Water, the UK\'s largest water utility, which is buckling under a £20 billion debt pile. The loss was revealed in a presentation and reflects the near-total destruction of value in a company that was once considered a stable, income-generating infrastructure asset suitable for pension fund portfolios.",
-        "Thames Water\'s financial collapse has broader implications for institutional investors who piled into UK water utilities expecting regulated, predictable returns, and the looming prospect of nationalisation has rendered equity stakes effectively worthless. The episode is likely to prompt a reassessment of how pension trustees approach infrastructure investments, particularly in sectors subject to heavy regulatory oversight and political intervention."
+        "Apple\'s decision to raise prices across its product lineup sent shockwaves through Asian equity markets, triggering a broad selloff in technology stocks as investors grew alarmed about the knock-on effects for memory chip demand. The concern is that higher device prices could soften consumer appetite for electronics, ultimately undermining the sustained rally in memory chip valuations that has been a cornerstone of the AI investment thesis.",
+        "Asian stocks fell to a two-week low as the tech sector bore the brunt of the pressure, compounding an already volatile week for global markets. Analysts warned that if rising component costs are being passed on to consumers by a bellwether company like Apple, it may signal a broader margin squeeze across the hardware supply chain that stretches from Taiwan to South Korea."
       ],
-      image: "https://i.guim.co.uk/img/media/173c68b36056c420b5e87b7c83f0896a07ad3a0c/0_0_4583_3667/master/4583.jpg?width=1200&quality=85&auto=format&fit=max&s=50f4a34231dc860a24f640ec1bcad0a1",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/business/2026/jun/24/bt-pension-scheme-lost-300m-on-thames-water-stake",
-      category: "Corporate Finance"
+      image: "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ie5gT.1xCImA/v2/1200x-1.png",
+      source: "Bloomberg Markets",
+      url: "https://www.bloomberg.com/news/articles/2026-06-26/apple-price-hikes-spark-asia-tech-selloff-on-memory-cost-concern",
+      category: "Markets"
     },
     {
       id: "fn3",
-      title: "Uber Bets $500 Million on Robotaxi Partnerships as Waymo Rivalry Intensifies",
-      summary: "Uber is quietly committing hundreds of millions of dollars to lock in robotaxi supply deals as Waymo\'s rapid expansion threatens to cut the ride-hailing giant out of the autonomous vehicle market.",
+      title: "OpenAI Leans Toward Holding Up IPO Until Next Year",
+      summary: "OpenAI\'s advisers are urging CEO Sam Altman to delay the company\'s much-anticipated IPO until next year, citing SpaceX\'s share price volatility and ongoing financial challenges.",
       body: [
-        "Uber is deploying $500 million in strategic investments to secure robotaxi supply agreements with autonomous vehicle developers, in a bid to ensure it remains relevant as Waymo accelerates its commercial rollout across major U.S. cities. The company\'s approach is striking given that Uber itself builds no autonomous vehicles, making it entirely dependent on third-party technology partnerships to compete in what many consider the most transformative shift in transportation since the smartphone era.",
-        "The robotaxi race has attracted a diverse field of competitors — including Tesla, which is developing its own ride-hailing network around its self-driving hardware — but Uber\'s massive investment underscores the high stakes of being left behind. For investors, the key question is whether Uber\'s platform and rider network give it enough structural advantage to thrive as a middleman, or whether vertically integrated rivals like Waymo will eventually bypass it entirely."
+        "OpenAI, the artificial intelligence company behind ChatGPT, is increasingly leaning toward postponing its initial public offering until 2027, as advisers counsel caution in the wake of turbulent trading in SpaceX shares and unresolved financial pressures facing the startup. The decision reflects a broader recalibration among high-profile tech companies about the optimal timing for entering public markets amid uncertain investor sentiment.",
+        "The potential delay is likely to disappoint institutional investors who have been eagerly anticipating one of the most closely watched IPOs in recent memory, and it adds to a broader narrative of caution around blockbuster tech listings. For the AI sector, which has attracted enormous speculative capital, a delayed OpenAI debut could temper some of the froth in private market valuations and prompt a more sober reassessment of growth expectations."
       ],
-      image: "https://images.pexels.com/photos/27639789/pexels-photo-27639789.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      source: "MarketWatch",
-      url: "https://www.marketwatch.com/story/tesla-and-waymo-are-chasing-the-robotaxi-dream-but-the-company-spending-the-most-to-win-builds-no-cars-at-all-0d8682b9?mod=mw_rss_topstories",
-      category: "Technology & Markets"
+      image: "https://static01.nyt.com/images/2026/06/25/multimedia/25biz-openai-ipo-sam-flvk/25biz-openai-ipo-sam-flvk-mediumSquareAt3X.jpg",
+      source: "The New York Times",
+      url: "https://www.nytimes.com/2026/06/25/technology/openai-ipo-artificial-intelligence.html",
+      category: "Business"
     }
   ]
 };

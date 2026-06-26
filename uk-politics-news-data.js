@@ -1,60 +1,60 @@
 // uk-politics-news-data.js
-// Auto-updated 2026-06-25 — do not edit manually
+// Auto-updated 2026-06-26 — do not edit manually
 
 var UK_POLITICS_NEWS = {
-  date: "2026-06-25",
+  date: "2026-06-26",
   main: {
-    title: "Burnham on Course to Be PM, but Questions Remain Over His No 10 Operation",
+    title: "Burnham Could Become Labour Leader and Prime Minister by 17 July in Coronation Timeline",
     category: "Politics",
     content: [
-      "Andy Burnham is increasingly on course to become the next Prime Minister following Sir Keir Starmer\'s resignation as Labour leader, with his top team beginning to take shape. The Greater Manchester mayor has emerged as the overwhelming frontrunner to succeed Starmer, and attention has now shifted from whether he will secure the position to how he will govern once in Downing Street. Senior figures within the Labour movement and across Westminster are watching closely as the contours of a Burnham administration begin to come into view.",
-      "One of the most significant and immediately controversial appointments has been Burnham\'s selection of James Purnell as his incoming chief of staff. Purnell, a longstanding friend of Burnham and a former cabinet minister under Tony Blair, previously led Flint Global, an advisory firm whose clients included BP, Amazon, Jaguar Land Rover, and Uber, according to transparency records. The appointment has already drawn criticism from within Labour ranks, with one Labour MP describing it as a 'very bad sign', raising concerns about lobbying links and the direction a Burnham premiership might take.",
-      "Questions over personnel extend beyond the chief of staff role. It is understood that Chancellor Rachel Reeves would be offered a more junior cabinet role under a Burnham government, a significant demotion that signals the incoming prime minister\'s intention to reshape economic policy and place his own stamp firmly on the Treasury\'s direction. Reeves has been a central figure in the current Labour government, and her effective replacement at the top of economic policymaking will be one of the most closely watched decisions Burnham makes.",
-      "On fiscal policy, Burnham has sought to reassure markets and Labour moderates by insisting he will stick to the government\'s existing fiscal rules. However, pressure is already building from senior officials — including some within Number 10 itself — who are planning to lobby Burnham during access talks to revive the idea of 'war bonds' as a mechanism to fund higher defence spending, potentially allowing the Treasury to borrow more for military purposes. How Burnham navigates these competing pressures on public finances is expected to define the early months of his tenure.",
-      "Meanwhile, Burnham has spoken of establishing a so-called 'No 10 in the North', signalling his intention to maintain a visible presence in Manchester even as he moves into Downing Street — a move that would be symbolically significant for a politician who has built his brand on northern identity and devolution. Labour MPs are, however, reported to be under pressure from local party members who would prefer a full leadership contest rather than what is increasingly described as a coronation. Darren Jones, an ally of Starmer, has already ruled himself out of any contest, further clearing the path for Burnham\'s ascent."
+      "Andy Burnham, the former Mayor of Greater Manchester, is on course to become the next Labour leader and Prime Minister of the United Kingdom as early as 17 July, according to the party\'s emerging timetable for the leadership transition. The accelerated schedule is only possible because Burnham remains the sole Labour MP to have entered the race to succeed Sir Keir Starmer, who announced his resignation following a prolonged period of political instability. Should no other candidates come forward to challenge him, the party\'s rules would allow the contest to be resolved without a full membership vote, effectively handing Burnham the keys to Downing Street in a matter of weeks.",
+      "The prospect of a so-called 'coronation' has generated considerable unease among Labour MPs and grassroots members alike, with many feeling that the party\'s wider membership deserves a proper say in who leads them into the next general election. Sky News reports that Labour MPs are under significant pressure from their local constituency parties, with activists expressing frustration that democracy within the movement could be bypassed in favour of an expedient handover. The tension between parliamentary pragmatism and democratic legitimacy is shaping up to be one of the defining internal debates of this transitional period.",
+      "Despite the controversy surrounding the process, Burnham has moved quickly to project an image of stability and fiscal responsibility, publicly insisting that he will stick to the existing fiscal rules set out by Chancellor Rachel Reeves. He has sought to reassure financial markets and Labour\'s traditional supporters in business that there will be no sudden lurch in economic policy under his leadership. His positioning on the economy appears designed to neutralise any suggestion that a change in leadership signals a broader departure from the government\'s fiscal framework.",
+      "Behind the scenes, Burnham\'s team is already taking shape, with reports emerging that former Foreign Office permanent secretary Olly Robbins — who was among the most high-profile casualties of the Peter Mandelson vetting scandal — has held early exploratory talks about taking on a security-related role under the likely new prime minister. The involvement of senior civil service figures signals that Burnham\'s operation is preparing in earnest for government rather than simply for a leadership campaign. Culture Secretary Lisa Nandy has also broken ranks to join Burnham on the campaign trail, suggesting that momentum within Cabinet is building behind the frontrunner.",
+      "The speed and manner of Starmer\'s exit from Downing Street has prompted considerable soul-searching within the Labour Party and across the political commentariat. BBC Political Editor Chris Mason has drawn comparisons between Starmer\'s downfall and those of his predecessors Boris Johnson and Liz Truss, arguing that all three prime ministers ultimately lost the capacity to viably govern — a damning verdict on what was, just over a year ago, a landslide-winning administration. As Burnham prepares to inherit what many regard as a deeply challenging political environment, questions remain about whether a change of leader alone is sufficient to restore public confidence in a government that has struggled to translate its parliamentary majority into durable popular support.",
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/0878/live/3557e600-6fb6-11f1-8546-8f19e4fe30f4.jpg",
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/1036/live/3618f5c0-70ab-11f1-88b6-991d05fc2cf9.png",
     source: "BBC News",
-    sourceUrl: "https://www.bbc.co.uk/news/articles/cp3xv2j7gepo"
+    sourceUrl: "https://www.bbc.co.uk/news/articles/cnv9e18r2qyo?at_medium=RSS&at_campaign=rss"
   },
   secondary: [
     {
       id: "uk1",
-      title: "Badenoch Refuses to Apologise for Fiery PMQs Comments Following Starmer\'s Resignation",
-      summary: "Kemi Badenoch has flatly refused to say sorry for her language during a heated Prime Minister\'s Questions session, in which she attacked government ministers and Labour MPs in the wake of Sir Keir Starmer\'s resignation.",
+      title: "Home Secretary Mahmood in Extraordinary Standoff with Starmer Over Junior Minister\'s Future",
+      summary: "Shabana Mahmood is demanding the sacking of immigration minister Mike Tapp after he wrote an unauthorised article contradicting government policy, but Downing Street has refused to act.",
       body: [
-        "The Conservative leader used the PMQs session to go on the offensive, mocking Andy Burnham as little more than 'a pair of eyelashes and a black T-shirt' and claiming Labour MPs had been cheering Starmer\'s downfall despite what she called '400 knives' in the former leader\'s back. The remarks drew immediate controversy, with critics accusing Badenoch of lowering the tone of parliamentary debate at a moment of significant political transition.",
-        "A spokesperson for Badenoch subsequently confirmed she would 'absolutely not' be apologising for her comments, doubling down on her combative approach. Burnham himself responded to the jibe, indicating he was unfazed by the personal attack, and the exchange highlighted the sharp political battle lines already forming as the UK prepares for a change of prime minister."
+        "Home Secretary Shabana Mahmood has been locked in a remarkable public standoff with Downing Street after No 10 refused to immediately sack her junior minister, Mike Tapp, despite her insistence that he breached the ministerial code by writing an unauthorised article arguing that new settlement rules should not apply to overseas care workers. The dispute has exposed a significant fracture in an already weakened government, with the Home Secretary and the Prime Minister\'s office publicly at odds over a matter of ministerial discipline. The row is particularly striking given the fragile state of the Starmer administration in its final days.",
+        "The episode highlights the difficulties that can arise when senior ministers feel their authority is being undermined by Downing Street\'s reluctance to enforce discipline. For Mahmood, the issue goes beyond one junior minister\'s article — it touches on the fundamental question of whether she has the authority to run her own department without interference from No 10. The standoff is likely to add further to the sense of a government in its dying days, with internal tensions now spilling openly into the public domain."
       ],
-      image: "https://i.guim.co.uk/img/media/a179b09f0b021c68e438d4099efc37a532141efd/0_0_1666_1333/master/1666.jpg?width=1200&quality=85&auto=format&fit=max&s=f95ccc672cdad19ab721168fc5f7100a",
-      source: "BBC News",
-      url: "https://www.bbc.co.uk/news/articles/cx2jn1k4le8o?at_medium=RSS&at_campaign=rss",
+      image: "https://i.guim.co.uk/img/media/490925831b1a48c73cdae221eac2c0cca34570a1/0_0_5912_4727/master/5912.jpg?width=1200&quality=85&auto=format&fit=max&s=35ce52ecb6375fca45abaf1256596eae",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/politics/2026/jun/25/mahmood-in-standoff-with-starmer-over-sacking-of-her-junior-minister",
       category: "Politics"
     },
     {
       id: "uk2",
-      title: "Mahmood\'s Immigration and Asylum Bill Set to Go Before MPs Next Week",
-      summary: "Shabana Mahmood\'s controversial immigration and asylum bill, which includes plans for increased forced removals and stringent age checks on asylum claimants, is scheduled to come before MPs within days amid fears from refugee charities that it is being rushed through.",
+      title: "Robert Jenrick Says Questions About Nigel Farage\'s £5m Crypto Donation Are 'Legitimate'",
+      summary: "Reform UK\'s shadow chancellor has contradicted Nigel Farage by saying it is legitimate for journalists to scrutinise a £5 million personal donation the party leader received from a cryptocurrency billionaire.",
       body: [
-        "The legislation would introduce significant new powers to increase the forced removal of people refused asylum, place tighter limits on human rights law applications, and implement more stringent age verification checks for those claiming to be children. Refugee and humanitarian organisations have raised serious concerns, arguing the bill is being accelerated through Parliament without adequate scrutiny given the gravity of its provisions.",
-        "The bill represents one of the most consequential pieces of domestic legislation to come before Parliament during this period of political transition, and its passage through the Commons will be closely watched to see whether the government can maintain its majority at a moment of considerable internal Labour turbulence. Critics argue the rushed timetable risks enshrining harmful policies into law before their full implications have been properly debated."
+        "Robert Jenrick, Reform UK\'s shadow chancellor, has publicly broken with Nigel Farage by acknowledging that questions about the party leader\'s £5 million personal donation from a cryptocurrency billionaire are entirely legitimate — a direct contradiction of Farage\'s dismissive claim that the matter was 'none of your business.' Jenrick said voters and the media had every right to ask about the source and implications of such a substantial financial gift to the leader of a major political party. The rare public divergence from his party leader has raised eyebrows about the internal dynamics within Reform.",
+        "The donation saga represents a potentially serious reputational challenge for Reform UK at a moment when the party is positioning itself as a clean-break alternative to the established parties. The involvement of a cryptocurrency billionaire as the source of a multi-million pound personal donation to a party leader is likely to attract sustained scrutiny from political opponents and ethics watchdogs. Jenrick\'s willingness to validate that scrutiny publicly suggests there may be growing tensions within Reform over how to handle questions of financial transparency."
       ],
-      image: "https://images.pexels.com/photos/4425112/pexels-photo-4425112.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      image: "https://i.guim.co.uk/img/media/6386266400a7bd66a2ba48cf4d4f077bb2d5dd45/548_0_5484_4387/master/5484.jpg?width=1200&quality=85&auto=format&fit=max&s=25e2351b9c5d6c6c93208fbcb90fe5c1",
       source: "The Guardian",
-      url: "https://www.theguardian.com/uk-news/2026/jun/24/shabana-mahmood-immigration-and-asylum-bill-to-go-before-mps-next-week",
+      url: "https://www.theguardian.com/politics/2026/jun/25/robert-jenrick-questions-about-5m-donation-nigel-farage-legitimate",
       category: "Politics"
     },
     {
       id: "uk3",
-      title: "Peter Murrell\'s SNP Embezzlement Spending Revealed in Detail",
-      summary: "Items purchased by Peter Murrell using money embezzled from Scottish National Party funds have been revealed, including luxury goods such as Le Creuset ramekins, a £702 salt and pepper set, and matching Montblanc fountain pens in white and yellow gold.",
+      title: "Home Office Plans to Use Three More Military Bases to House Up to 3,750 Asylum Seekers",
+      summary: "The Home Office is seeking permission to house thousands of asylum seekers at three former military sites in Oxfordshire, Suffolk, and Yorkshire as it looks to reduce reliance on expensive hotel accommodation.",
       body: [
-        "The disclosure of what Murrell spent the misappropriated funds on paints a vivid picture of the personal enrichment at the heart of the scandal that has rocked the SNP in recent years. The itemised purchases, which range from designer kitchenware to high-end writing instruments, have drawn widespread condemnation and further damaged the reputation of the party he once led as chief executive.",
-        "The case has had lasting consequences for the SNP as a political force, contributing to the party\'s broader difficulties at both Holyrood and Westminster. The revelations continue to cast a long shadow over Scottish politics and raise ongoing questions about governance and financial oversight within one of the UK\'s major political parties."
+        "The Home Office has identified three former military bases — at Bicester in Oxfordshire, Barnham in Suffolk, and Linton-on-Ouse in Yorkshire — as potential sites to accommodate approximately 3,750 asylum seekers, subject to planning permission being granted. The move is part of a broader government strategy to cut the significant costs associated with housing asylum seekers in hotels, which has proved politically toxic and financially burdensome. Each of the proposed sites would need to undergo assessments before any transfers of asylum seekers could begin.",
+        "The use of military sites to house asylum seekers has been a recurring and contentious feature of UK immigration policy in recent years, often drawing protests from local communities and criticism from refugee support organisations who argue that such facilities are unsuitable for vulnerable people. The plan comes as the government faces mounting pressure on multiple fronts over its immigration policy, including the internal ministerial row over the ministerial code breach by immigration minister Mike Tapp. Whether the new sites will ultimately receive approval remains to be seen, but the announcement signals that the Home Office is pressing ahead with its cost-cutting agenda on asylum housing."
       ],
-      image: "https://images.unsplash.com/photo-1623475045709-8998060b23f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxQZXRlciUyME11cnJlbGwlNUN8ZW58MHwwfHx8MTc4MjM2MzczNXww&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "Sky News",
-      url: "https://news.sky.com/story/in-pictures-the-shopping-spree-peter-murrell-went-on-with-money-embezzled-from-snp-funds-13556803",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/5061/live/8ebf79a0-390c-11f1-9d5c-8ba507d7dbde.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.co.uk/news/articles/cvgjm61lkl4o?at_medium=RSS&at_campaign=rss",
       category: "Politics"
     }
   ]

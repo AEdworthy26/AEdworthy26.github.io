@@ -1,61 +1,61 @@
 // tech-news-data.js
-// Auto-updated 2026-06-25 — do not edit manually
+// Auto-updated 2026-06-26 — do not edit manually
 
 var TECH_NEWS = {
-  date: "2026-06-25",
+  date: "2026-06-26",
   main: {
-    title: "OpenAI and Broadcom Announce Custom Chip Designed for LLM Inference at Scale",
-    category: "AI & Hardware",
+    title: "IBM Hails New 'Block of Flats' Design Breakthrough for Ultra Tiny Chips",
+    category: "Hardware & Science",
     content: [
-      "OpenAI and Broadcom have jointly announced a new custom silicon chip specifically engineered for large language model inference at scale. The collaboration marks a significant step in OpenAI\'s long-term strategy to reduce its dependence on third-party GPU suppliers, most notably Nvidia, which has dominated the AI accelerator market. By designing silicon tailored to the particular demands of running — rather than training — LLMs, the two companies are targeting one of the most resource-intensive bottlenecks in modern AI deployment.",
-      "Inference, the process by which a trained AI model generates responses to user queries, is distinct from training and presents its own engineering challenges. While training a model requires enormous bursts of parallel computation, inference demands low latency, high throughput, and cost efficiency at a massive scale. The new chip from OpenAI and Broadcom is said to be purpose-built around these inference-specific requirements, potentially offering substantial gains in performance-per-watt compared to general-purpose GPUs.",
-      "The announcement comes amid an intensifying silicon race among AI companies scrambling to keep up with surging demand for generative AI services. Google has long developed its own Tensor Processing Units, Amazon has its Trainium and Inferentia lines, and Microsoft has been investing in custom AI silicon as well. OpenAI entering this space with a dedicated inference chip signals that the company views hardware control as essential to its competitive position and long-term unit economics.",
-      "Broadcom\'s role as a partner is significant given its deep expertise in custom ASIC design and its established relationships with major hyperscalers. The company has previously worked on custom silicon for Google\'s TPUs and brings substantial experience in taking AI chip concepts from architecture to mass production. For OpenAI, partnering with Broadcom rather than attempting to build a pure in-house chip design capability from scratch represents a pragmatic path to getting competitive silicon into production faster.",
-      "Industry analysts are likely to view this announcement as further evidence that the AI chip landscape is fragmenting away from a Nvidia-dominated monoculture. As the largest AI companies internalize more of their hardware stack, the economics of AI services could shift considerably, with lower inference costs potentially enabling new product categories and pricing models. Whether OpenAI\'s new chip delivers on its promise at scale remains to be seen, but the move firmly establishes the company as a serious player in the increasingly strategic world of AI hardware."
+      "IBM has announced what it describes as a landmark achievement in semiconductor engineering: the creation of the world\'s first known chip technology operating below the 1 nanometre threshold. The breakthrough represents a fundamental shift in how chips can be physically designed and manufactured, pushing the boundaries of what was long considered the practical limit of silicon-based computing. IBM has described the architecture using the analogy of a 'block of flats' design, suggesting a vertically stacked, highly compact arrangement that allows components to be packed more densely than ever before.",
+      "For decades, the semiconductor industry has operated under the shadow of Moore\'s Law, the observation that the number of transistors on a chip doubles roughly every two years. As transistors have shrunk to just a handful of atoms in size, engineers have faced increasingly severe physical and quantum mechanical constraints. IBM\'s sub-1-nanometre breakthrough suggests that at least one major player believes there is still meaningful headroom left to exploit, even as rivals explore alternative materials and three-dimensional chip stacking strategies.",
+      "The 'block of flats' metaphor IBM is using points to a vertically oriented design philosophy, where layers of circuitry are stacked atop one another much like floors in a multi-storey building. This approach allows the chip to achieve greater density without necessarily requiring each individual transistor to shrink further in its horizontal dimensions. It is a design philosophy that complements, rather than replaces, the ongoing push for smaller feature sizes, and could yield significant improvements in processing power and energy efficiency.",
+      "IBM has been candid that the technology is not yet ready for mass production, and it may be some years before consumers see devices powered by sub-1-nanometre chips. Translating a laboratory demonstration into a commercially viable manufacturing process is notoriously difficult and expensive, involving entirely new tooling, materials, and quality control challenges. Nevertheless, the announcement signals that IBM remains a serious contender in advanced chip research, a field increasingly dominated by TSMC, Samsung, and Intel.",
+      "The implications of this breakthrough, if it can be successfully scaled, are far-reaching for industries ranging from artificial intelligence to mobile computing and scientific simulation. Denser, more efficient chips would allow AI models to be trained and run at lower cost and with reduced energy consumption — a pressing concern as data centres consume an ever-growing share of global electricity. IBM\'s announcement is likely to intensify competition among chipmakers and research institutions worldwide, all racing to define the next generation of computing architecture."
     ],
-    image: "https://cdn.arstechnica.net/wp-content/uploads/2026/06/openai-broadcom-jalapeno-inference-chip-image-1152x648.webp",
-    source: "Ars Technica",
-    sourceUrl: "https://arstechnica.com/gadgets/2026/06/openai-and-broadcom-announce-chip-designed-for-llm-inference-at-scale/"
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/e645/live/ebbfb1a0-7071-11f1-9af3-ff9a7832a0f3.jpg",
+    source: "BBC News",
+    sourceUrl: "https://www.bbc.co.uk/news/articles/cvg7vpyn5pxo?at_medium=RSS&at_campaign=rss"
   },
   secondary: [
     {
       id: "tc1",
-      title: "Scientist Publishes Fresh Doubts Over Microsoft\'s Quantum Computing Claims",
-      summary: "A scientist has published new skepticism regarding Microsoft\'s Majorana chip research, reigniting debate over the tech giant\'s quantum computing milestones.",
+      title: "OpenAI to Delay GPT-5.6 Release After Trump Administration Request",
+      summary: "The Trump administration has asked OpenAI to stagger the release of its next major model, GPT-5.6, citing potential security concerns.",
       body: [
-        "Microsoft has faced renewed scrutiny after a scientist published fresh doubts about the validity of the company\'s claims surrounding its Majorana quantum chip. Despite consistent pushback from some experts in the quantum computing field, Microsoft has stood firmly by its research and the significance of its findings.",
-        "The controversy highlights the broader challenge of verifying extraordinary claims in quantum computing, a field where experimental results can be extraordinarily difficult to reproduce and interpret. The ongoing dispute raises important questions about transparency and peer review standards in cutting-edge tech research."
+        "OpenAI CEO Sam Altman informed employees that GPT-5.6 would be released in a limited preview form, granting access only to a small group of partners rather than the general public. The decision follows a request from the Trump administration, which raised apprehension about potential security issues associated with a broad public rollout.",
+        "The move marks an unusual degree of government involvement in the commercial release timeline of a major AI model, and raises broader questions about the relationship between the AI industry and federal oversight. It also underscores growing official awareness of the potential risks posed by frontier AI systems."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/823e/live/9bf6bfd0-5e9a-11f1-95ff-f5086c3b3d40.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.co.uk/news/articles/c05y9pl3ejmo?at_medium=RSS&at_campaign=rss",
-      category: "Quantum Computing"
+      image: "https://images.unsplash.com/photo-1675557009317-bb59e35aba82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxPcGVuQUklMjB0byUyMERlbGF5JTIwR1BULTUuNiUyMFJlbGVhc2UlMjBBZnRlciUyMFRydW1wJTIwQWRtaW5pc3RyYXRpb24lMjBSZXF1ZXN0fGVufDB8MHx8fDE3ODI0NTAyNzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "The Verge",
+      url: "https://www.theverge.com/ai-artificial-intelligence/957372/openai-will-delay-gpt-5-6-after-trump-administration-request",
+      category: "Artificial Intelligence"
     },
     {
       id: "tc2",
-      title: "Cerebras Stock Plunges After First Earnings Report Since IPO",
-      summary: "AI chipmaker Cerebras saw its stock tumble after its first post-IPO earnings report revealed a narrower gross margin forecast, alarming investors.",
+      title: "Microsoft Extends Windows 10 Support by Another Year",
+      summary: "Microsoft has added a further year to its Windows 10 extended update programme, as approximately a quarter of all PCs continue to run the ageing operating system.",
       body: [
-        "Cerebras, the AI chip company that recently went public, experienced a sharp stock decline following its debut earnings report, which included a forecast for narrower gross margins in its core business. CEO Andrew Feldman maintained that investors had misunderstood the margin outlook, but the explanation did little to calm markets on the day of the announcement.",
-        "The reaction underscores the high expectations and thin tolerance for uncertainty that surround AI hardware companies in the current investment climate. Cerebras has positioned itself as a challenger to Nvidia with its distinct wafer-scale chip architecture, but translating technical ambition into consistent profitability remains a key test for the young public company."
+        "With roughly 25 percent of the world\'s PCs still running Windows 10, Microsoft has opted to extend its extended update programme by an additional year, giving users and organisations more time before they must upgrade or lose security patch coverage. The decision reflects the practical reality that a significant portion of the global PC fleet has not yet made the transition to Windows 11.",
+        "The extension is likely to be welcomed by enterprise customers and institutions that face logistical or financial barriers to upgrading their hardware, as Windows 11 requires more modern system specifications. It also signals that Microsoft is willing to be pragmatic about its legacy operating system rather than forcing a hard cutoff that could leave millions of machines vulnerable."
       ],
-      image: "https://images.pexels.com/photos/7947742/pexels-photo-7947742.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      source: "TechCrunch",
-      url: "https://techcrunch.com/2026/06/24/cerebras-stock-plunges-after-earnings-as-ceo-says-margin-outlook-was-misunderstood/",
-      category: "AI & Hardware"
+      image: "https://cdn.arstechnica.net/wp-content/uploads/2022/10/microsoft-windows-1024x648.jpg",
+      source: "Ars Technica",
+      url: "https://arstechnica.com/gadgets/2026/06/microsoft-adds-another-year-to-windows-10-extended-update-program/",
+      category: "Software"
     },
     {
       id: "tc3",
-      title: "Meta Halts Worker Tracking Program It Had Launched for AI Training Data",
-      summary: "Meta has suspended a program that monitored employees' computer usage to gather AI training data, citing privacy concerns just two months after it began.",
+      title: "Patronus AI Raises $50M to Build 'Digital Worlds' That Stress-Test AI Agents",
+      summary: "Agent-testing startup Patronus AI, founded by former Meta AI researchers, has secured $50 million in funding to create simulated environments designed to rigorously evaluate the reliability of AI agents.",
       body: [
-        "Meta has shut down an internal initiative that tracked workers' computer activity with the goal of using that behavioral data to train artificial intelligence systems. The program had only been running for approximately two months before privacy concerns prompted the company to pull the plug.",
-        "The episode illustrates the growing tension between tech companies' insatiable appetite for high-quality AI training data and the privacy rights of the people — including their own employees — whose activities might supply it. It also raises broader questions about the lengths companies may consider going to in order to gain a competitive edge in AI development."
+        "Patronus AI is building so-called 'digital worlds' — elaborate simulated environments intended to push AI agents to their limits and expose weaknesses before they are deployed in real-world settings. The startup, founded by alumni of Meta\'s AI research division, is responding to surging demand from companies eager to ensure their AI agents behave safely and predictably.",
+        "The $50 million raise highlights the growing recognition that as AI agents take on more autonomous roles in business processes, robust testing infrastructure is becoming as important as the models themselves. Investors appear to share this view, with the company\'s backers describing demand as nearly insatiable."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/f1db/live/ef7d0940-6f28-11f1-adf9-6fa2b518a522.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.co.uk/news/articles/cq615g3z36po?at_medium=RSS&at_campaign=rss",
-      category: "AI & Privacy"
+      image: "https://images.pexels.com/photos/29393023/pexels-photo-29393023.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      source: "TechCrunch",
+      url: "https://techcrunch.com/2026/06/25/patronus-ai-lands-50m-to-build-digital-worlds-that-stress-test-ai-agents/",
+      category: "Artificial Intelligence"
     }
   ]
 };
