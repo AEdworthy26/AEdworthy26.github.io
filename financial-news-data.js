@@ -1,61 +1,61 @@
 // financial-news-data.js
-// Auto-updated 2026-06-26 — do not edit manually
+// Auto-updated 2026-06-27 — do not edit manually
 
 var FINANCIAL_NEWS = {
-  date: "2026-06-26",
+  date: "2026-06-27",
   main: {
-    title: "Key Fed Inflation Gauge Rises to Three-Year High in May After Gas Prices Peaked",
-    category: "Economics",
+    title: "Volkswagen Plans to Cut Up to 100,000 Jobs and Shut Plants Amid Chinese Competition",
+    category: "Corporate / Manufacturing",
     content: [
-      "The Federal Reserve\'s preferred inflation measure surged to a three-year high in May, with consumer prices rising 4.1% from a year earlier, according to new data that has rattled financial markets and complicated the outlook for monetary policy. The jump was driven in significant part by peaked gas prices, which pushed the gauge — the Personal Consumption Expenditures index — to levels not seen since the post-pandemic price shock era. The reading represents a sharp acceleration that analysts say will almost certainly delay any near-term expectations of interest rate cuts from the Federal Reserve.",
-      "For investors and economists watching the Fed\'s every move, the data lands at a particularly sensitive moment. Policymakers have been walking a tightrope between keeping borrowing costs elevated enough to tame inflation and avoiding tipping the broader economy into a downturn. A 4.1% annual reading substantially above the Fed\'s 2% target suggests that tightrope has become considerably narrower, and that the central bank may need to hold rates higher for longer than markets had previously priced in.",
-      "Bond markets have already begun repricing rate-cut expectations in the wake of the report, with yields on short-duration Treasuries climbing as traders pushed back their forecasts for the first Fed easing. Equity markets, meanwhile, are contending with the dual pressure of tighter-for-longer monetary policy and the squeeze that higher borrowing costs place on corporate valuations. Growth and technology stocks, which are especially sensitive to interest rate movements, have borne a disproportionate share of the selling pressure.",
-      "The inflation data also carries significant implications for the real economy, as elevated price levels erode consumer purchasing power and squeeze household budgets. Rising costs at the gas pump tend to have an outsized psychological effect on consumer confidence, even when the underlying drivers — such as global supply dynamics — are transient. Should inflation prove sticky rather than a brief spike, the Federal Reserve faces the uncomfortable prospect of having to consider further rate hikes at a time when parts of the economy are already showing signs of stress.",
-      "The report adds a fresh layer of complexity to an already turbulent economic landscape in mid-2026. With the Fed\'s credibility tied closely to its inflation mandate, Chair Jerome Powell and his colleagues will face intense scrutiny at upcoming policy meetings to explain their path forward. Markets will now turn their attention to forthcoming employment data and any signals from Fed officials about whether the May spike is viewed internally as a temporary phenomenon or the beginning of a more persistent inflationary episode that demands a forceful policy response."
+      "Germany\'s Volkswagen is reportedly planning one of the most dramatic restructurings in its long corporate history, with reports indicating the automaker is considering cuts of up to 100,000 jobs alongside reductions and eventual closures at some of its manufacturing plants. The scale of the proposed cuts would represent roughly double the staff reductions the company had previously announced, signalling a significant deepening of the crisis at Europe\'s largest carmaker. Volkswagen has declined to comment on the reports, which centre on a management presentation said to have been delivered at a board meeting.",
+      "The driving force behind the restructuring is the intensifying competitive pressure from Chinese electric vehicle manufacturers, who have rapidly captured market share both domestically in China — a market that has historically been crucial to VW\'s profitability — and increasingly in export markets around the world. Chinese automakers have been able to produce EVs at lower cost and with competitive technology, squeezing the margins of established Western brands that invested heavily in legacy combustion-engine infrastructure. For Volkswagen, which built much of its global success on its strong foothold in China, the erosion of that position has been particularly painful.",
+      "The potential job losses would send shockwaves through the German economy, where the automotive sector remains a cornerstone of industrial employment. VW is one of Germany\'s largest private-sector employers, and large-scale plant closures would have significant knock-on effects for suppliers, regional economies, and the broader German manufacturing base. Labour unions, which hold considerable power on VW\'s supervisory board under Germany\'s co-determination model, are expected to mount fierce resistance to any closure plans.",
+      "The restructuring also comes at a fraught moment for the broader European auto industry, which is navigating the costly transition to electric vehicles while simultaneously facing potential new tariff threats from the United States. European carmakers have been caught between the need to invest heavily in EV technology and the pressure to maintain short-term profitability for shareholders. Volkswagen\'s situation is widely seen as a bellwether for the challenges facing the entire continent\'s automotive sector as Chinese competition accelerates.",
+      "If the reported cuts proceed, they would rank among the largest single corporate restructurings in European industrial history. Analysts will be watching closely for any official confirmation from Volkswagen\'s management, as well as for indications of how the company plans to restructure its product lineup and geographic strategy going forward. The outcome of negotiations with unions and the supervisory board is likely to shape the final scope of the cuts, but the direction of travel appears unmistakably toward a leaner, significantly smaller Volkswagen than the world has known in recent decades."
     ],
-    image: "https://i.guim.co.uk/img/media/5872d99a77dd8ea2e0114ad4b311b937bef25eba/440_0_3001_2401/master/3001.jpg?width=1200&quality=85&auto=format&fit=max&s=31c57aeaaf606032011d7e3cb51cb321",
+    image: "https://i.guim.co.uk/img/media/9560e7e7a9e7ec3a5c5f814da363c74f541a3870/707_0_5000_4000/master/5000.jpg?width=1200&quality=85&auto=format&fit=max&s=4b03ce795ef09443dd8328d29c1d47c0",
     source: "The Guardian",
-    sourceUrl: "https://www.theguardian.com/business/2026/jun/25/us-may-inflation-gauge-three-year-high"
+    sourceUrl: "https://www.theguardian.com/business/2026/jun/26/vw-cut-jobs-shut-plants-volkswagen-china"
   },
   secondary: [
     {
       id: "fn1",
-      title: "EasyJet Opens Talks With Castlelake After Rejecting £4.9bn Takeover Offer",
-      summary: "EasyJet has rejected a fourth £4.9bn takeover bid from US investment firm Castlelake but agreed to open its books in hopes of attracting a higher offer.",
+      title: "Trump Threatens 100% Tariff on European Nations Over Tech Taxes",
+      summary: "President Trump has threatened to impose sweeping 100% tariffs on European countries that pursue digital services taxes targeting US technology firms, raising fresh fears of a transatlantic trade war just days after a US-EU trade deal was finalised.",
       body: [
-        "Britain\'s low-cost carrier EasyJet unanimously turned down the latest acquisition approach from Castlelake, valuing the airline at £4.9 billion, stating that the offer did not adequately reflect the company\'s true worth. Despite rejecting the bid, EasyJet has agreed to enter into talks and grant the US investment firm access to its financial books, a move that signals the airline is open to a deal — provided the price improves substantially.",
-        "The development marks a significant moment for the European aviation sector, where consolidation pressures have been building amid rising operational costs and fierce competition. For Castlelake, gaining access to EasyJet\'s internal financials represents a meaningful step forward in what has now become a prolonged pursuit, and investors will be watching closely to see whether a revised, higher bid emerges from the due diligence process."
+        "The threat, directed at what Trump described as 'numerous European countries' considering digital levies on US tech companies, represents a significant escalation in transatlantic trade tensions. The move came strikingly soon after European officials had announced the finalisation of a broader trade agreement with the United States, casting doubt on the durability of that deal and rattling markets sensitive to trade policy uncertainty.",
+        "A 100% tariff would effectively double the cost of European goods entering the US market and could provoke retaliatory measures from the EU, threatening billions of dollars in bilateral trade. Investors in both US technology stocks and European exporters will be watching closely for any formal announcement, as the scale of tariffs threatened would have substantial implications for corporate earnings on both sides of the Atlantic."
       ],
-      image: "https://i.guim.co.uk/img/media/74a50e1255d385a270a968ba54f756c5544906e8/1077_12_3871_3097/master/3871.jpg?width=1200&quality=85&auto=format&fit=max&s=0e6d100c26d9c748d805996c0bf6ad06",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/business/2026/jun/25/easyjet-opens-talks-with-castlelake-after-rejecting-4-9bn-takeover-offer",
-      category: "Mergers & Acquisitions"
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/41d0/live/53fe5940-71a0-11f1-91d4-ab93ad9f4654.jpg",
+      source: "The New York Times",
+      url: "https://www.nytimes.com/2026/06/26/business/economy/trump-tariffs-europe.html",
+      category: "Trade / Economics"
     },
     {
       id: "fn2",
-      title: "Apple Price Hikes Spark Asia Tech Selloff on Memory Cost Concerns",
-      summary: "Asian technology stocks slumped after Apple raised product prices, fuelling fears that rising component costs will dampen device demand and slow the AI-driven memory chip rally.",
+      title: "Software Stocks Surge as OpenAI Threat Weakens Following Staggered Model Release",
+      summary: "Shares in enterprise software companies including ServiceNow and Salesforce rallied sharply after OpenAI announced it would stagger the release of its latest AI model at the request of the US government, easing fears of imminent disruption to established software platforms.",
       body: [
-        "Apple\'s decision to raise prices across its product lineup sent shockwaves through Asian equity markets, triggering a broad selloff in technology stocks as investors grew alarmed about the knock-on effects for memory chip demand. The concern is that higher device prices could soften consumer appetite for electronics, ultimately undermining the sustained rally in memory chip valuations that has been a cornerstone of the AI investment thesis.",
-        "Asian stocks fell to a two-week low as the tech sector bore the brunt of the pressure, compounding an already volatile week for global markets. Analysts warned that if rising component costs are being passed on to consumers by a bellwether company like Apple, it may signal a broader margin squeeze across the hardware supply chain that stretches from Taiwan to South Korea."
+        "The news that OpenAI would limit the rollout of its GPT 5.6 model, rather than releasing it broadly, provided relief to investors in enterprise software companies who had feared that increasingly powerful AI tools could rapidly displace traditional software vendors. ServiceNow, Salesforce, and peers saw meaningful gains as markets interpreted the delay as breathing room for incumbents to adapt and integrate AI capabilities into their own offerings.",
+        "Oracle notably missed out on the broader sector rally, as analysts pointed to its cloud-infrastructure business being closely tied to OpenAI\'s commercial success — meaning the staggered release represents a more ambiguous development for that company. The episode highlights the complex interdependencies forming across the technology sector as AI development accelerates and government oversight begins to shape the pace of deployment."
       ],
-      image: "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ie5gT.1xCImA/v2/1200x-1.png",
-      source: "Bloomberg Markets",
-      url: "https://www.bloomberg.com/news/articles/2026-06-26/apple-price-hikes-spark-asia-tech-selloff-on-memory-cost-concern",
-      category: "Markets"
+      image: "https://images.mktw.net/im-701755",
+      source: "MarketWatch",
+      url: "https://www.marketwatch.com/story/servicenow-salesforce-and-other-software-stocks-surge-as-the-openai-threat-weakens-bb1eacfb?mod=mw_rss_topstories",
+      category: "Markets / Technology"
     },
     {
       id: "fn3",
-      title: "OpenAI Leans Toward Holding Up IPO Until Next Year",
-      summary: "OpenAI\'s advisers are urging CEO Sam Altman to delay the company\'s much-anticipated IPO until next year, citing SpaceX\'s share price volatility and ongoing financial challenges.",
+      title: "Oil Prices Jump in After-Hours Trading After U.S. Confirms Retaliatory Strike on Iran",
+      summary: "Oil futures, which had settled lower for a third consecutive weekly loss, spiked in extended trading after the US military confirmed a retaliatory strike on Iran, reigniting concerns about supply disruptions in a critical global shipping corridor.",
       body: [
-        "OpenAI, the artificial intelligence company behind ChatGPT, is increasingly leaning toward postponing its initial public offering until 2027, as advisers counsel caution in the wake of turbulent trading in SpaceX shares and unresolved financial pressures facing the startup. The decision reflects a broader recalibration among high-profile tech companies about the optimal timing for entering public markets amid uncertain investor sentiment.",
-        "The potential delay is likely to disappoint institutional investors who have been eagerly anticipating one of the most closely watched IPOs in recent memory, and it adds to a broader narrative of caution around blockbuster tech listings. For the AI sector, which has attracted enormous speculative capital, a delayed OpenAI debut could temper some of the froth in private market valuations and prompt a more sober reassessment of growth expectations."
+        "The confirmation of a US military strike on Iran immediately pushed crude prices higher in after-hours markets, as traders priced in the risk of escalating conflict near the Strait of Hormuz, through which a significant share of the world\'s seaborne oil supply passes. Analysts had already flagged that sluggish tanker traffic through the strait could send prices soaring if tensions deteriorated further, and the strike confirmation appeared to validate those concerns.",
+        "Prior to the late-session move, oil had been on track for a third straight week of losses, reflecting broader concerns about demand weakness and ample global supply. The sudden geopolitical jolt serves as a reminder of how quickly energy markets can reverse course when Middle East tensions flare, with significant downstream implications for inflation, transportation costs, and the earnings of both energy producers and consumer-facing businesses."
       ],
-      image: "https://static01.nyt.com/images/2026/06/25/multimedia/25biz-openai-ipo-sam-flvk/25biz-openai-ipo-sam-flvk-mediumSquareAt3X.jpg",
-      source: "The New York Times",
-      url: "https://www.nytimes.com/2026/06/25/technology/openai-ipo-artificial-intelligence.html",
-      category: "Business"
+      image: "https://images.mktw.net/im-82680955",
+      source: "MarketWatch",
+      url: "https://www.marketwatch.com/story/oil-heads-for-another-losing-week-but-analyst-warns-sluggish-strait-of-hormuz-traffic-could-send-it-soaring-again-80ab9ba8?mod=mw_rss_topstories",
+      category: "Commodities / Energy"
     }
   ]
 };

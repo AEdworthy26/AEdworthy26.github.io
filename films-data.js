@@ -1,18 +1,18 @@
 // films-data.js
-// Auto-updated 2026-06-26 — do not edit manually
+// Auto-updated 2026-06-27 — do not edit manually
 
 var FILMS_DATA = {
-  date: "2026-06-26",
+  date: "2026-06-27",
   film: {
-    title: "Sweet Smell of Success",
-    director: "Alexander Mackendrick",
-    year: 1957,
-    genres: ["Drama", "Noir", "Crime"],
-    desc: "A razor-sharp noir set in the glittering, predatory world of late-night Manhattan, where sycophantic press agent Sidney Falco desperately schemes to please the all-powerful gossip columnist J.J. Hunsecker. Burt Lancaster plays Hunsecker as a cold, monolithic force of corrupt authority, while Tony Curtis delivers one of cinema\'s great against-type performances as the slippery, self-loathing Falco. James Wong Howe\'s breathtaking black-and-white cinematography turns midcentury New York into a place of menace and seduction, all neon and shadow. The dialogue, co-written by Clifford Odets and Ernest Lehman, crackles with a poisonous wit that has never been matched — every line feels like a knife being sharpened. It is a film about power, compromise, and moral rot that feels just as urgent and unsettling today as it did on release.",
-    cast: ["Burt Lancaster", "Tony Curtis", "Susan Harrison"],
-    rating: 97,
+    title: "The Housemaid",
+    director: "Kim Ki-young",
+    year: 1960,
+    genres: ["Thriller", "Drama", "Horror"],
+    desc: "A piano teacher\'s upwardly mobile family hires a young seamstress as a live-in housekeeper, setting off a slow-burning spiral of obsession, manipulation, and class warfare that feels utterly modern despite its age. Kim Ki-young directs with a fevered, almost expressionist intensity — the family\'s two-story home becomes a pressure cooker where desire and social anxiety curdle into something genuinely terrifying. The film is wildly unpredictable in its plotting, lurching from domestic melodrama into grand guignol without losing a single step, anchored by a lead performance from Lee Eun-shim that is both pathetic and monstrous in equal measure. Bong Joon-ho has openly cited it as a towering influence on Parasite, and watching it you can see exactly why — it understands that a house is never just a house. Restored and re-evaluated, it stands as one of the great works of Korean cinema and one of world cinema\'s most undersung masterpieces.",
+    cast: ["Kim Jin-kyu", "Ju Jeung-ryu", "Lee Eun-shim"],
+    rating: 98,
     ratingSource: "Rotten Tomatoes",
-    ratingExtra: "Selected for the National Film Registry",
-    posterUrl: "https://upload.wikimedia.org/wikipedia/commons/5/57/Sweet_Smell_of_Success_%281957_poster%29.jpg"
+    ratingExtra: "Restored by the Korean Film Archive",
+    posterUrl: "https://upload.wikimedia.org/wikipedia/commons/e/ec/The_Housemaid_%281960%29.jpg"
   }
 };

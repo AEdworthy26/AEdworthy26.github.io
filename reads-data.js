@@ -1,19 +1,19 @@
 // reads-data.js
-// Auto-updated 2026-06-26 — do not edit manually
+// Auto-updated 2026-06-27 — do not edit manually
 
 var READS_DATA = {
-  date: "2026-06-26",
+  date: "2026-06-27",
   book: {
-    title: "The Diving Bell and the Butterfly",
-    author: "Jean-Dominique Bauby",
-    year: 1997,
-    genres: ["Memoir", "Literary Nonfiction", "Philosophy"],
-    desc: "In 1995, Jean-Dominique Bauby — editor-in-chief of French Elle — suffered a massive stroke that left him with locked-in syndrome, able to move only his left eyelid. He dictated this entire memoir by blinking as an assistant recited the alphabet, letter by painstaking letter. The result is not a tragedy but a luminous, darkly funny, and achingly beautiful meditation on memory, imagination, and the irreducible life of the mind. In fewer than 150 pages, Bauby conjures oysters, fashion, travel, fatherhood, and longing with a vividness that shames writers who have every physical freedom at their disposal.",
-    whyRead: "At a moment when so much noise competes for attention, this slim book is a reminder of what a single focused consciousness — stripped of almost everything — can still create and feel. It will rearrange your sense of what matters.",
-    rating: 4.2,
+    title: "The Periodic Table",
+    author: "Primo Levi",
+    year: 1975,
+    genres: ["Memoir", "Science", "Literary Fiction"],
+    desc: "Primo Levi structures his autobiography around the elements of the periodic table, using each one — argon, iron, gold, carbon — as a lens through which to examine a life lived in chemistry, in the shadow of Auschwitz, and in the endlessly surprising texture of the physical world. The result is one of the strangest and most beautiful books ever written: part science writing, part Holocaust testimony, part fable, and entirely unlike anything else. Levi writes with a precision and warmth that transforms laboratory benches and chemical reactions into profound moral and philosophical territory, never letting the reader forget that matter and meaning are inseparable. Saul Bellow called it 'a necessary book,' and the Royal Institution once voted it the best science book ever written.",
+    whyRead: "At a moment when the borders between disciplines feel more contested than ever, Levi shows how a scientific mind and a humane imagination are not opposites but partners — this book is quietly, devastatingly essential.",
+    rating: 4.3,
     ratingSource: "Goodreads",
-    ratingCount: "120,000+",
-    coverUrl: null,
-    amazonUrl: "https://www.amazon.co.uk/dp/1669384985"
+    ratingCount: "50,000+",
+    coverUrl: "https://covers.openlibrary.org/b/id/3198953-L.jpg",
+    amazonUrl: "https://www.amazon.co.uk/dp/071812636X"
   }
 };

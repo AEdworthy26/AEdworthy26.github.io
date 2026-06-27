@@ -1,60 +1,60 @@
 // us-politics-news-data.js
-// Auto-updated 2026-06-26 — do not edit manually
+// Auto-updated 2026-06-27 — do not edit manually
 
 var US_POLITICS_NEWS = {
-  date: "2026-06-26",
+  date: "2026-06-27",
   main: {
-    title: "Trump Asks Congress for Billions for Iran War Amid Republican Tensions",
+    title: "5 Million Have Dropped ACA Insurance After Trump and the GOP Let Prices Skyrocket",
     category: "Politics",
     content: [
-      "President Donald Trump has formally asked Congress to approve billions of dollars in spending related to the Iran war, setting up what promises to be a bruising legislative battle on Capitol Hill. The request comes at a politically sensitive moment, as Trump is simultaneously navigating tensions with members of his own Republican Party over the conflict and its costs. The administration\'s push for the funding reflects the broader financial demands of military engagement and its aftermath, even as diplomatic efforts are underway.",
-      "The budget request faces significant headwinds, with some Republican lawmakers voicing skepticism about committing further federal resources to the Iran conflict. The intra-party friction underscores the fragile unity within the GOP as Trump tries to consolidate support for his foreign and fiscal priorities at the same time. Republican dissent, even if limited, complicates the math in a Congress where the administration can afford few defections on major votes.",
-      "The request is intertwined with Trump\'s broader political calculus following the Iran war, including efforts to shore up domestic constituencies who have felt economic pain as a result of the conflict. NPR has reported that Trump is separately working to woo American farmers, proposing that Iran use unfrozen funds to purchase U.S. agricultural products — a signal of where the White House sees its political vulnerabilities. The farming community has been a core component of Trump\'s electoral coalition, and the administration is eager to demonstrate tangible benefits from its Iran policy.",
-      "Secretary of State Marco Rubio has been dispatched to reassure Arab Gulf leaders that the United States is not cutting them out of ongoing negotiations with Tehran, a diplomatic side effort that adds further complexity to the domestic debate over war funding. The Gulf states have expressed concern about the direction of U.S.-Iran talks, and Rubio\'s outreach is intended to prevent regional allies from concluding that Washington is charting a unilateral course. The diplomatic maneuvering abroad mirrors the political maneuvering at home, where the administration is trying to hold together a coalition of supporters with sometimes competing interests.",
-      "Congressional leaders must now decide how to handle the funding request, weighing the political risks of opposing a wartime president against the fiscal concerns of their constituents. The debate is expected to dominate the legislative agenda in the coming weeks, with committee hearings and floor debates likely to surface sharp divisions both between and within the parties. How Congress ultimately responds will offer a critical test of Trump\'s ability to lead his party through a period of significant international and domestic upheaval."
+      "Approximately 5 million Americans have lost their Affordable Care Act health insurance coverage following a dramatic surge in premiums, according to new reporting from NPR. The drop in enrollment is directly tied to the expiration or rollback of federal subsidies that had previously kept marketplace plans affordable for millions of low- and middle-income Americans. The scale of the coverage loss represents one of the most significant rollbacks of the ACA since the law was passed in 2010.",
+      "The mechanism behind the coverage loss centers on what insurers and policy analysts track as 'effectuated enrollment' — the number of people who sign up for a plan and then actually pay their first premium. That number has fallen far more sharply this year than in any previous year, a signal that sticker shock is driving people away from plans they technically selected but ultimately could not afford. Health policy experts say the spike in premiums is a predictable consequence of Congress allowing enhanced subsidy provisions to lapse without replacement.",
+      "Trump administration officials have pushed back on that characterization, attributing the enrollment collapse not to unaffordability but to fraudulent sign-ups that have now been purged from the system. This explanation aligns with a broader White House narrative that past enrollment figures were artificially inflated by bad actors exploiting the subsidy system. However, independent health policy experts interviewed by NPR disputed this framing, arguing that the data pattern is far more consistent with cost-driven attrition than with fraud cleanup.",
+      "The political stakes of the ACA debate remain enormous heading into the 2026 midterm elections. Republicans have long sought to dismantle or restructure the ACA, while Democrats built much of their electoral success in the 2018 and 2022 cycles on defending healthcare coverage. With 5 million people now uninsured who were previously covered, Democrats are likely to make this a centerpiece issue on the campaign trail, particularly in suburban districts where healthcare access polls as a top voter concern.",
+      "The situation also sheds light on the broader tension within Republican governance between ideological opposition to the ACA and the political reality that millions of their own constituents rely on it for coverage. Some GOP moderates have quietly expressed concern about the optics of a large-scale coverage loss becoming visible to voters before November. For now, the Trump administration appears committed to its fraud-based explanation, even as health economists warn that without subsidy restoration, premiums will likely continue rising and enrollment will continue to fall."
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/6509/live/094ddba0-702e-11f1-86a5-c78e0086fe7e.jpg",
-    source: "BBC News",
-    sourceUrl: "https://www.bbc.co.uk/news/articles/c1eydwldzdjo?at_medium=RSS&at_campaign=rss"
+    image: "https://images.unsplash.com/photo-1603275217764-0c25d8b5132d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHw1JTIwTWlsbGlvbiUyMEhhdmUlMjBEcm9wcGVkJTIwQUNBJTIwSW5zdXJhbmNlJTIwQWZ0ZXIlMjBUcnVtcCUyMGFuZCUyMHRoZSUyMEdPUCUyMExldCUyMFByaWNlcyUyMFNreXJvY2tldHxlbnwwfDB8fHwxNzgyNTM2NTc5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    source: "NPR",
+    sourceUrl: "https://www.npr.org/2026/06/26/nx-s1-5860746/aca-health-insurance-subsidies-rates-premiums"
   },
   secondary: [
     {
       id: "us1",
-      title: "Federal Judge Blocks Trump\'s Order to Restrict Mail-In Voting",
-      summary: "A federal judge in Boston has blocked key parts of President Trump\'s executive order aimed at limiting voting by mail, with the administration expected to appeal.",
+      title: "Supreme Court Rules Migrants Cannot Apply for Asylum from Mexico Side of Border",
+      summary: "The Supreme Court ruled 6-3 that migrants standing on the Mexican side of the border are not entitled to apply for asylum, clearing the way for the Trump administration to resume turning back asylum seekers before they enter the United States.",
       body: [
-        "A federal judge in Boston issued a ruling blocking significant portions of President Trump\'s executive order that sought to restrict mail-in voting across the country, dealing a legal setback to one of the administration\'s signature election policy initiatives. The blocked measures included a Postal Service proposal that would have withheld ballot delivery in states that did not turn over voter registration lists to the federal government. The Trump administration swiftly indicated it plans to appeal the ruling, signaling that the legal fight over mail-in voting is far from over.",
-        "The decision adds to a growing body of court challenges against Trump\'s sweeping efforts to reshape how Americans vote, which the administration argues are necessary to ensure election integrity. Critics, including voting rights advocates, contend the measures amount to voter suppression that disproportionately impacts certain communities. The case is expected to work its way through the appellate courts, with the possibility of eventually reaching the Supreme Court."
+        "In a significant 6-3 decision, the Supreme Court ruled that migrants do not have a legal right to apply for asylum while still standing on the Mexican side of the U.S. border, handing the Trump administration a major victory in its ongoing effort to restrict asylum access. The ruling effectively clears federal agents to resume turning back asylum seekers at the border before they physically enter the country, a practice that had been legally contested.",
+        "The decision carries sweeping implications for U.S. immigration policy and the thousands of migrants who gather at the southern border hoping to present asylum claims. Critics of the ruling argue it guts core protections for people fleeing persecution, while the administration argues the policy is necessary to manage border security and deter illegal crossings."
       ],
-      image: "https://images.unsplash.com/photo-1658958327132-a80f8a9409fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxGZWRlcmFsJTIwSnVkZ2UlMjBCbG9ja3MlMjBUcnVtcCU1Q3xlbnwwfDB8fHwxNzgyNDUwMTkzfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "NPR",
-      url: "https://www.npr.org/2026/06/25/nx-s1-5844576/trump-mail-in-voting-order",
+      image: "https://images.unsplash.com/photo-1624153754177-1971488d499a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTdXByZW1lJTIwQ291cnQlMjBSdWxlcyUyME1pZ3JhbnRzJTIwQ2Fubm90JTIwQXBwbHklMjBmb3IlMjBBc3lsdW0lMjBmcm9tJTIwTWV4aWNvJTIwU2lkZSUyMG9mJTIwQm9yZGVyfGVufDB8MHx8fDE3ODI1MzY1ODB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "Washington Post",
+      url: "https://www.washingtonpost.com/politics/2026/06/25/migrants-not-entitled-apply-asylum-while-standing-mexico-side-border-supreme-court-rules/",
       category: "Politics"
     },
     {
       id: "us2",
-      title: "Supreme Court Allows Trump to End Protected Status for Haitian and Syrian Immigrants",
-      summary: "The Supreme Court has ruled that the Trump administration may proceed with ending Temporary Protected Status for hundreds of thousands of Haitian and Syrian immigrants living in the United States.",
+      title: "Trump Slams Former National Security Adviser John Bolton After Guilty Plea",
+      summary: "President Trump publicly attacked former national security adviser John Bolton on Truth Social after Bolton pleaded guilty to improperly retaining sensitive White House materials, expressing hope that Bolton would be 'dealt with harshly.'",
       body: [
-        "The Supreme Court handed the Trump administration a major immigration victory, ruling that it may terminate Temporary Protected Status for large numbers of Haitian and Syrian immigrants who have been living legally in the United States for years under the humanitarian protection program. The decision opens the path for the administration to initiate deportation proceedings against those whose status is revoked, a move that immigrant advocacy groups warned would be deeply disruptive to established communities. The ruling represents a significant judicial endorsement of the White House\'s aggressive immigration agenda.",
-        "Temporary Protected Status has historically been granted to nationals of countries experiencing ongoing armed conflict, environmental disasters, or other extraordinary conditions that make safe return impossible. The Trump administration had argued it had broad executive authority to rescind such designations, and the Court\'s ruling affirms that position. The decision is likely to intensify political debate over immigration enforcement and the treatment of long-settled immigrant communities across the country."
+        "President Trump took to Truth Social to lambaste his former national security adviser John Bolton following Bolton\'s guilty plea to charges of improperly retaining sensitive materials from his time in the White House. Trump called Bolton 'very dumb, unbalanced, and unskilled' and wrote that he hoped Bolton would be 'dealt with harshly,' signaling no sympathy for the former official despite their once-close working relationship.",
+        "The guilty plea and Trump\'s subsequent reaction underscore the deeply fractured relationship between the president and several of his former senior national security officials, many of whom have become vocal critics of his administration. Bolton has previously written critically about Trump, making the president\'s public expression of satisfaction at his legal troubles part of a long-running personal and political feud."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/d05e/live/f87354b0-70b7-11f1-b1da-a3a610594805.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.co.uk/news/articles/c4g8ym422lko?at_medium=RSS&at_campaign=rss",
+      image: "https://thehill.com/wp-content/uploads/sites/2/2026/03/John-Bolton-Donald-Trump-03.20.png?w=900",
+      source: "The Hill",
+      url: "https://thehill.com/homenews/administration/5943575-trump-rips-former-national-security-adviser-after-guilty-plea-hopefully-he-will-be-dealt-with-harshly/",
       category: "Politics"
     },
     {
       id: "us3",
-      title: "Elon Musk Ordered to Give Deposition in Alleged 'Vote Buying' Election Scheme",
-      summary: "A federal judge has ordered Elon Musk to testify under oath in two cases accusing him of defrauding voters in swing states ahead of the 2024 general election.",
+      title: "Pete Buttigieg and His Children Subjected to False CPS and Police Report",
+      summary: "Former Transportation Secretary and potential 2028 presidential contender Pete Buttigieg revealed that his family was subjected to a false anonymous tip that triggered a police and Child Protective Services investigation, briefly separating him from his twin children.",
       body: [
-        "U.S. Magistrate Judge Susan Hightower of the Western District of Texas ordered Tesla CEO and prominent Trump ally Elon Musk to sit for a deposition in two separate fraud lawsuits that allege he engaged in a scheme to effectively buy votes in key swing states before the 2024 presidential election. The cases center on Musk\'s America PAC and its activities during the campaign, with plaintiffs alleging that cash giveaways to registered voters constituted fraudulent conduct. The court order marks a significant escalation in the legal jeopardy facing Musk related to his high-profile political activities.",
-        "Musk played an unusually visible and financially significant role in supporting Donald Trump\'s 2024 presidential campaign, deploying hundreds of millions of dollars through his political action committee and appearing at rallies alongside the candidate. The vote-buying allegations, if proven, could have serious legal consequences for Musk and raise broader questions about the boundaries of political spending. The deposition is expected to draw intense public and media scrutiny given Musk\'s continued prominence in Trump\'s political orbit."
+        "Pete Buttigieg publicly shared that his family was targeted by a false anonymous report that brought police and Child Protective Services to his home, resulting in a temporary separation from his twin children that he described as among the darkest hours of his life. The incident, which NPR reported as a form of 'swatting,' highlights the escalating harassment faced by prominent political figures and their families.",
+        "Buttigieg is widely considered a potential candidate for the 2028 Democratic presidential primary, and the incident is drawing attention to the vulnerability of political figures to bad-faith weaponization of law enforcement and social services. The false report raises broader questions about accountability for those who misuse emergency and welfare systems to target public officials."
       ],
-      image: "https://thehill.com/wp-content/uploads/sites/2/2026/06/Musk_061226_Shapero_AP_Mark-Schiefelbein.jpg?w=900",
-      source: "The Hill",
-      url: "https://thehill.com/regulation/court-battles/5941842-musk-america-pac-lawsuit/",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/e09b/live/8c1df580-71bc-11f1-8e1d-bbbb1017d210.jpg",
+      source: "NPR",
+      url: "https://www.npr.org/2026/06/26/nx-s1-5872821/pete-buttigieg-cps-police-swatting",
       category: "Politics"
     }
   ]

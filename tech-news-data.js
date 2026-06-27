@@ -1,61 +1,61 @@
 // tech-news-data.js
-// Auto-updated 2026-06-26 — do not edit manually
+// Auto-updated 2026-06-27 — do not edit manually
 
 var TECH_NEWS = {
-  date: "2026-06-26",
+  date: "2026-06-27",
   main: {
-    title: "IBM Hails New 'Block of Flats' Design Breakthrough for Ultra Tiny Chips",
-    category: "Hardware & Science",
+    title: "Trump Administration Allows Anthropic to Release Mythos AI Model to Select US Organizations",
+    category: "Artificial Intelligence",
     content: [
-      "IBM has announced what it describes as a landmark achievement in semiconductor engineering: the creation of the world\'s first known chip technology operating below the 1 nanometre threshold. The breakthrough represents a fundamental shift in how chips can be physically designed and manufactured, pushing the boundaries of what was long considered the practical limit of silicon-based computing. IBM has described the architecture using the analogy of a 'block of flats' design, suggesting a vertically stacked, highly compact arrangement that allows components to be packed more densely than ever before.",
-      "For decades, the semiconductor industry has operated under the shadow of Moore\'s Law, the observation that the number of transistors on a chip doubles roughly every two years. As transistors have shrunk to just a handful of atoms in size, engineers have faced increasingly severe physical and quantum mechanical constraints. IBM\'s sub-1-nanometre breakthrough suggests that at least one major player believes there is still meaningful headroom left to exploit, even as rivals explore alternative materials and three-dimensional chip stacking strategies.",
-      "The 'block of flats' metaphor IBM is using points to a vertically oriented design philosophy, where layers of circuitry are stacked atop one another much like floors in a multi-storey building. This approach allows the chip to achieve greater density without necessarily requiring each individual transistor to shrink further in its horizontal dimensions. It is a design philosophy that complements, rather than replaces, the ongoing push for smaller feature sizes, and could yield significant improvements in processing power and energy efficiency.",
-      "IBM has been candid that the technology is not yet ready for mass production, and it may be some years before consumers see devices powered by sub-1-nanometre chips. Translating a laboratory demonstration into a commercially viable manufacturing process is notoriously difficult and expensive, involving entirely new tooling, materials, and quality control challenges. Nevertheless, the announcement signals that IBM remains a serious contender in advanced chip research, a field increasingly dominated by TSMC, Samsung, and Intel.",
-      "The implications of this breakthrough, if it can be successfully scaled, are far-reaching for industries ranging from artificial intelligence to mobile computing and scientific simulation. Denser, more efficient chips would allow AI models to be trained and run at lower cost and with reduced energy consumption — a pressing concern as data centres consume an ever-growing share of global electricity. IBM\'s announcement is likely to intensify competition among chipmakers and research institutions worldwide, all racing to define the next generation of computing architecture."
+      "After weeks of intense negotiations between Anthropic and the White House, the Trump administration has granted permission for the AI company to release its most advanced AI model, known as Mythos, to a carefully selected group of American companies and government agencies. The arrangement covers more than 100 organizations, marking one of the most significant government-sanctioned deployments of a cutting-edge AI system in recent memory. The decision signals a notable shift in how the federal government is approaching the regulation and distribution of powerful AI models.",
+      "The Mythos model, referred to in some reports as Mythos 5, represents Anthropic\'s most capable AI offering to date, and access to it had been restricted amid ongoing policy deliberations at the highest levels of the administration. The authorization is notable not only for its scale — spanning over a hundred entities — but also for the fact that non-American employees of the approved companies are reportedly included within the access permissions. This broad scope suggests the administration is prioritizing competitive advantage and institutional capability over stricter national security compartmentalization.",
+      "Anthropic, the AI safety-focused company co-founded by former OpenAI researchers, has positioned Mythos as a frontier model with significant capabilities across reasoning, analysis, and complex task execution. The controlled rollout to vetted US organizations reflects an emerging model of AI governance in which the government acts as a gatekeeper for the most powerful systems, deciding which institutions are trustworthy enough to wield them. This approach effectively creates a two-tiered AI landscape, where elite organizations gain early access to capabilities unavailable to the general public.",
+      "The authorization process highlights the growing entanglement between the federal government and the leading artificial intelligence laboratories. By requiring White House sign-off before Anthropic could distribute its flagship model, the administration has asserted a form of oversight that has no clear precedent in the history of commercial software deployment. Whether this model of government-mediated AI distribution will become a durable feature of the industry or a temporary wartime-style measure remains an open question that will likely shape AI policy debates for years to come.",
+      "For the more than 100 companies and agencies now cleared to use Mythos 5, the practical implications are substantial. Access to a frontier AI model can accelerate research, streamline government operations, and provide competitive advantages in sectors ranging from defense contracting to financial services. The announcement is expected to intensify pressure from organizations that were not included in the initial authorization list, and advocacy groups are already raising questions about the transparency of the selection process and whether smaller competitors in the AI space will ever receive comparable treatment."
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/e645/live/ebbfb1a0-7071-11f1-9af3-ff9a7832a0f3.jpg",
-    source: "BBC News",
-    sourceUrl: "https://www.bbc.co.uk/news/articles/cvg7vpyn5pxo?at_medium=RSS&at_campaign=rss"
+    image: "https://media.wired.com/photos/6a31dd3da349dd0edc2c4b26/master/pass/Anthropic-Restores-Fable-Access-Business.jpg",
+    source: "WIRED",
+    sourceUrl: "https://www.wired.com/story/anthropic-restores-access-to-mythos/"
   },
   secondary: [
     {
       id: "tc1",
-      title: "OpenAI to Delay GPT-5.6 Release After Trump Administration Request",
-      summary: "The Trump administration has asked OpenAI to stagger the release of its next major model, GPT-5.6, citing potential security concerns.",
+      title: "South Korea Plans to Train Its Entire Military as 'Drone Warriors'",
+      summary: "South Korea has announced an ambitious programme to train its entire half-million-strong military in drone operation, designating drones as a universal combat tool.",
       body: [
-        "OpenAI CEO Sam Altman informed employees that GPT-5.6 would be released in a limited preview form, granting access only to a small group of partners rather than the general public. The decision follows a request from the Trump administration, which raised apprehension about potential security issues associated with a broad public rollout.",
-        "The move marks an unusual degree of government involvement in the commercial release timeline of a major AI model, and raises broader questions about the relationship between the AI industry and federal oversight. It also underscores growing official awareness of the potential risks posed by frontier AI systems."
+        "South Korea\'s military leadership has unveiled plans to make drone proficiency a standard requirement for every service member in its armed forces, reflecting a sweeping reassessment of how modern warfare is conducted. The initiative would see all personnel in the country\'s approximately 500,000-strong military trained to operate drones as a baseline combat skill, rather than leaving such capabilities to specialist units.",
+        "The move mirrors lessons absorbed from recent conflicts around the world, where low-cost drones have proven to be decisive battlefield tools capable of surveillance, targeting, and direct strike missions. By embedding drone skills across the entire force, South Korea aims to ensure that any unit can leverage autonomous aerial capabilities without waiting for specialist support, fundamentally changing the country\'s tactical doctrine."
       ],
-      image: "https://images.unsplash.com/photo-1675557009317-bb59e35aba82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxPcGVuQUklMjB0byUyMERlbGF5JTIwR1BULTUuNiUyMFJlbGVhc2UlMjBBZnRlciUyMFRydW1wJTIwQWRtaW5pc3RyYXRpb24lMjBSZXF1ZXN0fGVufDB8MHx8fDE3ODI0NTAyNzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "The Verge",
-      url: "https://www.theverge.com/ai-artificial-intelligence/957372/openai-will-delay-gpt-5-6-after-trump-administration-request",
-      category: "Artificial Intelligence"
+      image: "https://cdn.arstechnica.net/wp-content/uploads/2026/06/GettyImages-1244261698-1152x648.jpg",
+      source: "Ars Technica",
+      url: "https://arstechnica.com/ai/2026/06/south-korea-plans-to-train-entire-military-as-drone-warriors/",
+      category: "Defense Technology"
     },
     {
       id: "tc2",
-      title: "Microsoft Extends Windows 10 Support by Another Year",
-      summary: "Microsoft has added a further year to its Windows 10 extended update programme, as approximately a quarter of all PCs continue to run the ageing operating system.",
+      title: "Streaming Services' Obnoxiously Loud Ads Become Illegal in California on July 1",
+      summary: "A new California law taking effect on July 1 will prohibit streaming services from airing advertisements that are significantly louder than the programming they interrupt.",
       body: [
-        "With roughly 25 percent of the world\'s PCs still running Windows 10, Microsoft has opted to extend its extended update programme by an additional year, giving users and organisations more time before they must upgrade or lose security patch coverage. The decision reflects the practical reality that a significant portion of the global PC fleet has not yet made the transition to Windows 11.",
-        "The extension is likely to be welcomed by enterprise customers and institutions that face logistical or financial barriers to upgrading their hardware, as Windows 11 requires more modern system specifications. It also signals that Microsoft is willing to be pragmatic about its legacy operating system rather than forcing a hard cutoff that could leave millions of machines vulnerable."
+        "California is set to become the latest US jurisdiction to crack down on the jarring volume spikes that streaming viewers have long complained about, with a new law banning excessively loud advertisements coming into force on July 1. Illinois previously passed similar legislation, and the combination of two major markets adopting these rules is expected to give streaming platforms a strong commercial incentive to bring their ad audio in line with programming levels.",
+        "The practice of broadcasting louder-than-normal advertisements has persisted in the streaming era despite having been regulated on traditional broadcast television for years, frustrating viewers who find themselves scrambling for a remote when commercial breaks hit. The California law closes that loophole for streaming services operating in the state, potentially setting a de facto national standard given the size and influence of the California market."
       ],
-      image: "https://cdn.arstechnica.net/wp-content/uploads/2022/10/microsoft-windows-1024x648.jpg",
+      image: "https://images.unsplash.com/photo-1560169897-fc0cdbdfa4d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTdHJlYW1pbmclMjBTZXJ2aWNlc3xlbnwwfDB8fHwxNzgyNTM2NjY5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       source: "Ars Technica",
-      url: "https://arstechnica.com/gadgets/2026/06/microsoft-adds-another-year-to-windows-10-extended-update-program/",
-      category: "Software"
+      url: "https://arstechnica.com/gadgets/2026/06/streaming-services-obnoxiously-loud-ads-become-illegal-on-july-1-in-california/",
+      category: "Technology & Law"
     },
     {
       id: "tc3",
-      title: "Patronus AI Raises $50M to Build 'Digital Worlds' That Stress-Test AI Agents",
-      summary: "Agent-testing startup Patronus AI, founded by former Meta AI researchers, has secured $50 million in funding to create simulated environments designed to rigorously evaluate the reliability of AI agents.",
+      title: "GTA 6 Will Launch Without a Physical Disc — What It Means for Gaming",
+      summary: "Rockstar Games' highly anticipated Grand Theft Auto 6 will be released as a digital-only title, raising broader questions about whether the era of physical game media is coming to an end.",
       body: [
-        "Patronus AI is building so-called 'digital worlds' — elaborate simulated environments intended to push AI agents to their limits and expose weaknesses before they are deployed in real-world settings. The startup, founded by alumni of Meta\'s AI research division, is responding to surging demand from companies eager to ensure their AI agents behave safely and predictably.",
-        "The $50 million raise highlights the growing recognition that as AI agents take on more autonomous roles in business processes, robust testing infrastructure is becoming as important as the models themselves. Investors appear to share this view, with the company\'s backers describing demand as nearly insatiable."
+        "The decision by Rockstar Games to release GTA 6 without a physical disc version has reignited debate about the future of tangible media in the gaming industry, following the path already taken by music and film. Given GTA 6's status as one of the most anticipated game releases in years, the choice carries significant symbolic weight and may accelerate the industry\'s broader shift away from optical media.",
+        "For consumers, a disc-free release means no second-hand market, no ability to lend the game to a friend, and an entirely cloud-dependent ownership experience — concerns that have been raised repeatedly as streaming and digital downloads have supplanted physical formats in other entertainment sectors. The BBC notes that the move prompts serious questions about long-term game preservation and whether players truly own what they purchase in a digital-only ecosystem."
       ],
-      image: "https://images.pexels.com/photos/29393023/pexels-photo-29393023.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      source: "TechCrunch",
-      url: "https://techcrunch.com/2026/06/25/patronus-ai-lands-50m-to-build-digital-worlds-that-stress-test-ai-agents/",
-      category: "Artificial Intelligence"
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/6fad/live/746eb010-7166-11f1-8e1d-bbbb1017d210.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.co.uk/news/articles/c6210nj8gpro?at_medium=RSS&at_campaign=rss",
+      category: "Gaming"
     }
   ]
 };

@@ -1,60 +1,60 @@
 // uk-politics-news-data.js
-// Auto-updated 2026-06-26 — do not edit manually
+// Auto-updated 2026-06-27 — do not edit manually
 
 var UK_POLITICS_NEWS = {
-  date: "2026-06-26",
+  date: "2026-06-27",
   main: {
-    title: "Burnham Could Become Labour Leader and Prime Minister by 17 July in Coronation Timeline",
+    title: "Starmer Rebuffs Home Secretary\'s Request to Sack Immigration Minister",
     category: "Politics",
     content: [
-      "Andy Burnham, the former Mayor of Greater Manchester, is on course to become the next Labour leader and Prime Minister of the United Kingdom as early as 17 July, according to the party\'s emerging timetable for the leadership transition. The accelerated schedule is only possible because Burnham remains the sole Labour MP to have entered the race to succeed Sir Keir Starmer, who announced his resignation following a prolonged period of political instability. Should no other candidates come forward to challenge him, the party\'s rules would allow the contest to be resolved without a full membership vote, effectively handing Burnham the keys to Downing Street in a matter of weeks.",
-      "The prospect of a so-called 'coronation' has generated considerable unease among Labour MPs and grassroots members alike, with many feeling that the party\'s wider membership deserves a proper say in who leads them into the next general election. Sky News reports that Labour MPs are under significant pressure from their local constituency parties, with activists expressing frustration that democracy within the movement could be bypassed in favour of an expedient handover. The tension between parliamentary pragmatism and democratic legitimacy is shaping up to be one of the defining internal debates of this transitional period.",
-      "Despite the controversy surrounding the process, Burnham has moved quickly to project an image of stability and fiscal responsibility, publicly insisting that he will stick to the existing fiscal rules set out by Chancellor Rachel Reeves. He has sought to reassure financial markets and Labour\'s traditional supporters in business that there will be no sudden lurch in economic policy under his leadership. His positioning on the economy appears designed to neutralise any suggestion that a change in leadership signals a broader departure from the government\'s fiscal framework.",
-      "Behind the scenes, Burnham\'s team is already taking shape, with reports emerging that former Foreign Office permanent secretary Olly Robbins — who was among the most high-profile casualties of the Peter Mandelson vetting scandal — has held early exploratory talks about taking on a security-related role under the likely new prime minister. The involvement of senior civil service figures signals that Burnham\'s operation is preparing in earnest for government rather than simply for a leadership campaign. Culture Secretary Lisa Nandy has also broken ranks to join Burnham on the campaign trail, suggesting that momentum within Cabinet is building behind the frontrunner.",
-      "The speed and manner of Starmer\'s exit from Downing Street has prompted considerable soul-searching within the Labour Party and across the political commentariat. BBC Political Editor Chris Mason has drawn comparisons between Starmer\'s downfall and those of his predecessors Boris Johnson and Liz Truss, arguing that all three prime ministers ultimately lost the capacity to viably govern — a damning verdict on what was, just over a year ago, a landslide-winning administration. As Burnham prepares to inherit what many regard as a deeply challenging political environment, questions remain about whether a change of leader alone is sufficient to restore public confidence in a government that has struggled to translate its parliamentary majority into durable popular support.",
+      "A significant rift has opened between Prime Minister Keir Starmer and Home Secretary Shabana Mahmood after Downing Street publicly rebuffed her demand to sack immigration minister Mike Tapp. The row erupted after Tapp wrote an unauthorised article about immigration policy without the Home Secretary\'s knowledge or approval. Downing Street\'s decision to stand by Tapp, while simultaneously issuing a rebuke to both parties, has thrown the internal tensions within the Labour government into sharp relief.",
+      "The dispute escalated further when it emerged that Mahmood had sought to restrict Tapp\'s access to sensitive departmental documents without her personal sign-off. This extraordinary move — effectively attempting to sideline a junior minister within her own department — deepened the sense of a serious breakdown in trust between the two figures. Such an action is highly unusual in Westminster, where ministers are typically granted access to papers relevant to their brief as a matter of course.",
+      "Mahmood, who has been leading the controversial immigration bill through Parliament and is widely regarded as a frontrunner to succeed Starmer as Labour leader, appeared to be asserting her authority over a minister who went beyond his sanctioned remit. Tapp has been described as a loyal supporter of Starmer, which may have added a political dimension to the dispute that goes beyond a simple question of ministerial discipline. The episode has prompted questions about the management of the Home Office at a sensitive moment for immigration policy.",
+      "Downing Street\'s response was notably even-handed, issuing a rebuke to both Mahmood and Tapp rather than siding unequivocally with the Home Secretary. This signals that Number 10 was unwilling to grant Mahmood the unambiguous public backing she had sought, and that Starmer is keen to maintain his authority over Cabinet appointments and dismissals. The Prime Minister\'s office made clear that the power to hire and fire ministers rests with the Prime Minister alone, not with individual Cabinet members.",
+      "The clash comes at a particularly delicate time, with Mahmood in the process of trying to shore up support for her immigration bill among the progressive left of the Labour Party, including by accelerating plans for safe and legal asylum routes. Any perception of internal chaos at the Home Office risks undermining her efforts to sell the bill as a coherent and principled reform. With Labour\'s leadership transition expected in the coming months, the public nature of this dispute is likely to have lasting consequences for the relationship between two of the party\'s most senior figures."
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/1036/live/3618f5c0-70ab-11f1-88b6-991d05fc2cf9.png",
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/1b22/live/9b0fd9f0-716c-11f1-b1db-af71d47507d6.png",
     source: "BBC News",
-    sourceUrl: "https://www.bbc.co.uk/news/articles/cnv9e18r2qyo?at_medium=RSS&at_campaign=rss"
+    sourceUrl: "https://www.bbc.co.uk/news/articles/cj9g7w0xnnjo?at_medium=RSS&at_campaign=rss"
   },
   secondary: [
     {
       id: "uk1",
-      title: "Home Secretary Mahmood in Extraordinary Standoff with Starmer Over Junior Minister\'s Future",
-      summary: "Shabana Mahmood is demanding the sacking of immigration minister Mike Tapp after he wrote an unauthorised article contradicting government policy, but Downing Street has refused to act.",
+      title: "Home Office to Introduce New 'Safe and Legal' Asylum Routes to UK",
+      summary: "Home Secretary Shabana Mahmood has announced plans for capped safe and legal routes into the UK as part of efforts to restore public confidence in the asylum system.",
       body: [
-        "Home Secretary Shabana Mahmood has been locked in a remarkable public standoff with Downing Street after No 10 refused to immediately sack her junior minister, Mike Tapp, despite her insistence that he breached the ministerial code by writing an unauthorised article arguing that new settlement rules should not apply to overseas care workers. The dispute has exposed a significant fracture in an already weakened government, with the Home Secretary and the Prime Minister\'s office publicly at odds over a matter of ministerial discipline. The row is particularly striking given the fragile state of the Starmer administration in its final days.",
-        "The episode highlights the difficulties that can arise when senior ministers feel their authority is being undermined by Downing Street\'s reluctance to enforce discipline. For Mahmood, the issue goes beyond one junior minister\'s article — it touches on the fundamental question of whether she has the authority to run her own department without interference from No 10. The standoff is likely to add further to the sense of a government in its dying days, with internal tensions now spilling openly into the public domain."
+        "Shabana Mahmood has outlined plans to speed up the introduction of new safe and legal routes for refugees to enter the UK, a move designed to win over the progressive wing of the Labour Party ahead of a crucial vote on her immigration bill. The Home Secretary said the capped routes would help restore confidence in a system that many feel has lost public trust. The announcement is framed as a central pillar of the wider asylum and refugees legislation currently making its way through Parliament.",
+        "The move is seen as a concession to Labour left-wingers who have expressed discomfort with some of the more restrictive elements of the immigration bill, and comes at a politically sensitive moment as the party prepares for a leadership transition. By accelerating this aspect of the legislation, Mahmood hopes to build a broader coalition of support within her own party while also appealing to those who want to see a more humane approach to asylum embedded in law."
       ],
-      image: "https://i.guim.co.uk/img/media/490925831b1a48c73cdae221eac2c0cca34570a1/0_0_5912_4727/master/5912.jpg?width=1200&quality=85&auto=format&fit=max&s=35ce52ecb6375fca45abaf1256596eae",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/politics/2026/jun/25/mahmood-in-standoff-with-starmer-over-sacking-of-her-junior-minister",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/b677/live/8a16eaa0-71ab-11f1-a700-c5ebf7bd79d0.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.co.uk/news/articles/c5yz952dm74o?at_medium=RSS&at_campaign=rss",
       category: "Politics"
     },
     {
       id: "uk2",
-      title: "Robert Jenrick Says Questions About Nigel Farage\'s £5m Crypto Donation Are 'Legitimate'",
-      summary: "Reform UK\'s shadow chancellor has contradicted Nigel Farage by saying it is legitimate for journalists to scrutinise a £5 million personal donation the party leader received from a cryptocurrency billionaire.",
+      title: "Andy Burnham Pledges to Donate 15% of MP\'s Salary to Local Causes",
+      summary: "Andy Burnham, the new MP for Makerfield and widely expected next prime minister, has committed to giving 15% of his parliamentary salary to local causes in his constituency.",
       body: [
-        "Robert Jenrick, Reform UK\'s shadow chancellor, has publicly broken with Nigel Farage by acknowledging that questions about the party leader\'s £5 million personal donation from a cryptocurrency billionaire are entirely legitimate — a direct contradiction of Farage\'s dismissive claim that the matter was 'none of your business.' Jenrick said voters and the media had every right to ask about the source and implications of such a substantial financial gift to the leader of a major political party. The rare public divergence from his party leader has raised eyebrows about the internal dynamics within Reform.",
-        "The donation saga represents a potentially serious reputational challenge for Reform UK at a moment when the party is positioning itself as a clean-break alternative to the established parties. The involvement of a cryptocurrency billionaire as the source of a multi-million pound personal donation to a party leader is likely to attract sustained scrutiny from political opponents and ethics watchdogs. Jenrick\'s willingness to validate that scrutiny publicly suggests there may be growing tensions within Reform over how to handle questions of financial transparency."
+        "Andy Burnham, who recently won the Makerfield by-election and is regarded as the frontrunner to become the next prime minister, has announced he will donate 15% of his MP\'s salary — currently worth around £98,599 — to local causes in his constituency. The gesture puts him among a number of parliamentarians who choose to give back a portion of their pay to their communities. Burnham\'s move is likely to be seen as an early signal of the kind of politics he intends to project as he prepares for a potential move to Downing Street.",
+        "The announcement comes at a moment of intense scrutiny of Burnham\'s political positioning, with debates ongoing about whether he could and should govern without calling a general election. By emphasising his local commitments, Burnham appears to be keen to maintain a connection to grassroots concerns even as he navigates the highest levels of national politics."
       ],
-      image: "https://i.guim.co.uk/img/media/6386266400a7bd66a2ba48cf4d4f077bb2d5dd45/548_0_5484_4387/master/5484.jpg?width=1200&quality=85&auto=format&fit=max&s=25e2351b9c5d6c6c93208fbcb90fe5c1",
+      image: "https://i.guim.co.uk/img/media/b19cb5f7185a7c1d3dfd9c3a07fcdbf746615bc7/1482_38_6898_5519/master/6898.jpg?width=1200&quality=85&auto=format&fit=max&s=da4ffb78a00ebbfa8cf35f8d2925f810",
       source: "The Guardian",
-      url: "https://www.theguardian.com/politics/2026/jun/25/robert-jenrick-questions-about-5m-donation-nigel-farage-legitimate",
+      url: "https://www.theguardian.com/politics/2026/jun/26/andy-burnham-donate-15-per-cent-mp-pay-makerfield",
       category: "Politics"
     },
     {
       id: "uk3",
-      title: "Home Office Plans to Use Three More Military Bases to House Up to 3,750 Asylum Seekers",
-      summary: "The Home Office is seeking permission to house thousands of asylum seekers at three former military sites in Oxfordshire, Suffolk, and Yorkshire as it looks to reduce reliance on expensive hotel accommodation.",
+      title: "Conservatives Promise Tax Incentive as Part of 50,000 Reservist Pledge",
+      summary: "The Conservative Party has announced plans to make reserve military service tax-free for up to 30 days per year, as part of a wider pledge to recruit 50,000 new reservists.",
       body: [
-        "The Home Office has identified three former military bases — at Bicester in Oxfordshire, Barnham in Suffolk, and Linton-on-Ouse in Yorkshire — as potential sites to accommodate approximately 3,750 asylum seekers, subject to planning permission being granted. The move is part of a broader government strategy to cut the significant costs associated with housing asylum seekers in hotels, which has proved politically toxic and financially burdensome. Each of the proposed sites would need to undergo assessments before any transfers of asylum seekers could begin.",
-        "The use of military sites to house asylum seekers has been a recurring and contentious feature of UK immigration policy in recent years, often drawing protests from local communities and criticism from refugee support organisations who argue that such facilities are unsuitable for vulnerable people. The plan comes as the government faces mounting pressure on multiple fronts over its immigration policy, including the internal ministerial row over the ministerial code breach by immigration minister Mike Tapp. Whether the new sites will ultimately receive approval remains to be seen, but the announcement signals that the Home Office is pressing ahead with its cost-cutting agenda on asylum housing."
+        "The Conservative Party has set out a plan to boost the UK\'s military reserve forces to 50,000 by removing income tax on up to 30 days of reserve service per year, with the cost to be funded partly through reintroducing the two-child benefit cap. The policy was met with criticism from Labour, who accused the Conservatives of attempting to 'rewrite history' given the defence cuts made during their years in government. The proposal is part of a broader Conservative effort to position the party as a credible voice on national security and defence.",
+        "The pledge signals an attempt by the Conservatives under Kemi Badenoch to draw a clearer dividing line with Labour on defence spending and military readiness. However, the funding mechanism — linking the policy to the two-child benefit cap — is likely to provoke fresh controversy around child poverty, making the political trade-offs involved a central part of the debate."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/5061/live/8ebf79a0-390c-11f1-9d5c-8ba507d7dbde.jpg",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/45f7/live/df741550-7182-11f1-8e1d-bbbb1017d210.jpg",
       source: "BBC News",
-      url: "https://www.bbc.co.uk/news/articles/cvgjm61lkl4o?at_medium=RSS&at_campaign=rss",
+      url: "https://www.bbc.co.uk/news/articles/c9v219gx79wo?at_medium=RSS&at_campaign=rss",
       category: "Politics"
     }
   ]

@@ -1,10 +1,10 @@
 // quiz-data.js
-// Auto-updated 2026-06-26 — do not edit manually
+// Auto-updated 2026-06-27 — do not edit manually
 
 window.QUIZ_DATA = {
-  date: '2026-06-26',
-  category: 'Sport',
-  question: 'At the 2003 Rugby World Cup in Australia, which English player kicked the famous drop goal in extra time to win the final against Australia — and with how many seconds remaining on the clock?',
-  answer: 'Jonny Wilkinson, with 26 seconds remaining.',
-  funFact: 'Wilkinson\'s drop goal, struck with his weaker right foot, gave England a 20–17 victory and their first Rugby World Cup title. The moment is one of the most replayed in British sporting history, and Wilkinson famously adopted his distinctive crouching, hands-clasped pre-kick stance as a focusing ritual he had developed years earlier.'
+  date: '2026-06-27',
+  category: 'Famous Firsts',
+  question: 'Which woman became the first person to reach the summit of Mount Everest twice, achieving the feat in 1975, eleven years after her first ascent?',
+  answer: 'Junko Tabei',
+  funFact: 'Junko Tabei, a Japanese mountaineer, first summited Everest in 1975 as part of an all-female Japanese expedition — making her the first woman ever to reach the top. She went on to become the first woman to complete the Seven Summits, climbing the highest peak on every continent. Despite being told by some that mountaineering was not a suitable pursuit for women, she founded a ladies climbing club in Japan and never stopped.'
 };
