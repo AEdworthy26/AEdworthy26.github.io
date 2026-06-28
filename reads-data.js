@@ -1,19 +1,19 @@
 // reads-data.js
-// Auto-updated 2026-06-27 — do not edit manually
+// Auto-updated 2026-06-28 — do not edit manually
 
 var READS_DATA = {
-  date: "2026-06-27",
+  date: "2026-06-28",
   book: {
-    title: "The Periodic Table",
-    author: "Primo Levi",
-    year: 1975,
-    genres: ["Memoir", "Science", "Literary Fiction"],
-    desc: "Primo Levi structures his autobiography around the elements of the periodic table, using each one — argon, iron, gold, carbon — as a lens through which to examine a life lived in chemistry, in the shadow of Auschwitz, and in the endlessly surprising texture of the physical world. The result is one of the strangest and most beautiful books ever written: part science writing, part Holocaust testimony, part fable, and entirely unlike anything else. Levi writes with a precision and warmth that transforms laboratory benches and chemical reactions into profound moral and philosophical territory, never letting the reader forget that matter and meaning are inseparable. Saul Bellow called it 'a necessary book,' and the Royal Institution once voted it the best science book ever written.",
-    whyRead: "At a moment when the borders between disciplines feel more contested than ever, Levi shows how a scientific mind and a humane imagination are not opposites but partners — this book is quietly, devastatingly essential.",
-    rating: 4.3,
+    title: "The Overstory",
+    author: "Richard Powers",
+    year: 2018,
+    genres: ["Literary Fiction", "Nature", "Environment"],
+    desc: "A sweeping, Pulitzer Prize-winning novel that weaves together nine Americans whose lives become intertwined with trees — from a chestnut that survives a blight to a scientist who discovers that forests communicate and cooperate. Powers writes with the patience and ambition of the natural world itself, constructing a narrative that moves across centuries and continents before converging in acts of desperate environmental activism. The science embedded in the story is real and revelatory, drawn from the work of researchers like Suzanne Simard, and it fundamentally reframes how a reader sees any forest they will ever walk through again. It is a novel about attention — what we fail to notice, what we choose to ignore, and what is lost while we look away.",
+    whyRead: "With ecological anxiety only deepening in 2026, Powers' vision of interconnected life feels less like fiction and more like urgent testimony — this is the novel that most powerfully asks what we owe the non-human world.",
+    rating: 4.2,
     ratingSource: "Goodreads",
-    ratingCount: "50,000+",
-    coverUrl: "https://covers.openlibrary.org/b/id/3198953-L.jpg",
-    amazonUrl: "https://www.amazon.co.uk/dp/071812636X"
+    ratingCount: "200,000+",
+    coverUrl: "https://covers.openlibrary.org/b/id/8758252-L.jpg",
+    amazonUrl: "https://www.amazon.co.uk/dp/8491814442"
   }
 };

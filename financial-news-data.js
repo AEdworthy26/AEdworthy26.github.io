@@ -1,61 +1,61 @@
 // financial-news-data.js
-// Auto-updated 2026-06-27 — do not edit manually
+// Auto-updated 2026-06-28 — do not edit manually
 
 var FINANCIAL_NEWS = {
-  date: "2026-06-27",
+  date: "2026-06-28",
   main: {
-    title: "Volkswagen Plans to Cut Up to 100,000 Jobs and Shut Plants Amid Chinese Competition",
-    category: "Corporate / Manufacturing",
+    title: "Trump Threatens 100% Tariff on European Nations Over Tech Tax",
+    category: "Trade & Markets",
     content: [
-      "Germany\'s Volkswagen is reportedly planning one of the most dramatic restructurings in its long corporate history, with reports indicating the automaker is considering cuts of up to 100,000 jobs alongside reductions and eventual closures at some of its manufacturing plants. The scale of the proposed cuts would represent roughly double the staff reductions the company had previously announced, signalling a significant deepening of the crisis at Europe\'s largest carmaker. Volkswagen has declined to comment on the reports, which centre on a management presentation said to have been delivered at a board meeting.",
-      "The driving force behind the restructuring is the intensifying competitive pressure from Chinese electric vehicle manufacturers, who have rapidly captured market share both domestically in China — a market that has historically been crucial to VW\'s profitability — and increasingly in export markets around the world. Chinese automakers have been able to produce EVs at lower cost and with competitive technology, squeezing the margins of established Western brands that invested heavily in legacy combustion-engine infrastructure. For Volkswagen, which built much of its global success on its strong foothold in China, the erosion of that position has been particularly painful.",
-      "The potential job losses would send shockwaves through the German economy, where the automotive sector remains a cornerstone of industrial employment. VW is one of Germany\'s largest private-sector employers, and large-scale plant closures would have significant knock-on effects for suppliers, regional economies, and the broader German manufacturing base. Labour unions, which hold considerable power on VW\'s supervisory board under Germany\'s co-determination model, are expected to mount fierce resistance to any closure plans.",
-      "The restructuring also comes at a fraught moment for the broader European auto industry, which is navigating the costly transition to electric vehicles while simultaneously facing potential new tariff threats from the United States. European carmakers have been caught between the need to invest heavily in EV technology and the pressure to maintain short-term profitability for shareholders. Volkswagen\'s situation is widely seen as a bellwether for the challenges facing the entire continent\'s automotive sector as Chinese competition accelerates.",
-      "If the reported cuts proceed, they would rank among the largest single corporate restructurings in European industrial history. Analysts will be watching closely for any official confirmation from Volkswagen\'s management, as well as for indications of how the company plans to restructure its product lineup and geographic strategy going forward. The outcome of negotiations with unions and the supervisory board is likely to shape the final scope of the cuts, but the direction of travel appears unmistakably toward a leaner, significantly smaller Volkswagen than the world has known in recent decades."
+      "President Trump has threatened to impose 100% tariffs on European nations in response to their discussions around introducing a digital services tax targeting major technology companies. The threat marks a significant escalation in transatlantic trade tensions, raising immediate concerns among investors and businesses that operate across both the US and European markets. Markets are closely watching the development, as a 100% tariff at this scale would represent one of the most dramatic trade barriers imposed between two of the world\'s largest economic blocs.",
+      "The European digital services tax proposals have long been a flashpoint between Washington and Brussels, with US officials arguing that such levies disproportionately target American technology giants like Alphabet, Meta, and Apple. A 100% retaliatory tariff, if enacted, would effectively double the cost of European goods entering the United States, sending shockwaves through industries ranging from automotive and aerospace to luxury goods and pharmaceuticals. The breadth of potential exposure means that European exporters, many of whom are already navigating a fragile post-pandemic recovery, would face severe headwinds.",
+      "For financial markets, the threat injects a fresh wave of uncertainty into an environment that had been cautiously stabilising after earlier rounds of trade disputes. European equity indices would likely face selling pressure as investors price in the risk of a full-blown trade war, while the euro could weaken against the dollar if the standoff intensifies. Bond markets may also react, with safe-haven flows potentially driving yields lower in Germany and other core eurozone economies as risk appetite deteriorates.",
+      "The economic calculus is complicated by the fact that the US and the European Union are deeply intertwined trading partners, meaning that sweeping tariffs would inflict pain on both sides. American companies that rely on European components, manufacturing facilities, or consumer markets would face rising costs and disrupted supply chains if retaliatory counter-measures follow. Economists warn that a tit-for-tat escalation could shave meaningful percentage points off GDP growth on both sides of the Atlantic at a time when global growth momentum is already uneven.",
+      "The standoff also puts pressure on international bodies such as the OECD, which has spent years trying to broker a multilateral agreement on digital taxation that would avoid precisely this kind of bilateral conflict. A negotiated framework had appeared within reach in recent years, but the renewed threat of triple-digit tariffs could derail those efforts significantly. Businesses and investors will be watching closely for any signs of diplomatic engagement or, conversely, for formal tariff announcements that would force an immediate reassessment of global trade portfolios."
     ],
-    image: "https://i.guim.co.uk/img/media/9560e7e7a9e7ec3a5c5f814da363c74f541a3870/707_0_5000_4000/master/5000.jpg?width=1200&quality=85&auto=format&fit=max&s=4b03ce795ef09443dd8328d29c1d47c0",
-    source: "The Guardian",
-    sourceUrl: "https://www.theguardian.com/business/2026/jun/26/vw-cut-jobs-shut-plants-volkswagen-china"
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/41d0/live/53fe5940-71a0-11f1-91d4-ab93ad9f4654.jpg",
+    source: "BBC News",
+    sourceUrl: "https://www.bbc.co.uk/news/articles/cn4rd71411ko?at_medium=RSS&at_campaign=rss"
   },
   secondary: [
     {
       id: "fn1",
-      title: "Trump Threatens 100% Tariff on European Nations Over Tech Taxes",
-      summary: "President Trump has threatened to impose sweeping 100% tariffs on European countries that pursue digital services taxes targeting US technology firms, raising fresh fears of a transatlantic trade war just days after a US-EU trade deal was finalised.",
+      title: "Renewed Strikes in the Strait of Hormuz Threaten Shipping Recovery",
+      summary: "Fresh attacks in the Strait of Hormuz are endangering a fragile recovery in global shipping traffic that had only recently reached its highest levels since the US-Iran conflict began.",
       body: [
-        "The threat, directed at what Trump described as 'numerous European countries' considering digital levies on US tech companies, represents a significant escalation in transatlantic trade tensions. The move came strikingly soon after European officials had announced the finalisation of a broader trade agreement with the United States, casting doubt on the durability of that deal and rattling markets sensitive to trade policy uncertainty.",
-        "A 100% tariff would effectively double the cost of European goods entering the US market and could provoke retaliatory measures from the EU, threatening billions of dollars in bilateral trade. Investors in both US technology stocks and European exporters will be watching closely for any formal announcement, as the scale of tariffs threatened would have substantial implications for corporate earnings on both sides of the Atlantic."
+        "Shipping traffic through the Strait of Hormuz had climbed to its highest levels since the outbreak of the US war in Iran, offering hope that one of the world\'s most critical maritime chokepoints was stabilising — but renewed strikes have now thrown that recovery into doubt. The strait handles a substantial share of global oil and liquefied natural gas exports, meaning any sustained disruption has immediate implications for energy prices and freight costs worldwide.",
+        "For commodity markets and global supply chains, the renewed instability is a stark reminder of how quickly geopolitical flashpoints can translate into economic costs. Energy traders will be monitoring the situation closely, as prolonged disruption to Hormuz transit could push oil prices higher at a time when inflationary pressures remain a concern for central banks globally."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/41d0/live/53fe5940-71a0-11f1-91d4-ab93ad9f4654.jpg",
+      image: "https://static01.nyt.com/images/2026/06/27/multimedia/27BIZ-HORMUZ-SHIPPING-1-hpjw/27BIZ-HORMUZ-SHIPPING-1-hpjw-mediumSquareAt3X.jpg",
       source: "The New York Times",
-      url: "https://www.nytimes.com/2026/06/26/business/economy/trump-tariffs-europe.html",
-      category: "Trade / Economics"
+      url: "https://www.nytimes.com/2026/06/27/business/strait-of-hormuz-shipping-iran.html",
+      category: "Commodities & Trade"
     },
     {
       id: "fn2",
-      title: "Software Stocks Surge as OpenAI Threat Weakens Following Staggered Model Release",
-      summary: "Shares in enterprise software companies including ServiceNow and Salesforce rallied sharply after OpenAI announced it would stagger the release of its latest AI model at the request of the US government, easing fears of imminent disruption to established software platforms.",
+      title: "UK Government Working Up Plans for State-Owned Housing Developer",
+      summary: "Housing Secretary Steve Reed is developing proposals for a government-run housing developer that could borrow at lower rates than private sector competitors to help stimulate stalling housebuilding.",
       body: [
-        "The news that OpenAI would limit the rollout of its GPT 5.6 model, rather than releasing it broadly, provided relief to investors in enterprise software companies who had feared that increasingly powerful AI tools could rapidly displace traditional software vendors. ServiceNow, Salesforce, and peers saw meaningful gains as markets interpreted the delay as breathing room for incumbents to adapt and integrate AI capabilities into their own offerings.",
-        "Oracle notably missed out on the broader sector rally, as analysts pointed to its cloud-infrastructure business being closely tied to OpenAI\'s commercial success — meaning the staggered release represents a more ambiguous development for that company. The episode highlights the complex interdependencies forming across the technology sector as AI development accelerates and government oversight begins to shape the pace of deployment."
+        "Details leaked to the Guardian reveal that the UK\'s Housing Secretary has been working up plans for a state-owned development entity, which would leverage the government\'s lower borrowing costs to unlock housing projects that have proved unattractive to private developers. The move signals growing frustration within government at persistently low housebuilding rates that are failing to meet demand and keeping property prices elevated.",
+        "From a financial perspective, a state-backed developer entering the market could reshape the competitive landscape for listed housebuilders, whose share prices may come under pressure if public-sector supply increases meaningfully. It also raises questions about the scale of government borrowing required and how such an entity would interact with existing planning, land acquisition, and financing frameworks."
       ],
-      image: "https://images.mktw.net/im-701755",
-      source: "MarketWatch",
-      url: "https://www.marketwatch.com/story/servicenow-salesforce-and-other-software-stocks-surge-as-the-openai-threat-weakens-bb1eacfb?mod=mw_rss_topstories",
-      category: "Markets / Technology"
+      image: "https://i.guim.co.uk/img/media/85f0e859f90a8af9309e6d35750eab17114797ff/625_0_6625_5303/master/6625.jpg?width=1200&quality=85&auto=format&fit=max&s=5a0934ee0d20f8c6bc54ef526ee7f39e",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/society/2026/jun/27/uk-minister-plans-for-state-owned-housing-developer-exclusive",
+      category: "Economics"
     },
     {
       id: "fn3",
-      title: "Oil Prices Jump in After-Hours Trading After U.S. Confirms Retaliatory Strike on Iran",
-      summary: "Oil futures, which had settled lower for a third consecutive weekly loss, spiked in extended trading after the US military confirmed a retaliatory strike on Iran, reigniting concerns about supply disruptions in a critical global shipping corridor.",
+      title: "Americans' 401(k) Balances Hit Record Levels in 2025",
+      summary: "A new Vanguard report shows that US workplace retirement savers enjoyed record 401(k) balances last year, buoyed by strong market performance across equities and fixed income.",
       body: [
-        "The confirmation of a US military strike on Iran immediately pushed crude prices higher in after-hours markets, as traders priced in the risk of escalating conflict near the Strait of Hormuz, through which a significant share of the world\'s seaborne oil supply passes. Analysts had already flagged that sluggish tanker traffic through the strait could send prices soaring if tensions deteriorated further, and the strike confirmation appeared to validate those concerns.",
-        "Prior to the late-session move, oil had been on track for a third straight week of losses, reflecting broader concerns about demand weakness and ample global supply. The sudden geopolitical jolt serves as a reminder of how quickly energy markets can reverse course when Middle East tensions flare, with significant downstream implications for inflation, transportation costs, and the earnings of both energy producers and consumer-facing businesses."
+        "Vanguard\'s latest 'How America Saves' report reveals that 401(k) balances reached record highs in 2025, reflecting a year of broadly positive returns across major asset classes that benefited millions of American retirement savers. The milestone underscores how closely the financial wellbeing of ordinary households is tied to the performance of equity and bond markets.",
+        "While the headline figures are encouraging, financial advisers caution that record averages can mask significant disparities between high-income earners with large, diversified portfolios and lower-income workers with more modest contributions. As retirement security remains a pressing long-term economic concern, the data offers a useful benchmark for savers to assess how their own balances compare to national trends."
       ],
-      image: "https://images.mktw.net/im-82680955",
+      image: "https://images.unsplash.com/photo-1584714574679-99078d0a7b30?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxBbWVyaWNhbnN8ZW58MHwwfHx8MTc4MjYyMzAzMnww&ixlib=rb-4.1.0&q=80&w=1080",
       source: "MarketWatch",
-      url: "https://www.marketwatch.com/story/oil-heads-for-another-losing-week-but-analyst-warns-sluggish-strait-of-hormuz-traffic-could-send-it-soaring-again-80ab9ba8?mod=mw_rss_topstories",
-      category: "Commodities / Energy"
+      url: "https://www.marketwatch.com/story/americans-401-k-balances-hit-record-levels-last-year-see-how-you-compare-facd32c4?mod=mw_rss_topstories",
+      category: "Personal Finance"
     }
   ]
 };

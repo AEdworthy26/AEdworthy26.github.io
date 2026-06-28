@@ -1,10 +1,10 @@
 // quiz-data.js
-// Auto-updated 2026-06-27 — do not edit manually
+// Auto-updated 2026-06-28 — do not edit manually
 
 window.QUIZ_DATA = {
-  date: '2026-06-27',
-  category: 'Famous Firsts',
-  question: 'Which woman became the first person to reach the summit of Mount Everest twice, achieving the feat in 1975, eleven years after her first ascent?',
-  answer: 'Junko Tabei',
-  funFact: 'Junko Tabei, a Japanese mountaineer, first summited Everest in 1975 as part of an all-female Japanese expedition — making her the first woman ever to reach the top. She went on to become the first woman to complete the Seven Summits, climbing the highest peak on every continent. Despite being told by some that mountaineering was not a suitable pursuit for women, she founded a ladies climbing club in Japan and never stopped.'
+  date: '2026-06-28',
+  category: 'World History',
+  question: 'On 28th June 1914, Archduke Franz Ferdinand was assassinated in Sarajevo — but in which specific location in the city did the fatal shooting take place, and what was the assassin\'s name?',
+  answer: 'On the Latin Bridge (Латинска ћуприја). The assassin was Gavrilo Princip.',
+  funFact: 'The assassination was nearly botched earlier that day when a different conspirator threw a bomb at Franz Ferdinand\'s motorcade, but it bounced off the car and exploded under the following vehicle. Franz Ferdinand insisted on visiting the injured in hospital, and it was during this detour — when the driver took a wrong turn and stalled near the Latin Bridge — that Princip found himself standing just feet from the Archduke. The pistol Princip used was a FN Model 1910, and he was just 19 years old at the time.'
 };

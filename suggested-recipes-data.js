@@ -1,207 +1,172 @@
 // suggested-recipes-data.js
-// Auto-updated 2026-06-27 — do not edit manually
+// Auto-updated 2026-06-28 — do not edit manually
 
 window.SUGGESTED_RECIPES = [
   {
     id: "sug1",
-    title: "Basque Chicken — Poulet Basquaise with Peppers, Tomatoes & Espelette",
-    category: "Chicken",
-    calories: 498,
-    protein: 42,
-    fibre: 6,
-    healthScore: 76,
-    time: "55 mins",
+    title: "Flemish Carbonnade — Belgian Beef & Beer Stew with Mustard Thyme Toasts",
+    category: "Beef",
+    calories: 610,
+    protein: 44,
+    fibre: 5,
+    healthScore: 68,
+    time: "2 hrs 15 mins",
     serves: "4",
-    desc: "A sun-drenched classic from the Franco-Spanish border country — bone-in chicken thighs braised low and slow in a vivid sauce of sweet peppers, ripe tomatoes, garlic, white wine, and the mildly smoky heat of Espelette pepper. The sauce reduces to something deeply savoury and glossy, perfect for mopping up with crusty bread or spooning over fluffy white rice. Humble ingredients, stunning depth.",
-    emoji: "🫑",
-    image: "https://images.unsplash.com/photo-1612547945552-8782fa60a8e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxCYXNxdWUlMjBDaGlja2VuJTIwJUUyJTgwJTk0JTIwUG91bGV0JTIwQmFzcXVhaXNlJTIwd2l0aCUyMFBlcHBlcnMlMkMlMjBUb21hdG9lcyUyMCUyNiUyMEVzcGVsZXR0ZSUyMGZvb2QlMjBkaXNofGVufDB8MHx8fDE3ODI1Mzc1MjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    desc: "One of Belgium\'s great comfort dishes — thick slices of beef slow-braised in dark ale with caramelised onions and a sticky, deeply savoury sauce. Mustard-smeared bread melts into the braise as it cooks, thickening everything beautifully. Rich, warming, and utterly satisfying on a summer evening when the temperature drops.",
+    emoji: "🍺",
+    image: "https://images.unsplash.com/photo-1664741662725-bd131742b7b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxGbGVtaXNoJTIwQ2FyYm9ubmFkZSUyMCVFMiU4MCU5NCUyMEJlbGdpYW4lMjBCZWVmJTIwJTI2JTIwQmVlciUyMFN0ZXclMjB3aXRoJTIwTXVzdGFyZCUyMFRoeW1lJTIwVG9hc3RzJTIwZm9vZCUyMGRpc2h8ZW58MHwwfHx8MTc4MjYyMzU5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
     ingredientGroups: [
-      {
-        group: "Chicken",
-        items: [
-          { name: "Bone-in, skin-on chicken thighs", quantity: 8, unit: "" },
-          { name: "Flaky sea salt", quantity: 1, unit: "tsp" },
-          { name: "Black pepper, freshly ground", quantity: 0.5, unit: "tsp" },
-          { name: "Olive oil", quantity: 2, unit: "tbsp" }
-        ]
-      },
-      {
-        group: "Basquaise Sauce",
-        items: [
-          { name: "Red peppers, deseeded and sliced into strips", quantity: 3, unit: "large" },
-          { name: "Yellow pepper, deseeded and sliced into strips", quantity: 1, unit: "large" },
-          { name: "Brown onion, finely sliced", quantity: 2, unit: "medium" },
-          { name: "Garlic cloves, thinly sliced", quantity: 4, unit: "" },
-          { name: "Dry white wine", quantity: 150, unit: "ml" },
-          { name: "Tinned chopped tomatoes", quantity: 400, unit: "g" },
-          { name: "Tomato purée", quantity: 2, unit: "tbsp" },
-          { name: "Espelette pepper (or mild smoked paprika)", quantity: 1.5, unit: "tsp" },
-          { name: "Smoked paprika", quantity: 0.5, unit: "tsp" },
-          { name: "Fresh thyme sprigs", quantity: 4, unit: "" },
-          { name: "Bay leaves", quantity: 2, unit: "" },
-          { name: "Good-quality black olives, pitted", quantity: 80, unit: "g" }
-        ]
-      },
-      {
-        group: "To Finish",
-        items: [
-          { name: "Flat-leaf parsley, roughly chopped", quantity: 1, unit: "small bunch" },
-          { name: "Crusty baguette or steamed white rice", quantity: 1, unit: "portion" }
-        ]
-      }
+      { group: "Stew", items: [
+        { name: "Beef chuck, cut into 4cm chunks", quantity: 900, unit: "g" },
+        { name: "Large onions, thinly sliced", quantity: 3, unit: "" },
+        { name: "Dark Belgian ale or Guinness", quantity: 500, unit: "ml" },
+        { name: "Beef stock", quantity: 250, unit: "ml" },
+        { name: "Unsalted butter", quantity: 30, unit: "g" },
+        { name: "Olive oil", quantity: 2, unit: "tbsp" },
+        { name: "Plain flour", quantity: 2, unit: "tbsp" },
+        { name: "Fresh thyme sprigs", quantity: 6, unit: "" },
+        { name: "Bay leaves", quantity: 2, unit: "" },
+        { name: "Light brown sugar", quantity: 1, unit: "tbsp" },
+        { name: "Red wine vinegar", quantity: 1, unit: "tbsp" },
+        { name: "Salt and black pepper", quantity: 0, unit: "to taste" }
+      ]},
+      { group: "Mustard Toasts", items: [
+        { name: "Thick slices sourdough or crusty baguette", quantity: 4, unit: "" },
+        { name: "Dijon mustard", quantity: 3, unit: "tbsp" },
+        { name: "Unsalted butter, softened", quantity: 15, unit: "g" }
+      ]},
+      { group: "To Serve", items: [
+        { name: "Fresh flatleaf parsley, roughly chopped", quantity: 1, unit: "small handful" },
+        { name: "Steamed new potatoes or crusty bread", quantity: 0, unit: "to serve" }
+      ]}
     ],
     substitutes: [
-      { ingredient: "Espelette pepper", alternatives: ["Mild smoked paprika with a pinch of cayenne", "Aleppo pepper flakes"] },
-      { ingredient: "Dry white wine", alternatives: ["Dry vermouth", "Chicken stock with a squeeze of lemon"] },
-      { ingredient: "Bone-in chicken thighs", alternatives: ["Chicken drumsticks", "Bone-in chicken legs"] },
-      { ingredient: "Black olives", alternatives: ["Kalamata olives", "Green olives"] }
+      { ingredient: "Dark Belgian ale", alternatives: ["Guinness stout", "Brown ale or dark lager"] },
+      { ingredient: "Beef chuck", alternatives: ["Beef brisket", "Beef shin (add 30 mins extra cooking)"] },
+      { ingredient: "Dijon mustard", alternatives: ["Wholegrain mustard", "German mustard"] }
     ],
     instructions: [
-      "Step 1 — Season the chicken: Pat the chicken thighs completely dry with kitchen paper — this is essential for a proper sear. Season generously all over with sea salt and black pepper.",
-      "Step 2 — Sear the chicken: Heat the olive oil in a large, wide, lidded casserole or deep frying pan over medium-high heat until shimmering. Place the chicken thighs skin-side down and sear undisturbed for 7–8 minutes until the skin is deeply golden and releases naturally from the pan. Flip and sear the other side for 3 minutes. Remove to a plate and set aside. Pour off all but 2 tablespoons of fat from the pan.",
-      "Step 3 — Build the soffritto base: Reduce the heat to medium. Add the sliced onions to the pan with a pinch of salt and cook, stirring occasionally, for 8–10 minutes until soft and beginning to turn golden at the edges. Add the garlic and cook for 1 further minute until fragrant.",
-      "Step 4 — Add peppers and spice: Add the red and yellow pepper strips, Espelette pepper, and smoked paprika. Stir everything together and cook for 5–6 minutes, until the peppers have softened and started to collapse. Scrape up any caramelised bits from the base of the pan.",
-      "Step 5 — Deglaze and build the sauce: Pour in the white wine and let it bubble vigorously for 2 minutes, scraping the pan base clean. Stir in the tinned tomatoes, tomato purée, thyme sprigs, and bay leaves. Season well and bring to a gentle simmer.",
-      "Step 6 — Braise the chicken: Nestle the seared chicken thighs back into the pan, skin-side up, ensuring they are sitting in the sauce but the skin is above the liquid. Cover with a lid and cook on a gentle simmer for 25 minutes. Remove the lid and scatter in the olives, then cook uncovered for a further 10 minutes so the sauce reduces and the chicken skin crisps back up slightly.",
-      "Step 7 — Check and rest: The chicken is done when the juices run clear when pierced at the thickest point. Taste the sauce and adjust seasoning. Discard the thyme stalks and bay leaves. Rest for 5 minutes off the heat.",
-      "Step 8 — Serve: Scatter generously with flat-leaf parsley and bring the whole casserole to the table. Serve with torn crusty baguette to mop up the sauce, or over simply steamed white rice."
+      "Step 1 — Pat the beef chunks thoroughly dry with kitchen paper and season generously with salt and black pepper. Heat 1 tbsp olive oil in a large heavy-based casserole or Dutch oven over high heat. Brown the beef in batches — don\'t crowd the pan — for 2–3 minutes per side until deeply browned all over. Transfer to a plate and set aside.",
+      "Step 2 — Reduce the heat to medium. Add the butter and remaining olive oil to the same pan. Add the sliced onions with a pinch of salt and cook, stirring occasionally, for 20–25 minutes until deeply golden and jammy. Scatter over the brown sugar and red wine vinegar, stir for 1 minute to caramelise further.",
+      "Step 3 — Sprinkle the flour over the onions and stir well to coat. Gradually pour in the dark ale, stirring constantly to avoid lumps, then add the beef stock. Nestle the browned beef back into the pot along with the thyme sprigs and bay leaves. The liquid should just cover the meat — top up with a little water if needed.",
+      "Step 4 — Preheat your oven to 160°C / 140°C fan. Spread the Dijon mustard and softened butter thickly onto one side of each bread slice. Lay the bread slices mustard-side down on top of the stew — they will sink and dissolve as it cooks, enriching and thickening the sauce.",
+      "Step 5 — Cover the casserole with a lid and transfer to the oven. Braise for 1 hour 45 minutes, checking once halfway and giving a gentle stir, until the beef is completely tender and yielding. Remove the bay leaves and thyme stalks.",
+      "Step 6 — Taste the sauce and adjust seasoning — it should be deeply savoury with a subtle bitter-sweet complexity. If the sauce seems thin, simmer uncovered on the hob for 5–10 minutes. Scatter with fresh parsley and serve directly from the pot with steamed new potatoes or more crusty bread alongside."
     ]
   },
   {
     id: "sug2",
-    title: "Maltese Bragioli — Beef Olives Stuffed with Bacon, Egg & Herbs in Red Wine Sauce",
-    category: "Beef",
-    calories: 562,
-    protein: 46,
-    fibre: 3,
-    healthScore: 64,
-    time: "1 hr 30 mins",
-    serves: "4",
-    desc: "Bragioli are Malta\'s beloved stuffed beef rolls — thin slices of beef wrapped around a savoury filling of bacon, hard-boiled egg, fresh herbs and breadcrumbs, then braised slowly in a rich, wine-dark tomato sauce until meltingly tender. This is Mediterranean comfort food at its most soulful — rustic, deeply flavourful, and the kind of dish that improves on reheating. Serve with creamy mashed potato or crusty bread to catch every drop of the sauce.",
-    emoji: "🥩",
-    image: "https://images.pexels.com/photos/33673985/pexels-photo-33673985.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    title: "Indonesian Grilled Snapper with Sambal Matah, Turmeric Rice & Crispy Shallots",
+    category: "Fish & Seafood",
+    calories: 485,
+    protein: 39,
+    fibre: 4,
+    healthScore: 76,
+    time: "50 mins",
+    serves: "2",
+    desc: "Whole snapper fillets marinated in a punchy spice paste, grilled until the skin blisters and crisps, then served with Bali\'s legendary raw sambal — a bright, fragrant salsa of lemongrass, shallots, chilli and lime. Golden turmeric rice and a shower of crispy shallots make this a genuinely spectacular plate that takes less than an hour.",
+    emoji: "🐟",
+    image: "https://images.unsplash.com/photo-1630910104722-21fe97230ef9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxJbmRvbmVzaWFuJTIwR3JpbGxlZCUyMFNuYXBwZXIlMjB3aXRoJTIwU2FtYmFsJTIwTWF0YWglMkMlMjBUdXJtZXJpYyUyMFJpY2UlMjAlMjYlMjBDcmlzcHklMjBTaGFsbG90cyUyMGZvb2QlMjBkaXNofGVufDB8MHx8fDE3ODI2MjM1OTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
     ingredientGroups: [
-      {
-        group: "Beef Olives",
-        items: [
-          { name: "Beef topside or silverside, sliced thinly (ask butcher for braising steaks, beaten thin)", quantity: 700, unit: "g" },
-          { name: "Smoked bacon or pancetta rashers", quantity: 120, unit: "g" },
-          { name: "Hard-boiled eggs, peeled and quartered lengthways", quantity: 2, unit: "" },
-          { name: "Fresh flat-leaf parsley, finely chopped", quantity: 4, unit: "tbsp" },
-          { name: "Garlic cloves, minced", quantity: 2, unit: "" },
-          { name: "Fresh breadcrumbs", quantity: 60, unit: "g" },
-          { name: "Finely grated Parmesan or Pecorino", quantity: 30, unit: "g" },
-          { name: "Nutmeg, freshly grated", quantity: 0.25, unit: "tsp" },
-          { name: "Salt and black pepper", quantity: 1, unit: "pinch" }
-        ]
-      },
-      {
-        group: "Red Wine Braising Sauce",
-        items: [
-          { name: "Olive oil", quantity: 3, unit: "tbsp" },
-          { name: "Brown onion, finely diced", quantity: 1, unit: "large" },
-          { name: "Carrot, finely diced", quantity: 1, unit: "medium" },
-          { name: "Celery stalk, finely diced", quantity: 2, unit: "" },
-          { name: "Garlic cloves, sliced", quantity: 3, unit: "" },
-          { name: "Dry red wine (e.g. Nero d\'Avola or Merlot)", quantity: 200, unit: "ml" },
-          { name: "Tinned whole or chopped tomatoes", quantity: 400, unit: "g" },
-          { name: "Tomato purée", quantity: 2, unit: "tbsp" },
-          { name: "Beef stock", quantity: 300, unit: "ml" },
-          { name: "Bay leaves", quantity: 2, unit: "" },
-          { name: "Fresh rosemary sprig", quantity: 1, unit: "" }
-        ]
-      },
-      {
-        group: "To Serve",
-        items: [
-          { name: "Creamy mashed potato or crusty bread", quantity: 1, unit: "portion" },
-          { name: "Flat-leaf parsley, extra to garnish", quantity: 1, unit: "tbsp" }
-        ]
-      }
+      { group: "Fish & Marinade", items: [
+        { name: "Snapper fillets, skin on", quantity: 2, unit: "x 200g" },
+        { name: "Ground turmeric", quantity: 1, unit: "tsp" },
+        { name: "Ground coriander", quantity: 1, unit: "tsp" },
+        { name: "Garlic cloves, minced", quantity: 2, unit: "" },
+        { name: "Fresh ginger, grated", quantity: 1, unit: "tsp" },
+        { name: "Vegetable oil", quantity: 2, unit: "tbsp" },
+        { name: "Lime juice", quantity: 1, unit: "tbsp" },
+        { name: "Salt", quantity: 0, unit: "to taste" }
+      ]},
+      { group: "Sambal Matah", items: [
+        { name: "Banana shallots, very finely sliced into rings", quantity: 4, unit: "" },
+        { name: "Lemongrass stalks, white part only, very finely sliced", quantity: 2, unit: "" },
+        { name: "Red bird\'s eye chillies, finely sliced (deseed for less heat)", quantity: 2, unit: "" },
+        { name: "Kaffir lime leaves, central rib removed, very finely shredded", quantity: 4, unit: "" },
+        { name: "Coconut oil or light vegetable oil", quantity: 2, unit: "tbsp" },
+        { name: "Lime juice", quantity: 1.5, unit: "tbsp" },
+        { name: "Flaky sea salt", quantity: 0, unit: "to taste" }
+      ]},
+      { group: "Turmeric Rice", items: [
+        { name: "Jasmine rice, rinsed", quantity: 160, unit: "g" },
+        { name: "Coconut milk", quantity: 100, unit: "ml" },
+        { name: "Water", quantity: 200, unit: "ml" },
+        { name: "Ground turmeric", quantity: 0.5, unit: "tsp" },
+        { name: "Pandan leaf (optional)", quantity: 1, unit: "" },
+        { name: "Salt", quantity: 0.5, unit: "tsp" }
+      ]},
+      { group: "To Finish", items: [
+        { name: "Crispy fried shallots (shop-bought is fine)", quantity: 3, unit: "tbsp" },
+        { name: "Fresh coriander leaves", quantity: 1, unit: "small handful" },
+        { name: "Lime wedges", quantity: 2, unit: "" }
+      ]}
     ],
     substitutes: [
-      { ingredient: "Beef topside, sliced thin", alternatives: ["Ready-made minute steaks, beaten flat", "Thin-cut rump steak"] },
-      { ingredient: "Dry red wine", alternatives: ["Extra beef stock with a splash of red wine vinegar", "Marsala wine"] },
-      { ingredient: "Pancetta", alternatives: ["Streaky bacon", "Prosciutto"] },
-      { ingredient: "Parmesan", alternatives: ["Pecorino Romano", "Strong cheddar, finely grated"] }
+      { ingredient: "Snapper fillets", alternatives: ["Sea bream fillets", "Barramundi or tilapia fillets"] },
+      { ingredient: "Kaffir lime leaves", alternatives: ["Zest of 1 lime", "Omit if unavailable"] },
+      { ingredient: "Bird\'s eye chillies", alternatives: ["1 long red chilli", "Dried chilli flakes to taste"] }
     ],
     instructions: [
-      "Step 1 — Prepare the beef: If your slices are thicker than 4–5mm, place them between two sheets of baking paper and pound with a rolling pin or meat mallet until thin and even. You want roughly 8 thin steaks. Season lightly with salt and pepper on both sides.",
-      "Step 2 — Make the stuffing: In a bowl, mix together the breadcrumbs, grated Parmesan, minced garlic, chopped parsley, and nutmeg. Season well. The mixture should be dry and crumbly — it absorbs the juices during braising.",
-      "Step 3 — Assemble the bragioli: Lay a beef slice flat. Place a bacon rasher on top, followed by a spoonful of breadcrumb mixture spread over the centre, and a quarter of hard-boiled egg at one end. Roll up tightly around the filling from the egg end, tucking in the sides as you go like a parcel. Secure with two cocktail sticks or tie with kitchen string. Repeat with all slices.",
-      "Step 4 — Brown the beef olives: Heat 2 tablespoons of olive oil in a wide, heavy casserole over medium-high heat. Brown the bragioli in batches, turning carefully, until golden on all sides — around 3–4 minutes per batch. Set aside on a plate. Don\'t rush this step; the colour means flavour.",
-      "Step 5 — Build the sauce base: In the same casserole, add the remaining tablespoon of olive oil and reduce the heat to medium. Add the diced onion, carrot, and celery with a pinch of salt. Cook, stirring occasionally, for 8–10 minutes until the vegetables are soft and lightly golden. Add the sliced garlic and cook for 1 minute more.",
-      "Step 6 — Deglaze and add liquids: Pour in the red wine and let it bubble hard for 3 minutes, scraping up all the caramelised sediment from the pan base. Stir in the tomato purée and cook for 1 minute. Add the tinned tomatoes, beef stock, bay leaves, and rosemary sprig. Stir and bring to a gentle simmer.",
-      "Step 7 — Braise low and slow: Nestle the browned bragioli back into the sauce — they should be mostly submerged. Bring back to a gentle simmer, then cover tightly with a lid and cook on the lowest heat for 50–60 minutes, turning the bragioli once halfway through, until the beef is completely tender and the sauce is rich and reduced.",
-      "Step 8 — Finish and serve: Remove the cocktail sticks or string from the bragioli. Taste the sauce and adjust seasoning — if it needs depth, simmer uncovered for 5 more minutes. Discard the bay leaves and rosemary. Spoon the bragioli onto plates over creamy mashed potato, ladle the sauce generously over the top, and finish with a little extra chopped parsley."
+      "Step 1 — Start the turmeric rice. Combine rinsed jasmine rice, coconut milk, water, turmeric, salt and pandan leaf (if using) in a small saucepan. Bring to a boil, then reduce to the lowest heat, cover tightly and cook for 12 minutes. Remove from heat and leave to steam, covered, for a further 10 minutes. Do not lift the lid until ready to serve.",
+      "Step 2 — Mix the marinade ingredients — turmeric, ground coriander, minced garlic, grated ginger, oil, lime juice and salt — into a paste. Score the snapper fillets 2–3 times through the skin with a sharp knife. Rub the marinade all over the fish, getting into the scores. Leave to marinate for at least 15 minutes at room temperature.",
+      "Step 3 — Make the sambal matah. Combine the finely sliced shallots, lemongrass, chillies and kaffir lime leaves in a bowl. Warm the coconut oil in a small pan until just hot — not smoking — and pour it directly over the shallot mixture. Add the lime juice and flaky salt, stir well and set aside. The heat will gently cook the shallots just enough to mellow them slightly.",
+      "Step 4 — Heat a heavy griddle pan or non-stick frying pan over high heat until very hot. Lay the fish fillets skin-side down and press gently with a spatula to ensure full contact. Cook for 3–4 minutes without moving until the skin is crisp and golden, then carefully flip and cook for a further 1–2 minutes until just cooked through. The fish should flake easily at the thickest point.",
+      "Step 5 — Fluff the turmeric rice with a fork and remove the pandan leaf. Mound the rice in bowls or plates. Lay the grilled snapper alongside, spoon the sambal matah generously over the fish, scatter with crispy shallots and fresh coriander, and serve immediately with lime wedges."
     ]
   },
   {
     id: "sug3",
-    title: "Miso-Glazed Aubergine & Soba Noodle Bowl with Pickled Ginger, Sesame & Spring Onion",
+    title: "Pugliese Fava Bean & Chicory — Fave e Cicoria with Toasted Bread, Crispy Capers & Agrumato",
     category: "Vegan",
-    calories: 445,
-    protein: 16,
-    fibre: 8,
-    healthScore: 85,
-    time: "40 mins",
-    serves: "2",
-    desc: "Halved aubergines brushed with a sweet, deeply savoury white miso and mirin glaze, then roasted until caramelised and collapsing, served over cool buckwheat soba noodles with quick-pickled ginger, toasted sesame, crispy shallots and a punchy sesame-soy dressing. This is Japanese izakaya cooking at its most effortlessly satisfying — the umami-rich miso glaze against the nutty soba is a match of real elegance. On the table in 40 minutes and genuinely stunning to look at.",
-    emoji: "🍆",
-    image: "https://images.unsplash.com/photo-1649255653482-98835d2a5f42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxNaXNvLUdsYXplZCUyMEF1YmVyZ2luZSUyMCUyNiUyMFNvYmElMjBOb29kbGUlMjBCb3dsJTIwd2l0aCUyMFBpY2tsZWQlMjBHaW5nZXIlMkMlMjBTZXNhbWUlMjAlMjYlMjBTcHJpbmclMjBPbmlvbiUyMGZvb2QlMjBkaXNofGVufDB8MHx8fDE3ODI1Mzc1MjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    calories: 390,
+    protein: 18,
+    fibre: 14,
+    healthScore: 88,
+    time: "45 mins",
+    serves: "4",
+    desc: "One of Italy\'s oldest and most quietly brilliant dishes — dried fava beans slowly simmered into a silky, comforting purée, paired with bitter wilted chicory and finished with exceptional olive oil. The contrast of creamy, earthy beans against pleasantly bitter greens is deeply satisfying, elevated by crispy capers and a pile of charred bread for scooping. Simple, ancient, and absolutely delicious.",
+    emoji: "🫘",
+    image: "https://images.unsplash.com/photo-1751638582376-3071e1fddb4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxQdWdsaWVzZSUyMEZhdmElMjBCZWFuJTIwJTI2JTIwQ2hpY29yeSUyMCVFMiU4MCU5NCUyMEZhdmUlMjBlJTIwQ2ljb3JpYSUyMHdpdGglMjBUb2FzdGVkJTIwQnJlYWQlMkMlMjBDcmlzcHklMjBDYXBlcnMlMjAlMjYlMjBBZ3J1bWF0byUyMGZvb2QlMjBkaXNofGVufDB8MHx8fDE3ODI2MjM1OTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
     ingredientGroups: [
-      {
-        group: "Miso-Glazed Aubergine",
-        items: [
-          { name: "Aubergines, halved lengthways", quantity: 2, unit: "large" },
-          { name: "White miso paste", quantity: 3, unit: "tbsp" },
-          { name: "Mirin", quantity: 2, unit: "tbsp" },
-          { name: "Soy sauce (light)", quantity: 1, unit: "tbsp" },
-          { name: "Caster sugar", quantity: 1, unit: "tsp" },
-          { name: "Sesame oil", quantity: 1, unit: "tsp" },
-          { name: "Neutral oil (vegetable or sunflower)", quantity: 2, unit: "tbsp" }
-        ]
-      },
-      {
-        group: "Soba Noodles & Dressing",
-        items: [
-          { name: "Dried soba (buckwheat) noodles", quantity: 180, unit: "g" },
-          { name: "Soy sauce", quantity: 2, unit: "tbsp" },
-          { name: "Rice vinegar", quantity: 1.5, unit: "tbsp" },
-          { name: "Toasted sesame oil", quantity: 1, unit: "tbsp" },
-          { name: "Maple syrup or agave", quantity: 1, unit: "tsp" },
-          { name: "Grated fresh ginger", quantity: 1, unit: "tsp" },
-          { name: "Garlic clove, finely grated", quantity: 1, unit: "" },
-          { name: "Chilli flakes or shichimi togarashi", quantity: 0.5, unit: "tsp" }
-        ]
-      },
-      {
-        group: "Toppings",
-        items: [
-          { name: "Spring onions, finely sliced on the diagonal", quantity: 4, unit: "" },
-          { name: "Toasted sesame seeds (white and black mixed)", quantity: 2, unit: "tbsp" },
-          { name: "Pickled sushi ginger (beni shoga or pink ginger)", quantity: 40, unit: "g" },
-          { name: "Crispy fried shallots (shop-bought)", quantity: 3, unit: "tbsp" },
-          { name: "Fresh coriander or shiso leaves", quantity: 1, unit: "small handful" },
-          { name: "Cucumber, julienned or thinly sliced", quantity: 0.5, unit: "" }
-        ]
-      }
+      { group: "Fava Bean Purée", items: [
+        { name: "Dried split fava beans (skinless), rinsed", quantity: 300, unit: "g" },
+        { name: "Potato, peeled and diced", quantity: 1, unit: "medium" },
+        { name: "Garlic cloves, peeled", quantity: 3, unit: "" },
+        { name: "Extra virgin olive oil, good quality", quantity: 5, unit: "tbsp" },
+        { name: "Water or light vegetable stock", quantity: 900, unit: "ml" },
+        { name: "Salt and black pepper", quantity: 0, unit: "to taste" }
+      ]},
+      { group: "Wilted Chicory", items: [
+        { name: "Heads of chicory (cicoria or curly endive), roughly chopped", quantity: 2, unit: "large" },
+        { name: "Garlic cloves, finely sliced", quantity: 2, unit: "" },
+        { name: "Dried red chilli flakes", quantity: 0.5, unit: "tsp" },
+        { name: "Extra virgin olive oil", quantity: 3, unit: "tbsp" },
+        { name: "Salt", quantity: 0, unit: "to taste" }
+      ]},
+      { group: "Crispy Capers & Toast", items: [
+        { name: "Capers, drained and patted dry", quantity: 3, unit: "tbsp" },
+        { name: "Olive oil for frying", quantity: 2, unit: "tbsp" },
+        { name: "Thick slices sourdough or Pugliese bread", quantity: 4, unit: "" },
+        { name: "Garlic clove, halved", quantity: 1, unit: "" }
+      ]},
+      { group: "To Finish", items: [
+        { name: "Extra virgin olive oil (ideally Pugliese or agrumato lemon oil), to drizzle", quantity: 0, unit: "generous drizzle" },
+        { name: "Lemon wedges", quantity: 4, unit: "" },
+        { name: "Flaky sea salt", quantity: 0, unit: "to taste" }
+      ]}
     ],
     substitutes: [
-      { ingredient: "White miso paste", alternatives: ["Red miso paste (use 2 tbsp — stronger flavour)", "Brown rice miso"] },
-      { ingredient: "Mirin", alternatives: ["Dry sherry with a pinch of sugar", "Rice vinegar with 1 extra tsp sugar"] },
-      { ingredient: "Soba noodles", alternatives: ["Wholegrain udon noodles", "Brown rice noodles for gluten-free"] },
-      { ingredient: "Pickled sushi ginger", alternatives: ["Quick-pickled cucumber (sliced thin in rice vinegar and salt for 10 mins)", "Thinly sliced radish"] }
+      { ingredient: "Dried split fava beans", alternatives: ["Canned fava beans (reduce cooking to 15 mins)", "Dried yellow split peas"] },
+      { ingredient: "Chicory / curly endive", alternatives: ["Cavolo nero, stems removed", "Swiss chard or kale"] },
+      { ingredient: "Agrumato lemon oil", alternatives: ["Good quality extra virgin olive oil with a squeeze of lemon", "Regular finishing olive oil"] }
     ],
     instructions: [
-      "Step 1 — Preheat and prep the aubergine: Heat your oven to 220°C / 200°C fan. Score the cut faces of the aubergines in a deep crosshatch pattern — cut down to around 1cm from the skin. This helps the glaze penetrate deeply and the flesh to cook evenly. Brush all over the cut surfaces with neutral oil and place cut-side up on a lined baking tray. Roast for 20 minutes until the flesh is soft and beginning to turn golden.",
-      "Step 2 — Make the miso glaze: While the aubergines are in their first roast, whisk together the white miso, mirin, soy sauce, caster sugar, and sesame oil in a small bowl until completely smooth and glossy. Taste — it should be intensely savoury, sweet, and salty.",
-      "Step 3 — Glaze and roast again: Remove the aubergines from the oven. Spoon and brush the miso glaze generously over the cut surfaces, making sure it gets into the score marks. Return to the oven and roast for a further 12–15 minutes until the glaze is caramelised, bubbling, and deeply golden in patches. Watch carefully at the end — the sugar in the miso can catch quickly.",
-      "Step 4 — Cook the soba noodles: Bring a large pan of unsalted water to a rolling boil. Cook the soba noodles according to the packet instructions (usually 5–6 minutes). Drain and immediately rinse thoroughly under cold running water — this stops the cooking and removes the starchy surface, keeping the noodles springy and separate rather than gluey.",
-      "Step 5 — Make the dressing: In a bowl large enough to toss the noodles, whisk together the soy sauce, rice vinegar, toasted sesame oil, maple syrup, grated ginger, grated garlic, and chilli flakes. Taste — it should be bold, tangy, nutty, and slightly sweet.",
-      "Step 6 — Dress the noodles: Add the drained cold soba noodles to the dressing bowl and toss well to coat every strand. Add the julienned cucumber and half the spring onions, toss again.",
-      "Step 7 — Assemble the bowls: Divide the dressed soba noodles between two wide bowls. Place a glazed aubergine half on top of each. Scatter over the toasted sesame seeds, crispy fried shallots, pickled ginger, remaining spring onions, and fresh coriander or shiso leaves.",
-      "Step 8 — Serve immediately: The contrast of warm, caramelised miso aubergine against cool, nutty noodles is the whole point of this dish — serve straight away while the aubergine is still hot."
+      "Step 1 — Place the rinsed split fava beans and diced potato in a medium saucepan with the peeled garlic cloves. Cover with the water or stock — no need to soak split fava beans. Bring to a boil, skimming off any foam that rises. Reduce the heat to a gentle simmer, partially cover, and cook for 30–35 minutes, stirring occasionally, until the beans have completely broken down and absorbed most of the liquid.",
+      "Step 2 — Once the beans are very soft and almost creamy, remove from heat. Beat vigorously with a wooden spoon or use a potato masher to create a thick, rough purée — it doesn\'t need to be perfectly smooth, some texture is welcome. Stir in 4 tbsp of the best olive oil you have, season generously with salt and black pepper. The purée should be thick enough to hold its shape but still spoonable — add a splash of warm water if too thick.",
+      "Step 3 — While the beans cook, prepare the crispy capers. Heat 2 tbsp olive oil in a small frying pan over medium-high heat. Add the patted-dry capers and fry, shaking the pan, for 2–3 minutes until they burst open and become golden and crispy. Transfer to a piece of kitchen paper and set aside — they will crisp further as they cool.",
+      "Step 4 — In a large sauté pan, warm 3 tbsp olive oil over medium heat. Add the finely sliced garlic and chilli flakes and gently sizzle for 1 minute until fragrant but not coloured. Add the chopped chicory with a splash of water and a good pinch of salt. Toss and cook for 4–5 minutes until wilted and tender but still with a slight bite. Taste — the pleasant bitterness should be mellowed by the oil and garlic.",
+      "Step 5 — Toast or griddle the thick bread slices until charred at the edges. While still hot, rub each slice vigorously with the cut side of the halved garlic clove.",
+      "Step 6 — To serve, spoon a generous mound of fava bean purée into shallow bowls. Pile the wilted chicory alongside or on top. Scatter the crispy capers over everything and finish with a very generous drizzle of your best olive oil — this is not the moment to be restrained. Serve immediately with the garlic toasts and lemon wedges for squeezing."
     ]
   }
 ];

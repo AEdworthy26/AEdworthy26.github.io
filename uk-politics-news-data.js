@@ -1,60 +1,60 @@
 // uk-politics-news-data.js
-// Auto-updated 2026-06-27 — do not edit manually
+// Auto-updated 2026-06-28 — do not edit manually
 
 var UK_POLITICS_NEWS = {
-  date: "2026-06-27",
+  date: "2026-06-28",
   main: {
-    title: "Starmer Rebuffs Home Secretary\'s Request to Sack Immigration Minister",
+    title: "Home Secretary Sought to Restrict Minister\'s Access to Papers Amid Calls for His Sacking",
     category: "Politics",
     content: [
-      "A significant rift has opened between Prime Minister Keir Starmer and Home Secretary Shabana Mahmood after Downing Street publicly rebuffed her demand to sack immigration minister Mike Tapp. The row erupted after Tapp wrote an unauthorised article about immigration policy without the Home Secretary\'s knowledge or approval. Downing Street\'s decision to stand by Tapp, while simultaneously issuing a rebuke to both parties, has thrown the internal tensions within the Labour government into sharp relief.",
-      "The dispute escalated further when it emerged that Mahmood had sought to restrict Tapp\'s access to sensitive departmental documents without her personal sign-off. This extraordinary move — effectively attempting to sideline a junior minister within her own department — deepened the sense of a serious breakdown in trust between the two figures. Such an action is highly unusual in Westminster, where ministers are typically granted access to papers relevant to their brief as a matter of course.",
-      "Mahmood, who has been leading the controversial immigration bill through Parliament and is widely regarded as a frontrunner to succeed Starmer as Labour leader, appeared to be asserting her authority over a minister who went beyond his sanctioned remit. Tapp has been described as a loyal supporter of Starmer, which may have added a political dimension to the dispute that goes beyond a simple question of ministerial discipline. The episode has prompted questions about the management of the Home Office at a sensitive moment for immigration policy.",
-      "Downing Street\'s response was notably even-handed, issuing a rebuke to both Mahmood and Tapp rather than siding unequivocally with the Home Secretary. This signals that Number 10 was unwilling to grant Mahmood the unambiguous public backing she had sought, and that Starmer is keen to maintain his authority over Cabinet appointments and dismissals. The Prime Minister\'s office made clear that the power to hire and fire ministers rests with the Prime Minister alone, not with individual Cabinet members.",
-      "The clash comes at a particularly delicate time, with Mahmood in the process of trying to shore up support for her immigration bill among the progressive left of the Labour Party, including by accelerating plans for safe and legal asylum routes. Any perception of internal chaos at the Home Office risks undermining her efforts to sell the bill as a coherent and principled reform. With Labour\'s leadership transition expected in the coming months, the public nature of this dispute is likely to have lasting consequences for the relationship between two of the party\'s most senior figures."
+      "A significant rift within the new Labour government has deepened following revelations that Home Secretary Shabana Mahmood sought to deny migration minister Mike Tapp access to sensitive departmental documents without her explicit approval. The row broke out after Tapp wrote an unauthorised article about immigration policy, an act the Home Secretary regarded as a serious breach of collective ministerial responsibility. The episode has thrown a spotlight on the internal tensions that have begun to surface in the early weeks of Andy Burnham\'s administration.",
+      "Downing Street confirmed that Mike Tapp, who has been described as a loyal supporter of Keir Starmer, remains in his post despite Mahmood\'s reported calls for him to be dismissed. The Home Secretary\'s attempt to restrict Tapp\'s access to papers represents an unusual and provocative move, effectively seeking to curtail a fellow minister\'s ability to do his job while the dispute was ongoing. Such an action is highly irregular in British constitutional practice, where ministers within the same department are ordinarily granted appropriate security clearances as a matter of course.",
+      "The unauthorised article written by Tapp is understood to have touched on immigration policy in ways that were not sanctioned by the Home Office or coordinated with the Home Secretary\'s office. Immigration remains one of the most politically sensitive issues facing the government, with Reform UK continuing to press Labour hard on the issue from the opposition benches. Any appearance of disarray or conflicting messages on the subject risks handing political ammunition to Nigel Farage\'s party and undermining the government\'s efforts to project a coherent strategy.",
+      "The dispute between Mahmood and Tapp also appears to reflect a broader tension within the government between those aligned with the new Burnham leadership and figures who were closely associated with the Starmer era. The fact that Downing Street has publicly backed Tapp by confirming he will remain in post suggests that Number 10 was not willing to allow the Home Secretary to dictate ministerial appointments unilaterally. This public divergence between the Home Office and Downing Street is an early indicator of the internal power dynamics still being negotiated within the administration.",
+      "Political commentators have noted that the episode is an inauspicious early sign for a government that will need unity and discipline to navigate a challenging legislative agenda. The row has raised questions about Mahmood\'s relationship with the new prime minister and her standing within Cabinet. As Andy Burnham continues to consolidate his position — facing ongoing questions about his democratic mandate and the possibility of an early general election — the last thing his government needs is a high-profile internal feud playing out publicly over one of the most contentious policy areas in British politics."
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/1b22/live/9b0fd9f0-716c-11f1-b1db-af71d47507d6.png",
-    source: "BBC News",
-    sourceUrl: "https://www.bbc.co.uk/news/articles/cj9g7w0xnnjo?at_medium=RSS&at_campaign=rss"
+    image: "https://i.guim.co.uk/img/media/1becbe22b879dbfe80e34fc491586b04e951f857/3768_366_1469_1176/master/1469.jpg?width=1200&quality=85&auto=format&fit=max&s=f4f0da3d740a5ae7123664cce61de0ee",
+    source: "The Guardian",
+    sourceUrl: "https://www.theguardian.com/uk-news/2026/jun/26/minister-mike-tapp-row-home-secretary-shabana-mahmood"
   },
   secondary: [
     {
       id: "uk1",
-      title: "Home Office to Introduce New 'Safe and Legal' Asylum Routes to UK",
-      summary: "Home Secretary Shabana Mahmood has announced plans for capped safe and legal routes into the UK as part of efforts to restore public confidence in the asylum system.",
+      title: "Minister Working Up Plans for State-Owned Housing Developer",
+      summary: "Housing Secretary Steve Reed is developing proposals for a government-run housing developer that could borrow at lower rates than private firms to accelerate housebuilding.",
       body: [
-        "Shabana Mahmood has outlined plans to speed up the introduction of new safe and legal routes for refugees to enter the UK, a move designed to win over the progressive wing of the Labour Party ahead of a crucial vote on her immigration bill. The Home Secretary said the capped routes would help restore confidence in a system that many feel has lost public trust. The announcement is framed as a central pillar of the wider asylum and refugees legislation currently making its way through Parliament.",
-        "The move is seen as a concession to Labour left-wingers who have expressed discomfort with some of the more restrictive elements of the immigration bill, and comes at a politically sensitive moment as the party prepares for a leadership transition. By accelerating this aspect of the legislation, Mahmood hopes to build a broader coalition of support within her own party while also appealing to those who want to see a more humane approach to asylum embedded in law."
+        "According to details leaked to the Guardian, Steve Reed has been working up plans to establish a new state-owned housing developer, with the government looking for fresh ways to stimulate persistently low rates of housebuilding across England. The proposed body would benefit from the government\'s ability to borrow at lower interest rates than private developers, potentially giving it a significant financial advantage in bringing new homes to market.",
+        "The proposal represents one of the more interventionist ideas to emerge from the Burnham government\'s early policy discussions, and signals a willingness to consider direct state involvement in housing delivery rather than relying solely on incentivising the private sector. If taken forward, the scheme would mark a significant shift in housing policy and could prove contentious both within the Labour Party and among private developers."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/b677/live/8a16eaa0-71ab-11f1-a700-c5ebf7bd79d0.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.co.uk/news/articles/c5yz952dm74o?at_medium=RSS&at_campaign=rss",
+      image: "https://i.guim.co.uk/img/media/85f0e859f90a8af9309e6d35750eab17114797ff/625_0_6625_5303/master/6625.jpg?width=1200&quality=85&auto=format&fit=max&s=5a0934ee0d20f8c6bc54ef526ee7f39e",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/society/2026/jun/27/uk-minister-plans-for-state-owned-housing-developer-exclusive",
       category: "Politics"
     },
     {
       id: "uk2",
-      title: "Andy Burnham Pledges to Donate 15% of MP\'s Salary to Local Causes",
-      summary: "Andy Burnham, the new MP for Makerfield and widely expected next prime minister, has committed to giving 15% of his parliamentary salary to local causes in his constituency.",
+      title: "Lib Dems Face Call for Inquiry After Unlawfully Deselecting Candidate Over Religious Beliefs",
+      summary: "The Liberal Democrats are facing demands for a formal inquiry after admitting they unlawfully discriminated against election candidate David Campanale because of his religious beliefs.",
       body: [
-        "Andy Burnham, who recently won the Makerfield by-election and is regarded as the frontrunner to become the next prime minister, has announced he will donate 15% of his MP\'s salary — currently worth around £98,599 — to local causes in his constituency. The gesture puts him among a number of parliamentarians who choose to give back a portion of their pay to their communities. Burnham\'s move is likely to be seen as an early signal of the kind of politics he intends to project as he prepares for a potential move to Downing Street.",
-        "The announcement comes at a moment of intense scrutiny of Burnham\'s political positioning, with debates ongoing about whether he could and should govern without calling a general election. By emphasising his local commitments, Burnham appears to be keen to maintain a connection to grassroots concerns even as he navigates the highest levels of national politics."
+        "The Liberal Democrats have admitted that they unlawfully discriminated against prospective parliamentary candidate David Campanale on the grounds of his religious beliefs, prompting calls for a full independent inquiry into the party\'s candidate selection processes. The admission represents a serious embarrassment for a party that has positioned itself as a champion of individual rights and equality under the law.",
+        "The case raises uncomfortable questions about how the Liberal Democrats vet and deselect candidates, and whether religious belief is being treated as a disqualifying factor in certain internal processes. Critics have argued that the party must now take decisive action to review its procedures and ensure that such unlawful discrimination cannot occur again in future selection contests."
       ],
-      image: "https://i.guim.co.uk/img/media/b19cb5f7185a7c1d3dfd9c3a07fcdbf746615bc7/1482_38_6898_5519/master/6898.jpg?width=1200&quality=85&auto=format&fit=max&s=da4ffb78a00ebbfa8cf35f8d2925f810",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/politics/2026/jun/26/andy-burnham-donate-15-per-cent-mp-pay-makerfield",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/d738/live/3d40a220-717e-11f1-a417-dfae8167aae6.png",
+      source: "BBC News",
+      url: "https://www.bbc.co.uk/news/articles/c4gypnyk788o?at_medium=RSS&at_campaign=rss",
       category: "Politics"
     },
     {
       id: "uk3",
-      title: "Conservatives Promise Tax Incentive as Part of 50,000 Reservist Pledge",
-      summary: "The Conservative Party has announced plans to make reserve military service tax-free for up to 30 days per year, as part of a wider pledge to recruit 50,000 new reservists.",
+      title: "Mahmood Announces New Refugee Sponsorship Route Into the UK",
+      summary: "Home Secretary Shabana Mahmood has unveiled a new capped refugee sponsorship route, saying it will help restore public confidence in the asylum system.",
       body: [
-        "The Conservative Party has set out a plan to boost the UK\'s military reserve forces to 50,000 by removing income tax on up to 30 days of reserve service per year, with the cost to be funded partly through reintroducing the two-child benefit cap. The policy was met with criticism from Labour, who accused the Conservatives of attempting to 'rewrite history' given the defence cuts made during their years in government. The proposal is part of a broader Conservative effort to position the party as a credible voice on national security and defence.",
-        "The pledge signals an attempt by the Conservatives under Kemi Badenoch to draw a clearer dividing line with Labour on defence spending and military readiness. However, the funding mechanism — linking the policy to the two-child benefit cap — is likely to provoke fresh controversy around child poverty, making the political trade-offs involved a central part of the debate."
+        "Despite the internal row engulfing her department, Home Secretary Shabana Mahmood has announced a new refugee sponsorship route into the United Kingdom, describing it as a 'capped safe and legal' pathway designed to give the public confidence that arrivals are being managed in an orderly and controlled manner. The announcement is intended to demonstrate that the government has a credible alternative to dangerous small-boat crossings.",
+        "The new route is part of a broader effort by the Home Office to reshape the UK\'s asylum and refugee policy following years of political controversy over illegal Channel crossings and the backlog in asylum case processing. By placing a cap on numbers and routing arrivals through a formal sponsorship mechanism, the government hopes to reframe the debate around managed legal migration rather than irregular arrivals."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/45f7/live/df741550-7182-11f1-8e1d-bbbb1017d210.jpg",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/7810/live/7c443930-71f8-11f1-9e90-3ff6dfd27be0.jpg",
       source: "BBC News",
-      url: "https://www.bbc.co.uk/news/articles/c9v219gx79wo?at_medium=RSS&at_campaign=rss",
+      url: "https://www.bbc.co.uk/news/articles/c5yz952dm74o?at_medium=RSS&at_campaign=rss",
       category: "Politics"
     }
   ]
