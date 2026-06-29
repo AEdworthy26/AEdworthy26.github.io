@@ -3,6 +3,45 @@
 
 var RICS_LOG = [
   {
+    "date": "2026-06-29",
+    "topic": "Design and Access Statements: Content, Strategy and Assessor Scrutiny in Residential-Led Planning Applications",
+    "module": "Planning and Development Management",
+    "level": 2,
+    "apc_competency": "Planning and Development Management (Level 2)",
+    "focus": "This lesson examines the strategic role of the Design and Access Statement (DAS) in securing planning consent on residential-led schemes \u2014 covering statutory content requirements, how the DAS interacts with design evolution, and the way assessors and inspectors use it to test design quality and accessibility. For a candidate managing design teams and coordinating pre-application engagement, the DAS is a live project tool rather than an administrative formality.",
+    "image": "https://images.unsplash.com/photo-1618660920685-4505debb785a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxEZXNpZ24lMjBhbmQlMjBBY2Nlc3MlMjBVSyUyMHByb3BlcnR5JTIwYXJjaGl0ZWN0dXJlJTIwYnVpbGRpbmclMjBleHRlcmlvcnxlbnwwfDB8fHwxNzgyNzA5ODc4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "content": [],
+    "summary": [
+      "A Design and Access Statement is a statutory requirement under Article 7 DMPO 2015 for major applications and applications in designated areas \u2014 it must explain design principles, document design evolution and address access for all users, not merely describe the final scheme.",
+      "The design evolution section is the most frequently underdeveloped part of a DAS and the most scrutinised by LPAs, Design Review Panels and Inspectors \u2014 it should explicitly track pre-application feedback, DRP recommendations and design iterations with before/after evidence.",
+      "The access element of the DAS must address inclusive design at both public realm and dwelling level, including compliance with Part M categories M4(2) and M4(3), particularly on schemes in London where the London Plan mandates minimum proportions of accessible and wheelchair-user homes.",
+      "A strategically prepared DAS \u2014 treated as a live document from pre-application stage onwards \u2014 reduces the risk of design-related refusals, strengthens the LPA officer report and creates a robust evidential audit trail for appeals.",
+      "Post-consent design changes that deviate from DAS principles should be accompanied by a supplementary design justification note to avoid LPA objections on condition submissions and to support NMA or Section 73 applications."
+    ],
+    "qa": [
+      {
+        "q": "Under what statutory provision is a Design and Access Statement required, and for which categories of application does the requirement apply?",
+        "a": "Article 7 of the Town and Country Planning (Development Management Procedure) (England) Order 2015 (DMPO 2015) requires a DAS for: (1) major development applications (10 or more dwellings, or 1,000 sqm or more floorspace); (2) applications for development within World Heritage Sites, National Parks or conservation areas regardless of scale; and (3) listed building consent applications. The DAS must address both design principles and access for all users and must demonstrate that design has evolved iteratively in response to context and consultation."
+      },
+      {
+        "q": "You are managing a 180-unit residential scheme in a conservation area and your LPA has refused on design grounds, citing the DAS as insufficient. What are the main weaknesses that might have led to this, and how would you address them on appeal?",
+        "a": "The most common weaknesses are: (1) a design evolution section that fails to document iterative response to LPA and/or DRP feedback, making the design appear pre-determined; (2) inadequate contextual analysis \u2014 no character appraisal of the conservation area, no verified views or photomontages showing impact on setting; (3) failure to cross-reference the LPA\\'s adopted design SPD or conservation area appraisal; and (4) access section treated as boilerplate without addressing the tension between inclusive design requirements and conservation character. On appeal, I would commission a revised DAS as a proof of evidence document that explicitly tracks every design dialogue, documents the evolution from initial concept to final scheme, and benchmarks the design against NPPF Chapter 12, the National Design Guide and the conservation area appraisal. The design witness would then be cross-examined against this narrative at hearing."
+      },
+      {
+        "q": "What does the National Model Design Code 2021 require of an LPA, and how should an applicant\\'s DAS respond to a locally adopted design code?",
+        "a": "The NMDC 2021 provides LPAs with a menu-based toolkit \u2014 organised across ten design parameters including built form, movement, nature and public space \u2014 to prepare their own local design codes. Where an LPA has adopted a local code (either area-wide or site-specific), the code is a material consideration in the determination of planning applications. The applicant\\'s DAS should: (1) acknowledge the adopted code and its specific parameters; (2) demonstrate compliance parameter by parameter, with cross-references to drawings and schedules; and (3) where the scheme diverges from a code parameter, provide a reasoned justification grounded in site-specific circumstances. Failure to engage with an adopted local design code in the DAS significantly increases the risk of a design-related refusal."
+      },
+      {
+        "q": "How do Part M building regulations categories interact with the access section of the DAS on a policy-compliant residential scheme in a London Borough?",
+        "a": "Under London Plan Policy D7, new residential schemes must achieve a minimum of 10% wheelchair-accessible units to M4(3) standard and all remaining units must meet M4(2) accessible and adaptable standard (with M4(1) as the absolute baseline for any units that cannot achieve higher categories, subject to justification). The DAS access section must: (1) state the proposed M4 mix across the unit schedule; (2) explain how the building typology and design accommodate M4(2) and M4(3) requirements \u2014 including lift provision, entrance-level design, corridor widths (minimum 1,200mm for M4(2)), turning circles and accessible bathroom/kitchen layouts; and (3) cross-reference the Transport Assessment and Travel Plan where accessibility to public transport underpins the access strategy. M4(3) wheelchair-accessible units (M4(3)(2)(b)) must be designed as fully fitted wheelchair-accessible from the outset, while M4(3)(2)(a) units are designed to be readily adapted."
+      },
+      {
+        "q": "A post-consent variation to a scheme involves substituting the approved brick facade with a through-coloured render system. The LPA objects on condition submission, citing inconsistency with the approved DAS. How do you respond?",
+        "a": "The LPA\\'s concern is legitimate \u2014 the DAS establishes the design principles against which condition submissions are assessed, and a material change to the facade system may conflict with the documented rationale for the original approval. The correct response is to prepare a supplementary design justification note that: (1) identifies the specific DAS principles relating to materiality and character \u2014 typically referencing the contextual analysis and character response sections; (2) demonstrates that the proposed render system achieves the same design intent (texture, visual weight, colour palette, townscape response) as the approved brick, with reference to material samples and comparable precedents; and (3) explains any technical or programme justification for the change. If the LPA remains unsatisfied, a Section 73 application may be required, attaching a revised DAS as a supporting document. The key is to use the same evaluative framework as the original DAS rather than simply asserting equivalence."
+      }
+    ]
+  },
+  {
     "date": "2026-06-28",
     "topic": "EIA Screening, Scoping and Environmental Statement Coordination in Residential-Led Schemes",
     "module": "Planning and Development Management",

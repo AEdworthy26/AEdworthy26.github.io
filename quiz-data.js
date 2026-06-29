@@ -1,10 +1,10 @@
 // quiz-data.js
-// Auto-updated 2026-06-28 — do not edit manually
+// Auto-updated 2026-06-29 — do not edit manually
 
 window.QUIZ_DATA = {
-  date: '2026-06-28',
-  category: 'World History',
-  question: 'On 28th June 1914, Archduke Franz Ferdinand was assassinated in Sarajevo — but in which specific location in the city did the fatal shooting take place, and what was the assassin\'s name?',
-  answer: 'On the Latin Bridge (Латинска ћуприја). The assassin was Gavrilo Princip.',
-  funFact: 'The assassination was nearly botched earlier that day when a different conspirator threw a bomb at Franz Ferdinand\'s motorcade, but it bounced off the car and exploded under the following vehicle. Franz Ferdinand insisted on visiting the injured in hospital, and it was during this detour — when the driver took a wrong turn and stalled near the Latin Bridge — that Princip found himself standing just feet from the Archduke. The pistol Princip used was a FN Model 1910, and he was just 19 years old at the time.'
+  date: '2026-06-29',
+  category: 'Sport',
+  question: 'At the 2012 London Olympics, which country won the gold medal in the men\'s football tournament, defeating Brazil in the final — and what was the score at full time?',
+  answer: 'Mexico won gold, beating Brazil 2–1 in the final at Wembley Stadium.',
+  funFact: 'The final was played in front of over 86,000 fans at Wembley, with Oribe Peralta scoring both Mexican goals. Brazil\'s team included Neymar, who had scored a stunning free kick in the group stage, but Mexico held on in a tense final to claim their first Olympic football gold medal.'
 };

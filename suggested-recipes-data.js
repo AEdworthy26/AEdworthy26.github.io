@@ -1,172 +1,169 @@
 // suggested-recipes-data.js
-// Auto-updated 2026-06-28 — do not edit manually
+// Auto-updated 2026-06-29 — do not edit manually
 
 window.SUGGESTED_RECIPES = [
   {
     id: "sug1",
-    title: "Flemish Carbonnade — Belgian Beef & Beer Stew with Mustard Thyme Toasts",
-    category: "Beef",
-    calories: 610,
-    protein: 44,
+    title: "Dakgalbi — Korean Spicy Stir-Fried Chicken with Cabbage, Gochujang & Crispy Rice Cakes",
+    category: "Chicken",
+    calories: 545,
+    protein: 42,
     fibre: 5,
-    healthScore: 68,
-    time: "2 hrs 15 mins",
+    healthScore: 70,
+    time: "45 mins",
     serves: "4",
-    desc: "One of Belgium\'s great comfort dishes — thick slices of beef slow-braised in dark ale with caramelised onions and a sticky, deeply savoury sauce. Mustard-smeared bread melts into the braise as it cooks, thickening everything beautifully. Rich, warming, and utterly satisfying on a summer evening when the temperature drops.",
-    emoji: "🍺",
-    image: "https://images.unsplash.com/photo-1664741662725-bd131742b7b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxGbGVtaXNoJTIwQ2FyYm9ubmFkZSUyMCVFMiU4MCU5NCUyMEJlbGdpYW4lMjBCZWVmJTIwJTI2JTIwQmVlciUyMFN0ZXclMjB3aXRoJTIwTXVzdGFyZCUyMFRoeW1lJTIwVG9hc3RzJTIwZm9vZCUyMGRpc2h8ZW58MHwwfHx8MTc4MjYyMzU5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+    desc: "Dakgalbi is one of Korea\'s great crowd-pleasing street dishes — chunks of chicken thigh lacquered in a sticky, fiery gochujang sauce, tossed with chewy rice cakes, sweet cabbage and spring onion in a blazing hot pan. Everything caramelises at the edges, the sauce clings to every surface, and the result is bold, deeply savoury and completely addictive. It\'s a one-pan wonder that comes together fast and tastes like it took far longer.",
+    emoji: "🌶️",
+    image: "https://images.pexels.com/photos/33085044/pexels-photo-33085044.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     ingredientGroups: [
-      { group: "Stew", items: [
-        { name: "Beef chuck, cut into 4cm chunks", quantity: 900, unit: "g" },
-        { name: "Large onions, thinly sliced", quantity: 3, unit: "" },
-        { name: "Dark Belgian ale or Guinness", quantity: 500, unit: "ml" },
-        { name: "Beef stock", quantity: 250, unit: "ml" },
-        { name: "Unsalted butter", quantity: 30, unit: "g" },
-        { name: "Olive oil", quantity: 2, unit: "tbsp" },
-        { name: "Plain flour", quantity: 2, unit: "tbsp" },
-        { name: "Fresh thyme sprigs", quantity: 6, unit: "" },
-        { name: "Bay leaves", quantity: 2, unit: "" },
-        { name: "Light brown sugar", quantity: 1, unit: "tbsp" },
-        { name: "Red wine vinegar", quantity: 1, unit: "tbsp" },
-        { name: "Salt and black pepper", quantity: 0, unit: "to taste" }
+      { group: "Chicken & Marinade", items: [
+        { name: "Boneless chicken thighs, cut into 3cm chunks", quantity: 700, unit: "g" },
+        { name: "Gochujang (Korean red chilli paste)", quantity: 3, unit: "tbsp" },
+        { name: "Soy sauce", quantity: 2, unit: "tbsp" },
+        { name: "Sesame oil", quantity: 1, unit: "tbsp" },
+        { name: "Honey", quantity: 1, unit: "tbsp" },
+        { name: "Gochugaru (Korean chilli flakes)", quantity: 1, unit: "tbsp" },
+        { name: "Garlic cloves, minced", quantity: 4, unit: "" },
+        { name: "Fresh ginger, finely grated", quantity: 2, unit: "tsp" },
+        { name: "Rice wine or dry sherry", quantity: 2, unit: "tbsp" }
       ]},
-      { group: "Mustard Toasts", items: [
-        { name: "Thick slices sourdough or crusty baguette", quantity: 4, unit: "" },
-        { name: "Dijon mustard", quantity: 3, unit: "tbsp" },
-        { name: "Unsalted butter, softened", quantity: 15, unit: "g" }
+      { group: "Stir-Fry", items: [
+        { name: "Tteok (cylinder rice cakes, fresh or soaked from dried)", quantity: 300, unit: "g" },
+        { name: "White cabbage, roughly sliced into 4cm pieces", quantity: 300, unit: "g" },
+        { name: "White onion, cut into wedges", quantity: 1, unit: "large" },
+        { name: "Spring onions, cut into 5cm lengths", quantity: 4, unit: "" },
+        { name: "Neutral oil (vegetable or sunflower)", quantity: 2, unit: "tbsp" }
       ]},
       { group: "To Serve", items: [
-        { name: "Fresh flatleaf parsley, roughly chopped", quantity: 1, unit: "small handful" },
-        { name: "Steamed new potatoes or crusty bread", quantity: 0, unit: "to serve" }
+        { name: "Steamed short-grain rice", quantity: 800, unit: "g cooked" },
+        { name: "Toasted sesame seeds", quantity: 1, unit: "tbsp" },
+        { name: "Perilla leaves or shredded iceberg lettuce, for wrapping", quantity: 1, unit: "handful" }
       ]}
     ],
     substitutes: [
-      { ingredient: "Dark Belgian ale", alternatives: ["Guinness stout", "Brown ale or dark lager"] },
-      { ingredient: "Beef chuck", alternatives: ["Beef brisket", "Beef shin (add 30 mins extra cooking)"] },
-      { ingredient: "Dijon mustard", alternatives: ["Wholegrain mustard", "German mustard"] }
+      { ingredient: "Tteok rice cakes", alternatives: ["Gnocchi (stir-fried until golden)", "Thick udon noodles (blanched first)"] },
+      { ingredient: "Gochujang", alternatives: ["Sriracha mixed with a little white miso paste", "Sambal oelek with a pinch of sugar"] },
+      { ingredient: "Perilla leaves", alternatives: ["Little gem lettuce leaves", "Fresh mint and coriander mixed"] }
     ],
     instructions: [
-      "Step 1 — Pat the beef chunks thoroughly dry with kitchen paper and season generously with salt and black pepper. Heat 1 tbsp olive oil in a large heavy-based casserole or Dutch oven over high heat. Brown the beef in batches — don\'t crowd the pan — for 2–3 minutes per side until deeply browned all over. Transfer to a plate and set aside.",
-      "Step 2 — Reduce the heat to medium. Add the butter and remaining olive oil to the same pan. Add the sliced onions with a pinch of salt and cook, stirring occasionally, for 20–25 minutes until deeply golden and jammy. Scatter over the brown sugar and red wine vinegar, stir for 1 minute to caramelise further.",
-      "Step 3 — Sprinkle the flour over the onions and stir well to coat. Gradually pour in the dark ale, stirring constantly to avoid lumps, then add the beef stock. Nestle the browned beef back into the pot along with the thyme sprigs and bay leaves. The liquid should just cover the meat — top up with a little water if needed.",
-      "Step 4 — Preheat your oven to 160°C / 140°C fan. Spread the Dijon mustard and softened butter thickly onto one side of each bread slice. Lay the bread slices mustard-side down on top of the stew — they will sink and dissolve as it cooks, enriching and thickening the sauce.",
-      "Step 5 — Cover the casserole with a lid and transfer to the oven. Braise for 1 hour 45 minutes, checking once halfway and giving a gentle stir, until the beef is completely tender and yielding. Remove the bay leaves and thyme stalks.",
-      "Step 6 — Taste the sauce and adjust seasoning — it should be deeply savoury with a subtle bitter-sweet complexity. If the sauce seems thin, simmer uncovered on the hob for 5–10 minutes. Scatter with fresh parsley and serve directly from the pot with steamed new potatoes or more crusty bread alongside."
+      "Step 1 — Marinate the chicken: In a large bowl, whisk together the gochujang, soy sauce, sesame oil, honey, gochugaru, garlic, ginger and rice wine. Add the chicken chunks, toss thoroughly to coat, and leave to marinate for at least 20 minutes at room temperature (or up to overnight in the fridge).",
+      "Step 2 — Prepare the rice cakes: If using dried tteok, soak in cold water for 30 minutes and drain. If fresh, rinse briefly. The rice cakes should be pliable and separate easily — don\'t skip this step or they\'ll stick and clump in the pan.",
+      "Step 3 — Heat a large, wide pan or wok over high heat until smoking. Add the neutral oil, then add the marinated chicken in a single layer if possible. Leave undisturbed for 2–3 minutes to caramelise and develop colour on the base before stirring.",
+      "Step 4 — Add the onion wedges and cabbage to the pan. Stir-fry everything together over high heat for 4–5 minutes, keeping things moving so the sauce doesn\'t burn. The vegetables should soften and take on some char at the edges.",
+      "Step 5 — Add the rice cakes to the pan and fold them through the chicken and vegetables. Pour in a splash of water (about 4 tablespoons) to loosen the sauce slightly. Continue stir-frying for another 3–4 minutes until the rice cakes are heated through, glossy and beginning to crisp at the edges.",
+      "Step 6 — Add the spring onions in the final minute of cooking, folding them through so they just wilt. Taste and adjust — add a little more honey if you want sweetness, or a dash more soy if it needs salt.",
+      "Step 7 — Remove from the heat and scatter with toasted sesame seeds. Serve directly from the pan alongside steamed rice, with perilla leaves or lettuce for wrapping bites of the chicken and rice into little parcels — this is the traditional way to eat it and absolutely the best way."
     ]
   },
   {
     id: "sug2",
-    title: "Indonesian Grilled Snapper with Sambal Matah, Turmeric Rice & Crispy Shallots",
+    title: "Ligurian White Wine Mussels with 'Nduja, White Beans & Grilled Sourdough",
     category: "Fish & Seafood",
-    calories: 485,
-    protein: 39,
-    fibre: 4,
-    healthScore: 76,
-    time: "50 mins",
+    calories: 490,
+    protein: 36,
+    fibre: 8,
+    healthScore: 74,
+    time: "35 mins",
     serves: "2",
-    desc: "Whole snapper fillets marinated in a punchy spice paste, grilled until the skin blisters and crisps, then served with Bali\'s legendary raw sambal — a bright, fragrant salsa of lemongrass, shallots, chilli and lime. Golden turmeric rice and a shower of crispy shallots make this a genuinely spectacular plate that takes less than an hour.",
-    emoji: "🐟",
-    image: "https://images.unsplash.com/photo-1630910104722-21fe97230ef9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxJbmRvbmVzaWFuJTIwR3JpbGxlZCUyMFNuYXBwZXIlMjB3aXRoJTIwU2FtYmFsJTIwTWF0YWglMkMlMjBUdXJtZXJpYyUyMFJpY2UlMjAlMjYlMjBDcmlzcHklMjBTaGFsbG90cyUyMGZvb2QlMjBkaXNofGVufDB8MHx8fDE3ODI2MjM1OTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    desc: "This is a bowl of pure coastal pleasure — mussels steamed open in white wine with a generous spoonful of 'nduja melting into the broth, creating a rust-coloured, fiery, porky liquor that clings to pillowy cannellini beans. It\'s a Ligurian-meets-Calabrian mashup that makes complete sense on the plate: silky beans soak up the spiced broth while the mussels stay plump and sweet. Grilled sourdough is not optional — you will need every piece to mop the bowl clean.",
+    emoji: "🦪",
+    image: "https://images.unsplash.com/photo-1710775694428-5f6e66ae6a4c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxMaWd1cmlhbiUyMFdoaXRlJTIwV2luZSUyME11c3NlbHMlMjB3aXRoJTIwJTIwZm9vZCUyMGRpc2h8ZW58MHwwfHx8MTc4MjcwOTk4OXww&ixlib=rb-4.1.0&q=80&w=1080",
     ingredientGroups: [
-      { group: "Fish & Marinade", items: [
-        { name: "Snapper fillets, skin on", quantity: 2, unit: "x 200g" },
-        { name: "Ground turmeric", quantity: 1, unit: "tsp" },
-        { name: "Ground coriander", quantity: 1, unit: "tsp" },
-        { name: "Garlic cloves, minced", quantity: 2, unit: "" },
-        { name: "Fresh ginger, grated", quantity: 1, unit: "tsp" },
-        { name: "Vegetable oil", quantity: 2, unit: "tbsp" },
-        { name: "Lime juice", quantity: 1, unit: "tbsp" },
-        { name: "Salt", quantity: 0, unit: "to taste" }
+      { group: "Main", items: [
+        { name: "Fresh mussels, scrubbed and debearded", quantity: 1, unit: "kg" },
+        { name: "'Nduja (spreadable spicy Calabrian salumi)", quantity: 60, unit: "g" },
+        { name: "Cannellini beans, drained and rinsed", quantity: 400, unit: "g (1 tin)" },
+        { name: "Shallots, finely sliced", quantity: 3, unit: "" },
+        { name: "Garlic cloves, thinly sliced", quantity: 4, unit: "" },
+        { name: "Dry white wine (Vermentino or Pinot Grigio)", quantity: 200, unit: "ml" },
+        { name: "Cherry tomatoes, halved", quantity: 150, unit: "g" },
+        { name: "Olive oil", quantity: 3, unit: "tbsp" }
       ]},
-      { group: "Sambal Matah", items: [
-        { name: "Banana shallots, very finely sliced into rings", quantity: 4, unit: "" },
-        { name: "Lemongrass stalks, white part only, very finely sliced", quantity: 2, unit: "" },
-        { name: "Red bird\'s eye chillies, finely sliced (deseed for less heat)", quantity: 2, unit: "" },
-        { name: "Kaffir lime leaves, central rib removed, very finely shredded", quantity: 4, unit: "" },
-        { name: "Coconut oil or light vegetable oil", quantity: 2, unit: "tbsp" },
-        { name: "Lime juice", quantity: 1.5, unit: "tbsp" },
-        { name: "Flaky sea salt", quantity: 0, unit: "to taste" }
-      ]},
-      { group: "Turmeric Rice", items: [
-        { name: "Jasmine rice, rinsed", quantity: 160, unit: "g" },
-        { name: "Coconut milk", quantity: 100, unit: "ml" },
-        { name: "Water", quantity: 200, unit: "ml" },
-        { name: "Ground turmeric", quantity: 0.5, unit: "tsp" },
-        { name: "Pandan leaf (optional)", quantity: 1, unit: "" },
-        { name: "Salt", quantity: 0.5, unit: "tsp" }
-      ]},
-      { group: "To Finish", items: [
-        { name: "Crispy fried shallots (shop-bought is fine)", quantity: 3, unit: "tbsp" },
-        { name: "Fresh coriander leaves", quantity: 1, unit: "small handful" },
-        { name: "Lime wedges", quantity: 2, unit: "" }
+      { group: "Finishing & Serving", items: [
+        { name: "Flat-leaf parsley, roughly chopped", quantity: 1, unit: "large handful" },
+        { name: "Lemon", quantity: 1, unit: "" },
+        { name: "Sourdough bread, thickly sliced", quantity: 4, unit: "slices" },
+        { name: "Extra olive oil for drizzling", quantity: 1, unit: "tbsp" },
+        { name: "Flaky sea salt and black pepper", quantity: 1, unit: "to taste" }
       ]}
     ],
     substitutes: [
-      { ingredient: "Snapper fillets", alternatives: ["Sea bream fillets", "Barramundi or tilapia fillets"] },
-      { ingredient: "Kaffir lime leaves", alternatives: ["Zest of 1 lime", "Omit if unavailable"] },
-      { ingredient: "Bird\'s eye chillies", alternatives: ["1 long red chilli", "Dried chilli flakes to taste"] }
+      { ingredient: "'Nduja", alternatives: ["Chorizo, finely diced and fried until crispy", "Sobrasada (Mallorcan spreadable chorizo)"] },
+      { ingredient: "Cannellini beans", alternatives: ["Butter beans", "Borlotti beans"] },
+      { ingredient: "Mussels", alternatives: ["Clams (vongole)", "Cockles"] }
     ],
     instructions: [
-      "Step 1 — Start the turmeric rice. Combine rinsed jasmine rice, coconut milk, water, turmeric, salt and pandan leaf (if using) in a small saucepan. Bring to a boil, then reduce to the lowest heat, cover tightly and cook for 12 minutes. Remove from heat and leave to steam, covered, for a further 10 minutes. Do not lift the lid until ready to serve.",
-      "Step 2 — Mix the marinade ingredients — turmeric, ground coriander, minced garlic, grated ginger, oil, lime juice and salt — into a paste. Score the snapper fillets 2–3 times through the skin with a sharp knife. Rub the marinade all over the fish, getting into the scores. Leave to marinate for at least 15 minutes at room temperature.",
-      "Step 3 — Make the sambal matah. Combine the finely sliced shallots, lemongrass, chillies and kaffir lime leaves in a bowl. Warm the coconut oil in a small pan until just hot — not smoking — and pour it directly over the shallot mixture. Add the lime juice and flaky salt, stir well and set aside. The heat will gently cook the shallots just enough to mellow them slightly.",
-      "Step 4 — Heat a heavy griddle pan or non-stick frying pan over high heat until very hot. Lay the fish fillets skin-side down and press gently with a spatula to ensure full contact. Cook for 3–4 minutes without moving until the skin is crisp and golden, then carefully flip and cook for a further 1–2 minutes until just cooked through. The fish should flake easily at the thickest point.",
-      "Step 5 — Fluff the turmeric rice with a fork and remove the pandan leaf. Mound the rice in bowls or plates. Lay the grilled snapper alongside, spoon the sambal matah generously over the fish, scatter with crispy shallots and fresh coriander, and serve immediately with lime wedges."
+      "Step 1 — Clean the mussels: Scrub under cold running water, pulling away any beards. Tap any open mussels firmly on the worktop — discard any that don\'t close within a minute. Good mussels should smell of the sea, nothing more.",
+      "Step 2 — Heat the olive oil in a large, deep pan or wide casserole over medium heat. Add the shallots with a pinch of salt and cook gently for 5–6 minutes until completely soft and translucent. Add the garlic and cook for another 2 minutes.",
+      "Step 3 — Add the 'nduja to the pan, breaking it up with a wooden spoon. It will melt into the oil almost immediately, releasing its vivid orange fat and filling the kitchen with paprika-spiced warmth. Stir for 2 minutes until it has completely dispersed.",
+      "Step 4 — Add the cherry tomatoes and cook for 3–4 minutes until they begin to collapse and release their juices. Pour in the white wine, turn the heat to high, and let it bubble for 2 minutes to cook off the alcohol.",
+      "Step 5 — Add the cannellini beans to the pan and stir gently to coat them in the 'nduja-wine broth. Let them warm through for 2 minutes. Taste the broth — it should be fiery, winey and deeply savoury. Season with black pepper (the 'nduja is already salty, so go easy).",
+      "Step 6 — Tip in all the mussels, stir once, then clamp the lid on tightly. Cook over high heat for 3–4 minutes, shaking the pan once or twice, until all the mussels have opened. Discard any that remain firmly shut.",
+      "Step 7 — Meanwhile, grill or griddle the sourdough slices until charred in places. Rub each slice with the cut side of a garlic clove and drizzle with olive oil.",
+      "Step 8 — Squeeze half a lemon over the mussels, scatter generously with parsley, and serve directly from the pan with the remaining lemon cut into wedges and the grilled sourdough alongside. Eat immediately — this waits for no one."
     ]
   },
   {
     id: "sug3",
-    title: "Pugliese Fava Bean & Chicory — Fave e Cicoria with Toasted Bread, Crispy Capers & Agrumato",
-    category: "Vegan",
-    calories: 390,
-    protein: 18,
-    fibre: 14,
-    healthScore: 88,
-    time: "45 mins",
+    title: "Roasted Red Pepper & Walnut Muhammara with Spiced Lamb Kofte, Flatbreads & Herb Salad",
+    category: "Lamb",
+    calories: 610,
+    protein: 35,
+    fibre: 6,
+    healthScore: 66,
+    time: "55 mins",
     serves: "4",
-    desc: "One of Italy\'s oldest and most quietly brilliant dishes — dried fava beans slowly simmered into a silky, comforting purée, paired with bitter wilted chicory and finished with exceptional olive oil. The contrast of creamy, earthy beans against pleasantly bitter greens is deeply satisfying, elevated by crispy capers and a pile of charred bread for scooping. Simple, ancient, and absolutely delicious.",
-    emoji: "🫘",
-    image: "https://images.unsplash.com/photo-1751638582376-3071e1fddb4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxQdWdsaWVzZSUyMEZhdmElMjBCZWFuJTIwJTI2JTIwQ2hpY29yeSUyMCVFMiU4MCU5NCUyMEZhdmUlMjBlJTIwQ2ljb3JpYSUyMHdpdGglMjBUb2FzdGVkJTIwQnJlYWQlMkMlMjBDcmlzcHklMjBDYXBlcnMlMjAlMjYlMjBBZ3J1bWF0byUyMGZvb2QlMjBkaXNofGVufDB8MHx8fDE3ODI2MjM1OTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    desc: "Muhammara — the smoky, sweet-hot Syrian walnut and roasted pepper dip — is one of the most underrated things in the entire Middle Eastern kitchen, and here it becomes the soul of the whole dish. Spiced lamb kofte, charred under a high grill and fragrant with cumin, coriander and a hit of cinnamon, rest on a generous smear of the silky dip. A bright, herb-heavy salad with pomegranate and crispy shallots cuts through the richness, and warm flatbreads bring everything together. This is the kind of meal that disappears fast.",
+    emoji: "🥙",
+    image: "https://images.unsplash.com/photo-1777891257519-84d59a502ca1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxSb2FzdGVkJTIwUmVkJTIwUGVwcGVyJTIwJTI2JTIwV2FsbnV0JTIwTXVoYW1tYXJhJTIwd2l0aCUyMFNwaWNlZCUyMExhbWIlMjBLb2Z0ZSUyQyUyMEZsYXRicmVhZHMlMjAlMjYlMjBIZXJiJTIwU2FsYWQlMjBmb29kJTIwZGlzaHxlbnwwfDB8fHwxNzgyNzA5OTkwfDA&ixlib=rb-4.1.0&q=80&w=1080",
     ingredientGroups: [
-      { group: "Fava Bean Purée", items: [
-        { name: "Dried split fava beans (skinless), rinsed", quantity: 300, unit: "g" },
-        { name: "Potato, peeled and diced", quantity: 1, unit: "medium" },
-        { name: "Garlic cloves, peeled", quantity: 3, unit: "" },
-        { name: "Extra virgin olive oil, good quality", quantity: 5, unit: "tbsp" },
-        { name: "Water or light vegetable stock", quantity: 900, unit: "ml" },
-        { name: "Salt and black pepper", quantity: 0, unit: "to taste" }
+      { group: "Muhammara", items: [
+        { name: "Large red peppers", quantity: 4, unit: "" },
+        { name: "Walnuts, lightly toasted", quantity: 100, unit: "g" },
+        { name: "Pomegranate molasses", quantity: 2, unit: "tbsp" },
+        { name: "Aleppo pepper (or mild chilli flakes)", quantity: 2, unit: "tsp" },
+        { name: "Ground cumin", quantity: 1, unit: "tsp" },
+        { name: "Garlic clove", quantity: 1, unit: "" },
+        { name: "Olive oil", quantity: 3, unit: "tbsp" },
+        { name: "Lemon juice", quantity: 1, unit: "tbsp" },
+        { name: "Fine breadcrumbs", quantity: 30, unit: "g" },
+        { name: "Salt", quantity: 1, unit: "to taste" }
       ]},
-      { group: "Wilted Chicory", items: [
-        { name: "Heads of chicory (cicoria or curly endive), roughly chopped", quantity: 2, unit: "large" },
-        { name: "Garlic cloves, finely sliced", quantity: 2, unit: "" },
-        { name: "Dried red chilli flakes", quantity: 0.5, unit: "tsp" },
-        { name: "Extra virgin olive oil", quantity: 3, unit: "tbsp" },
-        { name: "Salt", quantity: 0, unit: "to taste" }
+      { group: "Lamb Kofte", items: [
+        { name: "Minced lamb (20% fat)", quantity: 600, unit: "g" },
+        { name: "White onion, grated and excess moisture squeezed out", quantity: 1, unit: "small" },
+        { name: "Garlic cloves, minced", quantity: 2, unit: "" },
+        { name: "Ground cumin", quantity: 1.5, unit: "tsp" },
+        { name: "Ground coriander", quantity: 1, unit: "tsp" },
+        { name: "Ground cinnamon", quantity: 0.5, unit: "tsp" },
+        { name: "Aleppo pepper", quantity: 1, unit: "tsp" },
+        { name: "Fresh flat-leaf parsley, finely chopped", quantity: 3, unit: "tbsp" },
+        { name: "Salt and black pepper", quantity: 1, unit: "to taste" }
       ]},
-      { group: "Crispy Capers & Toast", items: [
-        { name: "Capers, drained and patted dry", quantity: 3, unit: "tbsp" },
-        { name: "Olive oil for frying", quantity: 2, unit: "tbsp" },
-        { name: "Thick slices sourdough or Pugliese bread", quantity: 4, unit: "" },
-        { name: "Garlic clove, halved", quantity: 1, unit: "" }
-      ]},
-      { group: "To Finish", items: [
-        { name: "Extra virgin olive oil (ideally Pugliese or agrumato lemon oil), to drizzle", quantity: 0, unit: "generous drizzle" },
-        { name: "Lemon wedges", quantity: 4, unit: "" },
-        { name: "Flaky sea salt", quantity: 0, unit: "to taste" }
+      { group: "Herb Salad & Serving", items: [
+        { name: "Flat-leaf parsley leaves", quantity: 1, unit: "large handful" },
+        { name: "Fresh mint leaves", quantity: 1, unit: "handful" },
+        { name: "Pomegranate seeds", quantity: 80, unit: "g" },
+        { name: "Crispy fried shallots (shop-bought or homemade)", quantity: 3, unit: "tbsp" },
+        { name: "Sumac", quantity: 1, unit: "tsp" },
+        { name: "Extra virgin olive oil", quantity: 1, unit: "tbsp" },
+        { name: "Warm flatbreads", quantity: 4, unit: "" },
+        { name: "Full-fat yoghurt to serve", quantity: 150, unit: "g" }
       ]}
     ],
     substitutes: [
-      { ingredient: "Dried split fava beans", alternatives: ["Canned fava beans (reduce cooking to 15 mins)", "Dried yellow split peas"] },
-      { ingredient: "Chicory / curly endive", alternatives: ["Cavolo nero, stems removed", "Swiss chard or kale"] },
-      { ingredient: "Agrumato lemon oil", alternatives: ["Good quality extra virgin olive oil with a squeeze of lemon", "Regular finishing olive oil"] }
+      { ingredient: "Minced lamb", alternatives: ["Minced beef (80/20)", "Minced pork or a beef-pork mix"] },
+      { ingredient: "Pomegranate molasses", alternatives: ["1 tbsp balsamic reduction mixed with 1 tsp honey", "Tamarind paste thinned with a little honey"] },
+      { ingredient: "Aleppo pepper", alternatives: ["A mix of sweet smoked paprika and a pinch of dried chilli", "Ancho chilli flakes"] }
     ],
     instructions: [
-      "Step 1 — Place the rinsed split fava beans and diced potato in a medium saucepan with the peeled garlic cloves. Cover with the water or stock — no need to soak split fava beans. Bring to a boil, skimming off any foam that rises. Reduce the heat to a gentle simmer, partially cover, and cook for 30–35 minutes, stirring occasionally, until the beans have completely broken down and absorbed most of the liquid.",
-      "Step 2 — Once the beans are very soft and almost creamy, remove from heat. Beat vigorously with a wooden spoon or use a potato masher to create a thick, rough purée — it doesn\'t need to be perfectly smooth, some texture is welcome. Stir in 4 tbsp of the best olive oil you have, season generously with salt and black pepper. The purée should be thick enough to hold its shape but still spoonable — add a splash of warm water if too thick.",
-      "Step 3 — While the beans cook, prepare the crispy capers. Heat 2 tbsp olive oil in a small frying pan over medium-high heat. Add the patted-dry capers and fry, shaking the pan, for 2–3 minutes until they burst open and become golden and crispy. Transfer to a piece of kitchen paper and set aside — they will crisp further as they cool.",
-      "Step 4 — In a large sauté pan, warm 3 tbsp olive oil over medium heat. Add the finely sliced garlic and chilli flakes and gently sizzle for 1 minute until fragrant but not coloured. Add the chopped chicory with a splash of water and a good pinch of salt. Toss and cook for 4–5 minutes until wilted and tender but still with a slight bite. Taste — the pleasant bitterness should be mellowed by the oil and garlic.",
-      "Step 5 — Toast or griddle the thick bread slices until charred at the edges. While still hot, rub each slice vigorously with the cut side of the halved garlic clove.",
-      "Step 6 — To serve, spoon a generous mound of fava bean purée into shallow bowls. Pile the wilted chicory alongside or on top. Scatter the crispy capers over everything and finish with a very generous drizzle of your best olive oil — this is not the moment to be restrained. Serve immediately with the garlic toasts and lemon wedges for squeezing."
+      "Step 1 — Roast the peppers: Place the whole red peppers directly over a gas flame or under your highest grill setting, turning with tongs every few minutes, until the skins are completely blackened and the flesh is fully tender — about 15–20 minutes total. Transfer to a bowl, cover tightly with cling film, and leave to steam for 15 minutes. This makes peeling effortless.",
+      "Step 2 — Meanwhile, make the kofte mixture: Combine the minced lamb with the grated onion, garlic, all the spices, parsley and a generous seasoning of salt and pepper. Mix with your hands for a good 2 minutes until the mixture feels cohesive and slightly sticky — this is what helps them hold together on the grill. Divide into 12 equal portions and shape each into a fat oval or cylinder. Refrigerate while you finish the muhammara.",
+      "Step 3 — Make the muhammara: Peel and deseed the steamed peppers — the skins should slip off easily. Don\'t rinse them under water or you\'ll lose flavour. Tear the flesh roughly and place in a food processor with the toasted walnuts, pomegranate molasses, Aleppo pepper, cumin, garlic, lemon juice, breadcrumbs and olive oil. Blitz to a rough, textured paste — it should have body and character, not be completely smooth. Taste and adjust salt, lemon and heat. The dip should be smoky, slightly sweet, nutty and warmly spiced.",
+      "Step 4 — Cook the kofte: Heat your grill to its highest setting and line a baking tray with foil. Place the kofte on the tray and grill for 8–10 minutes, turning once halfway, until deeply browned and slightly charred at the edges but still juicy within. Alternatively, cook them in a very hot griddle pan for similar colour and flavour.",
+      "Step 5 — Make the herb salad: Toss the parsley and mint leaves together with the pomegranate seeds, a drizzle of extra virgin olive oil and the sumac. Season lightly with salt. Add the crispy shallots just before serving so they stay crunchy.",
+      "Step 6 — Warm the flatbreads in a dry pan over medium heat or wrap in foil and place in a low oven for 5 minutes.",
+      "Step 7 — To assemble: Spread the muhammara generously across each plate or a large sharing board. Nestle the hot kofte on top, scatter over the herb and pomegranate salad, and add a generous spoonful of yoghurt on the side. Serve with warm flatbreads for scooping, wrapping and eating with abandon."
     ]
   }
 ];

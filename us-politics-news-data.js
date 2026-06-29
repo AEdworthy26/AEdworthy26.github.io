@@ -1,60 +1,60 @@
 // us-politics-news-data.js
-// Auto-updated 2026-06-28 — do not edit manually
+// Auto-updated 2026-06-29 — do not edit manually
 
 var US_POLITICS_NEWS = {
-  date: "2026-06-28",
+  date: "2026-06-29",
   main: {
-    title: "Rep. Julia Letlow Wins GOP Nomination in Louisiana Senate Race with Trump\'s Backing",
+    title: "White House Secretly Swayed Board Meant to Protect Federal Workers From Unfair Firings",
     category: "Politics",
     content: [
-      "Representative Julia Letlow of Louisiana has secured the Republican nomination in the state\'s Senate runoff election, defeating Louisiana State Treasurer John Fleming to claim the GOP nod for the seat being vacated by Senator Bill Cassidy. The race was called by Decision Desk HQ, with Letlow\'s victory fueled in significant part by a high-profile endorsement from President Donald Trump. The win places Letlow in a strong position heading into the general election for one of Louisiana\'s most consequential Senate seats in recent memory.",
-      "Letlow and Fleming were pushed into a runoff after neither candidate — nor any other in the crowded field — cleared the threshold required to win outright in the May 16 primary. That primary also featured incumbent Senator Bill Cassidy himself, along with businessman Mark Spencer, reflecting just how competitive and fractured the Republican primary landscape had become. The runoff ultimately served as a test of Trump\'s continued influence over the Republican base in a deeply red state.",
-      "Trump\'s endorsement of Letlow proved to be a decisive factor, underscoring his sustained grip on the GOP\'s electoral machinery heading into the 2026 midterm cycle. The president\'s ability to elevate a candidate in a contested intra-party race — and deliver a win — reinforces the political calculus that Republican candidates across the country must weigh when seeking his backing. It also signals that Trump\'s endorsement continues to carry substantial weight with Republican primary voters, even as his administration navigates mounting controversies on multiple fronts.",
-      "For Letlow, the victory is a significant step forward in a political career that has steadily gained national attention. As a sitting House member who now advances to a Senate general election, she becomes a notable figure in the Republican Party\'s efforts to consolidate and expand its Senate majority. Her campaign will now pivot toward the November general election, where she will be expected to hold the seat for Republicans in a state that has trended strongly toward the GOP in recent election cycles.",
-      "The Louisiana Senate race is one of several contests this cycle that will help determine the balance of power in the upper chamber, making Letlow\'s nomination a result of national significance. Senate Republican leadership will likely rally behind her in the general election, especially given Trump\'s personal investment in her candidacy. The outcome also serves as a data point for how Trump\'s endorsement operation functions in 2026 — and whether the coalitions he assembled in 2024 remain durable as the midterm elections draw closer."
+      "The Trump White House engaged in a covert campaign to influence the Merit Systems Protection Board, the independent body designed to shield federal employees from politically motivated or otherwise unlawful terminations. Behind the scenes, administration officials went to extensive lengths to reshape the board\'s posture, steering it toward endorsing a broad theory of executive power that would give the president sweeping latitude over the federal workforce. The revelations raise serious questions about the integrity of the very institution tasked with ensuring that civil service protections remain meaningful.",
+      "At stake is whether the president can install loyalists at nearly every echelon of the federal government, displacing career civil servants who have traditionally been insulated from partisan pressure. The administration\'s theory of executive power, if accepted, would represent a dramatic departure from decades of precedent governing the relationship between elected officials and the professional civil service. Critics argue that undermining the Merit Systems Protection Board effectively guts one of the last institutional safeguards for federal workers who might otherwise face retaliation for doing their jobs impartially.",
+      "The extent of the White House\'s behind-the-scenes involvement was not publicly disclosed, meaning affected federal employees had no opportunity to understand the full context in which their cases were being adjudicated. This lack of transparency compounds concerns that the board was operating not as an independent check on executive overreach, but as an instrument of the administration\'s broader personnel agenda. Legal experts have noted that if the manipulation is as extensive as reported, it could expose numerous firings and personnel actions to legal challenges.",
+      "The move fits into a wider pattern of the Trump administration seeking to consolidate executive control over institutions that were deliberately designed to function with independence from political direction. From independent regulatory agencies to oversight bodies, the administration has consistently pressed the case that the president holds near-total authority over the executive branch and the people who work within it. The Merit Systems Protection Board was always seen as one of the more durable bulwarks against such assertions, making the reported White House interference all the more consequential.",
+      "Congressional Democrats are expected to demand investigations and hearings into the reported conduct, while government employee unions have signaled they will pursue legal remedies on behalf of workers whose cases may have been decided under compromised circumstances. The story arrives as the contours of the 2026 midterms are beginning to take shape, with governance and executive accountability emerging as key lines of political contrast. For millions of federal employees across the country, the outcome of this dispute could fundamentally redefine the terms and security of their public service careers."
     ],
-    image: "https://thehill.com/wp-content/uploads/sites/2/2023/08/letlowjulia_042723gn01_w.jpg?w=900",
-    source: "The Hill",
-    sourceUrl: "https://thehill.com/homenews/campaign/5943183-louisiana-gop-senate-runoff/"
+    image: "https://static01.nyt.com/images/2026/06/26/multimedia/00dc-power01-photo-gmhc/00dc-power01-photo-gmhc-mediumSquareAt3X.jpg",
+    source: "The New York Times",
+    sourceUrl: "https://www.nytimes.com/2026/06/28/us/politics/trump-firings-workers-merit-systems-protection-board.html"
   },
   secondary: [
     {
       id: "us1",
-      title: "Trump Nominates Former Oklahoma State Trooper Lance Schroyer to Head ICE",
-      summary: "President Trump has nominated Lance Schroyer, a former Oklahoma state trooper and adviser to DHS Secretary Markwayne Mullin, to serve as director of Immigration and Customs Enforcement.",
+      title: "Trump Picks Lance Schroyer as New ICE Director",
+      summary: "President Trump has nominated Lance Schroyer, an adviser to DHS Secretary Markwayne Mullin, to lead Immigration and Customs Enforcement.",
       body: [
-        "President Trump announced the nomination of Lance Schroyer to lead Immigration and Customs Enforcement, tapping a former Oklahoma state trooper who has been serving as an adviser to DHS Secretary Markwayne Mullin. The agency has not had a Senate-confirmed director since the Obama administration, making this nomination a significant step toward establishing permanent leadership at one of the federal government\'s most high-profile immigration enforcement bodies.",
-        "Schroyer\'s nomination comes as ICE has been at the center of the Trump administration\'s aggressive immigration enforcement agenda, making the directorship a politically and operationally critical post. His confirmation, if approved by the Senate, would give the agency its first confirmed permanent leader in well over a decade, potentially reshaping its internal direction and public accountability structure."
+        "President Trump announced the nomination of Lance Schroyer to serve as the new director of Immigration and Customs Enforcement, tapping an adviser closely tied to Department of Homeland Security Secretary Markwayne Mullin for the high-profile role. The pick signals that the administration intends to maintain its aggressive immigration enforcement posture heading into the second half of Trump\'s term.",
+        "ICE has been at the center of the administration\'s immigration policy battles, making the director\'s position one of the most politically visible in the federal government. Schroyer\'s close relationship with Secretary Mullin suggests the White House is prioritizing internal alignment and loyalty within the DHS leadership structure as it continues to pursue its immigration agenda."
       ],
       image: "https://static01.nyt.com/images/2026/06/27/multimedia/27DC-ICE-CHIEF-mlvj/27DC-ICE-CHIEF-mlvj-mediumSquareAt3X.jpg",
-      source: "NPR",
-      url: "https://www.npr.org/2026/06/27/nx-s1-5873485/trump-nominates-lance-schroyer-ice-director",
+      source: "The New York Times",
+      url: "https://www.nytimes.com/2026/06/27/us/politics/trump-oklahoma-ice-director.html",
       category: "Politics"
     },
     {
       id: "us2",
-      title: "Trump\'s 'Patriot Passport' Featuring His Portrait Unveiled Ahead of America\'s 250th Anniversary",
-      summary: "The State Department has released images of a special commemorative U.S. passport featuring President Trump\'s portrait, with 40,000 copies set to be available starting July 6.",
+      title: "SCOTUS Hands Trump a Win as GOP Diverges on Housing Bill Ahead of Midterms",
+      summary: "A Supreme Court ruling favored the Trump administration while Republicans in Congress showed signs of strategic disagreement over a housing bill, with midterm positioning coming into focus.",
       body: [
-        "The White House and State Department revealed new images of a limited-edition U.S. passport featuring an image of President Trump, branded as a commemorative document to mark the United States' 250th anniversary. The so-called 'Patriot Passport' will be available beginning July 6 and can only be applied for in person, with the State Department describing it as a document that 'boldly honors' the president and the nation\'s founding.",
-        "Only 40,000 of the special edition passports are planned for release, making them a rare and politically charged collectible that has drawn both enthusiasm from supporters and criticism from those who view placing a sitting president\'s image on official government travel documents as an unprecedented breach of norms. The rendering released this week also differed from previously circulated images of the passport in several notable design respects."
+        "The Supreme Court handed President Trump a significant legal victory, even as Republican lawmakers on Capitol Hill began to show visible daylight from the White House over a housing bill, suggesting the party is not uniformly aligned on its legislative priorities. NPR\'s politics analysts noted that the contours of the 2026 midterm elections are increasingly coming into focus, with different wings of the GOP making distinct calculations about what to run on.",
+        "The divergence between the administration and Congressional Republicans on housing policy reflects deeper tensions about which issues energize the base versus which appeal to swing voters in competitive districts. With midterms approaching, the strategic differences between the executive and legislative branches of the Republican Party could shape the policy and messaging battles of the next several months."
       ],
-      image: "https://images.unsplash.com/photo-1550531996-ff3dcede9477?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUcnVtcCU1Q3xlbnwwfDB8fHwxNzgyNjIyOTg2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "The New York Times",
-      url: "https://www.nytimes.com/2026/06/27/us/politics/trump-passport-design-america-250.html",
+      image: "https://images.unsplash.com/photo-1603119380999-ef522dd64b3c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTQ09UVVMlMjBIYW5kcyUyMFRydW1wJTIwYSUyMFdpbiUyMGFzJTIwR09QJTIwRGl2ZXJnZXMlMjBvbiUyMEhvdXNpbmclMjBCaWxsJTIwQWhlYWQlMjBvZiUyME1pZHRlcm1zfGVufDB8MHx8fDE3ODI3MDkzODZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "NPR",
+      url: "https://www.npr.org/2026/06/28/nx-s1-5872713/politics-chat-scotus-hands-trump-a-win-gop-diverges-on-housing-bill",
       category: "Politics"
     },
     {
       id: "us3",
-      title: "Trump Cancels Housing Bill Signing as SAVE America Act Divides Republicans on Capitol Hill",
-      summary: "President Trump pulled back from signing a bipartisan housing bill and is pushing voting legislation called the SAVE America Act, which has not won uniform support among his Republican allies in Congress.",
+      title: "Trump\'s Face Added to Select US Passports for America\'s 250th Birthday",
+      summary: "Commemorative special edition passports featuring President Trump\'s image will be available starting July 6, and can only be applied for in person.",
       body: [
-        "In a week of notable domestic political developments, President Trump canceled a planned signing ceremony for a major bipartisan housing bill, a move that surprised lawmakers on both sides of the aisle who had worked to assemble the legislation. Separately, Trump has been promoting the SAVE America Act, a piece of voting legislation that does not enjoy unanimous backing among Republicans on Capitol Hill, revealing tensions within the party over electoral policy priorities.",
-        "The dual developments highlight the unpredictable nature of Trump\'s legislative engagement, as a broad coalition-built housing measure was left unsigned while attention shifted to a more partisan election-related bill. The fractures over the SAVE America Act in particular illustrate that even within a Republican-controlled Congress, the president\'s legislative preferences do not always translate smoothly into unified party action."
+        "The Trump administration announced that a special commemorative edition of the United States passport will feature President Trump\'s face, timed to coincide with America\'s 250th birthday celebrations. The passports will become available on July 6 and are exclusively offered through in-person applications, making them a limited and distinctive collectible tied to the semiquincentennial.",
+        "The decision to place a sitting president\'s image on a government travel document is highly unusual and has drawn both enthusiasm from supporters and criticism from those who see it as an inappropriate blending of personal political branding with official federal documentation. The move underscores the administration\'s broad use of the anniversary festivities as a platform to associate Trump personally with American national identity."
       ],
-      image: "https://images.pexels.com/photos/1464202/pexels-photo-1464202.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      source: "NPR",
-      url: "https://www.npr.org/2026/06/27/nx-s1-5867378/week-in-politics-trump-and-bipartisan-housing-bill-john-bolton-democratic-socialists",
+      image: "https://images.unsplash.com/photo-1550531996-ff3dcede9477?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUcnVtcCU1Q3xlbnwwfDB8fHwxNzgyNjIyOTg2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "BBC News",
+      url: "https://www.bbc.co.uk/news/articles/ce3ewkdgw9ro?at_medium=RSS&at_campaign=rss",
       category: "Politics"
     }
   ]
