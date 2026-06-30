@@ -1,18 +1,18 @@
 // films-data.js
-// Auto-updated 2026-06-29 — do not edit manually
+// Auto-updated 2026-06-30 — do not edit manually
 
 var FILMS_DATA = {
-  date: "2026-06-29",
+  date: "2026-06-30",
   film: {
-    title: "Knife in the Water",
-    director: "Roman Polanski",
-    year: 1962,
-    genres: ["Thriller", "Drama"],
-    desc: "Polanski\'s debut feature is a masterclass in confined tension: a married couple invites a young hitchhiker onto their sailboat for a weekend, and the triangle that forms crackles with jealousy, ego, and barely suppressed violence. Shot almost entirely on the water with just three actors, the film is a claustrophobic study in power games where every glance and gesture carries enormous weight. The black-and-white cinematography by Jerzy Lipman turns the gleaming lake into something sinister, a stage for masculinity measuring itself endlessly against itself. It became the first Polish film ever nominated for the Academy Award for Best Foreign Language Film and announced Polanski as a fully formed, fiercely original voice. Decades later it remains startlingly modern, a quiet knife-edge of a film that never raises its voice and never needs to.",
-    cast: ["Leon Niemczyk", "Jolanta Umecka", "Zygmunt Malanowicz"],
+    title: "Jour de fête",
+    director: "Jacques Tati",
+    year: 1949,
+    genres: ["Comedy", "World Cinema"],
+    desc: "Jacques Tati\'s feature debut is a sun-drenched, endlessly charming portrait of a bumbling French village postman who becomes obsessed with delivering his mail at American-style efficiency after watching a newsreel about the U.S. postal service. Shot with extraordinary physical precision, Tati constructs gag after gag from pure visual logic — bicycle wheels, festival bunting, and a very stubborn horse conspiring against his hapless hero. The film captures a vanishing rural France with genuine warmth, the village fête buzzing with gossip, music, and gentle absurdity that feels both timeless and achingly specific. Tati had not yet refined the distant, melancholy detachment of Monsieur Hulot; here he throws himself into the slapstick with gleeful abandon, and the result is one of the most purely joyful comedies ever committed to film.",
+    cast: ["Jacques Tati", "Guy Decomble", "Paul Frankeur"],
     rating: 96,
     ratingSource: "Rotten Tomatoes",
-    ratingExtra: "1 Academy Award Nomination",
-    posterUrl: "https://upload.wikimedia.org/wikipedia/en/3/31/N%C3%B3%C5%BC_w_wodzie_%28movie_poster%29.jpg"
+    ratingExtra: "Cannes Best Screenplay 1949",
+    posterUrl: "https://upload.wikimedia.org/wikipedia/en/9/96/Jour_de_fete-poster.jpg"
   }
 };

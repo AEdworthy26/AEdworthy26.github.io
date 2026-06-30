@@ -1,60 +1,60 @@
 // us-politics-news-data.js
-// Auto-updated 2026-06-29 — do not edit manually
+// Auto-updated 2026-06-30 — do not edit manually
 
 var US_POLITICS_NEWS = {
-  date: "2026-06-29",
+  date: "2026-06-30",
   main: {
-    title: "White House Secretly Swayed Board Meant to Protect Federal Workers From Unfair Firings",
+    title: "Supreme Court Cements Trump\'s Power Over Independent Federal Agencies in Landmark 6-3 Ruling",
     category: "Politics",
     content: [
-      "The Trump White House engaged in a covert campaign to influence the Merit Systems Protection Board, the independent body designed to shield federal employees from politically motivated or otherwise unlawful terminations. Behind the scenes, administration officials went to extensive lengths to reshape the board\'s posture, steering it toward endorsing a broad theory of executive power that would give the president sweeping latitude over the federal workforce. The revelations raise serious questions about the integrity of the very institution tasked with ensuring that civil service protections remain meaningful.",
-      "At stake is whether the president can install loyalists at nearly every echelon of the federal government, displacing career civil servants who have traditionally been insulated from partisan pressure. The administration\'s theory of executive power, if accepted, would represent a dramatic departure from decades of precedent governing the relationship between elected officials and the professional civil service. Critics argue that undermining the Merit Systems Protection Board effectively guts one of the last institutional safeguards for federal workers who might otherwise face retaliation for doing their jobs impartially.",
-      "The extent of the White House\'s behind-the-scenes involvement was not publicly disclosed, meaning affected federal employees had no opportunity to understand the full context in which their cases were being adjudicated. This lack of transparency compounds concerns that the board was operating not as an independent check on executive overreach, but as an instrument of the administration\'s broader personnel agenda. Legal experts have noted that if the manipulation is as extensive as reported, it could expose numerous firings and personnel actions to legal challenges.",
-      "The move fits into a wider pattern of the Trump administration seeking to consolidate executive control over institutions that were deliberately designed to function with independence from political direction. From independent regulatory agencies to oversight bodies, the administration has consistently pressed the case that the president holds near-total authority over the executive branch and the people who work within it. The Merit Systems Protection Board was always seen as one of the more durable bulwarks against such assertions, making the reported White House interference all the more consequential.",
-      "Congressional Democrats are expected to demand investigations and hearings into the reported conduct, while government employee unions have signaled they will pursue legal remedies on behalf of workers whose cases may have been decided under compromised circumstances. The story arrives as the contours of the 2026 midterms are beginning to take shape, with governance and executive accountability emerging as key lines of political contrast. For millions of federal employees across the country, the outcome of this dispute could fundamentally redefine the terms and security of their public service careers."
+      "The Supreme Court delivered a sweeping victory for executive power on Monday, ruling 6-3 to strike down a nearly century-old precedent that had long insulated independent federal agencies from direct presidential control. The decision allows President Trump to fire members of agencies like the Federal Trade Commission at will, overturning the 1935 Humphrey\'s Executor ruling that had for decades protected agency leaders from removal except for cause. The ruling represents one of the most significant expansions of presidential authority over the federal bureaucracy in modern American history.",
+      "The case centered on Trump\'s effort to remove a Democratic member of the FTC, an agency traditionally designed to operate free from direct White House interference. The six conservative justices sided with the administration, arguing that the Constitution vests executive power in the president and that insulating agency heads from removal encroaches on that authority. The three liberal justices dissented, warning that the decision effectively hands the White House unprecedented dominance over regulatory bodies meant to serve as independent checks on both governmental and corporate power.",
+      "The practical consequences of the ruling are vast, as it opens the door for the Trump administration to reshape the leadership of a wide array of regulatory agencies that oversee everything from financial markets to consumer protection. By removing the legal firewall that prevented presidents from dismissing commissioners and board members for purely political reasons, the court has fundamentally altered the balance of power between the executive branch and the so-called fourth branch of government. Legal scholars and former regulators warned Monday that the decision could usher in a new era of politically driven regulatory enforcement.",
+      "The ruling did not, however, hand Trump a completely unfettered hand over independent institutions. In a related development, the Supreme Court separately moved to block Trump from firing Federal Reserve board member Lisa Cook, at least for now, signaling that the scope of the new precedent may still be subject to further legal definition. Cook, the first Black woman to serve on the Fed\'s board of governors, had been targeted by the president amid allegations he raised about mortgage fraud — claims her supporters characterized as politically motivated. The temporary block on her removal suggests the court may be drawing distinctions between different categories of independent institutions.",
+      "Monday\'s decision arrives at a moment when the Trump administration has been aggressively pushing to consolidate executive authority across the federal government, and the ruling is likely to embolden further efforts to bring traditionally independent bodies under White House influence. Congressional Democrats immediately denounced the decision, arguing it dismantles structural safeguards that have protected regulatory independence across both Republican and Democratic administrations for nearly a century. With the ruling now on the books, the long-term shape of the American regulatory state — and the degree to which it can operate free from political pressure — may hinge on future court challenges and the willingness of Congress to respond legislatively."
     ],
-    image: "https://static01.nyt.com/images/2026/06/26/multimedia/00dc-power01-photo-gmhc/00dc-power01-photo-gmhc-mediumSquareAt3X.jpg",
-    source: "The New York Times",
-    sourceUrl: "https://www.nytimes.com/2026/06/28/us/politics/trump-firings-workers-merit-systems-protection-board.html"
+    image: "https://images.unsplash.com/photo-1612278920639-cfbae3835fee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTdXByZW1lJTIwQ291cnQlMjBDZW1lbnRzJTIwVHJ1bXAlNUN8ZW58MHwwfHx8MTc4Mjc5NTc5MXww&ixlib=rb-4.1.0&q=80&w=1080",
+    source: "NPR",
+    sourceUrl: "https://www.npr.org/2026/06/29/nx-s1-5816232/supreme-court-ftc-independent-agencies-humphreys-executor"
   },
   secondary: [
     {
       id: "us1",
-      title: "Trump Picks Lance Schroyer as New ICE Director",
-      summary: "President Trump has nominated Lance Schroyer, an adviser to DHS Secretary Markwayne Mullin, to lead Immigration and Customs Enforcement.",
+      title: "Supreme Court Lets Stand $5 Million Civil Verdict Against Trump in E. Jean Carroll Case",
+      summary: "The Supreme Court rejected Trump\'s final appeal in the E. Jean Carroll sex abuse case, meaning the president must pay the $5 million in damages awarded against him.",
       body: [
-        "President Trump announced the nomination of Lance Schroyer to serve as the new director of Immigration and Customs Enforcement, tapping an adviser closely tied to Department of Homeland Security Secretary Markwayne Mullin for the high-profile role. The pick signals that the administration intends to maintain its aggressive immigration enforcement posture heading into the second half of Trump\'s term.",
-        "ICE has been at the center of the administration\'s immigration policy battles, making the director\'s position one of the most politically visible in the federal government. Schroyer\'s close relationship with Secretary Mullin suggests the White House is prioritizing internal alignment and loyalty within the DHS leadership structure as it continues to pursue its immigration agenda."
+        "The Supreme Court declined to hear President Trump\'s last remaining appeal in the civil case brought by journalist E. Jean Carroll, leaving in place a jury verdict that found him liable for sexual assault and defamation. The decision means Trump will be required to pay the $5 million judgment that was awarded to Carroll following a 2023 trial, marking the definitive legal conclusion of a years-long court battle.",
+        "The ruling is a significant personal and legal setback for the sitting president, who has consistently denied Carroll\'s allegations and fought the case through multiple layers of appeal. With the Supreme Court now closing the door on further review, the verdict stands as a binding legal finding against Trump, adding to the complex legal landscape surrounding the nation\'s chief executive."
       ],
-      image: "https://static01.nyt.com/images/2026/06/27/multimedia/27DC-ICE-CHIEF-mlvj/27DC-ICE-CHIEF-mlvj-mediumSquareAt3X.jpg",
-      source: "The New York Times",
-      url: "https://www.nytimes.com/2026/06/27/us/politics/trump-oklahoma-ice-director.html",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/6822/live/fe2df4d0-7401-11f1-8e1d-bbbb1017d210.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.co.uk/news/articles/cn8q2z5wpn2o?at_medium=RSS&at_campaign=rss",
       category: "Politics"
     },
     {
       id: "us2",
-      title: "SCOTUS Hands Trump a Win as GOP Diverges on Housing Bill Ahead of Midterms",
-      summary: "A Supreme Court ruling favored the Trump administration while Republicans in Congress showed signs of strategic disagreement over a housing bill, with midterm positioning coming into focus.",
+      title: "Trump Dismisses Bipartisan Housing Bill as 'a Yawn' as It Heads to His Desk",
+      summary: "President Trump has repeatedly brushed off a bipartisan housing bill addressing the nation\'s affordability crisis, leaving its fate uncertain even as Speaker Mike Johnson sends it to the White House.",
       body: [
-        "The Supreme Court handed President Trump a significant legal victory, even as Republican lawmakers on Capitol Hill began to show visible daylight from the White House over a housing bill, suggesting the party is not uniformly aligned on its legislative priorities. NPR\'s politics analysts noted that the contours of the 2026 midterm elections are increasingly coming into focus, with different wings of the GOP making distinct calculations about what to run on.",
-        "The divergence between the administration and Congressional Republicans on housing policy reflects deeper tensions about which issues energize the base versus which appeal to swing voters in competitive districts. With midterms approaching, the strategic differences between the executive and legislative branches of the Republican Party could shape the policy and messaging battles of the next several months."
+        "House Speaker Mike Johnson moved Monday to send a bipartisan housing bill to President Trump\'s desk, but the legislation faces a deeply uncertain future after Trump publicly dismissed Americans' housing concerns and described the bill as 'a yawn.' The measure had managed to attract support from both parties in Congress, reflecting broad recognition that housing affordability has become a critical issue for millions of Americans.",
+        "Trump\'s dismissive posture toward the legislation underscores a recurring tension between the White House and lawmakers — including some Republicans — who see the housing crisis as a pressing economic and political liability. Whether the president ultimately signs or vetoes the bill could have significant implications for working and middle-class voters ahead of the next election cycle."
       ],
-      image: "https://images.unsplash.com/photo-1603119380999-ef522dd64b3c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTQ09UVVMlMjBIYW5kcyUyMFRydW1wJTIwYSUyMFdpbiUyMGFzJTIwR09QJTIwRGl2ZXJnZXMlMjBvbiUyMEhvdXNpbmclMjBCaWxsJTIwQWhlYWQlMjBvZiUyME1pZHRlcm1zfGVufDB8MHx8fDE3ODI3MDkzODZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "NPR",
-      url: "https://www.npr.org/2026/06/28/nx-s1-5872713/politics-chat-scotus-hands-trump-a-win-gop-diverges-on-housing-bill",
+      image: "https://images.unsplash.com/photo-1612278920639-cfbae3835fee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUcnVtcCUyMERpc21pc3NlcyUyMEJpcGFydGlzYW4lMjBIb3VzaW5nJTIwQmlsbCUyMGFzJTIwfGVufDB8MHx8fDE3ODI3OTU3OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "The Washington Post",
+      url: "https://www.washingtonpost.com/politics/2026/06/29/house-speaker-mike-johnson-set-send-housing-bill-trump-monday/",
       category: "Politics"
     },
     {
       id: "us3",
-      title: "Trump\'s Face Added to Select US Passports for America\'s 250th Birthday",
-      summary: "Commemorative special edition passports featuring President Trump\'s image will be available starting July 6, and can only be applied for in person.",
+      title: "Michigan Governor Threatens to Pull National Guard Troops If Used for Trump Task Force",
+      summary: "Governor Gretchen Whitmer warned she will withdraw Michigan\'s National Guard troops from Washington, D.C. if they are deployed as part of President Trump\'s controversial task force operations in the city.",
       body: [
-        "The Trump administration announced that a special commemorative edition of the United States passport will feature President Trump\'s face, timed to coincide with America\'s 250th birthday celebrations. The passports will become available on July 6 and are exclusively offered through in-person applications, making them a limited and distinctive collectible tied to the semiquincentennial.",
-        "The decision to place a sitting president\'s image on a government travel document is highly unusual and has drawn both enthusiasm from supporters and criticism from those who see it as an inappropriate blending of personal political branding with official federal documentation. The move underscores the administration\'s broad use of the anniversary festivities as a platform to associate Trump personally with American national identity."
+        "Michigan Governor Gretchen Whitmer joined three other Democratic governors in threatening to recall their states' National Guard troops from the nation\'s capital if the Trump administration attempts to use them for its ongoing — and legally disputed — deployment operations in Washington. The governors had originally sent their troops to support America 250 celebrations, but drew a firm line against any use of those forces for Trump\'s broader enforcement activities.",
+        "The standoff highlights the deepening friction between Democratic-led states and the federal executive over the use of military personnel for domestic political purposes. Whitmer\'s warning adds to a growing list of state-level challenges to Trump administration policies, reflecting the extent to which governors are positioning themselves as bulwarks against what they characterize as federal overreach."
       ],
-      image: "https://images.unsplash.com/photo-1550531996-ff3dcede9477?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUcnVtcCU1Q3xlbnwwfDB8fHwxNzgyNjIyOTg2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "BBC News",
-      url: "https://www.bbc.co.uk/news/articles/ce3ewkdgw9ro?at_medium=RSS&at_campaign=rss",
+      image: "https://images.pexels.com/photos/27794280/pexels-photo-27794280.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      source: "NPR",
+      url: "https://www.npr.org/2026/06/29/nx-s1-5875427/michigan-governor-national-guard-dc",
       category: "Politics"
     }
   ]

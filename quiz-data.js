@@ -1,10 +1,10 @@
 // quiz-data.js
-// Auto-updated 2026-06-29 — do not edit manually
+// Auto-updated 2026-06-30 — do not edit manually
 
 window.QUIZ_DATA = {
-  date: '2026-06-29',
+  date: '2026-06-30',
   category: 'Sport',
-  question: 'At the 2012 London Olympics, which country won the gold medal in the men\'s football tournament, defeating Brazil in the final — and what was the score at full time?',
-  answer: 'Mexico won gold, beating Brazil 2–1 in the final at Wembley Stadium.',
-  funFact: 'The final was played in front of over 86,000 fans at Wembley, with Oribe Peralta scoring both Mexican goals. Brazil\'s team included Neymar, who had scored a stunning free kick in the group stage, but Mexico held on in a tense final to claim their first Olympic football gold medal.'
+  question: 'At the 2004 Athens Olympics, which country beat Argentina in the men\'s basketball final to win gold — ending the United States\' long dominance of the event and completing an unbeaten run through the tournament?',
+  answer: 'Argentina',
+  funFact: 'Argentina\'s victory was one of the great upsets in Olympic basketball history, as the USA had won the gold medal at every Games they entered professional NBA players. Led by Manu Ginóbili, Argentina went undefeated throughout the tournament and beat Italy in the final 84–69, with the USA finishing a shocking third after losing to both Argentina and Puerto Rico in the group stage.'
 };

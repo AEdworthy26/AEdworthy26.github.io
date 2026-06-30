@@ -1,61 +1,61 @@
 // financial-news-data.js
-// Auto-updated 2026-06-29 — do not edit manually
+// Auto-updated 2026-06-30 — do not edit manually
 
 var FINANCIAL_NEWS = {
-  date: "2026-06-29",
+  date: "2026-06-30",
   main: {
-    title: "Oil Markets Edge Higher as U.S. and Iran Agree to Halt Persian Gulf Attacks",
+    title: "Stock Rally Extends as Tech Rebounds, Yen Weakens: Markets Wrap",
     category: "Markets",
     content: [
-      "Oil prices edged higher and U.S. stock-index futures advanced on Sunday evening after the United States and Iran reportedly agreed to halt attacks following days of exchanges of fire in the Persian Gulf. The ceasefire announcement brought a measure of relief to energy markets, which had been on edge throughout the weekend as hostilities escalated in one of the world\'s most strategically critical shipping corridors. Traders had been closely watching the situation, aware that any sustained disruption to Persian Gulf transit routes could meaningfully tighten global oil supply.",
-      "Despite the cautious optimism, market moves remained relatively modest, with the S&P 500 futures market described as little changed even as oil nudged upward. Analysts note that markets tend to price in geopolitical risk premiums quickly during flare-ups but are equally swift to unwind them once tensions cool — a pattern that appears to be playing out again here. The measured reaction suggests investors are treating the ceasefire as fragile rather than definitive, and are reluctant to make large directional bets until the situation stabilises further.",
-      "The Persian Gulf is one of the most critical chokepoints for global energy flows, with a significant share of the world\'s seaborne oil transiting through the Strait of Hormuz on a daily basis. Any sustained military activity in the region raises the spectre of supply disruptions that could ripple through energy costs worldwide, affecting everything from gasoline prices to industrial input costs. The weekend\'s events served as a sharp reminder of how quickly geopolitical flashpoints can translate into commodity market volatility.",
-      "Looking further ahead, Bloomberg analysts note that markets may now be preparing to shift focus from geopolitical risk to macroeconomic fundamentals, with rates and currency volatility potentially dominating the second half of 2026. Commodity markets also reflected the easing of tensions in other ways — corn futures slipped after the hostilities between the U.S. and Iran eased, suggesting that the risk premium that had been built into agricultural commodity prices was also beginning to deflate. Traders were simultaneously monitoring hot weather in the United States that could separately impact crop yields, illustrating how multiple risk factors are competing for market attention.",
-      "For equity investors, the ceasefire provides at least a short-term reprieve from one of the more acute sources of uncertainty hanging over global markets heading into the second half of the year. Energy stocks, which had benefited from elevated oil prices during the period of heightened tensions, may face some near-term headwinds if crude prices retreat as the geopolitical risk premium fully unwinds. The episode underscores the enduring sensitivity of financial markets to Middle Eastern stability, and the speed with which traders must recalibrate portfolios when the geopolitical landscape shifts overnight.",
+      "Wall Street\'s technology-driven rally continued to gain momentum on Tuesday, spilling over into Asian markets as investors piled back into companies widely seen as the primary beneficiaries of the ongoing artificial intelligence buildout. The broad-based optimism pushed major indices higher across multiple sessions, with tech stocks leading the charge after a period of consolidation. Market participants appear increasingly confident that the structural demand for AI infrastructure remains intact, driving fresh capital into the sector\'s largest names.",
+      "In currency markets, the Japanese yen slid to its weakest level against the US dollar since 1986, a development that adds a significant macro dimension to the current market environment. A weaker yen historically benefits Japanese exporters by making their goods more competitive abroad, lending additional support to Asian equity markets. However, it also raises concerns among policymakers about imported inflation and the potential need for intervention by the Bank of Japan, which has been navigating an extraordinarily delicate path between stimulus and normalisation.",
+      "The technology rebound comes amid growing anticipation surrounding high-profile AI-focused IPOs, with companies like OpenAI and Anthropic preparing to go public in what could be among the largest listings in recent memory. Investor appetite for AI-adjacent equities has been voracious, reflecting broader confidence that the current wave of AI investment will translate into durable earnings growth. This sentiment has underpinned valuations across the sector even as broader economic conditions remain uncertain in several major economies.",
+      "The rally also reflects a degree of relief following weeks of geopolitical noise that had injected volatility into global markets. With some progress reported on diplomatic fronts — including movement on Middle East negotiations — risk appetite has broadly improved, encouraging rotation back into growth-oriented assets. Institutional investors appear to be repositioning portfolios heading into the second half of 2026, with technology and AI themes remaining central to allocation strategies.",
+      "As markets close out the second quarter, the overall tone is one of cautious optimism tempered by ongoing uncertainties around monetary policy, currency volatility, and geopolitical flashpoints. The Federal Reserve\'s next moves remain a key focus for investors, particularly given renewed political pressure on the institution from Washington. Nevertheless, the strong close to Q2 in tech-heavy indices suggests that, for now, the bulls retain the upper hand as the market heads into the second half of the year."
     ],
-    image: "https://images.mktw.net/im-73359400",
-    source: "MarketWatch",
-    sourceUrl: "https://www.marketwatch.com/story/oil-prices-rise-stock-futures-inch-higher-as-u-s-and-iran-trade-more-airstrikes-3fc66beb?mod=mw_rss_topstories"
+    image: "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iRts94__JsJ0/v3/1200x-1.png",
+    source: "Bloomberg Markets",
+    sourceUrl: "https://www.bloomberg.com/news/articles/2026-06-29/japan-stocks-set-to-climb-as-yen-hits-40-year-low-markets-wrap"
   },
   secondary: [
     {
       id: "fn1",
-      title: "PBOC Surprises Markets With Below-Forecast Rate on New Overnight Tool",
-      summary: "China\'s central bank set the rate on its new overnight liquidity facility below market expectations, signalling a de facto easing that could push down borrowing costs across the economy.",
+      title: "Oil Set for Biggest Quarterly Drop Since Pandemic as Glut Risks Mount",
+      summary: "Oil is heading for its steepest quarterly decline since the COVID-19 pandemic as Strait of Hormuz flows accelerate and Morgan Stanley warns of an emerging supply glut.",
       body: [
-        "The People\'s Bank of China debuted its new overnight liquidity tool with an interest rate that came in below analyst forecasts, according to people familiar with the matter, in a move that some economists are interpreting as a stealth rate cut. The surprise has fuelled expectations that Beijing is leaning toward monetary easing as it seeks to support domestic economic activity amid ongoing global trade uncertainties.",
-        "A lower overnight rate from the PBOC could filter through to broader market borrowing costs, easing financing conditions for businesses and households alike. The move is being closely watched by global investors as a potential signal of the direction of Chinese monetary policy in the second half of 2026, with implications for capital flows across emerging markets."
+        "Crude oil prices are on track for their largest quarterly fall since the pandemic era, with flows through the strategically vital Strait of Hormuz picking up pace following progress on a peace deal in the region. The accelerating supply picture has rattled energy markets, pushing benchmark prices sharply lower over the course of the quarter.",
+        "Morgan Stanley has issued a warning about the risk of a potential oil glut, adding analyst weight to bearish price sentiment. The combination of improved Middle East supply flows and tepid global demand growth is reshaping near-term outlooks for the energy sector, with implications for oil-dependent economies and energy company earnings heading into Q3."
       ],
-      image: "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iJqstVXxErn8/v3/1200x-1.png",
+      image: "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iCKpupHo5vc4/v0/1200x-1.jpg",
       source: "Bloomberg Markets",
-      url: "https://www.bloomberg.com/news/articles/2026-06-29/pboc-debuts-overnight-operation-surprises-with-no-rate-released",
-      category: "Monetary Policy"
+      url: "https://www.bloomberg.com/news/articles/2026-06-29/latest-oil-market-news-and-analysis-for-june-30",
+      category: "Commodities"
     },
     {
       id: "fn2",
-      title: "Sky Makes £2bn Spending Pledge Ahead of ITV Broadcasting Arm Takeover",
-      summary: "Sky, owned by Comcast, has committed to a £2 billion investment in ITV\'s studios business over five years as the two companies finalise a takeover deal expected to be announced in July.",
+      title: "UK Crypto Firms Face Sweeping New FCA Rules from October 2027",
+      summary: "The Financial Conduct Authority has announced comprehensive new regulations requiring crypto firms operating in the UK to demonstrate resilience to market shocks and hold capital against risky assets.",
       body: [
-        "Sky has pledged to invest £2 billion in ITV\'s studios division over the next five years as it works toward acquiring the broadcaster\'s production arm in a deal that could be formally announced as soon as next month. The commitment is designed to safeguard the future of flagship British programming including Coronation Street and Love Island, addressing cultural concerns that have surrounded the potential foreign ownership of iconic domestic content.",
-        "The deal marks a significant consolidation moment in the British media industry, with Comcast-owned Sky expanding its content production footprint substantially. Analysts will be watching closely to see whether regulators require additional concessions, given the scale of the transaction and its implications for the UK\'s independent broadcasting landscape."
+        "The UK\'s Financial Conduct Authority has unveiled sweeping new rules that will require crypto firms to prove they can withstand market shocks and maintain adequate capital buffers against risky assets, with the regulations set to take effect from October next year. The announcement marks a significant step toward bringing the largely unregulated crypto industry under a framework comparable to that governing traditional financial institutions.",
+        "The move reflects growing regulatory urgency around the booming digital asset sector, which has so far operated with comparatively limited oversight in the UK. Industry participants will need to accelerate their compliance preparations, and the rules are expected to raise the bar for market entry, potentially reshaping the competitive landscape for crypto businesses seeking a foothold in one of the world\'s leading financial centres."
       ],
-      image: "https://i.guim.co.uk/img/media/4474d3a3d2e56f0a9984cb709f7c873c9e0608a9/497_81_2780_2225/master/2780.jpg?width=1200&quality=85&auto=format&fit=max&s=32d9745a94fe30c77d37b608c390918d",
+      image: "https://i.guim.co.uk/img/media/9d95d44e58b560fb5445799828ea0bf5c913fa4a/285_0_4600_3680/master/4600.jpg?width=1200&quality=85&auto=format&fit=max&s=f9d80923dfb307d2a0400999c3917279",
       source: "The Guardian",
-      url: "https://www.theguardian.com/business/2026/jun/28/sky-makes-spending-pledge-as-it-prepares-takeover-of-itv-broadcasting-arm",
-      category: "Mergers & Acquisitions"
+      url: "https://www.theguardian.com/technology/2026/jun/30/crypto-firms-sweeping-new-rules-uk-fca-regulator",
+      category: "Regulation"
     },
     {
       id: "fn3",
-      title: "UK Households Face Steepest Summer Energy Bill Rise in Four Years",
-      summary: "The Ofgem price cap will rise by 13% from July 1st to the equivalent of £1,862 a year, piling further pressure on consumers already struggling with energy debt.",
+      title: "Rocket Lab Bets $8 Billion on Iridium Acquisition to Challenge SpaceX\'s Starlink",
+      summary: "Rocket Lab has announced an $8 billion deal to acquire satellite communications company Iridium, describing the move as a strategic shortcut to building out its own connectivity capabilities to rival SpaceX\'s Starlink network.",
       body: [
-        "British households are facing their sharpest summer increase in energy bills in four years after the Ofgem quarterly price cap rose by 13% from Wednesday, bringing the average annual equivalent cost to £1,862. The increase is compounding growing consumer energy debt and intensifying calls on ministers to intervene with targeted relief measures.",
-        "The timing of the rise — in what is traditionally a lower-demand summer period — has heightened concern among consumer advocates and energy analysts about affordability heading into winter. Pressure on the government to act is mounting, with critics arguing that without structural intervention, a growing share of households will find themselves in fuel poverty by the end of the year."
+        "Rocket Lab has made its most ambitious corporate move to date, announcing an $8 billion acquisition of Iridium in a bold bid to challenge SpaceX\'s dominant Starlink satellite internet service. The company described the deal as a 'shortcut' to rapidly expanding its satellite communications capabilities rather than building the infrastructure from scratch.",
+        "The acquisition signals an intensifying commercial space race beyond launch services, with Rocket Lab now positioning itself as a vertically integrated player across launch and connectivity. The deal is among the largest in the commercial space sector and will be closely watched by investors as a test of whether Rocket Lab can leverage Iridium\'s existing global network to credibly compete with Starlink\'s growing subscriber base."
       ],
-      image: "https://i.guim.co.uk/img/media/f9e0a8685648ab24de50fb619e45c2dae166f7fc/365_0_6000_4800/master/6000.jpg?width=1200&quality=85&auto=format&fit=max&s=599675cc2703346c265679319c6b6e14",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/business/2026/jun/28/ministers-urged-to-curb-energy-costs-as-great-british-homes-face-bill-surge",
-      category: "Economics"
+      image: "https://images.mktw.net/im-22494504",
+      source: "MarketWatch",
+      url: "https://www.marketwatch.com/story/rocket-lab-to-take-on-spacexs-starlink-with-8-billion-acquisition-bf7ef649?mod=mw_rss_topstories",
+      category: "M&A"
     }
   ]
 };

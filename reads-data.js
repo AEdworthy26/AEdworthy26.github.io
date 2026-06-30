@@ -1,19 +1,19 @@
 // reads-data.js
-// Auto-updated 2026-06-29 — do not edit manually
+// Auto-updated 2026-06-30 — do not edit manually
 
 var READS_DATA = {
-  date: "2026-06-29",
+  date: "2026-06-30",
   book: {
-    title: "The Passenger",
-    author: "Cormac McCarthy",
-    year: 2022,
-    genres: ["Literary Fiction", "Philosophy", "Existential Fiction"],
-    desc: "Bobby Western is a salvage diver haunted by the ghost of his brilliant, doomed sister and by a life lived at the margins of physics, mathematics, and grief — a man who has chosen disappearance over engagement with a world he no longer trusts. McCarthy\'s first novel in sixteen years is a thunderous, grief-soaked meditation on consciousness, guilt, the nature of reality, and what it means to love someone you cannot save. The prose operates at the extreme edge of what English can do: dense, allusive, and devastatingly beautiful, cutting between Bobby\'s drifting present and his sister Alicia\'s hallucinatory sections that rank among the most formally daring writing McCarthy ever produced. It is a difficult book, stubbornly resistant to easy resolution, but that very difficulty is the point — this is a novel that demands you sit with irresolvable things, which is precisely what great literature is for.",
-    whyRead: "In an era of tidy narratives and algorithmic storytelling, McCarthy\'s refusal to comfort or conclude feels not like a flaw but an act of artistic integrity — read it now, while the world is still arguing about what it means.",
-    rating: 3.9,
+    title: "The Overstory",
+    author: "Richard Powers",
+    year: 2018,
+    genres: ["Literary Fiction", "Nature", "Ecology"],
+    desc: "A sweeping, Pulitzer Prize-winning novel that braids together the lives of nine Americans whose fates are shaped by trees — from a chestnut that survives a blight to a sentinel redwood that draws activists into its canopy. Powers writes with the ambition of Tolstoy and the precision of a field naturalist, making the non-human world feel as vivid and morally urgent as any human character. The novel asks what it would mean to truly see the world on a timescale longer than a human life, and whether that seeing could change how we act. It is at once a page-turning ensemble drama and a radical argument about consciousness, interconnection, and what we owe the living world.",
+    whyRead: "As ecological anxiety deepens in the mid-2020s, this book offers something rarer than alarm — it offers wonder, and a genuinely altered sense of what counts as a life worth mourning.",
+    rating: 4.2,
     ratingSource: "Goodreads",
-    ratingCount: "60,000+",
-    coverUrl: "https://covers.openlibrary.org/b/id/13072232-L.jpg",
-    amazonUrl: "https://www.amazon.co.uk/dp/0330457438"
+    ratingCount: "350,000+",
+    coverUrl: "https://covers.openlibrary.org/b/id/8758252-L.jpg",
+    amazonUrl: "https://www.amazon.co.uk/dp/8491814442"
   }
 };

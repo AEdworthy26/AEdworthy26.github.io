@@ -1,61 +1,61 @@
 // tech-news-data.js
-// Auto-updated 2026-06-29 — do not edit manually
+// Auto-updated 2026-06-30 — do not edit manually
 
 var TECH_NEWS = {
-  date: "2026-06-29",
+  date: "2026-06-30",
   main: {
-    title: "China Reclaims Title of World\'s Fastest Supercomputer for First Time Since 2018",
-    category: "Technology",
+    title: "US Offers $10 Million for Info on Russia-Linked Groups Behind Signal and WhatsApp Hacking Spree",
+    category: "Cybersecurity",
     content: [
-      "China has seized the top spot on the prestigious TOP500 supercomputer rankings, claiming the world\'s fastest supercomputer for the first time since 2018. The machine, known as LineShine, has dethroned the United States' El Capitan, which had previously held the number one position. The achievement marks a dramatic statement of China\'s computational ambitions and its ability to compete at the highest levels of high-performance computing.",
-      "What makes the accomplishment particularly striking is the context in which it was achieved. The United States has imposed strict trade restrictions limiting the sale of high-powered computing components to China, with American firms dominating the global supply chain for the chips and hardware that typically power the world\'s most capable supercomputers. Despite these significant constraints, Chinese engineers and institutions found ways to build a machine that surpasses anything currently operating in the West.",
-      "The TOP500 list is widely regarded as the definitive benchmark for supercomputing performance, and holding the top spot carries enormous prestige as well as practical significance. Supercomputers at this scale are used for everything from climate modeling and pharmaceutical research to nuclear weapons simulation and, increasingly, training large-scale artificial intelligence models. China\'s return to the summit signals that its domestic technology ecosystem has matured considerably, even under sustained export pressure.",
-      "The development is likely to intensify debates in Washington and allied capitals about the effectiveness of technology export controls as a tool for maintaining strategic advantage. Critics of the current regime have argued that restrictions can inadvertently spur domestic innovation in rival nations rather than simply limiting their capabilities. The LineShine result appears to offer some evidence for that argument, suggesting that Chinese institutions have developed alternative hardware pathways that reduce their dependence on American components.",
-      "For the global scientific and technology community, the news serves as a reminder that supercomputing leadership is a dynamic and fiercely contested domain. The United States still dominates the broader TOP500 list, with American machines accounting for a significant share of the world\'s top-ranked systems. Nevertheless, China\'s return to the number one position is a significant geopolitical and technological milestone that will shape conversations about computing investment, AI infrastructure, and national competitiveness for years to come."
+      "The United States government has announced a $10 million reward for information leading to the identification of those responsible for a sustained hacking campaign targeting users of Signal and WhatsApp, two of the world\'s most widely used encrypted messaging platforms. The operation has been attributed to two Russia-state-affiliated groups and has been ongoing since at least March of this year. The scale and persistence of the campaign have raised serious alarms among cybersecurity experts and government officials alike.",
+      "Signal and WhatsApp have long been considered among the most secure consumer messaging applications available, offering end-to-end encryption that theoretically prevents third parties from intercepting message contents. The fact that state-sponsored actors appear to have found viable attack vectors against users of these platforms represents a significant and troubling development in the landscape of digital security. While the exact technical methods used in the hacking spree have not been fully disclosed publicly, the operation\'s success against such hardened targets suggests sophisticated capabilities on the part of the threat actors.",
+      "The $10 million bounty is being offered through the U.S. government\'s Rewards for Justice program, which has previously been used to surface intelligence on cyber threat actors, terrorists, and other national security threats. By putting such a substantial financial incentive on the table, American authorities are hoping to encourage individuals with inside knowledge — potentially including former associates or contractors of the groups involved — to come forward with actionable information. The program has had notable successes in the past, and officials believe it remains one of the more effective tools for disrupting state-sponsored cyber operations.",
+      "Russia-linked hacking groups have a well-documented history of targeting communications infrastructure, journalists, activists, and government officials around the world. The choice of Signal and WhatsApp as targets is particularly notable given that these apps are frequently used by dissidents, diplomats, and security-conscious individuals specifically because of their strong encryption guarantees. A successful campaign against users of these platforms could yield intelligence of significant value to Russian state interests, including the exposure of sensitive conversations that users believed were fully protected.",
+      "The disclosure of this bounty comes at a moment of heightened tension between Western governments and Russia over cyber operations, and it signals that the U.S. is willing to take aggressive countermeasures beyond simply issuing warnings or sanctions. Cybersecurity firms and government agencies are urging users of both platforms to ensure they are running the latest software versions and to be vigilant about phishing attempts or suspicious account activity. The ongoing nature of the campaign — stretching back at least to March — underscores the need for continuous vigilance and suggests that the threat has not yet been fully neutralized."
     ],
-    image: "https://images.unsplash.com/photo-1664537877869-b4f80acef4b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxDaGluYSUyMFJlY2xhaW1zJTIwVGl0bGUlMjBvZiUyMFdvcmxkJTVDfGVufDB8MHx8fDE3ODI3MDk0NzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    source: "The Verge",
-    sourceUrl: "https://www.theverge.com/tech/958768/china-claims-the-worlds-fastest-supercomputer"
+    image: "https://cdn.arstechnica.net/wp-content/uploads/2026/06/russia-hacking-binary-1152x648.jpg",
+    source: "Ars Technica",
+    sourceUrl: "https://arstechnica.com/information-technology/2026/06/us-offers-10-million-for-info-on-group-behind-signal-and-whatsapp-hacking-spree/"
   },
   secondary: [
     {
       id: "tc1",
-      title: "Ford Rehires Veteran Engineers After AI Fails to Deliver on Quality Promises",
-      summary: "Ford is bringing back experienced 'gray beard' engineers after discovering that artificial intelligence alone could not produce the high-quality manufacturing results the company had hoped for.",
+      title: "South Korea to Invest $1 Trillion in Memory Chips and Humanoid Robots",
+      summary: "South Korea has announced a landmark $1 trillion investment plan targeting expanded memory chip production and commercial humanoid robot development, aiming for a lead in physical AI by 2028.",
       body: [
-        "Ford has acknowledged a costly miscalculation, admitting that the introduction of AI into its production and engineering processes did not automatically translate into better products. The automaker has begun rehiring seasoned veteran engineers — internally referred to as 'gray beards' — whose deep institutional knowledge proved irreplaceable. A company spokesperson was candid about the error, stating that Ford 'mistakenly thought that by just introducing artificial intelligence... that would produce a high-quality product.'",
-        "The reversal is a significant real-world data point in the broader industry conversation about where AI augments human expertise versus where it falls short. Ford\'s experience suggests that in complex, high-stakes manufacturing environments, decades of hands-on engineering knowledge cannot simply be automated away, and that the transition to AI-assisted workflows requires more careful management of institutional knowledge than many companies initially anticipated."
+        "South Korea is making an extraordinary bet on the future of hardware and robotics, committing $1 trillion to dramatically scale up memory chip manufacturing capacity while simultaneously accelerating a national push into humanoid robots. The country has set an ambitious target of having commercial humanoid robots ready for deployment as early as 2028, positioning itself as a global leader in what the industry is calling 'physical AI' — the integration of artificial intelligence into embodied robotic systems.",
+        "The investment reflects growing global competition over the semiconductor and robotics industries, with nations from the United States to China racing to secure dominance in the technologies expected to underpin the next wave of economic growth. South Korea, already home to memory chip giants like Samsung and SK Hynix, is doubling down on its existing strengths while making a bold move into the emerging humanoid robotics market."
       ],
-      image: "https://images.unsplash.com/photo-1745187235698-e3e44dc26553?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxGb3JkJTIwUmVoaXJlcyUyMFZldGVyYW4lMjBFbmdpbmVlcnMlMjBBZnRlciUyMEFJJTIwRmFpbHMlMjB0byUyMERlbGl2ZXIlMjBvbiUyMFF1YWxpdHklMjBQcm9taXNlc3xlbnwwfDB8fHwxNzgyNzA5NDcxfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "TechCrunch",
-      url: "https://techcrunch.com/2026/06/28/ford-rehires-gray-beard-engineers-after-ai-falls-short/",
-      category: "Technology"
+      image: "https://cdn.arstechnica.net/wp-content/uploads/2026/06/Screenshot-2026-06-29-at-4.36.13-PM-1152x648.png",
+      source: "Ars Technica",
+      url: "https://arstechnica.com/ai/2026/06/south-korea-to-spend-1t-on-more-memory-chip-production-and-humanoid-robots/",
+      category: "Hardware & AI"
     },
     {
       id: "tc2",
-      title: "China\'s Z.ai Releases GLM-5.2, Claiming Parity with Leading Cybersecurity AI Models",
-      summary: "Chinese AI lab Zhipu AI has released its open-weight GLM-5.2 model, with researchers claiming it matches the Mythos model in bug-finding and cybersecurity tasks.",
+      title: "Ford Rehires Human Engineers After AI Fails to Match Quality Checks",
+      summary: "Ford has brought back veteran human engineers after discovering that AI-powered quality control systems could not match the precision and judgment of experienced technicians on its production lines.",
       body: [
-        "China\'s Zhipu AI, operating under the brand Z.ai, has unveiled its latest open-weight language model GLM-5.2, and early evaluations from researchers suggest it holds its own against Mythos in specialized cybersecurity scenarios including vulnerability detection and bug-finding. While the model still lags behind leading offerings from Anthropic and OpenAI on more general benchmarks, its performance in the security domain is notable. The release underscores how Chinese AI development continues to accelerate in targeted, high-value capability areas.",
-        "The cybersecurity domain is considered particularly sensitive given the dual-use nature of models that can find software vulnerabilities — capabilities that can be used defensively to patch systems or offensively to exploit them. The fact that GLM-5.2 is released as an open-weight model means its capabilities are widely accessible, which will likely draw scrutiny from security researchers and policymakers paying close attention to the global AI race."
+        "Ford Motor Company has reversed course on a push to automate quality inspection processes with artificial intelligence, rehiring human engineers after the AI systems fell short of the standards set by seasoned veterans. The car manufacturer found that experienced technicians possessed a level of nuanced judgment and pattern recognition that current AI tools were unable to replicate reliably in real-world production environments.",
+        "The development is a notable counterpoint to widespread narratives about AI rapidly displacing skilled workers, and it highlights the persistent gap between AI performance in controlled demonstrations versus the messy realities of industrial manufacturing. It also raises broader questions about the pace at which companies should replace human expertise with automated systems, particularly in safety-critical domains like automotive quality assurance."
       ],
-      image: "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxDaGluYSU1Q3xlbnwwfDB8fHwxNzgyNzA5NDcyfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "The Verge",
-      url: "https://www.theverge.com/ai-artificial-intelligence/958804/chinas-z-ai-glm-52-mythos-cybersecurity",
-      category: "Artificial Intelligence"
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/ad26/live/e5db0a70-73ad-11f1-9da1-db101e3ae6ed.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.co.uk/news/articles/cgrkd41n2v9o?at_medium=RSS&at_campaign=rss",
+      category: "AI & Industry"
     },
     {
       id: "tc3",
-      title: "South Korea Plans to Train Its Entire Half-Million Strong Military as 'Drone Warriors'",
-      summary: "South Korea has announced an ambitious plan to train every soldier in its military to operate drones, designating the technology a 'universal combat tool' for modern warfare.",
+      title: "Leaked iPhone 18 Pro Photos Reportedly Surface on the Dark Web After Supplier Breach",
+      summary: "Images and parts lists purportedly showing the iPhone 18 Pro have appeared on the dark web following a data breach at one of Apple\'s key manufacturing suppliers.",
       body: [
-        "South Korea is embarking on one of the most ambitious military drone integration programs in the world, with plans to train its entire half-million-strong armed forces in drone operation and deployment. Officials have framed drones as a 'universal combat tool,' signaling a fundamental shift in how the country conceives of its fighting force rather than treating unmanned systems as a niche specialty. The initiative reflects lessons drawn from recent conflicts around the world, where drone warfare has repeatedly proven decisive.",
-        "The scale of the program is unprecedented — rather than creating dedicated drone units, South Korea intends for every soldier regardless of role to have working proficiency with unmanned systems. This approach could reshape military doctrine significantly, creating a force where drone awareness and operation are as fundamental as marksmanship. The move also carries implications for the regional security landscape, particularly given the ongoing tensions on the Korean Peninsula."
+        "Leaked photographs and component details allegedly related to Apple\'s forthcoming iPhone 18 Pro have surfaced on the dark web, stemming from a security breach at one of the company\'s major suppliers, according to a report from Reuters. The leaked images reportedly show a drop test of the device, which appears to feature a three-camera array and the standard Apple logo on its rear housing.",
+        "Supply chain leaks have long been a thorn in Apple\'s side as it attempts to maintain strict secrecy around its product launches, but a dark web data breach represents a more serious security incident than the typical inadvertent component photo leak. The incident underscores the cybersecurity vulnerabilities that can exist deep within global manufacturing supply chains, where dozens of third-party vendors handle sensitive design and engineering data."
       ],
-      image: "https://cdn.arstechnica.net/wp-content/uploads/2026/06/GettyImages-1244261698-1152x648.jpg",
-      source: "Ars Technica",
-      url: "https://arstechnica.com/ai/2026/06/south-korea-plans-to-train-entire-military-as-drone-warriors/",
-      category: "Technology"
+      image: "https://images.unsplash.com/photo-1644329968124-4c68f17c21e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxMZWFrZWQlMjBpUGhvbmUlMjAxOCUyMFBybyUyMFBob3RvcyUyMFJlcG9ydGVkbHklMjBTdXJmYWNlJTIwb24lMjB0aGUlMjBEYXJrJTIwV2ViJTIwQWZ0ZXIlMjBTdXBwbGllciUyMEJyZWFjaHxlbnwwfDB8fHwxNzgyNzk1ODczfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "The Verge",
+      url: "https://www.theverge.com/tech/959229/iphone-18-pro-leak-apple-dark-web",
+      category: "Hardware & Cybersecurity"
     }
   ]
 };
