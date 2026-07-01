@@ -1,8 +1,8 @@
 // quote-data.js
-// Auto-updated 2026-06-30 — do not edit manually
+// Auto-updated 2026-07-01 — do not edit manually
 
 var QUOTE_DATA = {
-  date: "2026-06-30",
-  text: "It is not the man who has too little, but the man who craves more, that is poor.",
-  author: "Seneca"
+  date: "2026-07-01",
+  text: "What lies behind us and what lies before us are tiny matters compared to what lies within us.",
+  author: "Ralph Waldo Emerson"
 };
