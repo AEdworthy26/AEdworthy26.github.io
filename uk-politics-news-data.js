@@ -1,61 +1,61 @@
 // uk-politics-news-data.js
-// Auto-updated 2026-06-30 — do not edit manually
+// Auto-updated 2026-07-02 — do not edit manually
 
 var UK_POLITICS_NEWS = {
-  date: "2026-06-30",
+  date: "2026-07-02",
   main: {
-    title: "Burnham Sets Out Vision to Transform Britain and Fix 'Broken' System",
+    title: "Burnham Under Pressure to Rule Out Welfare Cuts to Fill £5bn Defence Budget Black Hole",
     category: "Politics",
     content: [
-      "Andy Burnham, the person widely expected to become the next prime minister, has delivered a major speech setting out his blueprint to transform the United Kingdom. He promised to improve living standards and restore faith in politics through what he described as the 'biggest rebalancing of power our country has ever seen'. The speech was widely interpreted as a de facto launch of his vision for government, offering the clearest picture yet of what a Burnham premiership would look like.",
-      "Central to Burnham\'s address was his 'No 10 North' plan, which he claims would rebalance political and economic power away from Westminster and towards the regions. He argued that his devolution agenda would 'drive good growth in every postcode', drawing on his experience as Mayor of Greater Manchester as evidence that regional empowerment can deliver meaningful change. The plan envisions a significant transfer of decision-making to local and regional authorities across Britain.",
-      "Burnham also addressed the cost of living crisis, positioning himself as a leader who would place economic pressures on ordinary families at the heart of his agenda. He argued that the current system is fundamentally broken and requires transformation rather than tinkering at the edges. His remarks were designed to signal a break not just from the Conservatives, but also from elements of the current Starmer administration\'s approach.",
-      "The speech was notable for its ambition but, according to BBC analysis, relatively sparse on specific policy details. Political editor Henry Zeffman observed that while Burnham offered a compelling sense of what his time as prime minister would mean in terms of tone and direction, he stopped short of laying out the granular mechanics of how his programme would be funded or delivered. He did, however, insist he would stick to fiscal rules, seeking to reassure those concerned about the cost of his devolution and public investment commitments.",
-      "The address comes at a pivotal moment in British politics, with the Labour leadership contest drawing increasing attention and Burnham consolidating his position as frontrunner. His campaign has attracted notable supporters, with figures such as Lisa Nandy breaking ranks to join him on the campaign trail. Whether Tuesday\'s speech succeeds in converting Burnham\'s poll lead into a durable coalition of party support will become clearer in the days ahead."
+      "Andy Burnham, the prime minister-in-waiting, is facing mounting pressure from Labour MPs to rule out cuts to welfare in order to plug what critics are calling a £5 billion black hole in the government\'s Defence Investment Plan. The controversy has intensified after a defence minister admitted that outgoing Prime Minister Keir Starmer only informed Burnham of the funding shortfall at the last minute, raising serious questions about the transition of power and the financial inheritance Burnham is set to receive. The revelation has drawn sharp criticism from across the political spectrum, with opponents accusing Starmer of leaving his successor with an extraordinarily difficult set of trade-offs from the outset.",
+      "Conservative leader Kemi Badenoch has been quick to exploit the situation, accusing Starmer of leaving a financial 'mess' for Burnham to clean up and urging the Labour leader-in-waiting to publicly condemn the Defence Investment Plan. Badenoch pointed to what she described as a missing £5 billion in the defence funding blueprint, arguing that the numbers simply do not add up and that ordinary people — whether welfare recipients or motorists depending on road infrastructure — will ultimately pay the price. Her attacks have found some traction even within Labour ranks, where several MPs and at least one minister have reportedly expressed fury over plans to redirect funding from road projects in order to meet defence commitments.",
+      "BBC political editor Chris Mason has reflected on the scale of the challenge, noting that Starmer\'s defence plan leaves Burnham confronting a series of 'crunching trade-offs' the moment he takes office. The core dilemma is stark: if the £5 billion gap is real, Burnham must choose between cutting public services such as welfare, finding new tax revenues, scaling back the defence ambitions he will inherit, or some combination of all three. BBC Verify has also investigated the claims, examining whether the alleged shortfall genuinely constitutes a 'black hole' or whether the government\'s insistence that its funding is 'credible' holds water.",
+      "Burnham has sought to project stability in the face of the turmoil, publicly insisting he will stick to the government\'s fiscal rules and will not engage in reckless spending. He has also backed the pension triple lock, signalling that he intends to honour the promises made in Labour\'s 2024 manifesto, even as his own advisers are reported to be deeply uncomfortable with the long-term cost of that commitment. These assurances, while welcomed by some within the party, have done little to quiet the growing chorus of Labour backbenchers demanding explicit guarantees that vulnerable people will not bear the brunt of the defence funding shortfall.",
+      "The episode has cast a long shadow over what was meant to be a relatively smooth handover of power within Labour, and has given the opposition an early opportunity to frame Burnham\'s premiership as one born of financial mismanagement rather than fresh purpose. Angela Rayner has sought to inject some momentum into the transition by launching a pitch for Burnham\'s devolution agenda, while a new poll published in The Guardian suggests that bold 'economic populist' policies — including rent controls and higher wealth taxes — could help Labour fend off Reform UK in key marginal seats. Whether Burnham can resolve the defence funding question while simultaneously projecting a bold and forward-looking domestic agenda is shaping up to be one of the defining tests of his leadership before he has even entered Downing Street."
     ],
-    image: "https://i.guim.co.uk/img/media/966c4d0ca9d00e56a1d9551fbf1f535850dfcf38/365_0_3624_2900/master/3624.jpg?width=1200&quality=85&auto=format&fit=max&s=d5366478ee733ce36fbb81a853784799",
-    source: "The Guardian",
-    sourceUrl: "https://www.theguardian.com/politics/2026/jun/29/burnham-sets-out-vision-to-transform-britain-and-fix-broken-system"
+    image: "https://static.independent.co.uk/2026/07/01/10/39/PA-84593974.jpeg?width=1200&auto=webp&trim=14%2C0%2C282%2C0",
+    source: "The Independent",
+    sourceUrl: "https://www.independent.co.uk/news/uk/politics/andy-burnham-defence-black-hole-welfare-cuts-labour-mps-b3006719.html"
   },
   secondary: [
     {
       id: "uk1",
-      title: "Long-Delayed Defence Investment Plan Finally Published, Boosted by Extra £1.5bn for Drones",
-      summary: "The UK\'s long-awaited defence investment plan has been published, with new Defence Secretary Dan Jarvis securing an additional £1.5bn — largely earmarked for drones — after rows over an £18bn funding gap led to his predecessor\'s resignation.",
+      title: "Burnham Says 'Nothing Off the Table' Over Rochdale Grooming Gang Leader Deportation",
+      summary: "Andy Burnham has pledged to explore all possible options, including closing a legal loophole, to deport the ringleader of the Rochdale grooming gang upon his release from prison.",
       body: [
-        "The publication of the defence investment plan marks the end of a protracted internal government dispute over military funding. New Defence Secretary Dan Jarvis persuaded Chancellor Rachel Reeves to provide an extra £1.5bn, with the bulk of that sum directed towards drone capabilities intended to deter threats from Russia and Iran. The plan allocates £14.5bn in total, though it still falls well short of the £28bn that officials previously said was needed to fully rearm the UK\'s armed forces.",
-        "The funding row had already claimed one cabinet scalp, with John Healey dramatically resigning as defence secretary earlier this month, saying the financial settlement he received 'falls well short of what is required'. Under the revised plan, the UK will also replace its fleet of expensive destroyers with smaller, cheaper warships, while elite commando units are to receive high-speed boats and additional drone equipment."
+        "In his first significant intervention as Labour leader-in-waiting, Andy Burnham said he would ask the home and foreign secretaries to review all possible options regarding the case of Shabir Ahmed, the ringleader of the Rochdale grooming gang who is set to be released from jail this week and cannot currently be deported due to a legal loophole. Burnham described Ahmed as 'vile' and made clear that nothing would be 'off the table' in efforts to close the gap in the law that has prevented his removal from the country.",
+        "The intervention marks Burnham\'s first major public statement as the Labour leader-in-waiting and signals that he intends to take a firm stance on issues of justice and public safety from the outset of his leadership. The case has attracted widespread public anger and political pressure across party lines, with the inability to deport Ahmed seen as a glaring failure of the current legal framework around deportation of foreign national offenders."
       ],
-      image: "https://static.independent.co.uk/2026/06/29/16/download.-2.?width=1200&auto=webp&trim=0%2C0%2C0%2C0",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/uk-news/2026/jun/29/new-defence-secretary-wins-another-15bn-to-boost-drone-spending",
-      category: "Defence"
+      image: "https://images.unsplash.com/photo-1633622248770-ad6b93175a48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxCdXJuaGFtJTIwU2F5cyUyMHxlbnwwfDB8fHwxNzgyOTY4NTQ1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "BBC News",
+      url: "https://www.bbc.co.uk/news/articles/c0jy53n8q1do?at_medium=RSS&at_campaign=rss",
+      category: "Politics"
     },
     {
       id: "uk2",
-      title: "Refugees to Be Billed £10,000 for Asylum Support Under New UK Law",
-      summary: "The government has announced plans requiring asylum seekers to repay around £10,000 in state-funded living costs once they begin earning, a move condemned by charities as 'performative cruelty'.",
+      title: "File Sent to CPS After Serious Sexual Offence Allegations Against Suspended Labour MP Dan Norris",
+      summary: "The case against suspended Labour MP Dan Norris has been referred to the Crown Prosecution Service for a charging decision following a police investigation into multiple allegations of serious sexual offences.",
       body: [
-        "Under new legislation to be considered by MPs, asylum seekers who are granted settled status in the UK will be required to repay approximately £10,000 to cover the cost of housing and support they received while their claims were being processed. Ministers have likened the means-tested scheme to a student loan system, arguing it is a fair way to recover public expenditure from those who go on to build lives and careers in Britain. The measures form part of the government\'s broader Immigration and Asylum Bill.",
-        "The plans have drawn fierce criticism from refugee charities and campaigners, who argue the policy amounts to a tax on some of the most vulnerable people in the country and will do little to address the genuine structural problems in the asylum system. Critics warn that threatening refugees with debt as a condition of settled status could deter integration and place undue burdens on people who have already endured significant hardship."
+        "Sky News understands that Avon and Somerset Police have sent a file to the Crown Prosecution Service after investigating allegations of serious sexual offences against Dan Norris, a suspended Labour MP, with the force having begun its investigation into a man in his 60s in December 2024. The CPS will now consider whether charges should be brought, in what represents a significant escalation of a case that has hung over the Labour Party for months.",
+        "The development adds to a difficult period for Labour as it manages a leadership transition, with the party already grappling with a series of politically charged challenges. The Independent also confirmed that charges are being considered in the investigation, underlining the seriousness with which prosecutors are treating the allegations against the suspended MP."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/7651/live/4096f5e0-73eb-11f1-81be-697dd4e030cb.jpg",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/uk-news/2026/jun/29/asylum-seekers-pay-towards-living-costs-new-uk-law",
+      image: "https://e3.365dm.com/26/02/1920x1080/skynews-dan-norris-mp_7153183.jpg?20260202113838",
+      source: "Sky News",
+      url: "https://news.sky.com/story/file-sent-to-cps-after-sex-offence-allegations-against-suspended-labour-mp-dan-norris-13559570",
       category: "Politics"
     },
     {
       id: "uk3",
-      title: "Resident Doctors' Strikes to End After Pay Deal Accepted",
-      summary: "Resident doctors in England have voted to accept a new pay deal, bringing an end to the long-running strike action that has caused widespread disruption to NHS services.",
+      title: "Burnham Urged to Adopt Radical Economic Policies to Help Labour Win Next Election",
+      summary: "A new poll suggests that policies such as rent control and higher wealth taxes could help Andy Burnham fend off Reform UK in key marginal seats and retain Labour\'s parliamentary majority.",
       body: [
-        "The resolution of the resident doctors' dispute marks a significant moment for the NHS, ending a period of sustained industrial action that led to the cancellation of hundreds of thousands of appointments and operations. The vote to accept the deal was seen as a major relief for health service managers and patients who had faced repeated disruption over many months.",
-        "The settlement represents a notable political development for the government, which had faced sustained pressure over its handling of NHS workforce relations. Getting the strikes resolved will be welcomed by ministers keen to demonstrate progress on public services, though the broader challenge of NHS waiting lists and staff morale remains a significant ongoing concern."
+        "Senior figures advising Andy Burnham are urging him to adopt an 'economic populist' approach to the cost of living crisis, with a detailed opinion poll commissioned by The Guardian indicating that bold policies including rent controls and higher taxes on wealth could prove decisive in holding off the threat from Reform UK in marginal constituencies. The findings suggest that a more radical economic platform, rather than a cautious centrist one, may be the most effective electoral strategy for a Burnham-led Labour government heading into the next general election.",
+        "The pressure to move leftward on economic policy sits in some tension with Burnham\'s public pledge to stick to the government\'s fiscal rules and his inheritance of a contested defence funding plan, illustrating the complex balancing act he faces as he prepares to enter Downing Street. The poll underscores how the political landscape has shifted, with Reform UK now seen as a serious electoral threat in seats that Labour needs to hold to maintain its majority."
       ],
-      image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxSZXNpZGVudCUyMERvY3RvcnN8ZW58MHwwfHx8MTc4Mjc5NTczOXww&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "Sky News",
-      url: "https://news.sky.com/story/strikes-to-end-as-resident-doctors-accept-pay-deal-13559007",
-      category: "Health"
+      image: "https://i.guim.co.uk/img/media/b8c3942b255be1f691dbde5845c34c71d7e503f6/1409_3_2829_2264/master/2829.jpg?width=1200&quality=85&auto=format&fit=max&s=3278c266476c034580bb21b6de04ca39",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/politics/2026/jul/02/andy-burnham-radical-economy-help-labour-win-next-election",
+      category: "Politics"
     }
   ]
 };

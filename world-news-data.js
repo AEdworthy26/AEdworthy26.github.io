@@ -1,61 +1,61 @@
 // world-news-data.js
-// Auto-updated 2026-06-30 — do not edit manually
+// Auto-updated 2026-07-02 — do not edit manually
 
 var WORLD_NEWS = {
-  date: "2026-06-30",
+  date: "2026-07-02",
   main: {
-    title: "Iran and U.S. Exchange Strikes Despite Ceasefire as Strait of Hormuz Tensions Boil Over",
-    category: "Geopolitics",
+    title: "At Least Ten Killed in Large-Scale Russian Missile and Drone Strikes on Kyiv",
+    category: "Conflict",
     content: [
-      "The fragile ceasefire between the United States and Iran has been thrown into serious jeopardy after both sides exchanged military strikes over the weekend, raising fears of a renewed escalation in one of the world\'s most strategically sensitive waterways. The exchange of fire has shocked international observers who had cautiously welcomed the ceasefire as a potential turning point in the long-running standoff between Washington and Tehran. Diplomatic channels have been strained to breaking point, with both sides trading accusations over who bears responsibility for violating the terms of the agreement.",
-      "At the heart of the crisis lies Iran\'s determination to maintain its grip over the Strait of Hormuz, the narrow waterway through which a significant portion of the world\'s oil supply passes. Tehran views control over the Strait as a critical source of leverage in any ongoing peace negotiations with Washington, and appears willing to risk the ceasefire itself rather than cede that strategic advantage. Analysts say Iran calculates that surrendering dominance over the Strait would fatally weaken its bargaining position and embolden its adversaries.",
-      "Efforts to restart diplomatic dialogue have produced mixed signals. President Trump declared that talks between the U.S. and Iran would take place in Doha, Qatar, raising hopes of a diplomatic off-ramp. However, Iranian officials quickly moved to temper expectations, stating that their delegation would only be engaging with mediators in the Qatari capital to discuss American compliance with existing ceasefire commitments — not to hold direct negotiations with U.S. representatives.",
-      "The situation has drawn urgent attention from Gulf states and European governments, all of whom have a profound interest in keeping the Strait of Hormuz open to commercial shipping. A prolonged military confrontation in the region risks sending energy prices sharply higher and destabilising global markets at a time when many economies are already under strain. Mediators in Doha face an extraordinarily difficult task in persuading both Washington and Tehran to step back from the brink.",
-      "The coming days are widely seen as pivotal in determining whether the ceasefire can be salvaged or whether the conflict enters a dangerous new phase. Iran\'s willingness to absorb the political costs of continued military exchanges, while simultaneously maintaining a diplomatic presence in Doha, reflects the deeply contradictory pressures it faces. For the United States, the challenge is to find a formula that addresses Iran\'s security concerns without appearing to reward what Washington regards as deliberate ceasefire violations."
+      "Russia launched one of its most devastating attacks on the Ukrainian capital in weeks, firing a large-scale barrage of missiles and drones at Kyiv that left at least ten people dead. Ukrainian officials confirmed that children were among what they described as a 'significant number' of casualties, underlining the indiscriminate nature of the assault. The strikes hit residential and civilian areas, causing widespread destruction across parts of the city.",
+      "The attack marks a sharp escalation in Russian aerial bombardment of Kyiv, which has endured relentless strikes throughout the prolonged conflict. Ukrainian air defences were deployed in response, though the sheer scale and coordination of the assault meant that multiple projectiles broke through. Emergency services rushed to the scenes of impact, working to pull survivors from the rubble of damaged buildings.",
+      "The inclusion of children among the casualties has drawn fresh international condemnation, with Ukrainian officials calling on allies to provide additional air defence systems. The psychological toll on Kyiv\'s civilian population continues to mount, with residents forced once again into shelters and underground stations. Images and reports emerging from the city painted a grim picture of destroyed apartments and burning infrastructure.",
+      "The strikes come amid broader military pressure along Ukraine\'s front lines, where fighting has continued with significant intensity. Russia\'s use of combined missile and drone tactics has been a persistent feature of its campaign, designed to overwhelm Ukrainian defences and demoralise the civilian population. Analysts note that attacks of this magnitude are often timed to coincide with diplomatic moments or to signal continued resolve from Moscow.",
+      "The international community has repeatedly called on Russia to halt its attacks on civilian infrastructure, but such appeals have done little to curb the bombardment. Ukraine\'s government has renewed its urgent requests for more advanced air defence systems from Western partners, arguing that the protection of civilian lives depends on closing the gaps in its defensive coverage. The death toll from this latest strike underscores the human cost of a war now well into its fourth year.",
     ],
-    image: "https://static01.nyt.com/images/2026/06/29/multimedia/29int-iran-attacks-assess-vqtg/29int-iran-attacks-assess-vqtg-mediumSquareAt3X.jpg",
-    source: "The New York Times",
-    sourceUrl: "https://www.nytimes.com/live/2026/06/29/world/hormuz-us-iran-strikes"
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/3b2e/live/248b9c60-75d1-11f1-be8b-cbfeee563106.jpg",
+    source: "BBC News",
+    sourceUrl: "https://www.bbc.co.uk/news/articles/c4gyv05gk4do?at_medium=RSS&at_campaign=rss"
   },
   secondary: [
     {
       id: "s1",
-      title: "Pakistani Airstrikes Kill 36 Civilians in Afghanistan, Taliban Condemns 'Act of Aggression'",
-      summary: "Pakistan launched airstrikes targeting militant hideouts along the Afghan border, killing dozens in an escalating cross-border conflict that the Taliban has strongly condemned.",
+      title: "Sudan\'s RSF Committed Crimes Against Humanity in El Fasher, Amnesty Says",
+      summary: "Amnesty International has accused Sudan\'s Rapid Support Forces of crimes against humanity and ethnic cleansing during their campaign to capture the city of El Fasher.",
       body: [
-        "Pakistan conducted airstrikes inside Afghanistan that the Taliban says killed 36 civilians and wounded 160 others, in what Islamabad claims was a targeted operation against militant hideouts responsible for a series of attacks on Pakistani soil. The strikes represent the latest flashpoint in a monthslong pattern of cross-border violence that has severely strained relations between Pakistan and the Taliban-run Afghan government.",
-        "Afghanistan condemned the strikes as acts of aggression, while Pakistan maintained that its forces killed 32 militants. The divergence in casualty figures underscores the deep mistrust between the two neighbours, with the international community calling for restraint as the situation threatens to spiral further out of control."
+        "A new report from Amnesty International alleges that the Sudanese paramilitary Rapid Support Forces carried out a systematic campaign of atrocities against civilians in El Fasher, including murder, torture, rape, enslavement, and sexual slavery. The report accuses the RSF of ethnic cleansing as part of its broader effort to seize control of the city, which has been one of the last major urban holdouts in the Darfur region.",
+        "The findings represent some of the most serious allegations levelled at any party to the Sudanese conflict, which has already caused one of the world\'s worst humanitarian crises. El Fasher has long been considered a critical flashpoint, and its fate has been watched closely by international human rights organisations and governments seeking to prevent a repeat of the Darfur genocide of the early 2000s."
       ],
-      image: "https://images.unsplash.com/photo-1606302238078-3b8da06f8648?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxQYWtpc3RhbmklMjBBaXJzdHJpa2VzJTIwS2lsbCUyMDM2JTIwQ2l2aWxpYW5zJTIwaW4lMjBBZmdoYW5pc3RhbiUyQyUyMFRhbGliYW4lMjBDb25kZW1ucyUyMHxlbnwwfDB8fHwxNzgyNzk1Njk1fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "NPR",
-      url: "https://www.npr.org/2026/06/29/g-s1-130826/pakistani-airstrikes-kill-36-civilians-in-afghanistan-and-wound-160-officials-say",
-      category: "Conflict"
+      image: "https://images.unsplash.com/photo-1535253868107-da56da1693db?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTdWRhbiU1Q3xlbnwwfDB8fHwxNzgyOTY4NDg5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/world/2026/jul/01/sudan-rsf-rapid-support-forces-crimes-against-humanity-el-fasher-amnesty-ethnic-cleansing",
+      category: "Human Rights"
     },
     {
       id: "s2",
-      title: "Venezuela Earthquake: Tens of Thousands Missing as Rescuers Search the Rubble with Bare Hands",
-      summary: "Rescue teams in Venezuela are using crowbars, pickaxes, and their bare hands to search for survivors of devastating twin earthquakes, with tens of thousands of people still unaccounted for.",
+      title: "German Prosecutors Charge Ukrainian Suspect Over Nord Stream Pipeline Explosions",
+      summary: "German prosecutors have charged a Ukrainian national they allege led the sabotage operation against the Nord Stream pipelines, with a yacht said to have been used in the attack.",
       body: [
-        "In the aftermath of a catastrophic twin earthquake, communities across Venezuela\'s La Guaira state have been left to largely fend for themselves, with rescue workers desperately listening in agonising silence for any signs of life beneath collapsed buildings. The disaster has become a major political test for the country\'s acting leadership, drawing comparisons to the 1999 earthquake that became Hugo Chávez\'s first crisis in office.",
-        "The scale of the humanitarian challenge is immense, with tens of thousands of people still believed to be missing and infrastructure across the affected region left in ruins. International aid organisations are scrambling to reach devastated areas, but logistical difficulties and the sheer scale of destruction have hampered relief efforts significantly."
+        "German prosecutors have formally charged a Ukrainian suspect in connection with the 2022 explosions that destroyed the Nord Stream gas pipelines beneath the Baltic Sea, alleging that a yacht was used to carry out the sophisticated sabotage operation. The suspect is accused of leading the mission, which caused massive damage to infrastructure connecting Russia and Europe and sent shockwaves through global energy markets.",
+        "The Nord Stream explosions have been one of the most consequential and disputed acts of sabotage in recent European history, with multiple countries investigating and various theories circulating about who was ultimately responsible. The formal charges by German prosecutors represent a significant development in a case that has long been mired in geopolitical sensitivity and competing claims."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/36ab/live/e9689b00-73ce-11f1-8546-8f19e4fe30f4.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.co.uk/news/articles/c78yvq72dg7o?at_medium=RSS&at_campaign=rss",
-      category: "Disaster"
+      image: "https://images.pexels.com/photos/11849155/pexels-photo-11849155.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      source: "Al Jazeera",
+      url: "https://www.aljazeera.com/news/2026/7/2/german-prosecutors-charge-ukrainian-suspect-over-nord-stream-explosions?traffic_source=rss",
+      category: "Geopolitics"
     },
     {
       id: "s3",
-      title: "Ebola Crisis Deepens in DR Congo as Nearly 300 Infected Patients Remain Untraced",
-      summary: "Africa\'s top public health official has warned that the whereabouts of almost 300 Ebola-positive individuals in the Democratic Republic of the Congo are unknown, fuelling fears of massive community transmission.",
+      title: "U.S. and Iran Set to Hold Indirect Talks After Trading Attacks",
+      summary: "Negotiators from the United States and Iran are meeting in Qatar for indirect talks, even as the two countries remain far apart on key issues following a period of direct hostilities.",
       body: [
-        "The Ebola outbreak in the Democratic Republic of the Congo has taken a deeply alarming turn, with nearly 300 people who have tested positive for the virus having disappeared from contact tracing systems, according to Africa\'s leading public health authority. Modelling suggests the outbreak could claim thousands of lives by September if the spread is not brought under control.",
-        "The crisis is compounded by the ongoing conflict in the affected regions, where more than one million people are living in displacement camps with limited access to healthcare. The combination of active conflict, population displacement, and an uncontained Ebola outbreak presents one of the most complex humanitarian emergencies currently unfolding anywhere in the world."
+        "The United States and Iran are engaged in indirect diplomatic talks in Qatar, a development that comes after the two nations traded attacks in a period of acute tension. Ship traffic in the strategically vital Strait of Hormuz has reportedly risen, suggesting some easing of immediate pressure, though the underlying disputes between Washington and Tehran remain deeply unresolved.",
+        "The Qatar talks represent a fragile diplomatic opening in one of the world\'s most volatile relationships, with both sides facing significant domestic and regional pressures. Observers caution that while the resumption of any form of dialogue is a positive sign, the gulf between the two parties on core issues — including Iran\'s nuclear programme — remains vast."
       ],
-      image: "https://i.guim.co.uk/img/media/d34d9403c3a9f3619b43c2f9cbfbc89eb16ca128/0_0_4583_3667/master/4583.jpg?width=1200&quality=85&auto=format&fit=max&s=5967afc5cfc38f2d446cacd3f8a37686",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/global-development/2026/jun/26/whereabouts-of-nearly-300-people-with-ebola-unknown-in-drc",
-      category: "Health"
+      image: "https://static01.nyt.com/images/2026/07/01/multimedia/01int-iran-diplomacy-ctlj/01int-iran-diplomacy-ctlj-mediumSquareAt3X.jpg",
+      source: "The New York Times",
+      url: "https://www.nytimes.com/2026/07/01/world/middleeast/us-iran-diplomacy-qatar.html",
+      category: "Diplomacy"
     }
   ]
 };

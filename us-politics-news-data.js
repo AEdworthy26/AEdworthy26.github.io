@@ -1,60 +1,60 @@
 // us-politics-news-data.js
-// Auto-updated 2026-06-30 — do not edit manually
+// Auto-updated 2026-07-02 — do not edit manually
 
 var US_POLITICS_NEWS = {
-  date: "2026-06-30",
+  date: "2026-07-02",
   main: {
-    title: "Supreme Court Cements Trump\'s Power Over Independent Federal Agencies in Landmark 6-3 Ruling",
+    title: "Trump\'s Income Topped $2 Billion in 2025, Boosted by Crypto and Coin Ventures",
     category: "Politics",
     content: [
-      "The Supreme Court delivered a sweeping victory for executive power on Monday, ruling 6-3 to strike down a nearly century-old precedent that had long insulated independent federal agencies from direct presidential control. The decision allows President Trump to fire members of agencies like the Federal Trade Commission at will, overturning the 1935 Humphrey\'s Executor ruling that had for decades protected agency leaders from removal except for cause. The ruling represents one of the most significant expansions of presidential authority over the federal bureaucracy in modern American history.",
-      "The case centered on Trump\'s effort to remove a Democratic member of the FTC, an agency traditionally designed to operate free from direct White House interference. The six conservative justices sided with the administration, arguing that the Constitution vests executive power in the president and that insulating agency heads from removal encroaches on that authority. The three liberal justices dissented, warning that the decision effectively hands the White House unprecedented dominance over regulatory bodies meant to serve as independent checks on both governmental and corporate power.",
-      "The practical consequences of the ruling are vast, as it opens the door for the Trump administration to reshape the leadership of a wide array of regulatory agencies that oversee everything from financial markets to consumer protection. By removing the legal firewall that prevented presidents from dismissing commissioners and board members for purely political reasons, the court has fundamentally altered the balance of power between the executive branch and the so-called fourth branch of government. Legal scholars and former regulators warned Monday that the decision could usher in a new era of politically driven regulatory enforcement.",
-      "The ruling did not, however, hand Trump a completely unfettered hand over independent institutions. In a related development, the Supreme Court separately moved to block Trump from firing Federal Reserve board member Lisa Cook, at least for now, signaling that the scope of the new precedent may still be subject to further legal definition. Cook, the first Black woman to serve on the Fed\'s board of governors, had been targeted by the president amid allegations he raised about mortgage fraud — claims her supporters characterized as politically motivated. The temporary block on her removal suggests the court may be drawing distinctions between different categories of independent institutions.",
-      "Monday\'s decision arrives at a moment when the Trump administration has been aggressively pushing to consolidate executive authority across the federal government, and the ruling is likely to embolden further efforts to bring traditionally independent bodies under White House influence. Congressional Democrats immediately denounced the decision, arguing it dismantles structural safeguards that have protected regulatory independence across both Republican and Democratic administrations for nearly a century. With the ruling now on the books, the long-term shape of the American regulatory state — and the degree to which it can operate free from political pressure — may hinge on future court challenges and the willingness of Congress to respond legislatively."
+      "President Donald Trump reported more than $2 billion in income for 2025, according to nearly 1,000 pages of financial disclosure forms released this week. The figure represents a dramatic leap from the $600 million total income he reported in 2024, making it an unprecedented level of presidential earnings in modern American history. Historians and ethics watchdogs say the scale of Trump\'s financial gains while serving as the nation\'s chief executive raises serious and unresolved questions about conflicts of interest.",
+      "A substantial portion of Trump\'s 2025 earnings came from cryptocurrency and digital coin ventures, with crypto earnings alone far outpacing the returns from the traditional real estate and entertainment businesses he spent decades building. According to reporting by the Associated Press, Trump and his family raked in more than a billion dollars through these crypto ventures in a single year. The speed and scale of these digital-asset gains have drawn scrutiny from financial analysts who note that Trump\'s administration has simultaneously pursued a notably crypto-friendly regulatory posture.",
+      "Beyond cryptocurrency, Trump\'s disclosed income included earnings from a diverse and sometimes unusual array of ventures — including Bible sales, licensing deals, and perfume lines — which have been detailed in official documents. These disclosures paint a picture of a sitting president whose personal financial empire has expanded significantly during his time in office. Ethics experts note that the breadth and novelty of these income streams make traditional conflict-of-interest analysis unusually complex.",
+      "The BBC noted that Trump\'s $2.2 billion income last year is unmatched by any president in recorded history, contrasting sharply with the modest pensions and limited post-office earnings that characterized previous commanders-in-chief such as Harry Truman. Historians have described the situation as a fundamental blurring of the line between the public duties of the presidency and private financial enrichment. Critics argue that the sheer volume of income streams creates innumerable opportunities for policy decisions to be influenced — consciously or otherwise — by personal financial interest.",
+      "The disclosures place Congress and federal ethics bodies in a difficult political position, as oversight mechanisms designed for more conventional presidential finances strain to address arrangements of this scale and complexity. Democrats have called for greater scrutiny, while Republicans have largely defended the disclosures as evidence of Trump\'s business acumen. The debate over how to handle a president with an income in the billions is likely to intensify as the 2026 midterm elections approach, with financial accountability emerging as a defining campaign issue for multiple candidates."
     ],
-    image: "https://images.unsplash.com/photo-1612278920639-cfbae3835fee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTdXByZW1lJTIwQ291cnQlMjBDZW1lbnRzJTIwVHJ1bXAlNUN8ZW58MHwwfHx8MTc4Mjc5NTc5MXww&ixlib=rb-4.1.0&q=80&w=1080",
-    source: "NPR",
-    sourceUrl: "https://www.npr.org/2026/06/29/nx-s1-5816232/supreme-court-ftc-independent-agencies-humphreys-executor"
+    image: "https://images.unsplash.com/photo-1550531996-ff3dcede9477?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUcnVtcCU1Q3xlbnwwfDB8fHwxNzgyOTY4NTk3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    source: "The Washington Post",
+    sourceUrl: "https://www.washingtonpost.com/politics/2026/06/30/trump-earned-over-1-billion-cryptocurrency-coin-ventures-last-year/"
   },
   secondary: [
     {
       id: "us1",
-      title: "Supreme Court Lets Stand $5 Million Civil Verdict Against Trump in E. Jean Carroll Case",
-      summary: "The Supreme Court rejected Trump\'s final appeal in the E. Jean Carroll sex abuse case, meaning the president must pay the $5 million in damages awarded against him.",
+      title: "Democratic Socialists on a Winning Streak, Reshaping the Democratic Party",
+      summary: "A series of democratic socialist primary victories — in New York, Philadelphia, Denver, and elsewhere — is forcing the Democratic Party to grapple with a significant leftward shift in its base.",
       body: [
-        "The Supreme Court declined to hear President Trump\'s last remaining appeal in the civil case brought by journalist E. Jean Carroll, leaving in place a jury verdict that found him liable for sexual assault and defamation. The decision means Trump will be required to pay the $5 million judgment that was awarded to Carroll following a 2023 trial, marking the definitive legal conclusion of a years-long court battle.",
-        "The ruling is a significant personal and legal setback for the sitting president, who has consistently denied Carroll\'s allegations and fought the case through multiple layers of appeal. With the Supreme Court now closing the door on further review, the verdict stands as a binding legal finding against Trump, adding to the complex legal landscape surrounding the nation\'s chief executive."
+        "Over recent weeks, democratic socialist candidates have notched a string of notable primary wins in competitive races, including victories in New York, Philadelphia, and most recently Denver, where a democratic socialist won the Democratic primary for a U.S. House seat. The trend suggests growing grassroots energy on the left wing of the Democratic Party, particularly in urban districts where voters appear to be demanding more transformative economic and social policies.",
+        "These results come at a moment when the broader Democratic Party is already wrestling with its identity and direction following recent electoral setbacks. The winning streak raises questions about whether the party\'s establishment will embrace, accommodate, or push back against the socialist bloc — a tension that is likely to define internal Democratic politics heading into the 2026 midterm elections."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/6822/live/fe2df4d0-7401-11f1-8e1d-bbbb1017d210.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.co.uk/news/articles/cn8q2z5wpn2o?at_medium=RSS&at_campaign=rss",
+      image: "https://static01.nyt.com/images/2026/07/01/multimedia/01pol-scotus-trans-midterms-kqvt/01pol-scotus-trans-midterms-kqvt-mediumSquareAt3X.jpg",
+      source: "NPR",
+      url: "https://www.npr.org/2026/07/01/nx-s1-5872747/democratic-socialists-are-on-a-winning-streak-heres-what-that-means-for-democrats",
       category: "Politics"
     },
     {
       id: "us2",
-      title: "Trump Dismisses Bipartisan Housing Bill as 'a Yawn' as It Heads to His Desk",
-      summary: "President Trump has repeatedly brushed off a bipartisan housing bill addressing the nation\'s affordability crisis, leaving its fate uncertain even as Speaker Mike Johnson sends it to the White House.",
+      title: "Trump Calls on Congress to End Birthright Citizenship After Supreme Court Defeat",
+      summary: "Following the Supreme Court\'s ruling upholding birthright citizenship on constitutional grounds, President Trump is urging Congress to take legislative action to eliminate the practice.",
       body: [
-        "House Speaker Mike Johnson moved Monday to send a bipartisan housing bill to President Trump\'s desk, but the legislation faces a deeply uncertain future after Trump publicly dismissed Americans' housing concerns and described the bill as 'a yawn.' The measure had managed to attract support from both parties in Congress, reflecting broad recognition that housing affordability has become a critical issue for millions of Americans.",
-        "Trump\'s dismissive posture toward the legislation underscores a recurring tension between the White House and lawmakers — including some Republicans — who see the housing crisis as a pressing economic and political liability. Whether the president ultimately signs or vetoes the bill could have significant implications for working and middle-class voters ahead of the next election cycle."
+        "The Supreme Court closed out its term by siding with challengers and upholding birthright citizenship on constitutional grounds, handing President Trump a significant legal defeat on one of his signature immigration priorities. Trump quickly responded by calling on Congress to act, framing the court\'s ruling as an obstacle that only the legislative branch can now overcome.",
+        "The ruling presents a notable political challenge for the White House, as passing a constitutional amendment or new legislation to curtail birthright citizenship would require supermajority support that currently does not exist in Congress. Nevertheless, Trump\'s public call to action is expected to energize his base and keep immigration policy at the forefront of the political debate as midterm campaigns accelerate."
       ],
-      image: "https://images.unsplash.com/photo-1612278920639-cfbae3835fee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUcnVtcCUyMERpc21pc3NlcyUyMEJpcGFydGlzYW4lMjBIb3VzaW5nJTIwQmlsbCUyMGFzJTIwfGVufDB8MHx8fDE3ODI3OTU3OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/3d1e/live/3d2797f0-75c8-11f1-9106-bb5823bc9ead.jpg",
       source: "The Washington Post",
-      url: "https://www.washingtonpost.com/politics/2026/06/29/house-speaker-mike-johnson-set-send-housing-bill-trump-monday/",
+      url: "https://www.washingtonpost.com/politics/2026/06/30/trump-says-congress-should-act-end-birthright-citizenship/",
       category: "Politics"
     },
     {
       id: "us3",
-      title: "Michigan Governor Threatens to Pull National Guard Troops If Used for Trump Task Force",
-      summary: "Governor Gretchen Whitmer warned she will withdraw Michigan\'s National Guard troops from Washington, D.C. if they are deployed as part of President Trump\'s controversial task force operations in the city.",
+      title: "Republicans Push Courts to Reinterpret Federal Ban on Late Voter Roll Purges",
+      summary: "Republican groups are pressing courts to reinterpret a longstanding federal law that prohibits most states from systematically purging voter rolls within 90 days of an election.",
       body: [
-        "Michigan Governor Gretchen Whitmer joined three other Democratic governors in threatening to recall their states' National Guard troops from the nation\'s capital if the Trump administration attempts to use them for its ongoing — and legally disputed — deployment operations in Washington. The governors had originally sent their troops to support America 250 celebrations, but drew a firm line against any use of those forces for Trump\'s broader enforcement activities.",
-        "The standoff highlights the deepening friction between Democratic-led states and the federal executive over the use of military personnel for domestic political purposes. Whitmer\'s warning adds to a growing list of state-level challenges to Trump administration policies, reflecting the extent to which governors are positioning themselves as bulwarks against what they characterize as federal overreach."
+        "A federal law has long barred most states from conducting systematic voter roll purges in the 90 days before Election Day, a protection designed to prevent eligible voters from being wrongly removed close to an election. Republican-aligned legal groups are now pushing courts to reinterpret this law, arguing that their reading of the statute would allow for more aggressive pre-election roll maintenance.",
+        "Critics and voting rights advocates warn that weakening or reinterpreting this protection could disenfranchise legitimate voters and create confusion at polling places, particularly in communities where voter registration records are more likely to contain clerical errors. With the 2026 midterms approaching, the outcome of these legal challenges could have significant practical consequences for voter participation across multiple battleground states."
       ],
-      image: "https://images.pexels.com/photos/27794280/pexels-photo-27794280.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      image: "https://images.unsplash.com/photo-1609464628634-afeabb0093b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxSZXB1YmxpY2FucyUyMFB1c2glMjBDb3VydHMlMjB0byUyMFJlaW50ZXJwcmV0JTIwRmVkZXJhbCUyMEJhbiUyMG9uJTIwTGF0ZSUyMFZvdGVyJTIwUm9sbCUyMFB1cmdlc3xlbnwwfDB8fHwxNzgyOTY4NTk4fDA&ixlib=rb-4.1.0&q=80&w=1080",
       source: "NPR",
-      url: "https://www.npr.org/2026/06/29/nx-s1-5875427/michigan-governor-national-guard-dc",
+      url: "https://www.npr.org/2026/07/01/nx-s1-5859333/voter-roll-purge-supreme-court",
       category: "Politics"
     }
   ]
