@@ -1,8 +1,8 @@
 // quote-data.js
-// Auto-updated 2026-07-03 — do not edit manually
+// Auto-updated 2026-07-04 — do not edit manually
 
 var QUOTE_DATA = {
-  date: "2026-07-03",
-  text: "Knowing is not enough; we must apply. Willing is not enough; we must do.",
-  author: "Johann Wolfgang von Goethe"
+  date: "2026-07-04",
+  text: "The higher we soar, the smaller we appear to those who cannot fly.",
+  author: "Friedrich Nietzsche"
 };
