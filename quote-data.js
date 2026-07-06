@@ -1,8 +1,8 @@
 // quote-data.js
-// Auto-updated 2026-07-05 — do not edit manually
+// Auto-updated 2026-07-06 — do not edit manually
 
 var QUOTE_DATA = {
-  date: "2026-07-05",
-  text: "Success is not final, failure is not fatal: it is the courage to continue that counts.",
-  author: "Winston Churchill"
+  date: "2026-07-06",
+  text: "Only those who will risk going too far can possibly find out how far one can go.",
+  author: "T. S. Eliot"
 };
