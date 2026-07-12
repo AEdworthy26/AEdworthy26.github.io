@@ -1,8 +1,8 @@
 // quote-data.js
-// Auto-updated 2026-07-11 — do not edit manually
+// Auto-updated 2026-07-12 — do not edit manually
 
 var QUOTE_DATA = {
-  date: "2026-07-11",
-  text: "One must imagine Sisyphus happy.",
-  author: "Albert Camus"
+  date: "2026-07-12",
+  text: "All animals are equal, but some animals are more equal than others.",
+  author: "George Orwell"
 };
