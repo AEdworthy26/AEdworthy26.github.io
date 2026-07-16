@@ -1,8 +1,8 @@
 // quote-data.js
-// Auto-updated 2026-07-15 — do not edit manually
+// Auto-updated 2026-07-16 — do not edit manually
 
 var QUOTE_DATA = {
-  date: "2026-07-15",
-  text: "A people that elect corrupt politicians are not victims but accomplices.",
-  author: "George Orwell"
+  date: "2026-07-16",
+  text: "Buy when there\'s blood in the streets, even if the blood is your own.",
+  author: "Baron Rothschild"
 };
