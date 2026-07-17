@@ -1,18 +1,18 @@
 // films-data.js
-// Auto-updated 2026-05-13 — do not edit manually
+// Auto-updated 2026-06-30 — do not edit manually
 
 var FILMS_DATA = {
-  date: "2026-05-13",
+  date: "2026-06-30",
   film: {
-    title: "The Gleaners and I",
-    director: "Agnès Varda",
-    year: 2000,
-    genres: ["Documentary", "Essay Film"],
-    desc: "Agnès Varda roams rural and urban France with a small digital camera, following people who glean — those who gather what others discard, from leftover potatoes in harvested fields to discarded objects on city streets. What begins as an inquiry into an ancient agricultural practice becomes a profoundly personal meditation on waste, memory, art, and the act of looking itself. Varda turns the camera on her own aging hands with the same curiosity and tenderness she extends to every stranger she meets, making the film as much a self-portrait as a social document. Witty, melancholy, and radically alive, it proved that a film made almost entirely alone, on the cheapest equipment imaginable, could be among the most intimate and searching works of its era. Few documentaries feel so genuinely like spending time inside another person\'s mind.",
-    cast: ["Agnès Varda", "Bodan Litnanski", "François Wertheimer"],
-    rating: 98,
+    title: "Jour de fête",
+    director: "Jacques Tati",
+    year: 1949,
+    genres: ["Comedy", "World Cinema"],
+    desc: "Jacques Tati\'s feature debut is a sun-drenched, endlessly charming portrait of a bumbling French village postman who becomes obsessed with delivering his mail at American-style efficiency after watching a newsreel about the U.S. postal service. Shot with extraordinary physical precision, Tati constructs gag after gag from pure visual logic — bicycle wheels, festival bunting, and a very stubborn horse conspiring against his hapless hero. The film captures a vanishing rural France with genuine warmth, the village fête buzzing with gossip, music, and gentle absurdity that feels both timeless and achingly specific. Tati had not yet refined the distant, melancholy detachment of Monsieur Hulot; here he throws himself into the slapstick with gleeful abandon, and the result is one of the most purely joyful comedies ever committed to film.",
+    cast: ["Jacques Tati", "Guy Decomble", "Paul Frankeur"],
+    rating: 96,
     ratingSource: "Rotten Tomatoes",
-    ratingExtra: "César Award for Best Documentary",
-    posterUrl: "https://upload.wikimedia.org/wikipedia/en/7/74/Les_glaneurs_et_la_glaneuse_%28film%29.jpg"
+    ratingExtra: "Cannes Best Screenplay 1949",
+    posterUrl: "https://upload.wikimedia.org/wikipedia/en/9/96/Jour_de_fete-poster.jpg"
   }
 };

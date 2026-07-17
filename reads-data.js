@@ -1,19 +1,19 @@
 // reads-data.js
-// Auto-updated 2026-05-13 — do not edit manually
+// Auto-updated 2026-06-30 — do not edit manually
 
 var READS_DATA = {
-  date: "2026-05-13",
+  date: "2026-06-30",
   book: {
-    title: "The Pianist",
-    author: "Władysław Szpilman",
-    year: 1946,
-    genres: ["Memoir", "Music", "War"],
-    desc: "Władysław Szpilman was the finest pianist in Warsaw when the Nazi occupation shattered his world, and this memoir — suppressed for decades and only widely published in 1999 — recounts his survival in the rubble of the Warsaw Ghetto with a spare, almost disbelieving clarity. What makes the book extraordinary is Szpilman\'s refusal to sentimentalize or moralize: he writes as a musician observes, precisely and without ornament, which makes the horror land all the harder. The relationship that forms near the end with a German officer who shelters him — a man himself destroyed by the war — is one of the most quietly devastating encounters in all of memoir literature. It is a book about music as the irreducible core of a person, and about how that core can somehow persist when everything else is stripped away.",
-    whyRead: "In a moment when questions of survival, complicity, and human decency feel urgently alive, Szpilman\'s account cuts through noise with the precision of a single piano note — essential reading that takes only an afternoon but stays for years.",
-    rating: 4.3,
+    title: "The Overstory",
+    author: "Richard Powers",
+    year: 2018,
+    genres: ["Literary Fiction", "Nature", "Ecology"],
+    desc: "A sweeping, Pulitzer Prize-winning novel that braids together the lives of nine Americans whose fates are shaped by trees — from a chestnut that survives a blight to a sentinel redwood that draws activists into its canopy. Powers writes with the ambition of Tolstoy and the precision of a field naturalist, making the non-human world feel as vivid and morally urgent as any human character. The novel asks what it would mean to truly see the world on a timescale longer than a human life, and whether that seeing could change how we act. It is at once a page-turning ensemble drama and a radical argument about consciousness, interconnection, and what we owe the living world.",
+    whyRead: "As ecological anxiety deepens in the mid-2020s, this book offers something rarer than alarm — it offers wonder, and a genuinely altered sense of what counts as a life worth mourning.",
+    rating: 4.2,
     ratingSource: "Goodreads",
-    ratingCount: "90,000+",
-    coverUrl: "https://covers.openlibrary.org/b/id/6938171-L.jpg",
-    amazonUrl: "https://www.amazon.co.uk/dp/3548363512"
+    ratingCount: "350,000+",
+    coverUrl: "https://covers.openlibrary.org/b/id/8758252-L.jpg",
+    amazonUrl: "https://www.amazon.co.uk/dp/8491814442"
   }
 };

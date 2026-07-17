@@ -1,10 +1,10 @@
 // quiz-data.js
-// Auto-updated 2026-05-13 — do not edit manually
+// Auto-updated 2026-06-30 — do not edit manually
 
 window.QUIZ_DATA = {
-  date: '2026-05-13',
+  date: '2026-06-30',
   category: 'Sport',
-  question: 'In which year did Ayrton Senna win his first Formula One World Drivers\' Championship, and for which constructor was he driving at the time?',
-  answer: '1988, McLaren (McLaren-Honda).',
-  funFact: 'Senna\'s 1988 season was one of the most dominant in F1 history — he and teammate Alain Prost won 15 of the 16 races between them, with Senna claiming eight victories. The two drivers\' fierce rivalry became one of sport\'s great storylines, culminating in deliberate collisions at successive Japanese Grands Prix in 1989 and 1990.'
+  question: 'At the 2004 Athens Olympics, which country beat Argentina in the men\'s basketball final to win gold — ending the United States\' long dominance of the event and completing an unbeaten run through the tournament?',
+  answer: 'Argentina',
+  funFact: 'Argentina\'s victory was one of the great upsets in Olympic basketball history, as the USA had won the gold medal at every Games they entered professional NBA players. Led by Manu Ginóbili, Argentina went undefeated throughout the tournament and beat Italy in the final 84–69, with the USA finishing a shocking third after losing to both Argentina and Puerto Rico in the group stage.'
 };

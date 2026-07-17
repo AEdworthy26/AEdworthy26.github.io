@@ -1,61 +1,61 @@
 // financial-news-data.js
-// Auto-updated 2026-05-13 — do not edit manually
+// Auto-updated 2026-06-30 — do not edit manually
 
 var FINANCIAL_NEWS = {
-  date: "2026-05-13",
+  date: "2026-06-30",
   main: {
-    title: "UK Borrowing Costs Surge to 28-Year High as Investor Jitters Over Starmer Uncertainty Grip Markets",
-    category: "Economics",
+    title: "Stock Rally Extends as Tech Rebounds, Yen Weakens: Markets Wrap",
+    category: "Markets",
     content: [
-      "Long-term UK borrowing costs have soared to their highest level in almost three decades, rattling bond markets and sending the pound lower against the dollar. The spike in gilt yields has been driven by mounting investor fears over a potential change in Labour leadership, with uncertainty surrounding Prime Minister Keir Starmer\'s future at the helm proving deeply unsettling for financial markets. The move marks one of the most significant bouts of bond market turbulence the UK has experienced in years, drawing uncomfortable comparisons to past episodes of fiscal instability.",
-      "The sharp rise in bond yields reflects a broader anxiety among investors about what a leadership transition within the Labour Party could mean for the UK\'s tax and spending trajectory. Markets have grown accustomed to the current government\'s fiscal framework, and any shift toward a prime minister perceived as more aggressive on redistribution or hostile to financial services could materially alter that calculus. The sell-off in gilts signals that investors are demanding a higher risk premium to hold UK government debt, effectively raising the cost of borrowing for the state.",
-      "The alarm has been amplified by warnings from major financial institutions, most notably JP Morgan chief executive Jamie Dimon, who stated that the US banking giant could scrap its planned £3 billion London headquarters in Canary Wharf if Starmer is replaced by a Labour leader seen as hostile to banks. Dimon\'s intervention underscores just how sensitive large-scale corporate investment decisions have become to political risk in the UK. The prospect of one of Wall Street\'s most prominent institutions walking away from a flagship London project sent an additional chill through the City.",
-      "The pound\'s decline against the dollar compounds the challenge for policymakers, as a weaker currency can feed through into higher import prices and add to inflationary pressures at an already delicate moment for the global economy. For the Bank of England, the combination of rising borrowing costs and a softer currency creates a difficult balancing act, potentially limiting its room to cut interest rates even as growth concerns linger. Currency and bond markets are in effect sending a joint warning signal that political uncertainty carries real and immediate economic costs.",
-      "Analysts have warned that further bond market turbulence cannot be ruled out if the political situation remains unresolved, with some pointing to the potential for a self-reinforcing spiral in which higher borrowing costs themselves become a drag on economic confidence. The episode serves as a stark reminder of how quickly sovereign debt markets can move when investors sense a shift in the political winds, particularly in an environment already heightened by global macro pressures. For now, the Treasury and Downing Street face the unenviable task of trying to restore market confidence while navigating what has become a highly fluid political landscape."
+      "Wall Street\'s technology-driven rally continued to gain momentum on Tuesday, spilling over into Asian markets as investors piled back into companies widely seen as the primary beneficiaries of the ongoing artificial intelligence buildout. The broad-based optimism pushed major indices higher across multiple sessions, with tech stocks leading the charge after a period of consolidation. Market participants appear increasingly confident that the structural demand for AI infrastructure remains intact, driving fresh capital into the sector\'s largest names.",
+      "In currency markets, the Japanese yen slid to its weakest level against the US dollar since 1986, a development that adds a significant macro dimension to the current market environment. A weaker yen historically benefits Japanese exporters by making their goods more competitive abroad, lending additional support to Asian equity markets. However, it also raises concerns among policymakers about imported inflation and the potential need for intervention by the Bank of Japan, which has been navigating an extraordinarily delicate path between stimulus and normalisation.",
+      "The technology rebound comes amid growing anticipation surrounding high-profile AI-focused IPOs, with companies like OpenAI and Anthropic preparing to go public in what could be among the largest listings in recent memory. Investor appetite for AI-adjacent equities has been voracious, reflecting broader confidence that the current wave of AI investment will translate into durable earnings growth. This sentiment has underpinned valuations across the sector even as broader economic conditions remain uncertain in several major economies.",
+      "The rally also reflects a degree of relief following weeks of geopolitical noise that had injected volatility into global markets. With some progress reported on diplomatic fronts — including movement on Middle East negotiations — risk appetite has broadly improved, encouraging rotation back into growth-oriented assets. Institutional investors appear to be repositioning portfolios heading into the second half of 2026, with technology and AI themes remaining central to allocation strategies.",
+      "As markets close out the second quarter, the overall tone is one of cautious optimism tempered by ongoing uncertainties around monetary policy, currency volatility, and geopolitical flashpoints. The Federal Reserve\'s next moves remain a key focus for investors, particularly given renewed political pressure on the institution from Washington. Nevertheless, the strong close to Q2 in tech-heavy indices suggests that, for now, the bulls retain the upper hand as the market heads into the second half of the year."
     ],
-    image: "https://i.guim.co.uk/img/media/0ec06bbd14696444370d10765c3d43400fadc7d8/645_0_6475_5182/master/6475.jpg?width=1200&quality=85&auto=format&fit=max&s=8bad37b924daab5e5838c04d66566ef5",
-    source: "The Guardian",
-    sourceUrl: "https://www.theguardian.com/business/2026/may/12/uk-borrowing-costs-keir-starmer-bond-yields-pound-dollar-labour"
+    image: "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iRts94__JsJ0/v3/1200x-1.png",
+    source: "Bloomberg Markets",
+    sourceUrl: "https://www.bloomberg.com/news/articles/2026-06-29/japan-stocks-set-to-climb-as-yen-hits-40-year-low-markets-wrap"
   },
   secondary: [
     {
       id: "fn1",
-      title: "US Inflation Jumps to 3.8% as Energy Costs Surge from Iran War",
-      summary: "American inflation has climbed to its highest level since May 2023, driven by surging energy costs linked to the ongoing conflict with Iran.",
+      title: "Oil Set for Biggest Quarterly Drop Since Pandemic as Glut Risks Mount",
+      summary: "Oil is heading for its steepest quarterly decline since the COVID-19 pandemic as Strait of Hormuz flows accelerate and Morgan Stanley warns of an emerging supply glut.",
       body: [
-        "The latest US inflation reading came in at 3.8%, surprising markets and marking the sharpest acceleration in price pressures in three years. Surging energy costs, directly tied to the war in Iran and its disruption of regional oil supply chains, are identified as the primary driver of the jump, with consumers feeling the squeeze at the pump and in their utility bills.",
-        "The hotter-than-expected print has significant implications for Federal Reserve policy, potentially complicating any near-term pivot toward interest rate cuts and reigniting debate about whether the central bank has done enough to anchor inflation expectations. Bond markets responded to the news with a sell-off, reflecting fears that elevated rates may need to persist for longer than previously anticipated."
+        "Crude oil prices are on track for their largest quarterly fall since the pandemic era, with flows through the strategically vital Strait of Hormuz picking up pace following progress on a peace deal in the region. The accelerating supply picture has rattled energy markets, pushing benchmark prices sharply lower over the course of the quarter.",
+        "Morgan Stanley has issued a warning about the risk of a potential oil glut, adding analyst weight to bearish price sentiment. The combination of improved Middle East supply flows and tepid global demand growth is reshaping near-term outlooks for the energy sector, with implications for oil-dependent economies and energy company earnings heading into Q3."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/f750/live/8172ffc0-4e00-11f1-aa37-6b8846c2f74e.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.com/news/articles/c202pgxx89lo?at_medium=RSS&at_campaign=rss",
-      category: "Economics"
+      image: "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iCKpupHo5vc4/v0/1200x-1.jpg",
+      source: "Bloomberg Markets",
+      url: "https://www.bloomberg.com/news/articles/2026-06-29/latest-oil-market-news-and-analysis-for-june-30",
+      category: "Commodities"
     },
     {
       id: "fn2",
-      title: "eBay Rejects GameStop\'s $55.5bn Takeover Bid as 'Neither Credible Nor Attractive'",
-      summary: "eBay\'s board has firmly rebuffed an unsolicited $55.5 billion acquisition offer from video game retailer GameStop, citing serious doubts about the credibility of its financing.",
+      title: "UK Crypto Firms Face Sweeping New FCA Rules from October 2027",
+      summary: "The Financial Conduct Authority has announced comprehensive new regulations requiring crypto firms operating in the UK to demonstrate resilience to market shocks and hold capital against risky assets.",
       body: [
-        "GameStop made a surprise unsolicited bid for eBay earlier this month, publishing an open letter outlining what it described as a transformative merger proposal, but the online marketplace\'s board wasted little time in dismissing the approach. eBay characterised the offer as neither credible nor attractive, pointing specifically to uncertainty surrounding how GameStop intended to finance a deal of such enormous scale.",
-        "The rejected bid represents one of the more audacious corporate manoeuvres in recent memory, given the vast gulf between GameStop\'s own market capitalisation and the price it proposed to pay for eBay. The episode is likely to draw renewed scrutiny of GameStop\'s strategic direction and the credibility of its leadership as it continues to search for a viable long-term business model beyond its origins as a bricks-and-mortar video game retailer."
+        "The UK\'s Financial Conduct Authority has unveiled sweeping new rules that will require crypto firms to prove they can withstand market shocks and maintain adequate capital buffers against risky assets, with the regulations set to take effect from October next year. The announcement marks a significant step toward bringing the largely unregulated crypto industry under a framework comparable to that governing traditional financial institutions.",
+        "The move reflects growing regulatory urgency around the booming digital asset sector, which has so far operated with comparatively limited oversight in the UK. Industry participants will need to accelerate their compliance preparations, and the rules are expected to raise the bar for market entry, potentially reshaping the competitive landscape for crypto businesses seeking a foothold in one of the world\'s leading financial centres."
       ],
-      image: "https://images.pexels.com/photos/17122728/pexels-photo-17122728.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      image: "https://i.guim.co.uk/img/media/9d95d44e58b560fb5445799828ea0bf5c913fa4a/285_0_4600_3680/master/4600.jpg?width=1200&quality=85&auto=format&fit=max&s=f9d80923dfb307d2a0400999c3917279",
       source: "The Guardian",
-      url: "https://www.theguardian.com/business/2026/may/12/gamestop-bid-for-ebay-rejected-as-neither-credible-nor-attractive",
-      category: "Mergers & Acquisitions"
+      url: "https://www.theguardian.com/technology/2026/jun/30/crypto-firms-sweeping-new-rules-uk-fca-regulator",
+      category: "Regulation"
     },
     {
       id: "fn3",
-      title: "Stocks Swing to Gains as Dip Buyers Step In Despite Inflation Shock",
-      summary: "Equity markets recovered from early weakness to post gains as dip buyers returned, even as faster-than-expected US inflation data sent government bonds lower globally.",
+      title: "Rocket Lab Bets $8 Billion on Iridium Acquisition to Challenge SpaceX\'s Starlink",
+      summary: "Rocket Lab has announced an $8 billion deal to acquire satellite communications company Iridium, describing the move as a strategic shortcut to building out its own connectivity capabilities to rival SpaceX\'s Starlink network.",
       body: [
-        "Stock markets swung from an initial sell-off to end in positive territory as investors willing to buy the dip stepped in, betting that a record-breaking equity rally still has further room to run despite the inflationary headwinds. Chipmakers, which led the early decline, recovered ground as the session progressed, reflecting continuing underlying confidence in the technology sector\'s long-term earnings potential.",
-        "Government bonds told a different story, with yields rising from Australia to Japan as markets followed US Treasuries lower in the wake of the inflation surprise, reflecting a global reassessment of how long central banks may need to keep monetary policy restrictive. The divergence between buoyant equities and a rattled bond market highlights the unusually complex crosscurrents investors are navigating as geopolitical risks, inflation and corporate earnings all compete for attention."
+        "Rocket Lab has made its most ambitious corporate move to date, announcing an $8 billion acquisition of Iridium in a bold bid to challenge SpaceX\'s dominant Starlink satellite internet service. The company described the deal as a 'shortcut' to rapidly expanding its satellite communications capabilities rather than building the infrastructure from scratch.",
+        "The acquisition signals an intensifying commercial space race beyond launch services, with Rocket Lab now positioning itself as a vertically integrated player across launch and connectivity. The deal is among the largest in the commercial space sector and will be closely watched by investors as a test of whether Rocket Lab can leverage Iridium\'s existing global network to credibly compete with Starlink\'s growing subscriber base."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/f750/live/8172ffc0-4e00-11f1-aa37-6b8846c2f74e.jpg",
-      source: "Bloomberg Markets",
-      url: "https://www.bloomberg.com/news/articles/2026-05-12/asian-stocks-under-pressure-as-us-inflation-rises-markets-wrap",
-      category: "Markets"
+      image: "https://images.mktw.net/im-22494504",
+      source: "MarketWatch",
+      url: "https://www.marketwatch.com/story/rocket-lab-to-take-on-spacexs-starlink-with-8-billion-acquisition-bf7ef649?mod=mw_rss_topstories",
+      category: "M&A"
     }
   ]
 };

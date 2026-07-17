@@ -1,61 +1,61 @@
 // world-news-data.js
-// Auto-updated 2026-05-13 — do not edit manually
+// Auto-updated 2026-07-02 — do not edit manually
 
 var WORLD_NEWS = {
-  date: "2026-05-13",
+  date: "2026-07-02",
   main: {
-    title: "Trump Heads to China for State Visit as Xi Poised to Press on Taiwan Arms Sales",
-    category: "Geopolitics",
+    title: "At Least Ten Killed in Large-Scale Russian Missile and Drone Strikes on Kyiv",
+    category: "Conflict",
     content: [
-      "President Donald Trump has departed for Beijing for a high-stakes state visit with Chinese President Xi Jinping, marking a significant moment in the turbulent relationship between the world\'s two largest economies. The visit comes at a particularly charged juncture, with ongoing tensions over trade tariffs, the war in Iran, and the perennial flashpoint of Taiwan all crowding the diplomatic agenda. A new NPR-Chicago Council-Ipsos poll published ahead of the trip found that most Americans believe US tariffs have hurt both economies, reflecting widespread public ambivalence about the administration\'s approach to China.",
-      "At the centre of Xi Jinping\'s agenda is expected to be a firm push for the United States to slow or halt its approval of further arms sales to Taiwan, the self-governing island that Beijing regards as the 'core of China\'s core interests.' The Chinese leadership has long viewed American military support for Taipei as a fundamental provocation, and Xi is expected to use the summit to demand concrete concessions on the issue. The Trump administration\'s posture on Taiwan ahead of the visit has been closely watched by governments across the Indo-Pacific region.",
-      "The visit takes place against a backdrop of a dramatically transformed China compared to Trump\'s first term in office. Analysts note that Beijing is now arguably the most powerful strategic competitor the United States has ever confronted in its history, having expanded its military, technological, and economic reach considerably over the past decade. Where Trump once arrived in a China that was still largely reactive on the world stage, he now faces a country that is more assertive, more confident, and less willing to accommodate American pressure.",
-      "The broader context of the summit is further complicated by the ongoing US military engagement in Iran, which Trump told reporters was 'very much under control' as he departed. Iran has so far stuck to demands Trump has dismissed as unacceptable, leaving the ceasefire situation unresolved. A new inflation report is expected to illustrate the economic toll that the Iran conflict has taken on American consumers, adding domestic political pressure to an already complex diplomatic mission.",
-      "Regional security dynamics have also intruded on the summit\'s backdrop, with Kuwait accusing Iran of launching a failed attack on an island where China is helping to construct a major port, a development that underscores how closely intertwined the various geopolitical crises have become. The incident highlights Beijing\'s expanding infrastructure ambitions in the Gulf region and the risks those investments now face. As Trump and Xi sit down in Beijing, the outcomes of their talks are expected to reverberate far beyond bilateral relations, shaping the trajectory of conflicts, trade flows, and alliances across the globe."
+      "Russia launched one of its most devastating attacks on the Ukrainian capital in weeks, firing a large-scale barrage of missiles and drones at Kyiv that left at least ten people dead. Ukrainian officials confirmed that children were among what they described as a 'significant number' of casualties, underlining the indiscriminate nature of the assault. The strikes hit residential and civilian areas, causing widespread destruction across parts of the city.",
+      "The attack marks a sharp escalation in Russian aerial bombardment of Kyiv, which has endured relentless strikes throughout the prolonged conflict. Ukrainian air defences were deployed in response, though the sheer scale and coordination of the assault meant that multiple projectiles broke through. Emergency services rushed to the scenes of impact, working to pull survivors from the rubble of damaged buildings.",
+      "The inclusion of children among the casualties has drawn fresh international condemnation, with Ukrainian officials calling on allies to provide additional air defence systems. The psychological toll on Kyiv\'s civilian population continues to mount, with residents forced once again into shelters and underground stations. Images and reports emerging from the city painted a grim picture of destroyed apartments and burning infrastructure.",
+      "The strikes come amid broader military pressure along Ukraine\'s front lines, where fighting has continued with significant intensity. Russia\'s use of combined missile and drone tactics has been a persistent feature of its campaign, designed to overwhelm Ukrainian defences and demoralise the civilian population. Analysts note that attacks of this magnitude are often timed to coincide with diplomatic moments or to signal continued resolve from Moscow.",
+      "The international community has repeatedly called on Russia to halt its attacks on civilian infrastructure, but such appeals have done little to curb the bombardment. Ukraine\'s government has renewed its urgent requests for more advanced air defence systems from Western partners, arguing that the protection of civilian lives depends on closing the gaps in its defensive coverage. The death toll from this latest strike underscores the human cost of a war now well into its fourth year.",
     ],
-    image: "https://static01.nyt.com/images/2026/05/11/multimedia/00int-China-US-taiwan-pcmh/00int-China-US-taiwan-pcmh-mediumSquareAt3X.jpg",
-    source: "The New York Times",
-    sourceUrl: "https://www.nytimes.com/2026/05/12/world/asia/xi-trump-china-taiwan-arms-sales.html"
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/3b2e/live/248b9c60-75d1-11f1-be8b-cbfeee563106.jpg",
+    source: "BBC News",
+    sourceUrl: "https://www.bbc.co.uk/news/articles/c4gyv05gk4do?at_medium=RSS&at_campaign=rss"
   },
   secondary: [
     {
       id: "s1",
-      title: "Iran War: Trump Warns Tehran Must Make a Deal or Face Renewed Attacks",
-      summary: "President Trump issued a stark warning to Iran as he departed for China, saying the country must reach a deal or face renewed military strikes.",
+      title: "Sudan\'s RSF Committed Crimes Against Humanity in El Fasher, Amnesty Says",
+      summary: "Amnesty International has accused Sudan\'s Rapid Support Forces of crimes against humanity and ethnic cleansing during their campaign to capture the city of El Fasher.",
       body: [
-        "As Trump left Washington for his Beijing summit, he told reporters the war in Iran was 'very much under control,' but warned that renewed attacks would follow if Tehran failed to come to the negotiating table on acceptable terms. Iran has continued to hold to its most recent demands, which Trump publicly dismissed as unacceptable, leaving the two sides at an impasse despite ongoing ceasefire discussions.",
-        "The conflict has already begun to ripple through the US economy, with a new inflation report expected to show its measurable impact on consumer prices. The combination of military entanglement in the Middle East and a high-profile diplomatic push in Beijing has placed the Trump administration in an unusually complex simultaneous foreign policy moment."
+        "A new report from Amnesty International alleges that the Sudanese paramilitary Rapid Support Forces carried out a systematic campaign of atrocities against civilians in El Fasher, including murder, torture, rape, enslavement, and sexual slavery. The report accuses the RSF of ethnic cleansing as part of its broader effort to seize control of the city, which has been one of the last major urban holdouts in the Darfur region.",
+        "The findings represent some of the most serious allegations levelled at any party to the Sudanese conflict, which has already caused one of the world\'s worst humanitarian crises. El Fasher has long been considered a critical flashpoint, and its fate has been watched closely by international human rights organisations and governments seeking to prevent a repeat of the Darfur genocide of the early 2000s."
       ],
-      image: "https://static01.nyt.com/images/2026/05/12/multimedia/12mideast-promo4p-zpfj/12mideast-promo4p-zpfj-mediumSquareAt3X.jpg",
-      source: "The New York Times",
-      url: "https://www.nytimes.com/live/2026/05/12/world/iran-war-trump-ceasefire-hormuz",
-      category: "Conflict"
+      image: "https://images.unsplash.com/photo-1535253868107-da56da1693db?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTdWRhbiU1Q3xlbnwwfDB8fHwxNzgyOTY4NDg5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/world/2026/jul/01/sudan-rsf-rapid-support-forces-crimes-against-humanity-el-fasher-amnesty-ethnic-cleansing",
+      category: "Human Rights"
     },
     {
       id: "s2",
-      title: "Record 32.3 Million Internal Displacements from Conflict and Violence in 2025",
-      summary: "A new report reveals that conflict and violence drove a record 32.3 million internal displacements worldwide in 2025, surpassing disaster-driven displacement for the first time.",
+      title: "German Prosecutors Charge Ukrainian Suspect Over Nord Stream Pipeline Explosions",
+      summary: "German prosecutors have charged a Ukrainian national they allege led the sabotage operation against the Nord Stream pipelines, with a yacht said to have been used in the attack.",
       body: [
-        "The Internal Displacement Monitoring Centre has published findings showing that the number of people forced from their homes within their own countries by conflict and violence reached an unprecedented high in 2025, with 32.3 million displacements recorded globally. For the first time on record, this figure surpassed the number of displacements caused by natural disasters, a stark indicator of how widespread and entrenched armed conflict has become around the world.",
-        "In total, 82.2 million people were internally displaced across all causes in 2025, painting a grim picture of human suffering on a vast scale. Humanitarian organisations have warned that the trend reflects not only the persistence of existing conflicts but also the emergence of new flashpoints that are pushing vulnerable populations from their homes with increasing frequency."
+        "German prosecutors have formally charged a Ukrainian suspect in connection with the 2022 explosions that destroyed the Nord Stream gas pipelines beneath the Baltic Sea, alleging that a yacht was used to carry out the sophisticated sabotage operation. The suspect is accused of leading the mission, which caused massive damage to infrastructure connecting Russia and Europe and sent shockwaves through global energy markets.",
+        "The Nord Stream explosions have been one of the most consequential and disputed acts of sabotage in recent European history, with multiple countries investigating and various theories circulating about who was ultimately responsible. The formal charges by German prosecutors represent a significant development in a case that has long been mired in geopolitical sensitivity and competing claims."
       ],
-      image: "https://i.guim.co.uk/img/media/b811e0f2e21092d50146ecede9734b90a211d2bd/1170_0_6385_5108/master/6385.jpg?width=1200&quality=85&auto=format&fit=max&s=818d50be8f7fb79f7dd106fc577a558b",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/world/2026/may/12/internal-displacements-violence-conflict-record-high-2025",
-      category: "Humanitarian"
+      image: "https://images.pexels.com/photos/11849155/pexels-photo-11849155.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      source: "Al Jazeera",
+      url: "https://www.aljazeera.com/news/2026/7/2/german-prosecutors-charge-ukrainian-suspect-over-nord-stream-explosions?traffic_source=rss",
+      category: "Geopolitics"
     },
     {
       id: "s3",
-      title: "Putin Hails Test Launch of What Russia Calls 'Most Powerful Missile in the World'",
-      summary: "Russian President Vladimir Putin celebrated a test launch of the nuclear-capable Sarmat missile, announcing it will enter combat service before the end of 2026.",
+      title: "U.S. and Iran Set to Hold Indirect Talks After Trading Attacks",
+      summary: "Negotiators from the United States and Iran are meeting in Qatar for indirect talks, even as the two countries remain far apart on key issues following a period of direct hostilities.",
       body: [
-        "Vladimir Putin has praised the successful test launch of Russia\'s Sarmat intercontinental ballistic missile, describing it as the most powerful missile in the world and signalling that it will be deployed into active combat service by the end of the year. The nuclear-capable weapon represents a significant component of Russia\'s strategic arsenal and has been in development for several years as Moscow seeks to modernise its nuclear deterrent.",
-        "The announcement comes at a moment of heightened global tension, with Russia\'s ongoing war in Ukraine continuing and relations with Western nations remaining deeply strained. The test launch is likely to draw sharp responses from NATO members and will add further urgency to discussions about nuclear arms control at a time when such frameworks have largely broken down between the major powers."
+        "The United States and Iran are engaged in indirect diplomatic talks in Qatar, a development that comes after the two nations traded attacks in a period of acute tension. Ship traffic in the strategically vital Strait of Hormuz has reportedly risen, suggesting some easing of immediate pressure, though the underlying disputes between Washington and Tehran remain deeply unresolved.",
+        "The Qatar talks represent a fragile diplomatic opening in one of the world\'s most volatile relationships, with both sides facing significant domestic and regional pressures. Observers caution that while the resumption of any form of dialogue is a positive sign, the gulf between the two parties on core issues — including Iran\'s nuclear programme — remains vast."
       ],
-      image: "https://images.unsplash.com/photo-1614977529530-9b547b32a0d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxQdXRpbiUyMEhhaWxzJTIwVGVzdCUyMExhdW5jaCUyMG9mJTIwV2hhdCUyMFJ1c3NpYSUyMENhbGxzJTIwfGVufDB8MHx8fDE3Nzg2NDg0NzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "Al Jazeera",
-      url: "https://www.aljazeera.com/news/2026/5/13/putin-hails-russias-test-launch-of-most-powerful-missile-in-the-world?traffic_source=rss",
-      category: "Security"
+      image: "https://static01.nyt.com/images/2026/07/01/multimedia/01int-iran-diplomacy-ctlj/01int-iran-diplomacy-ctlj-mediumSquareAt3X.jpg",
+      source: "The New York Times",
+      url: "https://www.nytimes.com/2026/07/01/world/middleeast/us-iran-diplomacy-qatar.html",
+      category: "Diplomacy"
     }
   ]
 };
