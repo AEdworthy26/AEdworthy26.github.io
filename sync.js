@@ -286,11 +286,22 @@
 
   // visibilitychange fires reliably on tab switch, lid close, and mobile
   // backgrounding (unlike beforeunload, which mobile browsers often skip).
-  // It gives a real doPush (live fetch + merge) a chance to complete before
-  // the page is actually torn down, so we try that first and only fall back
-  // to the beacon merge if the page disappears before it finishes.
+  // On hide: give a real doPush (live fetch + merge) a chance to complete
+  // before the page is actually torn down, so we try that first and only
+  // fall back to the beacon merge if the page disappears before it finishes.
+  // On show: doPush/doPull write newer remote values straight into
+  // localStorage (bypassing the intercepted setItem), so a page's in-memory
+  // list — loaded once and never re-read — can go stale while backgrounded.
+  // Re-pull and reload before the user gets a chance to edit against that
+  // stale in-memory copy and silently overwrite what another device saved.
   document.addEventListener('visibilitychange', function() {
-    if (document.hidden && sessionChanged) doPush();
+    if (document.hidden) {
+      if (sessionChanged) doPush();
+    } else {
+      doPull(function(ok, reason) {
+        if (ok && reason === 'updated') window.location.reload();
+      });
+    }
   });
 
   /* ── safety-net: merge-push every 5 minutes ── */
