@@ -65,6 +65,16 @@
   var pushInFlight = false;
   var sessionChanged = false;
 
+  // Last remote snapshot this tab has actually seen (from a successful pull or push).
+  // Used by beforeunload, which can't await a fresh fetch, so it has something better
+  // than raw localStorage to merge against instead of blindly overwriting the cloud copy.
+  var lastKnownRemote   = {};
+  var lastKnownRemoteTs = {};
+  function cacheRemote(remote) {
+    lastKnownRemote   = remote || {};
+    lastKnownRemoteTs = (remote && remote._timestamps) || {};
+  }
+
   function schedulePush() {
     clearTimeout(pushTimer);
     pushTimer = setTimeout(doPush, 800);
@@ -86,6 +96,7 @@
             remote = JSON.parse(gist.files[GIST_FILE].content);
           }
         } catch(e) {}
+        cacheRemote(remote);
 
         var remoteTs = remote._timestamps || {};
         var localTs  = sanitiseTs(getLocalTimestamps());
@@ -155,6 +166,7 @@
           return;
         }
         var remote   = JSON.parse(gist.files[GIST_FILE].content);
+        cacheRemote(remote);
         var remoteTs = remote._timestamps || {};
         var localTs  = sanitiseTs(getLocalTimestamps());
         var changed  = false;
@@ -235,18 +247,50 @@
     });
   });
 
-  /* ── on tab close: push only if changes were made this session ── */
-  window.addEventListener('beforeunload', function() {
+  /* ── on tab close / hide: push only if changes were made this session ──
+     beforeunload can't await a fresh fetch, so a naive implementation here
+     would have to trust raw localStorage and risk overwriting a newer change
+     another device already pushed to the cloud since this tab last synced.
+     Instead we merge against lastKnownRemote (the freshest snapshot this tab
+     has actually seen) the same way doPush merges against a live fetch —
+     newer timestamp wins per key, so this can never blast in stale data. ── */
+  function buildMergedBeaconPayload() {
+    var localTs = sanitiseTs(getLocalTimestamps());
+    var data = { _timestamps: {} };
+    SYNC_KEYS.forEach(function(k) {
+      var localVal   = _origGet(k);
+      var remoteVal  = lastKnownRemote[k];
+      var localTime  = localTs[k] || 0;
+      var remoteTime = lastKnownRemoteTs[k] || 0;
+      if (localVal !== null && localTime >= remoteTime) {
+        data[k] = localVal;
+        data._timestamps[k] = localTime || Date.now();
+      } else if (remoteVal !== undefined) {
+        data[k] = remoteVal;
+        data._timestamps[k] = remoteTime;
+      }
+    });
+    return data;
+  }
+
+  function beaconPush() {
     if (!sessionChanged) return;
-    // Changes made this session have fresh timestamps so they win correctly.
-    // Use sendBeacon for reliability on unload.
-    var ts  = sanitiseTs(getLocalTimestamps());
-    var data = { _timestamps: ts };
-    SYNC_KEYS.forEach(function(k) { var v = _origGet(k); if (v !== null) data[k] = v; });
+    var data = buildMergedBeaconPayload();
     var body = JSON.stringify({ files: { 'personal-hub-sync.json': { content: JSON.stringify(data) } } });
     try {
       navigator.sendBeacon(WORKER_URL, new Blob([body], { type: 'application/json' }));
     } catch(e) {}
+  }
+
+  window.addEventListener('beforeunload', beaconPush);
+
+  // visibilitychange fires reliably on tab switch, lid close, and mobile
+  // backgrounding (unlike beforeunload, which mobile browsers often skip).
+  // It gives a real doPush (live fetch + merge) a chance to complete before
+  // the page is actually torn down, so we try that first and only fall back
+  // to the beacon merge if the page disappears before it finishes.
+  document.addEventListener('visibilitychange', function() {
+    if (document.hidden && sessionChanged) doPush();
   });
 
   /* ── safety-net: merge-push every 5 minutes ── */
