@@ -35,6 +35,7 @@
     'ph_vocab_v1',
     'reads_daily',
     'ph_budget_v1',
+    'ph_countdowns_v1',
   ];
 
   var _origSet = localStorage.setItem.bind(localStorage);

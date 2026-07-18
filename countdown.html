@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown — Personal Hub</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink:    #0d0d0d;
+      --paper:  #f4f0e6;
+      --rule:   #1a1a1a;
+      --muted:  #555;
+      --light:  #888;
+      --blue:   #003399;
+      --border: #d8d3c8;
+      --subtle: #ece8e0;
+      --card:   #ffffff;
+      --shadow-sm: 0 1px 4px rgba(0,0,0,0.06);
+      --shadow-md: 0 4px 16px rgba(0,0,0,0.09);
+      --radius: 14px;
+    }
+
+    body { background: var(--paper); color: var(--ink); font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; min-height: 100vh; font-size: 14px; }
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    button, input, select, textarea { font-family: inherit; }
+    button { cursor: pointer; }
+
+    /* ── TICKER ── */
+    .ticker-wrap { background: #111; overflow: hidden; display: flex; align-items: stretch; height: 2.4rem; }
+    .ticker-label { background: #e8000d; color: #fff; font-family: 'Source Serif 4', serif; font-size: .68rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; padding: 0 1.2rem; display: flex; align-items: center; white-space: nowrap; flex-shrink: 0; gap: .5rem; }
+    .ticker-label::before { content: ''; display: inline-block; width: 7px; height: 7px; background: #fff; border-radius: 50%; animation: pulse-dot 1.2s ease-in-out infinite; }
+    @keyframes pulse-dot { 0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.7)} }
+    .ticker-inner { overflow: hidden; flex: 1; display: flex; align-items: center; }
+    .ticker-track { display: flex; align-items: center; white-space: nowrap; will-change: transform; animation: ticker-scroll 40s linear infinite; }
+    .ticker-track:hover { animation-play-state: paused; cursor: default; }
+    .ticker-track span { color: #fff; font-family: 'Source Serif 4', serif; font-size: .78rem; font-weight: 600; padding: 0 2rem; }
+    .ticker-track .ticker-sep { color: #e8000d; font-size: 1rem; font-weight: 700; flex-shrink: 0; line-height: 1; padding: 0; }
+    @keyframes ticker-scroll { 0%{transform:translateX(0)}100%{transform:translateX(-50%)} }
+
+    /* ── HEADER ── */
+    .meta-bar { max-width: 1200px; margin: 0 auto; padding: 1rem 1.5rem 0; }
+    .meta-bar-inner { display: flex; justify-content: space-between; font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); border-bottom: 1px solid var(--rule); padding-bottom: .4rem; margin-bottom: .6rem; }
+    .masthead-wrap { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; text-align: center; }
+    .masthead { font-family: 'Playfair Display', serif; font-weight: 900; font-size: clamp(2.4rem,5vw,4.2rem); line-height: 1; letter-spacing: -.01em; }
+    .masthead-sub { font-size: .75rem; font-style: italic; color: var(--muted); margin: .2rem 0 .3rem; }
+    .rule-double { border: none; border-top: 3px double var(--rule); max-width: 1200px; margin: 0 auto; }
+
+    /* ── NAV ── */
+    .nav-ribbon { background: linear-gradient(90deg, #4b5563 0%, #1f2937 100%); position: sticky; top: 0; z-index: 100; }
+    .nav-ribbon nav { max-width: 1600px; margin: 0 auto; padding: 0 2rem; display: flex; align-items: center; justify-content: center; gap: .3rem; }
+    .nav-ribbon nav a { color: rgba(255,255,255,0.9); font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; padding: 0.5rem 0.95rem; border-radius: 5px; transition: background 0.15s; white-space: nowrap; }
+    .nav-ribbon nav a:hover { background: rgba(255,255,255,.15); color: #fff; text-decoration: none; }
+    .nav-ribbon nav a.nav-home { color: #fff; font-weight: 700; margin-right: .4rem; padding-right: 1rem; border-right: 1px solid rgba(255,255,255,.2); border-radius: 0; }
+    .nav-ribbon nav a.nav-active { background: rgba(255,255,255,.18); color: #fff; }
+    .nav-divider { width: 1px; height: 1.1rem; background: rgba(255,255,255,.35); margin: 0 .6rem; flex-shrink: 0; align-self: center; }
+    .nav-caret { font-size: .55rem; opacity: .65; transition: transform .15s; line-height: 1; }
+    .nav-dropdown { position: relative; display: flex; align-items: center; }
+    .nav-dropdown:hover .nav-caret { transform: rotate(180deg); }
+    .nav-dropdown:hover .nav-drop-menu { display: flex; }
+    .nav-drop-btn { color: rgba(255,255,255,0.9); font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; padding: 0.5rem 0.95rem; border-radius: 5px; background: none; border: none; cursor: pointer; white-space: nowrap; display: flex; align-items: center; gap: 0.25rem; transition: background 0.15s; }
+    .nav-drop-btn:hover, .nav-drop-btn.nav-active { background: rgba(255,255,255,.18); color: #fff; }
+    .nav-drop-menu { position: absolute; top: 100%; left: 0; background: #1f2937; border-radius: 6px; min-width: 155px; display: none; flex-direction: column; z-index: 200; box-shadow: 0 6px 18px rgba(0,0,0,.4); overflow: hidden; }
+    .nav-drop-menu a { color: rgba(255,255,255,.85); font-size: .76rem; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; padding: .6rem 1.1rem; display: block; border-radius: 0; transition: background .12s; }
+    .nav-drop-menu a + a { border-top: 1px solid rgba(255,255,255,.07); }
+    .nav-drop-menu a:hover { background: rgba(255,255,255,.15); color: #fff; text-decoration: none; }
+    .nav-drop-menu a.nav-active { background: rgba(255,255,255,.15); color: #fff; }
+    @media (max-width: 800px) {
+      .nav-ribbon nav { flex-wrap: wrap; gap: 0; padding: .25rem .5rem; }
+      .nav-drop-menu { position: static; box-shadow: none; border-radius: 0; background: rgba(255,255,255,.06); }
+      .nav-dropdown { flex-direction: column; align-items: flex-start; width: 100%; }
+      .nav-drop-menu { display: flex !important; }
+    }
+
+    /* ── PAGE ── */
+    .page-wrap { max-width: 1120px; margin: 0 auto; padding: 2rem 1.5rem 5rem; }
+    .page-title-row { padding-bottom: 1rem; margin-bottom: .4rem; display: flex; align-items: flex-end; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+    .page-section-tag { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); }
+    .page-title { font-family: 'Playfair Display', serif; font-weight: 900; font-size: 2.4rem; line-height: 1; margin-top: 0.2rem; }
+    .page-subtitle { font-size: .84rem; color: var(--muted); font-style: italic; margin-top: .35rem; max-width: 46ch; }
+
+    /* ── STATS STRIP ── */
+    .stats-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin: 1.6rem 0 1.8rem; }
+    .stat-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem 1.1rem; box-shadow: var(--shadow-sm); }
+    .stat-label { font-size: .62rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--light); }
+    .stat-value { font-family: 'Playfair Display', serif; font-weight: 900; font-size: 1.7rem; line-height: 1.3; margin-top: .15rem; font-variant-numeric: tabular-nums; }
+    .stat-sub { font-size: .72rem; color: var(--muted); margin-top: .1rem; }
+    @media (max-width: 720px) { .stats-strip { grid-template-columns: repeat(2, 1fr); } }
+
+    /* ── TOOLBAR ── */
+    .cd-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 1.4rem; flex-wrap: wrap; }
+    .cd-sort { display: flex; align-items: center; gap: .5rem; font-size: .78rem; color: var(--muted); }
+    .cd-sort select { border: 1px solid var(--border); background: var(--card); border-radius: 8px; padding: .4rem .6rem; font-size: .78rem; color: var(--ink); }
+    .btn-new { background: var(--ink); color: #fff; border: none; border-radius: 9px; padding: .65rem 1.2rem; font-size: .8rem; font-weight: 700; letter-spacing: .03em; box-shadow: var(--shadow-sm); transition: transform .12s, box-shadow .12s; }
+    .btn-new:hover { transform: translateY(-1px); box-shadow: var(--shadow-md); text-decoration: none; }
+
+    /* ── GRID ── */
+    .cd-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 1.1rem; }
+
+    .cd-card {
+      position: relative; overflow: hidden; border-radius: 20px;
+      background: linear-gradient(165deg, #16171d 0%, #1d1e26 100%);
+      border: 1px solid rgba(255,255,255,.07);
+      box-shadow: 0 14px 34px rgba(0,0,0,.28);
+      padding: 1.5rem 1.4rem 1.3rem;
+      display: flex; flex-direction: column; align-items: center; gap: .85rem;
+      animation: cdIn .35s cubic-bezier(.2,.8,.2,1) both;
+    }
+    @keyframes cdIn { from { opacity:0; transform: translateY(10px) scale(.98);} to { opacity:1; transform:none; } }
+    .cd-card::before {
+      content: ''; position: absolute; inset: 0; pointer-events: none;
+      background: radial-gradient(circle at 50% -10%, var(--accent-soft), transparent 60%);
+    }
+
+    .cd-card-top { display: flex; align-items: flex-start; justify-content: space-between; width: 100%; gap: .5rem; z-index: 1; }
+    .cd-card-title { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 1.02rem; color: #fff; line-height: 1.25; }
+    .cd-card-note { font-size: .74rem; color: rgba(255,255,255,.5); margin-top: .15rem; line-height: 1.35; }
+    .cd-kebab-wrap { position: relative; flex-shrink: 0; }
+    .cd-kebab { background: rgba(255,255,255,.06); border: none; color: rgba(255,255,255,.7); width: 1.7rem; height: 1.7rem; border-radius: 7px; font-size: .95rem; line-height: 1; transition: background .15s, color .15s; }
+    .cd-kebab:hover { background: rgba(255,255,255,.14); color: #fff; }
+    .cd-menu { position: absolute; top: 115%; right: 0; background: #23242c; border-radius: 9px; min-width: 130px; box-shadow: 0 10px 26px rgba(0,0,0,.45); overflow: hidden; display: none; z-index: 20; border: 1px solid rgba(255,255,255,.08); }
+    .cd-menu.open { display: block; }
+    .cd-menu button { display: block; width: 100%; text-align: left; background: none; border: none; color: rgba(255,255,255,.85); font-size: .76rem; font-weight: 500; letter-spacing: .02em; padding: .55rem .85rem; transition: background .12s; }
+    .cd-menu button:hover { background: rgba(255,255,255,.08); }
+    .cd-menu button.cd-danger { color: #fb7185; }
+
+    .cd-ring-wrap { position: relative; width: 148px; height: 148px; margin-top: .2rem; z-index: 1; }
+    .cd-ring { width: 100%; height: 100%; transform: rotate(-90deg); }
+    .cd-ring-track { fill: none; stroke: rgba(255,255,255,.08); stroke-width: 9; }
+    .cd-ring-progress { fill: none; stroke: var(--accent); stroke-width: 9; stroke-linecap: round; transition: stroke-dashoffset .6s ease; filter: drop-shadow(0 0 5px var(--accent)); }
+    .cd-ring-center { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0; }
+    .cd-days { font-family: 'Playfair Display', serif; font-weight: 900; font-size: 2.5rem; color: #fff; line-height: 1; font-variant-numeric: tabular-nums; }
+    .cd-days-label { font-size: .64rem; letter-spacing: .16em; text-transform: uppercase; color: rgba(255,255,255,.5); margin-top: .2rem; }
+
+    .cd-clock { font-family: 'Inter', sans-serif; font-weight: 600; font-size: .92rem; letter-spacing: .06em; color: var(--accent); font-variant-numeric: tabular-nums; z-index: 1; }
+
+    .cd-milestones { display: flex; gap: .35rem; flex-wrap: wrap; justify-content: center; z-index: 1; }
+    .cd-pill { font-size: .62rem; font-weight: 700; letter-spacing: .04em; padding: .22rem .5rem; border-radius: 20px; background: rgba(255,255,255,.06); color: rgba(255,255,255,.4); }
+    .cd-pill.hit { background: var(--accent-soft); color: var(--accent); }
+
+    .cd-meta { display: flex; justify-content: space-between; width: 100%; font-size: .68rem; color: rgba(255,255,255,.45); z-index: 1; border-top: 1px solid rgba(255,255,255,.07); padding-top: .7rem; margin-top: .1rem; }
+
+    .cd-confirm { z-index: 1; width: 100%; display: flex; align-items: center; justify-content: space-between; gap: .5rem; background: rgba(255,255,255,.05); border-radius: 9px; padding: .55rem .7rem; font-size: .74rem; color: rgba(255,255,255,.8); }
+    .cd-confirm button { border: none; border-radius: 6px; padding: .35rem .6rem; font-size: .72rem; font-weight: 700; }
+    .cd-confirm .cd-yes { background: #fb7185; color: #fff; }
+    .cd-confirm .cd-yes.cd-reset-yes { background: var(--accent); color: #14151a; }
+    .cd-confirm .cd-no { background: rgba(255,255,255,.1); color: rgba(255,255,255,.85); }
+
+    .cd-empty { grid-column: 1 / -1; text-align: center; padding: 3.5rem 1.5rem; background: var(--card); border: 1px dashed var(--border); border-radius: var(--radius); color: var(--muted); }
+    .cd-empty-icon { font-size: 2rem; display: block; margin-bottom: .6rem; }
+
+    /* ── MODAL ── */
+    .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); backdrop-filter: blur(3px); z-index: 500; display: none; align-items: center; justify-content: center; padding: 1rem; }
+    .modal-overlay.open { display: flex; animation: fadeIn .18s ease; }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes slideUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+    .modal-card { background: #1a1b22; border-radius: 18px; box-shadow: 0 24px 64px rgba(0,0,0,.4); width: 100%; max-width: 420px; overflow: hidden; animation: slideUp .22s ease both; border: 1px solid rgba(255,255,255,.08); }
+    .modal-header { padding: 1.1rem 1.3rem; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,.08); }
+    .modal-title { font-family: 'Inter', sans-serif; font-weight: 700; font-size: .95rem; color: #fff; letter-spacing: .02em; }
+    .modal-close { background: none; border: none; font-size: 1.1rem; color: rgba(255,255,255,.55); line-height: 1; padding: .2rem .4rem; border-radius: 5px; }
+    .modal-close:hover { color: #fff; background: rgba(255,255,255,.1); }
+    .modal-body { padding: 1.2rem 1.3rem; display: flex; flex-direction: column; gap: 1rem; }
+    .form-field { display: flex; flex-direction: column; gap: .35rem; }
+    .form-field label { font-size: .68rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: rgba(255,255,255,.5); }
+    .form-field input, .form-field textarea {
+      background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.12); border-radius: 9px;
+      padding: .6rem .7rem; font-size: .85rem; color: #fff;
+    }
+    .form-field input::placeholder, .form-field textarea::placeholder { color: rgba(255,255,255,.35); }
+    .form-field input:focus, .form-field textarea:focus { outline: none; border-color: var(--f-accent, #38bdf8); }
+    .started-row { display: flex; gap: .5rem; align-items: center; }
+    .started-row input[type="datetime-local"] { flex: 1; color-scheme: dark; }
+    .btn-now { background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.12); color: rgba(255,255,255,.85); border-radius: 8px; padding: .55rem .7rem; font-size: .72rem; font-weight: 600; white-space: nowrap; }
+    .btn-now:hover { background: rgba(255,255,255,.15); }
+    .color-row { display: flex; gap: .55rem; }
+    .color-swatch { width: 1.9rem; height: 1.9rem; border-radius: 50%; border: 2px solid transparent; cursor: pointer; transition: transform .12s, border-color .12s; }
+    .color-swatch:hover { transform: scale(1.08); }
+    .color-swatch.selected { border-color: #fff; }
+    .modal-footer { padding: 1rem 1.3rem 1.3rem; display: flex; gap: .6rem; justify-content: flex-end; }
+    .btn-cancel { background: rgba(255,255,255,.08); color: rgba(255,255,255,.85); border: none; border-radius: 9px; padding: .6rem 1.1rem; font-size: .8rem; font-weight: 600; }
+    .btn-cancel:hover { background: rgba(255,255,255,.15); }
+    .btn-save { background: #fff; color: #14151a; border: none; border-radius: 9px; padding: .6rem 1.2rem; font-size: .8rem; font-weight: 700; }
+    .btn-save:hover { opacity: .9; }
+  </style>
+</head>
+<body>
+
+  <!-- TICKER -->
+  <div class="ticker-wrap">
+    <div class="ticker-label">Breaking News</div>
+    <div class="ticker-inner">
+      <div class="ticker-track" id="js-ticker">
+        <span style="color:rgba(255,255,255,0.5);font-size:.78rem;padding:0 2rem">Loading&hellip;</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- META BAR -->
+  <div class="meta-bar">
+    <div class="meta-bar-inner">
+      <span id="js-date"></span>
+      <span>Personal Edition &nbsp;&bull;&nbsp; Est. 2026</span>
+    </div>
+  </div>
+  <div class="masthead-wrap">
+    <div class="masthead">Personal Hub</div>
+    <div class="masthead-sub">Alfie Edworthy</div>
+  </div>
+  <hr class="rule-double">
+
+  <!-- NAV RIBBON -->
+  <div class="nav-ribbon">
+    <nav>
+      <a href="personal_hub.html" class="nav-home">&#8962; Home</a>
+      <div class="nav-dropdown">
+        <button class="nav-drop-btn">RICS Study <span class="nav-caret">▾</span></button>
+        <div class="nav-drop-menu">
+          <a href="rics-study.html">Today's Lesson</a>
+          <a href="rics-log.html">Study Log</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <button class="nav-drop-btn">News <span class="nav-caret">▾</span></button>
+        <div class="nav-drop-menu">
+          <a href="world-news.html">World Affairs</a>
+          <a href="uk-politics-news.html">UK Politics</a>
+          <a href="us-politics-news.html">US Politics</a>
+          <a href="financial-news.html">Financial</a>
+          <a href="tech-news.html">Technology</a>
+        </div>
+      </div>
+      <a href="curiosity.html">Curiosity Corner</a>
+      <a href="philosophy.html">Philosophy Corner</a>
+      <div class="nav-dropdown">
+        <button class="nav-drop-btn">Recommendations <span class="nav-caret">▾</span></button>
+        <div class="nav-drop-menu">
+          <a href="reads.html">Books</a>
+          <a href="books.html">Reading List</a>
+          <a href="films.html">Films</a>
+        </div>
+      </div>
+      <a href="recipes.html">Recipes</a>
+      <a href="exercise.html">Exercise</a>
+      <div class="nav-divider"></div>
+      <div class="nav-dropdown">
+        <button class="nav-drop-btn nav-active">Organisation <span class="nav-caret">▾</span></button>
+        <div class="nav-drop-menu">
+          <a href="todo-lists.html">To-Do Lists</a>
+          <a href="meal-planner.html">Meal Planner</a>
+          <a href="weekly-checkin.html">Weekly Check-In</a>
+          <a href="monthly-goals.html">Monthly Goals</a>
+          <a href="achievements.html">Achievements</a>
+          <a href="wishlist.html">Wishlist</a>
+          <a href="budget.html">Budget</a>
+          <a href="countdown.html" class="nav-active">Countdown</a>
+        </div>
+      </div>
+      <a href="calendar.html">Calendar</a>
+    </nav>
+  </div>
+
+  <!-- PAGE -->
+  <div class="page-wrap">
+
+    <div class="page-title-row">
+      <div>
+        <span class="page-section-tag">Organisation</span>
+        <h1 class="page-title">Countdown</h1>
+        <p class="page-subtitle">Days since you last did the thing you're giving up. Every tracker keeps running until you say otherwise.</p>
+      </div>
+    </div>
+
+    <!-- Stats Strip -->
+    <div class="stats-strip">
+      <div class="stat-card">
+        <div class="stat-label">Active Trackers</div>
+        <div class="stat-value" id="stat-count">0</div>
+        <div class="stat-sub">currently running</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Longest Current Streak</div>
+        <div class="stat-value" id="stat-longest">—</div>
+        <div class="stat-sub" id="stat-longest-sub">no trackers yet</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Combined Days</div>
+        <div class="stat-value" id="stat-combined">0</div>
+        <div class="stat-sub">across every tracker</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Best Ever Streak</div>
+        <div class="stat-value" id="stat-best">—</div>
+        <div class="stat-sub" id="stat-best-sub">no resets recorded</div>
+      </div>
+    </div>
+
+    <div class="cd-toolbar">
+      <div class="cd-sort">
+        <span>Sort</span>
+        <select id="cd-sort-select" onchange="window.cdSetSort(this.value)">
+          <option value="streak">Longest streak</option>
+          <option value="newest">Newest first</option>
+          <option value="oldest">Oldest first</option>
+          <option value="az">A–Z</option>
+        </select>
+      </div>
+      <button class="btn-new" onclick="window.cdOpenAdd()">+ New Tracker</button>
+    </div>
+
+    <!-- Grid -->
+    <div class="cd-grid" id="cd-grid"></div>
+
+  </div>
+
+  <!-- ADD/EDIT MODAL -->
+  <div class="modal-overlay" id="modal-overlay" onclick="if(event.target===this) window.cdCloseModal()">
+    <div class="modal-card">
+      <div class="modal-header">
+        <span class="modal-title" id="modal-title">New Tracker</span>
+        <button class="modal-close" onclick="window.cdCloseModal()">&#x2715;</button>
+      </div>
+      <div class="modal-body">
+        <div class="form-field">
+          <label for="cd-f-title">What are you giving up?</label>
+          <input type="text" id="cd-f-title" placeholder="e.g. Smoking, Alcohol, Doomscrolling" maxlength="60">
+        </div>
+        <div class="form-field">
+          <label for="cd-f-note">Note <span style="text-transform:none;font-weight:400;opacity:.7">(optional)</span></label>
+          <input type="text" id="cd-f-note" placeholder="Why you're doing this" maxlength="140">
+        </div>
+        <div class="form-field">
+          <label for="cd-f-started">Started</label>
+          <div class="started-row">
+            <input type="datetime-local" id="cd-f-started">
+            <button type="button" class="btn-now" onclick="window.cdSetNow()">Right now</button>
+          </div>
+        </div>
+        <div class="form-field">
+          <label>Colour</label>
+          <div class="color-row" id="cd-color-row"></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-cancel" onclick="window.cdCloseModal()">Cancel</button>
+        <button class="btn-save" onclick="window.cdSave()">Save</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  (function () {
+    'use strict';
+
+    var STORE = 'ph_countdowns_v1';
+    var trackers = [];
+    var _sort = 'streak';
+    var _editingId = null;
+    var _confirm = { id: null, action: null };
+    var _selectedColor = 'emerald';
+    var _openMenuId = null;
+
+    var ACCENTS = {
+      emerald: { solid: '#34d399', soft: 'rgba(52,211,153,0.20)' },
+      sky:     { solid: '#38bdf8', soft: 'rgba(56,189,248,0.20)' },
+      violet:  { solid: '#a78bfa', soft: 'rgba(167,139,250,0.20)' },
+      amber:   { solid: '#fbbf24', soft: 'rgba(251,191,36,0.20)' },
+      rose:    { solid: '#fb7185', soft: 'rgba(251,113,133,0.20)' },
+      slate:   { solid: '#94a3b8', soft: 'rgba(148,163,184,0.20)' }
+    };
+    var COLOR_KEYS = Object.keys(ACCENTS);
+    var MILESTONES = [7, 30, 90, 365];
+    var ALL_MILESTONES = [1, 3, 7, 14, 21, 30, 45, 60, 90, 120, 180, 270, 365, 500, 730, 1000, 1460, 1825, 2555, 3650];
+
+    // ── HELPERS ──────────────────────────────────────────────────────────────
+    function uid() { return Date.now().toString(36) + Math.random().toString(36).slice(2, 6); }
+    function esc(s) { return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
+    function pad2(n) { return n < 10 ? '0' + n : '' + n; }
+
+    function nowLocalInputValue() {
+      var d = new Date();
+      d.setMinutes(d.getMinutes() - d.getTimezoneOffset());
+      return d.toISOString().slice(0, 16);
+    }
+
+    function elapsedParts(ms) {
+      var totalSec = Math.max(0, Math.floor(ms / 1000));
+      return {
+        days: Math.floor(totalSec / 86400),
+        hours: Math.floor((totalSec % 86400) / 3600),
+        mins: Math.floor((totalSec % 3600) / 60),
+        secs: totalSec % 60
+      };
+    }
+
+    function prevMilestone(days) {
+      var p = 0;
+      for (var i = 0; i < ALL_MILESTONES.length; i++) {
+        if (ALL_MILESTONES[i] <= days) p = ALL_MILESTONES[i]; else break;
+      }
+      return p;
+    }
+    function nextMilestoneFor(days) {
+      for (var i = 0; i < ALL_MILESTONES.length; i++) {
+        if (ALL_MILESTONES[i] > days) return ALL_MILESTONES[i];
+      }
+      return null;
+    }
+    function ringProgress(msElapsed) {
+      var daysFloat = msElapsed / 86400000;
+      var prev = prevMilestone(Math.floor(daysFloat));
+      var next = nextMilestoneFor(Math.floor(daysFloat));
+      if (next === null) return 1;
+      var span = next - prev;
+      if (span <= 0) return 1;
+      return Math.max(0, Math.min(1, (daysFloat - prev) / span));
+    }
+
+    // ── PERSISTENCE ──────────────────────────────────────────────────────────
+    function load() {
+      try {
+        var raw = JSON.parse(localStorage.getItem(STORE) || 'null');
+        trackers = Array.isArray(raw) ? raw : [];
+      } catch (_) { trackers = []; }
+    }
+    function save() {
+      localStorage.setItem(STORE, JSON.stringify(trackers));
+    }
+
+    // ── SORT ─────────────────────────────────────────────────────────────────
+    function sortedTrackers() {
+      var arr = trackers.slice();
+      if (_sort === 'newest') arr.sort(function (a, b) { return b.createdAt - a.createdAt; });
+      else if (_sort === 'oldest') arr.sort(function (a, b) { return a.createdAt - b.createdAt; });
+      else if (_sort === 'az') arr.sort(function (a, b) { return a.title.localeCompare(b.title); });
+      else arr.sort(function (a, b) { return a.startedAt - b.startedAt; }); // streak: oldest startedAt = longest running
+      return arr;
+    }
+
+    // ── RENDER ───────────────────────────────────────────────────────────────
+    function render() {
+      renderStats();
+      renderGrid();
+    }
+
+    function renderStats() {
+      var count = trackers.length;
+      document.getElementById('stat-count').textContent = count;
+
+      if (!count) {
+        document.getElementById('stat-longest').textContent = '—';
+        document.getElementById('stat-longest-sub').textContent = 'no trackers yet';
+        document.getElementById('stat-combined').textContent = '0';
+        document.getElementById('stat-best').textContent = '—';
+        document.getElementById('stat-best-sub').textContent = 'no resets recorded';
+        return;
+      }
+
+      var longest = null, combinedDays = 0, bestEverMs = 0, bestEverTitle = '';
+      trackers.forEach(function (t) {
+        var elapsed = Date.now() - t.startedAt;
+        var days = elapsedParts(elapsed).days;
+        combinedDays += days;
+        if (!longest || elapsed > longest.elapsed) longest = { title: t.title, elapsed: elapsed };
+        var best = Math.max(t.bestMs || 0, elapsed);
+        if (best > bestEverMs) { bestEverMs = best; bestEverTitle = t.title; }
+      });
+
+      document.getElementById('stat-longest').textContent = elapsedParts(longest.elapsed).days;
+      document.getElementById('stat-longest-sub').textContent = longest.title;
+      document.getElementById('stat-combined').textContent = combinedDays;
+      document.getElementById('stat-best').textContent = elapsedParts(bestEverMs).days;
+      document.getElementById('stat-best-sub').textContent = bestEverTitle;
+    }
+
+    function renderGrid() {
+      var grid = document.getElementById('cd-grid');
+      var list = sortedTrackers();
+
+      if (!list.length) {
+        grid.innerHTML = '<div class="cd-empty"><span class="cd-empty-icon">&#9201;&#65039;</span>'
+          + '<div>No trackers yet. Start one to see how long you’ve gone.</div></div>';
+        return;
+      }
+
+      grid.innerHTML = list.map(renderCard).join('');
+    }
+
+    function renderCard(t) {
+      var accent = ACCENTS[t.color] || ACCENTS.emerald;
+      var elapsed = Date.now() - t.startedAt;
+      var parts = elapsedParts(elapsed);
+      var pct = ringProgress(elapsed);
+      var R = 65, C = 2 * Math.PI * R;
+      var dashoffset = C * (1 - pct);
+      var startedDate = new Date(t.startedAt);
+      var startedLabel = startedDate.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+      var bestMs = Math.max(t.bestMs || 0, elapsed);
+      var bestDays = elapsedParts(bestMs).days;
+
+      var milestonesHtml = MILESTONES.map(function (m) {
+        return '<span class="cd-pill' + (parts.days >= m ? ' hit' : '') + '">' + m + 'd</span>';
+      }).join('');
+
+      var confirmHtml = '';
+      if (_confirm.id === t.id) {
+        if (_confirm.action === 'reset') {
+          confirmHtml = '<div class="cd-confirm"><span>Reset this streak?</span><span>'
+            + '<button class="cd-yes cd-reset-yes" style="--accent:' + accent.solid + '" onclick="window.cdConfirmReset(\'' + t.id + '\')">Yes, reset</button> '
+            + '<button class="cd-no" onclick="window.cdCancelConfirm()">Cancel</button></span></div>';
+        } else {
+          confirmHtml = '<div class="cd-confirm"><span>Delete tracker?</span><span>'
+            + '<button class="cd-yes" onclick="window.cdConfirmDelete(\'' + t.id + '\')">Yes, delete</button> '
+            + '<button class="cd-no" onclick="window.cdCancelConfirm()">Cancel</button></span></div>';
+        }
+      }
+
+      return '<div class="cd-card" data-id="' + t.id + '" style="--accent:' + accent.solid + ';--accent-soft:' + accent.soft + '">'
+        + '<div class="cd-card-top">'
+        +   '<div><div class="cd-card-title">' + esc(t.title) + '</div>'
+        +   (t.note ? '<div class="cd-card-note">' + esc(t.note) + '</div>' : '')
+        +   '</div>'
+        +   '<div class="cd-kebab-wrap">'
+        +     '<button class="cd-kebab" onclick="window.cdToggleMenu(\'' + t.id + '\', event)">&#8942;</button>'
+        +     '<div class="cd-menu' + (_openMenuId === t.id ? ' open' : '') + '" id="cd-menu-' + t.id + '">'
+        +       '<button onclick="window.cdOpenEdit(\'' + t.id + '\')">Edit</button>'
+        +       '<button onclick="window.cdAskReset(\'' + t.id + '\')">Reset</button>'
+        +       '<button class="cd-danger" onclick="window.cdAskDelete(\'' + t.id + '\')">Delete</button>'
+        +     '</div>'
+        +   '</div>'
+        + '</div>'
+        + '<div class="cd-ring-wrap">'
+        +   '<svg class="cd-ring" viewBox="0 0 148 148">'
+        +     '<circle class="cd-ring-track" cx="74" cy="74" r="' + R + '"></circle>'
+        +     '<circle class="cd-ring-progress" id="cd-ring-' + t.id + '" cx="74" cy="74" r="' + R + '" stroke-dasharray="' + C + '" stroke-dashoffset="' + dashoffset + '"></circle>'
+        +   '</svg>'
+        +   '<div class="cd-ring-center">'
+        +     '<div class="cd-days" id="cd-days-' + t.id + '">' + parts.days + '</div>'
+        +     '<div class="cd-days-label">' + (parts.days === 1 ? 'day' : 'days') + '</div>'
+        +   '</div>'
+        + '</div>'
+        + '<div class="cd-clock" id="cd-clock-' + t.id + '">' + pad2(parts.hours) + ':' + pad2(parts.mins) + ':' + pad2(parts.secs) + '</div>'
+        + '<div class="cd-milestones">' + milestonesHtml + '</div>'
+        + '<div class="cd-meta"><span>Since ' + startedLabel + '</span><span>Best: ' + bestDays + 'd</span></div>'
+        + confirmHtml
+        + '</div>';
+    }
+
+    // ── LIVE TICK ────────────────────────────────────────────────────────────
+    function tick() {
+      var needsFullRender = false;
+      trackers.forEach(function (t) {
+        var elapsed = Date.now() - t.startedAt;
+        var parts = elapsedParts(elapsed);
+        var daysEl = document.getElementById('cd-days-' + t.id);
+        var clockEl = document.getElementById('cd-clock-' + t.id);
+        var ringEl = document.getElementById('cd-ring-' + t.id);
+        if (!daysEl || !clockEl || !ringEl) { needsFullRender = true; return; }
+        if (daysEl.textContent != parts.days) { render(); needsFullRender = true; return; }
+        clockEl.textContent = pad2(parts.hours) + ':' + pad2(parts.mins) + ':' + pad2(parts.secs);
+        var R = 65, C = 2 * Math.PI * R;
+        ringEl.setAttribute('stroke-dashoffset', C * (1 - ringProgress(elapsed)));
+      });
+      if (!needsFullRender) renderStats();
+    }
+
+    // ── MENU ─────────────────────────────────────────────────────────────────
+    window.cdToggleMenu = function (id, ev) {
+      if (ev) ev.stopPropagation();
+      _openMenuId = (_openMenuId === id) ? null : id;
+      renderGrid();
+    };
+    document.addEventListener('click', function () {
+      if (_openMenuId) { _openMenuId = null; renderGrid(); }
+    });
+
+    // ── CONFIRM (reset / delete) ────────────────────────────────────────────
+    window.cdAskReset = function (id) { _openMenuId = null; _confirm = { id: id, action: 'reset' }; renderGrid(); };
+    window.cdAskDelete = function (id) { _openMenuId = null; _confirm = { id: id, action: 'delete' }; renderGrid(); };
+    window.cdCancelConfirm = function () { _confirm = { id: null, action: null }; renderGrid(); };
+
+    window.cdConfirmReset = function (id) {
+      var t = trackers.find(function (x) { return x.id === id; });
+      if (t) {
+        var elapsed = Date.now() - t.startedAt;
+        t.bestMs = Math.max(t.bestMs || 0, elapsed);
+        t.startedAt = Date.now();
+      }
+      _confirm = { id: null, action: null };
+      save(); render();
+    };
+    window.cdConfirmDelete = function (id) {
+      trackers = trackers.filter(function (x) { return x.id !== id; });
+      _confirm = { id: null, action: null };
+      save(); render();
+    };
+
+    // ── MODAL ────────────────────────────────────────────────────────────────
+    function buildColorRow() {
+      var row = document.getElementById('cd-color-row');
+      row.innerHTML = COLOR_KEYS.map(function (k) {
+        return '<button type="button" class="color-swatch' + (k === _selectedColor ? ' selected' : '') + '" '
+          + 'style="background:' + ACCENTS[k].solid + '" data-color="' + k + '" onclick="window.cdPickColor(\'' + k + '\')"></button>';
+      }).join('');
+    }
+    window.cdPickColor = function (k) { _selectedColor = k; buildColorRow(); };
+
+    window.cdOpenAdd = function () {
+      _editingId = null;
+      _selectedColor = COLOR_KEYS[trackers.length % COLOR_KEYS.length];
+      document.getElementById('modal-title').textContent = 'New Tracker';
+      document.getElementById('cd-f-title').value = '';
+      document.getElementById('cd-f-note').value = '';
+      document.getElementById('cd-f-started').value = nowLocalInputValue();
+      buildColorRow();
+      document.getElementById('modal-overlay').classList.add('open');
+      setTimeout(function () { document.getElementById('cd-f-title').focus(); }, 60);
+    };
+
+    window.cdOpenEdit = function (id) {
+      _openMenuId = null;
+      var t = trackers.find(function (x) { return x.id === id; });
+      if (!t) return;
+      _editingId = id;
+      _selectedColor = t.color || 'emerald';
+      document.getElementById('modal-title').textContent = 'Edit Tracker';
+      document.getElementById('cd-f-title').value = t.title;
+      document.getElementById('cd-f-note').value = t.note || '';
+      var d = new Date(t.startedAt);
+      d.setMinutes(d.getMinutes() - d.getTimezoneOffset());
+      document.getElementById('cd-f-started').value = d.toISOString().slice(0, 16);
+      buildColorRow();
+      document.getElementById('modal-overlay').classList.add('open');
+    };
+
+    window.cdCloseModal = function () {
+      document.getElementById('modal-overlay').classList.remove('open');
+    };
+
+    window.cdSetNow = function () {
+      document.getElementById('cd-f-started').value = nowLocalInputValue();
+    };
+
+    window.cdSave = function () {
+      var title = document.getElementById('cd-f-title').value.trim();
+      if (!title) { document.getElementById('cd-f-title').focus(); return; }
+      var note = document.getElementById('cd-f-note').value.trim();
+      var startedVal = document.getElementById('cd-f-started').value;
+      var startedAt = startedVal ? new Date(startedVal).getTime() : Date.now();
+      if (isNaN(startedAt)) startedAt = Date.now();
+
+      if (_editingId) {
+        var t = trackers.find(function (x) { return x.id === _editingId; });
+        if (t) { t.title = title; t.note = note; t.startedAt = startedAt; t.color = _selectedColor; }
+      } else {
+        trackers.push({
+          id: uid(), title: title, note: note, color: _selectedColor,
+          startedAt: startedAt, bestMs: 0, createdAt: Date.now()
+        });
+      }
+      save();
+      window.cdCloseModal();
+      render();
+    };
+
+    // ── SORT ─────────────────────────────────────────────────────────────────
+    window.cdSetSort = function (v) { _sort = v; renderGrid(); };
+
+    // ── INIT ─────────────────────────────────────────────────────────────────
+    load();
+    render();
+    setInterval(tick, 1000);
+
+    document.getElementById('js-date').textContent =
+      new Date().toLocaleDateString('en-GB', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+  })();
+  </script>
+  <script src="world-news-data.js?v=202607170502"></script>
+  <script src="ticker.js?v=202607170502"></script>
+  <script src="sync.js?v=202607170502"></script>
+</body>
+</html>
