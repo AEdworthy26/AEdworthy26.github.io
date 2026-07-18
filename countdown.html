@@ -96,10 +96,33 @@
 
     /* ── TOOLBAR ── */
     .cd-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 1.4rem; flex-wrap: wrap; }
-    .cd-sort { display: flex; align-items: center; gap: .5rem; font-size: .78rem; color: var(--muted); }
-    .cd-sort select { border: 1px solid var(--border); background: var(--card); border-radius: 8px; padding: .4rem .6rem; font-size: .78rem; color: var(--ink); }
     .btn-new { background: var(--ink); color: #fff; border: none; border-radius: 9px; padding: .65rem 1.2rem; font-size: .8rem; font-weight: 700; letter-spacing: .03em; box-shadow: var(--shadow-sm); transition: transform .12s, box-shadow .12s; }
     .btn-new:hover { transform: translateY(-1px); box-shadow: var(--shadow-md); text-decoration: none; }
+
+    /* ── SORT DROPDOWN ── */
+    .cd-sort-dd { position: relative; }
+    .cd-sort-trigger {
+      display: flex; align-items: center; gap: .55rem; background: var(--card); border: 1px solid var(--border);
+      border-radius: 10px; padding: .55rem .9rem; font-size: .78rem; color: var(--muted); box-shadow: var(--shadow-sm);
+      transition: border-color .15s, box-shadow .15s, transform .1s;
+    }
+    .cd-sort-trigger:hover { border-color: var(--ink); box-shadow: var(--shadow-md); }
+    .cd-sort-trigger strong { color: var(--ink); font-weight: 700; }
+    .cd-sort-caret { font-size: .6rem; color: var(--light); transition: transform .15s; line-height: 1; }
+    .cd-sort-dd.open .cd-sort-trigger .cd-sort-caret { transform: rotate(180deg); }
+    .cd-sort-menu {
+      position: absolute; top: calc(100% + .45rem); left: 0; min-width: 180px; background: var(--card);
+      border: 1px solid var(--border); border-radius: 12px; box-shadow: var(--shadow-md); padding: .4rem; z-index: 50;
+      opacity: 0; transform: translateY(-6px) scale(.98); pointer-events: none; transition: opacity .15s ease, transform .15s ease;
+    }
+    .cd-sort-dd.open .cd-sort-menu { opacity: 1; transform: none; pointer-events: auto; }
+    .cd-sort-menu button {
+      display: flex; align-items: center; justify-content: space-between; width: 100%; text-align: left; background: none;
+      border: none; border-radius: 8px; padding: .5rem .7rem; font-size: .78rem; color: var(--ink); transition: background .12s;
+    }
+    .cd-sort-menu button:hover { background: var(--subtle); }
+    .cd-sort-menu button.active { font-weight: 700; }
+    .cd-sort-menu button.active::after { content: '✓'; color: #34d399; font-weight: 700; margin-left: .5rem; }
 
     /* ── GRID ── */
     .cd-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 1.1rem; }
@@ -119,13 +142,13 @@
       background: radial-gradient(circle at 50% -10%, var(--accent-soft), transparent 60%);
     }
 
-    .cd-card-top { display: flex; align-items: flex-start; justify-content: space-between; width: 100%; gap: .5rem; z-index: 1; }
+    .cd-card-top { display: flex; align-items: flex-start; justify-content: space-between; width: 100%; gap: .5rem; position: relative; z-index: 2; }
     .cd-card-title { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 1.02rem; color: #fff; line-height: 1.25; }
     .cd-card-note { font-size: .74rem; color: rgba(255,255,255,.5); margin-top: .15rem; line-height: 1.35; }
-    .cd-kebab-wrap { position: relative; flex-shrink: 0; }
+    .cd-kebab-wrap { position: relative; flex-shrink: 0; z-index: 30; }
     .cd-kebab { background: rgba(255,255,255,.06); border: none; color: rgba(255,255,255,.7); width: 1.7rem; height: 1.7rem; border-radius: 7px; font-size: .95rem; line-height: 1; transition: background .15s, color .15s; }
     .cd-kebab:hover { background: rgba(255,255,255,.14); color: #fff; }
-    .cd-menu { position: absolute; top: 115%; right: 0; background: #23242c; border-radius: 9px; min-width: 130px; box-shadow: 0 10px 26px rgba(0,0,0,.45); overflow: hidden; display: none; z-index: 20; border: 1px solid rgba(255,255,255,.08); }
+    .cd-menu { position: absolute; top: 115%; right: 0; background: #23242c; border-radius: 9px; min-width: 130px; box-shadow: 0 10px 26px rgba(0,0,0,.45); overflow: hidden; display: none; z-index: 40; border: 1px solid rgba(255,255,255,.08); }
     .cd-menu.open { display: block; }
     .cd-menu button { display: block; width: 100%; text-align: left; background: none; border: none; color: rgba(255,255,255,.85); font-size: .76rem; font-weight: 500; letter-spacing: .02em; padding: .55rem .85rem; transition: background .12s; }
     .cd-menu button:hover { background: rgba(255,255,255,.08); }
@@ -138,6 +161,7 @@
     .cd-ring-center { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0; }
     .cd-days { font-family: 'Playfair Display', serif; font-weight: 900; font-size: 2.5rem; color: #fff; line-height: 1; font-variant-numeric: tabular-nums; }
     .cd-days-label { font-size: .64rem; letter-spacing: .16em; text-transform: uppercase; color: rgba(255,255,255,.5); margin-top: .2rem; }
+    .cd-days-years { font-size: .6rem; color: rgba(255,255,255,.4); margin-top: .2rem; letter-spacing: .02em; }
 
     .cd-clock { font-family: 'Inter', sans-serif; font-weight: 600; font-size: .92rem; letter-spacing: .06em; color: var(--accent); font-variant-numeric: tabular-nums; z-index: 1; }
 
@@ -161,12 +185,12 @@
     .modal-overlay.open { display: flex; animation: fadeIn .18s ease; }
     @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
     @keyframes slideUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
-    .modal-card { background: #1a1b22; border-radius: 18px; box-shadow: 0 24px 64px rgba(0,0,0,.4); width: 100%; max-width: 420px; overflow: hidden; animation: slideUp .22s ease both; border: 1px solid rgba(255,255,255,.08); }
-    .modal-header { padding: 1.1rem 1.3rem; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,.08); }
+    .modal-card { background: #1a1b22; border-radius: 18px; box-shadow: 0 24px 64px rgba(0,0,0,.4); width: 100%; max-width: 420px; overflow: hidden; animation: slideUp .22s ease both; border: 1px solid rgba(255,255,255,.08); max-height: 90vh; display: flex; flex-direction: column; }
+    .modal-header { padding: 1.1rem 1.3rem; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,.08); flex-shrink: 0; }
     .modal-title { font-family: 'Inter', sans-serif; font-weight: 700; font-size: .95rem; color: #fff; letter-spacing: .02em; }
     .modal-close { background: none; border: none; font-size: 1.1rem; color: rgba(255,255,255,.55); line-height: 1; padding: .2rem .4rem; border-radius: 5px; }
     .modal-close:hover { color: #fff; background: rgba(255,255,255,.1); }
-    .modal-body { padding: 1.2rem 1.3rem; display: flex; flex-direction: column; gap: 1rem; }
+    .modal-body { padding: 1.2rem 1.3rem; display: flex; flex-direction: column; gap: 1rem; overflow-y: auto; }
     .form-field { display: flex; flex-direction: column; gap: .35rem; }
     .form-field label { font-size: .68rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: rgba(255,255,255,.5); }
     .form-field input, .form-field textarea {
@@ -175,19 +199,45 @@
     }
     .form-field input::placeholder, .form-field textarea::placeholder { color: rgba(255,255,255,.35); }
     .form-field input:focus, .form-field textarea:focus { outline: none; border-color: var(--f-accent, #38bdf8); }
-    .started-row { display: flex; gap: .5rem; align-items: center; }
-    .started-row input[type="datetime-local"] { flex: 1; color-scheme: dark; }
-    .btn-now { background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.12); color: rgba(255,255,255,.85); border-radius: 8px; padding: .55rem .7rem; font-size: .72rem; font-weight: 600; white-space: nowrap; }
-    .btn-now:hover { background: rgba(255,255,255,.15); }
     .color-row { display: flex; gap: .55rem; }
     .color-swatch { width: 1.9rem; height: 1.9rem; border-radius: 50%; border: 2px solid transparent; cursor: pointer; transition: transform .12s, border-color .12s; }
     .color-swatch:hover { transform: scale(1.08); }
     .color-swatch.selected { border-color: #fff; }
-    .modal-footer { padding: 1rem 1.3rem 1.3rem; display: flex; gap: .6rem; justify-content: flex-end; }
+    .modal-footer { padding: 1rem 1.3rem 1.3rem; display: flex; gap: .6rem; justify-content: flex-end; flex-shrink: 0; }
     .btn-cancel { background: rgba(255,255,255,.08); color: rgba(255,255,255,.85); border: none; border-radius: 9px; padding: .6rem 1.1rem; font-size: .8rem; font-weight: 600; }
     .btn-cancel:hover { background: rgba(255,255,255,.15); }
     .btn-save { background: #fff; color: #14151a; border: none; border-radius: 9px; padding: .6rem 1.2rem; font-size: .8rem; font-weight: 700; }
     .btn-save:hover { opacity: .9; }
+
+    /* ── CUSTOM DATE/TIME PICKER ── */
+    .cd-date-trigger {
+      display: flex; align-items: center; justify-content: space-between; width: 100%;
+      background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.12); border-radius: 9px;
+      padding: .6rem .7rem; font-size: .85rem; color: #fff; text-align: left; transition: border-color .15s;
+    }
+    .cd-date-trigger:hover { border-color: rgba(255,255,255,.28); }
+    .cd-date-trigger .cd-sort-caret { color: rgba(255,255,255,.5); }
+    .cd-cal-panel { display: none; margin-top: .6rem; background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.1); border-radius: 12px; padding: .8rem; }
+    .cd-cal-panel.open { display: block; animation: fadeIn .15s ease; }
+    .cd-cal-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: .6rem; }
+    .cd-cal-nav { background: rgba(255,255,255,.08); border: none; color: #fff; width: 1.8rem; height: 1.8rem; border-radius: 7px; font-size: .9rem; line-height: 1; }
+    .cd-cal-nav:hover { background: rgba(255,255,255,.16); }
+    .cd-cal-month { font-size: .8rem; font-weight: 700; color: #fff; }
+    .cd-cal-weekdays { display: grid; grid-template-columns: repeat(7, 1fr); text-align: center; font-size: .6rem; letter-spacing: .05em; text-transform: uppercase; color: rgba(255,255,255,.4); margin-bottom: .3rem; }
+    .cd-cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: .15rem; }
+    .cd-cal-day { aspect-ratio: 1; display: flex; align-items: center; justify-content: center; border-radius: 8px; background: none; border: none; font-size: .76rem; color: rgba(255,255,255,.8); transition: background .12s; }
+    .cd-cal-day:hover { background: rgba(255,255,255,.1); }
+    .cd-cal-day.other-month { color: rgba(255,255,255,.22); }
+    .cd-cal-day.today { box-shadow: inset 0 0 0 1px rgba(255,255,255,.35); }
+    .cd-cal-day.selected { background: var(--f-accent, #38bdf8); color: #14151a; font-weight: 700; }
+    .cd-cal-footer { display: flex; align-items: center; justify-content: space-between; gap: .5rem; margin-top: .7rem; padding-top: .7rem; border-top: 1px solid rgba(255,255,255,.08); }
+    .cd-cal-time { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12); border-radius: 8px; padding: .4rem .5rem; font-size: .78rem; color: #fff; color-scheme: dark; }
+    .cd-cal-footer-btns { display: flex; gap: .4rem; }
+    .cd-cal-footer-btns button { border: none; border-radius: 7px; padding: .4rem .75rem; font-size: .72rem; font-weight: 600; }
+    .cd-cal-now-btn { background: rgba(255,255,255,.08); color: rgba(255,255,255,.85); }
+    .cd-cal-now-btn:hover { background: rgba(255,255,255,.16); }
+    .cd-cal-done-btn { background: #fff; color: #14151a; }
+    .cd-cal-done-btn:hover { opacity: .9; }
   </style>
 </head>
 <body>
@@ -302,14 +352,12 @@
     </div>
 
     <div class="cd-toolbar">
-      <div class="cd-sort">
-        <span>Sort</span>
-        <select id="cd-sort-select" onchange="window.cdSetSort(this.value)">
-          <option value="streak">Longest streak</option>
-          <option value="newest">Newest first</option>
-          <option value="oldest">Oldest first</option>
-          <option value="az">A–Z</option>
-        </select>
+      <div class="cd-sort-dd" id="cd-sort-dd">
+        <button type="button" class="cd-sort-trigger" onclick="window.cdToggleSortMenu(event)">
+          <span>Sort: <strong id="cd-sort-current">Longest streak</strong></span>
+          <span class="cd-sort-caret">▾</span>
+        </button>
+        <div class="cd-sort-menu" id="cd-sort-menu" onclick="event.stopPropagation()"></div>
       </div>
       <button class="btn-new" onclick="window.cdOpenAdd()">+ New Tracker</button>
     </div>
@@ -336,11 +384,12 @@
           <input type="text" id="cd-f-note" placeholder="Why you're doing this" maxlength="140">
         </div>
         <div class="form-field">
-          <label for="cd-f-started">Started</label>
-          <div class="started-row">
-            <input type="datetime-local" id="cd-f-started">
-            <button type="button" class="btn-now" onclick="window.cdSetNow()">Right now</button>
-          </div>
+          <label>Started</label>
+          <button type="button" class="cd-date-trigger" id="cd-date-trigger" onclick="window.cdToggleCal(event)">
+            <span id="cd-date-trigger-label">Right now</span>
+            <span class="cd-sort-caret">▾</span>
+          </button>
+          <div class="cd-cal-panel" id="cd-cal-panel" onclick="event.stopPropagation()"></div>
         </div>
         <div class="form-field">
           <label>Colour</label>
@@ -365,6 +414,11 @@
     var _confirm = { id: null, action: null };
     var _selectedColor = 'emerald';
     var _openMenuId = null;
+    var _sortMenuOpen = false;
+    var _pickerDate = new Date();
+    var _calViewYear = _pickerDate.getFullYear();
+    var _calViewMonth = _pickerDate.getMonth();
+    var _calOpen = false;
 
     var ACCENTS = {
       emerald: { solid: '#34d399', soft: 'rgba(52,211,153,0.20)' },
@@ -375,19 +429,23 @@
       slate:   { solid: '#94a3b8', soft: 'rgba(148,163,184,0.20)' }
     };
     var COLOR_KEYS = Object.keys(ACCENTS);
-    var MILESTONES = [7, 30, 90, 365];
+    var MILESTONE_DEFS = [
+      { days: 7, label: '7d' },
+      { days: 30, label: '30d' },
+      { days: 90, label: '90d' },
+      { days: 365, label: '1y' },
+      { days: 730, label: '2y' }
+    ];
     var ALL_MILESTONES = [1, 3, 7, 14, 21, 30, 45, 60, 90, 120, 180, 270, 365, 500, 730, 1000, 1460, 1825, 2555, 3650];
+    var SORT_LABELS = { streak: 'Longest streak', newest: 'Newest first', oldest: 'Oldest first', az: 'A–Z' };
+    var WEEKDAY_LABELS = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
+    var MONTH_LABELS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
     // ── HELPERS ──────────────────────────────────────────────────────────────
     function uid() { return Date.now().toString(36) + Math.random().toString(36).slice(2, 6); }
     function esc(s) { return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
     function pad2(n) { return n < 10 ? '0' + n : '' + n; }
-
-    function nowLocalInputValue() {
-      var d = new Date();
-      d.setMinutes(d.getMinutes() - d.getTimezoneOffset());
-      return d.toISOString().slice(0, 16);
-    }
+    function sameDay(a, b) { return a.getFullYear() === b.getFullYear() && a.getMonth() === b.getMonth() && a.getDate() === b.getDate(); }
 
     function elapsedParts(ms) {
       var totalSec = Math.max(0, Math.floor(ms / 1000));
@@ -397,6 +455,16 @@
         mins: Math.floor((totalSec % 3600) / 60),
         secs: totalSec % 60
       };
+    }
+
+    function yearsLabel(days) {
+      if (days < 365) return '';
+      var years = Math.floor(days / 365);
+      var remDays = days - years * 365;
+      var months = Math.floor(remDays / 30);
+      var out = years + (years === 1 ? ' yr' : ' yrs');
+      if (months > 0) out += ' ' + months + (months === 1 ? ' mo' : ' mos');
+      return out;
     }
 
     function prevMilestone(days) {
@@ -442,6 +510,28 @@
       else arr.sort(function (a, b) { return a.startedAt - b.startedAt; }); // streak: oldest startedAt = longest running
       return arr;
     }
+
+    function buildSortMenu() {
+      var menu = document.getElementById('cd-sort-menu');
+      menu.innerHTML = Object.keys(SORT_LABELS).map(function (k) {
+        return '<button type="button" class="' + (k === _sort ? 'active' : '') + '" onclick="window.cdSetSort(\'' + k + '\')">' + SORT_LABELS[k] + '</button>';
+      }).join('');
+      document.getElementById('cd-sort-current').textContent = SORT_LABELS[_sort];
+    }
+
+    window.cdToggleSortMenu = function (ev) {
+      if (ev) ev.stopPropagation();
+      _sortMenuOpen = !_sortMenuOpen;
+      document.getElementById('cd-sort-dd').classList[_sortMenuOpen ? 'add' : 'remove']('open');
+    };
+
+    window.cdSetSort = function (v) {
+      _sort = v;
+      _sortMenuOpen = false;
+      document.getElementById('cd-sort-dd').classList.remove('open');
+      buildSortMenu();
+      renderGrid();
+    };
 
     // ── RENDER ───────────────────────────────────────────────────────────────
     function render() {
@@ -503,9 +593,10 @@
       var startedLabel = startedDate.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
       var bestMs = Math.max(t.bestMs || 0, elapsed);
       var bestDays = elapsedParts(bestMs).days;
+      var yrsLabel = yearsLabel(parts.days);
 
-      var milestonesHtml = MILESTONES.map(function (m) {
-        return '<span class="cd-pill' + (parts.days >= m ? ' hit' : '') + '">' + m + 'd</span>';
+      var milestonesHtml = MILESTONE_DEFS.map(function (m) {
+        return '<span class="cd-pill' + (parts.days >= m.days ? ' hit' : '') + '">' + m.label + '</span>';
       }).join('');
 
       var confirmHtml = '';
@@ -543,6 +634,7 @@
         +   '<div class="cd-ring-center">'
         +     '<div class="cd-days" id="cd-days-' + t.id + '">' + parts.days + '</div>'
         +     '<div class="cd-days-label">' + (parts.days === 1 ? 'day' : 'days') + '</div>'
+        +     (yrsLabel ? '<div class="cd-days-years">' + yrsLabel + '</div>' : '')
         +   '</div>'
         + '</div>'
         + '<div class="cd-clock" id="cd-clock-' + t.id + '">' + pad2(parts.hours) + ':' + pad2(parts.mins) + ':' + pad2(parts.secs) + '</div>'
@@ -578,6 +670,8 @@
     };
     document.addEventListener('click', function () {
       if (_openMenuId) { _openMenuId = null; renderGrid(); }
+      if (_sortMenuOpen) { _sortMenuOpen = false; document.getElementById('cd-sort-dd').classList.remove('open'); }
+      if (_calOpen) { _calOpen = false; document.getElementById('cd-cal-panel').classList.remove('open'); }
     });
 
     // ── CONFIRM (reset / delete) ────────────────────────────────────────────
@@ -601,7 +695,7 @@
       save(); render();
     };
 
-    // ── MODAL ────────────────────────────────────────────────────────────────
+    // ── COLOUR PICKER ────────────────────────────────────────────────────────
     function buildColorRow() {
       var row = document.getElementById('cd-color-row');
       row.innerHTML = COLOR_KEYS.map(function (k) {
@@ -611,13 +705,102 @@
     }
     window.cdPickColor = function (k) { _selectedColor = k; buildColorRow(); };
 
+    // ── CUSTOM DATE/TIME PICKER ──────────────────────────────────────────────
+    function fmtTriggerLabel(d) {
+      return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })
+        + ', ' + pad2(d.getHours()) + ':' + pad2(d.getMinutes());
+    }
+
+    function buildCalendarCells(viewYear, viewMonth) {
+      var first = new Date(viewYear, viewMonth, 1);
+      var startWeekday = first.getDay();
+      var cells = [];
+      for (var i = 0; i < 42; i++) cells.push(new Date(viewYear, viewMonth, 1 - startWeekday + i));
+      return cells;
+    }
+
+    function renderCalPanel() {
+      var panel = document.getElementById('cd-cal-panel');
+      var cells = buildCalendarCells(_calViewYear, _calViewMonth);
+      var today = new Date();
+
+      var daysHtml = cells.map(function (d) {
+        var cls = ['cd-cal-day'];
+        if (d.getMonth() !== _calViewMonth) cls.push('other-month');
+        if (sameDay(d, today)) cls.push('today');
+        if (sameDay(d, _pickerDate)) cls.push('selected');
+        return '<button type="button" class="' + cls.join(' ') + '" onclick="window.cdPickDay(' + d.getFullYear() + ',' + d.getMonth() + ',' + d.getDate() + ')">' + d.getDate() + '</button>';
+      }).join('');
+
+      panel.innerHTML =
+        '<div class="cd-cal-header">'
+        + '<button type="button" class="cd-cal-nav" onclick="window.cdCalNav(-1)">&#8249;</button>'
+        + '<span class="cd-cal-month">' + MONTH_LABELS[_calViewMonth] + ' ' + _calViewYear + '</span>'
+        + '<button type="button" class="cd-cal-nav" onclick="window.cdCalNav(1)">&#8250;</button>'
+        + '</div>'
+        + '<div class="cd-cal-weekdays">' + WEEKDAY_LABELS.map(function (w) { return '<span>' + w + '</span>'; }).join('') + '</div>'
+        + '<div class="cd-cal-grid">' + daysHtml + '</div>'
+        + '<div class="cd-cal-footer">'
+        + '<input type="time" class="cd-cal-time" id="cd-cal-time" value="' + pad2(_pickerDate.getHours()) + ':' + pad2(_pickerDate.getMinutes()) + '" onchange="window.cdPickTime(this.value)">'
+        + '<div class="cd-cal-footer-btns">'
+        + '<button type="button" class="cd-cal-now-btn" onclick="window.cdPickNow()">Now</button>'
+        + '<button type="button" class="cd-cal-done-btn" onclick="window.cdCalDone()">Done</button>'
+        + '</div></div>';
+    }
+
+    window.cdToggleCal = function (ev) {
+      if (ev) ev.stopPropagation();
+      _calOpen = !_calOpen;
+      document.getElementById('cd-cal-panel').classList[_calOpen ? 'add' : 'remove']('open');
+      if (_calOpen) {
+        _calViewYear = _pickerDate.getFullYear();
+        _calViewMonth = _pickerDate.getMonth();
+        renderCalPanel();
+      }
+    };
+
+    window.cdCalNav = function (delta) {
+      _calViewMonth += delta;
+      if (_calViewMonth < 0) { _calViewMonth = 11; _calViewYear--; }
+      else if (_calViewMonth > 11) { _calViewMonth = 0; _calViewYear++; }
+      renderCalPanel();
+    };
+
+    window.cdPickDay = function (y, m, d) {
+      _pickerDate = new Date(y, m, d, _pickerDate.getHours(), _pickerDate.getMinutes(), 0, 0);
+      document.getElementById('cd-date-trigger-label').textContent = fmtTriggerLabel(_pickerDate);
+      renderCalPanel();
+    };
+
+    window.cdPickTime = function (val) {
+      var parts = (val || '00:00').split(':');
+      _pickerDate.setHours(parseInt(parts[0], 10) || 0, parseInt(parts[1], 10) || 0, 0, 0);
+      document.getElementById('cd-date-trigger-label').textContent = fmtTriggerLabel(_pickerDate);
+    };
+
+    window.cdPickNow = function () {
+      _pickerDate = new Date();
+      document.getElementById('cd-date-trigger-label').textContent = fmtTriggerLabel(_pickerDate);
+      _calOpen = false;
+      document.getElementById('cd-cal-panel').classList.remove('open');
+    };
+
+    window.cdCalDone = function () {
+      _calOpen = false;
+      document.getElementById('cd-cal-panel').classList.remove('open');
+    };
+
+    // ── MODAL ────────────────────────────────────────────────────────────────
     window.cdOpenAdd = function () {
       _editingId = null;
       _selectedColor = COLOR_KEYS[trackers.length % COLOR_KEYS.length];
       document.getElementById('modal-title').textContent = 'New Tracker';
       document.getElementById('cd-f-title').value = '';
       document.getElementById('cd-f-note').value = '';
-      document.getElementById('cd-f-started').value = nowLocalInputValue();
+      _pickerDate = new Date();
+      _calOpen = false;
+      document.getElementById('cd-cal-panel').classList.remove('open');
+      document.getElementById('cd-date-trigger-label').textContent = fmtTriggerLabel(_pickerDate);
       buildColorRow();
       document.getElementById('modal-overlay').classList.add('open');
       setTimeout(function () { document.getElementById('cd-f-title').focus(); }, 60);
@@ -632,27 +815,25 @@
       document.getElementById('modal-title').textContent = 'Edit Tracker';
       document.getElementById('cd-f-title').value = t.title;
       document.getElementById('cd-f-note').value = t.note || '';
-      var d = new Date(t.startedAt);
-      d.setMinutes(d.getMinutes() - d.getTimezoneOffset());
-      document.getElementById('cd-f-started').value = d.toISOString().slice(0, 16);
+      _pickerDate = new Date(t.startedAt);
+      _calOpen = false;
+      document.getElementById('cd-cal-panel').classList.remove('open');
+      document.getElementById('cd-date-trigger-label').textContent = fmtTriggerLabel(_pickerDate);
       buildColorRow();
       document.getElementById('modal-overlay').classList.add('open');
     };
 
     window.cdCloseModal = function () {
       document.getElementById('modal-overlay').classList.remove('open');
-    };
-
-    window.cdSetNow = function () {
-      document.getElementById('cd-f-started').value = nowLocalInputValue();
+      _calOpen = false;
+      document.getElementById('cd-cal-panel').classList.remove('open');
     };
 
     window.cdSave = function () {
       var title = document.getElementById('cd-f-title').value.trim();
       if (!title) { document.getElementById('cd-f-title').focus(); return; }
       var note = document.getElementById('cd-f-note').value.trim();
-      var startedVal = document.getElementById('cd-f-started').value;
-      var startedAt = startedVal ? new Date(startedVal).getTime() : Date.now();
+      var startedAt = _pickerDate ? _pickerDate.getTime() : Date.now();
       if (isNaN(startedAt)) startedAt = Date.now();
 
       if (_editingId) {
@@ -669,11 +850,9 @@
       render();
     };
 
-    // ── SORT ─────────────────────────────────────────────────────────────────
-    window.cdSetSort = function (v) { _sort = v; renderGrid(); };
-
     // ── INIT ─────────────────────────────────────────────────────────────────
     load();
+    buildSortMenu();
     render();
     setInterval(tick, 1000);
 
