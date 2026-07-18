@@ -589,6 +589,17 @@
     .wl-view-link:hover { text-decoration: underline; }
     .wl-preview-empty { font-size: 0.78rem; color: var(--light); font-style: italic; margin-top: 0.4rem; }
 
+    /* ────────────────── COUNTDOWN PREVIEW ────────────────── */
+    .cd-preview-list { margin-top: 0.6rem; display: flex; flex-direction: column; gap: 0.35rem; }
+    .cd-preview-item { display: flex; align-items: center; gap: 0.5rem; padding: 0.38rem 0.6rem; background: rgba(0,0,0,0.025); border-left: 2.5px solid var(--blue); border-radius: 0 3px 3px 0; }
+    .cd-preview-body { flex: 1; min-width: 0; display: flex; align-items: baseline; justify-content: space-between; gap: 0.5rem; }
+    .cd-preview-title { font-size: 0.78rem; font-weight: 600; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .cd-preview-days { font-size: 0.68rem; color: var(--muted); font-variant-numeric: tabular-nums; flex-shrink: 0; }
+    .cd-preview-more { font-size: 0.68rem; color: #94a3b8; padding: 0.2rem 0.3rem; }
+    .cd-view-link { display: inline-block; margin-top: 0.6rem; font-size: 0.72rem; font-weight: 700; color: var(--blue); letter-spacing: 0.04em; }
+    .cd-view-link:hover { text-decoration: underline; }
+    .cd-preview-empty { font-size: 0.78rem; color: var(--light); font-style: italic; margin-top: 0.4rem; }
+
     /* ────────────────── WORDLE WIDGET ────────────────── */
     .wordle-grid { display: grid; grid-template-rows: repeat(6, 1fr); gap: 5px; margin: 0.8rem auto 0.8rem; max-width: 210px; }
     .wordle-row { display: grid; grid-template-columns: repeat(5, 1fr); gap: 5px; }
@@ -866,6 +877,12 @@
         <div class="stack-item" id="wishlist-preview">
           <span class="section-tag">Wishlist</span>
           <h2><a href="wishlist.html">My Wishlist</a></h2>
+          <div class="lines"><span></span><span></span><span></span></div>
+        </div>
+
+        <div class="stack-item" id="countdown-preview">
+          <span class="section-tag">Countdown</span>
+          <h2><a href="countdown.html">Days Since&hellip;</a></h2>
           <div class="lines"><span></span><span></span><span></span></div>
         </div>
 
@@ -2047,6 +2064,53 @@
         + '<div class="wl-preview-list">' + rows + '</div>'
         + moreHtml
         + '<a href="wishlist.html" class="wl-view-link">Open wishlist \u2192</a>';
+    })();
+
+    // ── Countdown Preview ──
+    (function () {
+      var el = document.getElementById('countdown-preview');
+      if (!el) return;
+
+      function esc(s) { return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+      var ACCENTS = { emerald:'#34d399', sky:'#38bdf8', violet:'#a78bfa', amber:'#fbbf24', rose:'#fb7185', slate:'#94a3b8' };
+
+      var trackers = [];
+      try { trackers = JSON.parse(localStorage.getItem('ph_countdowns_v1') || '[]'); } catch(_) {}
+      if (!Array.isArray(trackers)) trackers = [];
+
+      if (trackers.length === 0) {
+        el.innerHTML = '<span class="section-tag">Countdown</span>'
+          + '<h2><a href="countdown.html">Days Since&hellip;</a></h2>'
+          + '<p class="cd-preview-empty">No trackers yet &mdash; <a href="countdown.html">start one</a>.</p>';
+        return;
+      }
+
+      // Longest-running streak first, same default as the Countdown page itself.
+      var sorted = trackers.slice().sort(function(a,b) { return a.startedAt - b.startedAt; });
+      var show = sorted.slice(0, 3);
+      var more = sorted.length - show.length;
+
+      var rows = show.map(function(t) {
+        var days = Math.max(0, Math.floor((Date.now() - t.startedAt) / 86400000));
+        var accent = ACCENTS[t.color] || ACCENTS.emerald;
+        return '<div class="cd-preview-item" style="border-left-color:' + accent + '">'
+          + '<div class="cd-preview-body">'
+          +   '<div class="cd-preview-title">' + esc(t.title) + '</div>'
+          +   '<div class="cd-preview-days">' + days + (days === 1 ? ' day' : ' days') + '</div>'
+          + '</div>'
+          + '</div>';
+      }).join('');
+
+      var moreHtml = more > 0
+        ? '<div class="cd-preview-more">+' + more + ' more tracker' + (more > 1 ? 's' : '') + '</div>'
+        : '';
+
+      el.innerHTML = '<span class="section-tag">Countdown</span>'
+        + '<h2><a href="countdown.html">Days Since&hellip;</a></h2>'
+        + '<div class="cd-preview-list">' + rows + '</div>'
+        + moreHtml
+        + '<a href="countdown.html" class="cd-view-link">Open countdown \u2192</a>';
     })();
 
     // ── News strip (UK Politics / US Politics / Financial / Tech) ──
