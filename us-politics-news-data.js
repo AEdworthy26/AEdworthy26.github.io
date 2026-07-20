@@ -1,60 +1,60 @@
 // us-politics-news-data.js
-// Auto-updated 2026-07-02 — do not edit manually
+// Auto-updated 2026-07-20 — do not edit manually
 
 var US_POLITICS_NEWS = {
-  date: "2026-07-02",
+  date: "2026-07-20",
   main: {
-    title: "Trump\'s Income Topped $2 Billion in 2025, Boosted by Crypto and Coin Ventures",
+    title: "Federal Agents Were Told FBI Will No Longer Investigate ICE Confrontations",
     category: "Politics",
     content: [
-      "President Donald Trump reported more than $2 billion in income for 2025, according to nearly 1,000 pages of financial disclosure forms released this week. The figure represents a dramatic leap from the $600 million total income he reported in 2024, making it an unprecedented level of presidential earnings in modern American history. Historians and ethics watchdogs say the scale of Trump\'s financial gains while serving as the nation\'s chief executive raises serious and unresolved questions about conflicts of interest.",
-      "A substantial portion of Trump\'s 2025 earnings came from cryptocurrency and digital coin ventures, with crypto earnings alone far outpacing the returns from the traditional real estate and entertainment businesses he spent decades building. According to reporting by the Associated Press, Trump and his family raked in more than a billion dollars through these crypto ventures in a single year. The speed and scale of these digital-asset gains have drawn scrutiny from financial analysts who note that Trump\'s administration has simultaneously pursued a notably crypto-friendly regulatory posture.",
-      "Beyond cryptocurrency, Trump\'s disclosed income included earnings from a diverse and sometimes unusual array of ventures — including Bible sales, licensing deals, and perfume lines — which have been detailed in official documents. These disclosures paint a picture of a sitting president whose personal financial empire has expanded significantly during his time in office. Ethics experts note that the breadth and novelty of these income streams make traditional conflict-of-interest analysis unusually complex.",
-      "The BBC noted that Trump\'s $2.2 billion income last year is unmatched by any president in recorded history, contrasting sharply with the modest pensions and limited post-office earnings that characterized previous commanders-in-chief such as Harry Truman. Historians have described the situation as a fundamental blurring of the line between the public duties of the presidency and private financial enrichment. Critics argue that the sheer volume of income streams creates innumerable opportunities for policy decisions to be influenced — consciously or otherwise — by personal financial interest.",
-      "The disclosures place Congress and federal ethics bodies in a difficult political position, as oversight mechanisms designed for more conventional presidential finances strain to address arrangements of this scale and complexity. Democrats have called for greater scrutiny, while Republicans have largely defended the disclosures as evidence of Trump\'s business acumen. The debate over how to handle a president with an income in the billions is likely to intensify as the 2026 midterm elections approach, with financial accountability emerging as a defining campaign issue for multiple candidates."
+      "In a significant shift in federal law enforcement policy, guidance was reportedly shared with FBI agents around the country indicating that the bureau would no longer investigate confrontations involving Immigration and Customs Enforcement officers. The directive, which circulated in recent days, has raised alarm among civil liberties advocates and some current and former federal officials who see it as a departure from longstanding norms of accountability within law enforcement. The move would effectively remove a key oversight mechanism that had historically allowed for independent review when ICE agents were involved in shootings or other serious incidents.",
+      "Senior officials within the administration have denied that any formal policy change is in the works, even as the guidance appears to have reached field offices across the nation. The contradiction between what agents on the ground reportedly received and what leadership is publicly stating has created confusion and concern within federal law enforcement circles. Such a discrepancy raises questions about how policy decisions are being communicated — and potentially implemented — within the executive branch\'s sprawling national security apparatus.",
+      "The reported change comes at a time when ICE has been dramatically expanding its operations under the Trump administration, conducting large-scale immigration enforcement actions in cities and towns across the United States. With higher operational tempo comes a statistically greater likelihood of confrontations, making independent oversight of those incidents all the more consequential. Critics argue that removing FBI investigative authority over ICE confrontations would create a troubling blind spot in accountability precisely when it is needed most.",
+      "Historically, the FBI has played a role in investigating potential civil rights violations and use-of-force incidents involving other federal agencies, a function that has been considered a cornerstone of inter-agency checks and balances. Legal experts have noted that if the change is formalized, it could have broad implications for how accountability is structured across all federal law enforcement agencies, not just ICE. The precedent of one federal agency shielding another from independent scrutiny would represent a notable erosion of internal governmental checks.",
+      "Congress has not yet formally responded to the reported policy shift, though it is likely to draw scrutiny from lawmakers on oversight committees who have authority to demand explanations from both the FBI and the Department of Homeland Security. The story underscores broader tensions in Washington over the boundaries of executive power, immigration enforcement, and the independence of federal investigative bodies. As the administration continues to push aggressive immigration policies, the question of who watches the watchmen inside the federal government has never been more politically charged."
     ],
-    image: "https://images.unsplash.com/photo-1550531996-ff3dcede9477?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUcnVtcCU1Q3xlbnwwfDB8fHwxNzgyOTY4NTk3fDA&ixlib=rb-4.1.0&q=80&w=1080",
-    source: "The Washington Post",
-    sourceUrl: "https://www.washingtonpost.com/politics/2026/06/30/trump-earned-over-1-billion-cryptocurrency-coin-ventures-last-year/"
+    image: "https://static01.nyt.com/images/2026/07/17/multimedia/17dc-fbi-top-cqhk/17dc-fbi-top-cqhk-mediumSquareAt3X.jpg",
+    source: "The New York Times",
+    sourceUrl: "https://www.nytimes.com/2026/07/19/us/politics/fbi-ice-agents-investigations-shootings.html"
   },
   secondary: [
     {
       id: "us1",
-      title: "Democratic Socialists on a Winning Streak, Reshaping the Democratic Party",
-      summary: "A series of democratic socialist primary victories — in New York, Philadelphia, Denver, and elsewhere — is forcing the Democratic Party to grapple with a significant leftward shift in its base.",
+      title: "Trump Says Election System Is Broken — But Swing Voters Are Skeptical",
+      summary: "President Trump delivered a primetime speech claiming the U.S. election system is broken, but swing state voters are responding with uncertainty and skepticism.",
       body: [
-        "Over recent weeks, democratic socialist candidates have notched a string of notable primary wins in competitive races, including victories in New York, Philadelphia, and most recently Denver, where a democratic socialist won the Democratic primary for a U.S. House seat. The trend suggests growing grassroots energy on the left wing of the Democratic Party, particularly in urban districts where voters appear to be demanding more transformative economic and social policies.",
-        "These results come at a moment when the broader Democratic Party is already wrestling with its identity and direction following recent electoral setbacks. The winning streak raises questions about whether the party\'s establishment will embrace, accommodate, or push back against the socialist bloc — a tension that is likely to define internal Democratic politics heading into the 2026 midterm elections."
+        "Following President Trump\'s primetime address in which he declared the American election system fundamentally broken, NPR canvassed swing state voters to gauge their reaction to his sweeping claims. Many of those voters expressed confusion or ambivalence, struggling to reconcile Trump\'s assertions with their own experiences at the ballot box.",
+        "The speech has reignited a long-running national debate about election integrity that has defined much of Trump\'s political identity since 2020. Georgia Secretary of State officials, including Gabriel Sterling, have pushed back on the claims, defending the security and reliability of their state\'s election infrastructure in separate interviews."
       ],
-      image: "https://static01.nyt.com/images/2026/07/01/multimedia/01pol-scotus-trans-midterms-kqvt/01pol-scotus-trans-midterms-kqvt-mediumSquareAt3X.jpg",
+      image: "https://images.unsplash.com/photo-1782998307726-f93ec14eda24?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUcnVtcCUyMFNheXMlMjBFbGVjdGlvbiUyMFN5c3RlbSUyMElzJTIwQnJva2VuJTIwJUUyJTgwJTk0JTIwQnV0JTIwU3dpbmclMjBWb3RlcnMlMjBBcmUlMjBTa2VwdGljYWx8ZW58MHwwfHx8MTc4NDUyMzc4M3ww&ixlib=rb-4.1.0&q=80&w=1080",
       source: "NPR",
-      url: "https://www.npr.org/2026/07/01/nx-s1-5872747/democratic-socialists-are-on-a-winning-streak-heres-what-that-means-for-democrats",
+      url: "https://www.npr.org/2026/07/19/nx-s1-5898445/trump-said-the-election-system-is-broken-what-do-swing-voters-make-of-the-claim",
       category: "Politics"
     },
     {
       id: "us2",
-      title: "Trump Calls on Congress to End Birthright Citizenship After Supreme Court Defeat",
-      summary: "Following the Supreme Court\'s ruling upholding birthright citizenship on constitutional grounds, President Trump is urging Congress to take legislative action to eliminate the practice.",
+      title: "$600,000 for a Presidential Pardon? Inside the Booming Clemency Lobbying Industry",
+      summary: "A growing and lucrative lobbying industry has emerged around securing presidential pardons under the second Trump administration, with fees reportedly reaching into the hundreds of thousands of dollars.",
       body: [
-        "The Supreme Court closed out its term by siding with challengers and upholding birthright citizenship on constitutional grounds, handing President Trump a significant legal defeat on one of his signature immigration priorities. Trump quickly responded by calling on Congress to act, framing the court\'s ruling as an obstacle that only the legislative branch can now overcome.",
-        "The ruling presents a notable political challenge for the White House, as passing a constitutional amendment or new legislation to curtail birthright citizenship would require supermajority support that currently does not exist in Congress. Nevertheless, Trump\'s public call to action is expected to energize his base and keep immigration policy at the forefront of the political debate as midterm campaigns accelerate."
+        "NOTUS reporter Jasmine Wright has documented a surging industry of clemency lobbyists operating in Washington, with some charging clients as much as $600,000 to navigate the process of obtaining a presidential pardon from the Trump White House. The scale and cost of this shadow industry has drawn fresh scrutiny to how the pardon process is being administered and who has access to it.",
+        "Presidential pardons are a constitutionally granted executive power, but the commercialization of access to that power raises serious ethical and legal questions about equity and corruption. Critics argue that a system where wealthy defendants can pay vast sums for professional advocacy creates a two-tiered justice system that undermines the rule of law."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/3d1e/live/3d2797f0-75c8-11f1-9106-bb5823bc9ead.jpg",
-      source: "The Washington Post",
-      url: "https://www.washingtonpost.com/politics/2026/06/30/trump-says-congress-should-act-end-birthright-citizenship/",
+      image: "https://images.unsplash.com/photo-1771736007142-e1348a02f006?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHwlMjQ2MDAlMkMwMDAlMjBmb3IlMjBhJTIwUHJlc2lkZW50aWFsJTIwUGFyZG9uJTNGJTIwSW5zaWRlJTIwdGhlJTIwQm9vbWluZyUyMENsZW1lbmN5JTIwTG9iYnlpbmclMjBJbmR1c3RyeXxlbnwwfDB8fHwxNzg0NTIzNzg0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "NPR",
+      url: "https://www.npr.org/2026/07/19/nx-s1-5896394/600-000-for-a-presidential-pardon-inside-the-growing-industry-of-clemency-lobbying",
       category: "Politics"
     },
     {
       id: "us3",
-      title: "Republicans Push Courts to Reinterpret Federal Ban on Late Voter Roll Purges",
-      summary: "Republican groups are pressing courts to reinterpret a longstanding federal law that prohibits most states from systematically purging voter rolls within 90 days of an election.",
+      title: "Trump Says New Air Force One Will Be Taken Out of Service for Major Upgrades",
+      summary: "President Trump announced that the Qatari-donated plane currently serving as Air Force One will be temporarily taken out of service to be upgraded with enhanced capabilities.",
       body: [
-        "A federal law has long barred most states from conducting systematic voter roll purges in the 90 days before Election Day, a protection designed to prevent eligible voters from being wrongly removed close to an election. Republican-aligned legal groups are now pushing courts to reinterpret this law, arguing that their reading of the statute would allow for more aggressive pre-election roll maintenance.",
-        "Critics and voting rights advocates warn that weakening or reinterpreting this protection could disenfranchise legitimate voters and create confusion at polling places, particularly in communities where voter registration records are more likely to contain clerical errors. With the 2026 midterms approaching, the outcome of these legal challenges could have significant practical consequences for voter participation across multiple battleground states."
+        "President Trump announced that the aircraft donated by Qatar and currently in use as Air Force One will be pulled from service to undergo significant modifications, which he described as getting the plane 'maxed out.' The Qatari-donated Boeing 747 has been under intense scrutiny since it entered presidential service, with national security experts and lawmakers questioning whether it carries adequate defensive systems to protect the president.",
+        "The decision to retrofit the plane rather than retire it signals that the administration intends to continue using the controversial aircraft despite bipartisan concerns about its origins and security readiness. The announcement adds another chapter to the ongoing political debate over the propriety of the United States accepting a luxury aircraft from a foreign government for presidential use."
       ],
-      image: "https://images.unsplash.com/photo-1609464628634-afeabb0093b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxSZXB1YmxpY2FucyUyMFB1c2glMjBDb3VydHMlMjB0byUyMFJlaW50ZXJwcmV0JTIwRmVkZXJhbCUyMEJhbiUyMG9uJTIwTGF0ZSUyMFZvdGVyJTIwUm9sbCUyMFB1cmdlc3xlbnwwfDB8fHwxNzgyOTY4NTk4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "NPR",
-      url: "https://www.npr.org/2026/07/01/nx-s1-5859333/voter-roll-purge-supreme-court",
+      image: "https://static01.nyt.com/images/2026/07/19/multimedia/19DC-Trump-plane-wqkl/19DC-Trump-plane-wqkl-mediumSquareAt3X.jpg",
+      source: "The New York Times",
+      url: "https://www.nytimes.com/2026/07/19/us/politics/trump-air-force-modifications.html",
       category: "Politics"
     }
   ]

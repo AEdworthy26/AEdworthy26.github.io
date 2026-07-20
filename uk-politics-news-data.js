@@ -1,60 +1,60 @@
 // uk-politics-news-data.js
-// Auto-updated 2026-07-02 — do not edit manually
+// Auto-updated 2026-07-20 — do not edit manually
 
 var UK_POLITICS_NEWS = {
-  date: "2026-07-02",
+  date: "2026-07-20",
   main: {
-    title: "Burnham Under Pressure to Rule Out Welfare Cuts to Fill £5bn Defence Budget Black Hole",
+    title: "Burnham to Promise 'More Breathing Room' in First Speech as Prime Minister",
     category: "Politics",
     content: [
-      "Andy Burnham, the prime minister-in-waiting, is facing mounting pressure from Labour MPs to rule out cuts to welfare in order to plug what critics are calling a £5 billion black hole in the government\'s Defence Investment Plan. The controversy has intensified after a defence minister admitted that outgoing Prime Minister Keir Starmer only informed Burnham of the funding shortfall at the last minute, raising serious questions about the transition of power and the financial inheritance Burnham is set to receive. The revelation has drawn sharp criticism from across the political spectrum, with opponents accusing Starmer of leaving his successor with an extraordinarily difficult set of trade-offs from the outset.",
-      "Conservative leader Kemi Badenoch has been quick to exploit the situation, accusing Starmer of leaving a financial 'mess' for Burnham to clean up and urging the Labour leader-in-waiting to publicly condemn the Defence Investment Plan. Badenoch pointed to what she described as a missing £5 billion in the defence funding blueprint, arguing that the numbers simply do not add up and that ordinary people — whether welfare recipients or motorists depending on road infrastructure — will ultimately pay the price. Her attacks have found some traction even within Labour ranks, where several MPs and at least one minister have reportedly expressed fury over plans to redirect funding from road projects in order to meet defence commitments.",
-      "BBC political editor Chris Mason has reflected on the scale of the challenge, noting that Starmer\'s defence plan leaves Burnham confronting a series of 'crunching trade-offs' the moment he takes office. The core dilemma is stark: if the £5 billion gap is real, Burnham must choose between cutting public services such as welfare, finding new tax revenues, scaling back the defence ambitions he will inherit, or some combination of all three. BBC Verify has also investigated the claims, examining whether the alleged shortfall genuinely constitutes a 'black hole' or whether the government\'s insistence that its funding is 'credible' holds water.",
-      "Burnham has sought to project stability in the face of the turmoil, publicly insisting he will stick to the government\'s fiscal rules and will not engage in reckless spending. He has also backed the pension triple lock, signalling that he intends to honour the promises made in Labour\'s 2024 manifesto, even as his own advisers are reported to be deeply uncomfortable with the long-term cost of that commitment. These assurances, while welcomed by some within the party, have done little to quiet the growing chorus of Labour backbenchers demanding explicit guarantees that vulnerable people will not bear the brunt of the defence funding shortfall.",
-      "The episode has cast a long shadow over what was meant to be a relatively smooth handover of power within Labour, and has given the opposition an early opportunity to frame Burnham\'s premiership as one born of financial mismanagement rather than fresh purpose. Angela Rayner has sought to inject some momentum into the transition by launching a pitch for Burnham\'s devolution agenda, while a new poll published in The Guardian suggests that bold 'economic populist' policies — including rent controls and higher wealth taxes — could help Labour fend off Reform UK in key marginal seats. Whether Burnham can resolve the defence funding question while simultaneously projecting a bold and forward-looking domestic agenda is shaping up to be one of the defining tests of his leadership before he has even entered Downing Street."
+      "Andy Burnham is set to become the United Kingdom\'s seventh prime minister in ten years on Monday, following his appointment by King Charles III. In his first speech as Prime Minister, Burnham is expected to promise the British public 'more breathing room', signalling a conscious effort to address the cost of living pressures that have weighed heavily on households across the country. He has acknowledged that he is 'acutely conscious' of the UK\'s extraordinary rate of prime ministerial turnover, a fact that casts a long shadow over any incoming leader\'s ambitions.",
+      "Burnham enters Downing Street as the fifth prime minister in just four years, a sobering statistic that BBC political editor Chris Mason has highlighted as one of the central challenges facing the new Labour leader. The revolving door at Number 10 has eroded public trust in political leadership, and Burnham\'s team is determined he will break that cycle by hitting the ground running. Having built a reputation for stable, delivery-focused governance during his years as Mayor of Greater Manchester, Burnham is expected to lean heavily on that leadership style as he transitions to the national stage.",
+      "One of his first and most symbolically significant policy moves will be to scrap the digital ID scheme championed by his predecessor, Keir Starmer. A spokesperson for the incoming prime minister confirmed that the government would 'put its focus where people need it right now', framing the cancellation as a deliberate reset of priorities. The resources earmarked for the unpopular digital ID plan are to be redirected towards tackling the cost of living, a clear signal of where Burnham intends to focus his early political capital.",
+      "Burnham has also outlined plans that include allowing more North Sea fossil fuel drilling, a policy that has drawn both praise from business interests and scrutiny from environmental campaigners within his own party. His deputy leader has insisted that while Burnham will govern with greater boldness, he remains committed to the broader Labour manifesto. The incoming chancellor, Shabana Mahmood, is expected to be unveiled as part of an afternoon of cabinet appointments, though her history of criticising elements of Rachel Reeves\'s tax policies has already generated some internal tension among Burnham\'s allies on the left.",
+      "Conservative leader Kemi Badenoch wasted little time in setting out her line of attack, describing Burnham as a 'people pleaser' ahead of his formal appointment. The accusation is likely to be a recurring theme from the opposition benches as Burnham attempts to satisfy both the left wing of his party and a broader electorate weary of political instability. Yet with a clear desire to signal change from day one — through both his rhetoric and his early policy decisions — Burnham is betting that voters will reward a leader who speaks plainly about the country\'s challenges and acts decisively to address them.",
     ],
-    image: "https://static.independent.co.uk/2026/07/01/10/39/PA-84593974.jpeg?width=1200&auto=webp&trim=14%2C0%2C282%2C0",
-    source: "The Independent",
-    sourceUrl: "https://www.independent.co.uk/news/uk/politics/andy-burnham-defence-black-hole-welfare-cuts-labour-mps-b3006719.html"
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/f095/live/c05bf310-83a5-11f1-8175-0b71720eeb65.jpg",
+    source: "BBC News",
+    sourceUrl: "https://www.bbc.co.uk/news/articles/cy8m7k98p3no?at_medium=RSS&at_campaign=rss"
   },
   secondary: [
     {
       id: "uk1",
-      title: "Burnham Says 'Nothing Off the Table' Over Rochdale Grooming Gang Leader Deportation",
-      summary: "Andy Burnham has pledged to explore all possible options, including closing a legal loophole, to deport the ringleader of the Rochdale grooming gang upon his release from prison.",
+      title: "Digital ID Plan to Be Scrapped in Burnham\'s First Major Policy Pledge",
+      summary: "Andy Burnham will scrap Keir Starmer\'s digital ID scheme as one of his first acts as Prime Minister, redirecting resources towards the cost of living.",
       body: [
-        "In his first significant intervention as Labour leader-in-waiting, Andy Burnham said he would ask the home and foreign secretaries to review all possible options regarding the case of Shabir Ahmed, the ringleader of the Rochdale grooming gang who is set to be released from jail this week and cannot currently be deported due to a legal loophole. Burnham described Ahmed as 'vile' and made clear that nothing would be 'off the table' in efforts to close the gap in the law that has prevented his removal from the country.",
-        "The intervention marks Burnham\'s first major public statement as the Labour leader-in-waiting and signals that he intends to take a firm stance on issues of justice and public safety from the outset of his leadership. The case has attracted widespread public anger and political pressure across party lines, with the inability to deport Ahmed seen as a glaring failure of the current legal framework around deportation of foreign national offenders."
+        "In a clear signal of a change in direction, Burnham\'s team confirmed the digital ID card scheme — one of the more contentious legacies of the Starmer administration — will be abandoned from the outset of his premiership. A spokesperson said the new government would 'put its focus where people need it right now', with funds reallocated to measures aimed at easing financial pressure on households.",
+        "The scrapping of the digital ID plan has been framed as a 'reset of priorities' and is intended to send an early message that Burnham\'s government is attuned to the everyday concerns of the public rather than technocratic projects. It is among the sharpest early distinctions Burnham is drawing between his own administration and that of his predecessor."
       ],
-      image: "https://images.unsplash.com/photo-1633622248770-ad6b93175a48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxCdXJuaGFtJTIwU2F5cyUyMHxlbnwwfDB8fHwxNzgyOTY4NTQ1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/69d5/live/98b78d40-82df-11f1-ae6b-3189bc758570.jpg",
       source: "BBC News",
-      url: "https://www.bbc.co.uk/news/articles/c0jy53n8q1do?at_medium=RSS&at_campaign=rss",
+      url: "https://www.bbc.co.uk/news/articles/c5y08z25q8eo?at_medium=RSS&at_campaign=rss",
       category: "Politics"
     },
     {
       id: "uk2",
-      title: "File Sent to CPS After Serious Sexual Offence Allegations Against Suspended Labour MP Dan Norris",
-      summary: "The case against suspended Labour MP Dan Norris has been referred to the Crown Prosecution Service for a charging decision following a police investigation into multiple allegations of serious sexual offences.",
+      title: "Farage Admits Fraudster George Cottrell Paid for Filming and Let Him Use London Home",
+      summary: "Nigel Farage has acknowledged that close friend and convicted fraudster George Cottrell provided him with housing and funded social media filming before the last general election.",
       body: [
-        "Sky News understands that Avon and Somerset Police have sent a file to the Crown Prosecution Service after investigating allegations of serious sexual offences against Dan Norris, a suspended Labour MP, with the force having begun its investigation into a man in his 60s in December 2024. The CPS will now consider whether charges should be brought, in what represents a significant escalation of a case that has hung over the Labour Party for months.",
-        "The development adds to a difficult period for Labour as it manages a leadership transition, with the party already grappling with a series of politically charged challenges. The Independent also confirmed that charges are being considered in the investigation, underlining the seriousness with which prosecutors are treating the allegations against the suspended MP."
+        "Reform UK leader Nigel Farage has spoken publicly for the first time about the financial support he received from George Cottrell, admitting that Cottrell allowed him to use one of his London homes and covered the costs of social media filming prior to the 2024 general election. Farage insisted the arrangement was 'totally undeclarable in every single way', pushing back against suggestions that he had acted improperly.",
+        "The admission adds to a growing series of questions about the financial arrangements surrounding the Reform UK leader, with Farage separately facing scrutiny over a reported £5 million gift. His staunch defence — 'What is my sin?' — underlines the pressure he is under, even as he continues to position Reform as an anti-establishment force in British politics."
       ],
-      image: "https://e3.365dm.com/26/02/1920x1080/skynews-dan-norris-mp_7153183.jpg?20260202113838",
-      source: "Sky News",
-      url: "https://news.sky.com/story/file-sent-to-cps-after-sex-offence-allegations-against-suspended-labour-mp-dan-norris-13559570",
+      image: "https://i.guim.co.uk/img/media/1783c02e148513740a53d627a6eb59692d836261/295_146_2769_2216/master/2769.jpg?width=1200&quality=85&auto=format&fit=max&s=faf15622221f59a0e80920c280be01ea",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/politics/2026/jul/19/nigel-farage-admits-george-cottrell-paid-for-filming-and-let-him-use-his-home",
       category: "Politics"
     },
     {
       id: "uk3",
-      title: "Burnham Urged to Adopt Radical Economic Policies to Help Labour Win Next Election",
-      summary: "A new poll suggests that policies such as rent control and higher wealth taxes could help Andy Burnham fend off Reform UK in key marginal seats and retain Labour\'s parliamentary majority.",
+      title: "Shabana Mahmood\'s Tax and Welfare History Sparks Tensions with Burnham Allies",
+      summary: "Shabana Mahmood, expected to be named chancellor, has already caused friction within Burnham\'s team due to her past criticisms of Labour\'s tax policies under Rachel Reeves.",
       body: [
-        "Senior figures advising Andy Burnham are urging him to adopt an 'economic populist' approach to the cost of living crisis, with a detailed opinion poll commissioned by The Guardian indicating that bold policies including rent controls and higher taxes on wealth could prove decisive in holding off the threat from Reform UK in marginal constituencies. The findings suggest that a more radical economic platform, rather than a cautious centrist one, may be the most effective electoral strategy for a Burnham-led Labour government heading into the next general election.",
-        "The pressure to move leftward on economic policy sits in some tension with Burnham\'s public pledge to stick to the government\'s fiscal rules and his inheritance of a contested defence funding plan, illustrating the complex balancing act he faces as he prepares to enter Downing Street. The poll underscores how the political landscape has shifted, with Reform UK now seen as a serious electoral threat in seats that Labour needs to hold to maintain its majority."
+        "Shabana Mahmood is widely anticipated to be unveiled as chancellor when Andy Burnham makes his cabinet appointments on Monday afternoon, but her path to Number 11 has not been entirely smooth. Her behind-the-scenes criticisms of Rachel Reeves\'s approach to taxation have generated early tensions with Burnham allies on the left of the party, who are watching her appointment closely.",
+        "The friction highlights the delicate balancing act Burnham faces as he assembles a cabinet that must bridge the gap between Labour\'s various internal factions. With the new Prime Minister committed to fiscal discipline while also promising bolder economic interventions, the chancellor he chooses will be crucial to whether those twin ambitions can be reconciled."
       ],
-      image: "https://i.guim.co.uk/img/media/b8c3942b255be1f691dbde5845c34c71d7e503f6/1409_3_2829_2264/master/2829.jpg?width=1200&quality=85&auto=format&fit=max&s=3278c266476c034580bb21b6de04ca39",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/politics/2026/jul/02/andy-burnham-radical-economy-help-labour-win-next-election",
+      image: "https://images.unsplash.com/photo-1769867618566-8c73ee5059ff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTaGFiYW5hJTIwTWFobW9vZCU1Q3xlbnwwfDB8fHwxNzg0NTIzNzM2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "The Independent",
+      url: "https://www.independent.co.uk/news/uk/politics/shabana-mahmood-tax-welfare-andy-burnham-chancellor-b3017457.html",
       category: "Politics"
     }
   ]

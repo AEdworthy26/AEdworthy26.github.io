@@ -1,61 +1,61 @@
 // world-news-data.js
-// Auto-updated 2026-07-02 — do not edit manually
+// Auto-updated 2026-07-20 — do not edit manually
 
 var WORLD_NEWS = {
-  date: "2026-07-02",
+  date: "2026-07-20",
   main: {
-    title: "At Least Ten Killed in Large-Scale Russian Missile and Drone Strikes on Kyiv",
+    title: "Russia Batters Kyiv in One of the Largest Missile Assaults of the War",
     category: "Conflict",
     content: [
-      "Russia launched one of its most devastating attacks on the Ukrainian capital in weeks, firing a large-scale barrage of missiles and drones at Kyiv that left at least ten people dead. Ukrainian officials confirmed that children were among what they described as a 'significant number' of casualties, underlining the indiscriminate nature of the assault. The strikes hit residential and civilian areas, causing widespread destruction across parts of the city.",
-      "The attack marks a sharp escalation in Russian aerial bombardment of Kyiv, which has endured relentless strikes throughout the prolonged conflict. Ukrainian air defences were deployed in response, though the sheer scale and coordination of the assault meant that multiple projectiles broke through. Emergency services rushed to the scenes of impact, working to pull survivors from the rubble of damaged buildings.",
-      "The inclusion of children among the casualties has drawn fresh international condemnation, with Ukrainian officials calling on allies to provide additional air defence systems. The psychological toll on Kyiv\'s civilian population continues to mount, with residents forced once again into shelters and underground stations. Images and reports emerging from the city painted a grim picture of destroyed apartments and burning infrastructure.",
-      "The strikes come amid broader military pressure along Ukraine\'s front lines, where fighting has continued with significant intensity. Russia\'s use of combined missile and drone tactics has been a persistent feature of its campaign, designed to overwhelm Ukrainian defences and demoralise the civilian population. Analysts note that attacks of this magnitude are often timed to coincide with diplomatic moments or to signal continued resolve from Moscow.",
-      "The international community has repeatedly called on Russia to halt its attacks on civilian infrastructure, but such appeals have done little to curb the bombardment. Ukraine\'s government has renewed its urgent requests for more advanced air defence systems from Western partners, arguing that the protection of civilian lives depends on closing the gaps in its defensive coverage. The death toll from this latest strike underscores the human cost of a war now well into its fourth year.",
+      "Russia launched one of its most devastating aerial assaults of the entire war on Ukraine overnight, firing 41 missiles and 125 attack drones across the country according to the Ukrainian air force. The capital, Kyiv, bore the brunt of the bombardment in what officials and analysts are describing as a significant escalation in the intensity of Russian strikes. The scale of the attack underscores Moscow\'s continued willingness to target civilian infrastructure and population centres deep inside Ukraine.",
+      "The barrage represents a dramatic uptick in the volume of munitions deployed in a single overnight assault, combining ballistic and cruise missiles with a vast swarm of Shahed-type attack drones. Ukraine\'s air defences were stretched across multiple fronts simultaneously, a tactic that analysts say Russia has increasingly refined to overwhelm interception systems. Reports from inside Kyiv described explosions ringing out across the city as air defence batteries worked to neutralise incoming threats throughout the night.",
+      "The assault came just days after Ukraine itself carried out its own long-range strikes, hitting two warehouses inside Russian territory on Saturday. Those Ukrainian strikes killed at least eight people and injured 62, marking one of the deadlier retaliatory actions Ukraine has conducted on Russian soil. The exchange of blows illustrates the increasingly reciprocal nature of the conflict, with both sides now capable of reaching well beyond the front lines.",
+      "The timing and ferocity of the Russian attack has drawn sharp condemnation from Western governments and renewed urgent calls for additional air defence systems to be delivered to Ukraine. Kyiv has long argued that it requires more advanced and plentiful interception capabilities to protect its cities from the relentless pace of Russian aerial bombardment. The overnight attack will likely intensify diplomatic pressure on NATO allies to accelerate the supply of Patriot batteries and other air defence assets.",
+      "The war, now well into its fifth year, shows no sign of moving toward a negotiated settlement, with both sides launching strikes of increasing ambition and destructive power. For ordinary Ukrainians in Kyiv and beyond, each overnight alert has become a grim routine, yet the sheer scale of this latest assault has shocked even those inured to years of bombardment. The international community faces renewed pressure to respond to what Ukraine\'s leadership is calling a deliberate campaign of terror against the civilian population.",
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/3b2e/live/248b9c60-75d1-11f1-be8b-cbfeee563106.jpg",
-    source: "BBC News",
-    sourceUrl: "https://www.bbc.co.uk/news/articles/c4gyv05gk4do?at_medium=RSS&at_campaign=rss"
+    image: "https://static01.nyt.com/images/2026/07/19/multimedia/19int-ukraine-strikes-gpqh/19int-ukraine-strikes-gpqh-mediumSquareAt3X-v2.jpg",
+    source: "The New York Times",
+    sourceUrl: "https://www.nytimes.com/2026/07/19/world/europe/russia-ukraine-strikes.html"
   },
   secondary: [
     {
       id: "s1",
-      title: "Sudan\'s RSF Committed Crimes Against Humanity in El Fasher, Amnesty Says",
-      summary: "Amnesty International has accused Sudan\'s Rapid Support Forces of crimes against humanity and ethnic cleansing during their campaign to capture the city of El Fasher.",
+      title: "Spain Wins the World Cup as Madrid Erupts in Celebration",
+      summary: "Spain defeated Argentina 1-0 in the World Cup final, sending fans in Madrid into an all-night street party.",
       body: [
-        "A new report from Amnesty International alleges that the Sudanese paramilitary Rapid Support Forces carried out a systematic campaign of atrocities against civilians in El Fasher, including murder, torture, rape, enslavement, and sexual slavery. The report accuses the RSF of ethnic cleansing as part of its broader effort to seize control of the city, which has been one of the last major urban holdouts in the Darfur region.",
-        "The findings represent some of the most serious allegations levelled at any party to the Sudanese conflict, which has already caused one of the world\'s worst humanitarian crises. El Fasher has long been considered a critical flashpoint, and its fate has been watched closely by international human rights organisations and governments seeking to prevent a repeat of the Darfur genocide of the early 2000s."
+        "Spanish fans flooded the streets of Madrid after their national team claimed World Cup glory with a 1-0 victory over Argentina in the tournament final, celebrating through the night in scenes of jubilation across the country. The victory caps a remarkable tournament run for Spain and cements their status as one of the great footballing nations of the modern era.",
+        "For Argentina, the defeat was a heartbreaking conclusion to what had been a monthlong fever dream of football fervour, with fans nonetheless pouring into the streets of Buenos Aires to honour their team. Argentina coach Lionel Scaloni was visibly moved after the final whistle, expressing uncertainty about whether he would continue in the role after the tournament."
       ],
-      image: "https://images.unsplash.com/photo-1535253868107-da56da1693db?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTdWRhbiU1Q3xlbnwwfDB8fHwxNzgyOTY4NDg5fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/world/2026/jul/01/sudan-rsf-rapid-support-forces-crimes-against-humanity-el-fasher-amnesty-ethnic-cleansing",
-      category: "Human Rights"
+      image: "https://images.unsplash.com/photo-1722262134972-f96694cb0616?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTcGFpbiUyMFdpbnMlMjB0aGUlMjBXb3JsZCUyMEN1cCUyMGFzJTIwTWFkcmlkJTIwRXJ1cHRzJTIwaW4lMjBDZWxlYnJhdGlvbnxlbnwwfDB8fHwxNzg0NTIzNjk0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "Al Jazeera",
+      url: "https://www.aljazeera.com/video/newsfeed/2026/7/20/aje-onl-nf_fans-in-madrid-party-after-spains-world-cup-victory-190726?traffic_source=rss",
+      category: "Sport"
     },
     {
       id: "s2",
-      title: "German Prosecutors Charge Ukrainian Suspect Over Nord Stream Pipeline Explosions",
-      summary: "German prosecutors have charged a Ukrainian national they allege led the sabotage operation against the Nord Stream pipelines, with a yacht said to have been used in the attack.",
+      title: "US Soldier Killed in Iran-Linked Attack in Iraq as Conflict Widens",
+      summary: "The Pentagon confirmed another US service member has been killed in northern Iraq following an Iranian drone attack, coming a day after two soldiers died in Jordan.",
       body: [
-        "German prosecutors have formally charged a Ukrainian suspect in connection with the 2022 explosions that destroyed the Nord Stream gas pipelines beneath the Baltic Sea, alleging that a yacht was used to carry out the sophisticated sabotage operation. The suspect is accused of leading the mission, which caused massive damage to infrastructure connecting Russia and Europe and sent shockwaves through global energy markets.",
-        "The Nord Stream explosions have been one of the most consequential and disputed acts of sabotage in recent European history, with multiple countries investigating and various theories circulating about who was ultimately responsible. The formal charges by German prosecutors represent a significant development in a case that has long been mired in geopolitical sensitivity and competing claims."
+        "A US soldier was killed and another injured in northern Iraq while troops were engaged in the disposal of an Iranian drone, the Pentagon confirmed, marking the latest fatality in a rapidly escalating confrontation with Iran. The death follows the killing of two US soldiers in Jordan the previous day, with the military also reporting that unidentified remains had been found at the Jordanian site.",
+        "The series of deadly incidents signals a dangerous widening of hostilities between American forces and Iran-backed groups operating across the region. The mounting casualty toll is placing significant pressure on Washington to respond, with live updates tracking what the New York Times has described as an expanding war around the Strait of Hormuz."
       ],
-      image: "https://images.pexels.com/photos/11849155/pexels-photo-11849155.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      source: "Al Jazeera",
-      url: "https://www.aljazeera.com/news/2026/7/2/german-prosecutors-charge-ukrainian-suspect-over-nord-stream-explosions?traffic_source=rss",
-      category: "Geopolitics"
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/0035/live/0f16a480-833a-11f1-926f-c90d1bcfbc84.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.co.uk/news/articles/cgk417jp83po?at_medium=RSS&at_campaign=rss",
+      category: "Conflict"
     },
     {
       id: "s3",
-      title: "U.S. and Iran Set to Hold Indirect Talks After Trading Attacks",
-      summary: "Negotiators from the United States and Iran are meeting in Qatar for indirect talks, even as the two countries remain far apart on key issues following a period of direct hostilities.",
+      title: "Seven American Aid Workers Quarantine in Kenya After US Ebola Travel Ban",
+      summary: "Seven American aid workers who had been fighting the Ebola outbreak in Congo are now quarantining at a new isolation facility in Kenya following US-imposed travel restrictions.",
       body: [
-        "The United States and Iran are engaged in indirect diplomatic talks in Qatar, a development that comes after the two nations traded attacks in a period of acute tension. Ship traffic in the strategically vital Strait of Hormuz has reportedly risen, suggesting some easing of immediate pressure, though the underlying disputes between Washington and Tehran remain deeply unresolved.",
-        "The Qatar talks represent a fragile diplomatic opening in one of the world\'s most volatile relationships, with both sides facing significant domestic and regional pressures. Observers caution that while the resumption of any form of dialogue is a positive sign, the gulf between the two parties on core issues — including Iran\'s nuclear programme — remains vast."
+        "Seven American aid workers who had been deployed to the Democratic Republic of Congo to combat the ongoing Ebola outbreak are now quarantining at a newly established isolation facility in Kenya, after the US government introduced travel restrictions preventing their return home. The workers, employed by a US charity, are the first known individuals to use the Kenyan facility, which itself generated significant controversy and opposition within Kenya when it was established.",
+        "The situation highlights the complex humanitarian consequences of US travel policy decisions during active disease outbreaks, leaving frontline health workers in a bureaucratic and medical limbo far from home. Aid organisations have warned that such restrictions risk discouraging volunteers from responding to future outbreaks if they cannot be assured of a safe and straightforward path home."
       ],
-      image: "https://static01.nyt.com/images/2026/07/01/multimedia/01int-iran-diplomacy-ctlj/01int-iran-diplomacy-ctlj-mediumSquareAt3X.jpg",
-      source: "The New York Times",
-      url: "https://www.nytimes.com/2026/07/01/world/middleeast/us-iran-diplomacy-qatar.html",
-      category: "Diplomacy"
+      image: "https://i.guim.co.uk/img/media/db74c2bd4916bf32c469d847b07460e79d7b13ff/324_0_3556_2844/master/3556.jpg?width=1200&quality=85&auto=format&fit=max&s=47da2af21992d0d7ae3bb32e40d55af3",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/us-news/2026/jul/17/ebola-us-aid-workers-kenya",
+      category: "Health"
     }
   ]
 };

@@ -1,10 +1,10 @@
 // quiz-data.js
-// Auto-updated 2026-06-30 — do not edit manually
+// Auto-updated 2026-07-20 — do not edit manually
 
 window.QUIZ_DATA = {
-  date: '2026-06-30',
-  category: 'Sport',
-  question: 'At the 2004 Athens Olympics, which country beat Argentina in the men\'s basketball final to win gold — ending the United States\' long dominance of the event and completing an unbeaten run through the tournament?',
-  answer: 'Argentina',
-  funFact: 'Argentina\'s victory was one of the great upsets in Olympic basketball history, as the USA had won the gold medal at every Games they entered professional NBA players. Led by Manu Ginóbili, Argentina went undefeated throughout the tournament and beat Italy in the final 84–69, with the USA finishing a shocking third after losing to both Argentina and Puerto Rico in the group stage.'
+  date: '2026-07-20',
+  category: 'Space & Astronomy',
+  question: 'On 20th July 1969, Neil Armstrong became the first human to walk on the Moon — but what was the exact name of the landing site where the Apollo 11 lunar module touched down?',
+  answer: 'The Sea of Tranquility (Mare Tranquillitatis)',
+  funFact: 'The specific landing spot within the Sea of Tranquility was later officially named Statio Tranquillitatis — Tranquility Base — the name Armstrong announced to Mission Control with the words "The Eagle has landed." The site sits in the southwestern part of the mare, chosen partly because it appeared relatively flat and safe from orbital photographs.'
 };
