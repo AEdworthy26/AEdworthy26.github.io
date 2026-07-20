@@ -1,61 +1,61 @@
 // financial-news-data.js
-// Auto-updated 2026-06-30 — do not edit manually
+// Auto-updated 2026-07-20 — do not edit manually
 
 var FINANCIAL_NEWS = {
-  date: "2026-06-30",
+  date: "2026-07-20",
   main: {
-    title: "Stock Rally Extends as Tech Rebounds, Yen Weakens: Markets Wrap",
+    title: "Oil Prices Cross $90 a Barrel as U.S.-Iran Conflict Widens",
     category: "Markets",
     content: [
-      "Wall Street\'s technology-driven rally continued to gain momentum on Tuesday, spilling over into Asian markets as investors piled back into companies widely seen as the primary beneficiaries of the ongoing artificial intelligence buildout. The broad-based optimism pushed major indices higher across multiple sessions, with tech stocks leading the charge after a period of consolidation. Market participants appear increasingly confident that the structural demand for AI infrastructure remains intact, driving fresh capital into the sector\'s largest names.",
-      "In currency markets, the Japanese yen slid to its weakest level against the US dollar since 1986, a development that adds a significant macro dimension to the current market environment. A weaker yen historically benefits Japanese exporters by making their goods more competitive abroad, lending additional support to Asian equity markets. However, it also raises concerns among policymakers about imported inflation and the potential need for intervention by the Bank of Japan, which has been navigating an extraordinarily delicate path between stimulus and normalisation.",
-      "The technology rebound comes amid growing anticipation surrounding high-profile AI-focused IPOs, with companies like OpenAI and Anthropic preparing to go public in what could be among the largest listings in recent memory. Investor appetite for AI-adjacent equities has been voracious, reflecting broader confidence that the current wave of AI investment will translate into durable earnings growth. This sentiment has underpinned valuations across the sector even as broader economic conditions remain uncertain in several major economies.",
-      "The rally also reflects a degree of relief following weeks of geopolitical noise that had injected volatility into global markets. With some progress reported on diplomatic fronts — including movement on Middle East negotiations — risk appetite has broadly improved, encouraging rotation back into growth-oriented assets. Institutional investors appear to be repositioning portfolios heading into the second half of 2026, with technology and AI themes remaining central to allocation strategies.",
-      "As markets close out the second quarter, the overall tone is one of cautious optimism tempered by ongoing uncertainties around monetary policy, currency volatility, and geopolitical flashpoints. The Federal Reserve\'s next moves remain a key focus for investors, particularly given renewed political pressure on the institution from Washington. Nevertheless, the strong close to Q2 in tech-heavy indices suggests that, for now, the bulls retain the upper hand as the market heads into the second half of the year."
+      "Oil prices surged past $90 a barrel on Sunday as escalating military exchanges between the United States and Iran sent shockwaves through global energy markets. Brent crude, the global benchmark, rose more than 3 percent as trading resumed, marking one of the sharpest single-session moves in recent months. The spike reflects growing investor anxiety over the security of oil supply routes in the Middle East, a region that remains critical to global energy flows.",
+      "Despite the dramatic move in crude, U.S. stock-index futures remained essentially unchanged, suggesting that equity markets are, for now, treating the conflict as an energy-specific shock rather than a broader economic crisis. Investors appear to be cautiously monitoring the situation, balancing the inflationary implications of higher oil prices against the possibility that the conflict could be contained. The divergence between oil and equity futures is a telling signal of how traders are currently pricing geopolitical risk.",
+      "The $90 threshold is psychologically and practically significant, as sustained prices at that level historically begin to feed through into broader inflation pressures — particularly in transportation, manufacturing, and consumer energy costs. Central banks that have spent the past two years fighting inflation will be watching developments closely, as a prolonged oil price spike could complicate the path toward interest rate normalization. For the Federal Reserve and its peers, the timing could hardly be more inconvenient.",
+      "Beyond immediate price moves, markets are also bracing for potential disruptions to shipping lanes and regional supply chains, with the Strait of Hormuz — through which roughly a fifth of the world\'s oil passes — representing the most acute chokepoint risk. Energy analysts note that even the threat of disruption to that corridor is enough to sustain elevated crude prices for weeks. Commodities beyond oil have also been affected, with palm oil climbing to near a one-month high as vegetable oil markets tracked the surge in crude.",
+      "Looking ahead, investor attention this week will be split between the evolving geopolitical situation and a pivotal round of technology sector earnings, which have the potential to either amplify or offset market anxiety. The so-called Magnificent Seven — Apple, Amazon, Nvidia and their peers — are seen as potential stabilizing forces for equity markets if their results impress. Whether oil\'s ascent proves to be a temporary spike or the start of a sustained move higher may ultimately depend on how quickly diplomatic channels open between Washington and Tehran.",
     ],
-    image: "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iRts94__JsJ0/v3/1200x-1.png",
-    source: "Bloomberg Markets",
-    sourceUrl: "https://www.bloomberg.com/news/articles/2026-06-29/japan-stocks-set-to-climb-as-yen-hits-40-year-low-markets-wrap"
+    image: "https://static01.nyt.com/images/2026/07/19/multimedia/19biz-oil-stocks-gas-1-tbcm/19biz-oil-stocks-gas-1-tbcm-mediumSquareAt3X.jpg",
+    source: "The New York Times",
+    sourceUrl: "https://www.nytimes.com/2026/07/19/business/oil-prices-stocks-gas.html"
   },
   secondary: [
     {
       id: "fn1",
-      title: "Oil Set for Biggest Quarterly Drop Since Pandemic as Glut Risks Mount",
-      summary: "Oil is heading for its steepest quarterly decline since the COVID-19 pandemic as Strait of Hormuz flows accelerate and Morgan Stanley warns of an emerging supply glut.",
+      title: "Can the 'Magnificent Seven' Save a Stock Market That Might Be Doomed Without Them?",
+      summary: "Apple, Amazon, Nvidia and their mega-cap peers are showing signs of life that could jolt a sluggish stock market back into gear ahead of key earnings this week.",
       body: [
-        "Crude oil prices are on track for their largest quarterly fall since the pandemic era, with flows through the strategically vital Strait of Hormuz picking up pace following progress on a peace deal in the region. The accelerating supply picture has rattled energy markets, pushing benchmark prices sharply lower over the course of the quarter.",
-        "Morgan Stanley has issued a warning about the risk of a potential oil glut, adding analyst weight to bearish price sentiment. The combination of improved Middle East supply flows and tepid global demand growth is reshaping near-term outlooks for the energy sector, with implications for oil-dependent economies and energy company earnings heading into Q3."
+        "After a period of relative quiet, the Magnificent Seven — the group of technology giants that have come to dominate U.S. equity index weightings — are quietly staging a comeback that analysts say could prove decisive for the broader market\'s direction. With much of the rest of the S&P 500 struggling to find momentum, the fortunes of these few companies carry outsized influence over index returns and investor sentiment alike.",
+        "The stakes are particularly high this week as several of these companies are due to report earnings, giving markets a critical data point on whether AI-driven revenue growth is living up to the enormous expectations baked into their valuations. A strong showing could reinvigorate risk appetite at a time when geopolitical uncertainty surrounding the U.S.-Iran conflict is already testing investor nerves."
       ],
-      image: "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iCKpupHo5vc4/v0/1200x-1.jpg",
-      source: "Bloomberg Markets",
-      url: "https://www.bloomberg.com/news/articles/2026-06-29/latest-oil-market-news-and-analysis-for-june-30",
-      category: "Commodities"
+      image: "https://images.unsplash.com/photo-1696739696220-8d2e27465662?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxDYW4lMjB0aGUlMjB8ZW58MHwwfHx8MTc4NDUyMzgyOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "MarketWatch",
+      url: "https://www.marketwatch.com/story/can-the-magnificent-seven-save-a-stock-market-that-might-be-doomed-without-them-f88988f3?mod=mw_rss_topstories",
+      category: "Markets"
     },
     {
       id: "fn2",
-      title: "UK Crypto Firms Face Sweeping New FCA Rules from October 2027",
-      summary: "The Financial Conduct Authority has announced comprehensive new regulations requiring crypto firms operating in the UK to demonstrate resilience to market shocks and hold capital against risky assets.",
+      title: "Thames Water Creditors Seek Talks with Burnham as Nationalisation Looms",
+      summary: "Lenders to embattled utility Thames Water are preparing a multi-billion pound legal challenge in the event that incoming UK Prime Minister Andy Burnham moves to temporarily nationalise the company.",
       body: [
-        "The UK\'s Financial Conduct Authority has unveiled sweeping new rules that will require crypto firms to prove they can withstand market shocks and maintain adequate capital buffers against risky assets, with the regulations set to take effect from October next year. The announcement marks a significant step toward bringing the largely unregulated crypto industry under a framework comparable to that governing traditional financial institutions.",
-        "The move reflects growing regulatory urgency around the booming digital asset sector, which has so far operated with comparatively limited oversight in the UK. Industry participants will need to accelerate their compliance preparations, and the rules are expected to raise the bar for market entry, potentially reshaping the competitive landscape for crypto businesses seeking a foothold in one of the world\'s leading financial centres."
+        "Creditors holding debt in Thames Water have signalled they are willing to engage in talks over greater public control of the struggling utility, but are simultaneously readying legal action to pursue repayment in full of their outstanding loans should a forced nationalisation proceed. The potential legal battle, which could run into the multi-billions of pounds, would represent one of the most significant financial and legal confrontations between a UK government and private creditors in recent memory.",
+        "The standoff underscores the enormous complexity of unwinding a heavily indebted privatised utility and highlights the financial risks that nationalisation could pose to public finances. For markets, the case is being watched as a bellwether for how a Burnham-led government might approach other distressed private infrastructure assets."
       ],
-      image: "https://i.guim.co.uk/img/media/9d95d44e58b560fb5445799828ea0bf5c913fa4a/285_0_4600_3680/master/4600.jpg?width=1200&quality=85&auto=format&fit=max&s=f9d80923dfb307d2a0400999c3917279",
+      image: "https://i.guim.co.uk/img/media/03f9796686c6c2b06777f7696d024c013b2a36ea/43_0_4406_3524/master/4406.jpg?width=1200&quality=85&auto=format&fit=max&s=094b5210c5816878f4b6f7bb18c05678",
       source: "The Guardian",
-      url: "https://www.theguardian.com/technology/2026/jun/30/crypto-firms-sweeping-new-rules-uk-fca-regulator",
-      category: "Regulation"
+      url: "https://www.theguardian.com/business/2026/jul/19/thames-water-creditors-prepare-legal-fight-nationalisation",
+      category: "Economics"
     },
     {
       id: "fn3",
-      title: "Rocket Lab Bets $8 Billion on Iridium Acquisition to Challenge SpaceX\'s Starlink",
-      summary: "Rocket Lab has announced an $8 billion deal to acquire satellite communications company Iridium, describing the move as a strategic shortcut to building out its own connectivity capabilities to rival SpaceX\'s Starlink network.",
+      title: "UK FTSE 100 CEO Pay Hits Record £5.06m, Now 130 Times Average Worker\'s Salary",
+      summary: "Median pay for FTSE 100 chief executives rose 8.6% to a record £5.06 million in the last financial year, widening the earnings gap with ordinary workers to its broadest level in eight years.",
       body: [
-        "Rocket Lab has made its most ambitious corporate move to date, announcing an $8 billion acquisition of Iridium in a bold bid to challenge SpaceX\'s dominant Starlink satellite internet service. The company described the deal as a 'shortcut' to rapidly expanding its satellite communications capabilities rather than building the infrastructure from scratch.",
-        "The acquisition signals an intensifying commercial space race beyond launch services, with Rocket Lab now positioning itself as a vertically integrated player across launch and connectivity. The deal is among the largest in the commercial space sector and will be closely watched by investors as a test of whether Rocket Lab can leverage Iridium\'s existing global network to credibly compete with Starlink\'s growing subscriber base."
+        "The High Pay Centre\'s final report reveals that the gap between executive and worker pay in the UK has reached its widest point since 2018, with the median FTSE 100 CEO now earning 130 times the salary of an average employee. The 8.6% increase in top executive compensation comes at a time when many workers have only recently seen their real wages recover from years of inflation erosion.",
+        "The data is likely to intensify political and regulatory scrutiny of boardroom pay practices, particularly under a new government that has signalled a more interventionist economic approach. For investors and governance advocates, the figures raise fresh questions about whether executive remuneration structures are genuinely tied to long-term company performance or are becoming increasingly detached from it."
       ],
-      image: "https://images.mktw.net/im-22494504",
-      source: "MarketWatch",
-      url: "https://www.marketwatch.com/story/rocket-lab-to-take-on-spacexs-starlink-with-8-billion-acquisition-bf7ef649?mod=mw_rss_topstories",
-      category: "M&A"
+      image: "https://i.guim.co.uk/img/media/21c7ed45ddbd5847bace769832b5f43f60fdc2ea/523_156_2123_1698/master/2123.jpg?width=1200&quality=85&auto=format&fit=max&s=f9df0a5fa9dbe5be466d3ad9710cab76",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/business/2026/jul/20/uk-bosses-130-times-high-pay-worker-gap-widens",
+      category: "Economics"
     }
   ]
 };

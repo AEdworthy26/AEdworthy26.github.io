@@ -1,19 +1,19 @@
 // reads-data.js
-// Auto-updated 2026-06-30 — do not edit manually
+// Auto-updated 2026-07-20 — do not edit manually
 
 var READS_DATA = {
-  date: "2026-06-30",
+  date: "2026-07-20",
   book: {
-    title: "The Overstory",
-    author: "Richard Powers",
-    year: 2018,
-    genres: ["Literary Fiction", "Nature", "Ecology"],
-    desc: "A sweeping, Pulitzer Prize-winning novel that braids together the lives of nine Americans whose fates are shaped by trees — from a chestnut that survives a blight to a sentinel redwood that draws activists into its canopy. Powers writes with the ambition of Tolstoy and the precision of a field naturalist, making the non-human world feel as vivid and morally urgent as any human character. The novel asks what it would mean to truly see the world on a timescale longer than a human life, and whether that seeing could change how we act. It is at once a page-turning ensemble drama and a radical argument about consciousness, interconnection, and what we owe the living world.",
-    whyRead: "As ecological anxiety deepens in the mid-2020s, this book offers something rarer than alarm — it offers wonder, and a genuinely altered sense of what counts as a life worth mourning.",
-    rating: 4.2,
+    title: "The Nineties",
+    author: "Chuck Klosterman",
+    year: 2022,
+    genres: ["Cultural History", "Pop Culture", "Criticism"],
+    desc: "Chuck Klosterman\'s dazzling cultural autopsy of the 1990s argues that the decade was defined by a single paradox: it was the last era before the internet rewired consciousness, yet it was already rehearsing all the anxieties that would consume us afterward. Moving fluidly through grunge, reality TV, third-party politics, Michael Jordan, and the strange moral weight of irony, Klosterman dissects how a generation processed reality when the stakes still felt optional. His prose is wickedly funny, intellectually restless, and disarmingly honest about the limits of nostalgia itself. The result is less a trip down memory lane than a forensic examination of how collective memory gets manufactured in the first place.",
+    whyRead: "In a moment when culture feels exhaustingly accelerated and self-aware, Klosterman\'s portrait of the last decade that didn\'t know it was being watched lands with unexpected force — equal parts comic and genuinely clarifying.",
+    rating: 3.8,
     ratingSource: "Goodreads",
-    ratingCount: "350,000+",
-    coverUrl: "https://covers.openlibrary.org/b/id/8758252-L.jpg",
-    amazonUrl: "https://www.amazon.co.uk/dp/8491814442"
+    ratingCount: "22,000+",
+    coverUrl: "https://covers.openlibrary.org/b/id/11387005-L.jpg",
+    amazonUrl: "https://www.amazon.co.uk/dp/0735217955"
   }
 };

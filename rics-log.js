@@ -3,6 +3,45 @@
 
 var RICS_LOG = [
   {
+    "date": "2026-07-20",
+    "topic": "CIL Liability, Self-Build Exemptions and Phased Payment Structures in Residential-Led Schemes",
+    "module": "Legal and Regulatory Compliance",
+    "level": 2,
+    "apc_competency": "Legal/Regulatory Compliance (Level 2)",
+    "focus": "This lesson examines Community Infrastructure Levy (CIL) in granular technical detail \u2014 liability triggers, exemption categories, phased payment mechanics, and the interaction with S106 \u2014 as applied to the mixed-tenure, RP-led residential schemes Alfie manages day-to-day. Understanding CIL is critical for accurate development appraisals, grant applications, and legal risk management at acquisition and post-consent stages.",
+    "image": "https://images.unsplash.com/photo-1607900840367-a83dcd63296d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxDSUwlMjBMaWFiaWxpdHklMkMlMjBTZWxmLUJ1aWxkJTIwVUslMjBwcm9wZXJ0eSUyMGFyY2hpdGVjdHVyZSUyMGJ1aWxkaW5nJTIwZXh0ZXJpb3J8ZW58MHwwfHx8MTc4NDUyNDI2NXww&ixlib=rb-4.1.0&q=80&w=1080",
+    "content": [],
+    "summary": [
+      "CIL liability is calculated on net additional GIA (new GIA minus qualifying existing GIA with 6-month lawful use evidence), indexed from the Charging Schedule adoption year to the permission year using BCIS \u2014 always model indexation drift in appraisals.",
+      "Social housing relief under Regulation 49 is mandatory but must be actively claimed via Form 1 before commencement \u2014 failure to submit costs the full exempted CIL on affordable units, which on a large scheme can exceed \u00a3500k\u2013\u00a31m+.",
+      "Failure to submit a Commencement Notice before breaking ground eliminates all instalment rights and renders the full CIL sum immediately payable, plus a surcharge of \u00a32,500 or 20% of chargeable amount (whichever is greater) \u2014 treat this as a critical path milestone.",
+      "London schemes carry dual CIL exposure: Borough CIL plus Mayoral CIL 2 (MCIL2) \u2014 both must be separately identified, rated and modelled; instalment policies vary by borough and must be checked, not assumed.",
+      "The Infrastructure Levy under LURA 2023 will eventually replace CIL (charged on GDV uplift, not floor area) but is in pilot phase only as of mid-2026 \u2014 CIL remains the operative charging regime for all current schemes and should be modelled and managed accordingly."
+    ],
+    "qa": [
+      {
+        "q": "You\\'re appraising a 120-unit scheme in an outer London borough. The existing building has 800 sq m GIA but has been vacant for four years. Can you deduct this from your CIL liability calculation?",
+        "a": "No. The CIL Regulations require the existing floor space to have been in lawful use for at least six continuous months within the three-year period ending on the date of planning permission. A building that has been vacant for four years does not meet this test, so no deduction can be made. The full 120-unit GIA is chargeable. Alfie should check occupancy records at due diligence stage \u2014 rating records, utility accounts, leases \u2014 to establish whether any partial occupancy exists in the qualifying window. If the vacancy predates the three-year period, the deduction is lost entirely."
+      },
+      {
+        "q": "On a phased masterplan of 500 units across four reserved matters phases, when does CIL become payable and how does the phased structure affect the liability?",
+        "a": "CIL is calculated and charged separately for each phase \u2014 each reserved matters approval generates its own Liability Notice based on the floor space approved in that phase. Each phase also requires its own Commencement Notice before work on that phase starts, and triggers its own instalment schedule (if the borough has an Instalment Policy). This is advantageous for cashflow management as it spreads CIL exposure across the programme rather than front-loading the full 500-unit liability at the outset. However, it also means Alfie must manage four separate CIL compliance tracks \u2014 four Form 1 exemption claims for affordable units, four Commencement Notices, and four instalment schedules \u2014 all of which should be embedded in the project programme."
+      },
+      {
+        "q": "Explain the difference between the planning policy definition of 'affordable housing' and the CIL Regulations definition of 'social housing' for the purpose of claiming social housing relief.",
+        "a": "This is a critical distinction. Planning policy (NPPF and local plan) uses 'affordable housing' to cover a broad range of tenures including social rent, affordable rent, shared ownership, First Homes, and intermediate products. The CIL Regulations Regulation 49 definition of 'social housing' eligible for relief is narrower: it covers dwellings let at social rent or affordable rent (up to 80% market rent) managed by a registered provider, and shared ownership dwellings meeting prescribed equity and rent conditions. Products such as discounted market sale, rent-to-buy at higher rent levels, or market-facing intermediate tenures may not qualify. Alfie must check each affordable tenure type in the scheme against the Regulation 49 definition \u2014 not just the planning consent \u2014 before submitting Form 1. Claiming relief on ineligible units exposes the developer to a CIL debt, surcharge and potential Land Charge."
+      },
+      {
+        "q": "What procedural steps must Alfie take to protect social housing relief on a 200-unit scheme where 70 units are affordable rent, and what happens if the site is transferred to the RP after commencement?",
+        "a": "Before development commences: (1) Submit Form 1 (Claiming Exemption or Relief) for the 70 affordable units to the collecting authority, clearly identifying the units by plot reference and tenure. (2) Submit a Commencement Notice before breaking ground on the wider development. If the site is transferred to the RP after commencement, the relief transfer must be notified to the collecting authority \u2014 under the Regulations, relief is associated with the chargeable development, not solely the applicant. If ownership changes and the RP takes over, the collecting authority must be notified and a new assumption of liability may be required. Failure to notify a change of ownership can jeopardise the relief. Legal advice should be taken at the point of transfer \u2014 golden brick structures where the RP acquires at slab level are particularly relevant here, as commencement has already occurred."
+      },
+      {
+        "q": "How does the proposed Infrastructure Levy under LURA 2023 differ from CIL in its fundamental charging mechanism, and what are the implications for affordable housing delivery in RP-led schemes?",
+        "a": "CIL is charged on a per-square-metre basis applied to net additional GIA, set by a fixed Charging Schedule \u2014 it is a floor-area tax. The Infrastructure Levy (IL) as proposed under LURA 2023 would instead be charged on the uplift in GDV above a threshold (a margin above an indexed benchmark land value), making it a value-capture instrument rather than an area-based charge. This has significant implications for affordable housing: under IL, affordable housing delivery could be funded in-kind (as now via S106) or potentially through IL receipts directed by the LPA. The concern from RPs and housing associations is that the in-kind affordable delivery mechanism may be weakened or monetised, reducing the certainty of on-site affordable provision. As of mid-2026, IL is in pilot stage only; Alfie should monitor DLUHC guidance and pilot LPA outcomes, but continue to model and manage CIL as the operative instrument on all live schemes."
+      }
+    ]
+  },
+  {
     "date": "2026-06-30",
     "topic": "Development Agreement Structures: Clawback, Overage Waterfall and Risk Allocation in RP\u2013Private Developer JVs",
     "module": "Land and Joint Ventures",
