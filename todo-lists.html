@@ -194,10 +194,15 @@
     .task-item.overdue    { background: rgba(220,38,38,0.03); }
     .task-item.due-today  { background: rgba(0,51,153,0.03); }
     .task-item.completing { animation: slideOut 0.28s ease forwards; }
+    .task-item.highlight-flash { animation: taskHighlightPulse 1s ease-in-out 2; }
 
     @keyframes fadeSlideIn { from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)} }
     @keyframes slideOut { from{opacity:1;transform:translateX(0)}to{opacity:0;transform:translateX(24px)} }
     @keyframes fadeIn { from{opacity:0}to{opacity:1} }
+    @keyframes taskHighlightPulse {
+      0%, 100% { box-shadow: 0 1px 3px rgba(0,0,0,0.05); border-color: var(--border); }
+      50%      { box-shadow: 0 0 0 4px rgba(0,51,153,0.25); border-color: var(--blue); }
+    }
 
     /* Custom checkbox */
     .task-check { flex-shrink: 0; cursor: pointer; padding-top: 0.05rem; }
@@ -1236,9 +1241,24 @@
     document.getElementById('js-date').textContent =
       new Date().toLocaleDateString('en-GB', { weekday:'long', day:'numeric', month:'long', year:'numeric' });
 
+    // ── DEEP LINK: scroll to and highlight a task from #task-<id> (e.g. clicked from the homepage) ──
+    function highlightFromHash() {
+      var m = /^#task-(.+)$/.exec(location.hash);
+      if (!m) return;
+      var id = decodeURIComponent(m[1]);
+      var el = document.querySelector('[data-task-id="' + id.replace(/"/g, '\\"') + '"]');
+      if (!el) return;
+      setTimeout(function() {
+        el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        el.classList.add('highlight-flash');
+        setTimeout(function() { el.classList.remove('highlight-flash'); }, 2200);
+      }, 150);
+    }
+
     // ── INIT ─────────────────────────────────────────────────────────────────
     load();
     render();
+    highlightFromHash();
     maybeShowWeeklyReview();
 
   })();
