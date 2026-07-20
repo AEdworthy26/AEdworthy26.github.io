@@ -591,8 +591,8 @@
 
     /* ────────────────── COUNTDOWN PREVIEW ────────────────── */
     .cd-preview-list { margin-top: 0.65rem; display: flex; flex-direction: column; gap: 0.4rem; }
-    .cd-preview-item { display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 0.65rem; border-left: 3px solid var(--blue); border-radius: 0 7px 7px 0; transition: transform 0.12s ease; }
-    .cd-preview-item:hover { transform: translateX(3px); }
+    .cd-preview-item { display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 0.65rem; border-left: 3px solid var(--blue); border-radius: 0 7px 7px 0; transition: transform 0.12s ease, box-shadow 0.12s ease; cursor: pointer; }
+    .cd-preview-item:hover { transform: translateX(3px); text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
     .cd-preview-body { flex: 1; min-width: 0; display: flex; align-items: center; justify-content: space-between; gap: 0.6rem; }
     .cd-preview-title { font-size: 0.8rem; font-weight: 700; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .cd-preview-days { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.01em; padding: 0.22rem 0.6rem; border-radius: 20px; font-variant-numeric: tabular-nums; flex-shrink: 0; white-space: nowrap; }
@@ -2103,12 +2103,12 @@
         var days = Math.max(0, Math.floor((Date.now() - t.startedAt) / 86400000));
         var a = ACCENTS[t.color] || ACCENTS.emerald;
         var flame = days >= 7 ? '🔥 ' : '';
-        return '<div class="cd-preview-item" style="border-left-color:' + a.solid + ';background:' + a.tint + '">'
+        return '<a href="countdown.html" class="cd-preview-item" style="border-left-color:' + a.solid + ';background:' + a.tint + '">'
           + '<div class="cd-preview-body">'
           +   '<div class="cd-preview-title">' + esc(t.title) + '</div>'
           +   '<div class="cd-preview-days" style="background:' + a.chip + ';color:' + a.text + '">' + flame + days + (days === 1 ? ' day' : ' days') + '</div>'
           + '</div>'
-          + '</div>';
+          + '</a>';
       }).join('');
 
       var moreHtml = more > 0

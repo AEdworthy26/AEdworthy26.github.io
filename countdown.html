@@ -81,10 +81,11 @@
 
     /* ── PAGE ── */
     .page-wrap { max-width: 1120px; margin: 0 auto; padding: 2rem 1.5rem 5rem; }
-    .page-title-row { padding-bottom: 1rem; margin-bottom: .4rem; display: flex; align-items: flex-end; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+    .page-title-row { padding-bottom: 1rem; margin-bottom: 1.2rem; border-bottom: 1px solid var(--border); display: flex; align-items: flex-end; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
     .page-section-tag { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); }
     .page-title { font-family: 'Playfair Display', serif; font-weight: 900; font-size: 2.4rem; line-height: 1; margin-top: 0.2rem; }
-    .page-subtitle { font-size: .84rem; color: var(--muted); font-style: italic; margin-top: .35rem; max-width: 46ch; }
+    .page-subtitle { font-size: .84rem; color: var(--muted); font-style: italic; margin-top: .35rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    @media (max-width: 720px) { .page-subtitle { white-space: normal; } }
 
     /* ── STATS STRIP ── */
     .stats-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin: 1.6rem 0 1.8rem; }
