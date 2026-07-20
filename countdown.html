@@ -154,14 +154,15 @@
     .cd-menu button:hover { background: rgba(255,255,255,.08); }
     .cd-menu button.cd-danger { color: #fb7185; }
 
-    .cd-ring-wrap { position: relative; width: 148px; height: 148px; margin-top: .2rem; z-index: 1; }
-    .cd-ring { width: 100%; height: 100%; transform: rotate(-90deg); }
-    .cd-ring-track { fill: none; stroke: rgba(255,255,255,.08); stroke-width: 9; }
-    .cd-ring-progress { fill: none; stroke: var(--accent); stroke-width: 9; stroke-linecap: round; transition: stroke-dashoffset .6s ease; filter: drop-shadow(0 0 5px var(--accent)); }
-    .cd-ring-center { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0; }
-    .cd-days { font-family: 'Playfair Display', serif; font-weight: 900; font-size: 2.5rem; color: #fff; line-height: 1; font-variant-numeric: tabular-nums; }
-    .cd-days-label { font-size: .64rem; letter-spacing: .16em; text-transform: uppercase; color: rgba(255,255,255,.5); margin-top: .2rem; }
-    .cd-days-years { font-size: .6rem; color: rgba(255,255,255,.4); margin-top: .2rem; letter-spacing: .02em; }
+    .cd-hero { display: flex; flex-direction: column; align-items: center; margin-top: .3rem; z-index: 1; }
+    .cd-days { font-family: 'Playfair Display', serif; font-weight: 900; font-size: 3.1rem; color: #fff; line-height: 1; font-variant-numeric: tabular-nums; text-shadow: 0 0 22px var(--accent-soft); }
+    .cd-days-label { font-size: .66rem; letter-spacing: .18em; text-transform: uppercase; color: rgba(255,255,255,.5); margin-top: .3rem; }
+    .cd-days-years { font-size: .62rem; color: rgba(255,255,255,.4); margin-top: .25rem; letter-spacing: .02em; }
+
+    .cd-progress-wrap { width: 100%; z-index: 1; }
+    .cd-progress-track { width: 100%; height: 6px; border-radius: 20px; background: rgba(255,255,255,.08); overflow: hidden; }
+    .cd-progress-fill { height: 100%; border-radius: 20px; background: var(--accent); box-shadow: 0 0 8px var(--accent); transition: width .6s ease; }
+    .cd-progress-label { display: flex; justify-content: center; font-size: .64rem; color: rgba(255,255,255,.45); margin-top: .45rem; letter-spacing: .02em; }
 
     .cd-clock { font-family: 'Inter', sans-serif; font-weight: 600; font-size: .92rem; letter-spacing: .06em; color: var(--accent); font-variant-numeric: tabular-nums; z-index: 1; }
 
@@ -478,7 +479,7 @@
       }
       return null;
     }
-    function ringProgress(msElapsed) {
+    function milestoneProgress(msElapsed) {
       var daysFloat = msElapsed / 86400000;
       var prev = prevMilestone(Math.floor(daysFloat));
       var next = nextMilestoneFor(Math.floor(daysFloat));
@@ -486,6 +487,13 @@
       var span = next - prev;
       if (span <= 0) return 1;
       return Math.max(0, Math.min(1, (daysFloat - prev) / span));
+    }
+    function milestoneLabel(days) {
+      return (days % 365 === 0) ? (days / 365) + 'y' : days + 'd';
+    }
+    function progressLabelFor(days, pct) {
+      var next = nextMilestoneFor(days);
+      return next === null ? 'All milestones reached' : Math.round(pct * 100) + '% to ' + milestoneLabel(next);
     }
 
     // ── PERSISTENCE ──────────────────────────────────────────────────────────
@@ -584,9 +592,8 @@
       var accent = ACCENTS[t.color] || ACCENTS.emerald;
       var elapsed = Date.now() - t.startedAt;
       var parts = elapsedParts(elapsed);
-      var pct = ringProgress(elapsed);
-      var R = 65, C = 2 * Math.PI * R;
-      var dashoffset = C * (1 - pct);
+      var pct = milestoneProgress(elapsed);
+      var progLabel = progressLabelFor(parts.days, pct);
       var startedDate = new Date(t.startedAt);
       var startedLabel = startedDate.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
       var bestMs = Math.max(t.bestMs || 0, elapsed);
@@ -624,16 +631,14 @@
         +     '</div>'
         +   '</div>'
         + '</div>'
-        + '<div class="cd-ring-wrap">'
-        +   '<svg class="cd-ring" viewBox="0 0 148 148">'
-        +     '<circle class="cd-ring-track" cx="74" cy="74" r="' + R + '"></circle>'
-        +     '<circle class="cd-ring-progress" id="cd-ring-' + t.id + '" cx="74" cy="74" r="' + R + '" stroke-dasharray="' + C + '" stroke-dashoffset="' + dashoffset + '"></circle>'
-        +   '</svg>'
-        +   '<div class="cd-ring-center">'
-        +     '<div class="cd-days" id="cd-days-' + t.id + '">' + parts.days + '</div>'
-        +     '<div class="cd-days-label">' + (parts.days === 1 ? 'day' : 'days') + '</div>'
-        +     (yrsLabel ? '<div class="cd-days-years">' + yrsLabel + '</div>' : '')
-        +   '</div>'
+        + '<div class="cd-hero">'
+        +   '<div class="cd-days" id="cd-days-' + t.id + '">' + parts.days + '</div>'
+        +   '<div class="cd-days-label">' + (parts.days === 1 ? 'day' : 'days') + '</div>'
+        +   (yrsLabel ? '<div class="cd-days-years">' + yrsLabel + '</div>' : '')
+        + '</div>'
+        + '<div class="cd-progress-wrap">'
+        +   '<div class="cd-progress-track"><div class="cd-progress-fill" id="cd-progress-' + t.id + '" style="width:' + (pct * 100) + '%"></div></div>'
+        +   '<div class="cd-progress-label" id="cd-progress-label-' + t.id + '">' + progLabel + '</div>'
         + '</div>'
         + '<div class="cd-clock" id="cd-clock-' + t.id + '">' + pad2(parts.hours) + ':' + pad2(parts.mins) + ':' + pad2(parts.secs) + '</div>'
         + '<div class="cd-milestones">' + milestonesHtml + '</div>'
@@ -650,12 +655,14 @@
         var parts = elapsedParts(elapsed);
         var daysEl = document.getElementById('cd-days-' + t.id);
         var clockEl = document.getElementById('cd-clock-' + t.id);
-        var ringEl = document.getElementById('cd-ring-' + t.id);
-        if (!daysEl || !clockEl || !ringEl) { needsFullRender = true; return; }
+        var progFillEl = document.getElementById('cd-progress-' + t.id);
+        var progLabelEl = document.getElementById('cd-progress-label-' + t.id);
+        if (!daysEl || !clockEl || !progFillEl || !progLabelEl) { needsFullRender = true; return; }
         if (daysEl.textContent != parts.days) { render(); needsFullRender = true; return; }
         clockEl.textContent = pad2(parts.hours) + ':' + pad2(parts.mins) + ':' + pad2(parts.secs);
-        var R = 65, C = 2 * Math.PI * R;
-        ringEl.setAttribute('stroke-dashoffset', C * (1 - ringProgress(elapsed)));
+        var pct = milestoneProgress(elapsed);
+        progFillEl.style.width = (pct * 100) + '%';
+        progLabelEl.textContent = progressLabelFor(parts.days, pct);
       });
       if (!needsFullRender) renderStats();
     }
