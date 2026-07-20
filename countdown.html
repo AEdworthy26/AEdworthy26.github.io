@@ -466,27 +466,21 @@
       return out;
     }
 
-    function prevMilestone(days) {
-      var p = 0;
-      for (var i = 0; i < ALL_MILESTONES.length; i++) {
-        if (ALL_MILESTONES[i] <= days) p = ALL_MILESTONES[i]; else break;
-      }
-      return p;
-    }
     function nextMilestoneFor(days) {
       for (var i = 0; i < ALL_MILESTONES.length; i++) {
         if (ALL_MILESTONES[i] > days) return ALL_MILESTONES[i];
       }
       return null;
     }
+    // Progress toward the next milestone, counted from the start of the streak
+    // (not from the previous milestone) — so the percentage always matches the
+    // day count on screen: e.g. day 2 of a 3-day milestone reads as ~67%, not
+    // some larger number based on how far past the *previous* milestone you are.
     function milestoneProgress(msElapsed) {
       var daysFloat = msElapsed / 86400000;
-      var prev = prevMilestone(Math.floor(daysFloat));
       var next = nextMilestoneFor(Math.floor(daysFloat));
       if (next === null) return 1;
-      var span = next - prev;
-      if (span <= 0) return 1;
-      return Math.max(0, Math.min(1, (daysFloat - prev) / span));
+      return Math.max(0, Math.min(1, daysFloat / next));
     }
     function milestoneLabel(days) {
       return (days % 365 === 0) ? (days / 365) + 'y' : days + 'd';
