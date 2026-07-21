@@ -1,18 +1,18 @@
 // films-data.js
-// Auto-updated 2026-07-20 — do not edit manually
+// Auto-updated 2026-07-21 — do not edit manually
 
 var FILMS_DATA = {
-  date: "2026-07-20",
+  date: "2026-07-21",
   film: {
-    title: "Closely Observed Trains",
-    director: "Jiří Menzel",
-    year: 1966,
-    genres: ["Comedy", "Drama", "War"],
-    desc: "Set in a provincial Czechoslovak railway station during the waning days of Nazi occupation, this tender and wryly comic coming-of-age story follows a young trainee dispatcher more preoccupied with his romantic failures than the war raging around him. Jiří Menzel balances bawdy humor and melancholy with extraordinary lightness, finding enormous humanity in the small absurdities of everyday life under occupation. The film belongs to the golden wave of Czech New Cinema and carries that movement\'s signature gift for making you laugh and ache simultaneously, sometimes within the same breath. Václav Neckář's sheepish, guileless performance anchors the film perfectly, and the ending arrives with a quiet devastation that lingers for days. It won the Academy Award for Best Foreign Language Film and remains one of European cinema\'s most genuinely beloved works.",
-    cast: ["Václav Neckář", "Jitka Bendová", "Josef Somr"],
-    rating: 98,
+    title: "The Harder They Come",
+    director: "Perry Henzell",
+    year: 1972,
+    genres: ["Crime", "Drama", "Music"],
+    desc: "A young Jamaican man arrives in Kingston with dreams of becoming a reggae star, only to find the music industry rigged against him and poverty closing in from every side. Perry Henzell\'s debut feature is a raw, electrifying portrait of desperation and myth-making, shot on location with a vibrancy that no studio could manufacture. Jimmy Cliff is magnetic as Ivanhoe Martin, a man who transforms his own downfall into legend — the film practically invented the blueprint for how music and outlaw mythology intertwine on screen. Its soundtrack, featuring Cliff\'s own songs alongside cuts from Toots and the Maytals and Desmond Dekker, brought reggae to international audiences and remains one of cinema\'s greatest albums. Gritty, romantic, furious, and deeply human, it is a film that burns like a torch.",
+    cast: ["Jimmy Cliff", "Janet Bartley", "Carl Bradshaw"],
+    rating: 95,
     ratingSource: "Rotten Tomatoes",
-    ratingExtra: "1 Academy Award (Best Foreign Language Film)",
-    posterUrl: "https://upload.wikimedia.org/wikipedia/en/8/88/Closelywatchedtrains.jpg"
+    ratingExtra: "Selected for UNESCO Memory of the World Register",
+    posterUrl: "https://upload.wikimedia.org/wikipedia/en/9/94/Hardertheycome.jpg"
   }
 };

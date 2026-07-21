@@ -3,6 +3,45 @@
 
 var RICS_LOG = [
   {
+    "date": "2026-07-21",
+    "topic": "Development Finance: Loan Facilities, Drawdown Mechanics and DSCR in Residential-Led Schemes",
+    "module": "Project Finance",
+    "level": 3,
+    "apc_competency": "Project Finance (Level 3)",
+    "focus": "This lesson examines how senior development loan facilities are structured, how drawdown mechanics operate against certified works values, and how Debt Service Coverage Ratio (DSCR) and loan-to-cost (LTC) covenants constrain and shape decision-making on residential-led schemes. For a candidate at Latimer, understanding these mechanics is essential when stress-testing appraisals, preparing investment committee papers, and coordinating with funders on mixed-tenure schemes where grant, equity and debt interact.",
+    "image": "https://images.unsplash.com/photo-1607900840367-a83dcd63296d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxEZXZlbG9wbWVudCUyMEZpbmFuY2UlM0ElMjBMb2FuJTIwVUslMjBwcm9wZXJ0eSUyMGFyY2hpdGVjdHVyZSUyMGJ1aWxkaW5nJTIwZXh0ZXJpb3J8ZW58MHwwfHx8MTc4NDYxMTAwMXww&ixlib=rb-4.1.0&q=80&w=1080",
+    "content": [],
+    "summary": [
+      "Senior development loan facilities are governed by LTC (typically 55\u201370%) and LTGDV (typically 55\u201365%) covenants \u2014 both must be satisfied simultaneously; the binding constraint is whichever produces the lower loan amount.",
+      "Drawdowns are certified by an independent monitoring surveyor (IMS) against works completed; a 4\u20136 week certification lag creates a working capital float that must be modelled explicitly in the appraisal cashflow.",
+      "AHP grant is milestone-triggered (SoS and completion tranches), not drawn against certified costs \u2014 the timing mismatch with debt drawdown creates a cashflow gap that the investment committee paper must address and that the development manager must track against grant conditions throughout the project.",
+      "DSCR (minimum 1.20x\u20131.35x) is the governing covenant when construction debt is refinanced onto a term loan against retained affordable/PRS income \u2014 the net rental yield on retained units must be modelled to confirm the term facility headroom and the residual equity gap the grant must plug.",
+      "Interest on development facilities is rolled (capitalised) and compounds on the drawn balance \u2014 always model finance costs on a monthly S-curve cashflow basis rather than the simplified 50% of peak debt rule-of-thumb, as the latter commonly understates finance costs by \u00a3200k\u2013\u00a3400k on a mid-size residential scheme."
+    ],
+    "qa": [
+      {
+        "q": "A scheme has TDC of \u00a330m and GDV of \u00a342m. The senior lender offers 65% LTC and 60% LTGDV. What is the maximum senior loan, and which covenant is binding?",
+        "a": "65% LTC = \u00a319.5m. 60% LTGDV = \u00a325.2m. The binding constraint is the lower figure: \u00a319.5m (LTC). The equity/grant gap is \u00a310.5m. The LTGDV test is not binding in this case, but it would become so if GDV fell \u2014 for example, if GDV dropped to \u00a330m (equal to TDC), the LTGDV cap would reduce the maximum loan to \u00a318m, below the LTC limit, meaning a value decline of 28.6% would shift the binding constraint from LTC to LTGDV."
+      },
+      {
+        "q": "What are the typical conditions precedent to first drawdown on a development facility, and who is responsible for satisfying them in your role?",
+        "a": "Typical CPs include: satisfactory title and planning legal reports from lender\\'s solicitors; executed building contract (JCT or NEC) and cost plan; contractor\\'s and key consultants' collateral warranties in favour of the lender; evidence of all-risks and professional indemnity insurance; equity-in-first confirmation; executed Homes England grant agreement (on AHP schemes); and NHBC or equivalent warranty registration. As development manager, I am responsible for coordinating these with legal, finance and the design team \u2014 I maintain a CP tracker with owner, deadline and status, and report outstanding items at the monthly project team meeting, as any delay to CP satisfaction directly holds up the site start programme."
+      },
+      {
+        "q": "Explain how you would stress-test the finance cost assumption in a development appraisal for an investment committee paper.",
+        "a": "I would build a monthly cashflow model with costs drawn per the agreed construction programme S-curve, applying the interest rate (SONIA + agreed margin) to the outstanding drawn balance each month, compounding monthly. I would then run three scenarios: (1) base case at current SONIA (approximately 4.2% in mid-2026) plus the agreed margin; (2) +100bps SONIA stress; (3) +200bps SONIA stress, representing a severe rate shock. On a \u00a323m facility drawn over 28 months, a +200bps shock typically adds \u00a3350k\u2013\u00a3500k to finance costs. I would also model a 3-month programme overrun, which extends the interest roll period and can add a further \u00a3250k\u2013\u00a3350k. Both sensitivities would be presented in the IC paper with their impact on profit on cost and GDV margin."
+      },
+      {
+        "q": "On a mixed-tenure scheme where Latimer retains 55 affordable rent units and refinances onto a term loan at 4.5% interest, how would you calculate the maximum loan the retained portfolio can support under a 1.25x DSCR covenant?",
+        "a": "Step 1: Estimate gross annual rent. At average social rent of \u00a3130/week: 55 \u00d7 \u00a3130 \u00d7 52 = \u00a3371,800/yr gross. Step 2: Apply net income ratio. Assuming 68% net-to-gross (voids, management, major repairs): \u00a3371,800 \u00d7 68% = \u00a3252,824 NOI. Step 3: Apply DSCR covenant. Maximum annual debt service = \u00a3252,824 / 1.25 = \u00a3202,259. Step 4: Calculate maximum loan. At 4.5% interest on a non-amortising term loan: \u00a3202,259 / 4.045% [interest only] = approximately \u00a34.5m. If the loan amortises at, say, 2% per annum, total debt service per \u00a31m = \u00a365,000, so maximum loan = \u00a3202,259 / \u00a365,000 per \u00a31m \u2248 \u00a33.11m. The difference illustrates why the amortisation assumption is critical and must be agreed with the treasury team before the appraisal is finalised."
+      },
+      {
+        "q": "A private JV partner is pressing to release equity distributions early from sales receipts, before mezz is fully repaid. What are the risks and how would you address them in the JV documentation?",
+        "a": "Releasing equity ahead of mezz repayment breaches the typical capital stack subordination order and would constitute an event of default under the facility agreement if the senior lender has a prohibition on junior distributions without consent \u2014 a standard lender protection. The risks to Latimer are: (1) facility default triggering step-in rights or acceleration; (2) mezz lender enforcement; (3) reputational and governance risk if IC-approved waterfall is departed from without board authority. I would address this by ensuring the JV agreement and the facility agreement are aligned on the waterfall sequence, with an explicit prohibition on equity distributions until senior debt and mezz are repaid in full. Any departure would require a formal consent process involving the senior lender, mezz provider and Latimer\\'s board, which I would flag as a project risk requiring escalation and legal advice."
+      }
+    ]
+  },
+  {
     "date": "2026-07-20",
     "topic": "CIL Liability, Self-Build Exemptions and Phased Payment Structures in Residential-Led Schemes",
     "module": "Legal and Regulatory Compliance",

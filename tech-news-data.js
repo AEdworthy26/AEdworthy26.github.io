@@ -1,61 +1,61 @@
 // tech-news-data.js
-// Auto-updated 2026-07-20 — do not edit manually
+// Auto-updated 2026-07-21 — do not edit manually
 
 var TECH_NEWS = {
-  date: "2026-07-20",
+  date: "2026-07-21",
   main: {
-    title: "India\'s First Privately-Developed Rocket Reaches Orbit on Dramatic Debut Launch",
-    category: "Space",
+    title: "Anthropic\'s Landmark $1.5B Copyright Settlement Receives Final Approval",
+    category: "AI & Law",
     content: [
-      "In a historic milestone for India\'s burgeoning private space industry, the country\'s first privately-developed rocket has successfully reached orbit on its very first attempt. The achievement stunned even those closest to the project, with one participant reportedly saying, 'On the first attempt, reaching orbit, I never thought it was possible.' The feat marks a transformative moment not just for India, but for the global landscape of commercial spaceflight.",
-      "Reaching orbit on a debut launch is an extraordinarily rare accomplishment in the history of rocketry. Most rockets — even those developed by well-funded, experienced organizations — require multiple attempts before successfully achieving orbital velocity and altitude. The fact that an Indian private company managed this on its first outing places it in an elite club alongside only a handful of other programs worldwide.",
-      "India\'s space sector has been undergoing rapid liberalization in recent years, with the government opening the industry to private players after decades of dominance by the state-run Indian Space Research Organisation (ISRO). This policy shift was designed to encourage entrepreneurship and attract investment into what is one of the most technically demanding industries in the world. Today\'s launch represents the clearest validation yet that those reforms are bearing fruit.",
-      "The successful orbital insertion is expected to generate significant commercial and strategic interest. Private launch capability gives India a homegrown alternative for deploying satellites, which has national security, communications, and scientific implications. It also positions Indian aerospace startups as potential competitors in the global commercial launch market, which has seen explosive growth in recent years driven by demand for satellite internet constellations and Earth observation platforms.",
-      "The achievement is likely to inspire a new generation of Indian engineers and entrepreneurs to enter the space industry, deepening the talent pool that will be needed for future ambitions. It also sends a signal to international investors that Indian private space companies are capable of executing at the highest technical level. With this dramatic debut now in the history books, all eyes will be on what this pioneering company plans to launch next."
+      "A federal court has granted final approval to Anthropic\'s landmark $1.5 billion copyright settlement, closing out one of the most significant legal battles in the brief but contentious history of generative artificial intelligence. The case centered on allegations that Anthropic used copyrighted written works without authorization to train its Claude AI models. The approval marks a watershed moment in how the legal system is beginning to grapple with the intellectual property implications of large-scale AI development.",
+      "The sheer scale of the settlement — $1.5 billion — underscores just how seriously courts and the broader legal community are taking the question of whether AI companies must compensate rights holders for training data. Anthropic, backed by billions in investment from companies including Amazon and Google, had the financial resources to absorb such a settlement, but smaller AI startups may face existential challenges if similar rulings are extended across the industry. The case drew intense scrutiny from authors, publishers, and creative professionals who have long argued that their work is being exploited without consent or compensation.",
+      "Despite the landmark nature of the payout, legal experts and industry observers are quick to note that the settlement does not resolve the broader, thornier question of whether using copyrighted materials to train AI models constitutes fair use under U.S. law. That fundamental legal question remains unanswered and is being actively litigated in several other ongoing cases across the country. Until a definitive ruling or legislation addresses the issue, AI companies will continue to operate in a zone of considerable legal uncertainty.",
+      "The settlement sends a powerful signal to the rest of the AI industry that copyright liability is a real and quantifiable financial risk, not merely a theoretical concern. Companies developing large language models and other AI systems trained on vast datasets of text, images, music, and code may now feel increased pressure to negotiate licensing deals with content owners proactively. Several major publishers and media organizations have already begun striking licensing agreements with AI developers in anticipation of further legal developments.",
+      "For creators and rights holders, the approved settlement represents a partial but meaningful victory — one that establishes a precedent that compensation is both possible and achievable. However, many in the creative community argue that a one-time settlement, however large, does not address the ongoing and systemic nature of AI training on copyrighted works. The conversation is now shifting toward what a sustainable, long-term licensing framework for AI training data might look like, and whether Congress will ultimately need to step in to provide clarity that the courts alone cannot offer.",
     ],
-    image: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxJbmRpYSU1Q3xlbnwwfDB8fHwxNzg0NTIzODY2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-    source: "Ars Technica",
-    sourceUrl: "https://arstechnica.com/space/2026/07/indias-first-privately-developed-rocket-reaches-orbit-on-dramatic-debut-launch/"
+    image: "https://images.unsplash.com/photo-1782513927216-d1b4610439f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxBbnRocm9waWMlNUN8ZW58MHwwfHx8MTc4NDYxMDI3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+    source: "TechCrunch",
+    sourceUrl: "https://techcrunch.com/2026/07/20/anthropics-landmark-1-5b-copyright-settlement-is-approved/"
   },
   secondary: [
     {
       id: "tc1",
-      title: "Google-Backed FireSat Satellites Launch to Detect Wildfires Early",
-      summary: "A Google-backed constellation of satellites designed to detect wildfires has launched at a critical moment, as smoke from major fires continues to choke communities across the US and Canada.",
+      title: "Sony Sues Udio\'s AI Music Generator Over 30,000 Copyrighted Songs",
+      summary: "Sony Music Entertainment has filed a sweeping lawsuit against AI music generator Udio, alleging copyright infringement across more than 30,000 of its songs.",
       body: [
-        "The FireSat program, backed by Google, has successfully launched a new batch of satellites specifically engineered to spot wildfires that conventional satellites typically miss. The timing is particularly urgent, as smoke from ongoing fires is blanketing large parts of the United States and Canada, underscoring the growing need for faster and more precise wildfire detection tools.",
-        "Early detection is widely considered one of the most powerful tools for limiting the destruction caused by wildfires, as it allows ground crews and aerial resources to respond before a fire grows beyond control. The FireSat constellation represents a significant technological investment in that mission, potentially giving fire agencies a critical edge in the race against rapidly spreading blazes."
+        "The lawsuit, filed in a New York court, covers an extraordinary range of Sony\'s catalog — from Elvis Presley\'s 'Hound Dog' to Beyoncé's 'Say My Name' and Harry Styles' 'As It Was.' Sony alleges that Udio\'s AI music generation tool was trained on or otherwise reproduced its copyrighted recordings without authorization.",
+        "The case represents one of the most expansive copyright actions yet taken against an AI music platform and signals that major record labels are prepared to pursue aggressive legal strategies to protect their catalogs. Coming on the heels of Anthropic\'s copyright settlement, the music industry\'s escalating legal battles with AI companies suggest that the question of training data rights is far from settled."
       ],
-      image: "https://cdn.arstechnica.net/wp-content/uploads/2026/07/Operational-FireSat-satellites-1152x648.png",
-      source: "Ars Technica",
-      url: "https://arstechnica.com/space/2026/07/google-backed-satellites-for-wildfire-detection-launch-as-smoke-chokes-us-canada/",
-      category: "Space"
+      image: "https://images.unsplash.com/photo-1617468264204-92588bd6485a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTb255JTIwU3VlcyUyMFVkaW8lNUN8ZW58MHwwfHx8MTc4NDYxMDI3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "The Verge",
+      url: "https://www.theverge.com/tech/968375/sony-udio-lawsuit-songs-ai-copyright",
+      category: "AI & Law"
     },
     {
       id: "tc2",
-      title: "Netflix Paid $587 Million for Ben Affleck\'s AI Filmmaking Startup",
-      summary: "Netflix has revealed it acquired InterPositive, an AI filmmaking startup co-founded by actor Ben Affleck, for $587 million in cash.",
+      title: "Firefighting Drones Take Shape as Wildfires Rage Nearly Year-Round Across the US",
+      summary: "California and the XPRIZE competition are putting autonomous drones to the test to determine whether they can detect and suppress wildfires in their earliest stages.",
       body: [
-        "Netflix confirmed that it paid $587 million in cash for InterPositive, an artificial intelligence-focused filmmaking startup that counts Ben Affleck among its co-founders. The eye-catching acquisition signals how seriously the streaming giant is investing in AI-driven tools to reshape the way films and television content are produced.",
-        "The deal is one of the largest known acquisitions of an AI startup by a major entertainment company, reflecting broader industry anxiety about being left behind as generative AI rapidly transforms creative workflows. For Netflix, owning proprietary AI filmmaking technology could offer a meaningful competitive advantage in an increasingly crowded streaming market."
+        "With wildfires increasingly burning across the United States in every season rather than just summer, engineers and emergency management officials are racing to develop drone-based solutions that can respond faster than traditional firefighting aircraft. The XPRIZE competition has attracted numerous teams developing autonomous drones capable of identifying ignition points and deploying suppressants before fires spread beyond control.",
+        "California, which has borne the brunt of the nation\'s wildfire crisis, is playing a central role in testing these emerging technologies in real-world conditions. If successful, AI-guided firefighting drones could dramatically reduce response times and protect communities that are increasingly vulnerable to fast-moving fires exacerbated by drought and high winds."
       ],
-      image: "https://images.pexels.com/photos/6142159/pexels-photo-6142159.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      source: "TechCrunch",
-      url: "https://techcrunch.com/2026/07/19/netflix-paid-587m-for-ben-afflecks-ai-filmmaking-startup/",
-      category: "AI"
+      image: "https://cdn.arstechnica.net/wp-content/uploads/2026/07/Screenshot-2026-07-20-at-5.24.12-PM-1152x648.png",
+      source: "Ars Technica",
+      url: "https://arstechnica.com/ai/2026/07/firefighting-drones-in-the-works-as-wildfires-plague-us-nearly-year-round/",
+      category: "Technology & Science"
     },
     {
       id: "tc3",
-      title: "China\'s Moonshot AI Unveils Kimi K3, Claiming It Rivals OpenAI and Anthropic",
-      summary: "Chinese AI company Moonshot AI has unveiled its massive new Kimi K3 model, asserting it can compete directly with the leading artificial intelligence systems from American firms OpenAI and Anthropic.",
+      title: "Google Developing New Custom AI Chip to Boost Gemini Efficiency",
+      summary: "Alphabet is reportedly working on a new in-house chip specifically engineered to run its Gemini AI models more efficiently and at lower cost.",
       body: [
-        "Moonshot AI, one of China\'s most prominent artificial intelligence companies, has announced Kimi K3, a large-scale AI model the company says is capable of matching the performance of top-tier systems from OpenAI and Anthropic. The release adds another serious contender to an increasingly competitive global AI race that has seen Chinese companies close the gap with their American counterparts at a remarkable pace.",
-        "Kimi K3's debut is part of a broader pattern of Chinese AI firms publicly benchmarking their models against American leaders, a strategy that both signals technical confidence and applies competitive pressure on the industry. Whether K3 truly rivals the best American models will be scrutinized heavily by independent researchers and businesses evaluating it for enterprise use."
+        "The new chip, currently in development at Google, is designed to reduce the computational overhead associated with running large-scale AI models like Gemini, potentially cutting both energy consumption and operational costs. Custom silicon has become a key competitive battleground in the AI industry, with companies seeking to reduce dependence on third-party GPU suppliers like Nvidia.",
+        "Google has a history of developing its own AI accelerators through its Tensor Processing Unit (TPU) line, and this latest effort suggests the company is doubling down on that strategy as inference demands from Gemini continue to grow. Greater chip efficiency could allow Google to offer faster, cheaper AI services and maintain a competitive edge against rivals like OpenAI, Anthropic, and Meta."
       ],
-      image: "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxDaGluYSU1Q3xlbnwwfDB8fHwxNzg0NTIzODY3fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "BBC News",
-      url: "https://www.bbc.co.uk/news/articles/cy9w4q8pgp0o?at_medium=RSS&at_campaign=rss",
-      category: "AI"
+      image: "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxHb29nbGUlMjBEZXZlbG9waW5nJTIwTmV3JTIwQ3VzdG9tJTIwQUklMjBDaGlwJTIwdG8lMjBCb29zdCUyMEdlbWluaSUyMEVmZmljaWVuY3l8ZW58MHwwfHx8MTc4NDYxMDI3M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "TechCrunch",
+      url: "https://techcrunch.com/2026/07/20/google-is-working-on-a-new-ai-chip-designed-to-make-gemini-more-efficient/",
+      category: "AI & Hardware"
     }
   ]
 };

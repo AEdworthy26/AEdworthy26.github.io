@@ -1,19 +1,19 @@
 // reads-data.js
-// Auto-updated 2026-07-20 — do not edit manually
+// Auto-updated 2026-07-21 — do not edit manually
 
 var READS_DATA = {
-  date: "2026-07-20",
+  date: "2026-07-21",
   book: {
-    title: "The Nineties",
-    author: "Chuck Klosterman",
-    year: 2022,
-    genres: ["Cultural History", "Pop Culture", "Criticism"],
-    desc: "Chuck Klosterman\'s dazzling cultural autopsy of the 1990s argues that the decade was defined by a single paradox: it was the last era before the internet rewired consciousness, yet it was already rehearsing all the anxieties that would consume us afterward. Moving fluidly through grunge, reality TV, third-party politics, Michael Jordan, and the strange moral weight of irony, Klosterman dissects how a generation processed reality when the stakes still felt optional. His prose is wickedly funny, intellectually restless, and disarmingly honest about the limits of nostalgia itself. The result is less a trip down memory lane than a forensic examination of how collective memory gets manufactured in the first place.",
-    whyRead: "In a moment when culture feels exhaustingly accelerated and self-aware, Klosterman\'s portrait of the last decade that didn\'t know it was being watched lands with unexpected force — equal parts comic and genuinely clarifying.",
-    rating: 3.8,
+    title: "Never Let Me Go",
+    author: "Kazuo Ishiguro",
+    year: 2005,
+    genres: ["Literary Fiction", "Dystopian", "Coming of Age"],
+    desc: "Told in the quiet, reminiscing voice of Kathy H., this novel unfolds at a seemingly idyllic English boarding school called Hailsham, where children grow up painting, writing poetry, and falling into the tender complications of friendship and first love — until the reader slowly, devastatingly understands what these children actually are and what fate awaits them. Ishiguro never raises his voice: the horror arrives through accumulation, through what characters refuse to say aloud, through the heartbreaking way people accommodate themselves to the unacceptable. It is a book about mortality, memory, and the strange consolations of art — asking whether creativity can redeem a life that has been defined entirely by others. Few novels in recent decades have been so technically controlled and so emotionally annihilating at the same time.",
+    whyRead: "In an era of loud, urgent fiction, Ishiguro\'s restraint hits harder than any shouting — this is the rare novel that changes how you think about your own life after you close it.",
+    rating: 3.9,
     ratingSource: "Goodreads",
-    ratingCount: "22,000+",
-    coverUrl: "https://covers.openlibrary.org/b/id/11387005-L.jpg",
-    amazonUrl: "https://www.amazon.co.uk/dp/0735217955"
+    ratingCount: "700,000+",
+    coverUrl: "https://covers.openlibrary.org/b/id/1047334-L.jpg",
+    amazonUrl: "https://www.amazon.co.uk/dp/0571224113"
   }
 };

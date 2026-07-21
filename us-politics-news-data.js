@@ -1,60 +1,60 @@
 // us-politics-news-data.js
-// Auto-updated 2026-07-20 — do not edit manually
+// Auto-updated 2026-07-21 — do not edit manually
 
 var US_POLITICS_NEWS = {
-  date: "2026-07-20",
+  date: "2026-07-21",
   main: {
-    title: "Federal Agents Were Told FBI Will No Longer Investigate ICE Confrontations",
+    title: "With August Recess Days Away, Congress Races to Clear Crowded Legislative Agenda",
     category: "Politics",
     content: [
-      "In a significant shift in federal law enforcement policy, guidance was reportedly shared with FBI agents around the country indicating that the bureau would no longer investigate confrontations involving Immigration and Customs Enforcement officers. The directive, which circulated in recent days, has raised alarm among civil liberties advocates and some current and former federal officials who see it as a departure from longstanding norms of accountability within law enforcement. The move would effectively remove a key oversight mechanism that had historically allowed for independent review when ICE agents were involved in shootings or other serious incidents.",
-      "Senior officials within the administration have denied that any formal policy change is in the works, even as the guidance appears to have reached field offices across the nation. The contradiction between what agents on the ground reportedly received and what leadership is publicly stating has created confusion and concern within federal law enforcement circles. Such a discrepancy raises questions about how policy decisions are being communicated — and potentially implemented — within the executive branch\'s sprawling national security apparatus.",
-      "The reported change comes at a time when ICE has been dramatically expanding its operations under the Trump administration, conducting large-scale immigration enforcement actions in cities and towns across the United States. With higher operational tempo comes a statistically greater likelihood of confrontations, making independent oversight of those incidents all the more consequential. Critics argue that removing FBI investigative authority over ICE confrontations would create a troubling blind spot in accountability precisely when it is needed most.",
-      "Historically, the FBI has played a role in investigating potential civil rights violations and use-of-force incidents involving other federal agencies, a function that has been considered a cornerstone of inter-agency checks and balances. Legal experts have noted that if the change is formalized, it could have broad implications for how accountability is structured across all federal law enforcement agencies, not just ICE. The precedent of one federal agency shielding another from independent scrutiny would represent a notable erosion of internal governmental checks.",
-      "Congress has not yet formally responded to the reported policy shift, though it is likely to draw scrutiny from lawmakers on oversight committees who have authority to demand explanations from both the FBI and the Department of Homeland Security. The story underscores broader tensions in Washington over the boundaries of executive power, immigration enforcement, and the independence of federal investigative bodies. As the administration continues to push aggressive immigration policies, the question of who watches the watchmen inside the federal government has never been more politically charged."
+      "House Speaker Mike Johnson is pushing hard to advance a packed legislative agenda before the House adjourns for its August recess, with just one week remaining on the congressional calendar. The to-do list is substantial and includes major priorities that Republicans have been working to deliver for months. Johnson has made clear he expects significant progress on multiple fronts before lawmakers leave Washington for the summer break.",
+      "Among the most consequential items on the agenda is a $95 billion party-line budget reconciliation bill, which has faced significant internal Republican resistance. GOP strategists have openly acknowledged the hurdles that remain in moving the measure forward, with divisions within the conference creating complications for leadership. Republican strategist Rob Burgess noted in recent commentary that the path to passing the reconciliation bill is far from clear, even as the clock ticks down toward the recess deadline.",
+      "Speaker Johnson has also indicated he wants to advance the president\'s election integrity bill before lawmakers depart, a measure that reflects the administration\'s continued focus on reshaping how American elections are conducted. The bill has drawn scrutiny from critics who argue it could complicate voting access, while supporters frame it as a necessary step to restore public confidence in the electoral system. Its inclusion on the pre-recess agenda signals that Republican leadership views it as a political priority heading into the fall campaign season.",
+      "A stock trading ban for lawmakers is also on Johnson\'s list, a proposal that has drawn unusual bipartisan interest given widespread public frustration over members of Congress trading individual stocks while in office. The measure would represent a significant change in how legislators manage their personal finances, and its inclusion alongside partisan priorities suggests leadership is aware of the political value of being seen tackling ethics concerns. Whether the proposal can survive the compressed timeline and competing legislative demands remains an open question.",
+      "The compressed schedule underscores the broader tensions within the Republican-controlled Congress, where thin margins and divergent factions have repeatedly complicated the process of turning campaign promises into law. Johnson faces the dual challenge of satisfying conservative hardliners who want deeper cuts and policy changes, while keeping moderate members on board for final votes. The coming week is expected to be a defining test of his speakership and the GOP\'s ability to govern effectively in the lead-up to the midterm election cycle."
     ],
-    image: "https://static01.nyt.com/images/2026/07/17/multimedia/17dc-fbi-top-cqhk/17dc-fbi-top-cqhk-mediumSquareAt3X.jpg",
-    source: "The New York Times",
-    sourceUrl: "https://www.nytimes.com/2026/07/19/us/politics/fbi-ice-agents-investigations-shootings.html"
+    image: "https://images.unsplash.com/photo-1603119761708-9252f043c139?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxXaXRoJTIwQXVndXN0JTIwUmVjZXNzJTIwRGF5cyUyMEF3YXklMkMlMjBDb25ncmVzcyUyMFJhY2VzJTIwdG8lMjBDbGVhciUyMENyb3dkZWQlMjBMZWdpc2xhdGl2ZSUyMEFnZW5kYXxlbnwwfDB8fHwxNzg0NjEwMTg3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    source: "NPR",
+    sourceUrl: "https://www.npr.org/2026/07/20/nx-s1-5897469/with-just-a-week-left-until-august-recess-congress-faces-long-to-do-list"
   },
   secondary: [
     {
       id: "us1",
-      title: "Trump Says Election System Is Broken — But Swing Voters Are Skeptical",
-      summary: "President Trump delivered a primetime speech claiming the U.S. election system is broken, but swing state voters are responding with uncertainty and skepticism.",
+      title: "Trump-Nominated Judge Rules Against Administration in Minnesota Sanctuary Case",
+      summary: "A federal judge appointed by President Trump has ruled against the administration\'s argument that Minnesota\'s sanctuary laws violate the Supremacy Clause of the Constitution.",
       body: [
-        "Following President Trump\'s primetime address in which he declared the American election system fundamentally broken, NPR canvassed swing state voters to gauge their reaction to his sweeping claims. Many of those voters expressed confusion or ambivalence, struggling to reconcile Trump\'s assertions with their own experiences at the ballot box.",
-        "The speech has reignited a long-running national debate about election integrity that has defined much of Trump\'s political identity since 2020. Georgia Secretary of State officials, including Gabriel Sterling, have pushed back on the claims, defending the security and reliability of their state\'s election infrastructure in separate interviews."
+        "In a notable legal setback, a Trump-nominated federal judge rejected the administration\'s assertion that Minnesota sanctuary laws are unconstitutional under the Supremacy Clause, which holds that federal law takes precedence over state and local statutes. The ruling, filed on Monday, dealt a blow to the White House\'s broader legal strategy of dismantling local immigration policies that limit cooperation with federal enforcement.",
+        "The case is part of a wider pattern of the administration using federal courts to challenge so-called sanctuary jurisdictions, and the ruling from a judge within Trump\'s own judicial appointments carries particular symbolic weight. It signals that even loyalist-nominated jurists may not be reliable allies when the administration\'s legal arguments are seen as overreaching."
       ],
-      image: "https://images.unsplash.com/photo-1782998307726-f93ec14eda24?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUcnVtcCUyMFNheXMlMjBFbGVjdGlvbiUyMFN5c3RlbSUyMElzJTIwQnJva2VuJTIwJUUyJTgwJTk0JTIwQnV0JTIwU3dpbmclMjBWb3RlcnMlMjBBcmUlMjBTa2VwdGljYWx8ZW58MHwwfHx8MTc4NDUyMzc4M3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "NPR",
-      url: "https://www.npr.org/2026/07/19/nx-s1-5898445/trump-said-the-election-system-is-broken-what-do-swing-voters-make-of-the-claim",
+      image: "https://thehill.com/wp-content/uploads/sites/2/2026/02/ice_immigration_minnesota_02032026_GettyImages-2259234673-1.jpg?w=900",
+      source: "The Hill",
+      url: "https://thehill.com/regulation/court-battles/5979646-judge-rejects-trump-sanctuary-laws/",
       category: "Politics"
     },
     {
       id: "us2",
-      title: "$600,000 for a Presidential Pardon? Inside the Booming Clemency Lobbying Industry",
-      summary: "A growing and lucrative lobbying industry has emerged around securing presidential pardons under the second Trump administration, with fees reportedly reaching into the hundreds of thousands of dollars.",
+      title: "Trump Rejected Nearly 6,000 Clemency Applications Despite Expectations of Pardon Wave",
+      summary: "President Trump granted fewer than 20 pardons around the country\'s 250th birthday celebrations, rejecting close to 6,000 clemency applications that had been submitted in hopes of relief.",
       body: [
-        "NOTUS reporter Jasmine Wright has documented a surging industry of clemency lobbyists operating in Washington, with some charging clients as much as $600,000 to navigate the process of obtaining a presidential pardon from the Trump White House. The scale and cost of this shadow industry has drawn fresh scrutiny to how the pardon process is being administered and who has access to it.",
-        "Presidential pardons are a constitutionally granted executive power, but the commercialization of access to that power raises serious ethical and legal questions about equity and corruption. Critics argue that a system where wealthy defendants can pay vast sums for professional advocacy creates a two-tiered justice system that undermines the rule of law."
+        "Thousands of individuals who had submitted clemency applications hoping for presidential pardons tied to America\'s 250th anniversary celebrations were left disappointed after Trump granted fewer than 20 pardons on July 3rd. The outcome stood in stark contrast to the widespread anticipation that had built around the milestone date as a potential moment for a significant wave of executive clemency.",
+        "The mass rejection of nearly 6,000 applications highlights the gap between public expectations and the administration\'s actual use of the pardon power, a tool that Trump wielded prominently during his first term. Critics and advocates for criminal justice reform argued the decision represented a missed opportunity, while the administration offered no detailed public explanation for the scale of the rejections."
       ],
-      image: "https://images.unsplash.com/photo-1771736007142-e1348a02f006?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHwlMjQ2MDAlMkMwMDAlMjBmb3IlMjBhJTIwUHJlc2lkZW50aWFsJTIwUGFyZG9uJTNGJTIwSW5zaWRlJTIwdGhlJTIwQm9vbWluZyUyMENsZW1lbmN5JTIwTG9iYnlpbmclMjBJbmR1c3RyeXxlbnwwfDB8fHwxNzg0NTIzNzg0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "NPR",
-      url: "https://www.npr.org/2026/07/19/nx-s1-5896394/600-000-for-a-presidential-pardon-inside-the-growing-industry-of-clemency-lobbying",
+      image: "https://static01.nyt.com/images/2026/07/20/multimedia/20dc-pardons-ctbl/20dc-pardons-ctbl-mediumSquareAt3X.jpg",
+      source: "The New York Times",
+      url: "https://www.nytimes.com/2026/07/20/us/politics/trump-rejected-clemency-applications.html",
       category: "Politics"
     },
     {
       id: "us3",
-      title: "Trump Says New Air Force One Will Be Taken Out of Service for Major Upgrades",
-      summary: "President Trump announced that the Qatari-donated plane currently serving as Air Force One will be temporarily taken out of service to be upgraded with enhanced capabilities.",
+      title: "Republicans Resist Embracing Trump\'s Renewed 2020 Election Fraud Claims",
+      summary: "Despite pressure from President Trump, many Republican candidates and officials are declining to amplify his latest election fraud allegations, preferring to focus on issues they consider more relevant to voters.",
       body: [
-        "President Trump announced that the aircraft donated by Qatar and currently in use as Air Force One will be pulled from service to undergo significant modifications, which he described as getting the plane 'maxed out.' The Qatari-donated Boeing 747 has been under intense scrutiny since it entered presidential service, with national security experts and lawmakers questioning whether it carries adequate defensive systems to protect the president.",
-        "The decision to retrofit the plane rather than retire it signals that the administration intends to continue using the controversial aircraft despite bipartisan concerns about its origins and security readiness. The announcement adds another chapter to the ongoing political debate over the propriety of the United States accepting a luxury aircraft from a foreign government for presidential use."
+        "President Trump has pressed Republican candidates to embrace his renewed claims about 2020 election fraud, but many within the party have shown little appetite for relitigating that ground as they head into competitive races. GOP officials and strategists say the focus among voters has shifted, and candidates are wary of getting pulled back into debates that cost them in previous election cycles.",
+        "The pushback from within his own party reflects ongoing tension between Trump\'s political instincts and the preferences of Republican operatives working to expand the party\'s coalition. A Georgia Secretary of State official also weighed in separately, directly challenging the factual basis of some of Trump\'s claims about election security in that state."
       ],
-      image: "https://static01.nyt.com/images/2026/07/19/multimedia/19DC-Trump-plane-wqkl/19DC-Trump-plane-wqkl-mediumSquareAt3X.jpg",
-      source: "The New York Times",
-      url: "https://www.nytimes.com/2026/07/19/us/politics/trump-air-force-modifications.html",
+      image: "https://images.unsplash.com/photo-1550531996-ff3dcede9477?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxSZXB1YmxpY2FucyUyMFJlc2lzdCUyMEVtYnJhY2luZyUyMFRydW1wJTVDfGVufDB8MHx8fDE3ODQ2MTAxODh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "The Washington Post",
+      url: "https://www.washingtonpost.com/politics/2026/07/20/trump-latest-election-push-finds-little-traction-inside-gop/",
       category: "Politics"
     }
   ]
