@@ -1,18 +1,18 @@
 // films-data.js
-// Auto-updated 2026-07-21 — do not edit manually
+// Auto-updated 2026-07-22 — do not edit manually
 
 var FILMS_DATA = {
-  date: "2026-07-21",
+  date: "2026-07-22",
   film: {
-    title: "The Harder They Come",
-    director: "Perry Henzell",
-    year: 1972,
-    genres: ["Crime", "Drama", "Music"],
-    desc: "A young Jamaican man arrives in Kingston with dreams of becoming a reggae star, only to find the music industry rigged against him and poverty closing in from every side. Perry Henzell\'s debut feature is a raw, electrifying portrait of desperation and myth-making, shot on location with a vibrancy that no studio could manufacture. Jimmy Cliff is magnetic as Ivanhoe Martin, a man who transforms his own downfall into legend — the film practically invented the blueprint for how music and outlaw mythology intertwine on screen. Its soundtrack, featuring Cliff\'s own songs alongside cuts from Toots and the Maytals and Desmond Dekker, brought reggae to international audiences and remains one of cinema\'s greatest albums. Gritty, romantic, furious, and deeply human, it is a film that burns like a torch.",
-    cast: ["Jimmy Cliff", "Janet Bartley", "Carl Bradshaw"],
-    rating: 95,
+    title: "Rattlesnake in a Cooler",
+    director: "Věra Chytilová",
+    year: 1966,
+    genres: ["Comedy", "Avant-Garde"],
+    desc: "Czech New Wave master Věra Chytilová's Daisies is a gloriously anarchic farce in which two young women named Marie decide that, since the world is spoiled, they might as well be spoiled too — and proceed to demolish every social convention in their path with gleeful, surrealist abandon. Shot in dazzling collages of color filters, fractured editing, and absurdist slapstick, the film feels like a fever dream assembled from confetti and broken mirrors. Beneath its playful surface lies a razor-sharp critique of consumerism, patriarchy, and the performative nature of femininity, all delivered with a lightness that makes the subversion hit even harder. Banned by Czech authorities upon release for depicting 'the wanton,' it has since been celebrated as one of world cinema\'s most inventive and purely joyful provocations. If you\'ve never seen a film that manages to be simultaneously a comedy, a manifesto, and a work of pure visual poetry, Daisies is your entry point.",
+    cast: ["Jitka Cerhová", "Ivana Karbanová", "Julius Albert"],
+    rating: 96,
     ratingSource: "Rotten Tomatoes",
-    ratingExtra: "Selected for UNESCO Memory of the World Register",
-    posterUrl: "https://upload.wikimedia.org/wikipedia/en/9/94/Hardertheycome.jpg"
+    ratingExtra: "Czech Film Critics' Prize",
+    posterUrl: null
   }
 };

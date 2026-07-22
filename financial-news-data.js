@@ -1,60 +1,60 @@
 // financial-news-data.js
-// Auto-updated 2026-07-21 — do not edit manually
+// Auto-updated 2026-07-22 — do not edit manually
 
 var FINANCIAL_NEWS = {
-  date: "2026-07-21",
+  date: "2026-07-22",
   main: {
-    title: "European Gas Prices Surge to Four-Year High as US-Iran Conflict Stokes Winter Supply Fears",
-    category: "Energy Markets",
+    title: "Houthis Threaten Red Sea Blockade, Putting Oil Market at Greater Risk",
+    category: "Commodities & Energy",
     content: [
-      "European energy markets were rattled on Monday as the Dutch natural gas benchmark briefly surged above €60 per megawatt hour, hitting a four-month high and approaching levels not seen in four years. The spike was driven by mounting fears that the escalating conflict between the United States and Iran could severely disrupt Middle Eastern energy supply chains heading into the critical winter demand season. Oil prices also climbed sharply, with Brent crude briefly breaching the psychologically significant $90 per barrel mark before easing back as Tehran signalled that diplomatic talks remained ongoing.",
-      "The market reaction underscores just how exposed Europe remains to geopolitical shocks in the Middle East, despite years of effort to diversify energy supplies following the disruptions caused by the Russia-Ukraine war. Traders and analysts are particularly anxious about the winter outlook, with storage levels already a concern and any prolonged disruption to liquefied natural gas shipments through key chokepoints potentially leaving the continent short of fuel during peak demand months. The fear premium baked into current prices reflects not just immediate supply risk but also the difficulty of quickly sourcing alternative volumes at short notice.",
-      "Brent crude\'s near-6% surge over the two preceding trading sessions had already signalled deep market unease before Monday\'s partial retreat. The pullback came after Iranian officials indicated that ceasefire negotiations were still alive, offering traders a sliver of hope that a full-scale, prolonged disruption to Persian Gulf energy flows might be averted. Nevertheless, analysts cautioned that the situation remains highly fluid and that any breakdown in talks could rapidly send prices climbing again toward — or beyond — recent highs.",
-      "The broader implications for European consumers and businesses are significant. Higher gas prices feed directly into electricity costs, manufacturing expenses, and household energy bills, adding a fresh inflationary pressure at a time when central banks across the continent had been hoping to maintain a cautious easing cycle. Energy-intensive industries, from chemicals to steel, face renewed margin pressure, while governments may find themselves under political pressure to reinstate or extend consumer energy support schemes that were only recently wound down.",
-      "Beyond the immediate price spike, the episode highlights an uncomfortable structural reality: Europe\'s energy security still hinges considerably on stable geopolitical conditions in regions far beyond its borders. The surge in gas prices also had knock-on effects in commodity-linked markets, with palm oil slipping from recent highs as crude weakness late in the session dented the appeal of biofuel feedstocks. Markets will be watching closely for any further signals from ceasefire negotiations, US military posture, and Iranian export data in the days ahead as traders attempt to price in what could become a prolonged period of elevated energy costs."
+      "The Houthi militant group has escalated its threats against global oil markets by signalling a potential blockade of the Red Sea, striking at Saudi Arabia\'s primary workaround for exporting crude oil at a moment when the Strait of Hormuz is already effectively closed. The compounding of these two critical chokepoints represents an unprecedented threat to global energy supply chains, pushing oil prices higher and rattling commodity traders worldwide. Brent crude climbed on the back of the news, with investors pricing in a significantly tighter global supply outlook should the threats materialise into action.",
+      "The Strait of Hormuz, through which roughly a fifth of the world\'s oil typically flows, has been rendered effectively unusable amid escalating regional tensions, forcing major producers like Saudi Arabia to redirect shipments via alternative routes — most notably through the Red Sea. With the Houthis now threatening to close off that corridor as well, Riyadh faces a deeply constrained set of options for getting its barrels to market. The dual closure scenario, if realised, would represent one of the most severe supply disruptions the global oil market has faced in decades.",
+      "Indian state-run refiners have already begun responding to the deteriorating security situation, with at least two major companies suspending crude oil loadings from Iraq as mounting risks in the Strait of Hormuz make vessel safety increasingly difficult to guarantee. The halt in Iraqi loadings is a tangible sign that the market disruption is moving beyond theoretical risk and into operational reality for major Asian importers. India, one of the world\'s largest crude importers, would face significant cost and logistical pressures if it is forced to seek alternative suppliers at short notice.",
+      "Commodity analysts warn that a sustained blockade of both the Hormuz strait and the Red Sea simultaneously would send shockwaves far beyond the energy sector, affecting freight rates, insurance premiums, and the broader inflation outlook at a time when cost-of-living pressures are already acute in many economies. Wheat and corn markets are also under stress from separate geopolitical tensions, with wheat rising for a second consecutive session on escalating Black Sea risks and worsening crop prospects. The convergence of multiple supply-side shocks across energy and agricultural commodities is fuelling concern among economists about a renewed inflationary pulse in the second half of 2026.",
+      "Financial markets have responded to the oil market anxiety with a notable climb in Brent crude prices, even as equity markets managed to advance on the back of a separate chip-sector rally. The divergence between a buoyant stock market and a stressed commodities complex reflects the complexity of the current macro environment, where AI-driven optimism in technology stocks is running in parallel with serious geopolitical risk in energy markets. Investors and policymakers alike will be watching the Red Sea situation closely, as any further escalation could rapidly overturn the relatively benign inflation trajectory that central banks have spent the past two years working to establish.",
     ],
-    image: "https://i.guim.co.uk/img/media/fefe2d78a2b0451a9f8aec07c298e2190927dab6/655_0_4754_3804/master/4754.jpg?width=1200&quality=85&auto=format&fit=max&s=3076ce77061afbd4e4ea9de055622762",
-    source: "The Guardian",
-    sourceUrl: "https://www.theguardian.com/business/2026/jul/20/european-gas-prices-high-us-iran-war-supply-shortages-oil-price"
+    image: "https://static01.nyt.com/images/2026/07/21/multimedia/21Biz-Redsea-Shipping-fmjh/21Biz-Redsea-Shipping-fmjh-mediumSquareAt3X.jpg",
+    source: "The New York Times",
+    sourceUrl: "https://www.nytimes.com/2026/07/21/business/oil-red-sea-houthis.html"
   },
   secondary: [
     {
       id: "fn1",
-      title: "Judge Halts $81 Billion Paramount-Warner Bros. Merger for Two Weeks",
-      summary: "A federal judge has temporarily paused the massive Paramount and Warner Bros. Discovery merger after twelve US states sued to block the deal on antitrust grounds.",
+      title: "Super Micro\'s Stock Soars as Margins Unexpectedly Double",
+      summary: "AI server maker Super Micro Computer saw its stock surge after reporting that gross margins had unexpectedly doubled, with the company now guiding for margins of 15% to 17%.",
       body: [
-        "A federal judge on Monday ordered Paramount and Warner Bros. Discovery to halt their proposed $81 billion merger for at least two weeks, giving the coalition of twelve states — led by California — time to pursue their legal challenge arguing the deal would extinguish competition in the media sector. The states contend that combining two of Hollywood\'s most storied studios would create an outsized concentration of power in film and television production and distribution.",
-        "The temporary pause introduces meaningful uncertainty into one of the largest media deals in recent memory, potentially complicating financing arrangements and deal timelines that both companies had been working to finalise. Investors will be watching closely to see whether the court ultimately allows the merger to proceed or whether the antitrust challenge signals a tougher regulatory environment for mega-mergers in the entertainment industry."
+        "Super Micro Computer delivered a dramatic earnings surprise, with gross margins roughly doubling compared to prior expectations, sending the company\'s stock sharply higher. The AI server manufacturer attributed the improvement to a more favourable customer and product mix, signalling that demand for its high-performance infrastructure remains robust as enterprises accelerate AI deployments.",
+        "The result adds fresh momentum to the broader chip and AI hardware rally that has been lifting technology stocks, reinforcing investor confidence that the AI infrastructure buildout has significant room to run. For Super Micro specifically, the margin recovery is significant given the scrutiny the company has faced in recent periods over its financial reporting and competitive positioning."
       ],
-      image: "https://i.guim.co.uk/img/media/c7cb6340ad5de73e26a06fecd74088442001ca69/0_674_2000_1599/master/2000.jpg?width=1200&quality=85&auto=format&fit=max&s=6ca45cd72e2707e8c9fdd0b62af348ab",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/film/2026/jul/20/judge-pause-paramount-warner-bros-merger",
-      category: "Mergers & Acquisitions"
+      image: "https://images.unsplash.com/photo-1686897261382-6cf0313ab27e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTdXBlciUyME1pY3JvJTVDfGVufDB8MHx8fDE3ODQ2OTY2Mzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "MarketWatch",
+      url: "https://www.marketwatch.com/story/super-micros-stock-soars-as-its-margins-unexpectedly-double-8aa83784?mod=mw_rss_topstories",
+      category: "Earnings"
     },
     {
       id: "fn2",
-      title: "US Slaps 50% Tariffs on Canadian Goods, Reigniting Trade War",
-      summary: "The Trump administration has announced sweeping 50% tariffs on a range of Canadian imports, escalating trade tensions with one of America\'s largest trading partners.",
+      title: "Novo Nordisk Sues Eli Lilly Over 'Materially Misleading' Weight-Loss Drug Ads",
+      summary: "Ozempic maker Novo Nordisk has launched legal action against US rival Eli Lilly, alleging the company used outdated clinical trial data to make its competing weight-loss treatments appear more effective than they are.",
       body: [
-        "The Trump administration on Monday said it would impose 50% tariffs on select Canadian goods using an untested legal provision, targeting what it describes as discriminatory Canadian trade practices in the automobile, dairy, and alcohol industries. The move marks a sharp escalation in trade friction between the two neighbouring economies, which share one of the world\'s largest bilateral trading relationships.",
-        "The announcement rattled markets focused on North American supply chains, with sectors heavily integrated across the US-Canada border — including automotive manufacturing — facing the prospect of significantly higher input costs. Economists warn that tit-for-tat retaliation from Ottawa could further dampen growth prospects on both sides of the border and add to inflationary pressures already weighing on consumers."
+        "Danish pharmaceutical giant Novo Nordisk filed suit against Eli Lilly on Tuesday, accusing its American rival of running advertisements that are 'false and materially misleading' by relying on outdated trial data to promote its weight-loss and anti-diabetes products. The lawsuit underscores the intensifying commercial battle between the two companies as the global market for GLP-1 weight-loss drugs continues to expand rapidly.",
+        "The legal clash between the two biggest players in the weight-loss drug space reflects the enormous financial stakes involved, with analysts estimating the global obesity drug market could be worth hundreds of billions of dollars within the next decade. How courts and regulators respond to the advertising dispute could set important precedents for how clinical data is used in pharmaceutical marketing going forward."
       ],
-      image: "https://static01.nyt.com/images/2026/07/20/multimedia/20DC-TRUMP-CANADA-01-twqm/20DC-TRUMP-CANADA-01-twqm-mediumSquareAt3X.jpg",
-      source: "MarketWatch",
-      url: "https://www.marketwatch.com/story/u-s-hits-canada-with-stiff-new-tariffs-escalating-trade-tensions-4a97065f?mod=mw_rss_topstories",
-      category: "Trade & Economics"
+      image: "https://i.guim.co.uk/img/media/39b7491497130e6f0926d45f7bb2cd3260c276ca/0_0_1200_960/master/1200.jpg?width=1200&quality=85&auto=format&fit=max&s=cc34a15ab82ad9dc797acc046856c4d2",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/business/2026/jul/21/novo-nordisk-eli-lilly-weight-loss-ads",
+      category: "Pharmaceuticals"
     },
     {
       id: "fn3",
-      title: "SBI Funds Shares Jump 8.5% on Mumbai Debut After $1 Billion IPO",
-      summary: "SBI Funds Management Ltd. surged 8.5% on its first day of trading in Mumbai following one of India\'s most heavily subscribed billion-dollar initial public offerings.",
+      title: "Stocks Advance as Chip Rally Builds and Brent Crude Climbs",
+      summary: "Global equity markets rose as a rally in chip stocks extended gains driven by renewed investor confidence in the AI trade, even as oil prices climbed on pessimism over US-Iran peace talks.",
       body: [
-        "Shares of SBI Funds Management Ltd. rose 8.5% on their Mumbai Stock Exchange debut on Tuesday after investors piled into the company\'s $1 billion IPO, making it one of the most heavily oversubscribed billion-dollar listings India has seen. The strong debut reflects continued robust appetite among both domestic and international investors for exposure to India\'s fast-growing asset management sector.",
-        "The successful listing adds to a broader wave of financial services IPOs in India as the country\'s expanding middle class and rising household savings rates drive demand for professionally managed investment products. The SBI Funds offering is seen as a bellwether for investor confidence in Indian capital markets at a time when global funds are increasingly looking to the subcontinent as a key growth destination."
+        "Chip stocks led broad equity market gains on Wednesday, with investors doubling down on bets that the artificial intelligence investment cycle still has considerable momentum ahead of it. The advance helped lift major indices even as oil markets were moving in the opposite direction, with Brent crude rising amid deteriorating prospects for a diplomatic resolution to tensions affecting Persian Gulf shipping.",
+        "The day\'s market action highlighted the bifurcated nature of the current investment landscape, where technology optimism and geopolitical commodity risk are running simultaneously without yet cancelling each other out. Analysts noted that should energy prices continue to climb, the inflationary pressure could eventually weigh on the rate-cut expectations that have been partially underpinning equity valuations."
       ],
-      image: "https://images.unsplash.com/photo-1531589767116-64a48779e523?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTQkklMjBGdW5kcyUyMFNoYXJlcyUyMEp1bXAlMjA4LjUlMjUlMjBvbiUyME11bWJhaSUyMERlYnV0JTIwQWZ0ZXIlMjAlMjQxJTIwQmlsbGlvbiUyMElQT3xlbnwwfDB8fHwxNzg0NjEwMjMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "Bloomberg",
-      url: "https://www.bloomberg.com/news/articles/2026-07-21/sbi-funds-poised-for-strong-india-debut-after-1-billion-ipo",
+      image: "https://images.pexels.com/photos/32300577/pexels-photo-32300577.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      source: "Bloomberg Markets",
+      url: "https://www.bloomberg.com/news/articles/2026-07-21/stock-market-today-dow-s-p-live-updates",
       category: "Markets"
     }
   ]

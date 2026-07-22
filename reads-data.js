@@ -1,19 +1,19 @@
 // reads-data.js
-// Auto-updated 2026-07-21 — do not edit manually
+// Auto-updated 2026-07-22 — do not edit manually
 
 var READS_DATA = {
-  date: "2026-07-21",
+  date: "2026-07-22",
   book: {
-    title: "Never Let Me Go",
+    title: "The Remains of the Day",
     author: "Kazuo Ishiguro",
-    year: 2005,
-    genres: ["Literary Fiction", "Dystopian", "Coming of Age"],
-    desc: "Told in the quiet, reminiscing voice of Kathy H., this novel unfolds at a seemingly idyllic English boarding school called Hailsham, where children grow up painting, writing poetry, and falling into the tender complications of friendship and first love — until the reader slowly, devastatingly understands what these children actually are and what fate awaits them. Ishiguro never raises his voice: the horror arrives through accumulation, through what characters refuse to say aloud, through the heartbreaking way people accommodate themselves to the unacceptable. It is a book about mortality, memory, and the strange consolations of art — asking whether creativity can redeem a life that has been defined entirely by others. Few novels in recent decades have been so technically controlled and so emotionally annihilating at the same time.",
-    whyRead: "In an era of loud, urgent fiction, Ishiguro\'s restraint hits harder than any shouting — this is the rare novel that changes how you think about your own life after you close it.",
-    rating: 3.9,
+    year: 1989,
+    genres: ["Literary Fiction", "Character Study", "Post-War Britain"],
+    desc: "Stevens, an aging English butler, embarks on a rare motoring holiday through the West Country in the 1950s, using the journey as an occasion to quietly reconstruct — and quietly justify — the choices that defined his life. Ishiguro\'s prose is a masterclass in what goes unsaid: every evasion, every stiffly worded reflection, reveals a man who sacrificed love, moral agency, and selfhood in the name of professional dignity and loyalty to a master who did not deserve it. The novel is devastating in the most restrained way imaginable, building to a lakeside conversation that lands like a slow, clean blow. It is also, beneath the melancholy, a precise and brilliant satire of English repression, class deference, and the story we tell ourselves to make a diminished life bearable.",
+    whyRead: "In a moment when questions of loyalty, complicity, and institutional duty feel urgently alive, Ishiguro\'s portrait of a man who mistakes servility for greatness has never read more like a cautionary tale — and it is simply one of the most perfectly constructed novels in the English language.",
+    rating: 4.2,
     ratingSource: "Goodreads",
-    ratingCount: "700,000+",
-    coverUrl: "https://covers.openlibrary.org/b/id/1047334-L.jpg",
-    amazonUrl: "https://www.amazon.co.uk/dp/0571224113"
+    ratingCount: "400,000+",
+    coverUrl: "https://covers.openlibrary.org/b/id/95742-L.jpg",
+    amazonUrl: "https://www.amazon.co.uk/dp/8433902385"
   }
 };

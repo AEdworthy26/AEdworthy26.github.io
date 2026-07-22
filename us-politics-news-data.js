@@ -1,61 +1,61 @@
 // us-politics-news-data.js
-// Auto-updated 2026-07-21 — do not edit manually
+// Auto-updated 2026-07-22 — do not edit manually
 
 var US_POLITICS_NEWS = {
-  date: "2026-07-21",
+  date: "2026-07-22",
   main: {
-    title: "With August Recess Days Away, Congress Races to Clear Crowded Legislative Agenda",
+    title: "House Narrowly Passes Stopgap Spending Bill, but Shutdown Fight Looms",
     category: "Politics",
     content: [
-      "House Speaker Mike Johnson is pushing hard to advance a packed legislative agenda before the House adjourns for its August recess, with just one week remaining on the congressional calendar. The to-do list is substantial and includes major priorities that Republicans have been working to deliver for months. Johnson has made clear he expects significant progress on multiple fronts before lawmakers leave Washington for the summer break.",
-      "Among the most consequential items on the agenda is a $95 billion party-line budget reconciliation bill, which has faced significant internal Republican resistance. GOP strategists have openly acknowledged the hurdles that remain in moving the measure forward, with divisions within the conference creating complications for leadership. Republican strategist Rob Burgess noted in recent commentary that the path to passing the reconciliation bill is far from clear, even as the clock ticks down toward the recess deadline.",
-      "Speaker Johnson has also indicated he wants to advance the president\'s election integrity bill before lawmakers depart, a measure that reflects the administration\'s continued focus on reshaping how American elections are conducted. The bill has drawn scrutiny from critics who argue it could complicate voting access, while supporters frame it as a necessary step to restore public confidence in the electoral system. Its inclusion on the pre-recess agenda signals that Republican leadership views it as a political priority heading into the fall campaign season.",
-      "A stock trading ban for lawmakers is also on Johnson\'s list, a proposal that has drawn unusual bipartisan interest given widespread public frustration over members of Congress trading individual stocks while in office. The measure would represent a significant change in how legislators manage their personal finances, and its inclusion alongside partisan priorities suggests leadership is aware of the political value of being seen tackling ethics concerns. Whether the proposal can survive the compressed timeline and competing legislative demands remains an open question.",
-      "The compressed schedule underscores the broader tensions within the Republican-controlled Congress, where thin margins and divergent factions have repeatedly complicated the process of turning campaign promises into law. Johnson faces the dual challenge of satisfying conservative hardliners who want deeper cuts and policy changes, while keeping moderate members on board for final votes. The coming week is expected to be a defining test of his speakership and the GOP\'s ability to govern effectively in the lead-up to the midterm election cycle."
+      "The House of Representatives narrowly passed a stopgap spending measure on Tuesday, extending government funding through December 4 in a bid to avert what would be a third government shutdown since last September. Republicans managed to push the legislation through on a party-line basis, with Democrats uniformly opposing the measure and setting the stage for a broader and potentially more bruising budget battle later in the year. The slim margin of passage underscores the ongoing divisions within Congress over federal spending priorities and the willingness of both parties to use shutdown threats as leverage.",
+      "With Democrats united in opposition, the continuing resolution now heads to the Senate, where its future remains deeply uncertain. Senate Democrats have significant procedural tools at their disposal to slow or block the measure, and several moderate members of both parties have expressed frustration with the repeated reliance on stopgap funding rather than full-year appropriations bills. The prospect of yet another shutdown fight — this time in the run-up to the 2026 midterm election cycle — is already casting a shadow over the legislative calendar.",
+      "Republican leaders framed the vote as a necessary measure to keep the government open while broader budget negotiations continue, including the party\'s parallel push to pass a $95 billion budget reconciliation bill. The dual-track legislative strategy reflects the GOP\'s ambition to advance its fiscal agenda while managing the immediate pressure of avoiding the political fallout of a government closure. However, the narrow House passage reveals that even within Republican ranks, consensus on spending levels and priorities remains elusive.",
+      "The recurring shutdowns since last September have drawn bipartisan criticism and raised questions about Congress\'s basic ability to fulfill its core governing functions. Government workers, federal contractors, and recipients of government services have repeatedly faced uncertainty and disruption, and public frustration with legislative dysfunction has grown. Lawmakers on both sides of the aisle have acknowledged that the continuing resolution cycle is an inadequate substitute for a properly functioning appropriations process, yet partisan gridlock has prevented a more durable solution.",
+      "The December 4 deadline set by the new stopgap measure means lawmakers will face another high-stakes funding confrontation deep into the fall, potentially overlapping with other major legislative battles. Senate passage is far from guaranteed, and any amendments added in the upper chamber would require the House to vote again — a logistically and politically complicated scenario. For now, the narrow House vote buys time, but it does little to resolve the fundamental disagreements over government spending that have made stable, long-term funding so difficult to achieve."
     ],
-    image: "https://images.unsplash.com/photo-1603119761708-9252f043c139?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxXaXRoJTIwQXVndXN0JTIwUmVjZXNzJTIwRGF5cyUyMEF3YXklMkMlMjBDb25ncmVzcyUyMFJhY2VzJTIwdG8lMjBDbGVhciUyMENyb3dkZWQlMjBMZWdpc2xhdGl2ZSUyMEFnZW5kYXxlbnwwfDB8fHwxNzg0NjEwMTg3fDA&ixlib=rb-4.1.0&q=80&w=1080",
-    source: "NPR",
-    sourceUrl: "https://www.npr.org/2026/07/20/nx-s1-5897469/with-just-a-week-left-until-august-recess-congress-faces-long-to-do-list"
+    image: "https://static01.nyt.com/images/2026/07/21/multimedia/21dc-spend-photo-wpzf/21dc-spend-photo-wpzf-mediumSquareAt3X.jpg",
+    source: "The New York Times",
+    sourceUrl: "https://www.nytimes.com/2026/07/21/us/politics/house-stopgap-spending-bill-shutdown.html"
   },
   secondary: [
     {
       id: "us1",
-      title: "Trump-Nominated Judge Rules Against Administration in Minnesota Sanctuary Case",
-      summary: "A federal judge appointed by President Trump has ruled against the administration\'s argument that Minnesota\'s sanctuary laws violate the Supremacy Clause of the Constitution.",
+      title: "2020 Election Denier Wins GOP Primary for Secretary of State in Arizona",
+      summary: "Arizona state Rep. Alexander Kolodin, best known for contesting the 2020 election results, has won the Republican primary to take on Democratic Secretary of State Adrian Fontes in November.",
       body: [
-        "In a notable legal setback, a Trump-nominated federal judge rejected the administration\'s assertion that Minnesota sanctuary laws are unconstitutional under the Supremacy Clause, which holds that federal law takes precedence over state and local statutes. The ruling, filed on Monday, dealt a blow to the White House\'s broader legal strategy of dismantling local immigration policies that limit cooperation with federal enforcement.",
-        "The case is part of a wider pattern of the administration using federal courts to challenge so-called sanctuary jurisdictions, and the ruling from a judge within Trump\'s own judicial appointments carries particular symbolic weight. It signals that even loyalist-nominated jurists may not be reliable allies when the administration\'s legal arguments are seen as overreaching."
+        "Alexander Kolodin, an election attorney and state representative who played a prominent role in efforts to challenge the 2020 presidential election results, defeated former state GOP chair Gina Swoboda in the Republican primary for Arizona secretary of state, according to Decision Desk HQ. His nomination sets up a consequential November matchup against incumbent Democratic Secretary of State Adrian Fontes in a state that has been at the center of election integrity debates for years.",
+        "Kolodin\'s victory signals that election denialism remains a potent force within the Arizona Republican Party, even as the broader national GOP has tried to move past the 2020 controversy. The secretary of state race carries enormous stakes, as the office oversees the administration of elections in the perennial battleground state."
       ],
-      image: "https://thehill.com/wp-content/uploads/sites/2/2026/02/ice_immigration_minnesota_02032026_GettyImages-2259234673-1.jpg?w=900",
+      image: "https://thehill.com/wp-content/uploads/sites/2/2026/07/AP25168661883126-e1784663205464.jpg?w=900",
       source: "The Hill",
-      url: "https://thehill.com/regulation/court-battles/5979646-judge-rejects-trump-sanctuary-laws/",
-      category: "Politics"
+      url: "https://thehill.com/homenews/campaign/5981593-kolodin-fontes-arizona-secretary-of-state/",
+      category: "Elections"
     },
     {
       id: "us2",
-      title: "Trump Rejected Nearly 6,000 Clemency Applications Despite Expectations of Pardon Wave",
-      summary: "President Trump granted fewer than 20 pardons around the country\'s 250th birthday celebrations, rejecting close to 6,000 clemency applications that had been submitted in hopes of relief.",
+      title: "Defense Secretary Hegseth Seeks Nearly $90 Billion in New Pentagon Funding",
+      summary: "Defense Secretary Pete Hegseth appeared before Congress requesting a nearly $90 billion funding boost for the Pentagon as the war with Iran continues to escalate and costs mount.",
       body: [
-        "Thousands of individuals who had submitted clemency applications hoping for presidential pardons tied to America\'s 250th anniversary celebrations were left disappointed after Trump granted fewer than 20 pardons on July 3rd. The outcome stood in stark contrast to the widespread anticipation that had built around the milestone date as a potential moment for a significant wave of executive clemency.",
-        "The mass rejection of nearly 6,000 applications highlights the gap between public expectations and the administration\'s actual use of the pardon power, a tool that Trump wielded prominently during his first term. Critics and advocates for criminal justice reform argued the decision represented a missed opportunity, while the administration offered no detailed public explanation for the scale of the rejections."
+        "Defense Secretary Pete Hegseth testified on Capitol Hill Tuesday seeking a major funding increase for the Department of Defense, with the Pentagon\'s request totaling nearly $90 billion as the ongoing war with Iran places enormous strain on military resources. Hegseth disclosed that the Iran conflict has cost the United States $37.5 billion so far, and his testimony was disrupted by protests and a shouting match as lawmakers pressed him on the war\'s trajectory and costs.",
+        "The massive funding request comes as the Iran war has failed to produce the 'unconditional surrender' President Trump once demanded, raising difficult questions about strategy and long-term costs. The hearing represents a pivotal moment for the administration\'s war policy, with Congress increasingly scrutinizing both the financial burden and the human toll of the conflict."
       ],
-      image: "https://static01.nyt.com/images/2026/07/20/multimedia/20dc-pardons-ctbl/20dc-pardons-ctbl-mediumSquareAt3X.jpg",
-      source: "The New York Times",
-      url: "https://www.nytimes.com/2026/07/20/us/politics/trump-rejected-clemency-applications.html",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/dd9c/live/8cde08d0-8552-11f1-b976-0b9c15b0ccfc.jpg",
+      source: "NPR",
+      url: "https://www.npr.org/2026/07/21/nx-s1-5900838/defense-secretary-pete-hegseth-goes-to-the-hill-with-350b-funding-request",
       category: "Politics"
     },
     {
       id: "us3",
-      title: "Republicans Resist Embracing Trump\'s Renewed 2020 Election Fraud Claims",
-      summary: "Despite pressure from President Trump, many Republican candidates and officials are declining to amplify his latest election fraud allegations, preferring to focus on issues they consider more relevant to voters.",
+      title: "Trump-Backed Andy Biggs to Face Arizona Governor Katie Hobbs in Fall Election",
+      summary: "Republican Rep. Andy Biggs, endorsed by President Trump, won the Arizona GOP gubernatorial primary and will challenge incumbent Democratic Governor Katie Hobbs in what is expected to be a highly competitive race.",
       body: [
-        "President Trump has pressed Republican candidates to embrace his renewed claims about 2020 election fraud, but many within the party have shown little appetite for relitigating that ground as they head into competitive races. GOP officials and strategists say the focus among voters has shifted, and candidates are wary of getting pulled back into debates that cost them in previous election cycles.",
-        "The pushback from within his own party reflects ongoing tension between Trump\'s political instincts and the preferences of Republican operatives working to expand the party\'s coalition. A Georgia Secretary of State official also weighed in separately, directly challenging the factual basis of some of Trump\'s claims about election security in that state."
+        "Rep. Andy Biggs secured the Republican nomination for Arizona governor after defeating fellow Republican Rep. David Schweikert in the primary, setting up a high-profile fall contest against Democratic incumbent Katie Hobbs in a state Trump carried in both 2024 and 2016. Biggs, who has the backing of President Trump, will enter the general election with strong support from the conservative base of the party.",
+        "Hobbs, who ran uncontested in the Democratic primary, will defend her governorship in one of the most closely watched gubernatorial races of the 2026 cycle. Arizona\'s status as a perennial battleground makes the contest a key indicator of the national political climate heading into the midterm elections."
       ],
-      image: "https://images.unsplash.com/photo-1550531996-ff3dcede9477?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxSZXB1YmxpY2FucyUyMFJlc2lzdCUyMEVtYnJhY2luZyUyMFRydW1wJTVDfGVufDB8MHx8fDE3ODQ2MTAxODh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "The Washington Post",
-      url: "https://www.washingtonpost.com/politics/2026/07/20/trump-latest-election-push-finds-little-traction-inside-gop/",
-      category: "Politics"
+      image: "https://thehill.com/wp-content/uploads/sites/2/2026/07/Hobbs_Biggs_Split.png?w=900",
+      source: "The Hill",
+      url: "https://thehill.com/homenews/campaign/5972326-arizona-governor-biggs-hobbs-election/",
+      category: "Elections"
     }
   ]
 };
