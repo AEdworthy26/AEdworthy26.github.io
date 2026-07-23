@@ -1,18 +1,18 @@
 // films-data.js
-// Auto-updated 2026-07-22 — do not edit manually
+// Auto-updated 2026-07-23 — do not edit manually
 
 var FILMS_DATA = {
-  date: "2026-07-22",
+  date: "2026-07-23",
   film: {
-    title: "Rattlesnake in a Cooler",
-    director: "Věra Chytilová",
-    year: 1966,
-    genres: ["Comedy", "Avant-Garde"],
-    desc: "Czech New Wave master Věra Chytilová's Daisies is a gloriously anarchic farce in which two young women named Marie decide that, since the world is spoiled, they might as well be spoiled too — and proceed to demolish every social convention in their path with gleeful, surrealist abandon. Shot in dazzling collages of color filters, fractured editing, and absurdist slapstick, the film feels like a fever dream assembled from confetti and broken mirrors. Beneath its playful surface lies a razor-sharp critique of consumerism, patriarchy, and the performative nature of femininity, all delivered with a lightness that makes the subversion hit even harder. Banned by Czech authorities upon release for depicting 'the wanton,' it has since been celebrated as one of world cinema\'s most inventive and purely joyful provocations. If you\'ve never seen a film that manages to be simultaneously a comedy, a manifesto, and a work of pure visual poetry, Daisies is your entry point.",
-    cast: ["Jitka Cerhová", "Ivana Karbanová", "Julius Albert"],
-    rating: 96,
+    title: "The Sting",
+    director: "George Roy Hill",
+    year: 1973,
+    genres: ["Crime", "Comedy"],
+    desc: "Two Depression-era grifters — the magnetic Paul Newman and the irresistibly charming Robert Redford — team up to pull an elaborate con on a ruthless crime boss, and the film delights in wrong-footing the audience at every turn. George Roy Hill orchestrates the deception with such gleeful precision that watching it feels like being let in on the greatest magic trick ever performed, jaunty Scott Joplin ragtime and all. The screenplay by David S. Ward is a masterclass in narrative architecture, layering bluff upon bluff until the final reveal lands with the satisfying crack of a perfectly sprung mousetrap. Beyond the mechanics of the con, the film is genuinely funny, warmly performed, and alive with the pleasures of watching supremely talented people enjoy their craft together.",
+    cast: ["Paul Newman", "Robert Redford", "Robert Shaw"],
+    rating: 83,
     ratingSource: "Rotten Tomatoes",
-    ratingExtra: "Czech Film Critics' Prize",
-    posterUrl: null
+    ratingExtra: "7 Academy Awards including Best Picture",
+    posterUrl: "https://upload.wikimedia.org/wikipedia/commons/a/aa/The_Sting_%281973_alt_poster%29.jpeg"
   }
 };

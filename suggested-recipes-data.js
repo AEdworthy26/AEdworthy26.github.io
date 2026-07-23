@@ -1,169 +1,226 @@
 // suggested-recipes-data.js
-// Auto-updated 2026-07-22 — do not edit manually
+// Auto-updated 2026-07-23 — do not edit manually
 
 window.SUGGESTED_RECIPES = [
   {
     id: "sug1",
-    title: "Georgian Walnut-Stuffed Aubergine Rolls — Badrijani Nigvzit with Pomegranate & Fresh Herbs",
-    category: "Vegan",
-    calories: 380,
-    protein: 9,
-    fibre: 8,
-    healthScore: 84,
-    time: "45 mins",
+    title: "Yemeni Chicken Mandi — Slow-Roasted Spiced Chicken with Fragrant Rice, Toasted Almonds & Zhoug",
+    category: "Chicken",
+    calories: 610,
+    protein: 46,
+    fibre: 3,
+    healthScore: 73,
+    time: "1 hr 45 mins",
     serves: "4",
-    desc: "Silky grilled aubergine slices wrapped around a deeply spiced walnut and garlic paste, finished with pomegranate seeds and torn herbs — this Georgian classic is one of the most satisfying vegetable dishes in the world. The walnut filling is rich, aromatic and complex thanks to blue fenugreek, coriander and a kick of chilli, while the pomegranate cuts through with jewel-bright acidity. Stunning as a starter or a centrepiece mezze spread.",
-    emoji: "🍆",
-    image: "https://images.unsplash.com/photo-1545901223-3caf58f8e8b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxHZW9yZ2lhbiUyMFdhbG51dC1TdHVmZmVkJTIwQXViZXJnaW5lJTIwUm9sbHMlMjAlRTIlODAlOTQlMjBCYWRyaWphbmklMjBOaWd2eml0JTIwd2l0aCUyMFBvbWVncmFuYXRlJTIwJTI2JTIwRnJlc2glMjBIZXJicyUyMGZvb2QlMjBkaXNofGVufDB8MHx8fDE3ODQ2OTcyMTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    desc: "Mandi is one of the great celebratory dishes of the Arabian Peninsula — chicken marinated in a heady blend of warm spices, roasted until the skin is burnished and fragrant, then served over long-grain rice cooked in the spiced cooking juices. A punchy fresh zhoug (Yemeni green chilli sauce) cuts through the richness beautifully, and a scattering of toasted almonds and raisins gives every mouthful contrasting texture and sweetness.",
+    emoji: "🍗",
+    image: "https://images.pexels.com/photos/7340936/pexels-photo-7340936.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     ingredientGroups: [
-      { group: "Aubergine", items: [
-        { name: "Large aubergines", quantity: 3, unit: "" },
-        { name: "Olive oil", quantity: 4, unit: "tbsp" },
-        { name: "Flaky sea salt", quantity: 1, unit: "tsp" }
-      ]},
-      { group: "Walnut Filling", items: [
-        { name: "Walnuts, shelled", quantity: 200, unit: "g" },
-        { name: "Garlic cloves", quantity: 3, unit: "" },
-        { name: "Fresh coriander", quantity: 20, unit: "g" },
-        { name: "Ground coriander", quantity: 1, unit: "tsp" },
-        { name: "Ground blue fenugreek (or regular fenugreek)", quantity: 0.5, unit: "tsp" },
-        { name: "Dried chilli flakes", quantity: 0.5, unit: "tsp" },
-        { name: "White wine vinegar", quantity: 1, unit: "tbsp" },
-        { name: "Warm water", quantity: 3, unit: "tbsp" },
-        { name: "Salt", quantity: 0.5, unit: "tsp" }
-      ]},
-      { group: "To Finish", items: [
-        { name: "Pomegranate seeds", quantity: 80, unit: "g" },
-        { name: "Fresh flat-leaf parsley", quantity: 15, unit: "g" },
-        { name: "Fresh coriander", quantity: 15, unit: "g" },
-        { name: "Extra virgin olive oil", quantity: 1, unit: "tbsp" }
-      ]}
+      {
+        group: "Chicken & Marinade",
+        items: [
+          { name: "Whole chicken, jointed into 8 pieces (or bone-in thighs & drumsticks)", quantity: 1.5, unit: "kg" },
+          { name: "Plain full-fat yoghurt", quantity: 4, unit: "tbsp" },
+          { name: "Ground cumin", quantity: 2, unit: "tsp" },
+          { name: "Ground coriander", quantity: 2, unit: "tsp" },
+          { name: "Ground turmeric", quantity: 1, unit: "tsp" },
+          { name: "Ground cinnamon", quantity: 1, unit: "tsp" },
+          { name: "Ground cardamom", quantity: 0.5, unit: "tsp" },
+          { name: "Ground black pepper", quantity: 1, unit: "tsp" },
+          { name: "Smoked paprika", quantity: 1, unit: "tsp" },
+          { name: "Ground cloves", quantity: 0.25, unit: "tsp" },
+          { name: "Garlic cloves, grated", quantity: 4, unit: "" },
+          { name: "Fresh ginger, grated", quantity: 1, unit: "tbsp" },
+          { name: "Olive oil", quantity: 3, unit: "tbsp" },
+          { name: "Salt", quantity: 1.5, unit: "tsp" }
+        ]
+      },
+      {
+        group: "Mandi Rice",
+        items: [
+          { name: "Basmati rice, rinsed and soaked 30 mins", quantity: 400, unit: "g" },
+          { name: "Chicken stock (or water with a stock cube)", quantity: 750, unit: "ml" },
+          { name: "White onion, finely sliced", quantity: 2, unit: "" },
+          { name: "Unsalted butter", quantity: 30, unit: "g" },
+          { name: "Whole cardamom pods", quantity: 4, unit: "" },
+          { name: "Whole cloves", quantity: 3, unit: "" },
+          { name: "Cinnamon stick", quantity: 1, unit: "" },
+          { name: "Bay leaves", quantity: 2, unit: "" },
+          { name: "Raisins", quantity: 40, unit: "g" },
+          { name: "Flaked almonds, toasted", quantity: 50, unit: "g" }
+        ]
+      },
+      {
+        group: "Zhoug (Green Chilli Sauce)",
+        items: [
+          { name: "Fresh green chillies (medium heat), roughly chopped", quantity: 3, unit: "" },
+          { name: "Fresh coriander, leaves and stalks", quantity: 30, unit: "g" },
+          { name: "Fresh flat-leaf parsley", quantity: 15, unit: "g" },
+          { name: "Garlic cloves", quantity: 2, unit: "" },
+          { name: "Ground cumin", quantity: 0.5, unit: "tsp" },
+          { name: "Ground cardamom", quantity: 0.25, unit: "tsp" },
+          { name: "Lemon juice", quantity: 2, unit: "tbsp" },
+          { name: "Olive oil", quantity: 3, unit: "tbsp" },
+          { name: "Salt", quantity: 0.5, unit: "tsp" }
+        ]
+      },
+      {
+        group: "To Serve",
+        items: [
+          { name: "Lemon wedges", quantity: 2, unit: "" },
+          { name: "Sliced tomatoes and cucumber", quantity: 1, unit: "serving" }
+        ]
+      }
     ],
     substitutes: [
-      { ingredient: "Blue fenugreek", alternatives: ["Regular ground fenugreek (use same amount)", "Dried tarragon with a pinch of celery salt"] },
-      { ingredient: "Pomegranate seeds", alternatives: ["Dried barberries", "Finely diced tart apple with a squeeze of lemon"] },
-      { ingredient: "Walnuts", alternatives: ["Pecans (slightly sweeter)", "Blanched almonds (blended slightly coarser)"] }
+      { ingredient: "Whole chicken, jointed", alternatives: ["Bone-in chicken thighs and drumsticks", "Bone-in chicken breasts (reduce cooking time slightly)"] },
+      { ingredient: "Basmati rice", alternatives: ["Long-grain white rice", "Jasmine rice"] },
+      { ingredient: "Fresh green chillies for zhoug", alternatives: ["Jalapeños", "Serrano chillies", "Reduce quantity for milder heat"] },
+      { ingredient: "Flaked almonds", alternatives: ["Pine nuts, toasted", "Cashews, roughly chopped and toasted"] }
     ],
     instructions: [
-      "Step 1 — Prep the aubergines: Slice each aubergine lengthways into slabs about 5mm thick — you want 3–4 good slices per aubergine, avoiding the very edge pieces which are mostly skin. Lay them on a clean surface and sprinkle both sides generously with flaky salt. Leave to sit for 15 minutes — this draws out moisture and seasons them deeply.",
-      "Step 2 — Grill the aubergine: Pat the aubergine slices dry with kitchen paper. Heat a large ridged griddle pan (or a heavy frying pan) over high heat until smoking hot. Brush both sides of each slice with olive oil. Working in batches, grill for 3–4 minutes per side until deeply charred in places and completely tender throughout — they should flop slightly when lifted. Transfer to a plate and leave to cool.",
-      "Step 3 — Make the walnut filling: Toast the walnuts in a dry frying pan over medium heat for 3–4 minutes, stirring frequently, until fragrant and lightly golden. Tip into a food processor with the garlic, fresh coriander, ground coriander, fenugreek, chilli flakes, white wine vinegar and salt. Blitz to a rough paste — you want texture, not a smooth purée. Add warm water one tablespoon at a time and pulse until the mixture comes together into a spreadable consistency that holds its shape.",
-      "Step 4 — Taste and adjust: Taste the walnut paste for seasoning — it should be punchy, garlicky and a little sour. Add more vinegar for brightness, more chilli for heat, or a small pinch of sugar if your walnuts taste very bitter.",
-      "Step 5 — Roll the badrijani: Lay a grilled aubergine slice flat. Spoon a generous tablespoon of walnut filling onto the wider end, then roll the slice up tightly around the filling, pressing gently to compact. Place seam-side down on a serving platter. Repeat with remaining slices and filling.",
-      "Step 6 — Finish and serve: Scatter pomegranate seeds generously across the rolls, then tear over the flat-leaf parsley and fresh coriander. Drizzle with a little extra virgin olive oil. Serve at room temperature — these are best eaten the day they\'re made, but the walnut filling improves if made an hour or two ahead."
+      "Make the marinade: in a large bowl, combine the yoghurt, all the ground spices, grated garlic, grated ginger, olive oil and salt into a smooth paste. Score the chicken pieces deeply a few times with a sharp knife to help the marinade penetrate. Add the chicken and turn to coat thoroughly. Cover and marinate for at least 1 hour at room temperature, or overnight in the fridge (bring to room temp 30 mins before roasting).",
+      "Preheat your oven to 200°C (180°C fan). Arrange the marinated chicken pieces on a large wire rack set over a deep roasting tray (the tray will catch the dripping juices — you\'ll use these for the rice). Roast for 45–55 minutes until deeply golden, the skin is crisp, and the juices run clear when the thickest part is pierced. Rest loosely covered with foil for 10 minutes.",
+      "While the chicken roasts, make the zhoug: blitz the green chillies, coriander, parsley, garlic, cumin, cardamom, lemon juice, olive oil and salt in a small food processor or blender until you have a rough, vibrant green sauce. Taste and adjust chilli, lemon and salt. Set aside.",
+      "Prepare the rice base: in a large, heavy-based saucepan or casserole with a tight-fitting lid, melt the butter over medium heat. Add the sliced onions with a pinch of salt and cook, stirring regularly, for 18–22 minutes until deeply golden and caramelised — don\'t rush this, the colour is key flavour. Add the whole cardamom pods, cloves, cinnamon stick and bay leaves and stir for 1 minute until fragrant.",
+      "Pour the resting juices from the roasting tray into a measuring jug. Top up with chicken stock to reach 750ml total liquid (discard excess fat if needed but keep all the flavourful brown drippings). Pour this liquid into the onion pan, bring to the boil, taste for salt and adjust — it should be well-seasoned as it will cook the rice.",
+      "Drain the soaked basmati rice and add it to the pan. Stir once gently, then bring back to a boil. Reduce the heat to the lowest possible setting, place a clean tea towel or piece of folded kitchen paper over the pan, then press the lid tightly on top (this absorbs steam for fluffier rice). Cook for 15 minutes without lifting the lid. Remove from heat and rest, still covered, for 10 minutes.",
+      "To finish the rice, use a fork to gently fluff it up, discarding the whole spices. Fold in the raisins. Transfer to a large serving platter, piling the rice up generously. Arrange the roasted chicken pieces on top and scatter over the toasted flaked almonds.",
+      "Serve immediately with the zhoug in a bowl alongside, lemon wedges, and a simple plate of sliced tomatoes and cucumber. Encourage everyone to drizzle the bright green zhoug generously — it\'s the essential flavour contrast that makes the whole dish sing."
     ]
   },
   {
     id: "sug2",
-    title: "Szechuan Bang Bang Beef Noodles — Cold Sesame, Chilli Oil & Cucumber with Crispy Shallots",
-    category: "Beef",
-    calories: 610,
-    protein: 36,
-    fibre: 5,
-    healthScore: 63,
-    time: "50 mins",
+    title: "Galician Octopus & Potato — Pulpo á Feira with Smoked Paprika, Olive Oil & Crusty Bread",
+    category: "Fish & Seafood",
+    calories: 390,
+    protein: 34,
+    fibre: 4,
+    healthScore: 79,
+    time: "1 hr 30 mins",
     serves: "4",
-    desc: "Inspired by the bold, tingly flavours of Szechuan street food, this dish combines tender poached flank steak pulled into ribbons with cold wheat noodles, cool shredded cucumber, and a spectacular sauce built on sesame paste, chilli oil, black vinegar and Szechuan peppercorns. The contrast between the warm, numbing sauce and the cold noodles and beef is genuinely addictive. A triumph of texture and layered heat that comes together with minimal fuss.",
-    emoji: "🍜",
-    image: "https://images.pexels.com/photos/2365946/pexels-photo-2365946.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    desc: "Pulpo á Feira is the beloved street food of Galicia in northwest Spain — tender, yielding octopus served on a wooden board over waxy boiled potatoes, finished with nothing more than excellent olive oil, coarse sea salt, and a generous dusting of both sweet and smoked pimentón. The simplicity is the genius: when every element is treated with care, the result is extraordinary. Using frozen octopus actually helps here, as freezing breaks down the fibres for more reliably tender results.",
+    emoji: "🐙",
+    image: "https://images.pexels.com/photos/36430382/pexels-photo-36430382.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     ingredientGroups: [
-      { group: "Beef", items: [
-        { name: "Flank steak or beef brisket", quantity: 600, unit: "g" },
-        { name: "Spring onions", quantity: 3, unit: "" },
-        { name: "Fresh ginger, sliced", quantity: 20, unit: "g" },
-        { name: "Whole black peppercorns", quantity: 1, unit: "tsp" },
-        { name: "Shaoxing rice wine (or dry sherry)", quantity: 2, unit: "tbsp" }
-      ]},
-      { group: "Noodles & Vegetables", items: [
-        { name: "Dried wheat noodles (or fresh lo mein noodles)", quantity: 320, unit: "g" },
-        { name: "Cucumber", quantity: 1, unit: "large" },
-        { name: "Crispy fried shallots (shop-bought)", quantity: 40, unit: "g" },
-        { name: "Toasted sesame seeds", quantity: 2, unit: "tbsp" }
-      ]},
-      { group: "Bang Bang Sauce", items: [
-        { name: "Chinese sesame paste (or tahini)", quantity: 4, unit: "tbsp" },
-        { name: "Chilli oil with sediment (Lao Gan Ma style)", quantity: 3, unit: "tbsp" },
-        { name: "Soy sauce", quantity: 3, unit: "tbsp" },
-        { name: "Chinese black vinegar (Chinkiang)", quantity: 2, unit: "tbsp" },
-        { name: "Toasted sesame oil", quantity: 1, unit: "tbsp" },
-        { name: "Runny honey or soft brown sugar", quantity: 1, unit: "tsp" },
-        { name: "Szechuan peppercorns, toasted and ground", quantity: 1, unit: "tsp" },
-        { name: "Garlic cloves, finely grated", quantity: 2, unit: "" },
-        { name: "Warm beef poaching liquid or water", quantity: 4, unit: "tbsp" }
-      ]}
+      {
+        group: "Octopus",
+        items: [
+          { name: "Whole octopus, cleaned (frozen and thawed is ideal)", quantity: 1.2, unit: "kg" },
+          { name: "White onion, halved", quantity: 1, unit: "" },
+          { name: "Bay leaves", quantity: 3, unit: "" },
+          { name: "Black peppercorns", quantity: 1, unit: "tsp" },
+          { name: "Cork (optional, traditional for tenderness)", quantity: 1, unit: "" }
+        ]
+      },
+      {
+        group: "Potatoes",
+        items: [
+          { name: "Waxy potatoes (such as Charlotte or Maris Peer), scrubbed", quantity: 700, unit: "g" },
+          { name: "Salt", quantity: 2, unit: "tsp" }
+        ]
+      },
+      {
+        group: "Dressing & Finish",
+        items: [
+          { name: "Extra-virgin olive oil, very best quality", quantity: 6, unit: "tbsp" },
+          { name: "Sweet pimentón (sweet smoked Spanish paprika)", quantity: 1.5, unit: "tsp" },
+          { name: "Hot pimentón (hot smoked Spanish paprika)", quantity: 0.5, unit: "tsp" },
+          { name: "Flaky sea salt (Maldon or similar)", quantity: 1, unit: "tsp" },
+          { name: "Fresh flat-leaf parsley, finely chopped", quantity: 2, unit: "tbsp" }
+        ]
+      },
+      {
+        group: "To Serve",
+        items: [
+          { name: "Crusty sourdough or white bread", quantity: 4, unit: "thick slices" },
+          { name: "Lemon wedges", quantity: 2, unit: "" }
+        ]
+      }
     ],
     substitutes: [
-      { ingredient: "Flank steak", alternatives: ["Beef brisket (add 1 extra hour poaching)", "Roast chicken thighs, shredded (classic Bang Bang variation)"] },
-      { ingredient: "Chinese black vinegar", alternatives: ["Rice vinegar with a small splash of balsamic", "Red wine vinegar (slightly less complex)"] },
-      { ingredient: "Szechuan peppercorns", alternatives: ["A mix of black pepper and a tiny pinch of ground clove", "Omit and increase chilli oil"] },
-      { ingredient: "Chinese sesame paste", alternatives: ["Tahini (use same quantity, very similar)", "Peanut butter blended with a little sesame oil"] }
+      { ingredient: "Whole fresh/thawed octopus", alternatives: ["Pre-cooked octopus tentacles from a good fishmonger or deli (skip to the slicing step)", "Baby octopus (reduce cooking time to 25–30 minutes)"] },
+      { ingredient: "Hot pimentón", alternatives: ["A pinch of cayenne pepper", "Omit for a milder dish"] },
+      { ingredient: "Waxy potatoes", alternatives: ["Any firm-fleshed potato that holds its shape when boiled", "Jarred cooked Spanish potatoes if available"] }
     ],
     instructions: [
-      "Step 1 — Poach the beef: Place the flank steak in a medium saucepan and cover with cold water. Add the spring onions (bruised with the back of a knife), ginger slices, peppercorns and Shaoxing wine. Bring to a boil, then reduce to a gentle simmer. Cook for 35–40 minutes until the beef is just cooked through and tender but not falling apart. Remove the beef and set aside to cool — reserve 4 tablespoons of the poaching liquid for the sauce. Discard the rest or save as light stock.",
-      "Step 2 — Make the bang bang sauce: In a bowl, whisk together the sesame paste, chilli oil, soy sauce, black vinegar, sesame oil and honey until smooth. Add the grated garlic and ground Szechuan peppercorns. Loosen with the warm poaching liquid, one tablespoon at a time, until the sauce is pourable but still coats a spoon generously. Taste — it should be rich, nutty, fiery and slightly sour. Adjust with more vinegar, soy or chilli oil as needed.",
-      "Step 3 — Prepare the cucumber: Halve the cucumber lengthways and scoop out the seeds with a spoon. Cut into thin matchsticks or use the back of a knife to lightly smash it, then tear into irregular pieces. This gives the cucumber more surface area to catch the sauce.",
-      "Step 4 — Cook the noodles: Cook the wheat noodles according to packet instructions until just al dente. Drain and rinse immediately under cold running water — this stops the cooking and keeps them from clumping. Toss with a tiny drizzle of sesame oil to prevent sticking.",
-      "Step 5 — Shred the beef: Once the beef is cool enough to handle, tear or slice it against the grain into thin ribbons or bite-sized pieces. The texture should be tender and slightly chewy — ideal for catching the sauce.",
-      "Step 6 — Assemble and serve: Divide the cold noodles between bowls. Arrange the shredded beef and cucumber on top. Spoon the bang bang sauce generously over everything — don\'t be shy, this is the whole point. Finish with crispy fried shallots and a scatter of toasted sesame seeds. Toss at the table before eating."
+      "Prepare the octopus: if using a whole raw octopus, rinse it thoroughly under cold water. Bring a very large pot of unsalted water to a rolling boil — do not salt it, as salt can toughen octopus. Add the halved onion, bay leaves, peppercorns and cork if using.",
+      "\"Frighten\" the octopus three times before fully submerging it: holding it by the head, dip the tentacles into the boiling water for 5 seconds and pull out, then repeat twice more. This helps the tentacles curl and the skin set beautifully. Then fully submerge the octopus in the water. Reduce the heat so the water is at a steady, gentle simmer (not a vigorous boil, which makes octopus tough). Cook for 45–60 minutes until a skewer or sharp knife slides into the thickest tentacle with virtually no resistance. Timing varies with octopus size — start checking at 45 minutes.",
+      "Once tender, turn off the heat and leave the octopus to rest in the cooking water for 15 minutes — this carries over cooking gently and keeps it moist. Lift out and leave to cool for 10 minutes on a board. Reserve about 500ml of the warm cooking water.",
+      "Cook the potatoes: add the scrubbed potatoes to a pot of cold salted water, bring to the boil, and cook for 18–22 minutes until completely tender when pierced with a knife. Drain and leave to cool slightly, then peel if desired (the skins come off easily once hot) and slice into 1.5cm rounds.",
+      "Slice the octopus tentacles into 2cm pieces using kitchen scissors — the traditional Galician tool — or a sharp knife. Discard the head or reserve for another use. The tentacles should have a wonderful purple-pink hue and slightly crisp, charred edges are ideal. For extra colour and flavour, flash the sliced tentacles in a very hot dry frying pan for 2–3 minutes, turning once, to get a little char.",
+      "Assemble the dish in the traditional style: arrange the warm potato slices on a large wooden board or flat plate in a single layer, season with a little flaky salt. Pile the octopus pieces on top of and around the potatoes.",
+      "Finish generously: drizzle the excellent olive oil all over — do not be shy, this is not the time for restraint. Mix the sweet and hot pimentón together and dust evenly over everything. Add flaky sea salt and scatter the chopped parsley. Serve immediately while still warm with crusty bread to mop up the paprika oil and lemon wedges on the side."
     ]
   },
   {
     id: "sug3",
-    title: "Catalan Fideuà with Prawns, Clams & Saffron Allioli",
-    category: "Fish & Seafood",
+    title: "Hungarian Töltött Paprika — Peppers Stuffed with Spiced Pork & Rice in Rich Tomato Sauce",
+    category: "Pork",
     calories: 540,
-    protein: 34,
-    fibre: 4,
-    healthScore: 71,
-    time: "55 mins",
+    protein: 31,
+    fibre: 6,
+    healthScore: 68,
+    time: "1 hr 30 mins",
     serves: "4",
-    desc: "Fideuà is the Valencian coast\'s answer to paella — a deeply flavoured pan of short toasted noodles cooked in rich seafood stock until the bottom forms an irresistible golden crust called the socarrat. Loaded with fat prawns and briny clams, and finished with a cloud of saffron-scented allioli stirred through at the table, this is Spanish coastal cooking at its most joyful and flavour-packed. One pan, no fuss, maximum impact.",
-    emoji: "🦐",
-    image: "https://images.unsplash.com/photo-1621841957884-1210fe19d66d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxDYXRhbGFuJTIwRmlkZXUlQzMlQTAlMjB3aXRoJTIwUHJhd25zJTJDJTIwQ2xhbXMlMjAlMjYlMjBTYWZmcm9uJTIwQWxsaW9saSUyMGZvb2QlMjBkaXNofGVufDB8MHx8fDE3ODQ2OTcyMTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    desc: "Töltött paprika is pure Hungarian comfort — sweet pointed peppers filled with a deeply seasoned mixture of pork mince, rice and onion, then simmered low and slow in a velvety tomato and sweet paprika sauce until the peppers are silky and the filling is perfectly cooked through. This is Central European home cooking at its most satisfying: bold, warming, and completely unfussy. Served with a cooling spoonful of sour cream and rye bread, it is the kind of meal you return to again and again.",
+    emoji: "🫑",
+    image: "https://images.unsplash.com/photo-1673646960062-9aeb2188335f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxIdW5nYXJpYW4lMjBUJUMzJUI2bHQlQzMlQjZ0dCUyMFBhcHJpa2ElMjAlRTIlODAlOTQlMjBQZXBwZXJzJTIwU3R1ZmZlZCUyMHdpdGglMjBTcGljZWQlMjBQb3JrJTIwJTI2JTIwUmljZSUyMGluJTIwUmljaCUyMFRvbWF0byUyMFNhdWNlJTIwZm9vZCUyMGRpc2h8ZW58MHwwfHx8MTc4NDc4MzYxNnww&ixlib=rb-4.1.0&q=80&w=1080",
     ingredientGroups: [
-      { group: "Seafood", items: [
-        { name: "Raw shell-on king prawns", quantity: 400, unit: "g" },
-        { name: "Clams, scrubbed", quantity: 400, unit: "g" },
-        { name: "Dry white wine", quantity: 100, unit: "ml" }
-      ]},
-      { group: "Fideuà Base", items: [
-        { name: "Fideuà noodles (or vermicelli broken into 3cm pieces)", quantity: 320, unit: "g" },
-        { name: "Olive oil", quantity: 5, unit: "tbsp" },
-        { name: "White onion, finely diced", quantity: 1, unit: "large" },
-        { name: "Red pepper, finely diced", quantity: 1, unit: "" },
-        { name: "Garlic cloves, finely sliced", quantity: 4, unit: "" },
-        { name: "Ripe tomatoes, coarsely grated", quantity: 3, unit: "" },
-        { name: "Sweet smoked paprika (pimentón dulce)", quantity: 1.5, unit: "tsp" },
-        { name: "Saffron strands", quantity: 0.5, unit: "tsp" },
-        { name: "Hot fish stock", quantity: 900, unit: "ml" },
-        { name: "Salt and black pepper", quantity: 1, unit: "pinch" }
-      ]},
-      { group: "Saffron Allioli", items: [
-        { name: "Garlic cloves", quantity: 2, unit: "" },
-        { name: "Egg yolks", quantity: 2, unit: "" },
-        { name: "Extra virgin olive oil", quantity: 120, unit: "ml" },
-        { name: "Saffron strands, steeped in 1 tbsp warm water", quantity: 0.25, unit: "tsp" },
-        { name: "Lemon juice", quantity: 1, unit: "tbsp" },
-        { name: "Salt", quantity: 0.5, unit: "tsp" }
-      ]},
-      { group: "To Serve", items: [
-        { name: "Fresh flat-leaf parsley, roughly chopped", quantity: 20, unit: "g" },
-        { name: "Lemon, cut into wedges", quantity: 1, unit: "" }
-      ]}
+      {
+        group: "Stuffed Peppers",
+        items: [
+          { name: "Long sweet pointed peppers (or large bell peppers), ideally yellow or red", quantity: 8, unit: "" },
+          { name: "Pork mince (15–20% fat)", quantity: 600, unit: "g" },
+          { name: "Short-grain or long-grain white rice, uncooked", quantity: 80, unit: "g" },
+          { name: "White onion, very finely grated or minced", quantity: 1, unit: "" },
+          { name: "Garlic cloves, grated", quantity: 3, unit: "" },
+          { name: "Sweet Hungarian paprika", quantity: 2, unit: "tsp" },
+          { name: "Ground caraway seeds", quantity: 0.5, unit: "tsp" },
+          { name: "Dried marjoram", quantity: 1, unit: "tsp" },
+          { name: "Egg", quantity: 1, unit: "" },
+          { name: "Salt", quantity: 1.5, unit: "tsp" },
+          { name: "Black pepper, freshly ground", quantity: 1, unit: "tsp" }
+        ]
+      },
+      {
+        group: "Tomato Paprika Sauce",
+        items: [
+          { name: "Passata (smooth tomato purée)", quantity: 700, unit: "ml" },
+          { name: "Chicken or vegetable stock", quantity: 400, unit: "ml" },
+          { name: "White onion, finely diced", quantity: 1, unit: "" },
+          { name: "Garlic cloves, sliced", quantity: 3, unit: "" },
+          { name: "Sunflower oil or lard", quantity: 2, unit: "tbsp" },
+          { name: "Sweet Hungarian paprika", quantity: 2, unit: "tbsp" },
+          { name: "Tomato purée (concentrated)", quantity: 2, unit: "tbsp" },
+          { name: "Caster sugar", quantity: 1, unit: "tsp" },
+          { name: "Salt and pepper", quantity: 1, unit: "to taste" }
+        ]
+      },
+      {
+        group: "To Serve",
+        items: [
+          { name: "Full-fat sour cream", quantity: 150, unit: "ml" },
+          { name: "Fresh dill or flat-leaf parsley, chopped", quantity: 2, unit: "tbsp" },
+          { name: "Rye bread or crusty white bread", quantity: 4, unit: "slices" }
+        ]
+      }
     ],
     substitutes: [
-      { ingredient: "Clams", alternatives: ["Mussels (same preparation and timing)", "Cockles (reduce opening time to 2 minutes)"] },
-      { ingredient: "Fideuà noodles", alternatives: ["Angel hair pasta broken into short lengths", "Vermicelli noodles, broken and toasted dry in the pan first"] },
-      { ingredient: "Fish stock", alternatives: ["A good-quality shop-bought fish stock", "Prawn shell stock: simmer prawn shells with onion, bay and water for 20 mins"] },
-      { ingredient: "Saffron (in allioli)", alternatives: ["A pinch of turmeric for colour (flavour differs)", "Omit and serve as plain garlic allioli"] }
+      { ingredient: "Pork mince", alternatives: ["Beef mince (the classic alternative)", "Half pork, half beef for richer flavour", "Turkey mince for a lighter version"] },
+      { ingredient: "Sweet Hungarian paprika", alternatives: ["Regular sweet paprika (use a good quality brand — it makes a real difference)", "Half sweet, half smoked paprika for depth"] },
+      { ingredient: "Long sweet pointed peppers", alternatives: ["Large bell peppers, tops cut off and seeds removed", "Romano peppers"] },
+      { ingredient: "Sour cream", alternatives: ["Crème fraîche", "Full-fat Greek yoghurt stirred with a little lemon juice"] }
     ],
     instructions: [
-      "Step 1 — Make the allioli: Steep the saffron strands in 1 tablespoon of warm water for 5 minutes. Crush the garlic to a paste with the salt using a mortar and pestle (or the flat of a knife on a board). Whisk the egg yolks in a small bowl, then very slowly drizzle in the olive oil — drop by drop at first — whisking constantly until thick and emulsified. Stir in the saffron water and lemon juice. The allioli should be thick, golden and intensely garlicky. Refrigerate until needed.",
-      "Step 2 — Open the clams: Pour the white wine into a wide saucepan with a lid. Add the scrubbed clams, cover tightly and cook over high heat for 3–4 minutes, shaking the pan once, until all the clams have opened — discard any that remain firmly shut. Strain the clam liquor through a fine sieve into the fish stock and keep warm. Set the opened clams aside.",
-      "Step 3 — Toast the noodles: Heat a large wide paella pan or oven-safe frying pan (32cm+) over medium-high heat. Add 3 tablespoons of olive oil, then add the fideuà noodles in a single layer. Toast, stirring frequently, for 3–4 minutes until they turn a deep golden brown — this toasting step is the foundation of the dish\'s nutty, complex flavour. Tip the toasted noodles into a bowl and set aside.",
-      "Step 4 — Build the sofregit: In the same pan, add the remaining olive oil over medium heat. Add the onion and red pepper and cook slowly for 10–12 minutes, stirring occasionally, until completely soft and beginning to caramelise. Add the garlic and cook for 2 minutes. Add the grated tomato (grate cut-side down so the pulp goes in, leaving the skin behind), smoked paprika and saffron. Stir well and cook for 5–6 minutes until the tomato is reduced and the oil begins to separate at the edges — this is the mark of a proper sofregit.",
-      "Step 5 — Cook the fideuà: Return the toasted noodles to the pan and stir to coat in the sofregit. Pour in the hot stock (including the clam liquor) and season with salt and pepper. Stir once to distribute everything evenly, then do not stir again. Cook over medium-high heat for about 8 minutes until the liquid is almost absorbed. Nestle the prawns into the noodles, pressing them in slightly. Cook for 3–4 minutes more until the prawns are pink and just cooked through and you can hear the base beginning to sizzle and catch — that\'s your socarrat forming.",
-      "Step 6 — Finish and serve: Tuck the opened clams into the noodles, scatter with chopped parsley and remove the pan from the heat. Drape a clean tea towel over the pan and leave to rest for 3 minutes. Bring the pan straight to the table with the saffron allioli on the side and lemon wedges. Encourage everyone to scrape up the crispy noodle base from the bottom — that\'s the best part."
+      "Make the filling: in a large bowl, combine the pork mince, uncooked rice, grated onion, grated garlic, sweet paprika, ground caraway, dried marjoram, egg, salt and black pepper. Mix thoroughly with your hands until completely combined — the mixture should be cohesive. Don\'t over-work it. Cover and refrigerate while you prepare the peppers and sauce.",
+      "Prepare the peppers: slice the tops off each pepper and set the tops aside (they can be tucked into the pot for extra flavour). Use a small sharp knife to carefully scrape out all seeds and white membrane from inside each pepper, keeping the peppers intact. Pat dry inside with kitchen paper.",
+      "Make the tomato paprika sauce: heat the oil (or lard) in a large, wide, deep casserole or Dutch oven over medium heat. Add the diced onion with a pinch of salt and cook for 8–10 minutes, stirring often, until softened and lightly golden. Add the garlic and cook for 1 minute. Remove the pan from the heat briefly, add the sweet paprika and tomato purée, and stir vigorously for 30 seconds in the residual heat — taking the pan off the heat prevents the paprika from burning and turning bitter. Return to low heat.",
+      "Pour in the passata and chicken stock, add the sugar, season with salt and pepper and stir well. Bring to a gentle simmer. Taste — the sauce should be savoury, slightly sweet and richly paprika-forward. Adjust seasoning as needed.",
+      "Stuff the peppers: take the chilled pork and rice filling and pack each pepper firmly but not too tightly (the rice will expand as it cooks). The filling should be level with or just slightly above the top of the pepper. Place the pepper tops back on like little lids if you like.",
+      "Nestle the stuffed peppers upright into the simmering tomato sauce — they should be mostly submerged. If your pot is wide, lay them on their sides gently. Bring the sauce back to a gentle simmer, then cover with a lid, reduce heat to low, and cook for 55–65 minutes until the peppers are completely tender and collapsing slightly, the rice is cooked through, and the sauce has thickened and deepened in colour. Check occasionally and add a splash of water or stock if the sauce looks too thick.",
+      "Taste the sauce one final time and adjust salt, sugar (for balance) and pepper. If you\'d like the sauce silkier, you can remove the peppers temporarily and use a hand blender to partially blitz the sauce before returning them.",
+      "Serve two peppers per person in deep bowls, spooning the rich sauce generously over and around them. Add a generous dollop of cold sour cream on top (the temperature contrast is important), scatter over fresh dill or parsley, and serve with rye bread or crusty bread to scoop up every last drop of sauce."
     ]
   }
 ];

@@ -1,61 +1,61 @@
 // financial-news-data.js
-// Auto-updated 2026-07-22 — do not edit manually
+// Auto-updated 2026-07-23 — do not edit manually
 
 var FINANCIAL_NEWS = {
-  date: "2026-07-22",
+  date: "2026-07-23",
   main: {
-    title: "Houthis Threaten Red Sea Blockade, Putting Oil Market at Greater Risk",
-    category: "Commodities & Energy",
+    title: "Oil Surges Past $95 as Middle East Conflict Deepens, Raising Fears of Fed Rate Hike",
+    category: "Markets & Economics",
     content: [
-      "The Houthi militant group has escalated its threats against global oil markets by signalling a potential blockade of the Red Sea, striking at Saudi Arabia\'s primary workaround for exporting crude oil at a moment when the Strait of Hormuz is already effectively closed. The compounding of these two critical chokepoints represents an unprecedented threat to global energy supply chains, pushing oil prices higher and rattling commodity traders worldwide. Brent crude climbed on the back of the news, with investors pricing in a significantly tighter global supply outlook should the threats materialise into action.",
-      "The Strait of Hormuz, through which roughly a fifth of the world\'s oil typically flows, has been rendered effectively unusable amid escalating regional tensions, forcing major producers like Saudi Arabia to redirect shipments via alternative routes — most notably through the Red Sea. With the Houthis now threatening to close off that corridor as well, Riyadh faces a deeply constrained set of options for getting its barrels to market. The dual closure scenario, if realised, would represent one of the most severe supply disruptions the global oil market has faced in decades.",
-      "Indian state-run refiners have already begun responding to the deteriorating security situation, with at least two major companies suspending crude oil loadings from Iraq as mounting risks in the Strait of Hormuz make vessel safety increasingly difficult to guarantee. The halt in Iraqi loadings is a tangible sign that the market disruption is moving beyond theoretical risk and into operational reality for major Asian importers. India, one of the world\'s largest crude importers, would face significant cost and logistical pressures if it is forced to seek alternative suppliers at short notice.",
-      "Commodity analysts warn that a sustained blockade of both the Hormuz strait and the Red Sea simultaneously would send shockwaves far beyond the energy sector, affecting freight rates, insurance premiums, and the broader inflation outlook at a time when cost-of-living pressures are already acute in many economies. Wheat and corn markets are also under stress from separate geopolitical tensions, with wheat rising for a second consecutive session on escalating Black Sea risks and worsening crop prospects. The convergence of multiple supply-side shocks across energy and agricultural commodities is fuelling concern among economists about a renewed inflationary pulse in the second half of 2026.",
-      "Financial markets have responded to the oil market anxiety with a notable climb in Brent crude prices, even as equity markets managed to advance on the back of a separate chip-sector rally. The divergence between a buoyant stock market and a stressed commodities complex reflects the complexity of the current macro environment, where AI-driven optimism in technology stocks is running in parallel with serious geopolitical risk in energy markets. Investors and policymakers alike will be watching the Red Sea situation closely, as any further escalation could rapidly overturn the relatively benign inflation trajectory that central banks have spent the past two years working to establish.",
+      "The price of oil has breached the $95 a barrel mark for the first time in six weeks, driven by a dangerous escalation in Middle East hostilities that is sending shockwaves through global energy markets. Renewed US-Iran aggression over the strategically vital Strait of Hormuz — the narrow waterway through which a significant portion of the world\'s oil supply passes — has combined with fresh Houthi threats in the Bab el-Mandeb strait to create a perfect storm of supply anxiety. By Thursday morning, Brent crude had extended its rally further still, with Bloomberg reporting prices topping $96, as traders priced in the growing risk of prolonged disruption to global shipping lanes.",
+      "The closure, or even partial disruption, of the Strait of Hormuz carries enormous consequences for the world economy. The waterway is the single most important oil transit chokepoint on the planet, and any sustained interference with tanker traffic there sends immediate ripples through fuel costs, manufacturing input prices, and consumer inflation worldwide. Compounding the pressure, Houthi militants have now claimed attacks on two Saudi Arabian tankers in the Red Sea, further threatening a second critical shipping corridor and signalling that the conflict\'s economic blast radius is widening.",
+      "Financial markets are responding with mounting alarm. Treasury yields are approaching their highest levels since the Iran conflict began in February, as investors reassess the inflation outlook and recalibrate expectations for Federal Reserve monetary policy. MarketWatch reports that the bull market now faces a materially higher likelihood of a Fed rate hike — a prospect that just weeks ago seemed remote — as policymakers confront the uncomfortable reality that energy-driven inflation could prove stubborn and difficult to look through.",
+      "The economic damage is already spreading well beyond petrol forecourts and airline fuel surcharges. A separate report from the New York Times highlights a deepening diesel crisis that is putting poor farmers around the world at severe risk, with the Strait of Hormuz closure limiting the shipment of diesel fuel and depriving smallholders across countries like Bangladesh of the fuel needed to power irrigation pumps. The threat to food production in already vulnerable regions adds a humanitarian dimension to what is also shaping up to be a significant macroeconomic shock, with analysts warning that agricultural output shortfalls could feed back into global food price inflation.",
+      "For investors and central bankers alike, the coming weeks will be critical. Equity markets have so far proved resilient — Asian shares rose Thursday, buoyed by chipmakers — but the combination of rising oil prices, elevated Treasury yields, and the spectre of renewed rate hikes represents a formidable headwind for risk assets. The Federal Reserve, which had been widely expected to hold rates steady through the remainder of 2026, now faces a far more complex calculus. If energy prices remain elevated or climb further, the pressure to act — even at the cost of slowing growth — could become difficult to resist, leaving markets braced for a potentially turbulent second half of the year."
     ],
-    image: "https://static01.nyt.com/images/2026/07/21/multimedia/21Biz-Redsea-Shipping-fmjh/21Biz-Redsea-Shipping-fmjh-mediumSquareAt3X.jpg",
-    source: "The New York Times",
-    sourceUrl: "https://www.nytimes.com/2026/07/21/business/oil-red-sea-houthis.html"
+    image: "https://i.guim.co.uk/img/media/42d19a83f3a78010df11f166d58c2dd34bd8579f/1225_0_6483_5186/master/6483.jpg?width=1200&quality=85&auto=format&fit=max&s=88acd3597a9699f48b31bc8b68ebb469",
+    source: "The Guardian / MarketWatch / Bloomberg",
+    sourceUrl: "https://www.theguardian.com/world/2026/jul/22/oil-price-increases-middle-east-conflict-escalates-us-iran"
   },
   secondary: [
     {
       id: "fn1",
-      title: "Super Micro\'s Stock Soars as Margins Unexpectedly Double",
-      summary: "AI server maker Super Micro Computer saw its stock surge after reporting that gross margins had unexpectedly doubled, with the company now guiding for margins of 15% to 17%.",
+      title: "Segro Board U-Turns to Accept £14bn Prologis Takeover Bid",
+      summary: "UK warehouse landlord Segro has reversed course and unanimously recommended shareholders accept a £14bn 'best and final' takeover offer from US rival Prologis, in one of the largest-ever foreign acquisitions of a London-listed company.",
       body: [
-        "Super Micro Computer delivered a dramatic earnings surprise, with gross margins roughly doubling compared to prior expectations, sending the company\'s stock sharply higher. The AI server manufacturer attributed the improvement to a more favourable customer and product mix, signalling that demand for its high-performance infrastructure remains robust as enterprises accelerate AI deployments.",
-        "The result adds fresh momentum to the broader chip and AI hardware rally that has been lifting technology stocks, reinforcing investor confidence that the AI infrastructure buildout has significant room to run. For Super Micro specifically, the margin recovery is significant given the scrutiny the company has faced in recent periods over its financial reporting and competitive positioning."
+        "The Segro board\'s dramatic U-turn marks a significant moment for the UK\'s already beleaguered London stock market, with the deal representing one of the largest foreign takeovers of a UK-listed company on record. Prologis, the American logistics real estate giant, had been pursuing Segro — one of Britain\'s biggest warehouse landlords — and its 'best and final offer' of £14bn ultimately proved persuasive enough to win unanimous board backing.",
+        "The acquisition is another blow to the standing of the London Stock Exchange as a venue for major companies, continuing a trend of high-profile UK firms either being taken private or absorbed by overseas buyers. The deal underscores the international appetite for prime logistics real estate at a time when e-commerce and supply chain resilience remain powerful structural tailwinds for the sector."
       ],
-      image: "https://images.unsplash.com/photo-1686897261382-6cf0313ab27e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTdXBlciUyME1pY3JvJTVDfGVufDB8MHx8fDE3ODQ2OTY2Mzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "MarketWatch",
-      url: "https://www.marketwatch.com/story/super-micros-stock-soars-as-its-margins-unexpectedly-double-8aa83784?mod=mw_rss_topstories",
-      category: "Earnings"
+      image: "https://i.guim.co.uk/img/media/64e79e1f54f48488994cda2235b13c5e671e1ef0/0_0_3321_2657/master/3321.jpg?width=1200&quality=85&auto=format&fit=max&s=50dc4a8d4fb723568a014e2006370a6c",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/business/2026/jul/22/segro-board-u-turn-14bn-takeover-bid-us-rival-prologis",
+      category: "Mergers & Acquisitions"
     },
     {
       id: "fn2",
-      title: "Novo Nordisk Sues Eli Lilly Over 'Materially Misleading' Weight-Loss Drug Ads",
-      summary: "Ozempic maker Novo Nordisk has launched legal action against US rival Eli Lilly, alleging the company used outdated clinical trial data to make its competing weight-loss treatments appear more effective than they are.",
+      title: "Tesla Profit Falls Despite Car Sales Rebound as Price Cuts Bite",
+      summary: "Tesla reported a decline in quarterly profit even as vehicle sales volumes recovered, with aggressive price cuts and rising expenses squeezing the company\'s margins.",
       body: [
-        "Danish pharmaceutical giant Novo Nordisk filed suit against Eli Lilly on Tuesday, accusing its American rival of running advertisements that are 'false and materially misleading' by relying on outdated trial data to promote its weight-loss and anti-diabetes products. The lawsuit underscores the intensifying commercial battle between the two companies as the global market for GLP-1 weight-loss drugs continues to expand rapidly.",
-        "The legal clash between the two biggest players in the weight-loss drug space reflects the enormous financial stakes involved, with analysts estimating the global obesity drug market could be worth hundreds of billions of dollars within the next decade. How courts and regulators respond to the advertising dispute could set important precedents for how clinical data is used in pharmaceutical marketing going forward."
+        "Tesla\'s latest earnings report delivered a mixed picture for investors: car sales are rebounding, suggesting demand for its electric vehicles remains intact, but the profit line told a more troubling story. Steep price reductions deployed to stimulate volume — a strategy Tesla has leaned on heavily over the past year — combined with higher operating expenses, dragged net income lower despite the improved sales numbers.",
+        "The results highlight the difficult trade-off Tesla faces between defending its market share in an increasingly competitive electric vehicle landscape and protecting the profitability that investors have historically prized. Analysts will be watching closely to see whether the company can find a path to margin recovery without sacrificing the sales momentum it has worked hard to rebuild."
       ],
-      image: "https://i.guim.co.uk/img/media/39b7491497130e6f0926d45f7bb2cd3260c276ca/0_0_1200_960/master/1200.jpg?width=1200&quality=85&auto=format&fit=max&s=cc34a15ab82ad9dc797acc046856c4d2",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/business/2026/jul/21/novo-nordisk-eli-lilly-weight-loss-ads",
-      category: "Pharmaceuticals"
+      image: "https://static01.nyt.com/images/2026/07/22/multimedia/22BIZ-TESLA-01-vkfp/22BIZ-TESLA-01-vkfp-mediumSquareAt3X.jpg",
+      source: "The New York Times",
+      url: "https://www.nytimes.com/2026/07/22/business/tesla-earnings-elon-musk.html",
+      category: "Corporate Earnings"
     },
     {
       id: "fn3",
-      title: "Stocks Advance as Chip Rally Builds and Brent Crude Climbs",
-      summary: "Global equity markets rose as a rally in chip stocks extended gains driven by renewed investor confidence in the AI trade, even as oil prices climbed on pessimism over US-Iran peace talks.",
+      title: "Paramount\'s £80bn Warner Bros Takeover Clears Major EU Hurdle",
+      summary: "The European Commission has granted conditional approval for Paramount Skydance\'s £80bn acquisition of Warner Brothers, bringing one of the entertainment industry\'s most consequential mega-mergers significantly closer to completion.",
       body: [
-        "Chip stocks led broad equity market gains on Wednesday, with investors doubling down on bets that the artificial intelligence investment cycle still has considerable momentum ahead of it. The advance helped lift major indices even as oil markets were moving in the opposite direction, with Brent crude rising amid deteriorating prospects for a diplomatic resolution to tensions affecting Persian Gulf shipping.",
-        "The day\'s market action highlighted the bifurcated nature of the current investment landscape, where technology optimism and geopolitical commodity risk are running simultaneously without yet cancelling each other out. Analysts noted that should energy prices continue to climb, the inflationary pressure could eventually weigh on the rate-cut expectations that have been partially underpinning equity valuations."
+        "The European Commission ruled that Paramount Skydance\'s decision to terminate a film distribution joint venture with Universal Pictures adequately addressed its competition concerns, clearing the path for the colossal deal to proceed. The conditional green light from Brussels represents a major regulatory milestone for a transaction that would reshape the global media landscape and create a dominant force in film and television production.",
+        "The merger, valued at approximately £80bn, reflects the accelerating consolidation gripping the entertainment industry as streaming competition intensifies and studios seek the scale needed to fund ever-larger content budgets. With EU approval now secured, attention turns to any remaining regulatory reviews in other jurisdictions before the deal can formally close."
       ],
-      image: "https://images.pexels.com/photos/32300577/pexels-photo-32300577.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      source: "Bloomberg Markets",
-      url: "https://www.bloomberg.com/news/articles/2026-07-21/stock-market-today-dow-s-p-live-updates",
-      category: "Markets"
+      image: "https://images.unsplash.com/photo-1741723172193-2985149c1b8f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxQYXJhbW91bnQlNUN8ZW58MHwwfHx8MTc4NDc4MzAzOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/media/2026/jul/22/paramount-skydance-takeover-warner-brothers-eu-approval",
+      category: "Mergers & Acquisitions"
     }
   ]
 };

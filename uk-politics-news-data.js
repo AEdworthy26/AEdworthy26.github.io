@@ -1,60 +1,60 @@
 // uk-politics-news-data.js
-// Auto-updated 2026-07-22 — do not edit manually
+// Auto-updated 2026-07-23 — do not edit manually
 
 var UK_POLITICS_NEWS = {
-  date: "2026-07-22",
+  date: "2026-07-23",
   main: {
-    title: "Burnham Tells Cabinet to Tackle Living Costs at First Meeting",
+    title: "Burnham Orders Review of Early Prisoner Release Scheme Amid PC Harper Family Outrage",
     category: "Politics",
     content: [
-      "Andy Burnham chaired his first cabinet meeting as Prime Minister on Tuesday, setting out an unambiguous agenda for his new government: tackling the cost of living crisis facing millions of British households. The new Prime Minister used the gathering to direct ministers to examine every available avenue to ease financial pressures on working people, framing his administration explicitly as a 'cost of living government'. The centrepiece of his opening policy announcement was a cut to VAT on household electricity bills, a move he said would provide immediate relief to families struggling with energy costs.",
-      "The cabinet reshuffle that preceded the meeting drew significant attention, with Burnham making sweeping changes that saw more than half of his predecessor Keir Starmer\'s cabinet removed or demoted. John Healey emerged as a surprise appointment to the role of Chancellor of the Exchequer, having previously served as Defence Secretary, while Ed Miliband was moved to the Foreign Office and Shabana Mahmood remained in post as Home Secretary. The breadth of the changes signalled Burnham\'s intention to stamp his own authority on government from the very first day.",
-      "However, the new Prime Minister\'s bold opening moves were quickly met with scrutiny over how his policy promises would be funded. Darren Jones, a close ally of former Prime Minister Sir Keir Starmer, publicly criticised the flagship VAT cut on electricity bills, describing it as unfunded. The criticism from within the broader Labour family underscored the fiscal tightrope Burnham must walk as he seeks to deliver meaningful relief to voters while maintaining credibility with financial markets and economic commentators.",
-      "Burnham has sought to reassure those concerns by insisting he will stick to the government\'s existing fiscal rules, framing his approach as one of careful prioritisation rather than unchecked spending. His new Chancellor, John Healey, is widely regarded as a diligent and methodical figure, and is understood to have been handed a tight fiscal framework within which to work. The Guardian described Healey as having been given a 'straitjacket', tasked with finding ways to fund the Prime Minister\'s policy promises without breaching the rules that govern government borrowing.",
-      "Despite the flurry of activity, early polling suggested Burnham faces a significant challenge in shifting public sentiment, with a majority of Britons saying they believe the country is heading in the wrong direction under his new leadership. The new Prime Minister has been urged to 'rebuild some optimism for the future' as he settles into Number 10. With calls for a snap election also circulating in some quarters, Burnham\'s first days in office have made clear that the political pressure on his administration will be intense from the outset."
+      "Prime Minister Andy Burnham has found himself at the centre of a deepening political storm after ordering a formal review of plans to release thousands of killers, rapists and sex offenders early from prison in September. The controversy erupted after it emerged that two of the three men convicted over the death of PC Andrew Harper could be eligible for early release under the scheme. Burnham has said he wants to ensure 'everything has been looked at' before the policy proceeds, signalling that he is not yet fully satisfied with the grounds on which the releases would take place.",
+      "Lissie Harper, the widow of PC Andrew Harper, has responded with fury to reports that her husband\'s killers may benefit from the early release programme, describing the prospect as 'deplorable'. PC Harper was killed in 2019 while responding to a call, and his death became a landmark case that prompted significant debate about justice, sentencing, and the treatment of those who kill police officers. His widow has since become a prominent campaigner on law enforcement issues, and her intervention has given the controversy significant political and moral weight.",
+      "The row has been compounded by a separate scandal involving senior ministers who were caught on camera appearing to make light of the prisoner release scheme. Health Secretary Wes Streeting and Justice Secretary Shabana Mahmood were filmed 'ribbing' each other about the policy in what was described as a hot mic moment, prompting sharp rebukes from victims of crime. Campaigners said it was 'no laughing matter' and accused the ministers of showing a callous disregard for those who have suffered at the hands of violent offenders.",
+      "The early release scheme has its roots in decisions made under the previous government, with the £15 billion increase in military spending and broader public finances contributing to pressure on the prison estate. Critics argue that the government is releasing dangerous individuals prematurely in order to manage chronic overcrowding in English and Welsh prisons, rather than as a considered matter of penal policy. The combination of the Harper case and the ministerial conduct footage has created a crisis of optics for the new Burnham administration at a particularly sensitive moment.",
+      "The review announced by Burnham will now add to a growing sense of policy turbulence surrounding criminal justice in the early weeks of his premiership. Opposition parties have seized on the episode to question the government\'s competence and compassion when it comes to victims' rights. With public trust in the justice system already strained, the outcome of Burnham\'s review is likely to be closely scrutinised both in Parliament and by the wider public, making this one of the most politically charged issues the new Prime Minister has faced since taking office."
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/868c/live/fac66860-852f-11f1-926f-c90d1bcfbc84.jpg",
-    source: "BBC News",
-    sourceUrl: "https://www.bbc.co.uk/news/articles/cx2vp4x7gkxo?at_medium=RSS&at_campaign=rss"
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/efc9/live/6272a1d0-859f-11f1-bc30-6908d27da04d.jpg",
+    source: "The Guardian",
+    sourceUrl: "https://www.theguardian.com/society/2026/jul/22/andy-burnham-announces-review-of-prisoner-early-release-scheme"
   },
   secondary: [
     {
       id: "uk1",
-      title: "Starmer Allies See 'Hint of Retribution' in Burnham Reshuffle",
-      summary: "Allies of former Prime Minister Keir Starmer have accused Andy Burnham of conducting a 'deeply factional' cabinet reshuffle after more than half of Starmer\'s ministers were removed or demoted.",
+      title: "Most Bus Fares in England to Be Capped at £2 from January",
+      summary: "The government has announced that most bus fares in England will be capped at £2 from January, framing the policy as a key cost-of-living measure.",
       body: [
-        "Supporters of Sir Keir Starmer have reacted with anger to the scale of the cabinet changes made by Andy Burnham on his first day in office, with one ally describing the reshuffle as 'deeply factional' and at odds with Burnham\'s pledges to end internal Labour party divisions. More than half of the outgoing Prime Minister\'s cabinet were either removed entirely or moved to lower-ranking positions, a level of upheaval that has shocked many within the parliamentary Labour party.",
-        "The fallout raises early questions about party unity under Burnham\'s leadership, particularly as his government simultaneously faces external pressure over the funding of its key policy commitments. The tension between the Burnham and Starmer wings of the party could complicate the new Prime Minister\'s ability to command a disciplined majority in the Commons in the months ahead."
+        "The Burnham government has confirmed that bus fares across most of England will be capped at £2 from January, in a move designed to ease financial pressure on commuters and lower-income households. Ministers say the policy will 'help with the cost of living and give people the breathing space they need', positioning it as one of the administration\'s early flagship domestic commitments.",
+        "The announcement builds on previous fare cap initiatives and signals the new government\'s intention to use public transport pricing as a lever for economic relief. The policy is expected to benefit millions of regular bus users, particularly those in areas with limited access to rail services."
       ],
-      image: "https://i.guim.co.uk/img/media/0afdd91d83ee860d0f6ff4c599b3cb2b50049f5c/688_0_6880_5504/master/6880.jpg?width=1200&quality=85&auto=format&fit=max&s=b4075d2cab9accae90e80d498c9ed36f",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/politics/2026/jul/21/keir-starmer-allies-retribution-andy-burnham-reshuffle",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/429a/live/76ab7ed0-85ed-11f1-b976-0b9c15b0ccfc.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.co.uk/news/articles/cz64l78n5vpo?at_medium=RSS&at_campaign=rss",
       category: "Politics"
     },
     {
       id: "uk2",
-      title: "Anas Sarwar Set to Quit as Scottish Labour Leader for Ministerial Role",
-      summary: "Scottish Labour leader Anas Sarwar is reportedly poised to resign his position to take up a ministerial post in Andy Burnham\'s new government, with reports suggesting he will be elevated to the House of Lords.",
+      title: "Tories Ask HMRC to Investigate Whether Nigel Farage Owes Tax on £5m Gift",
+      summary: "The Conservative Party has written to HMRC asking it to investigate whether Reform leader Nigel Farage should have paid tax on a £5 million gift he received from crypto billionaire Christopher Harborne.",
       body: [
-        "Anas Sarwar, who has led Scottish Labour for several years, is expected to step down from the role in order to join Andy Burnham\'s administration as a minister, according to reports. He is understood to be in line for a post at a revamped Department for Business, Innovation, Science and Trade, and would be elevated to the Lords in order to take up the position.",
-        "The move, if confirmed, would trigger a Scottish Labour leadership contest at a politically sensitive moment for the party north of the border. Sarwar\'s departure would represent a significant moment for the devolved political landscape, removing one of the most prominent figures in Scottish centre-left politics from his current role."
+        "Conservative Party chair Kevin Hollinrake has formally written to HMRC querying the tax status of a £5 million gift that Reform UK leader Nigel Farage received from crypto billionaire Christopher Harborne. The Tories are questioning whether the funds constituted a payment to compensate Farage for running Reform, which could potentially affect its tax treatment.",
+        "The move marks an aggressive new line of attack from the Conservatives against their rival on the right of British politics, as both parties compete for similar voter bases. The referral to HMRC places the matter in the hands of tax authorities and could have significant implications for Farage\'s personal finances and his party\'s credibility."
       ],
-      image: "https://i.guim.co.uk/img/media/577c3011840fe08baf58d4df77284e8d1b19f67d/21_0_4864_3891/master/4864.jpg?width=1200&quality=85&auto=format&fit=max&s=61e1e28e2e942b936adbcd5ca7db00d1",
+      image: "https://i.guim.co.uk/img/media/fbe1f883cd6109d27bbef9a10298ce5ef5daa3e4/2139_111_3314_2651/master/3314.jpg?width=1200&quality=85&auto=format&fit=max&s=b87226e14f50480484b2ef97dec7c706",
       source: "The Guardian",
-      url: "https://www.theguardian.com/politics/live/2026/jul/21/andy-burnham-pm-labour-energy-bills-cost-of-living-cabinet-latest-news-updates",
+      url: "https://www.theguardian.com/politics/2026/jul/22/tories-hmrc-investigate-nigel-farage-tax-5m-gift",
       category: "Politics"
     },
     {
       id: "uk3",
-      title: "Reform Deputy Leader Urges Burnham to Seize Control of Thames Water",
-      summary: "Reform UK\'s deputy leader Richard Tice has called on the new Prime Minister to place Thames Water into temporary public ownership, expressing 'gut-wrenching fury' at the water company\'s executive pay packages.",
+      title: "Anas Sarwar Slammed as 'Chancer' for Quitting Scottish Labour to Join Burnham Government",
+      summary: "Scottish Labour\'s rivals in Holyrood have condemned Anas Sarwar\'s decision to resign as Scottish Labour leader in order to join Andy Burnham\'s new government as a peer.",
       body: [
-        "Richard Tice, deputy leader of Reform UK, has used the change of government to renew his demand that Thames Water be brought under a temporary form of public control as the troubled utility teeters on the brink of financial collapse. Tice said he felt 'gut-wrenching fury' at reports of seven-figure remuneration packages being awarded to the company\'s top executives even as it faces a deepening crisis.",
-        "The call puts unusual pressure on the new Burnham administration from the right of the political spectrum, highlighting how the Thames Water situation has the potential to generate cross-party anger. The issue of water company accountability and executive pay has become a potent political flashpoint, and Burnham\'s response to the ongoing crisis is likely to be closely watched by voters and opposition politicians alike."
+        "Rivals of Scottish Labour at Holyrood have reacted with anger and contempt to the news that Anas Sarwar is stepping down as Scottish Labour leader to take up a role in Prime Minister Andy Burnham\'s government, calling him a 'chancer' and accusing him of lying to voters. Sarwar, who was notably the first senior Labour figure to publicly call for Keir Starmer\'s resignation, will be made a peer under the new administration.",
+        "The move is seen as a significant shakeup for Scottish Labour, which now faces a leadership vacuum at a crucial moment in Scottish politics. Critics argue that Sarwar\'s departure to Westminster undermines his stated commitment to Scotland and strengthens the hand of the SNP, who are likely to use the episode to reinforce their narrative about Labour\'s priorities."
       ],
-      image: "https://e3.365dm.com/26/07/1920x1080/skynews-richard-tice-pmqs_7298168.jpg?20260715123051",
-      source: "Sky News",
-      url: "https://news.sky.com/story/reform-deputy-leader-tice-urges-burnham-to-seize-control-of-thames-water-13565503",
+      image: "https://images.unsplash.com/photo-1758939557815-2953e83c46a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxBbmFzJTIwU2Fyd2FyJTIwU2xhbW1lZCUyMGFzJTIwfGVufDB8MHx8fDE3ODQ3ODI5NDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/politics/2026/jul/22/scottish-labours-rivals-decry-chancer-anas-sarwar-for-resigning-to-join-andy-burnhams-government",
       category: "Politics"
     }
   ]

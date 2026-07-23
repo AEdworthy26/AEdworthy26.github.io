@@ -1,19 +1,19 @@
 // reads-data.js
-// Auto-updated 2026-07-22 — do not edit manually
+// Auto-updated 2026-07-23 — do not edit manually
 
 var READS_DATA = {
-  date: "2026-07-22",
+  date: "2026-07-23",
   book: {
-    title: "The Remains of the Day",
-    author: "Kazuo Ishiguro",
-    year: 1989,
-    genres: ["Literary Fiction", "Character Study", "Post-War Britain"],
-    desc: "Stevens, an aging English butler, embarks on a rare motoring holiday through the West Country in the 1950s, using the journey as an occasion to quietly reconstruct — and quietly justify — the choices that defined his life. Ishiguro\'s prose is a masterclass in what goes unsaid: every evasion, every stiffly worded reflection, reveals a man who sacrificed love, moral agency, and selfhood in the name of professional dignity and loyalty to a master who did not deserve it. The novel is devastating in the most restrained way imaginable, building to a lakeside conversation that lands like a slow, clean blow. It is also, beneath the melancholy, a precise and brilliant satire of English repression, class deference, and the story we tell ourselves to make a diminished life bearable.",
-    whyRead: "In a moment when questions of loyalty, complicity, and institutional duty feel urgently alive, Ishiguro\'s portrait of a man who mistakes servility for greatness has never read more like a cautionary tale — and it is simply one of the most perfectly constructed novels in the English language.",
-    rating: 4.2,
+    title: "The Immortal Life of Henrietta Lacks",
+    author: "Rebecca Skloot",
+    year: 2010,
+    genres: ["Science", "Biography", "Ethics"],
+    desc: "In 1951, a Black tobacco farmer named Henrietta Lacks died of cervical cancer, but cells taken from her tumour — without her knowledge or consent — became one of the most consequential biological materials in history, multiplying endlessly in laboratories worldwide and underpinning vaccines, cancer research, and IVF. Rebecca Skloot spent a decade weaving together the hard science of HeLa cells with the deeply human story of a family who had no idea their mother\'s cells were making fortunes for others while they struggled to afford healthcare. The book moves between past and present with the pacing of a thriller, never letting the ethics become abstract — you feel the injustice and the wonder simultaneously. Skloot\'s reporting is meticulous, her empathy for the Lacks family utterly genuine, and the result is one of those rare works of narrative non-fiction that genuinely changes how you see the world.",
+    whyRead: "With ongoing debates about genetic data ownership, biotech profits, and medical consent still unresolved, this book feels more urgent than ever — and it\'s simply a gripping, beautifully written read.",
+    rating: 4.1,
     ratingSource: "Goodreads",
-    ratingCount: "400,000+",
-    coverUrl: "https://covers.openlibrary.org/b/id/95742-L.jpg",
-    amazonUrl: "https://www.amazon.co.uk/dp/8433902385"
+    ratingCount: "600,000+",
+    coverUrl: "https://covers.openlibrary.org/b/id/8364866-L.jpg",
+    amazonUrl: "https://www.amazon.co.uk/dp/0330533444"
   }
 };
