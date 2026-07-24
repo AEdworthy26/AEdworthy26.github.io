@@ -1,10 +1,10 @@
 // quiz-data.js
-// Auto-updated 2026-07-23 — do not edit manually
+// Auto-updated 2026-07-24 — do not edit manually
 
 window.QUIZ_DATA = {
-  date: '2026-07-23',
-  category: 'Film & TV',
-  question: 'In the 1994 film The Shawshank Redemption, Andy Dufresne locks himself in the warden\'s office and plays a piece of opera over the prison loudspeakers — but what is the name of the opera, and who composed it?',
-  answer: 'The Marriage of Figaro (Le nozze di Figaro), composed by Wolfgang Amadeus Mozart.',
-  funFact: 'The specific duet played is "Sull\'aria" from Act III, in which two women plot against a lecherous count. Morgan Freeman\'s narration describes it as something so beautiful it made the prisoners feel free, even if they didn\'t understand a word of Italian. Director Frank Darabont later said it was the hardest scene to shoot because the crew kept stopping just to listen.'
+  date: '2026-07-24',
+  category: 'British History',
+  question: 'In which year did the Great Fire of London begin, and on which street did it start?',
+  answer: '1666; the fire started on Pudding Lane.',
+  funFact: 'The fire broke out in a bakery on Pudding Lane in the early hours of 2nd September 1666 and burned for four days, destroying around 13,200 houses and 87 parish churches. Despite the catastrophic scale of destruction, the official death toll was remarkably low — just six recorded fatalities, though historians suspect the true number was higher among the poor whose deaths went unrecorded.'
 };

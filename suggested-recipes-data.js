@@ -1,226 +1,236 @@
 // suggested-recipes-data.js
-// Auto-updated 2026-07-23 — do not edit manually
+// Auto-updated 2026-07-24 — do not edit manually
 
 window.SUGGESTED_RECIPES = [
   {
     id: "sug1",
-    title: "Yemeni Chicken Mandi — Slow-Roasted Spiced Chicken with Fragrant Rice, Toasted Almonds & Zhoug",
+    title: "Jamaican Brown Stew Chicken with Rice & Peas and Fried Plantain",
     category: "Chicken",
     calories: 610,
-    protein: 46,
-    fibre: 3,
-    healthScore: 73,
-    time: "1 hr 45 mins",
+    protein: 44,
+    fibre: 6,
+    healthScore: 71,
+    time: "1 hr 15 mins",
     serves: "4",
-    desc: "Mandi is one of the great celebratory dishes of the Arabian Peninsula — chicken marinated in a heady blend of warm spices, roasted until the skin is burnished and fragrant, then served over long-grain rice cooked in the spiced cooking juices. A punchy fresh zhoug (Yemeni green chilli sauce) cuts through the richness beautifully, and a scattering of toasted almonds and raisins gives every mouthful contrasting texture and sweetness.",
-    emoji: "🍗",
-    image: "https://images.pexels.com/photos/7340936/pexels-photo-7340936.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    desc: "Deep, dark, and utterly fragrant — this Jamaican classic builds layers of flavour by browning marinated chicken in caramelised sugar before braising it low and slow in a rich sauce of thyme, allspice, Scotch bonnet, and browning sauce. Served with coconut-scented rice and peas and golden fried plantain, it\'s the kind of meal that feels like a celebration on a weeknight.",
+    emoji: "🇯🇲",
+    image: "https://images.unsplash.com/photo-1632852576480-c10a8e19496a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxKYW1haWNhbiUyMEJyb3duJTIwU3RldyUyMENoaWNrZW4lMjB3aXRoJTIwUmljZSUyMCUyNiUyMFBlYXMlMjBhbmQlMjBGcmllZCUyMFBsYW50YWluJTIwZm9vZCUyMGRpc2h8ZW58MHwwfHx8MTc4NDg3MDMwOHww&ixlib=rb-4.1.0&q=80&w=1080",
     ingredientGroups: [
       {
         group: "Chicken & Marinade",
         items: [
-          { name: "Whole chicken, jointed into 8 pieces (or bone-in thighs & drumsticks)", quantity: 1.5, unit: "kg" },
-          { name: "Plain full-fat yoghurt", quantity: 4, unit: "tbsp" },
-          { name: "Ground cumin", quantity: 2, unit: "tsp" },
-          { name: "Ground coriander", quantity: 2, unit: "tsp" },
-          { name: "Ground turmeric", quantity: 1, unit: "tsp" },
-          { name: "Ground cinnamon", quantity: 1, unit: "tsp" },
-          { name: "Ground cardamom", quantity: 0.5, unit: "tsp" },
-          { name: "Ground black pepper", quantity: 1, unit: "tsp" },
-          { name: "Smoked paprika", quantity: 1, unit: "tsp" },
-          { name: "Ground cloves", quantity: 0.25, unit: "tsp" },
-          { name: "Garlic cloves, grated", quantity: 4, unit: "" },
-          { name: "Fresh ginger, grated", quantity: 1, unit: "tbsp" },
-          { name: "Olive oil", quantity: 3, unit: "tbsp" },
-          { name: "Salt", quantity: 1.5, unit: "tsp" }
+          { name: "Bone-in chicken thighs and drumsticks", quantity: 1.2, unit: "kg" },
+          { name: "Soy sauce", quantity: 2, unit: "tbsp" },
+          { name: "Browning sauce (e.g. Grace or Kitchen Bouquet)", quantity: 1, unit: "tbsp" },
+          { name: "Ground allspice", quantity: 1.5, unit: "tsp" },
+          { name: "Dried thyme", quantity: 1.5, unit: "tsp" },
+          { name: "Garlic cloves, minced", quantity: 4, unit: "" },
+          { name: "Fresh ginger, grated", quantity: 2, unit: "tsp" },
+          { name: "Scotch bonnet chilli, finely chopped (seeds optional)", quantity: 1, unit: "" },
+          { name: "Spring onions, roughly chopped", quantity: 3, unit: "" },
+          { name: "Black pepper", quantity: 1, unit: "tsp" },
+          { name: "Salt", quantity: 1, unit: "tsp" }
         ]
       },
       {
-        group: "Mandi Rice",
+        group: "Stew Base",
         items: [
-          { name: "Basmati rice, rinsed and soaked 30 mins", quantity: 400, unit: "g" },
-          { name: "Chicken stock (or water with a stock cube)", quantity: 750, unit: "ml" },
-          { name: "White onion, finely sliced", quantity: 2, unit: "" },
-          { name: "Unsalted butter", quantity: 30, unit: "g" },
-          { name: "Whole cardamom pods", quantity: 4, unit: "" },
-          { name: "Whole cloves", quantity: 3, unit: "" },
-          { name: "Cinnamon stick", quantity: 1, unit: "" },
-          { name: "Bay leaves", quantity: 2, unit: "" },
-          { name: "Raisins", quantity: 40, unit: "g" },
-          { name: "Flaked almonds, toasted", quantity: 50, unit: "g" }
+          { name: "Vegetable oil", quantity: 2, unit: "tbsp" },
+          { name: "Caster sugar", quantity: 1, unit: "tbsp" },
+          { name: "Brown onion, sliced", quantity: 1, unit: "" },
+          { name: "Red bell pepper, sliced", quantity: 1, unit: "" },
+          { name: "Tomatoes, chopped", quantity: 2, unit: "" },
+          { name: "Chicken stock", quantity: 300, unit: "ml" },
+          { name: "Worcestershire sauce", quantity: 1, unit: "tbsp" },
+          { name: "Fresh thyme sprigs", quantity: 4, unit: "" }
         ]
       },
       {
-        group: "Zhoug (Green Chilli Sauce)",
+        group: "Rice & Peas",
         items: [
-          { name: "Fresh green chillies (medium heat), roughly chopped", quantity: 3, unit: "" },
-          { name: "Fresh coriander, leaves and stalks", quantity: 30, unit: "g" },
-          { name: "Fresh flat-leaf parsley", quantity: 15, unit: "g" },
-          { name: "Garlic cloves", quantity: 2, unit: "" },
-          { name: "Ground cumin", quantity: 0.5, unit: "tsp" },
-          { name: "Ground cardamom", quantity: 0.25, unit: "tsp" },
-          { name: "Lemon juice", quantity: 2, unit: "tbsp" },
-          { name: "Olive oil", quantity: 3, unit: "tbsp" },
-          { name: "Salt", quantity: 0.5, unit: "tsp" }
+          { name: "Long-grain white rice", quantity: 300, unit: "g" },
+          { name: "Coconut milk", quantity: 400, unit: "ml" },
+          { name: "Water", quantity: 200, unit: "ml" },
+          { name: "Tinned kidney beans, drained", quantity: 240, unit: "g" },
+          { name: "Garlic clove, whole", quantity: 1, unit: "" },
+          { name: "Fresh thyme sprig", quantity: 1, unit: "" },
+          { name: "Salt", quantity: 1, unit: "tsp" }
         ]
       },
       {
-        group: "To Serve",
+        group: "Fried Plantain",
         items: [
-          { name: "Lemon wedges", quantity: 2, unit: "" },
-          { name: "Sliced tomatoes and cucumber", quantity: 1, unit: "serving" }
+          { name: "Ripe plantains (yellow-black skin), peeled and sliced diagonally 1cm thick", quantity: 2, unit: "" },
+          { name: "Vegetable oil for frying", quantity: 3, unit: "tbsp" },
+          { name: "Pinch of salt", quantity: 1, unit: "pinch" }
         ]
       }
     ],
     substitutes: [
-      { ingredient: "Whole chicken, jointed", alternatives: ["Bone-in chicken thighs and drumsticks", "Bone-in chicken breasts (reduce cooking time slightly)"] },
-      { ingredient: "Basmati rice", alternatives: ["Long-grain white rice", "Jasmine rice"] },
-      { ingredient: "Fresh green chillies for zhoug", alternatives: ["Jalapeños", "Serrano chillies", "Reduce quantity for milder heat"] },
-      { ingredient: "Flaked almonds", alternatives: ["Pine nuts, toasted", "Cashews, roughly chopped and toasted"] }
+      { ingredient: "Browning sauce", alternatives: ["1 tbsp dark soy sauce + 1 tsp molasses", "Extra soy sauce with a pinch of brown sugar"] },
+      { ingredient: "Scotch bonnet", alternatives: ["Habanero chilli", "½ tsp dried chilli flakes for less heat"] },
+      { ingredient: "Ripe plantain", alternatives: ["Very ripe banana (less savoury but works)", "Skip and serve with extra rice"] },
+      { ingredient: "Kidney beans", alternatives: ["Black-eyed peas", "Tinned black beans"] }
     ],
     instructions: [
-      "Make the marinade: in a large bowl, combine the yoghurt, all the ground spices, grated garlic, grated ginger, olive oil and salt into a smooth paste. Score the chicken pieces deeply a few times with a sharp knife to help the marinade penetrate. Add the chicken and turn to coat thoroughly. Cover and marinate for at least 1 hour at room temperature, or overnight in the fridge (bring to room temp 30 mins before roasting).",
-      "Preheat your oven to 200°C (180°C fan). Arrange the marinated chicken pieces on a large wire rack set over a deep roasting tray (the tray will catch the dripping juices — you\'ll use these for the rice). Roast for 45–55 minutes until deeply golden, the skin is crisp, and the juices run clear when the thickest part is pierced. Rest loosely covered with foil for 10 minutes.",
-      "While the chicken roasts, make the zhoug: blitz the green chillies, coriander, parsley, garlic, cumin, cardamom, lemon juice, olive oil and salt in a small food processor or blender until you have a rough, vibrant green sauce. Taste and adjust chilli, lemon and salt. Set aside.",
-      "Prepare the rice base: in a large, heavy-based saucepan or casserole with a tight-fitting lid, melt the butter over medium heat. Add the sliced onions with a pinch of salt and cook, stirring regularly, for 18–22 minutes until deeply golden and caramelised — don\'t rush this, the colour is key flavour. Add the whole cardamom pods, cloves, cinnamon stick and bay leaves and stir for 1 minute until fragrant.",
-      "Pour the resting juices from the roasting tray into a measuring jug. Top up with chicken stock to reach 750ml total liquid (discard excess fat if needed but keep all the flavourful brown drippings). Pour this liquid into the onion pan, bring to the boil, taste for salt and adjust — it should be well-seasoned as it will cook the rice.",
-      "Drain the soaked basmati rice and add it to the pan. Stir once gently, then bring back to a boil. Reduce the heat to the lowest possible setting, place a clean tea towel or piece of folded kitchen paper over the pan, then press the lid tightly on top (this absorbs steam for fluffier rice). Cook for 15 minutes without lifting the lid. Remove from heat and rest, still covered, for 10 minutes.",
-      "To finish the rice, use a fork to gently fluff it up, discarding the whole spices. Fold in the raisins. Transfer to a large serving platter, piling the rice up generously. Arrange the roasted chicken pieces on top and scatter over the toasted flaked almonds.",
-      "Serve immediately with the zhoug in a bowl alongside, lemon wedges, and a simple plate of sliced tomatoes and cucumber. Encourage everyone to drizzle the bright green zhoug generously — it\'s the essential flavour contrast that makes the whole dish sing."
+      "Step 1 — Marinate the chicken: Score each piece of chicken a few times with a knife so the marinade penetrates. Combine soy sauce, browning sauce, allspice, dried thyme, garlic, ginger, Scotch bonnet, spring onions, black pepper, and salt in a large bowl. Add the chicken and toss thoroughly. Cover and refrigerate for at least 30 minutes, or overnight for best results. Remove the chicken from the marinade and pat lightly with kitchen paper — reserve the marinade.",
+      "Step 2 — Caramelise and brown: Heat vegetable oil in a wide, heavy-based pan or Dutch oven over medium-high heat. Add the caster sugar and let it melt and turn deep amber without stirring — about 2 minutes. Working in batches, add the chicken pieces (skin-side down first) and turn them in the caramelised sugar to coat and colour deeply on all sides, 3–4 minutes per side. Set browned chicken aside.",
+      "Step 3 — Build the stew: In the same pan, add the sliced onion and red pepper and fry for 3–4 minutes until softened. Add the chopped tomatoes and cook for another 2 minutes. Pour in the reserved marinade, chicken stock, and Worcestershire sauce, scraping up any sticky bits from the base. Return the chicken to the pan and tuck in the fresh thyme sprigs. Bring to a gentle boil, then reduce heat to low, cover, and braise for 35–40 minutes until the chicken is deeply tender and the sauce has thickened to a glossy, dark gravy. Taste and adjust seasoning.",
+      "Step 4 — Cook the rice and peas: While the chicken braises, combine coconut milk, water, kidney beans, whole garlic clove, thyme sprig, and salt in a saucepan. Bring to a gentle boil, then stir in the rice. Reduce heat to the lowest setting, cover tightly, and cook for 15–18 minutes until all liquid is absorbed and rice is fluffy. Remove garlic and thyme, fluff with a fork, and keep warm.",
+      "Step 5 — Fry the plantain: Heat oil in a non-stick frying pan over medium heat. Add plantain slices in a single layer and fry for 2–3 minutes per side until golden and caramelised at the edges. Transfer to a plate lined with kitchen paper and season with a pinch of salt.",
+      "Step 6 — Serve: Spoon rice and peas into deep bowls or plates, add chicken pieces and a generous ladle of the dark stew gravy, and arrange fried plantain alongside. Garnish with fresh thyme leaves if you have them."
     ]
   },
   {
     id: "sug2",
-    title: "Galician Octopus & Potato — Pulpo á Feira with Smoked Paprika, Olive Oil & Crusty Bread",
+    title: "Grilled Swordfish with Sicilian Salmoriglio, White Bean Purée & Braised Cavolo Nero",
     category: "Fish & Seafood",
-    calories: 390,
-    protein: 34,
-    fibre: 4,
-    healthScore: 79,
-    time: "1 hr 30 mins",
-    serves: "4",
-    desc: "Pulpo á Feira is the beloved street food of Galicia in northwest Spain — tender, yielding octopus served on a wooden board over waxy boiled potatoes, finished with nothing more than excellent olive oil, coarse sea salt, and a generous dusting of both sweet and smoked pimentón. The simplicity is the genius: when every element is treated with care, the result is extraordinary. Using frozen octopus actually helps here, as freezing breaks down the fibres for more reliably tender results.",
-    emoji: "🐙",
-    image: "https://images.pexels.com/photos/36430382/pexels-photo-36430382.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    calories: 490,
+    protein: 46,
+    fibre: 8,
+    healthScore: 84,
+    time: "40 mins",
+    serves: "2",
+    desc: "Swordfish is the king of the Italian grill — thick, meaty, and able to take serious heat without falling apart. Here it\'s paired with salmoriglio, the zingy Sicilian sauce of olive oil, lemon, garlic, and oregano that is one of the Mediterranean\'s greatest condiments. White bean purée and tender braised cavolo nero make this feel complete, elegant, and deeply seasonal.",
+    emoji: "🐟",
+    image: "https://images.unsplash.com/photo-1580959380351-490174294d37?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxHcmlsbGVkJTIwU3dvcmRmaXNoJTIwd2l0aCUyMFNpY2lsaWFuJTIwU2FsbW9yaWdsaW8lMkMlMjBXaGl0ZSUyMEJlYW4lMjBQdXIlQzMlQTllJTIwJTI2JTIwQnJhaXNlZCUyMENhdm9sbyUyME5lcm8lMjBmb29kJTIwZGlzaHxlbnwwfDB8fHwxNzg0ODcwMzA5fDA&ixlib=rb-4.1.0&q=80&w=1080",
     ingredientGroups: [
       {
-        group: "Octopus",
+        group: "Swordfish",
         items: [
-          { name: "Whole octopus, cleaned (frozen and thawed is ideal)", quantity: 1.2, unit: "kg" },
-          { name: "White onion, halved", quantity: 1, unit: "" },
-          { name: "Bay leaves", quantity: 3, unit: "" },
-          { name: "Black peppercorns", quantity: 1, unit: "tsp" },
-          { name: "Cork (optional, traditional for tenderness)", quantity: 1, unit: "" }
+          { name: "Swordfish steaks, about 200g each and 2cm thick", quantity: 2, unit: "" },
+          { name: "Olive oil", quantity: 1, unit: "tbsp" },
+          { name: "Salt and black pepper", quantity: 1, unit: "to taste" }
         ]
       },
       {
-        group: "Potatoes",
+        group: "Salmoriglio Sauce",
         items: [
-          { name: "Waxy potatoes (such as Charlotte or Maris Peer), scrubbed", quantity: 700, unit: "g" },
-          { name: "Salt", quantity: 2, unit: "tsp" }
+          { name: "Extra virgin olive oil", quantity: 4, unit: "tbsp" },
+          { name: "Lemon, juice and finely grated zest", quantity: 1, unit: "" },
+          { name: "Garlic clove, minced to a paste with salt", quantity: 1, unit: "" },
+          { name: "Dried Sicilian oregano (or regular dried oregano)", quantity: 1, unit: "tsp" },
+          { name: "Fresh flat-leaf parsley, finely chopped", quantity: 2, unit: "tbsp" },
+          { name: "Pinch of dried chilli flakes", quantity: 1, unit: "pinch" },
+          { name: "Salt", quantity: 1, unit: "pinch" }
         ]
       },
       {
-        group: "Dressing & Finish",
+        group: "White Bean Purée",
         items: [
-          { name: "Extra-virgin olive oil, very best quality", quantity: 6, unit: "tbsp" },
-          { name: "Sweet pimentón (sweet smoked Spanish paprika)", quantity: 1.5, unit: "tsp" },
-          { name: "Hot pimentón (hot smoked Spanish paprika)", quantity: 0.5, unit: "tsp" },
-          { name: "Flaky sea salt (Maldon or similar)", quantity: 1, unit: "tsp" },
-          { name: "Fresh flat-leaf parsley, finely chopped", quantity: 2, unit: "tbsp" }
+          { name: "Tinned cannellini beans, drained and rinsed", quantity: 400, unit: "g" },
+          { name: "Garlic clove, peeled", quantity: 1, unit: "" },
+          { name: "Extra virgin olive oil", quantity: 3, unit: "tbsp" },
+          { name: "Lemon juice", quantity: 1, unit: "tbsp" },
+          { name: "Warm water or light vegetable stock", quantity: 4, unit: "tbsp" },
+          { name: "Salt and white pepper", quantity: 1, unit: "to taste" }
         ]
       },
       {
-        group: "To Serve",
+        group: "Braised Cavolo Nero",
         items: [
-          { name: "Crusty sourdough or white bread", quantity: 4, unit: "thick slices" },
-          { name: "Lemon wedges", quantity: 2, unit: "" }
+          { name: "Cavolo nero, tough stems removed, leaves roughly torn", quantity: 200, unit: "g" },
+          { name: "Olive oil", quantity: 2, unit: "tbsp" },
+          { name: "Garlic clove, thinly sliced", quantity: 2, unit: "" },
+          { name: "Dried chilli flakes", quantity: 0.5, unit: "tsp" },
+          { name: "Chicken or vegetable stock", quantity: 100, unit: "ml" },
+          { name: "Salt", quantity: 1, unit: "to taste" }
         ]
       }
     ],
     substitutes: [
-      { ingredient: "Whole fresh/thawed octopus", alternatives: ["Pre-cooked octopus tentacles from a good fishmonger or deli (skip to the slicing step)", "Baby octopus (reduce cooking time to 25–30 minutes)"] },
-      { ingredient: "Hot pimentón", alternatives: ["A pinch of cayenne pepper", "Omit for a milder dish"] },
-      { ingredient: "Waxy potatoes", alternatives: ["Any firm-fleshed potato that holds its shape when boiled", "Jarred cooked Spanish potatoes if available"] }
+      { ingredient: "Swordfish", alternatives: ["Thick tuna steaks", "Mahi-mahi", "Monkfish tail slices"] },
+      { ingredient: "Cavolo nero", alternatives: ["Kale", "Swiss chard", "Savoy cabbage"] },
+      { ingredient: "Cannellini beans", alternatives: ["Butter beans", "Flageolet beans"] },
+      { ingredient: "Dried Sicilian oregano", alternatives: ["Regular dried oregano", "Fresh oregano, doubled in quantity"] }
     ],
     instructions: [
-      "Prepare the octopus: if using a whole raw octopus, rinse it thoroughly under cold water. Bring a very large pot of unsalted water to a rolling boil — do not salt it, as salt can toughen octopus. Add the halved onion, bay leaves, peppercorns and cork if using.",
-      "\"Frighten\" the octopus three times before fully submerging it: holding it by the head, dip the tentacles into the boiling water for 5 seconds and pull out, then repeat twice more. This helps the tentacles curl and the skin set beautifully. Then fully submerge the octopus in the water. Reduce the heat so the water is at a steady, gentle simmer (not a vigorous boil, which makes octopus tough). Cook for 45–60 minutes until a skewer or sharp knife slides into the thickest tentacle with virtually no resistance. Timing varies with octopus size — start checking at 45 minutes.",
-      "Once tender, turn off the heat and leave the octopus to rest in the cooking water for 15 minutes — this carries over cooking gently and keeps it moist. Lift out and leave to cool for 10 minutes on a board. Reserve about 500ml of the warm cooking water.",
-      "Cook the potatoes: add the scrubbed potatoes to a pot of cold salted water, bring to the boil, and cook for 18–22 minutes until completely tender when pierced with a knife. Drain and leave to cool slightly, then peel if desired (the skins come off easily once hot) and slice into 1.5cm rounds.",
-      "Slice the octopus tentacles into 2cm pieces using kitchen scissors — the traditional Galician tool — or a sharp knife. Discard the head or reserve for another use. The tentacles should have a wonderful purple-pink hue and slightly crisp, charred edges are ideal. For extra colour and flavour, flash the sliced tentacles in a very hot dry frying pan for 2–3 minutes, turning once, to get a little char.",
-      "Assemble the dish in the traditional style: arrange the warm potato slices on a large wooden board or flat plate in a single layer, season with a little flaky salt. Pile the octopus pieces on top of and around the potatoes.",
-      "Finish generously: drizzle the excellent olive oil all over — do not be shy, this is not the time for restraint. Mix the sweet and hot pimentón together and dust evenly over everything. Add flaky sea salt and scatter the chopped parsley. Serve immediately while still warm with crusty bread to mop up the paprika oil and lemon wedges on the side."
+      "Step 1 — Make the salmoriglio: Whisk together extra virgin olive oil, lemon juice and zest, minced garlic, dried oregano, parsley, chilli flakes, and a pinch of salt in a small bowl until emulsified. Set aside at room temperature — the flavours will meld as you cook everything else.",
+      "Step 2 — Make the white bean purée: Place drained cannellini beans and the whole garlic clove in a small saucepan with enough water to cover and bring to a gentle simmer for 5 minutes to warm through. Drain well, then transfer to a food processor (or use a stick blender) with the olive oil, lemon juice, and warm water or stock. Blitz until very smooth and silky — add more liquid a splash at a time if needed. Season generously with salt and white pepper. Keep warm over the lowest heat, stirring occasionally.",
+      "Step 3 — Braise the cavolo nero: Heat olive oil in a wide frying pan over medium heat. Add the sliced garlic and chilli flakes and fry for 60 seconds until fragrant but not browned. Add the cavolo nero leaves and toss to coat in the oil. Pour in the stock, season with salt, and cover with a lid. Cook for 6–8 minutes, stirring once or twice, until the leaves are completely tender and the liquid has mostly absorbed. Keep warm.",
+      "Step 4 — Grill the swordfish: Pat the swordfish steaks completely dry with kitchen paper — this is critical for a proper sear. Brush both sides with olive oil and season well with salt and black pepper. Heat a griddle pan or heavy frying pan over the highest heat until smoking. Lay the swordfish steaks in and press gently to ensure full contact. Cook for 3–4 minutes on the first side without moving — you want bold char marks and a crust to form. Flip and cook for a further 2–3 minutes. Swordfish is best when still very slightly translucent at the very centre; it will continue cooking off the heat.",
+      "Step 5 — Plate and serve: Spoon a generous mound of white bean purée onto each warmed plate and use the back of a spoon to create a swipe. Pile the cavolo nero alongside. Rest the swordfish steak on top of the beans and immediately spoon over the salmoriglio generously — it should pool around the fish and soak into everything. Serve with crusty bread to mop up the sauce."
     ]
   },
   {
     id: "sug3",
-    title: "Hungarian Töltött Paprika — Peppers Stuffed with Spiced Pork & Rice in Rich Tomato Sauce",
-    category: "Pork",
-    calories: 540,
-    protein: 31,
-    fibre: 6,
-    healthScore: 68,
-    time: "1 hr 30 mins",
+    title: "Rajasthani Dal Baati — Baked Wheat Dumplings with Spiced Five-Lentil Dal & Ghee",
+    category: "Vegan",
+    calories: 570,
+    protein: 22,
+    fibre: 12,
+    healthScore: 79,
+    time: "1 hr 20 mins",
     serves: "4",
-    desc: "Töltött paprika is pure Hungarian comfort — sweet pointed peppers filled with a deeply seasoned mixture of pork mince, rice and onion, then simmered low and slow in a velvety tomato and sweet paprika sauce until the peppers are silky and the filling is perfectly cooked through. This is Central European home cooking at its most satisfying: bold, warming, and completely unfussy. Served with a cooling spoonful of sour cream and rye bread, it is the kind of meal you return to again and again.",
-    emoji: "🫑",
-    image: "https://images.unsplash.com/photo-1673646960062-9aeb2188335f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxIdW5nYXJpYW4lMjBUJUMzJUI2bHQlQzMlQjZ0dCUyMFBhcHJpa2ElMjAlRTIlODAlOTQlMjBQZXBwZXJzJTIwU3R1ZmZlZCUyMHdpdGglMjBTcGljZWQlMjBQb3JrJTIwJTI2JTIwUmljZSUyMGluJTIwUmljaCUyMFRvbWF0byUyMFNhdWNlJTIwZm9vZCUyMGRpc2h8ZW58MHwwfHx8MTc4NDc4MzYxNnww&ixlib=rb-4.1.0&q=80&w=1080",
+    desc: "Dal Baati is Rajasthan\'s most iconic dish — rough-hewn wheat dumplings baked hard in the oven, then cracked open and drowned in clarified butter and a deeply spiced mixed lentil dal. The contrast of the crunchy, nutty baati soaking up the silky, tarka-finished dal is extraordinary. It\'s rustic, ancient, and one of India\'s great vegetarian dishes — made entirely without specialist techniques or equipment.",
+    emoji: "🫙",
+    image: "https://images.pexels.com/photos/6363501/pexels-photo-6363501.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     ingredientGroups: [
       {
-        group: "Stuffed Peppers",
+        group: "Baati (Wheat Dumplings)",
         items: [
-          { name: "Long sweet pointed peppers (or large bell peppers), ideally yellow or red", quantity: 8, unit: "" },
-          { name: "Pork mince (15–20% fat)", quantity: 600, unit: "g" },
-          { name: "Short-grain or long-grain white rice, uncooked", quantity: 80, unit: "g" },
-          { name: "White onion, very finely grated or minced", quantity: 1, unit: "" },
-          { name: "Garlic cloves, grated", quantity: 3, unit: "" },
-          { name: "Sweet Hungarian paprika", quantity: 2, unit: "tsp" },
-          { name: "Ground caraway seeds", quantity: 0.5, unit: "tsp" },
-          { name: "Dried marjoram", quantity: 1, unit: "tsp" },
-          { name: "Egg", quantity: 1, unit: "" },
-          { name: "Salt", quantity: 1.5, unit: "tsp" },
-          { name: "Black pepper, freshly ground", quantity: 1, unit: "tsp" }
+          { name: "Wholemeal flour (atta or wholemeal plain flour)", quantity: 300, unit: "g" },
+          { name: "Semolina (fine)", quantity: 50, unit: "g" },
+          { name: "Bicarbonate of soda", quantity: 0.25, unit: "tsp" },
+          { name: "Salt", quantity: 0.75, unit: "tsp" },
+          { name: "Carom seeds (ajwain)", quantity: 0.5, unit: "tsp" },
+          { name: "Melted vegan butter or refined coconut oil", quantity: 4, unit: "tbsp" },
+          { name: "Warm water, to bind", quantity: 120, unit: "ml" }
         ]
       },
       {
-        group: "Tomato Paprika Sauce",
+        group: "Five-Lentil Dal",
         items: [
-          { name: "Passata (smooth tomato purée)", quantity: 700, unit: "ml" },
-          { name: "Chicken or vegetable stock", quantity: 400, unit: "ml" },
-          { name: "White onion, finely diced", quantity: 1, unit: "" },
-          { name: "Garlic cloves, sliced", quantity: 3, unit: "" },
-          { name: "Sunflower oil or lard", quantity: 2, unit: "tbsp" },
-          { name: "Sweet Hungarian paprika", quantity: 2, unit: "tbsp" },
-          { name: "Tomato purée (concentrated)", quantity: 2, unit: "tbsp" },
-          { name: "Caster sugar", quantity: 1, unit: "tsp" },
-          { name: "Salt and pepper", quantity: 1, unit: "to taste" }
+          { name: "Red split lentils (masoor dal)", quantity: 60, unit: "g" },
+          { name: "Yellow split peas (chana dal)", quantity: 60, unit: "g" },
+          { name: "Split green moong dal", quantity: 60, unit: "g" },
+          { name: "Whole black urad lentils", quantity: 40, unit: "g" },
+          { name: "Toor dal (split pigeon peas)", quantity: 40, unit: "g" },
+          { name: "Water", quantity: 1.2, unit: "litres" },
+          { name: "Turmeric", quantity: 0.5, unit: "tsp" },
+          { name: "Salt", quantity: 1.5, unit: "tsp" }
+        ]
+      },
+      {
+        group: "Tarka (Tempering)",
+        items: [
+          { name: "Vegan butter or ghee (use vegan to keep fully vegan)", quantity: 3, unit: "tbsp" },
+          { name: "Cumin seeds", quantity: 1, unit: "tsp" },
+          { name: "Brown onion, finely chopped", quantity: 1, unit: "" },
+          { name: "Garlic cloves, minced", quantity: 4, unit: "" },
+          { name: "Fresh ginger, grated", quantity: 1, unit: "tbsp" },
+          { name: "Green chilli, finely chopped", quantity: 1, unit: "" },
+          { name: "Tinned chopped tomatoes", quantity: 200, unit: "g" },
+          { name: "Ground coriander", quantity: 1.5, unit: "tsp" },
+          { name: "Ground cumin", quantity: 1, unit: "tsp" },
+          { name: "Garam masala", quantity: 1, unit: "tsp" },
+          { name: "Kashmiri chilli powder", quantity: 1, unit: "tsp" },
+          { name: "Dried fenugreek leaves (kasuri methi)", quantity: 1, unit: "tsp" },
+          { name: "Fresh coriander, chopped, to serve", quantity: 3, unit: "tbsp" },
+          { name: "Lemon juice", quantity: 1, unit: "tbsp" }
         ]
       },
       {
         group: "To Serve",
         items: [
-          { name: "Full-fat sour cream", quantity: 150, unit: "ml" },
-          { name: "Fresh dill or flat-leaf parsley, chopped", quantity: 2, unit: "tbsp" },
-          { name: "Rye bread or crusty white bread", quantity: 4, unit: "slices" }
+          { name: "Melted vegan butter or ghee, to pour over baati", quantity: 4, unit: "tbsp" },
+          { name: "Pickled green chillies or sliced raw onion", quantity: 1, unit: "to taste" }
         ]
       }
     ],
     substitutes: [
-      { ingredient: "Pork mince", alternatives: ["Beef mince (the classic alternative)", "Half pork, half beef for richer flavour", "Turkey mince for a lighter version"] },
-      { ingredient: "Sweet Hungarian paprika", alternatives: ["Regular sweet paprika (use a good quality brand — it makes a real difference)", "Half sweet, half smoked paprika for depth"] },
-      { ingredient: "Long sweet pointed peppers", alternatives: ["Large bell peppers, tops cut off and seeds removed", "Romano peppers"] },
-      { ingredient: "Sour cream", alternatives: ["Crème fraîche", "Full-fat Greek yoghurt stirred with a little lemon juice"] }
+      { ingredient: "Ajwain (carom seeds)", alternatives: ["Celery seeds in a pinch", "Simply omit — the baati will still be delicious"] },
+      { ingredient: "Mixed five lentils", alternatives: ["Use all red lentils for a quicker, simpler dal", "Any combination of two or three lentils you have"] },
+      { ingredient: "Kasuri methi", alternatives: ["A small pinch of fresh or dried thyme as an approximate substitute", "Simply omit"] },
+      { ingredient: "Vegan butter", alternatives: ["Traditional ghee if not keeping vegan", "Refined coconut oil"] }
     ],
     instructions: [
-      "Make the filling: in a large bowl, combine the pork mince, uncooked rice, grated onion, grated garlic, sweet paprika, ground caraway, dried marjoram, egg, salt and black pepper. Mix thoroughly with your hands until completely combined — the mixture should be cohesive. Don\'t over-work it. Cover and refrigerate while you prepare the peppers and sauce.",
-      "Prepare the peppers: slice the tops off each pepper and set the tops aside (they can be tucked into the pot for extra flavour). Use a small sharp knife to carefully scrape out all seeds and white membrane from inside each pepper, keeping the peppers intact. Pat dry inside with kitchen paper.",
-      "Make the tomato paprika sauce: heat the oil (or lard) in a large, wide, deep casserole or Dutch oven over medium heat. Add the diced onion with a pinch of salt and cook for 8–10 minutes, stirring often, until softened and lightly golden. Add the garlic and cook for 1 minute. Remove the pan from the heat briefly, add the sweet paprika and tomato purée, and stir vigorously for 30 seconds in the residual heat — taking the pan off the heat prevents the paprika from burning and turning bitter. Return to low heat.",
-      "Pour in the passata and chicken stock, add the sugar, season with salt and pepper and stir well. Bring to a gentle simmer. Taste — the sauce should be savoury, slightly sweet and richly paprika-forward. Adjust seasoning as needed.",
-      "Stuff the peppers: take the chilled pork and rice filling and pack each pepper firmly but not too tightly (the rice will expand as it cooks). The filling should be level with or just slightly above the top of the pepper. Place the pepper tops back on like little lids if you like.",
-      "Nestle the stuffed peppers upright into the simmering tomato sauce — they should be mostly submerged. If your pot is wide, lay them on their sides gently. Bring the sauce back to a gentle simmer, then cover with a lid, reduce heat to low, and cook for 55–65 minutes until the peppers are completely tender and collapsing slightly, the rice is cooked through, and the sauce has thickened and deepened in colour. Check occasionally and add a splash of water or stock if the sauce looks too thick.",
-      "Taste the sauce one final time and adjust salt, sugar (for balance) and pepper. If you\'d like the sauce silkier, you can remove the peppers temporarily and use a hand blender to partially blitz the sauce before returning them.",
-      "Serve two peppers per person in deep bowls, spooning the rich sauce generously over and around them. Add a generous dollop of cold sour cream on top (the temperature contrast is important), scatter over fresh dill or parsley, and serve with rye bread or crusty bread to scoop up every last drop of sauce."
+      "Step 1 — Soak the lentils: Rinse all five lentils together in cold water until the water runs clear. Cover with cold water and soak for 30 minutes while you prepare the baati. (This step reduces cooking time significantly.)",
+      "Step 2 — Make the baati dough: Combine wholemeal flour, semolina, bicarbonate of soda, salt, and ajwain in a large bowl. Add the melted vegan butter and rub it into the flour with your fingers until the mixture resembles coarse breadcrumbs — this fat coating is what gives baati its characteristic crumbly texture. Add warm water gradually, kneading just until a firm, smooth dough forms. It should be stiffer than bread dough. Divide into 12 equal portions and roll each into a smooth ball. Use your thumb to press a shallow indent into the centre of each one (this helps them cook evenly). Set aside.",
+      "Step 3 — Bake the baati: Preheat your oven to 200°C (fan 180°C). Place the baati balls on a baking tray lined with baking paper and bake for 30–35 minutes, turning once halfway through, until golden brown and hard all over — they should sound hollow when tapped. Traditionally they are baked directly in embers; the oven version is slightly lighter but just as good.",
+      "Step 4 — Cook the dal: Drain the soaked lentils and place in a large saucepan with 1.2 litres of fresh water, turmeric, and salt. Bring to a boil, skim off any foam, then reduce heat and simmer partially covered for 25–30 minutes, stirring occasionally, until all lentils are completely soft and beginning to break down into a thick, cohesive dal. Add a splash more water if it becomes too thick.",
+      "Step 5 — Make the tarka: Heat vegan butter in a separate frying pan over medium-high heat. Add cumin seeds and let them sizzle and pop for 30 seconds. Add the chopped onion and fry for 8–10 minutes, stirring frequently, until deeply golden and beginning to caramelise. Add garlic, ginger, and green chilli and fry for 2 minutes. Add the chopped tomatoes and cook for 5 minutes until the mixture darkens and the oil begins to separate at the edges. Add ground coriander, cumin, garam masala, Kashmiri chilli powder, and crushed kasuri methi and fry for 1 minute. Pour this entire tarka into the cooked dal and stir well. Simmer together for 5 minutes, add lemon juice, taste and adjust salt. Finish with fresh coriander.",
+      "Step 6 — Serve: Remove baati from the oven. Use the back of a spoon or your hands to crack each baati open into halves or rough chunks and arrange in deep bowls. Pour a generous tablespoon of melted vegan butter or ghee over each baati so it soaks into the crumb. Ladle the hot dal over and around the baati, adding more butter if you like. Serve with pickled chillies or raw onion on the side."
     ]
   }
 ];

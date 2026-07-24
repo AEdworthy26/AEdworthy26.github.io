@@ -3,6 +3,45 @@
 
 var RICS_LOG = [
   {
+    "date": "2026-07-24",
+    "topic": "Golden Brick Structures: Mechanics, Risk Allocation and Grant Implications in RP\u2013Developer Joint Ventures",
+    "module": "Legal/Regulatory Compliance",
+    "level": 2,
+    "apc_competency": "Legal/Regulatory Compliance (Level 2)",
+    "focus": "Golden brick structures are a specialist land transaction mechanism increasingly used by registered providers and their development partners to optimise VAT recovery, Homes England grant positioning and SDLT liability. This lesson examines the precise legal and financial mechanics of golden brick, how it interacts with grant funding conditions, and how Alfie would structure and manage such arrangements in JV contexts at Latimer.",
+    "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&auto=format&fit=crop",
+    "content": [],
+    "summary": [
+      "Golden brick structures transfer land and partly constructed dwellings to an RP at first floor slab level, converting an otherwise exempt land supply into a zero-rated VAT supply under VATA 1994 Schedule 8 Group 5 \u2014 enabling full input VAT recovery on construction costs to date.",
+      "The structure is documented through a Development Agreement (pre-transfer obligations), a Transfer at golden brick stage supported by an architect\\'s certificate, and a separate JCT D&B building contract under which the developer continues construction as contractor post-transfer.",
+      "Homes England AHP grant is typically drawn in two tranches: 50% at golden brick transfer (supported by project monitor sign-off) and 50% at practical completion \u2014 making the golden brick programme milestone a critical grant cashflow trigger.",
+      "HMRC recharacterisation risk requires that title genuinely passes, consideration reflects real value, the RP has genuine employer control post-transfer, and specialist VAT counsel provides a formal opinion on compliance with VAT Notice 708.",
+      "Post-transfer risk management centres on performance bonds (typically 10% of contract sum), collateral warranties from key sub-contractors, funder direct agreements, and a robust longstop date in the DA \u2014 all of which Alfie must coordinate across legal, financial and operational workstreams."
+    ],
+    "qa": [
+      {
+        "q": "Why would Latimer choose a golden brick structure over acquiring bare land and appointing its own contractor from the outset on an affordable housing package?",
+        "a": "A golden brick structure enables the developer to zero-rate the supply of the partly constructed dwellings, recovering input VAT on construction costs to date that would otherwise be irrecoverable (since bare land sold to an RP is an exempt supply unless the developer has opted to tax). The net saving passes through the pricing to Latimer, reducing the effective acquisition cost per unit. Additionally, it avoids Latimer having to procure and manage a contractor from groundworks stage \u2014 reducing management overhead and construction risk exposure in the early phases \u2014 while allowing Homes England grant to be claimed at the golden brick milestone rather than waiting for practical completion."
+      },
+      {
+        "q": "What is the HMRC test for whether a golden brick transfer qualifies for zero-rating, and what is the principal risk if the structure is not correctly implemented?",
+        "a": "Under VAT Notice 708, the supply must be the first grant of a major interest in a newly constructed or partly constructed dwelling, and construction must have progressed beyond foundations to at least first floor slab level. Title must genuinely pass to the RP at that point \u2014 not merely as a legal fiction. The principal risk of incorrect implementation is HMRC recharacterising the transaction as a supply of bare land (exempt) with an associated obligation to build, in which case the developer\\'s input tax recovery is disallowed and HMRC raises a VAT assessment. This is mitigated by obtaining specialist VAT counsel opinion, ensuring genuine title transfer, independent construction certification, and that the consideration paid at golden brick reflects fair value of land plus works to date."
+      },
+      {
+        "q": "How does the golden brick structure interact with Homes England\\'s additionality requirement under the AHP, and how would you evidence additionality in an investment committee paper?",
+        "a": "Homes England\\'s AHP grant conditions require that grant genuinely enables affordable homes that would not otherwise be delivered \u2014 i.e. the grant must be additional, not simply subsidising homes that would have been built anyway as a planning obligation. In a golden brick scenario where the developer is already building the scheme, Homes England will scrutinise whether the affordable units would have been delivered at policy-compliant rents without grant. Additionality is evidenced by a residual land value appraisal demonstrating that at nil grant, the RP\\'s acquisition price for the affordable units produces a residual land value below the Existing Use Value or below the threshold at which the scheme is viable \u2014 i.e. the grant is the margin that makes acquisition financially feasible. The investment committee paper should include sensitivity analysis showing the minimum grant level required to achieve the target return."
+      },
+      {
+        "q": "What contractual protections should Latimer insist upon in the Development Agreement to manage the risk of the developer failing to reach golden brick on programme?",
+        "a": "The DA should include: (1) a detailed construction programme with milestone dates leading to golden brick, with liquidated damages (LDs) for delay beyond the agreed date; (2) a longstop date for golden brick (typically 18\u201324 months from DA completion, with clearly defined extension events mirroring the JCT force majeure and relevant events provisions); (3) a right for Latimer to terminate and recover abortive costs if the longstop is missed without an extension event; (4) a requirement for the developer to maintain adequate construction all-risks insurance and public liability insurance to first floor slab; and (5) step-in rights for Latimer (or its funder) to take over the groundworks contract if the developer becomes insolvent before reaching golden brick."
+      },
+      {
+        "q": "After the golden brick transfer, Latimer is now the employer under the JCT Design and Build contract. What are the key financial controls Alfie should implement to manage the post-transfer construction programme?",
+        "a": "Post-transfer financial controls should include: (1) review of the contract administrator\\'s interim payment certificates against the agreed schedule of values \u2014 Alfie should ensure valuations are not front-loaded and reflect actual work in place; (2) monitoring retention deductions (typically 3\u20135% of each interim payment, with 50% released at practical completion and 50% at end of defects liability period); (3) tracking cumulative expenditure against the approved cost plan and flagging cost overruns to investment committee at monthly project report stage; (4) coordinating Homes England grant drawdown notices with construction progress milestones, ensuring the project monitor\\'s sign-off is obtained before submitting each grant claim; and (5) reviewing any contractor change order requests (variations under the JCT contract) against the approved specification and budget, escalating material variations to investment committee for approval before instructing."
+      }
+    ]
+  },
+  {
     "date": "2026-07-23",
     "topic": "Grampian and Pre-Commencement Conditions: Strategy, Compliance and Risk in Residential-Led Schemes",
     "module": "Planning and Development Management",

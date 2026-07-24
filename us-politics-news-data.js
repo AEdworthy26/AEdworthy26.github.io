@@ -1,60 +1,60 @@
 // us-politics-news-data.js
-// Auto-updated 2026-07-23 — do not edit manually
+// Auto-updated 2026-07-24 — do not edit manually
 
 var US_POLITICS_NEWS = {
-  date: "2026-07-23",
+  date: "2026-07-24",
   main: {
-    title: "House Passes Pentagon Funding Bill and Blueprint to Unlock New Dollars for Iran War",
+    title: "Trump and Thune Clash Over SAVE America Act",
     category: "Politics",
     content: [
-      "The House of Representatives passed a sweeping Pentagon funding package exceeding $1 trillion on Wednesday, a landmark vote that also included a budget blueprint designed to unlock additional federal dollars to finance the ongoing war with Iran. The legislation represents one of the largest single defense spending measures in American history, reflecting the enormous financial demands of a conflict that has already stretched U.S. military resources considerably. Republicans pushed the bill through largely along party lines, framing it as an essential step to ensure American forces have the equipment and support they need.",
-      "The budget blueprint attached to the defense bill is specifically structured to allow new spending to be channeled toward Iran war operations, a procedural maneuver that Democrats sharply criticized as an effort to circumvent normal appropriations oversight. The dual-purpose nature of the legislation — combining routine Pentagon funding with a mechanism for war financing — made it one of the more complex and politically charged votes of the current congressional session. Republican leaders argued that separating the two components would have delayed urgently needed resources from reaching troops in the field.",
-      "The vote came just a day after Defense Secretary Pete Hegseth faced a fiery congressional hearing in which lawmakers from both parties pressed him aggressively on the administration\'s funding requests and broader strategy for the Iran conflict. Hegseth defended the administration\'s approach before the committee, insisting that the additional money was critical to sustaining military operations and protecting American service members. The hearing underscored growing congressional anxiety about the war\'s cost, duration, and the shifting risks facing U.S. troops.",
-      "Recent reports have highlighted that combat deaths in the Iran war have increasingly fallen among troops stationed far from Iran\'s borders, suggesting that the threat environment has expanded well beyond the immediate front lines. President Trump traveled to Delaware to honor soldiers killed in the conflict, a somber moment that has intensified public and congressional scrutiny of the war\'s human toll. The pattern of casualties has raised urgent questions about base defense posture and the adequacy of force protection measures across the broader region.",
-      "The passage of the bill now sends the legislation to the Senate, where it is expected to face a more contentious reception, with several moderate Republicans joining Democrats in expressing reservations about the scale of the spending and the procedural approach used to bundle war financing with the defense budget. The Clarity Act crypto debate, midterm fundraising dynamics, and other domestic political pressures are already competing for Senate attention, potentially complicating the timeline for final passage. For the White House, the House vote nonetheless represents a significant political win, demonstrating that Republican leadership can still marshal the votes needed to advance the administration\'s most ambitious legislative priorities.",
+      "A public rift has erupted between President Donald Trump and Senate Majority Leader John Thune over the stalled SAVE America Act, with the White House issuing an unusually pointed warning to the chamber\'s top Republican. A White House spokeswoman declared that the president\'s patience was running thin with the Senate\'s inability to advance the legislation, signaling that Trump is growing increasingly frustrated with members of his own party on Capitol Hill. The confrontation marks one of the most visible tensions between the executive branch and Senate Republican leadership since Trump returned to the White House.",
+      "Thune fired back at the White House\'s pressure campaign with a blunt retort, telling the administration\'s spokeswoman that she should try finding the votes herself. The Senate Majority Leader\'s response underscores the difficult arithmetic facing Republican leaders, who must manage a narrow majority while balancing the demands of a president who expects swift legislative victories. Thune\'s pushback suggests that the path to passing the SAVE America Act is far from straightforward, even within a unified Republican government.",
+      "The clash illuminates the persistent challenge Trump faces in translating his political ambitions into legislative reality through the Senate, an institution that operates on its own timeline and internal dynamics. Unlike the House, where the majority can more readily steamroll opposition, the Senate\'s procedural rules and the need to hold together every Republican vote gives individual senators considerable leverage. Thune\'s willingness to publicly rebuke a White House spokeswoman indicates that he is not prepared to be seen as simply an instrument of presidential will.",
+      "The SAVE America Act has become a focal point of Trump\'s domestic legislative agenda, and his frustration over delays reflects broader anxieties within the administration about the pace of its policy priorities. White House officials have grown increasingly vocal in pushing congressional Republicans to fall in line, a strategy that has met with mixed results across multiple pieces of legislation. The public nature of this dispute is particularly striking, given that internal disagreements between presidents and their Senate allies are typically managed behind closed doors.",
+      "The standoff between Trump and Thune is likely to reverberate across the Senate Republican caucus, as members watch to see whether the Majority Leader holds his ground or ultimately bends to White House pressure. The outcome of this confrontation could set a precedent for how much independence Senate Republicans are willing to assert against a president known for punishing political disloyalty. With midterm positioning already beginning to take shape, both Trump and Thune have significant stakes in how this legislative battle ultimately resolves."
     ],
-    image: "https://images.unsplash.com/photo-1664740333188-8870294e0757?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxIb3VzZSUyMFBhc3NlcyUyMFBlbnRhZ29uJTIwRnVuZGluZyUyMEJpbGwlMjBhbmQlMjBCbHVlcHJpbnQlMjB0byUyMFVubG9jayUyME5ldyUyMERvbGxhcnMlMjBmb3IlMjBJcmFuJTIwV2FyfGVufDB8MHx8fDE3ODQ3ODI5OTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    source: "NPR",
-    sourceUrl: "https://www.npr.org/2026/07/22/nx-s1-5903130/house-vote-iran-war-funding-reconciliation"
+    image: "https://static01.nyt.com/images/2026/07/23/multimedia/23dc-senate-trump01-photo-jkbf/23dc-senate-trump01-photo-jkbf-mediumSquareAt3X.jpg",
+    source: "The New York Times",
+    sourceUrl: "https://www.nytimes.com/2026/07/23/us/politics/trump-thune-senate-election-bill.html"
   },
   secondary: [
     {
       id: "us1",
-      title: "Jim Jordan Urges Criminal Charges Against Former Special Counsel Jack Smith",
-      summary: "House Judiciary Chair Jim Jordan has sent a criminal referral to the Justice Department accusing former special counsel Jack Smith of making false statements to Congress.",
+      title: "House Votes to Limit Trump on Iran as Congress Pushes Back on War Powers",
+      summary: "For a second time, the House approved a resolution to end the war in Iran, with four Republicans joining Democrats in a rebuke of President Trump\'s military campaign.",
       body: [
-        "House Judiciary Committee Chairman Jim Jordan formally recommended criminal charges against Jack Smith late Wednesday, submitting a referral to the Department of Justice that accuses the former special counsel of lying during his congressional deposition. The referral centers on allegations that Smith made false statements to Congress, a charge that could provide the legal basis for a prosecution that President Trump and his allies have long sought.",
-        "Smith, who led the federal criminal cases against Trump before they were ultimately dismissed following the 2024 election, has become a central target of the administration\'s broader retribution campaign against perceived political opponents. The criminal referral marks a significant escalation in Republican efforts to hold Smith legally accountable and could set a chilling precedent for future independent prosecutorial work."
+        "The House passed a war powers resolution aimed at constraining President Trump\'s military operations in Iran, with four Republicans crossing the aisle to side with Democrats in a symbolic but significant rebuke of the administration. While the measure is not legally binding, its passage for the second time signals mounting frustration within Congress over the ongoing conflict and the president\'s conduct of the war without explicit legislative authorization.",
+        "The Senate failed to advance a similar measure, highlighting the divergence between the two chambers and the continued difficulty Democrats face in assembling a veto-proof coalition. Nevertheless, the House vote represents the clearest indication yet that Republican unity behind the Iran war is beginning to crack, potentially complicating the administration\'s military strategy going forward."
       ],
-      image: "https://static01.nyt.com/images/2026/07/22/multimedia/00dc-smithHFO-photo-qmjb/00dc-smithHFO-photo-qmjb-mediumSquareAt3X.jpg",
-      source: "The Hill",
-      url: "https://thehill.com/homenews/administration/5984841-jordan-recommends-jack-smith-charges/",
+      image: "https://static01.nyt.com/images/2026/07/23/multimedia/23dc-troops-cvgb/23dc-troops-cvgb-mediumSquareAt3X.jpg",
+      source: "NPR",
+      url: "https://www.npr.org/2026/07/23/nx-s1-5904515/congress-iran-war-powers-vote",
       category: "Politics"
     },
     {
       id: "us2",
-      title: "Amish Shah Defeats Democratic Establishment Pick in Battleground Arizona House Primary",
-      summary: "Former state Rep. Amish Shah won the Democratic primary for Arizona\'s open 1st Congressional District, defeating the candidate backed by the party\'s national campaign arm.",
+      title: "Justice Dept. Drops New York Times Subpoenas After Federal Judge\'s Sharp Questioning",
+      summary: "The Justice Department withdrew subpoenas demanding grand jury testimony and phone records from New York Times journalists after facing intense scrutiny from a federal judge.",
       body: [
-        "Dr. Amish Shah secured the Democratic nomination for Arizona\'s competitive 1st Congressional District on Wednesday, defeating Marlene Galán-Woods, who had the backing of the Democratic Congressional Campaign Committee and other national party figures. Shah\'s victory is considered a setback for party leadership, which had invested in Galán-Woods as a candidate they believed would be better positioned to win the swing district covering parts of Phoenix.",
-        "Shah will now face Republican Jay Feely in what is expected to be one of the most closely watched House races of the 2026 midterm cycle, in a district that both parties view as essential to controlling the chamber. The Arizona primaries also saw Rep. Andy Biggs, who voted to overturn the 2020 election results, win the GOP gubernatorial nomination, signaling continued strength for the election-denial wing of the state Republican Party."
+        "The Justice Department abruptly dropped its subpoenas targeting New York Times journalists after a federal judge sharply questioned the legal basis for the demands, which had sought grand jury testimony and reporters' phone records. The retreat marks a significant moment in the ongoing tension between the Trump administration and the press, with the judiciary intervening to check an aggressive prosecutorial move against a major news organization.",
+        "The dropped subpoenas had been connected to reporting on sensitive matters involving the administration, and their withdrawal under judicial pressure raises broader questions about the limits of the government\'s power to compel journalists to reveal their sources. Press freedom advocates viewed the judge\'s intervention as a critical safeguard, though many noted that the initial filing of the subpoenas itself represented a chilling escalation in the administration\'s treatment of the media."
       ],
-      image: "https://static01.nyt.com/images/2026/07/22/multimedia/22pol-arizona-dem-upset-kfjh/22pol-arizona-dem-upset-kfjh-mediumSquareAt3X.jpg",
-      source: "The Hill",
-      url: "https://thehill.com/homenews/campaign/5980141-shah-feely-arizona-house/",
+      image: "https://images.unsplash.com/photo-1692756227212-554860533282?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxKdXN0aWNlJTIwRGVwdC4lMjBEcm9wcyUyME5ldyUyMFlvcmslMjBUaW1lcyUyMFN1YnBvZW5hcyUyMEFmdGVyJTIwRmVkZXJhbCUyMEp1ZGdlJTVDfGVufDB8MHx8fDE3ODQ4NjkzOTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "NPR",
+      url: "https://www.npr.org/2026/07/23/nx-s1-5905732/nyt-subpoenas-trump-air-force-one-plane-qatar-security",
       category: "Politics"
     },
     {
       id: "us3",
-      title: "Secret Service Reports 10,000 Threat Investigations in 2026 Amid 'Volatile' Environment",
-      summary: "Secret Service Director Sean Curran announced the agency has opened more than 10,000 threat investigations so far in 2026, a 40 percent increase over the previous year.",
+      title: "Democratic Voters Keep Defying Party Establishment in House Primaries",
+      summary: "The House Democratic campaign arm suffered its third primary defeat in two months as grassroots candidates continue to outrun establishment-backed choices.",
       body: [
-        "Secret Service Director Sean Curran told reporters on Wednesday that his agency has already launched over 10,000 investigations into threats against protectees in 2026 alone, describing the overall threat environment as 'off the charts.' The 40 percent spike compared to the prior year reflects what Curran characterized as an increasingly volatile national atmosphere surrounding political figures.",
-        "The dramatic rise in threat investigations raises serious concerns about the safety of elected officials and other government protectees at a time of intense political polarization and an active foreign war. The disclosure puts additional pressure on Congress and the administration to ensure the Secret Service has the staffing and resources necessary to manage a caseload of unprecedented scale."
+        "The Democratic Congressional Campaign Committee sustained its third primary loss in two months as voters in contested races continue to reject the candidates favored by the party\'s Washington establishment. In Arizona, Amish Shah defeated the establishment-preferred candidate, continuing a pattern that has exposed a deepening rift between Democratic leadership and the party\'s activist base.",
+        "The string of losses raises urgent questions about the DCCC\'s strategy of intervening heavily in primaries and whether such interventions are alienating rather than consolidating Democratic voters. As the party looks toward the next election cycle, the recurring defeats suggest that the grassroots energy within the Democratic electorate may be pulling in a direction that party leadership has so far struggled to channel or predict."
       ],
-      image: "https://thehill.com/wp-content/uploads/sites/2/2026/05/6a126e97608996.02993513-e1784774274592.jpeg?w=900",
-      source: "The Hill",
-      url: "https://thehill.com/homenews/administration/5984904-secret-service-threats-up-40-percent/",
+      image: "https://static01.nyt.com/images/2026/07/23/multimedia/23pol-dems-house-shah-fbcm/23pol-dems-house-shah-fbcm-mediumSquareAt3X.jpg",
+      source: "The New York Times",
+      url: "https://www.nytimes.com/2026/07/23/us/politics/democrats-dccc-house.html",
       category: "Politics"
     }
   ]
