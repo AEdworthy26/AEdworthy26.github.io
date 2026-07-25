@@ -1,8 +1,8 @@
 // quote-data.js
-// Auto-updated 2026-07-24 — do not edit manually
+// Auto-updated 2026-07-25 — do not edit manually
 
 var QUOTE_DATA = {
-  date: "2026-07-24",
-  text: "It does not matter how slowly you go as long as you do not stop.",
-  author: "Confucius"
+  date: "2026-07-25",
+  text: "Liberty for wolves is death to the lambs.",
+  author: "Isaiah Berlin"
 };

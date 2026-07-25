@@ -1,236 +1,178 @@
 // suggested-recipes-data.js
-// Auto-updated 2026-07-24 — do not edit manually
+// Auto-updated 2026-07-25 — do not edit manually
 
 window.SUGGESTED_RECIPES = [
   {
     id: "sug1",
-    title: "Jamaican Brown Stew Chicken with Rice & Peas and Fried Plantain",
+    title: "Taiwanese Three-Cup Chicken — San Bei Ji with Steamed Jasmine Rice & Crispy Basil",
     category: "Chicken",
-    calories: 610,
-    protein: 44,
-    fibre: 6,
-    healthScore: 71,
-    time: "1 hr 15 mins",
-    serves: "4",
-    desc: "Deep, dark, and utterly fragrant — this Jamaican classic builds layers of flavour by browning marinated chicken in caramelised sugar before braising it low and slow in a rich sauce of thyme, allspice, Scotch bonnet, and browning sauce. Served with coconut-scented rice and peas and golden fried plantain, it\'s the kind of meal that feels like a celebration on a weeknight.",
-    emoji: "🇯🇲",
-    image: "https://images.unsplash.com/photo-1632852576480-c10a8e19496a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxKYW1haWNhbiUyMEJyb3duJTIwU3RldyUyMENoaWNrZW4lMjB3aXRoJTIwUmljZSUyMCUyNiUyMFBlYXMlMjBhbmQlMjBGcmllZCUyMFBsYW50YWluJTIwZm9vZCUyMGRpc2h8ZW58MHwwfHx8MTc4NDg3MDMwOHww&ixlib=rb-4.1.0&q=80&w=1080",
-    ingredientGroups: [
-      {
-        group: "Chicken & Marinade",
-        items: [
-          { name: "Bone-in chicken thighs and drumsticks", quantity: 1.2, unit: "kg" },
-          { name: "Soy sauce", quantity: 2, unit: "tbsp" },
-          { name: "Browning sauce (e.g. Grace or Kitchen Bouquet)", quantity: 1, unit: "tbsp" },
-          { name: "Ground allspice", quantity: 1.5, unit: "tsp" },
-          { name: "Dried thyme", quantity: 1.5, unit: "tsp" },
-          { name: "Garlic cloves, minced", quantity: 4, unit: "" },
-          { name: "Fresh ginger, grated", quantity: 2, unit: "tsp" },
-          { name: "Scotch bonnet chilli, finely chopped (seeds optional)", quantity: 1, unit: "" },
-          { name: "Spring onions, roughly chopped", quantity: 3, unit: "" },
-          { name: "Black pepper", quantity: 1, unit: "tsp" },
-          { name: "Salt", quantity: 1, unit: "tsp" }
-        ]
-      },
-      {
-        group: "Stew Base",
-        items: [
-          { name: "Vegetable oil", quantity: 2, unit: "tbsp" },
-          { name: "Caster sugar", quantity: 1, unit: "tbsp" },
-          { name: "Brown onion, sliced", quantity: 1, unit: "" },
-          { name: "Red bell pepper, sliced", quantity: 1, unit: "" },
-          { name: "Tomatoes, chopped", quantity: 2, unit: "" },
-          { name: "Chicken stock", quantity: 300, unit: "ml" },
-          { name: "Worcestershire sauce", quantity: 1, unit: "tbsp" },
-          { name: "Fresh thyme sprigs", quantity: 4, unit: "" }
-        ]
-      },
-      {
-        group: "Rice & Peas",
-        items: [
-          { name: "Long-grain white rice", quantity: 300, unit: "g" },
-          { name: "Coconut milk", quantity: 400, unit: "ml" },
-          { name: "Water", quantity: 200, unit: "ml" },
-          { name: "Tinned kidney beans, drained", quantity: 240, unit: "g" },
-          { name: "Garlic clove, whole", quantity: 1, unit: "" },
-          { name: "Fresh thyme sprig", quantity: 1, unit: "" },
-          { name: "Salt", quantity: 1, unit: "tsp" }
-        ]
-      },
-      {
-        group: "Fried Plantain",
-        items: [
-          { name: "Ripe plantains (yellow-black skin), peeled and sliced diagonally 1cm thick", quantity: 2, unit: "" },
-          { name: "Vegetable oil for frying", quantity: 3, unit: "tbsp" },
-          { name: "Pinch of salt", quantity: 1, unit: "pinch" }
-        ]
-      }
-    ],
-    substitutes: [
-      { ingredient: "Browning sauce", alternatives: ["1 tbsp dark soy sauce + 1 tsp molasses", "Extra soy sauce with a pinch of brown sugar"] },
-      { ingredient: "Scotch bonnet", alternatives: ["Habanero chilli", "½ tsp dried chilli flakes for less heat"] },
-      { ingredient: "Ripe plantain", alternatives: ["Very ripe banana (less savoury but works)", "Skip and serve with extra rice"] },
-      { ingredient: "Kidney beans", alternatives: ["Black-eyed peas", "Tinned black beans"] }
-    ],
-    instructions: [
-      "Step 1 — Marinate the chicken: Score each piece of chicken a few times with a knife so the marinade penetrates. Combine soy sauce, browning sauce, allspice, dried thyme, garlic, ginger, Scotch bonnet, spring onions, black pepper, and salt in a large bowl. Add the chicken and toss thoroughly. Cover and refrigerate for at least 30 minutes, or overnight for best results. Remove the chicken from the marinade and pat lightly with kitchen paper — reserve the marinade.",
-      "Step 2 — Caramelise and brown: Heat vegetable oil in a wide, heavy-based pan or Dutch oven over medium-high heat. Add the caster sugar and let it melt and turn deep amber without stirring — about 2 minutes. Working in batches, add the chicken pieces (skin-side down first) and turn them in the caramelised sugar to coat and colour deeply on all sides, 3–4 minutes per side. Set browned chicken aside.",
-      "Step 3 — Build the stew: In the same pan, add the sliced onion and red pepper and fry for 3–4 minutes until softened. Add the chopped tomatoes and cook for another 2 minutes. Pour in the reserved marinade, chicken stock, and Worcestershire sauce, scraping up any sticky bits from the base. Return the chicken to the pan and tuck in the fresh thyme sprigs. Bring to a gentle boil, then reduce heat to low, cover, and braise for 35–40 minutes until the chicken is deeply tender and the sauce has thickened to a glossy, dark gravy. Taste and adjust seasoning.",
-      "Step 4 — Cook the rice and peas: While the chicken braises, combine coconut milk, water, kidney beans, whole garlic clove, thyme sprig, and salt in a saucepan. Bring to a gentle boil, then stir in the rice. Reduce heat to the lowest setting, cover tightly, and cook for 15–18 minutes until all liquid is absorbed and rice is fluffy. Remove garlic and thyme, fluff with a fork, and keep warm.",
-      "Step 5 — Fry the plantain: Heat oil in a non-stick frying pan over medium heat. Add plantain slices in a single layer and fry for 2–3 minutes per side until golden and caramelised at the edges. Transfer to a plate lined with kitchen paper and season with a pinch of salt.",
-      "Step 6 — Serve: Spoon rice and peas into deep bowls or plates, add chicken pieces and a generous ladle of the dark stew gravy, and arrange fried plantain alongside. Garnish with fresh thyme leaves if you have them."
-    ]
-  },
-  {
-    id: "sug2",
-    title: "Grilled Swordfish with Sicilian Salmoriglio, White Bean Purée & Braised Cavolo Nero",
-    category: "Fish & Seafood",
-    calories: 490,
-    protein: 46,
-    fibre: 8,
-    healthScore: 84,
+    calories: 510,
+    protein: 39,
+    fibre: 2,
+    healthScore: 68,
     time: "40 mins",
-    serves: "2",
-    desc: "Swordfish is the king of the Italian grill — thick, meaty, and able to take serious heat without falling apart. Here it\'s paired with salmoriglio, the zingy Sicilian sauce of olive oil, lemon, garlic, and oregano that is one of the Mediterranean\'s greatest condiments. White bean purée and tender braised cavolo nero make this feel complete, elegant, and deeply seasonal.",
-    emoji: "🐟",
-    image: "https://images.unsplash.com/photo-1580959380351-490174294d37?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxHcmlsbGVkJTIwU3dvcmRmaXNoJTIwd2l0aCUyMFNpY2lsaWFuJTIwU2FsbW9yaWdsaW8lMkMlMjBXaGl0ZSUyMEJlYW4lMjBQdXIlQzMlQTllJTIwJTI2JTIwQnJhaXNlZCUyMENhdm9sbyUyME5lcm8lMjBmb29kJTIwZGlzaHxlbnwwfDB8fHwxNzg0ODcwMzA5fDA&ixlib=rb-4.1.0&q=80&w=1080",
-    ingredientGroups: [
-      {
-        group: "Swordfish",
-        items: [
-          { name: "Swordfish steaks, about 200g each and 2cm thick", quantity: 2, unit: "" },
-          { name: "Olive oil", quantity: 1, unit: "tbsp" },
-          { name: "Salt and black pepper", quantity: 1, unit: "to taste" }
-        ]
-      },
-      {
-        group: "Salmoriglio Sauce",
-        items: [
-          { name: "Extra virgin olive oil", quantity: 4, unit: "tbsp" },
-          { name: "Lemon, juice and finely grated zest", quantity: 1, unit: "" },
-          { name: "Garlic clove, minced to a paste with salt", quantity: 1, unit: "" },
-          { name: "Dried Sicilian oregano (or regular dried oregano)", quantity: 1, unit: "tsp" },
-          { name: "Fresh flat-leaf parsley, finely chopped", quantity: 2, unit: "tbsp" },
-          { name: "Pinch of dried chilli flakes", quantity: 1, unit: "pinch" },
-          { name: "Salt", quantity: 1, unit: "pinch" }
-        ]
-      },
-      {
-        group: "White Bean Purée",
-        items: [
-          { name: "Tinned cannellini beans, drained and rinsed", quantity: 400, unit: "g" },
-          { name: "Garlic clove, peeled", quantity: 1, unit: "" },
-          { name: "Extra virgin olive oil", quantity: 3, unit: "tbsp" },
-          { name: "Lemon juice", quantity: 1, unit: "tbsp" },
-          { name: "Warm water or light vegetable stock", quantity: 4, unit: "tbsp" },
-          { name: "Salt and white pepper", quantity: 1, unit: "to taste" }
-        ]
-      },
-      {
-        group: "Braised Cavolo Nero",
-        items: [
-          { name: "Cavolo nero, tough stems removed, leaves roughly torn", quantity: 200, unit: "g" },
-          { name: "Olive oil", quantity: 2, unit: "tbsp" },
-          { name: "Garlic clove, thinly sliced", quantity: 2, unit: "" },
-          { name: "Dried chilli flakes", quantity: 0.5, unit: "tsp" },
-          { name: "Chicken or vegetable stock", quantity: 100, unit: "ml" },
-          { name: "Salt", quantity: 1, unit: "to taste" }
-        ]
-      }
-    ],
-    substitutes: [
-      { ingredient: "Swordfish", alternatives: ["Thick tuna steaks", "Mahi-mahi", "Monkfish tail slices"] },
-      { ingredient: "Cavolo nero", alternatives: ["Kale", "Swiss chard", "Savoy cabbage"] },
-      { ingredient: "Cannellini beans", alternatives: ["Butter beans", "Flageolet beans"] },
-      { ingredient: "Dried Sicilian oregano", alternatives: ["Regular dried oregano", "Fresh oregano, doubled in quantity"] }
-    ],
-    instructions: [
-      "Step 1 — Make the salmoriglio: Whisk together extra virgin olive oil, lemon juice and zest, minced garlic, dried oregano, parsley, chilli flakes, and a pinch of salt in a small bowl until emulsified. Set aside at room temperature — the flavours will meld as you cook everything else.",
-      "Step 2 — Make the white bean purée: Place drained cannellini beans and the whole garlic clove in a small saucepan with enough water to cover and bring to a gentle simmer for 5 minutes to warm through. Drain well, then transfer to a food processor (or use a stick blender) with the olive oil, lemon juice, and warm water or stock. Blitz until very smooth and silky — add more liquid a splash at a time if needed. Season generously with salt and white pepper. Keep warm over the lowest heat, stirring occasionally.",
-      "Step 3 — Braise the cavolo nero: Heat olive oil in a wide frying pan over medium heat. Add the sliced garlic and chilli flakes and fry for 60 seconds until fragrant but not browned. Add the cavolo nero leaves and toss to coat in the oil. Pour in the stock, season with salt, and cover with a lid. Cook for 6–8 minutes, stirring once or twice, until the leaves are completely tender and the liquid has mostly absorbed. Keep warm.",
-      "Step 4 — Grill the swordfish: Pat the swordfish steaks completely dry with kitchen paper — this is critical for a proper sear. Brush both sides with olive oil and season well with salt and black pepper. Heat a griddle pan or heavy frying pan over the highest heat until smoking. Lay the swordfish steaks in and press gently to ensure full contact. Cook for 3–4 minutes on the first side without moving — you want bold char marks and a crust to form. Flip and cook for a further 2–3 minutes. Swordfish is best when still very slightly translucent at the very centre; it will continue cooking off the heat.",
-      "Step 5 — Plate and serve: Spoon a generous mound of white bean purée onto each warmed plate and use the back of a spoon to create a swipe. Pile the cavolo nero alongside. Rest the swordfish steak on top of the beans and immediately spoon over the salmoriglio generously — it should pool around the fish and soak into everything. Serve with crusty bread to mop up the sauce."
-    ]
-  },
-  {
-    id: "sug3",
-    title: "Rajasthani Dal Baati — Baked Wheat Dumplings with Spiced Five-Lentil Dal & Ghee",
-    category: "Vegan",
-    calories: 570,
-    protein: 22,
-    fibre: 12,
-    healthScore: 79,
-    time: "1 hr 20 mins",
     serves: "4",
-    desc: "Dal Baati is Rajasthan\'s most iconic dish — rough-hewn wheat dumplings baked hard in the oven, then cracked open and drowned in clarified butter and a deeply spiced mixed lentil dal. The contrast of the crunchy, nutty baati soaking up the silky, tarka-finished dal is extraordinary. It\'s rustic, ancient, and one of India\'s great vegetarian dishes — made entirely without specialist techniques or equipment.",
-    emoji: "🫙",
-    image: "https://images.pexels.com/photos/6363501/pexels-photo-6363501.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    desc: "A legendary Taiwanese classic built on equal parts sesame oil, soy sauce, and rice wine, simmered down to a sticky, deeply savoury glaze around bone-in chicken pieces. A fistful of Thai basil thrown in at the last moment turns crispy and fragrant, adding a beautiful herbal lift to the rich, caramelised sauce. Serve with plenty of steamed jasmine rice to soak up every last drop.",
+    emoji: "🍗",
+    image: "https://images.pexels.com/photos/1310777/pexels-photo-1310777.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     ingredientGroups: [
       {
-        group: "Baati (Wheat Dumplings)",
+        group: "Chicken",
         items: [
-          { name: "Wholemeal flour (atta or wholemeal plain flour)", quantity: 300, unit: "g" },
-          { name: "Semolina (fine)", quantity: 50, unit: "g" },
-          { name: "Bicarbonate of soda", quantity: 0.25, unit: "tsp" },
-          { name: "Salt", quantity: 0.75, unit: "tsp" },
-          { name: "Carom seeds (ajwain)", quantity: 0.5, unit: "tsp" },
-          { name: "Melted vegan butter or refined coconut oil", quantity: 4, unit: "tbsp" },
-          { name: "Warm water, to bind", quantity: 120, unit: "ml" }
-        ]
-      },
-      {
-        group: "Five-Lentil Dal",
-        items: [
-          { name: "Red split lentils (masoor dal)", quantity: 60, unit: "g" },
-          { name: "Yellow split peas (chana dal)", quantity: 60, unit: "g" },
-          { name: "Split green moong dal", quantity: 60, unit: "g" },
-          { name: "Whole black urad lentils", quantity: 40, unit: "g" },
-          { name: "Toor dal (split pigeon peas)", quantity: 40, unit: "g" },
-          { name: "Water", quantity: 1.2, unit: "litres" },
-          { name: "Turmeric", quantity: 0.5, unit: "tsp" },
-          { name: "Salt", quantity: 1.5, unit: "tsp" }
-        ]
-      },
-      {
-        group: "Tarka (Tempering)",
-        items: [
-          { name: "Vegan butter or ghee (use vegan to keep fully vegan)", quantity: 3, unit: "tbsp" },
-          { name: "Cumin seeds", quantity: 1, unit: "tsp" },
-          { name: "Brown onion, finely chopped", quantity: 1, unit: "" },
-          { name: "Garlic cloves, minced", quantity: 4, unit: "" },
-          { name: "Fresh ginger, grated", quantity: 1, unit: "tbsp" },
-          { name: "Green chilli, finely chopped", quantity: 1, unit: "" },
-          { name: "Tinned chopped tomatoes", quantity: 200, unit: "g" },
-          { name: "Ground coriander", quantity: 1.5, unit: "tsp" },
-          { name: "Ground cumin", quantity: 1, unit: "tsp" },
-          { name: "Garam masala", quantity: 1, unit: "tsp" },
-          { name: "Kashmiri chilli powder", quantity: 1, unit: "tsp" },
-          { name: "Dried fenugreek leaves (kasuri methi)", quantity: 1, unit: "tsp" },
-          { name: "Fresh coriander, chopped, to serve", quantity: 3, unit: "tbsp" },
-          { name: "Lemon juice", quantity: 1, unit: "tbsp" }
+          { name: "Bone-in chicken thighs, skin-on, chopped into large pieces", quantity: 1.2, unit: "kg" },
+          { name: "Toasted sesame oil", quantity: 60, unit: "ml" },
+          { name: "Light soy sauce", quantity: 60, unit: "ml" },
+          { name: "Taiwanese rice wine (or dry sherry)", quantity: 60, unit: "ml" },
+          { name: "Dark soy sauce", quantity: 1, unit: "tbsp" },
+          { name: "Rock sugar (or soft brown sugar)", quantity: 2, unit: "tbsp" },
+          { name: "Garlic cloves, smashed and peeled", quantity: 10, unit: "" },
+          { name: "Fresh ginger, peeled and sliced into coins", quantity: 40, unit: "g" },
+          { name: "Dried red chillies", quantity: 4, unit: "" },
+          { name: "Large bunch Thai basil, leaves picked", quantity: 1, unit: "" }
         ]
       },
       {
         group: "To Serve",
         items: [
-          { name: "Melted vegan butter or ghee, to pour over baati", quantity: 4, unit: "tbsp" },
-          { name: "Pickled green chillies or sliced raw onion", quantity: 1, unit: "to taste" }
+          { name: "Jasmine rice, steamed", quantity: 320, unit: "g" },
+          { name: "Sliced spring onions, to garnish", quantity: 2, unit: "" }
         ]
       }
     ],
     substitutes: [
-      { ingredient: "Ajwain (carom seeds)", alternatives: ["Celery seeds in a pinch", "Simply omit — the baati will still be delicious"] },
-      { ingredient: "Mixed five lentils", alternatives: ["Use all red lentils for a quicker, simpler dal", "Any combination of two or three lentils you have"] },
-      { ingredient: "Kasuri methi", alternatives: ["A small pinch of fresh or dried thyme as an approximate substitute", "Simply omit"] },
-      { ingredient: "Vegan butter", alternatives: ["Traditional ghee if not keeping vegan", "Refined coconut oil"] }
+      { ingredient: "Taiwanese rice wine", alternatives: ["Dry sherry", "Shaoxing wine"] },
+      { ingredient: "Rock sugar", alternatives: ["Soft brown sugar", "Caster sugar"] },
+      { ingredient: "Thai basil", alternatives: ["Regular basil (add at the very end)", "Holy basil"] },
+      { ingredient: "Dried red chillies", alternatives: ["Pinch of chilli flakes", "Fresh bird\'s eye chillies"] }
     ],
     instructions: [
-      "Step 1 — Soak the lentils: Rinse all five lentils together in cold water until the water runs clear. Cover with cold water and soak for 30 minutes while you prepare the baati. (This step reduces cooking time significantly.)",
-      "Step 2 — Make the baati dough: Combine wholemeal flour, semolina, bicarbonate of soda, salt, and ajwain in a large bowl. Add the melted vegan butter and rub it into the flour with your fingers until the mixture resembles coarse breadcrumbs — this fat coating is what gives baati its characteristic crumbly texture. Add warm water gradually, kneading just until a firm, smooth dough forms. It should be stiffer than bread dough. Divide into 12 equal portions and roll each into a smooth ball. Use your thumb to press a shallow indent into the centre of each one (this helps them cook evenly). Set aside.",
-      "Step 3 — Bake the baati: Preheat your oven to 200°C (fan 180°C). Place the baati balls on a baking tray lined with baking paper and bake for 30–35 minutes, turning once halfway through, until golden brown and hard all over — they should sound hollow when tapped. Traditionally they are baked directly in embers; the oven version is slightly lighter but just as good.",
-      "Step 4 — Cook the dal: Drain the soaked lentils and place in a large saucepan with 1.2 litres of fresh water, turmeric, and salt. Bring to a boil, skim off any foam, then reduce heat and simmer partially covered for 25–30 minutes, stirring occasionally, until all lentils are completely soft and beginning to break down into a thick, cohesive dal. Add a splash more water if it becomes too thick.",
-      "Step 5 — Make the tarka: Heat vegan butter in a separate frying pan over medium-high heat. Add cumin seeds and let them sizzle and pop for 30 seconds. Add the chopped onion and fry for 8–10 minutes, stirring frequently, until deeply golden and beginning to caramelise. Add garlic, ginger, and green chilli and fry for 2 minutes. Add the chopped tomatoes and cook for 5 minutes until the mixture darkens and the oil begins to separate at the edges. Add ground coriander, cumin, garam masala, Kashmiri chilli powder, and crushed kasuri methi and fry for 1 minute. Pour this entire tarka into the cooked dal and stir well. Simmer together for 5 minutes, add lemon juice, taste and adjust salt. Finish with fresh coriander.",
-      "Step 6 — Serve: Remove baati from the oven. Use the back of a spoon or your hands to crack each baati open into halves or rough chunks and arrange in deep bowls. Pour a generous tablespoon of melted vegan butter or ghee over each baati so it soaks into the crumb. Ladle the hot dal over and around the baati, adding more butter if you like. Serve with pickled chillies or raw onion on the side."
+      "Step 1 — Pat the chicken pieces thoroughly dry with kitchen paper — this is key to getting good colour. Season lightly with a pinch of salt.",
+      "Step 2 — Heat the sesame oil in a wide, heavy-based wok or sauté pan over medium-high heat. Add the chicken pieces skin-side down in a single layer and cook undisturbed for 5–6 minutes until deeply golden and the skin has rendered and crisped. Flip and cook for a further 3 minutes. Transfer to a plate.",
+      "Step 3 — In the same pan with the rendered oil, add the smashed garlic, ginger coins, and dried chillies. Stir-fry over medium heat for 1–2 minutes until fragrant and the garlic is just starting to colour at the edges.",
+      "Step 4 — Return the chicken to the pan. Pour in the light soy sauce, dark soy sauce, and rice wine, then add the rock sugar. Stir everything to combine, making sure the chicken is coated.",
+      "Step 5 — Bring to a vigorous simmer, then reduce the heat to medium-low. Cover and braise for 15 minutes, turning the chicken once halfway through.",
+      "Step 6 — Remove the lid, increase the heat to medium-high, and cook for a further 8–10 minutes, turning the chicken frequently, until the sauce has reduced to a thick, glossy, sticky glaze that coats every piece. Keep a close eye — it can catch quickly at this stage.",
+      "Step 7 — Throw in the Thai basil leaves all at once and toss vigorously for 30–40 seconds until they wilt and turn fragrant and just slightly crispy at the edges.",
+      "Step 8 — Serve immediately over steamed jasmine rice, scattered with sliced spring onions. Make sure to spoon every last bit of the sticky glaze over the top."
+    ]
+  },
+  {
+    id: "sug2",
+    title: "Venetian-Style Crab & Mascarpone Risotto with Lemon, Chilli & Chives",
+    category: "Fish & Seafood",
+    calories: 580,
+    protein: 28,
+    fibre: 2,
+    healthScore: 62,
+    time: "50 mins",
+    serves: "4",
+    desc: "Venetian seafood cooking at its most elegant — sweet, delicate brown and white crab meat folded through a deeply flavoured saffron-scented risotto, finished with a generous spoonful of mascarpone for richness. A little fresh chilli and a heavy hand with the lemon zest keeps it vivid and bright, stopping it ever feeling heavy. This is the kind of dish that feels genuinely restaurant-special with very little effort.",
+    emoji: "🦀",
+    image: "https://images.unsplash.com/photo-1461009683693-342af2f2d6ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxWZW5ldGlhbi1TdHlsZSUyMENyYWIlMjAlMjYlMjBNYXNjYXJwb25lJTIwUmlzb3R0byUyMHdpdGglMjBMZW1vbiUyQyUyMENoaWxsaSUyMCUyNiUyMENoaXZlcyUyMGZvb2QlMjBkaXNofGVufDB8MHx8fDE3ODQ5NTYzNzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    ingredientGroups: [
+      {
+        group: "Risotto Base",
+        items: [
+          { name: "Carnaroli or Arborio rice", quantity: 320, unit: "g" },
+          { name: "Dry white wine", quantity: 150, unit: "ml" },
+          { name: "Good-quality fish or vegetable stock, kept hot", quantity: 1.2, unit: "litres" },
+          { name: "Shallots, finely diced", quantity: 3, unit: "" },
+          { name: "Garlic cloves, finely minced", quantity: 2, unit: "" },
+          { name: "Unsalted butter", quantity: 40, unit: "g" },
+          { name: "Olive oil", quantity: 2, unit: "tbsp" },
+          { name: "Pinch of saffron threads, steeped in 2 tbsp warm water", quantity: 1, unit: "pinch" }
+        ]
+      },
+      {
+        group: "Crab & Finish",
+        items: [
+          { name: "White crab meat (fresh or good-quality tinned)", quantity: 300, unit: "g" },
+          { name: "Brown crab meat", quantity: 80, unit: "g" },
+          { name: "Mascarpone", quantity: 3, unit: "tbsp" },
+          { name: "Lemon, zest and juice", quantity: 2, unit: "" },
+          { name: "Fresh red chilli, finely chopped (seeds in or out to taste)", quantity: 1, unit: "" },
+          { name: "Fresh chives, finely snipped", quantity: 20, unit: "g" },
+          { name: "Flat-leaf parsley, finely chopped", quantity: 15, unit: "g" },
+          { name: "Flaky sea salt and white pepper", quantity: 1, unit: "to taste" }
+        ]
+      }
+    ],
+    substitutes: [
+      { ingredient: "Fresh white crab meat", alternatives: ["Good-quality tinned white crab meat", "Cooked lobster meat"] },
+      { ingredient: "Mascarpone", alternatives: ["Crème fraîche", "Soft cream cheese"] },
+      { ingredient: "Carnaroli rice", alternatives: ["Arborio rice", "Vialone Nano rice"] },
+      { ingredient: "Brown crab meat", alternatives: ["Extra white crab meat", "A teaspoon of fish sauce for depth"] }
+    ],
+    instructions: [
+      "Step 1 — Steep the saffron threads in 2 tablespoons of warm water and set aside to bloom for at least 10 minutes. Keep your fish stock hot in a saucepan on a low burner — this is non-negotiable for a good risotto.",
+      "Step 2 — In a wide, heavy-based saucepan or deep sauté pan, melt half the butter with the olive oil over medium heat. Add the diced shallots with a pinch of salt and cook gently for 6–7 minutes, stirring occasionally, until completely soft and translucent but not coloured. Add the garlic and cook for a further minute.",
+      "Step 3 — Add the rice and stir to coat in the buttery shallot mixture. Toast for 2 minutes, stirring constantly, until the grains look slightly translucent at the edges and smell faintly nutty.",
+      "Step 4 — Pour in the white wine and stir vigorously. Let it bubble and absorb almost completely, then add the saffron water. Stir until absorbed.",
+      "Step 5 — Begin adding the hot stock a ladleful at a time, stirring frequently and letting each addition absorb before adding the next. Maintain a lively simmer throughout. Continue for 16–18 minutes until the rice is just al dente — it should have a slight bite at the very centre and the risotto should flow loosely when you tilt the pan.",
+      "Step 6 — Remove from the heat. Add the remaining cold butter, the mascarpone, the brown crab meat, and the zest and juice of one lemon. Stir vigorously for a minute to emulsify everything into a creamy, glossy consistency — this is the mantecatura. Taste and adjust seasoning with salt, white pepper, and more lemon juice.",
+      "Step 7 — Fold in the white crab meat and half the chives and parsley very gently with a spatula — you want it just warmed through, not cooked further.",
+      "Step 8 — Serve immediately in warmed wide bowls. Finish each portion with the remaining fresh chilli, chives, parsley, and a final grating of lemon zest. A drizzle of good olive oil over the top is optional but excellent."
+    ]
+  },
+  {
+    id: "sug3",
+    title: "Shakshuka Khadra — Green Shakshuka with Spinach, Courgette, Feta & Dukkah",
+    category: "Vegetarian",
+    calories: 370,
+    protein: 19,
+    fibre: 6,
+    healthScore: 84,
+    time: "35 mins",
+    serves: "4",
+    desc: "The vivid, verdant counterpart to the classic red shakshuka, popular across the Levant and North Africa — a deeply seasoned pan of wilted spinach, courgette, and green herbs spiked with cumin and a good hit of preserved lemon, with eggs poached directly in the sauce. Crumbled feta adds a salty, creamy contrast, and a shower of crunchy dukkah over the top gives every mouthful texture and warmth. Serve straight from the pan with warm flatbreads for scooping.",
+    emoji: "🥬",
+    image: "https://images.pexels.com/photos/22856272/pexels-photo-22856272.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    ingredientGroups: [
+      {
+        group: "Green Sauce",
+        items: [
+          { name: "Baby spinach", quantity: 200, unit: "g" },
+          { name: "Courgettes, coarsely grated", quantity: 2, unit: "" },
+          { name: "White onion, finely diced", quantity: 1, unit: "" },
+          { name: "Garlic cloves, finely sliced", quantity: 4, unit: "" },
+          { name: "Fresh green chilli, finely chopped", quantity: 1, unit: "" },
+          { name: "Olive oil", quantity: 3, unit: "tbsp" },
+          { name: "Ground cumin", quantity: 1.5, unit: "tsp" },
+          { name: "Ground coriander", quantity: 1, unit: "tsp" },
+          { name: "Preserved lemon, pulp discarded, rind finely chopped", quantity: 1, unit: "" },
+          { name: "Vegetable stock", quantity: 100, unit: "ml" },
+          { name: "Flat-leaf parsley, roughly chopped", quantity: 25, unit: "g" },
+          { name: "Fresh dill, roughly chopped", quantity: 15, unit: "g" },
+          { name: "Fresh mint leaves", quantity: 15, unit: "g" }
+        ]
+      },
+      {
+        group: "Eggs & Topping",
+        items: [
+          { name: "Large free-range eggs", quantity: 8, unit: "" },
+          { name: "Feta cheese, crumbled", quantity: 150, unit: "g" },
+          { name: "Dukkah", quantity: 3, unit: "tbsp" },
+          { name: "Extra virgin olive oil, to finish", quantity: 2, unit: "tbsp" },
+          { name: "Warm flatbreads, to serve", quantity: 4, unit: "" },
+          { name: "Flaky sea salt and black pepper", quantity: 1, unit: "to taste" }
+        ]
+      }
+    ],
+    substitutes: [
+      { ingredient: "Preserved lemon", alternatives: ["1 tsp lemon zest plus a squeeze of juice", "A dash of sumac for tartness"] },
+      { ingredient: "Dukkah", alternatives: ["Toasted sesame seeds with cumin and coriander", "Za\'atar"] },
+      { ingredient: "Feta cheese", alternatives: ["Soft goat\'s cheese", "Ricotta salata"] },
+      { ingredient: "Fresh dill", alternatives: ["Extra parsley", "Fennel fronds"] }
+    ],
+    instructions: [
+      "Step 1 — Squeeze as much moisture as possible from the grated courgette using your hands or a clean tea towel — this prevents the sauce becoming watery. Set aside.",
+      "Step 2 — Heat the olive oil in a large, wide, lidded frying pan or skillet over medium heat. Add the diced onion with a pinch of salt and cook for 6–7 minutes until soft and golden. Add the garlic and green chilli and cook for a further 2 minutes until fragrant.",
+      "Step 3 — Add the ground cumin and coriander, stir into the onion mixture, and cook for 60 seconds until the spices bloom and smell toasty.",
+      "Step 4 — Add the grated courgette to the pan and toss well. Cook over medium-high heat, stirring frequently, for 4–5 minutes until the courgette softens and any remaining moisture cooks off.",
+      "Step 5 — Add the spinach in two or three batches, folding each addition into the pan and letting it wilt before adding the next. Once all the spinach has wilted down, pour in the vegetable stock and stir in the chopped preserved lemon rind. Cook for 2 minutes. Taste and adjust seasoning — it should be well-seasoned and punchy.",
+      "Step 6 — Stir in most of the parsley and dill, reserving a small handful for finishing. Spread the green mixture out evenly across the pan and create 8 small wells with the back of a spoon.",
+      "Step 7 — Crack an egg carefully into each well. Season each egg with a small pinch of flaky salt and black pepper. Cover the pan with a lid and cook over medium-low heat for 6–8 minutes, until the whites are just set but the yolks remain runny. Check after 5 minutes — don\'t overcook.",
+      "Step 8 — Remove from the heat immediately. Scatter the crumbled feta generously over the pan, then shower with the dukkah, the reserved fresh herbs, and the fresh mint. Drizzle with extra virgin olive oil and serve straight to the table with warm flatbreads."
     ]
   }
 ];

@@ -1,60 +1,60 @@
 // tech-news-data.js
-// Auto-updated 2026-07-24 — do not edit manually
+// Auto-updated 2026-07-25 — do not edit manually
 
 var TECH_NEWS = {
-  date: "2026-07-24",
+  date: "2026-07-25",
   main: {
-    title: "AMD Takes On Nvidia With Its Helios AI Rack-Scale System",
-    category: "Hardware / AI",
+    title: "Wildfire Forces Evacuation of NASA\'s Deep Space Network Complex in Spain",
+    category: "Space & Science",
     content: [
-      "AMD has unveiled its Helios AI rack-scale system, a bold new move designed to challenge Nvidia\'s dominant position in the artificial intelligence hardware market. The system is set to begin shipping to customers later this year, marking a significant escalation in the competition between the two chipmaking giants. For an industry watching Nvidia\'s near-monopoly on AI infrastructure with growing concern, AMD\'s entry could not come at a more consequential time.",
-      "Rack-scale systems represent the next frontier in AI infrastructure, consolidating compute, networking, and memory resources into a single, highly optimized architecture designed for the massive workloads demanded by modern AI training and inference. By tackling the problem at the rack level rather than the individual chip level, AMD is signaling that it understands the scale at which today\'s AI development operates. This approach mirrors strategies already employed by Nvidia with its NVLink-based systems, suggesting AMD has been studying its rival\'s playbook closely.",
-      "The announcement comes as the AI hardware market is experiencing explosive growth, with hyperscalers and enterprise customers spending billions to build out the infrastructure needed to train and run large language models. Nvidia has long held an overwhelming share of this market, in large part due to the software ecosystem built around its CUDA platform. AMD\'s challenge will be not only to match Nvidia\'s raw performance figures, but to make the case to buyers that its software stack and ecosystem are mature enough to support mission-critical AI workloads.",
-      "AMD has been steadily investing in its ROCm software platform and expanding partnerships with major cloud providers to close the software gap with Nvidia. The Helios system appears designed to give enterprise customers a credible, at-scale alternative at a time when supply constraints and pricing pressures around Nvidia hardware have made diversification increasingly attractive. If AMD can demonstrate competitive performance benchmarks when Helios ships, it could accelerate a broader shift in how AI compute infrastructure is procured.",
-      "The broader implications for the AI industry are significant. A more competitive hardware market could help moderate the soaring costs of AI development, which have become a major concern for startups and researchers unable to afford Nvidia\'s premium pricing. Investors and analysts will be watching closely when Helios reaches customers to see whether AMD can convert its hardware ambitions into meaningful market share — and whether 2026 marks the beginning of a genuine two-horse race in AI silicon."
+      "A fast-moving wildfire has forced the evacuation of NASA\'s Deep Space Communications Complex near Madrid, Spain, one of the agency\'s most critical facilities for maintaining contact with spacecraft operating across the solar system and beyond. The blaze tore through the area surrounding the complex, prompting emergency personnel to clear the site as a wildfire emergency gripped the region. NASA confirmed the evacuation and stated that any potential damage to the facility will be assessed once it is safe for personnel to return.",
+      "The Deep Space Network complex in Spain, formally known as the Madrid Deep Space Communications Complex, is one of only three such facilities worldwide — the others located in Goldstone, California, and Canberra, Australia. Together, these three stations form NASA\'s Deep Space Network, a globally distributed array of large antennas and communication facilities that support interplanetary spacecraft missions as well as radio and radar astronomy observations. The Madrid site\'s strategic location in the eastern hemisphere makes it an irreplaceable link in continuous around-the-clock communication with deep space probes.",
+      "The timing of the evacuation raises serious concerns about potential disruptions to active NASA missions that rely on the complex\'s large dish antennas to send commands and receive data from spacecraft. Missions including those monitoring the outer planets, interplanetary probes, and other deep-space assets depend on all three network nodes functioning in coordination. Even a temporary interruption or damage to the Madrid facility could create gaps in coverage that the remaining two stations in California and Australia would struggle to fully compensate for.",
+      "Wired reports that flames burned through the Deep Space Communications Complex itself, though the full extent of any structural or equipment damage remains unknown as the wildfire emergency continues to affect the surrounding region. The inability to immediately assess the damage adds a layer of uncertainty for mission controllers and NASA engineers who rely on the facility\'s infrastructure, which includes some of the world\'s largest parabolic dish antennas. The situation underscores the vulnerability of critical scientific infrastructure to increasingly severe wildfire events driven by changing climate conditions.",
+      "NASA has not yet released details on which specific missions may be affected or whether contingency communication schedules have been put in place using the Goldstone and Canberra complexes. The agency\'s measured statement — that damage will be assessed when it is safe to do so — reflects both the ongoing danger to personnel and the uncertainty surrounding the facility\'s condition. This event serves as a stark reminder that even the most sophisticated space exploration infrastructure remains exposed to terrestrial hazards, and may prompt renewed discussion about resilience planning for critical ground-based assets."
     ],
-    image: "https://images.unsplash.com/photo-1605876516612-a04e21021ead?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxBTUQlMjBUYWtlcyUyME9uJTIwTnZpZGlhJTIwV2l0aCUyMEl0cyUyMEhlbGlvcyUyMEFJJTIwUmFjay1TY2FsZSUyMFN5c3RlbXxlbnwwfDB8fHwxNzg0ODY5NDc5fDA&ixlib=rb-4.1.0&q=80&w=1080",
-    source: "TechCrunch",
-    sourceUrl: "https://techcrunch.com/2026/07/23/amd-takes-on-nvidia-with-its-helios-ai-rack-scale-system/"
+    image: "https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-2287501646-1152x648.jpg",
+    source: "Ars Technica",
+    sourceUrl: "https://arstechnica.com/space/2026/07/wildfire-forces-evacuation-of-nasas-deep-space-network-complex-in-spain/"
   },
   secondary: [
     {
       id: "tc1",
-      title: "Forgot Your Google Password? Now You Can Log In With a Selfie",
-      summary: "Google has introduced a selfie video login option that can also be used for AI Avatars and age verification.",
+      title: "SpaceX Launches New V3 Starlink Satellites but Suffers Another Booster Failure",
+      summary: "SpaceX successfully deployed next-generation V3 Starlink satellites on its second Starship V3 flight, but experienced another failure relighting the booster\'s rocket engines during recovery.",
       body: [
-        "Google is rolling out a new account recovery feature that allows users to verify their identity through a selfie video, providing an alternative path to access accounts when passwords are forgotten. The feature extends beyond simple login recovery, with Google also tying it into its AI Avatar tools and age verification systems.",
-        "The move reflects a broader industry push toward biometric and AI-powered identity verification as a replacement for traditional password-based security. While convenient, the use of facial recognition data for account access is likely to raise privacy questions among security researchers and regulators."
+        "The second Starship V3 mission ticked off several key milestones for SpaceX, successfully delivering a new batch of upgraded V3 Starlink satellites to orbit. However, the mission was once again marred by a booster failure, with the rocket appearing to have trouble relighting its engines — a critical step in the booster\'s recovery and reuse process.",
+        "The back-to-back booster failures on Starship V3 flights highlight ongoing challenges SpaceX faces in perfecting the full reusability of its next-generation launch system, even as the upper-stage performance and satellite deployment aspects of the missions continue to progress. Resolving the booster relight issue will be essential for SpaceX to achieve the rapid turnaround cadence central to Starship\'s business case."
       ],
-      image: "https://cdn.arstechnica.net/wp-content/uploads/2026/07/look-here-1152x648.png",
-      source: "Ars Technica",
-      url: "https://arstechnica.com/gadgets/2026/07/google-now-lets-you-log-into-your-account-with-a-selfie/",
-      category: "AI / Security"
+      image: "https://images.unsplash.com/photo-1634175735590-b2ed7b02d143?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTcGFjZVglMjBMYXVuY2hlcyUyME5ldyUyMFYzJTIwU3RhcmxpbmslMjBTYXRlbGxpdGVzJTIwYnV0JTIwU3VmZmVycyUyMEFub3RoZXIlMjBCb29zdGVyJTIwRmFpbHVyZXxlbnwwfDB8fHwxNzg0OTU1ODg0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "TechCrunch",
+      url: "https://techcrunch.com/2026/07/24/spacex-launches-new-v3-starlink-satellites-but-suffers-another-booster-failure/",
+      category: "Space"
     },
     {
       id: "tc2",
-      title: "LG Monitors Are Installing McAfee Ads on Windows — and Microsoft Is Responding",
-      summary: "Certain LG monitors are triggering the installation of a McAfee application through Windows Update when connected to a PC.",
+      title: "Qualcomm Warns Customers of Double-Digit Price Hikes Starting September",
+      summary: "Qualcomm has notified customers it will raise chip prices by a double-digit percentage from September 1st, citing an inability to absorb rising supplier costs amid ongoing component shortages.",
       body: [
-        "Users connecting specific LG monitors to their Windows PCs have discovered that a McAfee-related application is being silently installed via Windows Update, drawing widespread criticism over the unexpected bundling of third-party software. Microsoft has now responded to the controversy, though the situation has highlighted longstanding concerns about how hardware drivers and partner software can be pushed through trusted system channels.",
-        "The incident recalls earlier eras of 'bloatware' bundling that plagued the PC industry, and raises fresh questions about the integrity of Windows Update as a delivery mechanism. Both Microsoft and LG face reputational pressure to clarify how the arrangement came about and to provide users with a straightforward way to remove the unwanted software."
+        "In a letter to customers, Qualcomm announced plans to increase the prices of its products by a percentage in the double digits, with the hikes taking effect for items shipped after September 1st. The company said it has exhausted its ability to absorb higher costs from its own suppliers, pointing to continued component shortages as a key driver of the decision.",
+        "The price increases are expected to have a broad impact across the consumer electronics industry, as Qualcomm chips power a vast range of smartphones, laptops, and other connected devices. Manufacturers that rely on Qualcomm silicon will likely face pressure to either absorb the added costs or pass them on to consumers in the form of higher retail prices."
       ],
-      image: "https://cdn.arstechnica.net/wp-content/uploads/2022/11/lg-UltraGear-27GR95QE-B-1152x648.jpg",
-      source: "Ars Technica",
-      url: "https://arstechnica.com/gadgets/2026/07/microsoft-responds-to-lg-monitors-installing-mcafee-ads-on-windows/",
-      category: "Software / Security"
+      image: "https://images.unsplash.com/photo-1782513758946-3d0717f94d04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxRdWFsY29tbSUyMFdhcm5zJTIwQ3VzdG9tZXJzJTIwb2YlMjBEb3VibGUtRGlnaXQlMjBQcmljZSUyMEhpa2VzJTIwU3RhcnRpbmclMjBTZXB0ZW1iZXJ8ZW58MHwwfHx8MTc4NDk1NTg4NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "The Verge",
+      url: "https://www.theverge.com/gadgets/970910/qualcomm-raising-prices-bloomberg",
+      category: "Hardware"
     },
     {
       id: "tc3",
-      title: "Claude\'s Voice Mode Now Available for Opus and Sonnet Models",
-      summary: "Anthropic is expanding Claude\'s voice mode beyond the Haiku model to its more powerful Opus and Sonnet models, with new integrations in Gmail, Slack, and Canva.",
+      title: "Anthropic\'s Opus 5 Focuses on Token Efficiency Rather Than Raw Capability Gains",
+      summary: "Anthropic\'s newly released Opus 5 model prioritizes cost-effective token efficiency over headline capability improvements, reflecting a broader industry shift as cheaper AI models become increasingly capable.",
       body: [
-        "Anthropic has announced that its voice interaction mode, previously limited to the faster but less capable Claude Haiku model, is now being extended to its flagship Opus and Sonnet models, giving users access to more powerful AI reasoning through spoken conversation. The expansion also brings Claude\'s voice capabilities into popular productivity platforms including Gmail, Slack, and Canva.",
-        "The rollout positions Anthropic more directly against OpenAI\'s advanced voice mode features and signals growing confidence in deploying compute-intensive models for real-time audio interaction. Integrating voice into workplace tools like Slack and Gmail could meaningfully change how professionals interact with AI assistants during their daily workflows."
+        "Anthropic has released Opus 5, its latest flagship AI model, with a focus on making AI more economically efficient rather than simply pushing the boundaries of raw performance. The company\'s approach signals a maturing AI market where token efficiency — doing more with fewer computational resources — is becoming as important a competitive differentiator as benchmark scores.",
+        "The release underscores a notable trend in the AI industry: as models improve rapidly across the board, the cheaper and more efficient options are often good enough for the vast majority of real-world tasks. This dynamic is reshaping how AI companies position their products and how businesses evaluate the trade-offs between cutting-edge capability and operational cost."
       ],
-      image: "https://images.unsplash.com/photo-1738107445898-2ea37e291bca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxDbGF1ZGUlNUN8ZW58MHwwfHx8MTc4NDg2OTQ4MHww&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "The Verge",
-      url: "https://www.theverge.com/ai-artificial-intelligence/970065/anthropic-voice-mode-claude-opus-sonnet-haiku-ai",
+      image: "https://images.unsplash.com/photo-1782513927216-d1b4610439f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxBbnRocm9waWMlNUN8ZW58MHwwfHx8MTc4NDk1NTg4NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "Ars Technica",
+      url: "https://arstechnica.com/ai/2026/07/anthropics-opus-5-is-about-token-efficiency-not-a-capability-leap/",
       category: "AI"
     }
   ]

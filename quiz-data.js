@@ -1,10 +1,10 @@
 // quiz-data.js
-// Auto-updated 2026-07-24 — do not edit manually
+// Auto-updated 2026-07-25 — do not edit manually
 
 window.QUIZ_DATA = {
-  date: '2026-07-24',
-  category: 'British History',
-  question: 'In which year did the Great Fire of London begin, and on which street did it start?',
-  answer: '1666; the fire started on Pudding Lane.',
-  funFact: 'The fire broke out in a bakery on Pudding Lane in the early hours of 2nd September 1666 and burned for four days, destroying around 13,200 houses and 87 parish churches. Despite the catastrophic scale of destruction, the official death toll was remarkably low — just six recorded fatalities, though historians suspect the true number was higher among the poor whose deaths went unrecorded.'
+  date: '2026-07-25',
+  category: 'Sport',
+  question: 'At the 2016 Rio Olympics, which gymnast won four gold medals and became the most decorated American gymnast at a single Olympic Games — and what informal nickname had the press given to her signature floor exercise tumbling pass?',
+  answer: 'Simone Biles. Her signature tumbling pass — a double layout with a half twist — was nicknamed "The Biles."',
+  funFact: 'Biles finished Rio 2016 with four golds and a bronze, cementing her status as the greatest gymnast of her generation. The skill officially named "The Biles" in her honour was so difficult that many gymnastics coaches discouraged other athletes from attempting it in competition. She went on to have multiple skills named after her across different apparatus, a rare distinction in the sport.'
 };
