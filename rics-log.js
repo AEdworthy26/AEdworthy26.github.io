@@ -3,6 +3,45 @@
 
 var RICS_LOG = [
   {
+    "date": "2026-07-26",
+    "topic": "Ransom Strips, Marriage Value and Ransom Negotiations in Residential Land Assembly",
+    "module": "Valuation",
+    "level": 2,
+    "apc_competency": "Valuation (Level 2)",
+    "focus": "This lesson examines ransom strips and marriage value as they arise in residential land assembly \u2014 how they are identified during due diligence, how ransom value is calculated, and how developers and RPs negotiate to resolve access, services and connectivity constraints. For Alfie, these issues are a live risk on land-led acquisitions where title gaps, third-party ownership of access land, or severed utilities easements can destroy viability or stall a scheme entirely.",
+    "image": "https://images.unsplash.com/photo-1612868725046-af3833132e23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxSYW5zb20lMjBTdHJpcHMlMkMlMjBNYXJyaWFnZSUyMFVLJTIwcHJvcGVydHklMjBhcmNoaXRlY3R1cmUlMjBidWlsZGluZyUyMGV4dGVyaW9yfGVufDB8MHx8fDE3ODUwNDMwMDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "content": [],
+    "summary": [
+      "A ransom strip is a third-party-owned parcel blocking site access or services connectivity; the owner can demand a share of development value uplift \u2014 historically up to one-third \u2014 as the price of cooperation.",
+      "Marriage value is the quantified uplift from combining the ransom strip with the development site; identifying and negotiating the 'next best alternative' access route is the developer\\'s strongest lever to cap the ransom demand.",
+      "Ransom risk must be identified during pre-acquisition title due diligence by overlaying OS base plans with Land Registry title plans, checking highway adoption records and reviewing all easement schedules \u2014 before heads of terms are finalised.",
+      "Resolution options include freehold acquisition of the strip, grant of a permanent easement, restrictive covenant release or title insurance \u2014 the choice depends on owner identity, negotiating dynamics, funder requirements and insurer appetite.",
+      "Ransom resolution should be treated as a critical path milestone in the project programme; the cost must be modelled explicitly in the development appraisal as a land acquisition cost, with sensitivity analysis across the likely range of negotiated outcomes, and flagged to Homes England if it materially affects grant-funded viability."
+    ],
+    "qa": [
+      {
+        "q": "You are reviewing a site appraisal for a 150-unit scheme and your solicitors flag that a 2-metre strip between the site and the adopted highway is in separate third-party ownership. How do you approach this and what is your immediate next step?",
+        "a": "The immediate next step is to commission a full title investigation of the strip, confirming the registered proprietor, any charges or incumbrances, and whether the strip is registered or unregistered. In parallel, I would instruct a highways consultant to assess whether an alternative access point onto the adopted highway is technically feasible and, if so, quantify the cost of that alternative via a Section 278 estimate. This establishes the 'next best alternative' cost \u2014 which caps the rational maximum of the ransom demand \u2014 before any approach is made to the strip owner. I would not approach the strip owner until this analysis is complete, to preserve title insurance options. The ransom cost range (from title insurance premium up to the next-best-alternative figure) would be included in the appraisal sensitivity analysis for the Investment Committee paper."
+      },
+      {
+        "q": "Explain the 'one-third rule' as applied to ransom strip valuation. Is it a legal rule? What factors would cause you to argue for a lower share in negotiation?",
+        "a": "The one-third rule is a valuation convention, not a legal rule. It derives from Stokes v Cambridge Corporation (1961) and suggests that a ransom owner is entitled to approximately one-third of the development value uplift that their cooperation creates. It is a starting point for negotiation, not an entitlement. Factors that would justify arguing for a lower share include: the existence of a viable alternative access route (which caps the ransom at the cost of that alternative); the ransom owner\\'s land having minimal intrinsic value independent of its ransom position; the ransom owner\\'s inability to use the strip for any other purpose; and the presence of planning conditions or highway adoption requirements that would compel the developer to use the alternative route regardless. In practice, a developer with a credible and costed alternative can often negotiate well below one-third."
+      },
+      {
+        "q": "When would you recommend title insurance rather than direct negotiation to resolve a ransom strip, and what are the key limitations a funder will scrutinise?",
+        "a": "Title insurance is appropriate where the ransom owner is unidentifiable or uncontactable (for example, dissolved company, unknown heir, or unregistered title with no traceable owner), where the covenant or restriction is historic and enforcement risk is low, or where the cost and delay of negotiation clearly outweighs the insured risk. The key limitations funders scrutinise are: (1) whether the developer or its agents have already approached the ransom owner \u2014 if so, cover is typically excluded for claims by that known party; (2) the insured sum must be sufficient to cover the full development value at risk, not merely land value; (3) the policy must be assignable to the funder\\'s security; and (4) the policy must be reviewed and approved by the funder\\'s solicitors before drawdown. Title insurance does not cure the defect \u2014 it only compensates if the defect is enforced \u2014 so funders with conservative security policies may still require direct resolution."
+      },
+      {
+        "q": "How does an unresolved ransom strip affect a Homes England grant-funded scheme, and what steps would you take if the ransom payment increases land cost materially after grant offer?",
+        "a": "Homes England grant is awarded on the basis of an approved business plan and financial appraisal, including an assumed land acquisition cost. If a ransom payment materially increases land cost \u2014 I would treat 'material' as approximately 5% of the agreed land value or any sum that moves the scheme from viable to non-additional \u2014 it creates a gap in the funding model that cannot simply be absorbed. The correct course is to submit a scheme variation request to Homes England, updating the financial appraisal to reflect the revised land cost and demonstrating whether the scheme remains additional (i.e., would not proceed without grant) at the new cost level. If additional grant is required, a formal variation to the funding agreement is needed before the extra commitment is incurred. Failing to notify Homes England of a material cost change risks a clawback event."
+      },
+      {
+        "q": "What is the difference between a ransom strip resolved by easement grant versus freehold acquisition, and why might a developer prefer one over the other?",
+        "a": "Freehold acquisition of the ransom strip merges the title with the development site and removes all future uncertainty \u2014 the strip becomes part of the site and is subject to the same ownership. It is the cleanest outcome for long-term security of title and is typically preferred by funders and any future purchaser of the completed development. An easement grant, by contrast, leaves the freehold with the ransom owner but grants a permanent, irrevocable right \u2014 typically for access, services or both \u2014 over the strip. It may be preferred where the ransom owner values continued ownership for reasons of their own (for example, agricultural access or utility access rights they retain), or where the ransom owner\\'s negotiating position makes freehold purchase unaffordable. The risk with easements is that the scope must be very precisely drafted \u2014 an easement for 'access' that does not specify vehicular access, or that does not include rights for service connections, may not be sufficient for the development\\'s needs and could be disputed later."
+      }
+    ]
+  },
+  {
     "date": "2026-07-24",
     "topic": "Golden Brick Structures: Mechanics, Risk Allocation and Grant Implications in RP\u2013Developer Joint Ventures",
     "module": "Legal/Regulatory Compliance",

@@ -1,8 +1,8 @@
 // quote-data.js
-// Auto-updated 2026-07-25 — do not edit manually
+// Auto-updated 2026-07-26 — do not edit manually
 
 var QUOTE_DATA = {
-  date: "2026-07-25",
-  text: "Liberty for wolves is death to the lambs.",
-  author: "Isaiah Berlin"
+  date: "2026-07-26",
+  text: "Being second is to be the first of the ones who lose.",
+  author: "Ayrton Senna"
 };

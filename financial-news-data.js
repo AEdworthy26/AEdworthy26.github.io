@@ -1,17 +1,17 @@
 // financial-news-data.js
-// Auto-updated 2026-07-25 — do not edit manually
+// Auto-updated 2026-07-26 — do not edit manually
 
 var FINANCIAL_NEWS = {
-  date: "2026-07-25",
+  date: "2026-07-26",
   main: {
-    title: "Oil at $100 a Barrel and Tariffs Return: A Global Economy Under Dual Siege",
+    title: "A Global Economy Jolted by an Oil Shock Now Gets a Tariff Reminder",
     category: "Economics",
     content: [
-      "The global economy is facing a punishing combination of pressures not seen in years, as oil prices have surged to $100 a barrel amid ongoing conflict in the Persian Gulf while a fresh wave of tariffs from the United States adds another layer of strain. The confluence of an energy shock and renewed trade barriers is forcing economists and policymakers to reassess growth and inflation forecasts that had only recently begun to stabilize. Markets are grappling with what analysts describe as a dual-supply shock — the kind of scenario that central banks find notoriously difficult to navigate without triggering either a recession or entrenched inflation.",
-      "The war in the Persian Gulf has disrupted one of the world\'s most critical oil transit corridors, pushing crude prices to the psychologically and economically significant $100 threshold. Energy costs of this magnitude ripple rapidly through the broader economy, raising the price of transportation, manufacturing, and consumer goods simultaneously. For households already strained by years of post-pandemic price increases, the renewed oil shock threatens to erode purchasing power just as some relief had seemed to be on the horizon.",
-      "Layered on top of the energy crisis is the return of aggressive tariff policy from Washington, which has reignited fears about disrupted global supply chains and higher import costs. Tariffs act as a tax on trade, and their reintroduction at scale means businesses importing components or finished goods face higher costs that will almost inevitably be passed on to consumers. The combination of elevated energy prices and trade barriers creates a stagflationary risk — weak growth accompanied by persistent inflation — that presents central banks with an uncomfortable policy dilemma.",
-      "For the Federal Reserve and other major central banks, the situation is particularly fraught. Raising interest rates to combat inflation risks choking off an already slowing economy, while cutting rates to stimulate growth could allow inflation to become further entrenched. The dual shock also complicates fiscal planning for governments worldwide, many of which are already carrying elevated debt loads from pandemic-era spending. Emerging markets that import both oil and American goods are likely to feel the squeeze most acutely, with currency pressures adding yet another dimension to an already complex picture.",
-      "Financial markets have responded with the kind of volatility that reflects genuine uncertainty about the path ahead. Equity indices have wavered as investors weigh strong corporate earnings from some sectors against the macro headwinds bearing down on the broader economy. The situation serves as a stark reminder of how quickly geopolitical events and policy decisions can reshape the economic landscape, and of the fragility that persists beneath the surface of what had appeared, only months ago, to be a gradually normalizing global economy."
+      "The global economy is facing a rare and unsettling double threat: oil prices have surged to $100 a barrel amid conflict in the Persian Gulf, while a fresh wave of tariffs has re-entered the picture to compound inflationary pressures. The combination represents one of the most challenging macroeconomic environments in years, forcing businesses, central banks, and policymakers to reckon with cost pressures arriving simultaneously from multiple directions. Economists warn that the confluence of an energy shock and renewed trade barriers could prove far more damaging than either would be in isolation.",
+      "The rise of oil to $100 a barrel is rooted in growing instability in the Persian Gulf, where the war in the region has disrupted supply routes and rattled energy markets. For consumers and manufacturers alike, elevated energy costs feed through to virtually every corner of the economy — from transportation and heating to the production of goods. Central banks, many of which had only recently declared partial victory over inflation, now face the uncomfortable prospect of prices re-accelerating just as they had begun to ease policy.",
+      "Tariffs are back in the headlines, adding a second layer of cost pressure on top of the energy shock. Trade barriers of this nature typically raise import prices for businesses and consumers, squeezing margins and dampening demand — effects that are difficult to offset through monetary policy alone. The re-emergence of tariff concerns signals that the period of relative trade stability many economists had hoped for may be shorter-lived than anticipated.",
+      "Markets are grappling with the implications of this dual shock in real time, with investors weighing the risk of stagflation — the dreaded combination of stagnant growth and persistent inflation that proved so damaging in the 1970s. Equity markets have shown volatility as earnings outlooks become harder to forecast under rapidly shifting input costs. Bond markets face their own dilemma, as the inflation signal would ordinarily push yields higher, yet weakening growth expectations pull in the opposite direction.",
+      "The broader global economy, still carrying the scars of post-pandemic supply chain disruptions, is arguably less well-positioned to absorb these twin shocks than it might have been in more stable times. International trade partners are watching carefully, with some nations already seeking bilateral discussions to cushion the impact of tariffs on their own economies. The coming weeks will be critical in determining whether policymakers can coordinate a measured response or whether the compounding pressures tip the global outlook into a more severe downturn."
     ],
     image: "https://static01.nyt.com/images/2026/07/24/multimedia/24Biz-Global-Econ-01-lzfv/24Biz-Global-Econ-01-lzfv-mediumSquareAt3X.jpg",
     source: "The New York Times",
@@ -20,42 +20,42 @@ var FINANCIAL_NEWS = {
   secondary: [
     {
       id: "fn1",
-      title: "Paramount Pauses $110bn Warner Bros Merger Amid State Legal Challenge",
-      summary: "Paramount Skydance has agreed to halt its blockbuster acquisition of Warner Bros Discovery until courts rule on a multi-state challenge or until June 2027.",
+      title: "Can Japan Avoid a Liz Truss-Style Shock as Its PM Embarks on a Giant Spending Spree?",
+      summary: "Japan\'s Prime Minister Sanae Takaichi is planning a staggering ¥370tn investment push across 17 industrial sectors, alarming international investors who fear a bond market crisis similar to the UK\'s 2022 meltdown.",
       body: [
-        "The proposed $110 billion merger between Paramount Skydance and Warner Bros Discovery has been put on hold after a coalition of 12 US states, led by California, secured a temporary restraining order blocking the deal from closing for 28 days. Court papers filed Friday confirm that Paramount has agreed to pause the acquisition pending a judicial ruling, or until 1 June 2027 at the latest, whichever comes first.",
-        "The legal challenge represents one of the most significant state-level interventions in a major media merger in recent memory, and its outcome could have broad implications for consolidation across the entertainment industry. The deal, if completed, would create one of the largest media conglomerates in the world, and its fate now rests in the hands of the courts."
+        "International investors are raising urgent questions about where Japan will find the ¥370tn — roughly £1.7tn — that Prime Minister Sanae Takaichi\'s coalition government plans to inject into 17 industrial sectors by 2040. The scale of the proposed spending is so vast that even members of Takaichi\'s own party have expressed concern that the plan could destabilise Japan\'s already heavily indebted public finances.",
+        "The comparison to former UK Prime Minister Liz Truss is striking: her unfunded spending plans triggered a swift and severe bond market selloff in 2022, forcing a dramatic policy reversal within weeks. Analysts warn that Japan, despite having a different financial structure, is not immune to a loss of investor confidence if markets conclude the spending plans are fiscally reckless."
       ],
-      image: "https://i.guim.co.uk/img/media/5db020b1ab0d8406642302c7435fa27b02e69c98/333_0_3333_2667/master/3333.jpg?width=1200&quality=85&auto=format&fit=max&s=dec498a3e36995a41b2ba6c8a5e73fd6",
+      image: "https://i.guim.co.uk/img/media/167c95b583b05b89bd5863c6d0a447f3b0f62f7e/193_0_1795_1437/master/1795.jpg?width=1200&quality=85&auto=format&fit=max&s=93942764a7c88f1d260be4f610aa531a",
       source: "The Guardian",
-      url: "https://www.theguardian.com/us-news/2026/jul/24/paramount-warner-bros-merger",
-      category: "Business"
+      url: "https://www.theguardian.com/world/2026/jul/25/japan-sanae-takaichi-investment-plan-liz-truss-economy",
+      category: "Economics"
     },
     {
       id: "fn2",
-      title: "Trump Threatens EU With 'Substantial' Tariffs Over US Tech Giant Fines",
-      summary: "President Trump has threatened the European Union with major new tariffs after Brussels imposed steep fines on American tech companies including Google, Apple, Meta, and Amazon.",
+      title: "Yes, the AI Stock Selloff Looks Terrifying — But It Might Actually Save the Bull Market",
+      summary: "A sharp pullback in the hottest AI-related stocks of 2026 has spooked investors, but some analysts argue the correction could relieve dangerous overvaluation and extend the broader market rally.",
       body: [
-        "The White House escalated its confrontation with the European Union on Friday, with President Trump vowing to investigate the bloc and threaten additional 'substantial' tariffs following the EU\'s decision to fine several major US technology companies, including a €890 million penalty against Google. Trump accused Brussels of 'robbing' American companies and taxpayers, demanding that the fines be 'entirely reversed'.",
-        "The standoff adds a significant new dimension to the already tense transatlantic trade relationship, with US tech stocks potentially caught in the crossfire of what could become a prolonged regulatory and tariff dispute. Investors in companies like Alphabet, Apple, Meta, and Amazon are watching closely, as the threat of retaliatory tariffs could affect European revenues while the fines themselves weigh on earnings."
+        "The AI-driven stocks that powered much of the 2026 bull market have come under heavy selling pressure, rattling portfolios that had become heavily concentrated in the sector. The selloff has been swift enough to prompt fear among retail and institutional investors alike, with some wondering whether the broader market rally is running out of steam.",
+        "However, a contrarian view is gaining traction among seasoned market observers who argue that a correction in overextended AI names is precisely what the bull market needed to remain sustainable. By flushing out speculative excess and resetting valuations to more defensible levels, the pullback may actually create a healthier foundation for continued market gains in the months ahead."
       ],
-      image: "https://i.guim.co.uk/img/media/9f090fec127ec41eed9e65982abe3dbd72952047/513_0_4402_3522/master/4402.jpg?width=1200&quality=85&auto=format&fit=max&s=4f7813c74c7179d8a70de0406760f897",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/us-news/2026/jul/24/trump-european-union-tariffs",
+      image: "https://images.mktw.net/im-10664338",
+      source: "MarketWatch",
+      url: "https://www.marketwatch.com/story/yes-the-ai-stock-selloff-looks-terrifying-but-it-might-actually-save-the-bull-market-3bef59be?mod=mw_rss_topstories",
       category: "Markets"
     },
     {
       id: "fn3",
-      title: "S&P 500 Wavers as Oil Price Drop Offsets Chip Sector Selloff",
-      summary: "Wall Street ended a turbulent week in mixed territory, with falling oil prices and solid corporate earnings providing partial offset to a notable selloff in semiconductor stocks.",
+      title: "Tankers Sail Through Red Sea Despite Houthi Blockade",
+      summary: "Dozens of commercial tankers continued to traverse the Red Sea this week even as Houthi activity creates mounting uncertainty for one of the world\'s most critical shipping lanes.",
       body: [
-        "US equities closed out a jittery week with the S&P 500 wavering between gains and losses, as investors balanced conflicting signals from the energy and technology sectors. A decline in oil prices offered some relief to inflation-sensitive parts of the market, while strong profit results from several major corporations underscored the underlying resilience of corporate America\'s earnings machine.",
-        "The drag came largely from chipmakers, which sold off sharply amid renewed concerns about demand and the broader macroeconomic outlook, including the impact of tariffs on global technology supply chains. The week\'s market action reflects the broader uncertainty gripping investors, who are attempting to price in the compounding effects of geopolitical conflict, trade policy shifts, and central bank decisions simultaneously."
+        "Despite an ongoing Houthi blockade, dozens of ships pressed ahead through the Red Sea this week, underscoring the difficult calculus facing shipping operators who must weigh the risks of passage against the cost and time penalties of rerouting around Africa. The scattered but persistent disruption is keeping freight markets on edge, with insurers and logistics firms closely monitoring each transit.",
+        "The Red Sea corridor is a vital artery for global trade, and prolonged instability there has already contributed to elevated shipping costs and supply chain uncertainty worldwide. With oil already at $100 a barrel and tariffs adding further pressure, any escalation that forces a sustained rerouting of tanker traffic could deliver another significant inflationary jolt to the global economy."
       ],
-      image: "https://images.pexels.com/photos/4651145/pexels-photo-4651145.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      source: "Bloomberg Markets",
-      url: "https://www.bloomberg.com/news/articles/2026-07-23/stock-market-today-dow-s-p-live-updates",
-      category: "Markets"
+      image: "https://static01.nyt.com/images/2026/07/24/multimedia/2026-07-22-aden-ship-traffic-index/2026-07-22-aden-ship-traffic-index-mediumSquareAt3X-v3.jpg",
+      source: "The New York Times",
+      url: "https://www.nytimes.com/2026/07/25/business/energy-environment/houthi-blockade-red-sea-maps.html",
+      category: "International"
     }
   ]
 };

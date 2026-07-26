@@ -1,10 +1,10 @@
 // quiz-data.js
-// Auto-updated 2026-07-25 — do not edit manually
+// Auto-updated 2026-07-26 — do not edit manually
 
 window.QUIZ_DATA = {
-  date: '2026-07-25',
+  date: '2026-07-26',
   category: 'Sport',
-  question: 'At the 2016 Rio Olympics, which gymnast won four gold medals and became the most decorated American gymnast at a single Olympic Games — and what informal nickname had the press given to her signature floor exercise tumbling pass?',
-  answer: 'Simone Biles. Her signature tumbling pass — a double layout with a half twist — was nicknamed "The Biles."',
-  funFact: 'Biles finished Rio 2016 with four golds and a bronze, cementing her status as the greatest gymnast of her generation. The skill officially named "The Biles" in her honour was so difficult that many gymnastics coaches discouraged other athletes from attempting it in competition. She went on to have multiple skills named after her across different apparatus, a rare distinction in the sport.'
+  question: 'At the 2016 Rio Olympics, which gymnast won four gold medals and became the most decorated American gymnast in a single Olympic Games — and what was the nickname given to her signature floor exercise tumbling pass?',
+  answer: 'Simone Biles. Her signature tumbling pass — a double layout with a half twist and blind landing — became officially named "The Biles."',
+  funFact: 'Biles won gold in the individual all-around, vault, floor exercise, and team event in Rio. The Code of Points, the governing body that names gymnastics skills, awards The Biles a higher difficulty rating than almost any other floor pass in women\'s gymnastics, reflecting a level of athleticism considered almost impossible to execute at competition standard. She remains the most decorated gymnast — male or female — in World Championship history.'
 };
