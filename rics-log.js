@@ -3,6 +3,45 @@
 
 var RICS_LOG = [
   {
+    "date": "2026-07-27",
+    "topic": "Planning Appeals: Written Representations, Hearings and Inquiries \u2014 Strategy, Evidence and Risk Management",
+    "module": "Planning and Development Management",
+    "level": 3,
+    "apc_competency": "Planning and Development Management (Level 3)",
+    "focus": "This lesson examines the three appeal routes under the Town and Country Planning Act 1990 \u2014 written representations, hearings and public inquiries \u2014 with specific focus on strategic decision-making, evidence assembly, advocacy and risk management in the context of residential-led schemes. For Alfie, planning appeals represent a high-stakes juncture in the development lifecycle where commercial, legal and planning considerations converge, and where detailed practitioner-level understanding is essential for APC competency demonstration.",
+    "image": "__IMG_RICS__",
+    "content": [],
+    "summary": [
+      "The three appeal routes \u2014 written representations, hearings and public inquiries \u2014 differ in formality, timescale and cost; the correct route depends on issue complexity and the need for cross-examination, not simply scheme size.",
+      "A Statement of Case must clearly articulate grounds of appeal, relevant development plan policies and material considerations including NPPF; for housing schemes, housing land supply position and the tilted balance under NPPF para 11(d) are frequently decisive.",
+      "Statements of Common Ground narrow the live issues for the Inspector and should be negotiated proactively from appeal validation \u2014 delay is a material procedural risk.",
+      "Costs awards in planning appeals are based on unreasonable behaviour (PPG), not success; they must be applied for at or before the close of proceedings and can materially reduce appeal expenditure on major inquiries.",
+      "Development managers must model the commercial impact of an appeal \u2014 programme extension, cashflow implications, option longstop dates and Homes England grant milestone conflicts \u2014 before committing to an appeal strategy."
+    ],
+    "qa": [
+      {
+        "q": "An LPA has refused your 150-unit residential scheme on two grounds: design quality and a claimed conflict with a local design code. The refusal was a member override against officer recommendation. What appeal route would you recommend, and what are your first steps?",
+        "a": "Given the contested design issues and the member override, written representations are unlikely to be sufficient \u2014 design disputes typically benefit from a hearing or inquiry where the Inspector can engage directly with expert witnesses and site evidence. I would recommend an informal hearing unless the LPA intends to call design expert witnesses for cross-examination (in which case inquiry may be more appropriate). First steps: review the officer\\'s report and members' resolution to identify the substantive planning grounds (which may be limited given the override); instruct a planning barrister to advise on grounds and prospects; commission a design review panel report endorsing the scheme; prepare a costs application on the basis that the refusal was contrary to officer recommendation without new substantive grounds; and notify Homes England of programme risk if the scheme carries AHP grant."
+      },
+      {
+        "q": "What is the significance of housing land supply in a residential planning appeal, and how does the five-year housing land supply test interact with NPPF paragraph 11(d)?",
+        "a": "NPPF paragraph 11(d) provides the 'tilted balance': where a development plan is absent, silent or out of date, permission should be granted unless the adverse impacts of doing so significantly and demonstrably outweigh the benefits (assessed against NPPF policies taken as a whole), or where specific NPPF policies indicate development should be restricted. A key trigger for 'out of date' status is an LPA\\'s inability to demonstrate a five-year housing land supply with the appropriate buffer (5% standard; 20% where there has been significant under-delivery as measured by the Housing Delivery Test). Where supply is below five years, an Inspector must apply the tilted balance and weigh housing benefits heavily. Appellants routinely commission independent housing land supply assessments \u2014 often challenging the LPA\\'s methodology on site deliverability, planning policy compliance of allocated sites or trajectory assumptions \u2014 to establish that the balance tips in the appellant\\'s favour."
+      },
+      {
+        "q": "What is a Rule 6 party in a planning inquiry, and how should a development manager manage the risk posed by an active Rule 6 objector such as a parish council?",
+        "a": "A Rule 6 party is a statutory consultee or third party granted formal status under the Town and Country Planning (Inquiries Procedure) (England) Rules 2000 to participate in the inquiry \u2014 submitting proofs of evidence, cross-examining witnesses and making closing submissions. Parish councils, amenity societies and statutory consultees (e.g. Historic England, Natural England) frequently seek Rule 6 status on contentious schemes. To manage this risk: engage with potential Rule 6 parties before the inquiry through pre-inquiry meetings and stakeholder dialogue to understand their concerns and, where possible, address them through design amendments or additional commitments; review their proofs of evidence carefully on receipt and instruct your barrister to prepare targeted cross-examination; and factor their participation into the inquiry programme and costs estimate."
+      },
+      {
+        "q": "How do you manage the interaction between a planning appeal programme and a Homes England AHP grant agreement with a fixed start-on-site deadline?",
+        "a": "This is a significant commercial risk. Homes England AHP grant is typically linked to a start-on-site milestone (often defined as completion of foundation works to slab level, or in some grant structures to golden brick stage). If a planning appeal extends the programme beyond the grant\\'s start-on-site deadline, the grant allocation is at risk of being withdrawn and re-allocated. Management steps include: notify Homes England\\'s investment team at the point of appeal decision, not retrospectively; request a programme extension or milestone deferral under the grant agreement\\'s force majeure or planning risk provisions if applicable; seek written confirmation of Homes England\\'s position on programme flexibility; model the financial impact of grant loss in a revised scheme appraisal for investment committee; and, where grant loss is unavoidable, assess whether the scheme remains viable without grant or whether a revised grant application in a future programme round is feasible."
+      },
+      {
+        "q": "When can a costs award be made against an LPA in a planning appeal, and what evidence would you gather to support a costs application?",
+        "a": "Costs awards against LPAs are available under Section 250(5) TCPA 1990 and governed by MHCLG\\'s PPG on Appeals. The test is unreasonable behaviour causing the appellant unnecessary or wasted expense \u2014 not simply losing the appeal. Evidence supporting a costs application includes: the officer\\'s report recommending approval (demonstrating the refusal was a member override without new substantive grounds); the LPA\\'s Statement of Case and Reasons for Refusal (identifying whether reasons are vague, inconsistent or unsupported by evidence); any withdrawal of reasons at the inquiry stage (a clear indicator of unreasonable behaviour); evidence of failure to negotiate \u2014 for example, no pre-application engagement or refusal to consider amendments; and PINS procedural correspondence showing LPA non-compliance with timetables. The costs application must be made at or before the close of proceedings \u2014 typically as part of closing submissions \u2014 and should be supported by a schedule of costs incurred as a result of the unreasonable behaviour."
+      }
+    ]
+  },
+  {
     "date": "2026-07-26",
     "topic": "Ransom Strips, Marriage Value and Ransom Negotiations in Residential Land Assembly",
     "module": "Valuation",

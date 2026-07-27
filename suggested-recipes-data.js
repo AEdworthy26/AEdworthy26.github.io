@@ -1,176 +1,189 @@
 // suggested-recipes-data.js
-// Auto-updated 2026-07-26 — do not edit manually
+// Auto-updated 2026-07-27 — do not edit manually
 
 window.SUGGESTED_RECIPES = [
   {
     id: "sug1",
-    title: "Slow-Braised Greek Lamb Shanks — Stifado-Style with Red Wine, Cinnamon & Orzo",
-    category: "Lamb",
-    calories: 610,
-    protein: 44,
-    fibre: 5,
-    healthScore: 68,
-    time: "2 hrs 30 mins",
+    title: "Caldo Verde — Portuguese Kale & Chorizo Soup with Crusty Cornbread",
+    category: "Soups & Stews",
+    calories: 420,
+    protein: 19,
+    fibre: 7,
+    healthScore: 76,
+    time: "50 mins",
     serves: "4",
-    desc: "Lamb shanks braised low and slow in a deeply spiced red wine sauce with pearl onions, cinnamon, cloves, and bay — a Greek stifado reimagined for the shank. The braising liquid becomes a glossy, sweet-savoury sauce that\'s stirred through orzo to soak up every drop. Rich, warming, and completely unforgettable.",
-    emoji: "🍖",
-    image: "https://images.pexels.com/photos/16588046/pexels-photo-16588046.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    desc: "Portugal\'s most beloved soup — a velvety potato and kale broth lifted by smoky, sizzling coins of chorizo. The secret is blending most of the potato base to a silky consistency before stirring in ribbons of dark kale, giving the soup its characteristic deep green colour and hearty body. Served with thick slices of golden cornbread, this is bold, warming, peasant cooking at its absolute finest.",
+    emoji: "🍲",
+    image: "https://images.unsplash.com/photo-1717251752803-34ff258646e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxDYWxkbyUyMFZlcmRlJTIwJUUyJTgwJTk0JTIwUG9ydHVndWVzZSUyMEthbGUlMjAlMjYlMjBDaG9yaXpvJTIwU291cCUyMHdpdGglMjBDcnVzdHklMjBDb3JuYnJlYWQlMjBmb29kJTIwZGlzaHxlbnwwfDB8fHwxNzg1MTI5NTEyfDA&ixlib=rb-4.1.0&q=80&w=1080",
     ingredientGroups: [
-      { group: "Lamb", items: [
-        { name: "Lamb shanks", quantity: 4, unit: "" },
-        { name: "Olive oil", quantity: 3, unit: "tbsp" },
-        { name: "Sea salt and black pepper", quantity: 1, unit: "to taste" }
-      ]},
-      { group: "Braise", items: [
-        { name: "Pearl onions (or small shallots), peeled", quantity: 400, unit: "g" },
-        { name: "Garlic cloves, roughly smashed", quantity: 6, unit: "" },
-        { name: "Tomato purée", quantity: 2, unit: "tbsp" },
-        { name: "Canned whole plum tomatoes", quantity: 400, unit: "g" },
-        { name: "Red wine (something robust like Xinomavro or Côtes du Rhône)", quantity: 300, unit: "ml" },
-        { name: "Beef or lamb stock", quantity: 400, unit: "ml" },
-        { name: "Cinnamon stick", quantity: 2, unit: "" },
-        { name: "Whole cloves", quantity: 4, unit: "" },
-        { name: "Allspice berries", quantity: 4, unit: "" },
-        { name: "Bay leaves", quantity: 3, unit: "" },
-        { name: "Red wine vinegar", quantity: 1, unit: "tbsp" },
-        { name: "Honey", quantity: 1, unit: "tsp" }
-      ]},
-      { group: "Orzo", items: [
-        { name: "Orzo pasta", quantity: 320, unit: "g" },
-        { name: "Salted butter", quantity: 20, unit: "g" },
-        { name: "Flat-leaf parsley, roughly chopped", quantity: 1, unit: "small bunch" }
-      ]},
-      { group: "To Serve", items: [
-        { name: "Crumbled feta", quantity: 80, unit: "g" },
-        { name: "Dried oregano", quantity: 1, unit: "tsp" },
-        { name: "Lemon", quantity: 1, unit: "" }
-      ]}
+      {
+        group: "Soup Base",
+        items: [
+          { name: "Floury potatoes, peeled and roughly chopped", quantity: 800, unit: "g" },
+          { name: "Brown onion, roughly chopped", quantity: 1, unit: "large" },
+          { name: "Garlic cloves, sliced", quantity: 4, unit: "" },
+          { name: "Olive oil", quantity: 3, unit: "tbsp" },
+          { name: "Good-quality chicken or vegetable stock", quantity: 1.5, unit: "litres" },
+          { name: "Bay leaves", quantity: 2, unit: "" },
+          { name: "Flaky sea salt and black pepper", quantity: 0, unit: "to taste" }
+        ]
+      },
+      {
+        group: "Kale & Chorizo",
+        items: [
+          { name: "Cavolo nero or curly kale, stems removed, leaves very finely shredded", quantity: 300, unit: "g" },
+          { name: "Cooking chorizo, sliced into 5mm coins", quantity: 200, unit: "g" },
+          { name: "Smoked sweet paprika", quantity: 1, unit: "tsp" }
+        ]
+      },
+      {
+        group: "To Serve",
+        items: [
+          { name: "Extra virgin olive oil, to drizzle", quantity: 2, unit: "tbsp" },
+          { name: "Crusty cornbread or sourdough", quantity: 4, unit: "thick slices" }
+        ]
+      }
     ],
     substitutes: [
-      { ingredient: "Lamb shanks", alternatives: ["Bone-in lamb shoulder pieces", "Beef shin (adjust time to 3 hrs)"] },
-      { ingredient: "Pearl onions", alternatives: ["Banana shallots halved", "Small pickling onions"] },
-      { ingredient: "Orzo", alternatives: ["Risoni", "Small pasta such as ditalini", "Steamed rice"] },
-      { ingredient: "Red wine", alternatives: ["Extra beef stock plus 1 tbsp balsamic vinegar", "Non-alcoholic red wine"] }
+      { ingredient: "Cooking chorizo", alternatives: ["Spanish cured chorizo (add at the end, no frying needed)", "Smoked kielbasa sausage"] },
+      { ingredient: "Cavolo nero", alternatives: ["Curly kale", "Savoy cabbage, very finely shredded"] },
+      { ingredient: "Floury potatoes", alternatives: ["Maris Piper", "King Edward"] }
     ],
     instructions: [
-      "Step 1 — Preheat your oven to 160°C (fan 140°C). Pat the lamb shanks completely dry with kitchen paper — this is essential for a good sear. Season generously all over with salt and pepper.",
-      "Step 2 — Heat 2 tbsp olive oil in a large, heavy-based casserole or Dutch oven over high heat until shimmering. Sear the shanks in batches, turning every 2–3 minutes until deeply browned on all sides — don\'t rush this. Set aside on a plate.",
-      "Step 3 — Reduce heat to medium. Add the remaining olive oil and the pearl onions. Cook for 5–6 minutes, stirring occasionally, until they pick up colour. Add the smashed garlic and cook for another 2 minutes until fragrant.",
-      "Step 4 — Push the onions to the side and add the tomato purée. Let it fry in the centre of the pan for 90 seconds, stirring, until it darkens slightly — this removes rawness and adds depth. Stir into the onions.",
-      "Step 5 — Pour in the red wine, scraping up any caramelised bits from the base of the pan. Let it bubble vigorously for 3 minutes to cook off the alcohol. Add the canned tomatoes (crush them roughly with your hands as they go in), stock, cinnamon sticks, cloves, allspice, bay leaves, red wine vinegar, and honey. Stir to combine.",
-      "Step 6 — Nestle the lamb shanks back into the pot — they should be mostly submerged. Bring to a gentle simmer, then cover tightly with a lid and transfer to the oven. Braise for 2 hours to 2 hours 15 minutes, turning the shanks halfway through, until the meat is completely tender and falling from the bone.",
-      "Step 7 — Remove the shanks from the sauce. Taste the braising liquid and season with salt, pepper, and a little more vinegar if needed. Fish out and discard the cinnamon sticks, cloves, allspice, and bay leaves. If the sauce looks thin, simmer it on the hob uncovered for 5–10 minutes until it thickens slightly.",
-      "Step 8 — Cook the orzo in a large pan of well-salted boiling water according to packet instructions until just al dente. Drain, toss immediately with the butter and a ladleful of the warm braising sauce. Season well.",
-      "Step 9 — Divide the buttered orzo between deep bowls or plates. Place a lamb shank on top and spoon over plenty of the rich stifado sauce and onions. Finish with crumbled feta, a pinch of dried oregano, a squeeze of lemon, and a scatter of fresh parsley. Serve immediately."
+      "Step 1 — Sweat the aromatics: Heat 2 tbsp olive oil in a large, heavy pot over medium heat. Add the onion with a pinch of salt and cook for 8–10 minutes until soft and translucent. Add the garlic and cook for a further 2 minutes until fragrant.",
+      "Step 2 — Build the base: Add the chopped potatoes, bay leaves, and stock. Bring to a boil, then reduce to a steady simmer. Cook uncovered for 20–25 minutes until the potatoes are completely tender and falling apart.",
+      "Step 3 — Blend to silky: Remove the bay leaves. Use a stick blender to blitz the soup until completely smooth and velvety. Taste and season generously with salt and black pepper. The base should be thick and creamy — add a splash more stock if it feels too dense.",
+      "Step 4 — Fry the chorizo: Meanwhile, place a dry frying pan over medium-high heat. Add the chorizo coins and fry for 3–4 minutes, turning once, until deeply golden and their paprika-rich fat has rendered out. Remove the chorizo with a slotted spoon and set aside. Add the smoked paprika to the chorizo fat in the pan, stir for 30 seconds, then pour this smoky oil into the soup.",
+      "Step 5 — Add the kale: Bring the blended soup back to a gentle simmer. Stir in the finely shredded kale and cook for 4–5 minutes — just enough to wilt and tenderise the leaves while keeping their vivid colour. Stir in half the fried chorizo.",
+      "Step 6 — Serve: Ladle the soup into deep bowls, top with the remaining chorizo coins, and finish with a generous drizzle of extra virgin olive oil and a crack of black pepper. Serve immediately with thick slices of warm crusty cornbread on the side."
     ]
   },
   {
     id: "sug2",
-    title: "Crispy Pan-Fried Trout with Brown Butter, Capers, Almonds & Watercress",
+    title: "Japanese Teriyaki Salmon Donburi with Pickled Cucumber, Sesame & Soft-Boiled Egg",
     category: "Fish & Seafood",
-    calories: 480,
-    protein: 39,
-    fibre: 3,
-    healthScore: 79,
-    time: "25 mins",
+    calories: 610,
+    protein: 42,
+    fibre: 5,
+    healthScore: 80,
+    time: "35 mins",
     serves: "2",
-    desc: "Rainbow trout fillets pan-fried until the skin is shatteringly crisp, then finished with a classic French-inspired beurre noisette spiked with capers, toasted almonds, and a shot of lemon. Peppery watercress alongside keeps it fresh and light. It\'s one of those dishes that looks and tastes far more elegant than the effort involved.",
-    emoji: "🐟",
-    image: "https://images.unsplash.com/photo-1699115239899-4e54345c8fd6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxDcmlzcHklMjBQYW4tRnJpZWQlMjBUcm91dCUyMHdpdGglMjBCcm93biUyMEJ1dHRlciUyQyUyMENhcGVycyUyQyUyMEFsbW9uZHMlMjAlMjYlMjBXYXRlcmNyZXNzJTIwZm9vZCUyMGRpc2h8ZW58MHwwfHx8MTc4NTA0MzExMHww&ixlib=rb-4.1.0&q=80&w=1080",
+    desc: "A deeply satisfying Japanese rice bowl built on sweet-lacquered teriyaki salmon — glossy, caramelised, and impossibly moreish — nestled over steaming short-grain rice with cool pickled cucumber, a jammy soft-boiled egg, and a blizzard of toasted sesame. The homemade teriyaki glaze takes minutes but tastes vastly better than anything from a bottle, with proper depth from mirin and sake. This is weeknight food that genuinely feels like a treat.",
+    emoji: "🍱",
+    image: "https://images.unsplash.com/photo-1682568514220-c477d5432024?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxKYXBhbmVzZSUyMFRlcml5YWtpJTIwU2FsbW9uJTIwRG9uYnVyaSUyMHdpdGglMjBQaWNrbGVkJTIwQ3VjdW1iZXIlMkMlMjBTZXNhbWUlMjAlMjYlMjBTb2Z0LUJvaWxlZCUyMEVnZyUyMGZvb2QlMjBkaXNofGVufDB8MHx8fDE3ODUxMjk1MTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
     ingredientGroups: [
-      { group: "Fish", items: [
-        { name: "Rainbow trout fillets, skin-on, pin-boned", quantity: 2, unit: "x 200g" },
-        { name: "Plain flour", quantity: 2, unit: "tbsp" },
-        { name: "Sea salt and black pepper", quantity: 1, unit: "to taste" },
-        { name: "Neutral oil (sunflower or vegetable)", quantity: 1, unit: "tbsp" }
-      ]},
-      { group: "Brown Butter Sauce", items: [
-        { name: "Unsalted butter", quantity: 60, unit: "g" },
-        { name: "Blanched almonds, roughly chopped", quantity: 30, unit: "g" },
-        { name: "Capers, drained and patted dry", quantity: 2, unit: "tbsp" },
-        { name: "Lemon juice", quantity: 1, unit: "tbsp" },
-        { name: "Lemon zest", quantity: 1, unit: "tsp" },
-        { name: "Flat-leaf parsley, finely chopped", quantity: 2, unit: "tbsp" }
-      ]},
-      { group: "To Serve", items: [
-        { name: "Watercress", quantity: 80, unit: "g" },
-        { name: "Extra virgin olive oil", quantity: 1, unit: "tsp" },
-        { name: "Crusty bread or new potatoes", quantity: 1, unit: "to serve" },
-        { name: "Lemon wedges", quantity: 2, unit: "" }
-      ]}
+      {
+        group: "Salmon & Glaze",
+        items: [
+          { name: "Salmon fillets, skin on", quantity: 2, unit: "x 180g" },
+          { name: "Soy sauce", quantity: 3, unit: "tbsp" },
+          { name: "Mirin", quantity: 3, unit: "tbsp" },
+          { name: "Sake or dry sherry", quantity: 2, unit: "tbsp" },
+          { name: "Caster sugar", quantity: 1, unit: "tbsp" },
+          { name: "Neutral oil (sunflower or vegetable)", quantity: 1, unit: "tbsp" }
+        ]
+      },
+      {
+        group: "Pickled Cucumber",
+        items: [
+          { name: "Cucumber, halved lengthways, seeds scooped, thinly sliced", quantity: 0.5, unit: "" },
+          { name: "Rice vinegar", quantity: 2, unit: "tbsp" },
+          { name: "Caster sugar", quantity: 1, unit: "tsp" },
+          { name: "Fine salt", quantity: 0.5, unit: "tsp" },
+          { name: "Fresh ginger, finely grated", quantity: 1, unit: "tsp" }
+        ]
+      },
+      {
+        group: "Bowl",
+        items: [
+          { name: "Japanese short-grain sushi rice", quantity: 200, unit: "g (dry weight)" },
+          { name: "Eggs", quantity: 2, unit: "large" },
+          { name: "Toasted sesame seeds", quantity: 2, unit: "tbsp" },
+          { name: "Spring onions, finely sliced", quantity: 3, unit: "" },
+          { name: "Nori sheet, cut into thin strips (optional)", quantity: 1, unit: "" },
+          { name: "Sesame oil, to finish", quantity: 1, unit: "tsp" }
+        ]
+      }
     ],
     substitutes: [
-      { ingredient: "Rainbow trout", alternatives: ["Salmon fillets", "Sea bream fillets", "Mackerel fillets"] },
-      { ingredient: "Watercress", alternatives: ["Rocket", "Baby spinach", "Pea shoots"] },
-      { ingredient: "Blanched almonds", alternatives: ["Flaked almonds", "Pine nuts", "Hazelnuts roughly chopped"] },
-      { ingredient: "Capers", alternatives: ["Caper berries roughly chopped", "Finely chopped gherkins"] }
+      { ingredient: "Salmon fillets", alternatives: ["Rainbow trout fillets", "Firm tofu slabs (press well before glazing)"] },
+      { ingredient: "Sake", alternatives: ["Dry sherry", "Chicken stock (use 1 tbsp less)"] },
+      { ingredient: "Short-grain sushi rice", alternatives: ["Jasmine rice", "Medium-grain pudding rice"] }
     ],
     instructions: [
-      "Step 1 — Remove the trout from the fridge 10 minutes before cooking. Pat the fillets completely dry on both sides with kitchen paper — any moisture is the enemy of a crispy skin. Season the flesh side well with salt and pepper, then dust the skin side very lightly with flour and pat off any excess.",
-      "Step 2 — Heat the neutral oil in a heavy-based non-stick or stainless steel frying pan over high heat until it just begins to smoke. Lay the trout skin-side down into the pan. Immediately use a spatula or your fingers (carefully) to press the fillet flat for the first 20 seconds — this prevents curling.",
-      "Step 3 — Cook the trout skin-side down for 3–4 minutes without moving it, until the skin is deeply golden and crisp and the flesh is opaque about three-quarters of the way up. Flip carefully and cook flesh-side down for just 60 seconds. The residual heat will finish the centre. Transfer to a warm plate, skin-side up, and rest while you make the sauce.",
-      "Step 4 — Wipe out the pan briefly, then add the butter over medium heat. Swirl constantly as it melts and foams. After about 2 minutes, the foam will subside and the butter will turn a deep golden-brown with a hazelnut aroma — watch it closely, there\'s a fine line between brown butter and burnt butter. The moment it reaches that colour, add the chopped almonds.",
-      "Step 5 — Swirl the almonds in the brown butter for 30 seconds until toasted, then add the capers (stand back — they may spit). Swirl for another 30 seconds, then remove from the heat immediately and add the lemon juice, lemon zest, and parsley. The sizzle will stop and the sauce will come together beautifully. Taste and season.",
-      "Step 6 — Dress the watercress lightly with the extra virgin olive oil and a small pinch of salt. Arrange on plates alongside the trout fillets. Spoon the brown butter, almonds, and capers generously over the fish and some onto the watercress too. Serve immediately with lemon wedges and crusty bread or new potatoes to mop up the sauce."
+      "Step 1 — Cook the rice: Rinse the sushi rice in cold water until the water runs clear (about 3–4 rinses). Cook according to packet instructions — typically 200g rice to 240ml water, brought to a boil, then tightly covered and steamed on the lowest heat for 12 minutes, then rested off the heat for 10 minutes. Keep warm.",
+      "Step 2 — Quick-pickle the cucumber: Toss the sliced cucumber with rice vinegar, sugar, salt, and grated ginger. Mix well and set aside for at least 15 minutes, tossing occasionally. The cucumber will soften slightly and become brilliantly sharp and refreshing.",
+      "Step 3 — Soft-boil the eggs: Lower the eggs into boiling water and cook for exactly 6 minutes and 30 seconds. Transfer immediately to a bowl of ice-cold water. Once cool enough to handle, peel carefully — the whites should be just set and the yolks golden and jammy.",
+      "Step 4 — Make the teriyaki glaze: Combine the soy sauce, mirin, sake, and sugar in a small bowl and stir until the sugar dissolves. Set aside.",
+      "Step 5 — Cook the salmon: Pat the salmon fillets completely dry with kitchen paper — this is crucial for a good sear. Heat the neutral oil in a non-stick frying pan over medium-high heat. Lay the salmon skin-side down and press gently with a spatula for the first 30 seconds to prevent curling. Cook for 4 minutes until the skin is deeply crisp, then flip and cook for 1 minute on the flesh side.",
+      "Step 6 — Glaze and caramelise: Pour the teriyaki glaze over the salmon. It will bubble furiously — this is what you want. Spoon the glaze continuously over the fish for 60–90 seconds as it thickens and lacquers the salmon to a deep mahogany gloss. Remove from heat the moment the glaze is sticky and glossy.",
+      "Step 7 — Assemble the bowls: Divide the warm rice between two deep bowls. Drizzle with a few drops of sesame oil and fluff gently. Place a glazed salmon fillet on top, skin-side up to keep it crisp. Add a mound of pickled cucumber, halve the soft-boiled eggs and nestle them alongside. Scatter with spring onions, toasted sesame seeds, and nori strips if using. Drizzle any remaining glaze from the pan over everything."
     ]
   },
   {
     id: "sug3",
-    title: "Roasted Tomato & Courgette Galette with Ricotta, Pesto & Toasted Pine Nuts",
-    category: "Vegetarian",
-    calories: 455,
-    protein: 14,
-    fibre: 4,
-    healthScore: 65,
-    time: "1 hr 15 mins",
+    title: "Ethiopian Misir Wot — Red Lentil Stew with Berbere, Caramelised Onions & Injera",
+    category: "Vegan",
+    calories: 490,
+    protein: 22,
+    fibre: 14,
+    healthScore: 88,
+    time: "1 hr",
     serves: "4",
-    desc: "A free-form rustic tart built on a buttery, flaky rough-puff pastry base, spread with lemon-spiked ricotta and topped with slow-roasted tomatoes, golden courgette, and a swirl of vibrant basil pesto. It\'s the kind of dish that looks like it came from a Provençal farmhouse kitchen — deceptively simple, genuinely showstopping, and perfect for July\'s best produce.",
-    emoji: "🥧",
-    image: "https://images.unsplash.com/photo-1722162141238-890628ed95e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxSb2FzdGVkJTIwVG9tYXRvJTIwJTI2JTIwQ291cmdldHRlJTIwR2FsZXR0ZSUyMHdpdGglMjBSaWNvdHRhJTJDJTIwUGVzdG8lMjAlMjYlMjBUb2FzdGVkJTIwUGluZSUyME51dHMlMjBmb29kJTIwZGlzaHxlbnwwfDB8fHwxNzg1MDQzMTExfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    desc: "Misir Wot is one of Ethiopia\'s most iconic dishes — a deep brick-red lentil stew built on a foundation of painstakingly caramelised onions and fragrant berbere spice that develops an almost meaty depth of flavour entirely from plants. The long, slow cooking of the onions is non-negotiable and utterly transformative, giving the stew a sweet, complex base that makes it far more than the sum of its parts. Served with torn injera — or warm flatbreads — for scooping, this is powerfully good food.",
+    emoji: "🍛",
+    image: "https://images.unsplash.com/photo-1610514000782-b205b70fbe71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxFdGhpb3BpYW4lMjBNaXNpciUyMFdvdCUyMCVFMiU4MCU5NCUyMFJlZCUyMExlbnRpbCUyMFN0ZXclMjB3aXRoJTIwQmVyYmVyZSUyQyUyMENhcmFtZWxpc2VkJTIwT25pb25zJTIwJTI2JTIwSW5qZXJhJTIwZm9vZCUyMGRpc2h8ZW58MHwwfHx8MTc4NTEyOTUxNHww&ixlib=rb-4.1.0&q=80&w=1080",
     ingredientGroups: [
-      { group: "Rough-Puff Pastry", items: [
-        { name: "Plain flour", quantity: 200, unit: "g" },
-        { name: "Cold unsalted butter, cut into 1cm cubes", quantity: 125, unit: "g" },
-        { name: "Fine salt", quantity: 0.5, unit: "tsp" },
-        { name: "Ice-cold water", quantity: 5, unit: "tbsp" }
-      ]},
-      { group: "Filling", items: [
-        { name: "Whole-milk ricotta", quantity: 250, unit: "g" },
-        { name: "Lemon zest", quantity: 1, unit: "tsp" },
-        { name: "Garlic clove, finely grated", quantity: 1, unit: "" },
-        { name: "Parmesan, finely grated", quantity: 30, unit: "g" },
-        { name: "Sea salt and black pepper", quantity: 1, unit: "to taste" }
-      ]},
-      { group: "Topping", items: [
-        { name: "Mixed cherry or vine tomatoes, halved", quantity: 350, unit: "g" },
-        { name: "Courgette, thinly sliced into rounds (3mm)", quantity: 2, unit: "medium" },
-        { name: "Olive oil", quantity: 3, unit: "tbsp" },
-        { name: "Fresh basil pesto (shop-bought or homemade)", quantity: 3, unit: "tbsp" },
-        { name: "Pine nuts", quantity: 30, unit: "g" }
-      ]},
-      { group: "To Finish", items: [
-        { name: "Egg, beaten (for egg wash)", quantity: 1, unit: "" },
-        { name: "Fresh basil leaves", quantity: 1, unit: "small handful" },
-        { name: "Flaky sea salt", quantity: 1, unit: "pinch" },
-        { name: "Extra virgin olive oil", quantity: 1, unit: "drizzle" }
-      ]}
+      {
+        group: "Stew Base",
+        items: [
+          { name: "Red split lentils, rinsed", quantity: 350, unit: "g" },
+          { name: "Red onions, very finely diced", quantity: 3, unit: "large" },
+          { name: "Coconut oil or vegetable oil", quantity: 4, unit: "tbsp" },
+          { name: "Garlic cloves, finely grated", quantity: 5, unit: "" },
+          { name: "Fresh ginger, finely grated", quantity: 2, unit: "tsp" },
+          { name: "Tomato purée", quantity: 2, unit: "tbsp" }
+        ]
+      },
+      {
+        group: "Berbere Spice Blend",
+        items: [
+          { name: "Berbere spice blend (shop-bought is excellent)", quantity: 3, unit: "tbsp" },
+          { name: "Ground turmeric", quantity: 0.5, unit: "tsp" },
+          { name: "Ground cumin", quantity: 1, unit: "tsp" },
+          { name: "Smoked paprika", quantity: 1, unit: "tsp" }
+        ]
+      },
+      {
+        group: "Liquid & Seasoning",
+        items: [
+          { name: "Vegetable stock", quantity: 800, unit: "ml" },
+          { name: "Flaky sea salt", quantity: 0, unit: "to taste" },
+          { name: "Squeeze of lemon juice", quantity: 1, unit: "" }
+        ]
+      },
+      {
+        group: "To Serve",
+        items: [
+          { name: "Injera flatbreads or warm wholemeal flatbreads", quantity: 4, unit: "" },
+          { name: "Fresh coriander leaves", quantity: 1, unit: "small bunch" },
+          { name: "Fresh green chilli, thinly sliced", quantity: 1, unit: "" },
+          { name: "Red onion, thinly sliced into rings, for garnish", quantity: 0.5, unit: "" }
+        ]
+      }
     ],
     substitutes: [
-      { ingredient: "Ricotta", alternatives: ["Soft goat\'s cheese", "Cream cheese loosened with a little milk"] },
-      { ingredient: "Courgette", alternatives: ["Yellow squash", "Thinly sliced fennel", "Asparagus cut into lengths"] },
-      { ingredient: "Basil pesto", alternatives: ["Rocket and walnut pesto", "Sun-dried tomato paste"] },
-      { ingredient: "Pine nuts", alternatives: ["Flaked almonds", "Roughly chopped walnuts", "Pumpkin seeds"] }
+      { ingredient: "Berbere spice blend", alternatives: ["Mix: 2 tsp smoked paprika + 1 tsp each cayenne, ground coriander, fenugreek, and allspice", "Ras el hanout (different but similarly complex)"] },
+      { ingredient: "Red split lentils", alternatives: ["Green lentils (add 10–15 minutes extra cooking time)", "Yellow split peas"] },
+      { ingredient: "Injera", alternatives: ["Warm wholemeal flatbreads", "Sourdough, torn into pieces for scooping"] }
     ],
     instructions: [
-      "Step 1 — Make the pastry: put the flour and salt into a large bowl. Add the cold butter cubes and toss to coat in flour. Using your fingertips, quickly flatten each piece of butter into a thin sheet — you want visible streaks and layers of butter, not a sandy breadcrumb texture like shortcrust. This is what creates flakiness. Drizzle in ice-cold water a tablespoon at a time, mixing with a fork until the dough just comes together. It will look rough and shaggy — that\'s correct. Wrap in cling film and refrigerate for at least 30 minutes.",
-      "Step 2 — Preheat your oven to 200°C (fan 180°C). Spread the halved tomatoes cut-side up on one half of a large lined baking tray, and the courgette rounds on the other. Drizzle everything with 2 tbsp olive oil, season generously with salt and pepper. Roast for 20–25 minutes until the tomatoes are collapsed and jammy and the courgette is golden at the edges. Set aside to cool slightly.",
-      "Step 3 — While the vegetables roast, mix the ricotta with the grated garlic, lemon zest, Parmesan, a generous pinch of salt, and plenty of black pepper. Taste — it should be well-seasoned and lively.",
-      "Step 4 — Toast the pine nuts in a dry pan over medium heat for 2–3 minutes, shaking frequently, until golden. Watch carefully — they go from golden to burnt quickly. Tip onto a plate and set aside.",
-      "Step 5 — On a sheet of lightly floured baking parchment, roll the chilled pastry out into a rough circle or oval, about 35cm across and 3–4mm thick. Don\'t stress about a perfect shape — rustic is the point. Slide the parchment (and pastry) onto a large baking tray.",
-      "Step 6 — Spread the ricotta mixture over the pastry, leaving a 4cm border all the way around. Dot the pesto in small spoonfuls over the ricotta and use the back of a spoon to swirl it gently — don\'t fully mix, you want pockets of green.",
-      "Step 7 — Arrange the roasted tomatoes and courgette over the ricotta in an overlapping, layered fashion — aim for something that looks abundant and naturally beautiful. Fold the pastry border up and over the edge of the filling, pleating as you go to form a rough crust. Press gently to hold the folds in place.",
-      "Step 8 — Brush the folded pastry border generously with the beaten egg. Bake for 30–35 minutes until the crust is deeply golden and the filling is set and bubbling at the edges.",
-      "Step 9 — Remove from the oven and immediately scatter over the toasted pine nuts and fresh basil leaves. Finish with a pinch of flaky sea salt and a drizzle of extra virgin olive oil. Allow to rest for 5 minutes before slicing — it\'s equally magnificent served warm or at room temperature."
+      "Step 1 — Caramelise the onions (don\'t rush this): Heat the oil in a large, heavy-based pot over medium-low heat. Add all the finely diced red onion with a large pinch of salt. Cook, stirring every few minutes, for 30–35 minutes until deeply caramelised, reduced to a jammy, almost paste-like consistency, and brick-coloured. This long cook is the flavour foundation of the entire dish — resist the urge to turn up the heat. Add a splash of water if they threaten to catch.",
+      "Step 2 — Build the spice base: Push the onions to the edges of the pot and add the grated garlic and ginger to the centre. Fry for 2 minutes until golden and fragrant. Add the tomato purée and stir everything together, cooking for another 2 minutes until the purée has darkened slightly and lost its raw smell.",
+      "Step 3 — Bloom the spices: Add the berbere, turmeric, cumin, and smoked paprika directly into the pot. Stir vigorously and cook the spices in the oil for 2 full minutes — you should smell them become fragrant and deepen in colour. This step is essential for eliminating any raw spice flavour.",
+      "Step 4 — Add lentils and stock: Tip in the rinsed red lentils and stir well to coat them in the spiced onion base. Pour over the vegetable stock, stir to combine, and bring to a boil. Skim any foam that rises to the surface in the first few minutes.",
+      "Step 5 — Simmer to a rich stew: Reduce the heat to low, partially cover, and cook for 25–30 minutes, stirring every 5–7 minutes to prevent sticking on the bottom. The lentils will completely dissolve into the stew, making it thick, glossy, and deeply coloured. If it becomes too thick, add a splash of boiling water and stir through. Taste and adjust salt generously — lentils absorb a lot.",
+      "Step 6 — Finish and serve: Stir in a good squeeze of lemon juice to brighten all the flavours. Ladle the misir wot into wide bowls or onto large plates lined with torn injera. Garnish with fresh coriander, sliced green chilli, and a few raw red onion rings for freshness and crunch. Serve with extra injera or flatbreads on the side for scooping."
     ]
   }
 ];

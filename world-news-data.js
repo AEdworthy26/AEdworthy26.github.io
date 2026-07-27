@@ -1,61 +1,61 @@
 // world-news-data.js
-// Auto-updated 2026-07-26 — do not edit manually
+// Auto-updated 2026-07-27 — do not edit manually
 
 var WORLD_NEWS = {
-  date: "2026-07-26",
+  date: "2026-07-27",
   main: {
-    title: "More Than 300,000 Flee as Wildfires Rage Across France and Spain",
-    category: "International",
+    title: "U.S. and Iran Pause Strikes for Second Straight Day as Ceasefire Talks Continue",
+    category: "Geopolitics",
     content: [
-      "A catastrophic wave of wildfires has swept across France and Spain, forcing more than 300,000 people to abandon their homes in one of the most dramatic mass evacuations Europe has seen in years. Spanish Prime Minister warned citizens of 'complex hours' ahead as firefighting crews battled blazes that were pushing dangerously close to the outskirts of Madrid. The scale and speed of the fires caught emergency services off guard, stretching resources thin across both countries simultaneously.",
-      "In France, authorities made clear that the situation near Bordeaux remained deeply serious, with officials stating they were far from bringing the blazes under control. The fires have torn through vast tracts of woodland and agricultural land, leaving behind scorched landscapes and devastated communities. Bordeaux, one of France\'s most celebrated wine regions and a city of significant cultural and economic importance, faces an unprecedented threat from the encroaching flames.",
-      "At least one person has died in the Spanish fires, according to officials, and the human toll is feared to rise as firefighters continue to grapple with rapidly shifting wind conditions that have made containment efforts extremely difficult. Emergency services from multiple regions have been deployed, and appeals for additional aerial firefighting support have been made across both nations. Thousands of residents have been relocated to emergency shelters, many having left their homes with little more than what they could carry.",
-      "The fires form part of a broader pattern of extreme heat and drought conditions that have increasingly afflicted southern and western Europe during summer months in recent years. Scientists and climate experts have long warned that the Mediterranean basin is one of the most vulnerable regions in the world to accelerating climate change, with higher temperatures and drier conditions dramatically increasing wildfire risk. This summer\'s events appear to be among the most severe on record for the region, compounding fears about the long-term habitability of affected areas during peak summer conditions.",
-      "Firefighters from across both nations were racing to establish containment lines, aided by aerial water-bombing aircraft, but gusty and unpredictable winds continued to frustrate those efforts throughout the day. Local and national governments have declared states of emergency in affected zones, and the European Union\'s civil protection mechanism has been activated to coordinate international assistance. As communities await news about whether they will be able to return to their properties, the fires serve as a stark and devastating reminder of the growing threat that climate-driven extreme weather events pose to European lives and livelihoods."
+      "The United States paused its attacks on Iran for a second consecutive day on Sunday, with Tehran confirming it had reciprocated the halt, marking a significant if fragile moment in what has been an active military confrontation between the two countries. Both sides appeared to be holding off on strikes as diplomatic efforts intensified to bring them back to the negotiating table over an interim ceasefire agreement. The twin pauses have offered a rare window of de-escalation in a conflict that has raised alarm across the international community.",
+      "According to American officials, President Trump\'s decision to delay plans to escalate the fighting was driven in part by a practical military constraint: dwindling stockpiles of interceptor missiles. This revelation underscores the significant logistical toll that sustained military engagement has taken on U.S. defence capabilities. The shortage adds a layer of urgency to the push for a negotiated pause, as continued high-intensity operations could leave American forces and allied assets more vulnerable.",
+      "Iran\'s confirmation that it too had halted strikes signals at least a tacit willingness on Tehran\'s part to explore a diplomatic off-ramp, even amid deep mutual suspicion. The dual pauses represent a departure from the cycle of strikes and counter-strikes that has defined recent weeks. Whether this reflects a genuine shift in strategic calculus or merely a temporary operational lull remains a matter of intense speculation among analysts.",
+      "Efforts to broker an interim ceasefire are understood to be ongoing, with intermediaries working to establish terms acceptable to both Washington and Tehran. An interim agreement would not resolve the underlying disputes — including Iran\'s nuclear programme and its regional activities — but could create conditions for longer-term negotiations. The stakes of failure are enormous, given the potential for the conflict to draw in other regional actors and further destabilise an already volatile Middle East.",
+      "The international community has been watching developments closely, with concern mounting over the humanitarian and economic consequences of a prolonged U.S.-Iran war. A second day of restraint has provided a modest but meaningful basis for cautious optimism, though observers caution that the situation remains highly volatile. All eyes are now on whether the pause holds long enough for diplomatic channels to produce a framework that can bring a more durable halt to the fighting."
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/8783/live/30d9e7b0-880f-11f1-afbe-b9a38c21b1d6.jpg",
-    source: "BBC News",
-    sourceUrl: "https://www.bbc.co.uk/news/articles/cd7le0d53y2o?at_medium=RSS&at_campaign=rss"
+    image: "https://static01.nyt.com/images/2026/07/26/multimedia/26int-Iran-War-gpvc/26int-Iran-War-gpvc-mediumSquareAt3X.jpg",
+    source: "NPR",
+    sourceUrl: "https://www.npr.org/2026/07/26/g-s1-135593/us-pauses-attacks-iran-second-day-tehran"
   },
   secondary: [
     {
       id: "s1",
-      title: "Houthis Fire at Saudi Oil Facilities as US-Iran Conflict Escalates",
-      summary: "Iran-backed Houthi forces have claimed a missile attack on Saudi Arabian oil facilities, while the US military disabled a tanker attempting to break America\'s blockade on Iranian ports.",
+      title: "Berlin Pride Attack Suspect Shot Dead by Police After Knife Charge",
+      summary: "The suspect in a car-ramming attack on a Berlin Pride crowd has been shot and killed by police after rushing at officers with a knife.",
       body: [
-        "The conflict surrounding the US-Iran confrontation opened a significant new front as Houthi forces, backed by Tehran, launched missile strikes targeting Saudi oil facilities, dramatically widening the scope of hostilities in the region. Simultaneously, the US military released footage showing its forces boarding a tanker it accused of attempting to evade the American blockade imposed on Iranian ports.",
-        "The escalation also spread to the Caspian Sea, where Tehran accused Ukraine of carrying out a deadly attack on an Iranian commercial vessel, prompting Iran to summon the Ukrainian diplomat in Tehran in a formal diplomatic protest. The rapidly expanding theatre of conflict raises serious concerns about regional stability and the security of global energy supplies."
+        "Abdul Ballout, the man suspected of driving a vehicle into a crowd near Tiergarten park during Berlin Pride celebrations, was shot and killed by police in a western borough of Berlin after he charged at officers armed with a knife. German Chancellor Friedrich Merz had already condemned the original ramming attack as 'heinous', and authorities described the incident as a likely act of Islamist terrorism. The killing of the suspect during the manhunt brings a dramatic end to a large-scale police operation that gripped the German capital.",
+        "The attack sent shockwaves through Germany and across Europe, coming during one of the city\'s most prominent LGBTQ+ events and reigniting debate about public security at large gatherings. The incident underscores the persistent threat of vehicle-ramming attacks at crowded public events, a tactic that has been used in several high-profile terrorist incidents across Europe in recent years."
       ],
-      image: "https://images.pexels.com/photos/36869052/pexels-photo-36869052.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      source: "Al Jazeera",
-      url: "https://www.aljazeera.com/news/2026/7/26/new-front-in-us-iran-war-escalates-as-houthis-fire-at-saudi-oil-facilities?traffic_source=rss",
-      category: "Conflict"
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/ece8/live/8c522e20-8924-11f1-b2ab-0dd01740f9f6.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.co.uk/news/articles/c62eg899l99o?at_medium=RSS&at_campaign=rss",
+      category: "Security"
     },
     {
       id: "s2",
-      title: "India\'s Education Minister Quits as 'Cockroach' Youth Movement Claims Victory",
-      summary: "India\'s education minister has resigned following weeks of sustained protests by the Cockroach Janta Party, a Gen-Z-led movement described as the most significant public challenge to Prime Minister Narendra Modi in his twelve years in power.",
+      title: "Wildfires Force Over 330,000 to Flee in France and Spain",
+      summary: "More than 330,000 people have been evacuated as extreme heat and strong winds fuel devastating wildfires sweeping across southwestern France and parts of Spain.",
       body: [
-        "The CJP protest movement, which took its provocative name as a badge of defiance, succeeded in ousting the education minister after mobilising young people across India in demonstrations that rattled the ruling establishment. The resignation marks a tangible political victory for the movement, which has channelled deep-seated frustration among Indian youth over education policy and broader governance concerns.",
-        "Despite the minister\'s departure, analysts caution that the underlying anger driving the movement remains far from resolved, and questions linger about whether Prime Minister Modi\'s government can adequately address the grievances of a generation that has grown increasingly vocal in its discontent. The protests represent perhaps the most visible and sustained expression of public opposition Modi has faced during his long tenure in office."
+        "Firefighters are battling a series of major wildfires near Bordeaux and across the border into Spain, with over 330,000 people forced to flee their homes in one of the largest mass evacuations seen in Western Europe in recent years. Extreme heat combined with powerful winds has created treacherous conditions, hampering efforts to contain the blazes and sparking fears that a new heat wave forecast to hit the region could make the situation significantly worse. The final stage of the 2026 Tour de France was even shortened as security and police resources were redirected to assist with the emergency.",
+        "The scale of the disaster has prompted urgent cross-border coordination between French and Spanish authorities, with international firefighting assets being deployed to bolster overstretched local services. The crisis has once again brought Europe\'s vulnerability to climate-driven extreme weather events into sharp focus, with scientists warning that such conditions are becoming more frequent and more intense as global temperatures rise."
       ],
-      image: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxJbmRpYSU1Q3xlbnwwfDB8fHwxNzg1MDQyMTA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "NPR",
-      url: "https://www.npr.org/2026/07/25/g-s1-135483/india-cockroach-movement",
-      category: "Politics"
+      image: "https://static01.nyt.com/images/2026/07/26/multimedia/26euro-fire-400-bqcm/26euro-fire-400-bqcm-mediumSquareAt3X.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.co.uk/news/articles/clyj8k4nn5jo?at_medium=RSS&at_campaign=rss",
+      category: "Climate"
     },
     {
       id: "s3",
-      title: "One Dead After Vehicle Ploughs Into Crowd at Berlin Pride Event",
-      summary: "A vehicle attack at a Berlin Pride event has left one person dead and several others injured, with police identifying a suspect known to authorities and linked to Islamist circles.",
+      title: "Sudan\'s Army Claims Control of Key Highway Linking Khartoum to El Obeid",
+      summary: "Sudan\'s military says it has regained full control of the Al Sadarat highway, a strategically vital route connecting Khartoum to El Obeid in North Kordofan.",
       body: [
-        "Berlin police confirmed that a vehicle was deliberately driven into a crowd attending a Pride event in the German capital, killing at least one person and injuring several others in an attack that has shocked the city and drawn widespread condemnation. Authorities moved quickly to identify a suspect, describing the individual as someone already known to police with connections to Islamist networks.",
-        "The attack is likely to intensify debate across Germany and Europe about security at large public gatherings and the threat posed by radicalised individuals targeting LGBTQ+ events and communities. German officials were expected to make further statements as the investigation into the circumstances and motivations behind the attack continued."
+        "Sudan\'s armed forces announced they have seized control of the Al Sadarat highway, a major artery linking the capital Khartoum to El Obeid, in a move designed to block the Rapid Support Forces from advancing on the North Kordofan city. The recapture of the route represents a significant tactical development in the ongoing civil conflict, which has caused one of the world\'s worst humanitarian crises. Control of the highway is seen as crucial to the army\'s efforts to consolidate its hold on key population centres outside the capital.",
+        "The conflict between Sudan\'s military and the RSF has raged for well over a year, devastating large parts of the country and displacing millions of people. The army\'s latest claimed advance, if consolidated, could reshape the battlefield in North Kordofan and complicate RSF supply lines, though observers caution that ground situations in Sudan can shift rapidly."
       ],
-      image: "https://images.unsplash.com/photo-1593728741872-adfaf9d9b06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxPbmUlMjBEZWFkJTIwQWZ0ZXIlMjBWZWhpY2xlJTIwUGxvdWdocyUyMEludG8lMjBDcm93ZCUyMGF0JTIwQmVybGluJTIwUHJpZGUlMjBFdmVudHxlbnwwfDB8fHwxNzg1MDQyMTA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "NPR",
-      url: "https://www.npr.org/2026/07/25/nx-s1-5907997/germany-lgbtq-event-dead-injured-pride",
-      category: "Security"
+      image: "https://images.unsplash.com/photo-1535253868107-da56da1693db?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTdWRhbiU1Q3xlbnwwfDB8fHwxNzg1MTI4NTAwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "Al Jazeera",
+      url: "https://www.aljazeera.com/news/2026/7/27/sudans-army-claims-control-of-major-highway-linking-khartoum-and-el-obeid?traffic_source=rss",
+      category: "Conflict"
     }
   ]
 };

@@ -1,58 +1,58 @@
 // us-politics-news-data.js
-// Auto-updated 2026-07-26 — do not edit manually
+// Auto-updated 2026-07-27 — do not edit manually
 
 var US_POLITICS_NEWS = {
-  date: "2026-07-26",
+  date: "2026-07-27",
   main: {
-    title: "Appeals Court Upholds Blocks on Trump Order Restricting Mail Voting",
+    title: "Republicans See 'Scary' Lack of Enthusiasm Among Core Voters Ahead of Midterms",
     category: "Politics",
     content: [
-      "A federal appeals court on Saturday dealt a significant blow to the Trump administration\'s efforts to tighten restrictions on mail-in voting, upholding an injunction that blocks key parts of the president\'s executive order from taking effect. The 1st U.S. Circuit of Appeals declined to lift a lower-court injunction issued in June, ruling that the administration had not demonstrated sufficient grounds to override the earlier decision. The ruling arrives at a particularly consequential moment, with midterm elections approaching and control of both the House and Senate hanging in the balance.",
-      "The decision represents the latest in a series of judicial rebukes to President Trump\'s sustained campaign against mail-in voting, an issue he has championed since his first term in office. Trump and his allies have repeatedly argued that mail voting is susceptible to fraud and manipulation, claims that courts have largely declined to accept as justification for sweeping restrictions. The administration\'s order had sought to impose stricter identification and verification requirements on voters who cast ballots by mail.",
-      "Critics of the executive order, including voting rights organizations and Democratic officials, argued that the restrictions would disproportionately disenfranchise elderly, disabled, and low-income voters who depend on mail ballots to participate in elections. The lower court found in June that those concerns were credible enough to warrant blocking the order while legal challenges proceeded, and the appeals court has now affirmed that reasoning. Opponents of the measure characterized Saturday\'s ruling as a major victory for election access ahead of a highly competitive midterm cycle.",
-      "The Trump administration has signaled that it is not prepared to accept the ruling as the final word on the matter, indicating it may seek to escalate the case to the Supreme Court. Such a move would set up a potentially landmark showdown over voting rights at the nation\'s highest court, with justices appointed by Republican presidents holding a strong majority. Legal analysts noted that the administration faces a steep challenge in persuading the Supreme Court to intervene before the midterms, given the compressed timeline and the weight of two lower court rulings against them.",
-      "The mail voting dispute is unfolding against a broader backdrop of intense political competition as both parties maneuver ahead of November\'s elections. With the Senate landscape featuring competitive races in states like Maine and Michigan, the rules governing how Americans cast their ballots could have tangible consequences for which party emerges with congressional control. Saturday\'s ruling ensures that, at least for now, existing mail voting access remains intact — though the administration\'s promised Supreme Court appeal means the legal battle is far from over."
+      "With just 100 days until the 2026 midterm elections, Republican pollsters and party strategists are sounding the alarm about a striking and potentially damaging enthusiasm gap among the GOP\'s core voter base. Internal polling and focus group data have prompted senior figures within the party to describe the situation in stark terms, with some using the word 'scary' to characterize the unmotivated mood they are encountering among voters who would normally be reliable Republican supporters. The warning signs are emerging at a particularly precarious moment, as the political environment was already expected to be challenging for the party in power.",
+      "Historically, midterm elections tend to favor the party out of power, as opposition voters are typically more energized to express frustration with the sitting president. That traditional dynamic is compounding the Republican enthusiasm problem, given that President Trump\'s approval ratings have remained persistently low. Pollsters working for GOP-aligned groups say that even in districts and states that lean reliably red, they are finding voters who seem disengaged, fatigued, or disillusioned — a troubling combination heading into a competitive election cycle.",
+      "The ongoing war with Iran is widely seen as a contributing factor to the base\'s deflated mood. What was initially presented as a decisive show of American strength has stretched into a prolonged and costly conflict, and the human and financial toll appears to be weighing on voters across the political spectrum. Republican strategists acknowledge that the war, rather than rallying the base around a patriotic cause as some had hoped, has instead introduced uncertainty and anxiety that is difficult to convert into electoral enthusiasm.",
+      "Economic concerns are also playing a significant role in suppressing Republican voter motivation. House Democratic Leader Hakeem Jeffries has been aggressively targeting issues of affordability — groceries, gas, and housing costs — as he kicks off the Democrats' 100-day campaign sprint, and Republican operatives worry that their party lacks a compelling counter-narrative on kitchen-table economic issues. When voters feel financially squeezed and uncertain about an ongoing foreign war, the incumbent party faces an uphill battle in generating the kind of grassroots energy needed to turn out supporters on Election Day.",
+      "The Republican Party\'s challenge is further illustrated by competitive Senate races taking shape across the country, including in Maine, where Democrats have now coalesced behind a new candidate following an earlier scandal, and in Iowa, where Democrats are mounting an aggressive campaign to flip an open seat. GOP strategists are racing to develop messaging and mobilization strategies that can cut through voter apathy before November, but with structural headwinds, a difficult map, and a base that party insiders themselves describe as alarmingly unmotivated, the path to maintaining congressional control is becoming increasingly narrow."
     ],
-    image: "https://static01.nyt.com/images/2026/07/25/multimedia/25dc-mail-ballots-gzwk/25dc-mail-ballots-gzwk-mediumSquareAt3X.jpg",
-    source: "The New York Times",
-    sourceUrl: "https://www.nytimes.com/2026/07/25/us/politics/appeals-court-trump-mail-voting.html"
+    image: "https://images.unsplash.com/photo-1641945512731-c0d1b3f82f84?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxSZXB1YmxpY2FucyUyMFNlZSUyMHxlbnwwfDB8fHwxNzg1MTI4NjAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    source: "The Washington Post",
+    sourceUrl: "https://www.washingtonpost.com/politics/2026/07/26/republican-enthusiasm-problem-hits-even-core-voters/"
   },
   secondary: [
     {
       id: "us1",
-      title: "Democrats Formally Nominate Troy Jackson in Maine Senate Race After Platner Debacle",
-      summary: "Maine Democrats have chosen progressive former State Senate president Troy Jackson as their nominee to challenge incumbent Republican Sen. Susan Collins in November.",
+      title: "Maine Democrats Pick Troy Jackson as New Senate Nominee to Face Susan Collins",
+      summary: "Maine Democrats have selected former state lawmaker Troy Jackson as their Senate candidate after the scandal-plagued Graham Platner stepped aside, setting up a November matchup against Republican incumbent Sen. Susan Collins.",
       body: [
-        "At a hastily arranged state party convention, Maine Democrats nominated Troy Jackson to replace scandal-plagued Graham Platner as their candidate in the closely watched U.S. Senate race. Jackson, a former State Senate president known for his economic populist message, was seen as well-positioned to carry forward the grassroots energy that had initially propelled Platner\'s campaign before it collapsed under the weight of controversy.",
-        "The selection of Jackson reflects Democrats' urgent need to stabilize a race they had hoped would give them a shot at unseating Collins, one of the Senate\'s most prominent moderate Republicans. By choosing a candidate with ideological continuity but without Platner\'s baggage, the party is betting it can quickly reunite its base and mount a credible challenge heading into the fall."
+        "Troy Jackson secured the Democratic nomination by stepping into the void left by Graham Platner, whose candidacy collapsed amid controversy, and quickly consolidated the progressive energy that had fueled Platner\'s earlier rise in the race. Jackson, a former state lawmaker, will now carry the Democratic banner in what is expected to be one of the more closely watched Senate contests of the 2026 cycle.",
+        "Sen. Susan Collins, the Republican incumbent, has long been considered one of the more politically durable figures in the Senate, having survived competitive races before, but Democrats believe the current political climate and a unified candidate could make this race genuinely competitive in a midterm environment that is already trending against the GOP."
       ],
-      image: "https://static01.nyt.com/images/2026/07/25/multimedia/25pol-maine-senate-hfo-zqkp/25pol-maine-senate-hfo-zqkp-mediumSquareAt3X.jpg",
-      source: "NPR",
-      url: "https://www.npr.org/2026/07/25/nx-s1-5902982/democrats-maine-senate-race",
+      image: "https://images.pexels.com/photos/7103192/pexels-photo-7103192.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      source: "The Washington Post",
+      url: "https://www.washingtonpost.com/politics/2026/07/25/democrats-pick-new-senate-candidate-maine-aftermath-platner-debacle/",
       category: "Politics"
     },
     {
       id: "us2",
-      title: "Trump Orders Smithsonian to Post Warnings About 'Inaccurate' US History",
-      summary: "The Trump administration has directed the Smithsonian Institution to place warnings on exhibits it deems to contain an anti-American bias or historically inaccurate narratives.",
+      title: "Hakeem Jeffries Launches 100-Day Midterm Sprint Focused on Affordability",
+      summary: "House Democratic Leader Hakeem Jeffries kicked off the final 100-day push to the midterms on Sunday, centering his party\'s message on lowering the cost of groceries, gas, and housing if Democrats retake control of Congress.",
       body: [
-        "President Trump signed an order requiring the Smithsonian — the world\'s largest research museum complex — to affix warning labels to exhibits that the administration has accused of presenting a distorted or anti-American version of United States history. The move is the latest in a series of steps the administration has taken to reshape how public institutions present American history and culture.",
-        "The Trump administration has repeatedly targeted the Smithsonian as a symbol of what it describes as a liberal cultural establishment hostile to traditional American values. Critics condemned the directive as government interference in scholarly and curatorial independence, warning that it sets a troubling precedent for political control over publicly funded educational institutions."
+        "Jeffries used the symbolic 100-day marker before Election Day to draw a sharp contrast with Republican governance, arguing that a Democratic-controlled Congress would take direct action on the economic pressures that American families are facing daily. His pitch focused heavily on concrete, tangible issues — the cost of food, fuel, and shelter — rather than broader ideological themes.",
+        "The strategic emphasis on affordability reflects Democratic polling that shows economic anxiety as a dominant concern for swing voters, and the party believes it can make a credible case that Republican-led governance has failed to deliver relief on those core issues in the current political environment."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/2ada/live/69a18890-87cf-11f1-b948-61d0d1524256.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.co.uk/news/articles/c1w10gwnj74o?at_medium=RSS&at_campaign=rss",
+      image: "https://thehill.com/wp-content/uploads/sites/2/2026/07/jeffrieshakeem_072326nk03_w.jpg?w=900",
+      source: "The Hill",
+      url: "https://thehill.com/homenews/campaign/5991507-jeffries-target-gop-control/",
       category: "Politics"
     },
     {
       id: "us3",
-      title: "Biden Ghostwriter Tapes to Be Released After Former President Drops Appeal",
-      summary: "Former President Joe Biden has decided not to appeal a court ruling that will allow the Justice Department to make public recordings of his conversations with the writer of his memoir.",
+      title: "Biden Ghostwriter Tapes Set to Be Released After Former President Declines to Appeal",
+      summary: "Former President Joe Biden has decided not to appeal a court ruling that will allow the Justice Department to release recordings of conversations he held with a writer who collaborated on his memoir.",
       body: [
-        "Joe Biden is declining to challenge a court decision that clears the way for the Justice Department to release audio recordings made during sessions with his ghostwriter, in which he discussed his time in office and other personal matters. The tapes had been a subject of legal contention, with the original recordings drawing scrutiny during debates over Biden\'s mental acuity while he was still in office.",
-        "The decision to let the ruling stand means the recordings could soon become part of the public record, potentially reigniting political debate over Biden\'s fitness during his presidency and his decision to seek re-election before ultimately withdrawing from the 2024 race. The release is likely to draw significant attention from both political allies and opponents as they relitigate the final chapter of the Biden presidency."
+        "The decision by Biden not to contest the ruling clears the way for the Justice Department to make the recordings public, a development that could shed new light on conversations Biden had while preparing his memoir and potentially reignite political debate about his tenure and the circumstances surrounding key decisions made during his presidency. The tapes have been the subject of legal wrangling over their potential public release.",
+        "The release of the recordings is likely to attract significant political attention, given the ongoing interest from Trump administration officials and Republican lawmakers who have sought to scrutinize Biden\'s fitness and conduct during his time in office, making the tapes a potentially consequential document in the broader political landscape heading into the midterms."
       ],
-      image: "https://images.unsplash.com/photo-1604905283865-20432280a3ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxCaWRlbiUyMEdob3N0d3JpdGVyJTIwVGFwZXMlMjB0byUyMEJlJTIwUmVsZWFzZWQlMjBBZnRlciUyMEZvcm1lciUyMFByZXNpZGVudCUyMERyb3BzJTIwQXBwZWFsfGVufDB8MHx8fDE3ODUwNDIyMDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      image: "https://images.unsplash.com/photo-1604905283865-20432280a3ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxCaWRlbiUyMEdob3N0d3JpdGVyJTIwVGFwZXMlMjBTZXQlMjB0byUyMEJlJTIwUmVsZWFzZWQlMjBBZnRlciUyMEZvcm1lciUyMFByZXNpZGVudCUyMERlY2xpbmVzJTIwdG8lMjBBcHBlYWx8ZW58MHwwfHx8MTc4NTEyODYwM3ww&ixlib=rb-4.1.0&q=80&w=1080",
       source: "NPR",
       url: "https://www.npr.org/2026/07/25/nx-s1-5906749/biden-ghostwriter-tapes-justice-department-trump-debate",
       category: "Politics"

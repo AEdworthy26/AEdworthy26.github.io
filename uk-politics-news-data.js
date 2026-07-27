@@ -1,60 +1,60 @@
 // uk-politics-news-data.js
-// Auto-updated 2026-07-26 — do not edit manually
+// Auto-updated 2026-07-27 — do not edit manually
 
 var UK_POLITICS_NEWS = {
-  date: "2026-07-26",
+  date: "2026-07-27",
   main: {
-    title: "Burnham to Address Social Care, Youth Unemployment and Devolution in Bold First-Week Agenda",
+    title: "Andy Burnham Rules Out Early Election and Pledges to Honour Labour Manifesto",
     category: "Politics",
     content: [
-      "Andy Burnham has used his first week as Prime Minister to set out an ambitious domestic agenda, with No 10 sources confirming he will tackle three of Britain\'s most entrenched policy challenges: social care, youth unemployment, and the further devolution of powers away from Westminster. Downing Street described the flurry of early announcements as a deliberate attempt to show that the new prime minister is 'hitting the ground running', signalling that Burnham intends his administration to be defined by action rather than consultation. The speed and breadth of the agenda has surprised some observers, who expected a more cautious opening period from a leader still assembling his governing team.",
-      "Social care has long been regarded as one of the most politically toxic issues in British public life, with successive governments promising reform and then retreating when confronted with the costs involved. Burnham, who made his name championing integrated health and social care during his time as Mayor of Greater Manchester, is expected to bring a distinctive personal conviction to the issue that few of his predecessors could claim. Opposition parties have already moved to challenge him on the financial implications, demanding to know where the funding will come from and warning against what they have called 'unfunded spending commitments'.",
-      "Youth unemployment is the second pillar of what Burnham\'s team is billing as a first-week reset of national priorities. The issue has particular resonance for a prime minister whose political identity is rooted in northern England, where youth joblessness has historically run above the national average. Aides say Burnham views expanding economic opportunity for young people not merely as a social good but as a fiscal necessity, arguing that the long-term cost of inaction far outweighs the investment required to bring disengaged young people into work and training.",
-      "Devolution represents perhaps the most structurally significant element of the agenda, and the one most directly tied to Burnham\'s own political biography. Having spent years arguing that power concentrated in Whitehall produces worse outcomes than decisions taken closer to communities, the new prime minister is expected to use his platform to accelerate the transfer of meaningful authority to English regions, as well as to engage constructively with the devolved governments in Scotland, Wales, and Northern Ireland. The opening of No 10 North in Manchester — where Burnham has already hosted his first ministerial meetings — has been widely read as a symbolic statement of intent about the geographic redistribution of political gravity.",
-      "Political analysts have noted that the breadth of the first-week agenda carries both opportunity and risk for the fledgling administration. Moving quickly on multiple fronts can project confidence and momentum, but it also raises expectations that may prove difficult to meet when the harder legislative and fiscal work begins. BBC political editor Chris Mason has observed that the Burnham administration is simultaneously trying to find its feet and make a strong first impression, a balance that will require careful management as scrutiny from Parliament, the press, and the public intensifies in the weeks ahead."
+      "Prime Minister Andy Burnham has firmly ruled out calling an early general election, telling the BBC in an exclusive interview that he intends to honour the manifesto on which Labour was elected. Speaking to Laura Kuenssberg, Burnham was unequivocal in his position, stating that voters had cast their ballots for a specific set of commitments and that it was his duty to deliver on them. The interview marked one of the new prime minister\'s most significant media appearances since taking office, giving the public a clearer sense of his governing style and priorities.",
+      "Burnham\'s insistence on sticking to the manifesto reflects a deliberate effort to project stability and continuity at the outset of his premiership. Having succeeded Keir Starmer, Burnham is acutely aware of the need to reassure both the Labour parliamentary party and the wider electorate that his government will not be distracted by internal party turbulence or opportunistic electoral calculation. Ruling out an early election removes one source of uncertainty that had been circulating in Westminster since he took the top job.",
+      "The prime minister also addressed the question of Britain\'s relationship with the United States and President Trump, saying he was prepared to call out the US president if it was 'right for Britain'. Burnham characterised his first conversation with Trump as good, while making clear that the fundamental obligation of any British prime minister is to defend the national interest. This balanced tone — cordial but assertive — appears designed to reassure allies at home and abroad that the UK will not simply defer to Washington.",
+      "Separately, Burnham has been confronted with a series of pressing domestic challenges in the opening days of his premiership, from questions about fiscal policy to social care reform. His position on fiscal rules has also been underscored, with reports confirming he intends to stick to the spending constraints inherited from his predecessor. These early signals suggest a prime minister intent on establishing credibility with financial markets and voters alike before making any bold new commitments.",
+      "The wide-ranging BBC interview is likely to set the political agenda in Westminster for the coming days, with opposition parties and commentators parsing every detail of Burnham\'s stated positions. Conservative leader Kemi Badenoch is already seeking to put pressure on the new government, particularly over tax rises and social care funding. With a by-election in Clacton also looming and a host of major policy questions unresolved, Burnham\'s early days in office are proving to be anything but quiet."
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/b4c3/live/bb58c200-8830-11f1-bc76-7fa6f858478c.jpg",
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/580c/live/d4fb7700-885a-11f1-b2ab-0dd01740f9f6.jpg",
     source: "BBC News",
-    sourceUrl: "https://www.bbc.co.uk/news/articles/cwylnl17w09o?at_medium=RSS&at_campaign=rss"
+    sourceUrl: "https://www.bbc.co.uk/news/videos/c935kzyq6r4o?at_medium=RSS&at_campaign=rss"
   },
   secondary: [
     {
       id: "uk1",
-      title: "Police Investigate £500,000 in Donations to Reform UK Linked to Richard Tice Company",
-      summary: "Scotland Yard is investigating two £250,000 donations made to Reform UK by a company controlled by deputy leader Richard Tice before the 2024 general election.",
+      title: "Badenoch Challenges Burnham to Rule Out Tax Rises for Social Care Reform",
+      summary: "Conservative leader Kemi Badenoch has written to the Prime Minister demanding he rule out tax increases to fund any overhaul of adult social care.",
       body: [
-        "The Metropolitan Police has opened an investigation into payments totalling £500,000 made to Reform UK by a company called Britain Means Business, which is controlled by the party\'s deputy leader Richard Tice. The donations, which were first revealed by The Guardian, were made in the run-up to the 2024 general election and are now the subject of formal police scrutiny.",
-        "The inquiry adds to the legal and reputational pressures bearing down on Reform UK at a critical moment for the party. The involvement of Scotland Yard signals that investigators believe there are grounds to examine whether the donations complied with electoral law, which places strict requirements on the source and declaration of political funding."
+        "In an open letter to Andy Burnham, Kemi Badenoch said the Conservative Party was willing to work with the government on reforming adult social care, but only if the Prime Minister commits to ruling out further tax rises to pay for it. The letter sets up a significant early confrontation between the new administration and the opposition on one of the most politically sensitive domestic policy areas. Social care reform has long been described as a generational challenge, with high costs often forcing individuals to sell their homes to fund their own care.",
+        "Badenoch\'s move is a calculated attempt to draw Burnham into a difficult political bind, forcing him to either reassure voters by ruling out tax increases or keep open the option of raising revenue — either of which carries significant political risk. The offer of cross-party cooperation, however conditional, also positions the Conservatives as constructive rather than simply obstructionist in the early weeks of the new government."
       ],
-      image: "https://static.independent.co.uk/2026/07/15/12/01KXJRR6DQ4N70JKEXSHCZGQZY.jpg?width=1200&auto=webp&trim=0%2C210%2C0%2C210",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/politics/2026/jul/25/police-investigate-payments-reform-uk-guardian",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/ea46/live/ade66450-8912-11f1-bd73-9dd00d6a13bb.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.co.uk/news/articles/c0jlzqe9z9vo?at_medium=RSS&at_campaign=rss",
       category: "Politics"
     },
     {
       id: "uk2",
-      title: "Existing Care Workers Could Be Exempt from UK\'s Tougher New Immigration Rules",
-      summary: "Andy Burnham is considering exempting hundreds of thousands of care workers already in the UK from stricter right-to-remain rules being planned by the Home Secretary.",
+      title: "Chinook Crash Victims' Families Urge Burnham to Order Independent Review",
+      summary: "Relatives of the 29 military personnel killed in the 1994 RAF Chinook crash on the Mull of Kintyre have called on the new Prime Minister to end Britain\'s 'cover-up culture' and commission a fresh independent review.",
       body: [
-        "Hundreds of thousands of overseas care workers currently employed in the UK could be shielded from tougher immigration rules under proposals being actively considered by Prime Minister Andy Burnham, according to an exclusive report by The Guardian. The move would see people already working in the sector waived through under existing arrangements even as the Home Secretary moves to tighten the broader immigration system.",
-        "The proposal reflects the acute tension at the heart of the government\'s approach to immigration and public services, with Burnham seeking to reduce overall migration numbers while simultaneously preventing a collapse in social care staffing. The care sector has warned repeatedly that without overseas workers it cannot meet the demands placed upon it, making some form of exemption politically and practically difficult to avoid."
+        "The families of those who died when an RAF Chinook HC2 helicopter crashed in Scotland more than three decades ago have written to Andy Burnham, urging him to order an independent review that would take into account evidence that has emerged since the original investigation. The cause of the crash, which killed 29 serving military personnel, has never been definitively established, and families say successive governments have failed to provide answers. They are now appealing to the new prime minister to make good on any commitment to greater government transparency.",
+        "The case has become something of a cause célèbre in British military and political circles, with campaigners arguing that the official handling of the disaster exemplifies a broader institutional tendency to protect reputations over truth. With Burnham having positioned himself as a reforming prime minister willing to challenge establishment norms, the families' appeal carries particular resonance and will test his stated commitment to openness early in his tenure."
       ],
-      image: "https://i.guim.co.uk/img/media/277b276bbf7a4fc4a9b3231714c423161b8e2de0/1144_63_5470_4376/master/5470.jpg?width=1200&quality=85&auto=format&fit=max&s=45149356f5753caf1638ff1723d10a0d",
+      image: "https://images.unsplash.com/photo-1728963870269-3587a9298c88?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxDaGlub29rJTIwQ3Jhc2glMjBWaWN0aW1zfGVufDB8MHx8fDE3ODUxMjg1NTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       source: "The Guardian",
-      url: "https://www.theguardian.com/society/2026/jul/24/care-workers-exempt-uk-new-immigration-rules",
+      url: "https://www.theguardian.com/uk-news/2026/jul/27/raf-chinook-crash-victims-families-ask-andy-burnham-fresh-review",
       category: "Politics"
     },
     {
       id: "uk3",
-      title: "Prison Staff Asked to Flag Unrest Risk as Early Release Delays Cause Tension",
-      summary: "The government has requested that prison staff report any signs of instability inside jails after delays to prisoners' early release dates created uncertainty across the estate.",
+      title: "Heathrow Expansion Would Cost Thousands of Jobs in Other UK Regions, Report Warns",
+      summary: "A Department for Transport economic paper has found that expanding Heathrow airport with a third runway could strip nearly 10,000 jobs from the West Midlands alone and reduce passenger numbers at airports across England and Wales.",
       body: [
-        "Ministers have asked prison staff to alert them to any 'stability issues' emerging inside jails, Sky News understands, after delays to early release dates left prisoners and staff in a state of uncertainty. The request reflects government concern that the administrative backlog could fuel frustration and potentially trigger disorder within the prison estate.",
-        "The situation highlights the ongoing pressures on England and Wales\'s overcrowded prison system, which has required emergency measures — including early release schemes — to manage capacity. Any fresh unrest would represent an early and unwelcome test for the Burnham administration, which has inherited a penal system operating close to its limits."
+        "An analysis of the government\'s own economic forecasts reveals that proceeding with a third runway at Heathrow would have significant negative consequences for airports and regional economies across the UK, with the West Midlands among the hardest hit areas. The Department for Transport paper shows that millions of passengers could be diverted away from regional airports if Heathrow\'s expansion goes ahead, undermining the levelling-up agenda that successive governments have championed. The findings are likely to intensify political opposition to the expansion from MPs representing constituencies outside London and the South East.",
+        "The report adds a new dimension to one of British politics' longest-running infrastructure debates, raising questions about whether the economic benefits of Heathrow expansion are as broadly distributed as proponents claim. With the Burnham government still formulating its position on major infrastructure projects, the publication of these figures could prove a significant obstacle to securing parliamentary and public support for the scheme."
       ],
-      image: "https://e3.365dm.com/26/05/1920x1080/skynews-prison-building_7247663.jpg?20260724154522",
-      source: "Sky News",
-      url: "https://news.sky.com/story/prison-staff-asked-to-warn-of-any-prison-unrest-due-to-delays-in-releases-13566657",
+      image: "https://i.guim.co.uk/img/media/b2a9fb1f823e2554e568151622843ab6b2b247a0/500_0_5000_4000/master/5000.jpg?width=1200&quality=85&auto=format&fit=max&s=1bbe2a86fad430226955fd7a5709c46c",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/environment/2026/jul/27/heathrow-expansion-would-take-jobs-from-other-uk-regions-third-runway",
       category: "Politics"
     }
   ]
