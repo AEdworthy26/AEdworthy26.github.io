@@ -1,19 +1,19 @@
 // reads-data.js
-// Auto-updated 2026-07-27 — do not edit manually
+// Auto-updated 2026-07-28 — do not edit manually
 
 var READS_DATA = {
-  date: "2026-07-27",
+  date: "2026-07-28",
   book: {
-    title: "The Hare with Amber Eyes: A Hidden Inheritance",
-    author: "Edmund de Waal",
-    year: 2010,
-    genres: ["Memoir", "Art", "Family History"],
-    desc: "Edmund de Waal, a celebrated ceramicist, inherited a collection of 264 tiny Japanese netsuke from his great-uncle and set out to trace their extraordinary journey through five generations of the Ephrussi family — from a Parisian dandy\'s cabinet in the 1870s to a Viennese palace, through the catastrophe of Nazi occupation, and finally to a quiet house in Tokyo. The book is as much a meditation on objects, beauty, and memory as it is a family saga, written with the precision and sensitivity you\'d expect from someone who works with his hands and thinks deeply about what things mean. De Waal moves through fin-de-siècle Paris, imperial Vienna, and postwar Japan with equal assurance, evoking each world so vividly that the book reads almost like literary fiction. It won the Costa Biography Award and has been quietly beloved by readers across every kind of taste for over a decade — one of those rare books that genuinely cannot be categorised.",
-    whyRead: "If you\'ve ever picked up an object and wondered about all the hands it passed through before yours, this book will electrify that instinct — and it\'s simply one of the most beautifully written memoirs of the past twenty years.",
+    title: "The Tao of Pooh",
+    author: "Benjamin Hoff",
+    year: 1982,
+    genres: ["Philosophy", "Humour", "Self-Help"],
+    desc: "Benjamin Hoff uses the gentle, bumbling bear of A. A. Milne\'s Hundred Acre Wood as the perfect vessel for explaining the ancient Chinese philosophy of Taoism — and it works with disarming brilliance. Through a series of playful dialogues and passages from the original Pooh stories, Hoff illuminates concepts like wu wei (effortless action) and the Uncarved Block with a clarity that most academic texts never approach. The book is genuinely funny, surprising in its depth, and short enough to read in an afternoon yet rich enough to sit with for years. It gently argues that the wisest response to a complicated world is often the simplest one, and that Pooh — who does nothing particularly well except simply be — has somehow figured this out.",
+    whyRead: "In a moment when the world feels relentlessly overcomplicated and noisy, this slim, witty classic offers a quietly radical reframe: that doing less, and being more, might be exactly the right answer.",
     rating: 4.1,
     ratingSource: "Goodreads",
-    ratingCount: "60,000+",
-    coverUrl: "https://covers.openlibrary.org/b/id/7657389-L.jpg",
-    amazonUrl: "https://www.amazon.co.uk/dp/1407052489"
+    ratingCount: "200,000+",
+    coverUrl: "https://covers.openlibrary.org/b/id/8741318-L.jpg",
+    amazonUrl: "https://www.amazon.co.uk/dp/0140067477"
   }
 };

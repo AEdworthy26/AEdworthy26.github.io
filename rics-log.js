@@ -3,6 +3,45 @@
 
 var RICS_LOG = [
   {
+    "date": "2026-07-28",
+    "topic": "Appointing and Managing Design Consultants: Fee Structures, PI Insurance, RIBA Stages and Performance in Residential-Led Schemes",
+    "module": "Design Team Management",
+    "level": 2,
+    "apc_competency": "Development/Project Management (Level 2)",
+    "focus": "This lesson examines the practical mechanics of appointing, structuring and managing design consultants on residential-led schemes \u2014 from fee negotiation and scope definition through RIBA stage gating to PI insurance adequacy and performance management. For Alfie, this is day-to-day practice: managing multi-disciplinary teams across pre-app, consent and post-consent phases on mixed-tenure, RP-led schemes requires rigorous commercial and contractual control of consultants.",
+    "image": "https://images.unsplash.com/photo-1607900840367-a83dcd63296d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxBcHBvaW50aW5nJTIwYW5kJTIwTWFuYWdpbmclMjBVSyUyMHByb3BlcnR5JTIwYXJjaGl0ZWN0dXJlJTIwYnVpbGRpbmclMjBleHRlcmlvcnxlbnwwfDB8fHwxNzg1MjE1ODIxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "content": [],
+    "summary": [
+      "Always tie consultant fee payments to RIBA stage gate completions and written client sign-off \u2014 not to calendar dates \u2014 to maintain programme control and prevent cost overrun.",
+      "Lump sum fee structures provide cost certainty for defined scopes; use time-charge with a cap for genuinely uncertain early-stage feasibility work; benchmark percentage fees against comparable schemes before accepting a consultant\\'s proposal.",
+      "PI insurance adequacy must be verified at appointment and at each annual renewal \u2014 check cover level, 'any one claim' vs aggregate basis, minimum 6-year run-off, and specific exclusions or sublimits for cladding and fire safety.",
+      "Agree the form of collateral warranty and novation agreement at appointment stage and schedule both to the appointment \u2014 never negotiate these retrospectively, when consultants have less incentive to cooperate.",
+      "Robust design team management requires a well-drafted brief, disciplined meeting structure with written action logs, and documented escalation of underperformance \u2014 assessors want evidence of proactive management, not just attendance at meetings."
+    ],
+    "qa": [
+      {
+        "q": "You are appointing an architect on a 200-unit mixed-tenure scheme. The architect proposes a 6% fee on a \u00a332m construction cost. What is your approach to challenging and structuring the fee, and what would a typical lump sum equivalent look like?",
+        "a": "A 6% fee on \u00a332m = \u00a31.92m, which is likely above market for a scheme of this scale. I would benchmark against comparable schemes in our portfolio and wider market evidence \u2014 for a 200-unit residential scheme, 4.5\u20135.5% is a more typical range, depending on complexity. My preferred approach would be to convert to a lump sum structured by RIBA stage: Stage 1\u20132 (feasibility/pre-app) circa \u00a3150\u2013200k; Stage 3 (planning) circa \u00a3200\u2013250k; Stage 4 (technical design and condition discharge) circa \u00a3300\u2013350k; Stages 5\u20136 (construction phase observation, if required) circa \u00a3200\u2013250k \u2014 total in the range of \u00a3900k\u2013\u00a31.05m. I would also agree a schedule of additional services at day rates with capped uplift for LPA-driven redesigns or scope changes instructed by us. The lump sum approach removes the perverse incentive to inflate construction cost and gives Latimer budget certainty for our development appraisal."
+      },
+      {
+        "q": "An assessor asks: what are the key provisions you look for in a consultant\\'s PI insurance certificate, and why does the distinction between 'any one claim' and 'aggregate' cover matter?",
+        "a": "'Any one claim' cover means the full policy limit is available for each individual claim \u2014 so if a consultant causes two separate losses of \u00a32m each on a \u00a32m 'any one claim' policy, both claims are fully covered. 'Aggregate' cover means the policy limit is shared across all claims in the policy year \u2014 so two \u00a32m losses against a \u00a32m aggregate policy would only be 50% covered per claim. 'Any one claim' is substantially more valuable and is the standard I require for key consultants. Beyond this distinction, I check: the policy limit is commensurate with the consultant\\'s potential liability on the project (minimum \u00a32m for architects on a scheme of this scale, higher for complex or tall buildings); run-off cover of at least 6 years post-completion; and specific exclusions \u2014 particularly cladding, fire safety and building safety act compliance exclusions or sublimits, which are now common and can leave a significant gap for multi-storey residential schemes."
+      },
+      {
+        "q": "What is a net contribution clause, and how does it affect a developer\\'s ability to recover losses from a consultant?",
+        "a": "A net contribution clause limits a consultant\\'s liability to the proportion of the claimant\\'s loss that the consultant is actually responsible for, rather than making them jointly and severally liable for the full loss. In practice, if an architect and structural engineer both contribute to a design defect causing \u00a31m of loss, and the architect is 60% responsible, the net contribution clause caps the architect\\'s liability at \u00a3600k \u2014 even if the structural engineer is insolvent or uninsured. This is significant because it removes the developer\\'s ability to recover the full loss from the party with the deepest pockets. Net contribution clauses are increasingly standard in architect appointments and are accepted by the RIBA as a fair commercial term, but I flag them to our legal team at appointment stage and consider whether the residual risk is acceptable given the PI cover levels of all consultants on the project."
+      },
+      {
+        "q": "Describe the circumstances in which you would novate a consultant appointment on a Latimer JV scheme, and what practical steps you would take to ensure this goes smoothly.",
+        "a": "Novation most commonly arises on our JV schemes when the market sale element of a mixed-tenure development is transferred to the private developer partner\\'s vehicle post-planning. In that scenario, we may need to novate the architect\\'s appointment \u2014 or the market sale portion of it \u2014 to the JV partner so they can take the design through technical design and construction. To ensure this is smooth: (1) at the original appointment stage, I include a novation obligation in the appointment requiring the consultant to agree to novation in specified circumstances, and schedule an agreed form of novation agreement; (2) I ensure the appointment is drafted so that the affordable housing scope can remain with Latimer post-novation, rather than being novated away; (3) I confirm at appointment stage that the consultant\\'s PI cover will follow the novated appointment; (4) when novation is triggered, I instruct legal to execute the novation agreement promptly and update all project records. Failing to plan for novation at appointment means negotiating it retrospectively under time pressure, often with consultants who are less cooperative once they know they are needed."
+      },
+      {
+        "q": "An architect on one of your schemes has missed three consecutive RIBA stage 3 programme milestones, and the planning application is at risk of a 3-month delay. Walk me through how you would manage this.",
+        "a": "First, I would raise it formally in the next design team meeting and document the discussion in the minutes \u2014 establishing a clear written record. Concurrently, I would issue a formal written notice to the architect citing the programme obligations under the appointment and requesting a written recovery programme with revised milestones within 5 working days. If the recovery programme is not delivered or is inadequate, I would issue a formal breach notice under the appointment, citing the specific clause breached and reserving Latimer\\'s rights. I would also assess whether additional resources can be instructed at the architect\\'s cost under the appointment terms, and take legal advice on the implications. In parallel, I would update the scheme risk register, notify my project director, and assess the programme impact on the planning submission, grant funding conditions and any land acquisition long-stop dates \u2014 because a 3-month planning delay can have significant downstream consequences for the development programme and investment committee commitments."
+      }
+    ]
+  },
+  {
     "date": "2026-07-27",
     "topic": "Planning Appeals: Written Representations, Hearings and Inquiries \u2014 Strategy, Evidence and Risk Management",
     "module": "Planning and Development Management",

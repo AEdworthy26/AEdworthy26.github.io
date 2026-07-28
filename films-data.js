@@ -1,18 +1,18 @@
 // films-data.js
-// Auto-updated 2026-07-27 — do not edit manually
+// Auto-updated 2026-07-28 — do not edit manually
 
 var FILMS_DATA = {
-  date: "2026-07-27",
+  date: "2026-07-28",
   film: {
-    title: "The Tin Drum",
-    director: "Volker Schlöndorff",
-    year: 1979,
-    genres: ["Drama", "Fantasy", "War"],
-    desc: "Based on Günter Grass\'s towering novel, this audacious German film follows Oskar Matzerath, a boy who decides at age three to stop growing and instead wage a surreal, one-man rebellion against the madness of 20th-century Europe by beating his tin drum. Schlöndorff renders the grotesque and the lyrical in equal measure, turning Oskar\'s stunted existence into a devastating allegory for a continent that refused to see what was happening around it. The film is visually overwhelming, shifting from carnivalesque absurdity to genuine horror with breathtaking confidence. David Bennent\'s performance as Oskar is one of cinema\'s most singular achievements — unsettling, alien, and somehow heartbreaking all at once. It shared the Palme d\'Or at Cannes and won the Academy Award for Best Foreign Language Film, yet it remains far less discussed than it deserves.",
-    cast: ["David Bennent", "Mario Adorf", "Angela Winkler"],
+    title: "Larks on a String",
+    director: "Jiří Menzel",
+    year: 1969,
+    genres: ["Comedy", "Drama"],
+    desc: "Shot in 1969 but immediately banned by Czechoslovak authorities and locked away for two decades, Jiří Menzel\'s warm and subversive masterpiece finally reached audiences in 1990 and won the Golden Bear at Berlin. Set in a scrapyard where bourgeois intellectuals are sent for political re-education, the film turns collective humiliation into something unexpectedly tender and funny, following its mismatched characters as they fall in love across a barbed-wire fence. Menzel\'s touch is impossibly light — there is no rage here, only an irrepressible human decency that makes the absurdity of totalitarian logic look faintly ridiculous. Drawing on the Czech New Wave\'s gift for deadpan lyricism, the film lingers like a folk song half-remembered: bittersweet, quietly defiant, and radiantly alive.",
+    cast: ["Vlastimil Brodský", "Věra Křesadlová", "Leoš Suchařípa"],
     rating: 96,
     ratingSource: "Rotten Tomatoes",
-    ratingExtra: "1 Academy Award (Best Foreign Language Film)",
-    posterUrl: "https://upload.wikimedia.org/wikipedia/en/c/c1/Die_Blechtrommel.jpg"
+    ratingExtra: "Golden Bear, Berlin Film Festival",
+    posterUrl: "https://upload.wikimedia.org/wikipedia/en/5/54/Larks_on_a_String.jpg"
   }
 };

@@ -1,60 +1,60 @@
 // financial-news-data.js
-// Auto-updated 2026-07-27 — do not edit manually
+// Auto-updated 2026-07-28 — do not edit manually
 
 var FINANCIAL_NEWS = {
-  date: "2026-07-27",
+  date: "2026-07-28",
   main: {
-    title: "Oil Prices Sink, Stock Futures Rally as U.S. and Iran Pause Attacks Ahead of Busy Week for Wall Street",
+    title: "Chip Firms Slump Globally as AI Spending Doubts Trigger Market Rout",
     category: "Markets",
     content: [
-      "U.S. stock-index futures surged and oil prices tumbled on Sunday as markets responded with relief to a second consecutive day without military strikes between the United States and Iran. The pause in hostilities, which has held since Friday, sent a strong signal to energy traders that a potential de-escalation may be underway. Investors, who had been bracing for prolonged conflict-driven volatility, welcomed the development as a significant reduction in near-term geopolitical risk.",
-      "Oil\'s dramatic slide reflects just how much of a fear premium had been built into energy markets during the height of the conflict. With no new strikes reported from either side, crude prices tumbled as traders unwound defensive positions that had been accumulated amid fears of a broader Middle East conflagration. Bloomberg reported that bonds rallied and gold gained alongside equities, while the dollar weakened — a broad-based relief rally across multiple asset classes.",
-      "The timing of the ceasefire pause is particularly consequential for Wall Street, which faces one of its most data-heavy weeks of the year. The Federal Reserve is scheduled to meet, and a slate of major technology companies are set to report quarterly earnings, meaning market sentiment could shift rapidly depending on how those events unfold. The combination of easing geopolitical tension and potential Fed guidance has set the stage for a pivotal few days in financial markets.",
-      "Economists had warned that sustained high oil prices posed a serious threat to central bank policy on both sides of the Atlantic. Analysts at The Guardian noted that the Bank of England could be forced to raise interest rates later this year if oil returned to above $100 a barrel, complicating an already delicate monetary policy environment. The oil price retreat, if sustained, would offer central banks crucial breathing room to hold rates steady and avoid further squeezing consumers and businesses.",
-      "Meanwhile, the broader energy market shock has accelerated a longer-term structural shift among energy-importing nations. The New York Times reported that developing Asian countries, scarred by repeated Middle East supply disruptions, are actively working to reduce their reliance on imported fuels including liquefied natural gas. Whether the current pause in U.S.-Iran hostilities holds or proves temporary, the episode has reinforced for many nations the urgent need to diversify their energy sources and insulate their economies from geopolitical volatility."
+      "Global markets have been rocked by a sweeping selloff in semiconductor stocks, as mounting investor skepticism over the returns on billions of dollars of artificial intelligence spending sent shockwaves from Wall Street to Asia. The Kospi index in South Korea — home to major chipmakers — fell so sharply that trading was temporarily halted on Tuesday morning after the benchmark slid by 8%, a dramatic circuit-breaker moment that underscored just how severe the market turmoil had become. Stocks tumbled broadly as the chip rout spread across sectors, with bonds gaining and oil retreating amid the broader flight to safety.",
+      "The catalyst for the selloff appears to be a growing unease among investors about whether the enormous capital expenditure being poured into AI infrastructure will generate the profits needed to justify current valuations. For months, chipmakers have ridden a wave of enthusiasm tied to the AI boom, with demand for advanced processors reaching record levels. But cracks are beginning to show as analysts and institutional investors start to question the timeline and scale of returns, particularly as hyperscalers and large tech companies report spending that has outpaced revenue growth in their AI divisions.",
+      "South Korea\'s market was hit particularly hard given its heavy concentration in semiconductor giants, whose fortunes are closely tied to global AI investment cycles. The temporary trading suspension — a rare and dramatic intervention — reflects just how quickly sentiment can shift in a market that had priced in near-perfect execution of the AI spending thesis. Korean markets have now joined a broader pattern of tech-driven volatility that has been rattling exchanges from New York to Tokyo in recent sessions.",
+      "The rout is also being felt in the United States, where chip stocks have shed significant value as investors reassess stretched valuations. Bloomberg reported that stocks tumbled broadly, with chipmakers bearing the brunt of the selling pressure, while government bonds rallied as money sought safer havens. The simultaneous drop in oil prices — driven by a pause in US-Iran hostilities — added a complex macroeconomic backdrop, with some analysts suggesting the dual selloff in energy and tech signals a broader repricing of risk assets.",
+      "Market watchers are now closely monitoring upcoming earnings reports and any guidance from major AI chip consumers for signs of whether the spending slowdown is temporary or structural. The scale of the current rout has drawn comparisons to previous tech corrections, with some analysts warning that the exuberance surrounding AI hardware could mirror earlier speculative cycles. For now, investors appear to be in a risk-off mood, and the key question is whether this represents a healthy correction or the beginning of a more sustained downturn in the AI-driven chip supercycle."
     ],
-    image: "https://images.mktw.net/im-36741421",
-    source: "MarketWatch",
-    sourceUrl: "https://www.marketwatch.com/story/oil-prices-sink-stock-futures-rally-as-u-s-and-iran-pause-attacks-wall-street-awaits-busy-week-75030e00?mod=mw_rss_topstories"
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/e056/live/347f61f0-8a31-11f1-949c-5b05e00ab03c.jpg",
+    source: "Bloomberg Markets",
+    sourceUrl: "https://www.bloomberg.com/news/articles/2026-07-27/stock-market-today-dow-s-p-live-updates"
   },
   secondary: [
     {
       id: "fn1",
-      title: "Chinese Chipmaker CXMT Becomes Mainland China\'s Most Valuable Listed Firm After 470% Debut Surge",
-      summary: "Shares in Chinese memory chipmaker CXMT soared 470% on their market debut, making it mainland China\'s most valuable listed company amid surging AI-driven chip demand.",
+      title: "Oil Prices Drop Sharply as US and Iran Pause Hostilities",
+      summary: "Brent crude fell 9% to below $88 a barrel after the US paused strikes on Iran, easing fears of a prolonged disruption to global oil supply through the Strait of Hormuz.",
       body: [
-        "CXMT\'s extraordinary stock market debut saw its shares rocket 470% on the first day of trading, catapulting the chipmaker to the top of mainland China\'s listed companies by market value. The stunning rally underscores the intense investor appetite for semiconductor exposure as artificial intelligence continues to drive unprecedented demand for advanced chips.",
-        "The company\'s rise is emblematic of a broader strategic push by China to develop domestic semiconductor capabilities, particularly as geopolitical pressures have restricted access to certain foreign chip technologies. CXMT\'s valuation milestone signals that investors are betting heavily on homegrown chipmakers to fill the gap and capitalise on the global AI boom."
+        "Brent crude, the international benchmark, dropped sharply to below $88 a barrel — a fall of around 9% — as traders recalibrated their expectations following a pause in US military strikes on Iran and the start of diplomatic talks between the two sides. The price had climbed to $100 a barrel just last week when tensions over the Strait of Hormuz were at their peak, raising fears of severe disruptions to global energy supply.",
+        "The fall in oil prices had a knock-on effect in UK financial markets, with government bond yields also declining as the inflation outlook improved. Energy majors listed in London, including BP and Shell, saw pressure on their shares as the commodity price retreat raised questions about near-term revenue projections for the sector."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/0377/live/bb1db120-896a-11f1-a3ae-0dbbd1718109.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.co.uk/news/articles/c9q9w3x9qn2o?at_medium=RSS&at_campaign=rss",
-      category: "Markets"
+      image: "https://i.guim.co.uk/img/media/4f7fbcce3a26d9a717f17341fcd8bfe2174e2fd4/136_0_5000_4000/master/5000.jpg?width=1200&quality=85&auto=format&fit=max&s=dad8cc683fa2901be5057e9f80d5c559",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/business/2026/jul/27/oil-prices-fall-us-strikes-iran-brent-crude-bp-shell-ftse-100",
+      category: "Commodities"
     },
     {
       id: "fn2",
-      title: "Shein Swings to $99 Million Loss as Trump Tariffs Weigh on Sales Ahead of Hong Kong IPO",
-      summary: "Fast fashion giant Shein has reported a $99 million loss, with Trump-era tariffs cited as a key drag on sales, just as the company prepares for its Hong Kong stock market debut.",
+      title: "Johnson & Johnson Offers Up to $5.5bn to Settle Baby Powder Cancer Lawsuits",
+      summary: "J&J has proposed a settlement of up to $5.5 billion to resolve a long-running legal battle over claims that its talc-based baby powder caused cancer.",
       body: [
-        "Shein\'s swing to a $99 million loss marks a significant reversal for the ultra-fast fashion platform, which had previously reported strong profitability driven by its low-cost, high-volume business model. The company pointed to the impact of Trump tariffs as a meaningful headwind, disrupting the cross-border economics that had underpinned its rapid growth in the United States market.",
-        "The financial setback arrives at a particularly sensitive moment, as Shein is in the process of preparing for a highly anticipated stock market listing in Hong Kong. Prospective investors will now need to weigh the company\'s longer-term growth potential against the real and present risk that trade policy shifts could continue to erode its core competitive advantage."
+        "Johnson & Johnson has put forward a settlement offer of up to $5.5 billion in a bid to finally draw a line under years of litigation over allegations that its talc products, including its iconic baby powder, caused cancer in users. The proposed deal aims to resolve thousands of individual and class-action lawsuits that have dogged the healthcare giant and weighed heavily on its legal costs and reputation.",
+        "The settlement, if accepted, would represent one of the largest product liability resolutions in recent corporate history and could remove a significant overhang from J&J\'s balance sheet. Investors have long viewed the talc litigation as a material risk, and a clean resolution would be welcomed by the market, though questions remain about whether plaintiffs' attorneys will endorse the terms."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/6a66/live/d66cf590-8950-11f1-aee1-9f17574ebbb3.jpg",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/988d/live/89834e70-8a1b-11f1-8e1d-ab6aa2cf2cd1.jpg",
       source: "BBC News",
-      url: "https://www.bbc.co.uk/news/articles/clyj8v0rek8o?at_medium=RSS&at_campaign=rss",
-      category: "Corporate Earnings"
+      url: "https://www.bbc.co.uk/news/articles/clyqnz52rp6o?at_medium=RSS&at_campaign=rss",
+      category: "Corporate"
     },
     {
       id: "fn3",
-      title: "Paramount Pauses Its $111 Billion Warner Bros. Deal as Antitrust Battle Looms",
-      summary: "Paramount has paused its blockbuster $111 billion merger deal with Warner Bros. as negotiations clear the way for a potentially decisive antitrust court battle involving state attorneys general.",
+      title: "Private Equity Agrees £5.75bn Takeover of FTSE 100 Energy Firm DCC",
+      summary: "US private equity firms KKR and Energy Capital Partners have agreed a controversial £5.75 billion takeover of DCC, one of the London Stock Exchange\'s biggest energy businesses.",
       body: [
-        "The proposed $111 billion combination of Paramount and Warner Bros. has been placed on hold after a flurry of negotiations last week, with the pause setting the stage for an antitrust legal confrontation that could ultimately determine the fate of both iconic media companies. The deal, which would create one of the largest entertainment conglomerates in history, has attracted scrutiny from state-level regulators.",
-        "The outcome of the anticipated court battle could have sweeping implications for consolidation across the broader media and entertainment industry, which has been grappling with cord-cutting, streaming competition, and declining traditional advertising revenues. Investors in both companies will be watching closely as the legal process unfolds, with the merger\'s completion far from certain."
+        "DCC, one of the largest energy companies listed on the London Stock Exchange, has agreed to a £5.75 billion acquisition by US private equity giants KKR and Energy Capital Partners, in a deal that has drawn criticism from the company\'s founder and its biggest shareholders. The takeover adds to a growing trend of significant UK-listed companies being taken private by overseas buyers, fuelling ongoing debate about the competitiveness of London\'s capital markets.",
+        "The deal is seen as emblematic of a broader pattern of private equity firms exploiting what they perceive as undervalued assets on the London market, a phenomenon that has prompted concern among investors and policymakers alike. Critics argue that the steady exodus of companies from the FTSE risks hollowing out the UK\'s public equity ecosystem at a time when London is already under pressure to retain listings against rival financial centres."
       ],
-      image: "https://static01.nyt.com/images/2026/07/26/multimedia/26biz-paramount-wfkc/26biz-paramount-wfkc-mediumSquareAt3X.jpg",
-      source: "The New York Times",
-      url: "https://www.nytimes.com/2026/07/26/business/paramount-warner-bros-deal-pause.html",
+      image: "https://i.guim.co.uk/img/media/c2c8e36da1559c7cfd1f202da245f61ec5caaa65/475_0_4029_3225/master/4029.jpg?width=1200&quality=85&auto=format&fit=max&s=bdfc3b7eb92dec89a56953a5b5498b7c",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/business/2026/jul/27/dcc-energy-private-equity-takeover-ftse-100-kkr-energy-capital-partners",
       category: "Mergers & Acquisitions"
     }
   ]
