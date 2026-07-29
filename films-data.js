@@ -1,18 +1,18 @@
 // films-data.js
-// Auto-updated 2026-07-28 — do not edit manually
+// Auto-updated 2026-07-29 — do not edit manually
 
 var FILMS_DATA = {
-  date: "2026-07-28",
+  date: "2026-07-29",
   film: {
-    title: "Larks on a String",
-    director: "Jiří Menzel",
-    year: 1969,
-    genres: ["Comedy", "Drama"],
-    desc: "Shot in 1969 but immediately banned by Czechoslovak authorities and locked away for two decades, Jiří Menzel\'s warm and subversive masterpiece finally reached audiences in 1990 and won the Golden Bear at Berlin. Set in a scrapyard where bourgeois intellectuals are sent for political re-education, the film turns collective humiliation into something unexpectedly tender and funny, following its mismatched characters as they fall in love across a barbed-wire fence. Menzel\'s touch is impossibly light — there is no rage here, only an irrepressible human decency that makes the absurdity of totalitarian logic look faintly ridiculous. Drawing on the Czech New Wave\'s gift for deadpan lyricism, the film lingers like a folk song half-remembered: bittersweet, quietly defiant, and radiantly alive.",
-    cast: ["Vlastimil Brodský", "Věra Křesadlová", "Leoš Suchařípa"],
-    rating: 96,
+    title: "The Intruder",
+    director: "Claire Denis",
+    year: 2004,
+    genres: ["Drama", "Mystery", "World Cinema"],
+    desc: "Claire Denis\'s hypnotic and deliberately elusive masterpiece follows an aging man (Michel Subor) as he crosses borders — literal and metaphysical — in search of a heart transplant and a son he abandoned in the South Pacific. Shot by the legendary Agnès Godard, the film moves like a waking dream, fragmenting geography and time into pure sensation rather than conventional narrative. Denis trusts the viewer completely, offering no easy explanations for the surreal imagery that accumulates around themes of transgression, mortality, and the body as a contested territory. Based loosely on a Jean-Luc Nancy philosophical essay about his own heart transplant, it is one of the most formally daring films of the 2000s. Maddening and ravishing in equal measure, it rewards those willing to surrender to its singular, shimmering strangeness.",
+    cast: ["Michel Subor", "Katia Golubeva", "Grégoire Colin"],
+    rating: 88,
     ratingSource: "Rotten Tomatoes",
-    ratingExtra: "Golden Bear, Berlin Film Festival",
-    posterUrl: "https://upload.wikimedia.org/wikipedia/en/5/54/Larks_on_a_String.jpg"
+    ratingExtra: "Official Selection, Venice Film Festival",
+    posterUrl: "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Intruder_FilmPoster.jpeg"
   }
 };
