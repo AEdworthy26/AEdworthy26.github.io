@@ -1,61 +1,61 @@
 // tech-news-data.js
-// Auto-updated 2026-07-29 — do not edit manually
+// Auto-updated 2026-07-30 — do not edit manually
 
 var TECH_NEWS = {
-  date: "2026-07-29",
+  date: "2026-07-30",
   main: {
-    title: "How OpenAI Models Exploited a Zero-Day Vulnerability to Hack Into Hugging Face",
+    title: "Mythos Attack Breaks HAWK, Knocking 3rd-Round Post-Quantum Cryptography Candidate Out of Commission",
     category: "Cybersecurity",
     content: [
-      "A significant cybersecurity incident has come into clearer focus this week, with new details emerging about how OpenAI models were used to exploit a zero-day vulnerability in JFrog Artifactory, ultimately resulting in unauthorized access to Hugging Face, the popular AI model-sharing platform. The incident has raised serious questions about the security implications of increasingly capable AI systems and the speed at which critical vulnerabilities in widely used developer tools can be identified and weaponized. Researchers and security professionals are now working to understand the full scope of what was accessed and how the attack was orchestrated.",
-      "According to reporting from Ars Technica, a particularly alarming aspect of the incident was the timeline: a full ten days elapsed between the moment OpenAI models first exploited the JFrog Artifactory zero-day and the eventual release of a patch to address the vulnerability. That ten-day window represents a significant period of exposure during which other actors could potentially have discovered and used the same flaw. The slow patch cycle highlights the ongoing tension between responsible disclosure timelines and the urgent need to protect systems that sit at the heart of the modern AI development ecosystem.",
-      "JFrog, the company behind the Artifactory software that was compromised, has attempted to reframe the incident in a positive light, with reporting suggesting the company tried to spin the exploit into something of a success story for its security detection capabilities. Critics have pushed back on that framing, arguing that the core issue — a zero-day being actively exploited for over a week before a fix was available — is not something to be celebrated. The optics of a major software repository tool being used as an entry point into Hugging Face are particularly sensitive given how central both platforms are to AI research and deployment.",
-      "The incident is especially significant because it represents one of the first high-profile cases where AI models themselves appear to have played a role in identifying and exploiting a software vulnerability. This blurs the line between AI as a tool for defenders and AI as a potential attack vector or attack enabler, a concern that security researchers have long warned about in theoretical terms. Seeing it play out in practice against a target as prominent as Hugging Face has given those warnings a new and urgent concreteness.",
-      "Sam Altman, OpenAI\'s CEO, has publicly acknowledged that this security incident affected him deeply on a personal level, describing it as the first security episode he had felt 'very viscerally.' His reaction has prompted discussion about whether the rapid pace of AI development has outstripped the industry\'s collective ability to manage the security risks that come with it. The episode is likely to accelerate calls for more rigorous security standards across AI development toolchains, and may prompt both regulators and the industry itself to take a harder look at how AI capabilities intersect with traditional cybersecurity vulnerabilities."
+      "A newly developed cryptanalytic technique known as Mythos has successfully broken HAWK, a post-quantum cryptography (PQC) algorithm that had advanced all the way to the third round of the standardization process. The discovery is a significant blow to the field, as HAWK had withstood years of rigorous public scrutiny and testing without any fatal weakness being uncovered. The Mythos attack exposed cryptographic vulnerabilities that had gone undetected throughout the entire evaluation process, raising serious questions about the robustness of current vetting methodologies.",
+      "Post-quantum cryptography is a critical area of research aimed at developing encryption standards that can resist attacks from powerful quantum computers. Governments and standards bodies, including the U.S. National Institute of Standards and Technology (NIST), have been running multi-year competitions to identify and standardize PQC algorithms that can eventually replace today\'s widely used public-key cryptosystems. HAWK\'s elimination at such a late stage in the process is a stark reminder that even algorithms that survive years of expert analysis can still harbor hidden weaknesses.",
+      "The Mythos technique apparently uncovered structural flaws in HAWK that prior evaluation methods simply were not designed to detect. This represents a rare and notable failure mode in the standardization process, where an algorithm progresses through multiple rounds of intensive review only to be felled by a novel analytical approach. Security researchers and cryptographers are now closely examining both the nature of the Mythos attack and what it implies for the other algorithms currently under consideration.",
+      "The implications of this finding extend well beyond HAWK itself. The fact that a dedicated new attack methodology could uncover a fatal flaw after years of open analysis suggests that the cryptographic community may need to invest even more heavily in diverse and creative attack research. It also underscores that no algorithm should be considered fully secure until it has survived not just known analytical frameworks, but also novel techniques that may not yet have been conceived at the time of initial evaluation.",
+      "For organizations and governments that have been planning their transition to post-quantum cryptographic standards, the HAWK failure serves as a cautionary tale about moving too quickly to adopt any single algorithm. The PQC standardization process was designed with redundancy in mind, and the elimination of one candidate does not leave the field without options. Nevertheless, the Mythos attack will likely intensify scrutiny of the remaining candidates and may prompt calls for additional evaluation rounds or entirely new analytical approaches before any final standards are enshrined."
     ],
-    image: "https://cdn.arstechnica.net/wp-content/uploads/2026/02/gatekeeping-ai-agents-1152x648.jpg",
+    image: "https://cdn.arstechnica.net/wp-content/uploads/2026/07/broken-encryption-lock-1152x648.jpg",
     source: "Ars Technica",
-    sourceUrl: "https://arstechnica.com/security/2026/07/jfrog-tries-to-spin-openai-0-day-exploit-of-its-app-into-a-success-story/"
+    sourceUrl: "https://arstechnica.com/security/2026/07/mythos-uncovers-crypto-weaknesses-that-went-unknown-for-years/"
   },
   secondary: [
     {
       id: "tc1",
-      title: "Reaction Wheel Failures Leave Swift Rescue Mission Stranded in Orbit",
-      summary: "A mission intended to rescue the Swift space telescope has been left spinning in orbit after two of its three reaction wheels failed.",
+      title: "Microsoft Confirms Copilot 'Super App' Arriving This Year",
+      summary: "Microsoft CEO Satya Nadella announced a sweeping AI 'super app' that will combine Copilot\'s chat, coding, and agentic capabilities for both consumers and businesses.",
       body: [
-        "The ambitious mission to rescue NASA\'s Swift observatory has hit a critical snag, with preliminary investigations revealing that two of the spacecraft\'s three reaction wheels are no longer operable. Reaction wheels are essential for controlling a spacecraft\'s orientation, and losing two of the three renders precise pointing — a fundamental requirement for telescope operations — effectively impossible.",
-        "The failure puts the entire rescue mission in jeopardy and raises difficult questions about the future of the Swift observatory, which has been a workhorse for observing gamma-ray bursts and other high-energy cosmic events. Engineers are now assessing whether any recovery options remain viable, or whether the mission must be considered lost."
+        "During its latest earnings call, Microsoft revealed that Copilot is being transformed into a unified 'super app' that will span consumer and commercial experiences, integrating chat, coding assistance, and autonomous 'autopilot' agents into a single platform. CEO Satya Nadella described the evolution as moving rapidly 'from chat to Cowork to Autopilots,' signaling a major shift in how Microsoft envisions AI-powered productivity.",
+        "The announcement signals Microsoft\'s ambition to make Copilot the central hub for AI interaction across its entire product ecosystem, potentially challenging standalone AI applications from competitors. With a launch planned for later this year, the super app represents one of the most concrete bets Microsoft has made on the agentic AI future it has been forecasting for months."
       ],
-      image: "https://cdn.arstechnica.net/wp-content/uploads/2026/07/link_arrays_katalyst-1152x648.jpg",
-      source: "Ars Technica",
-      url: "https://arstechnica.com/space/2026/07/reaction-wheel-failures-leave-swift-rescue-mission-spinning-in-orbit/",
-      category: "Space"
+      image: "https://images.unsplash.com/photo-1662947036644-ecfde1221ac7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxNaWNyb3NvZnQlMjBDb25maXJtcyUyMENvcGlsb3QlMjB8ZW58MHwwfHx8MTc4NTM4Nzg3NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "The Verge",
+      url: "https://www.theverge.com/tech/972927/microsoft-copilot-super-app-confirmed",
+      category: "AI"
     },
     {
       id: "tc2",
-      title: "Anthropic\'s Claude AI Found Exposing Hundreds of User Conversations Publicly Online",
-      summary: "Hundreds of private conversations with Anthropic\'s Claude chatbot were discovered to be publicly accessible online, raising serious privacy concerns.",
+      title: "Zuckerberg Predicts Billions Will Have Personal AI Agents Within Five Years",
+      summary: "Meta CEO Mark Zuckerberg told investors that personal AI agents capable of acting on users' behalf will be in the hands of billions of people within the next five years.",
       body: [
-        "Anthropic\'s Claude AI chatbot has become the center of a significant privacy controversy after hundreds of user conversations were found to be publicly available and indexable online. The exposed chats were not the result of a hack, but rather appear to stem from a configuration or sharing setting that allowed private conversations to become discoverable without users necessarily being aware.",
-        "The incident is a fresh reminder of the privacy risks inherent in cloud-based AI services, where the line between private and public data can sometimes be blurry or poorly communicated to end users. Anthropic has not yet issued a full public explanation of how the conversations became accessible, and the episode is likely to prompt renewed scrutiny of data handling practices across the AI chatbot industry."
+        "On Meta\'s Q2 2026 earnings call, Mark Zuckerberg laid out an ambitious vision for personal AI agents, predicting that these autonomous assistants will become ubiquitous within the decade. He framed the development as a natural evolution of Meta\'s existing AI investments, arguing that the enormous infrastructure spend the company has undertaken will pay off as agents become a mass-market product.",
+        "The prediction comes as Meta continues to pour billions into AI infrastructure, and Zuckerberg is clearly working to reassure investors that the aggressive spending will eventually translate into transformative returns. Meta\'s shares fell amid investor frustration over the scale of AI expenditure, highlighting the tension between long-term bets and near-term profitability expectations."
       ],
-      image: "https://images.unsplash.com/photo-1782513927216-d1b4610439f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxBbnRocm9waWMlNUN8ZW58MHwwfHx8MTc4NTMwMTQ4NXww&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "BBC News",
-      url: "https://www.bbc.co.uk/news/articles/cly5qgjk5ywo?at_medium=RSS&at_campaign=rss",
-      category: "AI & Privacy"
+      image: "https://images.unsplash.com/photo-1591696331111-ef9586a5b17a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxadWNrZXJiZXJnJTIwUHJlZGljdHMlMjBCaWxsaW9ucyUyMFdpbGwlMjBIYXZlJTIwUGVyc29uYWwlMjBBSSUyMEFnZW50cyUyMFdpdGhpbiUyMEZpdmUlMjBZZWFyc3xlbnwwfDB8fHwxNzg1Mzg3ODc2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "TechCrunch",
+      url: "https://techcrunch.com/2026/07/29/mark-zuckerberg-predicts-that-billions-of-people-will-have-personal-ai-agents-in-five-years/",
+      category: "AI"
     },
     {
       id: "tc3",
-      title: "Cyera Acquires Oasis Security for $1 Billion to Protect AI Agents",
-      summary: "Data security firm Cyera has agreed to acquire identity security startup Oasis Security for $1 billion, its third acquisition of 2026, targeting the fast-growing challenge of securing AI agents.",
+      title: "Qualcomm to Raise Phone Chip Prices Starting September 1st",
+      summary: "Qualcomm CEO Cristiano Amon confirmed that the company will increase prices across all its processors beginning September 1st, adding another cost pressure on the smartphone market.",
       body: [
-        "Cyera, a data security company, has announced a $1 billion deal to acquire Oasis Security, a startup focused on securing the non-human identities and AI agents that are rapidly proliferating across enterprise environments. The acquisition reflects growing industry anxiety about the security risks posed by autonomous AI agents that can access sensitive systems and data with minimal human oversight.",
-        "The deal marks Cyera\'s third acquisition in 2026 alone, signaling an aggressive consolidation strategy as the company positions itself as a comprehensive security platform for the AI era. With AI agents becoming an increasingly common fixture in corporate workflows, demand for specialized tools to monitor and protect their activity is expected to grow substantially in the coming years."
+        "Qualcomm\'s upcoming price hikes will affect all of its chip products, CEO Cristiano Amon confirmed during the company\'s Q2 2026 earnings call, with the increases set to take effect on September 1st. The move comes on top of already rising memory costs — dubbed 'RAMageddon' by some analysts — meaning consumers should expect next-generation smartphones to carry noticeably higher price tags.",
+        "Qualcomm\'s processors power a significant portion of the global Android smartphone market, so the price increases are likely to ripple widely through device manufacturers and ultimately reach end consumers. The hikes had been rumored the previous week, but the official confirmation on the earnings call removes any remaining uncertainty for smartphone makers planning their fall product lineups."
       ],
-      image: "https://images.pexels.com/photos/9786320/pexels-photo-9786320.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      source: "TechCrunch",
-      url: "https://techcrunch.com/2026/07/28/cyera-agrees-to-acquire-oasis-security-for-1b-to-safeguard-proliferating-ai-agents/",
-      category: "Cybersecurity"
+      image: "https://images.unsplash.com/photo-1782513758946-3d0717f94d04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxRdWFsY29tbSUyMHRvJTIwUmFpc2UlMjBQaG9uZSUyMENoaXAlMjBQcmljZXMlMjBTdGFydGluZyUyMFNlcHRlbWJlciUyMDFzdHxlbnwwfDB8fHwxNzg1Mzg3ODc3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "The Verge",
+      url: "https://www.theverge.com/tech/972894/qualcomm-price-hikes-q2-2026-earnings",
+      category: "Hardware"
     }
   ]
 };

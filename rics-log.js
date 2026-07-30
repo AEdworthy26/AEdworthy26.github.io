@@ -3,6 +3,45 @@
 
 var RICS_LOG = [
   {
+    "date": "2026-07-30",
+    "topic": "Building Safety Act Gateway Process: Gateways 2 & 3, the Accountable Person and RP Developer Obligations",
+    "module": "Legal & Regulatory Compliance",
+    "level": 2,
+    "apc_competency": "Legal/Regulatory Compliance (Level 2)",
+    "focus": "This lesson examines the Building Safety Act 2022 Gateway regime as it applies to higher-risk residential buildings (HRBs), focusing on Gateways 2 and 3, the duties of the Accountable Person and Principal Accountable Person, and the practical implications for Alfie\\'s role managing residential-led schemes at Latimer. Understanding this framework is essential for the APC candidate because programme risk, planning condition sequencing and design freeze decisions are all directly affected by Gateway compliance obligations.",
+    "image": "https://images.unsplash.com/photo-1595751100377-9954f1f99bad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxCdWlsZGluZyUyMFNhZmV0eSUyMEFjdCUyMFVLJTIwcHJvcGVydHklMjBhcmNoaXRlY3R1cmUlMjBidWlsZGluZyUyMGV4dGVyaW9yfGVufDB8MHx8fDE3ODUzODgyODZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "content": [],
+    "summary": [
+      "The Building Safety Act 2022 Gateway regime applies to all HRBs (18m+ or 7+ storeys, 2+ residential units) and creates three mandatory, sequential regulatory checkpoints administered by the Building Safety Regulator (HSE division).",
+      "Gateway 2 (pre-construction) requires full Building Control Approval from the BSR before any work commences \u2014 determination takes 8\u201316+ weeks in practice, requiring RIBA Stage 4 design to be substantially complete before construction can start.",
+      "Gateway 3 (completion) prohibits occupation until the BSR issues a Completion Certificate \u2014 eliminating the previous model of phased partial completion certificates for HRBs and fundamentally altering cashflow and sales programme timing.",
+      "The Accountable Person (typically Latimer as freeholder) carries ongoing post-occupation obligations including Safety Case Report maintenance, golden thread management and residents' engagement \u2014 these must be allocated in JV and development agreements from the outset.",
+      "Gateway 2 and pre-commencement planning condition discharge are parallel but entirely separate processes with different authorities and legal consequences \u2014 both must be on the critical path from the earliest programme planning stage."
+    ],
+    "qa": [
+      {
+        "q": "What is the statutory definition of a Higher-Risk Building and how would you confirm whether a Latimer scheme meets the threshold?",
+        "a": "An HRB is defined under the Building Safety Act 2022 and the Higher-Risk Buildings (Descriptions and Supplementary Provisions) Regulations 2023 as a building in England that is at least 18 metres in height or has at least 7 storeys, and contains at least 2 residential units. Height is measured to the finished floor level of the top occupied storey \u2014 not the roof level or plant room. To confirm HRB status, I would instruct the architect to provide a formal height measurement at RIBA Stage 1/2 and include it in the design risk register. Where a building is borderline \u2014 say, 17 metres with a plant room \u2014 I would seek early pre-engagement with the BSR to obtain a formal view, rather than rely on an informal interpretation, because getting this wrong has significant programme and legal consequences."
+      },
+      {
+        "q": "You are targeting a construction start in Q4 2026 on a 15-storey HRB. When should you submit the Gateway 2 application and what does it need to contain?",
+        "a": "With a statutory 8-week determination period but a realistic 12\u201316 week window allowing for BSR queries, I would target Gateway 2 submission by early July 2026 at the latest for an October 2026 construction start. The submission must include: a completed Building Control Approval application form; full design drawings and specifications at near-RIBA Stage 4 maturity; a structural engineer\\'s calculations; a fire engineering strategy and fire safety report; a draft Safety Case Report demonstrating ALARP; details of the Principal Designer (Building Regulations) and Principal Contractor; and a construction control plan. Any significant design change after BSR approval requires a formal change notification, which may trigger a further review period \u2014 so I would also implement a design freeze protocol with the design team before submission."
+      },
+      {
+        "q": "What is the 'golden thread' and what are Latimer\\'s obligations as Accountable Person to maintain it?",
+        "a": "The golden thread is the BSA 2022's requirement for a continuously maintained, structured digital record of all building information \u2014 from initial design through construction changes and into occupation. It must be started at Gateway 2, updated throughout construction to record all approved design changes and BSR-notified variations, and handed over at Gateway 3 in the form of as-built documentation. As Accountable Person and PAP, Latimer\\'s obligations are to maintain and update the golden thread throughout the building\\'s occupation, make it available to the BSR on request, and ensure it informs any future refurbishment or works. Failure to maintain the golden thread is a criminal offence. In practice, I would specify golden thread management as a contractual obligation on the Principal Designer and ensure the information management system is established at appointment \u2014 not retrofitted at the end of the project."
+      },
+      {
+        "q": "How does the Gateway 3 completion process affect the revenue and cashflow programme on a shared ownership scheme compared to the pre-BSA position?",
+        "a": "Under the pre-BSA regime, a developer could often obtain a partial completion certificate for lower floors and commence shared ownership sales completions \u2014 and therefore receive Homes England grant drawdown on practical completion tranches \u2014 while upper floors remained under construction. Under the BSA, Gateway 3 requires full Building Control Approval from the BSR before any occupation of the HRB, and the BSR has 8 weeks to determine the completion application with frequent extensions. This means: (1) sales completions and grant drawdown are delayed until the BSR issues its Completion Certificate, which may be 8\u201316 weeks after practical completion; (2) there is a period during which the building is complete but unoccupied, incurring holding costs; and (3) cashflow models must be revised to reflect this delay. I would build a 12-week post-practical-completion BSR determination period into the development appraisal cashflow as a prudent assumption."
+      },
+      {
+        "q": "In a JV with a private developer where they are the contractor and Latimer takes the freehold on completion, how should the development agreement allocate Gateway 2 and 3 responsibilities?",
+        "a": "The development agreement should explicitly allocate Gateway 2 and 3 responsibilities rather than leaving them to implication. I would seek to include the following: (1) the JV partner/contractor is responsible for preparing and submitting the Gateway 2 application, maintaining the safety case during construction, notifying the BSR of all approved design changes, and submitting the Gateway 3 completion application \u2014 all as conditions of the construction programme obligations; (2) Latimer has audit rights over the Gateway 2 submission and the golden thread documentation before submission; (3) the contractor must hand over the complete golden thread, Safety Case Report and as-built documentation to Latimer at practical completion as a condition of the final account; and (4) delay in obtaining Gateway 2 or Gateway 3 approvals caused by the contractor\\'s design or programme failures is at the contractor\\'s risk, not Latimer\\'s. I would also ensure that the development agreement requires the contractor to notify Latimer immediately of any BSR queries or requests for further information, to avoid programme surprises."
+      }
+    ]
+  },
+  {
     "date": "2026-07-29",
     "topic": "Homes England Grant Conditions, Additionality and Drawdown Mechanics in the Affordable Homes Programme",
     "module": "Project Finance",

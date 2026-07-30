@@ -1,19 +1,19 @@
 // reads-data.js
-// Auto-updated 2026-07-29 — do not edit manually
+// Auto-updated 2026-07-30 — do not edit manually
 
 var READS_DATA = {
-  date: "2026-07-29",
+  date: "2026-07-30",
   book: {
-    title: "The Diving Bell and the Butterfly",
-    author: "Jean-Dominique Bauby",
-    year: 1997,
-    genres: ["Memoir", "Literary Nonfiction", "Philosophy"],
-    desc: "In December 1995, Jean-Dominique Bauby — editor-in-chief of French Elle — suffered a massive stroke that left him with locked-in syndrome, able to move only his left eyelid. He dictated this entire book by blinking as a transcriber recited the alphabet, one letter at a time, producing one of the most astonishing acts of will and creative imagination in literary history. The result is not a document of suffering but an explosion of vivid, witty, sensory prose: memories of oysters and travel and fatherhood, surreal flights of fantasy, and a fierce, undiminished hunger for life. At just 130 pages it can be read in a single sitting, yet it expands inside you long after the last page, fundamentally altering how you think about the mind, the body, and what it means to be present.",
-    whyRead: "A book this short has rarely carried this much force — it\'s a reminder, arriving in the middle of summer, that consciousness itself is the greatest gift, and that language is its most radical expression.",
-    rating: 4.1,
+    title: "The Passenger",
+    author: "Cormac McCarthy",
+    year: 2022,
+    genres: ["Literary Fiction", "Philosophy", "Existential Fiction"],
+    desc: "Bobby Western is a salvage diver haunted by the legacy of his father — a physicist who worked on the Manhattan Project — and by the death of his brilliant, troubled sister Alicia, whose ghost visits him in increasingly surreal visions. McCarthy conjures a world in which physics, mathematics, consciousness, and grief collide, written in prose so precise and strange it reads almost like music. The novel refuses easy comfort: it asks what we owe the dead, what we owe a world we did not ask to enter, and whether beauty is enough reason to stay. Published decades after Blood Meridian and No Country for Old Men, it feels like the summation of a lifetime\'s brooding — a book McCarthy clearly needed to write more than any audience needed to read it, which makes it all the more transfixing.",
+    whyRead: "With McCarthy gone and his final works now settling into the culture, this is the moment to sit with the full weight of what he left behind — a genuinely strange, uncompromising novel unlike anything else in contemporary fiction.",
+    rating: 3.9,
     ratingSource: "Goodreads",
-    ratingCount: "90,000+",
-    coverUrl: null,
-    amazonUrl: "https://www.amazon.co.uk/dp/1669384985"
+    ratingCount: "60,000+",
+    coverUrl: "https://covers.openlibrary.org/b/id/12968819-L.jpg",
+    amazonUrl: "https://www.amazon.co.uk/dp/1524712396"
   }
 };

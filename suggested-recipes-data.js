@@ -1,187 +1,211 @@
 // suggested-recipes-data.js
-// Auto-updated 2026-07-29 — do not edit manually
+// Auto-updated 2026-07-30 — do not edit manually
 
 window.SUGGESTED_RECIPES = [
   {
     id: "sug1",
-    title: "Cig Köfte Wraps — Turkish Spiced Bulgur Rolls with Pomegranate, Walnuts & Herb Salad",
-    category: "Vegan",
-    calories: 420,
-    protein: 12,
-    fibre: 11,
-    healthScore: 88,
+    title: "Korean Dakgalbi — Spicy Stir-Fried Chicken with Cabbage, Sweet Potato & Gochujang",
+    category: "Chicken",
+    calories: 485,
+    protein: 42,
+    fibre: 5,
+    healthScore: 74,
     time: "40 mins",
     serves: "4",
-    desc: "Cig köfte are Turkey\'s beloved street-food rolls — fine bulgur kneaded with tomato paste, smoky spices and pomegranate molasses until deeply flavoured and surprisingly meaty in texture. Wrapped in soft lettuce leaves with fresh mint, parsley, walnuts and a hit of pomegranate seeds, they\'re vivid, bold, and utterly addictive. No heat required — the lemon and molasses do all the work.",
-    emoji: "🌿",
-    image: "https://images.unsplash.com/photo-1664455248800-31f7f0ce3134?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxDaWclMjBLJUMzJUI2ZnRlJTIwV3JhcHMlMjAlRTIlODAlOTQlMjBUdXJraXNoJTIwU3BpY2VkJTIwQnVsZ3VyJTIwUm9sbHMlMjB3aXRoJTIwUG9tZWdyYW5hdGUlMkMlMjBXYWxudXRzJTIwJTI2JTIwSGVyYiUyMFNhbGFkJTIwZm9vZCUyMGRpc2h8ZW58MHwwfHx8MTc4NTMwMTk5MHww&ixlib=rb-4.1.0&q=80&w=1080",
+    desc: "Dakgalbi is one of Korea\'s great street-food treasures — a fiery, sticky, deeply satisfying stir-fry of marinated chicken, sweet potato, and cabbage all cooked together in a bold gochujang sauce that caramelises at the edges and clings to everything. It\'s the kind of dish that tastes far more complex than the effort involved, with layers of chilli heat, sweetness, and savouriness that keep you going back for more. Serve straight from the pan over steamed rice with a cold beer.",
+    emoji: "🌶️",
+    image: "https://images.unsplash.com/photo-1752826892253-d89531507b1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxLb3JlYW4lMjBEYWtnYWxiaSUyMCVFMiU4MCU5NCUyMFNwaWN5JTIwU3Rpci1GcmllZCUyMENoaWNrZW4lMjB3aXRoJTIwQ2FiYmFnZSUyQyUyMFN3ZWV0JTIwUG90YXRvJTIwJTI2JTIwR29jaHVqYW5nJTIwZm9vZCUyMGRpc2h8ZW58MHwwfHx8MTc4NTM4ODM4OXww&ixlib=rb-4.1.0&q=80&w=1080",
     ingredientGroups: [
       {
-        group: "Bulgur Base",
+        group: "Chicken & Marinade",
         items: [
-          { name: "Fine bulgur wheat", quantity: 300, unit: "g" },
-          { name: "Boiling water", quantity: 300, unit: "ml" },
-          { name: "Tomato paste", quantity: 4, unit: "tbsp" },
-          { name: "Pomegranate molasses", quantity: 3, unit: "tbsp" },
-          { name: "Olive oil", quantity: 3, unit: "tbsp" },
-          { name: "Lemon juice", quantity: 2, unit: "tbsp" }
+          { name: "Boneless skinless chicken thighs, cut into bite-sized pieces", quantity: 700, unit: "g" },
+          { name: "Gochujang (Korean red chilli paste)", quantity: 3, unit: "tbsp" },
+          { name: "Gochugaru (Korean chilli flakes)", quantity: 1, unit: "tbsp" },
+          { name: "Soy sauce", quantity: 2, unit: "tbsp" },
+          { name: "Sesame oil", quantity: 1, unit: "tbsp" },
+          { name: "Honey", quantity: 1, unit: "tbsp" },
+          { name: "Garlic cloves, minced", quantity: 4, unit: "" },
+          { name: "Fresh ginger, finely grated", quantity: 2, unit: "tsp" },
+          { name: "Rice wine (mirin or sake)", quantity: 2, unit: "tbsp" }
         ]
       },
       {
-        group: "Spice Mix",
+        group: "Vegetables",
         items: [
-          { name: "Smoked paprika", quantity: 2, unit: "tsp" },
-          { name: "Ground cumin", quantity: 1, unit: "tsp" },
-          { name: "Ground coriander", quantity: 1, unit: "tsp" },
-          { name: "Dried chilli flakes", quantity: 1, unit: "tsp" },
-          { name: "Isot (Urfa biber) chilli flakes", quantity: 1, unit: "tsp" },
-          { name: "Salt", quantity: 1.5, unit: "tsp" },
-          { name: "Black pepper", quantity: 0.5, unit: "tsp" }
+          { name: "Sweet potato, peeled and sliced into thin half-moons", quantity: 300, unit: "g" },
+          { name: "White cabbage, roughly chopped", quantity: 250, unit: "g" },
+          { name: "Spring onions, cut into 4cm lengths", quantity: 6, unit: "" },
+          { name: "Neutral oil (sunflower or vegetable)", quantity: 2, unit: "tbsp" }
         ]
       },
       {
         group: "To Serve",
         items: [
-          { name: "Little gem or cos lettuce leaves", quantity: 2, unit: "heads" },
-          { name: "Fresh flat-leaf parsley", quantity: 1, unit: "large bunch" },
-          { name: "Fresh mint leaves", quantity: 1, unit: "small bunch" },
-          { name: "Spring onions", quantity: 4, unit: "" },
-          { name: "Pomegranate seeds", quantity: 80, unit: "g" },
-          { name: "Walnut halves, roughly chopped", quantity: 60, unit: "g" },
-          { name: "Lemon wedges", quantity: 4, unit: "" }
+          { name: "Steamed jasmine or short-grain rice", quantity: 320, unit: "g" },
+          { name: "Toasted sesame seeds", quantity: 1, unit: "tbsp" },
+          { name: "Perilla leaves or fresh coriander, torn", quantity: 1, unit: "handful" }
         ]
       }
     ],
     substitutes: [
-      { ingredient: "Fine bulgur wheat", alternatives: ["Couscous (no soak needed)", "Quinoa (cooked and cooled)"] },
-      { ingredient: "Isot (Urfa biber) chilli flakes", alternatives: ["Chipotle chilli flakes", "Smoked dried chilli flakes"] },
-      { ingredient: "Pomegranate molasses", alternatives: ["Tamarind paste thinned with a little water", "Reduced balsamic glaze with a squeeze of lemon"] }
+      { ingredient: "Gochujang", alternatives: ["Sriracha mixed with a little white miso paste", "Sambal oelek with a pinch of sugar"] },
+      { ingredient: "Gochugaru", alternatives: ["A mix of sweet paprika and a pinch of cayenne", "Regular dried chilli flakes (use half the quantity)"] },
+      { ingredient: "Sweet potato", alternatives: ["Butternut squash", "Regular potato, par-boiled first"] },
+      { ingredient: "Perilla leaves", alternatives: ["Fresh mint", "Fresh basil"] }
     ],
     instructions: [
-      "Place the fine bulgur in a large mixing bowl. Pour over the boiling water, stir briefly, then cover with a plate or cling film and leave to absorb for 15 minutes. The bulgur should be fully swollen and tender — if not, add a splash more water and leave 5 more minutes.",
-      "Once absorbed, uncover and fluff with a fork. Add the tomato paste, pomegranate molasses, olive oil and lemon juice, then sprinkle over all the spices and salt. Begin kneading with both hands — this is the key step. Work the mixture firmly for 8–10 minutes, squeezing and folding until it turns a deep brick red and holds together when pressed. Taste and adjust: more molasses for tartness, more chilli for heat, more salt if needed.",
-      "Finely slice the spring onions on an angle. Strip the parsley and mint leaves from their stems. Arrange all the wrapping ingredients — lettuce leaves, herbs, spring onion, pomegranate seeds, walnuts and lemon wedges — on a large platter.",
-      "Shape the bulgur mixture into small logs or oval patties, roughly the size of your thumb. You should get around 16–20 pieces. Arrange on the platter alongside the vegetables.",
-      "To eat: take a lettuce leaf, place a couple of cig köfte inside, add parsley, mint, spring onion, a scatter of pomegranate seeds and walnuts, then squeeze over lemon and roll it up. Eat immediately — the contrast of chewy, spiced bulgur against the fresh herbs and juicy pomegranate is the whole point."
+      "Step 1 — Combine gochujang, gochugaru, soy sauce, sesame oil, honey, garlic, ginger, and rice wine in a large bowl. Whisk until smooth. Add the chicken pieces and toss thoroughly to coat. Leave to marinate for at least 20 minutes at room temperature, or up to overnight in the fridge covered.",
+      "Step 2 — Heat a large, wide frying pan or wok over medium-high heat until very hot. Add the neutral oil, then lay the sweet potato slices in a single layer. Cook for 3–4 minutes without stirring until golden on the underside, then flip and cook a further 2 minutes. Push to the edges of the pan.",
+      "Step 3 — Add the marinated chicken pieces to the centre of the pan in a single layer. Cook undisturbed for 3 minutes to build caramelisation on the bottom, then stir and cook for a further 4–5 minutes until cooked through and the sauce is darkening and sticky at the edges.",
+      "Step 4 — Add the chopped cabbage and spring onions, tossing everything together vigorously. Cook for 2–3 minutes more — you want the cabbage softened but still with a little bite. If the pan looks dry, add a splash of water (2–3 tbsp) to loosen the sauce and prevent burning.",
+      "Step 5 — Taste and adjust seasoning — add a little more honey for sweetness or soy for saltiness. Pile onto steamed rice and scatter generously with toasted sesame seeds and torn perilla or coriander. Serve immediately straight from the pan."
     ]
   },
   {
     id: "sug2",
-    title: "Asturian Pork & White Bean Stew — Fabada Asturiana with Smoked Chorizo, Morcilla & Saffron",
-    category: "Pork",
-    calories: 680,
-    protein: 42,
-    fibre: 14,
-    healthScore: 65,
-    time: "1 hr 45 mins",
-    serves: "6",
-    desc: "Fabada Asturiana is Spain\'s great cold-weather comfort dish — a deeply smoky, silky stew of fat white fabes beans slowly cooked with smoked chorizo, paprika-rich morcilla and cured pork until the broth is glossy and extraordinary. A pinch of saffron bloomed in warm water adds a haunting golden hue and subtle floral depth. This is one-pot cooking at its most magnificent: humble ingredients, extraordinary results.",
-    emoji: "🍲",
-    image: "https://images.unsplash.com/photo-1721942893909-d3b59335bfdc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxBc3R1cmlhbiUyMFBvcmslMjAlMjYlMjBXaGl0ZSUyMEJlYW4lMjBTdGV3JTIwJUUyJTgwJTk0JTIwRmFiYWRhJTIwQXN0dXJpYW5hJTIwd2l0aCUyMFNtb2tlZCUyMENob3Jpem8lMkMlMjBNb3JjaWxsYSUyMCUyNiUyMFNhZmZyb24lMjBmb29kJTIwZGlzaHxlbnwwfDB8fHwxNzg1MzAxOTkxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    title: "Venetian Sarde in Saor — Sweet & Sour Fried Sardines with Onions, Raisins, Pine Nuts & Polenta",
+    category: "Fish & Seafood",
+    calories: 520,
+    protein: 28,
+    fibre: 4,
+    healthScore: 71,
+    time: "55 mins",
+    serves: "4",
+    desc: "Sarde in Saor is one of Venice\'s oldest and most beloved dishes — a glorious sweet-sour preparation of fried sardines marinated with slow-cooked onions, white wine vinegar, raisins, and pine nuts that creates something utterly extraordinary from humble ingredients. The magic is in the contrast: rich fried fish against the bright, jammy agrodolce onions, the pop of pine nuts, the sweet chew of raisins. It traditionally improves with a day\'s rest in the fridge, but it\'s wonderful immediately too, served alongside creamy soft polenta.",
+    emoji: "🐟",
+    image: "https://images.unsplash.com/photo-1615852735201-2ce54ffa6afa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxWZW5ldGlhbiUyMFNhcmRlJTIwaW4lMjBTYW9yJTIwJUUyJTgwJTk0JTIwU3dlZXQlMjAlMjYlMjBTb3VyJTIwRnJpZWQlMjBTYXJkaW5lcyUyMHdpdGglMjBPbmlvbnMlMkMlMjBSYWlzaW5zJTJDJTIwUGluZSUyME51dHMlMjAlMjYlMjBQb2xlbnRhJTIwZm9vZCUyMGRpc2h8ZW58MHwwfHx8MTc4NTM4ODM5MHww&ixlib=rb-4.1.0&q=80&w=1080",
     ingredientGroups: [
       {
-        group: "Beans & Pork",
+        group: "Sardines",
         items: [
-          { name: "Dried large white beans (fabes, cannellini or butter beans), soaked overnight", quantity: 500, unit: "g" },
-          { name: "Smoked cooking chorizo, in 2cm rounds", quantity: 250, unit: "g" },
-          { name: "Morcilla (Spanish black pudding) or good black pudding", quantity: 200, unit: "g" },
-          { name: "Smoked streaky bacon or pancetta lardons", quantity: 150, unit: "g" },
-          { name: "Pork belly or pork ribs", quantity: 300, unit: "g" }
+          { name: "Fresh sardines, scaled and gutted (or large butterflied fillets)", quantity: 600, unit: "g" },
+          { name: "Plain flour, for dusting", quantity: 50, unit: "g" },
+          { name: "Olive oil, for frying", quantity: 80, unit: "ml" },
+          { name: "Flaky sea salt and black pepper", quantity: 1, unit: "pinch" }
         ]
       },
       {
-        group: "Aromatics & Broth",
+        group: "Saor (Sweet & Sour Onions)",
         items: [
-          { name: "Onion, halved", quantity: 1, unit: "large" },
-          { name: "Garlic cloves, whole and unpeeled", quantity: 6, unit: "" },
-          { name: "Bay leaves", quantity: 3, unit: "" },
-          { name: "Saffron threads", quantity: 0.5, unit: "tsp" },
-          { name: "Smoked sweet paprika (pimentón de la Vera)", quantity: 2, unit: "tsp" },
-          { name: "Cold water or light chicken stock", quantity: 1.5, unit: "litres" },
+          { name: "White onions, thinly sliced into half-moons", quantity: 500, unit: "g" },
           { name: "Extra virgin olive oil", quantity: 3, unit: "tbsp" },
-          { name: "Salt and black pepper", quantity: 1, unit: "to taste" }
+          { name: "White wine vinegar", quantity: 80, unit: "ml" },
+          { name: "Dry white wine", quantity: 60, unit: "ml" },
+          { name: "Raisins or sultanas", quantity: 40, unit: "g" },
+          { name: "Pine nuts, lightly toasted", quantity: 40, unit: "g" },
+          { name: "Caster sugar", quantity: 1, unit: "tsp" },
+          { name: "Bay leaves", quantity: 2, unit: "" },
+          { name: "Whole black peppercorns", quantity: 6, unit: "" }
+        ]
+      },
+      {
+        group: "Soft Polenta",
+        items: [
+          { name: "Coarse polenta (not instant)", quantity: 200, unit: "g" },
+          { name: "Whole milk", quantity: 500, unit: "ml" },
+          { name: "Water", quantity: 700, unit: "ml" },
+          { name: "Unsalted butter", quantity: 30, unit: "g" },
+          { name: "Parmesan, finely grated", quantity: 30, unit: "g" },
+          { name: "Fine salt", quantity: 1, unit: "tsp" }
         ]
       },
       {
         group: "To Finish",
         items: [
           { name: "Flat-leaf parsley, roughly chopped", quantity: 1, unit: "small bunch" },
-          { name: "Crusty bread", quantity: 1, unit: "loaf, to serve" }
+          { name: "Lemon, cut into wedges", quantity: 1, unit: "" }
         ]
       }
     ],
     substitutes: [
-      { ingredient: "Morcilla", alternatives: ["Good quality British black pudding", "Omit and add extra chorizo"] },
-      { ingredient: "Fabes (large white beans)", alternatives: ["Butter beans (tinned, added in last 20 mins)", "Cannellini beans (soaked overnight)"] },
-      { ingredient: "Smoked cooking chorizo", alternatives: ["Semi-cured chorizo ring, sliced", "Kielbasa sausage"] }
+      { ingredient: "Fresh sardines", alternatives: ["Mackerel fillets", "Fresh herring fillets"] },
+      { ingredient: "White wine vinegar", alternatives: ["Cider vinegar", "Sherry vinegar (slightly sweeter)"] },
+      { ingredient: "Pine nuts", alternatives: ["Flaked almonds, toasted", "Roughly chopped walnuts"] },
+      { ingredient: "Polenta", alternatives: ["Creamy mashed potato", "Crusty sourdough bread"] }
     ],
     instructions: [
-      "Drain the soaked beans and place in a large heavy-bottomed pot or casserole. Add the onion halves, whole garlic cloves and bay leaves. Place the pork belly or ribs on top. Pour over the cold water or stock — the liquid should cover everything by about 5cm. Bring to a gentle boil, skim off any grey foam that rises to the surface during the first 10 minutes.",
-      "Bloom the saffron: place the threads in a small cup with 3 tablespoons of warm water and leave to steep for 10 minutes until the liquid turns a deep orange gold.",
-      "Once skimmed, reduce the heat to a very gentle simmer. Add the chorizo rounds, bacon lardons, saffron and its soaking water, smoked paprika and olive oil. Do not stir vigorously — fabada is best when the beans stay whole, so just give the pot a gentle swirl occasionally. Partially cover and cook for 1 hour 15 minutes.",
-      "Add the morcilla or black pudding in large chunks, nestling it into the broth carefully. Continue simmering uncovered for a further 20–25 minutes until the beans are completely tender and the broth has thickened to a silky, lightly glossy consistency. If the broth is too thin, remove a cup of beans, mash them to a paste and stir back in to thicken naturally.",
-      "Remove the onion halves, bay leaves and pork belly. Shred the pork belly meat and return it to the pot. Taste and season generously with salt and black pepper — the smoked meats are salty, so taste before adding salt. Serve in deep bowls scattered with flat-leaf parsley alongside thick slices of crusty bread to mop up the extraordinary broth."
+      "Step 1 — Start the saor: warm 3 tbsp olive oil in a large heavy-based pan over low heat. Add the sliced onions, bay leaves, and peppercorns with a good pinch of salt. Cook very gently, stirring occasionally, for 25–30 minutes until the onions are completely soft, sweet, and golden — don\'t rush this.",
+      "Step 2 — Add the white wine to the onions and let it bubble for 1 minute, then add the white wine vinegar, sugar, raisins, and pine nuts. Stir well and cook for a further 5 minutes until the liquid has mostly absorbed and the mixture smells wonderfully sweet-sour. Set aside. Remove the bay leaves.",
+      "Step 3 — Make the polenta: bring the milk and water to a gentle simmer in a large saucepan with 1 tsp salt. Pour in the polenta in a steady stream, whisking constantly to prevent lumps. Switch to a wooden spoon and stir frequently over low heat for 35–40 minutes (or per packet instructions) until thick and pulling away from the sides. Stir in butter and Parmesan. Keep warm over the lowest heat, adding a splash of water if it thickens too much.",
+      "Step 4 — Season the sardines with salt and pepper, then dust lightly in flour, shaking off any excess. Heat the olive oil in a large non-stick frying pan over medium-high heat until shimmering. Fry the sardines in batches for 2 minutes per side until golden and just cooked through. Drain briefly on kitchen paper.",
+      "Step 5 — Arrange the fried sardines in a serving dish. Spoon the warm sweet-sour onion mixture generously over the top, making sure to get plenty of raisins and pine nuts in each portion. Scatter with chopped parsley. Serve immediately alongside bowls of soft polenta with lemon wedges for squeezing over — or cover and refrigerate for up to 24 hours for the flavours to deepen even further."
     ]
   },
   {
     id: "sug3",
-    title: "Keralan Prawn & Raw Mango Curry — Chemmeen Manga with Coconut Milk, Curry Leaves & Steamed Rice",
-    category: "Fish & Seafood",
-    calories: 490,
-    protein: 34,
-    fibre: 5,
-    healthScore: 76,
-    time: "35 mins",
+    title: "Mujaddara — Lebanese Lentils & Rice with Crispy Fried Onions, Cumin Yoghurt & Fattoush",
+    category: "Vegan",
+    calories: 510,
+    protein: 18,
+    fibre: 11,
+    healthScore: 86,
+    time: "50 mins",
     serves: "4",
-    desc: "This coastal Kerala classic is everything a summer curry should be — sharp, fragrant raw mango simmered in golden coconut milk with turmeric, green chillies and a sizzling tempering of curry leaves and mustard seeds, with fat prawns folded in at the very end so they stay perfectly tender. The unripe mango provides a vibrant tartness that makes coconut milk curries sing in a way lime juice never quite can. Serve with steamed rice and nothing else.",
-    emoji: "🦐",
-    image: "https://images.pexels.com/photos/8395780/pexels-photo-8395780.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    desc: "Mujaddara is one of the great dishes of the Levant — deceptively simple, made from just lentils, rice, and onions, yet so much more than the sum of its parts. The secret is the onions: slowly fried until they\'re deeply mahogany and frizzled to near-crispy perfection, they bring a smokiness and sweetness that transforms the whole dish. Piled onto the earthy lentil rice and served alongside a bright, crunchy fattoush salad with toasted flatbread, this is extraordinarily satisfying, nourishing food.",
+    emoji: "🫙",
+    image: "https://images.pexels.com/photos/37019701/pexels-photo-37019701.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     ingredientGroups: [
       {
-        group: "Curry",
+        group: "Lentils & Rice",
         items: [
-          { name: "Raw king prawns, peeled and deveined", quantity: 600, unit: "g" },
-          { name: "Raw mango (firm, unripe), peeled and cut into thin wedges", quantity: 1, unit: "large" },
-          { name: "Coconut milk (full fat)", quantity: 400, unit: "ml" },
-          { name: "Coconut cream", quantity: 100, unit: "ml" },
-          { name: "Green chillies, slit lengthways", quantity: 3, unit: "" },
-          { name: "Ground turmeric", quantity: 1, unit: "tsp" },
-          { name: "Kashmiri chilli powder", quantity: 1, unit: "tsp" },
-          { name: "Ground coriander", quantity: 1.5, unit: "tsp" },
-          { name: "Salt", quantity: 1, unit: "tsp" }
+          { name: "Green or brown lentils, rinsed", quantity: 250, unit: "g" },
+          { name: "Long-grain white rice, rinsed", quantity: 200, unit: "g" },
+          { name: "Water", quantity: 900, unit: "ml" },
+          { name: "Ground cumin", quantity: 2, unit: "tsp" },
+          { name: "Ground allspice", quantity: 1, unit: "tsp" },
+          { name: "Ground cinnamon", quantity: 0.5, unit: "tsp" },
+          { name: "Fine salt", quantity: 1.5, unit: "tsp" },
+          { name: "Olive oil", quantity: 2, unit: "tbsp" }
         ]
       },
       {
-        group: "Tempering",
+        group: "Crispy Onions",
         items: [
-          { name: "Coconut oil", quantity: 2, unit: "tbsp" },
-          { name: "Mustard seeds", quantity: 1, unit: "tsp" },
-          { name: "Dried red chillies", quantity: 2, unit: "" },
-          { name: "Curry leaves (fresh or frozen)", quantity: 20, unit: "leaves" },
-          { name: "Shallots, finely sliced", quantity: 3, unit: "large" },
-          { name: "Garlic cloves, finely sliced", quantity: 4, unit: "" },
-          { name: "Fresh ginger, finely grated", quantity: 1.5, unit: "tsp" }
+          { name: "Large onions, halved and thinly sliced into half-moons", quantity: 4, unit: "" },
+          { name: "Vegetable oil", quantity: 100, unit: "ml" },
+          { name: "Flaky sea salt", quantity: 1, unit: "pinch" }
         ]
       },
       {
-        group: "To Serve",
+        group: "Cumin Yoghurt (optional — omit for vegan)",
         items: [
-          { name: "Steamed basmati or Kerala red rice", quantity: 300, unit: "g dry weight" },
-          { name: "Fresh coconut flakes, toasted (optional)", quantity: 30, unit: "g" }
+          { name: "Full-fat natural yoghurt", quantity: 200, unit: "g" },
+          { name: "Ground cumin", quantity: 0.5, unit: "tsp" },
+          { name: "Garlic clove, minced", quantity: 1, unit: "" },
+          { name: "Lemon juice", quantity: 1, unit: "tbsp" }
+        ]
+      },
+      {
+        group: "Fattoush Salad",
+        items: [
+          { name: "Ripe tomatoes, cut into wedges", quantity: 3, unit: "" },
+          { name: "Mini cucumbers, roughly chopped", quantity: 3, unit: "" },
+          { name: "Radishes, thinly sliced", quantity: 6, unit: "" },
+          { name: "Romaine or Little Gem lettuce, roughly torn", quantity: 1, unit: "head" },
+          { name: "Flat-leaf parsley, leaves picked", quantity: 1, unit: "large bunch" },
+          { name: "Fresh mint leaves", quantity: 0.5, unit: "small bunch" },
+          { name: "Small pitta breads or flatbreads", quantity: 2, unit: "" },
+          { name: "Sumac", quantity: 2, unit: "tsp" },
+          { name: "Extra virgin olive oil", quantity: 3, unit: "tbsp" },
+          { name: "Lemon juice", quantity: 2, unit: "tbsp" },
+          { name: "Pomegranate molasses", quantity: 1, unit: "tsp" },
+          { name: "Salt and black pepper", quantity: 1, unit: "pinch" }
         ]
       }
     ],
     substitutes: [
-      { ingredient: "Raw (unripe) mango", alternatives: ["Green cooking apples (tart variety like Granny Smith) with a squeeze of lime", "Tamarind paste (1 tbsp dissolved in 50ml water, added in place of mango)"] },
-      { ingredient: "Fresh curry leaves", alternatives: ["Frozen curry leaves (use straight from frozen)", "Dried curry leaves (use double the quantity, add earlier)"] },
-      { ingredient: "Raw king prawns", alternatives: ["Sustainable large tiger prawns", "Firm white fish chunks (cod or hake, added 5 mins before end)"] }
+      { ingredient: "Green lentils", alternatives: ["Brown lentils", "Puy lentils (will hold shape better)"] },
+      { ingredient: "Long-grain rice", alternatives: ["Basmati rice", "Bulgur wheat (reduce cooking time)"] },
+      { ingredient: "Pomegranate molasses", alternatives: ["A little balsamic vinegar mixed with honey", "Extra lemon juice with a pinch of sugar"] },
+      { ingredient: "Sumac", alternatives: ["Lemon zest with a pinch of salt", "Za\'atar (adds herbs too)"] }
     ],
     instructions: [
-      "Place the raw mango wedges in a wide, shallow pan or kadai. Pour over the coconut milk and add the turmeric, Kashmiri chilli powder, ground coriander, green chillies and salt. Stir to combine and bring to a gentle simmer over medium heat. Cook uncovered for 10–12 minutes, stirring occasionally, until the mango has softened and the coconut milk has absorbed the spices into a vivid golden sauce.",
-      "Stir in the coconut cream and reduce the heat to low. Taste the sauce — it should be rich, mildly spiced and bracingly tart from the mango. Add more salt if needed. Add the prawns to the simmering sauce, stir gently to coat, and cook for 3–4 minutes until just pink and curled through. Do not overcook — pull the pan off the heat the moment the prawns are opaque. Carry-over heat will finish them perfectly.",
-      "Make the tempering while the prawns cook: heat the coconut oil in a small frying pan over high heat until shimmering. Add the mustard seeds and dried red chillies and let them splutter for 20 seconds. Add the curry leaves — they will crackle and spit, so stand back. Immediately add the sliced shallots and cook, stirring, for 3–4 minutes until golden and beginning to crisp at the edges. Add the garlic and ginger and cook for a further minute until fragrant.",
-      "Pour the entire contents of the tempering pan directly over the prawn curry. It will sizzle dramatically and the curry leaves will perfume the whole dish. Stir gently to incorporate the tempering into the sauce.",
-      "Serve immediately in deep bowls over steamed rice, scattered with toasted coconut flakes if using. The magic of this dish is the interplay of tart mango, sweet coconut and the aromatic crunch of the curry leaf tempering — eat it while it\'s hot."
+      "Step 1 — Cook the crispy onions first as they take the longest and are the soul of the dish: pour the vegetable oil into a large wide saucepan over medium-high heat. Add all the sliced onions with a pinch of salt. Fry, stirring regularly, for 30–35 minutes — they\'ll sweat down, then slowly turn golden, then finally deep mahogany and frizzled. Don\'t rush this. Once deeply caramelised and beginning to crisp, scoop out about two-thirds onto a plate lined with kitchen paper (leave the rest and the oil in the pan).",
+      "Step 2 — To the pan with the remaining onions and oil, add the cumin, allspice, and cinnamon. Stir for 30 seconds until fragrant. Add the rinsed lentils and 600ml of the water. Bring to a boil, then reduce to a simmer and cook for 15 minutes until the lentils are about halfway tender.",
+      "Step 3 — Add the rinsed rice, the remaining 300ml water, and 1.5 tsp salt to the pan. Stir once, bring back to a simmer, then cover tightly with a lid and cook on the lowest possible heat for 18 minutes. Remove from the heat and leave, still covered, to steam for 10 minutes. Fluff gently with a fork.",
+      "Step 4 — While the rice and lentils steam, make the fattoush. Tear the pitta into rough pieces and toast under a hot grill or in a dry frying pan until golden and crispy. Whisk together the olive oil, lemon juice, pomegranate molasses, and sumac in a large bowl. Season. Toss in the tomatoes, cucumbers, radishes, lettuce, parsley, and mint. Add the toasted pitta pieces and toss everything together. Taste and adjust — it should be bright, tangy, and herby.",
+      "Step 5 — If making the cumin yoghurt, stir together the yoghurt, cumin, garlic, and lemon juice in a small bowl and season. To serve, spoon the warm mujaddara into bowls or onto a platter. Top generously with the reserved crispy onions — be really generous, they are the highlight. Add a good dollop of cumin yoghurt alongside and serve the bright fattoush on the side. Eat immediately while the contrast of warm lentil rice and cold crunchy salad is at its best."
     ]
   }
 ];
