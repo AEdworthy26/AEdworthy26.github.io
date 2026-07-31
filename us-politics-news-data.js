@@ -1,60 +1,60 @@
 // us-politics-news-data.js
-// Auto-updated 2026-07-30 — do not edit manually
+// Auto-updated 2026-07-31 — do not edit manually
 
 var US_POLITICS_NEWS = {
-  date: "2026-07-30",
+  date: "2026-07-31",
   main: {
-    title: "Trump Asks Supreme Court to Overturn $83 Million Verdict in E. Jean Carroll Case",
+    title: "Republican Lame Ducks Defy Trump, Blocking Todd Blanche\'s Attorney General Nomination",
     category: "Politics",
     content: [
-      "President Donald Trump\'s legal team has formally asked the Supreme Court to overturn the $83 million verdict rendered against him in the E. Jean Carroll defamation and sexual abuse case. Trump\'s attorneys are leaning on a landmark 2024 Supreme Court ruling that granted sitting and former presidents sweeping immunity for official acts taken while in office. The appeal represents one of the most significant legal maneuvers of Trump\'s second term, as he seeks to use that precedent to shield himself from civil liability in a case that predates his return to the White House.",
-      "The core argument advanced by Trump\'s legal team is that the immunity doctrine established by the high court in 2024 should extend beyond criminal prosecutions and apply equally to civil judgments. Legal experts have noted this is a novel and aggressive interpretation of that ruling, which was itself considered a dramatic expansion of presidential legal protections. If the Supreme Court agrees to hear the case and rules in Trump\'s favor, it could have sweeping implications for the ability of private citizens to seek civil redress against a sitting or former president.",
-      "The Carroll verdict was one of the most high-profile legal defeats Trump faced during and between his presidential terms, with a jury finding him liable for sexual abuse and defamation after he publicly denied Carroll\'s allegations. The $83 million figure reflected substantial punitive damages, with the jury signaling its intent to send a strong message. Trump has consistently denied all of Carroll\'s allegations and has attacked the verdict as politically motivated.",
-      "The move to appeal to the Supreme Court puts the justices in the politically delicate position of deciding whether to revisit or dramatically expand their own 2024 immunity precedent. Democrats have pointed to the appeal as further evidence of what they describe as Trump\'s ongoing effort to place himself above the rule of law. The case is also becoming intertwined with the broader midterm election narrative, as Democrats seek to highlight Trump\'s legal entanglements alongside his personal financial gains while in office.",
-      "The Supreme Court has not yet indicated whether it will take up the appeal, and the justices could decline to hear it, leaving the lower court verdict intact. Should the court agree to consider the case, it would likely not be heard until the court\'s next term, prolonging a legal saga that has followed Trump across multiple election cycles. The outcome will be closely watched not only for its immediate impact on Trump\'s finances, but for what it signals about the long-term boundaries of presidential immunity in American law.",
+      "President Trump\'s nomination of Todd Blanche for attorney general has run into serious and unexpected resistance from within his own party, as two outgoing Republican senators have emerged as significant obstacles to the confirmation. Senators John Cornyn of Texas and Thom Tillis of North Carolina — both of whom are leaving the Senate after this year — are withholding their support over concerns about a Justice Department settlement tied to President Trump\'s own tax returns. The rebellion has thrown the nomination into uncertainty at a moment when Trump had hoped to consolidate control over the nation\'s top law enforcement office.",
+      "Senator John Cornyn, once a reliable ally of the president, is now wielding what analysts are calling 'lame-duck power' — the leverage that comes with knowing one\'s political future is no longer beholden to the White House or the Republican base. Because Cornyn is not seeking re-election, he has little to fear from Trump\'s political wrath, making him a uniquely free agent in the Senate chamber. His willingness to stand in the way of the Blanche nomination signals that at least some Republicans feel emboldened to exercise independent judgment once the pressures of electoral accountability are lifted.",
+      "At the heart of the senators' objections is a Justice Department settlement connected to President Trump\'s tax returns, the details of which have prompted demands for greater transparency and explanation from the administration. Neither Cornyn nor Tillis has signaled that they are prepared to move forward without satisfactory answers, and the standoff has stalled what the White House expected to be a relatively smooth confirmation process. The episode raises broader questions about the independence of the Justice Department and whether the Blanche nomination was shaped in part by the president\'s personal legal interests.",
+      "In a striking acknowledgment of the political difficulty, President Trump himself said he 'may' pull the Blanche nomination temporarily, a rare retreat that underscores just how precarious the situation has become. Such a move would represent an unusual public setback for a president who has generally pushed through his nominees with unified Republican support. The willingness to even consider withdrawing the nomination suggests the White House is privately uncertain whether it has the votes to confirm Blanche in the current environment.",
+      "The standoff over the attorney general nomination reflects deeper tensions within the Republican Party as it navigates the later stages of Trump\'s presidency. Lame-duck senators, freed from the usual constraints of partisan loyalty and electoral politics, have historically been unpredictable forces in the Senate, and the Cornyn-Tillis bloc is demonstrating exactly that dynamic in real time. Whether the White House can resolve the underlying concerns about the DOJ settlement — or find another path to confirmation — will be one of the defining congressional battles of the coming weeks."
     ],
-    image: "https://images.pexels.com/photos/6077326/pexels-photo-6077326.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    source: "The Washington Post",
-    sourceUrl: "https://www.washingtonpost.com/politics/2026/07/28/trump-asks-supreme-court-overturn-83-million-verdict-e-jean-carroll-case/"
+    image: "https://images.unsplash.com/photo-1782547821266-1be9feb1108e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxSZXB1YmxpY2FuJTIwTGFtZSUyMER1Y2tzJTIwRGVmeSUyMFRydW1wJTJDJTIwQmxvY2tpbmclMjBUb2RkJTIwQmxhbmNoZSU1Q3xlbnwwfDB8fHwxNzg1NDc0MjAzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    source: "NPR",
+    sourceUrl: "https://www.npr.org/2026/07/30/nx-s1-5913714/trumps-attorney-general-pick-hits-resistance-from-republicans"
   },
   secondary: [
     {
       id: "us1",
-      title: "Trump Claims Supreme Court Rulings on Tariffs and Birthright Citizenship Cost Country 'Trillions'",
-      summary: "President Trump lashed out at the Supreme Court on Truth Social, claiming its rulings striking down his emergency tariffs and birthright citizenship order have cost the United States enormous sums of money and prestige.",
+      title: "Fauci Pleads the Fifth at Senate Hearing, Raising Public Health Concerns",
+      summary: "Dr. Anthony Fauci invoked his constitutional right to silence during a three-hour Senate hearing on COVID origins, with experts warning the episode may further erode public health staffing across the country.",
       body: [
-        "In a post on Truth Social, President Trump accused the Supreme Court of costing the nation 'trillions and trillions of dollars' through what he characterized as negative rulings, specifically targeting decisions that struck down his emergency tariff orders and his executive action restricting birthright citizenship. The outburst reflects growing tension between the White House and the judiciary, even as Trump\'s own Supreme Court appointees remain on the bench.",
-        "The remarks underscore a recurring dynamic of Trump\'s second term, in which he has frequently clashed with courts — including the Supreme Court — when rulings have not gone his way. Critics argue the attacks on the judiciary represent a dangerous erosion of respect for the separation of powers, while Trump\'s supporters view it as a president fighting back against what they see as judicial overreach."
+        "In a dramatic Senate hearing this week, Dr. Anthony Fauci — once the nation\'s leading infectious disease expert — repeatedly invoked his Fifth Amendment right to remain silent, leaving senators and the public with unanswered questions about a range of allegations related to COVID-19 origins. The three-hour session, driven in large part by Senator Rand Paul, was one of the most high-profile confrontations between Congress and a former public health official in recent memory.",
+        "Public health experts are now warning that the aggressive targeting of Fauci could have a lasting 'chilling effect' on the field, discouraging qualified professionals from taking on senior government roles out of fear of future political prosecution. The concern is that the spectacle of a lifelong public servant being hauled before Congress and forced to plead the Fifth may make recruitment and retention of top public health talent significantly harder in the years ahead."
       ],
-      image: "https://thehill.com/wp-content/uploads/sites/2/2026/07/AP26208625012174-e1785332919712.jpg?w=900",
-      source: "The Hill",
-      url: "https://thehill.com/homenews/administration/5998515-trump-supreme-court-tariffs/",
+      image: "https://static01.nyt.com/images/2026/07/30/multimedia/30dc-fauci-explainer-gqlf/30dc-fauci-explainer-gqlf-mediumSquareAt3X.jpg",
+      source: "NPR",
+      url: "https://www.npr.org/2026/07/30/nx-s1-5913384/anthony-fauci-fifth-rand-paul-covid-public-health-chilling",
       category: "Politics"
     },
     {
       id: "us2",
-      title: "Fauci to Face Senate Contempt Vote After Refusing to Answer COVID Questions",
-      summary: "Dr. Anthony Fauci faces a potential contempt vote in the Senate after declining to answer questions before Congress about the COVID-19 pandemic, with Senator Rand Paul warning of possible criminal prosecution.",
+      title: "Trump\'s Claims of Chinese Election Interference Cast Into Doubt by Declassified Intelligence",
+      summary: "Newly released declassified intelligence suggests Beijing\'s hacking of voter rolls was aimed at gathering personal data for espionage purposes, not manipulating American elections as Trump had claimed.",
       body: [
-        "Former National Institute of Allergy and Infectious Diseases director Dr. Anthony Fauci is set to face a contempt vote in the Senate after he refused to answer certain questions posed to him during congressional proceedings related to the origins of and response to the COVID-19 pandemic. Senator Rand Paul, one of Fauci\'s most persistent critics, stated bluntly that 'there is a very real chance that he could be prosecuted' as a result of his refusal to cooperate.",
-        "The confrontation between Fauci and Senate Republicans represents the latest chapter in a years-long political battle over accountability for decisions made during the pandemic. Democrats and many public health advocates have argued that the hearings are politically motivated, while Republicans contend that the American public deserves full transparency about one of the most consequential public health crises in modern history."
+        "Declassified intelligence released this week has raised serious doubts about President Trump\'s assertions that China interfered in American elections by hacking into state voter rolls, with evidence instead pointing to a data-collection operation aimed at espionage rather than electoral manipulation. States have also pushed back on the characterization, further complicating the White House\'s narrative.",
+        "The revelation puts Trump in an awkward political position, as his administration had leaned heavily on claims of Chinese election interference to bolster arguments about the integrity of recent votes. The declassified findings suggest that while Chinese hacking activity was real, its goals were fundamentally different from what the president publicly alleged."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/a41f/live/7f66f650-8bbd-11f1-b8ee-9b3c26ad07bb.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.co.uk/news/articles/czdmv0vyv4zo?at_medium=RSS&at_campaign=rss",
+      image: "https://images.unsplash.com/photo-1550531996-ff3dcede9477?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUcnVtcCU1Q3xlbnwwfDB8fHwxNzg1NDc0MjA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "Washington Post",
+      url: "https://www.washingtonpost.com/politics/2026/07/30/states-cast-doubt-trumps-claim-that-china-hacked-their-voter-rolls/",
       category: "Politics"
     },
     {
       id: "us3",
-      title: "Trump Has Made $2.2 Billion While in Office — Democrats Plan to Make It a Midterm Issue",
-      summary: "A new report reveals that President Trump took in a staggering $2.2 billion in personal income last year while serving as president, and Democrats are now planning to make his personal financial gains a central campaign issue in the upcoming midterm elections.",
+      title: "Trump Administration Seeks Additional $10 Million for July Fourth Celebrations",
+      summary: "The Trump-backed group that organized the 250th birthday festivities and July Fourth fireworks is requesting an extra $10 million on top of the $150 million Congress already allocated for the events.",
       body: [
-        "President Trump\'s personal wealth has soared to extraordinary levels during his time in the White House, with reports indicating he took in approximately $2.2 billion last year alone, a figure that has drawn sharp scrutiny from ethics watchdogs and political opponents alike. The scale of the earnings has reignited longstanding questions about potential conflicts of interest between the president\'s business dealings and his official duties.",
-        "Democrats are now moving to place Trump\'s personal financial enrichment at the center of their midterm election messaging, hoping the issue resonates with voters concerned about economic fairness and government integrity. The strategy reflects the party\'s broader effort to draw contrasts with Trump on economic issues, even as they debate internally — particularly in battleground states like Michigan — what direction the party should take heading into the election."
+        "The organization behind President Trump\'s high-profile July Fourth celebrations marking America\'s 250th birthday is seeking an additional $10 million in reimbursements from Congress, even after lawmakers had already allocated $150 million for the landmark festivities. The request has drawn scrutiny over how the funds were managed and whether the original budget was adequate or simply poorly planned.",
+        "The episode adds to ongoing questions about financial oversight of Trump-backed public events and the relationship between the White House and the nonprofit or quasi-governmental groups it enlists to carry out its ceremonial ambitions. Critics are likely to seize on the cost overrun as evidence of fiscal mismanagement, while supporters may frame it as a necessary investment in a once-in-a-generation national celebration."
       ],
-      image: "https://static01.nyt.com/images/2026/07/29/briefing/trump-enrichment-gif/trump-enrichment-gif-mediumSquareAt3X.jpg",
-      source: "The New York Times",
-      url: "https://www.nytimes.com/2026/07/29/us/politics/trump-personal-wealth.html",
+      image: "https://images.unsplash.com/photo-1436124026657-36828b43c7ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUcnVtcCUyMEFkbWluaXN0cmF0aW9uJTIwU2Vla3MlMjBBZGRpdGlvbmFsJTIwJTI0MTAlMjBNaWxsaW9uJTIwZm9yJTIwSnVseSUyMEZvdXJ0aCUyMENlbGVicmF0aW9uc3xlbnwwfDB8fHwxNzg1NDc0MjA1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "NPR",
+      url: "https://www.npr.org/2026/07/30/nx-s1-5913172/freedom-250-july-fourth-10-million",
       category: "Politics"
     }
   ]

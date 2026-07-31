@@ -1,10 +1,10 @@
 // quiz-data.js
-// Auto-updated 2026-07-30 — do not edit manually
+// Auto-updated 2026-07-31 — do not edit manually
 
 window.QUIZ_DATA = {
-  date: '2026-07-30',
-  category: 'Sport',
-  question: 'At the 1976 Montreal Olympics, which Romanian gymnast became the first person in Olympic history to score a perfect 10 — and on which apparatus did she achieve it?',
-  answer: 'Nadia Comaneci, on the uneven bars.',
-  funFact: 'The scoreboard at Montreal wasn\'t even designed to display a 10.00, so it showed 1.00 instead — leaving the crowd briefly baffled before the announcer explained what had happened. Comaneci went on to score seven perfect 10s at those Games, winning three gold medals at just 14 years old. Her coach, Béla Károlyi, had spotted her doing cartwheels in a school playground when she was six.'
+  date: '2026-07-31',
+  category: 'Animals',
+  question: 'Which mammal has the longest recorded migration of any land animal, travelling up to 1,200 miles each way between its Arctic breeding grounds and its winter range — and what country do the majority of this species migrate through?',
+  answer: 'The caribou (reindeer), migrating primarily through Canada.',
+  funFact: 'Caribou herds in northern Canada, particularly the Beverly and Qamanirjuaq herds, undertake extraordinary seasonal journeys across tundra, boreal forest, and frozen terrain. Unlike most migrations, caribou travel in massive groups that can number in the hundreds of thousands, making them one of the last great wildlife spectacles on Earth. Their hooves are uniquely adapted to act like snowshoes in winter and paddles when crossing rivers in summer.'
 };

@@ -1,19 +1,19 @@
 // reads-data.js
-// Auto-updated 2026-07-30 — do not edit manually
+// Auto-updated 2026-07-31 — do not edit manually
 
 var READS_DATA = {
-  date: "2026-07-30",
+  date: "2026-07-31",
   book: {
-    title: "The Passenger",
-    author: "Cormac McCarthy",
-    year: 2022,
-    genres: ["Literary Fiction", "Philosophy", "Existential Fiction"],
-    desc: "Bobby Western is a salvage diver haunted by the legacy of his father — a physicist who worked on the Manhattan Project — and by the death of his brilliant, troubled sister Alicia, whose ghost visits him in increasingly surreal visions. McCarthy conjures a world in which physics, mathematics, consciousness, and grief collide, written in prose so precise and strange it reads almost like music. The novel refuses easy comfort: it asks what we owe the dead, what we owe a world we did not ask to enter, and whether beauty is enough reason to stay. Published decades after Blood Meridian and No Country for Old Men, it feels like the summation of a lifetime\'s brooding — a book McCarthy clearly needed to write more than any audience needed to read it, which makes it all the more transfixing.",
-    whyRead: "With McCarthy gone and his final works now settling into the culture, this is the moment to sit with the full weight of what he left behind — a genuinely strange, uncompromising novel unlike anything else in contemporary fiction.",
-    rating: 3.9,
+    title: "The Overstory",
+    author: "Richard Powers",
+    year: 2018,
+    genres: ["Literary Fiction", "Nature", "Ecology"],
+    desc: "Richard Powers weaves together nine interconnected stories about people whose lives are transformed by trees — a chestnut tree that survives a blight and becomes a family\'s century-long witness, a scientist who discovers that forests communicate and cooperate, activists who take increasingly desperate measures to save old-growth redwoods. The novel operates on two timescales simultaneously: the vast, slow time of trees and the frantic, destructive pace of human civilization, and the contrast is quietly devastating. Powers writes with the precision of a scientist and the lyricism of a poet, making you feel the weight and intelligence of the non-human world in a way few novels ever have. It won the Pulitzer Prize for Fiction and sits alongside the best American novels of the century so far — ambitious in scope yet intimate and emotionally shattering in its execution.",
+    whyRead: "At a moment when the relationship between humanity and the natural world feels more urgent than ever, this book rewires how you perceive every tree you pass — it is one of those rare novels that genuinely changes you.",
+    rating: 4.2,
     ratingSource: "Goodreads",
-    ratingCount: "60,000+",
-    coverUrl: "https://covers.openlibrary.org/b/id/12968819-L.jpg",
-    amazonUrl: "https://www.amazon.co.uk/dp/1524712396"
+    ratingCount: "270,000+",
+    coverUrl: "https://covers.openlibrary.org/b/id/8758252-L.jpg",
+    amazonUrl: "https://www.amazon.co.uk/dp/8491814442"
   }
 };

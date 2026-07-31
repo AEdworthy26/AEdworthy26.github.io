@@ -1,8 +1,8 @@
 // quote-data.js
-// Auto-updated 2026-07-30 — do not edit manually
+// Auto-updated 2026-07-31 — do not edit manually
 
 var QUOTE_DATA = {
-  date: "2026-07-30",
-  text: "The only thing we have to fear is fear itself.",
-  author: "Franklin D. Roosevelt"
+  date: "2026-07-31",
+  text: "An investment in knowledge pays the best interest.",
+  author: "Benjamin Franklin"
 };

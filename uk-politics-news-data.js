@@ -1,60 +1,60 @@
 // uk-politics-news-data.js
-// Auto-updated 2026-07-30 — do not edit manually
+// Auto-updated 2026-07-31 — do not edit manually
 
 var UK_POLITICS_NEWS = {
-  date: "2026-07-30",
+  date: "2026-07-31",
   main: {
-    title: "Burnham Places Trident Renewal at Heart of Reindustrialised Britain Vision",
+    title: "Burnham to Give Regional Mayors Share of Income Tax in Sweeping Devolution Revolution",
     category: "Politics",
     content: [
-      "Prime Minister Andy Burnham has travelled to Barrow-in-Furness to launch the next phase of the nuclear submarine replacement programme, placing the renewal of Trident at the centre of his vision for a reindustrialised Britain. Speaking ahead of the visit, Burnham sought to stress both the strategic defence importance of the investment and its significant economic benefits for communities across the country. The visit marks one of the new Prime Minister\'s most high-profile domestic policy statements since taking office.",
-      "Burnham has argued that investment in nuclear submarine infrastructure will simultaneously protect the United Kingdom\'s defence capabilities and generate meaningful, well-paid jobs in areas such as Barrow-in-Furness, which has long been home to the country\'s submarine-building industry. The Prime Minister is keen to frame defence spending not merely as a security necessity but as an engine of economic renewal for regions that have historically relied on industrial manufacturing. This dual emphasis on security and economic regeneration is expected to become a recurring theme of the Burnham government\'s domestic agenda.",
-      "The announcement represents a significant moment for British defence policy, with the Trident programme remaining one of the most consequential and expensive long-term commitments the UK government makes. By championing the next phase of the submarine replacement programme so visibly, Burnham is signalling that his administration intends to maintain and indeed expand the country\'s nuclear deterrent. The move is likely to attract both support from defence hawks and scrutiny from those within the Labour party who have historically questioned the case for nuclear weapons.",
-      "Burnham\'s emphasis on the economic dimension of defence investment reflects a broader political calculation that large-scale government spending on military infrastructure can be sold to the public as industrial policy as much as national security policy. Barrow-in-Furness, the site of BAE Systems' submarine-building yards, stands to benefit substantially from the programme, and the Prime Minister\'s visit is clearly designed to demonstrate the tangible local benefits of such expenditure. This approach mirrors similar arguments made in the United States around defence procurement as a jobs programme.",
-      "The Trident renewal announcement comes as Burnham\'s new government seeks to establish its credentials on a range of fronts simultaneously, from fiscal responsibility to social care reform. By anchoring a major defence commitment to a narrative of industrial revival, the Prime Minister appears to be attempting to build a broad coalition of support that stretches beyond traditional Labour voters. Whether this framing succeeds in neutralising political opposition to the programme\'s considerable cost will be closely watched by Westminster observers in the weeks ahead."
+      "Prime Minister Andy Burnham has unveiled what many are calling the most significant shift in power away from Westminster in a generation, announcing that England\'s regional mayors will be entitled to keep a share of the income tax generated within their areas from 2028 onwards. The move, described by local leaders as 'transformational', is designed to end what has been characterised as the 'Treasury death grip' on regional funding, freeing mayors to borrow and invest in major infrastructure projects without having to rely on Whitehall handouts. Burnham, who himself served as Greater Manchester\'s mayor before entering Parliament, has framed the policy as a personal mission rooted in his own experience of battling central government for resources.",
+      "Under the new plans, mayors will for the first time have meaningful fiscal autonomy, allowing them to raise capital against a guaranteed stream of locally generated tax revenue rather than depending on often unpredictable central government grants. The announcement also includes reforms to business rates devolution, further expanding the financial toolkit available to regional leaders across England. Supporters of the plan argue it creates a new model of English governance that could ultimately rival the devolved settlements enjoyed by Scotland, Wales, and Northern Ireland.",
+      "Burnham was unambiguous about the political philosophy underpinning the reforms, stating that he knows what it feels like to be ignored by politicians in Westminster and that he is determined not to repeat those mistakes now that he is prime minister. The prime minister argued that the plans will deliver power to 'every postcode' in England, a striking pledge that signals an intent to move beyond the major city-region deals that have characterised devolution efforts under previous governments. His language drew heavily on his years as Manchester\'s metro mayor, lending the announcement a sense of personal as well as political conviction.",
+      "However, the proposals have not been met with universal enthusiasm, with critics arguing that the plans, while ambitious in aspiration, currently lack the operational detail required to assess their true impact. Questions remain about how the income tax share will be calculated, which authorities will qualify, and what safeguards will be put in place to prevent widening inequality between wealthier and poorer regions. Opposition politicians have also raised concerns about accountability, questioning whether sufficient democratic checks will accompany the new financial powers being handed to directly elected mayors.",
+      "The devolution announcement comes just under two weeks into Burnham\'s premiership and forms part of a rapid early agenda that has seen the new prime minister make a series of bold domestic policy commitments in quick succession. Analysts have noted that by moving fast on devolution, Burnham is seeking to stamp a clear identity on his government and differentiate himself from his predecessors. Whether the plans survive contact with Treasury officials and the legislative process intact remains to be seen, but for now they represent the centrepiece of what the prime minister is billing as a genuinely new relationship between central and local government in England."
     ],
-    image: "https://i.guim.co.uk/img/media/adcae930a6d20aff6f7210fb30fd1ac084334958/364_0_3640_2912/master/3640.jpg?width=1200&quality=85&auto=format&fit=max&s=99b4ec2d01b1569f8c3927c68199305a",
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/cb9c/live/1884aea0-8c35-11f1-89bb-9b3e3c6f25f4.jpg",
     source: "The Guardian",
-    sourceUrl: "https://www.theguardian.com/politics/2026/jul/29/trident-renewal-central-defence-reindustrialised-britain-andy-burnham"
+    sourceUrl: "https://www.theguardian.com/politics/2026/jul/30/burnham-mayors-income-tax-business-rates-devolution"
   },
   secondary: [
     {
       id: "uk1",
-      title: "Inquiry Finds MoD Afghan Data Breach Was a Foreseeable Failure Covered Up by Secrecy",
-      summary: "A damning Commons Defence Committee report concludes that the Ministry of Defence used secrecy as a shield to conceal an entirely foreseeable data breach that exposed tens of thousands of Afghans' personal details.",
+      title: "Diane Abbott and Joani Reid Readmitted as Labour MPs After Suspension",
+      summary: "Diane Abbott and Joani Reid have had the parliamentary whip restored following separate independent Labour disciplinary processes, just under two weeks into Andy Burnham\'s premiership.",
       body: [
-        "The House of Commons Defence Committee has published a highly critical report finding that the MoD\'s catastrophic data breach affecting Afghan nationals was a foreseeable failure that could have been prevented with proper staff training, including basic competency in Excel. MPs concluded that the Ministry used secrecy as a 'shield' against accountability, allowing the blunder to remain hidden for far too long. The breach exposed the personal details of tens of thousands of Afghans who had worked alongside British forces, placing lives at serious risk.",
-        "The report represents a significant parliamentary rebuke of the Ministry of Defence\'s data handling practices and its culture of opacity. The findings are particularly damaging given that Afghan special forces and others who risked their lives supporting UK operations were among those whose details were compromised, raising profound questions about Britain\'s duty of care to its foreign partners."
+        "Diane Abbott, one of the most prominent and long-serving figures in the parliamentary Labour Party, has been readmitted to the party after a period of suspension, with the party confirming her whip has been restored following an independent disciplinary process. Abbott has issued an apology for past comments and confirmed she has received a formal warning as part of the resolution. Fellow MP Joani Reid was also readmitted at the same time, with Labour stressing that the party leadership played no role in either decision.",
+        "The readmissions are politically significant given the controversy that surrounded Abbott\'s suspension and the scrutiny it attracted over Labour\'s internal disciplinary procedures. Coming early in Burnham\'s premiership, the decisions may be seen as an attempt to draw a line under divisive internal party disputes and present a more unified front, though reactions within and outside the party are likely to be mixed."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/de8c/live/c24cee30-8b67-11f1-aeab-95d4580645f0.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.co.uk/news/articles/c77gvr4172vo?at_medium=RSS&at_campaign=rss",
+      image: "https://i.guim.co.uk/img/media/6f3a9d492d6f59dd49d25e5bf0c1db96aea57b5b/647_290_4080_3264/master/4080.jpg?width=1200&quality=85&auto=format&fit=max&s=2c77999134bddb4806ef33ee824746fa",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/politics/2026/jul/30/diane-abbott-and-joani-reid-readmitted-as-labour-mps",
       category: "Politics"
     },
     {
       id: "uk2",
-      title: "Police Take No Further Action Against Green Leader Polanski Over Farage Guillotine Image",
-      summary: "The Metropolitan Police has decided not to pursue criminal action against Green Party leader Zack Polanski after he shared an image depicting a guillotine alongside the phrase referencing Nigel Farage.",
+      title: "Labour Accuses Reform UK of Being 'Up to Its Neck in Sleaze' Over Donation Allegations",
+      summary: "Labour has called on the Electoral Commission to urgently investigate substantial donations made to Reform UK by the mother of a convicted fraudster, George Cottrell, who allegedly transferred $2 million to her days before the donations were made.",
       body: [
-        "Scotland Yard confirmed that the threshold for criminal action had not been met following a review of Green Party leader Zack Polanski\'s decision to re-post an image showing a man wearing a T-shirt emblazoned with a guillotine and the words 'we\'re only making plans for Nigel'. Polanski described the original share as an 'inadvertent mistake' but has since refused to apologise to Reform leader Nigel Farage. The decision by police to take no further action effectively draws a line under the immediate legal question, though the political controversy surrounding the episode continues.",
-        "The incident has nonetheless generated significant political tension between the Greens and Reform UK, with Farage\'s allies arguing that the image constituted an incitement of violence against a named politician. Polanski\'s refusal to offer an apology suggests the Green leadership intends to treat the matter as closed, even as critics maintain that those in public life should be held to a higher standard when sharing inflammatory content online."
+        "Labour has launched a sharp political attack on Reform UK, accusing the party of being 'up to its neck in sleaze' following revelations that significant donations were made to Reform by the mother of George Cottrell, a convicted fraudster, shortly after he transferred $2 million to her. The party has written to the Electoral Commission urging an urgent investigation into the legitimacy of those donations. The allegations represent a serious reputational challenge for Reform as it seeks to present itself as an anti-establishment alternative to the mainstream parties.",
+        "The Electoral Commission has the power to investigate whether political donations comply with UK law, which requires that donations come from permissible sources and are properly declared. If the investigation finds irregularities, Reform UK could face significant financial penalties and further damaging headlines at a sensitive moment in its political development. Labour\'s decision to go public with the allegations suggests the party sees an opportunity to put Reform on the defensive on an issue of financial probity."
       ],
-      image: "https://i.guim.co.uk/img/media/c0a4c9a9986000d431460e4a4a108c17624dd616/295_0_4409_3528/master/4409.jpg?width=1200&quality=85&auto=format&fit=max&s=d490bcaa7860800f5e05c4bdfeb63884",
+      image: "https://images.unsplash.com/photo-1768732052198-6cbe18c24afa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxMYWJvdXIlMjBBY2N1c2VzJTIwUmVmb3JtJTIwVUslMjBvZiUyMEJlaW5nJTIwfGVufDB8MHx8fDE3ODU0NzQxNTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       source: "The Guardian",
-      url: "https://www.theguardian.com/politics/2026/jul/29/zack-polanski-will-not-apologise-to-nigel-farage-for-sharing-image",
+      url: "https://www.theguardian.com/politics/2026/jul/30/electoral-commission-reform-uk-donations-george-cottrell",
       category: "Politics"
     },
     {
       id: "uk3",
-      title: "Burnham Says Palliative Care Must Be Fixed Before Assisted Dying Debate Is Revisited",
-      summary: "Prime Minister Andy Burnham has indicated he will not personally back a fresh attempt to legalise assisted dying in England and Wales, insisting that the state of palliative care must first be addressed.",
+      title: "Green Party Reviews Social Media Operation as Polanski Guillotine Row Continues",
+      summary: "The Green Party is undertaking a review of how it manages its social media presence after leader Polanski\'s controversial post depicting a guillotine image of Nigel Farage sparked a significant political backlash.",
       body: [
-        "Andy Burnham has stepped into one of the most sensitive ongoing political debates in Westminster by arguing that the quality of palliative care in England and Wales must be substantially improved before any renewed push to legalise assisted dying can be properly considered. His comments strongly suggest that he will not lend his personal support to fresh legislation on the issue, a significant signal given his position as Prime Minister. The statement reflects Burnham\'s long-standing interest in health and social care as defining political concerns.",
-        "The assisted dying debate has divided Parliament and public opinion for years, with advocates arguing that individuals deserve the right to choose the manner of their death and opponents warning of risks to vulnerable people. Burnham\'s intervention effectively sets a high bar of social and healthcare investment that would need to be met before he would consider revisiting the question, potentially delaying any new legislative push indefinitely."
+        "The Green Party has been forced into an internal review of its social media strategy after its leader sparked widespread controversy by posting an image associated with a guillotine and Nigel Farage, a post that drew condemnation from across the political spectrum. Polanski has refused to apologise for the post, a stance that has prolonged the row and kept the story in the news cycle. The episode has raised difficult questions about the boundaries of political satire and the responsibilities of party leaders on social media.",
+        "The ongoing controversy comes at a challenging moment for the Greens, who have been working to build on recent electoral gains and establish themselves as a credible force in British politics. Critics argue that the row risks overshadowing the party\'s policy agenda and alienating potential supporters who might be sympathetic to Green causes but uncomfortable with the tone of the imagery. The social media review is seen as an attempt to put in place clearer governance around the party\'s online communications going forward."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/9dee/live/9172cd20-8b3a-11f1-b2d7-b96c6bc9d7f5.jpg",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/4669/live/fd625a80-8c36-11f1-89bb-9b3e3c6f25f4.jpg",
       source: "BBC News",
-      url: "https://www.bbc.co.uk/news/articles/c3w04p4373jo?at_medium=RSS&at_campaign=rss",
+      url: "https://www.bbc.co.uk/news/articles/cz97ke8dn9wo?at_medium=RSS&at_campaign=rss",
       category: "Politics"
     }
   ]

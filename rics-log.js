@@ -3,6 +3,46 @@
 
 var RICS_LOG = [
   {
+    "date": "2026-07-31",
+    "topic": "Option Agreements: Structures, Trigger Events and Risk Allocation in Residential Land Transactions",
+    "module": "Land and Joint Ventures",
+    "level": 3,
+    "apc_competency": "Development/Project Management (Level 3)",
+    "focus": "This lesson examines option agreement structures used in residential land acquisition \u2014 covering conditional and unconditional options, rolling options, call and put options, option periods, trigger events, pricing mechanisms and risk allocation. For Alfie, options are a primary tool in assembling land ahead of planning, structuring JVs with landowners and managing timing risk on uncertain planning outcomes.",
+    "image": "https://images.unsplash.com/photo-1622374634302-b15fb01fcfde?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxPcHRpb24lMjBBZ3JlZW1lbnRzJTNBJTIwU3RydWN0dXJlcyUyQyUyMFVLJTIwcHJvcGVydHklMjBhcmNoaXRlY3R1cmUlMjBidWlsZGluZyUyMGV4dGVyaW9yfGVufDB8MHx8fDE3ODU0NzUwMzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "content": [],
+    "summary": [
+      "A conditional option gives the developer the unilateral right (not obligation) to acquire land upon satisfaction of a defined trigger \u2014 typically planning permission in a satisfactory form \u2014 distinguishing it critically from a conditional contract which obliges both parties to complete.",
+      "The definition of 'satisfactory planning permission' must be precisely drafted to capture: minimum unit numbers, affordable housing quantum ceiling, maximum S106 contributions, absence of onerous pre-commencement conditions, and expiry of the judicial review window (6 weeks from decision).",
+      "Purchase price mechanisms fall into three categories \u2014 fixed, indexed/formula and residual/GDV-linked \u2014 each with different risk profiles; residual pricing aligns developer and landowner incentives but requires detailed drafting of valuation methodology and dispute resolution (typically RICS independent expert) to avoid completion delays.",
+      "Rolling options allow phased land acquisition on large strategic sites tied to programme or sales milestones; put options (granting the landowner the right to require purchase) arise occasionally in LA or RP JV contexts as a mechanism for crystallising a capital receipt.",
+      "In RP and JV transactions, option agreements must expressly permit assignment or novation to an SPV, and must be checked against Homes England grant conditions which may require a higher standard of land control than an option alone before confirming a grant allocation or approving drawdown.",
+      "SDLT is chargeable on the option fee at grant and on the full purchase price at exercise; deferred overage payments trigger a further SDLT event when they crystallise and should be modelled in the pre-acquisition appraisal cashflow."
+    ],
+    "qa": [
+      {
+        "q": "What is the legal distinction between a conditional option and a conditional contract, and why does it matter in practice for an RP developer like Latimer?",
+        "a": "A conditional option gives the developer a unilateral right to purchase if the condition (e.g. planning) is satisfied, but no obligation to do so \u2014 it may simply elect not to exercise, forfeiting the option fee. A conditional contract obliges both parties to proceed to completion once the condition is met; the developer cannot walk away without breaching the contract and facing a damages claim or specific performance order. For Latimer, this distinction is significant because investment committee approval is required before committing to acquisition \u2014 if market conditions or costs change materially post-planning, an option preserves the right to decline, whereas a conditional contract would expose Latimer to legal liability for the full purchase price."
+      },
+      {
+        "q": "How should the 'satisfactory planning permission' trigger be drafted to protect the developer\\'s position on an option for a 120-unit residential scheme?",
+        "a": "The trigger should specify: (1) planning permission for a minimum of 120 residential units (or an acceptable alternative minimum, e.g. 100); (2) permission free from any condition requiring expenditure exceeding a defined threshold before start on site; (3) S106 obligations not exceeding specified financial contributions (with an affordable housing quantum cap \u2014 e.g. no more than 35% by units); (4) permission not subject to any outstanding appeal by a third party or judicial review application, with the 6-week JR window having expired; and (5) the use class and tenure split being in a form the developer considers deliverable. The developer should retain absolute discretion to determine whether these conditions are met, or alternatively the agreement should specify an independent expert or RICS valuer to adjudicate any dispute."
+      },
+      {
+        "q": "A landowner is proposing a GDV-linked purchase price mechanism on a 90-unit scheme. What are the key negotiating points Alfie should focus on in the valuation methodology schedule?",
+        "a": "The key negotiating points are: (1) the comparable evidence to be used and the date at which GDV is assessed (at trigger, at exercise, or at practical completion \u2014 each gives a different exposure to market movement); (2) the assumed affordable housing tenure mix and the pricing of affordable units (e.g. whether shared ownership is valued at full open market value or at a capitalised rent); (3) the build cost benchmark (BCIS median, or an actual tender price \u2014 the developer will prefer a fixed or BCIS-indexed cost allowance to protect against construction inflation); (4) the developer\\'s profit margin assumption \u2014 typically 15\u201320% on GDV or cost, and the developer should resist a margin below 17.5% on GDV to preserve adequate contingency; (5) the appointment and independence of valuers, the timetable for agreeing the price, and the independent expert mechanism and cost-sharing for dispute resolution."
+      },
+      {
+        "q": "Latimer is proposing to novate a planning option to a 50:50 SPV with a private development partner following planning consent. What drafting provisions in the original option must be in place to allow this?",
+        "a": "The original option agreement must contain an express right for Latimer to assign or novate the option to an associated company, subsidiary or nominated SPV without requiring the landowner\\'s consent, or alternatively with consent not to be unreasonably withheld or delayed. Without this provision, assignment or novation would constitute a breach of the option agreement. The drafting should also address: whether the original option fee credit transfers to the SPV on novation; whether the landowner\\'s covenants (e.g. not to apply for planning independently) continue to run in favour of the SPV as assignee; and whether any overage obligation attaching to the land post-exercise is binding on the SPV and any subsequent transferees (requiring a restriction registered at HMLR)."
+      },
+      {
+        "q": "What are the SDLT implications of a planning option on a site where the option fee is \u00a3150,000, the purchase price on exercise is \u00a34.5m, and there is a deferred overage of up to \u00a3500,000 payable 3 years post-completion?",
+        "a": "SDLT is chargeable in three stages. First, on grant of the option: the \u00a3150,000 option fee is subject to SDLT at 1% above the nil-rate threshold (on residential land, 5% on the portion above \u00a3250,000 under current rates, though commercial/mixed rates may apply depending on the site\\'s current use \u2014 if in B2 use, commercial rates apply at 2% on \u00a3150k). Second, on exercise: SDLT is charged on the full \u00a34.5m purchase price (less any SDLT already paid on the option fee, which is credited). Third, on crystallisation of the overage: when the \u00a3500,000 overage is triggered and paid (up to 3 years post-completion), a further SDLT return is required and SDLT is payable on the overage amount. All three events should be modelled in Latimer\\'s pre-acquisition appraisal to avoid cashflow surprises, particularly on the overage SDLT which falls outside the initial acquisition period."
+      }
+    ]
+  },
+  {
     "date": "2026-07-30",
     "topic": "Building Safety Act Gateway Process: Gateways 2 & 3, the Accountable Person and RP Developer Obligations",
     "module": "Legal & Regulatory Compliance",
