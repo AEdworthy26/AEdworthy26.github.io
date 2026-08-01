@@ -1,61 +1,61 @@
 // world-news-data.js
-// Auto-updated 2026-07-31 — do not edit manually
+// Auto-updated 2026-08-01 — do not edit manually
 
 var WORLD_NEWS = {
-  date: "2026-07-31",
+  date: "2026-08-01",
   main: {
-    title: "Hamas Says It Has Agreed to Disarm After Trump Announces Board of Peace Plan",
-    category: "Diplomacy",
+    title: "Ebola Outbreak in DRC Becomes Fastest-Growing in History of the Virus",
+    category: "Global Health",
     content: [
-      "In a potentially historic development, a senior Hamas official has told the BBC that the militant group has agreed to the terms of the so-called Board of Peace plan, a Trump-backed initiative aimed at ending the protracted and devastating conflict in Gaza. The announcement marks one of the most significant diplomatic breakthroughs in the region in years, though it remains fragile and unconfirmed by all parties. Israel has so far declined to publicly comment on the reported agreement, leaving the international community in a state of cautious anticipation.",
-      "The Board of Peace plan, championed by the Trump administration, had been widely seen as an ambitious and unlikely framework given the deep-rooted animosity between Hamas and Israel and the enormous human cost of the war in Gaza. Hamas\'s willingness to agree to disarmament — one of the most contentious demands in any peace negotiation — removes what analysts had long described as the single greatest obstacle to a lasting settlement. If the agreement holds, it would represent a dramatic shift in Hamas\'s posture after years of armed resistance and a refusal to engage with frameworks requiring it to lay down its weapons.",
-      "BBC correspondent Rushdi Abualouf has described the plan as potentially representing the first credible step toward ending the Gaza war, should the disarmament proceed as agreed. The significance of the moment cannot be overstated: Hamas has historically treated its armed wing as non-negotiable, making any agreement to disarm an extraordinary concession. Observers note, however, that the gap between a stated agreement and its verifiable implementation remains vast, and that several previous ceasefire and peace efforts have collapsed at precisely such junctures.",
-      "The absence of an Israeli response is being closely watched by diplomats and international observers. Israel\'s government has consistently maintained that any durable solution to the conflict must involve the complete dismantlement of Hamas\'s military capabilities, but it has also historically been deeply sceptical of Hamas\'s stated intentions. The silence from Jerusalem may reflect internal deliberations about how to respond to a development that, while aligned with some of Israel\'s core demands, carries enormous political and security implications for the Netanyahu government and its coalition.",
-      "The international reaction to the news has been one of cautious hope, with world leaders and diplomats urging all parties to follow through on the agreement and to allow humanitarian access to Gaza to be restored immediately. The coming days will be critical in determining whether the announcement translates into a genuine, monitored process of disarmament or whether it unravels amid the complex web of grievances, mistrust, and competing interests that have defined the conflict for decades. The world will be watching closely as the details of implementation — verification mechanisms, timelines, and the role of international guarantors — are negotiated and, it is hoped, put into practice."
+      "The Democratic Republic of the Congo is facing an Ebola crisis of unprecedented scale, with the latest outbreak now confirmed as the fastest-growing in the known history of the virus. Confirmed cases have reached 3,360, a figure that has alarmed international health authorities and stretched the capacity of local and global response teams. The death toll has climbed to nearly 1,500, making this one of the deadliest outbreaks the DRC has ever experienced.",
+      "A particularly troubling aspect of this outbreak is that it involves the Bundibugyo strain of Ebola, against which an effective vaccine may still be months away from widespread availability. Unlike some previous outbreaks, where existing approved vaccines provided a critical line of defence, health workers are now battling a strain that leaves them with fewer proven tools. The absence of a ready vaccine has significantly complicated containment efforts and raised fears that the virus could spread further before immunisation becomes a realistic option.",
+      "Health workers on the ground are facing an uphill battle to slow the outbreak, operating within a health care infrastructure that remains severely under-resourced. The DRC has endured multiple Ebola outbreaks in recent decades, and each crisis has exposed the same structural weaknesses — inadequate medical facilities, limited trained personnel, and logistical challenges in reaching remote communities. Those systemic gaps are once again proving to be major obstacles in the response.",
+      "The disease is now affecting people across a wide geographic spread within the DRC, further complicating the coordination of isolation, treatment, and contact tracing efforts. International health organisations are working alongside Congolese authorities to deploy resources, but the scale and speed of this outbreak have stretched those efforts considerably. Epidemiologists warn that unless transmission chains are broken quickly, the confirmed case count could rise sharply in the coming weeks.",
+      "The international community has been urged to treat this outbreak as a matter of global concern, given both the speed of its spread and the lack of an available vaccine for the Bundibugyo strain. Aid agencies and global health bodies are calling for urgent financial and logistical support to bolster the DRC\'s response capacity before the situation deteriorates further. With nearly 1,500 lives already lost, the outbreak represents not only a public health emergency but a profound humanitarian crisis demanding immediate and sustained international attention."
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/4ad1/live/af28c2f0-8c81-11f1-a7ab-8b30adf0800a.jpg",
-    source: "BBC News",
-    sourceUrl: "https://www.bbc.co.uk/news/articles/cj03m512r4go?at_medium=RSS&at_campaign=rss"
+    image: "https://i.guim.co.uk/img/media/478165b289e55c3652218208eea3674625ebce76/983_0_4914_3931/master/4914.jpg?width=1200&quality=85&auto=format&fit=max&s=fa6716df08a32b40e2b9582678beab2b",
+    source: "The Guardian",
+    sourceUrl: "https://www.theguardian.com/global-development/2026/jul/31/ebola-outbreak-in-drc-the-fastest-growing-in-the-history-of-the-virus"
   },
   secondary: [
     {
       id: "s1",
-      title: "NATO Says Russian Missile Hit Poland During Massive Ukraine Attack",
-      summary: "A Russian missile and drone barrage across Ukraine killed at least 10 civilians and NATO scrambled jets after one of the missiles crossed into Polish territory.",
+      title: "Tens of Thousands Cross Into Ceuta as Spain Faces Migration Crisis",
+      summary: "Up to 60,000 migrants entered the Spanish enclave of Ceuta from Morocco in a mass crossing that left at least 57 people dead and triggered a sharp diplomatic response from EU neighbours.",
       body: [
-        "Russia launched a widespread missile and drone assault across Ukraine, killing at least 10 civilians including children, in one of the most intense barrages in recent months. The attack took a grave escalatory turn when NATO confirmed that one of the Russian missiles crossed the border and struck Polish territory, prompting the alliance to scramble fighter jets in response.",
-        "Russian missiles have briefly entered Polish airspace on previous occasions, but a confirmed strike on Polish soil raises the stakes considerably for NATO, which is bound by its collective defence commitments under Article 5. Investigators are still working to definitively identify the precise object that struck overnight, and the incident is expected to dominate the alliance\'s emergency consultations in the coming hours."
+        "Spain\'s Prime Minister Pedro Sánchez condemned the sudden influx as a 'violation of Spain\'s territorial integrity', as tens of thousands of migrants crossed the border into the tiny Spanish enclave of Ceuta from Morocco. At least 57 people died during the crossing, including those who drowned attempting to swim to the enclave, with the death toll drawing urgent attention from across Europe.",
+        "Italy moved swiftly to suspend its Schengen agreement on free movement with Spain in response to the crisis, reflecting broader EU tensions over migration management. Most of the migrants — around 48,000 of the estimated 60,000 — had returned to Morocco by Friday evening, but the episode dealt a significant political blow to Spain\'s pro-immigration government and reignited debate over EU border policy."
       ],
-      image: "https://static01.nyt.com/images/2026/07/30/multimedia/30int-ukraine-poland-jkbf/30int-ukraine-poland-jkbf-mediumSquareAt3X.jpg",
-      source: "The New York Times",
-      url: "https://www.nytimes.com/2026/07/30/world/europe/ukraine-poland-russia-missile.html",
-      category: "Conflict"
-    },
-    {
-      id: "s2",
-      title: "Spain Deploys Troops as Thousands Enter Ceuta from Morocco in Crisis",
-      summary: "At least 15 people drowned as thousands of migrants attempted to cross into the Spanish enclave of Ceuta from Morocco, prompting Spain to send in military forces.",
-      body: [
-        "Spain has mobilised troops to the enclave of Ceuta after thousands of people crossed from Morocco in chaotic scenes at the border, with at least 15 individuals drowning as they attempted to swim to Spanish territory. The sudden surge represents one of the most significant mass crossing events at the Spanish-Moroccan border in recent years, overwhelming local authorities and emergency services.",
-        "Ceuta, a Spanish territory on the northern tip of Africa, has long been a flashpoint for migration from sub-Saharan Africa and beyond into the European Union. The deployment of military personnel signals the severity of the crisis and is likely to reignite political debates across Europe about border management, humanitarian obligations, and the relationship between Spain and Morocco."
-      ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/a0fd/live/af9c6590-8c2f-11f1-b8ee-9b3c26ad07bb.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.co.uk/news/articles/cg4drwzkrkxo?at_medium=RSS&at_campaign=rss",
+      image: "https://i.guim.co.uk/img/media/bfe4080ee8b385249f1a00b5fc4c3c8555c8cd24/574_0_3446_2756/master/3446.jpg?width=1200&quality=85&auto=format&fit=max&s=d1404a6c68c10b5a276e2194835c1bdf",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/world/2026/jul/31/ceuta-spain-morocco-border-deaths",
       category: "Migration"
     },
     {
-      id: "s3",
-      title: "Death Toll from Japan Earthquake Climbs to 34",
-      summary: "A magnitude 7.1 earthquake in Japan has now killed 34 people and left six more seriously injured as rescue operations continue.",
+      id: "s2",
+      title: "Hamas Disarmament Deal Offers Rare Hope for Gaza Amid Enormous Obstacles",
+      summary: "A proposed deal for Hamas to disarm and Israeli forces to withdraw from Gaza has been announced, but analysts warn that deep mistrust, political realities, and the devastation of war make any agreement extremely complex.",
       body: [
-        "The death toll from a powerful magnitude 7.1 earthquake that struck Japan has risen to 34, with six more people reported as seriously injured, according to Al Jazeera. Rescue teams are continuing to work through the aftermath of the disaster, searching for survivors as the full scale of the destruction becomes clearer.",
-        "Japan is one of the world\'s most seismically active countries and has extensive earthquake preparedness infrastructure, but a quake of this magnitude inevitably causes significant casualties and structural damage. Authorities are assessing the impact on buildings, infrastructure, and communities in the affected region as relief efforts are coordinated across the country."
+        "President Trump announced that a deal had been reached for Hamas to completely disarm and for Israeli forces to withdraw from Gaza, a development described as offering rare hope after months of brutal conflict. BBC Middle East editor Jeremy Bowen cautioned, however, that the realities of politics, zero trust between parties, and the enormous human and physical toll of the war will make translating any such agreement into reality extremely complicated.",
+        "The announcement comes against a backdrop of thousands of deaths and widespread destruction across Gaza, conditions that have hardened positions on all sides and made the path to lasting peace deeply uncertain. While the proposal represents a potentially significant diplomatic moment, seasoned observers note that similar frameworks have collapsed before, and the obstacles facing this deal remain formidable."
       ],
-      image: "https://images.unsplash.com/photo-1761264046350-dfe462ed8e05?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxEZWF0aCUyMFRvbGwlMjBmcm9tJTIwSmFwYW4lMjBFYXJ0aHF1YWtlJTIwQ2xpbWJzJTIwdG8lMjAzNHxlbnwwfDB8fHwxNzg1NDc0MTAzfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "Al Jazeera",
-      url: "https://www.aljazeera.com/news/2026/7/31/death-toll-from-japan-earthquake-climbs?traffic_source=rss",
-      category: "Disaster"
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/42f6/live/6014fc90-8d0f-11f1-8134-83693cbcd5a0.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.co.uk/news/articles/c2dkje4p4klo?at_medium=RSS&at_campaign=rss",
+      category: "Conflict & Diplomacy"
+    },
+    {
+      id: "s3",
+      title: "Thousands in France Allowed Home as Wildfires Ease Across Europe",
+      summary: "Firefighters in France\'s Gironde region say the situation has 'stabilised' after a week of devastating wildfires driven by a major European heatwave, allowing thousands of evacuated residents to return home.",
+      body: [
+        "Authorities in the Gironde region of France announced that wildfire conditions had stabilised, enabling thousands of residents who had been forced to evacuate to finally return to their homes after a week of intense blazes. The fires, fuelled by a prolonged and severe heatwave sweeping across Europe, were described as among the worst France has experienced in decades.",
+        "Investigators and officials have also highlighted regulatory failures that may have worsened the fires' impact, with reports that homeowners in affected areas had not complied with rules requiring them to clear vegetation within roughly 50 yards of their properties. The crisis has renewed calls across Europe for stricter enforcement of wildfire prevention measures as climate-driven extreme weather events become increasingly frequent."
+      ],
+      image: "https://images.unsplash.com/photo-1783316611212-e2fe8b4986f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUaG91c2FuZHMlMjBpbiUyMEZyYW5jZSUyMEFsbG93ZWQlMjBIb21lJTIwYXMlMjBXaWxkZmlyZXMlMjBFYXNlJTIwQWNyb3NzJTIwRXVyb3BlfGVufDB8MHx8fDE3ODU1NjA0OTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "NPR",
+      url: "https://www.npr.org/2026/07/31/nx-s1-5913353/france-wildfires-bordeaux-europe-heatwave",
+      category: "Environment"
     }
   ]
 };

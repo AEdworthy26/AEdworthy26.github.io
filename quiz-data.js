@@ -1,10 +1,10 @@
 // quiz-data.js
-// Auto-updated 2026-07-31 — do not edit manually
+// Auto-updated 2026-08-01 — do not edit manually
 
 window.QUIZ_DATA = {
-  date: '2026-07-31',
-  category: 'Animals',
-  question: 'Which mammal has the longest recorded migration of any land animal, travelling up to 1,200 miles each way between its Arctic breeding grounds and its winter range — and what country do the majority of this species migrate through?',
-  answer: 'The caribou (reindeer), migrating primarily through Canada.',
-  funFact: 'Caribou herds in northern Canada, particularly the Beverly and Qamanirjuaq herds, undertake extraordinary seasonal journeys across tundra, boreal forest, and frozen terrain. Unlike most migrations, caribou travel in massive groups that can number in the hundreds of thousands, making them one of the last great wildlife spectacles on Earth. Their hooves are uniquely adapted to act like snowshoes in winter and paddles when crossing rivers in summer.'
+  date: '2026-08-01',
+  category: 'Music',
+  question: 'Which British band performed the first-ever live concert broadcast simultaneously on both sides of the Atlantic at Live Aid in July 1985 — and at which stadium in the UK did they take to the stage?',
+  answer: 'Queen, at Wembley Stadium.',
+  funFact: 'Queen\'s 21-minute set at Live Aid on 13th July 1985 is widely regarded as one of the greatest live performances in rock history. Freddie Mercury had the crowd of 72,000 eating out of his hand within minutes, and a BBC poll later named it the best live rock performance of all time. The band had been struggling commercially before Live Aid, but the concert effectively relaunched their career.'
 };

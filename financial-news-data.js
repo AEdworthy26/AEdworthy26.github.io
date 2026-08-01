@@ -1,61 +1,61 @@
 // financial-news-data.js
-// Auto-updated 2026-07-31 — do not edit manually
+// Auto-updated 2026-08-01 — do not edit manually
 
 var FINANCIAL_NEWS = {
-  date: "2026-07-31",
+  date: "2026-08-01",
   main: {
-    title: "Bank of England Holds Interest Rates at 3.75% as Iran War and Oil Prices Fuel Inflation Fears",
-    category: "Monetary Policy",
+    title: "BP Puts North Sea Oil and Gas Business Up for Sale, Ending Six Decades of Production",
+    category: "Energy & Markets",
     content: [
-      "The Bank of England has opted to hold UK interest rates steady at 3.75%, delivering a split-vote decision that underscores deep uncertainty within the Monetary Policy Committee about the path ahead. The decision comes against a volatile geopolitical backdrop, with the rekindling of the Iran war pushing oil prices to nearly $90 a barrel and stoking fresh concerns about inflation. Policymakers warned that a further escalation in the conflict could drive UK inflation above 4% in 2026, adding significant pressure to household budgets already stretched by years of elevated living costs.",
-      "The vote split reflects a genuine divide among MPC members about how to balance the dual risks of persistent inflation on one side and slowing economic growth on the other. Some members argued that the cumulative effect of previous rate hikes was still working its way through the economy, cautioning against holding rates higher than necessary. Others pointed to the oil price surge and the ongoing geopolitical instability as reasons to remain firmly on hold rather than risk easing too soon and allowing inflation expectations to become unanchored.",
-      "Oil\'s rise toward $90 a barrel is the critical external variable complicating the Bank\'s decision-making calculus. Energy prices feed directly into headline inflation through fuel costs, utility bills, and transportation, meaning the conflict\'s economic ripple effects are felt almost immediately by consumers and businesses alike. The Guardian\'s reporting notes that the Middle East crisis is, in the view of some analysts, the primary obstacle standing between the UK economy and a more comfortable path of rate reductions.",
-      "For UK households, the hold means mortgage rates and borrowing costs will remain elevated for longer, sustaining the financial squeeze that has defined the post-pandemic era. Variable-rate mortgage holders and those due to remortgage in the coming months will find little relief in today\'s announcement, with the prospect of near-term cuts now pushed further into the future. Business investment decisions are also likely to remain cautious, as companies factor in both the higher cost of capital and the demand uncertainty created by geopolitical turbulence.",
-      "Markets had widely anticipated a hold going into the decision, but the hawkish tone of the Bank\'s inflation warning caught some participants off guard, nudging gilt yields modestly higher in response. The central bank\'s communication signalled that its next move is far from predetermined and will hinge heavily on how the Iran situation develops and whether oil prices stabilise or continue to climb. With the Federal Reserve also facing its own credibility questions over inflation guidance, global bond markets remain on edge, and the Bank of England finds itself navigating one of the most complex monetary policy environments in recent memory."
+      "BP has launched a formal process to market its North Sea oil and gas business for a potential sale, marking a dramatic strategic pivot that would bring to a close more than sixty years of production from one of the world\'s most storied energy basins. The announcement came on Friday morning and signals a decisive break from the company\'s historic roots in British and Norwegian waters. The move is being driven by BP\'s new chief executive, who has made simplifying the company\'s portfolio and cutting its substantial debt load the central pillars of his turnaround strategy.",
+      "The North Sea has long been a cornerstone of BP\'s upstream operations, but the business has faced mounting pressures in recent years from aging infrastructure, high operating costs, and the increasing capital demands required to maintain output from maturing fields. By divesting the unit, BP aims to free up significant capital that can be redeployed toward higher-return assets or used to reduce the debt burden that has weighed on the company\'s balance sheet and suppressed its share price. Analysts have suggested the North Sea portfolio could attract interest from specialist operators and private equity-backed energy firms that are willing to take on the complexity of late-life basin management.",
+      "The sale process will be closely watched by the broader energy industry as a barometer of appetite for mature North Sea assets at a time when global oil prices remain volatile and the energy transition continues to reshape long-term demand forecasts. BP\'s exit would represent one of the largest divestitures in the basin\'s history and could trigger further consolidation among the remaining operators. Several North Sea-focused independents and international majors are likely to be evaluating the opportunity, though the sheer scale and complexity of the portfolio may limit the field of credible bidders.",
+      "BP\'s decision also carries significant implications for the United Kingdom\'s domestic energy supply and the thousands of workers employed across North Sea operations. The UK government and Scottish authorities are expected to scrutinize any deal carefully, given the strategic importance of North Sea output to national energy security. Any buyer would inherit not only the producing assets but also substantial decommissioning liabilities, which have historically been a complicating factor in North Sea transactions and could influence the ultimate sale price.",
+      "The divestiture is the latest in a series of bold restructuring moves by BP\'s new leadership team as the company attempts to rebuild investor confidence after a prolonged period of underperformance relative to peers such as Shell and ExxonMobil. Markets will be watching to see whether a completed sale can deliver a meaningful reduction in net debt and whether the proceeds are deployed in a way that convincingly articulates a path to sustainable returns. The outcome of the formal marketing process is expected to become clearer in the coming months, with BP likely to provide further guidance alongside its next set of quarterly results."
     ],
-    image: "https://i.guim.co.uk/img/media/53cf458a65df5b5937800d8d1b053a84f8abfbbf/698_0_6432_5147/master/6432.jpg?width=1200&quality=85&auto=format&fit=max&s=8d2656b0e68814ccff8128b443195c6a",
+    image: "https://i.guim.co.uk/img/media/2f9871761aba480fc8aef48dedda5f5ea0fb100b/483_270_2510_2010/master/2510.jpg?width=1200&quality=85&auto=format&fit=max&s=707fe78c3bbc6cbeb49a88422c92d013",
     source: "The Guardian",
-    sourceUrl: "https://www.theguardian.com/business/2026/jul/30/bank-of-england-holds-interest-rates-inflation-fears-mount"
+    sourceUrl: "https://www.theguardian.com/business/2026/jul/31/bp-north-sea-oil-and-gas-business-up-for-sale"
   },
   secondary: [
     {
       id: "fn1",
-      title: "South Korean Stocks Surge 15% as AI Fears Ease and Chip Shares Rebound",
-      summary: "South Korea\'s stock market posted a record single-day rally of 15% as investor concerns about AI overspending faded and the country\'s crucial semiconductor shares rebounded sharply.",
+      title: "Fed Chair Warsh Weighs Cutting Number of Annual Policy Meetings",
+      summary: "Federal Reserve Chairman Kevin Warsh is considering reducing the frequency of Fed policy meetings, which would represent the most significant structural change to the central bank\'s decision-making process in decades.",
       body: [
-        "After a brutal sell-off earlier in the week tied to fears that technology companies were overspending on artificial intelligence infrastructure, South Korean equities staged a dramatic recovery, with the KOSPI index surging 15% in a single session. The rebound was led by chipmakers, which are deeply embedded in the global AI supply chain and had been among the hardest hit during the preceding rout. The swing represented one of the most extreme single-day moves in the index\'s history, reflecting just how rapidly sentiment can shift in markets that are tightly coupled to the AI investment narrative.",
-        "The recovery also benefited from a broader unwinding of margin debt across Asian markets, with retail investors in South Korea, Taiwan, and mainland China having cut their leveraged positions during the sell-off, removing some of the fragility that had amplified the decline. Analysts noted that the clearing of this speculative froth could paradoxically set the stage for a healthier and more sustainable rebound going forward. The episode serves as a stark reminder of how volatile AI-driven market cycles can be when investor positioning becomes overly concentrated."
+        "The Federal Reserve has convened at least eight policy meetings per year for decades, but Chairman Kevin Warsh is now exploring whether that cadence should be reduced, according to reporting by the New York Times. Such a change would fundamentally alter the rhythm of monetary policy communication and could affect how markets price in rate expectations throughout the calendar year.",
+        "The proposal marks the most consequential institutional reform Warsh has floated since taking the chair, and is likely to spark debate among economists and market participants about whether fewer meetings would reduce or increase policy uncertainty. Investors who rely on the current meeting schedule to calibrate rate bets would need to adjust their frameworks significantly if the change were to proceed."
       ],
-      image: "https://images.unsplash.com/photo-1763372278600-fd0b0997a7b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTb3V0aCUyMEtvcmVhbiUyMFN0b2NrcyUyMFN1cmdlJTIwMTUlMjUlMjBhcyUyMEFJJTIwRmVhcnMlMjBFYXNlJTIwYW5kJTIwQ2hpcCUyMFNoYXJlcyUyMFJlYm91bmR8ZW58MHwwfHx8MTc4NTQ3NDI1M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      image: "https://static01.nyt.com/images/2026/07/31/multimedia/31dc-fed-meet-lvbz/31dc-fed-meet-lvbz-mediumSquareAt3X.jpg",
       source: "The New York Times",
-      url: "https://www.nytimes.com/2026/07/31/business/korea-stocks-chips-kospi.html",
-      category: "Markets"
+      url: "https://www.nytimes.com/2026/07/31/business/federal-reserve-warsh-meetings.html",
+      category: "Monetary Policy"
     },
     {
       id: "fn2",
-      title: "Rolls-Royce and BAE Systems Lift Profit Forecasts as Defence Spending Surges",
-      summary: "UK defence giants Rolls-Royce and BAE Systems both upgraded their earnings guidance as governments around the world accelerate increases in military spending, sending Rolls-Royce shares up 5%.",
+      title: "Sainsbury\'s Agrees to Sell Argos for £120 Million",
+      summary: "British supermarket giant Sainsbury\'s has struck a deal to offload the Argos retail brand for £120 million, though Argos concessions will continue to operate within Sainsbury\'s stores under the terms of the agreement.",
       body: [
-        "Rolls-Royce saw its shares jump 5% after the engineering group raised its earnings guidance, with BAE Systems following suit in what amounted to a strong endorsement of the ongoing global defence spending boom. Both companies cited firm commitments from governments to significantly raise investment in defence systems, a trend that has been building since Russia\'s invasion of Ukraine and has only intensified with fresh geopolitical flashpoints emerging in the Middle East. The upgrades signal that defence contractors are now translating the political rhetoric around military spending into concrete order books and improved financial outlooks.",
-        "The results highlight a significant sectoral rotation underway in equity markets, with defence stocks increasingly seen as a rare combination of growth and relative safety during periods of geopolitical uncertainty. For UK-listed companies like Rolls-Royce and BAE Systems, the confluence of NATO allies ramping up procurement and the Iran conflict driving demand for military hardware presents a multi-year earnings tailwind. Investors who positioned in the sector early have been rewarded handsomely as what was once considered a niche defensive play has become one of the market\'s most compelling growth stories."
+        "Sainsbury\'s has agreed to sell Argos for £120 million in a deal that allows the catalogue and retail brand to maintain a presence inside Sainsbury\'s supermarkets, continue selling Habitat-branded products, and keep offering Nectar loyalty points to shoppers. The transaction represents a significant step in Sainsbury\'s ongoing effort to streamline its retail operations and sharpen its focus on its core grocery business.",
+        "Sainsbury\'s acquired Argos as part of its £1.4 billion takeover of Home Retail Group in 2016, making the relatively modest £120 million sale price a notable reflection of the challenges facing general merchandise retail in an era of fierce online competition. The deal structure, which preserves Argos\'s in-store footprint within Sainsbury\'s, suggests the buyer sees value in the brand\'s physical reach while Sainsbury\'s retains the customer traffic benefit."
       ],
-      image: "https://i.guim.co.uk/img/media/27a196f72f31dca4fc6b96514784f614090b6aec/0_244_3130_2505/master/3130.jpg?width=1200&quality=85&auto=format&fit=max&s=611ff48d48cadef620ecb3a78c4954f4",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/business/2026/jul/30/profits-boost-defence-firms-governments-spending",
-      category: "Corporate Earnings"
+      image: "https://images.unsplash.com/photo-1694444056854-6d6232248090?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTYWluc2J1cnklNUN8ZW58MHwwfHx8MTc4NTU2MDYzOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "BBC News",
+      url: "https://www.bbc.co.uk/news/articles/cpw9yrl4p2qo?at_medium=RSS&at_campaign=rss",
+      category: "Mergers & Acquisitions"
     },
     {
       id: "fn3",
-      title: "Lloyds Bank to Slash £2 Billion in Costs Through AI-Powered Four-Year Strategy",
-      summary: "Lloyds Banking Group unveiled a four-year plan to cut £2 billion in costs by leveraging new technology and artificial intelligence, though its chief executive declined to detail potential job losses.",
+      title: "July Ends on a Hopeful Note for Stocks After Momentum Trade\'s Worst Wipeout Since 2000",
+      summary: "US equity markets closed July with cautious optimism as investors began to sense a potential bottom following the most severe unraveling of the momentum trade in a quarter century.",
       body: [
-        "Lloyds Banking Group, the UK\'s largest high street lender, announced an ambitious cost-cutting programme that will see it eliminate £2 billion in expenses over four years through a strategy centred on artificial intelligence and new technology platforms. Chief executive Charlie Nunn described the plan as a drive toward greater efficiency and growth, but stopped short of providing specifics on how many jobs could be affected by the transformation, a notable omission that is likely to draw scrutiny from unions and employees alike. The strategy is set to formally launch in January and represents one of the most significant operational overhauls in the bank\'s recent history.",
-        "The announcement places Lloyds squarely within a broader trend of major financial institutions betting heavily on AI to fundamentally reshape their cost structures and competitive positioning. With net interest margins under pressure from the interest rate environment and competition from fintech challengers intensifying, traditional banks are increasingly turning to technology investment as their primary lever for sustaining profitability. The lack of detail on workforce implications means the human cost of Lloyds' AI pivot remains an open and closely watched question for the months ahead."
+        "The final trading session of July offered a degree of relief to equity investors who had endured one of the most punishing rotations in recent memory, with the momentum trade — a strategy that bets on high-flying stocks continuing to rise — suffering its largest collapse since the dot-com era of 2000. Market participants interpreted the late-month stabilization as a possible sign that the worst of the selloff had passed, even as broader uncertainty continued to cloud the outlook.",
+        "Analysts noted that the unwinding of crowded momentum positions had created indiscriminate selling pressure across a range of high-quality growth stocks, potentially setting up attractive entry points for longer-term investors. Whether the stabilization marks a durable turning point or merely a pause before further volatility will depend heavily on upcoming economic data and the Federal Reserve\'s policy signals in the weeks ahead."
       ],
-      image: "https://i.guim.co.uk/img/media/365ecb10aa9b786ad6849a1f497dcc1f1a3eaf38/73_0_4434_3548/master/4434.jpg?width=1200&quality=85&auto=format&fit=max&s=d0616c725a804e741dc1061c68379e2b",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/business/2026/jul/30/lloyds-bank-cut-2bn-costs-part-ai-powered-strategy",
-      category: "Banking"
+      image: "https://images.mktw.net/im-563418",
+      source: "MarketWatch",
+      url: "https://www.marketwatch.com/story/july-ends-on-a-hopeful-note-for-stocks-after-momentum-trade-sees-biggest-wipeout-since-2000-4b90b6b2?mod=mw_rss_topstories",
+      category: "Markets"
     }
   ]
 };

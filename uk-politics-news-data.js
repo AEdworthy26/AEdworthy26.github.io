@@ -1,60 +1,60 @@
 // uk-politics-news-data.js
-// Auto-updated 2026-07-31 — do not edit manually
+// Auto-updated 2026-08-01 — do not edit manually
 
 var UK_POLITICS_NEWS = {
-  date: "2026-07-31",
+  date: "2026-08-01",
   main: {
-    title: "Burnham to Give Regional Mayors Share of Income Tax in Sweeping Devolution Revolution",
+    title: "Labour\'s Bev Craig Elected Mayor of Greater Manchester, Replacing Andy Burnham",
     category: "Politics",
     content: [
-      "Prime Minister Andy Burnham has unveiled what many are calling the most significant shift in power away from Westminster in a generation, announcing that England\'s regional mayors will be entitled to keep a share of the income tax generated within their areas from 2028 onwards. The move, described by local leaders as 'transformational', is designed to end what has been characterised as the 'Treasury death grip' on regional funding, freeing mayors to borrow and invest in major infrastructure projects without having to rely on Whitehall handouts. Burnham, who himself served as Greater Manchester\'s mayor before entering Parliament, has framed the policy as a personal mission rooted in his own experience of battling central government for resources.",
-      "Under the new plans, mayors will for the first time have meaningful fiscal autonomy, allowing them to raise capital against a guaranteed stream of locally generated tax revenue rather than depending on often unpredictable central government grants. The announcement also includes reforms to business rates devolution, further expanding the financial toolkit available to regional leaders across England. Supporters of the plan argue it creates a new model of English governance that could ultimately rival the devolved settlements enjoyed by Scotland, Wales, and Northern Ireland.",
-      "Burnham was unambiguous about the political philosophy underpinning the reforms, stating that he knows what it feels like to be ignored by politicians in Westminster and that he is determined not to repeat those mistakes now that he is prime minister. The prime minister argued that the plans will deliver power to 'every postcode' in England, a striking pledge that signals an intent to move beyond the major city-region deals that have characterised devolution efforts under previous governments. His language drew heavily on his years as Manchester\'s metro mayor, lending the announcement a sense of personal as well as political conviction.",
-      "However, the proposals have not been met with universal enthusiasm, with critics arguing that the plans, while ambitious in aspiration, currently lack the operational detail required to assess their true impact. Questions remain about how the income tax share will be calculated, which authorities will qualify, and what safeguards will be put in place to prevent widening inequality between wealthier and poorer regions. Opposition politicians have also raised concerns about accountability, questioning whether sufficient democratic checks will accompany the new financial powers being handed to directly elected mayors.",
-      "The devolution announcement comes just under two weeks into Burnham\'s premiership and forms part of a rapid early agenda that has seen the new prime minister make a series of bold domestic policy commitments in quick succession. Analysts have noted that by moving fast on devolution, Burnham is seeking to stamp a clear identity on his government and differentiate himself from his predecessors. Whether the plans survive contact with Treasury officials and the legislative process intact remains to be seen, but for now they represent the centrepiece of what the prime minister is billing as a genuinely new relationship between central and local government in England."
+      "Labour\'s Bev Craig has been elected as the new Mayor of Greater Manchester, securing a decisive victory in what was one of the most closely watched by-elections of the year. Craig, the leader of Manchester City Council, will now step into one of the most powerful political positions outside Westminster, succeeding Andy Burnham who vacated the role after becoming Prime Minister. The result was confirmed in the early hours, with Craig winning nearly double the number of votes secured by Reform UK\'s Sian Astley, delivering a commanding mandate for Labour in a region that has become something of a political bellwether.",
+      "The scale of the victory came as a significant relief to Labour strategists who had feared that Reform UK\'s recent surge in local elections could threaten their grip on the mayoralty. Craig\'s campaign successfully won back areas where Reform had made notable gains in May, as well as recapturing ground that had drifted toward the Greens. The result was described by commentators as demonstrating a so-called 'Burnham bounce' — residual goodwill from the outgoing mayor now channelled into support for his successor.",
+      "Turnout was, however, recorded as the lowest on record for a mayoral election in the Greater Manchester region, a fact that will temper some of the celebratory mood within Labour ranks. Low turnout in by-elections is not unusual, but given the high-profile nature of the mayoralty and its national political significance, the figure will prompt reflection about public engagement. Nonetheless, the margin of victory leaves little ambiguity about where Greater Manchester\'s political loyalties currently lie.",
+      "Bev Craig inherits a mayoralty with an expansive remit and considerable public expectations, not least given Burnham\'s decade-long tenure which transformed the profile and ambitions of the role. She takes over at a moment when devolution is firmly back at the top of the national political agenda, with Prime Minister Burnham having pledged to extend powers and funding to mayoral regions across England. Craig will be expected to be a prominent voice in those negotiations, both as a Labour ally of the PM and as the custodian of a city-region with its own distinct priorities.",
+      "Reform UK will take stock of the result, which represents a setback after the party had harboured hopes of capitalising on any mid-term disillusionment with the new Burnham government. Sian Astley\'s vote share, while falling well short of Craig\'s, nonetheless reflects the continued presence of Reform as a significant force in English regional politics. For Labour, the win provides early evidence that the party can hold its northern heartlands even as it faces pressure from multiple directions — and gives the new prime minister a political boost as he navigates the challenges of his first weeks in Downing Street."
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/cb9c/live/1884aea0-8c35-11f1-89bb-9b3e3c6f25f4.jpg",
-    source: "The Guardian",
-    sourceUrl: "https://www.theguardian.com/politics/2026/jul/30/burnham-mayors-income-tax-business-rates-devolution"
+    image: "https://images.unsplash.com/photo-1616610269931-04d58b579ddf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxMYWJvdXIlNUN8ZW58MHwwfHx8MTc4NTU2MDU0NHww&ixlib=rb-4.1.0&q=80&w=1080",
+    source: "BBC News",
+    sourceUrl: "https://www.bbc.co.uk/news/articles/cy74n1n1lnxo?at_medium=RSS&at_campaign=rss"
   },
   secondary: [
     {
       id: "uk1",
-      title: "Diane Abbott and Joani Reid Readmitted as Labour MPs After Suspension",
-      summary: "Diane Abbott and Joani Reid have had the parliamentary whip restored following separate independent Labour disciplinary processes, just under two weeks into Andy Burnham\'s premiership.",
+      title: "Chancellor John Healey Announces October Budget and Warns Ministers to Prepare for Spending Cuts",
+      summary: "Chancellor John Healey has confirmed a Budget will be held in October and told ministers there is no new money available to fund Prime Minister Burnham\'s pledges.",
       body: [
-        "Diane Abbott, one of the most prominent and long-serving figures in the parliamentary Labour Party, has been readmitted to the party after a period of suspension, with the party confirming her whip has been restored following an independent disciplinary process. Abbott has issued an apology for past comments and confirmed she has received a formal warning as part of the resolution. Fellow MP Joani Reid was also readmitted at the same time, with Labour stressing that the party leadership played no role in either decision.",
-        "The readmissions are politically significant given the controversy that surrounded Abbott\'s suspension and the scrutiny it attracted over Labour\'s internal disciplinary procedures. Coming early in Burnham\'s premiership, the decisions may be seen as an attempt to draw a line under divisive internal party disputes and present a more unified front, though reactions within and outside the party are likely to be mixed."
+        "Chancellor John Healey has set an October Budget date and issued a joint letter with Prime Minister Andy Burnham warning cabinet ministers to stick to existing spending limits, making clear that new government commitments must be funded by reallocating existing resources rather than fresh borrowing. The chancellor pledged to move money and power out of Westminster and into communities across Britain, framing the Budget as a vehicle for the government\'s devolution agenda.",
+        "The announcement puts significant pressure on individual departments to identify savings, with ministers told there is no additional Treasury funding available to finance the new Burnham government\'s policy programme. The tight fiscal environment sets the stage for potentially difficult internal negotiations ahead of October, as departments compete to protect their own budgets while being asked to deliver an ambitious reform agenda."
       ],
-      image: "https://i.guim.co.uk/img/media/6f3a9d492d6f59dd49d25e5bf0c1db96aea57b5b/647_290_4080_3264/master/4080.jpg?width=1200&quality=85&auto=format&fit=max&s=2c77999134bddb4806ef33ee824746fa",
-      source: "The Guardian",
-      url: "https://www.theguardian.com/politics/2026/jul/30/diane-abbott-and-joani-reid-readmitted-as-labour-mps",
+      image: "https://static.independent.co.uk/2026/07/20/18/2286321598..?width=1200&auto=webp&trim=2%2C0%2C2%2C0",
+      source: "BBC News",
+      url: "https://www.bbc.co.uk/news/articles/cjd4yz35x8go?at_medium=RSS&at_campaign=rss",
       category: "Politics"
     },
     {
       id: "uk2",
-      title: "Labour Accuses Reform UK of Being 'Up to Its Neck in Sleaze' Over Donation Allegations",
-      summary: "Labour has called on the Electoral Commission to urgently investigate substantial donations made to Reform UK by the mother of a convicted fraudster, George Cottrell, who allegedly transferred $2 million to her days before the donations were made.",
+      title: "Burnham Risks First Labour Revolt Over Apparent Support for North Sea Oil and Gas Drilling",
+      summary: "Prime Minister Andy Burnham faces the prospect of a rebellion from Labour MPs after giving his strongest indication yet of support for renewed North Sea drilling.",
       body: [
-        "Labour has launched a sharp political attack on Reform UK, accusing the party of being 'up to its neck in sleaze' following revelations that significant donations were made to Reform by the mother of George Cottrell, a convicted fraudster, shortly after he transferred $2 million to her. The party has written to the Electoral Commission urging an urgent investigation into the legitimacy of those donations. The allegations represent a serious reputational challenge for Reform as it seeks to present itself as an anti-establishment alternative to the mainstream parties.",
-        "The Electoral Commission has the power to investigate whether political donations comply with UK law, which requires that donations come from permissible sources and are properly declared. If the investigation finds irregularities, Reform UK could face significant financial penalties and further damaging headlines at a sensitive moment in its political development. Labour\'s decision to go public with the allegations suggests the party sees an opportunity to put Reform on the defensive on an issue of financial probity."
+        "Andy Burnham has been warned he could face the first significant revolt of his premiership after Labour MPs and climate experts condemned what they interpreted as his apparent backing for renewed oil and gas extraction in the North Sea, including the controversial Rosebank and Jackdaw fields. The intervention comes as the UK endures drought, wildfires and heatwaves, making the political optics of backing fossil fuel expansion particularly fraught.",
+        "Labour MPs raised fears that the No 10 team lacks sufficient up-to-date energy expertise and does not fully appreciate the weight that climate concerns carry with voters, particularly those who backed Labour in the most recent general election. The episode represents an early test of Burnham\'s ability to manage the competing economic and environmental pressures that will define energy policy in his administration."
       ],
-      image: "https://images.unsplash.com/photo-1768732052198-6cbe18c24afa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxMYWJvdXIlMjBBY2N1c2VzJTIwUmVmb3JtJTIwVUslMjBvZiUyMEJlaW5nJTIwfGVufDB8MHx8fDE3ODU0NzQxNTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      image: "https://i.guim.co.uk/img/media/45ac18739b61ed7ff4ccfff77df946b6abd42be7/0_231_3993_3194/master/3993.jpg?width=1200&quality=85&auto=format&fit=max&s=fccbbfb91a9210bba96a41d14bcfe4fe",
       source: "The Guardian",
-      url: "https://www.theguardian.com/politics/2026/jul/30/electoral-commission-reform-uk-donations-george-cottrell",
+      url: "https://www.theguardian.com/politics/2026/jul/31/andy-burnham-risks-labour-revolt-north-sea-drilling-rosebank-jackdaw-climate",
       category: "Politics"
     },
     {
       id: "uk3",
-      title: "Green Party Reviews Social Media Operation as Polanski Guillotine Row Continues",
-      summary: "The Green Party is undertaking a review of how it manages its social media presence after leader Polanski\'s controversial post depicting a guillotine image of Nigel Farage sparked a significant political backlash.",
+      title: "Key HS2 Contracts Renegotiated as Government Moves to Slash Costs on Troubled Rail Project",
+      summary: "Two of HS2's most significant private sector contracts have been renegotiated as the government tries to demonstrate it has finally brought Britain\'s most controversial infrastructure project under control.",
       body: [
-        "The Green Party has been forced into an internal review of its social media strategy after its leader sparked widespread controversy by posting an image associated with a guillotine and Nigel Farage, a post that drew condemnation from across the political spectrum. Polanski has refused to apologise for the post, a stance that has prolonged the row and kept the story in the news cycle. The episode has raised difficult questions about the boundaries of political satire and the responsibilities of party leaders on social media.",
-        "The ongoing controversy comes at a challenging moment for the Greens, who have been working to build on recent electoral gains and establish themselves as a credible force in British politics. Critics argue that the row risks overshadowing the party\'s policy agenda and alienating potential supporters who might be sympathetic to Green causes but uncomfortable with the tone of the imagery. The social media review is seen as an attempt to put in place clearer governance around the party\'s online communications going forward."
+        "The government has announced that two of the High Speed 2 railway\'s most significant private sector deals have been renegotiated, in a bid to reduce costs on a project that has long been derided as an infrastructure white elephant beset by delays and budget overruns. Ministers presented the move as evidence that the programme is finally being brought under meaningful financial discipline.",
+        "HS2 has remained one of the most politically contentious infrastructure commitments in British politics, having survived repeated threats of cancellation or further scaling back. The renegotiation of major contracts signals that the Burnham government intends to press ahead while demonstrating fiscal responsibility — a delicate balance given the wider spending pressures outlined by Chancellor Healey."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/4669/live/fd625a80-8c36-11f1-89bb-9b3e3c6f25f4.jpg",
-      source: "BBC News",
-      url: "https://www.bbc.co.uk/news/articles/cz97ke8dn9wo?at_medium=RSS&at_campaign=rss",
+      image: "https://e3.365dm.com/26/05/1920x1080/skynews-hs2-staff-rail-line_7253295.jpg?20260519171836",
+      source: "Sky News",
+      url: "https://news.sky.com/story/key-hs2-contracts-renegotiated-as-government-scrambles-to-slash-costs-13568600",
       category: "Politics"
     }
   ]

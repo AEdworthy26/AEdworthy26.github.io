@@ -1,210 +1,175 @@
 // suggested-recipes-data.js
-// Auto-updated 2026-07-31 — do not edit manually
+// Auto-updated 2026-08-01 — do not edit manually
 
 window.SUGGESTED_RECIPES = [
   {
     id: "sug1",
-    title: "Duck Legs Braised in Pinot Noir with Lentils du Puy, Bacon & Herbed Crème Fraîche",
-    category: "Other",
+    title: "Pork Shoulder Vindaloo — Goan Spiced Curry with Coconut Vinegar, Mustard Seeds & Steamed Basmati",
+    category: "Pork",
     calories: 610,
-    protein: 44,
-    fibre: 8,
-    healthScore: 71,
-    time: "1 hr 45 mins",
+    protein: 42,
+    fibre: 5,
+    healthScore: 68,
+    time: "2 hrs 15 mins",
     serves: "4",
-    desc: "Rich, deeply savoury French bistro cooking at its most satisfying — duck legs slow-braised in red wine until the meat falls from the bone, served on a bed of earthy Puy lentils cooked with smoky bacon and aromatics. A spoonful of herbed crème fraîche stirred through at the end lifts the whole dish with a gentle brightness. This is the kind of food that feels genuinely luxurious without demanding anything more than patience and a good casserole dish.",
-    emoji: "🦆",
-    image: "https://images.pexels.com/photos/11001291/pexels-photo-11001291.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    desc: "Vindaloo is one of the great fire-and-sour curries of Goa — deeply spiced pork slow-cooked in a punchy paste of dried chillies, garlic, ginger, and coconut vinegar until falling apart and glossy. Unlike its over-hyped restaurant incarnation, the real thing balances fierce heat with warmth, tang, and a complexity that only gets better the next day.",
+    emoji: "🌶️",
+    image: "https://images.unsplash.com/photo-1710091691802-7dedb8af9a77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxQb3JrJTIwU2hvdWxkZXIlMjBWaW5kYWxvbyUyMCVFMiU4MCU5NCUyMEdvYW4lMjBTcGljZWQlMjBDdXJyeSUyMHdpdGglMjBDb2NvbnV0JTIwVmluZWdhciUyQyUyME11c3RhcmQlMjBTZWVkcyUyMCUyNiUyMFN0ZWFtZWQlMjBCYXNtYXRpJTIwZm9vZCUyMGRpc2h8ZW58MHwwfHx8MTc4NTU2MTM3N3ww&ixlib=rb-4.1.0&q=80&w=1080",
     ingredientGroups: [
-      {
-        group: "Duck",
-        items: [
-          { name: "Duck legs", quantity: 4, unit: "" },
-          { name: "Flaky sea salt", quantity: 1, unit: "tsp" },
-          { name: "Black pepper, freshly ground", quantity: 1, unit: "tsp" }
-        ]
-      },
-      {
-        group: "Braise",
-        items: [
-          { name: "Smoked lardons or diced smoked bacon", quantity: 150, unit: "g" },
-          { name: "Shallots, peeled and halved", quantity: 6, unit: "" },
-          { name: "Garlic cloves, sliced", quantity: 4, unit: "" },
-          { name: "Carrots, diced", quantity: 2, unit: "" },
-          { name: "Celery sticks, diced", quantity: 2, unit: "" },
-          { name: "Pinot Noir or other light red wine", quantity: 400, unit: "ml" },
-          { name: "Good chicken or beef stock", quantity: 300, unit: "ml" },
-          { name: "Tomato purée", quantity: 2, unit: "tbsp" },
-          { name: "Fresh thyme sprigs", quantity: 4, unit: "" },
-          { name: "Bay leaves", quantity: 2, unit: "" }
-        ]
-      },
-      {
-        group: "Lentils",
-        items: [
-          { name: "Puy lentils, rinsed", quantity: 300, unit: "g" },
-          { name: "Extra chicken stock", quantity: 500, unit: "ml" },
-          { name: "Dijon mustard", quantity: 1, unit: "tbsp" },
-          { name: "Red wine vinegar", quantity: 1, unit: "tbsp" }
-        ]
-      },
-      {
-        group: "Herbed Crème Fraîche",
-        items: [
-          { name: "Full-fat crème fraîche", quantity: 4, unit: "tbsp" },
-          { name: "Fresh flat-leaf parsley, finely chopped", quantity: 3, unit: "tbsp" },
-          { name: "Fresh tarragon, finely chopped", quantity: 1, unit: "tbsp" },
-          { name: "Lemon, zest only", quantity: 1, unit: "" }
-        ]
-      }
+      { group: "Pork", items: [
+        { name: "Bone-in pork shoulder, cut into 5cm chunks", quantity: 900, unit: "g" },
+        { name: "Flaky sea salt", quantity: 1, unit: "tsp" }
+      ]},
+      { group: "Vindaloo Paste", items: [
+        { name: "Dried Kashmiri chillies, soaked in hot water 20 mins", quantity: 8, unit: "" },
+        { name: "Dried bird\'s eye chillies (for heat)", quantity: 3, unit: "" },
+        { name: "Garlic cloves, peeled", quantity: 8, unit: "" },
+        { name: "Fresh ginger, roughly chopped", quantity: 30, unit: "g" },
+        { name: "Coconut vinegar (or cider vinegar)", quantity: 4, unit: "tbsp" },
+        { name: "Cumin seeds", quantity: 2, unit: "tsp" },
+        { name: "Coriander seeds", quantity: 2, unit: "tsp" },
+        { name: "Black peppercorns", quantity: 1, unit: "tsp" },
+        { name: "Cloves", quantity: 4, unit: "" },
+        { name: "Green cardamom pods, seeds only", quantity: 4, unit: "" },
+        { name: "Turmeric", quantity: 0.5, unit: "tsp" },
+        { name: "Brown sugar", quantity: 1, unit: "tsp" }
+      ]},
+      { group: "Curry Base", items: [
+        { name: "Neutral oil (sunflower or vegetable)", quantity: 3, unit: "tbsp" },
+        { name: "Yellow onions, finely sliced", quantity: 2, unit: "large" },
+        { name: "Mustard seeds", quantity: 1, unit: "tsp" },
+        { name: "Fresh curry leaves", quantity: 12, unit: "" },
+        { name: "Plum tomatoes, roughly chopped", quantity: 3, unit: "" },
+        { name: "Warm water", quantity: 200, unit: "ml" }
+      ]},
+      { group: "To Serve", items: [
+        { name: "Basmati rice", quantity: 320, unit: "g" },
+        { name: "Fresh coriander, roughly chopped", quantity: 1, unit: "small bunch" },
+        { name: "Lime wedges", quantity: 4, unit: "" }
+      ]}
     ],
     substitutes: [
-      { ingredient: "Duck legs", alternatives: ["Chicken thighs and drumsticks (reduce braising time to 50 mins)", "Bone-in lamb shoulder pieces"] },
-      { ingredient: "Pinot Noir", alternatives: ["Any light red wine such as Gamay or Côtes du Rhône", "Non-alcoholic: extra stock plus 1 tbsp balsamic vinegar"] },
-      { ingredient: "Puy lentils", alternatives: ["Green lentils", "Beluga (black) lentils"] },
-      { ingredient: "Crème fraîche", alternatives: ["Sour cream", "Full-fat Greek yoghurt (stir in off the heat)"] }
+      { ingredient: "Coconut vinegar", alternatives: ["Cider vinegar", "White wine vinegar with a pinch of coconut sugar"] },
+      { ingredient: "Pork shoulder", alternatives: ["Boneless pork belly", "Chicken thighs (reduce cook time to 55 mins)"] },
+      { ingredient: "Fresh curry leaves", alternatives: ["Dried curry leaves (use 20)", "Omit — the dish still works beautifully"] }
     ],
     instructions: [
-      "Preheat your oven to 160°C fan (180°C conventional). Pat the duck legs completely dry with kitchen paper and season generously on both sides with salt and pepper.",
-      "Set a large, heavy-based ovenproof casserole over a medium-high heat. Place the duck legs skin-side down — no oil needed, the fat will render. Cook without moving them for 8–10 minutes until the skin is deeply golden and crisp. Flip and cook for a further 2 minutes, then transfer to a plate.",
-      "Pour off most of the rendered duck fat, leaving about 2 tablespoons in the pan. Add the lardons and fry for 3–4 minutes until golden. Add the shallots, carrots, and celery and cook for 5 minutes, stirring occasionally, until softened and starting to colour. Add the garlic and tomato purée and cook for 1 minute more.",
-      "Pour in the wine and let it bubble vigorously for 2 minutes, scraping up any caramelised bits from the bottom of the pan. Add the stock, thyme, and bay leaves, then nestle the duck legs back in skin-side up. The liquid should come about halfway up the legs — top up with a little extra stock if needed.",
-      "Bring to a simmer, then cover with a tight-fitting lid and transfer to the oven. Braise for 1 hour 15 minutes, then remove the lid and cook for a further 15 minutes to allow the skin to re-crisp slightly and the sauce to reduce.",
-      "While the duck finishes, cook the lentils: place them in a saucepan with the 500ml of stock and bring to a boil, then reduce the heat and simmer for 20–25 minutes until just tender but still holding their shape. Drain any excess liquid, then stir in the Dijon mustard, red wine vinegar, and a good pinch of salt.",
-      "Mix the crème fraîche with the chopped parsley, tarragon, and lemon zest in a small bowl. Season with a little salt.",
-      "Carefully remove the duck legs. Taste the braising sauce and if it needs concentrating, simmer it on the hob for a few minutes. Stir the cooked lentils into the braising sauce and vegetables directly in the casserole dish, then stir through half the herbed crème fraîche.",
-      "Spoon the lentils onto warm bowls or a large serving platter, rest the duck legs on top, and finish each portion with a generous dollop of the remaining herbed crème fraîche. Serve immediately with crusty bread to mop up the sauce."
+      "Toast the cumin seeds, coriander seeds, peppercorns, cloves, and cardamom seeds in a dry frying pan over medium heat for 60–90 seconds until fragrant. Tip into a spice grinder or pestle and mortar and grind to a fine powder.",
+      "Drain the soaked Kashmiri chillies and place in a blender with the bird\'s eye chillies, garlic, ginger, coconut vinegar, ground spices, turmeric, and brown sugar. Blend to a smooth, deep-red paste — add a splash of water if needed to get it moving. Taste: it should be intensely spiced, hot, and sharply tangy.",
+      "Pat the pork chunks very dry with kitchen paper and season generously with sea salt. Toss the meat thoroughly in two-thirds of the vindaloo paste, coating every piece. For best results, cover and marinate in the fridge for at least 2 hours, or overnight.",
+      "Heat the oil in a wide, heavy-based casserole or Dutch oven over medium-high heat. Brown the marinated pork in batches — don\'t crowd the pan — for 3–4 minutes per side until deep golden. Remove each batch and set aside.",
+      "Reduce heat to medium, add the mustard seeds to the same pot and let them pop for 30 seconds. Add the curry leaves (stand back — they\'ll spit), then the sliced onions with a pinch of salt. Cook, stirring regularly, for 15–18 minutes until the onions are deeply golden and jammy.",
+      "Add the remaining paste to the onions and fry, stirring constantly, for 3–4 minutes until the paste darkens and smells roasted rather than raw. Add the chopped tomatoes and cook for another 5 minutes, pressing them down until they break into the sauce.",
+      "Return the browned pork to the pot along with any resting juices. Pour in the warm water, stir well to combine, and bring to a gentle simmer. Cover with a lid slightly ajar and cook over low heat for 1 hour 30 minutes, stirring occasionally, until the pork is completely tender and the sauce has reduced to a thick, clinging consistency.",
+      "Meanwhile, rinse the basmati rice until the water runs clear, then cook in a large pan of well-salted boiling water for 10–11 minutes until just tender. Drain well.",
+      "Taste the vindaloo and adjust — more vinegar for brightness, a tiny pinch of sugar to balance, or salt to round it out. Serve over the steamed basmati, scattered with fresh coriander and lime wedges alongside."
     ]
   },
   {
     id: "sug2",
-    title: "Griddled Halloumi & Watermelon Fatayer — Lebanese-Style Stuffed Flatbreads with Mint, Chilli & Sumac Yoghurt",
-    category: "Vegetarian",
+    title: "Salade Niçoise with Seared Fresh Tuna, Haricots Verts, Quail Eggs & Anchovy-Mustard Dressing",
+    category: "Fish & Seafood",
     calories: 490,
-    protein: 22,
-    fibre: 5,
-    healthScore: 68,
-    time: "50 mins",
-    serves: "4",
-    desc: "Fatayer are Lebanon\'s beloved stuffed pastries, and this summery version leans into peak-July produce: juicy watermelon and salty griddled halloumi tucked inside pillowy yeasted flatbreads with fresh mint and a whisper of chilli. The combination of sweet, salty, herby and tangy is genuinely revelatory — these look impressive but come together with nothing more than a frying pan and a rolling pin. Dipped into cool, sumac-dusted yoghurt, they make a brilliant light lunch or an irresistible sharing starter.",
-    emoji: "🫓",
-    image: "https://images.unsplash.com/photo-1743674453093-592bed88018e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxHcmlkZGxlZCUyMEhhbGxvdW1pJTIwJTI2JTIwV2F0ZXJtZWxvbiUyMEZhdGF5ZXIlMjAlRTIlODAlOTQlMjBMZWJhbmVzZS1TdHlsZSUyMFN0dWZmZWQlMjBGbGF0YnJlYWRzJTIwd2l0aCUyME1pbnQlMkMlMjBDaGlsbGklMjAlMjYlMjBTdW1hYyUyMFlvZ2h1cnQlMjBmb29kJTIwZGlzaHxlbnwwfDB8fHwxNzg1NDc1MTUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    protein: 44,
+    fibre: 6,
+    healthScore: 84,
+    time: "35 mins",
+    serves: "2",
+    desc: "The real Niçoise is far more exciting than the tinned-tuna versions most people know — fat slabs of seared fresh tuna, creamy waxy potatoes, crisp haricots verts, and briny olives all brought together with a punchy anchovy-mustard vinaigrette. August is the perfect moment for it: the tomatoes are at their sweetest and the beans just right.",
+    emoji: "🥗",
+    image: "https://images.unsplash.com/photo-1634842818254-7a697398fc29?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTYWxhZGUlMjBOaSVDMyVBN29pc2UlMjB3aXRoJTIwU2VhcmVkJTIwRnJlc2glMjBUdW5hJTJDJTIwSGFyaWNvdHMlMjBWZXJ0cyUyQyUyMFF1YWlsJTIwRWdncyUyMCUyNiUyMEFuY2hvdnktTXVzdGFyZCUyMERyZXNzaW5nJTIwZm9vZCUyMGRpc2h8ZW58MHwwfHx8MTc4NTU2MTM3OHww&ixlib=rb-4.1.0&q=80&w=1080",
     ingredientGroups: [
-      {
-        group: "Flatbread Dough",
-        items: [
-          { name: "Strong white bread flour", quantity: 300, unit: "g" },
-          { name: "Fast-action dried yeast", quantity: 7, unit: "g" },
-          { name: "Warm water", quantity: 180, unit: "ml" },
-          { name: "Olive oil", quantity: 2, unit: "tbsp" },
-          { name: "Caster sugar", quantity: 1, unit: "tsp" },
-          { name: "Fine salt", quantity: 1, unit: "tsp" }
-        ]
-      },
-      {
-        group: "Filling",
-        items: [
-          { name: "Halloumi, sliced 1cm thick", quantity: 250, unit: "g" },
-          { name: "Watermelon, rind removed, cut into 2cm cubes", quantity: 300, unit: "g" },
-          { name: "Fresh mint leaves, roughly torn", quantity: 20, unit: "g" },
-          { name: "Spring onions, finely sliced", quantity: 3, unit: "" },
-          { name: "Fresh red chilli, finely sliced", quantity: 1, unit: "" },
-          { name: "Lemon, juice only", quantity: 1, unit: "" },
-          { name: "Dried chilli flakes", quantity: 0.5, unit: "tsp" },
-          { name: "Nigella seeds", quantity: 1, unit: "tsp" }
-        ]
-      },
-      {
-        group: "Sumac Yoghurt",
-        items: [
-          { name: "Full-fat Greek yoghurt", quantity: 200, unit: "g" },
-          { name: "Sumac", quantity: 1.5, unit: "tsp" },
-          { name: "Garlic clove, finely grated", quantity: 1, unit: "" },
-          { name: "Olive oil", quantity: 1, unit: "tbsp" },
-          { name: "Salt", quantity: 1, unit: "pinch" }
-        ]
-      }
+      { group: "Tuna", items: [
+        { name: "Fresh tuna steaks (2cm thick)", quantity: 280, unit: "g" },
+        { name: "Olive oil", quantity: 1, unit: "tbsp" },
+        { name: "Flaky sea salt and black pepper", quantity: 1, unit: "pinch" }
+      ]},
+      { group: "Salad", items: [
+        { name: "Waxy new potatoes (Charlotte or Jersey Royals)", quantity: 250, unit: "g" },
+        { name: "Haricots verts or fine French beans, trimmed", quantity: 150, unit: "g" },
+        { name: "Quail eggs", quantity: 8, unit: "" },
+        { name: "Ripe vine tomatoes, cut into wedges", quantity: 3, unit: "" },
+        { name: "Cucumber, sliced into half-moons", quantity: 0.5, unit: "" },
+        { name: "Niçoise olives or small black olives", quantity: 60, unit: "g" },
+        { name: "Radishes, thinly sliced", quantity: 6, unit: "" },
+        { name: "Soft-leaf lettuce (butter or little gem), torn", quantity: 2, unit: "large handfuls" }
+      ]},
+      { group: "Anchovy-Mustard Dressing", items: [
+        { name: "Anchovy fillets in oil, finely minced to a paste", quantity: 4, unit: "" },
+        { name: "Dijon mustard", quantity: 1.5, unit: "tsp" },
+        { name: "Red wine vinegar", quantity: 2, unit: "tbsp" },
+        { name: "Extra virgin olive oil", quantity: 5, unit: "tbsp" },
+        { name: "Garlic clove, very finely grated", quantity: 0.5, unit: "" },
+        { name: "Runny honey", quantity: 0.5, unit: "tsp" },
+        { name: "Flaky sea salt and black pepper", quantity: 1, unit: "to taste" }
+      ]}
     ],
     substitutes: [
-      { ingredient: "Halloumi", alternatives: ["Firm tofu, pressed and griddled", "Griddled paneer"] },
-      { ingredient: "Watermelon", alternatives: ["Peaches or nectarines (July is perfect for these)", "Ripe tomatoes, seeded and diced"] },
-      { ingredient: "Strong white bread flour", alternatives: ["Plain flour (flatbreads will be slightly less chewy but still delicious)", "Wholemeal bread flour (use 200g wholemeal, 100g white)"] },
-      { ingredient: "Sumac", alternatives: ["Lemon zest with a tiny pinch of citric acid", "Za\'atar"] }
+      { ingredient: "Fresh tuna", alternatives: ["High-quality tinned tuna in olive oil", "Swordfish steak"] },
+      { ingredient: "Quail eggs", alternatives: ["2 medium hen\'s eggs, soft-boiled 7 mins", "Burrata torn into pieces"] },
+      { ingredient: "Haricots verts", alternatives: ["Tenderstem broccoli, blanched", "Sugar snap peas"] }
     ],
     instructions: [
-      "Make the dough: combine the flour, yeast, sugar, and salt in a large bowl. Add the olive oil and warm water and mix to a shaggy dough. Turn out onto a lightly floured surface and knead for 8 minutes until smooth and elastic. Place in a lightly oiled bowl, cover with a damp cloth, and leave somewhere warm to rise for 30–35 minutes until noticeably puffed.",
-      "While the dough rises, make the sumac yoghurt: stir together the Greek yoghurt, sumac, grated garlic, and olive oil. Season with salt, taste, and adjust — it should be tangy and garlicky. Cover and refrigerate until needed.",
-      "Prepare the filling: place the watermelon cubes in a sieve over the sink and leave for 10 minutes to drain off excess liquid — this is important so the filling isn\'t watery. Pat gently with kitchen paper. Set a griddle pan or heavy frying pan over high heat. Brush the halloumi slices very lightly with olive oil and griddle for 2 minutes per side until golden char marks appear. Transfer to a board and cut into roughly 1.5cm cubes.",
-      "Toss the drained watermelon and griddled halloumi together with the mint, spring onions, fresh chilli, lemon juice, and chilli flakes. Season carefully — halloumi is already salty, so taste before adding any extra.",
-      "Divide the risen dough into 8 equal pieces. On a lightly floured surface, roll each piece into a thin oval or round roughly 18cm across. Lay 4 of the rolled-out pieces on a clean board and heap a generous portion of filling into the centre of each, leaving a 3cm border. Brush the edges with a little water, then place a second piece of dough on top and press the edges firmly together to seal, crimping with your fingers or a fork.",
-      "Set your frying pan (or griddle) back over a medium-high heat. No oil needed. Cook the fatayer two at a time for 3–4 minutes per side until golden, puffed, and cooked through with slightly charred patches. They will balloon slightly as they cook — that\'s a good sign.",
-      "Transfer to a wire rack or board and scatter immediately with nigella seeds. Serve warm, sliced in half so the filling is revealed, alongside the chilled sumac yoghurt for dipping."
+      "Bring a medium saucepan of well-salted water to the boil. Add the new potatoes and cook for 15–18 minutes until just tender when pierced with a knife. In the last 3 minutes of cooking, add the haricots verts to the same pot. Drain everything together and spread on a tray to steam-dry and cool slightly.",
+      "While the potatoes cook, bring a small saucepan of water to a rolling boil. Carefully lower in the quail eggs and cook for exactly 2 minutes 30 seconds for a jammy yolk. Transfer immediately to a bowl of iced water for 2 minutes, then peel gently — they\'re delicate.",
+      "Make the dressing: in a small bowl or jar, whisk together the minced anchovy paste, Dijon mustard, red wine vinegar, garlic, and honey. Gradually whisk in the olive oil until emulsified into a creamy, glossy dressing. Season with black pepper — it likely won\'t need salt given the anchovies. Taste and adjust the vinegar balance.",
+      "Halve the cooked potatoes lengthways while still warm and toss them immediately in 2 tablespoons of the dressing — they\'ll absorb it beautifully as they cool.",
+      "Pat the tuna steaks completely dry and season generously on both sides with salt and pepper. Heat a cast-iron or heavy frying pan over the highest possible heat until smoking. Add the olive oil, then sear the tuna for 60–90 seconds per side — you want a dark, caramelised crust with a vivid pink centre. Remove to a board and rest for 2 minutes, then slice thickly against the grain.",
+      "Arrange the torn lettuce across two wide plates or a large platter. Tumble over the dressed potatoes, haricots verts, tomato wedges, cucumber, radishes, and olives. Nestle the halved quail eggs throughout, and lay the sliced tuna on top.",
+      "Spoon the remaining dressing generously over everything. Finish with a final crack of black pepper and serve immediately — Niçoise waits for no one."
     ]
   },
   {
     id: "sug3",
-    title: "Yucatán-Style Baked Mussels — Mejillones al Tíkil with Achiote, Roasted Tomato & Pickled Red Onion",
-    category: "Fish & Seafood",
-    calories: 370,
-    protein: 29,
-    fibre: 4,
-    healthScore: 79,
+    title: "Miso-Glazed Aubergine Donburi — Japanese Nasu Dengaku Bowl with Pickled Ginger, Sesame & Crispy Shallots",
+    category: "Vegan",
+    calories: 520,
+    protein: 14,
+    fibre: 9,
+    healthScore: 81,
     time: "40 mins",
-    serves: "4",
-    desc: "Inspired by the earthy, citrus-forward flavours of the Yucatán Peninsula, these baked mussels are coated in a vibrant achiote and roasted tomato sauce — smoky, tangy, and deeply aromatic — then finished under the grill until just blistered. Piled onto toasted corn tortillas with sharp pickled red onion and fresh coriander, they make a showstopping starter or a brilliant sharing platter that\'s completely achievable on a weeknight. The achiote paste does the heavy lifting, giving you complex colour and flavour with very little effort.",
-    emoji: "🦪",
-    image: "https://images.pexels.com/photos/6036953/pexels-photo-6036953.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    serves: "2",
+    desc: "Nasu dengaku — aubergine lacquered in a sweet, deeply savoury miso glaze — is one of Japan\'s most satisfying vegetarian dishes. Here it becomes a full donburi bowl: glossy caramelised aubergine over short-grain rice, lifted with sharp pickled ginger, toasted sesame, crispy shallots, and a drizzle of chilli oil. Rich, umami-laden, and genuinely spectacular.",
+    emoji: "🍆",
+    image: "https://images.unsplash.com/photo-1682568514240-fa229b2d1f27?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxNaXNvLUdsYXplZCUyMEF1YmVyZ2luZSUyMERvbmJ1cmklMjAlRTIlODAlOTQlMjBKYXBhbmVzZSUyME5hc3UlMjBEZW5nYWt1JTIwQm93bCUyMHdpdGglMjBQaWNrbGVkJTIwR2luZ2VyJTJDJTIwU2VzYW1lJTIwJTI2JTIwQ3Jpc3B5JTIwU2hhbGxvdHMlMjBmb29kJTIwZGlzaHxlbnwwfDB8fHwxNzg1NTYxMzc5fDA&ixlib=rb-4.1.0&q=80&w=1080",
     ingredientGroups: [
-      {
-        group: "Mussels",
-        items: [
-          { name: "Fresh mussels, scrubbed and debearded", quantity: 1.2, unit: "kg" },
-          { name: "Dry white wine or water", quantity: 100, unit: "ml" }
-        ]
-      },
-      {
-        group: "Achiote Tomato Sauce",
-        items: [
-          { name: "Ripe tomatoes, halved", quantity: 4, unit: "" },
-          { name: "Achiote paste (annatto paste)", quantity: 2, unit: "tbsp" },
-          { name: "Chipotle paste or 1 chipotle in adobo", quantity: 1, unit: "tbsp" },
-          { name: "Garlic cloves, unpeeled", quantity: 4, unit: "" },
-          { name: "White onion, roughly chopped", quantity: 1, unit: "" },
-          { name: "Orange juice, freshly squeezed", quantity: 3, unit: "tbsp" },
-          { name: "Lime juice", quantity: 2, unit: "tbsp" },
-          { name: "Ground cumin", quantity: 1, unit: "tsp" },
-          { name: "Dried oregano (Mexican if available)", quantity: 1, unit: "tsp" },
-          { name: "Olive oil", quantity: 2, unit: "tbsp" },
-          { name: "Salt", quantity: 1, unit: "tsp" }
-        ]
-      },
-      {
-        group: "To Serve",
-        items: [
-          { name: "Small corn tortillas", quantity: 8, unit: "" },
-          { name: "Red onion, very finely sliced", quantity: 1, unit: "" },
-          { name: "Red wine vinegar", quantity: 3, unit: "tbsp" },
-          { name: "Caster sugar", quantity: 1, unit: "tsp" },
-          { name: "Fresh coriander, leaves picked", quantity: 1, unit: "large bunch" },
-          { name: "Limes, cut into wedges", quantity: 2, unit: "" },
-          { name: "Pickled jalapeños, sliced", quantity: 2, unit: "tbsp" }
-        ]
-      }
+      { group: "Aubergine", items: [
+        { name: "Large aubergines", quantity: 2, unit: "" },
+        { name: "Neutral oil (vegetable or sunflower)", quantity: 3, unit: "tbsp" },
+        { name: "Flaky sea salt", quantity: 1, unit: "pinch" }
+      ]},
+      { group: "Dengaku Miso Glaze", items: [
+        { name: "White (shiro) miso paste", quantity: 3, unit: "tbsp" },
+        { name: "Mirin", quantity: 2, unit: "tbsp" },
+        { name: "Sake (or dry sherry)", quantity: 1, unit: "tbsp" },
+        { name: "Caster sugar", quantity: 1.5, unit: "tsp" },
+        { name: "Soy sauce", quantity: 1, unit: "tsp" },
+        { name: "Sesame oil", quantity: 1, unit: "tsp" }
+      ]},
+      { group: "Bowl", items: [
+        { name: "Japanese short-grain rice (sushi rice)", quantity: 300, unit: "g" },
+        { name: "Crispy fried shallots (shop-bought or homemade)", quantity: 3, unit: "tbsp" },
+        { name: "Pickled sushi ginger (gari)", quantity: 30, unit: "g" },
+        { name: "Toasted sesame seeds (white and black mixed)", quantity: 2, unit: "tbsp" },
+        { name: "Spring onions, finely sliced on the diagonal", quantity: 3, unit: "" },
+        { name: "Chilli oil or togarashi", quantity: 1, unit: "tsp" },
+        { name: "Edamame beans (shelled, cooked from frozen)", quantity: 100, unit: "g" }
+      ]}
     ],
     substitutes: [
-      { ingredient: "Mussels", alternatives: ["Clams (reduce steaming time to 3 minutes)", "Large raw prawns, shell-on (roast in the sauce at 200°C for 8 minutes)"] },
-      { ingredient: "Achiote paste", alternatives: ["1 tsp smoked paprika + 1 tsp ground turmeric + 1 tsp ground cumin mixed into a paste with a little oil (gives colour and warmth without exact flavour)", "Harissa paste — different flavour profile but equally bold"] },
-      { ingredient: "Corn tortillas", alternatives: ["Small flour tortillas", "Toasted sourdough crostini"] },
-      { ingredient: "Chipotle paste", alternatives: ["1 tsp smoked paprika plus a dash of hot sauce", "Ancho chilli paste"] }
+      { ingredient: "White miso (shiro)", alternatives: ["Red miso — stronger, slightly more intense; reduce by 1 tsp", "Brown rice miso"] },
+      { ingredient: "Sake", alternatives: ["Dry sherry", "Omit and add an extra tablespoon of mirin"] },
+      { ingredient: "Short-grain rice", alternatives: ["Brown rice for more fibre (add 15 mins cooking time)", "Pearl barley for a nutty twist"] }
     ],
     instructions: [
-      "Start the pickled onions first so they have time to soften and turn pink: place the finely sliced red onion in a small bowl and pour over the red wine vinegar. Add the sugar and a good pinch of salt, toss well, and set aside at room temperature. They will be ready in 20 minutes.",
-      "Make the roasted tomato sauce: place the tomato halves cut-side up on a baking tray with the unpeeled garlic cloves and the chopped white onion. Drizzle with 1 tablespoon of olive oil and roast under a hot grill (or in an oven at 220°C fan) for 12–15 minutes until the tomatoes are blistered and lightly charred, and the garlic is soft. Squeeze the garlic from its skins.",
-      "Transfer the roasted tomatoes, garlic flesh, and onion to a blender. Add the achiote paste, chipotle paste, orange juice, lime juice, cumin, and oregano. Blend until smooth. Taste and season generously with salt — the sauce should be bold, tangy, and slightly smoky. Pour into a wide saucepan and warm over medium heat for 3–4 minutes, stirring. Set aside.",
-      "Steam the mussels open: tip them into a large saucepan with a tight-fitting lid. Pour in the white wine or water, cover, and set over a high heat. Cook for 3–4 minutes, shaking the pan once or twice, until all the mussels have opened. Discard any that remain firmly shut.",
-      "When cool enough to handle, discard one half-shell from each mussel, leaving the flesh sitting in the deeper shell. Arrange the half-shells snugly in a single layer on a large baking tray or two oven trays. Spoon a generous teaspoon of the achiote tomato sauce over each mussel.",
-      "Place under a hot grill for 3–4 minutes until the sauce is bubbling and starting to catch at the edges. Meanwhile, toast the corn tortillas directly over a gas flame for 30 seconds per side until charred in spots and pliable — or in a dry frying pan.",
-      "Pile the baked mussels onto a large platter. Scatter with the drained pickled red onion, fresh coriander leaves, and pickled jalapeño slices. Serve with the toasted tortillas, lime wedges, and the remaining warm achiote sauce alongside for dipping. Encourage everyone to scoop a mussel or two onto a tortilla and squeeze over plenty of lime."
+      "Rinse the short-grain rice in cold water three times until the water runs nearly clear. Place in a saucepan with 360ml cold water and a pinch of salt. Bring to the boil, stir once, then cover tightly and reduce to the lowest possible heat. Cook for 13 minutes, then turn off the heat and leave covered, undisturbed, for a further 10 minutes. This gives you perfectly sticky, fluffy rice.",
+      "Preheat your grill (broiler) to its highest setting and place a rack in the upper-middle position. Line a large baking tray with foil.",
+      "Slice the aubergines in half lengthways. Score the cut flesh deeply in a diagonal cross-hatch pattern — cut almost but not all the way through to the skin. This scoring is essential: it allows the oil to penetrate and the glaze to pool in the grooves later.",
+      "Brush the scored flesh generously with neutral oil, making sure it gets into all the cuts. Season lightly with sea salt. Place cut-side up on the lined tray and grill for 12–15 minutes until the flesh is completely soft, slightly collapsed, and the surface is beginning to colour in spots.",
+      "While the aubergine grills, make the dengaku glaze: combine the white miso, mirin, sake, caster sugar, soy sauce, and sesame oil in a small saucepan. Stir over low heat for 2–3 minutes until the sugar dissolves and the glaze thickens slightly to a spreadable consistency. Remove from heat.",
+      "When the aubergine flesh is soft, spread the dengaku glaze thickly and evenly across each half — be generous, letting it fill the scored grooves. Return to the grill for 3–4 minutes, watching carefully, until the glaze bubbles, caramelises at the edges, and turns a deep mahogany colour. Don\'t walk away — it can catch quickly.",
+      "While the aubergines finish, warm the edamame through in a small pan with a splash of water, or briefly in the microwave.",
+      "Divide the rice between two deep bowls, pressing it in slightly. Lay one glazed aubergine half over each bowl. Scatter over the edamame, crispy shallots, pickled ginger, sesame seeds, and sliced spring onions. Finish with a small drizzle of chilli oil or a pinch of togarashi. Serve immediately while the miso glaze is still bubbling."
     ]
   }
 ];

@@ -1,19 +1,19 @@
 // reads-data.js
-// Auto-updated 2026-07-31 — do not edit manually
+// Auto-updated 2026-08-01 — do not edit manually
 
 var READS_DATA = {
-  date: "2026-07-31",
+  date: "2026-08-01",
   book: {
-    title: "The Overstory",
-    author: "Richard Powers",
-    year: 2018,
-    genres: ["Literary Fiction", "Nature", "Ecology"],
-    desc: "Richard Powers weaves together nine interconnected stories about people whose lives are transformed by trees — a chestnut tree that survives a blight and becomes a family\'s century-long witness, a scientist who discovers that forests communicate and cooperate, activists who take increasingly desperate measures to save old-growth redwoods. The novel operates on two timescales simultaneously: the vast, slow time of trees and the frantic, destructive pace of human civilization, and the contrast is quietly devastating. Powers writes with the precision of a scientist and the lyricism of a poet, making you feel the weight and intelligence of the non-human world in a way few novels ever have. It won the Pulitzer Prize for Fiction and sits alongside the best American novels of the century so far — ambitious in scope yet intimate and emotionally shattering in its execution.",
-    whyRead: "At a moment when the relationship between humanity and the natural world feels more urgent than ever, this book rewires how you perceive every tree you pass — it is one of those rare novels that genuinely changes you.",
-    rating: 4.2,
+    title: "The Vegetarian",
+    author: "Han Kang",
+    year: 2007,
+    genres: ["Literary Fiction", "Psychological Fiction", "Translated Fiction"],
+    desc: "Han Kang\'s compact, devastating novel follows Yeong-hye, a seemingly ordinary South Korean woman who, after a blood-soaked dream, stops eating meat — a decision that ripples outward to shatter her marriage, her family, and finally her sense of self. Told in three acts from the perspectives of those around her rather than Yeong-hye herself, the novel is as much about the violence of conformity and the terror that female autonomy provokes as it is about one woman\'s private rebellion. Kang writes in prose that is cool and precise on the surface yet shimmering with bodily dread, making the book feel like a folktale that has curdled into something far more unsettling. It is short enough to read in a single sitting and strange enough to live in your mind for years — a book about hunger, desire, and what it costs a person to refuse the world as it is handed to them.",
+    whyRead: "With Han Kang\'s Nobel Prize still reverberating through readers worldwide, this is the perfect moment to encounter the work that first announced her singular, disturbing genius to international audiences.",
+    rating: 3.9,
     ratingSource: "Goodreads",
-    ratingCount: "270,000+",
-    coverUrl: "https://covers.openlibrary.org/b/id/8758252-L.jpg",
-    amazonUrl: "https://www.amazon.co.uk/dp/8491814442"
+    ratingCount: "350,000+",
+    coverUrl: "https://covers.openlibrary.org/b/id/7412625-L.jpg",
+    amazonUrl: "https://www.amazon.co.uk/dp/0553448196"
   }
 };
