@@ -1,8 +1,8 @@
 // quote-data.js
-// Auto-updated 2026-08-01 — do not edit manually
+// Auto-updated 2026-08-02 — do not edit manually
 
 var QUOTE_DATA = {
-  date: "2026-08-01",
-  text: "The price of anything is the amount of life you exchange for it.",
-  author: "Henry David Thoreau"
+  date: "2026-08-02",
+  text: "First say to yourself what you would be; and then do what you have to do.",
+  author: "Epictetus"
 };

@@ -1,19 +1,19 @@
 // reads-data.js
-// Auto-updated 2026-08-01 — do not edit manually
+// Auto-updated 2026-08-02 — do not edit manually
 
 var READS_DATA = {
-  date: "2026-08-01",
+  date: "2026-08-02",
   book: {
-    title: "The Vegetarian",
-    author: "Han Kang",
-    year: 2007,
-    genres: ["Literary Fiction", "Psychological Fiction", "Translated Fiction"],
-    desc: "Han Kang\'s compact, devastating novel follows Yeong-hye, a seemingly ordinary South Korean woman who, after a blood-soaked dream, stops eating meat — a decision that ripples outward to shatter her marriage, her family, and finally her sense of self. Told in three acts from the perspectives of those around her rather than Yeong-hye herself, the novel is as much about the violence of conformity and the terror that female autonomy provokes as it is about one woman\'s private rebellion. Kang writes in prose that is cool and precise on the surface yet shimmering with bodily dread, making the book feel like a folktale that has curdled into something far more unsettling. It is short enough to read in a single sitting and strange enough to live in your mind for years — a book about hunger, desire, and what it costs a person to refuse the world as it is handed to them.",
-    whyRead: "With Han Kang\'s Nobel Prize still reverberating through readers worldwide, this is the perfect moment to encounter the work that first announced her singular, disturbing genius to international audiences.",
+    title: "The Botany of Desire",
+    author: "Michael Pollan",
+    year: 2001,
+    genres: ["Nature", "Science", "Food"],
+    desc: "Michael Pollan upends the familiar story of human civilization by asking a deceptively simple question: what if plants have been using us as much as we\'ve been using them? Structured around four plants — the apple, the tulip, marijuana, and the potato — and four human desires — sweetness, beauty, intoxication, and control — the book is a masterclass in making you see the world differently. Pollan writes with wit and genuine curiosity, weaving together botany, history, and philosophy into something that reads almost like a thriller. By the final page, you\'ll find it genuinely hard to walk past a garden or a supermarket without your assumptions quietly rearranging themselves.",
+    whyRead: "At a moment when debates about GM crops, rewilding, and our relationship with the natural world feel more urgent than ever, Pollan\'s playful inversion of the human-plant relationship is both timely and humbling — a perfect summer read that leaves you thinking for weeks.",
     rating: 3.9,
     ratingSource: "Goodreads",
-    ratingCount: "350,000+",
-    coverUrl: "https://covers.openlibrary.org/b/id/7412625-L.jpg",
-    amazonUrl: "https://www.amazon.co.uk/dp/0553448196"
+    ratingCount: "80,000+",
+    coverUrl: "https://covers.openlibrary.org/b/id/3232846-L.jpg",
+    amazonUrl: "https://www.amazon.co.uk/dp/0593531523"
   }
 };

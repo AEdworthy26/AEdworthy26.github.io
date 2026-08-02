@@ -1,18 +1,18 @@
 // films-data.js
-// Auto-updated 2026-08-01 — do not edit manually
+// Auto-updated 2026-08-02 — do not edit manually
 
 var FILMS_DATA = {
-  date: "2026-08-01",
+  date: "2026-08-02",
   film: {
-    title: "Fanny and Alexander",
-    director: "Ingmar Bergman",
-    year: 1982,
-    genres: ["Drama", "Fantasy", "Family"],
-    desc: "Ingmar Bergman\'s warmest and most expansive film follows two siblings navigating a richly theatrical Swedish family\'s world of Christmas feasts, ghost-haunted corridors, and an oppressive bishop\'s household in early twentieth-century Uppsala. Where so much of Bergman\'s work is austere and interior, here he floods the screen with candlelight, velvet, and the joyful chaos of a large extended family — making it feel like a grand, breathing novel. The film moves between comedy, terror, sensuality, and genuine magic with extraordinary ease, anchored by Sven Nykvist\'s luminous cinematography and performances that feel entirely lived-in rather than performed. Bergman intended it as his farewell to cinema, and he poured into it everything he loved: theater, memory, the mystery of storytelling itself, and the way children experience the world as simultaneously wondrous and frightening. It is one of those rare films that genuinely enlarges you, leaving the sensation of having lived through something rather than simply watched it.",
-    cast: ["Gunn Wållgren", "Bertil Guve", "Pernilla Allwin"],
-    rating: 97,
+    title: "Stroszek",
+    director: "Werner Herzog",
+    year: 1977,
+    genres: ["Drama", "Dark Comedy"],
+    desc: "Werner Herzog\'s quietly devastating road movie follows Bruno Stroszek, a Berlin street musician freshly released from prison, who emigrates to rural Wisconsin with two unlikely companions in search of the American dream — and finds something stranger and more melancholy than anyone could have predicted. Shot with Herzog\'s characteristic mix of documentary rawness and deadpan surrealism, the film builds into one of cinema\'s most haunting portraits of displacement and quiet desperation. Real-life street performer Bruno S., who spent much of his childhood in institutions, brings an authenticity and aching vulnerability to the role that no trained actor could replicate. The film\'s final sequence — intercutting a frozen ski lift, a dancing chicken, and an auctioneer\'s relentless chant — is among the most unforgettable images ever committed to celluloid. Ian Curtis reportedly screened it the night before his death, and it is easy to understand why it cuts so deeply.",
+    cast: ["Bruno S.", "Eva Mattes", "Clemens Scheitz"],
+    rating: 96,
     ratingSource: "Rotten Tomatoes",
-    ratingExtra: "4 Academy Awards",
-    posterUrl: "https://upload.wikimedia.org/wikipedia/en/5/56/Fanny%26Alexander.jpg"
+    ratingExtra: "Cannes Film Festival Selection",
+    posterUrl: "https://upload.wikimedia.org/wikipedia/en/2/20/Stroszek_poster.JPG"
   }
 };

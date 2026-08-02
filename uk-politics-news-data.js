@@ -1,60 +1,60 @@
 // uk-politics-news-data.js
-// Auto-updated 2026-08-01 — do not edit manually
+// Auto-updated 2026-08-02 — do not edit manually
 
 var UK_POLITICS_NEWS = {
-  date: "2026-08-01",
+  date: "2026-08-02",
   main: {
-    title: "Labour\'s Bev Craig Elected Mayor of Greater Manchester, Replacing Andy Burnham",
+    title: "Devolution Plans Strengthen Case for Written UK Constitution, Says Burnham",
     category: "Politics",
     content: [
-      "Labour\'s Bev Craig has been elected as the new Mayor of Greater Manchester, securing a decisive victory in what was one of the most closely watched by-elections of the year. Craig, the leader of Manchester City Council, will now step into one of the most powerful political positions outside Westminster, succeeding Andy Burnham who vacated the role after becoming Prime Minister. The result was confirmed in the early hours, with Craig winning nearly double the number of votes secured by Reform UK\'s Sian Astley, delivering a commanding mandate for Labour in a region that has become something of a political bellwether.",
-      "The scale of the victory came as a significant relief to Labour strategists who had feared that Reform UK\'s recent surge in local elections could threaten their grip on the mayoralty. Craig\'s campaign successfully won back areas where Reform had made notable gains in May, as well as recapturing ground that had drifted toward the Greens. The result was described by commentators as demonstrating a so-called 'Burnham bounce' — residual goodwill from the outgoing mayor now channelled into support for his successor.",
-      "Turnout was, however, recorded as the lowest on record for a mayoral election in the Greater Manchester region, a fact that will temper some of the celebratory mood within Labour ranks. Low turnout in by-elections is not unusual, but given the high-profile nature of the mayoralty and its national political significance, the figure will prompt reflection about public engagement. Nonetheless, the margin of victory leaves little ambiguity about where Greater Manchester\'s political loyalties currently lie.",
-      "Bev Craig inherits a mayoralty with an expansive remit and considerable public expectations, not least given Burnham\'s decade-long tenure which transformed the profile and ambitions of the role. She takes over at a moment when devolution is firmly back at the top of the national political agenda, with Prime Minister Burnham having pledged to extend powers and funding to mayoral regions across England. Craig will be expected to be a prominent voice in those negotiations, both as a Labour ally of the PM and as the custodian of a city-region with its own distinct priorities.",
-      "Reform UK will take stock of the result, which represents a setback after the party had harboured hopes of capitalising on any mid-term disillusionment with the new Burnham government. Sian Astley\'s vote share, while falling well short of Craig\'s, nonetheless reflects the continued presence of Reform as a significant force in English regional politics. For Labour, the win provides early evidence that the party can hold its northern heartlands even as it faces pressure from multiple directions — and gives the new prime minister a political boost as he navigates the challenges of his first weeks in Downing Street."
+      "Prime Minister Andy Burnham has argued that his sweeping devolution programme makes the case for a written constitution for the United Kingdom stronger than ever. Speaking publicly on the issue, Burnham contended that the UK\'s 'antiquated' political system is in need of fundamental reform. His comments signal an ambition that goes well beyond the redistribution of powers to regional governments, pointing instead towards a codified model that would reshape the very foundations of the British state.",
+      "The UK is one of a small number of democracies without a written constitution, relying instead on a patchwork of statutes, conventions, and common law that has evolved over centuries. Burnham\'s devolution agenda, which includes the creation of a 'No 10 North' in Manchester and the transfer of significant powers away from Westminster, has thrown into sharp relief the inconsistencies and ambiguities of the current uncodified system. His supporters argue that without a clear constitutional framework, devolved powers remain vulnerable to being clawed back by future governments.",
+      "The Prime Minister\'s push for a written constitution is likely to prove contentious both within his own party and across the political spectrum. Constitutional reform of this magnitude would require extensive parliamentary debate, cross-party negotiation, and potentially a national referendum. Critics may argue that such an undertaking risks destabilising long-standing institutions and could prove a distraction from more immediate economic and social challenges facing the country.",
+      "Nevertheless, Burnham\'s backing for a codified constitution appears to be gaining momentum alongside his broader 'rewiring' of Britain\'s political geography. The recent Greater Manchester mayoral by-election, won comfortably by Labour\'s Bev Craig, demonstrated that his devolutionary project retains popular support in the regions most directly affected. Burnham and his allies believe that giving regions like Greater Manchester formal, constitutionally guaranteed powers would provide lasting change that cannot easily be reversed by a future government in Westminster.",
+      "The devolution agenda is shaping up to be one of the defining domestic policy battles of the Burnham premiership, with the question of a written constitution adding a further layer of ambition and complexity. Whether Parliament would support such a seismic shift in the country\'s political architecture remains deeply uncertain. What is clear is that Burnham intends to use his early period in office to push for structural changes that he believes will permanently alter the relationship between the centre and the regions of the United Kingdom."
     ],
-    image: "https://images.unsplash.com/photo-1616610269931-04d58b579ddf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxMYWJvdXIlNUN8ZW58MHwwfHx8MTc4NTU2MDU0NHww&ixlib=rb-4.1.0&q=80&w=1080",
-    source: "BBC News",
-    sourceUrl: "https://www.bbc.co.uk/news/articles/cy74n1n1lnxo?at_medium=RSS&at_campaign=rss"
+    image: "https://i.guim.co.uk/img/media/64de17ad4df7ab69524bbc80e0ed543b68c4d331/216_82_2784_2227/master/2784.jpg?width=1200&quality=85&auto=format&fit=max&s=35edba0297e9225fbd23d34b7d0b66b3",
+    source: "The Guardian",
+    sourceUrl: "https://www.theguardian.com/politics/2026/aug/02/devolution-programme-written-uk-constitution-andy-burnham"
   },
   secondary: [
     {
       id: "uk1",
-      title: "Chancellor John Healey Announces October Budget and Warns Ministers to Prepare for Spending Cuts",
-      summary: "Chancellor John Healey has confirmed a Budget will be held in October and told ministers there is no new money available to fund Prime Minister Burnham\'s pledges.",
+      title: "Labour\'s Bev Craig Elected Mayor of Greater Manchester, Replacing Andy Burnham",
+      summary: "Labour\'s Bev Craig has won the Greater Manchester mayoral by-election, securing nearly double the votes of Reform UK\'s candidate.",
       body: [
-        "Chancellor John Healey has set an October Budget date and issued a joint letter with Prime Minister Andy Burnham warning cabinet ministers to stick to existing spending limits, making clear that new government commitments must be funded by reallocating existing resources rather than fresh borrowing. The chancellor pledged to move money and power out of Westminster and into communities across Britain, framing the Budget as a vehicle for the government\'s devolution agenda.",
-        "The announcement puts significant pressure on individual departments to identify savings, with ministers told there is no additional Treasury funding available to finance the new Burnham government\'s policy programme. The tight fiscal environment sets the stage for potentially difficult internal negotiations ahead of October, as departments compete to protect their own budgets while being asked to deliver an ambitious reform agenda."
+        "Bev Craig, leader of Manchester City Council, has been elected as the new Mayor of Greater Manchester, succeeding Andy Burnham who vacated the role upon becoming Prime Minister. Craig secured a decisive victory, winning nearly double the number of votes achieved by Reform UK\'s Sian Astley, demonstrating Labour\'s continued grip on the region despite recent national challenges.",
+        "The result will be seen as a significant boost for the Burnham government, suggesting that his devolutionary agenda retains strong public backing in the North West. However, analysts have noted that while the margin was comfortable, Reform UK\'s performance still represents a notable presence that Labour cannot afford to ignore heading into future elections."
       ],
-      image: "https://static.independent.co.uk/2026/07/20/18/2286321598..?width=1200&auto=webp&trim=2%2C0%2C2%2C0",
+      image: "https://images.unsplash.com/photo-1616610269931-04d58b579ddf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxMYWJvdXIlNUN8ZW58MHwwfHx8MTc4NTY0Njk3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "BBC News",
+      url: "https://www.bbc.co.uk/news/articles/cy74n1n1lnxo?at_medium=RSS&at_campaign=rss",
+      category: "Politics"
+    },
+    {
+      id: "uk2",
+      title: "Stick to Spending Limits, PM and Chancellor Tell Ministers in Joint Memo",
+      summary: "Prime Minister Burnham and Chancellor Healey have jointly instructed cabinet ministers to stay within existing spending limits, signalling no new money for fresh policy pledges.",
+      body: [
+        "In an unusual joint memo, Prime Minister Andy Burnham and Chancellor John Healey have warned cabinet ministers to adhere strictly to their departmental spending limits. The Chancellor confirmed that the Budget on 28 October would 'meet our fiscal rules' and provide families with 'stability' to plan for the future, amid mounting pressure on the public finances.",
+        "The memo makes clear that ministers hoping to fund new initiatives will need to find savings from within their existing budgets rather than rely on any additional Treasury support. The move underscores the government\'s determination to maintain fiscal discipline even as Burnham pursues an ambitious programme of domestic reform and devolution."
+      ],
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/f911/live/99ae70c0-8ced-11f1-a573-93159e2b55da.jpg",
       source: "BBC News",
       url: "https://www.bbc.co.uk/news/articles/cjd4yz35x8go?at_medium=RSS&at_campaign=rss",
       category: "Politics"
     },
     {
-      id: "uk2",
-      title: "Burnham Risks First Labour Revolt Over Apparent Support for North Sea Oil and Gas Drilling",
-      summary: "Prime Minister Andy Burnham faces the prospect of a rebellion from Labour MPs after giving his strongest indication yet of support for renewed North Sea drilling.",
+      id: "uk3",
+      title: "Burnham Risks First Revolt as PM Over Apparent Support for North Sea Drilling",
+      summary: "Labour MPs and climate experts have condemned Prime Minister Burnham\'s apparent backing for renewed North Sea oil and gas drilling, warning it could trigger the first rebellion of his premiership.",
       body: [
-        "Andy Burnham has been warned he could face the first significant revolt of his premiership after Labour MPs and climate experts condemned what they interpreted as his apparent backing for renewed oil and gas extraction in the North Sea, including the controversial Rosebank and Jackdaw fields. The intervention comes as the UK endures drought, wildfires and heatwaves, making the political optics of backing fossil fuel expansion particularly fraught.",
-        "Labour MPs raised fears that the No 10 team lacks sufficient up-to-date energy expertise and does not fully appreciate the weight that climate concerns carry with voters, particularly those who backed Labour in the most recent general election. The episode represents an early test of Burnham\'s ability to manage the competing economic and environmental pressures that will define energy policy in his administration."
+        "Andy Burnham is facing the prospect of the first parliamentary revolt of his time as Prime Minister after giving the strongest indication yet that he would support renewed drilling for oil and gas in the North Sea. The intervention has alarmed Labour MPs and climate campaigners, coming at a time when the UK is enduring drought, wildfires, and heatwaves that have focused public attention sharply on climate issues.",
+        "Critics within the Labour Party have warned that Burnham\'s No 10 team may lack up-to-date energy policy expertise and do not fully appreciate the depth of voters' concerns about the climate. The episode represents a potentially serious early test of Burnham\'s authority, as he attempts to balance energy security considerations against his party\'s strong environmental commitments."
       ],
       image: "https://i.guim.co.uk/img/media/45ac18739b61ed7ff4ccfff77df946b6abd42be7/0_231_3993_3194/master/3993.jpg?width=1200&quality=85&auto=format&fit=max&s=fccbbfb91a9210bba96a41d14bcfe4fe",
       source: "The Guardian",
       url: "https://www.theguardian.com/politics/2026/jul/31/andy-burnham-risks-labour-revolt-north-sea-drilling-rosebank-jackdaw-climate",
-      category: "Politics"
-    },
-    {
-      id: "uk3",
-      title: "Key HS2 Contracts Renegotiated as Government Moves to Slash Costs on Troubled Rail Project",
-      summary: "Two of HS2's most significant private sector contracts have been renegotiated as the government tries to demonstrate it has finally brought Britain\'s most controversial infrastructure project under control.",
-      body: [
-        "The government has announced that two of the High Speed 2 railway\'s most significant private sector deals have been renegotiated, in a bid to reduce costs on a project that has long been derided as an infrastructure white elephant beset by delays and budget overruns. Ministers presented the move as evidence that the programme is finally being brought under meaningful financial discipline.",
-        "HS2 has remained one of the most politically contentious infrastructure commitments in British politics, having survived repeated threats of cancellation or further scaling back. The renegotiation of major contracts signals that the Burnham government intends to press ahead while demonstrating fiscal responsibility — a delicate balance given the wider spending pressures outlined by Chancellor Healey."
-      ],
-      image: "https://e3.365dm.com/26/05/1920x1080/skynews-hs2-staff-rail-line_7253295.jpg?20260519171836",
-      source: "Sky News",
-      url: "https://news.sky.com/story/key-hs2-contracts-renegotiated-as-government-scrambles-to-slash-costs-13568600",
       category: "Politics"
     }
   ]

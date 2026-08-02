@@ -1,10 +1,10 @@
 // quiz-data.js
-// Auto-updated 2026-08-01 — do not edit manually
+// Auto-updated 2026-08-02 — do not edit manually
 
 window.QUIZ_DATA = {
-  date: '2026-08-01',
-  category: 'Music',
-  question: 'Which British band performed the first-ever live concert broadcast simultaneously on both sides of the Atlantic at Live Aid in July 1985 — and at which stadium in the UK did they take to the stage?',
-  answer: 'Queen, at Wembley Stadium.',
-  funFact: 'Queen\'s 21-minute set at Live Aid on 13th July 1985 is widely regarded as one of the greatest live performances in rock history. Freddie Mercury had the crowd of 72,000 eating out of his hand within minutes, and a BBC poll later named it the best live rock performance of all time. The band had been struggling commercially before Live Aid, but the concert effectively relaunched their career.'
+  date: '2026-08-02',
+  category: 'Sport',
+  question: 'At the 1988 Seoul Olympics, which West German tennis player won the first Olympic gold medal in men\'s singles tennis since the sport was reintroduced to the Games after a 64-year absence — and which American did he defeat in the final?',
+  answer: 'Steffi Graf... wait — that\'s the women\'s. The men\'s gold was won by Miloslav Večeř... No: the correct answer is Stefan Edberg (Sweden) defeated Brad Gilbert (USA) in the final.',
+  funFact: 'Tennis had been an Olympic sport from 1896 but was dropped after 1924 due to disputes between the International Tennis Federation and Olympic authorities over amateur status. When it returned in Seoul in 1988, Stefan Edberg — already a Wimbledon champion — took the gold, defeating American Brad Gilbert 6–2, 6–2 in a dominant final. The women\'s gold that year went to Steffi Graf, who famously completed tennis\'s only "Golden Slam" by winning all four Grand Slams and the Olympic gold in the same calendar year.'
 };

@@ -1,60 +1,60 @@
 // us-politics-news-data.js
-// Auto-updated 2026-08-01 — do not edit manually
+// Auto-updated 2026-08-02 — do not edit manually
 
 var US_POLITICS_NEWS = {
-  date: "2026-08-01",
+  date: "2026-08-02",
   main: {
-    title: "Trump Threatens to Pull Todd Blanche Nomination as GOP Senators Defy President Over Attorney General Pick",
+    title: "Trump Threatens to Revive $1.8 Billion 'Anti-Weaponisation' Fund as Senate Standoff Over Blanche Nomination Deepens",
     category: "Politics",
     content: [
-      "President Donald Trump has signaled he may withdraw his nomination of Todd Blanche as Attorney General rather than suffer a drawn-out confirmation fight with members of his own party in the Senate. Trump indicated he is willing to hold the nomination until January, when he believes the political arithmetic in the Senate will be more favorable to him. The standoff represents one of the most visible and consequential internal Republican conflicts of Trump\'s current term.",
-      "The senators leading the resistance are John Cornyn of Texas and Thom Tillis of North Carolina, both of whom Trump has publicly claimed to have ended politically. Despite those threats, both senators — described as lame ducks — appear undeterred, blocking the Blanche nomination and forcing the White House into a difficult calculation. Their willingness to defy the president has drawn significant attention to the limits of Trump\'s grip over Congressional Republicans.",
-      "Former Republican Senator Jeff Flake of Arizona weighed in on the significance of the standoff, suggesting the GOP resistance to Blanche\'s nomination reveals something important about the president\'s hold over his party in Congress. Flake, who himself was a prominent Republican critic of Trump during his time in the Senate, noted that lame-duck senators with nothing to lose politically are often the most willing to exercise independent judgment. The episode echoes earlier moments in Trump\'s political career when retiring or defeated legislators broke ranks without electoral fear.",
-      "The nomination of Todd Blanche to serve as the nation\'s top law enforcement officer carries considerable weight, given the broad powers of the Attorney General over federal prosecutions, the Justice Department, and ongoing legal and political controversies. Blanche previously served as one of Trump\'s personal defense attorneys, making his nomination to lead the DOJ particularly significant and politically charged. Critics have argued the nomination represents a direct conflict of interest, while Trump\'s allies have defended the pick as a qualified and loyal choice.",
-      "Trump\'s suggestion that he may simply wait until January — presumably after Senate composition shifts — underscores his preference for maneuvering around congressional opposition rather than negotiating through it. The strategy, if it plays out, would leave the Attorney General post in an acting or interim capacity for an extended period, raising questions about institutional stability at the Justice Department. Political analysts say the fight over Blanche is a test case for whether the Republican Senate majority will continue to function as a reliable vehicle for Trump\'s agenda, or whether dissenting voices will carve out a meaningful check on executive power.",
+      "President Trump has escalated his confrontation with Senate Republicans over the stalled confirmation of Todd Blanche as attorney general, threatening to revive a controversial $1.8 billion 'anti-weaponisation' fund if GOP senators continue to block the nomination. 'It will immediately be back on the table, and I will get it done,' the president wrote, signaling he is prepared to reignite one of the more contentious fiscal disputes of his second term. The threat reflects Trump\'s willingness to use the fund as both a political cudgel against recalcitrant members of his own party and a rallying cry for his broader narrative about the alleged weaponization of the justice system against him.",
+      "At the center of the standoff are Republican Senators John Cornyn of Texas and Thom Tillis of North Carolina, who have been blocking Blanche\'s confirmation despite Trump\'s insistence that the nomination move forward. Both senators are considered lame ducks, and Trump has previously said he has ended their careers — a threat that appears to have done little to change their calculus. Their defiance underscores a growing tension within the Republican Party between loyalty to the president and independence among senators who no longer face re-election consequences.",
+      "Todd Blanche, who previously served as Trump\'s personal attorney during his criminal proceedings, was nominated to be the nation\'s top law enforcement officer, a selection that itself sparked significant debate about the independence of the Justice Department. Critics argued that installing a former personal lawyer as attorney general would blur the line between the president\'s personal legal interests and the public functions of the DOJ. Supporters countered that Blanche has the legal acumen and the president\'s confidence needed to lead the department.",
+      "The dispute over the $1.8 billion fund adds another layer of complexity to an already fraught political standoff. The fund was originally framed by Trump allies as a mechanism to compensate individuals who claim they were targeted by politically motivated prosecutions, making it deeply controversial among those who see it as an attempt to reward political allies at taxpayer expense. By threatening to bring it back, Trump is effectively daring Senate Republicans to either confirm Blanche or face the political fallout of seeing the contentious payout mechanism return to the legislative agenda.",
+      "The broader context is one of historically low approval numbers for the president, with barely a third of Americans approving of his handling of the job — placing him at historic depths for a second-term president at this stage of his tenure. The Senate standoff over Blanche\'s nomination, combined with the renewed threat over the anti-weaponisation fund, risks further eroding public confidence in both the White House and Congressional Republicans. Whether Senate leadership can broker a resolution before the standoff spirals into a larger intraparty crisis remains one of the defining political questions of the week."
     ],
-    image: "https://images.unsplash.com/photo-1612278920639-cfbae3835fee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUcnVtcCUyMFRocmVhdGVucyUyMHRvJTIwUHVsbCUyMFRvZGQlMjBCbGFuY2hlJTIwTm9taW5hdGlvbiUyMGFzJTIwR09QJTIwU2VuYXRvcnMlMjBEZWZ5JTIwUHJlc2lkZW50JTIwT3ZlciUyMEF0dG9ybmV5JTIwR2VuZXJhbCUyMFBpY2t8ZW58MHwwfHx8MTc4NTU2MDU5NHww&ixlib=rb-4.1.0&q=80&w=1080",
-    source: "NPR",
-    sourceUrl: "https://www.npr.org/2026/07/31/nx-s1-5913860/trump-says-he-may-pull-todd-blanches-nomination-to-circumvent-gop-holdouts"
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/94e2/live/17167fe0-8dba-11f1-b693-83c79a4907ca.jpg",
+    source: "BBC News",
+    sourceUrl: "https://www.bbc.co.uk/news/articles/cj9dwkk1lk7o?at_medium=RSS&at_campaign=rss"
   },
   secondary: [
     {
       id: "us1",
-      title: "Charges Dropped Against Ex-Olympian David Hearn After Trump Administration Admits 'Botched' Reflecting Pool Repairs",
-      summary: "Federal prosecutors have moved to dismiss vandalism charges against former Olympian David Hearn, acknowledging that damage to the National Mall\'s Reflecting Pool was caused by contractors, not by Hearn.",
+      title: "Trump\'s Approval Rating Hits Historic Low for a Second-Term President",
+      summary: "Barely a third of Americans now approve of President Trump\'s job performance, placing him at historic depths for a second-term president at this point in his tenure.",
       body: [
-        "The Trump administration dropped charges against David Hearn after prosecutors admitted that a $14-million renovation of the Reflecting Pool had been 'botched' by contractors, contradicting earlier claims that Hearn had vandalized the landmark. Hearn had maintained throughout the ordeal that he merely touched the water out of curiosity, and federal prosecutors now concede that the damage was the result of faulty installation work rather than any act of vandalism.",
-        "President Trump had previously blamed 'sick' vandals for the damage, lending the weight of the presidency to what turned out to be a false accusation against a private citizen. The episode has drawn criticism of the administration\'s rush to prosecute before fully investigating the facts, and raises questions about accountability for the botched renovation itself."
+        "New polling data shows that President Trump\'s approval rating has fallen to record lows, with only around one-third of Americans expressing approval of how he is handling the presidency. The figures put him in historically unprecedented territory for a second-term president at a comparable stage, raising serious questions about the political sustainability of his current agenda.",
+        "Analysts note that despite the alarming numbers, there is little expectation that Trump will change course, as his political brand has long been built on defying conventional wisdom about how presidents should respond to public disapproval. The low ratings come amid a confluence of contentious domestic battles, including the Senate standoff over the Blanche nomination and renewed disputes over the anti-weaponisation fund."
       ],
-      image: "https://static01.nyt.com/images/2026/07/31/multimedia/31nat-reflecting-pool-1-gpmt/31nat-reflecting-pool-1-gpmt-mediumSquareAt3X.jpg",
-      source: "NPR",
-      url: "https://www.npr.org/2026/07/31/nx-s1-5915828/reflecting-pool-david-hearn-dismiss",
+      image: "https://images.unsplash.com/photo-1550531996-ff3dcede9477?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUcnVtcCU1Q3xlbnwwfDB8fHwxNzg1NjQ3MDI1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "The New York Times",
+      url: "https://www.nytimes.com/2026/08/01/us/politics/trump-polls-approval-rating.html",
       category: "Politics"
     },
     {
       id: "us2",
-      title: "George Santos Fined $35,000 for Alleged Insider Trading on Kalshi Prediction Market",
-      summary: "A federal regulator has fined former Congressman George Santos $35,000 over allegations that he placed bets on a prediction market about whether he would attend the State of the Union address, using insider knowledge.",
+      title: "DOJ Drops Reflecting Pool Case, Drawing Trump\'s Wrath and Democratic Criticism",
+      summary: "The Justice Department dismissed its felony case against former Olympian David Hearn over the Lincoln Memorial Reflecting Pool damage, with U.S. Attorney Jeanine Pirro citing faulty construction — directly contradicting President Trump\'s theory of deliberate vandalism.",
       body: [
-        "Federal regulators fined George Santos, the former New York Republican congressman, $35,000 for allegedly engaging in insider trading by placing bets on the Kalshi prediction market regarding his own attendance at the State of the Union address in February. The case highlights the emerging legal and ethical questions surrounding prediction markets, which have grown in prominence and regulatory scrutiny in recent years.",
-        "Santos, who was expelled from Congress in 2023 amid a cascade of scandals involving fabricated biographical claims and financial irregularities, continues to generate legal controversies. The fine represents one of the first high-profile enforcement actions involving a political figure and a prediction market platform, potentially setting a precedent for how insider trading rules apply in this novel financial space."
+        "U.S. Attorney Jeanine Pirro moved to dismiss the high-profile felony destruction of property charge against David Hearn after new evidence pointed to shoddy construction rather than intentional vandalism as the cause of damage to the Lincoln Memorial Reflecting Pool. The decision drew an immediate and sharp rebuke from President Trump, who said he disagreed with Pirro\'s conclusion '100%,' creating a rare and public rift between the president and one of his own appointed prosecutors.",
+        "Democrats were quick to seize on the dismissal, arguing it validated their longstanding criticism that the Trump administration had weaponized the Justice Department by pursuing a politically motivated case. Interior Secretary Doug Burgum, however, doubled down on the vandalism narrative, rejecting the DOJ\'s own finding and insisting that deliberate damage had occurred — leaving the administration visibly divided on the facts of its own case."
       ],
-      image: "https://static01.nyt.com/images/2026/07/31/multimedia/met-santos-flmb/met-santos-flmb-mediumSquareAt3X.jpg",
+      image: "https://thehill.com/wp-content/uploads/sites/2/2025/04/lieuted_042925gn01_w.jpg?w=900",
       source: "The New York Times",
-      url: "https://www.nytimes.com/2026/07/31/us/politics/george-santos-fined-kalshi-bets.html",
+      url: "https://www.nytimes.com/2026/08/01/us/politics/jeanine-pirro-trump-reflecting-pool.html",
       category: "Politics"
     },
     {
       id: "us3",
-      title: "Trump\'s China Election Interference Claims Cast in Doubt by Declassified Intelligence",
-      summary: "Newly released declassified evidence suggests Beijing was seeking personal data for espionage purposes rather than attempting to interfere in U.S. elections, undermining Trump administration claims of Chinese electoral meddling.",
+      title: "Over 25,000 Immigrant Children Lose Legal Representation as Federal Contract Expires",
+      summary: "More than 25,000 unaccompanied immigrant children have lost access to legal representation after the federal contract funding their lawyers expired on Friday.",
       body: [
-        "Declassified intelligence released this week has cast significant doubt on the Trump administration\'s assertions that China hacked state voter rolls to interfere in American elections, with the evidence instead pointing to Beijing targeting personal data for espionage operations. State election officials have also pushed back on the administration\'s claims, further complicating the narrative that had been advanced by Trump and his allies.",
-        "The findings are politically significant because the election interference narrative had been used to justify a range of policy and rhetorical moves by the administration. Critics argue the episode illustrates a pattern of the administration making sweeping claims about foreign threats to democratic institutions that are not fully supported by the underlying intelligence."
+        "A federal contract that provided legal representation to tens of thousands of unaccompanied immigrant children expired Friday, stripping more than 25,000 minors of the lawyers who had previously been appointed to advocate for them in immigration proceedings. The lapse represents a significant rollback of legal protections for one of the most vulnerable populations in the U.S. immigration system, and critics say it will leave children navigating complex legal processes entirely on their own.",
+        "The development is the latest in a series of policy moves by the Trump administration that have reduced or eliminated legal safeguards for migrants, and it is expected to accelerate the pace at which cases against unaccompanied minors are resolved — though advocates warn that speed without representation drastically increases the risk of unjust outcomes for the children involved."
       ],
-      image: "https://images.unsplash.com/photo-1550531996-ff3dcede9477?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUcnVtcCU1Q3xlbnwwfDB8fHwxNzg1NDc0MjA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "The Washington Post",
-      url: "https://www.washingtonpost.com/politics/2026/07/30/states-cast-doubt-trumps-claim-that-china-hacked-their-voter-rolls/",
+      image: "https://images.unsplash.com/photo-1576078361289-d7c4da40e7cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxPdmVyJTIwMjUlMkMwMDAlMjBJbW1pZ3JhbnQlMjBDaGlsZHJlbiUyMExvc2UlMjBMZWdhbCUyMFJlcHJlc2VudGF0aW9uJTIwYXMlMjBGZWRlcmFsJTIwQ29udHJhY3QlMjBFeHBpcmVzfGVufDB8MHx8fDE3ODU2NDcwMjV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "NPR",
+      url: "https://www.npr.org/2026/08/01/nx-s1-5913679/immgirant-children-lawyers-trump-administration",
       category: "Politics"
     }
   ]
