@@ -1,19 +1,19 @@
 // reads-data.js
-// Auto-updated 2026-08-02 — do not edit manually
+// Auto-updated 2026-08-03 — do not edit manually
 
 var READS_DATA = {
-  date: "2026-08-02",
+  date: "2026-08-03",
   book: {
-    title: "The Botany of Desire",
-    author: "Michael Pollan",
-    year: 2001,
-    genres: ["Nature", "Science", "Food"],
-    desc: "Michael Pollan upends the familiar story of human civilization by asking a deceptively simple question: what if plants have been using us as much as we\'ve been using them? Structured around four plants — the apple, the tulip, marijuana, and the potato — and four human desires — sweetness, beauty, intoxication, and control — the book is a masterclass in making you see the world differently. Pollan writes with wit and genuine curiosity, weaving together botany, history, and philosophy into something that reads almost like a thriller. By the final page, you\'ll find it genuinely hard to walk past a garden or a supermarket without your assumptions quietly rearranging themselves.",
-    whyRead: "At a moment when debates about GM crops, rewilding, and our relationship with the natural world feel more urgent than ever, Pollan\'s playful inversion of the human-plant relationship is both timely and humbling — a perfect summer read that leaves you thinking for weeks.",
-    rating: 3.9,
+    title: "The Year of Magical Thinking",
+    author: "Joan Didion",
+    year: 2005,
+    genres: ["Memoir", "Grief", "Literary Nonfiction"],
+    desc: "In the year following the sudden death of her husband, the writer John Gregory Dunne, Joan Didion wrote what has become one of the most celebrated accounts of grief ever put to paper. With the precision of a journalist and the emotional rawness of someone in freefall, she examines how grief distorts time, reason, and identity — how the mind simultaneously accepts and refuses the fact of loss. The book is unsentimental and rigorously honest, which makes it far more devastating than any mournful elegy could be. Didion coined the phrase 'magical thinking' for the irrational bargaining the bereaved do, the quiet negotiations with reality that the mind conducts without permission, and in naming it she gave countless readers a language for their own experience.",
+    whyRead: "Nearly two decades on, this slim book still reads as an act of literary courage — a reminder that great writing can make the most private human experiences feel utterly universal, and that clear-eyed attention to loss is one of the most generous things a writer can offer a reader.",
+    rating: 4.1,
     ratingSource: "Goodreads",
-    ratingCount: "80,000+",
-    coverUrl: "https://covers.openlibrary.org/b/id/3232846-L.jpg",
-    amazonUrl: "https://www.amazon.co.uk/dp/0593531523"
+    ratingCount: "150,000+",
+    coverUrl: "https://covers.openlibrary.org/b/id/13693-L.jpg",
+    amazonUrl: "https://www.amazon.co.uk/dp/0307498913"
   }
 };

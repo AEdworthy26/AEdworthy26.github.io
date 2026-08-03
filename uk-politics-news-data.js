@@ -1,61 +1,61 @@
 // uk-politics-news-data.js
-// Auto-updated 2026-08-02 — do not edit manually
+// Auto-updated 2026-08-03 — do not edit manually
 
 var UK_POLITICS_NEWS = {
-  date: "2026-08-02",
+  date: "2026-08-03",
   main: {
-    title: "Devolution Plans Strengthen Case for Written UK Constitution, Says Burnham",
+    title: "Burnham Pledges to Be 'Relentless' in Curbing Small Boat Crossings After Ceuta Crisis",
     category: "Politics",
     content: [
-      "Prime Minister Andy Burnham has argued that his sweeping devolution programme makes the case for a written constitution for the United Kingdom stronger than ever. Speaking publicly on the issue, Burnham contended that the UK\'s 'antiquated' political system is in need of fundamental reform. His comments signal an ambition that goes well beyond the redistribution of powers to regional governments, pointing instead towards a codified model that would reshape the very foundations of the British state.",
-      "The UK is one of a small number of democracies without a written constitution, relying instead on a patchwork of statutes, conventions, and common law that has evolved over centuries. Burnham\'s devolution agenda, which includes the creation of a 'No 10 North' in Manchester and the transfer of significant powers away from Westminster, has thrown into sharp relief the inconsistencies and ambiguities of the current uncodified system. His supporters argue that without a clear constitutional framework, devolved powers remain vulnerable to being clawed back by future governments.",
-      "The Prime Minister\'s push for a written constitution is likely to prove contentious both within his own party and across the political spectrum. Constitutional reform of this magnitude would require extensive parliamentary debate, cross-party negotiation, and potentially a national referendum. Critics may argue that such an undertaking risks destabilising long-standing institutions and could prove a distraction from more immediate economic and social challenges facing the country.",
-      "Nevertheless, Burnham\'s backing for a codified constitution appears to be gaining momentum alongside his broader 'rewiring' of Britain\'s political geography. The recent Greater Manchester mayoral by-election, won comfortably by Labour\'s Bev Craig, demonstrated that his devolutionary project retains popular support in the regions most directly affected. Burnham and his allies believe that giving regions like Greater Manchester formal, constitutionally guaranteed powers would provide lasting change that cannot easily be reversed by a future government in Westminster.",
-      "The devolution agenda is shaping up to be one of the defining domestic policy battles of the Burnham premiership, with the question of a written constitution adding a further layer of ambition and complexity. Whether Parliament would support such a seismic shift in the country\'s political architecture remains deeply uncertain. What is clear is that Burnham intends to use his early period in office to push for structural changes that he believes will permanently alter the relationship between the centre and the regions of the United Kingdom."
+      "Prime Minister Andy Burnham has vowed to be 'relentless' in tackling small boat crossings in the English Channel, delivering his pledge during a visit to Dover as tens of thousands of migrants entered the Spanish territory of Ceuta. The dramatic scenes at Ceuta have intensified political pressure on the government to demonstrate firm control over illegal immigration. Burnham used the visit to announce a boost to the number of officers deployed to tackle smuggling gangs operating across the Channel.",
+      "Speaking directly to the scale of the challenge, the Prime Minister acknowledged that the UK needed to 'bring back that control' over its borders, framing the issue in language designed to resonate with voters who have long demanded tougher enforcement. He was careful to stress, however, that increased enforcement alone would not be sufficient to dismantle the criminal networks that profit from human trafficking. Burnham argued that establishing safe and legal routes for genuine refugees was an essential part of any credible long-term strategy.",
+      "The Prime Minister\'s remarks represent one of his most direct interventions yet on the immigration issue since entering Downing Street. By travelling to Dover personally, Burnham sought to signal that the government was taking the threat of rising Channel crossings seriously at the highest level. His emphasis on both enforcement and safe routes reflects an attempt to balance tough border control messaging with a humanitarian dimension that differentiates his approach from that of his political opponents.",
+      "The backdrop of the Ceuta crisis lent considerable urgency to the visit, with images of large-scale migration movements dominating news coverage across Europe. Burnham\'s team were clearly aware that the Prime Minister needed to be seen taking charge of the narrative before it could be seized upon by Reform UK and other parties on the right. The combination of visible action at Dover and a clear policy statement was designed to project an image of a government that is both competent and compassionate in its handling of the issue.",
+      "The announcement comes at a politically sensitive moment for Labour, with polling suggesting that immigration remains one of the top concerns for British voters. Sir John Curtice\'s recent analysis has noted that while there is a modest 'Burnham bounce' in the governing party\'s ratings, Labour is only just ahead of Reform UK, underlining just how little margin for error the government has. With the Clacton by-election also drawing national attention, the Prime Minister will be acutely aware that his handling of small boat crossings could prove decisive in shaping public confidence in his administration over the months ahead."
     ],
-    image: "https://i.guim.co.uk/img/media/64de17ad4df7ab69524bbc80e0ed543b68c4d331/216_82_2784_2227/master/2784.jpg?width=1200&quality=85&auto=format&fit=max&s=35edba0297e9225fbd23d34b7d0b66b3",
-    source: "The Guardian",
-    sourceUrl: "https://www.theguardian.com/politics/2026/aug/02/devolution-programme-written-uk-constitution-andy-burnham"
+    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/6f40/live/437e3850-8ebb-11f1-8ef4-9df8a1651b2c.jpg",
+    source: "BBC News",
+    sourceUrl: "https://www.bbc.co.uk/news/articles/c3r0v952ny3o?at_medium=RSS&at_campaign=rss"
   },
   secondary: [
     {
       id: "uk1",
-      title: "Labour\'s Bev Craig Elected Mayor of Greater Manchester, Replacing Andy Burnham",
-      summary: "Labour\'s Bev Craig has won the Greater Manchester mayoral by-election, securing nearly double the votes of Reform UK\'s candidate.",
+      title: "Farage Urged to 'Come Clean' After Facing New Questions Over £5 Million Gift",
+      summary: "Fresh doubt has been cast on Nigel Farage\'s defence for not declaring a reported £5 million gift from crypto-billionaire Christopher Harborne.",
       body: [
-        "Bev Craig, leader of Manchester City Council, has been elected as the new Mayor of Greater Manchester, succeeding Andy Burnham who vacated the role upon becoming Prime Minister. Craig secured a decisive victory, winning nearly double the number of votes achieved by Reform UK\'s Sian Astley, demonstrating Labour\'s continued grip on the region despite recent national challenges.",
-        "The result will be seen as a significant boost for the Burnham government, suggesting that his devolutionary agenda retains strong public backing in the North West. However, analysts have noted that while the margin was comfortable, Reform UK\'s performance still represents a notable presence that Labour cannot afford to ignore heading into future elections."
+        "A new report has raised further questions about Reform UK leader Nigel Farage\'s failure to declare a £5 million gift from crypto-billionaire Christopher Harborne, with opponents demanding that he 'come clean' about the financial arrangement. The story threatens to become a serious distraction for Farage at a moment when Reform is seeking to present itself as a credible alternative government.",
+        "The controversy comes as Rupert Lowe, the leader of the breakaway Restore Britain party, has separately urged Farage to put aside their personal differences and work together for the good of the country. The combination of the undeclared gift story and the internal tensions on the right of British politics could complicate Reform\'s attempts to consolidate its position in the polls."
       ],
-      image: "https://images.unsplash.com/photo-1616610269931-04d58b579ddf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxMYWJvdXIlNUN8ZW58MHwwfHx8MTc4NTY0Njk3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "BBC News",
-      url: "https://www.bbc.co.uk/news/articles/cy74n1n1lnxo?at_medium=RSS&at_campaign=rss",
+      image: "https://static.independent.co.uk/2026/07/30/13/01KWYCK2F3CYHEWMTKM770ZA8X.jpg?width=1200&auto=webp&trim=1%2C0%2C1%2C0",
+      source: "The Independent",
+      url: "https://www.independent.co.uk/news/uk/politics/nigel-farage-gift-crypto-reform-b3026126.html",
       category: "Politics"
     },
     {
       id: "uk2",
-      title: "Stick to Spending Limits, PM and Chancellor Tell Ministers in Joint Memo",
-      summary: "Prime Minister Burnham and Chancellor Healey have jointly instructed cabinet ministers to stay within existing spending limits, signalling no new money for fresh policy pledges.",
+      title: "Clacton By-Election Ballot Paper Is Longest in British Electoral History at Nearly a Metre Long",
+      summary: "A record 34 candidates have registered to stand in the Clacton by-election, producing a ballot paper almost a metre in length.",
       body: [
-        "In an unusual joint memo, Prime Minister Andy Burnham and Chancellor John Healey have warned cabinet ministers to adhere strictly to their departmental spending limits. The Chancellor confirmed that the Budget on 28 October would 'meet our fiscal rules' and provide families with 'stability' to plan for the future, amid mounting pressure on the public finances.",
-        "The memo makes clear that ministers hoping to fund new initiatives will need to find savings from within their existing budgets rather than rely on any additional Treasury support. The move underscores the government\'s determination to maintain fiscal discipline even as Burnham pursues an ambitious programme of domestic reform and devolution."
+        "The Clacton by-election has made history before polling day has even arrived, with 34 candidates standing in the contest producing what is officially the longest ballot paper in British electoral history at nearly a metre long. The extraordinary number of candidates reflects the fragmented and turbulent state of British politics, with numerous minor parties and independents seeking to capitalise on national attention.",
+        "Clacton was previously held by Reform UK and its loss or retention will be closely watched as a bellwether for the right-of-centre vote. The sheer number of candidates risks splitting the anti-establishment vote in unpredictable ways, making the result harder to forecast and potentially more significant as a signal of where smaller parties stand."
       ],
-      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/f911/live/99ae70c0-8ced-11f1-a573-93159e2b55da.jpg",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/116e/live/f5b9ec50-8e4b-11f1-b2ab-0dd01740f9f6.jpg",
       source: "BBC News",
-      url: "https://www.bbc.co.uk/news/articles/cjd4yz35x8go?at_medium=RSS&at_campaign=rss",
+      url: "https://www.bbc.co.uk/news/articles/clyem5lg78qo?at_medium=RSS&at_campaign=rss",
       category: "Politics"
     },
     {
       id: "uk3",
-      title: "Burnham Risks First Revolt as PM Over Apparent Support for North Sea Drilling",
-      summary: "Labour MPs and climate experts have condemned Prime Minister Burnham\'s apparent backing for renewed North Sea oil and gas drilling, warning it could trigger the first rebellion of his premiership.",
+      title: "Chancellor Healey Warns on Food and Fuel Profiteering as Iran War Hits Prices",
+      summary: "Chancellor John Healey has put retailers on notice that the government is prepared to act against price gouging as the ongoing Iran conflict continues to push up costs for consumers.",
       body: [
-        "Andy Burnham is facing the prospect of the first parliamentary revolt of his time as Prime Minister after giving the strongest indication yet that he would support renewed drilling for oil and gas in the North Sea. The intervention has alarmed Labour MPs and climate campaigners, coming at a time when the UK is enduring drought, wildfires, and heatwaves that have focused public attention sharply on climate issues.",
-        "Critics within the Labour Party have warned that Burnham\'s No 10 team may lack up-to-date energy policy expertise and do not fully appreciate the depth of voters' concerns about the climate. The episode represents a potentially serious early test of Burnham\'s authority, as he attempts to balance energy security considerations against his party\'s strong environmental commitments."
+        "Chancellor John Healey has issued a stark warning to food and fuel retailers, saying the government is standing by to prevent the public from being 'taken for a ride at the pump or the till' as the Iran war continues to drive up prices. While Healey acknowledged there had been 'no significant evidence' of price gouging so far, his language was deliberately firm and is expected to provoke a reaction from the retail industry.",
+        "The intervention risks a row with major retailers who argue that price rises are being driven by genuine supply chain pressures rather than profiteering. The warning nonetheless signals that the Burnham government is prepared to take a more interventionist stance on consumer prices if evidence of exploitation emerges, a message likely to resonate with cost-of-living-weary voters."
       ],
-      image: "https://i.guim.co.uk/img/media/45ac18739b61ed7ff4ccfff77df946b6abd42be7/0_231_3993_3194/master/3993.jpg?width=1200&quality=85&auto=format&fit=max&s=fccbbfb91a9210bba96a41d14bcfe4fe",
+      image: "https://i.guim.co.uk/img/media/e6a3cd2698b4e119649a9eb464bab631b757fd43/964_277_3941_3154/master/3941.jpg?width=1200&quality=85&auto=format&fit=max&s=7a03aeb8573d75a479110e4a8bbee185",
       source: "The Guardian",
-      url: "https://www.theguardian.com/politics/2026/jul/31/andy-burnham-risks-labour-revolt-north-sea-drilling-rosebank-jackdaw-climate",
-      category: "Politics"
+      url: "https://www.theguardian.com/business/2026/aug/02/john-healey-profiteering-warning-retailers-backlash",
+      category: "Economics"
     }
   ]
 };

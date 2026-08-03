@@ -1,43 +1,30 @@
 // tech-news-data.js
-// Auto-updated 2026-08-02 — do not edit manually
+// Auto-updated 2026-08-03 — do not edit manually
 
 var TECH_NEWS = {
-  date: "2026-08-02",
+  date: "2026-08-03",
   main: {
-    title: "Here\'s How Engineers Plan to Save the Satellite Sent to Save NASA\'s Swift Mission",
-    category: "Space & Science",
+    title: "The James Webb Telescope Is Changing Astronomers' Understanding of the Ancient Cosmos",
+    category: "Science & Space",
     content: [
-      "NASA\'s Swift mission, a long-running space observatory that has contributed enormously to our understanding of gamma-ray bursts and other high-energy cosmic phenomena, faces an uncertain future — but engineers are not giving up without a fight. A rescue satellite was dispatched with the goal of extending Swift\'s operational life, yet that rescue mission itself has now run into serious difficulties of its own. The situation has created a complex, layered engineering challenge that teams on the ground are now racing to solve.",
-      "Engineers are now openly discussing the possibility of physically capturing the troubled satellite, a maneuver that would be extraordinarily technically demanding. According to those involved in the effort, 'We believe that a capture of Swift, an attempted capture of Swift, is very much in the cards.' Such a capture operation would require precise orbital maneuvering and would push the boundaries of what robotic or remotely operated spacecraft are currently capable of performing in orbit.",
-      "The idea of on-orbit servicing and rescue has been gaining traction in recent years as both government agencies and private companies invest in extending the lives of aging but valuable spacecraft. Swift, which launched in 2004, has long outlived its original mission parameters and continues to deliver scientifically valuable data. Losing the observatory entirely would represent a significant setback for astronomers who rely on it to detect and characterize transient cosmic events in near-real time.",
-      "The engineering teams involved are working through the technical details of what a capture attempt would actually look like, including the approach trajectory, the relative velocities involved, and the mechanical systems that would need to engage. Each of these factors introduces its own set of risks, and a failed capture attempt could potentially worsen the situation by altering the satellite\'s orbit or causing structural damage. Despite these risks, mission planners appear increasingly convinced that attempting the maneuver is preferable to the alternative of abandoning the observatory entirely.",
-      "This unfolding drama highlights the growing importance of in-space servicing capabilities as humanity\'s orbital infrastructure ages and becomes more complex. The outcome of this mission could serve as a crucial proof-of-concept — or a cautionary tale — for future efforts to extend the lifespans of satellites that are too valuable to simply decommission. The space community will be watching closely as engineers finalize their plans and move toward what could be one of the most ambitious satellite rescue attempts in NASA history.",
+      "The James Webb Space Telescope continues to rewrite the textbooks of cosmology, delivering images and data that are forcing astronomers to rethink some of their most foundational assumptions about the universe. From the way galaxies first formed to the earliest moments of cosmic history, Webb is providing scientists with an unprecedented window into a past that was previously too dim and too distant to observe in any meaningful detail. The telescope\'s infrared capabilities allow it to peer through dust clouds and across vast stretches of time, capturing light that has been traveling for billions of years.",
+      "One of the most significant areas of disruption concerns galaxy formation. Prior to Webb\'s observations, the leading cosmological models suggested that large, well-structured galaxies took a very long time to coalesce, gradually building up mass over billions of years. Webb, however, has detected surprisingly mature and massive galaxies existing far earlier in the universe\'s history than those models predicted, presenting cosmologists with a genuine puzzle that demands new theoretical frameworks.",
+      "The telescope is also giving researchers new data points with which to probe the very beginnings of the universe itself, including the conditions that prevailed in the immediate aftermath of the Big Bang. By studying the light from some of the oldest objects ever observed, scientists can test and refine their models of how matter, energy, and structure emerged from the primordial cosmos. Each new dataset from Webb appears to add complexity rather than simply confirming what was already thought to be known.",
+      "Cosmologists are responding to this flood of new information by building out and revising their theoretical models, a process that is both exciting and humbling for the scientific community. The collaborative nature of modern astronomy means that Webb\'s findings are being shared rapidly across research institutions worldwide, accelerating the pace at which new hypotheses can be proposed, tested, and either refined or discarded. The telescope has effectively transformed cosmology from a data-poor field into a data-rich one almost overnight.",
+      "Beyond the immediate scientific breakthroughs, Webb\'s ongoing mission represents a triumph of international engineering collaboration and long-term scientific investment. The telescope, which took decades to design, build, and launch, is now demonstrating a return on that investment that exceeds even the most optimistic projections. As it continues its observations from its vantage point nearly a million miles from Earth, astronomers are confident that the most surprising and transformative discoveries may still lie ahead."
     ],
-    image: "https://images.unsplash.com/photo-1578687388475-47f94962f6e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxIZXJlJTVDfGVufDB8MHx8fDE3ODU2NDcxMTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    source: "Ars Technica",
-    sourceUrl: "https://arstechnica.com/space/2026/08/heres-how-engineers-plan-to-save-the-satellite-sent-to-save-nasas-swift-mission/"
+    image: "https://media.wired.com/photos/6a6cc52fffa01fba7c8c302e/master/pass/JWSTUpdate-crKristinaArmitage-Default.jpg",
+    source: "WIRED",
+    sourceUrl: "https://www.wired.com/story/james-webb-space-telescope-changing-astronomers-universe/"
   },
   secondary: [
     {
       id: "tc1",
-      title: "7 States' Water Systems Hit by Cyberattacks Likely Tied to Iran",
-      summary: "Cyberattacks on water systems across seven U.S. states have been linked to Iranian threat actors, raising fresh alarms about critical infrastructure security.",
+      title: "Snapchat Joins YouTube, LinkedIn, and Substack in Fight Against 'AI Slop'",
+      summary: "Major social and content platforms are ramping up their efforts to detect and remove the proliferation of fake, low-quality AI-generated content from their services.",
       body: [
-        "Water utilities across seven states have been targeted in a wave of cyberattacks that investigators believe are likely connected to Iranian state-sponsored hackers, according to reporting from WIRED. The attacks highlight the persistent and growing vulnerability of critical infrastructure systems that often run on aging or poorly secured industrial control software.",
-        "The incidents add to a long pattern of foreign actors probing U.S. water and energy infrastructure, and will likely intensify calls from security experts and lawmakers for mandatory cybersecurity standards across utility sectors. Authorities are urging affected systems to patch vulnerabilities and implement stronger network segmentation to prevent further intrusions."
-      ],
-      image: "https://images.unsplash.com/photo-1605841561924-926295c558fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHw3JTIwU3RhdGVzfGVufDB8MHx8fDE3ODU2NDcxMTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "WIRED",
-      url: "https://www.wired.com/story/security-news-this-week-7-states-water-systems-hit-by-cyberattacks-likely-tied-to-iran/",
-      category: "Cybersecurity"
-    },
-    {
-      id: "tc2",
-      title: "Snapchat Joins Other Popular Platforms in Fight Against 'AI Slop'",
-      summary: "Snapchat, YouTube, LinkedIn, and Substack are all rolling out new measures to combat the rising flood of fake, AI-generated content polluting their platforms.",
-      body: [
-        "A growing coalition of major social and content platforms — including Snapchat, YouTube, LinkedIn, and Substack — are introducing new policies and tools aimed at detecting and reducing the spread of AI-generated content that users have dubbed 'AI slop.' The term refers to low-quality, mass-produced AI content that clogs feeds and erodes trust in online spaces.",
-        "The coordinated industry push reflects mounting pressure from both users and regulators who are frustrated by the degradation of content quality across the web. How effective these measures will prove remains to be seen, as AI-generation tools continue to advance rapidly and bad actors adapt their methods to evade detection systems."
+        "Snapchat has joined a growing coalition of platforms — including YouTube, LinkedIn, and Substack — in taking steps to combat the spread of so-called 'AI slop,' the wave of low-effort, algorithmically generated content that has flooded online spaces. The platforms are implementing a range of measures to identify and limit the reach of this fake AI content, which critics argue degrades the quality of online discourse and undermines trust.",
+        "The coordinated push reflects growing concern across the tech industry that AI-generated content, if left unchecked, could overwhelm genuine human-created material and erode the user experience that these platforms depend on for their business models. It also signals that platform accountability for content quality is becoming an increasingly urgent issue as generative AI tools become ever more accessible."
       ],
       image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/c1ad/live/074af240-8d23-11f1-92b9-3b7efaf76067.jpg",
       source: "BBC News",
@@ -45,16 +32,29 @@ var TECH_NEWS = {
       category: "Artificial Intelligence"
     },
     {
-      id: "tc3",
-      title: "Pixel 11 Specs and Price Leak With No Surprises Ahead of August 12th Event",
-      summary: "A detailed leak of the full Pixel 11 lineup confirms expected specs and a $100 price hike, with the base model set to start at $899.",
+      id: "tc2",
+      title: "Sam Altman Calls for the Industry to 'Pace the Rate of AI Development'",
+      summary: "OpenAI CEO Sam Altman has sparked a new debate in the tech world by publicly calling on the AI industry to slow down its breakneck pace of development.",
       body: [
-        "Ahead of Google\'s anticipated August 12th hardware event, Android Headlines claims to have obtained the complete specifications and pricing for the entire Pixel 11 lineup, and the details largely confirm what the rumor mill has been reporting for months. Most notably, the base Pixel 11 is expected to carry a starting price of $899 — a $100 increase over its predecessor — while coming with a generous 256GB of base storage.",
-        "The leak offers little in the way of genuine surprises, suggesting Google has kept its development pipeline relatively secure while still generating substantial pre-launch buzz. Consumers and analysts will be watching the August 12th announcement closely to see whether the performance and feature improvements justify the steeper asking price in an increasingly competitive flagship smartphone market."
+        "Sam Altman, the chief executive of OpenAI, has waded into the so-called 'decel' debate by calling on the broader AI industry to reconsider the speed at which it is pushing out new AI capabilities. The remarks have ignited fresh discussion among technologists, investors, and policymakers about whether the current pace of AI development is sustainable — or safe.",
+        "Altman\'s comments are particularly notable given that OpenAI has itself been at the forefront of rapid AI advancement, making his call for restraint a striking shift in tone. The debate reflects deepening anxieties within parts of the tech community about the societal and safety implications of deploying increasingly powerful AI systems before adequate guardrails are in place."
       ],
-      image: "https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxQaXhlbCUyMDExJTIwU3BlY3MlMjBhbmQlMjBQcmljZSUyMExlYWslMjBXaXRoJTIwTm8lMjBTdXJwcmlzZXMlMjBBaGVhZCUyMG9mJTIwQXVndXN0JTIwMTJ0aCUyMEV2ZW50fGVufDB8MHx8fDE3ODU2NDcxMTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "The Verge",
-      url: "https://www.theverge.com/tech/974238/pixel-11-specs-and-price-leak",
+      image: "https://images.unsplash.com/photo-1772695653502-7c93f923a732?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTYW0lMjBBbHRtYW4lMjBDYWxscyUyMGZvciUyMHRoZSUyMEluZHVzdHJ5JTIwdG8lMjB8ZW58MHwwfHx8MTc4NTczMzQ4MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "TechCrunch",
+      url: "https://techcrunch.com/2026/08/02/sam-altman-and-ais-decel-debate/",
+      category: "Artificial Intelligence"
+    },
+    {
+      id: "tc3",
+      title: "Global Memory Chip Shortage Hits Apple\'s MacBook Air",
+      summary: "The ongoing worldwide shortage of memory chips is now affecting the availability of Apple\'s best-selling Mac, the MacBook Air.",
+      body: [
+        "The global memory chip shortage, which has been disrupting the electronics industry for months, has now reached one of Apple\'s most popular product lines — the MacBook Air. The shortage appears to be constraining supply of the laptop, making certain configurations harder to find and potentially pushing wait times higher for consumers.",
+        "The MacBook Air is the top-selling model in Apple\'s Mac lineup, meaning that supply disruptions could have a meaningful impact on the company\'s revenues as well as on consumers who depend on the affordable machine for work and education. The development underscores just how broadly the memory chip shortage is rippling through the consumer electronics market."
+      ],
+      image: "https://images.unsplash.com/photo-1585184394271-4c0a47dc59c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxHbG9iYWwlMjBNZW1vcnklMjBDaGlwJTIwU2hvcnRhZ2UlMjBIaXRzJTIwQXBwbGUlNUN8ZW58MHwwfHx8MTc4NTczMzQ4MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      source: "TechCrunch",
+      url: "https://techcrunch.com/2026/08/02/the-global-memory-shortage-hits-the-macbook-air/",
       category: "Hardware"
     }
   ]

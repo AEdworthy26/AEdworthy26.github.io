@@ -1,61 +1,61 @@
 // world-news-data.js
-// Auto-updated 2026-08-02 — do not edit manually
+// Auto-updated 2026-08-03 — do not edit manually
 
 var WORLD_NEWS = {
-  date: "2026-08-02",
+  date: "2026-08-03",
   main: {
-    title: "Europe in Crisis: 50,000 Migrants Storm Ceuta as EU Calls Emergency Summit",
+    title: "Ceuta Crisis: Over 50,000 Migrants Cross Into Spanish Territory as EU Calls Emergency Summit",
     category: "International",
     content: [
-      "The tiny Spanish enclave of Ceuta, perched on the northern tip of Africa, has been plunged into its most severe humanitarian and political crisis in living memory after as many as 50,000 migrants crossed from Morocco into the territory over a short period. Spanish Prime Minister Pedro Sánchez condemned the mass crossing as a 'violation of Spain\'s territorial integrity', and authorities have confirmed that at least 67 people died in the desperate rush to enter the enclave. The scale of the influx has shocked European governments and triggered an urgent reckoning over the continent\'s border policies and its relationship with Morocco.",
-      "In an immediate response, Spain has installed a floating barrier in the waters around Ceuta in an effort to prevent further crossings by sea. Spanish authorities report that the majority of those who entered the enclave have since returned across the border to Morocco, but thousands remain and the situation on the ground is described as extremely tense. The speed and scale of the crossing overwhelmed local services and Spanish border forces, leaving officials scrambling to manage both the humanitarian fallout and the political firestorm that has followed.",
-      "The European Union has called an emergency meeting of interior ministers for Tuesday to address the crisis, with officials from member states and the Frontex border agency convening to coordinate a response. However, deep divisions have emerged within the bloc, with several EU countries criticising Madrid over the incident even as Spain calls for collective solidarity. The tense exchanges between Spain and its European partners have laid bare long-standing disagreements over how the EU should manage migration at its external borders, and who bears responsibility when a crisis of this magnitude unfolds.",
-      "The political consequences for Sánchez — long regarded as one of Europe\'s most openly pro-immigration leaders — are potentially severe. He now faces significant backlash both domestically and from European partners who question how the crossing was allowed to occur on such a scale. Social media has amplified the political storm considerably, with footage and commentary from the crossings spreading rapidly and being used by nationalist and anti-immigration movements across the continent to press their arguments, further complicating the environment in which European leaders must respond.",
-      "The crisis in Ceuta has once again exposed the profound tensions at the heart of European migration policy, tensions that have festered since the mass arrivals of 2015 without any durable continental solution being reached. The death toll — standing at 67 — is a stark reminder of the human cost embedded in this political debate, as thousands of people risk their lives seeking entry into Europe. With the EU emergency meeting imminent and Spain under enormous pressure from multiple directions, the coming days are likely to prove decisive in shaping both the immediate response and the longer-term direction of European border and migration policy."
+      "More than 50,000 migrants crossed from Morocco into the tiny Spanish enclave of Ceuta in an extraordinary mass movement that has shaken European politics to its core. At least 57 people died in the chaotic crossings, which took place over several days and overwhelmed the small territory\'s capacity to manage the influx. Spanish Prime Minister Pedro Sánchez condemned what he described as a 'violation of Spain\'s territorial integrity,' as images of desperate crowds wading through the strait and scaling barriers spread across global media.",
+      "The European Union has responded by calling an urgent meeting of interior ministers for Tuesday, convened amid deep divisions among member states over how to handle the unfolding humanitarian and political crisis. Officials representing EU member states and Frontex border agency experts agreed to the emergency session as pressure mounted on Brussels to present a unified front. However, several EU countries have already openly criticised Madrid\'s handling of the situation, exposing the familiar fault lines that have long plagued any attempt at coherent European migration policy.",
+      "On the ground in Ceuta, the chaos of the border crossing has given way to an uncertain limbo for the thousands of Moroccan migrants now stranded in the streets of the small enclave. Individuals like Youssef El Abbas, who saw the crossing as a chance to reclaim a life lost seven years earlier, now find themselves in a precarious legal and humanitarian situation with no clear path forward. Aid organisations have scrambled to provide food and shelter, but the sheer scale of arrivals has stretched resources far beyond their limits.",
+      "The crisis has rapidly become a flashpoint for far-right politicians and activists across Europe, who have flocked to Ceuta to capitalise on the tensions. Their presence has further inflamed an already volatile atmosphere in the enclave, raising fears of confrontations between anti-immigrant demonstrators and the migrants living on its streets. Spain\'s fragile political coalition government now faces enormous domestic pressure from the right, even as it seeks international support to share responsibility for the arrivals with its European partners.",
+      "The Ceuta crisis is widely seen as a defining test of European migration policy and solidarity at a moment when anti-immigration sentiment is surging across the continent. Analysts note that the scale of this crossing — dwarfing previous incidents at Ceuta and Melilla — marks a potential turning point in the long-running debate over how Europe manages its external borders. With the emergency ministerial meeting set for Tuesday and far-right voices growing louder, the coming days are likely to prove critical in determining both the fate of the migrants themselves and the future direction of EU border and asylum policy.",
     ],
-    image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/394b/live/4f569510-8dd9-11f1-b2ab-0dd01740f9f6.jpg",
+    image: "https://i.guim.co.uk/img/media/bfe4080ee8b385249f1a00b5fc4c3c8555c8cd24/574_0_3446_2756/master/3446.jpg?width=1200&quality=85&auto=format&fit=max&s=d1404a6c68c10b5a276e2194835c1bdf",
     source: "The Guardian",
     sourceUrl: "https://www.theguardian.com/world/2026/jul/31/ceuta-spain-morocco-border-deaths"
   },
   secondary: [
     {
       id: "s1",
-      title: "Trump Cancels Iran Strike, Claims 'Deal Perimeters' Have Been Reached",
-      summary: "President Trump announced he has called off a planned military strike on Iran, saying progress in negotiations made the attack unnecessary.",
+      title: "Trump Pauses Iran Strikes, Claims Deal Outlines Agreed and New Talks to Begin Monday",
+      summary: "President Trump says he has called off a planned 'massive attack' on Iran after claiming the parameters of a deal have been agreed, with fresh negotiations set to begin.",
       body: [
-        "President Trump declared that he was cancelling strikes on Iran that had been widely reported as imminent over the weekend, stating that 'deal perimeters' had been reached and that Iran must move 'rapidly' to finalise an agreement. The announcement came amid significant concern from US allies, who had warned that a new round of intense strikes could further destabilise an already volatile regional situation, particularly with the Strait of Hormuz remaining closed.",
-        "The decision to stand down militarily — at least for now — follows a period of intense diplomatic uncertainty, with US allies privately fearing that the ongoing conflict with Iran has left Washington in a position of strategic vulnerability. The New York Times reported that Iran had itself been quietly devising plans to raise the costs of any renewed US attack through its network of regional proxies, adding further urgency to the diplomatic track."
+        "US President Donald Trump announced he was cancelling planned strikes on Iran, saying that Iran and other Middle Eastern countries had asked the US to hold off any attack because 'the perimeters of a deal has been agreed to.' Trump said new talks would begin on Monday 'in the form of a negotiation,' raising hopes of a diplomatic breakthrough in the long-running standoff over Iran\'s nuclear programme. Saudi Arabia confirmed that its leader had urged Trump not to renew attacks, suggesting significant behind-the-scenes diplomatic activity.",
+        "However, Tehran has not publicly responded to Trump\'s suggestion that new talks are imminent, leaving the announcement\'s durability in question. Trump has previously declared that a negotiated end to hostilities was close, only for strikes to resume shortly afterwards, meaning international observers are treating the latest development with considerable caution."
       ],
-      image: "https://images.pexels.com/photos/1464207/pexels-photo-1464207.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/13fa/live/ad119c30-8ec5-11f1-942d-9772a4b2ac54.jpg",
       source: "Al Jazeera",
-      url: "https://www.aljazeera.com/news/2026/8/2/trump-cancels-iran-strike-says-deal-perimeters-reached?traffic_source=rss",
+      url: "https://www.aljazeera.com/video/newsfeed/2026/8/3/trump-pauses-massive-attack-on-iran-says-new-talks-to-begin?traffic_source=rss",
       category: "Geopolitics"
     },
     {
       id: "s2",
-      title: "Russian Barrage Kills Nine in Kyiv as Ukraine\'s Air Defences Struggle",
-      summary: "A devastating overnight Russian missile attack struck five districts of the Ukrainian capital, killing at least nine people, as questions mount over US support for Ukraine\'s air defence systems.",
+      title: "'My Only Son Was Shot Standing Up for Justice' — Deadly Protests Rock Pakistan-Administered Kashmir",
+      summary: "The BBC has gained rare access to Rawalakot, where violent clashes between security forces and protesters have left families mourning and a city gripped by fear.",
       body: [
-        "Ballistic missiles tore into five districts of Kyiv before dawn on Saturday, killing at least nine people in one of the most destructive overnight barrages the Ukrainian capital has endured in recent months. The attack underscored the continued ferocity of Russia\'s air campaign against Ukrainian cities even as diplomatic efforts surrounding the broader conflict remain stalled.",
-        "The strikes come at a particularly fraught moment for Ukraine\'s defences, as President Trump has walked back a previously promised boost to Ukraine\'s missile defence systems, leaving Kyiv increasingly exposed. The combination of intensified Russian attacks and wavering US military support has raised serious alarm among Ukraine\'s European allies about the country\'s ability to protect its civilian population."
+        "The BBC obtained unique access to Rawalakot, the main city in Pakistan-administered Kashmir, where deadly confrontations between security forces and demonstrators have left grieving families and a deeply traumatised community. One mother described losing her only son, who was shot while participating in protests she described as a stand for justice, capturing the human cost of the unrest that has gripped the region.",
+        "The protests in Pakistan-administered Kashmir reflect broader and long-standing grievances about governance, rights, and economic conditions in the territory, and the violent response from security forces has drawn sharp criticism from human rights observers. The BBC\'s rare on-the-ground reporting sheds light on a crisis that has largely unfolded away from international media attention."
       ],
-      image: "https://images.unsplash.com/photo-1561629625-edea42c6da34?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxSdXNzaWFuJTIwQmFycmFnZSUyMEtpbGxzJTIwTmluZSUyMGluJTIwS3lpdiUyMGFzJTIwVWtyYWluZSU1Q3xlbnwwfDB8fHwxNzg1NjQ2OTMzfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "NPR",
-      url: "https://www.npr.org/2026/08/01/nx-s1-5916393/overnight-russia-kyiv-ukraine-strikes",
+      image: "https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/ac2b/live/2be8ca90-8eb4-11f1-a122-d789962f080e.jpg",
+      source: "BBC News",
+      url: "https://www.bbc.co.uk/news/articles/c5yvqk69enko?at_medium=RSS&at_campaign=rss",
       category: "Conflict"
     },
     {
       id: "s3",
-      title: "Famed Mountaineer Nirmal Purja Killed in Pakistan Avalanche",
-      summary: "Legendary climber Nirmal Purja and several fellow mountaineers from an international team have been killed by an avalanche while attempting to scale one of the world\'s highest peaks in Pakistan.",
+      title: "Anti-LGBTQ+ Laws Surging Across West Africa as Politicians Seek Scapegoats, Campaigners Warn",
+      summary: "A growing number of west African nations are enacting or strengthening laws criminalising LGBTQ+ people, amid local political pressures and a global rollback of rights.",
       body: [
-        "Nirmal Purja, the celebrated Nepali-British mountaineer renowned for his record-breaking ascents of the world\'s fourteen 8,000-metre peaks, has been killed along with fellow climbers after an avalanche struck their team in Pakistan. The international group, which included climbers from the United States and other countries, was attempting to summit one of the tallest mountains on earth when the disaster occurred.",
-        "Purja had become one of the most recognisable figures in modern mountaineering, having completed all fourteen of the world\'s highest peaks in a record-breaking 189 days in 2019. His death is being mourned across the global climbing community and beyond, where he was widely regarded as an inspirational figure whose achievements transcended the sport."
+        "Campaigners have sounded the alarm over a wave of anti-LGBTQ+ legislation sweeping west Africa, with Senegal among the latest countries to toughen its laws — doubling the maximum prison sentence for same-sex relations to ten years and criminalising the 'promotion' of homosexuality in March. Activists say politicians across the region are increasingly using LGBTQ+ people as 'the easiest scapegoats to maintain their power,' exploiting social conservatism for political gain.",
+        "The trend is seen as part of a broader global pushback against LGBTQ+ rights, with international advocacy groups warning that the legislative crackdown is putting vulnerable communities at severe risk of violence and persecution. Human rights organisations are calling on international bodies to apply diplomatic pressure on governments pursuing these measures."
       ],
-      image: "https://images.unsplash.com/photo-1592875146220-b769961ebe54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxGYW1lZCUyME1vdW50YWluZWVyJTIwTmlybWFsJTIwUHVyamElMjBLaWxsZWQlMjBpbiUyMFBha2lzdGFuJTIwQXZhbGFuY2hlfGVufDB8MHx8fDE3ODU2NDY5MzN8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      source: "NPR",
-      url: "https://www.npr.org/2026/08/01/nx-s1-5916368/nirmal-purja-climbers-dead-avalanche",
-      category: "World News"
+      image: "https://i.guim.co.uk/img/media/725aee047802b1eb39e000a019d0566950c75641/742_425_2422_1938/master/2422.jpg?width=1200&quality=85&auto=format&fit=max&s=31547ec23a7b4de1d24cbe7d80fa594a",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/world/2026/aug/02/anti-lgbtq-laws-are-on-the-rise-across-west-africa-campaigners-warn",
+      category: "Human Rights"
     }
   ]
 };

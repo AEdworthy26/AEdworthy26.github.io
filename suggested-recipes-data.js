@@ -1,217 +1,177 @@
 // suggested-recipes-data.js
-// Auto-updated 2026-08-02 — do not edit manually
+// Auto-updated 2026-08-03 — do not edit manually
 
 window.SUGGESTED_RECIPES = [
   {
     id: "sug1",
-    title: "Yucatán-Style Slow-Roasted Pork Shoulder — Cochinita Pibil with Pickled Habanero Onions & Warm Tortillas",
-    category: "Pork",
-    calories: 610,
-    protein: 45,
-    fibre: 3,
-    healthScore: 64,
-    time: "3 hrs 30 mins",
-    serves: "6",
-    desc: "One of Mexico\'s greatest dishes — pork shoulder rubbed with achiote paste, bitter orange, and warm spices, then slow-roasted until it collapses into burnished, juicy shreds. The vivid pink pickled habanero onions cut through the richness with addictive heat and acidity. Served piled into warm corn tortillas, this is pure, unrestrained flavour with almost no technical effort required.",
-    emoji: "🌮",
-    image: "https://images.unsplash.com/photo-1681394421500-ba532f0dfd8b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxZdWNhdCVDMyVBMW4tU3R5bGUlMjBTbG93LVJvYXN0ZWQlMjBQb3JrJTIwU2hvdWxkZXIlMjAlRTIlODAlOTQlMjBDb2NoaW5pdGElMjBQaWJpbCUyMHdpdGglMjBQaWNrbGVkJTIwSGFiYW5lcm8lMjBPbmlvbnMlMjAlMjYlMjBXYXJtJTIwVG9ydGlsbGFzJTIwZm9vZCUyMGRpc2h8ZW58MHwwfHx8MTc4NTY0NzY3MXww&ixlib=rb-4.1.0&q=80&w=1080",
+    title: "Moldovan Sarmale — Braised Beef & Pork Cabbage Rolls with Sour Cream, Dill & Tomato Broth",
+    category: "Beef",
+    calories: 540,
+    protein: 34,
+    fibre: 5,
+    healthScore: 68,
+    time: "1 hr 45 mins",
+    serves: "4",
+    desc: "Sarmale are the beloved stuffed cabbage rolls of Eastern Europe — tender leaves filled with a seasoned beef and rice mixture, slowly braised in a smoky tomato broth until deeply savoury and yielding. This Moldovan version leans into fresh dill, smoked paprika and a generous dollop of sour cream to serve, making it the kind of hearty, soul-warming dish that somehow tastes even better reheated the next day.",
+    emoji: "🥬",
+    image: "https://images.unsplash.com/photo-1622220736031-714bcc9f96b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxNb2xkb3ZhbiUyMFNhcm1hbGUlMjAlRTIlODAlOTQlMjBCcmFpc2VkJTIwQmVlZiUyMCUyNiUyMFBvcmslMjBDYWJiYWdlJTIwUm9sbHMlMjB3aXRoJTIwU291ciUyMENyZWFtJTJDJTIwRGlsbCUyMCUyNiUyMFRvbWF0byUyMEJyb3RoJTIwZm9vZCUyMGRpc2h8ZW58MHwwfHx8MTc4NTczNDE4N3ww&ixlib=rb-4.1.0&q=80&w=1080",
     ingredientGroups: [
-      {
-        group: "Pork & Marinade",
-        items: [
-          { name: "Bone-in pork shoulder", quantity: 1.8, unit: "kg" },
-          { name: "Achiote paste (annatto)", quantity: 80, unit: "g" },
-          { name: "Fresh orange juice", quantity: 120, unit: "ml" },
-          { name: "Fresh lime juice", quantity: 60, unit: "ml" },
-          { name: "White wine vinegar", quantity: 3, unit: "tbsp" },
-          { name: "Garlic cloves, minced", quantity: 6, unit: "" },
-          { name: "Ground cumin", quantity: 1.5, unit: "tsp" },
-          { name: "Dried oregano (Mexican if possible)", quantity: 1, unit: "tsp" },
-          { name: "Ground black pepper", quantity: 1, unit: "tsp" },
-          { name: "Ground cinnamon", quantity: 0.5, unit: "tsp" },
-          { name: "Ground cloves", quantity: 0.25, unit: "tsp" },
-          { name: "Fine sea salt", quantity: 2, unit: "tsp" },
-          { name: "Banana leaves (fresh or frozen, optional)", quantity: 2, unit: "large pieces" }
-        ]
-      },
-      {
-        group: "Pickled Habanero Onions",
-        items: [
-          { name: "Red onions, thinly sliced into half-moons", quantity: 2, unit: "large" },
-          { name: "Habanero chillies, thinly sliced (seeds in for heat, out for mild)", quantity: 2, unit: "" },
-          { name: "White wine vinegar", quantity: 100, unit: "ml" },
-          { name: "Fresh lime juice", quantity: 50, unit: "ml" },
-          { name: "Caster sugar", quantity: 1, unit: "tsp" },
-          { name: "Fine sea salt", quantity: 1, unit: "tsp" }
-        ]
-      },
-      {
-        group: "To Serve",
-        items: [
-          { name: "Corn tortillas", quantity: 18, unit: "" },
-          { name: "Fresh coriander leaves", quantity: 1, unit: "large handful" },
-          { name: "Soured cream or crema", quantity: 150, unit: "ml" },
-          { name: "Avocados, sliced", quantity: 2, unit: "" },
-          { name: "Lime wedges", quantity: 1, unit: "per person" }
-        ]
-      }
+      { group: "Cabbage Rolls", items: [
+        { name: "Large white cabbage", quantity: 1, unit: "" },
+        { name: "Minced beef (15% fat)", quantity: 400, unit: "g" },
+        { name: "Minced pork", quantity: 200, unit: "g" },
+        { name: "Short-grain white rice (uncooked)", quantity: 80, unit: "g" },
+        { name: "Yellow onion, finely diced", quantity: 2, unit: "" },
+        { name: "Garlic cloves, minced", quantity: 3, unit: "" },
+        { name: "Smoked paprika", quantity: 2, unit: "tsp" },
+        { name: "Dried thyme", quantity: 1, unit: "tsp" },
+        { name: "Fresh dill, finely chopped", quantity: 25, unit: "g" },
+        { name: "Salt and black pepper", quantity: 1, unit: "to taste" }
+      ]},
+      { group: "Braising Broth", items: [
+        { name: "Passata (strained tomatoes)", quantity: 500, unit: "ml" },
+        { name: "Chicken or vegetable stock", quantity: 400, unit: "ml" },
+        { name: "Tomato paste", quantity: 2, unit: "tbsp" },
+        { name: "Bay leaves", quantity: 3, unit: "" },
+        { name: "Sunflower or vegetable oil", quantity: 2, unit: "tbsp" }
+      ]},
+      { group: "To Serve", items: [
+        { name: "Full-fat sour cream", quantity: 150, unit: "ml" },
+        { name: "Fresh dill sprigs", quantity: 10, unit: "g" },
+        { name: "Crusty bread or rye bread", quantity: 4, unit: "slices" }
+      ]}
     ],
     substitutes: [
-      { ingredient: "Achiote paste", alternatives: ["2 tbsp annatto powder mixed with 1 tbsp oil and 1 tsp smoked paprika", "Smoked paprika paste with a pinch of turmeric for colour"] },
-      { ingredient: "Habanero chillies", alternatives: ["Scotch bonnet (similar heat)", "2–3 red chillies for a milder pickle"] },
-      { ingredient: "Banana leaves", alternatives: ["Foil-wrapped tightly (still gives great results)", "Parchment paper then foil"] },
-      { ingredient: "Pork shoulder", alternatives: ["Pork leg (slightly leaner)", "Skin-on pork belly for a richer result"] }
+      { ingredient: "White cabbage", alternatives: ["Savoy cabbage (more tender)", "Large vine leaves (for a Greek-style version)"] },
+      { ingredient: "Minced pork", alternatives: ["All beef mince (use 600g total)", "Minced lamb for a richer flavour"] },
+      { ingredient: "Sour cream", alternatives: ["Full-fat crème fraîche", "Greek yoghurt (stir in at the table, not into the hot broth)"] }
     ],
     instructions: [
-      "Step 1 — Make the marinade: In a blender or bowl, combine the achiote paste, orange juice, lime juice, white wine vinegar, minced garlic, cumin, oregano, black pepper, cinnamon, cloves, and salt. Blitz or whisk until smooth and deeply orange-red.",
-      "Step 2 — Score the pork shoulder all over with a sharp knife, making cuts about 2cm deep so the marinade can penetrate. Place the pork in a large dish or zip-lock bag, pour over the marinade, and massage it thoroughly into every cut. Cover and refrigerate for at least 4 hours, ideally overnight.",
-      "Step 3 — Make the pickled habanero onions: Place the sliced red onions and habanero in a bowl. Pour over the vinegar and lime juice, add the sugar and salt, and toss well. The onions will turn a vivid fuchsia pink within 30 minutes. Set aside at room temperature — these improve as they sit.",
-      "Step 4 — When ready to cook, preheat the oven to 160°C (140°C fan / 325°F). If using banana leaves, lightly pass them over a gas flame or dry pan for 10 seconds per side to soften and release their aroma. Line a deep roasting tin with the banana leaves, overlapping them to create a parcel. Place the marinated pork in the centre and pour any remaining marinade over the top. Fold the banana leaves over the pork, then seal tightly with two layers of foil. If not using banana leaves, just seal tightly in foil.",
-      "Step 5 — Roast for 3 hours until the pork is completely tender and beginning to collapse. Remove the foil and banana leaves, increase the oven to 220°C (200°C fan / 425°F), and return to the oven for 15–20 minutes until the surface is caramelised and slightly charred at the edges.",
-      "Step 6 — Rest the pork for 10 minutes, then use two forks to pull and shred the meat directly in the roasting tin, mixing it through all the rich, caramelised cooking juices.",
-      "Step 7 — Warm the corn tortillas directly over a gas flame for 20–30 seconds per side, or in a dry frying pan, wrapping them in a clean tea towel to keep warm.",
-      "Step 8 — Serve the pulled pork piled onto warm tortillas, topped with a tangle of pickled habanero onions, fresh coriander, sliced avocado, a drizzle of soured cream, and a squeeze of lime. The combination of smoky-spiced pork and sharp pink onions is extraordinary."
+      "Step 1 — Prepare the cabbage: Bring a very large pot of salted water to the boil. Core the base of the cabbage deeply with a sharp knife. Lower the whole head into the boiling water and cook for 3–4 minutes until the outer leaves soften and peel away easily. Remove the leaves one by one as they loosen, refreshing in cold water and setting aside. You need around 16 large, pliable leaves. Trim any thick central ribs flat with a knife so they roll easily.",
+      "Step 2 — Make the filling: Heat 1 tbsp oil in a frying pan over medium heat. Sauté the diced onion for 8–10 minutes until soft and golden. Add the garlic and cook for 1 more minute. Remove from heat and allow to cool for 5 minutes. In a large bowl, combine the minced beef, minced pork, uncooked rice, cooked onion and garlic, smoked paprika, thyme, most of the dill (reserving a little for serving), a generous pinch of salt and plenty of black pepper. Mix thoroughly with your hands until fully combined.",
+      "Step 3 — Roll the sarmale: Lay a cabbage leaf flat on a board. Place 2 heaped tablespoons of filling near the base of the leaf, fold the sides inward over the filling, then roll tightly away from you like a spring roll. Repeat until all filling is used. Roughly chop any remaining cabbage leaves.",
+      "Step 4 — Build the braise: In a wide, heavy-based pot or Dutch oven, heat the remaining oil over medium heat. Stir in the tomato paste and cook for 1 minute. Add the passata, stock, bay leaves, salt and pepper, and stir to combine. Line the base of the pot with the roughly chopped cabbage. Nestle the rolls in tightly in a single layer (or two layers if needed), seam-side down. Pour the tomato broth over until the rolls are just submerged.",
+      "Step 5 — Braise low and slow: Bring the pot to a gentle simmer, then reduce the heat to low. Cover tightly and braise for 55–65 minutes, until the rice is cooked through and the rolls are tender. Check occasionally and add a splash of stock if the broth reduces too aggressively.",
+      "Step 6 — Serve: Ladle 3–4 sarmale per person into deep bowls with plenty of the rich tomato broth spooned over. Add a generous dollop of sour cream, scatter with the reserved fresh dill, and serve immediately with crusty bread for mopping."
     ]
   },
   {
     id: "sug2",
-    title: "Venetian-Style Scallop & Pea Risotto — Risi e Bisi con Capesante with Crispy Pancetta & Lemon Gremolata",
+    title: "Sri Lankan Jaffna Crab Curry — Nandu Kulambu with Coconut Milk, Black Pepper & Roti",
     category: "Fish & Seafood",
-    calories: 545,
-    protein: 34,
-    fibre: 5,
-    healthScore: 70,
+    calories: 490,
+    protein: 41,
+    fibre: 4,
+    healthScore: 74,
     time: "50 mins",
-    serves: "4",
-    desc: "Risi e bisi — Venice\'s beloved pea and rice dish, somewhere between a risotto and a thick soup — gets a luxurious upgrade with golden-seared scallops and shards of crispy pancetta. The risotto base is sweet with fresh peas, enriched with Parmesan, and brightened at the last moment with a sharp lemon and parsley gremolata. Elegant enough for a dinner party, honest enough for a Sunday night.",
-    emoji: "🍚",
-    image: "https://images.unsplash.com/photo-1628623246623-bfa69d3dd0d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxWZW5ldGlhbi1TdHlsZSUyMFNjYWxsb3AlMjAlMjYlMjBQZWElMjBSaXNvdHRvJTIwJUUyJTgwJTk0JTIwUmlzaSUyMGUlMjBCaXNpJTIwY29uJTIwQ2FwZXNhbnRlJTIwd2l0aCUyMENyaXNweSUyMFBhbmNldHRhJTIwJTI2JTIwTGVtb24lMjBHcmVtb2xhdGElMjBmb29kJTIwZGlzaHxlbnwwfDB8fHwxNzg1NjQ3NjcyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    serves: "2",
+    desc: "This bold, aromatic curry from Sri Lanka\'s northern Jaffna peninsula is one of the great crab dishes of the world — whole crab cooked in a fiery, deeply spiced coconut broth fragrant with curry leaves, black pepper, fennel seeds and a proper Jaffna spice paste. The crab absorbs the broth beautifully as it cooks, and tearing into it with warm roti or steamed rice is an unbeatable eating experience.",
+    emoji: "🦀",
+    image: "https://images.unsplash.com/photo-1750271327963-281743a0cc30?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxTcmklMjBMYW5rYW4lMjBKYWZmbmElMjBDcmFiJTIwQ3VycnklMjAlRTIlODAlOTQlMjBOYW5kdSUyMEt1bGFtYnUlMjB3aXRoJTIwQ29jb251dCUyME1pbGslMkMlMjBCbGFjayUyMFBlcHBlciUyMCUyNiUyMFJvdGklMjBmb29kJTIwZGlzaHxlbnwwfDB8fHwxNzg1NzM0MTg4fDA&ixlib=rb-4.1.0&q=80&w=1080",
     ingredientGroups: [
-      {
-        group: "Risotto Base",
-        items: [
-          { name: "Arborio or Carnaroli rice", quantity: 320, unit: "g" },
-          { name: "Pancetta, cut into lardons", quantity: 120, unit: "g" },
-          { name: "Shallots, finely diced", quantity: 3, unit: "" },
-          { name: "Celery stalk, finely diced", quantity: 1, unit: "" },
-          { name: "Garlic cloves, finely sliced", quantity: 2, unit: "" },
-          { name: "Dry white wine", quantity: 150, unit: "ml" },
-          { name: "Hot chicken or vegetable stock", quantity: 1.3, unit: "litres" },
-          { name: "Fresh or frozen peas", quantity: 300, unit: "g" },
-          { name: "Parmesan, finely grated", quantity: 80, unit: "g" },
-          { name: "Unsalted butter", quantity: 40, unit: "g" },
-          { name: "Extra-virgin olive oil", quantity: 2, unit: "tbsp" },
-          { name: "Fine sea salt and black pepper", quantity: 1, unit: "to taste" }
-        ]
-      },
-      {
-        group: "Seared Scallops",
-        items: [
-          { name: "Large king scallops, roe on or off", quantity: 12, unit: "" },
-          { name: "Unsalted butter", quantity: 20, unit: "g" },
-          { name: "Fine sea salt", quantity: 1, unit: "pinch" }
-        ]
-      },
-      {
-        group: "Lemon Gremolata",
-        items: [
-          { name: "Flat-leaf parsley, finely chopped", quantity: 4, unit: "tbsp" },
-          { name: "Lemon zest", quantity: 2, unit: "lemons" },
-          { name: "Garlic clove, very finely minced", quantity: 1, unit: "" }
-        ]
-      }
+      { group: "Main", items: [
+        { name: "Whole brown crab (or 2 smaller crabs), cleaned and halved", quantity: 1, unit: "large (~1kg)" },
+        { name: "Coconut oil or vegetable oil", quantity: 3, unit: "tbsp" },
+        { name: "Yellow onion, finely sliced", quantity: 1, unit: "large" },
+        { name: "Tomatoes, roughly chopped", quantity: 2, unit: "" },
+        { name: "Full-fat coconut milk", quantity: 200, unit: "ml" },
+        { name: "Water or fish stock", quantity: 150, unit: "ml" },
+        { name: "Salt", quantity: 1, unit: "to taste" }
+      ]},
+      { group: "Jaffna Spice Paste", items: [
+        { name: "Garlic cloves", quantity: 5, unit: "" },
+        { name: "Fresh ginger, peeled", quantity: 20, unit: "g" },
+        { name: "Red chillies (medium heat)", quantity: 3, unit: "" },
+        { name: "Ground coriander", quantity: 2, unit: "tsp" },
+        { name: "Ground cumin", quantity: 1, unit: "tsp" },
+        { name: "Ground turmeric", quantity: 0.5, unit: "tsp" },
+        { name: "Freshly ground black pepper", quantity: 1.5, unit: "tsp" },
+        { name: "Fennel seeds", quantity: 1, unit: "tsp" }
+      ]},
+      { group: "Tempering & Aromatics", items: [
+        { name: "Fresh curry leaves (a large sprig)", quantity: 20, unit: "leaves" },
+        { name: "Dried red chillies", quantity: 2, unit: "" },
+        { name: "Mustard seeds", quantity: 1, unit: "tsp" },
+        { name: "Pandan leaf, tied in a knot (optional)", quantity: 1, unit: "" }
+      ]},
+      { group: "To Serve", items: [
+        { name: "Roti canai or plain paratha (shop-bought is fine)", quantity: 4, unit: "" },
+        { name: "Fresh coriander", quantity: 15, unit: "g" },
+        { name: "Lime, cut into wedges", quantity: 1, unit: "" }
+      ]}
     ],
     substitutes: [
-      { ingredient: "King scallops", alternatives: ["Large raw prawns (cook for 2 mins per side)", "Slices of monkfish tail, pan-fried until golden"] },
-      { ingredient: "Pancetta", alternatives: ["Smoked streaky bacon, cut into lardons", "Guanciale for an even more Italian result"] },
-      { ingredient: "Fresh peas", alternatives: ["Frozen peas work beautifully and need no pre-cooking", "Broad beans (blanched and podded) for a different texture"] },
-      { ingredient: "White wine", alternatives: ["An extra ladleful of stock with a squeeze of lemon", "Dry vermouth (use slightly less)"] }
+      { ingredient: "Whole crab", alternatives: ["Large shell-on king prawns (reduce cooking time to 5–6 minutes)", "Crab claws only for easier eating"] },
+      { ingredient: "Fresh curry leaves", alternatives: ["Dried curry leaves (use double the quantity)", "Omit if unavailable — the dish still works"] },
+      { ingredient: "Pandan leaf", alternatives: ["A small strip of lime zest added to the broth", "Simply omit"] }
     ],
     instructions: [
-      "Step 1 — Make the gremolata: Combine the finely chopped parsley, lemon zest, and minced garlic in a small bowl. Set aside — this is stirred through at the very end and does something magical to the richness of the risotto.",
-      "Step 2 — In a large, wide, heavy-bottomed pan, cook the pancetta lardons over medium-high heat without any oil until deeply golden and crispy, about 5–6 minutes. Remove with a slotted spoon and set aside, leaving the rendered fat in the pan.",
-      "Step 3 — Reduce the heat to medium and add the olive oil. Add the shallots and celery and cook gently for 6–7 minutes until completely soft and translucent. Add the garlic and cook for a further minute. Season lightly.",
-      "Step 4 — Add the rice and stir it through the aromatics for 2 minutes until the grains are coated and slightly translucent at the edges — this toasting step builds a nutty depth. Pour in the white wine and stir until fully absorbed.",
-      "Step 5 — Begin adding the hot stock one ladleful at a time, stirring frequently and allowing each addition to be mostly absorbed before adding the next. After 12 minutes of cooking, add the peas and continue adding stock and stirring for a further 5–6 minutes until the rice is just cooked — al dente with a slight bite. The risotto should be loose and flow when you tilt the pan (all\'onda — 'like a wave').",
-      "Step 6 — Remove from the heat and vigorously stir in the butter and Parmesan (this is the mantecatura — it creates the creamy emulsion that defines a great risotto). Taste and adjust seasoning generously. Cover and rest for 2 minutes while you cook the scallops.",
-      "Step 7 — Pat the scallops completely dry with kitchen paper — this is crucial for a proper sear. Season with a pinch of fine salt on the flat side only. Heat a heavy frying pan (cast iron is ideal) over the highest heat until smoking. Add the butter — it should foam and brown immediately. Place the scallops flat-side down and do not touch them for 90 seconds until a deep golden crust forms. Flip once and cook for just 30–45 seconds more. Remove immediately.",
-      "Step 8 — Stir the gremolata through the risotto and divide between warm bowls. Place 3 scallops on top of each portion, scatter over the crispy pancetta, and finish with a light drizzle of extra-virgin olive oil and a crack of black pepper."
+      "Step 1 — Prepare the crab: If your fishmonger hasn\'t already done so, clean the crab — remove the dead man\'s fingers (grey feathery gills), and crack the claws lightly with the back of a heavy knife so the sauce can penetrate. Halve or quarter the body for easier cooking and eating. Pat dry.",
+      "Step 2 — Make the spice paste: Blitz the garlic, ginger, fresh red chillies, ground coriander, cumin, turmeric, black pepper and fennel seeds with a splash of water in a small blender or pestle and mortar until a rough paste forms.",
+      "Step 3 — Temper the base: Heat the coconut oil in a large, wide-lidded pan or wok over medium-high heat. Add the mustard seeds and let them pop for 30 seconds, then add the dried red chillies and curry leaves — they\'ll crackle and spit, so stand back. Immediately add the sliced onion and cook, stirring, for 8–10 minutes until deep golden.",
+      "Step 4 — Build the curry base: Add the spice paste to the onion and fry, stirring constantly, for 2–3 minutes until very fragrant and the raw smell cooks off. Add the chopped tomatoes and pandan leaf if using. Cook for a further 5 minutes, mashing the tomatoes into the pan until they collapse into the spices.",
+      "Step 5 — Add the crab: Add the crab pieces to the pan and toss to coat well in the spiced base. Pour in the coconut milk and water or stock. Season generously with salt. Bring to a vigorous simmer, then reduce heat to medium, cover and cook for 12–15 minutes, turning the crab pieces halfway, until the crab is cooked through and the broth has reduced and deepened.",
+      "Step 6 — Finish and serve: Taste the broth and adjust salt and heat. Warm the roti or paratha in a dry pan. Divide the crab between two deep bowls with plenty of the glossy, spiced broth. Scatter with fresh coriander and serve with lime wedges and warm roti for dipping and scooping — this is hands-on, messy, magnificent eating."
     ]
   },
   {
     id: "sug3",
-    title: "Egyptian Koshari — Street-Style Lentils, Rice & Macaroni with Spiced Tomato Sauce & Crispy Onions",
+    title: "Tunisian Slata Mechouia with Whipped Feta, Harissa & Charred Flatbread",
     category: "Vegan",
-    calories: 580,
-    protein: 22,
-    fibre: 14,
-    healthScore: 80,
-    time: "1 hr 10 mins",
+    calories: 360,
+    protein: 9,
+    fibre: 8,
+    healthScore: 86,
+    time: "40 mins",
     serves: "4",
-    desc: "Egypt\'s beloved national street food is a magnificent chaos of textures and flavours — brown lentils, short-grain rice, and macaroni piled together and crowned with a fiery garlicky tomato sauce, a splash of sharp vinegar-spiced dakka, and a mountain of shatteringly crispy fried onions. It sounds chaotic but the result is deeply satisfying, completely addictive, and entirely vegan. The kind of dish that makes you understand why it\'s sold from giant copper pots on every street corner in Cairo.",
-    emoji: "🫙",
-    image: "https://images.unsplash.com/photo-1664474719548-519fbbed2193?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxFZ3lwdGlhbiUyMEtvc2hhcmklMjAlRTIlODAlOTQlMjBTdHJlZXQtU3R5bGUlMjBMZW50aWxzJTJDJTIwUmljZSUyMCUyNiUyME1hY2Fyb25pJTIwd2l0aCUyMFNwaWNlZCUyMFRvbWF0byUyMFNhdWNlJTIwJTI2JTIwQ3Jpc3B5JTIwT25pb25zJTIwZm9vZCUyMGRpc2h8ZW58MHwwfHx8MTc4NTY0NzY3M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+    desc: "Slata Mechouia is the great roasted vegetable salad of Tunisia — charred peppers, tomatoes and chillies are grilled until blistered and smoky, then roughly pounded with cumin, caraway and garlic into a bold, textured condiment-salad that is completely addictive. Served here over whipped feta for a non-vegan upgrade or a silky white bean purée for a fully vegan version, with warm charred flatbread, it makes a stunning, vibrant plate that celebrates late-summer vegetables at their peak.",
+    emoji: "🫑",
+    image: "https://images.unsplash.com/photo-1715194288597-cd4df523776e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MjYwODl8MHwxfHNlYXJjaHwxfHxUdW5pc2lhbiUyMFNsYXRhJTIwTWVjaG91aWElMjB3aXRoJTIwV2hpcHBlZCUyMEZldGElMkMlMjBIYXJpc3NhJTIwJTI2JTIwQ2hhcnJlZCUyMEZsYXRicmVhZCUyMGZvb2QlMjBkaXNofGVufDB8MHx8fDE3ODU3MzQxODl8MA&ixlib=rb-4.1.0&q=80&w=1080",
     ingredientGroups: [
-      {
-        group: "The Base",
-        items: [
-          { name: "Brown or green lentils, rinsed", quantity: 200, unit: "g" },
-          { name: "Short-grain rice (Egyptian or paella-style), rinsed", quantity: 200, unit: "g" },
-          { name: "Elbow macaroni (or ditalini)", quantity: 150, unit: "g" },
-          { name: "Ground cumin", quantity: 1.5, unit: "tsp" },
-          { name: "Fine sea salt", quantity: 1, unit: "to taste" },
-          { name: "Neutral oil", quantity: 2, unit: "tbsp" }
-        ]
-      },
-      {
-        group: "Spiced Tomato Sauce (Shatta)",
-        items: [
-          { name: "Tinned chopped tomatoes", quantity: 400, unit: "g" },
-          { name: "Garlic cloves, minced", quantity: 5, unit: "" },
-          { name: "Tomato purée", quantity: 2, unit: "tbsp" },
-          { name: "Ground cumin", quantity: 1, unit: "tsp" },
-          { name: "Ground coriander", quantity: 0.5, unit: "tsp" },
-          { name: "Dried chilli flakes", quantity: 0.5, unit: "tsp" },
-          { name: "White wine vinegar", quantity: 2, unit: "tbsp" },
-          { name: "Caster sugar", quantity: 1, unit: "tsp" },
-          { name: "Olive oil", quantity: 2, unit: "tbsp" },
-          { name: "Fine sea salt", quantity: 1, unit: "to taste" }
-        ]
-      },
-      {
-        group: "Vinegar-Garlic Sauce (Dakka)",
-        items: [
-          { name: "White wine vinegar", quantity: 60, unit: "ml" },
-          { name: "Water", quantity: 60, unit: "ml" },
-          { name: "Garlic cloves, crushed to a paste", quantity: 3, unit: "" },
-          { name: "Ground cumin", quantity: 0.5, unit: "tsp" },
-          { name: "Chilli flakes", quantity: 0.25, unit: "tsp" }
-        ]
-      },
-      {
-        group: "Crispy Onions",
-        items: [
-          { name: "Large onions, very thinly sliced into rings", quantity: 3, unit: "" },
-          { name: "Neutral oil for frying", quantity: 150, unit: "ml" },
-          { name: "Plain flour", quantity: 3, unit: "tbsp" },
-          { name: "Fine sea salt", quantity: 1, unit: "pinch" }
-        ]
-      }
+      { group: "Charred Vegetables", items: [
+        { name: "Red peppers", quantity: 3, unit: "large" },
+        { name: "Green peppers", quantity: 2, unit: "" },
+        { name: "Vine tomatoes", quantity: 4, unit: "large" },
+        { name: "Long green chillies (mild-medium)", quantity: 2, unit: "" },
+        { name: "Red chilli (hot)", quantity: 1, unit: "" },
+        { name: "Garlic cloves, unpeeled", quantity: 4, unit: "" },
+        { name: "Olive oil", quantity: 3, unit: "tbsp" }
+      ]},
+      { group: "Mechouia Dressing", items: [
+        { name: "Ground cumin", quantity: 1.5, unit: "tsp" },
+        { name: "Ground caraway", quantity: 0.5, unit: "tsp" },
+        { name: "Rose harissa paste", quantity: 2, unit: "tbsp" },
+        { name: "Extra virgin olive oil", quantity: 3, unit: "tbsp" },
+        { name: "Lemon, juiced", quantity: 1, unit: "" },
+        { name: "Salt and black pepper", quantity: 1, unit: "to taste" }
+      ]},
+      { group: "White Bean Base (Vegan)", items: [
+        { name: "Canned white beans (cannellini or butter beans), drained", quantity: 400, unit: "g" },
+        { name: "Extra virgin olive oil", quantity: 2, unit: "tbsp" },
+        { name: "Lemon juice", quantity: 1, unit: "tbsp" },
+        { name: "Garlic clove", quantity: 1, unit: "small" },
+        { name: "Salt", quantity: 1, unit: "to taste" }
+      ]},
+      { group: "To Serve", items: [
+        { name: "Flatbreads or pitta", quantity: 4, unit: "" },
+        { name: "Capers", quantity: 2, unit: "tbsp" },
+        { name: "Good black olives, pitted and torn", quantity: 60, unit: "g" },
+        { name: "Fresh flat-leaf parsley", quantity: 20, unit: "g" },
+        { name: "Extra harissa, to drizzle", quantity: 1, unit: "to taste" }
+      ]}
     ],
     substitutes: [
-      { ingredient: "Brown lentils", alternatives: ["Green lentils (same cooking time)", "Puy lentils for a slightly firmer texture"] },
-      { ingredient: "Short-grain rice", alternatives: ["Basmati (reduce water slightly and cooking time by 2 mins)", "Long-grain rice works fine"] },
-      { ingredient: "Elbow macaroni", alternatives: ["Ditalini or any small pasta shape", "Orzo (cook separately and add at the end)"] },
-      { ingredient: "Tinned chopped tomatoes", alternatives: ["500g fresh ripe tomatoes, roughly chopped and cooked down", "Passata (use 350ml)"] }
+      { ingredient: "Rose harissa", alternatives: ["Regular harissa plus a pinch of smoked paprika", "Chipotle paste for a smokier, non-traditional twist"] },
+      { ingredient: "Ground caraway", alternatives: ["Omit and double the cumin", "A small pinch of fennel seeds, lightly crushed"] },
+      { ingredient: "White bean purée base", alternatives: ["Whipped feta (blend 200g feta with 3 tbsp Greek yoghurt and 1 tbsp olive oil) for a non-vegan version", "Hummus spread thickly as the base"] }
     ],
     instructions: [
-      "Step 1 — Cook the lentils: Place the rinsed lentils in a saucepan, cover with cold water by 5cm, and bring to the boil. Reduce heat and simmer for 20–25 minutes until just tender but holding their shape. Drain and set aside, seasoning with salt and a pinch of cumin.",
-      "Step 2 — Cook the rice: In the same pan, heat 1 tbsp of neutral oil over medium heat. Add the rinsed rice and stir for 1–2 minutes to coat in oil. Add 400ml of water, 1 tsp cumin, and a generous pinch of salt. Bring to the boil, reduce to the lowest heat, cover tightly, and cook for 12 minutes. Remove from heat and steam, covered, for a further 5 minutes. Fluff with a fork and fold through the cooked lentils.",
-      "Step 3 — Cook the macaroni: Bring a pot of well-salted water to the boil and cook the macaroni according to packet instructions until just al dente. Drain and toss with a little oil to prevent sticking.",
-      "Step 4 — Make the spiced tomato sauce: Heat the olive oil in a saucepan over medium heat. Add the minced garlic and cook for 1 minute until fragrant but not browned. Add the tomato purée and cook for another minute, stirring. Add the tinned tomatoes, cumin, coriander, chilli flakes, vinegar, and sugar. Season well and simmer vigorously for 15–20 minutes, stirring occasionally, until the sauce is thick, deep red, and intensely flavoured. Taste — it should be bold, slightly sweet-sour, and warming.",
-      "Step 5 — Make the dakka: Simply whisk together the vinegar, water, crushed garlic, cumin, and chilli flakes in a small bowl or jar. This sharp, garlicky sauce is drizzled over at the table and cuts through everything brilliantly.",
-      "Step 6 — Fry the onions: Toss the thinly sliced onion rings with the flour and a pinch of salt in a bowl until lightly coated. Heat the neutral oil in a wide frying pan over medium-high heat. Fry the onions in two or three batches, stirring occasionally, for 8–10 minutes per batch until deeply golden-brown and crispy. Remove with a slotted spoon onto a plate lined with kitchen paper. They will crisp further as they cool — do not skip this step, the onions are the soul of the dish.",
-      "Step 7 — To assemble: Divide the lentil-rice mixture between four deep bowls or plates. Spoon the cooked macaroni over the top. Ladle over a generous amount of the spiced tomato sauce. Add a splash of dakka over everything. Pile a magnificent tangle of crispy fried onions on top. Serve immediately with extra tomato sauce and dakka on the side so guests can adjust to their taste."
+      "Step 1 — Char the vegetables: Preheat your grill to maximum or use the open flame of a gas hob. Place the whole peppers, tomatoes, chillies and unpeeled garlic cloves directly under the grill on a foil-lined tray (or use tongs to char the peppers and chillies directly over the flame). Grill, turning every few minutes, until deeply blistered and blackened in places all over — this takes 15–20 minutes for the peppers and tomatoes, slightly less for the chillies. Don\'t rush this: the char is the flavour.",
+      "Step 2 — Steam and peel: Transfer all the charred vegetables to a large bowl, cover tightly with cling film or a plate, and leave to steam for 10–15 minutes. This makes peeling much easier. Once cool enough to handle, peel the peppers and chillies (don\'t rinse — you\'ll wash away the smoky flavour), remove the seeds, and squeeze the garlic from its skins. Peel the tomatoes and discard the skins.",
+      "Step 3 — Make the mechouia: Roughly chop all the peeled, charred vegetables and transfer to a large mortar (or use a board and knife). Add the ground cumin, caraway, harissa, lemon juice, olive oil, salt and pepper. Pound or chop to a rough, textured paste — it should still have character and body, not be completely smooth. Taste and adjust: it should be smoky, spicy, tangy and deeply savoury.",
+      "Step 4 — Make the white bean purée: Add the drained beans, olive oil, lemon juice and garlic to a food processor with 2–3 tbsp water. Blitz until very smooth and creamy. Season generously with salt, taste, and adjust with more lemon if needed. The purée should be silky and rich — add a little more olive oil or water if it seems stiff.",
+      "Step 5 — Char the flatbreads: Toast the flatbreads directly over a gas flame or in a very hot dry griddle pan until lightly charred in spots and warmed through. Tear into rough pieces.",
+      "Step 6 — Assemble and serve: Spread the white bean purée generously across a large serving platter or individual plates. Spoon the mechouia on top in a generous mound. Scatter over the capers, torn black olives and flat-leaf parsley. Drizzle with extra harissa and a final glug of good olive oil. Serve at room temperature with the charred flatbread alongside for scooping."
     ]
   }
 ];

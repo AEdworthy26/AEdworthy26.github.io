@@ -1,8 +1,8 @@
 // quote-data.js
-// Auto-updated 2026-08-02 — do not edit manually
+// Auto-updated 2026-08-03 — do not edit manually
 
 var QUOTE_DATA = {
-  date: "2026-08-02",
-  text: "First say to yourself what you would be; and then do what you have to do.",
-  author: "Epictetus"
+  date: "2026-08-03",
+  text: "There is no greater agony than bearing an untold story inside you.",
+  author: "Maya Angelou"
 };
