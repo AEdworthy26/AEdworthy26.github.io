@@ -1,8 +1,8 @@
 // quote-data.js
-// Auto-updated 2026-08-08 — do not edit manually
+// Auto-updated 2026-08-09 — do not edit manually
 
 var QUOTE_DATA = {
-  date: "2026-08-08",
-  text: "Until you make the unconscious conscious, it will direct your life and you will call it fate.",
-  author: "Carl Jung"
+  date: "2026-08-09",
+  text: "Playing football is very simple, but playing simple football is the hardest thing there is.",
+  author: "Johan Cruyff"
 };
