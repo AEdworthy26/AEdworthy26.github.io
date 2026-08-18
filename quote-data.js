@@ -1,8 +1,8 @@
 // quote-data.js
-// Auto-updated 2026-08-17 — do not edit manually
+// Auto-updated 2026-08-18 — do not edit manually
 
 var QUOTE_DATA = {
-  date: "2026-08-17",
-  text: "Chance favours the prepared mind.",
-  author: "Louis Pasteur"
+  date: "2026-08-18",
+  text: "The higher we soar, the smaller we appear to those who cannot fly.",
+  author: "Friedrich Nietzsche"
 };
