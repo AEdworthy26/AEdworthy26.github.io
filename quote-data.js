@@ -1,8 +1,8 @@
 // quote-data.js
-// Auto-updated 2026-08-19 — do not edit manually
+// Auto-updated 2026-08-20 — do not edit manually
 
 var QUOTE_DATA = {
-  date: "2026-08-19",
-  text: "The most radical revolutionary will become a conservative the day after the revolution.",
-  author: "Hannah Arendt"
+  date: "2026-08-20",
+  text: "Buy when there\'s blood in the streets, even if the blood is your own.",
+  author: "Baron Rothschild"
 };
